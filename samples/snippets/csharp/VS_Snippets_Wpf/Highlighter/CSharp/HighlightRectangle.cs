@@ -1,26 +1,26 @@
 ﻿/*******************************************************************************
  * File: HighlightRectangle.cs
  *
- * Description: 
+ * Description:
  * Contains a class that represents the highlight rectangle, which is made up
- * of four Form objects. Windows takes care of properly drawing and erasing 
+ * of four Form objects. Windows takes care of properly drawing and erasing
  * these forms.
- * 
+ *
  * See ClientForm.cs for a full description of the sample.
- *      
+ *
  *  This file is part of the Microsoft Windows SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  ******************************************************************************/
 
 using System;
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 
 namespace Highlighter
 {
-    internal class HighlightRectangle 
+    internal class HighlightRectangle
     {
         #region Private Fields
 
@@ -181,36 +181,36 @@ namespace Highlighter
         /// Sets the position and size of the four forms that make up the rectangle.
         /// </summary>
         /// <remarks>
-        /// Use the Win32 SetWindowPosfunction so that SWP_NOACTIVATE can be set. 
+        /// Use the Win32 SetWindowPosfunction so that SWP_NOACTIVATE can be set.
         /// This ensures that the windows are shown without receiving the focus.
         /// </remarks>
         private void Layout()
         {
-            // Use SetWindowPos instead of changing the location via form properties: 
-            // this allows us to also specify HWND_TOPMOST. 
+            // Use SetWindowPos instead of changing the location via form properties:
+            // this allows us to also specify HWND_TOPMOST.
             // Using Form.TopMost = true to do this has the side-effect
             // of activating the rectangle windows, causing them to gain the focus.
             NativeMethods.SetWindowPos(leftForm.Handle, NativeMethods.HWND_TOPMOST,
-                        highlightLocation.Left - highlightLineWidth, 
-                        highlightLocation.Top, 
-                        highlightLineWidth, highlightLocation.Height, 
+                        highlightLocation.Left - highlightLineWidth,
+                        highlightLocation.Top,
+                        highlightLineWidth, highlightLocation.Height,
                         NativeMethods.SWP_NOACTIVATE);
             NativeMethods.SetWindowPos(topForm.Handle, NativeMethods.HWND_TOPMOST,
-                        highlightLocation.Left - highlightLineWidth, 
-                        highlightLocation.Top - highlightLineWidth, 
-                        highlightLocation.Width + 2 * highlightLineWidth, 
-                        highlightLineWidth, 
+                        highlightLocation.Left - highlightLineWidth,
+                        highlightLocation.Top - highlightLineWidth,
+                        highlightLocation.Width + 2 * highlightLineWidth,
+                        highlightLineWidth,
                         NativeMethods.SWP_NOACTIVATE);
             NativeMethods.SetWindowPos(rightForm.Handle, NativeMethods.HWND_TOPMOST,
-                        highlightLocation.Left + highlightLocation.Width, 
-                        highlightLocation.Top, highlightLineWidth, 
-                        highlightLocation.Height, 
+                        highlightLocation.Left + highlightLocation.Width,
+                        highlightLocation.Top, highlightLineWidth,
+                        highlightLocation.Height,
                         NativeMethods.SWP_NOACTIVATE);
             NativeMethods.SetWindowPos(bottomForm.Handle, NativeMethods.HWND_TOPMOST,
-                        highlightLocation.Left - highlightLineWidth, 
-                        highlightLocation.Top + highlightLocation.Height, 
-                        highlightLocation.Width + 2 * highlightLineWidth, 
-                        highlightLineWidth, 
+                        highlightLocation.Left - highlightLineWidth,
+                        highlightLocation.Top + highlightLocation.Height,
+                        highlightLocation.Width + 2 * highlightLineWidth,
+                        highlightLineWidth,
                         NativeMethods.SWP_NOACTIVATE);
         }
 

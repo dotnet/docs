@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CS_lazy
 {
 
-    class Order 
+    class Order
     {
         public override string ToString()
         {
@@ -30,7 +30,7 @@ namespace CS_lazy
         public static void Test()
         {
             //<snippet1>
-            // Initialize by using default Lazy<T> constructor. The 
+            // Initialize by using default Lazy<T> constructor. The
             // Orders array itself is not created yet.
             Lazy<Orders> _orders = new Lazy<Orders>();
             //</snippet1>
@@ -45,7 +45,7 @@ namespace CS_lazy
             // property is accessed
             Lazy<Orders> _orders = new Lazy<Orders>(() => new Orders(100));
             //</snippet2>
-            
+
             //<snippet3>
             // We need to create the array only if displayOrders is true
             if (displayOrders == true)
@@ -73,7 +73,7 @@ namespace CS_lazy
                 CustomerID = id;
                 _orders = new Lazy<Orders>(() =>
                 {
-                    // You can specify any additional 
+                    // You can specify any additional
                     // initialization steps here.
                     return new Orders(this.CustomerID);
                 });
@@ -99,7 +99,7 @@ namespace CS_lazy
         ThreadLocal<int> betterCounter = new ThreadLocal<int>(() => 1);
         //</snippet7>
     }
-    
+
     class DataInitializedFromDb
     {
         public DataInitializedFromDb(SqlDataReader reader) { }
@@ -110,7 +110,7 @@ namespace CS_lazy
         static void Main()
         {
             string connectionString = "";
-            Lazy<DataInitializedFromDb> _data = 
+            Lazy<DataInitializedFromDb> _data =
                 new Lazy<DataInitializedFromDb>(delegate
                 {
                     using(SqlConnection conn = new SqlConnection(connectionString))
@@ -136,7 +136,7 @@ namespace CS_lazy
         {
            // LazyAndThreadLocal();
             TestEnsureInitialized();
-            
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
@@ -144,7 +144,7 @@ namespace CS_lazy
         private static void LazyAndThreadLocal()
         {
             //<snippet8>
-            // Initialize the integer to the managed thread id of the 
+            // Initialize the integer to the managed thread id of the
             // first thread that accesses the Value property.
             Lazy<int> number = new Lazy<int>(() => Thread.CurrentThread.ManagedThreadId);
 
@@ -160,7 +160,7 @@ namespace CS_lazy
                                                     Thread.CurrentThread.ManagedThreadId));
             t3.Start();
 
-            // Ensure that thread IDs are not recycled if the 
+            // Ensure that thread IDs are not recycled if the
             // first thread completes before the last one starts.
             t1.Join();
             t2.Join();
@@ -189,16 +189,16 @@ namespace CS_lazy
                                                 threadLocalNumber.Value, Thread.CurrentThread.ManagedThreadId));
             t6.Start();
 
-            // Ensure that thread IDs are not recycled if the 
+            // Ensure that thread IDs are not recycled if the
             // first thread completes before the last one starts.
             t4.Join();
             t5.Join();
             t6.Join();
 
             /* Sample Output:
-               threadLocalNumber on t4 = 14 ThreadID = 14 
+               threadLocalNumber on t4 = 14 ThreadID = 14
                threadLocalNumber on t5 = 15 ThreadID = 15
-               threadLocalNumber on t6 = 16 ThreadID = 16 
+               threadLocalNumber on t6 = 16 ThreadID = 16
             */
             //</snippet9>
         }
@@ -232,12 +232,12 @@ namespace CS_lazy
         { return new Order(); }
 
         static void InitializeDBConnection()
-        {           
+        {
         }
 
         static void InitializeBigComputation(long bigNum)
         {
-            Lazy<int[]> primeFactors = new Lazy<int[]>(() => GetPrimeFactors(bigNum), true);            
+            Lazy<int[]> primeFactors = new Lazy<int[]>(() => GetPrimeFactors(bigNum), true);
         }
 
         static int[] GetPrimeFactors(long bigNum)
@@ -284,12 +284,12 @@ namespace HowToSnippets
                     get
                     {
                         return _text.Value;
-                    }                    
+                    }
                 }
             }
         static void Main()
         {
-            WebPage[] catalog = new WebPage[5] 
+            WebPage[] catalog = new WebPage[5]
             {
                 new WebPage("", ""),
                 new WebPage("", ""),

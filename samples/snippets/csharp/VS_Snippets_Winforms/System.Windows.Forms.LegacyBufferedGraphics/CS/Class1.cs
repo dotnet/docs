@@ -28,7 +28,7 @@ public class Form1 : Form
         BufferedGraphicsContext myContext;
         myContext = new BufferedGraphicsContext();
         // Insert code to create graphics here.
-        // On a non-default BufferedGraphicsContext instance, you should always 
+        // On a non-default BufferedGraphicsContext instance, you should always
         // call Dispose when finished.
         myContext.Dispose();
         // </snippet12>
@@ -44,27 +44,27 @@ public class Form1 : Form
         BufferedGraphics myBuffer;
         // Gets a reference to the current BufferedGraphicsContext
         currentContext = BufferedGraphicsManager.Current;
-        // Creates a BufferedGraphics instance associated with Form1, and with 
+        // Creates a BufferedGraphics instance associated with Form1, and with
         // dimensions the same size as the drawing surface of Form1.
         myBuffer = currentContext.Allocate(this.CreateGraphics(),
            this.DisplayRectangle);
 	// </snippet21>
-    
+
         // <snippet22>
         // Draws an ellipse to the graphics buffer.
         myBuffer.Graphics.DrawEllipse(Pens.Blue, this.DisplayRectangle);
         // </snippet22>
-    
+
         // <snippet23>
         // This example assumes the existence of a BufferedGraphics instance
         // called myBuffer.
-        // Renders the contents of the buffer to the drawing surface associated 
+        // Renders the contents of the buffer to the drawing surface associated
         // with the buffer.
         myBuffer.Render();
         // Renders the contents of the buffer to the specified drawing surface.
         myBuffer.Render(this.CreateGraphics());
         // </snippet23>
-    
+
         // <snippet24>
         myBuffer.Dispose();
         // </snippet24>

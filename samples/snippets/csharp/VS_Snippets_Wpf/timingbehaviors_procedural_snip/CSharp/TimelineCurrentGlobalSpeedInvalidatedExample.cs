@@ -3,7 +3,7 @@
 
    This example shows how to register for the
    CurrentGlobalSpeedInvalidated event
-   using a Timeline. 
+   using a Timeline.
 
 */
 
@@ -24,14 +24,14 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         private TextBlock currentTimeTextBlock;
         public TimelineCurrentGlobalSpeedInvalidatedExample()
         {
-            
+
             // Create a name scope.
             NameScope.SetNameScope(this, new NameScope());
-            
+
             WindowTitle = "GetAnimationBaseValue Example";
             StackPanel myPanel = new StackPanel();
-            myPanel.Margin = new Thickness(20);     
-            
+            myPanel.Margin = new Thickness(20);
+
             // Create a rectangle.
             Rectangle animatedRectangle = new Rectangle();
             animatedRectangle.Width = 100;
@@ -40,7 +40,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             animatedRectangle.Fill = Brushes.Orange;
             animatedRectangle.Stroke = Brushes.Gray;
             animatedRectangle.StrokeThickness = 2;
-            
+
             // Create a RotateTransform.
             RotateTransform animatedTransform = new RotateTransform();
             animatedTransform.Angle = 0;
@@ -53,36 +53,36 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             // Create a TextBlock to show the storyboard's current time.
             currentTimeTextBlock = new TextBlock();
             myPanel.Children.Add(currentTimeTextBlock);
-            
+
             // Animate the RotateTransform's angle using a Storyboard.
             DoubleAnimation angleAnimation = new DoubleAnimation(0,360, TimeSpan.FromSeconds(5));
             angleAnimation.RepeatBehavior = RepeatBehavior.Forever;
             angleAnimation.AutoReverse = true;
             Storyboard.SetTargetName(angleAnimation, "animatedTransform");
-            Storyboard.SetTargetProperty(angleAnimation, 
+            Storyboard.SetTargetProperty(angleAnimation,
                 new PropertyPath(RotateTransform.AngleProperty));
-  
+
             Storyboard theStoryboard = new Storyboard();
-            theStoryboard.Children.Add(angleAnimation);            
-            
+            theStoryboard.Children.Add(angleAnimation);
+
             // Register the CurrentGlobalSpeedInvalidated event.
-            // You must register for events before you begin 
+            // You must register for events before you begin
             // the storyboard.
-            angleAnimation.CurrentGlobalSpeedInvalidated += 
+            angleAnimation.CurrentGlobalSpeedInvalidated +=
                 new EventHandler(angleAnimation_CurrentGlobalSpeedInvalidated);
-            
+
             // Start the storyboard.
             theStoryboard.Begin(animatedRectangle, true);
         }
-        
+
         private void angleAnimation_CurrentGlobalSpeedInvalidated(object sender, EventArgs e)
         {
-            
+
             // Sender is the clock that was created for the DoubleAnimation.
             Clock doubleAnimationClock = (Clock)sender;
-            
+
             // Update the TextBlock with the time of its parent.
-            currentTimeTextBlock.Text = doubleAnimationClock.Parent.CurrentTime.ToString();       
+            currentTimeTextBlock.Text = doubleAnimationClock.Parent.CurrentTime.ToString();
         }
     }
 }

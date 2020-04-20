@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Linq;
 
-class Example 
+class Example
 {
    public static void Main()
    {
@@ -25,11 +25,11 @@ class Example
         Console.WriteLine("{0} even numbers out of {1} total",
                           evenNums.Count(), source.Count());
         // The example displays the following output:
-        //       5000 even numbers out of 10000 total      
+        //       5000 even numbers out of 10000 total
         // </snippet1>
     }
 
-    static int Compute(int i) 
+    static int Compute(int i)
     {
         return 1;
     }
@@ -67,7 +67,7 @@ class Example
        int[] arr = new int[9999];
        Partitioner<int> partitioner = new MyArrayPartitioner<int>(arr);
        var query = partitioner.AsParallel().Select(x => SomeFunction(x));
-       // </Snippet2>  
+       // </Snippet2>
     }
 
     public static int SomeFunction(int x)
@@ -79,11 +79,11 @@ class Example
 class MyArrayPartitioner<T> : Partitioner<T>
 {
    private List<T> list = new List<T>();
-   
+
    public MyArrayPartitioner(T[] arr)
    {
       foreach (var element in arr)
-        list.Add(element); 
+        list.Add(element);
    }
 
    public override IList<IEnumerator<T>> GetPartitions(int partitionCount)
@@ -91,5 +91,5 @@ class MyArrayPartitioner<T> : Partitioner<T>
       List<IEnumerator<T>> enumList = new List<IEnumerator<T>>();
       enumList.Add(list.GetEnumerator());
       return enumList;
-   } 
+   }
 }

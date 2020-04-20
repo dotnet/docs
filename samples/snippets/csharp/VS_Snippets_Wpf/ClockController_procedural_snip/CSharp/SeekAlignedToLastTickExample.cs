@@ -18,13 +18,13 @@ namespace SDKSample
 
   public class SeekAlignedToLastTickExample : Page
     {
-    
+
         private AnimationClock myClock;
         private TextBlock currentTimeIndicator;
         private TextBox seekDestination;
         private TextBlock rectangleWidthIndicator;
         private Rectangle myRectangle;
-        
+
         public SeekAlignedToLastTickExample()
         {
 
@@ -33,7 +33,7 @@ namespace SDKSample
 
             StackPanel myStackPanel = new StackPanel();
             myStackPanel.Margin = new Thickness(20);
-            
+
             // Create a rectangle.
             myRectangle = new Rectangle();
             myRectangle.Width = 100;
@@ -41,14 +41,14 @@ namespace SDKSample
             myRectangle.Margin = new Thickness(12,0,0,5);
             myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
-            myStackPanel.Children.Add(myRectangle);                    
-            
+            myStackPanel.Children.Add(myRectangle);
+
             //
             // Create an animation and a storyboard to animate the
             // rectangle.
             //
-            DoubleAnimation myDoubleAnimation = 
-                new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(60)));  
+            DoubleAnimation myDoubleAnimation =
+                new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(60)));
             myClock = myDoubleAnimation.CreateClock();
             myRectangle.ApplyAnimationClock(Rectangle.WidthProperty, myClock);
             myClock.Controller.Stop();
@@ -61,7 +61,7 @@ namespace SDKSample
             buttonPanel.Orientation = Orientation.Horizontal;
             Button beginButton = new Button();
             beginButton.Content = "Begin";
-            beginButton.Click += new RoutedEventHandler(beginButton_Clicked);            
+            beginButton.Click += new RoutedEventHandler(beginButton_Clicked);
             buttonPanel.Children.Add(beginButton);
             Button pauseButton = new Button();
             pauseButton.Content = "Pause";
@@ -86,10 +86,10 @@ namespace SDKSample
             Button removeButton = new Button();
             removeButton.Content = "Remove";
             removeButton.Click +=new RoutedEventHandler(removeButton_Clicked);
-            buttonPanel.Children.Add(removeButton);            
-            
-            myStackPanel.Children.Add(buttonPanel);    
-            
+            buttonPanel.Children.Add(removeButton);
+
+            myStackPanel.Children.Add(buttonPanel);
+
             // Create some controls to display the
             // storyboard's current time and the
             // current width of the rectangle.
@@ -103,20 +103,20 @@ namespace SDKSample
             currentTimeIndicator = new TextBlock();
             aPanel.Children.Add(currentTimeIndicator);
             seekPanel.Children.Add(aPanel);
-            
+
             aPanel = new StackPanel();
             aPanel.Orientation = Orientation.Horizontal;
             aLabel = new Label();
             aLabel.Content = "Rectangle Width: ";
             aPanel.Children.Add(aLabel);
             rectangleWidthIndicator = new TextBlock();
-            rectangleWidthIndicator.Text = myRectangle.Width.ToString(); 
+            rectangleWidthIndicator.Text = myRectangle.Width.ToString();
             aPanel.Children.Add(rectangleWidthIndicator);
             seekPanel.Children.Add(aPanel);
 
             // Create some controls to enable the
             // user to specify a seek position.
-            
+
             aPanel = new StackPanel();
             aPanel.Orientation = Orientation.Horizontal;
             aLabel = new Label();
@@ -124,7 +124,7 @@ namespace SDKSample
             aPanel.Children.Add(aLabel);
             seekDestination = new TextBox();
             seekDestination.Text = "0";
-            aPanel.Children.Add(seekDestination);       
+            aPanel.Children.Add(seekDestination);
             seekPanel.Children.Add(aPanel);
 
             Button seekButton = new Button();
@@ -134,65 +134,65 @@ namespace SDKSample
             Button seekAlignedToLastTickButton = new Button();
             seekAlignedToLastTickButton.Content = "Seek Aligned to Last Tick";
             seekAlignedToLastTickButton.Click += new RoutedEventHandler(seekAlignedToLastTickButton_Clicked);
-            seekPanel.Children.Add(seekAlignedToLastTickButton);           
-            
+            seekPanel.Children.Add(seekAlignedToLastTickButton);
+
             myStackPanel.Children.Add(seekPanel);
-            
-            this.Content = myStackPanel;   
-            
+
+            this.Content = myStackPanel;
+
             myClock.CurrentTimeInvalidated += new EventHandler(myClock_CurrentTimeInvalidated);
         }
-        
+
         // Begins the clock.
         private void beginButton_Clicked(object sender, RoutedEventArgs args)
         {
 
-            myClock.Controller.Begin();         
+            myClock.Controller.Begin();
         }
-        
+
         // Pauses the clock.
         private void pauseButton_Clicked(object sender, RoutedEventArgs args)
         {
-            myClock.Controller.Pause();         
+            myClock.Controller.Pause();
         }
 
         // Resumes the clock.
         private void resumeButton_Clicked(object sender, RoutedEventArgs args)
         {
-            myClock.Controller.Resume();        
+            myClock.Controller.Resume();
         }
 
         // Advances the clock to its fill period.
         private void skipToFillButton_Clicked(object sender, RoutedEventArgs args)
         {
-            myClock.Controller.SkipToFill();          
+            myClock.Controller.SkipToFill();
         }
 
         // Updates the clock's speed.
         private void setSpeedRatioButton_Clicked(object sender, RoutedEventArgs args)
         {
             // Makes the clock progress three times as fast as normal.
-            myClock.Controller.SpeedRatio = 3;        
+            myClock.Controller.SpeedRatio = 3;
         }
 
         // Stops the clock.
         private void stopButton_Clicked(object sender, RoutedEventArgs args)
         {
-            myClock.Controller.Stop();        
+            myClock.Controller.Stop();
         }
 
         // Removes the clock.
         private void removeButton_Clicked(object sender, RoutedEventArgs args)
         {
-            myClock.Controller.Remove();        
-        }        
-        
+            myClock.Controller.Remove();
+        }
+
         private void seekButton_Clicked(object sender, RoutedEventArgs args)
         {
             try {
-            
+
                 // The rectangle width will probably not be at its new
-                // value when this call is made, because the 
+                // value when this call is made, because the
                 // clock probably hasn't ticked yet.
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myClock.Controller.Seek(seekTime, TimeSeekOrigin.BeginTime);
@@ -203,16 +203,16 @@ namespace SDKSample
                 seekDestination.Focus();
             }
         }
-        
+
         private void seekAlignedToLastTickButton_Clicked(object sender, RoutedEventArgs args)
         {
 
             try {
-            
+
                 // The rectangle width will be at its new
-                // value when this call is made, because SeekAlignedToLastTick 
+                // value when this call is made, because SeekAlignedToLastTick
                 // operation immediately updates timeline and animation
-                // values.        
+                // values.
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myClock.Controller.SeekAlignedToLastTick(seekTime, TimeSeekOrigin.BeginTime);
                 rectangleWidthIndicator.Text = myRectangle.Width.ToString();
@@ -220,12 +220,12 @@ namespace SDKSample
             {
                 MessageBox.Show("Invalid TimeSpan value.");
                 seekDestination.Focus();
-            }    
+            }
         }
-        
+
         private void myClock_CurrentTimeInvalidated(object sender, EventArgs e)
         {
-        
+
             currentTimeIndicator.Text = myClock.CurrentTime.ToString();
         }
     }

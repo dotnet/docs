@@ -23,11 +23,11 @@ namespace OfficeHowTo
         {
             var wordApp = new Word.Application();
             wordApp.Visible = true;
-            // docs is a collection of all the Document objects currently 
+            // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
 
-            // Add a document to the collection and name it doc. 
+            // Add a document to the collection and name it doc.
             Word.Document doc = docs.Add();
 
             //<Snippet7>
@@ -44,7 +44,7 @@ namespace OfficeHowTo
             // You can comment out any or all of the following statements to
             // see the effect of each one in the Word document.
 
-            // Next, use the ConvertToTable method to put the text into a table. 
+            // Next, use the ConvertToTable method to put the text into a table.
             // The method has 16 optional parameters. You only have to specify
             // values for those you want to change.
 
@@ -78,11 +78,11 @@ namespace Parts
         {
             var wordApp = new Word.Application();
             wordApp.Visible = true;
-            // docs is a collection of all the Document objects currently 
+            // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
 
-            // Add a document to the collection and name it doc. 
+            // Add a document to the collection and name it doc.
             Word.Document doc = docs.Add();
         }
         //</Snippet6>
@@ -91,11 +91,11 @@ namespace Parts
         {
             var wordApp = new Word.Application();
             wordApp.Visible = true;
-            // docs is a collection of all the Document objects currently 
+            // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
 
-            // Add a document to the collection and name it doc. 
+            // Add a document to the collection and name it doc.
             object useDefaultVal = Type.Missing;
             Word.Document doc = docs.Add(ref useDefaultVal, ref useDefaultVal,
                 ref useDefaultVal, ref useDefaultVal);

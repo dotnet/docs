@@ -11,7 +11,7 @@ namespace LINQGettingStarted_1
 
     // <snippet1>
     class IntroToLINQ
-    {        
+    {
         static void Main()
         {
             // The Three Parts of a LINQ Query:
@@ -36,14 +36,14 @@ namespace LINQGettingStarted_1
 
     class DummyClass
     {
-        //The Three Parts of a LINQ Query 
+        //The Three Parts of a LINQ Query
         static void CreateDataSources()
         {
-            // <snippet2>            
+            // <snippet2>
             // Create a data source from an XML document.
             // using System.Xml.Linq;
             XElement contacts = XElement.Load(@"c:\myContactList.xml");
-            // </snippet2> 
+            // </snippet2>
 
             // <snippet3>
             // Create a data source from a SQL Server database.
@@ -61,10 +61,10 @@ namespace LINQGettingStarted_1
             //    select cust;
             //// </snippet37>
         }
-        //The Three Parts of a LINQ Query 
+        //The Three Parts of a LINQ Query
         static void DeferredExecution()
         {
-            
+
             //  Data source.
             int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
 
@@ -75,7 +75,7 @@ namespace LINQGettingStarted_1
                 select num;
 
             // <snippet4>
-            //  Query execution. 
+            //  Query execution.
             foreach (int num in numQuery)
             {
                 Console.Write("{0,1} ", num);
@@ -83,14 +83,14 @@ namespace LINQGettingStarted_1
             // </snippet4>
 
             // <snippet5>
-            var evenNumQuery = 
+            var evenNumQuery =
                 from num in numbers
                 where (num % 2) == 0
                 select num;
 
             int evenNumCount = evenNumQuery.Count();
             //</snippet5>
-            
+
             //<snippet6>
             List<int> numQuery2 =
                 (from num in numbers
@@ -104,7 +104,7 @@ namespace LINQGettingStarted_1
                 (from num in numbers
                  where (num % 2) == 0
                  select num).ToArray();
-            //</snippet6>            
+            //</snippet6>
         }
     }
 
@@ -123,7 +123,7 @@ namespace LINQGettingStarted_1
     {
         public string First { get; set; }
         public string Last { get; set; }
-        public int ID { get; set; } 
+        public int ID { get; set; }
         public string City { get; set; }
     }
     //</snippet7>
@@ -158,12 +158,12 @@ namespace LINQGettingStarted_1
 
             // Create the second data source.
             List<Teacher> teachers = new List<Teacher>()
-            {                
+            {
                 new Teacher { First="Ann", Last="Beebe", ID=945, City="Seattle" },
                 new Teacher { First="Alex", Last="Robinson", ID=956, City="Redmond" },
                 new Teacher { First="Michiyo", Last="Sato", ID=972, City="Tacoma" }
             };
-            
+
             // Create the query.
             var peopleInSeattle = (from student in students
                         where student.City == "Seattle"
@@ -178,7 +178,7 @@ namespace LINQGettingStarted_1
             {
                 Console.WriteLine(person);
             }
-            
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
@@ -194,7 +194,7 @@ namespace LINQGettingStarted_1
     class XMLTransform
     {
         static void Main()
-        {            
+        {
             // Create the data source by using a collection initializer.
             // The Student class was defined previously in this topic.
             List<Student> students = new List<Student>()
@@ -248,7 +248,7 @@ namespace LINQGettingStarted_1
     class FormatQuery
     {
         static void Main()
-        {            
+        {
             // Data source.
             double[] radii = { 1, 2, 3 };
 
@@ -257,7 +257,7 @@ namespace LINQGettingStarted_1
                 from rad in radii
                 select $"Area = {rad * rad * Math.PI:F2}";
 
-            // Query execution. 
+            // Query execution.
             foreach (string s in query)
                 Console.WriteLine(s);
 
@@ -301,7 +301,7 @@ namespace LINQGettingStarted_1
             new Student {First="Michael", Last="Tucker", ID=122, Scores= new List<int> {94, 92, 91, 91}}
         };
         //</snippet11>
-        
+
         static void Main()
         {
             //<snippet12>
@@ -552,7 +552,7 @@ namespace LINQGettingStarted_1
                 int[] numbers = { 5, 10, 8, 3, 6, 12};
 
                 //Query syntax:
-                IEnumerable<int> numQuery1 = 
+                IEnumerable<int> numQuery1 =
                     from num in numbers
                     where num % 2 == 0
                     orderby num
@@ -570,7 +570,7 @@ namespace LINQGettingStarted_1
                 {
                     Console.Write(i + " ");
                 }
-                
+
                 // Keep the console open in debug mode.
                 Console.WriteLine(System.Environment.NewLine);
                 Console.WriteLine("Press any key to exit");
@@ -595,7 +595,7 @@ namespace LINQGettingStarted_1
 
         class BasicQueryOperations
         {
-            class Customer 
+            class Customer
             {
                 public string City { get; set; }
                 public string Name { get; set; }
@@ -626,7 +626,7 @@ namespace LINQGettingStarted_1
                                          select cust;
               //</snippet24>
 
-              IEnumerable<Customer> queryLondonCustomers2 = 
+              IEnumerable<Customer> queryLondonCustomers2 =
                                         from cust in customers
               //<snippet25>
                   where cust.City == "London" && cust.Name == "Devon"
@@ -637,7 +637,7 @@ namespace LINQGettingStarted_1
               select cust;
 
               //<snippet27>
-              var queryLondonCustomers3 = 
+              var queryLondonCustomers3 =
                   from cust in customers
                   where cust.City == "London"
                   orderby cust.Name ascending
@@ -679,11 +679,11 @@ namespace LINQGettingStarted_1
                     orderby cust.Name ascending
                     select cust.Name;
                 //</snippet30>
-            
+
               //number 31 is the NamePhone struct before this class
-             //<snippet32> 
+             //<snippet32>
                 // var could also be used here
-                IEnumerable<NamePhone> queryLondonNamesPhones = 
+                IEnumerable<NamePhone> queryLondonNamesPhones =
                     from cust in customers
                     where cust.City == "London"
                     orderby cust.Name ascending
@@ -714,8 +714,8 @@ namespace LINQGettingStarted_1
         }
 
         class LINQAndGenericTypes
-        { 
-            class Customer 
+        {
+            class Customer
             {
                 public string City { get; set; }
                 public string LastName { get; set; }
@@ -723,7 +723,7 @@ namespace LINQGettingStarted_1
                 public string Phone {get; set;}
             }
             static List<Customer> customers = new List<Customer>();
-            
+
             static void Main()
             {
                 //<snippet34>
@@ -739,7 +739,7 @@ namespace LINQGettingStarted_1
                 //</snippet34>
 
                 //<snippet35>
-                var customerQuery2 = 
+                var customerQuery2 =
                     from cust in customers
                     where cust.City == "London"
                     select cust;
@@ -749,7 +749,7 @@ namespace LINQGettingStarted_1
                     Console.WriteLine(customer.LastName + ", " + customer.FirstName);
                 }
                 //</snippet35>
-            }        
+            }
         }
     }
 }

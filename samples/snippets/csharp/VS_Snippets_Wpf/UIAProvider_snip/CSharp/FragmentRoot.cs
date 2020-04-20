@@ -3,23 +3,23 @@
  * File: MyControl.cs
  *
  * Description: Implements a custom control that supports UI Automation.
- * 
+ *
  * See ProviderForm.cs for a full description of this sample.
- *   
- * 
+ *
+ *
  *  This file is part of the Microsoft WinfFX SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  *************************************************************************************************/
 
 using System;
@@ -31,10 +31,10 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-namespace ElementProvider 
+namespace ElementProvider
 {
-    class RootButton : Control, IRawElementProviderFragmentRoot    
-        
+    class RootButton : Control, IRawElementProviderFragmentRoot
+
     {
         ListBox ChildControl = new ListBox();
         Rectangle myRectangle;
@@ -52,7 +52,7 @@ namespace ElementProvider
         public RootButton(Form mainForm, Rectangle rect)
         {
             // Create an object that implements IInvokeProvider; see Invoker.cs.
-            myInvokePatternProvider = new InvokePatternProvider(this, this);  
+            myInvokePatternProvider = new InvokePatternProvider(this, this);
 
             // Initialize painting area and color.
             myRectangle = new Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
@@ -112,7 +112,7 @@ namespace ElementProvider
 // <Snippet150>
         /// <summary>
         /// Responds to a button click, regardless of whether it was caused by a mouse or
-        /// keyboard click or by InvokePattern.Invoke. 
+        /// keyboard click or by InvokePattern.Invoke.
         /// </summary>
         private void OnCustomButtonClicked()
         {
@@ -162,7 +162,7 @@ namespace ElementProvider
             }
             else if (propertyId == AutomationElementIdentifiers.ControlTypeProperty.Id)
             {
-                return ControlType.Button.Id;  
+                return ControlType.Button.Id;
             }
             else if (propertyId == AutomationElementIdentifiers.IsContentElementProperty.Id)
             {
@@ -180,9 +180,9 @@ namespace ElementProvider
         // </Snippet102>
 
         // <Snippet103>
-        IRawElementProviderSimple IRawElementProviderSimple.HostRawElementProvider  
+        IRawElementProviderSimple IRawElementProviderSimple.HostRawElementProvider
         {
-            get 
+            get
             {
                 // myHWND is the handle of the window that contains this control.
                 return AutomationInteropProvider.HostProviderFromHandle(myHWND);
@@ -193,7 +193,7 @@ namespace ElementProvider
         // <Snippet104>
         ProviderOptions IRawElementProviderSimple.ProviderOptions
         {
-            get 
+            get
             {
                 return ProviderOptions.ServerSideProvider;
             }
@@ -218,7 +218,7 @@ namespace ElementProvider
             get
             {
                 Console.WriteLine("RootButton:  Got FragmentRoot property.");
-                return this;        
+                return this;
             }
         }
 
@@ -230,7 +230,7 @@ namespace ElementProvider
         int[] IRawElementProviderFragment.GetRuntimeId()
         {
             return null;
-            //return new int[] { AutomationInteropProvider.AppendRuntimeId, 1 };  
+            //return new int[] { AutomationInteropProvider.AppendRuntimeId, 1 };
                   // not implemented by root, says Brendan's sample
         }
 
@@ -238,7 +238,7 @@ namespace ElementProvider
         IRawElementProviderFragment IRawElementProviderFragment.Navigate(NavigateDirection direction)
         {
             if ((direction == NavigateDirection.FirstChild)
-                || (direction == NavigateDirection.LastChild)) 
+                || (direction == NavigateDirection.LastChild))
             {
                 // Return the provider that is the sole child of this one.
                 return (IRawElementProviderFragment)ChildControl;
@@ -277,7 +277,7 @@ namespace ElementProvider
 
         IRawElementProviderFragment IRawElementProviderFragmentRoot.GetFocus()
         {
-            // TODO  Unsure of the idea here -- it returns the element within this tree that has 
+            // TODO  Unsure of the idea here -- it returns the element within this tree that has
             //  focus, but only if the focus is actually on an element in this tree? Or is it the element
             //  that gains focus when the user navigates to the root element?
             throw new Exception("The method or operation is not implemented.");

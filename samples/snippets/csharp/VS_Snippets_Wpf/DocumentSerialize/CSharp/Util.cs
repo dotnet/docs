@@ -125,7 +125,7 @@ namespace SdkSample
 
 #else
             // Use the rules for reading/writing the saved file -- if the app was deployed
-            // with ClickOnce, it goes to/from the user's desktop, otherwise the current 
+            // with ClickOnce, it goes to/from the user's desktop, otherwise the current
             // directory is used.
             try
             {

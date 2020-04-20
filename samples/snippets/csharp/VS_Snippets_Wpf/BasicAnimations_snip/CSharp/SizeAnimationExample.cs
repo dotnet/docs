@@ -58,7 +58,7 @@ namespace SDKSamples
             SizeAnimation mySizeAnimation = new SizeAnimation();
             mySizeAnimation.Duration = TimeSpan.FromSeconds(2);
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             mySizeAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the From and To properties of the animation.

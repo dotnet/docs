@@ -6,7 +6,7 @@ using System.Text;
 namespace Group
 {
     using CommonTypes;
-    // For the group clause topic, we only use bits and pieces of this class. The same 
+    // For the group clause topic, we only use bits and pieces of this class. The same
     // class is also used for  How To: Group Results in Various Ways HowTo and
     // How To: Enumerate Groups and Group Items
 
@@ -16,7 +16,7 @@ namespace Group
         List<Common.Student> students = CommonTypes.Common.GetStudents();
         // Use a compound from to access the inner sequence within each element.
         // Note the similarity to a nested foreach statement.
-        void SimpleGroups()        
+        void SimpleGroups()
         {
 
             //<Snippet10>
@@ -37,7 +37,7 @@ namespace Group
                 select g;
             //</snippet11>
             Console.WriteLine("The SimpleGroup method produces this output:\r\n");
-            
+
            //<snippet12>
            // Iterate group items with a nested foreach. This IGrouping encapsulates
            // a sequence of Student objects, and a Key of type char.
@@ -51,7 +51,7 @@ namespace Group
                     Console.WriteLine("   {0}, {1}", student.Last, student.First);
                 }
             }
-            //</snippet12>           
+            //</snippet12>
 
             //<Snippet13>
             // Same as previous example except we use the entire last name as a key.
@@ -86,7 +86,7 @@ namespace Group
                new Student {First="Claire", Last="O'Donnell", ID=112, Scores= new List<int> {75, 84, 91, 39}},
                new Student {First="Sven", Last="Mortensen", ID=113, Scores= new List<int> {99, 89, 91, 95}},
                new Student {First="Cesar", Last="Garcia", ID=114, Scores= new List<int> {72, 81, 65, 84}},
-               new Student {First="Debra", Last="Garcia", ID=115, Scores= new List<int> {97, 89, 85, 82}} 
+               new Student {First="Debra", Last="Garcia", ID=115, Scores= new List<int> {97, 89, 85, 82}}
             };
 
             return students;
@@ -151,7 +151,7 @@ namespace Group
                new Student {First="Claire", Last="O'Donnell", ID=112, Scores= new List<int> {75, 84, 91, 39}},
                new Student {First="Sven", Last="Mortensen", ID=113, Scores= new List<int> {99, 89, 91, 95}},
                new Student {First="Cesar", Last="Garcia", ID=114, Scores= new List<int> {72, 81, 65, 84}},
-               new Student {First="Debra", Last="Garcia", ID=115, Scores= new List<int> {97, 89, 85, 82}} 
+               new Student {First="Debra", Last="Garcia", ID=115, Scores= new List<int> {97, 89, 85, 82}}
             };
 
             return students;
@@ -159,7 +159,7 @@ namespace Group
 
         // This method groups students into percentile ranges based on their
         // grade average. The Average method returns a double, so to produce a whole
-        // number it is necessary to cast to int before dividing by 10. 
+        // number it is necessary to cast to int before dividing by 10.
         static void Main()
         {
             // Obtain the data source.
@@ -171,7 +171,7 @@ namespace Group
                 let avg = (int)student.Scores.Average()
                 group student by (avg / 10) into g
                 orderby g.Key
-                select g;            
+                select g;
 
             // Execute the query.
             foreach (var studentGroup in studentQuery)
@@ -227,7 +227,7 @@ namespace Group
             // Keep the console window open in debug mode
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-        }        
+        }
     }
     /* Output:
           Words that start with the letter 'b':
@@ -282,6 +282,6 @@ namespace Group
             elephant
         Groups that start with a vowel: u
             umbrella
-    */    
+    */
     //</snippet17>
 }

@@ -24,10 +24,10 @@ namespace NamedAndOptionalSnippets
             excelApp.Workbooks.Add();
             excelApp.Visible = true;
 
-            var myFormat = 
+            var myFormat =
                 Microsoft.Office.Interop.Excel.XlRangeAutoFormat.xlRangeAutoFormatAccounting1;
 
-            excelApp.get_Range("A1", "B4").AutoFormat(myFormat, Type.Missing, 
+            excelApp.get_Range("A1", "B4").AutoFormat(myFormat, Type.Missing,
                 Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             //</Snippet3>
 

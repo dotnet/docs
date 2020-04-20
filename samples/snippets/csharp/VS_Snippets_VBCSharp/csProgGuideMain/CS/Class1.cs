@@ -66,7 +66,7 @@
 
     //<Snippet9>
     class CommandLine
-    { 
+    {
         static void Main(string[] args)
         {
             // The Length property provides the number of array elements.
@@ -78,7 +78,7 @@
             }
         }
     }
-    /* Output (assumes 3 cmd line args): 
+    /* Output (assumes 3 cmd line args):
         parameter count = 3
         Arg[0] = [a]
         Arg[1] = [b]

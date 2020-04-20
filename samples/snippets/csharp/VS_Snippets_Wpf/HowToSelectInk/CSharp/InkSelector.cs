@@ -8,7 +8,7 @@ using System.Windows.Input.StylusPlugIns;
 using System.Windows.Ink;
 
 //<Snippet2>
-// Enum that keeps track of whether StrokeCollectionDemo is in ink mode 
+// Enum that keeps track of whether StrokeCollectionDemo is in ink mode
 // or select mode.
 public enum InkMode
 {
@@ -82,8 +82,8 @@ public class InkSelector : Label
             new FrameworkPropertyMetadata(true));
     }
 
-    // Prepare to collect stylus packets. If Mode is set to Select,  
-    // get the IncrementalHitTester from the InkPresenter'newStroke 
+    // Prepare to collect stylus packets. If Mode is set to Select,
+    // get the IncrementalHitTester from the InkPresenter'newStroke
     // StrokeCollection and subscribe to its StrokeHitChanged event.
     protected override void OnStylusDown(StylusDownEventArgs e)
     {
@@ -104,9 +104,9 @@ public class InkSelector : Label
     protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
     {
         base.OnMouseLeftButtonDown(e);
-        
+
         Mouse.Capture(this);
-        
+
         if (e.StylusDevice != null)
         {
             return;
@@ -143,7 +143,7 @@ public class InkSelector : Label
 
             selectionTester =
                 presenter.Strokes.GetIncrementalLassoHitTester(80);
-            selectionTester.SelectionChanged += 
+            selectionTester.SelectionChanged +=
                 new LassoSelectionChangedEventHandler(selectionTester_SelectionChanged);
             selectionTester.AddPoints(collectedPoints);
         }
@@ -194,7 +194,7 @@ public class InkSelector : Label
     {
 
         if (mode == InkMode.Select &&
-            selectionTester != null && 
+            selectionTester != null &&
             selectionTester.IsValid)
         {
             // When the control is selecting strokes, add the
@@ -211,7 +211,7 @@ public class InkSelector : Label
     protected override void OnStylusUp(StylusEventArgs e)
     {
         stylusPoints ??= new StylusPointCollection();
-        StylusPointCollection collectedPoints = 
+        StylusPointCollection collectedPoints =
             e.GetStylusPoints(this, stylusPoints.Description);
 
         stylusPoints.Add(collectedPoints);
@@ -238,7 +238,7 @@ public class InkSelector : Label
         stylusPoints.Add(collectedPoints);
         AddPointsToHitTester(collectedPoints);
         AddStrokeToPresenter();
-        
+
         stylusPoints = null;
 
         Mouse.Capture(null);
@@ -281,7 +281,7 @@ public class InkSelector : Label
             selectedStrokes.Add(selectedStroke);
         }
 
-        // Change the color of all unselected strokes to 
+        // Change the color of all unselected strokes to
         // their original color.
         foreach (Stroke unselectedStroke in args.DeselectedStrokes)
         {
@@ -293,7 +293,7 @@ public class InkSelector : Label
 
     //<Snippet5>
     // Property to indicate whether the user is inputting or
-    // selecting ink.  
+    // selecting ink.
     public InkMode Mode
     {
         get
@@ -324,7 +324,7 @@ public class InkSelector : Label
     //<Snippet7>
     void DrawingAttributesChanged(object sender, PropertyDataChangedEventArgs e)
     {
-        // Reattach the visual of the DynamicRenderer to the InkPresenter 
+        // Reattach the visual of the DynamicRenderer to the InkPresenter
         // whenever the DrawingAttributes change.
         presenter.DetachVisuals(renderer.RootVisual);
         presenter.AttachVisuals(renderer.RootVisual, renderer.DrawingAttributes);

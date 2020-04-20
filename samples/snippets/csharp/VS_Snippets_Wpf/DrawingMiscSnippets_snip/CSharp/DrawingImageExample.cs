@@ -32,11 +32,11 @@ namespace SDKSample
             aGeometryDrawing.Geometry = ellipses;
 
             // Paint the drawing with a gradient.
-            aGeometryDrawing.Brush = 
+            aGeometryDrawing.Brush =
                 new LinearGradientBrush(
-                    Colors.Blue, 
-                    Color.FromRgb(204,204,255), 
-                    new Point(0,0), 
+                    Colors.Blue,
+                    Color.FromRgb(204,204,255),
+                    new Point(0,0),
                     new Point(1,1));
 
             // Outline the drawing with a solid color.

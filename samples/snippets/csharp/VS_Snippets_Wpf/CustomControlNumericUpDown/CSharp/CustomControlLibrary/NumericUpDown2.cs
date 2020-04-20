@@ -17,7 +17,7 @@ namespace CustomControlLibrary
             InitializeCommands();
 
             // Listen to MouseLeftButtonDown event to determine if slide should move focus to itself
-            EventManager.RegisterClassHandler(typeof(NumericUpDown), 
+            EventManager.RegisterClassHandler(typeof(NumericUpDown),
                 Mouse.MouseDownEvent, new MouseButtonEventHandler(NumericUpDown.OnMouseLeftButtonDown), true);
 
             DefaultStyleKeyProperty.OverrideMetadata(typeof(NumericUpDown), new FrameworkPropertyMetadata(typeof(NumericUpDown)));

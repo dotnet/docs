@@ -16,7 +16,7 @@ namespace MarginAndPadding
         private System.ComponentModel.IContainer components = null;
 
         // <snippet2>
-        // This code example demonstrates using the Padding property to 
+        // This code example demonstrates using the Padding property to
         // create a border around a RichTextBox control.
         public Form1()
         {
@@ -56,25 +56,25 @@ namespace MarginAndPadding
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // panel1
-            // 
+            //
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(491, 313);
             this.panel1.TabIndex = 0;
-            // 
+            //
             // richTextBox1
-            // 
+            //
             this.richTextBox1.Location = new System.Drawing.Point(5, 5);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(481, 303);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 353);

@@ -107,7 +107,10 @@ namespace builtin_types
         // </SnippetRefStruct>
 
         // <SnippetReadonlyRef>
-        public readonly ref struct Example { }
+        public readonly ref struct Example
+        {
+            // Type member definitions
+        }
         // </SnippetReadonlyRef>
     }
 }

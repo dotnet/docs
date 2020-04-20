@@ -281,7 +281,7 @@ When to use:
 
 What to watch out for:
 
-- If you must use `Async.Ignore` because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is okay. Generally, you should not discard results just to fit a type signature.
+- If you must use `Async.Ignore` because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is okay. Avoid discarding results just to fit a type signature.
 
 ### Async.RunSynchronously
 
@@ -322,7 +322,7 @@ Use only when:
 What to watch out for:
 
 - Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
-- Any effectual work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
+- Any work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
 
 ## Interoperate with .NET
 

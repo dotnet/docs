@@ -109,7 +109,7 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 - A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref` struct variable can't be used in [iterators](../../iterators.md).
 
-In particular, you use a `ref` struct type if you want to encapsulate other `ref` struct types:
+In particular, if you want to encapsulate `ref` struct types, you must use a `ref` struct type:
 
 [!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
 

@@ -49,8 +49,9 @@ public void Validate(ServiceDescription serviceDescription,
         <behaviorExtensions>  
             <add name="endpointValidate" type="Microsoft.ServiceModel.Samples.EndpointValidateElement, endpointValidate, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />  
         </behaviorExtensions>  
-    </extensions>  
-...  
+    </extensions>
+    ...
+</system.serviceModel>
 ```  
   
  Once the behavior extension is added to the service, it is now possible to add the `endpointValidate` behavior to the list of behaviors in the Web.config file and thus, to the service.  

@@ -170,8 +170,7 @@ When you run the sample, you see the messages that are returned to the client on
     ```xml
     <client>
         <endpoint name = ""
-        address="http://service_machine_name/servicemodelsamples/service.svc"
-        ... />
+        address="http://service_machine_name/servicemodelsamples/service.svc" />
     </client>
     ...
     <wsDualHttpBinding>

@@ -97,7 +97,7 @@ In the preceding example, a [`stackalloc` expression](stackalloc.md) allocates a
 
 You cannot use `[]` for pointer element access with an expression of type `void*`.
 
-You also can use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
+You can also use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
 
 ## Pointer arithmetic operators
 

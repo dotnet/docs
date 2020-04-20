@@ -139,7 +139,7 @@ If you're unable to build your application following the Twelve-Factor App princ
 
 ## Development resources
 
-This section shows a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+This section shows a short list of development resources that may help you get started using containers and orchestrators for your next application. If you're looking for guidance on how to design your cloud-native microservices architecture app, read this book's companion, [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/).
 
 ### Local Kubernetes Development
 
@@ -214,15 +214,21 @@ In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/
 
 Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right click on the project and **Add** > **Docker Support**, as shown in Figure 3-8.
 
-![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
+![Adding Docker support to Visual Studio](./media/visual-studio-add-docker-support.png)
 
-**Figure 3-8**. Visual Studio Add Docker Support
+**Figure 3-8**. Adding Docker support to Visual Studio
 
 You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
-![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
+![Adding orchestration support to Visual Studio](./media/visual-studio-add-orchestrator-support.png)
 
-**Figure 3-9**. Visual Studio Add Orchestrator Support
+**Figure 3-9**. Adding orchestration support to Visual Studio
+
+### Visual Studio Code Docker Tooling
+
+There are a number of extensions available for Visual Studio Code that support Docker development.
+
+Microsoft provides the [Docker for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker). This extension simplifies the process of adding container support to applications. It scaffolds required files, builds Docker images, and enables you to debug your app inside a container. The extension features a visual explorer that makes it easy to take actions on containers and images such as start, stop, inspect, remove, and more. The extension also supports Docker Compose enabling you to manage multiple running containers as a single unit.
 
 >[!div class="step-by-step"]
 >[Previous](scale-applications.md)

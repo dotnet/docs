@@ -49,7 +49,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 ### References
 
-- [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
+- [.NET Microservices: Architecture for Containerized .NET applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/)
 
 - [Designing Interservice Communication for Microservices](https://docs.microsoft.com/azure/architecture/microservices/design/interservice-communication)
 

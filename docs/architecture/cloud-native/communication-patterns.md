@@ -4,6 +4,7 @@ description: Learn about key service communication concerns in cloud-native appl
 author: robvet
 ms.date: 08/31/2019
 ---
+
 # Cloud-native communication patterns
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]

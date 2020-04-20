@@ -83,16 +83,14 @@ If a task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displ
 [!code-csharp[TPL_Exceptions#27](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/exceptionprop21.cs#27)]
 [!code-vb[TPL_Exceptions#27](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/exceptionprop21.vb#27)]
 
-In a real application, the continuation delegate could log detailed information about the exception and possibly spawn new tasks to recover from the exception. There are several ways to observe exceptions directly or indirectly through propagation.
+In a real application, the continuation delegate could log detailed information about the exception and possibly spawn new tasks to recover from the exception. If a task faults, the following expressions with throw the exception:
 
-| Observe                         | Description                                                                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `task.Exception`                | Access the <xref:System.Threading.Tasks.Task.Exception%2A> property.                                                        |
-| `_ = task.Exception`            | Discard the <xref:System.Threading.Tasks.Task.Exception%2A>, but still access it.                                           |
-| `await task`                    | Asynchronously `await` a task, propagating an <xref:System.Threading.Tasks.Task.Exception%2A> if the task has faulted.      |
-| `task.Wait()`                   | Synchronously `.Wait` for the task, propagating an <xref:System.Threading.Tasks.Task.Exception%2A> if the task has faulted. |
-| `task.Result`                   | Access the `.Result` property, propagating an <xref:System.Threading.Tasks.Task.Exception%2A>  if the task has faulted.     |
-| `task.GetAwaiter().GetResult()` | Equivelent to `await task`, propagating an <xref:System.Threading.Tasks.Task.Exception%2A>  if the task has faulted.        |
+ - `await task`
+ - `task.Wait()`
+ - `task.Result`
+ - `task.GetAwaiter().GetResult()`
+
+To observe the exception, access the <xref:System.Threading.Tasks.Task.Exception%2A> property.
 
 ## UnobservedTaskException event
 

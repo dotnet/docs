@@ -105,7 +105,6 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
-
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
   The target runtime to test for.

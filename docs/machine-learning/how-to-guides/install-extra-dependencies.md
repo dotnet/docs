@@ -82,7 +82,7 @@ No extra installation steps required. The library is installed when the NuGet pa
 5. Add this location to the load library path:
 
     ```bash
-    sudo ldconfig /opt/intel/compilers_and_libraries_2020.0.166/linux/compiler/lib/intel64_li
+    sudo ldconfig /opt/intel/compilers_and_libraries_2020.0.166/linux/compiler/lib/intel64_lin
     ```
 
 ### Mac

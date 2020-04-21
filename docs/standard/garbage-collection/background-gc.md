@@ -1,6 +1,6 @@
 ---
 title: Background garbage collection
-description: Learn about background garbage collection in .NET, and how it differs in workstation and server garbage collection.
+description: Learn about background garbage collection in .NET and how it differs in workstation and server garbage collection.
 ms.date: 04/21/2020
 helpviewer_keywords:
   - garbage collection, background
@@ -49,11 +49,11 @@ The following illustration shows background *server* garbage collection performe
 >
 > Concurrent garbage is replaced by [background garbage collection](#background-workstation-garbage-collection) in later versions.
 
-In workstation or server garbage collection, you can [enable concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast.
+In workstation or server garbage collection, you can [enable concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish fast.
 
 Concurrent garbage collection enables interactive applications to be more responsive by minimizing pauses for a collection. Managed threads can continue to run most of the time while the concurrent garbage collection thread is running. This results in shorter pauses while a garbage collection is occurring.
 
-Concurrent garbage collection is performed on a dedicated thread. By default, the CLR runs workstation garbage collection with concurrent garbage collection enabled. This is true for single-processor and multi-processor computers.
+Concurrent garbage collection is performed on a dedicated thread. By default, the CLR runs workstation garbage collection with concurrent garbage collection enabled on both single-processor and multi-processor computers.
 
 The following illustration shows concurrent garbage collection performed on a separate dedicated thread.
 

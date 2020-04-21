@@ -180,4 +180,5 @@ Also, on the GitHub repository for this book, you'll find the results of the pro
 We wrote this guide to help you understand your options for improving and modernizing existing .NET desktop applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com).
 
 >[!div class="step-by-step"]
+>[Previous](index.md)
 >[Next](whats-new-dotnet-core.md)

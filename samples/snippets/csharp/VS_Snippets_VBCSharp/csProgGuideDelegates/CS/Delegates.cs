@@ -181,7 +181,7 @@ class TestStuffAgain
         // Compile-time error.
         //Console.WriteLine(d == e);
 
-        // OK at compile-time. False if the run-time type of f 
+        // OK at compile-time. False if the run-time type of f
         // is not the same as that of d.
         Console.WriteLine(d == f);
     }
@@ -361,25 +361,25 @@ namespace WrapContravariance
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(12, 73);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            // 
+            //
             // textBox1
-            // 
+            //
             this.textBox1.Location = new System.Drawing.Point(12, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 266);
@@ -424,7 +424,7 @@ namespace WrapContravariance
                 // Declare instances of the custom delegate.
                 CustomDel hiDel, byeDel, multiDel, multiMinusHiDel;
 
-                // In this example, you can omit the custom delegate if you 
+                // In this example, you can omit the custom delegate if you
                 // want to and use Action<string> instead.
                 //Action<string> hiDel, byeDel, multiDel, multiMinusHiDel;
 
@@ -436,8 +436,8 @@ namespace WrapContravariance
                 // method Goodbye.
                 byeDel = Goodbye;
 
-                // The two delegates, hiDel and byeDel, are combined to 
-                // form multiDel. 
+                // The two delegates, hiDel and byeDel, are combined to
+                // form multiDel.
                 multiDel = hiDel + byeDel;
 
                 // Remove hiDel from the multicast delegate, leaving byeDel,
@@ -511,7 +511,7 @@ namespace WrapContravariance
                     list.Add(new Book(title, author, price, paperBack));
                 }
 
-                // Call a passed-in delegate on each paperback book to process it: 
+                // Call a passed-in delegate on each paperback book to process it:
                 public void ProcessPaperbackBooks(ProcessBookDelegate processBook)
                 {
                     foreach (Book b in list)
@@ -569,7 +569,7 @@ namespace WrapContravariance
                     // Print all the titles of paperbacks:
                     Console.WriteLine("Paperback Book Titles:");
 
-                    // Create a new delegate object associated with the static 
+                    // Create a new delegate object associated with the static
                     // method Test.PrintTitle:
                     //<Snippet17>
                     bookDB.ProcessPaperbackBooks(PrintTitle);
@@ -579,7 +579,7 @@ namespace WrapContravariance
                     // a PriceTotaller object:
                     PriceTotaller totaller = new PriceTotaller();
 
-                    // Create a new delegate object associated with the nonstatic 
+                    // Create a new delegate object associated with the nonstatic
                     // method AddBookToTotal on the object totaller:
                     //<Snippet18>
                     bookDB.ProcessPaperbackBooks(totaller.AddBookToTotal);

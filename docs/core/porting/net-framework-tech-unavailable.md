@@ -13,7 +13,7 @@ Just because an API or technology isn't currently implemented doesn't imply it's
 
 ## AppDomains
 
-Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are generally quite expensive. Creating additional app domains is not supported, and there are no plans to add this capability in the future. For code isolation, use separate processes or containers as an alternative. To dynamically load assemblies, use the <xref:System.Runtime.Loader.AssemblyLoadContext> class.
+Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are generally expensive. Creating additional app domains is not supported, and there are no plans to add this capability in the future. For code isolation, use separate processes or containers as an alternative. To dynamically load assemblies, use the <xref:System.Runtime.Loader.AssemblyLoadContext> class.
 
 To make code migration from .NET Framework easier, .NET Core exposes some of the <xref:System.AppDomain> API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Private.CoreLib/src/System/AppDomain.cs) in the [dotnet/runtime GitHub repository](https://github.com/dotnet/runtime). Make sure to select the branch that matches your implemented version.
 

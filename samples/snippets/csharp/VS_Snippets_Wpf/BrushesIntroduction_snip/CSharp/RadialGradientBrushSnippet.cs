@@ -25,13 +25,13 @@ namespace BrushesIntroduction
 
             // Set the GradientOrigin to the center of the area being painted.
             radialGradient.GradientOrigin = new Point(0.5, 0.5);
-            
+
             // Set the gradient center to the center of the area being painted.
             radialGradient.Center = new Point(0.5, 0.5);
 
             // Set the radius of the gradient circle so that it extends to
             // the edges of the area being painted.
-            radialGradient.RadiusX = 0.5; 
+            radialGradient.RadiusX = 0.5;
             radialGradient.RadiusY = 0.5;
 
             // Create four gradient stops.
@@ -43,7 +43,7 @@ namespace BrushesIntroduction
             // Freeze the brush (make it unmodifiable) for performance benefits.
             radialGradient.Freeze();
 
-            // Create a rectangle and paint it with the 
+            // Create a rectangle and paint it with the
             // RadialGradientBrush.
             Rectangle aRectangle = new Rectangle();
             aRectangle.Width = 200;

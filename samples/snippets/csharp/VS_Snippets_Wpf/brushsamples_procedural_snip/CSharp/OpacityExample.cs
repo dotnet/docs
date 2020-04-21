@@ -32,12 +32,12 @@ namespace Microsoft.Samples.BrushExamples
             myTwentyFivePercentOpaqueButton.Opacity = 0.25;
             myTwentyFivePercentOpaqueButton.Content = "A Button";
             // </Snippet2>
-            
+
             myStackPanel.Children.Add(myTwentyFivePercentOpaqueButton);
 
             // <Snippet3>
             //
-            // The image contained within this button has an 
+            // The image contained within this button has an
             // effective opacity of 0.125 (0.25*0.5 = 0.125);
             //
             Button myImageButton = new Button();
@@ -64,14 +64,14 @@ namespace Microsoft.Samples.BrushExamples
             myImage.Height = 50;
             myImage.Opacity = 0.5;
             myImageStackPanel.Children.Add(myImage);
-            myImageButton.Content = myImageStackPanel;       
+            myImageButton.Content = myImageStackPanel;
             // </Snippet3>
 
             myStackPanel.Children.Add(myImageButton);
 
             // <Snippet4>
             //
-            //  This button's background is made 25% opaque, 
+            //  This button's background is made 25% opaque,
             // but its text remains 100% opaque.
             //
             Button myOpaqueTextButton = new Button();
@@ -80,7 +80,7 @@ namespace Microsoft.Samples.BrushExamples
             myOpaqueTextButton.Background = mySolidColorBrush;
             myOpaqueTextButton.Content = "A Button";
             // </Snippet4>
-            
+
             myStackPanel.Children.Add(myOpaqueTextButton);
 
             this.Content = myStackPanel;

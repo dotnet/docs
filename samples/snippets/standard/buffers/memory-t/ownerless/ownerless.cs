@@ -19,6 +19,6 @@ class Example
         strValue.AsSpan().CopyTo(buffer.Slice(0, strValue.Length).Span);
     }
 
-    static void DisplayBufferToConsole(Memory<char> buffer) => 
+    static void DisplayBufferToConsole(Memory<char> buffer) =>
         Console.WriteLine($"Contents of the buffer: '{buffer}'");
 }

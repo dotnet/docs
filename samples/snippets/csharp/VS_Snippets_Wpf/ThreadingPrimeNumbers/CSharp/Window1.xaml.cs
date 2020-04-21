@@ -12,9 +12,9 @@ namespace SDKSamples
         //<SnippetThreadingPrimeNumberInit>
         public delegate void NextPrimeDelegate();
         //</SnippetThreadingPrimeNumberInit>
-        
-        //Current number to check 
-        private long num = 3;   
+
+        //Current number to check
+        private long num = 3;
 
         private bool continueCalculating = false;
 
@@ -70,11 +70,11 @@ namespace SDKSamples
             if (continueCalculating)
             {
                 startStopButton.Dispatcher.BeginInvoke(
-                    System.Windows.Threading.DispatcherPriority.SystemIdle, 
+                    System.Windows.Threading.DispatcherPriority.SystemIdle,
                     new NextPrimeDelegate(this.CheckNextNumber));
             }
         }
-        
+
         private bool NotAPrime = false;
         //</SnippetThreadingPrimeNumberCheckNextNumber>
     }

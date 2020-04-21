@@ -1,4 +1,4 @@
-﻿// <snippet1> 
+﻿// <snippet1>
 using System;
 using System.Threading;
 using System.Threading.Tasks.Dataflow;
@@ -6,7 +6,7 @@ using System.Threading.Tasks.Dataflow;
 // Demonstrates how to unlink dataflow blocks.
 class DataflowReceiveAny
 {
-   // Receives the value from the first provided source that has 
+   // Receives the value from the first provided source that has
    // a message.
    public static T ReceiveFromAny<T>(params ISourceBlock<T>[] sources)
    {
@@ -37,11 +37,11 @@ class DataflowReceiveAny
 
    static void Main(string[] args)
    {
-      // Create a shared CancellationTokenSource object to enable the 
+      // Create a shared CancellationTokenSource object to enable the
       // TrySolution method to be cancelled.
       var cts = new CancellationTokenSource();
 
-      // Create three TransformBlock<int, int> objects. 
+      // Create three TransformBlock<int, int> objects.
       // Each TransformBlock<int, int> object calls the TrySolution method.
       Func<int, int> action = n => TrySolution(n, cts.Token);
       var trySolution1 = new TransformBlock<int, int>(action);
@@ -53,7 +53,7 @@ class DataflowReceiveAny
       trySolution2.Post(21);
       trySolution3.Post(31);
 
-      // Call the ReceiveFromAny<T> method to receive the result from the 
+      // Call the ReceiveFromAny<T> method to receive the result from the
       // first TransformBlock<int, int> object to finish.
       int result = ReceiveFromAny(trySolution1, trySolution2, trySolution3);
 
@@ -70,4 +70,4 @@ class DataflowReceiveAny
 /* Sample output:
 The solution is 53.
 */
-// </snippet1> 
+// </snippet1>

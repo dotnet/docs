@@ -24,7 +24,7 @@ namespace DBNullCS
         private BindingSource bindingSource1;
         private TextBox textBox1;
         private TextBox textBox2;
-        
+
         // Data table to hold the database data.
         DataTable employeeTable = new DataTable();
 
@@ -52,7 +52,7 @@ namespace DBNullCS
             this.Controls.Add(this.pictureBox1);
             this.ResumeLayout(false);
             this.PerformLayout();
-           
+
             // Create the connection string and populate the data table
             // with data.
             string connectionString = "Integrated Security=SSPI;" +
@@ -60,16 +60,16 @@ namespace DBNullCS
 				"Data Source = localhost";
 			SqlConnection connection = new SqlConnection();
 			connection.ConnectionString = connectionString;
-            SqlDataAdapter employeeAdapter = 
+            SqlDataAdapter employeeAdapter =
                 new SqlDataAdapter(new SqlCommand("Select * from Employees", connection));
             connection.Open();
             employeeAdapter.Fill(employeeTable);
-            
+
             // Set the DataSource property of the BindingSource to the employee table.
             bindingSource1.DataSource = employeeTable;
 
            // Set up the binding to the ReportsTo column.
-            Binding reportsToBinding = textBox2.DataBindings.Add("Text", bindingSource1, 
+            Binding reportsToBinding = textBox2.DataBindings.Add("Text", bindingSource1,
                 "ReportsTo", true);
 
             // Set the NullValue property for this binding.
@@ -77,7 +77,7 @@ namespace DBNullCS
 
             // Set up the binding for the PictureBox using the Add method, setting
             // the null value in method call.
-            pictureBox1.DataBindings.Add("Image", bindingSource1, "Photo", true, 
+            pictureBox1.DataBindings.Add("Image", bindingSource1, "Photo", true,
                 DataSourceUpdateMode.Never, new Bitmap(typeof(Button), "Button.bmp"));
 
             // Set up the remaining binding.

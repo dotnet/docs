@@ -12,7 +12,7 @@ namespace Microsoft.Samples.KeyFrameAnimations
     {
         void AppStartingUp(object sender, StartupEventArgs e)
         {
-        
+
             SampleViewer mainWindow = new SampleViewer();
             mainWindow.Show();
         }

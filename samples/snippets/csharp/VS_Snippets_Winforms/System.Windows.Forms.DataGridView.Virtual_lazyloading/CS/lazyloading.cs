@@ -11,7 +11,7 @@ public class VirtualJustInTimeDemo : System.Windows.Forms.Form
     private DataGridView dataGridView1 = new DataGridView();
     private Cache memoryCache;
 
-    // Specify a connection string. Replace the given value with a 
+    // Specify a connection string. Replace the given value with a
     // valid connection string for a Northwind SQL Server sample
     // database accessible to your system.
     private string connectionString =
@@ -183,7 +183,7 @@ public class DataRetriever : IDataPageRetriever
 
     public DataTable SupplyPageOfData(int lowerPageBoundary, int rowsPerPage)
     {
-        // Store the name of the ID column. This column must contain unique 
+        // Store the name of the ID column. This column must contain unique
         // values so the SQL below will work properly.
         columnToSortBy ??= this.Columns[0].ColumnName;
 
@@ -216,7 +216,7 @@ public class Cache
 {
     private static int RowsPerPage;
 
-    // Represents one page of data.  
+    // Represents one page of data.
     public struct DataPage
     {
         public DataTable table;
@@ -310,9 +310,9 @@ public class Cache
     {
         cachePages = new DataPage[]{
             new DataPage(dataSupply.SupplyPageOfData(
-                DataPage.MapToLowerBoundary(0), RowsPerPage), 0), 
+                DataPage.MapToLowerBoundary(0), RowsPerPage), 0),
             new DataPage(dataSupply.SupplyPageOfData(
-                DataPage.MapToLowerBoundary(RowsPerPage), 
+                DataPage.MapToLowerBoundary(RowsPerPage),
                 RowsPerPage), RowsPerPage)};
     }
 
@@ -358,7 +358,7 @@ public class Cache
     }
 
     // Returns a value indicating whether the given row index is contained
-    // in the given DataPage. 
+    // in the given DataPage.
     private bool IsRowCachedInPage(int pageNumber, int rowIndex)
     {
         return rowIndex <= cachePages[pageNumber].HighestIndex &&

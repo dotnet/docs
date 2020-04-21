@@ -17,12 +17,12 @@ namespace BrowserInteropHelperSnippet {
 
       //<SnippetIsBrowserHostedCODE>
       // Detect if browser hosted
-      if (BrowserInteropHelper.IsBrowserHosted) 
+      if (BrowserInteropHelper.IsBrowserHosted)
       {
           // Note: can only inspect BrowserInteropHelper.Source property if page is browser-hosted.
           this.dataTextBlock.Text = "Is Browser Hosted: " + BrowserInteropHelper.Source.ToString();
       }
-      else 
+      else
       {
           this.dataTextBlock.Text = "Is not browser hosted";
       }

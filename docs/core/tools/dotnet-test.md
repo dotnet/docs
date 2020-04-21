@@ -45,7 +45,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 ## Options
 
-- **`a|--test-adapter-path <PATH_TO_ADAPTER>`**
+- **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
 
   Use the custom test adapters from the specified path in the test run.
 
@@ -53,19 +53,19 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`c|--configuration <CONFIGURATION>`**
+- **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
-- **`-collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
+- **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
-- **`d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
+- **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
   Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
 
-- **`f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Looks for test binaries for a specific [framework](../../standard/frameworks.md).
 
@@ -73,7 +73,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-- **`h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
@@ -81,7 +81,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
 
-- **`l|--logger <LOGGER_URI/FRIENDLY_NAME>`**
+- **`-l|--logger <LOGGER_URI/FRIENDLY_NAME>`**
 
   Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`.
 

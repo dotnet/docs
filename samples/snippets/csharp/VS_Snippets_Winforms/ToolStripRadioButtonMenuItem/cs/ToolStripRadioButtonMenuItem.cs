@@ -73,11 +73,11 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
     {
         base.OnCheckedChanged(e);
 
-        // If this item is no longer in the checked state or if its 
+        // If this item is no longer in the checked state or if its
         // parent has not yet been initialized, do nothing.
         if (!Checked || this.Parent == null) return;
 
-        // Clear the checked state for all siblings. 
+        // Clear the checked state for all siblings.
         foreach (ToolStripItem item in Parent.Items)
         {
             ToolStripRadioButtonMenuItem radioItem =
@@ -86,7 +86,7 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
             {
                 radioItem.Checked = false;
 
-                // Only one item can be selected at a time, 
+                // Only one item can be selected at a time,
                 // so there is no need to continue.
                 return;
             }
@@ -97,8 +97,8 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
     //<snippet130>
     protected override void OnClick(EventArgs e)
     {
-        // If the item is already in the checked state, do not call 
-        // the base method, which would toggle the value. 
+        // If the item is already in the checked state, do not call
+        // the base method, which would toggle the value.
         if (Checked) return;
 
         base.OnClick(e);
@@ -114,13 +114,13 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
         {
             // If the client sets the Image property, the selection behavior
             // remains unchanged, but the RadioButton is not displayed and the
-            // selection is indicated only by the selection rectangle. 
+            // selection is indicated only by the selection rectangle.
             base.OnPaint(e);
             return;
         }
         else
         {
-            // If the Image property is not set, call the base OnPaint method 
+            // If the Image property is not set, call the base OnPaint method
             // with the CheckState property temporarily cleared to prevent
             // the check mark from being painted.
             CheckState currentState = this.CheckState;
@@ -162,7 +162,7 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
             ContentRectangle.Location.X + 4,
             ContentRectangle.Location.Y + offset);
 
-        // Paint the RadioButton. 
+        // Paint the RadioButton.
         RadioButtonRenderer.DrawRadioButton(
             e.Graphics, imageLocation, buttonState);
     }
@@ -207,8 +207,8 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
     //</snippet150>
 
     //<snippet160>
-    // Enable the item only if its parent item is in the checked state 
-    // and its Enabled property has not been explicitly set to false. 
+    // Enable the item only if its parent item is in the checked state
+    // and its Enabled property has not been explicitly set to false.
     public override bool Enabled
     {
         get
@@ -236,9 +236,9 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
     //</snippet160>
 
     //<snippet170>
-    // When OwnerItem becomes available, if it is a ToolStripMenuItem 
-    // with a CheckOnClick property value of true, subscribe to its 
-    // CheckedChanged event. 
+    // When OwnerItem becomes available, if it is a ToolStripMenuItem
+    // with a CheckOnClick property value of true, subscribe to its
+    // CheckedChanged event.
     protected override void OnOwnerChanged(EventArgs e)
     {
         ToolStripMenuItem ownerMenuItem =
@@ -253,8 +253,8 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
     //</snippet170>
 
     //<snippet180>
-    // When the checked state of the parent item changes, 
-    // repaint the item so that the new Enabled state is displayed. 
+    // When the checked state of the parent item changes,
+    // repaint the item so that the new Enabled state is displayed.
     private void OwnerMenuItem_CheckedChanged(
         object sender, EventArgs e)
     {
@@ -270,17 +270,17 @@ public class Form1 : Form
     private MenuStrip menuStrip1 = new MenuStrip();
     private ToolStripMenuItem mainToolStripMenuItem = new ToolStripMenuItem();
     private ToolStripMenuItem toolStripMenuItem1 = new ToolStripMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem1 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem1 =
         new ToolStripRadioButtonMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem2 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem2 =
         new ToolStripRadioButtonMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem3 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem3 =
         new ToolStripRadioButtonMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem4 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem4 =
         new ToolStripRadioButtonMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem5 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem5 =
         new ToolStripRadioButtonMenuItem();
-    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem6 = 
+    private ToolStripRadioButtonMenuItem toolStripRadioButtonMenuItem6 =
         new ToolStripRadioButtonMenuItem();
 
     public Form1()
@@ -299,7 +299,7 @@ public class Form1 : Form
             toolStripRadioButtonMenuItem1, toolStripRadioButtonMenuItem2,
             toolStripMenuItem1});
         toolStripRadioButtonMenuItem2.DropDownItems.AddRange(
-            new ToolStripItem[] {toolStripRadioButtonMenuItem3, 
+            new ToolStripItem[] {toolStripRadioButtonMenuItem3,
             toolStripRadioButtonMenuItem4});
         toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] {
             toolStripRadioButtonMenuItem5, toolStripRadioButtonMenuItem6});

@@ -13,7 +13,7 @@ using System.Windows.Forms;
 // </snippet2>
 
 // This sample demonstrates the use of various attributes for
-// authoring a control. 
+// authoring a control.
 namespace AttributesDemoControlLibrary
 {
     // This is the event handler delegate for the ThresholdExceeded event.
@@ -21,7 +21,7 @@ namespace AttributesDemoControlLibrary
 
     // <snippet3>
     // <snippet20>
-    // This control demonstrates a simple logging capability. 
+    // This control demonstrates a simple logging capability.
     [ComplexBindingProperties("DataSource", "DataMember")]
     [DefaultBindingProperty("TitleText")]
     [DefaultEvent("ThresholdExceeded")]
@@ -89,7 +89,7 @@ namespace AttributesDemoControlLibrary
         // </snippet21>
 
         // <snippet22>
-        // The inherited Text property is hidden at design time and 
+        // The inherited Text property is hidden at design time and
         // raises an exception at run time. This enforces a requirement
         // that client code uses the TitleText property instead.
         [Browsable(false)]
@@ -225,9 +225,9 @@ namespace AttributesDemoControlLibrary
         // </snippet26>
 
         // <snippet27>
-        // This property would normally have its BrowsableAttribute 
-        // set to false, but this code demonstrates using 
-        // ReadOnlyAttribute, so BrowsableAttribute is true to show 
+        // This property would normally have its BrowsableAttribute
+        // set to false, but this code demonstrates using
+        // ReadOnlyAttribute, so BrowsableAttribute is true to show
         // it in any attached PropertyGrid control.
         [Browsable(true)]
         [Category("Behavior")]
@@ -237,7 +237,7 @@ namespace AttributesDemoControlLibrary
         {
             get
             {
-                int lastRowIndex = 
+                int lastRowIndex =
                     this.dataGridView1.Rows.GetLastRow(
                     DataGridViewElementStates.Visible);
 
@@ -277,9 +277,9 @@ namespace AttributesDemoControlLibrary
         // </snippet28>
 
         // <snippet29>
-        // This property exists only to demonstrate the 
-        // PasswordPropertyText attribute. When this control 
-        // is attached to a PropertyGrid control, the returned 
+        // This property exists only to demonstrate the
+        // PasswordPropertyText attribute. When this control
+        // is attached to a PropertyGrid control, the returned
         // string will be displayed with obscuring characters
         // such as asterisks. This property has no other effect.
         [Category("Security")]
@@ -295,8 +295,8 @@ namespace AttributesDemoControlLibrary
         // </snippet29>
 
         // <snippet30>
-        // This property exists only to demonstrate the 
-        // DisplayName attribute. When this control 
+        // This property exists only to demonstrate the
+        // DisplayName attribute. When this control
         // is attached to a PropertyGrid control, the
         // property will be appear as "RenamedProperty"
         // instead of "MisnamedProperty".
@@ -317,21 +317,21 @@ namespace AttributesDemoControlLibrary
         #region Implementation
 
         // <snippet31>
-        // This is the event handler for the DataGridView control's 
-        // CellFormatting event. Handling this event allows the 
+        // This is the event handler for the DataGridView control's
+        // CellFormatting event. Handling this event allows the
         // AttributesDemoControl to examine the incoming log entries
         // from the data source as they arrive.
         //
         // If the cell for which this event is raised holds the
-        // log entry's timestamp, the cell value is formatted with 
-        // the full date/time pattern. 
-        // 
-        // Otherwise, the cell's value is assumed to hold the log 
-        // entry value. If the value exceeds the threshold value, 
+        // log entry's timestamp, the cell value is formatted with
+        // the full date/time pattern.
+        //
+        // Otherwise, the cell's value is assumed to hold the log
+        // entry value. If the value exceeds the threshold value,
         // the cell is painted with the colors specified by the
         // AlertForeColor and AlertBackColor properties, after which
-        // the ThresholdExceeded is raised. For this comparison to 
-        // succeed, the log entry's type must implement the IComparable 
+        // the ThresholdExceeded is raised. For this comparison to
+        // succeed, the log entry's type must implement the IComparable
         // interface.
         private void dataGridView1_CellFormatting(
             object sender,
@@ -343,7 +343,7 @@ namespace AttributesDemoControlLibrary
                 {
                     if (e.Value is DateTime)
                     {
-                        // Display the log entry time with the 
+                        // Display the log entry time with the
                         // full date/time pattern (long time).
                         e.CellStyle.Format = "F";
                     }
@@ -362,7 +362,7 @@ namespace AttributesDemoControlLibrary
 
                             // Compare the log entry value to the threshold value.
                             // Use reflection to call the CompareTo method on the
-                            // template parameter's type. 
+                            // template parameter's type.
                             int compareVal = (int)paramType.InvokeMember(
                                 "CompareTo",
                                 BindingFlags.Default | BindingFlags.InvokeMethod,
@@ -414,9 +414,9 @@ namespace AttributesDemoControlLibrary
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // tableLayoutPanel1
-            // 
+            //
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
@@ -433,9 +433,9 @@ namespace AttributesDemoControlLibrary
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 424);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
+            //
             // dataGridView1
-            // 
+            //
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -458,9 +458,9 @@ namespace AttributesDemoControlLibrary
             this.dataGridView1.Size = new System.Drawing.Size(399, 354);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -470,9 +470,9 @@ namespace AttributesDemoControlLibrary
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
             // AttributesDemoControl
-            // 
+            //
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "AttributesDemoControl";
             this.Padding = new System.Windows.Forms.Padding(10);
@@ -522,7 +522,7 @@ namespace AttributesDemoControlLibrary
     // </snippet4>
 
     // <snippet5>
-    // This class encapsulates a log entry. It is a parameterized 
+    // This class encapsulates a log entry. It is a parameterized
     // type (also known as a template class). The parameter type T
     // defines the type of data being logged. For threshold detection
     // to work, this type must implement the IComparable interface.

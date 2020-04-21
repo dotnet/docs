@@ -1,6 +1,6 @@
 ---
 title: "ref keyword - C# Reference"
-ms.date: 03/19/2020
+ms.date: 04/21/2020
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -15,7 +15,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. For more information, see [Passing an argument by reference](#passing-an-argument-by-reference).
 - In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
-- In a `struct` declaration to declare a `ref struct` or a `readonly ref struct`. For more information, see [ref struct types](#ref-struct-types).
+- In a `struct` declaration to declare a `ref struct` or a `readonly ref struct`. For more information, see the [`ref` struct](../builtin-types/struct.md#ref-struct) section of the [Structure types](../builtin-types/struct.md) article.
 
 ## Passing an argument by reference
 
@@ -130,24 +130,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 [!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
-
-## Ref struct types
-
-Adding the `ref` modifier to a `struct` declaration defines that instances of that type must be stack allocated. In other words, instances of these types can never be created on the
-heap as a member of another class. The primary motivation for this feature was <xref:System.Span%601> and related structures.
-
-The goal of keeping a `ref struct` type as a stack-allocated variable introduces several rules that the compiler enforces for all `ref struct` types.
-
-- You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
-- `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler-generated backing field.
-- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `Task`-like types.
-- You cannot declare `ref struct` local variables in iterators.
-- You cannot capture `ref struct` variables in lambda expressions or local functions.
-
-These restrictions ensure you don't accidentally use a `ref struct` in a manner that could promote it to the managed heap.
-
-You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref struct` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations.
 
 ## C# language specification
 

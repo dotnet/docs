@@ -95,7 +95,7 @@ public class SystemDrawingWorkingWithImages : Form
     private void Method51(PaintEventArgs e)
     {
         // <snippet51>
-        // Create an Image object. 
+        // Create an Image object.
         Image image = new Bitmap(@"c:\FakePhoto.jpg");
 
         // Get the PropertyItems property from image.
@@ -107,7 +107,7 @@ public class SystemDrawingWorkingWithImages : Form
         int X = 0;
         int Y = 0;
 
-        // For each PropertyItem in the array, display the ID, type, and 
+        // For each PropertyItem in the array, display the ID, type, and
         // length.
         int count = 0;
         foreach (PropertyItem propItem in propItems)
@@ -146,7 +146,7 @@ public class SystemDrawingWorkingWithImages : Form
 
             count++;
         }
-        // Convert the value of the second property to a string, and display 
+        // Convert the value of the second property to a string, and display
         // it.
         System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
         string manufacturer = encoding.GetString(propItems[1].Value);
@@ -165,11 +165,11 @@ public class SystemDrawingWorkingWithImages : Form
     {
         // <snippet61>
         Point[] destinationPoints = {
-    new Point(200, 20),   // destination for upper-left point of 
+    new Point(200, 20),   // destination for upper-left point of
                           // original
-    new Point(110, 100),  // destination for upper-right point of 
+    new Point(110, 100),  // destination for upper-right point of
                           // original
-    new Point(250, 30)};  // destination for lower-left point of 
+    new Point(250, 30)};  // destination for lower-left point of
         // original
 
         Image image = new Bitmap("Stripes.bmp");
@@ -192,7 +192,7 @@ public class SystemDrawingWorkingWithImages : Form
 
     private void GetThumbnail(PaintEventArgs e)
     {
-        Image.GetThumbnailImageAbort callback = 
+        Image.GetThumbnailImageAbort callback =
             new Image.GetThumbnailImageAbort(ThumbnailCallback);
         Image image = new Bitmap(@"c:\FakePhoto.jpg");
         Image pThumbnail = image.GetThumbnailImage(100, 100, callback, new
@@ -205,7 +205,7 @@ public class SystemDrawingWorkingWithImages : Form
            pThumbnail.Height);
     }
     // </snippet71>
-    
+
     // fde9bccf-8aa5-4b0d-ba4b-788740627b02
     // How to: Use Interpolation Mode to Control Image Quality During Scaling
 
@@ -219,7 +219,7 @@ public class SystemDrawingWorkingWithImages : Form
         // Draw the image with no shrinking or stretching.
         e.Graphics.DrawImage(
             image,
-            new Rectangle(10, 10, width, height),  // destination rectangle  
+            new Rectangle(10, 10, width, height),  // destination rectangle
             0,
             0,           // upper-left corner of source rectangle
             width,       // width of source rectangle
@@ -227,12 +227,12 @@ public class SystemDrawingWorkingWithImages : Form
             GraphicsUnit.Pixel,
             null);
 
-        // Shrink the image using low-quality interpolation. 
+        // Shrink the image using low-quality interpolation.
         e.Graphics.InterpolationMode = InterpolationMode.NearestNeighbor;
         e.Graphics.DrawImage(
            image,
             new Rectangle(10, 250, (int)(0.6 * width), (int)(0.6 * height)),
-            // destination rectangle 
+            // destination rectangle
             0,
             0,           // upper-left corner of source rectangle
             width,       // width of source rectangle
@@ -244,7 +244,7 @@ public class SystemDrawingWorkingWithImages : Form
         e.Graphics.DrawImage(
             image,
             new Rectangle(150, 250, (int)(0.6 * width), (int)(0.6 * height)),
-            // destination rectangle 
+            // destination rectangle
             0,
             0,           // upper-left corner of source rectangle
             width,       // width of source rectangle
@@ -256,7 +256,7 @@ public class SystemDrawingWorkingWithImages : Form
         e.Graphics.DrawImage(
             image,
             new Rectangle(290, 250, (int)(0.6 * width), (int)(0.6 * height)),
-            // destination rectangle 
+            // destination rectangle
             0,
             0,           // upper-left corner of source rectangle
             width,       // width of source rectangle

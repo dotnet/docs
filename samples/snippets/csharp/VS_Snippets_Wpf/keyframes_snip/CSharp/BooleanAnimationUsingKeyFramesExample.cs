@@ -50,9 +50,9 @@ namespace Microsoft.Samples.KeyFrameExamples
                 = new BooleanAnimationUsingKeyFrames();
             booleanAnimation.Duration = TimeSpan.FromSeconds(4);
 
-            // All the key frames defined below are DiscreteBooleanKeyFrames. 
-            // Discrete key frames create sudden "jumps" between values 
-            // (no interpolation). Only discrete key frames can be used 
+            // All the key frames defined below are DiscreteBooleanKeyFrames.
+            // Discrete key frames create sudden "jumps" between values
+            // (no interpolation). Only discrete key frames can be used
             // for Boolean key frame animations.
 
             // Value at the beginning is false

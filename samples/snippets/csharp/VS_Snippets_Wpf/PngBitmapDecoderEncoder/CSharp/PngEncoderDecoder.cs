@@ -8,14 +8,14 @@ using System.Windows.Media.Imaging;
 using System.Threading;
 using System.Security;
 
-[assembly: SecurityTransparent] 
+[assembly: SecurityTransparent]
 
 namespace SDKSample
 {
     public class app : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -72,7 +72,7 @@ namespace SDKSample
             Stream imageStreamSource = new FileStream("smiley.png", FileMode.Open, FileAccess.Read, FileShare.Read);
             PngBitmapDecoder decoder = new PngBitmapDecoder(imageStreamSource, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             BitmapSource bitmapSource = decoder.Frames[0];
-            
+
             // Draw the Image
             Image myImage = new Image();
             myImage.Source = bitmapSource;
@@ -99,9 +99,9 @@ namespace SDKSample
             myStackPanel.Orientation = Orientation.Vertical;
             myStackPanel.VerticalAlignment = VerticalAlignment.Stretch;
             myStackPanel.HorizontalAlignment = HorizontalAlignment.Stretch;
-            
+
             // Add the Image and TextBlock to the parent Grid
-            myStackPanel.Children.Add(myImage); 
+            myStackPanel.Children.Add(myImage);
             myStackPanel.Children.Add(myImage2);
             myStackPanel.Children.Add(myTextBlock);
 

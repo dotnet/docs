@@ -40,7 +40,7 @@ class IntroSnippets
         //<snippet03>
         // Unwrap the inner task.
         Task<string> t3 = DoWorkAsync().ContinueWith((s) => DoMoreWorkAsync()).Unwrap();
-        
+
         // Outputs "More work completed."
         Console.WriteLine(t.Result);
         //</snippet03>
@@ -87,8 +87,8 @@ namespace Unwrap
             // Without Unwrap: stepTwo is a Task<Task<byte[]>>
             // With Unwrap: stepTwo is a Task<byte[]>
             var stepTwo = data.ContinueWith((antecedent) =>
-                {                    
-                    return Task<byte>.Factory.StartNew( () => Compute(antecedent.Result));                  
+                {
+                    return Task<byte>.Factory.StartNew( () => Compute(antecedent.Result));
                 })
                 .Unwrap();
 
@@ -122,7 +122,7 @@ namespace Unwrap
             return bytes;
         }
 
-        static Task DoSomeOtherAsyncronousWork(int i, byte b2) 
+        static Task DoSomeOtherAsyncronousWork(int i, byte b2)
         {
             return Task.Factory.StartNew(() =>
                 {

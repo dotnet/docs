@@ -14,7 +14,7 @@ namespace SDKSample
     public class MyApp : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -51,8 +51,8 @@ namespace SDKSample
                 96,
                 96,
                 PixelFormats.Indexed1,
-                myPalette, 
-                pixels, 
+                myPalette,
+                pixels,
                 stride);
             //</Snippet2>
 
@@ -80,7 +80,7 @@ namespace SDKSample
             Stream imageStreamSource = new FileStream("tulipfarm.tif", FileMode.Open, FileAccess.Read, FileShare.Read);
             TiffBitmapDecoder decoder = new TiffBitmapDecoder(imageStreamSource, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             BitmapSource bitmapSource = decoder.Frames[0];
-            
+
             // Draw the Image
             Image myImage1 = new Image();
             myImage1.Source = bitmapSource;
@@ -142,32 +142,32 @@ namespace SDKSample
             BitmapMetadata myBitmapMetadata = new BitmapMetadata( "tiff" );
             TiffBitmapEncoder encoder3 = new TiffBitmapEncoder();
             myBitmapMetadata.ApplicationName = "Microsoft Digital Image Suite 10";
-            myBitmapMetadata.Author = new ReadOnlyCollection<string>( 
+            myBitmapMetadata.Author = new ReadOnlyCollection<string>(
                 new List<string>() { "Lori Kane" } );
             myBitmapMetadata.CameraManufacturer = "Tailspin Toys";
             myBitmapMetadata.CameraModel = "TT23";
             myBitmapMetadata.Comment = "Nice Picture";
             myBitmapMetadata.Copyright = "2010";
             myBitmapMetadata.DateTaken = "5/23/2010";
-            myBitmapMetadata.Keywords = new ReadOnlyCollection<string>( 
+            myBitmapMetadata.Keywords = new ReadOnlyCollection<string>(
                 new List<string>() { "Lori", "Kane" } );
             myBitmapMetadata.Rating = 5;
             myBitmapMetadata.Subject = "Lori";
             myBitmapMetadata.Title = "Lori's photo";
-            
-            // Create a new frame that is identical to the one 
-            // from the original image, except for the new metadata. 
-            encoder3.Frames.Add( 
-                BitmapFrame.Create( 
-                decoder2.Frames[0], 
-                decoder2.Frames[0].Thumbnail, 
-                myBitmapMetadata, 
+
+            // Create a new frame that is identical to the one
+            // from the original image, except for the new metadata.
+            encoder3.Frames.Add(
+                BitmapFrame.Create(
+                decoder2.Frames[0],
+                decoder2.Frames[0].Thumbnail,
+                myBitmapMetadata,
                 decoder2.Frames[0].ColorContexts ) );
 
             encoder3.Save( stream3 );
             stream3.Close();
             // </Snippet8>
-            
+
             //<Snippet10>
             BitmapSource image5 = BitmapSource.Create(
                 width,
@@ -178,7 +178,7 @@ namespace SDKSample
                 BitmapPalettes.WebPalette,
                 pixels,
                 stride);
-            
+
             FileStream stream5 = new FileStream("palette.tif", FileMode.Create);
             TiffBitmapEncoder encoder5 = new TiffBitmapEncoder();
             encoder5.Frames.Add(BitmapFrame.Create(image5));
@@ -191,7 +191,7 @@ namespace SDKSample
             myStackPanel.Orientation = Orientation.Vertical;
             myStackPanel.VerticalAlignment = VerticalAlignment.Stretch;
             myStackPanel.HorizontalAlignment = HorizontalAlignment.Stretch;
-            
+
             // Add the Image and TextBlock to the parent Grid
             myStackPanel.Children.Add(myImage);
             myStackPanel.Children.Add(myTextBlock);

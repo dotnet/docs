@@ -1,6 +1,6 @@
 ﻿// This sample might go in a VisualStyleRenderer conceptual topic, or the VisualStyleRenderer
 // class itself. The sample defines a custom control that imitates a window using VisualStyleElements
-// for the window parts. It handles resizing and moving the window. 
+// for the window parts. It handles resizing and moving the window.
 
 // This sample uses the following VisualStyleRenderer members:
 //  Snippet10: VisualStyleRenderer.GetPartSize (with ThemeSizeType.True)
@@ -12,7 +12,7 @@
 //  Snippet40: VisualStyleRenderer.SetParameters
 
 // Work Items: - Try to make HitTestBackground method work in MouseDown event handler.
-//             - Why does the offset value obtained for the close button make it draw a bit 
+//             - Why does the offset value obtained for the close button make it draw a bit
 //               too far to the right?
 //             - Right now I'm hard-coding the height of the status bar rect to 22, which
 //               visual matches the standard Windows version. Doing GetPartSize on this
@@ -96,8 +96,8 @@ namespace VisualStyleRendererSample
             windowElements.Add("statusGripper",
                 VisualStyleElement.Status.Gripper.Normal);
 
-            // Get the sizes and location offsets for the window parts  
-            // as specified by the visual style, and then use this 
+            // Get the sizes and location offsets for the window parts
+            // as specified by the visual style, and then use this
             // information to calcualate the rectangles for each part.
             GetPartDetails();
             CalculateRectangles();
@@ -111,7 +111,7 @@ namespace VisualStyleRendererSample
         }
 
         // <Snippet10>
-        // Get the sizes and offsets for the window parts as specified  
+        // Get the sizes and offsets for the window parts as specified
         // by the visual style.
         private void GetPartDetails()
         {
@@ -139,7 +139,7 @@ namespace VisualStyleRendererSample
                         ThemeSizeType.True).Height;
                 }
 
-                // Get the thickness of the left, bottom, 
+                // Get the thickness of the left, bottom,
                 // and right window frame.
                 if (SetRenderer(windowElements["windowLeft"]))
                 {
@@ -157,7 +157,7 @@ namespace VisualStyleRendererSample
         }
         // </Snippet10>
 
-        // Use the part metrics to determine the current size 
+        // Use the part metrics to determine the current size
         // of the rectangles for all of the window parts.
         private void CalculateRectangles()
         {
@@ -215,7 +215,7 @@ namespace VisualStyleRendererSample
                 return;
             }
 
-            // Set the clip region to define the curved corners 
+            // Set the clip region to define the curved corners
             // of the caption.
             SetClipRegion();
 
@@ -280,14 +280,14 @@ namespace VisualStyleRendererSample
                 isMoving = false;
             }
 
-            // Change the cursor back to the default if the user 
+            // Change the cursor back to the default if the user
             // stops resizing.
             else if (isResizing)
             {
                 isResizing = false;
             }
 
-            // Close the application if the user clicks the 
+            // Close the application if the user clicks the
             // close button.
             else if (elementRectangles["windowClose"].
                 Contains(e.Location) && isClosing)
@@ -303,7 +303,7 @@ namespace VisualStyleRendererSample
             // The left mouse button is down.
             if ((MouseButtons.Left & e.Button) == MouseButtons.Left)
             {
-                // Calculate the new control size if the user is 
+                // Calculate the new control size if the user is
                 // dragging the resizing grip.
                 if (isResizing)
                 {
@@ -312,7 +312,7 @@ namespace VisualStyleRendererSample
                     CalculateRectangles();
                 }
 
-                // Calculate the new location of the control if the  
+                // Calculate the new location of the control if the
                 // user is dragging the window caption.
                 else if (isMoving)
                 {
@@ -323,8 +323,8 @@ namespace VisualStyleRendererSample
                     this.Location = new Point(XChange, YChange);
                 }
 
-                // Cancel the closing action if the user clicked  
-                // and held down on the close button, and has dragged   
+                // Cancel the closing action if the user clicked
+                // and held down on the close button, and has dragged
                 // the pointer outside the button.
                 else if (!elementRectangles["windowClose"].
                     Contains(e.Location) && isClosing)
@@ -346,7 +346,7 @@ namespace VisualStyleRendererSample
                     VisualStyleElement.Window.CloseButton.Hot :
                     VisualStyleElement.Window.CloseButton.Normal;
 
-                // Use a resizing cursor if the cursor is on the 
+                // Use a resizing cursor if the cursor is on the
                 // status grip.
                 Rectangle gripRectangle =
                     elementRectangles["statusGripper"];
@@ -358,7 +358,7 @@ namespace VisualStyleRendererSample
         }
 
         // <Snippet30>
-        // Calculate and set the clipping region for the control  
+        // Calculate and set the clipping region for the control
         // so that the corners of the title bar are rounded.
         private void SetClipRegion()
         {
@@ -375,7 +375,7 @@ namespace VisualStyleRendererSample
                     Region clipRegion = renderer.GetBackgroundRegion(
                         g, elementRectangles["windowCaption"]);
 
-                    // Get the client rectangle, but exclude the region 
+                    // Get the client rectangle, but exclude the region
                     // of the window caption.
                     int height = (int)clipRegion.GetBounds(g).Height;
                     Rectangle nonCaptionRect = new Rectangle(
@@ -384,7 +384,7 @@ namespace VisualStyleRendererSample
                         ClientRectangle.Width,
                         ClientRectangle.Height - height);
 
-                    // Add the rectangle to the caption region, and  
+                    // Add the rectangle to the caption region, and
                     // make this region the form's clipping region.
                     clipRegion.Union(nonCaptionRect);
                     this.Region = clipRegion;

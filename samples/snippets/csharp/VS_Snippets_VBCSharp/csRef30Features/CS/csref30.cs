@@ -76,7 +76,7 @@ namespace csrefLINQExamples
 
             Console.WriteLine("{0} scores are greater than 80", highScoreCount);
 
-            // Outputs: 4 scores are greater than 80            
+            // Outputs: 4 scores are greater than 80
         }
     }
     //</snippet1>
@@ -96,7 +96,7 @@ namespace csrefLINQExamples
             group student by student.Year into studentGroup
             select new { GradeLevel = studentGroup.Key, TotalScore = studentGroup.Sum(s => s.ExamScores.Sum()) };
 
-            // Execute the query.   
+            // Execute the query.
             foreach (var cat in categories)
             {
                 Console.WriteLine("Key = {0} Sum = {1}", cat.GradeLevel, cat.TotalScore);
@@ -107,7 +107,7 @@ namespace csrefLINQExamples
             Console.ReadKey();
         }
         /*
-             Outputs: 
+             Outputs:
              Key = SecondYear Sum = 1014
              Key = ThirdYear Sum = 964
              Key = FirstYear Sum = 1058
@@ -213,7 +213,7 @@ namespace csrefLINQExamples
                 // Execute the query.
                 foreach (var student in queryHighScores)
                 {
-                    // The anonymous type's properties were not named. Therefore 
+                    // The anonymous type's properties were not named. Therefore
                     // they have the same names as the Student properties.
                     Console.WriteLine(student.FirstName + ", " + student.LastName);
                 }
@@ -324,14 +324,14 @@ namespace csrefLINQExamples
             var b = new[] { "hello", null, "world" }; // string[]
 
             // single-dimension jagged array
-            var c = new[]   
-            {  
+            var c = new[]
+            {
                 new[]{1,2,3,4},
                 new[]{5,6,7,8}
             };
 
             // jagged array of strings
-            var d = new[]   
+            var d = new[]
             {
                 new[]{"Luca", "Mads", "Luke", "Dinesh"},
                 new[]{"Karen", "Suma", "Frances"}
@@ -346,7 +346,7 @@ namespace csrefLINQExamples
         static void Method()
         {
             //<snippet38>
-            var contacts = new[] 
+            var contacts = new[]
             {
                 new {
                         Name = " Eugene Zabokritski",
@@ -446,7 +446,7 @@ namespace csrefLINQExamples
             // anon is compiled as an anonymous type
             var anon = new { Name = "Terry", Age = 34 };
 
-            // list is compiled as List<int>                             
+            // list is compiled as List<int>
             var list = new List<int>();
         }
         //</snippet43>
@@ -456,10 +456,10 @@ namespace csrefLINQExamples
     class ImplicitlyTypedLocals2
     {
         static void Main()
-        {            
+        {
             string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
 
-            // If a query variable has been initialized with var, 
+            // If a query variable has been initialized with var,
             // then you must also use var in the foreach statement.
             var upperLowerWords =
                  from w in words
@@ -470,12 +470,12 @@ namespace csrefLINQExamples
             {
                 Console.WriteLine("Uppercase: {0}, Lowercase: {1}", ul.Upper, ul.Lower);
             }
-        }        
+        }
     }
     /* Outputs:
         Uppercase: APPLE, Lowercase: apple
         Uppercase: BLUEBERRY, Lowercase: blueberry
-        Uppercase: CHERRY, Lowercase: cherry        
+        Uppercase: CHERRY, Lowercase: cherry
      */
     //</snippet44>
 
@@ -490,7 +490,7 @@ namespace csrefLINQExamples
 
         static void Main(string[] args)
         {
-            // Original delegate syntax required 
+            // Original delegate syntax required
             // initialization with a named method.
             testDelegate testdelA = new testDelegate(M);
 
@@ -510,7 +510,7 @@ namespace csrefLINQExamples
             // Keep console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-        } 
+        }
     }
     /* Output:
         Hello. My name is M and I write lines.
@@ -527,18 +527,18 @@ namespace csrefLINQExamples
 
         bool M(Func<double,bool> func, int i)
         {
-            
+
             int local = i;
             Console.WriteLine(func(local));
             Thread.Sleep(5300);
             return func(local);
         }
         static void Main()
-        { 
+        {
             Test2 app = new Test2();
             bool b = app.M(x => x % 2 == 0, DateTime.Now.Second);
 
-            //bool b2 = app.M(x => x +   
+            //bool b2 = app.M(x => x +
 
             Console.WriteLine(b.ToString());
 
@@ -590,14 +590,14 @@ namespace csrefLINQExamples
 
             // Keep console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
-            Console.ReadKey(); 
+            Console.ReadKey();
         }
     }
     //</snippet80>
 
     class Container
     {
-        
+
         class Product
         {
             public string Color {get;set;}
@@ -616,7 +616,7 @@ namespace csrefLINQExamples
             };
 
             //<snippet81>
-            var productQuery = 
+            var productQuery =
                 from prod in products
                 select new { prod.Color, prod.Price };
 
@@ -625,7 +625,7 @@ namespace csrefLINQExamples
                 Console.WriteLine("Color={0}, Price={1}", v.Color, v.Price);
             }
             //</snippet81>
-        }         
+        }
     }
 }
 

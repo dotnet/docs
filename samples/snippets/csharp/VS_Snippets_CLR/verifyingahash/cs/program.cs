@@ -7,8 +7,8 @@ class Class1
 {
     static void Main()
     {
-        //This hash value is produced from "This is the original message!" 
-        //using SHA1Managed.  
+        //This hash value is produced from "This is the original message!"
+        //using SHA1Managed.
         byte[] sentHashValue = { 59, 4, 248, 102, 77, 97, 142, 201, 210, 12, 224, 93, 25, 41, 100, 197, 213, 134, 130, 135 };
 
         //This is the string that corresponds to the previous hash value.
@@ -16,14 +16,14 @@ class Class1
 
         byte[] compareHashValue;
 
-        //Create a new instance of the UnicodeEncoding class to 
+        //Create a new instance of the UnicodeEncoding class to
         //convert the string into an array of Unicode bytes.
         UnicodeEncoding ue = new UnicodeEncoding();
 
         //Convert the string into an array of bytes.
         byte[] messageBytes = ue.GetBytes(messageString);
 
-        //Create a new instance of the SHA1Managed class to create 
+        //Create a new instance of the SHA1Managed class to create
         //the hash value.
         SHA1Managed shHash = new SHA1Managed();
 

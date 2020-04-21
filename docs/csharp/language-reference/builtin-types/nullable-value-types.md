@@ -18,7 +18,7 @@ You typically use a nullable value type when you need to represent the undefined
 
 ## Declaration and assignment
 
-As a value type is implicitly convertible to the corresponding nullable value type, you can assign a value to a variable of a nullable value type as you would do that for its underlying value type. You also can assign the `null` value. For example:
+As a value type is implicitly convertible to the corresponding nullable value type, you can assign a value to a variable of a nullable value type as you would do that for its underlying value type. You can also assign the `null` value. For example:
 
 [!code-csharp[declare and assign](snippets/NullableValueTypes.cs#Declaration)]
 
@@ -40,19 +40,19 @@ The following example uses the `HasValue` property to test whether the variable 
 
 [!code-csharp-interactive[use HasValue](snippets/NullableValueTypes.cs#HasValue)]
 
-You also can compare a variable of a nullable value type with `null` instead of using the `HasValue` property, as the following example shows:
+You can also compare a variable of a nullable value type with `null` instead of using the `HasValue` property, as the following example shows:
 
 [!code-csharp-interactive[use comparison with null](snippets/NullableValueTypes.cs#CompareWithNull)]
 
 ## Conversion from a nullable value type to an underlying type
 
-If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to be assigned in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that (you also can use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method for the same purpose):
+If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to be assigned in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that (you can also use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method for the same purpose):
 
 [!code-csharp-interactive[?? operator](snippets/NullableValueTypes.cs#NullCoalescing)]
 
 If you want to use the [default](default-values.md) value of the underlying value type in place of `null`, use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method.
 
-You also can explicitly cast a nullable value type to a non-nullable type, as the following example shows:
+You can also explicitly cast a nullable value type to a non-nullable type, as the following example shows:
 
 [!code-csharp[explicit cast](snippets/NullableValueTypes.cs#Cast)]
 

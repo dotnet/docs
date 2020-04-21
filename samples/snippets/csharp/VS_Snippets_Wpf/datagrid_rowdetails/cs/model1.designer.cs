@@ -20,14 +20,14 @@ using System.Runtime.Serialization;
 namespace WpfApplication1
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class AdventureWorksLT2008Entities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new AdventureWorksLT2008Entities object using the connection string found in the 'AdventureWorksLT2008Entities' section of the application configuration file.
         /// </summary>
@@ -36,7 +36,7 @@ namespace WpfApplication1
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksLT2008Entities object.
         /// </summary>
@@ -45,7 +45,7 @@ namespace WpfApplication1
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksLT2008Entities object.
         /// </summary>
@@ -54,17 +54,17 @@ namespace WpfApplication1
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -83,7 +83,7 @@ namespace WpfApplication1
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Customers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -94,12 +94,12 @@ namespace WpfApplication1
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -109,7 +109,7 @@ namespace WpfApplication1
     public partial class Customer : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Customer object.
         /// </summary>
@@ -137,7 +137,7 @@ namespace WpfApplication1
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -164,7 +164,7 @@ namespace WpfApplication1
         private global::System.Int32 _CustomerID;
         partial void OnCustomerIDChanging(global::System.Int32 value);
         partial void OnCustomerIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -188,7 +188,7 @@ namespace WpfApplication1
         private global::System.Boolean _NameStyle;
         partial void OnNameStyleChanging(global::System.Boolean value);
         partial void OnNameStyleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -212,7 +212,7 @@ namespace WpfApplication1
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -236,7 +236,7 @@ namespace WpfApplication1
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -260,7 +260,7 @@ namespace WpfApplication1
         private global::System.String _MiddleName;
         partial void OnMiddleNameChanging(global::System.String value);
         partial void OnMiddleNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -284,7 +284,7 @@ namespace WpfApplication1
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -308,7 +308,7 @@ namespace WpfApplication1
         private global::System.String _Suffix;
         partial void OnSuffixChanging(global::System.String value);
         partial void OnSuffixChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -332,7 +332,7 @@ namespace WpfApplication1
         private global::System.String _CompanyName;
         partial void OnCompanyNameChanging(global::System.String value);
         partial void OnCompanyNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -356,7 +356,7 @@ namespace WpfApplication1
         private global::System.String _SalesPerson;
         partial void OnSalesPersonChanging(global::System.String value);
         partial void OnSalesPersonChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -380,7 +380,7 @@ namespace WpfApplication1
         private global::System.String _EmailAddress;
         partial void OnEmailAddressChanging(global::System.String value);
         partial void OnEmailAddressChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -404,7 +404,7 @@ namespace WpfApplication1
         private global::System.String _Phone;
         partial void OnPhoneChanging(global::System.String value);
         partial void OnPhoneChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -428,7 +428,7 @@ namespace WpfApplication1
         private global::System.String _PasswordHash;
         partial void OnPasswordHashChanging(global::System.String value);
         partial void OnPasswordHashChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -452,7 +452,7 @@ namespace WpfApplication1
         private global::System.String _PasswordSalt;
         partial void OnPasswordSaltChanging(global::System.String value);
         partial void OnPasswordSaltChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -476,7 +476,7 @@ namespace WpfApplication1
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -502,9 +502,9 @@ namespace WpfApplication1
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
     }
 
     #endregion
-    
+
 }

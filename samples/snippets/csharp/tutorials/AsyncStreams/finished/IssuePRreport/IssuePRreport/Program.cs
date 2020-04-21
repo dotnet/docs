@@ -71,7 +71,7 @@ namespace GitHubActivityReport
 
         // <SnippetGenerateAsyncStream>
         // <SnippetUpdateSignature>
-        private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client, 
+        private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
             string queryText, string repoName)
         // </SnippetUpdateSignature>
         {
@@ -119,7 +119,7 @@ namespace GitHubActivityReport
                 {
                     return defaultValue;
                 }
-                
+
                 if (!string.IsNullOrWhiteSpace(error))
                 {
                     Console.WriteLine(error);

@@ -27,8 +27,8 @@ namespace SDKSample
             myTextBox.MaxLength = 500;
             myTextBox.MinLines = 1;
 
-            // Set the maximum number of lines the TextBox will expand to 
-            // accomidate text. Note: This does not constrain the amount of 
+            // Set the maximum number of lines the TextBox will expand to
+            // accomidate text. Note: This does not constrain the amount of
             // text that can be typed. To do that, use the MaxLength property.
             myTextBox.MaxLines = 5;
 

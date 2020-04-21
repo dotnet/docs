@@ -381,7 +381,7 @@ namespace SDKSampleHelper
                 new WritingProgressChangedEventHandler(AsyncPrintingProgress);
 
             // Setup for writing multiple visuals
-            VisualsToXpsDocument vToXpsD = 
+            VisualsToXpsDocument vToXpsD =
                 (VisualsToXpsDocument)xpsdw.CreateVisualsCollator();
 
             _batchProgress = 0;

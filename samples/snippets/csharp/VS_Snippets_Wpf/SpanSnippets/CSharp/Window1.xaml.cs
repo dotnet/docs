@@ -58,15 +58,15 @@ namespace SpanSnippets
 
                 // After this line executes, the new element "spanx"
                 // contains the specified Inline element, "runx".  Also, "spanx" is
-                // inserted at the point indicated by the insertionPosition parameter, 
-                // which in this case indicates the content start position in the Paragraph 
+                // inserted at the point indicated by the insertionPosition parameter,
+                // which in this case indicates the content start position in the Paragraph
                 // element "parx".
                 Span spanx = new Span(runx, parx.ContentStart);
                 // </Snippet_Span_Const2>
             }
             {
                 // <Snippet_Span_Const3>
-                // Create a paragraph and three text runs to serve as example content.  
+                // Create a paragraph and three text runs to serve as example content.
                 Paragraph parx = new Paragraph();
                 Run run1 = new Run("Text run 1.");
                 Run run2 = new Run("Text run 2.");
@@ -83,18 +83,18 @@ namespace SpanSnippets
                 // indicated by the "start" and "end" parameters will be
                 // enclosed by the new Span.  In this case, the new Span
                 // will enclose the entire contents of the Paragraph "parx",
-                // which happens to contain three text runs and two linebreaks.               
+                // which happens to contain three text runs and two linebreaks.
                 Span spanx = new Span(parx.ContentStart, parx.ContentEnd);
 
                 // Now, properties set on "spanx" will override default properties
-                // on elements contained by "spanx".  For example, setting 
+                // on elements contained by "spanx".  For example, setting
                 // these arbitrary display properties on "spanx" will affect
                 // the child text runs enclosed by "spanx".
                 spanx.Foreground = Brushes.Blue;
                 spanx.Background = Brushes.GhostWhite;
                 spanx.FontFamily = new FontFamily("Century Gothic");
 
-                // Non-default property values override any settings on the 
+                // Non-default property values override any settings on the
                 // enclosing Span element.
                 run2.Foreground = Brushes.Red;
                 run2.Background = Brushes.AntiqueWhite;
@@ -187,15 +187,15 @@ namespace SpanSnippets
 
                 // After this line executes, the new element "boldx"
                 // contains the specified Inline element, "runx".  Also, "boldx" is
-                // inserted at the point indicated by the insertionPosition parameter, 
-                // which in this case indicates the content start position in the Paragraph 
+                // inserted at the point indicated by the insertionPosition parameter,
+                // which in this case indicates the content start position in the Paragraph
                 // element "parx".
                 Bold boldx = new Bold(runx, parx.ContentStart);
                 // </Snippet_Bold_Const2>
             }
             {
                 // <Snippet_Bold_Const3>
-                // Create a paragraph and three text runs to serve as example content.  
+                // Create a paragraph and three text runs to serve as example content.
                 Paragraph parx = new Paragraph();
                 Run run1 = new Run("Text run 1.");
                 Run run2 = new Run("Text run 2, make bold.");
@@ -239,15 +239,15 @@ namespace SpanSnippets
 
                 // After this line executes, the new element "italx"
                 // contains the specified Inline element, "runx".  Also, "italx" is
-                // inserted at the point indicated by the insertionPosition parameter, 
-                // which in this case indicates the content start position in the Paragraph 
+                // inserted at the point indicated by the insertionPosition parameter,
+                // which in this case indicates the content start position in the Paragraph
                 // element "parx".
                 Italic italx = new Italic(runx, parx.ContentStart);
                 // </Snippet_Italic_Const2>
             }
             {
                 // <Snippet_Italic_Const3>
-                // Create a paragraph and three text runs to serve as example content.  
+                // Create a paragraph and three text runs to serve as example content.
                 Paragraph parx = new Paragraph();
                 Run run1 = new Run("Text run 1.");
                 Run run2 = new Run("Text run 2, make italic.");
@@ -291,15 +291,15 @@ namespace SpanSnippets
 
                 // After this line executes, the new element "underx"
                 // contains the specified Inline element, "runx".  Also, "underx" is
-                // inserted at the point indicated by the insertionPosition parameter, 
-                // which in this case indicates the content start position in the Paragraph 
+                // inserted at the point indicated by the insertionPosition parameter,
+                // which in this case indicates the content start position in the Paragraph
                 // element "parx".
                 Underline underx = new Underline(runx, parx.ContentStart);
                 // </Snippet_Underline_Const2>
             }
             {
                 // <Snippet_Underline_Const3>
-                // Create a paragraph and three text runs to serve as example content.  
+                // Create a paragraph and three text runs to serve as example content.
                 Paragraph parx = new Paragraph();
                 Run run1 = new Run("Text run 1.");
                 Run run2 = new Run("Text run 2, make underlined.");
@@ -333,7 +333,7 @@ namespace SpanSnippets
                 Button buttonx = new Button();
                 buttonx.Content = "Click me!";
 
-                // Create a new InlineUIContainer, and assign the button 
+                // Create a new InlineUIContainer, and assign the button
                 // as the UI container's child.
                 InlineUIContainer uiCont = new InlineUIContainer();
                 uiCont.Child = buttonx;
@@ -355,7 +355,7 @@ namespace SpanSnippets
                 Button buttonx = new Button();
                 buttonx.Content = "Click me!";
 
-                // Create a new BlockUIContainer, and assign the button 
+                // Create a new BlockUIContainer, and assign the button
                 // as the UI container's child.
                 BlockUIContainer uiCont = new BlockUIContainer();
                 uiCont.Child = buttonx;
@@ -393,8 +393,8 @@ namespace SpanSnippets
 
                 // After this line executes, the new element "inlineUI"
                 // contains the specified UIElement element, "buttonx".  Also, "inlineUI" is
-                // inserted at the point indicated by the insertionPosition parameter, 
-                // which in this case indicates the content start position in the Paragraph 
+                // inserted at the point indicated by the insertionPosition parameter,
+                // which in this case indicates the content start position in the Paragraph
                 // element "parx".
                 InlineUIContainer inlineUI = new InlineUIContainer(buttonx, parx.ContentStart);
                 // </Snippet_InlineUI_Const2>

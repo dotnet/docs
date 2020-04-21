@@ -74,11 +74,11 @@ namespace FlowDocumentSnippets
                 Paragraph tableText = new Paragraph(new Run("A bit of text content..."));
 
                 Table sampleTable = new Table();
-                
+
                 // Create and add a couple of columns.
                 sampleTable.Columns.Add(new TableColumn());
                 sampleTable.Columns.Add(new TableColumn());
-                
+
                 // Create and add a row group and a couple of rows.
                 sampleTable.RowGroups.Add(new TableRowGroup());
                 sampleTable.RowGroups[0].Rows.Add(new TableRow());
@@ -90,7 +90,7 @@ namespace FlowDocumentSnippets
                 sampleTable.RowGroups[0].Rows[1].Cells.Add(new TableCell(tableText));
                 sampleTable.RowGroups[0].Rows[1].Cells.Add(new TableCell(tableText));
 
-                // Finally, use the FlowDocument constructor to create a new FlowDocument containing 
+                // Finally, use the FlowDocument constructor to create a new FlowDocument containing
                 // the table constructed above.
                 FlowDocument flowDoc = new FlowDocument(sampleTable);
                 // </Snippet_FlowDocumentConstructorTable>

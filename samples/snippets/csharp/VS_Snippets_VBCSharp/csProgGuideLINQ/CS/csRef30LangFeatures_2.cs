@@ -65,13 +65,13 @@ namespace Immutable
             public Contact(string contactName, string contactAddress)
             {
                 Name = contactName;
-                Address = contactAddress;               
+                Address = contactAddress;
             }
         }
 
         // This class is immutable. After an object is created,
         // it cannot be modified from outside the class. It uses a
-        // static method and private constructor to initialize its properties.   
+        // static method and private constructor to initialize its properties.
         public class Contact2
         {
             // Read-only properties.
@@ -82,7 +82,7 @@ namespace Immutable
             private Contact2(string contactName, string contactAddress)
             {
                 Name = contactName;
-                Address = contactAddress;               
+                Address = contactAddress;
             }
 
             // Public factory method.
@@ -93,11 +93,11 @@ namespace Immutable
         }
 
         public class Program
-        { 
+        {
             static void Main()
             {
                 // Some simple data sources.
-                string[] names = {"Terry Adams","Fadi Fakhouri", "Hanying Feng", 
+                string[] names = {"Terry Adams","Fadi Fakhouri", "Hanying Feng",
                                   "Cesar Garcia", "Debra Garcia"};
                 string[] addresses = {"123 Main St.", "345 Cypress Ave.", "678 1st Ave",
                                       "12 108th St.", "89 E. 42nd St."};
@@ -113,7 +113,7 @@ namespace Immutable
                 {
                     Console.WriteLine("{0}, {1}", contact.Name, contact.Address);
                 }
-                
+
                 // Create Contact2 objects by using a static factory method.
                 var query2 = from i in Enumerable.Range(0, 5)
                              select Contact2.CreateContact(names[i], addresses[i]);
@@ -123,11 +123,11 @@ namespace Immutable
 
                 // List elements cannot be modified by client code.
                 // CS0272:
-                // list2[0].Name = "Eugene Zabokritski"; 
-                
+                // list2[0].Name = "Eugene Zabokritski";
+
                 // Keep the console open in debug mode.
                 Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();                
+                Console.ReadKey();
             }
         }
 
@@ -143,7 +143,7 @@ namespace Immutable
 
 namespace csrefLINQExamples
 {
-            //Return Subsets of Element Properties   
+            //Return Subsets of Element Properties
 
             class AnonymousTypes : StudentClass
             {
@@ -164,7 +164,7 @@ namespace csrefLINQExamples
                     // Execute the query.
                     foreach (var obj in queryHighScores)
                     {
-                        // The anonymous type's properties were not named. Therefore 
+                        // The anonymous type's properties were not named. Therefore
                         // they have the same names as the Student properties.
                         Console.WriteLine(obj.FirstName + ", " + obj.LastName);
                     }
@@ -210,7 +210,7 @@ namespace csrefLINQExamples
                 {
                     //how to use implicitly typed locals #2
                     //<snippet33>
-                    // Variable queryID could be declared by using 
+                    // Variable queryID could be declared by using
                     // System.Collections.Generic.IEnumerable<string>
                     // instead of var.
                     var queryID =
@@ -218,7 +218,7 @@ namespace csrefLINQExamples
                         where student.ID > 111
                         select student.LastName;
 
-                    // Variable str could be declared by using var instead of string.     
+                    // Variable str could be declared by using var instead of string.
                     foreach (string str in queryID)
                     {
                         Console.WriteLine("Last name: {0}", str);
@@ -259,8 +259,8 @@ namespace csrefLINQExamples
                         // Declare a StudentName by using the constructor that has two parameters.
                         StudentName student1 = new StudentName("Craig", "Playstead");
 
-                        // Make the same declaration by using an object initializer and sending 
-                        // arguments for the first and last names. The default constructor is 
+                        // Make the same declaration by using an object initializer and sending
+                        // arguments for the first and last names. The default constructor is
                         // invoked in processing this declaration, not the constructor that has
                         // two parameters.
                         StudentName student2 = new StudentName
@@ -269,9 +269,9 @@ namespace csrefLINQExamples
                             LastName = "Playstead",
                         };
 
-                        // Declare a StudentName by using an object initializer and sending 
+                        // Declare a StudentName by using an object initializer and sending
                         // an argument for only the ID property. No corresponding constructor is
-                        // necessary. Only the default constructor is used to process object 
+                        // necessary. Only the default constructor is used to process object
                         // initializers.
                         StudentName student3 = new StudentName
                         {
@@ -279,7 +279,7 @@ namespace csrefLINQExamples
                         };
 
                         // Declare a StudentName by using an object initializer and sending
-                        // arguments for all three properties. No corresponding constructor is 
+                        // arguments for all three properties. No corresponding constructor is
                         // defined in the class.
                         StudentName student4 = new StudentName
                         {
@@ -303,15 +303,15 @@ namespace csrefLINQExamples
 
                 public class StudentName
                 {
-                    // The default constructor has no parameters. The default constructor 
-                    // is invoked in the processing of object initializers. 
-                    // You can test this by changing the access modifier from public to 
-                    // private. The declarations in Main that use object initializers will 
+                    // The default constructor has no parameters. The default constructor
+                    // is invoked in the processing of object initializers.
+                    // You can test this by changing the access modifier from public to
+                    // private. The declarations in Main that use object initializers will
                     // fail.
                     public StudentName() { }
 
-                    // The following constructor has parameters for two of the three 
-                    // properties. 
+                    // The following constructor has parameters for two of the three
+                    // properties.
                     public StudentName(string first, string last)
                     {
                         FirstName = first;
@@ -352,14 +352,14 @@ namespace csrefLINQExamples
                     var b = new[] { "hello", null, "world" }; // string[]
 
                     // single-dimension jagged array
-                    var c = new[]   
-                    {  
+                    var c = new[]
+                    {
                         new[]{1,2,3,4},
                         new[]{5,6,7,8}
                     };
 
                     // jagged array of strings
-                    var d = new[]   
+                    var d = new[]
                     {
                         new[]{"Luca", "Mads", "Luke", "Dinesh"},
                         new[]{"Karen", "Suma", "Frances"}
@@ -503,7 +503,7 @@ namespace csrefLINQExamples
                     // anon is compiled as an anonymous type
                     var anon = new { Name = "Terry", Age = 34 };
 
-                    // list is compiled as List<int>                             
+                    // list is compiled as List<int>
                     var list = new List<int>();
                     //</snippet43>
 
@@ -518,7 +518,7 @@ namespace csrefLINQExamples
                 {
                     string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
 
-                    // If a query produces a sequence of anonymous types, 
+                    // If a query produces a sequence of anonymous types,
                     // then use var in the foreach statement to access the properties.
                     var upperLowerWords =
                          from w in words
@@ -534,7 +534,7 @@ namespace csrefLINQExamples
             /* Outputs:
                 Uppercase: APPLE, Lowercase: apple
                 Uppercase: BLUEBERRY, Lowercase: blueberry
-                Uppercase: CHERRY, Lowercase: cherry        
+                Uppercase: CHERRY, Lowercase: cherry
              */
             //</snippet44>
 
@@ -560,10 +560,10 @@ namespace csrefLINQExamples
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        { 
+        {
             new Category(){Name="Beverages", ID=001},
             new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},         
+            new Category(){ Name="Vegetables", ID=003},
         };
 
                 // Specify the second data source.
@@ -671,7 +671,7 @@ namespace csrefLINQExamples
 
                 static void Main(string[] args)
                 {
-                    // Original delegate syntax required 
+                    // Original delegate syntax required
                     // initialization with a named method.
                     TestDelegate testDelA = new TestDelegate(M);
 
@@ -721,7 +721,7 @@ namespace csrefLINQExamples
                     Test2 app = new Test2();
                     bool b = app.M(x => x % 2 == 0, DateTime.Now.Second);
 
-                    //bool b2 = app.M(x => x +   
+                    //bool b2 = app.M(x => x +
 
                     Console.WriteLine(b.ToString());
 
@@ -770,7 +770,7 @@ namespace csrefLINQExamples
                         Console.WriteLine(s);
                     }
 
-                    // You also can execute the query returned from QueryMethod1 
+                    // You also can execute the query returned from QueryMethod1
                     // directly, without using myQuery1.
                     Console.WriteLine("\nResults of executing myQuery1 directly:");
                     // Rest the mouse pointer over the call to QueryMethod1 to see its
@@ -809,7 +809,7 @@ namespace csrefLINQExamples
                     Console.WriteLine("Press any key to exit.");
                     Console.ReadKey();
                 }
-            } 
+            }
     //</snippet80>
 
             //<snippet81>
@@ -830,12 +830,12 @@ namespace csrefLINQExamples
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        { 
+        {
             new Category(){Name="Beverages", ID=001},
             new Category(){ Name="Condiments", ID=002},
             new Category(){ Name="Vegetables", ID=003},
             new Category() {  Name="Grains", ID=004},
-            new Category() {  Name="Fruit", ID=005}            
+            new Category() {  Name="Fruit", ID=005}
         };
 
                 // Specify the second data source.
@@ -919,12 +919,12 @@ namespace csrefLINQExamples
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        { 
+        {
             new Category(){Name="Beverages", ID=001},
             new Category(){ Name="Condiments", ID=002},
             new Category(){ Name="Vegetables", ID=003},
             new Category() {  Name="Grains", ID=004},
-            new Category() {  Name="Fruit", ID=005}            
+            new Category() {  Name="Fruit", ID=005}
         };
 
                 // Specify the second data source.
@@ -1009,10 +1009,10 @@ namespace csrefLINQExamples
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        { 
+        {
             new Category(){Name="Beverages", ID=001},
             new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},         
+            new Category(){ Name="Vegetables", ID=003},
         };
 
                 // Specify the second data source.
@@ -1050,7 +1050,7 @@ namespace csrefLINQExamples
                     foreach (var v in q2)
                         Console.WriteLine(v.Name);
 
-                    //var q3 = from item in 
+                    //var q3 = from item in
 
                     // Keep console window open in debug mode.
                     Console.WriteLine("Press any key to exit.");

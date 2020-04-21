@@ -18,7 +18,7 @@ namespace MyNamespace
       DockPanel.SetDock(myCheckBox, Dock.Top);
       }
 
-        public static readonly DependencyProperty IsSpinningProperty = 
+        public static readonly DependencyProperty IsSpinningProperty =
           DependencyProperty.Register(
           "IsSpinning", typeof(Boolean),
           typeof(MyCode)

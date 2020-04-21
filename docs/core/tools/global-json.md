@@ -113,7 +113,7 @@ The following example shows how to use the exact specified version:
 }
 ```
 
-The following example shows how to use the latest feature band and patch version installed of a specific major and minor version (in the form, 3.1.xxx):
+The following example shows how to use the latest feature band and patch version installed of a specific major and minor version:
 
 ```json
 {

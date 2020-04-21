@@ -13,25 +13,25 @@ The `Conditional` attribute makes the execution of a method dependent on a prepr
 
 In the following example, `Conditional` is applied to a method to enable or disable the display of program-specific diagnostic information:
 
-::::::code language="csharp" source="snippets/trace.cs" interactive="try-dotnet" :::
+:::code language="csharp" source="snippets/trace.cs" interactive="try-dotnet" :::
 
 If the `TRACE_ON` identifier isn't defined, the trace output isn't displayed. Explore for yourself in the interactive window.
 
 The `Conditional` attribute is often used with the `DEBUG` identifier to enable trace and logging features for debug builds but not in release builds, as shown in the following example:
 
-::::::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetConditional" :::
+:::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetConditional" :::
 
 When a method marked conditional is called, the presence or absence of the specified preprocessing symbol determines whether the call is included or omitted. If the symbol is defined, the call is included; otherwise, the call is omitted. A conditional method must be a method in a class or struct declaration and must have a `void` return type. Using `Conditional` is cleaner, more elegant, and less error-prone than enclosing methods inside `#if…#endif` blocks.
 
 If a method has multiple `Conditional` attributes, a call to the method is included if at one or more conditional symbols is defined (the symbols are logically linked together by using the OR operator). In the following example, the presence of either `A` or `B` results in a method call:
 
-::::::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetMultipleConditions" :::
+:::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetMultipleConditions" :::
 
 ### Using `Conditional` with attribute classes
 
 The `Conditional` attribute can also be applied to an attribute class definition. In the following example, the custom attribute `Documentation` will only add information to the metadata if `DEBUG` is defined.
 
-::::::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetConditionalConditionalAttribute" :::
+:::code language="csharp" source="snippets/ConditionalExamples.cs" id="SnippetConditionalConditionalAttribute" :::
 
 ## `Obsolete` attribute
 
@@ -39,7 +39,7 @@ The `Obsolete` attribute marks a code element as no longer recommended for use. 
 
 In the following example the `Obsolete` attribute is applied to class `A` and to method `B.OldMethod`. Because the second argument of the attribute constructor applied to `B.OldMethod` is set to `true`, this method will cause a compiler error, whereas using class `A` will just produce a warning. Calling `B.NewMethod`, however, produces no warning or error. For example, when you use it with the previous definitions, the following code generates two warnings and one error:
 
-::::::code language="csharp" source="snippets/ObsoleteExample.cs" interactive="try-dotnet" :::
+:::code language="csharp" source="snippets/ObsoleteExample.cs" interactive="try-dotnet" :::
 
 The string provided as the first argument to the attribute constructor will be displayed as part of the warning or error. Two warnings for class `A` are generated: one for the declaration of the class reference, and one for the class constructor. The `Obsolete` attribute can be used without arguments, but including an explanation what to use instead is recommended.
 

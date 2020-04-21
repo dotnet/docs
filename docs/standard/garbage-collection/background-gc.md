@@ -47,7 +47,7 @@ The following illustration shows background *server* garbage collection performe
 > - .NET Framework 3.5 and earlier for workstation garbage collection
 > - .NET Framework 4 and earlier for server garbage collection
 >
-> Concurrent garbage is replaced by [background garbage collection](#background-workstation-garbage-collection) in later versions.
+> Concurrent garbage is replaced by background garbage collection in later versions.
 
 In workstation or server garbage collection, you can [enable concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md), which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish fast.
 

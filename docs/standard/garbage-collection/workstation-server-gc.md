@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Workstation and server garbage collection
 
-The garbage collector is self-tuning and can work in a wide variety of scenarios. You can use a [configuration file setting](../../core/run-time-config/garbage-collector.md#flavors-of-garbage-collection) to set the type of garbage collection based on the characteristics of the workload. The CLR provides the following types of garbage collection:
+The garbage collector is self-tuning and can work in a wide variety of scenarios. However, you can [set the type of garbage collection](../../core/run-time-config/garbage-collector.md#flavors-of-garbage-collection) based on the characteristics of the workload. The CLR provides the following types of garbage collection:
 
 - Workstation garbage collection (GC), which is designed for client apps. It's the default GC flavor for standalone apps. For hosted apps, for example, those hosted by ASP.NET, the host determines the default GC flavor.
 

@@ -150,7 +150,7 @@ Because objects in generations 0 and 1 are short-lived, these generations are kn
 
 Ephemeral generations are allocated in the memory segment that's known as the ephemeral segment. Each new segment acquired by the garbage collector becomes the new ephemeral segment and contains the objects that survived a generation 0 garbage collection. The old ephemeral segment becomes the new generation 2 segment.
 
-The size of the ephemeral segment varies depending on whether a system is 32-bit or 64-bit and on the type of garbage collector it is running. Default values are shown in the following table.
+The size of the ephemeral segment varies depending on whether a system is 32-bit or 64-bit and on the type of garbage collector it is running ([workstation or server GC](workstation-server-gc.md)). The following table shows the default sizes of the ephemeral segment.
 
 |Workstation/server GC|32-bit|64-bit|
 |-|-------------|-------------|
@@ -206,5 +206,7 @@ For more information about cleaning up unmanaged resources, see [Clean up unmana
 
 ## See also
 
+- [Workstation and server garbage collection](workstation-server-gc.md)
+- [Background garbage collection](background-gc.md)
 - [Configuration options for GC](../../core/run-time-config/garbage-collector.md)
 - [Garbage collection](index.md)

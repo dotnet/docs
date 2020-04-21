@@ -18,7 +18,7 @@ This change only affects applications that use reflection to load the <xref:Syst
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

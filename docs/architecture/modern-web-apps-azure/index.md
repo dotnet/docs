@@ -46,6 +46,12 @@ Editors:
 
 > **Maira Wenzel**
 
+## Action links
+
+- This e-book is also available in a PDF format (English version only) [Download](https://aka.ms/webappebook)
+
+- Clone/Fork the reference application [eShopOnWeb on GitHub](https://github.com/dotnet-architecture/eShopOnWeb)
+
 ## Introduction
 
 .NET Core and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET Core for your server applications if some or all of the following are important to your application's success:

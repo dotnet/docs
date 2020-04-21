@@ -117,7 +117,7 @@ The compiler generates warnings when you dereference a variable or expression th
 
 ## Attributes describe APIs
 
-You add attributes to APIs that provide the compiler more information about when arguments or return values can or can't be null. You can learn more about these attributes in our article in the language reference covering the [nullable attributes](../language-reference/attributes/nullable-analysis.md). These attributes are being added to .NET libraries over current and upcoming releases. The most commonly used APIs are being updated first.
+You add attributes to APIs that provide the compiler more information about when arguments or return values can or can't be null. You can learn more about these attributes in our article in the language reference covering the [nullable attributes](language-reference/attributes/nullable-analysis.md). These attributes are being added to .NET libraries over current and upcoming releases. The most commonly used APIs are being updated first.
 
 ## See also
 

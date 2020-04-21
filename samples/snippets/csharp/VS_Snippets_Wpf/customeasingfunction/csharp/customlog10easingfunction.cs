@@ -21,7 +21,7 @@ namespace CustomEasingFunction
 
         // Specify your own logic for the easing function by overriding
         // the EaseInCore method. Note that this logic applies to the "EaseIn"
-        // mode of interpolation. 
+        // mode of interpolation.
         protected override double EaseInCore(double normalizedTime)
         {
             // applies the formula of time to the seventh power.

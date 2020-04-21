@@ -2,40 +2,40 @@
  *
  * File: FocusTracker
  *
- * Description: This is a simple console application that might be used as a starting-point for an 
+ * Description: This is a simple console application that might be used as a starting-point for an
  * application that uses UI Automation to track events on the desktop.
- * 
+ *
  * The program announces when the input focus changes. If the focus moves to a different application window,
  * the caption of the window is announced. If the focus moves within an application window, the type and name
  * of the control being read are announced.
- * 
+ *
  * To know when the focus switches from one application to another, the program keeps a list of the runtime
  * identifiers of all open top-level windows. In response to each focus-changed event, a TreeWalker is used
  * to find the parent window, and that window is compared with the last window that had focus.
- * 
+ *
  * The program subscribes to three event types:
- * 
+ *
  *  -- Structure changed. The only event of interest is the addition of a new top-level window.
  *  -- Focus changed. All events are captured.
  * --  Window closed. When a top-level window is closed, its runtime ID is removed from the list.
- * 
- * For simplicity, no caching is done. A full-scale application would likely cache all immediate children 
+ *
+ * For simplicity, no caching is done. A full-scale application would likely cache all immediate children
  * of an application window as soon as that window received focus.
- * 
- * 
+ *
+ *
  *  This file is part of the Microsoft Windows SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  *************************************************************************************************/
 
 using System;
@@ -77,7 +77,7 @@ namespace FocusTracker
 
             // Make a list of runtime IDs of top-level windows.
             // An alternative would be to keep a list of process IDs. However, it is somewhat more difficult
-            // to track the termination of processes, because the only information available from a 
+            // to track the termination of processes, because the only information available from a
             // window-closed event is the runtime ID.
 
             savedRuntimeIds = new ArrayList();
@@ -98,7 +98,7 @@ namespace FocusTracker
             // Add other event handlers.
             // <Snippet104>
             // elementRoot is an AutomationElement.
-            Automation.AddStructureChangedEventHandler(elementRoot, TreeScope.Children, 
+            Automation.AddStructureChangedEventHandler(elementRoot, TreeScope.Children,
                 new StructureChangedEventHandler(OnStructureChanged));
             // </Snippet104>
 
@@ -106,7 +106,7 @@ namespace FocusTracker
                 new AutomationFocusChangedEventHandler(OnFocusChanged));
         }
 
-// <Snippet106> 
+// <Snippet106>
         private void OnFocusChanged(object src, AutomationFocusChangedEventArgs e)
         {
             AutomationElement elementFocused = src as AutomationElement;
@@ -123,8 +123,8 @@ namespace FocusTracker
         /// <param name="e">Event arguments.</param>
         /// <remarks>
         /// An exception can be thrown by the UI Automation core if the element disappears
-        /// before it can be processed -- for example, if a menu item is only briefly visible. 
-        /// This exception cannot be caught here because it crosses native/managed boundaries. 
+        /// before it can be processed -- for example, if a menu item is only briefly visible.
+        /// This exception cannot be caught here because it crosses native/managed boundaries.
         /// In the debugger, you can ignore it and continue execution. The exception does not cause
         /// a break when the executable is being run.
         /// </remarks>
@@ -149,7 +149,7 @@ namespace FocusTracker
         }
 // </Snippet105>
 
-// <Snippet101> 
+// <Snippet101>
         /// <summary>
         /// Handles window-closed events. Removes the window from the top-level window list.
         /// </summary>
@@ -178,7 +178,7 @@ namespace FocusTracker
         /// <remarks>
         /// runtimteIds is an ArrayList that contains the runtime IDs of all top-level windows.
         /// </remarks>
-// <Snippet103> 
+// <Snippet103>
         private int RuntimeIdListed(int[] runtimeId, ArrayList runtimeIds)
         {
             for (int x = 0; x < runtimeIds.Count; x++)
@@ -193,7 +193,7 @@ namespace FocusTracker
         }
 // </Snippet103>
 
-// </Snippet101>        
+// </Snippet101>
 
         /// <summary>
         /// Gets the caption of a window.
@@ -203,7 +203,7 @@ namespace FocusTracker
         private string GetTitle(AutomationElement elementWindow)
         {
             AutomationElement elementTitle = null;
-            Condition cond = 
+            Condition cond =
                 new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.TitleBar);
             elementTitle = elementWindow.FindFirst(TreeScope.Children, cond);
             if (elementTitle != null)
@@ -230,7 +230,7 @@ namespace FocusTracker
             }
         }
 
-// <Snippet102>        
+// <Snippet102>
         /// <summary>
         /// Retrieves the top-level window that contains the specified UI Automation element.
         /// </summary>

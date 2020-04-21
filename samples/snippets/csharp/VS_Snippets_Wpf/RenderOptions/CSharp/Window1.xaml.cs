@@ -44,7 +44,7 @@ namespace WindowsApplication1
         {
             // <SnippetRenderOptionsSnippet3>
             DrawingBrush drawingBrush = new DrawingBrush();
-                        
+
             // Set the caching hint option for the brush.
             RenderOptions.SetCachingHint(drawingBrush, CachingHint.Cache);
 

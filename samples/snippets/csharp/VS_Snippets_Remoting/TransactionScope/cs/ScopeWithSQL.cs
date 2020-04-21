@@ -26,10 +26,10 @@ class Program
     }
 
     // <Snippet1>
-    // This function takes arguments for 2 connection strings and commands to create a transaction 
-    // involving two SQL Servers. It returns a value > 0 if the transaction is committed, 0 if the 
-    // transaction is rolled back. To test this code, you can connect to two different databases 
-    // on the same server by altering the connection string, or to another 3rd party RDBMS by 
+    // This function takes arguments for 2 connection strings and commands to create a transaction
+    // involving two SQL Servers. It returns a value > 0 if the transaction is committed, 0 if the
+    // transaction is rolled back. To test this code, you can connect to two different databases
+    // on the same server by altering the connection string, or to another 3rd party RDBMS by
     // altering the code in the connection2 code block.
     static public int CreateTransactionScope(
         string connectString1, string connectString2,
@@ -47,7 +47,7 @@ class Program
             {
                 using (SqlConnection connection1 = new SqlConnection(connectString1))
                 {
-                    // Opening the connection automatically enlists it in the 
+                    // Opening the connection automatically enlists it in the
                     // TransactionScope as a lightweight transaction.
                     connection1.Open();
 
@@ -59,7 +59,7 @@ class Program
                     // If you get here, this means that command1 succeeded. By nesting
                     // the using block for connection2 inside that of connection1, you
                     // conserve server and network resources as connection2 is opened
-                    // only when there is a chance that the transaction can commit.   
+                    // only when there is a chance that the transaction can commit.
                     using (SqlConnection connection2 = new SqlConnection(connectString2))
                     {
                         // The transaction is escalated to a full distributed
@@ -93,14 +93,14 @@ class Program
 
     static private string GetSQLConnectionString1()
     {
-        // To avoid storing the connection string in your code, 
+        // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
         return "Integrated Security=true;database=Northwind;server=(local)";
     }
 
     static private string GetSQLConnectionString2()
     {
-        // To avoid storing the connection string in your code, 
+        // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
         return "Data Source=(local);Initial Catalog=AdventureWorks;"
             + "Integrated Security=true";

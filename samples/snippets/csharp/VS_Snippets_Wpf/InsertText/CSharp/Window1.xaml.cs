@@ -1,17 +1,17 @@
 ﻿/******************************************************************************
  * File: Window1.xaml.cs
  *
- * Description: 
- *    This sample opens a 'canned' Win32 application and shows how to use 
+ * Description:
+ *    This sample opens a 'canned' Win32 application and shows how to use
  *    UI Automation to input text depending on the text control.
- * 
- *    InsertTextTarget.exe should be automatically copied to the InsertText 
- *    client folder when you build the sample. You may have to manually copy 
+ *
+ *    InsertTextTarget.exe should be automatically copied to the InsertText
+ *    client folder when you build the sample. You may have to manually copy
  *    this file if you receive an error stating the file cannot be found.
  *
  * Programming Elements:
  *    The sample demonstrates the following UI Automation programming elements.
- * 
+ *
  *       System.Windows.Automation Namespace:
  *         Automation Class
  *           AddAutomationEventHandler
@@ -20,7 +20,7 @@
  *         AndCondition Class
  *         OrCondition Class
  *         AutomationElementCollection Class
- *         AutomationPattern Class 
+ *         AutomationPattern Class
  *         AutomationElement Class
  *           IsTextPatternAvailableProperty field
  *           TryGetCurrentPattern method
@@ -41,12 +41,12 @@
  *           Pattern field
  *           SetValue method
  *         AutomationPropertyChangedEventHandler Delegate
- * 
- * 
+ *
+ *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -80,12 +80,12 @@ namespace InsertTextClient
     {
         private AutomationElement targetWindow;
         private AutomationElementCollection textControls;
-        // InsertTextTarget.exe should be automatically copied to the 
-        // InsertText client folder when you build the sample. 
-        // You may have to manually copy this file if you receive an error 
+        // InsertTextTarget.exe should be automatically copied to the
+        // InsertText client folder when you build the sample.
+        // You may have to manually copy this file if you receive an error
         // stating the file cannot be found.
-        private readonly string filePath = 
-            System.Windows.Forms.Application.StartupPath 
+        private readonly string filePath =
+            System.Windows.Forms.Application.StartupPath
             + "\\InsertTextTarget.exe";
         private StringBuilder feedbackText;
 
@@ -132,13 +132,13 @@ namespace InsertTextClient
                 transformPattern.Move(clientLocationRight, clientLocationTop);
             }
 
-            // Get required control patterns 
+            // Get required control patterns
             //
-            // Once you have an instance of an AutomationElement for the target 
+            // Once you have an instance of an AutomationElement for the target
             // obtain a WindowPattern object to handle the WindowClosed event.
             try
             {
-                WindowPattern windowPattern = 
+                WindowPattern windowPattern =
                     targetWindow.GetCurrentPattern(WindowPattern.Pattern) as WindowPattern;
             }
             catch (InvalidOperationException)
@@ -148,29 +148,29 @@ namespace InsertTextClient
             }
 
             // Register for an Event
-            // 
-            // The WindowPattern allows you to programmatically 
-            // manipulate a window. 
-            // It also exposes a window closed event. 
-            // The following code shows an example of listening 
+            //
+            // The WindowPattern allows you to programmatically
+            // manipulate a window.
+            // It also exposes a window closed event.
+            // The following code shows an example of listening
             // for the WindowClosed event.
             //
             // To intercept the WindowClosed event for our target application
             // you define an AutomationEventHandler delegate.
-            AutomationEventHandler targetClosedHandler = 
+            AutomationEventHandler targetClosedHandler =
                 new AutomationEventHandler(OnTargetClosed);
 
             // Use AddAutomationEventHandler() to add this event handler.
-            // When listening for a WindowClosed event you must either scope 
-            // the event to the automation element as done here, or cast 
-            // the AutomationEventArgs in the handler to WindowClosedEventArgs 
-            // and compare the RuntimeId of the automation element that raised 
-            // the WindowClosed event to the automation element in the 
+            // When listening for a WindowClosed event you must either scope
+            // the event to the automation element as done here, or cast
+            // the AutomationEventArgs in the handler to WindowClosedEventArgs
+            // and compare the RuntimeId of the automation element that raised
+            // the WindowClosed event to the automation element in the
             // class member data.
             Automation.AddAutomationEventHandler(
-                WindowPattern.WindowClosedEvent, 
-                targetWindow, 
-                TreeScope.Element, 
+                WindowPattern.WindowClosedEvent,
+                targetWindow,
+                TreeScope.Element,
                 targetClosedHandler);
 
             SetClientControlProperties(false, true);
@@ -230,7 +230,7 @@ namespace InsertTextClient
         /// <param name="element">A text control.</param>
         /// <param name="value">The string to be inserted.</param>
         ///--------------------------------------------------------------------
-        private void InsertTextUsingUIAutomation(AutomationElement element, 
+        private void InsertTextUsingUIAutomation(AutomationElement element,
                                             string value)
         {
             try
@@ -247,19 +247,19 @@ namespace InsertTextClient
                 // A series of basic checks prior to attempting an insertion.
                 //
                 // Check #1: Is control enabled?
-                // An alternative to testing for static or read-only controls 
-                // is to filter using 
-                // PropertyCondition(AutomationElement.IsEnabledProperty, true) 
+                // An alternative to testing for static or read-only controls
+                // is to filter using
+                // PropertyCondition(AutomationElement.IsEnabledProperty, true)
                 // and exclude all read-only text controls from the collection.
                 if (!element.Current.IsEnabled)
                 {
                     throw new InvalidOperationException(
                         "The control with an AutomationID of "
-                        + element.Current.AutomationId.ToString() 
+                        + element.Current.AutomationId.ToString()
                         + " is not enabled.\n\n");
                 }
 
-                // Check #2: Are there styles that prohibit us 
+                // Check #2: Are there styles that prohibit us
                 //           from sending text to this control?
                 if (!element.Current.IsKeyboardFocusable)
                 {
@@ -269,20 +269,20 @@ namespace InsertTextClient
                         + "is read-only.\n\n");
                 }
 
-                // Once you have an instance of an AutomationElement,  
+                // Once you have an instance of an AutomationElement,
                 // check if it supports the ValuePattern pattern.
                 object valuePattern = null;
 
-                // Control does not support the ValuePattern pattern 
+                // Control does not support the ValuePattern pattern
                 // so use keyboard input to insert content.
                 //
-                // NOTE: Elements that support TextPattern 
+                // NOTE: Elements that support TextPattern
                 //       do not support ValuePattern and TextPattern
-                //       does not support setting the text of 
+                //       does not support setting the text of
                 //       multi-line edit or document controls.
                 //       For this reason, text input must be simulated
                 //       using one of the following methods.
-                //       
+                //
                 if (!element.TryGetCurrentPattern(
                     ValuePattern.Pattern, out valuePattern))
                 {
@@ -292,7 +292,7 @@ namespace InsertTextClient
                         .AppendLine(" Using keyboard input.\n");
 
                     // Set focus for input functionality and begin.
-                    element.SetFocus(); 
+                    element.SetFocus();
 
                     // Pause before sending keyboard input.
                     Thread.Sleep(100);
@@ -303,7 +303,7 @@ namespace InsertTextClient
                     SendKeys.SendWait("{DEL}");     // Delete selection
                     SendKeys.SendWait(value);
                 }
-                // Control supports the ValuePattern pattern so we can 
+                // Control supports the ValuePattern pattern so we can
                 // use the SetValue method to insert content.
                 else
                 {
@@ -344,8 +344,8 @@ namespace InsertTextClient
             foreach (AutomationElement control in textControls)
             {
                 // An alternative to testing for static or read-only controls
-                // is to filter using 
-                // PropertyCondition(AutomationElement.IsEnabledProperty, true) 
+                // is to filter using
+                // PropertyCondition(AutomationElement.IsEnabledProperty, true)
                 // and exclude all read-only text controls from the collection.
                 InsertTextUsingWin32(control, s);
             }
@@ -377,13 +377,13 @@ namespace InsertTextClient
                     throw new InvalidOperationException(
                         "Unable to get handle to object.");
 
-                // A series of basic checks for the text control 
+                // A series of basic checks for the text control
                 // prior to attempting an insertion.
                 //
                 // Check #1: Is control enabled?
-                // An alternative to testing for static or read-only controls 
-                // is to filter using 
-                // PropertyCondition(AutomationElement.IsEnabledProperty, true) 
+                // An alternative to testing for static or read-only controls
+                // is to filter using
+                // PropertyCondition(AutomationElement.IsEnabledProperty, true)
                 // and exclude all read-only text controls from the collection.
                 if (!UnmanagedClass.IsWindowEnabled(_hwnd))
                 {
@@ -393,34 +393,34 @@ namespace InsertTextClient
                         + " is not enabled.\n");
                 }
 
-                // Check #2: Are there styles that prohibit us from 
+                // Check #2: Are there styles that prohibit us from
                 //           sending text to this control?
                 UnmanagedClass.HWND hwnd = UnmanagedClass.HWND.Cast(_hwnd);
-                int ControlStyle = UnmanagedClass.GetWindowLong(hwnd, 
+                int ControlStyle = UnmanagedClass.GetWindowLong(hwnd,
                                             UnmanagedClass.GCL_STYLE);
 
                 if (IsBitSet(ControlStyle, UnmanagedClass.ES_READONLY))
                 {
                     throw new InvalidOperationException(
                         "The control with an AutomationID of "
-                        + element.Current.AutomationId.ToString() + 
+                        + element.Current.AutomationId.ToString() +
                         " is read-only.");
                 }
 
-                // Check #3: Is the size of the text we want to set 
+                // Check #3: Is the size of the text we want to set
                 //           greater than what the control accepts?
                 IntPtr result;
                 int resultInt;
 
                 IntPtr resultSendMessage = UnmanagedClass.SendMessageTimeout(
-                    hwnd, 
-                    UnmanagedClass.EM_GETLIMITTEXT, 
-                    IntPtr.Zero, 
-                    IntPtr.Zero, 
-                    1, 
-                    10000, 
+                    hwnd,
+                    UnmanagedClass.EM_GETLIMITTEXT,
+                    IntPtr.Zero,
+                    IntPtr.Zero,
+                    1,
+                    10000,
                     out result);
-                int lastWin32Error = 
+                int lastWin32Error =
                     System.Runtime.InteropServices.Marshal.GetLastWin32Error();
 
                 if (resultSendMessage == IntPtr.Zero)
@@ -445,19 +445,19 @@ namespace InsertTextClient
 
                 // Send the message...!
                 result = UnmanagedClass.SendMessageTimeout(
-                    hwnd, 
-                    UnmanagedClass.WM_SETTEXT, 
-                    IntPtr.Zero, 
-                    new StringBuilder(value), 
-                    1, 
-                    10000, 
+                    hwnd,
+                    UnmanagedClass.WM_SETTEXT,
+                    IntPtr.Zero,
+                    new StringBuilder(value),
+                    1,
+                    10000,
                     out result);
                 resultInt = unchecked((int)(long)result);
                 if (resultInt != 1)
                 {
                     throw new InvalidOperationException(
                         "The text of the control with an AutomationID of "
-                        + element.Current.AutomationId.ToString() + 
+                        + element.Current.AutomationId.ToString() +
                         " cannot be changed.");
                 }
                 feedbackText.Append(
@@ -506,7 +506,7 @@ namespace InsertTextClient
 
                 if (ptr == IntPtr.Zero)
                     throw new InvalidOperationException
-                        ("Unable to get a handle for the element with an AutomationID of " 
+                        ("Unable to get a handle for the element with an AutomationID of "
                         + element.Current.AutomationId.ToString() + ".");
             }
             catch (InvalidOperationException exc)
@@ -541,16 +541,16 @@ namespace InsertTextClient
             AndCondition condition = new AndCondition(
                     new OrCondition(
                         new PropertyCondition(
-                        AutomationElement.ControlTypeProperty, 
+                        AutomationElement.ControlTypeProperty,
                         ControlType.Edit),
                         new PropertyCondition(
-                        AutomationElement.ControlTypeProperty, 
+                        AutomationElement.ControlTypeProperty,
                         ControlType.Document),
                         new PropertyCondition(
-                        AutomationElement.ControlTypeProperty, 
+                        AutomationElement.ControlTypeProperty,
                         ControlType.Text)),
                     new PropertyCondition(
-                    AutomationElement.IsTextPatternAvailableProperty, 
+                    AutomationElement.IsTextPatternAvailableProperty,
                     true)
                    );
             return targetWindow.FindAll(TreeScope.Descendants, condition);
@@ -594,7 +594,7 @@ namespace InsertTextClient
             {
                 Feedback(e.ToString());
                 return null;
-            }       
+            }
         }
 
         ///--------------------------------------------------------------------
@@ -605,22 +605,22 @@ namespace InsertTextClient
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// It is not advisable to operate on your own UI within an 
-        /// event handler. This is especially true in a multi-threaded 
-        /// environment as the event handler is unlikely to be called on the 
-        /// UI thread. 
+        /// It is not advisable to operate on your own UI within an
+        /// event handler. This is especially true in a multi-threaded
+        /// environment as the event handler is unlikely to be called on the
+        /// UI thread.
         /// </remarks>
         ///--------------------------------------------------------------------
         private void OnTargetClosed(object sender, AutomationEventArgs e)
         {
             // Schedule the update function in the UI thread.
             spInsert.Dispatcher.BeginInvoke(
-                DispatcherPriority.Send, 
-                new ControlsDelegate(SetClientControlProperties), 
+                DispatcherPriority.Send,
+                new ControlsDelegate(SetClientControlProperties),
                 true, false);
             txtFeedback.Dispatcher.BeginInvoke(
-                DispatcherPriority.Send, 
-                new FeedbackDelegate(Feedback), 
+                DispatcherPriority.Send,
+                new FeedbackDelegate(Feedback),
                 "Target closed.");
         }
 

@@ -19,10 +19,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public OpacityAnimationExample()
         {
-        
+
             // Create a name scope for the page.
-            NameScope.SetNameScope(this, new NameScope());        
-        
+            NameScope.SetNameScope(this, new NameScope());
+
             this.WindowTitle = "Opacity Animation Example";
             this.Background = Brushes.White;
 
@@ -86,7 +86,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             DoubleAnimation myBackgroundOpacityDoubleAnimation = new DoubleAnimation();
             Storyboard.SetTargetName(myBackgroundOpacityDoubleAnimation, "mySolidColorBrush");
             Storyboard.SetTargetProperty(myBackgroundOpacityDoubleAnimation, new PropertyPath(Brush.OpacityProperty));
-            
+
             myBackgroundOpacityDoubleAnimation.From = 1;
             myBackgroundOpacityDoubleAnimation.To = 0;
             myBackgroundOpacityDoubleAnimation.Duration = new Duration(TimeSpan.FromSeconds(5));

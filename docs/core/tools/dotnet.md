@@ -258,7 +258,7 @@ dotnet myapp.dll
 
 - `DOTNET_NOLOGO`
 
-  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. Note that this flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
+  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. This flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
 
 - `DOTNET_CLI_TELEMETRY_OPTOUT`
 

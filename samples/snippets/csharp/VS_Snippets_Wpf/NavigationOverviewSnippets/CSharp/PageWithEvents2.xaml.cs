@@ -23,8 +23,8 @@ namespace SDKSample
         {
 
             this.Loaded += new RoutedEventHandler(PageWithEvents_Loaded);
-            this.Unloaded += new RoutedEventHandler(PageWithEvents_Unloaded); 
-            
+            this.Unloaded += new RoutedEventHandler(PageWithEvents_Unloaded);
+
             InitializeComponent();
 
             System.Console.WriteLine("PageWithEvents()2");

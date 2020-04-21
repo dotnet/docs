@@ -43,7 +43,7 @@ class XmlSchemaCreateExample
         // Built-in type.
         idAttribute.SchemaTypeName = new XmlQualifiedName("positiveInteger",
             "http://www.w3.org/2001/XMLSchema");
-        
+
         // Create the top-level Customer element.
         XmlSchemaElement customerElement = new XmlSchemaElement();
         customerElement.Name = "Customer";
@@ -54,7 +54,7 @@ class XmlSchemaCreateExample
         sequence.Items.Add(firstNameElement);
         sequence.Items.Add(lastNameElement);
         customerType.Particle = sequence;
-        
+
         // Add the CustomerId attribute to the complex type.
         customerType.Attributes.Add(idAttribute);
 
@@ -62,7 +62,7 @@ class XmlSchemaCreateExample
         // the anonymous complex type created above.
         customerElement.SchemaType = customerType;
         //</snippet3>
-        
+
         //<snippet4>
         // Create an empty schema.
         XmlSchema customerSchema = new XmlSchema();
@@ -77,7 +77,7 @@ class XmlSchemaCreateExample
         schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
         schemaSet.Add(customerSchema);
         schemaSet.Compile();
-        
+
         foreach (XmlSchema schema in schemaSet.Schemas())
         {
             customerSchema = schema;

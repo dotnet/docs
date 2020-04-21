@@ -31,8 +31,8 @@ namespace PropertyMappingWithElementHost
             elemHost.Dock = DockStyle.Fill;
             this.Controls.Add(elemHost);
 
-            // Create a Windows Presentation Foundation Button element 
-            // and assign it as the ElementHost control's child. 
+            // Create a Windows Presentation Foundation Button element
+            // and assign it as the ElementHost control's child.
             System.Windows.Controls.Button wpfButton = new System.Windows.Controls.Button();
             wpfButton.Content = "Windows Presentation Foundation Button";
             elemHost.Child = wpfButton;
@@ -70,18 +70,18 @@ namespace PropertyMappingWithElementHost
                 new PropertyTranslator(OnMarginChange));
         }
 
-        // The OnMarginChange method implements the mapping 
+        // The OnMarginChange method implements the mapping
         // from the Windows Forms Margin property to the
         // Windows Presentation Foundation Margin property.
         //
-        // The provided Padding value is used to construct 
+        // The provided Padding value is used to construct
         // a Thickness value for the hosted element's Margin
         // property.
         private void OnMarginChange(object h, String propertyName, object value)
         {
             ElementHost host = h as ElementHost;
             Padding p = (Padding)value;
-            System.Windows.Controls.Button wpfButton = 
+            System.Windows.Controls.Button wpfButton =
                 host.Child as System.Windows.Controls.Button;
 
             Thickness t = new Thickness(p.Left, p.Top, p.Right, p.Bottom );
@@ -100,7 +100,7 @@ namespace PropertyMappingWithElementHost
         // </snippet13>
 
         // <snippet14>
-        // The AddRegionMapping method assigns a custom 
+        // The AddRegionMapping method assigns a custom
         // mapping for the Region property.
         private void AddRegionMapping()
         {
@@ -112,23 +112,23 @@ namespace PropertyMappingWithElementHost
         // The OnRegionChange method assigns an EllipseGeometry to
         // the hosted element's Clip property.
         private void OnRegionChange(
-            object h, 
-            String propertyName, 
+            object h,
+            String propertyName,
             object value)
         {
             ElementHost host = h as ElementHost;
-            System.Windows.Controls.Button wpfButton = 
+            System.Windows.Controls.Button wpfButton =
                 host.Child as System.Windows.Controls.Button;
 
             wpfButton.Clip = new EllipseGeometry(new Rect(
-                0, 
-                0, 
-                wpfButton.ActualWidth, 
+                0,
+                0,
+                wpfButton.ActualWidth,
                 wpfButton.ActualHeight));
         }
 
         // The Form1_Resize method handles the form's Resize event.
-        // It calls the OnRegionChange method explicitly to 
+        // It calls the OnRegionChange method explicitly to
         // assign a new clipping geometry to the hosted element.
         private void Form1_Resize(object sender, EventArgs e)
         {
@@ -143,17 +143,17 @@ namespace PropertyMappingWithElementHost
         {
             if (elemHost.PropertyMap["BackColor"] != null)
             {
-                elemHost.PropertyMap["BackColor"] += 
+                elemHost.PropertyMap["BackColor"] +=
                     new PropertyTranslator(OnBackColorChange);
             }
         }
 
-        // The OnBackColorChange method assigns a specific image 
+        // The OnBackColorChange method assigns a specific image
         // to the hosted element's Background property.
         private void OnBackColorChange(object h, String propertyName, object value)
         {
             ElementHost host = h as ElementHost;
-            System.Windows.Controls.Button wpfButton = 
+            System.Windows.Controls.Button wpfButton =
                 host.Child as System.Windows.Controls.Button;
 
             ImageBrush b = new ImageBrush(new BitmapImage(

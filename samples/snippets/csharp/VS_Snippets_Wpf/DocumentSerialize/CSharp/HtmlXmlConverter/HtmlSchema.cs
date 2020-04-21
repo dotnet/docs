@@ -1,5 +1,5 @@
 ﻿//---------------------------------------------------------------------------
-// 
+//
 // File: HtmlSchema.cs
 //
 // Copyright (C) Microsoft Corporation.  All rights reserved.
@@ -66,7 +66,7 @@ namespace SdkSample
         #region Internal Methods
 
         /// <summary>
-        /// returns true when xmlElementName corresponds to empty element 
+        /// returns true when xmlElementName corresponds to empty element
         /// </summary>
         /// <param name="xmlElementName">
         /// string representing name to test
@@ -169,7 +169,7 @@ namespace SdkSample
         /// returns true if the string passed as argument is an Html entity name
         /// </summary>
         /// <param name="entityName">
-        /// string to be tested for Html entity name 
+        /// string to be tested for Html entity name
         /// </param>
         internal static bool IsEntity(string entityName)
         {
@@ -186,7 +186,7 @@ namespace SdkSample
 
         /// <summary>
         /// returns the character represented by the entity name string which is passed as an argument, if the string is an entity name
-        /// as specified in _htmlCharacterEntities, returns the character value of 0 otherwise 
+        /// as specified in _htmlCharacterEntities, returns the character value of 0 otherwise
         /// </summary>
         /// <param name="entityName">
         /// string representing entity name whose character value is desired
@@ -302,7 +302,7 @@ namespace SdkSample
         /// </summary>
         private static void InitializeEmptyElements()
         {
-            // Build a list of empty (no-scope) elements 
+            // Build a list of empty (no-scope) elements
             // (element not requiring closing tags, and not accepting any content)
             _htmlEmptyElements = new ArrayList();
             _htmlEmptyElements.Add("area");
@@ -319,7 +319,7 @@ namespace SdkSample
             _htmlEmptyElements.Add("meta");
             _htmlEmptyElements.Add("param");
         }
-        
+
         private static void InitializeOtherOpenableElements()
         {
             // It is a list of known html elements which we
@@ -729,7 +729,7 @@ namespace SdkSample
         private static ArrayList _htmlElementsClosingOnParentElementEnd;
 
         // names of elements that close certain optional closing tag elements when they start
-        
+
         // names of elements closing the colgroup element
         private static ArrayList _htmlElementsClosingColgroup;
 

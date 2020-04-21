@@ -120,7 +120,7 @@ It's useful to declare [discriminated unions](discriminated-unions.md) whose cas
 ```fsharp
 type FullName = { FirstName: string; LastName: string }
 
-// Note that using a named for Manager and Executive would require mutually recursive definitions.
+// Note that using a named record for Manager and Executive would require mutually recursive definitions.
 type Employee =
     | Engineer of FullName
     | Manager of {| Name: FullName; Reports: Employee list |}

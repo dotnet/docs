@@ -1,4 +1,4 @@
-﻿// <Snippet102> 
+﻿// <Snippet102>
 using System;
 using System.Windows.Automation;
 using System.Reflection;
@@ -38,7 +38,7 @@ namespace CSClient
 
                 IntPtr hwnd = GetConsoleWindow();
 
-                // Get an AutomationElement that represents the window. 
+                // Get an AutomationElement that represents the window.
                 AutomationElement elementWindow = AutomationElement.FromHandle(hwnd);
                 Console.WriteLine("Found UI Automation client-side provider for:");
 

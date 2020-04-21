@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 class CustomData
 {
    public long CreationTime;
-   public int Name; 
+   public int Name;
    public int ThreadNum;
 }
 
@@ -19,14 +19,14 @@ public class Example
       Task[] taskArray = new Task[10];
       for (int i = 0; i < taskArray.Length; i++) {
          taskArray[i] = Task.Factory.StartNew( (Object obj) => {
-                                                 var data = new CustomData() {Name = i, CreationTime = DateTime.Now.Ticks}; 
+                                                 var data = new CustomData() {Name = i, CreationTime = DateTime.Now.Ticks};
                                                  data.ThreadNum = Thread.CurrentThread.ManagedThreadId;
                                                  Console.WriteLine("Task #{0} created at {1} on thread #{2}.",
                                                                    data.Name, data.CreationTime, data.ThreadNum);
                                                },
                                               i );
       }
-      Task.WaitAll(taskArray);     
+      Task.WaitAll(taskArray);
    }
 }
 // The example displays output like the following:

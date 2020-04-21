@@ -53,7 +53,7 @@ namespace SDKSample
             GradientStop secondStop = new GradientStop();
             secondStop.Offset = 1.0;
             secondStop.Color = Colors.Purple;
-            
+
             LinearGradientBrush myLinearGradientBrush = new LinearGradientBrush();
             myLinearGradientBrush.GradientStops.Add(firstStop);
             myLinearGradientBrush.GradientStops.Add(secondStop);
@@ -71,7 +71,7 @@ namespace SDKSample
             myImage.Source = myDrawingImage;
 
             this.Content = myImage;
-        }      
+        }
     }
 }
 // </SnippetPenExampleWholePage>

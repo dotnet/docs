@@ -11,7 +11,7 @@ namespace Microsoft.Samples.KeyFrameExamples
     /// <summary>
     /// This example shows how to use the DoubleAnimationUsingKeyFrames class to
     /// animate the position of an object.
-    /// Key frame animations enable you to create complex animations 
+    /// Key frame animations enable you to create complex animations
     /// by specifying multiple destination values
     /// and controlling the animation's interpolation method.
     /// </summary>
@@ -41,13 +41,13 @@ namespace Microsoft.Samples.KeyFrameExamples
             containerCanvas.Height = 300;
             containerCanvas.Children.Add(aRectangle);
             Canvas.SetTop(aRectangle, 100);
-            Canvas.SetLeft(aRectangle, 10);         
+            Canvas.SetLeft(aRectangle, 10);
 
-            // Create a TranslateTransform to 
+            // Create a TranslateTransform to
             // move the rectangle.
-            TranslateTransform animatedTranslateTransform = 
+            TranslateTransform animatedTranslateTransform =
                 new TranslateTransform();
-            aRectangle.RenderTransform = animatedTranslateTransform;  
+            aRectangle.RenderTransform = animatedTranslateTransform;
 
             // Assign the TranslateTransform a name so that
             // it can be targeted by a Storyboard.
@@ -56,7 +56,7 @@ namespace Microsoft.Samples.KeyFrameExamples
 
             // Create a DoubleAnimationUsingKeyFrames to
             // animate the TranslateTransform.
-            DoubleAnimationUsingKeyFrames translationAnimation 
+            DoubleAnimationUsingKeyFrames translationAnimation
                 = new DoubleAnimationUsingKeyFrames();
             translationAnimation.Duration = TimeSpan.FromSeconds(6);
 
@@ -69,7 +69,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(3))) // KeyTime
                 );
 
-            // Animate from 500 (the value of the previous key frame) 
+            // Animate from 500 (the value of the previous key frame)
             // to 400 at 4 seconds using discrete interpolation.
             // Because the interpolation is discrete, the rectangle will appear
             // to "jump" from 500 to 400.
@@ -90,7 +90,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     )
                 );
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             translationAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the animation to target the X property

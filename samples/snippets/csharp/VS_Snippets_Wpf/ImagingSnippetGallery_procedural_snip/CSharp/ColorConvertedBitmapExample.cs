@@ -15,7 +15,7 @@ namespace SDKSample
 
             //How to use ColorConvertedBitmap
             string jpegFile = "sampleImages/WaterLilies.jpg";
-            Stream imageStream = new FileStream(jpegFile, FileMode.Open, FileAccess.Read, FileShare.Read);       
+            Stream imageStream = new FileStream(jpegFile, FileMode.Open, FileAccess.Read, FileShare.Read);
             BitmapSource bsrc = BitmapFrame.Create(imageStream);
             BitmapFrame bsrcFrame = (BitmapFrame)bsrc;
             //ColorContext sourceColorContext = (ColorContext)bsrcFrame.ColorContexts;

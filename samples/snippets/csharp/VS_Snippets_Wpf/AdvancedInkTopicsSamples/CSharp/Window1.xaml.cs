@@ -29,20 +29,20 @@ namespace AdavancedInkTopicsSamples
             //customInkCanvas = new CustomRenderingInkCanvas();
             //root.Children.Add(customInkCanvas);
             //customInkCanvas.EditingModeInverted = InkCanvasEditingMode.EraseByPoint;
-            //customInkCanvas.StrokeCollected += new InkCanvasStrokeCollectedEventHandler(customInkCanvas_StrokeCollected); 
-        
+            //customInkCanvas.StrokeCollected += new InkCanvasStrokeCollectedEventHandler(customInkCanvas_StrokeCollected);
+
             //filterInkCanvas = new FilterInkCanvas();
             //root.Children.Add(filterInkCanvas);
 
             //ic = new InkCanvas();
             //root.Children.Add(ic);
-            //ic.StrokeCollected += new InkCanvasStrokeCollectedEventHandler(customInkCanvas_StrokeCollected); 
-        
+            //ic.StrokeCollected += new InkCanvasStrokeCollectedEventHandler(customInkCanvas_StrokeCollected);
+
             //textbox1 = new TextBox();
             //InkCanvas.SetTop(textbox1, 30);
             //InkCanvas.SetLeft(textbox1, 100);
             //textbox1.Text = "Hello world";
-            //ic.Children.Add(textbox1);  
+            //ic.Children.Add(textbox1);
 
             control = new InkControl();
             root.Children.Add(control);
@@ -103,9 +103,9 @@ namespace AdavancedInkTopicsSamples
         public DynamicallyFilteredInkCanvas()
             : base()
         {
-            int dynamicRenderIndex = 
+            int dynamicRenderIndex =
                 this.StylusPlugIns.IndexOf(this.DynamicRenderer);
-            
+
             this.StylusPlugIns.Insert(dynamicRenderIndex, filter);
         }
     }
@@ -131,7 +131,7 @@ namespace AdavancedInkTopicsSamples
             this.Strokes.Add(customStroke);
 
             // Pass the custom stroke to base class' OnStrokeCollected method.
-            InkCanvasStrokeCollectedEventArgs args = 
+            InkCanvasStrokeCollectedEventArgs args =
                 new InkCanvasStrokeCollectedEventArgs(customStroke);
             base.OnStrokeCollected(args);
         }

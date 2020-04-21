@@ -1,8 +1,8 @@
-﻿// The purpose of this snippet is to demonstrate how to use all the primary virtual-mode events. 
+﻿// The purpose of this snippet is to demonstrate how to use all the primary virtual-mode events.
 // Additionally, this example implements row-level commit-scope. To experiment with this feature,
 // make some edits in multiple cells within a single row, then click ESC once to revert the edit
-// for a single cell, and twice to revert the edit for the entire row. You can commit all edits 
-// for a row without changing focus by pressing CTRL-ENTER. 
+// for a single cell, and twice to revert the edit for the entire row. You can commit all edits
+// for a row without changing focus by pressing CTRL-ENTER.
 
 //<Snippet000>
 //<Snippet001>
@@ -14,19 +14,19 @@ public class Form1 : Form
 {
     private DataGridView dataGridView1 = new DataGridView();
 
-    // Declare an ArrayList to serve as the data store. 
+    // Declare an ArrayList to serve as the data store.
     private System.Collections.ArrayList customers =
         new System.Collections.ArrayList();
 
     // Declare a Customer object to store data for a row being edited.
     private Customer customerInEdit;
 
-    // Declare a variable to store the index of a row being edited. 
-    // A value of -1 indicates that there is no row currently in edit. 
+    // Declare a variable to store the index of a row being edited.
+    // A value of -1 indicates that there is no row currently in edit.
     private int rowInEdit = -1;
 
-    // Declare a variable to indicate the commit scope. 
-    // Set this value to false to use cell-level commit scope. 
+    // Declare a variable to indicate the commit scope.
+    // Set this value to false to use cell-level commit scope.
     private bool rowScopeCommit = true;
 
     [STAThreadAttribute()]
@@ -51,7 +51,7 @@ public class Form1 : Form
         // Enable virtual mode.
         this.dataGridView1.VirtualMode = true;
 
-        // Connect the virtual-mode events to event handlers. 
+        // Connect the virtual-mode events to event handlers.
         this.dataGridView1.CellValueNeeded += new
             DataGridViewCellValueEventHandler(dataGridView1_CellValueNeeded);
         this.dataGridView1.CellValuePushed += new
@@ -78,10 +78,10 @@ public class Form1 : Form
         contactNameColumn.Name = "Contact Name";
         this.dataGridView1.Columns.Add(companyNameColumn);
         this.dataGridView1.Columns.Add(contactNameColumn);
-        this.dataGridView1.AutoSizeColumnsMode = 
+        this.dataGridView1.AutoSizeColumnsMode =
             DataGridViewAutoSizeColumnsMode.AllCells;
 
-        // Add some sample entries to the data store. 
+        // Add some sample entries to the data store.
         this.customers.Add(new Customer(
             "Bon app'", "Laurence Lebihan"));
         this.customers.Add(new Customer(
@@ -108,7 +108,7 @@ public class Form1 : Form
         {
             customerTmp = this.customerInEdit;
         }
-        else 
+        else
         {
             customerTmp = (Customer)this.customers[e.RowIndex];
         }
@@ -178,7 +178,7 @@ public class Form1 : Form
     private void dataGridView1_RowValidated(object sender,
         System.Windows.Forms.DataGridViewCellEventArgs e)
     {
-        // Save row changes if any were made and release the edited 
+        // Save row changes if any were made and release the edited
         // Customer object if there is one.
         if (e.RowIndex >= this.customers.Count &&
             e.RowIndex != this.dataGridView1.Rows.Count - 1)
@@ -224,13 +224,13 @@ public class Form1 : Form
         if (this.rowInEdit == this.dataGridView1.Rows.Count - 2 &&
             this.rowInEdit == this.customers.Count)
         {
-            // If the user has canceled the edit of a newly created row, 
+            // If the user has canceled the edit of a newly created row,
             // replace the corresponding Customer object with a new, empty one.
             this.customerInEdit = new Customer();
         }
         else
         {
-            // If the user has canceled the edit of an existing row, 
+            // If the user has canceled the edit of an existing row,
             // release the corresponding Customer object.
             this.customerInEdit = null;
             this.rowInEdit = -1;
@@ -244,7 +244,7 @@ public class Form1 : Form
     {
         if (e.Row.Index < this.customers.Count)
         {
-            // If the user has deleted an existing row, remove the 
+            // If the user has deleted an existing row, remove the
             // corresponding Customer object from the data store.
             this.customers.RemoveAt(e.Row.Index);
         }
@@ -252,7 +252,7 @@ public class Form1 : Form
         if (e.Row.Index == this.rowInEdit)
         {
             // If the user has deleted a newly created row, release
-            // the corresponding Customer object. 
+            // the corresponding Customer object.
             this.rowInEdit = -1;
             this.customerInEdit = null;
         }

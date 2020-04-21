@@ -86,7 +86,7 @@ myMoney = 400.75M;
 
 The preceding example also shows the use of `_` as a *digit separator*, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
 
-You also can use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
+You can also use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
 
 ```csharp-interactive
 double d = 0.42e2;

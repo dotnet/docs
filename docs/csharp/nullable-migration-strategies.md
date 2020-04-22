@@ -1,6 +1,6 @@
 ---
-title: Upgrade APIs for nullable reference types with attributes that define expectations for null values
-description: Learn to use the descriptive attributes AllowNull, DisallowNull, MaybeNull, NotNull and more to fully describe the null state of your APIs.
+title: Update your codebase to use nullable reference types
+description: Choose the best strategy for upgrading your codebase to use nullable reference types.
 ms.technology: csharp-null-safety
 ms.date: 07/31/2019
 ---

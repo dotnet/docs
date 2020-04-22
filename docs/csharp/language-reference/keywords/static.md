@@ -1,6 +1,6 @@
 ---
 title: "static modifier - C# Reference"
-ms.date: 01/22/2020
+ms.date: 04/22/2020
 f1_keywords: 
   - "static"
   - "static_CSharpKeyword"
@@ -10,9 +10,11 @@ ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
 ---
 # static (C# Reference)
 
+This page covers the `static` modifier keyword. The `static` keyword is also part of the [`using static`](using-static.md) directive.
+
 Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used to declare `static` classes. In classes, interfaces, and structs, you may add the `static` modifier to fields, methods, properties, operators, events, and constructors. The `static` modifier can't be used with indexers or finalizers. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
-## Example
+## Example - static class
 
 The following class is declared as `static` and contains only `static` methods:
 
@@ -41,13 +43,13 @@ Classes, interfaces, and `static` classes may have `static` constructors. A `sta
 
 To demonstrate `static` members, consider a class that represents a company employee. Assume that the class contains a method to count employees and a field to store the number of employees. Both the method and the field don't belong to any one employee instance. Instead, they belong to the class of employees as a whole. They should be declared as `static` members of the class.
 
-## Example
+## Example - static field and method
 
 This example reads the name and ID of a new employee, increments the employee counter by one, and displays the information for the new employee and the new number of employees. This program reads the current number of employees from the keyboard.
 
 [!code-csharp[csrefKeywordsModifiers#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#20)]  
 
-## Example
+## Example - static initialization
 
 This example shows that you can initialize a `static` field by using another `static` field that is not yet declared. The results will be undefined until you explicitly assign a value to the `static` field.
 
@@ -63,4 +65,5 @@ This example shows that you can initialize a `static` field by using another `st
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
+- [using static directive](using-static.md)
 - [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)

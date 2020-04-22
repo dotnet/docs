@@ -1,6 +1,6 @@
 ---
 title: "+ and += operators - C# reference"
-ms.date: 05/24/2019
+ms.date: 04/23/2020
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -22,7 +22,7 @@ For information about the arithmetic `+` operator, see the [Unary plus and minus
 
 ## String concatenation
 
-When one or both operands are of type [string](../builtin-types/reference-types.md#the-string-type), the `+` operator concatenates the string representations of its operands:
+When one or both operands are of type [string](../builtin-types/reference-types.md#the-string-type), the `+` operator concatenates the string representations of its operands (the string representation of `null` is an empty string):
 
 [!code-csharp-interactive[string concatenation](snippets/AdditionOperator.cs#AddStrings)]
 

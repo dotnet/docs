@@ -28,9 +28,12 @@ func init ProjectName --docker
 
 Choose which worker runtime you want from the following options:
 
-- `dotnet` (C#)
-- `node` (JavaScript)
-- `python`
+- `Dotet` (C# or F#)
+- `Node` (JavaScript)
+- `Python`
+- `Java`
+- `PowerShell`
+- `TypeScript`
 
 When the project is created, it will include a Dockerfile. Now, you can create and test your function locally. When deploying a function in containers, the ritual of building an image and hosting a container isn't necessary. You write your function code, include a Docker file, and trigger the function. It deploys without additional overhead or configuration.
 

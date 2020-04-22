@@ -54,7 +54,19 @@ As a best practice, developers shouldn't manually push images to a container reg
 
 ## ACR Tasks
 
-ACR Tasks is a suite of features available in Azure Container Registry. They extend the "inner-loop" development cycle to automatically build and push container images to the Azure cloud. These operations can be done on a development machine without the need for installing Docker Desktop. Additionally, you can configure ACR Task triggers to rebuild containers images on both source code and base image updates. The following AZ CLI command both builds a container image and pushes it to ACR.
+[ACR Tasks](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview) is a set of features available from the Azure Container Registry. It extends your [inner-loop development cycle](https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow) by building and managing container images in the Azure cloud. Instead of invoking a `docker build` and `docker push` locally on your development machine, they're automatically handled by ACR Tasks in the cloud.
+
+The following AZ CLI command both builds a container image and pushes it to ACR:
+
+```azurecli
+# create a container registry
+az acr create --resource-group myResourceGroup --name myContainerRegistry008 --sku Basic
+
+# build container image in ACR and push it into your container regsitry
+az acr build --image sample/hello-world:v1  --registry myContainerRegistry008 --file Dockerfile .
+```
+
+As you can see from the previous command block, there's no need to install Docker Desktop on your development machine. Additionally, you can configure ACR Task triggers to rebuild containers images on both source code and base image updates.
 
 ## Azure Kubernetes Service
 

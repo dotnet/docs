@@ -50,6 +50,8 @@ Web projects aren't packable by default. To override the default behavior, add t
 </PropertyGroup>
 ```
 
+### Implicit restore
+
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 ## Arguments

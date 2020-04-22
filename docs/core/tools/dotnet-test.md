@@ -37,6 +37,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
 ## Arguments
 
 - **`PROJECT | SOLUTION`**

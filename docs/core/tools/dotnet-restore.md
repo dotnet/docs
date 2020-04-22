@@ -30,12 +30,12 @@ The `dotnet restore` command uses NuGet to restore dependencies as well as proje
 
 ### Specify feeds
 
-To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET Core SDK is installed. To specify additional feeds:
+To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET Core SDK is installed. To specify additional feeds, do one of the following:
 
 - Create your own *nuget.config* file in the project directory. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [nuget.config differences](#nugetconfig-differences) later in this article.
 - Use `dotnet nuget` commands such as [`dotnet nuget add source`](dotnet-nuget-add-source.md).
 
-You can override the *nuget.config* feeds with the - `-s` option.
+You can override the *nuget.config* feeds with the `-s` option.
 
 For information about how to use authenticated feeds, see [Consuming packages from authenticated feeds](/nuget/consume-packages/consuming-packages-authenticated-feeds).
 

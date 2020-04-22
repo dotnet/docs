@@ -2,7 +2,7 @@
 title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET Core.
 ms.topic: tutorial
-ms.date: 12/17/2019
+ms.date: 04/20/2020
 ---
 # Tutorial: Debug a memory leak in .NET Core
 
@@ -131,7 +131,7 @@ In this tutorial, you're now done with the [Sample debug target](https://docs.mi
 
 ### Analyze the core dump
 
-Now that you have a core dump generated, use the [dotnet-dump)](dotnet-dump.md) tool to analyze the dump:
+Now that you have a core dump generated, use the [dotnet-dump](dotnet-dump.md) tool to analyze the dump:
 
 ```dotnetcli
 dotnet-dump analyze core_20190430_185145

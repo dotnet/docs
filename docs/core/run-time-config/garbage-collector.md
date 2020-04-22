@@ -234,7 +234,7 @@ Example:
 
 - Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
-- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
   - [System.GC.HeapHardLimitPercent](#systemgcheaphardlimitpercentcomplus_gcheaphardlimitpercent) is not set.

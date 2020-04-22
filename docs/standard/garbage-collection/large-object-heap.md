@@ -1,5 +1,5 @@
 ---
-title: LOH on Windows
+title: Large object heap (LOH) on Windows
 ms.date: 05/02/2018
 helpviewer_keywords:
   - large object heap (LOH)"

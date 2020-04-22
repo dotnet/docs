@@ -1,5 +1,5 @@
 ---
-title: Workstation vs. server GC
+title: Workstation vs. server garbage collection (GC)
 description: Learn about workstation and server garbage collection in .NET.
 ms.date: 04/21/2020
 helpviewer_keywords:

@@ -30,6 +30,10 @@ The `dotnet new` command creates a .NET Core project or other artifacts based on
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
 ## Arguments
 
 - **`TEMPLATE`**

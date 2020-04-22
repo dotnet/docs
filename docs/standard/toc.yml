@@ -748,8 +748,8 @@
       href: serialization/how-to-chunk-serialized-data.md
     - name: "How to: Determine if a .NET Standard object is serializable"
       href: serialization/how-to-determine-if-netstandard-object-is-serializable.md
-    - name: Samples
-      href: serialization/samples-binary.md
+    - name: Sample
+      href: serialization/basic-serialization-technology-sample.md
   - name: XML and SOAP serialization
     items:
     - name: Overview
@@ -804,8 +804,6 @@
         href: serialization/xml-serializer-generator-tool-sgen-exe.md
       - name: XML Schema Definition tool (Xsd.exe)
         href: serialization/xml-schema-definition-tool-xsd-exe.md
-    - name: Samples
-      href: serialization/samples-xml.md  
 - name: Develop for multiple platforms
   items:
   - name: Overview

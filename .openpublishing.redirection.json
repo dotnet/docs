@@ -606,6 +606,10 @@
       "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
     },
     {
+      "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators"
+    },
+    {
       "source_path": "docs/csharp/interactive-with-bash.md",
       "redirect_url": "/dotnet/csharp/index"
     },
@@ -1068,6 +1072,10 @@
     {
       "source_path": "docs/csharp/language-reference/operators/xor-operator.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
+    },
+    {
+      "source_path": "docs/csharp/local-functions-vs-lambdas.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/local-functions"
     },
     {
       "source_path": "docs/csharp/methods-lambda-expressions.md",
@@ -3754,12 +3762,28 @@
       "redirect_url": "/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
     },
     {
+      "source_path": "docs/standard/serialization/custom-serialization-order-with-xmlserializer.md",
+      "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+    },
+    {
       "source_path": "docs/standard/serialization/marshal-by-value.md",
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
     },
     {
       "source_path": "docs/standard/serialization/persistent-storage.md",
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+    },
+    {
+      "source_path": "docs/standard/serialization/samples-binary.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+    },
+    {
+      "source_path": "docs/standard/serialization/samples-xml.md",
+      "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+    },
+    {
+      "source_path": "docs/standard/serialization/schemaimporterextension-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
     },
     {
       "source_path": "docs/standard/serialization/serialization-how-to-topics.md",
@@ -3772,6 +3796,14 @@
     {
       "source_path": "docs/standard/serialization/serialization-tools.md",
       "redirect_url": "/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe"
+    },
+    {
+      "source_path": "docs/standard/serialization/version-tolerant-serialization-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+    },
+    {
+      "source_path": "docs/standard/serialization/web-services-generics-serialization-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
     },
     {
       "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",

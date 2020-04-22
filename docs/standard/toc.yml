@@ -232,7 +232,11 @@
       displayName: garbage collection
     - name: Fundamentals
       href: garbage-collection/fundamentals.md
-    - name: The Large Object Heap
+    - name: Workstation and server GC
+      href: garbage-collection/workstation-server-gc.md
+    - name: Background GC
+      href: garbage-collection/background-gc.md
+    - name: The large object heap
       href: garbage-collection/large-object-heap.md
     - name: Garbage collection and performance
       href: garbage-collection/performance.md

@@ -1,11 +1,11 @@
 ---
 title: Base class library breaking changes
-description: Lists the breaking changes in .NET CoreFx, the base class library.
-ms.date: "09/20/2019"
+description: Lists the breaking changes in core .NET libraries.
+ms.date: 09/20/2019
 ---
-# CoreFx breaking changes
+# Core .NET libraries breaking changes
 
-CoreFx provides the primitives and other general types used by .NET Core.
+The core .NET libraries provide the primitives and other general types used by .NET Core.
 
 The following breaking changes are documented on this page:
 

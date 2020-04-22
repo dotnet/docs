@@ -28,7 +28,7 @@ No action is required on the part of the developer.
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

@@ -21,7 +21,7 @@ If your app relies on the old behavior, call <xref:System.Diagnostics.Process.St
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

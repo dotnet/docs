@@ -114,7 +114,7 @@ Sometimes, it might be inconvenient to run `dotnet restore` implicitly. For exam
 
 - **`--no-cache`**
 
-  Specifies to not cache packages and HTTP requests.
+  Specifies to not cache HTTP requests.
 
 - **`--no-dependencies`**
 

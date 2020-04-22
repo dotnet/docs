@@ -44,7 +44,7 @@ This is a binary breaking change only; a recompile against .NET Core 3.0 Preview
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

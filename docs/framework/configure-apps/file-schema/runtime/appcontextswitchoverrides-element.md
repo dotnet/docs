@@ -49,11 +49,11 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`runtime`|Contains information about runtime initialization options.|
 
 ## Remarks
- Starting with the .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.
+ Starting with .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.
 
  The `value` attribute of the `<AppContextSwitchOverrides>` element consists of a single string that consists of one or more semicolon-delimited name/value pairs.  Each name identifies a compatibility switch, and its corresponding value is a Boolean (`true` or `false`) that indicates whether the switch is set. By default, the switch is `false`, and libraries  provide the new functionality. They only provide the previous functionality if the switch is set (that is, its value is `true`). This allows libraries to provide new behavior for an existing API while allowing callers who depend on the previous behavior to opt out of the new functionality.
 
- The .NET Framework supports the following switches:
+.NET Framework supports the following switches:
 
 |Switch name|Description|Introduced|
 |-----------------|-----------------|----------------|
@@ -135,7 +135,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 
  Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.
 
-## Switches in ASP.NET applications
+## Switches in ASP.NET apps
 
 You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../appsettings/index.md) section of the web.config file.
 
@@ -173,6 +173,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 
 ## See also
 
+- [Mitigate new behaviors in .NET Framework 4.6 and later](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)

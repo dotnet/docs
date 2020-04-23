@@ -1,7 +1,7 @@
 ---
 title: Remove the .NET Core runtime and SDK
 description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
-ms.date: 12/17/2019
+ms.date: 04/22/2020
 author: billwagner
 ms.author: wiwagn
 ms.custom: "updateeachrelease"
@@ -221,26 +221,30 @@ Note that there's no version attached to `dotnet-host`.
 
 If you installed using a tarball, you must remove .NET Core using the manual method.
 
-You remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. To be clear, this deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
-sudo rm -rf /usr/share/dotnet/sdk/1.0.1
-sudo rm -rf /usr/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
-sudo rm -rf /usr/share/dotnet/shared/Microsoft.AspNetCore.App/1.0.1
-sudo rm -rf /usr/share/dotnet/host/fxr/1.0.1
+version="1.0.1"
+sudo rm -rf /usr/local/share/dotnet/sdk/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
+sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 # [macOS](#tab/macos)
 
-On Mac, you must remove the SDKs and runtimes separately, by removing the directory that contains that version. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. To be clear, this deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
-sudo rm -rf /usr/local/share/dotnet/sdk/1.0.1
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/1.0.1
-sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/1.0.1
-sudo rm -rf /usr/local/share/dotnet/host/fxr/1.0.1
+version="1.0.1"
+sudo rm -rf /usr/local/share/dotnet/sdk/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.NETCore.App/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.All/$version
+sudo rm -rf /usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/$version
+sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 ```
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.

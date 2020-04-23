@@ -35,7 +35,7 @@ A key to understanding property paths in data binding is that you can target the
 ### Single Property on the Immediate Object as Data Context
 
 ```xml
-<Binding Path="propertyName" />
+<Binding Path="propertyName" ... />
 ```
 
 *propertyName* must resolve to be the name of a property that is in the current <xref:System.Windows.FrameworkElement.DataContext%2A> for a <xref:System.Windows.Data.Binding.Path%2A> usage. If your binding updates the source, that property must be read/write and the source object must be mutable.

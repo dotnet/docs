@@ -3303,18 +3303,12 @@
       "ms.custom": "updateeachrelease"
     },
     {
-      "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/predict-prices",
-      "redirect_document_id": true
+      "source_path": "docs/machine-learning/automl-overview.md",
+      "redirect_url": "/dotnet/machine-learning/automate-training-with-model-builder"
     },
     {
-      "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
+      "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
+      "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
       "redirect_document_id": true
     },
     {
@@ -3373,6 +3367,14 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/machine-learning/how-to-guides/use-gams-for-model-explainability.md",
+      "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net"
+    },
+    {
+      "source_path": "docs/machine-learning/how-to-guides/verify-model-quality-ml-net.md",
+      "redirect_url": "/dotnet/machine-learning/how-to-guides/"
+    },
+    {
       "source_path": "docs/machine-learning/resources/basics.md",
       "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
     },
@@ -3381,8 +3383,18 @@
       "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
     },
     {
-      "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
-      "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
+      "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/predict-prices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
       "redirect_document_id": true
     },
     {

@@ -15,7 +15,7 @@ Provides a way for custom control authors or applications that integrate third-p
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{ThemeDictionary assemblyUri}" />  
+<object property="{ThemeDictionary assemblyUri}" ... />  
 ```  
   
 ## XAML Object Element Usage  

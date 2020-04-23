@@ -23,7 +23,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ```xml  
 <object>  
   <object.property>  
-    <DynamicResource ResourceKey="key" />  
+    <DynamicResource ResourceKey="key" ... />  
   </object.property>  
 </object>  
 ```  

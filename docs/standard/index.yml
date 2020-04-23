@@ -16,10 +16,12 @@ landingContent:
   # Card
   - title: Learn about .NET
     linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
       - linkListType: overview
         links:
-          - text: Download the .NET SDK
-            url: https://dotnet.microsoft.com/download
           - text: Tour of .NET
             url: tour.md
           - text: What is .NET?

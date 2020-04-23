@@ -299,7 +299,7 @@ for (char column = 'a'; column < 'k'; column++)
 ```
 
 You can nest one loop inside the other to form pairs:
-      
+
 ```csharp
 for (int row = 1; number < 11; number++)
 {

@@ -23,19 +23,10 @@ If you want to use consumption billing, you won't be able to run your function i
 To wrap an Azure Function in a Docker container, install the [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) and then run the following command:
 
 ```console
-func init ProjectName --docker
+func init ProjectName --worker-runtime dotnet --docker
 ```
 
-Choose which worker runtime you want from the following options:
-
-- `Dotet` (C# or F#)
-- `Node` (JavaScript)
-- `Python`
-- `Java`
-- `PowerShell`
-- `TypeScript`
-
-When the project is created, it will include a Dockerfile. Now, you can create and test your function locally. When deploying a function in containers, the ritual of building an image and hosting a container isn't necessary. You write your function code, include a Docker file, and trigger the function. It deploys without additional overhead or configuration.
+Once created, the function will include a Dockerfile. Now, you can create and test your function locally. When deploying a function in containers, the ritual of building an image and hosting a container isn't necessary. You write your function code, include a Docker file, and trigger the function. It deploys without additional overhead or configuration.
 
 When creating Azure functions, you'll want to reference version 3 of the Azure Functions runtime, which targets .NET Core 3.1 and later. [This link](https://docs.microsoft.com/azure/azure-functions/functions-versions) describes the runtime versions available for Azure Functions.
 

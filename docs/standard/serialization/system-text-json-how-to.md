@@ -21,8 +21,6 @@ The code examples refer to the following class and variants of it:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
-See also [How to migrate to `System.Text.Json` from `Newtonsoft.Json`](system-text-json-migrate-from-newtonsoft-how-to.md) and [How to write custom converters](system-text-json-converters-how-to.md).
-
 ## Namespaces
 
 The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:

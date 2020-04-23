@@ -158,7 +158,7 @@ When running the docker-compose application as explained, you get:
 
 Browser opened:
 
-![](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/browser-opened.png)
+![Browser view with web app running](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/browser-opened.png)
 
 **Figure 4-44**. Browser windows with multi-container application running.
 

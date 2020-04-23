@@ -17,10 +17,12 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
       - linkListType: get-started
         links:
-          - text: Download the .NET Core SDK
-            url: https://dotnet.microsoft.com/download
           - text: Build a "Hello World" app with .NET Core
             url: ../core/tutorials/vb-with-visual-studio.md
           - text: Build a class library with .NET Standard

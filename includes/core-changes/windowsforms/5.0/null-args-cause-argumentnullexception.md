@@ -1,4 +1,4 @@
-### WinForms APIs now throw ArgumentNullException
+### WinForms methods now throw ArgumentNullException
 
 Some Windows Forms methods now throw an <xref:System.ArgumentNullException> for null arguments, where previously they threw a <xref:System.NullReferenceException>.
 

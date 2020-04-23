@@ -192,33 +192,34 @@ namespace keywords
         // </Snippet6>
 
         // <Snippet7>
-        internal unsafe struct MyBuffer
+        internal unsafe struct Buffer
         {
             public fixed char fixedBuffer[128];
         }
 
-        internal unsafe class MyClass
+        internal unsafe class Example
         {
-            public MyBuffer myBuffer = default;
+            public Buffer buffer = default;
         }
 
         private static void AccessEmbeddedArray()
         {
-            MyClass myC = new MyClass();
+            var example = new Example();
 
             unsafe
             {
                 // Pin the buffer to a fixed location in memory.
-                fixed (char* charPtr = myC.myBuffer.fixedBuffer)
+                fixed (char* charPtr = example.buffer.fixedBuffer)
                 {
                     *charPtr = 'A';
                 }
                 // Access safely through the index:
-                char c = myC.myBuffer.fixedBuffer[0];
+                char c = example.buffer.fixedBuffer[0];
                 Console.WriteLine(c);
-                // modify through the index:
-                myC.myBuffer.fixedBuffer[0] = 'B';
-                Console.WriteLine(myC.myBuffer.fixedBuffer[0]);
+
+                // Modify through the index:
+                example.buffer.fixedBuffer[0] = 'B';
+                Console.WriteLine(example.buffer.fixedBuffer[0]);
             }
         }
         // </Snippet7>

@@ -57,7 +57,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
  `DynamicResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
 ```xml  
-<object property="{DynamicResource ResourceKey=key}" />  
+<object property="{DynamicResource ResourceKey=key}" ... />  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `DynamicResource` has only one settable property, which is required, this verbose usage is not typical.  

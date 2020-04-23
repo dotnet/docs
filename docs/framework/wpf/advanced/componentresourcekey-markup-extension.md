@@ -15,7 +15,7 @@ Defines and references keys for resources that are loaded from external assembli
 ## XAML Attribute Usage (setting key, compact)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" />  
+<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" ... />  
 ```  
   
 ## XAML Attribute Usage (setting key, verbose)  

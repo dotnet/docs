@@ -282,7 +282,7 @@ spec:
     spec:
       containers:
         - name: webapi
-          image: exploredocker.azurecr.io/webapi:latest
+          image: exploredocker.azurecr.io/webapi:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
@@ -329,7 +329,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: exploredocker.azurecr.io/webapp:latest
+          image: exploredocker.azurecr.io/webapp:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80

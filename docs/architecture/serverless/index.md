@@ -10,7 +10,9 @@ ms.date: 04/22/2020
 
 ![Screenshot that shows the Serverless Apps e-book cover.](./media/index/serverless-apps-cover-v3.png)
 
-> DOWNLOAD available at: <https://aka.ms/serverless-ebook>
+**EDITION v3.0* - Updated to Azure Functions v3
+
+> DOWNLOAD available at: <https://aka.ms/serverlessbookpdf>
 
 PUBLISHED BY
 

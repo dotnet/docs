@@ -15,6 +15,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
+- [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
 
 ### .NET Core 2.1
 
@@ -25,6 +26,10 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ### .NET Core 1.0
 
 [!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
+
+***
+
+[!INCLUDE [corrupted-state-exceptions](~/includes/core-changes/corefx/1.0/corrupted-state-exceptions.md)]
 
 ***
 

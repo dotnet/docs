@@ -16,7 +16,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ## XAML Attribute Usage
 
 ```xml
-<Binding RelativeSource="{RelativeSource modeEnumValue}" />
+<Binding RelativeSource="{RelativeSource modeEnumValue}" ... />
 ```
 
 ## XAML Attribute Usage (nested within Binding extension)

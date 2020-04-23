@@ -40,12 +40,14 @@ landingContent:
   # Card
   - title: Install .NET Framework
     linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
       - linkListType: overview
         links:
           - text: Installation guide 
             url: install/index.md
-          - text: Download the .NET SDK
-            url: https://dotnet.microsoft.com/download
       - linkListType: concept
         links:
           - text: .NET Framework & Windows OS versions 

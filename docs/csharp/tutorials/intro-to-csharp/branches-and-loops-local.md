@@ -283,7 +283,7 @@ A `while`, `do` or `for` loop can be nested inside another loop to create a matr
 One `for` loop can generate the rows:
 
 ```csharp
-for (int row = 1; number < 11; number++)
+for (int row = 1; row < 11; row++)
 {
     Console.WriteLine($"The row is {row}");
 }
@@ -301,7 +301,7 @@ for (char column = 'a'; column < 'k'; column++)
 You can nest one loop inside the other to form pairs:
 
 ```csharp
-for (int row = 1; number < 11; number++)
+for (int row = 1; row < 11; row++)
 {
     for (char column = 'a'; column < 'k'; column++)
     {

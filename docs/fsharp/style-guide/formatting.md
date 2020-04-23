@@ -573,10 +573,10 @@ When generating arrays and lists programmatically, prefer `->` over `do ... yiel
 
 ```fsharp
 // Preferred
-let squares = [ for x in 1..10 -> x*x ]
+let squares = [ for x in 1..10 -> x * x ]
 
 // Not preferred
-let squares' = [ for x in 1..10 do yield x*x ]
+let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
 Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
@@ -810,10 +810,10 @@ let function1 a b = a - b * b
 ```fsharp
 // A1 and A2 are local modules.
 module A1 =
-    let function1 a b = a*a + b*b
+    let function1 a b = a * a + b * b
 
 module A2 =
-    let function2 a b = a*a - b*b
+    let function2 a b = a * a - b * b
 ```
 
 ### Formatting object expressions and interfaces
@@ -872,7 +872,7 @@ type MyRecord =
 
 ### Formatting attributes on parameters
 
-Attributes can also be places on parameters. In this case, place then on the same line as the parameter and before the name:
+Attributes can also be placed on parameters. In this case, place then on the same line as the parameter and before the name:
 
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.

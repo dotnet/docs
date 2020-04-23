@@ -187,6 +187,10 @@
       "redirect_url": "/dotnet/core/deploying/index"
     },
     {
+      "source_path": "docs/core/deploying/reducing-dependencies.md",
+      "redirect_url": "/dotnet/core/tools/dependencies"
+    },
+    {
       "source_path": "docs/core/docker/visual-studio-tools-for-docker.md",
       "redirect_url": "https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker"
     },
@@ -600,6 +604,10 @@
     {
       "source_path": "docs/csharp/getting-started/with-visual-studio.md",
       "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+    },
+    {
+      "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators"
     },
     {
       "source_path": "docs/csharp/interactive-with-bash.md",
@@ -1066,12 +1074,20 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
     },
     {
+      "source_path": "docs/csharp/local-functions-vs-lambdas.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/local-functions"
+    },
+    {
       "source_path": "docs/csharp/methods-lambda-expressions.md",
       "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/namespaces-and-assemblies.md",
       "redirect_url": "/dotnet/csharp/programming-guide/namespaces/index"
+    },
+    {
+      "source_path": "docs/csharp/nullable-attributes.md",
+      "redirect_url": "/dotnet/csharp/nullable-migration-strategies"
     },
     {
       "source_path": "docs/csharp/parallel.md",
@@ -3287,18 +3303,12 @@
       "ms.custom": "updateeachrelease"
     },
     {
-      "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/predict-prices",
-      "redirect_document_id": true
+      "source_path": "docs/machine-learning/automl-overview.md",
+      "redirect_url": "/dotnet/machine-learning/automate-training-with-model-builder"
     },
     {
-      "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
-      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
+      "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
+      "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
       "redirect_document_id": true
     },
     {
@@ -3357,6 +3367,14 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/machine-learning/how-to-guides/use-gams-for-model-explainability.md",
+      "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net"
+    },
+    {
+      "source_path": "docs/machine-learning/how-to-guides/verify-model-quality-ml-net.md",
+      "redirect_url": "/dotnet/machine-learning/how-to-guides/"
+    },
+    {
       "source_path": "docs/machine-learning/resources/basics.md",
       "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
     },
@@ -3365,8 +3383,18 @@
       "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
     },
     {
-      "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
-      "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
+      "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/predict-prices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
       "redirect_document_id": true
     },
     {
@@ -3657,7 +3685,7 @@
     },
     {
       "source_path": "docs/standard/garbagecollection/gc.md",
-      "redirect_url": "/dotnet/standard/garbage-collection/gc"
+      "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
     },
     {
       "source_path": "docs/standard/garbagecollection/implementing-dispose.md",
@@ -3686,6 +3714,10 @@
     {
       "source_path": "docs/standard/garbagecollection/weak-references.md",
       "redirect_url": "/dotnet/standard/garbage-collection/weak-references"
+    },
+    {
+      "source_path": "docs/standard/garbage-collection/gc.md",
+      "redirect_url": "/dotnet/standard/garbage-collection/fundamentals"
     },
     {
       "source_path": "docs/standard/garbage-collection/memory-management-and-gc.md",
@@ -3746,12 +3778,28 @@
       "redirect_url": "/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
     },
     {
+      "source_path": "docs/standard/serialization/custom-serialization-order-with-xmlserializer.md",
+      "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+    },
+    {
       "source_path": "docs/standard/serialization/marshal-by-value.md",
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
     },
     {
       "source_path": "docs/standard/serialization/persistent-storage.md",
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+    },
+    {
+      "source_path": "docs/standard/serialization/samples-binary.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+    },
+    {
+      "source_path": "docs/standard/serialization/samples-xml.md",
+      "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
+    },
+    {
+      "source_path": "docs/standard/serialization/schemaimporterextension-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
     },
     {
       "source_path": "docs/standard/serialization/serialization-how-to-topics.md",
@@ -3764,6 +3812,14 @@
     {
       "source_path": "docs/standard/serialization/serialization-tools.md",
       "redirect_url": "/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe"
+    },
+    {
+      "source_path": "docs/standard/serialization/version-tolerant-serialization-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+    },
+    {
+      "source_path": "docs/standard/serialization/web-services-generics-serialization-technology-sample.md",
+      "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
     },
     {
       "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",

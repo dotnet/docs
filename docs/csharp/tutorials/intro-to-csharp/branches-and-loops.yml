@@ -274,7 +274,7 @@ items:
     }
     ```
 
-    You can see that the outer out loop increments once for each iteration of the
+    You can see that the outer loop increments once for each full run of the
     inner loop. Reverse the row and column nesting, and see the changes for yourself.
 
 - title: Combine branches and loops

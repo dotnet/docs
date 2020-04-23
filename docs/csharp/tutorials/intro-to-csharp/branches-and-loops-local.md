@@ -310,7 +310,7 @@ for (int row = 1; row < 11; row++)
 }
 ```
 
-You can see that the outer out loop increments once for each iteration of the inner loop. Reverse the row and column nesting, and see the changes for yourself.
+You can see that the outer loop increments once for each full run of the inner loop. Reverse the row and column nesting, and see the changes for yourself.
 
 ## Combine branches and loops
 

@@ -410,20 +410,20 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:msdn-com:public-content-syndication")]
     public enum documentTypes {
-        
+
         /// <remarks/>
         primary,
-        
+
         /// <remarks/>
         common,
-        
+
         /// <remarks/>
         image,
-        
+
         /// <remarks/>
         feature,
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -431,13 +431,13 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:mtpg-com:mtps/2004/1/primary")]
     public partial class primary {
-        
+
         private System.Xml.XmlElement anyField;
-        
+
         private string primaryFormatField;
-        
+
         private string locationField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement Any {
@@ -448,7 +448,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="urn:mtpg-com:mtps/2004/1/primary/category")]
         public string primaryFormat {
@@ -459,7 +459,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.primaryFormatField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string location {
@@ -471,7 +471,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -479,15 +479,15 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:mtpg-com:mtps/2004/1/image")]
     public partial class image {
-        
+
         private string nameField;
-        
+
         private string imageFormatField;
-        
+
         private string locationField;
-        
+
         private byte[] valueField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string name {
@@ -498,7 +498,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.nameField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="urn:mtpg-com:mtps/2004/1/image/category")]
         public string imageFormat {
@@ -509,7 +509,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.imageFormatField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string location {
@@ -520,7 +520,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.locationField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute(DataType="base64Binary")]
         public byte[] Value {
@@ -532,7 +532,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -540,13 +540,13 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:mtpg-com:mtps/2004/1/common")]
     public partial class common {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string commonFormatField;
-        
+
         private string locationField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any {
@@ -557,7 +557,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="urn:mtpg-com:mtps/2004/1/common/category")]
         public string commonFormat {
@@ -568,7 +568,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.commonFormatField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string location {
@@ -580,7 +580,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -588,13 +588,13 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:mtpg-com:mtps/2004/1/feature")]
     public partial class feature {
-        
+
         private System.Xml.XmlElement[] anyField;
-        
+
         private string featureFormatField;
-        
+
         private string locationField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Any {
@@ -605,7 +605,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.anyField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified, Namespace="urn:mtpg-com:mtps/2004/1/feature/category")]
         public string featureFormat {
@@ -616,7 +616,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.featureFormatField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string location {
@@ -628,7 +628,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -636,15 +636,15 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:msdn-com:public-content-syndication")]
     public partial class getContentRequest {
-        
+
         private string contentIdentifierField;
-        
+
         private string localeField;
-        
+
         private string versionField;
-        
+
         private requestedDocument[] requestedDocumentsField;
-        
+
         /// <remarks/>
         public string contentIdentifier {
             get {
@@ -654,7 +654,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.contentIdentifierField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string locale {
@@ -665,7 +665,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.localeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string version {
@@ -676,7 +676,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.versionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
         public requestedDocument[] requestedDocuments {
@@ -688,7 +688,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -696,27 +696,27 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:msdn-com:public-content-syndication")]
     public partial class getContentResponse {
-        
+
         private string contentIdField;
-        
+
         private string contentGuidField;
-        
+
         private string contentAliasField;
-        
+
         private string localeField;
-        
+
         private string versionField;
-        
+
         private availableVersionAndLocale[] availableVersionsAndLocalesField;
-        
+
         private primary[] primaryDocumentsField;
-        
+
         private image[] imageDocumentsField;
-        
+
         private common[] commonDocumentsField;
-        
+
         private feature[] featureDocumentsField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string contentId {
@@ -727,7 +727,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.contentIdField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string contentGuid {
@@ -738,7 +738,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.contentGuidField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string contentAlias {
@@ -749,7 +749,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.contentAliasField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string locale {
@@ -760,7 +760,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.localeField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace="urn:mtpg-com:mtps/2004/1/key")]
         public string version {
@@ -771,7 +771,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.versionField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
         public availableVersionAndLocale[] availableVersionsAndLocales {
@@ -782,7 +782,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.availableVersionsAndLocalesField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("primary", Namespace="urn:mtpg-com:mtps/2004/1/primary", IsNullable=false)]
         public primary[] primaryDocuments {
@@ -793,7 +793,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.primaryDocumentsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("image", Namespace="urn:mtpg-com:mtps/2004/1/image", IsNullable=false)]
         public image[] imageDocuments {
@@ -804,7 +804,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.imageDocumentsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("common", Namespace="urn:mtpg-com:mtps/2004/1/common", IsNullable=false)]
         public common[] commonDocuments {
@@ -815,7 +815,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.commonDocumentsField = value;
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("feature", Namespace="urn:mtpg-com:mtps/2004/1/feature", IsNullable=false)]
         public feature[] featureDocuments {
@@ -827,7 +827,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -835,11 +835,11 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:msdn-com:public-content-syndication")]
     public partial class getNavigationPathsRequest {
-        
+
         private navigationKey rootField;
-        
+
         private navigationKey targetField;
-        
+
         /// <remarks/>
         public navigationKey root {
             get {
@@ -849,7 +849,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
                 this.rootField = value;
             }
         }
-        
+
         /// <remarks/>
         public navigationKey target {
             get {
@@ -860,7 +860,7 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.1414")]
     [System.SerializableAttribute()]
@@ -868,9 +868,9 @@ namespace BindtoContentService.com.microsoft.msdn.services {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="urn:msdn-com:public-content-syndication")]
     public partial class getNavigationPathsResponse {
-        
+
         private navigationPath[] navigationPathsField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
         public navigationPath[] navigationPaths {
@@ -882,24 +882,24 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.1414")]
     public delegate void GetContentCompletedEventHandler(object sender, GetContentCompletedEventArgs e);
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.1414")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetContentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
+
         private object[] results;
-        
-        internal GetContentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+
+        internal GetContentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) :
                 base(exception, cancelled, userState) {
             this.results = results;
         }
-        
+
         /// <remarks/>
         public getContentResponse Result {
             get {
@@ -908,24 +908,24 @@ namespace BindtoContentService.com.microsoft.msdn.services {
             }
         }
     }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.1414")]
     public delegate void GetNavigationPathsCompletedEventHandler(object sender, GetNavigationPathsCompletedEventArgs e);
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.1414")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetNavigationPathsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
+
         private object[] results;
-        
-        internal GetNavigationPathsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+
+        internal GetNavigationPathsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) :
                 base(exception, cancelled, userState) {
             this.results = results;
         }
-        
+
         /// <remarks/>
         public getNavigationPathsResponse Result {
             get {

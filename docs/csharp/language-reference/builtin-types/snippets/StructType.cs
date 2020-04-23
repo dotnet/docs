@@ -115,7 +115,7 @@ namespace builtin_types
                 Rate = rate;
                 Values = values;
             }
-            
+
             public double Rate { get; }
             public ReadOnlySpan<double> Values { get; }
         }

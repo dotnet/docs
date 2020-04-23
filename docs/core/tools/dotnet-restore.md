@@ -28,9 +28,22 @@ dotnet restore -h|--help
 
 The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are executed in parallel.
 
-To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET Core SDK is installed. You specify additional feeds by creating your own *nuget.config* file in the project directory. You can override the *nuget.config* feeds with the - `-s` option.
+### Specify feeds
+
+To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET Core SDK is installed. To specify additional feeds, do one of the following:
+
+- Create your own *nuget.config* file in the project directory. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [nuget.config differences](#nugetconfig-differences) later in this article.
+- Use `dotnet nuget` commands such as [`dotnet nuget add source`](dotnet-nuget-add-source.md).
+
+You can override the *nuget.config* feeds with the `-s` option.
+
+For information about how to use authenticated feeds, see [Consuming packages from authenticated feeds](/nuget/consume-packages/consuming-packages-authenticated-feeds).
+
+### Package cache
 
 For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems. For example, */home/user1* on Linux or *C:\Users\user1* on Windows.
+
+### Project-specific tooling
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 

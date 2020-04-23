@@ -37,6 +37,10 @@ dotnet publish -h|--help
 
 The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution. It's the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
 
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
 ### MSBuild
 
 The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `OutputPath` properties, respectively.

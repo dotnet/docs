@@ -18,7 +18,7 @@ Settings are arranged into groups on this page. The settings within each group a
 
 ## Flavors of garbage collection
 
-The two main flavors of garbage collection are workstation GC and server GC. For more information about differences between the two, see [Fundamentals of garbage collection](../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection).
+The two main flavors of garbage collection are workstation GC and server GC. For more information about differences between the two, see [Workstation and server garbage collection](../../standard/garbage-collection/workstation-server-gc.md).
 
 The subflavors of garbage collection are background and non-concurrent.
 
@@ -66,7 +66,7 @@ Project file:
 
 - Configures whether background (concurrent) garbage collection is enabled.
 - Default: Enabled (`true`).
-- For more information, see [Background garbage collection](../../standard/garbage-collection/fundamentals.md#background-workstation-garbage-collection) and [Background server garbage collection](../../standard/garbage-collection/fundamentals.md#background-server-garbage-collection).
+- For more information, see [Background garbage collection](../../standard/garbage-collection/background-gc.md).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -234,7 +234,7 @@ Example:
 
 - Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
-- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
   - [System.GC.HeapHardLimitPercent](#systemgcheaphardlimitpercentcomplus_gcheaphardlimitpercent) is not set.

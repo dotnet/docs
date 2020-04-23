@@ -232,7 +232,11 @@
       displayName: garbage collection
     - name: Fundamentals
       href: garbage-collection/fundamentals.md
-    - name: The Large Object Heap
+    - name: Workstation and server GC
+      href: garbage-collection/workstation-server-gc.md
+    - name: Background GC
+      href: garbage-collection/background-gc.md
+    - name: The large object heap
       href: garbage-collection/large-object-heap.md
     - name: Garbage collection and performance
       href: garbage-collection/performance.md
@@ -748,8 +752,8 @@
       href: serialization/how-to-chunk-serialized-data.md
     - name: "How to: Determine if a .NET Standard object is serializable"
       href: serialization/how-to-determine-if-netstandard-object-is-serializable.md
-    - name: Samples
-      href: serialization/samples-binary.md
+    - name: Sample
+      href: serialization/basic-serialization-technology-sample.md
   - name: XML and SOAP serialization
     items:
     - name: Overview
@@ -804,8 +808,6 @@
         href: serialization/xml-serializer-generator-tool-sgen-exe.md
       - name: XML Schema Definition tool (Xsd.exe)
         href: serialization/xml-schema-definition-tool-xsd-exe.md
-    - name: Samples
-      href: serialization/samples-xml.md  
 - name: Develop for multiple platforms
   items:
   - name: Overview

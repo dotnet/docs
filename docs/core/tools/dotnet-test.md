@@ -37,6 +37,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
 ## Arguments
 
 - **`PROJECT | SOLUTION`**
@@ -63,7 +67,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
-  Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
+  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file.
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -99,11 +103,11 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to find the binaries to run.
+  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
 - **`-r|--results-directory <PATH>`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -121,13 +125,13 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
-- `RunSettings` arguments
+- **`RunSettings`** arguments
 
   Arguments are passed as `RunSettings` configurations for the test. Arguments are specified as `[name]=[value]` pairs after "-- " (note the space after --). A space is used to separate multiple `[name]=[value]` pairs.
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [vstest.console.exe: Passing RunSettings args](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
 
 ## Examples
 

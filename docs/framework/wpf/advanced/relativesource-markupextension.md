@@ -22,7 +22,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ## XAML Attribute Usage (nested within Binding extension)
 
 ```xml
-<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" />
+<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" ... />
 ```
 
 ## XAML Object Element Usage

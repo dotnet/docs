@@ -15,7 +15,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{StaticResource key}" />  
+<object property="{StaticResource key}" ... />  
 ```  
   
 ## XAML Object Element Usage  

@@ -34,8 +34,11 @@ Here you can explore some examples using the Azure-CLI to create the cluster and
 Create the AKS cluster using this command (the resource group must exist):
 
 ```console
-az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --node-count 1 --generate-ssh-keys --location westeurope
+az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --node-vm-size Standard_B2s --node-count 1 --generate-ssh-keys --location westeurope
 ```
+
+> [!NOTE]
+> The `--node-vm-size` and `--node-count` parameter values are good enough for a sample/dev application.
 
 After the creation job finishes, you can see:
 

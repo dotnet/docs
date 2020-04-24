@@ -15,7 +15,7 @@ Links the value of a property in a control template to be the value of another p
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{TemplateBinding sourceProperty}" .../>
+<object property="{TemplateBinding sourceProperty}" ... />
 ```  
   
 ## XAML Attribute Usage (for Setter property in template or style)  

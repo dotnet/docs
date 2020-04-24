@@ -15,6 +15,7 @@ In this tutorial, you'll learn how to:
 >
 > - Create a data source that generates a sequence of data elements asynchronously.
 > - Consume that data source asynchronously.
+> - Support cancellation and captured contexts for asynchronous streams.
 > - Recognize when the new interface and data source are preferred to earlier synchronous data sequences.
 
 ## Prerequisites
@@ -65,30 +66,9 @@ Async streams and the associated language support address all those concerns. Th
 
 These new language features depend on three new interfaces added to .NET Standard 2.1 and implemented in .NET Core 3.0:
 
-```csharp
-namespace System.Collections.Generic
-{
-    public interface IAsyncEnumerable<out T>
-    {
-        IAsyncEnumerator<T> GetAsyncEnumerator(CancellationToken cancellationToken = default);
-    }
-
-    public interface IAsyncEnumerator<out T> : IAsyncDisposable
-    {
-        T Current { get; }
-
-        ValueTask<bool> MoveNextAsync();
-    }
-}
-
-namespace System
-{
-    public interface IAsyncDisposable
-    {
-        ValueTask DisposeAsync();
-    }
-}
-```
+- <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IAsyncEnumerator%601?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IAsyncDisposable?displayProperty=nameWithType>
 
 These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts:
 
@@ -126,7 +106,49 @@ Replace that code with the following `await foreach` loop:
 
 [!code-csharp[FinishedEnumerateAsyncStream](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
 
+The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
+
+```csharp
+int num = 0;
+var enumerator = runPagedQueryAsync(client, PagedIssueQuery, "docs").GetEnumeratorAsync();
+try {
+    while (await enumerator.MoveNextAsync())
+    {
+        var issue = enumerator.Current;
+        Console.WriteLine(issue);
+        Console.WriteLine($"Received {++num} issues in total");
+    }
+} finally
+{
+    if (enumerator != null)
+        await enumerator.DisposeAsync();
+}
+```
+
 By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+
+Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601%2A?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
+
+```csharp
+int num = 0;
+var cancellation = new CancellationTokenSource();
+await foreach (var issue in runPagedQueryAsync(client, PagedIssueQuery, "docs")
+    .WithCancellation(cancellation.Token))
+{
+    Console.WriteLine(issue);
+    Console.WriteLine($"Received {++num} issues in total");
+}
+```
+
+You would modify the signature for the async iterator method as follows to optionally support cancellation:
+
+```csharp
+private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
+    string queryText, string repoName, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+
+```
+
+The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?dipslayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator%601> that makes token passed to `GetAsyncEnumerator` to be visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
 
 You can get the code for the finished tutorial from the [dotnet/samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
 

@@ -38,7 +38,6 @@ Get started with a simple "Hello World" program on .NET Core:
 
       ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
-
 ## Debug
 
 1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](https://www.omnisharp.net/) loads in the editor.

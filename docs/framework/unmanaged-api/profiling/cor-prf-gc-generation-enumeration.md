@@ -39,10 +39,12 @@ typedef enum {
 |`COR_PRF_GC_GEN_1`|The object is stored as generation 1.|  
 |`COR_PRF_GC_GEN_2`|The object is stored as generation 2.|  
 |`COR_PRF_GC_LARGE_OBJECT_HEAP`|The object is stored in the large-object heap.|  
-|`COR_PRF_GC_PINNED_OBJECT_HEAP`|The object is stored in the pinned object heap.|  
+|`COR_PRF_GC_PINNED_OBJECT_HEAP`|The object is stored in the pinned-object heap.|  
   
 ## Remarks  
- The garbage collector improves memory management performance by dividing objects into generations based on age. The garbage collector currently uses three generations, numbered 0, 1, and 2, plus two special heap segments. The first special segment is used for large objects. Objects whose size is larger than a particular value are stored in the large-object heap. The second special segment is the pinned object heap. The pinned object heap is a heap where pinned objects can be allocated to avoid the performance cost of allocating pinned objects on the normal heaps. Other allocated objects start out belonging to generation 0. All objects that exist after garbage collection occurs in generation 0 are promoted to generation 1. Objects that exist after garbage collection occurs in generation 1 move into generation 2.  
+ The garbage collector improves memory management performance by dividing objects into generations based on age. The garbage collector currently uses three generations, numbered 0, 1, and 2, and two special heap segments, one for large objects and one for pinned objects.
+ 
+ Objects whose size is larger than a threshold value are stored in the large-object heap. Pinned objects can be allocated to the pinned-object heap to avoid the performance cost of allocating them on the normal heaps. Other allocated objects start out belonging to generation 0. All objects that exist after garbage collection occurs in generation 0 are promoted to generation 1. Objects that exist after garbage collection occurs in generation 1 move into generation 2.  
   
  The use of generations means that the garbage collector has to work with only a subset of the allocated objects at any one time.  
   

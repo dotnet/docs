@@ -28,7 +28,8 @@ Get started with a simple "Hello World" program on .NET Core:
 
     - Open the Terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
     - In the terminal window, enter `dotnet new console`.
-    - This command creates a *Program.cs* file in your folder with a simple "Hello World" program already written, along with a C# project file named *HelloWorld.csproj*.
+
+      This command creates a *Program.cs* file in your folder with a simple "Hello World" program already written, along with a C# project file named *HelloWorld.csproj*.
 
       ![The dotnet new command](media/with-visual-studio-code/dotnet-new-command.png)
 
@@ -44,7 +45,7 @@ Get started with a simple "Hello World" program on .NET Core:
 
     ![Open the Program.cs file](media/with-visual-studio-code/open-program-cs.png)
 
-2. Visual Studio Code should prompt you to add the missing assets to build and debug your app. Select **Yes**.
+2. Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**.
 
     ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 
@@ -74,7 +75,7 @@ Get started with a simple "Hello World" program on .NET Core:
 
 1. To add a new class, right-click in the VSCode Explorer below *Program.cs* and select **New File**. This adds a new file to the folder you have open in VSCode.
 1. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
-1. Add the code below to create your first class. The `HelloWorld` namespace assumes you started the tutorial by selecting a *HelloWorld* folder.
+1. Add the following code to create your first class.
 
     ``` csharp
     using System;
@@ -109,13 +110,15 @@ Get started with a simple "Hello World" program on .NET Core:
     }
     ```
 
-1. Save your changes and run the program again. The new message appears with the appended string.
+1. Save your changes.
+
+1. Run the program again.
 
     ```dotnetcli
     dotnet run
     ```
 
-    You get the following output:
+    The new message appears with the appended string.
 
     ```console
     Hello World! Happy coding!

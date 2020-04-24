@@ -12,7 +12,8 @@ The following breaking changes are documented on this page:
 | Breaking change | Version introduced |
 | - | :-: |
 | [Removed status bar controls](#removed-status-bar-controls) | 5.0 |
-| [WinForms APIs now throw ArgumentNullException](#winforms-apis-now-throw-argumentnullexception) | 5.0 |
+| [WinForms methods now throw ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
+| [WinForms methods now throw ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
 | [Removed controls](#removed-controls) | 3.1 |
 | [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -32,6 +33,10 @@ The following breaking changes are documented on this page:
 ## .NET 5.0
 
 [!INCLUDE [winforms-deprecated-controls](../../../includes/core-changes/windowsforms/5.0/winforms-deprecated-controls.md)]
+
+***
+
+[!INCLUDE [invalid-args-cause-argumentexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentexception.md)]
 
 ***
 

@@ -109,8 +109,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  This is shown in the following MSBuild project file.  
   
 ```xml  
-<Project ...  
-                xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
     ...  
     <Page Include="MarkupAndCodeBehindWindow.xaml" />  
     <Compile Include=" MarkupAndCodeBehindWindow.xaml.cs" />  

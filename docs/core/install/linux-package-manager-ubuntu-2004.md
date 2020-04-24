@@ -1,16 +1,16 @@
 ---
-title: Install .NET Core on Ubuntu 19.10 package manager - .NET Core
-description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 19.10.
+title: Install .NET Core on Ubuntu 20.04 package manager - .NET Core
+description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 20.04.
 author: thraka
 ms.author: adegeo
-ms.date: 03/17/2020
+ms.date: 04/15/2020
 ---
 
-# Ubuntu 19.10 Package Manager - Install .NET Core
+# Ubuntu 20.04 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on Ubuntu 19.10.
+This article describes how to use a package manager to install .NET Core on Ubuntu 20.04.
 
 [!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
 
@@ -27,7 +27,7 @@ This only needs to be done once per machine.
 Open a terminal and run the following commands.
 
 ```bash
-wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
@@ -97,7 +97,7 @@ If that doesn't work, you can run a manual install with the following commands.
 sudo apt-get install -y gpg
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/ubuntu/19.10/prod.list
+wget https://packages.microsoft.com/config/ubuntu/20.04/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list

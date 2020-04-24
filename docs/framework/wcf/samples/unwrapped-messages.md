@@ -36,7 +36,6 @@ This sample demonstrates unwrapped messages. By default, the message body is for
       <n2 xmlns="http://Microsoft.ServiceModel.Samples">15.99</n2>  
     </s:Body>  
   </s:Envelope>  
-</MessageLogTraceRecord>  
 ```  
   
  The unwrapped message does not wrap the `n1` and `n2` parameters in a containing element, they are direct children of the soap body element.  

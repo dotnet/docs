@@ -27,7 +27,6 @@ typedef enum {
     COR_PRF_GC_GEN_2 = 2,  
     COR_PRF_GC_LARGE_OBJECT_HEAP = 3,
     COR_PRF_GC_PINNED_OBJECT_HEAP= 4
-    C
 } COR_PRF_GC_GENERATION;  
 ```  
   

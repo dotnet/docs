@@ -15,12 +15,13 @@ would rather benefit from a device modernization.
 
 With the release of Windows 10, Microsoft introduced many innovations to support
 scenarios like tablets and touch devices and to provide the best experience for
-users for a Microsoft operating system ever. You can sign in with your face using
-Windows Hello. You can use a pen to draw or handwrite text that is automatically
-recognized and digitalized. You can even run locally customized AI models built
-on the cloud using WinML.
+users for a Microsoft operating system ever. For example, you can:
 
-All these features are enabled for Windows developers throughout Windows Runtime (WinRT)
+- Sign in with your face using Windows Hello.
+- Use a pen to draw or handwrite text that is automatically recognized and digitalized. 
+- Run locally customized AI models built on the cloud using WinML.
+
+All these features are enabled for Windows developers through Windows Runtime (WinRT)
 libraries. You can take advantage of these features in your existing
 desktop apps because the libraries are exposed to both the .NET Framework
 and .NET Core as well. You can even modernize your UI with the use of XAML
@@ -37,7 +38,7 @@ modernization path.
 
 WinRT APIs are object-oriented, well-structured application
 programming interfaces (APIs) that give Windows 10 developers access to
-everything the operating system has to offer. Through WinRT APIs you can
+everything the operating system has to offer. Through WinRT APIs, you can
 integrate functionalities like Push Notifications, Device APIs, Microsoft Ink,
 and WinML, among others on your desktop apps.
 
@@ -130,12 +131,12 @@ behavior of an application provided by packaging.
 
 Packages that you create for your desktop application are desktop-only,
 full-trust applications that aren't sandboxed, although there's lightweight
-virtualization applied to the app for writes to `HKCU` & `AppData`. This allows
+virtualization applied to the app for writes to `HKCU` and `AppData`. This virtualization allows
 them to interact with other apps the same way classic desktop applications do.
 
 ##### Installation
 
-App packages are installed under `C:\\Program Files\\WindowsApps\\package_name`,
+App packages are installed under *C:\\Program Files\\WindowsApps\\package_name*,
 with the executable titled `app_name.exe`. Each package folder contains a
 manifest (named `AppxManifest.xml`) that contains a special XML namespace for
 packaged apps. Inside that manifest file is an `<EntryPoint>` element, which

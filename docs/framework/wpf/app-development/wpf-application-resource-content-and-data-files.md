@@ -52,7 +52,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  In WPF, a resource file is a file that is included in an Microsoft build engine (MSBuild) project as a `Resource` item.  
   
 ```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
     <Resource Include="ResourceFile.xaml" />  
@@ -93,7 +93,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  You can do this when a XAML file is included in an MSBuild project as a `Page` item.  
   
 ```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
     <Page Include="MainWindow.xaml" />  
@@ -122,7 +122,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  The following shows a file that is configured as a content file which is copied to the build output folder only when a new version of the resource is added to the project.  
   
 ```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
     <Content Include="ContentFile.xaml">  
@@ -194,7 +194,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  If you do know at compile time the files that you would like to be located at the site of origin, but still want to avoid an explicit dependency, you can add those files to an MSBuild project as `None` item. As with content files, you need to set the MSBuild `CopyToOutputDirectory` attribute to specify that the site of origin file is copied to a location that is relative to the built assembly, by specifying either the `Always` value or the `PreserveNewest` value.  
   
 ```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <None Include="PageSiteOfOriginFile.xaml">  
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>  

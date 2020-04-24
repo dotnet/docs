@@ -16,13 +16,13 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ## XAML Attribute Usage
 
 ```xml
-<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>
+<Binding RelativeSource="{RelativeSource modeEnumValue}" ... />
 ```
 
 ## XAML Attribute Usage (nested within Binding extension)
 
 ```xml
-<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>
+<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" ... />
 ```
 
 ## XAML Object Element Usage
@@ -96,6 +96,7 @@ In the following example, the first <xref:System.Windows.Controls.TextBlock> in 
             </StackPanel>
         </DataTemplate>
     </ListBox.ItemTemplate>
+</ListBox>
 ```
 
 Describing data binding as a concept is not covered here, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).

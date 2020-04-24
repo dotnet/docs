@@ -523,3 +523,7 @@ right combination of:
 
 If you want to know more details, Microsoft is sharing this roadmap in
 <https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md>.
+
+>[!div class="step-by-step"]
+>[Previous](migrate-modern-applications.md)
+>[Next](example-migration-core.md)

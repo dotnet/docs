@@ -111,6 +111,10 @@ The requirements above are also required if you come across one of the following
 >
 > \- or -
 >
+> The program can't start because *api-ms-win-cor-timezone-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
 > The library *hostfxr.dll* was found, but loading it from *C:\\\<path_to_app>\\hostfxr.dll* failed.
 
 ::: zone-end

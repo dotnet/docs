@@ -2,7 +2,7 @@
 title: Get started with C# and Visual Studio Code
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
 author: kendrahavens
-ms.date: 12/05/2018
+ms.date: 04/23/2020
 ---
 # Get started with C# and Visual Studio Code
 
@@ -16,39 +16,28 @@ ms.date: 12/05/2018
 
 ## Hello World
 
-Let's get started with a simple "Hello World" program on .NET Core:
+Get started with a simple "Hello World" program on .NET Core:
 
 1. Open a project:
 
     - Open Visual Studio Code.
-    - Click on the Explorer icon on the left menu and then click **Open Folder**.
-    - Select **File** > **Open Folder** from the main menu to open the folder you want your C# project to be in and click **Select Folder**. For our example, we're creating a folder for our project named *HelloWorld*.
+    - Select **File** > **Open Folder** from the main menu.
+    - Create a folder named *HelloWorld*, and click **Select Folder**. The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
 
-      ![Visual Studio Code open folder](media/with-visual-studio-code/vs-code-open-folder.png)
-
-2. Initialize a C# project:
+1. Initialize a C# project:
 
     - Open the Terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
-    - In the terminal window, type `dotnet new console`.
+    - In the terminal window, enter `dotnet new console`.
     - This command creates a *Program.cs* file in your folder with a simple "Hello World" program already written, along with a C# project file named *HelloWorld.csproj*.
 
       ![The dotnet new command](media/with-visual-studio-code/dotnet-new-command.png)
 
-3. Resolve the build assets:
+1. Run the "Hello World" program:
 
-    - For **.NET Core 1.x**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
-
-      ![The dotnet restore command](media/with-visual-studio-code/dotnet-restore-command.png)
-
-      [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-
-4. Run the "Hello World" program:
-
-    - Type `dotnet run`.
+    - In the terminal window, enter `dotnet run`.
 
       ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
-You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 ## Debug
 
@@ -84,9 +73,9 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 ## Add a class
 
-1. To add a new class, right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
-2. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
-3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your *Program.cs* file:
+1. To add a new class, right-click in the VSCode Explorer below *Program.cs* and select **New File**. This adds a new file to the folder you have open in VSCode.
+1. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
+1. Add the code below to create your first class. The `HelloWorld` namespace assumes you started the tutorial by selecting a *HelloWorld* folder.
 
     ``` csharp
     using System;
@@ -103,7 +92,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     }
     ```
 
-4. Call your new class from your main method in *Program.cs* by adding the code below:
+1. Call your new class from your `Main` method by replacing the code in *Program.cs* with the following code:
 
     ```csharp
     using System;
@@ -121,7 +110,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     }
     ```
 
-5. Save your changes and run your program again. The new message should appear with the appended string.
+1. Save your changes and run the program again. The new message appears with the appended string.
 
     ```dotnetcli
     dotnet run

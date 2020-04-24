@@ -44,11 +44,12 @@ Also, remove this comment before submitting the issue.
 - C#
 - Core
 - Core .NET libraries
+- Cryptography
 - Data
 - Debugger
 - Deployment for .NET Core
 - Globalization
-- interop
+- Interop
 - JIT
 - LINQ
 - Managed Extensibility Framework (MEF)

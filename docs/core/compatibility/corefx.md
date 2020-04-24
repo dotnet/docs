@@ -29,6 +29,7 @@ The following breaking changes are documented on this page:
 | [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute) | 2.1 |
 | [OpenSSL versions on macOS](#openssl-versions-on-macos) | 2.1 |
 | [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes) | 1.0 |
+| [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported) | 1.0 |
 
 ## .NET Core 3.0
 
@@ -105,5 +106,9 @@ The following breaking changes are documented on this page:
 ## .NET Core 1.0
 
 [!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
+
+***
+
+[!INCLUDE [corrupted-state-exceptions](~/includes/core-changes/corefx/1.0/corrupted-state-exceptions.md)]
 
 ***

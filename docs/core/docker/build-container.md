@@ -164,7 +164,7 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
-In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, you'll choose either the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime. This tutorial will use the ASP.NET Core runtime image, but the application created in the previous sections is an .NET Core application.
+In your terminal, navigate back one directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, you'll choose either the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime. This tutorial will use the ASP.NET Core runtime image, but the application created in the previous sections is an .NET Core application.
 
 - ASP.NET Core runtime
 
@@ -214,8 +214,8 @@ Docker will process each line in the *Dockerfile*. The `.` in the `docker build`
 ```console
 > docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-myimage                                 latest              38db0eb8f648        4 weeks ago         346MB
-mcr.microsoft.com/dotnet/core/aspnet    3.1                 38db0eb8f648        4 weeks ago         346MB
+myimage                                 latest              54240314fe71        4 weeks ago         346MB
+mcr.microsoft.com/dotnet/core/aspnet    3.1                 54240314fe71        4 weeks ago         346MB
 ```
 
 Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add two commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the image the **myimage** repository entry points to.
@@ -223,10 +223,14 @@ Notice that the two images share the same **IMAGE ID** value. The value is the s
 ```dockerfile
 COPY app/bin/Release/netcoreapp3.1/publish/ app/
 
-ENTRYPOINT ["dotnet", "app/myapp.dll"]
+WORKDIR /app
+
+ENTRYPOINT ["dotnet", "myapp.dll"]
 ```
 
 The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the *publish* folder is copied to a folder named *app* in the container.
+
+The `WORKDIR` command changes the **current directory** inside of the container to *app*.
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
@@ -234,22 +238,26 @@ From your terminal, run `docker build -t myimage -f Dockerfile .` and when that 
 
 ```console
 > docker build -t myimage -f Dockerfile .
-Sending build context to Docker daemon  1.624MB
-Step 1/3 : FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
- ---> 38db0eb8f648
-Step 2/3 : COPY app/bin/Release/netcoreapp3.1/publish/ app/
- ---> 37873673e468
-Step 3/3 : ENTRYPOINT ["dotnet", "app/myapp.dll"]
- ---> Running in d8deb7b3aa9e
-Removing intermediate container d8deb7b3aa9e
- ---> 0d602ca35c1d
-Successfully built 0d602ca35c1d
+Sending build context to Docker daemon  1.121MB
+Step 1/4 : FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+ ---> 54240314fe71
+Step 2/4 : COPY app/bin/Release/netcoreapp3.1/publish/ app/
+ ---> 1e05ea8b3ef5
+Step 3/4 : WORKDIR /app
+ ---> Running in 8c8f710e6292
+Removing intermediate container 8c8f710e6292
+ ---> 31575599f7dc
+Step 4/4 : ENTRYPOINT ["dotnet", "myapp.dll"]
+ ---> Running in 93851322fb76
+Removing intermediate container 93851322fb76
+ ---> e496e8b22d02
+Successfully built e496e8b22d02
 Successfully tagged myimage:latest
 
 > docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-myimage                                 latest              0d602ca35c1d        4 seconds ago       346MB
-mcr.microsoft.com/dotnet/core/aspnet    3.1                 38db0eb8f648        4 weeks ago         346MB
+myimage                                 latest              e496e8b22d02        4 seconds ago       346MB
+mcr.microsoft.com/dotnet/core/aspnet    3.1                 54240314fe71        4 weeks ago         346MB
 ```
 
 Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. The final **IMAGE ID** (yours will be different) is **ddcc6646461b** and next you'll create a container based on this image.
@@ -260,15 +268,15 @@ Now that you have an image that contains your app, you can create a container. Y
 
 ```console
 > docker create myimage
-ceda87b219a4e55e9ad5d833ee1a7ea4da21b5ea7ce5a7d08f3051152e784944
+9222af24353f42bab6c13e01a0a64ef2c915cad27bdc46ffa32380581de11e91
 ```
 
 The `docker create` command from above will create a container based on the **myimage** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container. To see a list of *all* containers, use the `docker ps -a` command:
 
 ```console
 > docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS        PORTS   NAMES
-ceda87b219a4        myimage             "dotnet app/myapp.dll"   4 seconds ago       Created               gallant_lehmann
+CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS        PORTS   NAMES
+9222af24353f        myimage             "dotnet myapp.dll"   4 seconds ago       Created               gallant_lehmann
 ```
 
 ### Manage the container
@@ -282,8 +290,8 @@ The following example uses the `docker start` command to start the container, an
 gallant_lehmann
 
 > docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS         PORTS   NAMES
-ceda87b219a4        myimage             "dotnet app/myapp.dll"   7 minutes ago       Up 8 seconds           gallant_lehmann
+CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS         PORTS   NAMES
+9222af24353f        myimage             "dotnet myapp.dll"   7 minutes ago       Up 8 seconds           gallant_lehmann
 ```
 
 Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
@@ -331,8 +339,8 @@ The following example lists all containers. It then uses the `docker rm` command
 
 ```console
 > docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS     PORTS   NAMES
-ceda87b219a4        myimage             "dotnet app/myapp.dll"   19 minutes ago      Exited             gallant_lehmann
+CONTAINER ID        IMAGE               COMMAND              CREATED             STATUS     PORTS   NAMES
+9222af24353f        myimage             "dotnet myapp.dll"   19 minutes ago      Exited             gallant_lehmann
 
 > docker rm gallant_lehmann
 gallant_lehmann

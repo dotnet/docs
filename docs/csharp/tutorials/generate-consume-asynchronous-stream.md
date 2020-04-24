@@ -40,7 +40,7 @@ You can get the code for the starter application used in this tutorial from our 
 
 The starter application is a console application that uses the [GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [dotnet/docs](https://github.com/dotnet/docs) repository. Start by looking at the following code for the starter app `Main` method:
 
-[!code-csharp[StarterAppMain](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetStarterAppMain" :::
 
 You can either set a `GitHubKey` environment variable to your personal access token, or you can replace the last argument in the call to `GenEnvVariable` with your personal access token. Don't put your access code in source code if you'll be saving the source with others, or putting it in a shared source repository.
 
@@ -52,7 +52,7 @@ When you run the starter application, you can make some important observations a
 
 The implementation reveals why you observed the behavior discussed in the previous section. Examine the code for `runPagedQueryAsync`:
 
-[!code-csharp[RunPagedQueryStarter](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#RunPagedQuery)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetRunPagedQuery" :::
 
 Let's concentrate on the paging algorithm and async structure of the preceding code. (You can consult the [GitHub GraphQL documentation](https://developer.github.com/v4/guides/) for details on the GitHub GraphQL API.) The `runPagedQueryAsync` method enumerates the issues from most recent to oldest. It requests 25 issues per page and examines the `pageInfo` structure of the response to continue with the previous page. That follows GraphQL's standard paging support for multi-page responses. The response includes a `pageInfo` object that includes a `hasPreviousPages` value and a `startCursor` value used to request the previous page. The issues are in the `nodes` array. The `runPagedQueryAsync` method appends these nodes to an array that contains all the results from all pages.
 
@@ -82,29 +82,29 @@ One type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displa
 
 Next, convert the `runPagedQueryAsync` method to generate an async stream. First, change the signature of `runPagedQueryAsync` to return an `IAsyncEnumerable<JToken>`, and remove the cancellation token and progress objects from the parameter list as shown in the following code:
 
-[!code-csharp[FinishedSignature](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#UpdateSignature)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetUpdateSignature" :::
 
 The starter code processes each page as the page is retrieved, as shown in the following code:
 
-[!code-csharp[StarterPaging](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#ProcessPage)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetProcessPage" :::
 
 Replace those three lines with the following code:
 
-[!code-csharp[FinishedPaging](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#YieldReturnPage)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetYieldReturnPage" :::
 
 You can also remove the declaration of `finalResults` earlier in this method and the `return` statement that follows the loop you modified.
 
 You've finished the changes to generate an async stream. The finished method should resemble the code below:
 
-[!code-csharp[FinishedGenerate](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#GenerateAsyncStream)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateAsyncStream" :::
 
 Next, you change the code that consumes the collection to consume the async stream. Find the following code in `Main` that processes the collection of issues:
 
-[!code-csharp[EnumerateOldStyle](~/samples/snippets/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#EnumerateOldStyle)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetEnumerateOldStyle" :::
 
 Replace that code with the following `await foreach` loop:
 
-[!code-csharp[FinishedEnumerateAsyncStream](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGEnumerateAsyncStream" :::
 
 The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
 
@@ -129,28 +129,19 @@ By default, stream elements are processed in the captured context. If you want t
 
 Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601%2A?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
 
-```csharp
-int num = 0;
-var cancellation = new CancellationTokenSource();
-await foreach (var issue in runPagedQueryAsync(client, PagedIssueQuery, "docs")
-    .WithCancellation(cancellation.Token))
-{
-    Console.WriteLine(issue);
-    Console.WriteLine($"Received {++num} issues in total");
-}
-```
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
+
 
 You would modify the signature for the async iterator method as follows to optionally support cancellation:
 
 ```csharp
 private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
     string queryText, string repoName, [EnumeratorCancellation] CancellationToken cancellationToken = default)
-
 ```
 
 The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?dipslayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator%601> that makes token passed to `GetAsyncEnumerator` to be visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
 
-You can get the code for the finished tutorial from the [dotnet/samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
+You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) folder.
 
 ## Run the finished application
 

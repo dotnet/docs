@@ -127,7 +127,7 @@ try {
 
 By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
 
-Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
+Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601(System.Collections.Generic.IAsyncEnumerable%600,System.Threading.CancellationToken)?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 

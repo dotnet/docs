@@ -11,11 +11,15 @@ helpviewer_keywords:
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
-This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON).
+This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
 Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting.
+
+The code examples refer to the following class and variants of it:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 ## Namespaces
 

@@ -330,7 +330,7 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
 private static void MyCompletedCallbackImplementation(IntPtr state, int result)
 {
     GCHandle handle = (GCHandle)state;
-    var actualState = (MyCompletedCallbackState)state;
+    var actualState = (MyCompletedCallbackState)(handle.Target);
     handle.Free();
     actualState.MemoryHandle.Dispose();
 

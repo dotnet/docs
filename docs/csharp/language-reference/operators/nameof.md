@@ -1,6 +1,6 @@
 ---
 title: "nameof expression - C# reference"
-ms.date: 07/12/2019
+ms.date: 04/23/2020
 f1_keywords:
   - "nameof_CSharpKeyword"
   - "nameof"
@@ -15,6 +15,10 @@ A `nameof` expression produces the name of a variable, type, or member as the st
 [!code-csharp-interactive[nameof expression](snippets/NameOfOperator.cs#Examples)]
 
 As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
+
+In the case of [verbatim identifiers](../tokens/verbatim.md), the `@` character is not the part of a name, as the following example shows:
+
+[!code-csharp-interactive[nameof verbatim](snippets/NameOfOperator.cs#Verbatim)]
 
 A `nameof` expression is evaluated at compile time and has no effect at run time.
 

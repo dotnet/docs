@@ -7,7 +7,7 @@ metadata:
   title: "Visual Basic docs - get started, tutorials, reference."
   description: "Learn Visual Basic programming in .NET - for beginning developers, developers new to Visual Basic, and experienced Visual Basic developers"
   ms.topic: landing-page # Required
-  ms.date: 11/27/2019
+  ms.date: 04/22/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -17,6 +17,10 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
       - linkListType: get-started
         links:
           - text: Build a "Hello World" app with .NET Core

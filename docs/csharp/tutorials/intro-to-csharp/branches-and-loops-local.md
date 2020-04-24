@@ -276,6 +276,42 @@ Experiment with these yourself. Try each of the following:
 When you're done, let's move on to write some code yourself to
 use what you've learned.
 
+## Created nested loops
+
+A `while`, `do` or `for` loop can be nested inside another loop to create a matrix using the combination of each item in the outer loop with each item in the inner loop. Let's do that to build a set of alphanumeric pairs to represent rows and columns.
+
+One `for` loop can generate the rows:
+
+```csharp
+for (int row = 1; row < 11; row++)
+{
+    Console.WriteLine($"The row is {row}");
+}
+```
+
+Another loop can generate the columns:
+
+```csharp
+for (char column = 'a'; column < 'k'; column++)
+{
+    Console.WriteLine($"The column is {column}");
+}
+```
+
+You can nest one loop inside the other to form pairs:
+
+```csharp
+for (int row = 1; row < 11; row++)
+{
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"The cell is ({row}, {column})");
+    }
+}
+```
+
+You can see that the outer loop increments once for each full run of the inner loop. Reverse the row and column nesting, and see the changes for yourself.
+
 ## Combine branches and loops
 
 Now that you've seen the `if` statement and the looping

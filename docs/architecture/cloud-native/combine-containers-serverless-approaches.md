@@ -1,7 +1,7 @@
 ---
 title: Combining containers and serverless approaches for cloud-native services
-description: Combining Containers and Kubernetes with Serverless Approaches
-ms.date: 04/13/2020
+description: Combining containers and Kubernetes with serverless approaches
+ms.date: 04/23/2020
 ---
 
 # Combining containers and serverless approaches
@@ -12,7 +12,7 @@ Cloud-native applications typically implement services leveraging containers and
 
 ## When does it make sense to use containers with serverless?
 
-By default, your Azure Function has no knowledge of the platform on which it's deployed. In some cases, you may have specific requirements and need to customize the environment on which your function code will run. You'll need a custom image that supports dependencies or a configuration not supported by the default image. In these cases, it makes sense to deploy your function in a custom Docker container.
+Your Azure Function has no knowledge of the platform on which it's deployed. For some scenarios, you may have specific requirements and need to customize the environment on which your function code will run. You'll need a custom image that supports dependencies or a configuration not supported by the default image. In these cases, it makes sense to deploy your function in a custom Docker container.
 
 ## When should you avoid using containers with Azure Functions?
 

@@ -43,7 +43,7 @@ typedef enum {
   
 ## Remarks  
  The garbage collector improves memory management performance by dividing objects into generations based on age. The garbage collector currently uses three generations, numbered 0, 1, and 2, and two special heap segments, one for large objects and one for pinned objects.
- 
+  
  Objects whose size is larger than a threshold value are stored in the large-object heap. Pinned objects can be allocated to the pinned-object heap to avoid the performance cost of allocating them on the normal heaps. Other allocated objects start out belonging to generation 0. All objects that exist after garbage collection occurs in generation 0 are promoted to generation 1. Objects that exist after garbage collection occurs in generation 1 move into generation 2.  
   
  The use of generations means that the garbage collector has to work with only a subset of the allocated objects at any one time.  

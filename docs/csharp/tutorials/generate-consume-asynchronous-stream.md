@@ -68,7 +68,7 @@ These new language features depend on three new interfaces added to .NET Standar
 
 - <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>
 - <xref:System.Collections.Generic.IAsyncEnumerator%601?displayProperty=nameWithType>
-- <xref:System.Collections.Generic.IAsyncDisposable?displayProperty=nameWithType>
+- <xref:System.IAsyncDisposable?displayProperty=nameWithType>
 
 These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts:
 
@@ -104,7 +104,7 @@ Next, you change the code that consumes the collection to consume the async stre
 
 Replace that code with the following `await foreach` loop:
 
-:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenumerateAsyncStream" :::
+:::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateAsyncStream" :::
 
 The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
 
@@ -127,7 +127,7 @@ try {
 
 By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
 
-Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601%2A?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
+Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation%601?displayProperty=nameWithType>, provides you with the ability to support cancellation for an async stream. You could modify the loop enumerating the issues as follows:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 

@@ -237,7 +237,7 @@ Consider the `string` instances "a", "á". "á", and "`👩🏽‍🚒`". If yo
 
 * The string "á" is represented by one scalar value and contains one `char` instance.
 
-  * `U+00E1 LATIN SMALL LETTER E WITH ACUTE`
+  * `U+00E1 LATIN SMALL LETTER A WITH ACUTE`
 
 * The string "á" looks the same as "á" but is represented by two scalar values and contains two `char` instances.
 

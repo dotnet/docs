@@ -373,7 +373,7 @@ reference to the namespace, and start using them.
 
 ##### Hosting controls
 
-The power of XAML Islands extends to most inbox controls, third-party
+The power of XAML Islands extends to most first-party controls, third-party
 controls, and custom controls developed for UWP, which can be integrated into Windows
 Forms and WPF as "Islands" with fully functional UI. The `WindowsXamlHost` control
 for WPF and Windows Forms allows doing this.

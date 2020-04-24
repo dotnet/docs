@@ -12,17 +12,17 @@ face when migrating an existing application from .NET Framework to .NET Core.
 A complex desktop application doesn't work in isolation and needs some kind of
 interaction with subsystems that may reside on the local machine or on a remote
 server. It will probably need some kind of database to connect as a persistence
-storage either local or remotely. With the raise of Internet and
+storage either locally or remotely. With the raise of Internet and
 service-oriented architectures, it's common to have your application
 connected to some sort of service residing on a remote server or in the cloud.
 You may need to access the machine file system to implement some functionality.
 Alternatively, maybe you're using a piece of functionality that resides inside
-a COM object outside your application that is a common scenario if, for
+a COM object outside your application, which is a common scenario if, for
 example, you're integrating Office assemblies in your app.
 
 Besides, there are differences in the API surface that is exposed by .NET
-Framework and .NET Core and some parts of what is existing on .NET Framework is
-no longer available on .NET Core. So, it's important for you to know and take them
+Framework and .NET Core, and some features that are available on .NET Framework 
+aren't available on .NET Core. So, it's important for you to know and take them
 into account when planning a migration.
 
 ## Configuration files
@@ -52,8 +52,8 @@ to use the old fashioned <xref:System.Configuration> namespace, you may consider
 modern <xref:Microsoft.Extensions.Configuration>, which offers a good number of enhancements.
 
 The configuration API supports the concept of configuration provider, which
-defines the data source to be used to load the configuration. There are a
-variety of built-in providers, such as:
+defines the data source to be used to load the configuration. There are different
+kinds of built-in providers, such as:
 
 - In-memory .NET objects
 - INI files
@@ -85,7 +85,7 @@ To migrate from an old-style *app.config* to a new configuration file,
 you should choose between an XML format and a JSON format.
 
 If you choose XML, the conversion is straightforward. Since the content is the same, just rename the *app.config* file
-to a file with XML extension. Then, change the code that references AppSettings to use the ConfigurationBuilder class. That should be an easy change.
+to a file with XML extension. Then, change the code that references AppSettings to use the `ConfigurationBuilder` class. This change should be easy.
 
 If you want to use a JSON format and you don't want to migrate by hand,
 there's a tool called [dotnet-config2json](https://www.nuget.org/packages/dotnet-config2json/) available on .NET Core that
@@ -177,7 +177,7 @@ called Entity Framework Core.
 You can use EF 6.3 and EF Core from both .NET Framework and .NET Core. So, what
 are the decision drivers to help to decide between the two?
 
-EF 6.3 is the first version of EF 6 that can run on .NET Core and work
+EF 6.3 is the first version of EF6 that can run on .NET Core and work
 cross-platform. In fact, the main goal of this release is to make it easier
 to migrate existing applications that use EF6 to .NET Core.
 
@@ -210,8 +210,8 @@ database-specific protocols.
 
 In .NET Core, you can find a new `SqlClient` class, fully compatible with the one
 existing in the .NET Framework but located in the <xref:Microsoft.Data.SqlClient>
-library. You just have to add a dependency for this [NuGet package}(https://www.nuget.org/packages/Microsoft.Data.SqlClient/) and do some renaming
-for the namespaces and everything should work as expected.
+library. You just have to add a reference to the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) 
+NuGet package and do some renaming for the namespaces and everything should work as expected.
 
 #### Microsoft Access
 
@@ -243,8 +243,8 @@ present on Visual Studio 2019. In this step, you must consider activating the
 generation of the synchronous operations to make the client compatible with your
 existing code.
 
-If you find that after migration, there are libraries you need that aren't
-present on .NET Core you can add a reference to the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility)
+After the migration, if you find that there are libraries you need that aren't
+present on .NET Core, you can add a reference to the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility)
 NuGet package and see if the missing functions are there.
 
 If you're using the <xref:System.Net.WebRequest> class to perform web service calls, you may
@@ -254,8 +254,7 @@ System.Net.Http.HttpClient instead.
 ## Consuming a COM Object
 
 Currently, there's no way to add a reference to a COM object from Visual Studio
-2019 to use with .NET Core. So, you have to follow some manual steps and modify
-the *.csproj* file for the project.
+2019 to use with .NET Core. So, you have to manually modify the project file. 
 
 Insert a `COMReference` structure inside the project file like in the following example:
 
@@ -279,8 +278,7 @@ Several technologies available to .NET Framework libraries aren't available for
 the alternative approaches outlined in this section.
 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously
-available only for .NET Framework. It can be used from both .NET Core as well as
-.NET Standard.
+available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 
 For more information on API compatibility, the CoreFX team maintains a list of
 behavioral changes/compat breaks and deprecated/legacy APIs at GitHub.
@@ -320,7 +318,7 @@ Sandboxing, which relies on the runtime or the framework to constrain which
 resources a managed application or library uses or runs isn't supported on .NET
 Core.
 
-Use security boundaries provided by the operating system, such as
+Use security boundaries that are provided by the operating system, such as
 virtualization, containers, or user accounts for running processes with the
 minimum set of privileges.
 
@@ -330,6 +328,6 @@ Similar to CAS, Security Transparency separates sandboxed
 code from security critical code in a declarative fashion but is no longer
 supported as a security boundary.
 
-Use security boundaries provided by the operating system, such as
+Use security boundaries that are provided by the operating system, such as
 virtualization, containers, or user accounts for running processes with the
 least set of privileges.

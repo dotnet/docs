@@ -26,7 +26,17 @@ dotnet restore -h|--help
 
 ## Description
 
-The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are executed in parallel.
+The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file.  In most cases, you don't need to explicitly use the `dotnet restore` command, since a NuGet restore is run implicitly if necessary when you run the following commands:
+
+- [`dotnet new`](dotnet-new.md)
+- [`dotnet build`](dotnet-build.md)
+- [`dotnet build-server`](dotnet-build-server.md)
+- [`dotnet run`](dotnet-run.md)
+- [`dotnet test`](dotnet-test.md)
+- [`dotnet publish`](dotnet-publish.md)
+- [`dotnet pack`](dotnet-pack.md)
+
+Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands to disable implicit restore.
 
 ### Specify feeds
 
@@ -39,9 +49,9 @@ You can override the *nuget.config* feeds with the `-s` option.
 
 For information about how to use authenticated feeds, see [Consuming packages from authenticated feeds](/nuget/consume-packages/consuming-packages-authenticated-feeds).
 
-### Package cache
+### Global packages folder
 
-For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems. For example, */home/user1* on Linux or *C:\Users\user1* on Windows.
+For dependencies, you can specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems. For example, */home/user1* on Linux or *C:\Users\user1* on Windows.
 
 ### Project-specific tooling
 
@@ -64,22 +74,6 @@ There are three specific settings that `dotnet restore` ignores:
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 
   This setting isn't applicable as [NuGet doesn't yet support cross-platform verification](https://github.com/NuGet/Home/issues/7939) of trusted packages.
-
-## Implicit restore
-
-The `dotnet restore` command is run implicitly if necessary when you run the following commands:
-
-- [`dotnet new`](dotnet-new.md)
-- [`dotnet build`](dotnet-build.md)
-- [`dotnet build-server`](dotnet-build-server.md)
-- [`dotnet run`](dotnet-run.md)
-- [`dotnet test`](dotnet-test.md)
-- [`dotnet publish`](dotnet-publish.md)
-- [`dotnet pack`](dotnet-pack.md)
-
-In most cases, you don't need to explicitly use the `dotnet restore` command.
-
-Sometimes, it might be inconvenient to run `dotnet restore` implicitly. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent `dotnet restore` from running implicitly, you can use the `--no-restore` flag with any of these commands to disable implicit restore.
 
 ## Arguments
 

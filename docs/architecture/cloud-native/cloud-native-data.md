@@ -1,11 +1,11 @@
 ---
-title: Data patterns
+title: Cloud-native data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 04/21/2020
+ms.date: 04/24/2020
 ---
 
-# Data patterns
+# Cloud-native data
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

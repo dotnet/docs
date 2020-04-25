@@ -53,7 +53,7 @@ Participants and Reviewers:
 
 Editors:
 
-> **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft
+> **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
 ## Who should use this guide
 

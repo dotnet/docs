@@ -206,7 +206,7 @@ For example, the .NET Core SDK includes templates for a console app targeting .N
 01. Install the .NET Core 3.0 project templates.
 
     ```dotnetcli
-    dotnet new -i Microsoft.DotNet.Common.ProjectTemplates.2.2
+    dotnet new -i Microsoft.DotNet.Common.ProjectTemplates.3.0
     ```
 
 01. Try creating the app a second time.

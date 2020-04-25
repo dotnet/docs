@@ -1,11 +1,11 @@
 ---
-title: Cloud-native data
+title: Distributed data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
 ms.date: 04/24/2020
 ---
 
-# Cloud-native data
+# Distributed data
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

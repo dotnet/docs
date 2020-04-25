@@ -50,6 +50,10 @@ Participants and Reviewers:
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
 >
 > **Jeremy Likeness**, Senior Program Manager, .NET team, Microsoft
+>
+> **Cecil Phillip**, Senior Cloud Advocate, Microsoft
+
+Learn more about eShopOnContainers
 
 Editors:
 

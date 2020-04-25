@@ -174,7 +174,7 @@ Currently installed items:
       dotnet new -u c:\code\nuget-packages\some-folder
 ```
 
-## Install templates for older SDKs
+## Install templates from other SDKs
 
 If you've installed each version of the SDK sequentially, for example you installed SDK 2.0, then SDK 2.1, and so on, you'll have every SDK's templates installed. However, if you start with a later SDK version, like 3.1, only the templates for [LTS (long term support) releases](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) are included, which at the time of the SDK 3.1 release is SDK 2.1 and SDK 3.1. Templates for any other release aren't included.
 

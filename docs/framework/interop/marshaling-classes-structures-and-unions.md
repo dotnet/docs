@@ -36,6 +36,7 @@ The following table lists marshaling options for classes, structures, and unions
 |Array of structures with integers and strings by reference.|Passes an array of structures that contain integers and strings as an Out parameter. The called function allocates memory for the array.|[OutArrayOfStructs Sample](#outarrayofstructs-sample)|
 |Unions with value types.|Passes unions with value types (integer and double).|[Unions sample](#unions-sample)|
 |Unions with mixed types.|Passes unions with mixed types (integer and string).|[Unions sample](#unions-sample)|
+|Struct with platform specific layout.|Passes type with native packing definitions.|[Platform sample](#platform-sample)|
 |Null values in structure.|Passes a null reference (**Nothing** in Visual Basic) instead of a reference to a value type.|[HandleRef sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
 
 ## Structures sample
@@ -215,6 +216,69 @@ The `NativeMethods` class contains the prototypes for the `TestUnion` and `TestU
 [!code-cpp[Conceptual.Interop.Marshaling#29](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.interop.marshaling/cpp/unions.cpp#29)]
 [!code-csharp[Conceptual.Interop.Marshaling#29](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/unions.cs#29)]
 [!code-vb[Conceptual.Interop.Marshaling#29](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/unions.vb#29)]
+
+## Platform sample
+
+In some scenarios `struct` and `union` layouts can be different depending on the targeted platform. For example, consider the [`STRRET`](https://docs.microsoft.com/windows/win32/api/shtypes/ns-shtypes-strret) type when defined in a COM scenario:
+
+```c++
+#include <pshpack8.h> /* Defines the packing of the struct */
+typedef struct _STRRET
+    {
+    UINT uType;
+    /* [switch_is][switch_type] */ union
+        {
+        /* [case()][string] */ LPWSTR pOleStr;
+        /* [case()] */ UINT uOffset;
+        /* [case()] */ char cStr[ 260 ];
+        }  DUMMYUNIONNAME;
+    }  STRRET;
+#include <poppack.h>
+```
+
+The above `struct` is being declared with Windows' headers that influence the memory layout of the type. When defined in a managed environment these layout details are needed to properly interoperate with native code.
+
+The correct managed definition of this type in a 32-bit process would be:
+
+``` CSharp
+[StructLayout(LayoutKind.Explicit, Size = 264)]
+public struct STRRET_32
+{
+    [FieldOffset(0)]
+    public uint uType;
+
+    [FieldOffset(4)]
+    public IntPtr pOleStr;
+
+    [FieldOffset(4)]
+    public uint uOffset;
+
+    [FieldOffset(4)]
+    public IntPtr cStr;
+}
+```
+
+Where as on a 64-bit process, the correct layout would be:
+
+``` CSharp
+[StructLayout(LayoutKind.Explicit, Size = 272)]
+public struct STRRET_64
+{
+    [FieldOffset(0)]
+    public uint uType;
+
+    [FieldOffset(8)]
+    public IntPtr pOleStr;
+
+    [FieldOffset(8)]
+    public uint uOffset;
+
+    [FieldOffset(8)]
+    public IntPtr cStr;
+}
+```
+
+Notice not only the size but also the field offsets are different. Failure to properly consider the native layout in an interop scenario can result in random crashes or worse, incorrect computation.
 
 ## SysTime sample
 

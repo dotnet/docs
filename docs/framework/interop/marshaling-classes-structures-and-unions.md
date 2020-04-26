@@ -280,6 +280,20 @@ public struct STRRET_64
 
 Notice not only the size but also the field offsets are different. Failure to properly consider the native layout in an interop scenario can result in random crashes or worse, incorrect computation.
 
+.NET assemblies by default can run in both a 32-bit and 64-bit version of the .NET runtime so deciding which of the above definitions to use must be deferred until run time. An example of how to make this decision is below.
+
+```CSharp
+if (IntPtr.Size == 8)
+{
+    // Use the STRRET_64 definition
+}
+else
+{
+    Debug.Assert(IntPtr.Size == 4);
+    // Use the STRRET_32 definition
+}
+```
+
 ## SysTime sample
 
 This sample demonstrates how to pass a pointer to a class to an unmanaged function that expects a pointer to a structure.

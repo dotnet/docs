@@ -18,7 +18,7 @@ scenarios like tablets and touch devices and to provide the best experience for
 users for a Microsoft operating system ever. For example, you can:
 
 - Sign in with your face using Windows Hello.
-- Use a pen to draw or handwrite text that is automatically recognized and digitalized. 
+- Use a pen to draw or handwrite text that is automatically recognized and digitalized.
 - Run locally customized AI models built on the cloud using WinML.
 
 All these features are enabled for Windows developers through Windows Runtime (WinRT)

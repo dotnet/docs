@@ -95,7 +95,7 @@ If that doesn't work, you can run a manual install with the following commands.
 
 ```bash
 sudo apt-get install -y gpg
-wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
+wget O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget https://packages.microsoft.com/config/ubuntu/19.10/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list

@@ -112,7 +112,7 @@ In this section, you can find a walkthrough on how to integrate Toast Notificati
 
 Let's take an existing WPF sample app that reads files and shows its contents on the screen. The goal is to display a Toast Notification when the application starts.
 
-![Screenshot of the sample application running](media\windows-migration\sample-application.png)
+![Screenshot of the sample application running](./media/windows-migration/sample-application.png)
 
 First, you should check in the following link whether the Windows 10 API that you'll use requires a Package Identity:
 
@@ -120,7 +120,7 @@ First, you should check in the following link whether the Windows 10 API that yo
 
 Our sample will use the <xref:Windows.UI.Notifications.Notification?displayProperty=nameWithType> API that requires a packaged identity:
 
-![Notification class in Microsoft documentation](media\windows-migration\notification-class-documentation.png)
+![Notification class in Microsoft documentation](./media/windows-migration/notification-class-documentation.png)
 
 To access the WinRT API, add a reference to the `Microsoft.Windows.SDK.Contracts` NuGet package and this package will do the
 magic behind the scenes (see details at <https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktop-application-just-got-easier/>).
@@ -142,37 +142,37 @@ private void ShowNotification(string title, string content, string image)
 
 Although the project builds, there are errors because the Notifications API requires a Package Identity and you didn't provide it. Adding a Windows Packaging Project to the solution will fix the issue:
 
-![Screenshot of the Add New Project dialog in Visual Studio](media\windows-migration\add-packaging-project.png)
+![Screenshot of the Add New Project dialog in Visual Studio](./media/windows-migration/add-packaging-project.png)
 
 Select the minimum Windows version you want to support and the version you're targeting. Not all the WinRT APIs are supported in all Windows 10 versions. Each Windows 10 update adds new APIs that are only available from this version; down-level support isn't available.
 
-![Selecting minimum Windows version](media\windows-migration\select-versions.png)
+![Selecting minimum Windows version](./media/windows-migration/select-versions.png)
 
 Next step is to add the WPF application to the Windows Packaging Project by adding a project reference:
 
-![Adding WPF application to the Windows Packaging Project](media\windows-migration\add-application.png)
+![Adding WPF application to the Windows Packaging Project](./media/windows-migration/add-application.png)
 
-![Reference Manager](media\windows-migration\reference-manager.png)
+![Reference Manager](./media/windows-migration/reference-manager.png)
 
 A Windows Packaging Project can package several apps so you should set which one is the Entry Point:
 
-![Setting entry point](media\windows-migration\set-entry-point.png)
+![Setting entry point](./media/windows-migration/set-entry-point.png)
 
 Next step is to set the WPF Project as the startup Project in the solution configuration. You can press F5 to compile and build and see the results.
 
-![Sample application running and showing results](media\windows-migration\sample-app-result.png)
+![Sample application running and showing results](./media/windows-migration/sample-app-result.png)
 
 Let's generate the package so you can install your app. Right click on **Store** > **Create App Packages**.
 
-![Create App Packages dialog](media\windows-migration\create-app-packages.png)
+![Create App Packages dialog](./media/windows-migration/create-app-packages.png)
 
 Select the sideloading option to deploy the app from your machine:
 
-![Selecting sideloading option](media\windows-migration\select-sideloading-option.png)
+![Selecting sideloading option](./media/windows-migration/select-sideloading-option.png)
 
 Select the application architecture of your app:
 
-![Selecting the application architecture](media\windows-migration\select-app-architecture.png)
+![Selecting the application architecture](./media/windows-migration/select-app-architecture.png)
 
 Finally, create the package by clicking on **Create**.
 
@@ -180,7 +180,7 @@ Finally, create the package by clicking on **Create**.
 
 XAML Islands are a set of components that enable Windows desktop developers to use UWP XAML controls on their existing Win32 applications, including Windows Forms and WPF.
 
-![Structure of XAML Islands](media\windows-migration\xaml-islands.png)
+![Structure of XAML Islands](./media/windows-migration/xaml-islands.png)
 
 You can image your Win32 app with your standard controls and among them an "island" of UWP UI containing controls from the modern world. The concept is similar as having an iFrame inside a web page that shows content from a `different page.`
 
@@ -304,11 +304,11 @@ Since Windows 8, the Windows UI platform, including the XAML UI framework, vi
 
 Starting with WinUI 2 in 2018, Microsoft started shipping some new XAML UI controls and features as separate NuGet packages that build on top of the UWP SDK.
 
-![Structure of WinUI 2.0](media\windows-migration\winui2.png)
+![Structure of WinUI 2.0](./media/windows-migration/winui2.png)
 
 WinUI 3 is under active development and will greatly expand the scope of WinUI to include the full UI platform, which will be fully decoupled from the UWP SDK:
 
-![Structure of WinUI 3.0](media\windows-migration\winui3.png)
+![Structure of WinUI 3.0](./media/windows-migration/winui3.png)
 
 XAML framework will now be developed on GitHub and shipped out of band as [NuGet](/nuget/what-is-nuget) packages.
 

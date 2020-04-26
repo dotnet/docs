@@ -21,7 +21,7 @@ a COM object outside your application, which is a common scenario if, for
 example, you're integrating Office assemblies in your app.
 
 Besides, there are differences in the API surface that is exposed by .NET
-Framework and .NET Core, and some features that are available on .NET Framework 
+Framework and .NET Core, and some features that are available on .NET Framework
 aren't available on .NET Core. So, it's important for you to know and take them
 into account when planning a migration.
 
@@ -210,7 +210,7 @@ database-specific protocols.
 
 In .NET Core, you can find a new `SqlClient` class, fully compatible with the one
 existing in the .NET Framework but located in the <xref:Microsoft.Data.SqlClient>
-library. You just have to add a reference to the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) 
+library. You just have to add a reference to the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/)
 NuGet package and do some renaming for the namespaces and everything should work as expected.
 
 #### Microsoft Access
@@ -254,7 +254,7 @@ System.Net.Http.HttpClient instead.
 ## Consuming a COM Object
 
 Currently, there's no way to add a reference to a COM object from Visual Studio
-2019 to use with .NET Core. So, you have to manually modify the project file. 
+2019 to use with .NET Core. So, you have to manually modify the project file.
 
 Insert a `COMReference` structure inside the project file like in the following example:
 

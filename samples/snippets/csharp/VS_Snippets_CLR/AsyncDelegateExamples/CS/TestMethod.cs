@@ -1,13 +1,13 @@
 ﻿//<Snippet1>
 using System;
-using System.Threading; 
+using System.Threading;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncDemo 
+    public class AsyncDemo
     {
         // The method to be executed asynchronously.
-        public string TestMethod(int callDuration, out int threadId) 
+        public string TestMethod(int callDuration, out int threadId)
         {
             Console.WriteLine("Test method begins.");
             Thread.Sleep(callDuration);

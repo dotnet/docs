@@ -119,8 +119,8 @@
     href: programming-guide/types/index.md
   - name: Nullable reference types
     href: nullable-references.md
-  - name: Describe nullable APIs using attributes and constraints
-    href: nullable-attributes.md
+  - name: Choose a strategy for enabling nullable reference types
+    href: nullable-migration-strategies.md
   - name: Namespaces
     href: programming-guide/namespaces/index.md
   - name: Basic Types
@@ -374,16 +374,10 @@
         href: programming-guide/concepts/attributes/index.md
       - name: Creating Custom Attributes
         href: programming-guide/concepts/attributes/creating-custom-attributes.md
-      - name: AttributeUsage
-        href: programming-guide/concepts/attributes/attributeusage.md
       - name: Accessing Attributes by Using Reflection
         href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
       - name: "How to create a C/C++ union by using attributes"
         href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
-      - name: Common Attributes
-        href: programming-guide/concepts/attributes/common-attributes.md
-    - name: Caller information
-      href: programming-guide/concepts/caller-information.md
     - name: Collections
       href: programming-guide/concepts/collections.md
     - name: Covariance and contravariance
@@ -514,7 +508,7 @@
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
         - name: LINQ and Reflection
-          href: programming-guide/concepts/linq/linq-and-reflection.md
+          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: "How to query an assembly's metadata with Reflection (LINQ)"
           href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: LINQ and File Directories
@@ -1225,6 +1219,8 @@
         href: programming-guide/xmldoc/exception.md
       - name: <include>
         href: programming-guide/xmldoc/include.md
+      - name: <inheritdoc>
+        href: programming-guide/xmldoc/inheritdoc.md  
       - name: <list>
         href: programming-guide/xmldoc/list.md
       - name: <para>
@@ -1347,7 +1343,7 @@
           displayName: "enum, bit flags, bit field"
         - name: Structure types
           href: language-reference/builtin-types/struct.md
-          displayName: "struct type, readonly"
+          displayName: "struct type, readonly struct, ref struct, readonly ref struct"
         - name: Nullable value types
           href: language-reference/builtin-types/nullable-value-types.md
           displayName: "? token, ? symbol"
@@ -1683,6 +1679,19 @@
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+  - name: Attributes read by the compiler
+    items:
+    - name: Global attributes
+      displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
+    - name: General
+      displayName: Conditional, Obsolete, AttributeUsage
+      href: language-reference/attributes/general.md
+    - name: Caller information
+      displayName: CallerFilePath, CallerLineNumber, CallerMemberName
+      href: language-reference/attributes/caller-information.md
+    - name: Nullable static analysis
+      displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
+      href: language-reference/attributes/nullable-analysis.md
   - name: C# preprocessor directives
     items:
     - name: Overview

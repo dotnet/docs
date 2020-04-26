@@ -10,7 +10,7 @@ namespace Samples
         static void Main(string[] args)
         {
             //<snippet1>
-            //  Create an instance of the T:System.ServiceModel.BasicHttpBinding 
+            //  Create an instance of the T:System.ServiceModel.BasicHttpBinding
             //  class and set its security mode to message-level security.
             BasicHttpBinding binding = new BasicHttpBinding();
             binding.Security.Message.ClientCredentialType = BasicHttpMessageCredentialType.Certificate;
@@ -18,9 +18,9 @@ namespace Samples
             //</snippet1>
 
             //<snippet2>
-            //  Create a custom binding from the binding 
+            //  Create a custom binding from the binding
             CustomBinding cb = new CustomBinding(binding);
-            //  Get the BindingElementCollection from this custom binding 
+            //  Get the BindingElementCollection from this custom binding
             BindingElementCollection bec = cb.Elements();
             //</snippet2>
 

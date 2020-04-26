@@ -22,7 +22,7 @@ namespace HostingWpfUserControlInWf
 
         // To use this handler put Loaded="UserControlLoaded" in root element of .xaml file.
         // private void UserControlLoaded(object sender, RoutedEventArgs e) {}
-        // Sample event handler:  
+        // Sample event handler:
         // private void ButtonClick(object sender, RoutedEventArgs e) {}
     }
 }

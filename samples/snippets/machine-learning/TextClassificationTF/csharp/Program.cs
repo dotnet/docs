@@ -18,7 +18,7 @@ namespace TextClassificationTF
 
         static void Main(string[] args)
         {
-            // Create MLContext to be shared across the model creation workflow objects 
+            // Create MLContext to be shared across the model creation workflow objects
             // <SnippetCreateMLContext>
             MLContext mlContext = new MLContext();
             // </SnippetCreateMLContext>
@@ -116,9 +116,9 @@ namespace TextClassificationTF
             // </SnippetCreateTestData>
 
             // Predict with TensorFlow pipeline.
-            // <SnippetPredict>  
+            // <SnippetPredict>
             var sentimentPrediction = engine.Predict(review);
-            // </SnippetPredict>  
+            // </SnippetPredict>
 
             // <SnippetDisplayPredictions>
             Console.WriteLine("Number of classes: {0}", sentimentPrediction.Prediction.Length);
@@ -126,10 +126,10 @@ namespace TextClassificationTF
             // </SnippetDisplayPredictions>
 
             /////////////////////////////////// Expected output ///////////////////////////////////
-            // 
+            //
             // Name: Features, Type: System.Int32, Size: 600
             // Name: Prediction/Softmax, Type: System.Single, Size: 2
-            // 
+            //
             // Number of classes: 2
             // Is sentiment/review positive ? Yes
             // Prediction Confidence: 0.65

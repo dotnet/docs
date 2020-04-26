@@ -23,7 +23,7 @@ namespace operators
             East,
             West
         }
-    
+
         public static void Main()
         {
             var direction = Directions.Right;
@@ -123,9 +123,9 @@ namespace operators
                 System.Array { Length : 1} array => (T)array.GetValue(0),
                 System.Array { Length : 2} array => (T)array.GetValue(1),
                 System.Array array               => (T)array.GetValue(2),
-                IEnumerable<T> list 
+                IEnumerable<T> list
                     when !list.Any()             => default(T),
-                IEnumerable<T> list 
+                IEnumerable<T> list
                     when list.Count() < 3        => list.Last(),
                 IList<T> list                    => list[2],
                 null                             => throw new ArgumentNullException(nameof(sequence)),

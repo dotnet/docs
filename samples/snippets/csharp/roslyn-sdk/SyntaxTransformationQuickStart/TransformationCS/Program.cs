@@ -59,8 +59,8 @@ namespace TransformationCS
             MetadataReference[] references = { mscorlib, codeAnalysis, csharpCodeAnalysis };
 
             return CSharpCompilation.Create("TransformationCS",
-                sourceTrees, 
-                references, 
+                sourceTrees,
+                references,
                 new CSharpCompilationOptions(OutputKind.ConsoleApplication));
             // </SnippetCreateTestCompilation>
         }

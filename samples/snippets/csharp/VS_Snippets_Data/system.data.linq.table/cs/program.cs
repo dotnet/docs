@@ -89,7 +89,7 @@ foreach (var detail in deleteOrderDetails)
 {
     db.OrderDetails.DeleteOnSubmit(detail);
 }
-                        
+
 try
 {
     db.SubmitChanges();

@@ -10,14 +10,14 @@ using System.Resources;
    private int carYear;
    private int carDoors;
    private int carCylinders;
-   
-   public Automobile(string make, string model, int year) :  
-                     this(make, model, year, 0, 0)   
+
+   public Automobile(string make, string model, int year) :
+                     this(make, model, year, 0, 0)
    { }
-   
-   public Automobile(string make, string model, int year, 
+
+   public Automobile(string make, string model, int year,
                      int doors, int cylinders)
-   {                     
+   {
       this.carMake = make;
       this.carModel = model;
       this.carYear = year;
@@ -27,23 +27,23 @@ using System.Resources;
 
    public string Make {
       get { return this.carMake; }
-   }       
-   
+   }
+
    public string Model {
       get {return this.carModel; }
-   }       
-   
+   }
+
    public int Year {
       get { return this.carYear; }
-   }       
-   
+   }
+
    public int Doors {
       get { return this.carDoors; }
-   }       
-   
+   }
+
    public int Cylinders {
       get { return this.carCylinders; }
-   }       
+   }
 }
 
 public class Example
@@ -62,9 +62,9 @@ public class Example
          resx.AddResource("HeaderString3", "Year");
          resx.AddResource("HeaderString4", "Doors");
          resx.AddResource("HeaderString5", "Cylinders");
-         resx.AddResource("Information", SystemIcons.Information); 
-         resx.AddResource("EarlyAuto1", car1);  
-         resx.AddResource("EarlyAuto2", car2);  
+         resx.AddResource("Information", SystemIcons.Information);
+         resx.AddResource("EarlyAuto1", car1);
+         resx.AddResource("EarlyAuto2", car2);
       }
    }
 }

@@ -136,7 +136,7 @@ namespace operators
             // <SnippetShiftCount>
             int count1 = 0b_0000_0001;
             int count2 = 0b_1110_0001;
-            
+
             int a = 0b_0001;
             Console.WriteLine($"{a} << {count1} is {a << count1}; {a} << {count2} is {a << count2}");
             // Output:

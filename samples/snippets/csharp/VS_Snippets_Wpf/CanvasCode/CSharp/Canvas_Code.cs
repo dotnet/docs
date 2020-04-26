@@ -10,7 +10,7 @@ namespace SDKSample
     public class app : System.Windows.Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -21,11 +21,11 @@ namespace SDKSample
         {
             // Create the application's main window
             mainWindow = new Window();
-            
+
             // Create a canvas sized to fill the window
             Canvas myCanvas = new Canvas();
             myCanvas.Background = Brushes.LightSteelBlue;
-            
+
             // Add a "Hello World!" text element to the Canvas
             TextBlock txt1 = new TextBlock();
             txt1.FontSize = 14;
@@ -33,7 +33,7 @@ namespace SDKSample
             Canvas.SetTop(txt1, 100);
             Canvas.SetLeft(txt1, 10);
             myCanvas.Children.Add(txt1);
-            
+
             // Add a second text element to show how absolute positioning works in a Canvas
             TextBlock txt2 = new TextBlock();
             txt2.FontSize = 22;
@@ -47,7 +47,7 @@ namespace SDKSample
         }
     }
     //</Snippet1>
-    
+
     internal static class EntryClass
     {
         [System.STAThread()]

@@ -6,13 +6,13 @@ using System.Text.RegularExpressions;
 public class RegexUtilities
 {
    bool invalid = false;
-   
+
    public bool IsValidEmail(string strIn)
    {
        invalid = false;
        if (String.IsNullOrEmpty(strIn))
           return false;
-       
+
        // Use IdnMapping class to convert Unicode domain names.
        try {
           strIn = Regex.Replace(strIn, @"(@)(.+)$", this.DomainMapper,
@@ -21,22 +21,22 @@ public class RegexUtilities
        catch (RegexMatchTimeoutException) {
          return false;
        }
-       
-       if (invalid) 
+
+       if (invalid)
           return false;
-       
+
        // Return true if strIn is in valid email format.
        try {
-          return Regex.IsMatch(strIn, 
-                @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" + 
-                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,24}))$", 
+          return Regex.IsMatch(strIn,
+                @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
+                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,24}))$",
                 RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
-       }  
+       }
        catch (RegexMatchTimeoutException) {
           return false;
        }
    }
-   
+
    private string DomainMapper(Match match)
    {
       // IdnMapping class with default property values.
@@ -47,8 +47,8 @@ public class RegexUtilities
          domainName = idn.GetAscii(domainName);
       }
       catch (ArgumentException) {
-         invalid = true;      
-      }      
+         invalid = true;
+      }
       return match.Groups[1].Value + domainName;
    }
 }
@@ -60,11 +60,11 @@ public class Application
    public static void Main()
    {
       RegexUtilities util = new RegexUtilities();
-      string[] emailAddresses = { "david.jones@proseware.com", "d.j@server1.proseware.com", 
-                                  "jones@ms1.proseware.com", "j.@server1.proseware.com", 
-                                  "j@proseware.com9", "js#internal@proseware.com", 
-                                  "j_9@[129.126.118.1]", "j..s@proseware.com", 
-                                  "js*@proseware.com", "js@proseware..com", 
+      string[] emailAddresses = { "david.jones@proseware.com", "d.j@server1.proseware.com",
+                                  "jones@ms1.proseware.com", "j.@server1.proseware.com",
+                                  "j@proseware.com9", "js#internal@proseware.com",
+                                  "j_9@[129.126.118.1]", "j..s@proseware.com",
+                                  "js*@proseware.com", "js@proseware..com",
                                   "js@proseware.com9", "j.s@server1.proseware.com" };
 
       foreach (var emailAddress in emailAddresses) {
@@ -72,7 +72,7 @@ public class Application
             Console.WriteLine("Valid: {0}", emailAddress);
          else
             Console.WriteLine("Invalid: {0}", emailAddress);
-      }                                            
+      }
    }
 }
 // The example displays the following output:

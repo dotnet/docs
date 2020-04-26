@@ -61,9 +61,9 @@ namespace Samples
         {
             FileStream stream = new FileStream("myfile.xml",FileMode.Open);
             XmlDictionaryReader xdr =
-                   XmlDictionaryReader.CreateTextReader(stream, 
+                   XmlDictionaryReader.CreateTextReader(stream,
                                new XmlDictionaryReaderQuotas());
-            MessageVersion ver = 
+            MessageVersion ver =
                 OperationContext.Current.IncomingMessageVersion;
             return Message.CreateMessage(ver,"GetDataResponse",xdr);
         }
@@ -88,7 +88,7 @@ namespace Samples
         public void PutData(Message m)
         {
             // Not implemented.
-        }       
+        }
     }
     //</snippet4>
 
@@ -157,14 +157,14 @@ namespace Samples2
         {
             //Copy the message to a buffer.
             MessageBuffer mb = m.CreateBufferedCopy(65536);
-            
+
             //Forward to multiple recipients.
             foreach (IOutputChannel channel in forwardingAddresses)
             {
                 Message copy = mb.CreateMessage();
                 channel.Send(copy);
             }
-            
+
             //Log to a file.
             FileStream stream = new FileStream("log.xml",FileMode.Append);
             mb.WriteMessage(stream);
@@ -203,7 +203,7 @@ namespace Samples2
                 writer.WriteValue(r.Next(1,20));
                 writer.WriteEndElement();
             }
-        }    
+        }
         //code omitted…
     //</snippet9>
 
@@ -230,28 +230,28 @@ namespace Samples2
         {
         return new RandomNumbersXmlReader();
         }
-        
+
         override protected void OnWriteBodyContents(XmlDictionaryWriter writer)
         {
             XmlDictionaryReader xdr = OnGetReaderAtBodyContents();
-            writer.WriteNode(xdr, true); 
-        }    
+            writer.WriteNode(xdr, true);
+        }
         public override MessageHeaders Headers
         {
             get { throw new Exception("The method or operation is not implemented."); }
         }
-        
+
         public override MessageProperties Properties
         {
             get { throw new Exception("The method or operation is not implemented."); }
         }
-        
+
         public override MessageVersion Version
         {
             get { throw new Exception("The method or operation is not implemented."); }
         }
     }
-    
+
     public class RandomNumbersXmlReader : XmlDictionaryReader
     {
         //code to serve up 100000 random numbers in XML form omitted…

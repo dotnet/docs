@@ -32,7 +32,7 @@ Historically, if you wanted to get a customized experience from an existing cont
 
 - **Triggers.** A <xref:System.Windows.Trigger> allows you to dynamically change the appearance and behavior of a control without creating a new control. For example, suppose you have multiple <xref:System.Windows.Controls.ListBox> controls in your application and want the items in each <xref:System.Windows.Controls.ListBox> to be bold and red when they are selected. Your first instinct might be to create a class that inherits from <xref:System.Windows.Controls.ListBox> and override the <xref:System.Windows.Controls.Primitives.Selector.OnSelectionChanged%2A> method to change the appearance of the selected item, but a better approach is to add a trigger to a style of a <xref:System.Windows.Controls.ListBoxItem> that changes the appearance of the selected item. A trigger enables you to change property values or take actions based on the value of a property. An <xref:System.Windows.EventTrigger> enables you to take actions when an event occurs.
 
-For more information about styles, templates, and triggers, see [Styling and Templating](styling-and-templating.md).
+For more information about styles, templates, and triggers, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 In general, if your control mirrors the functionality of an existing control, but you want the control to look different, you should first consider whether you can use any of the methods discussed in this section to change the existing control's appearance.
 

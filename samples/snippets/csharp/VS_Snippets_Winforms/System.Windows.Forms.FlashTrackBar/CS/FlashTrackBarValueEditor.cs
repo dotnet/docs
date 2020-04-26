@@ -11,7 +11,7 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
     using System.Windows.Forms.ComponentModel;
     using System.Windows.Forms.Design;
 
-    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")] 
+    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class FlashTrackBarValueEditor : System.Drawing.Design.UITypeEditor {
 
         private IWindowsFormsEditorService edSvc = null;

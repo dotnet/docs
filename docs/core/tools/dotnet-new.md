@@ -14,10 +14,14 @@ ms.date: 04/10/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name]
-    [--nuget-source] [-o|--output] [-u|--uninstall] [--update-apply] [--update-check] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
+dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install {PATH|NUGET_ID}]
+    [-lang|--language {C#|F#|VB}] [-n|--name <OUTPUT_NAME>]
+    [--nuget-source <SOURCE>] [-o|--output <OUTPUT_DIRECTORY>]
+    [-u|--uninstall] [--update-apply] [--update-check] [Template options]
+
+dotnet new <TEMPLATE> [-l|--list] [--type <TYPE>]
+
+dotnet new -h|--help
 ```
 
 ## Description
@@ -25,6 +29,10 @@ dotnet new [-h|--help]
 The `dotnet new` command creates a .NET Core project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
+
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 ## Arguments
 
@@ -115,7 +123,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   The name for the created output. If no name is specified, the name of the current directory is used.
 
-- **`--nuget-source`**
+- **`--nuget-source <SOURCE>`**
 
   Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
 
@@ -123,9 +131,9 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Location to place the generated output. The default is the current directory.
 
-- **`--type`**
+- **`--type <TYPE>`**
 
-  Filters templates based on available types. Predefined values are "project", "item", or "other".
+  Filters templates based on available types. Predefined values are `project`, `item`, or `other`.
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 

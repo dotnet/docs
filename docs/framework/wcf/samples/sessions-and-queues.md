@@ -129,7 +129,7 @@ public static void Main()
     </service>  
   </services>  
   ...  
-<system.serviceModel>  
+</system.serviceModel>  
 ```  
   
  The client creates a transaction scope. All messages in the session are sent to the queue within the transaction scope, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling <xref:System.Transactions.TransactionScope.Complete%2A>.  

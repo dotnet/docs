@@ -56,7 +56,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
                     // <Snippet7>
                     cf.Endpoint.Behaviors.Add(new WebHttpBehavior());
                     // </Snippet7>
-                    
+
                     // <Snippet8>
                     IService channel = cf.CreateChannel();
 
@@ -82,7 +82,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                 Console.WriteLine("Press <ENTER> to terminate");
                 Console.ReadLine();
-                
+
                 // <Snippet9>
                 host.Close();
                 // </Snippet9>

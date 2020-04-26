@@ -43,12 +43,12 @@ namespace InRefOutModifier
             Console.WriteLine(argNumber);
             Console.WriteLine(argMessage);
             Console.WriteLine(argDefault == null);
-            
+
             // The example displays the following output:
             //      44
             //      I've been returned
             //      True
-            
+
             // </Snippet3>
         }
 

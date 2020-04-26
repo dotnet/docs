@@ -24,7 +24,7 @@ class Example
       Type generic1 = typeof(Dictionary<,>);
       DisplayGenericType(generic1);
 
-      // Get the type that represents a constructed generic type and its 
+      // Get the type that represents a constructed generic type and its
       // generic type definition.
       Dictionary<string, Example> d1 = new Dictionary<string, Example>();
       Type constructed1 = d1.GetType();
@@ -50,8 +50,8 @@ class Example
       b.Text += String.Format("   Are the generic definitions equal? {0}\n",
                               (generic1 == constructed2.GetGenericTypeDefinition()));
 
-      // Demonstrate the DisplayGenericType and 
-      // DisplayGenericParameter methods with the Test class 
+      // Demonstrate the DisplayGenericType and
+      // DisplayGenericParameter methods with the Test class
       // defined above. This shows base, interface, and special
       // constraints.
       DisplayGenericType(typeof(TestGeneric<>));
@@ -106,8 +106,8 @@ public class TestArgument : TestBase, ITestInterface
 internal class TextBlock
 {
    private String s;
-   
-   public String Text 
+
+   public String Text
    {
       get { return s; }
       set { s = value; }

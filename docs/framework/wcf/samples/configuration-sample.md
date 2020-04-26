@@ -248,7 +248,8 @@ This sample demonstrates the use of a configuration file to make a service disco
   
     </standardEndpoints>  
   
-  </system.serviceModel>  
+  </system.serviceModel>
+</configuration>
 ```  
   
 #### To use this sample  

@@ -10,11 +10,11 @@ namespace LetClause
     {
         static void Main()
         {
-            string[] strings = 
+            string[] strings =
             {
                 "A penny saved is a penny earned.",
                 "The early bird catches the worm.",
-                "The pen is mightier than the sword." 
+                "The pen is mightier than the sword."
             };
 
             // Split the sentence into an array of words

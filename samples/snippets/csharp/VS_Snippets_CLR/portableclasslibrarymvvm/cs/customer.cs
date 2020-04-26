@@ -2,13 +2,13 @@
 using System;
 
 namespace SimpleMVVM.Model
-{  
+{
     public class Customer
     {
         public int CustomerID
         {
-            get; 
-            set;   
+            get;
+            set;
         }
 
         public string FullName
@@ -19,7 +19,7 @@ namespace SimpleMVVM.Model
 
         public string Phone
         {
-            get; 
+            get;
             set;
         }
     }

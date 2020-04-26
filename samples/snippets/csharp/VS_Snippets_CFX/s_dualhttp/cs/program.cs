@@ -30,7 +30,7 @@ namespace CS
 
             /*            String clientBaseAddress = "http://localhost:8080/Discovery/" + Guid.NewGuid().ToString();
                         Uri clientBaseAddressUri = new Uri(clientBaseAddress);
-                        WSDualHttpBinding bindingClientBaseAddress = 
+                        WSDualHttpBinding bindingClientBaseAddress =
                             new WSDualHttpBinding(clientBaseAddressUri);
           */
             // <Snippet8>
@@ -177,19 +177,19 @@ namespace CS
     /*
      //<snippet134>
       <client>
-        <endpoint 
-          name ="ServerEndpoint" 
+        <endpoint
+          name ="ServerEndpoint"
           address="http://localhost:12000/DuplexUsingConfig/Server"
-          bindingConfiguration="WSDualHttpBinding_IDuplex" 
+          bindingConfiguration="WSDualHttpBinding_IDuplex"
           binding="wsDualHttpBinding"
-          contract="IDuplex" 
+          contract="IDuplex"
       />
       </client>
       <bindings>
         <wsDualHttpBinding>
-          <binding 
-            name="WSDualHttpBinding_IDuplex"  
-            clientBaseAddress="http://localhost:8000/myClient/" 
+          <binding
+            name="WSDualHttpBinding_IDuplex"
+            clientBaseAddress="http://localhost:8000/myClient/"
           />
         </wsDualHttpBinding>
       </bindings>

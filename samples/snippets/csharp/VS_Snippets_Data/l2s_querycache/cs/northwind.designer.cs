@@ -35,31 +35,31 @@ namespace L2S_QueryCache
     partial void DeleteCustomer(Customer instance);
     #endregion
 		
-		public NorthwindDataContext() : 
+		public NorthwindDataContext() :
 				base(global::L2S_QueryCache.Properties.Settings.Default.NorthwindConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(string connection) : 
+		public NorthwindDataContext(string connection) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(System.Data.IDbConnection connection) : 
+		public NorthwindDataContext(System.Data.IDbConnection connection) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public NorthwindDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public NorthwindDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 				base(connection, mappingSource)
 		{
 			OnCreated();

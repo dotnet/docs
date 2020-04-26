@@ -6,13 +6,13 @@ namespace Samples
 
     //<snippet1>
     [ServiceContract]
-    interface IMyService 
+    interface IMyService
     {
 
        //Define the contract operations.
     }
 
-    class MyService : IMyService 
+    class MyService : IMyService
     {
 
     //Implement the IMyService operations.

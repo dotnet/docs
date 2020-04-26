@@ -12,9 +12,9 @@ public class Example
       StreamReader inFile = new StreamReader(@".\Dreiser_TheFinancier.txt");
       string input = inFile.ReadToEnd();
       inFile.Close();
-      
+
       MatchCollection matches = pattern.Matches(input);
-      Console.WriteLine("Found {0:N0} sentences.", matches.Count);      
+      Console.WriteLine("Found {0:N0} sentences.", matches.Count);
    }
 }
 // The example displays the following output:
@@ -22,7 +22,7 @@ public class Example
 // </Snippet7>
 
 // This code is here so that Parsnip will compile the example.
-namespace Utilities.RegularExpressions 
+namespace Utilities.RegularExpressions
 {
    public class SentencePattern
    {

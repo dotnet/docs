@@ -568,7 +568,7 @@ End Function
 - [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)
 - [Collections and Data Structures](../../../standard/collections/index.md)
 - [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
 - [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)

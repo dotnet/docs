@@ -29,7 +29,7 @@ namespace cs_conflictmodeenum
             }
             // </Snippet1>
 
-            // <Snippet2> 
+            // <Snippet2>
             try
             {
                 db.SubmitChanges(ConflictMode.ContinueOnConflict);

@@ -13,16 +13,16 @@
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 //<snippet2>
 [System.ServiceModel.ServiceContractAttribute(
-  Namespace="http://microsoft.wcf.documentation", 
-  ConfigurationName="SampleDuplexHello", 
-  CallbackContract=typeof(SampleDuplexHelloCallback), 
+  Namespace="http://microsoft.wcf.documentation",
+  ConfigurationName="SampleDuplexHello",
+  CallbackContract=typeof(SampleDuplexHelloCallback),
   SessionMode=System.ServiceModel.SessionMode.Required
 )]
 public interface SampleDuplexHello
 {
   //<snippet3>
   [System.ServiceModel.OperationContractAttribute(
-      IsOneWay=true, 
+      IsOneWay=true,
       Action="http://microsoft.wcf.documentation/SampleDuplexHello/Hello"
     )]
     void Hello(string greeting);
@@ -36,7 +36,7 @@ public interface SampleDuplexHelloCallback
 {
   //<snippet5>
   [System.ServiceModel.OperationContractAttribute(
-      IsOneWay=true, 
+      IsOneWay=true,
       Action="http://microsoft.wcf.documentation/SampleDuplexHello/Reply"
     )]
     void Reply(string responseToGreeting);
@@ -56,32 +56,32 @@ public interface SampleDuplexHelloChannel : SampleDuplexHello, System.ServiceMod
 //<snippet7>
 public partial class SampleDuplexHelloClient : System.ServiceModel.DuplexClientBase<SampleDuplexHello>, SampleDuplexHello
 {
-    
-    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance) : 
+
+    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance) :
             base(callbackInstance)
     {
     }
-    
-    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+
+    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) :
             base(callbackInstance, endpointConfigurationName)
     {
     }
-    
-    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+
+    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) :
             base(callbackInstance, endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(callbackInstance, endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleDuplexHelloClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(callbackInstance, binding, remoteAddress)
     {
     }
-    
+
     public void Hello(string greeting)
     {
         base.Channel.Hello(greeting);

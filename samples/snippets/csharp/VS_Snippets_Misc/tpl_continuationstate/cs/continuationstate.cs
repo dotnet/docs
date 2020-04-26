@@ -1,4 +1,4 @@
-﻿// <snippet1> 
+﻿// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -11,7 +11,7 @@ class ContinuationState
    // the operation completed.
    public static DateTime DoWork()
    {
-      // Simulate work by suspending the current thread 
+      // Simulate work by suspending the current thread
       // for two seconds.
       Thread.Sleep(2000);
 
@@ -24,7 +24,7 @@ class ContinuationState
       // Start a root task that performs work.
       Task<DateTime> t = Task<DateTime>.Run(delegate { return DoWork(); });
 
-      // Create a chain of continuation tasks, where each task is 
+      // Create a chain of continuation tasks, where each task is
       // followed by another task that performs work.
       List<Task<DateTime>> continuations = new List<Task<DateTime>>();
       for (int i = 0; i < 5; i++)
@@ -57,4 +57,4 @@ Task was created at 10:56:21.1610677 and finished at 10:56:29.1743230.
 Task was created at 10:56:21.1610677 and finished at 10:56:31.1779883.
 Task was created at 10:56:21.1610677 and finished at 10:56:33.1837083.
 */
-// </snippet1> 
+// </snippet1>

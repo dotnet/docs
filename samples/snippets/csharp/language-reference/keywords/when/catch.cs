@@ -10,14 +10,14 @@ class Program
     }
 
     public static async Task<string> MakeRequest()
-    { 
+    {
         var client = new HttpClient();
         var streamTask = client.GetStringAsync("https://localHost:10000");
         try
         {
             var responseText = await streamTask;
             return responseText;
-        } 
+        }
         catch (HttpRequestException e) when (e.Message.Contains("301"))
         {
             return "Site Moved";

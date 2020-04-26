@@ -3,7 +3,7 @@ title: Serverless architecture considerations - Serverless apps
 description: Understand the challenges of architecting serverless applications, from state management and persistent storage to scale, logging, tracing and diagnostics.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
+ms.date: 04/06/2020
 ---
 # Serverless architecture considerations
 
@@ -17,7 +17,7 @@ There are several solutions to adopt state without compromising the benefits of 
 
 - Use a temporary data store or distributed cache, like Redis
 - Store state in a database, like SQL or CosmosDB
-- Handle state through a workflow engine like durable functions
+- Handle state through a workflow engine like [durable functions](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview)
 
 The bottom line is that you should be aware of the need for any state management within processes you're considering to implement with serverless.
 
@@ -73,7 +73,7 @@ For more information, see [Implementing the Circuit Breaker pattern](../microser
 
 ## Versioning and green/blue deployments
 
-A major benefit of serverless is the ability to upgrade a specific function without having to redeploy the entire application. For upgrades to be successful, functions must be versioned so that services calling them are routed to the correct version of code. A strategy for deploying new versions is also important. A common approach is to use "green/blue deployments." The green deployment is the current function. A new "blue" version is deployed to production and tested. When testing passes, the green and blue versions are swapped so the new version comes live. If any issues are encountered, they can be swapped back. Supporting versioning and green/blue deployments requires a combination of authoring the functions to accommodate version changes and working with the serverless platform to handle deployments. One possible approach is to use proxies, which are described in the [Azure serverless platform](azure-functions.md#proxies) chapter.
+A major benefit of serverless is the ability to upgrade a specific function without having to redeploy the entire application. For upgrades to be successful, functions must be versioned so that services calling them are routed to the correct version of code. A strategy for deploying new versions is also important. A common approach is to use "green/blue deployments." The green deployment is the current function. A new "blue" version is deployed to production and tested. When testing passes, the green and blue versions are swapped so the new version comes live. If any issues are encountered, they can be swapped back. Supporting versioning and green/blue deployments requires a combination of authoring the functions to accommodate version changes and working with the serverless platform to handle deployments.
 
 >[!div class="step-by-step"]
 >[Previous](serverless-architecture.md)

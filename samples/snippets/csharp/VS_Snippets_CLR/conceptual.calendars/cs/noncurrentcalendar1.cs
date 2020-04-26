@@ -8,8 +8,8 @@ public class Example
    {
       JulianCalendar julian = new JulianCalendar();
       DateTime date1 = new DateTime(1905, 1, 9, julian);
-      
-      Console.WriteLine("Date ({0}): {1:d}", 
+
+      Console.WriteLine("Date ({0}): {1:d}",
                         CultureInfo.CurrentCulture.Calendar,
                         date1);
       Console.WriteLine("Date in Julian calendar: {0:d2}/{1:d2}/{2:d4}",

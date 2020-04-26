@@ -23,7 +23,7 @@ namespace SDKSample
             // Create a rectangle.
             GeometryDrawing drawing1 = new GeometryDrawing(
                 Brushes.Pink,
-                null, 
+                null,
                 new RectangleGeometry(new Rect(0,0,50,85))
                 );
 
@@ -68,7 +68,7 @@ namespace SDKSample
             // Create an EllipseGeometry and use it to
             // clip the DrawingGroup.
             //
-            EllipseGeometry clipGeometry = 
+            EllipseGeometry clipGeometry =
                 new EllipseGeometry(new Point(25,50), 25, 50);
             aDrawingGroup.ClipGeometry = clipGeometry;
 

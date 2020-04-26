@@ -58,7 +58,7 @@ namespace SDKSample
             TextPointer position = rtb.Selection.End;
 
             if (position == null) return;
-            
+
             Rect positionRect = position.GetCharacterRect(LogicalDirection.Forward);
             contextMenu.HorizontalOffset = positionRect.X;
             contextMenu.VerticalOffset = positionRect.Y;

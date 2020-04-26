@@ -51,7 +51,7 @@ namespace MyControls
 
         #region Component Designer generated code
         /// <summary>
-        /// Required method for Designer support - do not modify 
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -70,9 +70,9 @@ namespace MyControls
             this.btnCancel = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.Location = new System.Drawing.Point(20, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
             this.label1.Name = "label1";
@@ -80,18 +80,18 @@ namespace MyControls
             this.label1.TabIndex = 8;
             this.label1.Text = "Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+            //
             // label2
-            // 
+            //
             this.label2.Location = new System.Drawing.Point(20, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Street Address";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+            //
             // label3
-            // 
+            //
             this.label3.Location = new System.Drawing.Point(20, 127);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.label3.Name = "label3";
@@ -99,9 +99,9 @@ namespace MyControls
             this.label3.TabIndex = 10;
             this.label3.Text = "City";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+            //
             // label4
-            // 
+            //
             this.label4.Location = new System.Drawing.Point(246, 127);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.label4.Name = "label4";
@@ -109,9 +109,9 @@ namespace MyControls
             this.label4.TabIndex = 11;
             this.label4.Text = "State";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+            //
             // label5
-            // 
+            //
             this.label5.Location = new System.Drawing.Point(23, 167);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.label5.Name = "label5";
@@ -119,71 +119,71 @@ namespace MyControls
             this.label5.TabIndex = 12;
             this.label5.Text = "Zip";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
+            //
             // txtName
-            // 
+            //
             this.txtName.Location = new System.Drawing.Point(135, 44);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(199, 20);
             this.txtName.TabIndex = 0;
-            // 
+            //
             // txtAddress
-            // 
+            //
             this.txtAddress.Location = new System.Drawing.Point(136, 84);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(198, 20);
             this.txtAddress.TabIndex = 1;
-            // 
+            //
             // txtCity
-            // 
+            //
             this.txtCity.Location = new System.Drawing.Point(136, 123);
             this.txtCity.Name = "txtCity";
             this.txtCity.TabIndex = 2;
-            // 
+            //
             // txtState
-            // 
+            //
             this.txtState.Location = new System.Drawing.Point(300, 123);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(33, 20);
             this.txtState.TabIndex = 3;
-            // 
+            //
             // txtZip
-            // 
+            //
             this.txtZip.Location = new System.Drawing.Point(135, 163);
             this.txtZip.Margin = new System.Windows.Forms.Padding(1, 3, 3, 3);
             this.txtZip.Name = "txtZip";
             this.txtZip.TabIndex = 4;
-            // 
+            //
             // btnOK
-            // 
+            //
             this.btnOK.Location = new System.Drawing.Point(23, 207);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
             this.btnOK.Name = "btnOK";
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
+            //
             // btnCancel
-            // 
+            //
             this.btnCancel.Location = new System.Drawing.Point(157, 207);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
+            //
             // label6
-            // 
+            //
             this.label6.Location = new System.Drawing.Point(66, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(226, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Simple Windows Forms Control";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
             // MyControl1
-            // 
+            //
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);

@@ -38,7 +38,7 @@ namespace MethodsOnObjectContext
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -46,7 +46,7 @@ namespace MethodsOnObjectContext
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -55,11 +55,11 @@ namespace MethodsOnObjectContext
             OnContextCreated();
         }
         #endregion
-        
+
         #region Partial Methods
         partial void OnContextCreated();
         #endregion
-        
+
         #region ObjectSet Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -76,7 +76,7 @@ namespace MethodsOnObjectContext
             }
         }
         private ObjectSet<AddressType> _AddressTypes;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -92,7 +92,7 @@ namespace MethodsOnObjectContext
             }
         }
         private ObjectSet<Contact> _Contacts;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -108,7 +108,7 @@ namespace MethodsOnObjectContext
             }
         }
         private ObjectSet<Product> _Products;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -124,7 +124,7 @@ namespace MethodsOnObjectContext
             }
         }
         private ObjectSet<SalesOrderDetail> _SalesOrderDetails;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -140,10 +140,10 @@ namespace MethodsOnObjectContext
             }
         }
         private ObjectSet<SalesOrderHeader> _SalesOrderHeaders;
-    
+
         #endregion
         #region AddTo Methods
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the AddressTypes EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -151,7 +151,7 @@ namespace MethodsOnObjectContext
         {
             base.AddObject("AddressTypes", addressType);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Contacts EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -159,7 +159,7 @@ namespace MethodsOnObjectContext
         {
             base.AddObject("Contacts", contact);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -167,7 +167,7 @@ namespace MethodsOnObjectContext
         {
             base.AddObject("Products", product);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -175,7 +175,7 @@ namespace MethodsOnObjectContext
         {
             base.AddObject("SalesOrderDetails", salesOrderDetail);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderHeaders EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -185,10 +185,10 @@ namespace MethodsOnObjectContext
         }
         #endregion
     }
-    
+
     #endregion
-    
-    
+
+
     #region Entities
     /// <summary>
     /// No Metadata Documentation available.
@@ -210,13 +210,13 @@ namespace MethodsOnObjectContext
         {
             AddressType addressType = new AddressType();
             addressType.AddressTypeID = addressTypeID;
-            
+
             addressType.Name = name;
-            
+
             addressType.rowguid = rowguid;
-            
+
             addressType.ModifiedDate = modifiedDate;
-            
+
             return addressType;
         }
         #endregion
@@ -244,12 +244,12 @@ namespace MethodsOnObjectContext
                     OnAddressTypeIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _AddressTypeID;
         partial void OnAddressTypeIDChanging(global::System.Int32 value);
         partial void OnAddressTypeIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -269,12 +269,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -294,12 +294,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -319,16 +319,16 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -354,23 +354,23 @@ namespace MethodsOnObjectContext
         {
             Contact contact = new Contact();
             contact.ContactID = contactID;
-            
+
             contact.NameStyle = nameStyle;
-            
+
             contact.FirstName = firstName;
-            
+
             contact.LastName = lastName;
-            
+
             contact.EmailPromotion = emailPromotion;
-            
+
             contact.PasswordHash = passwordHash;
-            
+
             contact.PasswordSalt = passwordSalt;
-            
+
             contact.rowguid = rowguid;
-            
+
             contact.ModifiedDate = modifiedDate;
-            
+
             return contact;
         }
         #endregion
@@ -398,12 +398,12 @@ namespace MethodsOnObjectContext
                     OnContactIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -423,12 +423,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("NameStyle");
                 OnNameStyleChanged();
             }
-                
+
         }
         private global::System.Boolean _NameStyle;
         partial void OnNameStyleChanging(global::System.Boolean value);
         partial void OnNameStyleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -448,12 +448,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
-                
+
         }
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -473,12 +473,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
-                
+
         }
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -498,12 +498,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("MiddleName");
                 OnMiddleNameChanged();
             }
-                
+
         }
         private global::System.String _MiddleName;
         partial void OnMiddleNameChanging(global::System.String value);
         partial void OnMiddleNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -523,12 +523,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
-                
+
         }
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -548,12 +548,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Suffix");
                 OnSuffixChanged();
             }
-                
+
         }
         private global::System.String _Suffix;
         partial void OnSuffixChanging(global::System.String value);
         partial void OnSuffixChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -573,12 +573,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("EmailAddress");
                 OnEmailAddressChanged();
             }
-                
+
         }
         private global::System.String _EmailAddress;
         partial void OnEmailAddressChanging(global::System.String value);
         partial void OnEmailAddressChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -598,12 +598,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("EmailPromotion");
                 OnEmailPromotionChanged();
             }
-                
+
         }
         private global::System.Int32 _EmailPromotion;
         partial void OnEmailPromotionChanging(global::System.Int32 value);
         partial void OnEmailPromotionChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -623,12 +623,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
-                
+
         }
         private global::System.String _Phone;
         partial void OnPhoneChanging(global::System.String value);
         partial void OnPhoneChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -648,12 +648,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("PasswordHash");
                 OnPasswordHashChanged();
             }
-                
+
         }
         private global::System.String _PasswordHash;
         partial void OnPasswordHashChanging(global::System.String value);
         partial void OnPasswordHashChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -673,12 +673,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("PasswordSalt");
                 OnPasswordSaltChanged();
             }
-                
+
         }
         private global::System.String _PasswordSalt;
         partial void OnPasswordSaltChanging(global::System.String value);
         partial void OnPasswordSaltChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -698,12 +698,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("AdditionalContactInfo");
                 OnAdditionalContactInfoChanged();
             }
-                
+
         }
         private global::System.String _AdditionalContactInfo;
         partial void OnAdditionalContactInfoChanging(global::System.String value);
         partial void OnAdditionalContactInfoChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -723,12 +723,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -748,14 +748,14 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -763,7 +763,7 @@ namespace MethodsOnObjectContext
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "SalesOrderHeader")]
         public EntityCollection<SalesOrderHeader> SalesOrderHeaders
         {
             get
@@ -780,7 +780,7 @@ namespace MethodsOnObjectContext
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -810,31 +810,31 @@ namespace MethodsOnObjectContext
         {
             Product product = new Product();
             product.ProductID = productID;
-            
+
             product.Name = name;
-            
+
             product.ProductNumber = productNumber;
-            
+
             product.MakeFlag = makeFlag;
-            
+
             product.FinishedGoodsFlag = finishedGoodsFlag;
-            
+
             product.SafetyStockLevel = safetyStockLevel;
-            
+
             product.ReorderPoint = reorderPoint;
-            
+
             product.StandardCost = standardCost;
-            
+
             product.ListPrice = listPrice;
-            
+
             product.DaysToManufacture = daysToManufacture;
-            
+
             product.SellStartDate = sellStartDate;
-            
+
             product.rowguid = rowguid;
-            
+
             product.ModifiedDate = modifiedDate;
-            
+
             return product;
         }
         #endregion
@@ -862,12 +862,12 @@ namespace MethodsOnObjectContext
                     OnProductIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -887,12 +887,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -912,12 +912,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ProductNumber");
                 OnProductNumberChanged();
             }
-                
+
         }
         private global::System.String _ProductNumber;
         partial void OnProductNumberChanging(global::System.String value);
         partial void OnProductNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -937,12 +937,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("MakeFlag");
                 OnMakeFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _MakeFlag;
         partial void OnMakeFlagChanging(global::System.Boolean value);
         partial void OnMakeFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -962,12 +962,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("FinishedGoodsFlag");
                 OnFinishedGoodsFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _FinishedGoodsFlag;
         partial void OnFinishedGoodsFlagChanging(global::System.Boolean value);
         partial void OnFinishedGoodsFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -987,12 +987,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Color");
                 OnColorChanged();
             }
-                
+
         }
         private global::System.String _Color;
         partial void OnColorChanging(global::System.String value);
         partial void OnColorChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1012,12 +1012,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SafetyStockLevel");
                 OnSafetyStockLevelChanged();
             }
-                
+
         }
         private global::System.Int16 _SafetyStockLevel;
         partial void OnSafetyStockLevelChanging(global::System.Int16 value);
         partial void OnSafetyStockLevelChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1037,12 +1037,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ReorderPoint");
                 OnReorderPointChanged();
             }
-                
+
         }
         private global::System.Int16 _ReorderPoint;
         partial void OnReorderPointChanging(global::System.Int16 value);
         partial void OnReorderPointChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1062,12 +1062,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("StandardCost");
                 OnStandardCostChanged();
             }
-                
+
         }
         private global::System.Decimal _StandardCost;
         partial void OnStandardCostChanging(global::System.Decimal value);
         partial void OnStandardCostChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1087,12 +1087,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ListPrice");
                 OnListPriceChanged();
             }
-                
+
         }
         private global::System.Decimal _ListPrice;
         partial void OnListPriceChanging(global::System.Decimal value);
         partial void OnListPriceChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1112,12 +1112,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Size");
                 OnSizeChanged();
             }
-                
+
         }
         private global::System.String _Size;
         partial void OnSizeChanging(global::System.String value);
         partial void OnSizeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1137,12 +1137,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SizeUnitMeasureCode");
                 OnSizeUnitMeasureCodeChanged();
             }
-                
+
         }
         private global::System.String _SizeUnitMeasureCode;
         partial void OnSizeUnitMeasureCodeChanging(global::System.String value);
         partial void OnSizeUnitMeasureCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1162,12 +1162,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("WeightUnitMeasureCode");
                 OnWeightUnitMeasureCodeChanged();
             }
-                
+
         }
         private global::System.String _WeightUnitMeasureCode;
         partial void OnWeightUnitMeasureCodeChanging(global::System.String value);
         partial void OnWeightUnitMeasureCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1187,12 +1187,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Weight");
                 OnWeightChanged();
             }
-                
+
         }
         private Nullable<global::System.Decimal> _Weight;
         partial void OnWeightChanging(Nullable<global::System.Decimal> value);
         partial void OnWeightChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1212,12 +1212,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("DaysToManufacture");
                 OnDaysToManufactureChanged();
             }
-                
+
         }
         private global::System.Int32 _DaysToManufacture;
         partial void OnDaysToManufactureChanging(global::System.Int32 value);
         partial void OnDaysToManufactureChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1237,12 +1237,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ProductLine");
                 OnProductLineChanged();
             }
-                
+
         }
         private global::System.String _ProductLine;
         partial void OnProductLineChanging(global::System.String value);
         partial void OnProductLineChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1262,12 +1262,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Class");
                 OnClassChanged();
             }
-                
+
         }
         private global::System.String _Class;
         partial void OnClassChanging(global::System.String value);
         partial void OnClassChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1287,12 +1287,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Style");
                 OnStyleChanged();
             }
-                
+
         }
         private global::System.String _Style;
         partial void OnStyleChanging(global::System.String value);
         partial void OnStyleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1312,12 +1312,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ProductSubcategoryID");
                 OnProductSubcategoryIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _ProductSubcategoryID;
         partial void OnProductSubcategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductSubcategoryIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1337,12 +1337,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ProductModelID");
                 OnProductModelIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _ProductModelID;
         partial void OnProductModelIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductModelIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1362,12 +1362,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SellStartDate");
                 OnSellStartDateChanged();
             }
-                
+
         }
         private global::System.DateTime _SellStartDate;
         partial void OnSellStartDateChanging(global::System.DateTime value);
         partial void OnSellStartDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1387,12 +1387,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SellEndDate");
                 OnSellEndDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _SellEndDate;
         partial void OnSellEndDateChanging(Nullable<global::System.DateTime> value);
         partial void OnSellEndDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1412,12 +1412,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("DiscontinuedDate");
                 OnDiscontinuedDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _DiscontinuedDate;
         partial void OnDiscontinuedDateChanging(Nullable<global::System.DateTime> value);
         partial void OnDiscontinuedDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1437,12 +1437,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1462,16 +1462,16 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1498,25 +1498,25 @@ namespace MethodsOnObjectContext
         {
             SalesOrderDetail salesOrderDetail = new SalesOrderDetail();
             salesOrderDetail.SalesOrderID = salesOrderID;
-            
+
             salesOrderDetail.SalesOrderDetailID = salesOrderDetailID;
-            
+
             salesOrderDetail.OrderQty = orderQty;
-            
+
             salesOrderDetail.ProductID = productID;
-            
+
             salesOrderDetail.SpecialOfferID = specialOfferID;
-            
+
             salesOrderDetail.UnitPrice = unitPrice;
-            
+
             salesOrderDetail.UnitPriceDiscount = unitPriceDiscount;
-            
+
             salesOrderDetail.LineTotal = lineTotal;
-            
+
             salesOrderDetail.rowguid = rowguid;
-            
+
             salesOrderDetail.ModifiedDate = modifiedDate;
-            
+
             return salesOrderDetail;
         }
         #endregion
@@ -1544,12 +1544,12 @@ namespace MethodsOnObjectContext
                     OnSalesOrderIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1572,12 +1572,12 @@ namespace MethodsOnObjectContext
                     OnSalesOrderDetailIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderDetailID;
         partial void OnSalesOrderDetailIDChanging(global::System.Int32 value);
         partial void OnSalesOrderDetailIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1597,12 +1597,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("CarrierTrackingNumber");
                 OnCarrierTrackingNumberChanged();
             }
-                
+
         }
         private global::System.String _CarrierTrackingNumber;
         partial void OnCarrierTrackingNumberChanging(global::System.String value);
         partial void OnCarrierTrackingNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1622,12 +1622,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("OrderQty");
                 OnOrderQtyChanged();
             }
-                
+
         }
         private global::System.Int16 _OrderQty;
         partial void OnOrderQtyChanging(global::System.Int16 value);
         partial void OnOrderQtyChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1647,12 +1647,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ProductID");
                 OnProductIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1672,12 +1672,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SpecialOfferID");
                 OnSpecialOfferIDChanged();
             }
-                
+
         }
         private global::System.Int32 _SpecialOfferID;
         partial void OnSpecialOfferIDChanging(global::System.Int32 value);
         partial void OnSpecialOfferIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1697,12 +1697,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("UnitPrice");
                 OnUnitPriceChanged();
             }
-                
+
         }
         private global::System.Decimal _UnitPrice;
         partial void OnUnitPriceChanging(global::System.Decimal value);
         partial void OnUnitPriceChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1722,12 +1722,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("UnitPriceDiscount");
                 OnUnitPriceDiscountChanged();
             }
-                
+
         }
         private global::System.Decimal _UnitPriceDiscount;
         partial void OnUnitPriceDiscountChanging(global::System.Decimal value);
         partial void OnUnitPriceDiscountChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1747,12 +1747,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("LineTotal");
                 OnLineTotalChanged();
             }
-                
+
         }
         private global::System.Decimal _LineTotal;
         partial void OnLineTotalChanging(global::System.Decimal value);
         partial void OnLineTotalChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1772,12 +1772,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1797,14 +1797,14 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1812,7 +1812,7 @@ namespace MethodsOnObjectContext
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader")]
         public SalesOrderHeader SalesOrderHeader
         {
             get
@@ -1845,7 +1845,7 @@ namespace MethodsOnObjectContext
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1880,41 +1880,41 @@ namespace MethodsOnObjectContext
         {
             SalesOrderHeader salesOrderHeader = new SalesOrderHeader();
             salesOrderHeader.SalesOrderID = salesOrderID;
-            
+
             salesOrderHeader.RevisionNumber = revisionNumber;
-            
+
             salesOrderHeader.OrderDate = orderDate;
-            
+
             salesOrderHeader.DueDate = dueDate;
-            
+
             salesOrderHeader.Status = status;
-            
+
             salesOrderHeader.OnlineOrderFlag = onlineOrderFlag;
-            
+
             salesOrderHeader.SalesOrderNumber = salesOrderNumber;
-            
+
             salesOrderHeader.CustomerID = customerID;
-            
+
             salesOrderHeader.ContactID = contactID;
-            
+
             salesOrderHeader.BillToAddressID = billToAddressID;
-            
+
             salesOrderHeader.ShipToAddressID = shipToAddressID;
-            
+
             salesOrderHeader.ShipMethodID = shipMethodID;
-            
+
             salesOrderHeader.SubTotal = subTotal;
-            
+
             salesOrderHeader.TaxAmt = taxAmt;
-            
+
             salesOrderHeader.Freight = freight;
-            
+
             salesOrderHeader.TotalDue = totalDue;
-            
+
             salesOrderHeader.rowguid = rowguid;
-            
+
             salesOrderHeader.ModifiedDate = modifiedDate;
-            
+
             return salesOrderHeader;
         }
         #endregion
@@ -1942,12 +1942,12 @@ namespace MethodsOnObjectContext
                     OnSalesOrderIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1967,12 +1967,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("RevisionNumber");
                 OnRevisionNumberChanged();
             }
-                
+
         }
         private global::System.Byte _RevisionNumber;
         partial void OnRevisionNumberChanging(global::System.Byte value);
         partial void OnRevisionNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1992,12 +1992,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("OrderDate");
                 OnOrderDateChanged();
             }
-                
+
         }
         private global::System.DateTime _OrderDate;
         partial void OnOrderDateChanging(global::System.DateTime value);
         partial void OnOrderDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2017,12 +2017,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("DueDate");
                 OnDueDateChanged();
             }
-                
+
         }
         private global::System.DateTime _DueDate;
         partial void OnDueDateChanging(global::System.DateTime value);
         partial void OnDueDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2042,12 +2042,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ShipDate");
                 OnShipDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _ShipDate;
         partial void OnShipDateChanging(Nullable<global::System.DateTime> value);
         partial void OnShipDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2067,12 +2067,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Status");
                 OnStatusChanged();
             }
-                
+
         }
         private global::System.Byte _Status;
         partial void OnStatusChanging(global::System.Byte value);
         partial void OnStatusChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2092,12 +2092,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("OnlineOrderFlag");
                 OnOnlineOrderFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _OnlineOrderFlag;
         partial void OnOnlineOrderFlagChanging(global::System.Boolean value);
         partial void OnOnlineOrderFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2117,12 +2117,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SalesOrderNumber");
                 OnSalesOrderNumberChanged();
             }
-                
+
         }
         private global::System.String _SalesOrderNumber;
         partial void OnSalesOrderNumberChanging(global::System.String value);
         partial void OnSalesOrderNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2142,12 +2142,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("PurchaseOrderNumber");
                 OnPurchaseOrderNumberChanged();
             }
-                
+
         }
         private global::System.String _PurchaseOrderNumber;
         partial void OnPurchaseOrderNumberChanging(global::System.String value);
         partial void OnPurchaseOrderNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2167,12 +2167,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("AccountNumber");
                 OnAccountNumberChanged();
             }
-                
+
         }
         private global::System.String _AccountNumber;
         partial void OnAccountNumberChanging(global::System.String value);
         partial void OnAccountNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2192,12 +2192,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("CustomerID");
                 OnCustomerIDChanged();
             }
-                
+
         }
         private global::System.Int32 _CustomerID;
         partial void OnCustomerIDChanging(global::System.Int32 value);
         partial void OnCustomerIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2217,12 +2217,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ContactID");
                 OnContactIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2242,12 +2242,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SalesPersonID");
                 OnSalesPersonIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _SalesPersonID;
         partial void OnSalesPersonIDChanging(Nullable<global::System.Int32> value);
         partial void OnSalesPersonIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2267,12 +2267,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("TerritoryID");
                 OnTerritoryIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _TerritoryID;
         partial void OnTerritoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnTerritoryIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2292,12 +2292,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("BillToAddressID");
                 OnBillToAddressIDChanged();
             }
-                
+
         }
         private global::System.Int32 _BillToAddressID;
         partial void OnBillToAddressIDChanging(global::System.Int32 value);
         partial void OnBillToAddressIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2317,12 +2317,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ShipToAddressID");
                 OnShipToAddressIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ShipToAddressID;
         partial void OnShipToAddressIDChanging(global::System.Int32 value);
         partial void OnShipToAddressIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2342,12 +2342,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ShipMethodID");
                 OnShipMethodIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ShipMethodID;
         partial void OnShipMethodIDChanging(global::System.Int32 value);
         partial void OnShipMethodIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2367,12 +2367,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("CreditCardID");
                 OnCreditCardIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _CreditCardID;
         partial void OnCreditCardIDChanging(Nullable<global::System.Int32> value);
         partial void OnCreditCardIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2392,12 +2392,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("CreditCardApprovalCode");
                 OnCreditCardApprovalCodeChanged();
             }
-                
+
         }
         private global::System.String _CreditCardApprovalCode;
         partial void OnCreditCardApprovalCodeChanging(global::System.String value);
         partial void OnCreditCardApprovalCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2417,12 +2417,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("CurrencyRateID");
                 OnCurrencyRateIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _CurrencyRateID;
         partial void OnCurrencyRateIDChanging(Nullable<global::System.Int32> value);
         partial void OnCurrencyRateIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2442,12 +2442,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("SubTotal");
                 OnSubTotalChanged();
             }
-                
+
         }
         private global::System.Decimal _SubTotal;
         partial void OnSubTotalChanging(global::System.Decimal value);
         partial void OnSubTotalChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2467,12 +2467,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("TaxAmt");
                 OnTaxAmtChanged();
             }
-                
+
         }
         private global::System.Decimal _TaxAmt;
         partial void OnTaxAmtChanging(global::System.Decimal value);
         partial void OnTaxAmtChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2492,12 +2492,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Freight");
                 OnFreightChanged();
             }
-                
+
         }
         private global::System.Decimal _Freight;
         partial void OnFreightChanging(global::System.Decimal value);
         partial void OnFreightChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2517,12 +2517,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("TotalDue");
                 OnTotalDueChanged();
             }
-                
+
         }
         private global::System.Decimal _TotalDue;
         partial void OnTotalDueChanging(global::System.Decimal value);
         partial void OnTotalDueChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2542,12 +2542,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("Comment");
                 OnCommentChanged();
             }
-                
+
         }
         private global::System.String _Comment;
         partial void OnCommentChanging(global::System.String value);
         partial void OnCommentChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2567,12 +2567,12 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2592,14 +2592,14 @@ namespace MethodsOnObjectContext
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -2607,7 +2607,7 @@ namespace MethodsOnObjectContext
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "Contact")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "Contact")]
         public Contact Contact
         {
             get
@@ -2644,7 +2644,7 @@ namespace MethodsOnObjectContext
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")]
         public EntityCollection<SalesOrderDetail> SalesOrderDetails
         {
             get
@@ -2661,7 +2661,7 @@ namespace MethodsOnObjectContext
         }
         #endregion
     }
-    
+
     #endregion
-    
+
 }

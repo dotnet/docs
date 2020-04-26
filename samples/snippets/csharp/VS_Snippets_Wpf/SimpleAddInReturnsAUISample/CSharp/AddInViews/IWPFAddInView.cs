@@ -11,7 +11,7 @@ namespace AddInViews
     public interface IWPFAddInView
     {
         // The add-in's implementation of this method will return
-        // a UI type that directly or indirectly derives from 
+        // a UI type that directly or indirectly derives from
         // FrameworkElement.
         FrameworkElement GetAddInUI();
     }

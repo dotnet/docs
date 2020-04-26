@@ -18,35 +18,35 @@
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://stockservice.contoso.com/wse/samples/2003/06")]
 public partial class StockQuote
 {
-    
+
     private string symbolField;
-    
+
     private double lastField;
-    
+
     private System.DateTime dateField;
-    
+
     private double changeField;
-    
+
     private double openField;
-    
+
     private double highField;
-    
+
     private double lowField;
-    
+
     private long volumeField;
-    
+
     private long marketCapField;
-    
+
     private double previousCloseField;
-    
+
     private double previousChangeField;
-    
+
     private double low52WeekField;
-    
+
     private double high52WeekField;
-    
+
     private string nameField;
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=0)]
     public string Symbol
@@ -60,7 +60,7 @@ public partial class StockQuote
             this.symbolField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=1)]
     public double Last
@@ -74,7 +74,7 @@ public partial class StockQuote
             this.lastField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=2)]
     public System.DateTime Date
@@ -88,7 +88,7 @@ public partial class StockQuote
             this.dateField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=3)]
     public double Change
@@ -102,7 +102,7 @@ public partial class StockQuote
             this.changeField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=4)]
     public double Open
@@ -116,7 +116,7 @@ public partial class StockQuote
             this.openField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=5)]
     public double High
@@ -130,7 +130,7 @@ public partial class StockQuote
             this.highField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=6)]
     public double Low
@@ -144,7 +144,7 @@ public partial class StockQuote
             this.lowField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=7)]
     public long Volume
@@ -158,7 +158,7 @@ public partial class StockQuote
             this.volumeField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=8)]
     public long MarketCap
@@ -172,7 +172,7 @@ public partial class StockQuote
             this.marketCapField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=9)]
     public double PreviousClose
@@ -186,7 +186,7 @@ public partial class StockQuote
             this.previousCloseField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=10)]
     public double PreviousChange
@@ -200,7 +200,7 @@ public partial class StockQuote
             this.previousChangeField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=11)]
     public double Low52Week
@@ -214,7 +214,7 @@ public partial class StockQuote
             this.low52WeekField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=12)]
     public double High52Week
@@ -228,7 +228,7 @@ public partial class StockQuote
             this.high52WeekField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlElementAttribute(Order=13)]
     public string Name
@@ -250,7 +250,7 @@ public partial class StockQuote
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://stockservice.contoso.com/wse/samples/2005/10", ConfigurationName="WSSecurityAnonymousServiceSoap")]
 public interface WSSecurityAnonymousServiceSoap
 {
-    
+
     // CODEGEN: Generating message contract since the wrapper name (StockQuotes) of message StockQuoteRequestResponse does not match the default value (StockQuoteRequest)
     [System.ServiceModel.OperationContractAttribute(Action="http://stockservice.contoso.com/wse/samples/2005/10/StockQuoteRequest", ReplyAction="*")]
     [System.ServiceModel.XmlSerializerFormatAttribute()]
@@ -266,36 +266,36 @@ public interface WSSecurityAnonymousServiceSoapChannel : WSSecurityAnonymousServ
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class WSSecurityAnonymousServiceSoapClient : System.ServiceModel.ClientBase<WSSecurityAnonymousServiceSoap>, WSSecurityAnonymousServiceSoap
 {
-    
+
     public WSSecurityAnonymousServiceSoapClient()
     {
     }
-    
-    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName) : 
+
+    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public WSSecurityAnonymousServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public WSSecurityAnonymousServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public WSSecurityAnonymousServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     StockQuoteRequestResponse WSSecurityAnonymousServiceSoap.StockQuoteRequest(StockQuoteRequestRequest request)
     {
         return base.Channel.StockQuoteRequest(request);
     }
-    
+
     public StockQuote[] StockQuoteRequest(string[] symbols)
     {
         StockQuoteRequestRequest inValue = new StockQuoteRequestRequest();
@@ -311,16 +311,16 @@ public partial class WSSecurityAnonymousServiceSoapClient : System.ServiceModel.
 [System.ServiceModel.MessageContractAttribute(WrapperName="StockQuoteRequest", WrapperNamespace="http://stockservice.contoso.com/wse/samples/2005/10", IsWrapped=true)]
 public partial class StockQuoteRequestRequest
 {
-    
+
     [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stockservice.contoso.com/wse/samples/2005/10", Order=0)]
     [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
     [System.Xml.Serialization.XmlArrayItemAttribute("Symbol", IsNullable=false)]
     public string[] symbols;
-    
+
     public StockQuoteRequestRequest()
     {
     }
-    
+
     public StockQuoteRequestRequest(string[] symbols)
     {
         this.symbols = symbols;
@@ -332,15 +332,15 @@ public partial class StockQuoteRequestRequest
 [System.ServiceModel.MessageContractAttribute(WrapperName="StockQuotes", WrapperNamespace="http://stockservice.contoso.com/wse/samples/2005/10", IsWrapped=true)]
 public partial class StockQuoteRequestResponse
 {
-    
+
     [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stockservice.contoso.com/wse/samples/2005/10", Order=0)]
     [System.Xml.Serialization.XmlElementAttribute("StockQuote")]
     public StockQuote[] StockQuote;
-    
+
     public StockQuoteRequestResponse()
     {
     }
-    
+
     public StockQuoteRequestResponse(StockQuote[] StockQuote)
     {
         this.StockQuote = StockQuote;

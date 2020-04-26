@@ -49,7 +49,7 @@ namespace CustomControlLibrary
             //<SnippetRaiseEventFromControl>
             if (AutomationPeer.ListenerExists(AutomationEvents.PropertyChanged))
             {
-                NumericUpDownAutomationPeer peer = 
+                NumericUpDownAutomationPeer peer =
                     UIElementAutomationPeer.FromElement(nudCtrl) as NumericUpDownAutomationPeer;
 
                 if (peer != null)
@@ -178,13 +178,13 @@ namespace CustomControlLibrary
             decimal coercedNewChange = Decimal.Round(newChange, control.DecimalPlaces);
 
             //If Change is .1 and DecimalPlaces is changed from 1 to 0, we want Change to go to 1, not 0.
-            //Put another way, Change should always be rounded to DecimalPlaces, but never smaller than the 
+            //Put another way, Change should always be rounded to DecimalPlaces, but never smaller than the
             //previous Change
             if (coercedNewChange < newChange)
             {
                 coercedNewChange = smallestForDecimalPlaces(control.DecimalPlaces);
             }
-        
+
             return coercedNewChange;
         }
 
@@ -368,9 +368,9 @@ namespace CustomControlLibrary
             }
         }
 
-        private const decimal DefaultMinValue = 0, 
-            DefaultValue = DefaultMinValue, 
-            DefaultMaxValue = 100, 
+        private const decimal DefaultMinValue = 0,
+            DefaultValue = DefaultMinValue,
+            DefaultMaxValue = 100,
             DefaultChange = 1;
         private const int DefaultDecimalPlaces = 0;
     }

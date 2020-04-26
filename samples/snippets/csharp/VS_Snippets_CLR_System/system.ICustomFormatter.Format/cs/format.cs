@@ -10,13 +10,13 @@ public class CustomFormatter : IFormatProvider, ICustomFormatter
    public string Format(string format, object arg, IFormatProvider formatProvider)
    {
       string s = null;
-      
+
       // <Snippet1>
-      if (arg is IFormattable) 
+      if (arg is IFormattable)
          s = ((IFormattable)arg).ToString(format, formatProvider);
-      else if (arg != null)    
+      else if (arg != null)
          s = arg.ToString();
       // </Snippet1>
       return s;
    }
-}   
+}

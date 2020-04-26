@@ -15,7 +15,7 @@ namespace Service
     {
         [OperationContract]
         [WebGet(UriTemplate="GetBlog?format={format}", BodyStyle=WebMessageBodyStyle.Bare)]
-        SyndicationFeedFormatter GetBlog(string format);       
+        SyndicationFeedFormatter GetBlog(string format);
     }
     // </Snippet0>
 
@@ -56,7 +56,7 @@ namespace Service
 
             if (format == "rss")
                 return new Rss20FeedFormatter(feed);
-            else 
+            else
                 return new Atom10FeedFormatter(feed);
         }
     }
@@ -66,7 +66,7 @@ namespace Service
         static void Main(string[] args)
         {
             Uri address = new Uri("http://localhost:8000/BlogService/");
-           
+
             WebServiceHost svcHost = new WebServiceHost(typeof(BlogService), address);
             try
             {
@@ -85,7 +85,7 @@ namespace Service
                 XmlReader reader = XmlReader.Create(serviceAddress);
 
                 SyndicationFeed feed = SyndicationFeed.Load(reader);
-                
+
                 Console.WriteLine(feed.Title.Text);
                 Console.WriteLine("Items:");
                 foreach (SyndicationItem item in feed.Items)

@@ -54,7 +54,7 @@ public class Form1 : Form
     {
         try
         {
-            // Specify a connection string.  
+            // Specify a connection string.
             // Replace <SQL Server> with the SQL Server for your Northwind sample database.
             // Replace "Integrated Security=True" with user login information if necessary.
             String connectionString =
@@ -65,7 +65,7 @@ public class Form1 : Form
             dataAdapter = new SqlDataAdapter(selectCommand, connectionString);
 
             // Create a command builder to generate SQL update, insert, and
-            // delete commands based on selectCommand. 
+            // delete commands based on selectCommand.
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
 
             // Populate a new data table and bind it to the BindingSource.

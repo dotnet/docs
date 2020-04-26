@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using MyCompany.Employees;
- 
+
 class Program
 {
    static void Main()
@@ -37,7 +37,7 @@ class Program
       Console.ReadLine();
    }
 
-   private static List<Tuple<String, String, DateTime, DateTime>> InitializeData() 
+   private static List<Tuple<String, String, DateTime, DateTime>> InitializeData()
    {
       List<Tuple<String, String, DateTime, DateTime>> employees = new List<Tuple<String, String, DateTime, DateTime>>();
       var t1 = Tuple.Create("John", "16302", new DateTime(1954, 8, 18), new DateTime(2006, 9, 8));

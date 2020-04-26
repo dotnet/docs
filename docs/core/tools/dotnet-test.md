@@ -15,14 +15,18 @@ ms.date: 02/27/2020
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION>]
-    [-a|--test-adapter-path] [--blame] [-c|--configuration]
-    [--collect] [-d|--diag] [-f|--framework] [--filter]
-    [--interactive] [-l|--logger] [--no-build] [--nologo]
-    [--no-restore] [-o|--output] [-r|--results-directory]
-    [--runtime] [-s|--settings] [-t|--list-tests]
-    [-v|--verbosity] [[--] <RunSettings arguments>]
+    [-a|--test-adapter-path <PATH_TO_ADAPTER>] [--blame]
+    [-c|--configuration <CONFIGURATION>]
+    [--collect <DATA_COLLECTOR_FRIENDLY_NAME>]
+    [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [-f|--framework <FRAMEWORK>]
+    [--filter <EXPRESSION>] [--interactive]
+    [-l|--logger <LOGGER_URI/FRIENDLY_NAME>] [--no-build]
+    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
+    [-r|--results-directory <PATH>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
+    [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
 
-dotnet test [-h|--help]
+dotnet test -h|--help
 ```
 
 ## Description
@@ -33,6 +37,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
 ## Arguments
 
 - **`PROJECT | SOLUTION`**
@@ -41,7 +49,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 ## Options
 
-- **`a|--test-adapter-path <PATH_TO_ADAPTER>`**
+- **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
 
   Use the custom test adapters from the specified path in the test run.
 
@@ -49,19 +57,19 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`c|--configuration <CONFIGURATION>`**
+- **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
-- **`-collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
+- **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
-- **`d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
+- **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
-  Enables diagnostic mode for the test platform and write diagnostic messages to the specified file.
+  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file.
 
-- **`f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Looks for test binaries for a specific [framework](../../standard/frameworks.md).
 
@@ -69,7 +77,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-- **`h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
@@ -77,7 +85,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
 
-- **`l|--logger <LoggerUri/FriendlyName>`**
+- **`-l|--logger <LOGGER_URI/FRIENDLY_NAME>`**
 
   Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`.
 
@@ -95,11 +103,11 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to find the binaries to run.
+  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
 - **`-r|--results-directory <PATH>`**
 
-  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the project file.
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -117,13 +125,13 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
-- `RunSettings` arguments
+- **`RunSettings`** arguments
 
   Arguments are passed as `RunSettings` configurations for the test. Arguments are specified as `[name]=[value]` pairs after "-- " (note the space after --). A space is used to separate multiple `[name]=[value]` pairs.
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
-  For more information, see [vstest.console.exe: Passing RunSettings args](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
+  For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
 
 ## Examples
 

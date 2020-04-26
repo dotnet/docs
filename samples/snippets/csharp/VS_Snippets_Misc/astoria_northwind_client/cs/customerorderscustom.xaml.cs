@@ -44,8 +44,8 @@ namespace NorthwindClient
                                     select cust;
 
                 // Create a new collection for binding based on the LINQ query.
-                trackedCustomers = new DataServiceCollection<Customer>(customerQuery, 
-                    TrackingMode.AutoChangeTracking,"Customers", 
+                trackedCustomers = new DataServiceCollection<Customer>(customerQuery,
+                    TrackingMode.AutoChangeTracking,"Customers",
                     OnPropertyChanged, OnCollectionChanged);
 
                 // Bind the root StackPanel element to the collection;
@@ -100,7 +100,7 @@ namespace NorthwindClient
                     return false;
                 }
             }
-            else 
+            else
             {
                 // Use the default behavior.
                 return false;
@@ -111,19 +111,19 @@ namespace NorthwindClient
         // Method that is called when the PropertyChanged event is handled.
         private bool OnPropertyChanged(EntityChangedParams entityChangedInfo)
         {
-            // Validate a changed order to ensure that changes are not made 
+            // Validate a changed order to ensure that changes are not made
             // after the order ships.
-            if ((entityChangedInfo.Entity.GetType() == typeof(Order)) && 
+            if ((entityChangedInfo.Entity.GetType() == typeof(Order)) &&
                 ((Order)(entityChangedInfo.Entity)).ShippedDate < DateTime.Today)
             {
                 throw new ApplicationException(string.Format(
                     "The order {0} cannot be changed because it shipped on {1}.",
-                    ((Order)(entityChangedInfo.Entity)).OrderID, 
+                    ((Order)(entityChangedInfo.Entity)).OrderID,
                     ((Order)(entityChangedInfo.Entity)).ShippedDate));
             }
             return false;
         }
-        
+
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
             if (customerIDComboBox.SelectedItem != null)

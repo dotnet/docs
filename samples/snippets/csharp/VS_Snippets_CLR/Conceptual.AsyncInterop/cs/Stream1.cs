@@ -8,12 +8,12 @@ public class Stream
     { return 0; }
 
     // <Snippet2>
-    public IAsyncResult BeginRead(byte[] buffer, int offset, 
-                                  int count, AsyncCallback callback, 
+    public IAsyncResult BeginRead(byte[] buffer, int offset,
+                                  int count, AsyncCallback callback,
                                   object state)
     // </Snippet2>
     { return null;  }
-   
+
     // <Snippet3>
     public int EndRead(IAsyncResult asyncResult)
     // </Snippet3>

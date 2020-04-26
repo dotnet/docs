@@ -22,7 +22,7 @@ namespace SDKSample
       {
           this.InitializeComponent();
       }
-      
+
       private string appPath;
       private string AppDataPath
       {

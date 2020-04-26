@@ -10,18 +10,18 @@ public class Example
       try {
          interval = TimeSpan.ParseExact(value, "c", null);
          Console.WriteLine("Converted '{0}' to {1}", value, interval);
-      }   
+      }
       catch (FormatException) {
          Console.WriteLine("{0}: Bad Format", value);
-      }   
+      }
       catch (OverflowException) {
          Console.WriteLine("{0}: Out of Range", value);
       }
-      
+
       if (TimeSpan.TryParseExact(value, "c", null, out interval))
          Console.WriteLine("Converted '{0}' to {1}", value, interval);
       else
-         Console.WriteLine("Unable to convert {0} to a time interval.", 
+         Console.WriteLine("Unable to convert {0} to a time interval.",
                            value);
    }
 }

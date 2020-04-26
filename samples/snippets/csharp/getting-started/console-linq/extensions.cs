@@ -19,7 +19,7 @@ namespace LinqFaroShuffle
             }
         }
         #endregion
-        
+
         #region snippet2
         public static bool SequenceEquals<T>
             (this IEnumerable<T> first, IEnumerable<T> second)
@@ -38,7 +38,7 @@ namespace LinqFaroShuffle
             return true;
         }
         #endregion
-        
+
         #region snippet3
         public static IEnumerable<T> LogQuery<T>
             (this IEnumerable<T> sequence, string tag)

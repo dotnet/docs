@@ -22,7 +22,7 @@ namespace KeyboardInputForm
         public Form1()
         {
             this.AutoSize = true;
-           
+
             FlowLayoutPanel panel = new FlowLayoutPanel();
             panel.AutoSize = true;
             panel.FlowDirection = FlowDirection.TopDown;
@@ -37,7 +37,7 @@ namespace KeyboardInputForm
         }
 
         // <Snippet10>
-        // Detect all numeric characters at the form level and consume 1, 
+        // Detect all numeric characters at the form level and consume 1,
         // 4, and 7. Note that Form.KeyPreview must be set to true for this
         // event handler to be called.
         void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -62,7 +62,7 @@ namespace KeyboardInputForm
         // </Snippet10>
 
         // <Snippet15>
-        // Detect all numeric characters at the TextBox level and consume  
+        // Detect all numeric characters at the TextBox level and consume
         // 2, 5, and 8.
         void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {

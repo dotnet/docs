@@ -26,7 +26,7 @@ namespace Microsoft.Security.Samples
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Windows;
 
-            // Create the Type instances for later use and the Uri for 
+            // Create the Type instances for later use and the Uri for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);
@@ -54,13 +54,13 @@ namespace Microsoft.Security.Samples
             // Use a secure session and specify that stateful SecurityContextToken security tokens are used.
             security = SecurityBindingElement.CreateSecureConversationBindingElement(security, false);
 
-            // Specify whether derived keys are needed.      
+            // Specify whether derived keys are needed.
             security.SetKeyDerivation(true);
 
             // Create the custom binding.
             CustomBinding myBinding = new CustomBinding(security, new HttpTransportBindingElement());
 
-            // Create the Type instances for later use and the Uri for 
+            // Create the Type instances for later use and the Uri for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);

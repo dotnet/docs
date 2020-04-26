@@ -3,30 +3,30 @@
  * File: ListFragment.cs
  *
  * Description: Implements a custom control that supports UI Automation.
- * 
- * The control is a simple list box that manages its own items. Its primary purpose is to demonstrate how to 
- * implement a root fragment (the list box itself) and child fragments (the list items) for UI Automation. 
- * The functionality of the control itself is very limited: it will display a small number of text items 
- * and manage the selection by processing mouse clicks and arrow keys. The only control patterns it supports 
+ *
+ * The control is a simple list box that manages its own items. Its primary purpose is to demonstrate how to
+ * implement a root fragment (the list box itself) and child fragments (the list items) for UI Automation.
+ * The functionality of the control itself is very limited: it will display a small number of text items
+ * and manage the selection by processing mouse clicks and arrow keys. The only control patterns it supports
  * are SelectionPattern and SelectionItemPattern. A list box in a real application would support more patterns
  * such as ValuePattern and ScrollPattern.
- * 
+ *
  * See ProviderForm.cs for a full description of this sample.
- *   
- * 
+ *
+ *
  *  This file is part of the Microsoft WinfFX SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  *************************************************************************************************/
 
 using System;
@@ -39,12 +39,12 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Collections;
 
-namespace ElementProvider 
+namespace ElementProvider
 {
     class ParentList : Control, IRawElementProviderFragmentRoot, IRawElementProviderAdviseEvents
     {
         IntPtr myHandle;
-        ArrayList myItems; 
+        ArrayList myItems;
         int mySelection;
         const int itemHeight = 15;
 
@@ -57,7 +57,7 @@ namespace ElementProvider
         public ParentList(Form mainForm, int x, int y)
         {
             // Create an object that implements IInvokeProvider; see Invoker.cs.
-            //myInvokePatternProvider = new InvokePatternProvider(this, this);  
+            //myInvokePatternProvider = new InvokePatternProvider(this, this);
 
             this.Location = new Point(x, y);
             this.Size = new Size(70, itemHeight + 2);
@@ -70,7 +70,7 @@ namespace ElementProvider
             myHandle = this.Handle;
 
             TabStop = true;
-           
+
             // Initialize list item collection.
             myItems = new ArrayList();
             Select(-1);
@@ -85,9 +85,9 @@ namespace ElementProvider
         {
             if (AutomationInteropProvider.ClientsAreListening)
             {
-                AutomationEventArgs args = 
+                AutomationEventArgs args =
                     new AutomationEventArgs(InvokePatternIdentifiers.InvokedEvent);
-                AutomationInteropProvider.RaiseAutomationEvent(InvokePatternIdentifiers.InvokedEvent, 
+                AutomationInteropProvider.RaiseAutomationEvent(InvokePatternIdentifiers.InvokedEvent,
                     provider, args);
             }
         }
@@ -142,7 +142,7 @@ namespace ElementProvider
 
         // DON'T USE THIS SNIPPET -- PROBABLY NOT RAISING CORRECT EVENTS
 
-        // <Snippet118>  
+        // <Snippet118>
         /// <summary>
         /// Selects an item in the myItems collection.
         /// </summary>
@@ -154,7 +154,7 @@ namespace ElementProvider
         /// </remarks>
         public void Select(int index)
         {
-            
+
             if (index >= myItems.Count)
             {
                 throw new ArgumentOutOfRangeException();
@@ -165,7 +165,7 @@ namespace ElementProvider
                 return;
             }
             else
-            // If within range, clear the Selected property on the current item 
+            // If within range, clear the Selected property on the current item
             // and set it on the new item.
             {
                 MyListItem newItem;
@@ -174,7 +174,7 @@ namespace ElementProvider
                 // Deselect old item, if there is one; list might not be initialized.
                 if (mySelection >= 0)
                 {
-                    oldItem = myItems[mySelection] as MyListItem; 
+                    oldItem = myItems[mySelection] as MyListItem;
                     oldItem.Selected = false;
                 }
                 mySelection = index;
@@ -204,7 +204,7 @@ namespace ElementProvider
                 }
             }
         }
-         // </Snippet118>      
+         // </Snippet118>
 
         #endregion Public methods
 
@@ -224,11 +224,11 @@ namespace ElementProvider
         {
             const int WM_GETOBJECT = 0x003D;
 
-            if ((m.Msg == WM_GETOBJECT) && (m.LParam.ToInt32() == 
+            if ((m.Msg == WM_GETOBJECT) && (m.LParam.ToInt32() ==
                 AutomationInteropProvider.RootObjectId))
             {
                 m.Result = AutomationInteropProvider.ReturnRawElementProvider(
-                        this.Handle, m.WParam, m.LParam, 
+                        this.Handle, m.WParam, m.LParam,
                         (IRawElementProviderSimple)this);
                 return;
             }
@@ -386,8 +386,8 @@ namespace ElementProvider
         /// <param name="patternId">ID of the pattern.</param>
         /// <returns>Object that implements IInvokeProvider.</returns>
         /// <remarks>
-        /// In this case, the ISelectionProvider interface is implemented in another provider-defined class, 
-        /// ListPattern. However, it could be implemented in the base provider class, in which case the 
+        /// In this case, the ISelectionProvider interface is implemented in another provider-defined class,
+        /// ListPattern. However, it could be implemented in the base provider class, in which case the
         /// method would simply return "this".
         /// </remarks>
         object IRawElementProviderSimple.GetPatternProvider(int patternId)
@@ -417,7 +417,7 @@ namespace ElementProvider
             }
             else if (propId == AutomationElementIdentifiers.ControlTypeProperty.Id)
             {
-                return ControlType.List.Id;  
+                return ControlType.List.Id;
             }
             else if (propId == AutomationElementIdentifiers.IsContentElementProperty.Id)
             {
@@ -433,7 +433,7 @@ namespace ElementProvider
             }
         }
         // </Snippet117>
-        
+
         // <Snippet121>
         /// <summary>
         /// Gets the host provider.
@@ -441,11 +441,11 @@ namespace ElementProvider
         /// <remarks>
         /// Fragment roots return their window providers; most others return null.
         /// </remarks>
-        IRawElementProviderSimple IRawElementProviderSimple.HostRawElementProvider  
+        IRawElementProviderSimple IRawElementProviderSimple.HostRawElementProvider
         {
-            get 
+            get
             {
-                return AutomationInteropProvider.HostProviderFromHandle(myHandle);  
+                return AutomationInteropProvider.HostProviderFromHandle(myHandle);
             }
         }
         // </Snippet121>
@@ -455,7 +455,7 @@ namespace ElementProvider
         /// </summary>
         ProviderOptions IRawElementProviderSimple.ProviderOptions
         {
-            get 
+            get
             {
                 return ProviderOptions.ServerSideProvider;
             }
@@ -473,7 +473,7 @@ namespace ElementProvider
         {
             get
             {
-                return System.Windows.Rect.Empty; 
+                return System.Windows.Rect.Empty;
             }
         }
 
@@ -484,7 +484,7 @@ namespace ElementProvider
         {
             get
             {
-                return this;        
+                return this;
             }
         }
 
@@ -555,7 +555,7 @@ namespace ElementProvider
         IRawElementProviderFragment IRawElementProviderFragmentRoot.ElementProviderFromPoint(
             double x, double y)
         {
-            // The RectangleToScreen method on the control can't be called directly from 
+            // The RectangleToScreen method on the control can't be called directly from
             // this thread, so use delegation.
             MyDelegate del = new MyDelegate(this.RectangleToScreen);
             Rectangle screenRectangle = (Rectangle)this.Invoke(del, new object[] { this.DisplayRectangle });
@@ -605,8 +605,8 @@ namespace ElementProvider
         #region IRawElementProviderAdviseEvents Members
 
         ArrayList subscribedProperties = new ArrayList();
-// <Snippet124> 
-        void IRawElementProviderAdviseEvents.AdviseEventAdded(int eventId, 
+// <Snippet124>
+        void IRawElementProviderAdviseEvents.AdviseEventAdded(int eventId,
                                                               int[] properties)
         {
             if (eventId == AutomationElement.AutomationPropertyChangedEvent.Id)

@@ -22,7 +22,7 @@ namespace StructuredNavigationSample
         //<SnippetProcessResultCODEBEHIND2>
         void pageFunctionHyperlink_Click(object sender, RoutedEventArgs e)
         {
-            
+
             // Instantiate and navigate to page function
             CalledPageFunction CalledPageFunction = new CalledPageFunction("Initial Data Item Value");
             //</SnippetPassingDataCODEBEHIND1>

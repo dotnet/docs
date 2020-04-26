@@ -55,11 +55,11 @@ The following snippet shows where the compiler emits warnings when using this cl
 
 :::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetLocalWarnings":::
 
-The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler applies language rules for null checks and assignments to inform its analysis.  The compiler can't make assumptions about the semantics of methods or properties. If you call methods that perform null checks, the compiler can't know those methods affect a variable's null state. There are a number of attributes you can add to your APIs to inform the compiler about the semantics of arguments and return values. These attributes have been applied to many common APIs in the .NET Core libraries. For example, <xref:System.String.IsNullOrEmpty%2A> has been updated, and the compiler correctly interprets that method as a null check. For more information about the attributes that apply to null state static analysis, see the article on [Nullable attributes](../../nullable-attributes.md).
+The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler applies language rules for null checks and assignments to inform its analysis.  The compiler can't make assumptions about the semantics of methods or properties. If you call methods that perform null checks, the compiler can't know those methods affect a variable's null state. There are a number of attributes you can add to your APIs to inform the compiler about the semantics of arguments and return values. These attributes have been applied to many common APIs in the .NET Core libraries. For example, <xref:System.String.IsNullOrEmpty%2A> has been updated, and the compiler correctly interprets that method as a null check. For more information about the attributes that apply to null state static analysis, see the article on [Nullable attributes](../attributes/nullable-analysis.md).
 
 ## Setting the nullable context
 
-There are two ways to control the nullable context. At the project level, you can add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-attributes.md).
+There are two ways to control the nullable context. At the project level, you can add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-migration-strategies.md).
 
 ## C# language specification
 

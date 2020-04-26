@@ -25,13 +25,13 @@ public static class StaticPattern
     {
         TaskCompletionSource<DateTimeOffset> tcs = null;
         Timer timer = null;
- 
+
         timer = new Timer(delegate
         {
             timer.Dispose();
             tcs.TrySetResult(DateTimeOffset.UtcNow);
         }, null, Timeout.Infinite, Timeout.Infinite);
- 
+
         tcs = new TaskCompletionSource<DateTimeOffset>(timer);
         timer.Change(millisecondsTimeout, Timeout.Infinite);
         return tcs.Task;
@@ -39,7 +39,7 @@ public static class StaticPattern
     // </Snippet4>
 
    // <Snippet5>
-   public static async Task Poll(Uri url, CancellationToken cancellationToken, 
+   public static async Task Poll(Uri url, CancellationToken cancellationToken,
                                  IProgress<bool> progress)
    {
        while(true)
@@ -56,11 +56,11 @@ public static class StaticPattern
        }
    }
    // </Snippet5>
-   
-   static Task<string> DownloadStringAsync(Uri url) 
-   { 
+
+   static Task<string> DownloadStringAsync(Uri url)
+   {
       var tcs = new TaskCompletionSource<string>();
-      return tcs.Task; 
+      return tcs.Task;
    }
 }
 
@@ -74,7 +74,7 @@ public class Pattern
        if (input == null) throw new ArgumentNullException("input");
        return MethodAsyncInternal(input);
    }
-   
+
    private async Task<int> MethodAsyncInternal(string input)
    {
 
@@ -83,7 +83,7 @@ public class Pattern
       return value;
    }
    // </Snippet2>
-   
+
    // <Snippet3>
    internal Task<Bitmap> RenderAsync(
                  ImageData data, CancellationToken cancellationToken)
@@ -102,26 +102,26 @@ public class Pattern
            return bmp;
        }, cancellationToken);
    }
-   // </Snippet3> 
-     
+   // </Snippet3>
+
    // <Snippet6>
    public static Task<bool> Delay(int millisecondsTimeout)
    {
         TaskCompletionSource<bool> tcs = null;
         Timer timer = null;
- 
+
         timer = new Timer(delegate
         {
             timer.Dispose();
             tcs.TrySetResult(true);
         }, null, Timeout.Infinite, Timeout.Infinite);
- 
+
         tcs = new TaskCompletionSource<bool>(timer);
         timer.Change(millisecondsTimeout, Timeout.Infinite);
         return tcs.Task;
    }
-   // </Snippet6> 
-   
+   // </Snippet6>
+
    // <Snippet7>
    public async Task<Bitmap> DownloadDataAndRenderImageAsync(
        CancellationToken cancellationToken)
@@ -130,7 +130,7 @@ public class Pattern
        return await RenderAsync(imageData, cancellationToken);
    }
    // </Snippet7>
-   
+
    private async Task<ImageData> DownloadImageDataAsync(CancellationToken c)
    {
       // return new TaskCompletionSource<ImageData>().Task;

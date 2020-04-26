@@ -96,7 +96,7 @@ namespace DragDropMiscCode
                 byte[] utf32Text = Encoding.UTF32.GetBytes(sourceData);
 
                 // The DataFormats class does not provide data format fields for denoting
-                // UTF-32 and UTF-8, which are seldom used in practice; the following strings 
+                // UTF-32 and UTF-8, which are seldom used in practice; the following strings
                 // will be used to identify these "custom" data formats.
                 string utf32DataFormat = "UTF-32";
                 string utf8DataFormat  = "UTF-8";
@@ -105,7 +105,7 @@ namespace DragDropMiscCode
                 // the data format (which will be DataFormats.Text in this case).
                 dataObject.SetData(sourceData);
                 // Store the Unicode text in the data object.  Text data can be automatically
-                // converted to Unicode (UTF-16 / UCS-2) format on extraction from the data object; 
+                // converted to Unicode (UTF-16 / UCS-2) format on extraction from the data object;
                 // Therefore, explicitly converting the source text to Unicode is generally unnecessary, and
                 // is done here as an exercise only.
                 dataObject.SetData(DataFormats.UnicodeText, unicodeText);
@@ -135,7 +135,7 @@ namespace DragDropMiscCode
                     textData = dataObject.GetData(DataFormats.StringFormat) as string;
                 }
 
-                // In this case, the Text data in the data object can be autoconverted to 
+                // In this case, the Text data in the data object can be autoconverted to
                 // Unicode text, so GetDataPresent returns "true".
                 byte[] unicodeData = null;
                 if (dataObject.GetDataPresent(DataFormats.UnicodeText))
@@ -149,7 +149,7 @@ namespace DragDropMiscCode
                 // <Snippet_DragDrop_QueryDataFormats_Type>
                 DataObject dataObject = new DataObject("Some string data to store...");
 
-                // Query for the presence of String data in the data object, by type.  In this overload 
+                // Query for the presence of String data in the data object, by type.  In this overload
                 // of GetDataPresent, the method will return true both for native data formats
                 // and when the data can automatically be converted to the specifed format.
 
@@ -167,7 +167,7 @@ namespace DragDropMiscCode
                 DataObject dataObject = new DataObject("Some string data to store...");
 
                 // Query for the presence of Text data in the data object, by data format descriptor string,
-                // and specifying whether auto-convertible data formats are acceptable.  
+                // and specifying whether auto-convertible data formats are acceptable.
 
                 // In this case, Text data is present natively, so GetDataPresent returns "true".
                 string textData = null;
@@ -176,7 +176,7 @@ namespace DragDropMiscCode
                     textData = dataObject.GetData(DataFormats.Text) as string;
                 }
 
-                // In this case, the Text data in the data object can be autoconverted to 
+                // In this case, the Text data in the data object can be autoconverted to
                 // Unicode text, but it is not available natively, so GetDataPresent returns "false".
                 byte[] unicodeData = null;
                 if (dataObject.GetDataPresent(DataFormats.UnicodeText, false /* Auto-convert? */))
@@ -184,7 +184,7 @@ namespace DragDropMiscCode
                     unicodeData = dataObject.GetData(DataFormats.UnicodeText) as byte[];
                 }
 
-                // In this case, the Text data in the data object can be autoconverted to 
+                // In this case, the Text data in the data object can be autoconverted to
                 // Unicode text, so GetDataPresent returns "true".
                 if (dataObject.GetDataPresent(DataFormats.UnicodeText, true /* Auto-convert? */))
                 {
@@ -264,7 +264,7 @@ namespace DragDropMiscCode
                 byte[] data = null;
 
                 // Use the GetDataPresent method to check for the presence of a desired data format.
-                // This particular overload of GetDataPresent looks for both native and auto-convertible 
+                // This particular overload of GetDataPresent looks for both native and auto-convertible
                 // data formats.
                 if (dataObject.GetDataPresent(desiredFormat))
                 {
@@ -297,31 +297,31 @@ namespace DragDropMiscCode
         }
 
         private void ehDragEnter(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehDragLeave(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehDragOver(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehDrop(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehPreviewDragEnter(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehPreviewDragLeave(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehPreviewDragOver(object sender, DragEventArgs args)
-        { 
+        {
             // Code here will fire when the DragEnter event occurs.
         }
         private void ehPreviewDrop(object sender, DragEventArgs args)
@@ -332,11 +332,11 @@ namespace DragDropMiscCode
         private void ClipboardMethods()
         {
             bool persistentData = false;
-            { 
+            {
                 // <Snippet_ContainsDataGetData>
 
                 // After this line executes, IsHTMLDataOnClipboard will be true if
-                // HTML data is available natively on the clipboard; if not, it 
+                // HTML data is available natively on the clipboard; if not, it
                 // will be false.
                 bool IsHTMLDataOnClipboard = Clipboard.ContainsData(DataFormats.Html);
 
@@ -372,12 +372,12 @@ namespace DragDropMiscCode
                 string textData = "I want to put this string on the clipboard.";
                 // The example will enable auto-conversion of data for this data object.
                 bool autoConvert = true;
- 
+
                 // Create a new data object, specifying the data format, data to encapsulate, and enabling
                 // auto-conversion services.
                 DataObject data = new DataObject(DataFormats.UnicodeText, (Object)textData, autoConvert);
-                
-                // If the data to be copied is supposed to be persisted after the application ends, 
+
+                // If the data to be copied is supposed to be persisted after the application ends,
                 // then set the second parameter of SetDataObject to true.
                 if(persistentData)
                 {

@@ -14,19 +14,22 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool install <PACKAGE_NAME> <-g|--global>
-    [--add-source] [--configfile] [--framework]
-    [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> -g|--global
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
 
-dotnet tool install <PACKAGE_NAME> <--tool-path>
-    [--add-source] [--configfile] [--framework]
-    [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME>
-    [--add-source] [--configfile] [--framework]
-    [-v|--verbosity] [--version]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
 
-dotnet tool install <-h|--help>
+dotnet tool install -h|--help
 ```
 
 ## Description

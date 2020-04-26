@@ -14,7 +14,7 @@ namespace SystemTextJsonSamples
   ""Summary"": null
 }";
             Console.WriteLine($"JSON input:\n{jsonString}\n");
-            
+
             // Deserialize default behavior
             var weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString);
             weatherForecast.DisplayPropertyValues();

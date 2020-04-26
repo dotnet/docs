@@ -38,7 +38,7 @@ namespace OffsetPanel
             offsetPanel1.VerticalAlignment = VerticalAlignment.Stretch;
             offsetPanel1.HorizontalAlignment = HorizontalAlignment.Stretch;
 
-            // ********* Add a child TextBlock Element *********         
+            // ********* Add a child TextBlock Element *********
             txt1 = new TextBlock();
             txt1.Text = "This is a line of Text within a TextBlock Element.";
             txt1.Background = Brushes.Red;
@@ -57,7 +57,7 @@ namespace OffsetPanel
             OffsetPanel.SetInflateSize(btn1, 50);
             OffsetPanel.SetShareCoordinates(btn1, false);
 
-            // ********* Add a child Rectangle Element ********* 
+            // ********* Add a child Rectangle Element *********
             rect1 = new Rectangle();
             rect1.Fill = Brushes.Purple;
             OffsetPanel.SetOffsetLeft(rect1, 100);
@@ -69,7 +69,7 @@ namespace OffsetPanel
 			offsetPanel1.Children.Add(txt1);
             offsetPanel1.Children.Add(btn1);
             offsetPanel1.Children.Add(rect1);
-            
+
             // ********* Add the OffsetPanel to the Border *********
             border1.Child = offsetPanel1;
 
@@ -89,7 +89,7 @@ namespace OffsetPanel
             public OffsetPanel() : base()
             {
             }
-            
+
             // <Snippet1>
             // Override the OnRender call to add a Background and Border to the OffSetPanel
             protected override void OnRender(DrawingContext dc)

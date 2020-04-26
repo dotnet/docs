@@ -1,4 +1,4 @@
-﻿// <snippetClientCredentials>   
+﻿// <snippetClientCredentials>
 using System;
 using System.Linq;
 using System.Net;
@@ -37,10 +37,10 @@ namespace NorthwindClient
             LoginWindow login = new LoginWindow();
             login.ShowDialog();
 
-            if (login.DialogResult == true 
+            if (login.DialogResult == true
                 && login.userNameBox.Text != string.Empty
                 && login.passwordBox.SecurePassword.Length != 0)
-            { 
+            {
                 // Instantiate the context.
                 context =
                     new NorthwindEntities(serviceUri);

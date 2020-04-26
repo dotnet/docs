@@ -12,7 +12,7 @@ namespace Microsoft.Samples.BrushExamples
     // Displays the sample.
     public class MyApp : Application
     {
-    
+
         public MyApp()
         {
              AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(currentDomain_UnhandledException);
@@ -28,7 +28,7 @@ namespace Microsoft.Samples.BrushExamples
         {
             // Create the application's main window.
             NavigationWindow myWindow = new NavigationWindow();
-            
+
             // Display the sample
             Page myContent = new SampleViewer();
             myWindow.Navigate(myContent);
@@ -39,16 +39,16 @@ namespace Microsoft.Samples.BrushExamples
         private void currentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
         {
             MessageBox.Show("Unhandled exception: " + args.ExceptionObject.ToString());
-        }         
+        }
     }
-    
+
     // Starts the application.
     internal sealed class EntryClass
     {
         [System.STAThread()]
         private static void Main ()
         {
-            
+
             MyApp app = new MyApp ();
             app.Run ();
         }

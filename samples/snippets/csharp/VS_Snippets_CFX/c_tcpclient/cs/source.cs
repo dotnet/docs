@@ -74,7 +74,7 @@ namespace Microsoft.Security.Samples
         {
             //<snippet2>
             // Create a WSHttpBinding and set its security properties. The
-            // security mode is Message, and the client is authenticated with 
+            // security mode is Message, and the client is authenticated with
             // a certificate.
             EndpointAddress ea = new EndpointAddress("http://contoso.com/");
             WSHttpBinding b = new WSHttpBinding();
@@ -97,7 +97,7 @@ namespace Microsoft.Security.Samples
         {
             //<snippet3>
             // Create a WSHttpBinding and set its security properties. The
-            // security mode is Message, and the client is authenticated with 
+            // security mode is Message, and the client is authenticated with
             // a certificate.
             EndpointAddress ea = new EndpointAddress("http://contoso.com/");
             WSHttpBinding b = new WSHttpBinding();
@@ -111,7 +111,7 @@ namespace Microsoft.Security.Samples
             // Set the client credential value to a valid certificate.
             cc.ClientCredentials.ClientCertificate.SetCertificate(
                 "CN=MyName, OU=MyOrgUnit, C=US",
-                StoreLocation.CurrentUser, 
+                StoreLocation.CurrentUser,
                 StoreName.TrustedPeople);
             //</snippet3>
         }

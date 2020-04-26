@@ -11,12 +11,12 @@ public class Example
       CultureInfo newCulture;
       if (current.Name.Equals("fr-FR"))
          newCulture = new CultureInfo("fr-LU");
-      else   
+      else
          newCulture = new CultureInfo("fr-FR");
-      
+
       CultureInfo.CurrentCulture = newCulture;
-      Console.WriteLine("The current culture is now {0}", 
-                        CultureInfo.CurrentCulture.Name);   
+      Console.WriteLine("The current culture is now {0}",
+                        CultureInfo.CurrentCulture.Name);
    }
 }
 // The example displays output like the following:

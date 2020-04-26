@@ -315,7 +315,7 @@ web server used by ASP.NET Core, is an option here.
 ### Code Access Security (CAS)
 
 Sandboxing, which relies on the runtime or the framework to constrain which
-resources a managed application or library uses or runs isn't supported on .NET
+resources a managed application or library uses or runs, isn't supported on .NET
 Core.
 
 Use security boundaries that are provided by the operating system, such as

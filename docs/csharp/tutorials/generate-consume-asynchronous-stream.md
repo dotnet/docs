@@ -111,7 +111,8 @@ The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives
 ```csharp
 int num = 0;
 var enumerator = runPagedQueryAsync(client, PagedIssueQuery, "docs").GetEnumeratorAsync();
-try {
+try 
+{
     while (await enumerator.MoveNextAsync())
     {
         var issue = enumerator.Current;

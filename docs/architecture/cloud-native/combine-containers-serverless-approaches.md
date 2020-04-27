@@ -26,7 +26,7 @@ To wrap an Azure Function in a Docker container, install the [Azure Functions Co
 func init ProjectName --worker-runtime dotnet --docker
 ```
 
-Once created, the function will include a Dockerfile. You can create and test your function locally. When deploying a function in containers, the ritual of building an image and hosting a container isn't necessary. You write your function code, include a Docker file, and trigger the function. It deploys without additional overhead or configuration.
+When the project is created, it will include a Dockerfile and the worker runtime configured to `dotnet`. Now, you can create and test your function locally. Build and run it using the  `docker build` and `docker run` commands. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 
 When creating Azure functions, you'll want to reference version 3 of the Azure Functions runtime, which targets .NET Core 3.0 and later. [This link](https://docs.microsoft.com/azure/azure-functions/functions-versions) describes the runtime versions available for Azure Functions.
 

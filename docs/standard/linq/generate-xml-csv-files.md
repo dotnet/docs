@@ -1,6 +1,6 @@
 ---
 title: How to generate XML from CSV files - LINQ to XML
-description: You can C# and Visual Basic to create XML from a comma-separated values (CSV) file. The example in this article shows how.
+description: Learn how to create XML from a comma-separated values (CSV) file in C# or Visual Basic.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

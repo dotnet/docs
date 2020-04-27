@@ -51,7 +51,7 @@ You can parse a string in Visual Basic in a similar manner. However, it is more 
 By using XML literals, you can just copy and paste your XML into your Visual Basic program.
 
 > [!NOTE]
-> Parsing text or loading an XML document from a text file is less efficient than functional construction. If you are initializing an XML tree from code, it takes less processor time to use functional construction than to parse text.
+> Parsing text or loading an XML document from a text file is less efficient than functional construction. If you're initializing an XML tree from code, it takes less processor time to use functional construction than to parse text.
 
 ```vb
 Dim contacts as XElement = _

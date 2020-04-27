@@ -36,7 +36,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Run the starter application
 
-You can get the code for the starter application used in this tutorial from our [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) folder.
+You can get the code for the starter application used in this tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) folder.
 
 The starter application is a console application that uses the [GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [dotnet/docs](https://github.com/dotnet/docs) repository. Start by looking at the following code for the starter app `Main` method:
 
@@ -58,7 +58,7 @@ Let's concentrate on the paging algorithm and async structure of the preceding c
 
 After retrieving and restoring a page of results, `runPagedQueryAsync` reports progress and checks for cancellation. If cancellation has been requested, `runPagedQueryAsync` throws an <xref:System.OperationCanceledException>.
 
-There are several elements in this code that can be improved. Most importantly, `runPagedQueryAsync` must allocate storage for all the issues returned. This sample stops at 250 issues because retrieving all open issues would require much more memory to store all the retrieved issues. The protocols for supporting progress and supporting cancellation make the algorithm harder to understand on its first reading. More types and APIs are involved. You must trace the communications through the <xref:System.Threading.CancellationTokenSource> and its associated <xref:System.Threading.CancellationToken> to understand where cancellation is requested and where it's granted.
+There are several elements in this code that can be improved. Most importantly, `runPagedQueryAsync` must allocate storage for all the issues returned. This sample stops at 250 issues because retrieving all open issues would require much more memory to store all the retrieved issues. The protocols for supporting progress reports and cancellation make the algorithm harder to understand on its first reading. More types and APIs are involved. You must trace the communications through the <xref:System.Threading.CancellationTokenSource> and its associated <xref:System.Threading.CancellationToken> to understand where cancellation is requested and where it's granted.
 
 ## Async streams provide a better way
 
@@ -94,7 +94,7 @@ Replace those three lines with the following code:
 
 You can also remove the declaration of `finalResults` earlier in this method and the `return` statement that follows the loop you modified.
 
-You've finished the changes to generate an async stream. The finished method should resemble the code below:
+You've finished the changes to generate an async stream. The finished method should resemble the following code:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateAsyncStream" :::
 
@@ -106,7 +106,7 @@ Replace that code with the following `await foreach` loop:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateAsyncStream" :::
 
-The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
+The new interface <xref:System.Collections.Generic.IAsyncEnumerator%601> derives from <xref:System.IAsyncDisposable>. That means the preceding loop will asynchronously dispose the stream when the loop finishes. You can imagine the loop looks like the following code:
 
 ```csharp
 int num = 0;
@@ -131,11 +131,11 @@ Another extension method, <xref:System.Threading.Tasks.TaskAsyncEnumerableExtens
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 
-You would modify the signature for the async iterator method as follows to optionally support cancellation:
+You would modify the signature for the async iterator method as follows to support cancellation:
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetGenerateWithCancellation" :::
 
-The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?dipslayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator%601> that makes token passed to `GetAsyncEnumerator` to be visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
+The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?dipslayProperty=nameWithType> attribute causes the compiler to generate code for the <xref:System.Collections.Generic.IAsyncEnumerator%601> that makes the token passed to `GetAsyncEnumerator` visible to the body of the async iterator as that argument. Inside `runQueryAsync`, you could examine the state of the token and cancel further work if requested.
 
 You can get the code for the finished tutorial from the [dotnet/docs](https://github.com/dotnet/docs) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) folder.
 

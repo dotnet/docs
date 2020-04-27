@@ -279,5 +279,5 @@ One of the more time-consuming tasks is migrating data from one data platform to
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]
->[Previous](database-per-microservice.md)
+>[Previous](distributed-data.md)
 >[Next](azure-caching.md)

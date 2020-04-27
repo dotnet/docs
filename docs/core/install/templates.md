@@ -120,7 +120,7 @@ Currently installed items:
 
 ## Uninstall template
 
-Templates are installed through the [dotnet new](../tools/dotnet-new.md) SDK command with the `-u` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
+Templates are uninstalled through the [dotnet new](../tools/dotnet-new.md) SDK command with the `-u` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
 
 ### NuGet package
 

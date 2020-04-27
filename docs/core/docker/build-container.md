@@ -74,9 +74,11 @@ The default template creates an app that prints to the terminal and then exits i
 
 > [!TIP]
 > If you're using Visual Studio Code, from the previous terminal session type the following command:
+>
 > ```dotnetcli
 > code .
 > ```
+>
 > This will open the *App* folder that contains the project in Visual Studio Code.
 
 The *Program.cs* should look like the following C# code:
@@ -146,25 +148,26 @@ dotnet publish -c Release
 
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\netcoreapp3.1\publish\`
 
-# [Windows](#tab/windows)
+#### [Windows](#tab/windows)
 
 From the *App* folder, get a directory listing of the publish folder to verify that the *NetCore.Docker.dll* file was created.
 
-```Console
-dir bin\Release\netcoreapp3.1\publish\
+```powershell
+dir .\bin\Release\netcoreapp3.1\publish\
 
- Directory of C:\working-docker\App\bin\Release\netcoreapp3.1\publish
+    Directory: C:\Users\dapine\App\bin\Release\netcoreapp3.1\publish
 
-04/27/2020  08:27 AM    <DIR>          .
-04/27/2020  08:27 AM    <DIR>          ..
-04/27/2020  08:27 AM               434 NetCore.Docker.deps.json
-04/27/2020  08:27 AM             6,144 NetCore.Docker.dll
-04/27/2020  08:27 AM           171,520 NetCore.Docker.exe
-04/27/2020  08:27 AM               860 NetCore.Docker.pdb
-04/27/2020  08:27 AM               154 NetCore.Docker.runtimeconfig.json
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/27/2020   8:27 AM            434 NetCore.Docker.deps.json
+-a----        4/27/2020   8:27 AM           6144 NetCore.Docker.dll
+-a----        4/27/2020   8:27 AM         171520 NetCore.Docker.exe
+-a----        4/27/2020   8:27 AM            860 NetCore.Docker.pdb
+-a----        4/27/2020   8:27 AM            154 NetCore.Docker.runtimeconfig.json
 ```
 
-# [Linux](#tab/linux)
+#### [Linux](#tab/linux)
 
 Use the `ls` command to get a directory listing and verify that the *NetCore.Docker.dll* file was created.
 
@@ -382,7 +385,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 The `docker run` command also lets you modify the `ENTRYPOINT` command from the *Dockerfile* and run something else, but only for that container. For example, use the following command to run `bash` or `cmd.exe`. Edit the command as necessary.
 
-# [Windows](#tab/windows)
+#### [Windows](#tab/windows)
 
 In this example, `ENTRYPOINT` is changed to `cmd.exe`. <kbd>Ctrl+C</kbd> is pressed to end the process and stop the container.
 
@@ -409,7 +412,7 @@ C:\>dir
 C:\>^C
 ```
 
-# [Linux](#tab/linux)
+#### [Linux](#tab/linux)
 
 In this example, `ENTRYPOINT` is changed to `bash`. The `exit` command is run which ends the process and stop the container.
 

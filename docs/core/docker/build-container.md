@@ -57,20 +57,14 @@ docker-working
             └──project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. First, changes directories and navigate into the *App* folder.
-
-```dotnetcli
-cd App
-```
-
-Execute the `dotnet run` command. The application will run, and print `Hello World!` below the command:
+The `dotnet new` command creates a new folder named *App* and generates a "Hello World" console application. Change directories and navigate into the *App* folder, from your terminal session. Use the `dotnet run` command to start the app. The application will run, and print `Hello World!` below the command:
 
 ```dotnetcli
 dotnet run
 Hello World!
 ```
 
-The default template creates an app that prints to the terminal and then exits immediately terminates. For this tutorial, you'll use an app that loops indefinitely. Open the *Program.cs* file in a text editor.
+The default template creates an app that prints to the terminal and then immediately terminates. For this tutorial, you'll use an app that loops indefinitely. Open the *Program.cs* file in a text editor.
 
 > [!TIP]
 > If you're using Visual Studio Code, from the previous terminal session type the following command:
@@ -140,7 +134,7 @@ If you pass a number on the command line to the app, it will only count up to th
 
 ## Publish .NET Core app
 
-Before adding the .NET Core app to the Docker image, first it must be published. It is best to have the container run the published version of the app. To publish the app, execute the following command:
+Before adding the .NET Core app to the Docker image, first it must be published. It is best to have the container run the published version of the app. To publish the app, run the following command:
 
 ```dotnetcli
 dotnet publish -c Release
@@ -175,6 +169,8 @@ Use the `ls` command to get a directory listing and verify that the *NetCore.Doc
 me@DESKTOP:/docker-working/app$ ls bin/Release/netcoreapp3.1/publish
 NetCore.Docker.deps.json  NetCore.Docker.dll  NetCore.Docker.pdb  NetCore.Docker.runtimeconfig.json
 ```
+
+---
 
 ## Create the Dockerfile
 

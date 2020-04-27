@@ -41,7 +41,7 @@ HRESULT GetRuntimeNameByAddress(
 [in] A CLRDATA_ADDRESS that stores the virtual memory address.
 
 `flags`\
-[in] Set to '0' 
+[in] Set to '0'
 
 `bufLen`\
 [in] The length of the buffer.
@@ -57,7 +57,7 @@ HRESULT GetRuntimeNameByAddress(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 16th slot of the virtual method table. 
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 16th slot of the virtual method table.
 
 > [!NOTE]
 Returns S_FALSE if the buffer is not large enough for the name, and sets nameLen to be the buffer length needed.

@@ -68,6 +68,7 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
+- [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
 
 ### RuntimeIdentifier
@@ -94,6 +95,20 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
   <PropertyGroup>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
   </PropertyGroup>
+</Project>
+```
+
+### TrimmerRootAssembly
+
+The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
+
+The following XML excludes the `System.Security` assembly from trimming.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <TrimmerRootAssembly Include="System.Security" />
+  </ItemGroup>
 </Project>
 ```
 

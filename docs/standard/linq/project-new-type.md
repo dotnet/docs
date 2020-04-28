@@ -10,7 +10,7 @@ ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
 
 # How to project a new type (LINQ to XML)
 
-Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they aren't appropriate for every scenario. In many cases you will want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
+Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they aren't appropriate for every scenario. In many cases, you'll want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
 
 ## Example: Define a new type and have the `select` statement create an instance of the type
 
@@ -72,13 +72,15 @@ Public Class Program
 End Class
 ```
 
-This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the article [How to retrieve a single child element](retrieve-single-child-element.md). It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.
+This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the [How to retrieve a single child element](retrieve-single-child-element.md) article. It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.
 
-The example produces the following output:
+The example produces this output:
 
 ```output
 Lawnmower:1
 Baby Monitor:2
 ```
+
+## See also
 
 - [Projections and Transformations (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

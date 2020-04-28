@@ -14,17 +14,17 @@ As a summary and key takeaways, here are important conclusions from this guide.
 
 - Following **CNCF guidelines**, cloud-native applications embrace six important pillars as shown in Figure 12-1:
 
-![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
+  ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
 
-**Figure 12-1**. Cloud-native foundational pillars
+  **Figure 12-1**. Cloud-native foundational pillars
 
-  * These cloud-native pillars include:
-    * The cloud and its underlying service model
-    * Modern design principles
-    * Microservices
-    * Containerization and container orchestration
-    * Cloud-based backing services, such as databases and message brokers
-    * Automation, including Infrastructure as Code and code deployment
+- These cloud-native pillars include:
+  - The cloud and its underlying service model
+  - Modern design principles
+  - Microservices
+  - Containerization and container orchestration
+  - Cloud-based backing services, such as databases and message brokers
+  - Automation, including Infrastructure as Code and code deployment
 
 - Cloud-native applications are containerized and commonly hosted in **Kubernetes**. Smaller, simple services are sometimes hosted in serverless platforms, such as Azure Functions. Both environments provide automatic scaling to handle fluctuating workload volumes.
 

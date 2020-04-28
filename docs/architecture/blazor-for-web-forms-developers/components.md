@@ -585,7 +585,7 @@ When using a templated component, the template parameters can be specified using
     <Heading>
         <h1>My list</h1>
     </Heading>
-    <ItemTemplate Content="message">
+    <ItemTemplate Context="message">
         <p>The message is: @message</p>
     </ItemTemplate>
 </SimpleListView>

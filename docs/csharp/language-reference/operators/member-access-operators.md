@@ -132,6 +132,9 @@ In the preceding example, if you don't use the `??` operator, `numbers?.Length <
 
 The null-conditional member access operator `?.` is also known as the Elvis operator.
 
+> [!NOTE]
+> The null conditional operators can interact with the [null forgiving operator](null-forgiving.md) in unexpected ways. In C# 8 the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation `z` is evaluated even if `x` is null, which may result in a <xref:System.NullReferenceException>.
+
 ### Thread-safe delegate invocation
 
 Use the `?.` operator to check if a delegate is non-null and invoke it in a thread-safe way (for example, when you [raise an event](../../../standard/events/how-to-raise-and-consume-events.md)), as the following code shows:

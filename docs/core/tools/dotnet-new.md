@@ -498,6 +498,10 @@ Each project template may have additional options available. The core templates 
 - **`--use-browserlink`**
 
   Includes BrowserLink in the project. Option not available in .NET Core 2.2 and 3.1 SDK.
+  
+  - **`-rrc|--razor-runtime-compilation`**
+  
+  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1.201 SDK.
 
 ***
 

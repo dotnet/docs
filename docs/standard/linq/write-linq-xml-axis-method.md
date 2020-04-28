@@ -1,6 +1,6 @@
 ---
 title: How to write a LINQ to XML axis method - LINQ to XML
-description: You can write your own axis methods to retrieve collections from an XML tree, methods that meet the needs of your applications. Writing extension methods is one of the best ways to do this. The article provides an example for C# and Visual Basic.
+description: Learn how to write your own axis methods to retrieve collections from an XML tree in C# or Visual Basic.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

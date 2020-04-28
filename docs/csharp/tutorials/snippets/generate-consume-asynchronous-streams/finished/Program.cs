@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Octokit;
+using System.Runtime.CompilerServices;
 
 namespace GitHubActivityReport
 {
@@ -67,7 +69,22 @@ namespace GitHubActivityReport
                 Console.WriteLine($"Received {++num} issues in total");
             }
             // </SnippetEnumerateAsyncStream>
+
         }
+
+        // <SnippetEnumerateWithCancellation>
+        private static async Task EnumerateWithCancellation(GitHubClient client)
+        {
+            int num = 0;
+            var cancellation = new CancellationTokenSource();
+            await foreach (var issue in runPagedQueryAsync(client, PagedIssueQuery, "docs")
+                .WithCancellation(cancellation.Token))
+            {
+                Console.WriteLine(issue);
+                Console.WriteLine($"Received {++num} issues in total");
+            }
+        }
+        // </SnippetEnumerateWithCancellation>
 
         // <SnippetGenerateAsyncStream>
         // <SnippetUpdateSignature>
@@ -109,6 +126,45 @@ namespace GitHubActivityReport
             JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"];
         }
         // </SnippetGenerateAsyncStream>
+
+        // <SnippetGenerateWithCancellation>
+        private static async IAsyncEnumerable<JToken> runPagedQueryAsync(GitHubClient client,
+            string queryText, string repoName, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+        {
+            var issueAndPRQuery = new GraphQLRequest
+            {
+                Query = queryText
+            };
+            issueAndPRQuery.Variables["repo_name"] = repoName;
+
+            bool hasMorePages = true;
+            int pagesReturned = 0;
+            int issuesReturned = 0;
+
+            // Stop with 10 pages, because these are large repos:
+            while (hasMorePages && (pagesReturned++ < 10))
+            {
+                var postBody = issueAndPRQuery.ToJsonText();
+                var response = await client.Connection.Post<string>(new Uri("https://api.github.com/graphql"),
+                    postBody, "application/json", "application/json");
+
+                JObject results = JObject.Parse(response.HttpResponse.Body.ToString());
+
+                int totalCount = (int)issues(results)["totalCount"];
+                hasMorePages = (bool)pageInfo(results)["hasPreviousPage"];
+                issueAndPRQuery.Variables["start_cursor"] = pageInfo(results)["startCursor"].ToString();
+                issuesReturned += issues(results)["nodes"].Count();
+
+                // <SnippetYieldReturnPage>
+                foreach (JObject issue in issues(results)["nodes"])
+                    yield return issue;
+                // </SnippetYieldReturnPage>
+            }
+
+            JObject issues(JObject result) => (JObject)result["data"]["repository"]["issues"];
+            JObject pageInfo(JObject result) => (JObject)issues(result)["pageInfo"];
+        }
+        // </SnippetGenerateWithCancellation>
 
         private static string GetEnvVariable(string item, string error, string defaultValue)
         {

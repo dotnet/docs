@@ -1,92 +1,95 @@
 ---
 title: Deploying Modern Desktop Applications
-description: Everything you need to know about deploying for modern desktop applications.
+description: Everything you need to know about deploying modern desktop applications.
 ms.date: 09/16/2019
 ---
 
 # Deploying Modern Desktop Applications
 
-## Introduction
-
-When you develop desktop applications, besides other development aspects, you
-also have to think about how your application is going to be packaged and
-deployed to the final users' machines. The problem with packaging, deployment,
+When you develop desktop applications, one thing to consider is
+how your application is going to be packaged and deployed to the 
+users' machines. The problem with packaging, deployment,
 and installation is that it usually falls under the umbrella of the IT
-professionals who care about different things than developers.
+professionals, who care about different things than developers.
 
-These days we are all familiar with the DevOps concept where developers and IT
-pros work closely to move applications to their production environments. But if
-you have been in the desktop battle for more than 10 years you might have witnessed a following tory. A team of developers works together hard to meet the
+These days, we're all familiar with the DevOps concept, where developers and IT
+Pros work closely to move applications to their production environments. But if
+you've been in the desktop battle for more than 10 years, you might have seen the following story. A team of developers works together hard to meet the
 project deadlines. Business people are nervous since they need the system working
-on numerous user's machines to run the company. On the "D-Day", the
-project manager checks with every developer that their code is working well,
-everything is fine, they can ship. Then the package team comes in generating the
+on many user's machines to run the company. On "D-Day", the
+project manager checks with every developer that their code is working well and that everything is fine, so they can ship. Then, the package team comes in generating the
 setup for the app, distribute it to every user machine and a set of
-test users run the application. Well, they try, because before showing any UI
+test users run the application. Well, they try, because before showing any UI,
 the application throws an exception that says "Method ~ of object ~ failed".
 Panic starts flowing through the air and a brief investigation points to a young
 and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
 
-Installing desktop applications have traditionally been of  a nightmare for
-two main reasons: a lack of culture of close collaboration between dev and IT
-teams and a lack of a solid packaging a deploying technology we can build upon.
-In fact, we have been leaving with the fact that sometimes you regret to install
-an app because it ends up having some undesired side effects and some already
-installed applications stop working. Moreover, you cannot just restore the
-system to its original state by uninstalling. We are so used to live this
-situation that we have coined terms like "DLL Hell" or "Winrot".
+Installing desktop applications have traditionally been a nightmare for
+two main reasons: 
 
-In this chapter, we talk about MSIX the brand-new technology from Microsoft that
+- Lack of close collaboration culture between dev and IT teams.
+- Lack of a solid packaging and deploying technology we can build upon.
+
+In fact, we've been living with the fact that sometimes you regret that you installed
+an app because:
+
+- It ends up having some undesired side effects on your machine.
+- Some applications that were previously installed stop working. 
+
+Additionally, you can't just restore the system to its original state by uninstalling the app. We're so used to live this situation that we've coined terms like "DLL Hell" or "Winrot".
+
+In this chapter, we'll talk about MSIX. MSIX is the brand-new technology from Microsoft that
 tries to capture the best of previous technologies to provide a solid foundation
 for the packaging technology of the future.
 
 What does a packaging technology have to do with modernization? Well, it turns
 out that packaging is fundamental for the enterprise IT with lots of money
-invested there. Modernization is not only related with using the latest
-technologies but also with reducing time to market between a business
-requirement is defined and the moment your company delivers the feature to your
+invested there. Modernization isn't only related to using the latest
+technologies. It's also related to reducing time to market from the moment a business
+requirement is defined until your company delivers the feature to your
 client.
 
 ## The modern application lifecycle
 
 Today, developers write and build the code for an app and then pass the
-generated assets to the IT pros who reconfigure the app and repackage it
-typically in an MSI or more recent App-V packaging format, which is deployed
+generated assets to the IT Pros. Then, the IT Pros reconfigure the app and repackage it,
+typically in an MSI or more recently in an App-V packaging format. The app is then deployed
 through different channels and tools. One of the main problems with this
 approach is commonly known as "packaging paralysis". The problem is that this
-cycle repeats every time there is an App update or an OS Update.
+cycle repeats every time there's an app update or an OS update.
 
-We can see the process reflected on this picture:
+You can see the process reflected on the following picture:
 
-![Modern IT](media\deploying-modern-desktop-applications\modern-it.png)
+![Diagram showing the modern IT lifecyle](./media/deploying-modern-desktop-applications/modern-it-application-lifecycle.png)
 
-Companies need a way to break in this packaging cycle three independent cycles:
+Companies need a way to break this packaging cycle into three independent cycles:
 
-* OS Updates
-* Application Updates
+* OS updates
+* Application updates
 * Customization
 
-![IT cycles](media\deploying-modern-desktop-applications\it-cycles.png)
+![Diagram showing the modern IT virtuous cycles](./media/deploying-modern-desktop-applications/modern-it-virtuous-cycles.png)
 
-This means we should be able to update the underlying OS without having to
-repackage our apps or enable customizations from IT without the need to
-repackage the original developer package.
+The previous diagram shows that you can:
 
-This radical change leads us to the new and modern IT lifecycle depicted in the
+- Update the underlying OS without having to repackage your apps.
+- Enable customizations from IT without the need to repackage the original developer package.
+
+This radical change leads us to the new and modern IT lifecycle as shown in the
 following picture:
 
 ![Microsoft IT tools](media\deploying-modern-desktop-applications\microsoft-it-tools.png)
 
-Developers create the app and generate an MSIX package that IT pros can consume
+Developers create the app and generate an MSIX package that IT Pros can consume
 and configure without the need of repackaging. Along with the MSIX technology,
 Microsoft has created tools to allow IT to customize and configure packages
 without repackaging.
 
 ## MSIX: The next generation of deployment
 
-Before MSIX, we had several packaging technologies available like setup wizards,
-MSI, ClickOnce, App-V, and scripting. Each of  technologies has their strengths and
-Microsoft has decided to pick the best of all to build MSIX. Therefore, MSIX is
+Before MSIX, there were several packaging technologies available like setup wizards,
+MSI, ClickOnce, App-V, and scripting. Each of these technologies has their own strengths and
+Microsoft has decided to pick the best of all to build MSIX. MSIX is
 built on the foundations of these existing technologies picking the best of
 each:
 
@@ -94,13 +97,13 @@ each:
 * ClickOnce =\> Auto updating
 * MSI =\> Easy to distribute
 
-With MSIX, we get one installer technology with all these features.
+With MSIX, you get one installer technology with all these features.
 
-![MSIX](media\deploying-modern-desktop-applications\msix.png)
+![Diagram showing the different technologies that had an impact on building MSIX](./media/deploying-modern-desktop-applications/msix.png)
 
 ### Benefits of MSIX
 
-#### Never regret installing an App
+#### Never regret installing an app
 
 MSIX provides a predictable, reliable, and safe deployment. The declarative
 method contained in the package manifest lets the OS keep track of every asset
@@ -109,29 +112,29 @@ effects.
 
 #### Disk space optimization
 
-MSIX is optimized to reduce the footprint and application has on the user's
-machine disk space. It creates a single instance storage of your files, meaning
-that if you have two different packages with the same DLL, it is not installed
-twice. The platform takes care of that because it knows all the files that are
-installed by a particular app thanks to its declarative nature. It also allows
+MSIX is optimized to reduce the footprint that an application has on the user's
+machine disk space. It creates a single instance storage of your files. That is, 
+if you have two different packages with the same DLL, the DLL isn't installed
+twice. The platform takes care of that problem because it knows all the files that
+a particular app installed thanks to its declarative nature. It also allows
 you to have different versions of a DLL working side by side.
 
-With the use of Resource packages, you can easily create Multilingual apps and
+With the use of resource packages, you can easily create multilingual apps and
 the OS takes care of installing the ones that are used.
 
 #### Network optimization
 
 MSIX detects the differences on the files at the byte block level enabling a
-feature called Differential Updates. What this means it that only the updated
+feature called differential updates. What this means it that only the updated
 byte blocks are downloaded on application updates.
 
-![MSIX managing updates](media\deploying-modern-desktop-applications\msix-managing-updates.png)
+![A diagram that shows how MSIX manages differential updates](./media/deploying-modern-desktop-applications/msix-managing-updates.png)
 
-With Streaming installation, the user can start working on your application
-quickly while other parts of the app are downloaded on the background.
+With streaming installation, the user can quickly start working on your application
+while other parts of the app are downloaded on the background.
 This feature contributes to an engaging experience for your users.
 
-Through optional packages feature you achieve componentization on your app
+With the optional packages feature, you achieve componentization on your app
 deployment, so you can download them when needed.
 
 #### Simple packaging and deployment
@@ -140,19 +143,20 @@ The AppManifest declares the versioning, device targeting and identify in a
 standard way for every application. It also provides a way to sign your assets
 providing a solid security foundation.
 
-#### OS Managed
+#### OS managed
 
-The OS handles all the processes for installation, updating and removing an
+The OS handles all the processes for installing, updating, and removing an
 application. Applications are installed per user but downloaded only once,
 minimizing the disk footprint. Microsoft is working on providing the MSIX
 experience also on Windows 7.
 
 #### Windows provides integrity for the app
 
-With the use of digital signatures, you can guarantee that you don't install
-application from untrusted sources. MSIX also prevents tampering because it
-keeps a record of file hashes and detects on file has been modified after
-installation.
+With the use of digital signatures, you can guarantee that you don't install an
+application from untrusted sources. MSIX also prevents tampering because:
+
+- It keeps a record of file hashes.
+- It detects if a file has been modified after installation.
 
 #### Works for the entire App Catalog
 
@@ -180,22 +184,22 @@ having the source code.
 #### Package Support Framework
 
 The Package Support Framework is an open-source kit that helps you apply fixes
-to your existing win32 application when you don't have access to the source
+to your existing Win32 application when you don't have access to the source
 code, so that it can run in an MSIX container. The Package Support Framework
 helps your application follow the best practices of the modern runtime
 environment.
 
 #### App Installer
 
-App Installer allows for Windows 10 apps to be installed by double-clicking the
+App Installer allows Windows 10 apps to be installed by double-clicking the
 app package. This means that users don't need to use PowerShell or other
 developer tools to deploy Windows 10 apps. The App Installer can also install an
 app from the web, optional packages, and related sets.
 
 ## How to create an MSIX package from an existing Win32 desktop application
 
-Let's see the steps you have to take to create an MSIX package from an existing
-Win32 application, a Windows Forms app in this case.
+Let's go through the process to create an MSIX package from an existing
+Win32 application. In this example, we'll use a Windows Forms app.
 
 To start, add a new project to your solution, select the Windows Application
 Packaging Project and give it a name.
@@ -221,7 +225,7 @@ from a given image present on your project just by clicking *Create*.
 
 ![Manifest Designer](media\deploying-modern-desktop-applications\manifest-designer.png)
 
-If you open the code for the, Package.appxmanifest` you can see a couple of
+If you open the code for the *Package.appxmanifest* file, you can see a couple of
 interesting things.
 
 Right under `<Package>` there is an `<Identity>` node. This is where your packaged application is going to get its identity to let the OS manage it.

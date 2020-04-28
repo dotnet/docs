@@ -172,13 +172,13 @@ Web projects aren't packable by default. To override the default behavior, add t
   dotnet pack --runtime win10-x64
   ```
 
-- Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
+- Pack the project using a *.nuspec* file:
 
   ```dotnetcli
   dotnet pack ~/projects/app1/project.csproj -p:NuspecFile=~/projects/app1/project.nuspec -p:NuspecBasePath=~/projects/app1/nuget
   ```
 
-  For more information about how to use `NuspecFile`, `NuspecBasePath`, and `NuspecProperties`, see the following resources:
+  For information about how to use `NuspecFile`, `NuspecBasePath`, and `NuspecProperties`, see the following resources:
   
   - [Packing using a .nuspec](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Advanced extension points to create customized package](https://docs.microsoft.com/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)

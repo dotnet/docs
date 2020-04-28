@@ -238,7 +238,7 @@ typedef struct _STRRET
 
 The above `struct` is declared with Windows' headers that influence the memory layout of the type. When defined in a managed environment, these layout details are needed to properly interoperate with native code.
 
-The correct managed definition of this type in a 32-bit process would be:
+The correct managed definition of this type in a 32-bit process is:
 
 ``` CSharp
 [StructLayout(LayoutKind.Explicit, Size = 264)]

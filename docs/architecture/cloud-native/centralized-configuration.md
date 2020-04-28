@@ -17,7 +17,7 @@ The Azure cloud presents several great options.
 ## Azure App Configuration
 
 [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) is a fully managed Azure service that stores non-secret configuration settings in a secure, centralized location. Stored values can be shared among multiple services and applications.
- 
+
 The service is simple to use and provides several benefits:
 
 - Flexible key/value representations and mappings

@@ -9,11 +9,11 @@ zone_pivot_groups: operating-systems-set-one
 
 # How to remove the .NET Core Runtime and SDK
 
-Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core from your machine. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](selection.md).
+Over time, as you install updated versions of the .NET Core runtime and SDK, you may want to remove outdated versions of .NET Core from your machine. Removing older versions of the runtime may change the runtime chosen to run shared framework applications, as detailed in the article on [.NET Core version selection](../versions/selection.md).
 
 ## Should I remove a version?
 
-The [.NET Core version selection](selection.md) behaviors and the runtime compatibility of .NET Core across updates enables safe removal of previous versions. .NET Core runtime updates are compatible within a major version 'band' such as 1.x and 2.x. Additionally, newer releases of the .NET Core SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
+The [.NET Core version selection](../versions/selection.md) behaviors and the runtime compatibility of .NET Core across updates enables safe removal of previous versions. .NET Core runtime updates are compatible within a major version 'band' such as 1.x and 2.x. Additionally, newer releases of the .NET Core SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
 
 In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where keeping older SDK or Runtime versions include maintaining *project.json*-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
 
@@ -105,13 +105,13 @@ The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-c
 
 Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
 
-| Visual Studio version | .NET Core SDK version |
-| -- | -- |
+| Visual Studio version           | .NET Core SDK version          |
+|---------------------------------|--------------------------------|
 | Visual Studio 2019 version 16.2 | .NET Core SDK 2.2.4xx, 2.1.8xx |
 | Visual Studio 2019 version 16.1 | .NET Core SDK 2.2.3xx, 2.1.7xx |
 | Visual Studio 2019 version 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
 | Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
-| Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
+| Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx          |
 
 Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Apps & features** dialog.
 

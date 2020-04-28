@@ -1,10 +1,10 @@
 ---
 title: Remove the .NET Core runtime and SDK
 description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
-ms.date: 04/22/2020
-author: billwagner
-ms.author: wiwagn
-ms.custom: "updateeachrelease"
+author: thraka
+ms.author: adegeo
+ms.date: 04/28/2020
+zone_pivot_groups: operating-systems-set-one
 ---
 
 # How to remove the .NET Core Runtime and SDK
@@ -15,181 +15,25 @@ Over time, as you install updated versions of the .NET Core runtime and SDK, you
 
 The [.NET Core version selection](selection.md) behaviors and the runtime compatibility of .NET Core across updates enables safe removal of previous versions. .NET Core runtime updates are compatible within a major version 'band' such as 1.x and 2.x. Additionally, newer releases of the .NET Core SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
 
-In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where keeping older SDK or Runtime versions include maintaining **project.json**-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
+In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where keeping older SDK or Runtime versions include maintaining *project.json*-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
 
 ## Determine what is installed
 
-Starting with .NET Core 2.1, the .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. The following text shows typical output for Windows, macOS, or Linux:
-
-<!-- markdownlint-disable MD025 -->
-
-# [Windows](#tab/windows)
-
-By running the following command:
-
-```dotnetcli
-dotnet --list-sdks
-```
-
-You get output similar to the following:
-
-```console
-2.1.200-preview-007474 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007480 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007509 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007570 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007576 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007587 [C:\Program Files\dotnet\sdk]
-2.1.200-preview-007589 [C:\Program Files\dotnet\sdk]
-2.1.200 [C:\Program Files\dotnet\sdk]
-2.1.201 [C:\Program Files\dotnet\sdk]
-2.1.202 [C:\Program Files\dotnet\sdk]
-2.1.300-preview2-008533 [C:\Program Files\dotnet\sdk]
-2.1.300 [C:\Program Files\dotnet\sdk]
-2.1.400-preview-009063 [C:\Program Files\dotnet\sdk]
-2.1.400-preview-009088 [C:\Program Files\dotnet\sdk]
-2.1.400-preview-009171 [C:\Program Files\dotnet\sdk]
-```
-
-And by running the following command:
-
-```dotnetcli
-dotnet --list-runtimes
-```
-
-You get output similar to the following:
-
-```console
-Microsoft.AspNetCore.All 2.1.0-preview2-final [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.0-preview2-final [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 2.0.6 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.7 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.9 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0-preview2-26406-04 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-```
-
-# [Linux](#tab/linux)
-
-By running the following command:
-
-```dotnetcli
-dotnet --list-sdks
-```
-
-You get output similar to the following:
-
-```console
-1.0.1 [/usr/share/dotnet/sdk]
-1.0.4 [/usr/share/dotnet/sdk]
-2.0.0-preview1-005977 [/usr/share/dotnet/sdk]
-2.0.0-preview2-006497 [/usr/share/dotnet/sdk]
-2.0.0 [/usr/share/dotnet/sdk]
-2.1.4 [/usr/share/dotnet/sdk]
-2.1.300-preview2-008530 [/usr/share/dotnet/sdk]
-2.1.300 [/usr/share/dotnet/sdk]
-2.1.301 [/usr/share/dotnet/sdk]
-```
-
-And by running the following command:
-
-```dotnetcli
-dotnet --list-runtimes
-```
-
-You get output similar to the following:
-
-```console
-Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.1 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 1.0.4 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.0.5 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.2 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.5 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
-```
-
-# [macOS](#tab/macos)
-
-By running the following command:
-
-```dotnetcli
-dotnet --list-sdks
-```
-
-You get output similar to the following:
-
-```console
-1.0.1 [/usr/local/share/dotnet/sdk]
-1.0.4 [/usr/local/share/dotnet/sdk]
-2.0.0-preview1-005977 [/usr/local/share/dotnet/sdk]
-2.0.0-preview2-006497 [/usr/local/share/dotnet/sdk]
-2.0.0 [/usr/local/share/dotnet/sdk]
-2.1.4 [/usr/local/share/dotnet/sdk]
-2.1.300-preview2-008530 [/usr/local/share/dotnet/sdk]
-2.1.300 [/usr/local/share/dotnet/sdk]
-2.1.301 [/usr/local/share/dotnet/sdk]
-```
-
-And by running the following command:
-
-```dotnetcli
-dotnet --list-runtimes
-```
-
-You get output similar to the following:
-
-```console
-Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.All 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
-Microsoft.AspNetCore.App 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.AspNetCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
-Microsoft.NETCore.App 1.0.4 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 1.1.2 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview1-002111-00 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0-preview2-25407-01 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0-preview2-26406-04 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
-```
-
----
+Starting with .NET Core 2.1, the .NET CLI has options you can use to list the versions of the SDK and runtime that are installed on your machine.  Use [`dotnet --list-sdks`](../tools/dotnet.md#options) to see the list of SDKs installed on your machine. Use [`dotnet --list-runtimes`](../tools/dotnet.md#options) to see the list of runtimes installed on your machine. For more information, see [How to check that .NET Core is already installed](how-to-detect-installed-versions.md).
 
 ## Uninstall .NET Core
 
-# [Windows](#tab/windows)
+::: zone pivot="os-windows"
 
-.NET Core uses the Windows **Add/Remove Programs** dialog to remove versions of the .NET Core runtime and SDK. The following figure shows the **Add/Remove Programs** dialog with several versions of the .NET runtime and SDK installed.
+.NET Core uses the Windows **Apps & features** dialog to remove versions of the .NET Core runtime and SDK. The following figure shows the **Apps & features** dialog. You can search for **core sdk** to filter and show installed versions of .NET Core.
 
 ![Add / Remove programs to remove .NET Core](./media/remove-runtime-sdk-versions/programs-and-features.png)
 
 Select any versions you want to remove from your machine and click **Uninstall**.
 
-# [Linux](#tab/linux)
+::: zone-end
+
+::: zone pivot="os-linux"
 
 There are more options to uninstall .NET Core (either SDK or runtime) on Linux. The best way for you to uninstall .NET Core is to mirror the action you used to install .NET Core. The specifics depend on your chosen distribution and the installation method.
 
@@ -234,7 +78,9 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
-# [macOS](#tab/macos)
+::: zone-end
+
+::: zone pivot="os-macos"
 
 On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. To be clear, this deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
@@ -249,7 +95,7 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/$version
 
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
----
+::: zone-end
 
 ## .NET Core Uninstall Tool
 
@@ -257,7 +103,7 @@ The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-c
 
 ## Visual Studio dependency on .NET Core SDK versions
 
-Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Add/Remove Programs** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
+Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Apps & features** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
 
 | Visual Studio version | .NET Core SDK version |
 | -- | -- |
@@ -267,20 +113,20 @@ Before Visual Studio 2019 version 16.3, Visual Studio installers called the stan
 | Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
 | Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
 
-Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
+Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Apps & features** dialog.
 
 ## Remove the NuGet fallback folder
 
-Before .NET Core 3.0 SDK, the .NET Core SDK installers used the *NuGetFallbackFolder* to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
+Before .NET Core 3.0 SDK, the .NET Core SDK installers used a folder named *NuGetFallbackFolder* to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The *NuGetFallbackFolder* is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
 
 You may want to remove this folder, if:
 
-* You're only developing using .NET Core 3.0 SDK or later versions.
-* You're developing using .NET Core SDK versions earlier than 3.0, but you can work online and things can be slower once.
+- You're only developing using .NET Core 3.0 SDK or later versions.
+- You're developing using .NET Core SDK versions earlier than 3.0, but you can work online and things can be slower once.
 
 If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.
 
 It's not recommended to delete the *dotnet* folder. Doing so would remove any global tools you've previously installed. Also, on Windows:
 
 - You'll break Visual Studio 2019 version 16.3 and later versions. You can run **Repair** to recover.
-- If there are .NET Core SDK entries in the **Add/Remove Programs** dialog, they'll be orphaned.
+- If there are .NET Core SDK entries in the **Apps & features** dialog, they'll be orphaned.

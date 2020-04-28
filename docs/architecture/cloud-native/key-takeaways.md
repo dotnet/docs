@@ -28,8 +28,6 @@ As a summary and key takeaways, here are important conclusions from this guide.
 
 - Cloud-native applications are containerized and commonly hosted in **Kubernetes**. Smaller, simple services are sometimes hosted in serverless platforms, such as Azure Functions. Both environments provide automatic scaling to handle fluctuating workload volumes.
 
-**Service communication** becomes a significant design decision when constructing a cloud-native application. Applications typically 
-
 - **Service communication** becomes a significant design decision when constructing a cloud-native application. Applications typically expose an API gateway to manage front-end client communication. Then backend microservices strive to communicate with each other implementing asynchronous communication patterns, when possible.
 
 - **gRPC** is a modern, high-performance framework that evolves the age-old remote procedure call (RPC) protocol. Cloud-native applications often embrace gRPC to streamline messaging between back-end services. gRPC uses HTTP/2 for its transport protocol. It can be up to 8x faster than JSON serialization with message sizes 60-80% smaller. gRPC is open source and managed by the Cloud Native Computing Foundation (CNCF).

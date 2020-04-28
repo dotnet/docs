@@ -31,6 +31,7 @@ The following breaking changes are documented on this page:
 - [Hosting: HTTPS redirection enabled for IIS out-of-process apps](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
 - [Hosting: IHostingEnvironment and IApplicationLifetime types replaced](#hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced)
 - [Hosting: ObjectPoolProvider removed from WebHostBuilder dependencies](#hosting-objectpoolprovider-removed-from-webhostbuilder-dependencies)
+- [HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](#http-kestrel-and-iis-badhttprequestexception-types-marked-obsolete-and-replaced)
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [HTTP: DefaultHttpContext extensibility removed](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP: HeaderNames fields changed to static readonly](#http-headernames-constants-changed-to-static-readonly)
@@ -76,6 +77,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
+
+***
+
+[!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
 
 ***
 

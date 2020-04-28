@@ -49,6 +49,6 @@ As a summary and key takeaways, here are important conclusions from this guide.
 - **Infrastructure as Code** is a widely accepted practice that automates platform provisioning. Your infrastructure and deployments are automated, consistent, and repeatable. Tools like Azure Resource Manager, Terraform, and the Azure CLI, enable you to declaratively script the cloud infrastructure you require.
 
 - **Code automation** is a requirement for cloud-native applications. Modern CI/CD systems help fulfill this principle. They provide separate build and deployment steps that help ensure consistent and quality code. The build stage transforms the code into a binary artifact. The release stage picks up the binary artifact, applies external environment configuration, and deploys it to a specified environment. Azure DevOps and GitHub are full-featured DevOps environments.
- 
+
 >[!div class="step-by-step"]
->[Previous](secure-net-microservices-web-applications/azure-key-vault-protects-secrets.md)
+>[Previous](application-bundles.md)

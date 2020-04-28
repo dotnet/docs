@@ -258,7 +258,7 @@ public struct STRRET_32
 }
 ```
 
-Where as on a 64-bit process, the correct layout would be:
+On a 64-bit process, the size *and* field offsets are different. The correct layout is:
 
 ``` CSharp
 [StructLayout(LayoutKind.Explicit, Size = 272)]

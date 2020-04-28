@@ -55,7 +55,9 @@ Performance and scalability are especially relevant for microservices architectu
 
 ### Side by side .NET versions per application level
 
-To install applications with dependencies on different versions of .NET, we recommend .NET Core. .NET Core offers side-by-side installation of different versions of the .NET Core runtime on the same machine. This side-by-side installation allows multiple services on the same server, each of them on its own version of .NET Core. It also lowers risks and saves money in application upgrades and IT operations.
+To install applications with dependencies on different versions of .NET, we recommend .NET Core. .NET Core supports side-by-side installation of different versions of the .NET Core runtime on the same machine. This side-by-side installation allows multiple services on the same server, each of them on its own version of .NET Core. It also lowers risks and saves money in application upgrades and IT operations.
+
+Side-by-side installation isn’t possible with .NET Framework. It’s a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
 
 ## When to choose .NET Framework
 

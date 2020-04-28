@@ -23,7 +23,7 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
     The preceding example assumes that the properties of the `DataColumn` are not nullable value types. To handle properties with nullable value types, use the following code:
 
     ```csharp
-    DataColumn dc = table.Columns.Contains(f.Name) ? table.Columns[f.Name] : table.Columns.Add(f.Name, Nullable.GetUnderlyingType(f.FieldType) ?? f.FieldType); 
+    DataColumn dc = table.Columns.Contains(f.Name) ? table.Columns[f.Name] : table.Columns.Add(f.Name, Nullable.GetUnderlyingType(f.FieldType) ?? f.FieldType);
     ```
 
 2. Implement the custom `CopyToDataTable<T>` extension methods in a class:  

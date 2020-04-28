@@ -45,26 +45,26 @@ Get started with a simple "Hello World" program on .NET Core:
 
     ![Open the Program.cs file](media/with-visual-studio-code/open-program-cs.png)
 
-2. Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**.
+1. Visual Studio Code prompts you to add the missing assets to build and debug your app. Select **Yes**.
 
     ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 
-3. To open the Debug view, click on the Debugging icon on the left side menu.
+1. To open the Debug view, click on the Debugging icon on the left side menu.
 
     ![Open the Debug tab in Visual Studio Code](media/with-visual-studio-code/open-debug-tab.png)
 
-4. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has **.NET Core Launch (console)** selected.
+1. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has **.NET Core Launch (console)** selected.
 
     ![Selecting .NET Core in Visual Studio Code](media/with-visual-studio-code/select-net-core.png)
 
-5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
+1. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
 
     ![Setting a Breakpoint](media/with-visual-studio-code/set-breakpoint-vs-code.png)
 
-6. To start debugging, press <kbd>F5</kbd> or select the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
+1. To start debugging, press <kbd>F5</kbd> or select the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
     - While debugging, you can view your local variables in the top-left pane or use the debug console.
 
-7. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
+1. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
 
     ![Run and Debug in Visual Studio Code](media/with-visual-studio-code/run-debug-vs-code.png)
 

@@ -280,7 +280,9 @@ public struct STRRET_64
 
 Failure to properly consider the native layout in an interop scenario can result in random crashes or worse, incorrect computations.
 
-.NET assemblies by default can run in both a 32-bit and 64-bit version of the .NET runtime so deciding which of the above definitions to use must be deferred until run time. An example of how to make this decision is below.
+By default, .NET assemblies can run in both a 32-bit and 64-bit version of the .NET runtime. The app must wait until run time to decide which of the previous definitions to use.
+
+The following code snippet shows an example of how to choose between the 32-bit and 64-bit definition at run time.
 
 ```CSharp
 if (IntPtr.Size == 8)

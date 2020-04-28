@@ -59,7 +59,7 @@ Dim newData As XElement = _
 Console.WriteLine(newData)
 ```
 
-The example produces this output:
+The example produces the following output:
 
 ```xml
 <Root>

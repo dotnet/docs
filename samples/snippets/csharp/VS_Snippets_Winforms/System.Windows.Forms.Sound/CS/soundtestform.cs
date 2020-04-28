@@ -13,16 +13,16 @@ namespace SoundApiExample
     public class SoundTestForm : System.Windows.Forms.Form
     {
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox filepathTextbox;        
+        private System.Windows.Forms.TextBox filepathTextbox;
         private System.Windows.Forms.Button playOnceSyncButton;
         private System.Windows.Forms.Button playOnceAsyncButton;
         private System.Windows.Forms.Button playLoopAsyncButton;
         private System.Windows.Forms.Button selectFileButton;
-        
+
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.StatusBar statusBar;
         private System.Windows.Forms.Button loadSyncButton;
-        private System.Windows.Forms.Button loadAsyncButton;        
+        private System.Windows.Forms.Button loadAsyncButton;
         private SoundPlayer player;
 
         public SoundTestForm()
@@ -30,7 +30,7 @@ namespace SoundApiExample
             // Initialize Forms Designer generated code.
             InitializeComponent();
 			
-            // Disable playback controls until a valid .wav file 
+            // Disable playback controls until a valid .wav file
             // is selected.
             EnablePlaybackControls(false);
 
@@ -66,13 +66,13 @@ namespace SoundApiExample
             player.SoundLocationChanged += new EventHandler(player_LocationChanged);
         }
 
-        private void selectFileButton_Click(object sender, 
+        private void selectFileButton_Click(object sender,
             System.EventArgs e)
         {
             // Create a new OpenFileDialog.
             OpenFileDialog dlg = new OpenFileDialog();
 
-            // Make sure the dialog checks for existence of the 
+            // Make sure the dialog checks for existence of the
             // selected file.
             dlg.CheckFileExists = true;
 
@@ -86,13 +86,13 @@ namespace SoundApiExample
                 // Get the selected file's path from the dialog.
                 this.filepathTextbox.Text = dlg.FileName;
 
-                // Assign the selected file's path to 
-                // the SoundPlayer object.  
+                // Assign the selected file's path to
+                // the SoundPlayer object.
                 player.SoundLocation = filepathTextbox.Text;
             }
         }
 
-        // Convenience method for setting message text in 
+        // Convenience method for setting message text in
         // the status bar.
         private void ReportStatus(string statusMessage)
         {
@@ -103,36 +103,36 @@ namespace SoundApiExample
                 this.statusBar.Panels[0].Text = statusMessage;
             }
         }
-        
+
         // Enables and disables play controls.
         private void EnablePlaybackControls(bool enabled)
-        {   
+        {
             this.playOnceSyncButton.Enabled = enabled;
             this.playOnceAsyncButton.Enabled = enabled;
             this.playLoopAsyncButton.Enabled = enabled;
             this.stopButton.Enabled = enabled;
         }
-    
-        private void filepathTextbox_TextChanged(object sender, 
+
+        private void filepathTextbox_TextChanged(object sender,
             EventArgs e)
         {
             // Disable playback controls until the new .wav is loaded.
             EnablePlaybackControls(false);
         }
 
-        private void loadSyncButton_Click(object sender, 
+        private void loadSyncButton_Click(object sender,
             System.EventArgs e)
-        {   
-            // Disable playback controls until the .wav is 
-            // successfully loaded. The LoadCompleted event 
+        {
+            // Disable playback controls until the .wav is
+            // successfully loaded. The LoadCompleted event
             // handler will enable them.
             EnablePlaybackControls(false);
 
             // <snippet2>
             try
             {
-                // Assign the selected file's path to 
-                // the SoundPlayer object.  
+                // Assign the selected file's path to
+                // the SoundPlayer object.
                 player.SoundLocation = filepathTextbox.Text;
 
                 // Load the .wav file.
@@ -145,19 +145,19 @@ namespace SoundApiExample
             // </snippet2>
         }
 
-        private void loadAsyncButton_Click(System.Object sender, 
+        private void loadAsyncButton_Click(System.Object sender,
             System.EventArgs e)
         {
-            // Disable playback controls until the .wav is 
-            // successfully loaded. The LoadCompleted event 
+            // Disable playback controls until the .wav is
+            // successfully loaded. The LoadCompleted event
             // handler will enable them.
             EnablePlaybackControls(false);
 
             // <snippet3>
             try
             {
-                // Assign the selected file's path to 
-                // the SoundPlayer object.  
+                // Assign the selected file's path to
+                // the SoundPlayer object.
                 player.SoundLocation = this.filepathTextbox.Text;
 
                 // Load the .wav file.
@@ -171,9 +171,9 @@ namespace SoundApiExample
         }
 
         // Synchronously plays the selected .wav file once.
-        // If the file is large, UI response will be visibly 
+        // If the file is large, UI response will be visibly
         // affected.
-        private void playOnceSyncButton_Click(object sender, 
+        private void playOnceSyncButton_Click(object sender,
             System.EventArgs e)
         {	
             // <snippet4>
@@ -184,7 +184,7 @@ namespace SoundApiExample
         }
 
         // Asynchronously plays the selected .wav file once.
-        private void playOnceAsyncButton_Click(object sender, 
+        private void playOnceAsyncButton_Click(object sender,
             System.EventArgs e)
         {
             // <snippet5>
@@ -195,7 +195,7 @@ namespace SoundApiExample
 
         // Asynchronously plays the selected .wav file until the user
         // clicks the Stop button.
-        private void playLoopAsyncButton_Click(object sender, 
+        private void playLoopAsyncButton_Click(object sender,
             System.EventArgs e)
         {
             // <snippet6>
@@ -216,10 +216,10 @@ namespace SoundApiExample
 
         // <snippet8>
         // Handler for the LoadCompleted event.
-        private void player_LoadCompleted(object sender, 
+        private void player_LoadCompleted(object sender,
             AsyncCompletedEventArgs e)
-        {   
-            string message = String.Format("LoadCompleted: {0}", 
+        {
+            string message = String.Format("LoadCompleted: {0}",
                 this.filepathTextbox.Text);
             ReportStatus(message);
             EnablePlaybackControls(true);
@@ -229,8 +229,8 @@ namespace SoundApiExample
         // <snippet9>
         // Handler for the SoundLocationChanged event.
         private void player_LocationChanged(object sender, EventArgs e)
-        {   
-            string message = String.Format("SoundLocationChanged: {0}", 
+        {
+            string message = String.Format("SoundLocationChanged: {0}",
                 player.SoundLocation);
             ReportStatus(message);
         }
@@ -260,9 +260,9 @@ namespace SoundApiExample
             this.statusBar = new System.Windows.Forms.StatusBar();
             this.loadAsyncButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
+            //
             // filepathTextbox
-            // 
+            //
             this.filepathTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.filepathTextbox.Location = new System.Drawing.Point(7, 25);
             this.filepathTextbox.Name = "filepathTextbox";
@@ -270,9 +270,9 @@ namespace SoundApiExample
             this.filepathTextbox.TabIndex = 1;
             this.filepathTextbox.Text = "";
             this.filepathTextbox.TextChanged += new System.EventHandler(this.filepathTextbox_TextChanged);
-            // 
+            //
             // selectFileButton
-            // 
+            //
             this.selectFileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.selectFileButton.Location = new System.Drawing.Point(276, 25);
             this.selectFileButton.Name = "selectFileButton";
@@ -280,80 +280,80 @@ namespace SoundApiExample
             this.selectFileButton.TabIndex = 2;
             this.selectFileButton.Text = "...";
             this.selectFileButton.Click += new System.EventHandler(this.selectFileButton_Click);
-            // 
+            //
             // label1
-            // 
+            //
             this.label1.Location = new System.Drawing.Point(7, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = ".wav path or URL:";
-            // 
+            //
             // loadSyncButton
-            // 
+            //
             this.loadSyncButton.Location = new System.Drawing.Point(7, 53);
             this.loadSyncButton.Name = "loadSyncButton";
             this.loadSyncButton.Size = new System.Drawing.Size(142, 23);
             this.loadSyncButton.TabIndex = 4;
             this.loadSyncButton.Text = "Load Synchronously";
             this.loadSyncButton.Click += new System.EventHandler(this.loadSyncButton_Click);
-            // 
+            //
             // playOnceSyncButton
-            // 
+            //
             this.playOnceSyncButton.Location = new System.Drawing.Point(7, 86);
             this.playOnceSyncButton.Name = "playOnceSyncButton";
             this.playOnceSyncButton.Size = new System.Drawing.Size(142, 23);
             this.playOnceSyncButton.TabIndex = 5;
             this.playOnceSyncButton.Text = "Play Once Synchronously";
             this.playOnceSyncButton.Click += new System.EventHandler(this.playOnceSyncButton_Click);
-            // 
+            //
             // playOnceAsyncButton
-            // 
+            //
             this.playOnceAsyncButton.Location = new System.Drawing.Point(149, 86);
             this.playOnceAsyncButton.Name = "playOnceAsyncButton";
             this.playOnceAsyncButton.Size = new System.Drawing.Size(147, 23);
             this.playOnceAsyncButton.TabIndex = 6;
             this.playOnceAsyncButton.Text = "Play Once Asynchronously";
             this.playOnceAsyncButton.Click += new System.EventHandler(this.playOnceAsyncButton_Click);
-            // 
+            //
             // stopButton
-            // 
+            //
             this.stopButton.Location = new System.Drawing.Point(149, 109);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(147, 23);
             this.stopButton.TabIndex = 7;
             this.stopButton.Text = "Stop";
             this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
-            // 
+            //
             // playLoopAsyncButton
-            // 
+            //
             this.playLoopAsyncButton.Location = new System.Drawing.Point(7, 109);
             this.playLoopAsyncButton.Name = "playLoopAsyncButton";
             this.playLoopAsyncButton.Size = new System.Drawing.Size(142, 23);
             this.playLoopAsyncButton.TabIndex = 8;
             this.playLoopAsyncButton.Text = "Loop Asynchronously";
             this.playLoopAsyncButton.Click += new System.EventHandler(this.playLoopAsyncButton_Click);
-            // 
+            //
             // statusBar
-            // 
+            //
             this.statusBar.Location = new System.Drawing.Point(0, 146);
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(306, 22);
             this.statusBar.SizingGrip = false;
             this.statusBar.TabIndex = 9;
             this.statusBar.Text = "(no status)";
-            // 
+            //
             // loadAsyncButton
-            // 
+            //
             this.loadAsyncButton.Location = new System.Drawing.Point(149, 53);
             this.loadAsyncButton.Name = "loadAsyncButton";
             this.loadAsyncButton.Size = new System.Drawing.Size(147, 23);
             this.loadAsyncButton.TabIndex = 10;
             this.loadAsyncButton.Text = "Load Asynchronously";
             this.loadAsyncButton.Click += new System.EventHandler(this.loadAsyncButton_Click);
-            // 
+            //
             // SoundTestForm
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(306, 168);
             this.Controls.Add(this.loadAsyncButton);
             this.Controls.Add(this.statusBar);
@@ -372,7 +372,7 @@ namespace SoundApiExample
             this.ResumeLayout(false);
         }
         #endregion
-        
+
         [STAThread]
         static void Main()
         {

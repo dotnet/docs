@@ -17,7 +17,7 @@ namespace ExampleApplication
         private async void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             StorageFile newFile = await ApplicationData.Current.LocalFolder.CreateFileAsync("testfile3.txt");
-            
+
             using (StreamWriter writer = new StreamWriter(await newFile.OpenStreamForWriteAsync()))
             {
                 await writer.WriteLineAsync("new entry");

@@ -16,7 +16,7 @@ namespace SDKSample
         // Provide CLR accessors for the event
         public event RoutedEventHandler Tap
         {
-                add { AddHandler(TapEvent, value); } 
+                add { AddHandler(TapEvent, value); }
                 remove { RemoveHandler(TapEvent, value); }
         }
 //</SnippetAddRemoveHandler>

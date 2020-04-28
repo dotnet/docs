@@ -1,8 +1,8 @@
 ﻿//<snippet1>
 using System;
 using System.Collections.Generic;
-// Simple business object. A PartId is used to identify the type of part 
-// but the part name can change. 
+// Simple business object. A PartId is used to identify the type of part
+// but the part name can change.
 public class Part : IEquatable<Part> , IComparable<Part>
 {
     public string PartName { get; set; }
@@ -22,7 +22,7 @@ public class Part : IEquatable<Part> , IComparable<Part>
     }
     public int SortByNameAscending(string name1, string name2)
     {
-        
+
         return name1.CompareTo(name2);
     }
 
@@ -32,7 +32,7 @@ public class Part : IEquatable<Part> , IComparable<Part>
           // A null value means that this object is greater.
         if (comparePart == null)
             return 1;
-            
+
         else
             return this.PartId.CompareTo(comparePart.PartId);
     }
@@ -63,7 +63,7 @@ public class Example
         parts.Add(new Part() { PartName = "banana seat", PartId = 1444 });
         parts.Add(new Part() { PartName = "cassette", PartId = 1534 });
 
-        // Write out the parts in the list. This will call the overridden 
+        // Write out the parts in the list. This will call the overridden
         // ToString method in the Part class.
         Console.WriteLine("\nBefore sort:");
         foreach (Part aPart in parts)
@@ -71,8 +71,8 @@ public class Example
             Console.WriteLine(aPart);
         }
 
-        // Call Sort on the list. This will use the 
-        // default comparer, which is the Compare method 
+        // Call Sort on the list. This will use the
+        // default comparer, which is the Compare method
         // implemented on Part.
         parts.Sort();
 
@@ -81,9 +81,9 @@ public class Example
         {
             Console.WriteLine(aPart);
         }
-       
-        // This shows calling the Sort(Comparison(T) overload using 
-        // an anonymous method for the Comparison delegate. 
+
+        // This shows calling the Sort(Comparison(T) overload using
+        // an anonymous method for the Comparison delegate.
         // This method treats null as the lesser of two values.
         parts.Sort(delegate(Part x, Part y)
         {
@@ -98,9 +98,9 @@ public class Example
         {
             Console.WriteLine(aPart);
         }
-       
+
         /*
-       
+
             Before sort:
 		ID: 1434   Name: regular seat
 		ID: 1234   Name: crank arm

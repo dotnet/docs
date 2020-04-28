@@ -128,7 +128,7 @@ public class MemoryProtectionSample
             throw new ArgumentException("Entropy");
         if (S == null)
             throw new ArgumentNullException("S");
-       
+
         int length = 0;
 
         // Encrypt the data and store the result in a new byte array. The original data remains unchanged.
@@ -142,7 +142,7 @@ public class MemoryProtectionSample
             length = encryptedData.Length;
         }
 
-        // Return the length that was written to the stream. 
+        // Return the length that was written to the stream.
         return length;
     }
 
@@ -172,7 +172,7 @@ public class MemoryProtectionSample
             throw new IOException("Could not read the stream.");
         }
 
-        // Return the length that was written to the stream. 
+        // Return the length that was written to the stream.
         return outBuffer;
     }
 }

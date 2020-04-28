@@ -41,7 +41,7 @@ public class Form1 : System.Windows.Forms.Form
     private void dataGridView1_CellValidating(object sender,
         DataGridViewCellValidatingEventArgs e)
     {
-        string headerText = 
+        string headerText =
             dataGridView1.Columns[e.ColumnIndex].HeaderText;
 
         // Abort validation if cell is not in the CompanyName column.
@@ -59,13 +59,13 @@ public class Form1 : System.Windows.Forms.Form
     //<Snippet25>
     void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
     {
-        // Clear the row error in case the user presses ESC.   
+        // Clear the row error in case the user presses ESC.
         dataGridView1.Rows[e.RowIndex].ErrorText = String.Empty;
     }
     //</Snippet25>
     //</Snippet20>
 
-    //<Snippet30>   
+    //<Snippet30>
     private static DataTable GetData(string selectCommand)
     {
         string connectionString =

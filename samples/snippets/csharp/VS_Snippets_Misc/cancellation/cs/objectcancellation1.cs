@@ -5,14 +5,14 @@ using System.Threading;
 class CancelableObject
 {
    public string id;
-   
+
    public CancelableObject(string id)
    {
       this.id = id;
    }
-   
-   public void Cancel() 
-   { 
+
+   public void Cancel()
+   {
       Console.WriteLine("Object {0} Cancel callback", id);
       // Perform object cancellation here.
    }

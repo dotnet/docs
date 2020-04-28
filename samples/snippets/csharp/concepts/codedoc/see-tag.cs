@@ -23,7 +23,7 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max
     /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(double, double)"/> to add doubles.
     public static int Add(int a, int b)
@@ -40,7 +40,7 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max
     /// and the other is greater than zero.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     public static double Add(double a, double b)

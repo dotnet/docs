@@ -11,7 +11,7 @@ using System.Security.Permissions;
    SecurityAction.RequestMinimum, Execution = true)]
 namespace Samples
 {
-    
+
     public sealed class CustomBindingCreator
     {
         //<snippet2>
@@ -46,11 +46,11 @@ namespace Samples
             return outputBinding;
         }
         //</snippet2>
-        // It is a good practice to create a private constructor for a class that only 
+        // It is a good practice to create a private constructor for a class that only
         // defines static methods.
         private CustomBindingCreator() { }
-        static void Main() 
-        { 
+        static void Main()
+        {
             // Code not shown.
         }
     }

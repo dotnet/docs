@@ -20,14 +20,14 @@ namespace SDKSample
             // Create a StreamGeometry to use to specify myPath.
             StreamGeometry geometry = new StreamGeometry();
 
-            // Open a StreamGeometryContext that can be used to describe this StreamGeometry 
-            // object's contents. 
+            // Open a StreamGeometryContext that can be used to describe this StreamGeometry
+            // object's contents.
             using (StreamGeometryContext ctx = geometry.Open())
             {
                 // Begin the triangle at the point specified.
                 ctx.BeginFigure(new Point(10, 100), true /* is filled */, true /* is closed */);
 
-                // Create a collection of Point structures that will be used with the PolyLineTo 
+                // Create a collection of Point structures that will be used with the PolyLineTo
                 // Method to create a triangle.
                 List<Point> pointList = new List<Point>();
 
@@ -43,7 +43,7 @@ namespace SDKSample
             // Freeze the geometry (make it unmodifiable)
             // for additional performance benefits.
             geometry.Freeze();
-            
+
             // specify the shape (triangle) of the path using the StreamGeometry.
             myPath.Data = geometry;
 

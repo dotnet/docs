@@ -30,9 +30,9 @@ namespace System.Windows.Forms.ToolStripControlHostExample
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.ToolStripPanel1 = new System.Windows.Forms.ToolStripPanel();
 			this.SuspendLayout();
-// 
+//
 // toolStrip1
-// 
+//
 			this.toolStrip1.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -40,9 +40,9 @@ namespace System.Windows.Forms.ToolStripControlHostExample
 			this.toolStrip1.TabIndex = 1;
 			this.toolStrip1.Text = "toolStrip1";
 			this.toolStrip1.Visible = true;
-// 
+//
 // ToolStripPanel1
-// 
+//
 			this.ToolStripPanel1.AutoSize = true;
 			this.ToolStripPanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.ToolStripPanel1.Location = new System.Drawing.Point(9, 9);
@@ -53,9 +53,9 @@ namespace System.Windows.Forms.ToolStripControlHostExample
 			this.ToolStripPanel1.TabIndex = 0;
 			this.ToolStripPanel1.Text = "ToolStripPanelToolStripPanelTop";
 			this.ToolStripPanel1.Join(this.toolStrip1);
-// 
+//
 // Form1
-// 
+//
 			this.AutoSize = true;
 			this.ClientSize = new System.Drawing.Size(292, 266);
 			this.Controls.Add(this.ToolStripPanel1);
@@ -103,11 +103,11 @@ namespace System.Windows.Forms.ToolStripControlHostExample
 			dateTimePickerHost.Width = 100;
 			dateTimePickerHost.DisplayStyle = ToolStripItemDisplayStyle.Text;
 
-			// Setting the Text property requires a string that converts to a 
+			// Setting the Text property requires a string that converts to a
 			// DateTime type since that is what the hosted control requires.
 			dateTimePickerHost.Text = "12/23/2005";
 
-			// Cast the Control property back to the original type to set a 
+			// Cast the Control property back to the original type to set a
 			// type-specific property.
 			((DateTimePicker)dateTimePickerHost.Control).Format = DateTimePickerFormat.Short;
 
@@ -116,7 +116,7 @@ namespace System.Windows.Forms.ToolStripControlHostExample
 		}
 		//</snippet1>
 
-		// The following example shows how to set the custom 
+		// The following example shows how to set the custom
 		// ToolStripMonthCalendar control.
 		//<snippet2>
 		private void InitializeDropDownMonthCalendar()

@@ -18,13 +18,13 @@ namespace SDKSample
 
         // <SnippetDrawTextToControlBackground1>
         // Handle the WindowLoaded event for the window.
-        private void WindowLoaded(object sender, EventArgs e) 
+        private void WindowLoaded(object sender, EventArgs e)
         {
             // Update the background property of the label and button.
             myLabel.Background = new DrawingBrush(DrawMyText("My Custom Label"));
             myButton.Background = new DrawingBrush(DrawMyText("Display Text"));
         }
-        
+
         // Convert the text string to a geometry and draw it to the control's DrawingContext.
         private Drawing DrawMyText(string textString)
         {
@@ -41,7 +41,7 @@ namespace SDKSample
                     FlowDirection.LeftToRight,
                     new Typeface("Comic Sans MS Bold"),
                     48,
-                    System.Windows.Media.Brushes.Black // This brush does not matter since we use the geometry of the text. 
+                    System.Windows.Media.Brushes.Black // This brush does not matter since we use the geometry of the text.
                     );
 
                 // Build the geometry object that represents the text.

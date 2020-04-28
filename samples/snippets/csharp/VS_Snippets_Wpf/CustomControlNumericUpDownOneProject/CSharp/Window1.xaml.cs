@@ -19,6 +19,6 @@ namespace MyCustomControl
         public Window1()
         {
             InitializeComponent();
-        }       
+        }
     }
 }

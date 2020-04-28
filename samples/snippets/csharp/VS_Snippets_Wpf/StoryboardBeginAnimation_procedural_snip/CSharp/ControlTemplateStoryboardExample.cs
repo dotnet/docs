@@ -17,34 +17,34 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 {
     public class ControlTemplateStoryboardExample : Page
     {
-    
+
         private Storyboard myStoryboard;
-        
+
         public ControlTemplateStoryboardExample()
         {
 
-            ControlTemplate myControlTemplate = 
+            ControlTemplate myControlTemplate =
                 new ControlTemplate(typeof(Button));
-            FrameworkElementFactory borderFactory = 
-                new FrameworkElementFactory(typeof(Border)); 
-            FrameworkElementFactory contentPresenterFactory 
+            FrameworkElementFactory borderFactory =
+                new FrameworkElementFactory(typeof(Border));
+            FrameworkElementFactory contentPresenterFactory
                 = new FrameworkElementFactory(typeof(ContentPresenter));
             borderFactory.AppendChild(contentPresenterFactory);
             myControlTemplate.VisualTree = borderFactory;
-           
+
            /*
             borderFactory.SetValue(Border.BackgroundProperty,
                 TemplateBindingExpression(Button.BackgroundProperty));*/
-        
+
               // Create a name scope for the page.
-            NameScope.SetNameScope(this, new NameScope());        
-          
+            NameScope.SetNameScope(this, new NameScope());
+
               this.WindowTitle = "Controlling a Storyboard";
               this.Background = Brushes.White;
-  
+
               StackPanel myStackPanel = new StackPanel();
               myStackPanel.Margin = new Thickness(20);
-              
+
               // Create a rectangle.
               Rectangle myRectangle = new Rectangle();
               myRectangle.Width = 100;
@@ -53,41 +53,41 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
               myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
               myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
               myStackPanel.Children.Add(myRectangle);
-              
-              // Assign the rectangle a name by 
+
+              // Assign the rectangle a name by
               // registering it with the page, so that
               // it can be targeted by storyboard
               // animations.
-              this.RegisterName("myRectangle", myRectangle);           
-              
+              this.RegisterName("myRectangle", myRectangle);
+
               //
               // Create an animation and a storyboard to animate the
               // rectangle.
               //
-              DoubleAnimation myDoubleAnimation = 
-                  new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(5)));            
+              DoubleAnimation myDoubleAnimation =
+                  new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(5)));
               Storyboard.SetTargetName(myDoubleAnimation, "myRectangle");
               Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Rectangle.WidthProperty));
               myStoryboard = new Storyboard();
               myStoryboard.Children.Add(myDoubleAnimation);
-              
+
             //
             // Create a button to start the storyboard.
             //
             Button beginButton = new Button();
-            beginButton.Template = myControlTemplate;           
+            beginButton.Template = myControlTemplate;
             beginButton.Content = "Begin";
-            beginButton.Click += new RoutedEventHandler(beginButton_Clicked);            
-            
-            myStackPanel.Children.Add(beginButton);           
+            beginButton.Click += new RoutedEventHandler(beginButton_Clicked);
+
+            myStackPanel.Children.Add(beginButton);
             this.Content = myStackPanel;
         }
-        
+
         // Begins the storyboard.
         private void beginButton_Clicked(object sender, RoutedEventArgs args)
         {
-        
-            myStoryboard.Begin(this);                  
+
+            myStoryboard.Begin(this);
         }
     }
 }

@@ -3,9 +3,9 @@
     // <SnippetPointWithDeconstruction>
     public class Point
     {
-        public Point(double x, double y) 
+        public Point(double x, double y)
             => (X, Y) = (x, y);
- 
+
         public double X { get; }
         public double Y { get; }
 

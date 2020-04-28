@@ -24,7 +24,7 @@ namespace SystemTextJsonSamples
         }
 
         public override JsonConverter CreateConverter(
-            Type type, 
+            Type type,
             JsonSerializerOptions options)
         {
             Type keyType = type.GetGenericArguments()[0];
@@ -41,7 +41,7 @@ namespace SystemTextJsonSamples
             return converter;
         }
 
-        private class DictionaryEnumConverterInner<TKey, TValue> : 
+        private class DictionaryEnumConverterInner<TKey, TValue> :
             JsonConverter<Dictionary<TKey, TValue>> where TKey : struct, Enum
         {
             private readonly JsonConverter<TValue> _valueConverter;
@@ -60,8 +60,8 @@ namespace SystemTextJsonSamples
             }
 
             public override Dictionary<TKey, TValue> Read(
-                ref Utf8JsonReader reader, 
-                Type typeToConvert, 
+                ref Utf8JsonReader reader,
+                Type typeToConvert,
                 JsonSerializerOptions options)
             {
                 if (reader.TokenType != JsonTokenType.StartObject)
@@ -114,8 +114,8 @@ namespace SystemTextJsonSamples
             }
 
             public override void Write(
-                Utf8JsonWriter writer, 
-                Dictionary<TKey, TValue> dictionary, 
+                Utf8JsonWriter writer,
+                Dictionary<TKey, TValue> dictionary,
                 JsonSerializerOptions options)
             {
                 writer.WriteStartObject();

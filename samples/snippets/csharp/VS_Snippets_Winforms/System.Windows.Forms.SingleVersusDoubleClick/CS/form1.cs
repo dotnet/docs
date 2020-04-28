@@ -53,7 +53,7 @@ namespace SingleVersusDoubleClick
 
             this.Paint += new PaintEventHandler(Form1_Paint);
             this.MouseDown += new MouseEventHandler(Form1_MouseDown);
-            this.Controls.AddRange(new Control[] { doubleClickBar, textBox1, 
+            this.Controls.AddRange(new Control[] { doubleClickBar, textBox1,
                 label1, label2 });
         }
 
@@ -73,7 +73,7 @@ namespace SingleVersusDoubleClick
             {
                 isFirstClick = false;
 
-                // Determine the location and size of the double click 
+                // Determine the location and size of the double click
                 // rectangle area to draw around the cursor point.
                 doubleClickRectangle = new Rectangle(
                     e.X - (SystemInformation.DoubleClickSize.Width / 2),
@@ -90,7 +90,7 @@ namespace SingleVersusDoubleClick
             else
             {
                 // Verify that the mouse click is within the double click
-                // rectangle and is within the system-defined double 
+                // rectangle and is within the system-defined double
                 // click period.
                 if (doubleClickRectangle.Contains(e.Location) &&
                     milliseconds < SystemInformation.DoubleClickTime)

@@ -22,7 +22,7 @@ namespace SDKSample
             myCanvas.Children.Add(myControl1);
         }
     }
-        
+
     public class MyControl : FrameworkElement
     {
         // <SnippetFormattedTextSnippets1>

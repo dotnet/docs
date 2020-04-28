@@ -2,8 +2,8 @@
         {
             Console.WriteLine("Group by a single property in an object:");
 
-            // Variable queryLastNames is an IEnumerable<IGrouping<string, 
-            // DataClass.Student>>. 
+            // Variable queryLastNames is an IEnumerable<IGrouping<string,
+            // DataClass.Student>>.
             var queryLastNames =
                 from student in students
                 group student by student.LastName into newGroup

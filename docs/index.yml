@@ -12,13 +12,17 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 12/19/2019
+  ms.date: 04/21/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
+    # Card
+    - title: "Download .NET"
+      itemType: download
+      url: https://dotnet.microsoft.com/download
     # Card
     - title: "C# introduction. A quick interactive start."
       itemType: get-started
@@ -64,6 +68,12 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
+        - url: https://dotnet.microsoft.com/platform/community
+          itemType: whats-new
+          text: Community
+        - url: https://dotnetfoundation.org/
+          itemType: overview
+          text: .NET Foundation
     # Card
     - title: .NET concepts
       summary: Learn the fundamental concepts of .NET
@@ -99,7 +109,7 @@ conceptualContent:
         - url: core/sdk.md
           itemType: download
           text: Download the .NET Core SDK
-        - url: core/tools/index.md
+        - url: https://dotnet.microsoft.com/download
           itemType: overview
           text: .NET Core CLI overview
         - url: core/porting/index.md

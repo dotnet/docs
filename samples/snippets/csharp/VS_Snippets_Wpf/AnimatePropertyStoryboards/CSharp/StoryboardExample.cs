@@ -17,7 +17,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         {
             // Create a name scope for the page.
             NameScope.SetNameScope(this, new NameScope());
-            
+
             this.WindowTitle = "Animate Properties using Storyboards";
             StackPanel myStackPanel = new StackPanel();
             myStackPanel.MinWidth = 500;
@@ -26,11 +26,11 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             TextBlock myTextBlock = new TextBlock();
             myTextBlock.Text = "Storyboard Animation Example";
             myStackPanel.Children.Add(myTextBlock);
-            
+
             //
             // Create and animate the first button.
             //
-            
+
             // Create a button.
             Button myWidthAnimatedButton = new Button();
             myWidthAnimatedButton.Height = 30;
@@ -43,24 +43,24 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             // The ID doesn't have to match the variable name;
             // it can be any unique identifier.
             myWidthAnimatedButton.Name = "myWidthAnimatedButton";
-            
+
             // Register the name with the page to which the button belongs.
             this.RegisterName(myWidthAnimatedButton.Name, myWidthAnimatedButton);
-            
+
             // Create a DoubleAnimation to animate the width of the button.
             DoubleAnimation myDoubleAnimation = new DoubleAnimation();
             myDoubleAnimation.From = 200;
             myDoubleAnimation.To = 300;
-            myDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(3000));          
-   
+            myDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(3000));
+
             // Configure the animation to target the button's Width property.
-            Storyboard.SetTargetName(myDoubleAnimation, myWidthAnimatedButton.Name); 
+            Storyboard.SetTargetName(myDoubleAnimation, myWidthAnimatedButton.Name);
             Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Button.WidthProperty));
-            
+
             // Create a storyboard to contain the animation.
             Storyboard myWidthAnimatedButtonStoryboard = new Storyboard();
             myWidthAnimatedButtonStoryboard.Children.Add(myDoubleAnimation);
-            
+
             // Animate the button width when it's clicked.
             myWidthAnimatedButton.Click += delegate(object sender, RoutedEventArgs args)
                 {
@@ -79,29 +79,29 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             myColorAnimatedButton.Width = 200;
             myColorAnimatedButton.HorizontalAlignment = HorizontalAlignment.Left;
             myColorAnimatedButton.Content = "Another Button";
-            
+
             // Create a SolidColorBrush to paint the button's background.
             SolidColorBrush myBackgroundBrush = new SolidColorBrush();
             myBackgroundBrush.Color = Colors.Blue;
-            
+
             // Because a Brush isn't a FrameworkElement, it doesn't
             // have a Name property to set. Instead, you just
             // register a name for the SolidColorBrush with
             // the page where it's used.
             this.RegisterName("myAnimatedBrush", myBackgroundBrush);
-            
+
             // Use the brush to paint the background of the button.
             myColorAnimatedButton.Background = myBackgroundBrush;
-            
+
             // Create a ColorAnimation to animate the button's background.
             ColorAnimation myColorAnimation = new ColorAnimation();
             myColorAnimation.From = Colors.Red;
             myColorAnimation.To = Colors.Blue;
-            myColorAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(7000));    
-            
+            myColorAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(7000));
+
             // Configure the animation to target the brush's Color property.
-            Storyboard.SetTargetName(myColorAnimation, "myAnimatedBrush");                        
-            Storyboard.SetTargetProperty(myColorAnimation, new PropertyPath(SolidColorBrush.ColorProperty));    
+            Storyboard.SetTargetName(myColorAnimation, "myAnimatedBrush");
+            Storyboard.SetTargetProperty(myColorAnimation, new PropertyPath(SolidColorBrush.ColorProperty));
 
             // Create a storyboard to contain the animation.
             Storyboard myColorAnimatedButtonStoryboard = new Storyboard();

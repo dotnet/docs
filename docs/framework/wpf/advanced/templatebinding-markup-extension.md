@@ -15,13 +15,13 @@ Links the value of a property in a control template to be the value of another p
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{TemplateBinding sourceProperty}" .../>  
+<object property="{TemplateBinding sourceProperty}" ... />
 ```  
   
 ## XAML Attribute Usage (for Setter property in template or style)  
   
 ```xml  
-<Setter Property="propertyName" Value="{TemplateBinding sourceProperty}" .../>  
+<Setter Property="propertyName" Value="{TemplateBinding sourceProperty}" ... />  
 ```  
   
 ## XAML Values  
@@ -46,7 +46,7 @@ Links the value of a property in a control template to be the value of another p
  `TemplateBinding` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.TemplateBindingExtension.Property%2A> property as a property=value pair:  
   
 ```xml  
-<object property="{TemplateBinding Property=sourceProperty}" .../>  
+<object property="{TemplateBinding Property=sourceProperty}" ... />
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `TemplateBinding` has only one settable property, which is required, this verbose usage is not typical.  
@@ -59,7 +59,7 @@ Links the value of a property in a control template to be the value of another p
 
 - <xref:System.Windows.Style>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [RelativeSource MarkupExtension](relativesource-markupextension.md)

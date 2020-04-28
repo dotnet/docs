@@ -30,7 +30,7 @@ namespace SDKSamples
         private void SliderUpdateExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             TextBox source = sender as TextBox;
-           
+
             if (source != null)
             {
                 if (e.Parameter != null)
@@ -96,7 +96,7 @@ namespace SDKSamples
         }
 
         // CanExecute handler for the IncreaseSamll and DescreaseSmall commands.
-        // Disables the command sources if the Slider is disabled.  
+        // Disables the command sources if the Slider is disabled.
         private void IncreaseDecreaseCanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             Slider target = e.Source as Slider;
@@ -141,7 +141,7 @@ namespace SDKSamples
             return null;
         }
     }
-    
+
     // Converter to convert the Slider value property to an int.
     [ValueConversion(typeof(double), typeof(int))]
     public class FontDoubleValueConverter : IValueConverter

@@ -8,8 +8,8 @@ public class Example
       TimeSpan duration = new TimeSpan(1, 12, 23, 62);
       string output = "Time of Travel: " + duration.ToString("c");
       Console.WriteLine(output);
-      
-      Console.WriteLine("Time of Travel: {0:c}", duration); 
+
+      Console.WriteLine("Time of Travel: {0:c}", duration);
    }
 }
 // The example displays the following output:

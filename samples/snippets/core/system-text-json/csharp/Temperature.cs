@@ -13,7 +13,7 @@ namespace SystemTextJsonSamples
         private bool _isCelsius;
         private int _degrees;
         public int Degrees => _degrees;
-        public bool IsCelsius => _isCelsius; 
+        public bool IsCelsius => _isCelsius;
         public bool IsFahrenheit => !_isCelsius;
         public override string ToString() =>
             $"{_degrees.ToString()}{(_isCelsius ? "C" : "F")}";

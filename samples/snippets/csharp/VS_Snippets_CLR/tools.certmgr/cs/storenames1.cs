@@ -10,7 +10,7 @@ public class Example
          X509Store store = new X509Store((StoreName) storeValue);
          store.Open(OpenFlags.ReadOnly);
          Console.WriteLine(store.Name);
-      }  
+      }
    }
 }
 // </Snippet1>

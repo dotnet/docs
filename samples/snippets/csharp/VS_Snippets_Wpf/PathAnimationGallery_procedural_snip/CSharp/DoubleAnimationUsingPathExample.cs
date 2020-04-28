@@ -28,12 +28,12 @@ namespace SDKSample
 
             // Create a transform. This transform
             // will be used to move the rectangle.
-            TranslateTransform animatedTranslateTransform = 
+            TranslateTransform animatedTranslateTransform =
                 new TranslateTransform();
 
             // Register the transform's name with the page
             // so that they it be targeted by a Storyboard.
-            this.RegisterName("AnimatedTranslateTransform", animatedTranslateTransform);    
+            this.RegisterName("AnimatedTranslateTransform", animatedTranslateTransform);
 
             aRectangle.RenderTransform = animatedTranslateTransform;
 
@@ -63,7 +63,7 @@ namespace SDKSample
             animationPath.Freeze();
 
             // Create a DoubleAnimationUsingPath to move the
-            // rectangle horizontally along the path by animating 
+            // rectangle horizontally along the path by animating
             // its TranslateTransform.
             DoubleAnimationUsingPath translateXAnimation =
                 new DoubleAnimationUsingPath();
@@ -72,7 +72,7 @@ namespace SDKSample
 
             // Set the Source property to X. This makes
             // the animation generate horizontal offset values from
-            // the path information. 
+            // the path information.
             translateXAnimation.Source = PathAnimationSource.X;
 
             // Set the animation to target the X property
@@ -82,7 +82,7 @@ namespace SDKSample
                 new PropertyPath(TranslateTransform.XProperty));
 
             // Create a DoubleAnimationUsingPath to move the
-            // rectangle vertically along the path by animating 
+            // rectangle vertically along the path by animating
             // its TranslateTransform.
             DoubleAnimationUsingPath translateYAnimation =
                 new DoubleAnimationUsingPath();
@@ -91,15 +91,15 @@ namespace SDKSample
 
             // Set the Source property to Y. This makes
             // the animation generate vertical offset values from
-            // the path information. 
+            // the path information.
             translateYAnimation.Source = PathAnimationSource.Y;
 
             // Set the animation to target the Y property
             // of the TranslateTransform named "AnimatedTranslateTransform".
             Storyboard.SetTargetName(translateYAnimation, "AnimatedTranslateTransform");
             Storyboard.SetTargetProperty(translateYAnimation,
-                new PropertyPath(TranslateTransform.YProperty)); 
-      
+                new PropertyPath(TranslateTransform.YProperty));
+
             // Create a Storyboard to contain and apply the animations.
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.RepeatBehavior = RepeatBehavior.Forever;

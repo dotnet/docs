@@ -287,11 +287,11 @@ In this section, you'll update the home page UI with an image and a page title.
 
 1. In *`ExpenseItHome.xaml`*, add another column to the <xref:System.Windows.Controls.Grid.ColumnDefinitions%2A> with a fixed <xref:System.Windows.Controls.ColumnDefinition.Width%2A> of 230 pixels:
 
-    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=52-55)]
+    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewColumn)]
 
 2. Add another row to the <xref:System.Windows.Controls.Grid.RowDefinitions%2A>, for a total of four rows:
 
-    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=57-62)]
+    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewRows)]
 
 3. Move the controls to the second column by setting the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property to 1 in each of the three controls (Border, ListBox, and Button).
 
@@ -352,7 +352,7 @@ The following illustration shows the UI elements added to *ExpenseReportPage.xam
 
 ## Style controls
 
-The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../controls/styling-and-templating.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
+The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../../../desktop-wpf/fundamentals/styles-templates-overview.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
 
 1. Open *Application.xaml* or *App.xaml*.
 
@@ -475,7 +475,7 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound .NET app. For more information about the WPF architecture and programming models, see the following topics:
 
 - [WPF architecture](../advanced/wpf-architecture.md)
-- [XAML overview (WPF)](../advanced/xaml-overview-wpf.md)
+- [XAML overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Dependency properties overview](../advanced/dependency-properties-overview.md)
 - [Layout](../advanced/layout.md)
 

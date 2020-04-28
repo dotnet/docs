@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
- 
+
 namespace Casting
 {
    class Program
@@ -34,7 +34,7 @@ namespace Casting
       private static void EncryptWithoutCasting()
       {
          byte[] data = { 1, 2, 4, 8, 16, 32, 64, 128 };
-         X509Certificate2 cert = new X509Certificate2(); 
+         X509Certificate2 cert = new X509Certificate2();
 
          // <Snippet2>
          RSA rsa = cert.GetRSAPrivateKey();

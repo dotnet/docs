@@ -31,11 +31,11 @@ Any lambda expression can be converted to a [delegate](../../language-reference/
 
 [!code-csharp-interactive[lambda is delegate](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Delegate)]
 
-Expression lambdas also can be converted to the [expression tree](../concepts/expression-trees/index.md) types, as the following example shows:
+Expression lambdas can also be converted to the [expression tree](../concepts/expression-trees/index.md) types, as the following example shows:
 
 [!code-csharp-interactive[lambda is expression tree](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#ExpressionTree)]
 
-You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You also can use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
+You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You can also use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
 
 [!code-csharp-interactive[lambda is argument in LINQ](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
 
@@ -224,7 +224,7 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 - [C# Programming Guide](../index.md)
 - [LINQ (Language-Integrated Query)](../concepts/linq/index.md)
 - [Expression Trees](../concepts/expression-trees/index.md)
-- [Local functions compared to lambda expressions](../../local-functions-vs-lambdas.md)
+- [Local functions vs. lambda expressions](../classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Recursive lambda expressions](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

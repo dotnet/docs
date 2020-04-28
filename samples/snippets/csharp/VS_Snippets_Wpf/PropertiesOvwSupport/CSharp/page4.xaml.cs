@@ -20,7 +20,7 @@ namespace MyNamespace
 //</SnippetAPCode>
       }
 //<SnippetDPFormBasic>
-      public static readonly DependencyProperty IsSpinningProperty = 
+      public static readonly DependencyProperty IsSpinningProperty =
           DependencyProperty.Register(
           "IsSpinning", typeof(Boolean),
           typeof(MyCode)
@@ -53,7 +53,7 @@ namespace MyNamespace
     public class Fish : FrameworkElement { }
     public class Aquarium : DependencyObject
     {
-        private static readonly DependencyPropertyKey AquariumContentsPropertyKey = 
+        private static readonly DependencyPropertyKey AquariumContentsPropertyKey =
             DependencyProperty.RegisterReadOnly(
               "AquariumContents",
               typeof(List<FrameworkElement>),
@@ -71,7 +71,7 @@ namespace MyNamespace
 //<SnippetCollectionProblemCtor>
         public Aquarium() : base()
         {
-            SetValue(AquariumContentsPropertyKey, new List<FrameworkElement>()); 
+            SetValue(AquariumContentsPropertyKey, new List<FrameworkElement>());
         }
 //</SnippetCollectionProblemCtor>
 

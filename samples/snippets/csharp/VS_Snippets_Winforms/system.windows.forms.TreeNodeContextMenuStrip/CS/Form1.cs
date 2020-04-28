@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Collections;
 
-//Create a Class that inherits from System.Windows.Forms.Form. 
+//Create a Class that inherits from System.Windows.Forms.Form.
 class myForm : Form
 {
     public myForm()
@@ -25,7 +25,7 @@ class myForm : Form
 
         // Create the root node.
         TreeNode docNode = new TreeNode("Documents");
-        
+
         // Add some additional nodes.
         docNode.Nodes.Add("phoneList.doc");
         docNode.Nodes.Add("resume.doc");
@@ -45,12 +45,12 @@ class myForm : Form
         renameLabel.Text = "Rename";
 
         //Add the menu items to the menu.
-        docMenu.Items.AddRange(new ToolStripMenuItem[]{openLabel, 
+        docMenu.Items.AddRange(new ToolStripMenuItem[]{openLabel,
             deleteLabel, renameLabel});
 
         // Set the ContextMenuStrip property to the ContextMenuStrip.
         docNode.ContextMenuStrip = docMenu;
-         
+
         // Add the TreeView to the form.
         this.Controls.Add(menuTreeView);
     }
@@ -65,14 +65,14 @@ class myForm : Form
 
     private void InitializeComponent()
     {
-       
+
         this.SuspendLayout();
 
-// 
+//
 // myForm
-// 
+//
         this.ClientSize = new System.Drawing.Size(292, 266);
         this.Name = "myForm";
         this.ResumeLayout(false);
     }
-}     
+}

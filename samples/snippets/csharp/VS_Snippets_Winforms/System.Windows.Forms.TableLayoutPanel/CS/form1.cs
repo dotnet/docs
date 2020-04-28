@@ -63,7 +63,7 @@ public class Form1 : System.Windows.Forms.Form
 
 	// <snippet2>
     private void enumerateChildrenBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         foreach ( Control c in this.TableLayoutPanel1.Controls )
@@ -75,7 +75,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet3>
     private void getColumnBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         foreach ( Control c in this.TableLayoutPanel1.Controls )
@@ -87,7 +87,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet4>
     private void getRowBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         foreach ( Control c in this.TableLayoutPanel1.Controls )
@@ -99,7 +99,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet5>
     private void getcontrolFromPosBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         int i = 0;
@@ -124,7 +124,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet12>
     private void swapControlsBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         Control c1 = this.TableLayoutPanel1.GetControlFromPosition(0, 0);
@@ -140,7 +140,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet13>
     private void swapRowsBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
 
@@ -157,54 +157,54 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet6>
     private void borderStyleOutsetRadioBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-        this.TableLayoutPanel1.CellBorderStyle = 
+        this.TableLayoutPanel1.CellBorderStyle =
 			TableLayoutPanelCellBorderStyle.Outset;
     }
 
     private void borderStyleNoneRadioBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-        this.TableLayoutPanel1.CellBorderStyle = 
+        this.TableLayoutPanel1.CellBorderStyle =
 			TableLayoutPanelCellBorderStyle.None;
     }
 
     private void borderStyleInsetRadioBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-        this.TableLayoutPanel1.CellBorderStyle = 
+        this.TableLayoutPanel1.CellBorderStyle =
 			TableLayoutPanelCellBorderStyle.Inset;
     }
     // </snippet6>
 
     // <snippet7>
     private void growStyleNoneBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.tlpGrowStyle = TableLayoutPanelGrowStyle.FixedSize;
     }
 
     private void growStyleAddRowBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.tlpGrowStyle = TableLayoutPanelGrowStyle.AddRows;
     }
 
     private void growStyleAddColumnBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.tlpGrowStyle = TableLayoutPanelGrowStyle.AddColumns;
     }
 
     private void testGrowStyleBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.TableLayoutPanel1.GrowStyle = this.tlpGrowStyle;
@@ -222,10 +222,10 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet8>
     private void toggleColumnStylesBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-		TableLayoutColumnStyleCollection styles = 
+		TableLayoutColumnStyleCollection styles =
 			this.TableLayoutPanel1.ColumnStyles;
 
         foreach( ColumnStyle style in styles )
@@ -254,10 +254,10 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet9>
     private void toggleRowStylesBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-		TableLayoutRowStyleCollection styles = 
+		TableLayoutRowStyleCollection styles =
 			this.TableLayoutPanel1.RowStyles;
 
         foreach( RowStyle style in styles )
@@ -287,17 +287,17 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet10>
     private void TableLayoutPanel1_PaintCell(
-		object sender, 
+		object sender,
 		System.Windows.Forms.PaintEventArgs e)
     {
         Graphics g = e.Graphics;
 
-        g.FillEllipse( 
-			Brushes.ForestGreen, 
+        g.FillEllipse(
+			Brushes.ForestGreen,
 			new Rectangle(
-			    e.ClipRectangle.X+2, 
-				e.ClipRectangle.Y+2, 
-				e.ClipRectangle.Width-4, 
+			    e.ClipRectangle.X+2,
+				e.ClipRectangle.Y+2,
+				e.ClipRectangle.Width-4,
 				e.ClipRectangle.Height-4));
 
         g.DrawRectangle(Pens.Red, new Rectangle(e.ClipRectangle.X+2, e.ClipRectangle.Y+2, e.ClipRectangle.Width-4, e.ClipRectangle.Height-4));
@@ -306,7 +306,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet11>
     private void toggleSpanBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         Control c = this.TableLayoutPanel1.GetControlFromPosition(0, 0);
@@ -335,7 +335,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet14>
     private void toggleMarginsBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         foreach( Control c in this.TableLayoutPanel1.Controls )
@@ -359,7 +359,7 @@ public class Form1 : System.Windows.Forms.Form
 
     // <snippet15>
     private void togglePaddingBtn_Click(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         if (this.TableLayoutPanel1.Padding.All>5)
@@ -389,7 +389,7 @@ public class Form1 : System.Windows.Forms.Form
     #region Windows Form Designer generated code
 
     //NOTE: The following procedure is required by the Windows Form Designer
-    //It can be modified using the Windows Form Designer.  
+    //It can be modified using the Windows Form Designer.
     //Do not modify it using the code editor.
     private void InitializeComponent()
     {
@@ -423,9 +423,9 @@ public class Form1 : System.Windows.Forms.Form
 		this.TableLayoutPanel1.SuspendLayout();
 		this.DemoTableLayoutPanel1.SuspendLayout();
 		this.SuspendLayout();
-// 
+//
 // TableLayoutPanel1
-// 
+//
 		this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
 		this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
 		this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -491,33 +491,33 @@ public class Form1 : System.Windows.Forms.Form
 		this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
 		this.TableLayoutPanel1.Size = new System.Drawing.Size(286, 230);
 		this.TableLayoutPanel1.TabIndex = 0;
-// 
+//
 // Button1
-// 
+//
 		this.Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button1.Location = new System.Drawing.Point(105, 68);
 		this.Button1.Name = "Button1";
 		this.Button1.TabIndex = 1;
 		this.Button1.Text = "Button1";
-// 
+//
 // Button2
-// 
+//
 		this.Button2.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button2.Location = new System.Drawing.Point(105, 150);
 		this.Button2.Name = "Button2";
 		this.Button2.TabIndex = 2;
 		this.Button2.Text = "Button2";
-// 
+//
 // Button3
-// 
+//
 		this.Button3.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button3.Location = new System.Drawing.Point(105, 3);
 		this.Button3.Name = "Button3";
 		this.Button3.TabIndex = 3;
 		this.Button3.Text = "Button3";
-// 
+//
 // Button4
-// 
+//
 		this.Button4.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.TableLayoutPanel1.SetColumnSpan(this.Button4, 3);
 		this.Button4.Location = new System.Drawing.Point(26, 32);
@@ -525,9 +525,9 @@ public class Form1 : System.Windows.Forms.Form
 		this.Button4.Size = new System.Drawing.Size(234, 30);
 		this.Button4.TabIndex = 4;
 		this.Button4.Text = "Button4";
-// 
+//
 // enumerateChildrenBtn
-// 
+//
 		this.enumerateChildrenBtn.AutoSize = true;
 		this.enumerateChildrenBtn.Location = new System.Drawing.Point(629, 274);
 		this.enumerateChildrenBtn.Name = "enumerateChildrenBtn";
@@ -535,9 +535,9 @@ public class Form1 : System.Windows.Forms.Form
 		this.enumerateChildrenBtn.TabIndex = 1;
 		this.enumerateChildrenBtn.Text = "Enumerate Children";
 		this.enumerateChildrenBtn.Click += new System.EventHandler(this.enumerateChildrenBtn_Click);
-// 
+//
 // testGrowStyleBtn
-// 
+//
 		this.testGrowStyleBtn.AutoSize = true;
 		this.testGrowStyleBtn.Location = new System.Drawing.Point(67, 274);
 		this.testGrowStyleBtn.Name = "testGrowStyleBtn";
@@ -545,17 +545,17 @@ public class Form1 : System.Windows.Forms.Form
 		this.testGrowStyleBtn.TabIndex = 2;
 		this.testGrowStyleBtn.Text = "Test GrowStyle";
 		this.testGrowStyleBtn.Click += new System.EventHandler(this.testGrowStyleBtn_Click);
-// 
+//
 // getColumnBtn
-// 
+//
 		this.getColumnBtn.Location = new System.Drawing.Point(165, 274);
 		this.getColumnBtn.Name = "getColumnBtn";
 		this.getColumnBtn.TabIndex = 3;
 		this.getColumnBtn.Text = "GetColumn";
 		this.getColumnBtn.Click += new System.EventHandler(this.getColumnBtn_Click);
-// 
+//
 // getcontrolFromPosBtn
-// 
+//
 		this.getcontrolFromPosBtn.AutoSize = true;
 		this.getcontrolFromPosBtn.Location = new System.Drawing.Point(329, 274);
 		this.getcontrolFromPosBtn.Name = "getcontrolFromPosBtn";
@@ -563,17 +563,17 @@ public class Form1 : System.Windows.Forms.Form
 		this.getcontrolFromPosBtn.TabIndex = 4;
 		this.getcontrolFromPosBtn.Text = "GetControlFromPosition";
 		this.getcontrolFromPosBtn.Click += new System.EventHandler(this.getcontrolFromPosBtn_Click);
-// 
+//
 // getRowBtn
-// 
+//
 		this.getRowBtn.Location = new System.Drawing.Point(247, 274);
 		this.getRowBtn.Name = "getRowBtn";
 		this.getRowBtn.TabIndex = 5;
 		this.getRowBtn.Text = "GetRow";
 		this.getRowBtn.Click += new System.EventHandler(this.getRowBtn_Click);
-// 
+//
 // swapControlsBtn
-// 
+//
 		this.swapControlsBtn.AutoSize = true;
 		this.swapControlsBtn.Location = new System.Drawing.Point(459, 274);
 		this.swapControlsBtn.Name = "swapControlsBtn";
@@ -581,18 +581,18 @@ public class Form1 : System.Windows.Forms.Form
 		this.swapControlsBtn.TabIndex = 6;
 		this.swapControlsBtn.Text = "Swap Controls";
 		this.swapControlsBtn.Click += new System.EventHandler(this.swapControlsBtn_Click);
-// 
+//
 // borderStyleNoneRadioBtn
-// 
+//
 		this.borderStyleNoneRadioBtn.Location = new System.Drawing.Point(35, 26);
 		this.borderStyleNoneRadioBtn.Name = "borderStyleNoneRadioBtn";
 		this.borderStyleNoneRadioBtn.Size = new System.Drawing.Size(52, 30);
 		this.borderStyleNoneRadioBtn.TabIndex = 8;
 		this.borderStyleNoneRadioBtn.Text = "None";
 		this.borderStyleNoneRadioBtn.Click += new System.EventHandler(this.borderStyleNoneRadioBtn_CheckedChanged);
-// 
+//
 // borderStyleOutsetRadioBtn
-// 
+//
 		this.borderStyleOutsetRadioBtn.AutoSize = true;
 		this.borderStyleOutsetRadioBtn.Location = new System.Drawing.Point(35, 62);
 		this.borderStyleOutsetRadioBtn.Name = "borderStyleOutsetRadioBtn";
@@ -600,54 +600,54 @@ public class Form1 : System.Windows.Forms.Form
 		this.borderStyleOutsetRadioBtn.TabIndex = 9;
 		this.borderStyleOutsetRadioBtn.Text = "Outset";
 		this.borderStyleOutsetRadioBtn.Click += new System.EventHandler(this.borderStyleOutsetRadioBtn_CheckedChanged);
-// 
+//
 // borderStyleInsetRadioBtn
-// 
+//
 		this.borderStyleInsetRadioBtn.Location = new System.Drawing.Point(35, 92);
 		this.borderStyleInsetRadioBtn.Name = "borderStyleInsetRadioBtn";
 		this.borderStyleInsetRadioBtn.Size = new System.Drawing.Size(52, 25);
 		this.borderStyleInsetRadioBtn.TabIndex = 10;
 		this.borderStyleInsetRadioBtn.Text = "Inset";
 		this.borderStyleInsetRadioBtn.Click += new System.EventHandler(this.borderStyleInsetRadioBtn_CheckedChanged);
-// 
+//
 // growStyleNoneBtn
-// 
+//
 		this.growStyleNoneBtn.AutoSize = true;
 		this.growStyleNoneBtn.Location = new System.Drawing.Point(67, 304);
 		this.growStyleNoneBtn.Name = "growStyleNoneBtn";
 		this.growStyleNoneBtn.TabIndex = 13;
 		this.growStyleNoneBtn.Text = "Fixed";
 		this.growStyleNoneBtn.Click += new System.EventHandler(this.growStyleNoneBtn_CheckedChanged);
-// 
+//
 // growStyleAddRowBtn
-// 
+//
 		this.growStyleAddRowBtn.AutoSize = true;
 		this.growStyleAddRowBtn.Location = new System.Drawing.Point(67, 335);
 		this.growStyleAddRowBtn.Name = "growStyleAddRowBtn";
 		this.growStyleAddRowBtn.TabIndex = 14;
 		this.growStyleAddRowBtn.Text = "Add Rows";
 		this.growStyleAddRowBtn.Click += new System.EventHandler(this.growStyleAddRowBtn_CheckedChanged);
-// 
+//
 // growStyleAddColumnBtn
-// 
+//
 		this.growStyleAddColumnBtn.AutoSize = true;
 		this.growStyleAddColumnBtn.Location = new System.Drawing.Point(67, 366);
 		this.growStyleAddColumnBtn.Name = "growStyleAddColumnBtn";
 		this.growStyleAddColumnBtn.TabIndex = 15;
 		this.growStyleAddColumnBtn.Text = "Add Columns";
 		this.growStyleAddColumnBtn.Click += new System.EventHandler(this.growStyleAddColumnBtn_CheckedChanged);
-// 
+//
 // toggleColumnStylesBtn
-// 
+//
 		this.toggleColumnStylesBtn.Location = new System.Drawing.Point(69, 397);
 		this.toggleColumnStylesBtn.Name = "toggleColumnStylesBtn";
 		this.toggleColumnStylesBtn.Size = new System.Drawing.Size(118, 24);
 		this.toggleColumnStylesBtn.TabIndex = 16;
 		this.toggleColumnStylesBtn.Text = "Toggle ColumnStyles";
 		this.toggleColumnStylesBtn.Click += new System.EventHandler(this.toggleColumnStylesBtn_Click);
-// 
+//
 // DemoTableLayoutPanel1
-// 
+//
 		this.DemoTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
 		this.DemoTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
 		this.DemoTableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
@@ -664,75 +664,75 @@ public class Form1 : System.Windows.Forms.Form
 		this.DemoTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
 		this.DemoTableLayoutPanel1.Size = new System.Drawing.Size(256, 230);
 		this.DemoTableLayoutPanel1.TabIndex = 11;
-// 
+//
 // Button12
-// 
+//
 		this.Button12.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button12.Location = new System.Drawing.Point(90, 13);
 		this.Button12.Name = "Button12";
 		this.Button12.TabIndex = 9;
 		this.Button12.Text = "Button12";
-// 
+//
 // Button10
-// 
+//
 		this.Button10.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button10.Location = new System.Drawing.Point(90, 63);
 		this.Button10.Name = "Button10";
 		this.Button10.TabIndex = 12;
 		this.Button10.Text = "Button10";
-// 
+//
 // Button11
-// 
+//
 		this.Button11.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.Button11.Location = new System.Drawing.Point(90, 153);
 		this.Button11.Name = "Button11";
 		this.Button11.TabIndex = 8;
 		this.Button11.Text = "Button11";
-// 
+//
 // toggleRowStylesBtn
-// 
+//
 		this.toggleRowStylesBtn.Location = new System.Drawing.Point(67, 440);
 		this.toggleRowStylesBtn.Name = "toggleRowStylesBtn";
 		this.toggleRowStylesBtn.Size = new System.Drawing.Size(120, 22);
 		this.toggleRowStylesBtn.TabIndex = 17;
 		this.toggleRowStylesBtn.Text = "Toggle RowStyles";
 		this.toggleRowStylesBtn.Click += new System.EventHandler(this.toggleRowStylesBtn_Click);
-// 
+//
 // toggleSpanBtn
-// 
+//
 		this.toggleSpanBtn.Location = new System.Drawing.Point(247, 398);
 		this.toggleSpanBtn.Name = "toggleSpanBtn";
 		this.toggleSpanBtn.TabIndex = 18;
 		this.toggleSpanBtn.Text = "Toggle Span";
 		this.toggleSpanBtn.Click += new System.EventHandler(this.toggleSpanBtn_Click);
-// 
+//
 // swapRowsBtn
-// 
+//
 		this.swapRowsBtn.Location = new System.Drawing.Point(458, 305);
 		this.swapRowsBtn.Name = "swapRowsBtn";
 		this.swapRowsBtn.Size = new System.Drawing.Size(82, 23);
 		this.swapRowsBtn.TabIndex = 19;
 		this.swapRowsBtn.Text = "Swap Rows";
 		this.swapRowsBtn.Click += new System.EventHandler(this.swapRowsBtn_Click);
-// 
+//
 // toggleMarginsBtn
-// 
+//
 		this.toggleMarginsBtn.Location = new System.Drawing.Point(328, 397);
 		this.toggleMarginsBtn.Name = "toggleMarginsBtn";
 		this.toggleMarginsBtn.Size = new System.Drawing.Size(93, 24);
 		this.toggleMarginsBtn.TabIndex = 20;
 		this.toggleMarginsBtn.Text = "Toggle Margins";
 		this.toggleMarginsBtn.Click += new System.EventHandler(this.toggleMarginsBtn_Click);
-// 
+//
 // togglePaddingBtn
-// 
+//
 		this.togglePaddingBtn.Location = new System.Drawing.Point(458, 396);
 		this.togglePaddingBtn.Name = "togglePaddingBtn";
 		this.togglePaddingBtn.Size = new System.Drawing.Size(94, 23);
 		this.togglePaddingBtn.TabIndex = 21;
 		this.togglePaddingBtn.Text = "Toggle Padding";
 		this.togglePaddingBtn.Click += new System.EventHandler(this.togglePaddingBtn_Click);
-// 
+//
 // Form1
 // 		
 		this.ClientSize = new System.Drawing.Size(773, 489);
@@ -765,7 +765,7 @@ public class Form1 : System.Windows.Forms.Form
 	}
 
     #endregion
-  
+
 }
 
 // <snippet100>
@@ -782,16 +782,16 @@ public class DemoTableLayoutPanel : TableLayoutPanel
             Graphics g = e.Graphics;
 
             g.DrawRectangle(
-				Pens.Red, 
+				Pens.Red,
 				e.CellBounds.Location.X+1,
 				e.CellBounds.Location.Y + 1,
 				e.CellBounds.Width - 2, e.CellBounds.Height - 2);
 
 			g.FillRectangle(
-				Brushes.Blue, 
-				e.CellBounds.Location.X + 1, 
-				e.CellBounds.Location.Y + 1, 
-				e.CellBounds.Width - 2, 
+				Brushes.Blue,
+				e.CellBounds.Location.X + 1,
+				e.CellBounds.Location.Y + 1,
+				e.CellBounds.Width - 2,
 				e.CellBounds.Height - 2);
         };
 	}

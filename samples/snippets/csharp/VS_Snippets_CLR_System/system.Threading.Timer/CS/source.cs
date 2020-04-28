@@ -9,14 +9,14 @@ class TimerExample
         // Create an AutoResetEvent to signal the timeout threshold in the
         // timer callback has been reached.
         var autoEvent = new AutoResetEvent(false);
-        
+
         var statusChecker = new StatusChecker(10);
 
-        // Create a timer that invokes CheckStatus after one second, 
+        // Create a timer that invokes CheckStatus after one second,
         // and every 1/4 second thereafter.
-        Console.WriteLine("{0:h:mm:ss.fff} Creating timer.\n", 
+        Console.WriteLine("{0:h:mm:ss.fff} Creating timer.\n",
                           DateTime.Now);
-        var stateTimer = new Timer(statusChecker.CheckStatus, 
+        var stateTimer = new Timer(statusChecker.CheckStatus,
                                    autoEvent, 1000, 250);
 
         // When autoEvent signals, change the period to every half second.
@@ -46,8 +46,8 @@ class StatusChecker
     public void CheckStatus(Object stateInfo)
     {
         AutoResetEvent autoEvent = (AutoResetEvent)stateInfo;
-        Console.WriteLine("{0} Checking status {1,2}.", 
-            DateTime.Now.ToString("h:mm:ss.fff"), 
+        Console.WriteLine("{0} Checking status {1,2}.",
+            DateTime.Now.ToString("h:mm:ss.fff"),
             (++invokeCount).ToString());
 
         if(invokeCount == maxCount)
@@ -60,7 +60,7 @@ class StatusChecker
 }
 // The example displays output like the following:
 //       11:59:54.202 Creating timer.
-//       
+//
 //       11:59:55.217 Checking status  1.
 //       11:59:55.466 Checking status  2.
 //       11:59:55.716 Checking status  3.
@@ -71,9 +71,9 @@ class StatusChecker
 //       11:59:56.972 Checking status  8.
 //       11:59:57.223 Checking status  9.
 //       11:59:57.473 Checking status 10.
-//       
+//
 //       Changing period to .5 seconds.
-//       
+//
 //       11:59:57.474 Checking status  1.
 //       11:59:57.976 Checking status  2.
 //       11:59:58.476 Checking status  3.
@@ -84,6 +84,6 @@ class StatusChecker
 //       12:00:00.980 Checking status  8.
 //       12:00:01.481 Checking status  9.
 //       12:00:01.981 Checking status 10.
-//       
+//
 //       Destroying timer.
 // </Snippet1>

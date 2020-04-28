@@ -14,10 +14,13 @@ ms.date: 02/19/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile]
-    [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project]
-    [-r|--runtime] [-v|--verbosity] [[--] [application arguments]]
-dotnet run [-h|--help]
+dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+    [--no-dependencies] [--no-launch-profile] [--no-restore]
+    [-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+
+dotnet run -h|--help
 ```
 
 ## Description
@@ -37,6 +40,8 @@ dotnet myapp.dll
 For more information on the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
 
 To run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
+
+### Implicit restore
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 

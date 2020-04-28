@@ -18,7 +18,7 @@ namespace CustomElementClient
             ;
         }
 
-        // <Snippet172> 
+        // <Snippet172>
 
         AutomationPropertyChangedEventHandler propChangeHandler;
         /// <summary>
@@ -27,8 +27,8 @@ namespace CustomElementClient
         /// <param name="element">The UI Automation element whose state is being monitored.</param>
         public void SubscribePropertyChange(AutomationElement element)
         {
-            Automation.AddAutomationPropertyChangedEventHandler(element, 
-                TreeScope.Element, 
+            Automation.AddAutomationPropertyChangedEventHandler(element,
+                TreeScope.Element,
                 propChangeHandler = new AutomationPropertyChangedEventHandler(OnPropertyChange),
                 AutomationElement.IsEnabledProperty);
         }
@@ -44,11 +44,11 @@ namespace CustomElementClient
             if (e.Property == AutomationElement.IsEnabledProperty)
             {
                 bool enabled = (bool)e.NewValue;
-                // TODO: Do something with the new value. 
+                // TODO: Do something with the new value.
                 // The element that raised the event can be identified by its runtime ID property.
             }
             else
-            { 
+            {
                 // TODO: Handle other property-changed events.
             }
         }
@@ -67,7 +67,7 @@ namespace CustomElementClient
 
             // *** AcceleratorKeyProperty
             // <Snippet124>
-            string acceleratorKey = 
+            string acceleratorKey =
                 autoElement.GetCurrentPropertyValue(AutomationElement.AcceleratorKeyProperty) as string;
             // </Snippet124>
 
@@ -165,7 +165,7 @@ namespace CustomElementClient
             }
             // </Snippet134>
 
-            // *** ClickablePointProperty. 
+            // *** ClickablePointProperty.
             // <Snippet135>
             System.Windows.Point clickablePoint = new System.Windows.Point(-1,-1);
             object prop = autoElement.GetCurrentPropertyValue(AutomationElement.ClickablePointProperty);
@@ -192,7 +192,7 @@ namespace CustomElementClient
 
             // *** ControlTypeProperty
             // <Snippet136>
-             ControlType controlTypeId = 
+             ControlType controlTypeId =
                  autoElement.GetCurrentPropertyValue(AutomationElement.ControlTypeProperty)
                  as ControlType;
             // </Snippet136>
@@ -205,7 +205,7 @@ namespace CustomElementClient
              {
                  // TODO Handle the case where you do not wish to proceed using the default value.
              }
-             else  
+             else
              {
                  controlTypeId1 = controlTypeNoDefault as ControlType;
              }
@@ -236,7 +236,7 @@ namespace CustomElementClient
              bool isContent = (bool)
                 autoElement.GetCurrentPropertyValue(AutomationElement.IsContentElementProperty);
              // </Snippet141>
-        
+
              // <Snippet142>
              bool isContent1;
              object isContentNoDefault =
@@ -317,7 +317,7 @@ namespace CustomElementClient
              // </Snippet150>
 
              // *** IsRequiredForFormProperty
-            // <Snippet151> 
+            // <Snippet151>
              bool isRequired = (bool)
                 autoElement.GetCurrentPropertyValue(AutomationElement.IsRequiredForFormProperty);
             // </Snippet151>

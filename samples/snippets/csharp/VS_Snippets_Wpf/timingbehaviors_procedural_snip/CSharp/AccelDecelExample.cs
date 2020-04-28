@@ -20,10 +20,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public AccelDecelExample()
         {
-        
+
             // Create a name scope for the page.
             NameScope.SetNameScope(this, new NameScope());
-            
+
             this.WindowTitle = "Acceleration and Deceleration Example";
 
             StackPanel myStackPanel = new StackPanel();

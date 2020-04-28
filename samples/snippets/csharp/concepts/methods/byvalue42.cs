@@ -15,7 +15,7 @@ public class Example
         ModifyObject(rt);
         Console.WriteLine(rt.value);
     }
-        
+
     static void ModifyObject(SampleRefType obj)
     {
         obj.value = 33;

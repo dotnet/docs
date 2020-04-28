@@ -26,7 +26,7 @@ namespace UE.Samples
         {
             // <Snippet3>
             Uri baseAddress = new Uri("http://localhost:8000/HelloService");
-            
+
             using (ServiceHost serviceHost = new ServiceHost(typeof(HelloService), baseAddress))
             {
                 serviceHost.AddServiceEndpoint(typeof(IHello), new BasicHttpBinding(), "MyService");

@@ -4,12 +4,12 @@ namespace Acme.Collections
     public class Stack
     {
         Entry top;
-        public void Push(object data) 
+        public void Push(object data)
         {
             top = new Entry(top, data);
         }
 
-        public object Pop() 
+        public object Pop()
         {
             if (top == null)
             {
@@ -19,7 +19,7 @@ namespace Acme.Collections
             top = top.next;
             return result;
         }
-        
+
         class Entry
         {
             public Entry next;
@@ -39,7 +39,7 @@ using System;
 using Acme.Collections;
 class Example
 {
-    static void Main() 
+    static void Main()
     {
         Stack s = new Stack();
         s.Push(1);

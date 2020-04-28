@@ -40,7 +40,7 @@ The Discovery specification does not require that endpoints that participate in 
  The secure channel listener creates input or duplex channels that verify the compact signature in received messages. To verify the signature, the `KeyId` specified in the compact signature attached to the message is used to select a certificate from the specified store. If the message does not have a signature or the signature check fails, the messages are dropped. To use the secure binding, the sample defines a factory that creates custom <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> with the added discovery secure binding element. These secure endpoints can be used in discovery announcement listeners and discoverable services.  
   
 ## Sample Details  
- The sample includes a library and 4 console applications:  
+ The sample includes a library and 4 console applications:
   
 - **DiscoverySecurityChannels**: A library that exposes the secure binding. The library computes and verifies the compact signature for outgoing/incoming messages.  
   

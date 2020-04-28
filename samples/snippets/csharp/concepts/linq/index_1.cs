@@ -2,7 +2,7 @@
     {
         static void Main()
         {
-            
+
             // Specify the data source.
             int[] scores = new int[] { 97, 92, 81, 60 };
 
@@ -16,7 +16,7 @@
             foreach (int i in scoreQuery)
             {
                 Console.Write(i + " ");
-            }            
+            }
         }
     }
     // Output: 97 92 81

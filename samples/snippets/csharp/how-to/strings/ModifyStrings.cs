@@ -82,11 +82,11 @@ namespace HowToStrings
             // <Snippet5>
             string source = "The mountains are still there behind the clouds today.";
 
-            // Use Regex.Replace for more flexibility. 
+            // Use Regex.Replace for more flexibility.
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
             string replaceWith = "many ";
-            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", LocalReplaceMatchCase, 
+            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", LocalReplaceMatchCase,
                 System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             Console.WriteLine(source);
 
@@ -143,7 +143,7 @@ namespace HowToStrings
 		            strContent[i + 2] = charArray[i];
 	            }
             });
-            
+
             Console.WriteLine(result);
             // </Snippet7>
         }

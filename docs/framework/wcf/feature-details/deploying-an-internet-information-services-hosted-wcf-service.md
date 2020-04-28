@@ -80,7 +80,7 @@ IIS-hosted WCF services store their configuration in the applications Web.config
 When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a WCF service is `http://localhost/Application1/MyService.svc` with the following endpoint configuration:
 
 ```xml
-<endpoint address="anotherEndpoint" .../>
+<endpoint address="anotherEndpoint" />
 ```
 
 This provides an endpoint that can be reached at `http://localhost/Application1/MyService.svc/anotherEndpoint`.
@@ -88,7 +88,7 @@ This provides an endpoint that can be reached at `http://localhost/Application1/
 Similarly, the endpoint configuration element that uses an empty string as the relative address provides an endpoint reachable at `http://localhost/Application1/MyService.svc`, which is the base address.
 
 ```xml
-<endpoint address="" ... />
+<endpoint address="" />
 ```
 
 You must always use relative endpoint addresses for IIS-hosted service endpoints. Supplying a fully-qualified endpoint address (for example, `http://localhost/MyService.svc`) can lead to errors in the deployment of the service if the endpoint address does not point to the IIS-application that hosts the service exposing the endpoint. Using relative endpoint addresses for hosted services avoids these potential conflicts.

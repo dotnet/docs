@@ -19,7 +19,7 @@ class Program
             // Load an XML file into the XmlDocument object.
             xmlDoc.PreserveWhitespace = true;
             xmlDoc.Load("test.xml");
-                
+
             // Open the X.509 "Current User" store in read only mode.
             // <snippet2>
             X509Store store = new X509Store(StoreLocation.CurrentUser);
@@ -36,7 +36,7 @@ class Program
             // <snippet5>
             X509Certificate2 cert = null;
 
-            // Loop through each certificate and find the certificate 
+            // Loop through each certificate and find the certificate
             // with the appropriate name.
             foreach (X509Certificate2 c in certCollection)
             {
@@ -80,7 +80,7 @@ class Program
 
     public static void Encrypt(XmlDocument Doc, string ElementToEncrypt, X509Certificate2 Cert)
     {
-        // Check the arguments.  
+        // Check the arguments.
         if (Doc == null)
             throw new ArgumentNullException("Doc");
         if (ElementToEncrypt == null)
@@ -103,8 +103,8 @@ class Program
         }
 
         //////////////////////////////////////////////////
-        // Create a new instance of the EncryptedXml class 
-        // and use it to encrypt the XmlElement with the 
+        // Create a new instance of the EncryptedXml class
+        // and use it to encrypt the XmlElement with the
         // X.509 Certificate.
         //////////////////////////////////////////////////
 

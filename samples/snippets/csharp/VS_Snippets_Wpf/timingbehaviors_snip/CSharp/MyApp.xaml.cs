@@ -11,7 +11,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
     public partial class MyApp : Application
     {
-    
+
         public MyApp()
         {
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
@@ -26,7 +26,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
         {
-            
+
             try {
                 StreamWriter wr = new StreamWriter("error.txt");
                 wr.Write(args.ExceptionObject.ToString());
@@ -36,6 +36,6 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             }
 
             MessageBox.Show("Unhandled exception: " + args.ExceptionObject.ToString());
-        }     
+        }
     }
 }

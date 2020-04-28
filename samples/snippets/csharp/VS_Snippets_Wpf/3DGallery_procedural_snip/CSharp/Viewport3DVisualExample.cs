@@ -44,8 +44,8 @@ namespace SDKSample
             // Declare scene objects.
 
             // The Viewport3DVisual is used instead of the Viewport3D object because this 3D
-            // object is drawn directly to the WPF visual layer. Using Viepwor3dVisual can provide 
-            // performance benefits over using Viewport3D although it does not support many of the 
+            // object is drawn directly to the WPF visual layer. Using Viepwor3dVisual can provide
+            // performance benefits over using Viewport3D although it does not support many of the
             // features that Viewport3D does.
             Viewport3DVisual myViewport3D = new Viewport3DVisual();
             Model3DGroup myModel3DGroup = new Model3DGroup();
@@ -53,7 +53,7 @@ namespace SDKSample
             ModelVisual3D myModelVisual3D = new ModelVisual3D();
 
             // Defines the camera used to view the 3D object. In order to view the 3D object,
-            // the camera must be positioned and pointed such that the object is within view 
+            // the camera must be positioned and pointed such that the object is within view
             // of the camera.
             PerspectiveCamera myPCamera = new PerspectiveCamera();
 
@@ -69,8 +69,8 @@ namespace SDKSample
             // Asign the camera to the viewport
             myViewport3D.Camera = myPCamera;
 
-            // Define the lights cast in the scene. Without light, the 3D object cannot 
-            // be seen. Note: to illuminate an object from additional directions, create 
+            // Define the lights cast in the scene. Without light, the 3D object cannot
+            // be seen. Note: to illuminate an object from additional directions, create
             // additional lights.
             DirectionalLight myDirectionalLight = new DirectionalLight();
             myDirectionalLight.Color = Colors.White;
@@ -78,7 +78,7 @@ namespace SDKSample
 
             myModel3DGroup.Children.Add(myDirectionalLight);
 
-            // The geometry specifes the shape of the 3D plane. In this sample, a flat sheet 
+            // The geometry specifes the shape of the 3D plane. In this sample, a flat sheet
             // is created.
             MeshGeometry3D myMeshGeometry3D = new MeshGeometry3D();
 
@@ -92,7 +92,7 @@ namespace SDKSample
             myNormalCollection.Add(new Vector3D(0, 0, 1));
             myMeshGeometry3D.Normals = myNormalCollection;
 
-            // Create a collection of vertex positions for the MeshGeometry3D. 
+            // Create a collection of vertex positions for the MeshGeometry3D.
             Point3DCollection myPositionCollection = new Point3DCollection();
             myPositionCollection.Add(new Point3D(-0.5, -0.5, 0.5));
             myPositionCollection.Add(new Point3D(0.5, -0.5, 0.5));
@@ -125,10 +125,10 @@ namespace SDKSample
             // Apply the mesh to the geometry model.
             myGeometryModel.Geometry = myMeshGeometry3D;
 
-            // The material specifies the material applied to the 3D object. In this sample a  
+            // The material specifies the material applied to the 3D object. In this sample a
             // linear gradient covers the surface of the 3D object.
 
-            // Create a horizontal linear gradient with four stops.   
+            // Create a horizontal linear gradient with four stops.
             LinearGradientBrush myHorizontalGradient = new LinearGradientBrush();
             myHorizontalGradient.StartPoint = new Point(0, 0.5);
             myHorizontalGradient.EndPoint = new Point(1, 0.5);
@@ -141,7 +141,7 @@ namespace SDKSample
             DiffuseMaterial myMaterial = new DiffuseMaterial(myHorizontalGradient);
             myGeometryModel.Material = myMaterial;
 
-            // Apply a transform to the object. In this sample, a rotation transform is applied,  
+            // Apply a transform to the object. In this sample, a rotation transform is applied,
             // rendering the 3D object rotated.
             RotateTransform3D myRotateTransform3D = new RotateTransform3D();
             AxisAngleRotation3D myAxisAngleRotation3d = new AxisAngleRotation3D();

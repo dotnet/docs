@@ -19,7 +19,7 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 
 ## Prerequisites
 
-If you don't already have one, create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster.
+If you don't already have one, create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-apache-spark-cluster-in-hdinsight) cluster.
 
 1. Visit the [Azure portal](https://portal.azure.com) and select **+ Create a Resource**.
 

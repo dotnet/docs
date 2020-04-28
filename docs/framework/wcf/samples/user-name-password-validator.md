@@ -236,6 +236,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
     -->
     <userNameAuthentication userNamePasswordValidationMode="Custom" customUserNamePasswordValidatorType="Microsoft.ServiceModel.Samples.CalculatorService+CustomUserNameValidator, service" />
    ...
+   </serviceCredentials>
   </behavior>
  </serviceBehaviors>
 </behaviors>

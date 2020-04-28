@@ -5,7 +5,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Collections; 
+using System.Collections;
 
 namespace SDKSample
 {
@@ -13,13 +13,13 @@ namespace SDKSample
   public partial class Window1 : Window
   {
     AdornerLayer myAdornerLayer;
-        
+
     public Window1()
     {
       InitializeComponent();
     }
 
-    private void WindowLoaded(object sender, RoutedEventArgs e) 
+    private void WindowLoaded(object sender, RoutedEventArgs e)
     {
       //<Snippet_AdornSingleElement>
       myAdornerLayer = AdornerLayer.GetAdornerLayer(myTextBox);
@@ -32,7 +32,7 @@ namespace SDKSample
       //</Snippet_AdornChildren>
     }
 
-    // Sample event handler:  
+    // Sample event handler:
     // private void ButtonClick(object sender, RoutedEventArgs e) {}
 
     //<Snippet_SimpleCircleAdornerBody>
@@ -41,8 +41,8 @@ namespace SDKSample
     {
       // Be sure to call the base class constructor.
       public SimpleCircleAdorner(UIElement adornedElement)
-        : base(adornedElement) 
-      { 
+        : base(adornedElement)
+      {
       }
 
       // A common way to implement an adorner's rendering behavior is to override the OnRender

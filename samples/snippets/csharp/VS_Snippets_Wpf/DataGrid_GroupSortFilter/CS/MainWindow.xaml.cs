@@ -15,7 +15,7 @@ namespace DGGroupSortFilterExample
         public MainWindow()
         {
             InitializeComponent();
-            
+
             // Get a reference to the tasks collection.
             Tasks _tasks = (Tasks)this.Resources["tasks"];
 
@@ -31,7 +31,7 @@ namespace DGGroupSortFilterExample
                 });
             }
         }
-        
+
         private void UngroupButton_Click(object sender, RoutedEventArgs e)
         {
             // <snippet114>
@@ -44,7 +44,7 @@ namespace DGGroupSortFilterExample
             }
             // </snippet114>
         }
-        
+
         private void GroupButton_Click(object sender, RoutedEventArgs e)
         {
             // <snippet112>
@@ -57,7 +57,7 @@ namespace DGGroupSortFilterExample
             }
             // </snippet112>
         }
-        
+
         private void CompleteFilter_Changed(object sender, RoutedEventArgs e)
         {
             // Refresh the view to apply filters.
@@ -108,8 +108,8 @@ namespace DGGroupSortFilterExample
     // Requires using System.ComponentModel;
     public class Task : INotifyPropertyChanged, IEditableObject
     {
-        // The Task class implements INotifyPropertyChanged and IEditableObject 
-        // so that the datagrid can properly respond to changes to the 
+        // The Task class implements INotifyPropertyChanged and IEditableObject
+        // so that the datagrid can properly respond to changes to the
         // data collection and edits made in the DataGrid.
 
         // Private task data.
@@ -122,7 +122,7 @@ namespace DGGroupSortFilterExample
         private Task temp_Task = null;
         private bool m_Editing = false;
 
-        // Public properties. 
+        // Public properties.
         public string ProjectName
         {
             get { return this.m_ProjectName; }

@@ -22,6 +22,6 @@ namespace grid_issharedsizescope_prop
             Grid.SetIsSharedSizeScope(dp1, false);
             txt1.Text = "IsSharedSizeScope Property is set to " + Grid.GetIsSharedSizeScope(dp1).ToString();
         }
-        //</Snippet3>        
+        //</Snippet3>
 	}
 }

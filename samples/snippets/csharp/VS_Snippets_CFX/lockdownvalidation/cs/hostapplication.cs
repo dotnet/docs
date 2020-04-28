@@ -36,16 +36,16 @@ namespace Microsoft.WCF.Documentation
         = machine.GetSection(@"system.serviceModel/extensions") as ExtensionsSection;
       if (extensions == null)
         throw new Exception("not extensions section.");
-      ExtensionElement validator 
+      ExtensionElement validator
         = new ExtensionElement(
-          "internetClientValidator", 
+          "internetClientValidator",
           "Microsoft.ServiceModel.Samples.InternetClientValidatorElement, InternetClientValidator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         );
       validator.LockItem = true;
       if (extensions.BehaviorExtensions.IndexOf(validator) < 0)
         extensions.BehaviorExtensions.Add(validator);
       //</snippet5>
-       
+
       //<snippet6>
       // Add a new section for our validator and lock it down.
       // Behaviors for client applications must be endpoint behaviors.
@@ -72,8 +72,8 @@ namespace Microsoft.WCF.Documentation
     //<snippet4>
     <extensions>
       <behaviorExtensions>
-        <add 
-          name="internetClientValidator" 
+        <add
+          name="internetClientValidator"
           type="Microsoft.ServiceModel.Samples.InternetClientValidatorElement, InternetClientValidator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
           lockItem="true" />
       </behaviorExtensions>

@@ -46,7 +46,7 @@ class Form1 : Form
         FlowLayoutPanel panel = new FlowLayoutPanel();
         panel.Dock = DockStyle.Top;
         panel.AutoSize = true;
-        panel.Controls.AddRange(new Control[] { 
+        panel.Controls.AddRange(new Control[] {
             this.selectedCellsButton, this.selectedRowsButton,
             this.selectedColumnsButton });
 

@@ -11,7 +11,7 @@ namespace SDKSample
         Border myBorder;
         Grid myGrid;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -74,17 +74,17 @@ namespace SDKSample
             myButton4.Content = "Button 4 (Stretch)";
             Grid.SetRow(myButton4, 4);
             //</Snippet2>
-            
+
             // Add child elements to the parent Grid.
             myGrid.Children.Add(myTextBlock);
             myGrid.Children.Add(myButton1);
             myGrid.Children.Add(myButton2);
             myGrid.Children.Add(myButton3);
             myGrid.Children.Add(myButton4);
-            
+
             // Add the Grid as the lone Child of the Border.
             myBorder.Child = myGrid;
-            
+
             // Add the Border as the Content of the Parent Window Object.
             mainWindow.Content = myBorder;
             mainWindow.Show ();

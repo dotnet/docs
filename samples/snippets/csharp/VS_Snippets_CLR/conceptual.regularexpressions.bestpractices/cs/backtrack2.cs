@@ -12,8 +12,8 @@ public class Example
          Console.WriteLine(match.Value);
 
       Console.WriteLine();
-      
-      pattern = @"\b\p{Lu}(?>\w*)\b";   
+
+      pattern = @"\b\p{Lu}(?>\w*)\b";
       foreach (Match match in Regex.Matches(input, pattern))
          Console.WriteLine(match.Value);
    }
@@ -22,7 +22,7 @@ public class Example
 //       This
 //       Sentence
 //       Capital
-//       
+//
 //       This
 //       Sentence
 //       Capital

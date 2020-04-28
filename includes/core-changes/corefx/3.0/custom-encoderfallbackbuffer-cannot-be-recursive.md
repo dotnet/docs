@@ -30,7 +30,7 @@ If an application uses a custom <xref:System.Text.EncoderFallback> and <xref:Sys
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

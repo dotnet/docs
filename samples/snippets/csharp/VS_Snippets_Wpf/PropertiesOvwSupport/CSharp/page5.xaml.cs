@@ -16,7 +16,7 @@ namespace MyAquarium {
   }
 
   public class Fish : FrameworkElement {
-      public static readonly DependencyProperty SpeciesProperty = 
+      public static readonly DependencyProperty SpeciesProperty =
       DependencyProperty.Register(
       "Species",
       typeof(string),
@@ -41,7 +41,7 @@ namespace MyAquarium {
       AquariumContents
       {
       get {
-          return (FreezableCollection<FrameworkElement>)GetValue(AquariumContentsProperty); 
+          return (FreezableCollection<FrameworkElement>)GetValue(AquariumContentsProperty);
       }
     }
     public Aquarium() : base()

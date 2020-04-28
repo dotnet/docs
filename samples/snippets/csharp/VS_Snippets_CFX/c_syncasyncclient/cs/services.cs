@@ -40,7 +40,7 @@ namespace Microsoft.WCF.Documentation
  	    return "The sychronous service greets you: " + msg;
     }
 
-    // This asynchronously implemented operation is never called because 
+    // This asynchronously implemented operation is never called because
     // there is a synchronous version of the same method.
     public IAsyncResult BeginSampleMethod(string msg, AsyncCallback callback, object asyncState)
     {
@@ -56,7 +56,7 @@ namespace Microsoft.WCF.Documentation
     }
 
     // <snippet3>
-    public IAsyncResult BeginServiceAsyncMethod(string msg, AsyncCallback callback, object asyncState) 
+    public IAsyncResult BeginServiceAsyncMethod(string msg, AsyncCallback callback, object asyncState)
     {
       Console.WriteLine("BeginServiceAsyncMethod called with: \"{0}\"", msg);
       return new CompletedAsyncResult<string>(msg);

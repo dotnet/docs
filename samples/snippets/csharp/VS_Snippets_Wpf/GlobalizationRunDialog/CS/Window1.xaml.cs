@@ -21,6 +21,6 @@ namespace RunDialog
         public Window1()
         {
             InitializeComponent();
-        }    
+        }
 	}
 }

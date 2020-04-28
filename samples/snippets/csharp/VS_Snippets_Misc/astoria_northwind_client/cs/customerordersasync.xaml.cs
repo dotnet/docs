@@ -26,7 +26,7 @@ namespace NorthwindClient
         private NorthwindEntities context;
         private DataServiceCollection<Customer> customerBinding;
         private const string customerCountry = "Germany";
-     
+
         // Change this URI to the service URI for your implementation.
         private const string svcUri = "http://localhost:12345/Northwind.svc/";
 
@@ -49,7 +49,7 @@ namespace NorthwindClient
 
             try
             {
-                // Begin asynchronously saving changes using the 
+                // Begin asynchronously saving changes using the
                 // specified handler and query object state.
                 query.BeginExecute(OnQueryCompleted, query);
             }
@@ -70,11 +70,11 @@ namespace NorthwindClient
             {
                 try
                 {
-                    // Instantiate the binding collection using the 
+                    // Instantiate the binding collection using the
                     // results of the query execution.
                     customerBinding = new DataServiceCollection<Customer>(
                         query.EndExecute(result));
-                    
+
                     // Bind the collection to the root element of the UI.
                     this.LayoutRoot.DataContext = customerBinding;
                 }

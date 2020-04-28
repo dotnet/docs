@@ -10,7 +10,7 @@ ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
 
 Typically, you do not have to set the identity on a service because the selection of a client credential type dictates the type of identity exposed in the service metadata. For example, the following configuration code uses the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) element and sets the `clientCredentialType` attribute to Windows.  
 
- The following Web Services Description Language (WSDL) fragment shows the identity for the endpoint previously defined. In this example, the service is running as a self-hosted service under a particular user account (username@contoso.com) and therefore the user principal name (UPN) identity contains the account name. The UPN is also known as the user logon name in a Windows domain.  
+ The following Web Services Description Language (WSDL) fragment shows the identity for the endpoint previously defined. In this example, the service is running as a self-hosted service under a particular user account (username@contoso.com) and therefore the user principal name (UPN) identity contains the account name. The UPN is also known as the user sign-in name in a Windows domain.  
 
  For a sample application that demonstrates identity setting, see [Service Identity Sample](../samples/service-identity-sample.md). For more information about service identity, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).  
   
@@ -35,19 +35,19 @@ Typically, you do not have to set the identity on a service because the selectio
   
 - If you are using message level security, authentication may fail, depending on the authentication mode:  
   
-- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `false`, authentication fail.  
+- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `false`, authentication fails.  
   
-- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `true`, authentication fails if the UPN is empty, but succeeds if the SPN is empty.  
+- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `true`, authentication fails if the UPN is empty but succeeds if the SPN is empty.  
   
 - If you are using Kerberos direct (also known as "one-shot"), authentication fails.  
   
-### Using the \<identity> Element in Configuration  
- If you change the client credential type in the binding previously shown to Certificate`,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
+### Use the \<identity> Element in Configuration  
+ If you change the client credential type in the binding previously shown to `Certificate`, then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
 
  You can change the value of the default service identity or change the type of the identity by using the <`identity`> element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
 
-### Setting Identity Programmatically  
- Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
+### Set Identity Programmatically  
+ Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if necessary. The following code adds a new service endpoint with a specific DNS identity.  
   
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  

@@ -41,7 +41,7 @@ class Program
 
     public static void Decrypt(XmlDocument Doc)
     {
-        // Check the arguments.  
+        // Check the arguments.
         if (Doc == null)
             throw new ArgumentNullException("Doc");
 

@@ -236,7 +236,7 @@ typedef struct _STRRET
 #include <poppack.h>
 ```
 
-The above `struct` is being declared with Windows' headers that influence the memory layout of the type. When defined in a managed environment these layout details are needed to properly interoperate with native code.
+The above `struct` is declared with Windows' headers that influence the memory layout of the type. When defined in a managed environment, these layout details are needed to properly interoperate with native code.
 
 The correct managed definition of this type in a 32-bit process would be:
 

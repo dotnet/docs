@@ -1,10 +1,10 @@
 ---
 title: Choose between .NET Core and .NET Framework for server apps
-description: A guide to help you decide which implementation of .NET to use when building a server app in .NET.
+description: A guide to help you decide which implementation of .NET to use when building a server app.
 author: cartermp
-ms.date: 06/19/2018
+ms.date: 04/28/2020
 ---
-# Choose between .NET Core and .NET Framework for server apps
+# .NET Core vs. .NET Framework for server apps
 
 There are two supported .NET implementations for building server-side apps: .NET Framework and .NET Core. Both share many of the same components and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish. This article provides guidance on when to use each.
 
@@ -64,6 +64,10 @@ To install applications with dependencies on different versions of .NET, we reco
 ### Current .NET Framework applications
 
 In most cases, you don’t need to migrate your existing applications to .NET Core. Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.
+
+### ASP.NET Core on .NET Framework
+
+For information about support for ASP.NET Core on .NET Framework, see [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ### Third-party libraries or NuGet packages not available for .NET Core
 

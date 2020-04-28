@@ -219,7 +219,7 @@ The `NativeMethods` class contains the prototypes for the `TestUnion` and `TestU
 
 ## Platform sample
 
-In some scenarios `struct` and `union` layouts can be different depending on the targeted platform. For example, consider the [`STRRET`](https://docs.microsoft.com/windows/win32/api/shtypes/ns-shtypes-strret) type when defined in a COM scenario:
+In some scenarios, `struct` and `union` layouts can differ depending on the targeted platform. For example, consider the [`STRRET`](/windows/win32/api/shtypes/ns-shtypes-strret) type when defined in a COM scenario:
 
 ```c++
 #include <pshpack8.h> /* Defines the packing of the struct */

@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 03/27/2020
+ms.date: 04/28/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -25,6 +25,7 @@ The following breaking changes are documented on this page:
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
 - [Data Protection: DataProtection.AzureStorage uses new Azure Storage APIs](#data-protection-dataprotectionazurestorage-uses-new-azure-storage-apis)
+- [Extensions: Package reference changes](#extensions-package-reference-changes)
 - [Hosting: AspNetCoreModule V1 removed from Windows Hosting Bundle](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Hosting: Generic host restricts Startup constructor injection](#hosting-generic-host-restricts-startup-constructor-injection)
 - [Hosting: HTTPS redirection enabled for IIS out-of-process apps](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
@@ -71,6 +72,10 @@ The following breaking changes are documented on this page:
 ## ASP.NET Core 5.0
 
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
 
 ***
 

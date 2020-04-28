@@ -63,6 +63,7 @@ The following breaking changes are documented on this page:
 - [SignalR: HubConnectionContext constructors changed](#signalr-hubconnectioncontext-constructors-changed)
 - [SignalR: JavaScript client package name change](#signalr-javascript-client-package-name-changed)
 - [SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](#signalr-messagepack-hub-protocol-moved-to-messagepack-2x-package)
+- [SignalR: MessagePack Hub Protocol options type changed](#signalr-messagepack-hub-protocol-options-type-changed)
 - [SignalR: Obsolete APIs](#signalr-usesignalr-and-useconnections-methods-marked-obsolete)
 - [SignalR: UseSignalR and UseConnections methods removed](#signalr-usesignalr-and-useconnections-methods-removed)
 - [SPAs: SpaServices and NodeServices console logger fallback default change](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
@@ -85,6 +86,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-package.md)]
+
+***
+
+[!INCLUDE[SignalR: MessagePack Hub Protocol options type changed](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-hub-protocol-options-changed.md)]
 
 ***
 

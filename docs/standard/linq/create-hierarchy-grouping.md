@@ -1,6 +1,6 @@
 ---
 title: How to create hierarchy using grouping - LINQ to XML
-description: Data can be grouped based on related values in different elements, then reordered to place related elements together under an element that reflects the relationship. This article provides an example for C# and Visual Basic.
+description: See an example on how data can be grouped based on related values in different elements, then reordered to place related elements together under an element that reflects the relationship.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

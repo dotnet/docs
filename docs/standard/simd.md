@@ -1,13 +1,13 @@
 ---
-title: SIMD in .NET
-description: This tutorial demonstrates how to use hardware SIMD operations in C# and .NET Core.
+title: SIMD-accelerated types in .NET
+description: This article describes SIMD-enable types in .NET and demonstrates how to use hardware SIMD operations in C# and .NET.
 author: FIVIL
 ms.author: tagoo
-ms.date: 03/31/2020
+ms.date: 04/28/2020
 ms.technology: dotnet-standard
 ---
 
-# Overview
+# Use SIMD-accelerated numeric types
 
 SIMD (Single instruction, multiple data) provides hardware support for performing an operation on multiple pieces of data, in parallel, using a single instruction. In .NET, there's set of SIMD-accelerated types under the <xref:System.Numerics> namespace. SIMD operations can be parallelized at the hardware level. That increases the throughput of the vectorized computations, which are common in mathematical, scientific, and graphics apps.
 

@@ -35,7 +35,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & e.Value)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <StringElement>abcde</StringElement>
@@ -58,7 +58,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & CInt(e))
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <Age>44</Age>
@@ -85,7 +85,7 @@ Console.WriteLine(e)
 Console.WriteLine("Value of e:" & e.Value)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <StringElement>abcde</StringElement>
@@ -220,7 +220,7 @@ End If
 Console.WriteLine("v4:{0}", IIf(Not (v4.HasValue), "element doesn't exist", v4))
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 c1:child 1 content

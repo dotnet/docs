@@ -79,7 +79,7 @@ For Each str In cList
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Child One Text
@@ -161,7 +161,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Child One Text

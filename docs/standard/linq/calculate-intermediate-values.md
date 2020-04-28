@@ -41,7 +41,7 @@ For Each ex As Decimal In extensions
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 55.92
@@ -89,7 +89,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 55.92

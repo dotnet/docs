@@ -100,7 +100,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Column  Name="CustomerId"   =Customer.CustomerId.Heading

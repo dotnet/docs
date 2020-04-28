@@ -24,7 +24,7 @@ XElement root = new XElement(aw + "Root",
 Console.WriteLine(root);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com">
@@ -46,7 +46,7 @@ XElement root = new XElement(aw + "Root",
 Console.WriteLine(root);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Root xmlns:aw="http://www.adventure-works.com">
@@ -76,7 +76,7 @@ XElement root = new XElement(aw + "Root",
 Console.WriteLine(root);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com" xmlns:fc="www.fourthcoffee.com">
@@ -107,7 +107,7 @@ XElement root = new XElement(aw + "Root",
 Console.WriteLine(root);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Root xmlns:aw="http://www.adventure-works.com" xmlns:fc="www.fourthcoffee.com">
@@ -136,7 +136,7 @@ XElement root = new XElement("{http://www.adventure-works.com}Root",
 Console.WriteLine(root);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Root xmlns:aw="http://www.adventure-works.com">

@@ -57,7 +57,7 @@ Module Module1
         Console.WriteLine(root)
     End Sub
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Root xmlns:aw="http://www.adventure-works.com" xmlns:fc="www.fourthcoffee.com">

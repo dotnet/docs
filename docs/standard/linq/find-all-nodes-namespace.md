@@ -64,7 +64,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Nodes in the http://www.adventure-works.com namespace
@@ -104,7 +104,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>

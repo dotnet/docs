@@ -115,7 +115,7 @@ Sub Main()
 End Sub
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Validating doc1
@@ -185,7 +185,7 @@ Sub Main()
 End Sub
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Attempting to validate

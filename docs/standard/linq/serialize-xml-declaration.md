@@ -38,7 +38,7 @@ Dim str As String = File.ReadAllText("Root.xml")
 Console.WriteLine(str)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -79,7 +79,7 @@ End Using
 Console.WriteLine(sb.ToString())
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root><Child>child content</Child></Root>

@@ -82,7 +82,7 @@ Dim xmlTree As XElement = _
 Console.WriteLine(xmlTree)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>

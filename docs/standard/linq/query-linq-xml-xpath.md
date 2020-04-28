@@ -1,6 +1,6 @@
 ---
 title: How to query LINQ to XML using XPath - LINQ to XML
-description:
+description: Introduce yourself to the extension methods that enable you to query an XML tree by using XPath.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

@@ -14,7 +14,7 @@ Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiv
 The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
 
 > [!NOTE]
-> The null-forgiving operator can interact with the [null-conditional operators](member-access-operators.md#null-conditional-operators--and-) in unexpected ways. In C# 8 the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation `z` is evaluated even if `x` is null, which may result in a <xref:System.NullReferenceException>.
+> In C# 8 the null-forgiving operator can interact with the [null-conditional operators](member-access-operators.md#null-conditional-operators--and-) in unexpected ways. The expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
 
 For more information about the nullable reference types feature, see [Nullable reference types](../builtin-types/nullable-reference-types.md).
 

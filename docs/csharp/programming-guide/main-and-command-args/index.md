@@ -42,6 +42,8 @@ public static async Task Main(string[] args) { }
 public static async Task<int> Main(string[] args) { }
 ```
 
+The preceding examples all use the public accessor modifier. That is typical, but not required.
+
 The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
 
 ## C# language specification

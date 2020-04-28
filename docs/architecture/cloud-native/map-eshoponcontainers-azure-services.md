@@ -48,7 +48,7 @@ The eShopOnContainers application stores the user's current shopping basket betw
 
 The Locations microservice uses a MongoDB NoSQL database for its persistence. During development, the database can be deployed in its own container, while in production the service can leverage [Azure Cosmos DB's API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction). One of the benefits of Azure Cosmos DB is its ability to leverage multiple different communication protocols, including a SQL API and common NoSQL APIs including MongoDB, Cassandra, Gremlin, and Azure Table Storage. Azure Cosmos DB offers a fully managed and globally distributed database as a service that can scale to meet the needs of the services that use it.
 
-Distributed data in cloud-native applications is covered in more detail in [chapter 5](database-per-microservice.md).
+Distributed data in cloud-native applications is covered in more detail in [chapter 5](distributed-data.md).
 
 ## Event Bus
 

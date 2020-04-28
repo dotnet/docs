@@ -1,10 +1,11 @@
 ---
-title: Database-per-microservice
+title: Distributed data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 01/22/2020
+ms.date: 04/24/2020
 ---
-# Database-per-microservice
+
+# Distributed data
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -22,7 +23,7 @@ In many ways, a single database keeps data management simple. Querying data acro
 
 Designing for cloud-native, we take a different approach. On the right-side of Figure 5-1, note how business functionality segregates into small, independent microservices. Each microservice encapsulates a specific business capability and its own data. The monolithic database decomposes into a distributed data model with many smaller databases, each aligning with a microservice. When the smoke clears, we emerge with a design that exposes a *database per microservice*.
 
-## Why?
+## Database-per-microservice, why?
 
 This database per microservice provides many benefits, especially for systems that must evolve rapidly and support massive scale. With this model...
 

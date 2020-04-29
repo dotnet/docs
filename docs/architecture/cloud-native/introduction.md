@@ -16,7 +16,7 @@ But this time it's different: Start-up, equity, and plenty of funding.
 
 The mention of the cloud and cutting-edge technology pushes you over the edge.
 
-Fast forward a few weeks and you're now a new employee in a design session architecting a major eCommerce application. You're going to complete with other leading eCommerce sites.
+Fast forward a few weeks and you're now a new employee in a design session architecting a major eCommerce application. You're going to compete with other leading eCommerce sites.
 
 How will you build it?
 

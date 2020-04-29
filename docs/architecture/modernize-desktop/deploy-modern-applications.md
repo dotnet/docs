@@ -25,7 +25,7 @@ Panic starts flowing through the air and a brief investigation points to a young
 and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
 
 Installing desktop applications have traditionally been a nightmare for
-two main reasons: 
+two main reasons:
 
 - Lack of close collaboration culture between dev and IT teams.
 - Lack of a solid packaging and deploying technology we can build upon.
@@ -334,3 +334,6 @@ mainly the version, and the path to the new MSIX file. The next time the user
 launches the application the system is going to detect the change and download
 the files for the new version in the background. When this is done, installation
 will execute on new application launch transparently for your user.
+
+>[!div class="step-by-step"]
+>[Previous](example-migration-core.md)

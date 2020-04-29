@@ -65,7 +65,7 @@ Note that there's no version attached to `dotnet-host`.
 
 If you installed using a tarball, you must remove .NET Core using the manual method.
 
-On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. To be clear, this deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+On Linux, you must remove the SDKs and runtimes separately, by removing the versioned directories. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
 version="1.0.1"
@@ -82,7 +82,7 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ::: zone pivot="os-macos"
 
-On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. To be clear, this deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
+On Mac, you must remove the SDKs and runtimes separately, by removing the versioned directories. Removing them deletes the SDK and runtime from disk. For example, to remove the 1.0.1 SDK and runtime, you would use the following bash commands:
 
 ```bash
 version="1.0.1"
@@ -122,7 +122,7 @@ Before .NET Core 3.0 SDK, the .NET Core SDK installers used a folder named *NuGe
 You may want to remove this folder, if:
 
 - You're only developing using .NET Core 3.0 SDK or later versions.
-- You're developing using .NET Core SDK versions earlier than 3.0, but you can work online and things can be slower once.
+- You're developing using .NET Core SDK versions earlier than 3.0, but you can work online.
 
 If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 02/27/2020
+ms.date: 04/29/2020
 ---
 # dotnet test
 
@@ -115,7 +115,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-s|--settings <SETTINGS_FILE>`**
 
-  The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+  The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) Note that the `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests.
 
 - **`-t|--list-tests`**
 

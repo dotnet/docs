@@ -15,7 +15,7 @@ Using filters that include exclamation mark (!) on `*nix` requires escaping sinc
 skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
 Note the backslash that precedes the exclamation mark.
 
-For FullyQualifiedName values that include a comma, as for generic type parameters, escape the comma with `%2C`. For example:
+For `FullyQualifiedName` values that include a comma for generic type parameters, escape the comma with `%2C`. For example:
 
 ```dotnetcli
 dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"

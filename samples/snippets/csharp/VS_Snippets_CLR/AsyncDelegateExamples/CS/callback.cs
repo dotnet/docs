@@ -5,36 +5,36 @@ using System.Runtime.Remoting.Messaging;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncMain 
+    public class AsyncMain
     {
-        static void Main() 
+        static void Main()
         {
             // Create an instance of the test class.
             AsyncDemo ad = new AsyncDemo();
 
             // Create the delegate.
             AsyncMethodCaller caller = new AsyncMethodCaller(ad.TestMethod);
-       
+
             // The threadId parameter of TestMethod is an out parameter, so
             // its input value is never used by TestMethod. Therefore, a dummy
             // variable can be passed to the BeginInvoke call. If the threadId
             // parameter were a ref parameter, it would have to be a class-
-            // level field so that it could be passed to both BeginInvoke and 
+            // level field so that it could be passed to both BeginInvoke and
             // EndInvoke.
             int dummy = 0;
 
             // Initiate the asynchronous call, passing three seconds (3000 ms)
-            // for the callDuration parameter of TestMethod; a dummy variable 
+            // for the callDuration parameter of TestMethod; a dummy variable
             // for the out parameter (threadId); the callback delegate; and
             // state information that can be retrieved by the callback method.
             // In this case, the state information is a string that can be used
             // to format a console message.
             IAsyncResult result = caller.BeginInvoke(3000,
-                out dummy, 
+                out dummy,
                 new AsyncCallback(CallbackMethod),
                 "The call executed on thread {0}, with return value \"{1}\".");
 
-            Console.WriteLine("The main thread {0} continues to execute...", 
+            Console.WriteLine("The main thread {0} continues to execute...",
                 Thread.CurrentThread.ManagedThreadId);
 
             // The callback is made on a ThreadPool thread. ThreadPool threads
@@ -45,16 +45,16 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
 
             Console.WriteLine("The main thread ends.");
         }
-        
+
         // The callback method must have the same signature as the
         // AsyncCallback delegate.
-        static void CallbackMethod(IAsyncResult ar) 
+        static void CallbackMethod(IAsyncResult ar)
         {
             // Retrieve the delegate.
             AsyncResult result = (AsyncResult) ar;
             AsyncMethodCaller caller = (AsyncMethodCaller) result.AsyncDelegate;
 
-            // Retrieve the format string that was passed as state 
+            // Retrieve the format string that was passed as state
             // information.
             string formatString = (string) ar.AsyncState;
 

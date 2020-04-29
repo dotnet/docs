@@ -43,20 +43,20 @@ namespace MyCompany.Proj1
 //<snippet3>
 namespace SomeNameSpace
 {
-    public class MyClass 
+    public class MyClass
     {
-        static void Main() 
+        static void Main()
         {
             Nested.NestedNameSpaceClass.SayHello();
         }
     }
 
     // a nested namespace
-    namespace Nested   
+    namespace Nested
     {
-        public class NestedNameSpaceClass 
+        public class NestedNameSpaceClass
         {
-            public static void SayHello() 
+            public static void SayHello()
             {
                 Console.WriteLine("Hello");
             }

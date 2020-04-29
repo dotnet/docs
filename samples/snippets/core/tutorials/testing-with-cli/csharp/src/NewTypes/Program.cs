@@ -11,9 +11,9 @@ namespace ConsoleApplication
             List<IPet> pets = new List<IPet>
             {
                 new Dog(),
-                new Cat()  
+                new Cat()
             };
-            
+
             foreach (var pet in pets)
             {
                 Console.WriteLine(pet.TalkToOwner());

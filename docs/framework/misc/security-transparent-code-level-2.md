@@ -174,4 +174,4 @@ The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A>
 ## See also
 
 - [Security-Transparent Code, Level 1](security-transparent-code-level-1.md)
-- [Security Changes](../security/security-changes.md)
+- [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)

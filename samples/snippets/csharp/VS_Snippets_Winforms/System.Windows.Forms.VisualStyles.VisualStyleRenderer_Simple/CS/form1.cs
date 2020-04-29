@@ -52,7 +52,7 @@ namespace SimpleVisualStyleRendererSample
                 renderer.DrawBackground(e.Graphics, this.ClientRectangle);
             }
 
-            // Visual styles are disabled or the element is undefined, 
+            // Visual styles are disabled or the element is undefined,
             // so just draw a message.
             else
             {

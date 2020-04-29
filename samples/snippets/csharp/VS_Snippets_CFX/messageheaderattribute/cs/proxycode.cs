@@ -14,7 +14,7 @@
 [System.ServiceModel.ServiceContractAttribute(Namespace="Microsoft.WCF.Documentation", ConfigurationName="IMessagingHello")]
 public interface IMessagingHello
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(Action="http://GreetingMessage/Action", ReplyAction="http://HelloResponseMessage/Action")]
     HelloResponseMessage Hello(HelloGreetingMessage request);
 }
@@ -24,14 +24,14 @@ public interface IMessagingHello
 [System.ServiceModel.MessageContractAttribute(WrapperName="HelloGreetingMessage", WrapperNamespace="Microsoft.WCF.Documentation", IsWrapped=true)]
 public partial class HelloGreetingMessage
 {
-    
+
     [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.examples.com", Order=0)]
     public string Salutations;
-    
+
     public HelloGreetingMessage()
     {
     }
-    
+
     public HelloGreetingMessage(string Salutations)
     {
         this.Salutations = Salutations;
@@ -43,17 +43,17 @@ public partial class HelloGreetingMessage
 [System.ServiceModel.MessageContractAttribute(WrapperName="HelloResponseMessage", WrapperNamespace="Microsoft.WCF.Documentation", IsWrapped=true)]
 public partial class HelloResponseMessage
 {
-    
+
     [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.examples.com")]
     public string OutOfBandData;
-    
+
     [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.examples.com", Order=0)]
     public string ResponseToGreeting;
-    
+
     public HelloResponseMessage()
     {
     }
-    
+
     public HelloResponseMessage(string OutOfBandData, string ResponseToGreeting)
     {
         this.OutOfBandData = OutOfBandData;
@@ -70,31 +70,31 @@ public interface IMessagingHelloChannel : IMessagingHello, System.ServiceModel.I
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class MessagingHelloClient : System.ServiceModel.ClientBase<IMessagingHello>, IMessagingHello
 {
-    
+
     public MessagingHelloClient()
     {
     }
-    
-    public MessagingHelloClient(string endpointConfigurationName) : 
+
+    public MessagingHelloClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public MessagingHelloClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public MessagingHelloClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public MessagingHelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public MessagingHelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public MessagingHelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public MessagingHelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public HelloResponseMessage Hello(HelloGreetingMessage request)
     {
         return base.Channel.Hello(request);

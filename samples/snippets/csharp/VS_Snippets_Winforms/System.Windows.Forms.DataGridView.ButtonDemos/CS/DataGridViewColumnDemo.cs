@@ -84,15 +84,15 @@ public class DataGridViewColumnDemo : Form
         PostColumnCreation();
 
         // Populate the rows.
-        string[] row1 = new string[]{"Meatloaf", 
+        string[] row1 = new string[]{"Meatloaf",
                                         "Main Dish", boringMeatloaf, boringMeatloafRanking};
-        string[] row2 = new string[]{"Key Lime Pie", 
+        string[] row2 = new string[]{"Key Lime Pie",
                                         "Dessert", "lime juice, evaporated milk", "****"};
-        string[] row3 = new string[]{"Orange-Salsa Pork Chops", 
+        string[] row3 = new string[]{"Orange-Salsa Pork Chops",
                                         "Main Dish", "pork chops, salsa, orange juice", "****"};
-        string[] row4 = new string[]{"Black Bean and Rice Salad", 
+        string[] row4 = new string[]{"Black Bean and Rice Salad",
                                         "Salad", "black beans, brown rice", "****"};
-        string[] row5 = new string[]{"Chocolate Cheesecake", 
+        string[] row5 = new string[]{"Chocolate Cheesecake",
                                         "Dessert", "cream cheese", "***"};
         string[] row6 = new string[]{"Black Bean Dip", "Appetizer",
                                         "black beans, sour cream", "***"};
@@ -309,7 +309,7 @@ public class DataGridViewColumnDemo : Form
 
     private void AdjustDataGridViewSizing()
     {
-        dataGridView.ColumnHeadersHeightSizeMode = 
+        dataGridView.ColumnHeadersHeightSizeMode =
             DataGridViewColumnHeadersHeightSizeMode.AutoSize;
     }
 
@@ -321,7 +321,7 @@ public class DataGridViewColumnDemo : Form
         DataGridViewColumn column = dataGridView.Columns[1];
         column.MinimumWidth = 40;
     }
-    //</snippet107> 
+    //</snippet107>
 
     //<snippet108>
     // Set the width.

@@ -14,7 +14,7 @@ namespace SystemTextJsonSamples
   ""summary"": ""Hot""
 }";
             Console.WriteLine($"JSON input:\n{jsonString}\n");
-            
+
             // <SnippetDeserialize>
             var options = new JsonSerializerOptions
             {

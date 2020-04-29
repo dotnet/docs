@@ -40,7 +40,7 @@ namespace L2E_ConceptualExamplesCS
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -48,7 +48,7 @@ namespace L2E_ConceptualExamplesCS
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -57,11 +57,11 @@ namespace L2E_ConceptualExamplesCS
             OnContextCreated();
         }
         #endregion
-        
+
         #region Partial Methods
         partial void OnContextCreated();
         #endregion
-        
+
         #region ObjectSet Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -78,7 +78,7 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         private ObjectSet<Address> _Addresses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -94,7 +94,7 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         private ObjectSet<Contact> _Contacts;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -110,7 +110,7 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         private ObjectSet<Product> _Products;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -126,7 +126,7 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         private ObjectSet<SalesOrderDetail> _SalesOrderDetails;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -142,10 +142,10 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         private ObjectSet<SalesOrderHeader> _SalesOrderHeaders;
-    
+
         #endregion
         #region AddTo Methods
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Addresses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -153,7 +153,7 @@ namespace L2E_ConceptualExamplesCS
         {
             base.AddObject("Addresses", address);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Contacts EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -161,7 +161,7 @@ namespace L2E_ConceptualExamplesCS
         {
             base.AddObject("Contacts", contact);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -169,7 +169,7 @@ namespace L2E_ConceptualExamplesCS
         {
             base.AddObject("Products", product);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -177,7 +177,7 @@ namespace L2E_ConceptualExamplesCS
         {
             base.AddObject("SalesOrderDetails", salesOrderDetail);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderHeaders EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -187,10 +187,10 @@ namespace L2E_ConceptualExamplesCS
         }
         #endregion
     }
-    
+
     #endregion
-    
-    
+
+
     #region Entities
     /// <summary>
     /// No Metadata Documentation available.
@@ -215,19 +215,19 @@ namespace L2E_ConceptualExamplesCS
         {
             Address address = new Address();
             address.AddressID = addressID;
-            
+
             address.AddressLine1 = addressLine1;
-            
+
             address.City = city;
-            
+
             address.StateProvinceID = stateProvinceID;
-            
+
             address.PostalCode = postalCode;
-            
+
             address.rowguid = rowguid;
-            
+
             address.ModifiedDate = modifiedDate;
-            
+
             return address;
         }
         #endregion
@@ -255,12 +255,12 @@ namespace L2E_ConceptualExamplesCS
                     OnAddressIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _AddressID;
         partial void OnAddressIDChanging(global::System.Int32 value);
         partial void OnAddressIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -280,12 +280,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("AddressLine1");
                 OnAddressLine1Changed();
             }
-                
+
         }
         private global::System.String _AddressLine1;
         partial void OnAddressLine1Changing(global::System.String value);
         partial void OnAddressLine1Changed();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -305,12 +305,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("AddressLine2");
                 OnAddressLine2Changed();
             }
-                
+
         }
         private global::System.String _AddressLine2;
         partial void OnAddressLine2Changing(global::System.String value);
         partial void OnAddressLine2Changed();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -330,12 +330,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("City");
                 OnCityChanged();
             }
-                
+
         }
         private global::System.String _City;
         partial void OnCityChanging(global::System.String value);
         partial void OnCityChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -355,12 +355,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("StateProvinceID");
                 OnStateProvinceIDChanged();
             }
-                
+
         }
         private global::System.Int32 _StateProvinceID;
         partial void OnStateProvinceIDChanging(global::System.Int32 value);
         partial void OnStateProvinceIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -380,12 +380,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("PostalCode");
                 OnPostalCodeChanged();
             }
-                
+
         }
         private global::System.String _PostalCode;
         partial void OnPostalCodeChanging(global::System.String value);
         partial void OnPostalCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -405,12 +405,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -430,14 +430,14 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -445,7 +445,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_BillToAddressID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_BillToAddressID", "SalesOrderHeader")]
         public EntityCollection<SalesOrderHeader> SalesOrderHeaders
         {
             get
@@ -466,7 +466,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_ShipToAddressID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_ShipToAddressID", "SalesOrderHeader")]
         public EntityCollection<SalesOrderHeader> SalesOrderHeaders1
         {
             get
@@ -483,7 +483,7 @@ namespace L2E_ConceptualExamplesCS
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -509,23 +509,23 @@ namespace L2E_ConceptualExamplesCS
         {
             Contact contact = new Contact();
             contact.ContactID = contactID;
-            
+
             contact.NameStyle = nameStyle;
-            
+
             contact.FirstName = firstName;
-            
+
             contact.LastName = lastName;
-            
+
             contact.EmailPromotion = emailPromotion;
-            
+
             contact.PasswordHash = passwordHash;
-            
+
             contact.PasswordSalt = passwordSalt;
-            
+
             contact.rowguid = rowguid;
-            
+
             contact.ModifiedDate = modifiedDate;
-            
+
             return contact;
         }
         #endregion
@@ -553,12 +553,12 @@ namespace L2E_ConceptualExamplesCS
                     OnContactIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -578,12 +578,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("NameStyle");
                 OnNameStyleChanged();
             }
-                
+
         }
         private global::System.Boolean _NameStyle;
         partial void OnNameStyleChanging(global::System.Boolean value);
         partial void OnNameStyleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -603,12 +603,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
-                
+
         }
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -628,12 +628,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
-                
+
         }
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -653,12 +653,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("MiddleName");
                 OnMiddleNameChanged();
             }
-                
+
         }
         private global::System.String _MiddleName;
         partial void OnMiddleNameChanging(global::System.String value);
         partial void OnMiddleNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -678,12 +678,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
-                
+
         }
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -703,12 +703,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Suffix");
                 OnSuffixChanged();
             }
-                
+
         }
         private global::System.String _Suffix;
         partial void OnSuffixChanging(global::System.String value);
         partial void OnSuffixChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -728,12 +728,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("EmailAddress");
                 OnEmailAddressChanged();
             }
-                
+
         }
         private global::System.String _EmailAddress;
         partial void OnEmailAddressChanging(global::System.String value);
         partial void OnEmailAddressChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -753,12 +753,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("EmailPromotion");
                 OnEmailPromotionChanged();
             }
-                
+
         }
         private global::System.Int32 _EmailPromotion;
         partial void OnEmailPromotionChanging(global::System.Int32 value);
         partial void OnEmailPromotionChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -778,12 +778,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Phone");
                 OnPhoneChanged();
             }
-                
+
         }
         private global::System.String _Phone;
         partial void OnPhoneChanging(global::System.String value);
         partial void OnPhoneChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -803,12 +803,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("PasswordHash");
                 OnPasswordHashChanged();
             }
-                
+
         }
         private global::System.String _PasswordHash;
         partial void OnPasswordHashChanging(global::System.String value);
         partial void OnPasswordHashChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -828,12 +828,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("PasswordSalt");
                 OnPasswordSaltChanged();
             }
-                
+
         }
         private global::System.String _PasswordSalt;
         partial void OnPasswordSaltChanging(global::System.String value);
         partial void OnPasswordSaltChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -853,12 +853,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("AdditionalContactInfo");
                 OnAdditionalContactInfoChanged();
             }
-                
+
         }
         private global::System.String _AdditionalContactInfo;
         partial void OnAdditionalContactInfoChanging(global::System.String value);
         partial void OnAdditionalContactInfoChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -878,12 +878,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -903,14 +903,14 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -918,7 +918,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "SalesOrderHeader")]
         public EntityCollection<SalesOrderHeader> SalesOrderHeaders
         {
             get
@@ -935,7 +935,7 @@ namespace L2E_ConceptualExamplesCS
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -965,31 +965,31 @@ namespace L2E_ConceptualExamplesCS
         {
             Product product = new Product();
             product.ProductID = productID;
-            
+
             product.Name = name;
-            
+
             product.ProductNumber = productNumber;
-            
+
             product.MakeFlag = makeFlag;
-            
+
             product.FinishedGoodsFlag = finishedGoodsFlag;
-            
+
             product.SafetyStockLevel = safetyStockLevel;
-            
+
             product.ReorderPoint = reorderPoint;
-            
+
             product.StandardCost = standardCost;
-            
+
             product.ListPrice = listPrice;
-            
+
             product.DaysToManufacture = daysToManufacture;
-            
+
             product.SellStartDate = sellStartDate;
-            
+
             product.rowguid = rowguid;
-            
+
             product.ModifiedDate = modifiedDate;
-            
+
             return product;
         }
         #endregion
@@ -1017,12 +1017,12 @@ namespace L2E_ConceptualExamplesCS
                     OnProductIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1042,12 +1042,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1067,12 +1067,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ProductNumber");
                 OnProductNumberChanged();
             }
-                
+
         }
         private global::System.String _ProductNumber;
         partial void OnProductNumberChanging(global::System.String value);
         partial void OnProductNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1092,12 +1092,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("MakeFlag");
                 OnMakeFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _MakeFlag;
         partial void OnMakeFlagChanging(global::System.Boolean value);
         partial void OnMakeFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1117,12 +1117,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("FinishedGoodsFlag");
                 OnFinishedGoodsFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _FinishedGoodsFlag;
         partial void OnFinishedGoodsFlagChanging(global::System.Boolean value);
         partial void OnFinishedGoodsFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1142,12 +1142,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Color");
                 OnColorChanged();
             }
-                
+
         }
         private global::System.String _Color;
         partial void OnColorChanging(global::System.String value);
         partial void OnColorChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1167,12 +1167,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SafetyStockLevel");
                 OnSafetyStockLevelChanged();
             }
-                
+
         }
         private global::System.Int16 _SafetyStockLevel;
         partial void OnSafetyStockLevelChanging(global::System.Int16 value);
         partial void OnSafetyStockLevelChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1192,12 +1192,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ReorderPoint");
                 OnReorderPointChanged();
             }
-                
+
         }
         private global::System.Int16 _ReorderPoint;
         partial void OnReorderPointChanging(global::System.Int16 value);
         partial void OnReorderPointChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1217,12 +1217,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("StandardCost");
                 OnStandardCostChanged();
             }
-                
+
         }
         private global::System.Decimal _StandardCost;
         partial void OnStandardCostChanging(global::System.Decimal value);
         partial void OnStandardCostChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1242,12 +1242,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ListPrice");
                 OnListPriceChanged();
             }
-                
+
         }
         private global::System.Decimal _ListPrice;
         partial void OnListPriceChanging(global::System.Decimal value);
         partial void OnListPriceChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1267,12 +1267,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Size");
                 OnSizeChanged();
             }
-                
+
         }
         private global::System.String _Size;
         partial void OnSizeChanging(global::System.String value);
         partial void OnSizeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1292,12 +1292,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SizeUnitMeasureCode");
                 OnSizeUnitMeasureCodeChanged();
             }
-                
+
         }
         private global::System.String _SizeUnitMeasureCode;
         partial void OnSizeUnitMeasureCodeChanging(global::System.String value);
         partial void OnSizeUnitMeasureCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1317,12 +1317,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("WeightUnitMeasureCode");
                 OnWeightUnitMeasureCodeChanged();
             }
-                
+
         }
         private global::System.String _WeightUnitMeasureCode;
         partial void OnWeightUnitMeasureCodeChanging(global::System.String value);
         partial void OnWeightUnitMeasureCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1342,12 +1342,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Weight");
                 OnWeightChanged();
             }
-                
+
         }
         private Nullable<global::System.Decimal> _Weight;
         partial void OnWeightChanging(Nullable<global::System.Decimal> value);
         partial void OnWeightChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1367,12 +1367,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("DaysToManufacture");
                 OnDaysToManufactureChanged();
             }
-                
+
         }
         private global::System.Int32 _DaysToManufacture;
         partial void OnDaysToManufactureChanging(global::System.Int32 value);
         partial void OnDaysToManufactureChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1392,12 +1392,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ProductLine");
                 OnProductLineChanged();
             }
-                
+
         }
         private global::System.String _ProductLine;
         partial void OnProductLineChanging(global::System.String value);
         partial void OnProductLineChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1417,12 +1417,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Class");
                 OnClassChanged();
             }
-                
+
         }
         private global::System.String _Class;
         partial void OnClassChanging(global::System.String value);
         partial void OnClassChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1442,12 +1442,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Style");
                 OnStyleChanged();
             }
-                
+
         }
         private global::System.String _Style;
         partial void OnStyleChanging(global::System.String value);
         partial void OnStyleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1467,12 +1467,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ProductSubcategoryID");
                 OnProductSubcategoryIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _ProductSubcategoryID;
         partial void OnProductSubcategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductSubcategoryIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1492,12 +1492,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ProductModelID");
                 OnProductModelIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _ProductModelID;
         partial void OnProductModelIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductModelIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1517,12 +1517,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SellStartDate");
                 OnSellStartDateChanged();
             }
-                
+
         }
         private global::System.DateTime _SellStartDate;
         partial void OnSellStartDateChanging(global::System.DateTime value);
         partial void OnSellStartDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1542,12 +1542,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SellEndDate");
                 OnSellEndDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _SellEndDate;
         partial void OnSellEndDateChanging(Nullable<global::System.DateTime> value);
         partial void OnSellEndDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1567,12 +1567,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("DiscontinuedDate");
                 OnDiscontinuedDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _DiscontinuedDate;
         partial void OnDiscontinuedDateChanging(Nullable<global::System.DateTime> value);
         partial void OnDiscontinuedDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1592,12 +1592,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1617,16 +1617,16 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1653,25 +1653,25 @@ namespace L2E_ConceptualExamplesCS
         {
             SalesOrderDetail salesOrderDetail = new SalesOrderDetail();
             salesOrderDetail.SalesOrderID = salesOrderID;
-            
+
             salesOrderDetail.SalesOrderDetailID = salesOrderDetailID;
-            
+
             salesOrderDetail.OrderQty = orderQty;
-            
+
             salesOrderDetail.ProductID = productID;
-            
+
             salesOrderDetail.SpecialOfferID = specialOfferID;
-            
+
             salesOrderDetail.UnitPrice = unitPrice;
-            
+
             salesOrderDetail.UnitPriceDiscount = unitPriceDiscount;
-            
+
             salesOrderDetail.LineTotal = lineTotal;
-            
+
             salesOrderDetail.rowguid = rowguid;
-            
+
             salesOrderDetail.ModifiedDate = modifiedDate;
-            
+
             return salesOrderDetail;
         }
         #endregion
@@ -1699,12 +1699,12 @@ namespace L2E_ConceptualExamplesCS
                     OnSalesOrderIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1727,12 +1727,12 @@ namespace L2E_ConceptualExamplesCS
                     OnSalesOrderDetailIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderDetailID;
         partial void OnSalesOrderDetailIDChanging(global::System.Int32 value);
         partial void OnSalesOrderDetailIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1752,12 +1752,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("CarrierTrackingNumber");
                 OnCarrierTrackingNumberChanged();
             }
-                
+
         }
         private global::System.String _CarrierTrackingNumber;
         partial void OnCarrierTrackingNumberChanging(global::System.String value);
         partial void OnCarrierTrackingNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1777,12 +1777,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("OrderQty");
                 OnOrderQtyChanged();
             }
-                
+
         }
         private global::System.Int16 _OrderQty;
         partial void OnOrderQtyChanging(global::System.Int16 value);
         partial void OnOrderQtyChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1802,12 +1802,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ProductID");
                 OnProductIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1827,12 +1827,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SpecialOfferID");
                 OnSpecialOfferIDChanged();
             }
-                
+
         }
         private global::System.Int32 _SpecialOfferID;
         partial void OnSpecialOfferIDChanging(global::System.Int32 value);
         partial void OnSpecialOfferIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1852,12 +1852,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("UnitPrice");
                 OnUnitPriceChanged();
             }
-                
+
         }
         private global::System.Decimal _UnitPrice;
         partial void OnUnitPriceChanging(global::System.Decimal value);
         partial void OnUnitPriceChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1877,12 +1877,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("UnitPriceDiscount");
                 OnUnitPriceDiscountChanged();
             }
-                
+
         }
         private global::System.Decimal _UnitPriceDiscount;
         partial void OnUnitPriceDiscountChanging(global::System.Decimal value);
         partial void OnUnitPriceDiscountChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1902,12 +1902,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("LineTotal");
                 OnLineTotalChanged();
             }
-                
+
         }
         private global::System.Decimal _LineTotal;
         partial void OnLineTotalChanging(global::System.Decimal value);
         partial void OnLineTotalChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1927,12 +1927,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1952,14 +1952,14 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1967,7 +1967,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderHeader")]
         public SalesOrderHeader SalesOrderHeader
         {
             get
@@ -2000,7 +2000,7 @@ namespace L2E_ConceptualExamplesCS
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -2035,41 +2035,41 @@ namespace L2E_ConceptualExamplesCS
         {
             SalesOrderHeader salesOrderHeader = new SalesOrderHeader();
             salesOrderHeader.SalesOrderID = salesOrderID;
-            
+
             salesOrderHeader.RevisionNumber = revisionNumber;
-            
+
             salesOrderHeader.OrderDate = orderDate;
-            
+
             salesOrderHeader.DueDate = dueDate;
-            
+
             salesOrderHeader.Status = status;
-            
+
             salesOrderHeader.OnlineOrderFlag = onlineOrderFlag;
-            
+
             salesOrderHeader.SalesOrderNumber = salesOrderNumber;
-            
+
             salesOrderHeader.CustomerID = customerID;
-            
+
             salesOrderHeader.ContactID = contactID;
-            
+
             salesOrderHeader.BillToAddressID = billToAddressID;
-            
+
             salesOrderHeader.ShipToAddressID = shipToAddressID;
-            
+
             salesOrderHeader.ShipMethodID = shipMethodID;
-            
+
             salesOrderHeader.SubTotal = subTotal;
-            
+
             salesOrderHeader.TaxAmt = taxAmt;
-            
+
             salesOrderHeader.Freight = freight;
-            
+
             salesOrderHeader.TotalDue = totalDue;
-            
+
             salesOrderHeader.rowguid = rowguid;
-            
+
             salesOrderHeader.ModifiedDate = modifiedDate;
-            
+
             return salesOrderHeader;
         }
         #endregion
@@ -2097,12 +2097,12 @@ namespace L2E_ConceptualExamplesCS
                     OnSalesOrderIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2122,12 +2122,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("RevisionNumber");
                 OnRevisionNumberChanged();
             }
-                
+
         }
         private global::System.Byte _RevisionNumber;
         partial void OnRevisionNumberChanging(global::System.Byte value);
         partial void OnRevisionNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2147,12 +2147,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("OrderDate");
                 OnOrderDateChanged();
             }
-                
+
         }
         private global::System.DateTime _OrderDate;
         partial void OnOrderDateChanging(global::System.DateTime value);
         partial void OnOrderDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2172,12 +2172,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("DueDate");
                 OnDueDateChanged();
             }
-                
+
         }
         private global::System.DateTime _DueDate;
         partial void OnDueDateChanging(global::System.DateTime value);
         partial void OnDueDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2197,12 +2197,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ShipDate");
                 OnShipDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _ShipDate;
         partial void OnShipDateChanging(Nullable<global::System.DateTime> value);
         partial void OnShipDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2222,12 +2222,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Status");
                 OnStatusChanged();
             }
-                
+
         }
         private global::System.Byte _Status;
         partial void OnStatusChanging(global::System.Byte value);
         partial void OnStatusChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2247,12 +2247,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("OnlineOrderFlag");
                 OnOnlineOrderFlagChanged();
             }
-                
+
         }
         private global::System.Boolean _OnlineOrderFlag;
         partial void OnOnlineOrderFlagChanging(global::System.Boolean value);
         partial void OnOnlineOrderFlagChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2272,12 +2272,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SalesOrderNumber");
                 OnSalesOrderNumberChanged();
             }
-                
+
         }
         private global::System.String _SalesOrderNumber;
         partial void OnSalesOrderNumberChanging(global::System.String value);
         partial void OnSalesOrderNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2297,12 +2297,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("PurchaseOrderNumber");
                 OnPurchaseOrderNumberChanged();
             }
-                
+
         }
         private global::System.String _PurchaseOrderNumber;
         partial void OnPurchaseOrderNumberChanging(global::System.String value);
         partial void OnPurchaseOrderNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2322,12 +2322,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("AccountNumber");
                 OnAccountNumberChanged();
             }
-                
+
         }
         private global::System.String _AccountNumber;
         partial void OnAccountNumberChanging(global::System.String value);
         partial void OnAccountNumberChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2347,12 +2347,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("CustomerID");
                 OnCustomerIDChanged();
             }
-                
+
         }
         private global::System.Int32 _CustomerID;
         partial void OnCustomerIDChanging(global::System.Int32 value);
         partial void OnCustomerIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2372,12 +2372,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ContactID");
                 OnContactIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2397,12 +2397,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SalesPersonID");
                 OnSalesPersonIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _SalesPersonID;
         partial void OnSalesPersonIDChanging(Nullable<global::System.Int32> value);
         partial void OnSalesPersonIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2422,12 +2422,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("TerritoryID");
                 OnTerritoryIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _TerritoryID;
         partial void OnTerritoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnTerritoryIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2447,12 +2447,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("BillToAddressID");
                 OnBillToAddressIDChanged();
             }
-                
+
         }
         private global::System.Int32 _BillToAddressID;
         partial void OnBillToAddressIDChanging(global::System.Int32 value);
         partial void OnBillToAddressIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2472,12 +2472,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ShipToAddressID");
                 OnShipToAddressIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ShipToAddressID;
         partial void OnShipToAddressIDChanging(global::System.Int32 value);
         partial void OnShipToAddressIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2497,12 +2497,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ShipMethodID");
                 OnShipMethodIDChanged();
             }
-                
+
         }
         private global::System.Int32 _ShipMethodID;
         partial void OnShipMethodIDChanging(global::System.Int32 value);
         partial void OnShipMethodIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2522,12 +2522,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("CreditCardID");
                 OnCreditCardIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _CreditCardID;
         partial void OnCreditCardIDChanging(Nullable<global::System.Int32> value);
         partial void OnCreditCardIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2547,12 +2547,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("CreditCardApprovalCode");
                 OnCreditCardApprovalCodeChanged();
             }
-                
+
         }
         private global::System.String _CreditCardApprovalCode;
         partial void OnCreditCardApprovalCodeChanging(global::System.String value);
         partial void OnCreditCardApprovalCodeChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2572,12 +2572,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("CurrencyRateID");
                 OnCurrencyRateIDChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _CurrencyRateID;
         partial void OnCurrencyRateIDChanging(Nullable<global::System.Int32> value);
         partial void OnCurrencyRateIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2597,12 +2597,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("SubTotal");
                 OnSubTotalChanged();
             }
-                
+
         }
         private global::System.Decimal _SubTotal;
         partial void OnSubTotalChanging(global::System.Decimal value);
         partial void OnSubTotalChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2622,12 +2622,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("TaxAmt");
                 OnTaxAmtChanged();
             }
-                
+
         }
         private global::System.Decimal _TaxAmt;
         partial void OnTaxAmtChanging(global::System.Decimal value);
         partial void OnTaxAmtChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2647,12 +2647,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Freight");
                 OnFreightChanged();
             }
-                
+
         }
         private global::System.Decimal _Freight;
         partial void OnFreightChanging(global::System.Decimal value);
         partial void OnFreightChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2672,12 +2672,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("TotalDue");
                 OnTotalDueChanged();
             }
-                
+
         }
         private global::System.Decimal _TotalDue;
         partial void OnTotalDueChanging(global::System.Decimal value);
         partial void OnTotalDueChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2697,12 +2697,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("Comment");
                 OnCommentChanged();
             }
-                
+
         }
         private global::System.String _Comment;
         partial void OnCommentChanging(global::System.String value);
         partial void OnCommentChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2722,12 +2722,12 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("rowguid");
                 OnrowguidChanged();
             }
-                
+
         }
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2747,14 +2747,14 @@ namespace L2E_ConceptualExamplesCS
                 ReportPropertyChanged("ModifiedDate");
                 OnModifiedDateChanged();
             }
-                
+
         }
         private global::System.DateTime _ModifiedDate;
         partial void OnModifiedDateChanging(global::System.DateTime value);
         partial void OnModifiedDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -2762,7 +2762,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_BillToAddressID", "Address")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_BillToAddressID", "Address")]
         public Address Address
         {
             get
@@ -2799,7 +2799,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_ShipToAddressID", "Address")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Address_ShipToAddressID", "Address")]
         public Address Address1
         {
             get
@@ -2836,7 +2836,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "Contact")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderHeader_Contact_ContactID", "Contact")]
         public Contact Contact
         {
             get
@@ -2873,7 +2873,7 @@ namespace L2E_ConceptualExamplesCS
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")] 
+        [EdmRelationshipNavigationPropertyAttribute("AdventureWorksModel", "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID", "SalesOrderDetail")]
         public EntityCollection<SalesOrderDetail> SalesOrderDetails
         {
             get
@@ -2890,7 +2890,7 @@ namespace L2E_ConceptualExamplesCS
         }
         #endregion
     }
-    
+
     #endregion
-    
+
 }

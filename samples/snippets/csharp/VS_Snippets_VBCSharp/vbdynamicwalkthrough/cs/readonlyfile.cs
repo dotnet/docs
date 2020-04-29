@@ -26,7 +26,7 @@ namespace DynamicWalkthrough
         // Store the path to the file and the initial line count value.
         private string p_filePath;
 
-        // Public constructor. Verify that file exists and store the path in 
+        // Public constructor. Verify that file exists and store the path in
         // the private variable.
         public ReadOnlyFile(string filePath)
         {
@@ -40,7 +40,7 @@ namespace DynamicWalkthrough
         //</Snippet4>
 
         //<Snippet7>
-        // Implement the TryInvokeMember method of the DynamicObject class for 
+        // Implement the TryInvokeMember method of the DynamicObject class for
         // dynamic member calls that have arguments.
         public override bool TryInvokeMember(InvokeMemberBinder binder,
                                              object[] args,
@@ -76,7 +76,7 @@ namespace DynamicWalkthrough
         //<Snippet6>
         // Implement the TryGetMember method of the DynamicObject class for dynamic member calls.
         public override bool TryGetMember(GetMemberBinder binder,
-                                          out object result) 
+                                          out object result)
         {
             result = GetPropertyValue(binder.Name);
             return result == null ? false : true;
@@ -86,7 +86,7 @@ namespace DynamicWalkthrough
         //<Snippet5>
         public List<string> GetPropertyValue(string propertyName,
                                              StringSearchOption StringSearchOption = StringSearchOption.StartsWith,
-                                             bool trimSpaces = true) 
+                                             bool trimSpaces = true)
         {
             StreamReader sr = null;
             List<string> results = new List<string>();

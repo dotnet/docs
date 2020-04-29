@@ -18,7 +18,7 @@ The preceding sample shows the basic elements of a switch expression:
 - The *range expression*: The preceding example uses the variable `direction` as the range expression.
 - The *switch expression arms*: Each switch expression arm contains a *pattern*, an optional *case guard*, the `=>` token, and an *expression*.
 
-The result of the *switch expression* is the value of the expression of the first *switch expression arm* whose *pattern* matches the *range expression* and whose *cause guard*, if present, evaluates to `true`. The *expression* on the right of the `=>` token can't be an expression statement.
+The result of the *switch expression* is the value of the expression of the first *switch expression arm* whose *pattern* matches the *range expression* and whose *case guard*, if present, evaluates to `true`. The *expression* on the right of the `=>` token can't be an expression statement.
 
 The *switch expression arms* are evaluated in text order. The compiler issues an error when a lower *switch expression arm* can't be chosen because a higher *switch expression arm* matches all its values.
 

@@ -12,8 +12,8 @@ namespace SDKSample
         public SampleViewer()
         {
             InitializeComponent();
-            MyRichTextBoxExampleFrame.Content = new RichTextBoxExample();  
-            MyBasicRichTextBoxWithContentExampleFrame.Content = new BasicRichTextBoxWithContentExample();         
+            MyRichTextBoxExampleFrame.Content = new RichTextBoxExample();
+            MyBasicRichTextBoxWithContentExampleFrame.Content = new BasicRichTextBoxWithContentExample();
         }
     }
 }

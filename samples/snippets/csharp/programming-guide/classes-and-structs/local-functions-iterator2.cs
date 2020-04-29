@@ -7,7 +7,7 @@ class Example
    {
       IEnumerable<int> ienum = OddSequence(50, 110); //Line 8
       Console.WriteLine("Retrieved enumerator...");
-      
+
       foreach (var i in ienum)
       {
          Console.Write($"{i} ");
@@ -22,16 +22,16 @@ class Example
          throw new ArgumentOutOfRangeException("end must be less than or equal to 100."); //Line 22
       if (start >= end)
          throw new ArgumentException("start must be less than end.");
-         
+
       return GetOddSequenceEnumerator();
-      
+
       IEnumerable<int> GetOddSequenceEnumerator()
       {
          for (int i = start; i <= end; i++)
          {
             if (i % 2 == 1)
                yield return i;
-         }   
+         }
       }
    }
 }

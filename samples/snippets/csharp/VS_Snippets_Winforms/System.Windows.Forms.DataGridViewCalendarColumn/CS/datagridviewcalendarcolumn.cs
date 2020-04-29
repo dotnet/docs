@@ -20,7 +20,7 @@ public class CalendarColumn : DataGridViewColumn
         set
         {
             // Ensure that the cell used for the template is a CalendarCell.
-            if (value != null && 
+            if (value != null &&
                 !value.GetType().IsAssignableFrom(typeof(CalendarCell)))
             {
                 throw new InvalidCastException("Must be a CalendarCell");
@@ -43,13 +43,13 @@ public class CalendarCell : DataGridViewTextBoxCell
     }
 
     //<Snippet210>
-    public override void InitializeEditingControl(int rowIndex, object 
+    public override void InitializeEditingControl(int rowIndex, object
         initialFormattedValue, DataGridViewCellStyle dataGridViewCellStyle)
     {
         // Set the value of the editing control to the current cell value.
-        base.InitializeEditingControl(rowIndex, initialFormattedValue, 
+        base.InitializeEditingControl(rowIndex, initialFormattedValue,
             dataGridViewCellStyle);
-        CalendarEditingControl ctl = 
+        CalendarEditingControl ctl =
             DataGridView.EditingControl as CalendarEditingControl;
         // Use the default row value when Value property is null.
         if (this.Value == null)
@@ -77,7 +77,7 @@ public class CalendarCell : DataGridViewTextBoxCell
         get
         {
             // Return the type of the value that CalendarCell contains.
-            
+
             return typeof(DateTime);
         }
     }
@@ -106,7 +106,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     }
 
     //<Snippet301>
-    // Implements the IDataGridViewEditingControl.EditingControlFormattedValue 
+    // Implements the IDataGridViewEditingControl.EditingControlFormattedValue
     // property.
     public object EditingControlFormattedValue
     {
@@ -115,18 +115,18 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
             return this.Value.ToShortDateString();
         }
         set
-        {            
+        {
             if (value is String)
             {
                 try
                 {
-                    // This will throw an exception of the string is 
+                    // This will throw an exception of the string is
                     // null, empty, or not in the format of a date.
                     this.Value = DateTime.Parse((String)value);
                 }
                 catch
                 {
-                    // In the case of an exception, just use the 
+                    // In the case of an exception, just use the
                     // default value so we're not left with a null
                     // value.
                     this.Value = DateTime.Now;
@@ -137,7 +137,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     //</Snippet301>
 
     //<Snippet302>
-    // Implements the 
+    // Implements the
     // IDataGridViewEditingControl.GetEditingControlFormattedValue method.
     public object GetEditingControlFormattedValue(
         DataGridViewDataErrorContexts context)
@@ -147,7 +147,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     //</Snippet302>
 
     //<Snippet303>
-    // Implements the 
+    // Implements the
     // IDataGridViewEditingControl.ApplyCellStyleToEditingControl method.
     public void ApplyCellStyleToEditingControl(
         DataGridViewCellStyle dataGridViewCellStyle)
@@ -159,7 +159,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     //</Snippet303>
 
     //<Snippet304>
-    // Implements the IDataGridViewEditingControl.EditingControlRowIndex 
+    // Implements the IDataGridViewEditingControl.EditingControlRowIndex
     // property.
     public int EditingControlRowIndex
     {
@@ -175,7 +175,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     //</Snippet304>
 
     //<Snippet305>
-    // Implements the IDataGridViewEditingControl.EditingControlWantsInputKey 
+    // Implements the IDataGridViewEditingControl.EditingControlWantsInputKey
     // method.
     public bool EditingControlWantsInputKey(
         Keys key, bool dataGridViewWantsInputKey)
@@ -199,7 +199,7 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
     //</Snippet305>
 
     //<Snippet306>
-    // Implements the IDataGridViewEditingControl.PrepareEditingControlForEdit 
+    // Implements the IDataGridViewEditingControl.PrepareEditingControlForEdit
     // method.
     public void PrepareEditingControlForEdit(bool selectAll)
     {

@@ -61,7 +61,7 @@ namespace Examples.Libraries
    {
       public BaseClass()
       { }
-       
+
       public override string ToString()
       {
  	      return String.Format("{0} Version  {1}", this.GetType().Name, Version);
@@ -79,7 +79,7 @@ namespace Examples.Libraries
       { get { return 1.1; }}
 
       public override string ToString()
-      { 
+      {
          return String.Format("{0} Version {1}", this.GetType().Name, Version);
       }
    }

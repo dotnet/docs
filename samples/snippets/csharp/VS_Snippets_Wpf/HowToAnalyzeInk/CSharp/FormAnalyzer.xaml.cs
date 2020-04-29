@@ -33,12 +33,12 @@ public partial class FormAnalyzer : Window
 
         // Initialize the Analyzer.
         analyzer = new InkAnalyzer();
-        analyzer.ResultsUpdated += 
+        analyzer.ResultsUpdated +=
             new ResultsUpdatedEventHandler(analyzer_ResultsUpdated);
 
         // Add analysis hints for each form area.
         // Use the absolute Width and Height of the Grid's
-        // RowDefinition and ColumnDefinition properties defined in XAML, 
+        // RowDefinition and ColumnDefinition properties defined in XAML,
         // to calculate the bounds of the AnalysisHintNode objects.
         hintNodeTitle = analyzer.CreateAnalysisHint(
                                     new Rect(100, 0, 740, 100));
@@ -63,7 +63,7 @@ public partial class FormAnalyzer : Window
     }
 
     /// <summary>
-    /// InkCanvas.StrokeCollected event handler.  Begins 
+    /// InkCanvas.StrokeCollected event handler.  Begins
     /// ink analysis and starts the timer to clear the strokes.
     /// If five seconds pass without a Stroke being added,
     /// the strokes on the InkCanvas will be cleared.
@@ -100,8 +100,8 @@ public partial class FormAnalyzer : Window
     /// <param name="sender">InkAnalyzer that raises the
     /// event.</param>
     /// <param name="e">Event data</param>
-    /// <remarks>This method checks each AnalysisHint for 
-    /// analyzed ink and then populated the TextBlock that 
+    /// <remarks>This method checks each AnalysisHint for
+    /// analyzed ink and then populated the TextBlock that
     /// corresponds to the area on the form.</remarks>
     void analyzer_ResultsUpdated(object sender, ResultsUpdatedEventArgs e)
     {

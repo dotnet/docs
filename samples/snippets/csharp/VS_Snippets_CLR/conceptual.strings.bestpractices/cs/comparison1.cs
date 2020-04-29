@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      string[] values= { "able", "ångström", "apple", "Æble", 
+      string[] values= { "able", "ångström", "apple", "Æble",
                          "Windows", "Visual Studio" };
       Array.Sort(values);
       DisplayArray(values);
@@ -21,10 +21,10 @@ public class Example
       // Restore the original culture.
       Thread.CurrentThread.CurrentCulture = new CultureInfo(originalCulture);
     }
-    
+
     private static void DisplayArray(string[] values)
     {
-      Console.WriteLine("Sorting using the {0} culture:",  
+      Console.WriteLine("Sorting using the {0} culture:",
                         CultureInfo.CurrentCulture.Name);
       foreach (string value in values)
          Console.WriteLine("   {0}", value);
@@ -40,7 +40,7 @@ public class Example
 //          apple
 //          Visual Studio
 //          Windows
-//       
+//
 //       Sorting using the sv-SE culture:
 //          able
 //          Æble

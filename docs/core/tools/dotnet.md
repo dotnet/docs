@@ -16,26 +16,27 @@ ms.date: 02/13/2020
 To get information about the available commands and the environment:
 
 ```dotnetcli
-dotnet [-h|--help] [--version] [--info]
-    [--list-runtimes] [--list-sdks]
+dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
+
+dotnet -h|--help
 ```
 
 To run a command (requires SDK installation):
 
 ```dotnetcli
-dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity]
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity <LEVEL>]
     [command-options] [arguments]
 ```
 
 To run an application:
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 ```
 
@@ -257,7 +258,7 @@ dotnet myapp.dll
 
 - `DOTNET_NOLOGO`
 
-  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. Note that this flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
+  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. This flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
 
 - `DOTNET_CLI_TELEMETRY_OPTOUT`
 

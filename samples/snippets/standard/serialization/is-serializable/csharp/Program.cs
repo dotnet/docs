@@ -15,9 +15,9 @@ namespace test_serialization
          {
             // Serialize the value tuple.
             var formatter = new BinaryFormatter();
-            using (var stream = new FileStream("data.bin", FileMode.Create, 
+            using (var stream = new FileStream("data.bin", FileMode.Create,
                                         FileAccess.Write, FileShare.None))
-            {                            
+            {
                formatter.Serialize(stream, value);
             }
             // Deserialize the value tuple.
@@ -25,7 +25,7 @@ namespace test_serialization
             {
                object restoredValue = formatter.Deserialize(readStream);
                Console.WriteLine($"{restoredValue.GetType().Name}: {restoredValue}");
-            }   
+            }
          }
          else
          {
@@ -42,12 +42,12 @@ namespace test_serialization
 namespace Libraries
 {
     using System;
-    
+
     public static class UtilityLibrary
     {
         public static bool IsSerializable(this object obj)
         {
-            if (obj == null) 
+            if (obj == null)
                 return false;
 
             Type t = obj.GetType();

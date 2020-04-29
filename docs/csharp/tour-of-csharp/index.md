@@ -35,7 +35,7 @@ dotnet run
 
 The program produces the following output:
 
-```console
+```dotnetcli
 Hello, World!
 ```
 

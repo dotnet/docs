@@ -10,7 +10,7 @@ namespace Samples
         static void Main()
         {
             Service s = new Service();
-            s.Nego();            
+            s.Nego();
         }
     }
 
@@ -20,7 +20,7 @@ namespace Samples
         {
             //<snippet1>
             WSHttpBinding b = new WSHttpBinding();
-            // By default, the WSHttpBinding uses Windows authentication 
+            // By default, the WSHttpBinding uses Windows authentication
             // and Message mode.
             b.Security.Message.NegotiateServiceCredential = false;
             //</snippet1>
@@ -48,7 +48,7 @@ namespace Samples
         {
             //<snippet2>
             CalculatorClient cc = new
-                CalculatorClient("WSHttpBinding_ICalculator");            
+                CalculatorClient("WSHttpBinding_ICalculator");
             cc.ClientCredentials.UserName.UserName = GetUserName(); // wrong!
             cc.ClientCredentials.UserName.Password = GetPassword(); // wrong!
             //</snippet2>
@@ -57,9 +57,9 @@ namespace Samples
         private void CorrectReturn()
         {
             //<snippet3>
-            CalculatorClient cc = new 
+            CalculatorClient cc = new
                 CalculatorClient("WSHttpBinding_ICalculator");
-            // This code returns the WindowsClientCredential type.            
+            // This code returns the WindowsClientCredential type.
             cc.ClientCredentials.Windows.ClientCredential.UserName = GetUserName();
             cc.ClientCredentials.Windows.ClientCredential.Password = GetPassword();
             //</snippet3>
@@ -68,7 +68,7 @@ namespace Samples
         private void DisallowNTLM()
         {
             //<snippet4>
-            CalculatorClient cc = new 
+            CalculatorClient cc = new
                 CalculatorClient("WSHttpBinding_ICalculator");
             cc.ClientCredentials.Windows.AllowNtlm = false;
             //</snippet4>

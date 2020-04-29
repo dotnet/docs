@@ -1,7 +1,7 @@
 ---
 title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 03/31/2020
+ms.date: 04/17/2020
 author: pkulikov
 f1_keywords: 
   - "._CSharpKeyword"
@@ -132,6 +132,9 @@ In the preceding example, if you don't use the `??` operator, `numbers?.Length <
 
 The null-conditional member access operator `?.` is also known as the Elvis operator.
 
+> [!NOTE]
+> In C# 8, the null-conditional operators interacts with the [null-forgiving operator](null-forgiving.md) in an unexpected way. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
+
 ### Thread-safe delegate invocation
 
 Use the `?.` operator to check if a delegate is non-null and invoke it in a thread-safe way (for example, when you [raise an event](../../../standard/events/how-to-raise-and-consume-events.md)), as the following code shows:
@@ -149,6 +152,8 @@ if (handler != null)
     handler(…);
 }
 ```
+
+That is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the value referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the value referenced by `handler` remains unaffected. The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
 
 ## Invocation expression ()
 
@@ -174,7 +179,7 @@ Available in C# 8.0 and later, the `^` operator indicates the element position f
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You also can use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
 ## Range operator ..
 

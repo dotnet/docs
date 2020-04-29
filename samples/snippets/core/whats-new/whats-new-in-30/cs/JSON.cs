@@ -15,7 +15,7 @@ namespace whats_new
                 LastName = "Smith",
                 Age = 18
             };
-            
+
             System.Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(instance));
             // </SnippetJsonSerialize>
 

@@ -14,13 +14,13 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool list <-g|--global>
+dotnet tool list -g|--global
 
-dotnet tool list <--tool-path>
+dotnet tool list --tool-path <PATH>
 
 dotnet tool list
 
-dotnet tool list <-h|--help>
+dotnet tool list -h|--help
 ```
 
 ## Description

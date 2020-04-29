@@ -34,12 +34,12 @@ namespace operators
         private static void And()
         {
             // <SnippetAnd>
-            bool SecondOperand() 
+            bool SecondOperand()
             {
                 Console.WriteLine("Second operand is evaluated.");
                 return true;
             }
-            
+
             bool a = false & SecondOperand();
             Console.WriteLine(a);
             // Output:
@@ -57,12 +57,12 @@ namespace operators
         private static void Or()
         {
             // <SnippetOr>
-            bool SecondOperand() 
+            bool SecondOperand()
             {
                 Console.WriteLine("Second operand is evaluated.");
                 return true;
             }
-            
+
             bool a = true | SecondOperand();
             Console.WriteLine(a);
             // Output:
@@ -138,7 +138,7 @@ namespace operators
             Display(!test);         // output: null
             Display(test ^ false);  // output: null
             Display(test ^ null);   // output: null
-            Display(true ^ null);   // output: null 
+            Display(true ^ null);   // output: null
 
             void Display(bool? b) => Console.WriteLine(b is null ? "null" : b.Value.ToString());
             // </SnippetWithNullableBoolean>
@@ -164,7 +164,7 @@ namespace operators
             // <SnippetPrecedence>
             Console.WriteLine(true | true & false);   // output: True
             Console.WriteLine((true | true) & false); // output: False
-            
+
             bool Operand(string name, bool value)
             {
                 Console.WriteLine($"Operand {name} is evaluated.");

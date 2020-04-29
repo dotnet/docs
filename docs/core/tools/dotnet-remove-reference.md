@@ -9,12 +9,15 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet remove reference` - Removes project-to-project references.
+`dotnet remove reference` - Removes project-to-project (P2P) references.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]
+dotnet remove [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
+     <PROJECT_REFERENCES>
+
+dotnet remove reference -h|--help
 ```
 
 ## Description
@@ -39,7 +42,7 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
+  Removes the reference only when targeting a specific [framework](../../standard/frameworks.md) using the TFM format.
 
 ## Examples
 

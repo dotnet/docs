@@ -33,17 +33,17 @@
             this.customersComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // ordersDataGridView
-            // 
+            //
             this.ordersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordersDataGridView.Location = new System.Drawing.Point(29, 131);
             this.ordersDataGridView.Name = "ordersDataGridView";
             this.ordersDataGridView.Size = new System.Drawing.Size(570, 237);
             this.ordersDataGridView.TabIndex = 11;
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(-290, -186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
@@ -51,18 +51,18 @@
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
+            //
             // customersComboBox
-            // 
+            //
             this.customersComboBox.FormattingEnabled = true;
             this.customersComboBox.Location = new System.Drawing.Point(68, 31);
             this.customersComboBox.Name = "customersComboBox";
             this.customersComboBox.Size = new System.Drawing.Size(121, 21);
             this.customersComboBox.TabIndex = 13;
             this.customersComboBox.SelectedIndexChanged += new System.EventHandler(this.customersComboBox_SelectedIndexChanged);
-            // 
+            //
             // CustomerOrders
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 388);

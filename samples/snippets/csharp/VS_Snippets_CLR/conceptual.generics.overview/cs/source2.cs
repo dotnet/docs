@@ -4,12 +4,12 @@ using System;
 public class MyEventArgs : EventArgs
 {
     private string msg;
-    
+
     public MyEventArgs(string messageArg)
     {
         msg = messageArg;
     }
-    
+
     public string Message
     {
         get {return msg;}

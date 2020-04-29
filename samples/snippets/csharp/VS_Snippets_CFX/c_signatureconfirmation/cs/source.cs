@@ -21,7 +21,7 @@ namespace Example
         {
             BindingElementCollection bindings = new BindingElementCollection();
             KerberosSecurityTokenParameters tokens = new KerberosSecurityTokenParameters();
-            SymmetricSecurityBindingElement security = 
+            SymmetricSecurityBindingElement security =
               new SymmetricSecurityBindingElement(tokens);
 
             // Require that every request and return be correlated.

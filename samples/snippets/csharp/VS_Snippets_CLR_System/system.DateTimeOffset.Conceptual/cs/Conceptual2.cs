@@ -14,20 +14,20 @@ public class DateManipulation
    {
       DateTime localTime = DateTime.Now;
       DateTime utcTime = DateTime.UtcNow;
-      
-      Console.WriteLine("Difference between {0} and {1} time: {2}:{3} hours", 
-                        localTime.Kind.ToString(), 
-                        utcTime.Kind.ToString(), 
-                        (localTime - utcTime).Hours, 
+
+      Console.WriteLine("Difference between {0} and {1} time: {2}:{3} hours",
+                        localTime.Kind.ToString(),
+                        utcTime.Kind.ToString(),
+                        (localTime - utcTime).Hours,
                         (localTime - utcTime).Minutes);
-      Console.WriteLine("The {0} time is {1} the {2} time.", 
-                        localTime.Kind.ToString(), 
-                        Enum.GetName(typeof(TimeComparison), localTime.CompareTo(utcTime)), 
-                        utcTime.Kind.ToString());  
+      Console.WriteLine("The {0} time is {1} the {2} time.",
+                        localTime.Kind.ToString(),
+                        Enum.GetName(typeof(TimeComparison), localTime.CompareTo(utcTime)),
+                        utcTime.Kind.ToString());
    }
 }
-// If run in the U.S. Pacific Standard Time zone, the example displays 
+// If run in the U.S. Pacific Standard Time zone, the example displays
 // the following output to the console:
 //    Difference between Local and Utc time: -7:0 hours
-//    The Local time is EarlierThan the Utc time.                                                    
+//    The Local time is EarlierThan the Utc time.
 // </Snippet2>

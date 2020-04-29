@@ -103,7 +103,7 @@ byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
 
 As the preceding example shows, if the literal's value is not within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
 
-You also can use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
+You can also use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
 
 ```csharp
 var signedByte = (sbyte)42;

@@ -71,7 +71,7 @@ namespace HowToStrings
             }
             // </Snippet3>
         }
-        
+
         private static void SplitOnMultipleCharsWithGaps()
         {
             // <Snippet4>

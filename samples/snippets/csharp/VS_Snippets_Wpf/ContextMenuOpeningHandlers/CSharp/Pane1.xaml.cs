@@ -11,7 +11,7 @@ using System.Windows.Media;
 namespace ContextMenus
 {
 
-	public partial class Pane1 
+	public partial class Pane1
 	{
         bool FlagForCustomContextMenu;
 //<SnippetBuildMenu>

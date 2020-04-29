@@ -4,14 +4,14 @@ using System;
 
 public class Example
 {
-   static void Main(string[] args)  
-   {  
+   static void Main(string[] args)
+   {
       int[] values = { 2, 4, 6, 8 };
       DoubleValues(values);
       foreach (var value in values)
          Console.Write("{0}  ", value);
-   }  
-  
+   }
+
    public static void DoubleValues(int[] arr)
    {
       for (int ctr = 0; ctr <= arr.GetUpperBound(0); ctr++)

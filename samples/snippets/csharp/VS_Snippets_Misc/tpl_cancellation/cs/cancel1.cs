@@ -51,18 +51,18 @@ public class Example
         Console.WriteLine("Task {0} executing", t.Id);
         tasks.Add(t);
 
-        // Request cancellation from the UI thread. 
+        // Request cancellation from the UI thread.
         char ch = Console.ReadKey().KeyChar;
         if (ch == 'c' || ch == 'C')
         {
             tokenSource.Cancel();
             Console.WriteLine("\nTask cancellation requested.");
 
-            // Optional: Observe the change in the Status property on the task. 
-            // It is not necessary to wait on tasks that have canceled. However, 
-            // if you do wait, you must enclose the call in a try-catch block to 
-            // catch the TaskCanceledExceptions that are thrown. If you do  
-            // not wait, no exception is thrown if the token that was passed to the  
+            // Optional: Observe the change in the Status property on the task.
+            // It is not necessary to wait on tasks that have canceled. However,
+            // if you do wait, you must enclose the call in a try-catch block to
+            // catch the TaskCanceledExceptions that are thrown. If you do
+            // not wait, no exception is thrown if the token that was passed to the
             // Task.Run method is the same token that requested the cancellation.
         }
 
@@ -79,7 +79,7 @@ public class Example
             tokenSource.Dispose();
         }
 
-        // Display status of all tasks. 
+        // Display status of all tasks.
         foreach (var task in tasks)
             Console.WriteLine("Task {0} status is now {1}", task.Id, task.Status);
     }
@@ -119,7 +119,7 @@ public class Example
 // The example displays output like the following:
 //       Press any key to begin tasks...
 //    To terminate the example, press 'c' to cancel and exit...
-//    
+//
 //    Task 1 executing
 //    Task 2 executing
 //    Task 3 executing
@@ -132,9 +132,9 @@ public class Example
 //    Task cancellation requested.
 //    Task 2 cancelled
 //    Task 7 cancelled
-//    
+//
 //    OperationCanceledException thrown
-//    
+//
 //    Task 2 status is now Canceled
 //    Task 1 status is now RanToCompletion
 //    Task 8 status is now Canceled

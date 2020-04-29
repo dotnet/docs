@@ -189,7 +189,7 @@
       },
       "processor-conditional": {
         "type": "query",
-        "value": "PullRequest.base.ref == 'master'",
+        "value": "PullRequest.base.ref != 'live'",
         "processors": {
           "processor-files": {
             "changedfile": {

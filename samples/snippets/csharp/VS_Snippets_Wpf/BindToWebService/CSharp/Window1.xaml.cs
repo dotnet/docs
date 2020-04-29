@@ -20,7 +20,7 @@ namespace BindtoContentService
             InitializeComponent();
         }
 
-        // Handler for the Windows Loaded event 
+        // Handler for the Windows Loaded event
         void OnLoad(object sender, RoutedEventArgs e)
         {
 //<SnippetWebServiceCall>

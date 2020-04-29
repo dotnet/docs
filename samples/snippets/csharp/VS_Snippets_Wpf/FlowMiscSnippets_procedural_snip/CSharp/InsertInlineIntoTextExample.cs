@@ -11,7 +11,7 @@ namespace SDKSample
     {
         public InsertInlineIntoTextExample()
         {
- 
+
             // Create a paragraph with a short sentence
             Paragraph myParagraph = new Paragraph(new Run("Neptune has 72 times Earth's volume..."));
 
@@ -22,7 +22,7 @@ namespace SDKSample
             // Create a Span that covers the range between the two TextPointers.
             Span mySpan = new Span(myTextPointer1, myTextPointer2);
             mySpan.Background = Brushes.Red;
-            
+
             // Create a FlowDocument with the paragraph as its initial content.
             FlowDocument myFlowDocument = new FlowDocument(myParagraph);
 

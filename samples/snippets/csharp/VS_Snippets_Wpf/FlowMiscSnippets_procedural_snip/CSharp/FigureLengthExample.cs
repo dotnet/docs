@@ -14,7 +14,7 @@ namespace SDKSample
 
             // Create a paragraph
             Paragraph myParagraph = new Paragraph(new Run("Neptune has 72 times Earth's volume..."));
-            // Create a Figure with a paragraph in it. 
+            // Create a Figure with a paragraph in it.
             Figure myFigure = new Figure();
 
             // Add the paragraph to the Figure.
@@ -28,13 +28,13 @@ namespace SDKSample
 
             this.Content = myFlowDocument;
             /*
-             * 
-             *         <Figure 
-          Width="140" Height="50" Background="GhostWhite" 
-          HorizontalAnchor="PageLeft" 
+             *
+             *         <Figure
+          Width="140" Height="50" Background="GhostWhite"
+          HorizontalAnchor="PageLeft"
           HorizontalOffset="100" VerticalOffset="20"
           >
-          <Paragraph 
+          <Paragraph
             FontStyle="Italic" TextAlignment="Left"
             Background="Beige" Foreground="DarkGreen"
             >
@@ -42,7 +42,7 @@ namespace SDKSample
           </Paragraph>
         </Figure>
 
-           
+
             // Create paragraph that will go into the Figure and populate with text.
             Paragraph myParagraph1 = new Paragraph(new Run("Neptune has 72 times Earth's volume..."));
             myParagraph1.FontStyle = FontStyles.Italic;
@@ -79,16 +79,16 @@ namespace SDKSample
             FlowDocument myFlowDocument = new FlowDocument(myParagraph);
 
             this.Content = myFlowDocument;
-            
+
             */
 
 /*
-                    <Figure 
-          Width="300" Height="50" Background="GhostWhite" 
-          HorizontalAnchor="PageLeft" 
+                    <Figure
+          Width="300" Height="50" Background="GhostWhite"
+          HorizontalAnchor="PageLeft"
           HorizontalOffset="100" VerticalOffset="20"
           >
-          <Paragraph 
+          <Paragraph
             FontStyle="Italic" TextAlignment="Left"
             Background="Beige" Foreground="DarkGreen"
             >

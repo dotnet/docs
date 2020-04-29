@@ -13,17 +13,17 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
         {
 
             // <SnippetRelativeTileSizeExample>
-            
+
             //
             // Create an ImageBrush and set the size of each
-            // tile to 50% by 50% of the area being painted. 
-            // 
+            // tile to 50% by 50% of the area being painted.
+            //
             ImageBrush relativeTileSizeImageBrush = new ImageBrush();
             relativeTileSizeImageBrush.ImageSource =
                 new BitmapImage(new Uri(@"sampleImages\cherries_larger.jpg", UriKind.Relative));
             relativeTileSizeImageBrush.TileMode = TileMode.Tile;
-            
-            // Specify the size of the base tile. 
+
+            // Specify the size of the base tile.
             // By default, the size of the Viewport is
             // relative to the area being painted,
             // so a value of 0.5 indicates 50% of the output
@@ -43,19 +43,19 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
 
             //
             // Create an ImageBrush and set the size of each
-            // tile to 25 by 25 pixels. 
-            // 
+            // tile to 25 by 25 pixels.
+            //
             ImageBrush absoluteTileSizeImageBrush = new ImageBrush();
             absoluteTileSizeImageBrush.ImageSource =
                  new BitmapImage(new Uri(@"sampleImages\cherries_larger.jpg", UriKind.Relative));
             absoluteTileSizeImageBrush.TileMode = TileMode.Tile;
 
             // Specify that the Viewport is to be interpreted as
-            // an absolute value. 
+            // an absolute value.
             absoluteTileSizeImageBrush.ViewportUnits = BrushMappingMode.Absolute;
 
             // Set the size of the base tile. Had we left ViewportUnits set
-            // to RelativeToBoundingBox (the default value), 
+            // to RelativeToBoundingBox (the default value),
             // each tile would be 25 times the size of the area being
             // painted. Because ViewportUnits is set to Absolute,
             // the following line creates tiles that are 25 by 25 pixels.

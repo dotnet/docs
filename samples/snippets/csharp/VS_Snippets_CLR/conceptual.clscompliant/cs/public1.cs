@@ -7,7 +7,7 @@ public class Person
 {
    private UInt16 personAge = 0;
 
-   public UInt16 Age 
+   public UInt16 Age
    { get { return personAge; } }
 }
 // The attempt to compile the example displays the following compiler warning:

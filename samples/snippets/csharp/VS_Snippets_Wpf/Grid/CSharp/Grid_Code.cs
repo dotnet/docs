@@ -9,7 +9,7 @@ namespace SDKSample
     public class app : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -31,7 +31,7 @@ namespace SDKSample
             myGrid.HorizontalAlignment = HorizontalAlignment.Left;
             myGrid.VerticalAlignment = VerticalAlignment.Top;
             myGrid.ShowGridLines = true;
-            
+
             // Define the Columns
             ColumnDefinition colDef1 = new ColumnDefinition();
             ColumnDefinition colDef2 = new ColumnDefinition();
@@ -49,11 +49,11 @@ namespace SDKSample
             myGrid.RowDefinitions.Add(rowDef2);
             myGrid.RowDefinitions.Add(rowDef3);
             myGrid.RowDefinitions.Add(rowDef4);
-            
+
             // Add the first text cell to the Grid
             TextBlock txt1 = new TextBlock();
             txt1.Text = "2005 Products Shipped";
-            txt1.FontSize = 20; 
+            txt1.FontSize = 20;
             txt1.FontWeight = FontWeights.Bold;
             Grid.SetColumnSpan(txt1, 3);
             Grid.SetRow(txt1, 0);
@@ -66,7 +66,7 @@ namespace SDKSample
             txt2.FontWeight = FontWeights.Bold;
             Grid.SetRow(txt2, 1);
             Grid.SetColumn(txt2, 0);
-            
+
             // Add the third text cell to the Grid
             TextBlock txt3 = new TextBlock();
             txt3.Text = "Quarter 2";
@@ -74,7 +74,7 @@ namespace SDKSample
             txt3.FontWeight = FontWeights.Bold;
             Grid.SetRow(txt3, 1);
             Grid.SetColumn(txt3, 1);
-            
+
             // Add the fourth text cell to the Grid
             TextBlock txt4 = new TextBlock();
             txt4.Text = "Quarter 3";
@@ -82,7 +82,7 @@ namespace SDKSample
             txt4.FontWeight = FontWeights.Bold;
             Grid.SetRow(txt4, 1);
             Grid.SetColumn(txt4, 2);
-            
+
             // Add the sixth text cell to the Grid
             TextBlock txt5 = new TextBlock();
             Double db1 = new Double();
@@ -90,7 +90,7 @@ namespace SDKSample
             txt5.Text = db1.ToString();
             Grid.SetRow(txt5, 2);
             Grid.SetColumn(txt5, 0);
-            
+
             // Add the seventh text cell to the Grid
             TextBlock txt6 = new TextBlock();
             Double db2 = new Double();
@@ -98,7 +98,7 @@ namespace SDKSample
             txt6.Text = db2.ToString();
             Grid.SetRow(txt6, 2);
             Grid.SetColumn(txt6, 1);
-            
+
             // Add the final text cell to the Grid
             TextBlock txt7 = new TextBlock();
             Double db3 = new Double();
@@ -115,7 +115,7 @@ namespace SDKSample
             txt8.Text = "Total Units: " + (db1 + db2 + db3).ToString();
             Grid.SetRow(txt8, 3);
             Grid.SetColumnSpan(txt8, 3);
-            
+
             // Add the TextBlock elements to the Grid Children collection
             myGrid.Children.Add(txt1);
             myGrid.Children.Add(txt2);
@@ -125,7 +125,7 @@ namespace SDKSample
             myGrid.Children.Add(txt6);
             myGrid.Children.Add(txt7);
             myGrid.Children.Add(txt8);
-            
+
             // Add the Grid as the Content of the Parent Window Object
             mainWindow.Content = myGrid;
             mainWindow.Show ();

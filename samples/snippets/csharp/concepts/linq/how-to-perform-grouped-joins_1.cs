@@ -31,7 +31,7 @@
             List<Pet> pets = new List<Pet> { barley, boots, whiskers, bluemoon, daisy };
 
             // Create a list where each element is an anonymous type
-            // that contains the person's first name and a collection of 
+            // that contains the person's first name and a collection of
             // pets that are owned by them.
             var query = from person in people
                         join pet in pets on person equals pet.Owner into gj

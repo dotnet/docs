@@ -103,7 +103,7 @@ namespace operators
             UserDefinedConversions.Main();
             Console.WriteLine();
 
-            Console.WriteLine("========= switch expression example =========");
+            Console.WriteLine("========= switch expression example ============");
             SwitchExpressions.Examples();
             Console.WriteLine();
 

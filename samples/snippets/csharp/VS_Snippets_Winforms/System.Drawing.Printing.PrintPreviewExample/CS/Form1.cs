@@ -56,7 +56,7 @@ namespace PrintPreviewApp
             int charactersOnPage = 0;
             int linesPerPage = 0;
 
-            // Sets the value of charactersOnPage to the number of characters 
+            // Sets the value of charactersOnPage to the number of characters
             // of stringToPrint that will fit within the bounds of the page.
             e.Graphics.MeasureString(stringToPrint, this.Font,
                 e.MarginBounds.Size, StringFormat.GenericTypographic,

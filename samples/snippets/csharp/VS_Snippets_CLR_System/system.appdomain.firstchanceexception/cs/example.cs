@@ -29,7 +29,7 @@ class Example
         }
         catch (ArgumentException ex)
         {
-            Console.WriteLine("ArgumentException caught in {0}: {1}", 
+            Console.WriteLine("ArgumentException caught in {0}: {1}",
                 AppDomain.CurrentDomain.FriendlyName, ex.Message);
         }
     }
@@ -57,7 +57,7 @@ public class Worker : MarshalByRefObject
 
         // Create another application domain, until the maximum is reached.
         // Field w remains null in the last application domain, as a signal
-        // to TestException(). 
+        // to TestException().
         if (count < max)
         {
             int next = count + 1;
@@ -85,7 +85,7 @@ public class Worker : MarshalByRefObject
             }
             catch (ArgumentException ex)
             {
-                Console.WriteLine("ArgumentException caught in {0}: {1}", 
+                Console.WriteLine("ArgumentException caught in {0}: {1}",
                     AppDomain.CurrentDomain.FriendlyName, ex.Message);
             }
         }

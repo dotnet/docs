@@ -13,7 +13,7 @@ public class Example
 
       Console.WriteLine();
       pattern = @"(?i)\bthe\w*\b";
-      foreach (Match match in Regex.Matches(input, pattern, 
+      foreach (Match match in Regex.Matches(input, pattern,
                                             RegexOptions.IgnoreCase))
          Console.WriteLine("Found {0} at index {1}.", match.Value, match.Index);
    }
@@ -22,7 +22,7 @@ public class Example
 //       Found The at index 0.
 //       Found then at index 8.
 //       Found them at index 18.
-//       
+//
 //       Found The at index 0.
 //       Found then at index 8.
 //       Found them at index 18.

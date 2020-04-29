@@ -261,8 +261,7 @@ work begins:
 [!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
 > [!NOTE]
-> Some of the designs that are supported by local functions
-> could also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../local-functions-vs-lambdas.md).
+> Some of the designs that are supported by local functions can also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions).
 
 ## More expression-bodied members
 

@@ -119,15 +119,15 @@ namespace PhotoStreamingClient
                     imageStream.Position = 0;
 
                     //<snippetSetSaveStream>
-                    // Set the file stream as the source of binary stream 
+                    // Set the file stream as the source of binary stream
                     // to send to the data service. The Slug header is the file name and
-                    // the content type is determined from the file extension. 
-                    // A value of 'true' means that the stream is closed by the client when 
+                    // the content type is determined from the file extension.
+                    // A value of 'true' means that the stream is closed by the client when
                     // the upload is complete.
                     context.SetSaveStream(photoEntity, imageStream, true,
                         photoEntity.ContentType, photoEntity.FileName);
                     //</snippetSetSaveStream>
-                    
+
                     return true;
                 }
                 else
@@ -162,7 +162,7 @@ namespace PhotoStreamingClient
                 ChangeOperationResponse response =
                     context.SaveChanges().FirstOrDefault() as ChangeOperationResponse;
 
-                // When we issue a POST request, the photo ID and edit-media link are not updated 
+                // When we issue a POST request, the photo ID and edit-media link are not updated
                 // on the client (a bug), so we need to get the server values.
                 if (photoEntity.PhotoId == 0)
                 {
@@ -174,7 +174,7 @@ namespace PhotoStreamingClient
                     // Verify that the entity was created correctly.
                     if (entity != null && entity.EditLink != null)
                     {
-                        // Cache the current merge option (we reset to the cached 
+                        // Cache the current merge option (we reset to the cached
                         // value in the finally block).
                         cachedMergeOption = context.MergeOption;
 

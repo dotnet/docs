@@ -236,6 +236,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
        customCertificateValidatorType =
 "Microsoft.ServiceModel.Samples. CustomX509CertificateValidator, service" />
    </clientCertificate>
+   </serviceCredentials>
    ...
   </behavior>
  </serviceBehaviors>

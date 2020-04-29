@@ -21,7 +21,7 @@ public class Form1 : Form
     public Form1()
     {
         dataGridView1.Dock = DockStyle.Fill;
-        dataGridView1.AutoSizeColumnsMode = 
+        dataGridView1.AutoSizeColumnsMode =
             DataGridViewAutoSizeColumnsMode.AllCells;
         reportButton.Text = "Generate Report";
         reportButton.Dock = DockStyle.Top;
@@ -42,7 +42,7 @@ public class Form1 : Form
         AddColumns();
     }
 
-    // Populates the employees and tasks lists. 
+    // Populates the employees and tasks lists.
     private void PopulateLists()
     {
         employees.Add(new Employee("Harry"));
@@ -58,21 +58,21 @@ public class Form1 : Form
     // Configures columns for the DataGridView control.
     private void AddColumns()
     {
-        DataGridViewTextBoxColumn idColumn = 
+        DataGridViewTextBoxColumn idColumn =
             new DataGridViewTextBoxColumn();
         idColumn.Name = "Task";
         idColumn.DataPropertyName = "Id";
         idColumn.ReadOnly = true;
 
         //<snippet110>
-        DataGridViewComboBoxColumn assignedToColumn = 
+        DataGridViewComboBoxColumn assignedToColumn =
             new DataGridViewComboBoxColumn();
 
-        // Populate the combo box drop-down list with Employee objects. 
+        // Populate the combo box drop-down list with Employee objects.
         foreach (Employee e in employees) assignedToColumn.Items.Add(e);
 
-        // Add "unassigned" to the drop-down list and display it for 
-        // empty AssignedTo values or when the user presses CTRL+0. 
+        // Add "unassigned" to the drop-down list and display it for
+        // empty AssignedTo values or when the user presses CTRL+0.
         assignedToColumn.Items.Add("unassigned");
         assignedToColumn.DefaultCellStyle.NullValue = "unassigned";
         //</snippet110>
@@ -85,8 +85,8 @@ public class Form1 : Form
         assignedToColumn.ValueMember = "Self";
         //</snippet115>
 
-        // Add a button column. 
-        DataGridViewButtonColumn buttonColumn = 
+        // Add a button column.
+        DataGridViewButtonColumn buttonColumn =
             new DataGridViewButtonColumn();
         buttonColumn.HeaderText = "";
         buttonColumn.Name = "Status Request";
@@ -102,14 +102,14 @@ public class Form1 : Form
             new DataGridViewCellEventHandler(dataGridView1_CellClick);
     }
 
-    // Reports on task assignments. 
+    // Reports on task assignments.
     private void reportButton_Click(object sender, EventArgs e)
     {
         StringBuilder report = new StringBuilder();
         foreach (Task t in tasks)
         {
-            String assignment = 
-                t.AssignedTo == null ? 
+            String assignment =
+                t.AssignedTo == null ?
                 "unassigned" : "assigned to " + t.AssignedTo.Name;
             report.AppendFormat("Task {0} is {1}.", t.Id, assignment);
             report.Append(Environment.NewLine);
@@ -120,7 +120,7 @@ public class Form1 : Form
     // Calls the Employee.RequestStatus method.
     void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
     {
-        // Ignore clicks that are not on button cells. 
+        // Ignore clicks that are not on button cells.
         if (e.RowIndex < 0 || e.ColumnIndex !=
             dataGridView1.Columns["Status Request"].Index) return;
 
@@ -133,7 +133,7 @@ public class Form1 : Form
             .Cells["Assigned To"].Value as Employee;
         //</snippet120>
 
-        // Request status through the Employee object if present. 
+        // Request status through the Employee object if present.
         if (assignedTo != null)
         {
             assignedTo.RequestStatus(taskID);
@@ -193,16 +193,16 @@ public class Employee
     }
 
     //<snippet310>
-    public Employee Self 
-    { 
-        get { return this; } 
+    public Employee Self
+    {
+        get { return this; }
     }
     //</snippet310>
 
     public void RequestStatus(Int32 taskID)
     {
         MessageBox.Show(String.Format(
-            "Status for task {0} has been requested from {1}.", 
+            "Status for task {0} has been requested from {1}.",
             taskID, nameValue), "Status Request");
     }
 }

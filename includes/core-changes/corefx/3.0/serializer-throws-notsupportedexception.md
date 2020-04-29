@@ -25,7 +25,7 @@ If you're catching <xref:System.Text.Json.JsonException> when deserializing, you
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

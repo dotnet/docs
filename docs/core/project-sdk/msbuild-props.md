@@ -68,6 +68,7 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
+- [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
 
 ### RuntimeIdentifier
@@ -97,6 +98,20 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 </Project>
 ```
 
+### TrimmerRootAssembly
+
+The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](../deploying/trim-self-contained.md). Trimming is the process of removing unused parts of the runtime from a packaged application. In some cases, trimming might incorrectly remove required references.
+
+The following XML excludes the `System.Security` assembly from trimming.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <TrimmerRootAssembly Include="System.Security" />
+  </ItemGroup>
+</Project>
+```
+
 ### UseAppHost
 
 The `UseAppHost` property was introduced in the 2.1.400 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
@@ -115,6 +130,8 @@ For more information about deployment, see [.NET Core application deployment](..
 
 ## Compile properties
 
+- [LangVersion](#langversion)
+
 ### LangVersion
 
 The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
@@ -128,6 +145,128 @@ The `LangVersion` property lets you specify a specific programming language vers
 ```
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
+
+## Run-time configuration properties
+
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [.NET Core run-time configuration settings](../run-time-config/index.md).
+
+- [ConcurrentGarbageCollection](#concurrentgarbagecollection)
+- [InvariantGlobalization](#invariantglobalization)
+- [RetainVMGarbageCollection](#retainvmgarbagecollection)
+- [ServerGarbageCollection](#servergarbagecollection)
+- [ThreadPoolMaxThreads](#threadpoolmaxthreads)
+- [ThreadPoolMinThreads](#threadpoolminthreads)
+- [TieredCompilation](#tieredcompilation)
+- [TieredCompilationQuickJit](#tieredcompilationquickjit)
+- [TieredCompilationQuickJitForLoops](#tieredcompilationquickjitforloops)
+
+### ConcurrentGarbageCollection
+
+The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [System.GC.Concurrent/COMPlus_gcConcurrent](../run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+  </PropertyGroup>
+</Project>
+```
+
+### InvariantGlobalization
+
+The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+</Project>
+```
+
+### RetainVMGarbageCollection
+
+The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [System.GC.RetainVM/COMPlus_GCRetainVM](../run-time-config/garbage-collector.md#systemgcretainvmcomplus_gcretainvm).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+  </PropertyGroup>
+</Project>
+```
+
+### ServerGarbageCollection
+
+The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [System.GC.Server/COMPlus_gcServer](../run-time-config/garbage-collector.md#systemgcservercomplus_gcserver).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+</Project>
+```
+
+### ThreadPoolMaxThreads
+
+The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../run-time-config/threading.md#maximum-threads).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ThreadPoolMaxThreads>20</ThreadPoolMaxThreads>
+  </PropertyGroup>
+</Project>
+```
+
+### ThreadPoolMinThreads
+
+The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../run-time-config/threading.md#minimum-threads).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+  </PropertyGroup>
+</Project>
+```
+
+### TieredCompilation
+
+The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../run-time-config/compilation.md#tiered-compilation).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+</Project>
+```
+
+### TieredCompilationQuickJit
+
+The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../run-time-config/compilation.md#quick-jit).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+  </PropertyGroup>
+</Project>
+```
+
+### TieredCompilationQuickJitForLoops
+
+The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../run-time-config/compilation.md#quick-jit-for-loops).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
+  </PropertyGroup>
+</Project>
+```
 
 ## NuGet packages
 

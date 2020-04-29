@@ -15,9 +15,9 @@ namespace Microsoft.WCF.Documentation
     // <snippet8>
     #region IServiceBehavior Members
     public void AddBindingParameters(
-      ServiceDescription serviceDescription, 
-      ServiceHostBase serviceHostBase, 
-      System.Collections.ObjectModel.Collection<ServiceEndpoint> endpoints, 
+      ServiceDescription serviceDescription,
+      ServiceHostBase serviceHostBase,
+      System.Collections.ObjectModel.Collection<ServiceEndpoint> endpoints,
       BindingParameterCollection bindingParameters
     )
     { return; }

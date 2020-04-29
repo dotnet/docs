@@ -42,9 +42,9 @@ Generally, the more your application favors FaaS and PaaS models, the more benef
 * [Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): If App Service doesn't meet your needs for hosting an existing application due to specific dependencies, Virtual Machines will be the easiest place to start. To get started with Virtual Machines and ASP.NET or WCF, see [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro).
 
 > [!TIP]
-> For a more complete list of Azure services, see [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options). For more information on choosing a service, see [Decision tree for Azure compute services](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
+> For more information on choosing a service, see [Choose an Azure compute service for your application](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
 
-## Choosing a data storage service
+## Choose a data storage service
 
 Azure offers several services for storing your data depending on your needs. The most common data services for .NET developers are:
 
@@ -57,7 +57,7 @@ Azure offers several services for storing your data depending on your needs. The
 > [!TIP]
 > For more information, see [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
 
-## Connecting to Azure services
+## Connect to Azure services
 
 If you use Visual Studio, you can add support for certain Azure services to your projects. The **Connected Services** dialog in Visual Studio provides an easy way to add all the required references, connection code, and configuration settings to your projects. Some commonly used Azure services are supported out of the box, such as [Storage](/azure/vs-azure-tools-connected-services-storage), [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) authentication, [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service), and [Cognitive Services](/azure/cognitive-services/) such as [Computer Vision](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service). More services, including third-party services, are available as extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance).
 

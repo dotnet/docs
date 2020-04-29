@@ -108,7 +108,7 @@ internal class Unsubscriber<BaggageInfo> : IDisposable
       this._observer = observer;
    }
 
-   public void Dispose() 
+   public void Dispose()
    {
       if (_observers.Contains(_observer))
          _observers.Remove(_observer);

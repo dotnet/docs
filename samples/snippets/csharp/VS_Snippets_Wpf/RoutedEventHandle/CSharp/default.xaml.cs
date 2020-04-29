@@ -18,7 +18,7 @@ namespace SDKSample
             eventstr.Append(fe.Name);
             eventstr.Append("\n");
 
-            // Get the element that raised the event. 
+            // Get the element that raised the event.
             FrameworkElement fe2 = (FrameworkElement)args.Source;
             eventstr.Append("Event originated from source element of type ");
             eventstr.Append(args.Source.GetType().ToString());

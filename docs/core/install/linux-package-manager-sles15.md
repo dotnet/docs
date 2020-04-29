@@ -14,12 +14,12 @@ This article describes how to use a package manager to install .NET Core on SLES
 
 [!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
 
-## Register Microsoft key and feed
+## Add Microsoft repository key and feed
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key.
-- Register the product repository.
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
 - Install required dependencies.
 
 This only needs to be done once per machine.
@@ -28,6 +28,12 @@ Open a terminal and run the following command.
 
 ```bash
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
+```
+
+Currently, the SLES 15 Microsoft repository setup package installs the *microsoft-prod.repo* file to the wrong directory, preventing zypper from finding the .NET Core packages. To fix this problem, create a symlink in the correct directory.
+
+```bash
+sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
 ## Install the .NET Core SDK

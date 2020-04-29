@@ -24,7 +24,7 @@ public class class1
         // Set the color at the center of the path to blue.
         pthGrBrush.CenterColor = Color.FromArgb(255, 0, 0, 255);
 
-        // Set the color along the entire boundary 
+        // Set the color along the entire boundary
         // of the path to aqua.
         Color[] colors = { Color.FromArgb(255, 0, 255, 255) };
         pthGrBrush.SurroundColors = colors;
@@ -63,13 +63,13 @@ public class class1
         Color[] colors = {
            Color.FromArgb(255, 0, 0, 0),
            Color.FromArgb(255, 0, 255, 0),
-           Color.FromArgb(255, 0, 0, 255), 
+           Color.FromArgb(255, 0, 0, 255),
            Color.FromArgb(255, 255, 255, 255),
            Color.FromArgb(255, 0, 0, 0),
            Color.FromArgb(255, 0, 255, 0),
            Color.FromArgb(255, 0, 0, 255),
            Color.FromArgb(255, 255, 255, 255),
-           Color.FromArgb(255, 0, 0, 0),  
+           Color.FromArgb(255, 0, 0, 0),
            Color.FromArgb(255, 0, 255, 0)};
 
         pthGrBrush.SurroundColors = colors;
@@ -84,8 +84,8 @@ public class class1
     {
         // Construct a path gradient brush based on an array of points.
         PointF[] ptsF = {
-           new PointF(0, 0), 
-           new PointF(160, 0), 
+           new PointF(0, 0),
+           new PointF(160, 0),
            new PointF(160, 200),
            new PointF(80, 150),
            new PointF(0, 200)};
@@ -128,7 +128,7 @@ public class class1
         // Set the center color to aqua.
         pthGrBrush.CenterColor = Color.Aqua;
 
-        // Use the path gradient brush to fill the ellipse. 
+        // Use the path gradient brush to fill the ellipse.
         e.Graphics.FillPath(pthGrBrush, path);
 
         // Set the focus scales for the path gradient brush.
@@ -194,7 +194,7 @@ public class class1
         // Set the color at the center of the path to blue.
         pthGrBrush.CenterColor = Color.FromArgb(255, 0, 0, 255);
 
-        // Set the color along the entire boundary 
+        // Set the color along the entire boundary
         // of the path to aqua.
         Color[] colors = { Color.FromArgb(255, 0, 255, 255) };
         pthGrBrush.SurroundColors = colors;
@@ -202,7 +202,7 @@ public class class1
         e.Graphics.FillEllipse(pthGrBrush, 0, 0, 140, 70);
     }
     // </snippet16>
-        
+
     // <snippet17>
     public void SetCenterPointOutsidePath(PaintEventArgs e)
     {
@@ -220,7 +220,7 @@ public class class1
         // Set the color at the center of the path to blue.
         pthGrBrush.CenterColor = Color.FromArgb(255, 0, 0, 255);
 
-        // Set the color along the entire boundary 
+        // Set the color along the entire boundary
         // of the path to aqua.
         Color[] colors = { Color.FromArgb(255, 0, 255, 255) };
         pthGrBrush.SurroundColors = colors;
@@ -255,7 +255,7 @@ public class class1
         LinearGradientBrush linGrBrush = new LinearGradientBrush(
            new Point(0, 10),
            new Point(200, 10),
-           Color.FromArgb(255, 0, 0, 0),     // Opaque black 
+           Color.FromArgb(255, 0, 0, 0),     // Opaque black
            Color.FromArgb(255, 255, 0, 0));  // Opaque red
 
         float[] relativeIntensities = { 0.0f, 0.5f, 1.0f };

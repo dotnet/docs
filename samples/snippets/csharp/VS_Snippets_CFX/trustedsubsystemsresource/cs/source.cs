@@ -22,7 +22,7 @@ namespace Microsoft.ServiceModel.Samples
     // Service class which implements the service contract.
     public class BackendService : ICalculator
     {
- 
+
         public double Multiply(double n1, double n2)
         {
             return n1 * n2;

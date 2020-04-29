@@ -42,7 +42,7 @@ class Program
         // Iterate through the DataTable and display the values.
         foreach (DataRow row in table.Rows)
         {
-            // Assign values to variables. Note that you 
+            // Assign values to variables. Note that you
             // do not have to test for null values.
             idValue = (SqlInt32)row["ID"];
             descriptionValue = (SqlString)row["Description"];

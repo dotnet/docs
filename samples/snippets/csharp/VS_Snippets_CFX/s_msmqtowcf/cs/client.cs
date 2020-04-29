@@ -41,7 +41,7 @@ namespace Microsoft.ServiceModel.Samples
             //Create a transaction scope.
             using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
             {
-                
+
                 orderQueue.Send(msg, MessageQueueTransactionType.Automatic);
                 // Complete the transaction.
                 scope.Complete();

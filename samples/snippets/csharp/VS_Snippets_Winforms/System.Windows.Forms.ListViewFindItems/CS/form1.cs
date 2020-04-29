@@ -46,9 +46,9 @@ namespace ListViewFindItemWithTextHowTo
         /// </summary>
         private void InitializeComponent()
         {
-            // 
+            //
             // Form1
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -70,14 +70,14 @@ namespace ListViewFindItemWithTextHowTo
             textListView.View = View.List;
 
             // Populate the ListViewWithItems
-            textListView.Items.AddRange(new ListViewItem[]{ 
-                new ListViewItem("Amy Alberts"), 
-                new ListViewItem("Amy Recker"), 
-                new ListViewItem("Erin Hagens"), 
-                new ListViewItem("Barry Johnson"), 
-                new ListViewItem("Jay Hamlin"), 
-                new ListViewItem("Brian Valentine"), 
-                new ListViewItem("Brian Welker"), 
+            textListView.Items.AddRange(new ListViewItem[]{
+                new ListViewItem("Amy Alberts"),
+                new ListViewItem("Amy Recker"),
+                new ListViewItem("Erin Hagens"),
+                new ListViewItem("Barry Johnson"),
+                new ListViewItem("Jay Hamlin"),
+                new ListViewItem("Brian Valentine"),
+                new ListViewItem("Brian Welker"),
                 new ListViewItem("Daniel Weisman") });
 
             // Handle the TextChanged to get the text for our search.
@@ -113,7 +113,7 @@ namespace ListViewFindItemWithTextHowTo
             // Create an image list for the icon ListView.
             iconListView.LargeImageList = new ImageList();
             iconListView.Height = 400;
-            
+
             // Add an image to the ListView large icon list.
             iconListView.LargeImageList.Images.Add(
                 new Bitmap(typeof(Control), "Edit.bmp"));
@@ -122,13 +122,13 @@ namespace ListViewFindItemWithTextHowTo
             // in the image list.
             iconListView.View = View.LargeIcon;
             iconListView.Items.AddRange(new ListViewItem[]{
-                new ListViewItem("Amy Alberts", 0), 
-                new ListViewItem("Amy Recker", 0), 
-                new ListViewItem("Erin Hagens", 0), 
-                new ListViewItem("Barry Johnson", 0), 
-                new ListViewItem("Jay Hamlin", 0), 
-                new ListViewItem("Brian Valentine", 0), 
-                new ListViewItem("Brian Welker", 0), 
+                new ListViewItem("Amy Alberts", 0),
+                new ListViewItem("Amy Recker", 0),
+                new ListViewItem("Erin Hagens", 0),
+                new ListViewItem("Barry Johnson", 0),
+                new ListViewItem("Jay Hamlin", 0),
+                new ListViewItem("Brian Valentine", 0),
+                new ListViewItem("Brian Welker", 0),
                 new ListViewItem("Daniel Weisman", 0) });
             this.Controls.Add(iconListView);
             this.Controls.Add(previousItemBox);
@@ -136,13 +136,13 @@ namespace ListViewFindItemWithTextHowTo
             // Handle the MouseDown event to capture user input.
            iconListView.MouseDown +=
                new MouseEventHandler(iconListView_MouseDown);
-            //iconListView.MouseWheel += new MouseEventHandler(iconListView_MouseWheel);   
+            //iconListView.MouseWheel += new MouseEventHandler(iconListView_MouseWheel);
         }
 
         //<snippet21>
         void iconListView_MouseDown(object sender, MouseEventArgs e)
         {
-            
+
             // Find the an item above where the user clicked.
             ListViewItem foundItem =
                 iconListView.FindNearestItem(SearchDirectionHint.Up, e.X, e.Y);

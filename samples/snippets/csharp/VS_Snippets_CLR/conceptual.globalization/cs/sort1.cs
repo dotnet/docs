@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      string[] values = { "able", "ångström", "apple", "Æble", 
+      string[] values = { "able", "ångström", "apple", "Æble",
                           "Windows", "Visual Studio" };
       // Change thread to en-US.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
@@ -23,12 +23,12 @@ public class Example
       // Compare the sorted arrays.
       Console.WriteLine("{0,-8} {1,-15} {2,-15}\n", "Position", "en-US", "sv-SE");
       for (int ctr = 0; ctr <= values.GetUpperBound(0); ctr++)
-         Console.WriteLine("{0,-8} {1,-15} {2,-15}", ctr, enValues[ctr], svValues[ctr]);      
+         Console.WriteLine("{0,-8} {1,-15} {2,-15}", ctr, enValues[ctr], svValues[ctr]);
    }
 }
 // The example displays the following output:
 //       Position en-US           sv-SE
-//       
+//
 //       0        able            able
 //       1        Æble            Æble
 //       2        ångström        apple

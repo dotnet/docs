@@ -9,7 +9,7 @@ class XmlSchemaTraverseExample
     static void Main()
     {
         // Add the customer schema to a new XmlSchemaSet and compile it.
-        // Any schema validation warnings and errors encountered reading or 
+        // Any schema validation warnings and errors encountered reading or
         // compiling the schema are handled by the ValidationEventHandler delegate.
         XmlSchemaSet schemaSet = new XmlSchemaSet();
         schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
@@ -34,7 +34,7 @@ class XmlSchemaTraverseExample
             // Get the complex type of the Customer element.
             XmlSchemaComplexType complexType = element.ElementSchemaType as XmlSchemaComplexType;
 
-            // If the complex type has any attributes, get an enumerator 
+            // If the complex type has any attributes, get an enumerator
             // and write each attribute name to the console.
             if (complexType.AttributeUses.Count > 0)
             {

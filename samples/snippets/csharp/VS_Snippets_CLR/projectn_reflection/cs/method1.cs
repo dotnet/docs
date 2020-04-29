@@ -47,21 +47,21 @@ namespace ContosoApplication
 
            f = "C";
           long lng = Int64.MaxValue;
-          outputBlock.Text += String.Format("'{0}'\n", 
+          outputBlock.Text += String.Format("'{0}'\n",
                                Stringify.ConvertToString(new object[] { lng, f }));
 
-          outputBlock.Text += String.Format("'{0}'\n", 
+          outputBlock.Text += String.Format("'{0}'\n",
                                Stringify.ConvertToString(new object[] { lng, "N1", fr }));
 
           Person p = new Person();
-          outputBlock.Text += String.Format("'{0}'\n", 
+          outputBlock.Text += String.Format("'{0}'\n",
                                Stringify.ConvertToString(new object[] { p }));
 
           DateTime date = DateTime.Now;
-          outputBlock.Text += String.Format("'{0}'\n", 
+          outputBlock.Text += String.Format("'{0}'\n",
                                Stringify.ConvertToString(new object[] { date, "F" }));
 
-          outputBlock.Text += String.Format("'{0}'\n", 
+          outputBlock.Text += String.Format("'{0}'\n",
                                Stringify.ConvertToString(new object[] { date, "F", fr }));
         }
     }
@@ -89,7 +89,7 @@ namespace ContosoApplication
 
           string retval = "";
 
-          // Parameters indicate either a format specifier, numeric base, or format provider, 
+          // Parameters indicate either a format specifier, numeric base, or format provider,
           // or a format specifier with an IFormatProvider.
 
           // A string as the first parameter indicates a format specifier.
@@ -105,7 +105,7 @@ namespace ContosoApplication
                  MethodInfo m = t.GetRuntimeMethod("ToString", new Type[] { typeof(String), obj[2].GetType() });
                  retval = m.Invoke(obj[0], new object[] { obj[1], obj[2] }).ToString();
              }
-          }   
+          }
           else if (obj[1] is IFormatProvider)
           {
               Type t = obj[0].GetType();
@@ -140,8 +140,8 @@ public class MainPage : Page
 internal class TextBlock
 {
    private String s;
-   
-   public String Text 
+
+   public String Text
    {
       get { return s; }
       set { s = value; }

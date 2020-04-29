@@ -1,5 +1,5 @@
 ﻿//---------------------------------------------------------------------------
-// 
+//
 // File: HtmlLexicalAnalyzer.cs
 //
 // Copyright (C) Microsoft Corporation.  All rights reserved.
@@ -64,7 +64,7 @@ namespace SdkSample
         #region Internal Methods
 
         /// <summary>
-        /// retrieves next recognizable token from input string 
+        /// retrieves next recognizable token from input string
         /// and identifies its type
         /// if no valid token is found, the output parameters are set to null
         /// if end of stream is reached without matching any token, token type
@@ -443,7 +443,7 @@ namespace SdkSample
         /// <summary>
         /// skips white space in the input string
         /// leaves the first non-white-space character available in the NextCharacter property
-        /// this may be the end-of-file character, it performs no checking 
+        /// this may be the end-of-file character, it performs no checking
         /// </summary>
         private void SkipWhiteSpace()
         {
@@ -521,13 +521,13 @@ namespace SdkSample
         {
             // we are not concerned with escaped characters in names
             // we assume that character entities are allowed as part of a name
-            return 
-                this.IsGoodForNameStart(character) || 
-                character == '.' || 
-                character == '-' || 
+            return
+                this.IsGoodForNameStart(character) ||
+                character == '.' ||
+                character == '-' ||
                 character == ':' ||
-                Char.IsDigit(character) || 
-                IsCombiningCharacter(character) || 
+                Char.IsDigit(character) ||
+                IsCombiningCharacter(character) ||
                 IsExtender(character);
         }
 
@@ -566,7 +566,7 @@ namespace SdkSample
         }
 
         /// <summary>
-        /// skips dynamic content starting with '<![' and ending with ']>' 
+        /// skips dynamic content starting with '<![' and ending with ']>'
         /// </summary>
         private void ReadDynamicContent()
         {
@@ -580,7 +580,7 @@ namespace SdkSample
             // advance twice, once to get the lookahead character and then to reach the start of the cdata
             this.GetNextCharacter();
             this.GetNextCharacter();
-            
+
             // NOTE: 10/12/2004: modified this function to check when called if's reading CDATA or something else
             // some directives may start with a <![ and then have some data and they will just end with a ]>
             // this function is modified to stop at the sequence ]> and not ]]>
@@ -604,7 +604,7 @@ namespace SdkSample
         }
 
         /// <summary>
-        /// skips comments starting with '<!-' and ending with '-->' 
+        /// skips comments starting with '<!-' and ending with '-->'
         /// NOTE: 10/06/2004: processing changed, will now skip anything starting with
         /// the "<!-"  sequence and ending in "!>" or "->", because in practice many html pages do not
         /// use the full comment specifying conventions
@@ -622,7 +622,7 @@ namespace SdkSample
             this.GetNextCharacter(); // get first '-'
             this.GetNextCharacter(); // get second '-'
             this.GetNextCharacter(); // get first character of comment content
- 
+
             while (true)
             {
                 // Read text until end of comment
@@ -692,7 +692,7 @@ namespace SdkSample
         }
 
         /// <summary>
-        /// skips processing directives starting with the characters '<?' and ending with '?>' 
+        /// skips processing directives starting with the characters '<?' and ending with '?>'
         /// NOTE: 10/14/2004: IE also ends processing directives with a />, so this function is
         /// being modified to recognize that condition as well
         /// </summary>

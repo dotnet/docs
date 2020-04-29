@@ -14,9 +14,12 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--interactive]
-    [--nologo] [-o|--output] [-r|--runtime] [-v|--verbosity]
-dotnet clean [-h|--help]
+dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--interactive]
+    [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [-v|--verbosity <LEVEL>]
+
+dotnet clean -h|--help
 ```
 
 ## Description

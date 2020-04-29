@@ -143,7 +143,7 @@ namespace HtmlElementProjectCSharp
 
 				mshtml.IHTMLDocument2 iDoc = (mshtml.IHTMLDocument2)webBrowser1.Document.DomDocument;
 
-				if (iDoc != null) 
+				if (iDoc != null)
 				{
 					mshtml.IHTMLSelectionObject iSelect = iDoc.selection;
 					if (iSelect == null)
@@ -188,7 +188,7 @@ namespace HtmlElementProjectCSharp
 			elem.InnerHtml = htmlMenu;
 
 			// Retrieve the menu cues and hook up an event handler for expanding and collapsing display of the
-			// child elements.  
+			// child elements.
 			foreach (HtmlElement menuCueElem in elem.GetElementsByTagName("SPAN"))
 			{
 				if (menuCueElem.Id.EndsWith("cue"))
@@ -200,7 +200,7 @@ namespace HtmlElementProjectCSharp
 
 		private void Element_Click(Object sender, HtmlElementEventArgs e)
 		{
-			// !TODO: Need SetStyle() implemented per DCR. 
+			// !TODO: Need SetStyle() implemented per DCR.
 		}
 		//</SNIPPET5>
 
@@ -301,13 +301,13 @@ namespace HtmlElementProjectCSharp
 
 		private void AddTopPageMessage(String message)
 		{
-			if (webBrowser1.Document != null) 
+			if (webBrowser1.Document != null)
 			{
 				HtmlDocument doc = webBrowser1.Document;
 
-				// Do not insert the warning again if it already exists. 
+				// Do not insert the warning again if it already exists.
 				HtmlElementCollection returnedElems = doc.All.GetElementsByName("ADatumWarningDiv");
-				if ((returnedElems != null) && (returnedElems.Count > 0)) 
+				if ((returnedElems != null) && (returnedElems.Count > 0))
 				{
 					return;
 				}
@@ -337,7 +337,7 @@ namespace HtmlElementProjectCSharp
 			{
 				HtmlDocument doc = webBrowser1.Document;
                 elems = doc.All.GetElementsByName(formName);
-                if (elems != null && elems.Count > 0) 
+                if (elems != null && elems.Count > 0)
 				{
                     elem = elems[0];
                     if (elem.TagName.Equals("FORM"))
@@ -383,7 +383,7 @@ namespace HtmlElementProjectCSharp
 			{
 				HtmlDocument doc = webBrowser1.Document;
                 HtmlElementCollection elems = doc.All.GetElementsByName(elemName);
-                if (elems != null && elems.Count > 0) 
+                if (elems != null && elems.Count > 0)
 				{
                     HtmlElement elem = elems[0];
 
@@ -432,14 +432,14 @@ namespace HtmlElementProjectCSharp
 
 		private void HandleFormFocus()
 		{
-			if (webBrowser1.Document != null) 
+			if (webBrowser1.Document != null)
 			{
 				HtmlDocument doc = webBrowser1.Document;
-				if (doc.Forms.Count > 0) 
+				if (doc.Forms.Count > 0)
 				{
 					HtmlElement targetForm = doc.Forms[0];
 					HtmlElementCollection searchCollection = targetForm.All.GetElementsByName("text1");
-					if (searchCollection.Count == 1) 
+					if (searchCollection.Count == 1)
 					{
                         targetFormElement = searchCollection[0];
 					}

@@ -123,7 +123,7 @@ public Customer FindCustomer(string lastName, string firstName)
 
 You've likely written a method like this to return `null` when the name sought wasn't found. The `null` clearly indicates that the record wasn't found. In this example, you'd likely change the return type from `Customer` to `Customer?`. Declaring the return value as a nullable reference type specifies the intent of this API clearly.
 
-For reasons covered under [Generic definitions and nullability](../../nullable-attributes.md#generic-definitions-and-nullability) that technique does not work with generic methods. You may have a generic method that follows a similar pattern:
+For reasons covered under [Generic definitions and nullability](../../nullable-migration-strategies.md#generic-definitions-and-nullability) that technique does not work with generic methods. You may have a generic method that follows a similar pattern:
 
 ```csharp
 public T Find<T>(IEnumerable<T> sequence, Func<T, bool> match)

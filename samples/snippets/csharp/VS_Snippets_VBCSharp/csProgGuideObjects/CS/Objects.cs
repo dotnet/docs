@@ -67,7 +67,7 @@ namespace CsCsrefProgrammingObjects
         }
         /* Output:
          Coords #1 at (0,0)
-         Coords #2 at (5,3)        
+         Coords #2 at (5,3)
         */
         //</Snippet4>
     }
@@ -372,7 +372,7 @@ namespace CsCsrefProgrammingObjects
         {
             globalStartTime = DateTime.Now;
 
-            // The following statement produces the first line of output, 
+            // The following statement produces the first line of output,
             // and the line occurs only once.
             Console.WriteLine("Static constructor sets global start time to {0}",
                 globalStartTime.ToLongTimeString());
@@ -428,7 +428,7 @@ namespace CsCsrefProgrammingObjects
         Bus #71 is created.
         Bus #72 is created.
         71 is starting its route 6.00 minutes after global start time 3:57 PM.
-        72 is starting its route 31.00 minutes after global start time 3:57 PM.      
+        72 is starting its route 31.00 minutes after global start time 3:57 PM.
    */
     //</Snippet15>
 
@@ -459,7 +459,7 @@ class Person
     public int Age { get; set; }
 
     public string Name { get; set; }
-    
+
     public string Details()
     {
         return Name + " is " + Age.ToString();
@@ -476,7 +476,7 @@ class TestPerson
         // Create another Person object, copying person1.
         Person person2 = new Person(person1);
 
-        // Change each person's age. 
+        // Change each person's age.
         person1.Age = 39;
         person2.Age = 41;
 
@@ -492,7 +492,7 @@ class TestPerson
         Console.ReadKey();
     }
 }
-// Output: 
+// Output:
 // George is 39
 // Charles is 41
     //</Snippet16>
@@ -972,7 +972,7 @@ class TestPerson
         public virtual int Drive(int miles, int speed) { /* Method statements here */ return 1; }
 
         // Derived classes must implement this.
-        public abstract double GetTopSpeed(); 
+        public abstract double GetTopSpeed();
     }
     //</Snippet40>
 
@@ -987,14 +987,14 @@ class TestPerson
 
         static void Main()
         {
-            
+
             TestMotorcycle moto = new TestMotorcycle();
 
             moto.StartEngine();
             moto.AddGas(15);
             moto.Drive(5, 20);
             double speed = moto.GetTopSpeed();
-            Console.WriteLine("My top speed is {0}", speed);            
+            Console.WriteLine("My top speed is {0}", speed);
         }
     }
     //</Snippet41>
@@ -1018,7 +1018,7 @@ class TestPerson
             // Call with an expression that evaulates to int.
             productC = Square(productA * 3);
         }
-       
+
         int Square(int i)
         {
             // Store input argument in a local variable.
@@ -1257,13 +1257,13 @@ class TestPerson
         public string day;
 
         // Public property exposes date field safely.
-        public DateTime Date 
+        public DateTime Date
         {
-            get 
+            get
             {
                 return date;
             }
-            set 
+            set
             {
                 // Set some reasonable boundaries for likely birth dates.
                 if (value.Year > 1900 && value.Year <= DateTime.Today.Year)
@@ -1310,7 +1310,7 @@ class TestPerson
     }
     //</Snippet61>
 
-    class TestCalendarDate 
+    class TestCalendarDate
     {
         static void test()
         {
@@ -1482,7 +1482,7 @@ namespace RainyDay
             int secsFromSun = 149476000 / Constants.SpeedOfLight; // in km
         }
     }
-   //</Snippet89>  
+   //</Snippet89>
 
     //<Snippet90>
     namespace TestReferenceEquality
@@ -1519,8 +1519,8 @@ namespace RainyDay
                 Console.WriteLine("ReferenceEquals(tcA, tcB) = {0}",
                                     Object.ReferenceEquals(tcA, tcB)); // false
 
-                // After assignment, tcB and tcA refer to the same object. 
-                // They now have reference equality. 
+                // After assignment, tcB and tcA refer to the same object.
+                // They now have reference equality.
                 tcB = tcA;
                 Console.WriteLine("After asignment: ReferenceEquals(tcA, tcB) = {0}",
                                     Object.ReferenceEquals(tcA, tcB)); // true
@@ -1537,7 +1537,7 @@ namespace RainyDay
 
                 TestStruct tsC = new TestStruct( 1, "TestStruct 1");
 
-                // Value types are copied on assignment. tsD and tsC have 
+                // Value types are copied on assignment. tsD and tsC have
                 // the same values but are not the same object.
                 TestStruct tsD = tsC;
                 Console.WriteLine("After asignment: ReferenceEquals(tsC, tsD) = {0}",
@@ -1546,7 +1546,7 @@ namespace RainyDay
 
                 #region stringRefEquality
                 // Constant strings within the same assembly are always interned by the runtime.
-                // This means they are stored in the same location in memory. Therefore, 
+                // This means they are stored in the same location in memory. Therefore,
                 // the two strings have reference equality although no assignment takes place.
                 string strA = "Hello world!";
                 string strB = "Hello world!";
@@ -1557,13 +1557,13 @@ namespace RainyDay
                 // are no longer interned and no longer have reference equality.
                 strA = "Goodbye world!";
                 Console.WriteLine("strA = \"{0}\" strB = \"{1}\"", strA, strB);
-                
+
                 Console.WriteLine("After strA changes, ReferenceEquals(strA, strB) = {0}",
                                 Object.ReferenceEquals(strA, strB)); // false
-                
+
                 // A string that is created at runtime cannot be interned.
                 StringBuilder sb = new StringBuilder("Hello world!");
-                string stringC = sb.ToString(); 
+                string stringC = sb.ToString();
                 // False:
                 Console.WriteLine("ReferenceEquals(stringC, strB) = {0}",
                                 Object.ReferenceEquals(stringC, strB));
@@ -1589,38 +1589,38 @@ namespace RainyDay
         strA = "Goodbye world!" strB = "Hello world!"
         After strA changes, ReferenceEquals(strA, strB) = False
     */
-    //</Snippet90>  
+    //</Snippet90>
 
     class RD
     {
-        static void Main() 
+        static void Main()
         {
 
             //<Snippet91>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet91>  
+            //</Snippet91>
             //<Snippet92>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet92>  
+            //</Snippet92>
             //<Snippet93>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet93>  
+            //</Snippet93>
             //<Snippet94>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet94>  
+            //</Snippet94>
             //<Snippet95>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet95>  
+            //</Snippet95>
             //<Snippet96>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet96>  
+            //</Snippet96>
 
             //<Snippet97>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet97>  
+            //</Snippet97>
             //<Snippet98>
             Console.WriteLine("Saving for a rainy day");
-            //</Snippet98>  
+            //</Snippet98>
         }
     }
 }

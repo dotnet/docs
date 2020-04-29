@@ -8,18 +8,18 @@ public class CompareSample
         string string1 = "file";
         string string2 = "FILE";
         int compareResult = 0;
-        
-        compareResult = String.Compare(string1, string2, 
-                                       StringComparison.Ordinal);
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}", 
-                          StringComparison.Ordinal, string1, string2, 
-                          compareResult); 
 
-        compareResult = String.Compare(string1, string2, 
+        compareResult = String.Compare(string1, string2,
+                                       StringComparison.Ordinal);
+        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
+                          StringComparison.Ordinal, string1, string2,
+                          compareResult);
+
+        compareResult = String.Compare(string1, string2,
                                        StringComparison.OrdinalIgnoreCase);
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}", 
-                          StringComparison.OrdinalIgnoreCase, string1, string2, 
-                          compareResult); 
+        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
+                          StringComparison.OrdinalIgnoreCase, string1, string2,
+                          compareResult);
     }
 }
 // The example displays the following output:

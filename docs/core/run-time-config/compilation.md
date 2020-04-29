@@ -120,7 +120,7 @@ Project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TieredCompilationQuickJitForLoops>false</TieredCompilationQuickJitForLoops>
+    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
   </PropertyGroup>
 
 </Project>

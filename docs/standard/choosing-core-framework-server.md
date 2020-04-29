@@ -21,7 +21,7 @@ Use .NET Framework for your server application when:
 - Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party .NET libraries or NuGet packages not available for .NET Core.
 - Your app uses .NET technologies that aren't available for .NET Core.
-- Your app uses a platform that doesn’t support .NET Core. Windows, macOS, and Linux support .NET Core.
+- Your app uses a platform that doesn't support .NET Core. Windows, macOS, and Linux support .NET Core.
 
 ## When to choose .NET Core
 
@@ -57,15 +57,17 @@ Performance and scalability are especially relevant for microservices architectu
 
 To install applications with dependencies on different versions of .NET, we recommend .NET Core. .NET Core supports side-by-side installation of different versions of the .NET Core runtime on the same machine. This side-by-side installation allows multiple services on the same server, each of them on its own version of .NET Core. It also lowers risks and saves money in application upgrades and IT operations.
 
-Side-by-side installation isn’t possible with .NET Framework. It’s a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
+Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
 
 ## When to choose .NET Framework
 
 .NET Core offers significant benefits for new applications and application patterns. However, .NET Framework continues to be the natural choice for many existing scenarios, and as such, .NET Framework isn't replaced by .NET Core for all server applications.
 
+[!INCLUDE [dotnet-behavioral-differences](../../includes/dotnet-behavioral-differences.md)]
+
 ### Current .NET Framework applications
 
-In most cases, you don’t need to migrate your existing applications to .NET Core. Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.
+In most cases, you don't need to migrate your existing applications to .NET Core. Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.
 
 ### ASP.NET Core on .NET Framework
 
@@ -84,21 +86,21 @@ You need to use .NET Framework only in cases where the libraries or NuGet packag
 
 ### .NET technologies not available for .NET Core
 
-Some .NET Framework technologies aren't available in .NET Core. Some of them might be available in later .NET Core releases. Others don’t apply to the new application patterns targeted by .NET Core and may never be available. The following list shows the most common technologies not found in .NET Core:
+Some .NET Framework technologies aren't available in .NET Core. Some of them might be available in later .NET Core releases. Others don't apply to the new application patterns targeted by .NET Core and may never be available. The following list shows the most common technologies not found in .NET Core:
 
 - ASP.NET Web Forms applications: ASP.NET Web Forms are only available in .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
 
 - ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
 
-- WCF services implementation. Even when there’s a [WCF client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in .NET Framework. This scenario is not part of the current plan for .NET Core, but it’s being considered for the future.
+- WCF services implementation. Even when there's a [WCF client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in .NET Framework. This scenario is not part of the current plan for .NET Core, but it's being considered for the future.
 
 - Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework. There are no plans to bring these technologies to .NET Core.
 
 - Language support: Visual Basic and F# are currently supported in .NET Core, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
-### Platform doesn’t support .NET Core
+### Platform doesn't support .NET Core
 
-Some Microsoft or third-party platforms don’t support .NET Core. Some Azure services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can use the equivalent REST API instead of the client SDK.
+Some Microsoft or third-party platforms don't support .NET Core. Some Azure services provide an SDK not yet available for consumption on .NET Core. This is a transitional circumstance, as all of Azure services use .NET Core. In the meantime, you can use the equivalent REST API instead of the client SDK.
 
 ## See also
 

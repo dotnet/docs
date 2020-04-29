@@ -488,7 +488,11 @@
   - name: Thread-safe collections
     href: collections/thread-safe/  
 - name: Numerics in .NET
-  href: numerics.md
+  items:
+  - name: Overview
+    href: numerics.md
+  - name: SIMD-enabled types
+    href: simd.md
 - name: Dates, times, and time zones
   href: datetime/
 - name: Events

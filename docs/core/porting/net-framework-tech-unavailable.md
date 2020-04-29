@@ -9,7 +9,7 @@ ms.date: 04/30/2019
 
 Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and System.EnterpriseServices. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, see [.NET Core breaking changes](../compatibility/breaking-changes.md).
 
-Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Search the GitHub repositories for .NET Core to see if a particular issue you encounter is by design. If you don't find such an indicator, file an issue in the [dotnet/runtime repository](https://github.com/dotnet/runtime/issues) to ask for specific APIs and technologies. Issues that are porting requests are marked with the [port-to-core](https://github.com/dotnet/runtime/labels/port-to-core) label.
+Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Search the GitHub repositories for .NET Core to see if a particular issue you encounter is by design. If you don't find such an indicator, file an issue in the [dotnet/runtime repository](https://github.com/dotnet/runtime/issues) to ask for specific APIs and technologies.
 
 ## AppDomains
 

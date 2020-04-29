@@ -13,7 +13,7 @@ over a collection. You'll write code that examines every item in
 a collection.
 
 You'll also create iterator methods which are methods that produces an
-iterator for the elements of that class. These can be used for:
+iterator (which is an object that traverses a container, particularly lists) for the elements of that class. These can be used for:
 
 + Performing an action on each item in a collection.
 + Enumerating a custom collection.

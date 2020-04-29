@@ -1,4 +1,4 @@
-### HTTP: HttpClient instances created by IHttpClientFactory log integer HTTP status codes
+### HTTP: HttpClient instances created by IHttpClientFactory log integer status codes
 
 <xref:System.Net.Http.HttpClient> instances created by <xref:System.Net.Http.IHttpClientFactory> log HTTP status codes as integers instead of with status code names.
 

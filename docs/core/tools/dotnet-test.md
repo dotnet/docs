@@ -103,7 +103,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
+  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option. `dotnet test` always run tests from the output directory. You can use <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> to consume test assets in the output directory.
 
 - **`-r|--results-directory <PATH>`**
 

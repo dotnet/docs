@@ -62,7 +62,7 @@ If you need to force compatibility with the old behavior and use textual status 
             services.Remove(descriptor);
         }
 
-        services.AddSingleton<IHttpMessageHandlerBuilderFilter, 
+        services.AddSingleton<IHttpMessageHandlerBuilderFilter,
                               MyLoggingHttpMessageHandlerBuilderFilter>();
     }
     ```

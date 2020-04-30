@@ -21,7 +21,7 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
 Collections typically utilize an equality comparer and/or an ordering comparer. Two constructs are used for comparisons.
 
 <a name="BKMK_Checkingforequality"></a>
-## Checking for equality
+## Check for equality
 
 Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, than items are compared for equality according to the following guidelines:
 
@@ -32,7 +32,7 @@ Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:Sy
 In addition, some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A> constructor.
 
 <a name="BKMK_Determiningsortorder"></a>
-## Determining sort order
+## Determine sort order
 
 Methods such as `BinarySearch` and `Sort` use an ordering comparer for the collection elements. The comparisons can be between elements of the collection, or between an element and a specified value. For comparing objects, there is the concept of a `default comparer` and an `explicit comparer`.
 

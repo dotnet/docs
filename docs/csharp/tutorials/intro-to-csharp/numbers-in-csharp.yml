@@ -68,9 +68,6 @@ items:
     > and the code in the interactive window to see what to fix.
     > That exercise will help you learn the structure of C# code.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Explore order of operations
   durationInMinutes: 7
   content: |
@@ -122,9 +119,6 @@ items:
 
     Select **Run** again to see the results.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Explore integer precision and limits
   durationInMinutes: 5
   content: |
@@ -169,9 +163,6 @@ items:
 
     There are other numeric types with different limits and precision that you
     would use when the `int` type doesn't meet your needs. Let's explore those types of numbers next.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Work with the double type
   durationInMinutes: 5
@@ -231,9 +222,6 @@ items:
     Try other calculations with large numbers, small numbers, multiplication,
     and division using the `double` type.  Try more complicated calculations.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Work with decimal types
   durationInMinutes: 8
   content: |
@@ -281,9 +269,6 @@ items:
     is the radius squared multiplied by PI. One hint: .NET contains a constant
     for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
     You should get an answer between 19 and 20.
 
 - title: Complete challenge
@@ -298,9 +283,6 @@ items:
     ```
 
     Try some other formulas if you'd like.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
     You've completed the "Numbers in C#" interactive tutorial. You can select the **Branches and Loops** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.

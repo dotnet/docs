@@ -133,7 +133,7 @@ In the preceding example, if you don't use the `??` operator, `numbers?.Length <
 The null-conditional member access operator `?.` is also known as the Elvis operator.
 
 > [!NOTE]
-> In C# 8, the null-conditional operators interacts with the [null-forgiving operator](null-forgiving.md) in an unexpected way. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
+> In C# 8, the [null-forgiving operator](null-forgiving.md) terminates the list of preceding null-conditional operations. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
 
 ### Thread-safe delegate invocation
 

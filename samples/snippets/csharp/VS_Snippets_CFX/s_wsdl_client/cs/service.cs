@@ -19,7 +19,7 @@ namespace Microsoft.ServiceModel.Samples
         [OperationContract]
         double Divide(double n1, double n2);
     }
-    
+
     // <Snippet0>
     [ServiceBehavior(Namespace = "http://Microsoft.ServiceModel.Samples")]
     // This service class implements the service contract.

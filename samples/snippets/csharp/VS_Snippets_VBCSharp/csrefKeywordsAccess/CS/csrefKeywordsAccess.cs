@@ -45,7 +45,7 @@ namespace csrefKeywordsAccess
 
     //</snippet1>
 
-    //<snippet2>    
+    //<snippet2>
     public class BaseClass
     {
         int num;
@@ -102,7 +102,7 @@ namespace csrefKeywordsAccess
 
             public Employee(string name, string alias)
             {
-                // Use this to qualify the members of the class 
+                // Use this to qualify the members of the class
                 // instead of the constructor parameters.
                 this.name = name;
                 this.alias = alias;
@@ -174,7 +174,7 @@ namespace csrefKeywordsAccess
         {
             int[] array = new int[100];
 
-            //<snippet5>            
+            //<snippet5>
             public int this[int param]
             {
                 get { return array[param]; }

@@ -9,7 +9,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
 - Reflection-based third-party serializers. These require modifications to your runtime directives file, and are discussed in the next section.  
   
-- Non-reflection based serializers found in the .NET Framework class library. These may require modifications to your runtime directives file, and are discussed in the [Microsoft serializers](#Microsoft) section.  
+- Non-reflection-based serializers found in the .NET Framework class library. These may require modifications to your runtime directives file, and are discussed in the [Microsoft serializers](#Microsoft) section.  
   
 <a name="ThirdParty"></a>
 ## Third-party serializers
@@ -49,17 +49,17 @@ If your app serializes and deserializes objects, you may need to add entries to 
 <Type Name="DataSet" Browse="Required Public" />  
 ```  
   
- Similarly, if you call a constructor such as <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29?displayProperty=nameWithType> and provide an array of additional <xref:System.Type> objects to serialize, as in the following code, the .NET Native compiler cannot resolve these types.  
+ Similarly, if you call a constructor such as <xref:System.Xml.Serialization.XmlSerializer.%23ctor%28System.Type%2CSystem.Type%5B%5D%29> and provide an array of additional <xref:System.Type> objects to serialize, as in the following code, the .NET Native compiler cannot resolve these types.  
   
  [!code-csharp[ProjectN#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#7)]  
   
- You must add entries such as the following for each type to the runtime directives file:  
+Add entries such as the following for each type to the runtime directives file:  
   
 ```xml  
 <Type Name="t" Browse="Required Public" />  
 ```  
   
- For information about the syntax used in the example, see [\<Type> Element](type-element-net-native.md).  
+For information about the syntax used in the example, see [\<Type> Element](type-element-net-native.md).  
   
 ## See also
 

@@ -24,7 +24,7 @@ public class TemperatureReporter : IObserver<Temperature>
    // </Snippet10>
 
    // <Snippet11>
-   public virtual void OnCompleted() 
+   public virtual void OnCompleted()
    {
       Console.WriteLine("Additional temperature data will not be transmitted.");
    }

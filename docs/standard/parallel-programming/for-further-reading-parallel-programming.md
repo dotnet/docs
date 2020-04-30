@@ -16,7 +16,7 @@ The following resources contain additional information about parallel programmin
 
 - The [Parallel Programming with .NET](https://devblogs.microsoft.com/pfxteam/) blog contains many in-depth articles about parallel programming in .NET.
 
-- The [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/ParExtSamples) page contains many samples that demonstrate intermediate and advanced parallel programming techniques.
+- The [Samples for Parallel Programming with the .NET Core & .NET Standard](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel) page contains many samples that demonstrate intermediate and advanced parallel programming techniques.
 
 ## See also
 

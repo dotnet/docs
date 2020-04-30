@@ -29,7 +29,7 @@ XslCompiledTransform xslt = new XslCompiledTransform();
 // Create a resolver and set the credentials to use.
 XmlSecureResolver resolver = new XmlSecureResolver(new XmlUrlResolver(), "http://serverName/data/");
 resolver.Credentials = CredentialCache.DefaultCredentials;
-  
+
 // Load the style sheet.
 xslt.Load("http://serverName/data/xsl/sort.xsl", null, resolver);
 //</snippet2>
@@ -44,7 +44,7 @@ XslCompiledTransform xslt = new XslCompiledTransform();
 // Create a resolver and set the credentials to use.
 XmlSecureResolver resolver = new XmlSecureResolver(new XmlUrlResolver(), "http://serverName/data/");
 resolver.Credentials = CredentialCache.DefaultCredentials;
-  
+
 XmlReader reader = XmlReader.Create("http://serverName/data/xsl/sort.xsl");
 
 // Create the XsltSettings object with script enabled.
@@ -67,9 +67,9 @@ static void XslCompiledTransform_Load4() {
 // Create a resolver and specify the necessary credentials.
 XmlUrlResolver resolver = new XmlUrlResolver();
 System.Net.NetworkCredential myCred;
-myCred  = new System.Net.NetworkCredential(UserName,SecurelyStoredPassword,Domain);  
+myCred  = new System.Net.NetworkCredential(UserName,SecurelyStoredPassword,Domain);
 resolver.Credentials = myCred;
-  
+
 // Load the style sheet.
 XslCompiledTransform xslt = new XslCompiledTransform();
 xslt.Load(new XPathDocument("http://serverName/data/xsl/sort.xsl"), XsltSettings.Default, resolver);
@@ -78,7 +78,7 @@ xslt.Load(new XPathDocument("http://serverName/data/xsl/sort.xsl"), XsltSettings
 
 //==============================//
 // Load with XmlReader
-static void XslCompiledTransform_Load5() {  
+static void XslCompiledTransform_Load5() {
 //<snippet5>
 // Create a reader that contains the style sheet.
 XmlReader reader = XmlReader.Create("titles.xsl");
@@ -92,7 +92,7 @@ xslt.Load(reader);
 
 //==============================//
 // Load with script enabled.
-static void XslCompiledTransform_Load6() {    
+static void XslCompiledTransform_Load6() {
 //<snippet6>
 // Create the XsltSettings object with script enabled.
 XsltSettings settings = new XsltSettings(false,true);
@@ -120,12 +120,12 @@ static void XslCompiledTransform_Load8() {
 	string UserName = "username";
 	string SecurelyStoredPassword = "psswd";
 	string Domain= "domain";
-    
+
 //<snippet8>
 // Create a resolver and specify the necessary credentials.
 XmlSecureResolver resolver = new XmlSecureResolver(new XmlUrlResolver(), "http://serverName/data/");
 System.Net.NetworkCredential myCred;
-myCred  = new System.Net.NetworkCredential(UserName,SecurelyStoredPassword,Domain);  
+myCred  = new System.Net.NetworkCredential(UserName,SecurelyStoredPassword,Domain);
 resolver.Credentials = myCred;
 
 // Create the XslCompiledTransform object and load the style sheet.
@@ -151,7 +151,7 @@ xslt.Load("http://serverName/data/sort.xsl", settings, resolver);
 //</snippet9>
     }
 //==============================//
-// 
+//
 static void XslCompiledTransform_Debug() {
 //<snippet10>
 // Enable XSLT debugging.
@@ -178,12 +178,12 @@ static void Cache() {
 	string UserName = "username";
 	string SecurelyStoredPassword = "psswd";
 	string Domain= "domain";
-    
+
 //<snippet11>
 // Create the credentials.
-NetworkCredential myCred = new NetworkCredential(UserName,SecurelyStoredPassword,Domain); 
-CredentialCache myCache = new CredentialCache(); 
-myCache.Add(new Uri("http://www.contoso.com/"), "Basic", myCred); 
+NetworkCredential myCred = new NetworkCredential(UserName,SecurelyStoredPassword,Domain);
+CredentialCache myCache = new CredentialCache();
+myCache.Add(new Uri("http://www.contoso.com/"), "Basic", myCred);
 myCache.Add(new Uri("http://app.contoso.com/"), "Basic", myCred);
 
 // Set the credentials on the XmlUrlResolver object.

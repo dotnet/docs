@@ -37,8 +37,8 @@ public class Form1 : Form
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.DataSource = dataGridView1.Columns;
 
-        // Configure the DataGridView so that users can manually change 
-        // only the column widths, which are set to fill mode. 
+        // Configure the DataGridView so that users can manually change
+        // only the column widths, which are set to fill mode.
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToResizeRows = false;
@@ -46,7 +46,7 @@ public class Form1 : Form
             DataGridViewRowHeadersWidthSizeMode.DisableResizing;
         dataGridView1.ColumnHeadersHeightSizeMode =
             DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-        dataGridView1.AutoSizeColumnsMode = 
+        dataGridView1.AutoSizeColumnsMode =
             DataGridViewAutoSizeColumnsMode.Fill;
 
         // Configure the top left header cell as a reset button.
@@ -82,7 +82,7 @@ public class Form1 : Form
     }
 
     //<snippet10>
-    // Adds a column to the DataGridView control, binding it to specified 
+    // Adds a column to the DataGridView control, binding it to specified
     // property of the specified type and optionally making it read-only.
     private void AddColumn(
         Type type,
@@ -106,7 +106,7 @@ public class Form1 : Form
             "Browsable(false) attribute, and therefore cannot be bound.");
         }
 
-        // Create and initialize a column, using a combo box column for 
+        // Create and initialize a column, using a combo box column for
         // enumeration properties, a check box column for Boolean properties,
         // and a text box column otherwise.
         DataGridViewColumn column;
@@ -183,7 +183,7 @@ public class Form1 : Form
     {
         if (e.Exception == null) return;
 
-        // If the user-specified value is invalid, cancel the change 
+        // If the user-specified value is invalid, cancel the change
         // and display the error icon in the row header.
         if ((e.Context & DataGridViewDataErrorContexts.Commit) != 0 &&
             (typeof(FormatException).IsAssignableFrom(e.Exception.GetType()) ||
@@ -222,7 +222,7 @@ public class Form1 : Form
         DataGridViewColumn columnToChange =
             dataGridView1.Columns[nameOfColumnToChange];
 
-        // Use reflection to update the value of the column property. 
+        // Use reflection to update the value of the column property.
         propertyToChange.SetValue(columnToChange,
             dataGridView1[nameOfPropertyToChange, e.RowIndex].Value, null);
     }

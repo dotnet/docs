@@ -33,7 +33,7 @@ namespace ConsoleApplication1
                         Console.WriteLine("You have written to the file.");
                     }
                 }
-            }   
+            }
         }
     }
 }

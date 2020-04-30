@@ -10,17 +10,17 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 {
     public partial class SeekStoryboardExample : Page
     {
-    
+
         private Storyboard myStoryboard;
 
         public SeekStoryboardExample()
         {
-        
+
             // Create a name scope for the page.
-            NameScope.SetNameScope(this, new NameScope());        
+            NameScope.SetNameScope(this, new NameScope());
 
             StackPanel myStackPanel = new StackPanel();
-            
+
             // Create a rectangle.
             Rectangle myRectangle = new Rectangle();
             myRectangle.Width = 100;
@@ -29,24 +29,24 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(myRectangle);
-            
-            // Assign the rectangle a name by 
+
+            // Assign the rectangle a name by
             // registering it with the page, so that
             // it can be targeted by storyboard
             // animations.
-            this.RegisterName("myRectangle", myRectangle);           
-            
+            this.RegisterName("myRectangle", myRectangle);
+
             //
             // Create an animation and a storyboard to animate the
             // rectangle.
             //
-            DoubleAnimation myDoubleAnimation = 
-                new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(5)));            
+            DoubleAnimation myDoubleAnimation =
+                new DoubleAnimation(100, 500, new Duration(TimeSpan.FromSeconds(5)));
             Storyboard.SetTargetName(myDoubleAnimation, "myRectangle");
             Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Rectangle.WidthProperty));
             myStoryboard = new Storyboard();
             myStoryboard.Children.Add(myDoubleAnimation);
-            
+
             // Create a buton to begin the Storyboard.
             StackPanel buttonPanel = new StackPanel();
             buttonPanel.Orientation = Orientation.Horizontal;
@@ -61,19 +61,19 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             seekStoryboardButton.Click += new RoutedEventHandler(seekStoryboardButton_Clicked);
             buttonPanel.Children.Add(seekStoryboardButton);
 
-            myStackPanel.Children.Add(buttonPanel);           
-            this.Content = myStackPanel;            
+            myStackPanel.Children.Add(buttonPanel);
+            this.Content = myStackPanel;
         }
-        
+
         // Begins the storyboard.
         private void beginButton_Clicked(object sender, RoutedEventArgs args)
         {
             // Specifying "true" as the second Begin parameter
             // makes this storyboard controllable.
-            myStoryboard.Begin(this, true);          
+            myStoryboard.Begin(this, true);
         }
 
-        // Seek (skip to) one second into the Storboard's active period (Duration). 
+        // Seek (skip to) one second into the Storboard's active period (Duration).
         private void seekStoryboardButton_Clicked(object sender, RoutedEventArgs args)
         {
             // Create time interval to seek to. This TimeSpan is set for one second.
@@ -81,7 +81,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             // Seek (skip to) to one second from the begin time of the Storyboard.
             myStoryboard.Seek(this, myTimeSpan, TimeSeekOrigin.BeginTime);
-        }   
+        }
     }
 }
 // </SnippetSeekStoryboardExampleWholePage>

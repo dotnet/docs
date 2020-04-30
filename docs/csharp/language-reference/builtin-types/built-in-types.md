@@ -41,6 +41,8 @@ int a = 123;
 System.Int32 b = 123;
 ```
 
+The [`void`](void.md) keyword represents the absence of a type. You use it as the return type of a method that doesn't return a value.
+
 ## See also
 
 - [C# reference](../index.md)

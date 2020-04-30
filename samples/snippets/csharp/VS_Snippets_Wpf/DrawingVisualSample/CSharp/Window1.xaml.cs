@@ -15,7 +15,7 @@ namespace SDKSample
          }
      }
 
-    //<Snippet100> 
+    //<Snippet100>
     // Create a host visual derived from the FrameworkElement class.
     // This class provides layout, event handling, and container support for
     // the child visual objects.
@@ -34,9 +34,9 @@ namespace SDKSample
             // Add the event handler for MouseLeftButtonUp.
             this.MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(MyVisualHost_MouseLeftButtonUp);
         }
-        //</Snippet100> 
+        //</Snippet100>
 
-        //<Snippet103> 
+        //<Snippet103>
         // Capture the mouse event and hit test the coordinate point value against
         // the child visual objects.
         void MyVisualHost_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -66,9 +66,9 @@ namespace SDKSample
             // Stop the hit test enumeration of objects in the visual tree.
             return HitTestResultBehavior.Stop;
         }
-        //</Snippet103> 
+        //</Snippet103>
 
-        //<Snippet101> 
+        //<Snippet101>
         // Create a DrawingVisual that contains a rectangle.
         private DrawingVisual CreateDrawingVisualRectangle()
         {
@@ -86,9 +86,9 @@ namespace SDKSample
 
             return drawingVisual;
         }
-        //</Snippet101> 
+        //</Snippet101>
 
-        //<Snippet110> 
+        //<Snippet110>
         // Create a DrawingVisual that contains text.
         private DrawingVisual CreateDrawingVisualText()
         {
@@ -112,7 +112,7 @@ namespace SDKSample
 
             return drawingVisual;
         }
-        //</Snippet110> 
+        //</Snippet110>
 
         // Create a DrawingVisual that contains an ellipse.
         private DrawingVisual CreateDrawingVisualEllipses()
@@ -149,6 +149,6 @@ namespace SDKSample
         }
         //</Snippet102b>
 
-        //</Snippet102> 
+        //</Snippet102>
     }
 }

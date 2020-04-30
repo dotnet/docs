@@ -58,8 +58,8 @@ public class RotatingStrokesAdorner : Adorner
     /// Draw the rotation handle and the outline of
     /// the element.
     /// </summary>
-    /// <param name="finalSize">The final area within the 
-    /// parent that this element should use to arrange 
+    /// <param name="finalSize">The final area within the
+    /// parent that this element should use to arrange
     /// itself and its children.</param>
     /// <returns>The actual size used. </returns>
     protected override Size ArrangeOverride(Size finalSize)
@@ -98,7 +98,7 @@ public class RotatingStrokesAdorner : Adorner
     void rotateHandle_DragDelta(object sender, DragDeltaEventArgs e)
     {
         // Find the angle of which to rotate the shape.  Use the right
-        // triangle that uses the center and the mouse's position 
+        // triangle that uses the center and the mouse's position
         // as vertices for the hypotenuse.
 
         Point pos = Mouse.GetPosition(this);
@@ -118,7 +118,7 @@ public class RotatingStrokesAdorner : Adorner
         // Convert to degrees.
         angle = angle * 180 / Math.PI;
 
-        // If the mouse crosses the vertical center, 
+        // If the mouse crosses the vertical center,
         // find the complementary angle.
         if (deltaY > 0)
         {
@@ -170,7 +170,7 @@ public class RotatingStrokesAdorner : Adorner
     }
 
     /// <summary>
-    /// Gets the strokes of the adorned element 
+    /// Gets the strokes of the adorned element
     /// (in this case, an InkPresenter).
     /// </summary>
     private StrokeCollection AdornedStrokes
@@ -181,8 +181,8 @@ public class RotatingStrokesAdorner : Adorner
         }
     }
 
-    // Override the VisualChildrenCount and 
-    // GetVisualChild properties to interface with 
+    // Override the VisualChildrenCount and
+    // GetVisualChild properties to interface with
     // the adorner's visual collection.
     protected override int VisualChildrenCount
     {

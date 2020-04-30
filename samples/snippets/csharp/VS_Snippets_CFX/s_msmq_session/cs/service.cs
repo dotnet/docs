@@ -15,7 +15,7 @@ using System.Collections.Generic;
 
 namespace Microsoft.ServiceModel.Samples
 {
-    // Define a service contract. 
+    // Define a service contract.
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode=SessionMode.Required)]
     public interface IOrderTaker
     {
@@ -166,7 +166,7 @@ namespace Microsoft.ServiceModel.Samples
                 Console.ReadLine();
 
                 // Close the ServiceHostBase to shutdown the service.
-                serviceHost.Close(); 
+                serviceHost.Close();
             }
         }
     }

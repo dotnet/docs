@@ -7,21 +7,21 @@ public class Example
    {
       string str1 = "Aa";
       string str2 = "A" + new String('\u0000', 3) + "a";
-      Console.WriteLine("Comparing '{0}' ({1}) and '{2}' ({3}):", 
+      Console.WriteLine("Comparing '{0}' ({1}) and '{2}' ({3}):",
                         str1, ShowBytes(str1), str2, ShowBytes(str2));
       Console.WriteLine("   With String.Compare:");
-      Console.WriteLine("      Current Culture: {0}", 
+      Console.WriteLine("      Current Culture: {0}",
                         String.Compare(str1, str2, StringComparison.CurrentCulture));
-      Console.WriteLine("      Invariant Culture: {0}", 
+      Console.WriteLine("      Invariant Culture: {0}",
                         String.Compare(str1, str2, StringComparison.InvariantCulture));
 
       Console.WriteLine("   With String.Equals:");
-      Console.WriteLine("      Current Culture: {0}", 
+      Console.WriteLine("      Current Culture: {0}",
                         String.Equals(str1, str2, StringComparison.CurrentCulture));
-      Console.WriteLine("      Invariant Culture: {0}", 
+      Console.WriteLine("      Invariant Culture: {0}",
                         String.Equals(str1, str2, StringComparison.InvariantCulture));
    }
-   
+
    private static string ShowBytes(string str)
    {
       string hexString = String.Empty;

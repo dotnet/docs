@@ -32,7 +32,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             // Start the asychronous request for DNS information.
             IAsyncResult result = Dns.BeginGetHostEntry(args[0], null, null);
             Console.WriteLine("Processing request for information...");
-            
+
             // Poll for completion information.
             // Print periods (".") until the operation completes.
             while (result.IsCompleted != true)
@@ -42,7 +42,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             // The operation is complete. Process the results.
             // Print a new line.
             Console.WriteLine();
-            try 
+            try
             {
                 IPHostEntry host = Dns.EndGetHostEntry(result);
                 string[] aliases = host.Aliases;

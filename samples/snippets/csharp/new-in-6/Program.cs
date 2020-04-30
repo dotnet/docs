@@ -13,10 +13,10 @@ namespace NewInCSharp6
             var person = new NewStyle.Student("first", "last");
 
             // <NullConditional>
-            var first = person?.FirstName; 
+            var first = person?.FirstName;
             // </NullConditional>
 
-            // <NullCoalescing>                
+            // <NullCoalescing>
             first = person?.FirstName ?? "Unspecified";
             // </NullCoalescing>
 

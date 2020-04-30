@@ -28,7 +28,7 @@ class Program
                     Console.WriteLine($"{unAuthTop.Message}");
                 }
             }
-            
+
             foreach (var di in diTop.EnumerateDirectories("*"))
             {
                 try

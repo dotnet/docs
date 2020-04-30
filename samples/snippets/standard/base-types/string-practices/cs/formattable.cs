@@ -6,7 +6,7 @@ class Program
     static void Main()
     {
         Decimal value = 126.03m;
-        FormattableString amount = $"The amount is {value:C}"; 
+        FormattableString amount = $"The amount is {value:C}";
         Console.WriteLine(amount.ToString());
         Console.WriteLine(amount.ToString(new CultureInfo("fr-FR")));
         Console.WriteLine(FormattableString.Invariant(amount));

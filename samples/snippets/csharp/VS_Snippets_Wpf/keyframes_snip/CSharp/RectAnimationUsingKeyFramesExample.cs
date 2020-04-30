@@ -11,7 +11,7 @@ namespace Microsoft.Samples.KeyFrameExamples
     /// <summary>
     /// This example shows how to use the RectAnimationUsingKeyFrames class to
     /// animate the position and size of a rectangle.
-    /// Key frame animations enable you to create complex animations 
+    /// Key frame animations enable you to create complex animations
     /// by specifying multiple destination values
     /// and controlling the animation's interpolation method.
     /// </summary>
@@ -51,11 +51,11 @@ namespace Microsoft.Samples.KeyFrameExamples
 
             // Create a RectAnimationUsingKeyFrames to
             // animate the RectangleGeometry.
-            RectAnimationUsingKeyFrames rectAnimation 
+            RectAnimationUsingKeyFrames rectAnimation
                 = new RectAnimationUsingKeyFrames();
             rectAnimation.Duration = TimeSpan.FromSeconds(6);
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             rectAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Animate position, width, and height in first 2 seconds. LinearRectKeyFrame creates
@@ -66,7 +66,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))) // KeyTime
                 );
 
-            // In the next half second, change height to 10. DiscreteRectKeyFrame creates a 
+            // In the next half second, change height to 10. DiscreteRectKeyFrame creates a
             // sudden "jump" between values.
             rectAnimation.KeyFrames.Add(
                 new DiscreteRectKeyFrame(
@@ -74,9 +74,9 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2.5))) // KeyTime
                 );
 
-            // In the final 2 seconds of the animation, go back to the starting position, width, and height.  
-            // Spline key frames like SplineRectKeyFrame creates a variable transition between values depending 
-            // on the KeySpline property. In this example, the animation starts off slow but toward the end of 
+            // In the final 2 seconds of the animation, go back to the starting position, width, and height.
+            // Spline key frames like SplineRectKeyFrame creates a variable transition between values depending
+            // on the KeySpline property. In this example, the animation starts off slow but toward the end of
             // the time segment, it speeds up exponentially.
             rectAnimation.KeyFrames.Add(
                 new SplineRectKeyFrame(

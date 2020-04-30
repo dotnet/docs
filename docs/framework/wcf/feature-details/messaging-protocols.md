@@ -560,7 +560,7 @@ A WCF endpoint configured to use MTOM will always send MTOM-encoded messages. Ev
 WCF uses the following policy assertion to indicate MTOM usage by endpoint:
 
 ```xml
-<wsoma:OptimizedMimeSerialization ... />
+<wsoma:OptimizedMimeSerialization />
 ```
 
 - R4211: The preceding policy assertion has an Endpoint Policy Subject and specifies that all messages sent to and received from the endpoint must be optimized using MTOM.

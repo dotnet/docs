@@ -6,10 +6,10 @@ public class Example
 {
    public static void Main()
    {
-      Encoding enc = Encoding.GetEncoding("us-ascii", 
-                                          new EncoderExceptionFallback(), 
+      Encoding enc = Encoding.GetEncoding("us-ascii",
+                                          new EncoderExceptionFallback(),
                                           new DecoderExceptionFallback());
-      
+
       string str1 = "\u24C8 \u2075 \u221E";
       Console.WriteLine(str1);
       foreach (var ch in str1)
@@ -30,13 +30,13 @@ public class Example
       catch (EncoderFallbackException e) {
          Console.Write("Exception: ");
          if (e.IsUnknownSurrogate())
-            Console.WriteLine("Unable to encode surrogate pair 0x{0:X4} 0x{1:X3} at index {2}.", 
-                              Convert.ToUInt16(e.CharUnknownHigh), 
-                              Convert.ToUInt16(e.CharUnknownLow), 
+            Console.WriteLine("Unable to encode surrogate pair 0x{0:X4} 0x{1:X3} at index {2}.",
+                              Convert.ToUInt16(e.CharUnknownHigh),
+                              Convert.ToUInt16(e.CharUnknownLow),
                               e.Index);
          else
-            Console.WriteLine("Unable to encode 0x{0:X4} at index {1}.", 
-                              Convert.ToUInt16(e.CharUnknown), 
+            Console.WriteLine("Unable to encode 0x{0:X4} at index {1}.",
+                              Convert.ToUInt16(e.CharUnknown),
                               e.Index);
          return;
       }
@@ -52,7 +52,7 @@ public class Example
                Console.Write("{0} ", Convert.ToUInt16(ch).ToString("X4"));
 
             Console.WriteLine();
-         } 
+         }
       }
       catch (DecoderFallbackException e) {
          Console.Write("Unable to decode byte(s) ");
@@ -66,6 +66,6 @@ public class Example
 // The example displays the following output:
 //       Ⓢ ⁵ ∞
 //       24C8 0020 2075 0020 221E
-//       
+//
 //       Exception: Unable to encode 0x24C8 at index 0.
 // </Snippet4>

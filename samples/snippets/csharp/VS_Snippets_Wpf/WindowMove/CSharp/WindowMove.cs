@@ -2,18 +2,18 @@
  *
  * File: WindowMove.cs
  *
- * Description:  
- *       Moves a WCP window from a random location on the desktop to the 
- *       top-left corner of the desktop. This is accomplished by obtaining an 
- *       automation element based on the text value of the window, 
+ * Description:
+ *       Moves a WCP window from a random location on the desktop to the
+ *       top-left corner of the desktop. This is accomplished by obtaining an
+ *       automation element based on the text value of the window,
  *       and then obtaining a TransformPattern object from this element.
- *       If the element is moveable, rects for both the element and the 
+ *       If the element is moveable, rects for both the element and the
  *       desktop are created.
  *       The top and left coordinates needed to move the parent window are set
  *       and, if not out of range, the window is moved to the new coordinates.
- * 
+ *
  * Programming Elements:
- *    This sample demonstrates the following UI Automation programming elements 
+ *    This sample demonstrates the following UI Automation programming elements
  *    from the System.Windows.Automation namespace:
  *       Automation class
  *           ScopeFlags
@@ -33,12 +33,12 @@
  *           Move() method
  *       AutomationProperty class
  *           ToString() method
- *         
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -106,18 +106,18 @@ namespace SDKSample
                     return;
                 }
                 Feedback("Found target.");
-                
+
                 // find current location of our window
                 targetLocation = targetWindow.Current.BoundingRectangle.Location;
 
                 // Obtain required control patterns from our automation element
-                windowPattern = GetControlPattern(targetWindow, 
+                windowPattern = GetControlPattern(targetWindow,
                     WindowPattern.Pattern) as WindowPattern;
 
                 if (windowPattern == null) return;
 
                 // Make sure our window is usable.
-                // WaitForInputIdle will return before the specified time 
+                // WaitForInputIdle will return before the specified time
                 // if the window is ready.
                 if (false == windowPattern.WaitForInputIdle(10000))
                 {
@@ -131,8 +131,8 @@ namespace SDKSample
                     targetWindow, WindowPattern.Pattern, TreeScope.Element);
 
                 // Obtain required control patterns from our automation element
-                transformPattern = 
-                    GetControlPattern(targetWindow, TransformPattern.Pattern) 
+                transformPattern =
+                    GetControlPattern(targetWindow, TransformPattern.Pattern)
                     as TransformPattern;
 
                 if (transformPattern == null) return;
@@ -256,7 +256,7 @@ namespace SDKSample
         //<Snippet1300>
         /// <summary>
         /// Handles the 'Move' button invoked event.
-        /// By default, the Move method does not allow an object 
+        /// By default, the Move method does not allow an object
         /// to be moved completely off-screen.
         /// </summary>
         /// <param name="src">The object that raised the event.</param>
@@ -406,12 +406,12 @@ namespace SDKSample
 
             if (false == ae.TryGetCurrentPattern(ap, out oPattern))
             {
-                Feedback("Object does not support the " + 
+                Feedback("Object does not support the " +
                     ap.ProgrammaticName.ToString() + " Pattern");
                 return null;
             }
 
-            Feedback("Object supports the " + 
+            Feedback("Object supports the " +
                 ap.ProgrammaticName.ToString() + " Pattern.");
 
             return oPattern;
@@ -423,25 +423,25 @@ namespace SDKSample
         /// <param name="ae">The automation element of interest.</param>
         /// <param name="ap">The control pattern of interest.</param>
         /// <param name="ts">The tree scope of interest.</param>
-        private void RegisterForEvents(AutomationElement ae, 
+        private void RegisterForEvents(AutomationElement ae,
             AutomationPattern ap, TreeScope ts)
         {
             if (ap.Id == WindowPattern.Pattern.Id)
-            {                 
-                // The WindowPattern Exposes an element's ability 
+            {
+                // The WindowPattern Exposes an element's ability
                 // to change its on-screen position or size.
 
-                // The following code shows an example of listening for the 
+                // The following code shows an example of listening for the
                 // BoundingRectangle property changed event on the window.
                 Feedback("Start listening for WindowMove events for the control.");
 
-                // Define an AutomationPropertyChangedEventHandler delegate to 
+                // Define an AutomationPropertyChangedEventHandler delegate to
                 // listen for window moved events.
-                AutomationPropertyChangedEventHandler moveHandler = 
+                AutomationPropertyChangedEventHandler moveHandler =
                     new AutomationPropertyChangedEventHandler(OnWindowMove);
 
                 Automation.AddAutomationPropertyChangedEventHandler(
-                    ae, ts, moveHandler, 
+                    ae, ts, moveHandler,
                     AutomationElement.BoundingRectangleProperty);
             }
         }
@@ -450,7 +450,7 @@ namespace SDKSample
         /// Window shut down event handler.
         /// </summary>
         /// <param name="e">The exit event arguments.</param>
-        protected override void OnExit(ExitEventArgs e)        
+        protected override void OnExit(ExitEventArgs e)
         {
             Automation.RemoveAllEventHandlers();
             base.OnExit(e);

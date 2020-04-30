@@ -18,10 +18,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public AutoReverseExample()
         {
-        
+
             // Create a name scope for the page.
             NameScope.SetNameScope(this, new NameScope());
-            
+
             StackPanel myStackPanel = new StackPanel();
             myStackPanel.Margin = new Thickness( 20 );
 

@@ -140,7 +140,7 @@ A `<PackageReference>` item element specifies a [NuGet dependency in the project
 
 #### Version
 
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet version range](/nuget/concepts/package-versioning#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
 #### IncludeAssets, ExcludeAssets, and PrivateAssets
 

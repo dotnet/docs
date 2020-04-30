@@ -29,7 +29,7 @@ Windows Forms
 
 #### Affected APIs
 
-- Not detectable via API analysis.
+- None.
 
 <!--
 

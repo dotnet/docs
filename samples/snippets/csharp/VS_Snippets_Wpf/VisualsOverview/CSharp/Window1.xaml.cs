@@ -20,7 +20,7 @@ namespace SDKSample
         }
      }
 
-    //<Snippet100> 
+    //<Snippet100>
     // Create a visual object derived from DrawingVisual.
     class MyRectangle : DrawingVisual
     {
@@ -78,7 +78,7 @@ namespace SDKSample
             FindDrawingVisual(this, e.GetPosition(this));
         }
 
-        //<Snippet101> 
+        //<Snippet101>
         // Enumerate all the descendants of the visual object.
         static public void EnumVisual(Visual myVisual)
         {

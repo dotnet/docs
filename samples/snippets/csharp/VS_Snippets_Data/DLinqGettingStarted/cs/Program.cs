@@ -53,7 +53,7 @@ namespace cs_gettingstarted
         {
             // <Snippet3>
             Northwnd nw = new Northwnd(@"northwnd.mdf");
-            
+
             var cityNameQuery =
                 from cust in nw.Customers
                 where cust.City.Contains("London")

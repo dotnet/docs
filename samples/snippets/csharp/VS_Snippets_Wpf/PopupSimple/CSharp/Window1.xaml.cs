@@ -20,14 +20,14 @@ namespace Popup_Properties_Sample
             InitializeComponent();
         }
 
-        // Sample event handler:  
+        // Sample event handler:
         private void DisplayPopup(object sender, RoutedEventArgs e)
         {
             myPopupText.Text = myTextBox.Text;
             myPopup.IsOpen = true;
             myPopup.StaysOpen = false;
         }
-        
+
         // Used in UIElement.IsFocused.
         //<SnippetIsFocused>
         private void setColors(object sender, RoutedEventArgs e)
@@ -35,8 +35,8 @@ namespace Popup_Properties_Sample
             if (myTextBox.IsFocused) myTextBox.Foreground = Brushes.Brown;
         }
         //</SnippetIsFocused>
- 
-        //<SnippetCreatePopupCode>   
+
+        //<SnippetCreatePopupCode>
         private void CreatePopup(object sender, RoutedEventArgs e)
         {
             //<SnippetCreatePopup>

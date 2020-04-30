@@ -19,7 +19,7 @@ public class Example
                for (int ctr = 1; ctr <= match.Groups.Count - 1; ctr++)
                {
                   if (match.Groups[ctr].Success)
-                     Console.WriteLine("Group {0}: {1}", 
+                     Console.WriteLine("Group {0}: {1}",
                                        ctr, match.Groups[ctr].Value);
                   else
                      Console.WriteLine("Group {0}: <no match>", ctr);
@@ -27,7 +27,7 @@ public class Example
             }
          }
          Console.WriteLine();
-      }      
+      }
    }
 }
 // The example displays the following output:
@@ -35,7 +35,7 @@ public class Example
 //       Group 1: AA
 //       Group 2: 22
 //       Group 3: ZZ
-//       
+//
 //       Match in AABB: AABB
 //       Group 1: AA
 //       Group 2: <no match>

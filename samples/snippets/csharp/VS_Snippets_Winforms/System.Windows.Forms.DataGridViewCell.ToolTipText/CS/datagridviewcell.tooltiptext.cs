@@ -23,15 +23,15 @@ class Form1 : Form
         this.dataGridView1.Columns[4].Name = "Rating";
 
         // Populate the rows.
-        object[] row1 = new object[]{"Meatloaf", 
+        object[] row1 = new object[]{"Meatloaf",
             "Main Dish", "ground beef", new DateTime(2000, 3, 23), "*"};
-        object[] row2 = new object[]{"Key Lime Pie", 
+        object[] row2 = new object[]{"Key Lime Pie",
             "Dessert", "lime juice, evaporated milk", new DateTime(2002, 4, 12), "****"};
-        object[] row3 = new object[]{"Orange-Salsa Pork Chops", 
+        object[] row3 = new object[]{"Orange-Salsa Pork Chops",
             "Main Dish", "pork chops, salsa, orange juice", new DateTime(2000, 8, 9), "****"};
-        object[] row4 = new object[]{"Black Bean and Rice Salad", 
+        object[] row4 = new object[]{"Black Bean and Rice Salad",
             "Salad", "black beans, brown rice", new DateTime(1999, 5, 7), "****"};
-        object[] row5 = new object[]{"Chocolate Cheesecake", 
+        object[] row5 = new object[]{"Chocolate Cheesecake",
             "Dessert", "cream cheese", new DateTime(2003, 3, 12), "***"};
         object[] row6 = new object[]{"Black Bean Dip", "Appetizer",
             "black beans, sour cream", new DateTime(2003, 12, 23), "***"};
@@ -48,16 +48,16 @@ class Form1 : Form
 
     //<Snippet1>
     // Sets the ToolTip text for cells in the Rating column.
-    void dataGridView1_CellFormatting(object sender, 
+    void dataGridView1_CellFormatting(object sender,
         DataGridViewCellFormattingEventArgs e)
     {
         if ( (e.ColumnIndex == this.dataGridView1.Columns["Rating"].Index)
             && e.Value != null )
         {
-            DataGridViewCell cell = 
+            DataGridViewCell cell =
                 this.dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
             if (e.Value.Equals("*"))
-            {                
+            {
                 cell.ToolTipText = "very bad";
             }
             else if (e.Value.Equals("**"))

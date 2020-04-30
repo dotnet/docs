@@ -11,18 +11,18 @@ namespace WsdlExporterSample
         {
 	        // <Snippet1>
             WsdlExporter exporter = new WsdlExporter();
-            // </Snippet1>   
+            // </Snippet1>
             // <Snippet2>
             exporter.PolicyVersion = PolicyVersion.Policy15;
             // </Snippet2>
-          
+
             // <Snippet3>
             ServiceEndpoint [] myServiceEndpoints = new ServiceEndpoint[2];
             ContractDescription myDescription = new ContractDescription ("myContract");
             myServiceEndpoints[0] = new ServiceEndpoint(myDescription,new BasicHttpBinding(),new EndpointAddress("http://localhost/myservice"));
             myServiceEndpoints[1] = new ServiceEndpoint(myDescription,new BasicHttpBinding(),new EndpointAddress("http://localhost/myservice"));
             // </Snippet3>
-            
+
             // <Snippet4>
             // Export all endpoints for each endpoint in collection.
             foreach (ServiceEndpoint endpoint in myServiceEndpoints)

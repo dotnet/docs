@@ -10,7 +10,7 @@ public class Person
 
    private string fname;
    private string lname;
-   
+
    public override string ToString() => $"{fname} {lname}".Trim();
    public void DisplayName() => Console.WriteLine(ToString());
 }

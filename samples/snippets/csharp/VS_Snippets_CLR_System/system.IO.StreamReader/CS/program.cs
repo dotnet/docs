@@ -17,7 +17,7 @@ class Test
             Console.WriteLine("first 15 characters:");
             Console.WriteLine(c);
             // writes - "abcdefghijklmno"
-            
+
             sr.DiscardBufferedData();
             sr.BaseStream.Seek(2, SeekOrigin.Begin);
             Console.WriteLine("\nBack to offset 2 and read to end: ");

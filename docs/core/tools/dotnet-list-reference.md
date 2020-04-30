@@ -13,7 +13,11 @@ ms.date: 02/14/2020
 
 ## Synopsis
 
-`dotnet list [<PROJECT>|<SOLUTION>] reference [-h|--help]`
+```dotnetcli
+dotnet list [<PROJECT>|<SOLUTION>] reference
+
+dotnet list -h|--help
+```
 
 ## Description
 

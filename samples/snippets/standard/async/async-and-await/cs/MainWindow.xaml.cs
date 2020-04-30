@@ -24,12 +24,12 @@ namespace AsyncFirstExample
         }
 
         // Three things to note in the signature:
-        //  - The method has an async modifier. 
+        //  - The method has an async modifier.
         //  - The return type is Task or Task<T>. (See "Return Types" section.)
         //    Here, it is Task<int> because the return statement returns an integer.
         //  - The method name ends in "Async."
         async Task<int> AccessTheWebAsync()
-        { 
+        {
             // You need to add a reference to System.Net.Http to declare client.
             var client = new HttpClient();
 
@@ -43,7 +43,7 @@ namespace AsyncFirstExample
             // The await operator suspends AccessTheWebAsync.
             //  - AccessTheWebAsync can't continue until getStringTask is complete.
             //  - Meanwhile, control returns to the caller of AccessTheWebAsync.
-            //  - Control resumes here when getStringTask is complete. 
+            //  - Control resumes here when getStringTask is complete.
             //  - The await operator then retrieves the string result from getStringTask.
             string urlContents = await getStringTask;
 

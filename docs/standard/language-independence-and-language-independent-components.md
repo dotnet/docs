@@ -521,7 +521,7 @@ The following example defines a `DescriptionAttribute` class that derives from <
 
 ## The CLSCompliantAttribute attribute
 
-The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a program element complies with the Common Language Specification. The <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29?displayProperty=nameWithType> constructor includes a single required parameter, `isCompliant`, that indicates whether the program element is CLS-compliant.
+The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a program element complies with the Common Language Specification. The <xref:System.CLSCompliantAttribute.%23ctor%28System.Boolean%29> constructor includes a single required parameter, `isCompliant`, that indicates whether the program element is CLS-compliant.
 
 At compile time, the compiler detects non-compliant elements that are presumed to be CLS-compliant and emits a warning. The compiler does not emit warnings for types or members that are explicitly declared to be non-compliant.
 

@@ -266,7 +266,7 @@ namespace SDKSamples
             return;
          // Ignore all non-checked events.
          if (btn.IsChecked == false)
-            return;     
+            return;
 
          switch (btn.Name)
          {
@@ -300,7 +300,7 @@ namespace SDKSamples
 
       // Some common font sizes.
       public static double[] CommonFontSizes = new double[] {
-         3.0d, 4.0d, 5.0d, 6.0d, 6.5d, 7.0d, 7.5d, 8.0d, 8.5d, 9.0d,  
+         3.0d, 4.0d, 5.0d, 6.0d, 6.5d, 7.0d, 7.5d, 8.0d, 8.5d, 9.0d,
          9.5d, 10.0d, 10.5d, 11.0d, 11.5d, 12.0d, 12.5d, 13.0d, 13.5d, 14.0d,
          15.0d, 16.0d, 17.0d, 18.0d, 19.0d, 20.0d, 22.0d, 24.0d, 26.0d, 28.0d,
          30.0d, 32.0d, 34.0d, 36.0d, 38.0d, 40.0d, 44.0d, 48.0d, 52.0d, 56.0d,

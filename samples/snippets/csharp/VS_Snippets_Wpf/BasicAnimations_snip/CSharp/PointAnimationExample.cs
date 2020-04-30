@@ -9,7 +9,7 @@ using System.Windows.Media;
 namespace SDKSamples
 {
     // This example shows how to use PointAnimation to animate the
-    // position of an ellipse by animating the Center property of an 
+    // position of an ellipse by animating the Center property of an
     // EllipseGeometry. PointAnimation is used because the Center property
     // takes a Point value.
     public class PointAnimationExample : Page
@@ -39,7 +39,7 @@ namespace SDKSamples
             PointAnimation myPointAnimation = new PointAnimation();
             myPointAnimation.Duration = TimeSpan.FromSeconds(2);
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             myPointAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the From and To properties of the animation.

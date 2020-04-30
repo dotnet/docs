@@ -28,7 +28,7 @@ public class ArrivalsMonitor : IObserver<BaggageInfo>
       flightInfos.Clear();
    }
 
-   public virtual void OnCompleted() 
+   public virtual void OnCompleted()
    {
       flightInfos.Clear();
    }
@@ -40,7 +40,7 @@ public class ArrivalsMonitor : IObserver<BaggageInfo>
    }
 
    // Update information.
-   public virtual void OnNext(BaggageInfo info) 
+   public virtual void OnNext(BaggageInfo info)
    {
       bool updated = false;
 
@@ -48,7 +48,7 @@ public class ArrivalsMonitor : IObserver<BaggageInfo>
       if (info.Carousel == 0) {
          var flightsToRemove = new List<string>();
          string flightNo = String.Format("{0,5}", info.FlightNumber);
-         
+
          foreach (var flightInfo in flightInfos) {
             if (flightInfo.Substring(21, 5).Equals(flightNo)) {
                flightsToRemove.Add(flightInfo);

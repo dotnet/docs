@@ -8,7 +8,7 @@ namespace SDKSample
     public partial class FindDialogBox : Window
     {
         public event TextFoundEventHandler TextFound;
-        
+
         protected virtual void OnTextFound()
         {
             TextFoundEventHandler textFound = this.TextFound;
@@ -79,7 +79,7 @@ namespace SDKSample
             {
                 MessageBoxResult result = MessageBox.Show("Nmore matches found. Start at beginning?", "Find", MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.No) return;
-                
+
                 // Reset
                 this.matchIndex = 0;
             }

@@ -12,7 +12,7 @@ using System.Windows.Forms.Design;
 // <snippet430>
 namespace MarqueeControlLibrary.Design
 {
-    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")] 
+    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class MarqueeBorderDesigner : ParentControlDesigner
     {
         // </snippet430>
@@ -52,7 +52,7 @@ namespace MarqueeControlLibrary.Design
         protected override void PreFilterProperties(IDictionary properties)
         {
             base.PreFilterProperties(properties);
-            
+
             if (properties.Contains("Padding"))
             {
                 properties.Remove("Padding");

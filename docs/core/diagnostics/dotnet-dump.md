@@ -32,7 +32,7 @@ The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux 
 
 - **`--version`**
 
-  Displays the version of the dotnet-counters utility.
+  Displays the version of the dotnet-dump utility.
 
 - **`-h|--help`**
 

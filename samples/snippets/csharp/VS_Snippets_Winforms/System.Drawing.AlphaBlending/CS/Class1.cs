@@ -39,11 +39,11 @@ public class SystemDrawingAlphaBlending
 
         // Initialize the color matrix.
         // Note the value 0.8 in row 4, column 4.
-        float[][] matrixItems ={ 
+        float[][] matrixItems ={
            new float[] {1, 0, 0, 0, 0},
            new float[] {0, 1, 0, 0, 0},
            new float[] {0, 0, 1, 0, 0},
-           new float[] {0, 0, 0, 0.8f, 0}, 
+           new float[] {0, 0, 0, 0.8f, 0},
            new float[] {0, 0, 0, 0, 1}};
         ColorMatrix colorMatrix = new ColorMatrix(matrixItems);
 
@@ -66,7 +66,7 @@ public class SystemDrawingAlphaBlending
         e.Graphics.DrawImage(
            bitmap,
            new Rectangle(30, 0, iWidth, iHeight),  // destination rectangle
-           0.0f,                          // source rectangle x 
+           0.0f,                          // source rectangle x
            0.0f,                          // source rectangle y
            iWidth,                        // source rectangle width
            iHeight,                       // source rectangle height
@@ -138,12 +138,12 @@ public class SystemDrawingAlphaBlending
         // Fill an ellipse using a red brush that has an alpha value of 160.
         bitmapGraphics.FillEllipse(redBrush, 0, 0, 150, 70);
 
-        // Fill a second ellipse using a green brush that has an alpha value of 160. 
-        // The green ellipse overlaps the red ellipse, but the green is not 
+        // Fill a second ellipse using a green brush that has an alpha value of 160.
+        // The green ellipse overlaps the red ellipse, but the green is not
         // blended with the red.
         bitmapGraphics.FillEllipse(greenBrush, 30, 30, 150, 70);
 
-        // Set the compositing quality of the form's Graphics object. 
+        // Set the compositing quality of the form's Graphics object.
         e.Graphics.CompositingQuality = CompositingQuality.GammaCorrected;
 
         // Draw a multicolored background.

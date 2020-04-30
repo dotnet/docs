@@ -23,7 +23,7 @@ namespace KeywordsMethodParams
     //<snippet2>
     class CS0663_Example
     {
-        // Compiler error CS0663: "Cannot define overloaded 
+        // Compiler error CS0663: "Cannot define overloaded
         // methods that differ only on ref and out".
         public void SampleMethod(out int i) { }
         public void SampleMethod(ref int i) { }
@@ -84,7 +84,7 @@ namespace KeywordsMethodParams
 
         static void Main()
         {
-            // You can send a comma-separated list of arguments of the 
+            // You can send a comma-separated list of arguments of the
             // specified type.
             UseParams(1, 2, 3, 4);
             UseParams2(1, 'a', "test");
@@ -105,7 +105,7 @@ namespace KeywordsMethodParams
             // array cannot be converted into an integer array.
             //UseParams(myObjArray);
 
-            // The following call does not cause an error, but the entire 
+            // The following call does not cause an error, but the entire
             // integer array becomes the first element of the params array.
             UseParams2(myIntArray);
         }
@@ -114,7 +114,7 @@ namespace KeywordsMethodParams
     Output:
         1 2 3 4
         1 a test
-               
+
         5 6 7 8 9
         2 b test again
         System.Int32[]
@@ -158,7 +158,7 @@ namespace KeywordsMethodParams
     {
         static void ChangeByReference(ref Product itemRef)
         {
-            // The following line changes the address that is stored in  
+            // The following line changes the address that is stored in
             // parameter itemRef. Because itemRef is a ref parameter, the
             // address that is stored in variable item in Main also is changed.
             itemRef = new Product("Stapler", 99999);
@@ -194,7 +194,7 @@ namespace KeywordsMethodParams
         public int ItemID { get; set; }
     }
 
-    // Output: 
+    // Output:
     //Original values in Main.  Name: Fasteners, ID: 54321
 
     //Back in Main.  Name: Stapler, ID: 12345

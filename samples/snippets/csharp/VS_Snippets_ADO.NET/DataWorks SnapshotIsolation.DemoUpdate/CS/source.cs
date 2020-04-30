@@ -9,7 +9,7 @@ class Program
     {
         // <Snippet1>
         // Assumes GetConnectionString returns a valid connection string
-        // where pooling is turned off by setting Pooling=False;. 
+        // where pooling is turned off by setting Pooling=False;.
         string connectionString = GetConnectionString();
         using (SqlConnection connection1 = new SqlConnection(connectionString))
         {
@@ -29,7 +29,7 @@ class Program
             {
                 Console.WriteLine("ALLOW_SNAPSHOT_ISOLATION ON failed: {0}", ex.Message);
             }
-            // Create a table 
+            // Create a table
             command1.CommandText =
                 "IF EXISTS "
                 + "(SELECT * FROM sys.tables "
@@ -63,7 +63,7 @@ class Program
                 Console.WriteLine(ex.Message);
             }
 
-            // Begin, but do not complete, a transaction 
+            // Begin, but do not complete, a transaction
             // using the Snapshot isolation level.
             SqlTransaction transaction1 = null;
             try
@@ -162,9 +162,9 @@ class Program
 
     static private string GetConnectionString()
     {
-        // To avoid storing the connection string in your code, 
-        // you can retrieve it from a configuration file, using the 
-        // System.Configuration.ConfigurationSettings.AppSettings property 
+        // To avoid storing the connection string in your code,
+        // you can retrieve it from a configuration file, using the
+        // System.Configuration.ConfigurationSettings.AppSettings property
         return "Data Source=(local);Initial Catalog=AdventureWorks;"
             + "Integrated Security=SSPI;Pooling=false";
     }

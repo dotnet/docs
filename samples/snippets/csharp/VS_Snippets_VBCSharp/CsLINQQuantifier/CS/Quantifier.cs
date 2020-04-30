@@ -45,7 +45,7 @@ namespace Sandbox
                 //
                 // Kim's market
             }
-            // </SnippetAll> 
+            // </SnippetAll>
         }
 
         static class Any
@@ -81,7 +81,7 @@ namespace Sandbox
                 // Kim's market
                 // Adam's market
             }
-            // </SnippetAny> 
+            // </SnippetAny>
         }
 
         static class Contains
@@ -117,7 +117,7 @@ namespace Sandbox
                 // Emily's market
                 // Adam's market
             }
-            // </SnippetContains> 
+            // </SnippetContains>
         }
     }
 }

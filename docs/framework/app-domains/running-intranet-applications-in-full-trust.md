@@ -31,4 +31,4 @@ This new behavior is the default for intranet assemblies. You can return to the 
   
 ## See also
 
-- [Programming with Assemblies](../../standard/assembly/program.md)
+- [Programming with Assemblies](../../standard/assembly/index.md)

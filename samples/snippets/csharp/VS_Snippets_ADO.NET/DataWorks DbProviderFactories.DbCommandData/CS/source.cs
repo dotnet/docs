@@ -17,7 +17,7 @@ class Program
 
     // <Snippet1>
     // Takes a DbConnection and creates a DbCommand to retrieve data
-    // from the Categories table by executing a DbDataReader. 
+    // from the Categories table by executing a DbDataReader.
     static void DbCommandSelect(DbConnection connection)
     {
         string queryString =
@@ -82,8 +82,8 @@ class Program
         return null;
     }
 
-    // Return the connection string for the specified provider. 
-    // If there are multiple connection strings for the same 
+    // Return the connection string for the specified provider.
+    // If there are multiple connection strings for the same
     // provider, the first one found is returned.
     // Returns null if the provider is not found.
     static string GetConnectionStringByProvider(string providerName)

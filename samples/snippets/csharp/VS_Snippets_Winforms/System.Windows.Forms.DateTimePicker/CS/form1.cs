@@ -10,7 +10,7 @@ public class Form1:
 	#region " Windows Form Designer generated code "
 
 	public Form1() : base()
-	{        
+	{
 
 		//This call is required by the Windows Form Designer.
 		InitializeComponent();
@@ -36,7 +36,7 @@ public class Form1:
 	private System.ComponentModel.IContainer components;
 
 	//NOTE: The following procedure is required by the Windows Form Designer
-	//It can be modified using the Windows Form Designer.  
+	//It can be modified using the Windows Form Designer.
 	//Do not modify it using the code editor.
 
 	internal System.Windows.Forms.ToolTip ToolTip1;
@@ -51,7 +51,7 @@ public class Form1:
 		//
 		//DateTimePicker1
 		//
-      
+
 		//
 		//Form1
 		//
@@ -82,7 +82,7 @@ public class Form1:
 		//Set size and location.
 		this.DateTimePicker1.Location = new System.Drawing.Point(40, 88);
 		this.DateTimePicker1.Size = new System.Drawing.Size(160, 21);
-        
+
 		// Set the alignment of the drop-down MonthCalendar to right.
 		this.DateTimePicker1.DropDownAlign = LeftRightAlignment.Right;
 
@@ -100,15 +100,15 @@ public class Form1:
 
 	//<snippet2>
 
-	// When the calendar drops down, display a MessageBox indicating 
-	// that DateTimePicker will not accept dates before MinDateTime or 
+	// When the calendar drops down, display a MessageBox indicating
+	// that DateTimePicker will not accept dates before MinDateTime or
 	// after MaxDateTime. Use a StringBuilder object to build the string
 	// for efficiency.
-	private void DateTimePicker1_DropDown(object sender, 
+	private void DateTimePicker1_DropDown(object sender,
 		System.EventArgs e)
 	{
 
-		System.Text.StringBuilder messageBuilder = 
+		System.Text.StringBuilder messageBuilder =
 			new System.Text.StringBuilder();
 		messageBuilder.Append("Choose a date after: ");
 		messageBuilder.Append

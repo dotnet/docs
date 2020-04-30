@@ -11,7 +11,7 @@ namespace SDKSample
     {
         StackPanel myStackPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -41,8 +41,8 @@ namespace SDKSample
             // Add child elements to the parent StackPanel
             myStackPanel.Children.Add(myButton1);
             myStackPanel.Children.Add(myButton2);
-            myStackPanel.Children.Add(myButton3);           
-          
+            myStackPanel.Children.Add(myButton3);
+
             // Add the StackPanel as the Content of the Parent Window Object
             mainWindow.Content = myStackPanel;
             mainWindow.Show ();

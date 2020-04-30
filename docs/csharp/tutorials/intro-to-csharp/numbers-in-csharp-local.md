@@ -271,9 +271,10 @@ Once again, let's move the code you wrote in this section into a separate method
 The `double` numeric type represents a double-precision floating point
 number. Those terms may be new to you. A **floating point** number is
 useful to represent non-integral numbers that may be very large or small
-in magnitude. **Double-precision** means that these numbers are stored
-using greater precision than **single-precision**. On modern computers,
-it is more common to use double precision than single precision numbers.
+in magnitude. **Double-precision** is a relative term that describes the
+number of binary digits used to store the value. **Double precision**
+number have twice the number of binary digits as **single-precision**. On modern computers,
+it is more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword.
 Let's explore. Add the following code and see the result:
 
 ```csharp
@@ -351,7 +352,10 @@ Console.WriteLine(c / d);
 ```
 
 The `M` suffix on the numbers is how you indicate that a constant should use the
-`decimal` type.
+`decimal` type. Otherwise, the compiler assumes the `double` type.
+
+> [!NOTE]
+> The letter `M` was chosen as the most visually distinct letter between the `double` and `decimal` keywords.
 
 Notice that the math using the decimal type has more digits to the right
 of the decimal point.

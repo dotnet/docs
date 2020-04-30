@@ -16,6 +16,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
+- [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters)
 
 ### .NET Core 2.1
 
@@ -30,6 +31,10 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ***
 
 [!INCLUDE [corrupted-state-exceptions](~/includes/core-changes/corefx/1.0/corrupted-state-exceptions.md)]
+
+***
+
+[!INCLUDE [uribuilder-behavior-changes](../../../includes/core-changes/corefx/1.0/uribuilder-behavior-changes.md)]
 
 ***
 

@@ -30,6 +30,12 @@ Open a terminal and run the following command.
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
 ```
 
+Currently, the SLES 15 Microsoft repository setup package installs the *microsoft-prod.repo* file to the wrong directory, preventing zypper from finding the .NET Core packages. To fix this problem, create a symlink in the correct directory.
+
+```bash
+sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
+```
+
 ## Install the .NET Core SDK
 
 Update the products available for installation, then install the .NET Core SDK. In your terminal, run the following command.

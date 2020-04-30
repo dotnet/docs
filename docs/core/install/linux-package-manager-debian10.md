@@ -27,7 +27,7 @@ This only needs to be done once per machine.
 Open a terminal and run the following commands.
 
 ```bash
-wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
+wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget https://packages.microsoft.com/config/debian/10/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list

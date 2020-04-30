@@ -67,7 +67,7 @@ class Program
 }
 ```
 
-The example produces this output:
+The example produces the following output:
 
 ```xml
 <Root>

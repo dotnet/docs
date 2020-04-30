@@ -14,16 +14,16 @@ ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
 
 # Collections and Data Structures
 
-Similar data can often be handled more efficiently when stored and manipulated as a collection. You can use the <xref:System.Array?displayProperty=nameWithType> class or the classes in the <xref:System.Collections>, <xref:System.Collections.Generic>, <xref:System.Collections.Concurrent>, System.Collections.Immutable namespaces to add, remove, and modify either individual elements or a range of elements in a collection.
+Similar data can often be handled more efficiently when stored and manipulated as a collection. You can use the <xref:System.Array?displayProperty=nameWithType> class or the classes in the <xref:System.Collections>, <xref:System.Collections.Generic>, <xref:System.Collections.Concurrent>, <xref:System.Collections.Immutable> namespaces to add, remove, and modify either individual elements or a range of elements in a collection.
 
 There are two main types of collections; generic collections and non-generic collections. Generic collections were added in the .NET Framework 2.0 and provide collections that are type-safe at compile time. Because of this, generic collections typically offer better performance. Generic collections accept a type parameter when they are constructed and do not require that you cast to and from the <xref:System.Object> type when you add or remove items from the collection.  In addition, most generic collections are supported in Windows Store apps. Non-generic collections store items as <xref:System.Object>, require casting, and most are not supported for Windows Store app development. However, you may see non-generic collections in older code.
 
-Starting with the .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the System.Collections.Immutable namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection cannot be modified.
+Starting with the .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection cannot be modified.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
 ## Common collection features
 
-All collections provide methods for adding, removing or finding items in the collection. In addition, all collections that directly or indirectly implement the <xref:System.Collections.ICollection> interface or the <xref:System.Collections.Generic.ICollection%601> interface share these features:
+All collections provide methods for adding, removing, or finding items in the collection. In addition, all collections that directly or indirectly implement the <xref:System.Collections.ICollection> interface or the <xref:System.Collections.Generic.ICollection%601> interface share these features:
 
 - **The ability to enumerate the collection**
 
@@ -68,6 +68,8 @@ In general, you should use generic collections. The following table describes so
 |A set for mathematical functions|<xref:System.Collections.Generic.HashSet%601><br /><br /> <xref:System.Collections.Generic.SortedSet%601>|No recommendation|<xref:System.Collections.Immutable.ImmutableHashSet%601><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet%601>|
 
 ### Algorithmic complexity of collections
+
+When choosing a [collection class](selecting-a-collection-class.md), it is worth considering potential tradeoffs in performance. Use the following table to reference how various mutable collection types compare in algorithmic complexity to their corresponding immutable counterparts. Often immutable collection types are less performant but provide immutability - which is often a valid comparative benefit.
 
 | Mutable                   | Amortized  | Worst Case                | Immutable                          | Complexity |
 |---------------------------|------------|---------------------------|------------------------------------|------------|

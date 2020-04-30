@@ -16,25 +16,25 @@ ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
   
  This topic describes how to implement a server-side UI Automation provider for a custom control that runs in a WPF application. WPF supports [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] through a tree of peer automation objects that parallels the tree of user interface elements. Test code and applications that provide accessibility features can use automation peer objects directly (for in-process code) or through the generalized interface provided by [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)].  
 
-<a name="AutomationPeerClasses"></a>   
+<a name="AutomationPeerClasses"></a>
 ## Automation Peer Classes  
  WPF controls support [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] through a tree of peer classes that derive from <xref:System.Windows.Automation.Peers.AutomationPeer>. By convention, peer class names begin with the control class name and end with "AutomationPeer". For example, <xref:System.Windows.Automation.Peers.ButtonAutomationPeer> is the peer class for the <xref:System.Windows.Controls.Button> control class. The peer classes are roughly equivalent to [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] control types but are specific to WPF elements. Automation code that accesses WPF applications through the [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] interface does not use automation peers directly, but automation code in the same process space can use automation peers directly.  
   
-<a name="BuiltInAutomationPeerClasses"></a>   
+<a name="BuiltInAutomationPeerClasses"></a>
 ## Built-in Automation Peer Classes  
  Elements implement an automation peer class if they accept interface activity from the user, or if they contain information needed by users of screen-reader applications. Not all WPF visual elements have automation peers. Examples of classes that implement automation peers are <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.Label>. Examples of classes that do not implement automation peers are classes that derive from <xref:System.Windows.Controls.Decorator>, such as <xref:System.Windows.Controls.Border>, and classes based on <xref:System.Windows.Controls.Panel>, such as <xref:System.Windows.Controls.Grid> and <xref:System.Windows.Controls.Canvas>.  
   
  The base <xref:System.Windows.Controls.Control> class does not have a corresponding peer class. If you need a peer class to correspond to a custom control that derives from <xref:System.Windows.Controls.Control>, you should derive the custom peer class from <xref:System.Windows.Automation.Peers.FrameworkElementAutomationPeer>.  
   
-<a name="SecurityConsiderations"></a>   
+<a name="SecurityConsiderations"></a>
 ## Security Considerations for Derived Peers  
  Automation peers must run in a partial-trust environment. Code in the UIAutomationClient assembly is not configured to run in a partial-trust environment, and automation peer code should not reference that assembly. Instead, you should use the classes in the UIAutomationTypes assembly. For example, you should use the <xref:System.Windows.Automation.AutomationElementIdentifiers> class from the UIAutomationTypes assembly, which corresponds to the <xref:System.Windows.Automation.AutomationElement> class in the UIAutomationClient assembly. It is safe to reference the UIAutomationTypes assembly in automation peer code.  
   
-<a name="PeerNavigation"></a>   
+<a name="PeerNavigation"></a>
 ## Peer Navigation  
  After locating an automation peer, in-process code can navigate the peer tree by calling the object's <xref:System.Windows.Automation.Peers.AutomationPeer.GetChildren%2A> and <xref:System.Windows.Automation.Peers.AutomationPeer.GetParent%2A> methods. Navigation among WPF elements within a control is supported by the peer's implementation of the <xref:System.Windows.Automation.Peers.AutomationPeer.GetChildrenCore%2A> method. The UI Automation system calls this method to build up a tree of subelements contained within a control; for example, list items in a list box. The default <xref:System.Windows.Automation.Peers.UIElementAutomationPeer.GetChildrenCore%2A?displayProperty=nameWithType> method traverses the visual tree of elements to build the tree of automation peers. Custom controls override this method to expose children elements to automation clients, returning the automation peers of elements that convey information or allow user interaction.  
   
-<a name="Customizations"></a>   
+<a name="Customizations"></a>
 ## Customizations in a Derived Peer  
  All classes that derive from <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> contain the protected virtual method <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A>. WPF calls <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> to get the automation peer object for each control. Automation code can use the peer to get information about a control’s characteristics and features and to simulate interactive use. A custom control that supports automation must override <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> and return an instance of a class that derives from <xref:System.Windows.Automation.Peers.AutomationPeer>. For example, if a custom control derives from the <xref:System.Windows.Controls.Primitives.ButtonBase> class, then the object returned by <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> should derive from <xref:System.Windows.Automation.Peers.ButtonBaseAutomationPeer>.  
   
@@ -108,7 +108,7 @@ End Class
  Your automation peer should provide appropriate default values for your control. Note that XAML that references your control can override your peer implementations of core methods by including <xref:System.Windows.Automation.AutomationProperties> attributes. For example, the following XAML creates a button that has two customized [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] properties.  
   
 ```xaml  
-<Button AutomationProperties.Name="Special"   
+<Button AutomationProperties.Name="Special"
     AutomationProperties.HelpText="This is a special button."/>  
 ```  
   
@@ -138,7 +138,7 @@ Public Class RangePeer2
 End Class  
 ```  
   
-For an example implementation, see the [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) source code that implements and consumes a NumericUpDown custom control.  
+For an example implementation, see the [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) source code that implements and consumes a NumericUpDown custom control.  
   
 ### Raise Events  
  Automation clients can subscribe to automation events. Custom controls must report changes to control state by calling the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method. Similarly, when a property value changes, call the <xref:System.Windows.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent%2A> method. The following code shows how to get the peer object from within the control code and call a method to raise an event. As an optimization, the code determines if there are any listeners for this event type. Raising the event only when there are listeners avoids unnecessary overhead and helps the control remain responsive.  
@@ -150,5 +150,5 @@ For an example implementation, see the [C#](https://github.com/dotnet/samples/tr
 
 - [UI Automation Overview](../../ui-automation/ui-automation-overview.md)
 - [Server-Side UI Automation Provider Implementation](../../ui-automation/server-side-ui-automation-provider-implementation.md)
-- [NumericUpDown custom control (C#) on GitHub](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
-- [NumericUpDown custom control (Visual Basic) on GitHub](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)
+- [NumericUpDown custom control (C#) on GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
+- [NumericUpDown custom control (Visual Basic) on GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)

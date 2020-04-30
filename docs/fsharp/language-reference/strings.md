@@ -82,9 +82,7 @@ You can represent ASCII strings by arrays of unsigned bytes, type `byte[]`. You 
 
 ## String Operators
 
-There are two ways to concatenate strings: by using the `+` operator or by using the `^` operator. The `+` operator maintains compatibility with the .NET Framework string handling features.
-
-The following example illustrates string concatenation.
+The `+` operator can be used to concatenate strings, maintaining compatibility with the .NET Framework string handling features. The following example illustrates string concatenation.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1006.fs)]
 

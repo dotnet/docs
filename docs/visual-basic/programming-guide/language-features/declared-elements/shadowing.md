@@ -120,7 +120,7 @@ Public Class useClasses
     ' Note that dervCls widens to its base class baseCls.  
     ' The following statement creates the object declared as the derived class.  
     Dim derObj As dervCls = New dervCls()  
-    Public Sub showZ()   
+    Public Sub showZ()
     ' The following statement outputs 100 (the shadowed element).  
         MsgBox("Accessed through base class: " & basObj.z)  
     ' The following statement outputs "*" (the shadowing element).  

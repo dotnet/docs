@@ -1,6 +1,6 @@
 ---
 title: .NET Standard
-description: Learn about .NET Standard, its versions and the .NET implementations that support it.
+description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
 ms.date: 02/13/2020
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
@@ -94,9 +94,9 @@ APIs added to any of the implementations (such as, .NET Framework, .NET Core and
 - Use libraries that depend on the same .NET Standard version or lower.
 - If you find a library that depends on a higher .NET Standard version, you either need to adopt that same version or decide not to use that library.
 
-## Targeting .NET Standard
+## Target .NET Standard
 
-You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard with .NET Core tools](../core/packages.md).
+You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting .NET Standard with .NET Core tools](../core/packages.md).
 
 ## .NET Framework compatibility mode
 
@@ -106,13 +106,13 @@ For more information, see [.NET Framework compatibility mode](../core/porting/th
 
 ## .NET Standard libraries and Visual Studio
 
-In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) or later installed on macOS.
+In order to build .NET Standard libraries in Visual Studio, make sure you have [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or Visual Studio 2017 version 15.3 or later installed on Windows, or [Visual Studio for Mac version 7.1](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) or later installed on macOS.
 
 If you only need to consume .NET Standard 2.0 libraries in your projects, you can also do that in Visual Studio 2015. However, you need NuGet client 3.6 or higher installed. You can download the NuGet client for Visual Studio 2015 from the [NuGet downloads](https://www.nuget.org/downloads) page.
 
 ## Comparison to Portable Class Libraries
 
-.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
+.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
 
 .NET Standard and PCL profiles were created for similar purposes but also differ in key ways.
 
@@ -124,7 +124,7 @@ Differences:
 
 - .NET Standard is a curated set of APIs, while PCL profiles are defined by intersections of existing platforms.
 - .NET Standard linearly versions, while PCL profiles do not.
-- PCL profiles represents Microsoft platforms while the .NET Standard is platform-agnostic.
+- PCL profiles represents Microsoft platforms while .NET Standard is platform-agnostic.
 
 ### PCL compatibility
 
@@ -137,7 +137,7 @@ Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.C
 
 Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs. `netstandard` packaging is compatible with existing users.
 
-You can see the set of PCL profiles that are compatible with the .NET Standard:
+You can see the set of PCL profiles that are compatible with .NET Standard:
 
 | PCL Profile | .NET Standard | PCL Platforms
 |:-----------:|:-------------:|------------------------------------------------------------------------------

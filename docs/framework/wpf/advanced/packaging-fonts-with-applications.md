@@ -17,7 +17,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
 > [!NOTE]
 > As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts Microsoft supplies with applications and Windows, do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  
 
-<a name="introduction_to_packaging_fonts"></a>   
+<a name="introduction_to_packaging_fonts"></a>
 ## Introduction to Packaging Fonts  
  You can easily package fonts as resources within your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications to display user interface text and other types of text based content. The fonts can be separate from or embedded within the application's assembly files. You can also create a resource-only font library, which your application can reference.  
   
@@ -25,7 +25,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
  The [Microsoft Typography](https://docs.microsoft.com/typography/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
   
-<a name="adding_fonts_as_content_items"></a>   
+<a name="adding_fonts_as_content_items"></a>
 ## Adding Fonts as Content Items  
  You can add fonts to your application as project content items that are separate from the application's assembly files. This means that content items are not embedded as resources within an assembly. The following project file example shows how to define content items.  
   
@@ -58,7 +58,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
  [!code-xaml[FontSnippets#FontPackageSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet8)]  
   
-<a name="adding_fonts_as_resource_items"></a>   
+<a name="adding_fonts_as_resource_items"></a>
 ## Adding Fonts as Resource Items  
  You can add fonts to your application as project resource items that are embedded within the application's assembly files. Using a separate subdirectory for resources helps to organize the application's project files. The following project file example shows how to define fonts as resource items in a separate subdirectory.  
   
@@ -123,7 +123,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
  [!code-csharp[FontSnippets#FontsSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet7)]
  [!code-vb[FontSnippets#FontsSnippet7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet7)]  
   
-<a name="creating_a_font_resource_library"></a>   
+<a name="creating_a_font_resource_library"></a>
 ## Creating a Font Resource Library  
  You can create a resource-only library that contains only fonts—no code is part of this type of library project. Creating a resource-only library is a common technique for decoupling resources from the application code that uses them. This also allows the library assembly to be included with multiple application projects. The following project file example shows the key portions of a resource-only library project.  
   
@@ -133,7 +133,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   <OutputType>library</OutputType>  
   ...  
 </PropertyGroup>  
-...  
+...
 <ItemGroup>  
   <Resource Include="Kooten.ttf" />  
   <Resource Include="Pesca.ttf" />  
@@ -148,7 +148,7 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
 > [!NOTE]
 > This SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
-<a name="limitations_on_font_usage"></a>   
+<a name="limitations_on_font_usage"></a>
 ## Limitations on Font Usage  
  The following list describes several limitations on the packaging and use of fonts in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications:  
   

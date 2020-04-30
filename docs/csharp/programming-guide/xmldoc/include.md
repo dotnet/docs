@@ -80,16 +80,16 @@ The following output is generated when you compile the Test and Test2 classes wi
     <members>
         <member name="T:Test">
             <summary>
-The summary for this type.   
-</summary>   
-        </member>   
-        <member name="T:Test2">   
-            <summary>   
-The summary for this other type.   
-</summary>   
-        </member>   
-    </members>   
-</doc>   
+The summary for this type.
+</summary>
+        </member>
+        <member name="T:Test2">
+            <summary>
+The summary for this other type.
+</summary>
+        </member>
+    </members>
+</doc>
 ```  
   
 ## See also

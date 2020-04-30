@@ -2,7 +2,6 @@ docs/_build/
 .idea/
 *.swp
 rebuild.cmd
-samples/
 
 # Business Intelligence projects
 *.rdl.data
@@ -41,3 +40,6 @@ ehthumbs_vista.db
 # Windows shortcuts
 *.lnk
 
+[Bb]in/
+[Oo]bj/
+*.sln

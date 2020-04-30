@@ -12,7 +12,7 @@ Negates a `Boolean` expression.
 NOT boolean_expression  
 -- or  
 ! boolean_expression  
-``` 
+```
   
 ## Arguments  
  `boolean_expression`  

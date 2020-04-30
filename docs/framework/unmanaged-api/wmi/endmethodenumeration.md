@@ -19,14 +19,14 @@ topic_type:
 Terminates an enumeration sequence started with a call to the [BeginMethodEnumeration function](beginmethodenumeration.md).  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT EndMethodEnumeration (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr 
-); 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr
+);
 ```  
 
 ## Parameters

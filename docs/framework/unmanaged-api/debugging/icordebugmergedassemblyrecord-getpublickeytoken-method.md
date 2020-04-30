@@ -10,8 +10,8 @@ Gets the assembly's public key token.
   
 ```cpp  
 HRESULT GetPublicKeyToken(  
-   [in] ULONG32 cbPublicKeyToken,   
-   [out] ULONG32 *pcbPublicKeyToken,   
+   [in] ULONG32 cbPublicKeyToken,
+   [out] ULONG32 *pcbPublicKeyToken,
    [out, size_is(cbPublicKeyToken), length_is(*pcbPublicKeyToken)] BYTE pbPublicKeyToken[]  
 );  
 ```  

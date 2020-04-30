@@ -3,21 +3,23 @@ title: Install .NET Core on Fedora 29 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Fedora 29.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 03/17/2020
 ---
 
 # Fedora 29 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on Fedora 29. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
+This article describes how to use a package manager to install .NET Core on Fedora 29.
 
-## Register Microsoft key and feed
+[!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
+
+## Add Microsoft repository key and feed
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key.
-- Register the product repository.
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
 - Install required dependencies.
 
 This only needs to be done once per machine.
@@ -26,7 +28,7 @@ Open a terminal and run the following commands.
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
 ```
 
 ## Install the .NET Core SDK

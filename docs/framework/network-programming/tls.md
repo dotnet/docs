@@ -23,7 +23,6 @@ This document targets developers who are:
 
 - Directly using the <xref:System.Net> APIs (for example, <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType>).
 - Directly using WCF clients and services using the <xref:System.ServiceModel?displayProperty=nameWithType> namespace.
-- Using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application. See the [Azure Cloud Services](#azure-cloud-services) section.
 
 We recommend that you:
 
@@ -116,7 +115,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 ### For .NET Framework 3.5 - 4.5.2 and not WCF
 
-We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps. At some point in the future, your application may fail until you upgrade to .NET Framework 4.7 or later versions.
+We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps.
 
 Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). The .NET Framework version 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
@@ -189,7 +188,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag).
 
-If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, then the key defaults to 0. In that case, you should explicitly set its value to 1.
+If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.5.2 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
 This key should only have a value of 0 if you need to connect to legacy services that don't support strong cryptography and can't be upgraded.
 
@@ -199,7 +198,7 @@ The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>
 
 `<VERSION>` must be v4.0.30319 (for .NET Framework 4 and above) or v2.0.50727 (for .NET Framework 3.5).
 
-If your app targets .NET Framework 4.7 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.7 or later versions, but targets an earlier version, the key defaults to 0. In that case, you should explicitly set its value to 1.
+If your app targets .NET Framework 4.7 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.6.1 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
 For more info, see [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016).
 
@@ -287,19 +286,3 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 | Windows 7 SP1<br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Server 2008 | [Support for TLS System Default Versions included in the .NET Framework 2.0 SP2 on Windows Vista SP2 and Server 2008 SP2](https://support.microsoft.com/help/3154517/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Vista | Not supported |
-
-## Azure Cloud Services
-
-If you are using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application, there are some considerations that you need to take into account to support TLS 1.2.
-
-### .NET Framework 4.7 is not installed on Azure Guest OS by default
-
-The latest version installed in the latest Azure Guest OS Family 5 release (Windows Server 2016) is 4.6.2. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
-
-If your app targets a .NET Framework version that is not available on the Azure Guest OS version, then you need to install it yourself. See [Install .NET on Azure Cloud Service Roles](https://docs.microsoft.com/azure/cloud-services/cloud-services-dotnet-install-dotnet). If the framework installation requires a restart, the service roles might also restart before entering the Ready state.
-
-### Azure Guest OS registry settings
-
-The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
-
-Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

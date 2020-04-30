@@ -102,7 +102,7 @@ Each version of .NET Core implements a version of .NET Standard. Implementing a 
 ## See also
 
 - [Target frameworks](../../standard/frameworks.md)
-- [.NET Core distribution packaging](../build/distribution-packaging.md)
+- [.NET Core distribution packaging](../distribution-packaging.md)
 - [.NET Core Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)
 - [.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)
 - [Docker images for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/)

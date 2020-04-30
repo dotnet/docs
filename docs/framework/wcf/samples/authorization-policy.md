@@ -265,7 +265,7 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
 Or you can do the same thing in configuration:
 
 ```xml
-<behavior ...>
+<behavior>
     <serviceCredentials>
       <!--
       The serviceCredentials behavior allows one to specify a custom validator for username/password combinations.
@@ -307,7 +307,7 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
 Once the custom <xref:System.ServiceModel.ServiceAuthorizationManager> is implemented, the service host must be informed about the <xref:System.ServiceModel.ServiceAuthorizationManager> to use. This is done as shown in the following code.
 
 ```xml
-<behavior ...>
+<behavior>
     ...
     <serviceAuthorization serviceAuthorizationManagerType="Microsoft.ServiceModel.Samples.MyServiceAuthorizationManager, service">
         ...
@@ -376,7 +376,7 @@ The previous code shows how the <xref:System.IdentityModel.Policy.IAuthorization
 Once the custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> is implemented, the service host must be informed about the authorization policies to use.
 
 ```xml
-<serviceAuthorization ...>
+<serviceAuthorization>
        <authorizationPolicies>
             <add policyType='Microsoft.ServiceModel.Samples.CustomAuthorizationPolicy.MyAuthorizationPolicy, PolicyLibrary' />
        </authorizationPolicies>

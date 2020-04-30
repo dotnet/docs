@@ -62,7 +62,7 @@ gRPC services provide similar functionality with message streams. Streams don't 
 
 ### gRPC streaming
 
-gRPC supports the creation of persistent streams from client to server, and from server to client. Both types of stream can be active concurrently. This ability is called bidirectional streaming. 
+gRPC supports the creation of persistent streams from client to server, and from server to client. Both types of stream can be active concurrently. This ability is called bidirectional streaming.
 
 You can use streams for arbitrary, asynchronous messaging over time. Or you can use them for passing large datasets that are too big to generate and send in a single request or response.
 
@@ -120,7 +120,7 @@ In WCF, the [ServiceContract](xref:System.ServiceModel.ServiceContractAttribute)
 
 ## WCF one-way operations and gRPC client streaming
 
-WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that return a transport-specific acknowledgement. gRPC service methods always return a response, even if it's empty. The client should always await that response. For the "fire-and-forget" style of messaging in gRPC, you can create a client streaming service.
+WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that return a transport-specific acknowledgment. gRPC service methods always return a response, even if it's empty. The client should always await that response. For the "fire-and-forget" style of messaging in gRPC, you can create a client streaming service.
 
 ### thing_log.proto
 

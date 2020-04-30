@@ -41,7 +41,7 @@ ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
     ```  
   
     ```csharp  
-    private void statusBar1_PanelClick(object sender,   
+    private void statusBar1_PanelClick(object sender,
     System.Windows.Forms.StatusBarPanelClickEventArgs e)  
     {  
        switch (statusBar1.Panels.IndexOf(e.StatusBarPanel))  
@@ -76,8 +76,8 @@ ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
      (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
-    this.statusBar1.PanelClick += new   
-       System.Windows.Forms.StatusBarPanelClickEventHandler   
+    this.statusBar1.PanelClick += new
+       System.Windows.Forms.StatusBarPanelClickEventHandler
        (this.statusBar1_PanelClick);  
     ```  
   

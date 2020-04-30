@@ -1,0 +1,178 @@
+### YamlMime:Landing
+
+title: .NET documentation
+summary: Learn about .NET, an open-source developer platform for building many different types of applications.
+
+metadata:
+  title: .NET documentation
+  description: Learn about .NET, an open-source developer platform for building many different types of applications.
+  ms.topic: landing-page
+  ms.date: 04/22/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about .NET
+    linkLists:
+      - linkListType: download
+        links:
+        - text: Download the .NET SDK
+          url: https://dotnet.microsoft.com/download
+      - linkListType: overview
+        links:
+          - text: Tour of .NET
+            url: tour.md
+          - text: What is .NET?
+            url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
+      - linkListType: concept
+        links:
+          - text: .NET Standard
+            url: net-standard.md
+          - text: .NET Core
+            url: ../core/about.md
+          - text: Target frameworks
+            url: frameworks.md
+          - text: Common Language Runtime (CLR)
+            url: clr.md
+          - text: Choose between .NET Core and .NET Framework for server apps 
+            url: choosing-core-framework-server.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in .NET Standard
+            url: whats-new/whats-new-in-dotnet-standard.md
+          - text: What's new in .NET Core
+            url: ../core/whats-new/dotnet-core-3-1.md
+
+  # Card
+  - title: Serialize data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Serialize and deserialize JSON
+            url: serialization/system-text-json-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Serialize and deserialize JSON using C#
+            url: serialization/system-text-json-how-to.md
+          - text: Migrate from Newtonsoft.Json to System.Text.Json
+            url: serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+          - text: Write custom converters for JSON serialization
+            url: serialization/system-text-json-converters-how-to.md
+      - linkListType: sample
+        links:
+          - text: Examples of XML serialization
+            url: serialization/examples-of-xml-serialization.md
+
+  # Card
+  - title: Format and convert dates, numbers, and strings
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Numeric format strings
+            url: base-types/standard-numeric-format-strings.md
+          - text: Date and time format strings
+            url: base-types/standard-date-and-time-format-strings.md
+          - text: Composite formatting
+            url: base-types/composite-formatting.md
+          - text: Convert times between time zones
+            url: datetime/converting-between-time-zones.md
+          - text: Trim and remove characters from strings
+            url: base-types/trimming.md
+          - text: Regular expressions in .NET
+            url: base-types/regular-expressions.md
+      - linkListType: how-to-guide
+        links:
+          - text: Convert strings to DateTime
+            url: base-types/parsing-datetime.md
+          - text: Pad a number with leading zeros
+            url: base-types/how-to-pad-a-number-with-leading-zeros.md
+          - text: Display milliseconds in date and time values
+            url: base-types/how-to-display-milliseconds-in-date-and-time-values.md
+      - linkListType: reference
+        links:
+          - text: Regular expression language
+            url: base-types/regular-expression-language-quick-reference.md
+
+  # Card
+  - title: Design classes and libraries
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Design guidelines
+            url: design-guidelines/index.md
+      - linkListType: concept
+        links:
+          - text: Naming conventions
+            url: design-guidelines/general-naming-conventions.md
+          - text: Capitalization conventions
+            url: design-guidelines/capitalization-conventions.md
+
+  # Card
+  - title: Use events and exceptions
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Best practices for exceptions
+            url: exceptions/best-practices-for-exceptions.md
+          - text: Handle and raise events
+            url: events/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use a try-catch block to catch exceptions
+            url: exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
+          - text: Raise and consume events
+            url: events/how-to-raise-and-consume-events.md
+
+  # Card
+  - title: File and stream I/O
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: File and stream I/O
+            url: io/index.md
+          - text: File path formats on Windows
+            url: io/file-path-formats.md
+      - linkListType: how-to-guide
+        links:
+          - text: Write text to a file
+            url: io/how-to-write-text-to-a-file.md
+          - text: Read text from a file
+            url: io/how-to-read-text-from-a-file.md
+          - text: Compress and extract files
+            url: io/how-to-compress-and-extract-files.md
+          - text: Open and append to a log file
+            url: io/how-to-open-and-append-to-a-log-file.md
+
+  # Card
+  - title: Manage memory use
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Garbage collection fundamentals
+            url: garbage-collection/fundamentals.md
+          - text: Implement a Dispose method
+            url: garbage-collection/implementing-dispose.md
+
+  # Card
+  - title: Learn about parallel programming
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Parallel Programming in .NET
+            url: parallel-programming/index.md
+      - linkListType: concept
+        links:
+          - text: Task Parallel Library (TPL)
+            url: parallel-programming/task-parallel-library-tpl.md
+          - text: Task-based asynchronous programming 
+            url: parallel-programming/task-based-asynchronous-programming.md
+          - text: Task cancellation
+            url: parallel-programming/task-cancellation.md
+      - linkListType: how-to-guide
+        links:
+          - text: Write a simple parallel program using Parallel.ForEach 
+            url: parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
+          - text: Return a value from a task
+            url: parallel-programming/how-to-return-a-value-from-a-task.md

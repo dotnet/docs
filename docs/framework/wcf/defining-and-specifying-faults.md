@@ -30,7 +30,7 @@ SOAP faults convey error condition information from a service to a client and, i
 [ServiceContract]  
 public class CalculatorService  
 {  
-    [OperationContract]   
+    [OperationContract]
     int Divide(int a, int b)  
     {  
       if (b==0) throw new Exception("Division by zero!");  

@@ -23,7 +23,7 @@ i = "Hello"; // error CS0029: Cannot implicitly convert type 'string' to 'int'
   
 - **Implicit conversions**: No special syntax is required because the conversion is type safe and no data will be lost. Examples include conversions from smaller to larger integral types, and conversions from derived classes to base classes.  
   
-- **Explicit conversions (casts)**: Explicit conversions require the [cast operator `()`](../../language-reference/operators/type-testing-and-cast.md#cast-operator-). Casting is required when information might be lost in the conversion, or when the conversion might not succeed for other reasons. Typical examples include numeric conversion to a type that has less precision or a smaller range, and conversion of a base-class instance to a derived class.  
+- **Explicit conversions (casts)**: Explicit conversions require a [cast expression](../../language-reference/operators/type-testing-and-cast.md#cast-expression). Casting is required when information might be lost in the conversion, or when the conversion might not succeed for other reasons. Typical examples include numeric conversion to a type that has less precision or a smaller range, and conversion of a base-class instance to a derived class.  
   
 - **User-defined conversions**: User-defined conversions are performed by special methods that you can define to enable explicit and implicit conversions between custom types that do not have a base class–derived class relationship. For more information, see [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md).  
   
@@ -86,7 +86,7 @@ For more information, see the [Conversions](~/_csharplang/spec/conversions.md) s
 
 - [C# Programming Guide](../index.md)
 - [Types](./index.md)
-- [() cast operator](../../language-reference/operators/type-testing-and-cast.md#cast-operator-)
+- [Cast expression](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md)
 - [Generalized Type Conversion](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
 - [How to convert a string to a number](./how-to-convert-a-string-to-a-number.md)

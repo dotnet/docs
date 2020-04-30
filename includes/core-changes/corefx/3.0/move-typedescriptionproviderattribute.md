@@ -22,7 +22,7 @@ Windows Forms
 
 #### Affected APIs
 
-- None
+None.
 
 <!--
 

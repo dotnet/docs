@@ -24,7 +24,7 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  This topic demonstrates how to rename a DLL function in managed code.  
   
 ## Renaming a Function in Visual Basic  
- 
+
 Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb

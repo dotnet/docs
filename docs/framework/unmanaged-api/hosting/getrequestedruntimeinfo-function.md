@@ -25,16 +25,16 @@ Gets version and directory information about the common language runtime (CLR) r
   
 ```cpp  
 HRESULT GetRequestedRuntimeInfo (  
-    [in]  LPCWSTR  pExe,   
-    [in]  LPCWSTR  pwszVersion,   
-    [in]  LPCWSTR  pConfigurationFile,   
-    [in]  DWORD    startupFlags,   
-    [in]  DWORD    runtimeInfoFlags,   
-    [out] LPWSTR   pDirectory,   
-    [in]  DWORD    dwDirectory,   
-    [out] DWORD   *dwDirectoryLength,   
-    [out] LPWSTR   pVersion,   
-    [in]  DWORD    cchBuffer,   
+    [in]  LPCWSTR  pExe,
+    [in]  LPCWSTR  pwszVersion,
+    [in]  LPCWSTR  pConfigurationFile,
+    [in]  DWORD    startupFlags,
+    [in]  DWORD    runtimeInfoFlags,
+    [out] LPWSTR   pDirectory,
+    [in]  DWORD    dwDirectory,
+    [out] DWORD   *dwDirectoryLength,
+    [out] LPWSTR   pVersion,
+    [in]  DWORD    cchBuffer,
     [out] DWORD   *dwlength  
 );  
 ```  

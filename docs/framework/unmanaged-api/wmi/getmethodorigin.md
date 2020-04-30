@@ -19,16 +19,16 @@ topic_type:
 Determines the class in which a method is declared.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT GetMethodOrigin (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LPCWSTR             wszMethodName,
    [out] BSTR*              pstrClassName
-); 
+);
 ```  
 
 ## Parameters
@@ -40,7 +40,7 @@ HRESULT GetMethodOrigin (
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszMethodName`  
-[in] The name of the method for the object whose owning class is being requested. 
+[in] The name of the method for the object whose owning class is being requested.
 
 `pstrClassName`  
 [out] Receives the name of the class that owns the method.

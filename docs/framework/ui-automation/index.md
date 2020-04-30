@@ -28,4 +28,4 @@ ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
 
 ## Related sections
 
-- [Accessibility Samples](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility) 
+- [Accessibility Samples](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility)

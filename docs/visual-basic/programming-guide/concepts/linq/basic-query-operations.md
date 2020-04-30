@@ -42,13 +42,13 @@ This topic provides a brief introduction to Language-Integrated Query (LINQ) exp
  You can use logical operators such as `And` and `Or` to combine filter expressions in a `Where` clause. For example, to return only those customers who are from London and whose name is Devon, use the following code:  
   
 ```vb  
-Where cust.City = "London" And cust.Name = "Devon"   
+Where cust.City = "London" And cust.Name = "Devon"
 ```  
   
  To return customers from London or Paris, use the following code:  
   
 ```vb  
-Where cust.City = "London" Or cust.City = "Paris"   
+Where cust.City = "London" Or cust.City = "Paris"
 ```  
   
  For more information about how to use the `Where` clause in Visual Basic, see [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md).  

@@ -66,7 +66,7 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
  If you change the address of your feed, you must also change the address in the **Debug** tab. If you do not do this, Internet Explorer attempts to open the feed at the default address and fail.  
   
 ### AJAX enabled WCF Service Item Template  
- This template exposes an AJAX control as a WCF service. For more information on AJAX controls, see the [AJAX control documentation](https://docs.microsoft.com/aspnet/ajax/).  
+ This template exposes an AJAX control as a WCF service. For more information on AJAX controls, see the [AJAX control documentation](/aspnet/ajax/).  
   
 ### Silverlight-enabled WCF Service Item Template  
  This template creates a Web service that provides data to a Silverlight client or front-end. The template can be added to a Web site or Web application project to create a WCF service, which includes service code and configuration that support communicating with a Silverlight client. You can then use **Add Service Reference** to add a client proxy of the service to the client, and exchange data between the Silverlight client and the Silverlight-enabled WCF service.  

@@ -19,7 +19,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ```xml  
 <namedCaches>  
-  <add name="default"/>   
+  <add name="default"/>
 </namedCaches>  
 ```  
   
@@ -72,8 +72,8 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="default"   
-               cacheMemoryLimitMegabytes="0"   
+          <add name="default"
+               cacheMemoryLimitMegabytes="0"
                physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  

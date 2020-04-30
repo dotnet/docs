@@ -22,7 +22,7 @@ Sometimes you have to transform large XML files, and write your application so t
  The following is the source document, Source.xml:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>
 <Root>  
   <Customer>  
     <Name>A. Datum Corporation</Name>  

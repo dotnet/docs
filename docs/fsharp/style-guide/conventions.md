@@ -521,7 +521,7 @@ The previous observations about performance with struct tuples and records also 
 
 ```fsharp
     type Name = Name of string
-    
+
     [<Struct>]
     type SName = SName of string
 

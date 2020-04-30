@@ -17,7 +17,7 @@ ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the Spinner control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all spinner controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertain to spinner controls when they support the Range Value, Value, and Selection control patterns and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -35,7 +35,7 @@ ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
   
  To ensure that the two buttons in the control view subtree can be distinguished by automated test tools, assign the `SmallIncrement` or `SmallDecrement` `AutomationId` as appropriate. For some implementations, the associated Edit control may be a peer of the Spinner control.  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to spinner controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -52,7 +52,7 @@ ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The spinner control must always be content.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The Spinner control must always be a control.|  
   
-<a name="Required_UI_Automation_Control_Patterns_and_Properties"></a>   
+<a name="Required_UI_Automation_Control_Patterns_and_Properties"></a>
 ## Required UI Automation Control Patterns and Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by spinner controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -63,7 +63,7 @@ ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|Spinner controls that span a numeric range can support this pattern.|  
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Spinner controls that span a discrete set of options or numbers can support this pattern.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all spinner controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

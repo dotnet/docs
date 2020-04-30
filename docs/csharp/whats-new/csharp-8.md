@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0.
-ms.date: 09/20/2019
+ms.date: 04/07/2020
 ---
 # What's new in C# 8.0
 
@@ -19,6 +19,7 @@ C# 8.0 adds the following features and enhancements to the C# language:
 - [Disposable ref structs](#disposable-ref-structs)
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
+- [Asynchronous disposable](#asynchronous-disposable)
 - [Indices and ranges](#indices-and-ranges)
 - [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
@@ -69,7 +70,7 @@ The compiler warns you when it needs to create a defensive copy.  The `Distance`
 public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 ```
 
-Notice that the `readonly` modifier is necessary on a read-only property. The compiler doesn't assume `get` accessors don't modify state; you must declare `readonly` explicitly. Auto-implemented properties are an exception; the compiler will treat all auto-implemented getters as readonly, so here there's no need to add the `readonly` modifier to the `X` and `Y` properties.
+Notice that the `readonly` modifier is necessary on a read-only property. The compiler doesn't assume `get` accessors don't modify state; you must declare `readonly` explicitly. Auto-implemented properties are an exception; the compiler will treat all auto-implemented getters as `readonly`, so here there's no need to add the `readonly` modifier to the `X` and `Y` properties.
 
 The compiler does enforce the rule that `readonly` members don't modify state. The following method won't compile unless you remove the `readonly` modifier:
 
@@ -81,7 +82,9 @@ public readonly void Translate(int xOffset, int yOffset)
 }
 ```
 
-This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent. You can learn more about readonly members in the language reference article on [`readonly`](../language-reference/keywords/readonly.md#readonly-member-examples).
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+
+For more information, see the [`readonly` instance members](../language-reference/builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
 
 ## Default interface methods
 
@@ -313,7 +316,7 @@ In both cases, the compiler generates the call to `Dispose()`. The compiler gene
 
 ## Static local functions
 
-You can now add the `static` modifier to local functions to ensure that local function doesn't capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function can't contain a reference to \<variable>." 
+You can now add the `static` modifier to local functions to ensure that local function doesn't capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function can't contain a reference to \<variable>."
 
 Consider the following code. The local function `LocalFunction` accesses the variable `y`, declared in the enclosing scope (the method `M`). Therefore, `LocalFunction` can't be declared with the `static` modifier:
 
@@ -385,7 +388,11 @@ await foreach (var number in GenerateSequence())
 }
 ```
 
-You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md).
+You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md). By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+
+## Asynchronous disposable
+
+Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. The operand of a `using` expression can implement either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. In the case of `IAsyncDisposable`, the compiler generates code to `await` the <xref:System.Threading.Tasks.Task> returned from <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. For more information, see the [`using` statement](../language-reference/keywords/using-statement.md).
 
 ## Indices and ranges
 
@@ -459,7 +466,7 @@ The range can then be used inside the `[` and `]` characters:
 var text = words[phrase];
 ```
 
-Not only arrays support indices and ranges. You also can use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+Not only arrays support indices and ranges. You can also use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
 
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
 

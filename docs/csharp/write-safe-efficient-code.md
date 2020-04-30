@@ -1,7 +1,7 @@
 ---
 title: Write safe and efficient C# code
 description: Recent enhancements to the C# language enable you to write verifiable safe code that the performance previously associated with unsafe code. 
-ms.date: 10/23/2018
+ms.date: 03/17/2020
 ms.technology: csharp-advanced-concepts
 ms.custom: mvc
 ---
@@ -12,16 +12,16 @@ New features in C# enable you to write verifiable safe code with better performa
 Much of the sample code in this article uses features added in C# 7.2. To
 use those features, you must configure your project to use C# 7.2 or later. For more information on setting the language version, see [configure the language version](language-reference/configure-language-version.md).
 
-This article focuses on techniques for efficient resource management. One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they're copied by value. This tradeoff makes it harder to optimize algorithms that operate on large amounts of data. New language features in C# 7.2 provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations. This article explores those new features.
+This article focuses on techniques for efficient resource management. One advantage to using value types is that they often avoid heap allocations. The disadvantage is that they're copied by value. This trade-off makes it harder to optimize algorithms that operate on large amounts of data. New language features in C# 7.2 provide mechanisms that enable safe efficient code using references to value types. Use these features wisely to minimize both allocations and copy operations. This article explores those new features.
 
 This article focuses on the following resource management techniques:
 
-- Declare a [`readonly struct`](language-reference/keywords/readonly.md#readonly-struct-example) to express that a type is **immutable** and enables the compiler to save copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
-- If a type can't be immutable, declare `struct` members `readonly` to indicate that the member doesn't modify state.
+- Declare a [`readonly struct`](language-reference/builtin-types/struct.md#readonly-struct) to express that a type is **immutable**. That enables the compiler to save defensive copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
+- If a type can't be immutable, declare `struct` members [`readonly`](language-reference/builtin-types/struct.md#readonly-instance-members) to indicate that the member doesn't modify state.
 - Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
 - When the size of a `readonly struct` is bigger than <xref:System.IntPtr.Size?displayProperty=nameWithType>, you should pass it as an `in` parameter for performance reasons.
 - Never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier or the method calls only `readonly` members of the struct. Violating this guidance may negatively affect performance and could lead to an obscure behavior.
-- Use a [`ref struct`](language-reference/keywords/ref.md#ref-struct-types), or a `readonly ref struct` such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> to work with memory as a sequence of bytes.
+- Use a [`ref struct`](language-reference/builtin-types/struct.md#ref-struct), or a `readonly ref struct` such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> to work with memory as a sequence of bytes.
 
 These techniques force you to balance two competing goals with regard to **references** and **values**. Variables that are [reference types](programming-guide/types/index.md#reference-types) hold a reference to the location in memory. Variables that are [value types](programming-guide/types/index.md#value-types) directly contain their value. These differences highlight the key differences that are important for managing memory resources. **Value types** are typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling members of a value type. The cost of the copy is related to the size of the type. **Reference types** are allocated on the managed heap. Each new object requires a new allocation, and subsequently must be reclaimed. Both these operations take time. The reference is copied when a reference type is passed as an argument to a method or returned from a method.
 
@@ -67,7 +67,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare readonly members when a struct can't be immutable
 
-In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. For example, the following is a mutable variation of the 3D point structure:
+In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. Consider a different application that needs a 3D point structure, but must support mutability. The following version of the 3D point structure adds the `readonly` modifier only to those members that don't modify the structure. Follow this example when your design must support modifications to the struct by some members, but you still want the benefits of enforcing readonly on some members:
 
 ```csharp
 public struct Point3D
@@ -108,7 +108,7 @@ public struct Point3D
 
 The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor.
 
-Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state, nor can it access a member that isn't also marked `readonly`. Second, the compiler won't create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
+Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state. Second, the compiler won't create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
 ## Use `ref readonly return` statements for large structures when possible
 
@@ -263,13 +263,13 @@ defensive copies of `in` parameters in more locations.
 
 The `in` parameter designation can also be used with reference types or numeric values. However, the benefits in both cases are minimal, if any.
 
-## Never use mutable structs as in `in` argument
+## Avoid mutable structs as an `in` argument
 
 The techniques described above explain how to avoid copies by returning references and passing values by reference. These techniques work best when the argument types are declared as `readonly struct` types. Otherwise, the compiler must create **defensive copies** in many situations to enforce the readonly-ness of any arguments. Consider the following example that calculates the distance of a 3D point from the origin:
 
 [!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
-The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct`.
+The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member not marked with the `readonly` modifier. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct` and the method calls members that aren't marked `readonly`. If you mark all methods that don't modify the struct state as `readonly`, the compiler can safely determine that the struct state isn't modified, and a defensive copy is not needed.
 
 Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 

@@ -20,7 +20,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <workflowIdle timeToPersist="TimeSpan" 
+      <workflowIdle timeToPersist="TimeSpan"
                     timeToUnload="TimeSpan" />
     </behavior>
   </serviceBehaviors>

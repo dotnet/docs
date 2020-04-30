@@ -22,7 +22,7 @@ Describes an item to be added to a custom dump in error reporting.
   
 ```cpp  
 struct {  
-    ECustomDumpItemKind itemKind;   
+    ECustomDumpItemKind itemKind;
     union {  
         UINT_PTR pReserved;  
     }  

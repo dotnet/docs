@@ -1,7 +1,7 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 02/13/2020
+ms.date: 04/10/2020
 ---
 # dotnet new
 
@@ -14,10 +14,14 @@ ms.date: 02/13/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name]
-    [--nuget-source] [-o|--output] [-u|--uninstall] [--update-apply] [--update-check] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
+dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install {PATH|NUGET_ID}]
+    [-lang|--language {C#|F#|VB}] [-n|--name <OUTPUT_NAME>]
+    [--nuget-source <SOURCE>] [-o|--output <OUTPUT_DIRECTORY>]
+    [-u|--uninstall] [--update-apply] [--update-check] [Template options]
+
+dotnet new <TEMPLATE> [-l|--list] [--type <TYPE>]
+
+dotnet new -h|--help
 ```
 
 ## Description
@@ -25,6 +29,10 @@ dotnet new [-h|--help]
 The `dotnet new` command creates a .NET Core project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
+
+### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 ## Arguments
 
@@ -36,8 +44,8 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 
-  - If the CLI can’t find a template match when invoking `dotnet new`, not even partial.
-  - If there’s a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
+  - If the CLI can't find a template match when invoking `dotnet new`, not even partial.
+  - If there's a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
   The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
@@ -115,7 +123,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   The name for the created output. If no name is specified, the name of the current directory is used.
 
-- **`--nuget-source`**
+- **`--nuget-source <SOURCE>`**
 
   Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
 
@@ -123,9 +131,9 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Location to place the generated output. The default is the current directory.
 
-- **`--type`**
+- **`--type <TYPE>`**
 
-  Filters templates based on available types. Predefined values are "project", "item", or "other".
+  Filters templates based on available types. Predefined values are `project`, `item`, or `other`.
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
@@ -490,6 +498,10 @@ Each project template may have additional options available. The core templates 
 - **`--use-browserlink`**
 
   Includes BrowserLink in the project. Option not available in .NET Core 2.2 and 3.1 SDK.
+
+- **`-rrc|--razor-runtime-compilation`**
+
+  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1 SDK.
 
 ***
 

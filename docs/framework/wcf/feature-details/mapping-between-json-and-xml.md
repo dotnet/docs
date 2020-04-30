@@ -146,9 +146,9 @@ Member Records work as follows:
 Example: The following element maps to a JSON fragment.
 
 ```xml
-<root type="object"/>
-<myLocalName type="string">aaa</myLocalName>
-</root >
+<root type="object">
+    <myLocalName type="string">aaa</myLocalName>
+</root>
 ```
 
 The following JSON fragment is displayed.
@@ -196,13 +196,13 @@ Array Records work as follows:
 Example: The following element maps to a JSON fragment.
 
 ```xml
-<root type="array"/>
+<root type="array">
     <item type="string">myValue1</item>
     <item type="number">2</item>
     <item type="array">
     <item type="boolean">true</item>
     <item type="null"/></item>
-</root >
+</root>
 ```
 
 The following is the JSON fragment.

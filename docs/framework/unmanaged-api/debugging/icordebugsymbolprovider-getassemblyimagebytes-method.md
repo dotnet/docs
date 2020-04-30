@@ -10,8 +10,8 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
   
 ```cpp  
 HRESULT GetAssemblyImageBytes(  
-   [in] CORDB_ADDRESS rva,   
-   [in] ULONG32 length,   
+   [in] CORDB_ADDRESS rva,
+   [in] ULONG32 length,
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
 ```  

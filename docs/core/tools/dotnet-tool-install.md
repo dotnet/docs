@@ -14,10 +14,22 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool install <PACKAGE_NAME> <-g|--global> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_NAME> <--tool-path> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_NAME> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
-dotnet tool install <-h|--help>
+dotnet tool install <PACKAGE_NAME> -g|--global
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
+
+dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
+
+dotnet tool install <PACKAGE_NAME>
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--framework <FRAMEWORK>] [-v|--verbosity <LEVEL>]
+    [--version <VERSION_NUMBER>]
+
+dotnet tool install -h|--help
 ```
 
 ## Description
@@ -110,3 +122,5 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

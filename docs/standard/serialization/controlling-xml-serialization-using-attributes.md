@@ -294,7 +294,7 @@ public class Group {
 If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.
 
 ```xml
-<xs:element name="NewGroupName" type="NewTypeName">
+<xs:element name="NewGroupName" type="NewTypeName" />
 ```
 
 In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.

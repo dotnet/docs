@@ -18,14 +18,14 @@ The Discovery specification does not require that endpoints that participate in 
  The secure channel factory creates output or duplex channels that add a compact signature to message headers. To keep messages as small as possible the compact signature format is used. The structure of a compact signature is shown in the following example.  
   
 ```xml  
-<d:Security ... >   
-  [<d:Sig Scheme="xs:anyURI"   
+<d:Security ... >
+  [<d:Sig Scheme="xs:anyURI"
          [KeyId="xs:base64Binary"]?  
           Refs="..."  
-         [PrefixList]="xs:NMTOKENS"   
-          Sig="xs:base64Binary"   
+         [PrefixList]="xs:NMTOKENS"
+          Sig="xs:base64Binary"
           ... />]?  
-  ...   
+  ...
 </d:Security>  
 ```  
   
@@ -40,7 +40,7 @@ The Discovery specification does not require that endpoints that participate in 
  The secure channel listener creates input or duplex channels that verify the compact signature in received messages. To verify the signature, the `KeyId` specified in the compact signature attached to the message is used to select a certificate from the specified store. If the message does not have a signature or the signature check fails, the messages are dropped. To use the secure binding, the sample defines a factory that creates custom <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> with the added discovery secure binding element. These secure endpoints can be used in discovery announcement listeners and discoverable services.  
   
 ## Sample Details  
- The sample includes a library and 4 console applications:  
+ The sample includes a library and 4 console applications:
   
 - **DiscoverySecurityChannels**: A library that exposes the secure binding. The library computes and verifies the compact signature for outgoing/incoming messages.  
   
@@ -63,9 +63,9 @@ The Discovery specification does not require that endpoints that participate in 
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  

@@ -21,7 +21,7 @@ Contains information that is used to link native code.
 ## Syntax  
   
 ```cpp  
-typedef struct   
+typedef struct
 {  
     BYTE        m_linkType;  
     BYTE        m_flags;  

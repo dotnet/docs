@@ -14,8 +14,13 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool restore <PACKAGE_NAME> [--configfile] [--add-source] [tool-manifest] [--disable-parallel] [--ignore-failed-sources] [--no-cache] [-interactive] [-v|--verbosity]
-dotnet tool restore <-h|--help>
+dotnet tool restore <PACKAGE_NAME>
+    [--configfile <FILE>] [--add-source <SOURCE>]
+    [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
+    [--ignore-failed-sources] [--no-cache] [--interactive]
+    [-v|--verbosity <LEVEL>]
+
+dotnet tool restore -h|--help
 ```
 
 ## Description
@@ -75,3 +80,4 @@ Name/ID of the NuGet package that contains the .NET Core tool to install.
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # QualifierSet_Next function
-Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.   
+Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -24,34 +24,34 @@ Retrieves the next qualifier in an enumeration that started with a call to the [
   
 ```cpp  
 HRESULT QualifierSet_Next (
-   [in] int                  vFunc, 
-   [in] IWbemQualifierSet*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemQualifierSet*   ptr,
    [in] LONG                 lFlags,
-   [out] BSTR*               pstrName,        
+   [out] BSTR*               pstrName,
    [out] VARIANT*            pVal,
-   [out] LONG*               plFlavor                 
-); 
+   [out] LONG*               plFlavor
+);
 ```  
 
 ## Parameters
 
-`vFunc`   
+`vFunc`
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`lFlags`   
+`lFlags`
 [in] Reserved. This parameter must be 0.
 
-`pstrName`   
+`pstrName`
 [out] The name of the qualifier. If `null`, this parameter is ignored; otherwise, `pstrName` should not point to a valid `BSTR` or a memory leak occurs. If not null, the function always allocates a new `BSTR` when it returns `WBEM_S_NO_ERROR`.
 
-`pVal`   
+`pVal`
 [out] When successful, the value for the qualifier. If the function fails, the `VARIANT` pointed to by `pVal` is not modified. If this parameter is `null`, the parameter is ignored.
 
-`plFlavor`   
-[out] A pointer to a LONG that receives the qualifier flavor. If flavor information is not desired, this parameter can be `null`. 
+`plFlavor`
+[out] A pointer to a LONG that receives the qualifier flavor. If flavor information is not desired, this parameter can be `null`.
 
 ## Return value
 

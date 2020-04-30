@@ -23,8 +23,8 @@ Indicates the native location type of a variable.
 ```cpp  
 typedef enum VariableLocationType  
 {  
-    VLT_REGISTER,               
-    VLT_REGISTER_RELATIVE,      
+    VLT_REGISTER,
+    VLT_REGISTER_RELATIVE,
     VLT_INVALID  
 } VariableLocationType;  
 ```  

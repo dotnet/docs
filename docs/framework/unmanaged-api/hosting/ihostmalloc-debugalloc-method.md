@@ -23,10 +23,10 @@ Requests that the host allocate the specified amount of memory from the heap, an
   
 ```cpp  
 HRESULT DebugAlloc (  
-    [in]  SIZE_T  cbSize,   
-    [in]  EMemoryCriticalLevel dwCriticalLevel,   
-    [in]  char*   pszFileName,   
-    [in]  int     iLineNo,   
+    [in]  SIZE_T  cbSize,
+    [in]  EMemoryCriticalLevel dwCriticalLevel,
+    [in]  char*   pszFileName,
+    [in]  int     iLineNo,
     [out] void**  ppMem  
 );  
 ```  

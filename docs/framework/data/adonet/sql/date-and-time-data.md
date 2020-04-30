@@ -53,7 +53,7 @@ SQL Server 2008 introduces new data types for handling date and time information
   
 - `SqlDbType.DateTimeOffSet`  
 
-You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by using one of the preceding <xref:System.Data.SqlDbType> enumerations. 
+You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by using one of the preceding <xref:System.Data.SqlDbType> enumerations.
 
 > [!NOTE]
 > You cannot set the `DbType` property of a `SqlParameter` to `SqlDbType.Date`.
@@ -169,7 +169,7 @@ parameter.Value = DateTimeOffset.Parse("1666-09-02 1:00:00+0");
  You can also supply parameters by using the `AddWithValue` method of a <xref:System.Data.SqlClient.SqlCommand>, as shown in the following code fragment. However, the `AddWithValue` method does not allow you to specify the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> or <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> for the parameter.  
   
 ```csharp  
-command.Parameters.AddWithValue(   
+command.Parameters.AddWithValue(
     "@date", DateTimeOffset.Parse("16660902"));  
 ```  
   

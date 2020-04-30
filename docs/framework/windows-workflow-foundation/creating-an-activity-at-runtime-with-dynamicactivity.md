@@ -35,7 +35,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
     //Create the activity, property, and implementation  
                 Activity dynamicWorkflow = new DynamicActivity()  
                 {  
-                    Properties =   
+                    Properties =
                     {  
                         new DynamicActivityProperty  
                         {  
@@ -46,7 +46,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
                     },  
                     Implementation = () => new Sequence()  
                     {  
-                        Activities =   
+                        Activities =
                         {  
                             new WriteLine()  
                             {  

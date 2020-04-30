@@ -270,7 +270,7 @@ items:
     Now that you've seen the different numeric types, write code that calculates
     the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle
     is the radius squared multiplied by PI. One hint: .NET contains a constant
-    for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value.
+    for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).

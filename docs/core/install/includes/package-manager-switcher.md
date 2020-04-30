@@ -8,6 +8,7 @@
 > - [CentOS 7 - x64](../linux-package-manager-centos7.md)
 > - [Debian 10 - x64](../linux-package-manager-debian10.md)
 > - [Debian 9 - x64](../linux-package-manager-debian9.md)
+> - [Fedora 32 - x64](../linux-package-manager-fedora32.md)
 > - [Fedora 31 - x64](../linux-package-manager-fedora31.md)
 > - [Fedora 30 - x64](../linux-package-manager-fedora30.md)
 > - [Fedora 29 - x64](../linux-package-manager-fedora29.md)

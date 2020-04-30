@@ -39,7 +39,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
      The capacity of a collection is the number of elements it can contain. The count of a collection is the number of elements it actually contains. Some collections hide the capacity or the count or both.
 
-     Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This reduces the code required to use the collection; however, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List%601>, If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, adding an item is an O(1) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(n) operation, where n is <xref:System.Collections.Generic.List%601.Count%2A>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
+     Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This reduces the code required to use the collection; however, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List%601>, If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, adding an item is an O(`1`) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(`n`) operation, where n is <xref:System.Collections.Generic.List%601.Count%2A>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
 
      A <xref:System.Collections.BitArray> is a special case; its capacity is the same as its length, which is the same as its count.
 
@@ -69,20 +69,20 @@ Similar data can often be handled more efficiently when stored and manipulated a
 
 ### Collection Algorithmic Complexity
 
-| Mutable                   | Amortized | Worst Case              | Immutable                          | Complexity |
-|---------------------------|-----------|-------------------------|------------------------------------|------------|
-| `Stack<T>.Push`           | O(1)      | O(n)                    | `ImmutableStack<T>.Push`           | O(1)       |
-| `Queue<T>.Enqueue`        | O(1)      | O(n)                    | `ImmutableQueue<T>.Enqueue`        | O(1)       |
-| `List<T>.Add`             | O(1)      | O(n)                    | `ImmutableList<T>.Add`             | O(log n)   |
-| `List<T>.Item[Int32]`     | O(1)      | O(1)                    | `ImmutableList<T>.Item[Int32]`     | O(log n)   |
-| `List<T>.Enumerator`      | O(n)      | O(n)                    | `ImmutableList<T>.Enumerator`      | O(n)       |
-| `HashSet<T>.Add`, lookup  | O(1)      | O(n)                    | `ImmutableHashSet<T>.Add`          | O(log n)   |
-| `SortedSet<T>.Add`        | O(log n)  | O(n)                    | `ImmutableSortedSet<T>.Add`        | O(log n)   |
-| `Dictionary<T>.Add`       | O(1)      | O(n)                    | `ImmutableDictionary<T>.Add`       | O(log n)   |
-| `Dictionary<T>` lookup    | O(1)      | O(1) – or strictly O(n) | `ImmutableDictionary<T>` lookup    | O(log n)   |
-| `SortedDictionary<T>.Add` | O(log n)  | O(n log n)              | `ImmutableSortedDictionary<T>.Add` | O(log n)   |
+| Mutable                   | Amortized  | Worst Case                  | Immutable                          | Complexity |
+|---------------------------|------------|-----------------------------|------------------------------------|------------|
+| `Stack<T>.Push`           | O(`1`)     | O(`n`)                      | `ImmutableStack<T>.Push`           | O(`1`)     |
+| `Queue<T>.Enqueue`        | O(`1`)     | O(`n`)                      | `ImmutableQueue<T>.Enqueue`        | O(`1`)     |
+| `List<T>.Add`             | O(`1`)     | O(`n`)                      | `ImmutableList<T>.Add`             | O(log `n`) |
+| `List<T>.Item[Int32]`     | O(`1`)     | O(`1`)                      | `ImmutableList<T>.Item[Int32]`     | O(log `n`) |
+| `List<T>.Enumerator`      | O(`n`)     | O(`n`)                      | `ImmutableList<T>.Enumerator`      | O(`n`)     |
+| `HashSet<T>.Add`, lookup  | O(`1`)     | O(`n`)                      | `ImmutableHashSet<T>.Add`          | O(log `n`) |
+| `SortedSet<T>.Add`        | O(log `n`) | O(`n`)                      | `ImmutableSortedSet<T>.Add`        | O(log `n`) |
+| `Dictionary<T>.Add`       | O(`1`)     | O(`n`)                      | `ImmutableDictionary<T>.Add`       | O(log `n`) |
+| `Dictionary<T>` lookup    | O(`1`)     | O(`1`) – or strictly O(`n`) | `ImmutableDictionary<T>` lookup    | O(log `n`) |
+| `SortedDictionary<T>.Add` | O(log `n`) | O(`n` log `n`)              | `ImmutableSortedDictionary<T>.Add` | O(log `n`) |
 
-A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop, however; an `ImmutableList<T>` does a poor job inside a `for` loop, due to its O(log n) time for its indexer. It does fine when using `foreach` however. This is because `ImmutableList<T>` uses a binary tree to store its data instead of a simple array like `List<T>` uses. An array can be very quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
+A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop, however; an `ImmutableList<T>` does a poor job inside a `for` loop, due to its O(log `n`) time for its indexer. It does fine when using `foreach` however. This is because `ImmutableList<T>` uses a binary tree to store its data instead of a simple array like `List<T>` uses. An array can be very quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
 
 Additionally, the `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`. That's because they both use binary trees. The significant difference of course is that `ImmutableSortedSet<T>` uses an immutable one. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have your immutability and performance too.
 

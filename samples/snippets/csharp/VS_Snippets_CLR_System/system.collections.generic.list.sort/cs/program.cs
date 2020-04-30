@@ -14,11 +14,9 @@ public class Part : IEquatable<Part>, IComparable<Part>
         $"ID: {PartId}   Name: {PartName}";
 
     public override bool Equals(object obj) => 
-        obj is null
-            ? false
-            : !(obj is Part part)
-                ? false
-                : Equals(part);
+        (obj is Part part)
+                ? Equals(part)
+                : false;
 
     public int SortByNameAscending(string name1, string name2) => 
         name1?.CompareTo(name2) ?? 1;

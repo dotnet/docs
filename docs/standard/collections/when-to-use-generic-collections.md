@@ -12,7 +12,7 @@ ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
 
 Using generic collections gives you the automatic benefit of type safety without having to derive from a base collection type and implement type-specific members. Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics, there's no need to box the elements.
 
-For programs that target .NET Standard 1.0 or later, use the generic collection classes in the <xref:System.Collections.Concurrent> namespace when multiple threads might be adding or removing items from the collection concurrently. Additionally, when immutability is desired, consider the generic collection classes <xref:System.Collections.Immutable>.
+For programs that target .NET Standard 1.0 or later, use the generic collection classes in the <xref:System.Collections.Concurrent> namespace when multiple threads might be adding or removing items from the collection concurrently. Additionally, when immutability is desired, consider the generic collection classes in the <xref:System.Collections.Immutable> namespace.
 
 The following generic types correspond to existing collection types:
 
@@ -22,7 +22,7 @@ The following generic types correspond to existing collection types:
 
 - <xref:System.Collections.ObjectModel.Collection%601> is the generic class that corresponds to <xref:System.Collections.CollectionBase>. <xref:System.Collections.ObjectModel.Collection%601> can be used as a base class, but unlike <xref:System.Collections.CollectionBase>, it is not abstract, which makes it much easier to use.
 
-- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is the generic class that corresponds to <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is not abstract, and has a constructor that makes it easy to expose an existing <xref:System.Collections.Generic.List%601> as a read-only collection.
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is the generic class that corresponds to <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is not abstract and has a constructor that makes it easy to expose an existing <xref:System.Collections.Generic.List%601> as a read-only collection.
 
 - The <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Immutable.ImmutableQueue%601>, <xref:System.Collections.Generic.Array%601>, <xref:System.Collections.Concurrent.ConcurrentArray%601>, <xref:System.Collections.Immutable.ImmutableArray%601>, <xref:System.Collections.Generic.SortedList%602>, and <xref:System.Collections.Immutable.ImmutableSortedSet%601> generic classes correspond to the respective nongeneric classes with the same names.
 
@@ -42,7 +42,7 @@ Several generic collection types do not have nongeneric counterparts. They inclu
 
 ### Immutable builders
 
-When considering immutability as a functional desire of application development, the <xref:System.Collections.Immutable> namespace offers generic collection types. All of the immutable collection types offer `Builders` as an optimization to performing numerous mutations. `Builders` work to batch operations in an unfrozen state. When all mutations have been completed on a `Builder` instance, call `ToImmutable` to freeze all nodes and create an `Immutable*<T>` generic collection.
+When you desire immutability functionality in your app, the <xref:System.Collections.Immutable> namespace offers generic collection types you can use. All of the immutable collection types offer `Builder` subclasses that can optimized performance when you're performing multiple mutations. The `Builder` class batches operations in a mutable state. When all mutations have been completed, call the `ToImmutable` method to "freeze" all nodes and create an immutable generic collection, for example, an <xref:System.Collections.Immutable.ImmutableList%601>.
 
 - The <xref:System.Collections.Immutable.ImmutableList%601.Builder> object can be created by calling the nongeneric <xref:System.Collections.Immutable.ImmutableList.CreateBuilder%2A?displayProperty=nameWithType> function. From a <xref:System.Collections.Immutable.ImmutableList%601.Builder> instance, you can call <xref:System.Collections.Immutable.ImmutableList%601.Builder.ToImmutable%2A?displayProperty=nameWithType>. Likewise, from an <xref:System.Collections.Immutable.ImmutableList%601> you can call <xref:System.Collections.Immutable.ImmutableList%601.ToBuilder?displayProperty=nameWithType> to create a builder instance from the generic immutable collection.
 

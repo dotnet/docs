@@ -14,7 +14,7 @@ Sometimes you want to find all elements that have a specific attribute. You are 
  The following code selects just the elements that have the `Select` attribute.  
   
 ```vb  
-Dim doc As XElement = _   
+Dim doc As XElement = _
     <Root>  
         <Child1>1</Child1>  
         <Child2 Select='true'>2</Child2>  

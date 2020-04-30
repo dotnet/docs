@@ -42,9 +42,9 @@ Compensation in Windows Workflow Foundation (WF) is the mechanism by which previ
  When the workflow is invoked, the following output is displayed to the console.  
   
  **ReserveFlight: Ticket is reserved.**  
-**ManagerApproval: Manager approval received.**   
-**PurchaseFlight: Ticket is purchased.**   
-**Workflow completed successfully with status: Closed.**    
+**ManagerApproval: Manager approval received.**
+**PurchaseFlight: Ticket is purchased.**
+**Workflow completed successfully with status: Closed.**
 > [!NOTE]
 > The sample activities in this topic such as `ReserveFlight` display their name and purpose to the console to help illustrate the order in which the activities are executed when compensation occurs.  
   
@@ -86,11 +86,11 @@ Compensation in Windows Workflow Foundation (WF) is the mechanism by which previ
  When the workflow is invoked, the simulated error condition exception is handled by the host application in <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>, the workflow is canceled, and the compensation logic is invoked.  
   
  **ReserveFlight: Ticket is reserved.**  
-**SimulatedErrorCondition: Throwing an ApplicationException.**   
-**Workflow Unhandled Exception:**   
-**System.ApplicationException: Simulated error condition in the workflow.**   
-**CancelFlight: Ticket is canceled.**   
-**Workflow completed successfully with status: Canceled.**    
+**SimulatedErrorCondition: Throwing an ApplicationException.**
+**Workflow Unhandled Exception:**
+**System.ApplicationException: Simulated error condition in the workflow.**
+**CancelFlight: Ticket is canceled.**
+**Workflow completed successfully with status: Canceled.**
 ### Cancellation and CompensableActivity  
  If the activities in the <xref:System.Activities.Statements.CompensableActivity.Body%2A> of a <xref:System.Activities.Statements.CompensableActivity> have not completed and the activity is canceled, the activities in the <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> are executed.  
   
@@ -108,7 +108,7 @@ Activity wf = new Sequence()
         {  
             Body = new Sequence  
             {  
-                Activities =   
+                Activities =
                 {  
                     new ChargeCreditCard(),  
                     new SimulatedErrorCondition(),  
@@ -156,10 +156,10 @@ Activity wf = new Sequence()
  When the workflow is invoked, the simulated error condition exception is handled by the host application in <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>, the workflow is canceled, and the cancellation logic of the <xref:System.Activities.Statements.CompensableActivity> is invoked. In this example, the compensation logic and the cancellation logic have different goals. If the <xref:System.Activities.Statements.CompensableActivity.Body%2A> completed successfully, then this means the credit card was charged and the flight booked, so the compensation should undo both steps. (In this example, canceling the flight automatically cancels the credit card charges.) However, if the <xref:System.Activities.Statements.CompensableActivity> is canceled, this means the <xref:System.Activities.Statements.CompensableActivity.Body%2A> did not complete and so the logic of the <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> needs to be able to determine how to best handle the cancellation. In this example, the <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> cancels the credit card charge, but since `ReserveFlight` was the last activity in the <xref:System.Activities.Statements.CompensableActivity.Body%2A>, it does not attempt to cancel the flight. Since `ReserveFlight` was the last activity in the <xref:System.Activities.Statements.CompensableActivity.Body%2A>, if it had successfully completed then the <xref:System.Activities.Statements.CompensableActivity.Body%2A> would have completed and no cancellation would be possible.  
   
  **ChargeCreditCard: Charge credit card for flight.**  
-**SimulatedErrorCondition: Throwing an ApplicationException.**   
-**Workflow Unhandled Exception:**   
-**System.ApplicationException: Simulated error condition in the workflow.**   
-**CancelCreditCard: Cancel credit card charges.**   
+**SimulatedErrorCondition: Throwing an ApplicationException.**
+**Workflow Unhandled Exception:**
+**System.ApplicationException: Simulated error condition in the workflow.**
+**CancelCreditCard: Cancel credit card charges.**
 **Workflow completed successfully with status: Canceled.**  For more information about cancellation, see [Cancellation](modeling-cancellation-behavior-in-workflows.md).  
   
 ### Explicit Compensation Using the Compensate Activity  
@@ -239,9 +239,9 @@ Activity wf = new Sequence()
  When the workflow is invoked, the following output is displayed to the console.  
   
  **ReserveFlight: Ticket is reserved.**  
-**SimulatedErrorCondition: Throwing an ApplicationException.**   
-**CancelFlight: Ticket is canceled.**   
-**Workflow completed successfully with status: Closed.**    
+**SimulatedErrorCondition: Throwing an ApplicationException.**
+**CancelFlight: Ticket is canceled.**
+**Workflow completed successfully with status: Closed.**
 ### Confirming Compensation  
  By default, compensable activities can be compensated any time after they have completed. In some scenarios this may not be appropriate. In the previous example the compensation to reserving the ticket was to cancel the reservation. However, after the flight has been completed this compensation step is no longer valid. Confirming the compensable activity invokes the activity specified by the <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>. One possible use for this is to allow any resources that are necessary to perform the compensation to be released. After a compensable activity is confirmed it is not possible for it to be compensated, and if this is attempted an <xref:System.InvalidOperationException> exception is thrown. When a workflow completes successfully, all non-confirmed and non-compensated compensable activities that completed successfully are confirmed in reverse order of completion. In this example the flight is reserved, purchased, and completed, and then the compensable activity is confirmed. To confirm a <xref:System.Activities.Statements.CompensableActivity>, use the <xref:System.Activities.Statements.Confirm> activity and specify the <xref:System.Activities.Statements.CompensationToken> of the <xref:System.Activities.Statements.CompensableActivity> to confirm.  
   
@@ -308,11 +308,11 @@ Activity wf = new Sequence()
 When the workflow is invoked, the following output is displayed to the console.  
   
 **ReserveFlight: Ticket is reserved.**  
-**ManagerApproval: Manager approval received.**   
-**PurchaseFlight: Ticket is purchased.**   
-**TakeFlight: Flight is completed.**   
-**ConfirmFlight: Flight has been taken, no compensation possible.**   
-**Workflow completed successfully with status: Closed.**   
+**ManagerApproval: Manager approval received.**
+**PurchaseFlight: Ticket is purchased.**
+**TakeFlight: Flight is completed.**
+**ConfirmFlight: Flight has been taken, no compensation possible.**
+**Workflow completed successfully with status: Closed.**
 
 ## Nesting Compensation Activities  
 

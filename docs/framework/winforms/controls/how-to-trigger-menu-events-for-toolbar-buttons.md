@@ -39,13 +39,13 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
     ```  
   
     ```csharp  
-    public void ToolBarConfig()   
+    public void ToolBarConfig()
     {  
        toolBar1.Buttons.Add(new ToolBarButton("One"));  
        toolBar1.Buttons.Add(new ToolBarButton("Two"));  
        toolBar1.Buttons.Add(new ToolBarButton("Three"));  
   
-       toolBar1.ButtonClick +=   
+       toolBar1.ButtonClick +=
           new ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);  
     }  
     ```  
@@ -58,7 +58,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
           toolBar1->Buttons->Add(gcnew ToolBarButton("Two"));  
           toolBar1->Buttons->Add(gcnew ToolBarButton("Three"));  
   
-          toolBar1->ButtonClick +=   
+          toolBar1->ButtonClick +=
              gcnew ToolBarButtonClickEventHandler(this,  
              &Form1::toolBar1_ButtonClick);  
        }  

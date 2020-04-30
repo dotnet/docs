@@ -24,7 +24,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-### To create a connection to a database  
+## Create a connection to a database  
   
 1. In Visual Studio, open **Server Explorer**/**Database Explorer** by clicking **Server Explorer**/**Database Explorer** on the **View** menu.  
   
@@ -40,7 +40,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 3. Name the file `northwind.dbml`. Click **Add**. The Object Relational Designer (O/R Designer) is opened for the northwind.dbml file.  
   
-### To add tables to query to the O/R Designer  
+## Add tables to query to the O/R Designer  
   
 1. In **Server Explorer**/**Database Explorer**, expand the connection to the Northwind database. Expand the **Tables** folder.  
   
@@ -54,7 +54,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 4. Save your project.  
   
-### To add code to query the database and display the results  
+## Add code to query the database and display the results  
   
 1. From the **Toolbox**, drag a <xref:System.Windows.Forms.DataGridView> control onto the default Windows Form for your project, Form1.  
   
@@ -64,11 +64,11 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
      You can create an instance of the <xref:System.Data.Linq.DataContext> in your code and query the tables specified by the O/R Designer.  
   
-     Add the following code to the `Load` event. This code queries the tables that are exposed as properties of your data context and determines the minimum and maximum values for the results. The sample uses he `Aggregate` clause to query for a single result, and the `Group By` clause to show an average for grouped results.  
+     Add the following code to the `Load` event. This code queries the tables that are exposed as properties of your data context and determines the minimum and maximum values for the results. The sample uses the `Aggregate` clause to query for a single result, and the `Group By` clause to show an average for grouped results.  
   
      [!code-vb[VbLINQToSQLHowTos#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form7.vb#14)]  
   
-4. Press F5 to run your project and view the results.  
+4. Press **F5** to run your project and view the results.  
   
 ## See also
 

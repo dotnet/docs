@@ -60,17 +60,17 @@ Removes a listener from the `Listeners` collection for a trace source.
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="TraceSourceApp" switchName="sourceSwitch"   
+      <source name="TraceSourceApp" switchName="sourceSwitch"
          switchType="System.Diagnostics.SourceSwitch" >  
          <listeners>  
            <remove name="Default"/>  
-           <add name="console"   
+           <add name="console"
              type="System.Diagnostics.ConsoleTraceListener" />  
          </listeners>  
       </source>  
     </sources>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
 ## See also

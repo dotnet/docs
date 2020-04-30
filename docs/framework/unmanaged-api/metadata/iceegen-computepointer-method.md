@@ -26,7 +26,7 @@ Determines the buffer for the specified code section.
 ```cpp  
 HRESULT ComputePointer (  
     [in]  HCEESECTION  section,  
-    [in]  ULONG        RVA,   
+    [in]  ULONG        RVA,
     [out] UCHAR        **lpBuffer  
 );  
 ```  

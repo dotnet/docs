@@ -69,7 +69,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
      In the example below, the path set for the location of the text file is the My Documents folder. This is done because you can assume that most computers running the Windows operating system will include this directory. This also allows users with minimal system access levels to safely run the application.  
   
     ```vb  
-    ' You should replace the bold text file   
+    ' You should replace the bold text file
     ' in the sample below with a text file of your own choosing.  
     TreeView1.Nodes.Add(New myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
@@ -77,7 +77,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     ```  
   
     ```csharp  
-    // You should replace the bold text file   
+    // You should replace the bold text file
     // in the sample below with a text file of your own choosing.  
     // Note the escape character used (@) when specifying the path.  
     treeView1.Nodes.Add(new myTreeNode(System.Environment.GetFolderPath
@@ -86,7 +86,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     ```  
   
     ```cpp  
-    // You should replace the bold text file   
+    // You should replace the bold text file
     // in the sample below with a text file of your own choosing.  
     treeView1->Nodes->Add(new myTreeNode(String::Concat(  
        System::Environment::GetFolderPath  
@@ -119,7 +119,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           System::Windows::Forms::TreeViewEventArgs ^  e)  
        {  
           myTreeNode ^ myNode = safe_cast<myTreeNode^>(e->Node);  
-          MessageBox::Show(String::Concat("Node selected is ",   
+          MessageBox::Show(String::Concat("Node selected is ",
              myNode->FilePath));  
        }  
     ```  

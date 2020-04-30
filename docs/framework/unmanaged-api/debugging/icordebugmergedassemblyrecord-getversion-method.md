@@ -10,9 +10,9 @@ Gets the assembly's version information.
   
 ```cpp  
 HRESULT GetVersion(  
-   [out] USHORT *pMajor,   
-   [out] USHORT *pMinor,   
-   [out] USHORT *pBuild,   
+   [out] USHORT *pMajor,
+   [out] USHORT *pMinor,
+   [out] USHORT *pBuild,
    [out] USHORT *pRevision  
 );  
 ```  

@@ -30,7 +30,7 @@ There are also ways to specify other scenarios like pre-release versions etc. wh
 ### Backwards Compatibility
 
 As you release new versions of your library, backwards compatibility with previous versions will most likely be one of your major concerns.
-A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version. 
+A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version.
 A new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
 
 Here are some things to consider when trying to maintain backwards compatibility with older versions of your library:
@@ -39,7 +39,7 @@ Here are some things to consider when trying to maintain backwards compatibility
 will have to be updated. This is a huge breaking change and is strongly discouraged.
 - Method signatures: When updating a method behavior requires you to change its signature as well, you should instead create an overload so that code calling into that method will still work.
 You can always manipulate the old method signature to call into the new method signature so that implementation remains consistent.
-- [Obsolete attribute](programming-guide/concepts/attributes/common-attributes.md#Obsolete): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions. This ensures developers utilizing your library are better prepared for breaking changes.
+- [Obsolete attribute](language-reference/attributes/general.md#obsolete-attribute): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions. This ensures developers utilizing your library are better prepared for breaking changes.
 - Optional Method Arguments: When you make previously optional method arguments compulsory or change their default value then all code that does not supply those arguments will need to be updated.
 
 > [!NOTE]

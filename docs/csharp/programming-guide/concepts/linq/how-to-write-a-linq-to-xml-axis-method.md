@@ -36,7 +36,7 @@ public static class MyExtensions
     private static string NameWithPredicate(XElement el)  
     {  
         if (el.Parent != null && el.Parent.Elements(el.Name).Count() != 1)  
-            return GetQName(el) + "[" +   
+            return GetQName(el) + "[" +
                 (el.ElementsBeforeSelf(el.Name).Count() + 1) + "]";  
         else  
             return GetQName(el);  

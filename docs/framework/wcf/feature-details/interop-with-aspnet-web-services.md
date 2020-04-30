@@ -46,7 +46,7 @@ public class Service : IEcho
 ```xml  
 <httpModules>  
     <remove name="ServiceModel" />  
-<httpModules/>  
+</httpModules>
 ```  
   
 ## See also

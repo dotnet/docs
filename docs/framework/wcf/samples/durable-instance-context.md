@@ -395,6 +395,7 @@ Client applications must add the DurableInstanceContextChannel into the channel 
 type="Microsoft.ServiceModel.Samples.DurableInstanceContextBindingElementSection, DurableInstanceContextExtension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
    </bindingElementExtensions>
  </extensions>
+</system.serviceModel>
 ```
 
 Now the binding element can be used with a custom binding just like other standard binding elements:

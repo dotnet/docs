@@ -28,8 +28,8 @@ Creates an instance of the specified managed type.
   
 ```cpp  
 STDAPI ClrCreateManagedInstance (  
-    [in]  LPCWSTR  pTypeName,   
-    [in]  REFIID   riid,   
+    [in]  LPCWSTR  pTypeName,
+    [in]  REFIID   riid,
     [out] void     **ppObject  
 );  
 ```  

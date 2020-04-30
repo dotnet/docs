@@ -24,7 +24,7 @@ Contains values that indicate the amount of free physical memory on the computer
 typedef enum {  
     eMemoryAvailableLow     = 1,  
     eMemoryAvailableNeutral = 2,  
-    eMemoryAvailableHigh    = 3   
+    eMemoryAvailableHigh    = 3
 } EMemoryAvailable;  
 ```  
   

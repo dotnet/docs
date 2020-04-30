@@ -23,15 +23,15 @@ Gets metadata associated with the field referenced by the specified FieldDef tok
   
 ```cpp  
 HRESULT GetFieldProps (  
-   [in]  mdFieldDef        mb,   
+   [in]  mdFieldDef        mb,
    [out] mdTypeDef         *pClass,  
    [out] LPWSTR            szField,  
-   [in]  ULONG             cchField,   
+   [in]  ULONG             cchField,
    [out] ULONG             *pchField,  
    [out] DWORD             *pdwAttr,  
-   [in]  PCCOR_SIGNATURE   *ppvSigBlob,   
-   [out] ULONG             *pcbSigBlob,   
-   [out] DWORD             *pdwCPlusTypeFlag,   
+   [in]  PCCOR_SIGNATURE   *ppvSigBlob,
+   [out] ULONG             *pcbSigBlob,
+   [out] DWORD             *pdwCPlusTypeFlag,
    [out] UVCP_CONSTANT     *ppValue,  
    [out] ULONG             *pcchValue  
 );  

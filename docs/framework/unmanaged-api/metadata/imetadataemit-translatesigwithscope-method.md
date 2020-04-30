@@ -22,18 +22,18 @@ Imports an assembly into the current scope and gets a new metadata signature for
 ## Syntax  
   
 ```cpp  
-HRESULT TranslateSigWithScope (   
-    [in]  IMetaDataAssemblyImport   *pAssemImport,   
-    [in]  const void                *pbHashValue,   
-    [in]  ULONG                     cbHashValue,   
-    [in]  IMetaDataImport           *import,   
-    [in]  PCCOR_SIGNATURE           pbSigBlob,   
+HRESULT TranslateSigWithScope (
+    [in]  IMetaDataAssemblyImport   *pAssemImport,
+    [in]  const void                *pbHashValue,
+    [in]  ULONG                     cbHashValue,
+    [in]  IMetaDataImport           *import,
+    [in]  PCCOR_SIGNATURE           pbSigBlob,
     [in]  ULONG                     cbSigBlob,  
-    [in]  IMetaDataAssemblyEmit     *pAssemEmit,   
-    [in]  IMetaDataEmit             *emit,   
-    [out] PCOR_SIGNATURE            pvTranslatedSig,   
-    [in]  ULONG                     cbTranslatedSigMax,   
-    [out] ULONG                     *pcbTranslatedSig   
+    [in]  IMetaDataAssemblyEmit     *pAssemEmit,
+    [in]  IMetaDataEmit             *emit,
+    [out] PCOR_SIGNATURE            pvTranslatedSig,
+    [in]  ULONG                     cbTranslatedSigMax,
+    [out] ULONG                     *pcbTranslatedSig
 );  
 ```  
   

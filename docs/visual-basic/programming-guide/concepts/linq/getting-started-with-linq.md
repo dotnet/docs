@@ -53,5 +53,5 @@ This section contains overviews, examples, and background information that will 
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides links to topics that explain the LINQ technologies.  
   
- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)  
+ [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/index.md)  
  Provides links to topics about using LINQ in C#.

@@ -16,7 +16,7 @@ Creates and configures a <xref:System.Activities.ActivityBuilder> object that pr
 ## Syntax  
   
 ```csharp  
-public ActivityBuilder Build();   
+public ActivityBuilder Build();
 ```  
   
 ## Return Value  

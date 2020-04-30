@@ -15,9 +15,9 @@ As a *by-default* recommendation, the following is the main criteria recommended
 - **Serverless functions & event handlers:** Choose Azure Functions
 - **Large-scale Batch:** Choose Azure Batch
 
-However, this recommendation should be taken with a pinch of salt, as the product's selection will depend on your specific application’s needs and characteristics. Not all applications are the same even when initially they might look similar types.
+However, this recommendation should be taken with a pinch of salt, as the product's selection will depend on your specific application's needs and characteristics. Not all applications are the same even when initially they might look similar types.
 
-After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
+After a deeper analysis of the application's needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
 In the following table, you can see a breakdown of different kinds of apps and their possible and recommended Azure hosting scenarios.
 

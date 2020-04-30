@@ -17,7 +17,7 @@ ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the Slider control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all slider controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the Control View and the Content View of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to slider controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -25,7 +25,7 @@ ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
 |------------------|------------------|  
 |Slider<br /><br /> -   Button (2 or 4)<br />-   Thumb (only 1)<br />-   List Item (0 or more)|Slider<br /><br /> -   List Item (0 or more)|  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to the Slider control type. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -42,7 +42,7 @@ ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The edit control is always included in the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The edit control is always included in the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
   
-<a name="Required_UI_Automation_Control_Patterns"></a>   
+<a name="Required_UI_Automation_Control_Patterns"></a>
 ## Required UI Automation Control Patterns  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by all slider controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -52,7 +52,7 @@ ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider>|Depends|A slider should support the RangeValue control pattern if the content can be set to a value within a numerical range.|  
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|A slider should support the Value control pattern if the content represents one value among a discrete set of options.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all slider controls.  
   

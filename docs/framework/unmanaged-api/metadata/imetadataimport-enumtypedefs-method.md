@@ -23,9 +23,9 @@ Enumerates TypeDef tokens representing all types within the current scope.
   
 ```cpp  
 HRESULT EnumTypeDefs (  
-   [out] HCORENUM   *phEnum,   
+   [out] HCORENUM   *phEnum,
    [in]  mdTypeDef  rTypeDefs[],  
-   [in]  ULONG      cMax,   
+   [in]  ULONG      cMax,
    [out] ULONG      *pcTypeDefs  
 );  
 ```  

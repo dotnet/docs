@@ -56,8 +56,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)  
         {  
             // The following call caused the LoadFrom context to be used  
-            // because the assembly is loaded using LoadFrom and the path is   
-            // located outside of the Load context probing path.   
+            // because the assembly is loaded using LoadFrom and the path is
+            // located outside of the Load context probing path.
             Assembly.LoadFrom(@"C:\Text\Test.dll");  
         }  
     }  

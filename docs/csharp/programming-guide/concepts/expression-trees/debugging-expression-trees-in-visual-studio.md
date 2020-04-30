@@ -26,7 +26,7 @@ Alternatively, you can install and use [a custom visualizer](https://docs.micros
   
 1. Click the magnifying glass icon that appears next to the expression tree in **DataTips**, a **Watch** window, the **Autos** window, or the **Locals** window.  
 
-    A list of available visualizers is displayed.: 
+    A list of available visualizers is displayed.:
 
     ![Screenshot showing the Opening of visualizers from Visual Studio.](media/debugging-expression-trees-in-visual-studio/expression-tree-visualizers.png)
 

@@ -353,7 +353,7 @@ To put your control to use, you will need to host it on a form. As with a standa
 
 1. In **Solution Explorer**, right-click **ctlClockLib**, and then click **Build**.
 
-2. Add a new **Windows Application** project to the solution, and name it **Test**.
+2. Add a new **Windows Forms Application** project to the solution, and name it **Test**.
 
 3. In **Solution Explorer**, right-click the **References** node for your test project. Click **Add Reference** to display the **Add Reference** dialog box. Click the tab labeled **Projects**. Your `ctlClockLib` project will be listed under **Project Name**. Double-click the project to add the reference to the test project.
 

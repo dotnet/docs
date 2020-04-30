@@ -55,14 +55,14 @@ xmlStream.Close();
 ```xml  
 <NewDataSet xmlns:od="urn:schemas-microsoft-com:officedata">  
 <Categories>  
-  <CategoryID od:adotype="3">1</CategoryID>   
-  <CategoryName od:maxLength="15" od:adotype="130">Beverages</CategoryName>   
-  <Description od:adotype="203">Soft drinks and teas</Description>   
+  <CategoryID od:adotype="3">1</CategoryID>
+  <CategoryName od:maxLength="15" od:adotype="130">Beverages</CategoryName>
+  <Description od:adotype="203">Soft drinks and teas</Description>
 </Categories>  
 <Products>  
-  <ProductID od:adotype="20">1</ProductID>   
-  <ReorderLevel od:adotype="3">10</ReorderLevel>   
-  <Discontinued od:adotype="11">0</Discontinued>   
+  <ProductID od:adotype="20">1</ProductID>
+  <ReorderLevel od:adotype="3">10</ReorderLevel>
+  <Discontinued od:adotype="11">0</Discontinued>
 </Products>  
 </NewDataSet>  
 ```  

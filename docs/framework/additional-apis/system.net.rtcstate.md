@@ -24,7 +24,7 @@ internal class RtcState
 
 > [!WARNING]
 > The `RtcState` class is internal and is not meant to be used directly in your code.
-> 
+>
 > Microsoft does not support the use of this class in a production application under any circumstance.
 
 ## Requirements

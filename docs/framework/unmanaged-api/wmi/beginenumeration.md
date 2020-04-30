@@ -24,10 +24,10 @@ Resets an enumerator back to the beginning of the enumeration.
   
 ```cpp  
 HRESULT BeginEnumeration (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LONG              lEnumFlags
-); 
+);
 ```  
 
 ## Parameters
@@ -56,7 +56,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 This function wraps a call to the [IWbemClassObject::BeginEnumeration](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) method.
 
-The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
+The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive.
 
 **Group 1**
 

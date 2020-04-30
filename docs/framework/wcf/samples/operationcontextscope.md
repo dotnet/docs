@@ -17,14 +17,14 @@ The OperationContextScope sample demonstrates how to send extra information on a
 ```csharp
 public bool RetrieveHeader(string guid)  
 {  
-     MessageHeaders messageHeaderCollection =   
+     MessageHeaders messageHeaderCollection =
              OperationContext.Current.IncomingMessageHeaders;  
      String guidHeader = null;  
   
      Console.WriteLine("Trying to check if IncomingMessageHeader " +  
                " collection contains header with value {0}", guid);  
      if (messageHeaderCollection.FindHeader(  
-                       CustomHeader.HeaderName,   
+                       CustomHeader.HeaderName,
                        CustomHeader.HeaderNamespace) != -1)  
      {  
           guidHeader = messageHeaderCollection.GetHeader<String>(  
@@ -36,8 +36,8 @@ public bool RetrieveHeader(string guid)
      }  
      if (guidHeader != null)  
      {  
-          Console.WriteLine("Found header with value {0}. "+   
-         "Does it match with GUID sent as parameter: {1}",   
+          Console.WriteLine("Found header with value {0}. "+
+         "Does it match with GUID sent as parameter: {1}",
           guidHeader, guidHeader.Equals(guid));  
       }  
   
@@ -71,7 +71,7 @@ using (new OperationContextScope(client1.InnerChannel))
     //Add the header to the OutgoingMessageHeader collection.  
     OperationContext.Current.OutgoingMessageHeaders.Add(customHeader);  
   
-    //Now call RetrieveHeader on both the proxies. Since the OperationContextScope is tied to   
+    //Now call RetrieveHeader on both the proxies. Since the OperationContextScope is tied to
     //client1's InnerChannel, the header should only be added to calls made on that client.  
     //Calls made on client2 should not be sending the header across even though the call  
     //is made in the same OperationContextScope.  
@@ -117,9 +117,9 @@ Press <ENTER> to terminate client.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\OperationContextScope`  

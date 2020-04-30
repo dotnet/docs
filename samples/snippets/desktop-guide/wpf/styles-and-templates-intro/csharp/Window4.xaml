@@ -1,0 +1,26 @@
+﻿<Window x:Class="IntroToStylingAndTemplating.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
+        mc:Ignorable="d"
+        Title="Window4" Height="450" Width="800">
+    <!--<SnippetDataTemplate>-->
+    <Window.Resources>
+        <!-- .... other resources .... -->
+
+        <!--DataTemplate to display Photos as images
+        instead of text strings of Paths-->
+        <DataTemplate DataType="{x:Type local:Photo}">
+            <Border Margin="3">
+                <Image Source="{Binding Source}"/>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <!--</SnippetDataTemplate>-->
+    <StackPanel>
+        <TextBlock>My Pictures</TextBlock>
+        <TextBlock>Check out my new pictures!</TextBlock>
+    </StackPanel>
+</Window>

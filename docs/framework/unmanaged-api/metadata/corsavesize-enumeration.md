@@ -22,8 +22,8 @@ Contains values indicating the level of precision required when querying for the
   
 ```cpp  
 typedef enum CorSaveSize {  
-    cssAccurate                = 0x0000,   
-    cssQuick                   = 0x0001,   
+    cssAccurate                = 0x0000,
+    cssQuick                   = 0x0001,
     cssDiscardTransientCAs     = 0x0002  
 } CorSaveSize;  
 ```  

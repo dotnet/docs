@@ -23,7 +23,7 @@ When users enter data into your application, you may want to verify that the dat
   
 - If the postal code must belong to a specific group of zip codes, you can perform a string comparison on the input to validate the data entered by the user. For example, if the postal code must be in the set {10001, 10002, 10003}, then you can use a string comparison to validate the data.  
   
-- If the postal code must be in a specific form you can use regular expressions to validate the data entered by the user. For example, to validate the form `#####` or `#####-####`, you can use the regular expression `^(\d{5})(-\d{4})?$`. To validate the form `A#A #A#`, you can use the regular expression `[A-Z]\d[A-Z] \d[A-Z]\d`. For more information about regular expressions, see [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md) and [Regular Expression Examples](../../standard/base-types/regular-expression-examples.md).  
+- If the postal code must be in a specific form you can use regular expressions to validate the data entered by the user. For example, to validate the form `#####` or `#####-####`, you can use the regular expression `^(\d{5})(-\d{4})?$`. To validate the form `A#A #A#`, you can use the regular expression `[A-Z]\d[A-Z] \d[A-Z]\d`. For more information about regular expressions, see [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md) and [Regular Expression Examples](../../standard/base-types/regular-expression-example-scanning-for-hrefs.md).  
   
 - If the postal code must be a valid United States Zip code, you could call a Zip code Web service to validate the data entered by the user.  
   
@@ -90,4 +90,4 @@ When users enter data into your application, you may want to verify that the dat
 - <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.FormClosingEventArgs?displayProperty=nameWithType>
 - [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md)
-- [Regular Expression Examples](../../standard/base-types/regular-expression-examples.md)
+- [Regular Expression Examples](../../standard/base-types/regular-expression-example-scanning-for-hrefs.md)

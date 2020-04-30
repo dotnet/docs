@@ -24,9 +24,9 @@ Gets the name of the module referenced by the specified metadata token.
 ```cpp  
 HRESULT GetModuleRefProps (  
    [in]  mdModuleRef         mur,  
-   [out] LPWSTR              szName,   
-   [in]  ULONG               cchName,   
-   [out] ULONG               *pchName   
+   [out] LPWSTR              szName,
+   [in]  ULONG               cchName,
+   [out] ULONG               *pchName
 );  
 ```  
   

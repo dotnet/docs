@@ -18,20 +18,20 @@ Notifies the profiler whenever JIT compilation of a dynamic method has completed
   
 ```cpp  
 HRESULT DynamicMethodJITCompilationFinished(  
-     [in]  FunctionID  functionId,   
-     [in]  BOOL        hrStatus,   
-     [in]  BOOL        fIsSafeToBlock   
+     [in]  FunctionID  functionId,
+     [in]  BOOL        hrStatus,
+     [in]  BOOL        fIsSafeToBlock
 );  
 ```  
   
 ## Parameters  
 [in] `functionId`  
-The identifier of the in-memory function for which JIT compilation is started.   
+The identifier of the in-memory function for which JIT compilation is started.
 
-[in] `hrStatus`   
+[in] `hrStatus`
 A value that indicates whether the JIT compilation was successful.
 
-[in] `fIsSafeToBlock`   
+[in] `fIsSafeToBlock`
 `true` to indicate that blocking may cause the runtime to wait for the calling thread to return from this callback; `false` to indicate that blocking will not affect the operation of the runtime.  
 
 ## Remarks  

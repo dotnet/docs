@@ -135,12 +135,12 @@ You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` 
 A `<PackageReference>` item element specifies a [NuGet dependency in the project](/nuget/consume-packages/package-references-in-project-files). The `Include` attribute specifies the package ID.
 
 ```xml
-<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
+<PackageReference Include="package-id" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
 #### Version
 
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet version range](/nuget/concepts/package-versioning#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
 #### IncludeAssets, ExcludeAssets, and PrivateAssets
 
@@ -231,7 +231,7 @@ The way that pre-build and post-build events are specified in the project file h
 
 ```xml
 <PropertyGroup>
-    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"</PreBuildEvent>
 </PropertyGroup>
 ```
 

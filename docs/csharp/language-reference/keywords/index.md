@@ -3,7 +3,7 @@ title: "C# Keywords"
 ms.date: 03/07/2017
 f1_keywords: 
   - "cs.keywords"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "keywords [C#]"
   - "C# language, keywords"
   - "Visual C#, keywords"
@@ -36,8 +36,8 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[struct](../builtin-types/struct.md)|[switch](switch.md)|[this](this.md)|[throw](throw.md)|
 |[true](../builtin-types/bool.md)|[try](try-catch.md)|[typeof](../operators/type-testing-and-cast.md#typeof-operator)|[uint](../builtin-types/integral-numeric-types.md)|
 |[ulong](../builtin-types/integral-numeric-types.md)|[unchecked](unchecked.md)|[unsafe](unsafe.md)|[ushort](../builtin-types/integral-numeric-types.md)|
-|[using](using.md)|[using static](using-static.md)|[virtual](virtual.md)|[void](../builtin-types/void.md)|
-|[volatile](volatile.md)|[while](while.md)|
+|[using](using.md)|[virtual](virtual.md)|[void](../builtin-types/void.md)|[volatile](volatile.md)|
+|[while](while.md)|
 
 ## Contextual keywords
 

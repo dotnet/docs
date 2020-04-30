@@ -22,7 +22,7 @@ Notifies the profiler that the just-in-time (JIT) compiler has started to recomp
 ## Syntax  
   
 ```cpp  
-HRESULT ReJITCompilationStarted(   
+HRESULT ReJITCompilationStarted(
     [in] FunctionID functionId,  
     [in] ReJITID    rejitId,  
     [in] BOOL       fIsSafeToBlock);  

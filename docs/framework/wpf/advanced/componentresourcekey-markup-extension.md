@@ -15,25 +15,25 @@ Defines and references keys for resources that are loaded from external assembli
 ## XAML Attribute Usage (setting key, compact)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" .../>  
+<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" ... />  
 ```  
   
 ## XAML Attribute Usage (setting key, verbose)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" .../>  
+<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" ... />  
 ```  
   
 ## XAML Attribute Usage (requesting resource, compact)  
   
 ```xml  
-<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" ... />  
 ```  
   
 ## XAML Attribute Usage (requesting resource, verbose)  
   
 ```xml  
-<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" ... />  
 ```  
   
 ## XAML Values  
@@ -58,7 +58,7 @@ Defines and references keys for resources that are loaded from external assembli
   
  For both establishing keys and referencing keyed resources, attribute syntax is commonly used for the `ComponentResourceKey` markup extension.  
   
- The compact syntax shown relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=nameWithType> constructor signature and positional parameter usage of a markup extension. The order in which the `targetTypeName` and `targetID` are given is important. The verbose syntax relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A?displayProperty=nameWithType> parameterless constructor, and then sets the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> in a way that is analogous to a true attribute syntax on an object element. In the verbose syntax, the order in which the properties are set is not important. The relationship and mechanisms of these two alternatives (compact and verbose) is described in more detail in the topic [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
+ The compact syntax shown relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A> constructor signature and positional parameter usage of a markup extension. The order in which the `targetTypeName` and `targetID` are given is important. The verbose syntax relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A> parameterless constructor, and then sets the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> in a way that is analogous to a true attribute syntax on an object element. In the verbose syntax, the order in which the properties are set is not important. The relationship and mechanisms of these two alternatives (compact and verbose) is described in more detail in the topic [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
  Technically, the value for `targetID` can be any object, it does not have to be a string. However, the most common usage in WPF is to align the `targetID` value with forms that are strings, and where such strings are valid in the [XamlName Grammar](../../../desktop-wpf/xaml-services/xamlname-grammar.md).  
   

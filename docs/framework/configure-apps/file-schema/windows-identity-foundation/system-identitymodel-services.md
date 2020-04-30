@@ -56,12 +56,12 @@ Configuration section for authentication using the WS-Federation protocol.
   
   <system.identityModel.services>  
     <federationConfiguration>  
-      <wsFederation passiveRedirectEnabled="true"   
-        issuer="http://localhost:15839/wsFederationSTS/Issue"   
-        realm="http://localhost:50969/" reply="http://localhost:50969/"   
-        requireHttps="false"   
-        signOutReply="http://localhost:50969/SignedOutPage.html"   
-        signOutQueryString="Param1=value2&Param2=value2"   
+      <wsFederation passiveRedirectEnabled="true"
+        issuer="http://localhost:15839/wsFederationSTS/Issue"
+        realm="http://localhost:50969/" reply="http://localhost:50969/"
+        requireHttps="false"
+        signOutReply="http://localhost:50969/SignedOutPage.html"
+        signOutQueryString="Param1=value2&Param2=value2"
         persistentCookiesOnPassiveRedirects="true" />  
       <cookieHandler requireSsl="false" />  
     </federationConfiguration>  

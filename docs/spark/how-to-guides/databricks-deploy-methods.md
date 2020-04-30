@@ -8,7 +8,7 @@ ms.custom: mvc,how-to
 
 # Submit a .NET for Apache Spark job to Databricks
 
-There are two ways to deploy your .NET for Apache Spark job to Databricks: `spark-submit` and Set Jar. 
+There are two ways to deploy your .NET for Apache Spark job to Databricks: `spark-submit` and Set Jar.
 
 ## Deploy using spark-submit
 

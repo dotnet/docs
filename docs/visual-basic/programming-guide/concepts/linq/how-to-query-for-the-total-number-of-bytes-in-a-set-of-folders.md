@@ -52,7 +52,7 @@ Module QueryTotalBytes
             retval = fi.Length  
         Catch ex As System.IO.FileNotFoundException  
             ' If a file is no longer present,  
-            ' just return zero bytes.   
+            ' just return zero bytes.
             retval = 0  
         End Try  
   

@@ -18,7 +18,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
  If you are running Windows Server 2003, use the HttpCfg.exe tool. On Windows Server 2003, this tool is installed. For more information, see [Httpcfg Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
   
- If you are running Windows Vista, use the Netsh.exe tool that is already installed. 
+ If you are running Windows Vista, use the Netsh.exe tool that is already installed.
   
 > [!NOTE]
 > Modifying certificates stored on the computer requires administrative privileges.  
@@ -62,7 +62,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
 2. In Windows Vista, use the Netsh.exe tool, as shown in the following example.  
   
     ```console  
-    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}   
+    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}
     ```  
   
     - The **certhash** parameter specifies the thumbprint of the certificate.  

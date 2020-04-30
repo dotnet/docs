@@ -20,8 +20,8 @@ Adds a new proxy module to the application.
 ## Syntax  
   
 ```xml  
-<module   
-  type="type_fullname, assembly_fullname"   
+<module
+  type="type_fullname, assembly_fullname"
 />  
 ```  
   

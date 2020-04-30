@@ -24,7 +24,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
   
     ```vb  
     Private Sub SetDefault(ByVal myDefaultBtn As Button)  
-      Me.AcceptButton = myDefaultBtn   
+      Me.AcceptButton = myDefaultBtn
     End Sub  
     ```  
   

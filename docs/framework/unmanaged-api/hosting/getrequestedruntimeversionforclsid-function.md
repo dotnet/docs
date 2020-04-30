@@ -24,10 +24,10 @@ Gets the appropriate common language runtime (CLR) version information for the c
   
 ```cpp  
 HRESULT GetRequestedRuntimeVersionForCLSID (  
-    [in]  REFCLSID   rclsid,   
-    [out]  LPWSTR     pVersion,   
-    [in]  DWORD      cchBuffer,   
-    [out] DWORD*     dwLength,   
+    [in]  REFCLSID   rclsid,
+    [out]  LPWSTR     pVersion,
+    [in]  DWORD      cchBuffer,
+    [out] DWORD*     dwLength,
     [in]  CLSID_RESOLUTION_FLAGS dwResolutionFlags  
 );  
 ```  

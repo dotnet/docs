@@ -31,9 +31,9 @@ public string GetCallerIdentity()
 <system.serviceModel>  
   <client>  
     <endpoint name=""  
-              address="https://localhost/servicemodelsamples/service.svc"   
-              binding="wsHttpBinding"   
-              bindingConfiguration="Binding1"   
+              address="https://localhost/servicemodelsamples/service.svc"
+              binding="wsHttpBinding"
+              bindingConfiguration="Binding1"
               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   </client>  
   
@@ -58,7 +58,7 @@ public string GetCallerIdentity()
  Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as  `https://localhost/servicemodelsamples/service.svc`, from your browser. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
 
 ```csharp
-// WARNING: This code is only needed for test certificates such as those created by makecert. It is   
+// WARNING: This code is only needed for test certificates such as those created by makecert. It is
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
 ```
@@ -68,9 +68,9 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
 ```console  
 Username authentication required.  
 Provide a valid machine or domain account. [domain\\user]  
-   Enter username:   
+   Enter username:
 YourDomainName\YourAccountName  
-   Enter password:   
+   Enter password:
 ********  
 YourDomainName\YourAccountName  
 Add(100,15.99) = 115.99  

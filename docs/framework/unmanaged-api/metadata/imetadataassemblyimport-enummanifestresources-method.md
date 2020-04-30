@@ -23,11 +23,11 @@ Gets a pointer to an enumerator for the resources referenced in the current asse
   
 ```cpp  
 HRESULT EnumManifestResources (  
-    [in, out] HCORENUM         *phEnum,   
-    [out] mdManifestResource   rManifestResources[],   
-    [in]  ULONG                cMax,   
+    [in, out] HCORENUM         *phEnum,
+    [out] mdManifestResource   rManifestResources[],
+    [in]  ULONG                cMax,
     [out] ULONG                *pcTokens  
-);   
+);
 ```  
   
 ## Parameters  

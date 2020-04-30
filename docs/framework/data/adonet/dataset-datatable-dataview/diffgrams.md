@@ -43,7 +43,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
   
 ```xml  
 <?xml version="1.0"?>  
-<diffgr:diffgram   
+<diffgr:diffgram
          xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  
          xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1"  
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">  

@@ -1,7 +1,7 @@
 ---
 title: Implementing the Circuit Breaker pattern
 description: Learn how to implement the Circuit Breaker pattern as a complementary system to Http retries.
-ms.date: 10/16/2018
+ms.date: 03/03/2020
 ---
 
 # Implement the Circuit Breaker pattern
@@ -20,11 +20,11 @@ Therefore, you need some kind of defense barrier so that excessive requests stop
 
 The Circuit Breaker pattern has a different purpose than the "Retry pattern". The "Retry pattern" enables an application to retry an operation in the expectation that the operation will eventually succeed. The Circuit Breaker pattern prevents an application from performing an operation that's likely to fail. An application can combine these two patterns. However, the retry logic should be sensitive to any exception returned by the circuit breaker, and it should abandon retry attempts if the circuit breaker indicates that a fault is not transient.
 
-## Implement Circuit Breaker pattern with HttpClientFactory and Polly
+## Implement Circuit Breaker pattern with `IHttpClientFactory` and Polly
 
-As when implementing retries, the recommended approach for circuit breakers is to take advantage of proven .NET libraries like Polly and its native integration with HttpClientFactory.
+As when implementing retries, the recommended approach for circuit breakers is to take advantage of proven .NET libraries like Polly and its native integration with `IHttpClientFactory`.
 
-Adding a circuit breaker policy into your HttpClientFactory outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using HttpClientFactory.
+Adding a circuit breaker policy into your `IHttpClientFactory` outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using `IHttpClientFactory`.
 
 The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the ConfigureServices() method.
 
@@ -56,13 +56,13 @@ Circuit breakers should also be used to redirect requests to a fallback infrastr
 
 All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency.
 
-From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using HttpClient with HttpClientFactory, as shown in previous sections.
+From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
 
 ## Test Http retries and circuit breakers in eShopOnContainers
 
-Whenever you start the eShopOnContainers solution in a Docker host, it needs to start multiple containers. Some of the containers are slower to start and initialize, like the SQL Server container. This is especially true the first time you deploy the eShopOnContainers application into Docker because it needs to set up the images and the database. The fact that some containers start slower than others can cause the rest of the services to initially throw HTTP exceptions, even if you set dependencies between containers at the docker-compose level, as explained in previous sections. Those docker-compose dependencies between containers are just at the process level. The container’s entry point process might be started, but SQL Server might not be ready for queries. The result can be a cascade of errors, and the application can get an exception when trying to consume that particular container.
+Whenever you start the eShopOnContainers solution in a Docker host, it needs to start multiple containers. Some of the containers are slower to start and initialize, like the SQL Server container. This is especially true the first time you deploy the eShopOnContainers application into Docker because it needs to set up the images and the database. The fact that some containers start slower than others can cause the rest of the services to initially throw HTTP exceptions, even if you set dependencies between containers at the docker-compose level, as explained in previous sections. Those docker-compose dependencies between containers are just at the process level. The container's entry point process might be started, but SQL Server might not be ready for queries. The result can be a cascade of errors, and the application can get an exception when trying to consume that particular container.
 
-You might also see this type of error on startup when the application is deploying to the cloud. In that case, orchestrators might be moving containers from one node or VM to another (that is, starting new instances) when balancing the number of containers across the cluster’s nodes.
+You might also see this type of error on startup when the application is deploying to the cloud. In that case, orchestrators might be moving containers from one node or VM to another (that is, starting new instances) when balancing the number of containers across the cluster's nodes.
 
 The way 'eShopOnContainers' solves those issues when starting all the containers is by using the Retry pattern illustrated earlier.
 
@@ -91,7 +91,7 @@ You can then check the status using the URI `http://localhost:5103/failing`, as 
 
 ![Screenshot of checking the status of failing middleware simulation.](./media/implement-circuit-breaker-pattern/failing-middleware-simulation.png)
 
-**Figure 8-5**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled.
+**Figure 8-5**. Checking the state of the "Failing" ASP.NET middleware – In this case, disabled.
 
 At this point, the Basket microservice responds with status code 500 whenever you call invoke it.
 
@@ -127,7 +127,7 @@ public class CartController : Controller
 }
 ```
 
-Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
+Here's a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
 
 ![Screenshot of the MVC web app with basket service inoperative error.](./media/implement-circuit-breaker-pattern/basket-service-inoperative.png)
 

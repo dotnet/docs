@@ -23,7 +23,7 @@ Specifies constants used by [CoUninitializeEE](../../../../docs/framework/unmana
 ```cpp  
 typedef enum tagCOUNINITEE  
 {  
-    COUNINITEE_DEFAULT  = 0x0,   
+    COUNINITEE_DEFAULT  = 0x0,
     COUNINITEE_DLL      = 0x1  
 } COUNINITIEE;  
 ```  

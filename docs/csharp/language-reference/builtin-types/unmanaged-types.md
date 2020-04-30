@@ -17,11 +17,11 @@ Beginning with C# 7.3, you can use the [`unmanaged` constraint](../../programmin
 
 Beginning with C# 8.0, a *constructed* struct type that contains fields of unmanaged types only is also unmanaged, as the following example shows:
 
-[!code-csharp[unmanaged constructed types](~/samples/snippets/csharp/language-reference/builtin-types/UnmanagedTypes.cs#ProgramExample)]
+[!code-csharp[unmanaged constructed types](snippets/UnmanagedTypes.cs#ProgramExample)]
 
 A generic struct may be the source of both unmanaged and not unmanaged constructed types. The preceding example defines a generic struct `Coords<T>` and presents the examples of unmanaged constructed types. The example of not an unmanaged type is `Coords<object>`. It's not unmanaged because it has the fields of the `object` type, which is not unmanaged. If you want *all* constructed types to be unmanaged types, use the `unmanaged` constraint in the definition of a generic struct:
 
-[!code-csharp[unmanaged constraint in type definition](~/samples/snippets/csharp/language-reference/builtin-types/UnmanagedTypes.cs#AlwaysUnmanaged)]
+[!code-csharp[unmanaged constraint in type definition](snippets/UnmanagedTypes.cs#AlwaysUnmanaged)]
 
 ## C# language specification
 
@@ -33,4 +33,4 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
 - [sizeof operator](../operators/sizeof.md)
-- [stackalloc operator](../operators/stackalloc.md)
+- [stackalloc](../operators/stackalloc.md)

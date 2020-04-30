@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # SpawnDerivedClass function
-Creates a newly derived class object from a specified object.    
+Creates a newly derived class object from a specified object.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -24,10 +24,10 @@ Creates a newly derived class object from a specified object.
   
 ```cpp  
 HRESULT SpawnDerivedClass (
-   [in] int                  vFunc, 
-   [in] IWbemClassObject*    ptr, 
+   [in] int                  vFunc,
+   [in] IWbemClassObject*    ptr,
    [in] LONG                 lFlags,
-   [out] IWbemClassObject**  ppNewClass); 
+   [out] IWbemClassObject**  ppNewClass);
 ```  
 
 ## Parameters

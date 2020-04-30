@@ -23,9 +23,9 @@ Creates a generic instance of a method, and gets a token to the definition.
   
 ```cpp  
 HRESULT DefineMethodSpec (  
-    [in]  mdToken           tkParent,   
-    [in]  PCCOR_SIGNATURE   pvSigBlob,   
-    [in]  ULONG             cbSigBlob,   
+    [in]  mdToken           tkParent,
+    [in]  PCCOR_SIGNATURE   pvSigBlob,
+    [in]  ULONG             cbSigBlob,
     [out] mdMethodSpec      *pmi  
 );  
 ```  

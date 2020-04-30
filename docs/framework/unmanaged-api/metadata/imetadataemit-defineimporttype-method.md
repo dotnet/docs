@@ -22,13 +22,13 @@ Creates a reference to the specified type that is defined outside the current sc
 ## Syntax  
   
 ```cpp  
-HRESULT DefineImportType (   
-    [in]  IMetaDataAssemblyImport  *pAssemImport,   
-    [in]  const void               *pbHashValue,   
-    [in]  ULONG                    cbHashValue,    
-    [in]  IMetaDataImport          *pImport,   
-    [in]  mdTypeDef                tdImport,   
-    [in]  IMetaDataAssemblyEmit    *pAssemEmit,   
+HRESULT DefineImportType (
+    [in]  IMetaDataAssemblyImport  *pAssemImport,
+    [in]  const void               *pbHashValue,
+    [in]  ULONG                    cbHashValue,
+    [in]  IMetaDataImport          *pImport,
+    [in]  mdTypeDef                tdImport,
+    [in]  IMetaDataAssemblyEmit    *pAssemEmit,
     [out] mdTypeRef                *ptr  
 );  
 ```  

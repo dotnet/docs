@@ -28,7 +28,7 @@ Causes the compiler to report errors if variables are not declared before they a
   
 ### To set -optionexplicit in the Visual Studio IDE  
   
-1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.
   
 2. Click the **Compile** tab.  
   

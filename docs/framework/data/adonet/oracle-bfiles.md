@@ -42,20 +42,20 @@ public class Sample
       connection.Open();  
   
       OracleCommand command = connection.CreateCommand();  
-      command.CommandText =   
+      command.CommandText =
         "CREATE or REPLACE DIRECTORY MyDir as 'c:\\bfiles'";  
       command.ExecuteNonQuery();  
-      command.CommandText =   
+      command.CommandText =
         "DROP TABLE MyBFileTable";  
       try {  
         command.ExecuteNonQuery();  
       }  
       catch {  
       }  
-      command.CommandText =   
+      command.CommandText =
         "CREATE TABLE MyBFileTable(col1 number, col2 BFILE)";  
       command.ExecuteNonQuery();  
-      command.CommandText =   
+      command.CommandText =
         "INSERT INTO MyBFileTable values ('2', BFILENAME('MyDir', " +  
         "'MyFile.jpg'))";  
       command.ExecuteNonQuery();  

@@ -23,10 +23,10 @@ Enumerates MemberRef tokens representing members of the specified type.
   
 ```cpp  
 HRESULT EnumMemberRefs (  
-   [in, out] HCORENUM    *phEnum,   
-   [in]   mdToken        tkParent,   
-   [out]  mdMemberRef    rMemberRefs[],   
-   [in]   ULONG          cMax,   
+   [in, out] HCORENUM    *phEnum,
+   [in]   mdToken        tkParent,
+   [out]  mdMemberRef    rMemberRefs[],
+   [in]   ULONG          cMax,
    [out]  ULONG          *pcTokens  
 );  
 ```  

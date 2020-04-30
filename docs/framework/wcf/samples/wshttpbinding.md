@@ -10,11 +10,11 @@ This sample demonstrates how to implement a typical service and a typical client
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\wsHttp`  
   
 > [!NOTE]
@@ -26,27 +26,27 @@ This sample demonstrates how to implement a typical service and a typical client
 <bindings>  
   <wsHttpBinding>  
     <!--The following is the expanded configuration section for a-->  
-    <!--WSHttpBinding. Each property is configured with the default-->   
+    <!--WSHttpBinding. Each property is configured with the default-->
     <!--value. See the ReliableSession, TransactionFlow, -->  
     <!--TransportSecurity, and MessageSecurity samples in the WS -->  
     <!--directory to learn how to configure these features. -->  
     <binding name="Binding1"  
-              bypassProxyOnLocal="false"   
-              transactionFlow="false"   
+              bypassProxyOnLocal="false"
+              transactionFlow="false"
               hostNameComparisonMode="StrongWildcard"  
-              maxBufferPoolSize="524288"   
+              maxBufferPoolSize="524288"
               maxReceivedMessageSize="65536"  
-              messageEncoding="Text"   
-              textEncoding="utf-8"   
+              messageEncoding="Text"
+              textEncoding="utf-8"
               useDefaultWebProxy="true"  
               allowCookies="false">  
-      <reliableSession ordered="true"   
+      <reliableSession ordered="true"
                        inactivityTimeout="00:10:00"  
                        enabled="false" />  
       <security mode="Message">  
-        <message clientCredentialType="Windows"   
+        <message clientCredentialType="Windows"
                  negotiateServiceCredential="true"  
-                 algorithmSuite="Default"   
+                 algorithmSuite="Default"
                  establishSecurityContext="true" />  
       </security>  
     </binding>  

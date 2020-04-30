@@ -26,7 +26,7 @@ You can encode as property references in your entity class any data relationship
   
     > [!NOTE]
     > Relationships in relational databases are typically modeled as foreign key values that refer to primary keys in other tables. To navigate between them you explicitly associate the two tables by using a relational *join* operation.  
-    >   
+    >
     >  Objects in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], on the other hand, refer to each other by using property references or collections of references that you navigate by using *dot* notation.  
   
 ## Example  

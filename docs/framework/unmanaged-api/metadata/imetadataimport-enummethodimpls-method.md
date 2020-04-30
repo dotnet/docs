@@ -23,11 +23,11 @@ Enumerates MethodBody and MethodDeclaration tokens representing methods of the s
   
 ```cpp  
 HRESULT EnumMethodImpls (  
-   [in, out] HCORENUM    *phEnum,   
-   [in]      mdTypeDef   td,   
-   [out]     mdToken     rMethodBody[],   
-   [out]     mdToken     rMethodDecl[],   
-   [in]      ULONG       cMax,   
+   [in, out] HCORENUM    *phEnum,
+   [in]      mdTypeDef   td,
+   [out]     mdToken     rMethodBody[],
+   [out]     mdToken     rMethodDecl[],
+   [in]      ULONG       cMax,
    [in]      ULONG       *pcTokens  
 );  
 ```  

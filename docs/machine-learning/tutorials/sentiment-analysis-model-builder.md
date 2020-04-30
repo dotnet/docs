@@ -5,15 +5,15 @@ ms.date: 11/21/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc,mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 
 # Tutorial: Analyze sentiment of website comments in a web application using ML.NET Model Builder
 
-Learn how to analyze sentiment from comments in real-time inside a web application.
+Learn how to analyze sentiment from comments in real time inside a web application.
 
-This tutorial shows you how to create an ASP.NET Core Razor Pages application that classifies sentiment from website comments in real-time.
+This tutorial shows you how to create an ASP.NET Core Razor Pages application that classifies sentiment from website comments in real time.
 
 In this tutorial, you learn how to:
 
@@ -99,9 +99,9 @@ The time required for the model to train is proportionate to the amount of data.
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing top five models and their metrics.
+The result of the training step will be one model that has the best performance. In the evaluate step of the Model Builder tool, the output section will contain the algorithm used by the best-performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing the top five models and their metrics is shown.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
 
 ## Add the code to make predictions
 
@@ -120,7 +120,7 @@ Two projects will be created as a result of the training process.
 
 ### Configure the PredictionEngine pool
 
-To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
+To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionEngine%602>. <xref:Microsoft.ML.PredictionEngine%602> is not thread-safe. Additionally, you have to create an instance of it everywhere it's needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an <xref:Microsoft.Extensions.ObjectPool.ObjectPool%601> of <xref:Microsoft.ML.PredictionEngine%602> objects for use throughout your application.
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
 
@@ -273,7 +273,7 @@ The results returned by the `OnGetAnalyzeSentiment` will be dynamically displaye
 
 ## Run the application
 
-Now that your application is set up, run the application which should launch in your browser.
+Now that your application is set up, run the application, which should launch in your browser.
 
 When the application launches, enter *Model Builder is cool!* into the text area. The predicted sentiment displayed should be *Not Toxic*.
 
@@ -298,6 +298,6 @@ In this tutorial, you learned how to:
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
-- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
+- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
 - [Binary Classification](../resources/glossary.md#binary-classification)
 - [Binary Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-binary-classification)

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoDataSetExamplesCS", "CS\LINQtoDataSetExamplesCS.csproj", "{404E1785-83BF-4026-B6D7-DC2AA2228D3F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LINQtoDataSetExamplesVB", "VB\LINQtoDataSetExamplesVB.vbproj", "{83AA8035-4FBC-4786-9186-24B069F11108}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{404E1785-83BF-4026-B6D7-DC2AA2228D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404E1785-83BF-4026-B6D7-DC2AA2228D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404E1785-83BF-4026-B6D7-DC2AA2228D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404E1785-83BF-4026-B6D7-DC2AA2228D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AA8035-4FBC-4786-9186-24B069F11108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AA8035-4FBC-4786-9186-24B069F11108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AA8035-4FBC-4786-9186-24B069F11108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AA8035-4FBC-4786-9186-24B069F11108}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

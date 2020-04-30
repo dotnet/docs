@@ -60,8 +60,8 @@ The `cacheMemoryLimitMegabytes` attribute and the `physicalMemoryPercentage` att
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="Default"   
-               cacheMemoryLimitMegabytes="0"   
+          <add name="Default"
+               cacheMemoryLimitMegabytes="0"
                physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  

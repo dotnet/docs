@@ -103,7 +103,7 @@ To publish a single-file executable, set the `PublishSingleFile` in your project
 dotnet publish -r win10-x64 -p:PublishSingleFile=true
 ```
 
-For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/single-file/design.md).
+For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
 
 ### Assembly linking
 
@@ -135,7 +135,7 @@ For more information about the IL Linker tool, see the [documentation](https://a
 
 ### Tiered compilation
 
-[Tiered compilation](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation-guide.md) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the just-in-time (JIT) compiler to achieve better performance.
+[Tiered compilation](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation.md) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the just-in-time (JIT) compiler to achieve better performance.
 
 The main benefit of tiered compilation is to provide two ways of jitting methods: in a lower-quality-but-faster tier or a higher-quality-but-slower tier. The quality refers to how well the method is optimized. TC helps to improve the performance of an application as it goes through various stages of execution, from startup through steady state. When tiered compilation is disabled, every method is compiled in a single way that's biased to steady-state performance over startup performance.
 
@@ -501,7 +501,7 @@ APIs have been added that allow access to certain perf-oriented CPU instructions
 
 Where appropriate, the .NET libraries have begun using these instructions to improve performance.
 
-For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
+For more information, see [.NET Platform-Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/2018/platform-intrinsics.md).
 
 ### Improved .NET Core Version APIs
 

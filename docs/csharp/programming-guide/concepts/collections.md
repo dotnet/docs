@@ -345,7 +345,7 @@ private static void FindInDictionary2(string symbol)
 
 ## Using LINQ to Access a Collection
 
-LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see  [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/).
+LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in C#](linq/index.md).
 
 The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.
 
@@ -596,7 +596,7 @@ private static IEnumerable<int> EvenSequence(
 - [Programming Concepts (C#)](./index.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [LINQ to Objects (C#)](./linq/linq-to-objects.md)
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)
 - [Collections and Data Structures](../../../standard/collections/index.md)
 - [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
 - [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)

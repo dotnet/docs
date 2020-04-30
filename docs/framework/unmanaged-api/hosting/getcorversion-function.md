@@ -26,9 +26,9 @@ Returns the version number of the common language runtime (CLR) that is running 
 ```cpp  
 HRESULT GetCORVersion (  
     [in] LPWSTR  pbuffer,  
-    [in]  DWORD   cchBuffer,   
+    [in]  DWORD   cchBuffer,
     [out] DWORD*  dwlength  
-);   
+);
 ```  
   
 ## Parameters  

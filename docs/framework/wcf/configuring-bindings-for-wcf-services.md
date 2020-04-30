@@ -45,7 +45,7 @@ When creating an application, you often want to defer decisions to the administr
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
   <!-- This section is optional with the default configuration introduced  
        in .NET Framework 4. -->  
-  <endpoint   
+  <endpoint
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
       binding="basicHttpBinding" />
@@ -70,13 +70,13 @@ When creating an application, you often want to defer decisions to the administr
   
 ```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
-  <endpoint   
+  <endpoint
       address="/HelloWorld2/"  
       contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
       binding="basicHttpBinding" />
 </service>  
 <bindings>  
-    <basicHttpBinding   
+    <basicHttpBinding
         receiveTimeout="00:00:01"  
     />  
 </bindings>  
@@ -91,13 +91,13 @@ When creating an application, you often want to defer decisions to the administr
 ```xml  
 <behaviors>  
     <behavior>  
-        <ServiceMetadata httpGetEnabled="true" />   
+        <ServiceMetadata httpGetEnabled="true" />
     </behavior>  
 </behaviors>  
 <services>  
-    <service   
+    <service
        name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-       <endpoint   
+       <endpoint
           address="http://computer:8080/Hello"  
           contract="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null"  
           binding="basicHttpBinding" />
@@ -126,11 +126,11 @@ When creating an application, you often want to defer decisions to the administr
         bindingConfiguration="Secure" />
 </service>  
 <bindings>  
-    <basicHttpBinding   
+    <basicHttpBinding
         name="shortTimeout"  
-        timeout="00:00:00:01"   
+        timeout="00:00:00:01"
      />  
-     <basicHttpBinding   
+     <basicHttpBinding
         name="Secure">  
         <Security mode="Transport" />  
      </basicHttpBinding>
@@ -145,11 +145,11 @@ When creating an application, you often want to defer decisions to the administr
     <add scheme="https" binding="basicHttpBinding" bindingConfiguration="Secure" />  
 </protocolMapping>  
 <bindings>  
-    <basicHttpBinding   
+    <basicHttpBinding
         name="shortTimeout"  
-        timeout="00:00:00:01"   
+        timeout="00:00:00:01"
      />  
-     <basicHttpBinding   
+     <basicHttpBinding
         name="Secure" />  
         <Security mode="Transport" />  
 </bindings>  

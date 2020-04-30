@@ -20,7 +20,7 @@ MyClass mc = new MyClass();
 MyClass mc2 = mc;
 ```
 
-When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized and in most scenarios, it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/gc.md).  
+When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. Types on the managed heap require overhead both when they are allocated and when they are reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. However, garbage collection is also highly optimized and in most scenarios, it does not create a performance issue. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/fundamentals.md).  
   
 ## Declaring Classes
 
@@ -47,11 +47,11 @@ Although they are sometimes used interchangeably, a class and an object are diff
  ```
 
  When an instance of a class is created, a reference to the object is passed back to the programmer. In the previous example, `object1` is a reference to an object that is based on `Customer`. This reference refers to the new object but does not contain the object data itself. In fact, you can create an object reference without creating an object at all:  
- 
+
 ```csharp
  Customer object2;
 ```
- 
+
  We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
 
  ```csharp
@@ -87,7 +87,7 @@ Class definitions can be split between different source files. For more informat
 
 The following example defines a public class that contains an [auto-implemented property](auto-implemented-properties.md), a method, and a special method called a constructor. For more information, see [Properties](properties.md), [Methods](methods.md), and [Constructors](constructors.md) topics. The instances of the class are then instantiated with the `new` keyword.  
   
-[!code-csharp[Class Example](~/samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)] 
+[!code-csharp[Class Example](~/samples/snippets/csharp/programming-guide/classes-and-structs/class-example.cs)]
   
 ## C# Language Specification
 

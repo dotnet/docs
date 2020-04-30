@@ -15,6 +15,12 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the [.NET Core 3.0](https://aka.ms/netcore3download) shared framework. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+
+* .NET Standard 2.0 and later versions
+* .NET Framework 4.7.2 and later versions
+* .NET Core 2.0, 2.1, and 2.2
+
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) to find out if support for your scenario can be added.
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
@@ -45,7 +51,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
-| Deserialize JSON `null` literal to non-nullable types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
+| Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | Deserialize to immutable classes and structs          | ⚠️ [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
 | `[JsonConstructor]` attribute                         | ⚠️ [Not supported, workaround, sample](#specify-constructor-to-use) |
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
@@ -68,7 +74,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 
-This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the [Feedback section](/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to#feedback) of this page. That creates a GitHub issue and lists it at the bottom of this page.
+This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 
@@ -236,7 +242,7 @@ To implement type inference for `object` properties, create a converter like the
 `Newtonsoft.Json` doesn't throw an exception in the following scenario:
 
 * `NullValueHandling` is set to `Ignore`, and
-* During deserialization, the JSON contains a null value for a non-nullable type.
+* During deserialization, the JSON contains a null value for a non-nullable value type.
 
 In the same scenario, <xref:System.Text.Json> does throw an exception. (The corresponding null handling setting is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType>.)
 
@@ -313,7 +319,7 @@ The preceding converter code is a simplified example. Additional logic would be 
 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
-* A property for a nullable type is present in the JSON, but the value is null.
+* A property for a nullable value type is present in the JSON, but the value is null.
 
 ### Conditionally ignore a property
 
@@ -497,7 +503,7 @@ The following sections explain recommended programming patterns for using `Utf8J
 
 ### Utf8JsonReader is a ref struct
 
-Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../csharp/language-reference/keywords/ref.md#ref-struct-types). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by ref** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` is a class. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
+Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../csharp/language-reference/builtin-types/struct.md#ref-struct). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by ref** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` is a class. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
 
 ### Read UTF-8 text
 

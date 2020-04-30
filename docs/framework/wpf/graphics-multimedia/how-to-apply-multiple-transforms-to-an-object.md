@@ -27,4 +27,4 @@ This example shows how to use a <xref:System.Windows.Media.TransformGroup> to gr
 - <xref:System.Windows.UIElement.RenderTransform%2A>
 - <xref:System.Windows.Media.TransformGroup>
 - [Transforms Overview](transforms-overview.md)
-- [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)
+- [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

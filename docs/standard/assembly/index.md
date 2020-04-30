@@ -111,3 +111,4 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 - [How to: Load and unload assemblies](load-unload.md)
 - [How to: Use and debug assembly unloadability in .NET Core](unloadability.md)
 - [How to: Determine if a file is an assembly](identify.md)
+- [How to: Inspect assembly contents using MetadataLoadContext](inspect-contents-using-metadataloadcontext.md)

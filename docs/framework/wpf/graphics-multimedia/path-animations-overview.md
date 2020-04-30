@@ -12,13 +12,13 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
 # Path Animations Overview
 <a name="introduction"></a> This topic introduces path animations, which enable you to use a geometric path to generate output values. Path animations are useful for moving and rotating objects along complex paths.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
  Because you use a <xref:System.Windows.Media.PathGeometry> object to define a path animation, you should also be familiar with <xref:System.Windows.Media.PathGeometry> and the different types of <xref:System.Windows.Media.PathSegment> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
   
-<a name="what_is_a_path_animation"></a>   
+<a name="what_is_a_path_animation"></a>
 ## What Is a Path Animation?  
  A path animation is a type of <xref:System.Windows.Media.Animation.AnimationTimeline> that uses a <xref:System.Windows.Media.PathGeometry> as its input. Instead of setting a From, To, or By property (as you do for a From/To/By animation) or using key frames (as you use for a key-frame animation), you define a geometric path and use it to set the `PathGeometry` property of the path animation. As the path animation progresses, it reads the x, y, and angle information from the path and uses that information to generate its output.  
   
@@ -29,11 +29,11 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
  [!code-csharp[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/MatrixAnimationUsingPathDoesRotateWithTangentExample.cs#matrixanimationusingpathdoesrotatewithtangentwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/MatrixAnimationUsingPathDoesRotateWithTangentExample.vb#matrixanimationusingpathdoesrotatewithtangentwholepage)]  
   
- For more information about the path syntax that is used in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example, see the [Path Markup Syntax](path-markup-syntax.md) overview. For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028).  
+ For more information about the path syntax that is used in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example, see the [Path Markup Syntax](path-markup-syntax.md) overview. For the complete sample, see [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations).  
   
  You can apply a path animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You can also use a path animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
-<a name="animation_types"></a>   
+<a name="animation_types"></a>
 ## Path Animation Types  
  Because animations generate property values, there are different animation types for different property types. To animate a property that takes a <xref:System.Double> (such as the <xref:System.Windows.Media.TranslateTransform.X%2A> property of a <xref:System.Windows.Media.TranslateTransform>), you use an animation that produces <xref:System.Double> values. To animate a property that takes a <xref:System.Windows.Point>, you use an animation that produces <xref:System.Windows.Point> values, and so on.  
   
@@ -57,7 +57,7 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
   
  A <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> generates <xref:System.Double> values from its <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry%2A>. By setting the <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.Source%2A> property, you can specify whether the <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> uses the x-coordinate, y-coordinate, or angle of the path as its output. You can use a <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> to rotate an object or move it along the x-axis or y-axis.  
   
-<a name="pathanimationinput"></a>   
+<a name="pathanimationinput"></a>
 ## Path Animation Input  
  Each path animation class provides a <xref:System.Windows.Media.PathGeometry> property for specifying its input. The path animation uses the <xref:System.Windows.Media.PathGeometry> to generate its output values. The <xref:System.Windows.Media.PathGeometry> class lets you describe multiple complex figures that are composed of arcs, curves, and lines.  
   
@@ -85,7 +85,7 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
   
 ## See also
 
-- [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
+- [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations)
 - [Path Markup Syntax](path-markup-syntax.md)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)
 - [Animation Overview](animation-overview.md)

@@ -14,13 +14,13 @@ ms.assetid: 1f3da743-9742-47ff-96e6-d0dd1e9e1c19
 In Visual C++ and Visual Basic, a filter expression further up the stack runs before any **finally** statement. The **catch** block associated with that filter runs after the **finally** statement. For more information, see [Using User-Filtered Exceptions](../../standard/exceptions/using-user-filtered-exception-handlers.md). This section examines the security implications of this order. Consider the following pseudocode example that illustrates the order in which filter statements and **finally** statements run.  
   
 ```cpp  
-void Main()   
+void Main()
 {  
-    try   
+    try
     {  
         Sub();  
-    }   
-    except (Filter())   
+    }
+    except (Filter())
     {  
         Console.WriteLine("catch");  
     }  
@@ -29,18 +29,18 @@ bool Filter () {
     Console.WriteLine("filter");  
     return true;  
 }  
-void Sub()   
+void Sub()
 {  
-    try   
+    try
     {  
         Console.WriteLine("throw");  
         throw new Exception();  
-    }   
-    finally   
+    }
+    finally
     {  
         Console.WriteLine("finally");  
     }  
-}                        
+}
 ```  
   
  This code prints the following.  
@@ -55,16 +55,16 @@ Catch
  The filter runs before the **finally** statement, so security issues can be introduced by anything that makes a state change where execution of other code could take advantage. For example:  
   
 ```cpp  
-try   
+try
 {  
     Alter_Security_State();  
     // This means changing anything (state variables,  
-    // switching unmanaged context, impersonation, and   
-    // so on) that could be exploited if malicious   
+    // switching unmanaged context, impersonation, and
+    // so on) that could be exploited if malicious
     // code ran before state is restored.  
     Do_some_work();  
-}   
-finally   
+}
+finally
 {  
     Restore_Security_State();  
     // This simply restores the state change above.  
@@ -95,7 +95,7 @@ Public Class UserCode
          obj.YourMethod()  
       Catch e As Exception When FilterFunc  
          Console.WriteLine("An error occurred: '{0}'", e)  
-         Console.WriteLine("Current Culture: {0}",   
+         Console.WriteLine("Current Culture: {0}",
 Thread.CurrentThread.CurrentUICulture)  
       End Try  
    End Sub  
@@ -115,13 +115,13 @@ YourObject.YourMethod()
 {  
     CultureInfo saveCulture = Thread.CurrentThread.CurrentUICulture;  
   
-    try   
+    try
     {  
         Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");  
         // Do something that throws an exception.  
     }  
     catch { throw; }  
-    finally   
+    finally
     {  
         Thread.CurrentThread.CurrentUICulture = saveCulture;  
     }  
@@ -136,14 +136,14 @@ YourObject.YourMethod()
 YourObject.YourMethod()  
 {  
     CultureInfo saveCulture = Thread.CurrentThread.CurrentUICulture;  
-    try    
+    try
     {  
-        try   
+        try
         {  
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");  
             // Do something that throws an exception.  
         }  
-        finally   
+        finally
         {  
             Thread.CurrentThread.CurrentUICulture = saveCulture;  
         }  

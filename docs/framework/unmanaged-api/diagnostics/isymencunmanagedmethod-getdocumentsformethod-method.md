@@ -24,7 +24,7 @@ Gets the documents that this method has lines in.
 ```cpp  
 HRESULT GetDocumentsForMethod(  
     [in]  ULONG32  cDocs,  
-    [out] ULONG32  *pcDocs,   
+    [out] ULONG32  *pcDocs,
     [in, size_is(cDocs)] ISymUnmanagedDocument* documents[]);  
 ```  
   

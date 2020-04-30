@@ -33,7 +33,7 @@ WReq.Credentials = _
 ```csharp  
 String MyURI = "http://www.contoso.com/";  
 WebRequest WReq = WebRequest.Create (MyURI);  
-WReq.Credentials =   
+WReq.Credentials =
     new NetworkCredential(UserName, SecurelyStoredPassword, Domain);  
 ```  
   

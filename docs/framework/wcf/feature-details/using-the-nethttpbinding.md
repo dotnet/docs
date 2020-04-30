@@ -48,7 +48,7 @@ ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
 ```csharp  
 ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);  
             NetHttpBinding binding = new NetHttpBinding();  
-            svchost.AddServiceEndpoint(typeof(IService1), binding, address);   
+            svchost.AddServiceEndpoint(typeof(IService1), binding, address);
         }  
 ```  
   

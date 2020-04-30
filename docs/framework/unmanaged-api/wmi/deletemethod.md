@@ -19,15 +19,15 @@ topic_type:
 Deletes the specified method from a CIM class definition.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT Delete (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
-   [in] LPCWSTR           wszName 
-); 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
+   [in] LPCWSTR           wszName
+);
 ```  
 
 ## Parameters

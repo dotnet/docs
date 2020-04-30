@@ -24,7 +24,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
- WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](https://go.microsoft.com/fwlink/?LinkId=95183).  
+ WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](/windows/win32/wmisdk/using-wmi).  
   
 > [!CAUTION]
 > If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     write-host "Previous ACL: "$outsddl.SDDL  
   
     # Change the Access Control List (ACL) using SDDL  
-    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)   
+    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)
   
     # Get and output the current settings  
     $binarySD = @($null)  
@@ -135,21 +135,22 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     ```  
   
 ### Granting Access to Arbitrary Users or Groups  
- The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group’s Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
+ The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group's Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
   
 ```console
 Whoami /user  
 ```  
   
- This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](https://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](https://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://go.microsoft.com/fwlink/?LinkId=186468).  
+ This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](/windows/win32/wmisdk/using-wmi) tool from the Windows 2000 Resource Kit Tools for administrative tasks. This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://support.microsoft.com/help/243330/well-known-security-identifiers-in-windows-operating-systems).  
   
 ## Accessing Remote WMI Object Instances  
  If you need to access WCF WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
   
-### WMI CIM Studio  
- If you have installed [WMI Administrative Tools](https://go.microsoft.com/fwlink/?LinkId=95185), you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder  
+### WMI CIM Studio
+
+If you've installed WMI Administrative Tools, you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder:
   
- **%windir%\Program Files\WMI Tools\\**  
+*%windir%\Program Files\WMI Tools\\*
   
 1. In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
   

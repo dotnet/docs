@@ -28,7 +28,7 @@ This operation cannot be carried out as metadata for the following type was remo
  You can add the following run-time directive to the runtime directives file to add `Activate` metadata for the specific instantiation over `AppClass<T>` of <xref:System.Int32?displayProperty=nameWithType>:  
   
 ```xml  
-<TypeInstantiation Name="App1.AppClass" Arguments="System.Int32"   
+<TypeInstantiation Name="App1.AppClass" Arguments="System.Int32"
                    Activate="Required Public" />  
 ```  
   

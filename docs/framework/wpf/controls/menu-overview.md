@@ -9,11 +9,11 @@ ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
 # Menu Overview
 The <xref:System.Windows.Controls.Menu> class enables you to organize elements associated with commands and event handlers in a hierarchical order. Each <xref:System.Windows.Controls.Menu> element contains a collection of <xref:System.Windows.Controls.MenuItem> elements.  
 
-<a name="menu_control"></a>   
+<a name="menu_control"></a>
 ## Menu Control  
  The <xref:System.Windows.Controls.Menu> control presents a list of items that specify commands or options for an application. Typically, clicking a <xref:System.Windows.Controls.MenuItem> opens a submenu or causes an application to carry out a command.  
   
-<a name="creating_menus"></a>   
+<a name="creating_menus"></a>
 ## Creating Menus  
  The following example creates a <xref:System.Windows.Controls.Menu> to manipulate text in a <xref:System.Windows.Controls.TextBox>. The <xref:System.Windows.Controls.Menu> contains <xref:System.Windows.Controls.MenuItem> objects that use the <xref:System.Windows.Controls.MenuItem.Command%2A>, <xref:System.Windows.Controls.MenuItem.IsCheckable%2A>, and <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> properties and the <xref:System.Windows.Controls.MenuItem.Checked>, <xref:System.Windows.Controls.MenuItem.Unchecked>, and <xref:System.Windows.Controls.MenuItem.Click> events.  
   
@@ -22,17 +22,17 @@ The <xref:System.Windows.Controls.Menu> class enables you to organize elements a
  [!code-csharp[MenuItemCommandsAndEvents#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#2)]
  [!code-vb[MenuItemCommandsAndEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#2)]  
   
-<a name="menus_with_shortcutkeys"></a>   
+<a name="menus_with_shortcutkeys"></a>
 ## MenuItems with Keyboard Shortcuts  
  Keyboard shortcuts are character combinations that can be entered with the keyboard to invoke <xref:System.Windows.Controls.Menu> commands. For example, the shortcut for **Copy** is CTRL+C. There are two properties to use with keyboard shortcuts and menu items —<xref:System.Windows.Controls.MenuItem.InputGestureText%2A> or <xref:System.Windows.Controls.MenuItem.Command%2A>.  
   
-<a name="menus_inputgesturetext"></a>   
+<a name="menus_inputgesturetext"></a>
 ### InputGestureText  
  The following example shows how to use the <xref:System.Windows.Controls.MenuItem.InputGestureText%2A> property to assign keyboard shortcut text to <xref:System.Windows.Controls.MenuItem> controls. This only places the keyboard shortcut in the menu item.  It does not associate the command with the <xref:System.Windows.Controls.MenuItem>. The application must handle the user's input to carry out the action.  
   
  [!code-xaml[MenuEvent#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#6)]  
   
-<a name="menus_commands"></a>   
+<a name="menus_commands"></a>
 ### Command  
  The following example shows how to use the <xref:System.Windows.Controls.MenuItem.Command%2A> property to associate the **Open** and **Save** commands with <xref:System.Windows.Controls.MenuItem> controls. Not only does the command property associate a command with a <xref:System.Windows.Controls.MenuItem>, but it also supplies the input gesture text to use as a shortcut.  
   
@@ -40,7 +40,7 @@ The <xref:System.Windows.Controls.Menu> class enables you to organize elements a
   
  The <xref:System.Windows.Controls.MenuItem> class also has a <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> property, which specifies the element where the command occurs. If <xref:System.Windows.Controls.MenuItem.CommandTarget%2A> is not set, the element that has keyboard focus receives the command. For more information about commands, see [Commanding Overview](../advanced/commanding-overview.md).  
   
-<a name="menu_styling"></a>   
+<a name="menu_styling"></a>
 ## Menu Styling  
  With control styling, you can dramatically change the appearance and behavior of <xref:System.Windows.Controls.Menu> controls without having to write a custom control. In addition to setting visual properties, you can also apply a <xref:System.Windows.Style> to individual parts of a control, change the behavior of parts of the control through properties, or add additional parts or change the layout of a control. The following examples demonstrate several ways to add a <xref:System.Windows.Style> to a <xref:System.Windows.Controls.Menu> control.  
   

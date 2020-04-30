@@ -26,7 +26,7 @@ Grouping refers to the operation of putting data into groups so that the element
 Dim numbers As New System.Collections.Generic.List(Of Integer)(  
      New Integer() {35, 44, 200, 84, 3987, 4, 199, 329, 446, 208})  
   
-Dim query = From number In numbers   
+Dim query = From number In numbers
             Group By Remainder = (number Mod 2) Into Group  
   
 Dim sb As New System.Text.StringBuilder()  

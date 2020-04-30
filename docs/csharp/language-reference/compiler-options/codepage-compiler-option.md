@@ -24,7 +24,7 @@ This option specifies which codepage to use during compilation if the required p
   
 ## Remarks  
  The compiler will first attempt to interpret all source files as UTF-8. If your source code files are in an encoding other than UTF-8 and use characters other than 7-bit ASCII characters, use the **-codepage** option to specify which code page should be used. **-codepage** applies to all source code files in your compilation.  
-    
+
  See [GetCPInfo](/windows/desktop/api/winnls/nf-winnls-getcpinfo) for information on how to find which code pages are supported on your system.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  

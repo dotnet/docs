@@ -39,7 +39,7 @@ In addition, many collection classes contain the following features:
 
     The capacity of a collection is the number of elements it can contain. The count of a collection is the number of elements it actually contains. Some collections hide the capacity or the count or both.
 
-    Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This reduces the code required to use the collection; however, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List%601>, If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, adding an item is an O(1) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(`n`) operation, where n is <xref:System.Collections.Generic.List%601.Count%2A>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
+    Most collections automatically expand in capacity when the current capacity is reached. The memory is reallocated, and the elements are copied from the old collection to the new one. This reduces the code required to use the collection; however, the performance of the collection might be negatively affected. For example, for <xref:System.Collections.Generic.List%601>, if <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, adding an item is an O(1) operation. If the capacity needs to be increased to accommodate the new element, adding an item becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>. The best way to avoid poor performance caused by multiple reallocations is to set the initial capacity to be the estimated size of the collection.
 
     A <xref:System.Collections.BitArray> is a special case; its capacity is the same as its length, which is the same as its count.
 
@@ -52,7 +52,7 @@ In addition, many collection classes contain the following features:
     Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot%2A> and  <xref:System.Collections.ICollection.IsSynchronized%2A> members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
-## Choosing a collection
+## Choose a collection
 
 In general, you should use generic collections. The following table describes some common collection scenarios and the collection classes you can use for those scenarios. If you are new to generic collections, this table will help you choose the generic collection that works the best for your task.
 
@@ -67,7 +67,7 @@ In general, you should use generic collections. The following table describes so
 |A sorted collection|<xref:System.Collections.Generic.SortedList%602>|<xref:System.Collections.SortedList>|<xref:System.Collections.Immutable.ImmutableSortedDictionary%602><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet%601>|
 |A set for mathematical functions|<xref:System.Collections.Generic.HashSet%601><br /><br /> <xref:System.Collections.Generic.SortedSet%601>|No recommendation|<xref:System.Collections.Immutable.ImmutableHashSet%601><br /><br /> <xref:System.Collections.Immutable.ImmutableSortedSet%601>|
 
-### Collection Algorithmic Complexity
+### Algorithmic complexity of collections
 
 | Mutable                   | Amortized  | Worst Case                | Immutable                          | Complexity |
 |---------------------------|------------|---------------------------|------------------------------------|------------|
@@ -82,9 +82,9 @@ In general, you should use generic collections. The following table describes so
 | `Dictionary<T>` lookup    | O(1)       | O(1) – or strictly O(`n`) | `ImmutableDictionary<T>` lookup    | O(log `n`) |
 | `SortedDictionary<T>.Add` | O(log `n`) | O(`n` log `n`)            | `ImmutableSortedDictionary<T>.Add` | O(log `n`) |
 
-A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop, however; an `ImmutableList<T>` does a poor job inside a `for` loop, due to its O(log `n`) time for its indexer. It does fine when using `foreach` however. This is because `ImmutableList<T>` uses a binary tree to store its data instead of a simple array like `List<T>` uses. An array can be very quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
+A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreach` loop. An `ImmutableList<T>`, however, does a poor job inside a `for` loop, due to the O(log `n`) time for its indexer. Enumerating an `ImmutableList<T>` using a `foreach` loop is efficient because `ImmutableList<T>` uses a binary tree to store its data instead of a simple array like `List<T>` uses. An array can be very quickly indexed into, whereas a binary tree must be walked down until the node with the desired index is found.
 
-Additionally, the `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`. That's because they both use binary trees. The significant difference of course is that `ImmutableSortedSet<T>` uses an immutable one. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have your immutability and performance too.
+Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`. That's because they both use binary trees. The significant difference, of course, is that `ImmutableSortedSet<T>` uses an immutable binary tree. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have both immutability and performance.
 
 <a name="BKMK_RelatedTopics"></a>
 ## Related Topics

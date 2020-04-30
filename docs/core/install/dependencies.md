@@ -290,6 +290,24 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 > of libgdiplus by adding the Mono repository to your system. For more information,
 > see <https://www.mono-project.com/download/stable/>.
 
+### Alpine
+
+Alpine distributions require the following libraries to be installed:
+
+- icu-libs (this is not needed if globalization is disabled)
+- krb5-libs
+- libcurl
+- libintl
+- libssl1.1 (for Alpine >= 3.9) or libssl 1.0 (for older ones)
+- libstdc++
+- lttng-ust
+- numactl (optional, useful only for devices with NUMA enabled)
+- zlib
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (it is available only in the edge/testing repository)
+
 ::: zone-end
 
 ::: zone pivot="os-macos"

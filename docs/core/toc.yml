@@ -14,6 +14,8 @@
     href: install/runtime.md
   - name: Supported OS and dependencies
     href: install/dependencies.md
+  - name: Remove outdated runtimes and SDKs
+    href: install/remove-runtime-sdk-versions.md
   - name: Manage .NET templates
     href: install/templates.md
   - name: macOS Notarization issues
@@ -393,8 +395,6 @@
     href: versions/index.md
   - name: .NET Core version selection
     href: versions/selection.md
-  - name: Remove outdated runtimes and SDKs
-    href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
 - name: Dependency management and loading

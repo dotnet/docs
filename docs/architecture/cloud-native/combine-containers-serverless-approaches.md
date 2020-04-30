@@ -28,8 +28,6 @@ func init ProjectName --worker-runtime dotnet --docker
 
 When the project is created, it will include a Dockerfile and the worker runtime configured to `dotnet`. Now, you can create and test your function locally. Build and run it using the  `docker build` and `docker run` commands. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 
-When creating Azure functions, you'll want to reference version 3 of the Azure Functions runtime, which targets .NET Core 3.1 and later. [This link](https://docs.microsoft.com/azure/azure-functions/functions-versions) describes the runtime versions available for Azure Functions.
-
 For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 
 ## How to combine serverless and Kubernetes with KEDA

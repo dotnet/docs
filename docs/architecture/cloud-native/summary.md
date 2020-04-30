@@ -1,12 +1,12 @@
 ---
-title: Key takeaways
-description: Get the key takeaways from the Architecting Cloud-Native .NET Apps for Azure guide/e-book.
-ms.date: 04/28/2020
+title: Summary
+description: A summary of key conclusions from the Architecting Cloud-Native .NET Apps for Azure guide/e-book.
+ms.date: 04/29/2020
 ---
 
-# Key Takeaways
+# Summary
 
-As a summary and key takeaways, here are important conclusions from this guide.
+In summary, here are important conclusions from this guide:
 
 - **Cloud-native** is about designing modern applications that embrace rapid change, large scale, and resilience, in modern, dynamic environments such as public, private, and hybrid clouds.
 

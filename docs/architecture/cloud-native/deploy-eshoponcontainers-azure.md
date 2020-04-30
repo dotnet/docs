@@ -24,6 +24,32 @@ Using Helm, applications include text-based configuration files, called Helm cha
 
 Helm is composed of a command-line client tool, which consumes helm charts and launches commands to a server component named, Tiller. Tiller communicates with the Kubernetes API to ensure the correct provisioning of your containerized workloads. Helm is maintained by the Cloud-native Computing Foundation.
 
+The following yaml file presents a Helm template:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app.svc.marketing }}
+  labels:
+    app: {{ template "marketing-api.name" . }}
+    chart: {{ template "marketing-api.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "marketing-api.name" . }}
+    release: {{ .Release.Name }}
+```
+
+Note how the template describes a dynamic set of key/value pairs. When the template is invoked, values that enclosed in curly braces are pulled in from other yaml-based configuration files.
+
 You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-6 shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.
 
 ![eShopOnContainers Architecture](./media/eshoponcontainers-helm-folder.png)
@@ -31,13 +57,15 @@ You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-
 
 Each individual component is installed using a `helm install` command. eShop includes a "deploy all" script that loops through and installs the components using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command.
 
+> Note that version 3 of Helm officially removes the need for the Tiller server component. More information on this enhancement can be found [here](https://medium.com/better-programming/why-is-tiller-missing-in-helm-3-2347c446714).
+
 ## Azure Dev Spaces
 
 Cloud-native applications can quickly grow large and complex, requiring significant compute resources to run. In these scenarios, the entire application can't be hosted on a development machine (especially a laptop). Azure Dev Spaces is designed to address this problem using AKS. It enables developers to work with a local version of their services while hosting the rest of the application in an AKS development cluster.
 
 Developers share a running (development) instance in an AKS cluster that contains the entire containerized application. But they use personal spaces set up on their machine to locally develop their services. When ready, they test from end-to-end in the AKS cluster - without replicating dependencies. Azure Dev Spaces merges code from the local machine with services in AKS. Team members can see how their changes will behave in a real AKS environment. Developers can rapidly iterate and debug code directly in Kubernetes using Visual Studio 2017 or Visual Studio Code.
 
-In Figure 2-7, you can see how a developer, named Susie, has deployed her own version of the Bikes microservice into her dev space. She's then able to test her changes using a custom URL starting with the name of her space (susie.s.dev.myapp.eus.azds.io).
+In Figure 2-7, you can see that Developer Susie has deployed an updated version of the Bikes microservice into her dev space. She's then able to test her changes using a custom URL starting with the name of her space (susie.s.dev.myapp.eus.azds.io).
 
 ![eShopOnContainers Architecture](./media/azure-devspaces-one.png)
 **Figure 2-7**. Developer Susie deploys her own version of the Bikes microservice and tests it.

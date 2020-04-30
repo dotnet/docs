@@ -68,7 +68,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
 
-- [.NET Microservices: Architecture for Containerized .NET applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/)
+- [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
 - [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 

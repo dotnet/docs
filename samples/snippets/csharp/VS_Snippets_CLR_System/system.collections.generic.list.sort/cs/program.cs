@@ -66,8 +66,8 @@ public class Example
         Console.WriteLine("\nAfter sort by part number:");
         parts.ForEach(Console.WriteLine);
 
-        // This shows calling the Sort(Comparison(T) overload using
-        // a lambda expression as the Comparison delegate.
+        // This shows calling the Sort(Comparison<T> comparison) overload using
+        // a lambda expression as the Comparison<T> delegate.
         // This method treats null as the lesser of two values.
         parts.Sort((Part x, Part y) => 
             x.PartName == null && y.PartName == null

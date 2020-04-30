@@ -1,5 +1,5 @@
 ---
-title: How to do streaming transformations of text to XML in C# - LINQ to XML
+title: How to perform streaming transformations of text to XML in C# - LINQ to XML
 description: You can use an extension method that releases a line at a time to stream a text file for processing. This technique reduces memory requirements compared to techniques which load the entire file and then process it.
 ms.date: 07/20/2015
 dev_langs:
@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 ---
 
-# How to do streaming transformations of text to XML in C# (LINQ to XML)
+# How to perform streaming transformations of text to XML in C# (LINQ to XML)
 
 You can use an extension method that releases a line at a time to stream a text file for processing. This technique reduces memory requirements compared to techniques which load the entire file and then process it.
 

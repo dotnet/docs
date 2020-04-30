@@ -325,12 +325,11 @@ and division using the `double` type. Try more complicated calculations.
 After you've spent some time with the challenge, take the code you've written
 and place it in a new method. Name that new method `WorkWithDoubles`.
 
-## Work with fixed point types
+## Work with decimal types
 
 You've seen the basic numeric types in C#: integers and doubles.  There is one
 other type to learn: the `decimal` type. The `decimal` type has a smaller
-range but greater precision than `double`. The term **fixed point** means
-that the decimal point (or binary point) doesn't move. Let's take a look:
+range but greater precision than `double`. Let's take a look:
 
 ```csharp
 decimal min = decimal.MinValue;

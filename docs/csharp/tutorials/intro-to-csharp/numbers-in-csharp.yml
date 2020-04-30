@@ -233,13 +233,12 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
-- title: Work with fixed point types
+- title: Work with decimal types
   durationInMinutes: 8
   content: |
     You've seen the basic numeric types in C#: integers and doubles.  There is one
     other type to learn: the `decimal` type. The `decimal` type has a smaller
-    range but greater precision than `double`. The term **fixed point** means
-    that the decimal point (or binary point) doesn't move. Let's take a look:
+    range but greater precision than `double`. Let's take a look:
 
     ```csharp
     decimal min = decimal.MinValue;

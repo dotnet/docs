@@ -1,6 +1,6 @@
 ---
 title: Numbers in C# - Introduction to C# tutorial
-description: Learn C# by exploring numeric types, their properties and methods.
+description: Learn C# by exploring numeric types, their uses, properties, and methods.
 ms.date: 10/31/2017
 ms.custom: mvc
 ---
@@ -19,7 +19,7 @@ Create a directory named *numbers-quickstart*. Make that the current directory a
 dotnet new console -n NumbersInCSharp -o .
 ```
 
-Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following:
+Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 
 ```csharp
 int a = 18;
@@ -30,7 +30,7 @@ Console.WriteLine(c);
 
 Run this code by typing `dotnet run` in your command window.
 
-You've just seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
+You've seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
 
 - `-` for subtraction
 - `*` for multiplication
@@ -55,7 +55,7 @@ Console.WriteLine(c);
 
 Run this code by typing `dotnet run` in your command window.
 
-You can also experiment by performing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
+You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
 > As you explore C# (or any programming language), you'll
@@ -112,7 +112,7 @@ Comment out the call to `WorkingWithIntegers()`. It will make the output less cl
 //WorkingWithIntegers();
 ```
 
-The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler does not generate any executable code from comments.
+The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments.
 
 The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics.
 Multiplication and division take precedence over addition and subtraction.
@@ -157,7 +157,7 @@ Console.WriteLine(h);
 Type `dotnet run` again to see the results.
 
 Before moving on, let's take all the code you've written in this section and put it in a new method. Call that new method `OrderPrecedence`.
-You should end up with something like this:
+You should write something like this:
 
 ```csharp
 using System;
@@ -262,7 +262,7 @@ The answer is a very large negative number because an overflow "wraps around"
 from the largest possible integer value to the smallest.
 
 There are other numeric types with different limits and precision that you
-would use when the `int` type doesn't meet your needs. Let's explore those next.
+would use when the `int` type doesn't meet your needs. Let's explore those other types next.
 
 Once again, let's move the code you wrote in this section into a separate method. Name it `TestLimits`.
 
@@ -274,7 +274,7 @@ useful to represent non-integral numbers that may be very large or small
 in magnitude. **Double-precision** is a relative term that describes the
 number of binary digits used to store the value. **Double precision**
 number have twice the number of binary digits as **single-precision**. On modern computers,
-it is more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword.
+it's more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword.
 Let's explore. Add the following code and see the result:
 
 ```csharp
@@ -316,11 +316,11 @@ double third = 1.0 / 3.0;
 Console.WriteLine(third);
 ```
 
-You know that `0.3` repeating is not exactly the same as `1/3`.
+You know that `0.3` repeating isn't exactly the same as `1/3`.
 
 ***Challenge***
 
-Try other calculations with large numbers, small numbers, multiplication
+Try other calculations with large numbers, small numbers, multiplication,
 and division using the `double` type. Try more complicated calculations.
 
 After you've spent some time with the challenge, take the code you've written
@@ -328,7 +328,7 @@ and place it in a new method. Name that new method `WorkWithDoubles`.
 
 ## Work with decimal types
 
-You've seen the basic numeric types in C#: integers and doubles.  There is one
+You've seen the basic numeric types in C#: integers and doubles.  There's one
 other type to learn: the `decimal` type. The `decimal` type has a smaller
 range but greater precision than `double`. Let's take a look:
 
@@ -376,7 +376,7 @@ You've completed the "Numbers in C#" quickstart. You can continue with
 the [Branches and loops](branches-and-loops-local.md) quickstart in
 your own development environment.
 
-You can learn more about numbers in C# in the following topics:
+You can learn more about numbers in C# in the following articles:
 
 - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
 - [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)

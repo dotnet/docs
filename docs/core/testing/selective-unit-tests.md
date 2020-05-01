@@ -2,17 +2,24 @@
 title: Running selective unit tests
 description: How to use a filter expression to run selective unit tests with the dotnet test command in .NET Core.
 author: smadala
-ms.date: 03/22/2017
+ms.date: 04/29/2020
 ---
 
 # Running selective unit tests
 
 With the `dotnet test` command in .NET Core, you can use a filter expression to run selective tests. This article demonstrates how to filter which test are run. The following examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter` with `--testcasefilter:`.
 
-> [!NOTE]
-> Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
-> skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
-> Note the backslash that precedes the exclamation mark.
+## Character escaping
+
+Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
+skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
+Note the backslash that precedes the exclamation mark.
+
+For `FullyQualifiedName` values that include a comma for generic type parameters, escape the comma with `%2C`. For example:
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"
+```
 
 ## MSTest
 
@@ -144,3 +151,5 @@ namespace NUnitNamespace
 | <code>dotnet test --filter "FullyQualifiedName~UnitTest1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTest1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
 | `dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"` | Runs tests which have `UnitTest1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
 | <code>dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `UnitTest1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+
+For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).

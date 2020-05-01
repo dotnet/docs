@@ -16,7 +16,7 @@ This article describes how to use a package manager to install .NET Core on Cent
 
 ## Install the .NET Core SDK
 
-In your terminal, run the following commands.
+In your terminal, run the following command.
 
 ```bash
 sudo dnf install dotnet-sdk-3.1
@@ -24,7 +24,7 @@ sudo dnf install dotnet-sdk-3.1
 
 ## Install the ASP.NET Core Runtime
 
-In your terminal, run the following commands.
+In your terminal, run the following command.
 
 ```bash
 sudo dnf install aspnetcore-runtime-3.1
@@ -32,7 +32,7 @@ sudo dnf install aspnetcore-runtime-3.1
 
 ## Install the .NET Core Runtime
 
-In your terminal, run the following commands.
+In your terminal, run the following command.
 
 ```bash
 sudo dnf install dotnet-runtime-3.1

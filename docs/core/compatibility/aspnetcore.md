@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 04/28/2020
+ms.date: 04/29/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -48,6 +48,7 @@ The following breaking changes are documented on this page:
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
 - [Localization: APIs marked obsolete](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
+- [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
@@ -82,6 +83,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
+[!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
 
 ***
 

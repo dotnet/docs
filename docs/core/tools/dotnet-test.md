@@ -172,12 +172,6 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
   dotnet test --collect "Code Coverage"
   ```
 
-- Run the tests in the project in the current directory, and generate a code coverage file (after installing Coverlet):
-
-  ```dotnetcli
-  dotnet test --collect:"XPlat Code Coverage"
-  ```
-
 - Run the tests in the project in the current directory, and log with detailed verbosity to the console:
 
   ```dotnetcli

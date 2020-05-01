@@ -1,24 +1,24 @@
 ﻿/*****************************************************************************************
  * File: FindText.cs
  *
- * Description: 
- *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use 
+ * Description:
+ *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use
  *    UI Automation to find/select text and track text selection changes in the Notepad instance.
- * 
- *    Text.txt should be automatically copied to the same folder as the executable when 
- *    you build the sample. You may have to manually copy this file if you receive an error 
+ *
+ *    Text.txt should be automatically copied to the same folder as the executable when
+ *    you build the sample. You may have to manually copy this file if you receive an error
  *    stating the file cannot be found.
  *
  * Programming Elements:
  *    This sample demonstrates the following UI Automation programming elements from...
- * 
+ *
  *       System.Windows.Automation Namespace:
  *         Automation Class
  *           AddAutomationEventHandler
  *           AddAutomationPropertyChangedEventHandler
  *         WindowPattern Class
  *           WindowClosedEvent field
- *         AutomationPattern Class 
+ *         AutomationPattern Class
  *         AutomationEventHandler Delegate
  *         AutomationElement Class
  *           RootElement property
@@ -43,21 +43,21 @@
  *           Pattern field
  *           ValueProperty field
  *         AutomationPropertyChangedEventHandler Delegate
- * 
+ *
  *       System.Windows.Automation.Searcher Namespace:
  *         PropertyCondition Class
- * 
+ *
  *       System.Windows.Automation.Text Namespace:
  *         TextPatternRange Class
  *           FindText method
  *           Select method
  *         TextPatternRangeEndpoint Enumeration
- *         
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.

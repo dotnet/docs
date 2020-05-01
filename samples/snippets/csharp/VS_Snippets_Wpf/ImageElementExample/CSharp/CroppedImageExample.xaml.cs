@@ -25,7 +25,7 @@ namespace ImageElementExample
          croppedImage.Margin = new Thickness(5);
 
          // Create a CroppedBitmap based off of a xaml defined resource.
-         CroppedBitmap cb = new CroppedBitmap(     
+         CroppedBitmap cb = new CroppedBitmap(
             (BitmapSource)this.Resources["masterImage"],
             new Int32Rect(30, 20, 105, 50));       //select region rect
          croppedImage.Source = cb;                 //set image source to cropped
@@ -44,7 +44,7 @@ namespace ImageElementExample
 
          // Create the cropped image based on previous CroppedBitmap.
          CroppedBitmap chained = new CroppedBitmap(cb,
-            new Int32Rect(30, 0, (int)cb.Width-30, (int)cb.Height)); 
+            new Int32Rect(30, 0, (int)cb.Width-30, (int)cb.Height));
          // Set the image's source.
          chainImage.Source = chained;
          //</SnippetCroppedCSharp2>

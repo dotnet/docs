@@ -16,7 +16,7 @@ namespace SpinLockDemo
         // exception to be thrown when the first thread attempts to reenter the lock.
         // Specify false to cause deadlock due to coding error below.
         private static SpinLock _spinLock = new SpinLock(true);
-        
+
         static void Main()
         {
             Parallel.Invoke(
@@ -56,7 +56,7 @@ namespace SpinLockDemo
                 }
                 finally
                 {
-                    // INTENTIONAL CODING ERROR TO DEMONSTRATE THREAD TRACKING! 
+                    // INTENTIONAL CODING ERROR TO DEMONSTRATE THREAD TRACKING!
                     // UNCOMMENT THE LINES FOR CORRECT SPINLOCK BEHAVIOR
                     // Commenting out these lines causes the same thread
                     // to attempt to reenter the lock. If the SpinLock was
@@ -82,9 +82,9 @@ namespace SpinLockDemo
 //</snippet01>
 
  //<snippet02>
-   
+
     class SpinLockDemo2
-    {        
+    {
         const int N = 100000;
         static Queue<Data> _queue = new Queue<Data>();
         static object _lock = new Object();
@@ -101,31 +101,31 @@ namespace SpinLockDemo
             // First use a standard lock for comparison purposes.
             UseLock();
             _queue.Clear();
-            UseSpinLock();            
-            
+            UseSpinLock();
+
             Console.WriteLine("Press a key");
             Console.ReadKey();
         }
 
         private static void UpdateWithSpinLock(Data d, int i)
-        {             
+        {
             bool lockTaken = false;
             try
             {
                 _spinlock.Enter(ref lockTaken);
-                _queue.Enqueue( d );                
+                _queue.Enqueue( d );
             }
             finally
-            { 
+            {
                 if (lockTaken) _spinlock.Exit(false);
-            } 
+            }
         }
 
         private static void UseSpinLock()
         {
-              
-              Stopwatch sw = Stopwatch.StartNew();            
-            
+
+              Stopwatch sw = Stopwatch.StartNew();
+
               Parallel.Invoke(
                       () => {
                           for (int i = 0; i < N; i++)
@@ -137,7 +137,7 @@ namespace SpinLockDemo
                           for (int i = 0; i < N; i++)
                           {
                               UpdateWithSpinLock(new Data() { Name = i.ToString(), Number = i }, i);
-                          }                          
+                          }
                       }
                   );
               sw.Stop();
@@ -149,13 +149,13 @@ namespace SpinLockDemo
             lock (_lock)
             {
                 _queue.Enqueue(d);
-            } 
+            }
         }
 
         private static void UseLock()
         {
             Stopwatch sw = Stopwatch.StartNew();
-           
+
             Parallel.Invoke(
                     () => {
                         for (int i = 0; i < N; i++)
@@ -167,7 +167,7 @@ namespace SpinLockDemo
                         for (int i = 0; i < N; i++)
                         {
                             UpdateWithLock(new Data() { Name = i.ToString(), Number = i }, i);
-                        }                        
+                        }
                     }
                 );
             sw.Stop();

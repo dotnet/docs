@@ -9,13 +9,13 @@ public class Example
    { return Task.FromResult<String>(String.Empty); }
 
    // <Snippet8>
-   public IAsyncResult BeginDownloadString(Uri url, 
-                                           AsyncCallback callback, 
+   public IAsyncResult BeginDownloadString(Uri url,
+                                           AsyncCallback callback,
                                            object state)
    // </Snippet8>
    { return null; }
 
-   // <Snippet9>                                        
+   // <Snippet9>
    public string EndDownloadString(IAsyncResult asyncResult)
    // </Snippet9>
    { return String.Empty; }
@@ -24,8 +24,8 @@ public class Example
 public class Example2
 {
    // <Snippet10>
-   public IAsyncResult BeginDownloadString(Uri url, 
-                                           AsyncCallback callback, 
+   public IAsyncResult BeginDownloadString(Uri url,
+                                           AsyncCallback callback,
                                            object state)
    {
       return DownloadStringAsync(url).AsApm(callback, state);
@@ -36,31 +36,31 @@ public class Example2
       return ((Task<string>)asyncResult).Result;
    }
    // </Snippet10>
-   
+
    public static Task<String> DownloadStringAsync(Uri url)
    { return Task.FromResult<String>(String.Empty); }
 }
 
 public static class Library
 {
-    public static IAsyncResult AsApm<T>(this Task<T> task, 
-                                        AsyncCallback callback, 
+    public static IAsyncResult AsApm<T>(this Task<T> task,
+                                        AsyncCallback callback,
                                         object state)
     {
-        if (task == null) 
+        if (task == null)
             throw new ArgumentNullException("task");
-        
+
         var tcs = new TaskCompletionSource<T>(state);
-        task.ContinueWith(t => 
+        task.ContinueWith(t =>
                           {
-                             if (t.IsFaulted) 
+                             if (t.IsFaulted)
                                 tcs.TrySetException(t.Exception.InnerExceptions);
-                             else if (t.IsCanceled)    
+                             else if (t.IsCanceled)
                                 tcs.TrySetCanceled();
-                             else 
+                             else
                                 tcs.TrySetResult(t.Result);
-    
-                             if (callback != null) 
+
+                             if (callback != null)
                                 callback(tcs.Task);
                           }, TaskScheduler.Default);
         return tcs.Task;

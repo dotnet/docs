@@ -19,7 +19,7 @@ public class SystemDrawingRecoloringImages
         int width = image.Width;
         int height = image.Height;
 
-        float[][] colorMatrixElements = { 
+        float[][] colorMatrixElements = {
            new float[] {1,  0,  0,  0, 0},
            new float[] {0,  1,  0,  0, 0},
            new float[] {0,  0,  1,  0, 0},
@@ -37,8 +37,8 @@ public class SystemDrawingRecoloringImages
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(150, 10, width, height),  // destination rectangle 
-           0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(150, 10, width, height),  // destination rectangle
+           0, 0,        // upper-left corner of source rectangle
            width,       // width of source rectangle
            height,      // height of source rectangle
            GraphicsUnit.Pixel,
@@ -56,7 +56,7 @@ public class SystemDrawingRecoloringImages
         int width = image.Width;
         int height = image.Height;
 
-        float[][] colorMatrixElements = { 
+        float[][] colorMatrixElements = {
            new float[] {2,  0,  0,  0, 0},        // red scaling factor of 2
            new float[] {0,  1,  0,  0, 0},        // green scaling factor of 1
            new float[] {0,  0,  1,  0, 0},        // blue scaling factor of 1
@@ -74,8 +74,8 @@ public class SystemDrawingRecoloringImages
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(120, 10, width, height),  // destination rectangle 
-           0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(120, 10, width, height),  // destination rectangle
+           0, 0,        // upper-left corner of source rectangle
            width,       // width of source rectangle
            height,      // height of source rectangle
            GraphicsUnit.Pixel,
@@ -105,8 +105,8 @@ public class SystemDrawingRecoloringImages
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(150, 10, width, height),  // destination rectangle 
-           0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(150, 10, width, height),  // destination rectangle
+           0, 0,        // upper-left corner of source rectangle
            width,       // width of source rectangle
            height,      // height of source rectangle
            GraphicsUnit.Pixel,
@@ -124,7 +124,7 @@ public class SystemDrawingRecoloringImages
         int width = image.Width;
         int height = image.Height;
 
-        float[][] colorMatrixElements = { 
+        float[][] colorMatrixElements = {
            new float[] {1,  0,  0,  0, 0},
            new float[] {0,  1,  0,  0, 0},
            new float[] {0,  0,  2,  0, 0},
@@ -142,8 +142,8 @@ public class SystemDrawingRecoloringImages
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(150, 10, width, height),  // destination rectangle 
-           0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(150, 10, width, height),  // destination rectangle
+           0, 0,        // upper-left corner of source rectangle
            width,       // width of source rectangle
            height,      // height of source rectangle
            GraphicsUnit.Pixel,
@@ -158,7 +158,7 @@ public class SystemDrawingRecoloringImages
         int width = image.Width;
         int height = image.Height;
 
-        float[][] colorMatrixElements = { 
+        float[][] colorMatrixElements = {
            new float[] {.75F,  0,  0,  0, 0},
            new float[] {0,  .65F,  0,  0, 0},
            new float[] {0,  0,  .5F,  0, 0},
@@ -176,8 +176,8 @@ public class SystemDrawingRecoloringImages
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(150, 10, width, height),  // destination rectangle 
-           0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(150, 10, width, height),  // destination rectangle
+           0, 0,        // upper-left corner of source rectangle
            width,       // width of source rectangle
            height,      // height of source rectangle
            GraphicsUnit.Pixel,

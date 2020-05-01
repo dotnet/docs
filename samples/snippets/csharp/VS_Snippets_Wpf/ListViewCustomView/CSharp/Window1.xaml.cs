@@ -44,7 +44,7 @@ namespace SDKSample
             }
             else if (str == "OneButtonHeaderView")
             {
-                lv.View = lv.FindResource("OneButtonHeaderView") 
+                lv.View = lv.FindResource("OneButtonHeaderView")
                      as ViewBase;
                 currentView.Text = "OneButtonHeaderView";
             }

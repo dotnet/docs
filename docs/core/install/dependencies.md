@@ -90,7 +90,7 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 <!-- markdownlint-disable MD001 -->
 
-### Windows 7 / Vista / 8.1 / Server 2008 R2
+### <a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
 
 Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
@@ -108,6 +108,10 @@ Install the following:
 The requirements above are also required if you come across one of the following errors:
 
 > The program can't start because *api-ms-win-crt-runtime-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
+> The program can't start because *api-ms-win-cor-timezone-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
 >
 > \- or -
 >

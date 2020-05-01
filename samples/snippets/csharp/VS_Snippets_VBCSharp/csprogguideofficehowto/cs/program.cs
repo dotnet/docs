@@ -16,7 +16,7 @@ namespace OfficeProgrammingWalkthrough
             //<Snippet3>
             // Create a list of accounts.
             var bankAccounts = new List<Account> {
-                new Account { 
+                new Account {
                               ID = 345678,
                               Balance = 541.27
                             },
@@ -46,10 +46,10 @@ namespace OfficeProgrammingWalkthrough
             // Make the object visible.
             excelApp.Visible = true;
 
-            // Create a new, empty workbook and add it to the collection returned 
+            // Create a new, empty workbook and add it to the collection returned
             // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a praticular template. 
-            // Because no argument is sent in this example, Add creates a new workbook. 
+            // Add has an optional parameter for specifying a praticular template.
+            // Because no argument is sent in this example, Add creates a new workbook.
             excelApp.Workbooks.Add();
 
             // This example uses a single workSheet. The explicit type casting is
@@ -64,15 +64,15 @@ namespace OfficeProgrammingWalkthrough
             var wordApp = new Word.Application();
             wordApp.Visible = true;
 
-            // The Add method has four reference parameters, all of which are 
+            // The Add method has four reference parameters, all of which are
             // optional. Visual C# allows you to omit arguments for them if
             // the default values are what you want.
             wordApp.Documents.Add();
 
-            // PasteSpecial has seven reference parameters, all of which are 
-            // optional. This example uses named arguments to specify values 
-            // for two of the parameters. Although these are reference 
-            // parameters, you do not need to use the ref keyword, or to create 
+            // PasteSpecial has seven reference parameters, all of which are
+            // optional. This example uses named arguments to specify values
+            // for two of the parameters. Although these are reference
+            // parameters, you do not need to use the ref keyword, or to create
             // variables to send in as arguments. You can send the values directly.
             wordApp.Selection.PasteSpecial( Link: true, DisplayAsIcon: true);
         }
@@ -84,11 +84,11 @@ namespace OfficeProgrammingWalkthrough
             var wordApp = new Word.Application();
             wordApp.Visible = true;
 
-            // The Add method has four parameters, all of which are optional. 
-            // In Visual C# 2008 and earlier versions, an argument has to be sent 
-            // for every parameter. Because the parameters are reference  
+            // The Add method has four parameters, all of which are optional.
+            // In Visual C# 2008 and earlier versions, an argument has to be sent
+            // for every parameter. Because the parameters are reference
             // parameters of type object, you have to create an object variable
-            // for the arguments that represents 'no value'. 
+            // for the arguments that represents 'no value'.
 
             object useDefaultValue = Type.Missing;
 
@@ -120,13 +120,13 @@ namespace OfficeProgrammingWalkthrough
 
             //<Snippet17>
             // The AutoFormat method has seven optional value parameters. The
-            // following call specifies a value for the first parameter, and uses 
-            // the default values for the other six. 
+            // following call specifies a value for the first parameter, and uses
+            // the default values for the other six.
 
             // Call to AutoFormat in Visual C# 2008. This code is not part of the
             // current solution.
-            excelApp.get_Range("A1", "B4").AutoFormat(Excel.XlRangeAutoFormat.xlRangeAutoFormatTable3, 
-                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, 
+            excelApp.get_Range("A1", "B4").AutoFormat(Excel.XlRangeAutoFormat.xlRangeAutoFormatTable3,
+                Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
                 Type.Missing);
             //</Snippet17>
         }
@@ -137,10 +137,10 @@ namespace OfficeProgrammingWalkthrough
             // Make the object visible.
             excelApp.Visible = true;
 
-            // Create a new, empty workbook and add it to the collection returned 
+            // Create a new, empty workbook and add it to the collection returned
             // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a particular template. 
-            // Because no argument is sent in this example, Add creates a new workbook. 
+            // Add has an optional parameter for specifying a particular template.
+            // Because no argument is sent in this example, Add creates a new workbook.
             excelApp.Workbooks.Add();
 
             // This example uses a single workSheet.
@@ -153,7 +153,7 @@ namespace OfficeProgrammingWalkthrough
             //</Snippet5>
 
             //<Snippet6>
-            // Establish column headings. Both parameters must be supplied in 
+            // Establish column headings. Both parameters must be supplied in
             // Visual C# 2008 or earlier versions.
             //workSheet.get_Range("A1", Type.Missing).Value2 = "ID Number";
             //workSheet.get_Range("B1", Type.Missing).Value2 = "Current Balance";
@@ -172,7 +172,7 @@ namespace OfficeProgrammingWalkthrough
             }
             //</Snippet7>
 
-            // Columns returns a Range object that represents all the columns 
+            // Columns returns a Range object that represents all the columns
             // on the active worksheet. AutoFit fits the width of the columns
             // to their content.
             //ExcelApp.Columns.AutoFit();
@@ -201,7 +201,7 @@ namespace OfficeProgrammingWalkthrough
 
             //<Snippet12>
             // Put the spreadsheet contents on the clipboard. The Copy method has one
-            // optional parameter for specifying a destination. Because no argument  
+            // optional parameter for specifying a destination. Because no argument
             // is sent, the destination is the Clipboard.
             workSheet.Range["A1:B3"].Copy();
             //</Snippet12>
@@ -211,7 +211,7 @@ namespace OfficeProgrammingWalkthrough
             //ExcelApp.get_Range("A5:C6").PasteSpecial(val, val, val, Transpose: true);
             //ExcelApp.get_Range("A5:C6").Copy();
         }
- 
+
         // These examples are in Named and Optional, main topic. Can be deleted here.
         static void TestExcelCom()
         {
@@ -219,7 +219,7 @@ namespace OfficeProgrammingWalkthrough
             var myFormat = Microsoft.Office.Interop.Excel.XlRangeAutoFormat.xlRangeAutoFormatAccounting1;
 
             // Using named and optional arguments, you can supply arguments for
-            // only the parameters for which you do not want to use the default 
+            // only the parameters for which you do not want to use the default
             // value, and omit arguments for the other parameters. In the following
             // call, a value is sent for only one parameter.
             excelApp.get_Range("A1", "B4").AutoFormat( Format: myFormat );
@@ -228,7 +228,7 @@ namespace OfficeProgrammingWalkthrough
             // every parameter. The following call supplies a value for the first
             // parameter, and sends a placeholder value for the other six. The
             // default values are used for those parameters.
-            excelApp.get_Range("A1", "B4").AutoFormat(myFormat, Type.Missing, 
+            excelApp.get_Range("A1", "B4").AutoFormat(myFormat, Type.Missing,
                 Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
         }
     }

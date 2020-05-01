@@ -48,7 +48,6 @@ The topics in this section describe how to use data binding to bind elements to 
 - [Set Up Notification of Binding Updates](how-to-set-up-notification-of-binding-updates.md)
 - [Clear Bindings](how-to-clear-bindings.md)
 - [Find DataTemplate-Generated Elements](how-to-find-datatemplate-generated-elements.md)
-- [Bind to a Web Service](how-to-bind-to-a-web-service.md)
 
 ## Reference
 

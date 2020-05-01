@@ -11,7 +11,7 @@ namespace grid_getset_methods
 	public partial class Window1 : Window
 	{
         // <Snippet2>
-		private void setCol0(object sender, RoutedEventArgs e) 
+		private void setCol0(object sender, RoutedEventArgs e)
 		{
             Grid.SetColumn(rect1, 0);
             txt1.Text = "Rectangle is in Column " + Grid.GetColumn(rect1).ToString();

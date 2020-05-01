@@ -31,17 +31,17 @@ class Program
             SqlDataReader reader =
                 commandSourceData.ExecuteReader();
 
-            // Open the destination connection. In the real world you would 
-            // not use SqlBulkCopy to move data from one table to the other 
+            // Open the destination connection. In the real world you would
+            // not use SqlBulkCopy to move data from one table to the other
             // in the same database. This is for demonstration purposes only.
             using (SqlConnection destinationConnection =
                        new SqlConnection(connectionString))
             {
                 destinationConnection.Open();
 
-                // Set up the bulk copy object. 
+                // Set up the bulk copy object.
                 // Note that the column positions in the source
-                // data reader match the column positions in 
+                // data reader match the column positions in
                 // the destination table so there is no need to
                 // map columns.
                 using (SqlBulkCopy bulkCopy =
@@ -68,7 +68,7 @@ class Program
                     }
                 }
 
-                // Perform a final count on the destination 
+                // Perform a final count on the destination
                 // table to see how many rows were added.
                 long countEnd = System.Convert.ToInt32(
                     commandRowCount.ExecuteScalar());
@@ -81,8 +81,8 @@ class Program
     }
 
     private static string GetConnectionString()
-        // To avoid storing the sourceConnection string in your code, 
-        // you can retrieve it from a configuration file. 
+        // To avoid storing the sourceConnection string in your code,
+        // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

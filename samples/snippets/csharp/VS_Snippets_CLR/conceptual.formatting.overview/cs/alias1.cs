@@ -9,7 +9,7 @@ public class Example
       DateTime date1 = new DateTime(2009, 6, 30);
       Console.WriteLine("D Format Specifier:     {0:D}", date1);
       string longPattern = CultureInfo.CurrentCulture.DateTimeFormat.LongDatePattern;
-      Console.WriteLine("'{0}' custom format string:     {1}", 
+      Console.WriteLine("'{0}' custom format string:     {1}",
                         longPattern, date1.ToString(longPattern));
    }
 }

@@ -6,11 +6,11 @@ using System.Text.Json.Serialization;
 namespace SystemTextJsonSamples
 {
     public class DateTimeOffsetNullHandlingConverter : JsonConverter<DateTimeOffset>
-    
+
     {
         public override DateTimeOffset Read(
-            ref Utf8JsonReader reader, 
-            Type typeToConvert, 
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
             JsonSerializerOptions options)
         {
             if (reader.TokenType == JsonTokenType.Null)
@@ -21,8 +21,8 @@ namespace SystemTextJsonSamples
         }
 
         public override void Write(
-            Utf8JsonWriter writer, 
-            DateTimeOffset dateTimeValue, 
+            Utf8JsonWriter writer,
+            DateTimeOffset dateTimeValue,
             JsonSerializerOptions options)
         {
             writer.WriteStringValue(dateTimeValue);

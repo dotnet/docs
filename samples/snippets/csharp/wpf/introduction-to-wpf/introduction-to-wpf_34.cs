@@ -1,6 +1,6 @@
 using System; // EventArgs
 using System.Windows; // DependencyObject, DependencyPropertyChangedEventArgs,
-                      // FrameworkPropertyMetadata, PropertyChangedCallback, 
+                      // FrameworkPropertyMetadata, PropertyChangedCallback,
                       // RoutedPropertyChangedEventArgs
 using System.Windows.Controls; // UserControl
 

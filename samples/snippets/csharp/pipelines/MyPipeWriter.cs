@@ -23,7 +23,7 @@ namespace Pipes
 
             await writer.FlushAsync(cancellationToken);
         }
-        #endregion       
+        #endregion
     }
 
     class MyPipeWriter2
@@ -34,7 +34,7 @@ namespace Pipes
         {
             byte[] helloBytes = Encoding.ASCII.GetBytes("Hello");
 
-            // Write helloBytes to the writer, there's no need to call Advance here 
+            // Write helloBytes to the writer, there's no need to call Advance here
             // (Write does that).
             await writer.WriteAsync(helloBytes, cancellationToken);
         }

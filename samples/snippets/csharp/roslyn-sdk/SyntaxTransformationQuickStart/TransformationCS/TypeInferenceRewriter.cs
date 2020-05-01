@@ -17,7 +17,7 @@ namespace TransformationCS
         public TypeInferenceRewriter(SemanticModel semanticModel) => SemanticModel = semanticModel;
         // </SnippetConstruction>
 
-        // five 
+        // five
         public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node)
         {
             // <SnippetExclusions>

@@ -245,6 +245,6 @@ For information about breaking changes, see [Breaking changes for migration from
 
 ## See also
 
-- [What's new in .NET Core](index.md)
+- [What's new in .NET Core 3.1](dotnet-core-3-1.md)
 - [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)
 - [What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

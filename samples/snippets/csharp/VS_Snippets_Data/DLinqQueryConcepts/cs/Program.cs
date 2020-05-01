@@ -115,7 +115,7 @@ namespace cs_queryconcepts
             // <Snippet7>
             Northwnd db = new Northwnd(@"northwnd.mdf");
             Customer c = db.Customers.Single(x => x.CustomerID == "19283");
-foreach (Order ord in 
+foreach (Order ord in
     c.Orders.Where(o => o.ShippedDate.Value.Year == 1998))
 {
     // Do something.
@@ -130,7 +130,7 @@ foreach (Order ord in
             Customer c = db.Customers.Single(x => x.CustomerID == "19283");
 c.Orders.Load();
 
-foreach (Order ord in 
+foreach (Order ord in
     c.Orders.Where(o => o.ShippedDate.Value.Year == 1998))
 {
     // Do something.

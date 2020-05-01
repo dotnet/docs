@@ -2,7 +2,7 @@
 title: Architecting Cloud Native .NET Applications for Azure
 description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
-ms.date: 03/07/2019
+ms.date: 04/23/2020
 ---
 
 # Architecting Cloud Native .NET Applications for Azure
@@ -21,15 +21,15 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright &copy; 2019 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
-This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at https://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
+Microsoft and the trademarks listed at https://www.microsoft.com on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
 
 Mac and macOS are trademarks of Apple Inc.
 
@@ -39,19 +39,25 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
+> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](http://thinkingincloudnative.com/about/), Microsoft
 >
-> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](https://robvettor.com)
+> **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 
 Participants and Reviewers:
 
 > **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
 >
-> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+> **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+>
+> **Jeremy Likness**, Senior Program Manager, .NET team, Microsoft
+>
+> **Cecil Phillip**, Senior Cloud Advocate, Microsoft
+
+Learn more about eShopOnContainers
 
 Editors:
 
-> **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft
+> **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
 ## Who should use this guide
 

@@ -8,13 +8,13 @@ public class Example
         var japaneseCal = new JapaneseCalendar();
         var jaJp = new CultureInfo("ja-JP");
         jaJp.DateTimeFormat.Calendar = japaneseCal;
-  
+
         var date = new DateTime(1905, 2, 12);
         Console.WriteLine($"Gregorian calendar date: {date:d}");
 
         // Call the ToString(IFormatProvider) method.
         Console.WriteLine($"Japanese calendar date: {date.ToString("d", jaJp)}");
-        
+
         // Use a FormattableString object.
         FormattableString fmt = $"{date:d}";
         Console.WriteLine($"Japanese calendar date: {fmt.ToString(jaJp)}");

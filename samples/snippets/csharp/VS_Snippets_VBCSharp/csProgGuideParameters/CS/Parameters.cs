@@ -122,7 +122,7 @@ namespace CsCsrefProgrammingParameters
     namespace WrapPassingRefs
     {
         //<Snippet7>
-        class PassingRefByVal 
+        class PassingRefByVal
         {
             static void Change(int[] pArray)
             {
@@ -131,7 +131,7 @@ namespace CsCsrefProgrammingParameters
                 System.Console.WriteLine("Inside the method, the first element is: {0}", pArray[0]);
             }
 
-            static void Main() 
+            static void Main()
             {
                 int[] arr = {1, 4, 5};
                 System.Console.WriteLine("Inside Main, before calling the method, the first element is: {0}", arr [0]);
@@ -148,7 +148,7 @@ namespace CsCsrefProgrammingParameters
         //</Snippet7>
 
         //<Snippet8>
-        class PassingRefByRef 
+        class PassingRefByRef
         {
             static void Change(ref int[] pArray)
             {
@@ -157,8 +157,8 @@ namespace CsCsrefProgrammingParameters
                 pArray = new int[5] {-3, -1, -2, -3, -4};
                 System.Console.WriteLine("Inside the method, the first element is: {0}", pArray[0]);
             }
-                
-            static void Main() 
+
+            static void Main()
             {
                 int[] arr = {1, 4, 5};
                 System.Console.WriteLine("Inside Main, before calling the method, the first element is: {0}", arr[0]);
@@ -226,7 +226,7 @@ namespace CsCsrefProgrammingParameters
                 arg = 4;
                 squareRef(ref arg);
                 Console.WriteLine(arg);
-                // Output: 16 
+                // Output: 16
             }
 
             static void squareVal(int valParameter)

@@ -620,7 +620,7 @@ namespace WrapTwoInterfaceEvents
         }
 
         // For the sake of simplicity this one method
-        // implements both interfaces. 
+        // implements both interfaces.
         public void Draw()
         {
             // Raise IDrawingObject's event before the object is drawn.
@@ -703,7 +703,7 @@ namespace ImplementInterfaceEvents
 
             OnShapeChanged(new MyEventArgs(/*arguments*/));
 
-            // or do something here after the event. 
+            // or do something here after the event.
         }
         protected virtual void OnShapeChanged(MyEventArgs e)
         {

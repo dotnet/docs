@@ -8,9 +8,9 @@ namespace project_name
     {
     }
 
-    [Guid("7BD20046-DF8C-44A6-8F6B-687FAA26FA71"), 
+    [Guid("7BD20046-DF8C-44A6-8F6B-687FAA26FA71"),
         InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    public interface ComClass1Events 
+    public interface ComClass1Events
     {
     }
 

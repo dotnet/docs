@@ -14,7 +14,7 @@ namespace tuples
             // Step 1: Compute the Mean:
             var mean = sequence.Average();
 
-            // Step 2: Compute the square of the differences between each number 
+            // Step 2: Compute the square of the differences between each number
             // and the mean:
             var squaredMeanDifferences = from n in sequence
                                          select (n - mean) * (n - mean);

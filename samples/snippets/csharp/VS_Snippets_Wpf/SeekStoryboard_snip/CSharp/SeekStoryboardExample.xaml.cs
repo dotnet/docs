@@ -13,7 +13,7 @@ namespace SDKSample
         private void OnSliderValueChanged(object sender, RoutedEventArgs e)
         {
             int sliderValue = (int)SeekSlider.Value;
-            
+
             // Use the value of the slider to seek to a duration value of the Storyboard (in milliseconds).
             myStoryboard.Seek(myRectangle, new TimeSpan(0, 0, 0, 0, sliderValue), TimeSeekOrigin.BeginTime);
         }

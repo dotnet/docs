@@ -14,9 +14,9 @@ namespace WPFWithWFAndDatabinding
         //<snippet11>
         private System.Windows.Forms.BindingSource nwBindingSource;
         private NorthwindDataSet nwDataSet;
-        private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter = 
+        private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter =
             new NorthwindDataSetTableAdapters.CustomersTableAdapter();
-        private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter = 
+        private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter =
             new NorthwindDataSetTableAdapters.OrdersTableAdapter();
         //</snippet11>
 
@@ -46,11 +46,11 @@ namespace WPFWithWFAndDatabinding
             // Fill the Orders table adapter with data.
             this.ordersTableAdapter.Fill(this.nwDataSet.Orders);
 
-            // Assign the BindingSource to 
+            // Assign the BindingSource to
             // the data context of the main grid.
             this.mainGrid.DataContext = this.nwBindingSource;
 
-            // Assign the BindingSource to 
+            // Assign the BindingSource to
             // the data source of the list box.
             this.listBox1.ItemsSource = this.nwBindingSource;
 
@@ -60,11 +60,11 @@ namespace WPFWithWFAndDatabinding
             this.dataGridView1.DataMember = "FK_Orders_Customers";
 
             // Handle the currency management aspect of the data models.
-            // Attach an event handler to detect when the current item 
+            // Attach an event handler to detect when the current item
             // changes via the WPF ListBox. This event handler synchronizes
             // the list collection with the BindingSource.
             //
-            
+
             BindingListCollectionView cv = CollectionViewSource.GetDefaultView(
                 this.nwBindingSource) as BindingListCollectionView;
 
@@ -73,7 +73,7 @@ namespace WPFWithWFAndDatabinding
         //</snippet13>
 
         //<snippet14>
-        // This event handler updates the current item 
+        // This event handler updates the current item
         // of the data binding.
         void WPF_CurrentChanged(object sender, EventArgs e)
         {

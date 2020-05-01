@@ -113,7 +113,7 @@ namespace Sandbox
                 }
 
                 // This code produces the following output:
-                // 
+                //
                 // Group
                 //     Cola
                 //      Tea

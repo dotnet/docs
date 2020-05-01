@@ -11,7 +11,7 @@ namespace OrderbyClause
     class OrderbySample1
     {
         static void Main()
-        {            
+        {
             // Create a delicious data source.
             string[] fruits = { "cherry", "apple", "blueberry" };
 
@@ -25,7 +25,7 @@ namespace OrderbyClause
             IEnumerable<string> sortDescendingQuery =
                 from w in fruits
                 orderby w descending
-                select w;            
+                select w;
 
             // Execute the query.
             Console.WriteLine("Ascending:");
@@ -80,7 +80,7 @@ namespace OrderbyClause
                new Student {First="Claire", Last="O'Donnell", ID=112},
                new Student {First="Sven", Last="Mortensen", ID=113},
                new Student {First="Cesar", Last="Garcia", ID=114},
-               new Student {First="Debra", Last="Garcia", ID=115} 
+               new Student {First="Debra", Last="Garcia", ID=115}
             };
 
             return students;
@@ -89,7 +89,7 @@ namespace OrderbyClause
         {
             // Create the data source.
             List<Student> students = GetStudents();
-            
+
             // Create the query.
             IEnumerable<Student> sortedStudents =
                 from student in students
@@ -99,11 +99,11 @@ namespace OrderbyClause
             // Execute the query.
             Console.WriteLine("sortedStudents:");
             foreach (Student student in sortedStudents)
-                Console.WriteLine(student.Last + " " + student.First);           
+                Console.WriteLine(student.Last + " " + student.First);
 
             // Now create groups and sort the groups. The query first sorts the names
             // of all students so that they will be in alphabetical order after they are
-            // grouped. The second orderby sorts the group keys in alpha order.            
+            // grouped. The second orderby sorts the group keys in alpha order.
             var sortedGroups =
                 from student in students
                 orderby student.Last, student.First
@@ -127,7 +127,7 @@ namespace OrderbyClause
             Console.ReadKey();
         }
     }
-    /* Output:  
+    /* Output:
     sortedStudents:
     Garcia Cesar
     Garcia Debra

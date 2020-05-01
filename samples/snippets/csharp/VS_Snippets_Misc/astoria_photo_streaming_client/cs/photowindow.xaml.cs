@@ -164,14 +164,14 @@ namespace PhotoStreamingClient
             // Create a new PhotoInfo object.
             PhotoInfo newPhotoEntity = new PhotoInfo();
 
-            // Ceate an new PhotoDetailsWindow instance with the current 
+            // Ceate an new PhotoDetailsWindow instance with the current
             // context and the new photo entity.
             PhotoDetailsWindow addPhotoWindow =
                 new PhotoDetailsWindow(newPhotoEntity, context);
 
             addPhotoWindow.Title = "Select a new photo to upload...";
 
-            // We need to have the new entity tracked to be able to 
+            // We need to have the new entity tracked to be able to
             // call DataServiceContext.SetSaveStream.
             trackedPhotos.Add(newPhotoEntity);
 

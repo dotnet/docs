@@ -11,21 +11,21 @@
         int count;
 
         // Constructor
-        public MyList(int capacity = defaultCapacity) 
+        public MyList(int capacity = defaultCapacity)
         {
             items = new T[capacity];
         }
 
         // Properties
-        public int Count => count; 
+        public int Count => count;
 
-        public int Capacity 
+        public int Capacity
         {
             get { return items.Length; }
-            set 
+            set
             {
                 if (value < count) value = count;
-                if (value != items.Length) 
+                if (value != items.Length)
                 {
                     T[] newItems = new T[value];
                     Array.Copy(items, 0, newItems, 0, count);
@@ -35,21 +35,21 @@
         }
 
         // Indexer
-        public T this[int index] 
+        public T this[int index]
         {
-            get 
+            get
             {
                 return items[index];
             }
-            set 
+            set
             {
                 items[index] = value;
                 OnChanged();
             }
         }
-        
+
         // Methods
-        public void Add(T item) 
+        public void Add(T item)
         {
             if (count == Capacity) Capacity = count * 2;
             items[count] = item;
@@ -62,14 +62,14 @@
         public override bool Equals(object other) =>
             Equals(this, other as MyList<T>);
 
-        static bool Equals(MyList<T> a, MyList<T> b) 
+        static bool Equals(MyList<T> a, MyList<T> b)
         {
             if (Object.ReferenceEquals(a, null)) return Object.ReferenceEquals(b, null);
             if (Object.ReferenceEquals(b, null) || a.count != b.count)
                 return false;
-            for (int i = 0; i < a.count; i++) 
+            for (int i = 0; i < a.count; i++)
             {
-                if (!object.Equals(a.items[i], b.items[i])) 
+                if (!object.Equals(a.items[i], b.items[i]))
                 {
                     return false;
                 }
@@ -81,10 +81,10 @@
         public event EventHandler Changed;
 
         // Operators
-        public static bool operator ==(MyList<T> a, MyList<T> b) => 
+        public static bool operator ==(MyList<T> a, MyList<T> b) =>
             Equals(a, b);
 
-        public static bool operator !=(MyList<T> a, MyList<T> b) => 
+        public static bool operator !=(MyList<T> a, MyList<T> b) =>
             !Equals(a, b);
     }
 
@@ -110,13 +110,13 @@
             names.Add("Liz");
             names.Add("Martha");
             names.Add("Beth");
-            for (int i = 0; i < names.Count; i++) 
+            for (int i = 0; i < names.Count; i++)
             {
                 string s = names[i];
                 names[i] = s.ToUpper();
             }
         }
-        public static void ListExampleFour() 
+        public static void ListExampleFour()
         {
             MyList<int> a = new MyList<int>();
             a.Add(1);
@@ -124,7 +124,7 @@
             MyList<int> b = new MyList<int>();
             b.Add(1);
             b.Add(2);
-            Console.WriteLine(a == b);  // Outputs "True" 
+            Console.WriteLine(a == b);  // Outputs "True"
             b.Add(3);
             Console.WriteLine(a == b);  // Outputs "False"
         }
@@ -132,11 +132,11 @@
     class EventExample
     {
         static int changeCount;
-        static void ListChanged(object sender, EventArgs e) 
+        static void ListChanged(object sender, EventArgs e)
         {
             changeCount++;
         }
-        public static void Usage() 
+        public static void Usage()
         {
             MyList<string> names = new MyList<string>();
             names.Changed += new EventHandler(ListChanged);

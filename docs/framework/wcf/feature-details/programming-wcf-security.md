@@ -73,7 +73,8 @@ This topic describes the fundamental programming tasks used to create a secure W
     <binding name="myBinding">  
       <security mode="Message"/>  
       <message clientCredentialType="Windows"/>  
-    </binding>  
+    </binding>
+  </wsHttpBinding>
 </bindings>  
 </system.serviceModel>  
 ```  

@@ -28,14 +28,14 @@ using System.Runtime.Serialization;
 namespace ObjectServicesConceptsCS
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class AdventureWorksEntities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new AdventureWorksEntities object using the connection string found in the 'AdventureWorksEntities' section of the application configuration file.
         /// </summary>
@@ -44,7 +44,7 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -53,7 +53,7 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksEntities object.
         /// </summary>
@@ -62,17 +62,17 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -88,7 +88,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Address> _Addresses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -104,7 +104,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Contact> _Contacts;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -120,7 +120,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Product> _Products;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -136,7 +136,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<SalesOrderDetail> _SalesOrderDetails;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -155,7 +155,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Addresses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -163,7 +163,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("Addresses", address);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Contacts EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -171,7 +171,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("Contacts", contact);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -179,7 +179,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("Products", product);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -187,7 +187,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("SalesOrderDetails", salesOrderDetail);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the SalesOrderHeaders EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -198,12 +198,12 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -213,7 +213,7 @@ namespace ObjectServicesConceptsCS
     public partial class Address : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Address object.
         /// </summary>
@@ -239,7 +239,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -266,7 +266,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _AddressID;
         partial void OnAddressIDChanging(global::System.Int32 value);
         partial void OnAddressIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -290,7 +290,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _AddressLine1;
         partial void OnAddressLine1Changing(global::System.String value);
         partial void OnAddressLine1Changed();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -314,7 +314,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _AddressLine2;
         partial void OnAddressLine2Changing(global::System.String value);
         partial void OnAddressLine2Changed();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -338,7 +338,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _City;
         partial void OnCityChanging(global::System.String value);
         partial void OnCityChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -362,7 +362,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _StateProvinceID;
         partial void OnStateProvinceIDChanging(global::System.Int32 value);
         partial void OnStateProvinceIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -386,7 +386,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _PostalCode;
         partial void OnPostalCodeChanging(global::System.String value);
         partial void OnPostalCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -410,7 +410,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -436,9 +436,9 @@ namespace ObjectServicesConceptsCS
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -460,7 +460,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -485,7 +485,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -495,7 +495,7 @@ namespace ObjectServicesConceptsCS
     public partial class Contact : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Contact object.
         /// </summary>
@@ -527,7 +527,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -554,7 +554,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -578,7 +578,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Boolean _NameStyle;
         partial void OnNameStyleChanging(global::System.Boolean value);
         partial void OnNameStyleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -602,7 +602,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -626,7 +626,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -650,7 +650,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _MiddleName;
         partial void OnMiddleNameChanging(global::System.String value);
         partial void OnMiddleNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -674,7 +674,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -698,7 +698,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Suffix;
         partial void OnSuffixChanging(global::System.String value);
         partial void OnSuffixChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -722,7 +722,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _EmailPromotion;
         partial void OnEmailPromotionChanging(global::System.Int32 value);
         partial void OnEmailPromotionChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -746,7 +746,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _PasswordHash;
         partial void OnPasswordHashChanging(global::System.String value);
         partial void OnPasswordHashChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -770,7 +770,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _PasswordSalt;
         partial void OnPasswordSaltChanging(global::System.String value);
         partial void OnPasswordSaltChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -794,7 +794,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _AdditionalContactInfo;
         partial void OnAdditionalContactInfoChanging(global::System.String value);
         partial void OnAdditionalContactInfoChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -818,7 +818,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -845,7 +845,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Complex Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -878,9 +878,9 @@ namespace ObjectServicesConceptsCS
         partial void OnEmailPhoneComplexPropertyChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -905,7 +905,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -915,7 +915,7 @@ namespace ObjectServicesConceptsCS
     public partial class Product : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Product object.
         /// </summary>
@@ -953,7 +953,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -980,7 +980,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1004,7 +1004,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1028,7 +1028,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _ProductNumber;
         partial void OnProductNumberChanging(global::System.String value);
         partial void OnProductNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1052,7 +1052,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Boolean _MakeFlag;
         partial void OnMakeFlagChanging(global::System.Boolean value);
         partial void OnMakeFlagChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1076,7 +1076,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Boolean _FinishedGoodsFlag;
         partial void OnFinishedGoodsFlagChanging(global::System.Boolean value);
         partial void OnFinishedGoodsFlagChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1100,7 +1100,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Color;
         partial void OnColorChanging(global::System.String value);
         partial void OnColorChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1124,7 +1124,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int16 _SafetyStockLevel;
         partial void OnSafetyStockLevelChanging(global::System.Int16 value);
         partial void OnSafetyStockLevelChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1148,7 +1148,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int16 _ReorderPoint;
         partial void OnReorderPointChanging(global::System.Int16 value);
         partial void OnReorderPointChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1172,7 +1172,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _StandardCost;
         partial void OnStandardCostChanging(global::System.Decimal value);
         partial void OnStandardCostChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1196,7 +1196,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _ListPrice;
         partial void OnListPriceChanging(global::System.Decimal value);
         partial void OnListPriceChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1220,7 +1220,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Size;
         partial void OnSizeChanging(global::System.String value);
         partial void OnSizeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1244,7 +1244,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _SizeUnitMeasureCode;
         partial void OnSizeUnitMeasureCodeChanging(global::System.String value);
         partial void OnSizeUnitMeasureCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1268,7 +1268,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _WeightUnitMeasureCode;
         partial void OnWeightUnitMeasureCodeChanging(global::System.String value);
         partial void OnWeightUnitMeasureCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1292,7 +1292,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Decimal> _Weight;
         partial void OnWeightChanging(Nullable<global::System.Decimal> value);
         partial void OnWeightChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1316,7 +1316,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _DaysToManufacture;
         partial void OnDaysToManufactureChanging(global::System.Int32 value);
         partial void OnDaysToManufactureChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1340,7 +1340,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _ProductLine;
         partial void OnProductLineChanging(global::System.String value);
         partial void OnProductLineChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1364,7 +1364,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Class;
         partial void OnClassChanging(global::System.String value);
         partial void OnClassChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1388,7 +1388,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Style;
         partial void OnStyleChanging(global::System.String value);
         partial void OnStyleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1412,7 +1412,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _ProductSubcategoryID;
         partial void OnProductSubcategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductSubcategoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1436,7 +1436,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _ProductModelID;
         partial void OnProductModelIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductModelIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1460,7 +1460,7 @@ namespace ObjectServicesConceptsCS
         private global::System.DateTime _SellStartDate;
         partial void OnSellStartDateChanging(global::System.DateTime value);
         partial void OnSellStartDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1484,7 +1484,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.DateTime> _SellEndDate;
         partial void OnSellEndDateChanging(Nullable<global::System.DateTime> value);
         partial void OnSellEndDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1508,7 +1508,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.DateTime> _DiscontinuedDate;
         partial void OnDiscontinuedDateChanging(Nullable<global::System.DateTime> value);
         partial void OnDiscontinuedDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1532,7 +1532,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1558,9 +1558,9 @@ namespace ObjectServicesConceptsCS
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1570,7 +1570,7 @@ namespace ObjectServicesConceptsCS
     public partial class SalesOrderDetail : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new SalesOrderDetail object.
         /// </summary>
@@ -1604,7 +1604,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1631,7 +1631,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1658,7 +1658,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _SalesOrderDetailID;
         partial void OnSalesOrderDetailIDChanging(global::System.Int32 value);
         partial void OnSalesOrderDetailIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1682,7 +1682,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _CarrierTrackingNumber;
         partial void OnCarrierTrackingNumberChanging(global::System.String value);
         partial void OnCarrierTrackingNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1706,7 +1706,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int16 _OrderQty;
         partial void OnOrderQtyChanging(global::System.Int16 value);
         partial void OnOrderQtyChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1730,7 +1730,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1754,7 +1754,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _SpecialOfferID;
         partial void OnSpecialOfferIDChanging(global::System.Int32 value);
         partial void OnSpecialOfferIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1778,7 +1778,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _UnitPrice;
         partial void OnUnitPriceChanging(global::System.Decimal value);
         partial void OnUnitPriceChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1802,7 +1802,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _UnitPriceDiscount;
         partial void OnUnitPriceDiscountChanging(global::System.Decimal value);
         partial void OnUnitPriceDiscountChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1826,7 +1826,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _LineTotal;
         partial void OnLineTotalChanging(global::System.Decimal value);
         partial void OnLineTotalChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1850,7 +1850,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1876,9 +1876,9 @@ namespace ObjectServicesConceptsCS
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1919,7 +1919,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1929,7 +1929,7 @@ namespace ObjectServicesConceptsCS
     public partial class SalesOrderHeader : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new SalesOrderHeader object.
         /// </summary>
@@ -1977,7 +1977,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2004,7 +2004,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _SalesOrderID;
         partial void OnSalesOrderIDChanging(global::System.Int32 value);
         partial void OnSalesOrderIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2028,7 +2028,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Byte _RevisionNumber;
         partial void OnRevisionNumberChanging(global::System.Byte value);
         partial void OnRevisionNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2052,7 +2052,7 @@ namespace ObjectServicesConceptsCS
         private global::System.DateTime _OrderDate;
         partial void OnOrderDateChanging(global::System.DateTime value);
         partial void OnOrderDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2076,7 +2076,7 @@ namespace ObjectServicesConceptsCS
         private global::System.DateTime _DueDate;
         partial void OnDueDateChanging(global::System.DateTime value);
         partial void OnDueDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2100,7 +2100,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.DateTime> _ShipDate;
         partial void OnShipDateChanging(Nullable<global::System.DateTime> value);
         partial void OnShipDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2124,7 +2124,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Byte _Status;
         partial void OnStatusChanging(global::System.Byte value);
         partial void OnStatusChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2148,7 +2148,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Boolean _OnlineOrderFlag;
         partial void OnOnlineOrderFlagChanging(global::System.Boolean value);
         partial void OnOnlineOrderFlagChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2172,7 +2172,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _SalesOrderNumber;
         partial void OnSalesOrderNumberChanging(global::System.String value);
         partial void OnSalesOrderNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2196,7 +2196,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _PurchaseOrderNumber;
         partial void OnPurchaseOrderNumberChanging(global::System.String value);
         partial void OnPurchaseOrderNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2220,7 +2220,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _AccountNumber;
         partial void OnAccountNumberChanging(global::System.String value);
         partial void OnAccountNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2244,7 +2244,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _CustomerID;
         partial void OnCustomerIDChanging(global::System.Int32 value);
         partial void OnCustomerIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2268,7 +2268,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ContactID;
         partial void OnContactIDChanging(global::System.Int32 value);
         partial void OnContactIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2292,7 +2292,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _SalesPersonID;
         partial void OnSalesPersonIDChanging(Nullable<global::System.Int32> value);
         partial void OnSalesPersonIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2316,7 +2316,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _TerritoryID;
         partial void OnTerritoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnTerritoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2340,7 +2340,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _BillToAddressID;
         partial void OnBillToAddressIDChanging(global::System.Int32 value);
         partial void OnBillToAddressIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2364,7 +2364,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ShipToAddressID;
         partial void OnShipToAddressIDChanging(global::System.Int32 value);
         partial void OnShipToAddressIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2388,7 +2388,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _ShipMethodID;
         partial void OnShipMethodIDChanging(global::System.Int32 value);
         partial void OnShipMethodIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2412,7 +2412,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _CreditCardID;
         partial void OnCreditCardIDChanging(Nullable<global::System.Int32> value);
         partial void OnCreditCardIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2436,7 +2436,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _CreditCardApprovalCode;
         partial void OnCreditCardApprovalCodeChanging(global::System.String value);
         partial void OnCreditCardApprovalCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2460,7 +2460,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.Int32> _CurrencyRateID;
         partial void OnCurrencyRateIDChanging(Nullable<global::System.Int32> value);
         partial void OnCurrencyRateIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2484,7 +2484,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _SubTotal;
         partial void OnSubTotalChanging(global::System.Decimal value);
         partial void OnSubTotalChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2508,7 +2508,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _TaxAmt;
         partial void OnTaxAmtChanging(global::System.Decimal value);
         partial void OnTaxAmtChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2532,7 +2532,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _Freight;
         partial void OnFreightChanging(global::System.Decimal value);
         partial void OnFreightChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2556,7 +2556,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _TotalDue;
         partial void OnTotalDueChanging(global::System.Decimal value);
         partial void OnTotalDueChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2580,7 +2580,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Comment;
         partial void OnCommentChanging(global::System.String value);
         partial void OnCommentChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2604,7 +2604,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2630,9 +2630,9 @@ namespace ObjectServicesConceptsCS
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2670,7 +2670,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2708,7 +2708,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2746,7 +2746,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2774,7 +2774,7 @@ namespace ObjectServicesConceptsCS
 
     #endregion
     #region ComplexTypes
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -2784,7 +2784,7 @@ namespace ObjectServicesConceptsCS
     public partial class EmailPhone : ComplexObject
     {
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2808,7 +2808,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _EmailAddress;
         partial void OnEmailAddressChanging(global::System.String value);
         partial void OnEmailAddressChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -2837,5 +2837,5 @@ namespace ObjectServicesConceptsCS
     }
 
     #endregion
-    
+
 }

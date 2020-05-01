@@ -30,7 +30,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
 ## Namespace aliases
 
- You also can use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
+ You can also use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
   
 [!code-csharp[csProgGuideNamespaces#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#5)]
   

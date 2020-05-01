@@ -70,7 +70,7 @@ namespace FileIteration
             {
                 Console.WriteLine(e.Message);
             }
-            
+
             if (files != null)
             {
                 foreach (System.IO.FileInfo fi in files)
@@ -90,7 +90,7 @@ namespace FileIteration
                     // Resursive call for each subdirectory.
                     WalkDirectoryTree(dirInfo);
                 }
-            }            
+            }
         }
     }
     //</snippet1>
@@ -102,7 +102,7 @@ namespace FileIteration
     {
         static void Main(string[] args)
         {
-            // Specify the starting folder on the command line, or in 
+            // Specify the starting folder on the command line, or in
             // Visual Studio in the Project > Properties > Debug pane.
             TraverseTree(args[0]);
 
@@ -131,16 +131,16 @@ namespace FileIteration
                     subDirs = System.IO.Directory.GetDirectories(currentDir);
                 }
                 // An UnauthorizedAccessException exception will be thrown if we do not have
-                // discovery permission on a folder or file. It may or may not be acceptable 
-                // to ignore the exception and continue enumerating the remaining files and 
-                // folders. It is also possible (but unlikely) that a DirectoryNotFound exception 
+                // discovery permission on a folder or file. It may or may not be acceptable
+                // to ignore the exception and continue enumerating the remaining files and
+                // folders. It is also possible (but unlikely) that a DirectoryNotFound exception
                 // will be raised. This will happen if currentDir has been deleted by
-                // another application or thread after our call to Directory.Exists. The 
-                // choice of which exceptions to catch depends entirely on the specific task 
-                // you are intending to perform and also on how much you know with certainty 
+                // another application or thread after our call to Directory.Exists. The
+                // choice of which exceptions to catch depends entirely on the specific task
+                // you are intending to perform and also on how much you know with certainty
                 // about the systems on which this code will run.
                 catch (UnauthorizedAccessException e)
-                {                    
+                {
                     Console.WriteLine(e.Message);
                     continue;
                 }
@@ -158,7 +158,7 @@ namespace FileIteration
 
                 catch (UnauthorizedAccessException e)
                 {
-                    
+
                     Console.WriteLine(e.Message);
                     continue;
                 }
@@ -197,7 +197,7 @@ namespace FileIteration
     }
     //</snippet2>
 
-    // How to: Write to a Text File 
+    // How to: Write to a Text File
     //<snippet3>
 class WriteTextFile
 {
@@ -222,11 +222,11 @@ class WriteTextFile
         System.IO.File.WriteAllText(@"C:\Users\Public\TestFolder\WriteText.txt", text);
 
         // Example #3: Write only some strings in an array to a file.
-        // The using statement automatically flushes AND CLOSES the stream and calls 
+        // The using statement automatically flushes AND CLOSES the stream and calls
         // IDisposable.Dispose on the stream object.
         // NOTE: do not use FileStream for text files because it writes bytes, but StreamWriter
         // encodes the output as text.
-        using (System.IO.StreamWriter file = 
+        using (System.IO.StreamWriter file =
             new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt"))
         {
             foreach (string line in lines)
@@ -240,9 +240,9 @@ class WriteTextFile
         }
 
         // Example #4: Append new text to an existing file.
-        // The using statement automatically flushes AND CLOSES the stream and calls 
+        // The using statement automatically flushes AND CLOSES the stream and calls
         // IDisposable.Dispose on the stream object.
-        using (System.IO.StreamWriter file = 
+        using (System.IO.StreamWriter file =
             new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true))
         {
             file.WriteLine("Fourth line");
@@ -253,14 +253,14 @@ class WriteTextFile
  //   First line
  //   Second line
  //   Third line
-     
+
  //Output (to WriteText.txt):
  //   A class is the most powerful data type in C#. Like a structure, a class defines the data and behavior of the data type.
-     
+
  //Output to WriteLines2.txt after Example #3:
  //   First line
  //   Third line
-      
+
  //Output to WriteLines2.txt after Example #4:
  //   First line
  //   Third line
@@ -367,7 +367,7 @@ class WriteTextFile
 
             // Get the current application directory.
             string currentDirName = System.IO.Directory.GetCurrentDirectory();
-            Console.WriteLine(currentDirName);           
+            Console.WriteLine(currentDirName);
 
             // Get an array of file names as strings rather than FileInfo objects.
             // Use this method when storage space is an issue, and when you might
@@ -436,14 +436,14 @@ class WriteTextFile
             string destFile = System.IO.Path.Combine(targetPath, fileName);
 
             // To copy a folder's contents to a new location:
-            // Create a new target folder. 
+            // Create a new target folder.
             // If the directory already exists, this method does not create a new directory.
             System.IO.Directory.CreateDirectory(targetPath);
-            
-            // To copy a file to another location and 
+
+            // To copy a file to another location and
             // overwrite the destination file if it already exists.
             System.IO.File.Copy(sourceFile, destFile, true);
-            
+
             // To copy all the files in one directory to another directory.
             // Get the files in the source folder. (To recursively iterate through
             // all subfolders under the current directory, see
@@ -579,7 +579,7 @@ public class CreateFileOrFolder
         // Specify a name for your top-level folder.
         string folderName = @"c:\Top-Level Folder";
 
-        // To create a string that specifies the path to a subfolder under your 
+        // To create a string that specifies the path to a subfolder under your
         // top-level folder, add a name for the subfolder to folderName.
         string pathString = System.IO.Path.Combine(folderName, "SubFolder");
 
@@ -597,7 +597,7 @@ public class CreateFileOrFolder
         //            SubFolder
         System.IO.Directory.CreateDirectory(pathString);
 
-        // Create a file name for the file you want to create. 
+        // Create a file name for the file you want to create.
         string fileName = System.IO.Path.GetRandomFileName();
 
         // This example uses a random string for the name, but you also can specify
@@ -662,7 +662,7 @@ public class CreateFileOrFolder
 
     namespace FileProgressNamespace
     {
-        
+
         //<snippet11>
         // The following using directive requires a project reference to Microsoft.VisualBasic.
         using Microsoft.VisualBasic.FileIO;
@@ -671,7 +671,7 @@ public class CreateFileOrFolder
         {
             static void Main()
             {
-                // Specify the path to a folder that you want to copy. If the folder is small, 
+                // Specify the path to a folder that you want to copy. If the folder is small,
                 // you won't have time to see the progress dialog box.
                 string sourcePath = @"C:\Windows\symbols\";
                 // Choose a destination for the copied files.

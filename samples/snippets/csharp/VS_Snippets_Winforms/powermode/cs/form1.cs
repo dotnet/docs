@@ -6,7 +6,7 @@ namespace PowerMode1
 {
     public partial class Form1 : Form
     {
-        // <snippet1> 
+        // <snippet1>
         public Form1()
         {
             InitializeComponent();
@@ -22,14 +22,14 @@ namespace PowerMode1
                     break;
                 case System.Windows.Forms.BatteryChargeStatus.Critical:
                     MessageBox.Show("Battery is critcally low.", "Critical Battery", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    break;              
+                    break;
                 default:
                     // Battery is okay.
                     break;
             }
         }
         // </snippet1>
-        
+
         private void Hibernate()
         {
             // <snippet2>
@@ -39,9 +39,9 @@ namespace PowerMode1
             }
             // </snippet2>
         }
-        
+
         [STAThread]
-        static void Main() 
+        static void Main()
         {
             Application.Run(new Form1());
         }

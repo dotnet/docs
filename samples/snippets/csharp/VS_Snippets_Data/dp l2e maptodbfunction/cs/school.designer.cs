@@ -43,7 +43,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -51,7 +51,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -60,11 +60,11 @@ namespace MapCLRFunctionToStoreFunction
             OnContextCreated();
         }
         #endregion
-        
+
         #region Partial Methods
         partial void OnContextCreated();
         #endregion
-        
+
         #region ObjectSet Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -81,7 +81,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<Course> _Courses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -97,7 +97,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<Department> _Departments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -113,7 +113,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<OfficeAssignment> _OfficeAssignments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -129,7 +129,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<OnlineCourse> _OnlineCourses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -145,7 +145,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<OnsiteCourse> _OnsiteCourses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -161,7 +161,7 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<Person> _People;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -177,10 +177,10 @@ namespace MapCLRFunctionToStoreFunction
             }
         }
         private ObjectSet<StudentGrade> _StudentGrades;
-    
+
         #endregion
         #region AddTo Methods
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Courses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -188,7 +188,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("Courses", course);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Departments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -196,7 +196,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("Departments", department);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the OfficeAssignments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -204,7 +204,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("OfficeAssignments", officeAssignment);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the OnlineCourses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -212,7 +212,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("OnlineCourses", onlineCourse);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the OnsiteCourses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -220,7 +220,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("OnsiteCourses", onsiteCourse);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the People EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -228,7 +228,7 @@ namespace MapCLRFunctionToStoreFunction
         {
             base.AddObject("People", person);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the StudentGrades EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -238,10 +238,10 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     #endregion
-    
-    
+
+
     #region Entities
     /// <summary>
     /// No Metadata Documentation available.
@@ -263,13 +263,13 @@ namespace MapCLRFunctionToStoreFunction
         {
             Course course = new Course();
             course.CourseID = courseID;
-            
+
             course.Title = title;
-            
+
             course.Credits = credits;
-            
+
             course.DepartmentID = departmentID;
-            
+
             return course;
         }
         #endregion
@@ -297,12 +297,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnCourseIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -322,12 +322,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
-                
+
         }
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -347,12 +347,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Credits");
                 OnCreditsChanged();
             }
-                
+
         }
         private global::System.Int32 _Credits;
         partial void OnCreditsChanging(global::System.Int32 value);
         partial void OnCreditsChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -372,14 +372,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("DepartmentID");
                 OnDepartmentIDChanged();
             }
-                
+
         }
         private global::System.Int32 _DepartmentID;
         partial void OnDepartmentIDChanging(global::System.Int32 value);
         partial void OnDepartmentIDChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -387,7 +387,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Department")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Department")]
         public Department Department
         {
             get
@@ -424,7 +424,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnlineCourse_Course", "OnlineCourse")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnlineCourse_Course", "OnlineCourse")]
         public OnlineCourse OnlineCourse
         {
             get
@@ -461,7 +461,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnsiteCourse_Course", "OnsiteCourse")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnsiteCourse_Course", "OnsiteCourse")]
         public OnsiteCourse OnsiteCourse
         {
             get
@@ -498,7 +498,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "StudentGrade")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "StudentGrade")]
         public EntityCollection<StudentGrade> StudentGrades
         {
             get
@@ -519,7 +519,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Person")]
         public EntityCollection<Person> People
         {
             get
@@ -536,7 +536,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -557,13 +557,13 @@ namespace MapCLRFunctionToStoreFunction
         {
             Department department = new Department();
             department.DepartmentID = departmentID;
-            
+
             department.Name = name;
-            
+
             department.Budget = budget;
-            
+
             department.StartDate = startDate;
-            
+
             return department;
         }
         #endregion
@@ -591,12 +591,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnDepartmentIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _DepartmentID;
         partial void OnDepartmentIDChanging(global::System.Int32 value);
         partial void OnDepartmentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -616,12 +616,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -641,12 +641,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Budget");
                 OnBudgetChanged();
             }
-                
+
         }
         private global::System.Decimal _Budget;
         partial void OnBudgetChanging(global::System.Decimal value);
         partial void OnBudgetChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -666,12 +666,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("StartDate");
                 OnStartDateChanged();
             }
-                
+
         }
         private global::System.DateTime _StartDate;
         partial void OnStartDateChanging(global::System.DateTime value);
         partial void OnStartDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -691,14 +691,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Administrator");
                 OnAdministratorChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _Administrator;
         partial void OnAdministratorChanging(Nullable<global::System.Int32> value);
         partial void OnAdministratorChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -706,7 +706,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Course")]
         public EntityCollection<Course> Courses
         {
             get
@@ -723,7 +723,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -743,11 +743,11 @@ namespace MapCLRFunctionToStoreFunction
         {
             OfficeAssignment officeAssignment = new OfficeAssignment();
             officeAssignment.InstructorID = instructorID;
-            
+
             officeAssignment.Location = location;
-            
+
             officeAssignment.Timestamp = timestamp;
-            
+
             return officeAssignment;
         }
         #endregion
@@ -775,12 +775,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnInstructorIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _InstructorID;
         partial void OnInstructorIDChanging(global::System.Int32 value);
         partial void OnInstructorIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -800,12 +800,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Location");
                 OnLocationChanged();
             }
-                
+
         }
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -825,14 +825,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Timestamp");
                 OnTimestampChanged();
             }
-                
+
         }
         private global::System.Byte[] _Timestamp;
         partial void OnTimestampChanging(global::System.Byte[] value);
         partial void OnTimestampChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -840,7 +840,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "Person")]
         public Person Person
         {
             get
@@ -873,7 +873,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -892,9 +892,9 @@ namespace MapCLRFunctionToStoreFunction
         {
             OnlineCourse onlineCourse = new OnlineCourse();
             onlineCourse.CourseID = courseID;
-            
+
             onlineCourse.URL = uRL;
-            
+
             return onlineCourse;
         }
         #endregion
@@ -922,12 +922,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnCourseIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -947,14 +947,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("URL");
                 OnURLChanged();
             }
-                
+
         }
         private global::System.String _URL;
         partial void OnURLChanging(global::System.String value);
         partial void OnURLChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -962,7 +962,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnlineCourse_Course", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnlineCourse_Course", "Course")]
         public Course Course
         {
             get
@@ -995,7 +995,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1016,13 +1016,13 @@ namespace MapCLRFunctionToStoreFunction
         {
             OnsiteCourse onsiteCourse = new OnsiteCourse();
             onsiteCourse.CourseID = courseID;
-            
+
             onsiteCourse.Location = location;
-            
+
             onsiteCourse.Days = days;
-            
+
             onsiteCourse.Time = time;
-            
+
             return onsiteCourse;
         }
         #endregion
@@ -1050,12 +1050,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnCourseIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1075,12 +1075,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Location");
                 OnLocationChanged();
             }
-                
+
         }
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1100,12 +1100,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Days");
                 OnDaysChanged();
             }
-                
+
         }
         private global::System.String _Days;
         partial void OnDaysChanging(global::System.String value);
         partial void OnDaysChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1125,14 +1125,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Time");
                 OnTimeChanged();
             }
-                
+
         }
         private global::System.DateTime _Time;
         partial void OnTimeChanging(global::System.DateTime value);
         partial void OnTimeChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1140,7 +1140,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnsiteCourse_Course", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OnsiteCourse_Course", "Course")]
         public Course Course
         {
             get
@@ -1173,7 +1173,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1193,11 +1193,11 @@ namespace MapCLRFunctionToStoreFunction
         {
             Person person = new Person();
             person.PersonID = personID;
-            
+
             person.LastName = lastName;
-            
+
             person.FirstName = firstName;
-            
+
             return person;
         }
         #endregion
@@ -1225,12 +1225,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnPersonIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _PersonID;
         partial void OnPersonIDChanging(global::System.Int32 value);
         partial void OnPersonIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1250,12 +1250,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
-                
+
         }
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1275,12 +1275,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
-                
+
         }
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1300,12 +1300,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("HireDate");
                 OnHireDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _HireDate;
         partial void OnHireDateChanging(Nullable<global::System.DateTime> value);
         partial void OnHireDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1325,14 +1325,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("EnrollmentDate");
                 OnEnrollmentDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _EnrollmentDate;
         partial void OnEnrollmentDateChanging(Nullable<global::System.DateTime> value);
         partial void OnEnrollmentDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1340,7 +1340,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "OfficeAssignment")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "OfficeAssignment")]
         public OfficeAssignment OfficeAssignment
         {
             get
@@ -1377,7 +1377,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "StudentGrade")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "StudentGrade")]
         public EntityCollection<StudentGrade> StudentGrades
         {
             get
@@ -1398,7 +1398,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Course")]
         public EntityCollection<Course> Courses
         {
             get
@@ -1415,7 +1415,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1435,11 +1435,11 @@ namespace MapCLRFunctionToStoreFunction
         {
             StudentGrade studentGrade = new StudentGrade();
             studentGrade.EnrollmentID = enrollmentID;
-            
+
             studentGrade.CourseID = courseID;
-            
+
             studentGrade.StudentID = studentID;
-            
+
             return studentGrade;
         }
         #endregion
@@ -1467,12 +1467,12 @@ namespace MapCLRFunctionToStoreFunction
                     OnEnrollmentIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _EnrollmentID;
         partial void OnEnrollmentIDChanging(global::System.Int32 value);
         partial void OnEnrollmentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1492,12 +1492,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("CourseID");
                 OnCourseIDChanged();
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1517,12 +1517,12 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("StudentID");
                 OnStudentIDChanged();
             }
-                
+
         }
         private global::System.Int32 _StudentID;
         partial void OnStudentIDChanging(global::System.Int32 value);
         partial void OnStudentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1542,14 +1542,14 @@ namespace MapCLRFunctionToStoreFunction
                 ReportPropertyChanged("Grade");
                 OnGradeChanged();
             }
-                
+
         }
         private Nullable<global::System.Decimal> _Grade;
         partial void OnGradeChanging(Nullable<global::System.Decimal> value);
         partial void OnGradeChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1557,7 +1557,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "Course")]
         public Course Course
         {
             get
@@ -1594,7 +1594,7 @@ namespace MapCLRFunctionToStoreFunction
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "Person")]
         public Person Person
         {
             get
@@ -1627,7 +1627,7 @@ namespace MapCLRFunctionToStoreFunction
         }
         #endregion
     }
-    
+
     #endregion
-    
+
 }

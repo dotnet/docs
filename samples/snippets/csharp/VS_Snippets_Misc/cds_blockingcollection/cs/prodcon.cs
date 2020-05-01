@@ -14,7 +14,7 @@ namespace ProdConsumerCS
     // Implementation of a priority queue that has bounding and blocking functionality.
     public class SimplePriorityQueue<TPriority, TValue> : IProducerConsumerCollection<KeyValuePair<int, TValue>>
     {
-        // Each internal queue in the array represents a priority level. 
+        // Each internal queue in the array represents a priority level.
         // All elements in a given array share the same priority.
         private ConcurrentQueue<KeyValuePair<int, TValue>>[] _queues = null;
 
@@ -59,7 +59,7 @@ namespace ProdConsumerCS
                 }
             }
 
-            // If we get here, we found nothing. 
+            // If we get here, we found nothing.
             // Assign the out parameter to its default value and return false.
             item = new KeyValuePair<int, TValue>(0, default(TValue));
             return false;
@@ -77,10 +77,10 @@ namespace ProdConsumerCS
         }
 
         // CopyTo is problematic in a producer-consumer.
-        // The destination array might be shorter or longer than what 
+        // The destination array might be shorter or longer than what
         // we get from ToArray due to adds or takes after the destination array was allocated.
         // Therefore, all we try to do here is fill up destination with as much
-        // data as we have without running off the end.                
+        // data as we have without running off the end.
         public void CopyTo(KeyValuePair<int, TValue>[] destination, int destStartingIndex)
         {
             if (destination == null) throw new ArgumentNullException();
@@ -161,8 +161,8 @@ namespace ProdConsumerCS
             // and catch any exceptions, including user cancellation.
             Task[] tasks = new Task[2];
 
-            // Create a producer thread. You can change the code to 
-            // make the wait time a bit slower than the consumer 
+            // Create a producer thread. You can change the code to
+            // make the wait time a bit slower than the consumer
             // thread to demonstrate the blocking capability.
             tasks[0] = Task.Run(() =>
             {

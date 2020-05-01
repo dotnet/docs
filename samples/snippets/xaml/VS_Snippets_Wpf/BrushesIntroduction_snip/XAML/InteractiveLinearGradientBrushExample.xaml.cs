@@ -13,7 +13,7 @@ namespace BrushesIntroduction
 {
 
     /// <summary>
-    /// Enables the user to configure a LinearGradientBrush interactively. 
+    /// Enables the user to configure a LinearGradientBrush interactively.
     /// </summary>
     public partial class InteractiveLinearGradientBrushExample : Page
     {
@@ -37,7 +37,7 @@ namespace BrushesIntroduction
         {
             // The marker positions only need recalcutated if the brush's MappingMode
             // is RelativeToBoundingBox.
-            if (InteractiveLinearGradientBrush.MappingMode == 
+            if (InteractiveLinearGradientBrush.MappingMode ==
                     BrushMappingMode.RelativeToBoundingBox)
             {
                 StartPointMarkerTranslateTransform.X =
@@ -121,7 +121,7 @@ namespace BrushesIntroduction
 
         // Determines whether the user just finished dragging a marker. If so,
         // this method updates the brush's StartPoint or EndPoint property,
-        // depending on which marker was dragged. 
+        // depending on which marker was dragged.
         private void gradientDisplayMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Point clickPoint = e.GetPosition(GradientDisplayElement);
@@ -161,17 +161,17 @@ namespace BrushesIntroduction
         }
 
         // Update the StartPoint or EndPoint when the user drags one of the
-        // points with the mouse. 
+        // points with the mouse.
         private void gradientDisplayMouseMove(object sender, MouseEventArgs e)
         {
             Point currentPoint = e.GetPosition(GradientDisplayElement);
             Shape s = (Shape)GetValue(SelectedMarkerProperty);
-            
+
             // Determine whether the user dragged a StartPoint or
             // EndPoint marker.
             if (s == EndPointMarker || s == StartPointMarker)
             {
-                
+
                 // Move the selected marker to the current mouse position.
                 TranslateTransform translation = (TranslateTransform)s.RenderTransform;
                 translation.X = currentPoint.X;
@@ -181,7 +181,7 @@ namespace BrushesIntroduction
                 Point p;
 
                 // Calculate the StartPoint or EndPoint.
-                if (InteractiveLinearGradientBrush.MappingMode == 
+                if (InteractiveLinearGradientBrush.MappingMode ==
                         BrushMappingMode.RelativeToBoundingBox)
                 {
                     // If the MappingMode is relative, compute the relative
@@ -216,19 +216,19 @@ namespace BrushesIntroduction
         // the user changes the brush's MappingMode.
         private void mappingModeChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+
             Point oldStartPoint = InteractiveLinearGradientBrush.StartPoint;
             Point newStartPoint = new Point();
             Point oldEndPoint = InteractiveLinearGradientBrush.EndPoint;
             Point newEndPoint = new Point();
 
-            if (InteractiveLinearGradientBrush.MappingMode == 
+            if (InteractiveLinearGradientBrush.MappingMode ==
                     BrushMappingMode.RelativeToBoundingBox)
             {
-               
+
                 // The MappingMode changed from absolute to relative.
                 // To find the new relative point, divide the old absolute points
-                // by the painted area's width and height. 
+                // by the painted area's width and height.
                 newStartPoint.X = oldStartPoint.X / GradientDisplayElement.ActualWidth;
                 newStartPoint.Y = oldStartPoint.Y / GradientDisplayElement.ActualHeight;
                 InteractiveLinearGradientBrush.StartPoint = newStartPoint;
@@ -241,7 +241,7 @@ namespace BrushesIntroduction
             {
                 // The MappingMode changed from relative to absolute.
                 // To find the new absolute point, multiply the old relative points
-                // by the painted area's width and height. 
+                // by the painted area's width and height.
                 newStartPoint.X = oldStartPoint.X * GradientDisplayElement.ActualWidth;
                 newStartPoint.Y = oldStartPoint.Y * GradientDisplayElement.ActualHeight;
                 InteractiveLinearGradientBrush.StartPoint = newStartPoint;

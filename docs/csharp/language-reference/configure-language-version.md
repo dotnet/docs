@@ -15,7 +15,7 @@ C# 8.0 (and higher) is supported only on .NET Core 3.x and newer versions. Many 
 - Default interface member implementation requires new features in the .NET Core 3.0 CLR.
 - Async streams require the new types <xref:System.IAsyncDisposable?displayProperty=nameWithType>, <xref:System.Collections.Generic.IAsyncEnumerable%601?displayProperty=nameWithType>, and <xref:System.Collections.Generic.IAsyncEnumerator%601?displayProperty=nameWithType>.
 - Indexes and Ranges require the new types <xref:System.Index?displayProperty=nameWithType> and <xref:System.Range?displayProperty=nameWithType>.
-- Nullable reference types make use of several [attributes](../nullable-attributes.md) to provide better warnings. Those attributes were added in .NET Core 3.0. Other target frameworks haven't been annotated with any of these attributes. That means nullable warnings may not accurately reflect potential issues.
+- Nullable reference types make use of several [attributes](attributes/nullable-analysis.md) to provide better warnings. Those attributes were added in .NET Core 3.0. Other target frameworks haven't been annotated with any of these attributes. That means nullable warnings may not accurately reflect potential issues.
 
 ## Defaults
 

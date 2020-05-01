@@ -60,61 +60,61 @@ public class Class1
       DateTime date1 = new DateTime(2008,4, 10);
       Console.WriteLine(date1.ToString("d", DateTimeFormatInfo.InvariantInfo));
       // Displays 04/10/2008
-      Console.WriteLine(date1.ToString("d", 
+      Console.WriteLine(date1.ToString("d",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays 4/10/2008                       
-      Console.WriteLine(date1.ToString("d", 
+      // Displays 4/10/2008
+      Console.WriteLine(date1.ToString("d",
                         CultureInfo.CreateSpecificCulture("en-NZ")));
-      // Displays 10/04/2008                       
-      Console.WriteLine(date1.ToString("d", 
+      // Displays 10/04/2008
+      Console.WriteLine(date1.ToString("d",
                         CultureInfo.CreateSpecificCulture("de-DE")));
-      // Displays 10.04.2008                       
+      // Displays 10.04.2008
       // </Snippet1>
    }
-   
+
    private static void ShowDSpecifier()
    {
       // D Format Specifier
       // <Snippet2>
       DateTime date1 = new DateTime(2008, 4, 10);
-      Console.WriteLine(date1.ToString("D", 
+      Console.WriteLine(date1.ToString("D",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays Thursday, April 10, 2008                        
-      Console.WriteLine(date1.ToString("D", 
+      // Displays Thursday, April 10, 2008
+      Console.WriteLine(date1.ToString("D",
                         CultureInfo.CreateSpecificCulture("pt-BR")));
-      // Displays quinta-feira, 10 de abril de 2008                        
-      Console.WriteLine(date1.ToString("D", 
+      // Displays quinta-feira, 10 de abril de 2008
+      Console.WriteLine(date1.ToString("D",
                         CultureInfo.CreateSpecificCulture("es-MX")));
-      // Displays jueves, 10 de abril de 2008                        
+      // Displays jueves, 10 de abril de 2008
       // </Snippet2>
    }
-   
+
    private static void ShowfSpecifier()
    {
       // f Format Specifier
       // <Snippet3>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("f", 
+      Console.WriteLine(date1.ToString("f",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays Thursday, April 10, 2008 6:30 AM                        
-      Console.WriteLine(date1.ToString("f", 
+      // Displays Thursday, April 10, 2008 6:30 AM
+      Console.WriteLine(date1.ToString("f",
                         CultureInfo.CreateSpecificCulture("fr-FR")));
-      // Displays jeudi 10 avril 2008 06:30                       
-      // </Snippet3>   
+      // Displays jeudi 10 avril 2008 06:30
+      // </Snippet3>
    }
-   
+
    private static void ShowFSpecifier()
    {
       // F Format Specifier
       // <Snippet4>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("F", 
+      Console.WriteLine(date1.ToString("F",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays Thursday, April 10, 2008 6:30:00 AM                        
-      Console.WriteLine(date1.ToString("F", 
+      // Displays Thursday, April 10, 2008 6:30:00 AM
+      Console.WriteLine(date1.ToString("F",
                         CultureInfo.CreateSpecificCulture("fr-FR")));
-      // Displays jeudi 10 avril 2008 06:30:00                       
-      // </Snippet4>   
+      // Displays jeudi 10 avril 2008 06:30:00
+      // </Snippet4>
    }
 
    private static void ShowgSpecifier()
@@ -122,84 +122,84 @@ public class Class1
       // g Format Specifier
       // <Snippet5>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("g", 
+      Console.WriteLine(date1.ToString("g",
                         DateTimeFormatInfo.InvariantInfo));
-      // Displays 04/10/2008 06:30                      
-      Console.WriteLine(date1.ToString("g", 
+      // Displays 04/10/2008 06:30
+      Console.WriteLine(date1.ToString("g",
                         CultureInfo.CreateSpecificCulture("en-us")));
-      // Displays 4/10/2008 6:30 AM                       
-      Console.WriteLine(date1.ToString("g", 
+      // Displays 4/10/2008 6:30 AM
+      Console.WriteLine(date1.ToString("g",
                         CultureInfo.CreateSpecificCulture("fr-BE")));
-      // Displays 10/04/2008 6:30                        
-      // </Snippet5>   
+      // Displays 10/04/2008 6:30
+      // </Snippet5>
    }
-   
+
    private static void ShowGSpecifier()
    {
       // G Format Specifier
       // <Snippet6>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("G", 
+      Console.WriteLine(date1.ToString("G",
                         DateTimeFormatInfo.InvariantInfo));
       // Displays 04/10/2008 06:30:00
-      Console.WriteLine(date1.ToString("G", 
+      Console.WriteLine(date1.ToString("G",
                         CultureInfo.CreateSpecificCulture("en-us")));
-      // Displays 4/10/2008 6:30:00 AM                        
-      Console.WriteLine(date1.ToString("G", 
+      // Displays 4/10/2008 6:30:00 AM
+      Console.WriteLine(date1.ToString("G",
                         CultureInfo.CreateSpecificCulture("nl-BE")));
-      // Displays 10/04/2008 6:30:00                       
-      // </Snippet6>   
+      // Displays 10/04/2008 6:30:00
+      // </Snippet6>
    }
-   
+
    private static void ShowMSpecifier()
    {
       // M Format Specifier
       // <Snippet7>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("m", 
+      Console.WriteLine(date1.ToString("m",
                         CultureInfo.CreateSpecificCulture("en-us")));
-      // Displays April 10                        
-      Console.WriteLine(date1.ToString("m", 
+      // Displays April 10
+      Console.WriteLine(date1.ToString("m",
                         CultureInfo.CreateSpecificCulture("ms-MY")));
-      // Displays 10 April                       
-      // </Snippet7>   
+      // Displays 10 April
+      // </Snippet7>
    }
-   
+
    private static void ShowOSpecifier()
    {
       // O Format Specifier
 
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      DateTimeOffset dateOffset = new DateTimeOffset(date1, 
+      DateTimeOffset dateOffset = new DateTimeOffset(date1,
                                   TimeZoneInfo.Local.GetUtcOffset(date1));
       Console.WriteLine(date1.ToString("o"));
-      // Displays 2008-04-10T06:30:00.0000000                        
+      // Displays 2008-04-10T06:30:00.0000000
       Console.WriteLine(dateOffset.ToString("o"));
-      // Displays 2008-04-10T06:30:00.0000000-07:00                       
+      // Displays 2008-04-10T06:30:00.0000000-07:00
    }
-   
+
    private static void ShowRSpecifier()
    {
       // R Format Specifier
       // <Snippet9>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      DateTimeOffset dateOffset = new DateTimeOffset(date1, 
+      DateTimeOffset dateOffset = new DateTimeOffset(date1,
                                   TimeZoneInfo.Local.GetUtcOffset(date1));
       Console.WriteLine(date1.ToUniversalTime().ToString("r"));
-      // Displays Thu, 10 Apr 2008 13:30:00 GMT                       
+      // Displays Thu, 10 Apr 2008 13:30:00 GMT
       Console.WriteLine(dateOffset.ToUniversalTime().ToString("r"));
-      // Displays Thu, 10 Apr 2008 13:30:00 GMT                        
-      // </Snippet9>   
+      // Displays Thu, 10 Apr 2008 13:30:00 GMT
+      // </Snippet9>
    }
-   
+
    private static void ShowSSpecifier()
    {
       // S Format Specifier
       // <Snippet10>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
       Console.WriteLine(date1.ToString("s"));
-      // Displays 2008-04-10T06:30:00                       
-      // </Snippet10>   
+      // Displays 2008-04-10T06:30:00
+      // </Snippet10>
    }
 
    private static void ShowtSpecifier()
@@ -207,64 +207,64 @@ public class Class1
       // t Format Specifier
       // <Snippet11>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("t", 
+      Console.WriteLine(date1.ToString("t",
                         CultureInfo.CreateSpecificCulture("en-us")));
-      // Displays 6:30 AM                        
-      Console.WriteLine(date1.ToString("t", 
+      // Displays 6:30 AM
+      Console.WriteLine(date1.ToString("t",
                         CultureInfo.CreateSpecificCulture("es-ES")));
-      // Displays 6:30                      
-      // </Snippet11>   
+      // Displays 6:30
+      // </Snippet11>
    }
-   
+
    private static void ShowTSpecifier()
    {
       // T Format Specifier
       // <Snippet12>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("T", 
+      Console.WriteLine(date1.ToString("T",
                         CultureInfo.CreateSpecificCulture("en-us")));
-      // Displays 6:30:00 AM                       
-      Console.WriteLine(date1.ToString("T", 
+      // Displays 6:30:00 AM
+      Console.WriteLine(date1.ToString("T",
                         CultureInfo.CreateSpecificCulture("es-ES")));
-      // Displays 6:30:00                      
-      // </Snippet12>   
+      // Displays 6:30:00
+      // </Snippet12>
    }
-   
+
    private static void ShowuSpecifier()
    {
       // u Format Specifier
       // <Snippet13>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
       Console.WriteLine(date1.ToUniversalTime().ToString("u"));
-      // Displays 2008-04-10 13:30:00Z                       
-      // </Snippet13>   
+      // Displays 2008-04-10 13:30:00Z
+      // </Snippet13>
    }
-   
+
    private static void ShowUSpecifier()
    {
       // U Format Specifier
       // <Snippet14>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("U", 
+      Console.WriteLine(date1.ToString("U",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays Thursday, April 10, 2008 1:30:00 PM                       
-      Console.WriteLine(date1.ToString("U", 
+      // Displays Thursday, April 10, 2008 1:30:00 PM
+      Console.WriteLine(date1.ToString("U",
                         CultureInfo.CreateSpecificCulture("sv-FI")));
-      // Displays den 10 april 2008 13:30:00                       
-      // </Snippet14>   
+      // Displays den 10 april 2008 13:30:00
+      // </Snippet14>
    }
-   
+
    private static void ShowYSpecifier()
    {
       // Y/y Format Specifier
       // <Snippet15>
       DateTime date1 = new DateTime(2008, 4, 10, 6, 30, 0);
-      Console.WriteLine(date1.ToString("Y", 
+      Console.WriteLine(date1.ToString("Y",
                         CultureInfo.CreateSpecificCulture("en-US")));
-      // Displays April, 2008                       
-      Console.WriteLine(date1.ToString("y", 
+      // Displays April, 2008
+      Console.WriteLine(date1.ToString("y",
                         CultureInfo.CreateSpecificCulture("af-ZA")));
-      // Displays April 2008                       
-      // </Snippet15>   
+      // Displays April 2008
+      // </Snippet15>
    }
 }

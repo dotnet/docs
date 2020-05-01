@@ -3,8 +3,9 @@ title: "Troubleshooting Setup Issues"
 ms.date: "03/30/2017"
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
 ---
-# Troubleshooting Setup Issues
-This topic describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.  
+# Troubleshoot setup issues
+
+This article describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.  
   
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0  
  If you delete any of the following registry keys:  
@@ -46,7 +47,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
   
  The following steps must be followed to resolve the problem described previously.  
   
-1. Run [the WMI Diagnosis Utility, version 2.0](https://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](https://docs.microsoft.com/previous-versions/tn-archive/ff404265(v%3dmsdn.10)) article.  
+1. Run the [WMI Diagnosis Utility](https://www.microsoft.com/download/details.aspx?id=7684) to repair the WMI service. For more information about using this tool, see [WMI Diagnosis Utility](https://docs.microsoft.com/previous-versions/tn-archive/ff404265(v%3dmsdn.10)).  
   
  Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.  
   
@@ -60,7 +61,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
   
  To workaround this problem, use the [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) with the `/c` switch to properly configure IIS script maps on the machine. [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) can be found at %windir%\Microsoft.NET\framework\v3.5\ or %windir%\Microsoft.NET\framework64\v3.5\  
   
-## Could not load type ‘System.ServiceModel.Activation.HttpModule’ from assembly ‘System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089’  
+## Could not load type 'System.ServiceModel.Activation.HttpModule' from assembly 'System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'  
  This error occurs if .NET Framework 4 is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the Developer Command Prompt for Visual Studio:  
   
 ```console

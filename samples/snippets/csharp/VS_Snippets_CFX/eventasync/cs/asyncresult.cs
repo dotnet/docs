@@ -132,7 +132,7 @@ namespace Microsoft.ServiceModel.Samples
             {
                 throw new ArgumentNullException("result");
             }
-            
+
             TAsyncResult asyncResult = result as TAsyncResult;
 
             if (asyncResult == null)

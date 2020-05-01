@@ -182,7 +182,7 @@ namespace object_collection_initializers
 
     // <SnippetFullListExample>
     public class FullExample
-    { 
+    {
         class FormattedAddresses : IEnumerable<string>
         {
             private List<string> internalList = new List<string>();
@@ -190,8 +190,8 @@ namespace object_collection_initializers
 
             System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => internalList.GetEnumerator();
 
-            public void Add(string firstname, string lastname, 
-                string street, string city, 
+            public void Add(string firstname, string lastname,
+                string street, string city,
                 string state, string zipcode) => internalList.Add(
                 $@"{firstname} {lastname}
 {street}
@@ -217,7 +217,7 @@ namespace object_collection_initializers
 
         /*
          * Prints:
-         
+
             Address Entries:
 
             John Doe
@@ -233,7 +233,7 @@ namespace object_collection_initializers
 
     // <SnippetFullDictionaryInitializer>
     public class DictionaryExample
-    { 
+    {
         class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>>
         {
             private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
@@ -318,7 +318,7 @@ namespace object_collection_initializers
 
         /*
          * Prints:
-         
+
             Using first multi-valued dictionary created with a collection initializer:
 
             Members of group Group1:

@@ -63,7 +63,7 @@ namespace SDKSample
             rect5.Stroke = Brushes.Black;
             rect5.Fill = Brushes.White;
             myDockPanel.Children.Add(rect5);
-            
+
             // Add the DockPanel to the Window as Content and show the Window
             mainWindow.Content = myDockPanel;
             mainWindow.Title = "DockPanel Sample";

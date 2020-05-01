@@ -14,11 +14,11 @@ public class ExampleClass
 // <Snippet1>
 namespace System.Runtime
 {
-   [AttributeUsage(AttributeTargets.Method | 
-                   AttributeTargets.Constructor | 
+   [AttributeUsage(AttributeTargets.Method |
+                   AttributeTargets.Constructor |
                    AttributeTargets.Property)]
-   public class BypassNGenAttribute : Attribute 
+   public class BypassNGenAttribute : Attribute
    {
-   }   
+   }
 }
 // </Snippet1>

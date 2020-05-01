@@ -14,7 +14,9 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] [command] [-h|--help]
+dotnet sln [<SOLUTION_FILE>] [command]
+
+dotnet sln [command] -h|--help
 ```
 
 ## Description
@@ -70,7 +72,7 @@ Adds one or more projects to the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder] <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln add [-h|--help]
 ```
 
@@ -94,7 +96,7 @@ dotnet sln add [-h|--help]
 
   Places the projects in the root of the solution, rather than creating a solution folder. Available since .NET Core 3.0 SDK.
 
-- **`-s|--solution-folder`**
+- **`-s|--solution-folder <PATH>`**
 
   The destination solution folder path to add the projects to. Available since .NET Core 3.0 SDK.
 
@@ -169,8 +171,20 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   dotnet sln todo.sln add **/*.csproj
   ```
 
+- Add multiple C# projects to a solution using a globbing pattern (Windows PowerShell only):
+
+  ```dotnetcli
+  dotnet sln todo.sln add (ls **/*.csproj)
+  ```
+
 - Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
 
   ```dotnetcli
   dotnet sln todo.sln remove **/*.csproj
+  ```
+
+- Remove multiple C# projects from a solution using a globbing pattern (Windows PowerShell only):
+
+  ```dotnetcli
+  dotnet sln todo.sln remove (ls **/*.csproj)
   ```

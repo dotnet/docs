@@ -7,13 +7,13 @@ public class Example
    public static void Main()
    {
       string pattern = @"^(\(?\d{3}\)?[\s-])?\d{3}-\d{4}$";
-      string[] inputs = { "111 111-1111", "222-2222", "222 333-444", 
-                          "(212) 111-1111", "111-AB1-1111", 
+      string[] inputs = { "111 111-1111", "222-2222", "222 333-444",
+                          "(212) 111-1111", "111-AB1-1111",
                           "212-111-1111", "01 999-9999" };
-      
+
       foreach (string input in inputs)
       {
-         if (Regex.IsMatch(input, pattern)) 
+         if (Regex.IsMatch(input, pattern))
             Console.WriteLine(input + ": matched");
          else
             Console.WriteLine(input + ": match failed");

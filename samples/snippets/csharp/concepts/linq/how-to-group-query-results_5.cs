@@ -1,5 +1,5 @@
 ﻿        public void GroupByRange()
-        {            
+        {
             Console.WriteLine("\r\nGroup by numeric range and project into a new anonymous type:");
 
             var queryNumericRange =
@@ -12,12 +12,12 @@
             // Nested foreach required to iterate over groups and group items.
             foreach (var studentGroup in queryNumericRange)
             {
-                Console.WriteLine($"Key: {studentGroup.Key * 10}"); 
+                Console.WriteLine($"Key: {studentGroup.Key * 10}");
                 foreach (var item in studentGroup)
                 {
                     Console.WriteLine($"\t{item.LastName}, {item.FirstName}");
                 }
-            }            
+            }
         }
         /* Output:
             Group by numeric range and project into a new anonymous type:

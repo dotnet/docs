@@ -14,12 +14,12 @@ This article describes how to use a package manager to install .NET Core on Debi
 
 [!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
 
-## Register Microsoft key and feed
+## Add Microsoft repository key and feed
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key.
-- Register the product repository.
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
 - Install required dependencies.
 
 This only needs to be done once per machine.
@@ -27,7 +27,7 @@ This only needs to be done once per machine.
 Open a terminal and run the following commands.
 
 ```bash
-wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
+wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget https://packages.microsoft.com/config/debian/10/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list

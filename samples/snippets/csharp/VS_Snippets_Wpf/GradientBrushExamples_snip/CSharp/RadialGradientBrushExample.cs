@@ -9,16 +9,16 @@ namespace Microsoft.Samples.GradientBrushExamples
 
     public class RadialGradientBrushExample : Page
     {
-    
+
         private StackPanel myMainPanel;
-    
+
         public RadialGradientBrushExample()
         {
             this.WindowTitle = "RadialGradientBrush Example";
             this.Background = Brushes.White;
-            
+
             myMainPanel = new StackPanel();
-            
+
             createRadialGradientBrushExample();
 
             this.Content = myMainPanel;
@@ -46,8 +46,8 @@ namespace Microsoft.Samples.GradientBrushExamples
             myRectangle.Height = 100;
             myRectangle.Fill = myRadialGradientBrush;
             // </SnippetRadialGradient1CSharp>
-            
-            myMainPanel.Children.Add(myRectangle); 
+
+            myMainPanel.Children.Add(myRectangle);
         }
     }
 }

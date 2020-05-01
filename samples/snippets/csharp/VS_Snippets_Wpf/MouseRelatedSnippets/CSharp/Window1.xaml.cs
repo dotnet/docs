@@ -137,7 +137,7 @@ namespace FocusSample
         //<SnippetMouseRelatedSnippetsPositionMouseDevice>
         private void MouseMoveMouseDeviceHandler(object sender, RoutedEventArgs e)
         {
-            
+
             MouseDevice currentMouseDevice = Mouse.PrimaryDevice;
             Point position;
             StackPanel source;
@@ -149,7 +149,7 @@ namespace FocusSample
                 position = currentMouseDevice.GetPosition(source);
                 txtBoxMouseDevicePosition.Text = "X: " + position.X +
                     "\n" +
-                    "Y: " + position.Y; 
+                    "Y: " + position.Y;
             }
         }
         //</SnippetMouseRelatedSnippetsPositionMouseDevice>

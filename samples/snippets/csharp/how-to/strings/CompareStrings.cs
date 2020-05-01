@@ -34,7 +34,7 @@ namespace HowToStrings
             result = root.Equals(root2, StringComparison.Ordinal);
             Console.WriteLine($"Ordinal comparison: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
 
-            Console.WriteLine($"Using == says that <{root}> and <{root2}> are {(root == root2 ? "equal" : "not equal")}");               
+            Console.WriteLine($"Using == says that <{root}> and <{root2}> are {(root == root2 ? "equal" : "not equal")}");
             // </Snippet1>
         }
 
@@ -61,7 +61,7 @@ namespace HowToStrings
 
         private static void WordSortOrderInvariantCulture()
         {
-            //<snippet3>  
+            //<snippet3>
             string first = "Sie tanzen auf der Straße.";
             string second = "Sie tanzen auf der Strasse.";
 
@@ -100,7 +100,7 @@ namespace HowToStrings
         }
         private static void LinguisticComparisons()
         {
-            //<snippet4>  
+            //<snippet4>
             string first = "Sie tanzen auf der Straße.";
             string second = "Sie tanzen auf der Strasse.";
 
@@ -109,7 +109,7 @@ namespace HowToStrings
 
             var en = new System.Globalization.CultureInfo("en-US");
 
-            // For culture-sensitive comparisons, use the String.Compare 
+            // For culture-sensitive comparisons, use the String.Compare
             // overload that takes a StringComparison value.
             int i = String.Compare(first, second, en, System.Globalization.CompareOptions.None);
             Console.WriteLine($"Comparing in {en.Name} returns {i}.");
@@ -241,7 +241,7 @@ namespace HowToStrings
 
             Console.WriteLine("\n\rSorted order:");
 
-            lines.Sort((left, right) => left.CompareTo(right)); 
+            lines.Sort((left, right) => left.CompareTo(right));
             foreach (string s in lines)
             {
                 Console.WriteLine($"   {s}");

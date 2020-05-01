@@ -34,19 +34,19 @@ public class Form1 : Form
         // Disable the button for the duration of the download.
         this.downloadButton.Enabled = false;
 
-        // Once you have started the background thread you 
-        // can exit the handler and the application will 
+        // Once you have started the background thread you
+        // can exit the handler and the application will
         // wait until the RunWorkerCompleted event is raised.
 
         // Or if you want to do something else in the main thread,
-        // such as update a progress bar, you can do so in a loop 
+        // such as update a progress bar, you can do so in a loop
         // while checking IsBusy to see if the background task is
         // still running.
 
         while (this.backgroundWorker1.IsBusy)
         {
             progressBar1.Increment(1);
-            // Keep UI messages moving, so the form remains 
+            // Keep UI messages moving, so the form remains
             // responsive during the asynchronous operation.
             Application.DoEvents();
         }
@@ -124,9 +124,9 @@ public class Form1 : Form
         this.downloadButton = new System.Windows.Forms.Button();
         this.progressBar1 = new System.Windows.Forms.ProgressBar();
         this.SuspendLayout();
-        // 
+        //
         // downloadButton
-        // 
+        //
         this.downloadButton.Location = new System.Drawing.Point(12, 12);
         this.downloadButton.Name = "downloadButton";
         this.downloadButton.Size = new System.Drawing.Size(100, 23);
@@ -134,16 +134,16 @@ public class Form1 : Form
         this.downloadButton.Text = "Download file";
         this.downloadButton.UseVisualStyleBackColor = true;
         this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
-        // 
+        //
         // progressBar1
-        // 
+        //
         this.progressBar1.Location = new System.Drawing.Point(12, 50);
         this.progressBar1.Name = "progressBar1";
         this.progressBar1.Size = new System.Drawing.Size(100, 26);
         this.progressBar1.TabIndex = 1;
-        // 
+        //
         // Form1
-        // 
+        //
         this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(133, 104);

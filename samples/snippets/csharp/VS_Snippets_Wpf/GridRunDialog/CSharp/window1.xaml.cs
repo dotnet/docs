@@ -33,7 +33,7 @@ namespace Grid_Run_Dialog
             mainWindow.Background = Brushes.White;
 
             // <Snippet1>
-            
+
             // Create the Grid.
             grid1 = new Grid ();
             grid1.Background = Brushes.Gainsboro;
@@ -93,13 +93,13 @@ namespace Grid_Run_Dialog
             txt2.Text = "Open:";
             Grid.SetRow(txt2, 1);
             Grid.SetColumn(txt2, 0);
-            
+
             // Add the TextBox control.
             tb1 = new TextBox();
             Grid.SetRow(tb1, 1);
             Grid.SetColumn(tb1, 1);
             Grid.SetColumnSpan(tb1, 5);
-            
+
             // Add the buttons.
             button1 = new Button();
             button2 = new Button();
@@ -116,7 +116,7 @@ namespace Grid_Run_Dialog
             Grid.SetColumn(button2, 3);
             Grid.SetRow(button3, 3);
             Grid.SetColumn(button3, 4);
-            
+
             grid1.Children.Add(img1);
             grid1.Children.Add(txt1);
             grid1.Children.Add(txt2);
@@ -124,7 +124,7 @@ namespace Grid_Run_Dialog
             grid1.Children.Add(button1);
             grid1.Children.Add(button2);
             grid1.Children.Add(button3);
-            
+
             mainWindow.Content = grid1;
             //</Snippet1>
         }

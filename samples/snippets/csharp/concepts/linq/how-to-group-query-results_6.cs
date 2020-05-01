@@ -1,5 +1,5 @@
 ﻿        public void GroupByBoolean()
-        {            
+        {
             Console.WriteLine("\r\nGroup by a Boolean into two groups with string keys");
             Console.WriteLine("\"True\" and \"False\" and project into a new anonymous type:");
             var queryGroupByAverages = from student in students
@@ -12,7 +12,7 @@
                 Console.WriteLine($"Key: {studentGroup.Key}");
                 foreach (var student in studentGroup)
                     Console.WriteLine($"\t{student.FirstName} {student.LastName}");
-            }            
+            }
         }
         /* Output:
             Group by a Boolean into two groups with string keys

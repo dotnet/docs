@@ -284,4 +284,4 @@ If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Thre
 ## See also
 
 - [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
-- [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+- [Samples for Parallel Programming with the .NET Core & .NET Standard](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)

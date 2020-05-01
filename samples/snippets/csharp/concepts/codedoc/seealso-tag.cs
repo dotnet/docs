@@ -23,7 +23,7 @@ public class Math
     /// }
     /// </code>
     /// </example>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max
     /// and the other is greater than 0.</exception>
     /// See <see cref="Math.Add(double, double)"/> to add doubles.
     /// <seealso cref="Math.Subtract(int, int)"/>

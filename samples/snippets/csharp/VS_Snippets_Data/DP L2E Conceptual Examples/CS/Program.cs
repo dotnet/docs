@@ -45,7 +45,7 @@ namespace L2E_ConceptualExamplesCS
             // AnonymousTypeInitialization_MQ();
             // TypeInitialization();
             // TypeInitialization_MQ();
-            
+
             //WhereExpression();
             //LiteralParameter1();
             //int orderID = 51987;
@@ -56,7 +56,7 @@ namespace L2E_ConceptualExamplesCS
             //CanonicalFuncVsCLRBaseType();
             //ConvertExpression();
             //NonSymmetricGetterSetter();
-            
+
             //*** Nav property examples ***//
             //NavPropLoadError();
             // NavProperty_MQ();
@@ -109,7 +109,7 @@ namespace L2E_ConceptualExamplesCS
                     Console.WriteLine(orderNum);
                 }
             }
-            // </SnippetConstantExpression>            
+            // </SnippetConstantExpression>
         }
 
         static void RestrictionExpression()
@@ -205,7 +205,7 @@ namespace L2E_ConceptualExamplesCS
         // </SnippetMyClass>
         static void PropertyAsConstant()
         {
-            // <SnippetPropertyAsConstant>      
+            // <SnippetPropertyAsConstant>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 AClass aClass = new AClass();
@@ -236,7 +236,7 @@ namespace L2E_ConceptualExamplesCS
 
         static void MethodAsConstantFails()
         {
-            // <SnippetMethodAsConstantFails>      
+            // <SnippetMethodAsConstantFails>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 MyClass2 myClass = new MyClass2();
@@ -267,14 +267,14 @@ namespace L2E_ConceptualExamplesCS
 
         static void NullComparison()
         {
-            // <SnippetNullComparison>      
+            // <SnippetNullComparison>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 ObjectQuery<SalesOrderHeader> sales = context.SalesOrderHeaders;
 
                 //Throws a NotSupportedException
                 /* var orders = from c in edm.Cusomters
-              join c2 in edm.Orders 
+              join c2 in edm.Orders
            on c.Region == c2.ShipRegion
               where c.Region == null
               select c.CustomerID;
@@ -308,7 +308,7 @@ namespace L2E_ConceptualExamplesCS
 
         static void JoinOnNull()
         {
-            
+
             // <SnippetJoinOnNull>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
@@ -316,10 +316,10 @@ namespace L2E_ConceptualExamplesCS
                 ObjectSet<SalesOrderDetail> details = context.SalesOrderDetails;
 
                 var query =
-                    from order in orders 
-                    join detail in details 
-                    on order.SalesOrderID 
-                    equals detail.SalesOrderID 
+                    from order in orders
+                    join detail in details
+                    on order.SalesOrderID
+                    equals detail.SalesOrderID
                     where order.ShipDate == null
                     select order.SalesOrderID;
 
@@ -478,9 +478,9 @@ namespace L2E_ConceptualExamplesCS
                     foreach (Contact contact in contacts)
                     {
                         Console.WriteLine("Name: {0}, {1}", contact.LastName, contact.FirstName);
-                        
-                        // Throws a EntityCommandExecutionException if 
-                        // MultipleActiveResultSets is set to False in the 
+
+                        // Throws a EntityCommandExecutionException if
+                        // MultipleActiveResultSets is set to False in the
                         // connection string.
                         contact.SalesOrderHeaders.Load();
 
@@ -512,7 +512,7 @@ namespace L2E_ConceptualExamplesCS
                 Console.WriteLine("Sales order info:");
                 foreach (int orderNumber in salesInfo)
                 {
-                    Console.WriteLine("Order number: " + orderNumber);                    
+                    Console.WriteLine("Order number: " + orderNumber);
                 }
             }
             // </SnippetWhereExpression>
@@ -520,7 +520,7 @@ namespace L2E_ConceptualExamplesCS
 
         public static void LiteralParameter1()
         {
-            
+
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 //<SnippetLiteralParameter1>
@@ -544,11 +544,11 @@ namespace L2E_ConceptualExamplesCS
         {
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
-                
+
                 IQueryable<SalesOrderHeader> salesInfo =
                     from s in context.SalesOrderHeaders
                     where s.SalesOrderID == orderID
-                    select s;                
+                    select s;
 
                 foreach (SalesOrderHeader sale in salesInfo)
                 {
@@ -559,7 +559,7 @@ namespace L2E_ConceptualExamplesCS
         //</SnippetMethodParameterExample>
 
         public static void NullCastToString()
-        {            
+        {
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 //<SnippetNullCastToString>
@@ -573,7 +573,7 @@ namespace L2E_ConceptualExamplesCS
                 {
                     Console.WriteLine("Name: {0}", contact.LastName);
                 }
-            }            
+            }
         }
 
         public static void CastToNullable()
@@ -592,7 +592,7 @@ namespace L2E_ConceptualExamplesCS
                 {
                     Console.WriteLine("Name: {0}", p.Name);
                 }
-            }  
+            }
         }
 
         public static void ConstructorForLiteral()
@@ -611,7 +611,7 @@ namespace L2E_ConceptualExamplesCS
                 {
                     Console.WriteLine("Name: {0}", p.Name);
                 }
-            } 
+            }
         }
 
         public static void CanonicalFuncVsCLRBaseType()
@@ -639,7 +639,7 @@ namespace L2E_ConceptualExamplesCS
             {
                 var sales = from sale in context.SalesOrderDetails
                             where sale.OrderQty > orderQty
-                            select new { Sale = sale, TotalValue = (decimal)sale.OrderQty * sale.UnitPrice }; 
+                            select new { Sale = sale, TotalValue = (decimal)sale.OrderQty * sale.UnitPrice };
 
                 foreach (var s in sales)
                 {
@@ -872,7 +872,7 @@ namespace L2E_ConceptualExamplesCS
                     Console.WriteLine(productName);
                 }
 
-                // In this query, the ordering is preserved because 
+                // In this query, the ordering is preserved because
                 // OrderByDescending is called after Distinct.
                 IQueryable<string> productsList2 = context.Products
                     .Select(p => p.Name)
@@ -913,7 +913,7 @@ namespace L2E_ConceptualExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 // Return all contacts, ordered by last name. The OrderBy before
-                // the Where produces a nested query when translated to 
+                // the Where produces a nested query when translated to
                 // canonical command trees and the ordering by last name is lost.
                 IQueryable<Contact> contacts = context.Contacts
                     .OrderBy(x => x.LastName)
@@ -1060,7 +1060,7 @@ namespace L2E_ConceptualExamplesCS
             }
             // </SnippetSBUDT555877>
         }
-        
+
 # endregion
         # region "How to examples"
         public static void QueryReturnsPrimitiveValue()
@@ -1176,32 +1176,32 @@ namespace L2E_ConceptualExamplesCS
 
         # region Compiled Query Examples
         // <SnippetCompiledQuery1_MQ>
-        static readonly Func<AdventureWorksEntities, ObjectQuery<SalesOrderHeader>> s_compiledQuery1 = 
+        static readonly Func<AdventureWorksEntities, ObjectQuery<SalesOrderHeader>> s_compiledQuery1 =
             CompiledQuery.Compile<AdventureWorksEntities, ObjectQuery<SalesOrderHeader>>(
                     ctx => ctx.SalesOrderHeaders);
 
         static void CompiledQuery1_MQ()
         {
-            
+
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 IQueryable<SalesOrderHeader> orders = s_compiledQuery1.Invoke(context);
 
                 foreach (SalesOrderHeader order in orders)
                     Console.WriteLine(order.SalesOrderID);
-            }            
+            }
         }
         // </SnippetCompiledQuery1_MQ>
 
         // <SnippetCompiledQuery2>
-        static readonly Func<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery2 = 
+        static readonly Func<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery2 =
             CompiledQuery.Compile<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>>(
                     (ctx, total) => from order in ctx.SalesOrderHeaders
                                     where order.TotalDue >= total
                                     select order);
 
         static void CompiledQuery2()
-        {            
+        {
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 Decimal totalDue = 200.00M;
@@ -1215,11 +1215,11 @@ namespace L2E_ConceptualExamplesCS
                         order.OrderDate,
                         order.TotalDue);
                 }
-            }            
+            }
         }
         // </SnippetCompiledQuery2>
 
-        static readonly Func<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery2MQ = 
+        static readonly Func<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery2MQ =
             CompiledQuery.Compile<AdventureWorksEntities, Decimal, IQueryable<SalesOrderHeader>>(
                     (ctx, total) => ctx.SalesOrderHeaders
                     .Where(s => s.TotalDue >= total)
@@ -1241,7 +1241,7 @@ namespace L2E_ConceptualExamplesCS
                         order.OrderDate,
                         order.TotalDue);
                 }
-            }            
+            }
         }
         // </SnippetCompiledQuery2_MQ>
 
@@ -1251,23 +1251,23 @@ namespace L2E_ConceptualExamplesCS
 
         static void CompiledQuery3_MQ()
         {
-            
+
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 Decimal averageProductPrice = s_compiledQuery3MQ.Invoke(context);
 
                 Console.WriteLine("The average of the product list prices is $: {0}", averageProductPrice);
-            }            
+            }
         }
         // </SnippetCompiledQuery3_MQ>
 
         // <SnippetCompiledQuery4_MQ>
-        static readonly Func<AdventureWorksEntities, string, Contact> s_compiledQuery4MQ = 
+        static readonly Func<AdventureWorksEntities, string, Contact> s_compiledQuery4MQ =
             CompiledQuery.Compile<AdventureWorksEntities, string, Contact>(
                     (ctx, name) => ctx.Contacts.First(contact => contact.EmailAddress.StartsWith(name)));
 
         static void CompiledQuery4_MQ()
-        {            
+        {
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 string contactName = "caroline";
@@ -1275,23 +1275,23 @@ namespace L2E_ConceptualExamplesCS
 
                 Console.WriteLine("An email address starting with 'caroline': {0}",
                     foundContact.EmailAddress);
-            }            
+            }
         }
         // </SnippetCompiledQuery4_MQ>
 
         // <SnippetCompiledQuery5>
-        static readonly Func<AdventureWorksEntities, DateTime, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery5 = 
+        static readonly Func<AdventureWorksEntities, DateTime, Decimal, IQueryable<SalesOrderHeader>> s_compiledQuery5 =
             CompiledQuery.Compile<AdventureWorksEntities, DateTime, Decimal, IQueryable<SalesOrderHeader>>(
                     (ctx, orderDate, totalDue) => from product in ctx.SalesOrderHeaders
-                                                  where product.OrderDate > orderDate 
+                                                  where product.OrderDate > orderDate
                                                      && product.TotalDue < totalDue
                                                   orderby product.OrderDate
                                                   select product);
 
         static void CompiledQuery5()
-        {            
+        {
             using (AdventureWorksEntities context = new AdventureWorksEntities())
-            {         
+            {
                 DateTime date = new DateTime(2003, 3, 8);
                 Decimal amountDue = 300.00M;
 
@@ -1301,7 +1301,7 @@ namespace L2E_ConceptualExamplesCS
                 {
                     Console.WriteLine("ID: {0} Order date: {1} Total due: {2}", order.SalesOrderID, order.OrderDate, order.TotalDue);
                 }
-            }            
+            }
         }
         // </SnippetCompiledQuery5>
 
@@ -1336,15 +1336,15 @@ namespace L2E_ConceptualExamplesCS
         //</SnippetMyParamsStruct>
 
         // <SnippetCompiledQuery7>
-        static Func<AdventureWorksEntities, MyParams, IQueryable<SalesOrderHeader>> s_compiledQuery = 
+        static Func<AdventureWorksEntities, MyParams, IQueryable<SalesOrderHeader>> s_compiledQuery =
             CompiledQuery.Compile<AdventureWorksEntities, MyParams, IQueryable<SalesOrderHeader>>(
                     (ctx, myparams) => from sale in ctx.SalesOrderHeaders
-                                       where sale.ShipDate > myparams.startDate && sale.ShipDate < myparams.endDate 
-                                       && sale.TotalDue > myparams.totalDue  
+                                       where sale.ShipDate > myparams.startDate && sale.ShipDate < myparams.endDate
+                                       && sale.TotalDue > myparams.totalDue
                                        select sale);
         static void CompiledQuery7()
         {
-            
+
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 MyParams myParams = new MyParams();
@@ -1360,7 +1360,7 @@ namespace L2E_ConceptualExamplesCS
                     Console.WriteLine("Ship date: {0}", sale.ShipDate);
                     Console.WriteLine("Total due: {0}", sale.TotalDue);
                 }
-            }            
+            }
         }
         // </SnippetCompiledQuery7>
         # endregion

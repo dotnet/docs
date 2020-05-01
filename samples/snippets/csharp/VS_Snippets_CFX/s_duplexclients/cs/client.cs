@@ -3,7 +3,7 @@ using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 
-// Define class that implements the callback interface of duplex 
+// Define class that implements the callback interface of duplex
 // contract.
 public class CallbackHandler : ICalculatorDuplexCallback
 {
@@ -22,7 +22,7 @@ public class Client
   public static void Main()
   {
     // Picks up configuration from the config file.
-    
+
     CalculatorDuplexClient wcfClient
       = new CalculatorDuplexClient(new InstanceContext(new CallbackHandler()));
     try

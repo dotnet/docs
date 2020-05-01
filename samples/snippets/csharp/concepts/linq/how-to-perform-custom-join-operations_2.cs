@@ -50,7 +50,7 @@
         public List<int> ExamScores { get; set; }
     }
 
-    /* Output: 
+    /* Output:
         The average score of Omelchenko Svetlana is 82.5.
         The average score of O'Donnell Claire is 72.25.
         The average score of Mortensen Sven is 84.5.

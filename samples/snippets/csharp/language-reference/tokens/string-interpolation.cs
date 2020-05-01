@@ -19,7 +19,7 @@ public class StringInterpolation
         // <Snippet1>
         string name = "Mark";
         var date = DateTime.Now;
-        
+
         // Composite formatting:
         Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.DayOfWeek, date);
         // String interpolation:
@@ -40,7 +40,7 @@ public class StringInterpolation
         // Expected output is:
         // |Left   |  Right|
         //     3.14159265358979 - default formatting of the pi number
-        //                3.142 - display only three decimal digits of the pi number    
+        //                3.142 - display only three decimal digits of the pi number
         // </Snippet2>
     }
 
@@ -62,7 +62,7 @@ public class StringInterpolation
         // <Snippet4>
         double speedOfLight = 299792.458;
         FormattableString message = $"The speed of light is {speedOfLight:N3} km/s.";
-        
+
         System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("nl-NL");
         string messageInCurrentCulture = message.ToString();
 

@@ -7,7 +7,7 @@ public class Example
    {
       Random rnd = new Random();
       int caseSwitch = rnd.Next(1,4);
-      
+
       switch (caseSwitch)
       {
           case 1:

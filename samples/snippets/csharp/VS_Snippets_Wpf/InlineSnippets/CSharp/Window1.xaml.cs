@@ -49,8 +49,8 @@ namespace InlineSnippets
             Span span2 = new Span(new Run("Span number 2"));
 
             // Add the Inline elements to the Paragraph. Note the order
-            // of the inline elements in the paragraph; the order is 
-            // arbitrary, but the notion of an order is important with 
+            // of the inline elements in the paragraph; the order is
+            // arbitrary, but the notion of an order is important with
             // respect to  what are 'previous' and 'next' elements.
             par.Inlines.Add(run1);
             par.Inlines.Add(run2);

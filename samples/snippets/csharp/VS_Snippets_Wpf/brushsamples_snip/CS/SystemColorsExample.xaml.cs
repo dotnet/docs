@@ -14,15 +14,15 @@ namespace Microsoft.Samples.Brushes
         public SystemColorsExample()
         {
         }
-        
+
         private void temp(object Sender, RoutedEventArgs e)
         {
-        
+
             mainPanel.Background = System.Windows.Media.Brushes.Orange;
             //MessageBox.Show("!");
             mainPanel.Background = SystemColors.DesktopBrush;
             //mainPanel.SetResourceReference(Panel.BackgroundProperty, SystemColors.DesktopBrush);
-            mainPanel.Height = 800;        
+            mainPanel.Height = 800;
         }
     }
 }

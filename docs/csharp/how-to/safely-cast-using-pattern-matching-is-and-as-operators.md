@@ -21,7 +21,7 @@ You can also use the same syntax for testing if a [nullable value type](../langu
 
 [!code-csharp[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs#PatternMatchingNullable)]
 
-The preceding sample demonstrates other features of pattern matching to use with conversions. You can test a variable for the null pattern by checking specifically for the `null` value. When the runtime value of the variable is `null`, an `is` statement checking for a type always returns `false`. The pattern matching `is` statement doesn't allow a nullable value type, such as `int?` or `Nullable<int>`, but you can test for any other value type. The `is` patterns from the preceding example are not limited to the nullable value types. You also can use those patterns to test if a variable of a reference type has a value or it's `null`.
+The preceding sample demonstrates other features of pattern matching to use with conversions. You can test a variable for the null pattern by checking specifically for the `null` value. When the runtime value of the variable is `null`, an `is` statement checking for a type always returns `false`. The pattern matching `is` statement doesn't allow a nullable value type, such as `int?` or `Nullable<int>`, but you can test for any other value type. The `is` patterns from the preceding example are not limited to the nullable value types. You can also use those patterns to test if a variable of a reference type has a value or it's `null`.
 
 The preceding sample also shows how you use the type pattern in a `switch` statement where the variable may be one of many different types.
 
@@ -31,4 +31,4 @@ If you want to test if a variable is a given type, but not assign it to a new va
 
 As you can see by comparing this code with the pattern matching code, the pattern matching syntax provides more robust features by combining the test and the assignment in a single statement. Use the pattern matching syntax whenever possible.
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/safelycast). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/safelycast.zip).
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/safelycast). Or you can download the samples [as a zip file](../../../samples/snippets/csharp/how-to/safelycast.zip).

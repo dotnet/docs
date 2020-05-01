@@ -7,13 +7,15 @@ metadata:
   title: .NET documentation what's new?
   description: "Learn about new and updated content in .NET docs."
   ms.topic: landing-page
-  ms.date: 12/12/2019
+  ms.date: 04/22/2020
 
 landingContent:
   - title: "Find .NET updates"
     linkLists:
       - linkListType: whats-new
         links:
+          - text: April 2020
+            url: dotnet-2020-04.md
           - text: March 2020
             url: dotnet-2020-03.md
           - text: February 2020
@@ -24,28 +26,33 @@ landingContent:
             url: 2019-12.md
           - text: November 2019
             url: 2019-11.md
-          - text: October 2019
-            url: 2019-10.md
 
-  - title: "Get involved - contribute to .NET docs"
+  - title: "Get involved - contribute"
     linkLists:
       - linkListType: overview
         links:
           - text: ".NET docs repository"
             url: https://github.com/dotnet/docs/blob/master/README.md
           - text: Project structure and labels for issues and pull requests
-            url: https://github.com/dotnet/docs/blob/master/styleguide/labels-projects.md
+            url: https://docs.microsoft.com/contribute/dotnet/labels-projects
+          - text: ".NET Foundation"
+            url: https://dotnetfoundation.org/
       - linkListType: concept
         links:
           - text: Microsoft docs contributor guide
             url: https://docs.microsoft.com/contribute
           - text: ".NET docs contributor guide"
-            url: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
+            url: https://docs.microsoft.com/contribute/dotnet/dotnet-contribute
           - text: ".NET API reference docs contributor guide"
             url: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
           - text: ".NET samples contributor guide"
             url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
-
+  - title: "Community"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Community
+            url: https://dotnet.microsoft.com/platform/community
   - title: "Related what's new pages"
     linkLists:
       - linkListType: whats-new

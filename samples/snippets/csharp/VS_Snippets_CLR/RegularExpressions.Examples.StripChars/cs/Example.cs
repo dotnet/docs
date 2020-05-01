@@ -8,13 +8,13 @@ public class Example
     {
         // Replace invalid characters with empty strings.
         try {
-           return Regex.Replace(strIn, @"[^\w\.@-]", "", 
-                                RegexOptions.None, TimeSpan.FromSeconds(1.5)); 
+           return Regex.Replace(strIn, @"[^\w\.@-]", "",
+                                RegexOptions.None, TimeSpan.FromSeconds(1.5));
         }
-        // If we timeout when replacing invalid characters, 
+        // If we timeout when replacing invalid characters,
         // we should return Empty.
         catch (RegexMatchTimeoutException) {
-           return String.Empty;   
+           return String.Empty;
         }
     }
 }

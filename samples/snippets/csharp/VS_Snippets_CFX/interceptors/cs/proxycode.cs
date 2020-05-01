@@ -13,17 +13,17 @@
 namespace microsoft.wcf.documentation
 {
     using System.Runtime.Serialization;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute()]
     public partial class SampleFault : object, System.Runtime.Serialization.IExtensibleDataObject
     {
-        
+
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
+
         private string FaultMessageField;
-        
+
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
             get
@@ -35,7 +35,7 @@ namespace microsoft.wcf.documentation
                 this.extensionDataField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string FaultMessage
         {
@@ -56,7 +56,7 @@ namespace microsoft.wcf.documentation
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://microsoft.wcf.documentation", ConfigurationName="ISampleService")]
 public interface ISampleService
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(Action="http://microsoft.wcf.documentation/ISampleService/SampleMethod", ReplyAction="http://microsoft.wcf.documentation/ISampleService/SampleMethodResponse")]
     [System.ServiceModel.FaultContractAttribute(typeof(microsoft.wcf.documentation.SampleFault), Action="http://microsoft.wcf.documentation/ISampleService/SampleMethodSampleFaultFault", Name="SampleFault")]
     string SampleMethod(string msg);
@@ -71,31 +71,31 @@ public interface ISampleServiceChannel : ISampleService, System.ServiceModel.ICl
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class SampleServiceClient : System.ServiceModel.ClientBase<ISampleService>, ISampleService
 {
-    
+
     public SampleServiceClient()
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName) : 
+
+    public SampleServiceClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public SampleServiceClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public string SampleMethod(string msg)
     {
         return base.Channel.SampleMethod(msg);

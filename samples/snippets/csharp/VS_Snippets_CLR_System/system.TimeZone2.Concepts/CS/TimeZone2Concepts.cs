@@ -381,6 +381,11 @@ public class TZListForm : Form
          Console.WriteLine("The registry contains invalid data for the {0} zone.",
                            timeZoneName);
       }
+      
+      // The example produces the following output to the console:
+      //    At 1/1/2007 12:00:00 AM (UTC-05:00) Eastern Time (US & Canada), the local time is 1/1/2007 12:00:00 AM Eastern Standard Time.
+      //    At 1/1/2007 12:00:00 AM (UTC-05:00) Eastern Time (US & Canada), the time is 1/1/2007 5:00:00 AM UTC.
+      
       // </Snippet13>
    }
 }

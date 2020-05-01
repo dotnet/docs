@@ -64,6 +64,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 - **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+  
+  To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
+
+  On Windows, you can collect code coverage by using the `--collect "Code Coverage"` option. This option generates a *.coverage* file, which can be opened in Visual Studio 2019 Enterprise. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
@@ -154,6 +158,12 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   ```dotnetcli
   dotnet test --logger trx
+  ```
+
+- Run the tests in the project in the current directory, and generate a code coverage file:
+
+  ```dotnetcli
+  dotnet test --collect "Code Coverage"
   ```
 
 - Run the tests in the project in the current directory, and log with detailed verbosity to the console:

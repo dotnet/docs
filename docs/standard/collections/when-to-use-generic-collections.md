@@ -24,7 +24,7 @@ The following generic types correspond to existing collection types:
 
 - <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is the generic class that corresponds to <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is not abstract and has a constructor that makes it easy to expose an existing <xref:System.Collections.Generic.List%601> as a read-only collection.
 
-- The <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Immutable.ImmutableQueue%601>, <xref:System.Collections.Generic.Array%601>, <xref:System.Collections.Concurrent.ConcurrentArray%601>, <xref:System.Collections.Immutable.ImmutableArray%601>, <xref:System.Collections.Generic.SortedList%602>, and <xref:System.Collections.Immutable.ImmutableSortedSet%601> generic classes correspond to the respective nongeneric classes with the same names.
+- The <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Immutable.ImmutableQueue%601>, <xref:System.Collections.Immutable.ImmutableArray%601>, <xref:System.Collections.Generic.SortedList%602>, and <xref:System.Collections.Immutable.ImmutableSortedSet%601> generic classes correspond to the respective nongeneric classes with the same names.
 
 ## Additional Types
 

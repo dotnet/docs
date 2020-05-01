@@ -42,9 +42,9 @@ Several generic collection types do not have nongeneric counterparts. They inclu
 
 ### Immutable builders
 
-When you desire immutability functionality in your app, the <xref:System.Collections.Immutable> namespace offers generic collection types you can use. All of the immutable collection types offer `Builder` subclasses that can optimized performance when you're performing multiple mutations. The `Builder` class batches operations in a mutable state. When all mutations have been completed, call the `ToImmutable` method to "freeze" all nodes and create an immutable generic collection, for example, an <xref:System.Collections.Immutable.ImmutableList%601>.
+When you desire immutability functionality in your app, the <xref:System.Collections.Immutable> namespace offers generic collection types you can use. All of the immutable collection types offer `Builder` classes that can optimize performance when you're performing multiple mutations. The `Builder` class batches operations in a mutable state. When all mutations have been completed, call the `ToImmutable` method to "freeze" all nodes and create an immutable generic collection, for example, an <xref:System.Collections.Immutable.ImmutableList%601>.
 
-The `Builder` object can be created by calling the nongeneric `CreateBuilder()` function. From a `Builder` instance, you can call `ToImmutable()`. Likewise, from the `Immutable*` collection you can call `ToBuilder()` to create a builder instance from the generic immutable collection. Below are the various builder types.
+The `Builder` object can be created by calling the nongeneric `CreateBuilder()` method. From a `Builder` instance, you can call `ToImmutable()`. Likewise, from the `Immutable*` collection, you can call `ToBuilder()` to create a builder instance from the generic immutable collection. The following are the various `Builder` types.
 
 - <xref:System.Collections.Immutable.ImmutableArray%601.Builder>
 - <xref:System.Collections.Immutable.ImmutableDictionary%602.Builder>

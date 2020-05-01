@@ -8,8 +8,7 @@ ms.date: 09/16/2019
 
 When you develop desktop applications, one thing to consider is how your application is going to be packaged and deployed to the users' machines. The problem with packaging, deployment, and installation is that it usually falls under the umbrella of the IT professionals, who care about different things than developers.
 
-These days, we're all familiar with the DevOps concept, where developers and IT Pros work closely to move applications to their production environments. But if you've been in the desktop battle for more than 10 years, you might have seen the following story. A team of developers works together hard to meet the project deadlines. Business people are nervous since they need the system working on many user's machines to run the company. On "D-Day", the project manager checks with every developer that their code is working well and that everything is fine, so they can ship. Then, the package team comes in generating the setup for the app, distribute it to every user machine and a set of test users run the application. Well, they try, because before showing any UI, the application throws an exception that says "Method ~ of object ~ failed".
-Panic starts flowing through the air and a brief investigation points to a young and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
+These days, we're all familiar with the DevOps concept, where developers and IT Pros work closely to move applications to their production environments. But if you've been in the desktop battle for more than 10 years, you might have seen the following story. A team of developers works together hard to meet the project deadlines. Business people are nervous since they need the system working on many user's machines to run the company. On "D-Day", the project manager checks with every developer that their code is working well and that everything is fine, so they can ship. Then, the package team comes in generating the setup for the app, distribute it to every user machine and a set of test users run the application. Well, they try, because before showing any UI, the application throws an exception that says "Method ~ of object ~ failed". Panic starts flowing through the air and a brief investigation points to a young and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
 
 Installing desktop applications have traditionally been a nightmare for two main reasons:
 
@@ -52,13 +51,11 @@ This radical change leads us to the new and modern IT lifecycle as shown in the 
 
 ![Microsoft IT tools](media\deploying-modern-desktop-applications\microsoft-it-tools.png)
 
-Developers create the app and generate an MSIX package that IT Pros can consume and configure without the need of repackaging. Along with the MSIX technology, Microsoft has created tools to allow IT to customize and configure packages
-without repackaging.
+Developers create the app and generate an MSIX package that IT Pros can consume and configure without the need of repackaging. Along with the MSIX technology, Microsoft has created tools to allow IT to customize and configure packages without repackaging.
 
 ## MSIX: The next generation of deployment
 
-Before MSIX, there were several packaging technologies available like setup wizards, MSI, ClickOnce, App-V, and scripting. Each of these technologies has their own strengths and Microsoft has decided to pick the best of all to build MSIX. MSIX is
-built on the foundations of these existing technologies picking the best of each:
+Before MSIX, there were several packaging technologies available like setup wizards, MSI, ClickOnce, App-V, and scripting. Each of these technologies has their own strengths and Microsoft has decided to pick the best of all to build MSIX. MSIX is built on the foundations of these existing technologies picking the best of each:
 
 - App-V =\> Containerization
 - ClickOnce =\> Auto updating
@@ -96,8 +93,7 @@ The AppManifest declares the versioning, device targeting and identify in a stan
 
 #### OS managed
 
-The OS handles all the processes for installing, updating, and removing an application. Applications are installed per user but downloaded only once, minimizing the disk footprint. Microsoft is working on providing the MSIX
-experience also on Windows 7.
+The OS handles all the processes for installing, updating, and removing an application. Applications are installed per user but downloaded only once, minimizing the disk footprint. Microsoft is working on providing the MSIX experience also on Windows 7.
 
 #### Windows provides integrity for the app
 

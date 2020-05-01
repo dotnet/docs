@@ -20,7 +20,7 @@ open module-or-namespace-name
 
 Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using namespace` in Visual C++, and `Imports` in Visual Basic.
 
-The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command`-`line option (or its abbreviation, `-r`). For more information, see [Compiler Options](compiler-options.md).
+The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command-line option (or its abbreviation, `-r`). For more information, see [Compiler Options](compiler-options.md).
 
 The import declaration makes the names available in the code that follows the declaration, up to the end of the enclosing namespace, module, or file.
 

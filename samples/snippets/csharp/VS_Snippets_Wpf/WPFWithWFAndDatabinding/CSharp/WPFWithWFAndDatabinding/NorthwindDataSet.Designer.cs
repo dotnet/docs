@@ -10,8 +10,8 @@
 
 namespace WPFWithWFAndDatabinding {
     using System;
-    
-    
+
+
     [Serializable()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.ComponentModel.ToolboxItem(true)]
@@ -20,15 +20,15 @@ namespace WPFWithWFAndDatabinding {
     [System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Usage", "CA2240:ImplementISerializableCorrectly")]
     public partial class NorthwindDataSet : System.Data.DataSet {
-        
+
         private CustomersDataTable tableCustomers;
-        
+
         private OrdersDataTable tableOrders;
-        
+
         private System.Data.DataRelation relationFK_Orders_Customers;
-        
+
         private System.Data.SchemaSerializationMode _schemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NorthwindDataSet() {
             this.BeginInit();
@@ -38,9 +38,9 @@ namespace WPFWithWFAndDatabinding {
             base.Relations.CollectionChanged += schemaChangedHandler;
             this.EndInit();
         }
-        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        protected NorthwindDataSet(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : 
+        protected NorthwindDataSet(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) :
                 base(info, context) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -76,7 +76,7 @@ namespace WPFWithWFAndDatabinding {
             base.Tables.CollectionChanged += schemaChangedHandler;
             this.Relations.CollectionChanged += schemaChangedHandler;
         }
-        
+
         [System.ComponentModel.Browsable(false)]
         [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]
         public CustomersDataTable Customers {
@@ -84,7 +84,7 @@ namespace WPFWithWFAndDatabinding {
                 return this.tableCustomers;
             }
         }
-        
+
         [System.ComponentModel.Browsable(false)]
         [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]
         public OrdersDataTable Orders {
@@ -92,7 +92,7 @@ namespace WPFWithWFAndDatabinding {
                 return this.tableOrders;
             }
         }
-        
+
         public override System.Data.SchemaSerializationMode SchemaSerializationMode {
             get {
                 return this._schemaSerializationMode;
@@ -101,21 +101,21 @@ namespace WPFWithWFAndDatabinding {
                 this._schemaSerializationMode = value;
             }
         }
-        
+
         [System.ComponentModel.DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public new System.Data.DataTableCollection Tables {
             get {
                 return base.Tables;
             }
         }
-        
+
         [System.ComponentModel.DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public new System.Data.DataRelationCollection Relations {
             get {
                 return base.Relations;
             }
         }
-        
+
         [System.ComponentModel.DefaultValueAttribute(true)]
         public new bool EnforceConstraints {
             get {
@@ -125,27 +125,27 @@ namespace WPFWithWFAndDatabinding {
                 base.EnforceConstraints = value;
             }
         }
-        
+
         protected override void InitializeDerivedDataSet() {
             this.BeginInit();
             this.InitClass();
             this.EndInit();
         }
-        
+
         public override System.Data.DataSet Clone() {
             NorthwindDataSet cln = ((NorthwindDataSet)(base.Clone()));
             cln.InitVars();
             return cln;
         }
-        
+
         protected override bool ShouldSerializeTables() {
             return false;
         }
-        
+
         protected override bool ShouldSerializeRelations() {
             return false;
         }
-        
+
         protected override void ReadXmlSerializable(System.Xml.XmlReader reader) {
             if ((this.DetermineSchemaSerializationMode(reader) == System.Data.SchemaSerializationMode.IncludeSchema)) {
                 this.Reset();
@@ -171,18 +171,18 @@ namespace WPFWithWFAndDatabinding {
                 this.InitVars();
             }
         }
-        
+
         protected override System.Xml.Schema.XmlSchema GetSchemaSerializable() {
             System.IO.MemoryStream stream = new System.IO.MemoryStream();
             this.WriteXmlSchema(new System.Xml.XmlTextWriter(stream, null));
             stream.Position = 0;
             return System.Xml.Schema.XmlSchema.Read(new System.Xml.XmlTextReader(stream), null);
         }
-        
+
         internal void InitVars() {
             this.InitVars(true);
         }
-        
+
         internal void InitVars(bool initTable) {
             this.tableCustomers = ((CustomersDataTable)(base.Tables["Customers"]));
             if ((initTable == true)) {
@@ -198,7 +198,7 @@ namespace WPFWithWFAndDatabinding {
             }
             this.relationFK_Orders_Customers = this.Relations["FK_Orders_Customers"];
         }
-        
+
         private void InitClass() {
             this.DataSetName = "NorthwindDataSet";
             this.Prefix = "";
@@ -213,21 +213,21 @@ namespace WPFWithWFAndDatabinding {
                         this.tableOrders.CustomerIDColumn}, false);
             this.Relations.Add(this.relationFK_Orders_Customers);
         }
-        
+
         private bool ShouldSerializeCustomers() {
             return false;
         }
-        
+
         private bool ShouldSerializeOrders() {
             return false;
         }
-        
+
         private void SchemaChanged(object sender, System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
             }
         }
-        
+
         public static System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet xs) {
             NorthwindDataSet ds = new NorthwindDataSet();
             System.Xml.Schema.XmlSchemaComplexType type = new System.Xml.Schema.XmlSchemaComplexType();
@@ -239,44 +239,44 @@ namespace WPFWithWFAndDatabinding {
             type.Particle = sequence;
             return type;
         }
-        
+
         public delegate void CustomersRowChangeEventHandler(object sender, CustomersRowChangeEvent e);
-        
+
         public delegate void OrdersRowChangeEventHandler(object sender, OrdersRowChangeEvent e);
-        
+
         [System.Serializable()]
         [System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class CustomersDataTable : System.Data.DataTable, System.Collections.IEnumerable {
-            
+
             private System.Data.DataColumn columnCustomerID;
-            
+
             private System.Data.DataColumn columnCompanyName;
-            
+
             private System.Data.DataColumn columnContactName;
-            
+
             private System.Data.DataColumn columnContactTitle;
-            
+
             private System.Data.DataColumn columnAddress;
-            
+
             private System.Data.DataColumn columnCity;
-            
+
             private System.Data.DataColumn columnRegion;
-            
+
             private System.Data.DataColumn columnPostalCode;
-            
+
             private System.Data.DataColumn columnCountry;
-            
+
             private System.Data.DataColumn columnPhone;
-            
+
             private System.Data.DataColumn columnFax;
-            
+
             public CustomersDataTable() {
                 this.TableName = "Customers";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
             }
-            
+
             internal CustomersDataTable(System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
@@ -291,103 +291,103 @@ namespace WPFWithWFAndDatabinding {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-            
-            protected CustomersDataTable(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : 
+
+            protected CustomersDataTable(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) :
                     base(info, context) {
                 this.InitVars();
             }
-            
+
             public System.Data.DataColumn CustomerIDColumn {
                 get {
                     return this.columnCustomerID;
                 }
             }
-            
+
             public System.Data.DataColumn CompanyNameColumn {
                 get {
                     return this.columnCompanyName;
                 }
             }
-            
+
             public System.Data.DataColumn ContactNameColumn {
                 get {
                     return this.columnContactName;
                 }
             }
-            
+
             public System.Data.DataColumn ContactTitleColumn {
                 get {
                     return this.columnContactTitle;
                 }
             }
-            
+
             public System.Data.DataColumn AddressColumn {
                 get {
                     return this.columnAddress;
                 }
             }
-            
+
             public System.Data.DataColumn CityColumn {
                 get {
                     return this.columnCity;
                 }
             }
-            
+
             public System.Data.DataColumn RegionColumn {
                 get {
                     return this.columnRegion;
                 }
             }
-            
+
             public System.Data.DataColumn PostalCodeColumn {
                 get {
                     return this.columnPostalCode;
                 }
             }
-            
+
             public System.Data.DataColumn CountryColumn {
                 get {
                     return this.columnCountry;
                 }
             }
-            
+
             public System.Data.DataColumn PhoneColumn {
                 get {
                     return this.columnPhone;
                 }
             }
-            
+
             public System.Data.DataColumn FaxColumn {
                 get {
                     return this.columnFax;
                 }
             }
-            
+
             [System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
                     return this.Rows.Count;
                 }
             }
-            
+
             public CustomersRow this[int index] {
                 get {
                     return ((CustomersRow)(this.Rows[index]));
                 }
             }
-            
+
             public event CustomersRowChangeEventHandler CustomersRowChanged;
-            
+
             public event CustomersRowChangeEventHandler CustomersRowChanging;
-            
+
             public event CustomersRowChangeEventHandler CustomersRowDeleted;
-            
+
             public event CustomersRowChangeEventHandler CustomersRowDeleting;
-            
+
             public void AddCustomersRow(CustomersRow row) {
                 this.Rows.Add(row);
             }
-            
+
             public CustomersRow AddCustomersRow(string CustomerID, string CompanyName, string ContactName, string ContactTitle, string Address, string City, string Region, string PostalCode, string Country, string Phone, string Fax) {
                 CustomersRow rowCustomersRow = ((CustomersRow)(this.NewRow()));
                 rowCustomersRow.ItemArray = new object[] {
@@ -405,26 +405,26 @@ namespace WPFWithWFAndDatabinding {
                 this.Rows.Add(rowCustomersRow);
                 return rowCustomersRow;
             }
-            
+
             public CustomersRow FindByCustomerID(string CustomerID) {
                 return ((CustomersRow)(this.Rows.Find(new object[] {
                             CustomerID})));
             }
-            
+
             public virtual System.Collections.IEnumerator GetEnumerator() {
                 return this.Rows.GetEnumerator();
             }
-            
+
             public override System.Data.DataTable Clone() {
                 CustomersDataTable cln = ((CustomersDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
-            
+
             protected override System.Data.DataTable CreateInstance() {
                 return new CustomersDataTable();
             }
-            
+
             internal void InitVars() {
                 this.columnCustomerID = base.Columns["CustomerID"];
                 this.columnCompanyName = base.Columns["CompanyName"];
@@ -438,7 +438,7 @@ namespace WPFWithWFAndDatabinding {
                 this.columnPhone = base.Columns["Phone"];
                 this.columnFax = base.Columns["Fax"];
             }
-            
+
             private void InitClass() {
                 this.columnCustomerID = new System.Data.DataColumn("CustomerID", typeof(string), null, System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerID);
@@ -479,51 +479,51 @@ namespace WPFWithWFAndDatabinding {
                 this.columnPhone.MaxLength = 24;
                 this.columnFax.MaxLength = 24;
             }
-            
+
             public CustomersRow NewCustomersRow() {
                 return ((CustomersRow)(this.NewRow()));
             }
-            
+
             protected override System.Data.DataRow NewRowFromBuilder(System.Data.DataRowBuilder builder) {
                 return new CustomersRow(builder);
             }
-            
+
             protected override System.Type GetRowType() {
                 return typeof(CustomersRow);
             }
-            
+
             protected override void OnRowChanged(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
                 if ((this.CustomersRowChanged != null)) {
                     this.CustomersRowChanged(this, new CustomersRowChangeEvent(((CustomersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowChanging(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
                 if ((this.CustomersRowChanging != null)) {
                     this.CustomersRowChanging(this, new CustomersRowChangeEvent(((CustomersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowDeleted(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
                 if ((this.CustomersRowDeleted != null)) {
                     this.CustomersRowDeleted(this, new CustomersRowChangeEvent(((CustomersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowDeleting(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
                 if ((this.CustomersRowDeleting != null)) {
                     this.CustomersRowDeleting(this, new CustomersRowChangeEvent(((CustomersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             public void RemoveCustomersRow(CustomersRow row) {
                 this.Rows.Remove(row);
             }
-            
+
             public static System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(System.Xml.Schema.XmlSchemaSet xs) {
                 System.Xml.Schema.XmlSchemaComplexType type = new System.Xml.Schema.XmlSchemaComplexType();
                 System.Xml.Schema.XmlSchemaSequence sequence = new System.Xml.Schema.XmlSchemaSequence();
@@ -552,46 +552,46 @@ namespace WPFWithWFAndDatabinding {
                 return type;
             }
         }
-        
+
         [System.Serializable()]
         [System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class OrdersDataTable : System.Data.DataTable, System.Collections.IEnumerable {
-            
+
             private System.Data.DataColumn columnOrderID;
-            
+
             private System.Data.DataColumn columnCustomerID;
-            
+
             private System.Data.DataColumn columnEmployeeID;
-            
+
             private System.Data.DataColumn columnOrderDate;
-            
+
             private System.Data.DataColumn columnRequiredDate;
-            
+
             private System.Data.DataColumn columnShippedDate;
-            
+
             private System.Data.DataColumn columnShipVia;
-            
+
             private System.Data.DataColumn columnFreight;
-            
+
             private System.Data.DataColumn columnShipName;
-            
+
             private System.Data.DataColumn columnShipAddress;
-            
+
             private System.Data.DataColumn columnShipCity;
-            
+
             private System.Data.DataColumn columnShipRegion;
-            
+
             private System.Data.DataColumn columnShipPostalCode;
-            
+
             private System.Data.DataColumn columnShipCountry;
-            
+
             public OrdersDataTable() {
                 this.TableName = "Orders";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
             }
-            
+
             internal OrdersDataTable(System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
@@ -606,121 +606,121 @@ namespace WPFWithWFAndDatabinding {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-            
-            protected OrdersDataTable(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : 
+
+            protected OrdersDataTable(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) :
                     base(info, context) {
                 this.InitVars();
             }
-            
+
             public System.Data.DataColumn OrderIDColumn {
                 get {
                     return this.columnOrderID;
                 }
             }
-            
+
             public System.Data.DataColumn CustomerIDColumn {
                 get {
                     return this.columnCustomerID;
                 }
             }
-            
+
             public System.Data.DataColumn EmployeeIDColumn {
                 get {
                     return this.columnEmployeeID;
                 }
             }
-            
+
             public System.Data.DataColumn OrderDateColumn {
                 get {
                     return this.columnOrderDate;
                 }
             }
-            
+
             public System.Data.DataColumn RequiredDateColumn {
                 get {
                     return this.columnRequiredDate;
                 }
             }
-            
+
             public System.Data.DataColumn ShippedDateColumn {
                 get {
                     return this.columnShippedDate;
                 }
             }
-            
+
             public System.Data.DataColumn ShipViaColumn {
                 get {
                     return this.columnShipVia;
                 }
             }
-            
+
             public System.Data.DataColumn FreightColumn {
                 get {
                     return this.columnFreight;
                 }
             }
-            
+
             public System.Data.DataColumn ShipNameColumn {
                 get {
                     return this.columnShipName;
                 }
             }
-            
+
             public System.Data.DataColumn ShipAddressColumn {
                 get {
                     return this.columnShipAddress;
                 }
             }
-            
+
             public System.Data.DataColumn ShipCityColumn {
                 get {
                     return this.columnShipCity;
                 }
             }
-            
+
             public System.Data.DataColumn ShipRegionColumn {
                 get {
                     return this.columnShipRegion;
                 }
             }
-            
+
             public System.Data.DataColumn ShipPostalCodeColumn {
                 get {
                     return this.columnShipPostalCode;
                 }
             }
-            
+
             public System.Data.DataColumn ShipCountryColumn {
                 get {
                     return this.columnShipCountry;
                 }
             }
-            
+
             [System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
                     return this.Rows.Count;
                 }
             }
-            
+
             public OrdersRow this[int index] {
                 get {
                     return ((OrdersRow)(this.Rows[index]));
                 }
             }
-            
+
             public event OrdersRowChangeEventHandler OrdersRowChanged;
-            
+
             public event OrdersRowChangeEventHandler OrdersRowChanging;
-            
+
             public event OrdersRowChangeEventHandler OrdersRowDeleted;
-            
+
             public event OrdersRowChangeEventHandler OrdersRowDeleting;
-            
+
             public void AddOrdersRow(OrdersRow row) {
                 this.Rows.Add(row);
             }
-            
+
             public OrdersRow AddOrdersRow(CustomersRow parentCustomersRowByFK_Orders_Customers, int EmployeeID, System.DateTime OrderDate, System.DateTime RequiredDate, System.DateTime ShippedDate, int ShipVia, decimal Freight, string ShipName, string ShipAddress, string ShipCity, string ShipRegion, string ShipPostalCode, string ShipCountry) {
                 OrdersRow rowOrdersRow = ((OrdersRow)(this.NewRow()));
                 rowOrdersRow.ItemArray = new object[] {
@@ -741,26 +741,26 @@ namespace WPFWithWFAndDatabinding {
                 this.Rows.Add(rowOrdersRow);
                 return rowOrdersRow;
             }
-            
+
             public OrdersRow FindByOrderID(int OrderID) {
                 return ((OrdersRow)(this.Rows.Find(new object[] {
                             OrderID})));
             }
-            
+
             public virtual System.Collections.IEnumerator GetEnumerator() {
                 return this.Rows.GetEnumerator();
             }
-            
+
             public override System.Data.DataTable Clone() {
                 OrdersDataTable cln = ((OrdersDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
-            
+
             protected override System.Data.DataTable CreateInstance() {
                 return new OrdersDataTable();
             }
-            
+
             internal void InitVars() {
                 this.columnOrderID = base.Columns["OrderID"];
                 this.columnCustomerID = base.Columns["CustomerID"];
@@ -777,7 +777,7 @@ namespace WPFWithWFAndDatabinding {
                 this.columnShipPostalCode = base.Columns["ShipPostalCode"];
                 this.columnShipCountry = base.Columns["ShipCountry"];
             }
-            
+
             private void InitClass() {
                 this.columnOrderID = new System.Data.DataColumn("OrderID", typeof(int), null, System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderID);
@@ -821,51 +821,51 @@ namespace WPFWithWFAndDatabinding {
                 this.columnShipPostalCode.MaxLength = 10;
                 this.columnShipCountry.MaxLength = 15;
             }
-            
+
             public OrdersRow NewOrdersRow() {
                 return ((OrdersRow)(this.NewRow()));
             }
-            
+
             protected override System.Data.DataRow NewRowFromBuilder(System.Data.DataRowBuilder builder) {
                 return new OrdersRow(builder);
             }
-            
+
             protected override System.Type GetRowType() {
                 return typeof(OrdersRow);
             }
-            
+
             protected override void OnRowChanged(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
                 if ((this.OrdersRowChanged != null)) {
                     this.OrdersRowChanged(this, new OrdersRowChangeEvent(((OrdersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowChanging(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
                 if ((this.OrdersRowChanging != null)) {
                     this.OrdersRowChanging(this, new OrdersRowChangeEvent(((OrdersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowDeleted(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
                 if ((this.OrdersRowDeleted != null)) {
                     this.OrdersRowDeleted(this, new OrdersRowChangeEvent(((OrdersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             protected override void OnRowDeleting(System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
                 if ((this.OrdersRowDeleting != null)) {
                     this.OrdersRowDeleting(this, new OrdersRowChangeEvent(((OrdersRow)(e.Row)), e.Action));
                 }
             }
-            
+
             public void RemoveOrdersRow(OrdersRow row) {
                 this.Rows.Remove(row);
             }
-            
+
             public static System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(System.Xml.Schema.XmlSchemaSet xs) {
                 System.Xml.Schema.XmlSchemaComplexType type = new System.Xml.Schema.XmlSchemaComplexType();
                 System.Xml.Schema.XmlSchemaSequence sequence = new System.Xml.Schema.XmlSchemaSequence();
@@ -894,16 +894,16 @@ namespace WPFWithWFAndDatabinding {
                 return type;
             }
         }
-        
+
         public partial class CustomersRow : System.Data.DataRow {
-            
+
             private CustomersDataTable tableCustomers;
-            
-            internal CustomersRow(System.Data.DataRowBuilder rb) : 
+
+            internal CustomersRow(System.Data.DataRowBuilder rb) :
                     base(rb) {
                 this.tableCustomers = ((CustomersDataTable)(this.Table));
             }
-            
+
             public string CustomerID {
                 get {
                     return ((string)(this[this.tableCustomers.CustomerIDColumn]));
@@ -912,7 +912,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.CustomerIDColumn] = value;
                 }
             }
-            
+
             public string CompanyName {
                 get {
                     return ((string)(this[this.tableCustomers.CompanyNameColumn]));
@@ -921,7 +921,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.CompanyNameColumn] = value;
                 }
             }
-            
+
             public string ContactName {
                 get {
                     try {
@@ -935,7 +935,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.ContactNameColumn] = value;
                 }
             }
-            
+
             public string ContactTitle {
                 get {
                     try {
@@ -949,7 +949,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.ContactTitleColumn] = value;
                 }
             }
-            
+
             public string Address {
                 get {
                     try {
@@ -963,7 +963,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.AddressColumn] = value;
                 }
             }
-            
+
             public string City {
                 get {
                     try {
@@ -977,7 +977,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.CityColumn] = value;
                 }
             }
-            
+
             public string Region {
                 get {
                     try {
@@ -991,7 +991,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.RegionColumn] = value;
                 }
             }
-            
+
             public string PostalCode {
                 get {
                     try {
@@ -1005,7 +1005,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.PostalCodeColumn] = value;
                 }
             }
-            
+
             public string Country {
                 get {
                     try {
@@ -1019,7 +1019,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.CountryColumn] = value;
                 }
             }
-            
+
             public string Phone {
                 get {
                     try {
@@ -1033,7 +1033,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.PhoneColumn] = value;
                 }
             }
-            
+
             public string Fax {
                 get {
                     try {
@@ -1047,93 +1047,93 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableCustomers.FaxColumn] = value;
                 }
             }
-            
+
             public bool IsContactNameNull() {
                 return this.IsNull(this.tableCustomers.ContactNameColumn);
             }
-            
+
             public void SetContactNameNull() {
                 this[this.tableCustomers.ContactNameColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsContactTitleNull() {
                 return this.IsNull(this.tableCustomers.ContactTitleColumn);
             }
-            
+
             public void SetContactTitleNull() {
                 this[this.tableCustomers.ContactTitleColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsAddressNull() {
                 return this.IsNull(this.tableCustomers.AddressColumn);
             }
-            
+
             public void SetAddressNull() {
                 this[this.tableCustomers.AddressColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsCityNull() {
                 return this.IsNull(this.tableCustomers.CityColumn);
             }
-            
+
             public void SetCityNull() {
                 this[this.tableCustomers.CityColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsRegionNull() {
                 return this.IsNull(this.tableCustomers.RegionColumn);
             }
-            
+
             public void SetRegionNull() {
                 this[this.tableCustomers.RegionColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsPostalCodeNull() {
                 return this.IsNull(this.tableCustomers.PostalCodeColumn);
             }
-            
+
             public void SetPostalCodeNull() {
                 this[this.tableCustomers.PostalCodeColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsCountryNull() {
                 return this.IsNull(this.tableCustomers.CountryColumn);
             }
-            
+
             public void SetCountryNull() {
                 this[this.tableCustomers.CountryColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsPhoneNull() {
                 return this.IsNull(this.tableCustomers.PhoneColumn);
             }
-            
+
             public void SetPhoneNull() {
                 this[this.tableCustomers.PhoneColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsFaxNull() {
                 return this.IsNull(this.tableCustomers.FaxColumn);
             }
-            
+
             public void SetFaxNull() {
                 this[this.tableCustomers.FaxColumn] = System.Convert.DBNull;
             }
-            
+
             public OrdersRow[] GetOrdersRows() {
                 return ((OrdersRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Orders_Customers"])));
             }
         }
-        
+
         public partial class OrdersRow : System.Data.DataRow {
-            
+
             private OrdersDataTable tableOrders;
-            
-            internal OrdersRow(System.Data.DataRowBuilder rb) : 
+
+            internal OrdersRow(System.Data.DataRowBuilder rb) :
                     base(rb) {
                 this.tableOrders = ((OrdersDataTable)(this.Table));
             }
-            
+
             public int OrderID {
                 get {
                     return ((int)(this[this.tableOrders.OrderIDColumn]));
@@ -1142,7 +1142,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.OrderIDColumn] = value;
                 }
             }
-            
+
             public string CustomerID {
                 get {
                     try {
@@ -1156,7 +1156,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.CustomerIDColumn] = value;
                 }
             }
-            
+
             public int EmployeeID {
                 get {
                     try {
@@ -1170,7 +1170,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.EmployeeIDColumn] = value;
                 }
             }
-            
+
             public System.DateTime OrderDate {
                 get {
                     try {
@@ -1184,7 +1184,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.OrderDateColumn] = value;
                 }
             }
-            
+
             public System.DateTime RequiredDate {
                 get {
                     try {
@@ -1198,7 +1198,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.RequiredDateColumn] = value;
                 }
             }
-            
+
             public System.DateTime ShippedDate {
                 get {
                     try {
@@ -1212,7 +1212,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShippedDateColumn] = value;
                 }
             }
-            
+
             public int ShipVia {
                 get {
                     try {
@@ -1226,7 +1226,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipViaColumn] = value;
                 }
             }
-            
+
             public decimal Freight {
                 get {
                     try {
@@ -1240,7 +1240,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.FreightColumn] = value;
                 }
             }
-            
+
             public string ShipName {
                 get {
                     try {
@@ -1254,7 +1254,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipNameColumn] = value;
                 }
             }
-            
+
             public string ShipAddress {
                 get {
                     try {
@@ -1268,7 +1268,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipAddressColumn] = value;
                 }
             }
-            
+
             public string ShipCity {
                 get {
                     try {
@@ -1282,7 +1282,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipCityColumn] = value;
                 }
             }
-            
+
             public string ShipRegion {
                 get {
                     try {
@@ -1296,7 +1296,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipRegionColumn] = value;
                 }
             }
-            
+
             public string ShipPostalCode {
                 get {
                     try {
@@ -1310,7 +1310,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipPostalCodeColumn] = value;
                 }
             }
-            
+
             public string ShipCountry {
                 get {
                     try {
@@ -1324,7 +1324,7 @@ namespace WPFWithWFAndDatabinding {
                     this[this.tableOrders.ShipCountryColumn] = value;
                 }
             }
-            
+
             public CustomersRow CustomersRow {
                 get {
                     return ((CustomersRow)(this.GetParentRow(this.Table.ParentRelations["FK_Orders_Customers"])));
@@ -1333,153 +1333,153 @@ namespace WPFWithWFAndDatabinding {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Orders_Customers"]);
                 }
             }
-            
+
             public bool IsCustomerIDNull() {
                 return this.IsNull(this.tableOrders.CustomerIDColumn);
             }
-            
+
             public void SetCustomerIDNull() {
                 this[this.tableOrders.CustomerIDColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsEmployeeIDNull() {
                 return this.IsNull(this.tableOrders.EmployeeIDColumn);
             }
-            
+
             public void SetEmployeeIDNull() {
                 this[this.tableOrders.EmployeeIDColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsOrderDateNull() {
                 return this.IsNull(this.tableOrders.OrderDateColumn);
             }
-            
+
             public void SetOrderDateNull() {
                 this[this.tableOrders.OrderDateColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsRequiredDateNull() {
                 return this.IsNull(this.tableOrders.RequiredDateColumn);
             }
-            
+
             public void SetRequiredDateNull() {
                 this[this.tableOrders.RequiredDateColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShippedDateNull() {
                 return this.IsNull(this.tableOrders.ShippedDateColumn);
             }
-            
+
             public void SetShippedDateNull() {
                 this[this.tableOrders.ShippedDateColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipViaNull() {
                 return this.IsNull(this.tableOrders.ShipViaColumn);
             }
-            
+
             public void SetShipViaNull() {
                 this[this.tableOrders.ShipViaColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsFreightNull() {
                 return this.IsNull(this.tableOrders.FreightColumn);
             }
-            
+
             public void SetFreightNull() {
                 this[this.tableOrders.FreightColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipNameNull() {
                 return this.IsNull(this.tableOrders.ShipNameColumn);
             }
-            
+
             public void SetShipNameNull() {
                 this[this.tableOrders.ShipNameColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipAddressNull() {
                 return this.IsNull(this.tableOrders.ShipAddressColumn);
             }
-            
+
             public void SetShipAddressNull() {
                 this[this.tableOrders.ShipAddressColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipCityNull() {
                 return this.IsNull(this.tableOrders.ShipCityColumn);
             }
-            
+
             public void SetShipCityNull() {
                 this[this.tableOrders.ShipCityColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipRegionNull() {
                 return this.IsNull(this.tableOrders.ShipRegionColumn);
             }
-            
+
             public void SetShipRegionNull() {
                 this[this.tableOrders.ShipRegionColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipPostalCodeNull() {
                 return this.IsNull(this.tableOrders.ShipPostalCodeColumn);
             }
-            
+
             public void SetShipPostalCodeNull() {
                 this[this.tableOrders.ShipPostalCodeColumn] = System.Convert.DBNull;
             }
-            
+
             public bool IsShipCountryNull() {
                 return this.IsNull(this.tableOrders.ShipCountryColumn);
             }
-            
+
             public void SetShipCountryNull() {
                 this[this.tableOrders.ShipCountryColumn] = System.Convert.DBNull;
             }
         }
-        
+
         public class CustomersRowChangeEvent : System.EventArgs {
-            
+
             private CustomersRow eventRow;
-            
+
             private System.Data.DataRowAction eventAction;
-            
+
             public CustomersRowChangeEvent(CustomersRow row, System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-            
+
             public CustomersRow Row {
                 get {
                     return this.eventRow;
                 }
             }
-            
+
             public System.Data.DataRowAction Action {
                 get {
                     return this.eventAction;
                 }
             }
         }
-        
+
         public class OrdersRowChangeEvent : System.EventArgs {
-            
+
             private OrdersRow eventRow;
-            
+
             private System.Data.DataRowAction eventAction;
-            
+
             public OrdersRowChangeEvent(OrdersRow row, System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-            
+
             public OrdersRow Row {
                 get {
                     return this.eventRow;
                 }
             }
-            
+
             public System.Data.DataRowAction Action {
                 get {
                     return this.eventAction;
@@ -1489,8 +1489,8 @@ namespace WPFWithWFAndDatabinding {
     }
 }
 namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
-    
-    
+
+
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.ComponentModel.ToolboxItem(true)]
     [System.ComponentModel.DataObjectAttribute(true)]
@@ -1498,19 +1498,19 @@ namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
         ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class CustomersTableAdapter : System.ComponentModel.Component {
-        
+
         private System.Data.SqlClient.SqlDataAdapter m_adapter;
-        
+
         private System.Data.SqlClient.SqlConnection m_connection;
-        
+
         private System.Data.SqlClient.SqlCommand[] m_commandCollection;
-        
+
         private bool m_clearBeforeFill;
-        
+
         public CustomersTableAdapter() {
             this.m_clearBeforeFill = true;
         }
-        
+
         private System.Data.SqlClient.SqlDataAdapter Adapter {
             get {
                 if ((this.m_adapter == null)) {
@@ -1519,7 +1519,7 @@ namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
                 return this.m_adapter;
             }
         }
-        
+
         internal System.Data.SqlClient.SqlConnection Connection {
             get {
                 if ((this.m_connection == null)) {
@@ -1545,7 +1545,7 @@ namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
                 }
             }
         }
-        
+
         protected System.Data.SqlClient.SqlCommand[] CommandCollection {
             get {
                 if ((this.m_commandCollection == null)) {
@@ -1554,7 +1554,7 @@ namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
                 return this.m_commandCollection;
             }
         }
-        
+
         public bool ClearBeforeFill {
             get {
                 return this.m_clearBeforeFill;
@@ -1563,7 +1563,7 @@ namespace WPFWithWFAndDatabinding.NorthwindDataSetTableAdapters {
                 this.m_clearBeforeFill = value;
             }
         }
-        
+
         private void InitAdapter() {
             this.m_adapter = new System.Data.SqlClient.SqlDataAdapter();
             System.Data.Common.DataTableMapping tableMapping = new System.Data.Common.DataTableMapping();
@@ -1658,12 +1658,12 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
             this.m_adapter.UpdateCommand.Parameters.Add(new System.Data.SqlClient.SqlParameter("@IsNull_Fax", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, 0, 0, "Fax", System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this.m_adapter.UpdateCommand.Parameters.Add(new System.Data.SqlClient.SqlParameter("@Original_Fax", System.Data.SqlDbType.NVarChar, 0, System.Data.ParameterDirection.Input, 0, 0, "Fax", System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
-        
+
         private void InitConnection() {
             this.m_connection = new System.Data.SqlClient.SqlConnection();
             this.m_connection.ConnectionString = WPFWithWFAndDatabinding.Properties.Settings.Default.NorthwindConnectionString;
         }
-        
+
         private void InitCommandCollection() {
             this.m_commandCollection = new System.Data.SqlClient.SqlCommand[1];
             this.m_commandCollection[0] = new System.Data.SqlClient.SqlCommand();
@@ -1672,7 +1672,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 " PostalCode, Country, Phone, Fax FROM dbo.Customers";
             this.m_commandCollection[0].CommandType = System.Data.CommandType.Text;
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Fill, true)]
         public virtual int Fill(NorthwindDataSet.CustomersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
@@ -1682,7 +1682,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual NorthwindDataSet.CustomersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
@@ -1690,24 +1690,24 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-        
+
         public virtual int Update(NorthwindDataSet.CustomersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-        
+
         public virtual int Update(NorthwindDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Customers");
         }
-        
+
         public virtual int Update(System.Data.DataRow dataRow) {
             return this.Adapter.Update(new System.Data.DataRow[] {
                         dataRow});
         }
-        
+
         public virtual int Update(System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(string Original_CustomerID, string Original_CompanyName, string Original_ContactName, string Original_ContactTitle, string Original_Address, string Original_City, string Original_Region, string Original_PostalCode, string Original_Country, string Original_Phone, string Original_Fax) {
             if ((Original_CustomerID == null)) {
@@ -1805,7 +1805,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 }
             }
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(string CustomerID, string CompanyName, string ContactName, string ContactTitle, string Address, string City, string Region, string PostalCode, string Country, string Phone, string Fax) {
             if ((CustomerID == null)) {
@@ -1885,30 +1885,30 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 }
             }
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string CustomerID, 
-                    string CompanyName, 
-                    string ContactName, 
-                    string ContactTitle, 
-                    string Address, 
-                    string City, 
-                    string Region, 
-                    string PostalCode, 
-                    string Country, 
-                    string Phone, 
-                    string Fax, 
-                    string Original_CustomerID, 
-                    string Original_CompanyName, 
-                    string Original_ContactName, 
-                    string Original_ContactTitle, 
-                    string Original_Address, 
-                    string Original_City, 
-                    string Original_Region, 
-                    string Original_PostalCode, 
-                    string Original_Country, 
-                    string Original_Phone, 
+                    string CustomerID,
+                    string CompanyName,
+                    string ContactName,
+                    string ContactTitle,
+                    string Address,
+                    string City,
+                    string Region,
+                    string PostalCode,
+                    string Country,
+                    string Phone,
+                    string Fax,
+                    string Original_CustomerID,
+                    string Original_CompanyName,
+                    string Original_ContactName,
+                    string Original_ContactTitle,
+                    string Original_Address,
+                    string Original_City,
+                    string Original_Region,
+                    string Original_PostalCode,
+                    string Original_Country,
+                    string Original_Phone,
                     string Original_Fax) {
             if ((CustomerID == null)) {
                 throw new System.ArgumentNullException("CustomerID");
@@ -2072,7 +2072,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
             }
         }
     }
-    
+
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.ComponentModel.ToolboxItem(true)]
     [System.ComponentModel.DataObjectAttribute(true)]
@@ -2080,19 +2080,19 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
         ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class OrdersTableAdapter : System.ComponentModel.Component {
-        
+
         private System.Data.SqlClient.SqlDataAdapter m_adapter;
-        
+
         private System.Data.SqlClient.SqlConnection m_connection;
-        
+
         private System.Data.SqlClient.SqlCommand[] m_commandCollection;
-        
+
         private bool m_clearBeforeFill;
-        
+
         public OrdersTableAdapter() {
             this.m_clearBeforeFill = true;
         }
-        
+
         private System.Data.SqlClient.SqlDataAdapter Adapter {
             get {
                 if ((this.m_adapter == null)) {
@@ -2101,7 +2101,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 return this.m_adapter;
             }
         }
-        
+
         internal System.Data.SqlClient.SqlConnection Connection {
             get {
                 if ((this.m_connection == null)) {
@@ -2127,7 +2127,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 }
             }
         }
-        
+
         protected System.Data.SqlClient.SqlCommand[] CommandCollection {
             get {
                 if ((this.m_commandCollection == null)) {
@@ -2136,7 +2136,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 return this.m_commandCollection;
             }
         }
-        
+
         public bool ClearBeforeFill {
             get {
                 return this.m_clearBeforeFill;
@@ -2145,7 +2145,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
                 this.m_clearBeforeFill = value;
             }
         }
-        
+
         private void InitAdapter() {
             this.m_adapter = new System.Data.SqlClient.SqlDataAdapter();
             System.Data.Common.DataTableMapping tableMapping = new System.Data.Common.DataTableMapping();
@@ -2284,12 +2284,12 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
             this.m_adapter.UpdateCommand.Parameters.Add(new System.Data.SqlClient.SqlParameter("@Original_ShipCountry", System.Data.SqlDbType.NVarChar, 0, System.Data.ParameterDirection.Input, 0, 0, "ShipCountry", System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this.m_adapter.UpdateCommand.Parameters.Add(new System.Data.SqlClient.SqlParameter("@OrderID", System.Data.SqlDbType.Int, 4, System.Data.ParameterDirection.Input, 0, 0, "OrderID", System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
-        
+
         private void InitConnection() {
             this.m_connection = new System.Data.SqlClient.SqlConnection();
             this.m_connection.ConnectionString = WPFWithWFAndDatabinding.Properties.Settings.Default.NorthwindConnectionString;
         }
-        
+
         private void InitCommandCollection() {
             this.m_commandCollection = new System.Data.SqlClient.SqlCommand[1];
             this.m_commandCollection[0] = new System.Data.SqlClient.SqlCommand();
@@ -2299,7 +2299,7 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
                 "Country FROM dbo.Orders";
             this.m_commandCollection[0].CommandType = System.Data.CommandType.Text;
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Fill, true)]
         public virtual int Fill(NorthwindDataSet.OrdersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
@@ -2309,7 +2309,7 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual NorthwindDataSet.OrdersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
@@ -2317,24 +2317,24 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-        
+
         public virtual int Update(NorthwindDataSet.OrdersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-        
+
         public virtual int Update(NorthwindDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Orders");
         }
-        
+
         public virtual int Update(System.Data.DataRow dataRow) {
             return this.Adapter.Update(new System.Data.DataRow[] {
                         dataRow});
         }
-        
+
         public virtual int Update(System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(int Original_OrderID, string Original_CustomerID, System.Nullable<int> Original_EmployeeID, System.Nullable<System.DateTime> Original_OrderDate, System.Nullable<System.DateTime> Original_RequiredDate, System.Nullable<System.DateTime> Original_ShippedDate, System.Nullable<int> Original_ShipVia, System.Nullable<decimal> Original_Freight, string Original_ShipName, string Original_ShipAddress, string Original_ShipCity, string Original_ShipRegion, string Original_ShipPostalCode, string Original_ShipCountry) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_OrderID));
@@ -2453,7 +2453,7 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
                 }
             }
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(string CustomerID, System.Nullable<int> EmployeeID, System.Nullable<System.DateTime> OrderDate, System.Nullable<System.DateTime> RequiredDate, System.Nullable<System.DateTime> ShippedDate, System.Nullable<int> ShipVia, System.Nullable<decimal> Freight, string ShipName, string ShipAddress, string ShipCity, string ShipRegion, string ShipPostalCode, string ShipCountry) {
             if ((CustomerID == null)) {
@@ -2545,36 +2545,36 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
                 }
             }
         }
-        
+
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string CustomerID, 
-                    System.Nullable<int> EmployeeID, 
-                    System.Nullable<System.DateTime> OrderDate, 
-                    System.Nullable<System.DateTime> RequiredDate, 
-                    System.Nullable<System.DateTime> ShippedDate, 
-                    System.Nullable<int> ShipVia, 
-                    System.Nullable<decimal> Freight, 
-                    string ShipName, 
-                    string ShipAddress, 
-                    string ShipCity, 
-                    string ShipRegion, 
-                    string ShipPostalCode, 
-                    string ShipCountry, 
-                    int Original_OrderID, 
-                    string Original_CustomerID, 
-                    System.Nullable<int> Original_EmployeeID, 
-                    System.Nullable<System.DateTime> Original_OrderDate, 
-                    System.Nullable<System.DateTime> Original_RequiredDate, 
-                    System.Nullable<System.DateTime> Original_ShippedDate, 
-                    System.Nullable<int> Original_ShipVia, 
-                    System.Nullable<decimal> Original_Freight, 
-                    string Original_ShipName, 
-                    string Original_ShipAddress, 
-                    string Original_ShipCity, 
-                    string Original_ShipRegion, 
-                    string Original_ShipPostalCode, 
-                    string Original_ShipCountry, 
+                    string CustomerID,
+                    System.Nullable<int> EmployeeID,
+                    System.Nullable<System.DateTime> OrderDate,
+                    System.Nullable<System.DateTime> RequiredDate,
+                    System.Nullable<System.DateTime> ShippedDate,
+                    System.Nullable<int> ShipVia,
+                    System.Nullable<decimal> Freight,
+                    string ShipName,
+                    string ShipAddress,
+                    string ShipCity,
+                    string ShipRegion,
+                    string ShipPostalCode,
+                    string ShipCountry,
+                    int Original_OrderID,
+                    string Original_CustomerID,
+                    System.Nullable<int> Original_EmployeeID,
+                    System.Nullable<System.DateTime> Original_OrderDate,
+                    System.Nullable<System.DateTime> Original_RequiredDate,
+                    System.Nullable<System.DateTime> Original_ShippedDate,
+                    System.Nullable<int> Original_ShipVia,
+                    System.Nullable<decimal> Original_Freight,
+                    string Original_ShipName,
+                    string Original_ShipAddress,
+                    string Original_ShipCity,
+                    string Original_ShipRegion,
+                    string Original_ShipPostalCode,
+                    string Original_ShipCountry,
                     int OrderID) {
             if ((CustomerID == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = System.DBNull.Value;

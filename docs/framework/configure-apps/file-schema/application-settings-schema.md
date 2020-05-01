@@ -39,7 +39,7 @@ This element defines a setting. It has the following attributes.
 | Attribute        | Description |
 | ---------------- | ----------- |
 | **name**         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
-| **serializedAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
+| **serializeAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
 
 ## \<value> element
 

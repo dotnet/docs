@@ -16,7 +16,7 @@ namespace WindowsApplication1
 
     public partial class Window1 : Window
     {
- 
+
       private void WindowLoaded(object sender, EventArgs e)
       {
         MakeExpander();
@@ -47,14 +47,14 @@ namespace WindowsApplication1
 	//<SnippetBulletDecorator>
         BulletDecorator bp = new BulletDecorator();
         Image i = new Image();
-        BitmapImage bi= new BitmapImage(); 
+        BitmapImage bi= new BitmapImage();
         bi.UriSource = new Uri(@"pack://application:,,/images/icon.jpg");
         i.Source = bi;
         i.Width = 10;
         bp.Bullet = i;
         TextBlock tb = new TextBlock();
         tb.Text = "My Expander";
-        tb.Margin = new Thickness(20,0,0,0);     
+        tb.Margin = new Thickness(20,0,0,0);
         bp.Child = tb;
         //</SnippetBulletDecorator>
         exp.Header = bp;
@@ -79,7 +79,7 @@ namespace WindowsApplication1
         scr.Height = 50;
         exp.Content = scr;
 
-        exp.Width=200;  
+        exp.Width=200;
         exp.HorizontalContentAlignment= HorizontalAlignment.Stretch;
         //</SnippetCreateExpanderCode>
         //Insert Expander into the StackPanel and add it to the

@@ -11,17 +11,17 @@ namespace Example
     [ServiceContract]
     public interface ISampleInterface
     {
-        // No data contract is required since both the parameter 
+        // No data contract is required since both the parameter
         // and return types are primitive types.
         [OperationContract]
         double SquareRoot(int root);
 
-        // No Data Contract required because both parameter and return 
+        // No Data Contract required because both parameter and return
         // types are marked with the SerializableAttribute attribute.
         [OperationContract]
         System.Drawing.Bitmap GetPicture(System.Uri pictureUri);
 
-        // The MyTypes.PurchaseOrder is a complex type, and thus 
+        // The MyTypes.PurchaseOrder is a complex type, and thus
         // requires a data contract.
         [OperationContract]
         bool ApprovePurchaseOrder(MyTypes.PurchaseOrder po);
@@ -165,7 +165,7 @@ namespace ForwardCompatible
 namespace VersionTolerantCallback
 {
     //<snippet9>
-    // The following Data Contract is version 2 of an earlier data 
+    // The following Data Contract is version 2 of an earlier data
     // contract.
     [DataContract]
     public class Address
@@ -176,14 +176,14 @@ namespace VersionTolerantCallback
         [DataMember]
         public string State;
 
-        // This data member was added in version 2, and thus may be missing 
-        // in the incoming data if the data conforms to version 1 of the 
+        // This data member was added in version 2, and thus may be missing
+        // in the incoming data if the data conforms to version 1 of the
         // Data Contract. Use the callback to add a default for this case.
         [DataMember(Order=2)]
         public string CountryRegion;
 
         // This method is used as a kind of constructor to initialize
-        // a default value for the CountryRegion data member before 
+        // a default value for the CountryRegion data member before
         // deserialization.
         [OnDeserializing]
         private void setDefaultCountryRegion(StreamingContext c)

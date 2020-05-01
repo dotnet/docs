@@ -21,12 +21,12 @@ namespace SDKSample
             StreamGeometry geometry = new StreamGeometry();
             geometry.FillRule = FillRule.EvenOdd;
 
-            // Open a StreamGeometryContext that can be used to describe this StreamGeometry 
+            // Open a StreamGeometryContext that can be used to describe this StreamGeometry
             // object's contents.
             using (StreamGeometryContext ctx = geometry.Open())
             {
-                
-                // Begin the triangle at the point specified. Notice that the shape is set to 
+
+                // Begin the triangle at the point specified. Notice that the shape is set to
                 // be closed so only two lines need to be specified below to make the triangle.
                 ctx.BeginFigure(new Point(10, 100), true /* is filled */, true /* is closed */);
 

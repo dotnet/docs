@@ -20,7 +20,7 @@ None. This change should make version detection intuitive rather than obtuse.
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

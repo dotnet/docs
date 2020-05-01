@@ -66,7 +66,7 @@ namespace csrefKeywordsMethodParams
 
     class ImplementationClass : ISampleInterface
     {
-        // Explicit interface member implementation: 
+        // Explicit interface member implementation:
         void ISampleInterface.SampleMethod()
         {
             // Method implementation.
@@ -99,7 +99,7 @@ namespace csrefKeywordsMethodParams
           set;
        }
 
-       double Distance 
+       double Distance
        {
            get;
        }
@@ -120,9 +120,9 @@ namespace csrefKeywordsMethodParams
        public int Y { get; set; }
 
        // Property implementation
-       public double Distance => 
+       public double Distance =>
           Math.Sqrt(X * X + Y * Y);
-       
+
     }
 
     class MainClass
@@ -164,7 +164,7 @@ namespace csrefKeywordsMethodParams
                             where word[0] == 'g'
                             select word;
 
-            // Because each element in the sequence is a string, 
+            // Because each element in the sequence is a string,
             // not an anonymous type, var is optional here also.
             foreach (string s in wordQuery)
             {
@@ -177,7 +177,7 @@ namespace csrefKeywordsMethodParams
                             where cust.City == "Phoenix"
                             select new { cust.Name, cust.Phone };
 
-            // var must be used because each item 
+            // var must be used because each item
             // in the sequence is an anonymous type
             foreach (var item in custQuery)
             {

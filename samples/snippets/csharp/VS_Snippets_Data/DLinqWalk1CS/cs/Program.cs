@@ -32,7 +32,7 @@ namespace cs_walkthru1
 
     public class snippet3
     {
-     
+
 // <Snippet3>
 private string _CustomerID;
 [Column(IsPrimaryKey=true, Storage="_CustomerID")]

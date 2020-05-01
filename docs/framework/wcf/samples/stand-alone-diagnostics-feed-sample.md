@@ -40,7 +40,7 @@ WebServiceHost host = new WebServiceHost(typeof(ProcessService), new Uri("http:/
  Alternatively, you can use <xref:System.ServiceModel.Activation.WebServiceHostFactory> from within an IIS-hosted .svc file to provide equivalent functionality (this technique is not demonstrated in this sample code).  
   
 ```xml
-<%@ ServiceHost Language="C#|VB" Debug="true" Service="ProcessService" %>
+<% @ServiceHost Language="C#|VB" Debug="true" Service="ProcessService" %>
 ```
   
  Because this service receives requests using the standard HTTP GET, you can use any RSS or ATOM-aware client to access the service. For example, you can view the output of this service by navigating to `http://localhost:8000/diagnostics/feed/?format=atom` or `http://localhost:8000/diagnostics/feed/?format=rss` in an RSS-aware browser.

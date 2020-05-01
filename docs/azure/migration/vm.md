@@ -17,9 +17,10 @@ Learn how to create a virtual machine and publish your app to it: [Publish to an
 
 These tutorials demonstrate the steps to create (or migrate) a virtual machine, publish your web application to it, and other tasks that may be required to support your application in Azure.
 
-- Create a virtual machine for your ASP.NET application in Azure using one of the following two options:
+- Create a virtual machine for your ASP.NET application in Azure using one of the following options:
   - [Create a new virtual machine for ASP.NET Applications](https://go.microsoft.com/fwlink/?linkid=863237)
-  - [Migrate an existing on-premises virtual machine](https://docs.microsoft.com/azure/site-recovery/tutorial-migrate-on-premises-to-azure)
+  - [Migrate an existing on-premises VMWare virtual machine](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware)
+  - [Migrate an existing on-premises Hyper-V virtual machine](https://docs.microsoft.com/azure/migrate/tutorial-migrate-hyper-v)
 - [Publish your app using Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240)
 - [Create a secure virtual network for your VMs](https://docs.microsoft.com/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [Create a CI/CD pipeline for your application](https://docs.microsoft.com/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)

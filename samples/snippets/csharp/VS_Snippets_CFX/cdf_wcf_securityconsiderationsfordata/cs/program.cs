@@ -16,7 +16,7 @@ namespace SecurityConsiderationsForData
         {
             try
             {
-//              PermissionsHelper.InternetZone corresponds to the PermissionSet for partial trust. 
+//              PermissionsHelper.InternetZone corresponds to the PermissionSet for partial trust.
 //              PermissionsHelper.InternetZone.PermitOnly();
                 MemoryStream memoryStream = new MemoryStream();
                 new DataContractSerializer(typeof(DataNode)).

@@ -8,7 +8,7 @@ namespace SDKSample
     //<SnippetSingletonPanel>
     public class SingletonPanel : StackPanel
     {
-        //private UIElementCollection _children; 
+        //private UIElementCollection _children;
         private FrameworkElement _child;
 
         public SingletonPanel()

@@ -53,9 +53,9 @@ namespace SDKSample
                   }
                   break;
               //</SnippetCollectionViewNext>
-                  
+
               o = myCollectionView.CurrentItem as Order;
-              // TODO: do something with the current Order o 
+              // TODO: do something with the current Order o
           }
       }
     //</SnippetOnButton>

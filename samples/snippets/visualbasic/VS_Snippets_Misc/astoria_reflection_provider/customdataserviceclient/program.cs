@@ -17,7 +17,7 @@ namespace CustomDataServiceClient
             Order selectedOrder = GetOrderWithItems(context);
 
             PrintItems(selectedOrder);
-           
+
             Item selectedItem = selectedOrder.Items.FirstOrDefault();
             selectedItem.Quantity += 1;
             context.UpdateObject(selectedItem);
@@ -40,7 +40,7 @@ namespace CustomDataServiceClient
             PrintItems(selectedOrder);
         }
         static Order GetOrderWithItems(OrderItemData context)
-        {  
+        {
             var selectedOrder = (from orders in context.Orders.Expand("Items")
                                  select orders).FirstOrDefault();
             return selectedOrder;

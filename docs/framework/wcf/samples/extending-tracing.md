@@ -57,8 +57,8 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
         </add>  
     </sharedListeners>  
     <trace autoflush="true" />  
-</system.diagnostics>....  
-....  
+</system.diagnostics>
+....
 ```  
   
 ### Correlating Activities  

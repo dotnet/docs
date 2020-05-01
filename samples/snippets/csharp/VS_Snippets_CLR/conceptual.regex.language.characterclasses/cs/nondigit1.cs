@@ -6,9 +6,9 @@ public class Example
 {
    public static void Main()
    {
-      string pattern = @"^\D\d{1,5}\D*$"; 
-      string[] inputs = { "A1039C", "AA0001", "C18A", "Y938518" }; 
-      
+      string pattern = @"^\D\d{1,5}\D*$";
+      string[] inputs = { "A1039C", "AA0001", "C18A", "Y938518" };
+
       foreach (string input in inputs)
       {
          if (Regex.IsMatch(input, pattern))

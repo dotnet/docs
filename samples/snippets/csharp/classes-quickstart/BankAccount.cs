@@ -8,7 +8,7 @@ namespace classes
         public string Number { get; }
         public string Owner { get; set; }
 #region BalanceComputation
-        public decimal Balance 
+        public decimal Balance
         {
             get
             {

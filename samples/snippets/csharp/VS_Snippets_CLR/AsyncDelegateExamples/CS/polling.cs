@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncMain 
+    public class AsyncMain
     {
         static void Main() {
             // The asynchronous method puts the thread id here.
@@ -15,9 +15,9 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
 
             // Create the delegate.
             AsyncMethodCaller caller = new AsyncMethodCaller(ad.TestMethod);
-       
+
             // Initiate the asychronous call.
-            IAsyncResult result = caller.BeginInvoke(3000, 
+            IAsyncResult result = caller.BeginInvoke(3000,
                 out threadId, null, null);
 
             // Poll while simulating work.

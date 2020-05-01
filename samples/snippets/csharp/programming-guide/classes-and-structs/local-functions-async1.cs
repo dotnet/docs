@@ -14,17 +14,17 @@ class Example
       Console.WriteLine("Executing GetMultipleAsync...");
       if (secondsDelay < 0 || secondsDelay > 5)
          throw new ArgumentOutOfRangeException("secondsDelay cannot exceed 5."); // Line 16
-         
+
       await Task.Delay(secondsDelay * 1000);
       return secondsDelay * new Random().Next(2,10);
-   } 
+   }
 }
 // The example displays the following output:
 //    Executing GetMultipleAsync...
 //
-//    Unhandled Exception: System.AggregateException: 
+//    Unhandled Exception: System.AggregateException:
 //         One or more errors occurred. (Specified argument was out of the range of valid values.
-//    Parameter name: secondsDelay cannot exceed 5.) ---> 
+//    Parameter name: secondsDelay cannot exceed 5.) --->
 //         System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
 //    Parameter name: secondsDelay cannot exceed 5.
 //       at Example.<GetMultiple>d__1.MoveNext() in Program.cs:line 16

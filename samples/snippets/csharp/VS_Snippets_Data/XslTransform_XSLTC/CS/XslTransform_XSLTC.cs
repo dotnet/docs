@@ -12,6 +12,6 @@ class Example
 
         // Execute the transformation and output the results to a file.
         xslt.Transform("books.xml", "discount_books.html");
-    } 
+    }
 }
 //</snippet1>

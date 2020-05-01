@@ -122,11 +122,11 @@ namespace Client
 
             //<snippet13>
             itcc.LocalIssuerBinding = new WSHttpBinding("LocalIssuerBinding");
-            //</snippet13>            
+            //</snippet13>
 
             //<snippet32>
             SynchronousReceiveBehavior myEndpointBehavior = new SynchronousReceiveBehavior();
-            //<snippet14>            
+            //<snippet14>
             itcc.LocalIssuerChannelBehaviors.Add(myEndpointBehavior);
             //</snippet14>
             //</snippet32>

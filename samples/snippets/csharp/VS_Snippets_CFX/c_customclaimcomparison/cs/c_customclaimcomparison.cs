@@ -48,7 +48,7 @@ namespace Samples
             // into an instance of MyResourceType
             MyResourceType rhs = obj as MyResourceType;
 
-            // If the object we're being asked to compare ourselves to 
+            // If the object we're being asked to compare ourselves to
             // isn't an instance of MyResourceType then return false
             if (rhs == null)
                 return false;
@@ -136,9 +136,9 @@ namespace Snippets
         {
             //<snippet8>
             if (ReferenceEquals(this, obj)) return true;
-            //</snippet8>   
+            //</snippet8>
             else
                 return true;
         }
-    }   
+    }
 }

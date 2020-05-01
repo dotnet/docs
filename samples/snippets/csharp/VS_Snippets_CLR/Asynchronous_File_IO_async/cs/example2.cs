@@ -26,15 +26,15 @@ namespace WpfApplication1
             }
         }
 
-        public async Task CopyFilesAsync(StreamReader Source, StreamWriter Destination) 
-        { 
-            char[] buffer = new char[0x1000]; 
-            int numRead; 
-            while ((numRead = await Source.ReadAsync(buffer, 0, buffer.Length)) != 0) 
+        public async Task CopyFilesAsync(StreamReader Source, StreamWriter Destination)
+        {
+            char[] buffer = new char[0x1000];
+            int numRead;
+            while ((numRead = await Source.ReadAsync(buffer, 0, buffer.Length)) != 0)
             {
                 await Destination.WriteAsync(buffer, 0, numRead);
-            } 
-        } 
+            }
+        }
 	// </snippet2>
     }
 }

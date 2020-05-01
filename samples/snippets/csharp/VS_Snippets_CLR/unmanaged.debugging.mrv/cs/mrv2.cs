@@ -4,7 +4,7 @@ using System;
 public class Example
 {
    private static Random rnd;
-   
+
    public static void Main()
    {
       rnd = new Random();

@@ -41,7 +41,7 @@ namespace PrinterStatusSurvey
                      else
                      {
                          TroubleSpotter.SpotTroubleUsingProperties(ref statusReport, pq);
-                     }                 
+                     }
                  }// end for each print queue
              }// end while list of print servers is not yet exhausted
 
@@ -49,7 +49,7 @@ namespace PrinterStatusSurvey
             Console.WriteLine(statusReport);
             Console.WriteLine("\nPress Return to continue.");
             Console.ReadLine();
-            
+
             //</SnippetSurveyQueues>
         }//end Main
     }//end Program class
@@ -189,9 +189,9 @@ namespace PrinterStatusSurvey
             {
 		DateTime utcNow = DateTime.UtcNow;
 		Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
-                
+
                 // If now is not within the range of available times . . .
-                if (!((pq.StartTimeOfDay < utcNowAsMinutesAfterMidnight) 
+                if (!((pq.StartTimeOfDay < utcNowAsMinutesAfterMidnight)
                    &&
                    (utcNowAsMinutesAfterMidnight < pq.UntilTimeOfDay)))
                 {

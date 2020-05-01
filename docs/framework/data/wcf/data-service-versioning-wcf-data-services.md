@@ -58,9 +58,8 @@ The Open Data Protocol (OData) enables you to create data services so that clien
 
 |OData Protocol Version|Support introduced in…|
 |-----------------------------------------------------------------------------------|----------------------------|
-|Version 1|-   .NET Framework 3.5 Service Pack 1 (SP1)<br />-   Silverlight version 3|
-|Version 2|-   .NET Framework 4<br />-   An update to .NET Framework 3.5 SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
-|Version 3|-   You can download and install a pre-release version that supports OData version 3 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=203885).|
+|Version 1|- .NET Framework 3.5 Service Pack 1 (SP1)<br />- Silverlight version 3|
+|Version 2|- .NET Framework 4<br />- Silverlight version 4|
 
 ### Metadata Versions
  By default, WCF Data Services uses version 1.1 of CSDL to represent a data model. This is always the case for data models that are based on either a reflection provider or a custom data service provider. However, when the data model is defined by using the Entity Framework, the version of CSDL returned is the same as the version that is used by the Entity Framework. The version of the CSDL is determined by the namespace of the [Schema element (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl).

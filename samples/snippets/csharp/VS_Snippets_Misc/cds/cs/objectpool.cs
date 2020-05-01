@@ -44,7 +44,7 @@ namespace ObjectPoolExample
                         cts.Cancel();
                 });
 
-            ObjectPool<MyClass> pool = new ObjectPool<MyClass> (() => new MyClass());            
+            ObjectPool<MyClass> pool = new ObjectPool<MyClass> (() => new MyClass());
 
             // Create a high demand for MyClass objects.
             Parallel.For(0, 1000000, (i, loopState) =>
@@ -53,11 +53,11 @@ namespace ObjectPoolExample
                     Console.CursorLeft = 0;
                     // This is the bottleneck in our application. All threads in this loop
                     // must serialize their access to the static Console class.
-                    Console.WriteLine("{0:####.####}", mc.GetValue(i));                 
-                    
+                    Console.WriteLine("{0:####.####}", mc.GetValue(i));
+
                     pool.PutObject(mc);
                     if (cts.Token.IsCancellationRequested)
-                        loopState.Stop();                 
+                        loopState.Stop();
                 });
             Console.WriteLine("Press the Enter key to exit.");
             Console.ReadLine();
@@ -82,6 +82,6 @@ namespace ObjectPoolExample
             for (int i = 0; i < Nums.Length; i++)
                 Nums[i] = rand.Next();
         }
-    }   
+    }
 }
 //</snippet04>

@@ -1,10 +1,10 @@
 ﻿//---------------------------------------------------------------------------
-// 
+//
 // File: HtmlFromXamlConverter.cs
 //
 // Copyright (C) Microsoft Corporation.  All rights reserved.
 //
-// Description: Prototype for Xaml - Html conversion 
+// Description: Prototype for Xaml - Html conversion
 //
 //---------------------------------------------------------------------------
 
@@ -508,7 +508,7 @@ namespace SdkSample
 
         // Reader advance helpers
 		// ----------------------
-				 
+				
         /// <summary>
         /// Reads several items from xamlReader skipping all non-significant stuff.
         /// </summary>
@@ -525,7 +525,7 @@ namespace SdkSample
 				Debug.Assert(xamlReader.ReadState == ReadState.Interactive, "Reader is expected to be in Interactive state (" + xamlReader.ReadState + ")");
 				switch (xamlReader.NodeType)
 				{
-				    case XmlNodeType.Element: 
+				    case XmlNodeType.Element:
 				    case XmlNodeType.EndElement:
 				    case XmlNodeType.None:
 				    case XmlNodeType.CDATA:

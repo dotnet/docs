@@ -57,7 +57,7 @@ namespace KeywordsUberProject
     class IfTest
     {
         static void Main()
-        {    
+        {
             //<snippet4>
             Console.Write("Enter a character: ");
             char c = (char)Console.Read();
@@ -240,7 +240,7 @@ namespace KeywordsUberProject
     }
     /*
         Sample Input: 2
-     
+
         Sample Output:
         Coffee sizes: 1=small 2=medium 3=large
         Please enter your selection: 2

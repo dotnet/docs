@@ -20,7 +20,7 @@ namespace Microsoft.WCF.Documentation
     {
       get { return this.id.ToString(); }
     }
-      
+
     #region IExtension<ServiceHost> Members
 
     public void Attach(ServiceHostBase owner)

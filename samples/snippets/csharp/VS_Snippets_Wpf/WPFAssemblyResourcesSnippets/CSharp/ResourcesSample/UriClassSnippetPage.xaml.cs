@@ -28,7 +28,7 @@ namespace ResourcesSample
         {
             //Uri uri = new Uri("pack://application:,,,/File.xaml"); // Absolute
             //Uri uri = new Uri("/File.xaml", UriKind.Absolute);// Relative
-            
+
             TextBox userProvidedUriTextBox = new TextBox();
             userProvidedUriTextBox.Text = "pack://application:,,,/File.xaml";
             Uri uri = new Uri(userProvidedUriTextBox.Text, UriKind.RelativeOrAbsolute);// RelativeOrAbsoluteAbsolute

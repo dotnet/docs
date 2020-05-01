@@ -226,7 +226,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
     var price = predEngine.Predict(size);
 ```
 
-The `CreatePredictionEngine()` method takes an input class and an output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about  [How to make a single prediction](./how-to-guides/single-predict-model-ml-net.md) in the How-to section.
+The `CreatePredictionEngine()` method takes an input class and an output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. For more information, see [Make predictions with a trained model](how-to-guides/machine-learning-model-predictions-ml-net.md).
 
 ### Data models and schema
 

@@ -90,7 +90,7 @@ public class SystemDrawingFontsAndText
 
         stringFormat.FormatFlags = StringFormatFlags.DirectionVertical;
 
-        e.Graphics.DrawString(myText, font, solidBrush, pointF, stringFormat); 
+        e.Graphics.DrawString(myText, font, solidBrush, pointF, stringFormat);
 
         // </snippet31>
     }

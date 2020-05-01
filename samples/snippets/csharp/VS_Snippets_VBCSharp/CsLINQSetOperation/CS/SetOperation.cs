@@ -25,13 +25,13 @@ namespace Sandbox
             }
 
             /* This code produces the following output:
-             * 
+             *
              * Mercury
              * Venus
              * Earth
              * Mars
              */
-            // </Snippet1> 
+            // </Snippet1>
         }
 
         private static void Except()
@@ -49,7 +49,7 @@ namespace Sandbox
             }
 
             /* This code produces the following output:
-             * 
+             *
              * Venus
              */
             // </Snippet2>
@@ -70,7 +70,7 @@ namespace Sandbox
             }
 
             /* This code produces the following output:
-             * 
+             *
              * Mercury
              * Earth
              * Jupiter
@@ -93,7 +93,7 @@ namespace Sandbox
             }
 
             /* This code produces the following output:
-             * 
+             *
              * Mercury
              * Venus
              * Earth

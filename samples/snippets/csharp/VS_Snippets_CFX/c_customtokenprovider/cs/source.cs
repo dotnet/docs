@@ -42,7 +42,7 @@ namespace CustomProvider
         public override SecurityTokenProvider CreateSecurityTokenProvider(
             SecurityTokenRequirement tokenRequirement)
         {
-            // Return your implementation of the SecurityTokenProvider based on the 
+            // Return your implementation of the SecurityTokenProvider based on the
             // tokenRequirement argument.
             SecurityTokenProvider result;
             if (tokenRequirement.TokenType == SecurityTokenTypes.X509Certificate)

@@ -19,10 +19,8 @@ Endpoints provide clients with access to the functionality a Windows Communicati
   
   <system.serviceModel>  
     <services>  
-    <!-- This section is optional with the default configuration introduced  
-         in .NET Framework 4. -->  
-      <service  
-          name="Microsoft.ServiceModel.Samples.CalculatorService">  
+    <!-- This section is optional with the default configuration introduced in .NET Framework 4. -->  
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService">  
         <host>  
           <baseAddresses>  
             <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  

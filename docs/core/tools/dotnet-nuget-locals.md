@@ -16,7 +16,8 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet nuget locals <CACHE_LOCATION> [(-c|--clear)|(-l|--list)] [--force-english-output]
-dotnet nuget locals [-h|--help]
+
+dotnet nuget locals -h|--help
 ```
 
 ## Description

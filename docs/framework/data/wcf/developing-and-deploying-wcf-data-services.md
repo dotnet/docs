@@ -10,7 +10,7 @@ ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
 ---
 # Develop and Deploy WCF Data Services
 
-This topic provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
+This article provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
 
 ## Develop WCF Data Services
 
@@ -28,7 +28,7 @@ When you use WCF Data Services to create a data service that supports the Open D
 
      By default, WCF Data Services disables access to resources that are exposed by an entity container. The <xref:System.Data.Services.DataServiceConfiguration> interface enables you to configure access to resources and service operations, specify the supported version of OData, and to define other service-wide behaviors, such as batching behaviors or the maximum number of entities that can be returned in a single response feed. For more information, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md).
 
-This topic covers primarily the development and deployment of data services by using Visual Studio. For information about the flexibility provided by WCF Data Services for exposing your data as OData feeds, see [Defining WCF Data Services](defining-wcf-data-services.md).
+This article primarily covers the development and deployment of data services by using Visual Studio. For information about the flexibility provided by WCF Data Services for exposing your data as OData feeds, see [Defining WCF Data Services](defining-wcf-data-services.md).
 
 ### Choose a Development Web Server
 
@@ -36,7 +36,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 1. **Local IIS Server**
 
-     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, you must makes sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
+     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to predetermine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, make sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > You must run Visual Studio with administrator rights to enable the develop environment to configure the local IIS server.
@@ -45,7 +45,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
      Visual Studio includes a built-in Web server, the Visual Studio Development Server, which is the default Web server for ASP.NET projects. This Web server is designed to run ASP.NET projects on the local computer during development. The [WCF Data Services quickstart](quickstart-wcf-data-services.md) shows how to create a data service that runs in the Visual Studio Development Server.
 
-     You should be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
+     Be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
 
     - This server can only be accessed on the local computer.
 
@@ -55,24 +55,24 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
     - This server does not include the extra facilities of IIS, such as authentication.
 
-    - This server cannot handle chunked HTTP streams, which are sent be default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
+    - This server cannot handle chunked HTTP streams, which are sent by default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
 
     - This server has issues with processing the period (`.`) character in a URL, even though this character is supported by WCF Data Services in key values.
 
     > [!TIP]
     > Even though you can use the Visual Studio Development Server to test your data services during development, you should test them again after deploying to a Web server that is running IIS.
 
-3. **Windows Azure Development Environment**
+3. **Azure Development Environment**
 
-     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Azure Tools for Visual Studio includes an integrated set of tools for developing Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md). For more information about developing a data service that runs on Azure, see the post [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Development Tips
 
-You should consider the following when you develop a data service:
+Consider the following when you develop a data service:
 
-- Determine the security requirements of your data service, if you plan authenticate users or restrict access for specific users. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).
+- If you plan to authenticate users or restrict access for specific users, determine the security requirements of your data service. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).
 
-- An HTTP inspection program can be very helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
+- An HTTP inspection program can be helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
 
 - When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://docs.microsoft.com/archive/blogs/phaniraj/debugging-wcf-data-services). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
 
@@ -86,7 +86,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **IIS-Hosted Web Server**
 
-    When a data service is developed as an ASP.NET project, it can be deployed to an IIS Web server by using the standard ASP.NET deployment processes.  Visual Studio provides the following deployment technologies for ASP.NET, depending on the kind of ASP.NET project that hosts the data service that you are deploying.
+    When a data service is developed as an ASP.NET project, it can be deployed to an IIS Web server by using the standard ASP.NET deployment processes. Visual Studio provides the following deployment technologies for ASP.NET, depending on the kind of ASP.NET project that hosts the data service that you are deploying.
 
   - **Deployment Technologies for ASP.NET Web Applications**
 
@@ -107,13 +107,13 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
     > [!TIP]
     > Before you attempt to deploy the data service to IIS, make sure that you have tested the deployment to a Web server that is running IIS. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
-- **Windows Azure**
+- **Azure**
 
-     You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     You can deploy a data service to Azure by using [Azure Tools for Visual Studio](../../../azure/sdk/vs2015-install.md). For more information about deploying a data service to Azure, see [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Deployment Considerations
 
-You should consider the following when deploying a data service:
+Consider the following when deploying a data service:
 
 - When you deploy a data service that uses the Entity Framework provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an ASP.NET application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an ASP.NET Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
 

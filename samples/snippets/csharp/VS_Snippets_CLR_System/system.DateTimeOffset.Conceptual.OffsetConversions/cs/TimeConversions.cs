@@ -14,9 +14,9 @@ public class TimeConversions
    {
       string format = @"M/d/yyyy H:m:s zzz";
       TimeSpan serverOffset = TimeZoneInfo.Local.GetUtcOffset(DateTimeOffset.Now);
-      
+
       try
-      {      
+      {
          DateTimeOffset clientTime = DateTimeOffset.ParseExact(clientString, format, CultureInfo.InvariantCulture);
          DateTimeOffset serverTime = clientTime.ToOffset(serverOffset);
          return serverTime;

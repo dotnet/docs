@@ -154,7 +154,7 @@ The answer to this question is **no** if...
 
 ## Examples: Essential LINQ
 
-For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b).
+For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/).
 
 The following examples are a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides more functionality than what is showcased here.
 
@@ -389,6 +389,6 @@ Parallelizable CPU-bound jobs that can be easily expressed via LINQ (in other wo
 
 ## Further resources
 
-- [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
-- [Linqpad](https://www.linqpad.net/), a playground environment and database querying engine for C#, F#, and Visual Basic.
-- [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented.
+* [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/)
+* [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic
+* [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented

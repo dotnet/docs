@@ -9,10 +9,10 @@ using System.Windows.Media;
 
 namespace Microsoft.Samples.Graphics.Transforms
 {
-    
+
     public partial class SampleViewer : Window
     {
-    
+
     	public SampleViewer()
     	{
     		InitializeComponent();

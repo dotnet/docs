@@ -13,14 +13,14 @@ public class Example
       try {
          var info = util.GetWordData(title);
          Console.WriteLine("Words:               {0:N0}", info.Item1);
-         Console.WriteLine("Average Word Length: {0:N2} characters", info.Item2); 
+         Console.WriteLine("Average Word Length: {0:N2} characters", info.Item2);
       }
       catch (IOException e) {
          Console.WriteLine("IOException reading file '{0}'", title);
          Console.WriteLine(e.Message);
       }
       catch (RegexMatchTimeoutException e) {
-         Console.WriteLine("The operation timed out after {0:N0} milliseconds", 
+         Console.WriteLine("The operation timed out after {0:N0} milliseconds",
                            e.MatchTimeout.TotalMilliseconds);
       }
    }
@@ -29,15 +29,15 @@ public class Example
 public class RegexUtilities
 {
    public Tuple<int, double> GetWordData(string filename)
-   { 
+   {
       const int MAX_TIMEOUT = 1000;   // Maximum timeout interval in milliseconds.
       const int INCREMENT = 350;      // Milliseconds increment of timeout.
-      
+
       List<string> exclusions = new List<string>( new string[] { "a", "an", "the" });
       int[] wordLengths = new int[29];        // Allocate an array of more than ample size.
       string input = null;
       StreamReader sr = null;
-      try { 
+      try {
          sr = new StreamReader(filename);
          input = sr.ReadToEnd();
       }
@@ -49,30 +49,30 @@ public class RegexUtilities
          throw new IOException(e.Message, e);
       }
       finally {
-         if (sr != null) sr.Close(); 
+         if (sr != null) sr.Close();
       }
 
       int timeoutInterval = INCREMENT;
       bool init = false;
       Regex rgx = null;
       Match m = null;
-      int indexPos = 0;  
+      int indexPos = 0;
       do {
          try {
             if (! init) {
-               rgx = new Regex(@"\b\w+\b", RegexOptions.None, 
+               rgx = new Regex(@"\b\w+\b", RegexOptions.None,
                                TimeSpan.FromMilliseconds(timeoutInterval));
                m = rgx.Match(input, indexPos);
                init = true;
             }
-            else { 
+            else {
                m = m.NextMatch();
             }
-            if (m.Success) {    
+            if (m.Success) {
                if ( !exclusions.Contains(m.Value.ToLower()))
                   wordLengths[m.Value.Length]++;
 
-               indexPos += m.Length + 1;   
+               indexPos += m.Length + 1;
             }
          }
          catch (RegexMatchTimeoutException e) {
@@ -82,15 +82,15 @@ public class RegexUtilities
             }
             else {
                // Rethrow the exception.
-               throw; 
-            }   
-         }          
+               throw;
+            }
+         }
       } while (m.Success);
-            
+
       // If regex completed successfully, calculate number of words and average length.
-      int nWords = 0; 
+      int nWords = 0;
       long totalLength = 0;
-      
+
       for (int ctr = wordLengths.GetLowerBound(0); ctr <= wordLengths.GetUpperBound(0); ctr++) {
          nWords += wordLengths[ctr];
          totalLength += ctr * wordLengths[ctr];

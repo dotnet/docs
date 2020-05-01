@@ -26,7 +26,7 @@ enum Season
 }
 ```
 
-By default, the associated constant values of enum members are of type `int`; they start with zero and increase by one following the definition text order. You can explicitly specify any other [integral numeric](integral-numeric-types.md) type as an underlying type of an enumeration type. You also can explicitly specify the associated constant values, as the following example shows:
+By default, the associated constant values of enum members are of type `int`; they start with zero and increase by one following the definition text order. You can explicitly specify any other [integral numeric](integral-numeric-types.md) type as an underlying type of an enumeration type. You can also explicitly specify the associated constant values, as the following example shows:
 
 ```csharp
 enum ErrorCode : ushort
@@ -46,7 +46,7 @@ You use an enumeration type to represent a choice from a set of mutually exclusi
 
 ## Enumeration types as bit flags
 
-If you want an enumeration type to represent a combination of choices, define enum members for those choices such that an individual choice is a bit field. That is, the associated values of those enum members should be the powers of two. Then, you can use the [bitwise logical operators `|` or `&`](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators) to combine choices or intersect combinations of choices, respectively. To indicate that an enumeration type declares bit fields, apply the [Flags](xref:System.FlagsAttribute) attribute to it. As the following example shows, you also can include some typical combinations in the definition of an enumeration type.
+If you want an enumeration type to represent a combination of choices, define enum members for those choices such that an individual choice is a bit field. That is, the associated values of those enum members should be the powers of two. Then, you can use the [bitwise logical operators `|` or `&`](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators) to combine choices or intersect combinations of choices, respectively. To indicate that an enumeration type declares bit fields, apply the [Flags](xref:System.FlagsAttribute) attribute to it. As the following example shows, you can also include some typical combinations in the definition of an enumeration type.
 
 [!code-csharp[enum flags](snippets/EnumType.cs#Flags)]
 
@@ -60,7 +60,7 @@ Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (tha
 
 ## Conversions
 
-For any enumeration type, there exist explicit conversions between the enumeration type and its underlying integral type. If you [cast](../operators/type-testing-and-cast.md#cast-operator-) an enum value to its underlying type, the result is the associated integral value of an enum member.
+For any enumeration type, there exist explicit conversions between the enumeration type and its underlying integral type. If you [cast](../operators/type-testing-and-cast.md#cast-expression) an enum value to its underlying type, the result is the associated integral value of an enum member.
 
 [!code-csharp[enum conversions](snippets/EnumType.cs#Conversions)]
 

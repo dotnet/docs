@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 03/27/2020
+ms.date: 04/28/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -25,11 +25,13 @@ The following breaking changes are documented on this page:
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
 - [Data Protection: DataProtection.AzureStorage uses new Azure Storage APIs](#data-protection-dataprotectionazurestorage-uses-new-azure-storage-apis)
+- [Extensions: Package reference changes affecting some NuGet packages](#extensions-package-reference-changes-affecting-some-nuget-packages)
 - [Hosting: AspNetCoreModule V1 removed from Windows Hosting Bundle](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Hosting: Generic host restricts Startup constructor injection](#hosting-generic-host-restricts-startup-constructor-injection)
 - [Hosting: HTTPS redirection enabled for IIS out-of-process apps](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
 - [Hosting: IHostingEnvironment and IApplicationLifetime types replaced](#hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced)
 - [Hosting: ObjectPoolProvider removed from WebHostBuilder dependencies](#hosting-objectpoolprovider-removed-from-webhostbuilder-dependencies)
+- [HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](#http-kestrel-and-iis-badhttprequestexception-types-marked-obsolete-and-replaced)
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [HTTP: DefaultHttpContext extensibility removed](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP: HeaderNames fields changed to static readonly](#http-headernames-constants-changed-to-static-readonly)
@@ -61,6 +63,7 @@ The following breaking changes are documented on this page:
 - [SignalR: HubConnectionContext constructors changed](#signalr-hubconnectioncontext-constructors-changed)
 - [SignalR: JavaScript client package name change](#signalr-javascript-client-package-name-changed)
 - [SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](#signalr-messagepack-hub-protocol-moved-to-messagepack-2x-package)
+- [SignalR: MessagePack Hub Protocol options type changed](#signalr-messagepack-hub-protocol-options-type-changed)
 - [SignalR: Obsolete APIs](#signalr-usesignalr-and-useconnections-methods-marked-obsolete)
 - [SignalR: UseSignalR and UseConnections methods removed](#signalr-usesignalr-and-useconnections-methods-removed)
 - [SPAs: SpaServices and NodeServices console logger fallback default change](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
@@ -74,7 +77,19 @@ The following breaking changes are documented on this page:
 
 ***
 
+[!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
+
+***
+
+[!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
 [!INCLUDE[SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-package.md)]
+
+***
+
+[!INCLUDE[SignalR: MessagePack Hub Protocol options type changed](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-hub-protocol-options-changed.md)]
 
 ***
 

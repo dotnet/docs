@@ -11,15 +11,15 @@ namespace Shapes
         // <SnippetSummary>
         // OnUpdateModel is called in response to InvalidateModel and provides
         // a place to set the Visual3DModel property.
-        // 
+        //
         // Setting Visual3DModel does not provide parenting information, which
         // is needed for data binding, styling, and other features. Similarly, creating render data
         // in 2-D does not provide the connections either.
-        // 
+        //
         // To get around this, we create a Model dependency property which
         // sets this value.  The Model DP then causes the correct connections to occur
         // and the above features to work correctly.
-        // 
+        //
         // In this update model we retessellate the sphere based on the current
         // dependency property values, and then set it as the model.  The brush
         // color is blue by default, but the code can easily be updated to let
@@ -181,10 +181,10 @@ namespace Shapes
         //</SnippetPrivateMethods>
 
         //<SnippetTessellate>
-        // Tesselates the sphere and returns a MeshGeometry3D representing the 
+        // Tesselates the sphere and returns a MeshGeometry3D representing the
         // tessellation based on the given parameters
         internal static MeshGeometry3D Tessellate(int tDiv, int pDiv, double radius)
-        {            
+        {
             double dt = DegToRad(360.0) / tDiv;
             double dp = DegToRad(180.0) / pDiv;
 

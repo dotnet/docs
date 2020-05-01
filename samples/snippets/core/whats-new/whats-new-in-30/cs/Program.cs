@@ -7,7 +7,7 @@ namespace whats_new
 {
     class Program
     {
-        
+
         static async Task Main(string[] args)
         {
             // <SnippetPrintJsonCall>
@@ -44,7 +44,7 @@ namespace whats_new
         public static void PrintJson(ReadOnlySpan<byte> dataUtf8)
         {
             var json = new Utf8JsonReader(dataUtf8, isFinalBlock: true, state: default);
-            
+
             while (json.Read())
             {
                 JsonTokenType tokenType = json.TokenType;

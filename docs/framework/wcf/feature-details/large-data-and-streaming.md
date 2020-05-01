@@ -82,7 +82,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
       </wsHttpBinding>  
     </bindings>  
      …  
-<system.serviceModel>  
+</system.serviceModel>  
 ```  
   
  As mentioned earlier, the decision to use MTOM encoding depends on the data volume you are sending. Also, because MTOM is enabled at the binding level, enabling MTOM affects all operations on a given endpoint.  
@@ -172,7 +172,7 @@ class MyData
       </basicHttpBinding>  
     </bindings>  
      …  
-<system.serviceModel>  
+</system.serviceModel>  
 ```  
   
  When you instantiate your binding in code, you must set the respective `TransferMode` property of the binding (or the transport binding element if you are composing a custom binding) to one of the previously mentioned values.  

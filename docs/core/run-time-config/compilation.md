@@ -13,7 +13,7 @@ ms.topic: reference
   - The second tier generates optimized code in the background ("optimizing JIT").
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
-- For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation-guide.md).
+- For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation.md).
 
 | | Setting name | Values |
 | - | - | - |
@@ -120,7 +120,7 @@ Project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TieredCompilationQuickJitForLoops>false</TieredCompilationQuickJitForLoops>
+    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
   </PropertyGroup>
 
 </Project>

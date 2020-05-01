@@ -30,7 +30,7 @@ namespace NorthwindClient
 
             //<snippetCustomersOrders2Binding>
             // Create a new collection that contains all customers and related orders.
-            DataServiceCollection<Customer> trackedCustomers = 
+            DataServiceCollection<Customer> trackedCustomers =
                 new DataServiceCollection<Customer>(context.Customers.Expand("Orders"));
             //</snippetCustomersOrders2Binding>
             try

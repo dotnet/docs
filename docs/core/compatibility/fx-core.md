@@ -11,10 +11,12 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
 
-## CoreFx
+## Core .NET libraries
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
+- [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
+- [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters)
 
 ### .NET Core 2.1
 
@@ -25,6 +27,14 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ### .NET Core 1.0
 
 [!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
+
+***
+
+[!INCLUDE [corrupted-state-exceptions](~/includes/core-changes/corefx/1.0/corrupted-state-exceptions.md)]
+
+***
+
+[!INCLUDE [uribuilder-behavior-changes](../../../includes/core-changes/corefx/1.0/uribuilder-behavior-changes.md)]
 
 ***
 

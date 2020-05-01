@@ -25,7 +25,7 @@ namespace WPFPlatformSecuritySnippet
         public Page1()
         {
             InitializeComponent();
-            
+
             //<SnippetPermission>
             FileIOPermission fp = new FileIOPermission(PermissionState.Unrestricted);
             fp.Assert();

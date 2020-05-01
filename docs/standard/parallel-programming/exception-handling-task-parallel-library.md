@@ -1,6 +1,6 @@
 ---
 title: "Exception handling (Task Parallel Library)"
-ms.date: "03/30/2017"
+ms.date: 04/20/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -83,7 +83,14 @@ If a task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displ
 [!code-csharp[TPL_Exceptions#27](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/exceptionprop21.cs#27)]
 [!code-vb[TPL_Exceptions#27](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/exceptionprop21.vb#27)]
 
-In a real application, the continuation delegate could log detailed information about the exception and possibly spawn new tasks to recover from the exception.
+In a meaningful application, the continuation delegate could log detailed information about the exception and possibly spawn new tasks to recover from the exception. If a task faults, the following expressions throw the exception:
+
+- `await task`
+- `task.Wait()`
+- `task.Result`
+- `task.GetAwaiter().GetResult()`
+
+Use a [`try-catch`](../../csharp/language-reference/keywords/try-catch.md) statement to handle and observe thrown exceptions. Alternatively, observe the exception by accessing the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property.
 
 ## UnobservedTaskException event
 

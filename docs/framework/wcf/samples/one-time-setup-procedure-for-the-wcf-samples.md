@@ -14,7 +14,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 ### One-time setup procedure for WCF samples
 
-1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).
+1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](internet-information-service-hosting-instructions.md).
 
 2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
@@ -33,11 +33,11 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!WARNING]
     > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using .NET Framework 4, which may produce incompatibility issues for other applications on the same computer.
 
-5. Follow the [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md) for enabling the ports used by the samples.
+5. Follow the [Firewall Instructions](firewall-instructions.md) for enabling the ports used by the samples.
 
 6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
 
-7. If the samples are not installed, install them from the samples download location for [C#](https://go.microsoft.com/fwlink/?LinkId=190939).
+7. If the samples are not installed, install them from [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
 
 8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
 
@@ -47,7 +47,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
     - New disk directories are created named %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples and %SystemDrive%\Inetpub\wwwroot\ServiceModelSamples\bin.
 
-    If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](../../../../docs/framework/wcf/samples/virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.
+    If you prefer to set up these directories manually, see the [Virtual Directory Setup Instructions](virtual-directory-setup-instructions.md). To revert all changes done in this step, run cleanupvroot.bat after you finish using the samples.
 
     > [!NOTE]
     > This procedure must be performed only once on a computer, unless cleanupvroot.bat is run.
@@ -72,11 +72,11 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!NOTE]
     > For security purposes, remember to remove the virtual directory definition and permissions granted in the setup steps above by running the batch file named Cleanupvroot.bat after you are finished with the samples.
 
-13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../../../../docs/framework/wcf/feature-details/configuring-http-and-https.md).
+13. Samples that are self-hosted (not hosted in IIS) require permission to register HTTP addresses on the computer for listening. The permission for an HTTP namespace reservation comes from the user account used to run the sample. By default, administrator accounts have the permission to register any HTTP address. Non-administrator accounts must be granted permission for the HTTP namespaces used by the samples. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md).
 
-14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md) for installation instructions.
+14. Some samples require Message Queuing. See [Installing Message Queuing (MSMQ)](installing-message-queuing-msmq.md) for installation instructions.
 
     > [!NOTE]
     > Ensure that you start the MSMQ service before you run any samples that require Message Queuing.
 
-15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md).
+15. Some samples require certificates. See [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).

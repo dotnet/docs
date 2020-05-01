@@ -25,7 +25,7 @@ namespace PlotPanel
 		mainWindow = new System.Windows.Window();
         plot1 = new PlotPanel();
         plot1.Background = Brushes.White;
-  
+
         rect1 = new Rectangle();
         rect1.Fill = Brushes.CornflowerBlue;
         rect1.Width = 200;
@@ -50,7 +50,7 @@ namespace PlotPanel
             {
                 Size panelDesiredSize = new Size();
 
-                // In our example, we just have one child. 
+                // In our example, we just have one child.
                 // Report that our panel requires just the size of its only child.
                 foreach (UIElement child in InternalChildren)
                 {

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
 ---
-# How to parse strings using String.Split (C# Guide)
+# How to parse strings using String.Split in C\#
 
 The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 array of substrings by splitting the input string based on one or more delimiters. It is often the easiest way to separate a string on word boundaries. It is also used
@@ -24,12 +24,12 @@ The following code splits a common phrase into an array of strings for each word
 
 Every instance of a separator character produces a value in the
 returned array. Consecutive separator characters produce the empty string
-as a value in the returned array.  You can see this in the following example,
-which uses space as a separator:
+as a value in the returned array. You can see how an empty string is created in the following example,
+which uses the space character as a separator.
 
 [!code-csharp-interactive[split strings with repeated separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#2)]
 
-This behavior makes it easier for formats like comma separated values (CSV)
+This behavior makes it easier for formats like comma-separated values (CSV)
 files representing tabular data. Consecutive commas represent a blank column.
 
 You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to
@@ -51,7 +51,7 @@ Consecutive instances of any separator produce the empty string in the output ar
   
 [!code-csharp-interactive[split strings using strings as separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#5)]
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
+You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](../../../samples/snippets/csharp/how-to/strings.zip).
 
 ## See also
 

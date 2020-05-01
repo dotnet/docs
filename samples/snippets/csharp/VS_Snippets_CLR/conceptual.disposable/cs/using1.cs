@@ -13,7 +13,7 @@ public class Example
             charsRead = s.Read(buffer, 0, buffer.Length);
             //
             // Process characters read.
-            //   
+            //
          }
       }
    }

@@ -22,7 +22,7 @@ namespace DigitalInkTopics
         }
 
         // <Snippet4>
-        private void RightMouseUpHandler(object sender, 
+        private void RightMouseUpHandler(object sender,
                                          System.Windows.Input.MouseButtonEventArgs e)
         {
             Matrix m = new Matrix();

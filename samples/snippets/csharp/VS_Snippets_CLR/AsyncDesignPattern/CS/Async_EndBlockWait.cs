@@ -29,7 +29,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             // Wait until the operation completes.
             result.AsyncWaitHandle.WaitOne();
             // The operation completed. Process the results.
-            try 
+            try
             {
                 // Get the results.
                 IPHostEntry host = Dns.EndGetHostEntry(result);
@@ -54,7 +54,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             }
             catch (SocketException e)
             {
-                Console.WriteLine("Exception occurred while processing the request: {0}", 
+                Console.WriteLine("Exception occurred while processing the request: {0}",
                     e.Message);
             }
         }

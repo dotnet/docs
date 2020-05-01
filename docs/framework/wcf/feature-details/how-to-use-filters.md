@@ -174,7 +174,7 @@ This topic outlines the basic steps required to create a routing configuration t
                 <add filterName="XPathFilter" endpointName="roundingCalcEndpoint" priority="2"/>  
               </entries>  
             </table>  
-          <filterTables>  
+          </filterTables>  
     </routing>  
     ```  
   

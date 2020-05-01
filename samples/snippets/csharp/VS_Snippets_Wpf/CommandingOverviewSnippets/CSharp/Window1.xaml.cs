@@ -42,13 +42,13 @@ namespace SDKSamples
             ApplicationCommands.Open.InputGestures.Add(OpenCmdKeyGesture);
             //</SnippetCommandingOverviewKeyGestureOnCmd>
 
-            //<SnippetCommandingOverviewCommandTargetCodeBehind> 
+            //<SnippetCommandingOverviewCommandTargetCodeBehind>
             // Creating the UI objects
             StackPanel mainStackPanel = new StackPanel();
             TextBox pasteTextBox = new TextBox();
             Menu stackPanelMenu = new Menu();
             MenuItem pasteMenuItem = new MenuItem();
-           
+
             // Adding objects to the panel and the menu
             stackPanelMenu.Items.Add(pasteMenuItem);
             mainStackPanel.Children.Add(stackPanelMenu);
@@ -56,10 +56,10 @@ namespace SDKSamples
 
             // Setting the command to the Paste command
             pasteMenuItem.Command = ApplicationCommands.Paste;
-          
+
             // Setting the command target to the TextBox
             pasteMenuItem.CommandTarget = pasteTextBox;
-            //</SnippetCommandingOverviewCommandTargetCodeBehind> 
+            //</SnippetCommandingOverviewCommandTargetCodeBehind>
 
             //<SnippetCommandingOverviewCustomCommandSourceCodeBehind>
             // create the ui
@@ -91,7 +91,7 @@ namespace SDKSamples
             // Add ContextMenu to the StackPanel.
             cmdSourcePanel.ContextMenu = cmdSourceContextMenu;
             cmdSourcePanel.ContextMenu.Items.Add(cmdSourceMenuItem);
-            
+
             // Associate Command with MenuItem.
             cmdSourceMenuItem.Command = ApplicationCommands.Properties;
             //</SnippetCommandingOverviewCmdSource>
@@ -155,22 +155,22 @@ namespace SDKSamples
             MessageBox.Show("Command Executed");
         }
 
-        //<SnippetCommandingOverviewExecuted> 
+        //<SnippetCommandingOverviewExecuted>
         private void ExecutedCustomCommand(object sender,
             ExecutedRoutedEventArgs e)
         {
             MessageBox.Show("Custom Command Executed");
         }
-        //</SnippetCommandingOverviewExecuted> 
+        //</SnippetCommandingOverviewExecuted>
 
-        //<SnippetCommandingOverviewCanExecute> 
+        //<SnippetCommandingOverviewCanExecute>
         // CanExecuteRoutedEventHandler that only returns true if
         // the source is a control.
-        private void CanExecuteCustomCommand(object sender, 
+        private void CanExecuteCustomCommand(object sender,
             CanExecuteRoutedEventArgs e)
         {
             Control target = e.Source as Control;
-            
+
             if(target != null)
             {
                 e.CanExecute = true;
@@ -180,7 +180,7 @@ namespace SDKSamples
                 e.CanExecute = false;
             }
         }
-        //</SnippetCommandingOverviewCanExecute> 
+        //</SnippetCommandingOverviewCanExecute>
 
         //<SnippetCommandingOverviewMultipleCmdHandler>
         private void ExecutedDisplayCommand(object sender,
@@ -264,7 +264,7 @@ namespace SDKSamples
             MenuItem pasteMenuItem = new MenuItem();
             pasteMenuItem.Command = ApplicationCommands.Paste;
 
-            //set the CommandTarget to the 
+            //set the CommandTarget to the
             pasteMenuItem.CommandTarget = mainTextBox;
         }
     }
@@ -279,7 +279,7 @@ namespace SDKSamples
     //<SnippetThreadingArticleWeatherComponent1>
     public class WeatherComponent : Component
     {
-        //gets weather: Synchronous 
+        //gets weather: Synchronous
         public string GetWeather()
         {
             string weather = "";
@@ -289,7 +289,7 @@ namespace SDKSamples
             return weather;
         }
 
-        //get weather: Asynchronous 
+        //get weather: Asynchronous
         public void GetWeatherAsync()
         {
             //get the weather

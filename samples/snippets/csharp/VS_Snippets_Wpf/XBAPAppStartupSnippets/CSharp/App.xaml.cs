@@ -6,7 +6,7 @@ using System.Windows.Navigation;
 namespace SDKSample
 {
     public partial class App : Application
-    {        
+    {
         void App_Startup(object sender, StartupEventArgs e)
         {
             ((NavigationWindow)this.MainWindow).Navigate(new Uri("HomePage.xaml", UriKind.Relative));

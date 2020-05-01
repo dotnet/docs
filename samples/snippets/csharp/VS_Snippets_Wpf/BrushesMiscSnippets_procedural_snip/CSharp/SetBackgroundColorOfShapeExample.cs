@@ -17,11 +17,11 @@ namespace SDKSample
             // Create a red Ellipse.
             Ellipse myEllipse = new Ellipse();
 
-            // Create a SolidColorBrush with a red color to fill the 
+            // Create a SolidColorBrush with a red color to fill the
             // Ellipse with.
             SolidColorBrush mySolidColorBrush = new SolidColorBrush();
 
-            // Describes the brush's color using RGB values. 
+            // Describes the brush's color using RGB values.
             // Each value has a range of 0-255.
             mySolidColorBrush.Color = Color.FromArgb(255, 255, 255, 0);
             myEllipse.Fill = mySolidColorBrush;

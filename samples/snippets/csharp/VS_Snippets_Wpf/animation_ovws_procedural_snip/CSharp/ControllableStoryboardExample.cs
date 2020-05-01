@@ -18,8 +18,8 @@ namespace SDKSample
 
             // Create a name scope for the page.
 
-            NameScope.SetNameScope(this, new NameScope()); 
- 
+            NameScope.SetNameScope(this, new NameScope());
+
             this.WindowTitle = "Controllable Storyboard Example";
             StackPanel myStackPanel = new StackPanel();
             myStackPanel.Margin = new Thickness(10);
@@ -28,7 +28,7 @@ namespace SDKSample
             Rectangle myRectangle = new Rectangle();
             myRectangle.Name = "myRectangle";
 
-            // Assign the rectangle a name by 
+            // Assign the rectangle a name by
             // registering it with the page, so that
             // it can be targeted by storyboard
             // animations.
@@ -85,7 +85,7 @@ namespace SDKSample
             stopButton.Click += new RoutedEventHandler(stopButton_Clicked);
             buttonPanel.Children.Add(stopButton);
             myStackPanel.Children.Add(buttonPanel);
-            this.Content = myStackPanel;        
+            this.Content = myStackPanel;
         }
 
         // Begins the storyboard.
@@ -125,7 +125,7 @@ namespace SDKSample
         private void stopButton_Clicked(object sender, RoutedEventArgs args)
         {
             myStoryboard.Stop(this);
-        }         
+        }
     }
 }
 // </SnippetControllableStoryboardExampleWholePage>

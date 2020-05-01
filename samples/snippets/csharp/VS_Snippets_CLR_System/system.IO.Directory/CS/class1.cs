@@ -7,9 +7,9 @@ using System;
 
 namespace GetFileSystemEntries
 {
-    class Class1 
+    class Class1
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             Class1 snippets = new Class1();
 
@@ -23,147 +23,147 @@ namespace GetFileSystemEntries
             snippets.Move("C:\\proof", "C:\\Temp");
         }
 
-        void PrintFileSystemEntries(string path) 
+        void PrintFileSystemEntries(string path)
         {
 			
-            try 
+            try
             {
                 // Obtain the file system entries in the directory path.
                 string[] directoryEntries =
-                    System.IO.Directory.GetFileSystemEntries(path); 
+                    System.IO.Directory.GetFileSystemEntries(path);
 
-                foreach (string str in directoryEntries) 
+                foreach (string str in directoryEntries)
                 {
                     System.Console.WriteLine(str);
                 }
             }
-            catch (ArgumentNullException) 
+            catch (ArgumentNullException)
             {
                 System.Console.WriteLine("Path is a null reference.");
             }
-            catch (System.Security.SecurityException) 
+            catch (System.Security.SecurityException)
             {
                 System.Console.WriteLine("The caller does not have the " +
                     "required permission.");
             }
-            catch (ArgumentException) 
+            catch (ArgumentException)
             {
                 System.Console.WriteLine("Path is an empty string, " +
-                    "contains only white spaces, " + 
+                    "contains only white spaces, " +
                     "or contains invalid characters.");
             }
-            catch (System.IO.DirectoryNotFoundException) 
+            catch (System.IO.DirectoryNotFoundException)
             {
-                System.Console.WriteLine("The path encapsulated in the " + 
+                System.Console.WriteLine("The path encapsulated in the " +
                     "Directory object does not exist.");
             }
         }
-        void PrintFileSystemEntries(string path, string pattern) 
+        void PrintFileSystemEntries(string path, string pattern)
         {
-            try 
+            try
             {
                 // Obtain the file system entries in the directory
                 // path that match the pattern.
                 string[] directoryEntries =
-                    System.IO.Directory.GetFileSystemEntries(path, pattern); 
+                    System.IO.Directory.GetFileSystemEntries(path, pattern);
 
-                foreach (string str in directoryEntries) 
+                foreach (string str in directoryEntries)
                 {
                     System.Console.WriteLine(str);
                 }
             }
-            catch (ArgumentNullException) 
+            catch (ArgumentNullException)
             {
                 System.Console.WriteLine("Path is a null reference.");
             }
-            catch (System.Security.SecurityException) 
+            catch (System.Security.SecurityException)
             {
                 System.Console.WriteLine("The caller does not have the " +
                     "required permission.");
             }
-            catch (ArgumentException) 
+            catch (ArgumentException)
             {
                 System.Console.WriteLine("Path is an empty string, " +
-                    "contains only white spaces, " + 
+                    "contains only white spaces, " +
                     "or contains invalid characters.");
             }
-            catch (System.IO.DirectoryNotFoundException) 
+            catch (System.IO.DirectoryNotFoundException)
             {
-                System.Console.WriteLine("The path encapsulated in the " + 
+                System.Console.WriteLine("The path encapsulated in the " +
                     "Directory object does not exist.");
             }
         }
 
         // Print out all logical drives on the system.
-        void GetLogicalDrives() 
+        void GetLogicalDrives()
         {
-            try 
+            try
             {
                 string[] drives = System.IO.Directory.GetLogicalDrives();
 
-                foreach (string str in drives) 
+                foreach (string str in drives)
                 {
                     System.Console.WriteLine(str);
                 }
             }
-            catch (System.IO.IOException) 
+            catch (System.IO.IOException)
             {
                 System.Console.WriteLine("An I/O error occurs.");
             }
-            catch (System.Security.SecurityException) 
+            catch (System.Security.SecurityException)
             {
                 System.Console.WriteLine("The caller does not have the " +
                     "required permission.");
             }
         }
-        void GetParent(string path) 
+        void GetParent(string path)
         {
-            try 
+            try
             {
                 System.IO.DirectoryInfo directoryInfo =
                     System.IO.Directory.GetParent(path);
 
                 System.Console.WriteLine(directoryInfo.FullName);
             }
-            catch (ArgumentNullException) 
+            catch (ArgumentNullException)
             {
                 System.Console.WriteLine("Path is a null reference.");
             }
-            catch (ArgumentException) 
+            catch (ArgumentException)
             {
                 System.Console.WriteLine("Path is an empty string, " +
                     "contains only white spaces, or " +
                     "contains invalid characters.");
             }
         }
-        void Move(string sourcePath, string destinationPath) 
+        void Move(string sourcePath, string destinationPath)
         {
-            try 
+            try
             {
                 System.IO.Directory.Move(sourcePath, destinationPath);
                 System.Console.WriteLine("The directory move is complete.");
             }
-            catch (ArgumentNullException) 
+            catch (ArgumentNullException)
             {
                 System.Console.WriteLine("Path is a null reference.");
             }
-            catch (System.Security.SecurityException) 
+            catch (System.Security.SecurityException)
             {
                 System.Console.WriteLine("The caller does not have the " +
                     "required permission.");
             }
-            catch (ArgumentException) 
+            catch (ArgumentException)
             {
                 System.Console.WriteLine("Path is an empty string, " +
-                    "contains only white spaces, " + 
+                    "contains only white spaces, " +
                     "or contains invalid characters.");	
             }
-            catch (System.IO.IOException) 
+            catch (System.IO.IOException)
             {
                 System.Console.WriteLine("An attempt was made to move a " +
                     "directory to a different " +
                     "volume, or destDirName " +
-                    "already exists."); 
+                    "already exists.");
             }
         }
     }

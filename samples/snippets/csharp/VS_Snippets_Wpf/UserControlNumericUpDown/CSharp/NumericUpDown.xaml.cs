@@ -29,7 +29,7 @@ namespace MyUserControl
         /// Gets or sets the value assigned to the control.
         /// </summary>
         public decimal Value
-        {          
+        {
             get { return (decimal)GetValue(ValueProperty); }
             set { SetValue(ValueProperty, value); }
         }
@@ -40,10 +40,10 @@ namespace MyUserControl
             NumericUpDown control = (NumericUpDown)element;
 
             newValue = Math.Max(MinValue, Math.Min(MaxValue, newValue));
-            
+
             return newValue;
         }
- 
+
         private static void OnValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
             NumericUpDown control = (NumericUpDown)obj;			
@@ -59,7 +59,7 @@ namespace MyUserControl
         /// Identifies the ValueChanged routed event.
         /// </summary>
         public static readonly RoutedEvent ValueChangedEvent = EventManager.RegisterRoutedEvent(
-            "ValueChanged", RoutingStrategy.Bubble, 
+            "ValueChanged", RoutingStrategy.Bubble,
             typeof(RoutedPropertyChangedEventHandler<decimal>), typeof(NumericUpDown));
 
         /// <summary>

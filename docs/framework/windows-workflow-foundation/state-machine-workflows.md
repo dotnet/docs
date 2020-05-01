@@ -15,7 +15,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
   
 - <xref:System.Activities.Statements.Transition>  
   
- To create a state machine workflow, states are added to a <xref:System.Activities.Statements.StateMachine> activity, and transitions are used control the flow between states. The following screenshot, from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md), shows a state machine workflow with three states and three transitions. **Initialize Target** is the initial state and represents the first state in the workflow. This is designated by the line leading to it from the **Start** node. The final state in the workflow is named **FinalState**, and represents the point at which the workflow is completed.  
+ To create a state machine workflow, states are added to a <xref:System.Activities.Statements.StateMachine> activity, and transitions are used to control the flow between states. The following screenshot, from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md), shows a state machine workflow with three states and three transitions. **Initialize Target** is the initial state and represents the first state in the workflow. This is designated by the line leading to it from the **Start** node. The final state in the workflow is named **FinalState**, and represents the point at which the workflow is completed.  
   
  ![Illustration that shows the completed state machine workflow.](./media/state-machine-workflows/complete-state-machine-workflow.jpg)  
   

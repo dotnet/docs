@@ -2,7 +2,7 @@
 /*
 The following example demonstrates using asynchronous methods to
 get Domain Name System information for the specified host computers.
-This example uses a delegate to obtain the results of each asynchronous 
+This example uses a delegate to obtain the results of each asynchronous
 operation.
 */
 
@@ -28,7 +28,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         }
         public static void Main()
         {
-            // Create the delegate that will process the results of the 
+            // Create the delegate that will process the results of the
             // asynchronous request.
             AsyncCallback callBack = new AsyncCallback(ProcessDnsInformation);
             string host;
@@ -58,7 +58,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 // A SocketException was thrown.
                 if (message != null)
                 {
-                    Console.WriteLine("Request for {0} returned message: {1}", 
+                    Console.WriteLine("Request for {0} returned message: {1}",
                         hostNames[i], message);
                     continue;
                 }
@@ -90,7 +90,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         {
             string hostName = (string) result.AsyncState;
             hostNames.Add(hostName);
-            try 
+            try
             {
                 // Get the results.
                 IPHostEntry host = Dns.EndGetHostEntry(result);
@@ -101,7 +101,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             {
                 hostData.Add(e.Message);
             }
-            finally 
+            finally
             {
                 // Decrement the request counter in a thread-safe manner.
                 Interlocked.Decrement(ref requestCounter);

@@ -39,9 +39,9 @@ namespace SDKSample
                     new EllipseGeometry(new Point(50,50), 50, 50)
                 );
 
-            ImageDrawing kiwiPictureDrawing = 
+            ImageDrawing kiwiPictureDrawing =
                 new ImageDrawing(
-                    new BitmapImage(new Uri(@"sampleImages\kiwi.png", UriKind.Relative)), 
+                    new BitmapImage(new Uri(@"sampleImages\kiwi.png", UriKind.Relative)),
                     new Rect(50,50,100,100));
 
             GeometryDrawing ellipseDrawing2 =
@@ -113,7 +113,7 @@ namespace SDKSample
 
             //
             // Create an ImageDrawing.
-            // 
+            //
             ImageDrawing kiwiPictureDrawing =
                 new ImageDrawing(
                     new BitmapImage(new Uri(@"sampleImages\kiwi.png", UriKind.Relative)),

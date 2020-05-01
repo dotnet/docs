@@ -22,7 +22,7 @@ Provides links to all How-to topics found in the conceptual documentation for pr
 [Using Application Domains](use.md)  
 Provides examples of creating, configuring, and using application domains.  
   
-[Programming with Assemblies](../../standard/assembly/program.md)  
+[Programming with Assemblies](../../standard/assembly/index.md)  
 Describes how to create, sign, and set attributes on assemblies.  
   
 ## Related Sections  

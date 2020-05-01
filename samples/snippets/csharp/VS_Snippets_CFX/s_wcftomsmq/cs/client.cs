@@ -19,22 +19,22 @@ namespace Microsoft.ServiceModel.Samples
 		{
 		}
 
-		public OrderProcessorClient(string endpointConfigurationName) : 
+		public OrderProcessorClient(string endpointConfigurationName) :
 				base(endpointConfigurationName)
 		{
 		}
 
-		public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) : 
+		public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) :
 				base(endpointConfigurationName, remoteAddress)
 		{
 		}
 
-		public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+		public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
 				base(endpointConfigurationName, remoteAddress)
 		{
 		}
 
-		public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+		public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
 				base(binding, remoteAddress)
 		{
 		}
@@ -69,7 +69,7 @@ namespace Microsoft.ServiceModel.Samples
             po.orderLineItems = new PurchaseOrderLineItem[2];
             po.orderLineItems[0] = lineItem1;
             po.orderLineItems[1] = lineItem2;
-         
+
             OrderProcessorClient client = new OrderProcessorClient("OrderResponseEndpoint");
             MsmqMessage<PurchaseOrder> ordermsg = new MsmqMessage<PurchaseOrder>(po);
             using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))

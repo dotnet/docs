@@ -68,7 +68,7 @@ class TestOut
 }
     /* Output:
         Array elements are:
-        1 2 3 4 5        
+        1 2 3 4 5
     */
 //</Snippet37>
 
@@ -262,10 +262,10 @@ class Test2
                                                 { "five", "six" } };
 
         // Three-dimensional array.
-        int[, ,] array3D = new int[,,] { { { 1, 2, 3 }, { 4, 5, 6 } }, 
+        int[, ,] array3D = new int[,,] { { { 1, 2, 3 }, { 4, 5, 6 } },
                                          { { 7, 8, 9 }, { 10, 11, 12 } } };
         // The same array with dimensions specified.
-        int[, ,] array3Da = new int[2, 2, 3] { { { 1, 2, 3 }, { 4, 5, 6 } }, 
+        int[, ,] array3Da = new int[2, 2, 3] { { { 1, 2, 3 }, { 4, 5, 6 } },
                                                { { 7, 8, 9 }, { 10, 11, 12 } } };
 
         // Accessing array elements.
@@ -328,7 +328,7 @@ class TestArraysClass
 {
     static void Main()
     {
-        // Declare a single-dimensional array. 
+        // Declare a single-dimensional array of 5 integers.
         int[] array1 = new int[5];
 
         // Declare and set array element values.
@@ -389,7 +389,7 @@ class ArrayTest
             {
                 System.Console.Write("{0}{1}", arr[i][j], j == (arr[i].Length - 1) ? "" : " ");
             }
-            System.Console.WriteLine();            
+            System.Console.WriteLine();
         }
         // Keep the console window open in debug mode.
         System.Console.WriteLine("Press any key to exit.");
@@ -423,7 +423,7 @@ class TestJagged
         //</Snippet21>
 
         //<Snippet22>
-    int[][] jaggedArray2 = new int[][] 
+    int[][] jaggedArray2 = new int[][]
     {
         new int[] { 1, 3, 5, 7, 9 },
         new int[] { 0, 2, 4, 6 },
@@ -432,7 +432,7 @@ class TestJagged
         //</Snippet22>
 
         //<Snippet23>
-    int[][] jaggedArray3 = 
+    int[][] jaggedArray3 =
     {
         new int[] { 1, 3, 5, 7, 9 },
         new int[] { 0, 2, 4, 6 },
@@ -449,11 +449,11 @@ class TestJagged
         //</Snippet24>
 
         //<Snippet25>
-        int[][,] jaggedArray4 = new int[3][,] 
+        int[][,] jaggedArray4 = new int[3][,]
         {
             new int[,] { {1,3}, {5,7} },
             new int[,] { {0,2}, {4,6}, {8,10} },
-            new int[,] { {11,22}, {99,88}, {0,9} } 
+            new int[,] { {11,22}, {99,88}, {0,9} }
         };
         //</Snippet25>
 

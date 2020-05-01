@@ -95,29 +95,29 @@ namespace Microsoft.ServiceModel.Samples
             this.securityKeys = new ReadOnlyCollection<SecurityKey>(new List<SecurityKey>());
         }
 
-        public CreditCardInfo CardInfo 
-        { 
-            get { return this.cardInfo; } 
+        public CreditCardInfo CardInfo
+        {
+            get { return this.cardInfo; }
         }
 
-        public override ReadOnlyCollection<SecurityKey> SecurityKeys 
-        { 
-            get { return this.securityKeys; } 
+        public override ReadOnlyCollection<SecurityKey> SecurityKeys
+        {
+            get { return this.securityKeys; }
         }
 
-        public override DateTime ValidFrom 
-        { 
-            get { return this.effectiveTime; } 
+        public override DateTime ValidFrom
+        {
+            get { return this.effectiveTime; }
         }
 
-        public override DateTime ValidTo 
-        { 
-            get { return this.cardInfo.ExpirationDate; } 
+        public override DateTime ValidTo
+        {
+            get { return this.cardInfo.ExpirationDate; }
         }
-        
-        public override string Id 
-        { 
-            get { return this.id; } 
+
+        public override string Id
+        {
+            get { return this.id; }
         }
     }
     //</snippet1>
@@ -146,24 +146,24 @@ namespace Microsoft.ServiceModel.Samples
         }
 
         // A credit card token has no cryptography, no windows identity, and supports only client authentication.
-        protected override bool HasAsymmetricKey 
-        { 
-            get { return false; } 
+        protected override bool HasAsymmetricKey
+        {
+            get { return false; }
         }
-        
-        protected override bool SupportsClientAuthentication 
-        { 
-            get { return true; } 
+
+        protected override bool SupportsClientAuthentication
+        {
+            get { return true; }
         }
-        
-        protected override bool SupportsClientWindowsIdentity 
-        { 
-            get { return false; } 
+
+        protected override bool SupportsClientWindowsIdentity
+        {
+            get { return false; }
         }
-        
-        protected override bool SupportsServerAuthentication 
-        { 
-            get { return false; } 
+
+        protected override bool SupportsServerAuthentication
+        {
+            get { return false; }
         }
 
         protected override SecurityKeyIdentifierClause CreateKeyIdentifierClause(SecurityToken token, SecurityTokenReferenceStyle referenceStyle)
@@ -246,13 +246,13 @@ namespace Microsoft.ServiceModel.Samples
 
         protected override void WriteTokenCore(XmlWriter writer, SecurityToken token)
         {
-            if (writer == null) 
-            { 
-                throw new ArgumentNullException("writer"); 
+            if (writer == null)
+            {
+                throw new ArgumentNullException("writer");
             }
-            if (token == null) 
-            { 
-                throw new ArgumentNullException("token"); 
+            if (token == null)
+            {
+                throw new ArgumentNullException("token");
             }
 
             CreditCardToken c = token as CreditCardToken;
@@ -437,7 +437,7 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
     //</snippet8>
-    
+
     //<snippet9>
     public class CreditCardServiceCredentialsSecurityTokenManager : ServiceCredentialsSecurityTokenManager
     {
@@ -531,7 +531,7 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
     //</snippet11>
-    
+
     //<snippet13>
     public static class BindingHelper
     {
@@ -540,7 +540,7 @@ namespace Microsoft.ServiceModel.Samples
             HttpTransportBindingElement httpTransport = new HttpTransportBindingElement();
 
             // The message security binding element is configured to require a credit card
-            // token that is encrypted with the service's certificate. 
+            // token that is encrypted with the service's certificate.
             SymmetricSecurityBindingElement messageSecurity = new SymmetricSecurityBindingElement();
             messageSecurity.EndpointSupportingTokenParameters.SignedEncrypted.Add(new CreditCardTokenParameters());
             X509SecurityTokenParameters x509ProtectionParameters = new X509SecurityTokenParameters();

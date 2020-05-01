@@ -76,10 +76,10 @@ namespace Microsoft.ServiceModel.Samples
 
         public static void CallServiceCustomClientIdentity(string endpointName)
         {
-            // Create a custom binding that sets a custom IdentityVerifier. 
+            // Create a custom binding that sets a custom IdentityVerifier.
             Binding customSecurityBinding = CreateCustomSecurityBinding();
             // Call the service with DNS identity, setting a custom EndpointIdentity that checks that the certificate
-            // returned from the service contains an organization name of Contoso in the subject name; that is, O=Contoso. 
+            // returned from the service contains an organization name of Contoso in the subject name; that is, O=Contoso.
             EndpointAddress serviceAddress = new EndpointAddress(new Uri("http://localhost:8003/servicemodelsamples/service/dnsidentity"),
                                                                   new OrgEndpointIdentity("O=Contoso"));
             //<snippet4>
@@ -90,12 +90,12 @@ namespace Microsoft.ServiceModel.Samples
                                                                                   StoreName.TrustedPeople,
                                                                                   X509FindType.FindBySubjectDistinguishedName,
                                                                                   "CN=identity.com, O=Contoso");
-                // Setting the certificateValidationMode to PeerOrChainTrust means that if the certificate 
+                // Setting the certificateValidationMode to PeerOrChainTrust means that if the certificate
                 // is in the user's Trusted People store, then it will be trusted without performing a
-                // validation of the certificate's issuer chain. This setting is used here for convenience so that the 
+                // validation of the certificate's issuer chain. This setting is used here for convenience so that the
                 // sample can be run without having to have certificates issued by a certificate authority (CA).
-                // This setting is less secure than the default, ChainTrust. The security implications of this 
-                // setting should be carefully considered before using PeerOrChainTrust in production code. 
+                // This setting is less secure than the default, ChainTrust. The security implications of this
+                // setting should be carefully considered before using PeerOrChainTrust in production code.
                 client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.PeerOrChainTrust;
 
                 Console.WriteLine("Calling Endpoint: {0}", endpointName);
@@ -121,7 +121,7 @@ namespace Microsoft.ServiceModel.Samples
             WSHttpBinding binding = new WSHttpBinding(SecurityMode.Message);
             //Clients are anonymous to the service.
             binding.Security.Message.ClientCredentialType = MessageCredentialType.None;
-            //Secure conversation is turned off for simplification. If secure conversation is turned on, then 
+            //Secure conversation is turned off for simplification. If secure conversation is turned on, then
             //you also need to set the IdentityVerifier on the secureconversation bootstrap binding.
             binding.Security.Message.EstablishSecurityContext = false;
 
@@ -156,7 +156,7 @@ namespace Microsoft.ServiceModel.Samples
     //</snippet6>
 
     // This custom IdentityVerifier uses the supplied OrgEndpointIdentity to check that that
-    // X.509 certificate's distinguished name claim contains the organization name; for example, O=Contoso. 
+    // X.509 certificate's distinguished name claim contains the organization name; for example, O=Contoso.
     //<snippet5>
     class CustomIdentityVerifier : IdentityVerifier
     {

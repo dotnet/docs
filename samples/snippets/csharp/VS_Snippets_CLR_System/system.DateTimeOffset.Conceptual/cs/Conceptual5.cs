@@ -6,7 +6,7 @@ public class TimeZoneAwareArithmetic
    public static void Main()
    {
       const string tzName = "Central Standard Time";
-      
+
       DateTime generalTime = new DateTime(2008, 3, 9, 1, 30, 0);
       TimeZoneInfo cst = TimeZoneInfo.FindSystemTimeZoneById(tzName);
       TimeSpan twoAndAHalfHours = new TimeSpan(2, 30, 0);
@@ -14,18 +14,18 @@ public class TimeZoneAwareArithmetic
       // Instantiate DateTimeOffset value to have correct CST offset
       try
       {
-         DateTimeOffset centralTime1 = new DateTimeOffset(generalTime, 
+         DateTimeOffset centralTime1 = new DateTimeOffset(generalTime,
                                        cst.GetUtcOffset(generalTime));
-      
+
          // Add two and a half hours
          DateTimeOffset utcTime = centralTime1.ToUniversalTime();
          utcTime += twoAndAHalfHours;
-               
+
          DateTimeOffset centralTime2 = TimeZoneInfo.ConvertTime(utcTime, cst);
          // Display result
-         Console.WriteLine("{0} + {1} hours = {2}", centralTime1, 
-                                                    twoAndAHalfHours.ToString(), 
-                                                    centralTime2);  
+         Console.WriteLine("{0} + {1} hours = {2}", centralTime1,
+                                                    twoAndAHalfHours.ToString(),
+                                                    centralTime2);
       }
       catch (TimeZoneNotFoundException)
       {

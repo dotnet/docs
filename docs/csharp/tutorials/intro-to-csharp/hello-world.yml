@@ -148,6 +148,8 @@ items:
     Console.WriteLine($"[{trimmedGreeting}]");
     ```
 
+    The square brackets `[` and `]` help visualize what the `Trim`, `TrimStart` and `TrimEnd` methods do. The brackets show where whitespace starts and ends.
+
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string but doesn't change the original message.
 
     There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor before. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:

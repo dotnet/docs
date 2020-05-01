@@ -20,10 +20,10 @@ namespace ImageElementExample
       {
          //<SnippetSimpleCSharp1>
          //Create Image Element
-         Image simpleImage = new Image();    
+         Image simpleImage = new Image();
          simpleImage.Width = 200;
          simpleImage.Margin = new Thickness(5);
-         
+
          //Create source
          BitmapImage bi = new BitmapImage();
          //BitmapImage.UriSource must be in a BeginInit/EndInit block

@@ -17,7 +17,7 @@ namespace cs_test20730build
           //  Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 
             // <Snippet1>
-// DataContext takes a connection string. 
+// DataContext takes a connection string.
 DataContext db = new DataContext(@"c:\Northwind.mdf");
 
 // Get a typed table to run queries.
@@ -90,7 +90,7 @@ foreach (var cust in query)
         // </Snippet2>
 
        void method()
-        {            
+        {
             // <Snippet5>
             Northwnd db = new Northwnd(@"c:\Northwnd.mdf");
             var query =

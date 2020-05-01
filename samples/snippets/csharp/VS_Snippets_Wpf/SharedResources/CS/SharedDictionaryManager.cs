@@ -15,10 +15,10 @@ namespace ElementResourcesCustomControlLibrary
                 if (_sharedDictionary == null)
                 {
                     System.Uri resourceLocater =
-                        new System.Uri("/ElementResourcesCustomControlLibrary;component/Dictionary1.xaml", 
+                        new System.Uri("/ElementResourcesCustomControlLibrary;component/Dictionary1.xaml",
                                         System.UriKind.Relative);
 
-                    _sharedDictionary = 
+                    _sharedDictionary =
                         (ResourceDictionary)Application.LoadComponent(resourceLocater);
                 }
 

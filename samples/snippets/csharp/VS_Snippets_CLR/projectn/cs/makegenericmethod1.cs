@@ -24,7 +24,7 @@ public class Class1
       if (t == null) {
          Console.WriteLine("t is null!");
          return;
-      }   
+      }
       Console.WriteLine(t.GetType().Name);
       Console.WriteLine("The value is {0}", t);
    }

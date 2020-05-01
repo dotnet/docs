@@ -11,7 +11,7 @@ class DirAppend
             Log("Test1", w);
             Log("Test2", w);
         }
-        
+
         using (StreamReader r = File.OpenText("log.txt"))
         {
             DumpLog(r);

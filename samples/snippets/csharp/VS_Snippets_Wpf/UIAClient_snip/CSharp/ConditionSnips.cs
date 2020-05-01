@@ -86,7 +86,7 @@ namespace CustomElementClient
         }
         // </Snippet120>
 
-        // <Snippet178> 
+        // <Snippet178>
         /// <summary>
         /// Examples of using predefined conditions to find elements.
         /// </summary>
@@ -125,7 +125,7 @@ namespace CustomElementClient
                 Console.WriteLine(autoElement.Current.Name);
             }
         }
-        // </Snippet178>        
+        // </Snippet178>
 
         // <Snippet176>
         /// <summary>
@@ -185,7 +185,7 @@ namespace CustomElementClient
         }
         // </Snippet175>
 
-        // <Snippet177> 
+        // <Snippet177>
         /// <summary>
         /// Uses NotCondition to retrieve elements that do not match specified conditions.
         /// </summary>

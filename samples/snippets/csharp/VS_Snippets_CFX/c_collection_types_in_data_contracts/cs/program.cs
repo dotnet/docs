@@ -98,7 +98,7 @@ namespace Microsoft.Security.Samples
         }
     }
 
-    // This is the generated code. Note that the class is renamed to "CustomBookList", 
+    // This is the generated code. Note that the class is renamed to "CustomBookList",
     // and the ItemName is set to "CustomItem".
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(ItemName = "CustomItem")]
@@ -153,7 +153,7 @@ namespace Microsoft.Security.Samples
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Windows;
 
-            // Create the Type instances for later use and the Uri for 
+            // Create the Type instances for later use and the Uri for
             // the base address.
             Type contractType = typeof(ICatalog);
             Type serviceType = typeof(Catalog);
@@ -221,7 +221,7 @@ namespace Microsoft.Security.Samples
     // </Snippet1>
 
     // <Snippet2>
-    [CollectionDataContract] 
+    [CollectionDataContract]
     public class CustomerList2 : Collection<string> {}
     // </Snippet2>
 
@@ -237,9 +237,9 @@ namespace Microsoft.Security.Samples
 
     // <Snippet5>
     [CollectionDataContract
-        (Name = "CountriesOrRegionsWithCapitals", 
-        ItemName = "entry", 
-        KeyName = "countryorregion", 
+        (Name = "CountriesOrRegionsWithCapitals",
+        ItemName = "entry",
+        KeyName = "countryorregion",
         ValueName = "capital")]
     public class CountriesOrRegionsWithCapitals2 : Dictionary<string, string> { }
     // </Snippet5>
@@ -271,9 +271,9 @@ namespace Microsoft.Security.Samples
     }
 
     [DataContract]
-    [KnownType(typeof(List<object>))] 
+    [KnownType(typeof(List<object>))]
     //required because List<object> is used polymorphically
-    //does not conflict with ArrayList above because it's a different scope, 
+    //does not conflict with ArrayList above because it's a different scope,
     //even though it's the same data contract
     [KnownType(typeof(InHouseTraining))] //Required if InHouseTraining can be used in the collection
     [KnownType(typeof(OutsideTraining))] //Required if OutsideTraining can be used in the collection

@@ -8,7 +8,7 @@ namespace SqlPrepareCS
     {
         static void Main()
         {
-            string connectionString = 
+            string connectionString =
                 "Persist Security Info=False;Integrated Security=true;database=Northwind;server=(local)";
             LocalTrans(connectionString);
             Console.ReadLine();
@@ -53,8 +53,8 @@ namespace SqlPrepareCS
                     }
                     catch (Exception exRollback)
                     {
-                        // Throws an InvalidOperationException if the connection 
-                        // is closed or the transaction has already been rolled 
+                        // Throws an InvalidOperationException if the connection
+                        // is closed or the transaction has already been rolled
                         // back on the server.
                         Console.WriteLine(exRollback.Message);
                     }

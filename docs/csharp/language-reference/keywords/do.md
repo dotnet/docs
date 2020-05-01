@@ -16,7 +16,7 @@ At any point within the `do` statement block, you can break out of the loop by u
 
 You can step directly to the evaluation of the `while` expression by using the [continue](continue.md) statement. If the expression evaluates to `true`, execution continues at the first statement in the loop. Otherwise, execution continues at the first statement after the loop.
 
-You also can exit a `do-while` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
+You can also exit a `do-while` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
 
 ## Example
 

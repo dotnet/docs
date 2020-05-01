@@ -44,7 +44,7 @@ namespace TextBox_MiscCode
         // <Snippet_TextChangedEventHandler>
         // TextChangedEventHandler delegate method.
         private void textChangedEventHandler(object sender, TextChangedEventArgs args)
-        {    
+        {
             // Omitted Code: Insert code that does something whenever
             // the text changes...
         } // end textChangedEventHandler

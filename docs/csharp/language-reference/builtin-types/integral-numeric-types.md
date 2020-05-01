@@ -103,7 +103,7 @@ byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
 
 As the preceding example shows, if the literal's value is not within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
 
-You also can use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
+You can also use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
 
 ```csharp
 var signedByte = (sbyte)42;
@@ -112,7 +112,7 @@ var longVariable = (long)42;
 
 ## Conversions
 
-You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use the [cast operator `()`](../operators/type-testing-and-cast.md#cast-operator-) to invoke an explicit conversion. For more information, see [Built-in numeric conversions](numeric-conversions.md).
+You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use a [cast expression](../operators/type-testing-and-cast.md#cast-expression) to perform an explicit conversion. For more information, see [Built-in numeric conversions](numeric-conversions.md).
 
 ## C# language specification
 

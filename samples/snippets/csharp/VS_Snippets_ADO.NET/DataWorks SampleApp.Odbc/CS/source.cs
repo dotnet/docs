@@ -8,7 +8,7 @@ class Program
 {
     static void Main()
     {
-        // The connection string assumes that the Access 
+        // The connection string assumes that the Access
         // Northwind.mdb is located in the c:\Data folder.
         string connectionString =
             "Driver={Microsoft Access Driver (*.mdb)};"
@@ -33,7 +33,7 @@ class Program
             OdbcCommand command = new OdbcCommand(queryString, connection);
             command.Parameters.AddWithValue("@pricePoint", paramValue);
 
-            // Open the connection in a try/catch block. 
+            // Open the connection in a try/catch block.
             // Create and execute the DataReader, writing the result
             // set to the console window.
             try
@@ -55,4 +55,4 @@ class Program
         }
     }
 }
-// </Snippet1>   
+// </Snippet1>

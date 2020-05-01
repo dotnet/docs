@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class Sports
 {
-   private string[] types = { "Baseball", "Basketball", "Football", 
-                              "Hockey", "Soccer", "Tennis", 
-                              "Volleyball" }; 
+   private string[] types = { "Baseball", "Basketball", "Football",
+                              "Hockey", "Soccer", "Tennis",
+                              "Volleyball" };
 
    public string this[int i]
    {

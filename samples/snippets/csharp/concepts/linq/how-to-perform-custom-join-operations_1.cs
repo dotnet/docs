@@ -17,10 +17,10 @@
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-                { 
+                {
                     new Category(){Name="Beverages", ID=001},
                     new Category(){ Name="Condiments", ID=002},
-                    new Category(){ Name="Vegetables", ID=003},         
+                    new Category(){ Name="Vegetables", ID=003},
                 };
 
                 // Specify the second data source.

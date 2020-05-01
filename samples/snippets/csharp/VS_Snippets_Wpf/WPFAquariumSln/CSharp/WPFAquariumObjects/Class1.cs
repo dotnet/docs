@@ -80,7 +80,7 @@ namespace WPFAquariumObjects
       : base()
     {
     }
-//<SnippetRODPOverride> 
+//<SnippetRODPOverride>
     static Fishbowl() {
       Aquarium.AquariumSizeKey.OverrideMetadata(
         typeof(Aquarium),
@@ -99,7 +99,7 @@ namespace WPFAquariumObjects
         //other constraints assure that H,W are positive
         return Convert.ToInt32(Math.PI * (fb.Width / 2) * (fb.Height / 2));
     }
-    //</SnippetRODPOverride> 
+    //</SnippetRODPOverride>
   }
 
   public abstract class AquariumObject : Shape{
@@ -141,7 +141,7 @@ namespace WPFAquariumObjects
       typeof(Uri),
       typeof(AquariumObject),
       new FrameworkPropertyMetadata(null,
-          FrameworkPropertyMetadataOptions.AffectsRender, 
+          FrameworkPropertyMetadataOptions.AffectsRender,
           new PropertyChangedCallback(OnUriChanged)
       )
     );
@@ -166,7 +166,7 @@ namespace WPFAquariumObjects
       AquariumGraphicProperty.OverrideMetadata(typeof(Fish), new FrameworkPropertyMetadata(new System.Uri("fish.gif", UriKind.RelativeOrAbsolute), FrameworkPropertyMetadataOptions.AffectsRender));
     }
     public Fish() : base() {
-    } 
+    }
 
     protected override Geometry DefiningGeometry
     {

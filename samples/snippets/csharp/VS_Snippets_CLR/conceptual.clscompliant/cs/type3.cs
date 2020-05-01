@@ -3,21 +3,21 @@ using System;
 
 [assembly: CLSCompliant(true)]
 
-[CLSCompliant(false)] 
+[CLSCompliant(false)]
 public class Counter
 {
    UInt32 ctr;
-   
+
    public Counter()
    {
       ctr = 0;
    }
-   
+
    protected Counter(UInt32 ctr)
    {
       this.ctr = ctr;
    }
-   
+
    public override string ToString()
    {
       return String.Format("{0}). ", ctr);
@@ -27,8 +27,8 @@ public class Counter
    {
       get { return ctr; }
    }
-   
-   public void Increment() 
+
+   public void Increment()
    {
       ctr += (uint) 1;
    }
@@ -39,7 +39,7 @@ public class NonZeroCounter : Counter
    public NonZeroCounter(int startIndex) : this((uint) startIndex)
    {
    }
-   
+
    private NonZeroCounter(UInt32 startIndex) : base(startIndex)
    {
    }

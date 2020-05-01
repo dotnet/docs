@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9e248549-10ca-43a3-bb5e-60f583d369f1
 ---
 # LinkLabel Control Overview (Windows Forms)
-The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to add Web-style links to Windows Forms applications. You can use the <xref:System.Windows.Forms.LinkLabel> control for everything that you can use the <xref:System.Windows.Forms.Label> control for; you also can set part of the text as a link to a file, folder, or Web page.  
+The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to add Web-style links to Windows Forms applications. You can use the <xref:System.Windows.Forms.LinkLabel> control for everything that you can use the <xref:System.Windows.Forms.Label> control for; you can also set part of the text as a link to a file, folder, or Web page.  
   
 ## What You Can Do with the LinkLabel Control  
  In addition to all the properties, methods, and events of the <xref:System.Windows.Forms.Label> control, the <xref:System.Windows.Forms.LinkLabel> control has properties for hyperlinks and link colors. The <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> property sets the area of the text that activates the link. The <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.ActiveLinkColor%2A> properties set the colors of the link. The <xref:System.Windows.Forms.LinkLabel.LinkClicked> event determines what happens when the link text is selected.  

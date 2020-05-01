@@ -56,7 +56,7 @@ namespace operators
             // <SnippetIsWithInt>
             int i = 27;
             Console.WriteLine(i is System.IFormattable);  // output: True
-            
+
             object iBoxed = i;
             Console.WriteLine(iBoxed is int);  // output: True
             Console.WriteLine(iBoxed is long);  // output: False

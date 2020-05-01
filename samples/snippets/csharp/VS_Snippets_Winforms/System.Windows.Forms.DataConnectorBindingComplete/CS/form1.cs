@@ -37,7 +37,7 @@ class Form1 : Form
 		// Set the DataSource of BindingSource1 to the Part type.
 		BindingSource1.DataSource = typeof(Part);
 
-		// Bind the textboxes to the properties of the Part type, 
+		// Bind the textboxes to the properties of the Part type,
 		// enabling formatting.
 		partNameBinding = textBox1.DataBindings.Add("Text",
 			BindingSource1, "PartName", true);
@@ -49,7 +49,7 @@ class Form1 : Form
 		textBox3.DataBindings.Add("Text", BindingSource1, "PartPrice", true,
 			DataSourceUpdateMode.OnPropertyChanged, 0, "C");
 
-		// Handle the BindingComplete event for BindingSource1 and 
+		// Handle the BindingComplete event for BindingSource1 and
 		// the partNameBinding.
 		partNumberBinding.BindingComplete +=
 			new BindingCompleteEventHandler(partNumberBinding_BindingComplete);
@@ -60,7 +60,7 @@ class Form1 : Form
 		BindingSource1.Add(new Part("Widget", 1234, 12.45));
 	}
 
-	// Handle the BindingComplete event to catch errors and exceptions 
+	// Handle the BindingComplete event to catch errors and exceptions
 	// in binding process.
 	void partNumberBinding_BindingComplete(object sender,
 		BindingCompleteEventArgs e)
@@ -69,7 +69,7 @@ class Form1 : Form
 			MessageBox.Show("partNumberBinding: " + e.ErrorText);
 	}		
 
-	// Handle the BindingComplete event to catch errors and 
+	// Handle the BindingComplete event to catch errors and
 	// exceptions in binding process.
 	void partNameBinding_BindingComplete(object sender,
 		BindingCompleteEventArgs e)

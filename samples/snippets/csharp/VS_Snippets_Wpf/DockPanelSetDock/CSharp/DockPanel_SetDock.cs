@@ -26,7 +26,7 @@ namespace DockPanel_SetDock
             // <Snippet1>
 			// Create the Panel DockPanel
 			dp1 = new DockPanel();
-            
+
 			// Create a Text Control and then set its Dock property
 			txt1 = new TextBlock();
 			DockPanel.SetDock(txt1, System.Windows.Controls.Dock.Top);

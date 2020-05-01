@@ -9,7 +9,7 @@ using System.Threading.Tasks.Dataflow;
 class Program
 {
    // <snippet1>
-   // Creates a IPropagatorBlock<T, T[]> object propagates data in a 
+   // Creates a IPropagatorBlock<T, T[]> object propagates data in a
    // sliding window fashion.
    public static IPropagatorBlock<T, T[]> CreateSlidingWindow<T>(int windowSize)
    {
@@ -26,11 +26,11 @@ class Program
          // Add the item to the queue.
          queue.Enqueue(item);
          // Remove the oldest item when the queue size exceeds the window size.
-         if (queue.Count > windowSize) 
+         if (queue.Count > windowSize)
             queue.Dequeue();
          // Post the data in the queue to the source block when the queue size
          // equals the window size.
-         if (queue.Count == windowSize) 
+         if (queue.Count == windowSize)
             source.Post(queue.ToArray());
       });
 
@@ -38,12 +38,12 @@ class Program
       // remaining data and set the source to the completed state.
       target.Completion.ContinueWith(delegate
       {
-         if (queue.Count > 0 && queue.Count < windowSize) 
+         if (queue.Count > 0 && queue.Count < windowSize)
             source.Post(queue.ToArray());
          source.Complete();
       });
 
-      // Return a IPropagatorBlock<T, T[]> object that encapsulates the 
+      // Return a IPropagatorBlock<T, T[]> object that encapsulates the
       // target and source blocks.
       return DataflowBlock.Encapsulate(target, source);
    }
@@ -51,7 +51,7 @@ class Program
 
    // <snippet2>
    // Propagates data in a sliding window fashion.
-   public class SlidingWindowBlock<T> : IPropagatorBlock<T, T[]>, 
+   public class SlidingWindowBlock<T> : IPropagatorBlock<T, T[]>,
                                         IReceivableSourceBlock<T[]>
    {
       // The size of the window.
@@ -110,7 +110,7 @@ class Program
          return m_source.TryReceive(filter, out item);
       }
 
-      // Attempts to remove all available elements from the source into a new 
+      // Attempts to remove all available elements from the source into a new
       // array that is returned.
       public bool TryReceiveAll(out IList<T[]> items)
       {
@@ -127,24 +127,24 @@ class Program
          return m_source.LinkTo(target, linkOptions);
       }
 
-      // Called by a target to reserve a message previously offered by a source 
+      // Called by a target to reserve a message previously offered by a source
       // but not yet consumed by this target.
-      bool ISourceBlock<T[]>.ReserveMessage(DataflowMessageHeader messageHeader, 
+      bool ISourceBlock<T[]>.ReserveMessage(DataflowMessageHeader messageHeader,
          ITargetBlock<T[]> target)
       {
          return m_source.ReserveMessage(messageHeader, target);
       }
 
       // Called by a target to consume a previously offered message from a source.
-      T[] ISourceBlock<T[]>.ConsumeMessage(DataflowMessageHeader messageHeader, 
+      T[] ISourceBlock<T[]>.ConsumeMessage(DataflowMessageHeader messageHeader,
          ITargetBlock<T[]> target, out bool messageConsumed)
       {
-         return m_source.ConsumeMessage(messageHeader, 
+         return m_source.ConsumeMessage(messageHeader,
             target, out messageConsumed);
       }
 
       // Called by a target to release a previously reserved message from a source.
-      void ISourceBlock<T[]>.ReleaseReservation(DataflowMessageHeader messageHeader, 
+      void ISourceBlock<T[]>.ReleaseReservation(DataflowMessageHeader messageHeader,
          ITargetBlock<T[]> target)
       {
          m_source.ReleaseReservation(messageHeader, target);
@@ -154,12 +154,12 @@ class Program
 
       #region ITargetBlock<TInput> members
 
-      // Asynchronously passes a message to the target block, giving the target the 
+      // Asynchronously passes a message to the target block, giving the target the
       // opportunity to consume the message.
-      DataflowMessageStatus ITargetBlock<T>.OfferMessage(DataflowMessageHeader messageHeader, 
+      DataflowMessageStatus ITargetBlock<T>.OfferMessage(DataflowMessageHeader messageHeader,
          T messageValue, ISourceBlock<T> source, bool consumeToAccept)
       {
-         return m_target.OfferMessage(messageHeader, 
+         return m_target.OfferMessage(messageHeader,
             messageValue, source, consumeToAccept);
       }
 
@@ -170,8 +170,8 @@ class Program
       // Gets a Task that represents the completion of this dataflow block.
       public Task Completion { get { return m_source.Completion; } }
 
-      // Signals to this target block that it should not accept any more messages, 
-      // nor consume postponed messages. 
+      // Signals to this target block that it should not accept any more messages,
+      // nor consume postponed messages.
       public void Complete()
       {
          m_target.Complete();
@@ -187,7 +187,7 @@ class Program
    // </snippet2>
 
    // Demonstrates usage of the sliding window block by sending the provided
-   // values to the provided propagator block and printing the output of 
+   // values to the provided propagator block and printing the output of
    // that block to the console.
    static void DemonstrateSlidingWindow<T>(IPropagatorBlock<T, T[]> slidingWindow,
       IEnumerable<T> values)
@@ -236,7 +236,7 @@ class Program
    static void Main(string[] args)
    {
 
-      Console.Write("Using the DataflowBlockExtensions.Encapsulate method "); 
+      Console.Write("Using the DataflowBlockExtensions.Encapsulate method ");
       Console.WriteLine("(T=int, windowSize=3):");
       DemonstrateSlidingWindow(CreateSlidingWindow<int>(3), Enumerable.Range(0, 10));
 
@@ -245,7 +245,7 @@ class Program
       var slidingWindow = new SlidingWindowBlock<char>(4);
 
       Console.Write("Using SlidingWindowBlock<T> ");
-      Console.WriteLine("(T=char, windowSize={0}):", slidingWindow.WindowSize);      
+      Console.WriteLine("(T=char, windowSize={0}):", slidingWindow.WindowSize);
       DemonstrateSlidingWindow(slidingWindow, from n in Enumerable.Range(65, 10)
                                               select (char)n);
    }

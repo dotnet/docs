@@ -13,7 +13,7 @@ namespace tuples
         public bool IsDone { get; set; }
         public DateTime DueDate { get; set; }
         public string Title { get; set; }
-        public string Notes { get; set; }    
+        public string Notes { get; set; }
     }
     #endregion
 
@@ -71,6 +71,6 @@ namespace tuples
                    orderby item.DueDate
                    select (item.ID, item.Title);
         }
-        #endregion 
+        #endregion
     }
 }

@@ -24,7 +24,7 @@ namespace Service
             // <Snippet10>
             XmlReader reader = XmlReader.Create("http://localhost:8000/BlogService/GetBlog");
             SyndicationFeed feed = SyndicationFeed.Load(reader);
-                
+
             // </Snippet10>
             // <Snippet11>
             Console.WriteLine(feed.Title.Text);

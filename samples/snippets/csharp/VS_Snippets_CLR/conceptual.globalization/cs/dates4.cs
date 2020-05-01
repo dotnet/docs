@@ -8,17 +8,17 @@ public class Example
    public static void Main()
    {
       BinaryFormatter formatter = new BinaryFormatter();
-       
+
       DateTime dateOriginal = new DateTime(2013, 3, 30, 18, 0, 0);
       dateOriginal = DateTime.SpecifyKind(dateOriginal, DateTimeKind.Local);
 
       // Serialize a date.
       if (! File.Exists("DateInfo.dat")) {
          StreamWriter sw = new StreamWriter("DateInfo.dat");
-         sw.Write("{0:G}|{0:s}|{0:o}", dateOriginal); 
+         sw.Write("{0:G}|{0:s}|{0:o}", dateOriginal);
          sw.Close();
          Console.WriteLine("Serialized dates to DateInfo.dat");
-      } 
+      }
       // Serialize the data as a binary value.
       if (! File.Exists("DateInfo.bin")) {
          FileStream fsIn = new FileStream("DateInfo.bin", FileMode.Create);
@@ -27,7 +27,7 @@ public class Example
          Console.WriteLine("Serialized date to DateInfo.bin");
       }
       Console.WriteLine();
-              
+
       // Restore the date from string values.
       StreamReader sr = new StreamReader("DateInfo.dat");
       string datesToSplit = sr.ReadToEnd();
@@ -38,7 +38,7 @@ public class Example
                            dateStr, newDate, newDate.Kind);
       }
       Console.WriteLine();
-      
+
       // Restore the date from binary data.
       FileStream fsOut = new FileStream("DateInfo.bin", FileMode.Open);
       DateTime restoredDate = (DateTime) formatter.Deserialize(fsOut);

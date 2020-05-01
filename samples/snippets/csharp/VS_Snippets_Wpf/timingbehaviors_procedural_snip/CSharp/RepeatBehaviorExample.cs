@@ -17,10 +17,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public RepeatBehaviorExample()
         {
-        
+
             // Create a name scope for the page.
-            NameScope.SetNameScope(this, new NameScope());        
-        
+            NameScope.SetNameScope(this, new NameScope());
+
             this.WindowTitle = "RepeatBehavior Example";
 
             Border myBorder = new Border();

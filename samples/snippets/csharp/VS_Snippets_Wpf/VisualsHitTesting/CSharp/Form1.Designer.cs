@@ -47,9 +47,9 @@
             this.AllLayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // menuStrip1
-            // 
+            //
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CirclesToolStripMenuItem,
             this.SettingToolStripMenuItem,
@@ -59,37 +59,37 @@
             this.menuStrip1.Size = new System.Drawing.Size(634, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
+            //
             // CirclesToolStripMenuItem
-            // 
+            //
             this.CirclesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FillWithCirclesToolStripMenuItem,
             this.AddCircleChildToolStripMenuItem});
             this.CirclesToolStripMenuItem.Name = "CirclesToolStripMenuItem";
             this.CirclesToolStripMenuItem.Text = "Circles";
-            // 
+            //
             // FillWithCirclesToolStripMenuItem
-            // 
+            //
             this.FillWithCirclesToolStripMenuItem.Name = "FillWithCirclesToolStripMenuItem";
             this.FillWithCirclesToolStripMenuItem.Text = "Fill with Circles";
             this.FillWithCirclesToolStripMenuItem.Click += new System.EventHandler(this.FillWithCirclesToolStripMenuItem_Click);
-            // 
+            //
             // AddCircleChildToolStripMenuItem
-            // 
+            //
             this.AddCircleChildToolStripMenuItem.Name = "AddCircleChildToolStripMenuItem";
             this.AddCircleChildToolStripMenuItem.Text = "Add a Circle";
             this.AddCircleChildToolStripMenuItem.Click += new System.EventHandler(this.AddChildToolStripMenuItem_Click);
-            // 
+            //
             // SettingToolStripMenuItem
-            // 
+            //
             this.SettingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.circleSizeToolStripMenuItem,
             this.numberofRingsToolStripMenuItem});
             this.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem";
             this.SettingToolStripMenuItem.Text = "Setting";
-            // 
+            //
             // circleSizeToolStripMenuItem
-            // 
+            //
             this.circleSizeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SmallToolStripMenuItem,
             this.MediumToolStripMenuItem,
@@ -97,86 +97,86 @@
             this.RandomToolStripMenuItem});
             this.circleSizeToolStripMenuItem.Name = "circleSizeToolStripMenuItem";
             this.circleSizeToolStripMenuItem.Text = "Circle Size";
-            // 
+            //
             // SmallToolStripMenuItem
-            // 
+            //
             this.SmallToolStripMenuItem.Name = "SmallToolStripMenuItem";
             this.SmallToolStripMenuItem.Text = "Small";
             this.SmallToolStripMenuItem.Click += new System.EventHandler(this.SmallToolStripMenuItem_Click);
-            // 
+            //
             // MediumToolStripMenuItem
-            // 
+            //
             this.MediumToolStripMenuItem.Checked = true;
             this.MediumToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MediumToolStripMenuItem.Name = "MediumToolStripMenuItem";
             this.MediumToolStripMenuItem.Text = "Medium";
             this.MediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
-            // 
+            //
             // LargeToolStripMenuItem
-            // 
+            //
             this.LargeToolStripMenuItem.Name = "LargeToolStripMenuItem";
             this.LargeToolStripMenuItem.Text = "Large";
             this.LargeToolStripMenuItem.Click += new System.EventHandler(this.LargeToolStripMenuItem_Click);
-            // 
+            //
             // RandomToolStripMenuItem
-            // 
+            //
             this.RandomToolStripMenuItem.Name = "RandomToolStripMenuItem";
             this.RandomToolStripMenuItem.Text = "Random";
             this.RandomToolStripMenuItem.Click += new System.EventHandler(this.RandomToolStripMenuItem_Click);
-            // 
+            //
             // numberofRingsToolStripMenuItem
-            // 
+            //
             this.numberofRingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ThreeToolStripMenuItem,
             this.FiveToolStripMenuItem,
             this.EightToolStripMenuItem});
             this.numberofRingsToolStripMenuItem.Name = "numberofRingsToolStripMenuItem";
             this.numberofRingsToolStripMenuItem.Text = "Number of Rings";
-            // 
+            //
             // ThreeToolStripMenuItem
-            // 
+            //
             this.ThreeToolStripMenuItem.Name = "ThreeToolStripMenuItem";
             this.ThreeToolStripMenuItem.Text = "3";
             this.ThreeToolStripMenuItem.Click += new System.EventHandler(this.ThreeToolStripMenuItem_Click);
-            // 
+            //
             // FiveToolStripMenuItem
-            // 
+            //
             this.FiveToolStripMenuItem.Checked = true;
             this.FiveToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.FiveToolStripMenuItem.Name = "FiveToolStripMenuItem";
             this.FiveToolStripMenuItem.Text = "5";
             this.FiveToolStripMenuItem.Click += new System.EventHandler(this.FiveToolStripMenuItem_Click);
-            // 
+            //
             // EightToolStripMenuItem
-            // 
+            //
             this.EightToolStripMenuItem.Name = "EightToolStripMenuItem";
             this.EightToolStripMenuItem.Text = "8";
             this.EightToolStripMenuItem.Click += new System.EventHandler(this.EightToolStripMenuItem_Click);
-            // 
+            //
             // behaviorToolStripMenuItem
-            // 
+            //
             this.behaviorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TopmostLayerToolStripMenuItem,
             this.AllLayersToolStripMenuItem});
             this.behaviorToolStripMenuItem.Name = "behaviorToolStripMenuItem";
             this.behaviorToolStripMenuItem.Text = "Behavior";
-            // 
+            //
             // TopmostLayerToolStripMenuItem
-            // 
+            //
             this.TopmostLayerToolStripMenuItem.Checked = true;
             this.TopmostLayerToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.TopmostLayerToolStripMenuItem.Name = "TopmostLayerToolStripMenuItem";
             this.TopmostLayerToolStripMenuItem.Text = "Top-most Layer";
             this.TopmostLayerToolStripMenuItem.Click += new System.EventHandler(this.TopmostLayerToolStripMenuItem_Click);
-            // 
+            //
             // AllLayersToolStripMenuItem
-            // 
+            //
             this.AllLayersToolStripMenuItem.Name = "AllLayersToolStripMenuItem";
             this.AllLayersToolStripMenuItem.Text = "All Layers";
             this.AllLayersToolStripMenuItem.Click += new System.EventHandler(this.AllLayersToolStripMenuItem_Click);
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;

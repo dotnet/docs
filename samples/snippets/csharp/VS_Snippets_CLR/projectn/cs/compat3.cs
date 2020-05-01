@@ -8,5 +8,5 @@ public class X
    public InnerType instance { get; set; }
 }
 
-public class Y : X {} 
+public class Y : X {}
 // </Snippet10>

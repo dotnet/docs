@@ -22,7 +22,7 @@ Arrays can have more than one dimension. For example, the following declaration 
   
  [!code-csharp[csProgGuideArrays#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#13)]  
   
- You also can initialize the array without specifying the rank.  
+ You can also initialize the array without specifying the rank.  
   
  [!code-csharp[csProgGuideArrays#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#14)]  
   

@@ -34,21 +34,21 @@ namespace Microsoft.Samples.BrushExamples
             myRectangle.Margin = new Thickness(0,5,0,0);
 
             // Load the image.
-            BitmapImage theImage = 
+            BitmapImage theImage =
                 new BitmapImage(
-                    new Uri("sampleImages\\testImage.gif", UriKind.Relative));   
+                    new Uri("sampleImages\\testImage.gif", UriKind.Relative));
             ImageBrush myImageBrush = new ImageBrush(theImage);
-            
+
             // Configure the brush so that it
             // doesn't stretch its image to fill
             // the rectangle.
             myImageBrush.Stretch = Stretch.None;
-  
+
             // Use the ImageBrush to paint the rectangle's background.
             myRectangle.Fill = myImageBrush;
             // </SnippetGraphicsMMNoStretchExample>
-            
-            mainPanel.Children.Add(myRectangle);            
+
+            mainPanel.Children.Add(myRectangle);
         }
     }
 }

@@ -36,7 +36,7 @@ void Method1()
 // Load file from site of origin (application launch location)
 Uri uri = new Uri("SiteOfOriginFile.xaml", UriKind.Relative);
 StreamResourceInfo rootFolderInfo = Application.GetRemoteStream(uri);
-//</SnippetGetRemoteStreamRootFolderCODE> 
+//</SnippetGetRemoteStreamRootFolderCODE>
 }
 
 void Method2()

@@ -35,7 +35,7 @@ public class InkEraser : Label
         + "YNBJFLKBNqZTqNubWshl9VoM1reFYZYQEBGUsDAwKEjYuDQKBgICBgCAgIOAg4nI"
         + "8OACloSh/BFl4Gf/IOt6FXfF8F4ToPCZzlPwP4+B+DHmQO847rfDeCcG8eKh/EZV"
         + "4i9eZt8A9nUF8VzxaUe5grl7YrPaHfpRKJNx4yHmUuj1vicwmMBEAjUVgKB61A=";
-    
+
     public InkEraser()
     {
         presenter = new InkPresenter();
@@ -78,8 +78,8 @@ public class InkEraser : Label
         InitializeEraserHitTester(collectedPoints);
     }
 
-    // Prepare to collect stylus packets. Get the 
-    // IncrementalHitTester from the InkPresenter's 
+    // Prepare to collect stylus packets. Get the
+    // IncrementalHitTester from the InkPresenter's
     // StrokeCollection and subscribe to its StrokeHitChanged event.
     private void InitializeEraserHitTester(StylusPointCollection points)
     {
@@ -161,7 +161,7 @@ public class InkEraser : Label
     }
 
     // When the stylus intersects a stroke, erase that part of
-    // the stroke.  When the stylus dissects a stoke, the 
+    // the stroke.  When the stylus dissects a stoke, the
     // Stroke.Erase method returns a StrokeCollection that contains
     // the two new strokes.
     void eraseTester_StrokeHit(object sender,

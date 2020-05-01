@@ -3,14 +3,16 @@ title: "Serverless apps: Architecture, patterns, and Azure implementation"
 description: Guide to serverless architecture. Learn when, why, and how to implement a serverless architecture (as opposed to Infrastructure as a Service [IaaS] or Platform as a Service [PaaS]) for your enterprise applications.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
+ms.date: 04/22/2020
 ---
 
 # Serverless apps: Architecture, patterns, and Azure implementation
 
-![Screenshot that shows the Serverless Apps e-book cover.](./media/index/serverless-apps-cover.jpg)
+![Screenshot that shows the Serverless Apps e-book cover.](./media/index/serverless-apps-cover-v3.png)
 
-> DOWNLOAD available at: <https://aka.ms/serverless-ebook>
+**EDITION v3.0** - Updated to Azure Functions v3
+
+> DOWNLOAD available at: <https://aka.ms/serverlessbookpdf>
 
 PUBLISHED BY
 
@@ -22,7 +24,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2018 by Microsoft Corporation
+Copyright &copy; 2018-2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -38,7 +40,7 @@ All other marks and logos are property of their respective owners.
 
 Author:
 
-> **[Jeremy Likness](https://twitter.com/jeremylikness)**, Senior Cloud Advocate, Microsoft Corp.
+> **[Jeremy Likness](https://twitter.com/jeremylikness)**, Senior .NET Data Program Manager, Microsoft Corp.
 
 Contributor:
 
@@ -92,7 +94,7 @@ IaaS still requires heavy overhead because operations is still responsible for v
 - Keeping the operating system up-to-date.
 - Monitoring the application.
 
-The next evolution reduced the overhead by providing Platform as a Service (PaaS). With PaaS, the cloud provider handles operating systems, security patches, and even the required packages to support a specific platform. Instead of building a VM then configuring the .NET Framework and standing up Internet Information Services (IIS) servers, developers simply choose a "platform target" such as "web application" or "API endpoint" and deploy code directly. The infrastructure questions are reduced to:
+The next evolution reduced the overhead by providing Platform as a Service (PaaS). With PaaS, the cloud provider handles operating systems, security patches, and even the required packages to support a specific platform. Instead of building a VM then configuring .NET and standing up Internet Information Services (IIS) servers, developers simply choose a "platform target" such as "web application" or "API endpoint" and deploy code directly. The infrastructure questions are reduced to:
 
 - What size services are needed?
 - How do the services scale out (add more servers or nodes)?

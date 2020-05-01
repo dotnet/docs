@@ -6,7 +6,7 @@ using System.Text;
 namespace NullExamples
 {
     //<snippet1>
-   
+
     class Program
     {
         class MyClass
@@ -25,7 +25,7 @@ namespace NullExamples
             // Now the variable can be used, but...
             mc = null;
 
-            // ... a method call on a null object raises 
+            // ... a method call on a null object raises
             // a run-time NullReferenceException.
             // Uncomment the following line to see for yourself.
             // mc.MyMethod();
@@ -43,7 +43,7 @@ namespace NullExamples
             // A null string is not the same as an empty string.
             string s = null;
             string t = String.Empty; // Logically the same as ""
-            
+
             // Equals applied to any null object returns false.
             bool b = (t.Equals(s));
             Console.WriteLine(b);

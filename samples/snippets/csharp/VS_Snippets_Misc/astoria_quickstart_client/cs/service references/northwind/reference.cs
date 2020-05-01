@@ -12,7 +12,7 @@
 // Generation date: 3/20/2010 11:34:02 AM
 namespace NorthwindClient.Northwind
 {
-    
+
     /// <summary>
     /// There are no comments for NorthwindEntities in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace NorthwindClient.Northwind
         /// Initialize a new NorthwindEntities object.
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public NorthwindEntities(global::System.Uri serviceRoot) : 
+        public NorthwindEntities(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);

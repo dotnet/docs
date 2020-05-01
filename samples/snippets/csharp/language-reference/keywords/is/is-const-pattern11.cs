@@ -15,7 +15,7 @@ class Program
         {
             Console.WriteLine($"o is {o}");
         }
-        
+
         int? x = 10;
 
         if (x is null)
@@ -26,7 +26,7 @@ class Program
         {
             Console.WriteLine($"x is {x.Value}");
         }
-        
+
         // 'null' check comparison
         Console.WriteLine($"'is' constant pattern 'null' check result : { o is null }");
         Console.WriteLine($"object.ReferenceEquals 'null' check result : { object.ReferenceEquals(o, null) }");

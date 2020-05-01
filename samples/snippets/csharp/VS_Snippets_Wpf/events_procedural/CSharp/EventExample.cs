@@ -16,19 +16,19 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         {
             createExample();
         }
-        
+
         private Rectangle myRectangle;
-        
+
         private void createExample()
         {
-        
+
             NameScope.SetNameScope(this, new NameScope());
             myRectangle = new Rectangle();
             myRectangle.Width = 500;
             myRectangle.Height = 500;
             myRectangle.Fill = Brushes.Blue;
             this.RegisterName("myRectangle", myRectangle);
-            
+
             StackPanel panel = new StackPanel();
             panel.Children.Add(myRectangle);
 
@@ -50,22 +50,22 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             this.Content = panel;
         }
-        
+
         private void initialExample()
         {
 
             Storyboard myStoryboard = new Storyboard();
             myStoryboard.Begin(myRectangle, true);
-         
+
             // <SnippetNeedForEventsFragment>
             myStoryboard.Stop(myRectangle);
-            
+
             // This statement might execute
             // before the storyboard has stopped.
             myRectangle.Fill = Brushes.Blue;
             // </SnippetNeedForEventsFragment>
         }
-        
+
         private void betterExample()
         {
 
@@ -78,7 +78,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         }
 
         // <SnippetStoryboardCurrentStateInvalidatedEvent2>
-        // Change the rectangle's color after the storyboard stops. 
+        // Change the rectangle's color after the storyboard stops.
         void myStoryboard_CurrentStateInvalidated(object sender, EventArgs e)
         {
             Clock myStoryboardClock = (Clock)sender;

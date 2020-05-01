@@ -6,9 +6,9 @@ public class Example
 {
     // <Snippet13>
     static int N = 3;
-    
+
     static SemaphoreSlim m_throttle = new SemaphoreSlim(N, N);
-    
+
     static async Task DoOperation()
     {
         await m_throttle.WaitAsync();

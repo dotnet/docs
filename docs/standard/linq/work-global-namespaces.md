@@ -130,7 +130,7 @@ The example produces this output:
 
 ## Example: Use namespaces with XML properties
 
-If you are working with an XML tree that's in a namespace, and you use XML properties, then you must use a global namespace so that the XML properties will also be in the correct namespace. The following example declares an XML tree in a namespace, and then prints the count of `Child` elements.
+If you're working with an XML tree that's in a namespace, and you use XML properties, then you must use a global namespace so that the XML properties will also be in the correct namespace. The following example declares an XML tree in a namespace, and then prints the count of `Child` elements.
 
 ```vb
 Dim root As XElement = _

@@ -1,6 +1,6 @@
 ﻿//<Snippet2>
 using System;
-using System.Reflection; 
+using System.Reflection;
 using Microsoft.Office.Interop.Excel;
 
 public class CreateExcelWorksheet
@@ -36,7 +36,7 @@ public class CreateExcelWorksheet
         Object[] args = new Object[1];
         args[0] = 6;
         aRange.GetType().InvokeMember("Value", BindingFlags.SetProperty, null, aRange, args);
-    
+
         // Change the cells in the C1 to C7 range of the worksheet to the number 8.
         aRange.Value2 = 8;
     }
@@ -130,7 +130,7 @@ namespace Microsoft.Office.Interop
     {
         private Worksheets _Worksheets = new Worksheets();
         public  Worksheets Worksheets
-        {    
+        {
             get{return _Worksheets;}
         }
     }

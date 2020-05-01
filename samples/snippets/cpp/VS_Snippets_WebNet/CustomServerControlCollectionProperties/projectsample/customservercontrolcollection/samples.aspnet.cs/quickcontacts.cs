@@ -13,7 +13,7 @@ namespace Samples.AspNet.CS.Controls
     [
     AspNetHostingPermission(SecurityAction.Demand,
         Level = AspNetHostingPermissionLevel.Minimal),
-    AspNetHostingPermission(SecurityAction.InheritanceDemand, 
+    AspNetHostingPermission(SecurityAction.InheritanceDemand,
         Level=AspNetHostingPermissionLevel.Minimal),
     DefaultProperty("Contacts"),
     ParseChildren(true, "Contacts"),

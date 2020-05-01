@@ -29,21 +29,21 @@ namespace MarqueeControlLibrary
         // This constructor takes a MarqueeLightShape value from the
         // design-time environment, which will be used to display
         // the initial state.
-		public LightShapeSelectionControl( 
+		public LightShapeSelectionControl(
             MarqueeLightShape lightShape,
             IWindowsFormsEditorService editorService )
 		{
 			// This call is required by the designer.
 			InitializeComponent();
 
-            // Cache the light shape value provided by the 
+            // Cache the light shape value provided by the
             // design-time environment.
 			this.lightShapeValue = lightShape;
 
             // Cache the reference to the editor service.
             this.editorService = editorService;
 
-            // Handle the Click event for the two panels. 
+            // Handle the Click event for the two panels.
 			this.squarePanel.Click += new EventHandler(squarePanel_Click);
 			this.circlePanel.Click += new EventHandler(circlePanel_Click);
 		}
@@ -56,9 +56,9 @@ namespace MarqueeControlLibrary
 			{
                 // Be sure to unhook event handlers
                 // to prevent "lapsed listener" leaks.
-				this.squarePanel.Click -= 
+				this.squarePanel.Click -=
                     new EventHandler(squarePanel_Click);
-				this.circlePanel.Click -= 
+				this.circlePanel.Click -=
                     new EventHandler(circlePanel_Click);
 
 				if(components != null)
@@ -95,25 +95,25 @@ namespace MarqueeControlLibrary
 		{
 			base.OnPaint (e);
 
-			using( 
+			using(
 				Graphics gSquare = this.squarePanel.CreateGraphics(),
 				gCircle = this.circlePanel.CreateGraphics() )
 			{	
                 // Draw a filled square in the client area of
                 // the squarePanel control.
 				gSquare.FillRectangle(
-                    Brushes.Red, 
+                    Brushes.Red,
                     0,
                     0,
                     this.squarePanel.Width,
                     this.squarePanel.Height
                     );
 
-                // If the Square option has been selected, draw a 
+                // If the Square option has been selected, draw a
                 // border inside the squarePanel.
 				if( this.lightShapeValue == MarqueeLightShape.Square )
 				{
-					gSquare.DrawRectangle( 
+					gSquare.DrawRectangle(
 						Pens.Black,
 						0,
 						0,
@@ -124,19 +124,19 @@ namespace MarqueeControlLibrary
                 // Draw a filled circle in the client area of
                 // the circlePanel control.
 				gCircle.Clear( this.circlePanel.BackColor );
-				gCircle.FillEllipse( 
-                    Brushes.Blue, 
+				gCircle.FillEllipse(
+                    Brushes.Blue,
                     0,
                     0,
-                    this.circlePanel.Width, 
+                    this.circlePanel.Width,
                     this.circlePanel.Height
                     );
 
-                // If the Circle option has been selected, draw a 
+                // If the Circle option has been selected, draw a
                 // border inside the circlePanel.
 				if( this.lightShapeValue == MarqueeLightShape.Circle )
 				{
-					gCircle.DrawRectangle( 
+					gCircle.DrawRectangle(
 						Pens.Black,
 						0,
 						0,
@@ -153,7 +153,7 @@ namespace MarqueeControlLibrary
 			this.lightShapeValue = MarqueeLightShape.Square;
 			
 			this.Invalidate( false );
-            
+
             this.editorService.CloseDropDown();
 		}
 
@@ -168,8 +168,8 @@ namespace MarqueeControlLibrary
         // </snippet390>
 
 		#region Component Designer generated code
-		/// <summary> 
-		/// Required method for Designer support - do not modify 
+		/// <summary>
+		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
@@ -177,23 +177,23 @@ namespace MarqueeControlLibrary
             this.squarePanel = new System.Windows.Forms.Panel();
             this.circlePanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-// 
+//
 // squarePanel
-// 
+//
             this.squarePanel.Location = new System.Drawing.Point(8, 10);
             this.squarePanel.Name = "squarePanel";
             this.squarePanel.Size = new System.Drawing.Size(60, 60);
             this.squarePanel.TabIndex = 2;
-// 
+//
 // circlePanel
-// 
+//
             this.circlePanel.Location = new System.Drawing.Point(80, 10);
             this.circlePanel.Name = "circlePanel";
             this.circlePanel.Size = new System.Drawing.Size(60, 60);
             this.circlePanel.TabIndex = 3;
-// 
+//
 // LightShapeSelectionControl
-// 
+//
             this.Controls.Add(this.squarePanel);
             this.Controls.Add(this.circlePanel);
             this.Name = "LightShapeSelectionControl";

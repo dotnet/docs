@@ -3,14 +3,14 @@
     using System;
     class ArrayExample
     {
-        static void Main() 
+        static void Main()
         {
             int[] a = new int[10];
-            for (int i = 0; i < a.Length; i++) 
+            for (int i = 0; i < a.Length; i++)
             {
                 a[i] = i * i;
             }
-            for (int i = 0; i < a.Length; i++) 
+            for (int i = 0; i < a.Length; i++)
             {
                 Console.WriteLine($"a[{i}] = {a[i]}");
             }
@@ -42,7 +42,7 @@
         static void ExampleFour()
         {
             int[] a = {1, 2, 3};
-        }     
+        }
 
         static void ExampleFive()
         {

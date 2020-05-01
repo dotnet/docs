@@ -10,32 +10,32 @@ public class TelephoneFormatter : IFormatProvider, ICustomFormatter
          return this;
       else
          return null;
-   }               
+   }
 
    public string Format(string format, object arg, IFormatProvider formatProvider)
    {
-      // Check whether this is an appropriate callback             
+      // Check whether this is an appropriate callback
       if (! this.Equals(formatProvider))
-         return null; 
+         return null;
 
-      // Set default format specifier             
-      if (string.IsNullOrEmpty(format)) 
+      // Set default format specifier
+      if (string.IsNullOrEmpty(format))
          format = "N";
 
       string numericString = arg.ToString();
-      
+
       if (format == "N")
       {
          if (numericString.Length <= 4)
             return numericString;
          else if (numericString.Length == 7)
-            return numericString.Substring(0, 3) + "-" + numericString.Substring(3, 4); 
+            return numericString.Substring(0, 3) + "-" + numericString.Substring(3, 4);
          else if (numericString.Length == 10)
                return "(" + numericString.Substring(0, 3) + ") " +
-                      numericString.Substring(3, 3) + "-" + numericString.Substring(6);   
+                      numericString.Substring(3, 3) + "-" + numericString.Substring(6);
          else
-            throw new FormatException( 
-                      string.Format("'{0}' cannot be used to format {1}.", 
+            throw new FormatException(
+                      string.Format("'{0}' cannot be used to format {1}.",
                                     format, arg.ToString()));
       }
       else if (format == "I")
@@ -48,8 +48,8 @@ public class TelephoneFormatter : IFormatProvider, ICustomFormatter
       else
       {
          throw new FormatException(string.Format("The {0} format specifier is invalid.", format));
-      } 
-      return numericString;  
+      }
+      return numericString;
    }
 }
 
@@ -63,7 +63,7 @@ public class TestTelephoneFormatter
       // <Snippet3>
       Console.WriteLine(String.Format(new TelephoneFormatter(), "{0}", 4257884748));
       // </Snippet3>
-      
+
       Console.WriteLine(String.Format(new TelephoneFormatter(), "{0:N}", 0));
       Console.WriteLine(String.Format(new TelephoneFormatter(), "{0:N}", 911));
       Console.WriteLine(String.Format(new TelephoneFormatter(), "{0:N}", 8490216));

@@ -11,7 +11,7 @@ namespace MouseRollBackSingleClick
     {
         private DoubleClickButton button1;
         private FormBorderStyle initialStyle;
-       
+
         public Form1()
         {
             initialStyle = this.FormBorderStyle;
@@ -53,7 +53,7 @@ namespace MouseRollBackSingleClick
         public DoubleClickButton() : base()
         {
             // Set the style so a double click event occurs.
-            SetStyle(ControlStyles.StandardClick | 
+            SetStyle(ControlStyles.StandardClick |
                 ControlStyles.StandardDoubleClick, true);
         }
     }

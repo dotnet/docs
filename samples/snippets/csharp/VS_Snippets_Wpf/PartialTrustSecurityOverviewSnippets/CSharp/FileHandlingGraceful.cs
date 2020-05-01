@@ -22,10 +22,10 @@ namespace SDKSample
             }
             else
             {
-                // Persist application-scope property to 
+                // Persist application-scope property to
                 // isolated storage
                 IsolatedStorageFile storage = IsolatedStorageFile.GetUserStoreForApplication();
-                using (IsolatedStorageFileStream stream = 
+                using (IsolatedStorageFileStream stream =
                     new IsolatedStorageFileStream("newfile.txt", FileMode.Create, storage))
                 using (StreamWriter writer = new StreamWriter(stream))
                 {

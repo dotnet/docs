@@ -7,7 +7,7 @@ using System.Threading;
 namespace Microsoft.WCF.Documentation
 {
   [CallbackBehaviorAttribute(
-   IncludeExceptionDetailInFaults= true, 
+   IncludeExceptionDetailInFaults= true,
     UseSynchronizationContext=true,
     ValidateMustUnderstand=true
   )]

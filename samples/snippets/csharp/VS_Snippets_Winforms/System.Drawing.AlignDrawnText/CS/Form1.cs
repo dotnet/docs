@@ -45,7 +45,7 @@ namespace AlignText
         private void AlignTextWithDrawString(PaintEventArgs e)
         {
             //<snippet10>
-            string text1 = "Use StringFormat and Rectangle objects to" 
+            string text1 = "Use StringFormat and Rectangle objects to"
                 + " center text in a rectangle.";
             using (Font font1 = new Font("Arial", 12, FontStyle.Bold, GraphicsUnit.Point))
             {
@@ -72,7 +72,7 @@ namespace AlignText
             }
             //</snippet30>
         }
-        
+
         private void DrawTextAtLocation2(PaintEventArgs e)
         {
             //<snippet40>

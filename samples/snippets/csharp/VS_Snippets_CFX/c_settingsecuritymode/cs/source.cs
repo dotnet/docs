@@ -109,7 +109,7 @@ namespace Samples
             ServiceHost sh = new ServiceHost(typeof(Calculator), netTcpAdddress);
             sh.Credentials.ServiceCertificate.SetCertificate(
                 StoreLocation.LocalMachine, StoreName.My,
-                X509FindType.FindByIssuerName, "Contoso.com"); 
+                X509FindType.FindByIssuerName, "Contoso.com");
             sh.AddServiceEndpoint(typeof(ICalculator), b, "TcpCalculator");
             sh.Open();
             Console.WriteLine("Listening");

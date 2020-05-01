@@ -75,7 +75,7 @@ namespace Microsoft.ServiceModel.Samples
                 smb.HttpGetEnabled = true;
                 smb.HttpGetUrl = new Uri("http://localhost:8001/servicemodelsamples");
                 serviceHost.Description.Behaviors.Add(smb);
-              
+
                 // Open the ServiceHostBase to create listeners and start listening for messages.
                 serviceHost.Open();
 

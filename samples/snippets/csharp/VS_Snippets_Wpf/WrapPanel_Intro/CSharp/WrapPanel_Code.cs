@@ -39,7 +39,7 @@ namespace WrapPanel_Demo
             myWrapPanel.HorizontalAlignment = HorizontalAlignment.Left;
             myWrapPanel.VerticalAlignment = VerticalAlignment.Top;
 
-            // Define 3 button elements. The last three buttons are sized at width 
+            // Define 3 button elements. The last three buttons are sized at width
             // of 75, so the forth button wraps to the next line.
             btn1 = new Button();
             btn1.Content = "Button 1";

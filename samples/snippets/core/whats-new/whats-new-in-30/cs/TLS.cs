@@ -17,7 +17,7 @@ namespace whats_new
             await tcpClient.ConnectAsync(targetHost, 443);
 
             using SslStream sslStream = new SslStream(tcpClient.GetStream());
-            
+
             await sslStream.AuthenticateAsClientAsync(targetHost);
             await Console.Out.WriteLineAsync($"Connected to {targetHost} with {sslStream.SslProtocol}");
         }

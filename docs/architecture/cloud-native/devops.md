@@ -1,7 +1,7 @@
 ---
 title: Cloud Native DevOps
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native DevOps
-ms.date: 06/30/2019
+ms.date: 04/30/2020
 ---
 # Cloud Native DevOps
 
@@ -47,13 +47,23 @@ Azure DevOps is divided into five major components:
 
 The top-level organizational unit in Azure DevOps is known as a Project. Within each project the various components, such as Azure Artifacts, can be turned on and off. If users want to manage their source code in GitHub but still take advantage of Azure Pipelines, then that's perfectly possible. In fact, many open-source projects leverage the [free builds](https://azure.microsoft.com/blog/announcing-azure-pipelines-with-unlimited-ci-cd-minutes-for-open-source/) offered by Azure DevOps while keeping their source code on GitHub. Some significant open-source projects such as [Visual Studio Code](https://code.visualstudio.com/), [yarn](https://yarnpkg.com/en/), [gulp](https://gulpjs.com/), and [NumPy](https://www.numpy.org/) have made the transition.
 
-Each of these components provides some advantages for cloud-native applications, but the three most useful are the source control, boards and pipelines.  
+Each of these components provides different advantages for cloud-native applications. The three most useful are repositories, boards, and pipelines.  
+
+## GitHub
+
+Fortunately, development teams have many options when selecting a repository.
+
+One of them is [GitHub](https://github.com/). Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Apple, Amazon, Google, and many other large tech companies use GitHub. GitHub uses the open-source, distributed version control system named [Git](https://en.wikipedia.org/wiki/Git) as its foundation. GitHub then adds its own features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
+
+GitHub now features its own continuous integration/continuous delivery (CI/CD) pipeline. GitHub Actions is a community-powered workflow automation tool. It lets DevOps teams integrate with their existing tooling, mix and match new products, and hook into their software lifecycle, including existing CI/CD partners."
+
+GitHub has over 28 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company. GitHub offers plans for enterprise, team, professional, and free accounts.
 
 ## Source control
 
 Organizing the code for a cloud-native application can be challenging. Instead of a single giant application, the cloud-native applications tend to be made up of a web of smaller applications that talk with one another. As with all things in computing, the best arrangement of code remains an open question. There are examples of successful applications using different kinds of layouts, but two variants seem to have the most popularity.
 
-Before getting down into the actual source control itself, it's probably worth deciding on how many projects are appropriate. Within a single project, there's support for multiple repositories, and build pipelines. Boards are a little more complicated, but there too, the tasks can easily be assigned to multiple teams within a single project. It's certainly possible to support hundreds, even thousands of developers, out of a single Azure DevOps project. Doing so is likely the best approach as it provides a single place for all developer to work out of and reduces the confusion of finding that one application when developers are unsure in which project in which it resides.
+Before getting down into the actual source control itself, it's probably worth deciding on how many projects are appropriate. Within a single project, there's support for multiple repositories, and build pipelines. Boards are a little more complicated, but there too, the tasks can easily be assigned to multiple teams within a single project. It's possible to support hundreds, even thousands of developers, out of a single Azure DevOps project. Doing so is likely the best approach as it provides a single place for all developer to work out of and reduces the confusion of finding that one application when developers are unsure in which project in which it resides.
 
 Splitting up code for microservices within the Azure DevOps project can be slightly more challenging.
 

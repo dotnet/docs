@@ -1,6 +1,6 @@
 ---
 title: How to populate an XML tree from the file system - LINQ to XML
-description: An XML tree can provide a hierarchical name/value data store. Once you have populated the tree, you can query it, transform it, and if necessary, serialize it. This article provides an example that builds an XML tree, loads it with data about files, and then queries it.
+description: Learn how to populate an XML tree from the file system in C# or Visual Basic.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

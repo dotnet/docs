@@ -273,6 +273,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 - [AssetTargetFallback](#assettargetfallback)
 - [ProjectReference](#projectreference)
 - [PackageReference](#packagereference)
+- [Reference](#reference)
 
 ### AssetTargetFallback
 
@@ -288,7 +289,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### PackageReference
 
-The `PackageReference` item lets you specify a NuGet package dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID.
+The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID, and the `Version` attribute specifies the package version.
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -300,9 +301,9 @@ The project file snippet in the following example references the [System.Runtime
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
-## ProjectReference
+### ProjectReference
 
-The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project. Optional additional metadata can be provided as subelements.
+The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project. Optional additional metadata can be provided as child elements.
 
 The project file snippet in the following example references the a project named `Project2`.
 
@@ -311,6 +312,18 @@ The project file snippet in the following example references the a project named
   <ProjectReference Include="..\Project2.csproj">
     <Name>Project2</Name>
   </ProjectReference>
+</ItemGroup>
+```
+
+### Reference
+
+The `Reference` item defines a reference to an assembly file.The `Include` attribute specifies the name of the file, and the `HintPath` child element specifies the path to the assembly.
+
+```xml
+<ItemGroup>
+  <Reference Include="MyAssembly">
+    <HintPath>..\..\Assemblies\MyAssembly.dll</HintPath>
+  </Reference>
 </ItemGroup>
 ```
 

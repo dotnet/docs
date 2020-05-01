@@ -16,7 +16,7 @@ namespace object_collection_initializers
         }
 
         public static void Main()
-        { 
+        {
             var students = new Dictionary<int, StudentName>()
             {
                 { 111, new StudentName { FirstName="Sachin", LastName="Karnik", ID=211 } },

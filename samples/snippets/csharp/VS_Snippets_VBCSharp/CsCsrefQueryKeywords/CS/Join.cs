@@ -25,12 +25,12 @@ namespace Joins
 
         // Specify the first data source.
         List<Category> categories = new List<Category>()
-        { 
+        {
             new Category {Name="Beverages", ID=001},
             new Category {Name="Condiments", ID=002},
             new Category {Name="Vegetables", ID=003},
             new Category {Name="Grains", ID=004},
-            new Category {Name="Fruit", ID=005}            
+            new Category {Name="Fruit", ID=005}
         };
 
         // Specify the second data source.
@@ -65,7 +65,7 @@ namespace Joins
 
         void InnerJoin()
         {
-            // Create the query that selects 
+            // Create the query that selects
             // a property from each element.
             var innerJoinQuery =
                from category in categories
@@ -73,7 +73,7 @@ namespace Joins
                select new { Category = category.ID, Product = prod.Name };
 
             Console.WriteLine("InnerJoin:");
-            // Execute the query. Access results 
+            // Execute the query. Access results
             // with a simple foreach statement.
             foreach (var item in innerJoinQuery)
             {
@@ -219,7 +219,7 @@ namespace Joins
         }
     }
     /*Output:
- 
+
     InnerJoin:
     Cola      1
     Tea       1
@@ -331,12 +331,12 @@ namespace Joins
 
         // Specify the first data source.
         List<Category> categories = new List<Category>()
-        { 
+        {
             new Category(){Name="Beverages", ID=001},
             new Category(){ Name="Condiments", ID=002},
             new Category(){ Name="Vegetables", ID=003},
             new Category() {  Name="Grains", ID=004},
-            new Category() {  Name="Fruit", ID=005}            
+            new Category() {  Name="Fruit", ID=005}
         };
 
         // Specify the second data source.

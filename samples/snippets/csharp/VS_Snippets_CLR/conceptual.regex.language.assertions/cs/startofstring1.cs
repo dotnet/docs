@@ -43,7 +43,7 @@ public class Example
 }
 // The example displays the following output:
 //    The Brooklyn Dodgers played in the National League in 1911, 1912, 1932-1957.
-//    
+//
 //    The Brooklyn Dodgers played in the National League in 1911, 1912, 1932-1957.
 //    The Chicago Cubs played in the National League in 1903-present.
 //    The Detroit Tigers played in the American League in 1901-present.

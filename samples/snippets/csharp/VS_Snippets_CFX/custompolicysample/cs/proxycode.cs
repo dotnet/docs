@@ -14,7 +14,7 @@
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://microsoft.wcf.documentation", ConfigurationName="IStatefulService", SessionMode=System.ServiceModel.SessionMode.Required)]
 public interface IStatefulService
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(Action="http://microsoft.wcf.documentation/IStatefulService/GetSessionID", ReplyAction="http://microsoft.wcf.documentation/IStatefulService/GetSessionIDResponse")]
     string GetSessionID();
 }
@@ -28,31 +28,31 @@ public interface IStatefulServiceChannel : IStatefulService, System.ServiceModel
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class StatefulServiceClient : System.ServiceModel.ClientBase<IStatefulService>, IStatefulService
 {
-    
+
     public StatefulServiceClient()
     {
     }
-    
-    public StatefulServiceClient(string endpointConfigurationName) : 
+
+    public StatefulServiceClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public StatefulServiceClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public StatefulServiceClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public StatefulServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public StatefulServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public StatefulServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public StatefulServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public string GetSessionID()
     {
         return base.Channel.GetSessionID();

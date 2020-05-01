@@ -29,8 +29,8 @@ namespace Microsoft.WCF.Documentation
     public void AfterCall(string operationName, object[] outputs, object returnValue, object correlationState)
     {
       Console.WriteLine(
-        "IParameterInspector.AfterCall called for {0} with return value {1}.", 
-        operationName, 
+        "IParameterInspector.AfterCall called for {0} with return value {1}.",
+        operationName,
         returnValue.ToString()
       );
     }

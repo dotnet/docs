@@ -9,7 +9,7 @@ class ArrayExample
 
     static void ChangeArrayElements(string[] arr)
     {
-        // Change the value of the first three array elements. 
+        // Change the value of the first three array elements.
         arr[0] = "Mon";
         arr[1] = "Wed";
         arr[2] = "Fri";
@@ -37,7 +37,7 @@ class ArrayExample
         DisplayArray(weekDays);
     }
 }
-// The example displays the following output: 
+// The example displays the following output:
 //         Sun Mon Tue Wed Thu Fri Sat
 //
 //        Array weekDays after the call to ChangeArray:

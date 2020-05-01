@@ -34,7 +34,7 @@ With this change, the behavior for the .NET Core runtimes on macOS is as follows
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

@@ -14,7 +14,7 @@ using System.Windows.Forms;
 // <snippet3>
 // This form demonstrates using a BindingSource to bind
 // a list to a DataGridView control. The list does not
-// raise change notifications, so the ResetItem method 
+// raise change notifications, so the ResetItem method
 // on the BindingSource is used.
 public class Form1 : System.Windows.Forms.Form
 {
@@ -22,11 +22,11 @@ public class Form1 : System.Windows.Forms.Form
     // This button causes the value of a list element to be changed.
     private Button changeItemBtn = new Button();
 
-    // This is the DataGridView control that displays the contents 
+    // This is the DataGridView control that displays the contents
     // of the list.
     private DataGridView customersDataGridView = new DataGridView();
 
-    // This is the BindingSource used to bind the list to the 
+    // This is the BindingSource used to bind the list to the
     // DataGridView control.
     private BindingSource customersBindingSource = new BindingSource();
     // </snippet4>
@@ -37,10 +37,10 @@ public class Form1 : System.Windows.Forms.Form
         // Set up the "Change Item" button.
         this.changeItemBtn.Text = "Change Item";
         this.changeItemBtn.Dock = DockStyle.Bottom;
-        this.changeItemBtn.Click += 
+        this.changeItemBtn.Click +=
             new EventHandler(changeItemBtn_Click);
         this.Controls.Add(this.changeItemBtn);
-        
+
         // Set up the DataGridView.
         customersDataGridView.Dock = DockStyle.Top;
         this.Controls.Add(customersDataGridView);
@@ -63,7 +63,7 @@ public class Form1 : System.Windows.Forms.Form
         this.customersBindingSource.DataSource = customerList;
 
         // Attach the BindingSource to the DataGridView.
-        this.customersDataGridView.DataSource = 
+        this.customersDataGridView.DataSource =
             this.customersBindingSource;
     }
     // </snippet6>
@@ -74,14 +74,14 @@ public class Form1 : System.Windows.Forms.Form
     void changeItemBtn_Click(object sender, EventArgs e)
     {
         // Get a reference to the list from the BindingSource.
-        List<DemoCustomer> customerList = 
+        List<DemoCustomer> customerList =
             this.customersBindingSource.DataSource as List<DemoCustomer>;
 
-        // Change the value of the CompanyName property for the 
+        // Change the value of the CompanyName property for the
         // first item in the list.
         customerList[0].CompanyName = "Tailspin Toys";
 
-        // Call ResetItem to alert the BindingSource that the 
+        // Call ResetItem to alert the BindingSource that the
         // list has changed.
         this.customersBindingSource.ResetItem(0);
     }

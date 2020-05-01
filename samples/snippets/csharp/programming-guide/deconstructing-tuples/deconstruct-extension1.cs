@@ -32,11 +32,11 @@ public static class ReflectionExtensions
         string setAccessTemp = null;
 
         MethodInfo getter = null;
-        if (p.CanRead) 
+        if (p.CanRead)
             getter = p.GetMethod;
 
         MethodInfo setter = null;
-        if (p.CanWrite) 
+        if (p.CanWrite)
             setter = p.SetMethod;
 
         if (setter != null && getter != null)
@@ -52,7 +52,7 @@ public static class ReflectionExtensions
                 getAccessTemp = "internal";
             else if (getter.IsFamily)
                 getAccessTemp = "protected";
-            else if (getter.IsFamilyOrAssembly) 
+            else if (getter.IsFamilyOrAssembly)
                 getAccessTemp = "protected internal";
         }
 
@@ -100,7 +100,7 @@ public class Example
         Console.WriteLine($"   Indexed:      {isIndexed}");
 
         Type listType = typeof(List<>);
-        prop = listType.GetProperty("Item", 
+        prop = listType.GetProperty("Item",
                                     BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
         var (hasGetAndSet, sameAccess, accessibility, getAccessibility, setAccessibility) = prop;
         Console.Write($"\nAccessibility of the {listType.FullName}.{prop.Name} property: ");
@@ -122,5 +122,5 @@ public class Example
 //          Static:       True
 //          Read-only:    True
 //          Indexed:      False
-//       
+//
 //       Accessibility of the System.Collections.Generic.List`1.Item property: public

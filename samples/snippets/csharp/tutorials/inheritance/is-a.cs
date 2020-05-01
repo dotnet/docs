@@ -23,7 +23,7 @@ public class Automobile
     }
 
     public string Make { get; }
-    
+
     public string Model { get; }
 
     public int Year { get; }

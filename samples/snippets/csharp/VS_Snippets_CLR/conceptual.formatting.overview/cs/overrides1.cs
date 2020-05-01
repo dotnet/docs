@@ -4,10 +4,10 @@ using System;
 public class Temperature
 {
    private decimal temp;
-   
+
    public Temperature(decimal temperature)
    {
-      this.temp = temperature;   
+      this.temp = temperature;
    }
 
    public override string ToString()

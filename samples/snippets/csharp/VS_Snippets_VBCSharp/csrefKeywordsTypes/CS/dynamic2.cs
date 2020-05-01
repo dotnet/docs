@@ -20,7 +20,7 @@ namespace DynamicExamples
 
             // Because dynamic_ec is dynamic, the following call to exampleMethod
             // with two arguments does not produce an error at compile time.
-            // However, it does cause a run-time error. 
+            // However, it does cause a run-time error.
             //Console.WriteLine(dynamic_ec.exampleMethod(10, 4));
         }
     }

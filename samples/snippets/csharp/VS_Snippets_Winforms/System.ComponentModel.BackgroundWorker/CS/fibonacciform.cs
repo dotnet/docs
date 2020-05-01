@@ -31,36 +31,36 @@ namespace BackgroundWorkerExample
             InitializeBackgroundWorker();
         }
 
-        // Set up the BackgroundWorker object by 
-        // attaching event handlers. 
+        // Set up the BackgroundWorker object by
+        // attaching event handlers.
         private void InitializeBackgroundWorker()
         {
-            backgroundWorker1.DoWork += 
+            backgroundWorker1.DoWork +=
                 new DoWorkEventHandler(backgroundWorker1_DoWork);
-            backgroundWorker1.RunWorkerCompleted += 
+            backgroundWorker1.RunWorkerCompleted +=
                 new RunWorkerCompletedEventHandler(
             backgroundWorker1_RunWorkerCompleted);
-            backgroundWorker1.ProgressChanged += 
+            backgroundWorker1.ProgressChanged +=
                 new ProgressChangedEventHandler(
             backgroundWorker1_ProgressChanged);
         }
 	
         // <snippet13>
-        private void startAsyncButton_Click(System.Object sender, 
+        private void startAsyncButton_Click(System.Object sender,
             System.EventArgs e)
         {
             // Reset the text in the result label.
             resultLabel.Text = String.Empty;
 
-            // Disable the UpDown control until 
+            // Disable the UpDown control until
             // the asynchronous operation is done.
             this.numericUpDown1.Enabled = false;
 
-            // Disable the Start button until 
+            // Disable the Start button until
             // the asynchronous operation is done.
             this.startAsyncButton.Enabled = false;
 
-            // Enable the Cancel button while 
+            // Enable the Cancel button while
             // the asynchronous operation runs.
             this.cancelAsyncButton.Enabled = true;
 
@@ -78,9 +78,9 @@ namespace BackgroundWorkerExample
         // </snippet13>
 
         // <snippet4>
-        private void cancelAsyncButton_Click(System.Object sender, 
+        private void cancelAsyncButton_Click(System.Object sender,
             System.EventArgs e)
-        {   
+        {
             // Cancel the asynchronous operation.
             this.backgroundWorker1.CancelAsync();
 
@@ -92,15 +92,15 @@ namespace BackgroundWorkerExample
         // <snippet5>
         // This event handler is where the actual,
         // potentially time-consuming work is done.
-        private void backgroundWorker1_DoWork(object sender, 
+        private void backgroundWorker1_DoWork(object sender,
             DoWorkEventArgs e)
-        {   
+        {
             // Get the BackgroundWorker that raised this event.
             BackgroundWorker worker = sender as BackgroundWorker;
 
             // Assign the result of the computation
             // to the Result property of the DoWorkEventArgs
-            // object. This is will be available to the 
+            // object. This is will be available to the
             // RunWorkerCompleted eventhandler.
             e.Result = ComputeFibonacci((int)e.Argument, worker, e);
         }
@@ -119,9 +119,9 @@ namespace BackgroundWorkerExample
             }
             else if (e.Cancelled)
             {
-                // Next, handle the case where the user canceled 
+                // Next, handle the case where the user canceled
                 // the operation.
-                // Note that due to a race condition in 
+                // Note that due to a race condition in
                 // the DoWork event handler, the Cancelled
                 // flag may not have been set, even though
                 // CancelAsync was called.
@@ -129,7 +129,7 @@ namespace BackgroundWorkerExample
             }
             else
             {
-                // Finally, handle the case where the operation 
+                // Finally, handle the case where the operation
                 // succeeded.
                 resultLabel.Text = e.Result.ToString();
             }
@@ -172,10 +172,10 @@ namespace BackgroundWorkerExample
 
             // <snippet8>
             // Abort the operation if the user has canceled.
-            // Note that a call to CancelAsync may have set 
+            // Note that a call to CancelAsync may have set
             // CancellationPending to true just after the
-            // last invocation of this method exits, so this 
-            // code will not have the opportunity to set the 
+            // last invocation of this method exits, so this
+            // code will not have the opportunity to set the
             // DoWorkEventArgs.Cancel flag to true. This means
             // that RunWorkerCompletedEventArgs.Cancelled will
             // not be set to true in your RunWorkerCompleted
@@ -183,25 +183,25 @@ namespace BackgroundWorkerExample
 
             // <snippet11>
             if (worker.CancellationPending)
-            {   
+            {
                 e.Cancel = true;
             }
             // </snippet11>
             else
-            {   
+            {
                 if (n < 2)
-                {   
+                {
                     result = 1;
                 }
                 else
-                {   
-                    result = ComputeFibonacci(n - 1, worker, e) + 
+                {
+                    result = ComputeFibonacci(n - 1, worker, e) +
                              ComputeFibonacci(n - 2, worker, e);
                 }
 
                 // <snippet12>
                 // Report progress as a percentage of the total task.
-                int percentComplete = 
+                int percentComplete =
                     (int)((float)n / (float)numberToCompute * 100);
                 if (percentComplete > highestPercentageReached)
                 {
@@ -228,9 +228,9 @@ namespace BackgroundWorkerExample
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // numericUpDown1
-            // 
+            //
             this.numericUpDown1.Location = new System.Drawing.Point(16, 16);
             this.numericUpDown1.Maximum = new System.Decimal(new int[] {
             91,
@@ -250,18 +250,18 @@ namespace BackgroundWorkerExample
             0,
             0,
             0});
-            // 
+            //
             // startAsyncButton
-            // 
+            //
             this.startAsyncButton.Location = new System.Drawing.Point(16, 72);
             this.startAsyncButton.Name = "startAsyncButton";
             this.startAsyncButton.Size = new System.Drawing.Size(120, 23);
             this.startAsyncButton.TabIndex = 1;
             this.startAsyncButton.Text = "Start Async";
             this.startAsyncButton.Click += new System.EventHandler(this.startAsyncButton_Click);
-            // 
+            //
             // cancelAsyncButton
-            // 
+            //
             this.cancelAsyncButton.Enabled = false;
             this.cancelAsyncButton.Location = new System.Drawing.Point(153, 72);
             this.cancelAsyncButton.Name = "cancelAsyncButton";
@@ -269,9 +269,9 @@ namespace BackgroundWorkerExample
             this.cancelAsyncButton.TabIndex = 2;
             this.cancelAsyncButton.Text = "Cancel Async";
             this.cancelAsyncButton.Click += new System.EventHandler(this.cancelAsyncButton_Click);
-            // 
+            //
             // resultLabel
-            // 
+            //
             this.resultLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.resultLabel.Location = new System.Drawing.Point(112, 16);
             this.resultLabel.Name = "resultLabel";
@@ -279,22 +279,22 @@ namespace BackgroundWorkerExample
             this.resultLabel.TabIndex = 3;
             this.resultLabel.Text = "(no result)";
             this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
             // progressBar1
-            // 
+            //
             this.progressBar1.Location = new System.Drawing.Point(18, 48);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(256, 8);
             this.progressBar1.Step = 2;
             this.progressBar1.TabIndex = 4;
-            // 
+            //
             // backgroundWorker1
-            // 
+            //
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.WorkerSupportsCancellation = true;
-            // 
+            //
             // FibonacciForm
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(292, 118);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.resultLabel);

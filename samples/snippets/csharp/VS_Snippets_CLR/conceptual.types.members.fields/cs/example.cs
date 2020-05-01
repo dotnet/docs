@@ -5,7 +5,7 @@ public class Constants
 {
    public const double Pi = 3.1416;
    public readonly DateTime BirthDate;
-   
+
    public Constants(DateTime birthDate)
    {
       this.BirthDate = birthDate;

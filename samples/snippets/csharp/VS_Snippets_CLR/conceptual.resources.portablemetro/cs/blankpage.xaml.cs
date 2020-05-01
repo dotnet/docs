@@ -1,4 +1,4 @@
-﻿// <Snippet1> 
+﻿// <Snippet1>
 using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml;
@@ -40,7 +40,7 @@ public class Example
     {
         // Get the data from some data source.
         var employees = InitializeData();
-        outputBlock.FontFamily = new FontFamily("Courier New");      
+        outputBlock.FontFamily = new FontFamily("Courier New");
         // Display application title.
         string title = UILibrary.GetTitle();
         outputBlock.Text += title + Environment.NewLine + Environment.NewLine;

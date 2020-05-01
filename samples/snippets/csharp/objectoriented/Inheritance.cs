@@ -19,7 +19,7 @@ namespace objectoriented
 
         // Default constructor. If a derived class does not invoke a base-
         // class constructor explicitly, the default constructor is called
-        // implicitly. 
+        // implicitly.
         public WorkItem()
         {
             ID = 0;
@@ -60,15 +60,15 @@ namespace objectoriented
             $"{this.ID} - {this.Title}";
     }
 
-    // ChangeRequest derives from WorkItem and adds a property (originalItemID) 
+    // ChangeRequest derives from WorkItem and adds a property (originalItemID)
     // and two constructors.
     public class ChangeRequest : WorkItem
     {
         protected int originalItemID { get; set; }
 
-        // Constructors. Because neither constructor calls a base-class 
+        // Constructors. Because neither constructor calls a base-class
         // constructor explicitly, the default constructor in the base class
-        // is called implicitly. The base class must contain a default 
+        // is called implicitly. The base class must contain a default
         // constructor.
 
         // Default constructor for the derived class.
@@ -78,14 +78,14 @@ namespace objectoriented
         public ChangeRequest(string title, string desc, TimeSpan jobLen,
                              int originalID)
         {
-            // The following properties and the GetNexID method are inherited 
+            // The following properties and the GetNexID method are inherited
             // from WorkItem.
             this.ID = GetNextID();
             this.Title = title;
             this.Description = desc;
             this.jobLength = jobLen;
 
-            // Property originalItemId is a member of ChangeRequest, but not 
+            // Property originalItemId is a member of ChangeRequest, but not
             // of WorkItem.
             this.originalItemID = originalID;
         }
@@ -101,7 +101,7 @@ namespace objectoriented
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-       
+
         // Virtual method
         public virtual void Draw()
         {
@@ -145,7 +145,7 @@ namespace objectoriented
             // <SnippetUsePolymorphism>
             // Polymorphism at work #1: a Rectangle, Triangle and Circle
             // can all be used whereever a Shape is expected. No cast is
-            // required because an implicit conversion exists from a derived 
+            // required because an implicit conversion exists from a derived
             // class to its base class.
             var shapes = new List<Shape>
             {
@@ -246,7 +246,7 @@ namespace objectoriented
         public static void Example()
         {
             //<SnippetUseClasses>
-            // Create an instance of WorkItem by using the constructor in the 
+            // Create an instance of WorkItem by using the constructor in the
             // base class that takes three arguments.
             WorkItem item = new WorkItem("Fix Bugs",
                                         "Fix all bugs in my code branch",
@@ -262,7 +262,7 @@ namespace objectoriented
             // Use the ToString method defined in WorkItem.
             Console.WriteLine(item.ToString());
 
-            // Use the inherited Update method to change the title of the 
+            // Use the inherited Update method to change the title of the
             // ChangeRequest object.
             change.Update("Change the Design of the Base Class",
                 new TimeSpan(4, 0, 0));

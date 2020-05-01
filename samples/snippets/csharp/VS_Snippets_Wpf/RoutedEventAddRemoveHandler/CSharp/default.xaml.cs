@@ -8,7 +8,7 @@ namespace SDKSample {
         {
             Button b2 = new Button();
             b2.Content = "New Button";
-            // Associate event handler to the button. You can remove the event 
+            // Associate event handler to the button. You can remove the event
             // handler using "-=" syntax rather than "+=".
             b2.Click  += new RoutedEventHandler(Onb2Click);
             root.Children.Insert(root.Children.Count, b2);

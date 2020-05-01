@@ -1,6 +1,6 @@
 ﻿//<snippet11>
 
-    using System;   
+    using System;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -56,21 +56,21 @@
         {
             int i = rand.Next(1000000);
             // Simulate work by spinning
-            Thread.SpinWait(i); 
+            Thread.SpinWait(i);
             return DateTime.Now.Millisecond;
         }
         static double TrySolution2()
         {
             int i = rand.Next(1000000);
             // Simulate work by spinning
-            Thread.SpinWait(i); 
+            Thread.SpinWait(i);
             return DateTime.Now.Millisecond;
         }
         static double TrySolution3()
         {
             int i = rand.Next(1000000);
             // Simulate work by spinning
-            Thread.SpinWait(i); 
+            Thread.SpinWait(i);
             Thread.SpinWait(1000000);
             return DateTime.Now.Millisecond;
         }

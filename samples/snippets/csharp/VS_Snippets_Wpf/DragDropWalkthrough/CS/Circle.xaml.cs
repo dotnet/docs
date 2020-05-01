@@ -78,7 +78,7 @@ namespace DragDropWalkthrough
             {
                 string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
 
-                // If the string can be converted into a Brush, 
+                // If the string can be converted into a Brush,
                 // convert it and apply it to the ellipse.
                 BrushConverter converter = new BrushConverter();
                 if (converter.IsValid(dataString))
@@ -119,7 +119,7 @@ namespace DragDropWalkthrough
                 if (converter.IsValid(dataString))
                 {
                     // Set Effects to notify the drag source what effect
-                    // the drag-and-drop operation will have. These values are 
+                    // the drag-and-drop operation will have. These values are
                     // used by the drag source's GiveFeedback event handler.
                     // (Copy if CTRL is pressed; otherwise, move.)
                     if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
@@ -158,7 +158,7 @@ namespace DragDropWalkthrough
             }
         }
         // </snippetOnDragEnter>
-        
+
         // <snippetOnDragLeave>
         protected override void OnDragLeave(DragEventArgs e)
         {

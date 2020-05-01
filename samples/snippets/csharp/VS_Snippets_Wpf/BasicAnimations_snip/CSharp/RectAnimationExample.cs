@@ -35,7 +35,7 @@ namespace SDKSamples
             myRectAnimation.Duration = TimeSpan.FromSeconds(2);
             myRectAnimation.FillBehavior = FillBehavior.HoldEnd;
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             myRectAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the From and To properties of the animation.

@@ -115,6 +115,8 @@ The following example shows how to register a standard endpoint in the extension
           name="customStandardEndpoint"  
           type="CustomEndpointCollectionElement, Example.dll,  
                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=ffffffffffffffff"/>  
+      </standardEndpointExtensions>
+</extensions>  
 ```  
   
 ## Configuring a Standard Endpoint  

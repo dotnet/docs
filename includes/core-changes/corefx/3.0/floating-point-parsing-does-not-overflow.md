@@ -24,7 +24,7 @@ This change can affect your code in either of two ways:
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

@@ -30,7 +30,7 @@ You can specify a `char` value with:
 
 [!code-csharp-interactive[char literals](snippets/CharType.cs#Literals)]
 
-As the preceding example shows, you also can cast the value of a character code into the corresponding `char` value.
+As the preceding example shows, you can also cast the value of a character code into the corresponding `char` value.
 
 > [!NOTE]
 > In the case of a Unicode escape sequence, you must specify all four hexadecimal digits. That is, `\u006A` is a valid escape sequence, while `\u06A` and `\u6A` are not valid.

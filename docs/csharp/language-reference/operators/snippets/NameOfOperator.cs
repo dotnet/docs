@@ -18,6 +18,11 @@ namespace operators
             Console.WriteLine(nameof(numbers.Count));  // output: Count
             Console.WriteLine(nameof(numbers.Add));  // output: Add
             // </SnippetExamples>
+
+            // <SnippetVerbatim>
+            var @new = 5;
+            Console.WriteLine(nameof(@new));  // output: new
+            // </SnippetVerbatim>
         }
 
         private class Person

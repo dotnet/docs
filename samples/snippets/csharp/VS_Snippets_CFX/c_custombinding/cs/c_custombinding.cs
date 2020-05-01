@@ -31,7 +31,7 @@ namespace Samples
         //<snippet3>
         public static Binding CreateCustomBinding()
         {
-            // Create an empty BindingElementCollection to populate, 
+            // Create an empty BindingElementCollection to populate,
             // then create a custom binding from it.
             BindingElementCollection outputBec = new BindingElementCollection();
 
@@ -39,7 +39,7 @@ namespace Samples
             // <snippet5>
             // <snippet4>
             // Create a SymmetricSecurityBindingElement.
-            SymmetricSecurityBindingElement ssbe = 
+            SymmetricSecurityBindingElement ssbe =
                 new SymmetricSecurityBindingElement();
             // </snippet4>
 
@@ -53,7 +53,7 @@ namespace Samples
             // Use a Kerberos token as the protection token.
             ssbe.ProtectionTokenParameters = new KerberosSecurityTokenParameters();
             // </snippet6>
-            
+
             // Add the SymmetricSecurityBindingElement to the BindingElementCollection.
             outputBec.Add ( ssbe );
             outputBec.Add(new TextMessageEncodingBindingElement());
@@ -97,7 +97,7 @@ namespace Samples
         public static Binding CreateCustomBinding(EndpointAddress issuerEndpointAddress1, Binding issuerBinding1, EndpointAddress issuerEndpointAddress2, Binding issuerBinding2)
         {
             //<snippet9>
-            // Create an empty BindingElementCollection to populate, 
+            // Create an empty BindingElementCollection to populate,
             // then create a custom binding from it.
             BindingElementCollection bec = new BindingElementCollection();
             //</snippet9>
@@ -109,17 +109,17 @@ namespace Samples
             //<snippet11>
             SupportingTokenParameters supportParams = new SupportingTokenParameters();
             //</snippet11>
-            
+
             //<snippet12>
             // Two supporting SAML tokens are being added.
             supportParams.SignedEndorsing.Add(new IssuedSecurityTokenParameters("samlTokenType", issuerEndpointAddress1, issuerBinding1));
             supportParams.SignedEndorsing.Add(new IssuedSecurityTokenParameters("samlTokenType", issuerEndpointAddress2, issuerBinding2));
             //</snippet12>
-            
+
             //<snippet13>
             ((SymmetricSecurityBindingElement)sbe).OperationSupportingTokenParameters.Add("*", supportParams);
             //</snippet13>
-            
+
             //<snippet14>
             bec.Add(sbe);
             bec.Add(new TextMessageEncodingBindingElement());

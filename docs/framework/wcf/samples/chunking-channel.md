@@ -28,7 +28,7 @@ Chunking should always be employed only after the entire message to be sent has 
 The chunking channel assumes the following message structure for messages to be chunked:
 
 ```xml
-<soap:Envelope ...>
+<soap:Envelope>
   <!-- headers -->
   <soap:Body>
     <operationElement>

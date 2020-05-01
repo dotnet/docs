@@ -16,7 +16,7 @@ public class ArrayHelper
       }
       return arr;
    }
-}   
+}
 // The attempt to compile this example displays the following output:
 //    UnmanagedPtr1.cs(8,57): warning CS3001: Argument type 'int*' is not CLS-compliant
 // </Snippet5>
@@ -30,7 +30,7 @@ public class Example
       unsafe {
          fixed(int* ptr = numbers) {
             numbers2 = (int[]) ArrayHelper.CreateInstance(typeof(int), ptr, numbers.Length);
-         }   
+         }
       }
       foreach (var number2 in numbers2)
          Console.WriteLine(number2);

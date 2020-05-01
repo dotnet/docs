@@ -5,7 +5,7 @@
     using RefReturnsVersionTwo;
 
     public class Example
-    {   
+    {
        static void Main(string[] args)
        {
             FirstExample.Tests();

@@ -16,7 +16,7 @@ namespace PhotoService
         private string imageFilePath;
         private PhotoInfo cachedEntity;
         private PhotoDataContainer context;
-        
+
         private string tempFile;
 
         public PhotoServiceStreamProvider(PhotoDataContainer context)
@@ -54,8 +54,8 @@ namespace PhotoService
         {
             if (checkETagForEquality != null)
             {
-                // This stream provider implementation does not support 
-                // ETag headers for media resources. This means that we do not track 
+                // This stream provider implementation does not support
+                // ETag headers for media resources. This means that we do not track
                 // concurrency for a media resource and last-in wins on updates.
                 throw new DataServiceException(400,
                     "This sample service does not support the ETag header for a media resource.");
@@ -97,7 +97,7 @@ namespace PhotoService
         public string GetStreamETag(object entity, DataServiceOperationContext operationContext)
         {
             // This sample provider does not support the eTag header with media resources.
-            // This means that we do not track concurrency for a media resource 
+            // This means that we do not track concurrency for a media resource
             // and last-in wins on updates.
             return null;
         }
@@ -107,7 +107,7 @@ namespace PhotoService
             if (checkETagForEquality != null)
             {
                 // This stream provider implementation does not support ETags associated with BLOBs.
-                // This means that we do not track concurrency for a media resource 
+                // This means that we do not track concurrency for a media resource
                 // and last-in wins on updates.
                 throw new DataServiceException(400,
                     "This demo does not support ETags associated with BLOBs");
@@ -124,9 +124,9 @@ namespace PhotoService
             // Handle the POST request.
             if (operationContext.RequestMethod == "POST")
             {
-                // Set the file name from the Slug header; if we don't have a 
-                // Slug header, just set a temporary name which is overwritten 
-                // by the subsequent MERGE request from the client. 
+                // Set the file name from the Slug header; if we don't have a
+                // Slug header, just set a temporary name which is overwritten
+                // by the subsequent MERGE request from the client.
                 image.FileName = operationContext.RequestHeaders["Slug"] ?? "newFile";
 
                 // Set the required DateTime values.
@@ -136,7 +136,7 @@ namespace PhotoService
                 // Set the content type, which cannot be null.
                 image.ContentType = operationContext.RequestHeaders["Content-Type"];
 
-                // Cache the current entity to enable us to both create a key based storage file name 
+                // Cache the current entity to enable us to both create a key based storage file name
                 // and to maintain transactional integrity in the disposer; we do this only for a POST request.
                 cachedEntity = image;
 
@@ -186,7 +186,7 @@ namespace PhotoService
 
                 if (entry.State == System.Data.EntityState.Unchanged)
                 {
-                    // Since the entity was created successfully, move the temp file into the 
+                    // Since the entity was created successfully, move the temp file into the
                     // storage directory and rename the file based on the new entity key.
                     File.Move(tempFile, newImageFileName);
 
@@ -204,7 +204,7 @@ namespace PhotoService
                 }
                 else
                 {
-                    // A problem must have occurred when saving the entity to the database, 
+                    // A problem must have occurred when saving the entity to the database,
                     // so we should delete the entity and temp file.
                     context.DeleteObject(cachedEntity);
                     File.Delete(tempFile);

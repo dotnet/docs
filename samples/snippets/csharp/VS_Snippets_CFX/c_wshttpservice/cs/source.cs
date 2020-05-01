@@ -9,7 +9,7 @@ using System.ServiceModel.Security;
 namespace WsHttp
 {
     class Service
-    {        
+    {
         private void Basic()
         {
             //<snippet1>
@@ -58,8 +58,8 @@ namespace WsHttp
             // shown here.
             ServiceHost sh = new ServiceHost(typeof(Calculator), baseAddresses);
 
-            // Add an endpoint to the service. Insert the thumbprint of an X.509 
-            // certificate found on your computer. 
+            // Add an endpoint to the service. Insert the thumbprint of an X.509
+            // certificate found on your computer.
             Type c = typeof(ICalculator);
             sh.AddServiceEndpoint(c, b, "MyCalculator");
             sh.Credentials.ServiceCertificate.SetCertificate(
@@ -71,7 +71,7 @@ namespace WsHttp
             // This next line is optional. It specifies that the client's certificate
             // does not have to be issued by a trusted authority, but can be issued
             // by a peer if it is in the Trusted People store. Do not use this setting
-            // for production code. The default is PeerTrust, which specifies that 
+            // for production code. The default is PeerTrust, which specifies that
             // the certificate must originate from a trusted certificate authority.
 
             // sh.Credentials.ClientCertificate.Authentication.CertificateValidationMode =

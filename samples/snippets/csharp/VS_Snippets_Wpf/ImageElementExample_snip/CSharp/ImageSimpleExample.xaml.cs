@@ -22,7 +22,7 @@ namespace ImageElementExample
           // Create Image Element
           Image myImage = new Image();
           myImage.Width = 200;
-         
+
           // Create source
           BitmapImage myBitmapImage = new BitmapImage();
 
@@ -30,10 +30,10 @@ namespace ImageElementExample
           myBitmapImage.BeginInit();
           myBitmapImage.UriSource = new Uri(@"C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water Lilies.jpg");
 
-          // To save significant application memory, set the DecodePixelWidth or  
-          // DecodePixelHeight of the BitmapImage value of the image source to the desired 
-          // height or width of the rendered image. If you don't do this, the application will 
-          // cache the image as though it were rendered as its normal size rather then just 
+          // To save significant application memory, set the DecodePixelWidth or
+          // DecodePixelHeight of the BitmapImage value of the image source to the desired
+          // height or width of the rendered image. If you don't do this, the application will
+          // cache the image as though it were rendered as its normal size rather then just
           // the size that is displayed.
           // Note: In order to preserve aspect ratio, set DecodePixelWidth
           // or DecodePixelHeight but not both.

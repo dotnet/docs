@@ -17,7 +17,7 @@ namespace WeakEvents
         /// <summary>
         /// Add a handler for the given source's event.
         /// </summary>
-        public static void AddHandler(EventSource source, 
+        public static void AddHandler(EventSource source,
                                       EventHandler<SomeEventEventArgs> handler)
         {
             if (source == null)
@@ -31,7 +31,7 @@ namespace WeakEvents
         /// <summary>
         /// Remove a handler for the given source's event.
         /// </summary>
-        public static void RemoveHandler(EventSource source, 
+        public static void RemoveHandler(EventSource source,
                                          EventHandler<SomeEventEventArgs> handler)
         {
             if (source == null)
@@ -50,7 +50,7 @@ namespace WeakEvents
             get
             {
                 Type managerType = typeof(SomeEventWeakEventManager);
-                SomeEventWeakEventManager manager = 
+                SomeEventWeakEventManager manager =
                     (SomeEventWeakEventManager)GetCurrentManager(managerType);
 
                 // at first use, create and register a new manager

@@ -9,7 +9,7 @@ namespace SDKSample
     public class app : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -57,10 +57,10 @@ namespace SDKSample
             myCanvas.Children.Add(myButton2);
             myCanvas.Children.Add(myButton3);
             myCanvas.Children.Add(myButton4);
-            
+
             // Add the Canvas as the lone Child of the Border
             myBorder.Child = myCanvas;
-            
+
             // Add the Border as the Content of the Parent Window Object
             mainWindow.Content = myBorder;
             mainWindow.Show ();

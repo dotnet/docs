@@ -1,7 +1,7 @@
 ﻿// <Snippet1>
 using System;
 
-public class A 
+public class A
 {
    private int value = 10;
 
@@ -10,7 +10,7 @@ public class A
        public int GetValue()
        {
            return this.value;
-       }     
+       }
    }
 }
 

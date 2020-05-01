@@ -13,19 +13,19 @@ class Example
    {
       if (secondsDelay < 0 || secondsDelay > 5)
          throw new ArgumentOutOfRangeException("secondsDelay cannot exceed 5."); // Line 15
-         
+
       return GetValueAsync();
-      
+
       async Task<int> GetValueAsync()
       {
          Console.WriteLine("Executing GetValueAsync...");
          await Task.Delay(secondsDelay * 1000);
          return secondsDelay * new Random().Next(2,10);
-      }   
-   } 
+      }
+   }
 }
 // The example displays the following output:
-//    Unhandled Exception: System.ArgumentOutOfRangeException: 
+//    Unhandled Exception: System.ArgumentOutOfRangeException:
 //       Specified argument was out of the range of valid values.
 //    Parameter name: secondsDelay cannot exceed 5.
 //       at Example.GetMultiple(Int32 secondsDelay) in Program.cs:line 15

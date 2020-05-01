@@ -17,7 +17,7 @@ namespace TextUtils
             var source = inputString.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' },
                                            StringSplitOptions.RemoveEmptyEntries);
 
-            // Create the query. Use ToLowerInvariant to match uppercase/lowercase strings.   
+            // Create the query. Use ToLowerInvariant to match uppercase/lowercase strings.
             var matchQuery = from word in source
                              where word.ToLowerInvariant() == searchWord.ToLowerInvariant()
                              select word;

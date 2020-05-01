@@ -19,9 +19,9 @@ public class Example
       byte byteValue = 254;
       short shortValue = 10342;
       int intValue = 1023983;
-      long lngValue = 6985321;               
+      long lngValue = 6985321;
       ulong ulngValue = UInt64.MaxValue;
-      
+
       // Display integer values by calling the ToString method.
       Console.WriteLine("{0,22} {1,22}", byteValue.ToString("D8"), byteValue.ToString("X8"));
       Console.WriteLine("{0,22} {1,22}", shortValue.ToString("D8"), shortValue.ToString("X8"));
@@ -29,7 +29,7 @@ public class Example
       Console.WriteLine("{0,22} {1,22}", lngValue.ToString("D8"), lngValue.ToString("X8"));
       Console.WriteLine("{0,22} {1,22}", ulngValue.ToString("D8"), ulngValue.ToString("X8"));
       Console.WriteLine();
-      
+
       // Display the same integer values by using composite formatting.
       Console.WriteLine("{0,22:D8} {0,22:X8}", byteValue);
       Console.WriteLine("{0,22:D8} {0,22:X8}", shortValue);
@@ -42,7 +42,7 @@ public class Example
       //                     01023983               000F9FEF
       //                     06985321               006A9669
       //         18446744073709551615       FFFFFFFFFFFFFFFF
-      //       
+      //
       //                     00000254               000000FE
       //                     00010342               00002866
       //                     01023983               000F9FEF
@@ -62,7 +62,7 @@ public class Example
       Console.WriteLine(value.ToString("X" + hexLength.ToString()));
       // The example displays the following output:
       //       00000160934
-      //       00000274A6      
+      //       00000274A6
       // </Snippet2>
    }
 
@@ -74,33 +74,33 @@ public class Example
       decimal decValue = 103932.52m;
       float sngValue = 1549230.10873992f;
       double dblValue = 9034521202.93217412;
-      
+
       // Display the numbers using the ToString method.
       Console.WriteLine(intValue.ToString(fmt));
-      Console.WriteLine(decValue.ToString(fmt));           
+      Console.WriteLine(decValue.ToString(fmt));
       Console.WriteLine(sngValue.ToString(fmt));
-      Console.WriteLine(dblValue.ToString(fmt));           
+      Console.WriteLine(dblValue.ToString(fmt));
       Console.WriteLine();
-      
+
       // Display the numbers using composite formatting.
       string formatString = " {0,15:" + fmt + "}";
-      Console.WriteLine(formatString, intValue);      
-      Console.WriteLine(formatString, decValue);      
-      Console.WriteLine(formatString, sngValue);      
-      Console.WriteLine(formatString, dblValue);      
+      Console.WriteLine(formatString, intValue);
+      Console.WriteLine(formatString, decValue);
+      Console.WriteLine(formatString, sngValue);
+      Console.WriteLine(formatString, dblValue);
       // The example displays the following output:
       //       01053240
       //       00103932.52
       //       01549230
       //       9034521202.93
-      //       
+      //
       //               01053240
       //            00103932.52
       //               01549230
-      //          9034521202.93      
+      //          9034521202.93
       // </Snippet3>
    }
-   
+
    private static void PadNumberWithNZeroes()
    {
       // <Snippet4>
@@ -109,7 +109,7 @@ public class Example
       {
          string decSeparator = System.Globalization.NumberFormatInfo.CurrentInfo.NumberDecimalSeparator;
          string fmt, formatString;
-         
+
          if (dblValue.ToString().Contains(decSeparator))
          {
             int digits = dblValue.ToString().IndexOf(decSeparator);
@@ -117,7 +117,7 @@ public class Example
          }
          else
          {
-            fmt = new String('0', dblValue.ToString().Length);   
+            fmt = new String('0', dblValue.ToString().Length);
          }
          formatString = "{0,20:" + fmt + "}";
 
@@ -128,7 +128,7 @@ public class Example
       //       000009034521202.93
       //         000009034521202.93
       //       9034521202
-      //                 9034521202            
+      //                 9034521202
       // </Snippet4>
    }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 //</snippet11>
 
 namespace HostingWfInWpf
-{   
+{
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -20,7 +20,7 @@ namespace HostingWfInWpf
         }
 
         //<snippet10>
-        private void Window_Loaded(object sender, RoutedEventArgs e) 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Create the interop host control.
             System.Windows.Forms.Integration.WindowsFormsHost host =

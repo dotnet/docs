@@ -120,9 +120,9 @@ namespace CustomCodeAttributes_Examples2
 #if false
     //<snippet12>
     [Developer("Joan Smith", "1")]
-    
+
     -or-
-    
+
     [Developer("Joan Smith", "1", Reviewed = true)]
     //</snippet12>
 

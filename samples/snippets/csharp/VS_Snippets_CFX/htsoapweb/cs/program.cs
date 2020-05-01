@@ -50,10 +50,10 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
             ServiceEndpoint endpoint = host.AddServiceEndpoint(typeof(IService), new WebHttpBinding(), "Web");
             endpoint.Behaviors.Add(new WebHttpBehavior());
             // </Snippet4>
-            
+
             try
             {
-                // <Snippet5> 
+                // <Snippet5>
                 host.Open();
                 // </Snippet5>
 

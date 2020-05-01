@@ -15,7 +15,7 @@ namespace ToolBarStyles
 	/// Interaction logic for Pane1.xaml
 	/// </summary>
         	
-        public partial class Pane1 : Window 
+        public partial class Pane1 : Window
 
 	{
        }

@@ -36,4 +36,4 @@ Once you create the assembly, you can sign the file that contains the assembly m
 ## See also
 
 - [How to: Build a multifile assembly](build-multifile-assembly.md)
-- [Program with assemblies](../../standard/assembly/program.md)
+- [Program with assemblies](../../standard/assembly/index.md)

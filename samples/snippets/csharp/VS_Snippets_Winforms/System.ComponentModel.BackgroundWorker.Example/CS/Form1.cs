@@ -29,7 +29,7 @@ namespace BackgroundWorkerExample
             // Start the time-consuming operation.
             e.Result = TimeConsumingOperation(bw, arg);
 
-            // If the operation was canceled by the user, 
+            // If the operation was canceled by the user,
             // set the DoWorkEventArgs.Cancel property to true.
             if (bw.CancellationPending)
             {
@@ -39,13 +39,13 @@ namespace BackgroundWorkerExample
         // </snippet2>
 
         // <snippet3>
-        // This event handler demonstrates how to interpret 
+        // This event handler demonstrates how to interpret
         // the outcome of the asynchronous operation implemented
         // in the DoWork event handler.
         private void backgroundWorker1_RunWorkerCompleted(
-            object sender, 
+            object sender,
             RunWorkerCompletedEventArgs e)
-        {   
+        {
             if (e.Cancelled)
             {
                 // The user canceled the operation.
@@ -67,12 +67,12 @@ namespace BackgroundWorkerExample
         // </snippet3>
 
         // <snippet4>
-        // This method models an operation that may take a long time 
+        // This method models an operation that may take a long time
         // to run. It can be cancelled, it can raise an exception,
         // or it can exit normally and return a result. These outcomes
         // are chosen randomly.
-        private int TimeConsumingOperation( 
-            BackgroundWorker bw, 
+        private int TimeConsumingOperation(
+            BackgroundWorker bw,
             int sleepPeriod )
         {
             int result = 0;
@@ -168,33 +168,33 @@ namespace BackgroundWorkerExample
             this.startBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
+            //
             // backgroundWorker1
-            // 
+            //
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
-            // 
+            //
             // startBtn
-            // 
+            //
             this.startBtn.Location = new System.Drawing.Point(12, 12);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(75, 23);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "Start";
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
-            // 
+            //
             // cancelBtn
-            // 
+            //
             this.cancelBtn.Location = new System.Drawing.Point(94, 11);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(75, 23);
             this.cancelBtn.TabIndex = 1;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(183, 49);

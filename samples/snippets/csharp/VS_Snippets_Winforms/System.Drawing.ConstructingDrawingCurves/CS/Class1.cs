@@ -19,7 +19,7 @@ public class SystemDrawingConstructingDrawingCurves
            new Point(75, 10),    // first control point of first spline
            new Point(80, 50),    // second control point of first spline
 
-           new Point(100, 150),  // endpoint of first spline and 
+           new Point(100, 150),  // endpoint of first spline and
                                  // start point of second spline
 
            new Point(125, 80),   // first control point of second spline

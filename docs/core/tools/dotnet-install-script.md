@@ -57,6 +57,8 @@ Before running the script, install the required [dependencies](../install/depend
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version.
 
+The install scripts do not update the registry on Windows. They just download the zipped binaries and copy them to a folder. If you want registry key values to be updated, use the .NET Core installers.
+
 ## Options
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**

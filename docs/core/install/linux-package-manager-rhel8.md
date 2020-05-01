@@ -20,7 +20,7 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 
 ## Install the .NET Core SDK
 
-After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands.
+After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following command.
 
 ```bash
 sudo dnf install dotnet-sdk-3.1
@@ -28,7 +28,7 @@ sudo dnf install dotnet-sdk-3.1
 
 ## Install the ASP.NET Core Runtime
 
-After registering with the Subscription Manager, you're ready to install and enable the ASP.NET Core Runtime. In your terminal, run the following commands.
+After registering with the Subscription Manager, you're ready to install and enable the ASP.NET Core Runtime. In your terminal, run the following command.
 
 ```bash
 sudo dnf install aspnetcore-runtime-3.1
@@ -36,7 +36,7 @@ sudo dnf install aspnetcore-runtime-3.1
 
 ## Install the .NET Core Runtime
 
-After registering with the Subscription Manager, you're ready to install and enable the .NET Core Runtime. In your terminal, run the following commands.
+After registering with the Subscription Manager, you're ready to install and enable the .NET Core Runtime. In your terminal, run the following command.
 
 ```bash
 sudo dnf install dotnet-runtime-3.1

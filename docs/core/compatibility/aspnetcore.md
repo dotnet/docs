@@ -35,6 +35,7 @@ The following breaking changes are documented on this page:
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [HTTP: DefaultHttpContext extensibility removed](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP: HeaderNames fields changed to static readonly](#http-headernames-constants-changed-to-static-readonly)
+- [HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](#http-httpclient-instances-created-by-ihttpclientfactory-log-integer-status-codes)
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
 - [HTTP: Some cookie SameSite default values changed](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP: Synchronous IO disabled by default](#http-synchronous-io-disabled-in-all-servers)
@@ -79,6 +80,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
+
+***
+
+[!INCLUDE[HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](~/includes/core-changes/aspnetcore/5.0/http-httpclient-instances-log-integer-status-codes.md)]
 
 ***
 

@@ -35,29 +35,33 @@ Azure DevOps is divided into five major components:
 
 ![Figure 11-1 The five major areas of Azure DevOps](./media/devops-components.png)
 
-**Azure Boards** - Provides an issue and work item tracking tool that strives to allow users to pick the workflows that work best for them. It comes with a number of pre-configured templates including ones to support SCRUM and Kanban styles of development.
+**Azure Repos** - Source code management that supports the venerable Team Foundation Version Control (TFVC) and the industry favorite [Git](https://en.wikipedia.org/wiki/Git). Pull requests provide a way to enable social coding by fostering discussion of changes as they're made.
 
-**Azure Repos** - Source code management that supports the venerable Team Foundation Version Control (TFVC) and the industry favorite git. Pull requests provide a way to enable social coding by fostering discussion of changes as they're made.
+**Azure Boards** - Provides an issue and work item tracking tool that strives to allow users to pick the workflows that work best for them. It comes with a number of pre-configured templates including ones to support SCRUM and Kanban styles of development.
 
 **Azure Pipelines** - A build and release management system that supports tight integration with Azure. Builds can be run on a variety of platforms from Windows to Linux to MacOS. Build agents may be provisioned in the cloud or on-premises.
 
 **Azure Test Plans** - No QA person will be left behind with the test management and exploratory testing support offered by the Test Plans feature.
 
-**Azure Artifacts** - An artifact feed that allows companies to create their own, internal, versions of NuGet, npm, and others. It serves a double purpose of acting as a cache of upstream packages if there's a failure of a centralized repository.
+**Azure Artifacts** - An artifact feed that allows companies to create their own, internal, versions of NuGet, npm, and others. It serves a double purpose of acting as a cache of upstream packages if there's a failure of a c
+centralized repository.
 
-The top-level organizational unit in Azure DevOps is known as a Project. Within each project the various components, such as Azure Artifacts, can be turned on and off. If users want to manage their source code in GitHub but still take advantage of Azure Pipelines, then that's perfectly possible. In fact, many open-source projects leverage the [free builds](https://azure.microsoft.com/blog/announcing-azure-pipelines-with-unlimited-ci-cd-minutes-for-open-source/) offered by Azure DevOps while keeping their source code on GitHub. Some significant open-source projects such as [Visual Studio Code](https://code.visualstudio.com/), [yarn](https://yarnpkg.com/en/), [gulp](https://gulpjs.com/), and [NumPy](https://www.numpy.org/) have made the transition.
 
-Each of these components provides different advantages for cloud-native applications. The three most useful are repositories, boards, and pipelines.  
+
+The top-level organizational unit in Azure DevOps is known as a Project. Within each project the various components, such as Azure Artifacts, can be turned on and off. Each of these components provides different advantages for cloud-native applications. The three most useful are repositories, boards, and pipelines. If users want to manage their source code in another repository stack, such as GitHub, but still take advantage of Azure Pipelines and other components, that's perfectly possible.
+
+Fortunately, development teams have many options when selecting a repository. One of them is GitHub.
 
 ## GitHub
 
-Fortunately, development teams have many options when selecting a repository.
+ Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Many large tech companies, such as Apple, Amazon, Google, and mainstream corporations use GitHub. GitHub uses the open-source, distributed version control system named Git as its foundation. On top, it then adds its own set of features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
 
-One of them is [GitHub](https://github.com/). Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Apple, Amazon, Google, and many other large tech companies use GitHub. GitHub uses the open-source, distributed version control system named [Git](https://en.wikipedia.org/wiki/Git) as its foundation. GitHub then adds its own features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
-
-GitHub now features its own continuous integration/continuous delivery (CI/CD) pipeline. GitHub Actions is a community-powered workflow automation tool. It lets DevOps teams integrate with their existing tooling, mix and match new products, and hook into their software lifecycle, including existing CI/CD partners."
+As GitHub evolves, it too is adding DevOps features. For example, GitHub has its own continuous integration/continuous delivery (CI/CD) pipeline, called `Actions`. Actions is a community-powered workflow automation tool. It lets DevOps teams integrate with their existing tooling, mix and match new products, and hook into their software lifecycle, including existing CI/CD partners."
 
 GitHub has over 28 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company. GitHub offers plans for enterprise, team, professional, and free accounts.
+
+
+In fact, many open-source projects leverage the [free builds](https://azure.microsoft.com/blog/announcing-azure-pipelines-with-unlimited-ci-cd-minutes-for-open-source/) offered by Azure DevOps while keeping their source code on GitHub. Some significant open-source projects such as [Visual Studio Code](https://code.visualstudio.com/), [yarn](https://yarnpkg.com/en/), [gulp](https://gulpjs.com/), and [NumPy](https://www.numpy.org/) have made the transition.
 
 ## Source control
 

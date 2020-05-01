@@ -268,25 +268,11 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </Project>
 ```
 
-## NuGet packages
+## References
 
-- [PackageReference](#packagereference)
 - [AssetTargetFallback](#assettargetfallback)
-
-### PackageReference
-
-The `PackageReference` item lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  ...
-  <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="4.3.0" />
-  </ItemGroup>
-</Project>
-```
-
-For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+- [ProjectReference](#projectreference)
+- [PackageReference](#packagereference)
 
 ### AssetTargetFallback
 
@@ -295,15 +281,44 @@ The `AssetTargetFallback` property lets you specify additional compatible framew
 You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  ...
-  <PropertyGroup>
-    <AssetTargetFallback>net461</AssetTargetFallback>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <AssetTargetFallback>net461</AssetTargetFallback>
+</PropertyGroup>
 ```
 
-### Pack and restore targets
+### PackageReference
+
+The `PackageReference` item lets you specify a NuGet package dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID.
+
+The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
+
+```xml
+<ItemGroup>
+  <PackageReference Include="System.Runtime" Version="4.3.0" />
+</ItemGroup>
+```
+
+For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+## ProjectReference
+
+The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project. Optional additional metadata can be provided as subelements.
+
+The project file snippet in the following example references the a project named `Project2`.
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\Project2.csproj">
+    <Name>Project2</Name>
+  </ProjectReference>
+</ItemGroup>
+```
+
+## Package creation
+
+MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
+
+## Package restoration
 
 MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
 

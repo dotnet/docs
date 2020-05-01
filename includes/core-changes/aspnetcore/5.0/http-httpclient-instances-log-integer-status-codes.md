@@ -34,7 +34,7 @@ Adding another log value to capture the integer status code was considered. Unfo
 
 #### Recommended action
 
-The best option is to update logging queries to use the integer values of status codes. This option may cause some difficulty writing queries across multiple ASP.NET Core versions right now. However, using integers for this purpose is much more flexible for querying logs.
+The best option is to update logging queries to use the integer values of status codes. This option may cause some difficulty writing queries across multiple ASP.NET Core versions. However, using integers for this purpose is much more flexible for querying logs.
 
 If you need to force compatibility with the old behavior and use textual status codes, replace the `IHttpClientFactory` logging with your own:
 
@@ -73,12 +73,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-None
+<xref:System.Net.Http.HttpClient?displayProperty=nameWithType>
 
 <!--
 
 #### Affected APIs
 
-Not detectable via API analysis
+`T:System.Net.Http.HttpClient`
 
 -->

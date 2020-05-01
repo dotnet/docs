@@ -1,6 +1,6 @@
 ---
 title: "Create an object pool by using a ConcurrentBag"
-ms.date: 04/30/2020
+ms.date: 05/01/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"

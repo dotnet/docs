@@ -13,8 +13,8 @@ namespace ObjectPoolExample
 
         public ObjectPool(Func<T> objectGenerator)
         {
-            _objects = new ConcurrentBag<T>();
             _objectGenerator = objectGenerator ?? throw new ArgumentNullException(nameof(objectGenerator));
+            _objects = new ConcurrentBag<T>();
         }
 
         public T Get() => _objects.TryTake(out T item) ? item : _objectGenerator();
@@ -39,16 +39,22 @@ namespace ObjectPoolExample
 
             var pool = new ObjectPool<ExampleObject>(() => new ExampleObject());
 
-            // Create a high demand for MyClass objects.
+            // Create a high demand for ExampleObject instance.
             Parallel.For(0, 1000000, (i, loopState) =>
             {
-                var mc = pool.Get();
-                Console.CursorLeft = 0;
-                // This is the bottleneck in our application. All threads in this loop
-                // must serialize their access to the static Console class.
-                Console.WriteLine("{0:####.####}", mc.GetValue(i));
+                var example = pool.Get();
+                try
+                {
+                    Console.CursorLeft = 0;
+                    // This is the bottleneck in our application. All threads in this loop
+                    // must serialize their access to the static Console class.
+                    Console.WriteLine($"{example.GetValue(i):####.####}");
+                }
+                finally
+                {
+                    pool.Return(example);
+                }
 
-                pool.Return(mc);
                 if (cts.Token.IsCancellationRequested)
                 {
                     loopState.Stop();
@@ -67,8 +73,6 @@ namespace ObjectPoolExample
     {
         public int[] Nums { get; set; }
 
-        public double GetValue(long i) => Math.Sqrt(Nums[i]);
-
         public ExampleObject()
         {
             Nums = new int[1000000];
@@ -78,6 +82,8 @@ namespace ObjectPoolExample
                 Nums[i] = rand.Next();
             }
         }
+
+        public double GetValue(long i) => Math.Sqrt(Nums[i]);
     }
 }
 //</snippet04>

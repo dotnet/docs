@@ -63,7 +63,7 @@ The **Details** section of the report lists the APIs missing from any of the sel
   API lives in.
 - Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
   supported on this Target Platform.
-- Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for many APIs. Due to the large number of APIs, we have significant challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
+- Recommended Changes: the recommended API or technology to change to. Currently, this field is empty or out of date for many APIs. Due to the large number of APIs, we have a significant challenge to keep it up-to-date. We are looking at alternative solutions to provide helpful information to customers.
 
 #### Missing Assemblies
 

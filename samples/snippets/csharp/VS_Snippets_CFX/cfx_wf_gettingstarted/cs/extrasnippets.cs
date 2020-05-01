@@ -20,7 +20,7 @@ namespace WorkflowConsoleApplication1
 
         void Snippet4()
         {
-            
+
             //<snippet4>
             AutoResetEvent syncEvent = new AutoResetEvent(false);
 

@@ -61,7 +61,7 @@ namespace RecycleItemContainerShippets
 
         public ObservableCollection<string> SecondLevelItems
         {
-            get 
+            get
             {
                 level2Items ??= new ObservableCollection<string>();
                 return level2Items;
@@ -87,7 +87,7 @@ namespace RecycleItemContainerShippets
 
             string[] strings = itemString.Split(null);
             int value;
-            
+
             if (!Int32.TryParse(strings[strings.Length - 1], out value))
             {
                 return null;

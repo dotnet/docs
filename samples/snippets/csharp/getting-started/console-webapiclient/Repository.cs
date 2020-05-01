@@ -23,7 +23,7 @@ namespace WebAPIClient
 
         [JsonPropertyName("pushed_at")]
         public string JsonDate { get; set; }
-        
+
         public DateTime LastPush =>
             DateTime.ParseExact(JsonDate, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture);
     }

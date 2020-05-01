@@ -22,7 +22,7 @@ namespace GroupBoxSnippet
     // To use Loaded event put Loaded="WindowLoaded" attribute in root element of .xaml file.
     // private void WindowLoaded(object sender, RoutedEventArgs e) {}
 
-    // Sample event handler:  
+    // Sample event handler:
      private void SubmitCode(object sender, RoutedEventArgs e) {
      //dummy handler since this is just snippet code
      }

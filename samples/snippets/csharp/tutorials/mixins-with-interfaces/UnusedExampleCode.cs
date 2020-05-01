@@ -4,8 +4,8 @@ using System.Text;
 using System.Threading.Tasks;
 using mixins_with_interfaces;
 
-// This file and namespace contains interim samples that are 
-// included in the text, but aren't part of the fial sample. 
+// This file and namespace contains interim samples that are
+// included in the text, but aren't part of the fial sample.
 // We want these compiled by our CI build, but they won't be
 // run in the sample.
 namespace NotUsedInFinalSample
@@ -30,7 +30,7 @@ namespace NotUsedInFinalSample
         public override string ToString() => $"The light is {isOn: \"on\", \"off\"}";
     }
     // </SnippetOverheadLightV1>
-    
+
     // <SnippetPureTimerInterface>
     public interface ITimerLight : ILight
     {

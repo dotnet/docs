@@ -26,7 +26,7 @@ reader.XmlResolver = resolver;
 }
 
 //==============================
-// 
+//
 static void XmlReader_Creation_New() {
 //<snippet2>
 // Supply the credentials necessary to access the Web server.
@@ -41,7 +41,7 @@ XmlReader reader = XmlReader.Create("http://serverName/data/books.xml", settings
 //</snippet2>
 }
 //==============================
-// 
+//
 static void XML_Validation_Old() {
 //<snippet3a>
 XmlValidatingReader reader = new XmlValidatingReader(new XmlTextReader("books.xml"));
@@ -58,7 +58,7 @@ private static void ValidationCallBack(object sender, ValidationEventArgs e) {
 //</snippet3b>
 
 //==============================
-// 
+//
 static void XML_Validation_New() {
 //<snippet4a>
 XmlReaderSettings settings = new XmlReaderSettings();
@@ -76,8 +76,8 @@ private static void ValidationCallBack1(object sender, ValidationEventArgs e) {
 //</snippet4b>
 
 //==============================
-// 
-static void XmlWriter_Creation_Old() {  
+//
+static void XmlWriter_Creation_Old() {
 //<snippet5>
 XmlTextWriter writer = new XmlTextWriter("books.xml", Encoding.Unicode);
 writer.Formatting = Formatting.Indented;
@@ -85,8 +85,8 @@ writer.Formatting = Formatting.Indented;
 }
 
 //==============================
-// 
-static void XmlWriter_Creation_New() {    
+//
+static void XmlWriter_Creation_New() {
 //<snippet6>
 XmlWriterSettings settings = new XmlWriterSettings();
 settings.Indent = true;
@@ -96,8 +96,8 @@ XmlWriter writer = XmlWriter.Create("books.xml", settings);
 }
 
 //==============================
-// 
-static void XSLT_Old() {    
+//
+static void XSLT_Old() {
 string filename = "books.xml";
 //<snippet7>
 // Create the XslTransform.
@@ -118,8 +118,8 @@ xslt.Transform(doc, null, writer, null);
 }
 
 //==============================
-// 
-static void XSLT_New() {    
+//
+static void XSLT_New() {
 //<snippet8>
 // Create the XslCompiledTransform object.
 XslCompiledTransform xslt = new XslCompiledTransform();
@@ -138,8 +138,8 @@ xslt.Transform("books.xml", writer);
 }
 
 //==============================
-// 
-static void XSLT_URI_Old() {    
+//
+static void XSLT_URI_Old() {
 //<snippet9>
 XslTransform xslt = new XslTransform();
 xslt.Load("output.xsl");
@@ -148,8 +148,8 @@ xslt.Transform("books.xml", "books.html");
 }
 
 //==============================
-// 
-static void XSLT_URI_New() {    
+//
+static void XSLT_URI_New() {
 //<snippet10>
 XslCompiledTransform xslt = new XslCompiledTransform();
 xslt.Load("output.xsl");
@@ -158,8 +158,8 @@ xslt.Transform("books.xml", "books.html");
 }
 
 //==============================
-// 
-static void Stylesheet_Credentials_Old() {    
+//
+static void Stylesheet_Credentials_Old() {
 //<snippet11>
 XslTransform xslt = new XslTransform();
 XmlUrlResolver resolver = new XmlUrlResolver();
@@ -169,8 +169,8 @@ xslt.Load("sort.xsl", resolver);
 }
 
 //==============================
-// 
-static void Stylesheet_Credentials_New() {    
+//
+static void Stylesheet_Credentials_New() {
 //<snippet12>
 XslCompiledTransform xslt = new XslCompiledTransform();
 XmlUrlResolver resolver = new XmlUrlResolver();
@@ -180,8 +180,8 @@ xslt.Load("sort.xsl", XsltSettings.Default, resolver);
 }
 
 //==============================
-// 
-static void XSLT_Param_Old() {    
+//
+static void XSLT_Param_Old() {
 string filename = "books.xml";
 //<snippet13>
 XslTransform xslt = new XslTransform();
@@ -203,8 +203,8 @@ xslt.Transform(new XPathDocument(filename), argList, writer, null);
 }
 
 //==============================
-// 
-static void XSLT_Param_New() {    
+//
+static void XSLT_Param_New() {
 string filename = "books.xml";
 //<snippet14>
 XslCompiledTransform xslt = new XslCompiledTransform();
@@ -217,7 +217,7 @@ XsltArgumentList argList = new XsltArgumentList();
 DateTime d = DateTime.Now;
 argList.AddParam("date", "", d.ToString());
 
-// Create the XmlWriter. 
+// Create the XmlWriter.
 XmlWriter writer = XmlWriter.Create("output.xml", null);
 
 // Transform the file.
@@ -226,8 +226,8 @@ xslt.Transform(new XPathDocument(filename), argList, writer);
 }
 
 //==============================
-// 
-static void XSLT_Script_Old() {    
+//
+static void XSLT_Script_Old() {
 //<snippet15>
 XslTransform xslt = new XslTransform();
 xslt.Load("output.xsl");
@@ -236,8 +236,8 @@ xslt.Transform("books.xml", "books.html");
 }
 
 //==============================
-// 
-static void XSLT_Script_New() {    
+//
+static void XSLT_Script_New() {
 //<snippet16>
 // Create the XsltSettings object with script enabled.
 XsltSettings settings = new XsltSettings(false,true);
@@ -250,8 +250,8 @@ xslt.Transform("books.xml", "books.html");
 }
 
 //==============================
-// 
-static void XSLT_Roundtrip_Old() {    
+//
+static void XSLT_Roundtrip_Old() {
 //<snippet17>
 // Execute the transformation.
 XslTransform xslt = new XslTransform();
@@ -264,8 +264,8 @@ XPathDocument doc = new XPathDocument(reader);
 }
 
 //==============================
-// 
-static void XSLT_Roundtrip_New() {    
+//
+static void XSLT_Roundtrip_New() {
 //<snippet18>
 // Execute the transformation.
 XslCompiledTransform xslt = new XslCompiledTransform();
@@ -280,8 +280,8 @@ XPathDocument doc = new XPathDocument(ms);
 }
 
 //==============================
-// 
-static void XSLT_DOM_Old() {    
+//
+static void XSLT_DOM_Old() {
 //<snippet19>
 // Execute the transformation.
 XslTransform xslt = new XslTransform();
@@ -295,8 +295,8 @@ doc.Load(reader);
 }
 
 //==============================
-// 
-static void XSLT_DOM_New() {    
+//
+static void XSLT_DOM_New() {
 //<snippet20>
 // Execute the transformation.
 XslCompiledTransform xslt = new XslCompiledTransform();

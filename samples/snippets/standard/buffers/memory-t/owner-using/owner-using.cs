@@ -32,6 +32,6 @@ class Example
         strValue.AsSpan().CopyTo(span);
     }
 
-    static void DisplayBufferToConsole(Memory<char> buffer) => 
+    static void DisplayBufferToConsole(Memory<char> buffer) =>
         Console.WriteLine($"Contents of the buffer: '{buffer}'");
 }

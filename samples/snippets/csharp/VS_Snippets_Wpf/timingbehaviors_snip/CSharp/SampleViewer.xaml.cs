@@ -22,11 +22,11 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
         private Clock theClock;
         private Nullable<TimeSpan> previousTime;
-    
+
         public ElapsedTimeControl()
         {
         }
-        
+
         public Clock Clock
         {
             get { return theClock; }
@@ -34,18 +34,18 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             {
                 if (theClock != null)
                 {
-                    theClock.CurrentTimeInvalidated -= new EventHandler(onClockTimeInvalidated);    
+                    theClock.CurrentTimeInvalidated -= new EventHandler(onClockTimeInvalidated);
                 }
-                
+
                 theClock = value;
-                
+
                 if (theClock != null)
                 {
                     theClock.CurrentTimeInvalidated += new EventHandler(onClockTimeInvalidated);
                 }
             }
         }
-        
+
         private void onClockTimeInvalidated(object sender, EventArgs args)
         {
             SetValue(CurrentTimeProperty, theClock.CurrentTime);
@@ -53,20 +53,20 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
         public static readonly DependencyProperty CurrentTimeProperty =
             DependencyProperty.Register(
-                "CurrentTime", 
-                typeof(Nullable<TimeSpan>), 
+                "CurrentTime",
+                typeof(Nullable<TimeSpan>),
                 typeof(ElapsedTimeControl),
                 new FrameworkPropertyMetadata(
-                    (Nullable<TimeSpan>)null, 
+                    (Nullable<TimeSpan>)null,
                     new PropertyChangedCallback(currentTime_Changed)));
 
-        private static void currentTime_Changed(DependencyObject d, 
+        private static void currentTime_Changed(DependencyObject d,
             DependencyPropertyChangedEventArgs args)
         {
-        
+
             //((ElapsedTimeControl)d).onCurrentTimeChanged(oldValue, newValue);
         }
-        
+
         private void onCurrentTimeChanged(object oldValue, object newValue)
         {
             if (previousTime != null && ((TimeSpan)previousTime).Milliseconds != ((TimeSpan)theClock.CurrentTime).Milliseconds){
@@ -79,9 +79,9 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 previousTime = (TimeSpan)theClock.CurrentTime;
             }
         }
-        
+
         public static readonly DependencyProperty CurrentTimeAsStringProperty =
-            DependencyProperty.Register("CurrentTimeAsString", typeof(string), 
+            DependencyProperty.Register("CurrentTimeAsString", typeof(string),
                 typeof(ElapsedTimeControl));
     }
 }

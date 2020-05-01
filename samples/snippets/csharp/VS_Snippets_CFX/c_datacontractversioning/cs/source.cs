@@ -21,7 +21,7 @@ namespace DataContractsPrime
 namespace DataContracts
 {
     //<snippet2>
-    // Version 2. This is a non-breaking change because the data contract 
+    // Version 2. This is a non-breaking change because the data contract
     // has not changed, even though the type has.
     [DataContract]
     public class Person

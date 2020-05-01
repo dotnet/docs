@@ -94,7 +94,7 @@ static class VarianceWorkaround
         return new CollectionWrapper<S, D>(source);
     }
 
-    private class CollectionWrapper<S, D> 
+    private class CollectionWrapper<S, D>
         : EnumerableWrapper<S, D>, ICollection<D>
         where S : D
     {
@@ -103,7 +103,7 @@ static class VarianceWorkaround
         {
         }
 
-        // variance going the wrong way ... 
+        // variance going the wrong way ...
         // ... can yield exceptions at runtime
         public void Add(D item)
         {
@@ -122,7 +122,7 @@ static class VarianceWorkaround
             this.source.Clear();
         }
 
-        // variance going the wrong way ... 
+        // variance going the wrong way ...
         // ... but the semantics of the method yields reasonable semantics
         public bool Contains(D item)
         {
@@ -136,7 +136,7 @@ static class VarianceWorkaround
             }
         }
 
-        // variance going the right way ... 
+        // variance going the right way ...
         public void CopyTo(D[] array, int arrayIndex)
         {
             foreach (S src in this.source)
@@ -155,7 +155,7 @@ static class VarianceWorkaround
             get { return this.source.IsReadOnly; }
         }
 
-        // variance going the wrong way ... 
+        // variance going the wrong way ...
         // ... but the semantics of the method yields reasonable  semantics
         public bool Remove(D item)
         {
@@ -168,7 +168,7 @@ static class VarianceWorkaround
                 return false;
             }
         }
-        
+
         private ICollection<S> source;
     }
 
@@ -188,7 +188,7 @@ static class VarianceWorkaround
         {
             this.source = source;
         }
-        
+
         public int IndexOf(D item)
         {
             if (item is S)
@@ -215,7 +215,7 @@ static class VarianceWorkaround
             }
         }
     //</Snippet62>
-    
+
         public void RemoveAt(int index)
         {
             this.source.RemoveAt(index);
@@ -235,7 +235,7 @@ static class VarianceWorkaround
                     throw new Exception("Invalid type exception.");
             }
         }
-        
+
         private IList<S> source;
     }
 }
@@ -253,10 +253,10 @@ namespace GenericVariance
             }
         }
         //</Snippet58>
-        
+
         static void AddToObjects(IList<object> objects)
         {
-            // this will fail if the collection provided is a wrapped collection 
+            // this will fail if the collection provided is a wrapped collection
             objects.Add(new object());
         }
         static void Main(string[] args)
@@ -269,9 +269,9 @@ namespace GenericVariance
             List<object> objects = new List<object>();
 
             // doesn’t compile ‘ints’ is not a IEnumerable<object>
-            //objects.AddRange(ints); 
+            //objects.AddRange(ints);
             //</Snippet55>
-            
+
             //<Snippet57>
             // does compile
             VarianceWorkaround.Add<int, object>(ints, objects);
@@ -296,10 +296,10 @@ namespace GenericVariance
             object[] objects = new string[10];
 
             // no problem, adding a string to a string[]
-            objects[0] = "hello"; 
+            objects[0] = "hello";
 
             // runtime exception, adding an object to a string[]
-            objects[1] = new object(); 
+            objects[1] = new object();
             //</Snippet63>
         }
     }

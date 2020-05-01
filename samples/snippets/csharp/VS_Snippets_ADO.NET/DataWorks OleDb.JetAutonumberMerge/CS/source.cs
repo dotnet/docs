@@ -36,8 +36,8 @@ class Program
             // Create a DataTable
             DataTable categories = new DataTable();
 
-            // Create the CategoryID column and set its auto 
-            // incrementing properties to decrement from zero. 
+            // Create the CategoryID column and set its auto
+            // incrementing properties to decrement from zero.
             DataColumn column = new DataColumn();
             column.DataType = System.Type.GetType("System.Int32");
             column.ColumnName = "CategoryID";
@@ -78,7 +78,7 @@ class Program
             adapter.RowUpdated +=
                 new OleDbRowUpdatedEventHandler(OnRowUpdated);
 
-            // Update the database, inserting the new rows. 
+            // Update the database, inserting the new rows.
             adapter.Update(dataChanges);
 
             Console.WriteLine("Rows before merge:");
@@ -124,7 +124,7 @@ class Program
 
     static string GetConnectionString()
     {
-        // To avoid storing the connection string in your code, 
+        // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
         return "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="
             + "c:\\Data\\Northwind.mdb;User Id=admin;Password=;";

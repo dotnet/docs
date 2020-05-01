@@ -3,27 +3,27 @@
     using System;
     class OverloadingExample
     {
-        static void F() 
+        static void F()
         {
             Console.WriteLine("F()");
         }
-        static void F(object x) 
+        static void F(object x)
         {
             Console.WriteLine("F(object)");
         }
-        static void F(int x) 
+        static void F(int x)
         {
             Console.WriteLine("F(int)");
         }
-        static void F(double x) 
+        static void F(double x)
         {
             Console.WriteLine("F(double)");
         }
-        static void F<T>(T x) 
+        static void F<T>(T x)
         {
             Console.WriteLine("F<T>(T)");
         }
-        static void F(double x, double y) 
+        static void F(double x, double y)
         {
             Console.WriteLine("F(double, double)");
         }
@@ -39,5 +39,5 @@
             F(1, 1);        // Invokes F(double, double)
         }
     }
-    
+
 }

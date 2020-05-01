@@ -15,7 +15,7 @@ namespace Overview
          // <snippet1>
          // Create a BufferBlock<int> object.
          var bufferBlock = new BufferBlock<int>();
-         
+
          // Post several messages to the block.
          for (int i = 0; i < 3; i++)
          {
@@ -27,7 +27,7 @@ namespace Overview
          {
             Console.WriteLine(bufferBlock.Receive());
          }
-         
+
          /* Output:
             0
             1
@@ -65,8 +65,8 @@ namespace Overview
          // Create a WriteOnceBlock<string> object.
          var writeOnceBlock = new WriteOnceBlock<string>(null);
 
-         // Post several messages to the block in parallel. The first 
-         // message to be received is written to the block. 
+         // Post several messages to the block in parallel. The first
+         // message to be received is written to the block.
          // Subsequent messages are discarded.
          Parallel.Invoke(
             () => writeOnceBlock.Post("Message 1"),
@@ -95,7 +95,7 @@ namespace Overview
             actionBlock.Post(i * 10);
          }
 
-         // Set the block to the completed state and wait for all 
+         // Set the block to the completed state and wait for all
          // tasks to finish.
          actionBlock.Complete();
          actionBlock.Completion.Wait();
@@ -111,7 +111,7 @@ namespace Overview
       static void ShowTransformBlock()
       {
          // <snippet5>
-         // Create a TransformBlock<int, double> object that 
+         // Create a TransformBlock<int, double> object that
          // computes the square root of its input.
          var transformBlock = new TransformBlock<int, double>(n => Math.Sqrt(n));
 
@@ -249,7 +249,7 @@ namespace Overview
       static void ShowBatchedJoinBlock()
       {
          // <snippet9>
-         // For demonstration, create a Func<int, int> that 
+         // For demonstration, create a Func<int, int> that
          // returns its argument, or throws ArgumentOutOfRangeException
          // if the argument is less than zero.
          Func<int, int> DoWork = n =>
@@ -259,7 +259,7 @@ namespace Overview
             return n;
          };
 
-         // Create a BatchedJoinBlock<int, Exception> object that holds 
+         // Create a BatchedJoinBlock<int, Exception> object that holds
          // seven elements per batch.
          var batchedJoinBlock = new BatchedJoinBlock<int, Exception>(7);
 
@@ -268,18 +268,18 @@ namespace Overview
          {
             try
             {
-               // Post the result of the worker to the 
+               // Post the result of the worker to the
                // first target of the block.
                batchedJoinBlock.Target1.Post(DoWork(i));
             }
-            catch (ArgumentOutOfRangeException e) 
+            catch (ArgumentOutOfRangeException e)
             {
-               // If an error occurred, post the Exception to the 
+               // If an error occurred, post the Exception to the
                // second target of the block.
-               batchedJoinBlock.Target2.Post(e); 
+               batchedJoinBlock.Target2.Post(e);
             }
          }
-        
+
          // Read the results from the block.
          var results = batchedJoinBlock.Receive();
 
@@ -341,7 +341,7 @@ namespace Overview
             // exceptions are propagated through an AggregateException object.
             ae.Handle(e =>
             {
-               Console.WriteLine("Encountered {0}: {1}", 
+               Console.WriteLine("Encountered {0}: {1}",
                   e.GetType().Name, e.Message);
                return true;
             });
@@ -353,7 +353,7 @@ namespace Overview
          Encountered ArgumentOutOfRangeException: Specified argument was out of the range
           of valid values.
          */
-         // </snippet10>      
+         // </snippet10>
       }
 
       static void ShowCompletionStatus()
@@ -371,11 +371,11 @@ namespace Overview
             }
          });
 
-         // Create a continuation task that prints the overall 
+         // Create a continuation task that prints the overall
          // task status to the console when the block finishes.
          throwIfNegative.Completion.ContinueWith(task =>
          {
-            Console.WriteLine("The status of the completion task is '{0}'.", 
+            Console.WriteLine("The status of the completion task is '{0}'.",
                task.Status);
          });
 
@@ -410,9 +410,9 @@ namespace Overview
          Encountered ArgumentOutOfRangeException: Specified argument was out of the range
           of valid values.
          */
-         // </snippet11>      
+         // </snippet11>
       }
-      
+
       static void Main(string[] args)
       {
          //ShowBufferBlock();

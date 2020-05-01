@@ -46,7 +46,7 @@ namespace BrushesIntroduction
             DrawingBrush tileBrushWithoutTiling = new DrawingBrush();
             tileBrushWithoutTiling.Drawing = triangleDrawing;
             tileBrushWithoutTiling.TileMode = TileMode.None;
-            
+
             // Create a rectangle and paint it with the DrawingBrush.
             Rectangle noTileExampleRectangle = createExampleRectangle();
             noTileExampleRectangle.Fill = tileBrushWithoutTiling;
@@ -67,7 +67,7 @@ namespace BrushesIntroduction
             // the entire output area and its TileMode will
             // have no effect.
             // This setting uses realtive values to
-            // creates four tiles. 
+            // creates four tiles.
             tileBrushWithTiling.Viewport = new Rect(0, 0, 0.5, 0.5);
 
             // Create a rectangle and paint it with the DrawingBrush.
@@ -147,7 +147,7 @@ namespace BrushesIntroduction
         }
 
         //
-        // Helper method that creates headers for the examples. 
+        // Helper method that creates headers for the examples.
         //
         private static TextBlock createExampleHeader(String text)
         {

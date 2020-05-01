@@ -52,7 +52,7 @@ namespace Samples
         //</snippet2>
 
         //<snippet10>
-        // Only a client authenticated with a valid certificate that has the 
+        // Only a client authenticated with a valid certificate that has the
         // specified subject name and thumbprint can call this method.
         [PrincipalPermission(SecurityAction.Demand,
              Name = "CN=ReplaceWithSubjectName; 123456712345677E8E230FDE624F841B1CE9D41E")]
@@ -63,7 +63,7 @@ namespace Samples
         //</snippet10>
 
         //<snippet4>
-        // Only a client authenticated with a valid certificate that has the 
+        // Only a client authenticated with a valid certificate that has the
         // specified thumbprint can call this method.
         [PrincipalPermission(SecurityAction.Demand,
              Name = "; 123456712345677E8E230FDE624F841B1CE9D41E")]
@@ -73,7 +73,7 @@ namespace Samples
         }
         //</snippet4>
 
-        //<snippet9>        
+        //<snippet9>
         [PrincipalPermission(SecurityAction.Demand, Role = "AspCustomRole")]
         public double Subtract(double a, double b)
         {
@@ -133,14 +133,14 @@ namespace TestPrincipalPermission
 {
     class PrincipalPermissionModeWindows
     {
-    
+
         [ServiceContract]
         interface ISecureService
         {
             [OperationContract]
             string Method1();
         }
-                
+
         class SecureService : ISecureService
         {
             [PrincipalPermission(SecurityAction.Demand, Role = "everyone")]
@@ -237,7 +237,7 @@ namespace CustomMode
             Console.WriteLine("Client received response from Method1: {0}", client.Method1("hello"));
             ((IChannel)client).Close();
             Console.ReadLine();
-            service.Close();            
+            service.Close();
         }
 
         public static Binding GetBinding()

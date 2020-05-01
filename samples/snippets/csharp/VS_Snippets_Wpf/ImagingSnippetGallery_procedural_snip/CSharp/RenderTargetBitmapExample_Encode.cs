@@ -33,7 +33,7 @@ namespace SDKSample
          // The Visual to use as the source of the RenderTargetBitmap.
          DrawingVisual drawingVisual = new DrawingVisual();
          DrawingContext drawingContext = drawingVisual.RenderOpen();
-         drawingContext.DrawImage(bi,new Rect(0,0,bi.Width,bi.Height)); 
+         drawingContext.DrawImage(bi,new Rect(0,0,bi.Width,bi.Height));
          drawingContext.DrawText(text, new Point(bi.Height/2, 0));
          drawingContext.Close();
 

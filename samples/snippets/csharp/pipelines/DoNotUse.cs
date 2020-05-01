@@ -170,7 +170,7 @@ namespace Pipes
 
                 if (message != null)
                 {
-                    // This code is broken since reader.AdvanceTo() was called with a position *after* the buffer 
+                    // This code is broken since reader.AdvanceTo() was called with a position *after* the buffer
                     // was captured.
                     break;
                 }

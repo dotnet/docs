@@ -56,8 +56,8 @@
      #region Main
      static void Main(string[] args)
      {
-         // Set up matrices. Use small values to better view 
-         // result matrix. Increase the counts to see greater 
+         // Set up matrices. Use small values to better view
+         // result matrix. Increase the counts to see greater
          // speedup in the parallel loop vs. the sequential loop.
          int colCount = 180;
          int rowCount = 2000;
@@ -79,7 +79,7 @@
          // For the skeptics.
          OfferToPrint(rowCount, colCount2, result);
 
-         // Reset timer and results matrix. 
+         // Reset timer and results matrix.
          stopwatch.Reset();
          result = new double[rowCount, colCount2];
 

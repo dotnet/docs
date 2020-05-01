@@ -7,7 +7,7 @@ class Example
    {
       IEnumerable<int> ienum = OddSequence(50, 110);
       Console.WriteLine("Retrieved enumerator...");
-      
+
       foreach (var i in ienum) //Line 11
       {
          Console.Write($"{i} ");
@@ -22,17 +22,17 @@ class Example
          throw new ArgumentOutOfRangeException("end must be less than or equal to 100."); //Line 22
       if (start >= end)
          throw new ArgumentException("start must be less than end.");
-         
+
       for (int i = start; i <= end; i++)
       {
          if (i % 2 == 1)
             yield return i;
-      }   
+      }
    }
 }
 // The example displays the following output:
 //    Retrieved enumerator...
-//    
+//
 //    Unhandled Exception: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
 //    Parameter name: end must be less than or equal to 100.
 //       at Sequence.<GetNumericRange>d__1.MoveNext() in Program.cs:line 11

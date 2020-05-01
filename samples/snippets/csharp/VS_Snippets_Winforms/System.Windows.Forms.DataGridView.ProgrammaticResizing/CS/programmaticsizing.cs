@@ -120,27 +120,27 @@ public class ProgrammaticSizing : System.Windows.Forms.Form
     private void PopulateRows()
     {
         string[] row1 = {
-            "Meatloaf", "Main Dish", 
+            "Meatloaf", "Main Dish",
             boringMeatloaf, boringMeatloafRanking
         };
         string[] row2 = {
-            "Key Lime Pie", "Dessert", 
+            "Key Lime Pie", "Dessert",
             "lime juice, evaporated milk", "****"
         };
         string[] row3 = {
-            "Orange-Salsa Pork Chops", "Main Dish", 
+            "Orange-Salsa Pork Chops", "Main Dish",
             "pork chops, salsa, orange juice", "****"
         };
         string[] row4 = {
-            "Black Bean and Rice Salad", "Salad", 
+            "Black Bean and Rice Salad", "Salad",
             "black beans, brown rice", "****"
         };
         string[] row5 = {
-            "Chocolate Cheesecake", "Dessert", 
+            "Chocolate Cheesecake", "Dessert",
             "cream cheese", "***"
         };
         string[] row6 = {
-            "Black Bean Dip", 
+            "Black Bean Dip",
             "Appetizer", "black beans, sour cream", "***"
         };
         object[] rows = new object[] {

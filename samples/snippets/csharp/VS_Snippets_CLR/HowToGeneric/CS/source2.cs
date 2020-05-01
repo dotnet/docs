@@ -26,7 +26,7 @@ class AdvantageGenerics
         int index0 = Array.BinarySearch(myArray, "test string");
         int index1 = Array.BinarySearch<string>(myArray, "test string");
         //</snippet25>
-        
+
         Console.WriteLine("Indexes for binary searches: {0}, {1}", index0, index1);
     }
 }

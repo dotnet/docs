@@ -62,7 +62,7 @@ When writing property names and values with the <xref:System.Text.Json.Utf8JsonW
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

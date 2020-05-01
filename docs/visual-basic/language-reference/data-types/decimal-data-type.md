@@ -80,7 +80,7 @@ For `bigDec3`, the literal type character `D` solves the problem by forcing the 
 ## See also
 
 - <xref:System.Decimal?displayProperty=nameWithType>
-- <xref:System.Decimal.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Decimal.%23ctor%2A>
 - <xref:System.Math.Round%2A?displayProperty=nameWithType>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)

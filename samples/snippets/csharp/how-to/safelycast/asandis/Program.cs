@@ -35,7 +35,7 @@ namespace asandis
             UseAsOperator(sn);
 
             // Use the as operator with a value type.
-            // Note the implicit conversion to int? in 
+            // Note the implicit conversion to int? in
             // the method body.
             int i = 5;
             UseAsWithNullable(i);

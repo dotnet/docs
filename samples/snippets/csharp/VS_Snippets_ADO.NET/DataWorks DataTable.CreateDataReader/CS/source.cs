@@ -10,7 +10,7 @@ class Program
         Console.WriteLine("Press any key to continue.");
         Console.ReadKey();
     }
-    
+
     private static void TestCreateDataReader(DataTable dt)
     {
         // Given a DataTable, retrieve a DataTableReader

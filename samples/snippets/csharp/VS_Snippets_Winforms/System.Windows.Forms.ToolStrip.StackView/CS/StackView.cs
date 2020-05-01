@@ -245,11 +245,11 @@ namespace StackViewCS
             tasksBmp = DeserializeFromBase64(tasksBmpEnc);
         }
 
-        // This utility method cretes a bitmap from 
-        // a Base64-encoded string. 
+        // This utility method cretes a bitmap from
+        // a Base64-encoded string.
         internal static Bitmap DeserializeFromBase64(string data)
         {
-            // Decode the string and create a memory stream 
+            // Decode the string and create a memory stream
             // on the decoded string data.
             MemoryStream stream =
                 new MemoryStream(Convert.FromBase64String(data));
@@ -330,7 +330,7 @@ namespace StackViewCS
                 // Assign the image for the grip.
                 Image titlebarGrip = titleBarGripBmp;
 
-                // Fill the titlebar. 
+                // Fill the titlebar.
                 // This produces the gradient and the rounded-corner effect.
                 g.DrawLine(new Pen(titlebarColor1), rect.X, rect.Y, rect.X + rect.Width, rect.Y);
                 g.DrawLine(new Pen(titlebarColor2), rect.X, rect.Y + 1, rect.X + rect.Width, rect.Y + 1);
@@ -440,9 +440,9 @@ namespace StackViewCS
             this.tasksStackButton = new System.Windows.Forms.ToolStripButton();
             this.stackStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // stackStrip
-            // 
+            //
             this.stackStrip.CanOverflow = false;
             this.stackStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.stackStrip.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
@@ -460,9 +460,9 @@ namespace StackViewCS
             this.stackStrip.Size = new System.Drawing.Size(150, 139);
             this.stackStrip.TabIndex = 0;
             this.stackStrip.Text = "toolStrip1";
-            // 
+            //
             // mailStackButton
-            // 
+            //
             this.mailStackButton.CheckOnClick = true;
             this.mailStackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mailStackButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -474,9 +474,9 @@ namespace StackViewCS
             this.mailStackButton.Text = " Mail";
             this.mailStackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.mailStackButton.Click += new System.EventHandler(this.stackButton_Click);
-            // 
+            //
             // calendarStackButton
-            // 
+            //
             this.calendarStackButton.CheckOnClick = true;
             this.calendarStackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.calendarStackButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -488,9 +488,9 @@ namespace StackViewCS
             this.calendarStackButton.Text = " Calendar";
             this.calendarStackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.calendarStackButton.Click += new System.EventHandler(this.stackButton_Click);
-            // 
+            //
             // contactsStackButton
-            // 
+            //
             this.contactsStackButton.CheckOnClick = true;
             this.contactsStackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.contactsStackButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -502,9 +502,9 @@ namespace StackViewCS
             this.contactsStackButton.Text = " Contacts";
             this.contactsStackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.contactsStackButton.Click += new System.EventHandler(this.stackButton_Click);
-            // 
+            //
             // tasksStackButton
-            // 
+            //
             this.tasksStackButton.CheckOnClick = true;
             this.tasksStackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tasksStackButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -516,9 +516,9 @@ namespace StackViewCS
             this.tasksStackButton.Text = " Tasks";
             this.tasksStackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tasksStackButton.Click += new System.EventHandler(this.stackButton_Click);
-            // 
+            //
             // StackView
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.stackStrip);

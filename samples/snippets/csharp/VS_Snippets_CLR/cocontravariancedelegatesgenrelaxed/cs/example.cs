@@ -12,7 +12,7 @@ public class Program
         return t as Type3 ?? new Type3();
     }
 
-    static void Main() 
+    static void Main()
     {
         Func<Type2, Type2> f1 = MyMethod;
 

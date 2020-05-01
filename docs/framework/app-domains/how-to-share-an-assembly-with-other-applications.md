@@ -24,4 +24,4 @@ To share an assembly:
 
 - [C# programming guide](../../../api/index.md)
 - [Programming concepts (Visual Basic)](../../../api/index.md)
-- [Program with assemblies](../../standard/assembly/program.md)
+- [Program with assemblies](../../standard/assembly/index.md)

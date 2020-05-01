@@ -61,19 +61,19 @@ namespace Samples1
             Type contractType = typeof(ICalculator);
             Type implementedContract = typeof(Calculator);
             //</snippet2>
-            
+
             //<snippet3>
             Uri baseAddress = new Uri("http://localhost:8044/base");
             //</snippet3>
-            
+
             //<snippet4>
             ServiceHost sh = new ServiceHost(implementedContract, baseAddress);
             //</snippet4>
-            
+
             //<snippet5>
             sh.AddServiceEndpoint(contractType, b, "Calculator");
             //</snippet5>
-            
+
             //<snippet6>
             ServiceMetadataBehavior sm = new ServiceMetadataBehavior();
             sm.HttpGetEnabled = true;

@@ -28,7 +28,7 @@ namespace builtin_types
             int? m = m2;
 
             bool? flag = null;
-            
+
             // An array of a nullable value type:
             int?[] arr = new int?[10];
             // </SnippetDeclaration>

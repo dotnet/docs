@@ -11,7 +11,7 @@ namespace Microsoft.Samples.Graphics.Geometries
 
     public partial class PathGeometryExample : Page
     {
-       
+
        public PathGeometryExample()
        {
 

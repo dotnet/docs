@@ -6,7 +6,7 @@ public class Options
    public void ExampleMethod(int required, int optionalInt = default(int),
                              string description = "Optional Description")
    {
-      Console.WriteLine("{0}: {1} + {2} = {3}", description, required, 
+      Console.WriteLine("{0}: {1} + {2} = {3}", description, required,
                         optionalInt, required + optionalInt);
    }
 }
@@ -22,7 +22,7 @@ public class Example
       opt.ExampleMethod(10, 2);
       opt.ExampleMethod(12, description: "Addition with zero:");
    }
-} 
+}
 // The example displays the following output:
 //      Optional Description: 10 + 0 = 10
 //      Optional Description: 10 + 2 = 12

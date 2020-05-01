@@ -27,7 +27,7 @@ class Program
         }
         catch (FileNotFoundException) {
             Console.WriteLine("The file or directory cannot be found.");
-        }    
+        }
         catch (DirectoryNotFoundException) {
             Console.WriteLine("The file or directory cannot be found.");
         }

@@ -35,7 +35,7 @@ namespace SimpleFeedReader.Tests.Services
             // Assert
             Assert.True(result.Count > 0);
         }
-       
+
         [Fact]
         public void Throws_UriFormatException_Given_Malformed_Uri()
         {

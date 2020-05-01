@@ -25,7 +25,7 @@ namespace SDKSample
 
             //<SnippetGridViewAllowsColumnReorder>
             GridView myGridView = new GridView();
-            myGridView.AllowsColumnReorder = true; 
+            myGridView.AllowsColumnReorder = true;
             myGridView.ColumnHeaderToolTip = "Employee Information";
             //</SnippetGridViewAllowsColumnReorder>
 

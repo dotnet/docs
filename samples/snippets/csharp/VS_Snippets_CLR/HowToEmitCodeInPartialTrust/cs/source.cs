@@ -8,7 +8,7 @@ using System.Security.Policy;
 using System.Collections;
 using System.Diagnostics;
 
-// This code example works properly only if it is run from a fully 
+// This code example works properly only if it is run from a fully
 // trusted location, such as your local computer.
 
 // Delegates used to execute the dynamic methods.
@@ -17,7 +17,7 @@ public delegate void Test(Worker w);
 public delegate void Test1();
 public delegate char Test2(String instance);
 
-// The Worker class must inherit MarshalByRefObject so that its public 
+// The Worker class must inherit MarshalByRefObject so that its public
 // methods can be invoked across application domain boundaries.
 //
 //<Snippet10>
@@ -45,18 +45,18 @@ public class Worker : MarshalByRefObject
     //</Snippet11>
 
     // This overload of AccessPrivateMethod emits a dynamic method and
-    // specifies whether to skip JIT visiblity checks. It creates a 
-    // delegate for the method and invokes the delegate. The dynamic 
+    // specifies whether to skip JIT visiblity checks. It creates a
+    // delegate for the method and invokes the delegate. The dynamic
     // method calls a private method of the Worker class.
-    public void AccessPrivateMethod(bool restrictedSkipVisibility) 
+    public void AccessPrivateMethod(bool restrictedSkipVisibility)
     {
         // Create an unnamed dynamic method that has no return type,
         // takes one parameter of type Worker, and optionally skips JIT
         // visiblity checks.
         DynamicMethod meth = new DynamicMethod(
-            "", 
-            null, 
-            new Type[] { typeof(Worker) }, 
+            "",
+            null,
+            new Type[] { typeof(Worker) },
             restrictedSkipVisibility);
 
         // Get a MethodInfo for the private method.
@@ -72,37 +72,37 @@ public class Worker : MarshalByRefObject
         il.EmitCall(OpCodes.Call, pvtMeth, null);
         il.Emit(OpCodes.Ret);
 
-        // Create a delegate that represents the dynamic method, and 
-        // invoke it. 
-        try 
+        // Create a delegate that represents the dynamic method, and
+        // invoke it.
+        try
         {
             Test t = (Test) meth.CreateDelegate(typeof(Test));
-            try 
+            try
             {
                 t(this);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                Console.WriteLine("{0} was thrown when the delegate was invoked.", 
+                Console.WriteLine("{0} was thrown when the delegate was invoked.",
                     ex.GetType().Name);
             }
-        } 
-        catch (Exception ex) 
+        }
+        catch (Exception ex)
         {
-            Console.WriteLine("{0} was thrown when the delegate was compiled.", 
+            Console.WriteLine("{0} was thrown when the delegate was compiled.",
                 ex.GetType().Name);
         }
     }
 
     // This overload of AccessPrivateMethod emits a dynamic method that takes
-    // a string and returns the first character, using a private field of the 
+    // a string and returns the first character, using a private field of the
     // String class. The dynamic method skips JIT visiblity checks.
-    public void AccessPrivateMethod() 
+    public void AccessPrivateMethod()
     {
         //<Snippet16>
         DynamicMethod meth = new DynamicMethod("",
-                                               typeof(char), 
-                                               new Type[] { typeof(String) }, 
+                                               typeof(char),
+                                               new Type[] { typeof(String) },
                                                true);
         //</Snippet16>
 
@@ -116,23 +116,23 @@ public class Worker : MarshalByRefObject
         ILGenerator il = meth.GetILGenerator();
 
         // Load the first argument, which is the target string, onto the
-        // execution stack, call the 'get' accessor to put the result onto 
+        // execution stack, call the 'get' accessor to put the result onto
         // the execution stack, and return.
         il.Emit(OpCodes.Ldarg_0);
         il.EmitCall(OpCodes.Call, pvtMeth, null);
         il.Emit(OpCodes.Ret);
 
-        // Create a delegate that represents the dynamic method, and 
-        // invoke it. 
-        try 
+        // Create a delegate that represents the dynamic method, and
+        // invoke it.
+        try
         {
             Test2 t = (Test2) meth.CreateDelegate(typeof(Test2));
             char first = t("Hello, World!");
             Console.WriteLine("{0} is the first character.", first);
-        } 
-        catch (Exception ex) 
+        }
+        catch (Exception ex)
         {
-            Console.WriteLine("{0} was thrown when the delegate was compiled.", 
+            Console.WriteLine("{0} was thrown when the delegate was compiled.",
                 ex.GetType().Name);
         }
     }
@@ -154,7 +154,7 @@ public class Worker : MarshalByRefObject
         PermissionSet pset = new NamedPermissionSet("Internet", SecurityManager.GetStandardSandbox(ev));
         //</Snippet2>
 
-        // For simplicity, set up the application domain to use the 
+        // For simplicity, set up the application domain to use the
         // current path as the application folder, so the same executable
         // can be used in both trusted and untrusted scenarios. Normally
         // you would not do this with real untrusted code.
@@ -163,15 +163,15 @@ public class Worker : MarshalByRefObject
         adSetup.ApplicationBase = ".";
         //</Snippet3>
 
-        // Create an application domain in which all code that executes is 
+        // Create an application domain in which all code that executes is
         // granted the permissions of an application run from the Internet.
         //<Snippet5>
         AppDomain ad = AppDomain.CreateDomain("Sandbox", ev, adSetup, pset, null);
         //</Snippet5>
 
-        // Create an instance of the Worker class in the partially trusted 
-        // domain. Note: If you build this code example in Visual Studio, 
-        // you must change the name of the class to include the default 
+        // Create an instance of the Worker class in the partially trusted
+        // domain. Note: If you build this code example in Visual Studio,
+        // you must change the name of the class to include the default
         // namespace, which is the project name. For example, if the project
         // is "AnonymouslyHosted", the class is "AnonymouslyHosted.Worker".
         //<Snippet12>
@@ -184,7 +184,7 @@ public class Worker : MarshalByRefObject
         //</Snippet13>
 
         // Emit and invoke a dynamic method that calls a private method
-        // of Worker, with JIT visibility checks enforced. The call fails 
+        // of Worker, with JIT visibility checks enforced. The call fails
         // when the delegate is invoked.
         w.AccessPrivateMethod(false);
 
@@ -195,9 +195,9 @@ public class Worker : MarshalByRefObject
 
         // Unload the application domain. Add RestrictedMemberAccess to the
         // grant set, and use it to create an application domain in which
-        // partially trusted code can call private members, as long as the 
-        // trust level of those members is equal to or lower than the trust 
-        // level of the partially trusted code. 
+        // partially trusted code can call private members, as long as the
+        // trust level of those members is equal to or lower than the trust
+        // level of the partially trusted code.
         AppDomain.Unload(ad);
         //<Snippet7>
         pset.SetPermission(
@@ -208,16 +208,16 @@ public class Worker : MarshalByRefObject
         ad = AppDomain.CreateDomain("Sandbox2", ev, adSetup, pset, null);
         //</Snippet8>
 
-        // Create an instance of the Worker class in the partially trusted 
-        // domain. 
+        // Create an instance of the Worker class in the partially trusted
+        // domain.
         w = (Worker) ad.CreateInstanceAndUnwrap(asmName, "Worker");
 
         // Again, emit and invoke a dynamic method that calls a private method
-        // of Worker, skipping JIT visibility checks. This time compilation 
+        // of Worker, skipping JIT visibility checks. This time compilation
         // succeeds because of the grant for RestrictedMemberAccess.
         w.AccessPrivateMethod(true);
 
-        // Finally, emit and invoke a dynamic method that calls an internal 
+        // Finally, emit and invoke a dynamic method that calls an internal
         // method of the String class. The call fails, because the trust level
         // of the assembly that contains String is higher than the trust level
         // of the assembly that emits the dynamic method.

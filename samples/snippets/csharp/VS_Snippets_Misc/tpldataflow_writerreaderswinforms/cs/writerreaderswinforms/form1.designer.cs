@@ -35,14 +35,14 @@
          this.checkBox3 = new System.Windows.Forms.CheckBox();
          this.checkBox4 = new System.Windows.Forms.CheckBox();
          this.SuspendLayout();
-         // 
+         //
          // timer1
-         // 
+         //
          this.timer1.Interval = 2500;
          this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-         // 
+         //
          // checkBox1
-         // 
+         //
          this.checkBox1.AutoSize = true;
          this.checkBox1.Enabled = false;
          this.checkBox1.Location = new System.Drawing.Point(12, 9);
@@ -50,9 +50,9 @@
          this.checkBox1.Size = new System.Drawing.Size(70, 17);
          this.checkBox1.TabIndex = 4;
          this.checkBox1.Text = "Reader 1";
-         // 
+         //
          // checkBox2
-         // 
+         //
          this.checkBox2.AutoSize = true;
          this.checkBox2.Enabled = false;
          this.checkBox2.Location = new System.Drawing.Point(12, 32);
@@ -61,9 +61,9 @@
          this.checkBox2.TabIndex = 5;
          this.checkBox2.Text = "Reader 2";
          this.checkBox2.UseVisualStyleBackColor = true;
-         // 
+         //
          // checkBox3
-         // 
+         //
          this.checkBox3.AutoSize = true;
          this.checkBox3.Enabled = false;
          this.checkBox3.Location = new System.Drawing.Point(12, 55);
@@ -72,9 +72,9 @@
          this.checkBox3.TabIndex = 6;
          this.checkBox3.Text = "Reader 3";
          this.checkBox3.UseVisualStyleBackColor = true;
-         // 
+         //
          // checkBox4
-         // 
+         //
          this.checkBox4.AutoSize = true;
          this.checkBox4.Enabled = false;
          this.checkBox4.Location = new System.Drawing.Point(12, 78);
@@ -83,9 +83,9 @@
          this.checkBox4.TabIndex = 7;
          this.checkBox4.Text = "Writer";
          this.checkBox4.UseVisualStyleBackColor = true;
-         // 
+         //
          // Form1
-         // 
+         //
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(172, 102);

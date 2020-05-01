@@ -63,7 +63,7 @@ namespace DataContractAttributeExample
 
         public static void WriteObject(string path)
         {
-            // Create a new instance of the Person class and 
+            // Create a new instance of the Person class and
             // serialize it to an XML file.
             Person p1 = new Person("Mary", 1);
             // Create a new instance of a StreamWriter
@@ -80,8 +80,8 @@ namespace DataContractAttributeExample
         }
         public static void ReadObject(string path)
         {
-            // Deserialize an instance of the Person class 
-            // from an XML file. First create an instance of the 
+            // Deserialize an instance of the Person class
+            // from an XML file. First create an instance of the
             // XmlDictionaryReader.
             FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
             XmlDictionaryReader reader =
@@ -118,7 +118,7 @@ namespace NewDataStuff
         [DataMember]
         private int Age;
 
-        // This is not serialized because the DataMemberAttribute 
+        // This is not serialized because the DataMemberAttribute
         // has not been applied.
         private string MailingAddress;
 
@@ -205,7 +205,7 @@ namespace XmlAndADO2
             xe.InnerText = "myContents";
             xe.SetAttribute
              ("myAttribute","myValue");
-		  
+		
             XmlAttribute atr = xe.Attributes[0];
             XmlComment cmnt = xd.CreateComment("myComment");
 			

@@ -34,10 +34,10 @@ namespace Microsoft.Samples.KeyFrameExamples
                 "MyAnimatedEllipseGeometry", myAnimatedEllipseGeometry);
 
             // Create a Path element to display the geometry.
-            Path aPath = new Path();   
+            Path aPath = new Path();
             aPath.Fill = Brushes.Blue;
             aPath.Data = myAnimatedEllipseGeometry;
- 
+
             // Create a Canvas to contain the path.
             Canvas containerCanvas = new Canvas();
             containerCanvas.Width = 500;
@@ -59,7 +59,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.5))) // KeyTime
                 );
 
-            // Animate from (100,300) (the value of the previous key frame) 
+            // Animate from (100,300) (the value of the previous key frame)
             // to (400,300) at 1 second using discrete interpolation.
             // Because the interpolation is discrete, the ellipse will appear
             // to "jump" to (400,300) at 1 second.
@@ -80,7 +80,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     )
                 );
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             centerPointAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the animation to target the Center property

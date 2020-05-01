@@ -1,5 +1,5 @@
 ﻿//<snippet5>
-// You must add a reference to Microsoft.Office.Interop.Excel to run 
+// You must add a reference to Microsoft.Office.Interop.Excel to run
 // this example.
 using System;
 using Excel = Microsoft.Office.Interop.Excel;

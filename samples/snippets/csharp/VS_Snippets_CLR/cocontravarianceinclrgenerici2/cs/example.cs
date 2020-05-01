@@ -17,8 +17,8 @@ class Circle : Shape
 
 class ShapeAreaComparer : System.Collections.Generic.IComparer<Shape>
 {
-    int IComparer<Shape>.Compare(Shape a, Shape b) 
-    { 
+    int IComparer<Shape>.Compare(Shape a, Shape b)
+    {
         if (a == null) return b == null ? 0 : -1;
         return b == null ? 1 : a.Area.CompareTo(b.Area);
     }
@@ -29,11 +29,11 @@ class Program
     static void Main()
     {
         // You can pass ShapeAreaComparer, which implements IComparer<Shape>,
-        // even though the constructor for SortedSet<Circle> expects 
+        // even though the constructor for SortedSet<Circle> expects
         // IComparer<Circle>, because type parameter T of IComparer<T> is
         // contravariant.
-        SortedSet<Circle> circlesByArea = 
-            new SortedSet<Circle>(new ShapeAreaComparer()) 
+        SortedSet<Circle> circlesByArea =
+            new SortedSet<Circle>(new ShapeAreaComparer())
                 { new Circle(7.2), new Circle(100), null, new Circle(.01) };
 
         foreach (Circle c in circlesByArea)

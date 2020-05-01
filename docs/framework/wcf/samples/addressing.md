@@ -70,7 +70,6 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           "net.tcp://localhost:9000/servicemodelsamples/service"  
           binding="netTcpBinding"  
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-</service>  
 ```  
   
  The client accesses just one of the four service endpoints, but all four are defined in its configuration file. The client selects an endpoint when it creates the `CalculatorProxy` object. By changing the configuration name from `CalculatorEndpoint1` through `CalculatorEndpoint4`, you can exercise each of the endpoints.  

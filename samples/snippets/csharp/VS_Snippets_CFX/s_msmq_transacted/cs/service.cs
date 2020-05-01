@@ -68,7 +68,7 @@ namespace Microsoft.ServiceModel.Samples
 
         public string Status
         {
-            get 
+            get
             {
                 return OrderStates[statusIndexer.Next(3)];
             }
@@ -120,7 +120,7 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
 
-    // Define a service contract. 
+    // Define a service contract.
     // <Snippet1>
     [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
     public interface IOrderProcessor

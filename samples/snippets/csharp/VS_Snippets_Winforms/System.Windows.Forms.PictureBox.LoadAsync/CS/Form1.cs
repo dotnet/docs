@@ -18,7 +18,7 @@ namespace PictureBoxLoadAsync
         {
             InitializeComponent();
 
-            this.pictureBox1.LoadCompleted += 
+            this.pictureBox1.LoadCompleted +=
                 new System.ComponentModel.AsyncCompletedEventHandler(this.pictureBox1_LoadCompleted);
         }
         // </snippet2>
@@ -87,9 +87,9 @@ namespace PictureBoxLoadAsync
             this.cancelLoadButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // pictureBox1
-            // 
+            //
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(10, 10);
@@ -99,27 +99,27 @@ namespace PictureBoxLoadAsync
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
+            //
             // loadButton
-            // 
+            //
             this.loadButton.Location = new System.Drawing.Point(88, 323);
             this.loadButton.Name = "loadButton";
             this.loadButton.Size = new System.Drawing.Size(75, 23);
             this.loadButton.TabIndex = 1;
             this.loadButton.Text = "Load";
             this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
-            // 
+            //
             // cancelLoadButton
-            // 
+            //
             this.cancelLoadButton.Location = new System.Drawing.Point(170, 323);
             this.cancelLoadButton.Name = "cancelLoadButton";
             this.cancelLoadButton.Size = new System.Drawing.Size(75, 23);
             this.cancelLoadButton.TabIndex = 2;
             this.cancelLoadButton.Text = "Cancel";
             this.cancelLoadButton.Click += new System.EventHandler(this.cancelLoadButton_Click);
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 364);
@@ -134,7 +134,7 @@ namespace PictureBoxLoadAsync
         }
 
         #endregion
-  
+
     }
 
     static class Program

@@ -237,6 +237,46 @@ items:
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
+- title: Created nested loops
+  durationInMinutes: 10
+  content: |
+    A `while`, `do` or `for` loop can be nested inside another loop to create a matrix 
+    using the combination of each item in the outer loop with each item in the inner
+    loop. Let's do that to build a set of alphanumeric pairs to represent rows and columns.
+
+    One `for` loop can generate the rows:
+
+    ```csharp
+    for (int row = 1; row < 11; row++)
+    {
+      Console.WriteLine($"The row is {row}");
+    }
+    ```
+
+    Another loop can generate the columns:
+
+    ```csharp
+    for (char column = 'a'; column < 'k'; column++)
+    {
+      Console.WriteLine($"The column is {column}");
+    }
+    ```
+
+    You can nest one loop inside the other to form pairs:
+      
+    ```csharp
+    for (int row = 1; row < 11; row++)
+    {
+      for (char column = 'a'; column < 'k'; column++)
+      {
+        Console.WriteLine($"The cell is ({row}, {column})");
+      }
+    }
+    ```
+
+    You can see that the outer loop increments once for each full run of the
+    inner loop. Reverse the row and column nesting, and see the changes for yourself.
+
 - title: Combine branches and loops
   durationInMinutes: 12
   content: |

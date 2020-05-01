@@ -18,7 +18,7 @@ namespace Microsoft.WCF.Documentation
     public void Run()
     {
       // Picks up configuration from the config file.
-      SampleDuplexHelloClient wcfClient 
+      SampleDuplexHelloClient wcfClient
         = new SampleDuplexHelloClient(new InstanceContext(this));
       try
       {

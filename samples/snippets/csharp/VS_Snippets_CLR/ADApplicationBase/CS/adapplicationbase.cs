@@ -8,14 +8,14 @@ class ADSetupInformation
         AppDomain root = AppDomain.CurrentDomain;
 
         AppDomainSetup setup = new AppDomainSetup();
-        setup.ApplicationBase = 
+        setup.ApplicationBase =
             root.SetupInformation.ApplicationBase + @"MyAppSubfolder\";
 
         AppDomain domain = AppDomain.CreateDomain("MyDomain", null, setup);
 
-        Console.WriteLine("Application base of {0}:\r\n\t{1}", 
+        Console.WriteLine("Application base of {0}:\r\n\t{1}",
             root.FriendlyName, root.SetupInformation.ApplicationBase);
-        Console.WriteLine("Application base of {0}:\r\n\t{1}", 
+        Console.WriteLine("Application base of {0}:\r\n\t{1}",
             domain.FriendlyName, domain.SetupInformation.ApplicationBase);
 
         AppDomain.Unload(domain);

@@ -7,8 +7,8 @@ namespace SystemTextJsonSamples
     public class WeatherForecastRuntimeIgnoreConverter : JsonConverter<WeatherForecast>
     {
         public override WeatherForecast Read(
-            ref Utf8JsonReader reader, 
-            Type typeToConvert, 
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
             JsonSerializerOptions options)
         {
             if (reader.TokenType != JsonTokenType.StartObject)

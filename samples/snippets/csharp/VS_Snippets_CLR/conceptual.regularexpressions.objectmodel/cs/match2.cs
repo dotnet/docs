@@ -9,7 +9,7 @@ public class Example
       string pattern = "abc";
       string input = "abc123abc456abc789";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("{0} found at position {1}.", 
+         Console.WriteLine("{0} found at position {1}.",
                            match.Value, match.Index);
    }
 }

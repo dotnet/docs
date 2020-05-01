@@ -8,8 +8,8 @@ using System.Text;
 namespace Microsoft.WCF.Documentation
 {
   [ServiceContract(
-    Namespace="http://Microsoft.WCF.Documentation", 
-    CallbackContract=typeof(IClientCallbackContract), 
+    Namespace="http://Microsoft.WCF.Documentation",
+    CallbackContract=typeof(IClientCallbackContract),
     SessionMode=SessionMode.Required
   )]
   public interface ISampleService{
@@ -34,8 +34,8 @@ namespace Microsoft.WCF.Documentation
       this.WriteHeaders(OperationContext.Current.IncomingMessageHeaders);
       MessageHeader outBoundHeader
         = MessageHeader.CreateHeader(
-          "Client-Bound-One-Way-Header", 
-          "http://Microsoft.WCF.Documentation", 
+          "Client-Bound-One-Way-Header",
+          "http://Microsoft.WCF.Documentation",
           "Custom Outbound Header"
         );
       OperationContext.Current.OutgoingMessageHeaders.Add(outBoundHeader);

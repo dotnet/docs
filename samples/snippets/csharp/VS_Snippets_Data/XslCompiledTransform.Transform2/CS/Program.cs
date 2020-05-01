@@ -18,7 +18,7 @@ namespace Transform
 	    //<snippet1>
             // Open books.xml as an XPathDocument.
             XPathDocument doc = new XPathDocument("books.xml");
-            
+
             // Create a writer for writing the transformed file.
             XmlWriter writer = XmlWriter.Create("books.html");
 

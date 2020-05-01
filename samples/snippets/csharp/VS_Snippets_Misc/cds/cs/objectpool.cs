@@ -29,9 +29,9 @@ namespace ObjectPoolExample
             using var cts = new CancellationTokenSource();
 
             // Create an opportunity for the user to cancel.
-            Task.Run(() =>
+            _ = Task.Run(() =>
             {
-                if (Console.ReadKey().KeyChar == 'c' || Console.ReadKey().KeyChar == 'C')
+                if (char.ToUpperInvariant(Console.ReadKey().KeyChar) == 'C')
                 {
                     cts.Cancel();
                 }

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # MSBuild properties for .NET Core SDK projects
 
-This page describes MSBuild properties for configuring .NET Core projects.
+This page describes MSBuild properties for configuring .NET Core projects. You can specify *metadata* for each property as child elements of the property.
 
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
@@ -22,11 +22,9 @@ This page describes MSBuild properties for configuring .NET Core projects.
 The `TargetFramework` property specifies the target framework version for the app, which implicitly references a [metapackage](../packages.md#metapackages). For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
@@ -39,11 +37,9 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 > This property is ignored if `TargetFramework` (singular) is specified.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
+</PropertyGroup>
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
@@ -56,12 +52,10 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `NetStandardImplicitPackageVersion` property when you want to specify a framework version that's lower than the [metapackage](../packages.md#metapackages) version. The project file in the following example targets `netstandard1.3` but uses the 1.6.0 version of `NETStandard.Library`.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TargetFramework>netstandard1.3</TargetFramework>
+  <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+</PropertyGroup>
 ```
 
 ## Publish properties
@@ -76,11 +70,9 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+</PropertyGroup>
 ```
 
 ### RuntimeIdentifiers
@@ -91,11 +83,9 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 > `RuntimeIdentifier` (singular) can provide faster builds when only a single runtime is required.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+</PropertyGroup>
 ```
 
 ### TrimmerRootAssembly
@@ -105,11 +95,9 @@ The `TrimmerRootAssembly` item lets you exclude an assembly from [*trimming*](..
 The following XML excludes the `System.Security` assembly from trimming.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <TrimmerRootAssembly Include="System.Security" />
-  </ItemGroup>
-</Project>
+<ItemGroup>
+  <TrimmerRootAssembly Include="System.Security" />
+</ItemGroup>
 ```
 
 ### UseAppHost
@@ -119,11 +107,9 @@ The `UseAppHost` property was introduced in the 2.1.400 version of the .NET Core
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <UseAppHost>false</UseAppHost>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <UseAppHost>false</UseAppHost>
+</PropertyGroup>
 ```
 
 For more information about deployment, see [.NET Core application deployment](../deploying/index.md).
@@ -137,11 +123,9 @@ For more information about deployment, see [.NET Core application deployment](..
 The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <LangVersion>preview</LangVersion>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <LangVersion>preview</LangVersion>
+</PropertyGroup>
 ```
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
@@ -165,11 +149,9 @@ You can configure some run-time behaviors by specifying MSBuild properties in th
 The `ConcurrentGarbageCollection` property configures whether [background (concurrent) garbage collection](../../standard/garbage-collection/background-gc.md) is enabled. Set the value to `false` to disable background garbage collection. For more information, see [System.GC.Concurrent/COMPlus_gcConcurrent](../run-time-config/garbage-collector.md#systemgcconcurrentcomplus_gcconcurrent).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+</PropertyGroup>
 ```
 
 ### InvariantGlobalization
@@ -177,11 +159,9 @@ The `ConcurrentGarbageCollection` property configures whether [background (concu
 The `InvariantGlobalization` property configures whether the app runs in *globalization-invariant* mode, which means it doesn't have access to culture-specific data. Set the value to `true` to run in globalization-invariant mode. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <InvariantGlobalization>true</InvariantGlobalization>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <InvariantGlobalization>true</InvariantGlobalization>
+</PropertyGroup>
 ```
 
 ### RetainVMGarbageCollection
@@ -189,11 +169,9 @@ The `InvariantGlobalization` property configures whether the app runs in *global
 The `RetainVMGarbageCollection` property configures the garbage collector to put deleted memory segments on a standby list for future use or release them. Setting the value to `true` tells the garbage collector to put the segments on a standby list. For more information, see [System.GC.RetainVM/COMPlus_GCRetainVM](../run-time-config/garbage-collector.md#systemgcretainvmcomplus_gcretainvm).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <RetainVMGarbageCollection>true</RetainVMGarbageCollection>
+</PropertyGroup>
 ```
 
 ### ServerGarbageCollection
@@ -201,11 +179,9 @@ The `RetainVMGarbageCollection` property configures the garbage collector to put
 The `ServerGarbageCollection` property configures whether the application uses [workstation garbage collection or server garbage collection](../../standard/garbage-collection/workstation-server-gc.md). Set the value to `true` to use server garbage collection. For more information, see [System.GC.Server/COMPlus_gcServer](../run-time-config/garbage-collector.md#systemgcservercomplus_gcserver).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <ServerGarbageCollection>true</ServerGarbageCollection>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <ServerGarbageCollection>true</ServerGarbageCollection>
+</PropertyGroup>
 ```
 
 ### ThreadPoolMaxThreads
@@ -213,11 +189,9 @@ The `ServerGarbageCollection` property configures whether the application uses [
 The `ThreadPoolMaxThreads` property configures the maximum number of threads for the worker thread pool. For more information, see [Maximum threads](../run-time-config/threading.md#maximum-threads).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <ThreadPoolMaxThreads>20</ThreadPoolMaxThreads>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <ThreadPoolMaxThreads>20</ThreadPoolMaxThreads>
+</PropertyGroup>
 ```
 
 ### ThreadPoolMinThreads
@@ -225,11 +199,9 @@ The `ThreadPoolMaxThreads` property configures the maximum number of threads for
 The `ThreadPoolMinThreads` property configures the minimum number of threads for the worker thread pool. For more information, see [Minimum threads](../run-time-config/threading.md#minimum-threads).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+</PropertyGroup>
 ```
 
 ### TieredCompilation
@@ -237,11 +209,9 @@ The `ThreadPoolMinThreads` property configures the minimum number of threads for
 The `TieredCompilation` property configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Set the value to `false` to disable tiered compilation. For more information, see [Tiered compilation](../run-time-config/compilation.md#tiered-compilation).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TieredCompilation>false</TieredCompilation>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TieredCompilation>false</TieredCompilation>
+</PropertyGroup>
 ```
 
 ### TieredCompilationQuickJit
@@ -249,11 +219,9 @@ The `TieredCompilation` property configures whether the just-in-time (JIT) compi
 The `TieredCompilationQuickJit` property configures whether the JIT compiler uses quick JIT. Set the value to `false` to disable quick JIT. For more information, see [Quick JIT](../run-time-config/compilation.md#quick-jit).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TieredCompilationQuickJit>false</TieredCompilationQuickJit>
+</PropertyGroup>
 ```
 
 ### TieredCompilationQuickJitForLoops
@@ -261,11 +229,9 @@ The `TieredCompilationQuickJit` property configures whether the JIT compiler use
 The `TieredCompilationQuickJitForLoops` property configures whether the JIT compiler uses quick JIT on methods that contain loops. Set the value to `true` to enable quick JIT on methods that contain loops. For more information, see [Quick JIT for loops](../run-time-config/compilation.md#quick-jit-for-loops).
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
-  </PropertyGroup>
-</Project>
+<PropertyGroup>
+  <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
+</PropertyGroup>
 ```
 
 ## References
@@ -289,7 +255,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### PackageReference
 
-The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID, and the `Version` attribute specifies the package version.
+The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges).
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -303,15 +269,13 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### ProjectReference
 
-The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project. Optional additional metadata can be provided as child elements.
+The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project.
 
 The project file snippet in the following example references the a project named `Project2`.
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="..\Project2.csproj">
-    <Name>Project2</Name>
-  </ProjectReference>
+  <ProjectReference Include="..\Project2.csproj" />
 </ItemGroup>
 ```
 

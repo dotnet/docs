@@ -112,6 +112,9 @@ Only common values are listed. For the latest and complete version, see the [run
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
   - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
   - `linux-arm` (Linux distributions running on ARM like Raspberry Pi)
+  - `linux-arm64` (Linux distributions running on 64-bit ARM like Raspberry Pi Model 4)
+- Ubuntu
+  - `ubuntu-arm64` (Ubuntu running on 64-bit ARM like Raspberry Pi Model 4)
 - Red Hat Enterprise Linux
   - `rhel-x64` (Superseded by `linux-x64` for RHEL above version 6)
   - `rhel.6-x64` (.NET Core 2.0 or later versions)

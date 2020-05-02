@@ -251,8 +251,8 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 ## References
 
 - [AssetTargetFallback](#assettargetfallback)
-- [ProjectReference](#projectreference)
 - [PackageReference](#packagereference)
+- [ProjectReference](#projectreference)
 - [Reference](#reference)
 - [Restore properties](#restore-properties)
 
@@ -314,7 +314,7 @@ The `Include` attribute specifies the name of the file, and the `HintPath` child
 
 ### Restore properties
 
-MSBuild 15.1 introduced the `restore` target for restoring a NuGet package as part of a build. Restoring a package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
+Restoring a referenced package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
 
 ```xml
 <PropertyGroup>

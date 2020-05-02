@@ -248,7 +248,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
-## References
+## Reference properties
 
 - [AssetTargetFallback](#assettargetfallback)
 - [PackageReference](#packagereference)

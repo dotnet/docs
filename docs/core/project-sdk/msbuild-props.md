@@ -58,6 +58,20 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </PropertyGroup>
 ```
 
+## Package properties
+
+You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe the package that gets created from your project. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
+
+```xml
+<PropertyGroup>
+  ...
+  <PackageId>ClassLibDotNetStandard</PackageId>
+  <Version>1.0.0</Version>
+  <Authors>John Doe</Authors>
+  <Company>Contoso</Company>
+</PropertyGroup>
+```
+
 ## Publish properties
 
 - [RuntimeIdentifier](#runtimeidentifier)
@@ -240,6 +254,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 - [ProjectReference](#projectreference)
 - [PackageReference](#packagereference)
 - [Reference](#reference)
+- [Restore properties](#restore-properties)
 
 ### AssetTargetFallback
 
@@ -297,26 +312,13 @@ The `Include` attribute specifies the name of the file, and the `HintPath` child
 </ItemGroup>
 ```
 
-## Package creation
+### Restore properties
 
-MSBuild 15.1 introduced the `pack` target for creating a NuGet package as part of a build. You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe your package. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
-
-```xml
-<PropertyGroup>
-  <TargetFramework>netstandard2.0</TargetFramework>
-  <PackageId>ClassLibDotNetStandard</PackageId>
-  <Version>1.0.0</Version>
-  <Authors>John Doe</Authors>
-  <Company>Contoso</Company>
-</PropertyGroup>
-```
-
-## Package restoration
-
-MSBuild 15.1 introduced the `restore` target for restoring a NuGet package as part of a build. Restoring a package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, including `PackageTargetFallback`, see [restore target](/nuget/reference/msbuild-targets#restore-target).
+MSBuild 15.1 introduced the `restore` target for restoring a NuGet package as part of a build. Restoring a package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
 
 ```xml
 <PropertyGroup>
+  ...
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
 </PropertyGroup>
 ```

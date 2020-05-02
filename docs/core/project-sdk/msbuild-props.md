@@ -255,7 +255,9 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### PackageReference
 
-The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges).
+The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages).
+
+The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -269,9 +271,11 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### ProjectReference
 
-The `ProjectReference` defines a reference to another project. Adding a project reference creates a build dependency between the two projects. The `Include` attribute specifies the path to the project.
+The `ProjectReference` defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.
 
-The project file snippet in the following example references the a project named `Project2`.
+The `Include` attribute specifies the path to the project. You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
+
+The project file snippet in the following example references a project named `Project2`.
 
 ```xml
 <ItemGroup>
@@ -281,7 +285,9 @@ The project file snippet in the following example references the a project named
 
 ### Reference
 
-The `Reference` item defines a reference to an assembly file.The `Include` attribute specifies the name of the file, and the `HintPath` child element specifies the path to the assembly.
+The `Reference` item defines a reference to an assembly file.
+
+The `Include` attribute specifies the name of the file, and the `HintPath` child element specifies the path to the assembly.
 
 ```xml
 <ItemGroup>
@@ -293,11 +299,27 @@ The `Reference` item defines a reference to an assembly file.The `Include` attri
 
 ## Package creation
 
-MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
+MSBuild 15.1 introduced the `pack` target for creating a NuGet package as part of a build. You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`, `Title`, and `Description` to describe your package. For information about these and other properties, see [pack target](/nuget/reference/msbuild-targets#pack-target).
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netstandard2.0</TargetFramework>
+  <PackageId>ClassLibDotNetStandard</PackageId>
+  <Version>1.0.0</Version>
+  <Authors>John Doe</Authors>
+  <Company>Contoso</Company>
+</PropertyGroup>
+```
 
 ## Package restoration
 
-MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
+MSBuild 15.1 introduced the `restore` target for restoring a NuGet package as part of a build. Restoring a package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, including `PackageTargetFallback`, see [restore target](/nuget/reference/msbuild-targets#restore-target).
+
+```xml
+<PropertyGroup>
+  <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
 
 ## See also
 

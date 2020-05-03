@@ -43,10 +43,7 @@ Azure DevOps is divided into five major components:
 
 **Azure Test Plans** - No QA person will be left behind with the test management and exploratory testing support offered by the Test Plans feature.
 
-**Azure Artifacts** - An artifact feed that allows companies to create their own, internal, versions of NuGet, npm, and others. It serves a double purpose of acting as a cache of upstream packages if there's a failure of a c
-centralized repository.
-
-
+**Azure Artifacts** - An artifact feed that allows companies to create their own, internal, versions of NuGet, npm, and others. It serves a double purpose of acting as a cache of upstream packages if there's a failure of a centralized repository.
 
 The top-level organizational unit in Azure DevOps is known as a Project. Within each project the various components, such as Azure Artifacts, can be turned on and off. Each of these components provides different advantages for cloud-native applications. The three most useful are repositories, boards, and pipelines. If users want to manage their source code in another repository stack, such as GitHub, but still take advantage of Azure Pipelines and other components, that's perfectly possible.
 

@@ -31,7 +31,10 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 - `binary-classification`
 - `multiclass-classification`
 - `regression`
-- Future: other machine learning tasks such as `recommendation`, `ranking`, `anomaly-detection`, `clustering`
+- `recommendation`
+- `ranking`
+- `anomaly-detection`
+- `clustering`
 
 Example of usage:
 

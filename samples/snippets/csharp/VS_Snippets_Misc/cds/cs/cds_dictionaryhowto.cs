@@ -17,9 +17,8 @@ namespace DictionaryHowTo
         public int[] RecentHighTemperatures { get; set; } = new int[] { 0 };
 
         public bool Equals(CityInfo x, CityInfo y)
-            => x.Name == y.Name
-            && x.Longitude == y.Longitude
-            && x.Latitude == y.Latitude;
+            => (x.Name, x.Longitude, x.Latitude) == 
+                  (y.Name, y.Longitude, y.Latitude);
 
         public int GetHashCode(CityInfo cityInfo) =>
             cityInfo?.Name.GetHashCode() ?? throw new ArgumentNullException(nameof(cityInfo));

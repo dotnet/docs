@@ -95,6 +95,7 @@ Console.WriteLine(root)
   <Right>300</Right>  
   <DefaultColor>Color.Red</DefaultColor>  
 </Root>
+----  
 <Root>  
   <Top>10</Top>  
   <Left>20</Left>  

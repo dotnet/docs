@@ -12,7 +12,7 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
  The default paragraph style has an element with the following opening tag:  
   
 ```xml  
-<w:style w:type="paragraph" w:default="1" w:styleId="Normal" />  
+<w:style w:type="paragraph" w:default="1" w:styleId="Normal">  
 ```  
   
  You need to know this information when you write the query to find the default style identifier, so that the query can identify the style of paragraphs that have the default style.  

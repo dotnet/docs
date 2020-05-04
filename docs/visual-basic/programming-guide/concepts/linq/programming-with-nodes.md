@@ -161,7 +161,8 @@ Console.WriteLine(doc.Nodes().Count())
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
-<Root />  
+<Root />
+1
 ```  
   
 ## See also

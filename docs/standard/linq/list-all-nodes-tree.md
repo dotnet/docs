@@ -113,7 +113,7 @@ public static class MyExtensions
             XElement el = xobj as XElement;
             if (el != null)
                 return "/" + NameWithPredicate(el);
-            // the XPath data model doesn't include white space text nodes
+            // The XPath data model doesn't include white space text nodes
             // that are children of a document, so this method returns null.
             XText xt = xobj as XText;
             if (xt != null)

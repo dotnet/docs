@@ -66,6 +66,14 @@ namespace DictionaryHowTo
                 }
             }
 
+            // Enumerate collection from the app main thread.
+            // Note that ConcurrentDictionary is the one concurrent collection
+            // that does not support thread-safe enumeration.
+            foreach (var city in Cities)
+            {
+                Console.WriteLine($"{city.Key} has been added.");
+            }
+
             AddOrUpdateWithoutRetrieving();
             TryRemoveCity();
             RetrieveValueOrAdd();

@@ -10,7 +10,7 @@ ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
 
 # How to list all nodes in a tree (LINQ to XML)
 
-Sometimes, it's helpful to list all nodes in a tree – for example, to learn exactly how a method or property affects the tree. The example in this article lists the nodes of a tree in C# or Visual Basic. Each node is represented by an XPath expression that specifies the location of the node in the tree.
+Sometimes, it's helpful to list all nodes in a tree – for example, to learn exactly how a method or property affects the tree. The following example for C# and Visual Basic lists the nodes of a tree. Each node is represented by an XPath expression that specifies the location of the node in the tree.
 
 > [!NOTE]
 > It isn't particularly helpful to execute XPath expressions using LINQ to XML. LINQ to XML queries perform better than XPath expressions and are much more powerful. However, as a way to identify nodes in the XML tree, XPath works well.

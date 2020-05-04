@@ -295,7 +295,7 @@ Module Module1
 End Module
 ```
 
-The example produces the following output:
+This example produces the following output:
 
 ```output
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<

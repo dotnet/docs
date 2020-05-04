@@ -65,7 +65,7 @@ The core of a CNAB is a file called `bundle.json`. This file defines the content
 }
 ```
 
-**Figure 11-13** - An example Terraform file
+**Figure 11-18** - An example Terraform file
 
 The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in a variety of different environments.
 

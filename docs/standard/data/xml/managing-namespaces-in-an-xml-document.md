@@ -48,6 +48,7 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <BOOK xmlns="http://www.contoso.com/books.dtd">  
+...
 </BOOK>
 ```  
   

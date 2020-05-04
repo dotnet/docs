@@ -258,7 +258,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 
 ### AssetTargetFallback
 
-The `AssetTargetFallback` property lets you specify additional compatible framework versions for projects that your project references and NuGet packages that your project consumes. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
 
 You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-framework-versions).
 
@@ -286,7 +286,7 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### ProjectReference
 
-The `ProjectReference` defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.
+The `ProjectReference` item defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.
 
 The `Include` attribute specifies the path to the project. You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
 

@@ -35,7 +35,7 @@ foreach (XElement el in list1)
 ```
 
 ```vb
-      Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")
+Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")
 
 ' LINQ to XML query
 Dim list1 As IEnumerable(Of XElement) = po...<Name>

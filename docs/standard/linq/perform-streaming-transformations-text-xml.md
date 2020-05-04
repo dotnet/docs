@@ -1,17 +1,24 @@
 ---
-title: "How to perform streaming transformations of text to XML (C#)"
+title: How to perform streaming transformations of text to XML in C# - LINQ to XML
+description: You can use an extension method that releases a line at a time to stream a text file for processing. This technique reduces memory requirements compared to techniques which load the entire file and then process it.
 ms.date: 07/20/2015
+dev_langs:
+  - "csharp"
 ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 ---
-# How to perform streaming transformations of text to XML (C#)
 
-One approach to processing a text file is to write an extension method that streams the text file a line at a time using the `yield return` construct. You then can write a LINQ query that processes the text file in a lazy deferred fashion. If you then use <xref:System.Xml.Linq.XStreamingElement> to stream output, you then can create a transformation from the text file to XML that uses a minimal amount of memory, regardless of the size of the source text file.
+# How to perform streaming transformations of text to XML in C# (LINQ to XML)
 
- There are some caveats regarding streaming transformations. A streaming transformation is best applied in situations where you can process the entire file once, and if you can process the lines in the order that they occur in the source document. If you have to process the file more than once, or if you have to sort the lines before you can process them, you will lose many of the benefits of using a streaming technique.
+You can use an extension method that releases a line at a time to stream a text file for processing. This technique reduces memory requirements compared to techniques which load the entire file and then process it.
 
-## Example
+The extension method can provide the line using the `yield return` construct. A LINQ query can process the stream in a lazy deferred fashion. If you use <xref:System.Xml.Linq.XStreamingElement> to stream output, you can create a transformation from the text file to XML that uses a minimal amount of memory, regardless of the size of the source text file.
 
- The following text file, People.txt, is the source for this example.
+> [!NOTE]
+> The technique is best applied in situations in which you can process the entire file once, taking the lines in order from the source document. Processing the file more than once, or sorting before processing, reduces the performance benefits of a streaming technique.
+
+## Example Use an extension method to stream text
+
+The example uses the following text file, People.txt, as its source:
 
 ```text
 #This is a comment
@@ -20,7 +27,7 @@ One approach to processing a text file is to write an extension method that stre
 3,David,Wright,Inventor
 ```
 
- The following code contains an extension method that streams the lines of the text file in a deferred fashion.
+In the code for the example, extension method `Lines` provides the text a line at a time:
 
 ```csharp
 public static class StreamReaderSequence
@@ -60,7 +67,7 @@ class Program
 }
 ```
 
- This example produces the following output:
+The example produces the following output:
 
 ```xml
 <Root>

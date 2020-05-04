@@ -1,6 +1,6 @@
 ---
 title: How to find related elements - LINQ to XML
-description: This article shows how to use LINQ to XML query and XPath, in C# and Visual Basic, to find the value of one element and an element whose attribute has the same value.
+description: Learn how to use LINQ to XML query and XPath, in C# and Visual Basic, to find the value of one element and an element whose attribute has the same value.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -17,7 +17,7 @@ This article shows how to use LINQ to XML query and XPath, in C# and Visual Basi
 This example finds the 12th `Order` element in XML document [Sample XML file: Customers and orders](sample-xml-file-customers-orders.md), and then finds the customer for that order. The XPath expression is `.//Customer[@CustomerID=/Root/Orders/Order[12]/CustomerID]`.
 
 > [!NOTE]
-> In .NET the indexing into a list is zero-based; that is, an index of 0 refers to the initial element. Indexing into a collection of nodes in an XPath predicate is one-based. This example accounts for this difference.
+> In .NET, the indexing into a list is zero-based; that is, an index of 0 refers to the initial element. Indexing into a collection of nodes in an XPath predicate is one-based. This example accounts for this difference.
 
 ```csharp
 XDocument co = XDocument.Load("CustomersOrders.xml");

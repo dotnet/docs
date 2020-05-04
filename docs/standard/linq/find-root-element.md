@@ -1,6 +1,6 @@
 ---
 title: How to find the root element - LINQ to XML
-description: This article provides an example that shows how to use XPath and LINQ to XML, in C# and Visual Basic, to find the root element of an XML document.
+description: Learn how to use XPath and LINQ to XML, in C# and Visual Basic, to find the root element of an XML document.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

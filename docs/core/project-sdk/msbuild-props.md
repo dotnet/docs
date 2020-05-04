@@ -318,7 +318,6 @@ Restoring a referenced package installs all of its direct dependencies and all t
 
 ```xml
 <PropertyGroup>
-  ...
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
 </PropertyGroup>
 ```

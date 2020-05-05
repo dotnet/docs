@@ -43,4 +43,4 @@ System.EnterpriseServices (COM+) is not supported by .NET Core.
 
 ## See also
 
-- [Overview of porting from .NET Framework to .NET Core](../porting/index.md)
+- [Overview of porting from .NET Framework to .NET Core](index.md)

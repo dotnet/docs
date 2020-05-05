@@ -30,7 +30,7 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Properties](../../programming-guide/classes-and-structs/properties.md)

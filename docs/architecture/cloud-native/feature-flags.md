@@ -8,20 +8,22 @@ ms.date: 05/03/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In chapter 1, we affirmed that cloud native is much about speed and agility. Users expect rapid responsiveness, innovative features, and zero downtime. `Feature flags` are a modern approach to help increase the agility of cloud-native applications. They enable you to deploy new features into a production environment, but restrict their availability. Upon demand, you can activate a new feature for specific users without restarting the app or deploying new code. They separate the release of new features from their code deployment.
+In chapter 1, we affirmed that cloud native is much about speed and agility. Users expect rapid responsiveness, innovative features, and zero downtime. `Feature flags` are a modern deployment technique that helps increase agility for cloud-native applications. They enable you to deploy new features into a production environment, but restrict their availability. With the flick of a switch, you can activate a new feature for specific users without restarting the app or deploying new code. They separate the release of new features from their code deployment.
 
-Feature flags are built upon conditional logic that control visibility of functionality for users at runtime. In cloud-based systems, it's common to push out new features into production early, but test them with a limited audience. As confidence increases, the feature can be incrementally rolled out to a wider audience.
+Feature flags are built upon conditional logic that control visibility of functionality for users at runtime. In modern cloud-native systems, it's common to deploy new features into production early, but test them with a limited audience. As confidence increases, the feature can be incrementally rolled out to wider audiences.
 
 Other use cases for feature flags include:
 
-- Restrict functionality to specific customer groups, such as premium customers, who are willing to pay higher subscription fees.
+- Restrict premium functionality to specific customer groups willing to pay higher subscription fees.
 - Stabilize a system by quickly deactivating a problem feature, avoiding the risks of a rollback or immediate hotfix.
 - Disable an optional feature with high resource consumption during peak usage periods.
-- Conduct `experimental releases` to small user segments to validate feasibility and popularity.
+- Conduct `experimental feature releases` to small user segments to validate feasibility and popularity.
+
+Feature flags also promote `trunk-based` development. It's a source-control branching model where developers collaborate on features in a single branch. The approach minimizes the risk and complexity of merging large numbers of long-running feature branches. Features are unavailable until activated.
 
 ## Implementing feature flags
 
-A feature flag is simply an application variable with a Boolean state of `on` or `off`. It typically wraps a block of code that encapsulates a feature capability. The state of the flag determines whether that code block executes for a given user. Figure 11-11 shows the implementation.
+At its core, a feature flag is a reference to a simple `decision object`. It returns a Boolean state of `on` or `off`. The flag typically wraps a block of code that encapsulates a feature capability. The state of the flag determines whether that code block executes for a given user. Figure 11-11 shows the implementation.
 
 ```c#
 if (featureFlag) {
@@ -33,7 +35,9 @@ if (featureFlag) {
 
 **Figure 11-11** - Simple feature flag implementation.
 
-In chapter 1, we discussed the `Twelve-Factor App` guidance. A key recommendation is to separate configuration from code. Configuration settings should be kept external to the app's executable and read in from its runtime environment or an external source. Following those same best practices, feature flag configuration should also be independent of their codebase. By externalizing flag configuration in a separate repository, you can change flag state without modifying and redeploying the application.
+Note how this approach separates the decision logic from the feature code.
+
+In chapter 1, we discussed the `Twelve-Factor App`. The guidance recommended keeping configuration settings external from application executable code. When needed, settings can be read in from the external source. Feature flag configuration values should also be independent from their codebase. By externalizing flag configuration in a separate repository, you can change flag state without modifying and redeploying the application.
 
 [Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) provides a centralized repository for feature flags. With it, you define different kinds of feature flags and manipulate their states quickly and confidently. You add the App Configuration client libraries to your application to enable feature flag functionality. Various programming language frameworks are supported.
 

@@ -8,13 +8,13 @@ ms.date: 05/03/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Cloud-native applications favor platform as a service (PaaS) resources. On a cloud platform like Azure, these services include things like storage, Service Bus, and the SignalR service. As applications become more complex, the number of services apps consume will grow. Just as continuous delivery automated the traditional model of manual deployments, Infrastructure as Code (IaC) is evolving how application environments are managed.
+Cloud-native applications favor platform as a service (PaaS) resources. In the Azure cloud, these services include things like storage, Service Bus, and the SignalR service. As applications become more complex, the number of services they consume will grow. Just as continuous delivery automated the traditional model of manual deployments, Infrastructure as Code (IaC) is evolving how application environments are managed.
 
 Building environments can, and should, also be automated. There's a wide range of well thought out tools that can make the process easy.
 
 ## Azure Resource Manager templates
 
-ARM stands for Azure Resource Manager. It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that declares each resource you desired and its configuration. It automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
+ARM stands for Azure Resource Manager. It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
 
 Azure Resource Manager templates are a JSON-based language for defining various resources in Azure. The basic schema looks something like Figure 11-14.
 
@@ -93,18 +93,17 @@ Terraform also provides more sensible error messages for problem templates. Ther
 
 As with Resource Manager templates, command-line tools are available to deploy Terraform templates. There are also community-created tasks in Azure Pipelines that can validate and apply Terraform templates.
 
-Sometimes Terraform or Resource Manager templates output meaningful values such as a connection string to a newly created database. This information can be captured in the build pipeline and used in subsequent tasks.
+Sometimes Terraform and ARM templates output meaningful values, such as a connection string to a newly created database. This information can be captured in the build pipeline and used in subsequent tasks.
 
 ## Azure CLI Scripts and Tasks
 
-Finally, you might consider leveraging Azure CLI scripts for Infrastructure as Code (IaC). They can also be used to script your application environment. Scripts can be found, created, and shared to provision and configure almost any Azure resource. The CLI is simple to use with a gentle learning curve. Scripts are executed with either PowerShell or Bash.
-CLI scripts are also straightforward to debug, especially when compared with ARM templates.
+Finally, you could leverage Azure CLI scripts to script your application environment. Scripts can be created, found, and shared to provision and configure almost any Azure resource. The CLI is simple to use with a gentle learning curve. Scripts are executed within either PowerShell or Bash. They're also straightforward to debug, especially when compared with ARM templates.
 
-Azure CLI scripts work well when you need to tear down and redeploy your infrastructure. Updating an existing environment is another story. To start, many CLI commands aren't idempotent. That means they will recreate the resource each time it's run, even if the resource already exists. It's always possible to check for the existence of a resource before creating it. But, doing so, your script can become bloated and difficult to manage.
+Azure CLI scripts work well when you need to tear down and redeploy your infrastructure. Updating an existing environment is another story. To start, many CLI commands aren't idempotent. That means they'll recreate the resource each time they're run, even if the resource already exists. It's always possible to add code that checks for the existence of each resource before creating it. But, doing so, your script can become bloated and difficult to manage.
 
-CLI scripts can also be embedded in Azure DevOps pipelines as `Azure CLI tasks`. Executing the pipeline invokes the script.
+These scripts can also be embedded in Azure DevOps pipelines as `Azure CLI tasks`. Executing the pipeline invokes the script.
 
-Figure 11-17 shows a YAML snippet that lists the version of Azure CLI and gets the details of the subscription. Note how Azure CLI commands are included in an inline script.
+Figure 11-17 shows a YAML snippet that lists the version of Azure CLI and the details of the subscription. Note how Azure CLI commands are included in an inline script.
 
 ```yaml
 - task: AzureCLI@2

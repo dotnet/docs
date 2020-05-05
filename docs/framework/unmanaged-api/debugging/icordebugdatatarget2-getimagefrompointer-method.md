@@ -18,10 +18,10 @@ HRESULT GetImageFromPointer(
   
 ## Parameters  
  `addr`  
- A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents an address in a module.  
+ A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents an address in a module.  
   
  `pImageBase`  
- [out] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
+ [out] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
   
  `pSize`  
  A pointer to the module size.  
@@ -32,7 +32,7 @@ HRESULT GetImageFromPointer(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

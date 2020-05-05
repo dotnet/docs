@@ -2,7 +2,7 @@
 title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core.
-ms.date: 12/18/2019
+ms.date: 05/05/2020
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
@@ -45,6 +45,16 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ### .NET Core 2.1
 
 [!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
+## Networking
+
+- [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately)
+
+### .NET Core 2.0
+
+[!INCLUDE [behavior-change-webclient-cancelasync](../../../includes/core-changes/networking/2.0/behavior-change-webclient-cancelasync.md)]
 
 ***
 

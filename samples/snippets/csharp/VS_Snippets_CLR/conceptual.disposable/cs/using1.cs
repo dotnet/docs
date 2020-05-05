@@ -7,7 +7,7 @@ class Example
    static void Main()
    {
       var buffer = new char[50];
-      using var streamReader = new StreamReader("file1.txt"));
+      using var streamReader = new StreamReader("file1.txt");
       
       var charsRead = 0;
       while (streamReader.Peek() != -1)

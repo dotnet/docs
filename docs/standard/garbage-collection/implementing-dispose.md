@@ -1,6 +1,6 @@
 ---
 title: "Implementing a Dispose method"
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -15,7 +15,7 @@ ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 
 You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application. The .NET garbage collector does not allocate or release unmanaged memory.
 
-The pattern for disposing an object, referred to as a [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
+The pattern for disposing an object, referred to as the [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
 
 The dispose pattern has two variations:
 
@@ -98,7 +98,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
 
 ## Implementing the dispose pattern for a derived class
 
-A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:
+A derived class from an <xref:System.IDisposable> implementation should not implement <xref:System.IDisposable> itself, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:
 
 - A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(Boolean)` method of the base class and pass its disposing status for the argument.
 

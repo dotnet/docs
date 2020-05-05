@@ -106,7 +106,6 @@ public class DisposableStreamResource : IDisposable
     // Define locals.
     bool _disposed = false;
     readonly SafeFileHandle _safeHandle;
-    readonly long _bufferSize;
     readonly int _upperWord;
 
     public DisposableStreamResource(string fileName)
@@ -128,18 +127,18 @@ public class DisposableStreamResource : IDisposable
         _safeHandle = new SafeFileHandle(handle, true);
 
         // Get file size.
-        _bufferSize = GetFileSize(_safeHandle, out _upperWord);
-        if (_bufferSize == INVALID_FILE_SIZE)
+        Size = GetFileSize(_safeHandle, out _upperWord);
+        if (Size == INVALID_FILE_SIZE)
         {
-            _bufferSize = -1;
+            Size = -1;
         }
         else if (_upperWord > 0)
         {
-            _bufferSize = (((long)_upperWord) << 32) + _bufferSize;
+            Size = (((long)_upperWord) << 32) + Size;
         }
     }
 
-    public long Size => _bufferSize;
+    public long Size { get; }
 
     public void Dispose()
     {

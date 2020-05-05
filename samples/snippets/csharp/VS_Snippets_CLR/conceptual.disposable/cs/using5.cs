@@ -2,17 +2,16 @@
 using System;
 using System.Globalization;
 using System.IO;
-using System.Threading.Tasks;
 
 class Example
 {
-    static async Task Main()
+    static void Main()
     {
         StreamReader streamReader = null;
         try
         {
             streamReader = new StreamReader("file1.txt");
-            var contents = await streamReader.ReadToEndAsync();
+            var contents = await streamReader.ReadToEnd();
             var info = new StringInfo(contents);
             Console.WriteLine($"The file has {info.LengthInTextElements} text elements.");
         }

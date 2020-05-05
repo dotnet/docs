@@ -18,8 +18,7 @@ public class DisposableStreamResource2 : DisposableStreamResource
         int nNumberOfBytesToWrite, out int lpNumberOfBytesWritten,
         IntPtr lpOverlapped);
 
-    // Define locals.
-    bool _disposed = false;
+    bool _disposed = false; // To detect redundant calls
     bool _created = false;
     SafeFileHandle _safeHandle;
     readonly string _fileName;
@@ -57,12 +56,14 @@ public class DisposableStreamResource2 : DisposableStreamResource
         // Release any managed resources here.
         if (disposing)
         {
+            // Dispose managed state (managed objects).
             _safeHandle?.Dispose();
         }
 
-        _disposed = true;
+        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+        // TODO: set large fields to null.
 
-        // Release any unmanaged resources not wrapped by safe handles here.
+        _disposed = true;
 
         // Call the base class implementation.
         base.Dispose(disposing);
@@ -103,8 +104,7 @@ public class DisposableStreamResource : IDisposable
     [DllImport("kernel32.dll")]
     static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
 
-    // Define locals.
-    bool _disposed = false;
+    bool _disposed = false;  // To detect redundant calls
     readonly SafeFileHandle _safeHandle;
     readonly int _upperWord;
 
@@ -156,10 +156,12 @@ public class DisposableStreamResource : IDisposable
         // Dispose of managed resources here.
         if (disposing)
         {
-            _safeHandle.Dispose();
+            // Dispose managed state (managed objects).
+            _safeHandle?.Dispose();
         }
 
-        // Dispose of any unmanaged resources not wrapped in safe handles.
+        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+        // TODO: set large fields to null.
 
         _disposed = true;
     }

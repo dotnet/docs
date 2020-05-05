@@ -67,7 +67,7 @@ The debugger may use any available means to locate or procure the debugging modu
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorDebug.idl, CorDebug.h
 

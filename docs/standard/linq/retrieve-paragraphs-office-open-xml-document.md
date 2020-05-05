@@ -214,7 +214,7 @@ Module Module1
         Return (e.<w:r>.<w:t>).StringConcatenate(Function(element) CStr(element))
     End Function
 
-    ' Following function is required because Visual Basic doesn't support short circuit evaluation
+    ' The following function is required because Visual Basic doesn't support short circuit evaluation
     Private Function GetStyleOfParagraph(ByVal styleNode As XElement, ByVal defaultStyle As String) _
                 As String
         If (styleNode Is Nothing) Then

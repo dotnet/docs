@@ -34,7 +34,7 @@ Additionally, the *\*.deps.json* files for any referenced frameworks are similar
 
 Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.
 
-Properties `APP_PATHS` and `APP_NI_PATHS` are not populated by default and will be left out for most applications.
+The `APP_PATHS` and `APP_NI_PATHS` properties are not populated by default and are omitted for most applications.
 
 ### How do I see the probing properties from managed code?
 

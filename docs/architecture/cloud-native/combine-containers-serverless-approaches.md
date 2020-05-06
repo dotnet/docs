@@ -30,7 +30,11 @@ When the project is created, it will include a Dockerfile and the worker runtime
 
 ## How to combine serverless and Kubernetes with KEDA
 
-Azure functions scale automatically to meet demand based on the rate of events that are targeting it. You can always leverage AKS to host your functions and use Kubernetes-based Event Driven Autoscaling, or KEDA. When no events are occurring, KEDA can scale down to zero instances. [Learn more about scaling Azure functions with KEDA](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda).
+In this chapter, you've seen that the Azure Functions' platform automatically scales out to meet demand. When deploying containerized functions to AKS, however, you lose the built-in scaling functionality. To the rescue comes [Kubernetes-based Event Driven (KEDA)](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda). It enables fine-grained autoscaling for `event-driven Kubernetes workloads,` including containerized functions.
+
+KEDA provides event-driven scaling functionality to the Functions' runtime in a Docker container. KEDA can scale from zero instances (when no events are occurring) out to `n instances`, based on load. It enables autoscaling by exposing custom metrics to the Kubernetes autoscaler (Horizontal Pod Autoscaler). Using Functions containers with KEDA makes it possible to replicate serverless function capabilities in any Kubernetes cluster.
+
+It is worth noting that the KEDA project is now managed by the Cloud Native Computing Foundation (CNCF).
 
 >[!div class="step-by-step"]
 >[Previous](leverage-serverless-functions.md)

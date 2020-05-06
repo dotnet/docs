@@ -298,7 +298,7 @@ Alpine distributions require the following libraries to be installed:
 - krb5-libs
 - libcurl
 - libintl
-- libssl1.1 (for Alpine >= 3.9) or libssl 1.0 (for older ones)
+- libssl1.1 (for Alpine 3.9 or later) or libssl1.0 (for older ones)
 - libstdc++
 - lttng-ust
 - numactl (optional, useful only for devices with NUMA enabled)

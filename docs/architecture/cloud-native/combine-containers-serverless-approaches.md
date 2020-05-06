@@ -28,8 +28,6 @@ func init ProjectName --worker-runtime dotnet --docker
 
 When the project is created, it will include a Dockerfile and the worker runtime configured to `dotnet`. Now, you can create and test your function locally. Build and run it using the  `docker build` and `docker run` commands. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 
-For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
-
 ## How to combine serverless and Kubernetes with KEDA
 
 In this chapter, you've seen that the Azure Functions' platform automatically scales out to meet demand. When deploying containerized functions to AKS, however, you lose the built-in scaling functionality. To the rescue comes [Kubernetes-based Event Driven (KEDA)](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda). It enables fine-grained autoscaling for `event-driven Kubernetes workloads,` including containerized functions.

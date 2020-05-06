@@ -72,7 +72,7 @@ struct DacpMethodDescData
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above.
 
 ## Requirements
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
@@ -81,4 +81,4 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 - [Debugging](index.md)
 - [Debugging Structures](debugging-structures.md)
-- [Common Data Types](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md)
+- [Common Data Types](../common-data-types-unmanaged-api-reference.md)

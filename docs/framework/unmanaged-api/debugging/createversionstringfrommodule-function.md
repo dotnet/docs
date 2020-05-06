@@ -71,7 +71,7 @@ HRESULT CreateVersionStringFromModule (
  This function should be called twice. When you call it the first time, pass null for both `pBuffer` and `cchBuffer`. When you do this, the size of the buffer necessary for `pBuffer` will be returned in `pdwLength`. You can then call the function a second time, and pass the buffer in `pBuffer` and its size in `cchBuffer`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

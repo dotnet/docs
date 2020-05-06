@@ -87,11 +87,11 @@ What it does mean is that you can't use `T?` in a generic class or method declar
 
 You may want to restrict the types used for a generic type argument to be non-nullable types. You can do that by adding the `notnull` constraint on that type argument. When that constraint is applied, the type argument must not be a nullable type.
 
-## Updating Data Transfer Objects (DTOs) to indicate nullability
+## Late-initialized properties, Data Transfer Objects and nullability
 
-Indicating the nullability of the properties of Data Transfer Objects (DTOs) in your code-base requires special consideration, to ensure that your class continues to correctly express the original design intent of the DTO.
+Indicating the nullability of properties that are late-initialized (i.e. set after construction) may require special consideration to ensure that your class continues to correctly express the original design intent.
 
-DTOs are often instantiated by an external library, like a database ORM (Object Relational Mapper), a deserializer, or some other component that automatically populates properties from another source.
+Types that contain late-initialized properties, such as Data Transfer Objects (DTOs), are often instantiated by an external library, like a database ORM (Object Relational Mapper), a deserializer, or some other component that automatically populates properties from another source.
 
 Consider the following DTO class, prior to enabling nullable reference types, that represents a student:
 
@@ -161,7 +161,7 @@ This approach only works if the library that you use to instantiate the class su
 In addition, a library may support passing *some* properties in the constructor, but not all.
 For example, EF Core supports [constructor binding](/ef/core/modeling/constructors) for normal column properties, but not navigation properties.
 
-Check the documentation on the library that instantiates the DTO, to understand the extent to which it supports constructor binding.
+Check the documentation on the library that instantiates your class, to understand the extent to which it supports constructor binding.
 
 ### Property with nullable backing field
 
@@ -185,7 +185,7 @@ You should consider that some libraries may have special considerations when usi
 
 ### Initialize the property to null
 
-As a terser alternative to using a nullable backing field, or if the library that instantiates your DTO is not compatible with that approach, you can simply initialize the property to null directly, with the help of the null-forgiving operator (``!``):
+As a terser alternative to using a nullable backing field, or if the library that instantiates your class is not compatible with that approach, you can simply initialize the property to null directly, with the help of the null-forgiving operator (``!``):
 
 ```csharp
 [Required]

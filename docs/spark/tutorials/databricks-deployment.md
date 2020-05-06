@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 Before you start, do the following tasks:
 
-* If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/dotnet).
+* If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/dotnet/).
 * Sign in to the [Azure portal](https://portal.azure.com/).
 * Complete the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial.
 

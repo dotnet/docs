@@ -119,7 +119,7 @@ Azure API Management is available across [four different tiers](https://azure.mi
 
 The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs). The Premium tier provides [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) and [multi-region support](https://docs.microsoft.com/azure/api-management/api-management-howto-deploy-multi-region). All tiers have a fixed price per hour.
 
-Recently, Microsoft announced a [API Management serverless tier](https://azure.microsoft.com/blog/announcing-azure-api-management-for-serverless-architectures/) for Azure API Management. Referred to as the *consumption pricing tier*, the service is a variant of API Management designed around the serverless computing model. Unlike the "pre-allocated" pricing tiers previously shown, the consumption tier provides  instant provisioning and pay-per-action pricing.
+The Azure cloud also offers a [serverless tier](https://azure.microsoft.com/blog/announcing-azure-api-management-for-serverless-architectures/) for Azure API Management. Referred to as the *consumption pricing tier*, the service is a variant of API Management designed around the serverless computing model. Unlike the "pre-allocated" pricing tiers previously shown, the consumption tier provides  instant provisioning and pay-per-action pricing.
 
 It enables API Gateway features for the following use cases:
 
@@ -136,8 +136,6 @@ The consumption tier uses the same underlying service API Management components,
 - Cost is based on actual usage.
   
 The new consumption tier is a great choice for cloud-native systems that expose serverless resources as APIs.
-
-> At the time of writing, the consumption tier is in preview in the Azure cloud.
 
 ## Real-time communication
 

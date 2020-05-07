@@ -60,7 +60,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
 
-  Path to a directory to be searched for additional test adapters. Only dlls with suffix `.TestAdapter.dll` are inspected. If not specified the directory of the test dll is searched.
+  Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
 
 - **`--blame`**
 

@@ -1,9 +1,10 @@
 ---
-title: Cloud Native DevOps
+title: DevOps
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native DevOps
-ms.date: 04/30/2020
+ms.date: 05/06/2020
 ---
-# Cloud Native DevOps
+
+# DevOps
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -21,7 +22,9 @@ The patterns and practices that enable faster, more reliable releases to deliver
 
 DevOps emerged before microservices and it's likely that the movement towards smaller, more fit to purpose services wouldn't have been possible without DevOps to make releasing and operating not just one but many applications in production easier.
 
-![Figure 11-0 Search trends show that the growth in microservices doesn't start until after DevOps is a fairly well-established idea.](./media/microservices-vs-devops.png)
+![Figure 10-1 Search trends show that the growth in microservices doesn't start until after DevOps is a fairly well-established idea.](./media/microservices-vs-devops.png)
+
+**Figure 10-1** - DevOps and microservices.
 
 Through good DevOps practices, it's possible to realize the advantages of cloud-native applications without suffocating under a mountain of work actually operating the applications.
 
@@ -33,7 +36,9 @@ Azure DevOps has a long pedigree. It can trace its roots back to when Team Found
 
 Azure DevOps is divided into five major components:
 
-![Figure 11-1 The five major areas of Azure DevOps](./media/devops-components.png)
+![Figure 10-2 The five major areas of Azure DevOps](./media/devops-components.png)
+
+**Figure 10-2** - Azure DevOps.
 
 **Azure Repos** - Source code management that supports the venerable Team Foundation Version Control (TFVC) and the industry favorite [Git](https://en.wikipedia.org/wiki/Git). Pull requests provide a way to enable social coding by fostering discussion of changes as they're made.
 
@@ -49,15 +54,13 @@ The top-level organizational unit in Azure DevOps is known as a Project. Within 
 
 Fortunately, development teams have many options when selecting a repository. One of them is GitHub.
 
-## GitHub
+## GitHub Actions
 
- Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Many large tech companies, such as Apple, Amazon, Google, and mainstream corporations use GitHub. GitHub uses the open-source, distributed version control system named Git as its foundation. On top, it then adds its own set of features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
+Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Many large tech companies, such as Apple, Amazon, Google, and mainstream corporations use GitHub. GitHub uses the open-source, distributed version control system named Git as its foundation. On top, it then adds its own set of features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
 
 As GitHub evolves, it too is adding DevOps features. For example, GitHub has its own continuous integration/continuous delivery (CI/CD) pipeline, called `Actions`. Actions is a community-powered workflow automation tool. It lets DevOps teams integrate with their existing tooling, mix and match new products, and hook into their software lifecycle, including existing CI/CD partners."
 
-GitHub has over 28 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company. GitHub offers plans for enterprise, team, professional, and free accounts.
-
-In fact, many open-source projects leverage the [free builds](https://azure.microsoft.com/blog/announcing-azure-pipelines-with-unlimited-ci-cd-minutes-for-open-source/) offered by Azure DevOps while keeping their source code on GitHub. Some significant open-source projects such as [Visual Studio Code](https://code.visualstudio.com/), [yarn](https://yarnpkg.com/en/), [gulp](https://gulpjs.com/), and [NumPy](https://www.numpy.org/) have made the transition.
+GitHub has over 40 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company. GitHub offers plans for enterprise, team, professional, and free accounts.
 
 ## Source control
 
@@ -67,7 +70,9 @@ Before getting down into the actual source control itself, it's probably worth d
 
 Splitting up code for microservices within the Azure DevOps project can be slightly more challenging.
 
-![Figure 11-2 Single versus Multiple Repositories](./media/single-repository-vs-multiple.png)
+![Figure 10-3 Single versus Multiple Repositories](./media/single-repository-vs-multiple.png)
+
+**Figure 10-3** - One vs. many repositories.
 
 ### Repository per microservice
 
@@ -120,7 +125,9 @@ In the end, either solution can be used to host the source code for microservice
 
 Regardless of the single versus multiple repositories debate each service will have its own directory. One of the best optimizations to allow developers to cross between projects quickly is to maintain a standard directory structure.
 
-![Figure 11-3 A standard directory structure for both the email and sign-in services](./media/dir-struct.png)
+![Figure 10-4 A standard directory structure for both the email and sign-in services](./media/dir-struct.png)
+
+**Figure 10-4** - Standard directory structure.
 
 Whenever a new project is created, a template that puts in place the correct structure should be used. This template can also include such useful items as a skeleton README file and an `azure-pipelines.yml`. In any microservice architecture, a high degree of variance between projects makes bulk operations against the services more difficult.
 
@@ -138,17 +145,23 @@ One of the more important parts of Agile methodologies is self-introspection at 
 
 The stages in the boards aren't the only organizational tool. Depending on the configuration of the board, there's a hierarchy of work items. The most granular item that can appear on a board is a task. Out of the box a task contains fields for a title, description, a priority, an estimate of the amount of work remaining and the ability to link to other work items or development items (branches, commits, pull requests, builds, and so forth). Work items can be classified into different areas of the application and different iterations (sprints) to make finding them easier.
 
-![Figure 11-4 An example task in Azure DevOps](./media/task-details.png)
+![Figure 10-5 An example task in Azure DevOps](./media/task-details.png)
+
+**Figure 10-5** - Task in Azure DevOps.
 
 The description field supports the normal styles you'd expect (bold, italic underscore and strike through) and the ability to insert images. This makes it a very powerful tool for use when specifying work or bugs.
 
 Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be [rolled up into epics](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
-![Figure 11-5 Work item types configured by default in the Basic process template](./media/board-issue-types.png)
+![Figure 10-6 Work item types configured by default in the Basic process template](./media/board-issue-types.png)
+
+**Figure 10-6** - Work item in Azure DevOps.
 
 There are different kinds of views into the issues in Azure Boards. Items that aren't yet scheduled appear in the backlog. From there, they can be assigned to a sprint. A sprint is a time box during which it's expected some quantity of work will be completed. This work can include tasks but also the resolution of tickets. Once there, the entire sprint can be managed from the Sprint board section. This view shows how work is progressing and includes a burn down chart to give an ever-updating estimate of if the sprint will be successful.
 
-![Figure 11-6 A board with a sprint defined](./media/sprint-board.png)
+![Figure 10-7 A board with a sprint defined](./media/sprint-board.png)
+
+**Figure 10-7** - Board in Azure DevOps.
 
 By now, it should be apparent that there's a great deal of power in the Boards in Azure DevOps. For developers, there are easy views of what is being worked on. For project managers views into upcoming work as well as an overview of existing work. For managers, there are plenty of reports about resourcing and capacity. Unfortunately, there's nothing magical about cloud-native applications that eliminate the need to track work. But if you must track work, there are a few places where the experience is better than in Azure DevOps.
 
@@ -158,7 +171,9 @@ Almost no change in the software development life cycle has been so revolutionar
 
 Traditionally shipping software to the production environment required extensive documentation and a list of steps. Each one of these steps needed to be manually completed in a very error prone process.
 
-![Figure 11-7 A checklist](./media/checklist.png)
+![Figure 10-8 A checklist](./media/checklist.png)
+
+**Figure 10-8** - Checklist.
 
 The sister of continuous integration is continuous delivery in which the freshly built packages are deployed to an environment. The manual process can't scale to match the speed of development so automation becomes more important. Checklists are replaced by scripts that can execute the same tasks faster and more accurately than any human.
 
@@ -170,7 +185,7 @@ The importance of automating the build and delivery process is accentuated by cl
 
 Azure DevOps provides a set of tools to make continuous integration and deployment easier than ever. These tools are located under Azure Pipelines. The first of them is Azure Builds, which is a tool for running YAML-based build definitions at scale. Users can either bring their own build machines (great for if the build requires a meticulously set up environment) or use a machine from a constantly refreshed pool of Azure hosted virtual machines. These hosted build agents come pre-installed with a wide range of development tools for not just .NET development but for everything from Java to Python to iPhone development.
 
-DevOps includes a wide range of out of the box build definitions that can be customized for any build. The build definitions are defined in a file called `azure-pipelines.yml` and checked into the repository so they can be versioned along with the source code. This makes it much easier to make changes to the build pipeline in a branch as the changes can be checked into just that branch. An example `azure-pipelines.yml` for building an ASP.NET web application on full framework is show in Figure 11-8.
+DevOps includes a wide range of out of the box build definitions that can be customized for any build. The build definitions are defined in a file called `azure-pipelines.yml` and checked into the repository so they can be versioned along with the source code. This makes it much easier to make changes to the build pipeline in a branch as the changes can be checked into just that branch. An example `azure-pipelines.yml` for building an ASP.NET web application on full framework is show in Figure 10-9.
 
 ```yml
 name: $(rev:r)
@@ -232,7 +247,7 @@ steps:
   condition: succeededOrFailed()
 ```
 
-**Figure 11-8** - A sample azure-pipelines.yml
+**Figure 10-9** - A sample azure-pipelines.yml
 
 This build definition uses a number of built-in tasks that make creating builds as simple as building a Lego set (simpler than the giant Millennium Falcon). For instance, the NuGet task restores NuGet packages, while the VSBuild task calls the Visual Studio build tools to perform the actual compilation. There are hundreds of different tasks available in Azure DevOps, with thousands more that are maintained by the community. It's likely that no matter what build tasks you're looking to run, somebody has built one already.
 
@@ -244,7 +259,9 @@ The end result of a build is a collection of files known as build artifacts. The
 
 Builds take care of compiling the software into a shippable package, but the artifacts still need to be pushed out to a testing environment to complete continuous delivery. For this, Azure DevOps uses a separate tool called Releases. The Releases tool makes use of the same tasks' library that were available to the Build but introduce a concept of "stages". A stage is an isolated environment into which the package is installed. For instance, a product might make use of a development, a QA, and a production environment. Code is continuously delivered into the development environment where automated tests can be run against it. Once those tests pass the release moves onto the QA environment for manual testing. Finally, the code is pushed to production where it's visible to everybody.
 
-![Figure 11-9 An example release pipeline with Develop, QA, and Production phases](./media/release-pipeline.png)
+![Figure 10-10 An example release pipeline with Develop, QA, and Production phases](./media/release-pipeline.png)
+
+**Figure 10-10** - Release pipeline
 
 Each stage in the build can be automatically triggered by the completion of the previous phase. In many cases, however, this isn't desirable. Moving code into production might require approval from somebody. The Releases tool supports this by allowing approvers at each step of the release pipeline. Rules can be set up such that a specific person or group of people must sign off on a release before it makes into production. These gates allow for manual quality checks and also for compliance with any regulatory requirements related to control what goes into production.
 

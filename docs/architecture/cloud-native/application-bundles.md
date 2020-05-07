@@ -1,7 +1,7 @@
 ---
 title: Cloud Native Application Bundles
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
-ms.date: 06/30/2019
+ms.date: 05/06/2020
 ---
 
 # Cloud Native Application Bundles
@@ -65,7 +65,7 @@ The core of a CNAB is a file called `bundle.json`. This file defines the content
 }
 ```
 
-**Figure 11-18** - An example Terraform file
+**Figure 10-18** - An example Terraform file
 
 The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in a variety of different environments.
 

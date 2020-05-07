@@ -16,7 +16,7 @@ Building environments can, and should, also be automated. There's a wide range o
 
 ARM stands for Azure Resource Manager. It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
 
-Azure Resource Manager templates are a JSON-based language for defining various resources in Azure. The basic schema looks something like Figure 11-14.
+Azure Resource Manager templates are a JSON-based language for defining various resources in Azure. The basic schema looks something like Figure 10-14.
 
 ```json
 {
@@ -31,7 +31,7 @@ Azure Resource Manager templates are a JSON-based language for defining various 
 }
 ```
 
-**Figure 11-14** - The schema for a Resource Manager template
+**Figure 10-14** - The schema for a Resource Manager template
 
 Within this template, one might define a storage container inside the resources section like so:
 
@@ -51,7 +51,7 @@ Within this template, one might define a storage container inside the resources 
   ],
 ```
 
-**Figure 11-15** - An example of a storage account defined in a Resource Manager template
+**Figure 10-15** - An example of a storage account defined in a Resource Manager template
 
 An ARM template can be parameterized with dynamic environment and configuration information. Doing so enables it to be reused to define different environments, such as development, QA, or production. Normally, the template creates all resources within a single Azure resource group. It's possible to define multiple resource groups in a single Resource Manager template, if needed. You can delete all resources in an environment by deleting the resource group itself. Cost analysis can also be run at the resource group level, allowing for quick accounting of how much each environment is costing.
 
@@ -65,7 +65,7 @@ A disadvantage of ARM templates is that they're specific to the Azure cloud. It'
 
 Several technologies exist which do just that! The most mature offering in that space is known as [Terraform](https://www.terraform.io/). Terraform supports every major cloud player, including Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
 
-An example Terraform file that does the same as the previous Resource Manager template (Figure 11-15) is shown in Figure 11-16:
+An example Terraform file that does the same as the previous Resource Manager template (Figure 10-15) is shown in Figure 10-16:
 
 ```terraform
 provider "azurerm" {
@@ -87,7 +87,7 @@ resource "azurerm_storage_account" "testsa" {
 }
 ```
 
-**Figure 11-16** - An example of a Resource Manager template
+**Figure 10-16** - An example of a Resource Manager template
 
 Terraform also provides more sensible error messages for problem templates. There's even a handy validate task that can be used in the build phase to catch template errors early. Errors with ARM can be challenging to understand.
 
@@ -103,7 +103,7 @@ Azure CLI scripts work well when you need to tear down and redeploy your infrast
 
 These scripts can also be embedded in Azure DevOps pipelines as `Azure CLI tasks`. Executing the pipeline invokes the script.
 
-Figure 11-17 shows a YAML snippet that lists the version of Azure CLI and the details of the subscription. Note how Azure CLI commands are included in an inline script.
+Figure 10-17 shows a YAML snippet that lists the version of Azure CLI and the details of the subscription. Note how Azure CLI commands are included in an inline script.
 
 ```yaml
 - task: AzureCLI@2
@@ -117,7 +117,7 @@ Figure 11-17 shows a YAML snippet that lists the version of Azure CLI and the de
       az account show
 ```
 
-**Figure 11-17** - Azure CLI script
+**Figure 10-17** - Azure CLI script
 
 >[!div class="step-by-step"]
 >[Previous](feature-flags.md)

@@ -3,7 +3,7 @@ title: .NET Core SDK and runtime dependencies - .NET Core
 description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on Windows, Linux, and macOS.
 author: leecow
 ms.author: leecow
-ms.date: 12/04/2019
+ms.date: 04/30/2020
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -90,7 +90,7 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 <!-- markdownlint-disable MD001 -->
 
-### Windows 7 / Vista / 8.1 / Server 2008 R2
+### <a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
 
 Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
@@ -108,6 +108,10 @@ Install the following:
 The requirements above are also required if you come across one of the following errors:
 
 > The program can't start because *api-ms-win-crt-runtime-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
+> The program can't start because *api-ms-win-cor-timezone-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
 >
 > \- or -
 >
@@ -285,6 +289,24 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 > Most versions of CentOS and Fedora include an earlier version of libgdiplus. You can install a recent version
 > of libgdiplus by adding the Mono repository to your system. For more information,
 > see <https://www.mono-project.com/download/stable/>.
+
+### Alpine
+
+Alpine distributions require the following libraries to be installed:
+
+- icu-libs (this is not needed if globalization is disabled)
+- krb5-libs
+- libcurl
+- libintl
+- libssl1.1 (for Alpine 3.9 or later) or libssl1.0 (for older ones)
+- libstdc++
+- lttng-ust
+- numactl (optional, useful only for devices with NUMA enabled)
+- zlib
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (it is available only in the edge/testing repository)
 
 ::: zone-end
 

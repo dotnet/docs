@@ -10,7 +10,7 @@ The Discovery specification does not require that endpoints that participate in 
  The custom channel is applied on top of the existing channel stack for Discovery and Announcement endpoints. This way, a signature header is applied for every message sent. The signature is verified on received messages and when it does not match or when the messages do not have a signature, the messages are dropped. To sign and verify messages, the sample uses certificates.  
   
 ## Discussion  
- WCF is very extensible and allows users the possibility to customize channels as desired. The sample implements a discovery secure binding element that builds secure channels. The secure channels apply and verify message signatures and are applied on top of the current stack.  
+ WCF is extensible and allows users the possibility to customize channels as desired. The sample implements a discovery secure binding element that builds secure channels. The secure channels apply and verify message signatures and are applied on top of the current stack.  
   
  The secure binding element builds secure channel factories and channel listeners.  
   
@@ -34,13 +34,13 @@ The Discovery specification does not require that endpoints that participate in 
   
  To compute the signature, the sample determines the expanded signature items. An XML signature (`SignedInfo`) is created, using the `ds` namespace prefix, as required by the WS-Discovery specification. The body and all the headers in discovery and addressing namespaces are referenced in the signature, so they cannot be tampered with. Each referenced element is transformed using the Exclusive Canonicalization (http://www.w3.org/2001/10/xml-exc-c14n# ), and then an SHA-1 digest value is computed (http://www.w3.org/2000/09/xmldsig#sha1 ). Based on all referenced elements and their digest values, the signature value is computed using the RSA algorithm (http://www.w3.org/2000/09/xmldsig#rsa-sha1 ).  
   
- The messages are signed with a client-specified certificate. The store location, name and the certificate subject name must be specified when the binding element is created. The `KeyId` in the compact signature represents the key identifier of the signing token and is the Subject Key Identifier (SKI) of the signing token or (if the SKI does not exist) a SHA-1 hash of the public key of the signing token.  
+ The messages are signed with a client-specified certificate. The store location, name, and certificate subject name must be specified when the binding element is created. The `KeyId` in the compact signature represents the key identifier of the signing token and is the Subject Key Identifier (SKI) of the signing token or (if the SKI does not exist) a SHA-1 hash of the public key of the signing token.  
   
 ## Secure Channel Listener  
  The secure channel listener creates input or duplex channels that verify the compact signature in received messages. To verify the signature, the `KeyId` specified in the compact signature attached to the message is used to select a certificate from the specified store. If the message does not have a signature or the signature check fails, the messages are dropped. To use the secure binding, the sample defines a factory that creates custom <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> with the added discovery secure binding element. These secure endpoints can be used in discovery announcement listeners and discoverable services.  
   
 ## Sample Details  
- The sample includes a library and 4 console applications:  
+ The sample includes a library and 4 console applications:
   
 - **DiscoverySecurityChannels**: A library that exposes the secure binding. The library computes and verifies the compact signature for outgoing/incoming messages.  
   

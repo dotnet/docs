@@ -39,7 +39,7 @@ struct  CoreClrDebugProcInfo {
 |`m_wszName`|Command-line of the process. This member may be truncated.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CoreClrRemoteDebuggingInterfaces.h  
   

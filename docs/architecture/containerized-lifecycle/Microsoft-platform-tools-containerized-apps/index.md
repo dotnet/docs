@@ -10,7 +10,7 @@ ms.date: 02/15/2019
 Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management and operations). Usually, in the enterprise, the profiles of "the persona" responsible for each area are different. So are their skills.
 
 :::image type="complex" source="./media/index/microsoft-tools-contanerized-docker-app.png" alt-text="Diagram showing the Microsoft tools needed to maintain Docker apps.":::
-Microsoft tools. For the Develop/Design workload: Docker engine for Windows, VS and VS Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Azure Monitor, Azure Portal Azure Kubernetes Services, Service Fabric, other orchestrators.
+Microsoft tools. For the Develop/Design workload: Docker engine for Windows, Visual Studio and Visual Studio Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Azure Monitor, Azure portal, Azure Kubernetes Services, Service Fabric, other orchestrators.
 :::image-end:::
 
 **Figure 3-1.** Main pillars in the life cycle for containerized Docker applications with Microsoft platform and tools

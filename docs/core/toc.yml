@@ -14,6 +14,10 @@
     href: install/runtime.md
   - name: Supported OS and dependencies
     href: install/dependencies.md
+  - name: Remove outdated runtimes and SDKs
+    href: install/remove-runtime-sdk-versions.md
+  - name: Manage .NET templates
+    href: install/templates.md
   - name: macOS Notarization issues
     href: install/macos-notarization-issues.md
   - name: How to check .NET Core versions
@@ -28,12 +32,16 @@
       href: install/linux-package-manager-ubuntu-1804.md
     - name: Ubuntu 16.04
       href: install/linux-package-manager-ubuntu-1604.md
+    - name: CentOS 8
+      href: install/linux-package-manager-centos8.md
     - name: CentOS 7
       href: install/linux-package-manager-centos7.md
     - name: Debian 10
       href: install/linux-package-manager-debian10.md
     - name: Debian 9
       href: install/linux-package-manager-debian9.md
+    - name: Fedora 32
+      href: install/linux-package-manager-fedora32.md
     - name: Fedora 31
       href: install/linux-package-manager-fedora31.md
     - name: Fedora 30
@@ -391,8 +399,6 @@
     href: versions/index.md
   - name: .NET Core version selection
     href: versions/selection.md
-  - name: Remove outdated runtimes and SDKs
-    href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
 - name: Dependency management and loading

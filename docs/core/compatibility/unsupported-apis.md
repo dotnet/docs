@@ -318,6 +318,6 @@ This article organizes the affected API members by namespace.
 
 ## See also
 
-- [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md)
+- [Breaking changes for migration from .NET Framework to .NET Core](fx-core.md)
 - [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core)
 - [.NET portability analyzer](../../standard/analyzers/portability-analyzer.md)

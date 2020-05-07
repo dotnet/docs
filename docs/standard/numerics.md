@@ -87,6 +87,8 @@ The .NET SIMD-enabled types include the following:
   
 The SIMD-enabled types are implemented in such a way that they can be used with non-SIMD-enabled hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the RyuJIT compiler, which is included in .NET Core and in the .NET Framework 4.6 and later versions. It adds SIMD support when targeting 64-bit processors.
 
+For more information, see [Use SIMD-accelerated numeric types](simd.md).
+
 ## See also
 
 - [Standard Numeric Format Strings](base-types/standard-numeric-format-strings.md)

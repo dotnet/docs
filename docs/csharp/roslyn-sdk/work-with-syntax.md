@@ -10,7 +10,7 @@ ms.custom: mvc
 The **syntax tree** is a fundamental data structure exposed by the compiler APIs. These trees represent the lexical and syntactic structure of source code. They serve two important purposes:
 
 1. To allow tools - such as an IDE, add-ins, code analysis tools, and refactorings - to see and process the syntactic structure of source code in a user’s project.
-2. To enable tools - such as refactorings and an IDE - to create, modify, and rearrange source code in a natural manner without having use direct text edits. By creating and manipulating trees, tools can easily create and rearrange source code.
+2. To enable tools - such as refactorings and an IDE - to create, modify, and rearrange source code in a natural manner without having to use direct text edits. By creating and manipulating trees, tools can easily create and rearrange source code.
 
 ## Syntax trees
 

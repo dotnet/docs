@@ -90,7 +90,7 @@ as you write it.
 The Workspaces layer contains the Workspace API, which is the starting
 point for doing code analysis and refactoring over entire solutions. It
 assists you in organizing all the information about the projects in a
-solution into single object model, offering you direct access to the compiler
+solution into a single object model, offering you direct access to the compiler
 layer object models without needing to parse files, configure options, or
 manage project-to-project dependencies.
 

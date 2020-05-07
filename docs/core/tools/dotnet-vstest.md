@@ -7,9 +7,11 @@ ms.date: 02/27/2020
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
+> `dotnet vstest` was superseded by `dotnet test` which can now be used to run assemblies. See https://github.com/dotnet/docs/blob/master/docs/core/tools/dotnet-test.md
+
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified files.
+`dotnet-vstest` - Runs tests from the specified assemblies.
 
 ## Synopsis
 

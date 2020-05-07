@@ -76,7 +76,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
-  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file, and files next to it, based on the process that is logging the messages, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
+  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
 - **`-f|--framework <FRAMEWORK>`**
 

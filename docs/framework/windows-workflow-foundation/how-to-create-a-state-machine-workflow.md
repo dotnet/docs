@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a State Machine Workflow"
+description: This article creates a workflow that uses both built-in activities, such as the StateMachine activity, and custom activities from a previous article.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

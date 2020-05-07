@@ -1,5 +1,7 @@
 # .NET Docs
 
+![Markdownlint](https://github.com/dotnet/docs/workflows/Markdownlint/badge.svg)
+
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://docs.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
 - [Code samples and snippets](https://github.com/dotnet/samples)

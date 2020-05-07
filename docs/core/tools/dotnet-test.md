@@ -31,8 +31,7 @@ dotnet test -h|--help
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1. 
-
+The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
 
 For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
@@ -74,7 +73,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
-  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file, and files next to it, based on the process that is logging the messages, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log. 
+  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file, and files next to it, based on the process that is logging the messages, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -137,7 +136,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`RunSettings`** arguments
 
- Inline `RunSettings` are passed as the last arguments on the command line after after `-- ` (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs. 
+ Inline `RunSettings` are passed as the last arguments on the command line after after "-- " (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs.
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 

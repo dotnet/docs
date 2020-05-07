@@ -22,7 +22,7 @@ In most cases, no action is required on the part of the developer, and your app 
 
 - Change your code to expect the new manifest name.
 
-- Opt out of the new naming convention by setting `EmbeddedResourceUseDependentUponConvention` to false in your project file.
+- Opt out of the new naming convention by setting `EmbeddedResourceUseDependentUponConvention` to `false` in your project file.
 
   ```xml
   <PropertyGroup>

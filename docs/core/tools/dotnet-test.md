@@ -50,7 +50,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`PROJECT | SOLUTION | DIRECTORY | DLL`**
 
   - Path to the test project.
-  - Path to the solution. 
+  - Path to the solution.
   - Path to a directory that contains a project or a solution.
   - Path to a test project *.dll* file.
 

@@ -80,7 +80,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Forces the use of dotnet or .NET Framework test host for the test binaries. This only determines which type of host to use. The actual framework version to be used is determined by the runtimeconfig.json of the test project. When not specified [TargetFramework assembly attribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the the type of host. When that attribute is stripped from the dll, .NET Framework host is used.
+  Forces the use of `dotnet` or .NET Framework test host for the test binaries. This option only determines which type of host to use. The actual framework version to be used is determined by the *runtimeconfig.json* of the test project. When not specified, the [TargetFramework assembly attribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the type of host. When that attribute is stripped from the *.dll*, the .NET Framework host is used.
 
 - **`--filter <EXPRESSION>`**
 

@@ -21,6 +21,14 @@ For the best compatibility, choose a long-term release (LTS) version.
 | 2.1 (LTS) | 16.04, 18.04, 20.04  | 19.10                  |
 | 3.1 (LTS) | 16.04, 18.04, 20.04  | 19.10                  |
 
+.NET Core versions no longer supported and the last Ubuntu release it was supported with:
+
+| .NET Core | Ubuntu Version             |
+|-----------|----------------------------|
+| 3.0       | 16.04, 18.04, 18.10, 19.10 |
+| 2.2       | 16.04, 18.04, 18.10        |
+| 2.0       | 14.04, 16.04, 18.04        |
+
 ## APT (Advanced Package Tool)
 
 Depending on which version of Ubuntu you're using, these commands are slightly different. The changes are usually to URI paths the command uses. You'll want to modify them to match your version of Ubuntu. These changes are called out with placeholders.

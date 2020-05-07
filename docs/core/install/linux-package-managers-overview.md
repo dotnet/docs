@@ -23,6 +23,14 @@ The following table is a list of currently supported .NET Core releases and the 
 | 2.1 (LTS) | 16.04, 18.04, 20.04  | 19.10                  |
 | 3.1 (LTS) | 16.04, 18.04, 20.04  | 19.10                  |
 
+.NET Core versions no longer supported and the last Ubuntu release it was supported with:
+
+| .NET Core | Ubuntu Version             |
+|-----------|----------------------------|
+| 3.0       | 16.04, 18.04, 18.10, 19.10 |
+| 2.2       | 16.04, 18.04, 18.10        |
+| 2.0       | 14.04, 16.04, 18.04        |
+
 For more information about the required Linux dependencies for .NET Core, see [.NET Core dependencies and requirements](dependencies.md?tabs=netcore31&pivots=os-linux).
 
 For more information, see [Install .NET Core with a package manager on Ubuntu](linux-package-manager-ubuntu.md).

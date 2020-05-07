@@ -89,7 +89,7 @@ You may want to restrict the types used for a generic type argument to be non-nu
 
 ## Late-initialized properties, Data Transfer Objects and nullability
 
-Indicating the nullability of properties that are late-initialized (i.e. set after construction) may require special consideration to ensure that your class continues to correctly express the original design intent.
+Indicating the nullability of properties that are late-initialized, meaning set after construction, may require special consideration to ensure that your class continues to correctly express the original design intent.
 
 Types that contain late-initialized properties, such as Data Transfer Objects (DTOs), are often instantiated by an external library, like a database ORM (Object Relational Mapper), a deserializer, or some other component that automatically populates properties from another source.
 
@@ -108,11 +108,11 @@ class Student
 }
 ```
 
-The design intent (indicated in this case by the ``Required`` attribute) suggests that in this system, the ``FirstName`` and ``LastName`` properties are **mandatory**, and therefore not null.
+The design intent (indicated in this case by the `Required` attribute) suggests that in this system, the `FirstName` and `LastName` properties are **mandatory**, and therefore not null.
 
-The ``VehicleRegistration`` property is **not mandatory**, so may be null.
+The `VehicleRegistration` property is **not mandatory**, so may be null.
 
-When we enable nullable reference types, we want to indicate on our DTO which of the properties may be nullable, consistent with our original intent:
+When you enable nullable reference types, you want to indicate on our DTO which of the properties may be nullable, consistent with your original intent:
 
 ```csharp
 class Student
@@ -129,9 +129,9 @@ class Student
 
 For this DTO, the only property that may be null is ``VehicleRegistration``.
 
-However, the compiler raises ``CS8618`` warnings for both ``FirstName`` and ``LastName``, indicating the non-nullable properties are uninitialized.
+However, the compiler raises `CS8618` warnings for both `FirstName` and `LastName`, indicating the non-nullable properties are uninitialized.
 
-There are three options available to you that resolve the compiler warnings, in a way that maintains the original intent. Any of these options are valid; you should choose the one that best suits your coding style and design requirements.
+There are three options available to you that resolve the compiler warnings in a way that maintains the original intent. Any of these options are valid; you should choose the one that best suits your coding style and design requirements.
 
 ### Initialize in the constructor
 
@@ -179,13 +179,13 @@ public string FirstName
 }
 ```
 
-In this scenario, if the ``FirstName`` property is accessed before it has been initialized, then we throw an ``InvalidOperationException``, because the API contract has been used incorrectly.
+In this scenario, if the `FirstName` property is accessed before it has been initialized, then we throw an `InvalidOperationException`, because the API contract has been used incorrectly.
 
 You should consider that some libraries may have special considerations when using backing fields. For example, EF Core may need to be configured to use [backing fields](/ef/core/modeling/backing-field) correctly.
 
 ### Initialize the property to null
 
-As a terser alternative to using a nullable backing field, or if the library that instantiates your class is not compatible with that approach, you can simply initialize the property to null directly, with the help of the null-forgiving operator (``!``):
+As a terser alternative to using a nullable backing field, or if the library that instantiates your class is not compatible with that approach, you can simply initialize the property to `null` directly, with the help of the null-forgiving operator (`!`):
 
 ```csharp
 [Required]

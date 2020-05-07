@@ -81,6 +81,7 @@ Out of the box, most PaaS Azure resources have only the most basic and permissiv
 Fortunately, most Azure resources can be placed into an Azure Virtual Network that allows finer grained access control. Similar to the way that on-premises networks establish private networks that are protected from the wider world, virtual networks are islands of private IP addresses that are located within the Azure network.
 
 ![Figure 9-1 A virtual network in Azure](./media/virtual-network.png)
+
 **Figure 9-1**. A virtual network in Azure.
 
 In the same way that on-premises networks have a firewall governing access to the network, you can establish a similar firewall at the boundary of the virtual network. By default, all the resources on a virtual network can still talk to the Internet. It's only incoming connections that require some form of explicit firewall exception.

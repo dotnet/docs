@@ -171,7 +171,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger "console;verbosity=detailed"
   ```
   
-  - Run the tests in the project in the current directory, and report tests that were in progress when test host crashed:
+  - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
 
   ```dotnetcli
   dotnet test --blame

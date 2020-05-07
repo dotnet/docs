@@ -34,11 +34,9 @@ Consumers of your type can then call your <xref:System.IDisposable.Dispose%2A?di
 
 ## In this section
 
-[Implementing a Dispose Method](../../../docs/standard/garbage-collection/implementing-dispose.md)
-Describes how to implement the [dispose pattern](implementing-dispose.md) for releasing unmanaged resources.
+[Implementing a Dispose method](implementing-dispose.md) describes how to implement the dispose pattern for releasing unmanaged resources.
 
-[Using Objects That Implement IDisposable](../../../docs/standard/garbage-collection/using-objects.md)
-Describes how consumers of a type ensure that its <xref:System.IDisposable.Dispose%2A> implementation is called. We recommend using the C# `using` statement or the Visual Basic `Using` statement to do this.
+[Using objects that implement `IDisposable`](../../../docs/standard/garbage-collection/using-objects.md) describes how consumers of a type ensure that its <xref:System.IDisposable.Dispose%2A> implementation is called. We recommend using the C# `using` (or the Visual Basic `Using`) statement to do this.
 
 ## Reference
 

@@ -130,7 +130,18 @@ For more information about deployment, see [.NET Core application deployment](..
 
 ## Compile properties
 
+- [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [LangVersion](#langversion)
+
+### EmbeddedResourceUseDependentUponConvention
+
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from the namespace and class name of the first type in a source file that's colocated with a resource file. If you omit this property in a .NET Core project, it defaults to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file.
+
+```xml
+<PropertyGroup>
+  <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+</PropertyGroup>
+```
 
 ### LangVersion
 

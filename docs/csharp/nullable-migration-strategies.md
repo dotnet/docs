@@ -179,7 +179,7 @@ public string FirstName
 }
 ```
 
-In this scenario, if the `FirstName` property is accessed before it has been initialized, then we throw an `InvalidOperationException`, because the API contract has been used incorrectly.
+In this scenario, if the `FirstName` property is accessed before it has been initialized, then the code throws an `InvalidOperationException`, because the API contract has been used incorrectly.
 
 You should consider that some libraries may have special considerations when using backing fields. For example, EF Core may need to be configured to use [backing fields](/ef/core/modeling/backing-field) correctly.
 
@@ -197,7 +197,7 @@ public string LastName { get; set; } = null!;
 public string? VehicleRegistration { get; set; }
 ```
 
-You will never observe an actual null value at runtime except as a result of a programming bug (i.e. by accessing the property before it has been properly initialized).
+You will never observe an actual null value at runtime except as a result of a programming bug, by accessing the property before it has been properly initialized.
 
 ## See also
 

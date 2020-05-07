@@ -147,5 +147,4 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push *.nupkg -s c:\mydir
   ```
 
-  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](//nuget/hosting-packages/local-feeds).
-  
+  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

@@ -54,8 +54,7 @@ The following is the modified customer schema created in the [Building XML Schem
         <xs:element name="LastName" type="tns:LastNameType" />
         <xs:element name="PhoneNumber">           <xs:simpleType>             <xs:restriction base="xs:string">               <xs:pattern value="\d{3}-\d{3}-\d(4)" />             </xs:restriction>           </xs:simpleType>         </xs:element>
       </xs:sequence>
-      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" /
->
+      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:simpleType name="LastNameType">
@@ -118,8 +117,7 @@ The following is the modified customer schema created in the [Building XML Schem
         <xs:element name="FirstName" type="tns:FirstNameComplexType" />
         <xs:element name="LastName" type="tns:LastNameType" />
       </xs:sequence>
-      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" /
->
+      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:simpleType name="LastNameType">

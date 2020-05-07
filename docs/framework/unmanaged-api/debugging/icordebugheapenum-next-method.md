@@ -42,7 +42,7 @@ HRESULT Next(
  The `COR_HEAPOBJECT.type` field is the identifier of a nested reference-counted COM interface. This reference must be released by the caller of `ICorDebugHeapEnum::Next`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

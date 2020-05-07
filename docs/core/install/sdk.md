@@ -3,7 +3,7 @@ title: Install .NET Core SDK on Windows, Linux, and macOS - .NET Core
 description: Learn how to install .NET Core on Windows, Linux, and macOS. Discover the dependencies required to develop .NET Core apps.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 05/04/2020
 ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -53,6 +53,44 @@ export PATH=$PATH:$HOME/dotnet
 You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
 
 Installing with a package manager is only supported on the x64 architecture. If you're installing the .NET Core SDK with a different architecture, such as ARM, follow the [Download and manually install](#download-and-manually-install) instructions below. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
+
+## Install with Snap
+
+[.NET Core SDK is available from the Snap Store.](https://snapcraft.io/dotnet-sdk)
+
+A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
+
+Only supported versions of .NET Core are available through Snap. Use the following command to install.
+
+- Install the latest stable release of .NET Core SDK.
+
+  ```bash
+  sudo snap install dotnet-sdk
+  ```
+
+- Install version 3.1.
+
+  ```bash
+  sudo snap install dotnet-sdk --channel=3.1
+  ```
+
+- Install version 2.1.
+
+  ```bash
+  sudo snap install dotnet-sdk --channel=2.1
+  ```
+
+- Install .NET 5 preview.
+
+  ```bash
+  sudo snap install dotnet-sdk --channel=5.0/beta
+  ```
+
+After snap has installed .NET Core SDK, enable the `dotnet` command with the `snap alias` command.
+
+```bash
+sudo snap alias dotnet-sdk.dotnet dotnet
+```
 
 ## Download and manually install
 

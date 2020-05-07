@@ -33,9 +33,9 @@ For the best compatibility, choose a long-term release (LTS) version.
 
 Depending on which version of Ubuntu you're using, these commands are slightly different. The changes are usually to URI paths the command uses. You'll want to modify them to match your version of Ubuntu. These changes are called out with placeholders.
 
-The version of .NET Core in this article is `3.1`. You can replace `3.1` with a different version, such as `2.1` or even an unsupported version like `3.0`. If the command fails, it generally means that version isn't available for your Ubuntu version. If you need an unsupported version, you can try other ways to install such as [Snap](#snap).
+The version of .NET Core in this article is `3.1`. You can replace `3.1` with a different version, such as `2.1` or even an unsupported version like `3.0`. If the command fails, it generally means that version isn't available for your Ubuntu version. If you need an unsupported version, you can try other ways to install such as [Snap](runtime.md#install-with-snap).
 
-The version of Ubuntu used in this article is `19.10`. You can change the feed URIs used here to a supported version such as `16.04`, or `20.04`. You can try to use an unsupported version, such as `17.04` but you're not guaranteed that it will work. If you need an unsupported version, you can try other ways to install such as [Snap](#snap).
+The version of Ubuntu used in this article is `19.10`. You can change the feed URIs used here to a supported version such as `16.04`, or `20.04`. You can try to use an unsupported version, such as `17.04` but you're not guaranteed that it will work. If you need an unsupported version, you can try other ways to install such as [Snap](runtime.md#install-with-snap).
 
 ## Add Microsoft repository key and feed
 

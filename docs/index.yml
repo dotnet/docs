@@ -109,7 +109,7 @@ conceptualContent:
         - url: core/sdk.md
           itemType: download
           text: Download the .NET Core SDK
-        - url: https://dotnet.microsoft.com/download
+        - url: core/tools/index.md
           itemType: overview
           text: .NET Core CLI overview
         - url: core/porting/index.md
@@ -255,8 +255,8 @@ additionalContent:
           - url: https://www.nuget.org/packages/System.Device.Gpio
             text: System.Device.Gpio NuGet package
 
-    - title: API reference sections # < 60 chars (optional)
-      summary: Search the .NET API reference documentation, scoped to your interest. # < 160 chars (optional)
+    - title: API and language reference # < 60 chars (optional)
+      summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
       items:
         # Card
       - title: ".NET Core API reference"
@@ -291,4 +291,4 @@ additionalContent:
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md)."
+  footer: "Contribute to .NET docs. Read our [contributor guide](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute)."

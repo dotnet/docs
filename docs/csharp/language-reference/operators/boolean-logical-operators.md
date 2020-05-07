@@ -151,7 +151,8 @@ The `&`, `|`, and `^` operators support compound assignment, as the following ex
 
 [!code-csharp-interactive[compound assignment](snippets/BooleanLogicalOperators.cs#CompoundAssignment)]
 
-The conditional logical operators `&&` and `||` don't support compound assignment.
+> [!NOTE]
+> The conditional logical operators `&&` and `||` don't support compound assignment.
 
 ## Operator precedence
 

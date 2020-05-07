@@ -30,8 +30,8 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.Extensions.Localization.ResourceManagerWithCultureStringLocalizer>
-- <xref:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer.WithCulture%2A?displayProperty=nameWithType>
+- [ResourceManagerWithCultureStringLocalizer](/dotnet/api/microsoft.extensions.localization.resourcemanagerwithculturestringlocalizer?view=dotnet-plat-ext-3.0)
+- [ResourceManagerStringLocalizer.WithCulture](/dotnet/api/microsoft.extensions.localization.resourcemanagerstringlocalizer.withculture?view=dotnet-plat-ext-3.0)
 
 <!--
 

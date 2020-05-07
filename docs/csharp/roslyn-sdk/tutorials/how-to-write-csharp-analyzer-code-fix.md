@@ -143,7 +143,7 @@ if (localDeclaration.Modifiers.Any(SyntaxKind.ConstKeyword))
 
 Finally, you need to check that the variable could be `const`. That means making sure it is never assigned after it is initialized.
 
-You'll perform some semantic analysis using the <xref:Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>. You use the `context` argument to determine whether the local variable declaration can be made `const`. A <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> represents of all semantic information in a single source file. You can learn more in the article that covers [semantic models](../work-with-semantics.md). You'll use the <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> to perform data flow analysis on the local declaration statement. Then, you use the results of this data flow analysis to ensure that the local variable isn't written with a new value anywhere else. Call the <xref:Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol%2A> extension method to retrieve the <xref:Microsoft.CodeAnalysis.ILocalSymbol> for the variable and check that it isn't contained with the <xref:Microsoft.CodeAnalysis.DataFlowAnalysis.WrittenOutside%2A?displayProperty=nameWithType> collection of the data flow analysis. Add the following code to the end of the `AnalyzeNode` method:
+You'll perform some semantic analysis using the <xref:Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>. You use the `context` argument to determine whether the local variable declaration can be made `const`. A <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> represents all of semantic information in a single source file. You can learn more in the article that covers [semantic models](../work-with-semantics.md). You'll use the <xref:Microsoft.CodeAnalysis.SemanticModel?displayProperty=nameWithType> to perform data flow analysis on the local declaration statement. Then, you use the results of this data flow analysis to ensure that the local variable isn't written with a new value anywhere else. Call the <xref:Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol%2A> extension method to retrieve the <xref:Microsoft.CodeAnalysis.ILocalSymbol> for the variable and check that it isn't contained with the <xref:Microsoft.CodeAnalysis.DataFlowAnalysis.WrittenOutside%2A?displayProperty=nameWithType> collection of the data flow analysis. Add the following code to the end of the `AnalyzeNode` method:
 
 ```csharp
 // Perform data flow analysis on the local declaration.
@@ -260,7 +260,7 @@ Open the **MakeConstUnitTests.cs** file in the unit test project. The template c
 
 The code for almost every test for your analyzer follows one of these two patterns. For the first step, you can rework these tests as data driven tests. Then, it will be easy to create new tests by adding new string constants to represent different test inputs.
 
-For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While your refactoring, rename both methods to better names. Replace `TestMethod1` with this test that ensures no diagnostic is raised:
+For efficiency, the first step is to refactor the two tests into data driven tests. Then, you only need to define a couple string constants for each new test. While you are refactoring, rename both methods to better names. Replace `TestMethod1` with this test that ensures no diagnostic is raised:
 
 ```csharp
 [DataTestMethod]

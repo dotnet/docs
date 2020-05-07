@@ -114,7 +114,7 @@ For a class library that you implemented, you shouldn't use extension methods to
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Parallel Programming Samples (these include many example extension methods)](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+- [Parallel Programming Samples (these include many example extension methods)](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)
 - [Lambda Expressions](../statements-expressions-operators/lambda-expressions.md)
 - [Standard Query Operators Overview](../concepts/linq/standard-query-operators-overview.md)
 - [Conversion rules for Instance parameters and their impact](https://docs.microsoft.com/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)

@@ -34,6 +34,8 @@ Additionally, the *\*.deps.json* files for any referenced frameworks are similar
 
 Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.
 
+The `APP_PATHS` and `APP_NI_PATHS` properties are not populated by default and are omitted for most applications.
+
 ### How do I see the probing properties from managed code?
 
 Each property is available by calling the <xref:System.AppContext.GetData(System.String)?displayProperty=nameWithType> function with the property name from the table above.

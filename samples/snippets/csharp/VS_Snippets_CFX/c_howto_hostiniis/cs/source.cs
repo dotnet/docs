@@ -43,14 +43,6 @@ namespace Microsoft.ServiceModel.Samples
         return n1 / n2;
      }
   }
-
     //</snippet12>
-//</snippet1>
-
-    public class Test
-    {
-        public static void Main()
-        {
-        }
-    }
 }
+//</snippet1>

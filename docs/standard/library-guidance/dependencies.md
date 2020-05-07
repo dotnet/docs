@@ -34,7 +34,7 @@ A package reference specifies the range of valid packages it allows. Typically, 
 <PackageReference Include="ExamplePackage" Version="1.0" />
 ```
 
-The rules that NuGet uses when resolving dependencies are [complex](/nuget/consume-packages/dependency-resolution), but NuGet always looks for the lowest applicable version. NuGet prefers the lowest applicable version over using the highest available because the lowest will have the least compatibility issues.
+The rules that NuGet uses when resolving dependencies are [complex](/nuget/consume-packages/dependency-resolution), but NuGet [by default](/nuget/consume-packages/install-use-packages-visual-studio#install-and-update-options) looks for the lowest applicable version. NuGet prefers the lowest applicable version over using the highest available because the lowest will have the least compatibility issues.
 
 Because of NuGet's lowest applicable version rule, it isn't necessary to place an upper version or exact range on package references to avoid getting the latest version. NuGet already tries to find the lowest, most compatible version for you.
 

@@ -219,7 +219,7 @@ Console.WriteLine(navigator.OuterXml);
 ```xml  
 <root xmlns:a="http://www.contoso.com">  
     <parent a:parent-id="1234" xmlns:a="http://www.contoso.com/parent-id">  
-        <a:child xmlns:a="http://www.contoso.com/">  
+        <a:child xmlns:a="http://www.contoso.com/" />  
     </parent>  
 </root>  
 ```  

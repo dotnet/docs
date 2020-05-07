@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow Conceptual Overview"
+description: These resources discuss the larger concepts behind Windows Workflow Foundation, including an overview, fundamental concepts, and architecture.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], concepts"

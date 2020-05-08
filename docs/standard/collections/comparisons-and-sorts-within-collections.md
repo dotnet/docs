@@ -13,8 +13,7 @@ helpviewer_keywords:
   - "collections [.NET Framework], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
 ---
-
-# Comparisons and Sorts Within Collections
+# Comparisons and sorts within collections
 
 The <xref:System.Collections> classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.
 
@@ -23,7 +22,7 @@ Collections typically utilize an equality comparer and/or an ordering comparer. 
 <a name="BKMK_Checkingforequality"></a>
 ## Check for equality
 
-Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, than items are compared for equality according to the following guidelines:
+Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, then items are compared for equality according to the following guidelines:
 
 - If type T implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface.
 
@@ -42,7 +41,7 @@ The default comparer relies on at least one of the objects being compared to imp
 
 - If type T implements the non-generic <xref:System.IComparable?displayProperty=nameWithType> interface, then the default comparer is the <xref:System.IComparable.CompareTo%28System.Object%29?displayProperty=nameWithType> method of that interface.
 
-- If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.
+- If type T doesn't implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.
 
 To provide explicit comparisons, some methods accept an **IComparer** implementation as a parameter. For example, the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method accepts an <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation.
 

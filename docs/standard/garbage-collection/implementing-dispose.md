@@ -19,7 +19,7 @@ The pattern for disposing an object, referred to as the [dispose pattern](implem
 
 The dispose pattern has three variations:
 
-1. You implement the <xref:System.IDisposable> interface when a class owns the creation of an `IDisposable` instance member. In this scenario, the implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method calls `.Dispose` on the disposable instance member.
+1. You implement the <xref:System.IDisposable> interface when a class owns the creation of an `IDisposable` instance member. In this scenario, the implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method calls `Dispose` on the disposable instance member. This variation does not require a `Dispose(bool)` overload.
 
 1. You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
 
@@ -38,27 +38,30 @@ The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=n
 <a name="Dispose2"></a>
 ## Dispose() and Dispose(bool)
 
-The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. However, the dispose pattern requires two `Dispose` methods to be implemented:
+The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. However, the last two dispose pattern variants require two `Dispose` methods to be implemented:
 
-- A public non-virtual (`NonInheritable` in Visual Basic) <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation that has no parameters.
+- A `public` non-virtual (`NonInheritable` in Visual Basic) <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation that has no parameters.
 
-- A protected virtual (`Overridable` in Visual Basic) `Dispose` method whose signature is:
+- A `protected virtual` (`Overridable` in Visual Basic) `Dispose` method whose signature is:
 
   [!code-csharp[Conceptual.Disposable#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/dispose1.cs#8)]
   [!code-vb[Conceptual.Disposable#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/dispose1.vb#8)]
 
-### The Dispose() overload
+  > [!NOTE]
+  > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when non-deterministically called.
 
-Because the public, non-virtual (`NonInheritable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run. Because of this, it has a standard implementation:
+### The Dispose() method
+
+Because the `public`, non-virtual (`NonInheritable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run. Because of this, it has a standard implementation:
 
 [!code-csharp[Conceptual.Disposable#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/dispose1.cs#7)]
 [!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/dispose1.vb#7)]
 
-The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override. Therefore, the call to the <xref:System.GC.SuppressFinalize%2A> method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> has no effect. Note that the actual work of releasing unmanaged resources is performed by the second overload of the `Dispose` method.
+The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override. Therefore, the call to the <xref:System.GC.SuppressFinalize%2A> method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> has no effect. Note that the actual work of releasing unmanaged resources is performed by the overload of the `Dispose` method.
 
-### The Dispose(bool) overload
+### The Dispose(bool) method overload
 
-In the second overload, the *disposing* parameter is a <xref:System.Boolean> that indicates whether the method call comes from a <xref:System.IDisposable.Dispose%2A> method (its value is `true`) or from a finalizer (its value is `false`).
+In the overload, the `disposing` parameter is a <xref:System.Boolean> that indicates whether the method call comes from a <xref:System.IDisposable.Dispose%2A> method (its value is `true`) or from a finalizer (its value is `false`).
 
 The body of the method consists of two blocks of code:
 
@@ -70,11 +73,11 @@ The body of the method consists of two blocks of code:
 
   **Managed objects that consume large amounts of memory or consume scarce resources.** Freeing these objects explicitly in the `Dispose` method releases them faster than if they were reclaimed non-deterministically by the garbage collector.
 
-If the method call comes from a finalizer (that is, if *disposing* is `false`), only the code that frees unmanaged resources executes. Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this `Dispose` overload with a value of `false` prevents the finalizer from trying to release managed resources that may have already been reclaimed.
+If the method call comes from a finalizer (that is, if `disposing` is `false`), only the code that frees unmanaged resources executes. Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this `Dispose` overload with a value of `false` prevents the finalizer from trying to release managed resources that may have already been reclaimed.
 
 ## Implementing the dispose pattern
 
-If your class owns a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Meaning a class that is responsible for instantiating an <xref:System.IDisposable> implementation and storing the instance as a class-scope member, is also responsible for its clean up. This is to help ensure that the referenced disposable types are given the opportunity to deterministically perform clean up through the <xref:System.IDisposable.Dispose%2A> method. The class should be `sealed` (or `NotInheritable` in Visual Basic) - for inheritance patterns, see [implementing the dispose pattern for a base class](#implementing-the-dispose-pattern-for-a-base-class).
+If your class owns a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Meaning a class that is responsible for instantiating an <xref:System.IDisposable> implementation and storing it as an instance member, is also responsible for its clean up. This is to help ensure that the referenced disposable types are given the opportunity to perform clean up through the <xref:System.IDisposable.Dispose%2A> method. The class should be `sealed` (or `NotInheritable` in Visual Basic) - for inheritance patterns, see [implementing the dispose pattern for a base class](#implementing-the-dispose-pattern-for-a-base-class).
 
 [!code-csharp[Conceptual.Disposable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/disposable1.cs#1)]
 [!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/disposable1.vb#7)]

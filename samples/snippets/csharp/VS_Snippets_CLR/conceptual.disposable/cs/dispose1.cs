@@ -12,10 +12,8 @@ public class Disposable : IDisposable
    // <Snippet7>
    public void Dispose()
    {
-      // Dispose of unmanaged resources.
-      Dispose(true);
-      // Suppress finalization.
-      GC.SuppressFinalize(this);
+      Dispose(true);             // Dispose of unmanaged resources.
+      GC.SuppressFinalize(this); // Suppress finalization.
    }
    // </Snippet7>
 

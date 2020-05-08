@@ -12,10 +12,8 @@ Public Class Disposable : Implements IDisposable
    ' <Snippet7>
    Public Sub Dispose() _
               Implements IDisposable.Dispose
-      ' Dispose of unmanaged resources.
-      Dispose(True)
-      ' Suppress finalization.
-      GC.SuppressFinalize(Me)
+      Dispose(True)           ' Dispose of unmanaged resources.
+      GC.SuppressFinalize(Me) ' Suppress finalization.
    End Sub
    ' </Snippet7>
 

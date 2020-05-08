@@ -785,7 +785,7 @@ When using the `Utf8JsonReader` to read from a stream, the following rules apply
 
 The following code illustrates how to read from a stream. The code starts with a 10-byte buffer and doubles the buffer size each time it finds that the size is not big enough.
 
-[!code-json[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderPartialRead.cs?name=SnippetReadFromStream)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderPartialRead.cs?name=SnippetReadFromStream)]
 
 ## Additional resources
 

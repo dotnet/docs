@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 04/28/2020
+ms.date: 04/29/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -35,6 +35,7 @@ The following breaking changes are documented on this page:
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [HTTP: DefaultHttpContext extensibility removed](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP: HeaderNames fields changed to static readonly](#http-headernames-constants-changed-to-static-readonly)
+- [HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](#http-httpclient-instances-created-by-ihttpclientfactory-log-integer-status-codes)
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
 - [HTTP: Some cookie SameSite default values changed](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP: Synchronous IO disabled by default](#http-synchronous-io-disabled-in-all-servers)
@@ -48,6 +49,7 @@ The following breaking changes are documented on this page:
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
 - [Localization: APIs marked obsolete](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
+- [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
@@ -81,7 +83,15 @@ The following breaking changes are documented on this page:
 
 ***
 
+[!INCLUDE[HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](~/includes/core-changes/aspnetcore/5.0/http-httpclient-instances-log-integer-status-codes.md)]
+
+***
+
 [!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
+[!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
 
 ***
 

@@ -48,7 +48,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  The interface that is returned provides the facilities for attaching to a CLR in a target process and debugging the managed code that the CLR is running.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

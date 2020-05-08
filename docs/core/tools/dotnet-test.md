@@ -14,7 +14,7 @@ ms.date: 04/29/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet test [<PROJECT> | <SOLUTION>]
+dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
     [-a|--test-adapter-path <PATH_TO_ADAPTER>] [--blame]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_FRIENDLY_NAME>]
@@ -31,11 +31,15 @@ dotnet test -h|--help
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given project. The `dotnet test` command launches the test runner console application specified for a project. The test runner executes the tests defined for a unit test framework (for example, MSTest, NUnit, or xUnit) and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1. For multi-targeted projects, tests are run for each targeted framework. The test runner and the unit test library are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
+
+For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
 Test projects specify the test runner using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
+
+Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. And `xunit.runner.visualstudio` is a test adapter, which allows the xUnit framework to work with the test host.
 
 ### Implicit restore
 
@@ -43,19 +47,24 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 ## Arguments
 
-- **`PROJECT | SOLUTION`**
+- **`PROJECT | SOLUTION | DIRECTORY | DLL`**
 
-  Path to the test project or solution. If not specified, it defaults to current directory.
+  - Path to the test project.
+  - Path to the solution.
+  - Path to a directory that contains a project or a solution.
+  - Path to a test project *.dll* file.
+
+  If not specified, it searches for a project or a solution in the current directory.
 
 ## Options
 
 - **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
 
-  Use the custom test adapters from the specified path in the test run.
+  Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
 
 - **`--blame`**
 
-  Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
+  Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates an sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
 - **`-c|--configuration <CONFIGURATION>`**
 
@@ -67,11 +76,11 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
-  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file.
+  Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Looks for test binaries for a specific [framework](../../standard/frameworks.md).
+  Forces the use of `dotnet` or .NET Framework test host for the test binaries. This option only determines which type of host to use. The actual framework version to be used is determined by the *runtimeconfig.json* of the test project. When not specified, the [TargetFramework assembly attribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) is used to determine the type of host. When that attribute is stripped from the *.dll*, the .NET Framework host is used.
 
 - **`--filter <EXPRESSION>`**
 
@@ -115,7 +124,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-s|--settings <SETTINGS_FILE>`**
 
-  The `.runsettings` file to use for running the tests. Note that the `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. for more information, see the following resources:
+  The `.runsettings` file to use for running the tests. Note that the `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
   - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
@@ -130,7 +139,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`RunSettings`** arguments
 
-  Arguments are passed as `RunSettings` configurations for the test. Arguments are specified as `[name]=[value]` pairs after "-- " (note the space after --). A space is used to separate multiple `[name]=[value]` pairs.
+ Inline `RunSettings` are passed as the last arguments on the command line after "-- " (note the space after --). Inline `RunSettings` are specified as `[name]=[value]` pairs. A space is used to separate multiple `[name]=[value]` pairs.
 
   Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
 
@@ -160,6 +169,12 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   ```dotnetcli
   dotnet test --logger "console;verbosity=detailed"
+  ```
+  
+  - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
+
+  ```dotnetcli
+  dotnet test --blame
   ```
 
 ## Filter option details

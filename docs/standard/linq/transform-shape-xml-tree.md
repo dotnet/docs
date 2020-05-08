@@ -109,7 +109,8 @@ This example produces the following output:
     </FullAddress>
     <Orders />
   </Customer>
-  . . .
+  ...
+</Root>
 ```
 
 ## Example: Create a document whose shape differs from that of the source document

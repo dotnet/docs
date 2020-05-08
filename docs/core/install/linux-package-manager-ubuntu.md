@@ -31,7 +31,7 @@ For the best compatibility, choose a long-term release (LTS) version.
 
 ## APT (Advanced Package Tool)
 
-APT comes with Ubuntu and Microsoft publishes APT-compatable feeds that can be used to install .NET Core. While the examples in section use Ubuntu version `20.04` and .NET Core version `3.1`, you may need to change the versions in the commands below to the correct versions suited for your environment.
+APT comes with Ubuntu and Microsoft publishes APT-compatable feeds that can be used to install .NET Core. While the examples in this section use Ubuntu version `20.04` and .NET Core version `3.1`, you may need to change the versions in the commands below to the correct versions suited for your environment.
 
 ### Add Microsoft repository key and feed
 
@@ -81,7 +81,7 @@ sudo apt-get install dotnet-sdk-3.1
 
 ### Install the runtime
 
-The .NET Core Runtime allows you to run apps that were made with .NET Core but didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
+The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
 
 ```bash
 sudo apt-get update

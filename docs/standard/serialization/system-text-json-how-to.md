@@ -775,6 +775,18 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 
 [!code-json[](~/samples/snippets/core/system-text-json/csharp/Universities.json)]
 
+### Read from a stream using Utf8JsonReader
+
+When using the `Utf8JsonReader` to read from a stream, the following rules apply:
+
+* The buffer must be at least as big as the largest token.
+* The buffer must be at least as big as the largest whitespace.
+* The reader doesn't keep track of the data it has read until it completely reads the next <xref:System.Text.Json.Utf8JsonReader.TokenType%2A> in the JSON payload. So when there are bytes left over in the buffer, you have to pass them to the reader again. You can use <xref:System.Text.Json.Utf8JsonReader.BytesConsumed%2A> to determine how much bytes are left over.
+
+The following code illustrates how to read from a stream. The code starts with a 10-byte buffer and doubles the buffer size each time it finds that the size is not big enough.
+
+[!code-json[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderPartialRead.cs)]
+
 ## Additional resources
 
 * [System.Text.Json overview](system-text-json-overview.md)

@@ -31,13 +31,13 @@ For more information, see [Install .NET Core with a package manager on Ubuntu](l
 
 ### Unsupported releases
 
-The following table is a list of .NET Core versions no longer supported and the last Ubuntu release they were supported with:
+The following table is a list of .NET Core versions no longer supported and the Ubuntu LTS releases they were supported with:
 
-| .NET Core | Ubuntu Version             |
-|-----------|----------------------------|
-| 3.0       | 16.04, 18.04, 18.10, 19.10 |
-| 2.2       | 16.04, 18.04, 18.10        |
-| 2.0       | 14.04, 16.04, 18.04        |
+| .NET Core | Ubuntu version (LTS) |
+|-----------|----------------------|
+| 3.0       | 16.04, 18.04         |
+| 2.2       | 16.04, 18.04         |
+| 2.0       | 14.04, 16.04, 18.04  |
 
 ## CentOS
 

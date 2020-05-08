@@ -13,25 +13,28 @@ ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 
 # Implementing a Dispose method
 
-You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application. The .NET garbage collector does not allocate or release unmanaged memory.
+You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application or to call `Dispose` on references to contained members that implement <xref:System.IDisposable>. The .NET garbage collector does not allocate or release unmanaged memory.
 
-The pattern for disposing an object, referred to as the [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
+The pattern for disposing an object, referred to as the [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources or objects that implement the <xref:System.IDisposable> interface, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
 
 The dispose pattern has two variations:
 
-- You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>). In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(Boolean)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
+- You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
 
   > [!NOTE]
   > The <xref:Microsoft.Win32.SafeHandles?displayProperty=nameWithType> namespace provides a set of classes derived from <xref:System.Runtime.InteropServices.SafeHandle>, which are listed in the [Using safe handles](#SafeHandles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <xref:System.Runtime.InteropServices.SafeHandle>.
 
-- You implement the <xref:System.IDisposable> interface and an additional `Dispose(Boolean)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer of your type. If you use the recommended technique discussed in the previous bullet, the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class does this on your behalf.
+- Alternatively, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer.
 
-To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be callable multiple times without throwing an exception.
+    > [!TIP]
+    > If you use the recommended technique discussed in the previous bullet, the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class does this on your behalf.
+
+To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be idempotent, such that it is callable multiple times without throwing an exception.
 
 The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> method shows how garbage collection can cause a finalizer to run, while an unmanaged reference to the object or its members is still in use. It may make sense to utilize <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> to make the object ineligible for garbage collection from the start of the current routine to the point where this method is called.
 
 <a name="Dispose2"></a>
-## Dispose() and Dispose(Boolean)
+## Dispose() and Dispose(bool)
 
 The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. However, the dispose pattern requires two `Dispose` methods to be implemented:
 
@@ -51,7 +54,7 @@ Because the public, non-virtual (`NonInheritable` in Visual Basic), parameterles
 
 The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override. Therefore, the call to the <xref:System.GC.SuppressFinalize%2A> method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> has no effect. Note that the actual work of releasing unmanaged resources is performed by the second overload of the `Dispose` method.
 
-### The Dispose(Boolean) overload
+### The Dispose(bool) overload
 
 In the second overload, the *disposing* parameter is a <xref:System.Boolean> that indicates whether the method call comes from a <xref:System.IDisposable.Dispose%2A> method (its value is `true`) or from a finalizer (its value is `false`).
 
@@ -67,6 +70,13 @@ The body of the method consists of two blocks of code:
 
 If the method call comes from a finalizer (that is, if *disposing* is `false`), only the code that frees unmanaged resources executes. Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this `Dispose` overload with a value of `false` prevents the finalizer from trying to release managed resources that may have already been reclaimed.
 
+## Implementing the dispose pattern
+
+If your class contains a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. This is to help ensure that the referenced disposable types are given the opportunity to deterministically perform clean up through the <xref:System.IDisposable.Dispose%2A> method.
+
+[!code-csharp[Conceptual.Disposable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/disposable1.cs#1)]
+[!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/dispose1.vb#7)]
+
 ## Implementing the dispose pattern for a base class
 
 If you implement the dispose pattern for a base class, you must provide the following:
@@ -74,9 +84,9 @@ If you implement the dispose pattern for a base class, you must provide the foll
 > [!IMPORTANT]
 > You should implement this pattern for all base classes that implement <xref:System.IDisposable.Dispose> and are not `sealed` (`NotInheritable` in Visual Basic).
 
-- A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(Boolean)` method.
+- A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(bool)` method.
 
-- A `Dispose(Boolean)` method that performs the actual work of releasing resources.
+- A `Dispose(bool)` method that performs the actual work of releasing resources.
 
 - Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one.
 
@@ -100,9 +110,9 @@ Here's the general pattern for implementing the dispose pattern for a base class
 
 A derived class from an <xref:System.IDisposable> implementation should not implement <xref:System.IDisposable> itself, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:
 
-- A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(Boolean)` method of the base class and pass its disposing status for the argument.
+- A `protected Dispose(bool)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(bool)` method of the base class and pass its disposing status for the argument.
 
-- Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(Boolean)` overload with a *disposing* argument of `false`.
+- Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(bool)` overload with a *disposing* argument of `false`.
 
 Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:
 

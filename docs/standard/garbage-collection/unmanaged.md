@@ -28,16 +28,12 @@ If your types use unmanaged resources, you should do the following:
 
     —**or**—
 
-  - Override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> to dispose of them deterministically. Overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> is achieved by providing a [deconstructor](../../csharp/deconstruct.md).
+  - Override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> to dispose of them deterministically. Overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> is achieved by providing a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md).
 
   > [!WARNING]
   > However, because object finalization can be a complex and an error-prone operation, we recommend that you use a safe handle instead of providing your own finalizer.
 
 Consumers of your type can then call your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation directly to free memory used by unmanaged resources. When you properly implement a <xref:System.IDisposable.Dispose%2A> method, either your safe handle's <xref:System.Object.Finalize%2A> method or your own override of the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method becomes a safeguard to clean up resources in the event that the <xref:System.IDisposable.Dispose%2A> method is not called.
-
-### Concerns of non-deterministic finalizers
-
-Object finalizers are non-deterministic, meaning that we cannot predict when they will occur. Due to the non-deterministic nature, it is possible to encounter fatal application errors that cannot be handled. Imagine two classes, `class A` (A) and `class B` (B). 
 
 ## In this section
 

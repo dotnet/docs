@@ -39,7 +39,7 @@ HRESULT EnumerateGCReferences(
  This method provides a way to determine the full rooting chain for any managed object in a process and can be used to determine why an object is still alive.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

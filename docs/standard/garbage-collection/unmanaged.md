@@ -1,6 +1,6 @@
 ---
 title: "Cleaning up unmanaged resources"
-ms.date: 05/06/2020
+ms.date: 05/08/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Close method"
@@ -16,15 +16,15 @@ ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
 
 # Cleaning up unmanaged resources
 
-For the majority of the objects that your app creates, you can rely on the [.NET garbage collector](index.md) to handle memory management. However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them in your app. The most common types of unmanaged resource are objects that wrap operating system resources, such as files, windows, network connections, or database connections. Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.
+For the majority of the objects that your app creates, you can rely on the [.NET garbage collector](index.md) to handle memory management. However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them in your app. The most common types of unmanaged resources are objects that wrap operating system resources, such as files, windows, network connections, or database connections. Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.
 
 If your types use unmanaged resources, you should do the following:
 
-- Implement the [dispose pattern](implementing-dispose.md). This requires that you provide an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to enable the deterministic release of  unmanaged resources. A consumer of your type calls <xref:System.IDisposable.Dispose%2A> when the object (and the resources it uses) is no longer needed. The <xref:System.IDisposable.Dispose%2A> method immediately releases the unmanaged resources.
+- Implement the [dispose pattern](implementing-dispose.md). This requires that you provide an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to enable the deterministic release of unmanaged resources. A consumer of your type calls <xref:System.IDisposable.Dispose%2A> when the object (and the resources it uses) are no longer needed. The <xref:System.IDisposable.Dispose%2A> method immediately releases the unmanaged resources.
 
 - In the event that a consumer of your type forgets to call <xref:System.IDisposable.Dispose%2A>, provide a way for your unmanaged resources to be released. There are two ways to do this:
 
-  - Use a safe handle to wrap your unmanaged resource. This is the recommended technique. Safe handles are derived from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class and include a robust <xref:System.Object.Finalize%2A> method. When you use a safe handle, you simply implement the <xref:System.IDisposable> interface and call your safe handle's <xref:System.Runtime.InteropServices.SafeHandle.Dispose%2A> method in your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation. The safe handle's finalizer is called automatically by the garbage collector if its <xref:System.IDisposable.Dispose%2A> method is not called.
+  - Use a safe handle to wrap your unmanaged resource. This is the recommended technique. Safe handles are derived from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> abstract class and include a robust <xref:System.Object.Finalize%2A> method. When you use a safe handle, you simply implement the <xref:System.IDisposable> interface and call your safe handle's <xref:System.Runtime.InteropServices.SafeHandle.Dispose%2A> method in your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation. The safe handle's finalizer is called automatically by the garbage collector if its <xref:System.IDisposable.Dispose%2A> method is not called.
 
     —**or**—
 

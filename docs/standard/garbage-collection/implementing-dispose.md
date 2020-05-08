@@ -1,6 +1,6 @@
 ---
 title: "Implementing a Dispose method"
-ms.date: 05/05/2020
+ms.date: 05/08/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -13,18 +13,20 @@ ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 
 # Implementing a Dispose method
 
-You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application or to call `Dispose` on references to contained members that implement <xref:System.IDisposable>. The .NET garbage collector does not allocate or release unmanaged memory.
+You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application or to call `Dispose` on references to containing members that implement <xref:System.IDisposable>. The .NET garbage collector does not allocate or release unmanaged memory.
 
 The pattern for disposing an object, referred to as the [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources or objects that implement the <xref:System.IDisposable> interface, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
 
-The dispose pattern has two variations:
+The dispose pattern has three variations:
 
-- You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
+1. You implement the <xref:System.IDisposable> interface when a class owns the creation of an `IDisposable` instance member. In this scenario, the implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method calls `.Dispose` on the disposable instance member.
+
+1. You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
 
   > [!NOTE]
   > The <xref:Microsoft.Win32.SafeHandles?displayProperty=nameWithType> namespace provides a set of classes derived from <xref:System.Runtime.InteropServices.SafeHandle>, which are listed in the [Using safe handles](#SafeHandles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <xref:System.Runtime.InteropServices.SafeHandle>.
 
-- Alternatively, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer.
+1. You implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer.
 
     > [!TIP]
     > If you use the recommended technique discussed in the previous bullet, the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class does this on your behalf.

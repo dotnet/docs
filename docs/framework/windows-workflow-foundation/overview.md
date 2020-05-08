@@ -1,6 +1,6 @@
 ---
 title: "Windows Workflow Overview"
-description: This article describes Workflow Foundation workflows, which are sets of units called activities stored as a models that describes a real-world processes.
+description: This article describes Workflow Foundation workflows, which are sets of units called activities stored as models that describes a real-world processes.
 ms.date: "03/30/2017"
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
 ---

@@ -53,6 +53,9 @@ conceptualContent:
         - url: core/index.yml
           itemType: overview
           text: .NET Core overview
+        - url: core/index.yml
+          itemType: overview
+          text: .NET Core overview
 
 tools:
   title: Programming languages # < 60 chars (optional)
@@ -64,5 +67,5 @@ tools:
       url: csharp/index.yml
     # Card
     - title: "A functional programming language for .NET"
-      imageSrc: media/doesntexist/logo_Fsharp.svg
+      imageSrc: images/doesntexist/logo_Fsharp.svg
       url: fsharp/index.yml

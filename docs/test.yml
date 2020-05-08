@@ -13,6 +13,17 @@ metadata:
   author: BillWagner
   ms.author: wiwagn
   ms.date: 04/21/2020
+  
+	  aside:
+	    image:
+	      alt: 
+	      height: 112
+	      src: media/index/video-thumb-get-started.png
+	      width: 200  
+	    title: Lock down access to Azure (1:16)
+	    href: https://www.youtube.com/embed/FKBoWWKRnvI
+	    width: 200
+
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -56,16 +67,3 @@ conceptualContent:
         - url: core/index.yml
           itemType: overview
           text: .NET Core overview
-
-tools:
-  title: Programming languages # < 60 chars (optional)
-  summary: "You can write .NET apps in C#, F#, or Visual Basic."
-  items:
-    # Card
-    - title: "A modern, object-oriented, type-safe member of the C family"
-      imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      url: csharp/index.yml
-    # Card
-    - title: "A functional programming language for .NET"
-      imageSrc: images/doesntexist/logo_Fsharp.svg
-      url: fsharp/index.yml

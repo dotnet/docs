@@ -75,7 +75,7 @@ If the method call comes from a finalizer (that is, if *disposing* is `false`), 
 If your class contains a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. This is to help ensure that the referenced disposable types are given the opportunity to deterministically perform clean up through the <xref:System.IDisposable.Dispose%2A> method.
 
 [!code-csharp[Conceptual.Disposable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/disposable1.cs#1)]
-[!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/dispose1.vb#7)]
+[!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/disposable1.vb#7)]
 
 ## Implementing the dispose pattern for a base class
 

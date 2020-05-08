@@ -35,7 +35,7 @@ Dim e As XElement = XElement.Load(r)
 Console.WriteLine(e)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Catalog>

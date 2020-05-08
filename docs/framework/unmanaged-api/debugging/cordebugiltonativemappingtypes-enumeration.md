@@ -37,7 +37,7 @@ typedef enum CorDebugIlToNativeMappingTypes {
 |`EPILOG`|The range of native instructions corresponds to the epilog.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

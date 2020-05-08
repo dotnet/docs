@@ -29,7 +29,7 @@ Dim str As String = root.@Attr
 Console.WriteLine(str)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <Root Attr="abcde" />
@@ -61,7 +61,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 abcde

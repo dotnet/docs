@@ -40,7 +40,7 @@ For Each att As XAttribute In listOfAttributes
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 ID="1243"

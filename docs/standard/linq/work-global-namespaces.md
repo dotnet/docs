@@ -38,7 +38,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com" />
@@ -59,7 +59,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Root xmlns:aw="http://www.adventure-works.com" />
@@ -77,7 +77,7 @@ Dim root As XElement = _
 Console.WriteLine(root)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com">
@@ -97,7 +97,7 @@ Dim root As XElement = _
 Console.WriteLine(root)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com">
@@ -120,7 +120,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root xmlns="http://www.adventure-works.com">
@@ -200,7 +200,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```console
 http://www.adventure-works.com

@@ -65,7 +65,7 @@ XElement n = new XElement("Customer", "Adventure Works");
 Console.WriteLine(n);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Customer>Adventure Works</Customer>
@@ -78,7 +78,7 @@ XElement n = new XElement("Cost", 324.50);
 Console.WriteLine(n);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Cost>324.5</Cost>
@@ -97,7 +97,7 @@ XElement shippingUnit = new XElement("ShippingUnit",
 Console.WriteLine(shippingUnit);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <ShippingUnit>
@@ -119,7 +119,7 @@ XElement address = new XElement("Address",
 Console.WriteLine(address);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Address>
@@ -149,7 +149,7 @@ XElement contacts =
 Console.WriteLine(contacts);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Contacts>
@@ -177,7 +177,7 @@ XElement phone = new XElement("Phone",
 Console.WriteLine(phone);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Phone Type="Home">555-555-5555</Phone>
@@ -192,7 +192,7 @@ XElement n = new XElement("Customer");
 Console.WriteLine(n);
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Customer />
@@ -229,7 +229,7 @@ Console.WriteLine("Child2 was {0}",
     child2 == xmlTree2.Element("Child2") ?
     "attached" : "cloned");
 
-// The example produces this output:
+// This example produces the following output:
 //    Child1 was cloned
 //    Child2 was attached
 ```

@@ -40,7 +40,7 @@ Dim phone As XElement = <Phone Type="Home">555-555-5555</Phone>
 Console.WriteLine(phone)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Phone Type="Home">555-555-5555</Phone>
@@ -81,7 +81,7 @@ Dim c As XElement = _
 Console.WriteLine(c)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Customers>

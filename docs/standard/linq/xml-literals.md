@@ -38,7 +38,7 @@ Dim n as XElement = <Customer>Adventure Works</Customer>
 Console.WriteLine(n)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Customer>Adventure Works</Customer>
@@ -53,7 +53,7 @@ Dim n As XElement = <Customer/>
 Console.WriteLine(n)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Customer />
@@ -83,7 +83,7 @@ Dim xmlTree2 As XElement = _
 Console.WriteLine(xmlTree2)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>
@@ -102,7 +102,7 @@ Dim root As XElement = <Root><%= str %></Root>
 Console.WriteLine(root)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>Some content</Root>
@@ -123,7 +123,7 @@ Dim n As XElement = _
 Console.WriteLine(n)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>
@@ -151,7 +151,7 @@ Dim n As XElement = _
 Console.WriteLine(n)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root att="aValue">
@@ -193,7 +193,7 @@ Console.WriteLine("Child2 was {0}", _
     "attached", "cloned"))
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```console
 Child1 was cloned

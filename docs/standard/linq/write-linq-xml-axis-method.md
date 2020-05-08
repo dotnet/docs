@@ -68,7 +68,7 @@ public static class MyExtensions
             XElement el = xobj as XElement;
             if (el != null)
                 return "/" + NameWithPredicate(el);
-            // the XPath data model does not include white space text nodes
+            // The XPath data model doesn't include white space text nodes
             // that are children of a document, so this method returns null.
             XText xt = xobj as XText;
             if (xt != null)
@@ -349,7 +349,7 @@ Public Module MyExtensions
             Dim el = TryCast(xobj, XElement)
             If el IsNot Nothing Then Return "/" + NameWithPredicate(el)
 
-            ' the XPath data model does not include white space text nodes
+            ' The XPath data model doesn't include white space text nodes
             ' that are children of a document, so this method returns null.
 
             Dim xt = TryCast(xobj, XText)
@@ -463,7 +463,7 @@ Public Module MyExtensions
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate

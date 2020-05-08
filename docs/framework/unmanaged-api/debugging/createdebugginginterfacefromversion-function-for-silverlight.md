@@ -39,7 +39,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  Either `szDebuggeeVersion` or `ppCordb` is null.  
   
  `CORDBG_E_DEBUG_COMPONENT_MISSING`\
- A component that is necessary for CLR debugging cannot be located. Either mscordbi.dll or mscordaccore.dll was not found in the same directory as the target CoreCLR.dll.  
+ A component that is necessary for CLR debugging cannot be located. Either _mscordbi.dll_ or _mscordaccore.dll_ was not found in the same directory as the target CoreCLR.dll.  
   
  `CORDBG_E_INCOMPATIBLE_PROTOCOL`\
  Either mscordbi.dll or mscordaccore.dll is not the same version as the target CoreCLR.dll.  

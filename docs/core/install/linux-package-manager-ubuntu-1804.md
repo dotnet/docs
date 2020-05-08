@@ -46,21 +46,6 @@ sudo apt-get install dotnet-sdk-3.1
 > [!IMPORTANT]
 > If you receive an error message similar to **Unable to locate package dotnet-sdk-3.1**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
 
-## Install the ASP.NET Core runtime
-
-Update the products available for installation, then install the ASP.NET Core runtime. In your terminal, run the following commands.
-
-```bash
-sudo add-apt-repository universe
-sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install aspnetcore-runtime-3.1
-```
-
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-3.1**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
-
 ## Install the .NET Core runtime
 
 Update the products available for installation, then install the .NET Core runtime. In your terminal, run the following commands.

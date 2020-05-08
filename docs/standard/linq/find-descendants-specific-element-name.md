@@ -1,13 +1,13 @@
 ---
 title: How to find descendants with a specific element name - LINQ to XML
-description: To find all descendants that have a specific name, it is easier to use XContainer.Descendants than to iterate through all the descendants.
+description: To find all descendants that have a specific name, it's easier to use XContainer.Descendants than to iterate through all the descendants.
 ms.date: 07/20/2015
 ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
 ---
 
 # How to find descendants with a specific element name (LINQ to XML)
 
-Sometimes you want to find all descendants with a specific name. You could write code to iterate through all of the descendants, but it is easier to use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.
+Sometimes you want to find all descendants with a specific name. You could write code to iterate through all of the descendants, but it's easier to use the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.
 
 ## Example: Find descendants with a specific element name
 

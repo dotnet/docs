@@ -3,9 +3,9 @@ public sealed class Foo : IDisposable
 {
     readonly IDisposable _bar;
 
-    public Foo(IDisposable bar)
+    public Foo()
     {
-        _bar = bar;
+        _bar = new Bar();
     }
 
     void IDisposable.Dispose()

@@ -2,8 +2,8 @@
 Public NotInheritable Class Foo : Implements IDisposable
     Private ReadOnly _bar As IDisposable
 
-    Public Sub New(ByVal bar As IDisposable)
-        _bar = bar
+    Public Sub New()
+        _bar = New Bar()
     End Sub
 
     Private Sub IDisposable_Dispose() Implements IDisposable.Dispose

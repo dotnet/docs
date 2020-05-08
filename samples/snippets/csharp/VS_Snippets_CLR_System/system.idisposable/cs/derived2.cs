@@ -6,6 +6,8 @@ class DerivedClass : BaseClass
     // To detect redundant calls
     bool _disposed = false;
 
+    ~DerivedClass() => Dispose(false);
+
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)
     {
@@ -26,8 +28,6 @@ class DerivedClass : BaseClass
         // Call the base class implementation.
         base.Dispose(disposing);
     }
-
-    ~DerivedClass() => Dispose(false);
 }
 // </Snippet6>
 
@@ -35,6 +35,8 @@ class BaseClass : IDisposable
 {
     // Flag: Has Dispose already been called?
     bool _disposed = false;
+
+    ~BaseClass() => Dispose(false);
 
     // Public implementation of Dispose pattern callable by consumers.
     public void Dispose()
@@ -59,6 +61,4 @@ class BaseClass : IDisposable
         // Free any unmanaged objects here.
         _disposed = true;
     }
-
-    ~BaseClass() => Dispose(false);
 }

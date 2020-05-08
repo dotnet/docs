@@ -6,6 +6,8 @@ class BaseClass : IDisposable
     // To detect redundant calls
     bool _disposed = false;
 
+    ~BaseClass() => Dispose(false);
+
     // Public implementation of Dispose pattern callable by consumers.
     public void Dispose()
     {
@@ -31,7 +33,5 @@ class BaseClass : IDisposable
 
         _disposed = true;
     }
-
-    ~BaseClass() => Dispose(false);
 }
 // </Snippet5>

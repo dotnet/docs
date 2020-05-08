@@ -39,13 +39,7 @@ class BaseClass : IDisposable
     bool _disposed = false;
 
     // Public implementation of Dispose pattern callable by consumers.
-    public void Dispose()
-    {
-        // Do not change this code. Put cleanup code in Dispose(bool disposing) below.
-        Dispose(true);
-        // TODO: uncomment the following line if the finalizer is overridden.
-        // GC.SuppressFinalize(this);
-    }
+    public void Dispose() => Dispose(true);
 
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)

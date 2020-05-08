@@ -115,9 +115,9 @@ Here's the general pattern for implementing the dispose pattern for a base class
 
 A derived class from an <xref:System.IDisposable> implementation should not implement <xref:System.IDisposable> itself, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:
 
-- A `protected Dispose(bool)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(bool)` method of the base class and pass its disposing status for the argument.
+- A `protected override void Dispose(bool)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(bool)` method of the base class and pass its disposing status for the argument.
 
-- Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(bool)` overload with a *disposing* argument of `false`.
+- Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer that frees you from having to code one. If you do provide a finalizer, it should call the `Dispose(bool)` overload with a `disposing` argument of `false`.
 
 Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:
 
@@ -133,7 +133,7 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 [!code-vb[System.IDisposable#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived2.vb#6)]
 
 > [!NOTE]
-> In C#, you override <xref:System.Object.Finalize%2A?displayProperty=nameWithType> by defining a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md).
+> In C#, you override <xref:System.Object.Finalize%2A?displayProperty=nameWithType> by defining a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md). In VB, this is done with `Protected Overrides Sub Finalize()`.
 
 <a name="SafeHandles"></a>
 ## Using safe handles

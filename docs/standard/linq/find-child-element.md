@@ -57,7 +57,7 @@ End If
 Console.WriteLine(el1)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Results are identical

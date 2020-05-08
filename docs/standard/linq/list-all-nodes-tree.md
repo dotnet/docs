@@ -491,7 +491,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>

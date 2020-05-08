@@ -61,7 +61,7 @@ For Each el As XElement In list1
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Results are identical

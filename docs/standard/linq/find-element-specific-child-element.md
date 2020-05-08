@@ -37,7 +37,7 @@ For Each el as XElement In tests
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 0002
@@ -80,7 +80,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 0002

@@ -76,7 +76,7 @@ Dim newCustOrd = _
 Console.WriteLine(newCustOrd)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>
@@ -178,7 +178,7 @@ Sub Main()
 End Sub
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <PO>

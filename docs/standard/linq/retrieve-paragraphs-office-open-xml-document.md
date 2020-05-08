@@ -310,7 +310,7 @@ StyleName:Code >        Console.WriteLine("Hello World");<
 StyleName:Code >    }<
 StyleName:Code >}<
 StyleName:Normal ><
-StyleName:Normal >The example produces this output:<
+StyleName:Normal >This example produces the following output:<
 StyleName:Normal ><
 StyleName:Code >Hello World<
 ```

@@ -80,7 +80,7 @@ Dim cust As XElement = _
 Console.WriteLine(cust)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>

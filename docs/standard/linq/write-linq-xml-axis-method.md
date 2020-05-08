@@ -463,7 +463,7 @@ Public Module MyExtensions
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate

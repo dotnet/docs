@@ -45,7 +45,7 @@ For Each e As XElement In elList
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 home
@@ -85,7 +85,7 @@ For Each el As XElement In elList
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 home
@@ -135,7 +135,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 home

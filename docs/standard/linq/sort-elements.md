@@ -39,7 +39,7 @@ For Each el As Decimal In prices
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 0.99
@@ -87,7 +87,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 0.99

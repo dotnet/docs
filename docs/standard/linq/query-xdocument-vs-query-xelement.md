@@ -57,7 +57,7 @@ For Each e As XElement In childList
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Querying tree loaded with XElement.Load
@@ -108,7 +108,7 @@ For Each e As XElement In childList
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Querying tree loaded with XDocument.Load
@@ -163,7 +163,7 @@ Next
 
 This query now performs in the same way as the query on the tree rooted in <xref:System.Xml.Linq.XElement>.
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Querying tree loaded with XDocument.Load

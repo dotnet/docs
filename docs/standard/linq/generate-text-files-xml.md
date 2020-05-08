@@ -71,7 +71,7 @@ Next
 Console.WriteLine(sb.ToString())
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,(503) 555-7555,2732 Baker Blvd.,Eugene,OR,97403,USA

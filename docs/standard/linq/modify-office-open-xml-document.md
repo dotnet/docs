@@ -261,7 +261,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<

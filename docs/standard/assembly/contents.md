@@ -1,5 +1,6 @@
 ---
 title: Assembly contents
+description: A static assembly can consist the assembly manifest containing assembly metadata, type metadata, code that implements types, and a set of resources.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework]"

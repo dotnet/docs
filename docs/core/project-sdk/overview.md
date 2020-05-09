@@ -1,5 +1,6 @@
 ---
 title: .NET Core project SDK overview
+titleSuffix: ""
 description: Learn about the .NET Core project SDKs.
 ms.date: 02/02/2020
 ms.topic: conceptual

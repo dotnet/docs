@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # MSBuild properties for .NET Core SDK projects
 
-This page describes MSBuild properties for configuring .NET Core projects. You can specify *metadata* for each property as child elements of the property.
+This page is a reference for the MSBuild properties that you can use to configure .NET Core projects. You can specify *metadata* for each property either as an attribute or a child element of the property.
 
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
@@ -135,11 +135,16 @@ For more information about deployment, see [.NET Core application deployment](..
 
 ### EmbeddedResourceUseDependentUponConvention
 
-The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from the namespace and class name of the first type in a source file that's colocated with a resource file. If you omit this property in a .NET Core project, it defaults to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file.
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+
+> [!NOTE]
+> If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
+
+By default, in a new .NET Core project, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file.
 
 ```xml
 <PropertyGroup>
-  <EmbeddedResourceUseDependentUponConvention>false</EmbeddedResourceUseDependentUponConvention>
+  <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
 </PropertyGroup>
 ```
 

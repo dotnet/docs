@@ -38,7 +38,7 @@ Provides an enumerator for objects that will be garbage-collected.
 - Objects from the finalizer queue. The finalizer queue roots objects until the finalizer has run.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

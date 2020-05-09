@@ -48,6 +48,16 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 ***
 
+## MSBuild
+
+- [Resource manifest file name change](#resource-manifest-file-name-change)
+
+### .NET Core 3.0
+
+[!INCLUDE[Resource file names](~/includes/core-changes/msbuild/3.0/resource-manifest-name.md)]
+
+***
+
 ## Networking
 
 - [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately)

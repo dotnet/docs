@@ -8,6 +8,9 @@ ms.topic: conceptual
 
 When MSBuild compiles a .NET Core project, XML resource files, which have the *.resx* file extension, are converted into binary *.resources* files. The binary files can be read by the <xref:System.Resources.ResourceManager>. This article describes how MSBuild chooses a name for each *.resources* file.
 
+> [!TIP]
+> If you explicitly add a resource item to your project file, and it's also [included with the default include globs for .NET Core](../project-sdk/overview.md#default-compilation-includes), you will get a build error. To manually include resource files as `EmbeddedResource` items, set the `EnableDefaultEmbeddedResourceItems` property to false.
+
 ## Default name
 
 In .NET Core 3.0 and later, the default name for a resource manifest is used when both of the following conditions are met:

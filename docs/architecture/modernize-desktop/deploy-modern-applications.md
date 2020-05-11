@@ -214,13 +214,11 @@ In combination with this file, Microsoft has designed a special URL protocol to 
 <a href="ms-appinstaller:?source=http://mywebservice.azureedge.net/MyApp.msix">Install app package </a>
 ```
 
-This protocol work on all browsers and launches the installation process with a great user experience on Windows 10. Since the OS manages the installation process, it's aware of the location this application was installed from and tracks all the files affected by the process.
+This protocol works on all browsers and launches the installation process with a great user experience on Windows 10. Since the OS manages the installation process, it's aware of the location this application was installed from and tracks all the files affected by the process.
 
-MSIX builds a user interface for installation automatically showing some properties of the package. Developers don't need to create this. This allows for a common installation experience for every app.
+MSIX creates a user interface for installation automatically showing some properties of the package. This allows for a common installation experience for every app.
 
-![User interface for installation](media\deploying-modern-desktop-applications\ui-installation.png)
-
-When you have a new version of your app, you want to deploy it to your users. Once you've generated the new MSIX package and moved it to the deployment server, you just have to edit the *.appinstaller* file to reflect these changes, mainly the version and the path to the new MSIX file. The next time the user launches the application, the system is going to detect the change and download the files for the new version in the background. When this is done, installation will execute on new application launch transparently for your user.
+Once you've generated the new MSIX package and moved it to the deployment server, you just have to edit the *.appinstaller* file to reflect these changes, mainly the version and the path to the new MSIX file. The next time the user launches the application, the system is going to detect the change and download the files for the new version in the background. When this is done, installation will execute on new application launch transparently for your user.
 
 >[!div class="step-by-step"]
 >[Previous](example-migration-core.md)

@@ -24,7 +24,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
-* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt)
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 
 ## Custom converter patterns
 
@@ -173,6 +173,7 @@ The following sections provide converter samples that address some common scenar
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties)
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key)
 * [Support polymorphic deserialization](#support-polymorphic-deserialization)
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 
 ### Deserialize inferred types to object properties
 

@@ -1,6 +1,6 @@
 ---
 title: "Using objects that implement IDisposable"
-ms.date: 05/05/2020
+ms.date: 05/11/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"

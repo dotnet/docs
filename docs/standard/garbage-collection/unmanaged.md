@@ -1,6 +1,6 @@
 ---
 title: "Cleaning up unmanaged resources"
-ms.date: 05/08/2020
+ms.date: 05/11/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Close method"

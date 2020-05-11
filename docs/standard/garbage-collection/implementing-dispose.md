@@ -1,6 +1,6 @@
 ---
 title: "Implementing a Dispose method"
-ms.date: 05/08/2020
+ms.date: 05/11/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -23,8 +23,8 @@ The dispose pattern has three variations:
 
 1. You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
 
-  > [!NOTE]
-  > The <xref:Microsoft.Win32.SafeHandles?displayProperty=nameWithType> namespace provides a set of classes derived from <xref:System.Runtime.InteropServices.SafeHandle>, which are listed in the [Using safe handles](#SafeHandles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <xref:System.Runtime.InteropServices.SafeHandle>.
+    > [!NOTE]
+    > The <xref:Microsoft.Win32.SafeHandles?displayProperty=nameWithType> namespace provides a set of classes derived from <xref:System.Runtime.InteropServices.SafeHandle>, which are listed in the [Using safe handles](#SafeHandles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <xref:System.Runtime.InteropServices.SafeHandle>.
 
 1. You implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer.
 

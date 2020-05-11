@@ -122,7 +122,7 @@ To disable *all* implicit globs, set the `EnableDefaultItems` property to `false
 
 ## Customize the build
 
-There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET Core projects, see [MSBuild properties for .NET Core SDK projects](msbuild-props.md).
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET Core projects, see [MSBuild reference for .NET Core SDK projects](msbuild-props.md).
 
 ### Custom targets
 

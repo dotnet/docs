@@ -52,6 +52,10 @@ The following example is similar to the previous example, except that it uses a 
 
 You can follow this basic pattern if you choose to implement or must implement a `try/finally` block, because your programming language doesn't support a `using` statement but does allow direct calls to the <xref:System.IDisposable.Dispose%2A> method.
 
+## IDisposable instance members
+
+If a class holds an <xref:System.IDisposable> implementation as an instance member, either a field or a property, the class should also implement <xref:System.IDisposable>. For more information, see [implementing the dispose pattern](implementing-dispose.md#implementing-the-dispose-pattern).
+
 ## See also
 
 - [Cleaning up unmanaged resources](../../../docs/standard/garbage-collection/unmanaged.md)

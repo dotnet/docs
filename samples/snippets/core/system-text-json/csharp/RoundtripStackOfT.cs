@@ -16,10 +16,12 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"Result is reverse order {serialized}");
 
             Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then deserialize");
+            // <SnippetRegister>
             var options = new JsonSerializerOptions
             {
                 Converters = { new JsonConverterFactoryForStackOfT() },
             };
+            // </SnippetRegister>
             stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options);
             serialized = JsonSerializer.Serialize(stack, options);
             Console.WriteLine($"Result is same order {serialized}");

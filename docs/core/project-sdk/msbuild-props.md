@@ -1,12 +1,12 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
-description: Reference for the MSBuild properties that are understood by the .NET Core SDK.
+description: Reference for the MSBuild properties and items that are understood by the .NET Core SDK.
 ms.date: 02/14/2020
 ms.topic: reference
 ---
-# MSBuild properties for .NET Core SDK projects
+# MSBuild reference for .NET Core SDK projects
 
-This page describes MSBuild properties for configuring .NET Core projects. You can specify *metadata* for each property as child elements of the property.
+This page is a reference for the MSBuild properties and items that you can use to configure .NET Core projects.
 
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
@@ -72,7 +72,7 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
-## Publish properties
+## Publish properties and items
 
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
@@ -130,7 +130,23 @@ For more information about deployment, see [.NET Core application deployment](..
 
 ## Compile properties
 
+- [EmbeddedResourceUseDependentUponConvention](#embeddedresourceusedependentuponconvention)
 - [LangVersion](#langversion)
+
+### EmbeddedResourceUseDependentUponConvention
+
+The `EmbeddedResourceUseDependentUponConvention` property defines whether resource manifest file names are generated from type information in source files that are colocated with resource files. For example, if *Form1.resx* is in the same folder as *Form1.cs*, and `EmbeddedResourceUseDependentUponConvention` is set to `true`, the generated *.resources* file takes its name from the first type that's defined in *Form1.cs*. For example, if `MyNamespace.Form1` is the first type defined in *Form1.cs*, the generated file name is *MyNamespace.Form1.resources*.
+
+> [!NOTE]
+> If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
+
+By default, in a new .NET Core project, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file. For more information, see [How resource manifest files are named](../resources/manifest-file-names.md).
+
+```xml
+<PropertyGroup>
+  <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+</PropertyGroup>
+```
 
 ### LangVersion
 
@@ -248,7 +264,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 </PropertyGroup>
 ```
 
-## Reference properties
+## Reference properties and items
 
 - [AssetTargetFallback](#assettargetfallback)
 - [PackageReference](#packagereference)
@@ -270,7 +286,7 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### PackageReference
 
-The `PackageReference` defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages).
+The `PackageReference` item defines a reference to a NuGet package. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages).
 
 The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
 
@@ -302,7 +318,7 @@ The project file snippet in the following example references a project named `Pr
 
 The `Reference` item defines a reference to an assembly file.
 
-The `Include` attribute specifies the name of the file, and the `HintPath` child element specifies the path to the assembly.
+The `Include` attribute specifies the name of the file, and the `HintPath` metadata specifies the path to the assembly.
 
 ```xml
 <ItemGroup>

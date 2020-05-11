@@ -1,5 +1,6 @@
 ---
 title: .NET Core project SDK overview
+titleSuffix: ""
 description: Learn about the .NET Core project SDKs.
 ms.date: 02/02/2020
 ms.topic: conceptual
@@ -125,7 +126,7 @@ To resolve the errors, do one of the following:
 
 ## Customize the build
 
-There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET Core projects, see [MSBuild properties for .NET Core SDK projects](msbuild-props.md).
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET Core projects, see [MSBuild reference for .NET Core SDK projects](msbuild-props.md).
 
 ### Custom targets
 

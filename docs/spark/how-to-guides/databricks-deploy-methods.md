@@ -1,7 +1,7 @@
 ---
 title: Submit a .NET for Apache Spark job to Databricks
 description: Learn how to submit a .NET for Apache Spark job to Databricks using spark-submit and Set Jar.
-ms.date: 04/27/2020
+ms.date: 05/11/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---

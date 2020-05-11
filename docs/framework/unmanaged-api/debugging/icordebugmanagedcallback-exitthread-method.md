@@ -39,7 +39,7 @@ HRESULT ExitThread (
  Once the `ExitThread` callback is fired, the thread will no longer appear in thread enumerations.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

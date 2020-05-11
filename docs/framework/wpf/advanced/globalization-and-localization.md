@@ -21,7 +21,7 @@ ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
  [Use Automatic Layout Overview](use-automatic-layout-overview.md)  
  [Localization Attributes and Comments](localization-attributes-and-comments.md)  
  [Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)  
- [How-to Topics](globalization-and-localization-how-to-topics.md)  
+ [How-to Topics](how-to-localize-an-application.md)  
   
 ## Reference  
  <xref:System.Globalization>  

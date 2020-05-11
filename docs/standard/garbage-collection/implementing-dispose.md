@@ -15,7 +15,7 @@ ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 
 You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application or to call `Dispose` on references to containing members that implement <xref:System.IDisposable>. The .NET garbage collector does not allocate or release unmanaged memory.
 
-The pattern for disposing an object, referred to as the [dispose pattern](implementing-dispose.md), imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources or objects that implement the <xref:System.IDisposable> interface, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
+The pattern for disposing an object, referred to as the dispose pattern, imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources or objects that implement the <xref:System.IDisposable> interface, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
 
 The dispose pattern has three variations:
 

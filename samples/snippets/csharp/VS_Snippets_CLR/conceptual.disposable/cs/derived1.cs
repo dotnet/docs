@@ -1,9 +1,7 @@
 ﻿// <Snippet10>
 using Microsoft.Win32.SafeHandles;
 using System;
-using System.IO;
 using System.Runtime.InteropServices;
-using System.Threading;
 
 public class DisposableStreamResource2 : DisposableStreamResource
 {
@@ -18,10 +16,11 @@ public class DisposableStreamResource2 : DisposableStreamResource
         int nNumberOfBytesToWrite, out int lpNumberOfBytesWritten,
         IntPtr lpOverlapped);
 
-    bool _disposed = false; // To detect redundant calls
-    bool _created = false;
-    SafeFileHandle _safeHandle;
-    readonly string _fileName;
+    // To detect redundant calls
+    private bool _disposed = false;
+    private bool _created = false;
+    private SafeFileHandle _safeHandle;
+    private readonly string _fileName;
 
     public DisposableStreamResource2(string fileName) : base(fileName) => _fileName = fileName;
 
@@ -36,8 +35,8 @@ public class DisposableStreamResource2 : DisposableStreamResource
             _created = true;
         }
 
-        var output = $"{_fileName}: {Size:N0} bytes\n";
-        bool result = WriteFile(_safeHandle, output, output.Length, out int bytesWritten, IntPtr.Zero);
+        string output = $"{_fileName}: {Size:N0} bytes\n";
+        _ = WriteFile(_safeHandle, output, output.Length, out _, IntPtr.Zero);
     }
 
     protected override void Dispose(bool disposing)
@@ -84,23 +83,23 @@ public class DisposableStreamResource : IDisposable
     protected const uint FILE_SHARE_READ = 0x00000001;
     protected const uint OPEN_EXISTING = 3;
     protected const uint FILE_ATTRIBUTE_NORMAL = 0x80;
-    protected IntPtr INVALID_HANDLE_VALUE = new IntPtr(-1);
-    const int INVALID_FILE_SIZE = unchecked((int)0xFFFFFFFF);
+    private const int INVALID_FILE_SIZE = unchecked((int)0xFFFFFFFF);
 
     // Define Windows APIs.
     [DllImport("kernel32.dll", EntryPoint = "CreateFileW", CharSet = CharSet.Unicode)]
-    protected static extern IntPtr CreateFile(
+    protected static extern SafeFileHandle CreateFile(
         string lpFileName, uint dwDesiredAccess,
         uint dwShareMode, IntPtr lpSecurityAttributes,
         uint dwCreationDisposition, uint dwFlagsAndAttributes,
         IntPtr hTemplateFile);
 
     [DllImport("kernel32.dll")]
-    static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
+    private static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
 
-    bool _disposed = false;  // To detect redundant calls
-    readonly SafeFileHandle _safeHandle;
-    readonly int _upperWord;
+    // Define locals.
+    private bool _disposed = false;
+    private readonly SafeFileHandle _safeHandle;
+    private readonly int _upperWord;
 
     public DisposableStreamResource(string fileName)
     {
@@ -109,16 +108,9 @@ public class DisposableStreamResource : IDisposable
             throw new ArgumentException("The fileName cannot be null or an empty string");
         }
 
-        IntPtr handle = CreateFile(
+        _safeHandle = CreateFile(
             fileName, GENERIC_READ, FILE_SHARE_READ, IntPtr.Zero,
             OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, IntPtr.Zero);
-
-        if (handle == INVALID_HANDLE_VALUE)
-        {
-            throw new FileNotFoundException($"Cannot open '{fileName}'");
-        }
-
-        _safeHandle = new SafeFileHandle(handle, true);
 
         // Get file size.
         Size = GetFileSize(_safeHandle, out _upperWord);
@@ -150,12 +142,10 @@ public class DisposableStreamResource : IDisposable
         // Dispose of managed resources here.
         if (disposing)
         {
-            // Dispose managed state (managed objects).
             _safeHandle?.Dispose();
         }
 
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
+        // Dispose of any unmanaged resources not wrapped in safe handles.
 
         _disposed = true;
     }

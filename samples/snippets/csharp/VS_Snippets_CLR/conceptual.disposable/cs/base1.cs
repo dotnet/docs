@@ -11,7 +11,7 @@ public class DisposableStreamResource : IDisposable
     protected const uint FILE_SHARE_READ = 0x00000001;
     protected const uint OPEN_EXISTING = 3;
     protected const uint FILE_ATTRIBUTE_NORMAL = 0x80;
-    const int INVALID_FILE_SIZE = unchecked((int)0xFFFFFFFF);
+    private const int INVALID_FILE_SIZE = unchecked((int)0xFFFFFFFF);
 
     // Define Windows APIs.
     [DllImport("kernel32.dll", EntryPoint = "CreateFileW", CharSet = CharSet.Unicode)]
@@ -22,12 +22,12 @@ public class DisposableStreamResource : IDisposable
         IntPtr hTemplateFile);
 
     [DllImport("kernel32.dll")]
-    static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
+    private static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
 
     // Define locals.
-    bool _disposed = false;
-    readonly SafeFileHandle _safeHandle;
-    readonly int _upperWord;
+    private bool _disposed = false;
+    private readonly SafeFileHandle _safeHandle;
+    private readonly int _upperWord;
 
     public DisposableStreamResource(string fileName)
     {

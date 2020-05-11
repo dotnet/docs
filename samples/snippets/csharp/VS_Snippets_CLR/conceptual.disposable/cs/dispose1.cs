@@ -12,13 +12,16 @@ public class Disposable : IDisposable
    // <Snippet7>
    public void Dispose()
    {
-      Dispose(true);             // Dispose of unmanaged resources.
-      GC.SuppressFinalize(this); // Suppress finalization.
+      // Dispose of unmanaged resources.
+      Dispose(true);
+      // Suppress finalization.
+      GC.SuppressFinalize(this);
    }
    // </Snippet7>
 
    // <Snippet8>
    protected virtual void Dispose(bool disposing)
+   {
+   }
    // </Snippet8>
-   {}
 }

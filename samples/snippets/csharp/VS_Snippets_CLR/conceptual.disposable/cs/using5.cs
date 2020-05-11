@@ -7,11 +7,11 @@ class Example
 {
     static void Main()
     {
-        StreamReader streamReader = null;
+        StreamReader? streamReader = null;
         try
         {
             streamReader = new StreamReader("file1.txt");
-            var contents = await streamReader.ReadToEnd();
+            string contents = streamReader.ReadToEnd();
             var info = new StringInfo(contents);
             Console.WriteLine($"The file has {info.LengthInTextElements} text elements.");
         }

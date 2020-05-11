@@ -54,7 +54,7 @@ You can follow this basic pattern if you choose to implement or must implement a
 
 ## IDisposable instance members
 
-If a class holds an <xref:System.IDisposable> implementation as an instance member, either a field or a property, the class should also implement <xref:System.IDisposable>. For more information, see [implementing the dispose pattern](implementing-dispose.md#implementing-the-dispose-pattern).
+If a class holds an <xref:System.IDisposable> implementation as an instance member, either a field or a property, the class should also implement <xref:System.IDisposable>. For more information, see [implement a cascade dispose](implementing-dispose.md#cascade-dispose-calls).
 
 ## See also
 

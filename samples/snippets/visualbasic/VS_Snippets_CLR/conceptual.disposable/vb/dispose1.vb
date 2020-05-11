@@ -12,14 +12,16 @@ Public Class Disposable : Implements IDisposable
    ' <Snippet7>
    Public Sub Dispose() _
               Implements IDisposable.Dispose
-      Dispose(True)           ' Dispose of unmanaged resources.
-      GC.SuppressFinalize(Me) ' Suppress finalization.
+      ' Dispose of unmanaged resources.
+      Dispose(True)
+      ' Suppress finalization.
+      GC.SuppressFinalize(Me)
    End Sub
    ' </Snippet7>
 
    ' <Snippet8>
    Protected Overridable Sub Dispose(disposing As Boolean)
-   ' </Snippet8>   
    End Sub
+   ' </Snippet8>
 
 End Class

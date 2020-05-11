@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Dispose method"
+title: "Implement a Dispose method"
 ms.date: 05/11/2020
 ms.technology: dotnet-standard
 dev_langs:
@@ -11,34 +11,20 @@ helpviewer_keywords:
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 ---
 
-# Implementing a Dispose method
+# Implement a Dispose method
 
-You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged resources used by your application or to call `Dispose` on references to containing members that implement <xref:System.IDisposable>. The .NET garbage collector does not allocate or release unmanaged memory.
+Implementing the <xref:System.IDisposable.Dispose%2A> method is primarily for releasing unmanaged resources used by your code. When working with instance members that are <xref:System.IDisposable> implementations, it is also common to cascade calls to `Dispose`. There are additional reasons for implementing <xref:System.IDisposable.Dispose%2A>, such as undoing something that was previously done. For example, freeing memory that was previously allocated, removing an item from a collection that was previously added, signaling the release of a lock that was previously acquired, etc.
 
-The pattern for disposing an object, referred to as the dispose pattern, imposes order on the lifetime of an object. The dispose pattern is used only for objects that access unmanaged resources or objects that implement the <xref:System.IDisposable> interface, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.
+The .NET garbage collector does not allocate or release unmanaged memory. The pattern for disposing an object, referred to as the dispose pattern, imposes order on the lifetime of an object. The dispose pattern is used for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is unable to reclaim unmanaged objects.
 
-The dispose pattern has three variations:
-
-1. You implement the <xref:System.IDisposable> interface when a class owns the creation of an `IDisposable` instance member. In this scenario, the implementation of the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method calls `Dispose` on the disposable instance member. This variation does not require a `Dispose(bool)` overload.
-
-1. You wrap each unmanaged resource that a type uses in a <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> or derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. In this case, you implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method. This is the recommended variation and doesn't require overriding the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method.
-
-    > [!NOTE]
-    > The <xref:Microsoft.Win32.SafeHandles?displayProperty=nameWithType> namespace provides a set of classes derived from <xref:System.Runtime.InteropServices.SafeHandle>, which are listed in the [Using safe handles](#SafeHandles) section. If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <xref:System.Runtime.InteropServices.SafeHandle>.
-
-1. You implement the <xref:System.IDisposable> interface and an additional `Dispose(bool)` method, and you also override the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. You must override <xref:System.Object.Finalize%2A> to ensure that unmanaged resources are disposed of if your <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation is not called by a consumer.
-
-    > [!TIP]
-    > If you use the recommended technique discussed in the previous bullet, the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class does this on your behalf.
-
-To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be idempotent, such that it is callable multiple times without throwing an exception.
+To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be idempotent, such that it is callable multiple times without throwing an exception. Furthermore, subsequent invocations of <xref:System.IDisposable.Dispose%2A> should be nops.
 
 The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> method shows how garbage collection can cause a finalizer to run, while an unmanaged reference to the object or its members is still in use. It may make sense to utilize <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> to make the object ineligible for garbage collection from the start of the current routine to the point where this method is called.
 
 <a name="Dispose2"></a>
 ## Dispose() and Dispose(bool)
 
-The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. However, the last two dispose pattern variants require two `Dispose` methods to be implemented:
+The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. Additionally, any non-sealed class requires two `Dispose` methods to be implemented:
 
 - A `public` non-virtual (`NonInheritable` in Visual Basic) <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation that has no parameters.
 
@@ -52,7 +38,7 @@ The <xref:System.IDisposable> interface requires the implementation of a single 
 
 ### The Dispose() method
 
-Because the `public`, non-virtual (`NonInheritable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run. Because of this, it has a standard implementation:
+Because the `public`, non-virtual (`NonInheritable` in Visual Basic), parameterless `Dispose` method is called by a consumer of the type, its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Because of this, it has a standard implementation:
 
 [!code-csharp[Conceptual.Disposable#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/dispose1.cs#7)]
 [!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/dispose1.vb#7)]
@@ -75,16 +61,16 @@ The body of the method consists of two blocks of code:
 
 If the method call comes from a finalizer (that is, if `disposing` is `false`), only the code that frees unmanaged resources executes. Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this `Dispose` overload with a value of `false` prevents the finalizer from trying to release managed resources that may have already been reclaimed.
 
-## Implementing the dispose pattern
+## Cascade dispose calls
 
-If your class owns a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Meaning a class that is responsible for instantiating an <xref:System.IDisposable> implementation and storing it as an instance member, is also responsible for its clean up. This is to help ensure that the referenced disposable types are given the opportunity to perform clean up through the <xref:System.IDisposable.Dispose%2A> method. The class should be `sealed` (or `NotInheritable` in Visual Basic) - for inheritance patterns, see [implementing the dispose pattern for a base class](#implementing-the-dispose-pattern-for-a-base-class).
+If your class owns a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Meaning a class that is responsible for instantiating an <xref:System.IDisposable> implementation and storing it as an instance member, is also responsible for its clean up. This is to help ensure that the referenced disposable types are given the opportunity to deterministically perform clean up through the <xref:System.IDisposable.Dispose%2A> method. In this example the class is `sealed` (or `NotInheritable` in Visual Basic).
 
 [!code-csharp[Conceptual.Disposable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/disposable1.cs#1)]
 [!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/disposable1.vb#7)]
 
-## Implementing the dispose pattern for a base class
+## Implement the dispose pattern
 
-If you implement the dispose pattern for a base class, you must provide the following:
+A base type, could be a `class` or `struct` is any c. If you implement the dispose pattern for a base type, you must provide the following:
 
 > [!IMPORTANT]
 > You should implement this pattern for all base classes that implement <xref:System.IDisposable.Dispose> and are not `sealed` (`NotInheritable` in Visual Basic).
@@ -113,7 +99,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
 
 ## Implementing the dispose pattern for a derived class
 
-A derived class from an <xref:System.IDisposable> implementation shouldn't carelessly implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes and would be overwritten. Instead, to release resources of a derived class, you provide the following:
+A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:
 
 - A `protected override void Dispose(bool)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(bool)` method of the base class and pass its disposing status for the argument.
 
@@ -136,20 +122,16 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 > In C#, you override <xref:System.Object.Finalize%2A?displayProperty=nameWithType> by defining a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md). In VB, this is done with `Protected Overrides Sub Finalize()`.
 
 <a name="SafeHandles"></a>
-## Using safe handles
+## Safe handles
 
 Writing code for an object's finalizer is a complex task that can cause problems if not done correctly. Therefore, we recommend that you construct <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> objects instead of implementing a finalizer.
 
 Classes derived from the <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> class simplify object lifetime issues by assigning and releasing handles without interruption. They contain a critical finalizer that is guaranteed to run while an application domain is unloading. For more information about the advantages of using a safe handle, see <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>. The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespace provide safe handles:
 
 - The <xref:Microsoft.Win32.SafeHandles.SafeFileHandle>, <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle>, and <xref:Microsoft.Win32.SafeHandles.SafePipeHandle> class, for files, memory mapped files, and pipes.
-
 - The <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> class, for memory views.
-
 - The <xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle>, <xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle>, and <xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle> classes, for cryptography constructs.
-
 - The <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> class, for registry keys.
-
 - The <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class, for wait handles.
 
 <a name="base"></a>

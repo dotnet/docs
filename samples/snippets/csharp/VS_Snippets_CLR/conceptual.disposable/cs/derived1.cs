@@ -29,16 +29,10 @@ public class DisposableStreamResource2 : DisposableStreamResource
     {
         if (!_created)
         {
-            IntPtr hFile = CreateFile(
+            _safeHandle = CreateFile(
                 @".\FileInfo.txt", GENERIC_WRITE, 0, IntPtr.Zero,
                 OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, IntPtr.Zero);
 
-            if (hFile == INVALID_HANDLE_VALUE)
-            {
-                throw new IOException("Unable to create output file.");
-            }
-
-            _safeHandle = new SafeFileHandle(hFile, true);
             _created = true;
         }
 

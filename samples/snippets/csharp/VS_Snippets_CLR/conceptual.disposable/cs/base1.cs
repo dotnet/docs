@@ -11,12 +11,11 @@ public class DisposableStreamResource : IDisposable
     protected const uint FILE_SHARE_READ = 0x00000001;
     protected const uint OPEN_EXISTING = 3;
     protected const uint FILE_ATTRIBUTE_NORMAL = 0x80;
-    protected IntPtr INVALID_HANDLE_VALUE = new IntPtr(-1);
     const int INVALID_FILE_SIZE = unchecked((int)0xFFFFFFFF);
 
     // Define Windows APIs.
     [DllImport("kernel32.dll", EntryPoint = "CreateFileW", CharSet = CharSet.Unicode)]
-    protected static extern IntPtr CreateFile(
+    protected static extern SafeFileHandle CreateFile(
         string lpFileName, uint dwDesiredAccess,
         uint dwShareMode, IntPtr lpSecurityAttributes,
         uint dwCreationDisposition, uint dwFlagsAndAttributes,
@@ -37,16 +36,9 @@ public class DisposableStreamResource : IDisposable
             throw new ArgumentException("The fileName cannot be null or an empty string");
         }
 
-        IntPtr handle = CreateFile(
+        _safeHandle = CreateFile(
             fileName, GENERIC_READ, FILE_SHARE_READ, IntPtr.Zero,
             OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, IntPtr.Zero);
-
-        if (handle == INVALID_HANDLE_VALUE)
-        {
-            throw new FileNotFoundException($"Cannot open '{fileName}'");
-        }
-
-        _safeHandle = new SafeFileHandle(handle, true);
 
         // Get file size.
         Size = GetFileSize(_safeHandle, out _upperWord);
@@ -78,7 +70,7 @@ public class DisposableStreamResource : IDisposable
         // Dispose of managed resources here.
         if (disposing)
         {
-            _safeHandle.Dispose();
+            _safeHandle?.Dispose();
         }
 
         // Dispose of any unmanaged resources not wrapped in safe handles.

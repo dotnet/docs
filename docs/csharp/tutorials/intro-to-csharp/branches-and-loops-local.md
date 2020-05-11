@@ -276,6 +276,8 @@ Experiment with these yourself. Try each of the following:
 When you're done, let's move on to write some code yourself to
 use what you've learned.
 
+There is one other looping statement that isn't covered in this tutorial: the `foreach` statement. The `foreach` statement repeats its statement for every item in a sequence of items. It's most often used with *collections*, so it is covered in the next tutorial.
+
 ## Created nested loops
 
 A `while`, `do` or `for` loop can be nested inside another loop to create a matrix using the combination of each item in the outer loop with each item in the inner loop. Let's do that to build a set of alphanumeric pairs to represent rows and columns.

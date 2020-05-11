@@ -36,6 +36,9 @@ namespace SystemTextJsonSamples
             Console.WriteLine("\n============================= Roundtrip enum as string\n");
             RoundtripEnumAsString.Run();
 
+            Console.WriteLine("\n============================= Roundtrip Stack<T>\n");
+            RoundtripStackOfT.Run();
+
             Console.WriteLine("\n============================= Serialize polymorphic\n");
             SerializePolymorphic.Run();
 

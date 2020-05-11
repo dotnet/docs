@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Text.Json;
+
+namespace SystemTextJsonSamples
+{
+    public class RoundtripStackOfT
+    {
+        public static void Run()
+        {
+            Console.WriteLine("Deserialize JSON string [1, 2, 3], then deserialize");
+            Stack<int> stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]");
+            string serialized = JsonSerializer.Serialize(stack);
+            Console.WriteLine($"Result is reverse order {serialized}");
+
+            Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then deserialize");
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new JsonConverterFactoryForStackOfT() },
+            };
+            stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options);
+            serialized = JsonSerializer.Serialize(stack, options);
+            Console.WriteLine($"Result is same order {serialized}");
+        }
+    }
+}
+

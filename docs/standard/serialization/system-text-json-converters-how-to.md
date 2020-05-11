@@ -24,6 +24,7 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt)
 
 ## Custom converter patterns
 
@@ -278,6 +279,18 @@ The converter can deserialize JSON that was created by using the same converter 
 ```
 
 The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
+
+### Support round-trip for Stack\<T>
+
+If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. To support serialization and deserialization that retains the original order in the stack, a custom converter is required.
+
+The following code shows a custom converter that enables round trips to and from `Stack<T>` objects:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/JsonConverterFactoryForStackOfT.cs)]
+
+The following code registers the converter:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
 
 ## Other custom converter samples
 

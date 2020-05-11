@@ -34,7 +34,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 ✔️ CONSIDER enabling deterministic builds.
 
-> Deterministic builds enable verification that the resulting binary was built from the specified source and provides traceability. For more information about deterministic builds, and instructions for enabling them, see [Deterministic Builds](https://github.com/clairernovotny/DeterministicBuilds).
+> Deterministic builds enable verification that the resulting binary was built from the specified source and provide traceability. For more information about deterministic builds and instructions for enabling them, see [Deterministic Builds](https://github.com/clairernovotny/DeterministicBuilds).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

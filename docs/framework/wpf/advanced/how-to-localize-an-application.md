@@ -77,23 +77,16 @@ To build the application:
    | Option | Description|
    | - | - |
    | `parse` or `-p` | Parses Baml, resources, or DLL files to generate a .csv or .txt file. |
+   | `generate` or `-g` | Generates a localized binary file by using a translated file. |
+   | `out` or `-o` {*filedirectory*] | Output file name. |
+   | `culture` or `-cul` {*culture*] | Locale of output assemblies. |
+   | `translation` or `-trans` {*translation.csv*] | Translated or localized file. |
+   | `asmpath` or `-asmpath` {*filedirectory*] | If your XAML code contains custom controls, you must supply the `asmpath` to the custom control assembly. |
+   | `nologo` | Displays no logo or copyright information. |
+   | `verbose` | Displays verbose mode information. |
   
-    | `generate` or `-g` | Generates a localized binary file by using a translated file. |
-  
-    | `out` or `-o` {*filedirectory*] | Output file name. |
-  
-    | `culture` or `-cul` {*culture*] | Locale of output assemblies. |
-  
-    | `translation` or `-trans` {*translation.csv*] | Translated or localized file. |
-  
-    | `asmpath` or `-asmpath` {*filedirectory*] | If your XAML code contains custom controls, you must supply the `asmpath` to the custom control assembly. |
-  
-    | `nologo` | Displays no logo or copyright information. |
-  
-    | `verbose` | Displays verbose mode information. |
-  
-    > [!NOTE]
-    > If you need a list of the options when you are running the tool, enter `LocBaml.exe` and then press **Enter**.
+   > [!NOTE]
+   > If you need a list of the options when you are running the tool, enter `LocBaml.exe` and then press **Enter**.
   
 ## Use LocBaml to parse a file
 

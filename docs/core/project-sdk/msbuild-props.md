@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # MSBuild properties for .NET Core SDK projects
 
-This page is a reference for the MSBuild properties that you can use to configure .NET Core projects. You can specify *metadata* for each property either as an attribute or a child element of the property.
+This page is a reference for the MSBuild properties that you can use to configure .NET Core projects.
 
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).

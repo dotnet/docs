@@ -11,17 +11,21 @@ namespace SystemTextJsonSamples
     {
         public override bool CanConvert(Type typeToConvert)
         {
-            return typeToConvert.IsGenericType && typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
+            return typeToConvert.IsGenericType &&
+                typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
         }
 
-        public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)
+        public override JsonConverter CreateConverter(
+            Type typeToConvert, JsonSerializerOptions options)
         {
-            Debug.Assert(typeToConvert.IsGenericType && typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>));
+            Debug.Assert(typeToConvert.IsGenericType &&
+                typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>));
 
             Type elementType = typeToConvert.GetGenericArguments()[0];
 
             JsonConverter converter = (JsonConverter)Activator.CreateInstance(
-                typeof(JsonConverterForStackOfT<>).MakeGenericType(new Type[] { elementType }),
+                typeof(JsonConverterForStackOfT<>)
+                    .MakeGenericType(new Type[] { elementType }),
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
                 args: null,
@@ -33,7 +37,8 @@ namespace SystemTextJsonSamples
 
     public class JsonConverterForStackOfT<T> : JsonConverter<Stack<T>>
     {
-        public override Stack<T> Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override Stack<T> Read(
+            ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             if (reader.TokenType != JsonTokenType.StartArray || !reader.Read())
             {
@@ -55,7 +60,8 @@ namespace SystemTextJsonSamples
             return elements;
         }
 
-        public override void Write(Utf8JsonWriter writer, Stack<T> value, JsonSerializerOptions options)
+        public override void Write(
+            Utf8JsonWriter writer, Stack<T> value, JsonSerializerOptions options)
         {
             writer.WriteStartArray();
 

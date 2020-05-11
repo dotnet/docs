@@ -18,7 +18,7 @@ The `char` type keyword is an alias for the .NET <xref:System.Char?displayProper
 
 The default value of the `char` type is `\0`, that is, U+0000.
 
-The `char` type supports [comparison](../operators/comparison-operators.md), [equality](../operators/equality-operators.md), and [increment](../operators/arithmetic-operators.md#increment-operator-) and [decrement](../operators/arithmetic-operators.md#decrement-operator---) operators. Moreover, for `char` operands, [arithmetic](../operators/arithmetic-operators.md) and [bitwise logical](../operators/bitwise-and-shift-operators.md) operators perform an operation on the corresponding character codes and produce the result of the `int` type.
+The `char` type supports [comparison](../operators/comparison-operators.md), [equality](../operators/equality-operators.md), [increment](../operators/arithmetic-operators.md#increment-operator-), and [decrement](../operators/arithmetic-operators.md#decrement-operator---) operators. Moreover, for `char` operands, [arithmetic](../operators/arithmetic-operators.md) and [bitwise logical](../operators/bitwise-and-shift-operators.md) operators perform an operation on the corresponding character codes and produce the result of the `int` type.
 
 The [string](reference-types.md#the-string-type) type represents text as a sequence of `char` values.
 

@@ -290,7 +290,7 @@ The following code shows a custom converter that enables round trips to and from
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripStackOfT.cs?name=SnippetRegister)]
 
 ## Other custom converter samples
 

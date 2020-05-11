@@ -43,16 +43,6 @@ landingContent:
         links:
           - text: Get started in 10 minutes on Windows or Linux
             url: https://dotnet.microsoft.com/learn/data/spark-tutorial/intro
-  - title: Big Data processing
-    linkLists:
-    - linkListType: tutorial
-      links:
-      - text: Batch processing
-        url: tutorials/batch-processing.md
-      - text: Structured streaming
-        url: tutorials/streaming.md
-      - text: Sentiment analysis
-        url: tutorials/ml-sentiment-analysis.md
   - title: Deploy your .NET for Apache Spark application
     linkLists:
       - linkListType: deploy
@@ -69,5 +59,13 @@ landingContent:
             url: how-to-guides/debug.md
           - text: Deploy worker and UDF binaries
             url: how-to-guides/deploy-worker-udf-binaries.md
-    
-    
+    - title: Big Data processing
+      linkLists:
+    - linkListType: tutorial
+      links:
+      - text: Batch processing
+        url: tutorials/batch-processing.md
+      - text: Structured streaming
+        url: tutorials/streaming.md
+      - text: Sentiment analysis
+        url: tutorials/ml-sentiment-analysis.md

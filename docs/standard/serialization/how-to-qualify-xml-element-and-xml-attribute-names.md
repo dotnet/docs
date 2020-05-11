@@ -1,5 +1,6 @@
 ---
 title: How to qualify XML element and XML attribute names
+description: This article shows you how to qualify XML element and XML attribute names. Namespaces contained by XmlSerializerNamespaces must conform to a W3C specification.
 ms.date: 03/30/2017
 dev_langs:
   - "csharp"

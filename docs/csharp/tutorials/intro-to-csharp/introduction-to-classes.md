@@ -41,7 +41,9 @@ This file will contain the definition of a ***bank account***. Object Oriented p
 
 ## Define the bank account type
 
-You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it `BankAccount.cs`. Add the following code to your `BankAccount.cs` file:
+You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it *BankAccount.cs*. Add the following code to your *BankAccount.cs* file:
+
+The [guideline](https://docs.microsoft.com/en-us/contribute/dotnet/dotnet-style-guide#text-styling) states italics for files.
 
 ```csharp
 using System;

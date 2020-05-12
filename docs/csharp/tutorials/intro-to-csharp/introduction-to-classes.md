@@ -90,7 +90,7 @@ var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
 
-Type `dotnet run` to see what happens.  
+Let's run what you've built so far. If you're using Visual Studio, Select *Start without debugging* from the *Run* menu. If you're using a command shell, type `dotnet run` in the directory where you've created your project.
 
 Did you notice that the account number is blank? It's time to fix that. The account number should be assigned when the object is constructed. But it shouldn't be the responsibility of the caller to create it. The `BankAccount` class code should know how to assign new account numbers.  A simple way to do this is to start with a 10-digit number. Increment it when each new account is created. Finally, store the current account number when an object is constructed.
 
@@ -200,7 +200,7 @@ Add this line to test it in *Program.cs*:
 Console.WriteLine(account.GetAccountHistory());
 ```
 
-Type `dotnet run` to see the results.
+Run your program to see the results.
 
 ## Next steps
 

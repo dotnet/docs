@@ -334,7 +334,6 @@ dotnet myapp.dll
     * `3` - only informational, warning and error messages are written
     * `2` - only warning and error messages are written
     * `1` - only error messages are written
-  `COREHOST_TRACEFILE` and `COREHOST_TRACE_VERBOSITY` is only supported starting with .NET Core 3.0.
 
   The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and `COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
 

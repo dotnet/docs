@@ -1,5 +1,6 @@
 ---
 title: "Delay-sign an assembly"
+description: This article describes delayed or partial signing, which reserves space in the PE file for the strong name signature, but defers the actual signing.
 ms.date: "08/19/2019"
 helpviewer_keywords:
   - "deferring assembly signing"

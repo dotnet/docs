@@ -1,5 +1,6 @@
 ---
 title: "Assembly security considerations"
+description: When you build a .NET assembly, you can specify permissions the assembly requires to run. This article discusses strong-named assemblies and signing tools.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], security"

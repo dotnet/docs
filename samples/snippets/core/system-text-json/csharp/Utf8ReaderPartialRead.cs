@@ -57,7 +57,7 @@ namespace SystemTextJsonSamples
             {
                 ReadOnlySpan<byte> leftover = span.Slice((int)reader.BytesConsumed);
 
-                if (leftover.Length >= span.Length)
+                if (leftover.Length == span.Length)
                 {
                     Array.Resize(ref buffer, buffer.Length * 2);
                     span = new Span<byte>(buffer);

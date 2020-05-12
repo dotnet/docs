@@ -155,7 +155,6 @@ The following options are available when `dotnet` runs an application. For examp
 
   *Note: This option actually overrides the version of the first framework reference in the application's `.runtimeconfig.json`. This means it only really works if there's one framework reference. If the application has more than one framework reference using this option may cause errors.*
 
-
 ## dotnet commands
 
 ### General

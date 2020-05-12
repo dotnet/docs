@@ -47,7 +47,7 @@ namespace SystemTextJsonSamples
                 // Not enough of the JSON is in the buffer to complete a read.
                 GetMoreBytesFromStream(stream, ref buffer, ref span, ref reader);
             }
-            System.Console.WriteLine($"Found property value: {reader.GetString()}");
+            System.Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
         private static void GetMoreBytesFromStream(MemoryStream stream, ref byte[] buffer, ref Span<byte> span, ref Utf8JsonReader reader)

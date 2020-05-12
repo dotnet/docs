@@ -1,5 +1,6 @@
 ---
 title: "How to: Disable the strong-name bypass feature"
+description: Strong-name bypass skips signature validation in fully trusted domains in .NET. You can override this feature for a single application or all applications.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-name bypass feature"

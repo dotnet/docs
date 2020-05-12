@@ -73,7 +73,7 @@ items:
 - title: Search and sort lists
   durationInMinutes: 5
   content: |
-    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try it to see how it works.  Add the following code below what you've written so far:
+    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`. Try it to see how it works.  Add the following code below what you've written so far:
 
     ```csharp
     var index = names.IndexOf("Felipe");

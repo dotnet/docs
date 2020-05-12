@@ -81,7 +81,7 @@ Save the file, and type `dotnet run` again to see the results.
 
 ## Search and sort lists
 
-Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Add this code to the bottom of your `Main` method:
+Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`. Add this code to the bottom of your `Main` method:
 
 ```csharp
 var index = names.IndexOf("Felipe");

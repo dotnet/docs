@@ -39,7 +39,7 @@ HRESULT SetUnmappedStopMask (
  If the debugger doesn't use a stepper to enter a method, then it won't necessarily step over unmapped code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

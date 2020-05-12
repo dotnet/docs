@@ -90,7 +90,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
 > [!TIP]
 > In C#, you override <xref:System.Object.Finalize%2A?displayProperty=nameWithType> by defining a [destructor](../../csharp/programming-guide/classes-and-structs/destructors.md). In Visual Basic, this is done with `Protected Overrides Sub Finalize()`.
 
-## Implementing the dispose pattern for a derived class
+## Implement the dispose pattern for a derived class
 
 A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to cleanup a derived class, you provide the following:
 

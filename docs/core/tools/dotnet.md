@@ -125,7 +125,6 @@ The following options are available when `dotnet` runs an application. For examp
 - **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
 
   Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
-  
 
   - `LatestPatch` - Roll forward to the highest patch version. This disables minor version roll forward.
   - `Minor` - Roll forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the LatestPatch policy is used.
@@ -328,7 +327,7 @@ dotnet myapp.dll
   Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
   * `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
-  * `COREHOST_TRACEFILE=<file path>` - only has effect if tracing is enabled via `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file, otherwise the tracing information is written to `stderr`. **Available starting with .NET Core 3.x.** 
+  * `COREHOST_TRACEFILE=<file path>` - only has effect if tracing is enabled via `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file, otherwise the tracing information is written to `stderr`. **Available starting with .NET Core 3.x.**
   * `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
     * `4` - all tracing information is written
     * `3` - only informational, warning and error messages are written

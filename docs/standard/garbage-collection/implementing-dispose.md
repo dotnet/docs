@@ -64,7 +64,7 @@ If the method call comes from a finalizer, only the code that frees unmanaged re
 If your class owns a field or property, and its type implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Meaning a class that is responsible for instantiating an <xref:System.IDisposable> implementation and storing it as an instance member, is also responsible for its cleanup. This is to help ensure that the referenced disposable types are given the opportunity to deterministically perform clean up through the <xref:System.IDisposable.Dispose%2A> method. In this example, the class is `sealed` (or `NotInheritable` in Visual Basic).
 
 [!code-csharp[Conceptual.Disposable#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/disposable1.cs#1)]
-[!code-vb[Conceptual.Disposable#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/disposable1.vb#7)]
+[!code-vb[Conceptual.Disposable#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/disposable1.vb#1)]
 
 ## Implement the dispose pattern
 

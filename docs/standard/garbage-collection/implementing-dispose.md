@@ -68,10 +68,7 @@ If your class owns a field or property, and its type implements <xref:System.IDi
 
 ## Implement the dispose pattern
 
-All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the dispose pattern for any potential base class, you must provide the following:
-
-> [!IMPORTANT]
-> You should implement this pattern for all base classes that implement <xref:System.IDisposable.Dispose> and are not `sealed` (`NotInheritable` in Visual Basic).
+All non-sealed classes or (Visual Basic classes not modified as `NotInheritable`) should be considered a potential base class, because they could be inherited. If you implement the dispose pattern for any potential base class, you must provide the following:
 
 - A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(bool)` method.
 - A `Dispose(bool)` method that performs the actual work of releasing resources.

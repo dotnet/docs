@@ -1,5 +1,6 @@
 ---
 title: "Selective serialization"
+description: This article shows you how to mark fields with the NonSerialized attribute, which prevents that field from being serialized.
 ms.date: "08/07/2017"
 dev_langs: 
   - "CSharp"

@@ -24,7 +24,7 @@ The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=n
 <a name="Dispose2"></a>
 ## Dispose() and Dispose(bool)
 
-The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. Additionally, any non-sealed class requires two `Dispose` methods to be implemented:
+The <xref:System.IDisposable> interface requires the implementation of a single parameterless method, <xref:System.IDisposable.Dispose%2A>. Also, any non-sealed class requires an additional `Dispose(bool)` overload method to be implemented:
 
 - A `public` non-virtual (`NonInheritable` in Visual Basic) <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation that has no parameters.
 

@@ -1,6 +1,6 @@
 ---
 title: "Cleaning up unmanaged resources"
-ms.date: 05/11/2020
+ms.date: 05/12/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Close method"
@@ -43,11 +43,8 @@ Consumers of your type can then call your <xref:System.IDisposable.Dispose%2A?di
 
 ## Reference
 
-<xref:System.IDisposable?displayProperty=nameWithType>\
-Defines the <xref:System.IDisposable.Dispose%2A> method for releasing unmanaged resources.
-
-<xref:System.Object.Finalize%2A?displayProperty=nameWithType>\
-Provides for object finalization if unmanaged resources are not released by the <xref:System.IDisposable.Dispose%2A> method.
-
-<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>\
-Suppresses finalization. This method is customarily called from a `Dispose` method to prevent a finalizer from executing.
+| Type / Member | Description |
+|--|--|
+| <xref:System.IDisposable?displayProperty=nameWithType> | Defines the <xref:System.IDisposable.Dispose%2A> method for releasing unmanaged resources. |
+| <xref:System.Object.Finalize%2A?displayProperty=nameWithType> | Provides for object finalization if unmanaged resources are not released by the <xref:System.IDisposable.Dispose%2A> method. |
+| <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> | Suppresses finalization. This method is customarily called from a `Dispose` method to prevent a finalizer from executing. |

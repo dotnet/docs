@@ -42,11 +42,10 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine($"Found property name: {reader.GetString()}");
             Console.WriteLine($"String in buffer is: {System.Text.Encoding.UTF8.GetString(span)}");
-            if (!reader.Read())
+            while (!reader.Read())
             {
                 // Not enough of the JSON is in the buffer to complete a read.
                 GetMoreBytesFromStream(stream, ref buffer, ref span, ref reader);
-                reader.Read();
             }
             System.Console.WriteLine($"Found property value: {reader.GetString()}");
         }

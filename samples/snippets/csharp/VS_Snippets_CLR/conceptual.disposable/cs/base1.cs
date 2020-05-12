@@ -1,7 +1,6 @@
 ﻿// <Snippet9>
 using Microsoft.Win32.SafeHandles;
 using System;
-using System.IO;
 using System.Runtime.InteropServices;
 
 public class DisposableStreamResource : IDisposable
@@ -22,7 +21,8 @@ public class DisposableStreamResource : IDisposable
         IntPtr hTemplateFile);
 
     [DllImport("kernel32.dll")]
-    private static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
+    private static extern int GetFileSize(
+        SafeFileHandle hFile, out int lpFileSizeHigh);
 
     // Define locals.
     private bool _disposed = false;

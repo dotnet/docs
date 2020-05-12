@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 class DerivedClass : BaseClass
 {
     // To detect redundant calls
-    bool _disposed = false;
+    private bool _disposed = false;
 
     // Instantiate a SafeHandle instance.
-    SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+    private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
 
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)
@@ -36,7 +36,7 @@ class DerivedClass : BaseClass
 class BaseClass : IDisposable
 {
     // To detect redundant calls
-    bool _disposed = false;
+    private bool _disposed = false;
 
     // Public implementation of Dispose pattern callable by consumers.
     public void Dispose() => Dispose(true);

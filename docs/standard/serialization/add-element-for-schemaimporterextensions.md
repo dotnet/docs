@@ -1,5 +1,6 @@
 ---
 title: "<add> Element for <schemaImporterExtensions>"
+description: The <add> element adds types used by the XmlSchemaImporter class for mapping XSD types to .NET Framework types. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"

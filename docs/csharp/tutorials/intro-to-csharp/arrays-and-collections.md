@@ -39,7 +39,7 @@ namespace list_tutorial
 
 Replace `<name>` with your name. Save *Program.cs*. Type `dotnet run` in your console window to try it.
 
-You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier tutorials to loop through the list.
+You've created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier tutorials to loop through the list.
 
 The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature.  When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A> method.
 
@@ -71,7 +71,7 @@ Console.WriteLine($"My name is {names[0]}");
 Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
 ```
 
-You cannot access an index beyond the end of the list. Remember that indices start at 0, so the largest valid index is one less than the number of items in the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code at the end of the Main method:
+You can't access an index beyond the end of the list. Remember that indices start at 0, so the largest valid index is one less than the number of items in the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code at the end of the Main method:
 
 ```csharp
 Console.WriteLine($"The list has {names.Count} people in it");
@@ -106,7 +106,7 @@ else
 }
 ```
 
-The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically in the case of strings). Add this code to the bottom of our `Main` method:
+The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code to the bottom of our `Main` method:
 
 ```csharp
 names.Sort();
@@ -118,7 +118,7 @@ foreach (var name in names)
 
 Save the file and type `dotnet run` to try this latest version.
 
-Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithStrings` and write a new `Main` method that calls `WorkingWithStrings`. When you have finished, your code should look like this:
+Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithStrings` and write a new `Main` method that calls `WorkingWithStrings`. When you've finished, your code should look like this:
 
 ```csharp
 using System;

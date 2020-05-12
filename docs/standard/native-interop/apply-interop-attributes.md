@@ -1,5 +1,6 @@
 ---
 title: "Applying Interop Attributes"
+description: This article summarizes COM interop attributes of the System.Runtime.InteropServices namespace, including design-time and conversion-tool attributes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "design-time attributes"

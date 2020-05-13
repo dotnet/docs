@@ -1,5 +1,6 @@
 ---
 title: "Steps in the serialization process"
+description: The serialization process begins when the Serialize method is called on a formatter. This article describes the sequence of events.
 ms.date: "08/07/2017"
 helpviewer_keywords: 
   - "binary serialization, steps"

@@ -1,5 +1,6 @@
 ---
 title: "Assemblies in .NET"
+description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
 ms.date: 08/15/2019
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:

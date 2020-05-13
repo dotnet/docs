@@ -1,5 +1,6 @@
 ---
 title: "Serialization concepts"
+description: Serialization can be used to capture the state of an object so a copy can be created or to send an object by value from one application domain to another. 
 ms.date: "08/07/2017"
 ms.assetid: e1ff4740-20a1-4c76-a8ad-d857db307054
 ---

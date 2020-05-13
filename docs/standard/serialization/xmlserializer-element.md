@@ -1,5 +1,6 @@
 ---
 title: "<xmlSerializer> Element"
+description: The <xmlSerializer> element specifies whether an additional check of progress of the XmlSerializer is done.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<xmlSerializer> element"

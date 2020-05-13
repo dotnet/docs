@@ -10,7 +10,7 @@ namespace SystemTextJsonSamples
     {
         public static void Run()
         {
-            Console.WriteLine("Deserialize JSON string [1, 2, 3], then deserialize");
+            Console.WriteLine("Deserialize JSON string [1, 2, 3], then serialize it back to JSON.");
             Stack<int> stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]");
             string serialized = JsonSerializer.Serialize(stack);
             Console.WriteLine($"Result is reverse order {serialized}");
@@ -28,4 +28,3 @@ namespace SystemTextJsonSamples
         }
     }
 }
-

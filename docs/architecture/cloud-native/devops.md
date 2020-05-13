@@ -1,6 +1,6 @@
 ---
 title: DevOps
-description: Architecting Cloud Native .NET Apps for Azure | Cloud Native DevOps
+description: DevOps considerations for cloud-native applications
 ms.date: 05/12/2020
 ---
 

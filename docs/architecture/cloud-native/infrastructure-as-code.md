@@ -1,6 +1,6 @@
 ---
 title: Infrastructure as code
-description: Architecting Cloud Native .NET Apps for Azure | Infrastructure As Code
+description: Embracing Infrastructure as Code (IaC) with cloud-native applications
 ms.date: 05/12/2020
 ---
 
@@ -91,7 +91,7 @@ resource "azurerm_storage_account" "testsa" {
 
 **Figure 10-16** - An example of a Resource Manager template
 
-Terraform also provides intuitive error messages for problem templates. There's also a handy validate task that can be used in the build phase to catch template errors early. 
+Terraform also provides intuitive error messages for problem templates. There's also a handy validate task that can be used in the build phase to catch template errors early.
 
 As with Resource Manager templates, command-line tools are available to deploy Terraform templates. There are also community-created tasks in Azure Pipelines that can validate and apply Terraform templates.
 

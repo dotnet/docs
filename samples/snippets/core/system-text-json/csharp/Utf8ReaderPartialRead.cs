@@ -22,7 +22,7 @@ namespace SystemTextJsonSamples
             byte[] bytes = Encoding.UTF8.GetBytes(jsonString);
             var stream = new MemoryStream(bytes);
 
-            var buffer = new byte[10];
+            var buffer = new byte[4096];
             var span = new Span<byte>(buffer);
 
             // Fill the buffer

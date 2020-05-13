@@ -24,7 +24,7 @@ namespace SystemTextJsonSamples
             // </SnippetRegister>
             stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options);
             serialized = JsonSerializer.Serialize(stack, options);
-            Console.WriteLine($"Result is same order {serialized}");
+            Console.WriteLine($"Result is in same order: {serialized}");
         }
     }
 }

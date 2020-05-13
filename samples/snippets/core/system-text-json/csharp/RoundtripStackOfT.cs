@@ -15,7 +15,7 @@ namespace SystemTextJsonSamples
             string serialized = JsonSerializer.Serialize(stack);
             Console.WriteLine($"Result is in reverse order: {serialized}");
 
-            Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then deserialize");
+            Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then serialize it back to JSON.");
             // <SnippetRegister>
             var options = new JsonSerializerOptions
             {

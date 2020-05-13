@@ -3,7 +3,7 @@ title: Install .NET Core on Ubuntu 20.04 package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 20.04.
 author: thraka
 ms.author: adegeo
-ms.date: 04/15/2020
+ms.date: 05/13/2020
 ---
 
 # Ubuntu 20.04 Package Manager - Install .NET Core

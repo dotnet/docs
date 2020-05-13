@@ -3,7 +3,7 @@ title: .NET Core SDK and runtime dependencies - .NET Core
 description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on Windows, Linux, and macOS.
 author: leecow
 ms.author: leecow
-ms.date: 12/04/2019
+ms.date: 04/30/2020
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -289,6 +289,24 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 > Most versions of CentOS and Fedora include an earlier version of libgdiplus. You can install a recent version
 > of libgdiplus by adding the Mono repository to your system. For more information,
 > see <https://www.mono-project.com/download/stable/>.
+
+### Alpine
+
+Alpine distributions require the following libraries to be installed:
+
+- icu-libs (this is not needed if globalization is disabled)
+- krb5-libs
+- libcurl
+- libintl
+- libssl1.1 (for Alpine 3.9 or later) or libssl1.0 (for older ones)
+- libstdc++
+- lttng-ust
+- numactl (optional, useful only for devices with NUMA enabled)
+- zlib
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (it is available only in the edge/testing repository)
 
 ::: zone-end
 

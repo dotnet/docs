@@ -1,5 +1,6 @@
 ---
 title: "<dateTimeSerialization> Element"
+description: This article describes the <dateTimeSerialization> element, which determines the serialization mode of DateTime objects.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dateTimeSerialization element"

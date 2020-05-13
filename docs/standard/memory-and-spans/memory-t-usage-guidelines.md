@@ -1,5 +1,6 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
+description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET Core that can be used in pipelines.
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"

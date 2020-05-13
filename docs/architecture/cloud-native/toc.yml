@@ -43,8 +43,8 @@
       href: grpc.md
     - name: Service Mesh communication infrastructure
       href: service-mesh-communication-infrastructure.md
-  - name: Distributed Data
-    href: database-per-microservice.md
+  - name: Distributed data
+    href: distributed-data.md
     items:
     - name: Relational vs. NoSQL data
       href: relational-vs-nosql-data.md
@@ -86,10 +86,14 @@
     items:
     - name: Azure Security for cloud-native apps
       href: azure-security.md
-  - name: Cloud-native DevOps
+  - name: DevOps
     href: devops.md
     items:
+    - name: Feature flags
+      href: feature-flags.md      
     - name: Infrastructure as Code
       href: infrastructure-as-code.md
     - name: Cloud Native Application Bundles
       href: application-bundles.md
+  - name: Summary
+    href: summary.md

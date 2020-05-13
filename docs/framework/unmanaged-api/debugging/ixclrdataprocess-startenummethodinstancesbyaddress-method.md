@@ -45,7 +45,7 @@ HRESULT StartEnumMethodInstancesByAddress(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 27th slot of the virtual method table.
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 28th slot of the virtual method table.
 
 ## Requirements
 

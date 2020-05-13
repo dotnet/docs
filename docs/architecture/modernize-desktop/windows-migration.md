@@ -78,7 +78,7 @@ them to interact with other apps the same way classic desktop applications do.
 
 ##### Installation
 
-App packages are installed under *C:\\Program Files\\WindowsApps\\package_name*, with the executable titled `app_name.exe`. Each package folder contains a manifest (named `AppxManifest.xml`) that contains a special XML namespace for
+App packages are installed under *%ProgramFiles%\\WindowsApps\\package_name*, with the executable titled `app_name.exe`. Each package folder contains a manifest (named `AppxManifest.xml`) that contains a special XML namespace for
 packaged apps. Inside that manifest file is an `<EntryPoint>` element, which references the full-trust app. When that application is launched, it doesn't run inside an app container, but instead it runs as the user as it normally
 would.
 

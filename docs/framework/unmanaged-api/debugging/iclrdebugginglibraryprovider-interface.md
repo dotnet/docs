@@ -25,7 +25,7 @@ Includes the [ProvideLibrary Method](iclrdebugginglibraryprovider-providelibrary
 |[ProvideLibrary Method](iclrdebugginglibraryprovider-providelibrary-method.md)|Allows the debugger to provide a handle to a module which can be used to load a debug library.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -69,7 +69,7 @@ Try the same for the **SubBlock** node corresponding to the `Main()` method in t
 
 ---
 
-The syntax graph viewer has an option to display a legend its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
+The syntax graph viewer has an option to display a legend for its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
 
 You can view syntax graphs for different items in the tree repeatedly and the graphs will always be displayed in the same window inside Visual Studio. You can dock this window at a convenient location inside Visual Studio so that you don’t have to switch between tabs to view a new syntax graph. The bottom, below code editor windows, is often convenient.
 
@@ -133,4 +133,4 @@ You can read more about APIs for performing semantic analysis in the [Work with 
 
 ## Closing the syntax visualizer
 
-You can close the visualizer window when you are not using it to examine source code. The syntax visualizer updates its display as you navigate through code, editing and changing source. It can get distracting when you are not using it.
+You can close the visualizer window when you are not using it to examine source code. The syntax visualizer updates its display as you navigate through code, editing and changing the source. It can get distracting when you are not using it.

@@ -51,7 +51,7 @@ HRESULT Request([in] ULONG32 reqCode,
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataModule` interface and corresponds to the 36th slot of the virtual method table.
+The provided method is part of the `IXCLRDataModule` interface and corresponds to the 37th slot of the virtual method table.
 
 ## Requirements
 

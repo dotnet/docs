@@ -44,7 +44,7 @@ coclass CorpubPublish {
  A typical publishing scenario involves a developer who wants to debug managed code that is running on a computer within an application domain. The hosting environment may be running more than one application domain within a process. The developer would like to use a graphical user interface or some other means to list all of the processes that are running on the computer, and pick a specific process. The listing should include all of the application domains within processes that are running managed code. The developer can then identify the specific application domain and attach a debugger to that domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl  
   

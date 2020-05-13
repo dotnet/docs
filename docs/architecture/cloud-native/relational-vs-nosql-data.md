@@ -221,7 +221,7 @@ Azure Cosmos DB offers five well-defined [consistency models](https://docs.micro
 
 **Figure 5-16**: Cosmos DB Consistency Level Description
 
-In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Cloud Developer Advocate Jeremy Likeness provides an excellent explanation of the five models.
+In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Program Manager Jeremy Likness provides an excellent explanation of the five models.
 
 ### Partitioning
 
@@ -279,5 +279,5 @@ One of the more time-consuming tasks is migrating data from one data platform to
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]
->[Previous](database-per-microservice.md)
+>[Previous](distributed-data.md)
 >[Next](azure-caching.md)

@@ -49,7 +49,7 @@ If the function is virtual, `CallFunction` will perform virtual dispatch. If the
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorDebug.idl, CorDebug.h
 

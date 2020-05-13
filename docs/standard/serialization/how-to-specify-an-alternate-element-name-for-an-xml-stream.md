@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify an Alternate Element Name for an XML Stream"
+description: Learn how to create an XML stream with an alternate element name, for instance, for XML Web services that require the same information with slight differences.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -40,14 +40,14 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-  You can run `dotnet new --list` to see a list of all installed templates. If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column from the returned table, a substring match is performed on those two columns.
+  You can run `dotnet new --list` or `dotnet new -l` to see a list of all installed templates. If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column from the returned table, a substring match is performed on those two columns.
 
   Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 
   - If the CLI can't find a template match when invoking `dotnet new`, not even partial.
   - If there's a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
-  The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
+  The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
 | Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
@@ -78,19 +78,19 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | Razor Class Library                          | [razorclasslib](#razorclasslib) | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
 | ASP.NET Core Web API                         | [webapi](#webapi)               | [C#], F#     | Web/WebAPI                            | 1.0        |
 | ASP.NET Core gRPC Service                    | [grpc](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
-| Protocol Buffer File                         | [proto](#namespace)             |              | Web/gRPC                              | 3.0        |
 | dotnet gitignore file                        | `gitignore`                     |              | Config                                | 3.0        |
 | global.json file                             | [globaljson](#globaljson)       |              | Config                                | 2.0        |
 | NuGet Config                                 | `nugetconfig`                   |              | Config                                | 1.0        |
-| dotnet local tool manifest file              | `tool-manifest`                 |              | Config                                | 3.0        |
+| Dotnet local tool manifest file              | `tool-manifest`                 |              | Config                                | 3.0        |
 | Web Config                                   | `webconfig`                     |              | Config                                | 1.0        |
 | Solution File                                | `sln`                           |              | Solution                              | 1.0        |
+| Protocol Buffer File                         | [proto](#namespace)             |              | Web/gRPC                              | 3.0        |
 
 ## Options
 
 - **`--dry-run`**
 
-  Displays a summary of what would happen if the given command were run. Available since .NET Core 2.2 SDK.
+  Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
 
 - **`--force`**
 
@@ -133,7 +133,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`--type <TYPE>`**
 
-  Filters templates based on available types. Predefined values are `project`, `item`, or `other`.
+  Filters templates based on available types. Predefined values are `project`, `item`, and `other`.
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
@@ -501,7 +501,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-rrc|--razor-runtime-compilation`**
 
-  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1 SDK.
+  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1.201 SDK.
 
 ***
 

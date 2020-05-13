@@ -38,5 +38,5 @@ can coexist at any given time on a single machine. How the version gets picked w
 
 - [.NET Core CLI overview](tools/index.md)
 - [.NET Core versioning overview](versions/index.md)
-- [How to remove the .NET Core runtime and SDK](versions/remove-runtime-sdk-versions.md)
+- [How to remove the .NET Core runtime and SDK](install/remove-runtime-sdk-versions.md)
 - [Select the .NET Core version to use](versions/selection.md)

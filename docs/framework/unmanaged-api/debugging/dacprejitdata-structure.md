@@ -54,7 +54,7 @@ struct MSLAYOUT DacpReJitData
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above. The structure must also be defined using `ms_struct` packing if not using the Microsoft compilers.
 
 ## Requirements
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  

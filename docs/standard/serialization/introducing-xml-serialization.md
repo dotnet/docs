@@ -1,5 +1,6 @@
 ---
 title: Details of XML serialization
+description: Serialization converts an object into a form that can be transported. This article provides an overview of XML serialization and the XmlSerializer class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

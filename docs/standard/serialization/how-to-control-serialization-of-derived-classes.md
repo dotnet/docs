@@ -1,5 +1,6 @@
 ---
 title: "How to: Control Serialization of Derived Classes"
+description: You can customize an XML stream by deriving a class from an existing class and instructing the XmlSerializer instance how to serialize the new class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

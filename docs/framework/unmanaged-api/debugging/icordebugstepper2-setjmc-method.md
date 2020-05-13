@@ -32,7 +32,7 @@ HRESULT SetJMC (
  [in] Set to `true` to step only through code that is authored by an application's developer; otherwise, set to `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

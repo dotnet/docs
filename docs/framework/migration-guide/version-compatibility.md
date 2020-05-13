@@ -27,7 +27,7 @@ To define the specific versions on which your app runs, add one or more [\<suppo
 </configuration>
 ```
 
-For more information, see [How to: Configure an App to Support .NET Framework 4 or 4.x](../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md).
+For more information, see [How to: Configure an App to Support .NET Framework 4 or 4.x](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md).
 
 ## Version compatibility for components
 
@@ -45,7 +45,7 @@ If your app or component doesn't work as expected on the .NET Framework 4.5 (inc
 
 - If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application compatibility](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
 
-- If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](../migration-guide/net-framework-4-migration-issues.md).
+- If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](net-framework-4-migration-issues.md).
 
 - If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
@@ -65,6 +65,6 @@ If you can't find a suitable workaround for your issue, remember that .NET Frame
 
 - [What's New](../whats-new/index.md)
 - [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)
-- [Application Compatibility](../migration-guide/application-compatibility.md)
+- [Application Compatibility](application-compatibility.md)
 - [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
-- [.NET Framework 4 Migration Issues](../migration-guide/net-framework-4-migration-issues.md)
+- [.NET Framework 4 Migration Issues](net-framework-4-migration-issues.md)

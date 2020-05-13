@@ -1,5 +1,6 @@
 ---
 title: "How to: View assembly contents"
+description: You can use the IL Disassembler to view an assembly's attributes and references to other modules and assemblies.
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assembly manifest, viewing information"

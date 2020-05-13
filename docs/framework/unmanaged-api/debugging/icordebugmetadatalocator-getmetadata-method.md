@@ -54,7 +54,7 @@ HRESULT GetMetaData(
  `wszPathBuffer`  
  [out] Pointer to a buffer into which the debugger will copy the full path of the file that contains the requested metadata.  
   
- The `ofReadOnly` flag from the [CorOpenFlags](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.  
+ The `ofReadOnly` flag from the [CorOpenFlags](../metadata/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure. All other failure HRESULTs indicate that the file is not retrievable.  
@@ -68,7 +68,7 @@ HRESULT GetMetaData(
  If `wszImagePath` contains a full path for a module from a dump, it specifies the path from the computer where the dump was collected. The file may not exist at this location, or an incorrect file with the same name may be stored on the path.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

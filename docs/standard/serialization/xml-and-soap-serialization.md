@@ -1,5 +1,6 @@
 ---
 title: "XML and SOAP Serialization"
+description: This overview discusses XML serialization, which can be used to serialize objects into XML streams that conform to the SOAP specification.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SOAP, XML serialization"

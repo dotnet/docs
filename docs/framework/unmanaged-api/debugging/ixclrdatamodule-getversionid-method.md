@@ -37,7 +37,7 @@ HRESULT GetVersionId(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataModule` interface and corresponds to the 40th slot of the virtual method table.
+The provided method is part of the `IXCLRDataModule` interface and corresponds to the 41st slot of the virtual method table.
 
 ## Requirements
 

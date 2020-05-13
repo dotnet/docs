@@ -1,5 +1,6 @@
 ---
 title: "Examples of XML Serialization"
+description: These code examples show advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to an XML Schema document.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

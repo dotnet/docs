@@ -1,5 +1,6 @@
 ---
 title: "Assembly versioning"
+description: Learn about versioning of .NET assemblies. All versioning of assemblies that use the CLR is done at the assembly level.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "informational versions"

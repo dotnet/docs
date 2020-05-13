@@ -35,9 +35,6 @@ items:
 
     Let's keep exploring.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Modify list contents
   durationInMinutes: 3
   content: |
@@ -73,9 +70,6 @@ items:
 
     Select **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Search and sort lists
   durationInMinutes: 5
   content: |
@@ -102,9 +96,6 @@ items:
     }
     ```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Lists of other types
   durationInMinutes: 5
   content: |
@@ -128,16 +119,10 @@ items:
 
     Press **Run** to see the results;
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Challenge
   durationInMinutes: 10
   content: |
     See if you can put together some of the concepts from this and earlier lessons. Expand on what you've built so far with Fibonacci Numbers. Try and write the code to generate the first 20 numbers in the sequence. (As a hint, the 20th Fibonacci number is 6765.)
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Complete challenge
   durationInMinutes: 3
@@ -159,9 +144,6 @@ items:
     ```
 
     With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
     You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.

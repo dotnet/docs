@@ -28,9 +28,9 @@ Here are some companies who have implemented these techniques. Think about the s
 
 | Company | Experience |
 | :-------- | :-------- |
-| [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys a hundred times per day. |
-| [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services stored in production. Deploys several thousand builds each week. |
-| [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 300+ services in production. Makes almost 1,000 changes per day. |
+| [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys hundred times per day. |
+| [Uber](https://eng.uber.com/micro-deploy/) | Has 1,000+ services in production. Deploys several thousand times each week. |
+| [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 300+ services in production. Deploys 1,000 times a day. |
 
 As you can see, Netflix, Uber, and WeChat expose systems that consist of hundreds of independent microservices. This architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
 
@@ -161,7 +161,7 @@ Earlier in the chapter, we compared an eCommerce application built as a monolith
 
 - Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power or network bandwidth. This  fine-grained approach to scaling provides for greater control of your system and helps to reduce overall costs as you scale portions of your system, not everything.
 
-An excellent reference guide for understanding microservices is [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/standard/microservices-architecture/). The book deep dives into microservices design and architecture. It's a companion for a [full-stack microservice reference architecture](https://github.com/dotnet-architecture/eShopOnContainers) available as a free download from Microsoft.
+An excellent reference guide for understanding microservices is [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook). The book deep dives into microservices design and architecture. It's a companion for a [full-stack microservice reference architecture](https://github.com/dotnet-architecture/eShopOnContainers) available as a free download from Microsoft.
 
 ### Developing microservices
 

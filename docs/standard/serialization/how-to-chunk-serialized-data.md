@@ -1,5 +1,6 @@
 ---
 title: "How to: chunk serialized data"
+description: You can chunk data to avoid problems with large datasets. Implement the IXmlSerializable interface to control serialization and deserialization.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

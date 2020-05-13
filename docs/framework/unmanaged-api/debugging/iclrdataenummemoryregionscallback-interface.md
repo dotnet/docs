@@ -25,7 +25,7 @@ Provides a callback method for [ICLRDataEnumMemoryRegions::EnumMemoryRegions](ic
 |[EnumMemoryRegion Method](iclrdataenummemoryregionscallback-enummemoryregion-method.md)|Called by `ICLRDataEnumMemoryRegions::EnumMemoryRegions` to report to the debugger the result of an attempt to enumerate a specified region of memory.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

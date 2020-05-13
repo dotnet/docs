@@ -46,7 +46,7 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
  `ICorDebugStackWalk` returns only actual stack frames. Use the [ICorDebugThread3::GetActiveInternalFrames](icordebugthread3-getactiveinternalframes-method.md) method to return internal frames. (Internal frames are data structures pushed onto the stack by the runtime to store temporary data.)  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -50,7 +50,7 @@ Console.WriteLine(newCustOrd)
  This code produces the following output:  
   
 ```xml  
-        <Root>  
+<Root>  
 <Customer CustomerID="GREAL">  
   <CompanyName>Great Lakes Food Market</CompanyName>  
   <ContactName>Howard Snyder</ContactName>  
@@ -80,7 +80,8 @@ Console.WriteLine(newCustOrd)
   </FullAddress>  
   <Orders />  
 </Customer>  
-. . .  
+...
+</Root>
 ```  
   
 ## Example  

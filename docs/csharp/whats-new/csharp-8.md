@@ -90,7 +90,7 @@ For more information, see the [`readonly` instance members](../language-referenc
 
 You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface methods affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affect many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -177,7 +177,7 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
     location switch
     {
         { State: "WA" } => salePrice * 0.06M,
-        { State: "MN" } => salePrice * 0.75M,
+        { State: "MN" } => salePrice * 0.075M,
         { State: "MI" } => salePrice * 0.05M,
         // other cases removed for brevity...
         _ => 0M

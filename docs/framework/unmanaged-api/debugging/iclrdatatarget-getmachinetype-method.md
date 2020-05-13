@@ -32,7 +32,7 @@ HRESULT GetMachineType (
  [out] A pointer to a value that indicates the instruction set that the target process is using. The returned `machineType` is one of the IMAGE_FILE_MACHINE constants, which are defined in the WinNT.h header file.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

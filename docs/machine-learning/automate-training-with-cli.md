@@ -41,7 +41,7 @@ mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" 
 
 ![image](media/automate-training-with-cli/cli-model-generation.gif)
 
-You can run it the same way on *Windows PowerShell*, *macOS/Linux bash, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
+You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
 
 ## Output assets generated
 

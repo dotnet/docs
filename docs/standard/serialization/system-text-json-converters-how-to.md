@@ -285,7 +285,7 @@ The converter code in the preceding example reads and writes each property manua
 
 If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. To support serialization and deserialization that retains the original order in the stack, a custom converter is required.
 
-The following code shows a custom converter that enables round trips to and from `Stack<T>` objects:
+The following code shows a custom converter that enables round-tripping to and from `Stack<T>` objects:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/JsonConverterFactoryForStackOfT.cs)]
 

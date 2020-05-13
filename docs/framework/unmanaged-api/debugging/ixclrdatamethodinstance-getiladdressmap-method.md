@@ -45,7 +45,7 @@ HRESULT GetILAddressMap(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataMethodInstance` interface and corresponds to the 14th slot of the virtual method table.
+The provided method is part of the `IXCLRDataMethodInstance` interface and corresponds to the 15th slot of the virtual method table.
 
 ## Requirements
 

@@ -43,7 +43,6 @@ This file will contain the definition of a ***bank account***. Object Oriented p
 
 You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it *BankAccount.cs*. Add the following code to your *BankAccount.cs* file:
 
-
 ```csharp
 using System;
 

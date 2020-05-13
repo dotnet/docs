@@ -32,7 +32,7 @@ Today, developers write and build the code for an app and then pass the generate
 
 You can see the process reflected on the following picture:
 
-![Diagram showing the modern IT lifecycle](./media/deploy-modern-desktop-applications/modern-it-application-lifecycle.png)
+![Diagram showing the modern IT lifecycle](./media/deploy-modern-applications/modern-it-application-lifecycle.png)
 
 Companies need a way to break this packaging cycle into three independent cycles:
 
@@ -49,7 +49,7 @@ The previous diagram shows that you can:
 
 This radical change leads us to the new and modern IT lifecycle as shown in the following picture:
 
-![Diagram showing the application lifecycle using Microsoft tools](./media/deploy-modern-desktop-applications/microsoft-it-tools.png)
+![Diagram showing the application lifecycle using Microsoft tools](./media/deploy-modern-applications/microsoft-it-tools.png)
 
 Developers create the app and generate an MSIX package that IT Pros can consume and configure without the need of repackaging. Along with the MSIX technology, Microsoft has created tools to allow IT to customize and configure packages without repackaging.
 
@@ -63,7 +63,7 @@ Before MSIX, there were several packaging technologies available like setup wiza
 
 With MSIX, you get one installer technology with all these features.
 
-![Diagram showing the different technologies that had an impact on building MSIX](./media/deploy-modern-desktop-applications/msix.png)
+![Diagram showing the different technologies that had an impact on building MSIX](./media/deploy-modern-applications/msix.png)
 
 ### Benefits of MSIX
 
@@ -81,7 +81,7 @@ With the use of resource packages, you can easily create multilingual apps and t
 
 MSIX detects the differences on the files at the byte block level enabling a feature called differential updates. What this means is that only the updated byte blocks are downloaded on application updates.
 
-![A diagram that shows how MSIX manages differential updates](./media/deploy-modern-desktop-applications/msix-managing-updates.png)
+![A diagram that shows how MSIX manages differential updates](./media/deploy-modern-applications/msix-managing-updates.png)
 
 With streaming installation, the user can quickly start working on your application while other parts of the app are downloaded on the background. This feature contributes to an engaging experience for your users.
 
@@ -116,7 +116,7 @@ You can use the **Windows Application Packaging Project** project in Visual St
 
 The MSIX Packaging Tool enables you to repackage your existing Win32 applications to the MSIX format. It offers both an interactive UI and a command line for conversions and gives you the ability to convert an application without having the source code.
 
-![MSIX Packaging Tool](./media/deploy-modern-desktop-applications/msix-packaging-tool.png)
+![MSIX Packaging Tool](./media/deploy-modern-applications/msix-packaging-tool.png)
 
 #### Package Support Framework
 
@@ -132,29 +132,29 @@ Let's go through the process to create an MSIX package from an existing Win32 ap
 
 To start, add a new project to your solution, select the Windows Application Packaging Project, and give it a name.
 
-![Adding new Windows Application Packaging Project](./media/deploy-modern-desktop-applications/add-packaging-project.png)
+![Adding new Windows Application Packaging Project](./media/deploy-modern-applications/add-packaging-project.png)
 
 You'll see the structure of the packaging project and note a special folder called *Applications*. Inside this folder, you can specify which applications you want to include in the package. It can be more than one.
 
-![The structure of the packaging project](./media/deploy-modern-desktop-applications/packaging-project.png)
+![The structure of the packaging project](./media/deploy-modern-applications/packaging-project.png)
 
 Right-click on the *Applications* folder and select the Windows Forms project you want to package from the Visual Studio solution.
 
-![Adding the Windows Forms project to the Packaging Project](./media/deploy-modern-desktop-applications/add-winforms-project.png)
+![Adding the Windows Forms project to the Packaging Project](./media/deploy-modern-applications/add-winforms-project.png)
 
 At this point, you can compile and generate the package but let's examine a couple of things. To have a better user experience, Visual Studio can autogenerate all the visual assets a modern application needs to handle icons and tile assets for the tile bar and start menu. Open the *Package.appxmanifest* file to access the Manifest Designer. You can then generate all the visual assets from a given image present on your project just by clicking **Create**.
 
-![Screenshot of the Manifest Designer in Visual Studio](./media/deploy-modern-desktop-applications/manifest-designer.png)
+![Screenshot of the Manifest Designer in Visual Studio](./media/deploy-modern-applications/manifest-designer.png)
 
 If you open the code for the *Package.appxmanifest* file, you can see a couple of interesting things.
 
 Right under `<Package>`, there's an `<Identity>` node. This is where your packaged application is going to get its identity, which will be managed by the OS.
 
-![Identity node](./media/deploy-modern-desktop-applications/identity-node.png)
+![Identity node](./media/deploy-modern-applications/identity-node.png)
 
 In the `<Capabilities>` node, you can find all the requirements the application needs, paying special attention to the `<rescap:Capability Name="runFullTrust" \>`, which tells the OS to run the app in full trust mode since it's a Win32 application.
 
-![Capabilities node](./media/deploy-modern-desktop-applications/capabilities-node.png)
+![Capabilities node](./media/deploy-modern-applications/capabilities-node.png)
 
 Set the packaging project as the startup project for the solution and select *Run*. This is going to:
 
@@ -164,7 +164,7 @@ Set the packaging project as the startup project for the solution and select *Ru
 - Install it locally on the development machine.
 - Launch the app.
 
-![Our installed application](./media/deploy-modern-desktop-applications/our-installed-application.png)
+![Our installed application](./media/deploy-modern-applications/our-installed-application.png)
 
 With this, you have the clean install and uninstall experience that MSIX provides fully integrated into Windows 10.
 
@@ -174,13 +174,13 @@ Right-click on the packaging project, select the **Store** menu, and then select
 
 Then, you can choose between creating a package to upload to the store or creating packages for sideloading. In most modernization scenarios, you'll choose **I want to create packages for sideloading**.
 
-![Configuring Packages](./media/deploy-modern-desktop-applications/configuring-packages.png)
+![Configuring Packages](./media/deploy-modern-applications/configuring-packages.png)
 
 There you can select the different architectures you want to target as you can include as many as you want into the same MSIX package.
 
 The final step is to declare where you want to deploy the final installation assets.
 
-![Configure Update Settings](./media/deploy-modern-desktop-applications/configure-update-settings.png)
+![Configure Update Settings](./media/deploy-modern-applications/configure-update-settings.png)
 
 You can choose to use a web server of a shared UNC path on your enterprise file servers. Pay attention to the settings to specify how you want to update your application. We'll cover application updates in the next section.
 
@@ -206,7 +206,7 @@ When you use this type of deployment, a special file is created called *.appinst
 - The application's main MSIX package properties
 - The update behavior
 
-![.appinstaller file](./media/deploy-modern-desktop-applications/appinstaller-file.png)
+![.appinstaller file](./media/deploy-modern-applications/appinstaller-file.png)
 
 In combination with this file, Microsoft has designed a special URL protocol to launch the installation process from a link:
 

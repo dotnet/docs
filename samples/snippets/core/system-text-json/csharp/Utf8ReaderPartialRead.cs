@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Text.Json;
 
 namespace SystemTextJsonSamples
@@ -18,60 +19,60 @@ namespace SystemTextJsonSamples
                 ""Summary"": ""Hot"",
             }";
 
-            var bytes = System.Text.Encoding.UTF8.GetBytes(jsonString.Trim());
+            byte[] bytes = Encoding.UTF8.GetBytes(jsonString);
             var stream = new MemoryStream(bytes);
 
             var buffer = new byte[10];
             var span = new Span<byte>(buffer);
 
             // Fill the buffer
-            var read = stream.Read(span);
+            stream.Read(span);
 
-            var reader = new Utf8JsonReader(span, false, state: default);
-            Console.WriteLine($"String in buffer is: {System.Text.Encoding.UTF8.GetString(span)}");
+            var reader = new Utf8JsonReader(buffer, isFinalBlock: false, state: default);
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(span)}");
 
             // Search for "Summary" property name
-            while (reader.TokenType != JsonTokenType.PropertyName || reader.GetString() != "Summary")
+            while (reader.TokenType != JsonTokenType.PropertyName || !reader.ValueTextEquals("Summary"))
             {
                 if (!reader.Read())
                 {
                     // Not enough of the JSON is in the buffer to complete a read.
-                    GetMoreBytesFromStream(stream, ref buffer, ref span, ref reader);
+                    GetMoreBytesFromStream(stream, ref buffer, ref reader);
                 }
             }
 
-            Console.WriteLine($"Found property name: {reader.GetString()}");
-            Console.WriteLine($"String in buffer is: {System.Text.Encoding.UTF8.GetString(span)}");
+            // Found the "Summary" property name.
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(span)}");
             while (!reader.Read())
             {
                 // Not enough of the JSON is in the buffer to complete a read.
-                GetMoreBytesFromStream(stream, ref buffer, ref span, ref reader);
+                GetMoreBytesFromStream(stream, ref buffer, ref reader);
             }
-            System.Console.WriteLine($"Got property value: {reader.GetString()}");
+            Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
-        private static void GetMoreBytesFromStream(MemoryStream stream, ref byte[] buffer, ref Span<byte> span, ref Utf8JsonReader reader)
+        private static void GetMoreBytesFromStream(MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
         {
-            if (reader.BytesConsumed < span.Length)
+            int bytesRead;
+            if (reader.BytesConsumed < buffer.Length)
             {
-                ReadOnlySpan<byte> leftover = span.Slice((int)reader.BytesConsumed);
+                ReadOnlySpan<byte> leftover = buffer.AsSpan().Slice((int)reader.BytesConsumed);
 
-                if (leftover.Length == span.Length)
+                if (leftover.Length == buffer.Length)
                 {
                     Array.Resize(ref buffer, buffer.Length * 2);
-                    span = new Span<byte>(buffer);
                     Console.WriteLine($"Increased buffer size to {buffer.Length}");
                 }
 
-                leftover.CopyTo(span);
-                stream.Read(span.Slice(leftover.Length));
+                leftover.CopyTo(buffer.AsSpan());
+                bytesRead = stream.Read(buffer.AsSpan().Slice(leftover.Length));
             }
             else
             {
-                stream.Read(span);
+                bytesRead = stream.Read(buffer.AsSpan());
             }
-            Console.WriteLine($"String in buffer is: {System.Text.Encoding.UTF8.GetString(span)}");
-            reader = new Utf8JsonReader(span, false, reader.CurrentState);
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
+            reader = new Utf8JsonReader(buffer, isFinalBlock: bytesRead == 0, reader.CurrentState);
         }
     }
 }

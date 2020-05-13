@@ -1,20 +1,22 @@
 ---
 title: Infrastructure as code
 description: Architecting Cloud Native .NET Apps for Azure | Infrastructure As Code
-ms.date: 05/03/2020
+ms.date: 05/12/2020
 ---
 
 # Infrastructure as code
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Cloud-native applications favor platform as a service (PaaS) resources. In the Azure cloud, these services include things like storage, Service Bus, and the SignalR service. As applications become more complex, the number of services they consume will grow. Just as continuous delivery automated the traditional model of manual deployments, Infrastructure as Code (IaC) is evolving how application environments are managed.
+Cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. They provide automated build and release stages to ensure consistent and quality code. But, that's only part of the story. How do you provision the cloud environments upon which these systems run?
 
-Building environments can, and should, also be automated. There's a wide range of well thought out tools that can make the process easy.
+Modern cloud-native applications embrace the widely accepted practice of [Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code), or `IaC`.  With IaC, you automate platform provisioning. You essentially apply software engineering practices such as testing and versioning to your DevOps practices. Your infrastructure and deployments are automated, consistent, and repeatable. Just as continuous delivery automated the traditional model of manual deployments, Infrastructure as Code (IaC) is evolving how application environments are managed.
+
+Tools like Azure Resource Manager (ARM), Terraform, and the Azure Command Line Interface (CLI) enable you to declaratively script the cloud infrastructure you require.
 
 ## Azure Resource Manager templates
 
-ARM stands for Azure Resource Manager. It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
+ARM stands for [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/). It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
 
 Azure Resource Manager templates are a JSON-based language for defining various resources in Azure. The basic schema looks something like Figure 10-14.
 
@@ -61,9 +63,9 @@ Resource Manager templates can be run in many of ways. Perhaps the simplest way 
 
 ## Terraform
 
-A disadvantage of ARM templates is that they're specific to the Azure cloud. It's not common to create a single application that includes resources from more than one cloud. But, when spectacular uptime is required, the cost of supporting multiple clouds might be justified. If only there were a single templating tool that could be used across every major cloud platform?
+Cloud-native applications are often constructed to be `cloud agnostic`. Being so means the application isn't tightly coupled to a particular cloud vendor and can be deployed to any public cloud.
 
-Several technologies exist which do just that! The most mature offering in that space is known as [Terraform](https://www.terraform.io/). Terraform supports every major cloud player, including Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
+[Terraform](https://www.terraform.io/) is commercial templating tool that can provision cloud-native applications across all the major cloud players: Azure, Google Cloud Platform, AWS, and AliCloud. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
 
 An example Terraform file that does the same as the previous Resource Manager template (Figure 10-15) is shown in Figure 10-16:
 
@@ -89,7 +91,7 @@ resource "azurerm_storage_account" "testsa" {
 
 **Figure 10-16** - An example of a Resource Manager template
 
-Terraform also provides more sensible error messages for problem templates. There's even a handy validate task that can be used in the build phase to catch template errors early. Errors with ARM can be challenging to understand.
+Terraform also provides intuitive error messages for problem templates. There's also a handy validate task that can be used in the build phase to catch template errors early. 
 
 As with Resource Manager templates, command-line tools are available to deploy Terraform templates. There are also community-created tasks in Azure Pipelines that can validate and apply Terraform templates.
 
@@ -97,9 +99,9 @@ Sometimes Terraform and ARM templates output meaningful values, such as a connec
 
 ## Azure CLI Scripts and Tasks
 
-Finally, you could leverage Azure CLI scripts to script your application environment. Scripts can be created, found, and shared to provision and configure almost any Azure resource. The CLI is simple to use with a gentle learning curve. Scripts are executed within either PowerShell or Bash. They're also straightforward to debug, especially when compared with ARM templates.
+Finally, you can leverage [Azure CLI](https://docs.microsoft.com/cli/azure/) to declaratively script your cloud infrastructure. Azure CLI scripts can be created, found, and shared to provision and configure almost any Azure resource. The CLI is simple to use with a gentle learning curve. Scripts are executed within either PowerShell or Bash. They're also straightforward to debug, especially when compared with ARM templates.
 
-Azure CLI scripts work well when you need to tear down and redeploy your infrastructure. Updating an existing environment is another story. To start, many CLI commands aren't idempotent. That means they'll recreate the resource each time they're run, even if the resource already exists. It's always possible to add code that checks for the existence of each resource before creating it. But, doing so, your script can become bloated and difficult to manage.
+Azure CLI scripts work well when you need to tear down and redeploy your infrastructure. Updating an existing environment can be tricky. Many CLI commands aren't idempotent. That means they'll recreate the resource each time they're run, even if the resource already exists. It's always possible to add code that checks for the existence of each resource before creating it. But, doing so, your script can become bloated and difficult to manage.
 
 These scripts can also be embedded in Azure DevOps pipelines as `Azure CLI tasks`. Executing the pipeline invokes the script.
 
@@ -118,6 +120,8 @@ Figure 10-17 shows a YAML snippet that lists the version of Azure CLI and the de
 ```
 
 **Figure 10-17** - Azure CLI script
+
+In the article, [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
 
 >[!div class="step-by-step"]
 >[Previous](feature-flags.md)

@@ -316,7 +316,7 @@ To explicitly specify that a string should be formatted by using the conventions
   [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring/Program.cs#1)]
   [!code-vb[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/vb/tostring/Program.vb#1)]
 
-  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
+  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following code does:
 
   [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring/Program.cs#2)]
   [!code-vb[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/vb/tostring/Program.vb#2)]

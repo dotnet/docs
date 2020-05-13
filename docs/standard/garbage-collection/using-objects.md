@@ -14,7 +14,7 @@ ms.assetid: 81b2cdb5-c91a-4a31-9c83-eadc52da5cf0
 
 # Using objects that implement IDisposable
 
-The common language runtime's garbage collector reclaims the memory used by managed objects, but types that use unmanaged resources implement the <xref:System.IDisposable> interface to allow the memory allocated to these unmanaged resources to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation. You can do this in one of two ways:
+The common language runtime's garbage collector reclaims the memory used by managed objects, but types that use unmanaged resources implement the <xref:System.IDisposable> interface to allow the resources needed by these unmanaged resources to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation. You can do this in one of two ways:
 
 - With the C# `using` statement (`Using` in Visual Basic).
 - By implementing a `try/finally` block, and calling the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> in the `finally`.
@@ -41,7 +41,7 @@ The C# `using` statement also allows you to acquire multiple resources in a sing
 
 Instead of wrapping a `try/finally` block in a `using` statement, you may choose to implement the `try/finally` block directly. It may be your personal coding style, or you might want to do this for one of the following reasons:
 
-- To include a `catch` block to handle any exceptions thrown in the `try` block. Otherwise, any exceptions thrown by the `using` statement are unhandled, as are any exceptions thrown within the `using` block if a `try/catch` block isn't present.
+- To include a `catch` block to handle exceptions thrown in the `try` block. Otherwise, any exceptions thrown within the `using` statement are unhandled.
 
 - To instantiate an object that implements <xref:System.IDisposable> whose scope is not local to the block within which it is declared.
 

@@ -1,10 +1,10 @@
 ---
-title: Migrating Modern Desktop Applications
+title: Migrating Modern Desktop applications
 description: Everything you need to know about the migration process for modern desktop applications.
-ms.date: 09/16/2019
+ms.date: 05/12/2020
 ---
 
-# Migrating Modern Desktop Applications
+# Migrating Modern Desktop applications
 
 In this chapter, we're exploring the most common issues and challenges you can face when migrating an existing application from .NET Framework to .NET Core.
 
@@ -95,7 +95,7 @@ To easily fix the issue, you can copy the section definition from your old *mach
 </configSections>
 ```
 
-## Accessing Databases
+## Accessing databases
 
 Almost every desktop application needs some kind of database. For desktop, it's common to find client-server architectures with a direct connection between the desktop app and the database engine. These databases can be local or remote depending on the need to share information between different users.
 
@@ -121,9 +121,9 @@ There are two currently supported versions of Entity Framework (EF), Entity Fram
 
 The latest technology released as part of the .NET Framework world is Entity Framework, with 6.4 being the latest version. With the launch of .NET Core, Microsoft also released a new data access stack based on Entity Framework and called Entity Framework Core.
 
-You can use EF 6.3 and EF Core from both .NET Framework and .NET Core. So, what are the decision drivers to help to decide between the two?
+You can use EF 6.4 and EF Core from both .NET Framework and .NET Core. So, what are the decision drivers to help to decide between the two?
 
-EF 6.3 is the first version of EF6 that can run on .NET Core and work cross-platform. In fact, the main goal of this release is to make it easier to migrate existing applications that use EF6 to .NET Core.
+EF 6.3 is the first version of EF6 that can run on .NET Core and work cross-platform. In fact, the main goal of this release was to make it easier to migrate existing applications that use EF6 to .NET Core.
 
 EF Core was designed to provide a developer experience similar to EF6. Most of the top-level APIs remain the same, so EF Core will feel familiar to developers who have used EF6.
 

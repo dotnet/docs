@@ -1,7 +1,7 @@
 ---
 title: Example of migrating to .NET Core 3.1
 description: Showing how to migrate a sample applications targeting  .NET Framework to .NET Core 3.1.
-ms.date: 09/16/2019
+ms.date: 05/12/2020
 ---
 
 # Example of migrating to .NET Core 3.1
@@ -218,7 +218,7 @@ We'll use the `Shop.ClassicWPF` sample application to perform the migration. The
 
 ![Sample app before the migration](./media/example-migration-core/app-before-migration.png)
 
-This application uses a local SQLExpress database to hold the product catalog information. This database is accessed directly from the WPF application.
+This application uses a local SQL Server Express database to hold the product catalog information. This database is accessed directly from the WPF application.
 
 First, you must update the *.csproj* file to the new SDK style used by .NET Core applications. You'll follow the same steps described in the Windows Forms migration: you'll unload the project, open the *.csproj* file, update its contents, and reload the project.
 

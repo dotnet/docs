@@ -1,7 +1,7 @@
 ---
 title: Deploying Modern Desktop Applications
 description: Everything you need to know about deploying modern desktop applications.
-ms.date: 09/16/2019
+ms.date: 05/12/2020
 ---
 
 # Deploying Modern Desktop Applications

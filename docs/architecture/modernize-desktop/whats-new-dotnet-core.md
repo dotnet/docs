@@ -1,14 +1,14 @@
 ---
-title:  What's new with .NET Core 3.0 for Desktop?
-description: Learn about .NET Core, differences between .NET Core and .NET Framework and the new features that were added in .NET Core 3.0.
-ms.date: 09/16/2019
+title:  What's new with .NET Core for Desktop?
+description: Learn about .NET Core, differences between .NET Core and .NET Framework, and the new features that were added.
+ms.date: 05/12/2020
 ---
 
-# What's new with .NET Core 3.0 for Desktop?
+# What's new with .NET Core for Desktop?
 
 Starting with .NET Core 3.0, .NET Core supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET Core for your desktop applications. This chapter will describe what is .NET Core and what are its benefits for desktop applications.
 
-## From .NET Framework to .NET Core - The motivation behind .NET Core
+## The motivation behind .NET Core
 
 Since its launch in 2002, .NET Framework has evolved through the years to support many technologies like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft was approaching this evolution by taking parts of the .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That lead to fragmentation on the versions of the .NET Framework maintained by different independent teams. All these stacks have a common structure, containing an App Model, a Framework, and a Runtime, but they differ in the implementation of each of these parts.
 
@@ -48,7 +48,7 @@ The benefits of .NET Core come from these three characteristics:
 - **Open source:** .NET Core platform is open source and available through GitHub, fostering transparency and community contributions.
 - **Supported:** Microsoft officially supports .NET Core.
 
-In .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
+Starting with .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
 
 ![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 
@@ -92,15 +92,15 @@ The .NET Standard enables the following key scenarios:
 - .NET Standard is platform-agnostic, it can run anywhere, on Windows, macOS, Linux, and so on.
 - PCLs can also run cross-platform, but they have a more limited reach. PCLs can only target a limited set of platforms.
 
-## New Desktop features in .NET Core 3.0
+## New Desktop features in .NET Core
 
 ### Support for Windows Forms and WPF
 
-Windows Forms and WPF are part of .NET Core 3.0. Both presentation frameworks are for Windows only, so they aren't cross platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. With .NET Core 3.0, Windows Forms and WPF are available for .NET Core and .NET Framework. Now you can start your new desktop applications targeting .NET Core and migrate your existing ones from .NET Framework to .NET Core.
+Windows Forms and WPF are part of .NET Core since version 3.0. Both presentation frameworks are for Windows only, so they aren't cross platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. So Windows Forms and WPF are available for .NET Core and .NET Framework. Now you can start your new desktop applications targeting .NET Core and migrate your existing ones from .NET Framework to .NET Core.
 
-A new version of .NET Standard, version 2.1, was released at the same time. As expected, all new .NET Standard APIs are part of .NET Core 3.0.
+A new version of .NET Standard, version 2.1, was released at the same time as .NET Core 3.0. As expected, .NET Core 3.x versions support .NET Standard 2.1 and earlier versions.
 
-Also, it's important to notice that both Windows Forms and WPF implementations for .NET Core 3.0 are being open sourced.
+Also, it's important to notice that both Windows Forms and WPF implementations for .NET Core are open source.
 
 ### XAML Islands
 
@@ -119,7 +119,7 @@ Windows 10 has a great amount of API available for developers to work with. Thes
 
 ### Side-by-side support and self-contained EXEs
 
-The .NET Core deployment model is one of the biggest benefits that Windows desktop developers will experience with .NET Core 3.0. The ability to globally install .NET Core provides much of the same central installation and servicing benefits of .NET Framework, while not requiring in-place updates.
+The .NET Core deployment model is one of the biggest benefits that Windows desktop developers will experience with .NET Core. The ability to globally install .NET Core provides much of the same central installation and servicing benefits of .NET Framework, while not requiring in-place updates.
 
 When a new .NET Core version is released, you can update each app on a machine as needed without any concern of affecting other applications. New .NET Core versions are installed in their own directories and exist "side-by-side" with each other.
 

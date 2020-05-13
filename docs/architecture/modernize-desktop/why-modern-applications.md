@@ -65,7 +65,7 @@ The following list summarizes the main characteristics of Windows Forms:
 - Powerful and productive designer. Not so convenient to design UI "from code".
 - Easy and intuitive to learn, thanks to the designer's drag-and-drop experience.
 - Supported on any Windows version.
-- Supported on .NET Core 3.0.
+- Supported on .NET Core 3.0 and later versions.
 
 ### WPF
 
@@ -77,7 +77,7 @@ Here are the main features of WPF:
 - Designer is available, but developers usually prefer to create the design from code using declarative XAML.
 - The learning curve is steeper than Windows Forms.
 - Supported on any Windows version.
-- Supported on .NET Core 3.0.
+- Supported on .NET Core 3.0 and later versions.
 
 ### UWP
 
@@ -143,7 +143,7 @@ This path will show you how you can leverage modern desktop features into your e
 
 Modern development cycles have stressed out to provide agility on how new versions of applications are deployed to every single user. Since Windows Forms and WPF applications are based on a particular version of the .NET Framework that must be present on the machine, they can't take advantage of new .NET Framework version features without the intervention of the IT people with the risk of having side effects for other apps running on the same machine. It has limited the innovation pace for developers forcing them to stay on outdated versions of the .NET Framework.
 
-With the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of .NET Core side by side and specifying which version of .NET Core each application should target. This way, you can use newest features in one application while being confident you aren't going to break any other applications.
+Since the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of .NET Core side by side and specifying which version of .NET Core each application should target. This way, you can use newest features in one application while being confident you aren't going to break any other applications.
 
 ### Installation
 
@@ -165,7 +165,7 @@ You also might find this guide useful if you are a technical decision maker, suc
 
 ## How to use this guide
 
-This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.0 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
+This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.1 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
 
 Along the different chapters, sample implementation code snippets and screenshots are provided, with chapter 5 devoted to showcase a complete migration process for sample applications.
 

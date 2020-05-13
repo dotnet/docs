@@ -20,6 +20,7 @@ Typically, applications need to support some or all of the following scenarios:
 - Any application may need to interact with other Web APIs, using its own identity or delegating to the user's identity.
 
 ![Application types and scenarios](./media/application-types.png)
+
 **Figure 8-1**. Application types and scenarios.
 
 In each of these scenarios, the exposed functionality needs to be secured against unauthorized use. At a minimum, this typically requires authenticating the user or principal making a request for a resource. This authentication may use one of several common protocols such as SAML2p, WS-Fed, or OpenID Connect. Communicating with APIs typically uses the OAuth2 protocol and its support for security tokens. Separating these critical cross-cutting security concerns and their implementation details from the applications themselves ensures consistency and improves security and maintainability. Outsourcing these concerns to a dedicated product like IdentityServer helps the requirement for every application to solve these problems itself.

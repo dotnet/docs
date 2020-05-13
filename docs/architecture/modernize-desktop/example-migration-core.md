@@ -218,7 +218,7 @@ We'll use the `Shop.ClassicWPF` sample application to perform the migration. The
 
 ![Sample app before the migration](./media/example-migration-core/app-before-migration.png)
 
-This application uses a local SQLExpress database to hold the product catalog information. This database is accessed directly from the WPF application.
+This application uses a local SQL Server Express database to hold the product catalog information. This database is accessed directly from the WPF application.
 
 First, you must update the *.csproj* file to the new SDK style used by .NET Core applications. You'll follow the same steps described in the Windows Forms migration: you'll unload the project, open the *.csproj* file, update its contents, and reload the project.
 

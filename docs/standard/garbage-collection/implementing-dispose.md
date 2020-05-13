@@ -1,6 +1,6 @@
 ---
 title: "Implement a Dispose method"
-ms.date: 05/12/2020
+ms.date: 05/13/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -20,6 +20,22 @@ The [.NET garbage collector](index.md) does not allocate or release unmanaged me
 To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be idempotent, such that it is callable multiple times without throwing an exception. Furthermore, subsequent invocations of <xref:System.IDisposable.Dispose%2A> should do nothing.
 
 The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> method shows how garbage collection can cause a finalizer to run, while an unmanaged reference to the object or its members is still in use. It may make sense to utilize <xref:System.GC.KeepAlive%2A?displayProperty=nameWithType> to make the object ineligible for garbage collection from the start of the current routine to the point where this method is called.
+
+## Safe handles
+
+Writing code for an object's finalizer is a complex task that can cause problems if not done correctly. Therefore, we recommend that you construct <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> objects instead of implementing a finalizer.
+
+A <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract managed type that wraps an <xref:System.IntPtr?displayProperty=nameWithType> that identifies an unmanaged resource. On Windows it might identify a handle while on Unix, a file descriptor. It provides all of the logic necessary to ensure that this resource is released once and only once, when the `SafeHandle` is disposed of or when all references to the `SafeHandle` have been dropped and the `SafeHandle` instance is finalized.
+
+The <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract base class. Derived classes provide specific instances for different kinds of handle. These derived classes validate what values for the <xref:System.IntPtr?displayProperty=nameWithType> are considered invalid and how to actually free the handle. For example, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> derives from `SafeHandle` to wrap `IntPtrs` that identify open file handles/descriptors, and overrides its <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle?displayProperty=nameWithType> method to close it (via the `close` function on Unix or `CloseHandle` function on Windows). Most APIs in .NET libraries that create an unmanaged resource will wrap it in a `SafeHandle` and return that `SafeHandle` to you as needed, rather than handing back the raw pointer. In situations where you interact with an unmanaged component and get an `IntPtr` for an unmanaged resource, you can create your own `SafeHandle` type to wrap it. As a result, few non-`SafeHandle` types need to implement finalizers; most disposable pattern implementations only end up wrapping other managed resources, some of which may be `SafeHandle`s.
+
+The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespace provide safe handles:
+
+- The <xref:Microsoft.Win32.SafeHandles.SafeFileHandle>, <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle>, and <xref:Microsoft.Win32.SafeHandles.SafePipeHandle> class, for files, memory mapped files, and pipes.
+- The <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> class, for memory views.
+- The <xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle>, <xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle>, and <xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle> classes, for cryptography constructs.
+- The <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> class, for registry keys.
+- The <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class, for wait handles.
 
 ## Dispose() and Dispose(bool)
 
@@ -74,6 +90,9 @@ All non-sealed classes or (Visual Basic classes not modified as `NotInheritable`
 - A `Dispose(bool)` method that performs the actual cleanup.
 - Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended), or an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The <xref:System.Runtime.InteropServices.SafeHandle> class provides a finalizer, so you do not have to write one yourself.
 
+> [!IMPORTANT]
+> It is possible for a base class to only reference managed objects, and implement the dispose pattern. In these cases, a finalizer is unnecessary. A finalizer is only required if you directly reference unmanaged resources.
+
 Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle.
 
 [!code-csharp[System.IDisposable#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs#3)]
@@ -109,22 +128,6 @@ Here's the general pattern for implementing the dispose pattern for a derived cl
 
 [!code-csharp[System.IDisposable#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/derived2.cs#6)]
 [!code-vb[System.IDisposable#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived2.vb#6)]
-
-## Safe handles
-
-Writing code for an object's finalizer is a complex task that can cause problems if not done correctly. Therefore, we recommend that you construct <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> objects instead of implementing a finalizer.
-
-A <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract managed type that wraps an <xref:System.IntPtr?displayProperty=nameWithType> that identifies an unmanaged resource. On Windows it might identify a handle while on Unix, a file descriptor. It provides all of the logic necessary to ensure that this resource is released once and only once, when the `SafeHandle` is disposed of or when all references to the `SafeHandle` have been dropped and the `SafeHandle` instance is finalized.
-
-The <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract base class. Derived classes provide specific instances for different kinds of handle. These derived classes validate what values for the <xref:System.IntPtr?displayProperty=nameWithType> are considered invalid and how to actually free the handle. For example, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> derives from `SafeHandle` to wrap `IntPtrs` that identify open file handles/descriptors, and overrides its <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle?displayProperty=nameWithType> method to close it (via the `close` function on Unix or `CloseHandle` function on Windows). Most APIs in .NET libraries that create an unmanaged resource will wrap it in a `SafeHandle` and return that `SafeHandle` to you as needed, rather than handing back the raw pointer. In situations where you interact with an unmanaged component and get an `IntPtr` for an unmanaged resource, you can create your own `SafeHandle` type to wrap it. As a result, few non-`SafeHandle` types need to implement finalizers; most disposable pattern implementations only end up wrapping other managed resources, some of which may be `SafeHandle`s.
-
-The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespace provide safe handles:
-
-- The <xref:Microsoft.Win32.SafeHandles.SafeFileHandle>, <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle>, and <xref:Microsoft.Win32.SafeHandles.SafePipeHandle> class, for files, memory mapped files, and pipes.
-- The <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> class, for memory views.
-- The <xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle>, <xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle>, and <xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle> classes, for cryptography constructs.
-- The <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> class, for registry keys.
-- The <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> class, for wait handles.
 
 ## Implement the dispose pattern with safe handles
 

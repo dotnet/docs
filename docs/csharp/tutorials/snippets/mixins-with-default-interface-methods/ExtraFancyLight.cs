@@ -16,7 +16,7 @@ namespace mixins_with_interfaces
         {
             Console.WriteLine("Extra Fancy Light starting the Blink function.");
             await Task.Delay(duration * repeatCount);
-            Console.WriteLine("Extra Fancy Light has finished the Blink funtion.");
+            Console.WriteLine("Extra Fancy Light has finished the Blink function.");
         }
         public async Task TurnOnFor(int duration)
         {
@@ -25,7 +25,7 @@ namespace mixins_with_interfaces
             Console.WriteLine("Extra Fancy light finished custom timer function");
         }
 
-        public override string ToString() => $"The light is {isOn: \"on\", \"off\"}";
+        public override string ToString() => $"The light is {(isOn ? "on" : "off")}";
     }
     // </SnippetExtraFancyLight>
 }

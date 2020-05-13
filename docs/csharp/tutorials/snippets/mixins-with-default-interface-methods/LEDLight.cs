@@ -19,7 +19,7 @@ namespace mixins_with_interfaces
             Console.WriteLine("LED Light has finished the Blink funtion.");
         }
 
-        public override string ToString() => $"The light is {isOn: \"on\", \"off\"}";
+        public override string ToString() => $"The light is {(isOn ? "on" : "off")}";
     }
     // </SnippetLEDLight>
 }

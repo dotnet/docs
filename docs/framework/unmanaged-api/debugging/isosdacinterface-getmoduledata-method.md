@@ -41,7 +41,7 @@ HRESULT GetModuleData(
 
 ## Remarks
 
-The provided method is part of the `ISOSDacInterface` interface and corresponds to the 13th slot of the virtual method table.
+The provided method is part of the `ISOSDacInterface` interface and corresponds to the 14th slot of the virtual method table.
 
 ## Requirements
 

@@ -41,7 +41,7 @@ HRESULT StartEnumInstances(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the third slot of the virtual method table.
+The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the 5th slot of the virtual method table.
 
 ## Requirements
 

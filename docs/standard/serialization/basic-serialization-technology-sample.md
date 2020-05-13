@@ -1,5 +1,6 @@
 ---
 title: "Basic Serialization Technology Sample"
+description: This sample demonstrates the CLR ability to serialize an object graph in memory to a stream. This sample can use the SoapFormatter or the BinaryFormatter.
 ms.date: "03/30/2017"
 ms.assetid: 9d824e16-08d1-4a36-bc7f-2388c1f75f34
 ---

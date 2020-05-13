@@ -3,65 +3,62 @@ using System;
 
 class DerivedClass : BaseClass
 {
-   // Flag: Has Dispose already been called?
-   bool disposed = false;
+    // To detect redundant calls
+    bool _disposed = false;
 
-   // Protected implementation of Dispose pattern.
-   protected override void Dispose(bool disposing)
-   {
-      if (disposed)
-         return;
+    ~DerivedClass() => Dispose(false);
 
-      if (disposing) {
-         // Free any other managed objects here.
-         //
-      }
+    // Protected implementation of Dispose pattern.
+    protected override void Dispose(bool disposing)
+    {
+        if (_disposed)
+        {
+            return;
+        }
 
-      // Free any unmanaged objects here.
-      //
-      disposed = true;
+        if (disposing)
+        {
+            // TODO: dispose managed state (managed objects).
+        }
 
-      // Call the base class implementation.
-      base.Dispose(disposing);
-   }
+        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+        // TODO: set large fields to null.
+        _disposed = true;
 
-   ~DerivedClass()
-   {
-      Dispose(false);
-   }
+        // Call the base class implementation.
+        base.Dispose(disposing);
+    }
 }
 // </Snippet6>
 
 class BaseClass : IDisposable
 {
-   // Flag: Has Dispose already been called?
-   bool disposed = false;
+    // Flag: Has Dispose already been called?
+    bool _disposed = false;
 
-   // Public implementation of Dispose pattern callable by consumers.
-   public void Dispose()
-   {
-      Dispose(true);
-      GC.SuppressFinalize(this);
-   }
+    ~BaseClass() => Dispose(false);
 
-   // Protected implementation of Dispose pattern.
-   protected virtual void Dispose(bool disposing)
-   {
-      if (disposed)
-         return;
+    // Public implementation of Dispose pattern callable by consumers.
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
 
-      if (disposing) {
-         // Free any other managed objects here.
-         //
-      }
+    // Protected implementation of Dispose pattern.
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed)
+        {
+            return;
+        }
 
-      // Free any unmanaged objects here.
-      //
-      disposed = true;
-   }
+        if (disposing)
+        {
+            // Free any other managed objects here.
+        }
 
-   ~BaseClass()
-   {
-      Dispose(false);
-   }
+        // Free any unmanaged objects here.
+        _disposed = true;
+    }
 }

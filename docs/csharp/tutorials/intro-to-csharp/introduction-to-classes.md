@@ -43,7 +43,6 @@ This file will contain the definition of a ***bank account***. Object Oriented p
 
 You can start by creating the basics of a class that defines that behavior. Create a new file using the **File:New** command. Name it *BankAccount.cs*. Add the following code to your *BankAccount.cs* file:
 
-The [guideline](https://docs.microsoft.com/en-us/contribute/dotnet/dotnet-style-guide#text-styling) states italics for files.
 
 ```csharp
 using System;
@@ -92,7 +91,7 @@ var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
 
-Let's run what you've built so far. If you're using Visual Studio, Select *Start without debugging* from the *Run* menu. If you're using a command shell, type `dotnet run` in the directory where you've created your project.
+Let's run what you've built so far. If you're using Visual Studio, Select **Start without debugging** from the **Run** menu. If you're using a command line, type `dotnet run` in the directory where you've created your project.
 
 Did you notice that the account number is blank? It's time to fix that. The account number should be assigned when the object is constructed. But it shouldn't be the responsibility of the caller to create it. The `BankAccount` class code should know how to assign new account numbers.  A simple way to do this is to start with a 10-digit number. Increment it when each new account is created. Finally, store the current account number when an object is constructed.
 
@@ -171,7 +170,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add that following code at the end of your `Main` method:
+You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code at the end of your `Main` method:
 
 ```csharp
 // Test for a negative balance.

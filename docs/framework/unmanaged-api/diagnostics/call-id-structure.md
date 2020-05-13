@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CALL_ID Structure
-Provides information to a debugger about a function that is being called. See the [INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md) interface for more information.  
+Provides information to a debugger about a function that is being called. See the [INotifySink2](inotifysink2-interface.md) interface for more information.  
   
 ## Syntax  
   
@@ -48,5 +48,5 @@ typedef struct tagCALL_ID
   
 ## See also
 
-- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+- [INotifySink2 Interface](inotifysink2-interface.md)
+- [Diagnostics Symbol Store Structures](diagnostics-symbol-store-structures.md)

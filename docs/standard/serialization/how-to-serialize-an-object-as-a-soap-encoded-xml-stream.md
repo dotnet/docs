@@ -1,5 +1,6 @@
 ---
 title: "How to: Serialize an Object as a SOAP-Encoded XML Stream"
+description: Learn how to serialize an object as a SOAP-encoded XML stream. The XmlSerializer class can be used to serialize classes and generate encoded SOAP messages.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

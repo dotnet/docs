@@ -86,9 +86,11 @@
     items:
     - name: Azure Security for cloud-native apps
       href: azure-security.md
-  - name: Cloud-native DevOps
+  - name: DevOps
     href: devops.md
     items:
+    - name: Feature flags
+      href: feature-flags.md      
     - name: Infrastructure as Code
       href: infrastructure-as-code.md
     - name: Cloud Native Application Bundles

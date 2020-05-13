@@ -1,7 +1,7 @@
 ---
 title: Cloud Native Application Bundles
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
-ms.date: 06/30/2019
+ms.date: 05/12/2020
 ---
 
 # Cloud Native Application Bundles
@@ -65,7 +65,7 @@ The core of a CNAB is a file called `bundle.json`. This file defines the content
 }
 ```
 
-**Figure 11-13** - An example Terraform file
+**Figure 10-18** - An example Terraform file
 
 The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in a variety of different environments.
 
@@ -74,6 +74,13 @@ The CNAB format is also flexible, allowing it to be used against any cloud. It c
 ## DevOps Decisions
 
 There are so many great tools in the DevOps space these days and even more fantastic books and papers on how to succeed. A favorite book to get started on the DevOps journey is [The Phoenix Project](https://www.oreilly.com/library/view/the-phoenix-project/9781457191350/), which follows the transformation of a fictional company from NoOps to DevOps. One thing is for certain: DevOps is no longer a "nice to have" when deploying complex, Cloud Native Applications. It's a requirement and should be planned for and resourced at the start of any project.
+
+## References
+
+- [Azure DevOps](https://azure.microsoft.com/services/devops/)
+- [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/)
+- [Terraform](https://www.terraform.io/)
+- [Azure CLI](https://docs.microsoft.com/cli/azure/)
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-as-code.md)

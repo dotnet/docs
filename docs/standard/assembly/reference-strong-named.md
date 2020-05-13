@@ -1,5 +1,6 @@
 ---
 title: "How to: Reference a strong-named assembly"
+description: This article shows you how to reference types or resources in a strong-named .NET assembly, either at compile time or runtime.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, compile-time references"

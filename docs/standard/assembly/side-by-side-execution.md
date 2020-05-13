@@ -1,5 +1,6 @@
 ---
 title: "Assemblies and side-by-side execution"
+description: Learn about side-by-side execution, which is the ability to store and run multiple versions of an application or component on the same computer.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "side-by-side execution [.NET Framework]"

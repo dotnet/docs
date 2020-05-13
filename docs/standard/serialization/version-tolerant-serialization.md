@@ -1,5 +1,6 @@
 ---
 title: "Version tolerant serialization"
+description: The .NET Framework 2.0 introduces Version Tolerant Serialization, a set of features that make it easier to modify serializable types.
 ms.date: "08/08/2017"
 dev_langs: 
   - "csharp"

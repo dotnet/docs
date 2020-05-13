@@ -17,7 +17,7 @@ ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

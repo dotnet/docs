@@ -1,11 +1,9 @@
 ---
-title: Modernizing Desktop Apps on Windows 10 with .NET Core 3.0
-description: Learn how to modernize existing desktop apps with .NET Core 3.0
-author: nishanil
-ms.author: nanil
-ms.date: 09/16/2019
+title: Modernizing Desktop Apps on Windows 10 with .NET Core 3.1
+description: Learn how to modernize existing desktop apps with .NET Core 3.1
+ms.date: 05/12/2020
 ---
-# Modernizing Desktop Apps on Windows 10 with .NET Core 3.0
+# Modernizing Desktop Apps on Windows 10 with .NET Core 3.1
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
 

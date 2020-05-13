@@ -1,7 +1,7 @@
 ---
 title: Example of migrating to .NET Core 3.1
 description: Showing how to migrate a sample applications targeting  .NET Framework to .NET Core 3.1.
-ms.date: 09/16/2019
+ms.date: 05/12/2020
 ---
 
 # Example of migrating to .NET Core 3.1

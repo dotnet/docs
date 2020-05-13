@@ -105,9 +105,7 @@ for this method, because it does not contain any `await` operators and
 will run synchronously. Ignore that for now; you'll add `await` operators
 as you fill in the method.
 
-Next, rename the namespace defined in the `namespace` statement from its default of `ConsoleApp` to `WebAPIClient`. We'll later define a `repo` class in this namespace.
-
-Next, update the `Main` method to call this method. The
+Next, update the `Main` method to call the `ProcessRepositories` method. The
 `ProcessRepositories` method returns a task, and you shouldn't exit the
 program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword to that method call:
 

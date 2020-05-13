@@ -48,7 +48,7 @@ HRESULT WriteMemory(
  The `WriteMemory` method should be used only outside of managed code. This method can corrupt the runtime if used improperly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

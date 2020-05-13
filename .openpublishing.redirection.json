@@ -9,16 +9,16 @@
       "redirect_url": "/dotnet/standard/components"
     },
     {
+      "source_path": "docs/architecture/cloud-native/database-per-microservice.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/distributed-data"
+    },
+    {
       "source_path": "docs/architecture/cloud-native/azure-data-storage.md",
       "redirect_url": "/dotnet/architecture/cloud-native/relational-vs-nosql-data"
     },
     {
-      "source_path": "docs/architecture/cloud-native/data-patterns.md",
-      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
-    },
-    {
-      "source_path": "docs/architecture/cloud-native/distributed-data.md",
-      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
+      "source_path": "docs/architecture/cloud-native/cloud-native-devops.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/devops"
     },
     {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
@@ -75,7 +75,7 @@
     },
     {
       "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
-      "redirect_url": "/dotnet/architecture/modernize-with-azure-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
+      "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
     },
     {
       "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
@@ -208,13 +208,11 @@
     },
     {
       "source_path": "docs/core/docker/index.md",
-      "redirect_url": "/dotnet/core/docker/introduction",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/core/docker/introduction"
     },
     {
       "source_path": "docs/core/docker/intro-net-docker.md",
-      "redirect_url": "/dotnet/core/docker/introduction",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/core/docker/introduction"
     },
     {
       "source_path": "docs/core/getting-started.md",
@@ -258,8 +256,7 @@
     },
     {
       "source_path": "docs/core/windows-prerequisites.md",
-      "redirect_url": "/dotnet/core/install/dependencies?pivots=os-windows",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/core/install/dependencies?pivots=os-windows"
     },
     {
       "source_path": "docs/core/preview3/deploying/index.md",
@@ -404,8 +401,7 @@
     },
     {
       "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
-      "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
     },
     {
       "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
@@ -489,6 +485,10 @@
     {
       "source_path": "docs/core/versions/lts-current.md",
       "redirect_url": "https://dotnet.microsoft.com/platform/support/policy/dotnet-core"
+    },
+    {
+      "source_path": "docs/core/versions/remove-runtime-sdk-versions.md",
+      "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
     },
     {
       "source_path": "docs/core/versions/servicing.md",
@@ -1301,8 +1301,7 @@
     },
     {
       "source_path": "docs/csharp/programming-guide/generics/benefits-of-generics.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/generics",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/programming-guide/generics"
     },
     {
       "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
@@ -1557,13 +1556,11 @@
     },
     {
       "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
-      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops"
     },
     {
       "source_path": "docs/csharp/quick-starts/hello-world.md",
-      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world"
     },
     {
       "source_path": "docs/csharp/quick-starts/index.md",
@@ -1577,8 +1574,7 @@
     },
     {
       "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
-      "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
     },
     {
       "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
@@ -1587,8 +1583,7 @@
     },
     {
       "source_path": "docs/csharp/quick-starts/list-collection.md",
-      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection"
     },
     {
       "source_path": "docs/csharp/quick-starts/local-environment.md",
@@ -1602,8 +1597,7 @@
     },
     {
       "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
-      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp"
     },
     {
       "source_path": "docs/csharp/reference-semantics-with-value-types.md",
@@ -1647,8 +1641,7 @@
     },
     {
       "source_path": "docs/csharp/tutorials/microservices.md",
-      "redirect_url": "/dotnet/core/docker/",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/core/docker/"
     },
     {
       "source_path": "docs/csharp/type-system.md",
@@ -2028,7 +2021,7 @@
     },
     {
       "source_path": "docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
-      "redirect_url": "/dotnet/framework/migration-guide//retargeting/4.6.1-4.6.2"
+      "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.1-4.6.2"
     },
     {
       "source_path": "docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
@@ -2864,18 +2857,15 @@
     },
     {
       "source_path": "docs/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls-using-the-designer.md",
-      "redirect_url": "/dotnet/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls"
     },
     {
       "source_path": "docs/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control-using-the-designer.md",
-      "redirect_url": "/dotnet/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control"
     },
     {
       "source_path": "docs/framework/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control-using-the-designer.md",
-      "redirect_url": "/dotnet/framework/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/framework/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control"
     },
     {
       "source_path": "docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md",
@@ -2890,6 +2880,11 @@
     {
       "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
       "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/wpf/advanced/globalization-and-localization-how-to-topics.md",
+      "redirect_url": "/dotnet/framework/wpf/advanced/how-to-localize-an-application",
       "redirect_document_id": true
     },
     {
@@ -2947,18 +2942,15 @@
     },
     {
       "source_path": "docs/framework/wpf/data/data-binding-wpf.md",
-      "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
     },
     {
       "source_path": "docs/framework/wpf/data/how-to-bind-to-a-web-service.md",
-      "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
     },
     {
       "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
-      "redirect_url": "/dotnet/desktop-wpf/xaml-services/escape-sequence-markup-extension",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/escape-sequence-markup-extension"
     },
     {
       "source_path": "docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md",
@@ -3730,8 +3722,7 @@
     },
     {
       "source_path": "docs/standard/guidance-architecture.md",
-      "redirect_url": "/dotnet/architecture/index",
-      "redirect_document_id": false
+      "redirect_url": "/dotnet/architecture/index"
     },
     {
       "source_path": "docs/standard/library.md",

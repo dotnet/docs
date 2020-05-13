@@ -7,9 +7,12 @@ ms.date: 02/27/2020
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
+> [!IMPORTANT]
+> The `dotnet vstest` command is superseded by `dotnet test`, which can now be used to run assemblies. See [`dotnet test`](dotnet-test.md).
+
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified files.
+`dotnet-vstest` - Runs tests from the specified assemblies.
 
 ## Synopsis
 

@@ -52,7 +52,7 @@ HRESULT GetCode (
  If the function's code has been divided into multiple chunks, they are concatenated in order of increasing native offset. Instruction boundaries are not checked.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

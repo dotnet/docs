@@ -1,5 +1,6 @@
 ---
 title: "How to: Override Encoded SOAP XML Serialization"
+description: Learn about overriding XML serialization of objects as SOAP messages, which is similar to the process for overriding standard XML serialization.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "overriding XML serialization"

@@ -16,7 +16,7 @@ HRESULT GetCode(
   
 ## Parameters  
  `codeAddress`  
- [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that specifies the starting address of the managed code segment.  
+ [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that specifies the starting address of the managed code segment.  
   
  `ppCode`  
  [out] A pointer to the address of an "ICorDebugCode" object that represents a segment of managed code.  
@@ -27,7 +27,7 @@ HRESULT GetCode(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

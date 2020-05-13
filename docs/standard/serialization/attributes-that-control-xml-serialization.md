@@ -1,5 +1,6 @@
 ---
 title: "Attributes That Control XML Serialization"
+description: This article contains attributes you can apply to classes and class members to control how the XmlSerializer serializes or deserializes an instance of a class.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "classes, serializing"

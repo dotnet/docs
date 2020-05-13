@@ -1,5 +1,6 @@
 ---
 title: "Basic serialization"
+description: This article shows you how to make a class serializable with the SerializableAttribute and includes examples of serialization and deserialization.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "binary serialization, basic serialization"

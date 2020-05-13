@@ -57,7 +57,7 @@ HRESULT GetMethodDescData(
 
 ## Remarks
 
-The provided method is part of the `ISOSDacInterface` interface and corresponds to the 20th slot of the virtual method table. To be able to use them, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) must be defined as a 64-bit unsigned integer.
+The provided method is part of the `ISOSDacInterface` interface and corresponds to the 21st slot of the virtual method table. To be able to use them, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) must be defined as a 64-bit unsigned integer.
 
 ## Requirements
 

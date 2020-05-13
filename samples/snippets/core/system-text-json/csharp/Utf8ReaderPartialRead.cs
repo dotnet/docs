@@ -23,13 +23,14 @@ namespace SystemTextJsonSamples
             var stream = new MemoryStream(bytes);
 
             var buffer = new byte[4096];
-            var span = new Span<byte>(buffer);
 
-            // Fill the buffer
-            stream.Read(span);
+            // Fill the buffer.
+            // For this snippet, we're assuming the stream is open and has data.
+            // If it might be closed or empty, check if the return value is 0.
+            stream.Read(buffer);
 
             var reader = new Utf8JsonReader(buffer, isFinalBlock: false, state: default);
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(span)}");
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
 
             // Search for "Summary" property name
             while (reader.TokenType != JsonTokenType.PropertyName || !reader.ValueTextEquals("Summary"))
@@ -42,7 +43,7 @@ namespace SystemTextJsonSamples
             }
 
             // Found the "Summary" property name.
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(span)}");
+            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
             while (!reader.Read())
             {
                 // Not enough of the JSON is in the buffer to complete a read.
@@ -56,7 +57,7 @@ namespace SystemTextJsonSamples
             int bytesRead;
             if (reader.BytesConsumed < buffer.Length)
             {
-                ReadOnlySpan<byte> leftover = buffer.AsSpan().Slice((int)reader.BytesConsumed);
+                ReadOnlySpan<byte> leftover = buffer.AsSpan((int)reader.BytesConsumed);
 
                 if (leftover.Length == buffer.Length)
                 {
@@ -65,11 +66,11 @@ namespace SystemTextJsonSamples
                 }
 
                 leftover.CopyTo(buffer.AsSpan());
-                bytesRead = stream.Read(buffer.AsSpan().Slice(leftover.Length));
+                bytesRead = stream.Read(buffer.AsSpan(leftover.Length));
             }
             else
             {
-                bytesRead = stream.Read(buffer.AsSpan());
+                bytesRead = stream.Read(buffer);
             }
             Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
             reader = new Utf8JsonReader(buffer, isFinalBlock: bytesRead == 0, reader.CurrentState);

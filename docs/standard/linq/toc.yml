@@ -216,7 +216,7 @@
           items:
           - name: Introduction to pure functional transformations
             href: introduction-pure-functional-transformations.md
-          - name: Concepts and terminology
+          - name: Concepts and terminology (functonal transformation)
             href: concepts-terminology-functional-transformation.md
           - name: Functional programming vs. imperative programming
             href: functional-programming-vs-imperative-programming.md
@@ -226,19 +226,17 @@
             href: applicability-functional-transformation.md
           - name: Functional transformation of XML
             href: functional-transformation-xml.md
-          - name: "Tutorial: Deferred execution in Visual Basic"
-            href: deferred-execution.md
-          - name: Deferred execution and lazy evaluation in LINQ to XML
-            href: deferred-execution-lazy-evaluation-linq-xml.md
+          - name: Deferred execution and lazy evaluation
+            href: deferred-execution-lazy-evaluation.md
           - name: Deferred execution example
             href: deferred-execution-example.md
-          - name: "Tutorial: Chain queries together in C#"
+          - name: "Tutorial: Chain queries together (C#)"
             items:
-            - name: Chain queries example
+            - name: Chain queries example (C#)
               href: chain-queries-example.md
-            - name: Intermediate materialization
+            - name: Intermediate materialization (C#)
               href: intermediate-materialization.md
-            - name: Chain standard query operators together
+            - name: Chain standard query operators together (C#)
               href: chain-standard-query-operators-together.md
           - name: "Tutorial: Manipulate content in a WordprocessingML document"
             items:

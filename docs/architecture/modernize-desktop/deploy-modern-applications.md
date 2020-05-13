@@ -49,7 +49,7 @@ The previous diagram shows that you can:
 
 This radical change leads us to the new and modern IT lifecycle as shown in the following picture:
 
-![Diagram showing the application lifecyle using Microsoft tools](./media/deploy-modern-desktop-applications/microsoft-it-tools.png)
+![Diagram showing the application lifecycle using Microsoft tools](./media/deploy-modern-desktop-applications/microsoft-it-tools.png)
 
 Developers create the app and generate an MSIX package that IT Pros can consume and configure without the need of repackaging. Along with the MSIX technology, Microsoft has created tools to allow IT to customize and configure packages without repackaging.
 

@@ -10,12 +10,12 @@ namespace SystemTextJsonSamples
     {
         public static void Run()
         {
-            Console.WriteLine("Deserialize JSON string [1, 2, 3], then deserialize");
+            Console.WriteLine("Deserialize JSON string [1, 2, 3], then serialize it back to JSON.");
             Stack<int> stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]");
             string serialized = JsonSerializer.Serialize(stack);
-            Console.WriteLine($"Result is reverse order {serialized}");
+            Console.WriteLine($"Result is in reverse order: {serialized}");
 
-            Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then deserialize");
+            Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then serialize it back to JSON.");
             // <SnippetRegister>
             var options = new JsonSerializerOptions
             {
@@ -24,8 +24,7 @@ namespace SystemTextJsonSamples
             // </SnippetRegister>
             stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options);
             serialized = JsonSerializer.Serialize(stack, options);
-            Console.WriteLine($"Result is same order {serialized}");
+            Console.WriteLine($"Result is in same order: {serialized}");
         }
     }
 }
-

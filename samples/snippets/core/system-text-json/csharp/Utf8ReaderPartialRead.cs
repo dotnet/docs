@@ -65,7 +65,7 @@ namespace SystemTextJsonSamples
                     Console.WriteLine($"Increased buffer size to {buffer.Length}");
                 }
 
-                leftover.CopyTo(buffer.AsSpan());
+                leftover.CopyTo(buffer);
                 bytesRead = stream.Read(buffer.AsSpan(leftover.Length));
             }
             else

@@ -33,27 +33,27 @@ All other marks and logos are property of their respective owners.
 
 Co-Authors:
 
-Olia Gavrysh, PM, .NET team, Microsoft
+Olia Gavrysh, Program Manager, .NET team, Microsoft
 
 Miguel Angel Castejón Dominguez, Innovation Architect, Kabel
 
 Participants and reviewers:
 
-Maira Wenzel, Sr. Content Developer, Microsoft
+Maira Wenzel, Senior Program Manager, .NET team, Microsoft
 
-Andy De Gorge, Sr. Content Developer, Microsoft
+Andy De Gorge, Senior Content Developer, .NET docs team, Microsoft
 
-Miguel Ramos, Sr. PM, Windows Developer Platform team, Microsoft
+Miguel Ramos, Senior Program Manager, Windows Developer Platform team, Microsoft
 
-Adam Braden, Principal PM, Windows Developer Platform team, Microsoft
+Adam Braden, Principal Program Manager, Windows Developer Platform team, Microsoft
 
-Ricardo Minguez Pablos, Sr. PM, Azure IoT team, Microsoft
+Ricardo Minguez Pablos, Senior Program Manager, Azure IoT team, Microsoft
 
-Nish Anil, Sr. PM, .NET team, Microsoft
+Nish Anil, Senior Program Manager, .NET team, Microsoft
 
-Beth Massi, Sr. Product Marketing Manager, Microsoft
+Beth Massi, Senior Product Marketing Manager, Microsoft
 
-Scott Hunter, Partner Director PM, .NET team, Microsoft
+Scott Hunter, Partner Director Program Manager, .NET team, Microsoft
 
 Marta Fuentes Lara, Kabel
 
@@ -71,7 +71,7 @@ Microsoft's approach to modernizing existing applications is to give you the fle
 
 We wrote this book for developers and solution architects who want to modernize existing Windows Forms and WPF desktop applications to leverage the benefits of .NET Core and Windows 10.
 
-You also might find this book useful if you are a technical decision maker, such as an enterprise architect or a development lead/director who just wants an overview of the benefits that you can get by updating existing desktop applications.
+You might also find this book useful if you're a technical decision maker, such as an enterprise architect or a development lead or director who wants an overview of the benefits of updating existing desktop applications.
 
 ## How to use the book
 
@@ -85,7 +85,7 @@ This book covers a specific subset of scenarios that are focused on lift-and-shi
 
 This book isn't about developing modern applications with .NET Core from scratch or about getting started with Windows Forms and WPF. It focuses on how you can update existing desktop applications with the latest technologies for desktop development.
 
-## Samples used in tis book
+## Samples used in this book
 
 To highlight the necessary steps to perform a modernization, we'll be using a sample application called `eShopModernizing`. This application has two flavors, Windows Forms and WPF, and we'll show a step-by-step process on how to perform the modernization on both of them to .NET Core.
 

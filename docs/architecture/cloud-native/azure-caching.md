@@ -2,11 +2,10 @@
 title: Caching in a cloud-native application
 description: Learn about caching strategies in a cloud-native application.
 author: robvet
-ms.date: 01/22/2020
+ms.date: 05/13/2020
 ---
-# Caching in a cloud-native app
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Caching in a cloud-native app
 
 The benefits of caching are well understood. The technique works by temporarily copying frequently accessed data from a backend data store to *fast storage* that's located closer to the application. Caching is often implemented where...
 

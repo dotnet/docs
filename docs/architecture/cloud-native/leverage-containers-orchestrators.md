@@ -1,12 +1,10 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 04/13/2020
+ms.date: 05/13/2020
 ---
 
 # Leveraging containers and orchestrators
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Containers and orchestrators are designed to solve problems common to monolithic deployment approaches.
 

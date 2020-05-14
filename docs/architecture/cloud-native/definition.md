@@ -2,11 +2,10 @@
 title: Defining Cloud Native
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 08/20/2019
+ms.date: 05/13/2020
 ---
-# Defining cloud native
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Defining cloud native
 
 Stop what you're doing and text ten of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get eight different answers.
 

@@ -1,12 +1,11 @@
 ---
 title: Application resiliency patterns
 description: Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
-ms.date: 06/30/2019
+author: robvet
+ms.date: 05/13/2020
 ---
 
 # Application resiliency patterns
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 The first line of defense is software-enabled application resiliency.
 

@@ -1,11 +1,11 @@
 ---
 title: Resilient communication
 description: Architecting Cloud Native .NET Apps for Azure | Resilient Communication
-ms.date: 06/30/2019
+author: robvet
+ms.date: 05/13/2020
 ---
-# Resilient communications
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Resilient communications
 
 Throughout this book, we've evangelized the merits of moving beyond traditional monolithic application design and embracing a microservice-based architecture where a set of distributed, self-contained services run independently and communicate with each other using standard communication protocols such as HTTP and HTTPS. While such an architecture buys you many important benefits, it also presents many challenges. Consider, for example, the following concerns:
 

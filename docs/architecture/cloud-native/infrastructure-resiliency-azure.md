@@ -1,12 +1,11 @@
 ---
 title: Azure platform resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
-ms.date: 06/30/2019
+author: robvet
+ms.date: 05/13/2020
 ---
 
 # Azure platform resiliency
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Building a reliable application in the cloud is different from traditional on-premises application development. While historically you purchased higher-end hardware to scale up, in a cloud environment you scale out. Instead of trying to prevent failures, the goal is to minimize their effects and keep the system stable.
 

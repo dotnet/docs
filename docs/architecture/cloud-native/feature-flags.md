@@ -1,12 +1,11 @@
 ---
 title: Feature flags
 description: Implement feature flags in cloud-native applications leveraging Azure App Config
-ms.date: 05/03/2020
+author: robvet
+ms.date: 05/13/2020
 ---
 
 # Feature flags
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In chapter 1, we affirmed that cloud native is much about speed and agility. Users expect rapid responsiveness, innovative features, and zero downtime. `Feature flags` are a modern deployment technique that helps increase agility for cloud-native applications. They enable you to deploy new features into a production environment, but restrict their availability. With the flick of a switch, you can activate a new feature for specific users without restarting the app or deploying new code. They separate the release of new features from their code deployment.
 

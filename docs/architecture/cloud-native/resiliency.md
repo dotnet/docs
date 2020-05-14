@@ -1,11 +1,11 @@
 ---
 title: Cloud-native resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency
-ms.date: 06/30/2019
+author: robvet
+ms.date: 05/13/2020
 ---
-# Cloud-native resiliency
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Cloud-native resiliency
 
 Resiliency is the ability of your system to react to failure and still remain functional. It isn't about avoiding failure. But it's about accepting that failure is inevitable in cloud-based systems and building your application to respond to it. The end-goal of resiliency is to return the application to a fully functioning state after a failure.
 

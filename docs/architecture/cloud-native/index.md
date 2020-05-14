@@ -2,14 +2,14 @@
 title: Architecting Cloud Native .NET Applications for Azure
 description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
-ms.date: 04/23/2020
+ms.date: 05/13/2020
 ---
 
 # Architecting Cloud Native .NET Applications for Azure
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 ![cover image](./media/cover.png)
+
+**EDITION v.1
 
 PUBLISHED BY
 
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2019 by Microsoft Corporation
+Copyright &copy; 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -59,6 +59,10 @@ Editors:
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
+## Version
+
+This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
+
 ## Who should use this guide
 
 The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to build applications designed for the cloud.
@@ -78,6 +82,10 @@ This guide begins by defining cloud native and introducing a reference applicati
 - DevOps
 
 This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
+
+## Send your feedback
+
+This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

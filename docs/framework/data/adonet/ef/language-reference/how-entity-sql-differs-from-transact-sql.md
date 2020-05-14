@@ -104,8 +104,8 @@ SELET Tab.a FROM Tab
 p.Address.City
 ```  
   
-## No Support for *  
- Transact-SQL supports the unqualified * syntax as an alias for the entire row, and the qualified \* syntax (t.\*) as a shortcut for the fields of that table. In addition, Transact-SQL allows for a special count(\*) aggregate, which includes nulls.  
+## No Support for \*  
+ Transact-SQL supports the unqualified \* syntax as an alias for the entire row, and the qualified \* syntax (t.\*) as a shortcut for the fields of that table. In addition, Transact-SQL allows for a special count(\*) aggregate, which includes nulls.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support the * construct. Transact-SQL queries of the form `select * from T` and `select T1.* from T1, T2...` can be expressed in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] as `select value t from T as t` and `select value t1 from T1 as t1, T2 as t2...`, respectively. Additionally, these constructs handle inheritance (value substitutability), while the `select *` variants are restricted to top-level properties of the declared type.  
   

@@ -9,7 +9,7 @@ ms.date: 05/13/2020
 
 ![cover image](./media/cover.png)
 
-**EDITION v.1
+**EDITION v.1.0**
 
 PUBLISHED BY
 

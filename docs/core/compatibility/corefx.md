@@ -129,4 +129,3 @@ The following breaking changes are documented on this page:
 [!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
 
 ***
-

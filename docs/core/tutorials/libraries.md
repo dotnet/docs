@@ -2,6 +2,7 @@
 title: Develop libraries with the .NET Core CLI
 description: Learn how to create .NET Core libraries using the .NET Core CLI. You'll create a library that supports multiple frameworks.
 author: cartermp
+ms.topic: how-to
 ms.date: 05/01/2017
 ---
 # Develop libraries with the .NET Core CLI

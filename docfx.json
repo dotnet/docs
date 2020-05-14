@@ -190,7 +190,8 @@
         "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
-        "docs/fsharp/language-reference/**/**.md": "language-reference"
+        "docs/fsharp/language-reference/**/**.md": "language-reference",
+        "docs/core/tutorials/**.md": "tutorial"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

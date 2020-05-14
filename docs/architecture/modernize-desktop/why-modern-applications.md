@@ -15,12 +15,6 @@ Back in early 2000s, one multinational company started developing a distributed 
 
 You might find yourself in the same boat, where you have mature Windows Forms or Windows Presentation Foundation (WPF) applications that have proved their reliability over the years. You probably want to keep using these applications for many more years. At the same time, since those applications were written some time ago, they might be missing capabilities like modern look, performance, integration with new devices and platform features, and so on, which gives them a feel of "old tech". There's another problem that might concern you as a developer. While working on the older .NET Framework versions and maintaining applications that were written a while ago, you might feel like you aren't learning new technologies and missing on building modern technical skills. If that is your story – this book is for you!
 
-### About this guide
-
-This guide is about strategies you can adopt to move your existing desktop applications through the path of modernization and incorporate the latest runtime, language, and platform features. You'll discover that there's no unique recipe as each application is different, and so are your requirements and preferences. The good news is that there are common approaches you can apply to add new features and capabilities to your applications. Some of them won't even require major modifications of your code. In this book, we'll reveal how all those features work behind the scenes and explain the mechanics of their implementations. Moreover, you'll find some common scenarios for modernizing existing desktop applications shown in detail so you can find inspiration for evolving your projects.
-
-Microsoft's approach to modernizing existing applications is to give you the flexibility to create your own customized path. All the modernization strategies described in this book are mostly independent. You can choose ones that are relevant for your application and skip others that aren't important for you. In other words, you can mix and match the strategies to best address your application needs.
-
 ## Desktop applications nowadays
 
 Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But where they developed small tools or complex distributed architectures, they were all desktop applications.
@@ -150,34 +144,6 @@ Since the launch of .NET Core 3.0, you can leverage a new approach of deploying 
 Desktop applications always rely on some sort of installation process before the user can start using them. This fact brought into the game a set of technologies, from MSI and ClickOnce to custom installers or even XCOPY deployment. Any of these methods deals with delicate problems because applications need a way to access shared resources on the machine. Sometimes installation needs to access the Registry to insert or update new Key Values, sometimes to update shared DLLs referenced by the main application. This causes a continuous headache for users, creating this perception that once you install some application, your computer will never be the same, even if you uninstall it afterwards.
 
 In this book, we'll introduce a new way of installing applications with MSIX that solves the problem described earlier. You'll learn how you can easily set up a packaging, installation, and updates for your application.
-
-## What this guide does not cover
-
-This guide covers a specific subset of scenarios that are focused on lift-and-shift scenarios, outlining the way to gain the benefits of modernizing without the effort of rewriting code.
-
-This guide isn't about developing modern applications with .NET Core or implementing desktop scenarios into the Modern Application Platform. It focuses on how you can leverage your investments on desktop applications while you keep them updated with some of the latest technologies for desktop development.
-
-## Who should use this guide
-
-We wrote this guide for developers and solution architects who want to modernize existing Windows Forms and WPF desktop applications to leverage the benefits of .NET Core and MSIX installation.
-
-You also might find this guide useful if you are a technical decision maker, such as an enterprise architect or a development lead/director who just wants an overview of the benefits that you can get by updating existing desktop apps.
-
-## How to use this guide
-
-This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.1 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
-
-Along the different chapters, sample implementation code snippets and screenshots are provided, with chapter 5 devoted to showcase a complete migration process for sample applications.
-
-## Sample apps
-
-To highlight the necessary steps to perform a modernization, we'll be using a sample application called `eShopModernizing`. This application has two flavors, Windows Forms and WPF, and we'll show a step-by-step process on how to perform the modernization on both of them to .NET Core.
-
-Also, on the GitHub repository for this book, you'll find the results of the process, which you can consult with if you decide to follow the step-by-step tutorial.
-
-## Send us your feedback
-
-We wrote this guide to help you understand your options for improving and modernizing existing .NET desktop applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com).
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

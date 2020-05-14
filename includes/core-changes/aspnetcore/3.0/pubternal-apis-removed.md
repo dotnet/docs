@@ -1,6 +1,6 @@
-### "Pubternal" APIs removed
+### :::no-loc text="\"Pubternal\""::: APIs removed
 
-To better maintain the public API surface of ASP.NET Core, most of the types in `*.Internal` namespaces (referred to as "pubternal" APIs) have become truly internal. Members in these namespaces were never meant to be supported as public-facing APIs. The APIs could break in minor releases and often did. Code that depends on these APIs breaks when updating to ASP.NET Core 3.0.
+To better maintain the public API surface of ASP.NET Core, most of the types in `*.Internal` namespaces (referred to as :::no-loc text="\"pubternal\""::: APIs) have become truly internal. Members in these namespaces were never meant to be supported as public-facing APIs. The APIs could break in minor releases and often did. Code that depends on these APIs breaks when updating to ASP.NET Core 3.0.
 
 For more information, see [dotnet/aspnetcore#4932](https://github.com/dotnet/aspnetcore/issues/4932) and [dotnet/aspnetcore#11312](https://github.com/dotnet/aspnetcore/issues/11312).
 
@@ -18,7 +18,7 @@ The affected APIs are marked with the [internal(~/docs/csharp/language-reference
 
 #### Reason for change
 
-The guidance for these "pubternal" APIs was that they:
+The guidance for these :::no-loc text="\"pubternal\""::: APIs was that they:
 
 * Could change without notice.
 * Weren't subject to .NET policies to prevent breaking changes.
@@ -27,7 +27,7 @@ Leaving the APIs `public` (even in the `*.Internal` namespaces) was confusing to
 
 #### Recommended action
 
-Stop using these "pubternal" APIs. If you have questions about alternate APIs, open an issue in the [dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/issues) repository.
+Stop using these :::no-loc text="\"pubternal\""::: APIs. If you have questions about alternate APIs, open an issue in the [dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/issues) repository.
 
 For example, consider the following HTTP request buffering code in an ASP.NET Core 2.2 project. The `EnableRewind` extension method exists in the `Microsoft.AspNetCore.Http.Internal` namespace.
 

@@ -37,7 +37,7 @@ HRESULT EndEnumInstances(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the fifth slot of the virtual method table.
+The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the 7th slot of the virtual method table.
 
 ## Requirements
 

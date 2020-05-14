@@ -26,7 +26,7 @@ Serves as the general interface for publishing information about processes and i
 |[GetProcess Method](icorpublish-getprocess-method.md)|Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that represents the process with the specified identifier.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

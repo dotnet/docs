@@ -41,7 +41,7 @@ HRESULT GetMethodDefinitionByToken(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataModule` interface and corresponds to the 25th slot of the virtual method table.
+The provided method is part of the `IXCLRDataModule` interface and corresponds to the 26th slot of the virtual method table.
 
 ## Requirements
 

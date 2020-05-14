@@ -5,31 +5,30 @@ using System.Runtime.InteropServices;
 
 class BaseClass : IDisposable
 {
-   // Flag: Has Dispose already been called?
-   bool disposed = false;
-   // Instantiate a SafeHandle instance.
-   SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
+    // To detect redundant calls
+    private bool _disposed = false;
 
-   // Public implementation of Dispose pattern callable by consumers.
-   public void Dispose()
-   {
-      Dispose(true);
-      GC.SuppressFinalize(this);
-   }
+    // Instantiate a SafeHandle instance.
+    private SafeHandle _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
 
-   // Protected implementation of Dispose pattern.
-   protected virtual void Dispose(bool disposing)
-   {
-      if (disposed)
-         return;
+    // Public implementation of Dispose pattern callable by consumers.
+    public void Dispose() => Dispose(true);
 
-      if (disposing) {
-         handle.Dispose();
-         // Free any other managed objects here.
-         //
-      }
+    // Protected implementation of Dispose pattern.
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed)
+        {
+            return;
+        }
 
-      disposed = true;
-   }
+        if (disposing)
+        {
+           // Dispose managed state (managed objects).
+            _safeHandle?.Dispose();
+        }
+
+        _disposed = true;
+    }
 }
 // </Snippet3>

@@ -87,7 +87,7 @@ For more examples of serialization, see [Examples of XML Serialization](examples
 
 ## Items That Can Be Serialized
 
-The following items can be serialized using the **XmLSerializer** class:
+The following items can be serialized using the **XmlSerializer** class:
 
 - Public read/write properties and fields of public classes.
 

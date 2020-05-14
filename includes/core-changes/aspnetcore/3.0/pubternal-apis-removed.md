@@ -1,4 +1,4 @@
-### :::no-loc text="\"Pubternal\""::: APIs removed
+### "Pubternal" APIs removed
 
 To better maintain the public API surface of ASP.NET Core, most of the types in `*.Internal` namespaces (referred to as :::no-loc text="\"pubternal\""::: APIs) have become truly internal. Members in these namespaces were never meant to be supported as public-facing APIs. The APIs could break in minor releases and often did. Code that depends on these APIs breaks when updating to ASP.NET Core 3.0.
 

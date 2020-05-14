@@ -49,6 +49,7 @@ namespace SystemTextJsonSamples
                 // Not enough of the JSON is in the buffer to complete a read.
                 GetMoreBytesFromStream(stream, ref buffer, ref reader);
             }
+            // Display value of Summary property, that is, "Hot".
             Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 

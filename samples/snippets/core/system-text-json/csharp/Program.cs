@@ -117,6 +117,9 @@ namespace SystemTextJsonSamples
             Console.WriteLine("\n============================= Utf8Reader from byte array\n");
             Utf8ReaderFromBytes.Run();
 
+            Console.WriteLine("\n============================= Utf8Reader partial read\n");
+            Utf8ReaderPartialRead.Run();
+
             Console.WriteLine("\n============================= Utf8Writer to Stream\n");
             Utf8WriterToStream.Run();
         }

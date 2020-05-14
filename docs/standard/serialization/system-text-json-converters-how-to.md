@@ -287,6 +287,7 @@ If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%6
 
 * <xref:System.Collections.Stack>
 * <xref:System.Collections.Generic.Stack%601>
+* <xref:System.Collections.Concurrent.ConcurrentStack%601>
 * <xref:System.Collections.Immutable.ImmutableStack%601>
 * <xref:System.Collections.Immutable.IImmutableStack%601>
 

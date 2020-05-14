@@ -33,33 +33,33 @@ All other marks and logos are property of their respective owners.
 
 Co-Authors:
 
-> Olia Gavrysh, Program Manager, .NET team, Microsoft
+> **Olia Gavrysh**, Program Manager, .NET team, Microsoft
 
-> Miguel Angel Castejón Dominguez, Innovation Architect, Kabel
+> **Miguel Angel Castejón Dominguez**, Innovation Architect, Kabel
 
 Participants and reviewers:
 
-> Maira Wenzel, Senior Program Manager, .NET team, Microsoft
+> **Maira Wenzel**, Senior Program Manager, .NET team, Microsoft
 
-> Andy De Gorge, Senior Content Developer, .NET docs team, Microsoft
+> **Andy De Gorge**, Senior Content Developer, .NET docs team, Microsoft
 
-> Miguel Ramos, Senior Program Manager, Windows Developer Platform team, Microsoft
+> **Miguel Ramos**, Senior Program Manager, Windows Developer Platform team, Microsoft
 
-> Adam Braden, Principal Program Manager, Windows Developer Platform team, Microsoft
+> **Adam Braden**, Principal Program Manager, Windows Developer Platform team, Microsoft
 
-> Ricardo Minguez Pablos, Senior Program Manager, Azure IoT team, Microsoft
+> **Ricardo Minguez Pablos**, Senior Program Manager, Azure IoT team, Microsoft
 
-> Nish Anil, Senior Program Manager, .NET team, Microsoft
+> **Nish Anil**, Senior Program Manager, .NET team, Microsoft
 
-> Beth Massi, Senior Product Marketing Manager, Microsoft
+> **Beth Massi**, Senior Product Marketing Manager, Microsoft
 
-> Scott Hunter, Partner Director Program Manager, .NET team, Microsoft
+> **Scott Hunter**, Partner Director Program Manager, .NET team, Microsoft
 
-> Marta Fuentes Lara, Kabel
+> **Marta Fuentes Lara**, Kabel
 
-> Raúl Fernández de Córdoba, Kabel
+> **Raúl Fernández de Córdoba**, Kabel
 
-> Antonio Manuel Fernández Cantos, Kabel
+> **Antonio Manuel Fernández Cantos**, Kabel
 
 ## Introduction
 

@@ -107,7 +107,7 @@ Beginning in C# 7.3, you can also specify the <xref:System.Enum?displayProperty=
 
 [!code-csharp[using the enum constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#18)]
 
-The methods used to make use of reflection, which has performance implications. You can call this method to build a collection that is cached and reused rather than repeating the calls that require reflection.
+`Enum.GetValues` and `Enum.GetName` use reflection, which has performance implications. You can call `EnumNamedValues` to build a collection that is cached and reused rather than repeating the calls that require reflection.
 
 You could use it as shown in the following sample to create an enum and build a dictionary of its values and names:
 

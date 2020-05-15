@@ -90,7 +90,7 @@ dotnet ef dbcontext scaffold "CONNECTION STRING" Microsoft.EntityFrameworkCore.S
 
 This command will connect to the database using the specified connection string and the `Microsoft.EntityFrameworkCore.SqlServer` provider.  Once connected, it will create a class called `MyDbContext` with supporting classes for the `Product` and `Customer` tables that were specified with the `-t` switches. There are many configuration options for this command to generate the class hierarchy appropriate for your database. You can find a complete reference in the [documentation for this command](https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet#dotnet-ef-dbcontext-scaffold).
 
-More information about [Entity Framework Core](https://docs.microsoft.com/ef/core/) can be found on the Microsoft Docs site.
+More information about [EF Core](/ef/core/) can be found on the Microsoft Docs site.
 
 ## Interacting with web services
 

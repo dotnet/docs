@@ -92,7 +92,7 @@ The preceding command connects to the database using the specified connection st
 
 More information about [EF Core](/ef/core/) can be found on the Microsoft Docs site.
 
-## Interacting with web services
+## Interact with web services
 
 When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
 

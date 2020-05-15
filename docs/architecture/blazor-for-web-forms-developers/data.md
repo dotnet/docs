@@ -26,7 +26,7 @@ ADO.NET is the low-level approach to interacting with a database. Your apps coul
 
 Entity Framework (EF) is the open source object-relational mapping framework maintained by the .NET Foundation. Initially released with .NET Framework, EF allows for generating code for the database connections, storage schemas, and interactions. With this abstraction, you can focus on your app's business rules and allow the database to be managed by a trusted database administrator. In .NET Core, you can use an updated version of EF called EF Core. EF Core helps generate and maintain the interactions between your code and the database with a series of commands that are available for you using the `dotnet ef` command-line tool. Let's take a look at a few samples to get you working with a database.
 
-### .NET Code First
+### EF Code First
 
 A quick way to get started building your database interactions is to start with the class objects you want to work with. EF provides a tool to help generate the appropriate database code for your classes. This approach is called "Code First" development. Consider the following `Product` class for a sample storefront app that we want to store in a relational database like Microsoft SQL Server.
 
@@ -67,7 +67,7 @@ The `MyDbContext` class provides the one property that defines the access and tr
 services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer("MY DATABASE CONNECTION STRING"));
 
-The above code will connect to a SQL Server database with the specified connection string.  You can place the connection string in your *appsettings.json* file, environment variables, or other configuration storage locations and replace this embedded string appropriately.
+The preceding code will connect to a SQL Server database with the specified connection string. You can place the connection string in your *appsettings.json* file, environment variables, or other configuration storage locations and replace this embedded string appropriately.
 
 You can then generate the database table appropriate for this class using the following commands:
 
@@ -80,7 +80,7 @@ The first command defines the changes you're making to the database schema as a 
 
 Once applied, you have a simple `Product` table in your database and some new classes added to the project that help manage the database schema.  You can find these generated classes, by default, in a new folder called *Migrations*.  When you make changes to the `Product` class or add more related classes you would like interacting with your database, you need to run the command-line commands again with a new name of the migration.  This command will generate another set of migration classes to update your database schema.
 
-### Database First
+### EF Database First
 
 For existing databases, you can generate the classes for EF Core by using the .NET command-line tools. To scaffold the classes, use a variation of the following command:
 
@@ -110,7 +110,6 @@ services.AddHttpClient("github", c =>
 Whenever you need to access data from GitHub, create a client with a name of `github`. The client is configured with the base address, and the request headers are set appropriately. Inject the `IHttpClientFactory` into your Blazor components with the `@inject` directive or an `[Inject]` attribute on a property. Create your named client and interact with services using the following syntax:
 
 ```razor
-
 @inject IHttpClientFactory factory
 
 ...

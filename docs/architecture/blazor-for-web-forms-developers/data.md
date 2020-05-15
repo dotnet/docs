@@ -48,7 +48,7 @@ public class Product
 
 Product has a primary key and three additional fields that would be created in our database:  
 
-- Entity Framework will identify the `Id` property as a primary key by convention.
+- EF will identify the `Id` property as a primary key by convention.
 - `Name` will be stored in a column configured for text storage. The `[Required]` attribute decorating this property will add a `not null` constraint to help enforce this declared behavior of the property.
 - `Description` will be stored in a column configured for text storage, and have a maximum length configured of 4000 characters as dictated by the `[MaxLength]` attribute. The database schema will be configured with a column named `MaxLength` using data type `varchar(4000)`.
 - The `Price` property will be stored as currency. The `[Range]` attribute will generate appropriate constraints to prevent data storage outside of the minimum and maximum values declared.

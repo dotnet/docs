@@ -16,7 +16,7 @@ Data access is the backbone of an ASP.NET Web Forms app. If you're building form
 - ADO.NET
 - Entity Framework
 
-Data Sources were controls that you could place on a web form and configure like other controls. Visual Studio gave you a friendly set of dialogs to configure the controls and bind it to your web forms.  Developers who enjoy a 'low code' or 'no code' approach preferred this technique when web forms were first released.
+Data Sources were controls that you could place on a Web Forms page and configure like other controls. Visual Studio provided a friendly set of dialogs to configure and bind the controls to your Web Forms pages. Developers who enjoy a "low code" or "no code" approach preferred this technique when Web Forms was first released.
 
 ![Data Sources](media/data/datasources.png)
 

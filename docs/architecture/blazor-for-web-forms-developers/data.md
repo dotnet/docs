@@ -20,7 +20,7 @@ Data Sources were controls that you could place on a web form and configure like
 
 ![Data Sources](media/data/datasources.png)
 
-ADO.NET is the low-level approach to interacting with a database. Your applications could create a Connection to the database with Commands, Recordsets, and Datasets for interacting.  The results could then be bound to fields on screen without much code.  The drawback of this approach was that each set of ADO.NET objects (Connection, Command, Recordset) was bound to libraries provided by a database vendor.  Using these components made our code rigid and difficult to migrate to a different database.
+ADO.NET is the low-level approach to interacting with a database. Your apps could create a connection to the database with Commands, Recordsets, and Datasets for interacting. The results could then be bound to fields on screen without much code. The drawback of this approach was that each set of ADO.NET objects (`Connection`, `Command`, and `Recordset`) was bound to libraries provided by a database vendor. Use of these components made the code rigid and difficult to migrate to a different database.
 
 ## Entity Framework
 

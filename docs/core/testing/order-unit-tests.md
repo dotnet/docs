@@ -72,13 +72,13 @@ With NUnit, tests are automatically ordered by their test name.
 > [!NOTE]
 > A test named `Test14` will run before `Test2` even though `2` comes before `14`. This is because, test name ordering does _not_ use natural language sorting.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.Project/ByAlphabeticalOrder.cs":::
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.TestProject/ByAlphabeticalOrder.cs":::
 
 ### Order by priority
 
 To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determined the order to run the unit tests.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.Project/ByOrder.cs":::
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.TestProject/ByOrder.cs":::
 
 ---
 

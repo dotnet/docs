@@ -44,7 +44,7 @@ When not relying on a bundle, you can use the available providers of SQLite with
 
 | Provider | Description |
 |--|--|
-| [SQLitePCLRaw.provider.dynamic](https://www.nuget.org/packages/SQLitePCLRaw.provider.dynamic) | The `dynamic` provider loads the native library instead of using <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> attributes. For more information on using this provider, see [`SQLitePCLRaw` custom providers](#sqlitepclraw-custom-providers). |
+| [SQLitePCLRaw.provider.dynamic](https://www.nuget.org/packages/SQLitePCLRaw.provider.dynamic) | The `dynamic` provider loads the native library instead of using <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> attributes. For more information on using this provider, see [use the dynamic provider](#use-the-dynamic-provider). |
 | [SQLitePCLRaw.provider.e_sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.provider.e_sqlite3) | The `e_sqlite3` is the default provider. |
 | [SQLitePCLRaw.provider.e_sqlcipher](https://www.nuget.org/packages/SQLitePCLRaw.provider.e_sqlcipher) | The `e_sqlcipher` provider is the unofficial and unsupported `SQLCipher`. |
 | [SQLitePCLRaw.provider.sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.provider.sqlite3) | The `sqlite3` provider is a system-provided `SQLite` for iOS, macOS, and Linux. |
@@ -75,7 +75,7 @@ With the packages installed, you then set the provider to the `sqlite3` instance
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/SqliteProviderSample/Program.cs)]
 
-## SQLitePCLRaw custom providers
+## Use the dynamic provider
 
 You can use your own build of SQLite by leveraging the `SQLitePCLRaw.provider.dynamic_cdecl` package. In this case, you're responsible for deploying the native library with your app. Note, the details of deploying native libraries with your app vary considerably depending on which .NET platform and runtime you're using.
 

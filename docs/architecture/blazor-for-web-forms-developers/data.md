@@ -10,7 +10,7 @@ ms.date: 04/26/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Data access is the backbone of a web forms application.  It's almost a part of the name of the framework.  If you're building forms for the web, what happens to that data?  With web forms, there were several data access techniques you could use to interact with a database:
+Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 
 - Data Sources
 - ADO.NET

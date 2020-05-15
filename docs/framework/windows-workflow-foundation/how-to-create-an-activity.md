@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an Activity"
+description: "This article shows you how to create two activities in Workflow Foundation: one that uses code to implement its logic and one defined by using other activities."
 ms.date: 09/14/2018
 dev_langs:
   - "csharp"

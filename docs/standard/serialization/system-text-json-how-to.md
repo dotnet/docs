@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: This article shows you how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. It includes sample code.
-ms.date: "01/10/2020"
+ms.date: "05/13/2020"
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords: 
   - "JSON serialization"
@@ -775,6 +775,24 @@ The preceding code:
 Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
 [!code-json[](~/samples/snippets/core/system-text-json/csharp/Universities.json)]
+
+### Read from a stream using Utf8JsonReader
+
+When reading a large file (a gigabyte or more in size, for example), you might want to avoid having to load the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.
+
+When using the `Utf8JsonReader` to read from a stream, the following rules apply:
+
+* The buffer containing the partial JSON payload must be at least as big as the largest JSON token within it so that the reader can make forward progress.
+* The buffer must be at least as big as the largest sequence of white space within the JSON.
+* The reader doesn't keep track of the data it has read until it completely reads the next <xref:System.Text.Json.Utf8JsonReader.TokenType%2A> in the JSON payload. So when there are bytes left over in the buffer, you have to pass them to the reader again. You can use <xref:System.Text.Json.Utf8JsonReader.BytesConsumed%2A> to determine how many bytes are left over.
+
+The following code illustrates how to read from a stream. The example shows a <xref:System.IO.MemoryStream>. Similar code will work with a <xref:System.IO.FileStream>, except when the `FileStream` contains a UTF-8 BOM at the start. In that case, you need to strip those three bytes from the buffer before passing the remaining bytes to the `Utf8JsonReader`. Otherwise the reader would throw an exception, since the BOM is not considered a valid part of the JSON.
+
+The sample code starts with a 4KB buffer and doubles the buffer size each time it finds that the size is not big enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderPartialRead.cs)]
+
+The preceding example sets no limit to how big the buffer can grow. If the token size is too large, the code could fail with an <xref:System.OutOfMemoryException> exception. This can happen if the JSON contains a token that is around 1 GB or more in size, because doubling the 1 GB size results in a size that is too large to fit into an `int32` buffer.
 
 ## Additional resources
 

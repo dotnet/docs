@@ -61,7 +61,7 @@ Note how the application is decomposed across a set of small isolated microservi
 
 ### Cloud-native computing
 
-Hmm... We just used the term, `Cloud Native`. You first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?"
+Hmm... We just used the term, _Cloud Native_. Your first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?"
 
 Fortunately it's far different and hopefully this book will help convince you.
 

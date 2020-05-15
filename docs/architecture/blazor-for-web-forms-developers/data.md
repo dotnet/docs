@@ -31,13 +31,11 @@ Entity Framework (EF) is the open source object-relational mapping framework mai
 A quick way to get started building your database interactions is to start with the class objects you want to work with. Entity Framework provides a tool to help generate the appropriate database code for your classes.  This approach is called 'Code First' development.  Consider the following Product class for a sample storefront application that we want to store in a relational database like Microsoft SQL Server.
 
 ```csharp
-
 public class Product
 {
-
     public int Id { get; set; }
 
-    [Required()]
+    [Required]
     public string Name { get; set; }
 
     [MaxLength(4000)]
@@ -46,10 +44,7 @@ public class Product
     [Range(0, 99999,99)]
     [DataType(DataType.Currency)]
     public decimal Price { get; set; }
-
 }
-
-```
 
 Product has a primary key and three additional fields that would be created in our database:  
 

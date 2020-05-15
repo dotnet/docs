@@ -35,7 +35,7 @@ HRESULT IsManaged (
  Since the current version of `ICorPublishProcess` allows access only to processes that have managed code, `IsManaged` always returns `true`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

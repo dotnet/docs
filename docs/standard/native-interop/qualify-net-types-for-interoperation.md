@@ -1,5 +1,6 @@
 ---
 title: "Qualifying .NET Types for COM Interoperation"
+description: This article provides guidelines to help you expose types in a .NET assembly to COM applications for COM interop.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"

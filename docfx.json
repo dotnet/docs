@@ -187,11 +187,11 @@
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/azure/**/**.md": "conceptual",
+        "docs/core/tutorials/**.md": "tutorial",
         "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
-        "docs/fsharp/language-reference/**/**.md": "language-reference",
-        "docs/core/tutorials/**.md": "tutorial"
+        "docs/fsharp/language-reference/**/**.md": "language-reference"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],
@@ -208,6 +208,7 @@
         "docs/azure/**/**.yml": "camsoper",
         "docs/architecture/**/**.md": "nishanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "shirhatti",
+        "docs/architecture/modernize-desktop/**/**.md": "OliaG",
         "docs/core/**/**.md": "tdykstra",
         "docs/core/compatibility/**/**.md": "gewarren",
         "docs/core/deploying/**/**.md": "Thraka",
@@ -292,6 +293,7 @@
         "_vblang/spec/*.md": "wiwagn",
         "docs/architecture/**/**.md": "nanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "soshir",
+        "docs/architecture/modernize-desktop/**/**.md": "oliag",
         "docs/azure/**/**.md": "casoper",
         "docs/azure/**/**.yml": "casoper",
         "docs/core/**/**.md": "dotnetcontent",

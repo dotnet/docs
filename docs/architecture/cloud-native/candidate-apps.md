@@ -2,7 +2,7 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 05/13/2020
+ms.date: 05/14/2020
 ---
 
 # Candidate apps for cloud native
@@ -13,7 +13,7 @@ Applying a cost/benefit analysis, there's a good chance that most wouldn't suppo
 
 What type of application might be a candidate for cloud native?
 
-- A large, strategic enterprise system that needs to constantly evolve business capabilities/features
+- Strategic enterprise system that need to constantly evolve business capabilities/features
 
 - An application that requires a high release velocity - with high confidence
 

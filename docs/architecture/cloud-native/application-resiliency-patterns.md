@@ -33,8 +33,6 @@ Note how in the previous figure the resiliency policies apply to request message
 
 Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is functioning properly, but informing the caller that they aren't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.
 
-> Sentence highlighting importance of using factor - point out two issues with direct HttpClient instantiation
-
 As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should target the .NET Core platform. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.
 
 Next, let's expand on retry and circuit breaker patterns.

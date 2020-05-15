@@ -67,6 +67,28 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 - [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
 - [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
 
+### References
+
+- [Polly](http://www.thepollyproject.org/)
+
+- [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry)
+
+- [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
+
+- [Resilience in Azure whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/resilience-in-azure-whitepaper/Resilience%20in%20Azure.pdf)
+
+- [Redundancy](https://docs.microsoft.com/azure/architecture/guide/design-principles/redundancy)
+
+- [geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication)
+
+- [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+
+- [Autoscaling guidance](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)
+
+- [Istio](https://istio.io/docs/concepts/what-is-istio/)
+
+- [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy)
+
 >[!div class="step-by-step"]
 >[Previous](infrastructure-resiliency-azure.md)
 >[Next](monitoring-health.md)

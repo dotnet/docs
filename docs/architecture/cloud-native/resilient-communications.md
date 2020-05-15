@@ -10,17 +10,22 @@ ms.date: 05/13/2020
 Throughout this book, we've embraced a microservice-based architectural approach. While such an architecture provides important benefits, it presents many challenges:
 
 - *Out-of-process network communication.* Each microservice communicates over a network protocol that introduces network congestion, latency, and transient faults.
-- *Service discovery.* With each microservice running across a cluster of machines with its own IP address and port, how do services discover and communicate with each other?
+
+- *Service discovery.* How do microservices discover and communicate with each other when running across a cluster of machines with their own IP addresses and ports?
+
 - *Resiliency.* How do you manage short-lived failures and keep the system stable?
+
 - *Load balancing.* How does inbound traffic get distributed across multiple instances of a microservice?
+
 - *Security.* How are security concerns such as transport-level encryption and certificate management enforced?
+
 - *Distributed Monitoring.* - How do you correlate and capture traceability and monitoring for a single request across multiple consuming microservices?
 
-You can address these concerns with different libraries and frameworks, but their implementation can be expensive, complex, and time-consuming. Moreover, you end up with a solution where infrastructure concerns are coupled to business logic.
+You can address these concerns with different libraries and frameworks, but the implementation can be expensive, complex, and time-consuming. You also end up with infrastructure concerns coupled to business logic.
 
 ## Service mesh
 
-A better approach is an evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the other challenges mentioned above. It decouples these concerns by moving them into a service mesh proxy. Known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), the proxy is deployed into a separate process to provide isolation from your service business code. However, the proxy is closely linked to the service. It is created along with it and shares its lifecycle. Figure 6-7 shows this scenario.
+A better approach is an evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the other challenges mentioned above. It decouples these concerns by moving them into a service proxy. The proxy is deployed into a separate process (called a [sidecar](https://docs.microsoft.com/azure/architecture/patterns/sidecar)) to provide isolation from business code. However, the sidecar is linked to the service - it's created with it and shares its lifecycle. Figure 6-7 shows this scenario.
 
 ![Service mesh with a side car](./media/service-mesh-with-side-car.png)
 
@@ -36,7 +41,7 @@ A service mesh is logically split into two disparate components: A [data plane](
 
 Once configured, a service mesh is highly functional. It can retrieve a corresponding pool of instances from a service discovery endpoint. The mesh can then send a request to a specific instance, recording the latency and response type of the result. A mesh can choose the instance most likely to return a fast response based on many factors, including its observed latency for recent requests.
 
-If an instance is unresponsive or fails, the mesh will retry the request on another instance. If a pool consistently returns errors, a mesh will evict it from the load-balancing pool to be retried periodically later after it heals. If a request times out, a mesh can fail and then retry the request. A mesh captures behavior in the form of metrics and distributed tracing, which is then emitted to a centralized metrics system.
+If an instance is unresponsive or fails, the mesh will retry the request on another instance. If it returns errors, a mesh will evict the instance from the load-balancing pool and restate it after it heals. If a request times out, a mesh can fail and then retry the request. A mesh captures and emits metrics and distributed tracing to a centralized metrics system.
 
 ## Istio and Envoy
 
@@ -48,7 +53,7 @@ While a few service mesh options currently exist, [Istio](https://istio.io/docs/
 - A pluggable policy layer and configuration API supporting access controls, rate limits, and quotas.
 - Automatic metrics, logs, and traces for all traffic within a cluster, including cluster ingress and egress.
 
-A key component for an Istio implementation is a proxy service entitled the [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). Originating from Lyft and recently contributed to the [Cloud Native Computing Foundation](https://www.cncf.io/) (discussed in chapter 1), the Envoy proxy runs alongside each service and provides a platform-agnostic foundation for the following features:
+A key component for an Istio implementation is a proxy service entitled the [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). It runs alongside each service and provides a platform-agnostic foundation for the following features:
 
 - Dynamic service discovery.
 - Load balancing.
@@ -76,6 +81,8 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 - [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
 - [Resilience in Azure whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/resilience-in-azure-whitepaper/Resilience%20in%20Azure.pdf)
+
+- [network latency](https://www.techopedia.com/definition/8553/network-latency)
 
 - [Redundancy](https://docs.microsoft.com/azure/architecture/guide/design-principles/redundancy)
 

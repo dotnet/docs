@@ -7,11 +7,7 @@ ms.date: 05/13/2020
 
 # Cloud-native resiliency
 
-Resiliency is the ability of your system to react to failure and still remain functional. It's not about avoiding failure, but accepting failure as inevitable and crafting  your cloud-native services to respond to it. The end-goal is to return the application to a fully functioning state after a failure.
-
-Cloud-native systems take full advantage of the cloud computing model. Your services must know how to thrive in a dynamic, virtualized cloud environment. They'll make extensive use of Platform as a Service (PaaS) compute infrastructure and managed services. The caveat: Cloud infrastructure and networking are inherently unreliable.
-
-Cloud vendors can detect and mitigate platform failure. Your service will be restarted, scale out and in, and distributed across nodes. Your services must be design services to detect these environmental scenarios and recover.  
+Resiliency is the ability of your system to react to failure and still remain functional. It's not about avoiding failure, but accepting failure and constructing your cloud-native services to respond to it. You want to return to a fully functioning state quickly as possible.
 
 Unlike traditional monolithic applications, where everything runs together in a single process, cloud-native systems embrace a distributed architecture as shown in Figure 6-1:
 
@@ -19,23 +15,27 @@ Unlike traditional monolithic applications, where everything runs together in a 
 
 **Figure 6-1.** Distributed cloud-native environment
 
-Note in the previous figure how each microservice and cloud-based [backing service](https://12factor.net/backing-services) execute as a separate process, running across different server infrastructure, and communicating via network-based calls.
+In the previous figure, each microservice and cloud-based [backing service](https://12factor.net/backing-services) execute in a separate process, across server infrastructure, communicating via network-based calls.
 
-With such a design, what could go wrong?
+Operating in this environment, a service must be sensitive to many different challenges:
 
-- Unexpected [network latency](https://www.techopedia.com/definition/8553/network-latency) (Time for a request to travel to the receiver and back).
-- [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults) (short-loved network connectivity errors).
+- Unexpected network latency - the time for a service request to travel to the receiver and back.
+
+- [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults) - short-lived network connectivity errors.
+
 - Blockage by a long-running synchronous operation.
+
 - A host process that has crashed and is being restarted or moved.
+
 - An overloaded microservice that can't respond for a short time.
-- An in-flight Orchestrator operation such as a rolling upgrade or moving a service from one node to another.
-- Hardware failures from commodity hardware.
 
-When deploying distributed cloud-native services across a cloud-based infrastructure, these factors are real. You must design and develop defensively to deal with them.
+- An in-flight orchestrator operation such as a rolling upgrade or moving a service from one node to another.
 
-In a smaller system, failure will be less frequent. But as a system scales up and out, you can expect more and more issues - to a level, perhaps, where partial failure could become normal operation.
+- Hardware failures.
 
-To remain functional, both your application and infrastructure must be resilient. In the following sections, we'll explore defensive techniques that your application and managed cloud resources can leverage to minimize downtime and disruption.
+Cloud platforms can detect and mitigate many of these infrastructure issues. It may restart, scale out, and even redistribute your service to a different node.  However, to take full advantage of this built-in protection, you must design your services to react to it and thrive in this dynamic environment.
+
+In the following sections, we'll explore defensive techniques that your service and managed cloud resources can leverage to minimize downtime and disruption.
 
 >[!div class="step-by-step"]
 >[Previous](elastic-search-in-azure.md)

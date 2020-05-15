@@ -53,8 +53,6 @@ Participants and Reviewers:
 >
 > **Cecil Phillip**, Senior Cloud Advocate, Microsoft
 
-Learn more about eShopOnContainers
-
 Editors:
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft

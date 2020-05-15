@@ -60,11 +60,13 @@ public class MyApplicationState
 
     public void IncrementCounter() => VisitorCounter += 1;
 }
+```
 
 ```csharp
 app.AddSingleton<MyApplicationState>();
+```
 
-```cshtml
+```razor
 @inject MyApplicationState AppState
 
 <label>Total Visitors: @AppState.VisitorCounter</label>

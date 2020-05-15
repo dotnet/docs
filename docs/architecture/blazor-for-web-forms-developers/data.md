@@ -24,7 +24,7 @@ ADO.NET is the low-level approach to interacting with a database. Your apps coul
 
 ## Entity Framework
 
-Entity Framework (EF) is the open source object-relational mapping framework maintained by the .NET Foundation.  Initially released with .NET Framework, EF allows for generating code for the database connections, storage schemas, and interactions.  With this abstraction, you can focus on your application's business rules and allow the database to be managed by a trusted database administrator.  With .NET Core, we now use an updated version of Entity Framework called `Entity Framework Core`.  Entity Framework Core helps generate and maintain the interactions between your code and the database with a series of commands that are available for you using the `dotnet ef` command-line tool.  Let's take a look at a few simple samples to get you working with a database.
+Entity Framework (EF) is the open source object-relational mapping framework maintained by the .NET Foundation. Initially released with .NET Framework, EF allows for generating code for the database connections, storage schemas, and interactions. With this abstraction, you can focus on your app's business rules and allow the database to be managed by a trusted database administrator. In .NET Core, you can use an updated version of EF called EF Core. EF Core helps generate and maintain the interactions between your code and the database with a series of commands that are available for you using the `dotnet ef` command-line tool. Let's take a look at a few samples to get you working with a database.
 
 ### .NET Code First
 

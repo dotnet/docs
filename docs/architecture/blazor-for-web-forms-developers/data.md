@@ -45,6 +45,7 @@ public class Product
     [DataType(DataType.Currency)]
     public decimal Price { get; set; }
 }
+```
 
 Product has a primary key and three additional fields that would be created in our database:  
 
@@ -60,12 +61,14 @@ public class MyDbContext : DbContext
 {
     public DbSet<Product> Products { get; set; }
 }
+```
 
 The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method:
 
 ```csharp
 services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer("MY DATABASE CONNECTION STRING"));
+```
 
 The preceding code will connect to a SQL Server database with the specified connection string. You can place the connection string in your *appsettings.json* file, environment variables, or other configuration storage locations and replace this embedded string appropriately.
 

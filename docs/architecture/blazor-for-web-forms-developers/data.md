@@ -121,7 +121,7 @@ Whenever you need to access data from GitHub, create a client with a name of `gi
         var client = factory.CreateClient("github");
         var response = await client.GetAsync("repos/dotnet/docs/issues");
         response.EnsureStatusCode();
-        var content = async test.Content.ReadAsStringAsync();
+        var content = async response.Content.ReadAsStringAsync();
     }
 }
 ```

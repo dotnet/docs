@@ -379,6 +379,10 @@
       href: testing/unit-testing-fsharp-with-dotnet-test.md
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-dotnet-test.md
+    - name: Run selective unit tests
+      href: testing/selective-unit-tests.md?tab=xunit
+    - name: Order unit tests
+      href: testing/order-unit-tests.md?tab=xunit
   - NUnit:
     items:
     - name: C# unit testing
@@ -387,6 +391,10 @@
       href: testing/unit-testing-fsharp-with-nunit.md
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-nunit.md
+    - name: Run selective unit tests
+      href: testing/selective-unit-tests.md?tab=nunit
+    - name: Order unit tests
+      href: testing/order-unit-tests.md?tab=nunit
   - MSTest:
     - name: C# unit testing
       href: testing/unit-testing-with-mstest.md
@@ -394,8 +402,10 @@
       href: testing/unit-testing-fsharp-with-mstest.md
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-mstest.md
-  - name: Run selective unit tests
-    href: testing/selective-unit-tests.md
+    - name: Run selective unit tests
+      href: testing/selective-unit-tests.md?tab=mstest
+    - name: Order unit tests
+      href: testing/order-unit-tests.md?tab=mstest
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio

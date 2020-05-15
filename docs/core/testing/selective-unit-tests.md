@@ -1,5 +1,5 @@
 ---
-title: Running selective unit tests
+title: Run selective unit tests
 description: How to use a filter expression to run selective unit tests with the dotnet test command in .NET Core.
 author: smadala
 ms.date: 05/15/2020
@@ -187,3 +187,8 @@ For more information, see [TestCase filter](https://github.com/Microsoft/vstest-
 
 - [dotnet test](../tools/dotnet-test.md)
 - [dotnet test --filter](../tools/dotnet-test.md#filter-option-details)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Order unit tests](order-unit-tests.md)

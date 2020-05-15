@@ -1,0 +1,88 @@
+---
+title: Order unit tests
+description: Learn how to order unit tests with .NET Core.
+author: IEvangelist
+ms.date: 05/15/2020
+---
+
+# Order unit tests
+
+Occasionally, you may want to have unit tests run in a specific order. Ideally, the order in which unit tests run should _not_ matter, and it is [best practice](unit-testing-best-practices.md) to avoid ordering unit tests. Regardless, there may be a need to do so. In that case, this article demonstrates how to order test runs.
+
+If you prefer to browse the source code, see the [order .NET Core unit tests](/samples/dotnet/samples/order-unit-tests-cs) sample repository.
+
+> [!TIP]
+> In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019#create-custom-playlists) as an alternative.
+
+## [MSTest](#tab/mstest)
+
+### Order alphabetically
+
+With MSTest, tests are automatically ordered by their test name.
+
+> [!NOTE]
+> A test named `Test14` will run before `Test2` even though `2` comes before `14`. This is because, test name ordering does _not_ use natural language sorting.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
+
+## [xUnit](#tab/xunit)
+
+The xUnit test framework allows for more granularity and control of test run order. The `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces can be implemented to control the order of test cases for a class, or test collections.
+
+### Order by test case alphabetically
+
+To order test cases by their method name, you could implement the `ITestCaseOrderer` and provide an ordering mechanism.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
+
+Then in a test class you would set the test case order with the `TestCaseOrdererAttribute`.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs":::
+
+### Order by collection alphabetically
+
+To order test collections by their display name, you could implement the `ITestCollectionOrderer` and provide an ordering mechanism.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
+
+Since test collections have the potential to run in parallel, you need to explicitly disable test parallelization of the collections with the `CollectionBehaviorAttribute`. Then you need to specify the implementation to the `TestCollectionOrdererAttribute`.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByDisplayName.cs":::
+
+### Order by custom attribute
+
+To order xUnit tests with custom attributes, you first need an attribute to rely on. Define a `TestPriorityAttribute` as follows:
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Attributes/TestPriorityAttribute.cs":::
+
+Next, consider the following `PriorityOrderer` implementation of the `ITestCaseOrderer` interface.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
+
+Then in a test class you would set the test case order with the `TestCaseOrdererAttribute` to the `PriorityOrderer`.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
+
+## [NUnit](#tab/nunit)
+
+### Order alphabetically
+
+With NUnit, tests are automatically ordered by their test name.
+
+> [!NOTE]
+> A test named `Test14` will run before `Test2` even though `2` comes before `14`. This is because, test name ordering does _not_ use natural language sorting.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.Project/ByAlphabeticalOrder.cs":::
+
+### Order by priority
+
+To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determined the order to run the unit tests.
+
+:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.Project/ByOrder.cs":::
+
+---
+
+## Nest Steps
+
+> [!div class="nextstepaction"]
+> [Unit testing best practices](unit-testing-best-practices.md)

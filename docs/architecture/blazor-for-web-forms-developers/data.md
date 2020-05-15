@@ -28,7 +28,7 @@ Entity Framework (EF) is the open source object-relational mapping framework mai
 
 ### .NET Code First
 
-A quick way to get started building your database interactions is to start with the class objects you want to work with. Entity Framework provides a tool to help generate the appropriate database code for your classes.  This approach is called 'Code First' development.  Consider the following Product class for a sample storefront application that we want to store in a relational database like Microsoft SQL Server.
+A quick way to get started building your database interactions is to start with the class objects you want to work with. EF provides a tool to help generate the appropriate database code for your classes. This approach is called "Code First" development. Consider the following `Product` class for a sample storefront app that we want to store in a relational database like Microsoft SQL Server.
 
 ```csharp
 public class Product
@@ -50,10 +50,10 @@ Product has a primary key and three additional fields that would be created in o
 
 - Entity Framework will identify the `Id` property as a primary key by convention.
 - `Name` will be stored in a column configured for text storage. The `[Required]` attribute decorating this property will add a `not null` constraint to help enforce this declared behavior of the property.
-- `Description` will be stored in a column configured for text storage, and have a maximum length configured of 4000 characters as dictated by the `MaxLength` attribute.  The database schema will be configured with a column named `MaxLength` using datatype `varchar(4000)`.
-- The `Price` property will be stored in currency.  The `Range` attribute will generate appropriate constraints to prevent data storage outside of the minimum and maximum values declared
+- `Description` will be stored in a column configured for text storage, and have a maximum length configured of 4000 characters as dictated by the `[MaxLength]` attribute. The database schema will be configured with a column named `MaxLength` using data type `varchar(4000)`.
+- The `Price` property will be stored as currency. The `[Range]` attribute will generate appropriate constraints to prevent data storage outside of the minimum and maximum values declared.
 
-We need to add this Product class to a database context class that defines the connection and translation operations with our database.
+We need to add this `Product` class to a database context class that defines the connection and translation operations with our database.
 
 ```csharp
 public class MyDbContext : DbContext
@@ -76,13 +76,13 @@ dotnet ef migrations add 'Create Product table'
 dotnet ef database update
 ```
 
-The first command defines the changes you're making to the database schema as a new 'Migration' called 'Create Product table'.  A 'Migration' defines how to apply and remove your new database changes.
+The first command defines the changes you're making to the database schema as a new EF Migration called `Create Product table`.  A Migration defines how to apply and remove your new database changes.
 
-Once applied, you have a simple `Product` table in your database and some new classes added to the project that help manage the database schema.  You can find these generated classes, by default, in a new folder called `Migrations`.  When you make changes to the `Product` class or add more related classes you would like interacting with your database, you need to run the command-line commands again with a new name of the migration.  This command will generate another set of migration classes to update your database schema.
+Once applied, you have a simple `Product` table in your database and some new classes added to the project that help manage the database schema.  You can find these generated classes, by default, in a new folder called *Migrations*.  When you make changes to the `Product` class or add more related classes you would like interacting with your database, you need to run the command-line commands again with a new name of the migration.  This command will generate another set of migration classes to update your database schema.
 
-### Data First
+### Database First
 
-For existing databases, you can generate the classes for Entity Framework Core.  The .NET command-line tools to scaffold the classes are similar to these two commands at the command line:
+For existing databases, you can generate the classes for EF Core by using the .NET command-line tools. To scaffold the classes, use a variation of the following command:
 
 ```dotnetcli
 dotnet ef dbcontext scaffold "CONNECTION STRING" Microsoft.EntityFrameworkCore.SqlServer -c MyDbContext -t Product -t Customer

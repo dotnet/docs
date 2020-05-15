@@ -336,7 +336,7 @@ Non-compliant type | Description | CLS-compliant alternative
 
 The .NET Framework Class Library or any other class library may include other types that aren't CLS-compliant; for example:
 
-* Boxed value types. The following C# example creates a class that has a public property of type `int`* named `Value`. Because an `int`* is a boxed value type, the compiler flags it as non-CLS-compliant.
+* Boxed value types. The following C# example creates a class that has a public property of type `int*` named `Value`. Because an `int*` is a boxed value type, the compiler flags it as non-CLS-compliant.
 
 ```csharp
 using System;

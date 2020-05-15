@@ -1,5 +1,6 @@
 ---
 title: "How to: Enable Persistence for Workflows and Workflow Services"
+description: Learn how to configure SQL Workflow Instance Store to enable persistence for workflows and workflow services programmatically and by using a configuration file.
 ms.date: "03/30/2017"
 ms.assetid: 2b1c8bf3-9866-45a4-b06d-ee562393e503
 ---

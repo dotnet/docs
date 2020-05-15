@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Workflow"
+description: Complete one of the three options in this section to create a workflow as part of this Workflow Foundation tutorial.
 ms.date: "03/30/2017"
 ms.assetid: 87234108-8e21-4cb3-9340-4a1a13f3f98c
 ---

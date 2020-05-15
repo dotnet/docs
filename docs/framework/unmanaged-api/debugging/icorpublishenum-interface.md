@@ -35,7 +35,7 @@ Serves as the abstract base interface for the enumerators that are used in the p
 - [ICorPublishProcessEnum](icorpublishprocessenum-interface.md)  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

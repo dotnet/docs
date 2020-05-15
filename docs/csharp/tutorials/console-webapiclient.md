@@ -216,9 +216,10 @@ var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos
 var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 ```
 
-You're using a new namespace, so you'll need to add it at the top of the file as well:
+You're using new namespaces, so you'll need to add it at the top of the file as well:
 
 ```csharp
+using System.Collections.Generic;
 using System.Text.Json;
 ```
 

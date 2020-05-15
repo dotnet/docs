@@ -36,6 +36,9 @@ namespace SystemTextJsonSamples
             Console.WriteLine("\n============================= Roundtrip enum as string\n");
             RoundtripEnumAsString.Run();
 
+            Console.WriteLine("\n============================= Roundtrip Stack<T>\n");
+            RoundtripStackOfT.Run();
+
             Console.WriteLine("\n============================= Serialize polymorphic\n");
             SerializePolymorphic.Run();
 
@@ -113,6 +116,9 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("\n============================= Utf8Reader from byte array\n");
             Utf8ReaderFromBytes.Run();
+
+            Console.WriteLine("\n============================= Utf8Reader partial read\n");
+            Utf8ReaderPartialRead.Run();
 
             Console.WriteLine("\n============================= Utf8Writer to Stream\n");
             Utf8WriterToStream.Run();

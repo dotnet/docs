@@ -35,4 +35,4 @@ HRESULT GetCheckSumAlgorithmId(
   
 ## See also
 
-- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

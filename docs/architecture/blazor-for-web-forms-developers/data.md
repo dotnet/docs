@@ -67,7 +67,7 @@ The `MyDbContext` class provides the one property that defines the access and tr
 services.AddDbContext<MyDbContext>(options =>
     options.UseSqlServer("MY DATABASE CONNECTION STRING"));
 
-The above code will connect to a SQL Server database with the specified connection string.  You can place the connection string in your `appsettings.json` file, environment variables, or other configuration storage locations and replace this embedded string appropriately.
+The above code will connect to a SQL Server database with the specified connection string.  You can place the connection string in your *appsettings.json* file, environment variables, or other configuration storage locations and replace this embedded string appropriately.
 
 You can then generate the database table appropriate for this class using the following commands:
 

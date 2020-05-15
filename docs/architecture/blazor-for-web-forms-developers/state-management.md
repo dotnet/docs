@@ -3,7 +3,7 @@ title: State management
 description: Learn about different approaches for managing state in ASP.NET Web Forms and Blazor.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 15/04/2020
+ms.date: 05/15/2020
 ---
 # State management
 

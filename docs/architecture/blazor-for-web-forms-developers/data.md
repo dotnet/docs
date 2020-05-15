@@ -61,15 +61,10 @@ Product has a primary key and three additional fields that would be created in o
 We need to add this Product class to a database context class that defines the connection and translation operations with our database.
 
 ```csharp
-
 public class MyDbContext : DbContext
 {
-
     public DbSet<Product> Products { get; set; }
-
 }
-
-```
 
 The `MyDbContext` class provides the one property that defines the access and translation for the `Product` class.  Your application configures this class for interaction with the database using the following entries in the `Startup` class's `ConfigureServices` method:
 

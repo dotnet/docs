@@ -133,7 +133,7 @@ Whenever you need to access data from GitHub, create a client with a name of `gi
 
 ```
 
-This method returns the string describing the collection of issues in the `dotnet/docs` repository on GitHub.  We know it will return content in JSON format and we can deserialize it back into appropriate GitHub issue objects.  There are many ways that you can configure the HttpClientFactory to deliver preconfigured HttpClient objects.  Try configuring multiple HttpClient instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page.  Read [the documentation for the IHttpClientFactory](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-3.1) for more details.
+This method returns the string describing the collection of issues in the *dotnet/docs* GitHub repository. It returns content in JSON format and is deserialized into appropriate GitHub issue objects. There are many ways that you can configure the `HttpClientFactory` to deliver preconfigured `HttpClient` objects. Try configuring multiple `HttpClient` instances with different names and endpoints for the various web services you work with. This approach will make your interactions with those services easier to work with on each page. For more details, read [the documentation for the IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
 
 >[!div class="step-by-step"]
 >[Previous](forms-validation.md)

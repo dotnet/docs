@@ -6,7 +6,7 @@ ms.author: jefritz
 ms.date: 04/26/2020
 ---
 
-# Dealing with Data
+# Work with data
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

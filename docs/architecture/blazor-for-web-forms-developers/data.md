@@ -88,7 +88,7 @@ For existing databases, you can generate the classes for Entity Framework Core. 
 dotnet ef dbcontext scaffold "CONNECTION STRING" Microsoft.EntityFrameworkCore.SqlServer -c MyDbContext -t Product -t Customer
 ```
 
-This command will connect to the database using the specified connection string and the `Microsoft.EntityFrameworkCore.SqlServer` provider.  Once connected, it will create a class called `MyDbContext` with supporting classes for the `Product` and `Customer` tables that were specified with the `-t` switches. There are many configuration options for this command to generate the class hierarchy appropriate for your database. You can find a complete reference in the [documentation for this command](https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet#dotnet-ef-dbcontext-scaffold).
+The preceding command connects to the database using the specified connection string and the `Microsoft.EntityFrameworkCore.SqlServer` provider. Once connected, a database context class named `MyDbContext` is created. Additionally, supporting classes are created for the `Product` and `Customer` tables that were specified with the `-t` options. There are many configuration options for this command to generate the class hierarchy appropriate for your database. For a complete reference, see [the command's documentation](/ef/core/miscellaneous/cli/dotnet#dotnet-ef-dbcontext-scaffold).
 
 More information about [EF Core](/ef/core/) can be found on the Microsoft Docs site.
 

@@ -109,7 +109,7 @@ services.AddHttpClient("github", c =>
 
 ```
 
-Whenever we need to access data from GitHub, we can create a client with a name of `github` and it will be configured with the appropriate base-address and headers set appropriately.  Inject the `IHttpClientFactory` into your Blazor components with the `@inject` directive or an `Inject` attribute on a property.  Create your named client and interact with services using this syntax:
+Whenever you need to access data from GitHub, create a client with a name of `github`. The client is configured with the base address, and the request headers are set appropriately. Inject the `IHttpClientFactory` into your Blazor components with the `@inject` directive or an `[Inject]` attribute on a property. Create your named client and interact with services using the following syntax:
 
 ```cshtml
 

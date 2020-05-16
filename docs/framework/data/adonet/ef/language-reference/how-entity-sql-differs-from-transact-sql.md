@@ -52,7 +52,7 @@ set(e1)
  Entity SQL does not support this implicit coercion. Entity SQL provides the `ANYELEMENT` operator to extract a singleton value from a collection, and a `select value` clause to avoid creating a row-wrapper during a query expression.  
   
 ## Select Value: Avoiding the Implicit Row Wrapper  
- The select clause in a transact-SQL subquery implicitly creates a row wrapper around the items in the clause. This implies that we cannot create collections of scalars or objects. Transact-SQL allows an implicit coercion between a `rowtype` with one field and a singleton value of the same data type.  
+ The select clause in a Transact-SQL subquery implicitly creates a row wrapper around the items in the clause. This implies that we cannot create collections of scalars or objects. Transact-SQL allows an implicit coercion between a `rowtype` with one field and a singleton value of the same data type.  
   
  Entity SQL provides the `select value` clause to skip the implicit row construction. Only one item may be specified in a `select value` clause. When such a clause is used, no row wrapper is constructed around the items in the `select` clause, and a collection of the desired shape may be produced, for example, `select value a`.  
   

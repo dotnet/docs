@@ -11,11 +11,11 @@ ms.assetid: ee1fbb7a-b0f9-482f-8cd0-6df37e6586a2
 The diagnostics symbol store API enables a compiler to generate symbol information for use by a debugger.  
   
 ## In This Section  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)  
+ [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)  
  Describes the unmanaged interfaces that the diagnostics symbol store API uses.  
   
- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)  
+ [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)  
  Describes the unmanaged enumerations that the diagnostics symbol store API uses.  
   
- [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)  
+ [Diagnostics Symbol Store Structures](diagnostics-symbol-store-structures.md)  
  Describes the unmanaged structures that the diagnostics symbol store API uses.

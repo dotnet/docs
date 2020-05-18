@@ -2,7 +2,7 @@
 title: Run selective unit tests
 description: How to use a filter expression to run selective unit tests with the dotnet test command in .NET Core.
 author: smadala
-ms.date: 05/15/2020
+ms.date: 05/18/2020
 ---
 
 # Run selective unit tests
@@ -11,9 +11,15 @@ With the [`dotnet test`](../tools/dotnet-test.md) command in .NET Core, you can 
 
 ## Character escaping
 
-Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
-skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
-Note the backslash that precedes the exclamation mark.
+Using filters that include exclamation mark `!` on `*nix` requires escaping since `!` is reserved. For example, this filter
+skips all tests if the namespace contains IntegrationTests:
+
+```dotnetcli
+dotnet test --filter FullyQualifiedName\!~IntegrationTests
+```
+
+> [!IMPORTANT]
+> Notice the backslash that precedes the exclamation mark, that indicates it is an escaped character `\!`.
 
 For `FullyQualifiedName` values that include a comma for generic type parameters, escape the comma with `%2C`. For example:
 
@@ -55,7 +61,7 @@ namespace MSTestNamespace
 
 Examples using the conditional operators `|` and `&`:
 
-To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute> is `CategoryA`.
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute> is `"CategoryA"`.
 
 ```dotnetcli
 dotnet test --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"

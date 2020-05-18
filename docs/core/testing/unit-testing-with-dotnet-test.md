@@ -223,6 +223,6 @@ The completed `IsPrime` method is not an efficient algorithm for testing primali
 
 ### Additional resources
 
-- [xUnit.net official site](https://xunit.github.io)
+- [xUnit.net official site](https://xunit.net)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)
 - [`dotnet add reference`](../tools/dotnet-add-reference.md)

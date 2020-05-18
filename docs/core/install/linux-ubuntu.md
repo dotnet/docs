@@ -49,7 +49,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
-gre
+
 ## 19.10 ✔
 
 Before installing .NET, you'll need to:

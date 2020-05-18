@@ -79,9 +79,9 @@ Project file:
 
 ## NLS
 
-- Determines whether Windows uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs. Starting in .NET 5.0, .NET libraries use ICU globalization APIs by default.
+- Determines whether .NET uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs for Windows apps. .NET 5.0 and later versions use ICU globalization APIs by default on Windows 10.
 - Default: Use ICU globalization APIs (`false`).
-- For more information, see [Globalization breaking changes](../compatibility/3.1-5.0.md#globalization).
+- For more information, see [Globalization APIs use ICU libraries on Windows](../compatibility/3.1-5.0.md#globalization-apis-use-icu-libraries-on-windows).
 
 | | Setting name | Values | Introduced |
 | - | - | - |

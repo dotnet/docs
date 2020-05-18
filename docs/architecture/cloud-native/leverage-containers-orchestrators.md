@@ -205,19 +205,19 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["WebApplication4/WebApplication4.csproj", "WebApplication4/"]
-RUN dotnet restore "WebApplication4/WebApplication4.csproj"
+COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
+RUN dotnet restore "eShopWeb/eShopWeb.csproj"
 COPY . .
-WORKDIR "/src/WebApplication4"
-RUN dotnet build "WebApplication4.csproj" -c Release -o /app/build
+WORKDIR "/src/eShopWeb"
+RUN dotnet build "eShopWeb.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApplication4.csproj" -c Release -o /app/publish
+RUN dotnet publish "eShopWeb.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WebApplication4.dll"]
+ENTRYPOINT ["dotnet", "eShopWeb.dll"]
 ```
 
 **Figure 3-6**. Visual Studio generated Dockerfile

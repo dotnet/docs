@@ -27,20 +27,20 @@ Globalization
 
 ### Affected APIs
 
-- <xref:System.String?displayProperty=fullName>
 - <xref:System.Span%601?displayProperty=fullName>
+- <xref:System.String?displayProperty=fullName>
 - <xref:System.Globalization.CompareInfo?displayProperty=fullName>
-- <xref:System.Globalization.IdnMapping?displayProperty=fullName>
 - <xref:System.Globalization.CultureInfo?displayProperty=fullName>
+- <xref:System.Globalization.IdnMapping?displayProperty=fullName>
 - <xref:System.Globalization.JapaneseCalendar?displayProperty=fullName>
 
 <!--
 
-- `T:System.String`
 - `T:System.Span%601`
+- `T:System.String`
 - `T:System.Globalization.CompareInfo`
-- `T:System.Globalization.IdnMapping`
 - `T:System.Globalization.CultureInfo`
+- `T:System.Globalization.IdnMapping`
 - `T:System.Globalization.JapaneseCalendar`
 
 -->

@@ -20,4 +20,4 @@ HRESULT CloseMapTokensToSourceSpans();
   
 ## See also
 
-- [ISymUnmanagedWriter5 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter5-interface.md)
+- [ISymUnmanagedWriter5 Interface](isymunmanagedwriter5-interface.md)

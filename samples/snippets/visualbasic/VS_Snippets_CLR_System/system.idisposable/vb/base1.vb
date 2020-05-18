@@ -15,7 +15,7 @@ Class BaseClass : Implements IDisposable
    Public Sub Dispose() _
               Implements IDisposable.Dispose
       Dispose(True)
-      GC.SuppressFinalize(Me)           
+      GC.SuppressFinalize(Me)
    End Sub
    
    ' Protected implementation of Dispose pattern.

@@ -47,5 +47,5 @@ HRESULT GetChildren(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)
+- [GetParent Method](isymunmanagedscope-getparent-method.md)

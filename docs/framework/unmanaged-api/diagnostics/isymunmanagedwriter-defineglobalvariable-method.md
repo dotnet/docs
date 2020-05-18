@@ -66,6 +66,6 @@ HRESULT DefineGlobalVariable(
   
 ## See also
 
-- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
-- [DefineGlobalVariable2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineglobalvariable2-method.md)
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)
+- [DefineLocalVariable Method](isymunmanagedwriter-definelocalvariable-method.md)
+- [DefineGlobalVariable2 Method](isymunmanagedwriter2-defineglobalvariable2-method.md)

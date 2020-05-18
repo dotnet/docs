@@ -1,5 +1,6 @@
 ---
 title: "Custom serialization"
+description: Custom serialization is controlling the serialization and deserialization of a type. Controlling serialization can ensure serialization compatibility.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

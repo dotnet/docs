@@ -1,12 +1,10 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 04/13/2020
+ms.date: 05/13/2020
 ---
 
 # Leveraging containers and orchestrators
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Containers and orchestrators are designed to solve problems common to monolithic deployment approaches.
 
@@ -14,7 +12,7 @@ Containers and orchestrators are designed to solve problems common to monolithic
 
 Traditionally, most applications have been deployed as a single unit. Such applications are referred to as a monolith. This general approach of deploying applications as single units even if they're composed of multiple modules or assemblies is known as monolithic architecture, as shown in Figure 3-1.
 
-![Monolithic architecture.](./media/monolithic-architecture.png)
+![Monolithic architecture.](./media/monolithic-design.png)
 
 **Figure 3-1**. Monolithic architecture.
 
@@ -52,8 +50,9 @@ Containers are immutable. Once you define a container, you can recreate and run 
 
 Containers are immutable. Once you define a container, you can recreate and run it exactly the same way. This immutability lends itself to component-based design. If some parts of an application evolve differently than others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-2 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
 
-![Breaking up a monolithic app to use microservices in the back end.](./media/breaking-up-monolith-with-backend-microservices.png)
-**Figure 3-2**. Breaking up a monolithic app to use microservices in the back end.
+![Breaking up a monolithic app to use microservices in the back end.](./media/cloud-native-design.png)
+
+**Figure 3-2**. Decomposing a monolithic app to embrace microservices.
 
 Each cloud-native service is built and deployed in a separate container. Each can update as needed. Individual services can be hosted on nodes with resources appropriate to each service. The environment each service runs in is immutable, shared across dev, test, and production environments, and easily versioned. Coupling between different areas of the application occurs explicitly as calls or messages between services, not compile-time dependencies within the monolith. You can also choose the technology that best suites a given capability without requiring changes to the rest of the app.
 
@@ -233,11 +232,15 @@ In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/
 
 Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right click on the project and **Add** > **Docker Support**, as shown in Figure 3-8.
 
+![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
+
 **Figure 3-8**. Adding Docker support to Visual Studio
 
 You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
 You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
+
+![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
 
 **Figure 3-9**. Adding orchestration support to Visual Studio
 

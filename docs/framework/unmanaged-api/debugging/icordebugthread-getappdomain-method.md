@@ -32,7 +32,7 @@ HRESULT GetAppDomain (
  [out] A pointer to an ICorDebugAppDomain object that represents the application domain in which this thread is currently executing.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

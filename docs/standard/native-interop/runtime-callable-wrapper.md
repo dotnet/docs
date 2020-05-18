@@ -1,5 +1,6 @@
 ---
 title: "Runtime Callable Wrapper"
+description: The CLR exposes COM objects through a runtime callable wrapper, which manages calls between a .NET client and a COM object.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "COM interop, COM wrappers"

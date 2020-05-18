@@ -1,5 +1,6 @@
 ---
 title: "Designing Workflows"
+description: Learn about the flow-control paradigms, like flowchart, procedural, and state machine, in workflow development and authoring workflows with imperative code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], designing workflows"

@@ -35,7 +35,7 @@ HRESULT GetFunction (
  The `GetFunction` method may fail if the frame is not associated with any particular function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Custom Activity Designer"
+description: This article describes how to create a Workflow Foundation custom activity designer that has a drop zone where an arbitrary activity can be placed.
 ms.date: "03/30/2017"
 ms.assetid: 2f3aade6-facc-44ef-9657-a407ef8b9b31
 ---

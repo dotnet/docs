@@ -21,7 +21,7 @@ public class Example
     }
 }
 
-// The example displays the following output:
+// The example displays output similar to the following:
 // True
 // 7/26/2019 12:00:00 AM
 // 7/26/2019 12:00:00 AM

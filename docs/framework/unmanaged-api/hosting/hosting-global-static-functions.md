@@ -11,15 +11,15 @@ ms.assetid: 4e4ad69d-9343-4f6a-aed8-fe0335a3b979
 This section describes the unmanaged hosting functions used by the .NET Framework hosting APIs.  
   
 ## In This Section  
- [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md)  
+ [.NET Framework 4 Hosting Global Static Functions](net-framework-4-hosting-global-static-functions.md)  
  Describes the functions introduced in the .NET Framework 4.  
   
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
+ [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)  
  Describes the functions introduced in the .NET Framework 1.1 and 2.0, which are deprecated in the .NET Framework 4.  
   
 ## Related Sections  
- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)  
+ [Hosting Coclasses](hosting-coclasses.md)  
   
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
+ [Hosting Enumerations](hosting-enumerations.md)  
   
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+ [Hosting Structures](hosting-structures.md)

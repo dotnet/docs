@@ -3,6 +3,7 @@ title: Run selective unit tests
 description: How to use a filter expression to run selective unit tests with the dotnet test command in .NET Core.
 author: smadala
 ms.date: 05/18/2020
+zone_pivot_groups: unit-testing-framework-set-one
 ---
 
 # Run selective unit tests
@@ -27,7 +28,7 @@ For `FullyQualifiedName` values that include a comma for generic type parameters
 dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"
 ```
 
-## [MSTest](#tab/mstest)
+:::zone pivot="mstest"
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -79,7 +80,7 @@ To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName>
 dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
 ```
 
-## [xUnit](#tab/xunit)
+:::zone pivot="xunit"
 
 ```csharp
 using Xunit;
@@ -134,7 +135,7 @@ To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName>
 dotnet test --filter "(FullyQualifiedName~TestClass1&Category=CategoryA)|Priority=1"
 ```
 
-## [NUnit](#tab/nunit)
+:::zone pivot="nunit"
 
 ```csharp
 using NUnit.Framework;
@@ -187,7 +188,7 @@ dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Prio
 
 For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
 
----
+:::zone-end
 
 ## See also
 

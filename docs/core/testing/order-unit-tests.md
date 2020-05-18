@@ -3,6 +3,7 @@ title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
 author: IEvangelist
 ms.date: 05/18/2020
+zone_pivot_groups: unit-testing-framework-set-one
 ---
 
 # Order unit tests
@@ -14,7 +15,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 > [!TIP]
 > In addition to the ordering capabilities outlined in this article, consider [creating custom playlists with Visual Studio](/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019#create-custom-playlists) as an alternative.
 
-## [MSTest](#tab/mstest)
+:::zone pivot="mstest"
 
 ### Order alphabetically
 
@@ -25,7 +26,7 @@ With MSTest, tests are automatically ordered by their test name.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
 
-## [xUnit](#tab/xunit)
+:::zone pivot="xunit"
 
 The xUnit test framework allows for more granularity and control of test run order. The `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces can be implemented to control the order of test cases for a class, or test collections.
 
@@ -63,7 +64,7 @@ Then in a test class you would set the test case order with the `TestCaseOrderer
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
 
-## [NUnit](#tab/nunit)
+:::zone pivot="nunit"
 
 ### Order by priority
 
@@ -71,7 +72,7 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.c
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.TestProject/ByOrder.cs":::
 
----
+:::zone-end
 
 ## Next Steps
 

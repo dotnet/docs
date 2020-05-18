@@ -3,7 +3,7 @@ title: Install .NET Core on Ubuntu - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Ubuntu.
 author: thraka
 ms.author: adegeo
-ms.date: 05/04/2020
+ms.date: 05/18/2020
 ---
 
 # Install .NET Core SDK and .NET Core Runtime on Ubuntu
@@ -29,11 +29,7 @@ For the best compatibility, choose a long-term release (LTS) version.
 | 2.2       | 16.04, 18.04         |
 | 2.0       | 14.04, 16.04, 18.04  |
 
-## APT (Advanced Package Tool)
-
-APT comes with Ubuntu and Microsoft publishes APT-compatable feeds that can be used to install .NET Core. While the examples in this section use Ubuntu version `20.04` and .NET Core version `3.1`, you may need to change the versions in the commands below to the correct versions suited for your environment.
-
-### Add Microsoft repository key and feed
+## APT 20.04 (supported)
 
 Before installing .NET, you'll need to:
 
@@ -51,66 +47,189 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-Use the following table for the correct URL based on the version of Ubuntu you're running:
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
-| Ubuntu version | URL                                                                            |
-|----------------|--------------------------------------------------------------------------------|
-| 20.04          | https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb |
-| 19.10          | https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb |
-| 19.04          | https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb |
-| 18.10          | https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb |
-| 18.04          | https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb |
-| 17.10          | https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb |
-| 17.04          | https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb |
-| 16.10          | https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb |
-| 16.04          | https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb |
+## APT 19.10 (supported)
 
-### Install the SDK
+Before installing .NET, you'll need to:
 
-The .NET Core SDK allows you to develop apps with .NET Core. To install the .NET Core SDK, run the following commands.
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+
+## APT 19.04 (not supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+
+## APT 18.10 (not supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+
+## APT 18.04 (supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+
+## APT 17.10 (not supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+
+## APT 17.04 (not supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+
+## APT 16.10 (not supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+
+## APT 16.04 (supported)
+
+Before installing .NET, you'll need to:
+
+- Add the Microsoft package signing key to the list of trusted keys.
+- Add the repository to the package manager.
+- Install required dependencies.
+
+> [!TIP]
+> Registering the key only needs to be done once per machine.
+
+Open a terminal and run the following commands.
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+
+## APT update the SDK or runtime
+
+When a new patch release is available for .NET Core, you can simply upgrade it through APT with the following commands:
 
 ```bash
 sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install dotnet-sdk-3.1
+sudo apt-get upgrade
 ```
 
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-sdk-3.1**, see the [Troubleshoot APT](#troubleshoot-apt) section.
-
-### Install the runtime
-
-The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
-
-```bash
-sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install aspnetcore-runtime-3.1
-```
-
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-3.1**, see the [Troubleshoot APT](#troubleshoot-apt) section.
-
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `aspnetcore-runtime-3.1` in the command above with `dotnet-runtime-3.1`.
-
-```bash
-sudo apt-get install dotnet-runtime-3.1
-```
-
-### Troubleshoot APT
+## APT troubleshooting
 
 This section provides information on common errors you may get while using [APT to install .NET Core](#apt-advanced-package-tool).
 
-#### Unable to locate
+### Unable to locate
 
-If you receive an error message similar to **Unable to locate package {the .NET Core package}**, run the following commands.
+If you receive an error message similar to **Unable to locate package {netcore-package}**, run the following commands.
 
 ```bash
 sudo dpkg --purge packages-microsoft-prod && sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
-sudo apt-get install {the .NET Core package}
+sudo apt-get install {netcore-package}
 ```
 
 If that doesn't work, you can run a manual install with the following commands:
@@ -119,30 +238,16 @@ If that doesn't work, you can run a manual install with the following commands:
 sudo apt-get install -y gpg
 wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/ubuntu/20.04/prod.list
+wget https://packages.microsoft.com/config/ubuntu/{ubuntu-version}/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 sudo apt-get install -y apt-transport-https
 sudo apt-get update
-sudo apt-get install {the .NET Core package}
+sudo apt-get install {netcore-package}
 ```
 
-Use the following table for the correct URL based on the version of Ubuntu you're running:
-
-| Ubuntu version | URL                                                          |
-|----------------|--------------------------------------------------------------|
-| 20.04          | https://packages.microsoft.com/config/ubuntu/20.04/prod.list |
-| 19.10          | https://packages.microsoft.com/config/ubuntu/19.10/prod.list |
-| 19.04          | https://packages.microsoft.com/config/ubuntu/19.04/prod.list |
-| 18.10          | https://packages.microsoft.com/config/ubuntu/18.10/prod.list |
-| 18.04          | https://packages.microsoft.com/config/ubuntu/18.04/prod.list |
-| 17.10          | https://packages.microsoft.com/config/ubuntu/17.10/prod.list |
-| 17.04          | https://packages.microsoft.com/config/ubuntu/17.04/prod.list |
-| 16.10          | https://packages.microsoft.com/config/ubuntu/16.10/prod.list |
-| 16.04          | https://packages.microsoft.com/config/ubuntu/16.04/prod.list |
-
-#### Failed to fetch
+### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 

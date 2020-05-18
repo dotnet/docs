@@ -27,7 +27,7 @@ The following table is a list of currently supported .NET Core releases and the 
 
 For more information about the required Linux dependencies for .NET Core, see [.NET Core dependencies and requirements](dependencies.md?tabs=netcore31&pivots=os-linux).
 
-For more information, see [Install .NET Core with a package manager on Ubuntu](linux-package-manager-ubuntu.md).
+For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
 
 ### Unsupported releases
 

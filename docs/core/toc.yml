@@ -1,3 +1,4 @@
+items:
 - name: .NET Core documentation
   href: index.yml
 - name: Introduction to .NET Core
@@ -22,12 +23,12 @@
     href: install/macos-notarization-issues.md
   - name: How to check .NET Core versions
     href: install/how-to-detect-installed-versions.md
-  - name: Linux package managers
+  - name: Linux
     items:
     - name: Overview
-      href: install/linux-package-managers.md
+      href: install/linux.md
     - name: Ubuntu
-      href: install/linux-package-manager-ubuntu.md
+      href: install/linux-ubuntu.md
     - name: CentOS
       href: install/linux-package-manager-centos.md
     - name: Debian

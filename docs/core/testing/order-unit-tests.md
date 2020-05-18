@@ -26,6 +26,7 @@ With MSTest, tests are automatically ordered by their test name.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
 
+:::zone-end
 :::zone pivot="xunit"
 
 The xUnit test framework allows for more granularity and control of test run order. The `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces can be implemented to control the order of test cases for a class, or test collections.
@@ -64,6 +65,7 @@ Then in a test class you would set the test case order with the `TestCaseOrderer
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
 
+:::zone-end
 :::zone pivot="nunit"
 
 ### Order by priority

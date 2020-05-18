@@ -80,6 +80,7 @@ To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName>
 dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
 ```
 
+:::zone-end
 :::zone pivot="xunit"
 
 ```csharp
@@ -135,6 +136,7 @@ To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName>
 dotnet test --filter "(FullyQualifiedName~TestClass1&Category=CategoryA)|Priority=1"
 ```
 
+:::zone-end
 :::zone pivot="nunit"
 
 ```csharp

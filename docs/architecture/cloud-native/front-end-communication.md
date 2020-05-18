@@ -2,12 +2,10 @@
 title: Front-end client communication
 description: Learn how front-end clients communicate with cloud-native systems
 author: robvet
-ms.date: 09/08/2019
+ms.date: 05/13/2020
 ---
 
 # Front-end client communication
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.  
 

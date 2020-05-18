@@ -1,12 +1,10 @@
 ---
 title: Centralized configuration
 description: Centralizing configuration for cloud-native applications using Azure App Configuration and AzureKey Vault.
-ms.date: 04/19/2020
+ms.date: 05/13/2020
 ---
 
 # Centralized configuration
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Unlike a monolithic app in which everything runs within a single instance, a cloud-native application consists of independent services distributed across virtual machines, containers, and geographic regions. Managing configuration settings for dozens of interdependent services can be challenging. Duplicate copies of configuration settings across different locations is error prone and difficult to manage. Centralized configuration is a critical requirement for distributed cloud-native applications.
 

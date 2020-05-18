@@ -1,7 +1,7 @@
 ---
 title: Scaling containers and serverless applications
 description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
-ms.date: 04/13/2020
+ms.date: 05/13/2020
 ---
 
 # Scaling containers and serverless applications

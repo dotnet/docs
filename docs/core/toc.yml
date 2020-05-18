@@ -380,9 +380,9 @@
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-dotnet-test.md
     - name: Run selective unit tests
-      href: testing/selective-unit-tests.md?tab=xunit
+      href: testing/selective-unit-tests.md?tabs=xunit
     - name: Order unit tests
-      href: testing/order-unit-tests.md?tab=xunit
+      href: testing/order-unit-tests.md?tabs=xunit
   - name: NUnit
     items:
     - name: C# unit testing
@@ -392,9 +392,9 @@
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-nunit.md
     - name: Run selective unit tests
-      href: testing/selective-unit-tests.md?tab=nunit
+      href: testing/selective-unit-tests.md?tabs=nunit
     - name: Order unit tests
-      href: testing/order-unit-tests.md?tab=nunit
+      href: testing/order-unit-tests.md?tabs=nunit
   - name: MSTest
     items:
     - name: C# unit testing
@@ -404,9 +404,9 @@
     - name: VB unit testing
       href: testing/unit-testing-visual-basic-with-mstest.md
     - name: Run selective unit tests
-      href: testing/selective-unit-tests.md?tab=mstest
+      href: testing/selective-unit-tests.md?tabs=mstest
     - name: Order unit tests
-      href: testing/order-unit-tests.md?tab=mstest
+      href: testing/order-unit-tests.md?tabs=mstest
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio

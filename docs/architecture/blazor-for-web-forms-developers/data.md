@@ -100,13 +100,13 @@ More information about [EF Core](/ef/core/) can be found on the Microsoft Docs s
 When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to exchange data. Much has changed since that time, and the preferred interactions with services have shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the configuration of your `HttpClient` in the `Startup` class's `ConfigureServices` method. Use that configuration when you need to interact with the HTTP endpoint. Consider the following configuration code:
 
 ```csharp
-services.AddHttpClient("github", c =>
+services.AddHttpClient("github", client =>
 {
-    c.BaseAddress = new Uri("http://api.github.com/");
+    client.BaseAddress = new Uri("http://api.github.com/");
     // Github API versioning
-    c.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
+    client.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
     // Github requires a user-agent
-    c.DefaultRequestHeaders.Add("User-Agent", "BlazorWebForms-Sample");
+    client.DefaultRequestHeaders.Add("User-Agent", "BlazorWebForms-Sample");
 });
 ```
 

@@ -76,7 +76,6 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 | Data retrieval is simple and tends to be flat | You work with complex queries and reports|
 | Your data requires a wide geographic distribution | Your users are more centralized |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
-|||
 
 In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
 

@@ -17,7 +17,7 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 
 :::zone pivot="mstest"
 
-### Order alphabetically
+## Order alphabetically
 
 With MSTest, tests are automatically ordered by their test name.
 
@@ -31,7 +31,7 @@ With MSTest, tests are automatically ordered by their test name.
 
 The xUnit test framework allows for more granularity and control of test run order. The `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces can be implemented to control the order of test cases for a class, or test collections.
 
-### Order by test case alphabetically
+## Order by test case alphabetically
 
 To order test cases by their method name, you could implement the `ITestCaseOrderer` and provide an ordering mechanism.
 
@@ -41,7 +41,7 @@ Then in a test class you would set the test case order with the `TestCaseOrderer
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs":::
 
-### Order by collection alphabetically
+## Order by collection alphabetically
 
 To order test collections by their display name, you could implement the `ITestCollectionOrderer` and provide an ordering mechanism.
 
@@ -51,7 +51,7 @@ Since test collections have the potential to run in parallel, you need to explic
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByDisplayName.cs":::
 
-### Order by custom attribute
+## Order by custom attribute
 
 To order xUnit tests with custom attributes, you first need an attribute to rely on. Define a `TestPriorityAttribute` as follows:
 
@@ -68,7 +68,7 @@ Then in a test class you would set the test case order with the `TestCaseOrderer
 :::zone-end
 :::zone pivot="nunit"
 
-### Order by priority
+## Order by priority
 
 To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Tests with this attribute are started before tests without. The order value is used to determined the order to run the unit tests.
 

@@ -68,7 +68,7 @@ static int pwzMethodName (String pwzArgument)
  where `pwzMethodName` represents the name of the invoked method, and `pwzArgument` represents the string value passed as a parameter to that method. If the HRESULT value is set to S_OK, `pReturnValue` is set to the integer value returned by the invoked method. Otherwise, `pReturnValue` is not set.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -78,4 +78,4 @@ static int pwzMethodName (String pwzArgument)
   
 ## See also
 
-- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)

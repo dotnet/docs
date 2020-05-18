@@ -230,7 +230,7 @@ If you receive an error message similar to **Unable to locate package {netcore-p
 There are two placeholders in the following set of commands.
 
 - `{netcore-package}`\
-This represents the .NET Core package you're installing, such as `a`. This is in the `sudo apt-get install` command.
+This represents the .NET Core package you're installing, such as `20.04`. This is in the `sudo apt-get install` command.
 
 - `{ubuntu-version}`\
 This represents the Ubuntu version you are on. This is in the `wget` command.

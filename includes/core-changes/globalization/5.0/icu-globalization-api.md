@@ -17,15 +17,15 @@ This change was introduced for two reasons:
 
 .NET 5.0 Preview 4
 
-### Recommended action
+#### Recommended action
 
 No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../../docs/core/run-time-config/globalization.md#nls) to revert to that behavior.
 
-### Category
+#### Category
 
 Globalization
 
-### Affected APIs
+#### Affected APIs
 
 - <xref:System.Span%601?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>

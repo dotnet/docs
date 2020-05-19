@@ -98,6 +98,9 @@
     - name: Unit test a library
       href: tutorials/testing-library-with-visual-studio.md
       displayName: tutorials, visual studio, vs
+    - name: Use a library
+      href: tutorials/consuming-library-with-visual-studio.md
+      displayName: tutorials, visual studio, vs
     - name: Live unit test
       href: /visualstudio/test/live-unit-testing-start
     - name: Install and use a package
@@ -111,15 +114,15 @@
     - name: Create a console app
       href: tutorials/with-visual-studio-code.md
       displayName: tutorials, visual studio code, vs code, cli
-    - name: Create a library and unit test it on macOS
+    - name: Create a library and unit test it - macOS
       href: tutorials/using-on-macos.md
       displayName: tutorials, visual studio code, vs code, cli
   - name: Use the CLI
     items:
-    - name: 1 - Create a console app and publish it
+    - name: Create a console app and publish it
       href: tutorials/cli-create-console-app.md
       displayName: tutorials, cli
-    - name: 2 - Unit test an app
+    - name: Unit test an app with xUnit
       href: tutorials/testing-with-cli.md
       displayName: tutorials, cli
     - name: How to create libraries

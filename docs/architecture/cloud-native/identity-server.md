@@ -1,11 +1,10 @@
 ---
 title: IdentityServer for Cloud Native Apps
 description: Architecting Cloud Native .NET Apps for Azure | IdentityServer
-ms.date: 06/30/2019
+ms.date: 05/13/2020
 ---
-# IdentityServer for cloud-native applications
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# IdentityServer for cloud-native applications
 
 IdentityServer is an open-source authentication server that implements OpenID Connect (OIDC) and OAuth 2.0 standards for ASP.NET Core. It's designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
 

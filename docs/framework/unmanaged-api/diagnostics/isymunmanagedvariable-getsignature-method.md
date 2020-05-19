@@ -47,4 +47,4 @@ HRESULT GetSignature(
   
 ## See also
 
-- [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+- [ISymUnmanagedVariable Interface](isymunmanagedvariable-interface.md)

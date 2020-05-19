@@ -42,4 +42,4 @@ HRESULT GetSourceServerData(
   
 ## See also
 
-- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)
+- [ISymUnmanagedSourceServerModule Interface](isymunmanagedsourceservermodule-interface.md)

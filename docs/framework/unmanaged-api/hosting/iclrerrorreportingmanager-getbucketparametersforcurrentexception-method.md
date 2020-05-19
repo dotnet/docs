@@ -31,10 +31,10 @@ HRESULT GetBucketParametersForCurrentException(
   
 ## Parameters  
  `pParams`  
- [out] A pointer to a [BucketParameters](../../../../docs/framework/unmanaged-api/hosting/bucketparameters-structure.md) structure that contains error data for the exception.  
+ [out] A pointer to a [BucketParameters](bucketparameters-structure.md) structure that contains error data for the exception.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -44,4 +44,4 @@ HRESULT GetBucketParametersForCurrentException(
   
 ## See also
 
-- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)

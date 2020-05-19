@@ -1,12 +1,10 @@
 ---
 title: Infrastructure as code
 description: Embracing Infrastructure as Code (IaC) with cloud-native applications
-ms.date: 05/12/2020
+ms.date: 05/13/2020
 ---
 
 # Infrastructure as code
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. They provide automated build and release stages to ensure consistent and quality code. But, that's only part of the story. How do you provision the cloud environments upon which these systems run?
 

@@ -22,32 +22,32 @@ If you prefer to browse the source code, see the [order .NET Core unit tests](/s
 With MSTest, tests are automatically ordered by their test name.
 
 > [!NOTE]
-> A test named `Test14` will run before `Test2` even though `2` comes before `14`. This is because, test name ordering does _not_ use natural language sorting.
+> A test named `Test14` will run before `Test2` even though the number  `2` is less than `14`. This is because, test name ordering uses the text name of the test.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
 
 :::zone-end
 :::zone pivot="xunit"
 
-The xUnit test framework allows for more granularity and control of test run order. The `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces can be implemented to control the order of test cases for a class, or test collections.
+The xUnit test framework allows for more granularity and control of test run order. You implement the `ITestCaseOrderer` and `ITestCollectionOrderer` interfaces to control the order of test cases for a class, or test collections.
 
 ## Order by test case alphabetically
 
-To order test cases by their method name, you could implement the `ITestCaseOrderer` and provide an ordering mechanism.
+To order test cases by their method name, you implement the `ITestCaseOrderer` and provide an ordering mechanism.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
 
-Then in a test class you would set the test case order with the `TestCaseOrdererAttribute`.
+Then in a test class you set the test case order with the `TestCaseOrdererAttribute`.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs":::
 
 ## Order by collection alphabetically
 
-To order test collections by their display name, you could implement the `ITestCollectionOrderer` and provide an ordering mechanism.
+To order test collections by their display name, you implement the `ITestCollectionOrderer` and provide an ordering mechanism.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
 
-Since test collections have the potential to run in parallel, you need to explicitly disable test parallelization of the collections with the `CollectionBehaviorAttribute`. Then you need to specify the implementation to the `TestCollectionOrdererAttribute`.
+Since test collections potentially run in parallel, you must explicitly disable test parallelization of the collections with the `CollectionBehaviorAttribute`. Then specify the implementation to the `TestCollectionOrdererAttribute`.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByDisplayName.cs":::
 
@@ -61,7 +61,7 @@ Next, consider the following `PriorityOrderer` implementation of the `ITestCaseO
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
 
-Then in a test class you would set the test case order with the `TestCaseOrdererAttribute` to the `PriorityOrderer`.
+Then in a test class you set the test case order with the `TestCaseOrdererAttribute` to the `PriorityOrderer`.
 
 :::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
 

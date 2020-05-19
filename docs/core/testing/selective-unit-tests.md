@@ -20,7 +20,7 @@ dotnet test --filter FullyQualifiedName\!~IntegrationTests
 ```
 
 > [!IMPORTANT]
-> Notice the backslash that precedes the exclamation mark, that indicates it is an escaped character `\!`.
+> The backslash precedes the exclamation mark to indicate it is an escaped character `\!`.
 
 For `FullyQualifiedName` values that include a comma for generic type parameters, escape the comma with `%2C`. For example:
 

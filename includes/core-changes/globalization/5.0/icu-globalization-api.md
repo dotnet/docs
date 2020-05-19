@@ -10,7 +10,7 @@ Starting in .NET 5.0, if an app is running on Windows 10 May 2019 Update or late
 
 This change was introduced for two reasons:
 
-- Apps have the same globalization behavior across platforms, including Linux, MacOS, and Windows.
+- Apps have the same globalization behavior across platforms, including Linux, macOS, and Windows.
 - Apps can control globalization behavior by using custom ICU libraries.
 
 #### Version introduced
@@ -32,6 +32,8 @@ Globalization
 - Most types in the <xref:System.Globalization?displayProperty=fullName> namespace
 
 <!--
+
+#### Affected APIs
 
 - `T:System.Span%601`
 - `T:System.String`

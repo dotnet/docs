@@ -18,7 +18,7 @@ namespace AsyncBreakfast
 
             // <SnippetAwaitAnyTask>
             var allTasks = new List<Task>{eggsTask, baconTask, toastTask};
-            while (allTasks.Count > 1)
+            while (allTasks.Count > 0)
             {
                 Task finished = await Task.WhenAny(allTasks);
                 if (finished == eggsTask)

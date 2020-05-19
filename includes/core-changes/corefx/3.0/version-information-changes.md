@@ -29,7 +29,7 @@ Core .NET libraries
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `P:System.Environment.Version`
 - `P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription`

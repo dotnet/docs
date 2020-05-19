@@ -83,15 +83,15 @@ These changes are part of a wider set of Unicode and UTF-8 improvements in .NET,
 
 .NET 5.0 Preview 1
 
-### Recommended action
+#### Recommended action
 
 You don't need to take any action. Your apps will automatically behave in a more standards-compliant manner in a variety of globalization-related scenarios.
 
-### Category
+#### Category
 
 Globalization
 
-### Affected APIs
+#### Affected APIs
 
 - <xref:System.Globalization.StringInfo?displayProperty=fullName>
 - <xref:System.Globalization.TextElementEnumerator?displayProperty=fullName>

@@ -41,7 +41,7 @@ Starting in .NET 5.0 Preview 2:
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Windows.Forms.Control.ControlCollection.#ctor(System.Windows.Forms.Control)`
 - `M:System.Windows.Forms.TabControl.GetToolTipText(System.Object)`

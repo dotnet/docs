@@ -17,7 +17,7 @@ The following tutorials are available for learning about .NET Core.
 - [Create a class library](library-with-visual-studio.md)
 - [Unit test a class library](testing-library-with-visual-studio.md)
 - [Use a class library](consuming-library-with-visual-studio.md)
-- [Use a class library](consuming-library-with-visual-studio.md)
+- [Live unit test](/visualstudio/test/live-unit-testing-start)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
 - [Azure Cosmos DB: Get started with the SQL API and .NET Core](/azure/cosmos-db/sql-api-dotnetcore-get-started)

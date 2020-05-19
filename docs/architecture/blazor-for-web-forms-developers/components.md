@@ -596,8 +596,8 @@ The output of this component looks like this:
 ```html
 <h1>My list</h1>
 <ul>
-    <li>The message is: message1</li>
-    <li>The message is: message2</li>
+    <li><p>The message is: message1</p></li>
+    <li><p>The message is: message2</p></li>
 <ul>
 ```
 

@@ -32,7 +32,7 @@ HRESULT OnAppDomain (
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) interface object that represents the new application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -42,4 +42,4 @@ HRESULT OnAppDomain (
   
 ## See also
 
-- [IAppDomainBinding Interface](../../../../docs/framework/unmanaged-api/hosting/iappdomainbinding-interface.md)
+- [IAppDomainBinding Interface](iappdomainbinding-interface.md)

@@ -99,6 +99,8 @@ Globalization
 
 <!--
 
+#### Affected APIs
+
 - `T:System.Globalization.StringInfo`
 - `T:System.Globalization.TextElementEnumerator`
 - `Overload:Microsoft.VisualBasic.Strings.StrReverse`

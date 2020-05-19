@@ -23,7 +23,7 @@ ms.date: 01/21/2020
 - [Environment variables](#environment-variables)
 
 > [!TIP]
-> Configuring a run-time option by using an environment variable applies the setting to all running .NET Core apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
+> Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
@@ -107,7 +107,7 @@ MSBuild properties for configuring run-time behavior are noted in the individual
 
 ## Environment variables
 
-Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all running .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

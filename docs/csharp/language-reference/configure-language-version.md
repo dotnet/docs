@@ -78,3 +78,24 @@ The following table shows all current C# language versions. Your compiler may no
 > ```CMD
 > csc -langversion:?
 > ```
+>
+> Questioning the [-langversion](compiler-options/langversion-compiler-option.md) compile option like this, will print something similar to the following:
+>
+> ```CMD
+> Supported language versions:
+> default
+> 1
+> 2
+> 3
+> 4
+> 5
+> 6
+> 7.0
+> 7.1
+> 7.2
+> 7.3
+> 8.0 (default)
+> latestmajor
+> preview
+> latest
+> ```

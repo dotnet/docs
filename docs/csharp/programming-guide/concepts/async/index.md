@@ -1,11 +1,11 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 03/18/2019
+ms.date: 05/20/2020
 ---
 # Asynchronous programming with async and await
 
-The Task asynchronous programming model (TAP) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs a number of transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
+The [Task asynchronous programming model (TAP)](task-asynchronous-programming-model.md) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs a number of transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
 
 That's the goal of this syntax: enable code that reads like a sequence of statements, but executes in a much more complicated order based on external resource allocation and when tasks complete. It's analogous to how people give instructions for processes that include asynchronous tasks. Throughout this article, you'll use an example of instructions for making a breakfast to see how the `async` and `await` keywords make it easier to reason about code that includes a series of asynchronous instructions. You'd write the instructions something like the following list to explain how to make a breakfast:
 
@@ -59,13 +59,13 @@ Let's make these changes to the breakfast code. The first step is to store the t
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggsTask = FryEggs(2);
+Task<Egg> eggsTask = FryEggsAsync(2);
 Egg eggs = await eggsTask;
 Console.WriteLine("eggs are ready");
-Task<Bacon> baconTask = FryBacon(3);
+Task<Bacon> baconTask = FryBaconAsync(3);
 Bacon bacon = await baconTask;
 Console.WriteLine("bacon is ready");
-Task<Toast> toastTask = ToastBread(2);
+Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
@@ -81,9 +81,11 @@ Next, you can move the `await` statements for the bacon and eggs to the end of t
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggsTask = FryEggs(2);
-Task<Bacon> baconTask = FryBacon(3);
-Task<Toast> toastTask = ToastBread(2);
+
+Task<Egg> eggsTask = FryEggsAsync(2);
+Task<Bacon> baconTask = FryBaconAsync(3);
+Task<Toast> toastTask = ToastBreadAsync(2);
+
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
@@ -99,7 +101,7 @@ Console.WriteLine("bacon is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-The preceding code works better. You start all the asynchronous tasks at once. You await each task only when you need the results. The preceding code may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately, then `await` all those tasks and compose the web page.
+The preceding code works better. You start all the asynchronous tasks at once. You `await` each task only when you need the results. The preceding code may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately, then `await` all those tasks and compose the web page.
 
 ## Composition with tasks
 

@@ -29,7 +29,7 @@ HRESULT CreateAutoEvent (
   
 ## Parameters  
  `ppEvent`  
- [out] A pointer to the address of an [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md) instance implemented by the host, or null if the event object could not be created.  
+ [out] A pointer to the address of an [IHostAutoEvent](ihostautoevent-interface.md) instance implemented by the host, or null if the event object could not be created.  
   
 ## Return Value  
   
@@ -47,7 +47,7 @@ HRESULT CreateAutoEvent (
  `CreateAutoEvent` creates an auto-event object whose state is automatically changed to non-signaled after the waiting thread has been released. This method mirrors the Win32 `CreateEvent` function with a value of `false` specified for the `bManualReset` parameter  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,7 +57,7 @@ HRESULT CreateAutoEvent (
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
-- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostAutoEvent Interface](ihostautoevent-interface.md)
+- [IHostControl Interface](ihostcontrol-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

@@ -16,8 +16,8 @@ C# has a language-level asynchronous programming model, which allows for easily 
 
 The core of async programming is the `Task` and `Task<T>` objects, which model asynchronous operations. They are supported by the `async` and `await` keywords. The model is fairly simple in most cases:
 
-- For I/O-bound code, you `await` an operation that returns a `Task` or `Task<T>` inside of an `async` method.
-- For CPU-bound code, you `await` an operation that is started on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
+- For I/O-bound code, you await an operation that returns a `Task` or `Task<T>` inside of an `async` method.
+- For CPU-bound code, you await an operation that is started on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
 
 The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach async code other than `async` and `await`, this article focuses on the language-level constructs.
 
@@ -30,12 +30,12 @@ private readonly HttpClient _httpClient = new HttpClient();
 
 downloadButton.Clicked += async (o, e) =>
 {
-  // This line will yield control to the UI as the request
-  // from the web service is happening.
-  //
-  // The UI thread is now free to perform other work.
-  var stringData = await _httpClient.GetStringAsync(URL);
-  DoSomethingWithData(stringData);
+    // This line will yield control to the UI as the request
+    // from the web service is happening.
+    //
+    // The UI thread is now free to perform other work.
+    var stringData = await _httpClient.GetStringAsync(URL);
+    DoSomethingWithData(stringData);
 };
 ```
 
@@ -50,18 +50,18 @@ The best way to handle this is to start a background thread, which does the work
 ```csharp
 private DamageResult CalculateDamageDone()
 {
-  // Code omitted:
-  //
-  // Does an expensive calculation and returns
-  // the result of that calculation.
+    // Code omitted:
+    //
+    // Does an expensive calculation and returns
+    // the result of that calculation.
 }
 
 calculateButton.Clicked += async (o, e) =>
 {
-  // This line will yield control to the UI while CalculateDamageDone()
-  // performs its work. The UI thread is free to perform other work.
-  var damageResult = await Task.Run(() => CalculateDamageDone());
-  DisplayDamage(damageResult);
+    // This line will yield control to the UI while CalculateDamageDone()
+    // performs its work. The UI thread is free to perform other work.
+    var damageResult = await Task.Run(() => CalculateDamageDone());
+    DisplayDamage(damageResult);
 };
 ```
 
@@ -117,10 +117,7 @@ This snippet downloads the HTML from the homepage at <https://dotnetfoundation.o
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
 
-[
-  HttpGet,
-  Route("DotNetCount")
-]
+[HttpGet, Route("DotNetCount")]
 public async Task<int> GetDotNetCount()
 {
     // Suspends GetDotNetCount() to allow the caller (the web server)
@@ -218,7 +215,7 @@ With async programming there are some details to keep in mind which can prevent 
 
 This is the convention used in .NET to more easily differentiate synchronous and asynchronous methods. Certain methods that aren't explicitly called by your code (such as event handlers or web controller methods) don't necessarily apply. Because they are not explicitly called by your code, being explicit about their naming isn't as important.
 
-* `async void` **is only to be used for event handlers.**
+* `async void` **should only to be used for event handlers.**
 
 `async void` is the only way to allow asynchronous event handlers to work because events do not have return types (thus cannot make use of `Task` and `Task<T>`). Any other use of `async void` does not follow the TAP model and can be challenging to use, such as:
 
@@ -234,7 +231,7 @@ Lambda expressions in LINQ use deferred execution, meaning code could end up exe
 
 Blocking the current thread as a means to wait for a `Task` to complete can result in deadlocks and blocked context threads, and can require more complex error-handling. The following table provides guidance on how to deal with waiting for tasks in a non-blocking way:
 
-| Use this...          | Instead of this...           | When wishing to do this...                    |
+| Use this...          | Instead of this...           | When wishing to do this...                 |
 |----------------------|------------------------------|--------------------------------------------|
 | `await`              | `Task.Wait` or `Task.Result` | Retrieving the result of a background task |
 | `await Task.WhenAny` | `Task.WaitAny`               | Waiting for any task to complete           |

@@ -109,30 +109,41 @@
     - name: Create and publish a package
       href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
       displayName: tutorials, visual studio, vs
-  - name: Use the CLI and Visual Studio Code
+  - name: Use Visual Studio Code
     items:
     - name: Create a console app
       href: tutorials/with-visual-studio-code.md
       displayName: tutorials, visual studio code, vs code, cli
-    - name: Create a library and unit test it - macOS
-      href: tutorials/using-on-macos.md
-      displayName: tutorials, visual studio code, vs code, cli
-  - name: Use the CLI
-    items:
     - name: Create a console app and publish it
       href: tutorials/cli-create-console-app.md
       displayName: tutorials, cli
-    - name: Unit test an app with xUnit
-      href: tutorials/testing-with-cli.md
-      displayName: tutorials, cli
-    - name: How to create libraries
-      href: tutorials/libraries.md
+    - name: Create a library and unit test it - macOS
+      href: tutorials/using-on-macos.md
+      displayName: tutorials, visual studio code, vs code, cli
     - name: Install and use a package
       href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
       displayName: tutorials, cli
     - name: Create and publish a package
       href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
       displayName: tutorials
+  - name: Use Visual Studio for Mac
+    items:
+    - name: Create a console app
+      href: tutorials/using-on-mac-vs.md
+      displayName: tutorials
+    - name: Create a library and unit test it
+      href: tutorials/using-on-mac-vs-full-solution.md
+      displayName: tutorials
+    - name: Install and use a package
+      href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+      displayName: tutorials
+  - name: Advanced topics
+    items:
+    - name: Unit test an app with xUnit
+      href: tutorials/testing-with-cli.md
+      displayName: tutorials, cli
+    - name: How to create libraries
+      href: tutorials/libraries.md
     - name: Create templates for the CLI
       items:
       - name: 1 - Create an item template
@@ -157,20 +168,6 @@
         displayName: tools, tutorials, cli
     - name: Create an app with plugins
       href: tutorials/creating-app-with-plugin-support.md
-  - name: Use Visual Studio for Mac
-    items:
-    - name: Create a console app
-      href: tutorials/using-on-mac-vs.md
-      displayName: tutorials
-    - name: Create a library and unit test it
-      href: tutorials/using-on-mac-vs-full-solution.md
-      displayName: tutorials
-    - name: Install and use a package
-      href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
-      displayName: tutorials
-  - name: Develop ASP.NET Core web apps
-    href: tutorials/aspnet-core.md
-    displayName: tutorials
   - name: More tutorials
     href: tutorials/index.md
 - name: Project SDKs

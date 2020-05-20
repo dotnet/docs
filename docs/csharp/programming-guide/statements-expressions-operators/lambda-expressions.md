@@ -225,6 +225,6 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 - [LINQ (Language-Integrated Query)](../concepts/linq/index.md)
 - [Expression Trees](../concepts/expression-trees/index.md)
 - [Local functions vs. lambda expressions](../classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
-- [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)
+- [Implicitly typed lambda expressions](/dotnet/csharp/programming-guide/statements-expressions-operators)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Recursive lambda expressions](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

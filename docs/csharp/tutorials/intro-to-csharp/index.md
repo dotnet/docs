@@ -30,7 +30,7 @@ the online browser experience or [in your own local development
 environment](local-environment.md). At the end of each tutorial, you decide if you want to continue
 with the next lesson online or on your own machine. There are links
 to help you set up your environment and continue with the next tutorial
-on your machine. 
+on your machine.
 
 ## [Hello world](hello-world.yml)
 

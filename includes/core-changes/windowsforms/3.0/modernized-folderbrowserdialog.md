@@ -38,7 +38,7 @@ Windows Forms
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Windows.Forms.FolderBrowserDialog`
 

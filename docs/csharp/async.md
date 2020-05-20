@@ -123,11 +123,11 @@ private readonly HttpClient _httpClient = new HttpClient();
 ]
 public async Task<int> GetDotNetCount()
 {
-  // Suspends GetDotNetCount() to allow the caller (the web server)
-  // to accept another request, rather than blocking on this one.
-  var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
+    // Suspends GetDotNetCount() to allow the caller (the web server)
+    // to accept another request, rather than blocking on this one.
+    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
-  return Regex.Matches(html, @"\.NET").Count;
+    return Regex.Matches(html, @"\.NET").Count;
 }
 ```
 
@@ -138,24 +138,24 @@ private readonly HttpClient _httpClient = new HttpClient();
 
 private async void OnSeeTheDotNetsButtonClick(object sender, RoutedEventArgs e)
 {
-  // Capture the task handle here so we can await the background task later.
-  var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://dotnetfoundation.org");
+    // Capture the task handle here so we can await the background task later.
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
-  // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
-  // This is important to do here, before the "await" call, so that the user
-  // sees the progress bar before execution of this method is yielded.
-  NetworkProgressBar.IsEnabled = true;
-  NetworkProgressBar.Visibility = Visibility.Visible;
+    // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
+    // This is important to do here, before the "await" call, so that the user
+    // sees the progress bar before execution of this method is yielded.
+    NetworkProgressBar.IsEnabled = true;
+    NetworkProgressBar.Visibility = Visibility.Visible;
 
-  // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
-  // This is what allows the app to be responsive and not block the UI thread.
-  var html = await getDotNetFoundationHtmlTask;
-  int count = Regex.Matches(html, @"\.NET").Count;
+    // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
+    // This is what allows the app to be responsive and not block the UI thread.
+    var html = await getDotNetFoundationHtmlTask;
+    int count = Regex.Matches(html, @"\.NET").Count;
 
-  DotNetCountLabel.Text = $"Number of .NETs on dotnetfoundation.org: {count}";
+    DotNetCountLabel.Text = $"Number of .NETs on dotnetfoundation.org: {count}";
 
-  NetworkProgressBar.IsEnabled = false;
-  NetworkProgressBar.Visibility = Visibility.Collapsed;
+    NetworkProgressBar.IsEnabled = false;
+    NetworkProgressBar.Visibility = Visibility.Collapsed;
 }
 ```
 
@@ -168,10 +168,10 @@ This example shows how you might grab `User` data for a set of `userId`s.
 ```csharp
 public async Task<User> GetUserAsync(int userId)
 {
-  // Code omitted:
-  //
-  // Given a user Id {userId}, retrieves a User object corresponding
-  // to the entry in the database with {userId} as its Id.
+    // Code omitted:
+    //
+    // Given a user Id {userId}, retrieves a User object corresponding
+    // to the entry in the database with {userId} as its Id.
 }
 
 public static async Task<IEnumerable<User>> GetUsersAsync(IEnumerable<int> userIds)
@@ -191,10 +191,10 @@ Here's another way to write this more succinctly, using LINQ:
 ```csharp
 public async Task<User> GetUserAsync(int userId)
 {
-  // Code omitted:
-  //
-  // Given a user Id {userId}, retrieves a User object corresponding
-  // to the entry in the database with {userId} as its Id.
+    // Code omitted:
+    //
+    // Given a user Id {userId}, retrieves a User object corresponding
+    // to the entry in the database with {userId} as its Id.
 }
 
 public static async Task<User[]> GetUsersAsync(IEnumerable<int> userIds)

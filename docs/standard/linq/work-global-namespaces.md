@@ -142,7 +142,7 @@ Console.WriteLine(root.<Child>.Count())
 
 This example indicates that there are no `Child` elements. It produces this output:
 
-```console
+```output
 0
 ```
 
@@ -164,7 +164,7 @@ End Module
 
 This example indicates that there is one `Child` element. It produces this output:
 
-```console
+```output
 1
 ```
 
@@ -202,7 +202,7 @@ End Module
 
 This example produces the following output:
 
-```console
+```output
 http://www.adventure-works.com
 ```
 

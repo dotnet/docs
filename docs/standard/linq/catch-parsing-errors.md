@@ -51,7 +51,7 @@ End Try
 
 Because of the invalid end tag `</Contcts>`, the example throws the following exception:
 
-```console
+```output
 The 'Contacts' start tag on line 1 doesn't match the end tag of 'Contcts'. Line 5, position 13.
 ```
 

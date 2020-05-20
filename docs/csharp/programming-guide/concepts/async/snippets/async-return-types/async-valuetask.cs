@@ -5,20 +5,20 @@ class Program
 {
    static Random? rnd;
 
-   static void Main()
+   static async Task Main()
    {
-      Console.WriteLine($"You rolled {GetDiceRoll().Result}");
+      Console.WriteLine($"You rolled {await GetDiceRollAsync()}");
    }
 
-   private static async ValueTask<int> GetDiceRoll()
+   private static async ValueTask<int> GetDiceRollAsync()
    {
       Console.WriteLine("...Shaking the dice...");
-      int roll1 = await Roll();
-      int roll2 = await Roll();
+      int roll1 = await RollAsync();
+      int roll2 = await RollAsync();
       return roll1 + roll2;
    }
 
-   private static async ValueTask<int> Roll()
+   private static async ValueTask<int> RollAsync()
    {
       if (rnd == null)
          rnd = new Random();

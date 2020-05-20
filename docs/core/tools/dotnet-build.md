@@ -17,8 +17,8 @@ ms.date: 02/14/2020
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive] [--no-dependencies]
     [--no-incremental] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [-v|--verbosity <LEVEL>]
-    [--version-suffix <VERSION_SUFFIX>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
+    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
 ```
@@ -114,6 +114,10 @@ The project or solution file to build. If a project or solution file isn't speci
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+- **`-s|--source <SOURCE>`**
+
+  The URI of the NuGet package source to use during the restore operation.
 
 - **`-v|--verbosity <LEVEL>`**
 

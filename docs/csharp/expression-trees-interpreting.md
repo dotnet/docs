@@ -57,8 +57,7 @@ Expression<Func<int>> sum = () => 1 + 2;
 ```
 
 > I'm not using `var` to declare this expression tree, as it is not possible
-> because the right-hand side of the assignment is implicitly typed. To understand
-> this more deeply, read [here](implicitly-typed-lambda-expressions.md).
+> because the right-hand side of the assignment is implicitly typed.
 
 The root node is a `LambdaExpression`. In order to get the interesting
 code on the right hand side of the `=>` operator, you need to find one

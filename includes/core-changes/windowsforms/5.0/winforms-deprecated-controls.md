@@ -49,7 +49,7 @@ Windows Forms
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Windows.Forms.StatusBar`
 - `T:System.Windows.Forms.StatusBarDrawItemEventArgs`

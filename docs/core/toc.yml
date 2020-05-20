@@ -365,32 +365,40 @@
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
 - name: Unit testing
-  href: testing/index.md
+  displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:
   - name: Overview
     href: testing/index.md
   - name: Unit testing best practices
     href: testing/unit-testing-best-practices.md
-  - name: C# unit testing with xUnit
-    href: testing/unit-testing-with-dotnet-test.md
-  - name: C# unit testing with NUnit
-    href: testing/unit-testing-with-nunit.md
-  - name: C# unit testing with MSTest
-    href: testing/unit-testing-with-mstest.md
-  - name: F# unit testing with xUnit
-    href: testing/unit-testing-fsharp-with-dotnet-test.md
-  - name: F# unit testing with NUnit
-    href: testing/unit-testing-fsharp-with-nunit.md
-  - name: F# unit testing with MSTest
-    href: testing/unit-testing-fsharp-with-mstest.md
-  - name: VB unit testing with xUnit
-    href: testing/unit-testing-visual-basic-with-dotnet-test.md
-  - name: VB unit testing with NUnit
-    href: testing/unit-testing-visual-basic-with-nunit.md
-  - name: VB unit testing with MSTest
-    href: testing/unit-testing-visual-basic-with-mstest.md
+  - name: xUnit
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-dotnet-test.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-dotnet-test.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-dotnet-test.md
+  - name: NUnit
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-nunit.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-nunit.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-nunit.md
+  - name: MSTest
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-mstest.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-mstest.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-mstest.md
   - name: Run selective unit tests
     href: testing/selective-unit-tests.md
+  - name: Order unit tests
+    href: testing/order-unit-tests.md
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio

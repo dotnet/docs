@@ -19,11 +19,11 @@ The core of async programming is the `Task` and `Task<T>` objects, which model a
 - For I/O-bound code, you `await` an operation that returns a `Task` or `Task<T>` inside of an `async` method.
 - For CPU-bound code, you `await` an operation that is started on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
 
-The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. There are other ways to approach async code than `async` and `await` outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.
+The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach async code other than `async` and `await`, this article focuses on the language-level constructs.
 
-### I/O-bound example: downloading data from a web service
+### I/O-bound example: Download data from a web service
 
-You may need to download some data from a web service when a button is pressed, but don't want to block the UI thread. It can be accomplished simply like this:
+You may need to download some data from a web service when a button is pressed, but don't want to block the UI thread. It can be accomplished like this:
 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
@@ -41,11 +41,11 @@ downloadButton.Clicked += async (o, e) =>
 
 The code expresses the intent (downloading data asynchronously) without getting bogged down in interacting with `Task` objects.
 
-### CPU-bound example: performing a calculation for a game
+### CPU-bound example: Perform a calculation for a game
 
 Say you're writing a mobile game where pressing a button can inflict damage on many enemies on the screen. Performing the damage calculation can be expensive, and doing it on the UI thread would make the game appear to pause as the calculation is performed!
 
-The best way to handle this is to start a background thread, which does the work using `Task.Run`, and `await` its result. This will allow the UI to feel smooth as the work is being done.
+The best way to handle this is to start a background thread, which does the work using `Task.Run`, and await its result using `await`. This allows the UI to feel smooth as the work is being done.
 
 ```csharp
 private DamageResult CalculateDamageDone()
@@ -69,7 +69,7 @@ This code cleanly expresses the intent of the button's click event, it doesn't r
 
 ### What happens under the covers
 
-There are many moving pieces where asynchronous operations are concerned. If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, check out the [Async in-depth](../standard/async-in-depth.md) article for more information.
+There are many moving pieces where asynchronous operations are concerned. If you're curious about what's happening underneath the covers of `Task` and `Task<T>`, see the [Async in-depth](../standard/async-in-depth.md) article for more information.
 
 On the C# side of things, the compiler transforms your code into a state machine that keeps track of things like yielding execution when an `await` is reached and resuming execution when a background job has finished.
 
@@ -83,7 +83,7 @@ For the theoretically-inclined, this is an implementation of the [Promise Model 
 * When the `await` keyword is applied, it suspends the calling method and yields control back to its caller until the awaited task is complete.
 * `await` can only be used inside an async method.
 
-## Recognize CPU-bound and I/O-bound Work
+## Recognize CPU-bound and I/O-bound work
 
 The first two examples of this guide showed how you can use `async` and `await` for I/O-bound and CPU-bound work. It's key that you can identify when a job you need to do is I/O-bound or CPU-bound, because it can greatly affect the performance of your code and could potentially lead to misusing certain constructs.
 
@@ -97,9 +97,9 @@ Here are two questions you should ask before you write any code:
 
   If you answered "yes", then your work is **CPU-bound**.
 
-If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library. The reason for this is outlined in the [Async in Depth article](../standard/async-in-depth.md).
+If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`. You *should not* use the Task Parallel Library. The reason for this is outlined in [Async in Depth](../standard/async-in-depth.md).
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, you should also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await`, but spawn off the work on another thread *with* `Task.Run`. If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
 Additionally, you should always measure the execution of your code. For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading. Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 
@@ -107,9 +107,9 @@ Additionally, you should always measure the execution of your code. For example,
 
 The following examples demonstrate various ways you can write async code in C#. They cover a few different scenarios you may come across.
 
-### Extracting data from a network
+### Extract data from a network
 
-This snippet downloads the HTML from the homepage at <https://dotnetfoundation.org> and counts the number of times the string ".NET" occurs in the HTML. It uses ASP.NET to define a Web API controller method, which performs this task, returning the number.
+This snippet downloads the HTML from the homepage at <https://dotnetfoundation.org> and counts the number of times the string ".NET" occurs in the HTML. It uses ASP.NET to define a Web API controller method, which performs this task and returns the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
@@ -159,9 +159,9 @@ private async void OnSeeTheDotNetsButtonClick(object sender, RoutedEventArgs e)
 }
 ```
 
-### Waiting for multiple tasks to complete
+### Wait for multiple tasks to complete
 
-You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently. The `Task` API contains two methods, <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> that allow you to write asynchronous code, which performs a non-blocking wait on multiple background jobs.
+You may find yourself in a situation where you need to retrieve multiple pieces of data concurrently. The `Task` API contains two methods, <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, that allow you to write asynchronous code that performs a non-blocking wait on multiple background jobs.
 
 This example shows how you might grab `User` data for a set of `userId`s.
 
@@ -212,11 +212,11 @@ With async programming there are some details to keep in mind which can prevent 
 
 * `async` **methods need to have an** `await` **keyword in their body or they will never yield!**
 
-This is important to keep in mind. If `await` is not used in the body of an `async` method, the C# compiler will generate a warning, but the code will compile and run as if it were a normal method. Note that this would also be incredibly inefficient, as the state machine generated by the C# compiler for the async method would not be accomplishing anything.
+This is important to keep in mind. If `await` is not used in the body of an `async` method, the C# compiler generates a warning, but the code compiles and runs as if it were a normal method. This is incredibly inefficient, as the state machine generated by the C# compiler for the async method is not accomplishing anything.
 
 * **You should add "Async" as the suffix of every async method name you write.**
 
-This is the convention used in .NET to more-easily differentiate synchronous and asynchronous methods. Certain methods that aren't explicitly called by your code (such as event handlers or web controller methods) don't necessarily apply. Because they are not explicitly called by your code, being explicit about their naming isn't as important.
+This is the convention used in .NET to more easily differentiate synchronous and asynchronous methods. Certain methods that aren't explicitly called by your code (such as event handlers or web controller methods) don't necessarily apply. Because they are not explicitly called by your code, being explicit about their naming isn't as important.
 
 * `async void` **is only to be used for event handlers.**
 
@@ -232,9 +232,9 @@ Lambda expressions in LINQ use deferred execution, meaning code could end up exe
 
 * **Write code that awaits Tasks in a non-blocking manner**
 
-Blocking the current thread as a means to wait for a `Task` to complete can result in deadlocks and blocked context threads, and can require more complex error-handling. The following table provides guidance on how to deal with waiting for Tasks in a non-blocking way:
+Blocking the current thread as a means to wait for a `Task` to complete can result in deadlocks and blocked context threads, and can require more complex error-handling. The following table provides guidance on how to deal with waiting for tasks in a non-blocking way:
 
-| Use this...          | Instead of this...           | When wishing to do this                    |
+| Use this...          | Instead of this...           | When wishing to do this...                    |
 |----------------------|------------------------------|--------------------------------------------|
 | `await`              | `Task.Wait` or `Task.Result` | Retrieving the result of a background task |
 | `await Task.WhenAny` | `Task.WaitAny`               | Waiting for any task to complete           |
@@ -243,11 +243,11 @@ Blocking the current thread as a means to wait for a `Task` to complete can resu
 
 * **Consider using** `ValueTask` **where possible**
 
-Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result, or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](whats-new/csharp-7.md#generalized-async-return-types).
+Returning a `Task` object from async methods can introduce performance bottlenecks in certain paths. `Task` is a reference type, so using it means allocating an object. In cases where a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can become a significant time cost in performance critical sections of code. It can become costly if those allocations occur in tight loops. For more information, see [generalized async return types](whats-new/csharp-7.md#generalized-async-return-types).
 
 * **Consider using** `ConfigureAwait(false)`
 
-A common question is, "when should I use the <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> method?". The method allows for a `Task` instance to configure its awaiter. This is an important consideration and setting incorrectly could potentially have performance implications and even deadlocks. For more information on `ConfigureAwait`, see the [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq).
+A common question is, "when should I use the <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> method?". The method allows for a `Task` instance to configure its awaiter. This is an important consideration and setting it incorrectly could potentially have performance implications and even deadlocks. For more information on `ConfigureAwait`, see the [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq).
 
 * **Write less stateful code**
 

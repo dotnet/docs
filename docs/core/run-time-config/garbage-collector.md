@@ -27,7 +27,7 @@ Use the following settings to select flavors of garbage collection:
 ### System.GC.Server/COMPlus_gcServer
 
 - Configures whether the application uses workstation garbage collection or server garbage collection.
-- Default: Workstation garbage collection (`false`).
+- Default: Workstation garbage collection. This is equivalent to setting the value to `false`.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -65,7 +65,7 @@ Project file:
 ### System.GC.Concurrent/COMPlus_gcConcurrent
 
 - Configures whether background (concurrent) garbage collection is enabled.
-- Default: Enabled (`true`).
+- Default: Use background GC. This is equivalent to setting the value to `true`.
 - For more information, see [Background garbage collection](../../standard/garbage-collection/background-gc.md).
 
 | | Setting name | Values | Version introduced |
@@ -194,7 +194,7 @@ Example:
   When a 64-bit Windows computer has multiple CPU groups, that is, there are more than 64 processors, enabling this element extends garbage collection across all CPU groups. The garbage collector uses all cores to create and balance heaps.
 
 - Applies to server garbage collection on 64-bit Windows operation systems only.
-- Default: Disabled (`0`).
+- Default: GC does not extend across CPU groups. This is equivalent to setting the value to `0`.
 - For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
 | | Setting name | Values | Version introduced |
@@ -210,7 +210,7 @@ Example:
 
 - Specifies whether to *affinitize* garbage collection threads with processors. To affinitize a GC thread means that it can only run on its specific CPU. A heap is created for each GC thread.
 - Applies to server garbage collection only.
-- Default: Affinitize garbage collection threads with processors (`false`).
+- Default: Affinitize garbage collection threads with processors. This is equivalent to setting the value to `false`.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -293,7 +293,7 @@ Example:
 ### System.GC.RetainVM/COMPlus_GCRetainVM
 
 - Configures whether segments that should be deleted are put on a standby list for future use or are released back to the operating system (OS).
-- Default: Release segments back to the operating system (`false`).
+- Default: Release segments back to the operating system. This is equivalent to setting the value to `false`.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -332,7 +332,7 @@ Project file:
 ### COMPlus_GCLargePages
 
 - Specifies whether large pages should be used when a heap hard limit is set.
-- Default: Disabled (`0`).
+- Default: Don't use large pages when a heap hard limit is set. This is equivalent to setting the value to `0`.
 - This is an experimental setting.
 
 | | Setting name | Values | Version introduced |
@@ -345,7 +345,7 @@ Project file:
 ### COMPlus_gcAllowVeryLargeObjects
 
 - Configures garbage collector support on 64-bit platforms for arrays that are greater than 2 gigabytes (GB) in total size.
-- Default: Enabled (`1`).
+- Default: GC supports arrays greater than 2-GB. This is equivalent to setting the value to `1`.
 - This option may become obsolete in a future version of .NET.
 
 | | Setting name | Values | Version introduced |

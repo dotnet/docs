@@ -10,11 +10,11 @@ namespace AsyncBreakfast
         {
             Coffee cup = PourCoffee();
             Console.WriteLine("coffee is ready");
-            Egg eggs = await FryEggs(2);
+            Egg eggs = await FryEggsAsync(2);
             Console.WriteLine("eggs are ready");
-            Bacon bacon = await FryBacon(3);
+            Bacon bacon = await FryBaconAsync(3);
             Console.WriteLine("bacon is ready");
-            Toast toast = await ToastBread(2);
+            Toast toast = await ToastBreadAsync(2);
             ApplyButter(toast);
             ApplyJam(toast);
             Console.WriteLine("toast is ready");
@@ -23,7 +23,6 @@ namespace AsyncBreakfast
 
             Console.WriteLine("Breakfast is ready!");
         }
-        // </SnippetMain>
 
         private static Juice PourOJ()
         {
@@ -35,7 +34,7 @@ namespace AsyncBreakfast
 
         private static void ApplyButter(Toast toast) => Console.WriteLine("Putting butter on the toast");
 
-        private static async Task<Toast> ToastBread(int slices)
+        private static async Task<Toast> ToastBreadAsync(int slices)
         {
             for (int slice = 0; slice < slices; slice++)
                 Console.WriteLine("Putting a slice of bread in the toaster");
@@ -45,7 +44,7 @@ namespace AsyncBreakfast
             return new Toast();
         }
 
-        private static async Task<Bacon> FryBacon(int slices)
+        private static async Task<Bacon> FryBaconAsync(int slices)
         {
             Console.WriteLine($"putting {slices} of bacon in the pan");
             Console.WriteLine("cooking first side of bacon...");
@@ -58,7 +57,7 @@ namespace AsyncBreakfast
             return new Bacon();
         }
 
-        private static async Task<Egg> FryEggs(int howMany)
+        private static async Task<Egg> FryEggsAsync(int howMany)
         {
             Console.WriteLine("Warming the egg pan...");
             await Task.Delay(3000);
@@ -74,5 +73,6 @@ namespace AsyncBreakfast
             Console.WriteLine("Pouring coffee");
             return new Coffee();
         }
+        // </SnippetMain>
     }
 }

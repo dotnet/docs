@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::RequestRuntimeLoadedNotification Method
-Provides a callback function that is guaranteed to be called when a common language runtime (CLR) version is first loaded, but not yet started. This method supersedes the [LockClrVersion](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md) function.  
+Provides a callback function that is guaranteed to be called when a common language runtime (CLR) version is first loaded, but not yet started. This method supersedes the [LockClrVersion](lockclrversion-function.md) function.  
   
 ## Syntax  
   
@@ -82,7 +82,7 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
 > Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -92,5 +92,5 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
   
 ## See also
 
-- [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRMetaHost Interface](iclrmetahost-interface.md)
+- [Hosting](index.md)

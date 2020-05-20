@@ -1,7 +1,7 @@
 ---
 title: Globalization config settings
 description: Learn about run-time settings that configure globalization aspects of a .NET Core app, for example, how it parses Japanese dates.
-ms.date: 11/27/2019
+ms.date: 05/18/2020
 ms.topic: reference
 ---
 # Run-time configuration options for globalization
@@ -76,3 +76,14 @@ Project file:
 | - | - | - |
 | **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "Gannen"<br/>`true` - format as number |
 | **Environment variable** | N/A | N/A |
+
+## NLS
+
+- Determines whether .NET uses National Language Support (NLS) or International Components for Unicode (ICU) globalization APIs for Windows apps. .NET 5.0 and later versions use ICU globalization APIs by default on Windows 10 May 2019 Update and later versions.
+- If you omit this setting, .NET uses ICU globalization APIs by default. This is equivalent to setting the value to `false`.
+- For more information, see [Globalization APIs use ICU libraries on Windows](../compatibility/3.1-5.0.md#globalization-apis-use-icu-libraries-on-windows).
+
+| | Setting name | Values | Introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Globalization.UseNls` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5.0 |
+| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_USENLS` | `false` - Use ICU globalization APIs<br/>`true` - Use NLS globalization APIs | .NET 5.0 |

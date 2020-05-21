@@ -25,7 +25,7 @@ Dim e As XElement = po.<DeliveryNotes>(0)
 Console.WriteLine(e)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>
@@ -54,7 +54,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:DeliveryNotes xmlns:aw="http://www.adventure-works.com">Please leave packages in shed by driveway.</aw:DeliveryNotes>

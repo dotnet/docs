@@ -123,7 +123,7 @@ Public Class Program
 End Class
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Attempting to validate, custOrdDoc validated

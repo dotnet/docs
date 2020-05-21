@@ -45,7 +45,7 @@ typedef enum CorDebugStepReason {
 |`STEP_EXIT`|The thread exited before the step was completed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

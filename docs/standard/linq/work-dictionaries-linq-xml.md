@@ -47,7 +47,7 @@ Dim root As XElement = _
 Console.WriteLine(root)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>
@@ -95,7 +95,7 @@ For Each str As String In dict.Keys
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Child1:Value1

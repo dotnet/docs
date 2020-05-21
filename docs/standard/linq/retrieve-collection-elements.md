@@ -35,7 +35,7 @@ For Each el As XElement In childElements
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Name: Address

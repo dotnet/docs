@@ -36,7 +36,7 @@ For Each el As XElement In address
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Address Type="Billing">
@@ -83,7 +83,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output::
+This example produces the following output::
 
 ```xml
 <aw:Address aw:Type="Billing" xmlns:aw="http://www.adventure-works.com">

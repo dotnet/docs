@@ -56,4 +56,4 @@ typedef enum CorSymAddrKind
   
 ## See also
 
-- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)

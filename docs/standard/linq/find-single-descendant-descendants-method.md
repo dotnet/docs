@@ -59,7 +59,7 @@ Dim grandChild3 As String = _
 Console.WriteLine(grandChild3)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 GC3 Value
@@ -119,7 +119,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 GC3 Value

@@ -33,5 +33,5 @@ HRESULT CloseMethod();
   
 ## See also
 
-- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [OpenMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)
+- [OpenMethod Method](isymunmanagedwriter-openmethod-method.md)

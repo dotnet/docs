@@ -75,7 +75,7 @@ Dim str As String = textSegs.Aggregate( _
 Console.WriteLine(str)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Some text that's broken up into multiple segments.
@@ -153,7 +153,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Some text that's broken up into multiple segments.

@@ -49,7 +49,7 @@ End If
 Console.WriteLine(el1.Name)
 ```
 
-The example produces the following output:
+This example produces the following output:
 
 ```output
 Results are identical

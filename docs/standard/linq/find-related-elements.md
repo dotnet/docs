@@ -90,7 +90,7 @@ End If
 Console.WriteLine(customer1)
 ```
 
-The example produces the following output:
+This example produces the following output:
 
 ```output
 Results are identical

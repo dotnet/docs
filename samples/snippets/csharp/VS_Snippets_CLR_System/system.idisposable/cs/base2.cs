@@ -3,35 +3,35 @@ using System;
 
 class BaseClass : IDisposable
 {
-   // Flag: Has Dispose already been called?
-   bool disposed = false;
+    // To detect redundant calls
+    private bool _disposed = false;
 
-   // Public implementation of Dispose pattern callable by consumers.
-   public void Dispose()
-   {
-      Dispose(true);
-      GC.SuppressFinalize(this);
-   }
+    ~BaseClass() => Dispose(false);
 
-   // Protected implementation of Dispose pattern.
-   protected virtual void Dispose(bool disposing)
-   {
-      if (disposed)
-         return;
+    // Public implementation of Dispose pattern callable by consumers.
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
 
-      if (disposing) {
-         // Free any other managed objects here.
-         //
-      }
+    // Protected implementation of Dispose pattern.
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed)
+        {
+            return;
+        }
 
-      // Free any unmanaged objects here.
-      //
-      disposed = true;
-   }
+        if (disposing)
+        {
+            // TODO: dispose managed state (managed objects).
+        }
 
-   ~BaseClass()
-   {
-      Dispose(false);
-   }
+        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+        // TODO: set large fields to null.
+
+        _disposed = true;
+    }
 }
 // </Snippet5>

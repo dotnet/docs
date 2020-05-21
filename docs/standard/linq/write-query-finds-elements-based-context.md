@@ -80,7 +80,7 @@ For Each e As XElement In items
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 id = 1
@@ -162,7 +162,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 id = 1

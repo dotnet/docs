@@ -87,7 +87,7 @@ End Using
 Console.WriteLine(newTree)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>

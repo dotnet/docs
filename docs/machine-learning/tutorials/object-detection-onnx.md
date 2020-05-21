@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 - [Microsoft.ML NuGet Package](https://www.nuget.org/packages/Microsoft.ML/)
 - [Microsoft.ML.ImageAnalytics NuGet Package](https://www.nuget.org/packages/Microsoft.ML.ImageAnalytics/)
 - [Microsoft.ML.OnnxTransformer NuGet Package](https://www.nuget.org/packages/Microsoft.ML.OnnxTransformer/)
-- [Tiny YOLOv2 pre-trained model](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny_yolov2)
+- [Tiny YOLOv2 pre-trained model](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny-yolov2)
 - [Netron](https://github.com/lutzroeder/netron) (optional)
 
 ## ONNX object detection sample overview

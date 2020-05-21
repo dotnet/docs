@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [SSE and SSE2 CompareGreaterThan methods properly handle NaN inputs](#sse-and-sse2-comparegreaterthan-methods-properly-handle-nan-inputs) | 5.0 |
 | [APIs that report version now report product and not file version](#apis-that-report-version-now-report-product-and-not-file-version) | 3.0 |
 | [Custom EncoderFallbackBuffer instances cannot fall back recursively](#custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively) | 3.0 |
 | [Floating point formatting and parsing behavior changes](#floating-point-formatting-and-parsing-behavior-changed) | 3.0 |
@@ -31,6 +32,13 @@ The following breaking changes are documented on this page:
 | [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes) | 1.0 |
 | [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported) | 1.0 |
 | [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters) | 1.0 |
+| [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
+
+## .NET 5.0
+
+[!INCLUDE [sse-comparegreaterthan-intrinsics](../../../includes/core-changes/corefx/5.0/sse-comparegreaterthan-intrinsics.md)]
+
+***
 
 ## .NET Core 3.0
 
@@ -115,5 +123,9 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE [uribuilder-behavior-changes](../../../includes/core-changes/corefx/1.0/uribuilder-behavior-changes.md)]
+
+***
+
+[!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
 
 ***

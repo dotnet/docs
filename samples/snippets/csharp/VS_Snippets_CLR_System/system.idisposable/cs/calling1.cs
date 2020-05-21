@@ -1,35 +1,29 @@
 ﻿// <Snippet1>
-using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
 public class WordCount
 {
-   private String filename = String.Empty;
-   private int nWords = 0;
-   private String pattern = @"\b\w+\b";
+    const string Pattern = @"\b\w+\b";
 
-   public WordCount(string filename)
-   {
-      if (! File.Exists(filename))
-         throw new FileNotFoundException("The file does not exist.");
+    public WordCount(string filename)
+    {
+        if (!File.Exists(filename))
+        {
+            throw new FileNotFoundException("The file does not exist.");
+        }
 
-      this.filename = filename;
-      string txt = String.Empty;
-      using (StreamReader sr = new StreamReader(filename)) {
-         txt = sr.ReadToEnd();
-      }
-      nWords = Regex.Matches(txt, pattern).Count;
-   }
+        FullName = filename;
 
-   public string FullName
-   { get { return filename; } }
+        using var streamReader = new StreamReader(FullName);
+        var txt = streamReader.ReadToEnd();
 
-   public string Name
-   { get { return Path.GetFileName(filename); } }
+        Count = Regex.Matches(txt, Pattern).Count;
+    }
 
-   public int Count
-   { get { return nWords; } }
+    public string FullName { get; }
+    public string Name => Path.GetFileName(FullName);
+    public int Count { get; }
 }
 // </Snippet1>
 

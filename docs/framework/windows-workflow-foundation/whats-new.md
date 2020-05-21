@@ -1,5 +1,6 @@
 ---
 title: "What's New in Windows Workflow Foundation"
+description: Learn about Windows Workflow Foundation changes in .NET Framework 4. Workflows are easier to create, execute, and maintain.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], what's new"

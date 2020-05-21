@@ -18,7 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CreateICeeFileGen Function
-Creates an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  
+Creates an [ICeeFileGen](iceefilegen-class.md) object.  
   
  This function has been deprecated in the .NET Framework 4.  
   
@@ -40,10 +40,10 @@ HRESULT CreateICeeFileGen (
 ## Remarks  
  The `ICeeFileGen` object is used to create common language runtime (CLR) portable executable (PE) files.  
   
- Call the [DestroyICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/destroyiceefilegen-function.md) function to destroy the `ICeeFileGen` object when finished.  
+ Call the [DestroyICeeFileGen](destroyiceefilegen-function.md) function to destroy the `ICeeFileGen` object when finished.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  
   
@@ -53,4 +53,4 @@ HRESULT CreateICeeFileGen (
   
 ## See also
 
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

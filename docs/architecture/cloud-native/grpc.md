@@ -2,12 +2,10 @@
 title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
-ms.date: 03/31/2020
+ms.date: 05/13/2020
 ---
 
 # gRPC
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 So far in this book, we've focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against entity resources. Clients interact with resources across HTTP with a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 
@@ -48,7 +46,7 @@ The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architectu
 
 ## gRPC support in .NET
 
-gRPC is integrated into .NET Core 3.0 SDK or later. The following tools support it:
+gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support it:
 
 - Visual Studio 2019, version 16.3 or later, with the web development workload installed.
 - Visual Studio Code
@@ -98,7 +96,7 @@ In the previous figure, note how eShop embraces the [Backend for Frontends patte
 
 **Figure 4-23**. gRPC in eShop on Containers
 
-gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET Core 3.0 SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
+gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET Core SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
 
 Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
 

@@ -166,8 +166,8 @@ class Program
 }
 ```
 
-```vb  
-Imports <xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">  
+```vb
+Imports <xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
 
 Module Module1
     <System.Runtime.CompilerServices.Extension()> _
@@ -214,7 +214,7 @@ Module Module1
         Return (e.<w:r>.<w:t>).StringConcatenate(Function(element) CStr(element))
     End Function
 
-    ' Following function is required because Visual Basic does not support short circuit evaluation
+    ' The following function is required because Visual Basic doesn't support short circuit evaluation
     Private Function GetStyleOfParagraph(ByVal styleNode As XElement, ByVal defaultStyle As String) _
                 As String
         If (styleNode Is Nothing) Then
@@ -295,7 +295,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<
@@ -310,7 +310,7 @@ StyleName:Code >        Console.WriteLine("Hello World");<
 StyleName:Code >    }<
 StyleName:Code >}<
 StyleName:Normal ><
-StyleName:Normal >The example produces this output:<
+StyleName:Normal >This example produces the following output:<
 StyleName:Normal ><
 StyleName:Code >Hello World<
 ```

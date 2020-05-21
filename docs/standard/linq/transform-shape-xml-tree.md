@@ -76,7 +76,7 @@ Dim newCustOrd = _
 Console.WriteLine(newCustOrd)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Root>
@@ -109,7 +109,8 @@ The example produces this output:
     </FullAddress>
     <Orders />
   </Customer>
-  . . .
+  ...
+</Root>
 ```
 
 ## Example: Create a document whose shape differs from that of the source document
@@ -178,7 +179,7 @@ Sub Main()
 End Sub
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <PO>

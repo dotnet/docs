@@ -36,7 +36,7 @@ For Each prdName As XElement In items
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 ProductName:Lawnmower
@@ -85,7 +85,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 {http://www.adventure-works.com}ProductName:Lawnmower

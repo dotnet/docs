@@ -229,6 +229,8 @@ Don't roll forward. Only bind to specified version. This policy isn't recommende
 
 Besides the **Disable** setting, all settings will use the highest available patch version.
 
+By default, if the requested version (as specified in `.runtimeconfig.json` for the application) is a release version, only release versions are considered for roll forward. Any pre-release versions are ignored. If there is no matching release version, then pre-release versions are taken into account. This behavior can be changed by setting `DOTNET_ROLL_FORWARD_TO_PRERELEASE=1`, in which case all versions are always considered.
+
 ### Build copies dependencies
 
 The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.

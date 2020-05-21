@@ -113,7 +113,7 @@ public static class MyExtensions
             XElement el = xobj as XElement;
             if (el != null)
                 return "/" + NameWithPredicate(el);
-            // the XPath data model does not include white space text nodes
+            // The XPath data model doesn't include white space text nodes
             // that are children of a document, so this method returns null.
             XText xt = xobj as XText;
             if (xt != null)
@@ -345,7 +345,7 @@ Module Module1
                 Return ("/" & NameWithPredicate(el))
             End If
 
-            ' The XPath data model does not include white space text nodes
+            ' The XPath data model doesn't include white space text nodes
             ' that are children of a document, so this method returns null.
             Dim xt As XText = TryCast(xobj, XText)
             If xt IsNot Nothing Then
@@ -491,7 +491,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>

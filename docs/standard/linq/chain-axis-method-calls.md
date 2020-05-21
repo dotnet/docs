@@ -41,7 +41,7 @@ For Each e As XElement In names
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Name>Ellen Adams</Name>
@@ -100,7 +100,7 @@ For Each cp As XElement In configParameters
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <ConfigParameter>FirstConfigParameter</ConfigParameter>
@@ -142,7 +142,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <aw:Name xmlns:aw="http://www.adventure-works.com">Ellen Adams</aw:Name>

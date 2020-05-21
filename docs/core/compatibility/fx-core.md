@@ -2,7 +2,7 @@
 title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core.
-ms.date: 12/18/2019
+ms.date: 05/05/2020
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
@@ -17,6 +17,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Handling corrupted-process-state exceptions is not supported](#handling-corrupted-state-exceptions-is-not-supported)
 - [UriBuilder properties no longer prepend leading characters](#uribuilder-properties-no-longer-prepend-leading-characters)
+- [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start)
 
 ### .NET Core 2.1
 
@@ -38,6 +39,10 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 ***
 
+[!INCLUDE [startinfo-throws-exception](../../../includes/core-changes/corefx/1.0/startinfo-throws-exception.md)]
+
+***
+
 ## Cryptography
 
 - [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected)
@@ -45,6 +50,26 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ### .NET Core 2.1
 
 [!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
+## MSBuild
+
+- [Resource manifest file name change](#resource-manifest-file-name-change)
+
+### .NET Core 3.0
+
+[!INCLUDE[Resource file names](~/includes/core-changes/msbuild/3.0/resource-manifest-name.md)]
+
+***
+
+## Networking
+
+- [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately)
+
+### .NET Core 2.0
+
+[!INCLUDE [behavior-change-webclient-cancelasync](../../../includes/core-changes/networking/2.0/behavior-change-webclient-cancelasync.md)]
 
 ***
 

@@ -56,7 +56,7 @@ For Each el As XElement In purchaseOrders
 Next
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 99505
@@ -108,7 +108,7 @@ Module Module1
 End Module
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 99505

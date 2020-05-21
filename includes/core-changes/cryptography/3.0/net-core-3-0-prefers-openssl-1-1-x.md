@@ -43,7 +43,7 @@ Cryptography
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Security.Cryptography.SafeEvpPKeyHandle.#ctor`
 - `M:System.Security.Cryptography.RSAOpenSsl.#ctor(System.IntPtr)`

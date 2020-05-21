@@ -28,7 +28,7 @@ Dim booksFromFile As XElement = XElement.Load("books.xml")
 Console.WriteLine(booksFromFile)
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```xml
 <Catalog>

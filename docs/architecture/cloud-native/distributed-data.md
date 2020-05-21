@@ -2,12 +2,10 @@
 title: Distributed data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 04/24/2020
+ms.date: 05/13/2020
 ---
 
 # Distributed data
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 As we've seen throughout this book, a cloud-native approach changes the way you design, deploy, and manage applications. It also changes the way you manage and store data.
 

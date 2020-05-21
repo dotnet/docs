@@ -120,7 +120,7 @@ Sub Main()
 End Sub
 ```
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 GREAL:Great Lakes Food Market:Howard Snyder

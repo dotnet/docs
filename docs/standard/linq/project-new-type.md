@@ -74,7 +74,7 @@ End Class
 
 This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the [How to retrieve a single child element](retrieve-single-child-element.md) article. It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.
 
-The example produces this output:
+This example produces the following output:
 
 ```output
 Lawnmower:1

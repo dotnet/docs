@@ -38,7 +38,7 @@ Core .NET libraries
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Text.UTF8Encoding.GetCharCount`
 - `Overload:System.Text.UTF8Encoding.GetChars`

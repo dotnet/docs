@@ -39,7 +39,7 @@ HRESULT AcquiredVirtualAddressSpace(
  The `AcquiredVirtualAddressSpace` method is a callback method and must be implemented by the writer of the hosting application. It is called by the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -49,4 +49,4 @@ HRESULT AcquiredVirtualAddressSpace(
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

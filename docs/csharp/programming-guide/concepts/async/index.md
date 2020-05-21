@@ -141,6 +141,6 @@ Another option is to use <xref:System.Threading.Tasks.Task.WhenAny%2A>, which re
 
 After all those changes, the final version of looks like the following code:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" range="1-17,19-36,38-111" highlight="9-50":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" range="1-16,18-35,37-110" highlight="9-40":::
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.

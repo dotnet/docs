@@ -27,19 +27,19 @@ namespace AsyncBreakfast
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
-
-            // <SnippetComposeToastTask>
-            static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
-            {
-                var toast = await ToastBreadAsync(number);
-                ApplyButter(toast);
-                ApplyJam(toast);
-
-                return toast;
-            }
-            // </SnippetComposeToastTask>
         }
         // </SnippetMain>
+
+        // <SnippetComposeToastTask>
+        static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
+        {
+            var toast = await ToastBreadAsync(number);
+            ApplyButter(toast);
+            ApplyJam(toast);
+
+            return toast;
+        }
+        // </SnippetComposeToastTask>
 
         private static Juice PourOJ()
         {

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTask::SetPriority Method
-Requests that the host adjust the thread priority level for the task represented by the current [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance.  
+Requests that the host adjust the thread priority level for the task represented by the current [IHostTask](ihosttask-interface.md) instance.  
   
 ## Syntax  
   
@@ -62,12 +62,12 @@ HRESULT SetPriority (
  The CLR calls `SetPriority` when the value of the <xref:System.Threading.Thread.Priority%2A?displayProperty=nameWithType> is modified by user code. A host can define its own algorithms for thread priority assignment, and is free to ignore this request.  
   
 > [!NOTE]
-> `SetPriority` does not report whether the thread priority level was changed. Call [IHostTask::GetPriority](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md) to determine the value of the task's thread priority level.  
+> `SetPriority` does not report whether the thread priority level was changed. Call [IHostTask::GetPriority](ihosttask-getpriority-method.md) to determine the value of the task's thread priority level.  
   
  Thread priority level values are defined by the Win32 `SetThreadPriority` function. For more information about thread priority, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -78,8 +78,8 @@ HRESULT SetPriority (
 ## See also
 
 - <xref:System.Threading.Thread>
-- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
-- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
-- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
-- [GetPriority Method](../../../../docs/framework/unmanaged-api/hosting/ihosttask-getpriority-method.md)
-- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [ICLRTask Interface](iclrtask-interface.md)
+- [ICLRTaskManager Interface](iclrtaskmanager-interface.md)
+- [IHostTask Interface](ihosttask-interface.md)
+- [GetPriority Method](ihosttask-getpriority-method.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

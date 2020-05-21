@@ -1,12 +1,12 @@
 ### CounterSet.CreateCounterSetInstance now throws InvalidOperationException if instance already exist
 
-Starting in .NET Core 5.0, <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance>(string `instanceName`) throws <xref:System.InvalidOperationException> instead of <xref:System.ArgumentException> if user attempt to create already existing instance.
+Starting in .NET 5.0, <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance(System.String)?displayProperty=nameWithType> throws an <xref:System.InvalidOperationException> instead of an <xref:System.ArgumentException> if the counter set already exists.
 
 #### Change description
 
-In .NET Framework and versions of .NET Core prior to 5.0, you could create an instance of the counter set by calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance>. However, if counter set already exist it would throw ArgumentException exception.
+In .NET Framework and .NET Core 1.0 to 3.1, you can create an instance of the counter set by calling <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance>. However, if the counter set already exists, the method throws an <xref:System.ArgumentException> exception.
 
-In .NET Core 5.0 and later versions, when you call <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance> and if the counter set exist then <xref:System.InvalidOperationException> would be thrown.
+In .NET 5.0 and later versions, when you call <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance> and the counter set exists, an <xref:System.InvalidOperationException> exception is thrown.
 
 #### Version introduced
 
@@ -14,7 +14,10 @@ In .NET Core 5.0 and later versions, when you call <xref:System.Diagnostics.Perf
 
 #### Recommended action
 
-Catching ArgumentException is not recommended, but if you are catching <xref:System.ArgumentException> in your app, you might want to consider also catching <xref:System.InvalidOperationException>.
+If you catch <xref:System.ArgumentException> exceptions in your app, consider also catching <xref:System.InvalidOperationException> exceptions.
+
+> [!NOTE]
+> Catching <xref:System.ArgumentException> exceptions is not recommended.
 
 #### Category
 
@@ -22,7 +25,7 @@ Core .NET libraries
 
 #### Affected APIs
 
-- <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance>
+- <xref:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance%2A?displayProperty=fullName>
 
 <!--
 

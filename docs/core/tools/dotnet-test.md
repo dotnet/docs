@@ -65,7 +65,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
   
-  To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
+  To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
 
   On Windows, you can collect code coverage by using the `--collect "Code Coverage"` option. This option generates a *.coverage* file, which can be opened in Visual Studio 2019 Enterprise. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).
 

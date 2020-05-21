@@ -23,7 +23,6 @@ namespace AsyncBreakfast
 
             Console.WriteLine("Breakfast is ready!");
         }
-        // </SnippetMain>
 
         private static Juice PourOJ()
         {
@@ -74,5 +73,6 @@ namespace AsyncBreakfast
             Console.WriteLine("Pouring coffee");
             return new Coffee();
         }
+        // </SnippetMain>
     }
 }

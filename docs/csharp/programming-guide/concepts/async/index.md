@@ -1,13 +1,13 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 05/20/2020
+ms.date: 05/21/2020
 ---
 # Asynchronous programming with async and await
 
 The [Task asynchronous programming model (TAP)](task-asynchronous-programming-model.md) provides an abstraction over asynchronous code. You write code as a sequence of statements, just like always. You can read that code as though each statement completes before the next begins. The compiler performs a number of transformations because some of those statements may start work and return a <xref:System.Threading.Tasks.Task> that represents the ongoing work.
 
-That's the goal of this syntax: enable code that reads like a sequence of statements, but executes in a much more complicated order based on external resource allocation and when tasks complete. It's analogous to how people give instructions for processes that include asynchronous tasks. Throughout this article, you'll use an example of instructions for making a breakfast to see how the `async` and `await` keywords make it easier to reason about code that includes a series of asynchronous instructions. You'd write the instructions something like the following list to explain how to make a breakfast:
+That's the goal of this syntax: enable code that reads like a sequence of statements, but executes in a much more complicated order based on external resource allocation and when tasks complete. It's analogous to how people give instructions for processes that include asynchronous tasks. Throughout this article, you'll use an example of instructions for making a breakfast to see how the `async` and `await` keywords make it easier to reason about code, that includes a series of asynchronous instructions. You'd write the instructions something like the following list to explain how to make a breakfast:
 
 1. Pour a cup of coffee.
 1. Heat up a pan, then fry two eggs.
@@ -27,7 +27,7 @@ Now, consider those same instructions written as C# statements:
 :::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-27":::
 
 > [!IMPORTANT]
-> The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, and have no properties.
+> The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
 
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.
 
@@ -44,6 +44,9 @@ The preceding code demonstrates a bad practice: constructing synchronous code to
 Let's start by updating this code so that the thread doesn't block while tasks are running. The `await` keyword provides a non-blocking way to start a task, then continue execution when that task completes. A simple asynchronous version of the make a breakfast code would look like the following snippet:
 
 [!code-csharp[SimpleAsyncBreakfast](./snippets/index/AsyncBreakfast-V2/Program.cs#Main)]
+
+> [!TIP]
+> The method bodies of the `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` have all been updated to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` respectively. Their implementations are shown as part of the [final version](#final-version) later in this article.
 
 This code doesn't block while the eggs or the bacon are cooking. This code won't start any other tasks though. You'd still put the toast in the toaster and stare at it until it pops. But at least, you'd respond to anyone that wanted your attention. In a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking.
 
@@ -162,7 +165,7 @@ while (breakfastTasks.Count > 0)
 ```
 
 After all those changes, the final version of looks like the following code:
-
+<a id="final-version"></a>
 :::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9-40":::
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.

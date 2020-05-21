@@ -9,7 +9,7 @@ ms.topic: reference
 ## Invariant mode
 
 - Determines whether a .NET Core app runs in globalization-invariant mode without access to culture-specific data and behavior.
-- Default: Run the app with access to cultural data (`false`).
+- If you omit this setting, the app runs with access to cultural data. This is equivalent to setting the value to `false`.
 - For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 | | Setting name | Values |
@@ -47,7 +47,7 @@ Project file:
 ## Era year ranges
 
 - Determines whether range checks for calendars that support multiple eras are relaxed or whether dates that overflow an era's date range throw an <xref:System.ArgumentOutOfRangeException>.
-- Default: Range checks are relaxed (`false`).
+- If you omit this setting, range checks are relaxed. This is equivalent to setting the value to `false`.
 - For more information, see [Calendars, eras, and date ranges: Relaxed range checks](../../standard/datetime/working-with-calendars.md#calendars-eras-and-date-ranges-relaxed-range-checks).
 
 | | Setting name | Values |
@@ -58,7 +58,7 @@ Project file:
 ## Japanese date parsing
 
 - Determines whether a string that contains either "1" or "Gannen" as the year parses successfully or whether only "1" is supported.
-- Default: Parse strings that contain either "1" or "Gannen" as the year (`false`).
+- If you omit this setting, strings that contain either "1" or "Gannen" as the year parse successfully. This is equivalent to setting the value to `false`.
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Setting name | Values |
@@ -69,7 +69,7 @@ Project file:
 ## Japanese year format
 
 - Determines whether the first year of a Japanese calendar era is formatted as "Gannen" or as a number.
-- Default: Format the first year as "Gannen" (`false`).
+- If you omit this setting, the first year is formatted as "Gannen". This is equivalent to setting the value to `false`.
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Setting name | Values |

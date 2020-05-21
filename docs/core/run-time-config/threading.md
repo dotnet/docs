@@ -9,7 +9,7 @@ ms.topic: reference
 ## CPU groups
 
 - Configures whether threads are automatically distributed across CPU groups.
-- Default: Disabled (`0`).
+- If you omit this setting, threads are not distributed across CPU groups. This is equivalent to setting the value to `0`.
 
 | | Setting name | Values |
 | - | - | - |

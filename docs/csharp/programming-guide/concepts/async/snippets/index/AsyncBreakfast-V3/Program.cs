@@ -43,7 +43,7 @@ namespace AsyncBreakfast
 
         private static Juice PourOJ()
         {
-            Console.WriteLine("Pouring Orange Juice");
+            Console.WriteLine("Pouring orange juice");
             return new Juice();
         }
 
@@ -68,7 +68,7 @@ namespace AsyncBreakfast
 
         private static async Task<Bacon> FryBaconAsync(int slices)
         {
-            Console.WriteLine($"putting {slices} of bacon in the pan");
+            Console.WriteLine($"putting {slices} slices of bacon in the pan");
             Console.WriteLine("cooking first side of bacon...");
             await Task.Delay(3000);
             for (int slice = 0; slice < slices; slice++)

@@ -46,7 +46,7 @@ Let's start by updating this code so that the thread doesn't block while tasks a
 [!code-csharp[SimpleAsyncBreakfast](./snippets/index/AsyncBreakfast-V2/Program.cs#Main)]
 
 > [!TIP]
-> The method bodies of the `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` have all been updated to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` respectively. Their implementations are shown as part of the [final version](#final-version) later in this article.
+> The method bodies of the `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` have all been updated to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` respectively. The methods are renamed from their original version to include the "Async" suffix. Their implementations are shown as part of the [final version](#final-version) later in this article.
 
 This code doesn't block while the eggs or the bacon are cooking. This code won't start any other tasks though. You'd still put the toast in the toaster and stare at it until it pops. But at least, you'd respond to anyone that wanted your attention. In a restaurant where multiple orders are placed, the cook could start another breakfast while the first is cooking.
 
@@ -164,8 +164,13 @@ while (breakfastTasks.Count > 0)
 }
 ```
 
-After all those changes, the final version of looks like the following code:
+After all those changes, the final version of the code looks like this:
 <a id="final-version"></a>
 :::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9-40":::
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn about the task asynchronous programming model](task-asynchronous-programming-model.md)

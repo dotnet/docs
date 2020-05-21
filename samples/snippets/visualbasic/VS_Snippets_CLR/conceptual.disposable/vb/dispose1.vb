@@ -21,7 +21,7 @@ Public Class Disposable : Implements IDisposable
 
    ' <Snippet8>
    Protected Overridable Sub Dispose(disposing As Boolean)
-   ' </Snippet8>   
    End Sub
+   ' </Snippet8>
 
 End Class

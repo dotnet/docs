@@ -499,7 +499,7 @@ Longer expressions should use new lines:
 let rainbow2 =
     { rainbow with
         Boss = "Jeffrey"
-        Lackeys = ["Zippy"; "George"; "Bungle"] }
+        Lackeys = [ "Zippy"; "George"; "Bungle" ] }
 ```
 
 And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:

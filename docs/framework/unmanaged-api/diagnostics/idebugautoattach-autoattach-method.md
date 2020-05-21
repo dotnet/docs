@@ -56,4 +56,4 @@ HRESULT AutoAttach
   
 ## See also
 
-- [IDebugAutoAttach Interface](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)
+- [IDebugAutoAttach Interface](idebugautoattach-interface.md)

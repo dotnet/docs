@@ -1,5 +1,6 @@
 ---
 title: "Binary serialization"
+description: This article describes binary serialization and types for which .NET Core supports it. Be aware of the dangers of binary serialization and alternatives to it.
 ms.date: "01/02/2018"
 helpviewer_keywords: 
   - "binary serialization"

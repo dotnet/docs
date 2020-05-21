@@ -17,6 +17,10 @@
       "redirect_url": "/dotnet/architecture/cloud-native/relational-vs-nosql-data"
     },
     {
+      "source_path": "docs/architecture/cloud-native/cloud-native-devops.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/devops"
+    },
+    {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
       "redirect_document_id": true
@@ -476,7 +480,7 @@
     },
     {
       "source_path": "docs/core/versions/install-management.md",
-      "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
+      "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
     },
     {
       "source_path": "docs/core/versions/lts-current.md",
@@ -3342,6 +3346,11 @@
     {
       "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
       "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/wpf/advanced/globalization-and-localization-how-to-topics.md",
+      "redirect_url": "/dotnet/framework/wpf/advanced/how-to-localize-an-application",
       "redirect_document_id": true
     },
     {

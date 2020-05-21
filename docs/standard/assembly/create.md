@@ -1,5 +1,6 @@
 ---
 title: "Create assemblies"
+description: Learn about creating single-file or multifile assemblies using an IDE, such as Visual Studio, or the compilers and tools provided by the Windows SDK.
 ms.date: "08/19/2019"
 helpviewer_keywords:
   - "assemblies [.NET Framework], multifile"

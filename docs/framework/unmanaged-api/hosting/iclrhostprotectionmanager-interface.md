@@ -22,11 +22,11 @@ Enables the host to block specific managed classes, methods, properties, and fie
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetEagerSerializeGrantSets](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-seteagerserializegrantsets-method.md)|Provides a guarantee that certain rare race conditions that can cause fatal common language runtime (CLR) errors will never arise.|  
-|[SetProtectedCategories Method](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-setprotectedcategories-method.md)|Specifies the categories of managed types and members that should be blocked from running in partially trusted code.|  
+|[SetEagerSerializeGrantSets](iclrhostprotectionmanager-seteagerserializegrantsets-method.md)|Provides a guarantee that certain rare race conditions that can cause fatal common language runtime (CLR) errors will never arise.|  
+|[SetProtectedCategories Method](iclrhostprotectionmanager-setprotectedcategories-method.md)|Specifies the categories of managed types and members that should be blocked from running in partially trusted code.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,5 +36,5 @@ Enables the host to block specific managed classes, methods, properties, and fie
   
 ## See also
 
-- [EApiCategories Enumeration](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md)
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
+- [EApiCategories Enumeration](eapicategories-enumeration.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)

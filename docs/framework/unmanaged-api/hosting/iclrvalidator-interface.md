@@ -22,11 +22,11 @@ Provides methods for validating portable executable (PE) images and reporting va
   
 |Method|Description|  
 |------------|-----------------|  
-|[FormatEventInfo Method](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-formateventinfo-method.md)|Gets a detailed message about the specified validation error.|  
-|[Validate Method](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-validate-method.md)|Validates the portable executable or Microsoft intermediate language (MSIL) in the specified file.|  
+|[FormatEventInfo Method](iclrvalidator-formateventinfo-method.md)|Gets a detailed message about the specified validation error.|  
+|[Validate Method](iclrvalidator-validate-method.md)|Validates the portable executable or Microsoft intermediate language (MSIL) in the specified file.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   
@@ -36,6 +36,6 @@ Provides methods for validating portable executable (PE) images and reporting va
   
 ## See also
 
-- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [CLRRuntimeHost Coclass](../../../../docs/framework/unmanaged-api/hosting/clrruntimehost-coclass.md)
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [CLRRuntimeHost Coclass](clrruntimehost-coclass.md)

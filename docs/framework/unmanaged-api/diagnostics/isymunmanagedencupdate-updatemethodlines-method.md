@@ -46,4 +46,4 @@ HRESULT UpdateMethodLines(
   
 ## See also
 
-- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [ISymUnmanagedENCUpdate Interface](isymunmanagedencupdate-interface.md)

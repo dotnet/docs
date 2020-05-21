@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -21,7 +20,7 @@ namespace AsyncBreakfast
             var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
             while (breakfastTasks.Count > 0)
             {
-                Task finishedTask = await Task.WhenAny(allTasks);
+                Task finishedTask = await Task.WhenAny(breakfastTasks);
                 if (finishedTask == eggsTask)
                 {
                     Console.WriteLine("eggs are ready");
@@ -34,13 +33,13 @@ namespace AsyncBreakfast
                 {
                     Console.WriteLine("toast is ready");
                 }
-                breakfastTasks.Remove(finished);
+                breakfastTasks.Remove(finishedTask);
             }
+            // </SnippetAwaitAnyTask>
 
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
-            // </SnippetAwaitAnyTask>
 
             static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
             {

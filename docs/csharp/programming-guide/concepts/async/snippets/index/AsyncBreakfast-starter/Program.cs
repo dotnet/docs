@@ -5,7 +5,6 @@ namespace AsyncBreakfast
 {
     class Program
     {
-        // <SnippetMain>
         static void Main(string[] args)
         {
             Coffee cup = PourCoffee();
@@ -24,7 +23,6 @@ namespace AsyncBreakfast
 
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
-
             Console.WriteLine("Breakfast is ready!");
         }
 
@@ -86,6 +84,5 @@ namespace AsyncBreakfast
             Console.WriteLine("Pouring coffee");
             return new Coffee();
         }
-        // </SnippetMain>
     }
 }

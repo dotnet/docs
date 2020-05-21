@@ -29,7 +29,7 @@ namespace AsyncBreakfast
             Console.WriteLine("Breakfast is ready!");
 
             // <SnippetComposeToastTask>
-            async Task<Toast> MakeToastWithButterAndJamAsync(int number)
+            static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
             {
                 var toast = await ToastBreadAsync(number);
                 ApplyButter(toast);

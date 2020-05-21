@@ -24,7 +24,7 @@ For a parallel algorithm, you'd need multiple cooks (or threads). One would make
 
 Now, consider those same instructions written as C# statements:
 
-[!code-csharp[SynchronousBreakfast](./snippets/index/AsyncBreakfast-starter/Program.cs#Main)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8,27":::
 
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.
 
@@ -59,20 +59,23 @@ Let's make these changes to the breakfast code. The first step is to store the t
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
+
 Task<Egg> eggsTask = FryEggsAsync(2);
 Egg eggs = await eggsTask;
 Console.WriteLine("eggs are ready");
+
 Task<Bacon> baconTask = FryBaconAsync(3);
 Bacon bacon = await baconTask;
 Console.WriteLine("bacon is ready");
+
 Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
 ApplyButter(toast);
 ApplyJam(toast);
 Console.WriteLine("toast is ready");
+
 Juice oj = PourOJ();
 Console.WriteLine("oj is ready");
-
 Console.WriteLine("Breakfast is ready!");
 ```
 
@@ -101,7 +104,7 @@ Console.WriteLine("bacon is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-The preceding code works better. You start all the asynchronous tasks at once. You `await` each task only when you need the results. The preceding code may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately, then `await` all those tasks and compose the web page.
+The preceding code works better. You start all the asynchronous tasks at once. You await each task only when you need the results. The preceding code may be similar to code in a web application that makes requests of different microservices, then combines the results into a single page. You'll make all the requests immediately, then `await` all those tasks and compose the web page.
 
 ## Composition with tasks
 
@@ -136,8 +139,8 @@ Another option is to use <xref:System.Threading.Tasks.Task.WhenAny%2A>, which re
 
 [!code-csharp[AwaitAnyTask](./snippets/index/AsyncBreakfast-final/Program.cs#AwaitAnyTask)]
 
-After all those changes, the final version of `Main` looks like the following code:
+After all those changes, the final version of looks like the following code:
 
-[!code-csharp[Final](./snippets/index/AsyncBreakfast-final/Program.cs#Main)]
+:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9,50":::
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.

@@ -24,7 +24,7 @@ For a parallel algorithm, you'd need multiple cooks (or threads). One would make
 
 Now, consider those same instructions written as C# statements:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8,27":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-27":::
 
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.
 
@@ -141,6 +141,6 @@ Another option is to use <xref:System.Threading.Tasks.Task.WhenAny%2A>, which re
 
 After all those changes, the final version of looks like the following code:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" highlight="9,50":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-final/Program.cs" range="1-17,19-36,38-111" highlight="9-50":::
 
 This final code is asynchronous. It more accurately reflects how a person would cook a breakfast. Compare the preceding code with the first code sample in this article. The core actions are still clear from reading the code. You can read this code the same way you'd read those instructions for making a breakfast at the beginning of this article. The language features for `async` and `await` provide the translation every person makes to follow those written instructions: start tasks as you can and don't block waiting for tasks to complete.

@@ -6,7 +6,6 @@ namespace AsyncBreakfast
 {
     class Program
     {
-        // <SnippetMain>
         static async Task Main(string[] args)
         {
             Coffee cup = PourCoffee();
@@ -40,16 +39,15 @@ namespace AsyncBreakfast
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
-
-            static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
-            {
-                var toast = await ToastBreadAsync(number);
-                ApplyButter(toast);
-                ApplyJam(toast);
-                return toast;
-            }
         }
-        // </SnippetMain>
+
+        static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
+        {
+            var toast = await ToastBreadAsync(number);
+            ApplyButter(toast);
+            ApplyJam(toast);
+            return toast;
+        }
 
         private static Juice PourOJ()
         {

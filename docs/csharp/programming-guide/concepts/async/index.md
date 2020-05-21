@@ -43,7 +43,7 @@ The preceding code demonstrates a bad practice: constructing synchronous code to
 
 Let's start by updating this code so that the thread doesn't block while tasks are running. The `await` keyword provides a non-blocking way to start a task, then continue execution when that task completes. A simple asynchronous version of the make a breakfast code would look like the following snippet:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" id="Main":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" id="SnippetMain":::
 
 > [!TIP]
 > The method bodies of the `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` have all been updated to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` respectively. The methods are renamed from their original version to include the "Async" suffix. Their implementations are shown as part of the [final version](#final-version) later in this article.
@@ -121,11 +121,11 @@ The preceding code works better. You start all the asynchronous tasks at once. Y
 
 The preceding code showed you that you can use <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> objects to hold running tasks. You `await` each task before using its result. The next step is to create methods that represent the combination of other work. Before serving breakfast, you want to await the task that represents toasting the bread before adding butter and jam. You can represent that work with the following code:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="ComposeToastTask":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="SnippetComposeToastTask":::
 
 The preceding method has the `async` modifier in its signature. That signals to the compiler that this method contains an `await` statement; it contains asynchronous operations. This method represents the task that toasts the bread, then adds butter and jam. This method returns a <xref:System.Threading.Tasks.Task%601> that represents the composition of those three operations. The main block of code now becomes:
 
-:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="Main":::
+:::code language="csharp" source="snippets/index/AsyncBreakfast-V3/Program.cs" id="SnippetMain":::
 
 The previous change illustrated an important technique for working with asynchronous code. You compose tasks by separating the operations into a new method that returns a task. You can choose when to await that task. You can start other tasks concurrently.
 

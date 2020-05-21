@@ -14,7 +14,7 @@ namespace AsyncBreakfast
             var eggsTask = FryEggsAsync(2);
             var baconTask = FryBaconAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);
-            // <SnippetAwaitAnyTask>
+
             var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
             while (breakfastTasks.Count > 0)
             {
@@ -33,7 +33,7 @@ namespace AsyncBreakfast
                 }
                 breakfastTasks.Remove(finishedTask);
             }
-            // </SnippetAwaitAnyTask>
+
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");

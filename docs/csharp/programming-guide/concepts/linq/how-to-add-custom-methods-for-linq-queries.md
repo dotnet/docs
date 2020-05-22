@@ -22,7 +22,7 @@ public static class LINQExtension
     {
         var countOfElementsInTheSet = source?.Count() ?? 0;
 
-        if (source == null || countOfElementsInTheSet == 0)
+        if (countOfElementsInTheSet == 0)
         {
             throw new InvalidOperationException("Cannot compute median for a null or empty set.");
         }

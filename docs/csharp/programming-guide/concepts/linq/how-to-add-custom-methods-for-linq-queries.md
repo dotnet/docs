@@ -20,7 +20,7 @@ public static class LINQExtension
 {
     public static double Median(this IEnumerable<double> source)
     {
-        var countOfElementsInTheSet = source?.Count();
+        var countOfElementsInTheSet = source?.Count() ?? 0;
 
         if (source == null || countOfElementsInTheSet == 0)
         {

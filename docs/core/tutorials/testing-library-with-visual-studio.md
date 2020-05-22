@@ -24,7 +24,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
    1. On the **Add a new project** page, enter **mstest** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
-   
+
    1. Choose the **MSTest Test Project (.NET Core)** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Create**.

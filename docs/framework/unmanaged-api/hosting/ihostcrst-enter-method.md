@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostCrst::Enter Method
-Enters the critical section that is represented by the current [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance.  
+Enters the critical section that is represented by the current [IHostCrst](ihostcrst-interface.md) instance.  
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT Enter (
   
 ## Parameters  
  `option`  
- [in] One of the [WAIT_OPTION](../../../../docs/framework/unmanaged-api/hosting/wait-option-enumeration.md) values, indicating what action the host should take if the operation blocks.  
+ [in] One of the [WAIT_OPTION](wait-option-enumeration.md) values, indicating what action the host should take if the operation blocks.  
   
 ## Return Value  
   
@@ -49,7 +49,7 @@ HRESULT Enter (
 > This method does not return until the critical section is entered.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -59,6 +59,6 @@ HRESULT Enter (
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostCrst Interface](ihostcrst-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

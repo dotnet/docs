@@ -9,7 +9,7 @@ dev_langs:
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Publish a .NET Core console application with Visual Studio
+# Tutorial: Publish a .NET Core console application with Visual Studio
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 

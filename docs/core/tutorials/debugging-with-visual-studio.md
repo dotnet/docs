@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Debug a .NET Core console application using Visual Studio
+# Tutorial: Debug a .NET Core console application using Visual Studio
 
 This tutorial introduces the debugging tools available in Visual Studio.
 

@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Test a .NET Standard library with .NET Core in Visual Studio
+# Tutorial: Test a .NET Standard library with .NET Core in Visual Studio
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

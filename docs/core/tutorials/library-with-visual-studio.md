@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Create a .NET Standard library in Visual Studio
+# Tutorial: Create a .NET Standard library in Visual Studio
 
 A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
 

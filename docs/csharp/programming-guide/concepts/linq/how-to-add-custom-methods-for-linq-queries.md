@@ -31,7 +31,7 @@ public static class LINQExtension
                          orderby number
                          select number).ToList();
 
-        int itemIndex = (int)countOfElementsInTheSet / 2;
+        int itemIndex = countOfElementsInTheSet / 2;
 
         if (countOfElementsInTheSet % 2 == 0)
         {

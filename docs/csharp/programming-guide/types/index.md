@@ -86,10 +86,10 @@ Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, wh
 
 There are two categories of value types: [struct](../../language-reference/builtin-types/struct.md) and [enum](../../language-reference/builtin-types/enum.md).
 
-The built-in numeric types are structs, and they have properties and methods that you can access:
+The built-in numeric types are structs, and they have fields and methods that you can access:
 
 ```csharp
-// Static method on type byte.
+// constant field on type byte.
 byte b = byte.MaxValue;
 ```
 

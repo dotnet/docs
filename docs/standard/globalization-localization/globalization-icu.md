@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 # .NET globalization and ICU
 
-In the past, the .NET globalization APIs have used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
+In the past, the .NET globalization APIs used different underlying libraries on different platforms. On Unix, the APIs used [International Components for Unicode (ICU)](http://site.icu-project.org/home), and on Windows, they used [National Language Support (NLS)](/windows/win32/intl/national-language-support). This resulted in some behavioral differences in a handful of globalization APIs when running applications on different platforms. Behavior differences were evident in these areas:
 
 - Cultures and culture data
 - String casing
@@ -28,7 +28,7 @@ Starting with .NET 5.0, developers have more control over which underlying libra
 
 ## ICU on Windows
 
-Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5.0 and later versions uses ICU by default. When running on Windows, .NET 5.0 and later versions try to load `icu.dll` and if it's available, use it for the globalization implementation.  If that library can't be found or loaded, such as when running on older versions of Windows, .NET 5 and later versions fall back to the NLS-based implementation.
+Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/intl/international-components-for-unicode--icu-) as part of the OS, and .NET 5.0 and later versions use ICU by default. When running on Windows, .NET 5.0 and later versions try to load `icu.dll` and if it's available, uses it for the globalization implementation.  If that library can't be found or loaded, such as when running on older versions of Windows, .NET 5.0 and later versions fall back to the NLS-based implementation.
 
 > [!NOTE]
 > Even when using ICU, the `CurrentCulture`, `CurrentUICulture`, and `CurrentRegion` members still use Windows operating system APIs to honor user settings.
@@ -57,11 +57,12 @@ Using ICU instead of NLS may result in behavioral differences with some globaliz
 }
 ```
 
-- By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to the value `true` or `1` (without quotes).
+- By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to the value `true` or `1`.
 
 > [!NOTE]
 > A value set in the project or in the `runtimeconfig.json` file takes precedence over the environment variable.
-> For more information, see [Run-time config settings](../../core/run-time-config/globalization.md#nls).
+
+For more information, see [Run-time config settings](../../core/run-time-config/globalization.md#nls).
 
 ## App-local ICU
 
@@ -89,7 +90,7 @@ Applications can opt in to an app-local ICU implementation mode in any of the fo
 }
 ```
 
-- By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` to the value `<suffix>:<version>` or `<version>` (without quotes).
+- By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` to the value `<suffix>:<version>` or `<version>`.
 
 `<suffix>`: Optional suffix of less than 36 characters in length, following the public ICU packaging conventions. When building a custom ICU, you can customize it to produce the lib names and exported symbol names to contain a suffix, for example, `libicuucmyapp`, where `myapp` is the suffix.
 
@@ -99,7 +100,7 @@ To load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime
 
 For self-contained apps, no special action is required by the user, other than making sure ICU is in the app directory (for self-contained apps, the working directory defaults to `NATIVE_DLL_SEARCH_DIRECTORIES`).
 
-If you're consuming ICU via a NuGet package, this works in framework-dependent applications. NuGet resolves the native assets and includes them in the `deps.json` file and in the output directory for the application under the `runtimes` dir. .NET loads it from there.
+If you're consuming ICU via a NuGet package, this works in framework-dependent applications. NuGet resolves the native assets and includes them in the `deps.json` file and in the output directory for the application under the `runtimes` directory. .NET loads it from there.
 
 For framework-dependent apps (not self contained) where ICU is consumed from a local build, you must take additional steps. The .NET SDK doesn't yet have a feature for "loose" native binaries to be incorporated into `deps.json` (see [this SDK issue](https://github.com/dotnet/sdk/issues/11373)). Instead, you can enable this by adding additional information into the application's project file. For example:
 
@@ -114,7 +115,7 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
 
 ### macOS behavior
 
-`macOS` has a different behavior for resolving dependent dynamic libraries from the load commands specified in the `match-o` file than the Linux loader. In the Linux loader, .NET can try `libicudata`, `libicuuc`, and `libicui18n` (in that order) to satisfy ICU dependency graph. However, on macOS this doesn't work. When building ICU on macOS, you, by default, get a dynamic library with these load commands in `libicuuc`. For example.:
+`macOS` has a different behavior for resolving dependent dynamic libraries from the load commands specified in the `match-o` file than the Linux loader. In the Linux loader, .NET can try `libicudata`, `libicuuc`, and `libicui18n` (in that order) to satisfy ICU dependency graph. However, on macOS, this doesn't work. When building ICU on macOS, you, by default, get a dynamic library with these load commands in `libicuuc`. For example.:
 
 ```sh
 ~/ % otool -L /Users/santifdezm/repos/icu-build/icu/install/lib/libicuuc.67.1.dylib
@@ -125,7 +126,7 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
  /usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 902.1.0)
 ```
 
-These commands are just referencing the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you will need to do some extra work.
+These commands just reference the name of the dependent libraries for the other components of ICU. The loader performs the search following the `dlopen` conventions, which involves having these libraries in the system directories or setting the `LD_LIBRARY_PATH` env vars, or having ICU at the app-level directory. If you can't set `LD_LIBRARY_PATH` or ensure that ICU binaries are at the app-level directory, you will need to do some extra work.
 
 There are some directives for the loader, like `@loader_path`, which tell the loader to search for that dependency in the same directory as the binary with that load command. There are two ways to achieve this:
 

@@ -44,9 +44,9 @@ For additional information, see the [Globalization documentation](/globalization
 
 Discusses the first stage of creating a world-ready application, which involves designing and coding an application that is culture-neutral and language-neutral.
 
-[.NET Globalization and ICU](globalization-icu.md)
+[.NET globalization and ICU](globalization-icu.md)
 
-Describes how .NET Globalization uses [International Components for Unicode (ICU)](http://site.icu-project.org/home).
+Describes how .NET globalization uses [International Components for Unicode (ICU)](http://site.icu-project.org/home).
 
 [Localizability review](localizability-review.md)
 

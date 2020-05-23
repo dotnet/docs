@@ -37,11 +37,13 @@ If you are using Visual Studio, aliase can be provided in similar way.
 Add reference of grid.dll and grid20.dll to you project in visual studio. Open a property tab and change the Aliases from global to GridV1 and GridV2 respectively
 
 Use these aliases the same way above
+
 ```csharp
  extern alias GridV1;  
   
  extern alias GridV2;  
 ```
+
 Now you can create alias for a namespace or a type by *using alias directive* See [using directive](using-directive.md) for more information 
 
 ```csharp

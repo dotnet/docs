@@ -137,7 +137,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 - **`-s|--source <SOURCE>`**
 
-  Specifies a NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
+  Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
 - **`--use-lockfile`**
 

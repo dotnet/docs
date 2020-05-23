@@ -31,6 +31,25 @@ You might have to reference two versions of assemblies that have the same fully-
   
  In the previous example, `GridV1::Grid` would be the grid control from `grid.dll`, and `GridV2::Grid` would be the grid control from `grid20.dll`.  
   
+## Using Visual Studio:
+If you are using Visual Studio, aliase can be provided in similar way. 
+
+Add reference of grid.dll and grid20.dll to you project in visual studio. Open a property tab and change the Aliases from global to GridV1 and GridV2 respectively
+
+Use these aliases the same way above
+```csharp
+ extern alias GridV1;  
+  
+ extern alias GridV2;  
+```
+Now you can create alias for a namespace or a type by *using alias directive* See [using directive](using-directive.md) for more information 
+
+```csharp
+using Class1V1 = GridV1::Namespace.Class1;
+
+using Class1V2 = GridV2::Namespace.Class1;
+```
+
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   

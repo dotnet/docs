@@ -15,14 +15,14 @@ namespace AutoImplMutable
         // Auto-implemented properties for trivial get and set
         public double TotalPurchases { get; set; }
         public string Name { get; set; }
-        public int CustomerID { get; set; }
+        public int CustomerId { get; set; }
 
         // Constructor
         public Customer(double purchases, string name, int ID)
         {
             TotalPurchases = purchases;
             Name = name;
-            CustomerID = ID;
+            CustomerId = Id;
         }
 
         // Methods

@@ -45,7 +45,7 @@ Use these aliases the same way above
  extern alias GridV2;  
 ```
 
-Now you can create alias for a namespace or a type by *using alias directive* See [using directive](using-directive.md) for more information 
+Now you can create alias for a namespace or a type by *using alias directive*. For more information, see [using directive](using-directive.md).
 
 ```csharp
 using Class1V1 = GridV1::Namespace.Class1;

@@ -31,7 +31,7 @@ You might have to reference two versions of assemblies that have the same fully-
   
  In the previous example, `GridV1::Grid` would be the grid control from `grid.dll`, and `GridV2::Grid` would be the grid control from `grid20.dll`.  
   
-## Using Visual Studio:
+## Using Visual Studio
 
 If you are using Visual Studio, aliase can be provided in similar way.
 

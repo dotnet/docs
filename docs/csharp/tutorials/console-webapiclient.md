@@ -43,7 +43,7 @@ create a new directory for your application. Make that the current
 directory. Enter the following command in a console window:
 
 ```dotnetcli
-dotnet new console --name WebApiClient
+dotnet new console --name WebAPIClient
 ```
 
 This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.

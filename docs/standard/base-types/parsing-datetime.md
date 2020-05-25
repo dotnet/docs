@@ -1,5 +1,5 @@
 ---
-title: "How to: convert strings to DateTime"
+title: Convert strings to DateTime
 description: "Learn techniques to parse strings that represent dates and times to create a DateTime from the date and time string."
 ms.date: "02/15/2018"
 ms.technology: dotnet-standard
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "DateTime object"
   - "time strings"
 ---
-# Parsing Date and Time Strings in .NET
+# Parse date and time strings in .NET
 
 Parsing strings to convert them to <xref:System.DateTime> objects requires you to specify information about how the dates and times are represented as text. Different cultures use different orders for day, month, and year. Some time representations use a 24-hour clock, others specify "AM" and "PM." Some applications need only the date. Others need only the time. Still others need to specify both the date and the time. The methods that convert strings to <xref:System.DateTime> objects enable you to provide detailed information about the formats you expect and the elements of a date and time your application needs. There are three subtasks to correctly converting text into a <xref:System.DateTime>:
 
@@ -50,7 +50,7 @@ The following example illustrates the use of the <xref:System.DateTime.Parse%2A?
 > All the C# samples in this article run in your browser. Press the **Run** button to see the output. You can also edit them to experiment yourself.
 
 > [!NOTE]
-> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/conversions) and [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/how-to/conversions). Or, you can download the project as a zip file for [C#](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/conversions.zip) or [Visual Basic](https://github.com/dotnet/samples/raw/master/snippets/visualbasic/how-to/conversions.zip).
+> These examples are available in the GitHub docs repo for both [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/conversions) and [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/how-to/conversions). Or, you can download the project as a zip file for [C#](https://github.com/dotnet/docs/blob/master/samples/snippets/csharp/how-to/conversions.zip) or [Visual Basic](https://github.com/dotnet/docs/blob/master/samples/snippets/visualbasic/how-to/conversions.zip).
 
 [!code-csharp-interactive[Parsing.DateAndTime#1](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#1)]
 [!code-vb[Parsing.DateAndTime#1](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#1)]
@@ -66,7 +66,7 @@ However, although you can use overloads of the <xref:System.DateTime.Parse%2A> m
 
 [!code-csharp[Parsing.DateAndTime#3](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#3)]
 [!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#3)]
- 
+
 ## ParseExact
 
 The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method converts a string to a <xref:System.DateTime> object if it conforms to one of the specified string patterns. When a string that is not one of the forms specified is passed to this method, a <xref:System.FormatException> is thrown. You can specify one of the standard date and time format specifiers or a combination of the custom format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).  

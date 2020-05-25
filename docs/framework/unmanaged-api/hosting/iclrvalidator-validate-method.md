@@ -31,7 +31,7 @@ HRESULT Validate (
     [in] LPWSTR             fileName,  
     [in, size_is(ulSize)] BYTE *pe,  
     [in] unsigned long      ulSize  
-);      
+);
 ```  
   
 ## Parameters  
@@ -42,7 +42,7 @@ HRESULT Validate (
  [in] The identifier for the current <xref:System.AppDomain>.  
   
  `ulFlags`  
- [in] A combination of [ValidatorFlags](../../../../docs/framework/unmanaged-api/hosting/validatorflags-enumeration.md) values, indicating the kind of validation that should be performed.  
+ [in] A combination of [ValidatorFlags](validatorflags-enumeration.md) values, indicating the kind of validation that should be performed.  
   
  `ulMaxError`  
  [in] The maximum number of errors to allow before exiting the validation.  
@@ -71,7 +71,7 @@ HRESULT Validate (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   
@@ -81,4 +81,4 @@ HRESULT Validate (
   
 ## See also
 
-- [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)
+- [ICLRValidator Interface](iclrvalidator-interface.md)

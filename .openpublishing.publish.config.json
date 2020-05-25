@@ -71,16 +71,13 @@
       "include_in_build": true
     },
     {
-      "path_to_root": "samples",
-      "url": "https://github.com/dotnet/samples",
-      "branch": "master",
-      "branch_mapping": {
-        "live": "live"
-      }
-    },
-    {
       "path_to_root": "machinelearning-samples",
       "url": "https://github.com/dotnet/machinelearning-samples",
+      "branch": "master"
+    },
+    {
+      "path_to_root": "dotnet-samples",
+      "url": "https://github.com/dotnet/samples",
       "branch": "master"
     }
   ],

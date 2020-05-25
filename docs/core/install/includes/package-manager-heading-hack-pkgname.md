@@ -26,7 +26,7 @@ The version of the SDK or runtime to install. This article will always give the 
 
 - Install the ASP.NET Core 3.1 runtime: `aspnetcore-runtime-3.1`
 - Install the .NET Core 2.1 runtime: `dotnet-runtime-2.1`
-- Install the .NET Core 3.0 SDK: `dotnet-sdk-3.0`
+- Install the .NET Core 3.1 SDK: `dotnet-sdk-3.1`
 
 ### Package missing
 

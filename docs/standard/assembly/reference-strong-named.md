@@ -1,5 +1,6 @@
 ---
 title: "How to: Reference a strong-named assembly"
+description: This article shows you how to reference types or resources in a strong-named .NET assembly, either at compile time or runtime.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, compile-time references"
@@ -43,7 +44,7 @@ When you make a run-time reference to a strong-named assembly, for example by us
 For example:  
 
 ```console
-myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33   
+myDll, Version=1.1.0.0, Culture=en, PublicKeyToken=03689116d3a4ae33
 ```  
 
 In this example, `PublicKeyToken` is the hexadecimal form of the public key token. If there is no culture value, use `Culture=neutral`.  

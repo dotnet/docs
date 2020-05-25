@@ -21,7 +21,7 @@ Adds a listener to the **Listeners** collection.
 ## Syntax  
   
 ```xml  
-<add name="name"   
+<add name="name"
      type="trace listener class name, Version, Culture, PublicKeyToken"  
      initializeData="data"/>  
 ```  

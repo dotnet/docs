@@ -23,7 +23,7 @@ Returns the source server data for the module. The caller must free resources by
   
 ```cpp  
 HRESULT GetSourceServerData(  
-    [out] ULONG* pDataByteCount,   
+    [out] ULONG* pDataByteCount,
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  
 ```  
   
@@ -42,4 +42,4 @@ HRESULT GetSourceServerData(
   
 ## See also
 
-- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)
+- [ISymUnmanagedSourceServerModule Interface](isymunmanagedsourceservermodule-interface.md)

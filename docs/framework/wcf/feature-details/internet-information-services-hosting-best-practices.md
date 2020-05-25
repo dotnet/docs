@@ -45,13 +45,13 @@ This topic outlines some best practices for hosting Windows Communication Founda
   
 ```xml  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />      
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />
   </system.serviceModel>  
   <system.webServer>  
     <modules>  
       <remove name="ServiceModel"/>  
-      <add name="ServiceModel"   
-           preCondition="integratedMode,runtimeVersionv2.0"   
+      <add name="ServiceModel"
+           preCondition="integratedMode,runtimeVersionv2.0"
            type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
     </modules>  
     </system.webServer>  
@@ -61,17 +61,17 @@ This topic outlines some best practices for hosting Windows Communication Founda
   
 ```xml  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />
   </system.serviceModel>  
   <system.webServer>  
     <handlers>  
           <clear/>  
-          <add name="TestAsyncHttpHandler"   
-               path="*.svc"   
-               verb="*"   
-               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"           
+          <add name="TestAsyncHttpHandler"
+               path="*.svc"
+               verb="*"
+               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                />  
-    </handlers>      
+    </handlers>
   </system.webServer>  
 ```  
   

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Built-in numeric conversions (C# reference)
 
-C# provides a set of [integral](integral-numeric-types.md) and [floating-point](floating-point-numeric-types.md) numeric types. There exists a conversion between any two numeric types, either implicit or explicit. You must use the [cast operator `()`](../operators/type-testing-and-cast.md#cast-operator-) to invoke an explicit conversion.
+C# provides a set of [integral](integral-numeric-types.md) and [floating-point](floating-point-numeric-types.md) numeric types. There exists a conversion between any two numeric types, either implicit or explicit. You must use a [cast expression](../operators/type-testing-and-cast.md#cast-expression) to perform an explicit conversion.
 
 ## Implicit numeric conversions
 

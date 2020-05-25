@@ -7,7 +7,7 @@ ms.date: 02/10/2020
 
 The following breaking changes are documented on this page:
 
-- [Resource manifest file name change](#resource-manifest-file-names)
+- [Resource manifest file name change](#resource-manifest-file-name-change)
 
 ## .NET Core 3.0
 

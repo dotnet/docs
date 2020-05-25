@@ -118,4 +118,4 @@ In particular, one iteration of a parallel loop should never wait on another ite
 
 ## See also
 
-- [Parallel LINQ (PLINQ)](parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow Foundation 4 Performance"
+description: This article explains performance characteristics of the major revision of Windows Workflow Foundation, which is part of .NET Framework 4.
 ms.date: "03/30/2017"
 ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 ---
@@ -434,7 +435,7 @@ public class Workflow1 : Activity
  ![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Results
- 
+
 The following table shows the results of running a workflow containing five activities in a sequence in various configurations.
 
 |Test|Throughput (workflows/sec)|

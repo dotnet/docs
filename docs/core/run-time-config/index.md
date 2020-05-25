@@ -12,15 +12,18 @@ ms.date: 01/21/2020
 - Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
 
 > [!NOTE]
-> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information about submitting pull requests for the dotnet/docs repository, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
+> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information about submitting pull requests for the dotnet/docs repository, see the [contributor's guide](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute).
 
-.NET Core provides the following mechanisms for configuring run-time application behavior:
+.NET Core provides the following mechanisms for configuring application behavior at run time:
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
 - [MSBuild properties](#msbuild-properties)
 
 - [Environment variables](#environment-variables)
+
+> [!TIP]
+> Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuring a run-time option in the *runtimeconfig.json* or project file applies the setting to that application only.
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
@@ -100,11 +103,11 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 </Project>
 ```
 
-MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
+MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md). They are also listed in the [Run-time configuration](../project-sdk/msbuild-props.md#run-time-configuration-properties) section of the MSBuild properties reference for SDK-style projects.
 
 ## Environment variables
 
-Environment variables can be used to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+Environment variables can be used to supply some run-time configuration information. Configuring a run-time option by using an environment variable applies the setting to all .NET Core apps. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

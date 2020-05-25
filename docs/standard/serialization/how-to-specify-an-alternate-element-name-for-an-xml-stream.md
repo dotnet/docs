@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify an Alternate Element Name for an XML Stream"
+description: Learn how to create an XML stream with an alternate element name, for instance, for XML Web services that require the same information with slight differences.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -38,7 +39,7 @@ Using the <xref:System.Xml.Serialization.XmlSerializer>, you can generate more t
 ## Example  
   
 ```vb  
-Public Class SerializeOverride()  
+Public Function SerializeOverride()  
     ' Creates an XmlElementAttribute with the alternate name.  
     Dim myElementAttribute As XmlElementAttribute = _  
     New XmlElementAttribute()  
@@ -58,7 +59,7 @@ End Class
 ```  
   
 ```csharp  
-public class SerializeOverride()  
+public void SerializeOverride()  
 {  
     // Creates an XmlElementAttribute with the alternate name.  
     XmlElementAttribute myElementAttribute = new XmlElementAttribute();  
@@ -67,7 +68,7 @@ public class SerializeOverride()
     myAttributes.XmlElements.Add(myElementAttribute);  
     XmlAttributeOverrides myOverrides = new XmlAttributeOverrides();  
     myOverrides.Add(typeof(Book), "ISBN", myAttributes);  
-    XmlSerializer mySerializer =   
+    XmlSerializer mySerializer =
     new XmlSerializer(typeof(Book), myOverrides)  
     Book b = new Book();  
     b.ISBN = "123456789"  

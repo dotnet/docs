@@ -22,8 +22,8 @@ Removes an authentication module from the application.
 ## Syntax  
   
 ```xml  
-<remove   
-   type="authentication module name"   
+<remove
+   type="authentication module name"
 />  
 ```  
   

@@ -1,5 +1,6 @@
 ---
 title: "How to: View assembly contents"
+description: You can use the IL Disassembler to view an assembly's attributes and references to other modules and assemblies.
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assembly manifest, viewing information"
@@ -112,7 +113,7 @@ The following table describes each directive in the assembly manifest of the *He
 
 An assembly manifest can contain a number of different directives, depending on the contents of the assembly. For an extensive list of the directives in the assembly manifest, see the Ecma documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set":
 
-- [ECMA C# and Common Language Infrastructure standards](/dotnet/standard/components#applicable-standards)
+- [ECMA C# and Common Language Infrastructure standards](../components.md#applicable-standards)
 - [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)
 
 ## See also

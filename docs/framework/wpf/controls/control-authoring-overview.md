@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "authoring overview for controls [WPF]"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 ---
-# Control Authoring Overview
+# Control authoring overview
 
 The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. This topic also demonstrates how to create a new control.
 
@@ -32,7 +32,7 @@ Historically, if you wanted to get a customized experience from an existing cont
 
 - **Triggers.** A <xref:System.Windows.Trigger> allows you to dynamically change the appearance and behavior of a control without creating a new control. For example, suppose you have multiple <xref:System.Windows.Controls.ListBox> controls in your application and want the items in each <xref:System.Windows.Controls.ListBox> to be bold and red when they are selected. Your first instinct might be to create a class that inherits from <xref:System.Windows.Controls.ListBox> and override the <xref:System.Windows.Controls.Primitives.Selector.OnSelectionChanged%2A> method to change the appearance of the selected item, but a better approach is to add a trigger to a style of a <xref:System.Windows.Controls.ListBoxItem> that changes the appearance of the selected item. A trigger enables you to change property values or take actions based on the value of a property. An <xref:System.Windows.EventTrigger> enables you to take actions when an event occurs.
 
-For more information about styles, templates, and triggers, see [Styling and Templating](styling-and-templating.md).
+For more information about styles, templates, and triggers, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 In general, if your control mirrors the functionality of an existing control, but you want the control to look different, you should first consider whether you can use any of the methods discussed in this section to change the existing control's appearance.
 
@@ -221,7 +221,7 @@ When your control is in an assembly that is separate from the application, you m
 
 #### Defining Resources at the Element Level
 
-You can define shared resources at the element level by creating a custom resource dictionary and merging it with your control’s resource dictionary.  When you use this method, you can name your resource file anything you want, and it can be in the same folder as your controls. Resources at the element level can also use simple strings as keys. The following example creates a <xref:System.Windows.Media.LinearGradientBrush> resource file named Dictionary1.xaml.
+You can define shared resources at the element level by creating a custom resource dictionary and merging it with your control's resource dictionary.  When you use this method, you can name your resource file anything you want, and it can be in the same folder as your controls. Resources at the element level can also use simple strings as keys. The following example creates a <xref:System.Windows.Media.LinearGradientBrush> resource file named Dictionary1.xaml.
 
 [!code-xaml[SharedResources#1](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]
 
@@ -258,7 +258,7 @@ Resources that are specific to a theme are kept in a resource dictionary with a 
 
 You do not need to define a resource for every theme. If a resource is not defined for a specific theme, then the control checks `Classic.xaml` for the resource. If the resource is not defined in the file that corresponds to the current theme or in `Classic.xaml`, the control uses the generic resource, which is in a resource dictionary file named `generic.xaml`.  The `generic.xaml` file is located in the same folder as the theme-specific resource dictionary files. Although `generic.xaml` does not correspond to a specific Windows theme, it is still a theme-level dictionary.
 
-The [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml. 
+The [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml.
 
 When you put a <xref:System.Windows.Controls.ControlTemplate> in any of the theme-specific resource dictionary files, you must create a static constructor for your control and call the <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> method on the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>, as shown in the following example.
 

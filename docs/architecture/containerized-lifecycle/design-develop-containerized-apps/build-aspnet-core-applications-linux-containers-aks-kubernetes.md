@@ -45,7 +45,7 @@ You can add Docker support when creating the project or afterwards, so you can "
 
 **Figure 4-38**. Adding Docker support to existing project
 
-To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**, because AKS doesn’t support Windows Containers (as of late 2018).
+To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**, because AKS doesn't support Windows Containers (as of late 2018).
 
 ![Option dialog to select Target OS for Dockerfile.](media/select-linux-docker-support.png)
 
@@ -53,7 +53,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 With these simple steps, you have your ASP.NET Core 2.2 application running on a Linux container.
 
-As you can see, the integration between Visual Studio 2017 and Docker is totally oriented to the developer’s productivity.
+As you can see, the integration between Visual Studio 2017 and Docker is totally oriented to the developer's productivity.
 
 Now you can run your application with the **F5** key or by using the **Play** button.
 
@@ -69,7 +69,7 @@ docker images
 
 ## Register the Solution in the Azure Container Registry
 
-Upload the image to any Docker registry, like [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/) or Docker Hub, so the images can be deployed to the AKS cluster from that registry. In this case, we’re uploading the image to Azure Container Registry.
+Upload the image to any Docker registry, like [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/) or Docker Hub, so the images can be deployed to the AKS cluster from that registry. In this case, we're uploading the image to Azure Container Registry.
 
 ### Create the image in Release mode
 

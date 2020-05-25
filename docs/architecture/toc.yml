@@ -1,24 +1,26 @@
-- name: .NET Application Architecture Guide
+- name: .NET app architecture guide
   href: index.yml
 - name: E-books
   expanded: true
   items:
     - name: Architect modern web applications with ASP.NET Core and Microsoft Azure
       href: modern-web-apps-azure/
-    - name: ASP.NET Core gRPC for WCF Developers
+    - name: ASP.NET Core gRPC for WCF developers
       href: grpc-for-wcf-developers/
     - name: Modernize existing .NET applications with Azure cloud and Windows Containers
       href: modernize-with-azure-containers/
-    - name: Containerized Docker application lifecycle with the Microsoft platform and tools
+    - name: Containerized Docker application lifecycle with Microsoft platform and tools
       href: containerized-lifecycle/
-    - name: ".NET Microservices: architecture for containerized .NET applications"
+    - name: ".NET Microservices: Architecture for containerized .NET applications"
       href: microservices/
     - name: "Serverless apps: Architecture, patterns, and Azure implementation"
       href: serverless/
+    - name: "Architecting cloud-native .NET apps for Azure"
+      href: cloud-native/
+    - name: "Modernizing desktop apps on Windows 10 with .NET Core 3.1"
+      href: modernize-desktop/
 - name: Preview e-books
   expanded: true
   items:
-    - name: "Architecting cloud-native .NET apps for Azure"
-      href: cloud-native/
-    - name: Blazor for ASP.NET Web Forms Developers
+    - name: Blazor for ASP.NET Web Forms developers
       href: blazor-for-web-forms-developers/

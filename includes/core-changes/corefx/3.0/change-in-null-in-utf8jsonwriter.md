@@ -62,7 +62,7 @@ When writing property names and values with the <xref:System.Text.Json.Utf8JsonW
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 
@@ -90,7 +90,7 @@ CoreFx
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Text.Json.Utf8JsonWriter.WriteBase64String(System.String,System.ReadOnlySpan{System.Byte})`
 - `M:System.Text.Json.Utf8JsonWriter.WriteBoolean(System.String,System.Boolean)`

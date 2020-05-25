@@ -7,7 +7,8 @@ helpviewer_keywords:
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
 ---
 # How to: Configure a Custom WS-Metadata Exchange Binding
-This topic will explain how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This topic will show you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../samples/getting-started-sample.md).  
+
+This article explains how to configure a custom WS-Metadata exchange binding. Windows Communication Foundation (WCF) includes four system-defined metadata bindings, but you can publish metadata using any binding you want. This article shows you how to publish metadata using the `wsHttpBinding`. This binding gives you the option of exposing metadata in a secure way. The code in this article is based on the [Getting Started](../samples/getting-started-sample.md).  
   
 ### Using a configuration file  
   
@@ -26,8 +27,8 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
 2. Add a `behaviorConfiguration` attribute to the service tag that references this new behavior:  
   
     ```xml  
-    <service        name="Microsoft.ServiceModel.Samples.CalculatorService"  
-    behaviorConfiguration="CalculatorServiceBehavior">   
+    <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
+    behaviorConfiguration="CalculatorServiceBehavior" />
     ```  
   
 3. Add a metadata endpoint specifying mex as the address, `wsHttpBinding` as the binding, and <xref:System.ServiceModel.Description.IMetadataExchange> as the contract:  
@@ -38,7 +39,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
               contract="IMetadataExchange" />  
     ```  
   
-4. To verify the metadata exchange endpoint is working correctly add an endpoint tag in the client configuration file:  
+4. To verify the metadata exchange endpoint is working correctly, add an endpoint tag in the client configuration file:  
   
     ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  

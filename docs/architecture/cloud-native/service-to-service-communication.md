@@ -2,12 +2,10 @@
 title: Service-to-service communication
 description: Learn how back-end cloud-native microservices communicate with other back-end microservices.
 author: robvet
-ms.date: 09/09/2019
+ms.date: 05/13/2020
 ---
 
 # Service-to-service communication
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Moving from the front-end client, we now address back-end microservices communicate with each other.
 
@@ -121,7 +119,7 @@ For more complex messaging requirements, consider Azure Service Bus queues.
 
 Sitting atop a robust message infrastructure, [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) supports a *brokered messaging model*. Messages are reliably stored in a broker (the queue) until received by the consumer. The queue guarantees First-In/First-Out (FIFO) message delivery, respecting the order in which messages were added to the queue.
 
-The size of a message can be much larger, up to 256 KB. Messages are persisted in the queue for an unlimited period of time. Service Bus supports not only HTTP-based calls, but also provides full support for the [AMPQ protocol](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-amqp-overview). AMPQ is an open-standard across vendors that supports a binary protocol and higher degrees of reliability.
+The size of a message can be much larger, up to 256 KB. Messages are persisted in the queue for an unlimited period of time. Service Bus supports not only HTTP-based calls, but also provides full support for the [AMQP protocol](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-amqp-overview). AMQP is an open-standard across vendors that supports a binary protocol and higher degrees of reliability.
 
 Service Bus provides a rich set of features, including [transaction support](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions) and a [duplicate detection feature](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection). The queue guarantees "at most once delivery" per message. It automatically discards a message that has already been sent. If a producer is in doubt, it can resend the same message, and Service Bus guarantees that only one copy will be processed. Duplicate detection frees you from  having to build additional infrastructure plumbing.
 
@@ -227,4 +225,4 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](rest-grpc.md)
+>[Next](grpc.md)

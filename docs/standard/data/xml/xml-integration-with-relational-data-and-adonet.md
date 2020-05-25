@@ -21,7 +21,7 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
   
  Because **XmlDataDocument** is inherited from an **XmlDocument**, it provides an implementation of the W3C DOM. The fact that the **XmlDataDocument** is associated with, and stores a subset of its data within, a **DataSet** does not restrict or alter its use as an **XmlDocument** in any way. Code written to consume an **XmlDocument** works unaltered against an **XmlDataDocument**. The **DataSet** provides the relational view of the same data by defining tables, columns, relations, and constraints, and is a stand-alone, in-memory user data store.  
   
- The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**: 
+ The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**:
   
  ![Diagram that shows different associations with the XML DataSet.](./media/xml-integration-with-relational-data-and-adonet/xml-integration-relational-data-adodotnet.gif)  
   

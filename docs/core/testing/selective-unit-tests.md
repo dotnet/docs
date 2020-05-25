@@ -1,20 +1,34 @@
 ---
-title: Running selective unit tests
+title: Run selective unit tests
 description: How to use a filter expression to run selective unit tests with the dotnet test command in .NET Core.
 author: smadala
-ms.date: 03/22/2017
+ms.date: 05/18/2020
+zone_pivot_groups: unit-testing-framework-set-one
 ---
 
-# Running selective unit tests
+# Run selective unit tests
 
-With the `dotnet test` command in .NET Core, you can use a filter expression to run selective tests. This article demonstrates how to filter which test are run. The following examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter` with `--testcasefilter:`.
+With the [`dotnet test`](../tools/dotnet-test.md) command in .NET Core, you can use a filter expression to run selective tests. This article demonstrates how to filter which tests are run. The following examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter` with `--testcasefilter:`.
 
-> [!NOTE]
-> Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
-> skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
-> Note the backslash that precedes the exclamation mark.
+## Character escaping
 
-## MSTest
+Using filters that include exclamation mark `!` on `*nix` requires escaping since `!` is reserved. For example, this filter
+skips all tests if the namespace contains IntegrationTests:
+
+```dotnetcli
+dotnet test --filter FullyQualifiedName\!~IntegrationTests
+```
+
+> [!IMPORTANT]
+> The backslash precedes the exclamation mark to indicate it is an escaped character `\!`.
+
+For `FullyQualifiedName` values that include a comma for generic type parameters, escape the comma with `%2C`. For example:
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName=MyNamespace.MyTestsClass<ParameterType1%2CParameterType2>.MyTestMethod"
+```
+
+:::zone pivot="mstest"
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -24,15 +38,12 @@ namespace MSTestNamespace
     [TestClass]
     public class UnitTest1
     {
-        [TestCategory("CategoryA")]
-        [Priority(1)]
-        [TestMethod]
+        [TestMethod, Priority(1), TestCategory("CategoryA")]
         public void TestMethod1()
         {
         }
 
-        [Priority(2)]
-        [TestMethod]
+        [TestMethod, Priority(2)]
         public void TestMethod2()
         {
         }
@@ -41,23 +52,36 @@ namespace MSTestNamespace
 ```
 
 | Expression | Result |
-| ---------- | ------ |
-| `dotnet test --filter Method` | Runs tests whose `FullyQualifiedName` contains `Method`. Available in `vstest 15.1+`. |
+|--|--|
+| `dotnet test --filter Method` | Runs tests whose <xref:System.Reflection.Module.FullyQualifiedName> contains `Method`. Available in `vstest 15.1+`. |
 | `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
-| `dotnet test --filter ClassName=MSTestNamespace.UnitTest1` | Runs tests which are in class `MSTestNamespace.UnitTest1`.<br>**Note:** The `ClassName` value should have a namespace, so `ClassName=UnitTest1` won't work. |
+| `dotnet test --filter ClassName=MSTestNamespace.UnitTest1` | Runs tests that are in class `MSTestNamespace.UnitTest1`.<br>**Note:** The `ClassName` value should have a namespace, so `ClassName=UnitTest1` won't work. |
 | `dotnet test --filter FullyQualifiedName!=MSTestNamespace.UnitTest1.TestMethod1` | Runs all tests except `MSTestNamespace.UnitTest1.TestMethod1`. |
-| `dotnet test --filter TestCategory=CategoryA` | Runs tests which are annotated with `[TestCategory("CategoryA")]`. |
-| `dotnet test --filter Priority=2` | Runs tests which are annotated with `[Priority(2)]`.<br>
+| `dotnet test --filter TestCategory=CategoryA` | Runs tests that are annotated with `[TestCategory("CategoryA")]`. |
+| `dotnet test --filter Priority=2` | Runs tests that are annotated with `[Priority(2)]`. |
 
-**Using conditional operators | and &amp;**
+Examples using the conditional operators `|` and `&`:
 
-| Expression | Result |
-| ---------- | ------ |
-| <code>dotnet test --filter "FullyQualifiedName~UnitTest1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTest1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"` | Runs tests which have `UnitTest1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| <code>dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `UnitTest1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute> is `"CategoryA"`.
 
-## xUnit
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **and** have a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute> of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"
+```
+
+To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName> containing `UnitTest1` **and** have a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute> of `"CategoryA"` **or** have a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute> with a priority of `1`.
+
+```dotnetcli
+dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
+```
+
+:::zone-end
+:::zone pivot="xunit"
 
 ```csharp
 using Xunit;
@@ -66,15 +90,12 @@ namespace XUnitNamespace
 {
     public class TestClass1
     {
-        [Trait("Category", "CategoryA")]
-        [Trait("Priority", "1")]
-        [Fact]
+        [Fact, Trait("Priority", "1"), Trait("Category", "CategoryA")]
         public void Test1()
         {
         }
 
-        [Trait("Priority", "2")]
-        [Fact]
+        [Fact, Trait("Priority", "2")]
         public void Test2()
         {
         }
@@ -83,27 +104,40 @@ namespace XUnitNamespace
 ```
 
 | Expression | Result |
-| ---------- | ------ |
+|--|--|
 | `dotnet test --filter DisplayName=XUnitNamespace.TestClass1.Test1` | Runs only one test, `XUnitNamespace.TestClass1.Test1`. |
 | `dotnet test --filter FullyQualifiedName!=XUnitNamespace.TestClass1.Test1` | Runs all tests except `XUnitNamespace.TestClass1.Test1`. |
 | `dotnet test --filter DisplayName~TestClass1` | Runs tests whose display name contains `TestClass1`. |
 
-In the code example, the defined traits with keys `Category` and `Priority` can be used for filtering.
+In the code example, the defined traits with keys `"Category"` and `"Priority"` can be used for filtering.
 
 | Expression | Result |
-| ---------- | ------ |
-| `dotnet test --filter XUnit` | Runs tests whose `FullyQualifiedName` contains `XUnit`.  Available in `vstest 15.1+`. |
-| `dotnet test --filter Category=CategoryA` | Runs tests which have `[Trait("Category", "CategoryA")]`. |
+|--|--|
+| `dotnet test --filter XUnit` | Runs tests whose <xref:System.Reflection.Module.FullyQualifiedName> contains `XUnit`.  Available in `vstest 15.1+`. |
+| `dotnet test --filter Category=CategoryA` | Runs tests that have `[Trait("Category", "CategoryA")]`. |
 
-**Using conditional operators | and &amp;**
+Examples using the conditional operators `|` and `&`:
 
-| Expression | Result |
-| ---------- | ------ |
-| <code>dotnet test --filter "FullyQualifiedName~TestClass1&#124;Category=CategoryA"</code> | Runs tests which has `TestClass1` in `FullyQualifiedName` **or** `Category` is `CategoryA`. |
-| `dotnet test --filter "FullyQualifiedName~TestClass1&Category=CategoryA"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **and** `Category` is `CategoryA`. |
-| <code>dotnet test --filter "(FullyQualifiedName~TestClass1&Category=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `TestClass1` **and** `Category` is `CategoryA` **or** `Priority` is 1. |
+To run tests that have `TestClass1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** have a `Trait` with a key of `"Category"` and value of `"CategoryA"`.
 
-## NUnit
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~TestClass1|Category=CategoryA"
+```
+
+To run tests that have `TestClass1` in their <xref:System.Reflection.Module.FullyQualifiedName> **and** have a `Trait` with a key of `"Category"` and value of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~TestClass1&Category=CategoryA"
+```
+
+To run tests that have either <xref:System.Reflection.Module.FullyQualifiedName> containing `TestClass1` **and** have a `Trait` with a key of `"Category"` and value of `"CategoryA"` **or** have a `Trait` with a key of `"Priority"` and value of `1`.
+
+```dotnetcli
+dotnet test --filter "(FullyQualifiedName~TestClass1&Category=CategoryA)|Priority=1"
+```
+
+:::zone-end
+:::zone pivot="nunit"
 
 ```csharp
 using NUnit.Framework;
@@ -112,15 +146,12 @@ namespace NUnitNamespace
 {
     public class UnitTest1
     {
-        [Category("CategoryA")]
-        [Property("Priority", 1)]
-        [Test]
+        [Test, Property("Priority", 1), Category("CategoryA")]
         public void TestMethod1()
         {
         }
 
-        [Property("Priority", 2)]
-        [Test]
+        [Test, Property("Priority", 2)]
         public void TestMethod2()
         {
         }
@@ -129,18 +160,44 @@ namespace NUnitNamespace
 ```
 
 | Expression | Result |
-| ---------- | ------ |
-| `dotnet test --filter Method` | Runs tests whose `FullyQualifiedName` contains `Method`. Available in `vstest 15.1+`. |
+|--|--|
+| `dotnet test --filter Method` | Runs tests whose <xref:System.Reflection.Module.FullyQualifiedName> contains `Method`. Available in `vstest 15.1+`. |
 | `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
-| `dotnet test --filter FullyQualifiedName~NUnitNamespace.UnitTest1` | Runs tests which are in class `NUnitNamespace.UnitTest1`.<br>
+| `dotnet test --filter FullyQualifiedName~NUnitNamespace.UnitTest1` | Runs tests that are in class `NUnitNamespace.UnitTest1`. |
 | `dotnet test --filter FullyQualifiedName!=NUnitNamespace.UnitTest1.TestMethod1` | Runs all tests except `NUnitNamespace.UnitTest1.TestMethod1`. |
-| `dotnet test --filter TestCategory=CategoryA` | Runs tests which are annotated with `[Category("CategoryA")]`. |
-| `dotnet test --filter Priority=2` | Runs tests which are annotated with `[Priority(2)]`.<br>
+| `dotnet test --filter TestCategory=CategoryA` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --filter Priority=2` | Runs tests that are annotated with `[Priority(2)]`. |
 
-**Using conditional operators | and &amp;**
+Examples using the conditional operators `|` and `&`:
 
-| Expression | Result |
-| ---------- | ------ |
-| <code>dotnet test --filter "FullyQualifiedName~UnitTest1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTest1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"` | Runs tests which have `UnitTest1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| <code>dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `UnitTest1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1|TestCategory=CategoryA"
+```
+
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **and** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1&TestCategory=CategoryA"
+```
+
+To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedName> containing `UnitTest1` **and** have a `Category` of `"CategoryA"` **or** have a `Property` with a `"Priority"` of `1`.
+
+```dotnetcli
+dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Priority=1"
+```
+
+For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
+
+:::zone-end
+
+## See also
+
+- [dotnet test](../tools/dotnet-test.md)
+- [dotnet test --filter](../tools/dotnet-test.md#filter-option-details)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Order unit tests](order-unit-tests.md)

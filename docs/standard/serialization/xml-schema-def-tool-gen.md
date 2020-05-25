@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents"
+description: Learn how to use the XML Schema Definition tool to generate an XML schema that describes a class or to generate the class defined by an XML schema.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "generating XML classes using XML Schema Definition tool"
@@ -9,8 +10,11 @@ helpviewer_keywords:
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
 ---
 # How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents
-The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema that describes a class or to generate the class defined by an XML schema. The following procedures show how to perform these operations.  
-  
+The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema that describes a class or to generate the class defined by an XML schema. The following procedures show how to perform these operations.
+
+The XML Schema Definition tool (Xsd.exe) usually can be found in the following path:\
+_C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {version} Tools\\_
+
 ### To generate classes that conform to a specific schema  
   
 1. Open a command prompt.  
@@ -25,7 +29,7 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
-    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="" xmlns:xs="http://www.w3.org/2001/XMLSchema" />  
     ```  
   
 3. Modify the classes with methods, properties, or fields, as necessary. For more information about modifying a class with attributes, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md) and [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  

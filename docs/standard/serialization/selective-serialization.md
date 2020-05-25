@@ -1,5 +1,6 @@
 ---
 title: "Selective serialization"
+description: This article shows you how to mark fields with the NonSerialized attribute, which prevents that field from being serialized.
 ms.date: "08/07/2017"
 dev_langs: 
   - "CSharp"
@@ -13,7 +14,7 @@ A class often contains fields that shouldn't be serialized. For example, assume 
   
 ```csharp  
 [Serializable]  
-public class MyObject   
+public class MyObject
 {  
   public int n1;  
   [NonSerialized] public int n2;  

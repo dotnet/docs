@@ -16,7 +16,7 @@ Familiarize yourself with the concepts used in the .NET Compiler Platform SDK by
 
 The **Syntax Visualizer** enables inspection of the syntax tree for the C# or Visual Basic code file in the current active editor window inside the Visual Studio IDE. The visualizer can be launched by clicking on **View** > **Other Windows** > **Syntax Visualizer**.  You can also use the **Quick Launch** toolbar in the upper right corner. Type "syntax", and the command to open the **Syntax Visualizer** should appear.
 
-This command opens the Syntax Visualizer as a floating tool window. If you don't have a code editor window open, the display is blank, as shown in the following figure. 
+This command opens the Syntax Visualizer as a floating tool window. If you don't have a code editor window open, the display is blank, as shown in the following figure.
 
 ![The Syntax Visualizer tool window](media/syntax-visualizer/syntax-visualizer.png)
 
@@ -43,17 +43,17 @@ Each item in the tree also displays its own **span**. The **span** is the indice
 There are two ways to navigate the tree:
 
 * Expand or click on items in the tree. The visualizer automatically selects the text corresponding to this item’s span in the code editor.
-* Click or select text in the code editor. In the preceding Visual Basic example, if you select the line containing "Module Module1" in the code editor, the visualizer automatically navigates to the corresponding ModuleStatement node in the tree. 
+* Click or select text in the code editor. In the preceding Visual Basic example, if you select the line containing "Module Module1" in the code editor, the visualizer automatically navigates to the corresponding ModuleStatement node in the tree.
 
 The visualizer highlights the item in the tree whose span best matches the span of the text selected in the editor.
 
 The visualizer refreshes the tree to match modifications in the active code file. Add a call to `Console.WriteLine()` inside `Main()`. As you type, the visualizer refreshes the tree.
 
 Pause typing once you have typed `Console.`. The tree has some items colored in pink. At this point, there are errors (also referred to as ‘Diagnostics’) in the typed code. These errors are attached to nodes, tokens, and trivia in the syntax tree. The visualizer shows you which items have errors attached to them highlighting the background in pink. You can inspect the errors on any item colored pink by hovering over the item. The visualizer only displays syntactic errors (those errors related to the syntax of the typed code); it doesn't display any semantic errors.
- 
+
 ## Syntax Graphs
 
-Right click on any item in the tree and click on **View Directed Syntax Graph**. 
+Right click on any item in the tree and click on **View Directed Syntax Graph**.
 
 # [C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ Try the same for the **SubBlock** node corresponding to the `Main()` method in t
 
 ---
 
-The syntax graph viewer has an option to display a legend its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
+The syntax graph viewer has an option to display a legend for its coloring scheme. You can also hover over individual items in the syntax graph with the mouse to view the properties corresponding to that item.
 
 You can view syntax graphs for different items in the tree repeatedly and the graphs will always be displayed in the same window inside Visual Studio. You can dock this window at a convenient location inside Visual Studio so that you don’t have to switch between tabs to view a new syntax graph. The bottom, below code editor windows, is often convenient.
 
@@ -81,7 +81,7 @@ Another option is to put the syntax graph window on a second monitor, in a dual 
 
 ## Inspecting semantics
 
-The Syntax Visualizer enables rudimentary inspection of symbols and semantic information. Type `double x = 1 + 1;` inside Main() in the C# example. Then, select the expression `1 + 1` in the code editor window. The visualizer highlights the **AddExpression** node in the visualizer. Right click on this **AddExpression** and click on **View Symbol (if any)**. Notice that most of the menu items have the "if any" qualifier. The Syntax Visualizer inspects properties of a Node, including properties that may not be present for all nodes. 
+The Syntax Visualizer enables rudimentary inspection of symbols and semantic information. Type `double x = 1 + 1;` inside Main() in the C# example. Then, select the expression `1 + 1` in the code editor window. The visualizer highlights the **AddExpression** node in the visualizer. Right click on this **AddExpression** and click on **View Symbol (if any)**. Notice that most of the menu items have the "if any" qualifier. The Syntax Visualizer inspects properties of a Node, including properties that may not be present for all nodes.
 
 The property grid in the visualizer updates as shown in the following figure: The symbol for the expression is a **SynthesizedIntrinsicOperatorSymbol** with **Kind = Method**.
 
@@ -133,4 +133,4 @@ You can read more about APIs for performing semantic analysis in the [Work with 
 
 ## Closing the syntax visualizer
 
-You can close the visualizer window when you are not using it to examine source code. The syntax visualizer updates its display as you navigate through code, editing and changing source. It can get distracting when you are not using it. 
+You can close the visualizer window when you are not using it to examine source code. The syntax visualizer updates its display as you navigate through code, editing and changing the source. It can get distracting when you are not using it.

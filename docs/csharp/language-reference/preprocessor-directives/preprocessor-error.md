@@ -25,9 +25,9 @@ ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 // preprocessor_error.cs  
 // CS1029 expected  
 #define DEBUG  
-class MainClass   
+class MainClass
 {  
-    static void Main()   
+    static void Main()
     {  
 #if DEBUG  
 #error DEBUG is defined  

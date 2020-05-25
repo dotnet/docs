@@ -54,7 +54,7 @@ The following rules also apply to types supported by the Data Contract Serialize
 
 - Generic types are fully supported by the data contract serializer.
 
-- Nullable types are fully supported by the data contract serializer.
+- Nullable value types are fully supported by the data contract serializer.
 
 - Interface types are treated either as <xref:System.Object> or, in the case of collection interfaces, as collection types.
 

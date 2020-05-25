@@ -1,15 +1,15 @@
 ---
 title: Application publishing
 description: Learn about the ways to publish a .NET Core application. .NET Core can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as runtime-dependent. Each mode affects how a user runs your app.
-ms.date: 01/31/2020
+ms.date: 04/01/2020
 ---
 # .NET Core application publishing overview
 
 Applications you create with .NET Core can be published in two different modes, and the mode affects how a user runs your app.
 
-Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed. 
+Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed.
 
-Publishing your app as *runtime-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
+Publishing your app as *runtime-dependent* (previously known as *framework-dependent*) produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
 
 Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform.
 
@@ -126,7 +126,7 @@ Because your app includes the .NET Core runtime and all of your app dependencies
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - **Harder to update the .NET Core version**\
-.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. You're responsible for supplying an updated version of your application for security patches to the .NET Core Runtime. 
+.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. You're responsible for supplying an updated version of your application for security patches to the .NET Core Runtime.
 
 ### Examples
 

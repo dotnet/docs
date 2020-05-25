@@ -1,5 +1,6 @@
 ---
 title: "Pick Activity"
+description: In Workflow Foundation, the Pick activity simplifies the modeling of a set of event triggers followed by their corresponding handlers.
 ms.date: "03/30/2017"
 ms.assetid: b3e49b7f-0285-4720-8c09-11ae18f0d53e
 ---
@@ -25,11 +26,11 @@ The <xref:System.Activities.Statements.Pick> activity simplifies the modeling of
 Sequence body = new Sequence()  
 {  
     Variables = { name },  
-    Activities =   
+    Activities =
    {  
        new System.Activities.Statements.Pick  
         {  
-           Branches =   
+           Branches =
            {  
                new PickBranch  
                {  
@@ -38,10 +39,10 @@ Sequence body = new Sequence()
                       Result = name,  
                       BookmarkName = "name"  
                    },  
-                   Action = new WriteLine   
-                   {   
-                       Text = ExpressionServices.Convert<string>(ctx => "Hello " +   
-                           name.Get(ctx))   
+                   Action = new WriteLine
+                   {
+                       Text = ExpressionServices.Convert<string>(ctx => "Hello " +
+                           name.Get(ctx))
                    }  
                },  
                new PickBranch  

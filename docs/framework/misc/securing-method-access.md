@@ -45,7 +45,7 @@ End Class
 public class Class1  
 {  
   
-}   
+}
 ```  
   
 ## Excluding Classes and Members from Use by Untrusted Code  
@@ -61,7 +61,7 @@ public class Class1
  For public nonsealed classes:  
   
 ```vb  
-<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name := "FullTrust"), _   
+<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name := "FullTrust"), _
 System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name := "FullTrust")>  _  
 Public Class CanDeriveFromMe  
 End Class  
@@ -108,7 +108,7 @@ public abstract class CannotCreateInstanceOfMe_CanCastToMe {}
  For public virtual functions:  
   
 ```vb  
-Class Base1   
+Class Base1
 <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name:="FullTrust"), System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name:="FullTrust")> _  
     Public Overridable Sub CanOverrideOrCallMe()  
     End Sub 'CanOverrideOrCallMe  
@@ -116,7 +116,7 @@ End Class 'Base1
 ```  
   
 ```csharp  
-class Base1   
+class Base1
 {  
 [System.Security.Permissions.PermissionSetAttribute(  
 System.Security.Permissions.SecurityAction.InheritanceDemand, Name="FullTrust")]  
@@ -160,9 +160,9 @@ End Class 'Derived
   
 ```csharp  
 class Derived : Base1  
-{     
-[System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")]      
-    public override void CanOverrideOrCallMe()   
+{
+[System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")]
+    public override void CanOverrideOrCallMe()
     {  
         base.CanOverrideOrCallMe();  
     }  
@@ -177,15 +177,15 @@ Class Derived
 <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name:="FullTrust")> _  
     Public Overrides Sub CanOverrideOrCallMe()  
         MyBase.CanOverrideOrCallMe()  
-    End Sub 'CanOverrideOrCallMe   
+    End Sub 'CanOverrideOrCallMe
 End Class 'Derived  
 ```  
   
 ```csharp  
 class Derived : Base1  
-{     
-[System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name="FullTrust")]      
-    public override void CanOverrideOrCallMe()   
+{
+[System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name="FullTrust")]
+    public override void CanOverrideOrCallMe()
     {  
         base.CanOverrideOrCallMe();  
     }  
@@ -207,7 +207,7 @@ Class Implemented
 ```  
   
 ```csharp  
-public interface ICanCastToMe   
+public interface ICanCastToMe
 {  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name = "FullTrust")]  
 [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand, Name = "FullTrust")]  

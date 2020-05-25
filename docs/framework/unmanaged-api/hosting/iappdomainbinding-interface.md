@@ -22,10 +22,10 @@ Provides a method that is called by the common language runtime (CLR) to notify 
   
 |Method|Description|  
 |------------|-----------------|  
-|[OnAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iappdomainbinding-onappdomain-method.md)|Called by the common language runtime (CLR) to notify the host that an application domain has been created.|  
+|[OnAppDomain Method](iappdomainbinding-onappdomain-method.md)|Called by the common language runtime (CLR) to notify the host that an application domain has been created.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,4 +35,4 @@ Provides a method that is called by the common language runtime (CLR) to notify 
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

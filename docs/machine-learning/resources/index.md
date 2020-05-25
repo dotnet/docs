@@ -9,7 +9,7 @@ ms.date: 02/25/2020
 The following resources help you to learn more about ML.NET
 
 - [Glossary](glossary.md) of machine learning and ML.NET terminology
-- [Model Builder Azure Training Resources](resouurces/azure-training-concepts-model-builder.md)
+- [Model Builder Azure Training Resources](azure-training-concepts-model-builder.md)
 - [ML.NET CLI telemetry](ml-net-cli-telemetry.md)
 
 ## Next Steps

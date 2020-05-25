@@ -25,10 +25,10 @@ Called by the common language runtime (CLR) data access services to request an o
 HRESULT Request (  
     [in] ULONG32            reqCode,  
     [in] ULONG32            inBufferSize,  
-    [in, size_is(inBufferSize)]   
+    [in, size_is(inBufferSize)]
         BYTE                *inBuffer,  
     [in] ULONG32            outBufferSize,  
-    [out, size_is(outBufferSize)]   
+    [out, size_is(outBufferSize)]
         BYTE                *outBuffer  
 );  
 ```  
@@ -55,7 +55,7 @@ HRESULT Request (
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

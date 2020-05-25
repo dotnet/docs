@@ -24,7 +24,7 @@ Gets the address of the specified function that is exported from the latest inst
   
 ```cpp  
 HRESULT GetRealProcAddress (  
-    [in]  LPCSTR  pwszProcName,   
+    [in]  LPCSTR  pwszProcName,
     [out] VOID  **ppv  
 );  
 ```  
@@ -46,7 +46,7 @@ HRESULT GetRealProcAddress (
 |CLR_E_SHIM_RUNTIMEEXPORT|The function is not exported from the runtime.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -56,4 +56,4 @@ HRESULT GetRealProcAddress (
   
 ## See also
 
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

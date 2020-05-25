@@ -10,8 +10,8 @@ Returns a list of active thread IDs.
   
 ```cpp  
 HRESULT EnumerateThreadIDs(  
-    [in] ULONG32 cThreadIds,   
-    [out] ULONG32 *pcThreadIds,   
+    [in] ULONG32 cThreadIds,
+    [out] ULONG32 *pcThreadIds,
     [out, size_is(cThreadIds), length_is(*pcThreadIds)] ULONG32 pThreadIds[]  
 );  
 ```  
@@ -32,7 +32,7 @@ HRESULT EnumerateThreadIDs(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
   

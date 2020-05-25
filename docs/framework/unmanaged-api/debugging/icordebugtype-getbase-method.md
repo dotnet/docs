@@ -35,7 +35,7 @@ HRESULT GetBase (
  Looking up the base type for a type is useful to implement common debugger functionality, such as printing out all the fields of an object or its parent classes.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

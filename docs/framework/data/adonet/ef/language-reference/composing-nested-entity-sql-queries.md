@@ -10,7 +10,7 @@ ms.assetid: 685d4cd3-2c1f-419f-bb46-c9d97a351eeb
  A nested expression can be placed anywhere a value of the type it returns is accepted. For example:  
   
 ```sql  
--- Returns a hierarchical collection of three elements at top-level.   
+-- Returns a hierarchical collection of three elements at top-level.
 -- x must be passed in the parameter collection.  
 ROW(@x, {@x}, {@x, 4, 5}, {@x, 7, 8, 9})  
   
@@ -24,8 +24,8 @@ ROW(@x, {@x}, {@x, 4, 5}, {@x, 7, 8, 9})
 ```sql  
 -- Returns a collection of rows where each row contains an Address entity.  
 -- and a collection of references to its corresponding SalesOrderHeader entities.  
-SELECT address, (SELECT DEREF(soh)   
-                    FROM NAVIGATE(address, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS soh)   
+SELECT address, (SELECT DEREF(soh)
+                    FROM NAVIGATE(address, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS soh)
                     AS salesOrderHeader FROM AdventureWorksEntities.Address AS address  
 ```  
   

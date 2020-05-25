@@ -23,20 +23,20 @@ The **behavior** element contains a collection of settings for the behavior of a
         <bufferReceive maxPendingMessagesPerChannel="Integer" />
         <etwTracking profileName="String" />
         <sendMessageChannelCache allowUnsafeCaching="Boolean">
-          <channelSettings idleTimeout="TimeSpan" 
-                           leaseTimeout="TimeSpan" 
+          <channelSettings idleTimeout="TimeSpan"
+                           leaseTimeout="TimeSpan"
                            maxItemsInCache="Integer" />
-          <factorySettings idleTimeout="TimeSpan" 
-                           leaseTimeout="TimeSpan" 
+          <factorySettings idleTimeout="TimeSpan"
+                           leaseTimeout="TimeSpan"
                            maxItemsInCache="Integer" />
         </sendMessageChannelCache>
-        <sqlWorkflowInstanceStore connectionStringName="String" 
-                                  hostLockRenewalPeriod="TimeSpan" 
-                                  instanceCompletionAction="DeleteNothing/DeleteAll" 
-                                  instanceEncodingAction="None/GZip" 
-                                  instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry" 
+        <sqlWorkflowInstanceStore connectionStringName="String"
+                                  hostLockRenewalPeriod="TimeSpan"
+                                  instanceCompletionAction="DeleteNothing/DeleteAll"
+                                  instanceEncodingAction="None/GZip"
+                                  instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"
                                   runnableInstancesDetectionPeriod="TimeSpan" />
-        <workflowIdle timeToPersist="TimeSpan" 
+        <workflowIdle timeToPersist="TimeSpan"
                       timeToUnload="TimeSpan" />
         <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />
       </behavior>

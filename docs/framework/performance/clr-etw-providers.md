@@ -53,7 +53,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 1. Turn on ETW logging by using the CLR runtime provider:  
   
     ```console
-    xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:0x5 -f clr1.etl      
+    xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:0x5 -f clr1.etl
     ```  
   
      The log will be saved to the clr1.etl file.  
@@ -61,7 +61,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 2. To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
   
     ```console
-    xperf -start clrRundown -on A669021C-C450-4609-A035-5AF59AF4DF18:0xB8:0x5 -f clr2.etl      
+    xperf -start clrRundown -on A669021C-C450-4609-A035-5AF59AF4DF18:0xB8:0x5 -f clr2.etl
     ```  
   
      This enables the collection of `DCEnd` events to start a rundown session. You may need to wait 30 to 60 seconds for all events to be collected. The log will be saved to the clr1.et2 file.  
@@ -69,7 +69,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
 3. Turn off all ETW profiling:  
   
     ```console
-    xperf -stop clrRundown   
+    xperf -stop clrRundown
     xperf -stop clr  
     ```  
   

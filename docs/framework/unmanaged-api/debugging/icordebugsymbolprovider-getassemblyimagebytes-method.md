@@ -10,8 +10,8 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
   
 ```cpp  
 HRESULT GetAssemblyImageBytes(  
-   [in] CORDB_ADDRESS rva,   
-   [in] ULONG32 length,   
+   [in] CORDB_ADDRESS rva,
+   [in] ULONG32 length,
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
 ```  
@@ -32,7 +32,7 @@ HRESULT GetAssemblyImageBytes(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

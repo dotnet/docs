@@ -53,7 +53,7 @@ For more information, see [The new modifier](~/_csharplang/spec/classes.md#the-n
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)

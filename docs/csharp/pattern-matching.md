@@ -20,7 +20,7 @@ a value and extracting that information.
 
 In this article, we'll look at the new syntax to show you how it enables
 readable, concise code. Pattern matching enables idioms where data and
-the code are separated, unlike object-oriented designs where data 
+the code are separated, unlike object-oriented designs where data
 and the methods that manipulate them are tightly coupled.
 
 To illustrate these new idioms, let's work with structures that represent
@@ -49,7 +49,7 @@ Rather than starting with an abstract shape definition and adding different
 specific shape classes, let's start instead with simple data only definitions
 for each of the geometric shapes:
 
-[!code-csharp[ShapeDefinitions](../../samples/csharp/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
+[!code-csharp[ShapeDefinitions](../../samples/snippets/csharp/PatternMatching/Shapes.cs#01_ShapeDefinitions "Shape definitions")]
 
 From these structures, let's write a method that computes the area
 of some shape.
@@ -59,7 +59,7 @@ of some shape.
 Before C# 7.0, you'd need to test each type in a series of `if` and `is`
 statements:
 
-[!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
+[!code-csharp[ClassicIsExpression](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
 
 That code above is a classic expression of the *type pattern*: You're testing a variable
 to determine its type and taking a different action based on that type.
@@ -67,7 +67,7 @@ to determine its type and taking a different action based on that type.
 This code becomes simpler using extensions to the `is` expression to assign
 a variable if the test succeeds:
 
-[!code-csharp[IsPatternExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
+[!code-csharp[IsPatternExpression](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#03_IsPatternExpression "is pattern expression")]
 
 In this updated version, the `is` expression both tests the variable and assigns
 it to a new variable of the proper type. Also, notice that this version includes
@@ -82,11 +82,11 @@ variable in another location, your code generates compiler errors.
 
 Let's examine both of those rules in detail, beginning with scope. The variable
 `c` is in scope only in the `else` branch of the first `if` statement. The variable
-`s` is in scope in the method `ComputeAreaModernIs`. That's because each 
+`s` is in scope in the method `ComputeAreaModernIs`. That's because each
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
 itself doesn't. That means variables declared in the `if` statement are in the
 same scope as the `if` statement (the method in this case.) This behavior isn't
-specific to pattern matching, but is the defined behavior for variable scopes 
+specific to pattern matching, but is the defined behavior for variable scopes
 and `if` and `else` statements.
 
 The variables `c` and `s` are assigned when the respective `if` statements are true
@@ -111,20 +111,20 @@ of conditions you're testing grows, you'll find that using the `is` pattern
 matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
 to testing if the input matches a single type. In this case, you'll find that the `switch` pattern
-matching expressions becomes a better choice. 
+matching expressions becomes a better choice.
 
 The traditional `switch`
 statement was a pattern expression: it supported the constant pattern.
 You could compare a variable to any constant used in a `case` statement:
 
-[!code-csharp[ClassicSwitch](../../samples/csharp/PatternMatching/GeometricUtilities.cs#04_ClassicSwitch "Classic switch statement")]
+[!code-csharp[ClassicSwitch](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#04_ClassicSwitch "Classic switch statement")]
 
 The only pattern supported by the `switch` statement was the constant
 pattern. It was further limited to numeric types and the `string` type.
 Those restrictions have been removed, and you can now write a `switch`
 statement using the type pattern:
 
-[!code-csharp[Switch Type Pattern](../../samples/csharp/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
+[!code-csharp[Switch Type Pattern](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#05_SwitchTypePattern "Compute with `switch` expression")]
 
 The pattern matching `switch` statement uses familiar syntax to developers
 who have used the traditional C-style `switch` statement. Each `case` is evaluated
@@ -144,8 +144,8 @@ are no longer limited to constant values. Removing that limitation means
 that reordering `switch` sections may change a program's behavior.
 
 When limited to constant values, no more than one `case`
-label could match the value of the `switch` expression. Combine that with the 
-rule that every `switch` section must not fall through to the next section, and 
+label could match the value of the `switch` expression. Combine that with the
+rule that every `switch` section must not fall through to the next section, and
 it followed that the
 `switch` sections could be rearranged in any order without affecting behavior.
 Now, with more generalized `switch` expressions, the order of each section
@@ -165,7 +165,7 @@ a `when` clause on the `case` label. A square with a side length of 0, or
 a circle with a radius of 0 has a 0 area. You specify that condition
 using a `when` clause on the `case` label:  
 
-[!code-csharp[ComputeDegenerateShapes](../../samples/csharp/PatternMatching/GeometricUtilities.cs#07_ComputeDegenerateShapes "Compute shapes with 0 area")]
+[!code-csharp[ComputeDegenerateShapes](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#07_ComputeDegenerateShapes "Compute shapes with 0 area")]
 
 This change demonstrates a few important points about the new syntax. First,
 multiple `case` labels can be applied to one `switch` section. The statement
@@ -187,18 +187,18 @@ variable in the `when` clause.
 Having added those shapes with 0 area, let's add a couple more shape types:
 a rectangle and a triangle:
 
-[!code-csharp[AddRectangleAndTriangle](../../samples/csharp/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
+[!code-csharp[AddRectangleAndTriangle](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
 
  This set of changes adds `case` labels for the degenerate case, and labels
- and blocks for each of the new shapes. 
+ and blocks for each of the new shapes.
 
 Finally, you can add a `null` case to ensure the argument isn't `null`:
 
-[!code-csharp[NullCase](../../samples/csharp/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
+[!code-csharp[NullCase](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
 
 The special behavior for the `null` pattern is interesting because the constant
 `null` in the pattern doesn't have a type but can be converted to any reference
-type or nullable type. Rather than convert a `null` to any type, the language
+type or nullable value type. Rather than convert a `null` to any type, the language
 defines that a `null` value won't match any type pattern, regardless of the
 compile-time type of the variable. This behavior makes the new `switch` based
 type pattern consistent with the `is` statement: `is` statements always return `false` when
@@ -235,7 +235,7 @@ The third rule introduces uses where a `var` case may be useful. Imagine
 that you're doing a pattern match where the input is a string and you're
 searching for known command values. You might write something like:
 
-[!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
+[!code-csharp[VarCaseExpression](../../samples/snippets/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
 
 The `var` case matches `null`, the empty string, or any string that contains
 only white space. Notice that the preceding code uses the `?.` operator to

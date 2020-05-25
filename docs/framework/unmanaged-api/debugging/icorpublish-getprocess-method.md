@@ -23,7 +23,7 @@ Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that repr
   
 ```cpp  
 HRESULT GetProcess(  
-    [in] unsigned              pid,   
+    [in] unsigned              pid,
     [out] ICorPublishProcess   **ppProcess  
 );  
 ```  
@@ -39,7 +39,7 @@ HRESULT GetProcess(
  `GetProcess` fails if the process doesn't exist, or isn't a managed process that can be debugged by the current user.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

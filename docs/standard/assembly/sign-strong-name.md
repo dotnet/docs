@@ -1,5 +1,6 @@
 ---
 title: "How to: Sign an assembly with a strong name"
+description: This article shows you how to sign a .NET assembly with a strong name by using the Signing tab, the Assembly Linker, assembly attributes, or compiler options.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
@@ -67,9 +68,9 @@ For more information about this tool, see [Assembly Linker](../../framework/tool
 ## Sign an assembly with a strong name by using attributes  
   
 1. Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
-   
+
 2. Compile the source code file normally.  
-   
+
    > [!NOTE]
    > The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
 

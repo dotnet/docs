@@ -18,7 +18,7 @@ The "Potential impact to existing code" section of the [Floating-point parsing a
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 
@@ -31,7 +31,7 @@ CoreFx
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Double.ToString`
 - `Overload:System.Single.ToString`

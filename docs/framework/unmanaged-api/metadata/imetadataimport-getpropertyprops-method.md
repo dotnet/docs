@@ -24,21 +24,21 @@ Gets the metadata for the property represented by the specified token.
 ```cpp  
 HRESULT GetPropertyProps (  
    [in]  mdProperty        prop,  
-   [out] mdTypeDef         *pClass,   
-   [out] LPCWSTR           szProperty,   
-   [in]  ULONG             cchProperty,   
-   [out] ULONG             *pchProperty,   
-   [out] DWORD             *pdwPropFlags,   
-   [out] PCCOR_SIGNATURE   *ppvSig,   
-   [out] ULONG             *pbSig,   
-   [out] DWORD             *pdwCPlusTypeFlag,   
+   [out] mdTypeDef         *pClass,
+   [out] LPCWSTR           szProperty,
+   [in]  ULONG             cchProperty,
+   [out] ULONG             *pchProperty,
+   [out] DWORD             *pdwPropFlags,
+   [out] PCCOR_SIGNATURE   *ppvSig,
+   [out] ULONG             *pbSig,
+   [out] DWORD             *pdwCPlusTypeFlag,
    [out] UVCP_CONSTANT     *ppDefaultValue,  
    [out] ULONG             *pcchDefaultValue,  
-   [out] mdMethodDef       *pmdSetter,   
-   [out] mdMethodDef       *pmdGetter,   
+   [out] mdMethodDef       *pmdSetter,
+   [out] mdMethodDef       *pmdGetter,
    [out] mdMethodDef       rmdOtherMethod[],  
-   [in]  ULONG             cMax,   
-   [out] ULONG             *pcOtherMethod   
+   [in]  ULONG             cMax,
+   [out] ULONG             *pcOtherMethod
 );  
 ```  
   

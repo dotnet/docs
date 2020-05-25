@@ -1,12 +1,10 @@
 ---
 title: Azure Monitor
 description: Using Azure Monitor to gain visibility into your system is running.
-ms.date: 02/05/2020
+ms.date: 05/13/2020
 ---
 
 # Azure Monitor
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems, and optimization of your application.
 
@@ -73,7 +71,6 @@ Azure Monitor automatically leverages machine learning to understand the normal 
 ## References
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)
-- [Smart Alert Management - MS Ignite - Video](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
 
 >[!div class="step-by-step"]
 >[Previous](monitoring-azure-kubernetes.md)

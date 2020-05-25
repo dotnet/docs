@@ -43,12 +43,12 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-**Header:** None     
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md)\
+**Header:** None\
+**Library:** None\
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
 - [Debugging](index.md)
-- [DacpGetModuleAddress Interface](dacpgetmoduleaddress-structure.md)
+- [DacpGetModuleAddress structure](dacpgetmoduleaddress-structure.md)

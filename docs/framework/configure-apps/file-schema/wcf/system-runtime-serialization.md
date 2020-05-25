@@ -51,4 +51,3 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 - <xref:System.Runtime.Serialization>
 - [Using Data Contracts](../../../wcf/feature-details/using-data-contracts.md)
 - [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
- 

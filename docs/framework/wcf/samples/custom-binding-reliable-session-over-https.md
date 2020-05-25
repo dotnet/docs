@@ -8,11 +8,11 @@ This sample demonstrates the use of SSL transport security with Reliable Session
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSessionOverHttps`  
   
 ## Sample Details  
@@ -25,13 +25,13 @@ This sample demonstrates the use of SSL transport security with Reliable Session
 <configuration>  
   <system.serviceModel>  
     <services>  
-      <service   
+      <service
           name="Microsoft.ServiceModel.Samples.CalculatorService"  
           behaviorConfiguration="CalculatorServiceBehavior">  
         <!-- use base address provided by host -->  
         <endpoint address=""  
                   binding="customBinding"  
-                  bindingConfiguration="reliableSessionOverHttps"   
+                  bindingConfiguration="reliableSessionOverHttps"
                   contract="Microsoft.ServiceModel.Samples.ICalculator" />  
         <!-- the mex endpoint is exposed as http://localhost/servicemodelsamples/service.svc/mex-->  
         <endpoint address="mex"  
@@ -74,9 +74,9 @@ This sample demonstrates the use of SSL transport security with Reliable Session
     <client>  
       <!-- this endpoint has an https: address -->  
       <endpoint name=""  
-                address="https://localhost/servicemodelsamples/service.svc"   
-                binding="customBinding"   
-                bindingConfiguration="reliableSessionOverHttps"   
+                address="https://localhost/servicemodelsamples/service.svc"
+                binding="customBinding"
+                bindingConfiguration="reliableSessionOverHttps"
                 contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </client>  
   
@@ -86,7 +86,7 @@ This sample demonstrates the use of SSL transport security with Reliable Session
             <reliableSession />  
             <httpsTransport />  
           </binding>  
-        </customBinding>        
+        </customBinding>
     </bindings>  
   
   </system.serviceModel>  

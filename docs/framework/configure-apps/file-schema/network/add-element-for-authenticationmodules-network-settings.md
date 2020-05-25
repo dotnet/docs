@@ -23,7 +23,7 @@ Adds an authentication module to the application.
   
 ```xml  
 <add
-  type="type_fullname, assembly_fullname"   
+  type="type_fullname, assembly_fullname"
 />  
 ```  
   

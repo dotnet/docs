@@ -12,7 +12,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] ships with many of the common UI components that are used in almost every Windows application, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, these objects have been referred to as controls. While the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] SDK continues to use the term "control" to loosely mean any class that represents a visible object in an application, it is important to note that a class does not need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the <xref:System.Windows.Controls.Control> class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass.  This topic discusses how controls (both those that do inherit from the <xref:System.Windows.Controls.Control> class and those that do not) are commonly used in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
 
-<a name="creating_an_instance_of_a_control"></a>   
+<a name="creating_an_instance_of_a_control"></a>
 ## Creating an Instance of a Control  
  You can add a control to an application by using either [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] or code.  The following example shows how to create a simple application that asks a user for their first and last name.  This example creates six controls: two labels, two text boxes, and two buttons, in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. All controls can be created similarly.  
   
@@ -23,7 +23,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
  [!code-csharp[ControlsOverview#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml.cs#2)]
  [!code-vb[ControlsOverview#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlsOverview/VisualBasic/AppInCode.xaml.vb#2)]  
   
-<a name="changing_the_appearance_of_a_control"></a>   
+<a name="changing_the_appearance_of_a_control"></a>
 ## Changing the Appearance of a Control  
  It is common to change the appearance of a control to fit the look and feel of your application. You can change the appearance of a control by doing one of the following, depending on what you want to accomplish:  
   
@@ -48,7 +48,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
  [!code-xaml[ControlsOverview#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#5)]  
   
- You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](styling-and-templating.md).  
+ You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
 ### Creating a ControlTemplate  
  A <xref:System.Windows.Style> allows you to set properties on multiple controls at a time, but sometimes you might want to customize the appearance of a <xref:System.Windows.Controls.Control> beyond what you can do by creating a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a <xref:System.Windows.Controls.Control>. The <xref:System.Windows.Controls.Control.Template%2A> property of a <xref:System.Windows.Controls.Control> is public, so you can give a <xref:System.Windows.Controls.Control> a <xref:System.Windows.Controls.ControlTemplate> that is different than its default. You can often specify a new <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Control> instead of inheriting from a control to customize the appearance of a <xref:System.Windows.Controls.Control>.  
@@ -63,7 +63,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
 > [!NOTE]
 > The <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button> must be set to a <xref:System.Windows.Media.SolidColorBrush> for the example to work properly.  
   
-<a name="subscribing_to_events"></a>   
+<a name="subscribing_to_events"></a>
 ## Subscribing to Events  
  You can subscribe to a control's event by using either [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] or code, but you can only handle an event in code.  The following example shows how to subscribe to the `Click` event of a <xref:System.Windows.Controls.Button>.  
   
@@ -77,7 +77,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
  [!code-csharp[ControlsOverview#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml.cs#9)]
  [!code-vb[ControlsOverview#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlsOverview/VisualBasic/AppInCode.xaml.vb#9)]  
   
-<a name="rich_content_in_controls"></a>   
+<a name="rich_content_in_controls"></a>
 ## Rich Content in Controls  
  Most classes that inherit from the <xref:System.Windows.Controls.Control> class have the capacity to contain rich content. For example, a <xref:System.Windows.Controls.Label> can contain any object, such as a string, an <xref:System.Windows.Controls.Image>, or a <xref:System.Windows.Controls.Panel>.  The following classes provide support for rich content and act as base classes for most of the controls in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
@@ -93,7 +93,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
 ## See also
 
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Controls by Category](controls-by-category.md)
 - [Control Library](control-library.md)
 - [Data Templating Overview](../data/data-templating-overview.md)

@@ -32,7 +32,7 @@ This interface lives inside the runtime and isn't exposed through any headers or
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** None
 

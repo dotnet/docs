@@ -22,7 +22,7 @@ Gets a token that represents a public key. A strong name token is the shortened 
 ## Syntax  
   
 ```cpp  
-HRESULT StrongNameTokenFromPublicKey (   
+HRESULT StrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  
@@ -32,13 +32,13 @@ HRESULT StrongNameTokenFromPublicKey (
   
 ## Parameters  
  `pbPublicKeyBlob`  
- [in] A structure of type [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
+ [in] A structure of type [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
   
  `cbPublicKeyBlob`  
  [in] The size, in bytes, of `pbPublicKeyBlob`.  
   
  `ppbStrongNameToken`  
- [out] The strong name token corresponding to the key passed in `pbPublicKeyBlob`. The common language runtime allocates the memory in which to return the token. The caller must free this memory by using the [ICLRStrongName::StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) method.  
+ [out] The strong name token corresponding to the key passed in `pbPublicKeyBlob`. The common language runtime allocates the memory in which to return the token. The caller must free this memory by using the [ICLRStrongName::StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) method.  
   
  `pcbStrongNameToken`  
  [out] The size, in bytes, of the returned strong name token.  
@@ -50,7 +50,7 @@ HRESULT StrongNameTokenFromPublicKey (
  A strong name token is the shortened form of a public key that is used to save space when storing key information in metadata. Specifically, strong name tokens are used in assembly references to refer to the dependent assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -60,6 +60,6 @@ HRESULT StrongNameTokenFromPublicKey (
   
 ## See also
 
-- [StrongNameGetPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md)
-- [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameGetPublicKey Method](iclrstrongname-strongnamegetpublickey-method.md)
+- [PublicKeyBlob Structure](../strong-naming/publickeyblob-structure.md)
+- [ICLRStrongName Interface](iclrstrongname-interface.md)

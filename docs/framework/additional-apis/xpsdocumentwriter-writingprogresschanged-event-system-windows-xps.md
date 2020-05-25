@@ -15,7 +15,7 @@ topic_type:
 
 # XpsDocumentWriter.\_WritingProgressChanged Event
 
-Occurs when the <xref:System.Windows.Xps.XpsDocumentWriter> updates its progress. 
+Occurs when the <xref:System.Windows.Xps.XpsDocumentWriter> updates its progress.
 
 ## Syntax
 

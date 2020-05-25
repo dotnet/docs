@@ -22,12 +22,12 @@ Provides methods for writing to a document referenced by a symbol store.
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetCheckSum Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setchecksum-method.md)|Sets checksum information.|  
-|[SetSource Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setsource-method.md)|Sets embedded source for a document that is being written.|  
+|[SetCheckSum Method](isymunmanageddocumentwriter-setchecksum-method.md)|Sets checksum information.|  
+|[SetSource Method](isymunmanageddocumentwriter-setsource-method.md)|Sets embedded source for a document that is being written.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
 
-- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

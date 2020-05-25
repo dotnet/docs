@@ -7,8 +7,8 @@ ms.date: 11/04/2019
 
 This article offers guidelines for how to format your code so that your F# code is:
 
-* Generally viewed as more legible
-* Is in accordance with conventions applied by formatting tools in Visual Studio and other editors
+* More legible
+* In accordance with conventions applied by formatting tools in Visual Studio and other editors
 * Similar to other code online
 
 These guidelines are based on [A comprehensive guide to F# Formatting Conventions](https://github.com/dungpa/fantomas/blob/master/docs/FormattingConventions.md) by [Anh-Dung Phan](https://github.com/dungpa).
@@ -19,9 +19,9 @@ F# uses significant white space by default. The following guidelines are intende
 
 ### Using spaces
 
-When indentation is required, you must use spaces, not tabs. At least one space is required. Your organization can create coding standards to specify the number of spaces to use for indentation; two, three or four spaces of indentation at each level where indentation occurs is typical.
+When indentation is required, you must use spaces, not tabs. At least one space is required. Your organization can create coding standards to specify the number of spaces to use for indentation; two, three, or four spaces of indentation at each level where indentation occurs is typical.
 
-**We recommend 4 spaces per indentation.**
+**We recommend four spaces per indentation.**
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
 
@@ -37,7 +37,7 @@ Always use white space around binary arithmetic expressions:
 let subtractThenAdd x = x - 1 + 3
 ```
 
-Unary `-` operators should always have the value they are negating immediately follow:
+Unary `-` operators should always be immediately followed by the value they are negating:
 
 ```fsharp
 // OK
@@ -94,7 +94,7 @@ let myFun (a: decimal) b c = a + b + c
 let myFunBad (a:decimal)(b)c = a + b + c
 ```
 
-### Place parameters on a new line for very long member definitions
+### Place parameters on a new line for long member definitions
 
 If you have a very long member definition, place the parameters on new lines and indent them one scope.
 
@@ -174,7 +174,7 @@ let f x = x + 1 // Increment by one.
 
 ## Naming conventions
 
-### Use camelCase for class-bound, expression-bound and pattern-bound values and functions
+### Use camelCase for class-bound, expression-bound, and pattern-bound values and functions
 
 It is common and accepted F# style to use camelCase for all names bound as local variables or in pattern matches and function definitions.
 
@@ -189,7 +189,7 @@ let addIAndJ I J = I+J
 let AddIAndJ i j = i + j
 ```
 
-Locally-bound functions in classes should also use camelCase.
+Locally bound functions in classes should also use camelCase.
 
 ```fsharp
 type MyClass() =
@@ -281,7 +281,7 @@ Namespaces, exceptions, events, and project/`.dll` names should also use PascalC
 
 Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, be aware that the style is often disliked by others who have a choice about whether to use it.
 
-Some exceptions includes interoperating with native components, where underscores are very common.
+One exception includes interoperating with native components, where underscores are common.
 
 ### Use standard F# operators
 
@@ -319,7 +319,7 @@ For all other types, use the prefix form.
 
 ## Formatting tuples
 
-A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
+A tuple instantiation should be parenthesized, and the delimiting commas within it should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
 
 It is commonly accepted to omit parentheses in pattern matching of tuples:
 
@@ -348,7 +348,7 @@ In summary, prefer parenthesized tuple instantiations, but when using tuples for
 
 ## Formatting discriminated union declarations
 
-Indent `|` in type definition by 4 spaces:
+Indent `|` in type definition by four spaces:
 
 ```fsharp
 // OK
@@ -387,7 +387,7 @@ let tree1 =
 
 ## Formatting record declarations
 
-Indent `{` in type definition by 4 spaces and start the field list on the same line:
+Indent `{` in type definition by four spaces and start the field list on the same line:
 
 ```fsharp
 // OK
@@ -422,7 +422,7 @@ type PostalAddress =
         Address: string
         City: string
         Zip: string
-    } with
+    }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 
 type MyRecord =
@@ -499,10 +499,10 @@ Longer expressions should use new lines:
 let rainbow2 =
     { rainbow with
         Boss = "Jeffrey"
-        Lackeys = ["Zippy"; "George"; "Bungle"] }
+        Lackeys = [ "Zippy"; "George"; "Bungle" ] }
 ```
 
-And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. Note that in some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. In some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
 
 ```fsharp
 type S = { F1: int; F2: string }
@@ -573,10 +573,10 @@ When generating arrays and lists programmatically, prefer `->` over `do ... yiel
 
 ```fsharp
 // Preferred
-let squares = [ for x in 1..10 -> x*x ]
+let squares = [ for x in 1..10 -> x * x ]
 
 // Not preferred
-let squares' = [ for x in 1..10 do yield x*x ]
+let squares' = [ for x in 1..10 do yield x * x ]
 ```
 
 Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
@@ -685,7 +685,7 @@ lambdaList
     | Var v -> 1)
 ```
 
-Pattern matching in functions defined by `let` or `let rec` should be indented 4 spaces after starting of `let`, even if `function` keyword is used:
+Pattern matching in functions defined by `let` or `let rec` should be indented four spaces after starting of `let`, even if `function` keyword is used:
 
 ```fsharp
 let rec sizeLambda acc = function
@@ -810,15 +810,15 @@ let function1 a b = a - b * b
 ```fsharp
 // A1 and A2 are local modules.
 module A1 =
-    let function1 a b = a*a + b*b
+    let function1 a b = a * a + b * b
 
 module A2 =
-    let function2 a b = a*a - b*b
+    let function2 a b = a * a - b * b
 ```
 
 ### Formatting object expressions and interfaces
 
-Object expressions and interfaces should be aligned in the same way with `member` being indented after 4 spaces.
+Object expressions and interfaces should be aligned in the same way with `member` being indented after four spaces.
 
 ```fsharp
 let comparer =
@@ -872,7 +872,7 @@ type MyRecord =
 
 ### Formatting attributes on parameters
 
-Attributes can also be places on parameters. In this case, place then on the same line as the parameter and before the name:
+Attributes can also be placed on parameters. In this case, place then on the same line as the parameter and before the name:
 
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.

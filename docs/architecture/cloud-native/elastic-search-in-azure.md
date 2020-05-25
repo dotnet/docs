@@ -2,11 +2,10 @@
 title: Elasticsearch in cloud-native applications
 description: Learn about adding Elastic Search capabilities to cloud-native applications.
 author: robvet
-ms.date: 01/22/2020
+ms.date: 05/13/2020
 ---
-# Elasticsearch in a cloud-native app
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Elasticsearch in a cloud-native app
 
 Elasticsearch is a distributed search and analytics system that enables complex search capabilities across diverse types of data. It's open source and widely popular. Consider how the following companies integrate Elasticsearch into their application:
 
@@ -16,13 +15,13 @@ Elasticsearch is a distributed search and analytics system that enables complex 
 
 Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an inverted indexing scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful query syntax capabilities and can query data by:
 
-- Term (a full word) 
+- Term (a full word)
 - Prefix (starts-with word)
 - Wildcard (using "\*" or "?" filters)
 - Phrase (a sequence of text in a document)
 - Boolean value (complex searches combining queries)
 
-While Lucene provides low-level plumbing for searching, Elasticsearch provides the server that sits on top of Lucene. Elasticsearch adds higher-level functionality to simplify working Lucene, including a RESTful API to access Lucene’s indexing and searching functionality. It also provides a distributed infrastructure capable of massive scalability, fault tolerance, and high availability.
+While Lucene provides low-level plumbing for searching, Elasticsearch provides the server that sits on top of Lucene. Elasticsearch adds higher-level functionality to simplify working Lucene, including a RESTful API to access Lucene's indexing and searching functionality. It also provides a distributed infrastructure capable of massive scalability, fault tolerance, and high availability.
 
 For larger cloud-native applications with complex search requirements, Elasticsearch is available as managed service in Azure. The Microsoft Azure Marketplace features preconfigured templates which developers can use to deploy an Elasticsearch cluster on Azure.
 
@@ -37,8 +36,6 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 - [Command and Query Responsibility Segregation (CQRS) pattern](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
 
 - [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
-
-- [RDBMSs vs. NoSQL Databases: Overview](https://maxivak.com/rdbms-vs-nosql-databases/)
 
 - [Why isn't RDBMS Partition Tolerant in CAP Theorem and why is it Available?](https://stackoverflow.com/questions/36404765/why-isnt-rdbms-partition-tolerant-in-cap-theorem-and-why-is-it-available)
 

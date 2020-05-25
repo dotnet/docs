@@ -11,19 +11,19 @@ ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
 The hosting API enables unmanaged hosts to integrate the common language runtime (CLR) into their applications.  
   
 ## In This Section  
- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)  
+ [Hosting Coclasses](hosting-coclasses.md)  
  Describes the unmanaged coclasses that the hosting API uses.  
   
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
+ [Hosting Enumerations](hosting-enumerations.md)  
  Describes the unmanaged enumerations that the hosting API uses.  
   
- [Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)  
+ [Hosting Global Static Functions](hosting-global-static-functions.md)  
  Describes the unmanaged global static functions that the hosting API uses.  
   
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
+ [Hosting Interfaces](hosting-interfaces.md)  
  Describes the unmanaged interfaces that enable a runtime host to integrate the CLR into an unmanaged application.  
   
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
+ [Hosting Structures](hosting-structures.md)  
  Describes the unmanaged structures that the hosting API uses.  
   
 ## Related Sections  

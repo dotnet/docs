@@ -16,7 +16,7 @@ Modify any `catch` statements to catch an <xref:System.UnauthorizedAccessExcepti
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

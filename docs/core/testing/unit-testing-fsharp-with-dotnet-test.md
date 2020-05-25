@@ -77,7 +77,7 @@ You have the following final solution layout:
         MathServiceTests.fsproj
 ```
 
-Execute `dotnet sln add .\MathService.Tests\MathService.Tests.fsproj` in the *unit-testing-with-fsharp* directory. 
+Execute `dotnet sln add .\MathService.Tests\MathService.Tests.fsproj` in the *unit-testing-with-fsharp* directory.
 
 ## Creating the first test
 
@@ -153,9 +153,9 @@ You can fix the test by piping the filtered sequence through a map operation to 
 let private square x = x * x
 let private isOdd x = x % 2 <> 0
 
-let squaresOfOdds xs = 
-    xs 
-    |> Seq.filter isOdd 
+let squaresOfOdds xs =
+    xs
+    |> Seq.filter isOdd
     |> Seq.map square
 ```
 

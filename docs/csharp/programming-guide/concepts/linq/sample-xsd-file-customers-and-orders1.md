@@ -86,4 +86,3 @@ The following XSD file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </xs:complexType>  
 </xs:schema>  
 ```  
- 

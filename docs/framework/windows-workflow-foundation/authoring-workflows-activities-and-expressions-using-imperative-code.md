@@ -1,5 +1,6 @@
 ---
 title: "Authoring Workflows, Activities, and Expressions Using Imperative Code"
+description: A Workflow Foundation workflow definition is a tree of configured activity objects. Use code to create workflow definitions, activities, and expressions.
 ms.date: "03/30/2017"
 ms.assetid: cefc9cfc-2882-4eb9-8c94-7a6da957f2b2
 ---
@@ -115,7 +116,7 @@ new InvokeMethod<int>
 {  
     TargetObject = new InArgument<Random>(new VisualBasicValue<Random>("New Random()")),  
     MethodName = "Next",  
-    Parameters =   
+    Parameters =
     {  
         new InArgument<int>(1),  
         new InArgument<int>(101)  

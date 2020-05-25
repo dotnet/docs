@@ -21,7 +21,7 @@ This new deployment mode has the distinct advantage of building an executable in
 
 **Handling events in runtime services**
 
-You may often want to monitor your application's use of runtime services, such as the GC, JIT, and ThreadPool, to understand how they impact your application. On Windows systems, this is commonly done by monitoring the ETW events of the current process. While this continues to work well, it's not always possible to use ETW if you're running in a low-privilege environment or on Linux or macOS. 
+You may often want to monitor your application's use of runtime services, such as the GC, JIT, and ThreadPool, to understand how they impact your application. On Windows systems, this is commonly done by monitoring the ETW events of the current process. While this continues to work well, it's not always possible to use ETW if you're running in a low-privilege environment or on Linux or macOS.
 
 Starting with .NET Core 2.2, CoreCLR events can now be consumed using the <xref:System.Diagnostics.Tracing.EventListener?displayProperty=nameWithType> class. These events describe the behavior of such runtime services as GC, JIT, ThreadPool, and interop. These are the same events that are exposed as part of the CoreCLR ETW provider.  This allows for applications to consume these events or use a transport mechanism to send them to a telemetry aggregation service. You can see how to subscribe to events in the following code sample:
 
@@ -91,6 +91,6 @@ See [Host startup hook](https://github.com/dotnet/core-setup/blob/master/Documen
 
 ## See also
 
-- [What's new in .NET Core](index.md)
+- [What's new in .NET Core 3.1](dotnet-core-3-1.md)
 - [What's new in ASP.NET Core 2.2](/aspnet/core/release-notes/aspnetcore-2.2)
 - [New features in EF Core 2.2](/ef/core/what-is-new/ef-core-2.2)

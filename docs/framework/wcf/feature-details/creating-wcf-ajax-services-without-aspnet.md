@@ -20,7 +20,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
  The most basic way to enable AJAX support in a WCF service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  
   
 ```text
-<%ServiceHost   
+<%ServiceHost
     language=c#  
     Debug="true"  
     Service="Microsoft.Ajax.Samples.CityService"  
@@ -42,7 +42,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
     </behaviors>  
     <services>  
       <service name="Microsoft.Ajax.Samples.CityService">  
-        <endpoint   
+        <endpoint
           address="ajaxEndpoint"  
           behaviorConfiguration="AjaxBehavior"  
           binding="webHttpBinding"  

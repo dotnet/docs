@@ -113,7 +113,7 @@ This section describes how to use queued communication in Windows Communication 
   
 - [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
   
-- [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md) 
+- [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)
   
 - [SRMP](../../../../docs/framework/wcf/samples/srmp.md)  
   

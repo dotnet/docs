@@ -11,7 +11,7 @@ Returns `true` if both expressions are `true`; otherwise, `false` or `NULL`.
 ```csharp  
 boolean_expression AND boolean_expression
 ```
- 
+
 or  
 
 ```csharp

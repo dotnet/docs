@@ -22,12 +22,12 @@ Windows Forms
 
 #### Affected APIs
 
-Not detectable via API analysis.
+None
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
-- Not detectable via API analysis.
+Not detectable via API analysis.
 
 -->

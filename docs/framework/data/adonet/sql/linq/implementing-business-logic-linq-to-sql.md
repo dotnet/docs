@@ -160,7 +160,7 @@ End Class
 ```  
   
 ```csharp  
-partial class Customer   
+partial class Customer
     {  
         partial void OnCustomerIDChanging(string value)  
         {  

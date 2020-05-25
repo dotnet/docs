@@ -18,7 +18,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 ## Syntax  
   
 ```xml  
-<system.net>   
+<system.net>
 </system.net>  
 ```  
   

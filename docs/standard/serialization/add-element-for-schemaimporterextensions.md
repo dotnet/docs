@@ -1,5 +1,6 @@
 ---
 title: "<add> Element for <schemaImporterExtensions>"
+description: The <add> element adds types used by the XmlSchemaImporter class for mapping XSD types to .NET Framework types. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
@@ -46,9 +47,9 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 <configuration>  
   <system.xml.serialization>  
     <schemaImporterExtensions>  
-       <add name="contoso" type="System.Web.Mobile.MobileCapabilities,   
-       System.Web.Mobile, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b03f5f7f11d50a3a" />   
+       <add name="contoso" type="System.Web.Mobile.MobileCapabilities,
+       System.Web.Mobile, Version=2.0.0.0, Culture=neutral,
+       PublicKeyToken=b03f5f7f11d50a3a" />
     </schemaImporterExtensions>  
   </system.xml.serialization>  
 </configuration>  

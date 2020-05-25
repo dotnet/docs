@@ -23,15 +23,15 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ```cpp  
 HRESULT CorChangeTimer (  
-    [in]  HANDLE Timer,   
-    [in]  ULONG  DueTime,   
+    [in]  HANDLE Timer,
+    [in]  ULONG  DueTime,
     [in]  ULONG  Period,  
     [out] BOOL*  result  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -41,4 +41,4 @@ HRESULT CorChangeTimer (
   
 ## See also
 
-- [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [ICorThreadpool Interface](icorthreadpool-interface.md)

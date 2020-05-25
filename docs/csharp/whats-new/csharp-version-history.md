@@ -2,7 +2,7 @@
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
-ms.date: 09/20/2017
+ms.date: 04/08/2020
 ---
 
 # The history of C\#
@@ -12,7 +12,7 @@ This article provides a history of each major release of the C# language. The C#
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
 
-The C# build tools consider the latest major language release the default language version. There may be point releases between major releases, detailed in other articles in this section. To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version. There have been three point releases since C# 7.0:
+The C# build tools consider the latest major language release the default language version. There may be point releases between major releases, detailed in other articles in this section. To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version. There have been three-point releases since C# 7.0:
 
 - [C# 7.3](csharp-7-3.md):
   - C# 7.3 is available starting with [Visual Studio 2017 version 15.7](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) and [.NET Core 2.1 SDK](../../core/whats-new/dotnet-core-2-1.md).
@@ -115,7 +115,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 C# version 5.0, released with Visual Studio 2012, was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here is the major features list:
 
 - [Asynchronous members](../async.md)
-- [Caller info attributes](../programming-guide/concepts/caller-information.md)
+- [Caller info attributes](../language-reference/attributes/caller-information.md)
 
 ### See Also
 
@@ -149,7 +149,7 @@ They did one other thing along with this version, though it's not a traditional 
 
 ## C# version 7.0
 
-The most recent major version is C# version 7.0, released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
+C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
 - [Out variables](./csharp-7.md#out-variables)
 - [Tuples and deconstruction](./csharp-7.md#tuples)
@@ -167,5 +167,87 @@ Other features included:
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.
 
 But C# is being put to ever broader use. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability.  These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
+
+## C# version 7.1
+
+C# started releasing *point releases* with C# 7.1. This version added the [language version selection](../language-reference/configure-language-version.md) configuration element, three new language features, and new compiler behavior.
+
+The new language features in this release are:
+
+- [`async` `Main` method](./csharp-7-1.md#async-main)
+  - The entry point for an application can have the `async` modifier.
+- [`default` literal expressions](./csharp-7-1.md#default-literal-expressions)
+  - You can use default literal expressions in default value expressions when the target type can be inferred.
+- [Inferred tuple element names](./csharp-7-1.md#inferred-tuple-element-names)
+  - The names of tuple elements can be inferred from tuple initialization in many cases.
+- [Pattern matching on generic type parameters](./csharp-7-1.md#pattern-matching-on-generic-type-parameters)
+  - You can use pattern match expressions on variables whose type is a generic type parameter.
+
+Finally, the compiler has two options `-refout` and `-refonly` that
+control [reference assembly generation](./csharp-7-1.md#reference-assembly-generation).
+
+## C# version 7.2
+
+C# 7.2 added several small language features:
+
+- [Techniques for writing safe efficient code](./csharp-7-2.md#safe-efficient-code-enhancements)
+  - A combination of syntax improvements that enable working with value types using reference semantics.
+- [Non-trailing named arguments](./csharp-7-2.md#non-trailing-named-arguments)
+  - Named arguments can be followed by positional arguments.
+- [Leading underscores in numeric literals](./csharp-7-2.md#leading-underscores-in-numeric-literals)
+  - Numeric literals can now have leading underscores before any printed digits.
+- [`private protected` access modifier](./csharp-7-2.md#private-protected-access-modifier)
+  - The `private protected` access modifier enables access for derived classes in the same assembly.
+- [Conditional `ref` expressions](./csharp-7-2.md#conditional-ref-expressions)
+  - The result of a conditional expression (`?:`) can now be a reference.
+
+## C# version 7.3
+
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compiler options were added in this release.
+
+The following new features support the theme of better performance for safe code:
+
+- [You can access fixed fields without pinning.](csharp-7-3.md#indexing-fixed-fields-does-not-require-pinning)
+- [You can reassign `ref` local variables.](csharp-7-3.md#ref-local-variables-may-be-reassigned)
+- [You can use initializers on `stackalloc` arrays.](csharp-7-3.md#stackalloc-arrays-support-initializers)
+- [You can use `fixed` statements with any type that supports a pattern.](csharp-7-3.md#more-types-support-the-fixed-statement)
+- [You can use additional generic constraints.](csharp-7-3.md#enhanced-generic-constraints)
+
+The following enhancements were made to existing features:
+
+- [You can test `==` and `!=` with tuple types.](csharp-7-3.md#tuples-support--and-)
+- [You can use expression variables in more locations.](csharp-7-3.md#extend-expression-variables-in-initializers)
+- [You may attach attributes to the backing field of auto-implemented properties.](csharp-7-3.md#attach-attributes-to-the-backing-fields-for-auto-implemented-properties)
+- [Method resolution when arguments differ by `in` has been improved.](csharp-7-3.md#in-method-overload-resolution-tiebreaker)
+- [Overload resolution now has fewer ambiguous cases.](csharp-7-3.md#improved-overload-candidates)
+
+The new compiler options are:
+
+- [`-publicsign` to enable Open Source Software (OSS) signing of assemblies.](csharp-7-3.md#public-or-open-source-signing)
+- [`-pathmap` to provide a mapping for source directories.](csharp-7-3.md#pathmap)
+
+## C# version 8.0
+
+C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new CLR capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
+
+- [Readonly members](./csharp-8.md#readonly-members)
+- [Default interface methods](./csharp-8.md#default-interface-methods)
+- [Pattern matching enhancements](./csharp-8.md#more-patterns-in-more-places):
+  - [Switch expressions](./csharp-8.md#switch-expressions)
+  - [Property patterns](./csharp-8.md#property-patterns)
+  - [Tuple patterns](./csharp-8.md#tuple-patterns)
+  - [Positional patterns](./csharp-8.md#positional-patterns)
+- [Using declarations](./csharp-8.md#using-declarations)
+- [Static local functions](./csharp-8.md#static-local-functions)
+- [Disposable ref structs](./csharp-8.md#disposable-ref-structs)
+- [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
+- [Asynchronous streams](./csharp-8.md#asynchronous-streams)
+- [Indices and ranges](./csharp-8.md#indices-and-ranges)
+- [Null-coalescing assignment](./csharp-8.md#null-coalescing-assignment)
+- [Unmanaged constructed types](./csharp-8.md#unmanaged-constructed-types)
+- [Stackalloc in nested expressions](./csharp-8.md#stackalloc-in-nested-expressions)
+- [Enhancement of interpolated verbatim strings](./csharp-8.md#enhancement-of-interpolated-verbatim-strings)
+
+Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

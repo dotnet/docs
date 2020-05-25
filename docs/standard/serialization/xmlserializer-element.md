@@ -1,5 +1,6 @@
 ---
 title: "<xmlSerializer> Element"
+description: The <xmlSerializer> element specifies whether an additional check of progress of the XmlSerializer is done.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<xmlSerializer> element"
@@ -16,7 +17,7 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 ## Syntax  
   
 ```xml  
-<xmlSerializer checkDeserializerAdvance = "true"|"false" />  
+<xmlSerializer checkDeserializerAdvance = "true|false" />  
 ```  
   
 ## Attributes and Elements  

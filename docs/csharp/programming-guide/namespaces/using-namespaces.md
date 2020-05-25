@@ -30,13 +30,13 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
 ## Namespace aliases
 
- You also can use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
+ You can also use the [`using` directive](../../language-reference/keywords/using-directive.md) to create an alias for a namespace. Use the [namespace alias qualifier `::`](../../language-reference/operators/namespace-alias-qualifier.md) to access the members of the aliased namespace. The following example shows how to create and use a namespace alias:
   
 [!code-csharp[csProgGuideNamespaces#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#5)]
   
 ## Using namespaces to control scope
 
- The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [member access `.` operator](../../language-reference/operators/member-access-operators.md#member-access-operator-) is used to differentiate which method gets called.  
+ The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [`.` token](../../language-reference/operators/member-access-operators.md#member-access-expression-) is used to differentiate which method gets called.  
   
  [!code-csharp[csProgGuideNamespaces#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#8)]  
   
@@ -88,6 +88,6 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 
 - [C# Programming Guide](../index.md)
 - [Namespaces](./index.md)
-- [. operator](../../language-reference/operators/member-access-operators.md#member-access-operator-)
+- [Member access expression](../../language-reference/operators/member-access-operators.md#member-access-expression-)
 - [:: operator](../../language-reference/operators/namespace-alias-qualifier.md)
 - [extern alias](../../language-reference/keywords/extern-alias.md)

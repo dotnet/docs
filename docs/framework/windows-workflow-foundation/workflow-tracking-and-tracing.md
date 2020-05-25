@@ -1,5 +1,6 @@
 ---
 title: "Workflow Tracking and Tracing"
+description: Windows Workflow tracking is a .NET Framework 4.6.1 feature that provides a tracking infrastructure to track the execution of a workflow instance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], tracking and tracing"

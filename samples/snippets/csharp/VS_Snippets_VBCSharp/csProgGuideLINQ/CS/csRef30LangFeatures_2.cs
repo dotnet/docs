@@ -18,11 +18,11 @@ namespace AutoImplMutable
         public int CustomerId { get; set; }
 
         // Constructor
-        public Customer(double purchases, string name, int ID)
+        public Customer(double purchases, string name, int id)
         {
             TotalPurchases = purchases;
             Name = name;
-            CustomerId = Id;
+            CustomerId = id;
         }
 
         // Methods

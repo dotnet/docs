@@ -47,11 +47,11 @@ typedef struct {
 |`cbLocale`|The size in wide characters of `szLocale`.|  
 |`rdwProcessor`|An array of identifiers, as defined in Winnt.h, for the processor types that are supported by the referenced assembly. A NULL value indicates processor independence.|  
 |`ulProcessor`|The length of the `rdwProcessor` array.|  
-|`rOS`|An array of [OSINFO](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md) instances specifying the operating systems that are supported by the referenced assembly. A NULL value indicates operating-system independence.|  
+|`rOS`|An array of [OSINFO](osinfo-structure.md) instances specifying the operating systems that are supported by the referenced assembly. A NULL value indicates operating-system independence.|  
 |`ulOS`|The length of the `rOS` array.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -61,6 +61,6 @@ typedef struct {
   
 ## See also
 
-- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
-- [OSINFO Structure](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md)
+- [Metadata Structures](metadata-structures.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
+- [OSINFO Structure](osinfo-structure.md)

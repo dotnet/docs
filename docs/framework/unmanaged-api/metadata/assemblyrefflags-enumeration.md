@@ -33,7 +33,7 @@ typedef enum {
 |`arfFullOriginator`|Specifies that the assembly reference contains full, unhashed information about the publisher of the assembly.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -41,6 +41,6 @@ typedef enum {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
-- [DefineAssemblyRef Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineassemblyref-method.md)
+- [Metadata Enumerations](metadata-enumerations.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
+- [DefineAssemblyRef Method](imetadataassemblyemit-defineassemblyref-method.md)

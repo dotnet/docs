@@ -1,5 +1,6 @@
 ---
 title: "Adding Data to a DataTable"
+description: Refer to this example code to add new rows of data to a table in ADO.NET, after you create a DataTable and define its structure using columns and constraints.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

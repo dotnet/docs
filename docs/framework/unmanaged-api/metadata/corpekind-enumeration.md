@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorPEKind Enumeration
-Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md).  
+Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](imetadataimport2-getpekind-method.md).  
   
 ## Syntax  
   
@@ -48,7 +48,7 @@ typedef enum CorPEKind {
  These values can be used in bitwise combinations.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -56,4 +56,4 @@ typedef enum CorPEKind {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

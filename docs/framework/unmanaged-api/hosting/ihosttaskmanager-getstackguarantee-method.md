@@ -32,7 +32,7 @@ HRESULT GetStackGuarantee(
  [out] A pointer to the number of bytes that are available.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -42,4 +42,4 @@ HRESULT GetStackGuarantee(
   
 ## See also
 
-- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

@@ -1,7 +1,7 @@
 ---
 title: Asynchronous programming in C#
 description: An overview of the C# language support for asynchronous programming using async, await, Task, and Task<T>
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ---
 # Asynchronous programming with async and await
 
@@ -26,7 +26,7 @@ Now, consider those same instructions written as C# statements:
 
 :::code language="csharp" source="snippets/index/AsyncBreakfast-starter/Program.cs" highlight="8-27":::
 
-> [!IMPORTANT]
+> [!NOTE]
 > The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
 
 Computers don't interpret those instructions the same way people do. The computer will block on each statement until the work is complete before moving on to the next statement. That creates an unsatisfying breakfast. The later tasks wouldn't be started until the earlier tasks had completed. It would take much longer to create the breakfast, and some items would have gotten cold before being served.

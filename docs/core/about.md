@@ -22,7 +22,7 @@ The [C#](../csharp/index.yml), [Visual Basic](../visual-basic/index.yml), and [F
 - [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
-Editor integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
+Editor integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](https://ionide.io) projects.
 
 ## APIs
 
@@ -63,6 +63,6 @@ Many APIs are included that satisfy common needs:
 
 .NET Core binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 
-[Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+[Red Hat supports .NET Core](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
 
 [Tizen supports .NET Core](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.

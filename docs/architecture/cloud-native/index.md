@@ -39,7 +39,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](http://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
 > **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 

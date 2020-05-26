@@ -17,7 +17,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
 
 ### To link to a Web page with the RichTextBox control
 
-1. Set the <xref:System.Windows.Forms.RichTextBox.Text%2A> property to a string that includes a valid URL (for example, "http://www.microsoft.com/").
+1. Set the <xref:System.Windows.Forms.RichTextBox.Text%2A> property to a string that includes a valid URL (for example, "https://www.microsoft.com/").
 
 2. Make sure the <xref:System.Windows.Forms.RichTextBox.DetectUrls%2A> property is set to `true` (the default).
 

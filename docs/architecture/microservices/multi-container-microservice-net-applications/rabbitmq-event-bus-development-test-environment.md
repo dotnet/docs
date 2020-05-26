@@ -111,7 +111,7 @@ For production scenarios check the additional resources below, specific for Rabb
 A production-ready solutions with support for RabbitMQ.
 
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
-  <http://easynetq.com/>
+  <https://easynetq.com/>
 
 - **MassTransit** \
   <https://masstransit-project.com/>

@@ -38,6 +38,6 @@ HRESULT OpenMethod(
   
 ## See also
 
-- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
-- [CloseMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closemethod-method.md)
-- [OpenMethod2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-openmethod2-method.md)
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)
+- [CloseMethod Method](isymunmanagedwriter-closemethod-method.md)
+- [OpenMethod2 Method](isymunmanagedwriter3-openmethod2-method.md)

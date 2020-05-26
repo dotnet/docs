@@ -12,18 +12,20 @@ Mapping "C" to en_US_POSIX culture caused customer confusion, because en_US_POSI
 
 3.0
 
-### Recommended action
+#### Recommended action
 
 Nothing specific more than the awareness of this change. This change affects only applications that use the "C" locale mapping.
 
-### Category
+#### Category
 
 Globalization
 
-### Affected APIs
+#### Affected APIs
 
 All collation and culture APIs are affected by this change.
 
 <!--
+
+#### Affected APIs
 
 -->

@@ -17,6 +17,10 @@
       "redirect_url": "/dotnet/architecture/cloud-native/relational-vs-nosql-data"
     },
     {
+      "source_path": "docs/architecture/cloud-native/cloud-native-devops.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/devops"
+    },
+    {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
       "redirect_document_id": true
@@ -476,7 +480,7 @@
     },
     {
       "source_path": "docs/core/versions/install-management.md",
-      "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
+      "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
     },
     {
       "source_path": "docs/core/versions/lts-current.md",
@@ -1695,6 +1699,46 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md",
       "redirect_url": "/dotnet/standard/linq/populate-xml-tree-file-system",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-union-two-location-paths",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-descendants-child-element",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-elements-in-a-namespace-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-elements-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-preceding-siblings-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-preceding-siblings",
+     "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-attribute-parent",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-attributes-siblings-specific-name",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-elements-specific-attribute",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-sibling-nodes",
       "redirect_document_id": true
     },
     {
@@ -3342,6 +3386,11 @@
     {
       "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
       "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/wpf/advanced/globalization-and-localization-how-to-topics.md",
+      "redirect_url": "/dotnet/framework/wpf/advanced/how-to-localize-an-application",
       "redirect_document_id": true
     },
     {
@@ -5172,6 +5221,46 @@
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md",
       "redirect_url": "/dotnet/standard/linq/populate-xml-tree-file-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath.md",
+      "redirect_url": "/dotnet/standard/linq/find-union-two-location-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-descendants-child-element",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-elements-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/find-elements-namespace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-preceding-siblings-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-preceding-siblings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-attribute-parent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name.md",
+      "redirect_url": "/dotnet/standard/linq/find-attributes-siblings-specific-name",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute.md",
+      "redirect_url": "/dotnet/standard/linq/find-elements-specific-attribute",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/find-sibling-nodes",
       "redirect_document_id": false
     },
     {

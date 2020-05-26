@@ -28,7 +28,7 @@ You must create an object before you can access its members, except for [`Shared
 
    ```vb
    Public Class Customer
-       Public Property AccountNumber As Integer      
+       Public Property AccountNumber As Integer
    End Class
    ```
 

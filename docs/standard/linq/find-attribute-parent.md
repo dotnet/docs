@@ -16,7 +16,7 @@ This article shows how to use <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A
 
 This example first finds an `Author` element in XML document [Sample XML file: Books](sample-xml-file-books.md), and then finds the `id` attribute of its parent element.
 
-The XPath expression is `../@id`
+The XPath expression is `../@id`.
 
 ```csharp
 XDocument books = XDocument.Load("Books.xml");

@@ -12,7 +12,7 @@ This section introduces functional transformations, including the underlying con
 
  A working knowledge of basic computer science concepts and XML, including XML namespaces, is also assumed.
 
-## In This Section
+## In this section
 
 |Topic|Description|
 |-----------|-----------------|

@@ -35,11 +35,11 @@ For more information about functional programming, see [Functional programming v
 
 #### Domain-specific functional programming languages
 
-Although general functional programming languages have not been widely adopted, some domain-specific functional programming languages have had better success. For example, Cascading Style Sheets (CSS) are used to determine the look and feel of many Web pages, and Extensible Stylesheet Language Transformations (XSLT) style sheets are used extensively in XML data manipulation. For more information about XSLT, see [XSLT Transformations](../../standard/data/xml/xslt-transformations.md).
+Although general functional programming languages haven't been widely adopted, some domain-specific functional programming languages have had better success. For example, Cascading Style Sheets (CSS) are used to determine the look and feel of many web pages, and Extensible Stylesheet Language Transformations (XSLT) style sheets are used extensively in XML data manipulation. For more information about XSLT, see [XSLT Transformations](../data/xml/xslt-transformations.md).
 
 ## Terminology
 
-The following table defines some terms related to functional transformations.
+The following list defines some terms related to functional transformations.
 
 higher-order (first-class) function \
 A function that can be treated as a programmatic object. For example, a higher-order function can be passed to or returned from other functions. In C# and Visual Basic, delegates and lambda expressions are language features that support higher-order functions. To write a higher-order function, you declare one or more arguments to take delegates, and you often use lambda expressions when calling it. Many of the standard query operators are higher-order functions.

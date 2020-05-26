@@ -16,7 +16,7 @@ There are two approaches to writing this LINQ to XML query in a lazy way. You ca
 
 ## Example: Find the second through the fourth `Test` elements
 
-This example finds the second through the fourth `Test` element in XML document [Sample XML file: Test configuration](sample-xml-file-test-configuration.md). The result is a collection of elements.
+This example finds the second through the fourth `Test` element in the [Sample XML file: Test configuration](sample-xml-file-test-configuration.md). The result is a collection of elements.
 
 The XPath expression is `Test[position() >= 2 and position() <= 4]`.
 

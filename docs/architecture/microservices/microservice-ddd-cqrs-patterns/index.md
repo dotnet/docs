@@ -58,7 +58,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
   <https://www.amazon.com/Domain-Driven-Design-Quickly-Abel-Avram/dp/1411609255/>
 
 - **Scott Millett, Nick Tune - Patterns, Principles, and Practices of Domain-Driven Design** \
-  <https://www.wiley.com/en-eg/Patterns%2C+Principles%2C+and+Practices+of+Domain+Driven+Design-p-9781118714706>
+  <https://www.wiley.com/Patterns%2C+Principles%2C+and+Practices+of+Domain+Driven+Design-p-9781118714706>
 
 ##### DDD training
 

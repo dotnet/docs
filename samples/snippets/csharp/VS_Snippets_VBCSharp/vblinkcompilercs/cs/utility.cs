@@ -8,13 +8,13 @@ public class Utility
 {
     // The following code causes an error when called by a client assembly.
     public List<Range> GetRange1()
-	{
+    {
         return null;
     }
 
     // The following code is valid for calls from a client assembly.
     public IList<Range> GetRange2()
-	{
+    {
         return null;
     }
 }

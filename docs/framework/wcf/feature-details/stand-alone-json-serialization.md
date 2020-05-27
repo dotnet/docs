@@ -203,7 +203,7 @@ To reduce the size of JSON messages, the default data contract namespace prefix 
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}
 ```
 
-Both the truncated (#MyApp.Shapes) and the full (http://schemas.datacontract.org/2004/07/MyApp.Shapes) names is understood on deserialization.
+Both the truncated (#MyApp.Shapes) and the full (<http://schemas.datacontract.org/2004/07/MyApp.Shapes>) names is understood on deserialization.
 
 #### Type Hint Position in JSON Objects
 

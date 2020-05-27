@@ -19,7 +19,7 @@ dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-parallel]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--use-lockfile] [-v|--verbosity <LEVEL>]
+    [--use-lock-file] [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -137,9 +137,9 @@ There are three specific settings that `dotnet restore` ignores:
 
 - **`-s|--source <SOURCE>`**
 
-  Specifies a NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
+  Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-- **`--use-lockfile`**
+- **`--use-lock-file`**
 
   Enables project lock file to be generated and used with restore.
 

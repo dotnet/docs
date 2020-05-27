@@ -198,7 +198,21 @@ dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
 You get the following output.
 
 ```console
-Hello World!
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
 ```
 
 As mentioned at the start of this article, an operating system-specific executable was created along with the `Hello.dll`. On Windows, this would be `Hello.exe`; on Linux or macOS, this would be `hello`. With the example above, the file is named with `Hello.exe` or `Hello`. You can run this published executable directly.
@@ -206,7 +220,21 @@ As mentioned at the start of this article, an operating system-specific executab
 ```console
 .\bin\Debug\netcoreapp3.1\publish\Hello.exe
 
-Hello World!
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
 ```
 
 ## Conclusion

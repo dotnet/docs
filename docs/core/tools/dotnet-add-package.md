@@ -85,7 +85,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - **`-s|--source <SOURCE>`**
 
-  The NuGet package source to use during the restore operation.
+  The URI of the NuGet package source to use during the restore operation.
 
 - **`-v|--version <VERSION>`**
 

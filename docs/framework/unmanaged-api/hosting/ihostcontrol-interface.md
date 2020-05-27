@@ -22,11 +22,11 @@ Provides methods for configuring the loading of assemblies, and for determining 
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetHostManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-gethostmanager-method.md)|Gets an interface pointer to the host's implementation of the interface with the specified `IID`.|  
-|[SetAppDomainManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-setappdomainmanager-method.md)|Notifies the host that an application domain has been created.|  
+|[GetHostManager Method](ihostcontrol-gethostmanager-method.md)|Gets an interface pointer to the host's implementation of the interface with the specified `IID`.|  
+|[SetAppDomainManager Method](ihostcontrol-setappdomainmanager-method.md)|Notifies the host that an application domain has been created.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -37,6 +37,6 @@ Provides methods for configuring the loading of assemblies, and for determining 
 ## See also
 
 - <xref:System.AppDomainManager>
-- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

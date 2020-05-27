@@ -48,7 +48,7 @@ Core .NET libraries
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Security.Cryptography.AesCcm``
 - `T:System.Security.Cryptography.AesGcm`

@@ -81,59 +81,90 @@
   href: compatibility/
 - name: Tutorials
   items:
-  - name: Overview
+  - name: Use Visual Studio
+    items:
+    - name: Create a console app
+      href: tutorials/with-visual-studio.md
+      displayName: tutorials, visual studio, vs
+    - name: Debug an app
+      href: tutorials/debugging-with-visual-studio.md
+      displayName: tutorials, visual studio, vs
+    - name: Publish an app
+      href: tutorials/publishing-with-visual-studio.md
+      displayName: tutorials, visual studio, vs
+    - name: Create a library
+      href: tutorials/library-with-visual-studio.md
+      displayName: tutorials, visual studio, vs
+    - name: Unit test a library
+      href: tutorials/testing-library-with-visual-studio.md
+      displayName: tutorials, visual studio, vs
+    - name: Install and use a package
+      href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
+      displayName: tutorials, visual studio, vs
+    - name: Create and publish a package
+      href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+      displayName: tutorials, visual studio, vs
+  - name: Use Visual Studio Code
+    items:
+    - name: Create a console app
+      href: tutorials/with-visual-studio-code.md
+      displayName: tutorials, visual studio code, vs code, cli
+    - name: Create a console app and publish it
+      href: tutorials/cli-create-console-app.md
+      displayName: tutorials, cli
+    - name: Create a library and unit test it - macOS
+      href: tutorials/using-on-macos.md
+      displayName: tutorials, visual studio code, vs code, cli
+    - name: Install and use a package
+      href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+      displayName: tutorials, cli
+    - name: Create and publish a package
+      href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+      displayName: tutorials
+  - name: Use Visual Studio for Mac
+    items:
+    - name: Create a console app
+      href: tutorials/using-on-mac-vs.md
+      displayName: tutorials
+    - name: Create a library and unit test it
+      href: tutorials/using-on-mac-vs-full-solution.md
+      displayName: tutorials
+    - name: Install and use a package
+      href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+      displayName: tutorials
+  - name: Advanced topics
+    items:
+    - name: Unit test an app with xUnit
+      href: tutorials/testing-with-cli.md
+      displayName: tutorials, cli
+    - name: How to create libraries
+      href: tutorials/libraries.md
+    - name: Create templates for the CLI
+      items:
+      - name: 1 - Create an item template
+        href: tutorials/cli-templates-create-item-template.md
+        displayName: tutorials, cli
+      - name: 2 - Create a project template
+        href: tutorials/cli-templates-create-project-template.md
+        displayName: tutorials, cli
+      - name: 3 - Create a template pack
+        href: tutorials/cli-templates-create-template-pack.md
+        displayName: tutorials, cli
+    - name: Create tools for the CLI
+      items:
+      - name: 1 - Create a tool
+        displayName: tools, tutorials, cli
+        href: tools/global-tools-how-to-create.md
+      - name: 2 - Use a global tool
+        displayName: tools, tutorials, cli
+        href: tools/global-tools-how-to-use.md
+      - name: 3 - Use a local tool
+        href: tools/local-tools-how-to-use.md
+        displayName: tools, tutorials, cli
+    - name: Create an app with plugins
+      href: tutorials/creating-app-with-plugin-support.md
+  - name: More tutorials
     href: tutorials/index.md
-  - name: Get started with .NET Core using Visual Studio
-    href: tutorials/with-visual-studio.md
-  - name: Get started with .NET Core using Visual Studio Code
-    href: tutorials/with-visual-studio-code.md
-  - name: Get started with .NET Core using the CLI
-    href: tutorials/cli-create-console-app.md
-  - name: Get started with .NET Core using Visual Studio Code on macOS
-    href: tutorials/using-on-macos.md
-  - name: Get started with .NET Core using Visual Studio for Mac
-    href: tutorials/using-on-mac-vs.md
-  - name: Debug an application using Visual Studio
-    href: tutorials/debugging-with-visual-studio.md
-  - name: Publish an application with Visual Studio
-    href: tutorials/publishing-with-visual-studio.md
-  - name: Create a .NET Standard library in Visual Studio
-    href: tutorials/library-with-visual-studio.md
-  - name: Test a .NET Standard library in Visual Studio
-    href: tutorials/testing-library-with-visual-studio.md
-  - name: Consume a .NET Standard library in Visual Studio
-    href: tutorials/consuming-library-with-visual-studio.md
-  - name: Build a complete .NET Core solution on macOS
-    href: tutorials/using-on-mac-vs-full-solution.md
-  - name: Organize and test projects with the .NET Core CLI
-    href: tutorials/testing-with-cli.md
-  - name: Develop libraries with cross-platform tools
-    href: tutorials/libraries.md
-  - name: Create a .NET Core app with plugins
-    href: tutorials/creating-app-with-plugin-support.md
-  - name: Develop ASP.NET Core apps
-    href: tutorials/aspnet-core.md
-  - name: Host .NET Core from native code
-    href: tutorials/netcore-hosting.md
-  - name: Create templates for the CLI
-    items:
-    - name: 1 - Create an item template
-      href: tutorials/cli-templates-create-item-template.md
-    - name: 2 - Create a project template
-      href: tutorials/cli-templates-create-project-template.md
-    - name: 3 - Create a template pack
-      href: tutorials/cli-templates-create-template-pack.md
-  - name: Create tools for the CLI
-    items:
-    - name: 1 - Create a tool
-      displayName: tools, tutorials
-      href: tools/global-tools-how-to-create.md
-    - name: 2 - Use a global tool
-      displayName: tools, tutorials
-      href: tools/global-tools-how-to-use.md
-    - name: 3 - Use a local tool
-      href: tools/local-tools-how-to-use.md
-      displayName: tools, tutorials
 - name: Project SDKs
   items:
   - name: Overview
@@ -365,32 +396,40 @@
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
 - name: Unit testing
-  href: testing/index.md
+  displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:
   - name: Overview
     href: testing/index.md
   - name: Unit testing best practices
     href: testing/unit-testing-best-practices.md
-  - name: C# unit testing with xUnit
-    href: testing/unit-testing-with-dotnet-test.md
-  - name: C# unit testing with NUnit
-    href: testing/unit-testing-with-nunit.md
-  - name: C# unit testing with MSTest
-    href: testing/unit-testing-with-mstest.md
-  - name: F# unit testing with xUnit
-    href: testing/unit-testing-fsharp-with-dotnet-test.md
-  - name: F# unit testing with NUnit
-    href: testing/unit-testing-fsharp-with-nunit.md
-  - name: F# unit testing with MSTest
-    href: testing/unit-testing-fsharp-with-mstest.md
-  - name: VB unit testing with xUnit
-    href: testing/unit-testing-visual-basic-with-dotnet-test.md
-  - name: VB unit testing with NUnit
-    href: testing/unit-testing-visual-basic-with-nunit.md
-  - name: VB unit testing with MSTest
-    href: testing/unit-testing-visual-basic-with-mstest.md
+  - name: xUnit
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-dotnet-test.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-dotnet-test.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-dotnet-test.md
+  - name: NUnit
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-nunit.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-nunit.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-nunit.md
+  - name: MSTest
+    items:
+    - name: C# unit testing
+      href: testing/unit-testing-with-mstest.md
+    - name: F# unit testing
+      href: testing/unit-testing-fsharp-with-mstest.md
+    - name: VB unit testing
+      href: testing/unit-testing-visual-basic-with-mstest.md
   - name: Run selective unit tests
     href: testing/selective-unit-tests.md
+  - name: Order unit tests
+    href: testing/order-unit-tests.md
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio
@@ -433,6 +472,8 @@
   href: distribution-packaging.md
 - name: Expose .NET Core components to COM
   href: native-interop/expose-components-to-com.md
+- name: Host .NET Core from native code
+  href: tutorials/netcore-hosting.md
 - name: Packages, metapackages, and frameworks
   href: packages.md
 - name: Continuous integration

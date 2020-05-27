@@ -22,12 +22,12 @@ Provides methods for participating in the scheduling of threads that would other
   
 |Method|Description|  
 |------------|-----------------|  
-|[SuspensionEnding Method](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-suspensionending-method.md)|Notifies the host that the runtime is resuming threads after a garbage collection or other suspension.|  
-|[SuspensionStarting Method](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-suspensionstarting-method.md)|Notifies the host that the runtime is beginning a thread suspension for a garbage collection or other suspension.|  
-|[ThreadIsBlockingForSuspension Method](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-threadisblockingforsuspension-method.md)|Notifies the host that the thread making the call is about to block, perhaps for a garbage collection or other suspension.|  
+|[SuspensionEnding Method](igcthreadcontrol-suspensionending-method.md)|Notifies the host that the runtime is resuming threads after a garbage collection or other suspension.|  
+|[SuspensionStarting Method](igcthreadcontrol-suspensionstarting-method.md)|Notifies the host that the runtime is beginning a thread suspension for a garbage collection or other suspension.|  
+|[ThreadIsBlockingForSuspension Method](igcthreadcontrol-threadisblockingforsuspension-method.md)|Notifies the host that the thread making the call is about to block, perhaps for a garbage collection or other suspension.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -37,4 +37,4 @@ Provides methods for participating in the scheduling of threads that would other
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

@@ -20,11 +20,11 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.DataGridTableStyle>
 - <xref:System.Windows.Forms.DataGridTextBox>
 - <xref:System.Windows.Forms.DataGridTextBoxColumn>
-- <xref:System.Windows.Forms.Design.IMenuEditorService>
 - <xref:System.Windows.Forms.GridColumnStylesCollection>
 - <xref:System.Windows.Forms.GridTablesFactory>
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.IDataGridEditingService>
+- <xref:System.Windows.Forms.Design.IMenuEditorService>
 - <xref:System.Windows.Forms.MainMenu>
 - <xref:System.Windows.Forms.Menu>
 - <xref:System.Windows.Forms.Menu.MenuItemCollection>

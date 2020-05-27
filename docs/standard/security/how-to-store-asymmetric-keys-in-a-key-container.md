@@ -19,21 +19,21 @@ ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 
 # Store asymmetric keys in a key container
 
-Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more information on key containers, see [understanding machine-level and user-level RSA key containers](https://docs.microsoft.com/previous-versions/aspnet/f5cs0acs(v=vs.100)).
+Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, use a key container. For more information on key containers, see [Understanding machine-level and user-level RSA key containers](https://docs.microsoft.com/previous-versions/aspnet/f5cs0acs(v=vs.100)).
 
-### To create an asymmetric key and save it in a key container
+## Create an asymmetric key and save it in a key container
 
 1. Create a new instance of a <xref:System.Security.Cryptography.CspParameters> class and pass the name that you want to call the key container to the <xref:System.Security.Cryptography.CspParameters.KeyContainerName?displayProperty=nameWithType> field.
 
 1. Create a new instance of a class that derives from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class (usually <xref:System.Security.Cryptography.RSACryptoServiceProvider> or <xref:System.Security.Cryptography.DSACryptoServiceProvider>) and pass the previously created `CspParameters` object to its constructor.
 
 > [!NOTE]
-> The creation and retrieval of an asymmetric key is one in the same. If a key is not already in the container is it created before being returned, otherwise just returned.
+> The creation and retrieval of an asymmetric key is one operation. If a key is not already in the container, it's created before being returned.
 >
 > - <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType>
 > - <xref:System.Security.Cryptography.DSA.ToXmlString%2A?displayProperty=nameWithType>
 
-### To delete the key from a key container
+## Delete the key from the key container
 
 1. Create a new instance of a `CspParameters` class and pass the name that you want to call the key container to the <xref:System.Security.Cryptography.CspParameters.KeyContainerName?displayProperty=nameWithType> field.
 
@@ -47,7 +47,12 @@ Asymmetric private keys should never be stored verbatim or in plain text on the 
 
 The following example demonstrates how to create an asymmetric key, save it in a key container, retrieve the key at a later time, and delete the key from the container.
 
-Notice that code in the `GenKey_SaveInContainer` method and the `GetKeyFromContainer` method is similar.  When you specify a key container name for a <xref:System.Security.Cryptography.CspParameters> object and pass it to an <xref:System.Security.Cryptography.AsymmetricAlgorithm> object with the <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp%2A> property or <xref:System.Security.Cryptography.DSACryptoServiceProvider.PersistKeyInCsp%2A> property set to true, the following occurs.  If a key container with the specified name does not exist, then one is created and the key is persisted.  If a key container with the specified name does exist, then the key in the container is automatically loaded into the current <xref:System.Security.Cryptography.AsymmetricAlgorithm> object.  Therefore, the code in the `GenKey_SaveInContainer` method persists the key because it is run first, while the code in the `GetKeyFromContainer` method loads the key because it is run second.
+Notice that code in the `GenKey_SaveInContainer` method and the `GetKeyFromContainer` method is similar. When you specify a key container name for a <xref:System.Security.Cryptography.CspParameters> object and pass it to an <xref:System.Security.Cryptography.AsymmetricAlgorithm> object with the <xref:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp%2A> property or <xref:System.Security.Cryptography.DSACryptoServiceProvider.PersistKeyInCsp%2A> property set to `true`, the behavior is as follows:
+
+- If a key container with the specified name does not exist, then one is created and the key is persisted.
+- If a key container with the specified name does exist, then the key in the container is automatically loaded into the current <xref:System.Security.Cryptography.AsymmetricAlgorithm> object.
+
+Therefore, the code in the `GenKey_SaveInContainer` method persists the key because it is run first, while the code in the `GetKeyFromContainer` method loads the key because it's run second.
 
 ```vb
 Imports System
@@ -217,6 +222,8 @@ public class StoreKey
     }
 }
 ```
+
+The output is as follows:
 
 ```console
 Key added to container:

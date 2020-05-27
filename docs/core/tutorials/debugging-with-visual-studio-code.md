@@ -101,7 +101,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
 The program displays the string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*.
 
-1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
+1. Right-click (<kbd>Ctrl</kbd>+click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
 
@@ -139,7 +139,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Another way to clear a breakpoint is by pressing <kbd>F9</kbd> while the line of code is selected.
 
-1. When you get a warning that the breakpoint condition will be lost, select **Remove Breakpoint**.
+1. If you get a warning that the breakpoint condition will be lost, select **Remove Breakpoint**.
 
 ## Step through a program
 
@@ -153,35 +153,39 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
    At this point, the **Variables** window shows that the `args` array is empty, and `name` and `date` have default values.
 
-1. Press <kbd>F11</kbd> to advance one line.
+1. Select **Step Into** or press <kbd>F11</kbd>.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Step-Into button":::
 
    Visual Studio Code highlights the next line.
 
-1. Press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code executes the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
 
-1. Press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio highlights the `name` variable assignment. The **Variables** window shows that `name` is still `null`.
 
 1. Respond to the prompt by entering a string in the Terminal tab and pressing <kbd>Enter</kbd>.
 
-   The **Terminal** tab is unresponsive, and the string you entered isn't displayed in it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will captures your input.
+   The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
-1. Press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code highlights the `date` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
 
-1. Press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    The **Variables** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property.
 
-1. Press <kbd>F11</kbd>.
+1. Select **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The console window displays the formatted string.
 
-1. Choose **Run** > **Step Out** from the main menu. Another way to stop step-by-step execution is by pressing <kbd>Shift</kbd>+<kbd>F11</kbd>.
+1. Select **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
 
 1. Select the **Terminal** tab.
 

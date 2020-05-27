@@ -18,7 +18,7 @@ This tutorial shows how to create and run a .NET Core console application by usi
 
 1. Create a project.
 
-   1. Select **File** > **Open Folder** from the main menu, use the **Open Folder** dialog to create a *HelloWorld* folder, and click **Select Folder**.
+   1. Select **File** > **Open Folder**/**Open...** from the main menu, create a *HelloWorld* folder, and click **Select Folder**/**Open**.
 
       The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
 

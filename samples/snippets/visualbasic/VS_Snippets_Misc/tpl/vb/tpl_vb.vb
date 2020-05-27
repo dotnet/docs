@@ -120,7 +120,7 @@ Class IntroCancellation
         taskArray(2) = Task(Of Double).Factory.StartNew(Function() DoComputation3())
 
 
-        Dim results(taskArray.Length) As Double
+        Dim results(taskArray.Length - 1) As Double
         For i As Integer = 0 To taskArray.Length - 1
             results(i) = taskArray(i).Result
         Next

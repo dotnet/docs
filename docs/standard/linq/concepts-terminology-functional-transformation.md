@@ -76,4 +76,4 @@ These language features will be used in code samples throughout this section.
 ## See also
 
 - [Introduction to pure functional transformations](pure-functional-transformations.md)
-- [Functional programming vs. imperative programming](functional-programming-vs-imperative-programming.md)
+- [Functional programming vs. imperative programming](functional-vs-imperative-programming.md)

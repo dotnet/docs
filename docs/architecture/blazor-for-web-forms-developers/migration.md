@@ -120,7 +120,7 @@ public class Global : HttpApplication, IContainerProviderAccessor
     }
 
     /// <summary>
-    /// http://docs.autofac.org/en/latest/integration/webforms.html
+    /// https://autofaccn.readthedocs.io/en/latest/integration/webforms.html
     /// </summary>
     private void ConfigureContainer()
     {

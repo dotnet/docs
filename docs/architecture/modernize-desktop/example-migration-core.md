@@ -38,7 +38,7 @@ Once you've migrated the package references, you must check each reference for c
 
 ![Screenshot of the NuGet dependencies for the Castle.Windsor package](./media/example-migration-core/nuget-dependencies.png)
 
-To check the package compatibility, you can use the tool <http://fuget.org> that offers a more detailed information about versions and dependencies.
+To check the package compatibility, you can use the tool <https://fuget.org> that offers a more detailed information about versions and dependencies.
 
 Maybe the project is referencing older package versions that don't support .NET Core, but you might find newer versions that do support it. So, updating packages to newer versions is generally a good recommendation. However, you should consider that updating the package version can introduce some breaking changes that would force you to update your code.
 
@@ -128,7 +128,7 @@ For example, if you use configuration files (*app.config*), you may find some er
 
 Another reason for errors is the use of the `BeginInvoke` and `EndInvoke` methods because they aren't supported on .NET Core. They aren't supported on .NET Core because they have a dependency on Remoting, which doesn't exist on .NET Core. To solve this issue, try to use the `await` keyword (when available) or the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
 
-You can use compatibility analyzers to let you identify APIs and code patterns in your code that can potentially cause problems at run time with .NET Core. Go to <http://github.com/dotnet/platform-compat> and use the .NET API analyzer on your project.
+You can use compatibility analyzers to let you identify APIs and code patterns in your code that can potentially cause problems at run time with .NET Core. Go to <https://github.com/dotnet/platform-compat> and use the .NET API analyzer on your project.
 
 ## Migrating a Windows Forms application
 

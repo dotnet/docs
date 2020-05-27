@@ -31,7 +31,7 @@ In *pure functional transformation*, a set of functions, called *pure functions*
 
 Historically, general-purpose functional programming languages, such as ML, Scheme, Haskell, and F#, have been primarily of interest to the academic community. Although it has always been possible to write pure functional transformations in C# and Visual Basic, the difficulty of doing so has not made it an attractive option to most programmers. In recent versions of these languages, however, new language constructs such as lambda expressions and type inference make functional programming much easier and more productive.
 
-For more information about functional programming, see [Functional programming vs. imperative programming](functional-programming-vs-imperative-programming.md).
+For more information about functional programming, see [Functional programming vs. imperative programming](functional-vs-imperative-programming.md).
 
 #### Domain-specific functional programming languages
 

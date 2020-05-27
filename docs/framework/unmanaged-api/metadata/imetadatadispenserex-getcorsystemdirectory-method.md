@@ -40,7 +40,7 @@ HRESULT GetCORSystemDirectory (
  [out] The number of bytes actually returned in `szBuffer`.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,5 +50,5 @@ HRESULT GetCORSystemDirectory (
   
 ## See also
 
-- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](imetadatadispenser-interface.md)

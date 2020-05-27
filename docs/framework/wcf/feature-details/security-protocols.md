@@ -10,21 +10,21 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
 |Specification/Document|Link|  
 |-|-|  
-|WSS: SOAP Message Security 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf|  
-|WSS: Username Token Profile 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf|  
-|WSS: X509 Token Profile 1.0|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf|  
-|WSS: SAML 1.1 Token Profile 1.0|http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf|  
-|WSS: SOAP Message Security 1.1|http://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf|  
-|WSS Username Token Profile 1.1|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf|  
-|WSS: X.509 Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf|  
-|WSS: Kerberos Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf|  
-|WSS: SAML 1.1 Token Profile 1.1|http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf|  
-|WS-Secure Conversation 1.3|http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf|  
-|WS-Trust 1.3|http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.pdf|  
+|WSS: SOAP Message Security 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>|  
+|WSS: Username Token Profile 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|  
+|WSS: X509 Token Profile 1.0|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf>|  
+|WSS: SAML 1.1 Token Profile 1.0|<http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf>|  
+|WSS: SOAP Message Security 1.1|<http://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>|  
+|WSS Username Token Profile 1.1|<http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|  
+|WSS: X.509 Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>|  
+|WSS: Kerberos Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|  
+|WSS: SAML 1.1 Token Profile 1.1|<http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|  
+|WS-Secure Conversation 1.3|<http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf>|  
+|WS-Trust 1.3|<http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.pdf>|  
 |Application Note:<br /><br /> Using WS-Trust for TLS Handshake|To be published|  
 |Application Note:<br /><br /> Using WS-Trust for SPNEGO|To be published|  
 |Application Note:<br /><br /> Web Services Addressing Endpoint References And Identity|To be published|  
-|WS-SecurityPolicy 1.2 (2007/04)|http://www.oasis-open.org/committees/download.php/23821/ws-securitypolicy-1.2-spec-cs.pdf|  
+|WS-SecurityPolicy 1.2 (2007/04)|<http://www.oasis-open.org/committees/download.php/23821/ws-securitypolicy-1.2-spec-cs.pdf>|  
   
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
@@ -64,18 +64,18 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|s|http://www.w3.org/2003/05/soap-envelope|  
-|sp|http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702|  
-|a|http://www.w3.org/2005/08/addressing|  
+|s|`http://www.w3.org/2003/05/soap-envelope`|  
+|sp|`http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702`|  
+|a|`http://www.w3.org/2005/08/addressing`|  
 |wsse|TBD – OASIS WSS 1.0 URI|  
 |wsse11|TBD – OASIS WSS 1.1 URI|  
-|wsu|http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd|  
+|wsu|`http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd`|  
 |ds|TBD – W3C XMLDSig URI|  
 |wst|TBD – WS-Trust 2005/02 URI|  
 |wssc|TBD – WS-SecureConversation 2005/02 URI|  
-|wsaw|http://www.w3.org/2006/05/addressing/wsdl|  
-|wsp|http://schemas.xmlsoap.org/ws/2004/09/policy|  
-|mssp|http://schemas.microsoft.com/ws/2005/07/securitypolicy|  
+|wsaw|`http://www.w3.org/2006/05/addressing/wsdl`|  
+|wsp|`http://schemas.xmlsoap.org/ws/2004/09/policy`|  
+|mssp|`http://schemas.microsoft.com/ws/2005/07/securitypolicy`|  
   
 ## 1. Token Profiles  
  Web Services Security specifications represent credential as security tokens. WCF supports the following token types:  

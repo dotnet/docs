@@ -42,7 +42,7 @@ There is only one application architecture: the architecture of the system or en
   <https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf>
 
 - **Udi Dahan. Clarified CQRS** \
-  <http://udidahan.com/2009/12/09/clarified-cqrs/>
+  <https://udidahan.com/2009/12/09/clarified-cqrs/>
 
 >[!div class="step-by-step"]
 >[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)

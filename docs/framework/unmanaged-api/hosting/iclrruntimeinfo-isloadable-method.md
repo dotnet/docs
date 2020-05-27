@@ -39,7 +39,7 @@ HRESULT IsLoadable(
 |E_POINTER|`pbLoadable` is null.|  
   
 ## Remarks  
- If another runtime is already loaded into the process and the runtime associated with this interface can be loaded for in-process side-by-side execution, `pbLoadable` returns `true`. If the two runtimes cannot run side-by-side in-process, `pbLoadable` returns `false`. For example, the common language runtime (CLR) version 4 can run side-by-side in the same process with CLR version 2.0 or CLR version 1.1. However, CLR version 1.1 and CLR version 2.0 cannot run side-by-side in-process.  
+ If another runtime is already loaded into the process, and the runtime associated with this interface can be loaded for in-process side-by-side execution, `pbLoadable` returns `true`. If the two runtimes cannot run side-by-side in-process, `pbLoadable` returns `false`. For example, the common language runtime (CLR) version 4 can run side-by-side in the same process with CLR version 2.0 or CLR version 1.1. However, CLR version 1.1 and CLR version 2.0 cannot run side-by-side in-process.  
   
  If no runtimes are loaded into the process, this method always returns `true`.  
   

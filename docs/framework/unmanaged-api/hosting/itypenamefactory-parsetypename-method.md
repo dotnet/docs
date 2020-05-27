@@ -30,7 +30,7 @@ HRESULT ParseTypeName (
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -40,4 +40,4 @@ HRESULT ParseTypeName (
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

@@ -44,7 +44,7 @@ HRESULT OpenScopeOnITypeInfo (
  [out] Pointer to a pointer to the returned interface.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,5 +54,5 @@ HRESULT OpenScopeOnITypeInfo (
   
 ## See also
 
-- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](imetadatadispenser-interface.md)

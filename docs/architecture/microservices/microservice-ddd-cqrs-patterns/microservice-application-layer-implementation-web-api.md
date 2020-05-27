@@ -209,7 +209,7 @@ The following example shows the simplified `CreateOrderCommand` class. This is a
 // plus being able to update the data just once, when creating the object
 // through the constructor.
 // References on immutable commands:
-// http://cqrs.nu/Faq
+// https://cqrs.nu/Faq
 // https://docs.spine3.org/motivation/immutability.html
 // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
 // https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties

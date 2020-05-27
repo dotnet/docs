@@ -11,7 +11,7 @@ ms.custom: how-to
 
 In most cases, on all operating systems, installing ML.NET is as simple as referencing the appropriate NuGet package.
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.ML
 ```
 

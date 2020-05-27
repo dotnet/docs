@@ -48,4 +48,4 @@ HRESULT GetNamespaces(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)

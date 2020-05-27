@@ -70,4 +70,4 @@ dotnet remove package Microsoft.EntityFrameworkCore
 ## See also
 
 * [Package references in project files](../project-sdk/msbuild-props.md#reference-properties-and-items)
-* [dotnet list package command](dotnet-remove-package.md)
+* [dotnet list package command](dotnet-list-package.md)

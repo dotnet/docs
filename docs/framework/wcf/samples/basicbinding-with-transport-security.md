@@ -50,7 +50,7 @@ The program code in the sample is identical to that of the [Getting Started](../
 </system.serviceModel>
 ```
 
-Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an HTTPS: address in your browser, such as https://localhost/servicemodelsamples/service.svc. To allow the Windows Communication Foundation (WCF) client to work with a test certificate, some additional code is added to the client to suppress the security alert. This code, and the accompanying class, is not necessary when using real certificates.
+Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an HTTPS: address in your browser, such as `https://localhost/servicemodelsamples/service.svc`. To allow the Windows Communication Foundation (WCF) client to work with a test certificate, some additional code is added to the client to suppress the security alert. This code, and the accompanying class, is not necessary when using real certificates.
 
 ```csharp
 // This code is required only for test certificates such as those

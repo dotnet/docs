@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Core Uninstall Tool, a guided tool that enables the controlled clean-up of .NET Core SDKs and runtimes.
 author: sfoslund
-ms.date: 01/06/2020
+ms.date: 05/27/2020
 ---
 # .NET Core Uninstall Tool
 
@@ -60,7 +60,7 @@ dotnet-core-uninstall list [options]
 
 * **`--hosting-bundle`**
 
-  Lists all the .NET Core runtime and hosting bundles that can be uninstalled with this tool.
+  Lists all the .NET Core hosting bundles that can be uninstalled with this tool.
 
 * **`--runtime`**
 

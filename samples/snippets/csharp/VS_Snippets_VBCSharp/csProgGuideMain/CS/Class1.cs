@@ -86,27 +86,6 @@
     */
     //</Snippet9>
 
-    //<Snippet11>
-    class CommandLine2
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine($"Number of command line parameters = {args.Length}");
-
-            foreach (string s in args)
-            {
-                Console.WriteLine(s);
-            }
-        }
-    }
-    /* Output:
-        Number of command line parameters = 3
-        John
-        Paul
-        Mary
-    */
-    //</Snippet11>
-
     //<Snippet17>
     class TestClass
     {

@@ -28,4 +28,4 @@ HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);
   
 ## See also
 
-- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+- [ISymUnmanagedAsyncMethod Interface](isymunmanagedasyncmethod-interface.md)

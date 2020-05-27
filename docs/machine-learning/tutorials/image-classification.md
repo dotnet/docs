@@ -61,7 +61,7 @@ Image Classification is a common Machine Learning task that allows us to automat
 >[!Note]
 > The preceding images belong to Wikimedia Commons and are attributed as follows:
 >
-> * "220px-Pepperoni_pizza.jpg" Public Domain, [https://commons.wikimedia.org/w/index.php?curid=79505](https://commons.wikimedia.org/w/index.php?curid=79505).
+> * "220px-Pepperoni_pizza.jpg" Public Domain, <https://commons.wikimedia.org/w/index.php?curid=79505>.
 > * "119px-Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, <https://commons.wikimedia.org/w/index.php?curid=48166>.
 > * "193px-Broodrooster.jpg" By [M.Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972) - Own work, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=27403>.
 

@@ -32,10 +32,10 @@ HRESULT MarkToken (
  [in] The metadata token to be processed.  
   
 ## Remarks  
- Typically, you want a token to be processed if it is in the metadata scope. The `MarkToken` method is passed to the metadata engine via the [IMetaDataEmit::SetHandler](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-sethandler-method.md) method.  
+ Typically, you want a token to be processed if it is in the metadata scope. The `MarkToken` method is passed to the metadata engine via the [IMetaDataEmit::SetHandler](imetadataemit-sethandler-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -45,5 +45,5 @@ HRESULT MarkToken (
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
-- [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)
+- [Metadata Interfaces](metadata-interfaces.md)
+- [IHostFilter Interface](ihostfilter-interface.md)

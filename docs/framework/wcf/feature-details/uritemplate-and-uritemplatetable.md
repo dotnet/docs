@@ -36,15 +36,15 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  <xref:System.UriTemplate> is designed to work with any URI scheme that conforms to the HTTP URI grammar. The following are examples of supported URI schemes.  
   
-- http://  
+- `http://`  
   
-- https://  
+- `https://`  
   
-- net.tcp://  
+- `net.tcp://`  
   
-- net.pipe://  
+- `net.pipe://`  
   
-- sb://  
+- `sb://`  
   
  Schemes like file:// and urn:// do not conform to the HTTP URI grammar and cause unpredictable results when used with URI templates.  
   

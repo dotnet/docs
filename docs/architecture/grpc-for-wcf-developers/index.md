@@ -26,7 +26,7 @@ This book is provided "as-is" and expresses the author's views and opinions. The
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at https://www.microsoft.com on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
 
 The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.
 

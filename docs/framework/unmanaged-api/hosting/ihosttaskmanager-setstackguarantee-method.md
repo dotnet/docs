@@ -28,7 +28,7 @@ HRESULT SetStackGuarantee(
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,5 +38,5 @@ HRESULT SetStackGuarantee(
   
 ## See also
 
-- [GetStackGuarantee Method](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-getstackguarantee-method.md)
-- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [GetStackGuarantee Method](ihosttaskmanager-getstackguarantee-method.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

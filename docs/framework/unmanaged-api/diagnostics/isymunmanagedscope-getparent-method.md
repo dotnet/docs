@@ -28,7 +28,7 @@ HRESULT GetParent(
   
 ## Parameters  
  `pRetVal`  
- [out] A pointer to the returned [ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) interface.  
+ [out] A pointer to the returned [ISymUnmanagedScope](isymunmanagedscope-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -38,5 +38,5 @@ HRESULT GetParent(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [GetChildren Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getchildren-method.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)
+- [GetChildren Method](isymunmanagedscope-getchildren-method.md)

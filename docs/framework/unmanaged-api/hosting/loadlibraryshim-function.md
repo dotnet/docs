@@ -19,7 +19,7 @@ topic_type:
 # LoadLibraryShim Function
 Loads a specified version of a DLL that is included in the .NET Framework redistributable package.  
   
- This function has been deprecated in the .NET Framework 4. Use the [ICLRRuntimeInfo::LoadLibrary](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-loadlibrary-method.md) method instead.  
+ This function has been deprecated in the .NET Framework 4. Use the [ICLRRuntimeInfo::LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) method instead.  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ HRESULT LoadLibraryShim (
 > Beginning with the .NET Framework version 2.0, loading Fusion.dll causes the CLR to be loaded. This is because the functions in Fusion.dll are now wrappers whose implementations are provided by the runtime.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -68,4 +68,4 @@ HRESULT LoadLibraryShim (
   
 ## See also
 
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

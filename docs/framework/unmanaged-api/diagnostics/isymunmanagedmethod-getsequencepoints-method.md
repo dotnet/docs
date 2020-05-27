@@ -66,4 +66,4 @@ HRESULT GetSequencePoints(
   
 ## See also
 
-- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

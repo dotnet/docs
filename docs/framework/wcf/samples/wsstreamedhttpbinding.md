@@ -131,7 +131,7 @@ public class StreamedEchoService : IStreamedEchoService
 
 ## The WSStreamedHttpBinding Sample Client
 
-The client that is used to interact with the service using `WSStreamedHttpBinding` is located in the client subdirectory. Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert displays when you attempt to access an HTTPS address in your browser such as https://localhost/servicemodelsamples/service.svc. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. The code and the accompanying class are not required when using production certificates.
+The client that is used to interact with the service using `WSStreamedHttpBinding` is located in the client subdirectory. Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert displays when you attempt to access an HTTPS address in your browser such as `https://localhost/servicemodelsamples/service.svc`. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. The code and the accompanying class are not required when using production certificates.
 
 ```csharp
 // WARNING: This code is only required for test certificates such as those created by makecert. It is

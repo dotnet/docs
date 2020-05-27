@@ -2,12 +2,10 @@
 title: Distributed data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 04/24/2020
+ms.date: 05/13/2020
 ---
 
 # Distributed data
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 As we've seen throughout this book, a cloud-native approach changes the way you design, deploy, and manage applications. It also changes the way you manage and store data.
 
@@ -117,7 +115,7 @@ Figure 5-7 shows an implementation of the CQRS pattern.
 
 **Figure 5-7**. CQRS implementation
 
-In the previous figure, separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the data propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/). The read model eventually synchronizes with the write model, but there may be some lag in the process. We discuss eventual consistency in the next section.
+In the previous figure, separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the data propagation process operates on the principle of [eventual consistency](https://www.cloudcomputingpatterns.org/eventual_consistency/). The read model eventually synchronizes with the write model, but there may be some lag in the process. We discuss eventual consistency in the next section.
 
 This separation enables reads and writes to scale independently. Read operations use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those exposing reads.
 

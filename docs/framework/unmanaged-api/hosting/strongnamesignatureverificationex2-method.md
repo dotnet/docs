@@ -50,7 +50,7 @@ HRESULT StrongNameSignatureVerificationEx (
  `S_OK` if the verification was successful; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -60,6 +60,6 @@ HRESULT StrongNameSignatureVerificationEx (
   
 ## See also
 
-- [StrongNameSignatureVerification Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignatureverification-method.md)
-- [StrongNameSignatureVerificationEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignatureverificationex-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameSignatureVerification Method](iclrstrongname-strongnamesignatureverification-method.md)
+- [StrongNameSignatureVerificationEx Method](iclrstrongname-strongnamesignatureverificationex-method.md)
+- [ICLRStrongName Interface](iclrstrongname-interface.md)

@@ -164,7 +164,7 @@ Public Class MyApplicationContext
         Dim data As String
 
         If (_userData.Length <> 0) Then
-            Dim dataToRead(_userData.Length) As Byte
+            Dim dataToRead(_userData.Length - 1) As Byte
 
             Try
                 ' Set the read position to the start of the file and read.

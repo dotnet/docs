@@ -30,4 +30,4 @@ STDAPI_(void) CoUninitializeCor(void);
   
 ## See also
 
-- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

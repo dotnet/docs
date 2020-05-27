@@ -20,7 +20,7 @@ The <xref:System.Threading.Tasks.Task%601> return type is used for an async meth
   
 In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a string.
   
-:::code language="csharp" source="./snippets/async-returns1.cs" id="SnippetFirstExample":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns1.cs" id="SnippetFirstExample":::
 
 When `GetLeisureHours` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../../../language-reference/operators/await.md).  
   
@@ -29,14 +29,14 @@ You can better understand how `await` retrieves the result from a `Task<T>` by s
 > [!IMPORTANT]
 > The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly. <br/> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `ShowTodaysInfo` method could finish execution before the application ended.  
 
-:::code language="csharp" source="./snippets/async-returns1a.cs" id="SnippetSecondVersion":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns1a.cs" id="SnippetSecondVersion":::
 
 ## Task Return Type  
 Async methods that don't contain a `return` statement or that contain a `return` statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods return `void` if they run synchronously. If you use a <xref:System.Threading.Tasks.Task> return type for an async method, a calling method can use an `await` operator to suspend the caller's completion until the called async method has finished.  
   
 In the following example, the `WaitAndApologize` async method doesn't contain a `return` statement, so the method returns a <xref:System.Threading.Tasks.Task> object. Returning a `Task` enables `WaitAndApologize` to be awaited. The <xref:System.Threading.Tasks.Task> type doesn't include a `Result` property because it has no return value.  
 
-:::code language="csharp" source="./snippets/async-returns2.cs" id="SnippetTaskReturn":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns2.cs" id="SnippetTaskReturn":::
 
 `WaitAndApologize` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value.  
   
@@ -44,7 +44,7 @@ As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separ
   
 The following code separates calling the `WaitAndApologize` method from awaiting the task that the method returns.  
 
-:::code language="csharp" source="./snippets/async-returns2a.cs" id="SnippetAwaitTask":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns2a.cs" id="SnippetAwaitTask":::
 
 ## Void return type
 
@@ -56,7 +56,7 @@ For more information about how to catch exceptions in async methods, see the [Ex
   
 The following example shows the behavior of an async event handler. In the example code, an async event handler must let the main thread know when it finishes. Then the main thread can wait for an async event handler to complete before exiting the program.
 
-:::code language="csharp" source="./snippets/async-returns3.cs":::
+:::code language="csharp" source="./snippets/async-return-types/async-returns3.cs":::
 
 ## Generalized async return types and ValueTask\<TResult\>
 
@@ -66,13 +66,13 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
 
 .NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls.
   
-:::code language="csharp" source="./snippets/async-valuetask.cs":::
+:::code language="csharp" source="./snippets/async-return-types/async-valuetask.cs":::
 
 ## Async streams with IAsyncEnumerable\<T\>
 
 Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
-:::code language="csharp" source="./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
+:::code language="csharp" source="./snippets/async-return-types/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
 
 The preceding example reads lines from a string asynchronously. Once each line is read, the code enumerates each word in the string. Callers would enumerate each word using the `await foreach` statement. The method awaits when it needs to asynchronously read the next line from the source string.
 

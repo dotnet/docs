@@ -19,7 +19,7 @@ public delegate void EventHandler(object sender, EventArgs e);
 
 Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the .NET Framework pattern by using <xref:System.EventHandler>, as shown in the following example.
 
-The name `EventHandler` can lead to a bit of confusion, as the delegate itself doesn't actually handle the event but instead is used to raise the event. The <xref:System.EventHandler>, and generic <xref:System.EventHandler%601> are intended to represent a method that will handle an event.
+The name `EventHandler` can lead to a bit of confusion as it doesn't actually handle the event. The <xref:System.EventHandler>, and generic <xref:System.EventHandler%601> are delegate types. A method or lambda expression whose signature matches the delegate definition is the *event handler* and will be invoked when the event is raised.
 
 ### To publish events based on the EventHandler pattern
 

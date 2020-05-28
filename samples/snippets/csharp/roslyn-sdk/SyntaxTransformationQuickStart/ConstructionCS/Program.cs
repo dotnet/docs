@@ -56,7 +56,7 @@ namespace HelloWorld
             // <SnippetBuildNewUsing>
             var oldUsing = root.Usings[1];
             var newUsing = oldUsing.WithName(name);
-            WriteLine(root.ToString());
+            Console.WriteLine(root.ToString());
             // </SnippetBuildNewUsing>
 
             Console.WriteLine();

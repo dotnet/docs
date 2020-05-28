@@ -10,7 +10,7 @@ ms.assetid: 2aa2ccac-4a22-47ae-9107-3bb8df232576
 
 # How to populate an XML tree from the file system (LINQ to XML)
 
-A common and useful application of XML trees is as a hierarchical name/value data store. You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it. For this use, many of the XML-specific semantics, such as namespaces and white space behavior, aren't important. Instead, you're using the XML tree as a small, in-memory, single-user hierarchical database.
+A common and useful application of XML trees is as a hierarchical name-value data store. You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it. For this use, many of the XML-specific semantics, such as namespaces and white space behavior, aren't important. Instead, you're using the XML tree as a small, in-memory, single-user hierarchical database.
 
 ## Example: Populate an XML tree and then query it
 

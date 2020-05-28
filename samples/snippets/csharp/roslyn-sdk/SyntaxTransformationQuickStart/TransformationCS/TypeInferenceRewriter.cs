@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
+using Microsoft.CodeAnalysis.CSharp;
 // </SnippetAddUsings>
 
 namespace TransformationCS
@@ -47,7 +47,7 @@ namespace TransformationCS
             // <SnippetReplaceNode>
             if (variableType == initializerInfo.Type)
             {
-                TypeSyntax varTypeName = IdentifierName("var")
+                TypeSyntax varTypeName = SyntaxFactory.IdentifierName("var")
                     .WithLeadingTrivia(variableTypeName.GetLeadingTrivia())
                     .WithTrailingTrivia(variableTypeName.GetTrailingTrivia());
 

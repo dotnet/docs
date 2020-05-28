@@ -1,12 +1,13 @@
 ---
-title: "Strongly-Typed Extensions Sample"
+title: "Strongly typed Extensions Sample"
 ms.date: "03/30/2017"
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
 ---
-# Strongly-Typed Extensions Sample
+# Strongly typed extensions sample
+
 The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class for the purposes of the example. However, the patterns demonstrated in this sample can be used with all of the Syndication classes that support extension data.  
   
- The Syndication object model (<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, and related classes) supports loosely-typed access to extension data by using the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> and <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> properties. This sample shows how to provide strongly-typed access to extension data by implementing custom derived classes of <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem> that make available certain application-specific extensions as strongly-typed properties.  
+ The Syndication object model (<xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, and related classes) supports loosely-typed access to extension data by using the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> and <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> properties. This sample shows how to provide strongly typed access to extension data by implementing custom derived classes of <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem> that make available certain application-specific extensions as strongly typed properties.  
   
  As an example, this sample shows how to implement an extension element defined in the proposed Atom Threading Extensions RFC. This is for demonstration purposes only and this sample is not intended to be a full implementation of the proposed specification.  
   
@@ -37,7 +38,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
  The `<in-reply-to>` element specifies three required attributes (`ref`, `type` and `href`) while also allowing for the presence of additional extension attributes and extension elements.  
   
 ## Modeling the In-Reply-To element  
- In this sample, the `<in-reply-to>` element is modeled as CLR that implements <xref:System.Xml.Serialization.IXmlSerializable>, which enables its use with the <xref:System.Runtime.Serialization.DataContractSerializer>. It also implements some methods and properties for accessing the element’s data, as shown in the following sample code.  
+ In this sample, the `<in-reply-to>` element is modeled as CLR that implements <xref:System.Xml.Serialization.IXmlSerializable>, which enables its use with the <xref:System.Runtime.Serialization.DataContractSerializer>. It also implements some methods and properties for accessing the element's data, as shown in the following sample code.  
   
 ```csharp  
 [XmlRoot(ElementName = "in-reply-to", Namespace = "http://contoso.org/syndication/thread/1.0")]  
@@ -205,7 +206,7 @@ public class ThreadedFeed : SyndicationFeed
 }  
 ```  
   
- The class `ThreadedItem` inherits from `SyndicationItem` and makes `InReplyToElement` as a strongly-typed property. This provides for convenient programmatic access to the `InReplyTo` extension data. It also implements `TryParseElement` and `WriteElementExtensions` for reading and writing its extension data, as shown in the following code.  
+ The class `ThreadedItem` inherits from `SyndicationItem` and makes `InReplyToElement` as a strongly typed property. This provides for convenient programmatic access to the `InReplyTo` extension data. It also implements `TryParseElement` and `WriteElementExtensions` for reading and writing its extension data, as shown in the following code.  
   
 ```csharp
 public class ThreadedItem : SyndicationItem  

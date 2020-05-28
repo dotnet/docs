@@ -30,9 +30,9 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
   
 |Scenario|Site bindings|Application path|Base application URIs|  
 |--------------|-------------------|----------------------|---------------------------|  
-|HTTP Only|http: *:80:\*|/appTwo|http://localhost/appTwo/|  
-|Both HTTP and Non-HTTP|http: *:80:\*<br /><br /> net.tcp: 808:\*|/appTwo|http://localhost/appTwo/<br />net.tcp://localhost/appTwo/|  
-|Non-HTTP only|net.pipe: *|/appThree|net.pipe://appThree/|  
+|HTTP Only|http: *:80:\*|/appTwo|`http://localhost/appTwo/`|  
+|Both HTTP and Non-HTTP|http: *:80:\*<br /><br /> net.tcp: 808:\*|/appTwo|`http://localhost/appTwo/`<br />`net.tcp://localhost/appTwo/`|  
+|Non-HTTP only|net.pipe: *|/appThree|`net.pipe://appThree/`|  
   
  Services and resources within an application can also be addressed. Within an application, application resources are addressed relative to the base application path. For example, assume that a site on a machine name contoso.com has site bindings for both the HTTP and Net.TCP protocols. Also assume that the site contains one application located at /Billing, which exposes a service at GetOrders.svc. Then, if the GetOrders.svc service exposed an endpoint with a relative address of SecureEndpoint, the service endpoint would be exposed at the following two URIs:  
   

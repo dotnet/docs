@@ -1,5 +1,4 @@
-﻿// <Snippet1>
-// <Snippet2>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -25,6 +24,7 @@ namespace GCNotify
         // simulate the server request workload.
         static List<byte[]> load = new List<byte[]>();
 
+        // <Snippet2>
         public static void Main(string[] args)
         {
             try
@@ -89,6 +89,7 @@ namespace GCNotify
                     + invalidOp.Message);
             }
         }
+        // </Snippet2>
 
         // <Snippet5>
         public static void OnFullGCApproachNotify()
@@ -219,5 +220,4 @@ namespace GCNotify
         // </Snippet9>
     }
 }
-// </Snippet2>
 // </Snippet1>

@@ -177,7 +177,7 @@ After the initial architecture and patterns explanation sections, the next secti
   <https://azure.microsoft.com/services/api-management/>
 
 - **Udi Dahan. Service Oriented Composition** \
-  <http://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
+  <https://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
 
 - **Clemens Vasters. Messaging and Microservices at GOTO 2016 (video)** \
   <https://www.youtube.com/watch?v=rXi5CLjIQ9k>

@@ -11,7 +11,7 @@ ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
 
 In some cases, you might want to project a query to a new type, but the query would be your only use for the new type. Rather than create the type, you can project to an anonymous type. Anonymous types provide a convenient way to encapsulate a set of read-only properties in an object without having to explicitly define a type first. If you write a query that creates an object of an anonymous type in the `select` clause, the query returns an <xref:System.Collections.IEnumerable> of the type.
 
-The following example shows shows creation of an object of an anonymous type that is initialized with two properties, `Amount` and `Message`.
+The following example shows shows creation of an object of an anonymous type that's initialized with two properties, `Amount` and `Message`.
 
 ```csharp
 var v = new { Amount = 108, Message = "Hello" };
@@ -25,8 +25,8 @@ The type of each property is inferred by the compiler. The type name is generate
 
 For more information about anonymous types, see:
 
-- [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types)
-- [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)
+- [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
 
 ## Example: Project an anonymous type by creating objects in the `select` clause
 
@@ -72,5 +72,5 @@ LETSS:Let's Stop N Shop:Jaime Yorres
 
 ## See also
 
-- [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types)
-- [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types)
+- [Anonymous Types (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [Anonymous Types (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)

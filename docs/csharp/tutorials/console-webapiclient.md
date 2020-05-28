@@ -43,10 +43,10 @@ create a new directory for your application. Make that the current
 directory. Enter the following command in a console window:
 
 ```dotnetcli
-dotnet new console --name WebApiClient
+dotnet new console --name WebAPIClient
 ```
 
-This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.
+This creates the starter files for a basic "Hello World" application. The project name is "WebAPIClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.
 
 Before you start making modifications, type
 `dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
@@ -105,9 +105,7 @@ for this method, because it does not contain any `await` operators and
 will run synchronously. Ignore that for now; you'll add `await` operators
 as you fill in the method.
 
-Next, rename the namespace defined in the `namespace` statement from its default of `ConsoleApp` to `WebAPIClient`. We'll later define a `repo` class in this namespace.
-
-Next, update the `Main` method to call this method. The
+Next, update the `Main` method to call the `ProcessRepositories` method. The
 `ProcessRepositories` method returns a task, and you shouldn't exit the
 program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword to that method call:
 
@@ -218,9 +216,10 @@ var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos
 var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 ```
 
-You're using a new namespace, so you'll need to add it at the top of the file as well:
+You're using new namespaces, so you'll need to add it at the top of the file as well:
 
 ```csharp
+using System.Collections.Generic;
 using System.Text.Json;
 ```
 

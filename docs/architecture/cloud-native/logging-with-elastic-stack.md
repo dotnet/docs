@@ -1,11 +1,10 @@
 ---
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
-ms.date: 02/05/2020
+ms.date: 05/13/2020
 ---
-# Logging with Elastic Stack
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Logging with Elastic Stack
 
 There are many good centralized logging tools and they vary in cost from being free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elastic search, Logstash, and Kibana.
 

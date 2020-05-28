@@ -10,9 +10,9 @@ public class Example
       var parent = Task.Run(() => {
             Console.WriteLine("Parent task executing.");
             var child = Task.Factory.StartNew(() => {
-                  Console.WriteLine("Child starting.");
+                  Console.WriteLine("Attached child starting.");
                   Thread.SpinWait(5000000);
-                  Console.WriteLine("Child completing.");
+                  Console.WriteLine("Attached child completing.");
             }, TaskCreationOptions.AttachedToParent);
       });
       parent.Wait();
@@ -20,7 +20,7 @@ public class Example
    }
 }
 // The example displays output like the following:
-//       Parent task executing
+//       Parent task executing.
 //       Parent has completed.
 //       Attached child starting.
 // </Snippet3>

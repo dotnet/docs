@@ -1,5 +1,6 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
+description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -30,7 +30,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Architecting cloud-native .NET apps for Azure (Preview)
+          - text: Architecting cloud-native .NET apps for Azure
             url: cloud-native/index.md
           - text: "Serverless apps: Architecture, patterns, and Azure implementation"
             url: serverless/index.md
@@ -60,3 +60,11 @@ landingContent:
             url: containerized-lifecycle/index.md
           - text: ASP.NET Core DevOps with Azure
             url: /aspnet/core/azure/devops/
+
+  # Card
+  - title: Modernize desktop apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernizing desktop apps on Windows 10 with .NET Core 3.1
+            url: modernize-desktop/index.md

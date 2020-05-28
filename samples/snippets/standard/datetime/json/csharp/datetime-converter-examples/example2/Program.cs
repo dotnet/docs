@@ -74,7 +74,7 @@ namespace DateTimeConverterExamples
     }
 }
 
-// The example displays the following output:
+// The example displays output similar to the following:
 // The JSON value could not be converted to System.DateTime.Path: $ | LineNumber: 0 | BytePositionInLine: 31.
 // 7/25/2019 1:36:07 PM
 // "Thu, 25 Jul 2019 09:36:07 GMT"

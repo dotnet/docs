@@ -41,7 +41,7 @@ The following example uses the `using static` directive to make the static membe
 
 [!code-csharp[using-static#3](~/samples/snippets/csharp/language-reference/keywords/using/using-static3.cs)]
 
-In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. This would have made it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` statements to determine which numeric type's `TryParse` method is called.
+In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. This would have made it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
 ## See also
 

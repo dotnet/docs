@@ -1,5 +1,6 @@
 ---
 title: Large object heap (LOH) on Windows
+description: This article discusses large objects, how they are managed by the .NET garbage collector, and the performance implications of using large objects.
 ms.date: 05/02/2018
 helpviewer_keywords:
   - large object heap (LOH)"

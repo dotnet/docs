@@ -1,5 +1,6 @@
 ---
 title: "<system.xml.serialization> Element"
+description: This article describes the <system.xml.serialization> element, which is the top-level element for controlling XML serialization.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "system.xml.serialization element"

@@ -1,5 +1,6 @@
 ---
 title: "Serialization guidelines"
+description: This document provides guidelines to consider when designing an API to be serialized and a summary of the three main serialization technologies .NET offers.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

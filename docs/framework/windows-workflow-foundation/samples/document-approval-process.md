@@ -1,5 +1,6 @@
 ---
 title: "Document Approval Process"
+description: This sample demonstrates many Windows Workflow Foundation and Windows Communication Foundation features in a document-approval process scenario.
 ms.date: "03/30/2017"
 ms.assetid: 9b240937-76a7-45cd-8823-7f82c34d03bd
 ---

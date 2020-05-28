@@ -22,11 +22,11 @@ Provides methods for the host to evaluate current binding policy and communicate
   
 |Method|Description|  
 |------------|-----------------|  
-|[EvaluatePolicy Method](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-evaluatepolicy-method.md)|Evaluates binding policy on behalf of the host.|  
-|[ModifyApplicationPolicy Method](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md)|Modifies the binding policy for the specified assembly, and creates a new version of the policy.|  
+|[EvaluatePolicy Method](iclrhostbindingpolicymanager-evaluatepolicy-method.md)|Evaluates binding policy on behalf of the host.|  
+|[ModifyApplicationPolicy Method](iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md)|Modifies the binding policy for the specified assembly, and creates a new version of the policy.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,6 +36,6 @@ Provides methods for the host to evaluate current binding policy and communicate
   
 ## See also
 
-- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

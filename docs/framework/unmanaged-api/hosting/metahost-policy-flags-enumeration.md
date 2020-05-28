@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # METAHOST_POLICY_FLAGS Enumeration
-Provides binding policies that are common to most runtime hosts. This enumeration is used by the [ICLRMetaHostPolicy::GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method.  
+Provides binding policies that are common to most runtime hosts. This enumeration is used by the [ICLRMetaHostPolicy::GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) method.  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ typedef enum {
 |Member|Description|  
 |------------|-----------------|  
 |`METAHOST_POLICY_HIGHCOMPAT`|Defines the high-compatibility policy, which does not consider any common language runtime (CLR) that is loaded into the current process. Instead, it considers only the installed CLRs and the preferences of the component, as derived from the assembly file itself, the declared built-against version, or the configuration file.|  
-|`METAHOST_POLICY_APPLY_UPGRADE_POLICY`|Applies upgrade policy to the version bind result when an exact match is not found, based on the contents of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\Policy\Upgrades. This has the same effect as [RUNTIME_INFO_UPGRADE_VERSION](../../../../docs/framework/unmanaged-api/hosting/runtime-info-flags-enumeration.md).|  
+|`METAHOST_POLICY_APPLY_UPGRADE_POLICY`|Applies upgrade policy to the version bind result when an exact match is not found, based on the contents of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\Policy\Upgrades. This has the same effect as [RUNTIME_INFO_UPGRADE_VERSION](runtime-info-flags-enumeration.md).|  
 |`METAHOST_POLICY_EMULATE_EXE_LAUNCH`|Binding results are returned as if the image provided to the call were launched in a new process. Currently, `GetRequestedRuntime` ignores the set of loadable runtimes and binds against the set of installed runtimes. This flag allows a host to determine which runtime an EXE will bind to when it is launched.|  
 |`METAHOST_POLICY_SHOW_ERROR_DIALOG`|An error dialog box is displayed if `GetRequestedRuntime` is unable to find a runtime that is compatible with the input parameters. Beginning with the .NET Framework 4.5, this error dialog box can take the form of a Windows feature dialog box that asks whether the user would like to enable the appropriate feature.|  
 |`METAHOST_POLICY_USE_PROCESS_IMAGE_PATH`|`GetRequestedRuntime` uses the process image (and any corresponding configuration file) as additional input to the binding process. By default, `GetRequestedRuntime` does not fall back to the process image path (typically, the EXE that was used to launch the process) when determining the runtime to bind to.|  
@@ -48,7 +48,7 @@ typedef enum {
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Metahost.h  
   
@@ -58,5 +58,5 @@ typedef enum {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
-- [GetRequestedRuntime Method](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)
+- [Hosting Enumerations](hosting-enumerations.md)
+- [GetRequestedRuntime Method](iclrmetahostpolicy-getrequestedruntime-method.md)

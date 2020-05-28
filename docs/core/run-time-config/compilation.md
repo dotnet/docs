@@ -92,7 +92,7 @@ Project file:
 - Configures whether the JIT compiler uses quick JIT on methods that contain loops.
 - Enabling quick JIT for loops may improve startup performance. However, long-running loops can get stuck in less-optimized code for long periods.
 - If [quick JIT](#quick-jit) is disabled, this setting has no effect.
-- Default: Disabled (`false`).
+- If you omit this setting, quick JIT is not used for methods that contain loops. This is equivalent to setting the value to `false`.
 
 | | Setting name | Values |
 | - | - | - |
@@ -130,7 +130,7 @@ Project file:
 
 - Configures whether the .NET Core runtime uses pre-compiled code for images with available ReadyToRun data. Disabling this option forces the runtime to JIT-compile framework code.
 - For more information, see [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
-- Default: Enabled (`1`).
+- If you omit this setting, .NET uses ReadyToRun data when it's available. This is equivalent to setting the value to `1`.
 
 | | Setting name | Values |
 | - | - | - |

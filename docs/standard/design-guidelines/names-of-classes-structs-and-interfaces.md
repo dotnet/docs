@@ -1,5 +1,6 @@
 ---
 title: "Names of Classes, Structs, and Interfaces"
+description: Use these guidelines for naming Classes, Structs, and Interfaces as part of guidelines for designing libraries that extend and interact .NET libraries.
 ms.date: "10/22/2008"
 helpviewer_keywords:
   - "type names, guidelines"

@@ -17,7 +17,7 @@ This section introduces functional transformations, including the underlying con
 |Article|Description|
 |-----------|-----------------|
 |[Concepts and terminology (functional transformation)](concepts-terminology-functional-transformation.md)|Introduces the concepts and terminology of pure functional transformations.|
-|[Functional programming vs. imperative programming](functional-programming-vs-imperative-programming.md)|Compares and contrasts functional programming to more traditional imperative (procedural) programming.|
+|[Functional programming vs. imperative programming](functional-vs-imperative-programming.md)|Compares and contrasts functional programming to more traditional imperative (procedural) programming.|
 |[Refactor into pure functions](refactor-pure-functions.md)|Introduces pure functions, and shows examples of and pure and impure functions.|
 |[Applicability of functional transformation](applicability-functional-transformation.md)|Describes typical scenarios for functional transformations.|
 |[Functional transformation of XML](functional-transformation-xml.md)|Describes functional transformations in the context of transforming XML trees.|

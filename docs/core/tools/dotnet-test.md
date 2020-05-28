@@ -73,6 +73,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--collect <DATA_COLLECTOR_FRIENDLY_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
+  
+  To collect code coverage on any platform that is supported by .NET Core, install [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) and use the `--collect:"XPlat Code Coverage"` option.
+
+  On Windows, you can collect code coverage by using the `--collect "Code Coverage"` option. This option generates a *.coverage* file, which can be opened in Visual Studio 2019 Enterprise. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis).
 
 - **`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`**
 
@@ -112,7 +116,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option. `dotnet test` always run tests from the output directory. You can use <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> to consume test assets in the output directory.
+  Directory in which to find the binaries to run. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option. `dotnet test` always runs tests from the output directory. You can use <xref:System.AppDomain.BaseDirectory%2A?displayProperty=nameWithType> to consume test assets in the output directory.
 
 - **`-r|--results-directory <PATH>`**
 
@@ -165,6 +169,18 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger trx
   ```
 
+- Run the tests in the project in the current directory, and generate a code coverage file (after installing [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md)):
+
+  ```dotnetcli
+  dotnet test --collect:"XPlat Code Coverage"
+  ```
+
+- Run the tests in the project in the current directory, and generate a code coverage file (Windows only):
+
+  ```dotnetcli
+  dotnet test --collect "Code Coverage"
+  ```
+
 - Run the tests in the project in the current directory, and log with detailed verbosity to the console:
 
   ```dotnetcli
@@ -189,6 +205,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
 | xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
+| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>TestCategory</li><li>Priority</li></ul>                                   |
 
 The `<operator>` describes the relationship between the property and the value:
 

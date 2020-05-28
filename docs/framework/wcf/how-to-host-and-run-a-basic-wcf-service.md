@@ -101,7 +101,7 @@ Make the following changes to the code:
                     // Step 4: Enable metadata exchange.
                     ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                     smb.HttpGetEnabled = true;
-                    selfHost.Description.Behaviors.Add(smb)    ;
+                    selfHost.Description.Behaviors.Add(smb);
 
                     // Step 5: Start the service.
                     selfHost.Open();

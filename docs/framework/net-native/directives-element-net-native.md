@@ -20,7 +20,7 @@ The root element in every runtime directives file for .NET Native.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`xmlns`|The XML namespace. Its value is always **"http://schemas.microsoft.com/netfx/2013/01/metadata"**.|  
+|`xmlns`|The XML namespace. Its value is always `http://schemas.microsoft.com/netfx/2013/01/metadata`.|  
   
 ## Child elements  
   

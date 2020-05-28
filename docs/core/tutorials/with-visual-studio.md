@@ -91,9 +91,9 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
 
-   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/HelloWorld.cs#1)]
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
 
-   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/Program.vb#1)]
+   :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="Snippet1":::
 
    This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic). Finally, it displays these values in the console window.
 

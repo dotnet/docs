@@ -25,7 +25,7 @@ XElement root = XElement.Parse(
     <Text>This is the start of</Text>
   </Paragraph>
   <Comment>
-    <Text>This comment is not part of the paragraph text.</Text>
+    <Text>This comment isn't part of the paragraph text.</Text>
   </Comment>
   <Paragraph>
     <Annotation Emphasis='true'>
@@ -74,7 +74,7 @@ Dim root As XElement = _
             <Text>This is the start of</Text>
         </Paragraph>
         <Comment>
-            <Text>This comment is not part of the paragraph text.</Text>
+            <Text>This comment isn't part of the paragraph text.</Text>
         </Comment>
         <Paragraph>
             <Annotation Emphasis='true'>

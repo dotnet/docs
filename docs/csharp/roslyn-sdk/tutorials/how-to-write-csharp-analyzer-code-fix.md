@@ -230,7 +230,7 @@ Next, format the new declaration to match C# formatting rules. Formatting your c
 
 [!code-csharp[Format the new declaration](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
 
-A new namespace is required for this code. Add the following `using` statement to the top of the file:
+A new namespace is required for this code. Add the following `using` directive to the top of the file:
 
 ```csharp
 using Microsoft.CodeAnalysis.Formatting;
@@ -492,7 +492,7 @@ That sounds like a lot of code. It's not. Replace the line that declares and ini
 
 [!code-csharp[Replace Var designations](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
 
-You'll need to add one `using` statement to use the <xref:Microsoft.CodeAnalysis.Simplification.Simplifier> type:
+You'll need to add one `using` directive to use the <xref:Microsoft.CodeAnalysis.Simplification.Simplifier> type:
 
 ```csharp
 using Microsoft.CodeAnalysis.Simplification;

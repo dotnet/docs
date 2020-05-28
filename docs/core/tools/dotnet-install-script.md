@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core SDK and the shared runtime.
-ms.date: 01/23/2020
+ms.date: 04/30/2020
 ---
 # dotnet-install scripts reference
 
@@ -25,7 +25,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
 dotnet-install.ps1 -Help
 ```
 
-Linux/macOs:
+Linux/macOS:
 
 ```bash
 dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
@@ -56,6 +56,8 @@ By default, the script adds the install location to the $PATH for the current se
 Before running the script, install the required [dependencies](../install/dependencies.md).
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version.
+
+The install scripts do not update the registry on Windows. They just download the zipped binaries and copy them to a folder. If you want registry key values to be updated, use the .NET Core installers.
 
 ## Options
 
@@ -92,7 +94,7 @@ You can install a specific version using the `-Version|--version` argument. The 
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 
-  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet*. Binaries are placed directly in this directory.
+  Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\Microsoft\dotnet* on Windows and */usr/share/dotnet* on Linux/macOS. Binaries are placed directly in this directory.
 
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 

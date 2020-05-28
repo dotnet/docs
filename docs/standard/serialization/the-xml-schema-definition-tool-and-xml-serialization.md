@@ -1,5 +1,6 @@
 ---
 title: "The XML Schema Definition Tool and XML Serialization"
+description: The XML Schema Definition tool generates C# or Visual Basic class files for an XSD schema and generates an XML schema from a library or executable file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Xsd.exe"

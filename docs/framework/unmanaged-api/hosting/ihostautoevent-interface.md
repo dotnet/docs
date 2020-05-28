@@ -22,11 +22,11 @@ Provides a representation of the host's implementation of an auto-reset event.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Set Method](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-set-method.md)|Sets the current `IHostAutoEvent` instance to a signaled state.|  
-|[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
+|[Set Method](ihostautoevent-set-method.md)|Sets the current `IHostAutoEvent` instance to a signaled state.|  
+|[Wait Method](ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,7 +36,7 @@ Provides a representation of the host's implementation of an auto-reset event.
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostManualEvent Interface](ihostmanualevent-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

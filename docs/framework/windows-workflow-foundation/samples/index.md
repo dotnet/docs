@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow (WF) sample documentation"
+description: You can download Windows Workflow samples to learn about various aspects of Windows Workflow Foundation, including application, basic, and scenario samples.
 ms.date: 09/24/2018
 ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 ---

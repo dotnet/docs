@@ -47,7 +47,7 @@ HRESULT SetMinThreads (
  A host is not required to provide an implementation of `SetMinThreads`. In this case, it should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -59,6 +59,6 @@ HRESULT SetMinThreads (
 
 - <xref:System.Threading.ThreadPool.SetMinThreads%2A>
 - <xref:System.Threading.ThreadPool>
-- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)
-- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)
-- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+- [GetMinThreads Method](ihostthreadpoolmanager-getminthreads-method.md)
+- [SetMaxThreads Method](ihostthreadpoolmanager-setmaxthreads-method.md)
+- [IHostThreadPoolManager Interface](ihostthreadpoolmanager-interface.md)

@@ -37,47 +37,47 @@ namespace csrefLINQExamples
         {
             public string FirstName { get; set; }
             public string LastName { get; set; }
-            public int ID { get; set; }
+            public int Id { get; set; }
             public GradeLevel Year;
             public List<int> ExamScores;
         }
 
         protected static List<Student> students = new List<Student>
         {
-            new Student {FirstName = "Terry", LastName = "Adams", ID = 120,
+            new Student {FirstName = "Terry", LastName = "Adams", Id = 120,
                 Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 99, 82, 81, 79}},
-            new Student {FirstName = "Fadi", LastName = "Fakhouri", ID = 116,
+            new Student {FirstName = "Fadi", LastName = "Fakhouri", Id = 116,
                 Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 99, 86, 90, 94}},
-            new Student {FirstName = "Hanying", LastName = "Feng", ID = 117,
+            new Student {FirstName = "Hanying", LastName = "Feng", Id = 117,
                 Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 93, 92, 80, 87}},
-            new Student {FirstName = "Cesar", LastName = "Garcia", ID = 114,
+            new Student {FirstName = "Cesar", LastName = "Garcia", Id = 114,
                 Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 97, 89, 85, 82}},
-            new Student {FirstName = "Debra", LastName = "Garcia", ID = 115,
+            new Student {FirstName = "Debra", LastName = "Garcia", Id = 115,
                 Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 35, 72, 91, 70}},
-            new Student {FirstName = "Hugo", LastName = "Garcia", ID = 118,
+            new Student {FirstName = "Hugo", LastName = "Garcia", Id = 118,
                 Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 92, 90, 83, 78}},
-            new Student {FirstName = "Sven", LastName = "Mortensen", ID = 113,
+            new Student {FirstName = "Sven", LastName = "Mortensen", Id = 113,
                 Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 88, 94, 65, 91}},
-            new Student {FirstName = "Claire", LastName = "O'Donnell", ID = 112,
+            new Student {FirstName = "Claire", LastName = "O'Donnell", Id = 112,
                 Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 75, 84, 91, 39}},
-            new Student {FirstName = "Svetlana", LastName = "Omelchenko", ID = 111,
+            new Student {FirstName = "Svetlana", LastName = "Omelchenko", Id = 111,
                 Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 97, 92, 81, 60}},
-            new Student {FirstName = "Lance", LastName = "Tucker", ID = 119,
+            new Student {FirstName = "Lance", LastName = "Tucker", Id = 119,
                 Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 68, 79, 88, 92}},
-            new Student {FirstName = "Michael", LastName = "Tucker", ID = 122,
+            new Student {FirstName = "Michael", LastName = "Tucker", Id = 122,
                 Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 94, 92, 91, 91}},
-            new Student {FirstName = "Eugene", LastName = "Zabokritski", ID = 121,
+            new Student {FirstName = "Eugene", LastName = "Zabokritski", Id = 121,
                 Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 96, 85, 91, 60}}
         };
@@ -171,7 +171,7 @@ namespace csrefLINQExamples
             //Create the query. The use of var is optional here.
             var reusableQuery =
                 from student in students
-                where student.ID > 115
+                where student.Id > 115
                 select student;
 
             // Execute the query. Note that enumerating over a query
@@ -188,14 +188,14 @@ namespace csrefLINQExamples
             // helpful names instead of reusing old query variables.
             reusableQuery =
                 from student in reusableQuery
-                where student.ID < 117
+                where student.Id < 117
                 select student;
 
             Console.WriteLine(System.Environment.NewLine + "Reuse query variable as data source:");
 
             // Execute the query after it has been reused
             // Note that only one student is returned,
-            // the ID that is > 115 and < 117.
+            // the Id that is > 115 and < 117.
 
             foreach (var item in reusableQuery)
             {
@@ -623,14 +623,14 @@ namespace csrefLINQExamples
                 let x = name.Split(',')
                 from score in scores
                 let s = score.Split(',')
-                // Look for matching IDs from the two data files.
+                // Look for matching Ids from the two data files.
                 where x[2] == s[0]
-                // If the IDs match, build a Student object.
+                // If the Ids match, build a Student object.
                 select new Student()
                 {
                     FirstName = x[0],
                     LastName = x[1],
-                    ID = Convert.ToInt32(x[2]),
+                    Id = Convert.ToInt32(x[2]),
                     ExamScores = (from scoreAsText in s.Skip(1)
                                   select Convert.ToInt32(scoreAsText)).
                                   ToList()
@@ -656,7 +656,7 @@ namespace csrefLINQExamples
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int ID { get; set; }
+        public int Id { get; set; }
         public List<int> ExamScores { get; set; }
     }
 
@@ -690,7 +690,7 @@ namespace csrefLINQExamples
 
             foreach (var item in queryNamesWithScores)
             {
-                Console.WriteLine("Name and ID: {0}, Average Score: {1}", item.Name, item.TestScores.Average());
+                Console.WriteLine("Name and Id: {0}, Average Score: {1}", item.Name, item.TestScores.Average());
             }
             //</snippet14>
 
@@ -1077,17 +1077,17 @@ namespace csrefLINQExamples
             Console.ReadKey();
         }
 
-        static void QueryByID(string[] ids)
+        static void QueryById(string[] ids)
         {
             var queryNames =
                 from student in students
-                let i = student.ID.ToString()
+                let i = student.Id.ToString()
                 where ids.Contains(i)
-                select new { student.LastName, student.ID };
+                select new { student.LastName, student.Id };
 
             foreach (var name in queryNames)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
             }
         }
     }
@@ -1144,7 +1144,7 @@ namespace csrefLINQExamples
             Console.WriteLine("The following students are at level {0}", year.ToString());
             foreach (Student name in studentQuery)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
             }
         }
         //</snippet27>

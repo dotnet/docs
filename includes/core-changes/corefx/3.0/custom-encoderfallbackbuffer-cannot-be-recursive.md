@@ -39,7 +39,7 @@ Core .NET libraries
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Text.EncoderFallbackBuffer.Fallback`
 - `M:System.Text.EncoderFallbackBuffer.GetNextChar`

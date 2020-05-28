@@ -22,17 +22,6 @@ class Test2
     static void Main(string[] args)
     //</Snippet3>
     {
-        //<Snippet5>
-        long num1 = System.Int64.Parse(args[0]);
-        //</Snippet5>
-
-        //<Snippet6>
-        long num2 = long.Parse(args[0]);
-        //</Snippet6>
-
-        //<Snippet7>
-        long num3 = System.Convert.ToInt64(args[0]);
-        //</Snippet7>
     }
 }
 

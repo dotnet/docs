@@ -1,5 +1,6 @@
 ---
 title: "Version tolerant serialization"
+description: The .NET Framework 2.0 introduces Version Tolerant Serialization, a set of features that make it easier to modify serializable types.
 ms.date: "08/08/2017"
 dev_langs: 
   - "csharp"
@@ -21,7 +22,7 @@ In version 1.0 and 1.1 of the .NET Framework, creating serializable types that w
 - Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.
 - Newer versions of an application would throw exceptions when deserializing older versions of a type with missing data.
 
-Version Tolerant Serialization (VTS) is a set of features introduced in .NET Framework 2.0 that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](version-tolerant-serialization-technology-sample.md).
+Version Tolerant Serialization (VTS) is a set of features introduced in .NET Framework 2.0 that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](basic-serialization-technology-sample.md).
 
 The VTS features are enabled when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Additionally, all features except extraneous data tolerance are also enabled when using the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. For more information about using these classes for serialization, see [Binary Serialization](binary-serialization.md).
 

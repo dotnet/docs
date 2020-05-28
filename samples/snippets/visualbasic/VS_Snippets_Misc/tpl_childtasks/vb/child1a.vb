@@ -8,7 +8,7 @@ Imports System.Threading.Tasks
 Module Example
    Public Sub Main()
       Dim parent = Task.Run(Sub()
-                               Console.WriteLine("Parent task executing")
+                               Console.WriteLine("Parent task executing.")
                                Dim child = Task.Factory.StartNew(Sub()
                                               Console.WriteLine("Attached child starting.")
                                               Thread.SpinWait(5000000)
@@ -20,7 +20,7 @@ Module Example
    End Sub
 End Module
 ' The example displays output like the following:
-'       Parent task executing
+'       Parent task executing.
 '       Parent has completed.
 '       Attached child starting.
 ' </Snippet3>

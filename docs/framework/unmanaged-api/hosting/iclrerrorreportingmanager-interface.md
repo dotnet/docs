@@ -22,9 +22,9 @@ Provides methods that allow the host to configure custom stack dumps for error r
   
 |Method|Description|  
 |------------|-----------------|  
-|[BeginCustomDump Method](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-begincustomdump-method.md)|Specifies the configuration of custom stack dumps for error reporting.|  
-|[EndCustomDump Method](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-endcustomdump-method.md)|Clears the custom stack dump configuration that was set by an earlier call to `BeginCustomDump`.|  
-|[GetBucketParametersForCurrentException Method](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|Gets the Watson bucket for the current exception on the calling thread.|  
+|[BeginCustomDump Method](iclrerrorreportingmanager-begincustomdump-method.md)|Specifies the configuration of custom stack dumps for error reporting.|  
+|[EndCustomDump Method](iclrerrorreportingmanager-endcustomdump-method.md)|Clears the custom stack dump configuration that was set by an earlier call to `BeginCustomDump`.|  
+|[GetBucketParametersForCurrentException Method](iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|Gets the Watson bucket for the current exception on the calling thread.|  
   
 ## Remarks  
  The `BeginCustomDump` method sets custom stack dump configuration. The `EndCustomDump` method clears the custom stack dump configuration and frees any associated state. It should be called after the custom dump is complete.  
@@ -33,7 +33,7 @@ Provides methods that allow the host to configure custom stack dumps for error r
 > Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -43,5 +43,5 @@ Provides methods that allow the host to configure custom stack dumps for error r
   
 ## See also
 
-- [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ECustomDumpItemKind Enumeration](ecustomdumpitemkind-enumeration.md)
+- [Hosting Interfaces](hosting-interfaces.md)

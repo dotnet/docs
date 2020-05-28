@@ -1,12 +1,10 @@
 ---
 title: Combining containers and serverless approaches for cloud-native services
 description: Combining containers and Kubernetes with serverless approaches
-ms.date: 04/23/2020
+ms.date: 05/13/2020
 ---
 
 # Combining containers and serverless approaches
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Cloud-native applications typically implement services leveraging containers and orchestration. There are often opportunities to expose some of the application's services as Azure Functions. However, with a cloud-native app deployed to Kubernetes, it would be nice to leverage Azure Functions within this same toolset. Fortunately, you can wrap Azure Functions inside Docker containers and deploy them using the same processes and tools as the rest of your Kubernetes-based app.
 

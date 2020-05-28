@@ -38,6 +38,17 @@ This option specifies the class that contains the entry point to the program, if
   
      To set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.StartupObject%2A>.  
   
+### To set this compiler option by manually editing the .csproj file
+  
+You can set this option by editing the .csproj file and adding an element `StartupObject` inside the `PropertyGroup` section. For example:
+
+```
+  <PropertyGroup>
+    ...
+    <StartupObject>MyApplication.Core.Program</StartupObject>
+  </PropertyGroup>
+```
+
 ## Example  
  Compile `t2.cs` and `t3.cs`, specifying that the **Main** method will be found in `Test2`:  
   

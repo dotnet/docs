@@ -85,7 +85,7 @@ Additional topics to consider when using asynchronous communication are message 
   <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>
 
 - **Udi Dahan. Clarified CQRS** \
-  <http://udidahan.com/2009/12/09/clarified-cqrs/>
+  <https://udidahan.com/2009/12/09/clarified-cqrs/>
 
 - **Command and Query Responsibility Segregation (CQRS)** \
   <https://docs.microsoft.com/azure/architecture/patterns/cqrs>

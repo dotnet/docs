@@ -4,8 +4,8 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 // <SnippetStaticUsings>
-using Microsoft.CodeAnalysis.CSharp;
-using System;
+using  Microsoft.CodeAnalysis.CSharp;
+using  System;
 // </SnippetStaticUsings>
 
 namespace ConstructionCS

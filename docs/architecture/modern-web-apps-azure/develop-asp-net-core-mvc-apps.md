@@ -416,7 +416,7 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 > ### References – Security
 >
 > - **Security Docs Overview**  
->   https://docs.microsoft.com/aspnet/core/security/
+>   <https://docs.microsoft.com/aspnet/core/security/>
 > - **Enforcing SSL in an ASP.NET Core App**  
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
 > - **Introduction to Identity**  
@@ -487,7 +487,7 @@ Consider ways in which your applications communicate directly with client applic
 > - **ASP.NET Core SignalR**  
 >   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
 > - **WebSocket Manager**  
->   https://github.com/radu-matei/websocket-manager
+>   <https://github.com/radu-matei/websocket-manager>
 
 ## Domain-driven design – Should you apply it?
 

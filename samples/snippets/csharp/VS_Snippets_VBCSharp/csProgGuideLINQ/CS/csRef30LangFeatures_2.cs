@@ -15,14 +15,14 @@ namespace AutoImplMutable
         // Auto-implemented properties for trivial get and set
         public double TotalPurchases { get; set; }
         public string Name { get; set; }
-        public int CustomerID { get; set; }
+        public int CustomerId { get; set; }
 
         // Constructor
-        public Customer(double purchases, string name, int ID)
+        public Customer(double purchases, string name, int id)
         {
             TotalPurchases = purchases;
             Name = name;
-            CustomerID = ID;
+            CustomerId = id;
         }
 
         // Methods
@@ -210,16 +210,16 @@ namespace csrefLINQExamples
                 {
                     //how to use implicitly typed locals #2
                     //<snippet33>
-                    // Variable queryID could be declared by using
+                    // Variable queryId could be declared by using
                     // System.Collections.Generic.IEnumerable<string>
                     // instead of var.
-                    var queryID =
+                    var queryId =
                         from student in students
-                        where student.ID > 111
+                        where student.Id > 111
                         select student.LastName;
 
                     // Variable str could be declared by using var instead of string.
-                    foreach (string str in queryID)
+                    foreach (string str in queryId)
                     {
                         Console.WriteLine("Last name: {0}", str);
                     }
@@ -233,16 +233,16 @@ namespace csrefLINQExamples
             {
                 public string FirstName { get; set; }
                 public string LastName { get; set; }
-                public int ID { get; set; }
+                public int Id { get; set; }
             }
 
             class CollInit
             {
                 Dictionary<int, StudentName> students = new Dictionary<int, StudentName>()
                 {
-                    { 111, new StudentName {FirstName="Sachin", LastName="Karnik", ID=211}},
-                    { 112, new StudentName {FirstName="Dina", LastName="Salimzianova", ID=317}},
-                    { 113, new StudentName {FirstName="Andy", LastName="Ruth", ID=198}}
+                    { 111, new StudentName { FirstName = "Sachin", LastName="Karnik", Id = 211 } },
+                    { 112, new StudentName { FirstName = "Dina", LastName="Salimzianova", Id = 317 } },
+                    { 113, new StudentName { FirstName = "Andy", LastName="Ruth", Id = 198 } }
                 };
             }
             //</snippet34>
@@ -270,12 +270,12 @@ namespace csrefLINQExamples
                         };
 
                         // Declare a StudentName by using an object initializer and sending
-                        // an argument for only the ID property. No corresponding constructor is
+                        // an argument for only the Id property. No corresponding constructor is
                         // necessary. Only the default constructor is used to process object
                         // initializers.
                         StudentName student3 = new StudentName
                         {
-                            ID = 183
+                            Id = 183
                         };
 
                         // Declare a StudentName by using an object initializer and sending
@@ -285,7 +285,7 @@ namespace csrefLINQExamples
                         {
                             FirstName = "Craig",
                             LastName = "Playstead",
-                            ID = 116
+                            Id = 116
                         };
 
                         System.Console.WriteLine(student1.ToString());
@@ -321,11 +321,11 @@ namespace csrefLINQExamples
                     // Properties.
                     public string FirstName { get; set; }
                     public string LastName { get; set; }
-                    public int ID { get; set; }
+                    public int Id { get; set; }
 
                     public override string ToString()
                     {
-                        return FirstName + "  " + ID;
+                        return FirstName + "  " + Id;
                     }
                 }
                 //</snippet35>
@@ -334,10 +334,10 @@ namespace csrefLINQExamples
                 //<snippet36>
                 List<StudentName> students = new List<StudentName>()
                 {
-                  new StudentName {FirstName="Craig", LastName="Playstead", ID=116},
-                  new StudentName {FirstName="Shu", LastName="Ito", ID=112},
-                  new StudentName {FirstName="Gretchen", LastName="Rivas", ID=113},
-                  new StudentName {FirstName="Rajesh", LastName="Rotti", ID=114}
+                  new StudentName { FirstName = "Craig", LastName = "Playstead", Id = 116 },
+                  new StudentName { FirstName = "Shu", LastName="Ito", Id = 112 },
+                  new StudentName { FirstName = "Gretchen", LastName="Rivas", Id = 113 },
+                  new StudentName { FirstName = "Rajesh", LastName="Rotti", Id = 114 }
                 };
                 //</snippet36>
             }
@@ -549,36 +549,36 @@ namespace csrefLINQExamples
                 class Product
                 {
                     public string Name { get; set; }
-                    public int CategoryID { get; set; }
+                    public int CategoryId { get; set; }
                 }
 
                 class Category
                 {
                     public string Name { get; set; }
-                    public int ID { get; set; }
+                    public int Id { get; set; }
                 }
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        {
-            new Category(){Name="Beverages", ID=001},
-            new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},
-        };
+                {
+                    new Category() { Name = "Beverages", Id = 001 },
+                    new Category() { Name = "Condiments", Id = 002 },
+                    new Category() { Name = "Vegetables", Id = 003 },
+                };
 
                 // Specify the second data source.
                 List<Product> products = new List<Product>()
-       {
-          new Product{Name="Tea",  CategoryID=001},
-          new Product{Name="Mustard", CategoryID=002},
-          new Product{Name="Pickles", CategoryID=002},
-          new Product{Name="Carrots", CategoryID=003},
-          new Product{Name="Bok Choy", CategoryID=003},
-          new Product{Name="Peaches", CategoryID=005},
-          new Product{Name="Melons", CategoryID=005},
-          new Product{Name="Ice Cream", CategoryID=007},
-          new Product{Name="Mackerel", CategoryID=012},
-        };
+                {
+                    new Product { Name="Tea",  CategoryId = 001 },
+                    new Product { Name="Mustard", CategoryId = 002 },
+                    new Product { Name="Pickles", CategoryId = 002 },
+                    new Product { Name="Carrots", CategoryId = 003 },
+                    new Product { Name="Bok Choy", CategoryId = 003 },
+                    new Product { Name="Peaches", CategoryId = 005 },
+                    new Product { Name="Melons", CategoryId = 005 },
+                    new Product { Name="Ice Cream", CategoryId = 007 },
+                    new Product { Name="Mackerel", CategoryId = 012 },
+                };
                 #endregion
 
                 static void Main()
@@ -596,12 +596,12 @@ namespace csrefLINQExamples
                     var crossJoinQuery =
                         from c in categories
                         from p in products
-                        select new { c.ID, p.Name };
+                        select new { c.Id, p.Name };
 
                     Console.WriteLine("Cross Join Query:");
                     foreach (var v in crossJoinQuery)
                     {
-                        Console.WriteLine("{0,-5}{1}", v.ID, v.Name);
+                        Console.WriteLine("{0,-5}{1}", v.Id, v.Name);
                     }
                 }
 
@@ -610,14 +610,14 @@ namespace csrefLINQExamples
                     var nonEquijoinQuery =
                         from p in products
                         let catIds = from c in categories
-                                     select c.ID
-                        where catIds.Contains(p.CategoryID) == true
-                        select new { Product = p.Name, CategoryID = p.CategoryID };
+                                     select c.Id
+                        where catIds.Contains(p.CategoryId) == true
+                        select new { Product = p.Name, CategoryId = p.CategoryId };
 
                     Console.WriteLine("Non-equijoin query:");
                     foreach (var v in nonEquijoinQuery)
                     {
-                        Console.WriteLine("{0,-5}{1}", v.CategoryID, v.Product);
+                        Console.WriteLine("{0,-5}{1}", v.CategoryId, v.Product);
                     }
                 }
             }
@@ -819,37 +819,37 @@ namespace csrefLINQExamples
                 class Product
                 {
                     public string Name { get; set; }
-                    public int CategoryID { get; set; }
+                    public int CategoryId { get; set; }
                 }
 
                 class Category
                 {
                     public string Name { get; set; }
-                    public int ID { get; set; }
+                    public int Id { get; set; }
                 }
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        {
-            new Category(){Name="Beverages", ID=001},
-            new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},
-            new Category() {  Name="Grains", ID=004},
-            new Category() {  Name="Fruit", ID=005}
-        };
+                {
+                    new Category() { Name = "Beverages", Id = 001 },
+                    new Category() { Name="Condiments", Id = 002 },
+                    new Category() { Name="Vegetables", Id = 003 },
+                    new Category() { Name="Grains", Id = 004 },
+                    new Category() { Name="Fruit", Id = 005 }
+                };
 
                 // Specify the second data source.
                 List<Product> products = new List<Product>()
-       {
-          new Product{Name="Cola",  CategoryID=001},
-          new Product{Name="Tea",  CategoryID=001},
-          new Product{Name="Mustard", CategoryID=002},
-          new Product{Name="Pickles", CategoryID=002},
-          new Product{Name="Carrots", CategoryID=003},
-          new Product{Name="Bok Choy", CategoryID=003},
-          new Product{Name="Peaches", CategoryID=005},
-          new Product{Name="Melons", CategoryID=005},
-        };
+                {
+                    new Product{ Name = "Cola", CategoryId = 001 },
+                    new Product{ Name = "Tea", CategoryId = 001 },
+                    new Product{ Name = "Mustard", CategoryId = 002 },
+                    new Product{ Name = "Pickles", CategoryId = 002 },
+                    new Product{ Name = "Carrots", CategoryId = 003 },
+                    new Product{ Name = "Bok Choy", CategoryId = 003 },
+                    new Product{ Name = "Peaches", CategoryId = 005 },
+                    new Product{ Name = "Melons", CategoryId = 005 },
+                };
                 #endregion
                 static void Main()
                 {
@@ -865,7 +865,7 @@ namespace csrefLINQExamples
                 {
                     var groupJoinQuery2 =
                         from category in categories
-                        join prod in products on category.ID equals prod.CategoryID into prodGroup
+                        join prod in products on category.Id equals prod.CategoryId into prodGroup
                         orderby category.Name
                         select new
                         {
@@ -880,7 +880,7 @@ namespace csrefLINQExamples
                         Console.WriteLine(productGroup.Category);
                         foreach (var prodItem in productGroup.Products)
                         {
-                            Console.WriteLine("  {0,-10} {1}", prodItem.Name, prodItem.CategoryID);
+                            Console.WriteLine("  {0,-10} {1}", prodItem.Name, prodItem.CategoryId);
                         }
                     }
                 }
@@ -908,37 +908,37 @@ namespace csrefLINQExamples
                 class Product
                 {
                     public string Name { get; set; }
-                    public int? CategoryID { get; set; }
+                    public int? CategoryId { get; set; }
                 }
 
                 class Category
                 {
                     public string Name { get; set; }
-                    public int? ID { get; set; }
+                    public int? Id { get; set; }
                 }
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        {
-            new Category(){Name="Beverages", ID=001},
-            new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},
-            new Category() {  Name="Grains", ID=004},
-            new Category() {  Name="Fruit", ID=005}
-        };
+                {
+                    new Category() { Name = "Beverages", Id = 001 },
+                    new Category() { Name = "Condiments", Id = 002 },
+                    new Category() { Name = "Vegetables", Id = 003 },
+                    new Category() { Name = "Grains", Id = 004 },
+                    new Category() { Name = "Fruit", Id = 005 }
+                };
 
                 // Specify the second data source.
                 List<Product> products = new List<Product>()
-       {
-          new Product{Name="Cola",  CategoryID=001},
-          new Product{Name="Tea",  CategoryID=001},
-          new Product{Name="Mustard", CategoryID=002},
-          new Product{Name="Pickles", CategoryID=002},
-          new Product{Name="Carrots", CategoryID=003},
-          new Product{Name="Bok Choy", CategoryID=003},
-          new Product{Name="Peaches", CategoryID=005},
-          new Product{Name="Melons", CategoryID=005},
-        };
+                {
+                    new Product{ Name = "Cola", CategoryId = 001 },
+                    new Product{ Name = "Tea", CategoryId = 001 },
+                    new Product{ Name = "Mustard", CategoryId = 002 },
+                    new Product{ Name = "Pickles", CategoryId = 002 },
+                    new Product{ Name = "Carrots", CategoryId = 003 },
+                    new Product{ Name = "Bok Choy", CategoryId = 003 },
+                    new Product{ Name = "Peaches", CategoryId = 005 },
+                    new Product{ Name = "Melons", CategoryId = 005 },
+                };
                 #endregion
 
                 static void Main()
@@ -954,8 +954,8 @@ namespace csrefLINQExamples
                     var query1 =
                         from c in categories
                         where c != null
-                        join p in products on c.ID equals
-                            (p == null ? null : p.CategoryID)
+                        join p in products on c.Id equals
+                            (p == null ? null : p.CategoryId)
                         select new { Category = c.Name, Name = p.Name };
                     //</snippet82>
                 }
@@ -963,12 +963,12 @@ namespace csrefLINQExamples
                 #region compilation only
                 class Order
                 {
-                    public int? OrderID = 1;
-                    public int? EmployeeID = 1;
+                    public int? OrderId = 1;
+                    public int? EmployeeId = 1;
                 }
                 class Employee
                 {
-                    public int EmployeeID = 1;
+                    public int EmployeeId = 1;
                     public string FirstName = string.Empty;
                 }
                 class Northwind
@@ -984,8 +984,8 @@ namespace csrefLINQExamples
                     var query =
                         from o in db.Orders
                         join e in db.Employees
-                            on o.EmployeeID equals (int?)e.EmployeeID
-                        select new { o.OrderID, e.FirstName };
+                            on o.EmployeeId equals (int?)e.EmployeeId
+                        select new { o.OrderId, e.FirstName };
                 }
                 //</snippet83>
             }
@@ -998,36 +998,36 @@ namespace csrefLINQExamples
                 class Product
                 {
                     public string Name { get; set; }
-                    public int CategoryID { get; set; }
+                    public int CategoryId { get; set; }
                 }
 
                 class Category
                 {
                     public string Name { get; set; }
-                    public int ID { get; set; }
+                    public int Id { get; set; }
                 }
 
                 // Specify the first data source.
                 List<Category> categories = new List<Category>()
-        {
-            new Category(){Name="Beverages", ID=001},
-            new Category(){ Name="Condiments", ID=002},
-            new Category(){ Name="Vegetables", ID=003},
-        };
+                {
+                    new Category(){ Name = "Beverages", Id = 001 },
+                    new Category(){ Name = "Condiments", Id = 002 },
+                    new Category(){ Name = "Vegetables", Id = 003 },
+                };
 
                 // Specify the second data source.
                 List<Product> products = new List<Product>()
-       {
-          new Product{Name="Tea",  CategoryID=001},
-          new Product{Name="Mustard", CategoryID=002},
-          new Product{Name="Pickles", CategoryID=002},
-          new Product{Name="Carrots", CategoryID=003},
-          new Product{Name="Bok Choy", CategoryID=003},
-          new Product{Name="Peaches", CategoryID=005},
-          new Product{Name="Melons", CategoryID=005},
-          new Product{Name="Ice Cream", CategoryID=007},
-          new Product{Name="Mackerel", CategoryID=012},
-        };
+                {
+                    new Product{ Name = "Tea", CategoryId = 001 },
+                    new Product{ Name = "Mustard", CategoryId = 002 },
+                    new Product{ Name = "Pickles", CategoryId = 002 },
+                    new Product{ Name = "Carrots", CategoryId = 003 },
+                    new Product{ Name = "Bok Choy", CategoryId = 003 },
+                    new Product{ Name = "Peaches", CategoryId = 005 },
+                    new Product{ Name = "Melons", CategoryId = 005 },
+                    new Product{ Name = "Ice Cream", CategoryId = 007 },
+                    new Product{ Name = "Mackerel", CategoryId = 012 },
+                };
                 #endregion
 
                 static void Main()

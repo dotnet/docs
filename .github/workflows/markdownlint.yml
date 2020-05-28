@@ -23,5 +23,5 @@ jobs:
         node-version: 12.x
     - name: Run Markdownlint
       run: |
-        npm i -g markdownlint-cli@0.22.0
+        npm i -g markdownlint-cli@0.23.1
         markdownlint "**/*.md" -i "samples/**/*.md"

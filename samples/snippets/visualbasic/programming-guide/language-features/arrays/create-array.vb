@@ -22,11 +22,11 @@ Module Example
    Private Sub SizeAsNew()
       ' <Snippet2>
       ' Declare an array with 10 elements.
-      Dim cargoWeights(9) As Double
+      Dim cargoWeights() As Double = New Double(9) {}
       ' Declare a 24 x 2 array.
-      Dim hourlyTemperatures(23, 1) As Integer
+      Dim hourlyTemperatures(,) As Integer = New Integer(23, 1) {}
       ' Declare a jagged array with 31 elements. 
-      Dim januaryInquiries(30)() As String
+      Dim januaryInquiries()() As String = New String(30)() {}
       ' </Snippet2>
       
       '<Snippet3>

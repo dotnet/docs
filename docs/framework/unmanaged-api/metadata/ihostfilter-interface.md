@@ -25,10 +25,10 @@ Provides a method to indicate that a specified token will be processed.
   
 |Method|Description|  
 |------------|-----------------|  
-|[MarkToken Method](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-marktoken-method.md)|Indicates that the specified metadata token will be processed.|  
+|[MarkToken Method](ihostfilter-marktoken-method.md)|Indicates that the specified metadata token will be processed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -38,4 +38,4 @@ Provides a method to indicate that a specified token will be processed.
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)

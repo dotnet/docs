@@ -29,7 +29,7 @@ This book is provided "as-is" and expresses the author's views and opinions. The
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at https://www.microsoft.com on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
 
 Mac and macOS are trademarks of Apple Inc.
 
@@ -39,7 +39,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](http://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
 > **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 

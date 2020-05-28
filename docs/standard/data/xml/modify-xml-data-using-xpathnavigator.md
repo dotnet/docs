@@ -98,7 +98,7 @@ navigator.SetTypedValue(DateTime.Now);
  [!code-xml[XPathXMLExamples#3](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
   
 #### The Effects of Editing Strongly Typed XML Data  
- The <xref:System.Xml.XPath.XPathNavigator> class uses the W3C XML Schema as a basis for describing strongly-typed XML. Elements and attributes can be annotated with type information based on validation against a W3C XML Schema document. Elements that can contain other elements or attributes are called complex types, while those that can only contain textual content are called simple types.  
+ The <xref:System.Xml.XPath.XPathNavigator> class uses the W3C XML Schema as a basis for describing strongly typed XML. Elements and attributes can be annotated with type information based on validation against a W3C XML Schema document. Elements that can contain other elements or attributes are called complex types, while those that can only contain textual content are called simple types.  
   
 > [!NOTE]
 > Attributes can only have simple types.  

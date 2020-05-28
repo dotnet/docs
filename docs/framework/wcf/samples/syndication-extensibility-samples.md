@@ -7,7 +7,7 @@ ms.assetid: b2c34ae5-62ed-4c2d-b2fa-2d4d0802099c
 This section contains samples that demonstrate custom syndication in Windows Communication Foundation (WCF).  
   
 ## In This Section  
- [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)  
+ [Strongly typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)  
  Demonstrates how to implement an extension element defined in the proposed Atom Threading Extensions RFC.  
   
  [Feed Formatter (JSON)](../../../../docs/framework/wcf/samples/feed-formatter-json.md)  

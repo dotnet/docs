@@ -151,5 +151,5 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
   
 ## See also
 
-- [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
+- [Strongly typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
 - [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

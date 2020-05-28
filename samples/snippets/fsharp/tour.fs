@@ -745,7 +745,7 @@ module PatternMatching =
 
     /// You can also use the shorthand function construct for pattern matching, 
     /// which is useful when you're writing functions which make use of Partial Application.
-    let private parseHelper f = f >> function
+    let private parseHelper (f: string -> bool * 'T) = f >> function
         | (true, item) -> Some item
         | (false, _) -> None
 

@@ -7,12 +7,12 @@ ms.date: 05/27/2020
 
 # Migrate a SQL Server database to Azure
 
-This article provides a brief outline of two options for migrating a SQL Server database to Azure. Azure has three primary options for migrating a production SQL Server database, this article focuses on two:
+This article provides a brief outline of two options for migrating a SQL Server database to Azure. Azure has three primary options for migrating a production SQL Server database. This article focuses on the following two options:
 
 1. [SQL Server on Azure VMs](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview): A SQL Server instance installed and hosted on a Windows Virtual Machine running in Azure, also known as Infrastructure as a Service (IaaS).
 2. [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview): A fully managed SQL database Azure service, also known as Platform as a Service (PaaS).
 
-Both come with pros and cons that you will need to evaluate before migrating. The third option is, [Azure SQL Database managed instances](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+Both come with pros and cons that you will need to evaluate before migrating. The third option is [Azure SQL Database managed instances](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 
 ## Get started
 

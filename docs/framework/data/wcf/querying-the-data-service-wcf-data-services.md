@@ -39,7 +39,7 @@ The following query, when it is executed, returns all `Customers` entities in th
 
 For more information, see [How to: Execute Data Service Queries](how-to-execute-data-service-queries-wcf-data-services.md).
 
-The WCF Data Services client supports queries for late-bound objects, such as when you use the *dynamic* type in C#. However, for performance reasons you should always compose strongly-typed queries against the data service. The <xref:System.Tuple> type and dynamic objects are not supported by the client.
+The WCF Data Services client supports queries for late-bound objects, such as when you use the *dynamic* type in C#. However, for performance reasons you should always compose strongly typed queries against the data service. The <xref:System.Tuple> type and dynamic objects are not supported by the client.
 
 ## LINQ Queries
 

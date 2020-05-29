@@ -308,4 +308,3 @@ CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios wh
 VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out-of-memory exceptions.
 
 We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.
- 

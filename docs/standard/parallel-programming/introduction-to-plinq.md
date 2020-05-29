@@ -98,7 +98,7 @@ In sequential LINQ queries, execution is deferred until the query is enumerated 
 
 The following illustration shows the difference between `foreach` and <xref:System.Linq.ParallelEnumerable.ForAll%2A> with regard to query execution.
 
-![ForAll vs. ForEach](../../../docs/standard/parallel-programming/media/vs-isvnt-allvseach.png "VS_ISVNT_ALLvsEACH")
+![ForAll vs. ForEach](media/vs-isvnt-allvseach.png "VS_ISVNT_ALLvsEACH")
 
 ## Cancellation
 

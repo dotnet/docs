@@ -121,7 +121,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
  The following illustration shows typical output for the common \Sample Pictures\ folder.  
   
- ![The Windows Forms Application](../../../docs/standard/parallel-programming/media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
+ ![The Windows Forms Application](media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
 
 ## See also
 

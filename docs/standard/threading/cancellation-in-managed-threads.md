@@ -27,7 +27,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
   
  The following illustration shows the relationship between a token source and all the copies of its token.  
   
- ![CancellationTokenSource and cancellation tokens](../../../docs/standard/threading/media/vs-cancellationtoken.png "VS_CancellationToken")  
+ ![CancellationTokenSource and cancellation tokens](media/vs-cancellationtoken.png "VS_CancellationToken")  
   
  The new cancellation model makes it easier to create cancellation-aware applications and libraries, and it supports the following features:  
   

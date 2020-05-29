@@ -24,7 +24,7 @@ When an XML document is in memory, the conceptual representation is a tree. For 
   
  The input is represented in memory as the following node tree with the assigned node type property:  
   
- ![example node tree](../../../../docs/standard/data/xml/media/simple-xml.gif "Simple_XML")  
+ ![example node tree](media/simple-xml.gif "Simple_XML")  
 Book and title node tree representation  
   
  The `book` element becomes an **XmlElement** object, the next element, `title`, also becomes an **XmlElement**, while the element content becomes an **XmlText** object. In looking at the **XmlElement** methods and properties, the methods and properties are different than the methods and properties available on an **XmlText** object. So knowing what node type the XML markup becomes is vital, as its node type determines the actions that can be performed.  

@@ -27,7 +27,7 @@ The XML Document Object Model (DOM) class is an in-memory representation of an X
 
 The following illustration shows how memory is structured when this XML data is read into the DOM structure.
 
-![XML document structure](../../../../docs/standard/data/xml/media/xml-to-domtree.gif "XML_To_DOMTree")
+![XML document structure](media/xml-to-domtree.gif "XML_To_DOMTree")
 XML document structure
 
 Within the XML document structure, each circle in this illustration represents a node, which is called an **XmlNode** object. The **XmlNode** object is the basic object in the DOM tree. The **XmlDocument** class, which extends **XmlNode**, supports methods for performing operations on the document as a whole (for example, loading it into memory or saving the XML to a file. In addition, **XmlDocument** provides a means to view and manipulate the nodes in the entire XML document. Both **XmlNode** and **XmlDocument** have performance and usability enhancements and have methods and properties to:

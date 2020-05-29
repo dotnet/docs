@@ -86,7 +86,7 @@ This document demonstrates how to enable cancellation in your application. This 
   
  The following illustration shows the running application.  
   
- ![The Windows Forms Application](../../../docs/standard/parallel-programming/media/tpldataflow-cancellation.png "TPLDataflow_Cancellation")  
+ ![The Windows Forms Application](media/tpldataflow-cancellation.png "TPLDataflow_Cancellation")  
 
 ## See also
 

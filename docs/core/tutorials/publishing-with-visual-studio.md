@@ -53,25 +53,25 @@ In the following steps, you'll look at the files created by the publish process.
 
    As the image shows, the published output includes the following files:
 
-      * *HelloWorld.deps.json*
+   * *HelloWorld.deps.json*
 
-         This is the application's runtime dependencies file. It defines the .NET Core components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+      This is the application's runtime dependencies file. It defines the .NET Core components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
 
-      * *HelloWorld.dll*
+   * *HelloWorld.dll*
 
-         This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt.
+      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET Core runtime installed.
 
-      * *HelloWorld.exe*
+   * *HelloWorld.exe*
 
-         This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt.
+      This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
 
-      * *HelloWorld.pdb* (optional for deployment)
+   * *HelloWorld.pdb* (optional for deployment)
 
-         This is the debug symbols file. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
+      This is the debug symbols file. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
 
-      * *HelloWorld.runtimeconfig.json*
+   * *HelloWorld.runtimeconfig.json*
 
-         This is the application's run-time configuration file. It identifies the version of .NET Core that your application was built to run on. You can also add configuration options to it. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+      This is the application's run-time configuration file. It identifies the version of .NET Core that your application was built to run on. You can also add configuration options to it. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 ## Run the published app
 
@@ -85,13 +85,13 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Run the app by using the executable:
 
-   1. Enter `HelloWorld.exe` and press Enter.
+   1. Enter `HelloWorld.exe` and press <kbd>Enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 
 1. Run the app by using the `dotnet` command:
 
-   1. Enter `dotnet HelloWorld.dll` and press Enter.
+   1. Enter `dotnet HelloWorld.dll` and press <kbd>Enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 

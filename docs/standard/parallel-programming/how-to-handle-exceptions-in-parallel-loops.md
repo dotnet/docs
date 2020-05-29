@@ -25,5 +25,5 @@ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> a
   
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

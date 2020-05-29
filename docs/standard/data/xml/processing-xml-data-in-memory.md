@@ -14,14 +14,14 @@ The Microsoft .NET Framework includes three models for processing XML data: the 
  [LINQ to XML](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) is a model introduced in the .NET Framework version 3.5 for processing XML data. It's an in-memory model that leverages [Language-Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md). LINQ extends the language syntax of C# and Visual Basic to provide new query capabilities.  
   
 ## In This Section  
- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
+ [Process XML Data Using the DOM Model](process-xml-data-using-the-dom-model.md)  
  Discusses using the <xref:System.Xml.XmlDocument>, and its related classes to process XML data.  
   
- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
+ [Process XML Data Using the XPath Data Model](process-xml-data-using-the-xpath-data-model.md)  
  Discusses using the <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlDocument>, and <xref:System.Xml.XPath.XPathNavigator> classes to process XML data.  
   
- [Process XML Data Using LINQ to XML](../../../../docs/standard/data/xml/process-xml-data-using-linq-to-xml.md)  
+ [Process XML Data Using LINQ to XML](process-xml-data-using-linq-to-xml.md)  
  Provides a brief overview of LINQ to XML and provides links to the LINQ to XML documentation.  
   
 ## Related Sections  
- [XML Documents and Data](../../../../docs/standard/data/xml/index.md)
+ [XML Documents and Data](index.md)

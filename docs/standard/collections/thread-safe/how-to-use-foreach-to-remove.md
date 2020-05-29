@@ -30,4 +30,4 @@ To enumerate the collection without modifying it, just use `foreach` (`For Each`
 ## See also
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
-- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+- [Parallel Programming](../../parallel-programming/index.md)

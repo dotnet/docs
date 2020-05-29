@@ -21,14 +21,14 @@ In the .NET Framework version 2.0, the core XML classes have been enhanced to in
 > In the .NET Framework version 1.0 the <xref:System.Xml.XmlConvert> class was needed to convert between XML Schema and CLR types.  
   
 ## In This Section  
- [Mapping XML Data Types to CLR Types](../../../../docs/standard/data/xml/mapping-xml-data-types-to-clr-types.md)  
+ [Mapping XML Data Types to CLR Types](mapping-xml-data-types-to-clr-types.md)  
  Describes the default mappings of XML data types to CLR types.  
   
- [XML Type Support Implementation Notes](../../../../docs/standard/data/xml/xml-type-support-implementation-notes.md)  
+ [XML Type Support Implementation Notes](xml-type-support-implementation-notes.md)  
  Discusses some of the type support implementation details.  
   
- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
+ [Conversion of XML Data Types](conversion-of-xml-data-types.md)  
  Describes how to use the <xref:System.Xml.XmlConvert> class to convert between XML Schema and CLR types.  
   
 ## Related Sections  
- [Accessing Strongly Typed XML Data Using XPathNavigator](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)
+ [Accessing Strongly Typed XML Data Using XPathNavigator](accessing-strongly-typed-xml-data-using-xpathnavigator.md)

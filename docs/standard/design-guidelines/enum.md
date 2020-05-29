@@ -96,5 +96,5 @@ If you have real data about application incompatibilities caused by additions to
 
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Type Design Guidelines](type.md)
+- [Framework Design Guidelines](index.md)

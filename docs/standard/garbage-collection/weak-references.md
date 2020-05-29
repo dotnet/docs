@@ -46,4 +46,4 @@ The garbage collector cannot collect an object in use by an application while th
   
 ## See also
 
-- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+- [Garbage Collection](index.md)

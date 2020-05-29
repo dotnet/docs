@@ -75,17 +75,17 @@ The composite formatting feature is supported by methods such as the following:
  [!code-vb[Formatting.Composite#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/alignment1.vb#8)]  
   
 ### Format String Component  
- The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](../../../docs/standard/base-types/enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
+ The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
   
  The following table lists types or categories of types in the .NET Framework class library that support a predefined set of format strings, and provides links to the topics that list the supported format strings. Note that string formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type. For more information, see the <xref:System.IFormattable> and <xref:System.ICustomFormatter> interface topics.  
   
 |Type or type category|See|  
 |---------------------------|---------|  
-|Date and time types (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)<br /><br /> [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|  
-|Enumeration types (all types derived from <xref:System.Enum?displayProperty=nameWithType>)|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|  
-|Numeric types (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)<br /><br /> [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|  
+|Date and time types (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)<br /><br /> [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)|  
+|Enumeration types (all types derived from <xref:System.Enum?displayProperty=nameWithType>)|[Enumeration Format Strings](enumeration-format-strings.md)|  
+|Numeric types (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Standard Numeric Format Strings](standard-numeric-format-strings.md)<br /><br /> [Custom Numeric Format Strings](custom-numeric-format-strings.md)|  
 |<xref:System.Guid>|<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|  
-|<xref:System.TimeSpan>|[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)<br /><br /> [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|  
+|<xref:System.TimeSpan>|[Standard TimeSpan Format Strings](standard-timespan-format-strings.md)<br /><br /> [Custom TimeSpan Format Strings](custom-timespan-format-strings.md)|  
   
 ### Escaping Braces  
  Opening and closing braces are interpreted as starting and ending a format item. Consequently, you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("{{") in the fixed text to display one opening brace ("{"), or two closing braces ("}}") to display one closing brace ("}"). Braces in a format item are interpreted sequentially in the order they are encountered. Interpreting nested braces is not supported.  
@@ -157,11 +157,11 @@ The composite formatting feature is supported by methods such as the following:
 - <xref:System.String.Format%2A?displayProperty=nameWithType>
 - [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)
 - [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
-- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
-- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)
-- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
-- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)
-- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)
-- [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)
+- [Formatting Types](formatting-types.md)
+- [Standard Numeric Format Strings](standard-numeric-format-strings.md)
+- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
+- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
+- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)
+- [Custom TimeSpan Format Strings](custom-timespan-format-strings.md)
+- [Enumeration Format Strings](enumeration-format-strings.md)

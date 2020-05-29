@@ -46,4 +46,4 @@ Therefore, it is not guaranteed that the data that is returned by <xref:System.C
 ## See also
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+- [Thread-Safe Collections](index.md)

@@ -23,4 +23,4 @@ Visual Studio provides extensive support for debugging and profiling multi-threa
   
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- [Parallel Programming](index.md)

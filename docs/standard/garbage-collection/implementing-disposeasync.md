@@ -55,61 +55,7 @@ public async ValueTask DisposeAsync()
 
 All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Here is an example implementation of the async dispose pattern that uses a <xref:System.Text.Json.Utf8JsonWriter?displayProperty=nameWithType>.
 
-```csharp
-using System;
-using System.Text.Json;
-using System.Threading.Tasks;
-
-public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
-{
-    // To detect redundant calls
-    private bool _disposed = false;
-
-    // Created in .ctor, omitted for brevity.
-    private Utf8JsonWriter _jsonWriter;
-
-    public async ValueTask DisposeAsync()
-    {
-        await DisposeAsyncCore();
-
-        Dispose(false);
-        GC.SuppressFinalize(this);
-    }
-
-    protected virtual async ValueTask DisposeAsyncCore()
-    {
-        // Cascade async dispose calls
-        if (_jsonWriter != null)
-        {
-            await _jsonWriter.DisposeAsync();
-        }
-    }
-
-    public void Dispose()
-    {
-        Dispose(true);
-        GC.SuppressFinalize(this);
-    }
-
-    protected virtual void Dispose(bool disposing)
-    {
-        if (_disposed)
-        {
-            return;
-        }
-
-        if (disposing)
-        {
-            // TODO: dispose managed state (managed objects).
-        }
-
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
-
-        _disposed = true;
-    }
-}
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/disposeasync.cs":::
 
 The previous example used the <xref:System.Text.Json.Utf8JsonWriter>, for more information on, see, [migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
 
@@ -117,81 +63,24 @@ The previous example used the <xref:System.Text.Json.Utf8JsonWriter>, for more i
 
 To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md), and [using](../../csharp/language-reference/keywords/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated, then wrapped in an `await using` statement.
 
-```csharp
-class ExampleProgram
-{
-    static async Task Main()
-    {
-        var exampleAsyncDisposable = new ExampleAsyncDisposable();
-        await using (exampleAsyncDisposable.ConfigureAwait(false))
-        {
-            // Interact with the exampleAsyncDisposable instance.
-        }
-
-        Console.ReadLine();
-    }
-}
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/proper-await-using.cs":::
 
 > [!IMPORTANT]
 > Use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)> extension method of the <xref:System.IAsyncDisposable> interface to configure how the continuation of the task is marshalled on its original context or scheduler. For more information on `ConfigureAwait`, see [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq/).
 
 For situations where the usage of `ConfigureAwait` is not needed, the `await using` statement could be simplified as follows:
 
-```csharp
-class ExampleProgram
-{
-    static async Task Main()
-    {
-        await using (var exampleAsyncDisposable = new ExampleAsyncDisposable())
-        {
-            // Interact with the exampleAsyncDisposable instance.
-        }
-
-        Console.ReadLine();
-    }
-}
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/await-using-non-configureawait.cs":::
 
 Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
 
-```csharp
-class ExampleProgram
-{
-    static async Task Main()
-    {
-        await using var exampleAsyncDisposable = new ExampleAsyncDisposable();
-
-        // Interact with the exampleAsyncDisposable instance.
-
-        Console.ReadLine();
-    }
-}
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/await-using-declaration.cs":::
 
 ## Stacked usings
 
 In situations where you may have multiple instances of <xref:System.IAsyncDisposable> implementations, it is possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
 
-```csharp
-class ExampleProgram
-{
-    static async Task Main()
-    {
-        var objOne = new ExampleAsyncDisposable();
-        await using objOne.ConfigureAwait(false);
-        // Interact with the objOne instance.
-
-        var objTwo = new ExampleAsyncDisposable();
-        await using objTwo.ConfigureAwait(false))
-        {
-            // Interact with the objTwo instance.
-        }
-
-        Console.ReadLine();
-    }
-}
-```
+:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
 ## See also
 

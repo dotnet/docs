@@ -185,4 +185,3 @@ A library doesn't have to be distributed as a package. It can be bundled with a 
 
 > [!div class="nextstepaction"]
 > [Publish a .NET Core console application with Visual Studio Code](publishing-with-visual-studio-code.md)
- 

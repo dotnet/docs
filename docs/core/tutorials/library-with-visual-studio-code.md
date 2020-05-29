@@ -110,7 +110,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
      Determining projects to restore...
      All projects are up-to-date for restore.
      You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll      
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)

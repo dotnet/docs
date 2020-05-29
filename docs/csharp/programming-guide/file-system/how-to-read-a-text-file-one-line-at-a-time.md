@@ -41,7 +41,7 @@ System.Console.ReadLine();
   
 - The file may not exist.  
   
-## .NET Framework Security  
+## .NET Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `myFile.cs` may not be a C# source file.  
   
 ## See also

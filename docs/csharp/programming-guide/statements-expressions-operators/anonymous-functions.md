@@ -15,7 +15,7 @@ You can use a [lambda expression](lambda-expressions.md) or an [anonymous method
 
 ## The Evolution of Delegates in C\#
 
- In C# 1.0, you created an instance of a delegate by explicitly initializing it with a method that was defined elsewhere in the code. C# 2.0 introduced the concept of anonymous methods as a way to write unnamed inline statement blocks that can be executed in a delegate invocation. C# 3.0 introduced lambda expressions, which are similar in concept to anonymous methods but more expressive and concise. These two features are known collectively as *anonymous functions*. In general, applications that target version 3.5 and later of the .NET Framework should use lambda expressions.  
+ In C# 1.0, you created an instance of a delegate by explicitly initializing it with a method that was defined elsewhere in the code. C# 2.0 introduced the concept of anonymous methods as a way to write unnamed inline statement blocks that can be executed in a delegate invocation. C# 3.0 introduced lambda expressions, which are similar in concept to anonymous methods but more expressive and concise. These two features are known collectively as *anonymous functions*. In general, applications that target .NET Framework 3.5 or later should use lambda expressions.  
   
  The following example demonstrates the evolution of delegate creation from C# 1.0 to C# 3.0:  
   

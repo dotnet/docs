@@ -31,7 +31,7 @@ If you are not using the text files from [How to write to a text file](./how-to-
   
 - The file doesn't exist or doesn't exist at the specified location. Check the path and the spelling of the file name.  
   
-## .NET Framework Security  
+## .NET Security  
  Do not rely on the name of a file to determine the contents of the file. For example, the file `myFile.cs` might not be a C# source file.  
   
 ## See also

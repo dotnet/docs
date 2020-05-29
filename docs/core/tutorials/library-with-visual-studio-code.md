@@ -35,6 +35,12 @@ Start by creating a blank solution to put the class library project in. A soluti
    dotnet new sln
    ```
 
+   The terminal output looks like the following example:
+
+   ```
+   The template "Solution File" was created successfully.
+   ```
+
 ## Create a class library project
 
 Add a new .NET Standard class library project named "StringLibrary" to the solution.
@@ -45,10 +51,27 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    dotnet new classlib -o StringLibrary
    ```
 
+   The terminal output looks like the following example:
+
+   ```
+   The template "Class library" was created successfully.
+   Processing post-creation actions...
+   Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
+     Determining projects to restore...
+     Restore completed in 328.13 ms for C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj.
+   Restore succeeded.
+   ```
+
 1. Run the following command to add the library project to the solution:
 
    ```dotnetcli
    dotnet sln add StringLibrary/StringLibrary.csproj
+   ```
+
+   The terminal output looks like the following example:
+
+   ```
+   Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
 1. Check to make sure that the library targets the correct version of .NET Standard. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
@@ -79,6 +102,21 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    dotnet build
    ```
 
+   The terminal output looks like the following example:
+
+   ```
+   Microsoft (R) Build Engine version 16.6.0 for .NET Core
+   Copyright (C) Microsoft Corporation. All rights reserved.
+     Determining projects to restore...
+     All projects are up-to-date for restore.
+     You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll      
+   Build succeeded.
+       0 Warning(s)
+       0 Error(s)
+   Time Elapsed 00:00:02.78
+   ```
+
 ## Add a console app to the solution
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
@@ -89,16 +127,39 @@ Add a console application that uses the class library. The app will prompt the u
    dotnet new console -o ShowCase
    ```
 
+   The terminal output looks like the following example:
+
+   ```
+   The template "Console Application" was created successfully.
+   Processing post-creation actions...
+   Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
+     Determining projects to restore...
+     Restore completed in 210.78 ms for C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj.
+   Restore succeeded.
+   ```
+
 1. Run the following command to add the console app project to the solution:
 
    ```dotnetcli
    dotnet sln add ShowCase/ShowCase.csproj
    ```
 
+   The terminal output looks like the following example:
+
+   ```
+   Project `ShowCase\ShowCase.csproj` added to the solution.
+   ```
+
 1. Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project by running the following command:
 
    ```dotnetcli
    dotnet add ShowCase/Showcase.csproj reference StringLibrary/StringLibrary.csproj
+   ```
+
+   The terminal output looks like the following example:
+
+   ```
+   Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
    ```
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
@@ -117,7 +178,25 @@ Add a console application that uses the class library. The app will prompt the u
    dotnet run --project ShowCase/ShowCase.csproj
    ```
 
-1. Try out the program by entering strings and pressing **Enter**, then press **Enter** to exit.
+1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
+
+   The terminal output looks like the following example:
+
+   ```
+   Press <Enter> only to exit; otherwise, enter a string and press <Enter>:
+
+   A string that starts with an uppercase letter
+   Input: A string that starts with an uppercase letter
+   Begins with uppercase? : Yes
+
+   A string that starts with a lowercase letter
+   Input: A string that starts with a lowercase letter
+   Begins with uppercase? : Yes
+   ```
+
+## Additional resources
+
+* [Develop libraries with the .NET Core CLI](libraries.md)
 
 ## Next steps
 

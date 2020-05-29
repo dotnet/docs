@@ -167,7 +167,7 @@ Now that the tests have all passed when running the Debug version of the library
 
 ## Additional resources
 
-- [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
+- [Unit testing in .NET Core and .NET Standard](../testing/index.md)
 
 ## Next steps
 

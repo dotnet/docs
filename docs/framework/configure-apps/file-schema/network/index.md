@@ -1,5 +1,6 @@
 ---
 title: "Network Settings Schema"
+description: Learn about the schema for the network settings that specify how the .NET Framework connects to the Internet and handles URIs.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "elements [.NET Framework], network configuration elements"

@@ -13,7 +13,7 @@ F# 4.5 is available in all .NET Core distributions and Visual Studio tooling. [G
 
 ## Span and byref-like structs
 
-The <xref:System.Span%601> type introduced in .NET Core allows you to represent buffers in memory in a strongly-typed manner, which is now allowed in F# starting with F# 4.5. The following example shows how you can re-use a function operating on a <xref:System.Span%601> with different buffer representations:
+The <xref:System.Span%601> type introduced in .NET Core allows you to represent buffers in memory in a strongly typed manner, which is now allowed in F# starting with F# 4.5. The following example shows how you can re-use a function operating on a <xref:System.Span%601> with different buffer representations:
 
 ```fsharp
 let safeSum (bytes: Span<byte>) =

@@ -23,9 +23,10 @@ The following tutorials are available for learning about .NET Core.
 
 ## Use Visual Studio Code
 
-Choose these tutorials if you want to use Visual Studio Code or some other code editor. All use the CLI for .NET Core development tasks, so all can be used with any code editor.
+Choose these tutorials if you want to use Visual Studio Code or some other code editor. All use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
 
 - [Create a console app](with-visual-studio-code.md)
+- [Debug an app](debugging-with-visual-studio-code.md)
 - [Create a console app and publish it](cli-create-console-app.md)
 - [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
 - [Create a library and unit test it - macOS](using-on-macos.md)

@@ -52,7 +52,7 @@ All connection strings share the same basic syntax described above. The set of r
 
 Typing mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
 
-Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly-typed properties, and make it possible to validate the connection string before it's sent to the data source.
+Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly typed properties, and make it possible to validate the connection string before it's sent to the data source.
 
 ## In This Section
 

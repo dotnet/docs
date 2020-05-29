@@ -18,7 +18,6 @@ The following tutorials are available for learning about .NET Core.
 - [Unit test a class library](testing-library-with-visual-studio.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-
 - [Create an F# console app](../../fsharp/get-started/get-started-visual-studio.md)
 
 ## Use Visual Studio Code
@@ -32,7 +31,6 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 - [Unit test a class library](testing-library-with-visual-studio-code.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
-
 - [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
 
 ## Use Visual Studio for Mac

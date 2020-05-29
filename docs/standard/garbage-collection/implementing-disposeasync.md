@@ -19,7 +19,7 @@ The <xref:System.IAsyncDisposable> interface was introduced as part of C# 8.0. Y
 The <xref:System.IAsyncDisposable> interface requires the implementation of a single parameterless method, <xref:System.IAsyncDisposable.DisposeAsync>. Also, any non-sealed class should have an additional `DisposeAsyncCore()` method that also returns a <xref:System.Threading.Tasks.ValueTask>.
 
 - A `public` <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementation that has no parameters.
-- A `protected virtual ValueTask DisposeAsyncCore` method whose signature is:
+- A `protected virtual ValueTask DisposeAsyncCore()` method whose signature is:
 
 ```csharp
 protected virtual ValueTask DisposeAsyncCore()
@@ -27,9 +27,11 @@ protected virtual ValueTask DisposeAsyncCore()
 }
 ```
 
+The `DisposeAsyncCore()` method is `virtual` so that derived classes can define additional cleanup in their overrides.
+
 ### The DisposeAsync() method
 
-Because the `public`, parameterless `DisposeAsync` method is called by a consumer of the type, its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
+The `public`, parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
 ```csharp
 public async ValueTask DisposeAsync()
@@ -45,7 +47,7 @@ public async ValueTask DisposeAsync()
 ```
 
 > [!NOTE]
-> One primary difference in the asynchronous version of the dispose pattern, is that the call from `DisposeAsync` to the `Dispose(bool)` overload method is given `false` as an argument - whereas the call from <xref:System.IDisposable.Dispose?displayProperty=nameWithType> passes `true`. This is intended to help ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked.
+> One primary difference in the asynchronous version of the dispose pattern, is that the call from `DisposeAsync()` to the `Dispose(bool)` overload method is given `false` as an argument - whereas the call from <xref:System.IDisposable.Dispose?displayProperty=nameWithType> passes `true`. This is intended to help ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked.
 
 ## Implement the async dispose pattern
 
@@ -107,6 +109,8 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 }
 ```
 
+The previous example used the <xref:System.Text.Json.Utf8JsonWriter>, for more information on `System.Text.Json` see, [migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
+
 ## Using async disposable
 
 To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md), and [using](../../csharp/language-reference/keywords/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated, then wrapped in an `await using` statement.
@@ -130,8 +134,63 @@ class ExampleProgram
 > [!IMPORTANT]
 > Use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)> extension method of the <xref:System.IAsyncDisposable> interface to configure how the continuation of the task is marshalled on its original context or scheduler. For more information on `ConfigureAwait`, see [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq/).
 
+For situations where the usage of `ConfigureAwait` is not needed, the `await using` statement could be simplified as follows:
+
+```csharp
+class ExampleProgram
+{
+    static async Task Main()
+    {
+        await using (var exampleAsyncDisposable = new ExampleAsyncDisposable())
+        {
+            // Interact with the exampleAsyncDisposable instance.
+        }
+
+        Console.ReadLine();
+    }
+}
+```
+
+Furthermore, this could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
+
+```csharp
+class ExampleProgram
+{
+    static async Task Main()
+    {
+        await using var exampleAsyncDisposable = new ExampleAsyncDisposable();
+
+        // Interact with the exampleAsyncDisposable instance.
+
+        Console.ReadLine();
+    }
+}
+```
+
+## Stacked usings
+
+In situations where you may have multiple instances of <xref:System.IAsyncDisposable> implementations, it is possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to alleviate that potential concern, you should avoid stacking and instead follow this example pattern:
+
+```csharp
+class ExampleProgram
+{
+    static async Task Main()
+    {
+        var exampleAsyncDisposableOne = new ExampleAsyncDisposable();
+        await using exampleAsyncDisposableOne.ConfigureAwait(false);
+        // Interact with the exampleAsyncDisposableOne instance.
+
+        var exampleAsyncDisposableTwo = new ExampleAsyncDisposable();
+        await using exampleAsyncDisposableTwo.ConfigureAwait(false);
+        // Interact with the exampleAsyncDisposableTwo instance.
+
+        Console.ReadLine();
+    }
+}
+```
+
 ## See also
 
-- <xref:System.IDisposable>
-- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>
+- <xref:System.IAsyncDisposable>
+- <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>
 - <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)>

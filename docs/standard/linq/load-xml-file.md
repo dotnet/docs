@@ -1,5 +1,5 @@
 ---
-title: "How to load XML from a file - LINQ to XML"
+title: How to load XML from a file - LINQ to XML
 description: You can use the XElement.Load method in C# and Visual Basic to load an XML document from a file.
 ms.date: 07/20/2015
 dev_langs:

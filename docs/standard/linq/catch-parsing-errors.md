@@ -1,5 +1,5 @@
 ---
-title: "How to catch parsing errors - LINQ to XML"
+title: How to catch parsing errors - LINQ to XML
 description: An exception can occur in your C# or Visual Basic program if it tries to parse invalid XML with a method such as XElement.Parse. You can write the program to catch and respond to such exceptions.
 ms.date: 7/20/2015
 dev_langs:

@@ -1,5 +1,5 @@
 ---
-title: "How to write queries on XML in namespaces - LINQ to XML"
+title: How to write queries on XML in namespaces - LINQ to XML
 description: To write a query on XML that's in a namespace, you use XName objects that have the correct namespace. Learn how to do this in C# and Visual Basic, and how to create queries.
 ms.date: 07/20/2015
 dev_langs:

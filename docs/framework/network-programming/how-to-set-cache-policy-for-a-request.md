@@ -1,5 +1,6 @@
 ---
 title: "How to: Set Cache Policy for a Request"
+description: Learn how to set a cache policy for a request in the .NET Framework. This cache policy allows a resource to be used from the cache for up to a day.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

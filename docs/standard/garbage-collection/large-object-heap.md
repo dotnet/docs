@@ -197,7 +197,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 
 ### A debugger
 
-If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../../docs/framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
+If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
 
 > [!NOTE]
 > The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).
@@ -308,3 +308,4 @@ CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios wh
 VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out-of-memory exceptions.
 
 We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.
+ 

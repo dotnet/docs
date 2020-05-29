@@ -58,6 +58,6 @@ If a class holds an <xref:System.IDisposable> implementation as an instance memb
 
 ## See also
 
-- [Cleaning up unmanaged resources](../../../docs/standard/garbage-collection/unmanaged.md)
+- [Cleaning up unmanaged resources](unmanaged.md)
 - [using Statement (C# Reference)](../../csharp/language-reference/keywords/using-statement.md)
 - [Using Statement (Visual Basic)](../../visual-basic/language-reference/statements/using-statement.md)

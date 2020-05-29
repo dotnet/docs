@@ -1,6 +1,7 @@
 ---
-title: "Implement a DisposeAsync method"
-ms.date: 05/28/2020
+title: Implement a DisposeAsync method
+description: 
+ms.date: 05/29/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -44,9 +45,90 @@ public async ValueTask DisposeAsync()
 ```
 
 > [!NOTE]
-> One primary difference in the asynchronous version of the dispose pattern, is that the call from `DisposeAsync` to the `Dispose(bool)` overload method is given `false` as an argument - whereas the call from <xref:System.IDisposable.Dispose?displayProperty=nameWithType> passes `true`. This is intended to help ensure functional equivalence with the synchronous dispose pattern, and ensures finalizer code paths still get invoked.
+> One primary difference in the asynchronous version of the dispose pattern, is that the call from `DisposeAsync` to the `Dispose(bool)` overload method is given `false` as an argument - whereas the call from <xref:System.IDisposable.Dispose?displayProperty=nameWithType> passes `true`. This is intended to help ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked.
 
 ## Implement the async dispose pattern
+
+All non-sealed classes should be considered a potential base class, because they could be inherited. If you implement the async dispose pattern for any potential base class, you must provide the `protected virtual ValueTask DisposeAsyncCore()` method. Here is an example implementation of the async dispose pattern that uses a <xref:System.Text.Json.Utf8JsonWriter?displayProperty=nameWithType>.
+
+```csharp
+using System;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
+{
+    // To detect redundant calls
+    private bool _disposed = false;
+
+    // Created in .ctor, omitted for brevity.
+    private Utf8JsonWriter _jsonWriter;
+
+    public async ValueTask DisposeAsync()
+    {
+        await DisposeAsyncCore();
+
+        Dispose(false);
+        GC.SuppressFinalize(this);
+    }
+
+    protected virtual async ValueTask DisposeAsyncCore()
+    {
+        // Cascade async dispose calls
+        if (_jsonWriter != null)
+        {
+            await _jsonWriter.DisposeAsync();
+        }
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed)
+        {
+            return;
+        }
+
+        if (disposing)
+        {
+            // TODO: dispose managed state (managed objects).
+        }
+
+        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+        // TODO: set large fields to null.
+
+        _disposed = true;
+    }
+}
+```
+
+## Using async disposable
+
+To properly consume an object that implements the <xref:System.IAsyncDisposable> interface, you use the [await](../../csharp/language-reference/operators/await.md), and [using](../../csharp/language-reference/keywords/using.md) keywords together. Consider the following example, where the `ExampleAsyncDisposable` class is instantiated, then wrapped in an `await using` statement.
+
+```csharp
+class ExampleProgram
+{
+    static async Task Main()
+    {
+        var exampleAsyncDisposable = new ExampleAsyncDisposable();
+        await using (exampleAsyncDisposable.ConfigureAwait(false))
+        {
+            // Interact with the exampleAsyncDisposable instance.
+        }
+
+        Console.ReadLine();
+    }
+}
+```
+
+> [!IMPORTANT]
+> Use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)> extension method of the <xref:System.IAsyncDisposable> interface to configure how the continuation of the task is marshalled on its original context or scheduler. For more information on `ConfigureAwait`, see [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq/).
 
 ## See also
 

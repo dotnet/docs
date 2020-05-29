@@ -14,7 +14,7 @@ This section introduces functional transformations, including the underlying con
 
 ## In this section
 
-|Topic|Description|
+|Article|Description|
 |-----------|-----------------|
 |[Concepts and terminology (functional transformation)](concepts-terminology-functional-transformation.md)|Introduces the concepts and terminology of pure functional transformations.|
 |[Functional programming vs. imperative programming](functional-vs-imperative-programming.md)|Compares and contrasts functional programming to more traditional imperative (procedural) programming.|

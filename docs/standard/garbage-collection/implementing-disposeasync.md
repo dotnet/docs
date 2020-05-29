@@ -12,7 +12,9 @@ helpviewer_keywords:
 
 # Implement a DisposeAsync method
 
-The <xref:System.IAsyncDisposable> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+The <xref:System.IAsyncDisposable> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
+
+It is typical that when implementing the <xref:System.IAsyncDisposable> interface, classes will also implement the <xref:System.IDisposable> interface. All of the guidance for implementing the dispose pattern is also relevant to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
 
 ## DisposeAsync() and DisposeAsyncCore()
 
@@ -31,7 +33,7 @@ The `DisposeAsyncCore()` method is `virtual` so that derived classes can define 
 
 ### The DisposeAsync() method
 
-The `public`, parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
+The `public` parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
 ```csharp
 public async ValueTask DisposeAsync()
@@ -109,7 +111,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 }
 ```
 
-The previous example used the <xref:System.Text.Json.Utf8JsonWriter>, for more information on `System.Text.Json` see, [migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
+The previous example used the <xref:System.Text.Json.Utf8JsonWriter>, for more information on, see, [migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
 
 ## Using async disposable
 
@@ -151,7 +153,7 @@ class ExampleProgram
 }
 ```
 
-Furthermore, this could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
+Furthermore, it could be written to use the implicit scoping of a [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations).
 
 ```csharp
 class ExampleProgram
@@ -169,20 +171,22 @@ class ExampleProgram
 
 ## Stacked usings
 
-In situations where you may have multiple instances of <xref:System.IAsyncDisposable> implementations, it is possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to alleviate that potential concern, you should avoid stacking and instead follow this example pattern:
+In situations where you may have multiple instances of <xref:System.IAsyncDisposable> implementations, it is possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
 
 ```csharp
 class ExampleProgram
 {
     static async Task Main()
     {
-        var exampleAsyncDisposableOne = new ExampleAsyncDisposable();
-        await using exampleAsyncDisposableOne.ConfigureAwait(false);
-        // Interact with the exampleAsyncDisposableOne instance.
+        var objOne = new ExampleAsyncDisposable();
+        await using objOne.ConfigureAwait(false);
+        // Interact with the objOne instance.
 
-        var exampleAsyncDisposableTwo = new ExampleAsyncDisposable();
-        await using exampleAsyncDisposableTwo.ConfigureAwait(false);
-        // Interact with the exampleAsyncDisposableTwo instance.
+        var objTwo = new ExampleAsyncDisposable();
+        await using objTwo.ConfigureAwait(false))
+        {
+            // Interact with the objTwo instance.
+        }
 
         Console.ReadLine();
     }

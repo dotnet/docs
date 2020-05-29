@@ -39,7 +39,7 @@ If indented properly, the code to construct <xref:System.Xml.Linq.XElement> obje
 
 ## XElement constructors
 
-The <xref:System.Xml.Linq.XElement> class uses the following constructors for functional construction. Note that there are some other constructors for <xref:System.Xml.Linq.XElement>, but because they aren't used for functional construction they aren't listed here.
+The <xref:System.Xml.Linq.XElement> class uses the following constructors for functional construction. Note that there are some other constructors for <xref:System.Xml.Linq.XElement>, but because they're not used for functional construction they're not listed here.
 
 |Constructor|Description|
 |-----------------|-----------------|

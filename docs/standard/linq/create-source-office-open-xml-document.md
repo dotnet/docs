@@ -69,7 +69,7 @@ Use the following steps to create the WordprocessingML document:
 1. Save the document, and name it SampleDoc.docx.
 
 > [!NOTE]
-> If you are using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.
+> If you're using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.
 
 ## See also
 

@@ -19,7 +19,7 @@ One difference is that in this case, the <xref:System.Linq.Enumerable.Where%2A> 
 
 However, the basic idea is the same: intermediate collections aren't materialized unless they have to be.
 
-When query expressions are used, they are converted to calls to the standard query operators, and the same principles apply.
+When query expressions are used, they're converted to calls to the standard query operators, and the same principles apply.
 
 All of the examples in this section that are querying Office Open XML documents use the same principle. Deferred execution and lazy evaluation are some of the fundamental concepts that you must understand to use LINQ, and LINQ to XML, effectively.
 

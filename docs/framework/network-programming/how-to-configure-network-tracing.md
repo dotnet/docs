@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure Network Tracing"
+description: Learn how to configure network tracing in the computer configuration file or application configuration file, which takes precedence over the computer file.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "formatting [.NET Framework], network tracing"

@@ -1,5 +1,6 @@
 ---
 title: "XML Serialization with XML Web Services"
+description: Learn about XML serialization as the transport mechanism used in the XML Web services architecture. XML serialization is performed by the XmlSerializer class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Serialize an Object"
+description: This article shows you how to serialize an object. Select a transport format in which the XML stream is stored, either as a stream or as a file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

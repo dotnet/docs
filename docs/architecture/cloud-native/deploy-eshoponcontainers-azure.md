@@ -1,12 +1,10 @@
 ---
 title: Deploying eShopOnContainers to Azure
 description: Deploying the eShopOnContainers application using Azure Kubernetes Service, Helm, and DevSpaces.
-ms.date: 04/20/2020
+ms.date: 05/13/2020
 ---
 
 # Deploying eShopOnContainers to Azure
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 The eShopOnContainers application can be deployed to a variety of Azure platforms. The recommended approach is to deploy the application to Azure Kubernetes Services (AKS). Helm, a Kubernetes deployment tool, is available to reduce deployment complexity. Optionally, developers may implement Azure Dev Spaces for Kubernetes to streamline their development process.
 

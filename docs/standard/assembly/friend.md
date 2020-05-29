@@ -1,5 +1,6 @@
 ---
 title: "Friend assemblies"
+description: A friend assembly is a .NET assembly that can access another assembly's internal (C#) or Friend (Visual Basic) types and members.
 ms.date: 08/20/2019
 ms.assetid: b65ea7de-0801-477a-a39c-e914c2cc107c
 dev_langs: 

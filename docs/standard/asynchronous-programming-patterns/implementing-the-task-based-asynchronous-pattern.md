@@ -1,5 +1,6 @@
 ---
 title: "Implementing the Task-based Asynchronous Pattern"
+description: This article explains how to implement the Task-based Asynchronous Pattern. You can use it to implement compute-bound and I/O-bound asynchronous operations.
 ms.date: "06/14/2017"
 dev_langs: 
   - "csharp"

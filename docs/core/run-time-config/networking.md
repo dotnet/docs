@@ -10,7 +10,7 @@ ms.topic: reference
 
 - Configures whether support for the HTTP/2 protocol is enabled.
 
-- Default: Disabled (`false`).
+- If you omit this setting, support for the HTTP/2 protocol is disabled. This is equivalent to setting the value to `false`.
 
 - Introduced in .NET Core 3.0.
 
@@ -26,7 +26,7 @@ ms.topic: reference
   > [!NOTE]
   > You may be using high-level networking APIs instead of directly instantiating the <xref:System.Net.Http.HttpClientHandler> class. This setting also affects which HTTP protocol stack is used by high-level networking APIs, including <xref:System.Net.Http.HttpClient> and [HttpClientFactory](https://docs.microsoft.com/previous-versions/aspnet/hh995280(v%3dvs.118)).
 
-- Default: Use <xref:System.Net.Http.SocketsHttpHandler> (`true`).
+- If you omit this setting, <xref:System.Net.Http.HttpClientHandler> uses <xref:System.Net.Http.SocketsHttpHandler>. This is equivalent to setting the value to `true`.
 
 - You can configure this setting programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 

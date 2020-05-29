@@ -132,7 +132,7 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_MAX`|An invalid value.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -141,4 +141,4 @@ typedef enum CorNativeType {
 ## See also
 
 - <xref:System.Runtime.InteropServices.UnmanagedType>
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

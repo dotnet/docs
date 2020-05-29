@@ -22,7 +22,7 @@ static class DataflowReversedWords
       {
          Console.WriteLine("Downloading '{0}'...", uri);
 
-         return await new HttpClient().GetStringAsync(uri);
+         return await new HttpClient(new HttpClientHandler{ AutomaticDecompression = System.Net.DecompressionMethods.GZip }).GetStringAsync(uri);
       });
 
       // Separates the specified text into an array of words.

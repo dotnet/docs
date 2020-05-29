@@ -58,7 +58,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 `PROJECT | SOLUTION`
 
-  The project or solution to pack. It's either a path to a [csproj file](csproj.md), a solution file, or to a directory. If not specified, the command searches the current directory for a project or solution file.
+  The project or solution to pack. It's either a path to a [csproj file](csproj.md), vbproj file, fsproj file, a solution file, or to a directory. If not specified, the command searches the current directory for a project or solution file.
 
 ## Options
 

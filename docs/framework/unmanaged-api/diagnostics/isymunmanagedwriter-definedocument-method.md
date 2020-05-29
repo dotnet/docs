@@ -44,7 +44,7 @@ HRESULT DefineDocument(
  [in] A pointer to a GUID that defines the type of the document.  
   
  `pRetVal`  
- [out] A pointer to the returned [ISymUnmanagedWriter](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) interface.  
+ [out] A pointer to the returned [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -54,4 +54,4 @@ HRESULT DefineDocument(
   
 ## See also
 
-- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)

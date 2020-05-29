@@ -161,7 +161,7 @@ This example produces the following output:
 
 ## Example: Use an embedded expression to clone and attach nodes
 
-As mentioned earlier, if you use an embedded expression to add existing nodes (including elements) and attributes to a new XML tree, and if the nodes being added nodes are already parented, the nodes are cloned and the clones are attached to the new XML tree. If the existing nodes aren't parented, they are simply attached to the new XML tree.
+As mentioned earlier, if you use an embedded expression to add existing nodes (including elements) and attributes to a new XML tree, and if the nodes being added nodes are already parented, the nodes are cloned and the clones are attached to the new XML tree. If the existing nodes aren't parented, they're simply attached to the new XML tree.
 
 The following code demonstrates the behavior when you add a parented element to a tree, and when you add an element with no parent to a tree.
 

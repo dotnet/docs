@@ -1,5 +1,6 @@
 ---
 title: "COM Wrappers"
+description: COM clients and .NET objects interact by using a COM callable wrapper and a runtime callable wrapper. The CLR creates wrappers automatically.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wrapper classes"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents"
+description: Learn how to use the XML Schema Definition tool to generate an XML schema that describes a class or to generate the class defined by an XML schema.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "generating XML classes using XML Schema Definition tool"

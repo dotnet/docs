@@ -9,7 +9,7 @@ ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
 
 This article shows how to create a document with namespaces in Visual Basic.
 
-When using XML literals in Visual Basic, users can define one global default XML namespace. This namespace is the default namespace for both XML literals and XML properties. The default XML namespace can be defined at either the project level or the file level. If it is defined at the file level, it overrides the default namespace at the project level.
+When using XML literals in Visual Basic, users can define one global default XML namespace. This namespace is the default namespace for both XML literals and XML properties. The default XML namespace can be defined at either the project level or the file level. If it's defined at the file level, it overrides the default namespace at the project level.
 
 You can also define other namespaces, and specify the namespace prefixes for those namespaces. You use the `Imports` keyword to define both types of namespace.
 

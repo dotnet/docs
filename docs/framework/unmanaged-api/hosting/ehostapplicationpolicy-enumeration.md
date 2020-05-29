@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EHostApplicationPolicy Enumeration
-Indicates how to modify an [IHostAssemblyManager](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md) interface object. This enumeration has been deprecated.  
+Indicates how to modify an [IHostAssemblyManager](ihostassemblymanager-interface.md) interface object. This enumeration has been deprecated.  
   
 ## Syntax  
   
@@ -27,7 +27,7 @@ typedef enum _HostApplicationPolicy {
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -37,4 +37,4 @@ typedef enum _HostApplicationPolicy {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Hosting Enumerations](hosting-enumerations.md)

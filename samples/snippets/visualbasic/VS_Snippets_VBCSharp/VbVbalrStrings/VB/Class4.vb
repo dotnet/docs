@@ -21,7 +21,7 @@ Class Class1b54b686ab29413badce6bd5422376eb
         Dim si As New System.Globalization.StringInfo(testString2)
 
         ' Create and populate the array.
-        Dim unicodeTestArray(si.LengthInTextElements) As String
+        Dim unicodeTestArray(si.LengthInTextElements - 1) As String
         For i As Integer = 0 To si.LengthInTextElements - 1
             unicodeTestArray(i) = si.SubstringByTextElements(i, 1)
         Next

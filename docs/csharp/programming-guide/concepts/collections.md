@@ -176,7 +176,7 @@ public class Galaxy
 
 ## Kinds of Collections
 
-Many common collections are provided by the .NET Framework. Each type of collection is designed for a specific purpose.
+Many common collections are provided by .NET. Each type of collection is designed for a specific purpose.
 
 Some of the common collection classes are described in this section:
 
@@ -208,7 +208,7 @@ For additional information, see [Commonly Used Collection Types](../../../standa
 
 ### System.Collections.Concurrent Classes
 
-In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
+In .NET Framework 4 and later versions, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
 
 The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=nameWithType> and <xref:System.Collections?displayProperty=nameWithType> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/thread-safe/index.md) and <xref:System.Collections.Concurrent>.
 
@@ -476,7 +476,7 @@ public class Car : IComparable<Car>
 
 You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface.
 
-Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this topic.
+Although you can define a custom collection, it is usually better to instead use the collections that are included in .NET, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this article.
 
 The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.
 

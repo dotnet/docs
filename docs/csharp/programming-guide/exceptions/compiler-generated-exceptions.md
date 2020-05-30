@@ -6,7 +6,8 @@ helpviewer_keywords:
 ms.assetid: 53b52f97-b366-4ed7-b05b-9eb78096b7f9
 ---
 # Compiler-Generated Exceptions (C# Programming Guide)
-Some exceptions are thrown automatically by the .NET Framework's common language runtime (CLR) when basic operations fail. These exceptions and their error conditions are listed in the following table.  
+
+Some exceptions are thrown automatically by the .NET runtime when basic operations fail. These exceptions and their error conditions are listed in the following table.  
   
 |Exception|Description|  
 |---------------|-----------------|  

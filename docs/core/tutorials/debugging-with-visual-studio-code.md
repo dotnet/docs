@@ -13,7 +13,7 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Use Debug build configuration
 
-*Debug* and *release* are two of .NET Core's build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
+*Debug* and *Release* are two of .NET Core's build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
@@ -23,7 +23,13 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
 A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
 
-1. In *Program.cs*, set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Another way to set a breakpoint is by placing the cursor in the line of code and then pressing <kbd>F9</kbd>.
+1. Open Visual Studio Code.
+
+1. Open the *HelloWorld* project folder that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+
+1. Open the *Program.cs* file.
+
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Another way to set a breakpoint is by placing the cursor in the line of code and then pressing <kbd>F9</kbd>.
 
    As the following image shows, Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
@@ -209,10 +215,7 @@ dotnet run --configuration Release
 
 ## Next steps
 
-In this tutorial, you used Visual Studio Code debugging tools. To learn how to publish a deployable version of the app, see [Publish your app](cli-create-console-app.md#publish-your-app).
-
-<!--In the next tutorial, you publish a deployable version of the app.
+In this tutorial, you used Visual Studio Code debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
 > [Publish a .NET Core console application with Visual Studio Code](publishing-with-visual-studio-code.md)
--->

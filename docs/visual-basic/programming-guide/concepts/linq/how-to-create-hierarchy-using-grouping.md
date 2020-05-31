@@ -9,7 +9,7 @@ This example shows how to group data, and then generate XML based on the groupin
 ## Example  
  This example first groups data by a category, then generates a new XML file in which the XML hierarchy reflects the grouping.  
   
- This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim doc As XElement = XElement.Load("Data.xml")  
@@ -75,4 +75,4 @@ Console.WriteLine(newData)
   
 ## See also
 
-- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

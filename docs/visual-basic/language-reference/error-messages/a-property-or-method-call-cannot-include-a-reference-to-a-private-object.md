@@ -23,4 +23,4 @@ Among the possible causes of this error are:
   
 ## See also
 
-- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Private](../modifiers/private.md)

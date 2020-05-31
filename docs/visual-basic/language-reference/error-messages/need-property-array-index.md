@@ -14,5 +14,5 @@ This property value consists of an array rather than a single value. You did not
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)

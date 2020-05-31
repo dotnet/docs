@@ -17,6 +17,6 @@ This example shows how to use an attribute axis property to access XML attribute
 ## See also
 
 - <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>
-- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
-- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML Attribute Axis Property](../../../language-reference/xml-axis/xml-attribute-axis-property.md)
+- [Accessing XML in Visual Basic](accessing-xml.md)
+- [XML](index.md)

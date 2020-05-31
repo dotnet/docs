@@ -67,7 +67,7 @@ Next ctl
   
 ## See also
 
-- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
-- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
-- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
+- [Control Flow](index.md)
+- [Decision Structures](decision-structures.md)
+- [Loop Structures](loop-structures.md)
+- [Other Control Structures](other-control-structures.md)

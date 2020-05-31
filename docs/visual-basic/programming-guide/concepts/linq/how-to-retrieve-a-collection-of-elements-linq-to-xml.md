@@ -9,7 +9,7 @@ This topic demonstrates the <xref:System.Xml.Linq.XContainer.Elements%2A> method
 ## Example  
  This example iterates through the child elements of the `purchaseOrder` element.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
 ```vb  
 Dim po As XElement = XElement.Load("PurchaseOrder.xml")  
@@ -33,4 +33,4 @@ Name: Items
   
 ## See also
 
-- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

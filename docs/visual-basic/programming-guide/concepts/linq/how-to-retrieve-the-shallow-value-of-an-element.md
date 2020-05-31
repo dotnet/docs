@@ -73,4 +73,4 @@ Column  Name="Name"         =Customer.Name
 
 ## See also
 
-- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

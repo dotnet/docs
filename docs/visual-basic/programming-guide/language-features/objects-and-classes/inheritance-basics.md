@@ -87,11 +87,11 @@ The following list describes restrictions on using `MyBase`:
 
 - `MyBase` cannot be used to access base class members that are marked as `Friend` if the base class is in a different assembly.
 
-For more information and another example, see [How to: Access a Variable Hidden by a Derived Class](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md).
+For more information and another example, see [How to: Access a Variable Hidden by a Derived Class](../declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md).
 
 ## The MyClass Keyword
 
-The `MyClass` keyword behaves like an object variable that refers to the current instance of a class as originally implemented. `MyClass` resembles `Me`, but every method and property call on `MyClass` is treated as if the method or property were [NotOverridable](../../../../visual-basic/language-reference/modifiers/notoverridable.md). Therefore, the method or property is not affected by overriding in a derived class.
+The `MyClass` keyword behaves like an object variable that refers to the current instance of a class as originally implemented. `MyClass` resembles `Me`, but every method and property call on `MyClass` is treated as if the method or property were [NotOverridable](../../../language-reference/modifiers/notoverridable.md). Therefore, the method or property is not affected by overriding in a derived class.
 
 - `MyClass` is a keyword, not a real object. `MyClass` cannot be assigned to a variable, passed to procedures, or used in an `Is` comparison.
 
@@ -143,5 +143,5 @@ Even though `derivedClass` overrides `testMethod`, the `MyClass` keyword in `use
 
 ## See also
 
-- [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Inherits Statement](../../../language-reference/statements/inherits-statement.md)
+- [Me, My, MyBase, and MyClass](../../program-structure/me-my-mybase-and-myclass.md)

@@ -22,6 +22,6 @@ Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' pr
 ## See also
 
 - <xref:System.Convert>
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [XML Literals](../xml-literals/index.md)
+- [XML](../../programming-guide/language-features/xml/index.md)

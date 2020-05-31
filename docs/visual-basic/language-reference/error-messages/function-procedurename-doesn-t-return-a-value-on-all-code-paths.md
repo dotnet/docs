@@ -15,13 +15,13 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
  You can return a value from a `Function` procedure in any of the following ways:  
   
-- Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+- Include the value in a [Return Statement](../statements/return-statement.md).  
   
 - Assign the value to the `Function` procedure name and then perform an `Exit Function` statement.  
   
 - Assign the value to the `Function` procedure name and then perform the `End Function` statement.  
   
- If control passes to `Exit Function` or `End Function` and you have not assigned any value to the procedure name, the procedure returns the default value of the return data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
+ If control passes to `Exit Function` or `End Function` and you have not assigned any value to the procedure name, the procedure returns the default value of the return data type. For more information, see "Behavior" in [Function Statement](../statements/function-statement.md).  
   
  By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -35,6 +35,6 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
 ## See also
 
-- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Procedures](../../programming-guide/language-features/procedures/function-procedures.md)
+- [Function Statement](../statements/function-statement.md)
 - [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

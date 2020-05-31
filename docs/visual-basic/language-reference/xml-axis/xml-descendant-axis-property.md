@@ -36,7 +36,7 @@ Required. Name of the descendant nodes to access, of the form [`prefix:]name`.
 |Part|Description|
 |----------|-----------------|
 |`prefix`|Optional. XML namespace prefix for the descendant node. Must be a global XML namespace that is defined by using an `Imports` statement.|
-|`name`|Required. Local name of the descendant node. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
+|`name`|Required. Local name of the descendant node. See [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
 
 `>`
 Required. Denotes the end of a descendant axis property.
@@ -47,13 +47,13 @@ A collection of <xref:System.Xml.Linq.XElement> objects.
 
 ## Remarks
 
-You can use an XML descendant axis property to access descendant nodes by name from an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object, or from a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> objects. Use the XML `Value` property to access the value of the first descendant node in the returned collection. For more information, see [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md).
+You can use an XML descendant axis property to access descendant nodes by name from an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> object, or from a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument> objects. Use the XML `Value` property to access the value of the first descendant node in the returned collection. For more information, see [XML Value Property](xml-value-property.md).
 
 The Visual Basic compiler converts descendant axis properties into calls to the <xref:System.Xml.Linq.XContainer.Descendants%2A> method.
 
 ## XML Namespaces
 
-The name in a descendant axis property can use only XML namespaces declared globally with the `Imports` statement. It cannot use XML namespaces declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).
+The name in a descendant axis property can use only XML namespaces declared globally with the `Imports` statement. It cannot use XML namespaces declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../statements/imports-statement-xml-namespace.md).
 
 ## Example
 
@@ -80,7 +80,7 @@ This code displays the following text:
 ## See also
 
 - <xref:System.Xml.Linq.XElement>
-- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [XML Axis Properties](index.md)
+- [XML Literals](../xml-literals/index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)
+- [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

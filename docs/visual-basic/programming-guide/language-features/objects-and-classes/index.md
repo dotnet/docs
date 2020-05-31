@@ -26,13 +26,13 @@ You must create an object before you can access its members.
 
 1. Determine from which class you want to create an object.
 
-2. Write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) to create a variable to which you can assign a class instance. The variable should be of the type of the desired class.
+2. Write a [Dim Statement](../../../language-reference/statements/dim-statement.md) to create a variable to which you can assign a class instance. The variable should be of the type of the desired class.
 
    ```vb
    Dim nextCustomer As customer
    ```
 
-3. Add the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword to initialize the variable to a new instance of the class.
+3. Add the [New Operator](../../../language-reference/operators/new-operator.md) keyword to initialize the variable to a new instance of the class.
 
    ```vb
    Dim nextCustomer As New customer
@@ -45,7 +45,7 @@ You must create an object before you can access its members.
    ```
 
 > [!NOTE]
-> Whenever possible, you should declare the variable to be of the class type you intend to assign to it. This is called *early binding*. If you don't know the class type at compile time, you can invoke *late binding* by declaring the variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). However, late binding can make performance slower and limit access to the run-time object's members. For more information, see [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md).
+> Whenever possible, you should declare the variable to be of the class type you intend to assign to it. This is called *early binding*. If you don't know the class type at compile time, you can invoke *late binding* by declaring the variable to be of the [Object Data Type](../../../language-reference/data-types/object-data-type.md). However, late binding can make performance slower and limit access to the run-time object's members. For more information, see [Object Variable Declaration](../variables/object-variable-declaration.md).
 
 ### Multiple instances
 
@@ -98,7 +98,7 @@ Use fields when:
 
 - The property is a `String` data type, and there is no constraint on the size or value of the string.
 
-- For more information, see [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md).
+- For more information, see [Property Procedures](../procedures/property-procedures.md).
 
 ### Methods
 
@@ -113,17 +113,17 @@ safetyTimer.Start()
 
 Note that a method is simply a *procedure* that is exposed by an object.
 
-For more information, see [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md).
+For more information, see [Procedures](../procedures/index.md).
 
 ### Events
 
 An event is an action recognized by an object, such as clicking the mouse or pressing a key, and for which you can write code to respond. Events can occur as a result of a user action or program code, or they can be caused by the system. Code that signals an event is said to *raise* the event, and code that responds to it is said to *handle* it.
 
-You can also develop your own custom events to be raised by your objects and handled by other objects. For more information, see [Events](../../../../visual-basic/programming-guide/language-features/events/index.md).
+You can also develop your own custom events to be raised by your objects and handled by other objects. For more information, see [Events](../events/index.md).
 
 ### Instance members and shared members
 
-When you create an object from a class, the result is an instance of that class. Members that are not declared with the [Shared](../../../../visual-basic/language-reference/modifiers/shared.md) keyword are *instance members*, which belong strictly to that particular instance. An instance member in one instance is independent of the same member in another instance of the same class. An instance member variable, for example, can have different values in different instances.
+When you create an object from a class, the result is an instance of that class. Members that are not declared with the [Shared](../../../language-reference/modifiers/shared.md) keyword are *instance members*, which belong strictly to that particular instance. An instance member in one instance is independent of the same member in another instance of the same class. An instance member variable, for example, can have different values in different instances.
 
 Members declared with the `Shared` keyword are *shared members*, which belong to the class as a whole and not to any particular instance. A shared member exists only once, no matter how many instances of its class you create, or even if you create no instances. A shared member variable, for example, has only one value, which is available to all code that can access the class.
 
@@ -186,7 +186,7 @@ Public Sub examineTimeZone()
 End Sub
 ```
 
-In the preceding example, the first [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declares an object variable of type <xref:System.TimeZone> and assigns to it a <xref:System.TimeZone> object returned by the <xref:System.TimeZone.CurrentTimeZone%2A> property.
+In the preceding example, the first [Dim Statement](../../../language-reference/statements/dim-statement.md) declares an object variable of type <xref:System.TimeZone> and assigns to it a <xref:System.TimeZone> object returned by the <xref:System.TimeZone.CurrentTimeZone%2A> property.
 
 ## Relationships among objects
 
@@ -200,7 +200,7 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
 #### To define a class is derived from an already existing class
 
-1. Use a [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md) to define a class from which to create the object you need.
+1. Use a [Class Statement](../../../language-reference/statements/class-statement.md) to define a class from which to create the object you need.
 
    ```vb
    Public Class reversibleButton
@@ -208,7 +208,7 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
    Be sure an `End Class` statement follows the last line of code in your class. By default, the integrated development environment (IDE) automatically generates an `End Class` when you enter a `Class` statement.
 
-2. Follow the `Class` statement immediately with an [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md). Specify the class from which your new class derives.
+2. Follow the `Class` statement immediately with an [Inherits Statement](../../../language-reference/statements/inherits-statement.md). Specify the class from which your new class derives.
 
    ```vb
    Inherits System.Windows.Forms.Button
@@ -231,11 +231,11 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
    If you create an object from the `reversibleButton` class, it can access all the members of the <xref:System.Windows.Forms.Button> class, as well as the `reverseColors` method and any other new members you define on `reversibleButton`.
 
-Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).
+Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](inheritance-basics.md).
 
 ### Compile the code
 
-Be sure the compiler can access the class from which you intend to derive your new class. This might mean fully qualifying its name, as in the preceding example, or identifying its namespace in an [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md). If the class is in a different project, you might need to add a reference to that project. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
+Be sure the compiler can access the class from which you intend to derive your new class. This might mean fully qualifying its name, as in the preceding example, or identifying its namespace in an [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md). If the class is in a different project, you might need to add a reference to that project. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
 
 ### Containment relationship
 
@@ -243,27 +243,27 @@ Another way that objects can be related is a *containment relationship*. Contain
 
 #### Collections
 
-One particular type of object containment is represented by *collections*. Collections are groups of similar objects that can be enumerated. Visual Basic supports a specific syntax in the [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md) that allows you to iterate through the items of a collection. Additionally, collections often allow you to use an <xref:Microsoft.VisualBasic.Collection.Item%2A> to retrieve elements by their index or by associating them with a unique string. Collections can be easier to use than arrays because they allow you to add or remove items without using indexes. Because of their ease of use, collections are often used to store forms and controls.
+One particular type of object containment is represented by *collections*. Collections are groups of similar objects that can be enumerated. Visual Basic supports a specific syntax in the [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md) that allows you to iterate through the items of a collection. Additionally, collections often allow you to use an <xref:Microsoft.VisualBasic.Collection.Item%2A> to retrieve elements by their index or by associating them with a unique string. Collections can be easier to use than arrays because they allow you to add or remove items without using indexes. Because of their ease of use, collections are often used to store forms and controls.
 
 ## Related topics
 
-[Walkthrough: Defining Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)\
+[Walkthrough: Defining Classes](walkthrough-defining-classes.md)\
 Provides a step-by-step description of how to create a class.
 
-[Overloaded Properties and Methods](../../../../visual-basic/programming-guide/language-features/objects-and-classes/overloaded-properties-and-methods.md)\
+[Overloaded Properties and Methods](overloaded-properties-and-methods.md)\
 Overloaded Properties and Methods
 
-[Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)\
+[Inheritance Basics](inheritance-basics.md)\
 Covers inheritance modifiers, overriding methods and properties, MyClass, and MyBase.
 
-[Object Lifetime: How Objects Are Created and Destroyed](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)\
+[Object Lifetime: How Objects Are Created and Destroyed](object-lifetime-how-objects-are-created-and-destroyed.md)\
 Discusses creating and disposing of class instances.
 
-[Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)\
+[Anonymous Types](anonymous-types.md)\
 Describes how to create and use anonymous types, which allow you to create objects without writing a class definition for the data type.
 
-[Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)\
+[Object Initializers: Named and Anonymous Types](object-initializers-named-and-anonymous-types.md)\
 Discusses object initializers, which are used to create instances of named and anonymous types by using a single expression.
 
-[How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)\
+[How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)\
 Explains how to infer property names and types in anonymous type declarations. Provides examples of successful and unsuccessful inference.

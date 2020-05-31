@@ -34,5 +34,5 @@ The <xref:System.Text.Encoding> class represents a character encoding. This tabl
 
 ## See also
 
-- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [Reading from Files](reading-from-files.md)
+- [Writing to Files](writing-to-files.md)

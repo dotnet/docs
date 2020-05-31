@@ -44,7 +44,7 @@ To generate warnings for implicit narrowing type conversions, use `-optionstrict
 
 ### To set -optionstrict programmatically
 
-See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).
+See [Option Strict Statement](../../language-reference/statements/option-strict-statement.md).
 
 ## Example
 
@@ -56,12 +56,12 @@ vbc -optionstrict+ test.vb
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
-- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
-- [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)
-- [-warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-optioncompare](optioncompare.md)
+- [-optionexplicit](optionexplicit.md)
+- [-optioninfer](optioninfer.md)
+- [-nowarn](nowarn.md)
+- [-warnaserror (Visual Basic)](warnaserror.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [Option Strict Statement](../../language-reference/statements/option-strict-statement.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

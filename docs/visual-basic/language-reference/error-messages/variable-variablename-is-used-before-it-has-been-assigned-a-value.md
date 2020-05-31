@@ -13,7 +13,7 @@ Variable '\<variablename>' is used before it has been assigned a value. A null r
   
  An application has at least one possible path through its code that reads a variable before any value is assigned to it.  
   
- If a variable has never been assigned a value, it holds the default value for its data type. For a reference data type, that default value is [Nothing](../../../visual-basic/language-reference/nothing.md). Reading a reference variable that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
+ If a variable has never been assigned a value, it holds the default value for its data type. For a reference data type, that default value is [Nothing](../nothing.md). Reading a reference variable that has a value of `Nothing` can cause a <xref:System.NullReferenceException> in some circumstances.  
   
  By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -23,10 +23,10 @@ Variable '\<variablename>' is used before it has been assigned a value. A null r
   
 - Check your control flow logic and make sure the variable has a valid value before control passes to any statement that reads it.  
   
-- One way to guarantee that the variable always has a valid value is to initialize it as part of its declaration. See "Initialization" in [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).  
+- One way to guarantee that the variable always has a valid value is to initialize it as part of its declaration. See "Initialization" in [Dim Statement](../statements/dim-statement.md).  
   
 ## See also
 
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Troubleshooting Variables](../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)
+- [Dim Statement](../statements/dim-statement.md)
+- [Variable Declaration](../../programming-guide/language-features/variables/variable-declaration.md)
+- [Troubleshooting Variables](../../programming-guide/language-features/variables/troubleshooting-variables.md)

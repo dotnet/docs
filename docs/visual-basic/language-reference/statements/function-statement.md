@@ -54,33 +54,33 @@ End Function
 
   Optional. Can be one of the following:
 
-  - [Public](../../../visual-basic/language-reference/modifiers/public.md)
+  - [Public](../modifiers/public.md)
 
-  - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Private](../../../visual-basic/language-reference/modifiers/private.md)
+  - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../../language-reference/modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+  See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 - `proceduremodifiers`
 
   Optional. Can be one of the following:
 
-  - [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
+  - [Overloads](../modifiers/overloads.md)
 
-  - [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)
+  - [Overrides](../modifiers/overrides.md)
 
-  - [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
+  - [Overridable](../modifiers/overridable.md)
 
-  - [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
+  - [NotOverridable](../modifiers/notoverridable.md)
 
-  - [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)
+  - [MustOverride](../modifiers/mustoverride.md)
 
   - `MustOverride Overrides`
 
@@ -88,23 +88,23 @@ End Function
 
 - `Shared`
 
-  Optional. See [Shared](../../../visual-basic/language-reference/modifiers/shared.md).
+  Optional. See [Shared](../modifiers/shared.md).
 
 - `Shadows`
 
-  Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).
+  Optional. See [Shadows](../modifiers/shadows.md).
 
 - `Async`
 
-  Optional. See [Async](../../../visual-basic/language-reference/modifiers/async.md).
+  Optional. See [Async](../modifiers/async.md).
 
 - `Iterator`
 
-  Optional. See [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).
+  Optional. See [Iterator](../modifiers/iterator.md).
 
 - `name`
 
-  Required. Name of the procedure. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).
+  Required. Name of the procedure. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `typeparamlist`
 
@@ -181,7 +181,7 @@ A `Function` procedure can declare the data type of the value that the procedure
 If this procedure uses the `Implements` keyword, the containing class or structure must also have an `Implements` statement that immediately follows its `Class` or `Structure` statement. The `Implements` statement must include each interface that's specified in `implementslist`. However, the name by which an interface defines the `Function` (in `definedname`) doesn't need to match the name of this procedure (in `name`).
 
 > [!NOTE]
-> You can use lambda expressions to define function expressions inline. For more information, see [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md) and [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
+> You can use lambda expressions to define function expressions inline. For more information, see [Function Expression](../operators/function-expression.md) and [Lambda Expressions](../../programming-guide/language-features/procedures/lambda-expressions.md).
 
 ## Returning from a Function
 
@@ -215,18 +215,18 @@ Visual Basic sometimes rearranges arithmetic expressions to increase internal ef
 
 The *Async* feature allows you to invoke asynchronous functions without using explicit callbacks or manually splitting your code across multiple functions or lambda expressions.
 
-If you mark a function with the [Async](../../../visual-basic/language-reference/modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the function. When control reaches an `Await` expression in the `Async` function, control returns to the caller, and progress in the function is suspended until the awaited task completes. When the task is complete, execution can resume in the function.
+If you mark a function with the [Async](../modifiers/async.md) modifier, you can use the [Await](../operators/await-operator.md) operator in the function. When control reaches an `Await` expression in the `Async` function, control returns to the caller, and progress in the function is suspended until the awaited task completes. When the task is complete, execution can resume in the function.
 
 > [!NOTE]
 > An `Async` procedure returns to the caller when either it encounters the first awaited object that’s not yet complete, or it gets to the end of the `Async` procedure, whichever occurs first.
 
 An `Async` function can have a return type of <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.Task>. An example of an `Async` function that has a return type of <xref:System.Threading.Tasks.Task%601> is provided below.
 
-An `Async` function cannot declare any [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) parameters.
+An `Async` function cannot declare any [ByRef](../modifiers/byref.md) parameters.
 
 A [Sub Statement](sub-statement.md) can also be marked with the `Async` modifier. This is primarily used for event handlers, where a value cannot be returned. An `Async` `Sub` procedure can't be awaited, and the caller of an `Async` `Sub` procedure can't catch exceptions that are thrown by the `Sub` procedure.
 
-For more information about `Async` functions, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).
+For more information about `Async` functions, see [Asynchronous Programming with Async and Await](../../programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../programming-guide/concepts/async/async-return-types.md).
 
 ## Iterator Functions
 
@@ -261,13 +261,13 @@ The `startButton_Click` procedure is an example of an `Async Sub` procedure. Bec
 ## See also
 
 - [Sub Statement](sub-statement.md)
-- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
+- [Function Procedures](../../programming-guide/language-features/procedures/function-procedures.md)
 - [Parameter List](parameter-list.md)
 - [Dim Statement](dim-statement.md)
 - [Call Statement](call-statement.md)
 - [Of](of-clause.md)
-- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
-- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
-- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
-- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
-- [Function Expression](../../../visual-basic/language-reference/operators/function-expression.md)
+- [Parameter Arrays](../../programming-guide/language-features/procedures/parameter-arrays.md)
+- [How to: Use a Generic Class](../../programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Troubleshooting Procedures](../../programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Lambda Expressions](../../programming-guide/language-features/procedures/lambda-expressions.md)
+- [Function Expression](../operators/function-expression.md)

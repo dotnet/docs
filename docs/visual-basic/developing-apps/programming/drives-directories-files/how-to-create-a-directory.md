@@ -39,4 +39,4 @@ Use the `CreateDirectory` method of the `My.Computer.FileSystem` object to creat
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>
-- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [Creating, Deleting, and Moving Files and Directories](creating-deleting-and-moving-files-and-directories.md)

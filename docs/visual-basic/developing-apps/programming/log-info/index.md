@@ -22,18 +22,18 @@ This section contains topics that cover how to log information from your applica
   
 |To|See|  
 |--------|---------|  
-|Write event information to the application's logs.|[How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
-|Write exception information to the application's logs.|[How to: Log Exceptions](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
-|Write trace information to the application's logs when the application starts and shuts down.|[How to: Log Messages When the Application Starts or Shuts Down](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-messages-when-the-application-starts-or-shuts-down.md)|  
-|Configure `My.Application.Log` to write information to a text file.|[How to: Write Event Information to a Text File](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)|  
-|Configure `My.Application.Log` to write information to an event log.|[How to: Write to an Application Event Log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)|  
-|Change where `My.Application.Log` writes information.|[Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)|  
-|Determine where `My.Application.Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
-|Create a custom log listener for `My.Application.Log`.|[Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)|  
-|Filter the output of the `My.Application.Log` logs.|[Walkthrough: Filtering My.Application.Log Output](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)|  
+|Write event information to the application's logs.|[How to: Write Log Messages](how-to-write-log-messages.md)|  
+|Write exception information to the application's logs.|[How to: Log Exceptions](how-to-log-exceptions.md)|  
+|Write trace information to the application's logs when the application starts and shuts down.|[How to: Log Messages When the Application Starts or Shuts Down](how-to-log-messages-when-the-application-starts-or-shuts-down.md)|  
+|Configure `My.Application.Log` to write information to a text file.|[How to: Write Event Information to a Text File](how-to-write-event-information-to-a-text-file.md)|  
+|Configure `My.Application.Log` to write information to an event log.|[How to: Write to an Application Event Log](how-to-write-to-an-application-event-log.md)|  
+|Change where `My.Application.Log` writes information.|[Walkthrough: Changing Where My.Application.Log Writes Information](walkthrough-changing-where-my-application-log-writes-information.md)|  
+|Determine where `My.Application.Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md)|  
+|Create a custom log listener for `My.Application.Log`.|[Walkthrough: Creating Custom Log Listeners](walkthrough-creating-custom-log-listeners.md)|  
+|Filter the output of the `My.Application.Log` logs.|[Walkthrough: Filtering My.Application.Log Output](walkthrough-filtering-my-application-log-output.md)|  
   
 ## See also
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
-- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
-- [Troubleshooting: Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)
+- [Working with Application Logs](working-with-application-logs.md)
+- [Troubleshooting: Log Listeners](troubleshooting-log-listeners.md)

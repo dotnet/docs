@@ -12,9 +12,9 @@ This topic introduces the capability of serializing object graphs that contain r
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[How to: Serialize Using XmlSerializer (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)|Demonstrates how to serialize using <xref:System.Xml.Serialization.XmlSerializer>.|  
-|[How to: Serialize Using DataContractSerializer (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-datacontractserializer.md)|Demonstrates how to serialize using <xref:System.Runtime.Serialization.DataContractSerializer>.|  
+|[How to: Serialize Using XmlSerializer (Visual Basic)](how-to-serialize-using-xmlserializer.md)|Demonstrates how to serialize using <xref:System.Xml.Serialization.XmlSerializer>.|  
+|[How to: Serialize Using DataContractSerializer (Visual Basic)](how-to-serialize-using-datacontractserializer.md)|Demonstrates how to serialize using <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## See also
 
-- [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+- [Advanced LINQ to XML Programming (Visual Basic)](advanced-linq-to-xml-programming.md)

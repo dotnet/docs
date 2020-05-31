@@ -58,10 +58,10 @@ Verify all inputs before using the data in your application. The contents of the
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>
-- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [How to: Read From Comma-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
-- [How to: Read From Fixed-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)
-- [How to: Read From Text Files with Multiple Formats](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)
-- [Troubleshooting: Reading from and Writing to Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
-- [Walkthrough: Manipulating Files and Directories in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)
-- [File Encodings](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)
+- [Reading from Files](reading-from-files.md)
+- [How to: Read From Comma-Delimited Text Files](how-to-read-from-comma-delimited-text-files.md)
+- [How to: Read From Fixed-width Text Files](how-to-read-from-fixed-width-text-files.md)
+- [How to: Read From Text Files with Multiple Formats](how-to-read-from-text-files-with-multiple-formats.md)
+- [Troubleshooting: Reading from and Writing to Text Files](troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Walkthrough: Manipulating Files and Directories in Visual Basic](walkthrough-manipulating-files-and-directories.md)
+- [File Encodings](file-encodings.md)

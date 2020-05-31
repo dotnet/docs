@@ -41,7 +41,7 @@ The following table lists the functions that Visual Basic provides in the <xref:
 |<xref:Microsoft.VisualBasic.Strings.Trim%2A>|Returns a string containing a copy of a specified string with no leading or trailing spaces.|
 |<xref:Microsoft.VisualBasic.Strings.UCase%2A>|Returns a string or character containing the specified string converted to uppercase.|
 
-You can use the [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) statement to set whether strings are compared using a case-insensitive text sort order determined by your system's locale (`Text`) or by the internal binary representations of the characters (`Binary`). The default text comparison method is `Binary`.
+You can use the [Option Compare](../statements/option-compare-statement.md) statement to set whether strings are compared using a case-insensitive text sort order determined by your system's locale (`Text`) or by the internal binary representations of the characters (`Binary`). The default text comparison method is `Binary`.
 
 ## Example: UCase
 
@@ -83,7 +83,7 @@ This example shows various uses of the `Format` function to format values using 
 
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
-- [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)
+- [Keywords](../keywords/index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)
+- [String Manipulation Summary](../keywords/string-manipulation-summary.md)
 - [System.String class methods](xref:System.String#methods)

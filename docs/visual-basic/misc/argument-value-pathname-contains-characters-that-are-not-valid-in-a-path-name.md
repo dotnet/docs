@@ -15,4 +15,4 @@ A path name contains one or more characters that are not valid.
 ## See also
 
 - [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath)
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

@@ -19,4 +19,4 @@ ms.assetid: 5e9de8e5-d26b-4fb2-9e28-814413fe9cef
   
 ## See also
 
-- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Module Statement](../statements/module-statement.md)

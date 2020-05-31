@@ -53,5 +53,5 @@ The following conditions may cause an exception:
 
 - <xref:Microsoft.VisualBasic.Devices.Network>
 - <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A>
-- [How to: Upload a File](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)
-- [How to: Parse File Paths](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Upload a File](how-to-upload-a-file.md)
+- [How to: Parse File Paths](../drives-directories-files/how-to-parse-file-paths.md)

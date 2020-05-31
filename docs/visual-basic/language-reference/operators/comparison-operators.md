@@ -46,11 +46,11 @@ The following are the comparison operators defined in Visual Basic.
 
  `<>` operator
 
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
+ [Is Operator](is-operator.md)
 
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
+ [IsNot Operator](isnot-operator.md)
 
- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)
+ [Like Operator](like-operator.md)
 
  These operators compare two expressions to determine whether or not they are equal, and if not, how they differ. `Is`, `IsNot`, and `Like` are discussed in detail on separate Help pages. The relational comparison operators are discussed in detail on this page.
 
@@ -94,7 +94,7 @@ result = string Like pattern
 |`<>` (Not equal to)|`expression1` <> `expression2`|`expression1` = `expression2`|
 
 > [!NOTE]
-> The [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md) is also used as an assignment operator.
+> The [= Operator](assignment-operator.md) is also used as an assignment operator.
 
  The `Is` operator, the `IsNot` operator, and the `Like` operator have specific comparison functionalities that differ from the operators in the preceding table.
 
@@ -104,7 +104,7 @@ result = string Like pattern
  Similarly, when you compare an expression of type `Decimal` to an expression of type `Single` or `Double`, the `Decimal` expression is converted to `Single` or `Double`. For `Decimal` expressions, any fractional value less than 1E-28 might be lost. Such fractional value loss may cause two values to compare as equal when they are not. For this reason, you should take care when using equality (`=`) to compare two floating-point variables. It is safer to test whether the absolute value of the difference between the two numbers is less than a small acceptable tolerance.
 
 ### Floating-point Imprecision
- When you work with floating-point numbers, keep in mind that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the [Mod Operator](../../../visual-basic/language-reference/operators/mod-operator.md). For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).
+ When you work with floating-point numbers, keep in mind that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the [Mod Operator](mod-operator.md). For more information, see [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md).
 
 ## Comparing Strings
  When you compare strings, the string expressions are evaluated based on their alphabetical sort order, which depends on the `Option Compare` setting.
@@ -133,12 +133,12 @@ result = string Like pattern
  Numeric comparisons treat `Nothing` as 0. String comparisons treat `Nothing` as `""` (an empty string).
 
 ## Overloading
- The relational comparison operators (`<`. `<=`, `>`, `>=`, `=`, `<>`) can be *overloaded*, which means that a class or structure can redefine their behavior when an operand has the type of that class or structure. If your code uses any of these operators on such a class or structure, be sure you understand the redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).
+ The relational comparison operators (`<`. `<=`, `>`, `>=`, `=`, `<>`) can be *overloaded*, which means that a class or structure can redefine their behavior when an operand has the type of that class or structure. If your code uses any of these operators on such a class or structure, be sure you understand the redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).
 
- Notice that the [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md) can be overloaded only as a relational comparison operator, not as an assignment operator.
+ Notice that the [= Operator](assignment-operator.md) can be overloaded only as a relational comparison operator, not as an assignment operator.
 
 ## Example
- The following example shows various uses of relational comparison operators, which you use to compare expressions. Relational comparison operators return a `Boolean` result that represents whether or not the stated expression evaluates to `True`. When you apply the `>` and `<` operators to strings, the comparison is made using the normal alphabetical sorting order of the strings. This order can be dependent on your locale setting. Whether the sort is case-sensitive or not depends on the [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md) setting.
+ The following example shows various uses of relational comparison operators, which you use to compare expressions. Relational comparison operators return a `Boolean` result that represents whether or not the stated expression evaluates to `True`. When you apply the `>` and `<` operators to strings, the comparison is made using the normal alphabetical sorting order of the strings. This order can be dependent on your locale setting. Whether the sort is case-sensitive or not depends on the [Option Compare](../statements/option-compare-statement.md) setting.
 
  [!code-vb[VbVbalrOperators#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#1)]
 
@@ -147,8 +147,8 @@ result = string Like pattern
 ## See also
 
 - <xref:System.InvalidCastException>
-- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [= Operator](assignment-operator.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)

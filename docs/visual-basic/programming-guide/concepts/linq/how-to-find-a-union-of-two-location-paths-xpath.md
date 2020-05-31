@@ -15,7 +15,7 @@ XPath allows you to find the union of the results of two XPath location paths.
 ## Example  
  This example finds all of the `Category` elements and all of the `Price` elements, and concatenates them into a single collection. Note that the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query calls <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> to order the results. The results of the XPath expression evaluation are also in document order.  
   
- This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim data As XDocument = XDocument.Load("Data.xml")  
@@ -61,4 +61,4 @@ Results are identical
   
 ## See also
 
-- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

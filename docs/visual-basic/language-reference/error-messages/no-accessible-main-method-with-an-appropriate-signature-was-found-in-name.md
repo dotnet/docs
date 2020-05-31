@@ -19,5 +19,5 @@ Command-line applications must have a `Sub Main` defined. `Main` must be declare
   
 ## See also
 
-- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)
-- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Structure of a Visual Basic Program](../../programming-guide/program-structure/structure-of-a-visual-basic-program.md)
+- [Procedures](../../programming-guide/language-features/procedures/index.md)

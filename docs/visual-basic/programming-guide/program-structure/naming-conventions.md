@@ -36,8 +36,8 @@ When you name an element in your Visual Basic application, the first character o
   
 ## See also
 
-- [Keywords as Element Names in Code](../../../visual-basic/programming-guide/program-structure/keywords-as-element-names-in-code.md)
-- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
-- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+- [Keywords as Element Names in Code](keywords-as-element-names-in-code.md)
+- [Me, My, MyBase, and MyClass](me-my-mybase-and-myclass.md)
+- [Declared Element Names](../language-features/declared-elements/declared-element-names.md)
+- [Program Structure and Code Conventions](program-structure-and-code-conventions.md)
+- [Visual Basic Language Reference](../../language-reference/index.md)

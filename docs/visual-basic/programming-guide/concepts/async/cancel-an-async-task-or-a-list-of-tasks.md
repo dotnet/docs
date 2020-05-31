@@ -7,7 +7,7 @@ ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
 
 You can set up a button that you can use to cancel an async application if you don't want to wait for it to finish. By following the examples in this topic, you can add a cancellation button to an application that downloads the contents of one website or a list of websites.
 
-The examples use the UI that [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md) describes.
+The examples use the UI that [Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md) describes.
 
 > [!NOTE]
 > To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
@@ -461,6 +461,6 @@ End Class
 
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
-- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
-- [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](index.md)
+- [Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

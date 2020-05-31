@@ -12,7 +12,7 @@ Provides properties and methods for manipulating the registry.
 ## Remarks  
  For information about the methods and properties of the `My.Computer.Registry` object, see <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>.  
   
- For more information, see [Reading from and Writing to the Registry](../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md).  
+ For more information, see [Reading from and Writing to the Registry](../../developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md).  
   
 > [!NOTE]
 > You can also manipulate the registry by using methods of the <xref:Microsoft.Win32.Registry?displayProperty=nameWithType> class.  
@@ -26,4 +26,4 @@ Provides properties and methods for manipulating the registry.
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

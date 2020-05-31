@@ -20,4 +20,4 @@ Either the drive is full that contains the directory specified by the TEMP envir
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

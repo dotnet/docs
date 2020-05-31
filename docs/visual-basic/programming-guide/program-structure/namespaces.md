@@ -93,7 +93,7 @@ End Namespace
  You can use `Global` to access other root-level namespaces, such as <xref:Microsoft.VisualBasic?displayProperty=nameWithType>, and any namespace associated with your project.  
   
 ## Global Keyword in Namespace Statements  
- You can also use the `Global` keyword in a [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md). This lets you define a namespace out of the root namespace of your project.  
+ You can also use the `Global` keyword in a [Namespace Statement](../../language-reference/statements/namespace-statement.md). This lets you define a namespace out of the root namespace of your project.  
   
  All namespaces in your project are based on the root namespace for the project.  Visual Studio assigns your project name as the default root namespace for all code in your project. For example, if your project is named `ConsoleApplication1`, its programming elements belong to namespace `ConsoleApplication1`. If you declare `Namespace Magnetosphere`, references to `Magnetosphere` in the project will access `ConsoleApplication1.Magnetosphere`.  
   

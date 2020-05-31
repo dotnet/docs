@@ -20,7 +20,7 @@ Continue { Do | For | While }
 ## Remarks  
  You can transfer from inside a `Do`, `For`, or `While` loop to the next iteration of that loop. Control passes immediately to the loop condition test, which is equivalent to transferring to the `For` or `While` statement, or to the `Do` or `Loop` statement that contains the `Until` or `While` clause.  
   
- You can use `Continue` at any location in the loop that allows transfers. The rules allowing transfer of control are the same as with the [GoTo Statement](../../../visual-basic/language-reference/statements/goto-statement.md).  
+ You can use `Continue` at any location in the loop that allows transfers. The rules allowing transfer of control are the same as with the [GoTo Statement](goto-statement.md).  
   
  For example, if a loop is totally contained within a `Try` block, a `Catch` block, or a `Finally` block, you can use `Continue` to transfer out of the loop. If, on the other hand, the `Try`...`End Try` structure is contained within the loop, you cannot use `Continue` to transfer control out of the `Finally` block, and you can use it to transfer out of a `Try` or `Catch` block only if you transfer completely out of the `Try`...`End Try` structure.  
   
@@ -35,7 +35,7 @@ Continue { Do | For | While }
   
 ## See also
 
-- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
-- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
-- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Do...Loop Statement](do-loop-statement.md)
+- [For...Next Statement](for-next-statement.md)
+- [While...End While Statement](while-end-while-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)

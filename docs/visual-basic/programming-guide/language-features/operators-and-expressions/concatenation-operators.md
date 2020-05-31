@@ -26,9 +26,9 @@ These operators can also concatenate `String` variables, as the following exampl
 
 ## Differences Between the Two Concatenation Operators
 
-The [+ Operator](../../../../visual-basic/language-reference/operators/addition-operator.md) has the primary purpose of adding two numbers. However, it can also concatenate numeric operands with string operands. The `+` operator has a complex set of rules that determine whether to add, concatenate, signal a compiler error, or throw a run-time <xref:System.InvalidCastException> exception.
+The [+ Operator](../../../language-reference/operators/addition-operator.md) has the primary purpose of adding two numbers. However, it can also concatenate numeric operands with string operands. The `+` operator has a complex set of rules that determine whether to add, concatenate, signal a compiler error, or throw a run-time <xref:System.InvalidCastException> exception.
 
-The [& Operator](../../../../visual-basic/language-reference/operators/concatenation-operator.md) is defined only for `String` operands, and it always widens its operands to `String`, regardless of the setting of `Option Strict`. The `&` operator is recommended for string concatenation because it is defined exclusively for strings and reduces your chances of generating an unintended conversion.
+The [& Operator](../../../language-reference/operators/concatenation-operator.md) is defined only for `String` operands, and it always widens its operands to `String`, regardless of the setting of `Option Strict`. The `&` operator is recommended for string concatenation because it is defined exclusively for strings and reduces your chances of generating an unintended conversion.
 
 ## Performance: String and StringBuilder
 
@@ -36,8 +36,8 @@ If you do a significant number of manipulations on a string, such as concatenati
 
 ## See also
 
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [Types of String Manipulation Methods in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/types-of-string-manipulation-methods.md)
-- [Arithmetic Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
-- [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
-- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)
+- [Types of String Manipulation Methods in Visual Basic](../strings/types-of-string-manipulation-methods.md)
+- [Arithmetic Operators in Visual Basic](arithmetic-operators.md)
+- [Comparison Operators in Visual Basic](comparison-operators.md)
+- [Logical and Bitwise Operators in Visual Basic](logical-and-bitwise-operators.md)

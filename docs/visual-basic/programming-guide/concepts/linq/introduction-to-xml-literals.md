@@ -6,9 +6,9 @@ ms.assetid: 94fc0e03-978e-4c08-ab6c-0dc3c1e64f10
 # Introduction to XML Literals in Visual Basic
 This section provides information about creating XML trees in Visual Basic.  
   
- For information about using the results of LINQ queries as the content for an XML tree, see [Functional Construction (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md).  
+ For information about using the results of LINQ queries as the content for an XML tree, see [Functional Construction (LINQ to XML) (Visual Basic)](functional-construction-linq-to-xml.md).  
   
- For more information on XML literals in Visual Basic, see [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md).  
+ For more information on XML literals in Visual Basic, see [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md).  
   
 ## Creating XML Trees  
  The following example shows how to create an <xref:System.Xml.Linq.XElement>, in this case `contacts`:  
@@ -191,4 +191,4 @@ Child2 was attached
   
 ## See also
 
-- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (Visual Basic)](creating-xml-trees.md)

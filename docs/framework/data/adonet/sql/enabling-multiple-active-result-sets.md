@@ -1,5 +1,6 @@
 ---
 title: "Enabling Multiple Active Result Sets"
+description: Learn how to enable/disable MARS in a connection string, which works with SQL Server so that you can run multiple batches on a single connection in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

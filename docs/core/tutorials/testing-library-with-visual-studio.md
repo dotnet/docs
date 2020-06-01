@@ -129,7 +129,7 @@ To create the test methods:
 
 ## Handle test failures
 
-If you're doing test-driven development (TDD), you write tests first and they fail the first time you run them. Then you add code to the app that makes the test succeed. In this case, you created the test after writing the app code that it validates, so you haven't seen the test fail. To validate that the test fails when you expect it to fail, add an invalid value to the test input.
+If you're doing test-driven development (TDD), you write tests first and they fail the first time you run them. Then you add code to the app that makes the test succeed. In this case, you created the test after writing the app code that it validates, so you haven't seen the test fail. To validate that a test fails when you expect it to fail, add an invalid value to the test input.
 
 1. Modify the `words` array in the `TestDoesNotStartWithUpper` method to include the string "Error". You don't need to save the file because Visual Studio automatically saves open files when a solution is built to run tests.
 

@@ -47,7 +47,7 @@ To create an Azure Machine Learning workspace, the following are required:
 - Compute priority
 
   - Low-priority: Suited for tasks with shorter execution times. May be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.
-  - Dedicated: Suited for tasks of any duration (especially long-running jobs) and is not impacted by interruptions or lack of availability. Usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
+  - Dedicated: Suited for tasks of any duration, but especially long-running jobs. Not impacted by interruptions or lack of availability. Usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
 
 ## Training
 

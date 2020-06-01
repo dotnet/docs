@@ -1,7 +1,7 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 05/13/2020
+ms.date: 05/31/2020
 ---
 
 # Leveraging containers and orchestrators
@@ -235,8 +235,6 @@ Also, at any time you can add Docker support to an existing ASP.NET Core applica
 ![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
 
 **Figure 3-8**. Adding Docker support to Visual Studio
-
-You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
 You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 

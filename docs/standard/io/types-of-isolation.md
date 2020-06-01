@@ -100,4 +100,4 @@ Access to isolated storage is always restricted to the user who created it. To i
 ## See also
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)

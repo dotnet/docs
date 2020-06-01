@@ -47,4 +47,4 @@ Starting with the .NET Framework 4, the <xref:System.Collections.Generic.SortedS
 - <xref:System.Collections.IDictionary?displayProperty=nameWithType>
 - <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
 - <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
-- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)
+- [Commonly Used Collection Types](commonly-used-collection-types.md)

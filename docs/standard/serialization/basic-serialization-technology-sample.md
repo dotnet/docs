@@ -94,9 +94,9 @@ The following bullets briefly describe the classes and technologies used by this
 - <xref:System.Runtime.Serialization.IFormatter>
 - <xref:System.SerializableAttribute>
 - <xref:System.Xml.Serialization>
-- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)
-- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)
-- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [Serialization](../../../docs/standard/serialization/index.md)
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [Basic Serialization](basic-serialization.md)
+- [Binary Serialization](binary-serialization.md)
+- [Controlling XML Serialization Using Attributes](controlling-xml-serialization-using-attributes.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [Serialization](index.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)

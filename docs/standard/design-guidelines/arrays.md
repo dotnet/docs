@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
 ---
 # Arrays
-✔️ DO prefer using collections over arrays in public APIs. The [Collections](../../../docs/standard/design-guidelines/guidelines-for-collections.md) section provides details about how to choose between collections and arrays.
+✔️ DO prefer using collections over arrays in public APIs. The [Collections](guidelines-for-collections.md) section provides details about how to choose between collections and arrays.
 
  ❌ DO NOT use read-only array fields. The field itself is read-only and can't be changed, but elements in the array can be changed.
 
@@ -24,5 +24,5 @@ ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
 ## See also
 
 - <xref:System.Array>
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Usage Guidelines](usage-guidelines.md)

@@ -23,4 +23,4 @@ This example shows how to use the <xref:System.Diagnostics.Stopwatch> class to m
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

@@ -87,4 +87,4 @@ If they are used in a regular expression library, you can call them by using cod
 
 ## See also
 
-- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Framework Regular Expressions](regular-expressions.md)

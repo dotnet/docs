@@ -43,7 +43,7 @@ This section describes the best practices to follow when developing world-ready 
 
 9. Test your application functionality on international operating system versions, using international data.
 
-10. If a security decision is based on the result of a string comparison or case change operation, use a culture-insensitive string operation. This practice ensures that the result is not affected by the value of `CultureInfo.CurrentCulture`. See the ["String Comparisons that Use the Current Culture"](../../../docs/standard/base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) section of [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md) for an example that demonstrates how culture-sensitive string comparisons can produce inconsistent results.
+10. If a security decision is based on the result of a string comparison or case change operation, use a culture-insensitive string operation. This practice ensures that the result is not affected by the value of `CultureInfo.CurrentCulture`. See the ["String Comparisons that Use the Current Culture"](../base-types/best-practices-strings.md#string-comparisons-that-use-the-current-culture) section of [Best Practices for Using Strings](../base-types/best-practices-strings.md) for an example that demonstrates how culture-sensitive string comparisons can produce inconsistent results.
 
 ## Localization best practices
 
@@ -63,11 +63,11 @@ This section describes the best practices to follow when developing world-ready 
 
 8. Use the <xref:System.Resources.ResourceManager?displayProperty=nameWithType> class to retrieve resources based on culture.
 
-9. Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create Windows Forms dialog boxes so they can be localized using the [Windows Forms Resource Editor (Winres.exe)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md). Do not code Windows Forms dialog boxes by hand.
+9. Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create Windows Forms dialog boxes so they can be localized using the [Windows Forms Resource Editor (Winres.exe)](../../framework/tools/winres-exe-windows-forms-resource-editor.md). Do not code Windows Forms dialog boxes by hand.
 
 10. Arrange for professional localization (translation).
 
-11. For a complete description of creating and localizing resources, see [Resources in Applications](../../../docs/framework/resources/index.md).
+11. For a complete description of creating and localizing resources, see [Resources in Applications](../../framework/resources/index.md).
 
 ## Globalization best practices for ASP.NET applications
 
@@ -95,5 +95,5 @@ This section describes the best practices to follow when developing world-ready 
 
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Globalization and Localization](index.md)
+- [Resources in Desktop Apps](../../framework/resources/index.md)

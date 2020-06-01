@@ -380,4 +380,4 @@ For information about how to use the built-in `Encoding` classes, see [How to us
 - <xref:System.String>
 - <xref:System.Char>
 - <xref:System.Text.Rune>
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Globalization and Localization](../globalization-localization/index.md)

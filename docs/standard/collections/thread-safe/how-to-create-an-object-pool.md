@@ -26,4 +26,4 @@ The <xref:System.Collections.Concurrent.ConcurrentBag%601> is used to store the 
 
 ## See also
 
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+- [Thread-Safe Collections](index.md)

@@ -107,5 +107,5 @@ Operator overloads allow framework types to appear as if they were built-in lang
 
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Member Design Guidelines](member.md)
+- [Framework Design Guidelines](index.md)

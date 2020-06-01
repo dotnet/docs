@@ -26,7 +26,7 @@ ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
 
 # How to: Anticipate Out-of-Space Conditions with Isolated Storage
 
-Code that uses isolated storage is constrained by a [quota](../../../docs/standard/io/isolated-storage.md#quotas) that specifies the maximum size for the data compartment in which isolated storage files and directories exist. The quota is defined by security policy and is configurable by administrators. If the maximum allowed size is exceeded when you try to write data, an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception is thrown and the operation fails. This helps prevent malicious denial-of-service attacks that could cause the application to refuse requests because data storage is filled.
+Code that uses isolated storage is constrained by a [quota](isolated-storage.md#quotas) that specifies the maximum size for the data compartment in which isolated storage files and directories exist. The quota is defined by security policy and is configurable by administrators. If the maximum allowed size is exceeded when you try to write data, an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception is thrown and the operation fails. This helps prevent malicious denial-of-service attacks that could cause the application to refuse requests because data storage is filled.
 
 To help you determine whether a given write attempt is likely to fail for this reason, the <xref:System.IO.IsolatedStorage.IsolatedStorage> class provides three read-only properties: <xref:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace%2A>, <xref:System.IO.IsolatedStorage.IsolatedStorage.UsedSize%2A>, and <xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A>. You can use these properties to determine whether writing to the store will cause the maximum allowed size of the store to be exceeded. Keep in mind that isolated storage can be accessed concurrently; therefore, when you compute the amount of remaining storage, the storage space could be consumed by the time you try to write to the store. However, you can use the maximum size of the store to help determine whether the upper limit on available storage is about to be reached.
 
@@ -43,5 +43,5 @@ The following code example obtains an isolated store, creates a few files, and r
 ## See also
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
-- [How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)
+- [How to: Obtain Stores for Isolated Storage](how-to-obtain-stores-for-isolated-storage.md)

@@ -30,7 +30,7 @@ By default, the <xref:System.Xml.Xsl.XslCompiledTransform> class disables suppor
 [!code-csharp[XML_Migration#16](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#16)]
 [!code-vb[XML_Migration#16](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#16)]
 
-For more information, see [XSLT Security Considerations](../../../../docs/standard/data/xml/xslt-security-considerations.md).
+For more information, see [XSLT Security Considerations](xslt-security-considerations.md).
 
 ## New Features
 
@@ -92,7 +92,7 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
 
 ### Discretionary Behavior
 
-The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in which the implementation provider may decide how to handle a situation. These areas are considered to be discretionary behavior. There are several areas where the <xref:System.Xml.Xsl.XslCompiledTransform> behaves differently than the <xref:System.Xml.Xsl.XslTransform> class. For more information, see [Recoverable XSLT Errors](../../../../docs/standard/data/xml/recoverable-xslt-errors.md).
+The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in which the implementation provider may decide how to handle a situation. These areas are considered to be discretionary behavior. There are several areas where the <xref:System.Xml.Xsl.XslCompiledTransform> behaves differently than the <xref:System.Xml.Xsl.XslTransform> class. For more information, see [Recoverable XSLT Errors](recoverable-xslt-errors.md).
 
 ### Extension Objects and Script Functions
 
@@ -104,7 +104,7 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
 
 In <xref:System.Xml.Xsl.XslCompiledTransform>, a binding (method name lookup) to script functions occurs at compile time, and style sheets that worked with XslTransform may cause an exception when they are loaded with <xref:System.Xml.Xsl.XslCompiledTransform>.
 
-<xref:System.Xml.Xsl.XslCompiledTransform> supports having `msxsl:using` and `msxsl:assembly` child elements within the `msxsl:script` element. The `msxsl:using` and `msxsl:assembly` elements are used to declare additional namespaces and assemblies for use in the script block. See [Script Blocks Using msxsl:script](../../../../docs/standard/data/xml/script-blocks-using-msxsl-script.md) for more information.
+<xref:System.Xml.Xsl.XslCompiledTransform> supports having `msxsl:using` and `msxsl:assembly` child elements within the `msxsl:script` element. The `msxsl:using` and `msxsl:assembly` elements are used to declare additional namespaces and assemblies for use in the script block. See [Script Blocks Using msxsl:script](script-blocks-using-msxsl-script.md) for more information.
 
 <xref:System.Xml.Xsl.XslCompiledTransform> prohibits extension objects that have multiple overloads with the same number of arguments.
 
@@ -122,5 +122,5 @@ Support for additional MSXML functions have been added to the <xref:System.Xml.X
 
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+- [XSLT Transformations](xslt-transformations.md)
+- [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md)

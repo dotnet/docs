@@ -41,6 +41,6 @@ The general-purpose value type is most often referred to as a struct, its C# key
 
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Choosing Between Class and Struct](../../../docs/standard/design-guidelines/choosing-between-class-and-struct.md)
+- [Type Design Guidelines](type.md)
+- [Framework Design Guidelines](index.md)
+- [Choosing Between Class and Struct](choosing-between-class-and-struct.md)

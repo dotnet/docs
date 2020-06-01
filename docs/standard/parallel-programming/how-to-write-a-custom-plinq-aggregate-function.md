@@ -13,7 +13,7 @@ ms.assetid: 5a70dd49-ab2a-4798-b551-196ee7042b1a
 This example shows how to use the <xref:System.Linq.ParallelEnumerable.Aggregate%2A> method to apply a custom aggregation function to a source sequence.  
   
 > [!WARNING]
-> This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md).  
+> This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](understanding-speedup-in-plinq.md).  
   
 ## Example  
  The following example calculates the standard deviation of a sequence of integers.  
@@ -28,4 +28,4 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.Aggregate
 ## See also
 
 - <xref:System.Linq.ParallelEnumerable>
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

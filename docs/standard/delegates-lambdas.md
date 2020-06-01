@@ -147,10 +147,10 @@ public MainWindow()
 }
 ```
 
-The `+=` operator in this context is used to subscribe to an [event](../../docs/csharp/language-reference/keywords/event.md). For more information, see [How to subscribe to and unsubscribe from events](../../docs/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+The `+=` operator in this context is used to subscribe to an [event](../csharp/language-reference/keywords/event.md). For more information, see [How to subscribe to and unsubscribe from events](../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Further reading and resources
 
-* [Delegates](../../docs/csharp/programming-guide/delegates/index.md)
-* [Anonymous Functions](../../docs/csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
-* [Lambda expressions](../../docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+* [Delegates](../csharp/programming-guide/delegates/index.md)
+* [Anonymous Functions](../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
+* [Lambda expressions](../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)

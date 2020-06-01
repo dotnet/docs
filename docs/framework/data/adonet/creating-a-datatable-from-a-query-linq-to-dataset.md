@@ -1,5 +1,6 @@
 ---
 title: "Creating a DataTable From a Query (LINQ to DataSet)"
+description: Learn to use the CopyToDataTable method to take the results of a query and copy the data into a DataTable, which can then be used for data binding.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

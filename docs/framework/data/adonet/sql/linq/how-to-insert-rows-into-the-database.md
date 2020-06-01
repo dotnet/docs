@@ -1,5 +1,6 @@
 ---
 title: "How to: Insert Rows Into the Database"
+description: Learn to insert rows into a database by adding LINQ to SQL objects to a table-related collection. LINQ to SQL translates additions to SQL INSERT commands.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

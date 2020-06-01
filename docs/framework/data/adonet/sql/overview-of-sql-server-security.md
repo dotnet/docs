@@ -1,5 +1,6 @@
 ---
 title: "Overview of SQL Server Security"
+description: Learn about the SQL Server security architecture to understand which features and functionality counter known threats, and to anticipate future threats.
 ms.date: "03/30/2017"
 ms.assetid: ae66dd75-5c16-4cc0-9e12-774dd26d3fb9
 ---

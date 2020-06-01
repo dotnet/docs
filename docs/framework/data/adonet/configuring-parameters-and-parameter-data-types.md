@@ -1,5 +1,6 @@
 ---
 title: "Configuring parameters and parameter data types"
+description: Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

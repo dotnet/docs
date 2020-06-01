@@ -77,8 +77,10 @@ Only supported versions of .NET Core are available through Snap. Use the followi
 After snap has installed .NET Core SDK, enable the `dotnet` command with the `snap alias` command.
 
 ```bash
-sudo snap alias dotnet-sdk.dotnet dotnet
+sudo snap alias dotnet-runtime-31.dotnet dotnet
 ```
+
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-31.dotnet dotnet31`. When you use the command `dotnet31`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
 ## Download and manually install
 
@@ -126,7 +128,7 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
 
-By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+By default, .NET Core CLI commands and apps won't use .NET Core installed in this way and you must explicitly choose to use it. To do so, change the environment variables with which an application is started:
 
 ```console
 set DOTNET_ROOT=%USERPROFILE%\dotnet

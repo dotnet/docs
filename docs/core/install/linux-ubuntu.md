@@ -3,7 +3,7 @@ title: Install .NET Core on Ubuntu - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Ubuntu.
 author: thraka
 ms.author: adegeo
-ms.date: 05/18/2020
+ms.date: 06/01/2020
 ---
 
 # Install .NET Core SDK and .NET Core Runtime on Ubuntu
@@ -18,11 +18,11 @@ For the best compatibility, choose a long-term release (LTS) version of both Ubu
 
 | .NET Core   | Ubuntu version                                           |
 |-------------|----------------------------------------------------------|
-| 2.1 (LTS)   | **16.04 (LTS)**, **18.04 (LTS)**, **20.04 (LTS)**, 19.10 |
-| 3.1 (LTS)   | **16.04 (LTS)**, **18.04 (LTS)**, **20.04 (LTS)**, 19.10 |
-| 5.0 Preview | **16.04 (LTS)**, **18.04 (LTS)**, **20.04 (LTS)**, 19.10 |
+| 2.1 (LTS)   | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
+| 3.1 (LTS)   | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
+| 5.0 Preview | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
 
-The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain. The Ubuntu version listed is the last LTS release they were supported on:
+The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
 
 | .NET Core | Ubuntu version (LTS) |
 |-----------|----------------------|
@@ -30,18 +30,9 @@ The following table is a list of .NET Core versions which are no longer supporte
 | 2.2       | 16.04, 18.04         |
 | 2.0       | 14.04, 16.04, 18.04  |
 
-## 20.04 ✔
+## 20.04 ✔️
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -50,18 +41,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
-## 19.10 ✔
+## 19.10 ✔️
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -70,18 +52,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
-## 18.04 ✔
+## 18.04 ✔️
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -90,18 +63,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
-## 16.04 ✔
+## 16.04 ✔️
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -112,16 +76,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 19.04 ❌
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -130,85 +85,59 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+
 ## 18.10 ❌
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 ## 17.10 ❌
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 ## 17.04 ❌
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 ## 16.10 ❌
 
-Before installing .NET, you'll need to:
-
-- Add the Microsoft package signing key to the list of trusted keys.
-- Add the repository to the package manager.
-- Install required dependencies.
-
-> [!TIP]
-> Registering the key only needs to be done once per machine.
-
-Open a terminal and run the following commands.
+[!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 ## APT update SDK or runtime
 
@@ -292,6 +221,8 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet31`. When you use the command `dotnet31`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+
 ### Install the runtime
 
 Snap packages for .NET Core Runtime are each published under their own package identifier. The following table lists the package identifiers:
@@ -314,6 +245,8 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 ```bash
 sudo snap alias dotnet-runtime-31.dotnet dotnet
 ```
+
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-31.dotnet dotnet31`. When you use the command `dotnet31`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
 ## Scripted install
 
@@ -373,3 +306,6 @@ export PATH=$PATH:$HOME/dotnet
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
 This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
+
+## Next steps
+

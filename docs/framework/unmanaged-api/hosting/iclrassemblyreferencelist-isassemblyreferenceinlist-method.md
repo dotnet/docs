@@ -40,7 +40,7 @@ HRESULT IsAssemblyReferenceInList (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the common language runtime is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,7 +50,7 @@ HRESULT IsAssemblyReferenceInList (
   
 ## See also
 
-- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
-- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
-- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [IHostAssemblyManager Interface](ihostassemblymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)

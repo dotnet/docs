@@ -52,12 +52,12 @@ When you use [GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLat
 
 - Be aware of threads that could be allocating. Because the <xref:System.Runtime.GCSettings.LatencyMode%2A> property setting is process-wide, <xref:System.OutOfMemoryException> exceptions can be generated on any thread that is allocating.
 
-- Wrap the low latency code in constrained execution regions. For more information, see [Constrained execution regions](../../../docs/framework/performance/constrained-execution-regions.md).
+- Wrap the low latency code in constrained execution regions. For more information, see [Constrained execution regions](../../framework/performance/constrained-execution-regions.md).
 
 - You can force generation 2 collections during a low latency period by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType> method.
 
 ## See also
 
 - <xref:System.GC?displayProperty=nameWithType>
-- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)
-- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+- [Induced Collections](induced.md)
+- [Garbage Collection](index.md)

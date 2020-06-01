@@ -60,7 +60,7 @@ Class MyHashtable
         <DebuggerBrowsable(DebuggerBrowsableState.RootHidden)> _
         ReadOnly Property Keys as KeyValuePairs()
             Get
-                Dim nkeys(hashtable.Count) as KeyValuePairs
+                Dim nkeys(hashtable.Count - 1) As KeyValuePairs
 
                 Dim i as Integer = 0
                 For Each key As Object In hashtable.Keys

@@ -6,8 +6,6 @@ ms.date: 04/13/2020
 
 # Deploying containers in Azure
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 We've discussed containers in this chapter and in chapter 1. We've seen that containers provide many benefits to cloud-native applications, including portability. In the Azure cloud, you can deploy the same containerized services across staging and production environments. Azure provides several options for hosting these containerized workloads:
 
 - Azure Kubernetes Services (AKS)

@@ -21,4 +21,4 @@ Some libraries operate by generating code and running it to perform some operati
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](secure-coding-guidelines.md)

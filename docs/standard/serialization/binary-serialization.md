@@ -1,5 +1,6 @@
 ---
 title: "Binary serialization"
+description: This article describes binary serialization and types for which .NET Core supports it. Be aware of the dangers of binary serialization and alternatives to it.
 ms.date: "01/02/2018"
 helpviewer_keywords: 
   - "binary serialization"
@@ -337,10 +338,10 @@ Binary serialization allows modifying private members inside an object and there
 - <xref:System.Runtime.Serialization>\
 Contains classes that can be used for serializing and deserializing objects.
 
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)\
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)\
 Describes the XML serialization mechanism that is included with the common language runtime.
 
-- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)\
+- [Security and Serialization](../../framework/misc/security-and-serialization.md)\
 Describes the secure coding guidelines to follow when writing code that performs serialization.
 
 - [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\

@@ -1,5 +1,6 @@
 ---
 title: "Custom serialization"
+description: Custom serialization is controlling the serialization and deserialization of a type. Controlling serialization can ensure serialization compatibility.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -177,4 +178,4 @@ End Class
 
 - [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+- [Security and Serialization](../../framework/misc/security-and-serialization.md)

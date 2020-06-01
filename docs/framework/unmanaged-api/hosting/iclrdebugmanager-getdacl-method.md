@@ -38,7 +38,7 @@ HRESULT GetDacl (
 |E_NOTIMPL|The method is not implemented.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,7 +48,7 @@ HRESULT GetDacl (
   
 ## See also
 
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
-- [SetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setdacl-method.md)
-- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)
+- [SetDacl Method](iclrdebugmanager-setdacl-method.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

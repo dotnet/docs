@@ -38,4 +38,4 @@ You can optimize the performance of applications that make extensive use of regu
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

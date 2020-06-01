@@ -1,5 +1,6 @@
 ---
 title: "How to: Serialize an Object"
+description: This article shows you how to serialize an object. Select a transport format in which the XML stream is stored, either as a stream or as a file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,7 +14,7 @@ ms.assetid: a1207d05-32b2-4953-8582-959607991227
 To serialize an object, first create the object that is to be serialized and set its public properties and fields. To do this, you must determine the transport format in which the XML stream is to be stored, either as a stream or as a file. For example, if the XML stream must be saved in a permanent form, create a <xref:System.IO.FileStream> object.  
   
 > [!NOTE]
-> For more examples of XML serialization, see [Examples of XML Serialization](../../../docs/standard/serialization/examples-of-xml-serialization.md).  
+> For more examples of XML serialization, see [Examples of XML Serialization](examples-of-xml-serialization.md).  
   
 ### To serialize an object  
   
@@ -46,5 +47,5 @@ To serialize an object, first create the object that is to be serialized and set
   
 ## See also
 
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

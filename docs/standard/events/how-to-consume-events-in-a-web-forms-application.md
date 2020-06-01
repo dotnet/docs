@@ -45,4 +45,4 @@ A common scenario in ASP.NET Web Forms applications is to populate a webpage wit
   
 ## See also
 
-- [Events](../../../docs/standard/events/index.md)
+- [Events](index.md)

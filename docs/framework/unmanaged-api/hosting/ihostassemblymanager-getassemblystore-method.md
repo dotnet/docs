@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyManager::GetAssemblyStore Method
-Gets an interface pointer to an [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md) that represents the list of assemblies loaded by the host.  
+Gets an interface pointer to an [IHostAssemblyStore](ihostassemblystore-interface.md) that represents the list of assemblies loaded by the host.  
   
 ## Syntax  
   
@@ -50,7 +50,7 @@ HRESULT GetAssemblyStore (
 > If the host does not implement `IHostAssemblyStore`, `GetAssemblyStore` should return an HRESULT value of E_NOINTERFACE, and should set `ppAssemblyStore` to null.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -60,5 +60,5 @@ HRESULT GetAssemblyStore (
   
 ## See also
 
-- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
-- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+- [IHostAssemblyManager Interface](ihostassemblymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)

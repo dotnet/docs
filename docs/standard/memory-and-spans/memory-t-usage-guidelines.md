@@ -1,5 +1,6 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
+description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET Core that can be used in pipelines.
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
@@ -66,7 +67,7 @@ As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifeti
 
 - A model that supports ownership transfer. Ownership of a buffer can be transferred from its original owner (its creator) to another component, which then becomes responsible for the buffer's lifetime management. That owner can in turn transfer ownership to another component, and so on.
 
-You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of an <xref:System.Memory%601> buffer.
+You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of a <xref:System.Memory%601> buffer.
 
 [!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 

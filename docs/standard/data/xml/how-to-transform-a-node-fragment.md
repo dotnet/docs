@@ -41,4 +41,4 @@ When you transform data contained in an <xref:System.Xml.XmlDocument> or <xref:S
   
 ## See also
 
-- [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)
+- [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md)

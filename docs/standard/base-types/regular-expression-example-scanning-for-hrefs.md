@@ -50,4 +50,4 @@ The following example searches an input string and displays all the href="…" v
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

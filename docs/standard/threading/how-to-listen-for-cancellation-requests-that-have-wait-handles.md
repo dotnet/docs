@@ -29,4 +29,4 @@ If a method is blocked while it is waiting for an event to be signaled, it canno
   
 ## See also
 
-- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Cancellation in Managed Threads](cancellation-in-managed-threads.md)

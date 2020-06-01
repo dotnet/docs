@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a9ce105c-6495-49ab-b0e5-903a48ebadb3
 ---
 # ISymUnmanagedAsyncMethod::HasCatchHandlerILOffset Method
-See [DefineCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).  
+See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).  
   
 ## Syntax  
   
@@ -26,4 +26,4 @@ HRESULT HasCatchHandlerILOffset(    [out, retval] BOOL* pRetVal);
   
 ## See also
 
-- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+- [ISymUnmanagedAsyncMethod Interface](isymunmanagedasyncmethod-interface.md)

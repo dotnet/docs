@@ -46,21 +46,16 @@
           "**/README.md",
           "inactive/**",
           "rejected/**",
-
           "csharp-6.0/enum-base-type.md",
-
           "csharp-7.0/expression-bodied-everything.md",
           "csharp-7.0/ref-locals-returns.md",
           "csharp-7.0/tuples.md",
           "csharp-7.0/value-task.md",
-
           "csharp-7.2/readonly-struct.md",
           "csharp-7.2/ref-extension-methods.md",
           "csharp-7.2/ref-struct-and-span.md",
-
           "csharp-7.3/enum-delegate-constraints.md",
           "csharp-7.3/ref-loops.md",
-
           "csharp-8.0/alternative-interpolated-verbatim.md",
           "csharp-8.0/async-using.md",
           "csharp-8.0/constraints-in-overrides.md",
@@ -123,21 +118,21 @@
       "ms.prod":"dotnet",
       "ms.topic": "conceptual",
       "_op_documentIdPathDepotMapping": {
-	"docs/architecture/containerized-lifecycle/": {
-	   "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
-	},
-	"docs/architecture/microservices/": {
-	   "folder_relative_path_in_docset": "docs/standard/microservices-architecture/"
-	},
-	"docs/architecture/modern-web-apps-azure/": {
-	   "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
-	},
-	"docs/architecture/modernize-with-azure-containers/": {
-	   "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
-	},
-	"docs/architecture/serverless/": {
-	   "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
-	}
+        "docs/architecture/containerized-lifecycle/": {
+          "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
+        },
+        "docs/architecture/microservices/": {
+          "folder_relative_path_in_docset": "docs/standard/microservices-architecture/"
+        },
+        "docs/architecture/modern-web-apps-azure/": {
+          "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
+        },
+        "docs/architecture/modernize-with-azure-containers/": {
+     "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
+  },
+  "docs/architecture/serverless/": {
+     "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
+  }
       },
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs",
@@ -187,6 +182,7 @@
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "docs/azure/**/**.md": "conceptual",
+        "docs/core/tutorials/**.md": "tutorial",
         "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
@@ -207,6 +203,7 @@
         "docs/azure/**/**.yml": "camsoper",
         "docs/architecture/**/**.md": "nishanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "shirhatti",
+        "docs/architecture/modernize-desktop/**/**.md": "OliaG",
         "docs/core/**/**.md": "tdykstra",
         "docs/core/compatibility/**/**.md": "gewarren",
         "docs/core/deploying/**/**.md": "Thraka",
@@ -291,6 +288,7 @@
         "_vblang/spec/*.md": "wiwagn",
         "docs/architecture/**/**.md": "nanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "soshir",
+        "docs/architecture/modernize-desktop/**/**.md": "oliag",
         "docs/azure/**/**.md": "casoper",
         "docs/azure/**/**.yml": "casoper",
         "docs/core/**/**.md": "dotnetcontent",
@@ -558,7 +556,7 @@
         "docs/visual-basic/**/**.md": "Visual Basic"
       },
       "open_to_public_contributors": {
-	      "docs/standard/design-guidelines/**.md": false
+        "docs/standard/design-guidelines/**.md": false
       }
     },
     "dest": "_site",

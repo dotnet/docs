@@ -1,5 +1,6 @@
 ---
 title: "Names of Namespaces"
+description: Use these guidelines for naming namespaces as part of guidelines for designing libraries that extend and interact with .NET libraries.
 ms.date: "10/22/2008"
 helpviewer_keywords:
   - "names [.NET Framework], conflicts"
@@ -79,5 +80,5 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

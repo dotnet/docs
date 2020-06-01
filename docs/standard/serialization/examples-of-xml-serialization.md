@@ -1,5 +1,6 @@
 ---
 title: "Examples of XML Serialization"
+description: These code examples show advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to an XML Schema document.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -17,7 +18,7 @@ ms.assetid: eec46337-9696-435b-a375-dc5effae6992
 
 # Examples of XML Serialization
 
-XML serialization can take more than one form, from simple to complex. For example, you can serialize a class that simply consists of public fields and properties, as shown in [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md). The following code examples address various advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to a specific XML Schema (XSD) document.
+XML serialization can take more than one form, from simple to complex. For example, you can serialize a class that simply consists of public fields and properties, as shown in [Introducing XML Serialization](introducing-xml-serialization.md). The following code examples address various advanced scenarios, including how to use XML serialization to generate an XML stream that conforms to a specific XML Schema (XSD) document.
 
 ## Serializing a DataSet
 

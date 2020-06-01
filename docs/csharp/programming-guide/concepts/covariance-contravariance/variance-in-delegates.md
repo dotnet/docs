@@ -103,8 +103,9 @@ public static void Test()
 }  
 ```  
   
-### Generic Delegates That Have Variant Type Parameters in the .NET Framework  
- .NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
+### Generic Delegates That Have Variant Type Parameters in .NET
+
+.NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
   
 - `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
   

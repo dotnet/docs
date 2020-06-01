@@ -376,7 +376,7 @@ to create a public interface that represents your abstraction, even though
 the underlying storage must use different core collection types.
 
 There are two parts of this code that may be unfamiliar
-to some developers. These two `using` statements:
+to some developers. These two `using` directives:
 
 ```csharp
 using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;

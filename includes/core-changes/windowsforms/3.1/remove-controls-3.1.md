@@ -8,19 +8,9 @@ Starting with .NET Core 3.1, various Windows Forms controls are no longer availa
 
 The following types are no longer available:
 
-- <xref:System.Windows.Forms.Menu>
-- <xref:System.Windows.Forms.Menu.MenuItemCollection>
-- <xref:System.Windows.Forms.MainMenu>
 - <xref:System.Windows.Forms.ContextMenu>
-- <xref:System.Windows.Forms.MenuItem>
-- <xref:System.Windows.Forms.ToolBar>
-- <xref:System.Windows.Forms.ToolBarAppearance>
-- <xref:System.Windows.Forms.ToolBarButton>
-- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>
-- <xref:System.Windows.Forms.ToolBarButtonClickEventArgs>
-- <xref:System.Windows.Forms.ToolBarButtonStyle>
-- <xref:System.Windows.Forms.ToolBarTextAlign>
 - <xref:System.Windows.Forms.DataGrid>
+- <xref:System.Windows.Forms.DataGrid.HitTestType>
 - <xref:System.Windows.Forms.DataGridBoolColumn>
 - <xref:System.Windows.Forms.DataGridCell>
 - <xref:System.Windows.Forms.DataGridColumnStyle>
@@ -34,8 +24,18 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.GridTablesFactory>
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.IDataGridEditingService>
-- <xref:System.Windows.Forms.DataGrid.HitTestType>
 - <xref:System.Windows.Forms.Design.IMenuEditorService>
+- <xref:System.Windows.Forms.MainMenu>
+- <xref:System.Windows.Forms.Menu>
+- <xref:System.Windows.Forms.Menu.MenuItemCollection>
+- <xref:System.Windows.Forms.MenuItem>
+- <xref:System.Windows.Forms.ToolBar>
+- <xref:System.Windows.Forms.ToolBarAppearance>
+- <xref:System.Windows.Forms.ToolBarButton>
+- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>
+- <xref:System.Windows.Forms.ToolBarButtonClickEventArgs>
+- <xref:System.Windows.Forms.ToolBarButtonStyle>
+- <xref:System.Windows.Forms.ToolBarTextAlign>
 
 #### Version introduced
 
@@ -47,13 +47,13 @@ Each removed control has a recommended replacement control. Refer to the followi
 
 | Removed control (API) | Recommended replacement | Associated APIs that are removed |
 |-|-|-|
+| ContextMenu | ContextMenuStrip | |
 | DataGrid | DataGridView | DataGridCell, DataGridRow, DataGridTableCollection, DataGridColumnCollection, DataGridTableStyle, DataGridColumnStyle, DataGridLineStyle, DataGridParentRowsLabel, DataGridParentRowsLabelStyle, DataGridBoolColumn, DataGridTextBox, GridColumnStylesCollection, GridTableStylesCollection, HitTestType |
+| MainMenu | MenuStrip | |
+| Menu | ToolStripDropDown, ToolStripDropDownMenu | MenuItemCollection |
+| MenuItem | ToolStripMenuItem | |
 | ToolBar | ToolStrip | ToolBarAppearance |
 | ToolBarButton | ToolStripButton | ToolBarButtonClickEventArgs, ToolBarButtonClickEventHandler, ToolBarButtonStyle, ToolBarTextAlign|
-| ContextMenu | ContextMenuStrip | |
-| Menu | ToolStripDropDown, ToolStripDropDownMenu | MenuItemCollection |
-| MainMenu | MenuStrip | |
-| MenuItem | ToolStripMenuItem | |
 
 #### Category
 
@@ -61,19 +61,24 @@ Windows Forms
 
 #### Affected APIs
 
+- <xref:System.Windows.Forms.ContextMenu?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.GridColumnStylesCollection?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.GridTablesFactory?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.GridTableStylesCollection?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.IDataGridEditingService?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.MainMenu?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Menu?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Menu.MenuItemCollection?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.MainMenu?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ContextMenu?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.MenuItem?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBar?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBarAppearance?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBarButton?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBarButtonClickEventArgs?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ToolBarTextAlign?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.DataGrid.HitTestType?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridBoolColumn?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridCell?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridColumnStyle?displayProperty=nameWithType>
@@ -83,16 +88,11 @@ Windows Forms
 - <xref:System.Windows.Forms.DataGridTableStyle?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridTextBox?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridTextBoxColumn?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.GridColumnStylesCollection?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.GridTablesFactory?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.GridTableStylesCollection?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.IDataGridEditingService?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.DataGrid.HitTestType?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Design.IMenuEditorService?displayProperty=nameWithType>
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Windows.Forms.Menu`
 - `T:System.Windows.Forms.Menu.MenuItemCollection`

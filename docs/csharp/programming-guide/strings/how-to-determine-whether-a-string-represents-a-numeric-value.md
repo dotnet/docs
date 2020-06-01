@@ -29,7 +29,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## Robust Programming  
  Primitive numeric types also implement the `Parse` static method, which throws an exception if the string is not a valid number. `TryParse` is generally more efficient because it just returns false if the number is not valid.  
   
-## .NET Framework Security  
+## .NET Security  
  Always use the `TryParse` or `Parse` methods to validate user input from controls such as text boxes and combo boxes.  
   
 ## See also

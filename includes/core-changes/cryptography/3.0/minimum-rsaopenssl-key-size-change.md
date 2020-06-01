@@ -33,7 +33,7 @@ Cryptography
 - <xref:System.Security.Cryptography.RSACryptoServiceProvider.%23ctor%2A>
 
 <!--
-### Affected APIs
+#### Affected APIs
 
 - `P:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes`
 - `Overload:System.Security.Cryptography.RSA.Create`

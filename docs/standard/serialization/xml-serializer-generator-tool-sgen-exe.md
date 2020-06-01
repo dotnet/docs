@@ -1,5 +1,6 @@
 ---
 title: "XML Serializer Generator Tool (Sgen.exe)"
+description: The XML Serializer Generator creates an XML serialization assembly for types in an assembly, which improves the startup performance of XmlSerializer.
 ms.date: "03/30/2017"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
 ---
@@ -57,5 +58,5 @@ sgen Data.dll
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../framework/tools/index.md)
+- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)

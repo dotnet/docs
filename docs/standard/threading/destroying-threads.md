@@ -63,4 +63,4 @@ catch (ThreadAbortException ex)
 
 - <xref:System.Threading.ThreadAbortException>
 - <xref:System.Threading.Thread>
-- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)
+- [Using Threads and Threading](using-threads-and-threading.md)

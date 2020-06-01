@@ -26,4 +26,4 @@ HRESULT DefineKickoffMethod(    [in] mdToken kickoffMethod);
   
 ## See also
 
-- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)
+- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](isymunmanagedasyncmethodpropertieswriter-interface.md)

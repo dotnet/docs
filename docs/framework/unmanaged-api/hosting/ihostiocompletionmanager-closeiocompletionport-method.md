@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::CloseIoCompletionPort Method
-Requests that the host close a port that was opened through an earlier call to [CreateIoCompletionPort](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-createiocompletionport-method.md).  
+Requests that the host close a port that was opened through an earlier call to [CreateIoCompletionPort](ihostiocompletionmanager-createiocompletionport-method.md).  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ HRESULT CloseIoCompletionPort (
  `hPort` must be a handle to a port that was created by an earlier call to `CreateIoCompletionPort`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,5 +57,5 @@ HRESULT CloseIoCompletionPort (
   
 ## See also
 
-- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
-- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+- [ICLRIoCompletionManager Interface](iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](ihostiocompletionmanager-interface.md)

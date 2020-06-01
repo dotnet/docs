@@ -32,11 +32,11 @@ The following code examples write characters synchronously or asynchronously fro
 - <xref:System.IO.StringWriter>  
 - <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  
 - <xref:System.Text.StringBuilder>  
-- [File and stream I/O](../../../docs/standard/io/index.md)  
-- [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [How to: Read characters from a string](../../../docs/standard/io/how-to-read-characters-from-a-string.md)
+- [File and stream I/O](index.md)  
+- [Asynchronous file I/O](asynchronous-file-i-o.md)  
+- [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)  
+- [How to: Read and write to a newly created data file](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](how-to-write-text-to-a-file.md)  
+- [How to: Read characters from a string](how-to-read-characters-from-a-string.md)

@@ -1,5 +1,6 @@
 ---
 title: "LINQ and ADO.NET"
+description: Learn how to form set-based queries in application code using Language-Integrated Query (LINQ) in ADO.NET, without having to use a separate query language.
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec

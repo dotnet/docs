@@ -100,6 +100,8 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 19.04 ❌
 
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
 ```bash
@@ -109,9 +111,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
-
 ## 18.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
@@ -122,9 +124,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
-
 ## 17.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
@@ -135,9 +137,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
-
 ## 17.04 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
@@ -148,9 +150,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
-
 ## 16.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
 
@@ -160,8 +162,6 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
-
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 ## APT update SDK or runtime
 

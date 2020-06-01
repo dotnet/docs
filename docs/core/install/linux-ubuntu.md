@@ -30,6 +30,30 @@ The following table is a list of .NET Core versions which are ❌ no longer supp
 | 2.2       | 16.04, 18.04         |
 | 2.0       | 14.04, 16.04, 18.04  |
 
+## Dependencies
+
+Ubuntu distributions require the following libraries to be installed:
+
+- liblttng-ust0
+- libcurl3 (for 14.x and 16.x)
+- libcurl4 (for 18.x)
+- libssl1.0.0
+- libkrb5-3
+- zlib1g
+- libicu52 (for 14.x)
+- libicu55 (for 16.x)
+- libicu57 (for 17.x)
+- libicu60 (for 18.x)
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+  > [!WARNING]
+  > Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
+  > of libgdiplus by adding the Mono repository to your system. For more information,
+  > see <https://www.mono-project.com/download/stable/>.
+
 ## 20.04 ✔️
 
 [!INCLUDE [linux-apt-prep-intro](includes/linux-ubuntu-apt-prep-intro.md)]
@@ -150,7 +174,7 @@ sudo apt-get upgrade
 
 ## APT troubleshooting
 
-This section provides information on common errors you may get while using [APT to install .NET Core](#apt-advanced-package-tool).
+This section provides information on common errors you may get while using APT to install .NET Core.
 
 ### Unable to locate
 
@@ -284,7 +308,7 @@ Both .NET Core SDK and .NET Core Runtime can be manually installed after they've
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET Core and then ensure .NET Core is in PATH.
 
-To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands from the directory where the file was saved.
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands from the directory where the file was saved.
 
 ```bash
 mkdir -p $HOME/dotnet && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C $HOME/dotnet

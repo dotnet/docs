@@ -25,7 +25,7 @@ When you include asynchronous code in your app, you should consider and possibly
 > To run the example, you must have Visual Studio 2012 or newer and .NET Framework 4.5 or newer installed on your computer.
 
 > [!NOTE]
-> Transport Layer Security (TLS) version 1.2 is now the minimum version to use in your app development. If your app targets a .NET Framework version earlier than 4.7, refer to the following article for [Transport Layer Security (TLS) best practices with the .NET Framework](../../../../framework/network-programming/tls.md).
+> Transport Layer Security (TLS) version 1.2 is now the minimum version to use in your app development. If your app targets a .NET Framework version earlier than 4.7, refer to the following article for [Transport Layer Security (TLS) best practices with .NET Framework](../../../../framework/network-programming/tls.md).
 
 ## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy
 
@@ -132,7 +132,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-As a result of the changes, the button doesn't respond while `AccessTheWebAsync` is downloading the websites, so the process can’t be reentered.
+As a result of the changes, the button doesn't respond while `AccessTheWebAsync` is downloading the websites, so the process can't be reentered.
 
 ### <a name="BKMK_CancelAndRestart"></a> Cancel and Restart the Operation
 
@@ -142,7 +142,7 @@ For more information about cancellation, see [Fine-Tuning Your Async Application
 
 To set up this scenario, make the following changes to the basic code that is provided in [Reviewing and Running the Example App](#BKMD_SettingUpTheExample). You can also download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](https://code.msdn.microsoft.com/Async-Sample-Preventing-a8489f06). The name of the project is CancelAndRestart.
 
-1. Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.
+1. Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that's in scope for all methods.
 
     ```csharp
     public partial class MainWindow : Window   // Or class MainPage
@@ -223,7 +223,7 @@ In `AccessTheWebAsync`, make the following changes.
 
 - Use the <xref:System.Net.Http.HttpClient.GetAsync%2A> method to download the websites because `GetAsync` accepts a <xref:System.Threading.CancellationToken> argument.
 
-- Before calling `DisplayResults` to display the results for each downloaded website, check `ct` to verify that the current operation hasn’t been canceled.
+- Before calling `DisplayResults` to display the results for each downloaded website, check `ct` to verify that the current operation hasn't been canceled.
 
 The following code shows these changes, which are marked with asterisks.
 
@@ -530,7 +530,7 @@ The output shows the following patterns.
     TOTAL bytes returned:  915908
     ```
 
-- The `pendingWork` task is null  at the start of `FinishOneGroupAsync` only for group A, which started first. Group A hasn’t yet completed an await expression when it reaches `FinishOneGroupAsync`. Therefore, control hasn't returned to `AccessTheWebAsync`, and the first assignment to `pendingWork` hasn't occurred.
+- The `pendingWork` task is null  at the start of `FinishOneGroupAsync` only for group A, which started first. Group A hasn't yet completed an await expression when it reaches `FinishOneGroupAsync`. Therefore, control hasn't returned to `AccessTheWebAsync`, and the first assignment to `pendingWork` hasn't occurred.
 
 - The following two lines always appear together in the output. The code is never interrupted between starting a group's operation in `StartButton_Click` and assigning a task for the group to `pendingWork`.
 
@@ -578,13 +578,13 @@ The following section provides the code to build the example as a WPF app.
 
 4. In the list of project types, choose **WPF Application**.
 
-5. Name the project `WebsiteDownloadWPF`, choose .NET Framework version of 4.6 or higher and then click the **OK** button.
+5. Name the project `WebsiteDownloadWPF`, choose .NET Framework version of 4.6 or higher, and then click the **OK** button.
 
      The new project appears in **Solution Explorer**.
 
 6. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
 
-     If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.
+     If the tab isn't visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.
 
 7. In the **XAML** view of MainWindow.xaml, replace the code with the following code.
 

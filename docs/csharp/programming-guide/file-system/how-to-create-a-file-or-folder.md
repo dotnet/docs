@@ -56,10 +56,10 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
 - The folder name is only a colon, ":" (<xref:System.IO.PathTooLongException> class).  
   
-## .NET Framework Security  
+## .NET Security  
  An instance of the <xref:System.Security.SecurityException> class may be thrown in partial-trust situations.  
   
- If you don’t have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
+ If you don't have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
   
 ## See also
 

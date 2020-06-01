@@ -95,6 +95,6 @@ You subscribe to an event that is published by another class when you want to wr
 
 - [Events](./index.md)
 - [event](../../language-reference/keywords/event.md)
-- [How to publish events that conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [How to publish events that conform to .NET Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
 - [- and -= operators](../../language-reference/operators/subtraction-operator.md)
 - [+ and += operators](../../language-reference/operators/addition-operator.md)

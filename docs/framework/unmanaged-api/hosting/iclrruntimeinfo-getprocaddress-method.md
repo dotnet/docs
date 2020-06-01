@@ -19,7 +19,7 @@ topic_type:
 # ICLRRuntimeInfo::GetProcAddress Method
 Gets the address of a specified function that was exported from the common language runtime (CLR) associated with this interface.  
   
- This method supersedes the [GetRealProcAddress](../../../../docs/framework/unmanaged-api/hosting/getrealprocaddress-function.md) function.  
+ This method supersedes the [GetRealProcAddress](getrealprocaddress-function.md) function.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ HRESULT GetProcAddress(
  This method causes the CLR to be loaded but not initialized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -59,6 +59,6 @@ HRESULT GetProcAddress(
   
 ## See also
 
-- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRRuntimeInfo Interface](iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

@@ -52,5 +52,5 @@ public static class Console {
 
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Member Design Guidelines](member.md)
+- [Framework Design Guidelines](index.md)

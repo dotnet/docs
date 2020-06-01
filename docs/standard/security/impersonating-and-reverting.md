@@ -16,7 +16,7 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
  In situations where your application must impersonate a Windows account that has not been attached to the current thread by IIS, you must retrieve that account's token and use it to activate the account. You can do this by performing the following tasks:  
   
-1. Retrieve an account token for a particular user by making a call to the unmanaged **LogonUser** method. This method is not in the .NET Framework base class library, but is located in the unmanaged **advapi32.dll**. Accessing methods in unmanaged code is an advanced operation and is beyond the scope of this discussion. For more information, see [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md). For more information about the **LogonUser** method and **advapi32.dll**, see the Platform SDK documentation.  
+1. Retrieve an account token for a particular user by making a call to the unmanaged **LogonUser** method. This method is not in the .NET Framework base class library, but is located in the unmanaged **advapi32.dll**. Accessing methods in unmanaged code is an advanced operation and is beyond the scope of this discussion. For more information, see [Interoperating with Unmanaged Code](../../framework/interop/index.md). For more information about the **LogonUser** method and **advapi32.dll**, see the Platform SDK documentation.  
   
 2. Create a new instance of the **WindowsIdentity** class, passing the token. The following code demonstrates this call, where `hToken` represents a Windows token.  
   
@@ -56,5 +56,5 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
 
 - <xref:System.Security.Principal.WindowsIdentity>
 - <xref:System.Security.Principal.WindowsImpersonationContext>
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
-- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
+- [Principal and Identity Objects](principal-and-identity-objects.md)
+- [Interoperating with Unmanaged Code](../../framework/interop/index.md)

@@ -22,4 +22,4 @@ This document demonstrates how to prevent a child task from attaching to the par
   
 ## See also
 
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+- [Task-based Asynchronous Programming](task-based-asynchronous-programming.md)

@@ -43,4 +43,4 @@ The following example extracts a protocol and port number from a URL.
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

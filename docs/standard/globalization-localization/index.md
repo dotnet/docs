@@ -44,6 +44,10 @@ For additional information, see the [Globalization documentation](/globalization
 
 Discusses the first stage of creating a world-ready application, which involves designing and coding an application that is culture-neutral and language-neutral.
 
+[.NET globalization and ICU](globalization-icu.md)
+
+Describes how .NET globalization uses [International Components for Unicode (ICU)](http://site.icu-project.org/home).
+
 [Localizability review](localizability-review.md)
 
 Discusses the second stage of creating a localized application, which involves identifying potential roadblocks to localization.
@@ -74,10 +78,10 @@ Describes the best practices to follow for globalization, localization, and deve
 
    Contains classes representing ASCII, ANSI, Unicode, and other character encodings.
 
-- [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)
+- [Resgen.exe (Resource File Generator)](../../framework/tools/resgen-exe-resource-file-generator.md)
 
    Describes how to use Resgen.exe to convert .txt files and XML-based resource format (.resx) files to common language runtime binary .resources files.
 
-- [Winres.exe (Windows Forms Resource Editor)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md)
+- [Winres.exe (Windows Forms Resource Editor)](../../framework/tools/winres-exe-windows-forms-resource-editor.md)
 
    Describes how to use Winres.exe to localize Windows Forms forms.

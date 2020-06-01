@@ -33,17 +33,17 @@ lrwxrwxrwx  1 root root   20 Nov 12 16:58 openssl.cnf -> /etc/ssl/openssl.cnf
 lrwxrwxrwx  1 root root   16 Mar 27  2018 private -> /etc/ssl/private
 ```
 
-### Category
+#### Category
 
 Cryptography
 
-### Affected APIs
+#### Affected APIs
 
 - <xref:System.Security.Cryptography.X509Certificates.X509Chain?displayProperty=fullName>
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `T:System.Security.Cryptography.X509Certificates.X509Chain`
 

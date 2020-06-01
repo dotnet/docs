@@ -48,30 +48,11 @@ Containers are defined by simple text-based files that become project artifacts 
 
 Containers are immutable. Once you define a container, you can recreate and run it exactly the same way. This immutability lends itself to component-based design. If some parts of an application evolve differently than others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-2 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
 
-Containers are immutable. Once you define a container, you can recreate and run it exactly the same way. This immutability lends itself to component-based design. If some parts of an application evolve differently than others, why redeploy the entire app when you can just deploy the parts that change most frequently? Different features and cross-cutting concerns of an app can be broken up into separate units. Figure 3-2 shows how a monolithic app can take advantage of containers and microservices by delegating certain features or functionality. The remaining functionality in the app itself has also been containerized.
-
 ![Breaking up a monolithic app to use microservices in the back end.](./media/cloud-native-design.png)
 
 **Figure 3-2**. Decomposing a monolithic app to embrace microservices.
 
 Each cloud-native service is built and deployed in a separate container. Each can update as needed. Individual services can be hosted on nodes with resources appropriate to each service. The environment each service runs in is immutable, shared across dev, test, and production environments, and easily versioned. Coupling between different areas of the application occurs explicitly as calls or messages between services, not compile-time dependencies within the monolith. You can also choose the technology that best suites a given capability without requiring changes to the rest of the app.
-
-Containerized services require automated management. It wouldn't be feasible to manually administer a large set of independently deployed containers. For example, consider the following tasks:
-
-- How will container instances be provisioned across a cluster of many machines?
-- Once deployed, how will containers discover and communicate with each other?
-- How can containers scale in or out on-demand?
-- How do you monitor the health of each container?
-- How do you protect a container against hardware and software failures?
-- How do upgrade containers for a live application with zero downtime?
-
-Container orchestrators address and automate these and other concerns.
-
-In the cloud-native eco-system, Kubernetes has become the de facto container orchestrator. It's an open-source platform managed by the Cloud Native Computing Foundation (CNCF). Kubernetes automates the deployment, scaling, and operational concerns of containerized workloads across a machine cluster. However, installing and managing Kubernetes is notoriously complex.
-
-A much better approach is to leverage Kubernetes as a managed service from a cloud vendor. The Azure cloud features a fully managed Kubernetes platform entitled [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/). AKS abstracts the complexity and operational overhead of managing Kubernetes. You consume Kubernetes as a cloud service; Microsoft takes responsibility for managing and supporting it. AKS also tightly integrates with other Azure services and dev tools.
-
-AKS is a cluster-based technology. A pool of federated virtual machines, or nodes, is deployed to the Azure cloud. Together they form a highly available environment, or cluster. The cluster appears as a seamless, single entity to your cloud-native application. Under the hood, AKS deploys your containerized services across these nodes following a predefined strategy that evenly distributes the load.
 
 Containerized services require automated management. It wouldn't be feasible to manually administer a large set of independently deployed containers. For example, consider the following tasks:
 
@@ -198,26 +179,26 @@ Visual Studio supports Docker development for web-based applications. When you c
 When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.git
 
 ```docker
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["WebApplication3/WebApplication3.csproj", "WebApplication3/"]
-RUN dotnet restore "WebApplication3/WebApplication3.csproj"
+COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
+RUN dotnet restore "eShopWeb/eShopWeb.csproj"
 COPY . .
-WORKDIR "/src/WebApplication3"
-RUN dotnet build "WebApplication3.csproj" -c Release -o /app
+WORKDIR "/src/eShopWeb"
+RUN dotnet build "eShopWeb.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApplication3.csproj" -c Release -o /app
+RUN dotnet publish "eShopWeb.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "WebApplication3.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "eShopWeb.dll"]
 ```
 
 **Figure 3-6**. Visual Studio generated Dockerfile
@@ -235,8 +216,6 @@ Also, at any time you can add Docker support to an existing ASP.NET Core applica
 ![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
 
 **Figure 3-8**. Adding Docker support to Visual Studio
-
-You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
 You can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 

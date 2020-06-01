@@ -35,7 +35,7 @@ Core .NET libraries
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Double.Parse`
 - `Overload:System.Double.TryParse`

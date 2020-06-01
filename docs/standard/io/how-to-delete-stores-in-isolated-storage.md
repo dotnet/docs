@@ -33,4 +33,4 @@ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two meth
 ## See also
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)

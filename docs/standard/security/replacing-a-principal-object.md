@@ -29,4 +29,4 @@ Applications that provide authentication services must be able to replace the **
 ## See also
 
 - <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+- [Principal and Identity Objects](principal-and-identity-objects.md)

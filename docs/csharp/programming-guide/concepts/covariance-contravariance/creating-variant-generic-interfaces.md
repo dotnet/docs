@@ -9,7 +9,7 @@ ms.assetid: 30330ec4-9df2-4838-a535-6c406d0ed4df
 You can declare generic type parameters in interfaces as covariant or contravariant. *Covariance* allows interface methods to have more derived return types than that defined by the generic type parameters. *Contravariance* allows interface methods to have argument types that are less derived than that specified by the generic parameters. A generic interface that has covariant or contravariant generic type parameters is called *variant*.
 
 > [!NOTE]
-> .NET Framework 4 introduced variance support for several existing generic interfaces. For the list of the variant interfaces in the .NET Framework, see [Variance in Generic Interfaces (C#)](./variance-in-generic-interfaces.md).
+> .NET Framework 4 introduced variance support for several existing generic interfaces. For the list of the variant interfaces in .NET, see [Variance in Generic Interfaces (C#)](./variance-in-generic-interfaces.md).
 
 ## Declaring Variant Generic Interfaces
 

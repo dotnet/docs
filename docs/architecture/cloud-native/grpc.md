@@ -36,8 +36,8 @@ gRPC embraces an open-source technology called [Protocol Buffers](https://develo
 
 Using the proto file, the Protobuf compiler, `protoc`, generates both client and service code for your target platform. The code includes the following components:
 
-- Strongly-typed objects, shared by the client and service, that represent the service operations and data elements for a message.
-- A strongly-typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
+- Strongly typed objects, shared by the client and service, that represent the service operations and data elements for a message.
+- A strongly typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
 - A client stub that contains the required plumbing to invoke the remote gRPC service.
 
 At runtime, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
@@ -78,7 +78,7 @@ Favor gRPC for the following scenarios:
 
 At the time, of this writing, gRPC is primarily used with backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
 
-- Strongly-typed code-generated clients
+- Strongly typed, code-generated clients
 - Compact Protobuf messages
 - Server streaming
 

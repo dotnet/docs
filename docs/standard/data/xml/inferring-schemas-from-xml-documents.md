@@ -77,7 +77,7 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
 ## See also
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
-- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
-- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)
-- [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)
-- [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+- [XML Schema Object Model (SOM)](xml-schema-object-model-som.md)
+- [Inferring an XML Schema](inferring-an-xml-schema.md)
+- [Rules for Inferring Schema Node Types and Structure](rules-for-inferring-schema-node-types-and-structure.md)
+- [Rules for Inferring Simple Types](rules-for-inferring-simple-types.md)

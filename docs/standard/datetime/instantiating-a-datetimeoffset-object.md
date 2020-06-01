@@ -88,4 +88,4 @@ The following example illustrates calls to each of these four string conversion 
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](index.md)

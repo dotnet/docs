@@ -55,6 +55,7 @@ namespace keywords
 
         private static void TryFinallyExample()
         {
+            // The extra braces are necessary for the explanation. Do not remove them.
             // <SnippetTryFinallyExample>
             string manyLines=@"This is line one
             This is line two
@@ -62,16 +63,18 @@ namespace keywords
             The penultimate line is line four
             This is the final, fifth line.";
 
-            var reader = new StringReader(manyLines);
-            try {
-                string? item;
-                do {
-                    item = reader.ReadLine();
-                    Console.WriteLine(item);
-                } while(item != null);
-            } finally
             {
-                reader?.Dispose();
+                var reader = new StringReader(manyLines);
+                try {
+                    string? item;
+                    do {
+                        item = reader.ReadLine();
+                        Console.WriteLine(item);
+                    } while(item != null);
+                } finally
+                {
+                    reader?.Dispose();
+                }
             }
             // </SnippetTryFinallyExample>
         }

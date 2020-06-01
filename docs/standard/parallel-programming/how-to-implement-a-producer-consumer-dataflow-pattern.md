@@ -34,4 +34,4 @@ This document describes how to use the TPL Dataflow Library to implement a produ
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

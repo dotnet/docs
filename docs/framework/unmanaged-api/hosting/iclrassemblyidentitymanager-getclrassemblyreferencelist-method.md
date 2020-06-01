@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList Method
-Gets an interface pointer to an [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) instance from the supplied list of partial assembly identities.  
+Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) instance from the supplied list of partial assembly identities.  
   
 ## Syntax  
   
@@ -51,7 +51,7 @@ HRESULT  GetCLRAssemblyReferenceList (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -61,5 +61,5 @@ HRESULT  GetCLRAssemblyReferenceList (
   
 ## See also
 
-- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)

@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COUNINITIEE Enumeration
-Specifies constants used by [CoUninitializeEE](../../../../docs/framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.  
+Specifies constants used by [CoUninitializeEE](../hosting/couninitializeee-function.md) when initializing the common language runtime.  
   
 ## Syntax  
   
@@ -36,7 +36,7 @@ typedef enum tagCOUNINITEE
 |`COUNINITEE_DLL`|Indicates uninitialization mode for unloading an assembly.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,4 +46,4 @@ typedef enum tagCOUNINITEE
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

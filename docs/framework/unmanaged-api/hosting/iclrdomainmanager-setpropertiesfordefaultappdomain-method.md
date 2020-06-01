@@ -49,7 +49,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
  The property value for "PARTIAL_TRUST_VISIBLE_ASSEMBLIES" is a list of assemblies that have the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute with the <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault?displayProperty=nameWithType> flag, which are to be made visible to partially trusted callers in the default application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -59,5 +59,5 @@ HRESULT SetPropertiesForDefaultAppDomain(
   
 ## See also
 
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
-- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)
+- [Hosting](index.md)
+- [ICLRDomainManager Interface](iclrdomainmanager-interface.md)

@@ -26,4 +26,4 @@ The cryptographic components of the .NET Framework can be combined to create dif
   
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](cryptographic-services.md)

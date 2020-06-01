@@ -69,7 +69,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string `The URL https://www.microsoft.com is embedded in text`.|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetChildren%2A>|Returns an <xref:System.Windows.Automation.AutomationElement> representing the hyperlink control.|  
-|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetChildren` method.|Returns the range that represents "https://www.microsoft.com".|  
+|<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetChildren` method.|Returns the range that represents `https://www.microsoft.com`.|  
   
  **Example 2 - A text range that partially spans an embedded text hyperlink**  
   

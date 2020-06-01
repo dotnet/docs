@@ -53,10 +53,10 @@ HRESULT GetExportedTypeProps (
  [out] A pointer to an `mdTypeDef` token that represents a type in the file.  
   
  `pdwExportedTypeFlags`  
- [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](../../../../docs/framework/unmanaged-api/metadata/cortypeattr-enumeration.md) values.  
+ [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](cortypeattr-enumeration.md) values.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -66,4 +66,4 @@ HRESULT GetExportedTypeProps (
   
 ## See also
 
-- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

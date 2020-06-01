@@ -144,4 +144,4 @@ To design your own custom attributes, you do not need to master many new concept
 
 - <xref:System.Attribute?displayProperty=nameWithType>
 - <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>
-- [Attributes](../../../docs/standard/attributes/index.md)
+- [Attributes](index.md)

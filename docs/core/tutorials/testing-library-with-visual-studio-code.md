@@ -81,7 +81,7 @@ You can also use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.T
 
 In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType> method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A?displayProperty=nameWithType> method.
 
-Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty), a valid string that has no characters and whose <xref:System.String.Length> is 0, and a `null` string that hasn't been initialized. If `StartsWithUpper` is called as an extension method on a <xref:System.String> instance, it can't be passed a `null` string. However, you can also call it directly as a static method and pass a single <xref:System.String> argument.
+Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty) and a and a `null` string. An empty string is one that has no characters and whose <xref:System.String.Length> is 0. A `null` string is one that hasn't been initialized. You can call `StartsWithUpper` directly as a static method and pass a single <xref:System.String> argument. Or you can call `StartsWithUpper` as an extension method on a `string` variable assigned to `null`.
 
 You'll define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> method repeatedly for each element in a string array. Because the test method fails as soon as it finds the first failure, you'll call a method overload that allows you to pass a string that indicates the string value used in the method call.
 
@@ -116,7 +116,7 @@ To create the test methods:
 
 ## Handle test failures
 
-Your test run had no failures, but change it slightly so that one of the test methods fails:
+If you're doing test-driven development (TDD), you write tests first and they fail the first time you run them. Then you add code to the app that makes the test succeed. In this case, you created the test after writing the app code that it validates, so you haven't seen the test fail. To validate that the test fails when you expect it to fail, add an invalid value to the test input.
 
 1. Modify the `words` array in the `TestDoesNotStartWithUpper` method to include the string "Error".
 

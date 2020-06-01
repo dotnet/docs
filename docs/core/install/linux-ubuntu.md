@@ -333,3 +333,4 @@ This approach lets you install different versions into separate locations and ch
 
 ## Next steps
 
+- [Tutorial: Create a console application with .NET Core using Visual Studio Code](../tutorials/with-visual-studio-code.md)

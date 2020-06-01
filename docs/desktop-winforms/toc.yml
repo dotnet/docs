@@ -24,13 +24,15 @@ items:
   - name: Common tasks
     items:
     - name: Add a form
-      href: forms/how-to-add-a-form.md
-    - name: Scale a form
-      href: file.md
+      href: forms/how-to-add.md
+    - name: Configure autoscaling
+      href: forms/how-to-configure-autoscale.md
+    - name: Respond to scale changes
+      href: forms/how-to-respond-to-scale-changes.md
     - name: Resize a form
-      href: file.md
+      href: how-to-resize.md
     - name: Change the border style
-      href: file.md
+      href: how-to-change-border.md
 - name: Controls
   items:
   - name: Overview

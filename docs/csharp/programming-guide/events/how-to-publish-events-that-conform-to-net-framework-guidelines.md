@@ -1,27 +1,27 @@
 ---
-title: "How to publish events that conform to .NET Framework Guidelines - C# Programming Guide"
+title: "Publish events that conform to .NET Guidelines - C# Programming Guide"
 ms.date: 05/26/2020
 helpviewer_keywords:
   - "events [C#], implementation guidelines"
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
 ---
 
-# How to publish events that conform to .NET Framework Guidelines (C# Programming Guide)
+# How to publish events that conform to .NET Guidelines (C# Programming Guide)
 
-The following procedure demonstrates how to add events that follow the standard .NET Framework pattern to your classes and structs. All events in the .NET Framework class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:
+The following procedure demonstrates how to add events that follow the standard .NET pattern to your classes and structs. All events in the .NET Framework class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:
 
 ```csharp
 public delegate void EventHandler(object sender, EventArgs e);
 ```
 
 > [!NOTE]
-> The .NET Framework 2.0 introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.
+> .NET Framework 2.0 introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.
 
-Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the .NET Framework pattern by using <xref:System.EventHandler>, as shown in the following example.
+Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the .NET pattern by using <xref:System.EventHandler>, as shown in the following example.
 
 The name `EventHandler` can lead to a bit of confusion as it doesn't actually handle the event. The <xref:System.EventHandler>, and generic <xref:System.EventHandler%601> are delegate types. A method or lambda expression whose signature matches the delegate definition is the *event handler* and will be invoked when the event is raised.
 
-### To publish events based on the EventHandler pattern
+## Publish events based on the EventHandler pattern
 
 1. (Skip this step and go to Step 3a if you do not have to send custom data with your event.) Declare the class for your custom data at a scope that is visible to both your publisher and subscriber classes. Then add the required members to hold your custom event data. In this example, a simple string is returned.
 

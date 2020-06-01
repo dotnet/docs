@@ -113,5 +113,5 @@ If your app cannot be migrated directly to App Service, consider App Service usi
 ## See also
 
 * [How to determine if your app qualifies for App Service](https://appmigration.microsoft.com/)
-* [Moving your database to the cloud](https://docs.microsoft.com/dotnet/azure/migration/sql)
+* [Moving your database to the cloud](sql.md)
 * [Azure web app sandbox details and restrictions](https://github.com/projectkudu/kudu/wiki/Azure-Web-App-sandbox)

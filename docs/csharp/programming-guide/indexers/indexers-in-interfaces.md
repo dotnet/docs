@@ -43,7 +43,7 @@ However, the fully qualified name is only needed to avoid ambiguity when the cla
 string IEmployee.this[int index]
 {
 }
-``
+```
 
 implements the indexer on the `IEmployee` interface, while the following declaration:
 

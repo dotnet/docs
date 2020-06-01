@@ -1,6 +1,6 @@
 ---
 title: "Objects and classes"
-ms.date: 07/20/2015
+ms.date: 05/26/2020
 helpviewer_keywords:
   - "classes [Visual Basic]"
   - "objects [Visual Basic]"
@@ -20,28 +20,34 @@ Each object in Visual Basic is defined by a *class*. A class describes the varia
 
 To understand the relationship between an object and its class, think of cookie cutters and cookies. The cookie cutter is the class. It defines the characteristics of each cookie, for example size and shape. The class is used to create objects. The objects are the cookies.
 
-You must create an object before you can access its members.
+You must create an object before you can access its members, except for [`Shared`](../../../language-reference/modifiers/shared.md) members which can be accessed without an object of the class.
 
-### To create an object from a class
+### Create an object from a class
 
-1. Determine from which class you want to create an object.
+1. Determine from which class you want to create an object, or define your own class. For example:
+
+   ```vb
+   Public Class Customer
+       Public Property AccountNumber As Integer
+   End Class
+   ```
 
 2. Write a [Dim Statement](../../../language-reference/statements/dim-statement.md) to create a variable to which you can assign a class instance. The variable should be of the type of the desired class.
 
    ```vb
-   Dim nextCustomer As customer
+   Dim nextCustomer As Customer
    ```
 
 3. Add the [New Operator](../../../language-reference/operators/new-operator.md) keyword to initialize the variable to a new instance of the class.
 
    ```vb
-   Dim nextCustomer As New customer
+   Dim nextCustomer As New Customer
    ```
 
 4. You can now access the members of the class through the object variable.
 
    ```vb
-   nextCustomer.accountNumber = lastAccountNumber + 1
+   nextCustomer.AccountNumber = lastAccountNumber + 1
    ```
 
 > [!NOTE]
@@ -98,7 +104,10 @@ Use fields when:
 
 - The property is a `String` data type, and there is no constraint on the size or value of the string.
 
-- For more information, see [Property Procedures](../procedures/property-procedures.md).
+- For more information, see [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md).
+
+> [!TIP]
+> Always keep the non-constant fields private. When you want to make it public, use a property instead.
 
 ### Methods
 
@@ -127,9 +136,7 @@ When you create an object from a class, the result is an instance of that class.
 
 Members declared with the `Shared` keyword are *shared members*, which belong to the class as a whole and not to any particular instance. A shared member exists only once, no matter how many instances of its class you create, or even if you create no instances. A shared member variable, for example, has only one value, which is available to all code that can access the class.
 
-#### Accessing nonshared members
-
-##### To access a nonshared member of an object
+#### Accessing non-shared members
 
 1. Make sure the object has been created from its class and assigned to an object variable.
 
@@ -145,19 +152,17 @@ Members declared with the `Shared` keyword are *shared members*, which belong to
 
 #### Accessing shared members
 
-##### To access a shared member of an object
-
 - Follow the class name with the *member-access operator* (`.`) and then the member name. You should always access a `Shared` member of the object directly through the class name.
 
    ```vb
-   MsgBox("This computer is called " & Environment.MachineName)
+   Console.WriteLine("This computer is called " & Environment.MachineName)
    ```
 
 - If you have already created an object from the class, you can alternatively access a `Shared` member through the object's variable.
 
 ### Differences between classes and modules
 
-The main difference between classes and modules is that classes can be instantiated as objects while standard modules cannot. Because there is only one copy of a standard module's data, when one part of your program changes a public variable in a standard module, any other part of the program gets the same value if it then reads that variable. In contrast, object data exists separately for each instantiated object. Another difference is that unlike standard modules, classes can implement interfaces.
+The main difference between classes and modules is that classes can be instantiated as objects while standard modules cannot. Because there is only one copy of a standard module's data, when one part of your program changes a public variable in a standard module, any other part of the program gets the same value if it then reads that variable. In contrast, object data exists separately for each instantiated object. Another difference is that unlike standard modules, classes can implement interfaces. If a class is marked with the [MustInherit](../../../language-reference/modifiers/mustinherit.md) modifier, it can't be instantiated directly. However, it's still different from a module as it can be inherited while modules can't be inherited.
 
 > [!NOTE]
 > When the `Shared` modifier is applied to a class member, it is associated with the class itself instead of a particular instance of the class. The member is accessed directly by using the class name, the same way module members are accessed.
@@ -170,10 +175,10 @@ On the other hand, members declared within a module are publicly accessible by d
 
 Objects let you declare variables and procedures once and then reuse them whenever needed. For example, if you want to add a spelling checker to an application you could define all the variables and support functions to provide spell-checking functionality. If you create your spelling checker as a class, you can then reuse it in other applications by adding a reference to the compiled assembly. Better yet, you may be able to save yourself some work by using a spelling checker class that someone else has already developed.
 
-The .NET Framework provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
+.NET provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
 
 ```vb
-Public Sub examineTimeZone()
+Public Sub ExamineTimeZone()
     Dim tz As System.TimeZone = System.TimeZone.CurrentTimeZone
     Dim s As String = "Current time zone is "
     s &= CStr(tz.GetUtcOffset(Now).Hours) & " hours and "
@@ -182,7 +187,7 @@ Public Sub examineTimeZone()
     s &= vbCrLf & "and is currently "
     If tz.IsDaylightSavingTime(Now) = False Then s &= "not "
     s &= "on ""summer time""."
-    MsgBox(s)
+    Console.WriteLine(s)
 End Sub
 ```
 
@@ -198,12 +203,12 @@ When classes are derived from more fundamental classes, they are said to have a 
 
 In the following example, suppose you want to define a special kind of <xref:System.Windows.Forms.Button> that acts like a normal <xref:System.Windows.Forms.Button> but also exposes a method that reverses the foreground and background colors.
 
-#### To define a class is derived from an already existing class
+#### Define a class that is derived from an already existing class
 
 1. Use a [Class Statement](../../../language-reference/statements/class-statement.md) to define a class from which to create the object you need.
 
    ```vb
-   Public Class reversibleButton
+   Public Class ReversibleButton
    ```
 
    Be sure an `End Class` statement follows the last line of code in your class. By default, the integrated development environment (IDE) automatically generates an `End Class` when you enter a `Class` statement.
@@ -216,12 +221,12 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
    Your new class inherits all the members defined by the base class.
 
-3. Add the code for the additional members your derived class exposes. For example, you might add a `reverseColors` method, and your derived class might look as follows:
+3. Add the code for the additional members your derived class exposes. For example, you might add a `ReverseColors` method, and your derived class might look as follows:
 
    ```vb
-   Public Class reversibleButton
+   Public Class ReversibleButton
        Inherits System.Windows.Forms.Button
-           Public Sub reverseColors()
+           Public Sub ReverseColors()
                Dim saveColor As System.Drawing.Color = Me.BackColor
                Me.BackColor = Me.ForeColor
                Me.ForeColor = saveColor
@@ -229,7 +234,7 @@ In the following example, suppose you want to define a special kind of <xref:Sys
    End Class
    ```
 
-   If you create an object from the `reversibleButton` class, it can access all the members of the <xref:System.Windows.Forms.Button> class, as well as the `reverseColors` method and any other new members you define on `reversibleButton`.
+   If you create an object from the `ReversibleButton` class, it can access all the members of the <xref:System.Windows.Forms.Button> class, as well as the `ReverseColors` method and any other new members you define in `ReversibleButton`.
 
 Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](inheritance-basics.md).
 

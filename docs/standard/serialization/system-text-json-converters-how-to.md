@@ -42,7 +42,7 @@ Some examples of types that can be handled by the basic pattern include:
 * `DateTime`
 * `Int32`
 
-The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines at run time which specific type is required and dynamically creates the appropriate converter.
+The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines, at run time, which specific type is required and dynamically creates the appropriate converter.
 
 ## Sample basic converter
 

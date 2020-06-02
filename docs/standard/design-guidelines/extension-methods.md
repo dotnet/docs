@@ -10,7 +10,7 @@ Extension methods are a language feature that allows static methods to be called
 
  The class that defines an extension method is referred to as the "sponsor" class, and it must be declared as `static`. To use extension methods, you must import the namespace that defines the sponsor class.
 
- ❌ AVOID frivolously defining extension methods, especially on types you don't own.
+ ❌ AVOID overuse of extension methods, especially on types you don't own.
 
  If you do own source code of a type, consider using regular instance methods instead. If you don't own the source code and you want to add a method, be very careful. Liberal use of extension methods has the potential of cluttering APIs of types that were not designed to have these methods.
 

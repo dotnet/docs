@@ -12,13 +12,13 @@ helpviewer_keywords:
 
 # Implement a DisposeAsync method
 
-The <xref:System.IAsyncDisposable> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
+The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
 
-It is typical that when implementing the <xref:System.IAsyncDisposable> interface, classes will also implement the <xref:System.IDisposable> interface. All of the guidance for implementing the dispose pattern is also relevant to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+It is typical that when implementing the <xref:System.IAsyncDisposable> interface, classes will also implement the <xref:System.IDisposable> interface. All of the guidance for implementing the dispose pattern applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
 
 ## DisposeAsync() and DisposeAsyncCore()
 
-The <xref:System.IAsyncDisposable> interface requires the implementation of a single parameterless method, <xref:System.IAsyncDisposable.DisposeAsync>. Also, any non-sealed class should have an additional `DisposeAsyncCore()` method that also returns a <xref:System.Threading.Tasks.ValueTask>.
+The <xref:System.IAsyncDisposable> interface declares a single parameterless method, <xref:System.IAsyncDisposable.DisposeAsync>. Any non-sealed class should have an additional `DisposeAsyncCore()` method that also returns a <xref:System.Threading.Tasks.ValueTask>.
 
 - A `public` <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementation that has no parameters.
 - A `protected virtual ValueTask DisposeAsyncCore()` method whose signature is:
@@ -33,7 +33,7 @@ The `DisposeAsyncCore()` method is `virtual` so that derived classes can define 
 
 ### The DisposeAsync() method
 
-The `public` parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
+The `public` parameterless `DisposeAsync()` method is called implicitly in an `await using` statement, and its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, needn't run. Freeing the memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
 ```csharp
 public async ValueTask DisposeAsync()
@@ -78,7 +78,7 @@ Furthermore, it could be written to use the implicit scoping of a [using declara
 
 ## Stacked usings
 
-In situations where you may have multiple instances of <xref:System.IAsyncDisposable> implementations, it is possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
+In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 

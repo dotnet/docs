@@ -24,6 +24,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
         if (_jsonWriter != null)
         {
             await _jsonWriter.DisposeAsync();
+            _jsonWriter = null;
         }
     }
 
@@ -42,6 +43,7 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 
         if (disposing)
         {
+            _jsonWriter?.Dispose();
             // TODO: dispose managed state (managed objects).
         }
 

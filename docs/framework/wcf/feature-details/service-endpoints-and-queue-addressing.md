@@ -66,9 +66,9 @@ This topic discusses how clients address services that read from queues and how 
   
 |WCF URI-based queue address|Use Active Directory property|Queue Transfer Protocol property|Resulting MSMQ format names|  
 |----------------------------------|-----------------------------------|--------------------------------------|---------------------------------|  
-|Net.msmq://\<machine-name>/private/abc|False (default)|Native (default)|DIRECT=OS:machine-name\private$\abc|  
-|Net.msmq://\<machine-name>/private/abc|False|SRMP|DIRECT=http://machine/msmq/private$/abc|  
-|Net.msmq://\<machine-name>/private/abc|True|Native|PUBLIC=some-guid (the GUID of the queue)|  
+|`Net.msmq://<machine-name>/private/abc`|False (default)|Native (default)|`DIRECT=OS:machine-name\private$\abc`|  
+|`Net.msmq://<machine-name>/private/abc`|False|SRMP|`DIRECT=http://machine/msmq/private$/abc`|  
+|`Net.msmq://<machine-name>/private/abc`|True|Native|`PUBLIC=some-guid` (the GUID of the queue)|  
   
 ### Reading Messages from the Dead-Letter Queue or the Poison-Message Queue  
  To read messages from a poison-message queue that is a subqueue of the target queue, open the `ServiceHost` with the address of the subqueue.  
@@ -94,7 +94,7 @@ This topic discusses how clients address services that read from queues and how 
   
  Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on Windows Vista, using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
   
- When addressing SRMP using `MsmqIntegrationBinding`, there is no requirement to add /msmq/ in the direct format name to help Internet Information Services (IIS) with dispatching. For example: When addressing a queue abc using the SRMP protocol, instead of DIRECT=http://adatum.com/msmq/private$/abc, you should use DIRECT=http://adatum.com/private$/abc.  
+ When addressing SRMP using `MsmqIntegrationBinding`, there is no requirement to add /msmq/ in the direct format name to help Internet Information Services (IIS) with dispatching. For example: When addressing a queue abc using the SRMP protocol, instead of `DIRECT=http://adatum.com/msmq/private$/abc`, you should use `DIRECT=http://adatum.com/private$/abc`.  
   
  Note that you cannot use net.msmq:// addressing with `MsmqIntegrationBinding`. Because `MsmqIntegrationBinding` supports free-form MSMQ format name addressing, you can use a WCF service that uses this binding to use multicast and distribution list features in MSMQ. One exception is specifying `CustomDeadLetterQueue` when using the `MsmqIntegrationBinding`. It must be of the form net.msmq://, similar to how it is specified using the `NetMsmqBinding`.  
   

@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
 ---
 # How to get information about files, folders, and drives  (C# Programming Guide)
-In the .NET Framework, you can access file system information by using the following classes:  
+In .NET, you can access file system information by using the following classes:  
   
 - <xref:System.IO.FileInfo?displayProperty=nameWithType>  
   

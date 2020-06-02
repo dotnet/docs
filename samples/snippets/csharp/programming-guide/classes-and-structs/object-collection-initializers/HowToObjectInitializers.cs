@@ -19,7 +19,7 @@ namespace object_collection_initializers
             StudentName student2 = new StudentName
             {
                 FirstName = "Craig",
-                LastName = "Playstead",
+                LastName = "Playstead"
             };
 
             // Declare a StudentName by using an object initializer and sending

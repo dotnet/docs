@@ -72,7 +72,7 @@ Project file:
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.Concurrent` | `true` - background GC<br/>`false` - non-concurrent GC | .NET Core 1.0 |
 | **MSBuild property** | `ConcurrentGarbageCollection` | `true` - background GC<br/>`false` - non-concurrent GC | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_gcConcurrent` | `true` - background GC<br/>`false` - non-concurrent GC | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_gcConcurrent` | `1` - background GC<br/>`0` - non-concurrent GC | .NET Core 1.0 |
 | **app.config for .NET Framework** | [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) | `true` - background GC<br/>`false` - non-concurrent GC |  |
 
 ### Examples

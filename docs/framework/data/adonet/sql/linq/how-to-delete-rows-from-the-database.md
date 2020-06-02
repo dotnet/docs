@@ -1,5 +1,6 @@
 ---
 title: "How to: Delete Rows From the Database"
+description: Learn to delete rows in a database by removing LINQ to SQL objects from a table-related collection. LINQ to SQL translates deletions to SQL DELETE commands.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

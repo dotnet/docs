@@ -141,4 +141,4 @@ Process C says: True
   
 ## See also
 
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [File and Stream I/O](index.md)

@@ -1,5 +1,6 @@
 ---
 title: "Updating Data Sources with DataAdapters"
+description: Learn how the Update method of DataAdapter resolves changes from a DataSet back to the data source in ADO.NET applications.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

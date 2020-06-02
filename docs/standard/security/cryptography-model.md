@@ -43,7 +43,7 @@ The common language runtime uses a stream-oriented design for implementing symme
 
 ## Cryptographic Configuration
 
-Cryptographic configuration lets you resolve a specific implementation of an algorithm to an algorithm name, allowing extensibility of the .NET Framework cryptography classes. You can add your own hardware or software implementation of an algorithm and map the implementation to the algorithm name of your choice. If an algorithm is not specified in the configuration file, the default settings are used. For more information about cryptographic configuration, see [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md).
+Cryptographic configuration lets you resolve a specific implementation of an algorithm to an algorithm name, allowing extensibility of the .NET Framework cryptography classes. You can add your own hardware or software implementation of an algorithm and map the implementation to the algorithm name of your choice. If an algorithm is not specified in the configuration file, the default settings are used. For more information about cryptographic configuration, see [Configuring Cryptography Classes](../../framework/configure-apps/configure-cryptography-classes.md).
 
 ## Choosing an Algorithm
 
@@ -69,5 +69,5 @@ Here is a list of recommended algorithms by application:
 
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](cryptographic-services.md)
 - [Applied Cryptography Protocols, Algorithms, and Source Code in C, by Bruce Schneier](https://www.schneier.com/books/applied_cryptography/)

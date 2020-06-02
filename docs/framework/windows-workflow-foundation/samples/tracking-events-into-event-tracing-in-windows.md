@@ -41,7 +41,7 @@ The tracking participant subscribes for a subset of the emitted tracking records
 
 3. To run the solution, press F5.
 
-    By default, the service is listening on port 53797 (http://localhost:53797/SampleWorkflowService.xamlx).
+    By default, the service is listening on port 53797 (`http://localhost:53797/SampleWorkflowService.xamlx`).
 
 4. Using File Explorer, open the WCF test client.
 

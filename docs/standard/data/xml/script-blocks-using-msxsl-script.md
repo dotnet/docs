@@ -142,5 +142,5 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)
+- [XSLT Transformations](xslt-transformations.md)
+- [Dynamic Source Code Generation and Compilation](../../../framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)

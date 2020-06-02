@@ -31,4 +31,4 @@ For more information about these schemes, see [URI schemes](/windows/uwp/app-res
   
 ## See also
 
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](support-for-windows-store-apps-and-windows-runtime.md)

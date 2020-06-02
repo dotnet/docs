@@ -51,7 +51,7 @@ Even if you are developing an app that targets a single culture or region, you s
 
 Using resource files has particular advantages if you are creating a localized app. When you deploy resources in satellite assemblies, the common language runtime automatically selects a culture-appropriate resource based on the user's current UI culture as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property. As long as you provide an appropriate culture-specific resource and correctly instantiate a <xref:System.Resources.ResourceManager> object or use a strongly typed resource class, the runtime handles the details of retrieving the appropriate resources.
 
-For more information about creating resource files, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md). For information about creating and deploying satellite assemblies, see [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) and [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).
+For more information about creating resource files, see [Creating Resource Files](../../framework/resources/creating-resource-files-for-desktop-apps.md). For information about creating and deploying satellite assemblies, see [Creating Satellite Assemblies](../../framework/resources/creating-satellite-assemblies-for-desktop-apps.md) and [Packaging and Deploying Resources](../../framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).
 
 ### Search and compare strings
 
@@ -137,7 +137,7 @@ Typically, when dates and times are displayed in the user interface, you should 
 
 - The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string
 
-- The [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature, when it is used with dates
+- The [composite formatting](../base-types/composite-formatting.md) feature, when it is used with dates
 
 The following example displays sunrise and sunset data twice for October 11, 2012. It first sets the current culture to Croatian (Croatia), and then to English (Great Britain). In each case, the dates and times are displayed in the format that is appropriate for that culture.
 
@@ -168,7 +168,7 @@ The following example illustrates the last approach. It uses the formatting conv
 
 A date and time value can have multiple interpretations, ranging from a general time ("The stores open on January 2, 2013, at 9:00 A.M.") to a specific moment in time ("Date of birth: January 2, 2013 6:32:00 A.M."). When a time value represents a specific moment in time and you restore it from a serialized value, you should ensure that it represents the same moment in time regardless of the user's geographical location or time zone.
 
-The following example illustrates this problem. It saves a single local date and time value as a string in three [standard formats](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) ("G" for general date long time, "s" for sortable date/time, and "o" for round-trip date/time) as well as in binary format.
+The following example illustrates this problem. It saves a single local date and time value as a string in three [standard formats](../base-types/standard-date-and-time-format-strings.md) ("G" for general date long time, "s" for sortable date/time, and "o" for round-trip date/time) as well as in binary format.
 
 [!code-csharp[Conceptual.Globalization#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates4.cs#10)]
 [!code-vb[Conceptual.Globalization#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates4.vb#10)]
@@ -218,7 +218,7 @@ When the data is serialized on a system in the Pacific Standard Time zone and de
 3/31/2013 3:00:00 AM Local
 ```
 
-For more information, see [Converting Times Between Time Zones](../../../docs/standard/datetime/converting-between-time-zones.md).
+For more information, see [Converting Times Between Time Zones](../datetime/converting-between-time-zones.md).
 
 ### Perform date and time arithmetic
 
@@ -242,7 +242,7 @@ The following example is similar to the previous example, except that it follows
 [!code-csharp[Conceptual.Globalization#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/dates6.cs#9)]
 [!code-vb[Conceptual.Globalization#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates6.vb#9)]
 
-For more information, see [Performing Arithmetic Operations with Dates and Times](../../../docs/standard/datetime/performing-arithmetic-operations.md).
+For more information, see [Performing Arithmetic Operations with Dates and Times](../datetime/performing-arithmetic-operations.md).
 
 ### Use culture-sensitive names for date elements
 
@@ -253,7 +253,7 @@ Your app may need to display the name of the month or the day of the week. To do
 
 However, this code always returns the names of the days of the week in English. Code that extracts the name of the month is often even more inflexible. It frequently assumes a twelve-month calendar with names of months in a specific language.
 
-By using [custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md) or the properties of the <xref:System.Globalization.DateTimeFormatInfo> object, it is easy to extract strings that reflect the names of days of the week or months in the user's culture, as the following example illustrates. It changes the current culture to French (France) and displays the name of the day of the week and the name of the month for July 1, 2013.
+By using [custom date and time format strings](../base-types/custom-date-and-time-format-strings.md) or the properties of the <xref:System.Globalization.DateTimeFormatInfo> object, it is easy to extract strings that reflect the names of days of the week or months in the user's culture, as the following example illustrates. It changes the current culture to French (France) and displays the name of the day of the week and the name of the month for July 1, 2013.
 
 [!code-csharp[Conceptual.Globalization#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.globalization/cs/monthname2.cs#20)]
 [!code-vb[Conceptual.Globalization#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/monthname2.vb#20)]
@@ -273,7 +273,7 @@ Typically, when numbers are displayed in the user interface, you should use the 
 
 - The `ToString(String)` method of any numeric type, which includes a format string as an argument
 
-- The [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature, when it is used with numeric values
+- The [composite formatting](../base-types/composite-formatting.md) feature, when it is used with numeric values
 
 The following example displays the average temperature per month in Paris, France. It first sets the current culture to French (France) before displaying the data, and then sets it to English (United States). In each case, the month names and temperatures are displayed in the format that is appropriate for that culture. Note that the two cultures use different decimal separators in the temperature value. Also note that the example uses the "MMMM" custom date and time format string to display the full month name, and that it allocates the appropriate amount of space for the month name in the result string by determining the length of the longest month name in the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> array.
 
@@ -334,5 +334,5 @@ In general, do not make any assumptions about the values of specific <xref:Syste
 
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
-- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)
+- [Globalization and Localization](index.md)
+- [Best Practices for Using Strings](../base-types/best-practices-strings.md)

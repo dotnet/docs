@@ -28,4 +28,4 @@ This document describes how to unlink a target dataflow block from its source.
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

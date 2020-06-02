@@ -21,11 +21,11 @@ The following code example demonstrates how to navigate the <xref:System.Windows
 ## Example
 
 ```vb
-Me.webBrowser1.Navigate("http://www.microsoft.com")
+Me.webBrowser1.Navigate("https://www.microsoft.com")
 ```
 
 ```csharp
-this.webBrowser1.Navigate("http://www.microsoft.com");
+this.webBrowser1.Navigate("https://www.microsoft.com");
 ```
 
 ## Compiling the Code

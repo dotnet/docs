@@ -38,4 +38,4 @@ You can return a task from a method, and then wait on or continue from that task
 ## See also
 
 - <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+- [Task-based Asynchronous Programming](task-based-asynchronous-programming.md)

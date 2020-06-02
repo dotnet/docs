@@ -73,7 +73,7 @@ else {
 
 Whether there are multiple processors or only one processor available on a system can influence multithreaded architecture. For more information, see [Number of Processors](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/1c9txz50(v%3dvs.71)#number-of-processors).
 
-Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> property to determine the number of processors available at runtime.
+Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> property to determine the number of processors available at run time.
   
 ## General recommendations  
  Consider the following guidelines when using multiple threads:  

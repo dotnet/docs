@@ -25,7 +25,7 @@ ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
 
 ## Remarks
 
-The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](./summary.md). This information is displayed in the Object Browser window.
+The `<remarks>` tag is used to add information about a type, supplementing the information specified with [\<summary>](./summary.md). This information is displayed in the Object Browser window.
 
 Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
 

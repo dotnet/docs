@@ -25,7 +25,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
  Traditional NFA engines are favored by programmers because they offer greater control over string matching than either DFA or POSIX NFA engines. Although, in the worst case, they can run slowly, you can steer them to find matches in linear or polynomial time by using patterns that reduce ambiguities and limit backtracking. In other words, although NFA engines trade performance for power and flexibility, in most cases they offer good to acceptable performance if a regular expression is well written and avoids cases in which backtracking degrades performance exponentially.
 
 > [!NOTE]
-> For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).
+> For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking](backtracking-in-regular-expressions.md).
 
 ## .NET Framework engine capabilities
 
@@ -47,7 +47,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`(\d+)`|Match at least one numeric character, and assign it to the first capturing group.|
     |`\.`|Match a period.|
 
-     For more information about lazy quantifiers, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).
+     For more information about lazy quantifiers, see [Quantifiers](quantifiers-in-regular-expressions.md).
 
 - Positive lookahead: `(?=`*subexpression*`)`. This feature allows the backtracking engine to return to the same spot in the text after matching a subexpression. It is useful for searching throughout the text by verifying multiple patterns that start from the same position. It also allows the engine to verify that a substring exists at the end of the match without including the substring in the matched text. The following example uses positive lookahead to extract the words in a sentence that are not followed by punctuation symbols.
 
@@ -63,7 +63,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`\b`|End the match at a word boundary.|
     |`(?=\P{P})`|Look ahead to determine whether the next character is a punctuation symbol. If it is not, the match succeeds.|
 
-     For more information about positive lookahead assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+     For more information about positive lookahead assertions, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 - Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
 
@@ -79,7 +79,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`(\w+)`|Match one or more word characters.|
     |`\b`|End the match at a word boundary.|
 
-     For more information about negative lookahead assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+     For more information about negative lookahead assertions, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 - Conditional evaluation: `(?(`*expression*`)`*yes*`|`*no*`)` and `(?(`*name*`)`*yes*`|`*no*`)`, where *expression* is a subexpression to match, *name* is the name of a capturing group, *yes* is the string to match if *expression* is matched or *name* is a valid, non-empty captured group, and *no* is the subexpression to match if *expression* is not matched or *name* is not a valid, non-empty captured group. This feature allows the engine to search by using more than one alternate pattern, depending on the result of a previous subexpression match or the result of a zero-width assertion. This allows a more powerful form of backreference that permits, for example, matching a subexpression based on whether a previous subexpression was matched. The regular expression in the following example matches paragraphs that are intended for both public and internal use. Paragraphs intended only for internal use begin with a `<PRIVATE>` tag. The regular expression pattern `^(?<Pvt>\<PRIVATE\>\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$` uses conditional evaluation to assign the contents of paragraphs intended for public and for internal use to separate capturing groups. These paragraphs can then be handled differently.
 
@@ -96,9 +96,9 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |<code>&#124;((\w+\p{P}?\s)+))</code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|
     |`\r?$`|Match the end of a line or the end of the string.|
 
-     For more information about conditional evaluation, see [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md).
+     For more information about conditional evaluation, see [Alternation Constructs](alternation-constructs-in-regular-expressions.md).
 
-- Balancing group definitions: `(?<`*name1*`-`*name2*`>` *subexpression*`)`. This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets. For an example, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+- Balancing group definitions: `(?<`*name1*`-`*name2*`>` *subexpression*`)`. This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets. For an example, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 - Atomic groups: `(?>`*subexpression*`)`. This feature allows the backtracking engine to guarantee that a subexpression matches only the first match found for that subexpression, as if the expression were running independent of its containing expression. If you do not use this construct, backtracking searches from the larger expression can change the behavior of a subexpression. For example, the regular expression `(a+)\w` matches one or more "a" characters, along with a word character that follows the sequence of "a" characters, and assigns the sequence of "a" characters to the first capturing group. However, if the final character of the input string is also an "a", it is matched by the `\w` language element and is not included in the captured group.
 
@@ -110,16 +110,16 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/nonbacktracking1.cs#8)]
      [!code-vb[Conceptual.RegularExpressions.Design#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/nonbacktracking1.vb#8)]
 
-     For more information about atomic groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+     For more information about atomic groups, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 - Right-to-left matching, which is specified by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option to a <xref:System.Text.RegularExpressions.Regex> class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For a description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/rtl1.cs#6)]
      [!code-vb[Conceptual.RegularExpressions.Design#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/rtl1.vb#6)]
 
-     For more information about right-to-left matching, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).
+     For more information about right-to-left matching, see [Regular Expression Options](regular-expression-options.md).
 
-- Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate email addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).
+- Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate email addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](how-to-verify-that-strings-are-in-valid-email-format.md).
 
      [!code-csharp[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookbehind1.cs#5)]
      [!code-vb[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookbehind1.vb#5)]
@@ -134,18 +134,18 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`(?<=[A-Z0-9])`|Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)|
     |`$`|End the match at the end of the string.|
 
-     For more information about positive and negative lookbehind, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+     For more information about positive and negative lookbehind, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 ## Related articles
 
 |Title|Description|
 |-----------|-----------------|
-|[Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)|Provides information about how regular expression backtracking branches to find alternative matches.|
-|[Compilation and Reuse](../../../docs/standard/base-types/compilation-and-reuse-in-regular-expressions.md)|Provides information about compiling and reusing regular expressions to increase performance.|
-|[Thread Safety](../../../docs/standard/base-types/thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
-|[.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
-|[The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
-|[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
+|[Backtracking](backtracking-in-regular-expressions.md)|Provides information about how regular expression backtracking branches to find alternative matches.|
+|[Compilation and Reuse](compilation-and-reuse-in-regular-expressions.md)|Provides information about compiling and reusing regular expressions to increase performance.|
+|[Thread Safety](thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
+|[.NET Framework Regular Expressions](regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
+|[The Regular Expression Object Model](the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
+|[Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
 
 ## Reference
 

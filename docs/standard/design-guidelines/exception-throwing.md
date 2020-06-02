@@ -27,7 +27,7 @@ Exception-throwing guidelines described in this section require a good definitio
 
  The member used to check preconditions of another member is often referred to as a tester, and the member that actually does the work is called a doer.
 
- There are cases when the Tester-Doer Pattern can have an unacceptable performance overhead. In such cases, the so-called Try-Parse Pattern should be considered (see [Exceptions and Performance](../../../docs/standard/design-guidelines/exceptions-and-performance.md) for more information).
+ There are cases when the Tester-Doer Pattern can have an unacceptable performance overhead. In such cases, the so-called Try-Parse Pattern should be considered (see [Exceptions and Performance](exceptions-and-performance.md) for more information).
 
  ✔️ CONSIDER the performance implications of throwing exceptions. Throw rates above 100 per second are likely to noticeably impact the performance of most applications.
 
@@ -59,5 +59,5 @@ Exception-throwing guidelines described in this section require a good definitio
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Design Guidelines for Exceptions](../../../docs/standard/design-guidelines/exceptions.md)
+- [Framework Design Guidelines](index.md)
+- [Design Guidelines for Exceptions](exceptions.md)

@@ -30,5 +30,5 @@ An assembly is the unit of deployment and identity for managed code programs. Al
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

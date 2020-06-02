@@ -94,6 +94,6 @@ This section describes general naming conventions that relate to word choice, gu
 
 ## See also
 
-- [Framework design guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework design guidelines](index.md)
+- [Naming guidelines](naming-guidelines.md)
 - [.NET naming conventions for EditorConfig](/visualstudio/ide/editorconfig-naming-conventions)

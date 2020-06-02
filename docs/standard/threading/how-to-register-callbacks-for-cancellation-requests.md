@@ -25,4 +25,4 @@ The following example shows how to register a delegate that will be invoked when
   
 ## See also
 
-- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Cancellation in Managed Threads](cancellation-in-managed-threads.md)

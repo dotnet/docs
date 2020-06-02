@@ -1,5 +1,6 @@
 ---
 title: "Authentication in SQL Server"
+description: Learn about authentication with SQL Server for ADO.NET, including Windows authentication mode and mixed mode.
 ms.date: "05/22/2018"
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
 ---

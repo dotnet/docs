@@ -90,4 +90,4 @@ If you are parsing a sentence into individual words, you might end up with words
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Basic String Operations](basic-string-operations.md)

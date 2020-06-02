@@ -24,4 +24,4 @@ ms.assetid: 62ee2e68-0bdd-4869-afc9-f0a57a11ae01
   
 ## See also
 
-- [SpinLock](../../../docs/standard/threading/spinlock.md)
+- [SpinLock](spinlock.md)

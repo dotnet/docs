@@ -1,5 +1,6 @@
 ---
 title: "Comparing GUID and uniqueidentifier Values"
+description: Learn how to create and compare GUID values in the .NET Framework Data Provider for SQL Server, which are represented by the uniqueidentifier data type.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

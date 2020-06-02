@@ -12,7 +12,7 @@ ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
 ---
 # Parameter design
 
-This section provides broad guidelines on parameter design, including sections with guidelines for checking arguments. In addition, you should refer to the guidelines described in [Naming Parameters](../../../docs/standard/design-guidelines/naming-parameters.md).
+This section provides broad guidelines on parameter design, including sections with guidelines for checking arguments. In addition, you should refer to the guidelines described in [Naming Parameters](naming-parameters.md).
 
  ✔️ DO use the least derived parameter type that provides the functionality required by the member.
 
@@ -26,7 +26,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  Pointers and multidimensional arrays are relatively difficult to use properly. In almost all cases, APIs can be redesigned to avoid taking these types as parameters.
 
- ✔️ DO place all `out` parameters following all of the by-value and `ref` parameters (excluding parameter arrays), even if it results in an inconsistency in parameter ordering between overloads (see [Member Overloading](../../../docs/standard/design-guidelines/member-overloading.md)).
+ ✔️ DO place all `out` parameters following all of the by-value and `ref` parameters (excluding parameter arrays), even if it results in an inconsistency in parameter ordering between overloads (see [Member Overloading](member-overloading.md)).
 
  The `out` parameters can be seen as extra return values, and grouping them together makes the method signature easier to understand.
 
@@ -39,7 +39,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  ❌ DO NOT use Booleans unless you are absolutely sure there will never be a need for more than two values.
 
- Enums give you some room for future addition of values, but you should be aware of all the implications of adding values to enums, which are described in [Enum Design](../../../docs/standard/design-guidelines/enum.md).
+ Enums give you some room for future addition of values, but you should be aware of all the implications of adding values to enums, which are described in [Enum Design](enum.md).
 
  ✔️ CONSIDER using Booleans for constructor parameters that are truly two-state values and are simply used to initialize Boolean properties.
 
@@ -151,5 +151,5 @@ public class String {
 
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Member Design Guidelines](member.md)
+- [Framework Design Guidelines](index.md)

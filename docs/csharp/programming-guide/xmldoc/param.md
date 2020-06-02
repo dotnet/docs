@@ -29,9 +29,9 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 
 ## Remarks
 
-The \<param> tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple \<param> tags.
+The `<param>` tag should be used in the comment for a method declaration to describe one of the parameters for the method. To document multiple parameters, use multiple `<param>` tags.
 
-The text for the \<param> tag will be displayed in IntelliSense, the Object Browser, and in the Code Comment Web Report.
+The text for the `<param>` tag is displayed in IntelliSense, the Object Browser, and the Code Comment Web Report.
 
 Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
 

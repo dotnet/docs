@@ -1,5 +1,6 @@
 ---
 title: "Method-Based Query Syntax Examples: Join Operators"
+description: Use these examples to learn how to use the Join and GroupJoin methods to query a model using method-based query syntax in LINQ to Entities.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

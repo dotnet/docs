@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Table-Valued User-Defined Functions"
+description: Use these examples to learn how to create a table-valued function, which returns a single rowset. Use such a table-valued function just like a table. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

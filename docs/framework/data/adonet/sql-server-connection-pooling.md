@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Connection Pooling"
+description: Learn how ADO.NET minimizes the cost of opening connections by using SQL Server connection pooling, which reduces overhead for new connections.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

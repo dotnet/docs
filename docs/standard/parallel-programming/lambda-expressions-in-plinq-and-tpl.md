@@ -35,4 +35,4 @@ The following example for the <xref:System.Threading.Tasks.Parallel.ForEach%60%6
 
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- [Parallel Programming](index.md)

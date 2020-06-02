@@ -75,6 +75,9 @@ This section describes the unmanaged structures that the debugging API uses.
  [CorDebugGuidToTypeMapping Structure](cordebugguidtotypemapping-structure.md)
  Maps a Windows Runtime GUID to its corresponding [ICorDebugType](icordebugtype-interface.md) object.
 
+ [DacpCCWData Structure](dacpccwdata-structure.md)
+ Defines data associated with a [Com Callable Wrapper](../../../standard/native-interop/com-callable-wrapper.md).
+
  [DacpGetModuleAddress Structure](dacpgetmoduleaddress-structure.md)
  Defines the container for a module address request.
 

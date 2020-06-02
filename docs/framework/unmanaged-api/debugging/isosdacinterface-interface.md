@@ -1,6 +1,6 @@
 ---
 title: "ISOSDacInterface Interface"
-ms.date: "02/01/2019"
+ms.date: "06/02/2020"
 api.name:
   - "ISOSDacInterface Interface"
 api.location:
@@ -13,8 +13,8 @@ helpviewer.keywords:
   - "ISOSDacInterface Interface [.NET Framework debugging]"
 topic_type:
   - "apiref"
-author: "cshung"
-ms.author: "andrewau"
+author: "chuckries"
+ms.author: "chuckr"
 ---
 # ISOSDacInterface Interface
 
@@ -26,6 +26,7 @@ Provides helper methods to access data from `SOS`.
 
 | Method                                                                                                               | Description                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [GetCCWData](isosdacinterface-getccwdata-method.md) | Gets the data for the given Com Callable Wrapper pointer. |
 | [GetMethodDescData](isosdacinterface-getmethoddescdata-method.md) | Gets the data for the given MethodDesc pointer. |
 | [GetMethodDescPtrFromIP](isosdacinterface-getmethoddescptrfromip-method.md) | Retrieves the pointer of the MethodDesc corresponding the method containing the given native instruction address. |
 | [GetModuleData](isosdacinterface-getmoduledata-method.md)| Fetches the data corresponding to the module loaded at a given address. |

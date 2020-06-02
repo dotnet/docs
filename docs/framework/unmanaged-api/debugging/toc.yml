@@ -1415,6 +1415,8 @@
     - name: ISOSDacInterface Interface
       href: isosdacinterface-interface.md
       items:
+      - name: GetCCWData
+        href: isosdacinterface-getccwdata-method.md
       - name: GetMethodDescData
         href: isosdacinterface-getmethoddescdata-method.md
       - name: GetMethodDescPtrFromIP
@@ -1608,6 +1610,8 @@
       href: cordebugexceptionobjectstackframe-structure.md
     - name: CorDebugGuidToTypeMapping Structure
       href: cordebugguidtotypemapping-structure.md
+      name: DacpCCWData Structure
+      href: dacpccwdata-structure.md
     - name: DacpGetModuleAddress Structure
       href: dacpgetmoduleaddress-structure.md
       items:

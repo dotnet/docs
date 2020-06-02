@@ -1,5 +1,6 @@
 ---
 title: "Table-Valued Parameters"
+description: Learn how to marshal multiple rows of data from a client application to SQL Server by using table-valued parameters.
 ms.date: "10/12/2018"
 dev_langs: 
   - "csharp"
@@ -33,7 +34,7 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
 - Use the `bcp` utility program or the <xref:System.Data.SqlClient.SqlBulkCopy> object to load many rows of data into a table. Although this technique is very efficient, it does not support server-side processing unless the data is loaded into a temporary table or table variable.  
   
 ## Creating Table-Valued Parameter Types  
- Table-valued parameters are based on strongly-typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
+ Table-valued parameters are based on strongly typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
   
  The following statement creates a table type named CategoryTableType that consists of CategoryID and CategoryName columns:  
   

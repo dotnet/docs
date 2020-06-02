@@ -177,11 +177,11 @@ Microsoft Windows applications often depend on files that contain non-executable
   
 - Your application uses large data files, such as audio and video, and you only want users to download them if they choose to.  
   
- It is possible to load these types of files by using traditional URI schemes, such as the file:/// and http:// schemes.  
+ It is possible to load these types of files by using traditional URI schemes, such as the `file:///` and `http://` schemes.  
   
  [!code-xaml[WPFAssemblyResourcesSnippets#AbsolutePackUriFileHttpReferenceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/AbsolutePackUriPage.xaml#absolutepackurifilehttpreferencexaml)]  
   
- However, the file:/// and http:// schemes require your application to have full trust. If your application is a XAML browser application (XBAP) that was launched from the Internet or intranet, and it requests only the set of permissions that are allowed for applications launched from those locations, loose files can only be loaded from the application's site of origin (launch location). Such files are known as *site of origin* files.  
+ However, the `file:///` and `http://` schemes require your application to have full trust. If your application is a XAML browser application (XBAP) that was launched from the Internet or intranet, and it requests only the set of permissions that are allowed for applications launched from those locations, loose files can only be loaded from the application's site of origin (launch location). Such files are known as *site of origin* files.  
   
  Site of origin files are the only option for partial trust applications, although are not limited to partial trust applications. Full trust applications may still need to load application data files that they do not know about at build time; while full trust applications could use file:///, it is likely that the application data files will be installed in the same folder as, or a subfolder of, the application assembly. In this case, using site of origin referencing is easier than using file:///, because using file:/// requires you to work out the full path the file.  
   

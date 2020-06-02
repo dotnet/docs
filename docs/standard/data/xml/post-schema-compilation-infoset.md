@@ -34,4 +34,4 @@ The [World Wide Web Consortium (W3C) XML Schema Recommendation](https://www.w3.o
   
 ## See also
 
-- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
+- [XML Schema Object Model (SOM)](xml-schema-object-model-som.md)

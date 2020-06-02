@@ -21,7 +21,7 @@ You can optimize the performance of applications that make extensive use of regu
   
  If a <xref:System.Text.RegularExpressions.Regex> object is constructed with the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option, it compiles the regular expression to explicit MSIL code instead of high-level regular expression internal instructions. This allows .NET's just-in-time (JIT) compiler to convert the expression to native machine code for higher performance.  The cost of constructing the <xref:System.Text.RegularExpressions.Regex> object may be higher, but the cost of performing matches with it is likely to be much smaller.
 
- An alternative is to use precompiled regular expressions. You can compile all of your expressions into a reusable DLL by using the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method. This avoids the need to compile at runtime while still benefiting from the speed of compiled regular expressions.  
+ An alternative is to use precompiled regular expressions. You can compile all of your expressions into a reusable DLL by using the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method. This avoids the need to compile at run time while still benefiting from the speed of compiled regular expressions.  
   
 ## The Regular Expressions Cache  
  To improve performance, the regular expression engine maintains an application-wide cache of compiled regular expressions. The cache stores regular expression patterns that are used only in static method calls. (Regular expression patterns supplied to instance methods are not cached.) This avoids the need to reparse an expression into high-level byte code each time it is used.  
@@ -38,4 +38,4 @@ You can optimize the performance of applications that make extensive use of regu
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

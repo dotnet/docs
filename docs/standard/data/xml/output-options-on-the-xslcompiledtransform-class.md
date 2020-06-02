@@ -51,4 +51,4 @@ This topic discusses the available XSLT output options. You can specify output o
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Transformations](xslt-transformations.md)

@@ -1,5 +1,6 @@
 ---
 title: "Connection String Syntax"
+description: Learn about syntax of connection strings in ADO.NET. The syntax for each provider is documented in its ConnectionString property.
 ms.date: "05/22/2018"
 ms.assetid: 0977aeee-04d1-4cce-bbed-750c77fce06e
 ---

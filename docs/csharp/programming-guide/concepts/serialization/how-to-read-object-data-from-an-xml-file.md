@@ -52,7 +52,7 @@ Replace the file name "c:\temp\SerializationOverview.xml" with the name of the f
   
 - The file does not exist (<xref:System.IO.IOException>).  
   
-## .NET Framework Security  
+## .NET Security  
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See also

@@ -25,5 +25,5 @@ This is an example of chunk partitioning, with each chunk consisting of one elem
   
 ## See also
 
-* [Custom Partitioners for PLINQ and TPL](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)
-* [How to: Implement a Partitioner for Static Partitioning](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)
+* [Custom Partitioners for PLINQ and TPL](custom-partitioners-for-plinq-and-tpl.md)
+* [How to: Implement a Partitioner for Static Partitioning](how-to-implement-a-partitioner-for-static-partitioning.md)

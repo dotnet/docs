@@ -47,6 +47,6 @@ This example requires:
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-- [Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
-- [How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md)
+- [Dates, times, and time zones](index.md)
+- [Finding the time zones defined on a local system](finding-the-time-zones-on-local-system.md)
+- [How to: Instantiate a TimeZoneInfo object](instantiate-time-zone-info.md)

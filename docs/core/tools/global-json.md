@@ -119,7 +119,7 @@ The following example shows how to use the exact specified version:
 }
 ```
 
-The following example shows how to use the latest feature band and patch version installed of a specific major and minor version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any any later 3.1.xxx version, such as 3.1.103 or 3.1.200.
+The following example shows how to use the latest feature band and patch version installed of a specific major and minor version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any later 3.1.xxx version, such as 3.1.103 or 3.1.200.
 
 ```json
 {
@@ -130,7 +130,7 @@ The following example shows how to use the latest feature band and patch version
 }
 ```
 
-The following example shows how to use the highest patch version installed of a specific version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any any later 3.1.1xx version, such as 3.1.103 or 3.1.199.
+The following example shows how to use the highest patch version installed of a specific version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any later 3.1.1xx version, such as 3.1.103 or 3.1.199.
 
 ```json
 {

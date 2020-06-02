@@ -204,4 +204,4 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](cryptographic-services.md)

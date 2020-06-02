@@ -84,7 +84,7 @@ Now that you have the Databricks CLI installed, you need to set up authenticatio
 
 1. Run the Databricks CLI command `databricks configure --token`.
 
-2. After running the configure command, you are prompted to enter a host. Your host URL uses the format: **https://<\Location>.azuredatabricks.net**. For instance, if you selected **eastus2** during Azure Databricks Service creation, the host would be **https://eastus2.azuredatabricks.net**.
+2. After running the configure command, you are prompted to enter a host. Your host URL uses the format: `https://<Location>.azuredatabricks.net`. For instance, if you selected **eastus2** during Azure Databricks Service creation, the host would be `https://eastus2.azuredatabricks.net`.
 
 3. After entering your host, you are prompted to enter a token. In the Azure portal, select **Launch Workspace** to launch your Azure Databricks workspace.
 

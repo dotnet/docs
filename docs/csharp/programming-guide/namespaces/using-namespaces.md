@@ -10,7 +10,7 @@ ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
 ---
 # Using namespaces (C# Programming Guide)
 
-Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Framework classes use namespaces to organize its many classes. Secondly, declaring your own namespaces can help control the scope of class and method names in larger programming projects.  
+Namespaces are heavily used within C# programs in two ways. Firstly, the .NET classes use namespaces to organize its many classes. Secondly, declaring your own namespaces can help control the scope of class and method names in larger programming projects.  
   
 ## Accessing namespaces
 

@@ -148,7 +148,7 @@ Once your cluster is running and you've uploaded your files to Azure, you run th
    |---------|---------|
    | Script type |Custom|
    | Name | Install Worker|
-   | Bash script URI |https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh </br> To confirm this URI, right-click on install-worker.sh in Azure Storage Explorer and select Properties. |
+   | Bash script URI |`https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh` </br> To confirm this URI, right-click on install-worker.sh in Azure Storage Explorer and select Properties. |
    | Node type(s)| Worker|
    | Parameters | azure </br> wasbs://mycontainer@myStorageAccount.blob.core.windows.net/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz </br> /usr/local/bin
 

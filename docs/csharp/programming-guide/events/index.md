@@ -32,7 +32,7 @@ In a typical C# Windows Forms or Web application, you subscribe to events raised
   
 - [How to subscribe to and unsubscribe from events](./how-to-subscribe-to-and-unsubscribe-from-events.md)
 
-- [How to publish events that conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [How to publish events that conform to .NET Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
 
 - [How to raise base class events in derived classes](./how-to-raise-base-class-events-in-derived-classes.md)
 

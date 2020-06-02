@@ -35,7 +35,7 @@ The .NET Framework allows strings to be created using simple assignment, and als
 |<xref:System.String.CopyTo%2A?displayProperty=nameWithType>|Copies specified characters in a string into a specified position in an array of characters.|  
   
 ### Format  
- You can use the **String.Format** method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an **Int32** value and a **DateTime** value to the user, you can easily construct a string to represent these values using the **Format** method. For information about formatting conventions used with this method, see the section on [composite formatting](../../../docs/standard/base-types/composite-formatting.md).  
+ You can use the **String.Format** method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an **Int32** value and a **DateTime** value to the user, you can easily construct a string to represent these values using the **Format** method. For information about formatting conventions used with this method, see the section on [composite formatting](composite-formatting.md).  
   
  The following example uses the **Format** method to create a string that uses an integer variable.  
   
@@ -74,5 +74,5 @@ The .NET Framework allows strings to be created using simple assignment, and als
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
-- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)
+- [Basic String Operations](basic-string-operations.md)
+- [Composite Formatting](composite-formatting.md)

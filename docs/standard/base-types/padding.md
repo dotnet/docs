@@ -43,4 +43,4 @@ Use one of the following <xref:System.String> methods to create a new string tha
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Basic String Operations](basic-string-operations.md)

@@ -25,7 +25,7 @@ This topic walks through the steps to create an endpoint secured by a Secure Soc
 
 3. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> property of the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class to `true`.
 
-4. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> property to an appropriate URL. Note that if you specify an absolute address, the URL must begin with the scheme "https://". If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
+4. Set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> property to an appropriate URL. Note that if you specify an absolute address, the URL must begin with the scheme `https://`. If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
 
 5. Add the instance to the behaviors collection that the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property of the <xref:System.ServiceModel.Description.ServiceDescription> class returns, as shown in the following code.
 
@@ -46,7 +46,7 @@ This topic walks through the steps to create an endpoint secured by a Secure Soc
 
 6. Set the `httpsGetEnabled` attribute of the `<serviceMetadata>` element to `true`.
 
-7. Set the `httpsGetUrl` attribute of the `<serviceMetadata>` element to an appropriate value. Note that if you specify an absolute address, the URL must begin with the scheme "https://". If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
+7. Set the `httpsGetUrl` attribute of the `<serviceMetadata>` element to an appropriate value. Note that if you specify an absolute address, the URL must begin with the scheme `https://`. If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.
 
 8. To use the behavior with a service, set the `behaviorConfiguration` attribute of the [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) element to the value of the name attribute of the behavior element. The following configuration code shows a complete example.
 

@@ -37,7 +37,7 @@ This topic provides an overview of generic delegates for conversions, search pre
 
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
-- [Generics](../../../docs/standard/generics/index.md)
-- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)
-- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)
-- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)
+- [Generics](index.md)
+- [Generic Collections in the .NET Framework](collections.md)
+- [Generic Interfaces](interfaces.md)
+- [Covariance and Contravariance](covariance-and-contravariance.md)

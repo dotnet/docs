@@ -359,13 +359,13 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
   <https://www.tonytruong.net/domain-events-pattern-example/>
 
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
-  <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
+  <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 
 - **Udi Dahan. Domain Events – Take 2** \
-  <http://udidahan.com/2008/08/25/domain-events-take-2/>
+  <https://udidahan.com/2008/08/25/domain-events-take-2/>
 
 - **Udi Dahan. Domain Events – Salvation** \
-  <http://udidahan.com/2009/06/14/domain-events-salvation/>
+  <https://udidahan.com/2009/06/14/domain-events-salvation/>
 
 - **Jan Kronquist. Don't publish Domain Events, return them!** \
   <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>

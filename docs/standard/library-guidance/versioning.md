@@ -5,7 +5,7 @@ ms.date: 12/10/2018
 ---
 # Versioning
 
-A software library is rarely complete in version 1.0. Good libraries evolve over time, adding features, fixing bugs and improving performance. It is important that you can release new versions of a .NET library, providing additional value with each version, without breaking existing users.
+A software library is rarely complete in version 1.0. Good libraries evolve over time, adding features, fixing bugs, and improving performance. It is important that you can release new versions of a .NET library, providing additional value with each version, without breaking existing users.
 
 ## Breaking changes
 
@@ -37,15 +37,15 @@ Because the NuGet package version is the most visible version to developers, it'
 
 ### Assembly version
 
-The assembly version is what the CLR uses at runtime to select which version of an assembly to load. Selecting an assembly using versioning only applies to assemblies with a strong name.
+The assembly version is what the CLR uses at run time to select which version of an assembly to load. Selecting an assembly using versioning only applies to assemblies with a strong name.
 
 ```xml
 <AssemblyVersion>1.0.0.0</AssemblyVersion>
 ```
 
-The Windows .NET Framework CLR demands an exact match to load a strong named assembly. For example, `Libary1, Version=1.0.0.0` was compiled with a reference to `Newtonsoft.Json, Version=11.0.0.0`. The .NET Framework will only load that exact version `11.0.0.0`. To load a different version at runtime, a binding redirect must be added to the .NET application's config file.
+The .NET Framework CLR demands an exact match to load a strong-named assembly. For example, `Libary1, Version=1.0.0.0` was compiled with a reference to `Newtonsoft.Json, Version=11.0.0.0`. .NET Framework will only load that exact version `11.0.0.0`. To load a different version at run time, a binding redirect must be added to the .NET application's config file.
 
-Strong naming combined with assembly version enables [strict assembly version loading](../assembly/versioning.md). While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
+Strong naming combined with assembly version enables [strict assembly version loading](../assembly/versioning.md). While strong naming a library has a number of benefits, it often results in run-time exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) in `app.config` or `web.config` to be fixed. In .NET Core, assembly loading is more relaxed. The .NET Core runtime automatically loads assemblies with a higher version at run time.
 
 ✔️ CONSIDER only including a major version in the AssemblyVersion.
 
@@ -61,7 +61,7 @@ Strong naming combined with assembly version enables [strict assembly version lo
 
 ### Assembly file version
 
-The assembly file version is used to display a file version in Windows and has no effect on runtime behavior. Setting this version is optional. It's visible in the File Properties dialog in Windows Explorer:
+The assembly file version is used to display a file version in Windows and has no effect on run-time behavior. Setting this version is optional. It's visible in the File Properties dialog in Windows Explorer:
 
 ```xml
 <FileVersion>11.0.2.21924</FileVersion>

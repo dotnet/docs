@@ -99,7 +99,7 @@ The use of asynchronous communication is explained with additional details later
   <https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction>
 
 - **Udi Dahan. Service Oriented Composition** \
-  <http://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
+  <https://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
 
 >[!div class="step-by-step"]
 >[Previous](logical-versus-physical-architecture.md)

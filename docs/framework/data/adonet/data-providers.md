@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Data Providers"
+description: Learn how a .NET Framework data provider is used to connect to a database, run commands, and retrieve results in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

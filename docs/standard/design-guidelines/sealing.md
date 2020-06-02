@@ -16,17 +16,17 @@ One of the features of object-oriented frameworks is that developers can extend 
 
  ❌ DO NOT seal classes without having a good reason to do so.
 
- Sealing a class because you cannot think of an extensibility scenario is not a good reason. Framework users like to inherit from classes for various nonobvious reasons, like adding convenience members. See [Unsealed Classes](../../../docs/standard/design-guidelines/unsealed-classes.md) for examples of nonobvious reasons users want to inherit from a type.
+ Sealing a class because you cannot think of an extensibility scenario is not a good reason. Framework users like to inherit from classes for various nonobvious reasons, like adding convenience members. See [Unsealed Classes](unsealed-classes.md) for examples of nonobvious reasons users want to inherit from a type.
 
  Good reasons for sealing a class include the following:
 
-- The class is a static class. See [Static Class Design](../../../docs/standard/design-guidelines/static-class.md).
+- The class is a static class. See [Static Class Design](static-class.md).
 
 - The class stores security-sensitive secrets in inherited protected members.
 
 - The class inherits many virtual members and the cost of sealing them individually would outweigh the benefits of leaving the class unsealed.
 
-- The class is an attribute that requires very fast runtime look-up. Sealed attributes have slightly higher performance levels than unsealed ones. See [Attributes](../../../docs/standard/design-guidelines/attributes.md).
+- The class is an attribute that requires very fast runtime look-up. Sealed attributes have slightly higher performance levels than unsealed ones. See [Attributes](attributes.md).
 
  ❌ DO NOT declare protected or virtual members on sealed types.
 
@@ -34,7 +34,7 @@ One of the features of object-oriented frameworks is that developers can extend 
 
  ✔️ CONSIDER sealing members that you override.
 
- Problems that can result from introducing virtual members (discussed in [Virtual Members](../../../docs/standard/design-guidelines/virtual-members.md)) apply to overrides as well, although to a slightly lesser degree. Sealing an override shields you from these problems starting from that point in the inheritance hierarchy.
+ Problems that can result from introducing virtual members (discussed in [Virtual Members](virtual-members.md)) apply to overrides as well, although to a slightly lesser degree. Sealing an override shields you from these problems starting from that point in the inheritance hierarchy.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 
@@ -42,6 +42,6 @@ One of the features of object-oriented frameworks is that developers can extend 
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
-- [Unsealed Classes](../../../docs/standard/design-guidelines/unsealed-classes.md)
+- [Framework Design Guidelines](index.md)
+- [Designing for Extensibility](designing-for-extensibility.md)
+- [Unsealed Classes](unsealed-classes.md)

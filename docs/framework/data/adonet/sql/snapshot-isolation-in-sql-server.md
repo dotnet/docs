@@ -1,5 +1,6 @@
 ---
 title: "Snapshot Isolation in SQL Server"
+description: Read an overview of snapshot isolation and row versioning in SQL Server, and learn how to manage concurrency with isolation levels.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

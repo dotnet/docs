@@ -57,5 +57,5 @@ The .NET Framework 4 introduces five new collection types that are specially des
 ## See also
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
-- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+- [Thread-Safe Collections](index.md)
+- [Parallel Programming](../../parallel-programming/index.md)

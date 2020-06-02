@@ -59,7 +59,7 @@ If a serialized class contains references to objects of other classes that are m
 
 Binary and XML serialization can be performed in two ways, basic and custom.
 
-Basic serialization uses the .NET Framework to automatically serialize the object. The only requirement is that the class has the <xref:System.SerializableAttribute> attribute applied. The <xref:System.NonSerializedAttribute> can be used to keep specific fields from being serialized.
+Basic serialization uses .NET to automatically serialize the object. The only requirement is that the class has the <xref:System.SerializableAttribute> attribute applied. The <xref:System.NonSerializedAttribute> can be used to keep specific fields from being serialized.
 
 When you use basic serialization, the versioning of objects may create problems. You would use custom serialization when versioning issues are important. Basic serialization is the easiest way to perform serialization, but it does not provide much control over the process.
 

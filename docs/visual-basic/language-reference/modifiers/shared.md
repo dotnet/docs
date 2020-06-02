@@ -83,9 +83,9 @@ The `Shared` modifier can be used in these contexts:
 - [Dim Statement](../statements/dim-statement.md)
 - [Event Statement](../statements/event-statement.md)
 - [Function Statement](../statements/function-statement.md)
-- [Operator Statement](../operator-statement.md)
-- [Property Statement](../property-statement.md)
-- [Sub Statement](../sub-statement.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [Property Statement](../statements/property-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
   
 ## See also
 

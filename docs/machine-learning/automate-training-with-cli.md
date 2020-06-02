@@ -33,7 +33,7 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 - `recommendation`
 - Future: other machine learning tasks such as `image classification`, `ranking`, `anomaly-detection`, `clustering`
 
-Example of usage:
+Example of usage (classification scenario):
 
 ```console
 mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
@@ -45,7 +45,7 @@ You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Win
 
 ## Output assets generated
 
-The CLI `auto-train` command generates the following assets in the output folder:
+The ML task commands in the CLI generate the following assets in the output folder:
 
 - A serialized model .zip ("best model") ready to use for running predictions.
 - C# solution with:

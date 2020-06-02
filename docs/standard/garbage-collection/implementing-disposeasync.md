@@ -1,7 +1,7 @@
 ---
 title: Implement a DisposeAsync method
 description: 
-ms.date: 05/29/2020
+ms.date: 06/02/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 The <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface was introduced as part of C# 8.0. You implement the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method when you need to perform resource cleanup, just as you would when [implementing a Dispose method](implementing-dispose.md). One of the key differences however, is that this implementation allows for asynchronous cleanup operations. The <xref:System.IAsyncDisposable.DisposeAsync> returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation.
 
-It is typical that when implementing the <xref:System.IAsyncDisposable> interface, classes will also implement the <xref:System.IDisposable> interface. All of the guidance for implementing the dispose pattern applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
+It is typical that when implementing the <xref:System.IAsyncDisposable> interface, classes will also implement the <xref:System.IDisposable> interface. A good implementation pattern of the <xref:System.IAsyncDisposable> interface is to be prepared for either synchronous, or asynchronous dispose. All of the guidance for implementing the dispose pattern applies to the asynchronous implementation. This article assumes that you're already familiar with how to [implement a Dispose method](implementing-dispose.md).
 
 ## DisposeAsync() and DisposeAsyncCore()
 
@@ -49,7 +49,7 @@ public async ValueTask DisposeAsync()
 ```
 
 > [!NOTE]
-> One primary difference in the asynchronous version of the dispose pattern, is that the call from `DisposeAsync()` to the `Dispose(bool)` overload method is given `false` as an argument - whereas the call from <xref:System.IDisposable.Dispose?displayProperty=nameWithType> passes `true`. This is intended to help ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked.
+> One primary difference in the async dispose pattern compared to the dispose pattern, is that the call from <xref:System.IAsyncDisposable.DisposeAsync> to the `Dispose(bool)` overload method is given `false` as an argument. When implementing the <xref:System.IDisposable.Dispose?displayProperty=nameWithType> method, however; `true` is passed instead. This helps ensure functional equivalence with the synchronous dispose pattern, and further ensures that finalizer code paths still get invoked. In other words, the `DisposeAsyncCore()` method will dispose of managed resources asynchronously, so you don't want to dispose of them synchronously as well. Therefore, call `Dispose(false)` instead of `Dispose(true)`.
 
 ## Implement the async dispose pattern
 

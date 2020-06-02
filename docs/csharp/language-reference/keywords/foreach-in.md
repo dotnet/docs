@@ -1,6 +1,6 @@
 ---
 title: C# foreach statement
-ms.date: 05/17/2019
+ms.date: 06/02/2020
 f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -31,19 +31,19 @@ If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceExc
 
 The following example shows usage of the `foreach` statement with an instance of the <xref:System.Collections.Generic.List%601> type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface:
 
-[!code-csharp-interactive[list example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#1)]
+[!code-csharp-interactive[list example](snippets/IterationKeywordsExamples.cs#1)]
 
 The next example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
-[!code-csharp[span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#2)]
+[!code-csharp[span example](snippets/IterationKeywordsExamples.cs#2)]
 
 The following example uses a `ref` iteration variable to set the value of each item in a stackalloc array. The `ref readonly` version iterates the collection to print all the values. The `readonly` declaration uses an implicit local variable declaration. Implicit variable declarations can be used with either `ref` or `ref readonly` declarations, as can explicitly typed variable declarations.
 
-[!code-csharp[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#RefSpan)]
+[!code-csharp[ref span example](snippets/IterationKeywordsExamples.cs#RefSpan)]
 
 The following example uses `await foreach` to iterate a collection that generates each element asynchronously:
 
-[!code-csharp[ref span example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#AwaitForeach)]
+[!code-csharp[ref span example](snippets/IterationKeywordsExamples.cs#AwaitForeach)]
 
 ## C# language specification
 

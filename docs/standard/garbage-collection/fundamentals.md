@@ -194,7 +194,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-![When a thread triggers a Garbage Collection](./media/gc-triggered.png)
+![When a thread triggers a Garbage Collection](media/gc-triggered.png)
 
 ## Unmanaged resources
 

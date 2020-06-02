@@ -28,15 +28,15 @@ You can generate those assets from your own datasets without coding by yourself,
 
 Currently, the ML Tasks supported by the ML.NET CLI are:
 
-- `binary-classification`
-- `multiclass-classification`
+- `classification` (binary and multi-class)
 - `regression`
-- Future: other machine learning tasks such as `recommendation`, `ranking`, `anomaly-detection`, `clustering`
+- `recommendation`
+- Future: other machine learning tasks such as `image classification`, `ranking`, `anomaly-detection`, `clustering`
 
 Example of usage:
 
 ```console
-mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
 ```
 
 ![image](media/automate-training-with-cli/cli-model-generation.gif)

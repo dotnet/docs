@@ -30,4 +30,4 @@ The following example uses the static <xref:System.Text.RegularExpressions.Regex
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

@@ -18,7 +18,7 @@ The TPL Dataflow Library provides the <xref:System.Threading.Tasks.Dataflow.Batc
 
 ## Prerequisites
 
-1. Read the Join Blocks section in the [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) document before you start this walkthrough.
+1. Read the Join Blocks section in the [Dataflow](dataflow-task-parallel-library.md) document before you start this walkthrough.
 
 2. Ensure that you have a copy of the Northwind database, Northwind.sdf, available on your computer. This file is typically located in the folder %Program Files%\Microsoft SQL Server Compact Edition\v3.5\Samples\\.
 
@@ -125,4 +125,4 @@ The following example shows the complete code. The `Main` method compares the ti
 
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

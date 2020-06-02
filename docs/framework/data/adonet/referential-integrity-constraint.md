@@ -1,5 +1,6 @@
 ---
 title: "referential integrity constraint"
+description: Learn about referential integrity constraints in the Entity Data Model, which ensure that valid associations always exist between entity types.
 ms.date: "03/30/2017"
 ms.assetid: 3d3ba44b-4302-40d8-a7a9-62932e0395e5
 ---

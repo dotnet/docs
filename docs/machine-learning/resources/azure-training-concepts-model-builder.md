@@ -2,7 +2,7 @@
 title: Model Builder Azure Training Resources
 description: A guide of resources for Azure Machine Learning
 ms.topic: reference
-ms.date: 02/27/2020
+ms.date: 06/01/2020
 ms.author: luquinta
 author: luisquintanilla
 ---
@@ -44,6 +44,10 @@ To create an Azure Machine Learning workspace, the following are required:
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
     Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
+- Compute priority
+
+  - Low-priority: Suited for tasks with shorter execution times. May be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.
+  - Dedicated: Suited for tasks of any duration, but especially long-running jobs. Not impacted by interruptions or lack of availability. Usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
 
 ## Training
 

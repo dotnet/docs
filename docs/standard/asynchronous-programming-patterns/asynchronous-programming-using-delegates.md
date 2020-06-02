@@ -20,11 +20,11 @@ Delegates enable you to call a synchronous method in an asynchronous manner. Whe
 > Compilers should emit delegate classes with `Invoke`, `BeginInvoke`, and `EndInvoke` methods using the delegate signature specified by the user. The `BeginInvoke` and `EndInvoke` methods should be decorated as native. Because these methods are marked as native, the CLR automatically provides the implementation at class load time. The loader ensures that they are not overridden.  
   
 ## In This Section  
- [Calling Synchronous Methods Asynchronously](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
+ [Calling Synchronous Methods Asynchronously](calling-synchronous-methods-asynchronously.md)  
  Discusses the use of delegates to make asynchronous calls to ordinary methods, and provides simple code examples that show the four ways to wait for an asynchronous call to return.  
   
 ## Related Sections  
- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+ [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)  
  Describes asynchronous programming with the .NET Framework.  
   
 ## See also

@@ -3,7 +3,7 @@ title: Architect modern web applications with ASP.NET Core and Azure
 description: A guide that provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/4/2019
+ms.date: 5/25/2020
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
@@ -81,6 +81,10 @@ More and more organizations are choosing to host their web applications in the c
 - Flexible capacity; scale up or down based on actual needs.
 
 Building web applications with ASP.NET Core, hosted in Azure, offers many competitive advantages over traditional alternatives. ASP.NET Core is optimized for modern web application development practices and cloud hosting scenarios. In this guide, you'll learn how to architect your ASP.NET Core applications to best take advantage of these capabilities.
+
+## Version
+
+This guide has been revised to cover **.NET Core 3.1** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. That's why the book version has also been updated to version **3.1**.
 
 ## Purpose
 

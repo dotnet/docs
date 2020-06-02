@@ -34,4 +34,4 @@ After you have obtained an isolated store, you can create directories and files 
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)

@@ -29,12 +29,12 @@ This topic describes how the schema inference process translates the node types 
 > [!NOTE]
 > All `complexType` declarations are inferred as anonymous types. The only global element inferred is the root element; all other elements are local.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 ### Simple Typed Element  
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded element shows the schema inferred for the simple type element.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -43,7 +43,7 @@ This topic describes how the schema inference process translates the node types 
 ### Empty Element  
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded element shows the schema inferred for the empty element.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -52,7 +52,7 @@ This topic describes how the schema inference process translates the node types 
 ### Empty Element with Attributes  
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for the empty element with attributes.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -61,7 +61,7 @@ This topic describes how the schema inference process translates the node types 
 ### Element with Attributes and Simple Content  
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with attributes and simple content.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -73,7 +73,7 @@ This topic describes how the schema inference process translates the node types 
 > [!NOTE]
 > Even if an element has only one child element, it is still treated as a sequence.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -85,7 +85,7 @@ This topic describes how the schema inference process translates the node types 
 > [!NOTE]
 > Even if an element has only one child element, it is still treated as a sequence.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -97,7 +97,7 @@ This topic describes how the schema inference process translates the node types 
 > [!NOTE]
 > The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -109,7 +109,7 @@ This topic describes how the schema inference process translates the node types 
 > [!NOTE]
 > The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 |XML|Schema|  
 |---------|------------|  
@@ -136,12 +136,12 @@ This topic describes how the schema inference process translates the node types 
 |Document type|Ignored.|  
 |Namespaces|Ignored.|  
   
- For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
+ For more information about the schema inference process, see [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md).  
   
 ## See also
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
-- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)
-- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)
-- [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md)
-- [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+- [XML Schema Object Model (SOM)](xml-schema-object-model-som.md)
+- [Inferring an XML Schema](inferring-an-xml-schema.md)
+- [Inferring Schemas from XML Documents](inferring-schemas-from-xml-documents.md)
+- [Rules for Inferring Simple Types](rules-for-inferring-simple-types.md)

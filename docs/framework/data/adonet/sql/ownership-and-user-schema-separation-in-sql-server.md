@@ -1,5 +1,6 @@
 ---
 title: "Ownership and User-Schema Separation in SQL Server"
+description: Learn how user-schema separation allows flexibility in managing SQL Server database object permissions. Schemas group objects into separate namespaces. 
 ms.date: "03/30/2017"
 ms.assetid: 242830c1-31b5-4427-828c-cc22ff339f30
 ---

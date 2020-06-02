@@ -160,16 +160,16 @@ Many applications use a database to store and isolate data, in which case one or
 
 |Title|Description|
 |-----------|-----------------|
-|[Types of Isolation](../../../docs/standard/io/types-of-isolation.md)|Describes the different types of isolation.|
-|[How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
-|[How to: Enumerate Stores for Isolated Storage](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
-|[How to: Delete Stores in Isolated Storage](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
-|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](../../../docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
-|[How to: Create Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
-|[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
-|[How to: Read and Write to Files in Isolated Storage](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
-|[How to: Delete Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
-|[File and Stream I/O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
+|[Types of Isolation](types-of-isolation.md)|Describes the different types of isolation.|
+|[How to: Obtain Stores for Isolated Storage](how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
+|[How to: Enumerate Stores for Isolated Storage](how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
+|[How to: Delete Stores in Isolated Storage](how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
+|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
+|[How to: Create Files and Directories in Isolated Storage](how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
+|[How to: Find Existing Files and Directories in Isolated Storage](how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
+|[How to: Read and Write to Files in Isolated Storage](how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
+|[How to: Delete Files and Directories in Isolated Storage](how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
+|[File and Stream I/O](index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
 
 <a name="reference"></a>
 

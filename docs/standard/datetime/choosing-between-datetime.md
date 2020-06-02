@@ -114,4 +114,4 @@ Taking advantage of time zone support in .NET is possible only if the time zone 
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](index.md)

@@ -1,6 +1,6 @@
 ---
 title: C# foreach statement
-ms.date: 06/02/2020
+ms.date: 06/03/2020
 f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -12,7 +12,7 @@ ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
 ---
 # foreach, in (C# reference)
 
-The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement is not limited to those types and can be applied to an instance of any type that satisfies the following conditions:
+The `foreach` statement executes a statement or a block of statements for each element in an instance of the type that implements the <xref:System.Collections.IEnumerable?displayProperty=nameWithType> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. The `foreach` statement isn't limited to those types and can be applied to an instance of any type that satisfies the following conditions:
 
 - has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
 - the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.

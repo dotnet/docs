@@ -1,11 +1,14 @@
 ---
-title: Get started with .NET Core using Visual Studio for Mac
-description: This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
-ms.date: 12/19/2019
+title: Create a console application with .NET Core in Visual Studio for Mac
+description: Learn how to create a .NET Core console application with C# or Visual Basic using Visual Studio for Mac.
+ms.date: 06/02/2020
+dev_langs:
+  - "csharp"
+  - "vb"
 ---
 # Get started with .NET Core on macOS using Visual Studio for Mac
 
-Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This article walks you through building a simple console application using Visual Studio for Mac and .NET Core.
+Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This tutorial walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -15,42 +18,82 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 ## Prerequisites
 
-See the [.NET Core dependencies and requirements](../install/dependencies.md?pivots=os-macos) article.
+* [Install Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
 
-Check the [.NET Core Support](/visualstudio/mac/net-core-support) article to ensure you're using a supported version of .NET Core.
+  * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
+  * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).
+  * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
-## Get started
+## Create the app
 
-If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Creating a project](#creating-a-project). Follow these steps to install the prerequisites and Visual Studio for Mac:
-
-Download the [Visual Studio for Mac installer](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Run the installer. Read and accept the license agreement. During the install, select the option to install .NET Core. You're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Visual Studio for Mac documentation](/visualstudio/mac/). When the install is complete, start the Visual Studio for Mac IDE.
-
-## Creating a project
+1. Start Visual Studio for Mac.
 
 1. Select **New** on the start window.
 
    ![New button on the Visual Studio for Mac Start screen](./media/using-on-mac-vs/visual-studio-mac-new-project.png)
 
-1. In the **New Project** dialog, select **App** under the **.NET Core** node. Select the **Console Application** template followed by **Next**.
+1. In the **New Project** dialog, select **App** under the **.NET Core** node.
+
+1. Select the **Console Application** template, and select **Next**.
 
    ![New project templates list](./media/using-on-mac-vs/visual-studio-mac-new-dialog.png)
 
 1. If you have more than one version of .NET Core installed, select the target framework for your project.
 
-1. Type "HelloWorld" for the **Project Name**. Select **Create**.
+1. Type "HelloWorld" for the **Project Name**, anad select **Create**.
 
    ![Configure your new Console Application dialog](./media/using-on-mac-vs/visual-studio-mac-new-options.png)
 
-1. Wait while the project's dependencies are restored. The project has a single C# file, *Program.cs*, containing a `Program` class with a `Main` method. The `Console.WriteLine` statement will output "Hello World!" to the console when the app is run.
+   The Console Application template for .NET Core defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   ![Main window with the Program.cs file open](./media/using-on-mac-vs/visual-studio-mac-editor.png)
+   ```csharp
+   using System;
 
-## Run the application
+   namespace HelloWorld
+   {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               Console.WriteLine("Hello World!");
+           }
+       }
+   }
+   ```
 
-Run the app in Debug mode using ⌘ ↵ (command + enter) or in Release mode using ⌥ ⌘ ↵ (option + command + enter).
+## Run the app
 
-![The Application Output pane shows Hello World!](./media/using-on-mac-vs/visual-studio-mac-output.png)
+1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
 
-## Next step
+   ![The terminal shows Hello World!](./media/using-on-mac-vs/visual-studio-mac-output.png)
 
-The [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md) topic shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+1. Close the **Application Ouput** window.
+
+## Enhance the app
+
+Enhance the application to prompt the user for their name and display it along with the date and time. The following instructions modify the app and run it again:
+
+1. In *Program.cs*, replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
+
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
+
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
+
+   The `\n` represents a newline character.
+
+   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
+
+1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
+
+1. Respond to the prompt by entering a name and pressing <kbd>Enter</kbd>.
+
+   ![Terminal shows modified program output](./media/using-on-mac-vs/hello-world-update.png)
+
+1. Close the terminal.
+
+## Next steps
+
+In this tutorial, you created a .NET Core application. In the next tutorial, you debug the app.
+
+> [!div class="nextstepaction"]
+> [Debug a .NET Core console application in Visual Studio](debugging-with-visual-studio-mac.md)

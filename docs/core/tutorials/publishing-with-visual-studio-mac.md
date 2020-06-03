@@ -1,0 +1,107 @@
+---
+title: Publish your .NET Core Hello World application with Visual Studio
+description: Publishing creates the set of files that are needed to run your .NET Core application.
+author: BillWagner
+ms.author: wiwagn
+ms.date: 05/20/2020
+dev_langs:
+  - "csharp"
+  - "vb"
+ms.custom: "vs-dotnet"
+---
+# Tutorial: Publish a .NET Core console application with Visual Studio
+
+This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
+
+## Prerequisites
+
+- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md).
+
+## Publish the app
+
+1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
+
+   ![Visual Studio toolbar with release build selected](media/publishing-with-visual-studio/visual-studio-toolbar-release.png)
+
+1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu.
+
+   ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish-context-menu.png)
+
+1. On the **Target** tab of the **Publish** page, select **Folder**, and then select **Next**.
+
+   ![Pick a publish target in Visual Studio](media/publishing-with-visual-studio/pick-publish-target.png)
+
+1. On the **Location** tab of the **Publish** page, select **Finish**.
+
+   ![Visual Studio Publish page Location tab](media/publishing-with-visual-studio/publish-page-loc-tab.png)
+
+1. On the **Publish** tab of the **Publish** window, select **Publish**.
+
+   ![Visual Studio Publish window](media/publishing-with-visual-studio/publish-page.png)
+
+## Inspect the files
+
+The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET Core runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
+
+In the following steps, you'll look at the files created by the publish process.
+
+1. In **Solution Explorer**, select **Show all files**.
+
+1. In the project folder, expand *bin/Release/netcoreapp3.1/publish*.
+
+   :::image type="content" source="media/publishing-with-visual-studio/published-files-output.png" alt-text="Solution Explorer showing published files":::
+
+   As the image shows, the published output includes the following files:
+
+   * *HelloWorld.deps.json*
+
+      This is the application's runtime dependencies file. It defines the .NET Core components and the libraries (including the dynamic link library that contains your application) needed to run the app. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+
+   * *HelloWorld.dll*
+
+      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET Core runtime installed.
+
+   * *HelloWorld.exe*
+
+      This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
+
+   * *HelloWorld.pdb* (optional for deployment)
+
+      This is the debug symbols file. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
+
+   * *HelloWorld.runtimeconfig.json*
+
+      This is the application's run-time configuration file. It identifies the version of .NET Core that your application was built to run on. You can also add configuration options to it. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+
+## Run the published app
+
+1. In **Solution Explorer**, right-click the *publish* folder, and select **Copy Full Path**.
+
+1. Open a command prompt and navigate to the *publish* folder. Enter `cd` and then paste the full path. For example:
+
+   ```
+   cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\
+   ```
+
+1. Run the app by using the executable:
+
+   1. Enter `HelloWorld.exe` and press <kbd>Enter</kbd>.
+
+   1. Enter a name in response to the prompt, and press any key to exit.
+
+1. Run the app by using the `dotnet` command:
+
+   1. Enter `dotnet HelloWorld.dll` and press <kbd>Enter</kbd>.
+
+   1. Enter a name in response to the prompt, and press any key to exit.
+
+## Additional resources
+
+- [.NET Core application deployment](../deploying/index.md)
+
+## Next steps
+
+In this tutorial, you published a console app. In the next tutorial, you create a class library.
+
+> [!div class="nextstepaction"]
+> [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md)

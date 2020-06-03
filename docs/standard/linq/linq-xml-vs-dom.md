@@ -157,7 +157,7 @@ When using LINQ to XML, you use the <xref:System.Xml.Linq.XDocument> class only 
 
 ## Simplified handling of names and namespaces
 
-Handling names, namespaces, and namespace prefixes is generally a complex part of XML programming. LINQ to XML simplifies names and namespaces by eliminating the requirement to deal with namespace prefixes. If you want to control namespace prefixes, you can. But if you decide to not explicitly control namespace prefixes, LINQ to XML will assign namespace prefixes during serialization if they're required, or will serialize using default namespaces if they aren't. If default namespaces are used, there will be no namespace prefixes in the resulting document. For more information, see [Namespaces overview](namespaces-overview.md).
+Handling names, namespaces, and namespace prefixes is generally a complex part of XML programming. LINQ to XML simplifies names and namespaces by eliminating the requirement to deal with namespace prefixes. If you want to control namespace prefixes, you can. But if you decide to not explicitly control namespace prefixes, LINQ to XML will assign namespace prefixes during serialization if they're required, or will serialize using default namespaces if they're not. If default namespaces are used, there will be no namespace prefixes in the resulting document. For more information, see [Namespaces overview](namespaces-overview.md).
 
 Another problem with the DOM is that it doesn't let you change the name of a node. Instead, you have to create a new node and copy all the child nodes to it, losing the original node identity. LINQ to XML avoids this problem by enabling you to set the <xref:System.Xml.Linq.XName> property on a node.
 
@@ -181,7 +181,7 @@ LINQ to XML provides support for <xref:System.Xml.XPath.XPathNavigator> through 
 
 LINQ to XML handles white space more simply than the DOM.
 
-A common scenario is to read indented XML, create an in-memory XML tree without any white-space text nodes (that is, not preserving white space), do some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for LINQ to XML.
+A common scenario is to read indented XML, create an in-memory XML tree without any white space text nodes (that is, not preserving white space), do some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for LINQ to XML.
 
 Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. In LINQ to XML, you can do this by:
 

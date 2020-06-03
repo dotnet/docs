@@ -76,7 +76,7 @@ namespace generics
     // <Snippet9>
     public class Employee
     {
-        public Employee(string s, int i) => (Name, ID) = (s, i);
+        public Employee(string name, int id) => (Name, ID) = (name, id);
         public string Name { get; set; }
         public int ID { get; set; }
     }
@@ -214,6 +214,7 @@ namespace generics
         {
             System.Console.WriteLine(s == t);
         }
+
         private static void TestStringEquality()
         {
             string s1 = "target";

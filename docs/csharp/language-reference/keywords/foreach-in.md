@@ -17,12 +17,12 @@ The `foreach` statement executes a statement or a block of statements for each e
 - has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
 - the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
 
-In most uses, `foreach` iterates an `IEnumerable<T>` expression, and the elements are the type `T`. However, the elements may be any type that has an implicit or explicit conversion from the type of the `Current` property. If the `Current` property returns `SomeType`, the type of the elements may be:
+In most uses, `foreach` iterates an `IEnumerable<T>` expression where each element is of type `T`. However, the elements may be any type that has an implicit or explicit conversion from the type of the `Current` property. If the `Current` property returns `SomeType`, the type of the elements may be:
 
 - Any of the base classes of `SomeType`.
 - Any of the interfaces implemented by `SomeType`.
 
-Furthermore, if `SomeType` is a `class` or `interface` and not `sealed`, the type of elements may include:
+Furthermore, if `SomeType` is a `class` or an `interface` and not `sealed`, the type of elements may include:
 
 - Any type derived from `SomeType`.
 - Any arbitrary interface. Any interface is allowed because any interface may be implemented by a class derived from or implementing `SomeType`.

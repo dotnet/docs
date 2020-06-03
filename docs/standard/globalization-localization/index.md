@@ -78,10 +78,10 @@ Describes the best practices to follow for globalization, localization, and deve
 
    Contains classes representing ASCII, ANSI, Unicode, and other character encodings.
 
-- [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)
+- [Resgen.exe (Resource File Generator)](../../framework/tools/resgen-exe-resource-file-generator.md)
 
    Describes how to use Resgen.exe to convert .txt files and XML-based resource format (.resx) files to common language runtime binary .resources files.
 
-- [Winres.exe (Windows Forms Resource Editor)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md)
+- [Winres.exe (Windows Forms Resource Editor)](../../framework/tools/winres-exe-windows-forms-resource-editor.md)
 
    Describes how to use Winres.exe to localize Windows Forms forms.

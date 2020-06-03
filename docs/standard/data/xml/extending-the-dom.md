@@ -238,7 +238,7 @@ The .NET Framework implementation of the DOM also includes an event system that 
 
 The event-handling process works exactly the same in derived classes as it would in the original DOM classes.
 
-For more information regarding node event handling, see [Events](../../../../docs/standard/events/index.md) and <xref:System.Xml.XmlNodeChangedEventHandler>.
+For more information regarding node event handling, see [Events](../../events/index.md) and <xref:System.Xml.XmlNodeChangedEventHandler>.
 
 ## Default Attributes and the CreateElement Method
 

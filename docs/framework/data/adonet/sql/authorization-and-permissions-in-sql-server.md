@@ -1,5 +1,6 @@
 ---
 title: "Authorization and Permissions in SQL Server"
+description: Learn to explicitly grant permissions to make database objects that you create accessible to users in SQL Server with ADO.NET.
 ms.date: "03/30/2017"
 ms.assetid: d340405c-91f4-4837-a3cc-a238ee89888a
 ---

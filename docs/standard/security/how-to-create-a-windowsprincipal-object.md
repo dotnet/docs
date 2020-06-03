@@ -71,4 +71,4 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
   
 ## See also
 
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+- [Principal and Identity Objects](principal-and-identity-objects.md)

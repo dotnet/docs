@@ -303,7 +303,7 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the following all use the current thread culture in formatting operations:
 
 - Interpolated strings supported by the [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) compilers.
-- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
+- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
 - The <xref:System.String.Format%2A?displayProperty=nameWithType> method.
 - The `ToString` methods of the numeric types and the date and time types.
 

@@ -1,5 +1,6 @@
 ---
 title: "Oracle and ADO.NET"
+description: Learn about features and behaviors of the .NET Framework Data Provider for Oracle, which provides access to an Oracle database using the Oracle Call Interface.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 

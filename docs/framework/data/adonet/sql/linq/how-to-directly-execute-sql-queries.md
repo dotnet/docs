@@ -1,5 +1,6 @@
 ---
 title: "How to: Directly Execute SQL Queries"
+description: Learn how to use ExecuteQuery to run a query and then convert the results directly into objects in cases where a LINQ to SQL query is insufficient.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

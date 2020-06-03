@@ -279,7 +279,7 @@ For more information on bundling and minification, see [Bundle and minify static
 
 A page in a Web Forms app is a file with the *.aspx* extension. A Web Forms page can often be mapped to a component in Blazor. A Blazor component is authored in a file with the *.razor* extension. For the eShop project, five pages are converted to a Razor page.
 
-For example, the details view is comprised of three files in the Web Forms project: *Details.aspx*, *Details.aspx.cs*, and *Details.aspx.designer.cs*. When converting to Blazor, the code-behind and markup are combined into *Details.razor*. Razor compilation (equivalent to what's in *.designer.cs* files) is stored in the *obj* directory and aren't, by default, viewable in **Solution Explorer**. The Web Forms page consists of the following markup:
+For example, the details view comprises three files in the Web Forms project: *Details.aspx*, *Details.aspx.cs*, and *Details.aspx.designer.cs*. When converting to Blazor, the code-behind and markup are combined into *Details.razor*. Razor compilation (equivalent to what's in *.designer.cs* files) is stored in the *obj* directory and isn't, by default, viewable in **Solution Explorer**. The Web Forms page consists of the following markup:
 
 ```aspx-csharp
 <%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>

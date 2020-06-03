@@ -1,5 +1,6 @@
 ---
 title: "Date and Time Data"
+description: Learn about data types for handling date and time information in the .NET Framework Data Provider for SQL Server.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

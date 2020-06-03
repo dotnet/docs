@@ -40,4 +40,4 @@ There are many ways you can modify the nodes and content in a document. You can:
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

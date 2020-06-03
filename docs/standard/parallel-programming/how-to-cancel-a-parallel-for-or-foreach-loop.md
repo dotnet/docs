@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 9d19b591-ea95-4418-8ea7-b6266af9905b
 ---
 # How to: Cancel a Parallel.For or ForEach Loop
-The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> methods support cancellation through the use of cancellation tokens. For more information about cancellation in general, see [Cancellation](../../../docs/standard/threading/cancellation-in-managed-threads.md). In a parallel loop, you supply the <xref:System.Threading.CancellationToken> to the method in the <xref:System.Threading.Tasks.ParallelOptions> parameter and then enclose the parallel call in a try-catch block.  
+The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> methods support cancellation through the use of cancellation tokens. For more information about cancellation in general, see [Cancellation](../threading/cancellation-in-managed-threads.md). In a parallel loop, you supply the <xref:System.Threading.CancellationToken> to the method in the <xref:System.Threading.Tasks.ParallelOptions> parameter and then enclose the parallel call in a try-catch block.  
   
 ## Example  
  The following example shows how to cancel a call to <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. You can apply the same approach to a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> call.  
@@ -23,5 +23,5 @@ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> a
   
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

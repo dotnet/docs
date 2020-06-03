@@ -47,4 +47,4 @@ if (((object)node1.Name) == ((object)node2.Name))
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

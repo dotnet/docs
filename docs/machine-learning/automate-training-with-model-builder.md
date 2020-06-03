@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 03/25/2020
+ms.date: 06/01/2020
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -114,7 +114,7 @@ If you don't have your own data yet, try out one of these datasets:
 
 ## Train
 
-Once you select your scenario, data, and label, Model Builder trains the model.
+Once you select your scenario, environment, data, and label, Model Builder trains the model.
 
 ### What is training?
 
@@ -144,6 +144,8 @@ These numbers are a guide only. The exact length of training is dependent on:
 - the type of columns
 - the ML task
 - the CPU, disk, and memory performance of the machine used for training
+
+It's generally advised that you use more than 100 rows as datasets with less than that may not produce any results and may take a significantly longer time to train.
 
 ## Evaluate
 
@@ -188,7 +190,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 - Train for a longer period of time. With more time, the automated machine learning engine experiments with more algorithms and settings.
 
-- Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
+- Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.This is especially true with datasets that have a small number of examples.
 
 - Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 

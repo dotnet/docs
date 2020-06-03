@@ -116,7 +116,7 @@ Garbage collection primarily occurs with the reclamation of short-lived objects.
 
 - **Generation 0**. This is the youngest generation and contains short-lived objects. An example of a short-lived object is a temporary variable. Garbage collection occurs most frequently in this generation.
 
-  Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they are large objects, they go on the large object heap in a generation 2 collection.
+  Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they are large objects, they go on the large object heap (LOH), which is sometimes referred to as *generation 3*. Generation 3 is a physical generation that's logically collected as part of generation 2.
 
   Most objects are reclaimed for garbage collection in generation 0 and don't survive to the next generation.
   
@@ -131,6 +131,8 @@ Garbage collection primarily occurs with the reclamation of short-lived objects.
 - **Generation 2**. This generation contains long-lived objects. An example of a long-lived object is an object in a server application that contains static data that's live for the duration of the process.
 
   Objects in generation 2 that survive a collection remain in generation 2 until they are determined to be unreachable in a future collection.
+  
+  Objects on the large object heap (which is sometimes referred to as *generation 3*) are also collected in generation 2.
 
 Garbage collections occur on specific generations as conditions warrant. Collecting a generation means collecting objects in that generation and all its younger generations. A generation 2 garbage collection is also known as a full garbage collection, because it reclaims objects in all generations (that is, all objects in the managed heap).
 
@@ -192,7 +194,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-![When a thread triggers a Garbage Collection](./media/gc-triggered.png)
+![When a thread triggers a Garbage Collection](media/gc-triggered.png)
 
 ## Unmanaged resources
 

@@ -23,6 +23,6 @@ Sealed classes cannot be inherited from, and they prevent extensibility. In cont
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
-- [Sealing](../../../docs/standard/design-guidelines/sealing.md)
+- [Framework Design Guidelines](index.md)
+- [Designing for Extensibility](designing-for-extensibility.md)
+- [Sealing](sealing.md)

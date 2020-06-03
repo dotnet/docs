@@ -52,7 +52,7 @@ A character class defines a set of characters, any one of which can occur in an 
 
 `[*character_group*]`
 
- where *character_group* is a list of the individual characters that can appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
+ where *character_group* is a list of the individual characters that can appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
   
@@ -108,7 +108,7 @@ The syntax for specifying a list of individual characters is as follows:
 
 `[*^character_group*]`
 
- where *character_group* is a list of the individual characters that cannot appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
+ where *character_group* is a list of the individual characters that cannot appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
 
@@ -152,7 +152,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## Any character: .  
  The period character (.) matches any character except `\n` (the newline character, \u000A), with the following two qualifications:  
   
-- If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+- If a regular expression pattern is modified by the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or if the portion of the pattern that contains the `.` character class is modified by the `s` option, `.` matches any character. For more information, see [Regular Expression Options](regular-expression-options.md).  
   
      The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
   
@@ -168,7 +168,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
      [!code-vb[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any1.vb#4)]  
   
 > [!NOTE]
-> Because it matches any character, the `.` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
+> Because it matches any character, the `.` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
 <a name="CategoryOrBlock"></a>
 ## Unicode category or Unicode block: \p{}  
@@ -231,10 +231,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |Nd|Number, Decimal Digit|  
 |Pc|Punctuation, Connector. This category includes ten characters, the most commonly used of which is the LOWLINE character (_), u+005F.|  
   
- If ECMAScript-compliant behavior is specified, `\w` is equivalent to `[a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\w` is equivalent to `[a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
 > [!NOTE]
-> Because it matches any word character, the `\w` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
+> Because it matches any word character, the `\w` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any word character multiple times, followed by a specific word character. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
  The following example uses the `\w` language element to match duplicate characters in a word. The example defines a regular expression pattern, `(\w)\1`, which can be interpreted as follows.  
   
@@ -265,10 +265,10 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |Nd|Number, Decimal Digit|  
 |Pc|Punctuation, Connector. This category includes ten characters, the most commonly used of which is the LOWLINE character (_), u+005F.|  
   
- If ECMAScript-compliant behavior is specified, `\W` is equivalent to `[^a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\W` is equivalent to `[^a-zA-Z_0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
 > [!NOTE]
-> Because it matches any non-word character, the `\W` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any non-word character multiple times followed by a specific non-word character. For more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
+> Because it matches any non-word character, the `\W` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any non-word character multiple times followed by a specific non-word character. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
  The following example illustrates the `\W` character class.  It defines a regular expression pattern, `\b(\w+)(\W){1,2}`, that matches a word followed by one or two non-word characters, such as white space or punctuation. The regular expression is interpreted as shown in the following table.  
   
@@ -297,7 +297,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\x85`|The ellipsis or NEXT LINE (NEL) character (…), \u0085.|  
 |`\p{Z}`|Matches any separator character.|  
   
- If ECMAScript-compliant behavior is specified, `\s` is equivalent to `[ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\s` is equivalent to `[ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
  The following example illustrates the `\s` character class. It defines a regular expression pattern, `\b\w+(e)?s(\s|$)`, that matches a word ending in either "s" or "es" followed by either a white-space character or the end of the input string. The regular expression is interpreted as shown in the following table.  
   
@@ -316,7 +316,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## Non-whitespace character: \S  
  `\S` matches any non-white-space character. It is equivalent to the `[^\f\n\r\t\v\x85\p{Z}]` regular expression pattern, or the opposite of the regular expression pattern that is equivalent to `\s`, which matches white-space characters. For more information, see [White-Space Character: \s](#WhitespaceCharacter).  
   
- If ECMAScript-compliant behavior is specified, `\S` is equivalent to  `[^ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\S` is equivalent to  `[^ \f\n\r\t\v]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
  The following example illustrates the `\S` language element. The regular expression pattern `\b(\S+)\s?` matches strings that are delimited by white-space characters. The second element in the match's <xref:System.Text.RegularExpressions.GroupCollection> object contains the matched string. The regular expression can be interpreted as shown in the following table.  
   
@@ -333,7 +333,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## Decimal digit character: \d  
  `\d` matches any decimal digit. It is equivalent to the `\p{Nd}` regular expression pattern, which includes the standard decimal digits 0-9 as well as the decimal digits of a number of other character sets.  
   
- If ECMAScript-compliant behavior is specified, `\d` is equivalent to  `[0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\d` is equivalent to  `[0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
  The following example illustrates the `\d` language element. It tests whether an input string represents a valid telephone number in the United States and Canada. The regular expression pattern `^(\(?\d{3}\)?[\s-])?\d{3}-\d{4}$` is defined as shown in the following table.  
   
@@ -355,7 +355,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## Non-digit character: \D  
  `\D` matches any non-digit character. It is equivalent to the `\P{Nd}` regular expression pattern.  
   
- If ECMAScript-compliant behavior is specified, `\D` is equivalent to  `[^0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ If ECMAScript-compliant behavior is specified, `\D` is equivalent to  `[^0-9]`. For information on ECMAScript regular expressions, see the "ECMAScript Matching Behavior" section in [Regular Expression Options](regular-expression-options.md).  
   
  The following example illustrates the \D language element. It tests whether a string such as a part number consists of the appropriate combination of decimal and non-decimal characters. The regular expression pattern `^\D\d{1,5}\D*$` is defined as shown in the following table.  
   
@@ -564,5 +564,5 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## See also
 
 - <xref:System.Char.GetUnicodeCategory%2A>
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
-- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)
+- [Regular Expression Options](regular-expression-options.md)

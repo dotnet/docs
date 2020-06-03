@@ -94,5 +94,5 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
 
 ## See also
 
-- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)

@@ -22,7 +22,7 @@ As noted previously in this section, a pure function has two useful characterist
 
 One way of transitioning to functional programming is to refactor existing code to eliminate unnecessary side effects and external dependencies. In this way, you can create pure function versions of existing code.
 
-This article discusses what a pure function is and what it's not. The [Tutorial: Manipulate content in a WordprocessingML document](shape-wordprocessingml-documents.md) tutorial shows how to manipulate a WordprocessingML document, and includes two examples of how to refactor using a pure function.
+This article discusses what a pure function is and what it's not. The [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents.md) tutorial shows how to manipulate a WordprocessingML document, and includes two examples of how to refactor using a pure function.
 
 The following examples contrast two non-pure functions and a pure function.
 

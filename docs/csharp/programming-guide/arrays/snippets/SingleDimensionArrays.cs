@@ -7,8 +7,8 @@ namespace arrays
         internal struct SomeType
         {
             string thing;
-
         }
+
         public static void Examples()
         {
             Declarations();

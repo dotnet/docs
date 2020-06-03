@@ -16,7 +16,7 @@ This article introduces the XML shape of a WordprocessingML document.
 
 The native file format for the 2007 Microsoft Office system is Office Open XML (commonly called Open XML). Open XML is an XML-based format that is an Ecma standard and is currently going through the ISO-IEC standards process. The markup language for word processing files within Open XML is called WordprocessingML. This tutorial uses WordprocessingML source files as input for the examples.
 
-If you are using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.
+If you're using Microsoft Office 2003, you can save documents in the Office Open XML format if you have installed the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.
 
 ## The shape of WordprocessingML documents
 
@@ -121,7 +121,7 @@ End Module
 
 ## See also
 
-- [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205%28v=office.12%29)
-- [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812%28v=office.11%29)
+- [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812(v=office.11))
 - [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)
 - [Introduction to WordprocessingML](https://ericwhite.com/blog/introduction-to-wordprocessingml-series/)

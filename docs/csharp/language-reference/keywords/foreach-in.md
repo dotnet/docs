@@ -17,6 +17,18 @@ The `foreach` statement executes a statement or a block of statements for each e
 - has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
 - the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
 
+In most uses, `foreach` iterates an `IEnumerable<T>` expression, and the elements are the type `T`. However, the elements may be any type that has an implicit or explicit conversion from the type of the `Current` property. If the `Current` property returns `SomeType`, the type of the elements may be:
+
+- Any of the base classes of `SomeType`.
+- Any of the interfaces implemented by `SomeType`.
+
+Furthermore, if `SomeType` is a `class` or `interface` and not `sealed`, the type of elements may include:
+
+- Any type derived from `SomeType`.
+- Any arbitrary interface. Any interface is allowed because any interface may be implemented by a class derived from or implementing `SomeType`.
+
+You may declare the iteration variable using any type that matches the preceding rules. If the conversion from `SomeType` to the type of the iteration variable requires an explicit cast, that operation may throw an <xref:System.InvalidCastException> when the conversion fails.
+
 Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](ref.md#reference-return-values) (`ref T` where `T` is the type of the collection element), you can declare the iteration variable with the `ref` or `ref readonly` modifier.
 
 Beginning with C# 8.0, the `await` operator may be applied to the `foreach` statement when the collection type implements the <xref:System.Collections.Generic.IAsyncEnumerable%601> interface. Each iteration of the loop may be suspended while the next element is retrieved asynchronously. By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
@@ -31,19 +43,19 @@ If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceExc
 
 The following example shows usage of the `foreach` statement with an instance of the <xref:System.Collections.Generic.List%601> type that implements the <xref:System.Collections.Generic.IEnumerable%601> interface:
 
-[!code-csharp-interactive[list example](snippets/IterationKeywordsExamples.cs#1)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="1" interactive="try-dotnet-method" :::
 
 The next example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
-[!code-csharp[span example](snippets/IterationKeywordsExamples.cs#2)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="2" :::
 
 The following example uses a `ref` iteration variable to set the value of each item in a stackalloc array. The `ref readonly` version iterates the collection to print all the values. The `readonly` declaration uses an implicit local variable declaration. Implicit variable declarations can be used with either `ref` or `ref readonly` declarations, as can explicitly typed variable declarations.
 
-[!code-csharp[ref span example](snippets/IterationKeywordsExamples.cs#RefSpan)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="RefSpan" :::
 
 The following example uses `await foreach` to iterate a collection that generates each element asynchronously:
 
-[!code-csharp[ref span example](snippets/IterationKeywordsExamples.cs#AwaitForeach)]
+:::code language="csharp" source="snippets/IterationKeywordsExamples.cs" id="AwaitForeach"  :::
 
 ## C# language specification
 

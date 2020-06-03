@@ -63,7 +63,7 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 19.10 ✔️
 
@@ -74,7 +74,7 @@ wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 18.04 ✔️
 
@@ -85,7 +85,7 @@ wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 16.04 ✔️
 
@@ -96,7 +96,7 @@ wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 19.04 ❌
 
@@ -109,7 +109,7 @@ wget https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-apt-install-31.md)]
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 18.10 ❌
 
@@ -122,7 +122,7 @@ wget https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
 ## 17.10 ❌
 
@@ -135,7 +135,7 @@ wget https://packages.microsoft.com/config/ubuntu/17.10/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
 ## 17.04 ❌
 
@@ -148,7 +148,7 @@ wget https://packages.microsoft.com/config/ubuntu/17.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
 ## 16.10 ❌
 
@@ -161,7 +161,7 @@ wget https://packages.microsoft.com/config/ubuntu/16.10/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-21](includes/linux-apt-install-21.md)]
+[!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
 ## APT update SDK or runtime
 

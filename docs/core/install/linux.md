@@ -44,7 +44,31 @@ For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
 
 ## CentOS
 
-todo
+CentOS 7 uses Yum as a package manager and CentOS 8 uses DNF.
+
+The following is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
+
+For the best compatibility, choose a long-term release (LTS) version of .NET Core.
+
+| .NET Core   |
+|-------------|
+| 2.1 (LTS)   |
+| 3.1 (LTS)   |
+| 5.0 Preview |
+
+For more information, see [Install .NET Core on CentOS](linux-centos.md).
+
+### Unsupported releases
+
+The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
+
+| .NET Core |
+|-----------|
+| 3.0       |
+| 2.2       |
+| 2.0       |
+
+For more information, see [Install .NET Core on CentOS](linux-centos.md).
 
 ## Debian
 

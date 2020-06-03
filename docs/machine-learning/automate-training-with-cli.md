@@ -39,7 +39,7 @@ Example of usage (classification scenario):
 mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
 ```
 
-![image](media/automate-training-with-cli/cli-model-generation.gif)
+![image](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
 You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
 

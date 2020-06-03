@@ -63,23 +63,15 @@ When you generate a 'best model' with the CLI tool, you see quality metrics (suc
 
 Here those metrics are summarized grouped by ML task so you can understand the quality of your auto-generated 'best model'.
 
-### Metrics for Binary Classification models
+### Metrics for Classification models
 
-The following displays the binary classification ML task metrics list for the top five models found by the CLI:
-
-![image](media/automate-training-with-cli/cli-binary-classification-metrics.png)
-
-Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
-
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for binary classification](resources/metrics.md#evaluation-metrics-for-binary-classification).
-
-### Metrics for Multi-class Classification models
-
-The following displays the multi-class classification ML task metrics list for the top five models found by the CLI:
+The following displays the classification metrics list for the top five models found by the CLI:
 
 ![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for multiclass classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
+ Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
+
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
 
 ### Metrics for Regression and Recommendation models
 

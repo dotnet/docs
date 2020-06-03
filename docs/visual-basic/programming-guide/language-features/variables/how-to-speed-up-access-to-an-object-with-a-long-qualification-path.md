@@ -50,5 +50,5 @@ There are two ways you can avoid repeating the qualification path. You can assig
 
 ## See also
 
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+- [Object Variables](object-variables.md)
+- [With...End With Statement](../../../language-reference/statements/with-end-with-statement.md)

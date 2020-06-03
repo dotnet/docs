@@ -57,6 +57,6 @@ Shadowing introduces more than one version of a variable with the same name. Whe
 - [Differences Between Shadowing and Overriding](differences-between-shadowing-and-overriding.md)
 - [How to: Hide a Variable with the Same Name as Your Variable](how-to-hide-a-variable-with-the-same-name-as-your-variable.md)
 - [How to: Access a Variable Hidden by a Derived Class](how-to-access-a-variable-hidden-by-a-derived-class.md)
-- [Overrides](../../../../visual-basic/language-reference/modifiers/overrides.md)
+- [Overrides](../../../language-reference/modifiers/overrides.md)
 - [Me, My, MyBase, and MyClass](../../program-structure/me-my-mybase-and-myclass.md)
 - [Inheritance Basics](../objects-and-classes/inheritance-basics.md)

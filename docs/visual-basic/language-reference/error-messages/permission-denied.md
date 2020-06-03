@@ -18,4 +18,4 @@ An attempt was made to write to a write-protected disk or to access a locked fil
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

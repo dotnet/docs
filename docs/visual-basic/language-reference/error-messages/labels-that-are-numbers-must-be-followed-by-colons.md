@@ -23,4 +23,4 @@ Line numbers follow the same rules as other kinds of labels, and must contain a 
   
 ## See also
 
-- [GoTo Statement](../../../visual-basic/language-reference/statements/goto-statement.md)
+- [GoTo Statement](../statements/goto-statement.md)

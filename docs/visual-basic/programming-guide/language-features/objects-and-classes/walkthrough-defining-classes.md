@@ -43,7 +43,7 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
      [!code-vb[VbVbalrOOP#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#7)]
   
-     Declaring the field as `Private` means it can be used only within the class. You can make fields available from outside a class by using access modifiers such as `Public` that provide more access. For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+     Declaring the field as `Private` means it can be used only within the class. You can make fields available from outside a class by using access modifiers such as `Public` that provide more access. For more information, see [Access levels in Visual Basic](../declared-elements/access-levels.md).  
   
 7. Define a property for the class by adding the following code:  
   
@@ -76,4 +76,4 @@ This walkthrough demonstrates how to define classes, which you can then use to c
 ## See also
 
 - [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)
-- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Objects and Classes](index.md)

@@ -14,4 +14,4 @@ This error is usually encountered as a result of a corrupted file. You may need 
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

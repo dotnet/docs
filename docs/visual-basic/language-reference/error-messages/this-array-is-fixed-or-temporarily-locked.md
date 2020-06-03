@@ -24,4 +24,4 @@ This error has the following possible causes:
   
 ## See also
 
-- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Arrays](../../programming-guide/language-features/arrays/index.md)

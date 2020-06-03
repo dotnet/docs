@@ -18,4 +18,4 @@ Visual Basic provides several attributes that allow objects to interoperate with
   
 ## See also
 
-- [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Attributes overview](../programming-guide/concepts/attributes/index.md)

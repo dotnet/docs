@@ -22,7 +22,7 @@ When you have defined a class or structure, you can declare variables to be of t
 
 Visual Basic defines operators only on its fundamental data types. You can define the behavior of an operator when one or both of the operands are of the type of your class or structure.
 
-For more information, see [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md).
+For more information, see [Operator Statement](../../../language-reference/statements/operator-statement.md).
 
 ## Types of Operator Procedure
 
@@ -50,7 +50,7 @@ Public Shared [Widening | Narrowing] Operator operatorsymbol ( operand1 [,  oper
 End Operator
 ```
 
-You use the `Widening` or `Narrowing` keyword only on a type conversion operator. The operator symbol is always [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) for a type conversion operator.
+You use the `Widening` or `Narrowing` keyword only on a type conversion operator. The operator symbol is always [CType Function](../../../language-reference/functions/ctype-function.md) for a type conversion operator.
 
 You declare two operands to define a binary operator, and you declare one operand to define a unary operator, including a type conversion operator. All operands must be declared `ByVal`.
 
@@ -60,7 +60,7 @@ You declare each operand the same way you declare parameters for [Sub Procedures
 
 Because you are defining an operator on a class or structure you have defined, at least one of the operands must be of the data type of that class or structure. For a type conversion operator, either the operand or the return type must be of the data type of the class or structure.
 
-For more details, see [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md).
+For more details, see [Operator Statement](../../../language-reference/statements/operator-statement.md).
 
 ## Calling Syntax
 
@@ -89,7 +89,7 @@ The following example shows a typical call to the `+` operator defined on `veryL
 - [Function Procedures](./function-procedures.md)
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
-- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Operator Statement](../../../language-reference/statements/operator-statement.md)
 - [How to: Define an Operator](./how-to-define-an-operator.md)
 - [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
 - [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)

@@ -24,12 +24,12 @@ End Function
   
 |Term|Definition|  
 |---|---|  
-|`parameterlist`|Optional. A list of local variable names that represent the parameters of this procedure. The parentheses must be present even when the list is empty. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).|  
+|`parameterlist`|Optional. A list of local variable names that represent the parameters of this procedure. The parentheses must be present even when the list is empty. See [Parameter List](../statements/parameter-list.md).|  
 |`expression`|Required. A single expression. The type of the expression is the return type of the function.|  
-|`statements`|Required. A list of statements that returns a value by using the `Return` statement. (See [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).) The type of the value returned is the return type of the function.|  
+|`statements`|Required. A list of statements that returns a value by using the `Return` statement. (See [Return Statement](../statements/return-statement.md).) The type of the value returned is the return type of the function.|  
   
 ## Remarks  
- A *lambda expression* is a function without a name that calculates and returns a value. You can use a lambda expression anywhere you can use a delegate type, except as an argument to `RemoveHandler`. For more information about delegates, and the use of lambda expressions with delegates, see [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md) and [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
+ A *lambda expression* is a function without a name that calculates and returns a value. You can use a lambda expression anywhere you can use a delegate type, except as an argument to `RemoveHandler`. For more information about delegates, and the use of lambda expressions with delegates, see [Delegate Statement](../statements/delegate-statement.md) and [Relaxed Delegate Conversion](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## Lambda Expression Syntax  
  The syntax of a lambda expression resembles that of a standard function. The differences are as follows:  
@@ -61,7 +61,7 @@ End Function
  [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
 ## Example  
- Following is an example of a lambda expression that increments its argument and returns the value. The example shows both the single-line and multiline lambda expression syntax for a function. For more examples, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
+ Following is an example of a lambda expression that increments its argument and returns the value. The example shows both the single-line and multiline lambda expression syntax for a function. For more examples, see [Lambda Expressions](../../programming-guide/language-features/procedures/lambda-expressions.md).  
   
  [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
@@ -79,15 +79,15 @@ Dim londonCusts = db.Customers.
                   Select(Function(cust) cust)  
 ```  
   
- For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/index.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ For more information about query methods, see [Queries](../queries/index.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## See also
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Value Comparisons](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
-- [Boolean Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
-- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)
-- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+- [Function Statement](../statements/function-statement.md)
+- [Lambda Expressions](../../programming-guide/language-features/procedures/lambda-expressions.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)
+- [Statements](../../programming-guide/language-features/statements.md)
+- [Value Comparisons](../../programming-guide/language-features/operators-and-expressions/value-comparisons.md)
+- [Boolean Expressions](../../programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
+- [If Operator](if-operator.md)
+- [Relaxed Delegate Conversion](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

@@ -37,25 +37,25 @@ End Operator
 ## Parts
 
 `attrlist`  
-Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).
+Optional. See [Attribute List](attribute-list.md).
 
 `Public`  
-Required. Indicates that this operator procedure has [Public](../../../visual-basic/language-reference/modifiers/public.md) access.
+Required. Indicates that this operator procedure has [Public](../modifiers/public.md) access.
 
 `Overloads`  
-Optional. See [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md).
+Optional. See [Overloads](../modifiers/overloads.md).
 
 `Shared`  
-Required. Indicates that this operator procedure is a [Shared](../../../visual-basic/language-reference/modifiers/shared.md) procedure.
+Required. Indicates that this operator procedure is a [Shared](../modifiers/shared.md) procedure.
 
 `Shadows`  
-Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).
+Optional. See [Shadows](../modifiers/shadows.md).
 
 `Widening`  
-Required for a conversion operator unless you specify `Narrowing`. Indicates that this operator procedure defines a [Widening](../../../visual-basic/language-reference/modifiers/widening.md) conversion. See "Widening and Narrowing Conversions" on this Help page.
+Required for a conversion operator unless you specify `Narrowing`. Indicates that this operator procedure defines a [Widening](../modifiers/widening.md) conversion. See "Widening and Narrowing Conversions" on this Help page.
 
 `Narrowing`  
-Required for a conversion operator unless you specify `Widening`. Indicates that this operator procedure defines a [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md) conversion. See "Widening and Narrowing Conversions" on this Help page.
+Required for a conversion operator unless you specify `Widening`. Indicates that this operator procedure defines a [Narrowing](../modifiers/narrowing.md) conversion. See "Widening and Narrowing Conversions" on this Help page.
 
 `operatorsymbol`  
 Required. The symbol or identifier of the operator that this operator procedure defines.
@@ -72,8 +72,8 @@ Required for binary operators. The name and type of the right operand of a binar
 
 |Part|Description|
 |----------|-----------------|
-|`ByVal`|Optional, but the passing mechanism must be [ByVal](../../../visual-basic/language-reference/modifiers/byval.md).|
-|`operandname`|Required. Name of the variable representing this operand. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`ByVal`|Optional, but the passing mechanism must be [ByVal](../modifiers/byval.md).|
+|`operandname`|Required. Name of the variable representing this operand. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`operandtype`|Optional unless `Option Strict` is `On`. Data type of this operand.|
 
 `type`  
@@ -90,7 +90,7 @@ Required. Terminates the definition of this operator procedure.
 
 ## Remarks
 
-You can use `Operator` only in a class or structure. This means the *declaration context* for an operator cannot be a source file, namespace, module, interface, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+You can use `Operator` only in a class or structure. This means the *declaration context* for an operator cannot be a source file, namespace, module, interface, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
 All operators must be `Public Shared`. You cannot specify `ByRef`, `Optional`, or `ParamArray` for either operand.
 
@@ -154,7 +154,7 @@ Similarly, you can use `OrElse` if you have defined `Or` on the same operands, w
 
 ## Widening and Narrowing Conversions
 
-A *widening conversion* always succeeds at run time, while a *narrowing conversion* can fail at run time. For more information, see [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).
+A *widening conversion* always succeeds at run time, while a *narrowing conversion* can fail at run time. For more information, see [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).
 
 If you declare a conversion procedure to be `Widening`, your procedure code must not generate any failures. This means the following:
 
@@ -174,13 +174,13 @@ The following code example uses the `Operator` statement to define the outline o
 
 ## See also
 
-- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
-- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
-- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)
-- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
-- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
-- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
-- [How to: Call an Operator Procedure](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)
-- [How to: Use a Class that Defines Operators](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)
+- [IsFalse Operator](../operators/isfalse-operator.md)
+- [IsTrue Operator](../operators/istrue-operator.md)
+- [Widening](../modifiers/widening.md)
+- [Narrowing](../modifiers/narrowing.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](../../programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](../../programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)

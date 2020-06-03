@@ -46,9 +46,9 @@ Sometimes you have to use special characters in your code, that is, characters t
   
  [!code-vb[VbVbcnConventions#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#12)]  
   
- For more information, see [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md).  
+ For more information, see [How to: Break and Combine Statements in Code](how-to-break-and-combine-statements-in-code.md).  
   
- The colon (`:`) character is also used to identify a statement label. For more information, see [How to: Label Statements](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md).  
+ The colon (`:`) character is also used to identify a statement label. For more information, see [How to: Label Statements](how-to-label-statements.md).  
   
 ## Concatenation  
  Use the `&` operator for *concatenation*, or linking strings together. Do not confuse it with the `+` operator, which adds together numeric values. If you use the `+` operator to concatenate when you operate on numeric values, you can obtain incorrect results. The following example demonstrates this.  
@@ -83,5 +83,5 @@ Sometimes you have to use special characters in your code, that is, characters t
   
 ## See also
 
-- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
-- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Program Structure and Code Conventions](program-structure-and-code-conventions.md)
+- [Type Characters](../language-features/data-types/type-characters.md)

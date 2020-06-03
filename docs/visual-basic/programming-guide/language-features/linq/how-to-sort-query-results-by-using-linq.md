@@ -15,7 +15,7 @@ ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 # How to: Sort Query Results by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
- The following example shows how to create a new application that performs queries against a SQL Server database and sorts the results by multiple fields by using the `Order By` clause. The sort order for each field can be ascending order or descending order. For more information, see [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md).  
+ The following example shows how to create a new application that performs queries against a SQL Server database and sorts the results by multiple fields by using the `Order By` clause. The sort order for each field can be ascending order or descending order. For more information, see [Order By Clause](../../../language-reference/queries/order-by-clause.md).  
   
  The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
@@ -69,7 +69,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 ## See also
 
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ](index.md)
+- [Queries](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

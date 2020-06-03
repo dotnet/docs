@@ -14,4 +14,4 @@ An operation cannot be carried out because it would invalidate the current state
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

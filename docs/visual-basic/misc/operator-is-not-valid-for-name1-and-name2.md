@@ -14,4 +14,4 @@ An operator is not appropriate for the types being operated on.
   
 ## See also
 
-- [Operators](../../visual-basic/language-reference/operators/index.md)
+- [Operators](../language-reference/operators/index.md)

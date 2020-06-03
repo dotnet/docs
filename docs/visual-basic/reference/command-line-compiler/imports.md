@@ -25,7 +25,7 @@ Imports namespaces from a specified assembly.
 ## Remarks  
  The `-imports` option imports any namespace defined within the current set of source files or from any referenced assembly.  
   
- The members in a namespace specified with `-imports` are available to all source-code files in the compilation. Use the [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) to use a namespace in a single source-code file.  
+ The members in a namespace specified with `-imports` are available to all source-code files in the compilation. Use the [Imports Statement (.NET Namespace and Type)](../../language-reference/statements/imports-statement-net-namespace-and-type.md) to use a namespace in a single source-code file.  
   
 |To set -imports in the Visual Studio integrated development environment|  
 |---|  
@@ -44,6 +44,6 @@ End Module
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [References and the Imports Statement](../../programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

@@ -16,4 +16,4 @@ An assignment has been attempted that is not valid.
   
 ## See also
 
-- [Assignment Operators](../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Assignment Operators](../language-reference/operators/assignment-operators.md)

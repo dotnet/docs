@@ -222,9 +222,9 @@ To obtain member caller information, you use attributes that are applied to opti
 |---|---|---|
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|
-|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).|`String`|
+|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (Visual Basic)](../caller-information.md).|`String`|
 
-For more information about the Caller Info attributes, see [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md).
+For more information about the Caller Info attributes, see [Caller Information (Visual Basic)](../caller-information.md).
 
 ## <a name="VB"></a> Visual Basic Attributes
 
@@ -267,7 +267,7 @@ Use `VBFixedArrayAttribute` to declare arrays that are fixed in size. Like Visua
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+- [Visual Basic Programming Guide](../../index.md)
 - [Attributes](../../../../standard/attributes/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+- [Reflection (Visual Basic)](../reflection.md)
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md)

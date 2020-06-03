@@ -19,15 +19,15 @@ You control the availability of a variable by specifying its *access level*. The
   
 - *Local variables* (defined inside a procedure) nominally have public access, although only code within their procedure can access them. You cannot change the access level of a local variable, but you can change the access level of the procedure that contains it.  
   
- For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For more information, see [Access levels in Visual Basic](access-levels.md).  
   
 ## Private and Public Access  
   
 #### To make a variable accessible only from within its module, class, or structure  
   
-1. Place the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) for the variable inside the module, class, or structure, but outside any procedure.  
+1. Place the [Dim Statement](../../../language-reference/statements/dim-statement.md) for the variable inside the module, class, or structure, but outside any procedure.  
   
-2. Include the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the `Dim` statement.  
+2. Include the [Private](../../../language-reference/modifiers/private.md) keyword in the `Dim` statement.  
   
      You can read or write to the variable from anywhere within the module, class, or structure, but not from outside it.  
   
@@ -35,7 +35,7 @@ You control the availability of a variable by specifying its *access level*. The
   
 1. For a member variable, place the `Dim` statement for the variable inside a module, class, or structure, but outside any procedure.  
   
-2. Include the [Public](../../../../visual-basic/language-reference/modifiers/public.md) keyword in the `Dim` statement.  
+2. Include the [Public](../../../language-reference/modifiers/public.md) keyword in the `Dim` statement.  
   
      You can read or write to the variable from any code that interoperates with your assembly.  
   
@@ -54,7 +54,7 @@ You control the availability of a variable by specifying its *access level*. The
   
 1. Place the `Dim` statement for the variable inside a class, but outside any procedure.  
   
-2. Include the [Protected](../../../../visual-basic/language-reference/modifiers/protected.md) keyword in the `Dim` statement.  
+2. Include the [Protected](../../../language-reference/modifiers/protected.md) keyword in the `Dim` statement.  
   
      You can read or write to the variable from anywhere within the class, as well as from within any class derived from it, but not from outside any class in the derivation chain.  
   
@@ -62,7 +62,7 @@ You control the availability of a variable by specifying its *access level*. The
   
 1. Place the `Dim` statement for the variable inside a module, class, or structure, but outside any procedure.  
   
-2. Include the [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) keyword in the `Dim` statement.  
+2. Include the [Friend](../../../language-reference/modifiers/friend.md) keyword in the `Dim` statement.  
   
      You can read or write to the variable from anywhere within the module, class, or structure, as well as from any code in the same assembly, but not from outside the assembly.  
   
@@ -82,9 +82,9 @@ Private numberForMeOnly As Integer
   
 ## See also
 
-- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
-- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Public](../../../../visual-basic/language-reference/modifiers/public.md)
-- [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)
-- [Friend](../../../../visual-basic/language-reference/modifiers/friend.md)
-- [Private](../../../../visual-basic/language-reference/modifiers/private.md)
+- [Access levels in Visual Basic](access-levels.md)
+- [Dim Statement](../../../language-reference/statements/dim-statement.md)
+- [Public](../../../language-reference/modifiers/public.md)
+- [Protected](../../../language-reference/modifiers/protected.md)
+- [Friend](../../../language-reference/modifiers/friend.md)
+- [Private](../../../language-reference/modifiers/private.md)

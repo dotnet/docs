@@ -18,15 +18,15 @@ Specifies that an argument is passed [by value](../../programming-guide/language
 ## Remarks
  The `ByVal` modifier can be used in these contexts:
 
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+ [Declare Statement](../statements/declare-statement.md)
 
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+ [Function Statement](../statements/function-statement.md)
   
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
+ [Operator Statement](../statements/operator-statement.md)
   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+ [Property Statement](../statements/property-statement.md)
   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+ [Sub Statement](../statements/sub-statement.md)
 
 ## Example
  The following example demonstrates the use of the `ByVal` parameter passing mechanism with a reference type argument. In the example, the argument is `c1`, an instance of class `Class1`. `ByVal` prevents the code in the procedures from changing the underlying value of the reference argument, `c1`, but does not protect the accessible fields and properties of `c1`.
@@ -35,5 +35,5 @@ Specifies that an argument is passed [by value](../../programming-guide/language
 
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Keywords](../keywords/index.md)
+- [Passing Arguments by Value and by Reference](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

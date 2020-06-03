@@ -42,7 +42,7 @@ RaiseEvent eventname[( argumentlist )]
 > Non-shared events should not be raised within the constructor of the class in which they are declared. Although such events do not cause run-time errors, they may fail to be caught by associated event handlers. Use the `Shared` modifier to create a shared event if you need to raise an event from a constructor.  
   
 > [!NOTE]
-> You can change the default behavior of events by defining a custom event. For custom events, the `RaiseEvent` statement invokes the event's `RaiseEvent` accessor. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
+> You can change the default behavior of events by defining a custom event. For custom events, the `RaiseEvent` statement invokes the event's `RaiseEvent` accessor. For more information on custom events, see [Event Statement](event-statement.md).  
   
 ## Example  
  The following example uses events to count down seconds from 10 to 0. The code illustrates several of the event-related methods, properties, and statements, including the `RaiseEvent` statement.  
@@ -71,8 +71,8 @@ RaiseEvent eventname[( argumentlist )]
   
 ## See also
 
-- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
-- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
-- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
-- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Events](../../programming-guide/language-features/events/index.md)
+- [Event Statement](event-statement.md)
+- [AddHandler Statement](addhandler-statement.md)
+- [RemoveHandler Statement](removehandler-statement.md)
+- [Handles](handles-clause.md)

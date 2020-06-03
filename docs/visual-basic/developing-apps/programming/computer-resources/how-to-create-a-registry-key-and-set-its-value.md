@@ -73,5 +73,5 @@ To run this process, your assembly requires a privilege level granted by the <xr
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>
 - <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>
-- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)
 - [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)

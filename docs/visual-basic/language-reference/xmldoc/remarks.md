@@ -20,11 +20,11 @@ Specifies a remarks section for the member.
  A description of the member.  
   
 ## Remarks  
- Use the `<remarks>` tag to add information about a type, supplementing the information specified with [\<summary>](../../../visual-basic/language-reference/xmldoc/summary.md).  
+ Use the `<remarks>` tag to add information about a type, supplementing the information specified with [\<summary>](summary.md).  
   
  This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
- Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<remarks>` tag to explain what the `UpdateRecord` method does.  
@@ -33,4 +33,4 @@ Specifies a remarks section for the member.
   
 ## See also
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](index.md)

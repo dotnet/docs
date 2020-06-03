@@ -14,4 +14,4 @@ An application-defined or user-defined error occurred. Check the error.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

@@ -2,7 +2,7 @@
 title: Telemetry collection by ML.NET CLI
 description: Learn about ML.NET CLI telemetry features that collect usage information for analysis, which data is collected, and how to disable it. Also, find links to the .NET license agreement and information about Microsoft GDPR compliance.
 ms.topic: conceptual
-ms.date: 09/03/2019
+ms.date: 06/03/2020
 ms.custom: mlnet-tooling
 ---
 
@@ -67,7 +67,7 @@ The Microsoft distribution of ML.NET CLI is licensed with the [Microsoft Softwar
 
 ## Disclosure
 
-When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet auto-train`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
+When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet classification`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
 
 ## See also
 

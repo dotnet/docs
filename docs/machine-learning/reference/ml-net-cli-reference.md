@@ -7,7 +7,7 @@ ms.custom: mlnet-tooling
 
 # The ML.NET CLI command reference
 
-The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
+The `classification`, `regression`, and `recommendation` commands are the main commands provided by the ML.NET CLI tool. These commands allow you to generate good quality ML.NET models for classification, regression, and recommendation models using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
@@ -20,7 +20,7 @@ Example usage:
 mlnet regression --dataset "cars.csv" --label-col price
 ```
 
-The `mlnet auto-train` command generates the following assets:
+The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) generate the following assets:
 
 - A serialized model .zip ("best model") ready to use.
 - C# code to run/score that generated model.
@@ -52,55 +52,116 @@ mlnet classification --dataset "/MyDataSets/Population-Training.csv" --test-data
 
 ## Command options
 
-`mlnet auto-train` trains multiple models based on the provided dataset and finally selects the best model, saves it as a serialized .zip file plus generates related C# code for scoring and training.
+The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) train multiple models based on the provided dataset and ML.NET CLI options. These commands also select the best model, save the model as a serialized .zip file, and generate related C# code for scoring and training.
+
+### Classification options
+
+Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (e.g. sentiment analysis).
 
 ```console
-mlnet auto-train
+mlnet classification
 
---task | --mltask | -T <value>
+--dataset <path> (REQUIRED)
 
---dataset | -d <value>
+--label-col <col> (REQUIRED)
 
-[
- [--validation-dataset | -v <value>]
-  --test-dataset | -t <value>
-]
+--cache <option>
 
---label-column-name | -n <value>
-|
---label-column-index | -i <value>
+--has-header (Default: true)
 
-[--ignore-columns | -I <value>]
+--ignore-cols <cols>
 
-[--has-header | -h <value>]
+--log-file-path <path>
 
-[--max-exploration-time | -x <value>]
+--name <name>
 
-[--verbosity | -V <value>]
+-o, --output <path>
 
-[--cache | -c <value>]
+--test-dataset <path>
 
-[--name | -N <value>]
+--train-time <time> (Default: 30 minutes, in seconds)
 
-[--output-path | -o <value>]
+--validation-dataset <path>
 
-[--help | -h]
+-v, --verbosity <v>
+
+-?, -h, --help
+
+```
+
+### Regression options
+
+Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (e.g. price prediction).
+
+```console
+mlnet classification
+
+--dataset <path> (REQUIRED)
+
+--label-col <col> (REQUIRED)
+
+--cache <option>
+
+--has-header (Default: true)
+
+--ignore-cols <cols>
+
+--log-file-path <path>
+
+--name <name>
+
+-o, --output <path>
+
+--test-dataset <path>
+
+--train-time <time> (Default: 30 minutes, in seconds)
+
+--validation-dataset <path>
+
+-v, --verbosity <v>
+
+-?, -h, --help
+
+```
+
+### Recommendation options
+
+Running `mlnet recommendation` will train a recommendation model.  Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
+
+```console
+mlnet classification
+
+--dataset <path> (REQUIRED)
+
+--item-col <col> (REQUIRED)
+
+--rating-col <col> (REQUIRED)
+
+--user-col <col> (REQUIRED)
+
+--cache <option>
+
+--has-header (Default: true)
+
+--log-file-path <path>
+
+--name <name>
+
+-o, --output <path>
+
+--test-dataset <path>
+
+--train-time <time> (Default: 30 minutes, in seconds)
+
+--validation-dataset <path>
+
+-v, --verbosity <v>
+
+-?, -h, --help
 
 ```
 
 Invalid input options cause the CLI tool to emit a list of valid inputs and an error message.
-
-## Task
-
-`--task | --mltask | -T` (string)
-
-A single string providing the ML problem to solve. For instance, any of the following tasks (The CLI will eventually support all tasks supported in AutoML):
-
-- `regression` - Choose if the ML Model will be used to predict a numeric value
-- `binary-classification` - Choose if the ML Model result has two possible categorical boolean values (0 or 1).
-- `multiclass-classification` - Choose if the ML Model result has multiple categorical possible values.
-
-Only one ML task should be provided in this argument.
 
 ## Dataset
 
@@ -153,9 +214,33 @@ In any case, those percentages will be decided by the user using the CLI who wil
 
 `--label-col` (int or string)
 
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (The column index values start at 0).
+With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
 
-This argument is used only for supervised ML tasks such as a *classification problem* or *regression problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+This argument is used for *classification* and *regression* problems.
+
+## Item column
+
+`--item-col` (int or string)
+
+The item column has the list of items that users rate (items are recommended to users). This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
+
+This argument is used only for the *recommendation* task.
+
+## Rating column
+
+`--rating-col` (int or string)
+
+The rating column has the list of ratings that are given to items by users. This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
+
+This argument is used only for the *recommendation* task.
+
+## User column
+
+`--user-col` (int or string)
+
+The user column has the list of users that give ratings to items. This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
+
+This argument is used only for the *recommendation* task.
 
 ## Ignore columns
 
@@ -179,7 +264,7 @@ Possible values are:
 - `true`
 - `false`
 
-The by default value is `true` if this argument is not specified by the user.
+The ML.NET CLI will try to detect this property if this argument is not specified by the user.
 
 ## Train time
 
@@ -193,7 +278,7 @@ The needed time for iterations can vary depending on the size of the dataset.
 
 ## Cache
 
-`--cache | -c` (string)
+`--cache` (string)
 
 If you use caching, the whole training dataset will be loaded in-memory.
 
@@ -211,7 +296,7 @@ If you don't specify the `--cache` parameter, then the cache `auto` configuratio
 
 ## Name
 
-`--name | -N` (string)
+`--name` (string)
 
 The name for the created output project or solution. If no name is specified, the name `sample-{mltask}` is used.
 
@@ -225,7 +310,7 @@ Root location/folder to place the generated output. The default is the current d
 
 ## Verbosity
 
-`--verbosity | -V` (string)
+`--verbosity | -v` (string)
 
 Sets the verbosity level of the standard output.
 
@@ -235,11 +320,11 @@ Allowed values are:
 - `m[inimal]`  (by default)
 - `diag[nostic]` (logging information level)
 
-By default, the CLI tool should show some minimum feedback (minimal) when working, such as mentioning that it is working and if possible how much time is left or what % of the time is completed.
+By default, the CLI tool should show some minimum feedback (`minimal`) when working, such as mentioning that it is working and if possible how much time is left or what % of the time is completed.
 
 ## Help
 
-`-h|--help`
+`-h |--help`
 
 Prints out help for the command with a description for each command's parameter.
 

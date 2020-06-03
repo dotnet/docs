@@ -1,7 +1,7 @@
 ---
 title: ML.NET CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
-ms.date: 12/18/2019
+ms.date: 06/03/2020
 ms.custom: mlnet-tooling
 ---
 
@@ -17,7 +17,7 @@ The `auto-train` command is the main command provided by the ML.NET CLI tool. Th
 Example usage:
 
 ```console
-mlnet auto-train --task regression --dataset "cars.csv" --label-column-name price
+mlnet regression --dataset "cars.csv" --label-col price
 ```
 
 The `mlnet auto-train` command generates the following assets:
@@ -32,22 +32,22 @@ The third asset, the training code, shows you what ML.NET API code was used by t
 
 ## Examples
 
-The simplest CLI command for a binary classification problem (AutoML infers most of the configuration from the provided data):
+The simplest CLI command for a classification problem (AutoML infers most of the configuration from the provided data):
 
 ```console
-mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
 ```
 
 Another simple CLI command for a regression problem:
 
 ``` console
-mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price
+mlnet regression --dataset "cars.csv" --label-col Price
 ```
 
-Create and train a binary-classification model with a train dataset, a test dataset, and further customization explicit arguments:
+Create and train a classification model with a train dataset, a test dataset, and further customization explicit arguments:
 
 ```console
-mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
+mlnet classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-col "InsuranceRisk" --cache on --train-time 600
 ```
 
 ## Command options
@@ -149,27 +149,17 @@ Hence, the separation of data could be 80/10/10 or 75/15/10. For example:
 
 In any case, those percentages will be decided by the user using the CLI who will provide the files already split.
 
-## Label column name
+## Label column
 
-`--label-column-name | -n` (string)
+`--label-col` (int or string)
 
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header.
+With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (The column index values start at 0).
 
-This argument is used only for supervised ML tasks such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
-
-## Label column index
-
-`--label-column-index | -i` (int)
-
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's numeric index in the dataset's file (The column index values start at 1).
-
-*Note:* If the user is also using the `--label-column-name`, the `--label-column-name` is the one being used.
-
-This argument is used only for supervised ML task such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+This argument is used only for supervised ML tasks such as a *classification problem* or *regression problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
 
 ## Ignore columns
 
-`--ignore-columns | -I` (string)
+`--ignore-columns` (string)
 
 With this argument, you can ignore existing columns in the dataset file so they are not loaded and used by the training processes.
 
@@ -181,7 +171,7 @@ Example:
 
 ## Has header
 
-`--has-header | -h` (bool)
+`--has-header` (bool)
 
 Specify if the dataset file(s) have a header row.
 Possible values are:
@@ -191,13 +181,11 @@ Possible values are:
 
 The by default value is `true` if this argument is not specified by the user.
 
-In order to use the `--label-column-name` argument, you need to have a header in the dataset file and `--has-header` set to `true` (which is by default).
+## Train time
 
-## Max exploration time
+`--train-time` (string)
 
-`--max-exploration-time | -x` (string)
-
-By default, the maximum exploration time is 30 minutes.
+By default, the maximum exploration / train time is 30 minutes.
 
 This argument sets the maximum time (in seconds) for the process to explore multiple trainers and configurations. The configured time may be exceeded if the provided time is too short (say 2 seconds) for a single iteration. In this case, the actual time is the required time to produce one model configuration in a single iteration.
 

@@ -3,7 +3,7 @@ title: Analyze sentiment using the ML.NET CLI
 description: Automatically generate an ML model and related C# code from a sample dataset
 author: cesardl
 ms.author: cesardl
-ms.date: 12/23/2019
+ms.date: 06/03/2020
 ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
@@ -11,13 +11,13 @@ ms.topic: tutorial
 
 # Analyze sentiment using the ML.NET CLI
 
-Learn how to use ML.NET CLI to automatically generate an ML.NET model and underlying C# code. You provide your dataset and the machine learning task you want to implement, and the CLI uses the AutoML engine to create model generation and deployment source code, as well as the binary model.
+Learn how to use ML.NET CLI to automatically generate an ML.NET model and underlying C# code. You provide your dataset and the machine learning task you want to implement, and the CLI uses the AutoML engine to create model generation and deployment source code, as well as the classification model.
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
 >
 > - Prepare your data for the selected machine learning task
-> - Run the 'mlnet auto-train' command from the CLI
+> - Run the 'mlnet classification' command from the CLI
 > - Review the quality metric results
 > - Understand the generated C# code to use the model in your application
 > - Explore the generated C# code that was used to train the model
@@ -31,7 +31,7 @@ You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) to gen
 
 ## Pre-requisites
 
-- [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) or later
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1) or later
 - (Optional) [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 
@@ -72,22 +72,22 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
     Now, you are ready to start using the CLI for this 'Sentiment Analysis' scenario.
 
     > [!NOTE]
-    > After finishing this tutorial you can also try with your own datasets as long as they are ready to be used for any of the ML tasks currently supported by the ML.NET CLI Preview which are *'Binary Classification', 'Multi-class Classification' and 'Regression'*).
+    > After finishing this tutorial you can also try with your own datasets as long as they are ready to be used for any of the ML tasks currently supported by the ML.NET CLI Preview which are *'Binary Classification', 'Classification', 'Regression',* and *'Recommendation'*.
 
-## Run the 'mlnet auto-train' command
+## Run the 'mlnet classification' command
 
 1. Run the following ML.NET CLI command:
 
     ```console
-    mlnet auto-train --task binary-classification --dataset "yelp_labelled.txt" --label-column-index 1 --has-header false --max-exploration-time 10
+    mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
     ```
 
-    This command runs the **`mlnet auto-train` command**:
-    - for an **ML task** of type **`binary-classification`**
+    This command runs the **`mlnet classification` command**:
+    - for the **ML task** of *classification*
     - uses the **dataset file `yelp_labelled.txt`** as training and testing dataset (internally the CLI will either use cross-validation or split it in two datasets, one for training and one for testing)
     - where the **objective/target column** you want to predict (commonly called **'label'**) is the **column with index 1** (that is the second column, since the index is zero-based)
     - does **not use a file header** with column names since this particular dataset file doesn't have a header
-    - the **targeted exploration time** for the experiment is **10 seconds**
+    - the **targeted exploration/train time** for the experiment is **10 seconds**
 
     You will see output from the CLI, similar to:
 
@@ -133,7 +133,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
 ## Explore the generated C# code to use for running the model to make predictions
 
-1. In Visual Studio (2017 or 2019) open the solution generated in the folder named `SampleBinaryClassification` within your original destination folder (in the tutorial was named `/cli-test`). You should see a solution similar to:
+1. In Visual Studio (2017 or 2019) open the solution generated in the folder named `SampleClassification` within your original destination folder (in the tutorial was named `/cli-test`). You should see a solution similar to:
 
     > [!NOTE]
     > In the tutorial we suggest to use Visual Studio, but you can also explore the generated C# code (two projects) with any text editor and run the generated console app with the `dotnet CLI` on macOS, Linux or Windows machine.
@@ -201,8 +201,8 @@ Those enumerated assets are explained in the following steps of the tutorial.
     Run the console app from the command-prompt by typing the following commands:
 
     ```dotnetcli
-    cd SampleBinaryClassification
-    cd SampleBinaryClassification.ConsoleApp
+    cd SampleClassification
+    cd SampleClassification.ConsoleApp
 
     dotnet run
     ```

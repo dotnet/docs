@@ -2,9 +2,6 @@
 title: Create a console application with .NET Core in Visual Studio for Mac
 description: Learn how to create a .NET Core console application with C# or Visual Basic using Visual Studio for Mac.
 ms.date: 06/02/2020
-dev_langs:
-  - "csharp"
-  - "vb"
 ---
 # Create a console application with .NET Core in Visual Studio for Mac
 
@@ -18,7 +15,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).

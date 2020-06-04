@@ -39,7 +39,7 @@ typedef struct _MDAInfo {
   
  The runtime takes the following steps when an event that triggers the creation of an MDA is fired:  
   
-- If the host has not registered an [IActionOnCLREvent](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md) instance by calling [ICLROnEventManager::RegisterActionOnEvent](iclroneventmanager-registeractiononevent-method.md) to be notified of an `Event_MDAFired` event, the runtime proceeds with its default, non-hosted behavior.  
+- If the host has not registered an [IActionOnCLREvent](iactiononclrevent-interface.md) instance by calling [ICLROnEventManager::RegisterActionOnEvent](iclroneventmanager-registeractiononevent-method.md) to be notified of an `Event_MDAFired` event, the runtime proceeds with its default, non-hosted behavior.  
   
 - If the host has registered a handler for this event, the runtime checks to see whether a debugger is attached to the process. If it is, the runtime breaks into the debugger. When the debugger continues, it calls into the host. If no debugger is attached, the runtime calls `IActionOnCLREvent::OnEvent` and passes a pointer to an `MDAInfo` instance as the `data` parameter.  
   

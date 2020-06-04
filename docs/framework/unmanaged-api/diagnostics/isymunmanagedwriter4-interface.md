@@ -17,7 +17,7 @@ ISymUnmanagedWriter4 interface.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetDebugInfoWithPadding Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Functions the same as [GetDebugInfo Method](isymunmanagedwriter-getdebuginfo-method.md) except that the path string is padded with zeros following the terminating null character to make the string data a fixed size of `MAX_PATH`. Padding is only given if the path string length itself is less than `MAX_PATH`.<br /><br /> This makes it easier to write tools that difference PE files.|  
+|[GetDebugInfoWithPadding Method](isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Functions the same as [GetDebugInfo Method](isymunmanagedwriter-getdebuginfo-method.md) except that the path string is padded with zeros following the terminating null character to make the string data a fixed size of `MAX_PATH`. Padding is only given if the path string length itself is less than `MAX_PATH`.<br /><br /> This makes it easier to write tools that difference PE files.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  

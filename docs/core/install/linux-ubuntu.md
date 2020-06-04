@@ -8,7 +8,7 @@ ms.date: 06/01/2020
 
 # Install .NET Core SDK and .NET Core Runtime on Ubuntu
 
-.NET Core is supported on different Ubuntu versions. This article describes how to install .NET Core on Ubuntu. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
+.NET Core is supported on Ubuntu. This article describes how to install .NET Core on Ubuntu. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
 ## Supported distributions
 

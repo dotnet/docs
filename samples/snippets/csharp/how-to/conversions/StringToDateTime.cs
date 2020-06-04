@@ -53,8 +53,8 @@ namespace conversions
         {
             // <Snippet4>
             var cultureInfo = new CultureInfo("en-US");
-            string[] dateString = { " Friday, April 10, 2009", "Friday, April 10, 2009" };
-            foreach (string dateString in dateString)
+            string[] dateStrings = { " Friday, April 10, 2009", "Friday, April 10, 2009" };
+            foreach (string dateString in dateStrings)
             {
                 try
                 {

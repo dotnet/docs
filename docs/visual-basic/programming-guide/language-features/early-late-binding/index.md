@@ -34,5 +34,5 @@ The Visual Basic compiler performs a process called `binding` when an object is 
 ## See also
 
 - <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A>
-- [Object Lifetime: How Objects Are Created and Destroyed](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Object Lifetime: How Objects Are Created and Destroyed](../objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)

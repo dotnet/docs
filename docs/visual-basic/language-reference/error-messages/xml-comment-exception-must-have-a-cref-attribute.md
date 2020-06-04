@@ -24,6 +24,6 @@ Add the `cref` attribute to the exception as follows:
 
 ## See also
 
-- [\<exception>](../../../visual-basic/language-reference/xmldoc/exception.md)
-- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [\<exception>](../xmldoc/exception.md)
+- [How to: Create XML Documentation](../../programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [XML Comment Tags](../xmldoc/index.md)

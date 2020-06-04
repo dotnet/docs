@@ -19,5 +19,5 @@ An event can be raised only from the declaration space in which it is declared. 
   
 ## See also
 
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
-- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+- [Event Statement](../statements/event-statement.md)
+- [RaiseEvent Statement](../statements/raiseevent-statement.md)

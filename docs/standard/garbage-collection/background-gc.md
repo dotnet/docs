@@ -33,11 +33,11 @@ Background server garbage collection functions similarly to background workstati
 
 The following illustration shows background *workstation* garbage collection performed on a separate, dedicated thread:
 
-![Background workstation garbage collection](./media/fundamentals/background-workstation-garbage-collection.png)
+![Background workstation garbage collection](media/fundamentals/background-workstation-garbage-collection.png)
 
 The following illustration shows background *server* garbage collection performed on separate, dedicated threads:
 
-![Background server garbage collection](./media/fundamentals/background-server-garbage-collection.png)
+![Background server garbage collection](media/fundamentals/background-server-garbage-collection.png)
 
 ## Concurrent garbage collection
 
@@ -57,7 +57,7 @@ Concurrent garbage collection is performed on a dedicated thread. By default, th
 
 The following illustration shows concurrent garbage collection performed on a separate dedicated thread.
 
-![Concurrent Garbage Collection Threads](./media/gc-concurrent.png)
+![Concurrent Garbage Collection Threads](media/gc-concurrent.png)
 
 ## See also
 

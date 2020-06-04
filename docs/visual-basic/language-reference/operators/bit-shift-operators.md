@@ -10,10 +10,10 @@ ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
 # Bit Shift Operators (Visual Basic)
 The following are the bit shift operators defined in Visual Basic.  
   
- [<\< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)  
+ [<\< Operator](left-shift-operator.md)  
   
- [>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)  
+ [>> Operator](right-shift-operator.md)  
   
 ## See also
 
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)

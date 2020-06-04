@@ -16,5 +16,5 @@ The `TextFieldParser` cannot read from the file because a quotation mark (") has
 
 - [TextFieldParser.SetDelimiters Method](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A)
 - [TextFieldParser.Delimiters Property](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A)
-- [How to: Read From Comma-Delimited Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
-- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+- [How to: Read From Comma-Delimited Text Files](../developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
+- [TextFieldParser Object](../language-reference/objects/textfieldparser-object.md)

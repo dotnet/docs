@@ -15,11 +15,11 @@ ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 Usually, you cannot call a procedure with more arguments than the procedure declaration specifies. When you need an indefinite number of arguments, you can declare a *parameter array*, which allows a procedure to accept an array of values for a parameter. You do not have to know the number of elements in the parameter array when you define the procedure. The array size is determined individually by each call to the procedure.  
   
 ## Declaring a ParamArray  
- You use the [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) keyword to denote a parameter array in the parameter list. The following rules apply:  
+ You use the [ParamArray](../../../language-reference/modifiers/paramarray.md) keyword to denote a parameter array in the parameter list. The following rules apply:  
   
 - A procedure can define only one parameter array, and it must be the last parameter in the procedure definition.  
   
-- The parameter array must be passed by value. It is good programming practice to explicitly include the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) keyword in the procedure definition.  
+- The parameter array must be passed by value. It is good programming practice to explicitly include the [ByVal](../../../language-reference/modifiers/byval.md) keyword in the procedure definition.  
   
 - The parameter array is automatically optional. Its default value is an empty one-dimensional array of the parameter array's element type.  
   
@@ -28,7 +28,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 ## Calling a ParamArray  
  When you call a procedure that defines a parameter array, you can supply the argument in any one of the following ways:  
   
-- Nothing — that is, you can omit the [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) argument. In this case, an empty array is passed to the procedure. If you explicitly pass the [Nothing](../../../../visual-basic/language-reference/nothing.md) keyword, a null array is passed to the procedure and may result in a NullReferenceException if the called procedure does not check for this condition.
+- Nothing — that is, you can omit the [ParamArray](../../../language-reference/modifiers/paramarray.md) argument. In this case, an empty array is passed to the procedure. If you explicitly pass the [Nothing](../../../language-reference/nothing.md) keyword, a null array is passed to the procedure and may result in a NullReferenceException if the called procedure does not check for this condition.
   
 - A list of an arbitrary number of arguments, separated by commas. The data type of each argument must be implicitly convertible to the `ParamArray` element type.  
   
@@ -37,7 +37,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
  In all cases, the code within the procedure treats the parameter array as a one-dimensional array with elements of the same data type as the `ParamArray` data type.  
   
 > [!IMPORTANT]
-> Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the size of the array that the calling code passed to it. Take appropriate steps if it is too large for your application. For more information, see [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+> Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the size of the array that the calling code passed to it. Take appropriate steps if it is too large for your application. For more information, see [Arrays](../arrays/index.md).  
   
 ## Example  
  The following example defines and calls the function `calcSum`. The `ParamArray` modifier for the parameter `args` enables the function to accept a variable number of arguments.  
@@ -59,5 +59,5 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 - [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)
 - [Optional Parameters](./optional-parameters.md)
 - [Procedure Overloading](./procedure-overloading.md)
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
+- [Arrays](../arrays/index.md)
+- [Optional](../../../language-reference/modifiers/optional.md)

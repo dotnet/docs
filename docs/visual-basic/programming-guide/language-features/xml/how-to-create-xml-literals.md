@@ -48,7 +48,7 @@ You can create an XML document, fragment, or element directly in code by using a
   
 ## See also
 
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
-- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
-- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML](index.md)
+- [Creating XML in Visual Basic](creating-xml.md)
+- [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md)
+- [XML Document Literal](../../../language-reference/xml-literals/xml-document-literal.md)

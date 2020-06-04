@@ -18,7 +18,7 @@ Provides links to pages that discuss incorporating data access functionality int
 [Visual Studio data tools for .NET](/visualstudio/data-tools/visual-studio-data-tools-for-dotnet)  
 Provides links to pages on creating applications that work with data, using Visual Studio.
 
-[LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
+[LINQ](../programming-guide/language-features/linq/index.md)  
 Provides links to topics that describe how to use LINQ with Visual Basic.
 
 [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md)  

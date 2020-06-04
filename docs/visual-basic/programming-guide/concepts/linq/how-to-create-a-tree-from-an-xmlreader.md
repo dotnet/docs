@@ -9,7 +9,7 @@ This topic shows how to create an XML tree directly from an <xref:System.Xml.Xml
 
 ## Example
 
-This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).
+This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](sample-xml-file-books-linq-to-xml.md).
 
 The following code creates an `T:System.Xml.XmlReader` object, and then reads nodes until it finds the first element node. It then loads the <xref:System.Xml.Linq.XElement> object.
 
@@ -50,4 +50,4 @@ This example produces the following output:
 
 ## See also
 
-- [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+- [Parsing XML (Visual Basic)](parsing-xml.md)

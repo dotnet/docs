@@ -34,5 +34,5 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
 - [Platform Invoke Examples](../../../framework/interop/platform-invoke-examples.md)
 - [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md)
 - [Defining a Method with Reflection Emit](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w63y4d4f(v=vs.100))
-- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [Walkthrough: Calling Windows APIs](walkthrough-calling-windows-apis.md)
+- [COM Interop](index.md)

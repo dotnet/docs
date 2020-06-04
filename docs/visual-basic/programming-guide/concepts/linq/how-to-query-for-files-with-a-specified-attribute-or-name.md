@@ -59,5 +59,5 @@ Create a Visual Basic console application project, with an `Imports` statement f
   
 ## See also
 
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)
+- [LINQ and File Directories (Visual Basic)](linq-and-file-directories.md)

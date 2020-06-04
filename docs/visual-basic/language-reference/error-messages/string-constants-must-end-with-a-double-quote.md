@@ -19,4 +19,4 @@ String constants must begin and end with quotation marks.
   
 ## See also
 
-- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)
+- [Strings](../../programming-guide/language-features/strings/index.md)

@@ -15,19 +15,19 @@ This topic describes task and conceptual topics that are associated with the reg
   
 ## In This Section  
 
- [How to: Create a Registry Key and Set Its Value](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)  
+ [How to: Create a Registry Key and Set Its Value](how-to-create-a-registry-key-and-set-its-value.md)  
  Describes how to use the `CreateSubKey` and `SetValue` methods of the `My.Computer.Registry` object to create a registry key and set its value.  
   
- [How to: Read a Value from a Registry Key](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)  
+ [How to: Read a Value from a Registry Key](how-to-read-a-value-from-a-registry-key.md)  
  Describes how to use the `GetValue` method of the `My.Computer.Registry` object to read a value from a registry key.  
   
- [How to: Delete a Registry Key](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)  
+ [How to: Delete a Registry Key](how-to-delete-a-registry-key.md)  
  Describes how to use the `DeleteSubKey` method of the `My.Computer.Registry.CurrentUser` property to delete a registry key.  
   
- [Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
+ [Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace](reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
  Describes how to use the `Registry` and `RegistryKey` classes of the .NET Framework to access the registry.  
   
- [Security and the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)  
+ [Security and the Registry](security-and-the-registry.md)  
  Discusses security issues involving the registry.  
   
 ## Related Sections  

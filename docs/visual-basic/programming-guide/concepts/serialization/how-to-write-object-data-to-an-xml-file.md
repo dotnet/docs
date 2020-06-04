@@ -51,5 +51,5 @@ End Module
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
-- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [How to: Read Object Data from an XML File (Visual Basic)](how-to-read-object-data-from-an-xml-file.md)
+- [Serialization (Visual Basic)](index.md)

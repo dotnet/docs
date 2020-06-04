@@ -21,4 +21,4 @@ The `#Region` block must be declared at a class, module, or namespace level. A c
   
 ## See also
 
-- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
+- [#Region Directive](../directives/region-directive.md)

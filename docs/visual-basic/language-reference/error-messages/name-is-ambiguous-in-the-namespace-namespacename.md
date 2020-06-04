@@ -19,5 +19,5 @@ You have provided a name that is ambiguous and therefore conflicts with another 
   
 ## See also
 
-- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
-- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Namespaces in Visual Basic](../../programming-guide/program-structure/namespaces.md)
+- [Namespace Statement](../statements/namespace-statement.md)

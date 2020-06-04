@@ -14,5 +14,5 @@ A late-bound index `Get` or `Set` call has been attempted.
   
 ## See also
 
-- [Get Statement](../../visual-basic/language-reference/statements/get-statement.md)
-- [Set Statement](../../visual-basic/language-reference/statements/set-statement.md)
+- [Get Statement](../language-reference/statements/get-statement.md)
+- [Set Statement](../language-reference/statements/set-statement.md)

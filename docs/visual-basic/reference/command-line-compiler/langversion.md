@@ -40,6 +40,6 @@ vbc -langversion:9.0 sample.vb
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
 - [Targeting a Specific .NET Framework Version](/visualstudio/ide/visual-studio-multi-targeting-overview)

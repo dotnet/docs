@@ -12,6 +12,6 @@ You attempted an operation that references a source folder that does not exist. 
   
 ## See also
 
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
-- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Reading from Files](../developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Creating, Deleting, and Moving Files and Directories](../developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

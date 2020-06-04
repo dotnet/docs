@@ -12,7 +12,7 @@ Provides methods for playing sounds.
 ## Remarks  
  For information about the methods and properties of the `My.Computer.Audio` object, see <xref:Microsoft.VisualBasic.Devices.Audio>.  
   
- For more information, see [Playing Sounds](../../../visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](../../developing-apps/programming/computer-resources/playing-sounds.md).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  
@@ -23,4 +23,4 @@ Provides methods for playing sounds.
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

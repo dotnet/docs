@@ -13,18 +13,18 @@ Visual Basic supplies a set of predefined data types, which you can use for many
 > Every elementary data type in Visual Basic is supported by a structure or a class that is in the <xref:System> namespace. The compiler uses each data type keyword as an alias for the underlying structure or class. For example, declaring a variable by using the reserved word `Byte` is the same as declaring it by using the fully qualified structure name <xref:System.Byte?displayProperty=nameWithType>.  
   
 ## In This Section  
- [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)  
+ [Numeric Data Types](numeric-data-types.md)  
  Describes the integral and non-integral numeric types.  
   
- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
+ [Character Data Types](character-data-types.md)  
  Describes the `Char` and `String` types.  
   
- [Miscellaneous Data Types](../../../../visual-basic/programming-guide/language-features/data-types/miscellaneous-data-types.md)  
+ [Miscellaneous Data Types](miscellaneous-data-types.md)  
  Describes the `Boolean`, `Date`, and `Object` types.  
   
 ## Related Sections  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Data Types](index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
+ [Data Types](../../../language-reference/data-types/index.md)  
  Provides an overview of the elementary data types supplied by Visual Basic.

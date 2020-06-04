@@ -105,5 +105,5 @@ This code uses a fixed number of expressions in the predicate that is passed to 
 
 ## See also
 
-- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
-- [How to: Execute Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
+- [Expression Trees (Visual Basic)](index.md)
+- [How to: Execute Expression Trees (Visual Basic)](how-to-execute-expression-trees.md)

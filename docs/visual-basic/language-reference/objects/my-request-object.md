@@ -24,4 +24,4 @@ Gets the <xref:System.Web.HttpRequest> object for the requested page.
 ## See also
 
 - <xref:System.Web.HttpRequest>
-- [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)
+- [My.Response Object](my-response-object.md)

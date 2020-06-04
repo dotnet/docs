@@ -19,4 +19,4 @@ A literal represents a value outside the limits of the data type to which it is 
   
 ## See also
 
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Data Types](../data-types/index.md)

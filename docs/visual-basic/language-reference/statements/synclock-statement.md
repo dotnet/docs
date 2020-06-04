@@ -46,7 +46,7 @@ End SyncLock
   
      You cannot change the value of `lockobject` while executing a `SyncLock` block. The mechanism requires that the lock object remain unchanged.  
   
-- You can't use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in a `SyncLock` block.  
+- You can't use the [Await](../operators/await-operator.md) operator in a `SyncLock` block.  
   
 ## Behavior  
   

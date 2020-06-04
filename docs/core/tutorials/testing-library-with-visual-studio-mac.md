@@ -19,13 +19,11 @@ Unit tests provide automated software testing during your development and publis
 
 1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **MSTest Test Project** followed by **Next**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio Mac New Project dialog creating xUnit test project](./media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Visual Studio Mac New Project dialog creating xUnit test project":::
 
 1. Select **.NET Core 3.1**. Name the new project "StringLibraryTest" and select **Create**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio Mac New Project dialog providing project name](./media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Visual Studio Mac New Project dialog providing project name":::
 
    Visual Studio created a class file with the following code:
 
@@ -59,8 +57,7 @@ Unit tests provide automated software testing during your development and publis
 
    1. In the **Edit References** dialog, select the **StringLibrary** project on the **Projects** tab. Select **OK**.
 
-      > [!div class="mx-imgBorder"]
-      > ![Visual Studio Mac Edit References dialog](./media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png)
+      :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Visual Studio Mac Edit References dialog":::
 
 ## Add and run unit test methods
 
@@ -95,33 +92,27 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save StringLibraryTests.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio Save File As dialog](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio Advanced Save Options dialog](./media/testing-library-with-visual-studio/advanced-save-options.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. Open the **Unit Tests** panel on the right side of the screen. Select **View** > **Tests** from the menu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio for Mac Unit Tests panel](./media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-panel.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-panel.png" alt-text="Visual Studio for Mac Unit Tests panel":::
 
 1. Click the **Dock** icon to keep the panel open. (Highlighted in the following image.)
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio for Mac Unit Tests panel dock icon](./media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Visual Studio for Mac Unit Tests panel dock icon":::
 
 1. Click the **Run All** button.
 
-
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio for Mac expected test passes](./media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-pass.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-pass.png" alt-text="Visual Studio for Mac expected test passes":::
 
 ## Handle test failures
 
@@ -142,13 +133,11 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   > [!div class="mx-imgBorder"]
-   > ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" weren't tested.
 
-   > [!div class="mx-imgBorder"]
-   > ![Test Explorer window showing the IsFalse assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests pass.
 
@@ -160,13 +149,11 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio toolbar with release build highlighted](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   > [!div class="mx-imgBorder"]
-   > ![StringLibrary context menu with build command](./media/testing-library-with-visual-studio/build-library-context-menu.png)
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
 

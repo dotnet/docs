@@ -20,7 +20,7 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-![Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 This tutorial requires the Debug configuration.
 
@@ -32,7 +32,7 @@ This tutorial requires the Debug configuration.
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
@@ -40,7 +40,7 @@ This tutorial requires the Debug configuration.
 
 1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   ![Screenshot of a breakpoint in Visual Studio](./media/debugging-with-visual-studio-mac/breakpoint-hit.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
 ## Use the Immediate window
 
@@ -54,13 +54,13 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
-   ![Locals and Immediate Windows in Visual Studio](./media/debugging-with-visual-studio-mac/locals-immediate-window.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
    The values displayed in the terminal correspond to the changes you made in the **Immediate** window.
 
-   ![Console window showing the entered values](./media/debugging-with-visual-studio-mac/console-window.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/console-window.png" alt-text="Console window showing the entered values":::
 
 1. Close the terminal window.
 
@@ -76,7 +76,7 @@ The program displays a string that the user enters. What happens if the user doe
    String.IsNullOrEmpty(name)
    ```
 
-   ![Editor showing breakpoint settings panel](./media/debugging-with-visual-studio-mac/breakpoint-settings.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel":::
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
@@ -94,7 +94,7 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. You can also see that the value is an empty string by entering the `name` variable name in the **Immediate** window and pressing <kbd>enter</kbd>.
 
-   ![Immediate window showing name is an empty string](./media/debugging-with-visual-studio-mac/immediate-window-output.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window-output.png" alt-text="Immediate window showing name is an empty string":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
@@ -116,7 +116,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
 
-   ![Visual Studio step into method](./media/debugging-with-visual-studio-mac/step-into-method.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-method.png" alt-text="Visual Studio step into method":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank terminal.
 
@@ -124,7 +124,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio now highlights the next line of execution. The **Locals** window is unchanged, and the console window remains blank.
 
-   ![Visual Studio step in method source](./media/debugging-with-visual-studio-mac/step-into-source-method.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-source-method.png" alt-text="Visual Studio step in method source":::
 
 1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
@@ -144,7 +144,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The terminal displays the formatted string.
 
-1. Press ⇧⌘U (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>U</kbd>).
+1. Press ⇧ ⌘ U (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>U</kbd>).
 
    The terminal displays a message and waits for you to press a key.
 
@@ -158,7 +158,7 @@ To build and test the Release version of the console application, do the followi
 
 1. Change the build configuration on the toolbar from **Debug** to **Release**.
 
-   ![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with debug highlighted":::
 
 1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run without debugging.
 

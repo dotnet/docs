@@ -21,25 +21,25 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
-   ![Visual Studio toolbar with release build selected](media/publishing-with-visual-studio-mac/toolbar-release.png)
+   :::image type="content" source="media/publishing-with-visual-studio-mac/toolbar-release.png" alt-text="Visual Studio toolbar with release build selected":::
 
 1. From the main menu, choose **Build** > **Publish to Folder...**.
 
-   ![Visual Studio Publish context menu](media/publishing-with-visual-studio-mac/publish-menu.png)
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-context-menu.png" alt-text="Visual Studio Publish context menu":::
 
 1. In the **Publish to Folder** dialog, select **Publish**.
 
-   ![Visual Studio Publish to Folder dialog](media/publishing-with-visual-studio-mac/publish-to-folder-dialog.png)
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-to-folder-dialog.png" alt-text="Visual Studio Publish to Folder dialog":::
 
    The publish folder opens.
 
-   ![Visual Studio Publish window](media/publishing-with-visual-studio-mac/publish-folder.png)
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-folder.png" alt-text="Visual Studio Publish window":::
 
 ## Inspect the files
 
 The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on a machine that has the .NET Core runtime installed. Users can run the published app by running the `dotnet HelloWorld.dll` command from a command prompt.
 
-As the image shows, the published output includes the following files:
+As the preceding image shows, the published output includes the following files:
 
 * *HelloWorld.deps.json*
 

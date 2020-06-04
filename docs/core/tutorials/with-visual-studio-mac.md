@@ -27,19 +27,19 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 1. Select **New** on the start window.
 
-   ![New button on the Visual Studio for Mac Start screen](./media/using-on-mac-vs/visual-studio-mac-new-project.png)
+   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New button on the Visual Studio for Mac Start screen":::
 
 1. In the **New Project** dialog, select **App** under the **.NET Core** node.
 
 1. Select the **Console Application** template, and select **Next**.
 
-   ![New project templates list](./media/using-on-mac-vs/visual-studio-mac-new-dialog.png)
+   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
 1. If you have more than one version of .NET Core installed, select the target framework for your project.
 
 1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 
-   ![Configure your new Console Application dialog](./media/using-on-mac-vs/visual-studio-mac-new-options.png)
+   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-options.png" alt-text="Configure your new Console Application dialog":::
 
    The Console Application template for .NET Core defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
@@ -62,7 +62,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
 
-   ![The terminal shows Hello World!](./media/using-on-mac-vs/visual-studio-mac-output.png)
+   :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-output.png" alt-text="The terminal shows Hello World!":::
 
 1. Close the **Application Ouput** window.
 
@@ -84,7 +84,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing <kbd>Enter</kbd>.
 
-   ![Terminal shows modified program output](./media/using-on-mac-vs/hello-world-update.png)
+   :::image type="content" source="media/with-visual-studio-mac/hello-world-update.png" alt-text="Terminal shows modified program output":::
 
 1. Close the terminal.
 

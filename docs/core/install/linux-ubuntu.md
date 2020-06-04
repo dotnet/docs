@@ -14,22 +14,6 @@ ms.date: 06/04/2020
 
 The following is a list of currently supported .NET Core releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
 
-For the best compatibility, choose a long-term release (LTS) version of both Ubuntu and .NET Core.
-
-| .NET Core   | Ubuntu version                                           |
-|-------------|----------------------------------------------------------|
-| 2.1 (LTS)   | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
-| 3.1 (LTS)   | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
-| 5.0 Preview | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
-
-The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
-
-| .NET Core | Ubuntu version       |
-|-----------|----------------------|
-| 3.0       | [18.04](#1804-)      |
-| 2.2       | [18.04](#1804-)      |
-| 2.0       | [18.04](#1804-)      |
-
 The following table represents the support status of Ubuntu and .NET Core.
 
 - A ✔️ indicates that the version of Ubuntu or .NET Core is still supported.

@@ -14,7 +14,13 @@ ms.date: 06/04/2020
 
 The following is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+The following table represents the support status of Fedora and .NET Core.
+
+- A ✔️ indicates that the version of Fedora or .NET Core is still supported.
+- A ❌ indicates that the version of Fedora or .NET Core is not supported on that Fedora release.
+- When both a version of Fedora and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |

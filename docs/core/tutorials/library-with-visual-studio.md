@@ -102,7 +102,7 @@ Use the class library in a console application that prompts the user to enter a 
 
    The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
-1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
+1. If necessary, change the toolbar to compile the **Debug** build configuration of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
    ![Visual Studio project toolbar showing Debug button](media/library-with-visual-studio/visual-studio-project-toolbar.png)
 

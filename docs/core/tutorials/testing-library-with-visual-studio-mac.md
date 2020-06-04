@@ -1,13 +1,13 @@
 ---
-title: Create a .NET Standard class library in Visual Studio for Mac
-description: Learn how to create a .NET Standard class library using Visual Studio for Mac.
-ms.date: 06/03/2020
+title: Build a complete .NET Core solution using Visual Studio for Mac
+description: This article walks you through building a .NET Core solution that includes a reusable library and unit testing.
+ms.date: 12/19/2019
 ---
-# Tutorial: Create a .NET Standard library in Visual Studio for Mac
+# Build a complete .NET Core solution on macOS using Visual Studio for Mac
 
-In this tutorial, you create a simple class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This article walks you through building a .NET Core solution that includes a reusable library and unit testing.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.1 can be used by an application that targets any .NET implementation that supports version 2.1 of .NET Standard. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
+This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to unit testing concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/samples/blob/master/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -17,37 +17,28 @@ A *class library* defines types and methods that are called by an application. A
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+- [.NET Core SDK 3.1 or later](https://dotnet.microsoft.com/download)
+- [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 
-  * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
-  * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).
-  * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
+For more information on prerequisites, see the [.NET Core dependencies and requirements](../install/dependencies.md?pivots=os-macos). For the full system requirements of Visual Studio 2019 for Mac, see [Visual Studio 2019 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2019-system-requirements-mac).
 
-## Create a solution with a library project
+## Building a library
 
-A Visual Studio solution serves as a container for one or more projects. Create a solution and a class library project in the solution. You'll add additional, related projects to the same solution later.
-
-1. Start Visual Studio for Mac.
-
-1. On the start window, select **New Project**.
-
-1. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. Choose ".NET Standard 2.1" and select **Next**.
+1. On the start window, select **New Project**. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. This command creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.1 of the [.NET Standard](../../standard/net-standard.md). If you have multiple versions of the .NET Core SDK installed, you can choose different versions of .NET Standard for your library. Choose ".NET Standard 2.1" and select **Next**.
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac New project dialog](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project.png)
 
-1. Name the project "StringLibrary" and the solution "ClassLibraryProjects". Leave **Create a project directory within the solution directory** selected. Select **Create**.
+1. Name the project "TextUtils" (a short name for "Text Utilities") and the solution "WordCounter". Leave **Create a project directory within the solution directory** checked. Select **Create**.
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac New project dialog options](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project-options.png)
 
-1. In the **Solution** pad, expand the `StringLibrary` node to reveal the class file provided by the template, *Class1.cs*. <kbd>control</kbd>-click the file, select **Rename** from the context menu, and rename the file to *StringLibrary.cs*. Open the file and replace the contents with the following code:
+1. In the **Solution** pad, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Ctrl-click the file, select **Rename** from the context menu, and rename the file to *WordCount.cs*. Open the file and replace the contents with the following code:
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
+   [!code-csharp[Main](../../../samples/snippets/core/tutorials/using-on-mac-vs-full-solution/csharp/TextUtils/WordCount.cs)]
 
-1. Press ⌘ s (<kbd>command</kbd>+<kbd>s</kbd>) to save the file.
-
-   The following image shows the IDE window:
+1. Save the file by using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File** > **Save** from the menu, or ctrl-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac IDE window with class library file and method](./media/using-on-mac-vs-full-solution/visual-studio-mac-editor.png)
@@ -63,32 +54,6 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Mac Build output pane of the Errors panel with Build successful message](./media/using-on-mac-vs-full-solution/visual-studio-mac-build-panel.png)
-
-## Add a console app project
-
-1. In the **Solution** sidebar, <kbd>control</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **.NET Core** > **App** templates. Select **Next**. Name the project **ShowCase**. Select **Create** to create the project in the solution.
-
-1. In the **Solutions** sidebar, <kbd>control</kbd>-click the **Dependencies** node of the new **ShowCase** project. In the **Edit References** dialog, select **StringLibrary** and select **OK**.
-
-1. Open the *Program.cs* file. Replace the code with the following code:
-
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
-
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
-
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
-
-1. <kbd>control</kbd>-click on the ShowCase project and select **Run project** from the context menu. When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
-
-   > [!div class="mx-imgBorder"]
-   > ![Visual Studio for Mac console window showing your app running](./media/using-on-mac-vs-full-solution/visual-studio-mac-console-window.png)
-
-
-## See also
-
-- [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
-- [A list of .NET Standard versions and the platforms they support](../../standard/net-standard.md).
-
 
 ## Creating a test project
 
@@ -196,4 +161,46 @@ Unit tests provide automated software testing during your development and publis
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac expected test passes](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-pass.png)
 
+## Adding a console app
+
+1. In the **Solution** sidebar, ctrl-click the `WordCounter` solution. Add a new **Console Application** project by selecting the template from the **.NET Core** > **App** templates. Select **Next**. Name the project **WordCounterApp**. Select **Create** to create the project in the solution.
+
+1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **WordCounterApp** project. In the **Edit References** dialog, check **TextUtils** and select **OK**.
+
+1. Open the *Program.cs* file. Replace the code with the following code:
+
+   [!code-csharp[Main](../../../samples/snippets/core/tutorials/using-on-mac-vs-full-solution/csharp/WordCounterApp/Program.cs)]
+
+1. Ctrl-click on the `WordCounterApp` project and select **Run project** from the context menu. When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac console window showing your app running](./media/using-on-mac-vs-full-solution/visual-studio-mac-console-window.png)
+
+1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run** > **Toggle Breakpoint** from the menu.
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac breakpoint set](./media/using-on-mac-vs-full-solution/visual-studio-mac-breakpoint.png)
+
+1. ctrl-click the `WordCounterApp` project. Select **Start Debugging Project** from the context menu. When the app runs, enter the search word "cat" and "The dog chased the cat, but the cat escaped." for the string to search. When the `Console.WriteLine` statement is reached, program execution halts before the statement is executed. In the **Locals** tab, you can see the `searchWord`, `inputString`, `wordCount`, and `pluralChar` values.
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac debugger program execution stopped](./media/using-on-mac-vs-full-solution/visual-studio-mac-debugger.png)
+
+1. In the **Immediate** pane, type "wordCount = 999;" and press Enter. This command assigns a nonsense value of 999 to the `wordCount` variable showing that you can replace variable values while debugging.
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac changing values in the immediate window](./media/using-on-mac-vs-full-solution/visual-studio-mac-immediate-window.png)
+
+1. In the toolbar, click the *continue* arrow. Look at the output in the console window. It reports the incorrect value of 999 that you set when you were debugging the app.
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac continue button in the toolbar](./media/using-on-mac-vs-full-solution/visual-studio-mac-toolbar.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio for Mac console window output](./media/using-on-mac-vs-full-solution/visual-studio-mac-output.png)
+
 You can use the same process to debug code using your unit test project. Instead of starting the WordCount app project, ctrl-click the **Test Library** project, and select **Start Debugging Project** from the context menu. Visual Studio for Mac starts your test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project, or the underlying library code.
+
+## See also
+
+- [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)

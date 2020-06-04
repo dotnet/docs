@@ -6,7 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ---
-# Get started with .NET Core on macOS using Visual Studio for Mac
+# Create a console application with .NET Core in Visual Studio for Mac
 
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This tutorial walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
@@ -40,7 +40,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 1. If you have more than one version of .NET Core installed, select the target framework for your project.
 
-1. Type "HelloWorld" for the **Project Name**, anad select **Create**.
+1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 
    ![Configure your new Console Application dialog](./media/using-on-mac-vs/visual-studio-mac-new-options.png)
 

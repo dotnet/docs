@@ -78,16 +78,27 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
-1. <kbd>control</kbd>-click on the ShowCase project and select **Run project** from the context menu. When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
+1. <kbd>control</kbd>-click on the ShowCase project and select **Run project** from the context menu.
+
+1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac console window showing your app running](./media/using-on-mac-vs-full-solution/visual-studio-mac-console-window.png)
 
-
-## See also
+## Additional resources
 
 - [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
-- [A list of .NET Standard versions and the platforms they support](../../standard/net-standard.md).
+- [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+
+## Next steps
+
+In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
+
+> [!div class="nextstepaction"]
+> [Test a .NET Standard library with .NET Core in Visual Studio](testing-library-with-visual-studio.md)
+
+
+
 
 
 ## Creating a test project

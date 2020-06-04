@@ -21,23 +21,23 @@ The `My.Computer.FileSystem` object provides tools for working with files and fo
   
 ## In This Section  
 
- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Reading from Files](reading-from-files.md)  
  Lists topics dealing with using the `My.Computer.FileSystem` object to read from files  
   
- [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
+ [Writing to Files](writing-to-files.md)  
  Lists topics dealing with using the `My.Computer.FileSystem` object to write to files  
   
- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
+ [Creating, Deleting, and Moving Files and Directories](creating-deleting-and-moving-files-and-directories.md)  
  Lists topics dealing with using the `My.Computer.FileSystem` object to creating, copying, deleting and moving files and folders.  
   
- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
+ [Parsing Text Files with the TextFieldParser Object](parsing-text-files-with-the-textfieldparser-object.md)  
  Discusses how to use the `TextFieldReader` to parse text files such as logs.  
   
- [File Encodings](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
+ [File Encodings](file-encodings.md)  
  Describes file encodings and their use.  
   
- [Walkthrough: Manipulating Files and Directories in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ [Walkthrough: Manipulating Files and Directories in Visual Basic](walkthrough-manipulating-files-and-directories.md)  
  Demonstrates how to create a utility that reports information about files and folders.  
   
- [Troubleshooting: Reading from and Writing to Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)  
+ [Troubleshooting: Reading from and Writing to Text Files](troubleshooting-reading-from-and-writing-to-text-files.md)  
  Lists common problems encountered when reading and writing to text files, and suggests remedies for each.

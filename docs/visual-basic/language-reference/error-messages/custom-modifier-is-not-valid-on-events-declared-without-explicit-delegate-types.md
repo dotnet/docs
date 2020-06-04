@@ -36,6 +36,6 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
   
 ## See also
 
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
-- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Event Statement](../statements/event-statement.md)
+- [Delegate Statement](../statements/delegate-statement.md)
+- [Events](../../programming-guide/language-features/events/index.md)

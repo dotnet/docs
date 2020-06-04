@@ -35,4 +35,4 @@ Specifies where to align the sections of the output file.
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Visual Basic Command-Line Compiler](index.md)

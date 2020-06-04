@@ -11,7 +11,7 @@ Provides properties for getting information about the format and configuration o
 ## Remarks  
  For information about the methods and properties of the `My.Computer.Mouse` object, see <xref:Microsoft.VisualBasic.Devices.Mouse>.  
   
- For more information, see [Accessing the Mouse](../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse.md).  
+ For more information, see [Accessing the Mouse](../../developing-apps/programming/computer-resources/accessing-the-mouse.md).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  
@@ -22,4 +22,4 @@ Provides properties for getting information about the format and configuration o
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

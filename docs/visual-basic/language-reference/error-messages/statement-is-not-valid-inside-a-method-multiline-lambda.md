@@ -19,7 +19,7 @@ The statement is not valid within a `Sub`, `Function`, property `Get`, or proper
   
 ## See also
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
-- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
+- [Function Statement](../statements/function-statement.md)
+- [Get Statement](../statements/get-statement.md)
+- [Set Statement](../statements/set-statement.md)

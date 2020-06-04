@@ -67,14 +67,14 @@ If you do not specify a value for `Option Infer` in your code, the compiler defa
 
 If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.
 
-For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).
+For more information, see [Option Infer Statement](../../../language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).
 
 ## See also
 
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
-- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
-- [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)
-- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
-- [-optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Anonymous Types](../objects-and-classes/anonymous-types.md)
+- [Early and Late Binding](../early-late-binding/index.md)
+- [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md)
+- [For...Next Statement](../../../language-reference/statements/for-next-statement.md)
+- [Option Infer Statement](../../../language-reference/statements/option-infer-statement.md)
+- [-optioninfer](../../../reference/command-line-compiler/optioninfer.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)

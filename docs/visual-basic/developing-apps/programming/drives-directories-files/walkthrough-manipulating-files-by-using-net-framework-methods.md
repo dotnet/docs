@@ -150,4 +150,4 @@ To test your code, press F5 to compile the application. Click **Get Entries**, s
 
 - <xref:System.IO.StreamReader>
 - <xref:System.IO.StreamWriter>
-- [Walkthroughs](../../../../visual-basic/walkthroughs.md)
+- [Walkthroughs](../../../walkthroughs.md)

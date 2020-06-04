@@ -19,7 +19,7 @@ Provides properties and methods for working with drives, files, and directories.
 ## Remarks  
  For information about the methods and properties of the `My.Computer.FileSystem` object, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   
- For more information, see [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
+ For more information, see [File Access with Visual Basic](../../developing-apps/programming/drives-directories-files/file-access.md).  
   
 > [!NOTE]
 > You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
@@ -33,5 +33,5 @@ Provides properties and methods for working with drives, files, and directories.
   
 ## See also
 
-- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer.FileSystem.SpecialDirectories Object](my-computer-filesystem-specialdirectories-object.md)
+- [My.Computer Object](my-computer-object.md)

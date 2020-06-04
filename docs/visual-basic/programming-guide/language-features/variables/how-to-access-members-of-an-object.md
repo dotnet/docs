@@ -22,7 +22,7 @@ You access an object's members through the variable that refers to it.
     currentText = newForm.Text
     ```
 
-    If the member is [Shared](../../../../visual-basic/language-reference/modifiers/shared.md), you do not need a variable to access it.
+    If the member is [Shared](../../../language-reference/modifiers/shared.md), you do not need a variable to access it.
 
 ## Accessing Members of an Object of Known Type
 
@@ -52,7 +52,7 @@ If you do not know the type of an object at compile time, you must use *late bin
 
 #### To access members of an object for which you do not know the type at compile time
 
-1. Declare the object variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.)
+1. Declare the object variable to be of the [Object Data Type](../../../language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.)
 
     ```vb
     Dim someControl As Object
@@ -73,7 +73,7 @@ If you do not know the type of an object at compile time, you must use *late bin
 - <xref:System.Object>
 - <xref:System.Windows.Forms.Form>
 - <xref:System.MemberAccessException>
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Object Variables](object-variables.md)
+- [Object Variable Declaration](object-variable-declaration.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)

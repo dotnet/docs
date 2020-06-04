@@ -14,4 +14,4 @@ A call was made to a procedure in a code resource, but the code resource could n
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

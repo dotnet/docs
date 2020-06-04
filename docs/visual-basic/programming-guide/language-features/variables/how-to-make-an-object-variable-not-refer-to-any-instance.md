@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
 ---
 # How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)
-You can disassociate an object variable from any object instance by setting it to [Nothing](../../../../visual-basic/language-reference/nothing.md).  
+You can disassociate an object variable from any object instance by setting it to [Nothing](../../../language-reference/nothing.md).  
   
 ### To disassociate an object variable from any object instance  
   
@@ -28,7 +28,7 @@ You can disassociate an object variable from any object instance by setting it t
 ## See also
 
 - <xref:System.NullReferenceException>
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
-- [Nothing](../../../../visual-basic/language-reference/nothing.md)
-- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Object Variables](object-variables.md)
+- [Object Variable Assignment](object-variable-assignment.md)
+- [Nothing](../../../language-reference/nothing.md)
+- [Try...Catch...Finally Statement](../../../language-reference/statements/try-catch-finally-statement.md)

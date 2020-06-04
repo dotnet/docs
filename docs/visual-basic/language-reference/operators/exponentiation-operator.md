@@ -44,14 +44,14 @@ The result is `number` raised to the power of `exponent`, always as a `Double` v
 
 ## Remarks
 
-Visual Basic always performs exponentiation in the [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md).
+Visual Basic always performs exponentiation in the [Double Data Type](../data-types/double-data-type.md).
 
 The value of `exponent` can be fractional, negative, or both.
 
 When more than one exponentiation is performed in a single expression, the `^` operator is evaluated as it is encountered from left to right.
 
 > [!NOTE]
-> The `^` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).
+> The `^` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).
 
 ## Example
 
@@ -81,8 +81,8 @@ Note the importance of the parentheses in the expressions in the preceding examp
 
 ## See also
 
-- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)
-- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [^= Operator](exponentiation-assignment-operator.md)
+- [Arithmetic Operators](arithmetic-operators.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Arithmetic Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

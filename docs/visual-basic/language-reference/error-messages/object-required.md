@@ -20,4 +20,4 @@ References to properties and methods often require an explicit object qualifier.
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

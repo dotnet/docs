@@ -14,4 +14,4 @@ The referenced object method or object property is not defined.
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -15,19 +15,19 @@ This section explains how to perform tasks that involve writing to files.
   
 ## In This Section  
 
- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)  
+ [How to: Write Text to Files](how-to-write-text-to-files.md)  
  Demonstrates how to write to text files.  
   
- [How to: Append to Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-append-to-text-files.md)  
+ [How to: Append to Text Files](how-to-append-to-text-files.md)  
  Demonstrates how to append text to a text file.  
   
- [How to: Write to Binary Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-to-binary-files.md)  
+ [How to: Write to Binary Files](how-to-write-to-binary-files.md)  
  Demonstrates how to write to a binary file.  
   
- [How to: Write Text to Files in the My Documents Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-in-the-my-documents-directory.md)  
+ [How to: Write Text to Files in the My Documents Directory](how-to-write-text-to-files-in-the-my-documents-directory.md)  
  Demonstrates how to create and write to a new text file in the **My Documents** directory.  
   
- [How to: Write Text to Files with a StreamWriter](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md)  
+ [How to: Write Text to Files with a StreamWriter](how-to-write-text-to-files-with-a-streamwriter.md)  
  Demonstrates how to write to a file with a <xref:System.IO.StreamWriter?displayProperty=nameWithType> object.  
   
 ## Reference  
@@ -46,14 +46,14 @@ This section explains how to perform tasks that involve writing to files.
   
 ## Related Sections  
 
- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
+ [Reading from Files](reading-from-files.md)  
  Explains how to perform tasks that involve reading from files.  
   
- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
+ [Creating, Deleting, and Moving Files and Directories](creating-deleting-and-moving-files-and-directories.md)  
  Explains how to perform tasks that involve creating, deleting, moving, and renaming files and directories.  
   
- [Storing Data to and Reading from the Clipboard](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
+ [Storing Data to and Reading from the Clipboard](../computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
  Explains how to perform tasks that are associated with `My.Computer.Clipboard`, such as reading data from or writing data to the Clipboard.  
   
- [File Encodings](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
+ [File Encodings](file-encodings.md)  
  Provides an overview of file encodings.

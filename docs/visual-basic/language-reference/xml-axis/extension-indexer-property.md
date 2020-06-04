@@ -38,7 +38,7 @@ object(index)
   
  This indexer property is like an extension property for collections that implement <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>: it is used only if the collection does not have an indexer or a default property.  
   
- To access the value of the first element in a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects, you can use the XML `Value` property. For more information, see [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md).  
+ To access the value of the first element in a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects, you can use the XML `Value` property. For more information, see [XML Value Property](xml-value-property.md).  
   
 ## Example  
  The following example shows how to use the extension indexer to access the second child node in a collection of <xref:System.Xml.Linq.XElement> objects. The collection is accessed by using the child axis property, which gets all child elements named `phone` in the `contact` object.  
@@ -52,7 +52,7 @@ object(index)
 ## See also
 
 - <xref:System.Xml.Linq.XElement>
-- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
+- [XML Axis Properties](index.md)
+- [XML Literals](../xml-literals/index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)
+- [XML Value Property](xml-value-property.md)

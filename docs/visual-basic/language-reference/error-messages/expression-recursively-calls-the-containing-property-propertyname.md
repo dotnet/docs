@@ -13,7 +13,7 @@ A statement in the `Set` procedure of a property definition stores a value into 
   
  The recommended approach to holding the value of a property is to define a `Private` variable in the property's container and use it in both the `Get` and `Set` procedures. The `Set` procedure should then store the incoming value in this `Private` variable.  
   
- The `Get` procedure behaves like a `Function` procedure, so it can assign a value to the property name and return control by encountering the `End Get` statement. The recommended approach, however, is to include the `Private` variable as the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+ The `Get` procedure behaves like a `Function` procedure, so it can assign a value to the property name and return control by encountering the `End Get` statement. The recommended approach, however, is to include the `Private` variable as the value in a [Return Statement](../statements/return-statement.md).  
   
  The `Set` procedure behaves like a `Sub` procedure, which does not return a value. Therefore, the procedure or property name has no special meaning within a `Set` procedure, and you cannot store a value into it.  
   
@@ -59,6 +59,6 @@ End Class
   
 ## See also
 
-- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Property Procedures](../../programming-guide/language-features/procedures/property-procedures.md)
+- [Property Statement](../statements/property-statement.md)
+- [Set Statement](../statements/set-statement.md)

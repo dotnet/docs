@@ -16,4 +16,4 @@ You referenced a method or property that is not supported by this object.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

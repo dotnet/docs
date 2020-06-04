@@ -57,7 +57,7 @@ Mid( _
  [!code-vb[VbVbalrStrings#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#5)]  
   
 ## Requirements  
- **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
+ **Namespace:** [Microsoft.VisualBasic](../runtime-library-members.md)  
   
  **Module:** `Strings`  
   
@@ -66,5 +66,5 @@ Mid( _
 ## See also
 
 - <xref:Microsoft.VisualBasic.Strings.Mid%2A>
-- [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)
-- [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Strings](../../programming-guide/language-features/strings/index.md)
+- [Introduction to Strings in Visual Basic](../../programming-guide/language-features/strings/introduction-to-strings.md)

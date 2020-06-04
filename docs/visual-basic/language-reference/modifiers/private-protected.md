@@ -20,7 +20,7 @@ The `Private Protected` access modifier is supported by Visual Basic 15.5 and la
 </PropertyGroup>
 ```
 
-For more information see [setting the Visual Basic language version](../../language-reference/configure-language-version.md).
+For more information see [setting the Visual Basic language version](../configure-language-version.md).
 
 > [!NOTE]
 > In Visual Studio, selecting F1 help on `private protected` provides help for either [private](private.md) or [protected](protected.md). The IDE picks the single token under the cursor rather than the compound word.
@@ -33,42 +33,42 @@ For more information see [setting the Visual Basic language version](../../langu
 
 - **Access Level.** All code in a class can access its elements. Code in any class that derives from a base class and is contained in the same assembly can access all the `Private Protected` elements of the base class. However, code in any class that derives from a base class and is contained in a different assembly can't access the base class `Private Protected` elements.
 
-- **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+- **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 The `Private Protected` modifier can be used in these contexts:
 
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md) of a nested class
+- [Class Statement](../statements/class-statement.md) of a nested class
 
-- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Const Statement](../statements/const-statement.md)
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)
 
-- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md) of a delegate nested in a class
+- [Delegate Statement](../statements/delegate-statement.md) of a delegate nested in a class
 
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Dim Statement](../statements/dim-statement.md)
 
-- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md) of an enumeration nested in a class
+- [Enum Statement](../statements/enum-statement.md) of an enumeration nested in a class
 
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Event Statement](../statements/event-statement.md)
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../statements/function-statement.md)
 
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md) of an interface nested in a class
+- [Interface Statement](../statements/interface-statement.md) of an interface nested in a class
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../statements/property-statement.md)
 
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md) of a structure nested in a class
+- [Structure Statement](../statements/structure-statement.md) of a structure nested in a class
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
 
 ## See also
 
-- [Public](../../../visual-basic/language-reference/modifiers/public.md)
-- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+- [Public](public.md)
+- [Protected](protected.md)
 - [Friend](friend.md)
-- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Private](private.md)
 - [Protected Friend](./protected-friend.md)
-- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
-- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)
+- [Procedures](../../programming-guide/language-features/procedures/index.md)
+- [Structures](../../programming-guide/language-features/data-types/structures.md)
+- [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)

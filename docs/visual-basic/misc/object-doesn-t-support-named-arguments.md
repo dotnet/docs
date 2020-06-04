@@ -14,4 +14,4 @@ You tried to access an object whose methods don't support named arguments.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

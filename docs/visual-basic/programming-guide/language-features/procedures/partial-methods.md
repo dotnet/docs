@@ -42,7 +42,7 @@ Private Sub QuantityChanged()
 End Sub  
 ```  
   
- The previous example duplicates the signature in the declaration exactly, but variations are possible. In particular, other modifiers can be added, such as `Overloads` or `Overrides`. Only one `Overrides` modifier is permitted. For more information about method modifiers, see [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md).  
+ The previous example duplicates the signature in the declaration exactly, but variations are possible. In particular, other modifiers can be added, such as `Overloads` or `Overrides`. Only one `Overrides` modifier is permitted. For more information about method modifiers, see [Sub Statement](../../../language-reference/statements/sub-statement.md).  
   
 ## Use  
  You call a partial method as you would call any other `Sub` procedure. If the method has been implemented, the arguments are evaluated and the body of the method is executed. However, remember that implementing a partial method is optional. If the method is not implemented, a call to it has no effect, and expressions passed as arguments to the method are not evaluated.  
@@ -66,9 +66,9 @@ End Sub
   
 ## See also
 
-- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Statement](../../../language-reference/statements/sub-statement.md)
 - [Sub Procedures](./sub-procedures.md)
 - [Optional Parameters](./optional-parameters.md)
-- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)
+- [Partial](../../../language-reference/modifiers/partial.md)
 - [Code Generation in LINQ to SQL](../../../../framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
 - [Adding Business Logic By Using Partial Methods](../../../../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md)

@@ -118,13 +118,13 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
-- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)
-- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
-- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Data Types](index.md)
+- [Elementary Data Types](elementary-data-types.md)
+- [Composite Data Types](composite-data-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Structures](structures.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [How to: Declare a Structure](how-to-declare-a-structure.md)
+- [Structure Variables](structure-variables.md)
+- [Structures and Classes](structures-and-classes.md)
+- [Structure Statement](../../../language-reference/statements/structure-statement.md)

@@ -16,5 +16,5 @@ An operation attempts to use the `ReDim` statement to change the rank (number of
 
 - [Arrays in Visual Basic](../programming-guide/language-features/arrays/index.md)
 - [Array dimensions in Visual Basic](../programming-guide/language-features/arrays/array-dimensions.md)
-- [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)
-- [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)
+- [ReDim Statement](../language-reference/statements/redim-statement.md)
+- [Dim Statement](../language-reference/statements/dim-statement.md)

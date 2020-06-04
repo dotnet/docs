@@ -14,4 +14,4 @@ A floating-point expression contains too many nested subexpressions.
   
 ## See also
 
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)

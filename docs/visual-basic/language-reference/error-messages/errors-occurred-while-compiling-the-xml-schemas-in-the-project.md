@@ -28,4 +28,4 @@ Errors occurred while compiling the XML schemas in the project. Because of this,
 ## See also
 
 - [Error List Window](/visualstudio/ide/reference/error-list-window)
-- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML](../../programming-guide/language-features/xml/index.md)

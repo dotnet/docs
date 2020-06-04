@@ -19,5 +19,5 @@ An XML axis property has been referenced for an untyped object.
   
 ## See also
 
-- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
-- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML Axis Properties](../xml-axis/index.md)
+- [XML](../../programming-guide/language-features/xml/index.md)

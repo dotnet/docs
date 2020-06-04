@@ -52,11 +52,11 @@ The following screenshot shows IntelliSense when Option Infer is off:
 
 Type inference applies at the procedure level, and does not apply outside a procedure in a class, structure, module, or interface.
 
-For additional information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
+For additional information, see [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).
 
 ## When an Option Infer Statement Is Not Present
 
-If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.
+If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [-optioninfer](../../reference/command-line-compiler/optioninfer.md) compiler option is used.
 
 #### To set Option Infer in the IDE
 
@@ -70,7 +70,7 @@ When you create a new project, the **Option Infer** setting on the **Compile** t
 
 #### To set Option Infer on the command line
 
-Include the [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.
+Include the [-optioninfer](../../reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.
 
 ## Default Data Types and Values
 
@@ -79,8 +79,8 @@ The following table describes the results of various combinations of specifying 
 |Data type specified?|Initializer specified?|Example|Result|
 |---|---|---|---|
 |No|No|`Dim qty`|If `Option Strict` is off (the default), the variable is set to `Nothing`.<br /><br /> If `Option Strict` is on, a compile-time error occurs.|
-|No|Yes|`Dim qty = 5`|If `Option Infer` is on (the default), the variable takes the data type of the initializer. See [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).<br /><br /> If `Option Infer` is off and `Option Strict` is off, the variable takes the data type of `Object`.<br /><br /> If `Option Infer` is off and `Option Strict` is on, a compile-time error occurs.|
-|Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. For more information, see [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).|
+|No|Yes|`Dim qty = 5`|If `Option Infer` is on (the default), the variable takes the data type of the initializer. See [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> If `Option Infer` is off and `Option Strict` is off, the variable takes the data type of `Object`.<br /><br /> If `Option Infer` is off and `Option Strict` is on, a compile-time error occurs.|
+|Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. For more information, see [Dim Statement](dim-statement.md).|
 |Yes|Yes|`Dim qty  As Integer = 5`|If the data type of the initializer is not convertible to the specified data type, a compile-time error occurs.|
 
 ## Example
@@ -97,11 +97,11 @@ The following example demonstrates that the run-time type can differ when a vari
 
 ## See also
 
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
-- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Dim Statement](dim-statement.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)
+- [Option Compare Statement](option-compare-statement.md)
+- [Option Explicit Statement](option-explicit-statement.md)
+- [Option Strict Statement](option-strict-statement.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
-- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [-optioninfer](../../reference/command-line-compiler/optioninfer.md)
 - [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

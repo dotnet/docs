@@ -40,4 +40,4 @@ The following conditions may create an exception:
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
-- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)
+- [How to: Write Text to Files](how-to-write-text-to-files.md)

@@ -14,4 +14,4 @@ You specified a named argument more than once.
   
 ## See also
 
-- [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)
+- [Passing Arguments by Position and by Name](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

@@ -37,4 +37,4 @@ Stop
   
 ## See also
 
-- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+- [End Statement](end-statement.md)

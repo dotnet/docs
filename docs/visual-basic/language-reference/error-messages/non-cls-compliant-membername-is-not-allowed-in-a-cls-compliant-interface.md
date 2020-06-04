@@ -31,4 +31,4 @@ A property, procedure, or event in an interface is marked as `<CLSCompliant(True
   
 ## See also
 
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Interface Statement](../statements/interface-statement.md)

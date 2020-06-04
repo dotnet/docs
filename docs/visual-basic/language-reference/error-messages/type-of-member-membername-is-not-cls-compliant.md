@@ -13,13 +13,13 @@ The data type specified for this member is not part of the [Language Independenc
   
  The following Visual Basic data types are not CLS-compliant:  
   
-- [SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
+- [SByte Data Type](../data-types/sbyte-data-type.md)  
   
-- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
+- [UInteger Data Type](../data-types/uinteger-data-type.md)  
   
-- [ULong Data Type](../../../visual-basic/language-reference/data-types/ulong-data-type.md)  
+- [ULong Data Type](../data-types/ulong-data-type.md)  
   
-- [UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
+- [UShort Data Type](../data-types/ushort-data-type.md)  
   
  By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   

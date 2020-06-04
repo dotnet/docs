@@ -8,7 +8,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
 ---
 # How to: Transform XML by Using LINQ (Visual Basic)
 
-[XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md) make it easy to read XML from one source and transform it to a new XML format. You can take advantage of LINQ queries to retrieve the content to transform, or change content in an existing document to a new XML format.
+[XML Literals](../../../language-reference/xml-literals/index.md) make it easy to read XML from one source and transform it to a new XML format. You can take advantage of LINQ queries to retrieve the content to transform, or change content in an existing document to a new XML format.
 
 The example in this topic transforms content from an XML source document to HTML to be viewed in a browser.
 
@@ -52,7 +52,7 @@ The example in this topic transforms content from an XML source document to HTML
         </Catalog>
     ```
 
-     [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md).
+     [How to: Load XML from a File, String, or Stream](how-to-load-xml-from-a-file-string-or-stream.md).
 
 3. After the code to create the source XML document, add the following code to retrieve all the \<Book> elements from the object and transform them into an HTML document. The list of \<Book> elements is created by using a LINQ query that returns a collection of <xref:System.Xml.Linq.XElement> objects that contain the transformed HTML. You can use embedded expressions to put the values from the source document in the new XML format.
 
@@ -152,9 +152,9 @@ The example in this topic transforms content from an XML source document to HTML
 
 ## See also
 
-- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)
-- [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
-- [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [XML Literals](../../../language-reference/xml-literals/index.md)
+- [Manipulating XML in Visual Basic](manipulating-xml.md)
+- [XML](index.md)
+- [How to: Load XML from a File, String, or Stream](how-to-load-xml-from-a-file-string-or-stream.md)
+- [LINQ](../linq/index.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)

@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation Bindings Overview"
+description: Learn about the communication details that bindings define, binding elements, what bindings are included in WCF, and how a to specify a binding for an endpoint.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "bindings [WCF], overview"

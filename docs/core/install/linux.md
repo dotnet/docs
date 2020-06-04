@@ -24,9 +24,9 @@ For the best compatibility, choose a long-term release (LTS) version of both Ubu
 
 | .NET Core   | Ubuntu version                                           |
 |-------------|----------------------------------------------------------|
-| 2.1 (LTS)   | **[16.04 (LTS)](linux-ubuntu.md#1604-)**, **[18.04 (LTS)](linux-ubuntu.md#1804-)**, **[20.04 (LTS)](linux-ubuntu.md#2004-)**, [19.10](linux-ubuntu.md#1910-) |
-| 3.1 (LTS)   | **[16.04 (LTS)](linux-ubuntu.md#1604-)**, **[18.04 (LTS)](linux-ubuntu.md#1804-)**, **[20.04 (LTS)](linux-ubuntu.md#2004-)**, [19.10](linux-ubuntu.md#1910-) |
-| 5.0 Preview | **[16.04 (LTS)](linux-ubuntu.md#1604-)**, **[18.04 (LTS)](linux-ubuntu.md#1804-)**, **[20.04 (LTS)](linux-ubuntu.md#2004-)**, [19.10](linux-ubuntu.md#1910-) |
+| 2.1 (LTS)   | [16.04 (LTS) ✔️](linux-ubuntu.md#1604-), [18.04 (LTS) ✔️](linux-ubuntu.md#1804-), [19.10 ❌](linux-ubuntu.md#1910-), [20.04 (LTS) ✔️](linux-ubuntu.md#2004-) |
+| 3.1 (LTS)   | [16.04 (LTS) ✔️](linux-ubuntu.md#1604-), [18.04 (LTS) ✔️](linux-ubuntu.md#1804-), [19.10 ❌](linux-ubuntu.md#1910-), [20.04 (LTS) ✔️](linux-ubuntu.md#2004-) |
+| 5.0 Preview | [16.04 (LTS) ✔️](linux-ubuntu.md#1604-), [18.04 (LTS) ✔️](linux-ubuntu.md#1804-), [19.10 ❌](linux-ubuntu.md#1910-), [20.04 (LTS) ✔️](linux-ubuntu.md#2004-) |
 
 For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
 
@@ -60,7 +60,7 @@ For more information, see [Install .NET Core on CentOS](linux-centos.md).
 
 ### Unsupported releases
 
-The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
+The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain:
 
 | .NET Core |
 |-----------|
@@ -76,7 +76,33 @@ todo
 
 ## Fedora
 
-todo
+Fedora uses DNF as it's package manager.
+
+The following is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
+
+For the best compatibility, choose a long-term release (LTS) version of .NET Core.
+
+| .NET Core   | Fedora version |
+|-------------|----------------|
+| 2.1 (LTS)   | [30 ❌](linux-fedora.md#fedora-30-), [31 ✔️](linux-fedora.md#fedora-31-)        |
+| 3.1 (LTS)   | [30 ❌](linux-fedora.md#fedora-30-), [31 ✔️](linux-fedora.md#fedora-31-), [32 ✔️](linux-fedora.md#fedora-32-)    |
+| 5.0 Preview | [31 ✔️](linux-fedora.md#fedora-31-), [32 ✔️](linux-fedora.md#fedora-32-)         |
+
+*Fedora version 30 ❌ is currently end-of-life.
+
+For more information, see [Install .NET Core on Fedora](linux-fedora.md).
+
+### Unsupported releases
+
+The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
+
+| .NET Core | Fedora version |
+|-----------|----------------|
+| 3.0       | [30](#fedora-30-), [31](#fedora-31-)         |
+| 2.2       | [29](#fedora-29-), [30](#fedora-30-)         |
+| 2.0       | [27](#fedora-27-), [28](#fedora-28-)         |
+
+For more information, see [Install .NET Core on Fedora](linux-fedora.md).
 
 ## OpenSUSE
 

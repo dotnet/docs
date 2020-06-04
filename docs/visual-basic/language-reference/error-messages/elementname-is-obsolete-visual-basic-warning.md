@@ -23,4 +23,4 @@ A statement attempts to access a programming element which has been marked with 
   
 ## See also
 
-- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Attributes overview](../../programming-guide/concepts/attributes/index.md)

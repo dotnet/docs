@@ -12,7 +12,7 @@ This topic shows how to create a document with namespaces in Visual Basic.
   
  You define both default namespaces and namespaces with a prefix by using the `Imports` keyword.  
   
- For more information, see [Introduction to XML Literals in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-xml-literals.md).  
+ For more information, see [Introduction to XML Literals in Visual Basic](introduction-to-xml-literals.md).  
   
  Note that the default XML namespace only applies to elements and not to attributes. Attributes are by default always in no namespace. However, you can use a namespace prefix to put an attribute in a namespace.  
   

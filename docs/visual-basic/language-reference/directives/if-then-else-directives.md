@@ -80,7 +80,7 @@ This example uses the `#If...Then...#Else` construct to determine whether to com
 
 ## See also
 
-- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
-- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
-- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [#Const Directive](const-directive.md)
+- [If...Then...Else Statement](../statements/if-then-else-statement.md)
+- [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
 - <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>

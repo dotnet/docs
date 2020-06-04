@@ -33,5 +33,5 @@ Erase arraylist
   
 ## See also
 
-- [Nothing](../../../visual-basic/language-reference/nothing.md)
-- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Nothing](../nothing.md)
+- [ReDim Statement](redim-statement.md)

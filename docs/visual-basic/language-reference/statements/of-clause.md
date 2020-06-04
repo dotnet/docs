@@ -19,10 +19,10 @@ helpviewer_keywords:
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
 ---
 # Of Clause (Visual Basic)
-Introduces an `Of` clause, which identifies a *type parameter* on a *generic* class, structure, interface, delegate, or procedure. For information on generic types, see [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md).  
+Introduces an `Of` clause, which identifies a *type parameter* on a *generic* class, structure, interface, delegate, or procedure. For information on generic types, see [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md).  
   
 ## Using the Of Keyword  
- The following code example uses the `Of` keyword to define the outline of a class that takes two type parameters. It *constrains* the `keyType` parameter by the <xref:System.IComparable> interface, which means the consuming code must supply a type argument that implements <xref:System.IComparable>. This is necessary so that the `add` procedure can call the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> method. For more information on constraints, see [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
+ The following code example uses the `Of` keyword to define the outline of a class that takes two type parameters. It *constrains* the `keyType` parameter by the <xref:System.IComparable> interface, which means the consuming code must supply a type argument that implements <xref:System.IComparable>. This is necessary so that the `add` procedure can call the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> method. For more information on constraints, see [Type List](type-list.md).  
   
 ```vb  
 Public Class Dictionary(Of entryType, keyType As IComparable)  
@@ -46,22 +46,22 @@ Dim d As New dictionary(Of String, Integer)
   
  The `Of` keyword can be used in these contexts:  
   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Class Statement](class-statement.md)  
   
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
+ [Delegate Statement](delegate-statement.md)  
   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Function Statement](function-statement.md)  
   
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+ [Interface Statement](interface-statement.md)  
   
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+ [Structure Statement](structure-statement.md)  
   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Sub Statement](sub-statement.md)  
   
 ## See also
 
 - <xref:System.IComparable>
-- [Type List](../../../visual-basic/language-reference/statements/type-list.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
-- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+- [Type List](type-list.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [In](../modifiers/in-generic-modifier.md)
+- [Out](../modifiers/out-generic-modifier.md)

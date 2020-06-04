@@ -20,4 +20,4 @@ Could not obtain full operation system name due to internal error. This might be
 
 - [My.Computer.Info.OSFullName](xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName)
 - [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
-- [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Try...Catch...Finally Statement](../language-reference/statements/try-catch-finally-statement.md)

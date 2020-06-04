@@ -23,5 +23,5 @@ The statement is syntactically complete, but an additional programming element f
   
 ## See also
 
-- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
-- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [How to: Break and Combine Statements in Code](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [Statements](../../programming-guide/language-features/statements.md)

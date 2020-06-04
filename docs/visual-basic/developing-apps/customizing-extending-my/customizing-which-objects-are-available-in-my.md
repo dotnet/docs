@@ -72,10 +72,10 @@ The `_MYTYPE` conditional-compilation constant, in turn, controls the values of 
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.Logging.Log>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
-- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
-- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
-- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
-- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
-- [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)
-- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [How My Depends on Project Type](../development-with-my/how-my-depends-on-project-type.md)
+- [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
+- [-define (Visual Basic)](../../reference/command-line-compiler/define.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)
+- [My.Request Object](../../language-reference/objects/my-request-object.md)
+- [My.Response Object](../../language-reference/objects/my-response-object.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)

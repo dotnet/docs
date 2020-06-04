@@ -19,7 +19,7 @@ ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
 # Resume Statement
 Resumes execution after an error-handling routine is finished.  
   
- We suggest that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
+ We suggest that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](try-catch-finally-statement.md).  
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ Resume [ Next | line ]
 ## Remarks  
   
 > [!NOTE]
-> We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
+> We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](try-catch-finally-statement.md).  
   
  If you use a `Resume` statement anywhere other than in an error-handling routine, an error occurs.  
   
@@ -52,12 +52,12 @@ Resume [ Next | line ]
  [!code-vb[VbVbalrErrorHandling#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#16)]  
   
 ## Requirements  
- **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
+ **Namespace:** [Microsoft.VisualBasic](../runtime-library-members.md)  
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
 
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md)
-- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)
+- [Error Statement](error-statement.md)
+- [On Error Statement](on-error-statement.md)

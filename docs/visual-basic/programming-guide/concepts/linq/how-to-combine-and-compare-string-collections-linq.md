@@ -163,5 +163,5 @@ Create a Visual Basic console application project. Add an `Imports` statement fo
 
 ## See also
 
-- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ and Strings (Visual Basic)](linq-and-strings.md)
+- [LINQ and File Directories (Visual Basic)](linq-and-file-directories.md)

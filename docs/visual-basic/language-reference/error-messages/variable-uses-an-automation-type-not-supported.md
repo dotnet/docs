@@ -20,4 +20,4 @@ You tried to use a variable defined in a type library or object library that has
 
 ## See also
 
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Data Types](../data-types/index.md)

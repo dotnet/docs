@@ -18,6 +18,6 @@ Arguments passed to a dynamic-link library (DLL) must exactly match those expect
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
-- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)
+- [Call Statement](../statements/call-statement.md)
+- [Declare Statement](../statements/declare-statement.md)

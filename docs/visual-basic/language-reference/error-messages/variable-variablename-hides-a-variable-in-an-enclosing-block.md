@@ -30,5 +30,5 @@ A variable enclosed in a block has the same name as another local variable.
   
 ## See also
 
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Try...Catch...Finally Statement](../statements/try-catch-finally-statement.md)
+- [Variable Declaration](../../programming-guide/language-features/variables/variable-declaration.md)

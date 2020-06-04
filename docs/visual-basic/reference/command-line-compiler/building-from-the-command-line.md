@@ -29,18 +29,18 @@ You can compile project (.vbproj) files at a command prompt by using MSBuild. Fo
 
 ## In This Section
 
-[How to: Invoke the Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) \
+[How to: Invoke the Command-Line Compiler](how-to-invoke-the-command-line-compiler.md) \
 Describes how to invoke the command-line compiler at the MS-DOS prompt or from a specific subdirectory.
 
-[Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md) \
+[Sample Compilation Command Lines](sample-compilation-command-lines.md) \
 Provides a list of sample command lines that you can modify for your own use.
 
 ## Related Sections
 
-[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md) \
+[Visual Basic Command-Line Compiler](index.md) \
 Provides lists of compiler options, organized alphabetically or by purpose.
 
-[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md) \
+[Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md) \
 Describes how to compile particular sections of code.
 
 [Building and Cleaning Projects and Solutions in Visual Studio](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio) \

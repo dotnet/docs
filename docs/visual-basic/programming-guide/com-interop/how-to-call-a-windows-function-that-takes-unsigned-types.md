@@ -22,7 +22,7 @@ If you are consuming a class, module, or structure that has members of unsigned 
 
 ## To call a Windows function that takes an unsigned type
 
-1. Use a [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md) to tell Visual Basic which library holds the function, what its name is in that library, what its calling sequence is, and how to convert strings when calling it.
+1. Use a [Declare Statement](../../language-reference/statements/declare-statement.md) to tell Visual Basic which library holds the function, what its name is in that library, what its calling sequence is, and how to convert strings when calling it.
 
 2. In the `Declare` statement, use `UInteger`, `ULong`, `UShort`, or `Byte` as appropriate for each parameter with an unsigned type.
 
@@ -75,8 +75,8 @@ If you are consuming a class, module, or structure that has members of unsigned 
 
 ## See also
 
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
-- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
-- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+- [Data Types](../../language-reference/data-types/index.md)
+- [Integer Data Type](../../language-reference/data-types/integer-data-type.md)
+- [UInteger Data Type](../../language-reference/data-types/uinteger-data-type.md)
+- [Declare Statement](../../language-reference/statements/declare-statement.md)
+- [Walkthrough: Calling Windows APIs](walkthrough-calling-windows-apis.md)

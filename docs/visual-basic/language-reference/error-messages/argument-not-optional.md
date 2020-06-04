@@ -17,4 +17,4 @@ The number and types of arguments must match those expected. Either there is an 
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

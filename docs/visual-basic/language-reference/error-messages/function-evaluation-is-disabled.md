@@ -13,9 +13,9 @@ Function evaluation is disabled because a previous function evaluation timed out
   
  In the Visual Studio debugger, an expression specifies a procedure call, but another evaluation has timed out.  
   
- Possible causes for a procedure call to time out include an infinite loop or *endless loop*. For more information, see [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md).  
+ Possible causes for a procedure call to time out include an infinite loop or *endless loop*. For more information, see [For...Next Statement](../statements/for-next-statement.md).  
   
- A special case of an infinite loop is *recursion*. For more information, see [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md).  
+ A special case of an infinite loop is *recursion*. For more information, see [Recursive Procedures](../../programming-guide/language-features/procedures/recursive-procedures.md).  
   
  **Error ID:** BC30957  
   

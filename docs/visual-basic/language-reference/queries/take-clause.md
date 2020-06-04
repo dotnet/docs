@@ -27,7 +27,7 @@ Take count
   
  You can use the `Take` clause with the `Skip` clause to return a range of data from any segment of a query. To do this, pass the index of the first element of the range to the `Skip` clause and the size of the range to the `Take` clause. In this case, the `Take` clause must be specified after the `Skip` clause.  
   
- When you use the `Take` clause in a query, you may also need to ensure that the results are returned in an order that will enable the `Take` clause to include the intended results. For more information about ordering query results, see [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md).  
+ When you use the `Take` clause in a query, you may also need to ensure that the results are returned in an order that will enable the `Take` clause to include the intended results. For more information about ordering query results, see [Order By Clause](order-by-clause.md).  
   
  You can use the `TakeWhile` clause to specify that only certain elements be returned, depending on a supplied condition.  
   
@@ -38,10 +38,10 @@ Take count
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Queries](../../../visual-basic/language-reference/queries/index.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
-- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
-- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
-- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)
-- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Order By Clause](order-by-clause.md)
+- [Take While Clause](take-while-clause.md)
+- [Skip Clause](skip-clause.md)

@@ -54,5 +54,5 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)

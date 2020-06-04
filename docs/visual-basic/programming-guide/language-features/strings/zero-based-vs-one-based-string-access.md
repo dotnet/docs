@@ -20,4 +20,4 @@ This topic compares how Visual Basic and the .NET Framework provide access to th
 - <xref:Microsoft.VisualBasic.Strings.Split%2A>
 - <xref:System.String.Substring%2A>
 - <xref:System.String.Split%2A>
-- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Introduction to Strings in Visual Basic](introduction-to-strings.md)

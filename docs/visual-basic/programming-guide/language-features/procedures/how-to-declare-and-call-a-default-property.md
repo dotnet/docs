@@ -16,7 +16,7 @@ A *default property* is a class or structure property that your code can access 
   
  A class or structure can have at most one default property. However, you can overload a default property and have more than one version of it.  
   
- For more information, see [Default](../../../../visual-basic/language-reference/modifiers/default.md).  
+ For more information, see [Default](../../../language-reference/modifiers/default.md).  
   
 ### To declare a default property  
   
@@ -69,7 +69,7 @@ A *default property* is a class or structure property that your code can access 
 ## Robust Programming  
  Default properties can result in a small reduction in source code-characters, but they can make your code more difficult to read. If the calling code is not familiar with your class or structure, when it makes a reference to the class or structure name it cannot be certain whether that reference accesses the class or structure itself, or a default property. This can lead to compiler errors or subtle run-time logic errors.  
   
- You can somewhat reduce the chance of default property errors by always using the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) to set compiler type checking to `On`.  
+ You can somewhat reduce the chance of default property errors by always using the [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md) to set compiler type checking to `On`.  
   
  If you are planning to use a predefined class or structure in your code, you must determine whether it has a default property, and if so, what its name is.  
   
@@ -79,8 +79,8 @@ A *default property* is a class or structure property that your code can access 
 
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
-- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
-- [Default](../../../../visual-basic/language-reference/modifiers/default.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
+- [Default](../../../language-reference/modifiers/default.md)
 - [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
 - [How to: Create a Property](./how-to-create-a-property.md)
 - [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)

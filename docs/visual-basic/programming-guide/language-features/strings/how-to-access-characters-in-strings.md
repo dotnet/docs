@@ -17,13 +17,13 @@ This example demonstrates how to use the <xref:System.String.Chars%2A> property 
  The `index` parameter of the <xref:System.String.Chars%2A> property is zero-based.  
   
 ## Robust Programming  
- The <xref:System.String.Chars%2A> property returns the character at the specified position. However, some Unicode characters can be represented by more than one character. For more information on how to work with Unicode characters, see [How to: Convert a String to an Array of Characters](../../../../visual-basic/programming-guide/language-features/strings/how-to-convert-a-string-to-an-array-of-characters.md).  
+ The <xref:System.String.Chars%2A> property returns the character at the specified position. However, some Unicode characters can be represented by more than one character. For more information on how to work with Unicode characters, see [How to: Convert a String to an Array of Characters](how-to-convert-a-string-to-an-array-of-characters.md).  
   
  The <xref:System.String.Chars%2A> property throws an <xref:System.IndexOutOfRangeException> exception if the `index` parameter is greater than or equal to the length of the string, or if it is less than zero  
   
 ## See also
 
 - <xref:System.String.Chars%2A>
-- [How to: Convert a String to an Array of Characters](../../../../visual-basic/programming-guide/language-features/strings/how-to-convert-a-string-to-an-array-of-characters.md)
-- [Converting Between Strings and Other Data Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/converting-between-strings-and-other-data-types.md)
-- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+- [How to: Convert a String to an Array of Characters](how-to-convert-a-string-to-an-array-of-characters.md)
+- [Converting Between Strings and Other Data Types in Visual Basic](converting-between-strings-and-other-data-types.md)
+- [Strings](index.md)

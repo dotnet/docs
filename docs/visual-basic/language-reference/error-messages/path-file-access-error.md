@@ -20,4 +20,4 @@ During a file-access or disk-access operation, the operating system could not ma
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

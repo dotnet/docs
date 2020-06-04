@@ -64,7 +64,7 @@ The following procedure shows how to use Visual Basic 6.0 to create a COM object
 10. Create and register the COM object by clicking **Make ComObject1.dll** on the **File** menu.
 
     > [!NOTE]
-    > Although you can also expose a class created with Visual Basic as a COM object, it is not a true COM object and cannot be used in this walkthrough. For details, see [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).
+    > Although you can also expose a class created with Visual Basic as a COM object, it is not a true COM object and cannot be used in this walkthrough. For details, see [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md).
 
 ## Interop Assemblies
 
@@ -128,6 +128,6 @@ Properties and methods inherited from COM classes can be overridden, meaning tha
 
 ## See also
 
-- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
+- [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md)
+- [Inherits Statement](../../language-reference/statements/inherits-statement.md)
+- [Short Data Type](../../language-reference/data-types/short-data-type.md)

@@ -39,11 +39,11 @@ Specifies that a class can be used only as a base class and that you cannot crea
 ## Usage  
  The `MustInherit` modifier can be used in this context:  
   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Class Statement](../statements/class-statement.md)  
   
 ## See also
 
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Inherits Statement](../statements/inherits-statement.md)
+- [NotInheritable](notinheritable.md)
+- [Keywords](../keywords/index.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

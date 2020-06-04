@@ -22,12 +22,12 @@ This section contains topics describing the `My.Settings` object and the tasks i
   
 |To|See|  
 |--------|---------|  
-|Update the value of a user setting|[How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)|  
-|Display application and user settings in a property grid|[How to: Create Property Grids for User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)|  
-|Save updated user setting values|[How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
-|Determine the values of user settings|[How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
+|Update the value of a user setting|[How to: Change User Settings in Visual Basic](how-to-change-user-settings.md)|  
+|Display application and user settings in a property grid|[How to: Create Property Grids for User Settings in Visual Basic](how-to-create-property-grids-for-user-settings.md)|  
+|Save updated user setting values|[How to: Persist User Settings in Visual Basic](how-to-persist-user-settings.md)|  
+|Determine the values of user settings|[How to: Read Application Settings in Visual Basic](how-to-read-application-settings.md)|  
   
 ## See also
 
 - [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)
-- [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)
+- [My.Settings Object](../../../language-reference/objects/my-settings-object.md)

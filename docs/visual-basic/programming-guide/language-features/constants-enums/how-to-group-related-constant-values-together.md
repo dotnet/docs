@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
 ---
 # How to: Group Related Constant Values Together (Visual Basic)
-An enumeration is the best way to group related constants together. You create an enumeration with the `Enum` statement in the declarations section of a class or a module. For more information, see [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md).  
+An enumeration is the best way to group related constants together. You create an enumeration with the `Enum` statement in the declarations section of a class or a module. For more information, see [How to: Declare an Enumeration](how-to-declare-enumerations.md).  
   
 ### To group related constant values  
   
@@ -21,9 +21,9 @@ An enumeration is the best way to group related constants together. You create a
   
 ## See also
 
-- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
-- [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
-- [When to Use an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md)
-- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
-- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
+- [How to: Refer to an Enumeration Member](how-to-refer-to-an-enumeration-member.md)
+- [When to Use an Enumeration](when-to-use-an-enumeration.md)
+- [Constants Overview](constants-overview.md)
+- [Constant and Literal Data Types](constant-and-literal-data-types.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)

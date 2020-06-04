@@ -98,9 +98,9 @@ The following table is a list of .NET Core versions which are ❌ no longer supp
 
 | .NET Core | Fedora version |
 |-----------|----------------|
-| 3.0       | [30](#fedora-30-), [31](#fedora-31-)         |
-| 2.2       | [29](#fedora-29-), [30](#fedora-30-)         |
-| 2.0       | [27](#fedora-27-), [28](#fedora-28-)         |
+| 3.0       | [30](linux-fedora.md#fedora-30-), [31](linux-fedora.md#fedora-31-)         |
+| 2.2       | [29](linux-fedora.md#fedora-29-), [30](linux-fedora.md#fedora-30-)         |
+| 2.0       | [27](linux-fedora.md#fedora-27-), [28](linux-fedora.md#fedora-28-)         |
 
 For more information, see [Install .NET Core on Fedora](linux-fedora.md).
 

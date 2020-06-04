@@ -3,7 +3,7 @@ title: Install .NET Core on Fedora - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Fedora.
 author: thraka
 ms.author: adegeo
-ms.date: 06/01/2020
+ms.date: 06/04/2020
 ---
 
 # Install .NET Core SDK and .NET Core Runtime on Fedora
@@ -14,27 +14,34 @@ ms.date: 06/01/2020
 
 The following is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-For the best compatibility, choose a long-term release (LTS) version of .NET Core.
+The following table represents the support status of Fedora and .NET Core.
 
-| .NET Core   | Fedora version |
-|-------------|----------------|
-| 2.1 (LTS)   | [30 ❌](#fedora-30-), [31 ✔️](#fedora-31-)        |
-| 3.1 (LTS)   | [30 ❌](#fedora-30-), [31 ✔️](#fedora-31-), [32 ✔️](#fedora-32-)    |
-| 5.0 Preview | [31 ✔️](#fedora-31-), [32 ✔️](#fedora-32-)         |
+- A ✔️ indicates that the version of Fedora or .NET Core is still supported.
+- A ❌ indicates that the version of Fedora or .NET Core is not supported on that Fedora release.
+- When both a version of Fedora and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
 
-*Fedora version 30 is currently end-of-life.
+| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+|--------------------------|---------------|---------------|----------------|
+| ✔️ [32](linux-fedora.md#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [31](linux-fedora.md#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [30](linux-fedora.md#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
+| ❌ [29](linux-fedora.md#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
+| ❌ [28](linux-fedora.md#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| ❌ [27](linux-fedora.md#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 
-The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
+The following table is a list of .NET Core versions which are ❌ no longer supported. However, the downloads for these still remain available:
 
-| .NET Core | Fedora version |
-|-----------|----------------|
-| 3.0       | [30](#fedora-30-), [31](#fedora-31-)         |
-| 2.2       | [29](#fedora-29-), [30](#fedora-30-)         |
-| 2.0       | [27](#fedora-27-), [28](#fedora-28-)         |
+| .NET Core |
+|-----------|
+| 3.0       |
+| 2.2       |
+| 2.0       |
+
+These unsupported versions aren't detailed in the sections below and your milage may vary if you try to install them.
 
 ## Fedora 32 ✔️
 
-.NET Core 3.1 is available in the default package repositories in Fedora.
+.NET Core 3.1 is available in the default package repositories for Fedora 32.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 

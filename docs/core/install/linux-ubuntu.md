@@ -3,7 +3,7 @@ title: Install .NET Core on Ubuntu - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Ubuntu.
 author: thraka
 ms.author: adegeo
-ms.date: 06/01/2020
+ms.date: 06/04/2020
 ---
 
 # Install .NET Core SDK and .NET Core Runtime on Ubuntu
@@ -18,17 +18,43 @@ For the best compatibility, choose a long-term release (LTS) version of both Ubu
 
 | .NET Core   | Ubuntu version                                           |
 |-------------|----------------------------------------------------------|
-| 2.1 (LTS)   | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
-| 3.1 (LTS)   | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
-| 5.0 Preview | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
+| 2.1 (LTS)   | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
+| 3.1 (LTS)   | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
+| 5.0 Preview | [16.04 (LTS)](#1604-), [18.04 (LTS)](#1804-), [19.10](#1910-), [20.04 (LTS)](#2004-) |
 
 The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
 
-| .NET Core | Ubuntu version (LTS) |
+| .NET Core | Ubuntu version       |
 |-----------|----------------------|
-| 3.0       | 16.04, 18.04         |
-| 2.2       | 16.04, 18.04         |
-| 2.0       | 14.04, 16.04, 18.04  |
+| 3.0       | [18.04](#1804-)      |
+| 2.2       | [18.04](#1804-)      |
+| 2.0       | [18.04](#1804-)      |
+
+The following table represents the support status of Ubuntu and .NET Core.
+
+- A ✔️ indicates that the version of Ubuntu or .NET Core is still supported.
+- A ❌ indicates that the version of Ubuntu or .NET Core is not supported on that Ubuntu release.
+- When both a version of Ubuntu and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+
+| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+|--------------------------|---------------|---------------|----------------|
+| ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
+| ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [17.10](#1710-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| ❌ [17.04](#1704-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| ❌ [16.10](#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| ✔️ [16.04 (LTS)](#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+
+The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain:
+
+| .NET Core |
+|-----------|
+| 3.0       |
+| 2.2       |
+| 2.0       |
 
 ## 20.04 ✔️
 
@@ -47,28 +73,6 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
-
-## 18.04 ✔️
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
-
-## 16.04 ✔️
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
@@ -99,6 +103,17 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
+
+## 18.04 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## 17.10 ❌
 
@@ -138,6 +153,17 @@ sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
+
+## 16.04 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
 ## APT update SDK or runtime
 

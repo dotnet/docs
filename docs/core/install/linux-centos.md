@@ -3,7 +3,7 @@ title: Install .NET Core on CentOS - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on CentOS.
 author: thraka
 ms.author: adegeo
-ms.date: 06/01/2020
+ms.date: 06/04/2020
 ---
 
 # Install .NET Core SDK and .NET Core Runtime on CentOS
@@ -14,13 +14,10 @@ ms.date: 06/01/2020
 
 The following is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-For the best compatibility, choose a long-term release (LTS) version of .NET Core.
-
-| .NET Core   | CentOS version |
-|-------------|----------------|
-| 2.1 (LTS)   | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
-| 3.1 (LTS)   | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
-| 5.0 Preview | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
+| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+|--------------------------|---------------|---------------|----------------|
+| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain:
 
@@ -29,6 +26,12 @@ The following table is a list of .NET Core versions which are no longer supporte
 | 3.0       |
 | 2.2       |
 | 2.0       |
+
+## CentOS 8 ✔️
+
+.NET Core 3.1 is available in the default package repositories for CentOS 8.
+
+[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## CentOS 7 ✔️
 
@@ -39,12 +42,6 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 ```
 
 [!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
-
-## CentOS 8 ✔️
-
-The packages for .NET Core doesn't require that you prepare the machine like with the CentOS 7 releases. Run the commands below to install .NET Core.
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Snap
 

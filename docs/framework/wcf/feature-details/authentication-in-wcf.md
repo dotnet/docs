@@ -1,5 +1,6 @@
 ---
 title: "Authentication in WCF"
+description: Learn about several mechanisms in WCF that provide authentication, such as Windows authentication, X.509 certificates, and user name and password.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "authentication [WCF]"

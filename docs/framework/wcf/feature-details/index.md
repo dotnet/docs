@@ -1,5 +1,6 @@
 ---
 title: "WCF Feature Details"
+description: Learn about the extensive control that WCF offers over the messaging functions of an application. These resources go into detail about the available features.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "features [WCF]"

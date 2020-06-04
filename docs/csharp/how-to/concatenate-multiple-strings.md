@@ -49,7 +49,7 @@ combines an array of words by adding a space between each word in the array:
 
 [!code-csharp-interactive[string concatenation using LINQ expressions](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#6)]  
 
-You can try these samples by looking at the [sample code](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings). Or, you can download the samples [as a zip file](../../../samples/snippets/csharp/how-to/strings.zip).
+You can try these samples by looking at the [sample code](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/strings).
 
 ## See also
 

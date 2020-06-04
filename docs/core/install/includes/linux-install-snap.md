@@ -53,3 +53,29 @@ sudo snap alias dotnet-runtime-31.dotnet dotnet
 ```
 
 This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-31.dotnet dotnet31`. When you use the command `dotnet31`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+
+### SSL Certificate errors
+
+When .NET is installed through Snap, it's possible that on some distros the .NET SSL certificates may not be found and you may receive an error similar to the following during `restore`:
+
+```bash
+Processing post-creation actions...
+Running 'dotnet restore' on /home/myhome/test/test.csproj...
+  Restoring packages for /home/myhome/test/test.csproj...
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error : Unable to load the service index for source https://api.nuget.org/v3/index.json. [/home/myhome/test/test.csproj]
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The SSL connection could not be established, see inner exception. [/home/myhome/test/test.csproj]
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The remote certificate is invalid according to the validation procedure. [/home/myhome/test/test.csproj]
+```
+
+To resolve this issue, set a few enviornment variables:
+
+```bash
+export SSL_CERT_FILE=[path-to-certificate-file]
+export SSL_CERT_DIR=/dev/null
+```
+
+The certificate location will vary by distro. Here are the locations for the distros where we have experienced the issue.
+
+* Fedora - `/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem`
+* OpenSUSE - `/etc/ssl/ca-bundle.pem`
+* Solus - `/etc/ssl/certs/ca-certificates.crt`

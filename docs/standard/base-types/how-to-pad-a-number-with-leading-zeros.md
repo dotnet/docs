@@ -1,5 +1,6 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
+description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
 ms.date: "02/25/2019"
 ms.technology: dotnet-standard
 dev_langs:

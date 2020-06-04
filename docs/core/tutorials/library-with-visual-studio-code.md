@@ -121,7 +121,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the terminal, run the following command to create the library project:
+1. In the terminal, run the following command to create the console app project:
 
    ```dotnetcli
    dotnet new console -o ShowCase

@@ -25,11 +25,14 @@ public class CreatingFilesDirectories
             isoStore.CreateDirectory(path);//Creating "AnotherTopLevelDirectory";
             isoStore.CreateFile(isofilename);//Creating "AnotherTopLevelDirectory/NewFile.txt";
             
-            isoStore.CreateDirectory("AnotherTopLevelDirectory/InsideDirectory");
-            isoStore.CreateFile("AnotherTopLevelDirectory/InsideDirectory/HereIAm.txt");
-
+            isoStore.CreateFile("AnotherTopLevelDirectory/InsideDirectory");
+            Console.WriteLine("Created directories.");
+            
             isoStore.CreateFile("InTheRoot.txt");
             Console.WriteLine("Created a new file in the root.");
+
+            isoStore.CreateFile("AnotherTopLevelDirectory/InsideDirectory/HereIAm.txt");
+            Console.WriteLine("Created a new file in the InsideDirectory.");
         }
     }
 }

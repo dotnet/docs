@@ -28,7 +28,7 @@ Now, consider those same instructions written as C# statements:
 
 :::image type="content" source="media/synchronous-breakfast.png" alt-text="synchronous breakfast":::
 
-The synchronously prepared breakfast, took roughly 30 minutes because the total is simply the sum of each individual task.
+The synchronously prepared breakfast, took roughly 30 minutes because the total is the sum of each individual task.
 
 > [!NOTE]
 > The `Coffee`, `Egg`, `Bacon`, `Toast`, and `Juice` classes are empty. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.

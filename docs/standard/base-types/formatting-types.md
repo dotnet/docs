@@ -1,5 +1,6 @@
 ---
 title: "Formatting types in .NET"
+description: Learn how to format types in .NET. Understand how to use or override the ToString method. Learn about culture-sensitive, composite, and custom formatting.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

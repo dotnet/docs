@@ -1,5 +1,6 @@
 ---
 title: "Standard numeric format strings"
+description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in .NET.
 ms.date: "06/10/2018"
 ms.technology: dotnet-standard
 dev_langs:

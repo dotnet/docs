@@ -18,9 +18,9 @@ For the best compatibility, choose a long-term release (LTS) version of both Ubu
 
 | .NET Core   | Ubuntu version                                           |
 |-------------|----------------------------------------------------------|
-| 2.1 (LTS)   | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
-| 3.1 (LTS)   | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
-| 5.0 Preview | **[16.04 (LTS)](#1604-)**, **[18.04 (LTS)](#1804-)**, **[20.04 (LTS)](#2004-)**, [19.10](#1910-) |
+| 2.1 (LTS)   | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
+| 3.1 (LTS)   | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
+| 5.0 Preview | [16.04 (LTS) ✔️](#1604-), [18.04 (LTS) ✔️](#1804-), [19.10 ❌](#1910-), [20.04 (LTS) ✔️](#2004-) |
 
 The following table is a list of .NET Core versions which are ❌ no longer supported. The downloads for these still remain. The Ubuntu version listed is the *last* LTS release they were supported on:
 

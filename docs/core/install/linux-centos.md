@@ -16,11 +16,11 @@ The following is a list of currently supported .NET Core releases on both CentOS
 
 For the best compatibility, choose a long-term release (LTS) version of .NET Core.
 
-| .NET Core   |
-|-------------|
-| 2.1 (LTS)   |
-| 3.1 (LTS)   |
-| 5.0 Preview |
+| .NET Core   | CentOS version |
+|-------------|----------------|
+| 2.1 (LTS)   | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
+| 3.1 (LTS)   | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
+| 5.0 Preview | [7 ✔️](#centos-7-), [8 ✔️](#centos-8-) |
 
 The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain:
 

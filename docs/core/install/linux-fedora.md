@@ -18,9 +18,9 @@ For the best compatibility, choose a long-term release (LTS) version of .NET Cor
 
 | .NET Core   | Fedora version |
 |-------------|----------------|
-| 2.1 (LTS)   | [30*](#fedora-30-), [31](#fedora-31-)        |
-| 3.1 (LTS)   | [30*](#fedora-30-), [31](#fedora-31-), [32](#fedora-32-)    |
-| 5.0 Preview | [31](#fedora-31-), [32](#fedora-32-)         |
+| 2.1 (LTS)   | [30 ❌](#fedora-30-), [31 ✔️](#fedora-31-)        |
+| 3.1 (LTS)   | [30 ❌](#fedora-30-), [31 ✔️](#fedora-31-), [32 ✔️](#fedora-32-)    |
+| 5.0 Preview | [31 ✔️](#fedora-31-), [32 ✔️](#fedora-32-)         |
 
 *Fedora version 30 is currently end-of-life.
 

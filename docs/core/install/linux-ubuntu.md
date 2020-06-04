@@ -8,7 +8,7 @@ ms.date: 06/01/2020
 
 # Install .NET Core SDK and .NET Core Runtime on Ubuntu
 
-.NET Core is supported on different Ubuntu versions. This article describes how to install .NET Core on Ubuntu with APT. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
+.NET Core is supported on different Ubuntu versions. This article describes how to install .NET Core on Ubuntu. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
 ## Supported distributions
 
@@ -29,30 +29,6 @@ The following table is a list of .NET Core versions which are ❌ no longer supp
 | 3.0       | 16.04, 18.04         |
 | 2.2       | 16.04, 18.04         |
 | 2.0       | 14.04, 16.04, 18.04  |
-
-## Dependencies
-
-Ubuntu distributions require the following libraries to be installed:
-
-- liblttng-ust0
-- libcurl3 (for 14.x and 16.x)
-- libcurl4 (for 18.x)
-- libssl1.0.0
-- libkrb5-3
-- zlib1g
-- libicu52 (for 14.x)
-- libicu55 (for 16.x)
-- libicu57 (for 17.x)
-- libicu60 (for 18.x)
-
-For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
-
-- libgdiplus (version 6.0.1 or later)
-
-  > [!WARNING]
-  > Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
-  > of libgdiplus by adding the Mono repository to your system. For more information,
-  > see <https://www.mono-project.com/download/stable/>.
 
 ## 20.04 ✔️
 
@@ -218,6 +194,30 @@ sudo apt-get install {netcore-package}
 ## Snap
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- liblttng-ust0
+- libcurl3 (for 14.x and 16.x)
+- libcurl4 (for 18.x)
+- libssl1.0.0
+- libkrb5-3
+- zlib1g
+- libicu52 (for 14.x)
+- libicu55 (for 16.x)
+- libicu57 (for 17.x)
+- libicu60 (for 18.x)
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+  > [!WARNING]
+  > Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
+  > of libgdiplus by adding the Mono repository to your system. For more information,
+  > see <https://www.mono-project.com/download/stable/>.
 
 ## Scripted install
 

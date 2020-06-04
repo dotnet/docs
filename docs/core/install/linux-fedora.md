@@ -32,32 +32,6 @@ The following table is a list of .NET Core versions which are ❌ no longer supp
 | 2.2       | [29](#fedora-29-), [30](#fedora-30-)         |
 | 2.0       | [27](#fedora-27-), [28](#fedora-28-)         |
 
-## Dependencies
-
-Fedora distributions require the following libraries installed:
-
-- lttng-ust
-- libcurl
-- openssl-libs
-- krb5-libs
-- libicu
-- zlib
-- libunwind
-- libuuid
-
-If your OpenSSL's version >= 1.1, you'll need to install **compat-openssl10**.
-
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
-
-For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- libgdiplus (version 6.0.1 or later)
-
-> [!WARNING]
-> Most versions of Fedora use an earlier version of *libgdiplus*. You can install a recent version
-> of *libgdiplus* by adding the Mono repository to your system. For more information,
-> see <https://www.mono-project.com/download/stable/>.
-
 ## Fedora 32 ✔️
 
 .NET Core 3.1 is available in the default package repositories in Fedora.
@@ -122,6 +96,32 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 ## Snap
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- lttng-ust
+- libcurl
+- openssl-libs
+- krb5-libs
+- libicu
+- zlib
+- libunwind
+- libuuid
+
+If your OpenSSL's version >= 1.1, you'll need to install **compat-openssl10**.
+
+For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+> [!WARNING]
+> Most versions of Fedora use an earlier version of *libgdiplus*. You can install a recent version
+> of *libgdiplus* by adding the Mono repository to your system. For more information,
+> see <https://www.mono-project.com/download/stable/>.
 
 ## Scripted install
 

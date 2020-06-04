@@ -30,9 +30,29 @@ The following table is a list of .NET Core versions which are no longer supporte
 | 2.2       |
 | 2.0       |
 
+## CentOS 7 ✔️
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
+```
+
+[!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
+
+## CentOS 8 ✔️
+
+The packages for .NET Core doesn't require that you prepare the machine like with the CentOS 7 releases. Run the commands below to install .NET Core.
+
+[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+
+## Snap
+
+[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
+
 ## Dependencies
 
-CentOS distributions require the following libraries installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - lttng-ust
 - libcurl
@@ -53,26 +73,6 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 > Most versions of CentOS use an earlier version of *libgdiplus*. You can install a recent version
 > of *libgdiplus* by adding the Mono repository to your system. For more information,
 > see <https://www.mono-project.com/download/stable/>.
-
-## CentOS 7 ✔️
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
-```
-
-[!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
-
-## CentOS 8 ✔️
-
-The packages for .NET Core doesn't require that you prepare the machine like with the CentOS 7 releases. Run the commands below to install .NET Core.
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
-
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## Scripted install
 

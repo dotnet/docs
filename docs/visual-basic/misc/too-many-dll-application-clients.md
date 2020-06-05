@@ -14,4 +14,4 @@ The dynamic-link library (DLL) for Visual Basic can only accommodate access by a
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

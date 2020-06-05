@@ -55,7 +55,7 @@ Next [ counter ]
 |`Next`|Required. Terminates the definition of the `For` loop.|
 
 > [!NOTE]
-> The `To` keyword is used in this statement to specify the range for the counter. You can also use this keyword in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md) and in array declarations. For more information about array declarations, see [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md).
+> The `To` keyword is used in this statement to specify the range for the counter. You can also use this keyword in the [Select...Case Statement](select-case-statement.md) and in array declarations. For more information about array declarations, see [Dim Statement](dim-statement.md).
 
 ## Simple Examples
 
@@ -70,7 +70,7 @@ In the following example, the `number` variable starts at 2 and is reduced by 0.
 [!code-vb[VbVbalrStatements#112](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#112)]
 
 > [!TIP]
-> A [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) or [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md) works well when you don't know in advance how many times to run the statements in the loop. However, when you expect to run the loop a specific number of times, a `For`...`Next` loop is a better choice. You determine the number of iterations when you first enter the loop.
+> A [While...End While Statement](while-end-while-statement.md) or [Do...Loop Statement](do-loop-statement.md) works well when you don't know in advance how many times to run the statements in the loop. However, when you expect to run the loop a specific number of times, a `For`...`Next` loop is a better choice. You determine the number of iterations when you first enter the loop.
 
 ## Nesting Loops
 
@@ -80,13 +80,13 @@ You can nest `For` loops by putting one loop within another. The following examp
 
 When nesting loops, each loop must have a unique `counter` variable.
 
-You can also nest different kinds control structures within each other. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).
+You can also nest different kinds control structures within each other. For more information, see [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md).
 
 ## Exit For and Continue For
 
 The `Exit For` statement immediately exits the `For`…`Next` loop and transfers control to the statement that follows the `Next` statement.
 
-The `Continue For` statement transfers control immediately to the next iteration of the loop. For more information, see [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md).
+The `Continue For` statement transfers control immediately to the next iteration of the loop. For more information, see [Continue Statement](continue-statement.md).
 
 The following example illustrates the use of the `Continue For` and `Exit For` statements.
 
@@ -100,7 +100,7 @@ You can put any number of `Exit For` statements in a `For`…`Next` loop. When u
 
 - A `Try`...`Catch`...`Finally` statement catches an exception. You might use `Exit For` at the end of the `Finally` block.
 
-- You have an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).
+- You have an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](do-loop-statement.md).
 
 ## Technical Implementation
 
@@ -132,7 +132,7 @@ The following table indicates whether `counter` defines a new local variable tha
 |Is `datatype` present?|Is `counter` already defined?|Result (whether `counter` defines a new local variable that’s scoped to the entire `For...Next` loop)|
 |----------------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------|
 |No|Yes|No, because `counter` is already defined. If the scope of `counter` isn't local to the procedure, a compile-time warning occurs.|
-|No|No|Yes. The data type is inferred from the `start`, `end`, and `step` expressions. For information about type inference, see [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).|
+|No|No|Yes. The data type is inferred from the `start`, `end`, and `step` expressions. For information about type inference, see [Option Infer Statement](option-infer-statement.md) and [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).|
 |Yes|Yes|Yes, but only if the existing `counter` variable is defined outside the procedure. That variable remains separate. If the scope of the existing `counter` variable is local to the procedure, a compile-time error occurs.|
 |Yes|No|Yes.|
 
@@ -140,7 +140,7 @@ The data type of `counter` determines the type of the iteration, which must be o
 
 - A `Byte`, `SByte`, `UShort`, `Short`, `UInteger`, `Integer`, `ULong`, `Long`, `Decimal`, `Single`, or `Double`.
 
-- An enumeration that you declare by using an [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).
+- An enumeration that you declare by using an [Enum Statement](enum-statement.md).
 
 - An `Object`.
 
@@ -160,13 +160,13 @@ The `start`, `end`, and `step` expressions can evaluate to any data type that wi
 
 ## Example
 
-The following example removes all elements from a generic list. Instead of a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md), the example shows a `For`...`Next` statement that iterates in descending order. The example uses this technique because the `removeAt` method causes elements after the removed element to have a lower index value.
+The following example removes all elements from a generic list. Instead of a [For Each...Next Statement](for-each-next-statement.md), the example shows a `For`...`Next` statement that iterates in descending order. The example uses this technique because the `removeAt` method causes elements after the removed element to have a lower index value.
 
 [!code-vb[VbVbalrStatements#114](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#114)]
 
 ## Example
 
-The following example iterates through an enumeration that's declared by using an [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).
+The following example iterates through an enumeration that's declared by using an [Enum Statement](enum-statement.md).
 
 [!code-vb[VbVbalrStatements#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#116)]
 
@@ -179,9 +179,9 @@ In the following example, the statement parameters use a class that has operator
 ## See also
 
 - <xref:System.Collections.Generic.List%601>
-- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
-- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
-- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
-- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Loop Structures](../../programming-guide/language-features/control-flow/loop-structures.md)
+- [While...End While Statement](while-end-while-statement.md)
+- [Do...Loop Statement](do-loop-statement.md)
+- [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](exit-statement.md)
 - [Collections](../../programming-guide/concepts/collections.md)

@@ -31,7 +31,7 @@ Specifies the name of the assembly that this module will be a part of.
   
 - The referenced assembly has granted friend assembly access to the assembly into which the module will be built.  
   
- For more information about creating a module, see [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).  
+ For more information about creating a module, see [-target (Visual Basic)](target.md). For more information about friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).  
   
 > [!NOTE]
 > The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
@@ -39,11 +39,11 @@ Specifies the name of the assembly that this module will be a part of.
 ## See also
 
 - [How to: Build a Multifile Assembly](../../../framework/app-domains/build-multifile-assembly.md)
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [-main](../../../visual-basic/reference/command-line-compiler/main.md)
-- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
-- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-target (Visual Basic)](target.md)
+- [-main](main.md)
+- [-reference (Visual Basic)](reference.md)
+- [-addmodule](addmodule.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
 - [Friend Assemblies](../../../standard/assembly/friend.md)

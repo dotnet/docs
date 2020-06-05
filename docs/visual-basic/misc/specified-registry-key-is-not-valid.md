@@ -12,5 +12,5 @@ A registry key specified with a path contains two or more consecutive backslashe
   
 ## See also
 
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
 - [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)

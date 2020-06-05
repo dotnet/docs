@@ -20,9 +20,9 @@ Indicates that the text is multiple lines of code.
  The text to mark as code.  
   
 ## Remarks  
- Use the `<code>` tag to indicate multiple lines as code. Use [\<c>](../../../visual-basic/language-reference/xmldoc/c.md) to indicate that text within a description should be marked as code.  
+ Use the `<code>` tag to indicate multiple lines as code. Use [\<c>](c.md) to indicate that text within a description should be marked as code.  
   
- Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the \<code> tag to include example code for using the `ID` field.  
@@ -31,4 +31,4 @@ Indicates that the text is multiple lines of code.
   
 ## See also
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](index.md)

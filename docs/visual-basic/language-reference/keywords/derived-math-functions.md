@@ -50,4 +50,4 @@ The following table shows non-intrinsic math functions that can be derived from 
   
 ## See also
 
-- [Math Functions](../../../visual-basic/language-reference/functions/math-functions.md)
+- [Math Functions](../functions/math-functions.md)

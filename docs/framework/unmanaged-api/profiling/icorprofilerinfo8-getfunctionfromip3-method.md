@@ -44,7 +44,7 @@ This method works for both dynamic and non-dynamic methods. It is a superset of 
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorProf.idl, CorProf.h
 

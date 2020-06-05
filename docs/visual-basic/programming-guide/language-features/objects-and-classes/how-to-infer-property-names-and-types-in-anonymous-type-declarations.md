@@ -122,7 +122,7 @@ Anonymous types can also infer property names and types from other sources. The 
 
 ## See also
 
-- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [Key](../../../../visual-basic/language-reference/modifiers/key.md)
+- [Object Initializers: Named and Anonymous Types](object-initializers-named-and-anonymous-types.md)
+- [Local Type Inference](../variables/local-type-inference.md)
+- [Anonymous Types](anonymous-types.md)
+- [Key](../../../language-reference/modifiers/key.md)

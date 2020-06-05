@@ -26,7 +26,7 @@ Enables or disables compiler optimizations.
 ## Remarks  
  Compiler optimizations make your output file smaller, faster, and more efficient. However, because optimizations result in code rearrangement in the output file, `-optimize+` can make debugging difficult.  
   
- All modules generated with `-target:module` for an assembly must use the same `-optimize` settings as the assembly. For more information, see [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md).  
+ All modules generated with `-target:module` for an assembly must use the same `-optimize` settings as the assembly. For more information, see [-target (Visual Basic)](target.md).  
   
  You can combine the `-optimize` and `-debug` options.  
   
@@ -43,7 +43,7 @@ vbc t2.vb -optimize
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-debug (Visual Basic)](debug.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [-target (Visual Basic)](target.md)

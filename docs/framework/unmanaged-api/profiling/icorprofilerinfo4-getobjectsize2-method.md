@@ -38,7 +38,7 @@ HRESULT GetObjectSize2(
  Different objects of the same types often have the same size. However, some types, such as arrays or strings, may have a different size for each object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

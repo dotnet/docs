@@ -55,8 +55,8 @@ End Structure
 
 For more information, see:
 
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Class Statement](../../language-reference/statements/class-statement.md)
+- [Structure Statement](../../language-reference/statements/structure-statement.md)
 
 ### Class members
 
@@ -108,11 +108,11 @@ Most properties have methods or procedures to both set and get the property valu
 
 For more information, see:
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
-- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
-- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)
-- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
+- [Property Statement](../../language-reference/statements/property-statement.md)
+- [Get Statement](../../language-reference/statements/get-statement.md)
+- [Set Statement](../../language-reference/statements/set-statement.md)
+- [ReadOnly](../../language-reference/modifiers/readonly.md)
+- [WriteOnly](../../language-reference/modifiers/writeonly.md)
 
 #### Methods
 
@@ -148,10 +148,10 @@ In most cases you declare a method within a class definition. However, Visual Ba
 
 For more information, see:
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
-- [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [Function Statement](../../language-reference/statements/function-statement.md)
+- [Sub Statement](../../language-reference/statements/sub-statement.md)
+- [Overloads](../../language-reference/modifiers/overloads.md)
+- [Extension Methods](../language-features/procedures/extension-methods.md)
 
 #### Constructors
 
@@ -167,7 +167,7 @@ Class SampleClass
 End Class
 ```
 
-For more information, see: [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
+For more information, see: [Object Lifetime: How Objects Are Created and Destroyed](../language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
 
 #### Destructors
 
@@ -179,13 +179,13 @@ For more information about destructors and garbage collection in the .NET Framew
 
 Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).
 
-- To declare events, use the [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).
+- To declare events, use the [Event Statement](../../language-reference/statements/event-statement.md).
 
-- To raise events, use the [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md).
+- To raise events, use the [RaiseEvent Statement](../../language-reference/statements/raiseevent-statement.md).
 
-- To specify event handlers using a declarative way, use the [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md) statement and the [Handles](../../../visual-basic/language-reference/statements/handles-clause.md) clause.
+- To specify event handlers using a declarative way, use the [WithEvents](../../language-reference/modifiers/withevents.md) statement and the [Handles](../../language-reference/statements/handles-clause.md) clause.
 
-- To be able to dynamically add, remove, and change the event handler associated with an event, use the [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md) and [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md) together with the [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md).
+- To be able to dynamically add, remove, and change the event handler associated with an event, use the [AddHandler Statement](../../language-reference/statements/addhandler-statement.md) and [RemoveHandler Statement](../../language-reference/statements/removehandler-statement.md) together with the [AddressOf Operator](../../language-reference/operators/addressof-operator.md).
 
 #### Nested classes
 
@@ -213,13 +213,13 @@ The following access modifiers are available:
 
 |Visual Basic Modifier|Definition|
 |---------------------------|----------------|
-|[Public](../../../visual-basic/language-reference/modifiers/public.md)|The type or member can be accessed by any other code in the same assembly or another assembly that references it.|
-|[Private](../../../visual-basic/language-reference/modifiers/private.md)|The type or member can only be accessed by code in the same class.|
-|[Protected](../../../visual-basic/language-reference/modifiers/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|
-|[Friend](../../../visual-basic/language-reference/modifiers/friend.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
+|[Public](../../language-reference/modifiers/public.md)|The type or member can be accessed by any other code in the same assembly or another assembly that references it.|
+|[Private](../../language-reference/modifiers/private.md)|The type or member can only be accessed by code in the same class.|
+|[Protected](../../language-reference/modifiers/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|
+|[Friend](../../language-reference/modifiers/friend.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
 |`Protected Friend`|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|
 
-For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+For more information, see [Access levels in Visual Basic](../language-features/declared-elements/access-levels.md).
 
 ### Instantiating classes
 
@@ -247,8 +247,8 @@ Dim sampleObject = New SampleClass With
 
 For more information, see:
 
-- [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)
-- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [New Operator](../../language-reference/operators/new-operator.md)
+- [Object Initializers: Named and Anonymous Types](../language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 
 ### Shared classes and members
 
@@ -272,8 +272,8 @@ MsgBox(SampleClass.SampleString)
 
  For more information, see:
 
-- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
-- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Shared](../../language-reference/modifiers/shared.md)
+- [Module Statement](../../language-reference/statements/module-statement.md)
 
 ### Anonymous types
 
@@ -287,7 +287,7 @@ Dim sampleObject =
     New With {Key .FirstProperty = "A", .SecondProperty = "B"}
 ```
 
-For more information, see: [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+For more information, see: [Anonymous Types](../language-features/objects-and-classes/anonymous-types.md).
 
 ## Inheritance
 
@@ -322,9 +322,9 @@ End Class
 
 For more information, see:
 
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
-- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [Inherits Statement](../../language-reference/statements/inherits-statement.md)
+- [NotInheritable](../../language-reference/modifiers/notinheritable.md)
+- [MustInherit](../../language-reference/modifiers/mustinherit.md)
 
 ### Overriding members
 
@@ -334,11 +334,11 @@ The following modifiers are used to control how properties and methods are overr
 
 |Visual Basic Modifier|Definition|
 |---------------------------|----------------|
-|[Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)|Allows a class member to be overridden in a derived class.|
-|[Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)|Overrides a virtual (overridable) member defined in the base class.|
-|[NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)|Prevents a member from being overridden in an inheriting class.|
-|[MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)|Requires that a class member to be overridden in the derived class.|
-|[Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)|Hides a member inherited from a base class|
+|[Overridable](../../language-reference/modifiers/overridable.md)|Allows a class member to be overridden in a derived class.|
+|[Overrides](../../language-reference/modifiers/overrides.md)|Overrides a virtual (overridable) member defined in the base class.|
+|[NotOverridable](../../language-reference/modifiers/notoverridable.md)|Prevents a member from being overridden in an inheriting class.|
+|[MustOverride](../../language-reference/modifiers/mustoverride.md)|Requires that a class member to be overridden in the derived class.|
+|[Shadows](../../language-reference/modifiers/shadows.md)|Hides a member inherited from a base class|
 
 ## Interfaces
 
@@ -365,9 +365,9 @@ End Class
 
 For more information, see:
 
-- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [Interfaces](../language-features/interfaces/index.md)
+- [Interface Statement](../../language-reference/statements/interface-statement.md)
+- [Implements Statement](../../language-reference/statements/implements-statement.md)
 
 ## Generics
 
@@ -391,7 +391,7 @@ sampleObject.Field = "Sample string"
 For more information, see:
 
 - [Generics](../../../standard/generics/index.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Generic Types in Visual Basic](../language-features/data-types/generic-types.md)
 
 ## Delegates
 
@@ -424,10 +424,10 @@ End Class
 
 For more information, see:
 
-- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)
-- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Delegates](../language-features/delegates/index.md)
+- [Delegate Statement](../../language-reference/statements/delegate-statement.md)
+- [AddressOf Operator](../../language-reference/operators/addressof-operator.md)
 
 ## See also
 
-- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+- [Visual Basic Programming Guide](../index.md)

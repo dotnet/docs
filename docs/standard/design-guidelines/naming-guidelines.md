@@ -1,5 +1,6 @@
 ---
 title: "Naming Guidelines"
+description: In this overview, read about naming conventions to use in framework development. Go to articles covering capitalization, general naming, and other guidelines.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

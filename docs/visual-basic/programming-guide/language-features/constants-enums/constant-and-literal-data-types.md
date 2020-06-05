@@ -13,7 +13,7 @@ ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
 # Constant and Literal Data Types (Visual Basic)
 A literal is a value that is expressed as itself rather than as a variable's value or the result of an expression, such as the number 3 or the string "Hello". A constant is a meaningful name that takes the place of a literal and retains this same value throughout the program, as opposed to a variable, whose value may change.  
   
- When [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) is `On`, you must declare all constants explicitly with a data type. In the following example, the data type of `MyByte` is explicitly declared as data type `Byte`:  
+ When [Option Infer](../../../language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../language-reference/statements/option-strict-statement.md) is `On`, you must declare all constants explicitly with a data type. In the following example, the data type of `MyByte` is explicitly declared as data type `Byte`:  
   
  [!code-vb[VbVbalrConstants#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConstants/VB/Class1.vb#1)]  
   
@@ -57,13 +57,13 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
 ## See also
 
-- [User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)
-- [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)
-- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [Option Explicit Statement](../../../../visual-basic/language-reference/statements/option-explicit-statement.md)
-- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
-- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
-- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
-- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
-- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [User-Defined Constants](user-defined-constants.md)
+- [How to: Declare A Constant](how-to-declare-a-constant.md)
+- [Constants Overview](constants-overview.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)
+- [Option Explicit Statement](../../../language-reference/statements/option-explicit-statement.md)
+- [Enumerations Overview](enumerations-overview.md)
+- [How to: Declare an Enumeration](how-to-declare-enumerations.md)
+- [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
+- [Data Types](../../../language-reference/data-types/index.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)

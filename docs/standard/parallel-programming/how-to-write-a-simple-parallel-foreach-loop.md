@@ -1,5 +1,6 @@
 ---
 title: Write a simple parallel program using Parallel.ForEach
+description: In this article, learn how to enable data parallelism in .NET. Write a Parallel.ForEach loop over any IEnumerable or IEnumerable<T> data source.
 ms.date: 02/14/2019
 ms.technology: dotnet-standard
 dev_langs:

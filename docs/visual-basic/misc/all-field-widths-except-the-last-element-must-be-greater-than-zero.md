@@ -18,5 +18,5 @@ All field widths, except the last element, must be greater than zero. A field wi
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths>
-- [How to: Read From Fixed-width Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)
-- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+- [How to: Read From Fixed-width Text Files](../developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)
+- [TextFieldParser Object](../language-reference/objects/textfieldparser-object.md)

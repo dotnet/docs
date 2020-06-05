@@ -1,5 +1,6 @@
 ---
 title: "<defaultProxy> Element (Network Settings)"
+description: The <defaultProxy> network settings element configures the Hypertext Transfer Protocol (HTTP) proxy server in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy"

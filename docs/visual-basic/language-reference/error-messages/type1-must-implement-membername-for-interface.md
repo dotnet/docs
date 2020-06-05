@@ -31,5 +31,5 @@ ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
   
 ## See also
 
-- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
-- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [Implements Statement](../statements/implements-statement.md)
+- [Interfaces](../../programming-guide/language-features/interfaces/index.md)

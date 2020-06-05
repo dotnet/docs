@@ -19,5 +19,5 @@ The statement cannot appear at the level of a namespace. The only declarations a
   
 ## See also
 
-- [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
-- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
+- [Scope in Visual Basic](../../programming-guide/language-features/declared-elements/scope.md)
+- [Namespaces in Visual Basic](../../programming-guide/program-structure/namespaces.md)

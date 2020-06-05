@@ -16,13 +16,13 @@ ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 # How to: Control the Scope of a Variable (Visual Basic)
 Normally, a variable is in *scope*, or visible for reference, throughout the region in which you declare it. In some cases, the variable's *access level* can influence its scope.  
   
- For more information, see [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md).  
+ For more information, see [Scope in Visual Basic](scope.md).  
   
 ## Scope at Block or Procedure Level  
   
 #### To make a variable visible only within a block  
   
-- Place the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
+- Place the [Dim Statement](../../../language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
   
      You can refer to the variable only from within the block.  
   
@@ -39,7 +39,7 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
   
 1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2. Include the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the `Dim` statement.  
+2. Include the [Private](../../../language-reference/modifiers/private.md) keyword in the `Dim` statement.  
   
 3. You can refer to the variable from anywhere within the module, class, or structure, but not from outside it.  
   
@@ -47,7 +47,7 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
   
 1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2. Include the [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) or [Public](../../../../visual-basic/language-reference/modifiers/public.md) keyword in the `Dim` statement.  
+2. Include the [Friend](../../../language-reference/modifiers/friend.md) or [Public](../../../language-reference/modifiers/public.md) keyword in the `Dim` statement.  
   
 3. You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
   
@@ -82,9 +82,9 @@ Public strMsg As String
   
 ## See also
 
-- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
-- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
-- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
-- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
-- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Scope in Visual Basic](scope.md)
+- [Lifetime in Visual Basic](lifetime.md)
+- [Access levels in Visual Basic](access-levels.md)
+- [Variables](../variables/index.md)
+- [Variable Declaration](../variables/variable-declaration.md)
+- [Dim Statement](../../../language-reference/statements/dim-statement.md)

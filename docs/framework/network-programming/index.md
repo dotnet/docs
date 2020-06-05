@@ -1,5 +1,6 @@
 ---
 title: "Network Programming in the .NET Framework"
+description: Use these resources to integrate the layered, extensible, and managed implementation of internet services provided by the .NET Framework into your applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Networking"

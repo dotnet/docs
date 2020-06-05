@@ -18,7 +18,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## Parts  
 |||
 |---|---|
-|`attributemodifier`|Required for attributes applied at the beginning of a source file. Can be [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md) or [Module](../../../visual-basic/language-reference/modifiers/module-keyword.md).|
+|`attributemodifier`|Required for attributes applied at the beginning of a source file. Can be [Assembly](../modifiers/assembly.md) or [Module](../modifiers/module-keyword.md).|
 |`attributename`| Required. Name of the attribute.|
 |`attributearguments`|Optional. List of positional arguments for this attribute. Multiple arguments are separated by commas.|
 |`attributeinitializer`|Optional. List of variable or property initializers for this attribute. Multiple initializers are separated by commas.|
@@ -26,7 +26,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## Remarks  
  You can apply one or more attributes to nearly any programming element (types, procedures, properties, and so forth). Attributes appear in your assembly's metadata, and they can help you annotate your code or specify how to use a particular programming element. You can apply attributes defined by Visual Basic and the .NET Framework, and you can define your own attributes.  
 
- For more information on when to use attributes, see [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md). For information on attribute names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+ For more information on when to use attributes, see [Attributes overview](../../programming-guide/concepts/attributes/index.md). For information on attribute names, see [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).  
   
 ## Rules  
   
@@ -49,7 +49,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## See also
 
-- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)
-- [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
-- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [Assembly](../modifiers/assembly.md)
+- [Module \<keyword>](../modifiers/module-keyword.md)
+- [Attributes overview](../../programming-guide/concepts/attributes/index.md)
+- [How to: Break and Combine Statements in Code](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

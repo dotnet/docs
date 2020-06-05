@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: ae48c738-dff8-4c0f-8931-bbb70b2c8b03
 ---
 # Implicit conversion from '\<typename1>' to '\<typename2>' in copying the value of 'ByRef' parameter '\<parametername>' back to the matching argument.
-A procedure is called with a [ByRef](../../../visual-basic/language-reference/modifiers/byref.md) argument of a different type than that of its corresponding parameter.  
+A procedure is called with a [ByRef](../modifiers/byref.md) argument of a different type than that of its corresponding parameter.  
   
  If you pass an argument `ByRef`, Visual Basic sometimes copies the argument value into a local variable in the procedure instead of passing a reference. In such a case, when the procedure returns, Visual Basic must then copy the local variable value back into the argument in the calling code.  
   
@@ -23,11 +23,11 @@ A procedure is called with a [ByRef](../../../visual-basic/language-reference/mo
   
 - If possible, use a calling argument of the same type as the procedure parameter, so Visual Basic does not need to do any conversion.  
   
-- If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](../../../visual-basic/language-reference/modifiers/byval.md) instead of `ByRef`.  
+- If you need to call the procedure with an argument type different from the parameter type but do not need to return a value into the calling argument, define the parameter to be [ByVal](../modifiers/byval.md) instead of `ByRef`.  
   
 ## See also
 
-- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Procedure Parameters and Arguments](../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
-- [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
-- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Procedures](../../programming-guide/language-features/procedures/index.md)
+- [Procedure Parameters and Arguments](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
+- [Passing Arguments by Value and by Reference](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

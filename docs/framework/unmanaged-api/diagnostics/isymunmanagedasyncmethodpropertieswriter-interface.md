@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: caa71820-8058-4b6a-93a2-25ee757d92d3
 ---
 # ISymUnmanagedAsyncMethodPropertiesWriter Interface
-Allows you to define optional async method information for each method symbol. Always use with an opened method; that is, between calls to the [OpenMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md) and the [CloseMethod Method](isymunmanagedwriter-closemethod-method.md).  
+Allows you to define optional async method information for each method symbol. Always use with an opened method; that is, between calls to the [OpenMethod Method](isymunmanagedwriter-openmethod-method.md) and the [CloseMethod Method](isymunmanagedwriter-closemethod-method.md).  
   
 ## Syntax  
   

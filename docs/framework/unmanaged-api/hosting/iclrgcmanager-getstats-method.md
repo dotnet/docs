@@ -45,7 +45,7 @@ HRESULT GetStats (
 ## Remarks  
  The CLR calculates and returns only those statistics that are specified by the `Flags` field of `pStats`.  
   
- Set the `Flags` field to one or more values of the [COR_GC_STAT_TYPES](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md) enumeration to specify which statistics in the [COR_GC_STATS](cor-gc-stats-structure.md) structure are to be set.  
+ Set the `Flags` field to one or more values of the [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) enumeration to specify which statistics in the [COR_GC_STATS](cor-gc-stats-structure.md) structure are to be set.  
   
  An example of the usage is as follows:  
   

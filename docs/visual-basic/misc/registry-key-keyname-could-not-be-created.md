@@ -14,4 +14,4 @@ The specified registry key could not be created, possibly because of insufficien
   
 ## See also
 
-- [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)
+- [Registry Summary](../language-reference/keywords/registry-summary.md)

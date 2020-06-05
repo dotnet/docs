@@ -57,5 +57,5 @@ System.Console.WriteLine(info)
   
 ## See also
 
-- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+- [Visual Basic Programming Guide](../index.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)

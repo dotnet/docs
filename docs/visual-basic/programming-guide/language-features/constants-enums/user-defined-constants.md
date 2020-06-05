@@ -39,7 +39,7 @@ A constant is a meaningful name that takes the place of a number or string that 
   
 - To create a constant available throughout the application, declare it using the `Public` keyword in the declarations section the class.  
   
- For more information, see [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md).  
+ For more information, see [How to: Declare A Constant](how-to-declare-a-constant.md).  
   
 ### Avoiding Circular References  
  Because constants can be defined in terms of other constants, it is possible to inadvertently create a *cycle*, or circular reference, between two or more constants. A cycle occurs when you have two or more public constants, each of which is defined in terms of the other, as in the following example:  
@@ -51,12 +51,12 @@ A constant is a meaningful name that takes the place of a number or string that 
   
 ## See also
 
-- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
-- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
-- [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)
-- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
-- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
-- [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
-- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Const Statement](../../../language-reference/statements/const-statement.md)
+- [Constant and Literal Data Types](constant-and-literal-data-types.md)
+- [Constants and Enumerations](index.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)
+- [Enumerations Overview](enumerations-overview.md)
+- [Constants Overview](constants-overview.md)
+- [How to: Declare an Enumeration](how-to-declare-enumerations.md)
+- [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)

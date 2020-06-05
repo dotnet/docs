@@ -34,11 +34,11 @@ Provides properties and classes for accessing the application's resources.
   
 |Category|Property data type|  
 |---|---|  
-|**Strings**|[String](../../../visual-basic/language-reference/data-types/string-data-type.md)|  
+|**Strings**|[String](../data-types/string-data-type.md)|  
 |**Images**|<xref:System.Drawing.Bitmap>|  
 |**Icons**|<xref:System.Drawing.Icon>|  
 |**Audio**|<xref:System.IO.UnmanagedMemoryStream><br /><br /> The <xref:System.IO.UnmanagedMemoryStream> class derives from the <xref:System.IO.Stream> class, so it can be used with methods that take streams, such as the <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A> method.|  
-|**Files**|-   [String](../../../visual-basic/language-reference/data-types/string-data-type.md) for text files.<br />-   <xref:System.Drawing.Bitmap> for image files.<br />-   <xref:System.Drawing.Icon> for icon files.<br />-   <xref:System.IO.UnmanagedMemoryStream> for sound files.|  
+|**Files**|-   [String](../data-types/string-data-type.md) for text files.<br />-   <xref:System.Drawing.Bitmap> for image files.<br />-   <xref:System.Drawing.Icon> for icon files.<br />-   <xref:System.IO.UnmanagedMemoryStream> for sound files.|  
 |**Other**|Determined by the information in the designer's **Type** column.|  
   
 ## Classes  

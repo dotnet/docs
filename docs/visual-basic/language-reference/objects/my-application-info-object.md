@@ -24,4 +24,4 @@ Provides properties for getting the information about the application, such as t
   
 ## See also
 
-- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)
+- [My.Application Object](my-application-object.md)

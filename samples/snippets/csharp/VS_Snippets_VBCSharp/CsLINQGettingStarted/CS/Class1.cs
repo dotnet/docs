@@ -252,15 +252,22 @@ namespace LINQGettingStarted_1
             // Data source.
             double[] radii = { 1, 2, 3 };
 
-            // Query.
-            IEnumerable<string> query =
+            // LINQ query using method syntax.
+            IEnumerable<string> output = 
+                radii.Select(r => $"Area for a circle with a radius of '{r}' = {r * r * Math.PI:F2}");
+
+            /*
+            // LINQ query using query syntax.
+            IEnumerable<string> output =
                 from rad in radii
                 select $"Area = {rad * rad * Math.PI:F2}";
+            */
 
-            // Query execution.
-            foreach (string s in query)
+            foreach (string s in output)
+            {
                 Console.WriteLine(s);
-
+            }
+                
             // Keep the console open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();

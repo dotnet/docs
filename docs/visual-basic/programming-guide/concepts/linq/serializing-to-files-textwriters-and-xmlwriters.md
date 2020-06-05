@@ -28,4 +28,4 @@ For examples, see the appropriate reference topic.
 
 ## See also
 
-- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+- [Serializing XML Trees (Visual Basic)](serializing-xml-trees.md)

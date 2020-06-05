@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Socket"
+description: Learn how to initialize a socket to communicate with remote devices. Use the Socket class to specify the address family, socket type, and protocol type.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

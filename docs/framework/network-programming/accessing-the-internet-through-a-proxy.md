@@ -1,5 +1,6 @@
 ---
 title: "Accessing the Internet Through a Proxy"
+description: Learn how to configure a proxy instance to enable your .NET Framework application to communicate with the web proxy.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Networking"

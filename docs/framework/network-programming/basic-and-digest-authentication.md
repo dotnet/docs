@@ -1,5 +1,6 @@
 ---
 title: "Basic and Digest Authentication"
+description: Learn to use basic and digest authentication, where an application provides a user name and password in the WebRequest object that it uses to request data.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

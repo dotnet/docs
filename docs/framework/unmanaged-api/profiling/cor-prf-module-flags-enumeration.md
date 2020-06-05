@@ -49,7 +49,7 @@ typedef enum
  Bits from COR_PRF_MODULE_FLAGS are returned to the profiler in the `pdwModuleFlags` output parameter of the [ICorProfilerInfo3::GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) method. Some combinations of two or more flags are possible, but not all combinations are possible.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

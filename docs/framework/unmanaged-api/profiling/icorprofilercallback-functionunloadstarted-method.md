@@ -36,7 +36,7 @@ HRESULT FunctionUnloadStarted(
  The value of the `functionId` parameter is no longer valid after this method returns to the caller.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

@@ -22,11 +22,11 @@ Provides methods to validate metadata signatures.
   
 |Method|Description|  
 |------------|-----------------|  
-|[ValidateMetaData Method](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-validatemetadata-method.md)|Validates the metadata signatures of the objects in the current metadata scope.|  
-|[ValidatorInit Method](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-validatorinit-method.md)|Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.|  
+|[ValidateMetaData Method](imetadatavalidate-validatemetadata-method.md)|Validates the metadata signatures of the objects in the current metadata scope.|  
+|[ValidatorInit Method](imetadatavalidate-validatorinit-method.md)|Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -36,4 +36,4 @@ Provides methods to validate metadata signatures.
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)

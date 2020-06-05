@@ -1,5 +1,6 @@
 ---
 title: "Internet Authentication"
+description: Learn about the variety of client authentication mechanisms that System.Net classes support for your applications in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "authentication [.NET Framework], classes"

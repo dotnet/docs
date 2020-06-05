@@ -1,5 +1,6 @@
 ---
 title: "Using an Asynchronous Server Socket"
+description: This example shows an Asynchronous server socket. The Socket class uses .NET Framework asynchronous programming to process network service requests. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

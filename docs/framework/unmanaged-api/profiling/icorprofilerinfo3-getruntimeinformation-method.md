@@ -67,7 +67,7 @@ HRESULT GetRuntimeInformation(
  You may pass null for any parameter. However, `pcchVersionString` cannot be null unless `szVersionString` is also null.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

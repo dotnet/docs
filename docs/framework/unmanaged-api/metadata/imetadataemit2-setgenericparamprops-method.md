@@ -36,7 +36,7 @@ HRESULT SetGenericParamProps (
  [in] The token for the generic parameter definition for which to set values.  
   
  `dwParamFlags`  
- [in] A value of the [CorGenericParamAttr](../../../../docs/framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.  
+ [in] A value of the [CorGenericParamAttr](corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.  
   
  `szName`  
  [in] Optional. The name of the parameter for which to set values.  
@@ -48,7 +48,7 @@ HRESULT SetGenericParamProps (
  [in] Optional. A zero-terminated array of type constraints. Array members must be an `mdTypeDef`, `mdTypeRef`, or `mdTypeSpec` metadata token.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -58,5 +58,5 @@ HRESULT SetGenericParamProps (
   
 ## See also
 
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)

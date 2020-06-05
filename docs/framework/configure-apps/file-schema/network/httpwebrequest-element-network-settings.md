@@ -1,5 +1,6 @@
 ---
 title: "<httpWebRequest> Element (Network Settings)"
+description: The <httpWebRequest> network settings element customizes Web request parameters in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/httpWebRequest"

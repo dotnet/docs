@@ -9,7 +9,7 @@ Routing contracts define the message patterns that the Routing Service can proce
 ## Routing Contracts  
  Because the Routing Service accepts a generic WCF Message object, the most important consideration when selecting a contract is the shape of the channel that will be used when communicating with the clients and services. When processing messages, the Routing Service uses symmetrical message pumps, so generally the shape of the inbound contract must match the shape of the outbound contract. However, there are cases where the Service Model’s dispatcher can modify the shapes, such as when the dispatcher converts a duplex channel into a request-reply channel, or removes the session support from a channel when it is not required and is not being used (that is, when **SessionMode.Allowed**, converting an **IInputSessionChannel** into an **IInputChannel**).  
   
- To support these message pumps, the Routing Service provides contracts in the <xref:System.ServiceModel.Routing> namespace, which must be used when defining the service endpoints used by the Routing Service. These contracts are typeless, which allows the receipt of any message type or action, and allows the Routing Service to handle messages without knowledge of the specific message schema. For more information about the contracts used by the Routing Service, see [Routing Contracts](../../../../docs/framework/wcf/feature-details/routing-contracts.md).  
+ To support these message pumps, the Routing Service provides contracts in the <xref:System.ServiceModel.Routing> namespace, which must be used when defining the service endpoints used by the Routing Service. These contracts are typeless, which allows the receipt of any message type or action, and allows the Routing Service to handle messages without knowledge of the specific message schema. For more information about the contracts used by the Routing Service, see [Routing Contracts](routing-contracts.md).  
   
  The contracts provided by the Routing Service are located in the <xref:System.ServiceModel.Routing> namespace, and are described in the following table.  
   
@@ -22,5 +22,5 @@ Routing contracts define the message patterns that the Routing Service can proce
   
 ## See also
 
-- [Routing Service](../../../../docs/framework/wcf/feature-details/routing-service.md)
-- [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)
+- [Routing Service](routing-service.md)
+- [Routing Introduction](routing-introduction.md)

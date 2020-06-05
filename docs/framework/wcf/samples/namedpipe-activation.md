@@ -6,7 +6,7 @@ ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
 
 # NamedPipe Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and requires Windows Vista to run.
+This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](getting-started-sample.md) and requires Windows Vista to run.
 
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.
@@ -156,7 +156,7 @@ Press <ENTER> to terminate client.
 
 1. Ensure that IIS 7.0 is installed. IIS 7.0 is required for WAS activation.
 
-2. Ensure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+2. Ensure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
     In addition, you must install the WCF non-HTTP activation components:
 
@@ -195,7 +195,7 @@ Press <ENTER> to terminate client.
 
         This command enables the /servicemodelsamples application to be accessed using both `http://localhost/servicemodelsamples` and `net.tcp://localhost/servicemodelsamples`.
 
-4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 5. Remove the net.pipe site binding you added for this sample.
 

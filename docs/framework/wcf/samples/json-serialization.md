@@ -61,6 +61,6 @@ Person p2 = (Person)ser.ReadObject(stream1);
   
 #### To set up, build and run the sample  
   
-1. Build the solution JsonSerialization.sln as described in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. Build the solution JsonSerialization.sln as described in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 2. Run the resulting console application.  

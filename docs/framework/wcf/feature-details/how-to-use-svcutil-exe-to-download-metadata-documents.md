@@ -31,7 +31,7 @@ You can use Svcutil.exe to download metadata from running services and to save t
   
 3. The <`url`>argument specifies the URL to a service endpoint that provides metadata or to a metadata document hosted online. The <`epr`> argument specifies the path to an XML file that contains a WS-Addressing `EndpointAddress` for a service endpoint that supports WS-MetadataExchange.  
   
- For more options about using this tool for metadata download, see [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ For more options about using this tool for metadata download, see [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## Example  
  The following command downloads metadata documents from a running service.  
@@ -42,4 +42,4 @@ svcutil /t:metadata http://service/metadataEndpoint
   
 ## See also
 
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

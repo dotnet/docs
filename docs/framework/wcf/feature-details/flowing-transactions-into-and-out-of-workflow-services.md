@@ -307,5 +307,5 @@ Workflow services and clients can participate in transactions.  For a service op
   
 ## See also
 
-- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)
+- [Workflow Services](workflow-services.md)
+- [Windows Communication Foundation Transactions Overview](transactions-overview.md)

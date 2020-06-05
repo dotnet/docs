@@ -44,5 +44,5 @@ public interface ICalculator
 ## See also
 
 - <xref:System.ServiceModel.OperationContractAttribute>
-- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
-- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Designing Service Contracts](../designing-service-contracts.md)
+- [How to: Create a Duplex Contract](how-to-create-a-duplex-contract.md)

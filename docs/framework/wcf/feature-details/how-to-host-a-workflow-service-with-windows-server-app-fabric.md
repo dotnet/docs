@@ -5,11 +5,11 @@ ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
 ---
 # How to: Host a Workflow Service with Windows Server App Fabric
 
-Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The only difference is the tools App Fabric provides for deploying, monitoring, and managing workflow services. This topic uses the workflow service created in the [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md). That topic will walk you through creating a workflow service. This topic will explain how to host the workflow service using App Fabric. For more information about Windows Server App Fabric, see [Windows Server App Fabric Documentation](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)). Before completing the steps below make sure you have Windows Server App Fabric installed.  To do this open up Internet Information Services (inetmgr.exe), click your server name in the **Connections** view, click Sites, and click **Default Web Site**. In the right-hand side of the screen you should see a section called **App Fabric**. If you don’t see this section (it will be on the top of the right-hand pane) you do not have App Fabric installed. For more information about installing Windows Server App Fabric see [Installing Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee790960(v=azure.10)).  
+Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The only difference is the tools App Fabric provides for deploying, monitoring, and managing workflow services. This topic uses the workflow service created in the [Creating a Long-running Workflow Service](creating-a-long-running-workflow-service.md). That topic will walk you through creating a workflow service. This topic will explain how to host the workflow service using App Fabric. For more information about Windows Server App Fabric, see [Windows Server App Fabric Documentation](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)). Before completing the steps below make sure you have Windows Server App Fabric installed.  To do this open up Internet Information Services (inetmgr.exe), click your server name in the **Connections** view, click Sites, and click **Default Web Site**. In the right-hand side of the screen you should see a section called **App Fabric**. If you don’t see this section (it will be on the top of the right-hand pane) you do not have App Fabric installed. For more information about installing Windows Server App Fabric see [Installing Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee790960(v=azure.10)).  
   
 ### Creating a Simple Workflow Service  
   
-1. Open Visual Studio 2012 and load the OrderProcessing solution you created in the [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md) topic.  
+1. Open Visual Studio 2012 and load the OrderProcessing solution you created in the [Creating a Long-running Workflow Service](creating-a-long-running-workflow-service.md) topic.  
   
 2. Right click the **OrderService** project and select **Properties** and select the **Web** tab.  
   
@@ -29,23 +29,23 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 4. Select the **General** tab to display general information about the application as shown in the following screenshot.  
   
-     ![General tab of the App Fabric Configuration dialog](../../../../docs/framework/wcf/feature-details/media/appfabricconfiguration-general.gif "AppFabricConfiguration-General")  
+     ![General tab of the App Fabric Configuration dialog](media/appfabricconfiguration-general.gif "AppFabricConfiguration-General")  
   
 5. Select the **Monitoring** tab. This shows various monitoring settings as shown in the following screenshot.  
   
-     ![App Fabric Configuration Monitoring tab](../../../../docs/framework/wcf/feature-details/media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-Monitoring")  
+     ![App Fabric Configuration Monitoring tab](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-Monitoring")  
   
      For more information about configuring workflow service monitoring in App Fabric see [Configuring monitoring with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677384(v=azure.10)).  
   
 6. Select the **Workflow Persistence** tab. This allows you to configure your application to use App Fabric’s default persistence provider as shown in the following screenshot.  
   
-     ![App Fabric Configuration &#45; Persistence](../../../../docs/framework/wcf/feature-details/media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-Persistence")  
+     ![App Fabric Configuration &#45; Persistence](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-Persistence")  
   
      For more information about configuring workflow persistence in Windows Server App Fabric see [Configuring Workflow Persistence in App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677353(v=azure.10)).  
   
 7. Select the **Workflow Host Management** tab. This allows you to specify when idle workflow service instances should be unloaded and persisted as shown in the following screenshot.  
   
-     ![App Fabric Configuration  Workflow Host Management](../../../../docs/framework/wcf/feature-details/media/appfabricconfiguration-management.gif "AppFabricConfiguration-Management")  
+     ![App Fabric Configuration  Workflow Host Management](media/appfabricconfiguration-management.gif "AppFabricConfiguration-Management")  
   
      For more information about workflow host management configuration see [Configuring Workflow Host Management in App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff383424(v=azure.10)).  
   
@@ -63,7 +63,7 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 10. Select the **Security** tab. This allows you to configure security settings for the application as shown in the following screenshot.  
   
-     ![App Fabric Security Configuration](../../../../docs/framework/wcf/feature-details/media/appfabricconfiguration-security.gif "AppFabricConfiguration-Security")  
+     ![App Fabric Security Configuration](media/appfabricconfiguration-security.gif "AppFabricConfiguration-Security")  
   
      For more information about configuring security with Windows Server App Fabric see [Configuring Security with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677278(v=azure.10)).  
   
@@ -87,7 +87,7 @@ Hosting workflow services in App Fabric is similar to hosting under IIS/WAS. The
   
 ## See also
 
-- [Creating a Long-running Workflow Service](../../../../docs/framework/wcf/feature-details/creating-a-long-running-workflow-service.md)
+- [Creating a Long-running Workflow Service](creating-a-long-running-workflow-service.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
 - [Installing Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee790960(v=azure.10))
 - [Windows Server App Fabric Documentation](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10))

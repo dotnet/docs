@@ -10,6 +10,10 @@ ms.date: 06/04/2020
 
 .NET Core is supported on Fedora. This article describes how to install .NET Core on Fedora. When a Fedora version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
 ## Supported distributions
 
 The following is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
@@ -29,15 +33,17 @@ The following table represents the support status of Fedora and .NET Core.
 | ❌ [28](linux-fedora.md#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 | ❌ [27](linux-fedora.md#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 
-The following table is a list of .NET Core versions which are ❌ no longer supported. However, the downloads for these still remain available:
+The following versions of .NET Core are no longer supported. The downloads for these still remain published:
 
-| .NET Core |
-|-----------|
-| 3.0       |
-| 2.2       |
-| 2.0       |
+- 3.0
+- 2.2
+- 2.0
 
 These unsupported versions aren't detailed in the sections below and your milage may vary if you try to install them.
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Fedora 32 ✔️
 
@@ -58,6 +64,8 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 ## Fedora 30 ❌
 
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
+
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
@@ -68,6 +76,8 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## Fedora 29 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -80,6 +90,8 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 ## Fedora 28 ❌
 
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
+
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
@@ -91,6 +103,8 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 ## Fedora 27 ❌
 
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
+
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
@@ -100,35 +114,21 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 [!INCLUDE [linux-dnf-install-20](includes/linux-install-20-dnf.md)]
 
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
+
 ## Snap
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- lttng-ust
-- libcurl
-- openssl-libs
-- krb5-libs
-- libicu
-- zlib
-- libunwind
-- libuuid
-
-If your OpenSSL's version >= 1.1, you'll need to install **compat-openssl10**.
-
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
-
-For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- libgdiplus (version 6.0.1 or later)
-
-> [!WARNING]
-> Most versions of Fedora use an earlier version of *libgdiplus*. You can install a recent version
-> of *libgdiplus* by adding the Mono repository to your system. For more information,
-> see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
 
 ## Scripted install
 
@@ -140,4 +140,4 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

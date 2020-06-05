@@ -10,28 +10,36 @@ ms.date: 06/04/2020
 
 .NET Core is supported on CentOS. This article describes how to install .NET Core on CentOS.
 
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
 ## Supported distributions
 
 The following is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-The following table represents the support status of Fedora and .NET Core.
+The following table represents the support status of CentOS and .NET Core.
 
-- A ✔️ indicates that the version of Fedora or .NET Core is still supported.
-- A ❌ indicates that the version of Fedora or .NET Core is not supported on that Fedora release.
-- When both a version of Fedora and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ✔️ indicates that the version of CentOS or .NET Core is still supported.
+- A ❌ indicates that the version of CentOS or .NET Core is not supported on that CentOS release.
+- When both a version of CentOS and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
 
 | CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
-The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain:
+The following versions of .NET Core are no longer supported. The downloads for these still remain published:
 
-| .NET Core |
-|-----------|
-| 3.0       |
-| 2.2       |
-| 2.0       |
+- 3.0
+- 2.2
+- 2.0
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## CentOS 8 ✔️
 
@@ -49,33 +57,21 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
 
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
+
 ## Snap
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- lttng-ust
-- libcurl
-- openssl-libs
-- krb5-libs
-- libicu
-- zlib
-- libunwind
-- libuuid
-
-For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
-
-For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
-
-- libgdiplus (version 6.0.1 or later)
-
-> [!WARNING]
-> Most versions of CentOS use an earlier version of *libgdiplus*. You can install a recent version
-> of *libgdiplus* by adding the Mono repository to your system. For more information,
-> see <https://www.mono-project.com/download/stable/>.
+[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
 
 ## Scripted install
 
@@ -87,4 +83,4 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

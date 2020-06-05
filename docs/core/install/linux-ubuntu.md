@@ -10,6 +10,10 @@ ms.date: 06/04/2020
 
 .NET Core is supported on Ubuntu. This article describes how to install .NET Core on Ubuntu. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
 ## Supported distributions
 
 The following is a list of currently supported .NET Core releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
@@ -32,13 +36,15 @@ The following table represents the support status of Ubuntu and .NET Core.
 | ❌ [16.10](#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 | ✔️ [16.04 (LTS)](#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
-The following table is a list of .NET Core versions which are no longer supported. The downloads for these still remain:
+The following versions of .NET Core are no longer supported. The downloads for these still remain published:
 
-| .NET Core |
-|-----------|
-| 3.0       |
-| 2.2       |
-| 2.0       |
+- 3.0
+- 2.2
+- 2.0
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## 20.04 ✔️
 
@@ -64,7 +70,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 19.04 ❌
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -77,7 +83,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 18.10 ❌
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -101,7 +107,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 17.10 ❌
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -114,7 +120,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 17.04 ❌
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -127,7 +133,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ## 16.10 ❌
 
-[!INCLUDE [linux-not-supported](includes/linux-ubuntu-not-supported.md)]
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -164,37 +170,20 @@ This section provides information on common errors you may get while using APT t
 
 ### Unable to locate
 
-If you receive an error message similar to **Unable to locate package {netcore-package}**, run the following commands.
-
-There are two placeholders in the following set of commands.
-
-- `{netcore-package}`\
-This represents the .NET Core package you're installing, such as `20.04`. This is in the `sudo apt-get install` command.
-
-- `{ubuntu-version}`\
-This represents the Ubuntu version you are on. This is in the `wget` command.
-
-Try purging the package list:
-
-```bash
-sudo dpkg --purge packages-microsoft-prod && sudo dpkg -i packages-microsoft-prod.deb
-sudo apt-get update
-sudo apt-get install {netcore-package}
-```
-
-If that doesn't work, you can run a manual install with the following commands:
+[!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 
 ```bash
 sudo apt-get install -y gpg
 wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/ubuntu/{ubuntu-version}/prod.list
+wget https://packages.microsoft.com/config/ubuntu/{os-version}/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt-get install -y apt-transport-https
-sudo apt-get update
-sudo apt-get install {netcore-package}
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y {dotnet-package}
 ```
 
 ### Failed to fetch
@@ -225,9 +214,7 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you also need 
 - libgdiplus (version 6.0.1 or later)
 
   > [!WARNING]
-  > Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
-  > of libgdiplus by adding the Mono repository to your system. For more information,
-  > see <https://www.mono-project.com/download/stable/>.
+  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
 ## Scripted install
 
@@ -239,4 +226,4 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you also need 
 
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

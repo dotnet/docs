@@ -15,9 +15,9 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
 
-1. In the **Solution** sidebar, ctrl-click the `ClassLibraryProjects` solution and select **Add** > **Add New Project**.
+1. In the **Solution** sidebar, ctrl-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
 
-1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **MSTest Test Project** followed by **Next**.
+1. In the **New Project** dialog, select **Tests** from the **Web and Console** node. Select the **MSTest Project** followed by **Next**.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Visual Studio Mac New Project dialog creating xUnit test project":::
 
@@ -90,15 +90,11 @@ To create the test methods:
 
    The test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C). The test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File** > **Save StringLibraryTests.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
+1. On the menu bar, select **File** > **Save As**. In the dialog, make sure that **Encoding** is set to **Unicode (UTF-8)**.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
-1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
-
-1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
-
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
+1. When you're asked if you want to replace the existing file, select **Replace**.
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 

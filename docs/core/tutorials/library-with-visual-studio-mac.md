@@ -17,7 +17,7 @@ A *class library* defines types and methods that are called by an application. A
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Install Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).
@@ -31,7 +31,9 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 1. On the start window, select **New Project**.
 
-1. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. Choose ".NET Standard 2.1" and select **Next**.
+1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Standard Library** template, and select **Next**.
+
+1. In the **Configure your new .NET Standard Library** dialog, choose ".NET Standard 2.1", and select **Next**.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
 
@@ -45,10 +47,6 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 1. Press ⌘ s (<kbd>command</kbd>+<kbd>s</kbd>) to save the file.
 
-   The following image shows the IDE window:
-
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-editor.png" alt-text="Visual Studio for Mac IDE window with class library file and method":::
-
 1. Select **Errors** in the margin at the bottom of the IDE window to open the **Errors** panel. Select the **Build Output** button.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-error-button.png" alt-text="Bottom margin of the Visual Studio Mac IDE showing the Errors button":::
@@ -61,9 +59,13 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 ## Add a console app project
 
-1. In the **Solution** sidebar, <kbd>control</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **.NET Core** > **App** templates. Select **Next**. Name the project **ShowCase**. Select **Create** to create the project in the solution.
+1. In the **Solution** sidebar, <kbd>control</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
 
-1. In the **Solutions** sidebar, <kbd>control</kbd>-click the **Dependencies** node of the new **ShowCase** project. In the **Edit References** dialog, select **StringLibrary** and select **OK**.
+1. Select **.NET Core 3.1** as the **Target Framework** and select **Next**.
+
+1. Name the project **ShowCase**. Select **Create** to create the project in the solution.
+
+1. In the **Solutions** sidebar, <kbd>control</kbd>-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
 
 1. Open the *Program.cs* file. Replace the code with the following code:
 

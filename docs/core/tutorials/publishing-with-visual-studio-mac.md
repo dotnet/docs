@@ -59,7 +59,7 @@ As the preceding image shows, the published output includes the following files:
 
 ## Run the published app
 
-1. Open a terminal and navigate to the *publish* folder. Enter `cd` and then paste the full path. For example:
+1. Open a terminal and navigate to the *publish* folder. For example:
 
    ```
    cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/

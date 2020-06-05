@@ -15,7 +15,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 ## Prerequisites
 
-* [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).
@@ -29,13 +29,13 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New button on the Visual Studio for Mac Start screen":::
 
-1. In the **New Project** dialog, select **App** under the **.NET Core** node.
+1. In the **New Project** dialog, select **App** under the **Web and Console** node.
 
 1. Select the **Console Application** template, and select **Next**.
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
-1. If you have more than one version of .NET Core installed, select the target framework for your project.
+1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET Core 3.1**, and select **Next**.
 
 1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 
@@ -64,7 +64,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-output.png" alt-text="The terminal shows Hello World!":::
 
-1. Close the **Application Ouput** window.
+1. Close the **Terminal** window.
 
 ## Enhance the app
 

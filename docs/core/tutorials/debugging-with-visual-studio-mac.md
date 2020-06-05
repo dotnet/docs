@@ -16,23 +16,23 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 ## Debug build configuration
 
-*Debug* and *Release* are two of Visual Studio's default build configurations. The Debug configuration supports the debugging of an app, and the Release configuration builds a fully optimized version of the app that can be deployed.
+*Debug* and *Release* are two of Visual Studio's built-in build configurations. The Debug configuration supports the debugging of an app, and the Release configuration builds a fully optimized version of the app for deployment.
 
 The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::??
 
 This tutorial requires the Debug configuration.
 
 ## Set a breakpoint
 
-1. Set a *breakpoint* on the line that displays the name, date, and time. Place the cursor in the line of code, and then press ⌘ \\ (<kbd>command</kbd>+<kbd>\</kbd>).
+1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press ⌘ \\ (<kbd>command</kbd>+<kbd>\\</kbd>).
 
-   A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+   A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::??
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
@@ -40,13 +40,13 @@ This tutorial requires the Debug configuration.
 
 1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::??
 
 ## Use the Immediate window
 
 The **Immediate** window lets you interact with the application you're debugging. You can interactively change the value of variables to see how it affects your program.
 
-1. If the **Immediate** window is not visible, display it by choosing **Debug** > **Windows** > **Immediate**.
+1. If the **Immediate** window is not visible, display it by choosing **View** > **Debug Pads** > **Immediate**.
 
 1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>enter</kbd>.
 
@@ -54,11 +54,13 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::??
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
    The values displayed in the terminal correspond to the changes you made in the **Immediate** window.
+
+   If you don't see the Terminal, select Terminal - HelloWorld in the bottom navigation bar.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/console-window.png" alt-text="Console window showing the entered values":::
 
@@ -70,7 +72,7 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. Right-click (<kbd>control</kbd>+click) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
 
-1. In the **Edit Breakpoint** dialog, enter the following code in the field that follows **And the following condition is true**.
+1. In the **Edit Breakpoint** dialog, enter the following code in the field that follows **And the following condition is true**, and select **Apply**.
 
    ```csharp
    String.IsNullOrEmpty(name)
@@ -81,8 +83,6 @@ The program displays a string that the user enters. What happens if the user doe
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
    Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times.
-
-1. Select **Apply**.
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
@@ -106,7 +106,7 @@ The program displays a string that the user enters. What happens if the user doe
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since your program is small, you can step through the entire program.
 
-1. Set a breakpoint on the curly brace that marks the start of the `Main` method.
+1. Set a breakpoint on the curly brace that marks the start of the `Main` method (press <kbd>command</kbd>+<kbd>\\</kbd>).
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
@@ -123,8 +123,6 @@ Visual Studio also allows you to step line by line through a program and monitor
 1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
    Visual Studio now highlights the next line of execution. The **Locals** window is unchanged, and the console window remains blank.
-
-   :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-source-method.png" alt-text="Visual Studio step in method source":::
 
 1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 

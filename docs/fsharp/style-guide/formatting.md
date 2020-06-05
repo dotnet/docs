@@ -115,6 +115,16 @@ type C(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
     // ... the body of the class follows
 ```
 
+If there is an explicit return type annotation, it should be at the end of the `)` and before the `=`:
+
+```fsharp
+type C() =
+    member _.LongMethodWithLotsOfParameters(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
+                                            aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse,
+                                            aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse): ReturnType =
+        // ... the body of the method follows
+```
+
 ### Type annotations
 
 #### Right-pad function argument type annotations

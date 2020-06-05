@@ -1,5 +1,6 @@
 ---
 title: "Using Application Protocols"
+description: Learn about commonly used internet application protocols that the .NET Framework supports, like HTTP, TCP, and UDP, and implementing custom protocols.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application protocols, types"

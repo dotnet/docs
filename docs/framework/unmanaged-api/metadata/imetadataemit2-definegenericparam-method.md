@@ -41,7 +41,7 @@ HRESULT DefineGenericParam (
  [in] The index of the generic parameter.  
   
  `dwParamFlags`  
- [in] A value of the [CorGenericParamAttr](../../../../docs/framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.  
+ [in] A value of the [CorGenericParamAttr](corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.  
   
  `szname`  
  [in] The name of the parameter.  
@@ -56,7 +56,7 @@ HRESULT DefineGenericParam (
  [out] A token that represents the generic parameter.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -66,5 +66,5 @@ HRESULT DefineGenericParam (
   
 ## See also
 
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)

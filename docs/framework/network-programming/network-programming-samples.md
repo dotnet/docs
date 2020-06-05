@@ -1,5 +1,6 @@
 ---
 title: "Network Programming Samples"
+description: Use these downloadable network programming samples for .NET Framework System.Net and extended classes.
 ms.date: "03/30/2017"
 ms.assetid: 8efacc29-7367-47c2-8638-a4f66385ad91
 ---

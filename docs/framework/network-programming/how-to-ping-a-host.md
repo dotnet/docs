@@ -1,5 +1,6 @@
 ---
 title: "How to: Ping a Host"
+description: Use this sample code to learn how to ping a remote host in the .NET Framework. This example requires references to the System.Net namespace.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Ping"

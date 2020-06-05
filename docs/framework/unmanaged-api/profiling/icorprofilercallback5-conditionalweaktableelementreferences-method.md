@@ -79,7 +79,7 @@ A profiler for the .NET Framework 4.5 or later versions implements the [ICorProf
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorProf.idl, CorProf.h
 

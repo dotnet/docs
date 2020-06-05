@@ -1,5 +1,6 @@
 ---
 title: "How to: Modify the Computer Configuration File to Enable IPv6 Support"
+description: Learn how to modify the computer configuration file, machine.config, to enable IPv6 support in the .NET Framework.
 ms.date: "03/30/2017"
 ms.assetid: 5611b677-b9cc-43b8-a434-60e18d89aada
 ---

@@ -60,7 +60,7 @@ HRESULT SetTimeoutAndAction (
 |E_INVALIDARG|A timeout cannot be set for the specified `operation`, or an invalid value was supplied for `action`.|  
   
 ## Remarks  
- `SetTimeoutAndAction` encapsulates the capabilities of the [ICLRPolicyManager::SetTimeout](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) and [ICLRPolicyManager::SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) methods, and can be called in place of sequential calls to these two methods.  
+ `SetTimeoutAndAction` encapsulates the capabilities of the [ICLRPolicyManager::SetTimeout](iclrpolicymanager-settimeout-method.md) and [ICLRPolicyManager::SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) methods, and can be called in place of sequential calls to these two methods.  
   
 > [!IMPORTANT]
 > Not all policy action values can be specified as the timeout behavior for CLR operations. See the Remarks sections of the topics for these two methods for valid values.  

@@ -152,11 +152,11 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
@@ -223,11 +223,11 @@ Notes:
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 
@@ -335,11 +335,11 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
@@ -365,7 +365,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 * **`--hosting-bundle`**
 
-  Removes .NET Core runtime and hosting bundles only.
+  Removes .NET Core hosting bundles only.
 
 * **`--major-minor <MAJOR_MINOR>`**
 
@@ -409,11 +409,11 @@ Notes:
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 

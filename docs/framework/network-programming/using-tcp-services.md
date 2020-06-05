@@ -1,5 +1,6 @@
 ---
 title: "Using TCP Services"
+description: The TcpClient class abstracts the details to create a socket to request and receive data using TCP. Use .NET Framework stream-handling to read and write data.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

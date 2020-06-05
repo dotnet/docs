@@ -37,7 +37,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 ## Environment Variable Scope  
  How you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables will determine their scope of influence. You can set these variables in one of the following ways:  
   
-- If you set the variables in an [ICorDebug::CreateProcess](../../../../docs/framework/unmanaged-api/debugging/icordebug-createprocess-method.md) call, they will apply only to the application that you are running at the time. (They will also apply to other applications started by that application that inherit the environment.)  
+- If you set the variables in an [ICorDebug::CreateProcess](../debugging/icordebug-createprocess-method.md) call, they will apply only to the application that you are running at the time. (They will also apply to other applications started by that application that inherit the environment.)  
   
 - If you set the variables in a Command Prompt window, they will apply to all applications that are started from that window.  
   

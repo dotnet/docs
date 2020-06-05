@@ -35,7 +35,7 @@ HRESULT GetThreadInfo(
  [out] A pointer to the specified thread's current Win32 thread ID.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

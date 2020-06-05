@@ -30,7 +30,7 @@ Provides methods that allow the common language runtime (CLR) to interact with I
 |[GetMaxThreads Method](ihostiocompletionmanager-getmaxthreads-method.md)|Gets the maximum number of threads that the host can allot to service I/O requests.|  
 |[GetMinThreads Method](ihostiocompletionmanager-getminthreads-method.md)|Gets the minimum number of threads that the host provides to service I/O requests.|  
 |[InitializeHostOverlapped Method](ihostiocompletionmanager-initializehostoverlapped-method.md)|Provides the host with an opportunity to initialize any custom data about an I/O request.|  
-|[SetCLRIoCompletionManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-setclriocompletionmanager-method.md)|Provides the host with an interface pointer to an [ICLRIoCompletionManager](iclriocompletionmanager-interface.md) instance implemented by the CLR.|  
+|[SetCLRIoCompletionManager Method](ihostiocompletionmanager-setclriocompletionmanager-method.md)|Provides the host with an interface pointer to an [ICLRIoCompletionManager](iclriocompletionmanager-interface.md) instance implemented by the CLR.|  
 |[SetMaxThreads Method](ihostiocompletionmanager-setmaxthreads-method.md)|Sets the maximum number of threads that the host allots to service I/O requests.|  
 |[SetMinThreads Method](ihostiocompletionmanager-setminthreads-method.md)|Sets the minimum number of threads that the host should allot to I/O completion.|  
   

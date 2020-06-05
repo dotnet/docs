@@ -1,5 +1,6 @@
 ---
 title: "Handling Errors"
+description: Learn about the system and web-specific exceptions thrown by WebRequest and WebResponse. Use the Status property to understand and to resolve the problem.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Call WCF Service Operations Asynchronously"
+description: Learn how to create a WCF client that can access a service operation asynchronously by using the event-driven asynchronous calling model.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

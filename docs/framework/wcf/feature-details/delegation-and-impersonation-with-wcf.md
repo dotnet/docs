@@ -1,5 +1,6 @@
 ---
 title: "Delegation and Impersonation with WCF"
+description: Learn about the methods of impersonation and delegation that WCF uses to restrict client access to the resources of a service domain.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

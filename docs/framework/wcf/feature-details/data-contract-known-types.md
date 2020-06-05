@@ -1,5 +1,6 @@
 ---
 title: "Data Contract Known Types"
+description: Learn how the data contract model uses the KnownTypeAttribute class to specify the types to include during deserialization in WCF.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

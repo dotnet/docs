@@ -1,5 +1,6 @@
 ---
 title: "How to: Retrieve the Thumbprint of a Certificate"
+description: Learn how to publish metadata for a WCF service using a configuration file. Publishing allows clients to get the metadata using a GET or HTTP/GET request.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "certificates [WCF], retrieving thumbprint"

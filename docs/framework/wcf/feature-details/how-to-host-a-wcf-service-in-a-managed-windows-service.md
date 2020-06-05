@@ -1,5 +1,6 @@
 ---
 title: "How to: Host a WCF Service in a Managed Windows Service"
+description: Learn how to create a WCF service that is hosted by a Windows service. This hosting option is available in all versions of Windows.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

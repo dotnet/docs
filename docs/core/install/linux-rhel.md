@@ -18,18 +18,16 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 
 ## Supported distributions
 
-The following is a list of currently supported .NET Core releases on both RHEL 7 and RHEL 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of RHEL is no longer supported.
-
-The following table represents the support status of RHEL and .NET Core.
+The following table is a list of currently supported .NET Core releases on both RHEL 7 and RHEL 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of RHEL is no longer supported.
 
 - A ✔️ indicates that the version of RHEL or .NET Core is still supported.
-- A ❌ indicates that the version of RHEL or .NET Core is not supported on that RHEL release.
-- When both a version of RHEL and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of RHEL or .NET Core isn't supported on that RHEL release.
+- When both a version of RHEL and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#RHEL-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [7](#RHEL-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [8](#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [7](#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 The following versions of .NET Core are no longer supported. The downloads for these still remain published:
 

@@ -16,13 +16,11 @@ ms.date: 06/04/2020
 
 ## Supported distributions
 
-The following is a list of currently supported .NET Core releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
-
-The following table represents the support status of Debian and .NET Core.
+The following table is a list of currently supported .NET Core releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
 - A ✔️ indicates that the version of Debian or .NET Core is still supported.
-- A ❌ indicates that the version of Debian or .NET Core is not supported on that Debian release.
-- When both a version of Debian and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of Debian or .NET Core isn't supported on that Debian release.
+- When both a version of Debian and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|

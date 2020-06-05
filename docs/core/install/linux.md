@@ -1,12 +1,12 @@
 ---
-title: .NET Core and Linux package managers
-description: Learn about what Linux distributions support installing .NET Core on Linux through a package manager.
+title: Install .NET Core and Linux Distributions
+description: Learn about what Linux distributions support installing .NET Core on Linux.
 author: thraka
 ms.author: adegeo
 ms.date: 06/01/2020
 ---
 
-# .NET Core and Linux package managers
+# Install .NET Core on Linux
 
 .NET Core is available on different Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET Core. This article describes what is currently supported and which package manager is used.
 
@@ -22,13 +22,13 @@ The following versions of .NET Core are ❌ no longer supported. The downloads f
 - 2.2
 - 2.0
 
-These unsupported versions aren't detailed in the sections below and your milage may vary if you try to install them.
+These unsupported versions aren't detailed in the sections below and your mileage may vary if you try to install them.
 
 ## CentOS
 
 CentOS 7 uses Yum as a package manager and CentOS 8 uses DNF.
 
-The following is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
+The following table is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
 | CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
@@ -41,13 +41,11 @@ For more information, see [Install .NET Core on CentOS](linux-centos.md).
 
 Debian uses APT (Advanced Package Tool) as a package manager.
 
-The following is a list of currently supported .NET Core releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
-
-The following table represents the support status of Debian and .NET Core.
+The following table is a list of currently supported .NET Core releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
 - A ✔️ indicates that the version of Debian or .NET Core is still supported.
-- A ❌ indicates that the version of Debian or .NET Core is not supported on that Debian release.
-- When both a version of Debian and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of Debian or .NET Core isn't supported on that Debian release.
+- When both a version of Debian and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
@@ -59,13 +57,11 @@ The following table represents the support status of Debian and .NET Core.
 
 Fedora uses DNF as it's package manager.
 
-The following is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
-
-The following table represents the support status of Fedora and .NET Core.
+The following table is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
 - A ✔️ indicates that the version of Fedora or .NET Core is still supported.
-- A ❌ indicates that the version of Fedora or .NET Core is not supported on that Fedora release.
-- When both a version of Fedora and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of Fedora or .NET Core isn't supported on that Fedora release.
+- When both a version of Fedora and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
@@ -82,13 +78,11 @@ For more information, see [Install .NET Core on Fedora](linux-fedora.md).
 
 openSUSE uses zypper as the package manager.
 
-The following is a list of currently supported .NET Core releases on openSUSE 15. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
-
-The following table represents the support status of openSUSE and .NET Core.
+The following table is a list of currently supported .NET Core releases on openSUSE 15. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
 
 - A ✔️ indicates that the version of openSUSE or .NET Core is still supported.
-- A ❌ indicates that the version of openSUSE or .NET Core is not supported on that openSUSE release.
-- When both a version of openSUSE and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of openSUSE or .NET Core isn't supported on that openSUSE release.
+- When both a version of openSUSE and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |----------------------------|---------------|---------------|----------------|
@@ -98,35 +92,31 @@ The following table represents the support status of openSUSE and .NET Core.
 
 Red Hat Enterprise Linux (RHEL) uses yum (RHEL 7) and DNF (RHEL 8) as the package manager.
 
-The following is a list of currently supported .NET Core releases on both RHEL 7 and RHEL 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of RHEL is no longer supported.
-
-The following table represents the support status of RHEL and .NET Core.
+The following table is a list of currently supported .NET Core releases on both RHEL 7 and RHEL 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of RHEL is no longer supported.
 
 - A ✔️ indicates that the version of RHEL or .NET Core is still supported.
-- A ❌ indicates that the version of RHEL or .NET Core is not supported on that RHEL release.
-- When both a version of RHEL and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of RHEL or .NET Core isn't supported on that RHEL release.
+- When both a version of RHEL and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](linux-rhel.md#RHEL-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [7](linux-rhel.md#RHEL-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [8](linux-rhel.md#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [7](linux-rhel.md#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 ## SLES
 
 SLES uses zypper as the package manager.
 
-The following is a list of currently supported .NET Core releases on both SLES 12 SP2 and SLES 15. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
-
-The following table represents the support status of SLES and .NET Core.
+The following table is a list of currently supported .NET Core releases on both SLES 12 SP2 and SLES 15. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
 - A ✔️ indicates that the version of SLES or .NET Core is still supported.
-- A ❌ indicates that the version of SLES or .NET Core is not supported on that SLES release.
-- When both a version of SLES and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of SLES or .NET Core isn't supported on that SLES release.
+- When both a version of SLES and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |------------------------|---------------|---------------|----------------|
-| ✔️ [15](linux-sles.md#SLES-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [12 SP2](linux-sles.md#SLES-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [15](linux-sles.md#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [12 SP2](linux-sles.md#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 ## Ubuntu
 
@@ -135,8 +125,8 @@ Ubuntu uses APT (Advanced Package Tool) as a package manager.
 The following table represents the support status of Ubuntu and .NET Core.
 
 - A ✔️ indicates that the version of Ubuntu or .NET Core is still supported.
-- A ❌ indicates that the version of Ubuntu or .NET Core is not supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET Core both have ✔️ that OS and .NET combination are supported.
+- A ❌ indicates that the version of Ubuntu or .NET Core isn't supported on that Ubuntu release.
+- When both a version of Ubuntu and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
 |--------------------------|---------------|---------------|----------------|

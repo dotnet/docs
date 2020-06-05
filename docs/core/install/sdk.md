@@ -48,74 +48,9 @@ export PATH=$PATH:$HOME/dotnet
 
 ::: zone pivot="os-linux"
 
-## Install with a package manager
+## Install on Linux
 
-You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
-
-Installing with a package manager is only supported on the x64 architecture. If you're installing the .NET Core SDK with a different architecture, such as ARM, follow the [Download and manually install](#download-and-manually-install) instructions below. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
-
-## Install with Snap
-
-[.NET Core SDK is available from the Snap Store.](https://snapcraft.io/dotnet-sdk)
-
-A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
-
-Only supported versions of .NET Core are available through Snap. Use the following command to install.
-
-- Install the latest stable release of .NET Core SDK.
-
-  ```bash
-  sudo snap install dotnet-sdk
-  ```
-
-- Install version 3.1.
-
-  ```bash
-  sudo snap install dotnet-sdk --channel=3.1
-  ```
-
-- Install version 2.1.
-
-  ```bash
-  sudo snap install dotnet-sdk --channel=2.1
-  ```
-
-- Install .NET 5 preview.
-
-  ```bash
-  sudo snap install dotnet-sdk --channel=5.0/beta
-  ```
-
-After snap has installed .NET Core SDK, enable the `dotnet` command with the `snap alias` command.
-
-```bash
-sudo snap alias dotnet-sdk.dotnet dotnet
-```
-
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet31`. When you use the command `dotnet31`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
-
-## Download and manually install
-
-To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
-
-```bash
-mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-x64.tar.gz -C $HOME/dotnet
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
-
-> [!TIP]
-> The preceding `export` commands only make the .NET Core CLI commands available for the terminal session in which it was run.
->
-> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
->
-> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
-> - **Korn Shell**: *~/.kshrc* or *.profile*
-> - **Z Shell**: *~/.zshrc* or *.zprofile*
->
-> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
->
-> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
+This article will be removed soon. It is currently replaced by [Install .NET Core on Linux](linux.md).
 
 ::: zone-end
 

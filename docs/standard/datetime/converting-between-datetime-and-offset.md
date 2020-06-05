@@ -1,5 +1,6 @@
 ---
 title: "Converting between DateTime and DateTimeOffset"
+description: In this article, learn how to convert between DateTimeOffset values, which provide more time zone awareness, and DateTime values in .NET.
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 dev_langs: 

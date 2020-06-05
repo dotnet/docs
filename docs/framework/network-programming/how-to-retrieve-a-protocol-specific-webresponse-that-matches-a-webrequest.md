@@ -1,5 +1,6 @@
 ---
 title: "How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest"
+description: Learn how to retrieve a protocol-specific WebResponse that matches a WebRequest in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

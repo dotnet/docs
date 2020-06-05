@@ -1,7 +1,7 @@
 ---
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
-ms.date: 05/13/2020
+ms.date: 05/31/2020
 ---
 
 # Leveraging containers and orchestrators

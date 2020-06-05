@@ -2,9 +2,6 @@
 title: Debug a .NET Core console application with Visual Studio for Mac
 description: Learn how to debug a .NET Core console app with Visual Studio Mac.
 ms.date: 06/02/2020
-dev_langs:
-  - "csharp"
-  - "vb"
 ---
 # Tutorial: Debug a .NET Core console application using Visual Studio for Mac
 
@@ -20,7 +17,7 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::??
+   :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 This tutorial requires the Debug configuration.
 
@@ -32,7 +29,7 @@ This tutorial requires the Debug configuration.
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::??
+   :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
@@ -40,7 +37,7 @@ This tutorial requires the Debug configuration.
 
 1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::??
+   :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
 ## Use the Immediate window
 
@@ -54,15 +51,17 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio":::??
+   :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window.png" alt-text="Immediate Window in Visual Studio":::
+
+   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
    The values displayed in the terminal correspond to the changes you made in the **Immediate** window.
 
-   If you don't see the Terminal, select Terminal - HelloWorld in the bottom navigation bar.
+   If you don't see the Terminal, select **Terminal - HelloWorld** in the bottom navigation bar.
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/console-window.png" alt-text="Console window showing the entered values":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/terminal-hello-world.png" alt-text="Terminal - Hello World in bottom navigation bar":::
 
 1. Close the terminal window.
 
@@ -70,7 +69,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 The program displays a string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*, which breaks program execution when one or more conditions are met.
 
-1. Right-click (<kbd>control</kbd>+click) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
+1. Ctrl-click on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
 
 1. In the **Edit Breakpoint** dialog, enter the following code in the field that follows **And the following condition is true**, and select **Apply**.
 

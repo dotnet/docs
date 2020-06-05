@@ -33,19 +33,25 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Standard Library** template, and select **Next**.
 
+   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
+
 1. In the **Configure your new .NET Standard Library** dialog, choose ".NET Standard 2.1", and select **Next**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
+   :::image type="content" source="media/library-with-visual-studio-mac/choose-net-std-21.png" alt-text="Choose .NET Standard 2.1":::
 
 1. Name the project "StringLibrary" and the solution "ClassLibraryProjects". Leave **Create a project directory within the solution directory** selected. Select **Create**.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project-options.png" alt-text="Visual Studio for Mac New project dialog options":::
 
-1. In the **Solution** pad, expand the `StringLibrary` node to reveal the class file provided by the template, *Class1.cs*. <kbd>control</kbd>-click the file, select **Rename** from the context menu, and rename the file to *StringLibrary.cs*. Open the file and replace the contents with the following code:
+1. From the main menu, select **View** > **Pads** > **Solution**, and select the dock icon to keep the pad open.
+
+   :::image type="content" source="media/library-with-visual-studio-mac/solution-dock-icon.png" alt-text="Dock icon for Solution pad":::
+
+1. In the **Solution** pad, expand the `StringLibrary` node to reveal the class file provided by the template, *Class1.cs*. Ctrl-click the file, select **Rename** from the context menu, and rename the file to *StringLibrary.cs*. Open the file and replace the contents with the following code:
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
-1. Press ⌘ s (<kbd>command</kbd>+<kbd>s</kbd>) to save the file.
+1. Press ⌘ S (<kbd>command</kbd>+<kbd>S</kbd>) to save the file.
 
 1. Select **Errors** in the margin at the bottom of the IDE window to open the **Errors** panel. Select the **Build Output** button.
 
@@ -59,13 +65,15 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 ## Add a console app project
 
-1. In the **Solution** sidebar, <kbd>control</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
+1. In the **Solution** pad, ctrl-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
 
 1. Select **.NET Core 3.1** as the **Target Framework** and select **Next**.
 
 1. Name the project **ShowCase**. Select **Create** to create the project in the solution.
 
-1. In the **Solutions** sidebar, <kbd>control</kbd>-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
+   :::image type="content" source="media/library-with-visual-studio-mac/add-showcase-project.png" alt-text="Add ShowCase project":::
+
+1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
 
 1. Open the *Program.cs* file. Replace the code with the following code:
 
@@ -75,9 +83,9 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
-1. <kbd>control</kbd>-click on the ShowCase project and select **Run project** from the context menu.
+1. Ctrl-click on the ShowCase project and select **Run project** from the context menu.
 
-1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
+1. Try out the program by entering strings and pressing <kbd>enter</kbd>, then press <kbd>enter</kbd> to exit.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-console-window.png" alt-text="Visual Studio for Mac console window showing your app running":::
 

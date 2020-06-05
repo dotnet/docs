@@ -25,7 +25,7 @@ Unit tests provide automated software testing during your development and publis
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Visual Studio Mac New Project dialog providing project name":::
 
-   Visual Studio created a class file with the following code:
+   Visual Studio creates a class file with the following code:
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -100,13 +100,13 @@ To create the test methods:
 
 1. Open the **Unit Tests** panel on the right side of the screen. Select **View** > **Tests** from the menu.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-panel.png" alt-text="Visual Studio for Mac Unit Tests panel":::
-
 1. Click the **Dock** icon to keep the panel open. (Highlighted in the following image.)
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Visual Studio for Mac Unit Tests panel dock icon":::
 
 1. Click the **Run All** button.
+
+   All tests pass.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-pass.png" alt-text="Visual Studio for Mac expected test passes":::
 
@@ -127,11 +127,13 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    ```
 
-1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
+1. Run the tests again.
+
+   This time, the **Test Explorer** window indicates that two tests succeeded and one failed.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
-1. Select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" weren't tested.
+1. Ctrl-click the failed test, `TestDoesNotStartWithUpper`, and select **Show Results Pad** from the context menu. The **Results** pad displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" weren't tested.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
@@ -147,15 +149,17 @@ To test the Release build:
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
-1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
+1. In the **Solution** pad, ctrl-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
-1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
+1. Run the unit tests again.
+
+   The tests pass.
 
 ## Debug tests
 
-You can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the ShowCase app project, ctrl-click the **Test Library** project, and select **Start Debugging Project** from the context menu. Visual Studio starts your test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+You can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the ShowCase app project, ctrl-click the **StringLibraryTests** project, and select **Start Debugging Project** from the context menu. Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 

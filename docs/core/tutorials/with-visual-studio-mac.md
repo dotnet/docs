@@ -29,13 +29,13 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New button on the Visual Studio for Mac Start screen":::
 
-1. In the **New Project** dialog, select **App** under the **Web and Console** node.
-
-1. Select the **Console Application** template, and select **Next**.
+1. In the **New Project** dialog, select **App** under the **Web and Console** node. Select the **Console Application** template, and select **Next**.
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
 1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET Core 3.1**, and select **Next**.
+
+   :::image type="content" source="media/with-visual-studio-mac/target-framework.png" alt-text="Select Target Framework":::
 
 1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 
@@ -82,7 +82,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
 
-1. Respond to the prompt by entering a name and pressing <kbd>Enter</kbd>.
+1. Respond to the prompt by entering a name and pressing <kbd>enter</kbd>.
 
    :::image type="content" source="media/with-visual-studio-mac/hello-world-update.png" alt-text="Terminal shows modified program output":::
 

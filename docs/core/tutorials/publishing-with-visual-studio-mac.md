@@ -1,8 +1,6 @@
 ---
 title: Publish your .NET Core Hello World application with Visual Studio for Mac
 description: Publishing creates the set of files that are needed to run your .NET Core application.
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/03/2020
 ---
 # Tutorial: Publish a .NET Core console application with Visual Studio for Mac
@@ -31,7 +29,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
    :::image type="content" source="media/publishing-with-visual-studio-mac/publish-to-folder-dialog.png" alt-text="Visual Studio Publish to Folder dialog":::
 
-   The publish folder opens.
+   The publish folder opens, showing the files that were created.
 
    :::image type="content" source="media/publishing-with-visual-studio-mac/publish-folder.png" alt-text="Visual Studio Publish window":::
 
@@ -67,7 +65,7 @@ As the preceding image shows, the published output includes the following files:
 
 1. Run the app by using the `dotnet` command:
 
-   1. Enter `dotnet HelloWorld.dll` and press <kbd>Enter</kbd>.
+   1. Enter `dotnet HelloWorld.dll` and press <kbd>enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 

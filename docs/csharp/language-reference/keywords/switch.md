@@ -102,7 +102,7 @@ The `default` case specifies the switch section to execute if the match expressi
 
 The `default` case can appear in any order in the `switch` statement. Regardless of its order in the source code, it's always evaluated last, after all `case` labels have been evaluated.
 
-## <a name="pattern" /> Pattern matching with the `switch` statement
+## <a name="pattern"></a> Pattern matching with the `switch` statement
 
 Each `case` statement defines a pattern that, if it matches the match expression, causes its  containing switch section to be executed. All versions of C# support the constant pattern. The remaining patterns are supported beginning with C# 7.0.
 

@@ -1,5 +1,6 @@
 ---
 title: "NTLM and Kerberos Authentication"
+description: Learn how default NTLM authentication and Kerberos authentication work for a .NET Framework application and learn about non-default NTLM authentication.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

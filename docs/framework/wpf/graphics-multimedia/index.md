@@ -139,7 +139,7 @@ Images, video, and audio are media-rich ways of conveying information and user e
 
 Images, which include icons, backgrounds, and even parts of animations, are a core part of most applications. Because you frequently need to use images, WPF exposes the ability to work with them in a variety of ways. The following illustration shows just one of those ways.
 
-![Styling sample screenshot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")
+![Styling sample screenshot](../controls/media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")
 
 For more information, see [Imaging Overview](imaging-overview.md).
 

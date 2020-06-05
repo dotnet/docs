@@ -74,4 +74,4 @@ hdfs://<path to your files>/mySparkApp.zip mySparkApp
 ## Next steps
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
-* [Debug a .NET for Apache Spark application on Windows](../how-to-guides/debug.md)
+* [Debug a .NET for Apache Spark application on Windows](debug.md)

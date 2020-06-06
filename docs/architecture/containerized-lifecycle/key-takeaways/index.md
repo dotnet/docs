@@ -18,4 +18,5 @@ ms.date: 04/20/2020
 
 - Azure DevOps Services greatly simplifies your DevOps environment by deploying to Docker environments from your CI/CD pipelines. This statement applies to simple Docker environments as well as to advanced microservice and container orchestrators based on Azure.
 
-> [!div class="step-by-step"][previous](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)
+> [!div class="step-by-step"]
+> [previous](../run-manage-monitor-docker-environments/monitor-containerized-application-services.md)

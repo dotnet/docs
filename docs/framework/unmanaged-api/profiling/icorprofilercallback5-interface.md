@@ -29,7 +29,7 @@ Supplements information to help a profiler identify the full closure of live obj
 |[ConditionalWeakTableElementReferences Method](icorprofilercallback5-conditionalweaktableelementreferences-method.md)|Identifies the transitive closure of objects referenced by those roots through both direct member field references and through `ConditionalWeakTable` dependencies.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

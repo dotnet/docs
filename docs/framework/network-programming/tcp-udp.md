@@ -1,5 +1,6 @@
 ---
 title: "TCP-UDP"
+description: Learn how the TcpClient, TcpListener, and UdpClient classes handle TCP and UDP services, which take care of the details of data transfer in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "protocols, TCP/UDP"

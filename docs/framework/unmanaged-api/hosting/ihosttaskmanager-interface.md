@@ -34,7 +34,7 @@ Provides methods that allow the common language runtime (CLR) to work with tasks
 |[LeaveRuntime Method](ihosttaskmanager-leaveruntime-method.md)|Notifies the host that managed code is about to make a call to an unmanaged function.|  
 |[ReverseEnterRuntime Method](ihosttaskmanager-reverseenterruntime-method.md)|Notifies the host that a call is being made into the common language runtime (CLR) from unmanaged code.|  
 |[ReverseLeaveRuntime Method](ihosttaskmanager-reverseleaveruntime-method.md)|Notifies the host that control is leaving the CLR and entering an unmanaged function that was, in turn, called from managed code.|  
-|[SetCLRTaskManager Method](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-setclrtaskmanager-method.md)|Provides the host with an interface pointer to an [ICLRTaskManager](iclrtaskmanager-interface.md) instance implemented by the CLR.|  
+|[SetCLRTaskManager Method](ihosttaskmanager-setclrtaskmanager-method.md)|Provides the host with an interface pointer to an [ICLRTaskManager](iclrtaskmanager-interface.md) instance implemented by the CLR.|  
 |[SetLocale Method](ihosttaskmanager-setlocale-method.md)|Notifies the host that the CLR has changed the locale on the current task.|  
 |[SetStackGuarantee Method](ihosttaskmanager-setstackguarantee-method.md)|Reserved for internal use only.|  
 |[SetUILocale Method](ihosttaskmanager-setuilocale-method.md)|Notifies the host that the user interface locale has been changed on the current task.|  

@@ -42,7 +42,7 @@ HRESULT JITCompilationStarted(
  Profilers must support the sequence of JIT callbacks in cases where two threads are simultaneously making callbacks. For example, thread A calls `JITCompilationStarted`. However, before thread A calls `JITCompilationFinished`, thread B calls [ICorProfilerCallback::ExceptionSearchFunctionEnter](icorprofilercallback-exceptionsearchfunctionenter-method.md) with the function ID from thread A's `JITCompilationStarted` callback. It might appear that the function ID should not yet be valid because a call to `JITCompilationFinished` had not yet been received by the profiler. However, in a case like this one, the function ID is valid.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

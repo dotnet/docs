@@ -96,7 +96,7 @@ HRESULT CorBindToRuntimeEx (
  For descriptions of these flags, see the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration.  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of the requested interface from `rclsid`. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  

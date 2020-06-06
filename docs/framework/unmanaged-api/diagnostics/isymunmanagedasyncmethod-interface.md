@@ -17,11 +17,11 @@ This interface is the reading complement to [ISymUnmanagedAsyncMethodPropertiesW
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetAsyncStepInfo Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-getasyncstepinfo-method.md)|See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).|  
-|[GetAsyncStepInfoCount Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-getasyncstepinfocount-method.md)|See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).|  
-|[GetCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-getcatchhandleriloffset-method.md)|See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).|  
-|[GetKickoffMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-getkickoffmethod-method.md)|See [DefineKickoffMethod Method](isymunmanagedasyncmethodpropertieswriter-definekickoffmethod-method.md).|  
-|[HasCatchHandlerILOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-hascatchhandleriloffset-method.md)|See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).|  
+|[GetAsyncStepInfo Method](isymunmanagedasyncmethod-getasyncstepinfo-method.md)|See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).|  
+|[GetAsyncStepInfoCount Method](isymunmanagedasyncmethod-getasyncstepinfocount-method.md)|See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).|  
+|[GetCatchHandlerILOffset Method](isymunmanagedasyncmethod-getcatchhandleriloffset-method.md)|See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).|  
+|[GetKickoffMethod Method](isymunmanagedasyncmethod-getkickoffmethod-method.md)|See [DefineKickoffMethod Method](isymunmanagedasyncmethodpropertieswriter-definekickoffmethod-method.md).|  
+|[HasCatchHandlerILOffset Method](isymunmanagedasyncmethod-hascatchhandleriloffset-method.md)|See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).|  
 |[IsAsyncMethod Method](isymunmanagedasyncmethod-isasyncmethod-method.md)|Checks if the method has async information or not.<br /><br /> If this method returns `FALSE` then it is invalid to call any other methods in this interface. They will all return `E_UNEXPECTED` in this case.|  
   
 ## Requirements  

@@ -1,5 +1,6 @@
 ---
 title: "Proxy Configuration"
+description: Learn about how to configure adaptive and static proxy servers. Proxy configuration controls how a proxy server handles client requests for resources.
 ms.date: "06/18/2018"
 helpviewer_keywords: 
   - "Networking"

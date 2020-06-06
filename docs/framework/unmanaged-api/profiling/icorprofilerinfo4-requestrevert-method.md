@@ -68,7 +68,7 @@ HRESULT RequestRevert (
  The next time any of the revereted function instances are called, the original versions of the functions will be run. If a function is already running, it will finish executing the version that is running.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

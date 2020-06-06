@@ -60,7 +60,7 @@ HRESULT DebugAlloc (
 |E_OUTOFMEMORY|Not enough memory was available to complete the allocation request.|  
   
 ## Remarks  
- The CLR gets an interface pointer to an [IHostMalloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md) instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method. `DebugAlloc` allows the runtime to get code file information for use during debugging.  
+ The CLR gets an interface pointer to an [IHostMalloc](ihostmalloc-interface.md) instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method. `DebugAlloc` allows the runtime to get code file information for use during debugging.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

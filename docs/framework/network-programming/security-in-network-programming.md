@@ -1,5 +1,6 @@
 ---
 title: "Security in network programming - .NET Framework"
+description: Learn about popular application authentication mechanisms and code access permissions that the .NET Framework System.Net namespace classes support.
 ms.date: "03/14/2018"
 helpviewer_keywords: 
   - "sending data, Internet security"

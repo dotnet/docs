@@ -32,7 +32,7 @@ HRESULT InitializeCurrentThread ();
 > `InitializeCurrentThread` does the initialization in advance to finish tasks that take locks, and may deadlock. Call `InitializeCurrentThread` only when there are no suspended threads.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

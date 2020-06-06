@@ -1,5 +1,6 @@
 ---
 title: "Using a Synchronous Server Socket"
+description: This example shows a synchronous server socket in .NET Framework, which suspends an application until a connection request is received on the socket.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

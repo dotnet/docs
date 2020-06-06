@@ -1,5 +1,6 @@
 ---
 title: "Using a Synchronous Client Socket"
+description: This example shows a synchronous client socket in the .NET Framework, which suspends the application program while the network operation completes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Names of Type Members"
+description: In this article, learn the guidelines for naming type members in .NET, such as methods, properties, events, and fields.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

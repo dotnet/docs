@@ -1,5 +1,6 @@
 ---
 title: "Calling Synchronous Methods Asynchronously"
+description: In this article, learn how to call synchronous methods asynchronously in .NET, using the BeginInvoke and EndInvoke methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

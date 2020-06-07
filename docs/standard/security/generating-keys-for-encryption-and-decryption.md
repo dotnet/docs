@@ -1,5 +1,6 @@
 ---
 title: "Generating Keys for Encryption and Decryption"
+description: In this article, learn how to create and manage symmetric and asymmetric keys for encryption and decryption in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

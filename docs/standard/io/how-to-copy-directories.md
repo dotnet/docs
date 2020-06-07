@@ -1,5 +1,6 @@
 ---
 title: "How to: Copy directories"
+description: In this article, see how to copy directories by using I/O classes that synchronously copy the contents of a directory to another location.
 ms.date: "12/27/2018"
 ms.technology: dotnet-standard
 dev_langs: 

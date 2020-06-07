@@ -1,5 +1,6 @@
 ---
 title: "How to: Enumerate directories and files"
+description: In this article, learn to enumerate directories and files by using enumerable collections, which can provide better performance than arrays in .NET.
 ms.date: "12/27/2018"
 ms.technology: dotnet-standard
 dev_langs: 

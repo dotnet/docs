@@ -36,7 +36,7 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 Example of usage (classification scenario):
 
 ```console
-mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
+mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
 ![image](media/automate-training-with-cli/mlnet-classification-powershell.gif)

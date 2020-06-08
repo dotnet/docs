@@ -1,5 +1,6 @@
 ---
 title: "Globalizing and localizing .NET applications"
+description: Learn how to develop a world-ready application. Read about globalization, localizability review, and localization in .NET.
 ms.date: "06/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords:

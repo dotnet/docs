@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Cryptography Model"
+description: Review implementations of usual cryptographic algorithms in .NET. Learn the extensible cryptography model of object inheritance, stream design, & configuration.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:

@@ -169,7 +169,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
     }
     ```
 
-    - The first lines of code simply create a *single sample data*, in this case based on the first row of your dataset to be used for the prediction. You can also create you own 'hard-coded' data by updating the code:
+    - The first lines of code create a *single sample data*, in this case based on the first row of your dataset to be used for the prediction. You can also create you own 'hard-coded' data by updating the code:
 
         ```csharp
         ModelInput sampleData = new ModelInput()

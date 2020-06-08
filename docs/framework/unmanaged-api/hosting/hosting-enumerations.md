@@ -66,13 +66,13 @@ This section describes the unmanaged enumerations that the hosting API uses.
  Contains values that indicate the impact of a failure when a specific memory allocation has been requested but cannot be satisfied.  
   
  [EPolicyAction Enumeration](epolicyaction-enumeration.md)  
- Describes the policy actions the host can set for operations described by [EClrOperation Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) and failures described by [EClrFailure Enumeration](eclrfailure-enumeration.md).  
+ Describes the policy actions the host can set for operations described by [EClrOperation Enumeration](eclroperation-enumeration.md) and failures described by [EClrFailure Enumeration](eclrfailure-enumeration.md).  
   
  [ESymbolReadingPolicy Enumeration](esymbolreadingpolicy-enumeration.md)  
  Contains values that set the policy for reading program database (PDB) files.  
   
  [ETaskType Enumeration](etasktype-enumeration.md)  
- Contains values that indicate the kind of task represented by an [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) or an [IHostTask Interface](ihosttask-interface.md) interface.  
+ Contains values that indicate the kind of task represented by an [ICLRTask Interface](iclrtask-interface.md) or an [IHostTask Interface](ihosttask-interface.md) interface.  
   
  [HOST_TYPE Enumeration](host-type-enumeration.md)  
  Contains values that specify the type of host that is launching an application.  

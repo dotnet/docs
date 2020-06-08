@@ -30,7 +30,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
- This sample exposes the ICalculator contract using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding on the client is shown in the following code.  
+ This sample exposes the ICalculator contract using the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding on the client is shown in the following code.  
   
 ```xml  
 <bindings>
@@ -229,7 +229,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 1. Run the Setup.cmd file to create the required certificates.  
   
-2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md). Ensure that all the projects in the solution are built (Shared, RSTRSTR, Service, SecurityTokenService, and Client).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md). Ensure that all the projects in the solution are built (Shared, RSTRSTR, Service, SecurityTokenService, and Client).  
   
 3. Ensure that Service.exe and SecurityTokenService.exe are both running with administrator privileges.  
   

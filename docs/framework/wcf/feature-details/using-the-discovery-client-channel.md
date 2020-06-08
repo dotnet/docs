@@ -54,4 +54,4 @@ catch (EndpointNotFoundException ex)
 ```  
   
 ## Security and the Discovery Client Channel  
- When using the discovery client channel, two endpoints are being specified. One is used for discovery messages, usually <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, and the other is the application endpoint. When implementing a secure service, care must be taken to secure both endpoints. For more information about security, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).
+ When using the discovery client channel, two endpoints are being specified. One is used for discovery messages, usually <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, and the other is the application endpoint. When implementing a secure service, care must be taken to secure both endpoints. For more information about security, see [Securing Services and Clients](securing-services-and-clients.md).

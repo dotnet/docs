@@ -42,14 +42,14 @@ public string Operation2()
   
 - The value of the <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format%2A> property by accessing the <xref:System.ServiceModel.Web.OutgoingWebResponseContext>.  
   
- For more information about how these values affect the formatting of the operation, see [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md).  
+ For more information about how these values affect the formatting of the operation, see [WCF Web HTTP Formatting](wcf-web-http-formatting.md).  
   
  <xref:System.ServiceModel.Web.WebFaultException> is a <xref:System.ServiceModel.FaultException> and therefore can be used as the fault exception programming model for services that expose SOAP endpoints as well as web HTTP endpoints.  
   
 ## See also
 
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
-- [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)
-- [Defining and Specifying Faults](../../../../docs/framework/wcf/defining-and-specifying-faults.md)
-- [Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)
-- [Sending and Receiving Faults](../../../../docs/framework/wcf/sending-and-receiving-faults.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)
+- [WCF Web HTTP Formatting](wcf-web-http-formatting.md)
+- [Defining and Specifying Faults](../defining-and-specifying-faults.md)
+- [Handling Exceptions and Faults](../extending/handling-exceptions-and-faults.md)
+- [Sending and Receiving Faults](../sending-and-receiving-faults.md)

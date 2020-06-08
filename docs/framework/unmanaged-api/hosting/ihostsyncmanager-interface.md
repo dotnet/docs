@@ -29,8 +29,8 @@ Provides methods that allow the common language runtime (CLR) to create synchron
 |[CreateMonitorEvent Method](ihostsyncmanager-createmonitorevent-method.md)|Creates a monitored auto-reset event object.|  
 |[CreateRWLockReaderEvent Method](ihostsyncmanager-createrwlockreaderevent-method.md)|Creates a manual-reset event object for the implementation of a reader lock.|  
 |[CreateRWLockWriterEvent Method](ihostsyncmanager-createrwlockwriterevent-method.md)|Creates an auto-reset event object for the implementation of a writer lock.|  
-|[CreateSemaphore Method](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-createsemaphore-method.md)|Creates an [IHostSemaphore](ihostsemaphore-interface.md) object for the CLR to use as a semaphore for wait events.|  
-|[SetCLRSyncManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-setclrsyncmanager-method.md)|Sets the [ICLRSyncManager](iclrsyncmanager-interface.md) instance to associate with the current `IHostSyncManager` instance.|  
+|[CreateSemaphore Method](ihostsyncmanager-createsemaphore-method.md)|Creates an [IHostSemaphore](ihostsemaphore-interface.md) object for the CLR to use as a semaphore for wait events.|  
+|[SetCLRSyncManager Method](ihostsyncmanager-setclrsyncmanager-method.md)|Sets the [ICLRSyncManager](iclrsyncmanager-interface.md) instance to associate with the current `IHostSyncManager` instance.|  
   
 ## Remarks  
  The CLR discovers the host's implementation of `IHostSyncManager` by calling the [IHostControl::GetHostManager](ihostcontrol-gethostmanager-method.md) method with an `IID` of IID_IHostSyncManager.  

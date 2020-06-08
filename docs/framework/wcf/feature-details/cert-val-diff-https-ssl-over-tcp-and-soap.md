@@ -44,4 +44,4 @@ You can use certificates in Windows Communication Foundation (WCF) with message-
 ## See also
 
 - <xref:System.Net.Security.RemoteCertificateValidationCallback>
-- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Working with Certificates](working-with-certificates.md)

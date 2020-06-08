@@ -30,7 +30,7 @@ let f x = x + 1
 
 In the previous example, the function name is `f`, the argument is `x`, which has type `int`, the function body is `x + 1`, and the return value is of type `int`.
 
-Functions can be marked `inline`. For information about `inline`, see [Inline Functions](../functions/inline-functions.md).
+Functions can be marked `inline`. For information about `inline`, see [Inline Functions](inline-functions.md).
 
 ## Scope
 
@@ -136,7 +136,7 @@ A *lambda expression* is an unnamed function. In the previous examples, instead 
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet112.fs)]
 
-You define lambda expressions by using the `fun` keyword. A lambda expression resembles a function definition, except that instead of the `=` token, the `->` token is used to separate the argument list from the function body. As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body. For more information, see [Lambda Expressions: The `fun` Keyword](../functions/lambda-expressions-the-fun-keyword.md).
+You define lambda expressions by using the `fun` keyword. A lambda expression resembles a function definition, except that instead of the `=` token, the `->` token is used to separate the argument list from the function body. As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body. For more information, see [Lambda Expressions: The `fun` Keyword](lambda-expressions-the-fun-keyword.md).
 
 ## Function Composition and Pipelining
 

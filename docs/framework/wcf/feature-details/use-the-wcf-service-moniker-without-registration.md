@@ -53,4 +53,4 @@ binding=WSHttpBinding_IAffiliate, bindingNamespace=http://tempuri.org/
   
 ## See also
 
-- [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)
+- [How to: Register and Configure a Service Moniker](how-to-register-and-configure-a-service-moniker.md)

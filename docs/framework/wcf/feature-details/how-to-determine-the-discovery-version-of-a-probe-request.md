@@ -20,4 +20,4 @@ doce.DiscoveryVersion;
 ## See also
 
 - <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion%2A>
-- [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md)
+- [Implementing a Discovery Proxy](implementing-a-discovery-proxy.md)

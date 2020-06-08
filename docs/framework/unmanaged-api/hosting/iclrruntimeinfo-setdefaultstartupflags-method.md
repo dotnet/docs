@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::SetDefaultStartupFlags Method
-Sets the startup flags and the host configuration file that will be used to start the runtime. This method supersedes the use of the `startupFlags` parameter in the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
+Sets the startup flags and the host configuration file that will be used to start the runtime. This method supersedes the use of the `startupFlags` parameter in the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT SetDefaultStartupFlags(
   
 ## Parameters  
  `dwStartupFlags`  
- [in] The host startup flags to set. Use the same flags as with the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
+ [in] The host startup flags to set. Use the same flags as with the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
  `pwzHostConfigFile`  
  [in] The directory path of the host configuration file to set.  

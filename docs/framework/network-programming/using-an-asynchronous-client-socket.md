@@ -1,5 +1,6 @@
 ---
 title: "Using an Asynchronous Client Socket"
+description: This example shows an asynchronous client socket. .NET Framework asynchronous programming lets an application continue to run while processing a connection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

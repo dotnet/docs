@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 36e1db50-008c-4b32-8d09-b56e790b8417
 ---
 # Session
-The Session sample demonstrates how to implement a contract that requires a session. A session provides context for performing multiple operations. This allows a service to associate state with a given session, such that subsequent operations can use the state of a previous operation. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified to allow a set of arithmetic operations to be performed, while keeping a running result. This functionality is defined by the `ICalculatorSession` contract. The service maintains the state for a client as multiple service operations are called to perform a calculation. The client can retrieve the current result by calling `Result()` and clear the result to zero by calling `Clear()`.  
+The Session sample demonstrates how to implement a contract that requires a session. A session provides context for performing multiple operations. This allows a service to associate state with a given session, such that subsequent operations can use the state of a previous operation. This sample is based on the [Getting Started](getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified to allow a set of arithmetic operations to be performed, while keeping a running result. This functionality is defined by the `ICalculatorSession` contract. The service maintains the state for a client as multiple service operations are called to perform a calculation. The client can retrieve the current result by calling `Result()` and clear the result to zero by calling `Clear()`.  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
@@ -71,11 +71,11 @@ Press <ENTER> to terminate client.
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

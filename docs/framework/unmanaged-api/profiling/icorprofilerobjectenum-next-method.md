@@ -41,7 +41,7 @@ HRESULT Next (
  [out] A pointer to the number of elements actually returned in the `objects` array.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

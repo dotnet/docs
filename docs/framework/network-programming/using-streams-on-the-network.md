@@ -1,5 +1,6 @@
 ---
 title: "Using Streams on the Network"
+description: The .NET Framework represents network resources as streams. The NetworkStream class implements the Stream class for use with network resources.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

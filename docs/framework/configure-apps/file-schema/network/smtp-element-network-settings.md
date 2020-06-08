@@ -1,5 +1,6 @@
 ---
 title: "<smtp> Element (Network Settings)"
+description: The <smtp> network settings element configures the delivery format, delivery method, and from address for sending emails options in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp"

@@ -8,9 +8,9 @@ The issued token client enables the federated security scenario in Windows Commu
   
  Federated security enables the establishment of trust between independent domains. Each domain centralizes authentication and authorization in a security token service. When trust is established between two such services, members of each domain can use the services of the other.  
   
- For a detailed explanation about the federated scenario, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ For a detailed explanation about the federated scenario, see [Federation and Issued Tokens](federation-and-issued-tokens.md).  
   
 ## See also
 
-- [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [Federation and Issued Tokens](federation-and-issued-tokens.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

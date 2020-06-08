@@ -9,7 +9,7 @@ Imports System.IdentityModel.Claims
 Imports System.ServiceModel.Channels
 Imports System.Security.Cryptography.X509Certificates
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace CreateSts
     Public Class Test
 
@@ -84,10 +84,10 @@ Namespace CreateSts
 End Namespace
 
 Namespace Client
-    
+
     Class Test
-        
-        Private Sub Run() 
+
+        Private Sub Run()
             Dim b As New WSHttpBinding()
             Dim ea As New EndpointAddress("http://localhost/Calculator")
             Dim client As New CalculatorClient(b, ea)
@@ -101,7 +101,7 @@ Namespace Client
 
             Dim a1 As AddressHeader = AddressHeader.CreateAddressHeader("Hello", "World", "hello")
             Dim addressHeaders() As AddressHeader = {a1}
-            
+
             '<snippet11>
             itcc.LocalIssuerAddress = New EndpointAddress( _
             New Uri("http://fabrikam.com/sts"), addressHeaders)
@@ -155,61 +155,61 @@ Namespace Client
         End Sub
     End Class
 
-    
-    
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute()>  _
+
+
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute()> _
     Public Interface ICalculator
-        
-        <System.ServiceModel.OperationContractAttribute(Action := "http://tempuri.org/ICalculator/Divide", ReplyAction := "http://tempuri.org/ICalculator/DivideResponse")>  _
-        Function Divide(ByVal a As Double, ByVal b As Double) As Double 
-        
-        <System.ServiceModel.OperationContractAttribute(Action := "http://tempuri.org/ICalculator/CalculateTax", ReplyAction := "http://tempuri.org/ICalculator/CalculateTaxResponse")>  _
-        Function CalculateTax(ByVal a As Double) As Double 
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/Divide", ReplyAction:="http://tempuri.org/ICalculator/DivideResponse")> _
+        Function Divide(ByVal a As Double, ByVal b As Double) As Double
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/CalculateTax", ReplyAction:="http://tempuri.org/ICalculator/CalculateTaxResponse")> _
+        Function CalculateTax(ByVal a As Double) As Double
     End Interface
-    
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")>  _
+
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
     Public Interface ICalculatorChannel
         Inherits ICalculator, System.ServiceModel.IClientChannel
     End Interface
 
-<System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
-Class CalculatorClient
-    Inherits System.ServiceModel.ClientBase(Of ICalculator)
-    Implements ICalculator
-    
-    Public Sub New()
-    End Sub
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
+    Class CalculatorClient
+        Inherits System.ServiceModel.ClientBase(Of ICalculator)
+        Implements ICalculator
+
+        Public Sub New()
+        End Sub
 
 
-    Public Sub New(ByVal endpointConfigurationName As String)
-        MyBase.New(endpointConfigurationName)
-    End Sub
+        Public Sub New(ByVal endpointConfigurationName As String)
+            MyBase.New(endpointConfigurationName)
+        End Sub
 
 
-    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
-        MyBase.New(endpointConfigurationName, remoteAddress)
-    End Sub
+        Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
+            MyBase.New(endpointConfigurationName, remoteAddress)
+        End Sub
 
 
-    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
-        MyBase.New(endpointConfigurationName, remoteAddress)
-    End Sub
+        Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
+            MyBase.New(endpointConfigurationName, remoteAddress)
+        End Sub
 
 
-    Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
-        MyBase.New(binding, remoteAddress)
+        Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
+            MyBase.New(binding, remoteAddress)
 
-    End Sub 
+        End Sub
 
 
-    Public Function Divide(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Divide
-        Return MyBase.Channel.Divide(a, b)
-    End Function 
+        Public Function Divide(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Divide
+            Return MyBase.Channel.Divide(a, b)
+        End Function
 
-    Public Function CalculateTax(ByVal a As Double) As Double Implements _
-	ICalculator.CalculateTax
-        Return MyBase.Channel.CalculateTax(a)
+        Public Function CalculateTax(ByVal a As Double) As Double Implements _
+        ICalculator.CalculateTax
+            Return MyBase.Channel.CalculateTax(a)
 
-    End Function
-End Class
-End Namespace 
+        End Function
+    End Class
+End Namespace

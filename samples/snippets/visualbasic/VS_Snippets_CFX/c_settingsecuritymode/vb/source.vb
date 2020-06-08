@@ -3,12 +3,12 @@ Imports System.Security.Permissions
 Imports System.Security.Cryptography.X509Certificates
 
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution := True)>
+<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Public Class Test
-    
-    Public Shared Sub Main() 
+
+    Public Shared Sub Main()
         Try
             Dim t As New Test()
             't.TcpMessageWithCredentialWindows();
@@ -17,29 +17,29 @@ Public Class Test
             Console.WriteLine(exc.Message)
             Console.ReadLine()
         End Try
-    
-    End Sub 
-     
-    Private Sub AllConfig() 
+
+    End Sub
+
+    Private Sub AllConfig()
         Dim sh As New ServiceHost(GetType(Calculator))
         sh.Open()
         Console.WriteLine("Listening")
         Console.ReadLine()
-    
-    End Sub 
-    
-    
-    Private Sub MakeTransportBinding() 
+
+    End Sub
+
+
+    Private Sub MakeTransportBinding()
         '<snippet5>
         '<snippet1>
         Dim b As New WSHttpBinding()
         b.Security.Mode = SecurityMode.Transport
         '</snippet1>
         b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows
-         '</snippet5>
-    End Sub 
-        
-    Private Sub MakeMessgeBinding() 
+        '</snippet5>
+    End Sub
+
+    Private Sub MakeMessgeBinding()
         '<snippet6>
         '<snippet2>
         Dim b As New WSHttpBinding()
@@ -48,28 +48,28 @@ Public Class Test
         b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
         '</snippet6>
     End Sub
-    
-    
-    Private Sub TransportWithMessageBinding() 
+
+
+    Private Sub TransportWithMessageBinding()
         '<snippet3>
         Dim b As New WSHttpBinding()
         b.Security.Mode = SecurityMode.TransportWithMessageCredential
         '</snippet3>
-    End Sub 
-     
-    
-    Private Sub SetModeViaConstructor() 
+    End Sub
+
+
+    Private Sub SetModeViaConstructor()
         '<snippet4>
         Dim b As New WSHttpBinding(SecurityMode.Message)
-       '</snippet4>
-    End Sub 
-    
-    Private Sub HttpMessageWithCredential() 
+        '</snippet4>
+    End Sub
+
+    Private Sub HttpMessageWithCredential()
         '<snippet7>
         Dim b As New WSHttpBinding()
         b.Security.Mode = SecurityMode.TransportWithMessageCredential
         b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
-        
+
         ' The SSL certificate is bound to port 8006 using the HttpCfg.exe tool.
         Dim httpsAddress As New Uri("https://localMachineName:8006/base")
         Dim sh As New ServiceHost(GetType(Calculator), httpsAddress)
@@ -78,10 +78,10 @@ Public Class Test
         Console.WriteLine("Listening")
         Console.ReadLine()
         '</snippet7>
-    End Sub 
-     
-    
-    Private Sub TcpMessageWithCredential() 
+    End Sub
+
+
+    Private Sub TcpMessageWithCredential()
         '<snippet8>
         Dim b As New NetTcpBinding(SecurityMode.TransportWithMessageCredential)
         b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate
@@ -93,10 +93,10 @@ Public Class Test
         Console.WriteLine("Listening")
         Console.ReadLine()
         '</snippet8>
-    End Sub 
-    
-    
-    Private Sub TcpMessageWithCredentialWindows() 
+    End Sub
+
+
+    Private Sub TcpMessageWithCredentialWindows()
         '<snippet9>
         Dim b As New NetTcpBinding(SecurityMode.TransportWithMessageCredential)
         b.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows
@@ -109,23 +109,23 @@ Public Class Test
         Console.WriteLine("Listening")
         Console.ReadLine()
         '</snippet9>
-    End Sub 
-End Class 
+    End Sub
+End Class
 
 
 
-<ServiceContract()>  _
+<ServiceContract()> _
 Interface ICalculator
-    <OperationContract()>  _
-    Function Add(ByVal a As Double, ByVal b As Double) As Double 
+    <OperationContract()> _
+    Function Add(ByVal a As Double, ByVal b As Double) As Double
 End Interface 'ICalculator
 
 
 Public Class Calculator
     Implements ICalculator
-    
+
     Public Function Add(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Add
         Return a + b
-    
-    End Function 
-End Class 
+
+    End Function
+End Class

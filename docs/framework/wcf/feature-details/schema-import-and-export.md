@@ -25,9 +25,9 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  [!code-csharp[c_SchemaImportExport#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs/source.cs#1)]
  [!code-vb[c_SchemaImportExport#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#1)]  
   
- Note that the generated type follows several data contract best practices (found in [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)):  
+ Note that the generated type follows several data contract best practices (found in [Best Practices: Data Contract Versioning](../best-practices-data-contract-versioning.md)):  
   
-- The type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+- The type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. For more information, see [Forward-Compatible Data Contracts](forward-compatible-data-contracts.md).  
   
 - Data members are implemented as public properties that wrap private fields.  
   
@@ -45,18 +45,18 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
  [!code-xml[c_SchemaImportExport#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#9)]  
   
- For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). If a schema does not conform to the data contract rules, use a different serialization engine. For example, the <xref:System.Xml.Serialization.XmlSerializer> uses its own separate schema import mechanism. Also, there is a special import mode in which the range of supported schema is expanded. For more information, see the section about generating <xref:System.Xml.Serialization.IXmlSerializable> types in [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md).  
+ For more information, see [Data Contract Schema Reference](data-contract-schema-reference.md). If a schema does not conform to the data contract rules, use a different serialization engine. For example, the <xref:System.Xml.Serialization.XmlSerializer> uses its own separate schema import mechanism. Also, there is a special import mode in which the range of supported schema is expanded. For more information, see the section about generating <xref:System.Xml.Serialization.IXmlSerializable> types in [Importing Schema to Generate Classes](importing-schema-to-generate-classes.md).  
   
- The `XsdDataContractExporter` supports any .NET Framework types that can be serialized with the `DataContractSerializer`. For more information, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md). Note that schema generated using the `XsdDataContractExporter` is normally valid data that the `XsdDataContractImporter` can use (unless the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> is used to customize the schema).  
+ The `XsdDataContractExporter` supports any .NET Framework types that can be serialized with the `DataContractSerializer`. For more information, see [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md). Note that schema generated using the `XsdDataContractExporter` is normally valid data that the `XsdDataContractImporter` can use (unless the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> is used to customize the schema).  
   
- For more information about using the <xref:System.Runtime.Serialization.XsdDataContractImporter>, see [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md).  
+ For more information about using the <xref:System.Runtime.Serialization.XsdDataContractImporter>, see [Importing Schema to Generate Classes](importing-schema-to-generate-classes.md).  
   
- For more information about using the <xref:System.Runtime.Serialization.XsdDataContractExporter>, see [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md).  
+ For more information about using the <xref:System.Runtime.Serialization.XsdDataContractExporter>, see [Exporting Schemas from Classes](exporting-schemas-from-classes.md).  
   
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
 - <xref:System.Runtime.Serialization.XsdDataContractExporter>
-- [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)
-- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)
+- [Importing Schema to Generate Classes](importing-schema-to-generate-classes.md)
+- [Exporting Schemas from Classes](exporting-schemas-from-classes.md)

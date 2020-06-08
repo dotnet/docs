@@ -29,7 +29,7 @@ Provides functionality similar to that of the [ICorRuntimeHost](icorruntimehost-
 |[ExecuteApplication Method](iclrruntimehost-executeapplication-method.md)|Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain.|  
 |[ExecuteInAppDomain Method](iclrruntimehost-executeinappdomain-method.md)|Specifies the <xref:System.AppDomain> in which to execute the specified managed code.|  
 |[ExecuteInDefaultAppDomain Method](iclrruntimehost-executeindefaultappdomain-method.md)|Invokes the specified method of the specified type in the specified assembly.|  
-|[GetCLRControl Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-getclrcontrol-method.md)|Gets an interface pointer of type [ICLRControl](iclrcontrol-interface.md) that hosts can use to customize aspects of the common language runtime (CLR).|  
+|[GetCLRControl Method](iclrruntimehost-getclrcontrol-method.md)|Gets an interface pointer of type [ICLRControl](iclrcontrol-interface.md) that hosts can use to customize aspects of the common language runtime (CLR).|  
 |[GetCurrentAppDomainId Method](iclrruntimehost-getcurrentappdomainid-method.md)|Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.|  
 |[SetHostControl Method](iclrruntimehost-sethostcontrol-method.md)|Sets the host control interface. You must call `SetHostControl` before calling `Start`.|  
 |[Start Method](iclrruntimehost-start-method.md)|Initializes the CLR into a process.|  
@@ -37,10 +37,10 @@ Provides functionality similar to that of the [ICorRuntimeHost](icorruntimehost-
 |[UnloadAppDomain Method](iclrruntimehost-unloadappdomain-method.md)|Unloads the <xref:System.AppDomain> that corresponds to the specified numeric identifier.|  
   
 ## Remarks  
- Starting with the .NET Framework 4, use the [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md) interface to get a pointer to the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface, and then call the [ICLRRuntimeInfo::GetInterface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getinterface-method.md) method to get a pointer to `ICLRRuntimeHost`. In earlier versions of the .NET Framework, the host gets a pointer to an `ICLRRuntimeHost` instance by calling [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md). To provide implementations of any of the technologies provided in the .NET Framework version 2.0, you must use `ICLRRuntimeHost` instead of `ICorRuntimeHost`.  
+ Starting with the .NET Framework 4, use the [ICLRMetaHost](iclrmetahost-interface.md) interface to get a pointer to the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface, and then call the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method to get a pointer to `ICLRRuntimeHost`. In earlier versions of the .NET Framework, the host gets a pointer to an `ICLRRuntimeHost` instance by calling [CorBindToRuntimeEx](corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md). To provide implementations of any of the technologies provided in the .NET Framework version 2.0, you must use `ICLRRuntimeHost` instead of `ICorRuntimeHost`.  
   
 > [!IMPORTANT]
-> Do not call the [Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the [ExecuteApplication](iclrruntimehost-executeapplication-method.md) method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
+> Do not call the [Start](iclrruntimehost-start-method.md) method before calling the [ExecuteApplication](iclrruntimehost-executeapplication-method.md) method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

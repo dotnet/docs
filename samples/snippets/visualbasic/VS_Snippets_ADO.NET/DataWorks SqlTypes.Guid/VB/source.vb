@@ -55,6 +55,6 @@ Module Module1
             Console.WriteLine("{0}", sqlGuidValue)
         Next
     End Sub
-        ' </Snippet1>
+    ' </Snippet1>
 End Module
 

@@ -8,7 +8,7 @@ ms.date: 06/04/2020
 
 # Install .NET Core SDK and .NET Core Runtime on Debian
 
-.NET Core is supported on Debian. This article describes how to install .NET Core on Debian. When a Debian version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
+This article describes how to install .NET Core on Debian. When a Debian version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -36,7 +36,7 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 ## How to install other versions
 
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+[!INCLUDE [hack-pkgname](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Debian 10 ✔️
 
@@ -124,7 +124,6 @@ sudo apt-get update; \
 
 [!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
-## Dependencies
 
 ## Dependencies
 

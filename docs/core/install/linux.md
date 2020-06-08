@@ -55,7 +55,7 @@ The following table is a list of currently supported .NET Core releases and the 
 
 ## Fedora
 
-Fedora uses DNF as it's package manager.
+Fedora uses DNF as its package manager.
 
 The following table is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 

@@ -22,7 +22,7 @@ The following table is a list of currently supported .NET Core releases and the 
 - A ❌ indicates that the version of Debian or .NET Core isn't supported on that Debian release.
 - When both a version of Debian and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [10](#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [9](#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
@@ -43,12 +43,8 @@ The following versions of .NET Core are no longer supported. The downloads for t
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/debian/10/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
+wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]

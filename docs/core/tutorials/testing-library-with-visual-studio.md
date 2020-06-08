@@ -1,13 +1,13 @@
 ---
-title: Test a .NET Standard class library with .NET Core in Visual Studio
-description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
-ms.date: 05/21/2020
+title: Test a .NET Standard class library with .NET Core using Visual Studio
+description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
+ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Tutorial: Test a .NET Standard library with .NET Core in Visual Studio
+# Tutorial: Test a .NET Standard class library with .NET Core using Visual Studio
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -16,6 +16,10 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 - This tutorial works with the solution that you create in [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md).
 
 ## Create a unit test project
+
+Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
+
+1. Start Visual Studio.
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md).
 
@@ -28,9 +32,6 @@ This tutorial shows how to automate unit testing by adding a test project to a s
    1. Choose the **MSTest Test Project (.NET Core)** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Create**.
-
-   > [!NOTE]
-   > MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 
@@ -71,6 +72,10 @@ This tutorial shows how to automate unit testing by adding a test project to a s
    - It applies the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic.
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is executed automatically when the unit test is run.
+
+## Add a project reference
+
+For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Project Reference** from the context menu.
 
@@ -176,7 +181,8 @@ To test the Release build:
 
 ## Additional resources
 
-- [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
+* [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
+* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
 
 ## Next steps
 

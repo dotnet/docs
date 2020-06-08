@@ -1,9 +1,9 @@
 ---
-title: Test a .NET Standard class library with .NET Core in Visual Studio for Mac
-description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
-ms.date: 06/03/2020
+title: Test a .NET Standard class library with .NET Core using Visual Studio for Mac
+description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
+ms.date: 06/08/2020
 ---
-# Test a .NET Standard class library with .NET Core in Visual Studio
+# Test a .NET Standard class library with .NET Core using Visual Studio
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -15,7 +15,11 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
 
-1. In the **Solution** sidebar, ctrl-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
+1. Start Visual Studio for Mac.
+
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library in Visual Studio for Mac](library-with-visual-studio-mac.md).
+
+1. In the **Solution** pad, ctrl-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
 
 1. In the **New Project** dialog, select **Tests** from the **Web and Console** node. Select the **MSTest Project** followed by **Next**.
 
@@ -51,11 +55,13 @@ Unit tests provide automated software testing during your development and publis
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is executed automatically when the unit test is run.
 
-1. For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
+## Add a project reference
 
-   1. In the **Solution** sidebar, ctrl-click **Dependencies** under **TestLibrary**. Select **Edit References** from the context menu.
+For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
 
-   1. In the **Edit References** dialog, select the **StringLibrary** project on the **Projects** tab. Select **OK**.
+1. In the **Solution** sidebar, ctrl-click **Dependencies** under **TestLibrary**. Select **Edit References** from the context menu.
+
+1. In the **Edit References** dialog, select the **StringLibrary** project on the **Projects** tab. Select **OK**.
 
       :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Visual Studio Mac Edit References dialog":::
 
@@ -82,9 +88,7 @@ You'll define three methods, each of which calls an <xref:Microsoft.VisualStudio
 
 To create the test methods:
 
-1. In the **StringLibraryTest** project, rename the *UnitTest1.cs* file to *StringLibraryTests.cs*.
-
-1. Open the file and replace the code with the following code:
+1. Open the *UnitTest1.cs* file and replace the code with the following code:
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibraryTest/UnitTest1.cs":::
 
@@ -100,7 +104,7 @@ To create the test methods:
 
 1. Open the **Unit Tests** panel on the right side of the screen. Select **View** > **Tests** from the menu.
 
-1. Click the **Dock** icon to keep the panel open. (Highlighted in the following image.)
+1. Click the **Dock** icon to keep the panel open.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Visual Studio for Mac Unit Tests panel dock icon":::
 
@@ -119,12 +123,6 @@ If you're doing test-driven development (TDD), you write tests first and they fa
    ```csharp
    string[] words = { "alphabet", "Error", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
                       "1234", ".", ";", " " };
-   ```
-
-   ```vb
-   Dim words() As String = { "alphabet", "Error", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
-                      "1234", ".", ";", " " }
-
    ```
 
 1. Run the tests again.
@@ -163,7 +161,7 @@ You can use the same process shown in [Tutorial: Debug a .NET Core console appli
 
 ## Additional resources
 
-- [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
+* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
 
 ## Next steps
 
@@ -180,4 +178,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application with Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET Core console application with Visual Studio for Mac](publishing-with-visual-studio-mac.md)

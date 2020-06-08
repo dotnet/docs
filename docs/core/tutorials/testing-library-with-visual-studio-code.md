@@ -1,9 +1,9 @@
 ---
-title: Test a .NET Standard class library with .NET Core in Visual Studio Code
+title: Test a .NET Standard class library with .NET Core using Visual Studio Code
 description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
-ms.date: 05/29/2020
+ms.date: 06/08/2020
 ---
-# Tutorial: Test a .NET Standard library with .NET Core in Visual Studio Code
+# Tutorial: Test a .NET Standard class library with .NET Core using Visual Studio Code
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
@@ -13,7 +13,9 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Create a unit test project
 
-1. Open Visual Studio Code.
+Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
+
+1. Start Visual Studio Code.
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md).
 
@@ -49,16 +51,17 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
    Each method tagged with [[TestMethod]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) in a test class tagged with [[TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) is executed automatically when the unit test is run.
 
-   > [!NOTE]
-   > MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
-
 1. Add the test project to the solution.
 
    ```dotnetcli
    dotnet sln add StringLibraryTest/StringLibraryTest.csproj
    ```
 
-1. Create a project reference to the class library project by running the following command:
+## Add a project reference
+
+For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
+
+1. Run the following command:
 
    ```dotnetcli
    dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
@@ -167,7 +170,7 @@ Now that the tests have all passed when running the Debug version of the library
 
 ## Additional resources
 
-- [Unit testing in .NET Core and .NET Standard](../testing/index.md)
+* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
 
 ## Next steps
 

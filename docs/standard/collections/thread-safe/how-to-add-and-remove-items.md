@@ -1,6 +1,6 @@
 ---
 title: "How to: Add and Remove Items from a ConcurrentDictionary"
-description: In this article, read an example of how to add, retrieve, update, and remove items from the ConcurrentDictionary<TKey,TValue> collection class in .NET.
+description: Read an example of how to add, retrieve, update, and remove items from the ConcurrentDictionary<TKey,TValue> collection class in .NET.
 ms.date: 05/04/2020
 ms.technology: dotnet-standard
 dev_langs: 

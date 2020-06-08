@@ -1,6 +1,6 @@
 ---
 title: "Encrypting Data"
-description: In this article, learn to encrypt data in .NET. You can use symmetric encryption on streams, or you can use asymmetric encryption on a small number of bytes.
+description: Learn to encrypt data in .NET. You can use symmetric encryption on streams, or you can use asymmetric encryption on a small number of bytes.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

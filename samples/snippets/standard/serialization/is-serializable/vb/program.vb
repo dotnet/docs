@@ -9,7 +9,7 @@ Module Program
         If value.IsSerializable() Then
             Dim formatter As New BinaryFormatter()
             ' Serialize the value tuple.
-            Using stream As New FileStream("data.bin", FileMode.Create, 
+            Using stream As New FileStream("data.bin", FileMode.Create,
                                            FileAccess.Write, FileShare.None)
                 formatter.Serialize(stream, value)
             End Using

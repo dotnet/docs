@@ -1,6 +1,6 @@
 ---
 title: "Task-based Asynchronous Pattern (TAP)"
-description: In this article, learn about the Task-based Asynchronous Pattern (TAP). TAP is the recommended asynchronous design pattern for new development in .NET.
+description: Learn about the Task-based Asynchronous Pattern (TAP). TAP is the recommended asynchronous design pattern for new development in .NET.
 ms.date: "02/26/2019"
 ms.technology: dotnet-standard
 dev_langs: 

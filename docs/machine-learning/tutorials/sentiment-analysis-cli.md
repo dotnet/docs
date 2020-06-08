@@ -93,13 +93,7 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     <!-- markdownlint-disable MD023 MD025 -->
 
-    # [Windows](#tab/windows)
-
     ![ML.NET CLI classification on PowerShell](./media/mlnet-cli/mlnet-classification-powershell.gif)
-
-    # [macOS Bash](#tab/macosbash)
-
-    ![ML.NET CLI classification on Bash](./media/mlnet-cli/mlnet-auto-train-binary-classification-bash.gif)
 
     In this particular case, in only 10 seconds and with the small dataset provided, the CLI tool was able to run quite a few iterations, meaning training multiple times based on different combinations of algorithms/configuration with different internal data transformations and algorithm's hyper-parameters.
 
@@ -184,26 +178,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
 1. Run the project, either using the original sample data loaded from the first row of the dataset or by providing your own custom hard-coded sample data. You should get a prediction comparable to:
 
-    # [Windows](#tab/windows)
-
-    Run the console app from Visual Studio by hitting F5 (Play button):
-
-    ![ML.NET CLI run the app from Visual Studio](./media/mlnet-cli/mlnet-cli-console-app.png))
-
-    # [macOS Bash](#tab/macosbash)
-
-    Run the console app from the command-prompt by typing the following commands:
-
-    ```dotnetcli
-    cd SampleClassification
-    cd SampleClassification.ConsoleApp
-
-    dotnet run
-    ```
-
-    ![ML.NET CLI run the app in bash](./media/mlnet-cli/sample-cli-prediction-execution-bash.png))
-
-    ---
+![ML.NET CLI run the app from Visual Studio](./media/mlnet-cli/mlnet-cli-console-app.png))
 
 1. Try changing the hard-coded sample data to other sentences with different sentiment and see how the model predicts positive or negative sentiment.
 

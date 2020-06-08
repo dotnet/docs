@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 06/04/2020
 ---
 
-# Install .NET Core SDK and .NET Core Runtime on RHEL
+# Install .NET Core SDK or .NET Core Runtime on RHEL
 
 .NET Core is supported on RHEL. This article describes how to install .NET Core on RHEL.
 
@@ -24,7 +24,7 @@ The following table is a list of currently supported .NET Core releases on both 
 - A ❌ indicates that the version of RHEL or .NET Core isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
@@ -57,7 +57,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-The .NET Core SDK allows you to develop apps with .NET Core. To install the .NET Core SDK, run the following commands.
+.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

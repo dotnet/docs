@@ -1,5 +1,5 @@
 
-Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. First, download a binary release for either the SDK or the runtime from one of the following sites:
+Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 preview downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)

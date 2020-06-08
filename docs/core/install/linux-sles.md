@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 06/04/2020
 ---
 
-# Install .NET Core SDK and .NET Core Runtime on SLES
+# Install .NET Core SDK or .NET Core Runtime on SLES
 
 .NET Core is supported on SLES. This article describes how to install .NET Core on SLES.
 
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET Core releases on both 
 - A ❌ indicates that the version of SLES or .NET Core isn't supported on that SLES release.
 - When both a version of SLES and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |------------------------|---------------|---------------|----------------|
 | ✔️ [15](#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [12 SP2](#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |

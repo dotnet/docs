@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 06/04/2020
 ---
 
-# Install .NET Core SDK and .NET Core Runtime on CentOS
+# Install .NET Core SDK or .NET Core Runtime on CentOS
 
 .NET Core is supported on CentOS. This article describes how to install .NET Core on CentOS.
 
@@ -22,7 +22,7 @@ The following table is a list of currently supported .NET Core releases on both 
 - A ❌ indicates that the version of CentOS or .NET Core isn't supported on that CentOS release.
 - When both a version of CentOS and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |

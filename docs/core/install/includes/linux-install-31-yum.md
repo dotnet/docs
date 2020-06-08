@@ -1,7 +1,7 @@
 
 ### Install the SDK
 
-The .NET Core SDK allows you to develop apps with .NET Core. To install the .NET Core SDK, run the following commands.
+.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
 
 ```bash
 sudo yum install dotnet-sdk-3.1

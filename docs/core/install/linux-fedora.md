@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 06/04/2020
 ---
 
-# Install .NET Core SDK and .NET Core Runtime on Fedora
+# Install .NET Core SDK or .NET Core Runtime on Fedora
 
 .NET Core is supported on Fedora. This article describes how to install .NET Core on Fedora. When a Fedora version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
 
@@ -22,7 +22,7 @@ The following table is a list of currently supported .NET Core releases and the 
 - A ❌ indicates that the version of Fedora or .NET Core isn't supported on that Fedora release.
 - When both a version of Fedora and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [32](linux-fedora.md#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [31](linux-fedora.md#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |

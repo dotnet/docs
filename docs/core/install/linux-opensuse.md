@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 06/04/2020
 ---
 
-# Install .NET Core SDK and .NET Core Runtime on openSUSE
+# Install .NET Core SDK or .NET Core Runtime on openSUSE
 
 .NET Core is supported on openSUSE. This article describes how to install .NET Core on openSUSE.
 
@@ -22,7 +22,7 @@ The following table is a list of currently supported .NET Core releases on openS
 - A ❌ indicates that the version of openSUSE or .NET Core isn't supported on that openSUSE release.
 - When both a version of openSUSE and a version of .NET Core have ✔️, that OS and .NET combination are supported.
 
-| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |----------------------------|---------------|---------------|----------------|
 | ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 

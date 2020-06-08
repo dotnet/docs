@@ -1,7 +1,7 @@
 ---
-title: Debug a .NET Core console application with Visual Studio for Mac
-description: Learn how to debug a .NET Core console app with Visual Studio Mac.
-ms.date: 06/02/2020
+title: Debug a .NET Core console application using Visual Studio for Mac
+description: Learn how to debug a .NET Core console app using Visual Studio Mac.
+ms.date: 06/08/2020
 ---
 # Tutorial: Debug a .NET Core console application using Visual Studio for Mac
 
@@ -11,31 +11,37 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 - This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio for Mac](using-on-mac-vs.md).
 
-## Debug build configuration
+## Use Debug build configuration
 
-*Debug* and *Release* are two of Visual Studio's built-in build configurations. The Debug configuration supports the debugging of an app, and the Release configuration builds a fully optimized version of the app for deployment.
+*Debug* and *Release* are Visual Studio's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
-The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
+In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
+
+By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
+
+1. Start Visual Studio for Mac.
+
+1. Open the project that you created in [Create a .NET Core console application in Visual Studio for Mac](using-on-mac-vs.md).
+
+   The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
-This tutorial requires the Debug configuration.
-
 ## Set a breakpoint
 
-1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press ⌘ \\ (<kbd>command</kbd>+<kbd>\\</kbd>).
+A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
 
-   A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press ⌘ \\ (<kbd>command</kbd>+<kbd>\\</kbd>). Another way to set a breakpoint is by selecting **Run** > **Toggle Breakpoint** from the menu.
 
-   As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
+   Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
-1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
+1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to start the program in debugging mode. Another way to start debugging is by choosing **Run** > **Start Debugging** from the menu.
 
 1. Enter a string in the terminal window when the program prompts for a name, and then press <kbd>enter</kbd>.
 
-1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
+1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
@@ -49,11 +55,13 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. Enter `date = date.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
 
-   The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
+   The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window.png" alt-text="Immediate Window in Visual Studio":::
 
-   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
+   The **Locals** window displays the values of variables that are defined in the currently executing method. The values of the variables that you just changed are updated in the **Locals** window.
+
+  :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
@@ -67,7 +75,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 ## Set a conditional breakpoint
 
-The program displays a string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*, which breaks program execution when one or more conditions are met.
+The program displays a string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*.
 
 1. Ctrl-click on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
 
@@ -87,7 +95,7 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. In the terminal window, press <kbd>enter</kbd> when prompted to enter your name.
 
-1. Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint.
+   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint.
 
 1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method. In this case, `Main` is the currently executing method. Observe that the value of the `name` variable is `""`, that is, <xref:System.String.Empty?displayProperty=nameWithType>.
 
@@ -99,11 +107,11 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. In the terminal window, press any key to exit the program.
 
-1. Clear the breakpoint by clicking on the red dot in the left margin of the code window.
+1. Clear the breakpoint by clicking on the red dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Run > Toggle Breakpoint** while the line of code is selected.
 
 ## Step through a program
 
-Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since your program is small, you can step through the entire program.
+Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
 1. Set a breakpoint on the curly brace that marks the start of the `Main` method (press <kbd>command</kbd>+<kbd>\\</kbd>).
 
@@ -111,7 +119,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio stops on the line with the breakpoint.
 
-1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>) to advance one line.
+1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>) or select **Run** > **Step Into** to advance one line.
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
 
@@ -141,13 +149,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The terminal displays the formatted string.
 
-1. Press ⇧ ⌘ U (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>U</kbd>).
+1. Press ⇧ ⌘ U (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>U</kbd>) or select **Run** > **Step Out**.
 
    The terminal displays a message and waits for you to press a key.
 
 1. Press any key to exit the program.
 
-## Build a Release version
+## Use Release build configuration
 
 Once you've tested the Debug version of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in multithreaded applications.
 

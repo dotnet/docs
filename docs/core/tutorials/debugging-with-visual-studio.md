@@ -22,10 +22,10 @@ This tutorial introduces the debugging tools available in Visual Studio.
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
  By default, Visual Studio Code uses the Debug build configuration, so you don't need to change it before debugging.
- 
+
 1. Start Visual Studio.
 
-1. Open the project that you created in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md). 
+1. Open the project that you created in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 

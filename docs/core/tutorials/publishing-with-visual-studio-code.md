@@ -107,4 +107,3 @@ In this tutorial, you published a console app. In the next tutorial, you create 
 
 > [!div class="nextstepaction"]
 > [Create a .NET Standard library in Visual Studio for Mac](library-with-visual-studio-mac.md)
-

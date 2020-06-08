@@ -20,15 +20,15 @@ Namespace Microsoft.ServiceModel.Samples
 
         <OperationContract()> _
         Function Multiply(ByVal n1 As Integer, ByVal n2 As Integer) As Integer
-'<snippet1>
+        '<snippet1>
         <OperationContract()> _
         <FaultContract(GetType(MathFault))> _
         Function Divide(ByVal n1 As Integer, ByVal n2 As Integer) As Integer
-'</snippet1>
+        '</snippet1>
 
     End Interface
 
-'<snippet2>
+    '<snippet2>
     ' Define a math fault data contract
     <DataContract([Namespace]:="http://Microsoft.ServiceModel.Samples")> _
     Public Class MathFault
@@ -71,7 +71,7 @@ Namespace Microsoft.ServiceModel.Samples
         End Property
 
     End Class
-'</snippet2>
+    '</snippet2>
 
     ' Service class which implements the service contract.
     Public Class CalculatorService

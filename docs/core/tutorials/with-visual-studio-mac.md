@@ -1,11 +1,11 @@
 ---
-title: Create a console application with .NET Core in Visual Studio for Mac
-description: Learn how to create a .NET Core console application with C# or Visual Basic using Visual Studio for Mac.
+title: Create a .NET Core console application using Visual Studio for Mac
+description: Learn how to create a .NET Core console application using Visual Studio for Mac.
 ms.date: 06/02/2020
 ---
-# Create a console application with .NET Core in Visual Studio for Mac
+# Tutorial: Create a .NET Core console application using Visual Studio for Mac
 
-Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This tutorial walks you through building a simple console application using Visual Studio for Mac and .NET Core.
+This tutorial shows how to create and run a and .NET Core console application using Visual Studio for Mac.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -23,9 +23,11 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 ## Create the app
 
+Create a .NET Core console app project named "HelloWorld".
+
 1. Start Visual Studio for Mac.
 
-1. Select **New** on the start window.
+1. Select **New** in the start window.
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New button on the Visual Studio for Mac Start screen":::
 
@@ -41,26 +43,30 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-options.png" alt-text="Configure your new Console Application dialog":::
 
-   The Console Application template for .NET Core defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
 
-   ```csharp
-   using System;
+The template code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument:
 
-   namespace HelloWorld
-   {
-       class Program
-       {
-           static void Main(string[] args)
-           {
-               Console.WriteLine("Hello World!");
-           }
-       }
-   }
-   ```
+```csharp
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
 ## Run the app
 
-1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
+1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app without debugging.
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-output.png" alt-text="The terminal shows Hello World!":::
 
@@ -68,9 +74,9 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 ## Enhance the app
 
-Enhance the application to prompt the user for their name and display it along with the date and time. The following instructions modify the app and run it again:
+Enhance the application to prompt the user for their name and display it along with the date and time.
 
-1. In *Program.cs*, replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
+1. In *Program.cs*, replace the contents of the `Main` method, which is the line that calls `Console.WriteLine`, with the following code:
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
 

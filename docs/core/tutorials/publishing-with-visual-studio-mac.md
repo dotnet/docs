@@ -1,9 +1,9 @@
 ---
-title: Publish your .NET Core Hello World application with Visual Studio for Mac
-description: Publishing creates the set of files that are needed to run your .NET Core application.
-ms.date: 06/03/2020
+title: Publish a .NET Core console application using Visual Studio for Mac
+description: Publishing creates the set of files that are needed to run a .NET Core application.
+ms.date: 06/08/2020
 ---
-# Tutorial: Publish a .NET Core console application with Visual Studio for Mac
+# Tutorial: Publish a .NET Core console application using Visual Studio for Mac
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 

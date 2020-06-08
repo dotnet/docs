@@ -1,5 +1,6 @@
 ---
 title: "SAML Tokens and Claims"
+description: Learn how WFC uses SAML tokens to carry statements that are sets of claims made by one entity about another entity. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

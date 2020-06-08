@@ -1,5 +1,6 @@
 ---
 title: "Transport Security Overview"
+description: Learn about the major transport security mechanisms in the WCF system-provided bindings. These security mechanisms depend on the binding and transport used.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

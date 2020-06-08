@@ -1,5 +1,6 @@
 ---
 title: "Serialization and Deserialization"
+description: Learn about the WCF serialization engine, which translates between .NET Framework objects and XML, in both directions.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

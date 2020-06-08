@@ -78,4 +78,4 @@ As the preceding image shows, the published output includes the following files:
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md)
+> [Create a .NET Standard library in Visual Studio for mac](library-with-visual-studio-mac.md)

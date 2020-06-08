@@ -1,9 +1,9 @@
 ---
-title: Create a .NET Standard class library in Visual Studio for Mac
+title: Create a .NET Standard class library using Visual Studio for Mac
 description: Learn how to create a .NET Standard class library using Visual Studio for Mac.
 ms.date: 06/08/2020
 ---
-# Tutorial: Create a .NET Standard library in Visual Studio for Mac
+# Tutorial: Create a .NET Standard library using Visual Studio for Mac
 
 In this tutorial, you create a simple class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
@@ -23,13 +23,13 @@ A *class library* defines types and methods that are called by an application. A
   * [Supported macOS versions](../install/dependencies.md?pivots=os-macos).
   * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
-## Create a solution with a library project
+## Create a solution with a class library project
 
 A Visual Studio solution serves as a container for one or more projects. Create a solution and a class library project in the solution. You'll add additional, related projects to the same solution later.
 
 1. Start Visual Studio for Mac.
 
-1. On the start window, select **New Project**.
+1. In the start window, select **New Project**.
 
 1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Standard Library** template, and select **Next**.
 
@@ -63,7 +63,9 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-build-panel.png" alt-text="Visual Studio Mac Build output pane of the Errors panel with Build successful message":::
 
-## Add a console app project
+## Add a console app to the solution
+
+Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
 1. In the **Solution** pad, ctrl-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
 
@@ -91,12 +93,13 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 ## Additional resources
 
-- [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
-- [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+* [Develop libraries with the .NET Core CLI](libraries.md)
+* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+* [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
 
 ## Next steps
 
 In this tutorial, you created a solution and a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET Core in Visual Studio](testing-library-with-visual-studio.md)
+> [Test a .NET Standard library with .NET Core using Visual Studio for Mac](testing-library-with-visual-studio-mac.md)

@@ -1,6 +1,6 @@
 ---
 title: "Chaining Tasks by Using Continuation Tasks"
-description: In this article, learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
+description: Learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
 ms.date: "02/11/2019"
 ms.technology: dotnet-standard
 dev_langs: 

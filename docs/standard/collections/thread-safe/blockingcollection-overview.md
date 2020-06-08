@@ -1,5 +1,6 @@
 ---
 title: "BlockingCollection Overview"
+description: In this overview, learn about BlockingCollection<T>, which is a thread-safe collection class in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

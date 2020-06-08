@@ -75,8 +75,6 @@ Add a console application that uses the class library. The app will prompt the u
 
    :::image type="content" source="media/library-with-visual-studio-mac/add-showcase-project.png" alt-text="Add ShowCase project":::
 
-1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
-
 1. Open the *Program.cs* file. Replace the code with the following code:
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
@@ -84,6 +82,14 @@ Add a console application that uses the class library. The app will prompt the u
    The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
+
+## Add a project reference
+
+Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
+
+1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
+
+## Run the app
 
 1. Ctrl-click on the ShowCase project and select **Run project** from the context menu.
 

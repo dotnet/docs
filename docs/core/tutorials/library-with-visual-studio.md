@@ -78,18 +78,6 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Create**.
 
-1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
-
-   ![Visual Studio project context menu to set startup project](media/library-with-visual-studio/set-startup-project-context-menu.png)
-
-1. Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node, and select **Add Project Reference**.
-
-   ![Add reference context menu in Visual Studio](media/library-with-visual-studio/add-reference-context-menu.png)
-
-1. In the **Reference Manager** dialog, select the **StringLibrary** project, and select **OK**.
-
-   ![Reference Manager dialog with StringLibrary selected](media/library-with-visual-studio/manage-project-references.png)
-
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
@@ -99,7 +87,25 @@ Add a console application that uses the class library. The app will prompt the u
 
    The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
-1. If necessary, change the toolbar to compile the **Debug** build configuration of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
+## Add a project reference
+
+Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
+
+1. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node, and select **Add Project Reference**.
+
+   ![Add reference context menu in Visual Studio](media/library-with-visual-studio/add-reference-context-menu.png)
+
+1. In the **Reference Manager** dialog, select the **StringLibrary** project, and select **OK**.
+
+   ![Reference Manager dialog with StringLibrary selected](media/library-with-visual-studio/manage-project-references.png)
+
+## Run the app
+
+1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
+
+   ![Visual Studio project context menu to set startup project](media/library-with-visual-studio/set-startup-project-context-menu.png)
+
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
    ![Visual Studio project toolbar showing Debug button](media/library-with-visual-studio/visual-studio-project-toolbar.png)
 

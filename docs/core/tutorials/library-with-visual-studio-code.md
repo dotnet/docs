@@ -149,7 +149,21 @@ Add a console application that uses the class library. The app will prompt the u
    Project `ShowCase\ShowCase.csproj` added to the solution.
    ```
 
-1. Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project by running the following command:
+1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
+
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
+
+   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
+
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
+
+1. Save your changes.
+
+## Add a project reference
+
+Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
+
+1. Run the following command:
 
    ```dotnetcli
    dotnet add ShowCase/Showcase.csproj reference StringLibrary/StringLibrary.csproj
@@ -161,17 +175,9 @@ Add a console application that uses the class library. The app will prompt the u
    Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
    ```
 
-1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
+## Run the app
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
-
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
-
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
-
-1. Save your changes.
-
-1. Run the program.
+1. Run the following command in the terminal:
 
    ```dotnetcli
    dotnet run --project ShowCase/ShowCase.csproj

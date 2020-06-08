@@ -1,6 +1,6 @@
 ---
 title: "Implementing the Event-based Asynchronous Pattern"
-description: In this article, learn to implement the Event-based Asynchronous Pattern (EAP) in .NET. EAP is a standard way to package a class having asynchronous features.
+description: Learn how to implement the Event-based Asynchronous Pattern (EAP) in .NET. EAP is a standard way to package a class that has asynchronous features.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

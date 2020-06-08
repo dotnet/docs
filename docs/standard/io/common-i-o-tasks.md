@@ -1,6 +1,6 @@
 ---
 title: "Common I/O Tasks"
-description: In this article, review common I/O tasks. Learn how to do common file tasks & common directory tasks using classes & methods in the System.IO namespace in .NET.
+description: Learn how to do common file tasks & common directory tasks using classes & methods in the System.IO namespace in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

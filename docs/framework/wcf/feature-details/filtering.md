@@ -79,4 +79,4 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
   
 ## See also
 
-- [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+- [Data Transfer and Serialization](data-transfer-and-serialization.md)

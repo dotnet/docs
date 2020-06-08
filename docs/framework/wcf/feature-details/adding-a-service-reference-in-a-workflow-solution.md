@@ -11,5 +11,5 @@ Adding two or more service references to services that contain the same operatio
 
 ## See also
 
-- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Workflow Services](workflow-services.md)
 - [Calling a WCF Service from a Workflow in a Web Project](https://docs.microsoft.com/archive/blogs/endpoint/how-to-consume-a-wcf-service-from-a-wf4-workflow)

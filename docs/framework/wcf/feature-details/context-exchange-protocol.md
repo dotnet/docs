@@ -63,4 +63,4 @@ This section describes the context exchange protocol introduced in Windows Commu
   
 ## See also
 
-- [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)
+- [Web Services Protocols Interoperability Guide](web-services-protocols-interoperability-guide.md)

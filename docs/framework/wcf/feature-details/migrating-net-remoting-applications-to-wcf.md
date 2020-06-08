@@ -12,4 +12,4 @@ ms.assetid: 24793465-65ae-4308-8c12-dce4fd12a583
   
 ## See also
 
-- [Conceptual Overview](../../../../docs/framework/wcf/conceptual-overview.md)
+- [Conceptual Overview](../conceptual-overview.md)

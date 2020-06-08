@@ -135,7 +135,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  It also contains members for cloning the `BindingElement` and returning our scheme (soap.udp).  
   
 ## Adding Metadata Support for a Transport Binding Element  
- To integrate our transport into the metadata system, we must support both the import and export of policy. This allows us to generate clients of our binding through the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ To integrate our transport into the metadata system, we must support both the import and export of policy. This allows us to generate clients of our binding through the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ### Adding WSDL Support  
  The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata.  
@@ -460,9 +460,9 @@ svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTranspor
   
 #### To set up, build, and run the sample  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 3. Refer to the preceding "The UDP Test Service and Client" section.  
   

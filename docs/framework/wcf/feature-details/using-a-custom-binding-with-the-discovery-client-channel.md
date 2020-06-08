@@ -37,9 +37,9 @@ CustomBinding customBinding = new CustomBinding(new NetTcpBinding());
 customBinding.Elements.Insert(0, discoveryBindingElement);  
 ```  
   
- For more information about using the discovery client channel, see [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md).
+ For more information about using the discovery client channel, see [Using the Discovery Client Channel](using-the-discovery-client-channel.md).
   
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [Using the Discovery Client Channel](using-the-discovery-client-channel.md)

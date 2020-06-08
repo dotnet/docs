@@ -13,7 +13,7 @@ If you are using message-level security over an HTTP transport layer, be aware t
 
 ## Policy Information
 
-Keeping policy secure is important, especially in federation scenarios where sensitive issued-token requirements or token-issuer information is exposed in policy. In these cases, the recommendation is to secure the federated service's policy endpoint to prevent attackers from obtaining information about the service, such as the type of claims to put in the issued token, or redirecting clients to malicious token issuers. For example, an attacker could discover user name/password pairs by reconfiguring the federated trust chain to terminate in an issuer that executed a man-in-the-middle attack. It is also recommended that federated clients who obtain their bindings through policy retrieval verify that they trust the issuers in the obtained federated trust chain. For more information about federation scenarios, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).
+Keeping policy secure is important, especially in federation scenarios where sensitive issued-token requirements or token-issuer information is exposed in policy. In these cases, the recommendation is to secure the federated service's policy endpoint to prevent attackers from obtaining information about the service, such as the type of claims to put in the issued token, or redirecting clients to malicious token issuers. For example, an attacker could discover user name/password pairs by reconfiguring the federated trust chain to terminate in an issuer that executed a man-in-the-middle attack. It is also recommended that federated clients who obtain their bindings through policy retrieval verify that they trust the issuers in the obtained federated trust chain. For more information about federation scenarios, see [Federation](federation.md).
 
 ## Memory Dumps Can Reveal Claim Information
 
@@ -57,13 +57,13 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
 
 The code does not specify a domain name, and therefore NTLM will be used.
 
-If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. For more information about how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).
+If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. For more information about how endpoint identity is specified, see [Service Identity and Authentication](service-identity-and-authentication.md).
 
 ## See also
 
-- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
-- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
-- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
-- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
-- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [Security Considerations](security-considerations-in-wcf.md)
+- [Elevation of Privilege](elevation-of-privilege.md)
+- [Denial of Service](denial-of-service.md)
+- [Tampering](tampering.md)
+- [Unsupported Scenarios](unsupported-scenarios.md)
+- [Replay Attacks](replay-attacks.md)

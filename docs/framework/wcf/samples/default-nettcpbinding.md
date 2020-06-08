@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
 ---
 # Default NetTcpBinding
-This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the service is self-hosted. Both the client and service are console applications.  
+This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service. In this sample, the service is self-hosted. Both the client and service are console applications.  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -94,11 +94,11 @@ Press ENTER to terminate client.
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
     > [!NOTE]
     > Because the server is self-hosted, you must specify an identity in the client's App.config file to run the sample in a cross-machine configuration.  

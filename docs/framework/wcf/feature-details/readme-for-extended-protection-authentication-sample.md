@@ -7,7 +7,7 @@ ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
 
 Extended Protection is a security initiative to protect against man-in-the-middle (MITM) attacks, in which an attacker (the "man-in-the-middle") intercepts a client’s credentials and uses them to access secure resources on the client’s intended server.
 
-For more information, see [Extended Protection for Authentication Overview](../../../../docs/framework/wcf/feature-details/extended-protection-for-authentication-overview.md).
+For more information, see [Extended Protection for Authentication Overview](extended-protection-for-authentication-overview.md).
 
 > [!NOTE]
 > This sample only works when hosted on IIS. It does not work on Visual Studio Development Server because that does not support HTTPS.

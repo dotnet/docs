@@ -25,13 +25,13 @@ Every endpoint has an address associated with it, which is used to locate and id
  The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
   
 ### Defining an Address in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
+ To define an endpoint in a configuration file, use the [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ### Defining an Address in Code  
- An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
+ An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ### Endpoints in WSDL  
- An endpoint address can also be represented in WSDL as a WS-Addressing EPR element inside the corresponding endpoint's `wsdl:port` element. The EPR contains the endpoint's address as well as any address properties. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
+ An endpoint address can also be represented in WSDL as a WS-Addressing EPR element inside the corresponding endpoint's `wsdl:port` element. The EPR contains the endpoint's address as well as any address properties. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ## Multiple IIS Binding Support in .NET Framework 3.5  
  Internet service providers often host many applications on the same server and site to increase the site density and lower total cost of ownership. These applications are typically bound to different base addresses. An Internet Information Services (IIS) Web site can contain multiple applications. The applications in a site can be accessed through one or more IIS bindings.  
@@ -54,7 +54,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 - `http://shipping.myorg.com/Service.svc`
   
- With .NET Framework 3.5, you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
+ With .NET Framework 3.5, you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
   
  The following is an example of configuration code that uses the prefix filters.  
   
@@ -78,7 +78,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ## Multiple IIS Binding Support in .NET Framework 4 and later  
  Starting in .NET 4, you can enable support for multiple bindings in IIS without having to pick a single base address, by setting <xref:System.ServiceModel.ServiceHostingEnvironment>’s <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A> setting to true. This support is limited to HTTP protocol schemes.  
   
- The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+ The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
 ```xml  
 <system.serviceModel>  
@@ -89,7 +89,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  Any baseAddressPrefixFilters settings are ignored, for both HTTP and non-HTTP protocols, when multiple site bindings are enabled using this setting.  
   
- For details and examples, see [Supporting Multiple IIS Site Bindings](../../../../docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md) and <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A>.  
+ For details and examples, see [Supporting Multiple IIS Site Bindings](supporting-multiple-iis-site-bindings.md) and <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A>.  
   
 ## Extending Addressing in WCF Services  
  The default addressing model of WCF services uses the endpoint address URI for the following purposes:  
@@ -133,5 +133,5 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 ## See also
 
-- [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md)
-- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Specifying an Endpoint Address](../specifying-an-endpoint-address.md)
+- [Service Identity and Authentication](service-identity-and-authentication.md)

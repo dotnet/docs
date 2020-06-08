@@ -115,13 +115,14 @@ type C(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
     // ... the body of the class follows
 ```
 
-If there is an explicit return type annotation, it should be at the end of the `)` and before the `=`:
+If there is an explicit return type annotation, it can either be at the end of the `)` and before the `=`, or on a new line. If the return type also has a long name the latter might be preferrable:
 
 ```fsharp
 type C() =
     member _.LongMethodWithLotsOfParameters(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
                                             aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse,
-                                            aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse): ReturnType =
+                                            aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse)
+                                            : AVeryLongReturnType =
         // ... the body of the method follows
 ```
 

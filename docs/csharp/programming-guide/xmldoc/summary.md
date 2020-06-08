@@ -50,8 +50,8 @@ The previous example produces the following XML file.
         <member name="M:TestClass.DoWork(System.Int32)">
             <summary>DoWork is a method in the TestClass class.
             <para>Here's how you could make a second paragraph in a description. <see cref="M:System.Console.WriteLine(System.String)"/> for information about output statements.</para>
-            <seealso cref="M:TestClass.Main"/>
             </summary>
+            <seealso cref="M:TestClass.Main"/>
         </member>
         <member name="M:TestClass.Main">
             text for Main

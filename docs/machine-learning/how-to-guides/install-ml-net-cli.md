@@ -16,9 +16,9 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) or [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
-- (Optional) [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/vs/)
+- (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
 You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET Core CLI).
 

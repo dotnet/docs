@@ -48,7 +48,7 @@ This callback is triggered whenever a dynamic method is JIT-compiled. This inclu
 The `pILHeader` pointer is only valid during the callback.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

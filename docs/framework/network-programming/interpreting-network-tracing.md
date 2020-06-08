@@ -1,5 +1,6 @@
 ---
 title: "Interpreting Network Tracing"
+description: Find out how to use tracing to capture calls your application makes to various System.Net class members in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TraceMode attribute"

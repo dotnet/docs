@@ -1,5 +1,6 @@
 ---
 title: "Creating Internet Requests"
+description: Learn how applications create WebRequest instances through WebRequest.Create, a static method that creates a derived class based on the URI scheme passed to it.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WebRequest class, sending and receiving data"

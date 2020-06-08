@@ -1,5 +1,6 @@
 ---
 title: "<proxy> Element (Network Settings)"
+description: The <proxy> network settings element defines the proxy server options in the .NET Framework. This article includes an example.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/proxy"

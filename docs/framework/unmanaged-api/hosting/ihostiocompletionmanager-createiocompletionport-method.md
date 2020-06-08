@@ -44,7 +44,7 @@ HRESULT CreateIoCompletionPort (
 |E_OUTOFMEMORY|Not enough memory was available to allocate the requested resource.|  
   
 ## Remarks  
- The CLR calls the `CreateIoCompletionPort` method to request that the host create a new I/O completion port. It binds I/O operations to this port through a call to the [IHostIoCompletionManager::Bind](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-bind-method.md) method. The host reports status back to the CLR by calling [ICLRIoCompletionManager::OnComplete](iclriocompletionmanager-oncomplete-method.md).  
+ The CLR calls the `CreateIoCompletionPort` method to request that the host create a new I/O completion port. It binds I/O operations to this port through a call to the [IHostIoCompletionManager::Bind](ihostiocompletionmanager-bind-method.md) method. The host reports status back to the CLR by calling [ICLRIoCompletionManager::OnComplete](iclriocompletionmanager-oncomplete-method.md).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

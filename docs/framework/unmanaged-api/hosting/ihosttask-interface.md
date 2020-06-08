@@ -24,8 +24,8 @@ Provides methods that allow the common language runtime (CLR) to communicate wit
 |------------|-----------------|  
 |[Alert Method](ihosttask-alert-method.md)|Requests that the host wake the task represented by the current `IHostTask` instance, so the task can be aborted.|  
 |[GetPriority Method](ihosttask-getpriority-method.md)|Gets the thread priority level of the task represented by the current `IHostTask` instance.|  
-|[Join Method](../../../../docs/framework/unmanaged-api/hosting/ihosttask-join-method.md)|Blocks the calling task until the task represented by the current `IHostTask` instance completes, the specified time interval elapses, or [IHostTask::Alert](ihosttask-alert-method.md) is called.|  
-|[SetCLRTask Method](../../../../docs/framework/unmanaged-api/hosting/ihosttask-setclrtask-method.md)|Associates an [ICLRTask Interface](iclrtask-interface.md) instance with the current `IHostTask` instance.|  
+|[Join Method](ihosttask-join-method.md)|Blocks the calling task until the task represented by the current `IHostTask` instance completes, the specified time interval elapses, or [IHostTask::Alert](ihosttask-alert-method.md) is called.|  
+|[SetCLRTask Method](ihosttask-setclrtask-method.md)|Associates an [ICLRTask Interface](iclrtask-interface.md) instance with the current `IHostTask` instance.|  
 |[SetPriority Method](ihosttask-setpriority-method.md)|Requests that the host adjust the thread priority level for the task represented by the current `IHostTask` instance.|  
 |[Start Method](ihosttask-start-method.md)|Requests that the host move the task represented by the current `IHostTask` instance from a suspended state to a live state, in which code can be executed.|  
   

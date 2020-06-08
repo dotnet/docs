@@ -53,7 +53,7 @@ STDAPI _CorValidateImage (
   
 - Returns to the loader when the managed module images are loaded.  
   
- For executable images, the operating system loader then calls the [_CorExeMain](../../../../docs/framework/unmanaged-api/hosting/corexemain-function.md) function, regardless of the entry point specified in the executable. For DLL assembly images, the loader calls the [_CorDllMain](cordllmain-function.md) function.  
+ For executable images, the operating system loader then calls the [_CorExeMain](corexemain-function.md) function, regardless of the entry point specified in the executable. For DLL assembly images, the loader calls the [_CorDllMain](cordllmain-function.md) function.  
   
  `_CorExeMain` or `_CorDllMain` performs the following actions:  
   

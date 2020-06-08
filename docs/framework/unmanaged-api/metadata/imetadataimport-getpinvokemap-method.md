@@ -37,7 +37,7 @@ HRESULT GetPinvokeMap (
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.  
   
  `pdwMappingFlags`  
- [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](../../../../docs/framework/unmanaged-api/metadata/corpinvokemap-enumeration.md) enumeration.  
+ [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](corpinvokemap-enumeration.md) enumeration.  
   
  `szImportName`  
  [out] The name of the unmanaged target DLL.  
@@ -52,7 +52,7 @@ HRESULT GetPinvokeMap (
  [out] A pointer to a ModuleRef token that represents the unmanaged target object library.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -62,5 +62,5 @@ HRESULT GetPinvokeMap (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

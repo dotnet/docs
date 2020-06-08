@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Collections
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Public NotInheritable Class Test

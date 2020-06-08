@@ -4,7 +4,7 @@ Namespace Samples
 
     '<snippet1>
     <ServiceContract()> _
-   Public Class CalculatorService
+    Public Class CalculatorService
         <OperationContract()> _
         Public Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double
             Return n1 + n2

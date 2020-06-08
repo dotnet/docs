@@ -11,77 +11,77 @@ Imports System.Xml
 <DataContract()> _
 Public Class Person
     ' Code not shown.
-End Class 
+End Class
 
 <DataContract()> _
 Public Class PurchaseOrder
     ' Code not shown.
-End Class 
+End Class
 '</snippet1>
 
 Public Class Test
-    
-    Private Sub Run() 
+
+    Private Sub Run()
         '<snippet2>
         Dim dcs As New DataContractSerializer(GetType(Person))
         ' This can now be used to serialize/deserialize Person but not PurchaseOrder.
         '</snippet2>
-    End Sub 
+    End Sub
 
     '<snippet3>
-    <DataContract()>  _
+    <DataContract()> _
     Public Class LibraryPatron
         <DataMember()> _
         Public borrowedItems() As LibraryItem
-    End Class 
-
-    <DataContract()>  _
-    Public Class LibraryItem
-       ' Code not shown.
     End Class
-    
-    <DataContract()>  _
+
+    <DataContract()> _
+    Public Class LibraryItem
+        ' Code not shown.
+    End Class
+
+    <DataContract()> _
     Public Class Book
         Inherits LibraryItem
         ' Code not shown.
-    End Class 
-    
-    <DataContract()>  _
+    End Class
+
+    <DataContract()> _
     Public Class Newspaper
         Inherits LibraryItem
         ' Code not shown.
-    End Class 
+    End Class
     '</snippet3>
 
-    Private Sub Run2() 
+    Private Sub Run2()
         '<snippet4>
         ' Create a serializer for the inherited types using the knownType parameter.
         Dim knownTypes() As Type = {GetType(Book), GetType(Newspaper)}
         Dim dcs As New DataContractSerializer(GetType(LibraryPatron), knownTypes)
         ' All types are known after construction.
         '</snippet4>
-    End Sub 
-End Class 
+    End Sub
+End Class
 
 '<snippet5>
-<DataContract(Name := "PersonContract", [Namespace] := "http://schemas.contoso.com")>  _
+<DataContract(Name:="PersonContract", [Namespace]:="http://schemas.contoso.com")> _
 Public Class Person2
-    <DataMember(Name := "AddressMember")>  _
+    <DataMember(Name:="AddressMember")> _
     Public theAddress As Address
-End Class 
+End Class
 
-<DataContract(Name := "AddressContract", [Namespace] := "http://schemas.contoso.com")>  _
+<DataContract(Name:="AddressContract", [Namespace]:="http://schemas.contoso.com")> _
 Public Class Address
-    <DataMember(Name := "StreetMember")>  _
+    <DataMember(Name:="StreetMember")> _
     Public street As String
-End Class 
+End Class
 '</snippet5>
 
 Public Class Test2
-    
-    Private Sub Serialize(ByVal path As String) 
+
+    Private Sub Serialize(ByVal path As String)
         Dim someStream As New FileStream(path, FileMode.Open)
-        
+
         '<snippet8>
         Dim p As New Person()
         Dim dcs As New DataContractSerializer(GetType(Person))
@@ -102,25 +102,25 @@ Public Class Test2
         dcs.WriteObjectContent(xdw, p)
         xdw.WriteEndElement()
         '</snippet10>
-    End Sub 
-    
-    Private Sub Deserialize(ByVal path As String) 
+    End Sub
+
+    Private Sub Deserialize(ByVal path As String)
         '<snippet11>
         Dim dcs As New DataContractSerializer(GetType(Person))
         Dim fs As New FileStream(path, FileMode.Open)
         Dim reader As XmlDictionaryReader = _
            XmlDictionaryReader.CreateTextReader(fs, New XmlDictionaryReaderQuotas())
-        
+
         Dim p As Person = CType(dcs.ReadObject(reader), Person)
         '</snippet11> 
-    End Sub 
-End Class 
+    End Sub
+End Class
 
 Namespace ServiceModelSamples2
-    
+
     Public Class Test
-        
-        Private Sub Run() 
+
+        Private Sub Run()
             '<snippet7>
             ' Construct a purchase order:
             Dim adr As New Address()
@@ -128,10 +128,10 @@ Namespace ServiceModelSamples2
             Dim po As New PurchaseOrder()
             po.billTo = adr
             po.shipTo = adr
-           '</snippet7>
-        End Sub 
-        
-        Private Sub CheckNodeType(ByVal path As String) 
+            '</snippet7>
+        End Sub
+
+        Private Sub CheckNodeType(ByVal path As String)
 
             '<snippet12>
             Dim ser As New DataContractSerializer(GetType(Person), "Customer", "http://www.contoso.com")
@@ -150,34 +150,34 @@ Namespace ServiceModelSamples2
                         Console.WriteLine(reader.Name)
                 End Select
             End While
-           '</snippet12>
-        End Sub 
-    End Class 
-    
-    
+            '</snippet12>
+        End Sub
+    End Class
+
+
     '<snippet6>
-    <DataContract()>  _
+    <DataContract()> _
     Public Class PurchaseOrder
 
-        <DataMember()>  _
+        <DataMember()> _
         Public billTo As Address
 
-        <DataMember()>  _
+        <DataMember()> _
         Public shipTo As Address
 
-    End Class 
-    
-    <DataContract()>  _
+    End Class
+
+    <DataContract()> _
     Public Class Address
 
-        <DataMember()>  _
+        <DataMember()> _
         Public street As String
 
-    End Class 
+    End Class
     '</snippet6>
-    
+
     Public Class Person
         Public Name As String
         Public Address As String
-    End Class 
-End Namespace 
+    End Class
+End Namespace

@@ -11,7 +11,7 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.Text
 '</snippet0>
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 Namespace Federation_Conceptual
     Friend Class Program
         Shared Sub Main()

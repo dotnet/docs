@@ -23,10 +23,10 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
     The preceding example assumes that the properties and fields of the `DataColumn` are not nullable value types. To handle properties and fields with nullable value types, use the following code:
 
     ```csharp
-      //nullable aware code for properties
-     DataColumn dc = table.Columns.Contains(p.Name) ? table.Columns[p.Name] : table.Columns.Add(p.Name, Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType);
-     
-     //nullable aware code for fields
+    //nullable aware code for properties
+    DataColumn dc = table.Columns.Contains(p.Name) ? table.Columns[p.Name] : table.Columns.Add(p.Name, Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType);
+
+    //nullable aware code for fields
     DataColumn dc = table.Columns.Contains(f.Name) ? table.Columns[f.Name] : table.Columns.Add(f.Name, Nullable.GetUnderlyingType(f.FieldType) ?? f.FieldType);
     ```
 

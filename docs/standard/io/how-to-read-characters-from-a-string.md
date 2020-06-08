@@ -1,5 +1,6 @@
 ---
 title: "How to: Read characters from a string"
+description: Learn how to read characters from a string in .NET. See examples of character reading synchronously and asynchronously.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 

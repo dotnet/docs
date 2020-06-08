@@ -6,7 +6,7 @@ ms.assetid: bf8c215c-0228-4f4f-85c2-e33794ec09a7
 
 # TCP Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md).
+This sample demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol. This sample is based on the [Getting Started](getting-started-sample.md).
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -138,7 +138,7 @@ Press <ENTER> to terminate client.
 
 1. Ensure that IIS 7.0 is installed. IIS 7.0 is required for WAS activation.
 
-2. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+2. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
     In addition, you must install the WCF non-HTTP activation components:
 
@@ -173,9 +173,9 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         > This command is a single line of text. This command enables the /servicemodelsamples application to be accessed using both `http://localhost/servicemodelsamples` and `net.tcp://localhost/servicemodelsamples`.
 
-4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-5. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+5. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
     Remove the net.tcp site binding you added for this sample.
 

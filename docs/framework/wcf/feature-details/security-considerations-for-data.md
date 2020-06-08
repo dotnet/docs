@@ -30,7 +30,7 @@ The ultimate example of user-provided code is the code inside your service imple
 
 You should ensure that no malicious code is plugged in to the various extensibility points. This is especially relevant when running under partial trust, dealing with types from partially-trusted assemblies, or creating components usable by partially-trusted code. For more information, see "Partial Trust Threats" in a later section.
 
-Note that when running in partial trust, the data contract serialization infrastructure supports only a limited subset of the data contract programming model - for example, private data members or types using the <xref:System.SerializableAttribute> attribute are not supported. For more information, see [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md).
+Note that when running in partial trust, the data contract serialization infrastructure supports only a limited subset of the data contract programming model - for example, private data members or types using the <xref:System.SerializableAttribute> attribute are not supported. For more information, see [Partial Trust](partial-trust.md).
 
 ## Avoiding Unintentional Information Disclosure
 
@@ -56,7 +56,7 @@ The quota exceeded scenario is recoverable; if encountered in a running service,
 
 Quotas in WCF do not involve any pre-allocation. For example, if the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> quota (found on various classes) is set to 128 KB, it does not mean that 128 KB is automatically allocated for each message. The actual amount allocated depends on the actual incoming message size.
 
-Many quotas are available at the transport layer. These are quotas enforced by the specific transport channel in use (HTTP, TCP, and so on). While this topic discusses some of these quotas, these quotas are described in detail in [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).
+Many quotas are available at the transport layer. These are quotas enforced by the specific transport channel in use (HTTP, TCP, and so on). While this topic discusses some of these quotas, these quotas are described in detail in [Transport Quotas](transport-quotas.md).
 
 ### Hashtable Vulnerability
 
@@ -116,12 +116,12 @@ The preceding precautions apply when the non-streamed operation uses the <xref:S
 
 A class of streaming denial-of-service attacks does not involve memory consumption. Instead, the attack involves a slow sender or receiver of data. While waiting for the data to be sent or received, resources such as threads and available connections are exhausted. This situation could arise either as a result of a malicious attack or from a legitimate sender/receiver on a slow network connection.
 
-To mitigate these attacks, set the transport time-outs correctly. For more information, see [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md). Secondly, never use synchronous `Read` or `Write` operations when working with streams in WCF.
+To mitigate these attacks, set the transport time-outs correctly. For more information, see [Transport Quotas](transport-quotas.md). Secondly, never use synchronous `Read` or `Write` operations when working with streams in WCF.
 
 ## Using XML Safely
 
 > [!NOTE]
-> Although this section is about XML, the information also applies to JavaScript Object Notation (JSON) documents. The quotas work similarly, using [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).
+> Although this section is about XML, the information also applies to JavaScript Object Notation (JSON) documents. The quotas work similarly, using [Mapping Between JSON and XML](mapping-between-json-and-xml.md).
 
 ### Secure XML Readers
 
@@ -181,7 +181,7 @@ A significant class of binary-specific attacks arises from dictionary expansion.
 
 The <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A>, `MaxStringContentLength`, and `MaxArrayLength` properties only limit memory consumption. They are normally not required to mitigate any threats in the non-streamed usage because memory usage is already limited by `MaxReceivedMessageSize`. However, `MaxReceivedMessageSize` counts pre-expansion bytes. When binary encoding is in use, memory consumption could potentially go beyond `MaxReceivedMessageSize`, limited only by a factor of <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize%2A>. For this reason, it is important to always set all of the reader quotas (especially <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>) when using the binary encoding.
 
-When using binary encoding together with the <xref:System.Runtime.Serialization.DataContractSerializer>, the `IExtensibleDataObject` interface can be misused to mount a dictionary expansion attack. This interface essentially provides unlimited storage for arbitrary data that is not a part of the contract. If quotas cannot be set low enough such that `MaxSessionSize` multiplied by `MaxReceivedMessageSize` does not pose a problem, disable the `IExtensibleDataObject` feature when using the binary encoding. Set the `IgnoreExtensionDataObject` property to `true` on the `ServiceBehaviorAttribute` attribute. Alternatively, do not implement the `IExtensibleDataObject` interface. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).
+When using binary encoding together with the <xref:System.Runtime.Serialization.DataContractSerializer>, the `IExtensibleDataObject` interface can be misused to mount a dictionary expansion attack. This interface essentially provides unlimited storage for arbitrary data that is not a part of the contract. If quotas cannot be set low enough such that `MaxSessionSize` multiplied by `MaxReceivedMessageSize` does not pose a problem, disable the `IExtensibleDataObject` feature when using the binary encoding. Set the `IgnoreExtensionDataObject` property to `true` on the `ServiceBehaviorAttribute` attribute. Alternatively, do not implement the `IExtensibleDataObject` interface. For more information, see [Forward-Compatible Data Contracts](forward-compatible-data-contracts.md).
 
 ### Quotas Summary
 
@@ -268,7 +268,7 @@ This situation can be avoided by being aware of the following points:
 
 - When the <xref:System.Runtime.Serialization.DataContractSerializer> deserializes most classes, constructors do not run. Therefore, do not rely on any state management done in the constructor.
 
-- Use callbacks to ensure that the object is in a valid state. The callback marked with the <xref:System.Runtime.Serialization.OnDeserializedAttribute> attribute is especially useful because it runs after deserialization is complete and has a chance to examine and correct the overall state. For more information, see [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).
+- Use callbacks to ensure that the object is in a valid state. The callback marked with the <xref:System.Runtime.Serialization.OnDeserializedAttribute> attribute is especially useful because it runs after deserialization is complete and has a chance to examine and correct the overall state. For more information, see [Version-Tolerant Serialization Callbacks](version-tolerant-serialization-callbacks.md).
 
 - Do not design data contract types to rely on any particular order in which property setters must be called.
 
@@ -276,11 +276,11 @@ This situation can be avoided by being aware of the following points:
 
 - Do not rely on the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to guarantee presence of data as far as state safety is concerned. Data could always be `null`, `zero`, or `invalid`.
 
-- Never trust an object graph deserialized from an untrusted data source without validating it first. Each individual object may be in a consistent state, but the object graph as a whole may not be. Furthermore, even if the object graph preservation mode is disabled, the deserialized graph may have multiple references to the same object or have circular references. For more information, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).
+- Never trust an object graph deserialized from an untrusted data source without validating it first. Each individual object may be in a consistent state, but the object graph as a whole may not be. Furthermore, even if the object graph preservation mode is disabled, the deserialized graph may have multiple references to the same object or have circular references. For more information, see [Serialization and Deserialization](serialization-and-deserialization.md).
 
 ### Using the NetDataContractSerializer Securely
 
-The <xref:System.Runtime.Serialization.NetDataContractSerializer> is a serialization engine that uses tight coupling to types. This is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. That is, it determines which type to instantiate by reading the .NET Framework assembly and type name from the incoming data. Although it is a part of WCF, there is no supplied way of plugging in this serialization engine; custom code must be written. The `NetDataContractSerializer` is provided primarily to ease migration from .NET Framework remoting to WCF. For more information, see the relevant section in [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).
+The <xref:System.Runtime.Serialization.NetDataContractSerializer> is a serialization engine that uses tight coupling to types. This is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. That is, it determines which type to instantiate by reading the .NET Framework assembly and type name from the incoming data. Although it is a part of WCF, there is no supplied way of plugging in this serialization engine; custom code must be written. The `NetDataContractSerializer` is provided primarily to ease migration from .NET Framework remoting to WCF. For more information, see the relevant section in [Serialization and Deserialization](serialization-and-deserialization.md).
 
 Because the message itself may indicate any type can be loaded, the <xref:System.Runtime.Serialization.NetDataContractSerializer> mechanism is inherently insecure and should be used only with trusted data. It is possible to make it secure by writing a secure, type-limiting type binder that allows only safe types to load (using the <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder%2A> property).
 
@@ -308,7 +308,7 @@ Note the following concerns regarding threats related to code running with parti
 
 - In cases where partially-trusted code has control over the serialization process, either through extensibility points (surrogates), types being serialized, or through other means, the partially-trusted code may cause the serializer to output a large amount of data into the serialized stream, which may cause Denial of Service (DoS) to the receiver of this stream. If you are serializing data intended for a target that is sensitive to DoS threats, do not serialize partially-trusted types or otherwise let partially-trusted code control serialization.
 
-- If you allow partially-trusted code access to your <xref:System.Runtime.Serialization.DataContractSerializer> instance or otherwise control the [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md), it may exercise a great deal of control over the serialization/deserialization process. For example, it may inject arbitrary types, lead to information disclosure, tamper with the resulting object graph or serialized data, or overflow the resultant serialized stream. An equivalent <xref:System.Runtime.Serialization.NetDataContractSerializer> threat is described in the "Using the NetDataContractSerializer Securely" section.
+- If you allow partially-trusted code access to your <xref:System.Runtime.Serialization.DataContractSerializer> instance or otherwise control the [Data Contract Surrogates](../extending/data-contract-surrogates.md), it may exercise a great deal of control over the serialization/deserialization process. For example, it may inject arbitrary types, lead to information disclosure, tamper with the resulting object graph or serialized data, or overflow the resultant serialized stream. An equivalent <xref:System.Runtime.Serialization.NetDataContractSerializer> threat is described in the "Using the NetDataContractSerializer Securely" section.
 
 - If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a type (or the type marked as <xref:System.SerializableAttribute> but is not <xref:System.Runtime.Serialization.ISerializable>), the deserializer can create an instance of such a type even if all constructors are non-public or protected by demands.
 
@@ -352,7 +352,7 @@ A few other concerns regarding object state management are worth mentioning:
 
 ## Schema Import
 
-Normally, the process of importing schema to generate types happens only at design time, for example, when using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) on a Web service to generate a client class. However, in more advanced scenarios, you may process schema at runtime. Be aware that doing so can expose you to denial-of-service risks. Some schema may take a long time to be imported. Never use the <xref:System.Xml.Serialization.XmlSerializer> schema import component in such scenarios if schemas are possibly coming from an untrusted source.
+Normally, the process of importing schema to generate types happens only at design time, for example, when using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) on a Web service to generate a client class. However, in more advanced scenarios, you may process schema at runtime. Be aware that doing so can expose you to denial-of-service risks. Some schema may take a long time to be imported. Never use the <xref:System.Xml.Serialization.XmlSerializer> schema import component in such scenarios if schemas are possibly coming from an untrusted source.
 
 ## Threats Specific to ASP.NET AJAX Integration
 
@@ -385,4 +385,4 @@ WCF is a flexible and customizable system. Most of the contents of this topic fo
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Xml.XmlDictionaryReader>
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [Data Contract Known Types](data-contract-known-types.md)

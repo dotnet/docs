@@ -134,11 +134,11 @@ XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");
 
 This filter is useful if you know that the messages you are receiving contain a specific value. For example, if you are hosting two versions of the same service and you know that messages addressed to the newer version of the service contain a unique value in a custom header, you can create a filter that uses XPath to navigate to this header and compares the value present in the header to another given in the filter configuration to determine if the filter matches.
 
-Because XPath queries often contain unique namespaces, which are often lengthy or complex string values, the XPath filter allows you to use the namespace table to define unique prefixes for your namespaces. For more information about the namespace table, see [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).
+Because XPath queries often contain unique namespaces, which are often lengthy or complex string values, the XPath filter allows you to use the namespace table to define unique prefixes for your namespaces. For more information about the namespace table, see [Message Filters](message-filters.md).
 
 For more information about designing XPath queries, see [XPath Syntax](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100)).
 
 ## See also
 
-- [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)
-- [How To: Use Filters](../../../../docs/framework/wcf/feature-details/how-to-use-filters.md)
+- [Message Filters](message-filters.md)
+- [How To: Use Filters](how-to-use-filters.md)

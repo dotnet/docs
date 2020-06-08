@@ -12,7 +12,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 
  From the Control Panel, click **Programs** and then click **Turn Windows features on or off** which is listed under **Programs and Features**, the WAS component is shown in the list as in the following illustration.
 
- ![Turn Features On or Off Dialog](../../../../docs/framework/wcf/feature-details/media/wcfc-turnfeaturesonoroffs.gif "wcfc_TurnFeaturesOnOrOffs")
+ ![Turn Features On or Off Dialog](media/wcfc-turnfeaturesonoroffs.gif "wcfc_TurnFeaturesOnOrOffs")
 
  This feature has the following sub-components:
 
@@ -29,21 +29,21 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 ## IIS 7.0: Default Installation
  By checking the **Internet Information Services** feature, some of the sub-nodes are automatically checked as shown in the following illustration.
 
- ![Default settings for IIS 7.0 features](../../../../docs/framework/wcf/feature-details/media/wcfc-turningfeaturesonoroff2.gif "wcfc_TurningFeaturesOnOrOff2")
+ ![Default settings for IIS 7.0 features](media/wcfc-turningfeaturesonoroff2.gif "wcfc_TurningFeaturesOnOrOff2")
 
  This is the default installation of IIS 7.0. With this installation, you can use IIS 7.0 to service static content (such as HTML pages and other content). However, you cannot run ASP.NET or CGI applications or host WCF services.
 
 ## IIS 7.0: Installation with ASP.NET Support
  You must install ASP.NET to make ASP.NET work on IIS 7.0. After checking **ASP.NET**, your screen should look like the following illustration.
 
- ![Asp.NET required settings](../../../../docs/framework/wcf/feature-details/media/wcfc-trunfeaturesonoroff3s.gif "wcfc_TrunFeaturesOnOrOFf3s")
+ ![Asp.NET required settings](media/wcfc-trunfeaturesonoroff3s.gif "wcfc_TrunFeaturesOnOrOFf3s")
 
  This is the minimal environment for both WCF and ASP.NET applications to work in IIS 7.0.
 
 ## IIS 7.0: Installation with IIS 6.0 Compatibility Components
  When installing IIS 7.0 on a system with Visual Studio 2005 or some other automation scripts or tools (such as Adsutil.vbs) that configure virtual applications that use IIS 6.0 Metabase API, ensure that you check the IIS 6.0 **Scripting Tools**. This automatically checks the other sub-nodes of IIS 6.0 **Management Compatibility**. The following illustration shows the screen after this is done:
 
- ![IIS 6.0 Management Compatibility Settings](../../../../docs/framework/wcf/feature-details/media/scfc-turnfeaturesonoroff5s.gif "scfc_TurnFeaturesOnOrOff5s")
+ ![IIS 6.0 Management Compatibility Settings](media/scfc-turnfeaturesonoroff5s.gif "scfc_TurnFeaturesOnOrOff5s")
 
  With this installation, you have everything required to use IIS 7.0, ASP.NET and WCF features and samples available on the Web.
 
@@ -62,7 +62,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 
 ## See also
 
-- [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
-- [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
-- [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)
+- [WAS Activation Architecture](was-activation-architecture.md)
+- [Configuring WAS for Use with WCF](configuring-the-wpa--service-for-use-with-wcf.md)
+- [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

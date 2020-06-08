@@ -120,4 +120,4 @@ throw new SoapException(
   
 ## See also
 
-- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](anticipating-adopting-the-wcf-easing-future-integration.md)

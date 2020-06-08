@@ -42,7 +42,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  You can set the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to an instance of the <xref:System.Runtime.Serialization.ImportOptions> class to control various aspects of the import process. A number of options directly influence the types that are generated.  
   
 #### Controlling the Access Level (GenerateInternal or the /internal switch)  
- This corresponds to the **/internal** switch on the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ This corresponds to the **/internal** switch on the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
  Normally, public types are generated from schema, with private fields and matching public data member properties. To generate internal types instead, set the <xref:System.Runtime.Serialization.ImportOptions.GenerateInternal%2A> property to `true`.  
   
@@ -54,7 +54,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
 #### Controlling Namespaces (Namespaces or the /namespace switch)  
  This corresponds to the **/namespace** switch on the `Svcutil.exe` tool.  
   
- Normally, types generated from schema are generated into .NET Framework namespaces, with each XSD namespace corresponding to a particular .NET Framework namespace according to a mapping described in [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). You can customize this mapping by the <xref:System.Runtime.Serialization.ImportOptions.Namespaces%2A> property to a <xref:System.Collections.Generic.Dictionary%602>. If a given XSD namespace is found in the dictionary, the matching .NET Framework namespace is also taken from your dictionary.  
+ Normally, types generated from schema are generated into .NET Framework namespaces, with each XSD namespace corresponding to a particular .NET Framework namespace according to a mapping described in [Data Contract Schema Reference](data-contract-schema-reference.md). You can customize this mapping by the <xref:System.Runtime.Serialization.ImportOptions.Namespaces%2A> property to a <xref:System.Collections.Generic.Dictionary%602>. If a given XSD namespace is found in the dictionary, the matching .NET Framework namespace is also taken from your dictionary.  
   
  For example, consider the following schema.  
   
@@ -95,9 +95,9 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
   
 > [!NOTE]
-> Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+> Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](data-contract-schema-reference.md).  
   
- Normally, a list is imported as a collection data contract that derives from a Generic List or as a .NET Framework array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
+ Normally, a list is imported as a collection data contract that derives from a Generic List or as a .NET Framework array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   
  [!code-xml[c_SchemaImportExport#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#13)]  
   
@@ -142,11 +142,11 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
 ##### Design Considerations  
   
-- It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. For more information, see [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+- It may be difficult to work with the weakly typed XML representation directly. Consider using an alternative serialization engine, such as the <xref:System.Xml.Serialization.XmlSerializer>, to work with schema not compatible with data contracts in a strongly typed way. For more information, see [Using the XmlSerializer Class](using-the-xmlserializer-class.md).  
   
 - Some schema constructs cannot be imported by the <xref:System.Runtime.Serialization.XsdDataContractImporter> even when the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property is set to `true`. Again, consider using the <xref:System.Xml.Serialization.XmlSerializer> for such cases.  
   
-- The exact schema constructs that are supported both when <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> is `true` or `false` are described in [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+- The exact schema constructs that are supported both when <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> is `true` or `false` are described in [Data Contract Schema Reference](data-contract-schema-reference.md).  
   
 - Schema for generated <xref:System.Xml.Serialization.IXmlSerializable> types do not retain fidelity when imported and exported. That is, exporting the schema from the generated types and importing as classes does not return the original schema.  
   
@@ -171,7 +171,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
 - <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> property. Specify the <xref:System.CodeDom.Compiler.CodeDomProvider> to use to generate the code for the generated classes. The import mechanism attempts to avoid features that the <xref:System.CodeDom.Compiler.CodeDomProvider> does not support. If the <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> is not set, the full set of .NET Framework features is used with no restrictions.  
   
-- <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+- <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. For more information, see [Data Contract Surrogates](../extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## See also
 
@@ -179,8 +179,8 @@ To generate classes from schemas that are usable with Windows Communication Foun
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
 - <xref:System.Runtime.Serialization.XsdDataContractExporter>
 - <xref:System.Runtime.Serialization.ImportOptions>
-- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
-- [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)
-- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
-- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)
-- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- [Data Contract Schema Reference](data-contract-schema-reference.md)
+- [Data Contract Surrogates](../extending/data-contract-surrogates.md)
+- [Schema Import and Export](schema-import-and-export.md)
+- [Exporting Schemas from Classes](exporting-schemas-from-classes.md)
+- [Data Contract Schema Reference](data-contract-schema-reference.md)

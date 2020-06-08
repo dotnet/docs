@@ -52,7 +52,7 @@ Through the grouping of message filters into filter tables, routing logic can be
 
 - Dynamic configuration
 
-For more information about message filters and filter tables, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).
+For more information about message filters and filter tables, see [Routing Introduction](routing-introduction.md) and [Message Filters](message-filters.md).
 
 ### Service Aggregation
 
@@ -60,7 +60,7 @@ By using content-based routing, you can expose one endpoint that receives messag
 
 ### Service Versioning
 
-When migrating to a new version of your solution, you may have to maintain the old version in parallel to serve existing customers. Often this requires that clients connecting to the newer version must use a different address when communicating with the solution. The Routing Service allows you to expose one service endpoint that serves both versions of your solution by routing messages to the appropriate solution based on version-specific information contained in the message. For an example of such an implementation see [How To: Service Versioning](../../../../docs/framework/wcf/feature-details/how-to-service-versioning.md).
+When migrating to a new version of your solution, you may have to maintain the old version in parallel to serve existing customers. Often this requires that clients connecting to the newer version must use a different address when communicating with the solution. The Routing Service allows you to expose one service endpoint that serves both versions of your solution by routing messages to the appropriate solution based on version-specific information contained in the message. For an example of such an implementation see [How To: Service Versioning](how-to-service-versioning.md).
 
 ### Priority Routing
 
@@ -70,7 +70,7 @@ When providing a service for multiple clients, you may have a service level agre
 
 To support mission-critical systems, where messages must be processed without any service interruptions, it is vital that you be able to modify the configuration of components within the system at run time. To support this need, the Routing Service provides an <xref:System.ServiceModel.IExtension%601> implementation, the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows dynamic updating of the Routing Service configuration at run time.
 
-For more information about dynamic configuration of the Routing Service, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).
+For more information about dynamic configuration of the Routing Service, see [Routing Introduction](routing-introduction.md).
 
 ## Protocol Bridging
 
@@ -82,7 +82,7 @@ To support the routing of messages between endpoints with different transports, 
 
 A common routing requirement is the ability to route messages between endpoints with differing SOAP requirements. To support this requirement, the Routing Service provides a <xref:System.ServiceModel.Routing.SoapProcessingBehavior> that automatically creates a new **MessageVersion** that meets the requirements of the destination endpoint before the message is routed to it. This behavior also creates a new **MessageVersion** for any response message before returning it to the requesting client application, to ensure that the **MessageVersion** of the response matches that of the original request.
 
-For more information about SOAP processing, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).
+For more information about SOAP processing, see [Routing Introduction](routing-introduction.md).
 
 ## Error Handling
 
@@ -90,13 +90,13 @@ In a system composed of distributed services that rely on network communications
 
 If the Routing Service encounters a <xref:System.ServiceModel.CommunicationException> while attempting to send a message, error handling will take place.  These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>.  The error-handling code will also catch and attempt to retry sending when a **TimeoutException** occurs, which is another common exception that is not derived from **CommunicationException**.
 
-For more information about error handling, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md).
+For more information about error handling, see [Routing Introduction](routing-introduction.md).
 
 ## Backup Endpoints
 
 In addition to the destination client endpoints associated with each filter definition in the filter table, you can also create a list of backup endpoints that the message will be routed to in the event of a transmission failure. If an error occurs and a backup list is defined for the filter entry, the Routing Service will attempt to send the message to the first endpoint defined in the list. If this transmission attempt fails, the service will try the next endpoint, and continue this process until the transmission attempt succeeds, returns a non-transmission related error, or all endpoints in the backup list have returned a transmission error.
 
-For more information about backup endpoints, see [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md) and [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).
+For more information about backup endpoints, see [Routing Introduction](routing-introduction.md) and [Message Filters](message-filters.md).
 
 ## Streaming
 
@@ -112,6 +112,6 @@ The routing service can successfully stream messages if you set the binding to s
 
 ## See also
 
-- [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)
-- [Routing Contracts](../../../../docs/framework/wcf/feature-details/routing-contracts.md)
-- [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)
+- [Routing Introduction](routing-introduction.md)
+- [Routing Contracts](routing-contracts.md)
+- [Message Filters](message-filters.md)

@@ -1,5 +1,6 @@
 ---
 title: "XML Schema (XSD) Validation with XmlSchemaSet"
+description: Learn how to validate XML documents against an XML schema definition language (XSD) schema, using an XmlSchemaSet class in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

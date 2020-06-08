@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
 ---
 # Transport: Custom Transactions over UDP Sample
-This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample in the Windows Communication Foundation (WCF)[Transport Extensibility](../../../../docs/framework/wcf/samples/transport-extensibility.md). It extends the UDP Transport sample to support custom transaction flow and demonstrates the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
+This sample is based on the [Transport: UDP](transport-udp.md) sample in the Windows Communication Foundation (WCF)[Transport Extensibility](transport-extensibility.md). It extends the UDP Transport sample to support custom transaction flow and demonstrates the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
   
 ## Code Changes in the UDP Transport Sample  
  To demonstrate transaction flow, the sample changes the service contract for `ICalculatorContract` to require a transaction scope for `CalculatorService.Add()`. The sample also adds an extra `System.Guid` parameter to the contract of the `Add` operation. This parameter is used to pass the identifier of the client transaction to the service.  
@@ -32,7 +32,7 @@ class CalculatorService : IDatagramContract, ICalculatorContract
 }  
 ```  
   
- The [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample uses UDP packets to pass messages between a client and a service. The [Transport: Custom Transport Sample](../../../../docs/framework/wcf/samples/transport-custom-transactions-over-udp-sample.md) uses the same mechanism to transport messages, but when a transaction is flowed, it is inserted into the UDP packet along with the encoded message.  
+ The [Transport: UDP](transport-udp.md) sample uses UDP packets to pass messages between a client and a service. The [Transport: Custom Transport Sample](transport-custom-transactions-over-udp-sample.md) uses the same mechanism to transport messages, but when a transaction is flowed, it is inserted into the UDP packet along with the encoded message.  
   
 ```csharp  
 byte[] txmsgBuffer = TransactionMessageBuffer.WriteTransactionMessageBuffer(txPropToken, messageBuffer);  
@@ -170,9 +170,9 @@ if (transaction != null)
   
 #### To set up, build, and run the sample  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. The current sample should be run similarly to the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running Windows Vista, you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in File Explorer and click **Run as administrator**.  
+2. The current sample should be run similarly to the [Transport: UDP](transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running Windows Vista, you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in File Explorer and click **Run as administrator**.  
   
 3. This produces the following output.  
   
@@ -258,4 +258,4 @@ if (transaction != null)
   
 ## See also
 
-- [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)
+- [Transport: UDP](transport-udp.md)

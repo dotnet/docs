@@ -24,7 +24,7 @@ The Syndication API is designed to provide a format-neutral programming model th
   
  [!code-csharp[S_UE_SyndicationBoth#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_syndicationboth/cs/service.cs#0)]  
   
- Syndication support is built on top of the WCF REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. For more information about the WCF REST Programming Model, see [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md).  
+ Syndication support is built on top of the WCF REST Programming Model that defines the <xref:System.ServiceModel.WebHttpBinding> binding, which is used in conjunction with <xref:System.ServiceModel.Description.WebHttpBehavior> to make feeds available as services. For more information about the WCF REST Programming Model, see [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md).  
   
 > [!NOTE]
 > The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing the WCF implementation ignores the fractional seconds.  
@@ -69,10 +69,10 @@ The Syndication API is designed to provide a format-neutral programming model th
   
 ## Extensibility  
   
-- A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The WCF syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](../../../../docs/framework/wcf/feature-details/syndication-extensibility.md).  
+- A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0 allow you to add attributes and elements to syndication feeds that are not defined in the specifications. The WCF syndication programming model provides two ways of working with custom attributes and extensions: deriving a new class and loosely-typed access. For more information, see [Syndication Extensibility](syndication-extensibility.md).  
   
 ## See also
 
-- [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
-- [How the WCF Syndication Object Model Maps to Atom and RSS](../../../../docs/framework/wcf/feature-details/how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Syndication Overview](wcf-syndication-overview.md)
+- [How the WCF Syndication Object Model Maps to Atom and RSS](how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)

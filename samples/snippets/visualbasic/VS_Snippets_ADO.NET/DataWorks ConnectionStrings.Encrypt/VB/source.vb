@@ -5,7 +5,7 @@ Imports System.Configuration
 Class Program
     Shared Sub Main()
     End Sub
-' <Snippet1>
+    ' <Snippet1>
     Shared Sub ToggleConfigEncryption(ByVal exeConfigName As String)
         ' Takes the executable file name without the
         ' .config extension.
@@ -38,6 +38,6 @@ Class Program
             Console.WriteLine(ex.Message)
         End Try
     End Sub
-' </Snippet1>
+    ' </Snippet1>
 End Class
 

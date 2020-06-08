@@ -5,7 +5,7 @@
 ' This overrides the standard namespace mapping for all contracts 
 ' in Contoso.CRM. 
 <Assembly: ContractNamespace("http://schemas.example.com/crm", _
-ClrNamespace:="Contoso.CRM")> 
+ClrNamespace:="Contoso.CRM")>
 Namespace Contoso.CRM
     ' The namespace is overridden to become: 
     ' http://schemas.example.com/crm.
@@ -118,7 +118,7 @@ Namespace DataContractEquivalence
     End Class
 
     <DataContract(Name:="Customer")> _
-        Public Class Person
+    Public Class Person
 
         <DataMember(Name:="fullName")> _
         Private nameOfPerson As String
@@ -131,7 +131,7 @@ Namespace DataContractEquivalence
     '</snippet5>
 
     '<snippet6>
-    <DataContract(Name := "Coordinates")> _
+    <DataContract(Name:="Coordinates")> _
     Public Class Coords1
         <DataMember()> _
         Public X As Integer
@@ -140,7 +140,7 @@ Namespace DataContractEquivalence
         ' Order is alphabetical (X,Y).
     End Class
 
-    <DataContract(Name := "Coordinates")> _
+    <DataContract(Name:="Coordinates")> _
     Public Class Coords2
 
         <DataMember()> _
@@ -151,11 +151,11 @@ Namespace DataContractEquivalence
         ' to the preceding code.
     End Class
 
-    <DataContract(Name := "Coordinates")> _
+    <DataContract(Name:="Coordinates")> _
     Public Class Coords3
-        <DataMember(Order := 2)> _
+        <DataMember(Order:=2)> _
         Public Y As Integer
-        <DataMember(Order := 1)> _
+        <DataMember(Order:=1)> _
         Public X As Integer
         ' Order is according to the Order property (X,Y), 
         ' equivalent to the preceding code.
@@ -163,12 +163,12 @@ Namespace DataContractEquivalence
     '</snippet6>
 
     '<snippet7>
-    <DataContract(Name := "Coordinates")> _
+    <DataContract(Name:="Coordinates")> _
     Public Class Coords4
 
-        <DataMember(Order := 1)> _
+        <DataMember(Order:=1)> _
         Public Y As Integer
-        <DataMember(Order := 2)> _
+        <DataMember(Order:=2)> _
         Public X As Integer
         ' Order is according to the Order property (Y,X), 
         ' different from the preceding code.
@@ -189,7 +189,7 @@ Namespace DataContractEQ2
         <DataMember()> Public department As Integer
         <DataMember()> Public title As String
         <DataMember()> Public salary As Integer
-    End class 
+    End class
 
     ' Order is "name", "department", "salary", "title" 
     ' (base class first, then alphabetical).
@@ -197,13 +197,13 @@ Namespace DataContractEQ2
     <DataContract(Name:="Employee")> _
     Public Class Worker
 
-        <DataMember(Order := 1)> _
+        <DataMember(Order:=1)> _
         Public name As String
-        <DataMember(Order := 2)> _
+        <DataMember(Order:=2)> _
         Public department As Integer
-        <DataMember(Order := 2)> _
+        <DataMember(Order:=2)> _
         Public title As String
-        <DataMember(Order := 2)> _
+        <DataMember(Order:=2)> _
         Public salary As Integer
     End Class
     ' Order is "name", "department", "salary", "title" 

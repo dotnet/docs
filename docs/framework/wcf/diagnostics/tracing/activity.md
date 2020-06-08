@@ -7,7 +7,7 @@ ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
 This topic describes activity traces in the Windows Communication Foundation (WCF) tracing model. Activities are processing units that help the user narrow down the scope of a failure. Errors that occur in the same activity are directly related. For example, an operation fails because message decryption has failed. The traces for both the operation and message decryption failure appear in the same activity, showing direct correlation between the decryption error and the request error.  
   
 ## Configuring Activity Tracing  
- WCF provides pre-defined activities for processing applications (see [Activity List](../../../../../docs/framework/wcf/diagnostics/tracing/activity-list.md)). You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md).  
+ WCF provides pre-defined activities for processing applications (see [Activity List](activity-list.md)). You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](emitting-user-code-traces.md).  
   
  To emit activity traces at run time, use the `ActivityTracing` setting for the `System.ServiceModel` trace source, or other WCF or custom trace sources, as demonstrated by the following configuration code.  
   
@@ -15,10 +15,10 @@ This topic describes activity traces in the Windows Communication Foundation (WC
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing">  
 ```  
   
- To understand more about the configuration element and attributes being used, see the [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md) topic.  
+ To understand more about the configuration element and attributes being used, see the [Configuring Tracing](configuring-tracing.md) topic.  
   
 ## Viewing Activities  
- You can view the activities and their utility in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). When ActivityTracing is enabled, this tool takes the traces and sorts them based on activity. You can also see trace transfers. A trace transfer indicates how different activities are related to each other. You can see that a particular activity caused another to start. For example, a message request started a security handshake to get a Secure Conversation Token.  
+ You can view the activities and their utility in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md). When ActivityTracing is enabled, this tool takes the traces and sorts them based on activity. You can also see trace transfers. A trace transfer indicates how different activities are related to each other. You can see that a particular activity caused another to start. For example, a message request started a security handshake to get a Secure Conversation Token.  
   
 ### Correlating Activities in Service Trace Viewer  
  The Service Trace Viewer tool provides two views of activities:  
@@ -27,7 +27,7 @@ This topic describes activity traces in the Windows Communication Foundation (WC
   
 - **Graph** view, where activities are grouped by processes. In this view, a client and service with the same activity ID have their traces in different activities. To correlate activities with the same activity ID in different processes, the tool shows message flows across the related activities.  
   
- For more information, and to see a graphical view of the Service Trace Viewer tool, see [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) and [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
+ For more information, and to see a graphical view of the Service Trace Viewer tool, see [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md) and [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
   
 ## Defining the Scope of an Activity  
  An activity is defined at design time and denotes a logical unit of work. Emitted traces with the same activity identifier are directly related, they are part of the same activity. Because an activity can cross endpoint boundaries (a request), two scopes for an activity are defined.  
@@ -93,8 +93,8 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
   
 ## See also
 
-- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
-- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
-- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
-- [Emitting User-Code Traces](../../../../../docs/framework/wcf/diagnostics/tracing/emitting-user-code-traces.md)
+- [Configuring Tracing](configuring-tracing.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [End-To-End Tracing Scenarios](end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Emitting User-Code Traces](emitting-user-code-traces.md)

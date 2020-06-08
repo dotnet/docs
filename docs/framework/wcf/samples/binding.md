@@ -9,14 +9,14 @@ This section contains samples that demonstrate using the binding attribute of an
   
 ## In this section
   
- [Basic Binding](../../../../docs/framework/wcf/samples/basic-binding.md)  
+ [Basic Binding](basic-binding.md)  
  Demonstrates basic binding in WCF.  
   
- [Custom Binding](../../../../docs/framework/wcf/samples/custom-binding.md)  
+ [Custom Binding](custom-binding.md)  
  Demonstrates custom binding in WCF.  
   
- [Net Binding](../../../../docs/framework/wcf/samples/net-binding.md)  
+ [Net Binding](net-binding.md)  
  Demonstrates network binding in WCF.  
   
- [WS Binding](../../../../docs/framework/wcf/samples/ws-binding.md)  
+ [WS Binding](ws-binding.md)  
  Demonstrates Windows Service binding in WCF.

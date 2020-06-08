@@ -1,5 +1,6 @@
 ---
 title: "Cryptographic Services"
+description: Read an overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:

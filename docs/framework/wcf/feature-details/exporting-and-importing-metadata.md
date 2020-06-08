@@ -42,19 +42,19 @@ In Windows Communication Foundation (WCF), exporting metadata is the process of 
  The <xref:System.ServiceModel.Description.WsdlExporter> type rethrows any exceptions caught during the export process. These exceptions are not captured as errors in the `Errors` property. Once the <xref:System.ServiceModel.Description.WsdlExporter> throws an exception, it is in a faulted state and cannot be reused. The <xref:System.ServiceModel.Description.WsdlExporter> does add warnings to its `Errors` property when an operation cannot be exported because it uses wildcard actions and when duplicate binding names are encountered.  
   
 ## In This Section  
- [How to: Import Metadata into Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-import-metadata-into-service-endpoints.md)  
+ [How to: Import Metadata into Service Endpoints](how-to-import-metadata-into-service-endpoints.md)  
  Describes how to import downloaded metadata into description objects.  
   
- [How to: Export Metadata from Service Endpoints](../../../../docs/framework/wcf/feature-details/how-to-export-metadata-from-service-endpoints.md)  
+ [How to: Export Metadata from Service Endpoints](how-to-export-metadata-from-service-endpoints.md)  
  Describes how to export description objects into metadata.  
   
- [ServiceDescription and WSDL Reference](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md)  
+ [ServiceDescription and WSDL Reference](servicedescription-and-wsdl-reference.md)  
  Describes the mapping between the description objects and WSDL.  
   
- [How to: Use Svcutil.exe to Export Metadata from Compiled Service Code](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)  
+ [How to: Use Svcutil.exe to Export Metadata from Compiled Service Code](how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)  
  Describes the use of Svcutil.exe to export metadata for services, contracts, and data types in compiled assemblies.  
   
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
+ [Data Contract Schema Reference](data-contract-schema-reference.md)  
  Describes the subset of the XML Schema (XSD) used by <xref:System.Runtime.Serialization.DataContractSerializer> to describe common language run-time (CLR) types for XML serialization.  
   
 ## Reference  
@@ -64,5 +64,5 @@ In Windows Communication Foundation (WCF), exporting metadata is the process of 
   
 ## See also
 
-- [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md)
-- [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)
+- [Exporting Custom Metadata for a WCF Extension](../extending/exporting-custom-metadata-for-a-wcf-extension.md)
+- [Importing Custom Metadata for a WCF Extension](../extending/importing-custom-metadata-for-a-wcf-extension.md)

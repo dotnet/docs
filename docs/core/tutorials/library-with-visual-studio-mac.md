@@ -7,7 +7,7 @@ ms.date: 06/08/2020
 
 In this tutorial, you create a simple class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.1 can be used by an application that targets any .NET implementation that supports version 2.1 of .NET Standard. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.1 can be used by an application that targets any .NET implementation that supports version 2.1 of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -79,7 +79,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
 
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the <kbd>enter</kbd> key without entering a string, the application ends, and the console window closes.
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -87,7 +87,9 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.  In the **References** dialog, select **StringLibrary** and select **OK**.
+1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.
+
+1. In the **References** dialog, select **StringLibrary** and select **OK**.
 
 ## Run the app
 

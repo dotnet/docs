@@ -13,7 +13,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Create a unit test project
 
-Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. MSTest is one of three test frameworks you can choose from. The others are xUnit and nUnit.
+Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is MSTest. [MSTest](https://github.com/Microsoft/testfx-docs) is one of three test frameworks you can choose from. The others are [xUnit](https://xunit.net/) and [nUnit](https://nunit.org/).
 
 1. Start Visual Studio Code.
 
@@ -59,7 +59,7 @@ Unit tests provide automated software testing during your development and publis
 
 ## Add a project reference
 
-For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
+For the test project to work with the `StringLibrary` class, add a reference in the `StringLibraryTest` project to the `StringLibrary` project.
 
 1. Run the following command:
 
@@ -86,7 +86,7 @@ In testing the `StringLibrary.StartsWithUpper` method, you want to provide a num
 
 Since your library method handles strings, you also want to make sure that it successfully handles an [empty string (`String.Empty`)](xref:System.String.Empty) and a and a `null` string. An empty string is one that has no characters and whose <xref:System.String.Length> is 0. A `null` string is one that hasn't been initialized. You can call `StartsWithUpper` directly as a static method and pass a single <xref:System.String> argument. Or you can call `StartsWithUpper` as an extension method on a `string` variable assigned to `null`.
 
-You'll define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> method repeatedly for each element in a string array. Because the test method fails as soon as it finds the first failure, you'll call a method overload that allows you to pass a string that indicates the string value used in the method call.
+You'll define three methods, each of which calls an <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> method for each element in a string array. You'll call a method overload that lets you specify an error message to be displayed in case of test failure. The message identifies the string that caused the failure.
 
 To create the test methods:
 
@@ -119,7 +119,7 @@ To create the test methods:
 
 ## Handle test failures
 
-If you're doing test-driven development (TDD), you write tests first and they fail the first time you run them. Then you add code to the app that makes the test succeed. In this case, you created the test after writing the app code that it validates, so you haven't seen the test fail. To validate that a test fails when you expect it to fail, add an invalid value to the test input.
+If you're doing test-driven development (TDD), you write tests first and they fail the first time you run them. Then you add code to the app that makes the test succeed. For this tutorial, you created the test after writing the app code that it validates, so you haven't seen the test fail. To validate that a test fails when you expect it to fail, add an invalid value to the test input.
 
 1. Modify the `words` array in the `TestDoesNotStartWithUpper` method to include the string "Error".
 
@@ -134,7 +134,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
    dotnet test StringLibraryTest/StringLibraryTest.csproj
    ```
 
-   The terminal output shows that one test fails, and it provides an error message for the failed test.
+   The terminal output shows that one test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
    ```
    Starting test execution, please wait...
@@ -154,11 +154,11 @@ If you're doing test-driven development (TDD), you write tests first and they fa
    Total time: 1.7825 Seconds
    ```
 
-1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests pass.
+1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
 ## Test the Release version of the library
 
-Now that the tests have all passed when running the Debug version of the library, run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
+Now that the tests have all passed when running the Debug build of the library, run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
 
 1. Run the tests with the Release build configuration:
 

@@ -195,7 +195,7 @@ Console.WriteLine("Child2 was {0}", _
 
 This example produces the following output:
 
-```console
+```output
 Child1 was cloned
 Child2 was attached
 ```

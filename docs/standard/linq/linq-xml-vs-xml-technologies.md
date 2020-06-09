@@ -47,7 +47,7 @@ MSXML isn't recommended for use in managed code based on the CLR.
 
 ## LINQ to XML vs. XmlLite
 
-XmlLite is a non-caching, forward only, pull parser. Developers primarily use XmlLite with C++. It isn't recommended for developers to use XmlLite with managed code.
+XmlLite is a non-caching, forward only, pull parser. Developers primarily use XmlLite with C++. It's not recommended for developers to use XmlLite with managed code.
 
 The main advantage of XmlLite is that it's a lightweight, fast XML parser that's secure in most scenarios. Its threat surface area is small. If you have to parse untrusted documents and you want to protect against attacks such as denial of service or exposure of data, XmlLite might be a good option.
 

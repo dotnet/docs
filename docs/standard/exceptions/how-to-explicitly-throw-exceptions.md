@@ -1,5 +1,6 @@
 ---
 title: "How to: Explicitly Throw Exceptions"
+description: Learn how to throw an exception explicitly in .NET by using the C# throw statement or the Visual Basic Throw statement.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

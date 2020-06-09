@@ -66,7 +66,7 @@ namespace HelloWorld
 
 ## Run the app
 
-1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app without debugging.
+1. Press ⌥ ⌘ ↵ (<kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>Enter</kbd>) to run the app without debugging.
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-output.png" alt-text="The terminal shows Hello World!":::
 
@@ -86,9 +86,9 @@ Enhance the application to prompt the user for their name and display it along w
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
-1. Press ⌥ ⌘ ↵ (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run the app.
+1. Press ⌥ ⌘ ↵ (<kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>Enter</kbd>) to run the app.
 
-1. Respond to the prompt by entering a name and pressing <kbd>enter</kbd>.
+1. Respond to the prompt by entering a name and pressing <kbd>Enter</kbd>.
 
    :::image type="content" source="media/with-visual-studio-mac/hello-world-update.png" alt-text="Terminal shows modified program output":::
 

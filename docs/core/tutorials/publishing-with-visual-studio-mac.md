@@ -69,7 +69,7 @@ As the preceding image shows, the published output includes the following files:
 
 1. Run the app by using the `dotnet` command:
 
-   1. Enter `dotnet HelloWorld.dll` and press <kbd>enter</kbd>.
+   1. Enter `dotnet HelloWorld.dll` and press <kbd>Enter</kbd>.
 
    1. Enter a name in response to the prompt, and press any key to exit.
 

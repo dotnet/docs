@@ -51,7 +51,7 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
-1. Press ⌘ S (<kbd>command</kbd>+<kbd>S</kbd>) to save the file.
+1. Press ⌘ S (<kbd>Command</kbd>+<kbd>S</kbd>) to save the file.
 
 1. Select **Errors** in the margin at the bottom of the IDE window to open the **Errors** panel. Select the **Build Output** button.
 
@@ -79,7 +79,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
 
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the <kbd>enter</kbd> key without entering a string, the application ends, and the console window closes.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the <kbd>Enter</kbd> key without entering a string, the application ends, and the console window closes.
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -95,7 +95,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. <kbd>Ctrl</kbd>-click on the ShowCase project and select **Run project** from the context menu.
 
-1. Try out the program by entering strings and pressing <kbd>enter</kbd>, then press <kbd>enter</kbd> to exit.
+1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-console-window.png" alt-text="Visual Studio for Mac console window showing your app running":::
 

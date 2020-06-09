@@ -55,9 +55,9 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. If the **Immediate** window is not visible, display it by choosing **Debug** > **Windows** > **Immediate**.
 
-1. Enter `name = "Gracie"` in the **Immediate** window and press the **Enter** key.
+1. Enter `name = "Gracie"` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
-1. Enter `date = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` in the **Immediate** window and press the **Enter** key.
+1. Enter `date = DateTime.Parse("2019-11-16T17:25:00Z").ToUniversalTime()` in the **Immediate** window and press the <kbd>Enter</kbd> key.
 
    The **Immediate** window displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
@@ -95,7 +95,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select **Close** to close the dialog.
 
-1. Start the program with debugging by pressing **F5**.
+1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
 1. In the console window, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
@@ -103,7 +103,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method. In this case, `Main` is the currently executing method. Observe that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
 
-1. Confirm the value is an empty string by entering the following statement in the **Immediate** window and pressing **Enter**. The result is `true`.
+1. Confirm the value is an empty string by entering the following statement in the **Immediate** window and pressing <kbd>Enter</kbd>. The result is `true`.
 
    ```csharp
    ? name == String.Empty
@@ -153,7 +153,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing **Enter**. The console is unresponsive, and the string you entered isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will nevertheless capture your input.
+1. Respond to the prompt by entering a string in the console window and pressing <kbd>Enter</kbd>. The console is unresponsive, and the string you entered isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will nevertheless capture your input.
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `date` variable assignment (`currentDate` in Visual Basic). The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The console window also displays the string you entered at the prompt.
 
@@ -161,7 +161,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Press <kbd>F11</kbd>. Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The console window displays the formatted string.
 
-1. Choose **Debug** > **Step Out**. Another way to stop step-by-step execution is by pressing **Shift**+<kbd>F11</kbd>.
+1. Choose **Debug** > **Step Out**. Another way to stop step-by-step execution is by pressing <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
    The console window displays a message and waits for you to press a key.
 
@@ -175,7 +175,7 @@ To build and test the Release version of your console application, change the bu
 
 ![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
 
-When you press **F5** or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
+When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 
 ## Next steps
 

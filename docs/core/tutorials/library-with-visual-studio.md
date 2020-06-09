@@ -109,7 +109,7 @@ Initially, the new console app project doesn't have access to the class library.
 
    ![Visual Studio project toolbar showing Debug button](media/library-with-visual-studio/visual-studio-project-toolbar.png)
 
-1. Try out the program by entering strings and pressing **Enter**, then press **Enter** to exit.
+1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 
    :::image type="content" source="media/library-with-visual-studio/run-showcase.png" alt-text="Console window with ShowCase running":::
 

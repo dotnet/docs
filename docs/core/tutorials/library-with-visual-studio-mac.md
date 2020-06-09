@@ -47,7 +47,7 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    :::image type="content" source="media/library-with-visual-studio-mac/solution-dock-icon.png" alt-text="Dock icon for Solution pad":::
 
-1. In the **Solution** pad, expand the `StringLibrary` node to reveal the class file provided by the template, *Class1.cs*. Ctrl-click the file, select **Rename** from the context menu, and rename the file to *StringLibrary.cs*. Open the file and replace the contents with the following code:
+1. In the **Solution** pad, expand the `StringLibrary` node to reveal the class file provided by the template, *Class1.cs*. <kbd>Ctrl</kbd>-click the file, select **Rename** from the context menu, and rename the file to *StringLibrary.cs*. Open the file and replace the contents with the following code:
 
    :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
@@ -67,7 +67,7 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. In the **Solution** pad, ctrl-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
+1. In the **Solution** pad, <kbd>Ctrl</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
 
 1. Select **.NET Core 3.1** as the **Target Framework** and select **Next**.
 
@@ -87,13 +87,13 @@ Add a console application that uses the class library. The app will prompt the u
 
 Initially, the new console app project doesn't have access to the class library. To allow it to call methods in the class library, create a project reference to the class library project.
 
-1. In the **Solutions** sidebar, ctrl-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.
+1. In the **Solutions** sidebar, <kbd>Ctrl</kbd>-click the **Dependencies** node of the new **ShowCase** project. In the context menu, select **Add Reference**.
 
 1. In the **References** dialog, select **StringLibrary** and select **OK**.
 
 ## Run the app
 
-1. Ctrl-click on the ShowCase project and select **Run project** from the context menu.
+1. <kbd>Ctrl</kbd>-click on the ShowCase project and select **Run project** from the context menu.
 
 1. Try out the program by entering strings and pressing <kbd>enter</kbd>, then press <kbd>enter</kbd> to exit.
 

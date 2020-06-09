@@ -79,7 +79,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
 The program displays a string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*.
 
-1. Ctrl-click on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
+1. <kbd>Ctrl</kbd>-click on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint**.
 
 1. In the **Edit Breakpoint** dialog, enter the following code in the field that follows **And the following condition is true**, and select **Apply**.
 

@@ -79,7 +79,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Run the published app
 
-1. In **Explorer**, right-click the *publish* folder (ctrl-click on macOS), and select **Open in Terminal**.
+1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Terminal**.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 

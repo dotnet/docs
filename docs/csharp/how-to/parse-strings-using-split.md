@@ -20,14 +20,14 @@ to split strings on other specific characters or strings.
 
 The following code splits a common phrase into an array of strings for each word.
 
-:::code language="csharp-interactive" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="1":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet1":::
 
 Every instance of a separator character produces a value in the
 returned array. Consecutive separator characters produce the empty string
 as a value in the returned array. You can see how an empty string is created in the following example,
 which uses the space character as a separator.
 
-:::code language="csharp-interactive" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="2":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet2":::
 
 This behavior makes it easier for formats like comma-separated values (CSV)
 files representing tabular data. Consecutive commas represent a blank column.
@@ -41,15 +41,15 @@ the result sequence.
 The following example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters, to <xref:System.String.Split%2A>.
 The loop at the bottom of the code displays each of the words in the returned array.
 
-:::code language="csharp-interactive" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="3":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet3":::
 
 Consecutive instances of any separator produce the empty string in the output array:
 
-:::code language="csharp-interactive" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="4":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet4":::
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).
 
-:::code language="csharp-interactive" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="5":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
 ## See also
 

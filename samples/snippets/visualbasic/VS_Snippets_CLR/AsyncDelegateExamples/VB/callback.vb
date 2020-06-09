@@ -4,9 +4,9 @@ Imports System.Runtime.Remoting.Messaging
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
 
-    Public Class AsyncMain 
-        
-        Shared Sub Main() 
+    Public Class AsyncMain
+
+        Shared Sub Main()
 
             ' Create an instance of the test class.
             Dim ad As New AsyncDemo()

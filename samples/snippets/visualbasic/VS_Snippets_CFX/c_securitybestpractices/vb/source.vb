@@ -4,7 +4,7 @@ Imports System.Security.Principal
 Imports System.ServiceModel
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Design2
     Friend Class Program
 

@@ -220,13 +220,84 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/core/install/linux-package-managers.md",
-      "redirect_url": "/dotnet/core/install/linux-package-manager-ubuntu-1910",
-      "ms.custom": "updateeachrelease"
+      "source_path": "docs/core/install/linux-package-manager-centos8.md",
+      "redirect_url": "/dotnet/core/install/linux-centos"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-centos7.md",
+      "redirect_url": "/dotnet/core/install/linux-centos"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-debian10.md",
+      "redirect_url": "/dotnet/core/install/linux-debian"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-debian9.md",
+      "redirect_url": "/dotnet/core/install/linux-debian"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-fedora32.md",
+      "redirect_url": "/dotnet/core/install/linux-fedora"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-fedora31.md",
+      "redirect_url": "/dotnet/core/install/linux-fedora"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-fedora30.md",
+      "redirect_url": "/dotnet/core/install/linux-fedora"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-fedora29.md",
+      "redirect_url": "/dotnet/core/install/linux-fedora"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-opensuse15.md",
+      "redirect_url": "/dotnet/core/install/linux-opensuse"
     },
     {
       "source_path": "docs/core/install/linux-package-manager-rhel81.md",
-      "redirect_url": "/dotnet/core/install/linux-package-manager-rhel8"
+      "redirect_url": "/dotnet/core/install/linux-rhel"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-rhel8.md",
+      "redirect_url": "/dotnet/core/install/linux-rhel"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-rhel7.md",
+      "redirect_url": "/dotnet/core/install/linux-rhel"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-sles15.md",
+      "redirect_url": "/dotnet/core/install/linux-sles"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-sles12.md",
+      "redirect_url": "/dotnet/core/install/linux-sles"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-ubuntu-2004.md",
+      "redirect_url": "/dotnet/core/install/linux-ubuntu"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-ubuntu-1910.md",
+      "redirect_url": "/dotnet/core/install/linux-ubuntu"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-ubuntu-1904.md",
+      "redirect_url": "/dotnet/core/install/linux-ubuntu"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-ubuntu-1804.md",
+      "redirect_url": "/dotnet/core/install/linux-ubuntu"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-ubuntu-1604.md",
+      "redirect_url": "/dotnet/core/install/linux-ubuntu"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-managers.md",
+      "redirect_url": "/dotnet/core/install/linux"
     },
     {
       "source_path": "docs/core/migrating-from-dnx.md",
@@ -248,7 +319,7 @@
     },
     {
       "source_path": "docs/core/linux-prerequisites.md",
-      "redirect_url": "/dotnet/core/install/dependencies?pivots=os-linux"
+      "redirect_url": "/dotnet/core/install/linux"
     },
     {
       "source_path": "docs/core/macos-prerequisites.md",

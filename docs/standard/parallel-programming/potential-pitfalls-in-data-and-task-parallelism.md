@@ -1,5 +1,6 @@
 ---
 title: "Potential Pitfalls in Data and Task Parallelism"
+description: Learn about potential pitfalls in data and task parallelism, because parallelism adds complexity that isn't encountered in sequential code.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

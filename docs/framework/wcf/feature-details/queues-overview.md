@@ -14,7 +14,7 @@ This section introduces the general and core concepts behind queued communicatio
   
  Queues provide reliable communication even with failures in the communicating parties or the network. Queues capture and deliver messages exchanged between the communicating parties. Queues are typically backed by some kind of a store, which can be volatile or durable. Queues store messages from a client on behalf of a service and later forward these messages to the service. The indirection queues provide ensured isolation of failure by either party, thus making it the preferred communication mechanism for high-availability systems and disconnected services. The indirection comes with the cost of high latency. *Latency* is the time delay between the time the client sends a message and the time the service receives it. This means that once a message is sent, you do not know when that message may be processed. Most queued applications cope with high latency. The following illustration shows a conceptual model of queued communication.  
   
- ![Model of queued communication](../../../../docs/framework/wcf/feature-details/media/qconceptual-figure1c.gif "QConceptual-Figure1c")  
+ ![Model of queued communication](media/qconceptual-figure1c.gif "QConceptual-Figure1c")  
   
  Queued communication conceptual model  
   
@@ -22,7 +22,7 @@ This section introduces the general and core concepts behind queued communicatio
   
  When a client sends a message to a queue, it addresses the message to the target queue, which is the queue managed by the service's queue manager. The queue manager on the client sends the message to a transmission (or outgoing) queue. The transmission queue is a queue on the client queue manager that stores messages for transmission to the target queue. The queue manager then finds a path to the queue manager that owns the target queue and transfers the message to it. To ensure reliable communication, the queue managers implement a reliable transfer protocol to prevent data loss. The destination queue manager accepts messages addressed to the target queues it owns and stores the messages. The service makes requests to read from the target queue, at which time the queue manager then delivers the message to the destination application. The following illustration shows communication between the four parties.  
   
- ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
+ ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
  Queued communication in a typical deployment scenario  
   
@@ -41,7 +41,7 @@ This section introduces the general and core concepts behind queued communicatio
   
  Because of high latency, when you send a message you have no way of knowing how long it takes to reach its target queue, nor do you know how long it takes for the service to process the message. Because of this, you do not want to use a single transaction to send the message, receive the message, and then process the message. This creates a transaction that is not committed for an indeterminate amount of time. When a client and service communicate through a queue using a transaction, two transactions are involved: one on the client and one on the service. The following illustration shows the transaction boundaries in typical queued communication.  
   
- ![Queue with transactions](../../../../docs/framework/wcf/feature-details/media/qwithtransactions-figure3.gif "QWithTransactions-Figure3")  
+ ![Queue with transactions](media/qwithtransactions-figure3.gif "QWithTransactions-Figure3")  
   
  Queued communication showing separate transactions for capture and delivery  
   
@@ -70,11 +70,11 @@ This section introduces the general and core concepts behind queued communicatio
   
 ## See also
 
-- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
-- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
-- [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)
-- [Volatile Queued Communication](../../../../docs/framework/wcf/samples/volatile-queued-communication.md)
-- [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)
-- [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)
-- [Message Queuing to Windows Communication Foundation](../../../../docs/framework/wcf/samples/message-queuing-to-wcf.md)
-- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+- [Queuing in WCF](queuing-in-wcf.md)
+- [Sessions and Queues](../samples/sessions-and-queues.md)
+- [Dead Letter Queues](../samples/dead-letter-queues.md)
+- [Volatile Queued Communication](../samples/volatile-queued-communication.md)
+- [Windows Communication Foundation to Message Queuing](../samples/wcf-to-message-queuing.md)
+- [Installing Message Queuing (MSMQ)](../samples/installing-message-queuing-msmq.md)
+- [Message Queuing to Windows Communication Foundation](../samples/message-queuing-to-wcf.md)
+- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)

@@ -8,18 +8,18 @@ Imports System.Text
 
 
 Class Service
-    
-    Private Sub Basic() 
+
+    Private Sub Basic()
         '<snippet1>
         Dim b As New WSHttpBinding()
         b.Name = "myBinding"
         b.Security.Mode = SecurityMode.Message
         b.Security.Message.ClientCredentialType = MessageCredentialType.Windows
-         '</snippet1>
+        '</snippet1>
     End Sub
-    
-    
-    Private Sub Basic2() 
+
+
+    Private Sub Basic2()
         '<snippet2>
         Dim b As New WSHttpBinding()
         b.Security.Mode = SecurityMode.Transport
@@ -85,19 +85,19 @@ Class Service
         End Try
         '</snippet3>
     End Sub
-End Class 
+End Class
 
-<ServiceContract()>  _
+<ServiceContract()> _
 Interface ICalculator
-    <OperationContract()>  _
-    Function Divide(ByVal a As Double, ByVal b As Double) As Double 
-End Interface 
+    <OperationContract()> _
+    Function Divide(ByVal a As Double, ByVal b As Double) As Double
+End Interface
 
 
 Public Class Calculator
     Implements ICalculator
-    
+
     Public Function Divide(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Divide
         Return a / b
-    End Function 
-End Class 
+    End Function
+End Class

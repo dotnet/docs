@@ -320,8 +320,8 @@ When a variable is given a default value of `null` there are some additional con
   
 ## See also
 
-- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
-- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
-- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)
-- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
-- [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+- [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)
+- [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md)
+- [UriTemplate](../samples/uritemplate-sample.md)
+- [UriTemplate Table](../samples/uritemplate-table-sample.md)
+- [UriTemplate Table Dispatcher](../samples/uritemplate-table-dispatcher-sample.md)

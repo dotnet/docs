@@ -244,15 +244,15 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
  When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print "found".  
   
 > [!NOTE]
-> This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  
+> This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](custom-wsdl-publication.md) sample.  
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

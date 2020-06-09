@@ -1,5 +1,6 @@
 ---
 title: "How to: Write a Parallel.ForEach loop with partition-local variables"
+description: See an example of how to write a Parallel.ForEach loop that uses partition-local variables in .NET.
 ms.date: "06/26/2018"
 ms.technology: dotnet-standard
 dev_langs:

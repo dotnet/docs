@@ -56,7 +56,7 @@ The following are the maximum number of delivery attempts made for a message:
 ## Best Practice: Handling MsmqPoisonMessageException  
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  
   
- A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. For more information, see [Extending Control Over Error Handling and Reporting](../../../../docs/framework/wcf/samples/extending-control-over-error-handling-and-reporting.md).  
+ A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. For more information, see [Extending Control Over Error Handling and Reporting](../samples/extending-control-over-error-handling-and-reporting.md).  
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
@@ -72,7 +72,7 @@ The following are the maximum number of delivery attempts made for a message:
   
 4. Ensure that your service is annotated with the poison behavior attribute.  
 
- In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../../../../docs/framework/wcf/samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
+ In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
   
 ## Transaction Time-Out and Poison Messages  
  A class of errors can occur between the queued transport channel and the user code. These errors can be detected by layers in-between, such as the message security layer or the service dispatching logic. For example, a missing X.509 certificate detected in the SOAP security layer and a missing action are cases where the message does get dispatched to the application. When this happens, the service model drops the message. Because the message is read in a transaction and an outcome for that transaction cannot be provided, the transaction eventually times out, aborts, and the message is put back into the queue. In other words, for a certain class of errors, the transaction does not immediately abort but waits until the transaction times out. You can modify the transaction time-out for a service using <xref:System.ServiceModel.ServiceBehaviorAttribute>.  
@@ -83,7 +83,7 @@ The following are the maximum number of delivery attempts made for a message:
  A session undergoes the same retry and poison-message handling procedures as a single message. The properties previously listed for poison messages apply to the entire session. This means that the entire session is retried and goes to a final poison-message queue or the sender’s dead-letter queue if the message is rejected.  
   
 ## Batching and Poison Messages  
- If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. For more information about batching, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
+ If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. For more information about batching, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md)  
   
 ## Poison-message Handling for Messages in a Poison Queue  
  Poison-message handling does not end when a message is placed in the poison-message queue. Messages in the poison-message queue must still be read and handled. You can use a subset of the poison-message handling settings when reading messages from the final poison subqueue. The applicable settings are `ReceiveRetryCount` and `ReceiveErrorHandling`. You can set `ReceiveErrorHandling` to Drop, Reject, or Fault. `MaxRetryCycles` is ignored and an exception is thrown if `ReceiveErrorHandling` is set to Move.  
@@ -99,6 +99,6 @@ The following are the maximum number of delivery attempts made for a message:
   
 ## See also
 
-- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
-- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)
-- [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Queues Overview](queues-overview.md)
+- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)
+- [Specifying and Handling Faults in Contracts and Services](../specifying-and-handling-faults-in-contracts-and-services.md)

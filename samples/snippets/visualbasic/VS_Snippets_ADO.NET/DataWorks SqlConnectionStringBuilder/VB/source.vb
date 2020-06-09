@@ -1,7 +1,7 @@
 ﻿Option Explicit
 Option Strict
 
-   
+
 ' <Snippet1>
 Imports System.Data.SqlClient
 

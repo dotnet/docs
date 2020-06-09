@@ -104,7 +104,7 @@ Use fields when:
 
 - The property is a `String` data type, and there is no constraint on the size or value of the string.
 
-- For more information, see [Property Procedures](../../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md).
+- For more information, see [Property Procedures](../procedures/property-procedures.md).
 
 > [!TIP]
 > Always keep the non-constant fields private. When you want to make it public, use a property instead.

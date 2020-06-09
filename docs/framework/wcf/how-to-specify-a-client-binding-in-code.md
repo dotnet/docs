@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Client Binding in Code"
+description: Learn how to specify the binding for a WCF client imperatively in code. The client accesses a service in this example.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

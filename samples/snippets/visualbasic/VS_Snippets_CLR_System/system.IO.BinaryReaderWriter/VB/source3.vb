@@ -39,7 +39,7 @@ Public Class BinReadWrite
         ' now dump the contents of the file using the original file stream
         fs.Seek(0, SeekOrigin.Begin)
         Console.WriteLine("Length: {0:d}", fs.Length)
-        Dim rawbytes(fs.Length) As Byte
+        Dim rawbytes(fs.Length - 1) As Byte
         fs.Read(rawbytes, 0, fs.Length)
         Console.WriteLine("Length: {0:d}", rawbytes.Length)
 

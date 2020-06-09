@@ -46,4 +46,4 @@ HRESULT GetSourceExtentInDocument(
   
 ## See also
 
-- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+- [ISymENCUnmanagedMethod Interface](isymencunmanagedmethod-interface.md)

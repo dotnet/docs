@@ -46,7 +46,7 @@ XElement contacts = XElement.Parse(
 Console.WriteLine(contacts);
 ```
 
-You can parse a string in Visual Basic in a similar manner. However, it is more efficient to use XML literals, as shown in following code, because XML literals don't suffer from the same performance penalties as parsing XML from a string.
+You can parse a string in Visual Basic in a similar manner. However, it's more efficient to use XML literals, as shown in following code, because XML literals don't suffer from the same performance penalties as parsing XML from a string.
 
 By using XML literals, you can just copy and paste your XML into your Visual Basic program.
 

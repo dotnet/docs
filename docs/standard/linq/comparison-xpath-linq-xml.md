@@ -18,11 +18,11 @@ XPath doesn't allow projection of new types. It can only return collections of n
 
 XPath expressions exist in isolation within a string. The C# compiler can't help parse the XPath expression at compile time. By contrast, LINQ to XML queries are parsed and compiled by the C# compiler. The compiler can catch many query errors.
 
-XPath results aren't strongly typed. In a number of circumstances, the result of evaluating an XPath expression is an object, and it is up to the developer to determine the proper type and cast the result as necessary. By contrast, the projections from a LINQ to XML query are strongly typed.
+XPath results aren't strongly typed. In a number of circumstances, the result of evaluating an XPath expression is an object, and it's up to the developer to determine the proper type and cast the result as necessary. By contrast, the projections from a LINQ to XML query are strongly typed.
 
 ## Result ordering
 
-The XPath 1.0 Recommendation states that a collection that is the result of evaluating an XPath expression is unordered.
+The XPath 1.0 Recommendation states that a collection that's the result of evaluating an XPath expression is unordered.
 
 However, when iterating through a collection returned by a LINQ to XML XPath axis method, the nodes in the collection are returned in document order. This is the case even when accessing the XPath axes where predicates are expressed in terms of reverse document order, such as `preceding` and `preceding-sibling`.
 

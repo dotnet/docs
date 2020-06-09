@@ -12,7 +12,7 @@ ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
 
 This article describes how to control namespace prefixes when serializing an XML tree in C# and Visual Basic.
 
-In many situations, it isn't necessary to control namespace prefixes. However, certain XML programming tools require it. For example, you might be manipulating an XSLT style sheet or a XAML document that contains embedded XPath expressions that refer to specific namespace prefixes. In such a case, it is important that the document be serialized with those prefixes. This is a common reason for controlling namespace prefixes.
+In many situations, it's not necessary to control namespace prefixes. However, certain XML programming tools require it. For example, you might be manipulating an XSLT style sheet or a XAML document that contains embedded XPath expressions that refer to specific namespace prefixes. In such a case, it's important that the document be serialized with those prefixes. This is a common reason for controlling namespace prefixes.
 
 Another reason is that you want users to edit the XML document manually, and you want to create namespace prefixes that are convenient for the user to type. For example, you might be generating an XSD document. Conventions for schemas suggest that you use either `xs` or `xsd` as the prefix for the schema namespace.
 

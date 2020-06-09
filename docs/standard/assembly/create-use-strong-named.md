@@ -1,5 +1,6 @@
 ---
 title: "Create and use strong-named assemblies"
+description: This article shows you the process of signing an assembly in .NET with a strong name and later referencing it by that name.
 ms.date: "08/19/2019"
 helpviewer_keywords:
   - "strong-name bypass feature"

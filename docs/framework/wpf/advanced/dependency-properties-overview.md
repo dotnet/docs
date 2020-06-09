@@ -102,7 +102,7 @@ Once the resource is defined, you can reference the resource and use it to provi
 
 [!code-xaml[PropertiesOvwSupport#ResourcesReference](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesreference)]
 
-This particular resource is referenced as a [DynamicResource Markup Extension](dynamicresource-markup-extension.md) (in WPF XAML, you can use either a static or dynamic resource reference). To use a dynamic resource reference, you must be setting to a dependency property, so it is specifically the dynamic resource reference usage that is enabled by the WPF property system. For more information, see [XAML Resources](xaml-resources.md).
+This particular resource is referenced as a [DynamicResource Markup Extension](dynamicresource-markup-extension.md) (in WPF XAML, you can use either a static or dynamic resource reference). To use a dynamic resource reference, you must be setting to a dependency property, so it is specifically the dynamic resource reference usage that is enabled by the WPF property system. For more information, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).
 
 > [!NOTE]
 > Resources are treated as a local value, which means that if you set another local value, you will eliminate the resource reference. For more information, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).

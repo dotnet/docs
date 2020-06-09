@@ -31,7 +31,7 @@ CoreFx
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 `M:System.IO.Compression.ZipArchiveEntry.Open`
 `Overload:System.IO.Compression.ZipFileExtensions.ExtractToDirectory%2A`

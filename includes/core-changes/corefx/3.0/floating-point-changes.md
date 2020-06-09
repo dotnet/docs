@@ -31,7 +31,7 @@ Core .NET libraries
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Double.ToString`
 - `Overload:System.Single.ToString`

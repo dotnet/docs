@@ -51,7 +51,7 @@ HRESULT DefineFile (
  One `File` metadata structure must be defined for each file that was part of this assembly at the time that this assembly was built, excluding the file that contains the metadata.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -61,4 +61,4 @@ HRESULT DefineFile (
   
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

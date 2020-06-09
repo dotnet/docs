@@ -20,7 +20,7 @@ ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
 A date and time format string defines the text representation of a <xref:System.DateTime> or <xref:System.DateTimeOffset> value that results from a formatting operation. It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) is interpreted as a custom date and time format string.
 
 > [!TIP]
-> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
@@ -692,5 +692,5 @@ The result string produced by many of the custom date and time format specifiers
 - <xref:System.IFormatProvider?displayProperty=nameWithType>
 - [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
 - [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
-- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

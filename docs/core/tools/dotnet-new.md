@@ -15,7 +15,7 @@ ms.date: 04/10/2020
 
 ```dotnetcli
 dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install {PATH|NUGET_ID}]
-    [-lang|--language {C#|F#|VB}] [-n|--name <OUTPUT_NAME>]
+    [-lang|--language {"C#"|"F#"|VB}] [-n|--name <OUTPUT_NAME>]
     [--nuget-source <SOURCE>] [-o|--output <OUTPUT_DIRECTORY>]
     [-u|--uninstall] [--update-apply] [--update-check] [Template options]
 
@@ -674,7 +674,7 @@ Each project template may have additional options available. The core templates 
 - Create an F# console application project in the current directory:
 
   ```dotnetcli
-  dotnet new console -lang F#
+  dotnet new console -lang "F#"
   ```
 
 - Create a .NET Standard class library project in the specified directory:

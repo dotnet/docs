@@ -48,4 +48,4 @@ HRESULT GetNamespaces (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

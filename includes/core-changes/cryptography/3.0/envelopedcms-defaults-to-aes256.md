@@ -45,7 +45,7 @@ Cryptography
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor`
 - `M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)`

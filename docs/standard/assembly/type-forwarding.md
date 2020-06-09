@@ -1,5 +1,6 @@
 ---
 title: "Type forwarding in the common language runtime"
+description: Type forwarding allows you to move a type to another .NET assembly without having to recompile applications that use the original assembly.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], type forwarding"

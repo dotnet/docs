@@ -38,5 +38,5 @@ HRESULT GetEndOffset(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [GetStartOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getstartoffset-method.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)
+- [GetStartOffset Method](isymunmanagedscope-getstartoffset-method.md)

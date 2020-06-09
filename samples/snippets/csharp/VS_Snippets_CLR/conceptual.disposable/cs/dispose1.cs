@@ -21,6 +21,7 @@ public class Disposable : IDisposable
 
    // <Snippet8>
    protected virtual void Dispose(bool disposing)
+   {
+   }
    // </Snippet8>
-   {}
 }

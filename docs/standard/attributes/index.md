@@ -1,5 +1,6 @@
 ---
 title: "Extending Metadata Using Attributes"
+description: Learn how to extend metadata using attributes in .NET. Attributes are keyword-like descriptive declarations to annotate programming elements, like types and fields.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

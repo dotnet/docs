@@ -7,11 +7,11 @@ dev_langs:
 ms.assetid: 8a7613ef-0df9-47c3-b8dc-47f42cb1fd8b
 ---
 # How to: Create a Service That Requires Sessions
-Sessions create a shared state between two or more endpoints that enables useful features such as callbacks, multi-hop security, and associations between clients and service instances. For more information about sessions in Windows Communication Foundation (WCF) applications, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
+Sessions create a shared state between two or more endpoints that enables useful features such as callbacks, multi-hop security, and associations between clients and service instances. For more information about sessions in Windows Communication Foundation (WCF) applications, see [Using Sessions](../using-sessions.md).  
   
 ### To specify that a contract require its binding to support sessions  
   
-1. Create a service contract with at least one operation. For an example of how to create a service contract, see [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md).  
+1. Create a service contract with at least one operation. For an example of how to create a service contract, see [How to: Define a Service Contract](../how-to-define-a-wcf-service-contract.md).  
   
 2. Modify the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType> that declares the contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to either:  
   

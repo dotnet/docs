@@ -1,5 +1,6 @@
 ---
 title: "Using threads and threading"
+description: Learn about using threads and threading in .NET, so you can write applications to perform many operations at the same time (multithreading).
 ms.date: "08/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

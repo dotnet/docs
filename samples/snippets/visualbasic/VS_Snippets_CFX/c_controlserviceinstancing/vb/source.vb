@@ -2,7 +2,7 @@
 Imports System.Security.Permissions
 
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 '<snippet2>
 ' Define a service contract.

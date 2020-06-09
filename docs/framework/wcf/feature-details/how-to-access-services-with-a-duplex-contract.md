@@ -15,15 +15,15 @@ One feature of Windows Communication Foundation (WCF) is the ability to create a
 
 A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it connects only to services it trusts.
 
-For a tutorial on creating a basic WCF service and client, see [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md).
+For a tutorial on creating a basic WCF service and client, see [Getting Started Tutorial](../getting-started-tutorial.md).
 
 ## To access a duplex service
 
-1. Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. For more information about creating a duplex service, see [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md).
+1. Create a service that contains two interfaces. The first interface is for the service, the second is for the callback. For more information about creating a duplex service, see [How to: Create a Duplex Contract](how-to-create-a-duplex-contract.md).
 
 2. Run the service.
 
-3. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate contracts (interfaces) for the client. For information about how to do this, see  [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md).
+3. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate contracts (interfaces) for the client. For information about how to do this, see  [How to: Create a Client](../how-to-create-a-wcf-client.md).
 
 4. Implement the callback interface in the client class, as shown in the following example.
 
@@ -84,8 +84,8 @@ The following code example demonstrates how to create a client class that access
 
 ## See also
 
-- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)
-- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [Getting Started Tutorial](../getting-started-tutorial.md)
+- [How to: Create a Duplex Contract](how-to-create-a-duplex-contract.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [How to: Create a Client](../how-to-create-a-wcf-client.md)
+- [How to: Use the ChannelFactory](how-to-use-the-channelfactory.md)

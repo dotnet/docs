@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9e369e99-ea4a-49ff-aed2-9fdf61091a48
 ---
 # Custom Secure Metadata Endpoint
-This sample demonstrates how to implement a service with a secure metadata endpoint that uses one of the non-metadata exchange bindings, and how to configure [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) or clients to fetch the metadata from such a metadata endpoint. There are two system-provided bindings available for exposing metadata endpoints: mexHttpBinding and mexHttpsBinding. mexHttpBinding is used to expose a metadata endpoint over HTTP in a non-secure manner. mexHttpsBinding is used to expose a metadata endpoint over HTTPS in a secure manner. This sample illustrates how to expose a secure metadata endpoint using the <xref:System.ServiceModel.WSHttpBinding>. You would want to do this when you want to change the security settings on the binding, but you do not want to use HTTPS. If you use the mexHttpsBinding your metadata endpoint will be secure, but there is no way to modify the binding settings.  
+This sample demonstrates how to implement a service with a secure metadata endpoint that uses one of the non-metadata exchange bindings, and how to configure [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) or clients to fetch the metadata from such a metadata endpoint. There are two system-provided bindings available for exposing metadata endpoints: mexHttpBinding and mexHttpsBinding. mexHttpBinding is used to expose a metadata endpoint over HTTP in a non-secure manner. mexHttpsBinding is used to expose a metadata endpoint over HTTPS in a secure manner. This sample illustrates how to expose a secure metadata endpoint using the <xref:System.ServiceModel.WSHttpBinding>. You would want to do this when you want to change the security settings on the binding, but you do not want to use HTTPS. If you use the mexHttpsBinding your metadata endpoint will be secure, but there is no way to modify the binding settings.  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -126,13 +126,13 @@ ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(endpoint.Bindin
   
 #### To set up and build the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 #### To run the sample on the same machine  
   
-1. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample. Note that Setup.bat uses the FindPrivateKey.exe tool, which is installed by running setupCertTool.bat from [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Run Setup.bat from the sample install folder. This installs all the certificates required for running the sample. Note that Setup.bat uses the FindPrivateKey.exe tool, which is installed by running setupCertTool.bat from [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
 2. Run the client application from \MetadataResolverClient\bin or \SvcutilClient\bin. Client activity is displayed on the client console application.  
   
@@ -144,7 +144,7 @@ ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(endpoint.Bindin
   
 1. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
-2. On the server, edit Web.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the machine.  
+2. On the server, edit Web.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the machine.  
   
 3. Copy the Service.cer file from the service directory to the client directory on the client machine.  
   

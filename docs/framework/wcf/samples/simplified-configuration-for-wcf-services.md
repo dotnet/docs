@@ -51,9 +51,9 @@ This sample demonstrates how to implement and configure a typical service and cl
   
 ### To use this sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 3. Run the sample by following these steps:  
   
@@ -75,4 +75,4 @@ This sample demonstrates how to implement and configure a typical service and cl
 ## See also
 
 - [AppFabric Management Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383405(v=azure.10))
-- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
+- [Simplified Configuration](../simplified-configuration.md)

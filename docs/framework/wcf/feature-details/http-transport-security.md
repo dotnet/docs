@@ -45,9 +45,9 @@ To configure certificates for use with IIS 7.0, see [Configuring Server Certific
 
  If you're creating a self-hosted WCF application, use the [HttpCfg.exe](/windows/win32/http/httpcfg-exe) tool.
   
- For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
+ For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See also
 
-- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)
-- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
+- [Transport Security](transport-security.md)
+- [Message Security](message-security-in-wcf.md)

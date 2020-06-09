@@ -5,13 +5,13 @@ Public Module Example
         Dim japaneseCal = New JapaneseCalendar()
         Dim jaJp = New CultureInfo("ja-JP")
         jaJp.DateTimeFormat.Calendar = japaneseCal
-  
+
         Dim dat = New DateTime(1905, 2, 12)
         Console.WriteLine($"Gregorian calendar date: {dat:d}")
 
         ' Call the ToString(IFormatProvider) method.
         Console.WriteLine($"Japanese calendar date: {dat.ToString("d", jaJp)}")
-        
+
         ' Use a FormattableString object.
         Dim fmt As FormattableString = $"{dat:d}"
         Console.WriteLine($"Japanese calendar date: {fmt.ToString(jaJp)}")

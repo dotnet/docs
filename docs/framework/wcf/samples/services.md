@@ -9,7 +9,7 @@ This section contains samples that demonstrate Windows Communication Foundation 
 
 ## In this section
 
-- [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)\
+- [Hosting](../feature-details/hosting.md)\
 Demonstrates hosting WCF services.
 
 - [Service Interoperability](service-interoperability.md)\

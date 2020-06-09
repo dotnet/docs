@@ -20,4 +20,4 @@ The Peer Channel APIs support the following development scenarios.
   
 ## See also
 
-- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
+- [Peer Channel Concepts](peer-channel-concepts.md)

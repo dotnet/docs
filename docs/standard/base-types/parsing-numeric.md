@@ -1,5 +1,6 @@
 ---
 title: "Parsing Numeric Strings in .NET"
+description: Learn about parsing numeric strings in .NET. Learn how to parse with format providers, NumberStyles enumeration values, and Unicode digits.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

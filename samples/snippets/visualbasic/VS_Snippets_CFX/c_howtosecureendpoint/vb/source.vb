@@ -4,7 +4,7 @@ Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Security.Samples
     Public Class Test
         Shared Sub Main()
@@ -60,7 +60,7 @@ Namespace Microsoft.Security.Samples
     End Class
 
     <ServiceContract()> _
- Public Interface ICalculator
+    Public Interface ICalculator
         <OperationContract()> _
         Function Add(ByVal a As Double, ByVal b As Double) As Double
     End Interface

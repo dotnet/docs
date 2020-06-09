@@ -6,7 +6,7 @@ Namespace Global.Libraries
     Public Module UtilityLibrary
         <Extension>
         Public Function IsSerializable(obj As Object) As Boolean
-            If obj Is Nothing Then Return False 
+            If obj Is Nothing Then Return False
 
             Dim t As Type = obj.GetType()
             Return t.IsSerializable

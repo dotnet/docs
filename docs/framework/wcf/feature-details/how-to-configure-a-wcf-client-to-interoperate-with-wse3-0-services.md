@@ -11,11 +11,11 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
 ### To configure a WCF client to interoperate with a WSE 3.0 Web service  
   
-1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to create a WCF client for the WSE 3.0 Web service.  
+1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to create a WCF client for the WSE 3.0 Web service.  
   
      For a WSE Web service, a WCF client class is created.  
   
-     For details about creating a WCF client, see the [How to: Create a Client](../../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
+     For details about creating a WCF client, see the [How to: Create a Client](../how-to-create-a-wcf-client.md).  
   
 2. Create a class that represents a binding that can communicate with WSE 3.0 Web services.  
   

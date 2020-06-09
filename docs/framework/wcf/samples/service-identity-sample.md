@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
 ---
 # Service Identity Sample
-This service identity sample demonstrates how to set the identity for a service. At design time, a client can retrieve the identity using the service's metadata and then at runtime the client can authenticate the service's identity. The concept of service identity is to allow a client to authenticate a service before calling any of its operations, thereby protecting the client from unauthenticated calls. On a secure connection the service also authenticates a client's credentials before allowing it access, but this is not the focus of this sample. See the samples in [Client](../../../../docs/framework/wcf/samples/client.md) that show server authentication.
+This service identity sample demonstrates how to set the identity for a service. At design time, a client can retrieve the identity using the service's metadata and then at runtime the client can authenticate the service's identity. The concept of service identity is to allow a client to authenticate a service before calling any of its operations, thereby protecting the client from unauthenticated calls. On a secure connection the service also authenticates a client's credentials before allowing it access, but this is not the focus of this sample. See the samples in [Client](client.md) that show server authentication.
 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.
@@ -101,15 +101,15 @@ class CustomIdentityVerifier : IdentityVerifier
 
 ### To set up, build, and run the sample
 
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
 ### To run the sample on the same computer
 
-1. On Windows XP or Windows Vista, import the Identity.pfx certificate file in the Identity solution folder into the LocalMachine/My (Personal) certificate store using the MMC snap-in tool. This file is password protected. During the import you are asked for a password. Type `xyz` into the password box. For more information, see the [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) topic. Once this is done, run Setup.bat in a Developer Command Prompt for Visual Studio with administrator privileges, which copies this certificate to the CurrentUser/Trusted People store for use on the client.
+1. On Windows XP or Windows Vista, import the Identity.pfx certificate file in the Identity solution folder into the LocalMachine/My (Personal) certificate store using the MMC snap-in tool. This file is password protected. During the import you are asked for a password. Type `xyz` into the password box. For more information, see the [How to: View Certificates with the MMC Snap-in](../feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) topic. Once this is done, run Setup.bat in a Developer Command Prompt for Visual Studio with administrator privileges, which copies this certificate to the CurrentUser/Trusted People store for use on the client.
 
 2. On Windows Server 2003, run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt with administrator privileges. This installs all the certificates required for running the sample.
 

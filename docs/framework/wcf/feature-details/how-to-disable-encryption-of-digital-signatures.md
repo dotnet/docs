@@ -13,7 +13,7 @@ By default, a message is signed and the signature is digitally encrypted. This i
   
 ### To disable digital signing  
   
-1. Create a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
+1. Create a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
 2. Add either an <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> or a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the binding collection.  
   
@@ -21,4 +21,4 @@ By default, a message is signed and the signature is digitally encrypted. This i
   
 ## See also
 
-- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md)

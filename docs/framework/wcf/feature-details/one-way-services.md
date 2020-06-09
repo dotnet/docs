@@ -14,7 +14,7 @@ The default behavior of a service operation is the request-reply pattern. In a r
   
 - When the client must call operations and is not affected by the result of the operation at the operation level.  
   
-- When using the <xref:System.ServiceModel.NetMsmqBinding> or the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class. (For more information about this scenario, see [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md).)  
+- When using the <xref:System.ServiceModel.NetMsmqBinding> or the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class. (For more information about this scenario, see [Queues in WCF](queues-in-wcf.md).)  
   
  When an operation is one-way, there is no response message to carry error information back to the client. You can detect error conditions by using features of the underlying binding, such as reliable sessions, or by designing a duplex service contract that uses two one-way operations—a one-way contract from the client to the service to call service operation and another one-way contract between the service and the client so that the service can send back faults to the client using a callback that the client implements.  
   
@@ -35,7 +35,7 @@ public interface IOneWayCalculator
 }  
 ```  
   
- For a complete example, see the [One-Way](../../../../docs/framework/wcf/samples/one-way.md) sample.  
+ For a complete example, see the [One-Way](../samples/one-way.md) sample.  
   
 ## Clients Blocking with One-Way Operations  
  It is important to realize that while some one-way applications return as soon as the outbound data is written to the network connection, in several scenarios the implementation of a binding or of a service can cause a WCF client to block using one-way operations. In WCF client applications, the WCF client object does not return until the outbound data has been written to the network connection. This is true for all message exchange patterns, including one-way operations; this means that any problem writing the data to the transport prevents the client from returning. Depending upon the problem, the result could be an exception or a delay in sending messages to the service.  
@@ -50,4 +50,4 @@ public interface IOneWayCalculator
   
 ## See also
 
-- [One-Way](../../../../docs/framework/wcf/samples/one-way.md)
+- [One-Way](../samples/one-way.md)

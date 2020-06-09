@@ -3,7 +3,7 @@ title: Install .NET Core runtime on Windows, Linux, and macOS - .NET Core
 description: Learn how to install .NET Core on Windows, Linux, and macOS. Discover the dependencies required to run .NET Core apps.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 05/04/2020
 ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -48,36 +48,9 @@ export PATH=$PATH:$HOME/dotnet
 
 ::: zone pivot="os-linux"
 
-## Install with a package manager
+## Install on Linux
 
-You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
-
-Installing it with a package manager is only supported on the x64 architecture. If you're installing the .NET Core Runtime with a different architecture, such as ARM, follow the instructions on the [Download and manually install](#download-and-manually-install) section. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
-
-## Download and manually install
-
-To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
-
-```bash
-mkdir -p $HOME/dotnet && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C $HOME/dotnet
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
-
-> [!TIP]
-> The preceding `export` commands only make the .NET Core CLI commands available for the terminal session in which it was run.
->
-> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
->
-> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
-> - **Korn Shell**: *~/.kshrc* or *.profile*
-> - **Z Shell**: *~/.zshrc* or *.zprofile*
->
-> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
->
-> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
-
-This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
+This article will be removed soon. It is currently replaced by [Install .NET Core on Linux](linux.md).
 
 ::: zone-end
 
@@ -100,7 +73,7 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
 
-By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+By default, .NET Core CLI commands and apps won't use .NET Core installed in this way and you must explicitly choose to use it. To do so, change the environment variables with which an application is started:
 
 ```console
 set DOTNET_ROOT=%USERPROFILE%\dotnet

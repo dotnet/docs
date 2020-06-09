@@ -1,5 +1,6 @@
 ---
 title: "Generics in .NET"
+description: Learn about generics in .NET. Define & use generics, learn their advantages & drawbacks, understand class library & language support, and more.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

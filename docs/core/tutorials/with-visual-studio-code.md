@@ -114,7 +114,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Next steps
 
-In this tutorial, you created a .NET Core application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
 > [Debug a .NET Core console application using Visual Studio Code](debugging-with-visual-studio-code.md)

@@ -61,7 +61,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Locals** window displays the values of variables that are defined in the currently executing method. The values of the variables that you just changed are updated in the **Locals** window.
 
-  :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
+   :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
 
 1. Press ⌘ ↵ (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
@@ -70,6 +70,8 @@ The **Immediate** window lets you interact with the application you're debugging
    If you don't see the Terminal, select **Terminal - HelloWorld** in the bottom navigation bar.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/terminal-hello-world.png" alt-text="Terminal - Hello World in bottom navigation bar":::
+
+1. Press any key to exit the program.
 
 1. Close the terminal window.
 
@@ -107,6 +109,8 @@ The program displays a string that the user enters. What happens if the user doe
 
 1. In the terminal window, press any key to exit the program.
 
+1. Close the terminal window.
+
 1. Clear the breakpoint by clicking on the red dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Run > Toggle Breakpoint** while the line of code is selected.
 
 ## Step through a program
@@ -126,10 +130,6 @@ Visual Studio also allows you to step line by line through a program and monitor
    :::image type="content" source="media/debugging-with-visual-studio-mac/step-into-method.png" alt-text="Visual Studio step into method":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank terminal.
-
-1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
-
-   Visual Studio now highlights the next line of execution. The **Locals** window is unchanged, and the console window remains blank.
 
 1. Press ⇧ ⌘ I (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 

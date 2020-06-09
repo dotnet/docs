@@ -5,7 +5,7 @@ ms.date: 06/02/2020
 ---
 # Tutorial: Create a .NET Core console application using Visual Studio for Mac
 
-This tutorial shows how to create and run a and .NET Core console application using Visual Studio for Mac.
+This tutorial shows how to create and run a .NET Core console application using Visual Studio for Mac.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -43,7 +43,7 @@ Create a .NET Core console app project named "HelloWorld".
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-options.png" alt-text="Configure your new Console Application dialog":::
 
-The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
+The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the terminal window.
 
 The template code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument:
 
@@ -62,7 +62,7 @@ namespace HelloWorld
 }
 ```
 
-`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the `args` array.
 
 ## Run the app
 
@@ -96,7 +96,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Next steps
 
-In this tutorial, you created a .NET Core application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
 > [Debug a .NET Core console application in Visual Studio](debugging-with-visual-studio-mac.md)

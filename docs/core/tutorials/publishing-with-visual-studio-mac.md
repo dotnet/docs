@@ -31,7 +31,11 @@ This tutorial shows how to publish a console app so that other users can run it.
 
    The publish folder opens, showing the files that were created.
 
-   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-folder.png" alt-text="Visual Studio Publish window":::
+   :::image type="content" source="media/publishing-with-visual-studio-mac/publish-folder.png" alt-text="publish folder":::
+
+1. Select the gear icon, and select **Copy "publish" as Pathname** from the context menu.
+
+   :::image type="content" source="media/publishing-with-visual-studio-mac/copy-path.png" alt-text="Copy path to publish folder":::
 
 ## Inspect the files
 
@@ -57,7 +61,7 @@ As the preceding image shows, the published output includes the following files:
 
 ## Run the published app
 
-1. Open a terminal and navigate to the *publish* folder. For example:
+1. Open a terminal and navigate to the *publish* folder. To do that, enter `cd` and then paste the path that you copied earlier. For example:
 
    ```
    cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/

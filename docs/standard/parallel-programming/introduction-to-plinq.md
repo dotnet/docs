@@ -1,5 +1,6 @@
 ---
 title: "Introduction to PLINQ"
+description: Learn how to make queries in parallel using PLINQ in .NET. PLINQ stands for parallel Language-Integrated Query (LINQ).
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

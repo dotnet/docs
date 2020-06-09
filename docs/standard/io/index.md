@@ -1,5 +1,6 @@
 ---
 title: "File and Stream I/O - .NET"
+description: Learn the basics of file and stream I/O, which is the transfer of data either to or from a storage medium, in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

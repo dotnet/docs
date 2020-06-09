@@ -1,5 +1,6 @@
 ---
 title: "How to: Extract the Day of the Week from a Specific Date"
+description: Learn how to determine the ordinal day of the week for a particular date in .NET. Learn how to display the localized weekday name for a particular date.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

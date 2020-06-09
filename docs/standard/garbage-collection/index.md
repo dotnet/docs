@@ -1,5 +1,6 @@
 ---
 title: .NET garbage collection
+description: Learn about garbage collection in .NET. The .NET garbage collector manages the allocation and release of memory for your application.
 ms.date: 04/21/2020
 ms.technology: dotnet-standard
 helpviewer_keywords: 

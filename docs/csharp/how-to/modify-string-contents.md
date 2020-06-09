@@ -60,7 +60,7 @@ The following example shows how to replace a set of characters in a string. Firs
 
 Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it may be desirable to avoid these heap allocations. .NET Core provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet7":::
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet7":::
 
 You could modify a string in a fixed block with unsafe code but it is **strongly** discouraged to modify the string content after a string is created. Doing so will break things in unpredictable ways. For example, if someone interns a string that has the same content as yours, they will get your copy and will not expect that you are modifying their string at all.
 

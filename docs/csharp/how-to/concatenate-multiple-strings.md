@@ -47,7 +47,7 @@ the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:
 
-:::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
 
 ## See also
 

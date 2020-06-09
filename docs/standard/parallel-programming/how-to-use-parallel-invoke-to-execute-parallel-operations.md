@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Parallel.Invoke to Execute Parallel Operations"
+description: See how to use the Parallel.Invoke method in the Task Parallel Library (TPL), which does parallel operations on a shared data source in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

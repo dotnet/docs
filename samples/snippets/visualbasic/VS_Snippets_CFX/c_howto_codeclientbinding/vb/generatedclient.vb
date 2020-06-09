@@ -4,7 +4,7 @@
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), _
     System.ServiceModel.ServiceContractAttribute(Namespace:="http://Microsoft.ServiceModel.Samples", _
                                                  ConfigurationName:="Microsoft.ServiceModel.Samples.ICalculator")> _
- Public Interface ICalculator
+    Public Interface ICalculator
 
         <System.ServiceModel.OperationContractAttribute(Action:="http://Microsoft.ServiceModel.Samples/ICalculator/Add", _
                                                         ReplyAction:="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")> _
@@ -25,14 +25,14 @@
     '</snippet10>
 
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
- Public Interface ICalculatorChannel
+    Public Interface ICalculatorChannel
         Inherits Microsoft.ServiceModel.Samples.ICalculator, System.ServiceModel.IClientChannel
     End Interface
 
     '<snippet20>
     <System.Diagnostics.DebuggerStepThroughAttribute(), _
     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
- Partial Public Class CalculatorClient
+    Partial Public Class CalculatorClient
         Inherits System.ServiceModel.ClientBase(Of Microsoft.ServiceModel.Samples.ICalculator)
         Implements Microsoft.ServiceModel.Samples.ICalculator
 

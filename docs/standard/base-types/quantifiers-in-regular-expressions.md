@@ -1,5 +1,6 @@
 ---
 title: "Quantifiers in Regular Expressions"
+description: Learn about regular expression quantifiers, which specify how many instances of a character, group, or character class must be present in the input to match.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

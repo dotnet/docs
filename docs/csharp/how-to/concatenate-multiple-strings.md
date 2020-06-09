@@ -35,7 +35,7 @@ In other cases, you may be combining strings in a loop where you don't know how 
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet4":::
 
-You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBuilder%23StringAndSB).
+You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBuilder%23the-string-and-stringbuilder-types).
 
 Another option to join strings from a collection is to use <xref:System.String.Concat%2A?displayProperty=nameWithType> method. Use <xref:System.String.Join%2A?displayProperty=nameWithType> method if source strings should be separated by a delimiter. The following code combines an array of words using both methods:
 
@@ -47,7 +47,7 @@ the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
+:::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
 
 ## See also
 

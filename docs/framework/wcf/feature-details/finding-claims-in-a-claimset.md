@@ -18,4 +18,4 @@ Examining the content of a <xref:System.IdentityModel.Claims.ClaimSet> for parti
   
 ## See also
 
-- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Managing Claims and Authorization with the Identity Model](managing-claims-and-authorization-with-the-identity-model.md)

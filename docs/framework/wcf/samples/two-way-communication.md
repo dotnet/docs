@@ -9,7 +9,7 @@ This sample demonstrates how to perform transacted two-way queued communication 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- This sample is based on the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md).  
+ This sample is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md).  
   
  In queued communication, the client communicates to the service using a queue. The client sends messages to a queue, and the service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.  
   
@@ -69,7 +69,7 @@ public void SubmitPurchaseOrder(PurchaseOrder po, string reportOrderStatusTo)
 > [!NOTE]
 > The MSMQ queue name and endpoint address use slightly different addressing conventions. The MSMQ queue name uses a dot (.) for the local machine and backslash separators in its path. The Windows Communication Foundation (WCF) endpoint address specifies a net.msmq: scheme, uses "localhost" for the local machine, and uses forward slashes in its path. To read from a queue that is hosted on the remote machine, replace the "." and "localhost" to the remote machine name.  
   
- The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service checks for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy to the service.  
+ The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service checks for the existence of the queue and creates it, if necessary. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy to the service.  
 
 ```csharp
 // Host the service within this EXE console application.  
@@ -212,11 +212,11 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
     > [!NOTE]
     > If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint names in the client configuration to match the client code.  

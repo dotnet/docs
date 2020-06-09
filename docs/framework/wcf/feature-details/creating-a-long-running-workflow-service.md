@@ -67,7 +67,7 @@ You must have the following software installed to use this walkthrough:
 
         ![Set Receive Activity Properties](./media/creating-a-long-running-workflow-service/set-receive-activity-properties.png "Set the Receive activity properties.")
 
-        The DisplayName property sets the name displayed for the Receive activity in the designer. The ServiceContractName and OperationName properties specify the name of the service contract and operation that are implemented by the Receive activity. For more information about how contracts are used in Workflow services see [Using Contracts in Workflow](../../../../docs/framework/wcf/feature-details/using-contracts-in-workflow.md).
+        The DisplayName property sets the name displayed for the Receive activity in the designer. The ServiceContractName and OperationName properties specify the name of the service contract and operation that are implemented by the Receive activity. For more information about how contracts are used in Workflow services see [Using Contracts in Workflow](using-contracts-in-workflow.md).
 
     2. Click the **Define...** link in the **ReceiveStartOrder** activity and set the properties shown in the following illustration.  Notice that the **Parameters** radio button is selected, a parameter named `p_customerName` is bound to the `customerName` variable. This configures the **Receive** activity to receive some data and bind that data to local variables.
 
@@ -110,7 +110,7 @@ You must have the following software installed to use this walkthrough:
 
         ![Specifying parameters for the second receive](./media/creating-a-long-running-workflow-service/add-receive-two-parameters.png "Configure the receive activity to receive two parameters.")
 
-    4. Click the **CorrelateOn** ellipsis button and enter `orderIdHandle`. Under **XPath Queries**, click the drop down arrow and select `p_orderId`. This configures the correlation on the second receive activity. For more information about correlation see [Correlation](../../../../docs/framework/wcf/feature-details/correlation.md).
+    4. Click the **CorrelateOn** ellipsis button and enter `orderIdHandle`. Under **XPath Queries**, click the drop down arrow and select `p_orderId`. This configures the correlation on the second receive activity. For more information about correlation see [Correlation](correlation.md).
 
         ![Setting the CorrelatesOn property](./media/creating-a-long-running-workflow-service/correlateson-setting.png "Set the CorrelatesOn property.")
 
@@ -201,4 +201,4 @@ You must have the following software installed to use this walkthrough:
 
 ## See also
 
-- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Workflow Services](workflow-services.md)

@@ -9,7 +9,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
  On Windows Vista, samples that are not hosted in IIS require elevated privileges to register a listener with Http.sys. Use Httpcfg.exe to register the service's listening addresses with the account the service is running under, or launch the service from a command prompt running with administrator privileges.  
   
 > [!NOTE]
-> Before building or running any of the WCF samples, be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+> Before building or running any of the WCF samples, be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
 ### To run the sample on the same machine  
   
@@ -25,7 +25,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 1. If the service is hosted in IIS:  
   
-    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat included with [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
+    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat included with [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
   
     2. Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Ensure that you include the files in the \bin directory.  
   
@@ -47,7 +47,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
     1. If the service is not running under a domain account, open the client configuration file and change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
-    2. If the service is running under a domain account, regenerate the client configuration by running Svcutil.exe against the service. For more information about running Svcutil.exe, see [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md). Use the generated file instead of the configuration file in the sample. The generated configuration file has additional identity information, and contains all settings necessary to connect to the service endpoint even though they are the default settings. For more information about identity information, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md), and [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md).  
+    2. If the service is running under a domain account, regenerate the client configuration by running Svcutil.exe against the service. For more information about running Svcutil.exe, see [Building the Windows Communication Foundation Samples](building-the-samples.md). Use the generated file instead of the configuration file in the sample. The generated configuration file has additional identity information, and contains all settings necessary to connect to the service endpoint even though they are the default settings. For more information about identity information, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md), and [\<identity>](../../configure-apps/file-schema/wcf/identity.md).  
   
 4. On the client machine, launch Client.exe from a command prompt.  
   
@@ -75,5 +75,5 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ## See also
 
-- [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)
+- [Building the Windows Communication Foundation Samples](building-the-samples.md)
 - [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

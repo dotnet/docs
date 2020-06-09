@@ -7,7 +7,7 @@ ms.assetid: dfcfa36c-d3bb-44b4-aa15-1c922c6f73e6
 This topic describes transfer in the Windows Communication Foundation (WCF) activity tracing model.  
   
 ## Transfer Definition  
- Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In WCF, when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md).  
+ Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In WCF, when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](end-to-end-tracing-scenarios.md).  
   
  To emit transfer traces, use the `ActivityTracing` setting on the trace source as demonstrated by the following configuration code.  
   
@@ -98,7 +98,7 @@ ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);
   
 ## See also
 
-- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
-- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
-- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Configuring Tracing](configuring-tracing.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [End-To-End Tracing Scenarios](end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)

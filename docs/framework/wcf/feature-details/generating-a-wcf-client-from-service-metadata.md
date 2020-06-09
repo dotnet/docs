@@ -65,5 +65,5 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
   
 ## See also
 
-- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
-- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)
+- [Using Metadata](using-metadata.md)
+- [Metadata Architecture Overview](metadata-architecture-overview.md)

@@ -1,4 +1,4 @@
-Imports Microsoft.VisualStudio.TestTools.UnitTesting
+﻿Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
 Namespace PrimeService.Tests
     '<Sample_TestCode>
@@ -23,18 +23,18 @@ Namespace PrimeService.Tests
         <DataRow(7)>
         Public Sub IsPrime_PrimesLessThan10_ReturnTrue(value As Integer)
             Dim result As Boolean = _primeService.IsPrime(value)
- 
+
             Assert.IsTrue(result, $"{value} should be prime")
         End Sub
 
         <DataTestMethod>
         <DataRow(4)>
         <DataRow(6)>
-        <DataRow(8)> 
-        <DataRow(9)> 
+        <DataRow(8)>
+        <DataRow(9)>
         Public Sub IsPrime_NonPrimesLessThan10_ReturnFalse(value As Integer)
             Dim result As Boolean = _primeService.IsPrime(value)
- 
+
             Assert.IsFalse(result, $"{value} should not be prime")
         End Sub
     End Class

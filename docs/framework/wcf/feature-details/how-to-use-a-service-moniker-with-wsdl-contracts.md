@@ -50,5 +50,5 @@ There are situations when you may want to have a completely self-contained COM I
   
 ## See also
 
-- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+- [Getting Started](../samples/getting-started-sample.md)
+- [Integrating with COM Applications Overview](integrating-with-com-applications-overview.md)

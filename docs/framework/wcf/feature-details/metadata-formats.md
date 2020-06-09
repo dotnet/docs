@@ -19,5 +19,5 @@ Windows Communication Foundation (WCF) supports the metadata formats in the foll
   
 ## See also
 
-- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
-- [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)
+- [Web Services Protocols Supported by System-Provided Interoperability Bindings](web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
+- [WSDL and Policy](wsdl-and-policy.md)

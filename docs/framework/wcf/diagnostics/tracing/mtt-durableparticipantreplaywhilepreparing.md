@@ -15,6 +15,6 @@ Receiving this error can indicate that a Durable participant (including Subordin
   
 ## See also
 
-- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
-- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
-- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Tracing](index.md)
+- [Using Tracing to Troubleshoot Your Application](using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../index.md)

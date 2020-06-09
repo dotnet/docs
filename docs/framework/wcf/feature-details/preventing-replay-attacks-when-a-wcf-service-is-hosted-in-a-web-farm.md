@@ -11,5 +11,5 @@ When using message security WCF prevents replay attacks by creating a NONCE out 
   
 ## See also
 
-- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
-- [SymmetricSecurityBindingElement](../../../../docs/framework/wcf/diagnostics/wmi/symmetricsecuritybindingelement.md)
+- [Message Security](message-security-in-wcf.md)
+- [SymmetricSecurityBindingElement](../diagnostics/wmi/symmetricsecuritybindingelement.md)

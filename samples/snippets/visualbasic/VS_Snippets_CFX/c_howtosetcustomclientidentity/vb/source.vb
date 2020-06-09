@@ -9,7 +9,7 @@ Imports System.ServiceModel.Dispatcher
 Imports System.ServiceModel.Channels
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples
     <System.Diagnostics.DebuggerStepThroughAttribute(), _
     System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _

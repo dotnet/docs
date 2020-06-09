@@ -7,7 +7,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.Runtime.Serialization
 '</snippet0>
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum)>
 Namespace Samples1
 
     <ServiceContract(ProtectionLevel:=ProtectionLevel.EncryptAndSign)> _

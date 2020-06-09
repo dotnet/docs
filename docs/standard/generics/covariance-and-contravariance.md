@@ -1,5 +1,6 @@
 ---
 title: "Covariance and Contravariance in Generics"
+description: Learn about covariance, which allows you to use a more derived type, and contravariance, which allows you to use a less derived type, in .NET generics.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

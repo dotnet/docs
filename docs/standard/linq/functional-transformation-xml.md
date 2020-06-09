@@ -23,7 +23,7 @@ In general, the most effective approach to transforming XML from one shape to an
 
 Microsoft offers two functional transformation technologies for use on XML documents: XSLT and LINQ to XML. XSLT is supported in the <xref:System.Xml.Xsl> managed namespace and in the native COM implementation of MSXML. Although XSLT is a robust technology for manipulating XML documents, it requires expertise in a specialized domain, namely the XSLT language and its supporting APIs.
 
-LINQ to XML provides the tools necessary to code pure functional transformations in an expressive and powerful way, within C# or Visual Basic code. For example, many of the examples in the LINQ to XML documentation use a pure functional approach. Also, in the [Tutorial: Manipulating Content in a WordprocessingML Document](shape-wordprocessingml-documents.md) tutorial, we use LINQ to XML in a functional approach to manipulate information in a Microsoft Word document.
+LINQ to XML provides the tools necessary to code pure functional transformations in an expressive and powerful way, within C# or Visual Basic code. For example, many of the examples in the LINQ to XML documentation use a pure functional approach. Also, in the [Tutorial: Manipulating Content in a WordprocessingML Document](xml-shape-wordprocessingml-documents.md) tutorial, we use LINQ to XML in a functional approach to manipulate information in a Microsoft Word document.
 
 For a more complete comparison of LINQ to XML with other Microsoft XML technologies, see [LINQ to XML vs. other XML technologies](linq-xml-vs-xml-technologies.md).
 
@@ -32,5 +32,5 @@ XSLT is the recommended tool for  document-centric transformations when the sour
 ## See also
 
 - [Introduction to pure functional transformations](pure-functional-transformations.md)
-- [Tutorial: Manipulate content in a WordprocessingML document](shape-wordprocessingml-documents.md)
+- [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents.md)
 - [LINQ to XML vs. other XML technologies](linq-xml-vs-xml-technologies.md)

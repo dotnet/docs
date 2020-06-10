@@ -25,8 +25,6 @@ Begin by running the Debug version of the app. The Debug build configuration tur
 
 ## Set a breakpoint
 
-<!-- markdownlint-disable MD025 -->
-
 1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window on that line. Another way to set a breakpoint is by placing the cursor in the line of code and then pressing **F9** or choosing **Debug** > **Toggle Breakpoint** from the menu bar.
 
    A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.

@@ -21,8 +21,6 @@ This tutorial shows how to create and run a .NET Core console application in Vis
 
 ## Create the app
 
-<!-- markdownlint-disable MD025 -->
-
 1. Open Visual Studio 2019.
 
 1. Create a new .NET Core console app project named "HelloWorld".

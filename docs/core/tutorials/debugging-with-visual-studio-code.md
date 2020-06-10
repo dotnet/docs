@@ -29,7 +29,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Open the *Program.cs* file.
 
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Another way to set a breakpoint is by selecting **Run** > **Toggle Breakpoint** from the menu.
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or selecting **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
 
    Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
@@ -143,7 +143,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Terminal** tab, and press any key to exit the program and stop debugging.
 
-1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Run > Toggle Breakpoint** while the line of code is selected.
+1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 
 1. If you get a warning that the breakpoint condition will be lost, select **Remove Breakpoint**.
 

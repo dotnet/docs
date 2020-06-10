@@ -31,15 +31,15 @@ By default, Visual Studio uses the Debug build configuration, so you don't need 
 
 A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
 
-1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press ⌘ \\ (<kbd>Command</kbd>+<kbd>\\</kbd>). Another way to set a breakpoint is by selecting **Run** > **Toggle Breakpoint** from the menu.
+1. Set a breakpoint on the line that displays the name, date, and time. To do that, place the cursor in the line of code and press <kbd>⌘</kbd><kbd>\\</kbd> (<kbd>command</kbd>+<kbd>\\</kbd>). Another way to set a breakpoint is by selecting **Run** > **Toggle Breakpoint** from the menu.
 
    Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
-1. Press ⌘ ↵ (<kbd>Command</kbd>+<kbd>Enter</kbd>) to start the program in debugging mode. Another way to start debugging is by choosing **Run** > **Start Debugging** from the menu.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to start the program in debugging mode. Another way to start debugging is by choosing **Run** > **Start Debugging** from the menu.
 
-1. Enter a string in the terminal window when the program prompts for a name, and then press <kbd>Enter</kbd>.
+1. Enter a string in the terminal window when the program prompts for a name, and then press <kbd>enter</kbd>.
 
 1. Program execution stops when it reaches the breakpoint, before the `Console.WriteLine` method executes.
 
@@ -51,9 +51,9 @@ The **Immediate** window lets you interact with the application you're debugging
 
 1. If the **Immediate** window is not visible, display it by choosing **View** > **Debug Pads** > **Immediate**.
 
-1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>Enter</kbd>.
+1. Enter `name = "Gracie"` in the **Immediate** window and press <kbd>enter</kbd>.
 
-1. Enter `date = date.AddDays(1)` in the **Immediate** window and press <kbd>Enter</kbd>.
+1. Enter `date = date.AddDays(1)` in the **Immediate** window and press <kbd>enter</kbd>.
 
    The **Immediate** window displays the new value of the string variable and the properties of the <xref:System.DateTime> value.
 
@@ -63,7 +63,7 @@ The **Immediate** window lets you interact with the application you're debugging
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/locals-window.png" alt-text="Locals Window in Visual Studio":::
 
-1. Press ⌘ ↵ (<kbd>Command</kbd>+<kbd>Enter</kbd>) to continue debugging.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
    The values displayed in the terminal correspond to the changes you made in the **Immediate** window.
 
@@ -93,19 +93,19 @@ The program displays a string that the user enters. What happens if the user doe
 
    Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times.
 
-1. Press ⌘ ↵ (<kbd>Command</kbd>+<kbd>Enter</kbd>) to start debugging.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
-1. In the terminal window, press <kbd>Enter</kbd> when prompted to enter your name.
+1. In the terminal window, press <kbd>enter</kbd> when prompted to enter your name.
 
    Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint.
 
 1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method. In this case, `Main` is the currently executing method. Observe that the value of the `name` variable is `""`, that is, <xref:System.String.Empty?displayProperty=nameWithType>.
 
-1. You can also see that the value is an empty string by entering the `name` variable name in the **Immediate** window and pressing <kbd>Enter</kbd>.
+1. You can also see that the value is an empty string by entering the `name` variable name in the **Immediate** window and pressing <kbd>enter</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/immediate-window-output.png" alt-text="Immediate window showing name is an empty string":::
 
-1. Press ⌘ ↵ (<kbd>Command</kbd>+<kbd>Enter</kbd>) to continue debugging.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to continue debugging.
 
 1. In the terminal window, press any key to exit the program.
 
@@ -117,13 +117,13 @@ The program displays a string that the user enters. What happens if the user doe
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and follow program flow through a small part of your program code. Since this program is small, you can step through the entire program.
 
-1. Set a breakpoint on the curly brace that marks the start of the `Main` method (press <kbd>Command</kbd>+<kbd>\\</kbd>).
+1. Set a breakpoint on the curly brace that marks the start of the `Main` method (press <kbd>command</kbd>+<kbd>\\</kbd>).
 
-1. Press ⌘ ↵ (<kbd>Command</kbd>+<kbd>Enter</kbd>) to start debugging.
+1. Press <kbd>⌘</kbd><kbd>↵</kbd> (<kbd>command</kbd>+<kbd>enter</kbd>) to start debugging.
 
    Visual Studio stops on the line with the breakpoint.
 
-1. Press ⇧ ⌘ I (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>I</kbd>) or select **Run** > **Step Into** to advance one line.
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>) or select **Run** > **Step Into** to advance one line.
 
    Visual Studio highlights and displays an arrow beside the next line of execution.
 
@@ -131,25 +131,25 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank terminal.
 
-1. Press ⇧ ⌘ I (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>I</kbd>).
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
    Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the terminal displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing <kbd>Enter</kbd>.
+1. Respond to the prompt by entering a string in the console window and pressing <kbd>enter</kbd>.
 
-1. Press ⇧ ⌘ I (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>I</kbd>).
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
    Visual Studio highlights the statement that includes the `date` variable assignment. The **Locals** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The terminal displays the string you entered at the prompt.
 
-1. Press ⇧ ⌘ I (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>I</kbd>).
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
    The **Locals** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property. The terminal is unchanged.
 
-1. Press ⇧ ⌘ I (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>I</kbd>).
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>I</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>I</kbd>).
 
    Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The terminal displays the formatted string.
 
-1. Press ⇧ ⌘ U (<kbd>Shift</kbd>+<kbd>Command</kbd>+<kbd>U</kbd>) or select **Run** > **Step Out**.
+1. Press <kbd>⇧</kbd><kbd>⌘</kbd><kbd>U</kbd> (<kbd>shift</kbd>+<kbd>command</kbd>+<kbd>U</kbd>) or select **Run** > **Step Out**.
 
    The terminal displays a message and waits for you to press a key.
 
@@ -165,7 +165,7 @@ To build and test the Release version of the console application, do the followi
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with debug highlighted":::
 
-1. Press ⌥ ⌘ ↵ (<kbd>Option</kbd>+<kbd>Command</kbd>+<kbd>Enter</kbd>) to run without debugging.
+1. Press <kbd>⌥</kbd><kbd>⌘</kbd><kbd>↵</kbd> (<kbd>option</kbd>+<kbd>command</kbd>+<kbd>enter</kbd>) to run without debugging.
 
 ## Next steps
 

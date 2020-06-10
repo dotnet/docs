@@ -12,4 +12,4 @@ An argument has been defined as an empty string ("").
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

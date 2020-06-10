@@ -1,5 +1,6 @@
 ---
 title: "Managed Threading Best Practices"
+description: Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
 ms.date: "10/15/2018"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -15,7 +16,7 @@ ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
 Multithreading requires careful programming. For most tasks, you can reduce complexity by queuing requests for execution by thread pool threads. This topic addresses more difficult situations, such as coordinating the work of multiple threads, or handling threads that block.  
   
 > [!NOTE]
-> Starting with the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../../../docs/standard/parallel-programming/index.md).  
+> Starting with the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs that reduce some of the complexity and risks of multi-threaded programming. For more information, see [Parallel Programming in .NET](../parallel-programming/index.md).  
   
 ## Deadlocks and race conditions  
  Multithreading solves problems with throughput and responsiveness, but in doing so it introduces new problems: deadlocks and race conditions.  
@@ -58,7 +59,7 @@ else {
   
  In a multithreaded application, a thread that has loaded and incremented the value might be preempted by another thread which performs all three steps; when the first thread resumes execution and stores its value, it overwrites `objCt` without taking into account the fact that the value has changed in the interim.  
   
- This particular race condition is easily avoided by using methods of the <xref:System.Threading.Interlocked> class, such as <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>. To read about other techniques for synchronizing data among multiple threads, see [Synchronizing Data for Multithreading](../../../docs/standard/threading/synchronizing-data-for-multithreading.md).  
+ This particular race condition is easily avoided by using methods of the <xref:System.Threading.Interlocked> class, such as <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>. To read about other techniques for synchronizing data among multiple threads, see [Synchronizing Data for Multithreading](synchronizing-data-for-multithreading.md).  
   
  Race conditions can also occur when you synchronize the activities of multiple threads. Whenever you write a line of code, you must consider what might happen if a thread were preempted before executing the line (or before any of the individual machine instructions that make up the line), and another thread overtook it.  
   
@@ -73,7 +74,7 @@ else {
 
 Whether there are multiple processors or only one processor available on a system can influence multithreaded architecture. For more information, see [Number of Processors](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/1c9txz50(v%3dvs.71)#number-of-processors).
 
-Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> property to determine the number of processors available at runtime.
+Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> property to determine the number of processors available at run time.
   
 ## General recommendations  
  Consider the following guidelines when using multiple threads:  
@@ -84,7 +85,7 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
   
 - Don't control the execution of worker threads from your main program (using events, for example). Instead, design your program so that worker threads are responsible for waiting until work is available, executing it, and notifying other parts of your program when finished. If your worker threads do not block, consider using thread pool threads. <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=nameWithType> is useful in situations where worker threads block.  
   
-- Don't use types as lock objects. That is, avoid code such as `lock(typeof(X))` in C# or `SyncLock(GetType(X))` in Visual Basic, or the use of <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> with <xref:System.Type> objects. For a given type, there is only one instance of <xref:System.Type?displayProperty=nameWithType> per application domain. If the type you take a lock on is public, code other than your own can take locks on it, leading to deadlocks. For additional issues, see [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md).  
+- Don't use types as lock objects. That is, avoid code such as `lock(typeof(X))` in C# or `SyncLock(GetType(X))` in Visual Basic, or the use of <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> with <xref:System.Type> objects. For a given type, there is only one instance of <xref:System.Type?displayProperty=nameWithType> per application domain. If the type you take a lock on is public, code other than your own can take locks on it, leading to deadlocks. For additional issues, see [Reliability Best Practices](../../framework/performance/reliability-best-practices.md).  
   
 - Use caution when locking on instances, for example `lock(this)` in C# or `SyncLock(Me)` in Visual Basic. If other code in your application, external to the type, takes a lock on the object, deadlocks could occur.  
   
@@ -168,5 +169,5 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
   
 ## See also
 
-- [Threading](../../../docs/standard/threading/index.md)
-- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+- [Threading](index.md)
+- [Threads and Threading](threads-and-threading.md)

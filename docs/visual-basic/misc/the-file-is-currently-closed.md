@@ -13,4 +13,4 @@ An attempt has been made to perform an operation that can only be performed on a
 ## See also
 
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
-- [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)
+- [File Access with Visual Basic](../developing-apps/programming/drives-directories-files/file-access.md)

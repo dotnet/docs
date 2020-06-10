@@ -14,4 +14,4 @@ Either you tried to call the `Friend` procedure of a class, or you tried to acce
   
 ## See also
 
-- [Friend](../../visual-basic/language-reference/modifiers/friend.md)
+- [Friend](../language-reference/modifiers/friend.md)

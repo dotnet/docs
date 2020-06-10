@@ -1,5 +1,6 @@
 ---
 title: "Observer Design Pattern"
+description: Learn about the observer design pattern in .NET. This pattern lets a subscriber register with and receive notifications from a provider.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -87,6 +88,6 @@ The following example contains the application entry point that instantiates the
 
 |Title|Description|
 |-----------|-----------------|
-|[Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)|Describes best practices to adopt when developing applications that implement the observer design pattern.|
-|[How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)|Provides a step-by-step implementation of a provider for a temperature monitoring application.|
-|[How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)|Provides a step-by-step implementation of an observer for a temperature monitoring application.|
+|[Observer Design Pattern Best Practices](observer-design-pattern-best-practices.md)|Describes best practices to adopt when developing applications that implement the observer design pattern.|
+|[How to: Implement a Provider](how-to-implement-a-provider.md)|Provides a step-by-step implementation of a provider for a temperature monitoring application.|
+|[How to: Implement an Observer](how-to-implement-an-observer.md)|Provides a step-by-step implementation of an observer for a temperature monitoring application.|

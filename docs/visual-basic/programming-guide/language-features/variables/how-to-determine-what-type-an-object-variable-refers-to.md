@@ -9,7 +9,7 @@ ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
 ---
 # How to: Determine What Type an Object Variable Refers To (Visual Basic)
 
-An object variable contains a pointer to data that is stored elsewhere. The type of that data can change during run time. At any moment, you can use the <xref:System.Type.GetTypeCode%2A> method to determine the current run-time type, or the [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md) to find out if the current run-time type is compatible with a specified type.
+An object variable contains a pointer to data that is stored elsewhere. The type of that data can change during run time. At any moment, you can use the <xref:System.Type.GetTypeCode%2A> method to determine the current run-time type, or the [TypeOf Operator](../../../language-reference/operators/typeof-operator.md) to find out if the current run-time type is compatible with a specified type.
 
 ### To determine the exact type an object variable currently refers to
 
@@ -32,7 +32,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
 
 ### To determine whether an object variable's type is compatible with a specified type
 
-- Use the `TypeOf` operator in combination with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.
+- Use the `TypeOf` operator in combination with the [Is Operator](../../../language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.
 
     ```vb
     If TypeOf objA Is System.Windows.Forms.Control Then
@@ -42,7 +42,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
 
     The `TypeOf`...`Is` expression returns `True` if the object's run-time type is compatible with the specified type.
 
-    The criterion for compatibility depends on whether the specified type is a class, structure, or interface. In general, the types are compatible if the object is of the same type as, inherits from, or implements the specified type. For more information, see [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md).
+    The criterion for compatibility depends on whether the specified type is a class, structure, or interface. In general, the types are compatible if the object is of the same type as, inherits from, or implements the specified type. For more information, see [TypeOf Operator](../../../language-reference/operators/typeof-operator.md).
 
 ## Compile the code
 
@@ -54,6 +54,6 @@ Note that the specified type cannot be a variable or expression. It must be the 
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Type.GetTypeCode%2A>
 - <xref:System.TypeCode>
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Object Variables](object-variables.md)
+- [Object Variable Values](object-variable-values.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)

@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
 ---
 # Attribute and Namespace Node Navigation Using XPathNavigator
-The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation methods, the first set, found in the [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md) topic, are used to navigate *node sets* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object. The second set, described in this topic, are used to navigate *attribute and namespace nodes* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  
+The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation methods, the first set, found in the [Node Set Navigation Using XPathNavigator](node-set-navigation-using-xpathnavigator.md) topic, are used to navigate *node sets* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object. The second set, described in this topic, are used to navigate *attribute and namespace nodes* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  
   
 ## Attribute Node Navigation  
  Attributes are properties of an element, not children of an element. This distinction is important, because of the methods of the <xref:System.Xml.XPath.XPathNavigator> class used to navigate sibling, parent, and child nodes.  
@@ -93,7 +93,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>
 - <xref:System.Xml.XPath.XPathNavigator>
-- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md)
-- [Extract XML Data Using XPathNavigator](../../../../docs/standard/data/xml/extract-xml-data-using-xpathnavigator.md)
-- [Accessing Strongly Typed XML Data Using XPathNavigator](../../../../docs/standard/data/xml/accessing-strongly-typed-xml-data-using-xpathnavigator.md)
+- [Process XML Data Using the XPath Data Model](process-xml-data-using-the-xpath-data-model.md)
+- [Node Set Navigation Using XPathNavigator](node-set-navigation-using-xpathnavigator.md)
+- [Extract XML Data Using XPathNavigator](extract-xml-data-using-xpathnavigator.md)
+- [Accessing Strongly Typed XML Data Using XPathNavigator](accessing-strongly-typed-xml-data-using-xpathnavigator.md)

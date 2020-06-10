@@ -26,5 +26,5 @@ public interface IRequestReplyCalculator
   
 ## See also
 
-- [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)
-- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [One-Way Services](one-way-services.md)
+- [Duplex Services](duplex-services.md)

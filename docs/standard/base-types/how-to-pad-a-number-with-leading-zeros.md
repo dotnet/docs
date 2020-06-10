@@ -1,5 +1,6 @@
 ---
 title: "How to: Pad a Number with Leading Zeros"
+description: Learn to pad a number with leading zeros. Add leading zeros to integers or numeric values to a specific total length or a specific number of leading zeros.
 ms.date: "02/25/2019"
 ms.technology: dotnet-standard
 dev_langs:
@@ -15,7 +16,7 @@ ms.assetid: 0b2c2cb5-c580-4891-8d81-cb632f5ec384
 
 # How to: Pad a Number with Leading Zeros
 
-You can add leading zeros to an integer by using the "D" [standard numeric format string](../../../docs/standard/base-types/standard-numeric-format-strings.md) with a precision specifier. You can add leading zeros to both integer and floating-point numbers by using a [custom numeric format string](../../../docs/standard/base-types/custom-numeric-format-strings.md). This article shows how to use both methods to pad a number with leading zeros.
+You can add leading zeros to an integer by using the "D" [standard numeric format string](standard-numeric-format-strings.md) with a precision specifier. You can add leading zeros to both integer and floating-point numbers by using a [custom numeric format string](custom-numeric-format-strings.md). This article shows how to use both methods to pad a number with leading zeros.
 
 ## To pad an integer with leading zeros to a specific length
 
@@ -27,7 +28,7 @@ You can add leading zeros to an integer by using the "D" [standard numeric forma
 
     - To display the integer as a hexadecimal value, call its `ToString(String)` method and pass the string "X*n*" as the value of the format parameter, where *n* represents the minimum length of the string.
 
-You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md), or you can call a method, such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, that uses [composite formatting](../../../docs/standard/base-types/composite-formatting.md).
+You can also use the format string in an interpolated string in both [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md), or you can call a method, such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, that uses [composite formatting](composite-formatting.md).
 
 The following example formats several integer values with leading zeros so that the total length of the formatted number is at least eight characters.
 
@@ -97,6 +98,6 @@ The following example pads two <xref:System.Double> values with five leading zer
 
 ## See also
 
-- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)
-- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
-- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)
+- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
+- [Standard Numeric Format Strings](standard-numeric-format-strings.md)
+- [Composite Formatting](composite-formatting.md)

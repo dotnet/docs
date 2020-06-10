@@ -20,4 +20,4 @@ You lost your connection to the remote process's object library or type library.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

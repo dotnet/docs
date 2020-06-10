@@ -1,5 +1,6 @@
 ---
 title: "Commonly Used Collection Types"
+description: Learn about commonly used collection types in .NET, such as hash tables, queues, stacks, bags, dictionaries, and lists.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -22,16 +23,16 @@ Collection types are the common variations of data collections, such as hash tab
   
  Collections can vary, depending on how the elements are stored, how they are sorted, how searches are performed, and how comparisons are made. The <xref:System.Collections.Queue> class and the <xref:System.Collections.Generic.Queue%601> generic class provide first-in-first-out lists, while the <xref:System.Collections.Stack> class and the <xref:System.Collections.Generic.Stack%601> generic class provide last-in-first-out lists. The <xref:System.Collections.SortedList> class and the <xref:System.Collections.Generic.SortedList%602> generic class provide sorted versions of the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class. The elements of a <xref:System.Collections.Hashtable> or a <xref:System.Collections.Generic.Dictionary%602> are accessible only by the key of the element, but the elements of a <xref:System.Collections.SortedList> or a <xref:System.Collections.ObjectModel.KeyedCollection%602> are accessible either by the key or by the index of the element. The indexes in all collections are zero-based, except <xref:System.Array>, which allows arrays that are not zero-based.  
   
- The LINQ to Objects feature allows you to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).  
+ The LINQ to Objects feature allows you to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering, and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).  
   
 ## Related Topics  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Collections and Data Structures](../../../docs/standard/collections/index.md)|Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.|  
-|[Hashtable and Dictionary Collection Types](../../../docs/standard/collections/hashtable-and-dictionary-collection-types.md)|Describes the features of generic and nongeneric hash-based dictionary types.|  
-|[Sorted Collection Types](../../../docs/standard/collections/sorted-collection-types.md)|Describes classes that provide sorting functionality for lists and sets.|  
-|[Generics](../../../docs/standard/generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the .NET Framework. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
+|[Collections and Data Structures](index.md)|Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.|  
+|[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)|Describes the features of generic and nongeneric hash-based dictionary types.|  
+|[Sorted Collection Types](sorted-collection-types.md)|Describes classes that provide sorting functionality for lists and sets.|  
+|[Generics](../generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the .NET Framework. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
   
 ## Reference  
  <xref:System.Collections?displayProperty=nameWithType>  

@@ -36,30 +36,30 @@ Specifies that a property or procedure overrides an identically named property o
 
 - **Additional Matching.** In addition to matching the signature of the base class version, this declaration must also match it in the following respects:
 
-  - Access-level modifier (such as [Public](../../../visual-basic/language-reference/modifiers/public.md))
+  - Access-level modifier (such as [Public](public.md))
 
-  - Passing mechanism of each parameter ([ByVal](../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../visual-basic/language-reference/modifiers/byref.md))
+  - Passing mechanism of each parameter ([ByVal](byval.md) or [ByRef](byref.md))
 
   - Constraint lists on each type parameter of a generic procedure
 
-- **Shadowing and Overriding.** Both shadowing and overriding redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).
+- **Shadowing and Overriding.** Both shadowing and overriding redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md).
 
 If you use `Overrides`, the compiler implicitly adds `Overloads` so that your library APIs work with C# more easily.
 
 The `Overrides` modifier can be used in these contexts:
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../statements/function-statement.md)
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../statements/property-statement.md)
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
 
 ## See also
 
-- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)
-- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
-- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Type List](../../../visual-basic/language-reference/statements/type-list.md)
+- [MustOverride](mustoverride.md)
+- [NotOverridable](notoverridable.md)
+- [Overridable](overridable.md)
+- [Keywords](../keywords/index.md)
+- [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Type List](../statements/type-list.md)

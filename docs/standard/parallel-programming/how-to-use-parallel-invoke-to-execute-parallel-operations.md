@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Parallel.Invoke to Execute Parallel Operations"
+description: See how to use the Parallel.Invoke method in the Task Parallel Library (TPL), which does parallel operations on a shared data source in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -15,7 +16,7 @@ ms.assetid: 6b3ecd79-dec9-4ce1-abf4-62e5392a59c6
 This example shows how to parallelize operations by using <xref:System.Threading.Tasks.Parallel.Invoke%2A> in the Task Parallel Library. Three operations are performed on a shared data source. The operations can be executed in parallel in a straightforward manner, because none of them modifies the source.
 
 > [!NOTE]
-> This documentation uses lambda expressions to define delegates in TPL. If you aren't familiar with lambda expressions in C# or Visual Basic, see [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+> This documentation uses lambda expressions to define delegates in TPL. If you aren't familiar with lambda expressions in C# or Visual Basic, see [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## Example
 
@@ -32,6 +33,6 @@ Copy and paste the entire example into a Microsoft Visual Studio project and pre
 
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
-- [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
+- [Parallel Programming](index.md)
+- [How to: Cancel a Task and Its Children](how-to-cancel-a-task-and-its-children.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

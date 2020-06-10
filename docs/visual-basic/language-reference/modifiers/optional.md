@@ -15,25 +15,25 @@ Specifies that a procedure argument can be omitted when the procedure is called.
 
 ## Remarks
 
-For each optional parameter, you must specify a constant expression as the default value of that parameter. If the expression evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the default value of the value data type is used as the default value of the parameter.
+For each optional parameter, you must specify a constant expression as the default value of that parameter. If the expression evaluates to [Nothing](../nothing.md), the default value of the value data type is used as the default value of the parameter.
 
 If the parameter list contains an optional parameter, every parameter that follows it must also be optional.
 
 The `Optional` modifier can be used in these contexts:
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../statements/function-statement.md)
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../statements/property-statement.md)
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
-
-> [!NOTE]
-> When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md).
+- [Sub Statement](../statements/sub-statement.md)
 
 > [!NOTE]
-> You can also define a procedure with optional parameters by using overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one that accepts the parameter and one that doesn’t. For more information, see [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md).
+> When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md).
+
+> [!NOTE]
+> You can also define a procedure with optional parameters by using overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one that accepts the parameter and one that doesn’t. For more information, see [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md).
 
 ## Example
 
@@ -66,6 +66,6 @@ The following example demonstrates how to call a procedure with arguments passed
 
 ## See also
 
-- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
-- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Parameter List](../statements/parameter-list.md)
+- [Optional Parameters](../../programming-guide/language-features/procedures/optional-parameters.md)
+- [Keywords](../keywords/index.md)

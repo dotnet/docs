@@ -14,4 +14,4 @@ An error occurred at the printer, but no other information was returned to the c
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

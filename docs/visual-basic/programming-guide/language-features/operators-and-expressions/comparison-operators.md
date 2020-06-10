@@ -32,7 +32,7 @@ Comparison operators compare two expressions and return a `Boolean` value that r
 |`>=` (Greater than or equal to)|Is the value of the first expression greater than or equal to the value of the second?|`23`   `>=`   `33    ' False`<br /><br /> `23`   `>=`   `23    ' True`<br /><br /> `23`   `>=`   `12    ' True`|  
   
 ## Comparing Strings  
- Visual Basic compares strings using the [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md) as well as the numeric comparison operators. The `Like` operator allows you to specify a pattern. The string is then compared against the pattern, and if it matches, the result is `True`. Otherwise, the result is `False`. The numeric operators allow you to compare `String` values based on their sort order, as the following example shows.  
+ Visual Basic compares strings using the [Like Operator](../../../language-reference/operators/like-operator.md) as well as the numeric comparison operators. The `Like` operator allows you to specify a pattern. The string is then compared against the pattern, and if it matches, the result is `True`. Otherwise, the result is `False`. The numeric operators allow you to compare `String` values based on their sort order, as the following example shows.  
   
  `"73" < "9"`  
   
@@ -50,10 +50,10 @@ Comparison operators compare two expressions and return a `Boolean` value that r
   
  `' The result of the preceding comparison is True.`  
   
- The sort order is based on either a binary comparison or a textual comparison depending on the setting of `Option Compare`. For more information see [Option Compare Statement](../../../../visual-basic/language-reference/statements/option-compare-statement.md).  
+ The sort order is based on either a binary comparison or a textual comparison depending on the setting of `Option Compare`. For more information see [Option Compare Statement](../../../language-reference/statements/option-compare-statement.md).  
   
 ## Comparing Objects  
- Visual Basic compares two object reference variables with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) and the [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md). You can use either of these operators to determine if two reference variables refer to the same object instance. The following example illustrates this.  
+ Visual Basic compares two object reference variables with the [Is Operator](../../../language-reference/operators/is-operator.md) and the [IsNot Operator](../../../language-reference/operators/isnot-operator.md). You can use either of these operators to determine if two reference variables refer to the same object instance. The following example illustrates this.  
   
  [!code-vb[VbVbalrOperators#65](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#65)]  
   
@@ -80,13 +80,13 @@ Comparison operators compare two expressions and return a `Boolean` value that r
   
  In the preceding example, the `TypeOf x Is Control` expression evaluates to `True` because the type of `x` is `Button`, which inherits from `Control`.  
   
- For more information, see [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md).  
+ For more information, see [TypeOf Operator](../../../language-reference/operators/typeof-operator.md).  
   
 ## See also
 
-- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
-- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
-- [Operators](../../../../visual-basic/language-reference/operators/index.md)
-- [Arithmetic Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
-- [Concatenation Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md)
-- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [Value Comparisons](value-comparisons.md)
+- [Comparison Operators](../../../language-reference/operators/comparison-operators.md)
+- [Operators](../../../language-reference/operators/index.md)
+- [Arithmetic Operators in Visual Basic](arithmetic-operators.md)
+- [Concatenation Operators in Visual Basic](concatenation-operators.md)
+- [Logical and Bitwise Operators in Visual Basic](logical-and-bitwise-operators.md)

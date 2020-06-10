@@ -48,20 +48,20 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
   
  In the preceding example, array variables `arrayA` and `arrayB` are considered to be of the same data type — `Byte()` — even though they are initialized to different lengths. Variables `arrayB` and `arrayC` are not of the same type because their element types are different. Variables `arrayC` and `arrayD` are not of the same type because their ranks are different. Variables `arrayD` and `arrayE` have the same type — `Short(,)` — because their ranks and element types are the same, even though `arrayD` is not yet initialized.  
   
- For more information on arrays, see [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more information on arrays, see [Arrays](../arrays/index.md).  
   
 ## Class Types  
  There is no single data type comprising all classes. Although one class can inherit from another class, each is a separate data type. Multiple instances of the same class are of the same data type. If you assign one class instance variable to another, not only do they have the same data type, they point to the same class instance in memory.  
   
- For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
+ For more information on classes, see [Objects and Classes](../objects-and-classes/index.md).  
   
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
-- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [How to: Hold More Than One Value in a Variable](../../../../visual-basic/programming-guide/language-features/data-types/how-to-hold-more-than-one-value-in-a-variable.md)
+- [Data Types](index.md)
+- [Elementary Data Types](elementary-data-types.md)
+- [Generic Types in Visual Basic](generic-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](type-conversions.md)
+- [Structures](structures.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [How to: Hold More Than One Value in a Variable](how-to-hold-more-than-one-value-in-a-variable.md)

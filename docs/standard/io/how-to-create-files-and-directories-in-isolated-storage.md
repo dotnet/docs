@@ -23,6 +23,8 @@ After you have obtained an isolated store, you can create directories and files 
  To create a file, use  the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile%2A?displayProperty=nameWithType> method.  
   
  In the Windows operating system, isolated storage file and directory names are case-insensitive. That is, if you create a file named `ThisFile.txt`, and then create another file named `THISFILE.TXT`, only one file is created. The file name keeps its original casing for display purposes.  
+
+ Isolated storage file creation will throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException> if the path contains a directory that does not exist.
   
 ## Example  
  The following code example illustrates how to create files and directories in an isolated store.  
@@ -34,4 +36,4 @@ After you have obtained an isolated store, you can create directories and files 
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)

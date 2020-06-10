@@ -1,5 +1,6 @@
 ---
 title: "Server and Database Roles in SQL Server"
+description: Learn about fixed server and fixed database roles, which have a fixed set of permissions assigned to them. SQL Server uses role-based security.
 ms.date: "03/30/2017"
 ms.assetid: 5482dfdb-e498-4614-8652-b174829eed13
 ---

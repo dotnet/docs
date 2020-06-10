@@ -1,5 +1,6 @@
 ---
 title: "Names of Assemblies and DLLs"
+description: Learn guidelines for naming assemblies and dynamic-link libraries (DLLs). An assembly can span one or more files, but it usually maps one-to-one with a DLL.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -30,5 +31,5 @@ An assembly is the unit of deployment and identity for managed code programs. Al
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

@@ -1,5 +1,6 @@
 ---
 title: "Choosing Between Class and Struct"
+description: Learn how to decide whether to design a type as a class, or to design a type as a struct. Understand how reference types and value types differ in .NET.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -48,5 +49,5 @@ One of the basic design decisions every framework designer faces is whether to d
 
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Type Design Guidelines](type.md)
+- [Framework Design Guidelines](index.md)

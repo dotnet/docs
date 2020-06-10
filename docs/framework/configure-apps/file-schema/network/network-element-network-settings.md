@@ -1,5 +1,6 @@
 ---
 title: "<network> Element (Network Settings)"
+description: The <network> network settings element configures the network options for an external SMTP server options in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#network"

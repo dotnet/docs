@@ -1,5 +1,6 @@
 ---
 title: "How to: Strip Invalid Characters from a String"
+description: Read an example that shows how to strip potentially harmful characters from a string by using the static Regex.Replace method.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -30,4 +31,4 @@ The following example uses the static <xref:System.Text.RegularExpressions.Regex
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

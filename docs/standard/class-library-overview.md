@@ -1,5 +1,6 @@
 ---
 title: ".NET class library overview"
+description: Learn about the .NET class library. .NET implementations include classes, interfaces, delegates, and value types to provide access to system functionality.
 ms.date: "02/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -70,7 +71,7 @@ ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
   
  The use of naming patterns to group related types into namespaces is a very useful way to build and document class libraries. However, this naming scheme has no effect on visibility, member access, inheritance, security, or binding. A namespace can be partitioned across multiple assemblies and a single assembly can contain types from multiple namespaces. The assembly provides the formal structure for versioning, deployment, security, loading, and visibility in the common language runtime.  
   
- For more information on namespaces and type names, see [Common Type System](../../docs/standard/base-types/common-type-system.md).  
+ For more information on namespaces and type names, see [Common Type System](base-types/common-type-system.md).  
   
 ## System namespace
 
@@ -104,6 +105,6 @@ ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
   
 ## See also
 
-- [Common Type System](../../docs/standard/base-types/common-type-system.md)
+- [Common Type System](base-types/common-type-system.md)
 - [.NET API Browser](../../api/index.md)
-- [Overview](../../docs/framework/get-started/overview.md)
+- [Overview](../framework/get-started/overview.md)

@@ -105,6 +105,6 @@ In the folder structure illustrated below, the top-level directory is *flower_ph
 Follow these tutorials to build machine learning apps with Model Builder:
 
 - [Predict prices using regression](../tutorials/predict-prices-with-model-builder.md)
-- [Analyze sentiment in a web application using binary classification](../tutorials/sentiment-analysis-model-builder.md )
+- [Analyze sentiment in a web application using binary classification](../tutorials/sentiment-analysis-model-builder.md)
 
 If you're training a model using code, [learn how to load data using the ML.NET API](load-data-ml-net.md).

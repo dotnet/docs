@@ -87,13 +87,13 @@ The sample demonstrates how to create a binding that is designed to support stre
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
-2. Ensure that you have performed the steps listed in [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+2. Ensure that you have performed the steps listed in [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-3. Ensure that you have performed the [Internet Information Services (IIS) Server Certificate Installation Instructions](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md).
+3. Ensure that you have performed the [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).
 
-4. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+4. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-5. To run the sample in a cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+5. To run the sample in a cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
 6. When the client window displays, type "Sample.txt". You should find a "Copy of Sample.txt" in your directory.
 
@@ -131,7 +131,7 @@ public class StreamedEchoService : IStreamedEchoService
 
 ## The WSStreamedHttpBinding Sample Client
 
-The client that is used to interact with the service using `WSStreamedHttpBinding` is located in the client subdirectory. Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert displays when you attempt to access an HTTPS address in your browser such as https://localhost/servicemodelsamples/service.svc. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. The code and the accompanying class are not required when using production certificates.
+The client that is used to interact with the service using `WSStreamedHttpBinding` is located in the client subdirectory. Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert displays when you attempt to access an HTTPS address in your browser such as `https://localhost/servicemodelsamples/service.svc`. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. The code and the accompanying class are not required when using production certificates.
 
 ```csharp
 // WARNING: This code is only required for test certificates such as those created by makecert. It is

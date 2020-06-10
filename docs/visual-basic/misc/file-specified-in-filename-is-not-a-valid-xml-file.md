@@ -21,4 +21,4 @@ The file name that you supplied is not a valid XML file. To specify the allowed 
 ## See also
 
 - <xref:System.Xml>
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

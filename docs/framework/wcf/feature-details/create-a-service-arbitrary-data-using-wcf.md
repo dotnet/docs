@@ -189,6 +189,6 @@ namespace ReceiveRawData
   
 ## See also
 
-- [UriTemplate and UriTemplateTable](../../../../docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md)
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
-- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+- [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)

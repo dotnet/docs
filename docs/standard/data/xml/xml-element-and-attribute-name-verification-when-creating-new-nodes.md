@@ -9,4 +9,4 @@ The XML Document Object Model (DOM) checks the validity of the names when creati
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

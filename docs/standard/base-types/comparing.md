@@ -1,5 +1,6 @@
 ---
 title: "Comparing Strings in .NET"
+description: Read about methods to compare strings in .NET. Learn about the Compare, CompareOrdinal, CompareTo, StartsWith, EndsWith, Equals, IndexOf, & LastIndexOf methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -53,7 +54,7 @@ ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
   
  This example displays `-1` to the console.  
   
- The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+ The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## CompareOrdinal  
  The <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType> method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the **Compare** method in the previous table.  
@@ -83,7 +84,7 @@ ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
   
  This example displays `-1` to the console.  
   
- All overloads of the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+ All overloads of the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## Equals  
  The **String.Equals** method can easily determine if two strings are the same. This case-sensitive method returns a **true** or **false** Boolean value. It can be used from an existing class, as illustrated in the next example. The following example uses the **Equals** method to determine whether a string object contains the phrase "Hello World".  
@@ -144,7 +145,7 @@ ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
-- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
+- [Basic String Operations](basic-string-operations.md)
+- [Performing Culture-Insensitive String Operations](../globalization-localization/performing-culture-insensitive-string-operations.md)
 - [Sorting Weight Tables (for .NET on Windows)](https://www.microsoft.com/download/details.aspx?id=10921)
 - [Default Unicode Collation Element Table (for .NET Core on Linux and macOS)](https://www.unicode.org/Public/UCA/latest/allkeys.txt)

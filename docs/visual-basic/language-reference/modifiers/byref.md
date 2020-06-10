@@ -15,13 +15,13 @@ Specifies that an argument is passed in such a way that the called procedure can
 ## Remarks  
  The `ByRef` modifier can be used in these contexts:  
   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+ [Declare Statement](../statements/declare-statement.md)  
   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Function Statement](../statements/function-statement.md)  
   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Sub Statement](../statements/sub-statement.md)  
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+- [Keywords](../keywords/index.md)
+- [Passing Arguments by Value and by Reference](../../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

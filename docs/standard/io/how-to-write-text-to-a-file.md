@@ -1,5 +1,6 @@
 ---
 title: "How to: Write text to a file"
+description: Learn ways to write or append text to a file for a .NET app. Use methods from the StreamWriter or File classes to write text synchronously or asynchronously.
 ms.date: "01/04/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -61,8 +62,8 @@ The following example shows how to write text to a new file and append new lines
 - <xref:System.IO.StreamWriter>
 - <xref:System.IO.Path>
 - <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
-- [How to: Read and write to a newly-created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)
+- [How to: Read and write to a newly-created data file](how-to-read-and-write-to-a-newly-created-data-file.md)
+- [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)
+- [File and stream I/O](index.md)

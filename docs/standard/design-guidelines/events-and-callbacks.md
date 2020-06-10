@@ -12,7 +12,7 @@ ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
 # Events and Callbacks
 Callbacks are extensibility points that allow a framework to call back into user code through a delegate. These delegates are usually passed to the framework through a parameter of a method.
 
- Events are a special case of callbacks that supports convenient and consistent syntax for supplying the delegate (an event handler). In addition, Visual Studio’s statement completion and designers provide help in using event-based APIs. (See [Event Design](../../../docs/standard/design-guidelines/event.md).)
+ Events are a special case of callbacks that supports convenient and consistent syntax for supplying the delegate (an event handler). In addition, Visual Studio’s statement completion and designers provide help in using event-based APIs. (See [Event Design](event.md).)
 
  ✔️ CONSIDER using callbacks to allow users to provide custom code to be executed by the framework.
 
@@ -24,7 +24,7 @@ Callbacks are extensibility points that allow a framework to call back into user
 
  ✔️ DO use the new `Func<...>`, `Action<...>`, or `Expression<...>` types instead of custom delegates, when defining APIs with callbacks.
 
- `Func<...>` and `Action<...>` represent generic delegates. `Expression<...>` represents function definitions that can be compiled and subsequently invoked at runtime but can also be serialized and passed to remote processes.
+ `Func<...>` and `Action<...>` represent generic delegates. `Expression<...>` represents function definitions that can be compiled and subsequently invoked at run time but can also be serialized and passed to remote processes.
 
  ✔️ DO measure and understand performance implications of using `Expression<...>`, instead of using `Func<...>` and `Action<...>` delegates.
 
@@ -38,5 +38,5 @@ Callbacks are extensibility points that allow a framework to call back into user
 
 ## See also
 
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Designing for Extensibility](designing-for-extensibility.md)
+- [Framework Design Guidelines](index.md)

@@ -31,4 +31,4 @@ Statements used in manipulating file contents must be appropriate to the mode in
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileSystem>
-- [Troubleshooting: Reading from and Writing to Text Files](../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Troubleshooting: Reading from and Writing to Text Files](../../developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

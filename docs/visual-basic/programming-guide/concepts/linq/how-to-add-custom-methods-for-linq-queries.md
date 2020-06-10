@@ -7,7 +7,7 @@ ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
 
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.
 
-When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).
+When you extend the <xref:System.Collections.Generic.IEnumerable%601> interface, you can apply your custom methods to any enumerable collection. For more information, see [Extension Methods](../../language-features/procedures/extension-methods.md).
 
 ## Adding an Aggregate Method
 
@@ -47,7 +47,7 @@ End Module
 You call this extension method for any enumerable collection in the same way you call other aggregate methods from the <xref:System.Collections.Generic.IEnumerable%601> interface.
 
 > [!NOTE]
-> In Visual Basic, you can either use a method call or standard query syntax for the `Aggregate` or `Group By` clause. For more information, see [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).
+> In Visual Basic, you can either use a method call or standard query syntax for the `Aggregate` or `Group By` clause. For more information, see [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../language-reference/queries/group-by-clause.md).
 
 The following code example shows how to use the `Median` method for an array of type `double`.
 
@@ -201,4 +201,4 @@ Next
 ## See also
 
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [Extension Methods](../../language-features/procedures/extension-methods.md)

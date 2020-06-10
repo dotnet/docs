@@ -1,5 +1,6 @@
 ---
 title: "Selecting a Collection Class"
+description: Learn how to decide which collection class in .NET to choose. Using the wrong type can restrict your use of the collection.
 ms.date: "03/18/2019"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -29,9 +30,9 @@ Consider the following questions:
 
 - Do you need to access the elements in a certain order, such as FIFO, LIFO, or random?
 
-  - The <xref:System.Collections.Queue> class, as well as the <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Immutable.ImmutableQueue%601> generic classes all offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - The <xref:System.Collections.Queue> class, as well as the <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, and <xref:System.Collections.Immutable.ImmutableQueue%601> generic classes all offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](thread-safe/when-to-use-a-thread-safe-collection.md).
 
-  - The <xref:System.Collections.Stack> class, as well as the <xref:System.Collections.Generic.Stack%601>, <xref:System.Collections.Concurrent.ConcurrentStack%601>, and <xref:System.Collections.Immutable.ImmutableStack%601> generic classes all offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - The <xref:System.Collections.Stack> class, as well as the <xref:System.Collections.Generic.Stack%601>, <xref:System.Collections.Concurrent.ConcurrentStack%601>, and <xref:System.Collections.Immutable.ImmutableStack%601> generic classes all offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](thread-safe/when-to-use-a-thread-safe-collection.md).
 
   - The <xref:System.Collections.Generic.LinkedList%601> generic class allows sequential access either from the head to the tail, or from the tail to the head.
 
@@ -63,7 +64,7 @@ Consider the following questions:
 
 - Do you need fast searches and retrieval of information?
 
-  - <xref:System.Collections.Specialized.ListDictionary> is faster than <xref:System.Collections.Hashtable> for small collections (10 items or fewer). The <xref:System.Collections.Generic.Dictionary%602> generic class provides faster lookup than the <xref:System.Collections.Generic.SortedDictionary%602> generic class. The multi-threaded implementation is <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> provides fast multi-threaded insertion for unordered data. For more information about both multi-threaded types, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).
+  - <xref:System.Collections.Specialized.ListDictionary> is faster than <xref:System.Collections.Hashtable> for small collections (10 items or fewer). The <xref:System.Collections.Generic.Dictionary%602> generic class provides faster lookup than the <xref:System.Collections.Generic.SortedDictionary%602> generic class. The multi-threaded implementation is <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> provides fast multi-threaded insertion for unordered data. For more information about both multi-threaded types, see [When to Use a Thread-Safe Collection](thread-safe/when-to-use-a-thread-safe-collection.md).
 
 - Do you need collections that accept only strings?
 
@@ -75,11 +76,11 @@ Consider the following questions:
 
 LINQ to Objects enables developers to use LINQ queries to access in-memory objects as long as the object type implements <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>. LINQ queries provide a common pattern for accessing data, are typically more concise and readable than standard `foreach` loops, and provide filtering, ordering, and grouping capabilities. For more information, see [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md) and [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md).
 
-PLINQ provides a parallel implementation of LINQ to Objects that can offer faster query execution in many scenarios, through more efficient use of multi-core computers. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).
+PLINQ provides a parallel implementation of LINQ to Objects that can offer faster query execution in many scenarios, through more efficient use of multi-core computers. For more information, see [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## See also
 
 - <xref:System.Collections>
 - <xref:System.Collections.Specialized>
 - <xref:System.Collections.Generic>
-- [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)
+- [Thread-Safe Collections](thread-safe/index.md)

@@ -39,5 +39,5 @@ This topic discusses these options.
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - <xref:System.Linq.Enumerable>
-- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)

@@ -47,7 +47,7 @@ HRESULT LeaveRuntime (
 |E_OUTOFMEMORY|Not enough memory is available to complete the requested allocation.|  
   
 ## Remarks  
- Call sequences to and from unmanaged code can be nested. For example, the list below describes a hypothetical situation in which the sequence of calls to `LeaveRuntime`, [IHostTaskManager::ReverseEnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-reverseenterruntime-method.md), [IHostTaskManager::ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md), and `IHostTaskManager::EnterRuntime` allows the host to identify the nested layers.  
+ Call sequences to and from unmanaged code can be nested. For example, the list below describes a hypothetical situation in which the sequence of calls to `LeaveRuntime`, [IHostTaskManager::ReverseEnterRuntime](ihosttaskmanager-reverseenterruntime-method.md), [IHostTaskManager::ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md), and `IHostTaskManager::EnterRuntime` allows the host to identify the nested layers.  
   
 |Action|Corresponding Method Call|  
 |------------|-------------------------------|  

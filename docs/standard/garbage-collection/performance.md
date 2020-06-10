@@ -1,5 +1,6 @@
 ---
 title: "Garbage Collection and Performance"
+description: Read about issues related to garbage collection and memory usage. Learn to minimize the effect of garbage collection on your applications.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -17,7 +18,7 @@ The following sections describe the tools that are available for investigating m
 
 ### Memory Performance Counters
 
-You can use performance counters to gather performance data. For instructions, see [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md). The .NET CLR Memory category of performance counters, as described in [Performance Counters in the .NET Framework](../../../docs/framework/debug-trace-profile/performance-counters.md), provides information about the garbage collector.
+You can use performance counters to gather performance data. For instructions, see [Runtime Profiling](../../framework/debug-trace-profile/runtime-profiling.md). The .NET CLR Memory category of performance counters, as described in [Performance Counters in the .NET Framework](../../framework/debug-trace-profile/performance-counters.md), provides information about the garbage collector.
 
 ### Debugging with SOS
 
@@ -27,7 +28,7 @@ To install WinDbg, install Debugging Tools for Windows from the [Download Debugg
 
 ### Garbage Collection ETW Events
 
-Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by the .NET Framework. Starting with the .NET Framework 4, [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:
+Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by the .NET Framework. Starting with the .NET Framework 4, [garbage collection ETW events](../../framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:
 
 - Which generation of objects is being collected.
 
@@ -39,13 +40,13 @@ ETW event logging is efficient and will not mask any performance problems associ
 
 ### The Profiling API
 
-The common language runtime (CLR) profiling interfaces provide detailed information about the objects that were affected during garbage collection. A profiler can be notified when a garbage collection starts and ends. It can provide reports about the objects on the managed heap, including an identification of objects in each generation. For more information, see [Profiling Overview](../../../docs/framework/unmanaged-api/profiling/profiling-overview.md).
+The common language runtime (CLR) profiling interfaces provide detailed information about the objects that were affected during garbage collection. A profiler can be notified when a garbage collection starts and ends. It can provide reports about the objects on the managed heap, including an identification of objects in each generation. For more information, see [Profiling Overview](../../framework/unmanaged-api/profiling/profiling-overview.md).
 
 Profilers can provide comprehensive information. However, complex profilers can potentially modify an application's behavior.
 
 ### Application Domain Resource Monitoring
 
-Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).
+Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](app-domain-resource-monitoring.md).
 
 ## Troubleshooting Performance Issues
 
@@ -137,7 +138,7 @@ If fragmentation of virtual memory is preventing the garbage collector from addi
 
 - Creation of large transient objects, which causes the large object heap to allocate and free heap segments frequently.
 
-  When hosting the CLR, an application can request that the garbage collector retain its segments. This reduces the frequency of segment allocations. This is accomplished by using the STARTUP_HOARD_GC_VM flag in the [STARTUP_FLAGS Enumeration](../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md).
+  When hosting the CLR, an application can request that the garbage collector retain its segments. This reduces the frequency of segment allocations. This is accomplished by using the STARTUP_HOARD_GC_VM flag in the [STARTUP_FLAGS Enumeration](../../framework/unmanaged-api/hosting/startup-flags-enumeration.md).
 
 |Performance checks|
 |------------------------|
@@ -155,9 +156,9 @@ In concurrent garbage collection, managed threads are allowed to run during a co
 
 Ephemeral garbage collections (generations 0 and 1) last only a few milliseconds, so decreasing pauses is usually not feasible. However, you can decrease the pauses in generation 2 collections by changing the pattern of allocation requests by an application.
 
-Another, more accurate, method is to use [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md). You can find the timings for collections by adding the time stamp differences for a sequence of events. The whole collection sequence includes suspension of the execution engine, the garbage collection itself, and the resumption of the execution engine.
+Another, more accurate, method is to use [garbage collection ETW events](../../framework/performance/garbage-collection-etw-events.md). You can find the timings for collections by adding the time stamp differences for a sequence of events. The whole collection sequence includes suspension of the execution engine, the garbage collection itself, and the resumption of the execution engine.
 
-You can use [Garbage Collection Notifications](../../../docs/standard/garbage-collection/notifications.md) to determine whether a server is about to have a generation 2 collection, and whether rerouting requests to another server could ease any problems with pauses.
+You can use [Garbage Collection Notifications](notifications.md) to determine whether a server is about to have a generation 2 collection, and whether rerouting requests to another server could ease any problems with pauses.
 
 |Performance checks|
 |------------------------|
@@ -175,7 +176,7 @@ Generation 0 is likely to have a larger number of objects on a 64-bit system, es
 
 CPU usage will be high during a garbage collection. If a significant amount of process time is spent in a garbage collection, the number of collections is too frequent or the collection is lasting too long. An increased allocation rate of objects on the managed heap causes garbage collection to occur more frequently. Decreasing the allocation rate reduces the frequency of garbage collections.
 
-You can monitor allocation rates by using the `Allocated Bytes/second` performance counter. For more information, see [Performance Counters in the .NET Framework](../../../docs/framework/debug-trace-profile/performance-counters.md).
+You can monitor allocation rates by using the `Allocated Bytes/second` performance counter. For more information, see [Performance Counters in the .NET Framework](../../framework/debug-trace-profile/performance-counters.md).
 
 The duration of a collection is primarily a factor of the number of objects that survive after allocation. The garbage collector must go through a large amount of memory if many objects remain to be collected. The work to compact the survivors is time-consuming. To determine how many objects were handled during a collection, set a breakpoint in the debugger at the end of a garbage collection for a specified generation.
 
@@ -648,7 +649,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The second generation 2 garbage collection started during the third interval and finished at the fifth interval. Assuming the worst case, the last garbage collection was for a generation 0 collection that finished at the start of the second interval, and the generation 2 garbage collection finished at the end of the fifth interval. Therefore, the time between the end of the generation 0 garbage collection and the end of the generation 2 garbage collection is 4 seconds. Because the `% Time in GC` counter is 20%, the maximum amount of time the generation 2 garbage collection could have taken is (4 seconds * 20% = 800ms).
 
-- Alternatively, you can determine the length of a garbage collection by using [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md), and analyze the information to determine the duration of garbage collection.
+- Alternatively, you can determine the length of a garbage collection by using [garbage collection ETW events](../../framework/performance/garbage-collection-etw-events.md), and analyze the information to determine the duration of garbage collection.
 
   For example, the following data shows an event sequence that occurred during a non-concurrent garbage collection.
 
@@ -790,4 +791,4 @@ This section describes the following procedures to isolate the cause of your per
 
 ## See also
 
-- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+- [Garbage Collection](index.md)

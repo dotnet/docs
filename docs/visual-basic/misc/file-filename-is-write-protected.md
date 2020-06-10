@@ -12,4 +12,4 @@ The file you are attempting to write to is write-protected and therefore cannot 
   
 ## See also
 
-- [Troubleshooting: Reading from and Writing to Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Troubleshooting: Reading from and Writing to Text Files](../developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

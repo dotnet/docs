@@ -3,7 +3,7 @@
 '<snippet1>
 Public NotInheritable Class ReadInt
     Inherits NativeActivity(Of Integer)
-    
+
     <RequiredArgument()>
     Property BookmarkName() As InArgument(Of String)
 

@@ -27,49 +27,49 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
  A program can also contain conditional compilation statements. You can intersperse these in the source file among the statements of the preceding sequence.  
   
 ### Option Statements  
- `Option` statements establish ground rules for subsequent code, helping prevent syntax and logic errors. The [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md) ensures that all variables are declared and spelled correctly, which reduces debugging time. The [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md) helps to minimize logic errors and data loss that can occur when you work between variables of different data types. The [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md) specifies the way strings are compared to each other, based on either their `Binary` or `Text` values.  
+ `Option` statements establish ground rules for subsequent code, helping prevent syntax and logic errors. The [Option Explicit Statement](../../language-reference/statements/option-explicit-statement.md) ensures that all variables are declared and spelled correctly, which reduces debugging time. The [Option Strict Statement](../../language-reference/statements/option-strict-statement.md) helps to minimize logic errors and data loss that can occur when you work between variables of different data types. The [Option Compare Statement](../../language-reference/statements/option-compare-statement.md) specifies the way strings are compared to each other, based on either their `Binary` or `Text` values.  
   
 ### Imports Statements  
- You can include an [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) to import names defined outside your project. An `Imports` statement allows your code to refer to classes and other types defined within the imported namespace, without having to qualify them. You can use as many `Imports` statements as appropriate. For more information, see [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md).  
+ You can include an [Imports Statement (.NET Namespace and Type)](../../language-reference/statements/imports-statement-net-namespace-and-type.md) to import names defined outside your project. An `Imports` statement allows your code to refer to classes and other types defined within the imported namespace, without having to qualify them. You can use as many `Imports` statements as appropriate. For more information, see [References and the Imports Statement](references-and-the-imports-statement.md).  
   
 ### Namespace Statements  
- Namespaces help you organize and classify your programming elements for ease of grouping and accessing. You use the [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md) to classify the following statements within a particular namespace. For more information, see [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md).  
+ Namespaces help you organize and classify your programming elements for ease of grouping and accessing. You use the [Namespace Statement](../../language-reference/statements/namespace-statement.md) to classify the following statements within a particular namespace. For more information, see [Namespaces in Visual Basic](namespaces.md).  
   
 ### Conditional Compilation Statements  
- Conditional compilation statements can appear almost anywhere in your source file. They cause parts of your code to be included or excluded at compile time depending on certain conditions. You can also use them for debugging your application, because conditional code runs in debugging mode only. For more information, see [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md).  
+ Conditional compilation statements can appear almost anywhere in your source file. They cause parts of your code to be included or excluded at compile time depending on certain conditions. You can also use them for debugging your application, because conditional code runs in debugging mode only. For more information, see [Conditional Compilation](conditional-compilation.md).  
   
 ## Namespace-Level Programming Elements  
  Classes, structures, and modules contain all the code in your source file. They are *namespace-level* elements, which can appear within a namespace or at the source file level. They hold the declarations of all other programming elements. Interfaces, which define element signatures but provide no implementation, also appear at module level. For more information on the module-level elements, see the following:  
   
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+- [Class Statement](../../language-reference/statements/class-statement.md)  
   
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
+- [Structure Statement](../../language-reference/statements/structure-statement.md)  
   
-- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
+- [Module Statement](../../language-reference/statements/module-statement.md)  
   
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
+- [Interface Statement](../../language-reference/statements/interface-statement.md)  
   
  Data elements at namespace level are enumerations and delegates.  
   
 ## Module-Level Programming Elements  
  Procedures, operators, properties, and events are the only programming elements that can hold executable code (statements that perform actions at run time). They are the *module-level* elements of your program. For more information on the procedure-level elements, see the following:  
   
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../language-reference/statements/function-statement.md)  
   
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../language-reference/statements/sub-statement.md)  
   
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../language-reference/statements/declare-statement.md)  
   
-- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+- [Operator Statement](../../language-reference/statements/operator-statement.md)  
   
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../language-reference/statements/property-statement.md)  
   
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Event Statement](../../language-reference/statements/event-statement.md)  
   
  Data elements at module level are variables, constants, enumerations, and delegates.  
   
 ## Procedure-Level Programming Elements  
- Most of the contents of *procedure-level* elements are executable statements, which constitute the run-time code of your program. All executable code must be in some procedure (`Function`, `Sub`, `Operator`, `Get`, `Set`, `AddHandler`, `RemoveHandler`, `RaiseEvent`). For more information, see [Statements](../../../visual-basic/programming-guide/language-features/statements.md).  
+ Most of the contents of *procedure-level* elements are executable statements, which constitute the run-time code of your program. All executable code must be in some procedure (`Function`, `Sub`, `Operator`, `Get`, `Set`, `AddHandler`, `RemoveHandler`, `RaiseEvent`). For more information, see [Statements](../language-features/statements.md).  
   
  Data elements at procedure level are limited to local variables and constants.  
   
@@ -84,10 +84,10 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
   
 - `Function Main(ByVal cmdArgs() As String) As Integer`  
   
- The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
+ The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](main-procedure.md).  
   
 ## See also
 
-- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
-- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
-- [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)
+- [Main Procedure in Visual Basic](main-procedure.md)
+- [Visual Basic Naming Conventions](naming-conventions.md)
+- [Visual Basic Limitations](limitations.md)

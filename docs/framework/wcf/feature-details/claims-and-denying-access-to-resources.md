@@ -12,5 +12,5 @@ Windows Communication Foundation (WCF) supports a claims-based authorization mec
   
 ## See also
 
-- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
-- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)
+- [Managing Claims and Authorization with the Identity Model](managing-claims-and-authorization-with-the-identity-model.md)
+- [Claims and Tokens](claims-and-tokens.md)

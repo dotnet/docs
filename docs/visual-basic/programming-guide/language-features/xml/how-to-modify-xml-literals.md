@@ -105,7 +105,7 @@ Visual Basic provides convenient ways to modify XML literals. You can add or del
     </Catalog>
     ```
 
-    For more information about XML attribute axis properties, see [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md).
+    For more information about XML attribute axis properties, see [XML Attribute Axis Property](../../../language-reference/xml-axis/xml-attribute-axis-property.md).
 
 ### To add an element to an XML literal
 
@@ -283,8 +283,8 @@ Visual Basic provides convenient ways to modify XML literals. You can add or del
 
 ## See also
 
-- [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
-- [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Manipulating XML in Visual Basic](manipulating-xml.md)
+- [XML](index.md)
+- [How to: Load XML from a File, String, or Stream](how-to-load-xml-from-a-file-string-or-stream.md)
+- [LINQ](../linq/index.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)

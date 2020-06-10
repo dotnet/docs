@@ -1,5 +1,6 @@
 ---
 title: "Names of Type Members"
+description: Learn the guidelines for naming type members in .NET, such as methods, properties, events, and fields.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -80,7 +81,7 @@ public class Control {
  ✔️ DO name event argument classes with the "EventArgs" suffix.
 
 ## Names of Fields
- The field-naming guidelines apply to static public and protected fields. Internal and private fields are not covered by guidelines, and public or protected instance fields are not allowed by the [member design guidelines](../../../docs/standard/design-guidelines/member.md).
+ The field-naming guidelines apply to static public and protected fields. Internal and private fields are not covered by guidelines, and public or protected instance fields are not allowed by the [member design guidelines](member.md).
 
  ✔️ DO use PascalCasing in field names.
 
@@ -96,5 +97,5 @@ public class Control {
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

@@ -52,7 +52,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 - Garbage collection.
 
-- Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](../../docs/standard/base-types/common-type-system.md).
+- Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](base-types/common-type-system.md).
 
 ## CLR versions
 

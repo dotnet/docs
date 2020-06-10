@@ -161,4 +161,4 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
 - <xref:System.IO>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>
-- [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)
+- [Walkthrough: Manipulating Files by Using .NET Framework Methods](walkthrough-manipulating-files-by-using-net-framework-methods.md)

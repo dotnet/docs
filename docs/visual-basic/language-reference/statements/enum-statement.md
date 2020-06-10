@@ -29,7 +29,7 @@ End Enum
 
 - `attributelist`
 
-  Optional. List of attributes that apply to this enumeration. You must enclose the [attribute list](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").
+  Optional. List of attributes that apply to this enumeration. You must enclose the [attribute list](attribute-list.md) in angle brackets ("`<`" and "`>`").
 
   The <xref:System.FlagsAttribute> attribute indicates that the value of an instance of the enumeration can include multiple enumeration members, and that each member represents a bit field in the enumeration value.
 
@@ -37,25 +37,25 @@ End Enum
 
   Optional. Specifies what code can access this enumeration. Can be one of the following:
 
-  - [Public](../../../visual-basic/language-reference/modifiers/public.md)
+  - [Public](../modifiers/public.md)
 
-  - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Private](../../../visual-basic/language-reference/modifiers/private.md)
+  - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../../language-reference/modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
 - `Shadows`
 
-  Optional. Specifies that this enumeration redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can specify [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) only on the enumeration itself, not on any of its members.
+  Optional. Specifies that this enumeration redeclares and hides an identically named programming element, or set of overloaded elements, in a base class. You can specify [Shadows](../modifiers/shadows.md) only on the enumeration itself, not on any of its members.
 
 - `enumerationname`
 
-  Required. Name of the enumeration. For information on valid names, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).
+  Required. Name of the enumeration. For information on valid names, see [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `datatype`
 
@@ -94,11 +94,11 @@ An enumeration has a name, an underlying data type, and a set of members. Each m
 
 An enumeration declared at class, structure, module, or interface level, outside any procedure, is a *member enumeration*. It is a member of the class, structure, module, or interface that declares it.
 
-Member enumerations can be accessed from anywhere within their class, structure, module, or interface. Code outside a class, structure, or module must qualify a member enumeration's name with the name of that class, structure, or module. You can avoid the need to use fully qualified names by adding an [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statement to the source file.
+Member enumerations can be accessed from anywhere within their class, structure, module, or interface. Code outside a class, structure, or module must qualify a member enumeration's name with the name of that class, structure, or module. You can avoid the need to use fully qualified names by adding an [Imports](imports-statement-net-namespace-and-type.md) statement to the source file.
 
 An enumeration declared at namespace level, outside any class, structure, module, or interface, is a member of the namespace in which it appears.
 
-The *declaration context* for an enumeration must be a source file, namespace, class, structure, module, or interface, and cannot be a procedure. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+The *declaration context* for an enumeration must be a source file, namespace, class, structure, module, or interface, and cannot be a procedure. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
 You can apply attributes to an enumeration as a whole, but not to its members individually. An attribute contributes information to the assembly's metadata.
 
@@ -124,7 +124,7 @@ If the value of a member exceeds the allowable range for the underlying data typ
 
 ## Modifiers
 
-Class, structure, module, and interface member enumerations default to public access. You can adjust their access levels with the access modifiers. Namespace member enumerations default to friend access. You can adjust their access levels to public, but not to private or protected. For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+Class, structure, module, and interface member enumerations default to public access. You can adjust their access levels with the access modifiers. Namespace member enumerations default to friend access. You can adjust their access levels to public, but not to private or protected. For more information, see [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 All enumeration members have public access, and you cannot use any access modifiers on them. However, if the enumeration itself has a more restricted access level, the specified enumeration access level takes precedence.
 
@@ -182,8 +182,8 @@ The following example iterates through an enumeration. It uses the <xref:System.
 
 - <xref:System.Enum>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
-- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Const Statement](const-statement.md)
+- [Dim Statement](dim-statement.md)
+- [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Constants and Enumerations](../constants-and-enumerations.md)

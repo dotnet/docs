@@ -20,8 +20,8 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
 ## See also
 
 - <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>
-- [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
-- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
-- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
-- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Imports Statement (XML Namespace)](../../../language-reference/statements/imports-statement-xml-namespace.md)
+- [XML Attribute Axis Property](../../../language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Value Property](../../../language-reference/xml-axis/xml-value-property.md)
+- [Accessing XML in Visual Basic](accessing-xml.md)
+- [XML](index.md)

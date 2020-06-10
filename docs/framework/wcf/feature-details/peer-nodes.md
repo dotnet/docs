@@ -11,5 +11,5 @@ A PeerNode is a single endpoint in a Peer Channel mesh. An application can have 
   
 ## See also
 
-- [Peer Meshes](../../../../docs/framework/wcf/feature-details/peer-meshes.md)
-- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
+- [Peer Meshes](peer-meshes.md)
+- [Peer Channel Concepts](peer-channel-concepts.md)

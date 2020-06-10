@@ -1,5 +1,6 @@
 ---
 title: "Encrypting Data"
+description: Learn to encrypt data in .NET. You can use symmetric encryption on streams, or you can use asymmetric encryption on a small number of bytes.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -256,6 +257,6 @@ class Class1
   
 ## See also
 
-- [Generating Keys for Encryption and Decryption](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)
-- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md)
+- [Decrypting Data](decrypting-data.md)
+- [Cryptographic Services](cryptographic-services.md)

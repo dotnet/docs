@@ -14,4 +14,4 @@ An `Add` operation failed because the key value is the same as another key value
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

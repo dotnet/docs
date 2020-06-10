@@ -1,5 +1,6 @@
 ---
 title: "Generics in .NET"
+description: Learn about generics in .NET. Define & use generics, learn their advantages & drawbacks, understand class library & language support, and more.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -57,7 +58,7 @@ Generics let you tailor a method, class, structure, or interface to the precise 
   
 - The general term *generic type* includes both constructed types and generic type definitions.  
   
-- *Covariance* and *contravariance* of generic type parameters enable you to use constructed generic types whose type arguments are more derived (covariance) or less derived (contravariance) than a target constructed type. Covariance and contravariance are collectively referred to as *variance*. For more information, see [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
+- *Covariance* and *contravariance* of generic type parameters enable you to use constructed generic types whose type arguments are more derived (covariance) or less derived (contravariance) than a target constructed type. Covariance and contravariance are collectively referred to as *variance*. For more information, see [Covariance and Contravariance](covariance-and-contravariance.md).  
   
 - *Constraints* are limits placed on generic type parameters. For example, you might limit a type parameter to types that implement the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> generic interface, to ensure that instances of the type can be ordered. You can also constrain type parameters to types that have a particular base class, that have a parameterless constructor, or that are reference types or value types. Users of the generic type cannot substitute type arguments that do not satisfy the constraints.  
   
@@ -88,20 +89,20 @@ Generics let you tailor a method, class, structure, or interface to the precise 
   
 - Generic delegates enable type-safe callbacks without the need to create multiple delegate classes. For example, the <xref:System.Predicate%601> generic delegate allows you to create a method that implements your own search criteria for a particular type and to use your method with methods of the <xref:System.Array> type such as <xref:System.Array.Find%2A>, <xref:System.Array.FindLast%2A>, and <xref:System.Array.FindAll%2A>.  
   
-- Generics streamline dynamically generated code. When you use generics with dynamically generated code you do not need to generate the type. This increases the number of scenarios in which you can use lightweight dynamic methods instead of generating entire assemblies. For more information, see [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md) and <xref:System.Reflection.Emit.DynamicMethod>.  
+- Generics streamline dynamically generated code. When you use generics with dynamically generated code you do not need to generate the type. This increases the number of scenarios in which you can use lightweight dynamic methods instead of generating entire assemblies. For more information, see [How to: Define and Execute Dynamic Methods](../../framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md) and <xref:System.Reflection.Emit.DynamicMethod>.  
   
  The following are some limitations of generics:  
   
 - Generic types can be derived from most base classes, such as <xref:System.MarshalByRefObject> (and constraints can be used to require that generic type parameters derive from base classes like <xref:System.MarshalByRefObject>). However, the .NET Framework does not support context-bound generic types. A generic type can be derived from <xref:System.ContextBoundObject>, but trying to create an instance of that type causes a <xref:System.TypeLoadException>.  
   
-- Enumerations cannot have generic type parameters. An enumeration can be generic only incidentally (for example, because it is nested in a generic type that is defined using Visual Basic, C#, or C++). For more information, see "Enumerations" in [Common Type System](../../../docs/standard/base-types/common-type-system.md).  
+- Enumerations cannot have generic type parameters. An enumeration can be generic only incidentally (for example, because it is nested in a generic type that is defined using Visual Basic, C#, or C++). For more information, see "Enumerations" in [Common Type System](../base-types/common-type-system.md).  
   
 - Lightweight dynamic methods cannot be generic.  
   
 - In Visual Basic, C#, and C++, a nested type that is enclosed in a generic type cannot be instantiated unless types have been assigned to the type parameters of all enclosing types. Another way of saying this is that in reflection, a nested type that is defined using these languages includes the type parameters of all its enclosing types. This allows the type parameters of enclosing types to be used in the member definitions of a nested type. For more information, see "Nested Types" in <xref:System.Type.MakeGenericType%2A>.  
   
     > [!NOTE]
-    > A nested type that is defined by emitting code in a dynamic assembly or by using the [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md) is not required to include the type parameters of its enclosing types; however, if it does not include them, the type parameters are not in scope in the nested class.  
+    > A nested type that is defined by emitting code in a dynamic assembly or by using the [Ilasm.exe (IL Assembler)](../../framework/tools/ilasm-exe-il-assembler.md) is not required to include the type parameters of its enclosing types; however, if it does not include them, the type parameters are not in scope in the nested class.  
   
      For more information, see "Nested Types" in <xref:System.Type.MakeGenericType%2A>.  
 
@@ -127,13 +128,13 @@ Generics let you tailor a method, class, structure, or interface to the precise 
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Generic Collections in .NET](../../../docs/standard/generics/collections.md)|Describes generic collection classes and other generic types in .NET.|  
-|[Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)|Describes generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.|  
-|[Generic Interfaces](../../../docs/standard/generics/interfaces.md)|Describes generic interfaces that provide common functionality across families of generic types.|  
-|[Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)|Describes covariance and contravariance in generic type parameters.|  
-|[Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in .NET, including generic types.|  
-|[When to Use Generic Collections](../../../docs/standard/collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|  
-|[How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|  
+|[Generic Collections in .NET](collections.md)|Describes generic collection classes and other generic types in .NET.|  
+|[Generic Delegates for Manipulating Arrays and Lists](delegates-for-manipulating-arrays-and-lists.md)|Describes generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.|  
+|[Generic Interfaces](interfaces.md)|Describes generic interfaces that provide common functionality across families of generic types.|  
+|[Covariance and Contravariance](covariance-and-contravariance.md)|Describes covariance and contravariance in generic type parameters.|  
+|[Commonly Used Collection Types](../collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in .NET, including generic types.|  
+|[When to Use Generic Collections](../collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|  
+|[How to: Define a Generic Type with Reflection Emit](../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|  
 |[Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|  
 |[Introduction to Generics](../../csharp/programming-guide/generics/index.md)|Provides an overview of defining and using generic types for C# users.|  
 |[Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp)|Describes the generics feature for C++ users, including the differences between generics and templates.|  

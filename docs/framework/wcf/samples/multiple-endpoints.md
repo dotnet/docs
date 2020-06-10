@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
 ---
 # Multiple Endpoints
-The Multiple Endpoints sample demonstrates how to configure multiple endpoints on a service and how to communicate with each endpoint from a client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service configuration has been modified to define two endpoints that support the `ICalculator` contract, but each at a different address using a different binding. The client configuration and code have been modified to communicate with both of the service endpoints.  
+The Multiple Endpoints sample demonstrates how to configure multiple endpoints on a service and how to communicate with each endpoint from a client. This sample is based on the [Getting Started](getting-started-sample.md). The service configuration has been modified to define two endpoints that support the `ICalculator` contract, but each at a different address using a different binding. The client configuration and code have been modified to communicate with both of the service endpoints.  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -98,11 +98,11 @@ Press <ENTER> to terminate client.
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

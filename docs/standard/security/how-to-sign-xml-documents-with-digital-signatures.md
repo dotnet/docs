@@ -1,5 +1,6 @@
 ---
 title: "How to: Sign XML Documents with Digital Signatures"
+description: Learn how to sign XML documents with digital signatures. Use classes in the System.Security.Cryptography.Xml namespace in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -20,7 +21,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
  The code example in this procedure demonstrates how to digitally sign an entire XML document and attach the signature to the document in a <`Signature`> element.  The example creates an RSA signing key, adds the key to a secure key container, and then uses the key to digitally sign an XML document.  The key can then be retrieved to verify the XML digital signature, or can be used to sign another XML document.  
   
- For information about how to verify an XML digital signature that was created using this procedure, see [How to: Verify the Digital Signatures of XML Documents](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md).  
+ For information about how to verify an XML digital signature that was created using this procedure, see [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md).  
   
 ### To digitally sign an XML document  
   
@@ -106,11 +107,11 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
 ## .NET Framework Security  
- Never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md).  
+ Never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
   
- Never embed a private key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
+ Never embed a private key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
   
 ## See also
 
 - <xref:System.Security.Cryptography.Xml>
-- [How to: Verify the Digital Signatures of XML Documents](../../../docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)
+- [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md)

@@ -1,5 +1,5 @@
 
-The packages added to the package manager feeds are named in a hackable format: `{product}-{type}-{version}`.
+The packages added to package manager feeds are named in a hackable format: `{product}-{type}-{version}`.
 
 - **product**\
 The type of .NET product to install. Valid options are:
@@ -20,7 +20,7 @@ The version of the SDK or runtime to install. This article will always give the 
   - 3.0
   - 2.1
 
-  It's possible the SDK/runtime you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [.NET Core dependencies and requirements](../dependencies.md?pivots=os-linux).
+  It's possible the SDK/runtime you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [.NET Core dependencies and requirements](../linux.md).
 
 ### Examples
 
@@ -30,4 +30,4 @@ The version of the SDK or runtime to install. This article will always give the 
 
 ### Package missing
 
-If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET Core SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET Core, see [.NET Core dependencies and requirements](../dependencies.md?pivots=os-linux).
+If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET Core SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET Core, see [.NET Core dependencies and requirements](../linux.md).

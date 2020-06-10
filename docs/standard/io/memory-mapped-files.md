@@ -1,5 +1,6 @@
 ---
 title: "Memory-Mapped Files"
+description: Explore memory-mapped files in .NET, which contain file contents in virtual memory, and allow applications to modify the file by writing directly to the memory.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -141,4 +142,4 @@ Process C says: True
   
 ## See also
 
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [File and Stream I/O](index.md)

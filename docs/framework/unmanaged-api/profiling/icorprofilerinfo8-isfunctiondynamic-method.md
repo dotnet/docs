@@ -39,7 +39,7 @@ A function is considered dynamic if it has no metadata. Certain methods like IL 
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorProf.idl, CorProf.h
 

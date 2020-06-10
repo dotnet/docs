@@ -9,7 +9,7 @@ ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
 # Message Security with a Windows Client
 This scenario shows a Windows Communication Foundation (WCF) client and server secured by message security mode. The client and service are authenticated using Windows credentials.  
   
- ![Message security with a Windows client](../../../../docs/framework/wcf/feature-details/media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd087a8c3c")  
+ ![Message security with a Windows client](media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd087a8c3c")  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -112,5 +112,5 @@ This scenario shows a Windows Communication Foundation (WCF) client and server s
   
 ## See also
 
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Overview](security-overview.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

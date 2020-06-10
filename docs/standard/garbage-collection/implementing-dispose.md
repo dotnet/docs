@@ -1,6 +1,7 @@
 ---
 title: "Implement a Dispose method"
-ms.date: 05/13/2020
+description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
+ms.date: 05/27/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -151,5 +152,4 @@ The following example illustrates the dispose pattern for a derived class, `Disp
 - <xref:Microsoft.Win32.SafeHandles>
 - <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType>
 - <xref:System.Object.Finalize%2A?displayProperty=nameWithType>
-- [How to: Define and Consume Classes and Structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)
-- [Dispose Pattern](implementing-dispose.md)
+- [Define and consume classes and structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)

@@ -46,8 +46,8 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Skip Clause](../../../../visual-basic/language-reference/queries/skip-clause.md)
-- [Skip While Clause](../../../../visual-basic/language-reference/queries/skip-while-clause.md)
-- [Take Clause](../../../../visual-basic/language-reference/queries/take-clause.md)
-- [Take While Clause](../../../../visual-basic/language-reference/queries/take-while-clause.md)
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [Skip Clause](../../../language-reference/queries/skip-clause.md)
+- [Skip While Clause](../../../language-reference/queries/skip-while-clause.md)
+- [Take Clause](../../../language-reference/queries/take-clause.md)
+- [Take While Clause](../../../language-reference/queries/take-while-clause.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Read characters from a string"
+description: Learn how to read characters from a string in .NET. See examples of character reading synchronously and asynchronously.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -33,11 +34,11 @@ The following code examples show how to read characters synchronously or asynchr
 
 - <xref:System.IO.StringReader>  
 - <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
-- [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
+- [Asynchronous file I/O](asynchronous-file-i-o.md)  
 - [How to: Create a directory listing](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))  
-- [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [How to: Write characters to a string](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [How to: Read and write to a newly created data file](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](how-to-write-text-to-a-file.md)  
+- [How to: Write characters to a string](how-to-write-characters-to-a-string.md)  
+- [File and stream I/O](index.md)

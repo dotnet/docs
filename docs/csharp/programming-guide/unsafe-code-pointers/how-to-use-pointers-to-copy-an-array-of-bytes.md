@@ -16,7 +16,7 @@ This example accesses the elements of both arrays using indices rather than a se
 
 ## Example
 
-[!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#8)]
+[!code-csharp[Struct with embedded inline array](snippets/FixedKeywordExamples.cs#8)]
 
 ## See also
 

@@ -33,3 +33,7 @@ The following XML file is used in various examples in the LINQ to XML documentat
    </Book>
 </Catalog>
 ```
+
+## See also
+
+- [Sample XML Documents (LINQ to XML)](sample-xml-file-typical-purchase-order.md)

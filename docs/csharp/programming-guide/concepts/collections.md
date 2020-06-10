@@ -7,7 +7,7 @@ ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
 
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.
 
-Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../arrays/index.md).
+Arrays are most useful for creating and working with a fixed number of strongly typed objects. For information about arrays, see [Arrays](../arrays/index.md).
 
 Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 
@@ -176,7 +176,7 @@ public class Galaxy
 
 ## Kinds of Collections
 
-Many common collections are provided by the .NET Framework. Each type of collection is designed for a specific purpose.
+Many common collections are provided by .NET. Each type of collection is designed for a specific purpose.
 
 Some of the common collection classes are described in this section:
 
@@ -208,7 +208,7 @@ For additional information, see [Commonly Used Collection Types](../../../standa
 
 ### System.Collections.Concurrent Classes
 
-In the .NET Framework 4 or newer, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
+In .NET Framework 4 and later versions, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads.
 
 The classes in the <xref:System.Collections.Concurrent> namespace should be used instead of the corresponding types in the <xref:System.Collections.Generic?displayProperty=nameWithType> and <xref:System.Collections?displayProperty=nameWithType> namespaces whenever multiple threads are accessing the collection concurrently. For more information, see [Thread-Safe Collections](../../../standard/collections/thread-safe/index.md) and <xref:System.Collections.Concurrent>.
 
@@ -476,7 +476,7 @@ public class Car : IComparable<Car>
 
 You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface.
 
-Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this topic.
+Although you can define a custom collection, it is usually better to instead use the collections that are included in .NET, which are described in [Kinds of Collections](#BKMK_KindsOfCollections) earlier in this article.
 
 The following example defines a custom collection class named `AllColors`. This class implements the <xref:System.Collections.IEnumerable> interface, which requires that the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method be implemented.
 

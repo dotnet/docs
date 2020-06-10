@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for exceptions - .NET"
+description: Learn best practices for exceptions, such as using try/catch/finally, handling common conditions without exceptions, and using predefined .NET exception types.
 ms.date: "12/05/2018"
 ms.technology: dotnet-standard
 dev_langs:

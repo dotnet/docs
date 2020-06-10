@@ -10,6 +10,7 @@ Welcome to the introduction to C# tutorials. These lessons start with interactiv
 that you can run in your browser. You can learn the basics of C# from the
 [C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
 
+<!--markdownlint-disable MD034 -->
 > [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]
 
 The first lessons explain C# concepts using small snippets of code. You'll

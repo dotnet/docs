@@ -7,9 +7,9 @@ ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
 
 An *iterator* can be used to step through collections such as lists and arrays.
 
-An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element one at a time. When a `Yield` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
+An iterator method or `get` accessor performs a custom iteration over a collection. An iterator method uses the [Yield](../../language-reference/statements/yield-statement.md) statement to return each element one at a time. When a `Yield` statement is reached, the current location in code is remembered. Execution is restarted from that location the next time the iterator function is called.
 
-You consume an iterator from client code by using a [For Each…Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement, or by using a LINQ query.
+You consume an iterator from client code by using a [For Each…Next](../../language-reference/statements/for-each-next-statement.md) statement, or by using a LINQ query.
 
 In the following example, the first iteration of the `For Each` loop causes execution to proceed  in the `SomeNumbers` iterator method until the first `Yield` statement is reached. This iteration returns a value of 3, and the current location in the iterator method is retained. On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a `Yield` statement. This iteration returns a value of 5, and the current location in the iterator method is again retained. The loop completes when the end of the iterator method is reached.
 
@@ -33,7 +33,7 @@ The return type of an iterator method or `get` accessor can be <xref:System.Coll
 
 You can use an `Exit Function` or `Return` statement to end the iteration.
 
-A Visual Basic iterator function or `get` accessor declaration includes an [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md) modifier.
+A Visual Basic iterator function or `get` accessor declaration includes an [Iterator](../../language-reference/modifiers/iterator.md) modifier.
 
 Iterators were introduced in Visual Basic in Visual Studio 2012.
 
@@ -56,11 +56,11 @@ Iterators were introduced in Visual Basic in Visual Studio 2012.
 - [Use of Iterators](#BKMK_UseOfIterators)
 
 > [!NOTE]
-> For all examples in the topic except the Simple Iterator example, include [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.
+> For all examples in the topic except the Simple Iterator example, include [Imports](../../language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections` and `System.Collections.Generic` namespaces.
 
 ## <a name="BKMK_SimpleIterator"></a> Simple Iterator
 
-The following example has a single `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. In `Main`, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.
+The following example has a single `Yield` statement that is inside a [For…Next](../../language-reference/statements/for-next-statement.md) loop. In `Main`, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.
 
 ```vb
 Sub Main()
@@ -212,7 +212,7 @@ End Class
 
 ## <a name="BKMK_TryBlocks"></a> Try Blocks
 
-Visual Basic allows a `Yield` statement in the `Try` block of a [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.
+Visual Basic allows a `Yield` statement in the `Try` block of a [Try...Catch...Finally Statement](../../language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.
 
 The following example includes `Try`, `Catch`, and `Finally` blocks in an iterator function. The `Finally` block in the iterator function executes before the `For Each` iteration finishes.
 
@@ -435,7 +435,7 @@ On each successive iteration of the `For Each…Next` loop (or the direct call t
 
 Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=nameWithType> method. To re-iterate from the start, you must obtain a new iterator.
 
-For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).
+For additional information, see the [Visual Basic Language Specification](../../reference/language-specification/index.md).
 
 ## <a name="BKMK_UseOfIterators"></a> Use of Iterators
 
@@ -451,6 +451,6 @@ Iterators enable you to maintain the simplicity of a `For Each` loop when you ne
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>
-- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
-- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)
-- [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)
+- [For Each...Next Statement](../../language-reference/statements/for-each-next-statement.md)
+- [Yield Statement](../../language-reference/statements/yield-statement.md)
+- [Iterator](../../language-reference/modifiers/iterator.md)

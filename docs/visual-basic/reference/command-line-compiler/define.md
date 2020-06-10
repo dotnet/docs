@@ -52,7 +52,7 @@ or
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
-- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [#If...Then...#Else Directives](../../language-reference/directives/if-then-else-directives.md)
+- [#Const Directive](../../language-reference/directives/const-directive.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

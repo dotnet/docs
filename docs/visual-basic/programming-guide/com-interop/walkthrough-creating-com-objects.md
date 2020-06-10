@@ -15,7 +15,7 @@ When creating new applications or components, it is best to create .NET Framewor
  The easiest way to expose COM objects is by using the COM class template. The COM class template creates a new class, and then configures your project to generate the class and interoperability layer as a COM object and register it with the operating system.  
   
 > [!NOTE]
-> Although you can also expose a class created in Visual Basic as a COM object for unmanaged code to use, it is not a true COM object and cannot be used by Visual Basic. For more information, see [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+> Although you can also expose a class created in Visual Basic as a COM object for unmanaged code to use, it is not a true COM object and cannot be used by Visual Basic. For more information, see [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -82,13 +82,13 @@ When creating new applications or components, it is best to create .NET Framewor
 9. Add properties, methods, and events to the class, ending it with an `End Class` statement. Select **Build Solution** from the **Build** menu. Visual Basic builds the assembly and registers the COM object with the operating system.  
   
     > [!NOTE]
-    > The COM objects you generate with Visual Basic cannot be used by other Visual Basic applications because they are not true COM objects. Attempts to add references to such COM objects will raise an error. For details, see [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+    > The COM objects you generate with Visual Basic cannot be used by other Visual Basic applications because they are not true COM objects. Attempts to add references to such COM objects will raise an error. For details, see [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md).  
   
 ## See also
 
 - <xref:Microsoft.VisualBasic.ComClassAttribute>
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
-- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
-- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
-- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
-- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+- [COM Interop](index.md)
+- [Walkthrough: Implementing Inheritance with COM Objects](walkthrough-implementing-inheritance-with-com-objects.md)
+- [#Region Directive](../../language-reference/directives/region-directive.md)
+- [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md)
+- [Troubleshooting Interoperability](troubleshooting-interoperability.md)

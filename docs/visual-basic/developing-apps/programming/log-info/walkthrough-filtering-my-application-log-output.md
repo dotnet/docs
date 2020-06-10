@@ -37,7 +37,7 @@ Each message that `My.Application.Log` writes has an associated severity level, 
 
 6. Close the application.
 
-     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).
+     For information on how to view the application's debug output window, see [Output Window](/visualstudio/ide/reference/output-window). For information on the location of the application's log file, see [Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md).
 
     > [!NOTE]
     > By default, the application flushes the log-file output when the application closes.
@@ -243,13 +243,13 @@ This example demonstrates how to configure filtering for a new debug listener an
 
 10. Close the application.
 
-For more information about changing log settings after deployment, see [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).
+For more information about changing log settings after deployment, see [Working with Application Logs](working-with-application-logs.md).
 
 ## See also
 
-- [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
-- [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
-- [Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)
-- [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
+- [Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md)
+- [Walkthrough: Changing Where My.Application.Log Writes Information](walkthrough-changing-where-my-application-log-writes-information.md)
+- [Walkthrough: Creating Custom Log Listeners](walkthrough-creating-custom-log-listeners.md)
+- [How to: Write Log Messages](how-to-write-log-messages.md)
 - [Trace Switches](../../../../framework/debug-trace-profile/trace-switches.md)
-- [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/index.md)
+- [Logging Information from the Application](index.md)

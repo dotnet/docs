@@ -24,7 +24,7 @@ End Sub
 ```  
   
 ## Compile the code  
- Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md).  
+ Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).  
   
  The class must have a public constructor without parameters.  
   
@@ -45,6 +45,6 @@ End Sub
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
-- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
-- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+- [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md)
+- [Serialization (Visual Basic)](index.md)
+- [Visual Basic Programming Guide](../../index.md)

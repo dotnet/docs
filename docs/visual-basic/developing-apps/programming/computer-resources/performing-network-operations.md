@@ -12,13 +12,13 @@ The following tables list tasks associated with the `My.Computer.Network` object
   
 ## In This Section  
 
- [How to: Upload a File](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)  
+ [How to: Upload a File](how-to-upload-a-file.md)  
  Demonstrates how to upload a file and store it to a remote location using `My.Computer.Network`.  
   
- [How to: Download a File](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)  
+ [How to: Download a File](how-to-download-a-file.md)  
  Demonstrates how to download a file from a remote location using `My.Computer.Network`.  
   
- [How to: Check Connection Status](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)  
+ [How to: Check Connection Status](how-to-check-connection-status.md)  
  Shows how to determine whether the computer has a working network connection.  
   
 ## Reference  

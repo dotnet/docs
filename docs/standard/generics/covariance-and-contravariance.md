@@ -1,5 +1,6 @@
 ---
 title: "Covariance and Contravariance in Generics"
+description: Learn about covariance, which allows you to use a more derived type, and contravariance, which allows you to use a less derived type, in .NET generics.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -120,18 +121,18 @@ Covariance and contravariance are terms that refer to the ability to use a more 
  Starting with the .NET Framework 4, Visual Basic and C# have keywords that enable you to mark the generic type parameters of interfaces and delegates as covariant or contravariant.  
   
 > [!NOTE]
-> Starting with the .NET Framework version 2.0, the common language runtime supports variance annotations on generic type parameters. Prior to the .NET Framework 4, the only way to define a generic class that has these annotations is to use Microsoft intermediate language (MSIL), either by compiling the class with [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md) or by emitting it in a dynamic assembly.  
+> Starting with the .NET Framework version 2.0, the common language runtime supports variance annotations on generic type parameters. Prior to the .NET Framework 4, the only way to define a generic class that has these annotations is to use Microsoft intermediate language (MSIL), either by compiling the class with [Ilasm.exe (IL Assembler)](../../framework/tools/ilasm-exe-il-assembler.md) or by emitting it in a dynamic assembly.  
   
- A covariant type parameter is marked with the `out` keyword (`Out` keyword in Visual Basic, `+` for the [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md)). You can use a covariant type parameter as the return value of a method that belongs to an interface, or as the return type of a delegate. You cannot use a covariant type parameter as a generic type constraint for interface methods.  
+ A covariant type parameter is marked with the `out` keyword (`Out` keyword in Visual Basic, `+` for the [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md)). You can use a covariant type parameter as the return value of a method that belongs to an interface, or as the return type of a delegate. You cannot use a covariant type parameter as a generic type constraint for interface methods.  
   
 > [!NOTE]
 > If a method of an interface has a parameter that is a generic delegate type, a covariant type parameter of the interface type can be used to specify a contravariant type parameter of the delegate type.  
   
- A contravariant type parameter is marked with the `in` keyword (`In` keyword in Visual Basic, `-` for the [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md)). You can use a contravariant type parameter as the type of a parameter of a method that belongs to an interface, or as the type of a parameter of a delegate. You can use a contravariant type parameter as a generic type constraint for an interface method.  
+ A contravariant type parameter is marked with the `in` keyword (`In` keyword in Visual Basic, `-` for the [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md)). You can use a contravariant type parameter as the type of a parameter of a method that belongs to an interface, or as the type of a parameter of a delegate. You can use a contravariant type parameter as a generic type constraint for an interface method.  
   
  Only interface types and delegate types can have variant type parameters. An interface or delegate type can have both covariant and contravariant type parameters.  
   
- Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates. The [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md) does not perform such checks, but a <xref:System.TypeLoadException> is thrown if you try to load a type that violates the rules.  
+ Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates. The [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md) does not perform such checks, but a <xref:System.TypeLoadException> is thrown if you try to load a type that violates the rules.  
   
  For information and example code, see [Variance in Generic Interfaces (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md) and [Variance in Generic Interfaces (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md).  
 

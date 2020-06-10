@@ -18,4 +18,4 @@ The pattern string specified in the `Like` operation of a search is invalid.
   
 ## See also
 
-- [Like Operator](../../visual-basic/language-reference/operators/like-operator.md)
+- [Like Operator](../language-reference/operators/like-operator.md)

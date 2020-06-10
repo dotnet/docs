@@ -1,5 +1,6 @@
 ---
 title: "Calling Synchronous Methods Asynchronously"
+description: Learn how to call synchronous methods asynchronously in .NET, using the BeginInvoke and EndInvoke methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -33,7 +34,7 @@ The `BeginInvoke` method initiates the asynchronous call. It has the same parame
 The `EndInvoke` method retrieves the results of the asynchronous call. It can be called any time after `BeginInvoke`. If the asynchronous call has not completed, `EndInvoke` blocks the calling thread until it completes. The parameters of `EndInvoke` include the `out` and `ref` parameters (`<Out>` `ByRef` and `ByRef` in Visual Basic) of the method that you want to execute asynchronously, plus the <xref:System.IAsyncResult> returned by `BeginInvoke`.
 
 > [!NOTE]
-> The IntelliSense feature in Visual Studio displays the parameters of `BeginInvoke` and `EndInvoke`. If you're not using Visual Studio or a similar tool, or if you're using C# with Visual Studio, see [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) for a description of the parameters defined for these methods.
+> The IntelliSense feature in Visual Studio displays the parameters of `BeginInvoke` and `EndInvoke`. If you're not using Visual Studio or a similar tool, or if you're using C# with Visual Studio, see [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md) for a description of the parameters defined for these methods.
 
 The code examples in this topic demonstrate four common ways to use `BeginInvoke` and `EndInvoke` to make asynchronous calls. After calling `BeginInvoke` you can do the following:
 
@@ -106,4 +107,4 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 ## See also
 
 - <xref:System.Delegate>
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)

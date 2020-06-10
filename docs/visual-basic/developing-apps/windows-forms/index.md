@@ -104,4 +104,4 @@ For step-by-step information about using these features, see the following Help 
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
 - [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
-- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)

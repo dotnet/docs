@@ -8,11 +8,11 @@ Imports System.Configuration
 
 Class Program
     Shared Sub Main()
-        Dim s As String= GetConnectionStringByName("NorthwindSQL")
+        Dim s As String = GetConnectionStringByName("NorthwindSQL")
         Console.WriteLine(s)
         Console.ReadLine()
     End Sub
-' <Snippet1>
+    ' <Snippet1>
     ' Retrieves a connection string by name.
     ' Returns Nothing if the name is not found.
     Private Shared Function GetConnectionStringByName( _
@@ -32,6 +32,6 @@ Class Program
 
         Return returnValue
     End Function
-' </Snippet1>
+    ' </Snippet1>
 End Class
 

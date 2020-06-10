@@ -377,7 +377,7 @@ to enable deconstruction on any user-defined type (classes, structs, or
 even interfaces).
 
 The type author can define one or more `Deconstruct` methods that
-assign values to any number of `out` variables representing the
+assign values to any number of [`out` variables](language-reference/keywords/out-parameter-modifier.md) representing the
 data elements that make up the type. For example, the following
 `Person` type defines a `Deconstruct` method that deconstructs
 a person object into the elements representing the first name
@@ -429,7 +429,7 @@ The `Deconstruct` method could convert the `Person` object `p` to a tuple contai
 
 ## Tuples as out parameters
 
-Tuples can be used as out parameters *themselves*. Not to be confused with any ambiguity previously mentioned in the [Deconstruction](#deconstruction) section. In a method call, you need only describe the tuple's shape:
+Tuples can be used as [`out` parameters](language-reference/keywords/out-parameter-modifier.md) *themselves*. Not to be confused with any ambiguity previously mentioned in the [Deconstruction](#deconstruction) section. In a method call, you need only describe the tuple's shape:
 
 [!code-csharp[TuplesAsOutParameters](~/samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
 

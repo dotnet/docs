@@ -82,10 +82,10 @@ The classes in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespa
   
 ## See also
 
-- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [XML Schema Object Model Overview](xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](reading-and-writing-xml-schemas.md)
+- [Traversing XML Schemas](traversing-xml-schemas.md)
+- [Editing XML Schemas](editing-xml-schemas.md)
+- [Including or Importing XML Schemas](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md)
+- [Post-Schema Compilation Infoset](post-schema-compilation-infoset.md)

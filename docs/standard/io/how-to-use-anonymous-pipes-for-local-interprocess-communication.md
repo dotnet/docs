@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+description: Learn how to use anonymous pipes for local interprocess communication on a local computer in .NET. Anonymous pipes require less overhead than named pipes.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -41,5 +42,5 @@ Anonymous pipes provide interprocess communication on a local computer. They off
   
 ## See also
 
-- [Pipes](../../../docs/standard/io/pipe-operations.md)
-- [How to: Use Named Pipes for Network Interprocess Communication](../../../docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md)
+- [Pipes](pipe-operations.md)
+- [How to: Use Named Pipes for Network Interprocess Communication](how-to-use-named-pipes-for-network-interprocess-communication.md)

@@ -36,15 +36,15 @@ Web developers require the ability to describe the shape and layout of the URIs 
   
  <xref:System.UriTemplate> is designed to work with any URI scheme that conforms to the HTTP URI grammar. The following are examples of supported URI schemes.  
   
-- http://  
+- `http://`  
   
-- https://  
+- `https://`  
   
-- net.tcp://  
+- `net.tcp://`  
   
-- net.pipe://  
+- `net.pipe://`  
   
-- sb://  
+- `sb://`  
   
  Schemes like file:// and urn:// do not conform to the HTTP URI grammar and cause unpredictable results when used with URI templates.  
   
@@ -320,8 +320,8 @@ When a variable is given a default value of `null` there are some additional con
   
 ## See also
 
-- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
-- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
-- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)
-- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
-- [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+- [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)
+- [WCF Web HTTP Programming Object Model](wcf-web-http-programming-object-model.md)
+- [UriTemplate](../samples/uritemplate-sample.md)
+- [UriTemplate Table](../samples/uritemplate-table-sample.md)
+- [UriTemplate Table Dispatcher](../samples/uritemplate-table-dispatcher-sample.md)

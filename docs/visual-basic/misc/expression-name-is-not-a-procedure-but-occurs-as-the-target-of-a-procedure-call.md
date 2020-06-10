@@ -16,4 +16,4 @@ You have made a procedure call to an expression that is not a procedure.
   
 ## See also
 
-- [Procedures](../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Procedures](../programming-guide/language-features/procedures/index.md)

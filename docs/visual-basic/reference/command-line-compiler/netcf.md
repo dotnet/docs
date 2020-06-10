@@ -24,14 +24,14 @@ Sets the compiler to target the .NET Compact Framework.
 
 The `-netcf` option causes the Visual Basic compiler to target the .NET Compact Framework rather than the full .NET Framework. Language functionality that is present only in the full .NET Framework is disabled.
 
-The `-netcf` option is designed to be used with [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md). The language features disabled by `-netcf` are the same language features not present in the files targeted with `-sdkpath`.
+The `-netcf` option is designed to be used with [-sdkpath](sdkpath.md). The language features disabled by `-netcf` are the same language features not present in the files targeted with `-sdkpath`.
 
 > [!NOTE]
 > The `-netcf` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line. The `-netcf` option is set when a Visual Basic device project is loaded.
 
 The `-netcf` option changes the following language features:
 
-- The [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md) keyword, which terminates execution of a program, is disabled. The following program compiles and runs without `-netcf` but fails at compile time with `-netcf`.
+- The [End \<keyword> Statement](../../language-reference/statements/end-keyword-statement.md) keyword, which terminates execution of a program, is disabled. The following program compiles and runs without `-netcf` but fails at compile time with `-netcf`.
 
   [!code-vb[VbVbalrCompiler#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/netcf.vb#34)]
 
@@ -39,7 +39,7 @@ The `-netcf` option changes the following language features:
 
   [!code-vb[VbVbalrCompiler#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#35)]
 
-- The [Auto](../../../visual-basic/language-reference/modifiers/auto.md), [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md), and [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md) modifiers are disabled. The syntax of the [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md) is also modified to `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`. The following code shows the effect of `-netcf` on a compilation.
+- The [Auto](../../language-reference/modifiers/auto.md), [Ansi](../../language-reference/modifiers/ansi.md), and [Unicode](../../language-reference/modifiers/unicode.md) modifiers are disabled. The syntax of the [Declare Statement](../../language-reference/statements/declare-statement.md) is also modified to `Declare Sub|Function name Lib "library" [Alias "alias"] [([arglist])]`. The following code shows the effect of `-netcf` on a compilation.
 
   [!code-vb[VbVbalrCompiler#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#36)]
 
@@ -87,6 +87,6 @@ vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactF
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [-sdkpath](sdkpath.md)

@@ -19,6 +19,6 @@ The `Me`, `MyClass`, and `MyBase` keywords refer to specific class instances. Yo
   
 ## See also
 
-- [Object Variable Assignment](../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
-- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Object Variable Assignment](../../programming-guide/language-features/variables/object-variable-assignment.md)
+- [Me, My, MyBase, and MyClass](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

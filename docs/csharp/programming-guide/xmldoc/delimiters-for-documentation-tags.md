@@ -13,10 +13,10 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 
 - `///`
 
-  Single-line delimiter. This is the form that is shown in documentation examples and used by the Visual C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.
+  Single-line delimiter. This is the form that is shown in documentation examples and used by the C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.
 
   > [!NOTE]
-  > The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
+  > The Visual Studio integrated development environment (IDE) automatically inserts the `<summary>` and `</summary>` tags and moves your cursor within these tags after you type the `///` delimiter in the code editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).
   
 - `/** */`
 
@@ -26,13 +26,13 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
   - On the line that contains the `/**` delimiter, if the remainder of the line is white space, the line is not processed for comments. If the first character after the `/**` delimiter is white space, that white space character is ignored and the rest of the line is processed. Otherwise, the entire text of the line after the `/**` delimiter is processed as part of the comment.
 
-  - On the line that contains the `*/` delimiter, if there is only white space up to the `*/` delimiter, that line is ignored. Otherwise, the text on the line up to the `*/` delimiter is processed as part of the comment, subject to the pattern-matching rules described in the following bullet.
+  - On the line that contains the `*/` delimiter, if there is only white space up to the `*/` delimiter, that line is ignored. Otherwise, the text on the line up to the `*/` delimiter is processed as part of the comment.
   
   - For the lines after the one that begins with the `/**` delimiter, the compiler looks for a common pattern at the beginning of each line. The pattern can consist of optional white space and an asterisk (`*`), followed by more optional white space. If the compiler finds a common pattern at the beginning of each line that does not begin with the `/**` delimiter or the `*/` delimiter, it ignores that pattern for each line.
 
   The following examples illustrate these rules.
 
-  - The only part of the following comment that will be processed is the line that begins with `<summary>`. The three tag formats produce the same comments.
+  - The only part of the following comment that's processed is the line that begins with `<summary>`. The three tag formats produce the same comments.
 
     ```csharp
     /** <summary>text</summary> */
@@ -71,7 +71,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
       * <summary>
       * text
      *  text2
-    	*  </summary>
+     	*  </summary>
     */
     ```
     <!-- markdownlint-enable MD010 -->

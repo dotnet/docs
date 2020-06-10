@@ -1,5 +1,6 @@
 ---
 title: "Managed Threading Best Practices"
+description: Learn managed threading best practices in .NET. Work with difficult situations such as coordinating many threads or handling blocking threads.
 ms.date: "10/15/2018"
 ms.technology: dotnet-standard
 dev_langs: 

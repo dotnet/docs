@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Class AdvantageGenerics
     Public Shared Sub Main()
         Dim myArray() As String = _
-            {"First String", "test string",  "Last String"}
+            {"First String", "test string", "Last String"}
 
         '<snippet24>
         Dim llist As New LinkedList(Of String)()

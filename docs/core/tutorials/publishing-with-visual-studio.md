@@ -1,15 +1,13 @@
 ---
-title: Publish your .NET Core Hello World application with Visual Studio
-description: Publishing creates the set of files that are needed to run your .NET Core application.
-author: BillWagner
-ms.author: wiwagn
-ms.date: 05/20/2020
+title: Publish a .NET Core console application using Visual Studio
+description: Publishing creates the set of files that are needed to run a .NET Core application.
+ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Tutorial: Publish a .NET Core console application with Visual Studio
+# Tutorial: Publish a .NET Core console application using Visual Studio
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
@@ -19,7 +17,11 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Publish the app
 
-1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
+1. Start Visual Studio.
+
+1. Open the *HelloWorld* project that you created in [Create a .NET Core console application in Visual Studio](with-visual-studio.md).
+
+1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
    ![Visual Studio toolbar with release build selected](media/publishing-with-visual-studio/visual-studio-toolbar-release.png)
 
@@ -41,7 +43,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Inspect the files
 
-The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET Core runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
+By default, the publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on machine that has the .NET Core runtime installed. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
 
 In the following steps, you'll look at the files created by the publish process.
 
@@ -77,7 +79,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, right-click the *publish* folder, and select **Copy Full Path**.
 
-1. Open a command prompt and navigate to the *publish* folder. Enter `cd` and then paste the full path. For example:
+1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
    ```
    cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\

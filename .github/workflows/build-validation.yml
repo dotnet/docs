@@ -31,3 +31,8 @@ jobs:
     - name: Build
       run: |
         resolve-path . && dir
+        
+    # Install locate projs global tool
+    - name: Install LocateProjects tool
+      run: |
+        dotnet tool install --global --add-source ./.github/workflows/dependencies/ DotnetDocsTools.LocateProjects

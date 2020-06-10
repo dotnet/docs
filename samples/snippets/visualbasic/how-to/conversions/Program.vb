@@ -14,7 +14,7 @@ Module Program
         Dim MyDateTime As DateTime = DateTime.Parse(MyString)
         Console.WriteLine(MyDateTime)
         ' Displays the following output on a system whose culture is en-US:
-        '       1/1/2009 12:00:00 AM
+        '       1/1/2009 00:00:00
         ' </Snippet1>
     End Sub
 
@@ -25,7 +25,7 @@ Module Program
         Dim MyDateTime As DateTime = DateTime.Parse(MyString, MyCultureInfo)
         Console.WriteLine(MyDateTime)
         ' The example displays the following output:
-        '       6/12/2008 12:00:00 AM
+        '       6/12/2008 00:00:00
         ' </Snippet2>
     End Sub
 
@@ -37,7 +37,7 @@ Module Program
                                    DateTimeStyles.NoCurrentDateDefault)
         Console.WriteLine(MyDateTime)
         ' The example displays the following output if the current culture is en-US:
-        '       6/12/2008 12:00:00 AM
+        '       6/12/2008 00:00:00
         ' </Snippet3>
     End Sub
 
@@ -56,7 +56,7 @@ Module Program
         Next
         ' The example displays the following output:
         '       Unable to parse ' Friday, April 10, 2009'
-        '       4/10/2009 12:00:00 AM
+        '       4/10/2009 00:00:00
         ' </Snippet4>
     End Sub
 End Module

@@ -9,7 +9,7 @@ ms.assetid: 373a2699-d4c5-471b-9bda-c1f0ab73b477
 ---
 # Use XSLT to transform an XML tree (LINQ to XML)
 
-You can use XSLT to transform an XML tree, using <xref:System.Xml.XmlReader> to read and <xref:System.Xml.XmlWriter> to write. 
+You can use XSLT to transform an XML tree, using <xref:System.Xml.XmlReader> to read and <xref:System.Xml.XmlWriter> to write.
 
 ## Example: Use XSLT to transform an XML tree, using `XMLReader` to read and `XMLWriter` to write
 

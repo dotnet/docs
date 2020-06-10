@@ -14,6 +14,7 @@ The following breaking changes are documented on this page:
 | [Removed status bar controls](#removed-status-bar-controls) | 5.0 |
 | [WinForms methods now throw ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
 | [WinForms methods now throw ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
+| [WinForms properties now throw ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5.0 |
 | [Removed controls](#removed-controls) | 3.1 |
 | [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -41,6 +42,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
+
+***
+
+[!INCLUDE [invalid-args-cause-argumentoutofrangeexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentoutofrangeexception.md)]
 
 ***
 

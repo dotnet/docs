@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML vs. DOM"
+title: LINQ to XML vs. DOM
 description: There are key differences between LINQ to XML and DOM. LINQ to XML supports functional construction and XML literals, which better show the structure of the XML trees that they build.
 ms.date: 07/20/2015
 dev_langs:

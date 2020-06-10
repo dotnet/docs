@@ -1,5 +1,5 @@
 ---
-title: "Language-integrated axes in Visual Basic - LINQ to XML"
+title: Language-integrated axes in Visual Basic - LINQ to XML
 description: LINQ to XML provides easy access to XML using the axes integrated into Visual Basic
 ms.date: 07/20/2015
 ms.assetid: d450a556-a134-4261-b011-44e399660894

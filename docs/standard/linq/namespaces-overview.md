@@ -1,5 +1,5 @@
 ---
-title: "Namespaces overview - LINQ to XML"
+title: Namespaces overview - LINQ to XML
 description: Learn about XML names, XML namespaces, and XML namespace prefixes, and about the XName and XNamespace classes.
 ms.date: 07/20/2015
 ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7

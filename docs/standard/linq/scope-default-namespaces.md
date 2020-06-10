@@ -1,5 +1,5 @@
 ---
-title: "Scope of default namespaces - LINQ to XML"
+title: Scope of default namespaces - LINQ to XML
 description: Default namespaces as represented in the XML tree aren't in scope for queries. Here are proper and improper ways of querying them.
 ms.date: 07/20/2015
 dev_langs:

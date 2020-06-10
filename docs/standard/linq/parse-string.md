@@ -1,5 +1,5 @@
 ---
-title: "How to parse a string - LINQ to XML"
+title: How to parse a string - LINQ to XML
 description: You can parse a string with XElement.Parse to create an XML tree in C# and Visual Basic, and you can create an XML tree with XML literals in Visual Basic.
 ms.date: 07/20/2015
 dev_langs:

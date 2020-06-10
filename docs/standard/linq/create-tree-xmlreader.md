@@ -1,5 +1,5 @@
 ---
-title: "How to create a tree from an XmlReader - LINQ to XML"
+title: How to create a tree from an XmlReader - LINQ to XML
 description: You can use an XmlReader in C# or Visual Basic to read XML and create an XML tree. You must properly position the XmlReader on an element node.
 ms.date: 07/20/2015
 dev_langs:

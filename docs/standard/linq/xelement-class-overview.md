@@ -1,5 +1,5 @@
 ---
-title: "XElement class overview"
+title: XElement class overview
 description: The XElement class represents XML elements. You can use it to create and change elements, add attributes and children, and to serialize.
 ms.date: 07/20/2015
 dev_langs:

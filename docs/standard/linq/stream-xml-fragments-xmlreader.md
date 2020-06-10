@@ -1,5 +1,5 @@
 ---
-title: "How to stream XML fragments from an XmlReader - LINQ to XML"
+title: How to stream XML fragments from an XmlReader - LINQ to XML
 description: You can stream XML fragments from an XmlReader using a custom axis method in C# and Visual Basic. This is an approach that can work when loading the whole XML tree into memory is infeasible.
 ms.date: 07/20/2015
 dev_langs:

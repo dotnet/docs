@@ -1,5 +1,5 @@
 ---
-title: "How to retrieve a single attribute - LINQ to XML"
+title: How to retrieve a single attribute - LINQ to XML
 description: Retrieve a single attribute of an element, given the attribute name.
 ms.date: 07/20/2015
 dev_langs:

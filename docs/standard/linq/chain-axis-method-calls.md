@@ -1,5 +1,5 @@
 ---
-title: "How to chain axis method calls - LINQ to XML"
+title: How to chain axis method calls - LINQ to XML
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

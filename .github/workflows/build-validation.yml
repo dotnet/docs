@@ -30,5 +30,4 @@ jobs:
       
     - name: Build
       run: |
-        echo ${{toJson(github)}}
-        tree
+        resolvepath . && dir

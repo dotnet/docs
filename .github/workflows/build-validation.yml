@@ -6,7 +6,17 @@ name: Snippets 5000
 on:
   pull_request:
     paths:
-      - "samples/snippets/**/*.*"
+      - "**.cs"
+      - "**.vb"
+      - "**.fs"
+      - "**.cpp"
+      - "**.h"
+      - "**.xaml"
+      - "**.razor"
+      - "**.cshtml"
+      - "**.vbhtml"
+      - "**.*proj"
+      - "**global.json"
     branches: [ workflow-test ]
 
 env:
@@ -28,9 +38,10 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
       
-    - name: Build
+    - name: Echo values
       run: |
-        resolve-path . && dir
+        echo ${{ github.repository_owner }}
+        echo ${{ github.event.repository.name }}
         
     # Install locate projs global tool
     - name: Install LocateProjects tool

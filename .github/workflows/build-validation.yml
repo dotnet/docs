@@ -40,8 +40,9 @@ jobs:
       
     - name: Echo values
       run: |
-        echo ${{ github.repository_owner }}
-        echo ${{ github.event.repository.name }}
+        echo ${{ github.repository_owner }}         # Organization: "dotnet"
+        echo ${{ github.event.repository.name }}    # Repo name: "docs"
+        echo ${{ github.event.number }}             # PR number: "17829"
         
     # Install locate projs global tool
     - name: Install LocateProjects tool

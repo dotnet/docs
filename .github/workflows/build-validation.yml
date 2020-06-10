@@ -30,4 +30,4 @@ jobs:
       
     - name: Build
       run: |
-        resolvepath . && dir
+        resolve-path . && dir

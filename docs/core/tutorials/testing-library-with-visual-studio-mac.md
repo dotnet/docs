@@ -19,7 +19,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library in Visual Studio for Mac](library-with-visual-studio-mac.md).
 
-1. In the **Solution** pad, <kbd>Ctrl</kbd>-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
+1. In the **Solution** pad, <kbd>ctrl</kbd>-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
 
 1. In the **New Project** dialog, select **Tests** from the **Web and Console** node. Select the **MSTest Project** followed by **Next**.
 
@@ -59,7 +59,7 @@ Unit tests provide automated software testing during your development and publis
 
 For the test project to work with the `StringLibrary` class, add a reference to the `StringLibrary` project.
 
-1. In the **Solution** pad, <kbd>Ctrl</kbd>-click **Dependencies** under **StringLibraryTest**. Select **Add Reference** from the context menu.
+1. In the **Solution** pad, <kbd>ctrl</kbd>-click **Dependencies** under **StringLibraryTest**. Select **Add Reference** from the context menu.
 
 1. In the **References** dialog, select the **StringLibrary** project. Select **OK**.
 
@@ -131,7 +131,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
-1. <kbd>Ctrl</kbd>-click the failed test, `TestDoesNotStartWithUpper`, and select **Show Results Pad** from the context menu.
+1. <kbd>ctrl</kbd>-click the failed test, `TestDoesNotStartWithUpper`, and select **Show Results Pad** from the context menu.
 
    The **Results** pad displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
@@ -149,7 +149,7 @@ To test the Release build:
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
-1. In the **Solution** pad, <kbd>Ctrl</kbd>-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
+1. In the **Solution** pad, <kbd>ctrl</kbd>-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
@@ -159,7 +159,7 @@ To test the Release build:
 
 ## Debug tests
 
-You can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the ShowCase app project, <kbd>Ctrl</kbd>-click the **StringLibraryTests** project, and select **Start Debugging Project** from the context menu. Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+You can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the ShowCase app project, <kbd>ctrl</kbd>-click the **StringLibraryTests** project, and select **Start Debugging Project** from the context menu. Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 

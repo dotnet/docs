@@ -1,6 +1,6 @@
 ---
 title: "Enumeration Types in Data Contracts"
-description: Follow these examples of how the data contract model expresses enumerations to understand enumerations in the WFC programming model.
+description: Learn about how the data contract model expresses enumerations as part of the WFC programming model.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

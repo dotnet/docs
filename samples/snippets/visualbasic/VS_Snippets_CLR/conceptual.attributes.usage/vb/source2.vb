@@ -51,7 +51,7 @@ End Namespace
 
 Namespace CustomCodeAttributes_Examples1
     '<snippet5>
-    <AttributeUsage(AttributeTargets.All, Inherited := False, AllowMultiple := True)>
+    <AttributeUsage(AttributeTargets.All, Inherited:=False, AllowMultiple:=True)>
     Public Class SomeClass
         Inherits Attribute
         '...
@@ -73,7 +73,7 @@ Namespace CustomCodeAttributes_Examples1
         '...
     End Class
 
-    <AttributeUsage(AttributeTargets.Method, Inherited := False)>
+    <AttributeUsage(AttributeTargets.Method, Inherited:=False)>
     Public Class YourAttribute
         Inherits Attribute
         '...
@@ -109,13 +109,13 @@ Namespace CustomCodeAttributes_Examples2
         Inherits Attribute
     End Class
 
-    <AttributeUsage(AttributeTargets.Method, AllowMultiple := true)>
+    <AttributeUsage(AttributeTargets.Method, AllowMultiple:=true)>
     Public Class YourAttribute
         Inherits Attribute
     End Class
     '</snippet11>
 
-' #if'd out since MyClass will intentionally not compile
+    ' #if'd out since MyClass will intentionally not compile
 #If False
     '<snippet12>
     <Developer("Joan Smith", "1")>
@@ -172,7 +172,7 @@ Namespace CustomCodeAttributes_Examples4
         '<snippet16>
         Public Property MyProperty As Boolean
             Get
-               Return Me.myvalue
+                Return Me.myvalue
             End Get
             Set
                 Me.myvalue = Value
@@ -182,7 +182,7 @@ Namespace CustomCodeAttributes_Examples4
 
         Public Property OptionalParameter As String
             Get
-               Return Me.myoptional
+                Return Me.myoptional
             End Get
             Set
                 Me.myoptional = Value
@@ -192,7 +192,7 @@ Namespace CustomCodeAttributes_Examples4
 
     '<snippet17>
     ' One required (positional) and one optional (named) parameter are applied.
-    <MyAttribute(false, OptionalParameter := "optional data")>
+    <MyAttribute(false, OptionalParameter:="optional data")>
     Public Class SomeClass
         '...
     End Class

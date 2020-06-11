@@ -33,7 +33,7 @@ Module FileExample
     ' Adds an ACL entry on the specified file for the specified account.
     Sub AddFileSecurity(ByVal fileName As String, ByVal account As String, _
         ByVal rights As FileSystemRights, ByVal controlType As AccessControlType)
-  
+
         ' Get a FileSecurity object that represents the 
         ' current security settings.
         Dim fSecurity As FileSecurity = File.GetAccessControl(fileName)

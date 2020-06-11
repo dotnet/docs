@@ -14,9 +14,9 @@ Because the data is sent only once, broadcast variables have performance benefit
 
 ## Create broadcast variables
 
-To create a broadcast variable, call `SparkContext.Broadcast(v)` for any variable `v`. The broadcast variable is a wrapper around the variable `v`, and its value can be accessed by calling the `Value()` method. 
+To create a broadcast variable, call `SparkContext.Broadcast(v)` for any variable `v`. The broadcast variable is a wrapper around the variable `v`, and its value can be accessed by calling the `Value()` method.
 
-In the following code snippet, a string variable `v` is created, and a broadcast variable `bv` is created when `SparkContext.Broadcast(v)`is called. Notice the type parameter for `Broadcast`, string, matches the type of the variable being broadcasted. The user-defined function (UDF) returns the value of `bv`. 
+In the following code snippet, a string variable `v` is created, and a broadcast variable `bv` is created when `SparkContext.Broadcast(v)`is called. Notice the type parameter for `Broadcast`, string, matches the type of the variable being broadcasted. The user-defined function (UDF) returns the value of `bv`.
 
 ```csharp
 string v = "Variable to be broadcasted";
@@ -38,7 +38,7 @@ bv.Destroy();
 
 ## Limit broadcast variable scope in UDFs
 
-When you use broadcast variables in UDFs, you need to limit the scope of the variable to only the UDF that is referencing the variable. The [guide to using UDFs](udf-guide.md) describes this phenomenon in detail. Scope is especially crucial when you call `Destroy()` on the broadcast variable. 
+When you use broadcast variables in UDFs, you need to limit the scope of the variable to only the UDF that is referencing the variable. The [guide to using UDFs](udf-guide.md) describes this phenomenon in detail. Scope is especially crucial when you call `Destroy()` on the broadcast variable.
 
 If the broadcast variable that has been destroyed is visible to or accessible from other UDFs, it gets picked up for serialization by all of the UDFs, even if it is not being referenced by them. .NET for Apache Spark is unable to serialize the destroyed broadcast variable, which results in an error. The following code snippet demonstrates this error:
 
@@ -88,8 +88,8 @@ Func<Column, Column> udf2 = Udf<string, string>(
 
 // Calling udf2 works fine as expected
 df.Select(udf2(df["_1"])).Show();
-``` 
- 
+```
+
  ## Next steps
  
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)

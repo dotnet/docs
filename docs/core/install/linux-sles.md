@@ -71,10 +71,6 @@ This section provides information on common errors you may get while using the p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 [!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]

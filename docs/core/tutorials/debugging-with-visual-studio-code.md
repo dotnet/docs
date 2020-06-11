@@ -1,6 +1,6 @@
 ---
-title: Debug a .NET Core console application with Visual Studio Code
-description: Learn how to debug a .NET Core console app with Visual Studio Code.
+title: Debug a .NET Core console application using Visual Studio Code
+description: Learn how to debug a .NET Core console app using Visual Studio Code.
 ms.date: 05/26/2020
 ---
 # Tutorial: Debug a .NET Core console application using Visual Studio Code
@@ -13,25 +13,25 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Use Debug build configuration
 
-*Debug* and *Release* are two of .NET Core's build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
+*Debug* and *Release* are .NET Core's built-in build configurations. You use the Debug build configuration for debugging and the Release configuration for the final release distribution.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
- By default, Visual Studio Code uses the Debug build configuration, so you don't need to change it before debugging.
+By default, Visual Studio Code launch settings use the Debug build configuration, so you don't need to change it before debugging.
+
+1. Start Visual Studio Code.
+
+1. Open the folder of the project that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
 
 ## Set a breakpoint
 
-A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
-
-1. Open Visual Studio Code.
-
-1. Open the *HelloWorld* project folder that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
 
 1. Open the *Program.cs* file.
 
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Another way to set a breakpoint is by placing the cursor in the line of code and then pressing <kbd>F9</kbd>.
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or selecting **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
 
-   As the following image shows, Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
+   Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-set.png" alt-text="Breakpoint set":::
 
@@ -63,7 +63,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
-1. Start debugging by selecting the green arrow at the top of the pane, next to **.NET Core Launch (console)**.  Another way to start debugging is by pressing <kbd>F5</kbd>.
+1. Select the green arrow at the top of the pane, next to **.NET Core Launch (console)**. Another way to start the program in debugging mode is by choosing **Run** > **Start Debugging** from the menu.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
@@ -77,7 +77,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-hit.png" alt-text="Breakpoint hit, showing Locals":::
 
-## Change variable values
+## Use the Debug Console
 
 The **Debug Console** window lets you interact with the application you're debugging. You can change the value of variables to see how it affects your program.
 
@@ -107,7 +107,7 @@ The **Debug Console** window lets you interact with the application you're debug
 
 The program displays the string that the user enters. What happens if the user doesn't enter anything? You can test this with a useful debugging feature called a *conditional breakpoint*.
 
-1. Right-click (<kbd>Ctrl</kbd>+click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
+1. Right-click (<kbd>Ctrl</kbd>-click on macOS) on the red dot that represents the breakpoint. In the context menu, select **Edit Breakpoint** to open a dialog that lets you enter a conditional expression.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/breakpoint-context-menu.png" alt-text="Breakpoint context menu":::
 
@@ -121,7 +121,7 @@ The program displays the string that the user enters. What happens if the user d
 
    Each time the breakpoint is hit, the debugger calls the `String.IsNullOrEmpty(name)` method, and it breaks on this line only if the method call returns `true`.
 
-   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   Instead of a conditional expression, you can specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times. Another option is to specify a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Start the program with debugging by pressing <kbd>F5</kbd>.
 
@@ -143,7 +143,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Select the **Terminal** tab, and press any key to exit the program and stop debugging.
 
-1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Another way to clear a breakpoint is by pressing <kbd>F9</kbd> while the line of code is selected.
+1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run > Toggle Breakpoint** from the menu while the line of code is selected.
 
 1. If you get a warning that the breakpoint condition will be lost, select **Remove Breakpoint**.
 
@@ -159,17 +159,17 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
    At this point, the **Variables** window shows that the `args` array is empty, and `name` and `date` have default values.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-into.png" alt-text="Step-Into button":::
 
    Visual Studio Code highlights the next line.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code executes the `Console.WriteLine` for the name prompt and highlights the next line of execution. The next line is the `Console.ReadLine` for the `name`. The **Variables** window is unchanged, and the **Terminal** tab shows the "What is your name?" prompt.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio highlights the `name` variable assignment. The **Variables** window shows that `name` is still `null`.
 
@@ -177,19 +177,19 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
    The **Terminal** tab might not display the string you enter while you're entering it, but the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method will capture your input.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code highlights the `date` variable assignment. The **Variables** window shows the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=nameWithType> method. The **Terminal** tab displays the string you entered at the prompt.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    The **Variables** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=nameWithType> property.
 
-1. Select **Step Into** or press <kbd>F11</kbd>.
+1. Select **Run** > **Step Into** or press <kbd>F11</kbd>.
 
    Visual Studio Code calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=nameWithType> method. The console window displays the formatted string.
 
-1. Select **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
+1. Select **Run** > **Step Out** or press <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/step-out.png" alt-text="Step-Out button":::
 
@@ -199,7 +199,7 @@ Visual Studio Code also allows you to step line by line through a program and mo
 
 1. Press any key to exit the program.
 
-## Select Release build configuration
+## Use Release build configuration
 
 Once you've tested the Debug version of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in multithreaded applications.
 

@@ -53,7 +53,7 @@ Public Class Example
         Dim baseType As Type = GetType(ExampleBase)
         Dim interfaceA As Type = GetType(IExampleA)
         Dim interfaceB As Type = GetType(IExampleB)
-                
+
         ' Define the sample type.
         '
         '<Snippet4>
@@ -126,7 +126,7 @@ Public Class Example
         '<Snippet22>
         Dim listOf As Type = GetType(List(Of ))
         Dim listOfTFirst As Type = listOf.MakeGenericType(TFirst)
-        Dim mParamTypes() As Type = { TFirst.MakeArrayType() }
+        Dim mParamTypes() As Type = {TFirst.MakeArrayType()}
 
         Dim exMethod As MethodBuilder = _
             myType.DefineMethod("ExampleMethod", _
@@ -172,12 +172,12 @@ Public Class Example
         '
         '<Snippet23>
         Dim ilgen As ILGenerator = exMethod.GetILGenerator()
-        
+
         Dim ienumOf As Type = GetType(IEnumerable(Of ))
         Dim listOfTParams() As Type = listOf.GetGenericArguments()
         Dim TfromListOf As Type = listOfTParams(0)
         Dim ienumOfT As Type = ienumOf.MakeGenericType(TfromListOf)
-        Dim ctorArgs() As Type = { ienumOfT }
+        Dim ctorArgs() As Type = {ienumOfT}
 
         Dim ctorPrep As ConstructorInfo = _
             listOf.GetConstructor(ctorArgs)
@@ -208,7 +208,7 @@ Public Class Example
         '
         '<Snippet9>
         Dim typeArgs() As Type = _
-            { GetType(Example), GetType(ExampleDerived) }
+            {GetType(Example), GetType(ExampleDerived)}
         Dim constructed As Type = finished.MakeGenericType(typeArgs)
         Dim mi As MethodInfo = constructed.GetMethod("ExampleMethod")
         '</Snippet9>
@@ -220,14 +220,14 @@ Public Class Example
         ' on the resulting List(Of Example).
         ' 
         '<Snippet10>
-        Dim input() As Example = { New Example(), New Example() }
-        Dim arguments() As Object = { input }
+        Dim input() As Example = {New Example(), New Example()}
+        Dim arguments() As Object = {input}
 
         Dim listX As List(Of Example) = mi.Invoke(Nothing, arguments)
 
         Console.WriteLine(vbLf & _
             "There are {0} elements in the List(Of Example).", _
-            listX.Count _ 
+            listX.Count _
         )
         '</Snippet10>
 
@@ -259,7 +259,7 @@ Public Class Example
                 Else
                     Console.WriteLine("    Base type constraint: {0}", c)
                 End If
-            Next 
+            Next
 
             ListConstraintAttributes(tParam)
         Next tParam
@@ -288,7 +288,7 @@ Public Class Example
                 <> GenericParameterAttributes.None Then _
             Console.WriteLine("    DefaultConstructorConstraint")
 
-    End Sub 
+    End Sub
 
 End Class
 

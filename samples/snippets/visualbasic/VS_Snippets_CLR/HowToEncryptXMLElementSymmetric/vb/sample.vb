@@ -129,10 +129,10 @@ Module Program
         ''''''''''''''''''''''''''''''''''''''''''''''''''
         '<snippet9>
         EncryptedXml.ReplaceElement(elementToEncrypt, edElement, False)
-	'</snippet9>
+        '</snippet9>
 
     End Sub
-    
+
 
     Sub Decrypt(ByVal Doc As XmlDocument, ByVal Alg As SymmetricAlgorithm)
         ' Check the arguments.  

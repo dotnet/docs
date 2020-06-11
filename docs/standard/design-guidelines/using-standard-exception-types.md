@@ -1,5 +1,6 @@
 ---
 title: "Using Standard Exception Types"
+description: Read about standard exception types in .NET. Learn about SystemException, ApplicationException, ArgumentException, ComException, and more.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

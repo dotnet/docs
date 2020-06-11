@@ -1,10 +1,10 @@
 ﻿' <Snippet2>
 Imports System.Threading
-Imports System.Runtime.InteropServices 
+Imports System.Runtime.InteropServices
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
-    Public Class AsyncMain 
-        Shared Sub Main() 
+    Public Class AsyncMain
+        Shared Sub Main()
             ' The asynchronous method puts the thread id here.
             Dim threadId As Integer
 
@@ -13,7 +13,7 @@ Namespace Examples.AdvancedProgramming.AsynchronousOperations
 
             ' Create the delegate.
             Dim caller As New AsyncMethodCaller(AddressOf ad.TestMethod)
-       
+
             ' Initiate the asynchronous call.
             Dim result As IAsyncResult = caller.BeginInvoke(3000, _
                 threadId, Nothing, Nothing)

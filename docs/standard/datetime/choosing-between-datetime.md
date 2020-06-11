@@ -1,5 +1,6 @@
 ---
 title: "Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo"
+description: Learn how to choose between the DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo types to represent date and time information in .NET.
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 dev_langs: 

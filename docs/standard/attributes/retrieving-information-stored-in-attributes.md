@@ -1,5 +1,6 @@
 ---
 title: "Retrieving Information Stored in Attributes"
+description: Learn to retrieve information stored in attributes, such as for an attribute instance, many instances for the same scope, & many instances for different scopes.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

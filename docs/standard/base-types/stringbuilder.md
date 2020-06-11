@@ -1,5 +1,6 @@
 ---
 title: "Using the StringBuilder Class in .NET"
+description: Learn how to use the StringBuilder class in .NET. Use this class to modify a string without creating a new object.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

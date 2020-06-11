@@ -45,6 +45,7 @@ The following breaking changes are documented on this page:
 - [Identity: SignInManager constructor accepts new parameter](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Identity: UI uses static web assets feature](#identity-ui-uses-static-web-assets-feature)
 - [Kestrel: Connection adapters removed](#kestrel-connection-adapters-removed)
+- [Kestrel: Default supported TLS protocol versions changed](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel: Empty HTTPS assembly removed](#kestrel-empty-https-assembly-removed)
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
@@ -92,7 +93,11 @@ The following breaking changes are documented on this page:
 
 ***
 
-[!INCLUDE [Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
+[!INCLUDE[Kestrel: Default supported TLS protocol versions changed](~/includes/core-changes/aspnetcore/5.0/kestrel-default-supported-tls-protocol-versions-changed.md)]
+
+***
+
+[!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
 
 ***
 

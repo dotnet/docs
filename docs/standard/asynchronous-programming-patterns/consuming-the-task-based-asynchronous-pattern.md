@@ -221,7 +221,7 @@ string [] pages = await Task.WhenAll(
  You can use the same exception-handling techniques we discussed in the previous void-returning scenario:
 
 ```csharp
-Task [] asyncOps =
+Task<string> [] asyncOps =
     (from url in urls select DownloadStringAsync(url)).ToArray();
 try
 {

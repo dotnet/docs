@@ -37,7 +37,7 @@ Public Class UsingTheCodeDOM
         ' </snippet18>
 
         ' <snippet19>
-        class1.Members.Add( start)
+        class1.Members.Add(start)
         ' </snippet19>
 
         Dim codeProvider As CodeDomProvider = CodeDomProvider.CreateProvider("VisualBasic")

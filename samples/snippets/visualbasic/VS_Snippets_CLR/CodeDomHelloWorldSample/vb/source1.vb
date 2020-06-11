@@ -55,7 +55,7 @@ Public Class CodeDOMSample
         Dim cp As New CompilerParameters()
 
         ' Add an assembly reference.
-        cp.ReferencedAssemblies.Add( "System.dll" )
+        cp.ReferencedAssemblies.Add("System.dll")
 
         ' Generate an executable instead of
         ' a class library.

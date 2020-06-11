@@ -90,8 +90,8 @@ Func<Column, Column> udf2 = Udf<string, string>(
 df.Select(udf2(df["_1"])).Show();
 ```
 
- ## Next steps
- 
+## Next steps
+
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
 * [Debug a .NET for Apache Spark application on Windows](debug.md)
 * [Deploy .NET for Apache Spark worker and user-defined function binaries](deploy-worker-udf-binaries.md)

@@ -119,6 +119,8 @@ Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload
 
 ::: zone-end
 
+::: zone pivot="os-windows,os-macos"
+
 ## Install alongside Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
@@ -128,6 +130,8 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+
+::: zone-end
 
 ::: zone pivot="os-windows"
 
@@ -143,7 +147,7 @@ dotnet-install.ps1 -Channel Current
 
 ::: zone-end
 
-::: zone pivot="os-linux,os-macos"
+::: zone pivot="os-macos"
 
 ## Install with bash automation
 

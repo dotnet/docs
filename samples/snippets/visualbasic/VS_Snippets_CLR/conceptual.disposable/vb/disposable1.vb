@@ -1,4 +1,4 @@
-' <Snippet1>
+﻿' <Snippet1>
 Public NotInheritable Class Foo
     Implements IDisposable
 

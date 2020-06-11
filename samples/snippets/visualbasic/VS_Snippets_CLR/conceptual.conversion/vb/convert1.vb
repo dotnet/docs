@@ -61,7 +61,7 @@ Public Module Example
         '       Converted the Int32 value 12534 to the Decimal value 12,534.00.
         '       Converted the Byte value 255 to the Int32 value 255.
         '       Converted the Double value 1.632513E+013 to the Int64 value 16,325,130,000,000.
-        '       Unable to convert the SByte value -16.                                                                  
+        '       Unable to convert the SByte value -16.
         ' </Snippet8>
     End Sub
 
@@ -86,6 +86,6 @@ Public Module Example
         ' The example displays the following output:
         '       13956810.96702888123451471211 converted to 13956810.9670289.
         '       42.72 converted to 43.
-        ' </Snippet9>   
+        ' </Snippet9>
     End Sub
 End Module

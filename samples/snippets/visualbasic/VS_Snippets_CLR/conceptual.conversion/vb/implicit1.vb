@@ -56,7 +56,7 @@ Module Example
         ' The example displays the following output:
         '       -120
         '       255
-        ' </Snippet3>   
+        ' </Snippet3>
     End Sub
 End Module
 

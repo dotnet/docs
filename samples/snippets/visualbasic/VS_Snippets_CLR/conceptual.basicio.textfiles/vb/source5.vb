@@ -18,7 +18,7 @@ Class MainWindow
 
         ' Open a stream writer to a new text file named "UserInputFile.txt" and write the contents 
         ' of the stringbuilder to it.
-        Using outfile As StreamWriter = New StreamWriter(Path.Combine(mydocpath,"UserInputFile.txt"), True)
+        Using outfile As StreamWriter = New StreamWriter(Path.Combine(mydocpath, "UserInputFile.txt"), True)
             Await outfile.WriteAsync(sb.ToString())
         End Using
     End Sub

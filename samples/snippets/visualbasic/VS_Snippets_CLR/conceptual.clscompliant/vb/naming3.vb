@@ -5,23 +5,23 @@ Option Strict On
 <Assembly: CLSCompliant(True)>
 
 Public Class Converter
-   Public Function Conversion(number As Integer) As Double
-      Return CDbl(number)
-   End Function
+    Public Function Conversion(number As Integer) As Double
+        Return CDbl(number)
+    End Function
 
-   Public Function Conversion(number As Integer) As Single
-      Return CSng(number)
-   End Function
-   
-   Public Function Conversion(number As Long) As Double
-      Return CDbl(number)
-   End Function
-   
-   Public ReadOnly Property Conversion As Boolean
-      Get
-         Return True
-      End Get   
-   End Property     
+    Public Function Conversion(number As Integer) As Single
+        Return CSng(number)
+    End Function
+
+    Public Function Conversion(number As Long) As Double
+        Return CDbl(number)
+    End Function
+
+    Public ReadOnly Property Conversion As Boolean
+        Get
+            Return True
+        End Get
+    End Property
 End Class
 ' Compilation produces a compiler error like the following:
 '    Naming3.vb(8) : error BC30301: 'Public Function Conversion(number As Integer) As Double' 
@@ -37,8 +37,8 @@ End Class
 '                                ~~~~~~~~~~
 ' </Snippet19>
 Module Example
-   Public Sub Main()
+    Public Sub Main()
 
-   End Sub
+    End Sub
 End Module
 

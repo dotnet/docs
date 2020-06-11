@@ -102,8 +102,6 @@ namespace Coding_Conventions_Examples
             //</snippet11>
 
             //<snippet12>
-            // Do not use implicit typing to determine the type of the loop
-            // variable in foreach loops.
             foreach (char ch in laugh)
             {
                 if (ch == 'h')

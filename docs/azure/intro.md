@@ -23,6 +23,8 @@ This document provides an overview of key concepts and services .NET developers 
 
 **Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action. One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.
 
+**Azure SDK for .NET**: Sometimes referred to as the **Azure libraries for .NET**, this collectively refers to the [NuGet packages](https://www.nuget.org/profiles/azure-sdk) you can install in your project to provide connectivity to various Azure resources. These packages also include management libraries used to provision and administer the resources.
+
 ## Choosing a hosting option
 
 Hosting in Azure can be divided into three categories.
@@ -60,6 +62,14 @@ Azure offers several services for storing your data depending on your needs. The
 ## Connect to Azure services
 
 If you use Visual Studio, you can add support for certain Azure services to your projects. The **Connected Services** dialog in Visual Studio provides an easy way to add all the required references, connection code, and configuration settings to your projects. Some commonly used Azure services are supported out of the box, such as [Storage](/azure/vs-azure-tools-connected-services-storage), [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) authentication, [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service), and [Cognitive Services](/azure/cognitive-services/) such as [Computer Vision](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service). More services, including third-party services, are available as extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance).
+
+## Using the Azure SDK for .NET
+
+If you're using the Azure SDK for .NET to consume or manage your Azure resources, please note the following:
+
+* **Authentication**: Many libraries in the SDK use a common authentication infrastructure, while some libraries use authentication mechanisms specific to the service they're consuming. See [Authentication with the Azure SDK for .NET](todo.md) for further details.
+* **Logging**: If supported, the client libraries include the ability to log client library operations. See [Logging with the Azure SDK for .NET](sdk/logging.md) for further details.
+* **REST API** The Azure SDK for .NET is an abstraction built on the [Azure REST API](https://docs.microsoft.com/rest/api/azure/). The Azure REST API may be used in lieu of or alongside the Azure SDK for .NET if desired.
 
 ## Diagnosing problems in the Cloud
 Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure. Below are two good places to start when diagnosing issues:

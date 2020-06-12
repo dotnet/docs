@@ -72,6 +72,8 @@ landingContent:
         links:
           - text: Host a web app with Azure App Service
             url: https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/
+          - text: Develop, test, and deploy an Azure Function with Visual Studio
+            url: https://docs.microsoft.com/learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
           - text: Publish and manage your APIs with Azure API Management
             url: https://docs.microsoft.com/learn/modules/publish-manage-apis-with-azure-api-management/
       - linkListType: tutorial
@@ -114,19 +116,20 @@ landingContent:
             url: https://docs.microsoft.com/azure/active-directory/develop/
       - linkListType: learn
         links:
+          - text: Secure your application by using OpenID Connect and Azure AD
+            url: https://docs.microsoft.com/learn/modules/secure-app-with-oidc-and-azure-ad/
           - text: Secure custom APIs with Microsoft Identity
             url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
-          - text: Secure an ASP.NET Core web app with the Identity framework
+          - text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
             url: https://docs.microsoft.com/learn/modules/secure-aspnet-core-identity/
       - linkListType: tutorial
         links:
+          - text: Add sign-in to Microsoft to an ASP.NET web app
+            url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
           - text: Use Azure Key Vault with ASP.NET Core
             url: https://docs.microsoft.com/azure/key-vault/tutorial-net-create-vault-azure-web-app
           - text: Integrate Azure AD B2C with a web API
             url: https://docs.microsoft.com/azure/active-directory-b2c/tutorial-single-page-app-webapi
-          - text: Add sign-in to Microsoft to an ASP.NET web app
-            url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
-      
 
   - title: Work with storage & data
     linkLists:
@@ -136,8 +139,8 @@ landingContent:
             url: https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview
       - linkListType: quickstart
         links:
-          - text: TODO - SQL quickstart
-            url: https://docs.microsoft.com/
+          - text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
+            url: https://docs.microsoft.com/azure/azure-sql/database/connect-query-dotnet-core
           - text: Use .NET to query Azure PostgreSQL
             url: https://docs.microsoft.com/azure/postgresql/connect-csharp
       - linkListType: learn

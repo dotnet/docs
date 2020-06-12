@@ -71,7 +71,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.TlsStream.m_Worker Field](system.net.tlsstream.m_worker.md)
 * [System.Net.Security.SslState.SslProtocol Property](system.net.security.sslstate.sslprotocol.md)
 * [System.Net.UnsafeNclNativeMethods class](system.net.unsafenclnativemethods.md)
-* [System.Net.WebHeaderCollection.AddInternal](system.net.webheadercollection.addinternal.md)
+* [System.Net.WebHeaderCollection.AddInternal method](system.net.webheadercollection.addinternal.md)
 * [System.ServiceModel.Channels.Message.BodyToString Method](system.servicemodel.channels.message.bodytostring.md)
 * [System.ServiceModel.Channels.Message.WriteStartHeaders Method](system.servicemodel.channels.message.writestartheaders.md)
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)

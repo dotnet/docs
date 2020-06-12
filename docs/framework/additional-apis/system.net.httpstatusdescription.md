@@ -39,6 +39,12 @@ internal static string Get(int code)
 
 The HTTP status code, for example, `404`.
 
+### Return value
+
+<xref:System.String?displayProperty=nameWithType>
+
+The HTTP status description.
+
 ## Requirements
 
 **Namespace:** <xref:System.Net>

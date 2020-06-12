@@ -13,7 +13,7 @@ api_type:
 ---
 # WebHeaderCollection.AddInternal method
 
-Quickly adds a new header with the specified name and value to the collection by bypassing checks.
+Adds a new header with the specified name and value to the collection, bypassing checks.
 
 ```csharp
 internal void AddInternal(string name, string value)

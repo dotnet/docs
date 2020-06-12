@@ -26,9 +26,9 @@ internal static void CloseConnectionGroups(string connectionGroupName)
 
 ## Parameters
 
-- `connectionGroupName` <xref:System.String>
+`connectionGroupName` <xref:System.String>
 
-  The name of the connection group to close.
+The name of the connection group to close.
 
 ## Requirements
 

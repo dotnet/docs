@@ -43,7 +43,7 @@ internal static int CountQuotedChars(string data, int index, bool permitUnicodeE
 
   The position in the specified string up to and including which consecutive quoted characters should be counted.
 
-`permitUnicodeEscaping` <xref:System.Boolean>
+- `permitUnicodeEscaping` <xref:System.Boolean>
 
   `true` to permit Unicode characters to be escaped; otherwise, `false`.
 

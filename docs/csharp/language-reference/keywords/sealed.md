@@ -1,7 +1,5 @@
 ---
 title: "sealed modifier - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "sealed"
@@ -51,10 +49,6 @@ The result is an error message:
 
 `'MyDerivedC': cannot derive from sealed type 'SealedClass'`
 
-## C# language specification
-
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-
 ## Remarks
 
 To determine whether to seal a class, method, or property, you should generally consider the following two points:
@@ -62,6 +56,10 @@ To determine whether to seal a class, method, or property, you should generally 
 - The potential benefits that deriving classes might gain through the ability to customize your class.
 
 - The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.
+
+## C# language specification
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 
@@ -71,6 +69,6 @@ To determine whether to seal a class, method, or property, you should generally 
 - [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
 - [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [override](override.md)
 - [virtual](virtual.md)

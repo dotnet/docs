@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e619eae4-3ac3-4c37-bba4-55e59989b9cb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunctionBreakpoint::GetOffset Method
 Gets the offset of the breakpoint within the function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset (  
     [out] ULONG32  *pnOffset  
 );  
@@ -34,7 +32,7 @@ HRESULT GetOffset (
  [out] A pointer to the offset of the breakpoint.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

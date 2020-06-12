@@ -1,11 +1,10 @@
 ---
-title: "Auto-Implemented Properties (Visual Basic)"
+title: "Auto-Implemented Properties"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AutoProperty"
   - "vb.AutoImplementedProperty"
 helpviewer_keywords: 
-  - "properties [Visual Basic], auto-implemented"
   - "properties [Visual Basic], auto-implemented"
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
@@ -91,7 +90,7 @@ End Class
 
 - [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)
 - [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)
-- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
-- [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md)
-- [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)
-- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
+- [ReadOnly](../../../language-reference/modifiers/readonly.md)
+- [WriteOnly](../../../language-reference/modifiers/writeonly.md)
+- [Objects and Classes](../objects-and-classes/index.md)

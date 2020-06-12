@@ -1,6 +1,5 @@
 ---
-title: "How to: Create a File or Folder - C# Programming Guide"
-ms.custom: seodec18
+title: "How to create a file or folder - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "folders [C#]"
@@ -9,7 +8,7 @@ helpviewer_keywords:
   - "creating folders [C#]"
 ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
 ---
-# How to: Create a File or Folder (C# Programming Guide)
+# How to create a file or folder (C# Programming Guide)
 You can programmatically create a folder on your computer, create a subfolder, create a file in the subfolder, and write data to the file.  
   
 ## Example  
@@ -32,7 +31,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
 - Replace the `if`-`else` statement with the `using` statement in the following code.  
   
     ```csharp  
-    using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))   
+    using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))
     {  
         for (byte i = 0; i < 100; i++)  
         {  
@@ -57,13 +56,13 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
 - The folder name is only a colon, ":" (<xref:System.IO.PathTooLongException> class).  
   
-## .NET Framework Security  
+## .NET Security  
  An instance of the <xref:System.Security.SecurityException> class may be thrown in partial-trust situations.  
   
- If you don’t have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
+ If you don't have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
   
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)

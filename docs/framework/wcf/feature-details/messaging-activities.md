@@ -1,5 +1,5 @@
 ---
-title: "Messaging activities - WCF"
+title: "Messaging activities"
 ms.date: "03/30/2017"
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
 ---
@@ -103,7 +103,7 @@ To make setting up a request/response MEP on the client and service easier, Visu
 
 ## Messaging activities and transactions
 
-When a call is made to a workflow service you may want to flow a transaction to the service operation. To do this place the <xref:System.ServiceModel.Activities.Receive> activity within a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity contains a `Receive` activity and a body. The transaction flowed to the service remains ambient throughout the execution of the body of the <xref:System.ServiceModel.Activities.TransactedReceiveScope>. The transaction is completed when the body finishes executing. For more information about workflows and transactions see [Workflow Transactions](../../../../docs/framework/windows-workflow-foundation/workflow-transactions.md).
+When a call is made to a workflow service you may want to flow a transaction to the service operation. To do this place the <xref:System.ServiceModel.Activities.Receive> activity within a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity contains a `Receive` activity and a body. The transaction flowed to the service remains ambient throughout the execution of the body of the <xref:System.ServiceModel.Activities.TransactedReceiveScope>. The transaction is completed when the body finishes executing. For more information about workflows and transactions see [Workflow Transactions](../../windows-workflow-foundation/workflow-transactions.md).
 
 ## See also
 

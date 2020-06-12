@@ -1,5 +1,5 @@
 ---
-title: "Performance of Chained Queries (LINQ to XML) (Visual Basic)"
+title: "Performance of Chained Queries (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
 ---
@@ -24,7 +24,7 @@ Next
 
 This example produces the following output:
 
-```
+```console
 4
 ```
 
@@ -42,4 +42,4 @@ This chained query provides the same performance profile as iterating through a 
 
 ## See also
 
-- [Performance (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+- [Performance (LINQ to XML) (Visual Basic)](performance-linq-to-xml.md)

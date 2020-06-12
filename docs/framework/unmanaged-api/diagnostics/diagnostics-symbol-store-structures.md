@@ -7,25 +7,23 @@ helpviewer_keywords:
   - "diagnostics symbol store structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 0d423791-d40d-45c6-a82b-1a165768d737
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Diagnostics Symbol Store Structures
 This topic describes the unmanaged structures that the diagnostics symbol store API uses.  
   
 ## In This Section  
- [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md)  
+ [CALL_ID Structure](call-id-structure.md)  
  Provides information to a debugger about a function that is being called.  
   
- [SYMLINEDELTA Structure](../../../../docs/framework/unmanaged-api/diagnostics/symlinedelta-structure.md)  
+ [SYMLINEDELTA Structure](symlinedelta-structure.md)  
  Provides information to the symbol handler about methods that were moved as a result of edits.  
   
- [USER_THREAD Structure](../../../../docs/framework/unmanaged-api/diagnostics/user-thread-structure.md)  
+ [USER_THREAD Structure](user-thread-structure.md)  
  Provides information to a debugger about a thread.  
   
 ## Related Sections  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)  
+ [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)  
   
- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)  
+ [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)  
   
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+ [Debugging](../debugging/index.md)

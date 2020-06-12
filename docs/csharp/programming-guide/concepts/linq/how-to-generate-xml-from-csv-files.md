@@ -1,13 +1,13 @@
 ---
-title: "How to: Generate XML from CSV Files (C#)"
+title: "How to generate XML from CSV files (C#)"
 ms.date: 07/20/2015
 ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
 ---
-# How to: Generate XML from CSV Files (C#)
-This example shows how to use [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
+# How to generate XML from CSV files (C#)
+This example shows how to use Language-Integrated Query (LINQ) and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
   
 ## Example  
- The following code performs a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query on an array of strings.  
+ The following code performs a LINQ query on an array of strings.  
   
  The query uses the `let` clause to split each string into an array of fields.  
   
@@ -101,6 +101,3 @@ Console.WriteLine(cust);
 </Root>  
 ```  
   
-## See also
-
-- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

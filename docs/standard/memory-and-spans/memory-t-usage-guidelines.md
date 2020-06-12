@@ -1,15 +1,14 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
+description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET Core that can be used in pipelines.
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
   - "using Memory&lt;T&gt; and Span&lt;T&gt;"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Memory\<T> and Span\<T> usage guidelines
 
-.NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <xref:System.Span%601> and <xref:System.ReadOnlySpan%601>, which are lightweight memory buffers that can be backed by managed or unmanaged memory. Because these types can be stored on the stack, they are unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601>, and <xref:System.Buffers.MemoryPool%601>. Like <xref:System.Span%601>, <xref:System.Memory%601> and its related types can be backed by both managed and unmanaged memory. Unlike <xref:System.Span%601>, <xref:System.Memory%601> can only be stored on the managed heap.
+.NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <xref:System.Span%601> and <xref:System.ReadOnlySpan%601>, which are lightweight memory buffers that can be backed by managed or unmanaged memory. Because these types can only be stored on the stack, they are unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601>, and <xref:System.Buffers.MemoryPool%601>. Like <xref:System.Span%601>, <xref:System.Memory%601> and its related types can be backed by both managed and unmanaged memory. Unlike <xref:System.Span%601>, <xref:System.Memory%601> can be stored on the managed heap.
 
 Both <xref:System.Span%601> and <xref:System.Memory%601> are buffers of structured data that can be used in pipelines. That is, they are designed so that some or all of the data can be efficiently passed to components in the pipeline, which can process them and optionally modify the buffer. Because <xref:System.Memory%601> and its related types can be accessed by multiple components or by multiple threads, it's important that developers follow some standard usage guidelines to produce robust code.
 
@@ -19,7 +18,7 @@ Since buffers can be passed around between APIs, and since buffers can sometimes
 
 - **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it's no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-A** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it's no longer in use.
 
-- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer isn't necessarily the buffer's owner.
+- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. The active consumer of a buffer isn't necessarily the buffer's owner.
 
 - **Lease**. The lease is the length of time that a particular component is allowed to be the consumer of the buffer.
 
@@ -68,11 +67,11 @@ As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifeti
 
 - A model that supports ownership transfer. Ownership of a buffer can be transferred from its original owner (its creator) to another component, which then becomes responsible for the buffer's lifetime management. That owner can in turn transfer ownership to another component, and so on.
 
-You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of an <xref:System.Memory%601> buffer.
+You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of a <xref:System.Memory%601> buffer.
 
 [!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 
-We can also write this example with the [`using`](~/docs/csharp/language-reference/keywords/using-statement.md):
+We can also write this example with the [`using`](../../csharp/language-reference/keywords/using-statement.md):
 
 [!code-csharp[ownership-using](~/samples/snippets/standard/buffers/memory-t/owner-using/owner-using.cs)]
 
@@ -82,7 +81,7 @@ In this code:
 
 - The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept <xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. And they only consume it one at a time.
 
-Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For additional information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
+Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For more information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
 
 ### "Ownerless" Memory\<T> instances
 
@@ -106,7 +105,7 @@ Because a memory block is owned but is intended to be passed to multiple compone
 
 - While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
 
-The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Note that guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
+The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
 
 **Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
 
@@ -132,7 +131,7 @@ In fact, if we combine this rule and Rule #1, we can do even better and rewrite 
 void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
 ```
 
-The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
+The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
 
 **Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns.**
 
@@ -240,7 +239,7 @@ Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 
-According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
+According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](../../csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -280,7 +279,7 @@ public unsafe int ManagedWrapper(Span<byte> data)
 
 **Rule #10: If you're wrapping an asynchronous p/invoke method, your API should accept Memory\<T> as a parameter.**
 
-Since you cannot use the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword across asynchronous operations, you use the <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType> method to pin <xref:System.Memory%601> instances, regardless of the kind of contiguous memory the instance represents. The following example shows how to use this API to perform an asynchronous p/invoke call.
+Since you cannot use the [`fixed`](../../csharp/language-reference/keywords/fixed-statement.md) keyword across asynchronous operations, you use the <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType> method to pin <xref:System.Memory%601> instances, regardless of the kind of contiguous memory the instance represents. The following example shows how to use this API to perform an asynchronous p/invoke call.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -332,7 +331,7 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
 private static void MyCompletedCallbackImplementation(IntPtr state, int result)
 {
     GCHandle handle = (GCHandle)state;
-    var actualState = (MyCompletedCallbackState)state;
+    var actualState = (MyCompletedCallbackState)(handle.Target);
     handle.Free();
     actualState.MemoryHandle.Dispose();
 

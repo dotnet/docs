@@ -48,7 +48,7 @@ workTable.PrimaryKey = keyColumn
 ```  
   
 ```csharp  
-workTable.PrimaryKey = new DataColumn[] {workTable.Columns["CustLName"],   
+workTable.PrimaryKey = new DataColumn[] {workTable.Columns["CustLName"],
                                          workTable.Columns["CustFName"]};  
   
 // Or  
@@ -62,6 +62,6 @@ workTable.PrimaryKey = keyColumn;
 ## See also
 
 - <xref:System.Data.DataTable>
-- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
-- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataTable Schema Definition](datatable-schema-definition.md)
+- [DataTables](datatables.md)
+- [ADO.NET Overview](../ado-net-overview.md)

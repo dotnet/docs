@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "BeginEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BeginEnumeration function
 Resets an enumerator back to the beginning of the enumeration.  
@@ -24,12 +22,12 @@ Resets an enumerator back to the beginning of the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginEnumeration (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LONG              lEnumFlags
-); 
+);
 ```  
 
 ## Parameters
@@ -58,7 +56,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 This function wraps a call to the [IWbemClassObject::BeginEnumeration](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) method.
 
-The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
+The flags that can be passed as the `lEnumFlags` argument are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive.
 
 **Group 1**
 
@@ -92,7 +90,7 @@ Constant  |Value  |Description  |
 | `WBEM_FLAG_PROPAGATED_ONLY` |  0x20 | Limit the enumeration to properties that are inherited from base classes. |
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

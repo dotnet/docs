@@ -1,5 +1,5 @@
 ---
-title: "When to Use a Windows Forms ComboBox Instead of a ListBox"
+title: ComboBox vs. ListBox
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ListBox control [Windows Forms], adding and removing items"

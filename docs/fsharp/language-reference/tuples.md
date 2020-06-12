@@ -22,37 +22,37 @@ Each *element* in the previous syntax can be any valid F# expression.
 
 Examples of tuples include pairs, triples, and so on, of the same or different types. Some examples are illustrated in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L6-L21)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L6-L21)]
 
 ## Obtaining Individual Values
 
 You can use pattern matching to access and assign names for tuple elements, as shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L27-L29)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L27-L29)]
 
 You can also deconstruct a tuple via pattern matching outside of a `match` expression via  `let` binding:
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L34-L37)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L34-L37)]
 
 Or you can pattern match on tuples as inputs to functions:
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L43-L47)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L43-L47)]
 
 If you need only one element of the tuple, the wildcard character (the underscore) can be used to avoid creating a new name for a value that you do not need.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L53-L54)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L53-L54)]
 
 Copying elements from a reference tuple into a struct tuple is also simple:
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L62-L66)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L62-L66)]
 
 The functions `fst` and `snd` (reference tuples only) return the first and second elements of a tuple, respectively.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L72-L73)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L72-L73)]
 
 There is no built-in function that returns the third element of a triple, but you can easily write one as follows.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L78-L78)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L78-L78)]
 
 Generally, it is better to use pattern matching to access individual tuple elements.
 
@@ -60,17 +60,17 @@ Generally, it is better to use pattern matching to access individual tuple eleme
 
 Tuples provide a convenient way to return multiple values from a function, as shown in the following example. This example performs integer division and returns the rounded result of the operation as a first member of a tuple pair and the remainder as a second member of the pair.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L83-L86)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L83-L86)]
 
 Tuples can also be used as function arguments when you want to avoid the implicit currying of function arguments that is implied by the usual function syntax.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L88-L88)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L88-L88)]
 
 The usual syntax for defining the function `let sum a b = a + b` enables you to define a function that is the partial application of the first argument of the function, as shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fsx#L90-L94)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/basic-examples.fsx#L90-L94)]
 
-Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions/index.md).
+Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](./functions/index.md).
 
 ## Names of Tuple Types
 
@@ -110,11 +110,11 @@ let struct (newX, newY) = Example.AddOneToXAndY(struct (1, 2))
 
 Because Reference Tuples and Struct Tuples have a completely different underlying representation, they are not implicitly convertible.  That is, code such as the following won't compile:
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L5-L12)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/interop.fsx#L5-L12)]
 
 You must pattern match on one tuple and construct the other with the constituent parts.  For example:
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L18-L22)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/tuples/interop.fsx#L18-L22)]
 
 ## Compiled Form of Reference Tuples
 

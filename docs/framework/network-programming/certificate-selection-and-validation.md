@@ -1,5 +1,6 @@
 ---
 title: "Certificate Selection and Validation"
+description: Find out about  several ways System.Net classes offer to select and validate certificates for SSL/TLS connections.
 ms.date: "03/30/2017"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
 ---
@@ -48,5 +49,5 @@ The *HttpCfg.exe* tool can be used to configure server certificates for the <xre
   
 ## See also
 
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Security in Network Programming](security-in-network-programming.md)
+- [Network Programming in the .NET Framework](index.md)

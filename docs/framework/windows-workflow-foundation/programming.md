@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow Foundation Programming"
+description: This article contains references you need to understand to become a proficient Windows Workflow Foundation programmer.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], programming"

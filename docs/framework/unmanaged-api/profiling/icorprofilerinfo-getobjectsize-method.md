@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9f02e763-73f7-42cb-a41c-f78499d9482c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetObjectSize Method
 Gets the size of a specified object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize(  
     [in]  ObjectID objectId,  
     [out] ULONG  *pcSize);  
@@ -39,7 +37,7 @@ HRESULT GetObjectSize(
 ## Remarks  
   
 > [!IMPORTANT]
->  This method is obsolete. It returns COR_E_OVERFLOW for objects greater than 4GB on 64-bit platforms. Use the  [ICorProfilerInfo4::GetObjectSize2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getobjectsize2-method.md) method instead.  
+> This method is obsolete. It returns COR_E_OVERFLOW for objects greater than 4GB on 64-bit platforms. Use the  [ICorProfilerInfo4::GetObjectSize2](icorprofilerinfo4-getobjectsize2-method.md) method instead.  
   
  Different objects of the same types often have the same size. However, some types, such as arrays or strings, may have a different size for each object.  
   
@@ -50,7 +48,7 @@ HRESULT GetObjectSize(
 - On 64-bit Windows, the alignment is always 8 bytes.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -60,4 +58,4 @@ HRESULT GetObjectSize(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

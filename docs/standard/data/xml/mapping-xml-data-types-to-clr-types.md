@@ -3,8 +3,6 @@ title: "Mapping XML Data Types to CLR Types"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Mapping XML Data Types to CLR Types
@@ -75,4 +73,4 @@ The following table describes the default mapping between the XML data types and
 
 ## See also
 
-- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+- [Type Support in the System.Xml Classes](type-support-in-the-system-xml-classes.md)

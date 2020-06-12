@@ -16,7 +16,7 @@ Creates and configures a <xref:System.Activities.ActivityBuilder> object that pr
 ## Syntax  
   
 ```csharp  
-public ActivityBuilder Build();   
+public ActivityBuilder Build();
 ```  
   
 ## Return Value  
@@ -24,4 +24,4 @@ public ActivityBuilder Build();
   
 ## See also
 
-- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)
+- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

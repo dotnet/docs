@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRDataEnumMemoryFlags Enumeration
-Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) method should include.  
+Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md) method should include.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLRDataEnumMemoryFlags {  
     CLRDATA_ENUM_MEM_DEFAULT  = 0x0,  
     CLRDATA_ENUM_MEM_MINI     = CLRDATA_ENUM_MEM_DEFAULT,  
@@ -38,7 +36,7 @@ typedef enum CLRDataEnumMemoryFlags {
 |`CLRDATA_ENUM_MEM_HEAP`|A full heap dump.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -48,4 +46,4 @@ typedef enum CLRDataEnumMemoryFlags {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

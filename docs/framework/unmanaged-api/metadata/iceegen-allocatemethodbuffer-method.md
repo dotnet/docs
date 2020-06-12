@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 845ab77e-9639-47f5-99fb-f3b619e3e779
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::AllocateMethodBuffer Method
 Creates a buffer of the specified size for a method, and gets the relative virtual address of the method.  
@@ -25,9 +23,9 @@ Creates a buffer of the specified size for a method, and gets the relative virtu
   
 ## Syntax  
   
-```  
-HRESULT AllocateMethodBuffer (   
-    [in]  ULONG    cchBuffer,   
+```cpp  
+HRESULT AllocateMethodBuffer (
+    [in]  ULONG    cchBuffer,
     [out] UCHAR    **lpBuffer,  
     [out] ULONG    *RVA  
 );  
@@ -44,7 +42,7 @@ HRESULT AllocateMethodBuffer (
  [out] The relative virtual address of the method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,4 +52,4 @@ HRESULT AllocateMethodBuffer (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

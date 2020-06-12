@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Creating GenericPrincipal Objects"
   - "GenericIdentity Objects"
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Create GenericPrincipal and GenericIdentity Objects
@@ -43,7 +41,7 @@ You can use the <xref:System.Security.Principal.GenericIdentity> class in conjun
     GenericPrincipal myPrincipal = new GenericPrincipal(myIdentity, myStringArray);
     ```
 
-3. Use the following code to attach the principal to the current thread. This is valuable in situations where the principal must be validated several times, it must be validated by other code running in your application, or it must be validated by a <xref:System.Security.Permissions.PrincipalPermission> object. You can still perform role-based validation on the principal object without attaching it to the thread. For more information, see [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md).
+3. Use the following code to attach the principal to the current thread. This is valuable in situations where the principal must be validated several times, it must be validated by other code running in your application, or it must be validated by a <xref:System.Security.Permissions.PrincipalPermission> object. You can still perform role-based validation on the principal object without attaching it to the thread. For more information, see [Replacing a Principal Object](replacing-a-principal-object.md).
 
     ```vb
     Thread.CurrentPrincipal = myPrincipal
@@ -58,7 +56,6 @@ You can use the <xref:System.Security.Principal.GenericIdentity> class in conjun
 The following code example demonstrates how to create an instance of a **GenericPrincipal** and a **GenericIdentity**. This code displays the values of these objects to the console.
 
 ```vb
-Imports System
 Imports System.Security.Principal
 Imports System.Threading
 
@@ -131,7 +128,7 @@ public class Class1
 
 When executed, the application displays output similar to the following.
 
-```
+```console
 The Name is: MyIdentity
 The IsAuthenticated is: True
 Is this a Manager? True
@@ -142,5 +139,5 @@ Is this a Manager? True
 - <xref:System.Security.Principal.GenericIdentity>
 - <xref:System.Security.Principal.GenericPrincipal>
 - <xref:System.Security.Permissions.PrincipalPermission>
-- [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+- [Replacing a Principal Object](replacing-a-principal-object.md)
+- [Principal and Identity Objects](principal-and-identity-objects.md)

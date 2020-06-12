@@ -16,7 +16,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To validate individual cell values  
   
-- Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../data/data-binding-overview.md).  
+- Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).  
   
      The following example shows a <xref:System.Windows.Controls.DataGrid> control with four columns bound to different properties of a business object. Three of the columns specify the <xref:System.Windows.Controls.ExceptionValidationRule> by setting the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true`.  
   
@@ -63,7 +63,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
  The following example provides a complete demonstration for cell and row validation. The `Course` class provides a sample data object that implements <xref:System.ComponentModel.IEditableObject> to support transactions. The <xref:System.Windows.Controls.DataGrid> control interacts with <xref:System.ComponentModel.IEditableObject> to enable users to revert changes by pressing ESC.  
   
 > [!NOTE]
->  If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridValidation.MainWindow"` with `x:Class="MainWindow"`.  
+> If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridValidation.MainWindow"` with `x:Class="MainWindow"`.  
   
  To test the validation, try the following:  
   
@@ -88,6 +88,6 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
 
 - <xref:System.Windows.Controls.DataGrid>
 - [DataGrid](datagrid.md)
-- [Data Binding](../data/data-binding-wpf.md)
+- [Data Binding](../../../desktop-wpf/data/data-binding-overview.md)
 - [Implement Binding Validation](../data/how-to-implement-binding-validation.md)
 - [Implement Validation Logic on Custom Objects](../data/how-to-implement-validation-logic-on-custom-objects.md)

@@ -1,5 +1,6 @@
 ---
 title: "Workflow Tracking and Tracing"
+description: Windows Workflow tracking is a .NET Framework 4.6.1 feature that provides a tracking infrastructure to track the execution of a workflow instance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], tracking and tracing"
@@ -10,7 +11,7 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
   
  These tracking components are equivalent to the tracking service in WinFX. In [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], the performance has been improved and the programming model simplified for the WF tracking feature. The tracking runtime instruments a workflow instance to emit events related to the workflow life cycle, workflow activities and custom events.  
   
- Windows Server App Fabric also provides the ability to monitor the execution of a WCF and workflow services. For more information, see [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273) and [Monitoring Applications with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkId=201287)  
+ Windows Server App Fabric also provides the ability to monitor the execution of a WCF and workflow services. For more information, see [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10)) and [Monitoring Applications with Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))  
   
  To troubleshoot the workflow runtime, you can turn on diagnostic workflow tracing. For more information, see [Workflow Tracing](workflow-tracing.md).  
   

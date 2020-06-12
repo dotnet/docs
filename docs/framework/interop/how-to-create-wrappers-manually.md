@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wrappers, creating manually"
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create Wrappers Manually
 If you decide to declare COM types manually in managed source code, the best place to start is with an existing Interface Definition Language (IDL) file or type library. When you do not have the IDL file or cannot generate a type library file, you can simulate the COM types by creating managed declarations and exporting the resulting assembly to a type library.  
@@ -33,7 +31,7 @@ If you decide to declare COM types manually in managed source code, the best pla
   
  **IDL or type library file**  
   
-```  
+```cpp
  [  
 object,  
 uuid(40A8C65D-2448-447A-B786-64682CBEF133),  
@@ -43,7 +41,7 @@ pointer_default(unique)
  ]  
 interface ISATest : IDispatch  
  {  
-[id(1), helpstring("method InSArray")]   
+[id(1), helpstring("method InSArray")]
 HRESULT InSArray([in] SAFEARRAY(int) *ppsa, [out,retval] int *pSum);  
  };  
  [  
@@ -77,7 +75,7 @@ namespace SAServer
   // MethodCodeType=MethodCodeType.Runtime)]  
   int InSArray( [MarshalAs(UnmanagedType.SafeArray,  
       SafeArraySubType=VarEnum.VT_I4)] ref int[] param );  
- }   
+ }
  [ComImport]  
  [Guid("116CCA1E-7E39-4515-9849-90790DA6431E")]  
  [ClassInterface(ClassInterfaceType.None)]  
@@ -85,9 +83,9 @@ namespace SAServer
  public class SATest : ISATest  
  {  
   [DispId(1)]  
-  [MethodImpl(MethodImplOptions.InternalCall,   
+  [MethodImpl(MethodImplOptions.InternalCall,
   MethodCodeType=MethodCodeType.Runtime)]  
-  extern int ISATest.InSArray( [MarshalAs(UnmanagedType.SafeArray,   
+  extern int ISATest.InSArray( [MarshalAs(UnmanagedType.SafeArray,
   SafeArraySubType=VarEnum.VT_I4)] ref int[] param );  
  }  
 }  

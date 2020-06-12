@@ -2,8 +2,6 @@
 title: "Common Data Types (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Common Data Types (Unmanaged API Reference)
 This topic lists simple data types used by the unmanaged APIs for the .NET Framework that are defined by C/C++ `typedef` statements. These data types are typically aliases for C/C++ primitive data types. Typically, the values of these data types are opaque; that is, they are returned by a particular function or method so that they can be passed to other functions or methods without modification.  
@@ -28,11 +26,13 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |mdToken|`typedef UINT32 mdToken;`|corprof.h|A metadata token (a row in a metadata table).|  
 |ModuleID|`typedef UINT_PTR ModuleID;`|corprof.h|The identifier of an assembly module.|  
 |ObjectID|`typedef UINT_PTR ObjectID;`|corprof.h|The identifier of an object.|  
+|PCCOR_SIGNATURE|`typedef SIZE_T PCCOR_SIGNATURE;`|cordebug.h|A pointer to a member or metadata signature.|
 |ProcessID|`typedef UINT_PTR ProcessID;`|corprof.h|The identifier of a managed process.|  
 |ReJITID|`typedef UINT_PTR ReJITID;`|corprof.h|The identifier of a jitted function.|  
-|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance.|  
+|SIZE_T|`typedef ULONG_PTR SIZE_T;`|corsym.h|A pointer to a 64-bit memory address.|
+|TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](./hosting/iclrtask-interface.md) instance.|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|The identifier of a managed thread.|  
   
 ## See also
 
-- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)
+- [Unmanaged API Reference](index.md)

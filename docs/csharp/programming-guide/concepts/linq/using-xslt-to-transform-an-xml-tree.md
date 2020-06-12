@@ -9,38 +9,47 @@ You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML t
 ## Example  
   
 ```csharp  
-string xslMarkup = @"<?xml version='1.0'?>  
-<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
-    <xsl:template match='/Parent'>  
-        <Root>  
-            <C1>  
-            <xsl:value-of select='Child1'/>  
-            </C1>  
-            <C2>  
-            <xsl:value-of select='Child2'/>  
-            </C2>  
-        </Root>  
-    </xsl:template>  
-</xsl:stylesheet>";  
-  
-XDocument xmlTree = new XDocument(  
-    new XElement("Parent",  
-        new XElement("Child1", "Child1 data"),  
-        new XElement("Child2", "Child2 data")  
-    )  
-);  
-  
-XDocument newTree = new XDocument();  
-using (XmlWriter writer = newTree.CreateWriter()) {  
-    // Load the style sheet.  
-    XslCompiledTransform xslt = new XslCompiledTransform();  
-    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
-  
-    // Execute the transform and output the results to a writer.  
-    xslt.Transform(xmlTree.CreateReader(), writer);  
-}  
-  
-Console.WriteLine(newTree);  
+string xslt = @"<?xml version='1.0'?>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+        <xsl:template match='/Parent'>  
+            <Root>  
+                <C1>  
+                <xsl:value-of select='Child1'/>  
+                </C1>  
+                <C2>  
+                <xsl:value-of select='Child2'/>  
+                </C2>  
+            </Root>  
+        </xsl:template>  
+    </xsl:stylesheet>";
+
+var oldDocument = new XDocument(
+    new XElement("Parent",
+        new XElement("Child1", "Child1 data"),
+        new XElement("Child2", "Child2 data")
+    )
+);
+
+var newDocument = new XDocument();
+
+using (var stringReader = new StringReader(xslt))
+{
+    using (XmlReader xsltReader = XmlReader.Create(stringReader))
+    {
+        var transformer = new XslCompiledTransform();
+        transformer.Load(xsltReader);
+        using (XmlReader oldDocumentReader = oldDocument.CreateReader())
+        {
+            using (XmlWriter newDocumentWriter = newDocument.CreateWriter())
+            {
+                transformer.Transform(oldDocumentReader, newDocumentWriter);
+            }
+        }
+    }
+}
+
+string result = newDocument.ToString();
+Console.WriteLine(result);
 ```  
   
  This example produces the following output:  
@@ -56,4 +65,3 @@ Console.WriteLine(newTree);
 
 - <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: c1542811-0a7f-4235-bcfd-b24370d6f24b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHandleValue::Dispose Method
 Releases the handle referenced by this ICorDebugHandleValue object without explicitly releasing the interface pointer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Dispose ();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

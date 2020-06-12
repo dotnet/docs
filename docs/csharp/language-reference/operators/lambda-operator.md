@@ -1,6 +1,5 @@
 ---
-title: "=> Operator - C# Reference"
-ms.custom: seodec18
+title: "=> operator - C# reference"
 ms.date: 01/22/2019
 f1_keywords: 
   - "=>_CSharpKeyword"
@@ -9,25 +8,25 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ---
-# => operator (C# Reference)
+# => operator (C# reference)
 
-The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition.
+The `=>` token is supported in two forms: as the [lambda operator](#lambda-operator) and as a separator of a member name and the member implementation in an [expression body definition](#expression-body-definition).
 
 ## Lambda operator
 
-In [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md), the lambda operator `=>` separates the input variables on the left side from the lambda body on the right side.
+In [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
 
 The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
 
-[!code-csharp-interactive[infer types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#InferredTypes)]
+[!code-csharp-interactive[infer types of input variables](snippets/LambdaOperator.cs#InferredTypes)]
 
-Input variables of lambda expressions are strongly typed at compile time. When the compiler can infer the types of input variables, like in the preceding example, you may omit type declarations. If you need to specify the type of input variables, you must do that for each variable, as the following example shows:
+Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you may omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
 
-[!code-csharp-interactive[specify types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#ExplicitTypes)]
+[!code-csharp-interactive[specify types of input variables](snippets/LambdaOperator.cs#ExplicitTypes)]
 
-The following example shows how to define a lambda expression without input variables:
+The following example shows how to define a lambda expression without input parameters:
 
-[!code-csharp-interactive[without input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#WithoutInput)]
+[!code-csharp-interactive[without input variables](snippets/LambdaOperator.cs#WithoutInput)]
 
 For more information, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
 
@@ -39,7 +38,7 @@ An expression body definition has the following general syntax:
 member => expression;
 ```
 
-where *expression* is a valid expression. Note that *expression* can be a *statement expression* only if the member's return type is `void`, or if the member is a constructor, a finalizer, or a property `set` accessor.
+where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member's return type is `void` or if the member is a constructor, a finalizer, or a property `set` accessor, `expression` must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements), which can be of any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 
@@ -56,7 +55,7 @@ public override string ToString()
 }
 ```
 
-Expression body definitions for methods and read-only properties are supported starting with C# 6. Expression body definitions for constructors, finalizers, property accessors, and indexers are supported starting with C# 7.0.
+Expression body definitions for methods, operators, and read-only properties are supported beginning with C# 6. Expression body definitions for constructors, finalizers, and property and indexer accessors are supported beginning with C# 7.0.
 
 For more information, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
@@ -66,12 +65,9 @@ The `=>` operator cannot be overloaded.
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](../language-specification/index.md).
+For more information about the lambda operator, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
-- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md)
-- [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)

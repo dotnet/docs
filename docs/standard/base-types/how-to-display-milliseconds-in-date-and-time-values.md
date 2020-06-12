@@ -1,5 +1,6 @@
 ---
 title: "How to: Display Milliseconds in Date and Time Values"
+description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -12,8 +13,6 @@ helpviewer_keywords:
   - "dates [.NET Framework], milliseconds"
   - "milliseconds [.NET Framework]"
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Display Milliseconds in Date and Time Values
 The default date and time formatting methods, such as <xref:System.DateTime.ToString?displayProperty=nameWithType>, include the hours, minutes, and seconds of a time value but exclude its milliseconds component. This topic shows how to include a date and time's millisecond component in formatted date and time strings.  
@@ -43,9 +42,9 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
  [!code-vb[Formatting.HowTo.Millisecond#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.Millisecond/vb/Millisecond.vb#3)]  
   
 > [!NOTE]
->  It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of date and time values depends on the resolution of the system clock. On Windows NT 3.5 and later, and [!INCLUDE[windowsver](../../../includes/windowsver-md.md)] operating systems, the clock's resolution is approximately 10-15 milliseconds.  
+> It is possible to display very small fractional units of a second, such as ten thousandths of a second or hundred-thousandths of a second. However, these values may not be meaningful. The precision of date and time values depends on the resolution of the system clock. On Windows NT 3.5 and later, and Windows Vista operating systems, the clock's resolution is approximately 10-15 milliseconds.  
   
 ## See also
 
 - <xref:System.Globalization.DateTimeFormatInfo>
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)

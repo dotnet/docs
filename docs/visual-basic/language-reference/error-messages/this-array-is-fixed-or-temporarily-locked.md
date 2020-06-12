@@ -1,5 +1,5 @@
 ---
-title: "This array is fixed or temporarily locked (Visual Basic)"
+title: "This array is fixed or temporarily locked"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID10"
@@ -24,4 +24,4 @@ This error has the following possible causes:
   
 ## See also
 
-- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Arrays](../../programming-guide/language-features/arrays/index.md)

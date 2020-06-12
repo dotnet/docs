@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2::IsMatchingParentFrame Method
 Determines whether the specified frame is the parent of the current frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2  
                                       *pPotentialParentFrame,  
                               [out] BOOL *pIsParent);  
@@ -51,7 +49,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
  `IsMatchingParentFrame` returns `true` if the frame object you pass to the method is the parent of the frame object on which the method was called. If you call the method on a frame that is not a child of the specified frame, it returns an error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -61,6 +59,6 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
   
 ## See also
 
-- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugNativeFrame2 Interface](icordebugnativeframe2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -1,6 +1,5 @@
 ---
 title: "Pointer Conversions - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], conversions"
@@ -35,9 +34,10 @@ The following table shows the predefined implicit pointer conversions. Implicit 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
-- [Types](../../../csharp/language-reference/keywords/types.md)
-- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
-- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
-- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+- [C# Programming Guide](../index.md)
+- [Pointer types](pointer-types.md)
+- [Reference types](../../language-reference/keywords/reference-types.md)
+- [Value types](../../language-reference/builtin-types/value-types.md)
+- [unsafe](../../language-reference/keywords/unsafe.md)
+- [fixed Statement](../../language-reference/keywords/fixed-statement.md)
+- [stackalloc](../../language-reference/operators/stackalloc.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::GetCode Method
 Gets a pointer to the code associated with this stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [out] ICorDebugCode      **ppCode  
 );  
@@ -34,7 +32,7 @@ HRESULT GetCode (
  [out] A pointer to the address of an ICorDebugCode object that represents the code associated with this frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

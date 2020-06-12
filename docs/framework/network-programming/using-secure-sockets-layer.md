@@ -1,5 +1,6 @@
 ---
 title: "Using Secure Sockets Layer"
+description: Learn about how System.Net and extending classes use the Secure Sockets Layer to encrypt the connection for several network protocols in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -58,6 +59,6 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
   
 ## See also
 
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
-- [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)
+- [Security in Network Programming](security-in-network-programming.md)
+- [Network Programming in the .NET Framework](index.md)
+- [Certificate Selection and Validation](certificate-selection-and-validation.md)

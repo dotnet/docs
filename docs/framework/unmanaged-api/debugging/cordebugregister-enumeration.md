@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 003bb138-7960-4291-ac88-0d87e470ff70
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugRegister Enumeration
 Specifies the registers associated with a given processor architecture.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugRegister {  
   
     REGISTER_INSTRUCTION_POINTER = 0,  
@@ -195,7 +193,7 @@ typedef enum CorDebugRegister {
  For example, if you need to specify the #83 data register on the IA-64 processor, use `REGISTER_IA64_R0` + 83.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -205,4 +203,4 @@ typedef enum CorDebugRegister {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

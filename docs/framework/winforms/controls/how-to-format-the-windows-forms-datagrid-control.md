@@ -1,5 +1,5 @@
 ---
-title: "How to: Format the Windows Forms DataGrid Control"
+title: Format DataGrid Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -17,7 +17,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
 ---
 # How to: Format the Windows Forms DataGrid Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  Applying different colors to various parts of a <xref:System.Windows.Forms.DataGrid> control can help to make the information in it easier to read and interpret. Color can be applied to rows and columns. Rows and columns can also be hidden or shown at your discretion.  
   
@@ -56,7 +56,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     |<xref:System.Windows.Forms.DataGrid.SelectionForeColor%2A>|When a row or cell is selected, this is the foreground color.|  
   
     > [!NOTE]
-    >  Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
+    > Keep in mind, when customizing the colors of controls, that it is possible to make the control inaccessible, due to poor color choice (for example, red and green). Use the colors available on the **System Colors** palette to avoid this issue.  
   
      The following procedures assume your form has a <xref:System.Windows.Forms.DataGrid> control bound to a data table. For more information, see [Binding the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
   
@@ -80,22 +80,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
   
     ```vb  
     Private Sub CreateAuthorFirstNameColumn()  
-       ' Add a GridTableStyle and set the MappingName   
+       ' Add a GridTableStyle and set the MappingName
        ' to the name of the DataTable.  
        Dim TSAuthors As New DataGridTableStyle()  
        TSAuthors.MappingName = "Authors"  
   
-       ' Add a GridColumnStyle and set the MappingName   
-       ' to the name of a DataColumn in the DataTable.   
-       ' Set the HeaderText and Width properties.   
+       ' Add a GridColumnStyle and set the MappingName
+       ' to the name of a DataColumn in the DataTable.
+       ' Set the HeaderText and Width properties.
        Dim TCFirstName As New DataGridTextBoxColumn()  
        TCFirstName.MappingName = "AV_FName"  
        TCFirstName.HeaderText = "First Name"  
        TCFirstName.Width = 75  
        TSAuthors.GridColumnStyles.Add(TCFirstName)  
   
-       ' Add the DataGridTableStyle instance to   
-       ' the GridTableStylesCollection.   
+       ' Add the DataGridTableStyle instance to
+       ' the GridTableStylesCollection.
        myDataGrid.TableStyles.Add(TSAuthors)  
     End Sub  
     ```  
@@ -103,22 +103,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     ```csharp  
     private void addCustomDataTableStyle()  
     {  
-       // Add a GridTableStyle and set the MappingName   
+       // Add a GridTableStyle and set the MappingName
        // to the name of the DataTable.  
        DataGridTableStyle TSAuthors = new DataGridTableStyle();  
        TSAuthors.MappingName = "Authors";  
   
-       // Add a GridColumnStyle and set the MappingName   
-       // to the name of a DataColumn in the DataTable.   
-       // Set the HeaderText and Width properties.   
+       // Add a GridColumnStyle and set the MappingName
+       // to the name of a DataColumn in the DataTable.
+       // Set the HeaderText and Width properties.
        DataGridColumnStyle TCFirstName = new DataGridTextBoxColumn();  
        TCFirstName.MappingName = " AV_FName";  
        TCFirstName.HeaderText = "First Name";  
        TCFirstName.Width = 75;  
        TSAuthors.GridColumnStyles.Add(TCFirstName);  
   
-       // Add the DataGridTableStyle instance to   
-       // the GridTableStylesCollection.   
+       // Add the DataGridTableStyle instance to
+       // the GridTableStylesCollection.
        dataGrid1.TableStyles.Add(TSAuthors);  
     }  
     ```  
@@ -127,22 +127,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     private:  
        void addCustomDataTableStyle()  
        {  
-          // Add a GridTableStyle and set the MappingName   
+          // Add a GridTableStyle and set the MappingName
           // to the name of the DataTable.  
           DataGridTableStyle^ TSAuthors = new DataGridTableStyle();  
           TSAuthors->MappingName = "Authors";  
   
-          // Add a GridColumnStyle and set the MappingName   
-          // to the name of a DataColumn in the DataTable.   
-          // Set the HeaderText and Width properties.   
+          // Add a GridColumnStyle and set the MappingName
+          // to the name of a DataColumn in the DataTable.
+          // Set the HeaderText and Width properties.
           DataGridColumnStyle^ TCFirstName = gcnew DataGridTextBoxColumn();  
           TCFirstName->MappingName = "AV_FName";  
           TCFirstName->HeaderText = "First Name";  
           TCFirstName->Width = 75;  
           TSAuthors->GridColumnStyles->Add(TCFirstName);  
   
-          // Add the DataGridTableStyle instance to   
-          // the GridTableStylesCollection.   
+          // Add the DataGridTableStyle instance to
+          // the GridTableStylesCollection.
           dataGrid1->TableStyles->Add(TSAuthors);  
        }  
     ```  

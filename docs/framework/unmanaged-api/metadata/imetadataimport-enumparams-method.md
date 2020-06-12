@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 52118dc9-fe6e-4b39-aa48-c3cc3ea4214d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumParams Method
 Enumerates ParamDef tokens representing the parameters of the method referenced by the specified MethodDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumParams (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdMethodDef     mb,  
@@ -57,7 +55,7 @@ HRESULT EnumParams (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -67,5 +65,5 @@ HRESULT EnumParams (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

@@ -17,7 +17,7 @@ This example shows how to perform a hit test on a visual object that is composed
  The following example shows how to retrieve the <xref:System.Windows.Media.DrawingGroup> from a visual object that uses the <xref:System.Windows.Media.VisualTreeHelper.GetDrawing%2A> method. A hit test is then performed on the rendered content of each drawing in the <xref:System.Windows.Media.DrawingGroup> to determine which geometry was hit.  
   
 > [!NOTE]
->  In most cases, you would use the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to determine whether a point intersects any of the rendered content of a visual.  
+> In most cases, you would use the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to determine whether a point intersects any of the rendered content of a visual.  
   
  [!code-csharp[VisualsOverview#VisualsOverviewSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsOverview/CSharp/Window1.xaml.cs#visualsoverviewsnippet4)]
  [!code-vb[VisualsOverview#VisualsOverviewSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsOverview/visualbasic/window1.xaml.vb#visualsoverviewsnippet4)]  
@@ -27,7 +27,7 @@ This example shows how to perform a hit test on a visual object that is composed
  You can also provide a <xref:System.Windows.Media.ToleranceType> that is used for the purposes of Bezier flattening.  
   
 > [!NOTE]
->  This sample does not take into account any transforms or clipping that may be applied to the geometry. In addition, this sample will not work with a styled control, since it does not have any drawings directly associated with it.  
+> This sample does not take into account any transforms or clipping that may be applied to the geometry. In addition, this sample will not work with a styled control, since it does not have any drawings directly associated with it.  
   
 ## See also
 

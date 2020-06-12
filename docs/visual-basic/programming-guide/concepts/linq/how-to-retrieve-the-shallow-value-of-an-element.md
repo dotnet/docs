@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Shallow Value of an Element (Visual Basic)"
+title: "How to: Retrieve the Shallow Value of an Element"
 ms.date: 07/20/2015
 ms.assetid: 730a6670-fb8c-41fc-8a1b-eb97a837e432
 ---
@@ -64,7 +64,7 @@ End Module
 
 This example produces the following output:
 
-```
+```console
 Column  Name="CustomerId"   =Customer.CustomerId.Heading
 Column  Name="Name"         =Customer.Name.Heading
 Column  Name="CustomerId"   =Customer.CustomerId
@@ -73,4 +73,4 @@ Column  Name="Name"         =Customer.Name
 
 ## See also
 
-- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

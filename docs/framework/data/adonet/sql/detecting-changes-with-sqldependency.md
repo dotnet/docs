@@ -1,5 +1,6 @@
 ---
 title: "Detecting Changes with SqlDependency"
+description: Associate a SqlDependency object with a SqlCommand to detect when query results differ from those originally retrieved in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -13,7 +14,7 @@ A <xref:System.Data.SqlClient.SqlDependency> object can be associated with a <xr
 
 ## Security Considerations
 
-The dependency infrastructure relies on a <xref:System.Data.SqlClient.SqlConnection> that is opened when <xref:System.Data.SqlClient.SqlDependency.Start%2A> is called in order to receive notifications that the underlying data has changed for a given command. The ability for a client to initiate the call to `SqlDependency.Start` is controlled through the use of <xref:System.Data.SqlClient.SqlClientPermission> and code access security attributes. For more information, see [Enabling Query Notifications](../../../../../docs/framework/data/adonet/sql/enabling-query-notifications.md) and [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md).
+The dependency infrastructure relies on a <xref:System.Data.SqlClient.SqlConnection> that is opened when <xref:System.Data.SqlClient.SqlDependency.Start%2A> is called in order to receive notifications that the underlying data has changed for a given command. The ability for a client to initiate the call to `SqlDependency.Start` is controlled through the use of <xref:System.Data.SqlClient.SqlClientPermission> and code access security attributes. For more information, see [Enabling Query Notifications](enabling-query-notifications.md) and [Code Access Security and ADO.NET](../code-access-security.md).
 
 ### Example
 
@@ -122,5 +123,5 @@ void Termination()
 
 ## See also
 
-- [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Query Notifications in SQL Server](query-notifications-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

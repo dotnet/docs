@@ -1,5 +1,5 @@
 ---
-title: "-linkresource (Visual Basic)"
+title: "-linkresource"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/linkresource compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Creates a link to a managed resource.
   
 ## Syntax  
   
-```  
+```console  
 -linkresource:filename[,identifier[,public|private]]  
-' -or-  
+```
+
+or  
+
+```console
 -linkres:filename[,identifier[,public|private]]  
 ```  
   
@@ -40,7 +44,7 @@ Creates a link to a managed resource.
  The short form of `-linkresource` is `-linkres`.  
   
 > [!NOTE]
->  The `-linkresource` option is not available from the Visual Studio development environment; it is available only when you compile from the command line.  
+> The `-linkresource` option is not available from the Visual Studio development environment; it is available only when you compile from the command line.  
   
 ## Example  
  The following code compiles `in.vb` and links to resource file `rf.resource`.  
@@ -51,7 +55,7 @@ vbc -linkresource:rf.resource in.vb
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-target (Visual Basic)](target.md)
+- [-resource (Visual Basic)](resource.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

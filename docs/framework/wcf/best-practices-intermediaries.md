@@ -28,5 +28,5 @@ catch (Exception e)
   
 ## See also
 
-- [WCF Error Handling](../../../docs/framework/wcf/wcf-error-handling.md)
-- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [WCF Error Handling](wcf-error-handling.md)
+- [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md)

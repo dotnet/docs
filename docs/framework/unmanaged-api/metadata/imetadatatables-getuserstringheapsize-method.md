@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cba9e4d6-9461-4420-9614-96ff7039ec9c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetUserStringHeapSize Method
 Gets the size, in bytes, of the user string heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserStringHeapSize (  
     [out] ULONG   *pcbBlobs  
 );  
@@ -34,7 +32,7 @@ HRESULT GetUserStringHeapSize (
  [out] A pointer to the size, in bytes, of the user string heap.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,5 +42,5 @@ HRESULT GetUserStringHeapSize (
   
 ## See also
 
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

@@ -24,7 +24,7 @@ Erasing Type Providers produce types that can only be consumed in the assembly o
 The following widely-used libraries contain Type Providers for different uses:
 
 - [FSharp.Data](https://fsharp.github.io/FSharp.Data/) includes Type Providers for JSON, XML, CSV, and HTML document formats and resources.
-- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly-typed access to relation databases through object mapping and F# LINQ queries against these data sources.
+- [SQLProvider](https://fsprojects.github.io/SQLProvider/) provides strongly typed access to relation databases through object mapping and F# LINQ queries against these data sources.
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) has a set of type providers for compile-time checked embedding of T-SQL in F#.
 - [Azure Storage Type provider](https://fsprojects.github.io/AzureStorageTypeProvider/) provides types for Azure Blobs, Tables, and Queues, allowing you to access these resources without needing to specify resource names as strings throughout your program.
 - [FSharp.Data.GraphQL](https://fsprojects.github.io/FSharp.Data.GraphQL/index.html) contains the **GraphQLProvider**, which provides types based on a GraphQL server specified by URL.
@@ -35,4 +35,3 @@ Where necessary, you can [create your own custom type providers](creating-a-type
 
 - [Tutorial: Create a Type Provider](creating-a-type-provider.md)
 - [F# Language Reference](../../language-reference/index.md)
-- [Visual F#](../../index.md)

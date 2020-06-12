@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 723482d1-d1a1-410a-a405-677eeb04e2bf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugReferenceValue::DereferenceStrong Method
 `DereferenceStrong` is not implemented. Do not call this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DereferenceStrong (  
     [out] ICorDebugValue  **ppValue  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

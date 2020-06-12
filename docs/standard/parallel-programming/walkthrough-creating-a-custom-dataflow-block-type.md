@@ -10,14 +10,12 @@ helpviewer_keywords:
   - "TPL dataflow library, creating custom dataflow blocks"
   - "dataflow blocks, creating custom in TPL"
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Walkthrough: Creating a Custom Dataflow Block Type
 Although the TPL Dataflow Library provides several dataflow block types that enable a variety of functionality, you can also create custom block types. This document describes how to create a dataflow block type that implements custom behavior.  
   
 ## Prerequisites  
- Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you read this document.  
+ Read [Dataflow](dataflow-task-parallel-library.md) before you read this document.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
   
@@ -48,4 +46,4 @@ Although the TPL Dataflow Library provides several dataflow block types that ena
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

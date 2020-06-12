@@ -1,15 +1,13 @@
 ---
-title: Port a Windows Forms app to .NET Core 3.0
-description: Teaches you how to port a .NET Framework Windows Forms application to .NET Core 3.0 for Windows.
+title: Port a Windows Forms app to .NET Core
+description: Teaches you how to port a .NET Framework Windows Forms application to .NET Core for Windows.
 author: Thraka
 ms.author: adegeo
-ms.date: 03/01/2019
-ms.custom: 
+ms.date: 01/24/2020
 ---
+# How to port a Windows Forms desktop app to .NET Core
 
-# How to: Port a Windows Forms desktop app to .NET Core
-
-This article describes how to port your Windows Forms-based desktop app from .NET Framework to .NET Core 3.0. The .NET Core 3.0 SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows. This example uses the .NET Core SDK CLI to create and manage your project.
+This article describes how to port your Windows Forms-based desktop app from .NET Framework to .NET Core 3.0 or later. The .NET Core 3.0 SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows. This example uses the .NET Core SDK CLI to create and manage your project.
 
 In this article, various names are used to identify types of files used for migration. When migrating your project, your files will be named differently, so mentally match them to the ones listed below:
 
@@ -22,18 +20,20 @@ In this article, various names are used to identify types of files used for migr
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for any designer work you want to do.
+- [Visual Studio 2019 16.5 Preview 1](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) or later for any designer work you want to do. We recommend to update to the latest [Preview version of Visual Studio](https://visualstudio.microsoft.com/vs/preview/).
 
   Install the following Visual Studio workloads:
+  
   - .NET desktop development
-  - .NET cross-platform development
+  - .NET Core cross-platform development
 
 - A working Windows Forms project in a solution that builds and runs without issue.
-- Your project must be coded in C#. 
-- Install the latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
+- A project coded in C#.
 
->[!NOTE]
->**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in your solution that shares the forms files with the .NET Core project.
+> [!NOTE]
+> .NET Core 3.0 projects are only supported in **Visual Studio 2019** or a later version. Starting with **Visual Studio 2019 version 16.5 Preview 1**, the .NET Core Windows Forms designer is also supported.
+>
+> To enable the designer, go to **Tools** > **Options** > **Environment** > **Preview Features** and select the **Use the preview Windows Forms designer for .NET Core apps** option.
 
 ### Consider
 
@@ -45,7 +45,7 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 
 01. You're using a different version of Windows Forms.
 
-    When .NET Core 3.0 Preview 1 was released, Windows Forms went open-source on GitHub. The code for .NET Core Windows Forms is a fork of the .NET Framework Windows Forms code base. It's possible some differences exist and your app won't port.
+    When .NET Core 3.0 Preview 1 was released, Windows Forms went open source on GitHub. The code for .NET Core Windows Forms is a fork of the .NET Framework Windows Forms codebase. It's possible some differences exist and your app won't port.
 
 01. The [Windows Compatibility Pack][compat-pack] may help you migrate.
 
@@ -54,10 +54,6 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 01. Update the NuGet packages used by your project.
 
     It's always a good practice to use the latest versions of NuGet packages before any migration. If your application is referencing any NuGet packages, update them to the latest version. Ensure your application builds successfully. After upgrading, if there are any package errors, downgrade the package to the latest version that doesn't break your code.
-
-01. Visual Studio 2019 doesn't yet support the Forms Designer for .NET Core 3.0
-
-    Currently, you need to keep your existing .NET Framework Windows Forms project file if you want to use the Forms Designer from Visual Studio.
 
 ## Create a new SDK project
 
@@ -87,7 +83,7 @@ Next, you need to create the **MyFormsCore.csproj** project in the **MyFormsAppC
 
 If you don't want to create the project file manually, you can use Visual Studio or the .NET Core SDK to generate the project. However, you must delete all other files generated by the project template except for the project file. To use the SDK, run the following command from the **SolutionFolder** directory:
 
-```cli
+```dotnetcli
 dotnet new winforms -o MyFormsAppCore -n MyFormsCore
 ```
 
@@ -102,9 +98,9 @@ SolutionFolder
     └───MyFormsCore.csproj
 ```
 
-You'll want to add the **MyFormsCore.csproj** project to **MyApps.sln** with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
+Add the **MyFormsCore.csproj** project to **MyApps.sln** with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
-```cli
+```dotnetcli
 dotnet sln add .\MyFormsAppCore\MyFormsCore.csproj
 ```
 
@@ -112,7 +108,7 @@ dotnet sln add .\MyFormsAppCore\MyFormsCore.csproj
 
 Windows Forms projects that were created with .NET Framework include an `AssemblyInfo.cs` file, which contains assembly attributes such as the version of the assembly to be generated. SDK-style projects automatically generate this information for you based on the SDK project file. Having both types of "assembly info" creates a conflict. Resolve this problem by disabling automatic generation, which forces the project to use your existing `AssemblyInfo.cs` file.
 
-There are three settings to add to the main `<PropertyGroup>` node. 
+There are three settings to add to the main `<PropertyGroup>` node.
 
 - **GenerateAssemblyInfo**\
 When you set this property to `false`, it won't generate the assembly attributes. This avoids the conflict with the existing `AssemblyInfo.cs` file from the .NET Framework project.
@@ -143,7 +139,7 @@ Add these three elements to the `<PropertyGroup>` node in the `MyFormsCore.cspro
 
 ## Add source code
 
-Right now, the **MyFormsCore.csproj** project doesn't compile any code. By default, .NET Core projects automatically include all source code in the current directory and any child directories. You must configure the project to include code from the .NET Framework project using a relative path. If your .NET Framework project used **.resx** files for icons and resources for your forms, you'll need to include those too. 
+Right now, the **MyFormsCore.csproj** project doesn't compile any code. By default, .NET Core projects automatically include all source code in the current directory and any child directories. You must configure the project to include code from the .NET Framework project using a relative path. If your .NET Framework project used **.resx** files for icons and resources for your forms, you'll need to include those too.
 
 Add the following `<ItemGroup>` node to your project. Each statement includes a file glob pattern that includes child directories.
 
@@ -158,11 +154,11 @@ Alternatively, you can create a `<Compile>` or `<EmbeddedResource>` entry for ea
 
 ## Add NuGet packages
 
-Add each NuGet package referenced by the .NET Framework project to the .NET Core project. 
+Add each NuGet package referenced by the .NET Framework project to the .NET Core project.
 
 Most likely your .NET Framework Windows Forms app has a **packages.config** file that contains a list of all of the NuGet packages that are referenced by your project. You can look at this list to determine which NuGet packages to add to the .NET Core project. For example, if the .NET Framework project referenced the `MetroFramework`, `MetroFramework.Design`, and `MetroFramework.Fonts` NuGet packages, add each to the project with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
-```cli
+```dotnetcli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj package MetroFramework
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj package MetroFramework.Design
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj package MetroFramework.Fonts
@@ -238,7 +234,7 @@ Here is an example of what the .NET Core Windows Forms Controls library project 
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    
+
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
 
@@ -246,20 +242,20 @@ Here is an example of what the .NET Core Windows Forms Controls library project 
     <AssemblyName>MyCoreControls</AssemblyName>
     <RootNamespace>WindowsFormsControlLibrary1</RootNamespace>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Compile Include="..\MyFormsControls\**\*.cs" />
     <EmbeddedResource Include="..\MyFormsControls\**\*.resx" />
   </ItemGroup>
-  
+
 </Project>
 ```
 
 As you can see, the `<OutputType>` node was removed, which defaults the compiler to produce a library instead of an executable. The `<AssemblyName>` and `<RootNamespace>` were changed. Specifically the `<RootNamespace>` should match the namespace of the Windows Forms Controls library you are porting. And finally, the `<Compile>` and `<EmbeddedResource>` nodes were adjusted to point to the folder of the Windows Forms Controls library you are porting.
 
-Next, in the main .NET Core **MyFormsCore.csproj** project add reference to the new .NET Core Windows Forms Control library. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
+Next, in the main .NET Core **MyFormsCore.csproj** project, add a reference to the new .NET Core Windows Forms Control library. Add a reference with either Visual Studio or the .NET Core CLI from the **SolutionFolder** directory:
 
-```cli
+```dotnetcli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj reference .\MyFormsControlsCore\MyControlsCore.csproj
 ```
 
@@ -271,11 +267,11 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
   </ItemGroup>
 ```
 
-## Problems compiling
+## Compilation problems
 
 If you have problems compiling your projects, you may be using some Windows-only APIs that are available in .NET Framework but not available in .NET Core. You can try adding the [Windows Compatibility Pack][compat-pack] NuGet package to your project. This package only runs on Windows and adds about 20,000 Windows APIs to .NET Core and .NET Standard projects.
 
-```cli
+```dotnetcli
 dotnet add .\MyFormsAppCore\MyFormsCore.csproj package Microsoft.Windows.Compatibility
 ```
 
@@ -283,7 +279,7 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
 
 ```xml
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="3.1.0" />
   </ItemGroup>
 ```
 
@@ -292,10 +288,11 @@ The previous command adds the following to the **MyFormsCore.csproj** project:
 As detailed in this article, Visual Studio 2019 only supports the Forms Designer in .NET Framework projects. By creating a side-by-side .NET Core project, you can test your project with .NET Core while you use the .NET Framework project to design forms. Your solution file includes both the .NET Framework and .NET Core projects. Add and design your forms and controls in the .NET Framework project, and based on the file glob patterns we added to the .NET Core projects, any new or changed files will automatically be included in the .NET Core projects.
 
 Once Visual Studio 2019 supports the Windows Forms Designer, you can copy/paste the content of your .NET Core project file into the .NET Framework project file. Then delete the file glob patterns added with the `<Source>` and `<EmbeddedResource>` items. Fix the paths to any project reference used by your app. This effectively upgrades the .NET Framework project to a .NET Core project.
- 
+
 ## Next steps
 
-* Read more about the [Windows Compatibility Pack][compat-pack].
-* Watch a [video on porting](https://www.youtube.com/watch?v=upVQEUc_KwU) your .NET Framework Windows Forms project to .NET Core.
+- Learn about [breaking changes from .NET Framework to .NET Core](../compatibility/fx-core.md).
+- Read more about the [Windows Compatibility Pack][compat-pack].
+- Watch a [video on porting](https://www.youtube.com/watch?v=upVQEUc_KwU) your .NET Framework Windows Forms project to .NET Core.
 
 [compat-pack]: windows-compat-pack.md

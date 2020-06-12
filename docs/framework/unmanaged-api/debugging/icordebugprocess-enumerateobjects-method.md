@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5cf8c5b0-6caa-4f5d-8afe-957573c5ee43
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::EnumerateObjects Method
 This method has not been implemented.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateObjects (  
     [out] ICorDebugObjectEnum **ppObjects  
 );  

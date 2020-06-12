@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
 ---
 # Attribute '\<attributename>' cannot be applied multiple times
+
 The attribute can only be applied once. The `AttributeUsage` attribute determines whether an attribute can be applied more than once.  
   
  **Error ID:** BC30663  
@@ -26,5 +27,5 @@ The attribute can only be applied once. The `AttributeUsage` attribute determine
 ## See also
 
 - <xref:System.AttributeUsageAttribute>
-- [Creating Custom Attributes](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
-- [AttributeUsage](../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)
+- [Creating Custom Attributes](../../programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [AttributeUsage](../../programming-guide/concepts/attributes/attributeusage.md)

@@ -1,5 +1,5 @@
 ---
-title: "Equality Operations (Visual Basic)"
+title: "Equality Operations"
 ms.date: 07/20/2015
 ms.assetid: 1f2fcf87-6f52-4830-b9af-861f9ad999dc
 ---
@@ -15,5 +15,5 @@ Two sequences whose corresponding elements are equal and which have the same num
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md)
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)](how-to-compare-the-contents-of-two-folders-linq.md)

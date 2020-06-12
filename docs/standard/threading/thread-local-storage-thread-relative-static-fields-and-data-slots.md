@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "local thread storage"
   - "TLS"
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Thread Local Storage: Thread-Relative Static Fields and Data Slots
 You can use managed thread local storage (TLS) to store data that is unique to a thread and application domain. The .NET Framework provides two ways to use managed TLS: thread-relative static fields and data slots.  
@@ -20,7 +18,7 @@ You can use managed thread local storage (TLS) to store data that is unique to a
   
  In unmanaged C++, you use `TlsAlloc` to allocate slots dynamically and `__declspec(thread)` to declare that a variable should be allocated in thread-relative storage. Thread-relative static fields and data slots provide the managed version of this behavior.  
   
- In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
+ In the .NET Framework 4, you can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).  
   
 ## Uniqueness of Data in Managed TLS  
  Whether you use thread-relative static fields or data slots, data in managed TLS is unique to the combination of thread and application domain.  
@@ -57,4 +55,4 @@ You can use managed thread local storage (TLS) to store data that is unique to a
 - <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
 - <xref:System.ThreadStaticAttribute>
 - <xref:System.Runtime.Remoting.Messaging.CallContext>
-- [Threading](../../../docs/standard/threading/index.md)
+- [Threading](index.md)

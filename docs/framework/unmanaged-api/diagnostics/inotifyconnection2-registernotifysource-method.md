@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2632da80-6e4b-4429-8dee-b382745a5f81
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifyConnection2::RegisterNotifySource Method
 Installs a specified notification source.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterNotifySource  
 (  
     [in]  INotifySource2*  in_pNotifySource,  
@@ -46,7 +44,7 @@ HRESULT RegisterNotifySource
   
 ## See also
 
-- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
-- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [UnregisterNotifySource Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md)
+- [INotifyConnection2 Interface](inotifyconnection2-interface.md)
+- [INotifySource2 Interface](inotifysource2-interface.md)
+- [INotifySink2 Interface](inotifysink2-interface.md)
+- [UnregisterNotifySource Method](inotifyconnection2-unregisternotifysource-method.md)

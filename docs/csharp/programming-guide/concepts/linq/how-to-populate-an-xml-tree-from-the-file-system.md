@@ -1,9 +1,9 @@
 ---
-title: "How to: Populate an XML Tree from the File System (C#)"
+title: "How to populate an XML tree from the file system (C#)"
 ms.date: 07/20/2015
 ms.assetid: 2aa2ccac-4a22-47ae-9107-3bb8df232576
 ---
-# How to: Populate an XML Tree from the File System (C#)
+# How to populate an XML tree from the file system (C#)
 A common and useful application of XML trees is as a hierarchical name/value data store. You can populate an XML tree with hierarchical data, and then query it, transform it, and if necessary, serialize it. In this usage scenario, many of the XML specific semantics, such as namespaces and white space behavior, are not important. Instead, you are using the XML tree as a small, in memory, single user hierarchical database.  
   
 ## Example  
@@ -109,7 +109,3 @@ class Program
 ------  
 Total File Size:59089  
 ```  
-  
-## See also
-
-- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

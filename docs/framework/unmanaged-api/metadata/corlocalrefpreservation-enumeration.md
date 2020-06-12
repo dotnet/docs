@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 44757163-1228-4213-a4c4-d4de503cc75d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorLocalRefPreservation Enumeration
 Contains flag values for the treatment of local references.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorLocalRefPreservation  
 {  
     MDPreserveLocalRefsNone     =   0x00000000,  
@@ -40,7 +38,7 @@ typedef enum CorLocalRefPreservation
 |`MDPreserveLocalMemberRef`|Preserve local member references.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -48,4 +46,4 @@ typedef enum CorLocalRefPreservation
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

@@ -19,7 +19,7 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
  ![Binding Source and Data Binding Architecture](./media/net-bindsrcdatabindarch.gif "NET_BindSrcDataBindArch")  
   
 > [!NOTE]
->  At design time, some actions, like dragging a database table from a data window onto a blank form, will create the <xref:System.Windows.Forms.BindingSource> component, bind it to the underlying data source, and add data-aware controls all in one operation. Also see [Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio).  
+> At design time, some actions, like dragging a database table from a data window onto a blank form, will create the <xref:System.Windows.Forms.BindingSource> component, bind it to the underlying data source, and add data-aware controls all in one operation. Also see [Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio).  
   
 ## BindingSource Component as a Data Source  
  If you start adding items to the <xref:System.Windows.Forms.BindingSource> component without first specifying a list to be bound to, the component will act like a list-style data source and accept these added items.  
@@ -41,7 +41,7 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 |<xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method|Removes the current item from the list.|  
 |<xref:System.Windows.Forms.BindingSource.EndEdit%2A> method|Applies pending changes to the underlying data source.|  
 |<xref:System.Windows.Forms.BindingSource.CancelEdit%2A> method|Cancels the current edit operation.|  
-|<xref:System.Windows.Forms.BindingSource.AddNew%2A> method|Adds a new item to the underlying list. If the data source implements <xref:System.ComponentModel.IBindingList> and returns an item from the <xref:System.Windows.Forms.BindingSource.AddingNew> event, adds this item. Otherwise, the request is passed to the list's <xref:System.ComponentModel.IBindingList.AddNew%2A> method. If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the item is automatically created through its public default constructor.|  
+|<xref:System.Windows.Forms.BindingSource.AddNew%2A> method|Adds a new item to the underlying list. If the data source implements <xref:System.ComponentModel.IBindingList> and returns an item from the <xref:System.Windows.Forms.BindingSource.AddingNew> event, adds this item. Otherwise, the request is passed to the list's <xref:System.ComponentModel.IBindingList.AddNew%2A> method. If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the item is automatically created through its public parameterless constructor.|  
   
 ## Sorting and Filtering  
  Usually, you should work with an ordered or filtered view of the data source. The following table shows the members that the <xref:System.Windows.Forms.BindingSource> component data source provides.  

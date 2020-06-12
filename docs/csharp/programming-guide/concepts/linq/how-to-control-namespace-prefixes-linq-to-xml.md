@@ -1,9 +1,9 @@
 ---
-title: "How to: Control Namespace Prefixes (C#) (LINQ to XML)"
+title: "How to control namespace prefixes (C#) (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
 ---
-# How to: Control Namespace Prefixes (C#) (LINQ to XML)
+# How to control namespace prefixes (C#) (LINQ to XML)
 This topic describes how you can control namespace prefixes when serializing an XML tree.  
   
  In many situations, it is not necessary to control namespace prefixes.  
@@ -50,4 +50,4 @@ Console.WriteLine(root);
   
 ## See also
 
-- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

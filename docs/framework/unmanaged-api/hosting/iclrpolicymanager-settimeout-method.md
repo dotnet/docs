@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 954404fd-d52d-4e68-b582-8692f3a5f608
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetTimeout Method
 Sets a timeout value for the specified operation.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTimeout (  
     [in] EClrOperation operation,  
     [in] DWORD dsMilliseconds  
@@ -32,7 +30,7 @@ HRESULT SetTimeout (
   
 ## Parameters  
  `operation`  
- [in] One of the [EClrOperation](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) values, indicating the common language runtime (CLR) operation for which to set a timeout. The following values are supported:  
+ [in] One of the [EClrOperation](eclroperation-enumeration.md) values, indicating the common language runtime (CLR) operation for which to set a timeout. The following values are supported:  
   
 - OPR_AppDomainUnload  
   
@@ -58,7 +56,7 @@ HRESULT SetTimeout (
 |E_INVALIDARG|A timeout cannot be set for the specified `operation`, or an invalid value was supplied for `operation`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -68,6 +66,6 @@ HRESULT SetTimeout (
   
 ## See also
 
-- [EClrOperation Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md)
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)
+- [EClrOperation Enumeration](eclroperation-enumeration.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRPolicyManager Interface](iclrpolicymanager-interface.md)

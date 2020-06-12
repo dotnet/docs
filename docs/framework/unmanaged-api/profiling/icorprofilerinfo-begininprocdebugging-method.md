@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginInprocDebugging(  
     [in]  BOOL   fThisThreadOnly,  
     [out] DWORD *pdwProfilerContext);  
@@ -40,7 +38,7 @@ HRESULT BeginInprocDebugging(
  The CLR debugging services supported limited in-process debugging in the .NET Framework versions 1.0 and 1.1. In-process debugging enabled a profiler to use the inspection portions of the debugging API. However, due to customer feedback, in-process debugging has been removed from the .NET Framework in version 2.0, and replaced with a set of functionality that is more in line with the profiling API.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -50,4 +48,4 @@ HRESULT BeginInprocDebugging(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

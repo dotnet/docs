@@ -1,4 +1,4 @@
-- name: Dynamic Programming
+- name: Dynamic programming
   href: index.md
   items:
   - name: Reflection
@@ -16,6 +16,8 @@
       href: dynamically-loading-and-using-types.md
     - name: "How to: Load Assemblies into the Reflection-Only Context"
       href: how-to-load-assemblies-into-the-reflection-only-context.md
+    - name: "How to: Get type and member information by using reflection"
+      href: get-type-member-information.md
     - name: Accessing Custom Attributes
       href: accessing-custom-attributes.md
     - name: Specifying Fully Qualified Type Names
@@ -24,7 +26,7 @@
       href: how-to-hook-up-a-delegate-using-reflection.md
     - name: Reflection in the .NET Framework for Windows Store Apps
       href: reflection-for-windows-store-apps.md
-  - name: Emitting Dynamic Methods and Assemblies
+  - name: Emit dynamic methods and assemblies
     href: emitting-dynamic-methods-and-assemblies.md
     items:
     - name: Security Issues in Reflection Emit
@@ -39,16 +41,17 @@
       href: how-to-define-a-generic-method-with-reflection-emit.md
     - name: Collectible assemblies for dynamic type generation
       href: collectible-assemblies.md
-  - name: Dynamic Language Runtime Overview
+  - name: Dynamic language runtime overview
     href: dynamic-language-runtime-overview.md
-  - name: Dynamic Source Code Generation and Compilation
-    href: dynamic-source-code-generation-and-compilation.md
+  - name: Dynamic source code generation and compilation
     items:
-    - name: Using the CodeDOM
+    - name: Overview
+      href: dynamic-source-code-generation-and-compilation.md
+    - name: Use the CodeDOM
       href: using-the-codedom.md
-    - name: Generating and Compiling Source Code from a CodeDOM Graph
+    - name: Generate and compile source code from a CodeDOM graph
       href: generating-and-compiling-source-code-from-a-codedom-graph.md
-    - name: "How to: Create an XML Documentation File Using CodeDOM"
+    - name: Create an XML documentation file using CodeDOM
       href: how-to-create-an-xml-documentation-file-using-codedom.md
-    - name: "How to: Create a Class Using CodeDOM"
+    - name: Create a class using CodeDOM
       href: how-to-create-a-class-using-codedom.md

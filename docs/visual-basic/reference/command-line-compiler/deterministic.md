@@ -12,7 +12,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 
 ## Syntax
 
-```
+```console
 -deterministic
 ```
 
@@ -38,7 +38,7 @@ The compiler considers the following inputs for the purpose of determinism:
   - Additional files that may be used by analyzers
 - The current culture (for the language in which diagnostics and exception messages are produced).
 - The default encoding (or the current code page) if the encoding is not specified.
-- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `/lib` or `/recurse`).
+- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `-lib` or `-recurse`).
 - The CLR platform on which the compiler is run.
 - The value of `%LIBPATH%`, which can affect analyzer dependency loading.
 
@@ -46,5 +46,5 @@ When sources are publicly available, deterministic compilation can be used for e
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

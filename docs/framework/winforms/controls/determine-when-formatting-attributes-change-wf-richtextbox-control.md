@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control"
+title: Determine When Formatting Attributes Change in RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -41,12 +41,12 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
     private void richTextBox1_SelectionChanged(object sender,  
     System.EventArgs e)  
     {  
-       if (richTextBox1.SelectionBullet == true)   
+       if (richTextBox1.SelectionBullet == true)
        {  
           // Bullet button on toolbar should appear pressed  
           toolBarButton1.Pushed = true;  
        }  
-       else   
+       else
        {  
           // Bullet button on toolbar should appear unpressed  
           toolBarButton1.Pushed = false;  

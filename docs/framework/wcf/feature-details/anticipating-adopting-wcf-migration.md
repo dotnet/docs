@@ -15,9 +15,9 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
       <webServices >  
           <protocols>  
            <remove name="HttpSoap12"/>  
-          </protocols>    
+          </protocols>
       </webServices>  
-     </system.web>   
+     </system.web>
 </configuration>  
 ```  
   
@@ -59,20 +59,20 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
 ```csharp  
 [Serializable]  
-[XmlRoot(  
-     Namespace="ExplicitNamespace", IsNullable=true)]  
-    public partial class AnticipatedException {  
-  
-     private string anticipatedExceptionInformationField;  
-  
-     public string AnticipatedExceptionInformation {  
-      get {  
-          return this.anticipatedExceptionInformationField;  
-          }  
-      set {  
-          this.anticipatedExceptionInformationField = value;  
-          }  
-     }  
+[XmlRoot(Namespace="ExplicitNamespace", IsNullable=true)]  
+public partial class AnticipatedException
+{
+    private string anticipatedExceptionInformationField;  
+
+    public string AnticipatedExceptionInformation
+    {  
+        get {
+            return this.anticipatedExceptionInformationField;  
+        }  
+        set {  
+            this.anticipatedExceptionInformationField = value;  
+        }  
+    }  
 }  
 ```  
   
@@ -98,7 +98,7 @@ public XmlNode ToXML()
  The classes can then be used to provide the details for explicitly thrown <xref:System.Web.Services.Protocols.SoapException> instances:  
   
 ```csharp  
-AnctipatedException exception = new AnticipatedException();  
+AnticipatedException exception = new AnticipatedException();  
 exception.AnticipatedExceptionInformation = "…";  
 throw new SoapException(  
      "Fault occurred",  
@@ -120,4 +120,4 @@ throw new SoapException(
   
 ## See also
 
-- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](anticipating-adopting-the-wcf-easing-future-integration.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9be27b0c-1d99-4722-b0d4-40cf6753ce5c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetDebugState Method
 Gets the current debug state of this ICorDebugThread object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDebugState (  
     [out] CorDebugThreadState   *pState  
 );  
@@ -37,7 +35,7 @@ HRESULT GetDebugState (
  If the process is currently stopped, `pState` represents the debug state that would exist for this thread if the process were to be continued, not the actual current state of this thread.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,1 +1,0 @@
-graphical user interfaces (GUIs)

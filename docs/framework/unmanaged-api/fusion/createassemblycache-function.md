@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: 348c7c8c-8578-46ae-97cf-480d6015c3c6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateAssemblyCache Function
-Gets a pointer to a new [IAssemblyCache](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md) instance that represents the global assembly cache.  
+Gets a pointer to a new [IAssemblyCache](iassemblycache-interface.md) instance that represents the global assembly cache.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyCache (  
     [out] IAssemblyCache  **ppAsmCache,  
     [in]  DWORD           dwReserved  
@@ -39,7 +37,7 @@ HRESULT CreateAssemblyCache (
  [in] Reserved for future extensibility. `dwReserved` must be 0 (zero).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -49,6 +47,6 @@ HRESULT CreateAssemblyCache (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

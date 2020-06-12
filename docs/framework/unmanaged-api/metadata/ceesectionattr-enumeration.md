@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CeeSectionAttr Enumeration
-Provides values that specify attributes of a section for use by the [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) interface.  
+Provides values that specify attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  {  
     sdNone      = 0,  
     sdReadOnly  = IMAGE_SCN_CNT_INITIALIZED_DATA |  
@@ -43,7 +41,7 @@ typedef enum  {
 |`sdExecute`|Section contains executable code that is allowed to be read and executed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -53,4 +51,4 @@ typedef enum  {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

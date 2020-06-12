@@ -5,15 +5,13 @@ helpviewer_keywords:
   - "<shadowCopyTimeStampVerification> element"
   - "shadowCopyTimeStampVerification element"
 ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<shadowCopyVerifyByTimestamp> Element
-Specifies whether shadow copying uses the default startup behavior introduced in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], or reverts to the startup behavior of earlier versions of the .NET Framework.  
+Specifies whether shadow copying uses the default startup behavior introduced in the .NET Framework 4, or reverts to the startup behavior of earlier versions of the .NET Framework.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<shadowCopyVerifyByTimestamp> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<shadowCopyVerifyByTimestamp>**  
   
 ## Syntax  
   
@@ -34,7 +32,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
   
 |Value|Description|  
 |-----------|-----------------|  
-|true|At startup, copies only assemblies that have been updated since they were last copied to the shadow copy directory. This is the default for the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)].|  
+|true|At startup, copies only assemblies that have been updated since they were last copied to the shadow copy directory. This is the default for the .NET Framework 4.|  
 |false|Reverts to the startup behavior of previous versions of the .NET Framework, which was to copy all files at startup.|  
   
 ### Child Elements  
@@ -48,10 +46,10 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], assemblies are shadow copied only if their time stamps indicate that they have changed since they were last copied to the shadow copy directory. This improves startup times for many applications that use shadow copying, as described in [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md). Applications that have a high percentage and frequency of assembly updates might not benefit from this change in behavior. In that case, you can use this element to restore the behavior of previous versions of the .NET Framework.  
+ Starting with the .NET Framework 4, assemblies are shadow copied only if their time stamps indicate that they have changed since they were last copied to the shadow copy directory. This improves startup times for many applications that use shadow copying, as described in [Shadow Copying Assemblies](../../../app-domains/shadow-copy-assemblies.md). Applications that have a high percentage and frequency of assembly updates might not benefit from this change in behavior. In that case, you can use this element to restore the behavior of previous versions of the .NET Framework.  
   
 ## Example  
- The following example shows how to disable the default startup behavior of shadow copying in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], and revert to the startup behavior of previous versions of the .NET Framework.  
+ The following example shows how to disable the default startup behavior of shadow copying in the .NET Framework 4, and revert to the startup behavior of previous versions of the .NET Framework.  
   
 ```xml  
 <configuration>  
@@ -63,6 +61,6 @@ Specifies whether shadow copying uses the default startup behavior introduced in
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Shadow Copying Assemblies](../../../app-domains/shadow-copy-assemblies.md)

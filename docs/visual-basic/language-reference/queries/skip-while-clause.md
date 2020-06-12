@@ -1,5 +1,5 @@
 ---
-title: "Skip While Clause (Visual Basic)"
+title: "Skip While Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySkipWhile"
@@ -14,7 +14,7 @@ Bypasses elements in a collection as long as a specified condition is `true` and
   
 ## Syntax  
   
-```  
+```vb  
 Skip While expression  
 ```  
   
@@ -38,10 +38,10 @@ Skip While expression
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Queries](../../../visual-basic/language-reference/queries/index.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
-- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
-- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)
-- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)
-- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Skip Clause](skip-clause.md)
+- [Take While Clause](take-while-clause.md)
+- [Where Clause](where-clause.md)

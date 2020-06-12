@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4a11b264-8540-4732-aa35-bc2d95b95b8e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetThreadAppDomain Method
 Gets the ID of the application domain in which the specified thread is currently executing code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadAppDomain(  
     [in]  ThreadID threadId,  
     [out] AppDomainID *pAppDomainId);  
@@ -37,7 +35,7 @@ HRESULT GetThreadAppDomain(
  [out] A pointer to the ID of the application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -47,5 +45,5 @@ HRESULT GetThreadAppDomain(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](icorprofilerinfo2-interface.md)

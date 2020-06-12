@@ -7,16 +7,13 @@ helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
-author: "guardrex"
-ms.author: "mairaw"
 ---
-
 # \<remove> element for \<configSections>
 
 Removes a predefined section or section group.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax
@@ -35,7 +32,7 @@ Removes a predefined section or section group.
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
@@ -58,8 +55,8 @@ The following machine configuration file code declares the section **\<sampleSec
     <section name="sampleSection"
              type="System.Configuration.SingleTagSectionHandler" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```
@@ -81,4 +78,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

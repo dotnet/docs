@@ -1,5 +1,5 @@
 ---
-title: "Declaring and Raising Events (Visual Basic)"
+title: "Declaring and Raising Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], events"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 ---
 # Walkthrough: Declaring and Raising Events (Visual Basic)
-This walkthrough demonstrates how to declare and raise events for a class named `Widget`. After you complete the steps, you might want to read the companion topic, [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md), which shows how to use events from `Widget` objects to provide status information in an application.  
+This walkthrough demonstrates how to declare and raise events for a class named `Widget`. After you complete the steps, you might want to read the companion topic, [Walkthrough: Handling Events](walkthrough-handling-events.md), which shows how to use events from `Widget` objects to provide status information in an application.  
   
 ## The Widget Class  
  Assume for the moment that you have a `Widget` class. Your `Widget` class has a method that can take a long time to execute, and you want your application to be able to put up some kind of completion indicator.  
@@ -45,7 +45,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  When the calling object receives a `PercentDone` event, the `Percent` argument contains the percentage of the task that is complete. The `Cancel` argument can be set to `True` to cancel the method that raised the event.  
   
 > [!NOTE]
->  You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have `Optional` or `ParamArray` arguments, and events do not have return values.  
+> You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have `Optional` or `ParamArray` arguments, and events do not have return values.  
   
  The `PercentDone` event is raised by the `LongTask` method of the `Widget` class. `LongTask` takes two arguments: the length of time the method pretends to be doing work, and the minimum time interval before `LongTask` pauses to raise the `PercentDone` event.  
   
@@ -65,11 +65,11 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
  You may have spotted another flaw in this sample. The `Timer` property returns the number of seconds that have passed since midnight; therefore, the application gets stuck if it is started just before midnight. A more careful approach to measuring time would take boundary conditions such as this into consideration, or avoid them altogether, using properties such as `Now`.  
   
- Now that the `Widget` class can raise events, you can move to the next walkthrough. [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md) demonstrates how to use `WithEvents` to associate an event handler with the `PercentDone` event.  
+ Now that the `Widget` class can raise events, you can move to the next walkthrough. [Walkthrough: Handling Events](walkthrough-handling-events.md) demonstrates how to use `WithEvents` to associate an event handler with the `PercentDone` event.  
   
 ## See also
 
 - <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
 - <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>
-- [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)
-- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Walkthrough: Handling Events](walkthrough-handling-events.md)
+- [Events](index.md)

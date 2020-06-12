@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8edad30c-30ff-4bee-813c-75525a82fc93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IApartmentCallback::DoCallback Method
 Executes the specified function within an apartment.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _stdcall DoCallback(  
     [in] SIZE_T pFunc,  
     [in] SIZE_T pData  
@@ -38,7 +36,7 @@ HRESULT _stdcall DoCallback(
  [in] A pointer to the function's argument.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,4 +46,4 @@ HRESULT _stdcall DoCallback(
   
 ## See also
 
-- [IApartmentCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iapartmentcallback-interface.md)
+- [IApartmentCallback Interface](iapartmentcallback-interface.md)

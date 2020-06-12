@@ -1,30 +1,30 @@
 ---
 title: Indexed Properties
 description: Learn about indexed properties in F#, which allow for array-like access to ordered data.
-ms.date: 10/17/2018
+ms.date: 11/04/2019
 ---
 
 # Indexed Properties
 
-When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Index` member.
+When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Item` member.
 
 ## Syntax
 
 ```fsharp
-// Indexed property that has both get and set defined.
-member self-identifier.Index
+// Indexed property that can be read and written to
+member self-identifier.Item
     with get(index-values) =
         get-member-body
     and set index-values values-to-set =
         set-member-body
 
-// Indexed property with get only
-member self-identifier.Index
+// Indexed property can only be read
+member self-identifier.Item
     with get(index-values) =
         get-member-body
 
-// Indexed property that has set only.
-member self-identifier.Index
+// Indexed property that can only be set
+member self-identifier.Item
     with set index-values values-to-set =
         set-member-body
 ```
@@ -43,7 +43,7 @@ Regardless of which form you use, you should always use the curried form for the
 
 The following code example illustrates the definition and use of default and non-default indexed properties that have get and set methods.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
 
 ## Output
 
@@ -65,7 +65,7 @@ open System.Collections.Generic
 /// Basic implementation of a sparse matrix based on a dictionary
 type SparseMatrix() =
     let table = new Dictionary<(int * int), float>()
-    member __.Item
+    member _.Item
         // Because the key is comprised of two values, 'get' has two index values
         with get(key1, key2) = table.[(key1, key2)]
 

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8b280627-cc74-4789-95da-1fefc966de05
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables2::GetMetaDataStreamInfo Method
 Gets the name, size, and contents of the metadata stream at the specified index.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataStreamInfo (  
    [in]  ULONG        ix,  
    [out] const char   **ppchName,  
@@ -46,7 +44,7 @@ HRESULT GetMetaDataStreamInfo (
  [out] The size, in bytes, of `ppv`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -56,5 +54,5 @@ HRESULT GetMetaDataStreamInfo (
   
 ## See also
 
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "Hosting Win32 Content in WPF"
+title: "Hosting Win32 Content"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "interoperability [WPF], tutorials"
@@ -16,9 +16,9 @@ See [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md).
 
 ## A Walkthrough of Win32 Inside Windows Presentation Framework (HwndHost)
 
-To reuse [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content inside [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, use <xref:System.Windows.Interop.HwndHost>, which is a control that makes HWNDs look like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. Like <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> is straightforward to use: derive from <xref:System.Windows.Interop.HwndHost> and implement `BuildWindowCore` and `DestroyWindowCore` methods, then instantiate your <xref:System.Windows.Interop.HwndHost> derived class and place it inside your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.
+To reuse Win32 content inside [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, use <xref:System.Windows.Interop.HwndHost>, which is a control that makes HWNDs look like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. Like <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> is straightforward to use: derive from <xref:System.Windows.Interop.HwndHost> and implement `BuildWindowCore` and `DestroyWindowCore` methods, then instantiate your <xref:System.Windows.Interop.HwndHost> derived class and place it inside your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.
 
-If your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] logic is already packaged as a control, then your `BuildWindowCore` implementation is little more than a call to `CreateWindow`. For example, to create a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] LISTBOX control in [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)]:
+If your Win32 logic is already packaged as a control, then your `BuildWindowCore` implementation is little more than a call to `CreateWindow`. For example, to create a Win32 LISTBOX control in C++:
 
 ```cpp
 virtual HandleRef BuildWindowCore(HandleRef hwndParent) override {
@@ -41,13 +41,13 @@ virtual void DestroyWindowCore(HandleRef hwnd) override {
 }
 ```
 
-But suppose the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code is not quite so self-contained? If so, you can create a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] dialog box and embed its contents into a larger [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The sample shows this in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] and [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)], although it is also possible to do this in a different language or at the command line.
+But suppose the Win32 code is not quite so self-contained? If so, you can create a Win32 dialog box and embed its contents into a larger [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The sample shows this in Visual Studio and C++, although it is also possible to do this in a different language or at the command line.
 
-Start with a simple dialog, which is compiled into a [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] project.
+Start with a simple dialog, which is compiled into a C++ DLL project.
 
 Next, introduce the dialog into the larger [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application:
 
-- Compile the [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] as managed (`/clr`)
+- Compile the DLL as managed (`/clr`)
 
 - Turn the dialog into a control
 
@@ -65,18 +65,18 @@ Next, introduce the dialog into the larger [!INCLUDE[TLA2#tla_winclient](../../.
 
 You can turn a dialog box into a child HWND using the WS_CHILD and DS_CONTROL styles. Go into the resource file (.rc) where the dialog is defined, and find the beginning of the definition of the dialog:
 
-```
+```text
 IDD_DIALOG1 DIALOGEX 0, 0, 303, 121
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 ```
 
 Change the second line to:
 
-```
+```text
 STYLE DS_SETFONT | WS_CHILD | WS_BORDER | DS_CONTROL
 ```
 
-This action does not fully package it into a self-contained control; you still need to call `IsDialogMessage()` so [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] can process certain messages, but the control change does provide a straightforward way of putting those controls inside another HWND.
+This action does not fully package it into a self-contained control; you still need to call `IsDialogMessage()` so Win32 can process certain messages, but the control change does provide a straightforward way of putting those controls inside another HWND.
 
 ## Subclass HwndHost
 
@@ -115,7 +115,7 @@ public ref class MyHwndHost : public HwndHost, IKeyboardInputSink {
         }
 ```
 
-Here you use the `CreateDialog` to create the dialog box that is really a control. Since this is one of the first methods called inside the [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], you should also do some standard [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] initialization by calling a function you will define later, called `InitializeGlobals()`:
+Here you use the `CreateDialog` to create the dialog box that is really a control. Since this is one of the first methods called inside the DLL, you should also do some standard Win32 initialization by calling a function you will define later, called `InitializeGlobals()`:
 
 ```cpp
 bool initialized = false;
@@ -188,7 +188,7 @@ If you ran this sample now, you would get a dialog control that displays, but it
         }
 ```
 
-This is a lot of code in one piece, so it could use some more detailed explanations. First, the code using [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] and [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] macros; you need to be aware that there is already a macro named `TranslateAccelerator`, which is defined in winuser.h:
+This is a lot of code in one piece, so it could use some more detailed explanations. First, the code using C++ and C++ macros; you need to be aware that there is already a macro named `TranslateAccelerator`, which is defined in winuser.h:
 
 ```cpp
 #define TranslateAccelerator  TranslateAcceleratorW
@@ -196,7 +196,7 @@ This is a lot of code in one piece, so it could use some more detailed explanati
 
 So make sure to define a `TranslateAccelerator` method and not a `TranslateAcceleratorW` method.
 
-Similarly, there is both the unmanaged winuser.h MSG and the managed `Microsoft::Win32::MSG` struct. You can disambiguate between the two using the [!INCLUDE[TLA#tla_cpp](../../../../includes/tlasharptla-cpp-md.md)] `::` operator.
+Similarly, there is both the unmanaged winuser.h MSG and the managed `Microsoft::Win32::MSG` struct. You can disambiguate between the two using the C++ `::` operator.
 
 ```cpp
 virtual bool TranslateAccelerator(System::Windows::Interop::MSG% msg,
@@ -226,7 +226,7 @@ Both MSGs have the same data, but sometimes it is easier to work with the unmana
 }
 ```
 
-Back to `TranslateAccelerator`. The basic principle is to call the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] function `IsDialogMessage` to do as much work as possible, but `IsDialogMessage` does not have access to anything outside the dialog. As a user tab around the dialog, when tabbing runs past the last control in our dialog, you need to set focus to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] portion by calling `IKeyboardInputSite::OnNoMoreStops`.
+Back to `TranslateAccelerator`. The basic principle is to call the Win32 function `IsDialogMessage` to do as much work as possible, but `IsDialogMessage` does not have access to anything outside the dialog. As a user tab around the dialog, when tabbing runs past the last control in our dialog, you need to set focus to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] portion by calling `IKeyboardInputSite::OnNoMoreStops`.
 
 ```cpp
 // Win32's IsDialogMessage() will handle most of the tabbing, but doesn't know
@@ -248,7 +248,7 @@ if (m.message == WM_KEYDOWN && m.wParam == VK_TAB) {
 }
 ```
 
-Finally, call `IsDialogMessage`. But one of the responsibilities of a `TranslateAccelerator` method is telling [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] whether you handled the keystroke or not. If you did not handle it, the input event can tunnel and bubble through the rest of the application. Here, you will expose a quirk of keyboard messange handling and the nature of the input architecture in [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)]. Unfortunately, `IsDialogMessage` does not return in any way whether it handles a particular keystroke. Even worse, it will call `DispatchMessage()` on keystrokes it should not handle!  So you will have to reverse-engineer `IsDialogMessage`, and only call it for the keys you know it will handle:
+Finally, call `IsDialogMessage`. But one of the responsibilities of a `TranslateAccelerator` method is telling [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] whether you handled the keystroke or not. If you did not handle it, the input event can tunnel and bubble through the rest of the application. Here, you will expose a quirk of keyboard messange handling and the nature of the input architecture in Win32. Unfortunately, `IsDialogMessage` does not return in any way whether it handles a particular keystroke. Even worse, it will call `DispatchMessage()` on keystrokes it should not handle!  So you will have to reverse-engineer `IsDialogMessage`, and only call it for the keys you know it will handle:
 
 ```cpp
 // Only call IsDialogMessage for keys it will do something with.

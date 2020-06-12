@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow Overview"
+description: This article describes Workflow Foundation workflows, which are models that describe real-world processes.
 ms.date: "03/30/2017"
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
 ---
@@ -37,4 +38,4 @@ Workflow components in the host process
   
 ## See also
 
-- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://go.microsoft.com/fwlink/?LinkId=154901)
+- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://docs.microsoft.com/previous-versions/dotnet/articles/cc303238(v=msdn.10))

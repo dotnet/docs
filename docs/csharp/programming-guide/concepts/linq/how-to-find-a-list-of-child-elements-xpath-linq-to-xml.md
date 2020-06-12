@@ -1,9 +1,9 @@
 ---
-title: "How to: Find a List of Child Elements (XPath-LINQ to XML) (C#)"
+title: "How to find a list of child elements (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
 ---
-# How to: Find a List of Child Elements (XPath-LINQ to XML) (C#)
+# How to find a list of child elements (XPath-LINQ to XML) (C#)
 This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
   
  The XPath expression is: `./*`  
@@ -11,7 +11,7 @@ This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](
 ## Example  
  This example finds all of the child elements of the `Address` element.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument cpo = XDocument.Load("PurchaseOrders.xml");  
@@ -34,7 +34,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Street>123 Maple Street</Street>  
@@ -43,7 +43,3 @@ Results are identical
 <Zip>10999</Zip>  
 <Country>USA</Country>  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

@@ -15,11 +15,11 @@ ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 
 Specifies where the common language runtime can find an assembly.
 
-\<configuration>
-\<runtime>
-\<assemblyBinding>
-\<dependentAssembly>
-\<codeBase>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<codeBase>**
 
 ## Syntax
 
@@ -89,7 +89,7 @@ The following example shows how to specify where the runtime can find an assembl
 
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime settings schema](index.md)
+- [Configuration file schema](../index.md)
+- [Specify an assembly's location](../../../../standard/assembly/location.md)
+- [How the runtime locates assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

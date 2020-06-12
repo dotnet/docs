@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2f105fe0-f52d-49c5-bda5-583fb27e3aa6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::IsDebuggerAttached Method
 Gets a value that indicates whether a debugger is attached to the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsDebuggerAttached (  
     [out] BOOL *pbAttached  
 );  
@@ -48,7 +46,7 @@ HRESULT IsDebuggerAttached (
  `IsDebuggerAttached` allows the host to query the CLR to determine whether a debugger is attached to the process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -58,6 +56,6 @@ HRESULT IsDebuggerAttached (
   
 ## See also
 
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
-- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

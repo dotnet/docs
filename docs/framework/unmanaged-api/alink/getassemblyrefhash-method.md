@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetAssemblyRefHash Method
 Retrieves a hash blob for a given assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyRefHash(  
     mdToken FileToken,  
     const void** ppvHash,  
@@ -48,6 +46,6 @@ HRESULT GetAssemblyRefHash(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

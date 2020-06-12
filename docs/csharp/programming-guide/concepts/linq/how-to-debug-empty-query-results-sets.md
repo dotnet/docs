@@ -1,16 +1,16 @@
 ---
-title: "How to: Debug Empty Query Results Sets (C#)"
+title: "How to debug empty query results sets (C#)"
 ms.date: 07/20/2015
 ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 ---
-# How to: Debug Empty Query Results Sets (C#)
+# How to debug empty query results sets (C#)
 One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  
   
  The first set of examples in this topic shows a typical way that XML in a default namespace is loaded, and is queried improperly.  
   
  The second set of examples show the necessary corrections so that you can query XML in a namespace.  
   
- For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ## Example  
  This example shows creation of XML in a namespace, and a query that returns an empty result set.  
@@ -36,7 +36,7 @@ Console.WriteLine("End of result set");
   
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 End of result set  
 ```  
@@ -68,14 +68,10 @@ Console.WriteLine("End of result set");
   
  This example produces the following result:  
   
-```  
+```output  
 Result set follows:  
 1  
 2  
 3  
 End of result set  
 ```  
-  
-## See also
-
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

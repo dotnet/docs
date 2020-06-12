@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 091c5f32-c160-49e3-a75f-4692e084c8e4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetImageBase Method
 Gets the base memory address of the specified image.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageBase (  
     [in, string] LPCWSTR    imagePath,  
     [out] CLRDATA_ADDRESS   *baseAddress  
@@ -41,7 +39,7 @@ HRESULT GetImageBase (
  The image file name may or may not have a path. If a path is specified, matching is done on the whole path; otherwise, matching is done only on the file name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -51,4 +49,4 @@ HRESULT GetImageBase (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

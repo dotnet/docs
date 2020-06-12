@@ -1,5 +1,5 @@
 ---
-title: "File name or class name not found during Automation operation (Visual Basic)"
+title: "File name or class name not found during Automation operation"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID432"
@@ -14,4 +14,4 @@ The name specified for file name or class in a call to the `GetObject` function 
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

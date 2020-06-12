@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting stores"
   - "data storage using isolated storage, deleting stores"
 ms.assetid: 3947e333-5af6-4601-b2f1-24d4d6129cf3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Delete Stores in Isolated Storage
 The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two methods for deleting isolated storage files:  
@@ -35,4 +33,4 @@ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two meth
 ## See also
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Isolated Storage](isolated-storage.md)

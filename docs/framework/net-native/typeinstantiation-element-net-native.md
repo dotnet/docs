@@ -2,8 +2,6 @@
 title: "<TypeInstantiation> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<TypeInstantiation> Element (.NET Native)
 Applies runtime reflection policy to a constructed generic type.  
@@ -49,7 +47,7 @@ Applies runtime reflection policy to a constructed generic type.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*type_name*|The type name. If this `<TypeInstantiation>` element is the child of a [\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md) element, a [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element, or another `<TypeInstantiation>` element, *type_name* can specify the name of the type without its namespace. Otherwise, *type_name* must include the fully qualified type name. The type name isn't decorated. For example, for a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, the `<TypeInstantiation>` element might appear as follows:<br /><br /> `\<TypeInstantiation Name=System.Collections.Generic.List Dynamic="Required Public" />`|  
+|*type_name*|The type name. If this `<TypeInstantiation>` element is the child of a [\<Namespace>](namespace-element-net-native.md) element, a [\<Type>](type-element-net-native.md) element, or another `<TypeInstantiation>` element, *type_name* can specify the name of the type without its namespace. Otherwise, *type_name* must include the fully qualified type name. The type name isn't decorated. For example, for a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> object, the `<TypeInstantiation>` element might appear as follows:<br /><br /> `\<TypeInstantiation Name=System.Collections.Generic.List Dynamic="Required Public" />`|  
   
 ## Arguments attribute  
   
@@ -61,43 +59,43 @@ Applies runtime reflection policy to a constructed generic type.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type for the constructed generic type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type for the constructed generic type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)|Applies reflection policy to an event belonging to this type.|  
-|[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)|Applies reflection policy to a field belonging to this type.|  
-|[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|Applies policy to a type, if that policy has been applied to the type represented by the containing `<TypeInstantiation>` element.|  
-|[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|Applies reflection policy to a method belonging to this type.|  
-|[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic method belonging to this type.|  
-|[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)|Applies reflection policy to a property belonging to this type.|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a nested type.|  
+|[\<Event>](event-element-net-native.md)|Applies reflection policy to an event belonging to this type.|  
+|[\<Field>](field-element-net-native.md)|Applies reflection policy to a field belonging to this type.|  
+|[\<ImpliesType>](impliestype-element-net-native.md)|Applies policy to a type, if that policy has been applied to the type represented by the containing `<TypeInstantiation>` element.|  
+|[\<Method>](method-element-net-native.md)|Applies reflection policy to a method belonging to this type.|  
+|[\<MethodInstantiation>](methodinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic method belonging to this type.|  
+|[\<Property>](property-element-net-native.md)|Applies reflection policy to a property belonging to this type.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a nested type.|  
 |`<TypeInstantiation>`|Applies reflection policy to a nested constructed generic type.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|Serves as a container for application-wide types and type members whose metadata is available for reflection at run time.|  
-|[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|Applies reflection policy to all the types in a specified assembly.|  
-|[\<Library>](../../../docs/framework/net-native/library-element-net-native.md)|Defines the assembly that contains types and type members whose metadata is available for reflection at run time.|  
-|[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|Applies reflection policy to all the types in a namespace.|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
+|[\<Application>](application-element-net-native.md)|Serves as a container for application-wide types and type members whose metadata is available for reflection at run time.|  
+|[\<Assembly>](assembly-element-net-native.md)|Applies reflection policy to all the types in a specified assembly.|  
+|[\<Library>](library-element-net-native.md)|Defines the assembly that contains types and type members whose metadata is available for reflection at run time.|  
+|[\<Namespace>](namespace-element-net-native.md)|Applies reflection policy to all the types in a namespace.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
 |`<TypeInstantiation>`|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
  The reflection, serialization, and interop attributes are all optional. However, at least one must be present.  
   
- If a `<TypeInstantiation>` element is the child of an [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md), [\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md), or [\<Type>](../../../docs/framework/net-native/type-element-net-native.md), element, it overrides the policy settings defined by the parent element. If a [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element defines a corresponding generic type definition, the `<TypeInstantiation>` element overrides runtime reflection policy only for instantiations of the specified constructed generic type.  
+ If a `<TypeInstantiation>` element is the child of an [\<Assembly>](assembly-element-net-native.md), [\<Namespace>](namespace-element-net-native.md), or [\<Type>](type-element-net-native.md), element, it overrides the policy settings defined by the parent element. If a [\<Type>](type-element-net-native.md) element defines a corresponding generic type definition, the `<TypeInstantiation>` element overrides runtime reflection policy only for instantiations of the specified constructed generic type.  
   
 ## Example  
  The following example uses reflection to retrieve the generic type definition from a constructed <xref:System.Collections.Generic.Dictionary%602> object. It also uses reflection to display information about <xref:System.Type> objects that represent constructed generic types and generic type definitions. The variable `b` in the example is a <xref:Windows.UI.Xaml.Controls.TextBlock> control.  
   
  [!code-csharp[ProjectN_Reflection#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/makegenerictype1.cs#2)]  
   
- After compilation with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, the example throws a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception on the line that calls the <xref:System.Type.GetGenericTypeDefinition%2A?displayProperty=nameWithType> method. You can eliminate the exception and provide the necessary metadata by adding the following `<TypeInstantiation>` element to the runtime directives file:  
+ After compilation with the .NET Native tool chain, the example throws a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception on the line that calls the <xref:System.Type.GetGenericTypeDefinition%2A?displayProperty=nameWithType> method. You can eliminate the exception and provide the necessary metadata by adding the following `<TypeInstantiation>` element to the runtime directives file:  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -112,6 +110,6 @@ Applies runtime reflection policy to a constructed generic type.
   
 ## See also
 
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)

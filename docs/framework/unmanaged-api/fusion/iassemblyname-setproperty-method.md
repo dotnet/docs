@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 496c3add-f60b-4073-943f-d1bcf33330cb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::SetProperty Method
 Sets the value of the property referenced by the specified property identifier.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProperty (  
     [in] DWORD  PropertyId,  
     [in] LPVOID pvProperty,  
@@ -42,7 +40,7 @@ HRESULT SetProperty (
  [in] The size, in bytes, of `pvProperty`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -50,4 +48,4 @@ HRESULT SetProperty (
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)

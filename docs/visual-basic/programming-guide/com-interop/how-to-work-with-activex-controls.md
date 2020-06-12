@@ -1,5 +1,5 @@
 ---
-title: "How to: Work with ActiveX Controls (Visual Basic)"
+title: "How to: Work with ActiveX Controls"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Toolbox, adding controls"
@@ -22,12 +22,12 @@ ActiveX controls are COM components or objects you can insert into a Web page or
      The new control appears with the other tools in the **Toolbox**.  
   
     > [!NOTE]
-    >  You can use the Aximp utility to manually create an interop assembly for ActiveX controls. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md).  
+    > You can use the Aximp utility to manually create an interop assembly for ActiveX controls. For more information, see [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md).  
   
 ## See also
 
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [COM Interop](index.md)
 - [How to: Add ActiveX Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)
 - [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md)
 - [Considerations When Hosting an ActiveX Control on a Windows Form](../../../framework/winforms/controls/considerations-when-hosting-an-activex-control-on-a-windows-form.md)
-- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+- [Troubleshooting Interoperability](troubleshooting-interoperability.md)

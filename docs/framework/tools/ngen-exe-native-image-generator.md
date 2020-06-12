@@ -18,14 +18,15 @@ helpviewer_keywords:
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Ngen.exe (Native Image Generator)
 
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
-Changes to Ngen.exe in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]:
+> [!NOTE]
+> Ngen.exe compiles native images for assemblies that target the .NET Framework only. The equivalent native image generator for .NET Core is [CrossGen](https://github.com/dotnet/runtime/blob/master/docs/workflow/building/coreclr/crossgen.md).
+
+Changes to Ngen.exe in the .NET Framework 4:
 
 - Ngen.exe now compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
@@ -50,17 +51,17 @@ For additional information on using Ngen.exe and the native image service, see [
 > [!NOTE]
 > Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms165073(v=vs.100)).
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 ngen action [options]
 ```
 
-```
+```console
 ngen /? | /help
 ```
 
@@ -71,7 +72,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |Action|Description|
 |------------|-----------------|
 |`install` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`] [`/queue`[`:`{`1`&#124;`2`&#124;`3`}]]|Generate native images for an assembly and its dependencies and install the images in the native image cache.<br /><br /> If `/queue` is specified, the action is queued for the native image service. The default priority is 3. See the [Priority Levels](#PriorityTable) table.|
-|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the action `uninstall` * is no longer supported.|
+|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the .NET Framework 4, the action `uninstall` * is no longer supported.|
 |`update` [`/queue`]|Update native images that have become invalid.<br /><br /> If `/queue` is specified, the updates are queued for the native image service. Updates are always scheduled at priority 3, so they run when the computer is idle.|
 |`display` [`assemblyName` &#124; `assemblyPath`]|Display the state of the native images for an assembly and its dependencies.<br /><br /> If no argument is supplied, everything in the native image cache is displayed.|
 |`executeQueuedItems` [<code>1&#124;2&#124;3</code>]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|
@@ -131,9 +132,9 @@ The following table shows the syntax of each `action`. For descriptions of the i
 To run Ngen.exe, you must have administrative privileges.
 
 > [!CAUTION]
-> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
+> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
-Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
+Starting with the .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
 
 Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
 
@@ -227,7 +228,7 @@ Precompiling assemblies with Ngen.exe can improve the startup time for some appl
 Hard binding can affect startup time, because all images that are hard bound to the main application assembly must be loaded at the same time.
 
 > [!NOTE]
-> Before the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] removed the extra validation.
+> Before the .NET Framework 3.5 Service Pack 1, you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the .NET Framework 3.5 SP1 removed the extra validation.
 
 <a name="UsageSummary"></a>
 
@@ -383,7 +384,7 @@ Ngen.exe records this information when it generates a native image. When you exe
 
      Changing machine security policy to restrict permissions previously granted to an assembly can cause a previously compiled native image for that assembly to become invalid.
 
-     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../../../docs/framework/misc/code-access-security.md).
+     For detailed information about how the common language runtime administers code access security and how to use permissions, see [Code Access Security](../misc/code-access-security.md).
 
 <a name="Troubleshooting"></a>
 
@@ -395,13 +396,13 @@ The following troubleshooting topics allow you to see which native images are be
 
 ### Assembly Binding Log Viewer
 
-To confirm that native images are being used by your application, you can use the [Fuslogvw.exe (Assembly Binding Log Viewer)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md). Select **Native Images** in the **Log Categories** box on the binding log viewer window. Fuslogvw.exe provides information about why a native image was rejected.
+To confirm that native images are being used by your application, you can use the [Fuslogvw.exe (Assembly Binding Log Viewer)](fuslogvw-exe-assembly-binding-log-viewer.md). Select **Native Images** in the **Log Categories** box on the binding log viewer window. Fuslogvw.exe provides information about why a native image was rejected.
 
 <a name="MDA"></a>
 
 ### The JITCompilationStart managed debugging assistant
 
-You can use the [jitCompilationStart](../../../docs/framework/debug-trace-profile/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.
+You can use the [jitCompilationStart](../debug-trace-profile/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.
 
 <a name="OptOut"></a>
 
@@ -423,7 +424,7 @@ You can then apply the attribute on a per-method basis. The following example in
 
 The following command generates a native image for `ClientApp.exe`, located in the current directory, and installs the image in the native image cache. If a configuration file exists for the assembly, Ngen.exe uses it. In addition, native images are generated for any .dll files that `ClientApp.exe` references.
 
-```
+```console
 ngen install ClientApp.exe
 ```
 
@@ -431,7 +432,7 @@ An image installed with Ngen.exe is also called a root. A root can be an applica
 
 The following command generates a native image for `MyAssembly.exe` with the specified path.
 
-```
+```console
 ngen install c:\myfiles\MyAssembly.exe
 ```
 
@@ -442,7 +443,7 @@ When locating assemblies and their dependencies, Ngen.exe uses the same probing 
 
 An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.
 
-```
+```console
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
 ```
 
@@ -450,20 +451,20 @@ Assemblies installed in this way are not removed when the application is removed
 
 To uninstall a dependency, use the same command-line options that were used to install it. The following command uninstalls the `MyLib.dll` from the previous example.
 
-```
+```console
 ngen uninstall c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
 ```
 
 To create a native image for an assembly in the global assembly cache, use the display name of the assembly. For example:
 
-```
+```console
 ngen install "ClientApp, Version=1.0.0.0, Culture=neutral,
   PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"
 ```
 
 NGen.exe generates a separate set of images for each scenario you install. For example, the following commands install a complete set of native images for normal operation, another complete set for debugging, and a third for profiling:
 
-```
+```console
 ngen install MyApp.exe
 ngen install MyApp.exe /debug
 ngen install MyApp.exe /profile
@@ -473,7 +474,7 @@ ngen install MyApp.exe /profile
 
 Once native images are installed in the cache, they can be displayed using Ngen.exe. The following command displays all native images in the native image cache.
 
-```
+```console
 ngen display
 ```
 
@@ -481,7 +482,7 @@ The `display` action lists all the root assemblies first, followed by a list of 
 
 Use the simple name of an assembly to display information only for that assembly. The following command displays all native images in the native image cache that match the partial name `MyAssembly`, their dependencies, and all roots that have a dependency on `MyAssembly`:
 
-```
+```console
 ngen display MyAssembly
 ```
 
@@ -489,13 +490,13 @@ Knowing what roots depend on a shared component assembly is useful in gauging th
 
 If you specify an assembly's file extension, you must either specify the path or execute Ngen.exe from the directory containing the assembly:
 
-```
+```console
 ngen display c:\myApps\MyAssembly.exe
 ```
 
 The following command displays all native images in the native image cache with the name `MyAssembly` and the version 1.0.0.0.
 
-```
+```console
 ngen display "myAssembly, version=1.0.0.0"
 ```
 
@@ -503,13 +504,13 @@ ngen display "myAssembly, version=1.0.0.0"
 
 Images are typically updated after a shared component has been upgraded. To update all native images that have changed, or whose dependencies have changed, use the `update` action with no arguments.
 
-```
+```console
 ngen update
 ```
 
 Updating all images can be a lengthy process. You can queue the updates for execution by the native image service by using the `/queue` option. For more information on the `/queue` option and installation priorities, see [Native Image Service](#native-image-service).
 
-```
+```console
 ngen update /queue
 ```
 
@@ -519,13 +520,13 @@ Ngen.exe maintains a list of dependencies, so that shared components are removed
 
 The following command uninstalls all scenarios for the root `ClientApp.exe`:
 
-```
+```console
 ngen uninstall ClientApp
 ```
 
 The `uninstall` action can be used to remove specific scenarios. The following command uninstalls all debug scenarios for `ClientApp.exe`:
 
-```
+```console
 ngen uninstall ClientApp /debug
 ```
 
@@ -534,13 +535,13 @@ ngen uninstall ClientApp /debug
 
 The following command uninstalls all scenarios for a specific version of `ClientApp.exe`:
 
-```
+```console
 ngen uninstall "ClientApp, Version=1.0.0.0"
 ```
 
 The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL",` or just the debug scenario for that assembly:
 
-```
+```console
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
   PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
@@ -553,7 +554,7 @@ For examples relating to the native image service, see [Native Image Service](#n
 
 ## Native Image Task
 
-The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.
+The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. It also enables installers to use [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md) to create and update native images at a deferred time.
 
 The native image task is registered once for each CPU architecture supported on a computer, to allow compilation for applications that target each architecture:
 
@@ -585,19 +586,19 @@ The service also interacts with the manual Ngen.exe command. Manual commands tak
 
 Before beginning an installation or upgrade, pausing the service is recommended. This ensures that the service does not execute while the installer is copying files or putting assemblies in the global assembly cache. The following Ngen.exe command line pauses the service:
 
-```
+```console
 ngen queue pause
 ```
 
 When all deferred operations have been queued, the following command allows the service to resume:
 
-```
+```console
 ngen queue continue
 ```
 
 To defer native image generation when installing a new application or when updating a shared component, use the `/queue` option with the `install` or `update` actions. The following Ngen.exe command lines install a native image for a shared component and perform an update of all roots that may have been affected:
 
-```
+```console
 ngen install MyComponent /queue
 ngen update /queue
 ```
@@ -606,7 +607,7 @@ The `update` action regenerates all native images that have been invalidated, no
 
 If your application consists of many roots, you can control the priority of the deferred actions. The following commands queue the installation of three roots. `Assembly1` is installed first, without waiting for idle time. `Assembly2` is also installed without waiting for idle time, but after all priority 1 actions have completed. `Assembly3` is installed when the service detects that the computer is idle.
 
-```
+```console
 ngen install Assembly1 /queue:1
 ngen install Assembly2 /queue:2
 ngen install Assembly3 /queue:3
@@ -614,7 +615,7 @@ ngen install Assembly3 /queue:3
 
 You can force queued actions to occur synchronously by using the `executeQueuedItems` action. If you supply the optional priority, this action affects only the queued actions that have equal or lower priority. The default priority is 3, so the following Ngen.exe command processes all queued actions immediately, and does not return until they are finished:
 
-```
+```console
 ngen executeQueuedItems
 ```
 
@@ -630,7 +631,7 @@ In the .NET Framework version 2.0, the only interaction with the native image se
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Managed Execution Process](../../standard/managed-execution-process.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

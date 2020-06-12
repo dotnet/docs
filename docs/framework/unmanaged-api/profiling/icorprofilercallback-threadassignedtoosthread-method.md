@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ThreadAssignedToOSThread Method
 Notifies the profiler that a managed thread is being implemented using a particular operating system thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadAssignedToOSThread(  
     [in] ThreadID managedThreadId,  
     [in] DWORD    osThreadId);  
@@ -40,7 +38,7 @@ HRESULT ThreadAssignedToOSThread(
  The `ThreadAssignedToOSThread` callback exists so that the profiler can maintain an accurate mapping across fibers of operating system threads to managed threads.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -50,4 +48,4 @@ HRESULT ThreadAssignedToOSThread(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

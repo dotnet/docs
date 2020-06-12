@@ -6,11 +6,12 @@ ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 # \<namedPipeTransport>
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  
   
-\<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<namePipeTransport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namedPipeTransport>**  
   
 ## Syntax  
   
@@ -28,7 +29,7 @@ Defines a transport that causes a channel to transfer messages using named pipes
                     transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
   <connectionPoolSettings groupName="String"
                           idleTimeout="TimeSpan"
-                          maxOutboundConnectionsPerEndpopint="Integer" />
+                          maxOutboundConnectionsPerEndpoint="Integer" />
 </namedPipeTransport>
 ```  
   
@@ -53,13 +54,13 @@ None.
 |maxPendingConnections|Gets or sets the maximum number of connections awaiting dispatch on the service.|  
 |maxReceivedMessageSize|Gets and sets the maximum allowable message size, in bytes, that can be received.|  
 |transferMode|Gets or sets a value that indicates whether the messages are buffered or streamed with the connection-oriented transport.|  
-|[\<connectionPoolSettings> of \<namedPipeTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/connectionpoolsettings.md)|Specifies additional connection pool settings for a Named Pipe binding.|  
+|[\<connectionPoolSettings> of \<namedPipeTransport>](connectionpoolsettings.md)|Specifies additional connection pool settings for a Named Pipe binding.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
 This transport uses URIs of the form "net.pipe://hostname/path". Other URI components are optional.  
@@ -72,9 +73,9 @@ The `namedPipeTransport` element is the starting point for creating a custom bin
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

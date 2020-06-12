@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: d1b2b172-5353-42af-a877-cf653c68ece0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHashFromAssemblyFileW Function
 Gets a hash of the specified assembly file, using the specified hash algorithm. The path to the assembly file must be specified as a Unicode string.  
   
- This function has been deprecated. Use the [ICLRStrongName::GetHashFromAssemblyFileW](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::GetHashFromAssemblyFileW](../hosting/iclrstrongname-gethashfromassemblyfilew-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromAssemblyFileW (  
     [in]  LPCWSTR   wszFilePath,  
     [in, out] unsigned int   *piHashAlg,  
@@ -51,7 +49,7 @@ HRESULT GetHashFromAssemblyFileW (
  [out] The returned size, in bytes, of `pbHash`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -61,6 +59,6 @@ HRESULT GetHashFromAssemblyFileW (
   
 ## See also
 
-- [GetHashFromAssemblyFileW Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
-- [GetHashFromAssemblyFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromassemblyfile-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [GetHashFromAssemblyFileW Method](../hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
+- [GetHashFromAssemblyFile Method](../hosting/iclrstrongname-gethashfromassemblyfile-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

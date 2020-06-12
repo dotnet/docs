@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: fdf91864-48ea-4aa6-b70c-361b7a3184c7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet::GetRegisters Method
 Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
-    [in] ULONG64       mask,   
+    [in] ULONG64       mask,
     [in] ULONG32       regCount,  
     [out, size_is(regCount), length_is(regCount)]  
         CORDB_REGISTER regBuffer[]  
@@ -48,7 +46,7 @@ HRESULT GetRegisters (
  If the bit mask specifies a register that is unavailable, `GetRegisters` returns an indeterminate value for that register.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -58,5 +56,5 @@ HRESULT GetRegisters (
   
 ## See also
 
-- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
-- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+- [ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)
+- [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

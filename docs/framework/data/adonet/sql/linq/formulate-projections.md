@@ -71,4 +71,4 @@ The following examples show how the `select` statement in C# and `Select` statem
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

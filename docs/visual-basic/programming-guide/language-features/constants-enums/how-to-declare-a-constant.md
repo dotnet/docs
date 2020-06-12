@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare A Constant (Visual Basic)"
+title: "How to: Declare A Constant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.constant"
@@ -39,7 +39,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
      [!code-vb[VbEnumsTask#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#8)]  
   
-     When [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) is `On`, you must declare a constant explicitly by specifying a data type (`Boolean`, `Byte`, `Char`, `DateTime`, `Decimal`, `Double`, `Integer`, `Long`, `Short`, `Single`, or `String`).  
+     When [Option Infer](../../../language-reference/statements/option-infer-statement.md) is `Off` and [Option Strict](../../../language-reference/statements/option-strict-statement.md) is `On`, you must declare a constant explicitly by specifying a data type (`Boolean`, `Byte`, `Char`, `DateTime`, `Decimal`, `Double`, `Integer`, `Long`, `Short`, `Single`, or `String`).  
   
      When `Option Infer` is `On` or `Option Strict` is `Off`, you can declare a constant without specifying a data type with an `As` clause. The compiler determines the type of the constant from the type of the expression. For more information, see [Constant and Literal Data Types](constant-and-literal-data-types.md).  
   
@@ -55,13 +55,13 @@ You use the `Const` statement to declare a constant and set its value. By declar
   
 - Separate the declarations with a comma and a space, as in the following example:  
   
-    ```  
+    ```vb  
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
 ## See also
 
-- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
+- [Const Statement](../../../language-reference/statements/const-statement.md)
 - [Constant and Literal Data Types](constant-and-literal-data-types.md)
 - [Constants Overview](constants-overview.md)
 - [How to: Declare A Constant](how-to-declare-a-constant.md)
@@ -80,5 +80,5 @@ You use the `Const` statement to declare a constant and set its value. By declar
 - [Constants Overview](constants-overview.md)
 - [How to: Declare an Enumeration](how-to-declare-enumerations.md)
 - [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "CreateInstanceEnumWmi function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # CreateInstanceEnumWmi function
@@ -109,7 +107,7 @@ If the function call fails, you can obtain additional error information by calli
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

@@ -30,5 +30,5 @@ ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b
 ## See also
 
 - [Convert Bound Data](how-to-convert-bound-data.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

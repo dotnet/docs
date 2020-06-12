@@ -11,13 +11,11 @@ helpviewer_keywords:
   - "tracing [.NET Framework], enabling or disabling"
   - "Web.config configuration file, trace switches"
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Create, Initialize and Configure Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output.  
   
-<a name="create"></a>   
+<a name="create"></a>
 ## Creating and initializing a trace switch  
  In order to use trace switches, you must first create them and place them in your code. There are two predefined classes from which you can create switch objects: the <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> class and the <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType> class. You would use <xref:System.Diagnostics.BooleanSwitch> if you care only about whether or not a tracing message appears; you would use <xref:System.Diagnostics.TraceSwitch> if you want to discriminate between levels of tracing. If you use a <xref:System.Diagnostics.TraceSwitch>, you can define your own debugging messages and associate them with different trace levels. You can use both types of switches with either tracing or debugging. By default, a <xref:System.Diagnostics.BooleanSwitch> is disabled and a <xref:System.Diagnostics.TraceSwitch> is set to level <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>. Trace switches can be created and placed in any part of your code that might use them.  
   
@@ -37,14 +35,14 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```  
   
     ```csharp  
-    System.Diagnostics.BooleanSwitch dataSwitch =   
+    System.Diagnostics.BooleanSwitch dataSwitch =
        new System.Diagnostics.BooleanSwitch("Data", "DataAccess module");  
-    System.Diagnostics.TraceSwitch generalSwitch =   
-       new System.Diagnostics.TraceSwitch("General",   
+    System.Diagnostics.TraceSwitch generalSwitch =
+       new System.Diagnostics.TraceSwitch("General",
        "Entire application");  
     ```  
   
-<a name="configure"></a>   
+<a name="configure"></a>
 ## Configuring trace switches  
  After your application has been distributed, you can still enable or disable trace output by configuring the trace switches in your application. Configuring a switch means changing its value from an external source after it has been initialized. You can change the values of the switch objects using the configuration file. You configure a trace switch to turn it on and off, or to set its level, determining the amount and type of messages it passes along to listeners.  
   
@@ -59,7 +57,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
  In addition to specifying the name of a switch to configure, you must also specify a value for the switch. This value is an Integer. For <xref:System.Diagnostics.BooleanSwitch>, a value of 0 corresponds to **Off**, and any nonzero value corresponds to **On**. For <xref:System.Diagnostics.TraceSwitch>, 0,1,2,3, and 4 correspond **Off**, **Error**, **Warning**, **Info**, and **Verbose**, respectively. Any number greater than 4 is treated as **Verbose**, and any number less than zero is treated as **Off**.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
+> In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
   
  In order for end users to be able to configure an application's trace switches, you must provide detailed documentation on the switches in your application. You should detail which switches control what and how to turn them on and off. You should also provide your end user with a .config file that has appropriate Help in the comments.  
   
@@ -121,7 +119,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 ## See also
 
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [Trace and Debug Settings Schema](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
+- [Trace Switches](trace-switches.md)
+- [Trace and Debug Settings Schema](../configure-apps/file-schema/trace-debug/index.md)

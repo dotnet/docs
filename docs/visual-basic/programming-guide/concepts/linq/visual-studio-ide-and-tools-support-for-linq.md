@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio IDE and Tools Support for LINQ (Visual Basic)"
+title: "Visual Studio IDE and Tools Support for LINQ"
 ms.date: 07/20/2015
 ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
 ---
@@ -20,4 +20,4 @@ The Visual Studio integrated development environment (IDE) provides the followin
   
 ## See also
 
-- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)

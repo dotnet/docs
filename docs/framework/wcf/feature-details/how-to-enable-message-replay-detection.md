@@ -14,13 +14,13 @@ ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
 # How to: Enable Message Replay Detection
 A replay attack occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack will process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
   
- For more information about message replay detection, see [Message Replay Detection](https://go.microsoft.com/fwlink/?LinkId=88536).  
+ For more information about message replay detection, see [Message Replay Detection](https://docs.microsoft.com/previous-versions/msp-n-p/ff649371(v=pandp.10)).  
   
  The following procedure demonstrates various properties that you can use to control replay detection using Windows Communication Foundation (WCF).  
   
 ### To control replay detection on the client using code  
   
-1. Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md). The following example uses a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> created with the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+1. Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md). The following example uses a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> created with the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   
 2. Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> class and set any of the following properties, as appropriate:  
   
@@ -40,11 +40,11 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 ### To control replay detection in configuration for the client or service  
   
-1. Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+1. Create a [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md).  
   
 2. Create a `<security>` element.  
   
-3. Create a [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md).  
+3. Create a [\<localClientSettings>](../../configure-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../configure-apps/file-schema/wcf/localservicesettings-element.md).  
   
 4. Set the following attribute values, as appropriate: `detectReplays`, `maxClockSkew`, `replayWindow`, and `replayCacheSize`. The following example sets the attributes of both a `<localServiceSettings>` and a `<localClientSettings>` element:  
   
@@ -53,12 +53,12 @@ A replay attack occurs when an attacker copies a stream of messages between two 
       <binding name="NewBinding0">  
        <textMessageEncoding />  
         <security>  
-         <localClientSettings   
-          replayCacheSize="800000"   
+         <localClientSettings
+          replayCacheSize="800000"
           maxClockSkew="00:03:00"  
           replayWindow="00:03:00" />  
-         <localServiceSettings   
-          replayCacheSize="800000"   
+         <localServiceSettings
+          replayCacheSize="800000"
           maxClockSkew="00:03:00"  
           replayWindow="00:03:00" />  
         <secureConversationBootstrap />  
@@ -100,6 +100,6 @@ A replay attack occurs when an attacker copies a stream of messages between two 
 
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
-- [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)
-- [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)
-- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Secure Conversations and Secure Sessions](secure-conversations-and-secure-sessions.md)
+- [\<localClientSettings>](../../configure-apps/file-schema/wcf/localclientsettings-element.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)

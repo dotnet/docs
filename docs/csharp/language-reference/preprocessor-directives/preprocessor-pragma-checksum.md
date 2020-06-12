@@ -1,7 +1,5 @@
 ---
 title: "#pragma checksum - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "#pragma checksum"
@@ -51,6 +49,6 @@ class TestClass
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Preprocessor Directives](./index.md)

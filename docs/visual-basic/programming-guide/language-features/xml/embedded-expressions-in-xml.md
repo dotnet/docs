@@ -1,5 +1,5 @@
 ---
-title: "Embedded Expressions in XML (Visual Basic)"
+title: "Embedded Expressions in XML"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlEmbeddedExpression"
@@ -64,7 +64,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
   
  In locations where content is optional, embedded expressions that contain `Nothing` are ignored. This means you do not have to check that element content, attribute values, and array elements are not `Nothing` before you use an XML literal. Required values, such as element and attribute names, cannot be `Nothing`.  
   
- For more information about using an embedded expression in a particular type of literal, see [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md), [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
+ For more information about using an embedded expression in a particular type of literal, see [XML Document Literal](../../../language-reference/xml-literals/xml-document-literal.md), [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md).  
   
 ## Scoping Rules  
  The compiler converts each XML literal into a constructor call for the appropriate literal type. The literal content and embedded expressions in an XML literal are passed as arguments to the constructor. This means that all Visual Basic programming elements available to an XML literal are also available to its embedded expressions.  
@@ -72,13 +72,13 @@ Embedded expressions enable you to create XML literals that contain expressions 
  Within an XML literal, you can access the XML namespace prefixes declared with the `Imports` statement. You can declare a new XML namespace prefix, or shadow an existing XML namespace prefix, in an element by using the `xmlns` attribute. The new namespace is available to the child nodes of that element, but not to XML literals in embedded expressions.  
   
 > [!NOTE]
->  When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
+> When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
   
 ## See also
 
-- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
-- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
-- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [XML Literals Overview](../../../../visual-basic/programming-guide/language-features/xml/xml-literals-overview.md)
+- [Creating XML in Visual Basic](creating-xml.md)
+- [XML Document Literal](../../../language-reference/xml-literals/xml-document-literal.md)
+- [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [XML Literals Overview](xml-literals-overview.md)

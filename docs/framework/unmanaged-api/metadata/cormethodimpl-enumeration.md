@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ffbb3caf-20da-4a4b-8983-77376e72b990
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodImpl Enumeration
 Contains values that describe method implementation features.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodImpl {  
   
     miCodeTypeMask      =   0x0003,  
@@ -70,7 +68,7 @@ typedef enum CorMethodImpl {
 |`miMaxMethodImplVal`|The maximum valid value for a `CorMethodImpl`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -78,4 +76,4 @@ typedef enum CorMethodImpl {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

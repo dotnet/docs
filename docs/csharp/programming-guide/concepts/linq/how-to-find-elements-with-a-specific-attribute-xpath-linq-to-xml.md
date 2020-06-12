@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (C#)"
+title: "How to find elements with a specific attribute (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: daed00dd-923a-43be-8a90-eee406f6f574
 ---
-# How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (C#)
+# How to find elements with a specific attribute (XPath-LINQ to XML) (C#)
 Sometimes you want to find all elements that have a specific attribute. You are not concerned about the contents of the attribute. Instead, you want to select based on the existence of the attribute.  
   
  The XPath expression is:  
@@ -44,12 +44,9 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Child2 Select="true">2</Child2>  
 <Child4 Select="true">4</Child4>  
 ```  
   
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

@@ -8,7 +8,7 @@ ms.assetid: a99fce81-9d92-4813-9874-bee777041445
 Specifies the minimum version of the subsystem on which the generated executable file can run, thereby determining the versions of Windows on which the executable file can run. Most commonly, this option ensures that the executable file can leverage particular security features that aren’t available with older versions of Windows.
 
 > [!NOTE]
->  To specify the subsystem itself, use the [-target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) compiler option.
+> To specify the subsystem itself, use the [-target](./target-compiler-option.md) compiler option.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ The following table lists common subsystem versions of Windows.
 |Windows Vista|6.00|
 |Windows 7|6.01|
 |Windows Server 2008|6.01|
-|[!INCLUDE[win8](~/includes/win8-md.md)]|6.02|
+|Windows 8|6.02|
 
 ## Default values
 
@@ -44,13 +44,13 @@ The default value of the **-subsystemversion** compiler option depends on the co
 
 - The default value is 6.02 if any compiler option in the following list is set:
 
-  - [-target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md)
+  - [-target:appcontainerexe](./target-appcontainerexe-compiler-option.md)
 
-  - [-target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md)
+  - [-target:winmdobj](./target-winmdobj-compiler-option.md)
 
-  - [-platform:arm](../../../csharp/language-reference/compiler-options/platform-compiler-option.md)
+  - [-platform:arm](./platform-compiler-option.md)
 
-- The default value is 6.00 if you're using MSBuild, you're targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)], and you haven't set any of the compiler options that were specified earlier in this list.
+- The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
 
 - The default value is 4.00 if none of the previous conditions is true.
 
@@ -60,4 +60,4 @@ To set the **-subsystemversion** compiler option in Visual Studio, you must open
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

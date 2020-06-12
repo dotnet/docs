@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing COM components"
   - "COM interop, exposing COM components"
 ms.assetid: e78b14f1-e487-43cd-9c6d-1a07483f1730
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Exposing COM Components to the .NET Framework
 This section summarizes the process needed to expose an existing COM component to managed code. For details about writing COM servers that tightly integrate with the .NET Framework, see [Design Considerations for Interoperation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100)).
@@ -26,11 +24,11 @@ This section summarizes the process needed to expose an existing COM component t
   
 3. [Compile an interop project](compiling-an-interop-project.md).  
   
-     The [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] provides compilers for several languages compliant with the Common Language Specification (CLS), including Visual Basic, C#, and C++.  
+     The Windows SDK provides compilers for several languages compliant with the Common Language Specification (CLS), including Visual Basic, C#, and C++.  
   
 4. [Deploy an interop application](deploying-an-interop-application.md).  
   
-     Interop applications are best deployed as [strong-named](../app-domains/strong-named-assemblies.md), signed assemblies in the global assembly cache.  
+     Interop applications are best deployed as [strong-named](../../standard/assembly/strong-named.md), signed assemblies in the global assembly cache.  
   
 ## See also
 

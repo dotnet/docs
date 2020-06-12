@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass::GetToken Method
 Gets the `TypeDef` metadata token that references the definition of this class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdTypeDef          *pTypeDef  
 );  
@@ -34,7 +32,7 @@ HRESULT GetToken (
  [out] A pointer to an `mdTypeDef` token that references the definition of this class.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -44,4 +42,4 @@ HRESULT GetToken (
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../metadata/metadata-interfaces.md)

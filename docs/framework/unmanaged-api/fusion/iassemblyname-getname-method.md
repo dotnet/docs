@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1dee9781-1cf3-48a9-a376-d18ea1f73280
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::GetName Method
-Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object.  
+Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in, out] LPDWORD lpcwBuffer,  
     [out]     WCHAR *pwzName  
@@ -38,7 +36,7 @@ HRESULT GetName (
  [out] A buffer to hold the name of the referenced assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -46,4 +44,4 @@ HRESULT GetName (
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)

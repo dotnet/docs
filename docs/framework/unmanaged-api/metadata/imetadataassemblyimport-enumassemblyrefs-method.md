@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: 8844d0dd-730e-4592-8a7b-c1462d312c70
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumAssemblyRefs Method
 Enumerates the `mdAssemblyRef` instances that are defined in the assembly manifest.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAssemblyRefs (  
-    [in, out] HCORENUM        *phEnum,   
-    [out]     mdAssemblyRef   rAssemblyRefs[],   
-    [in]      ULONG           cMax,   
+    [in, out] HCORENUM        *phEnum,
+    [out]     mdAssemblyRef   rAssemblyRefs[],
+    [in]      ULONG           cMax,
     [out]     ULONG           *pcTokens  
 );  
 ```  
@@ -53,7 +51,7 @@ HRESULT EnumAssemblyRefs (
 |`S_FALSE`|There are no tokens to enumerate. In this case, `pcTokens` is set to zero.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -63,4 +61,4 @@ HRESULT EnumAssemblyRefs (
   
 ## See also
 
-- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

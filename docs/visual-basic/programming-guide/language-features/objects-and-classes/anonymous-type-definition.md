@@ -1,5 +1,5 @@
 ---
-title: "Anonymous Type Definition (Visual Basic)"
+title: "Anonymous Type Definition"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "anonymous types [Visual Basic], type definition"
@@ -46,7 +46,7 @@ Public Class $Anonymous1
 End Class
 ```
 
-In addition, anonymous type definitions contain a default constructor. Constructors that require parameters are not permitted.
+In addition, anonymous type definitions contain a parameterless constructor. Constructors that require parameters are not permitted.
 
 If an anonymous type declaration contains at least one key property, the type definition overrides three members inherited from <xref:System.Object>: <xref:System.Object.Equals%2A>, <xref:System.Object.GetHashCode%2A>, and <xref:System.Object.ToString%2A>. If no key properties are declared, only <xref:System.Object.ToString%2A> is overridden. The overrides provide the following functionality:
 
@@ -79,5 +79,5 @@ Anonymous type definitions that include at least one key property also implement
 
 ## See also
 
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
+- [Anonymous Types](anonymous-types.md)
+- [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

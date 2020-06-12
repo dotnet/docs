@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Lambda Expression (Visual Basic)"
+title: "How to: Create a Lambda Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [Visual Basic]"
@@ -94,7 +94,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
   
  [!code-vb[VbVbalrLambdas#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class4.vb#10)]  
   
- The previous example is equivalent to the following code, which is written in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] syntax:  
+ The previous example is equivalent to the following code, which is written in Language-Integrated Query (LINQ) syntax:  
   
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   
@@ -102,9 +102,9 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
 
 - <xref:System.Linq.Enumerable>
 - [Lambda Expressions](./lambda-expressions.md)
-- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
-- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
-- [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)
-- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Function Statement](../../../language-reference/statements/function-statement.md)
+- [Sub Statement](../../../language-reference/statements/sub-statement.md)
+- [Delegates](../delegates/index.md)
+- [How to: Pass Procedures to Another Procedure in Visual Basic](../delegates/how-to-pass-procedures-to-another-procedure.md)
+- [Delegate Statement](../../../language-reference/statements/delegate-statement.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)

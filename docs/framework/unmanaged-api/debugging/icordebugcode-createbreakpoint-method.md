@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 46842618-0fe4-480b-871c-82fba82d23d9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::CreateBreakpoint Method
 Creates a breakpoint in this code segment at the specified offset.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [in] ULONG32     offset,  
     [out] ICorDebugFunctionBreakpoint **ppBreakpoint  
@@ -43,12 +41,10 @@ HRESULT CreateBreakpoint (
  If this code is Microsoft intermediate language (MSIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well. (The same is true if the code is JIT-compiled later.)  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

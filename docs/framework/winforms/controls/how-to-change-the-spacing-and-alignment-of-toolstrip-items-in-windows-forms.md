@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms"
+title: "How to: Change the Spacing and Alignment of ToolStrip Items"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -41,7 +41,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripTextBox1.Margin = new System.Windows.Forms.Padding   
+    toolStripTextBox1.Margin = new System.Windows.Forms.Padding
         (3, 0, 3, 0);  
     ```  
   
@@ -55,7 +55,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripSplitButton1.Alignment =   
+    toolStripSplitButton1.Alignment =
         System.Windows.Forms.ToolStripItemAlignment.Right;  
     ```  
   
@@ -69,7 +69,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripDropDown1.LayoutStyle =   
+    toolStripDropDown1.LayoutStyle =
         System.Windows.Forms.ToolStripLayoutStyle.Flow;  
     ```  
   

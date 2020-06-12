@@ -1,5 +1,5 @@
 ---
-title: "GetType Operator (Visual Basic)"
+title: "GetType Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.GetType"
@@ -13,7 +13,7 @@ Returns a <xref:System.Type> object for the specified type. The <xref:System.Typ
   
 ## Syntax  
   
-```  
+```vb  
 GetType(typename)  
 ```  
   
@@ -53,6 +53,6 @@ GetType(typename)
   
 ## See also
 
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)

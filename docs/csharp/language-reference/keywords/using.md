@@ -1,6 +1,5 @@
 ---
 title: "using keyword - C# Reference"
-ms.custom: seoapril2019
 ms.date: 04/05/2019
 f1_keywords: 
   - "using_CSharpKeyword"
@@ -22,6 +21,5 @@ The `using` keyword has three major uses:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Namespace Keywords](namespace-keywords.md)
 - [Namespaces](../../programming-guide/namespaces/index.md)
 - [extern](extern.md)

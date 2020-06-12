@@ -26,9 +26,9 @@ Provides methods for querying information about a loaded module.
 
 | Method                                                                                                                                | Description                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [GetMethodDefinitionByToken](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Gets the method definition corresponding to a given metadata token. |
-| [Request](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-request-method.md)                                       | Requests to populate the buffer given with the module's data.       |
-| [GetVersionId](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-getversionid-method.md)                             | Gets the module's version ID.                                       |
+| [GetMethodDefinitionByToken](ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Gets the method definition corresponding to a given metadata token. |
+| [Request](ixclrdatamodule-request-method.md)                                       | Requests to populate the buffer given with the module's data.       |
+| [GetVersionId](ixclrdatamodule-getversionid-method.md)                             | Gets the module's version ID.                                       |
 
 ## Remarks
 
@@ -36,12 +36,12 @@ This interface lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](index.md)
+- [Debugging Interfaces](debugging-interfaces.md)

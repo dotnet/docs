@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Resolving External Resources During XSLT Processing
 There are several times during an XSLT transformation when you may need to resolve external resources.  
@@ -42,4 +40,4 @@ There are several times during an XSLT transformation when you may need to resol
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - <xref:System.Xml.Xsl.XsltSettings>
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Transformations](xslt-transformations.md)

@@ -2,7 +2,8 @@
 title: String interpolation in C#
 description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
-ms.date: 05/09/2018
+ms.technology: csharp-fundamentals
+ms.date: 09/02/2019
 ---
 # String interpolation in C\#
 
@@ -20,18 +21,18 @@ To identify a string literal as an interpolated string, prepend it with the `$` 
 
 As the example shows, you include an expression in an interpolated string by enclosing it with braces:
 
-```
-{<interpolatedExpression>}
+```csharp
+{<interpolationExpression>}
 ```
 
 Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format%2A?displayProperty=nameWithType> method.
 
-## How to specify a format string for an interpolated expression
+## How to specify a format string for an interpolation expression
 
-You specify a format string that is supported by the type of the expression result by following the interpolated expression with a colon (":") and the format string:
+You specify a format string that is supported by the type of the expression result by following the interpolation expression with a colon (":") and the format string:
 
-```
-{<interpolatedExpression>:<formatString>}
+```csharp
+{<interpolationExpression>:<formatString>}
 ```
 
 The following example shows how to specify standard and custom format strings for expressions that produce date and time or numeric results:
@@ -40,20 +41,20 @@ The following example shows how to specify standard and custom format strings fo
 
 For more information, see the [Format String Component](../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic. That section provides links to the topics that describe standard and custom format strings supported by .NET base types.
 
-## How to control the field width and alignment of the formatted interpolated expression
+## How to control the field width and alignment of the formatted interpolation expression
 
-You specify the minimum field width and the alignment of the formatted expression result by following the interpolated expression with a comma (",") and the constant expression:
+You specify the minimum field width and the alignment of the formatted expression result by following the interpolation expression with a comma (",") and the constant expression:
 
-```
-{<interpolatedExpression>,<alignment>}
+```csharp
+{<interpolationExpression>,<alignment>}
 ```
 
 If the *alignment* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned.
 
 If you need to specify both alignment and a format string, start with the alignment component:
 
-```
-{<interpolatedExpression>,<alignment>:<formatString>}
+```csharp
+{<interpolationExpression>,<alignment>:<formatString>}
 ```
 
 The following example shows how to specify alignment and uses pipe characters ("|") to delimit text fields:
@@ -68,7 +69,7 @@ For more information, see the [Alignment Component](../../standard/base-types/co
 
 Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. A verbatim interpolated string starts with the `$` character followed by the `@` character.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the `$` character followed by the `@` character. Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping Braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite Formatting](../../standard/base-types/composite-formatting.md) topic.
 
@@ -76,9 +77,9 @@ The following example shows how to include braces in a result string and constru
 
 [!code-csharp-interactive[escape sequence example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#4)]
 
-## How to use a ternary conditional operator `?:` in an interpolated expression
+## How to use a ternary conditional operator `?:` in an interpolation expression
 
-As the colon (":") has special meaning in an item with an interpolated expression, in order to use a [conditional operator](../language-reference/operators/conditional-operator.md) in an expression, enclose it in parentheses, as the following example shows:
+As the colon (":") has special meaning in an item with an interpolation expression, in order to use a [conditional operator](../language-reference/operators/conditional-operator.md) in an expression, enclose it in parentheses, as the following example shows:
 
 [!code-csharp-interactive[conditional operator example](~/samples/snippets/csharp/tutorials/string-interpolation/Program.cs#5)]
 

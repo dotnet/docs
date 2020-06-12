@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0ea9d9af-8709-4a46-872b-f54d9e840088
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedNamespace::GetNamespaces Method
 Gets the children of this namespace.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces(  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  
@@ -49,4 +47,4 @@ HRESULT GetNamespaces(
   
 ## See also
 
-- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [ISymUnmanagedNamespace Interface](isymunmanagednamespace-interface.md)

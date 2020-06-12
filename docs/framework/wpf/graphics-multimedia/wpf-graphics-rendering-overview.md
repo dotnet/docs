@@ -1,5 +1,5 @@
 ---
-title: "WPF Graphics Rendering Overview"
+title: Graphics rendering overview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,7 +12,7 @@ ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
 # WPF Graphics Rendering Overview
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual layer. It focuses on the role of the <xref:System.Windows.Media.Visual> class for rendering support in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] model.  
 
-<a name="role_of_visual_object"></a>   
+<a name="role_of_visual_object"></a>
 ## Role of the Visual Object  
  The <xref:System.Windows.Media.Visual> class is the basic abstraction from which every <xref:System.Windows.FrameworkElement> object derives. It also serves as the entry point for writing new controls in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], and in many ways can be thought of as the window handle (HWND) in the Win32 application model.  
   
@@ -42,13 +42,13 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  <xref:System.Windows.Media.Visual> is exposed as a public abstract class from which child classes must be derived. The following illustration shows the hierarchy of the visual objects that are exposed in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- ![Diagram of classes derived from the Visual object](./media/wpf-graphics-rendering-overview/classes-derived-visual-object.png)    
+ ![Diagram of classes derived from the Visual object](./media/wpf-graphics-rendering-overview/classes-derived-visual-object.png)
   
 ### DrawingVisual Class  
  The <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its runtime performance. For this reason, drawings are ideal for backgrounds and clip art. The <xref:System.Windows.Media.DrawingVisual> can be used to create a custom visual object. For more information, see [Using DrawingVisual Objects](using-drawingvisual-objects.md).  
   
 ### Viewport3DVisual Class  
- The <xref:System.Windows.Media.Media3D.Viewport3DVisual> provides a bridge between 2D <xref:System.Windows.Media.Visual> and <xref:System.Windows.Media.Media3D.Visual3D> objects. The <xref:System.Windows.Media.Media3D.Visual3D> class is the base class for all 3D visual elements. The <xref:System.Windows.Media.Media3D.Viewport3DVisual> requires that you define a <xref:System.Windows.Media.Media3D.Viewport3DVisual.Camera%2A> value and a <xref:System.Windows.Media.Media3D.Viewport3DVisual.Viewport%2A> value. The camera allows you to view the scene. The viewport establishes where the projection maps onto the 2D surface. For more information on 3D in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [3-D Graphics Overview](3-d-graphics-overview.md).  
+ The <xref:System.Windows.Media.Media3D.Viewport3DVisual> provides a bridge between 2D <xref:System.Windows.Media.Visual> and <xref:System.Windows.Media.Media3D.Visual3D> objects. The <xref:System.Windows.Media.Media3D.Visual3D> class is the base class for all 3D visual elements. The <xref:System.Windows.Media.Media3D.Viewport3DVisual> requires that you define a <xref:System.Windows.Media.Media3D.Viewport3DVisual.Camera%2A> value and a <xref:System.Windows.Media.Media3D.Viewport3DVisual.Viewport%2A> value. The camera allows you to view the scene. The viewport establishes where the projection maps onto the 2D surface. For more information on 3D in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [3D Graphics Overview](3-d-graphics-overview.md).  
   
 ### ContainerVisual Class  
  The <xref:System.Windows.Media.ContainerVisual> class is used as a container for a collection of <xref:System.Windows.Media.Visual> objects. The <xref:System.Windows.Media.DrawingVisual> class derives from the <xref:System.Windows.Media.ContainerVisual> class, allowing it to contain a collection of visual objects.  
@@ -86,13 +86,13 @@ Order of DrawingGroup operations
  In addition to their other uses, <xref:System.Windows.Media.Drawing> objects also provide an object model for enumerating the contents of a <xref:System.Windows.Media.Visual>.  
   
 > [!NOTE]
->  When you are enumerating the contents of the visual, you are retrieving <xref:System.Windows.Media.Drawing> objects, and not the underlying representation of the render data as a vector graphics instruction list.  
+> When you are enumerating the contents of the visual, you are retrieving <xref:System.Windows.Media.Drawing> objects, and not the underlying representation of the render data as a vector graphics instruction list.  
   
  The following example uses the <xref:System.Windows.Media.VisualTreeHelper.GetDrawing%2A> method to retrieve the <xref:System.Windows.Media.DrawingGroup> value of a <xref:System.Windows.Media.Visual> and enumerate it.  
   
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
-<a name="how_visual_objects_are_used_to_build_controls"></a>   
+<a name="how_visual_objects_are_used_to_build_controls"></a>
 ## How Visual Objects are Used to Build Controls  
  Many of the objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] are composed of other visual objects, meaning they can contain varying hierarchies of descendant objects. Many of the user interface elements in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], such as controls, are composed of multiple visual objects, representing different types of rendering elements. For example, the <xref:System.Windows.Controls.Button> control can contain a number of other objects, including <xref:Microsoft.Windows.Themes.ClassicBorderDecorator>, <xref:System.Windows.Controls.ContentPresenter>, and <xref:System.Windows.Controls.TextBlock>.  
   
@@ -102,7 +102,7 @@ Order of DrawingGroup operations
   
  If you were to enumerate the visual objects that comprise the default <xref:System.Windows.Controls.Button> control, you would find the hierarchy of visual objects illustrated below:  
   
- ![Diagram of visual tree hierarchy](./media/wpf-graphics-rendering-overview/visual-object-diagram.gif) 
+ ![Diagram of visual tree hierarchy](./media/wpf-graphics-rendering-overview/visual-object-diagram.gif)
   
  The <xref:System.Windows.Controls.Button> control contains a <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element, which in turn, contains a <xref:System.Windows.Controls.ContentPresenter> element. The <xref:Microsoft.Windows.Themes.ClassicBorderDecorator> element is responsible for drawing a border and a background for the <xref:System.Windows.Controls.Button>. The <xref:System.Windows.Controls.ContentPresenter> element is responsible for displaying the contents of the <xref:System.Windows.Controls.Button>. In this case, since you are displaying text, the <xref:System.Windows.Controls.ContentPresenter> element contains a <xref:System.Windows.Controls.TextBlock> element. The fact that the <xref:System.Windows.Controls.Button> control uses a <xref:System.Windows.Controls.ContentPresenter> means that the content could be represented by other elements, such as an <xref:System.Windows.Controls.Image> or a geometry, such as an <xref:System.Windows.Media.EllipseGeometry>.  
   
@@ -129,7 +129,7 @@ Order of DrawingGroup operations
   
 - The items in the vector graphics instruction list are rendered left to right.  
   
-<a name="visual_tree"></a>   
+<a name="visual_tree"></a>
 ## Visual Tree  
  The visual tree contains all visual elements used in an application's user interface. Since a visual element contains persisted drawing information, you can think of the visual tree as a scene graph, containing all the rendering information needed to compose the output to the display device. This tree is the accumulation of all visual elements created directly by the application, whether in code or in markup. The visual tree also contains all visual elements created by the template expansion of elements such as controls and data objects.  
   
@@ -144,7 +144,7 @@ Order of DrawingGroup operations
 ### Rendering Order  
  The visual tree determines the rendering order of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual and drawing objects. The order of traversal starts with the root visual, which is the top-most node in the visual tree. The root visual’s children are then traversed, left to right. If a visual has children, its children are traversed before the visual’s siblings. This means that the content of a child visual is rendered in front of the visual's own content.  
   
- ![Diagram of the visual tree rendering order](./media/wpf-graphics-rendering-overview/visual-tree-rendering-order.gif) 
+ ![Diagram of the visual tree rendering order](./media/wpf-graphics-rendering-overview/visual-tree-rendering-order.gif)
   
 ### Root Visual  
  The **root visual** is the top-most element in a visual tree hierarchy. In most applications, the base class of the root visual is either <xref:System.Windows.Window> or <xref:System.Windows.Navigation.NavigationWindow>. However, if you were hosting visual objects in a Win32 application, the root visual would be the top-most visual you were hosting in the Win32 window. For more information, see [Tutorial: Hosting Visual Objects in a Win32 Application](tutorial-hosting-visual-objects-in-a-win32-application.md).  
@@ -164,7 +164,7 @@ Diagram of logical tree
  For more information on the logical tree, see [Trees in WPF](../advanced/trees-in-wpf.md).  
   
 ### Viewing the Visual Tree with XamlPad  
- The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] tool, XamlPad, provides an option for viewing and exploring the visual tree that corresponds to the currently defined [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] content. Click the **Show Visual Tree** button on the menu bar to display the visual tree. The following illustrates the expansion of [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] content into visual tree nodes in the **Visual Tree Explorer** panel of XamlPad:  
+ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] tool, XamlPad, provides an option for viewing and exploring the visual tree that corresponds to the currently defined XAML content. Click the **Show Visual Tree** button on the menu bar to display the visual tree. The following illustrates the expansion of XAML content into visual tree nodes in the **Visual Tree Explorer** panel of XamlPad:  
   
  ![Visual Tree Explorer panel in XamlPad](./media/wpf-graphics-rendering-overview/visual-tree-explorer.png)  
 
@@ -176,7 +176,7 @@ Diagram of logical tree
  ![Visual Profiler display output](./media/wpfperf-visualprofiler-04.png "WPFPerf_VisualProfiler_04")  
 Visual Profiler display output  
   
-<a name="visual_rendering_behavior"></a>   
+<a name="visual_rendering_behavior"></a>
 ## Visual Rendering Behavior  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] introduces several features that affect the rendering behavior of visual objects: retained mode graphics, vector graphics, and device independent graphics.  
   
@@ -208,7 +208,7 @@ Visual Profiler display output
 ### About Resolution and Device-Independent Graphics  
  There are two system factors that determine the size of text and graphics on your screen: resolution and DPI. Resolution describes the number of pixels that appear on the screen. As the resolution gets higher, pixels get smaller, causing graphics and text to appear smaller. A graphic displayed on a monitor set to 1024 x 768 will appear much smaller when the resolution is changed to 1600 x 1200.  
   
- The other system setting, DPI, describes the size of a screen inch in pixels. Most [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] systems have a DPI of 96, which means a screen inch is 96 pixels. Increasing the DPI setting makes the screen inch larger; decreasing the DPI makes the screen inch smaller. This means that a screen inch isn't the same size as a real-world inch; on most systems, it's probably not. As you increase the DPI, DPI-aware graphics and text become larger because you've increased the size of the screen inch. Increasing the DPI can make text easier to read, especially at high resolutions.  
+ The other system setting, DPI, describes the size of a screen inch in pixels. Most Windows systems have a DPI of 96, which means a screen inch is 96 pixels. Increasing the DPI setting makes the screen inch larger; decreasing the DPI makes the screen inch smaller. This means that a screen inch isn't the same size as a real-world inch; on most systems, it's probably not. As you increase the DPI, DPI-aware graphics and text become larger because you've increased the size of the screen inch. Increasing the DPI can make text easier to read, especially at high resolutions.  
   
  Not all applications are DPI-aware: some use hardware pixels as the primary unit of measurement; changing the system DPI has no effect on these applications. Many other applications use DPI-aware units to describe font sizes, but use pixels to describe everything else. Making the DPI too small or too large can cause layout problems for these applications, because the applications' text scales with the system's DPI setting, but the applications' UI does not. This problem has been eliminated for applications developed using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
@@ -217,7 +217,7 @@ Visual Profiler display output
  ![Graphics and text at different DPI settings](./media/graphicsmm-dpi-setting-examples.png "graphicsmm_dpi_setting_examples")  
 Graphics and text at different DPI settings  
   
-<a name="visualtreehelper_class"></a>   
+<a name="visualtreehelper_class"></a>
 ## VisualTreeHelper Class  
  The <xref:System.Windows.Media.VisualTreeHelper> class is a static helper class that provides low-level functionality for programming at the visual object level, which is useful in very specific scenarios, such as developing high-performance custom controls. In most case, the higher-level [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] framework objects, such as <xref:System.Windows.Controls.Canvas> and <xref:System.Windows.Controls.TextBlock>, offer greater flexibility and ease of use.  
   

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ESymbolReadingPolicy Enumeration
 Contains values that set the policy for reading program database (PDB) files.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eSymbolReadingNever,  
     eSymbolReadingAlways,  
@@ -39,10 +37,10 @@ typedef enum {
 |`eSymbolReadingNever`|Specifies that the debugger should never read PDB files.|  
   
 ## Remarks  
- The `ESymbolReadingPolicy` enumeration is used with the [ICLRDebugManager::SetSymbolReadingPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setsymbolreadingpolicy-method.md) method.  
+ The `ESymbolReadingPolicy` enumeration is used with the [ICLRDebugManager::SetSymbolReadingPolicy](iclrdebugmanager-setsymbolreadingpolicy-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -52,4 +50,4 @@ typedef enum {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Hosting Enumerations](hosting-enumerations.md)

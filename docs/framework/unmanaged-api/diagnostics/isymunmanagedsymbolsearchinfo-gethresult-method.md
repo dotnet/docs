@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6999dc3d-65d7-4bf6-bb0a-6efc0fc72588
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetHRESULT Method
 Gets the HRESULT.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHRESULT(  
     [out] HRESULT *phr);  
 ```  
@@ -40,4 +38,4 @@ HRESULT GetHRESULT(
   
 ## See also
 
-- [ISymUnmanagedSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)
+- [ISymUnmanagedSymbolSearchInfo Interface](isymunmanagedsymbolsearchinfo-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "Optional Parameters (Visual Basic)"
+title: "Optional Parameters"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameters [Visual Basic], optional"
@@ -61,5 +61,5 @@ Sub name(argument 1, , , argument 4)
 - [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)
 - [Parameter Arrays](./parameter-arrays.md)
 - [Procedure Overloading](./procedure-overloading.md)
-- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
-- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)
+- [Optional](../../../language-reference/modifiers/optional.md)
+- [ParamArray](../../../language-reference/modifiers/paramarray.md)

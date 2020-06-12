@@ -12,9 +12,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, backreference constructs"
   - "regular expressions, backreference constructs"
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
-author: "rpetrusha"
-ms.author: "ronpet"
-ms.custom: seodec18
 ---
 
 # Backreference Constructs in Regular Expressions
@@ -24,7 +21,7 @@ Backreferences provide a convenient way to identify a repeated character or subs
 > [!NOTE]
 > A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions](substitutions-in-regular-expressions.md).
 
-.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 ## Numbered Backreferences
 
@@ -90,7 +87,7 @@ If *name* is the string representation of a number, and no capturing group has t
 [!code-csharp[Ordinal.Backreference](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference6.cs)]
 [!code-vb[Ordinal.BackReference](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference6.vb)]
 
-However, if *name* is the string representation of a number and the capturing group in that position has been explicitly assigned a numeric name, the regular expression parser cannot identify the capturing group by its ordinal position. Instead, it throws an <xref:System.ArgumentException>.The only capturing group in the following example is named "2". Because the `\k` construct is used to define a backreference named "1", the regular expression parser is unable to identify the first capturing group and throws an exception.
+However, if *name* is the string representation of a number and the capturing group in that position has been explicitly assigned a numeric name, the regular expression parser cannot identify the capturing group by its ordinal position. Instead, it throws an <xref:System.ArgumentException>. The only capturing group in the following example is named "2". Because the `\k` construct is used to define a backreference named "1", the regular expression parser is unable to identify the first capturing group and throws an exception.
 
 [!code-csharp[Ordinal.Backreference](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference7.cs)]
 [!code-vb[Ordinal.BackReference](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference7.vb)]
@@ -136,4 +133,4 @@ An input string can match this regular expression even if the two decimal digits
 
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

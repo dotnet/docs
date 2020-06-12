@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "threading [.NET], thread pool"
   - "threading [.NET], pooling"
 ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # The managed thread pool
 

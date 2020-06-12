@@ -15,13 +15,11 @@ helpviewer_keywords:
 ms.assetid: aae9fb17-5d01-41da-9773-1b5b5b642d81
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntimeEx Function
-Enables unmanaged hosts to load the common language runtime (CLR) into a process. The [CorBindToRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md) and `CorBindToRuntimeEx` functions perform the same operation, but the `CorBindToRuntimeEx` function allows you to set flags to specify the behavior of the CLR.  
+Enables unmanaged hosts to load the common language runtime (CLR) into a process. The [CorBindToRuntime](corbindtoruntime-function.md) and `CorBindToRuntimeEx` functions perform the same operation, but the `CorBindToRuntimeEx` function allows you to set flags to specify the behavior of the CLR.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
  This function takes a set of parameters that allow a host to do the following:  
   
@@ -32,21 +30,21 @@ Enables unmanaged hosts to load the common language runtime (CLR) into a process
 - Control whether concurrent garbage collection or non-concurrent garbage collection is done.  
   
 > [!NOTE]
->  Concurrent garbage collection is not supported in applications running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).  
+> Concurrent garbage collection is not supported in applications running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).  
   
 - Control whether assemblies are loaded as domain-neutral.  
   
-- Obtain an interface pointer to an [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) that can be used to set additional options for configuring an instance of the CLR before it is started.  
+- Obtain an interface pointer to an [ICorRuntimeHost](icorruntimehost-interface.md) that can be used to set additional options for configuring an instance of the CLR before it is started.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeEx (  
-    [in]  LPCWSTR      pwszVersion,   
-    [in]  LPCWSTR      pwszBuildFlavor,   
-    [in]  DWORD        startupFlags,   
-    [in]  REFCLSID     rclsid,   
-    [in]  REFIID       riid,   
+    [in]  LPCWSTR      pwszVersion,
+    [in]  LPCWSTR      pwszBuildFlavor,
+    [in]  DWORD        startupFlags,
+    [in]  REFCLSID     rclsid,
+    [in]  REFIID       riid,
     [out] LPVOID FAR  *ppv  
 );  
 ```  
@@ -67,7 +65,7 @@ HRESULT CorBindToRuntimeEx (
  If `pwszBuildFlavor` is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor` is set to `svr`. However, if `pwszBuildFlavor` is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
   
  `startupFlags`  
- [in] A combination of values of the [STARTUP_FLAGS](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) enumeration. These flags control concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. The following values are valid:  
+ [in] A combination of values of the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration. These flags control concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. The following values are valid:  
   
 - `STARTUP_CONCURRENT_GC`  
   
@@ -95,10 +93,10 @@ HRESULT CorBindToRuntimeEx (
   
 - `STARTUP_ALWAYSFLOW_IMPERSONATION`  
   
- For descriptions of these flags, see the [STARTUP_FLAGS](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) enumeration.  
+ For descriptions of these flags, see the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration.  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of the requested interface from `rclsid`. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  
@@ -118,14 +116,14 @@ HRESULT CorBindToRuntimeEx (
   
 2. By changing the process default mode to the version 1 compatibility mode, where the <xref:System.Security.Principal.WindowsIdentity> object does not flow across any asynchronous point, regardless of the <xref:System.Threading.ExecutionContext> settings on the current thread. How you change the default mode depends on whether you use a managed executable or an unmanaged hosting interface to load the CLR:  
   
-    1. For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../../../docs/framework/configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
+    1. For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
   
     2. For unmanaged hosting interfaces, set the `STARTUP_LEGACY_IMPERSONATION` flag in the `startupFlags` parameter when calling the `CorBindToRuntimeEx` function.  
   
      The version 1 compatibility mode applies to the entire process and to all the application domains in the process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -135,9 +133,9 @@ HRESULT CorBindToRuntimeEx (
   
 ## See also
 
-- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
-- [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
-- [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)
-- [CorBindToRuntimeHost Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md)
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntime Function](corbindtoruntime-function.md)
+- [CorBindToRuntimeByCfg Function](corbindtoruntimebycfg-function.md)
+- [CorBindToRuntimeHost Function](corbindtoruntimehost-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

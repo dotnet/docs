@@ -1,5 +1,5 @@
 ---
-title: "How Culture Affects Strings in Visual Basic"
+title: "How Culture Affects Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "locale [Visual Basic], effect on strings"
@@ -19,7 +19,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
 ## Culture-Sensitive Functions  
  All of the Visual Basic string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
   
- The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting. Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system. For more information, see <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, and [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md).  
+ The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting. Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system. For more information, see <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, and [Type Conversion Functions](../../../language-reference/functions/type-conversion-functions.md).  
   
  The `Str` (converts numbers to strings) and `Val` (converts strings to numbers) functions do not use the application's culture information when converting between strings and numbers. Instead, they recognize only the period (.) as a valid decimal separator. The culturally-aware analogues of these functions are:  
   
@@ -41,7 +41,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
  [!code-vb[VbVbalrConcepts#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConcepts/VB/Class1.vb#1)]  
   
 > [!NOTE]
->  Date literals are always interpreted according to the English culture.  
+> Date literals are always interpreted according to the English culture.  
   
 ## Comparing Strings  
  There are two important situations where string comparisons are needed:  
@@ -75,5 +75,5 @@ This Help page discusses how Visual Basic uses culture information to perform st
 ## See also
 
 - <xref:System.Globalization.CultureInfo>
-- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
-- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Introduction to Strings in Visual Basic](introduction-to-strings.md)
+- [Type Conversion Functions](../../../language-reference/functions/type-conversion-functions.md)

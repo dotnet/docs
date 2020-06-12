@@ -24,7 +24,7 @@ The section discusses the general structure of a C# program, and includes the st
 
 - [Getting Started with C#](../../getting-started/index.md)
 
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Programming Guide](../index.md)
 
 - [C# Reference](../../language-reference/index.md)
 
@@ -36,4 +36,4 @@ The section discusses the general structure of a C# program, and includes the st
 
 ## See also
 
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Programming Guide](../index.md)

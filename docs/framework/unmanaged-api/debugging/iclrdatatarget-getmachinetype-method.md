@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5f1f9c61-3e3b-48b2-b111-a4395f7623a7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetMachineType Method
 Gets the identifier for the kind of instruction set that the target process is using.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMachineType (  
     [out] ULONG32     *machineType  
 );  
@@ -34,7 +32,7 @@ HRESULT GetMachineType (
  [out] A pointer to a value that indicates the instruction set that the target process is using. The returned `machineType` is one of the IMAGE_FILE_MACHINE constants, which are defined in the WinNT.h header file.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -44,4 +42,4 @@ HRESULT GetMachineType (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

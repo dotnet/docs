@@ -1,9 +1,9 @@
 ---
-title: "How to: Query for Characters in a String (LINQ) (C#)"
+title: "How to query for characters in a string (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 727a1be7-dbec-4ab8-b414-bc2d56feb6ff
 ---
-# How to: Query for Characters in a String (LINQ) (C#)
+# How to query for characters in a string (LINQ) (C#)
 Because the <xref:System.String> class implements the generic <xref:System.Collections.Generic.IEnumerable%601> interface, any string can be queried as a sequence of characters. However, this is not a common use of LINQ. For complex pattern matching operations, use the <xref:System.Text.RegularExpressions.Regex> class.  
   
 ## Example  
@@ -53,5 +53,5 @@ class QueryAString
   
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [How to: Combine LINQ Queries with Regular Expressions (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [How to combine LINQ queries with regular expressions (C#)](./how-to-combine-linq-queries-with-regular-expressions.md)

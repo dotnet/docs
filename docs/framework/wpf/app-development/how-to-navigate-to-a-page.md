@@ -23,7 +23,7 @@ This example illustrates several ways in which a page can be navigated to from a
  [!code-vb[HOWTONavigationSnippets#NavigateToPageCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTONavigationSnippets/visualbasic/mainwindow.xaml.vb#navigatetopagecode)]  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_uri#initcap#plural](../../../../includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](pack-uris-in-wpf.md).  
+> Uniform resource identifiers (URIs) can be either relative or absolute. For more information, see [Pack URIs in WPF](pack-uris-in-wpf.md).  
   
 ## See also
 

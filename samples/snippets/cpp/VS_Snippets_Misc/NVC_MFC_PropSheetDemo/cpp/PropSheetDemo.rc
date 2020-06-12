@@ -1,0 +1,295 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PropSheetDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#ifndef _AFXDLL\r\n"
+    "#include ""afxribbon.rc""      // Ribbon and control bars\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PropSheetDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPSHEETDEMO_DIALOG DIALOGEX 0, 0, 310, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PropSheetDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Display",IDC_PROP_SHEET1,244,23,50,14
+    PUSHBUTTON      "Display",IDC_PROP_SHEET2,244,68,50,14
+    PUSHBUTTON      "Display",IDC_PROP_SHEET3,244,118,50,14
+    PUSHBUTTON      "Display",IDC_PROP_SHEET4,244,175,50,14
+    PUSHBUTTON      "Close",IDCANCEL,253,253,50,14
+    GROUPBOX        "Simple property sheet: ",IDC_STATIC,7,7,296,39
+    LTEXT           "This is a simple, CPropertySheet-like window, which allows using of library controls on the property pages.",
+                    IDC_STATIC,15,23,216,18
+    GROUPBOX        "Tabs on left: ",IDC_STATIC,7,52,296,40
+    LTEXT           "Demonstrates how to create property sheet windows with the Outlook bar on the left side.",
+                    IDC_STATIC,15,68,216,21
+    GROUPBOX        "Tree on left: ",IDC_STATIC,7,102,296,49
+    LTEXT           "Demonstrates how to create property sheet windows with a tree control on the left side. In this style, developer can organize pages by categories.",
+                    IDC_STATIC,15,118,216,25
+    GROUPBOX        "OneNote-style tabs",IDC_STATIC,7,159,296,39
+    LTEXT           "Demonstrates how to replace the standard tab control by the new, cool control with colored tabs and icons.",
+                    IDC_STATIC,15,175,216,18
+    PUSHBUTTON      "Display",IDC_PROP_SHEET5,244,223,50,14
+    GROUPBOX        "List on left:",IDC_STATIC,7,207,296,39
+    LTEXT           "Demonstrates how to create property sheet windows with a Office 2007-style list control on the left side.",
+                    IDC_STATIC,15,223,216,18
+    CONTROL         "Enable Page &Header",IDC_HEADER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,252,82,10
+END
+
+IDD_PROPPAGE1 DIALOG DISCARDABLE  0, 0, 255, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Page 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Page 1",IDC_STATIC,91,53,24,8
+END
+
+IDD_PROPPAGE2 DIALOG DISCARDABLE  0, 0, 255, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Page 2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Page 2",IDC_STATIC,91,53,24,8
+END
+
+IDD_PROPPAGE3 DIALOG DISCARDABLE  0, 0, 253, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Page 3"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Page 3",IDC_STATIC,91,53,24,8
+END
+
+IDD_PROPPAGE4 DIALOG DISCARDABLE  0, 0, 254, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Page 4"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Page 4",IDC_STATIC,91,53,24,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PropSheetDemo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PropSheetDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PropSheetDemo.EXE\0"
+            VALUE "ProductName", "PropSheetDemo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPSHEETDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 15
+        VERTGUIDE, 231
+        VERTGUIDE, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+        HORZGUIDE, 23
+    END
+
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_PROPPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_PROPPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ICONS_LARGE         BITMAP  DISCARDABLE     "res\\icons_large.bmp"
+IDB_ICONS_SMALL         BITMAP  DISCARDABLE     "res\\icons_small.bmp"
+IDB_TREE_ICONS          BITMAP  DISCARDABLE     "res\\tree_icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About PropSheetDemo..."
+    IDS_PROPSHT_CAPTION     "Property Sheet"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PropSheetDemo Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PropSheetDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#ifndef _AFXDLL
+#include "afxribbon.rc"      // Ribbon and control bars
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

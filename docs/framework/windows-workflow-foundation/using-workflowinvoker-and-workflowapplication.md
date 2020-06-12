@@ -1,5 +1,6 @@
 ---
 title: "Using WorkflowInvoker and WorkflowApplication"
+description: This article describes workflow hosting using WorkflowInvoker and WorkflowApplication in Windows Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
 ---
@@ -16,7 +17,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  [!code-csharp[CFX_WorkflowInvokerExample#50](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#50)]  
   
 > [!NOTE]
->  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
+> The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
  <xref:System.Activities.WorkflowInvoker> also provides asynchronous versions of the invoke method. For more information, see <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> and <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
   
@@ -61,7 +62,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  [!code-csharp[CFX_WorkflowApplicationExample#21](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#21)]  
   
 > [!NOTE]
->  <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowInvoker> take a dictionary of input arguments and return a dictionary of `out` arguments. These dictionary parameters, properties, and return values are of type `IDictionary<string, object>`. The actual instance of the dictionary class that is passed in can be any class that implements `IDictionary<string, object>`. In these examples, `Dictionary<string, object>` is used. For more information about dictionaries, see <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.Dictionary%602>.  
+> <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowInvoker> take a dictionary of input arguments and return a dictionary of `out` arguments. These dictionary parameters, properties, and return values are of type `IDictionary<string, object>`. The actual instance of the dictionary class that is passed in can be any class that implements `IDictionary<string, object>`. In these examples, `Dictionary<string, object>` is used. For more information about dictionaries, see <xref:System.Collections.Generic.IDictionary%602> and <xref:System.Collections.Generic.Dictionary%602>.  
   
 ### Passing Data into a Running Workflow Using Bookmarks  
  Bookmarks are the mechanism by which an activity can passively wait to be resumed and are a mechanism for passing data into a running workflow instance. If an activity is waiting for data, it can create a <xref:System.Activities.Bookmark> and register a callback method to be called when the <xref:System.Activities.Bookmark> is resumed, as shown in the following example.  
@@ -79,8 +80,8 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  The following code example is like the previous example except that the active bookmarks are enumerated before the bookmark is resumed. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
   
  **What is your name?**  
-**BookmarkName: UserName - OwnerDisplayName: ReadLine**   
-**Steve**   
+**BookmarkName: UserName - OwnerDisplayName: ReadLine**
+**Steve**
 **Hello, Steve**
 
 [!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
@@ -88,7 +89,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial](getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
   
  **BookmarkName: EnterGuess - OwnerDisplayName: ReadInt**
- 
+
  [!code-csharp[CFX_WorkflowApplicationExample#2](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
   
 ## Summary  

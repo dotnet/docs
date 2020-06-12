@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: dda867b5-1050-49ba-b01c-fcc83b7a5617
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::ResetEnum Method
 Resets the specified enumerator to the specified position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetEnum (  
-   [in] HCORENUM    hEnum,   
+   [in] HCORENUM    hEnum,
    [in] ULONG       ulPos  
 );  
 ```  
@@ -38,7 +36,7 @@ HRESULT ResetEnum (
  [in] The new position at which to place the enumerator.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,5 +46,5 @@ HRESULT ResetEnum (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

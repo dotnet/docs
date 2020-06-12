@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "asynchronous programming, blocking applications"
   - "blocking application execution"
 ms.assetid: cc5e2834-a65b-4df8-b750-7bdb79997fee
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,7 +17,7 @@ Applications that cannot continue to do other work while waiting for the results
   
 - Call the asynchronous operations **End**_OperationName_ method. This approach is demonstrated in this topic.  
   
-- Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin**_OperationName_ method. For an example that demonstrates this approach, see [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md).  
+- Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the <xref:System.IAsyncResult> returned by the asynchronous operation's **Begin**_OperationName_ method. For an example that demonstrates this approach, see [Blocking Application Execution Using an AsyncWaitHandle](blocking-application-execution-using-an-asyncwaithandle.md).  
   
  Applications that use the **End**_OperationName_ method to block until an asynchronous operation is complete will typically call the **Begin**_OperationName_ method, perform any work that can be done without the results of the operation, and then call **End**_OperationName_.  
   
@@ -31,5 +29,5 @@ Applications that cannot continue to do other work while waiting for the results
   
 ## See also
 
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
-- [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)
+- [Event-based Asynchronous Pattern Overview](event-based-asynchronous-pattern-overview.md)

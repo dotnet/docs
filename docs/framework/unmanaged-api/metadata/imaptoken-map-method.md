@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMapToken::Map Method
 Maps a relationship between the assemblies using metadata signatures.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Map (  
-    [in]  mdToken tkImp,   
+    [in]  mdToken tkImp,
     [in]  mdToken tkEmit  
 );  
 ```  
@@ -41,7 +39,7 @@ HRESULT Map (
  When the token re-map occurs during a merge, the original token is scoped in the imported (source) metadata scope and the new token is scoped in the emitted (target) metadata scope.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -51,4 +49,4 @@ HRESULT Map (
   
 ## See also
 
-- [IMapToken Interface](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)
+- [IMapToken Interface](imaptoken-interface.md)

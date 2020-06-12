@@ -6,7 +6,7 @@ ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
 
 # SqlClient Streaming Support
 
-Streaming support between SQL Server and an application (new in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]) supports unstructured data on the server (documents, images, and media files). A SQL Server database can store binary large objects (BLOBs), but retrieving BLOBS can use a lot of memory.
+Streaming support between SQL Server and an application (new in .NET Framework 4.5) supports unstructured data on the server (documents, images, and media files). A SQL Server database can store binary large objects (BLOBs), but retrieving BLOBS can use a lot of memory.
 
 Streaming support to and from SQL Server simplifies writing applications that stream data, without having to fully load the data into memory, resulting in fewer memory overflow exceptions.
 
@@ -73,7 +73,7 @@ The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.I
 
 ## Sample -- Streaming from SQL Server
 
-Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:
+Use the following Transact-SQL to create the sample database:
 
 ```sql
 CREATE DATABASE [Demo]
@@ -96,9 +96,9 @@ The sample shows how to do the following:
 
 - Avoid blocking a user-interface thread by providing an asynchronous way to retrieve large files.
 
-- Transfer a large text file from SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+- Transfer a large text file from SQL Server in .NET Framework 4.5.
 
-- Transfer a large XML file from SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+- Transfer a large XML file from SQL Server in .NET Framework 4.5.
 
 - Retrieve data from SQL Server.
 
@@ -295,7 +295,7 @@ namespace StreamingFromServer {
 
 ## Sample -- Streaming to SQL Server
 
-Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:
+Use the following Transact-SQL to create the sample database:
 
 ```sql
 CREATE DATABASE [Demo2]
@@ -318,9 +318,9 @@ GO
 
 The sample shows how to do the following:
 
-- Transferring a large BLOB to SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+- Transferring a large BLOB to SQL Server in .NET Framework 4.5.
 
-- Transferring a large text file to SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+- Transferring a large text file to SQL Server in .NET Framework 4.5.
 
 - Using the new asynchronous feature to transfer a large BLOB.
 
@@ -519,4 +519,4 @@ namespace StreamingFromServerToAnother {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

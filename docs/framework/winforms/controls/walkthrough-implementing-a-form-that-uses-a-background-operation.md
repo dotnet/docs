@@ -18,7 +18,7 @@ ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
 ---
 # Walkthrough: Implementing a Form That Uses a Background Operation
 
-If you have an operation that will take a long time to complete, and you do not want your user interface (UI) to stop responding or "hang," you can use the <xref:System.ComponentModel.BackgroundWorker> class to execute the operation on another thread.
+If you have an operation that will take a long time to complete, and you do not want your user interface (UI) to stop responding or to block, you can use the <xref:System.ComponentModel.BackgroundWorker> class to execute the operation on another thread.
 
 This walkthrough illustrates how to use the <xref:System.ComponentModel.BackgroundWorker> class to perform time-consuming computations "in the background," while the user interface remains responsive.  When you are through, you will have an application that computes Fibonacci numbers asynchronously. Even though computing a large Fibonacci number can take a noticeable amount of time, the main UI thread will not be interrupted by this delay, and the form will be responsive during the calculation.
 

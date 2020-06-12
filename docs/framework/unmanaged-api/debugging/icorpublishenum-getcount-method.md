@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d228f684-2be3-4029-93ae-31fe02213c1f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum::GetCount Method
 Gets the number of items in the enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  
@@ -34,7 +32,7 @@ HRESULT GetCount (
  [out] A pointer to the number of items in the enumeration.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -44,4 +42,4 @@ HRESULT GetCount (
   
 ## See also
 
-- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+- [ICorPublishEnum Interface](icorpublishenum-interface.md)

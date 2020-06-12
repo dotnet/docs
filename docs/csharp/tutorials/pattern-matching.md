@@ -2,6 +2,7 @@
 title: Use pattern matching features to extend data types
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 03/13/2019
+ms-technology: csharp-whats-new
 ms.custom: mvc
 ---
 # Tutorial: Using pattern matching features to extend data types
@@ -11,13 +12,14 @@ C# 7 introduced basic pattern matching features. Those features are extended in 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Recognize situations where pattern matching should be used.
-> * Use pattern matching expressions to implement behavior based on types and property values.
-> * Combine pattern matching with other techniques to create complete algorithms.
+>
+> - Recognize situations where pattern matching should be used.
+> - Use pattern matching expressions to implement behavior based on types and property values.
+> - Combine pattern matching with other techniques to create complete algorithms.
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with the latest [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -29,11 +31,11 @@ The classic object-oriented design would call for creating types in your applica
 
 In this tutorial, you'll create and explore an application that takes incoming data from several external sources for a single scenario. You'll see how **pattern matching** provides an efficient way to consume and process that data in ways that weren't part of the original system.
 
-Consider a major metro area that is using tolls and peak time pricing to manage traffic. You write an application that calculates tolls for a vehicle based on its type. Later enhancements incorporate pricing based on the number of occupants in the vehicle. Further enhancements add pricing based on the time and the day of the week.
+Consider a major metropolitan area that is using tolls and peak time pricing to manage traffic. You write an application that calculates tolls for a vehicle based on its type. Later enhancements incorporate pricing based on the number of occupants in the vehicle. Further enhancements add pricing based on the time and the day of the week.
 
 From that brief description, you may have quickly sketched out an object hierarchy to model this system. However, your data is coming from multiple sources like other vehicle registration management systems. These systems provide different classes to model that data and you don't have a single object model you can use. In this tutorial, you'll use these simplified classes to model for the vehicle data from these external systems, as shown in the following code:
 
-[!code-csharp[ExternalSystems](~/samples/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
+[!code-csharp[ExternalSystems](~/samples/snippets/csharp/tutorials/patterns/start/toll-calculator/ExternalSystems.cs)]
 
 You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/patterns/start) GitHub repository. You can see that the vehicle classes are from different systems, and are in different namespaces. No common base class, other than `System.Object` can be leveraged.
 
@@ -139,7 +141,7 @@ You're starting to see how patterns can help you create algorithms where the cod
 The toll authority wants to encourage vehicles to travel at maximum capacity. They've decided to charge more when vehicles have fewer passengers, and encourage full vehicles by offering lower pricing:
 
 - Cars and taxis with no passengers pay an extra $0.50.
-- Cars and taxis with two passengers get a 0.50 discount.
+- Cars and taxis with two passengers get a $0.50 discount.
 - Cars and taxis with three or more passengers get a $1.00 discount.
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
@@ -193,7 +195,12 @@ vehicle switch
 };
 ```
 
-The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks under 3000 lbs are given a $2.00 discount. That rule is implemented with the following code:
+The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they adjust the toll amount based on the weight class of the trucks as follows:
+
+- Trucks over 5000 lbs are charged an extra $5.00.
+- Light trucks under 3000 lbs are given a $2.00 discount.
+
+That rule is implemented with the following code:
 
 ```csharp
 vehicle switch
@@ -228,6 +235,9 @@ vehicle switch
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
     DeliveryTruck t => 10.00m,
+
+    { }     => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+    null    => throw new ArgumentNullException(nameof(vehicle))
 };
 ```
 
@@ -321,17 +331,17 @@ private static bool IsWeekDay(DateTime timeOfToll) =>
 
 That method works, but it's repetitious. You can simplify it, as shown in the following code:
 
-[!code-csharp[IsWeekDay](~/samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
+[!code-csharp[IsWeekDay](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#IsWeekDay)]
 
 Next, add a similar function to categorize the time into the blocks:
 
-[!code-csharp[GetTimeBand](~/samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#GetTimeBand)]
+[!code-csharp[GetTimeBand](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#GetTimeBand)]
 
 The previous method doesn't use pattern matching. It's clearer using a familiar cascade of `if` statements. You do add a private `enum` to convert each range of time to a discrete value.
 
 After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all 16 arms:
 
-[!code-csharp[FullTuplePattern](~/samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
+[!code-csharp[FullTuplePattern](~/samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#TuplePatternOne)]
 
 The above code works, but it can be simplified. All eight combinations for the weekend have the same toll. You can replace all eight with the following line:
 
@@ -364,7 +374,7 @@ public decimal PeakTimePremium(DateTime timeOfToll, bool inbound) =>
 
 Finally, you can remove the two rush hour times that pay the regular price. Once you remove those arms, you can replace the `false` with a discard (`_`) in the final switch arm. You'll have the following finished method:
 
-[!code-csharp[SimplifiedTuplePattern](../../../samples/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
+[!code-csharp[SimplifiedTuplePattern](../../../samples/snippets/csharp/tutorials/patterns/finished/toll-calculator/TollCalculator.cs#FinalTuplePattern)]
 
 This example highlights one of the advantages of pattern matching: the pattern branches are evaluated in order. If you rearrange them so that an earlier branch handles one of your later cases, the compiler warns you about the unreachable code. Those language rules made it easier to do the preceding simplifications with confidence that the code didn't change.
 

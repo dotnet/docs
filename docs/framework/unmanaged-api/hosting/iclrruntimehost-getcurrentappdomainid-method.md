@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 33800475-7815-4976-8aca-a1038761a2ef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::GetCurrentAppDomainId Method
 Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentAppDomainId(  
     [out] DWORD* pdwAppDomainId  
 );  
@@ -48,7 +46,7 @@ HRESULT GetCurrentAppDomainId(
  The `pdwAppDomainId` parameter is set to the value of the <xref:System.AppDomain.Id%2A> property of the <xref:System.AppDomain> in which the current thread is executing.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -60,4 +58,4 @@ HRESULT GetCurrentAppDomainId(
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainManager>
-- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)

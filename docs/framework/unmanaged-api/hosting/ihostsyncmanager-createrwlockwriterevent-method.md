@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateRWLockWriterEvent Method
 Creates an auto-reset event object for the implementation of a writer lock.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockWriterEvent (  
     [in]  SIZE_T cookie,  
     [out] IHostAutoEvent **ppEvent  
@@ -35,7 +33,7 @@ HRESULT CreateRWLockWriterEvent (
  [in] A cookie to associate with the auto-reset event.  
   
  `ppEvent`  
- [out] A pointer to the address of an [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md) instance, or null if the event object could not be created.  
+ [out] A pointer to the address of an [IHostAutoEvent](ihostautoevent-interface.md) instance, or null if the event object could not be created.  
   
 ## Return Value  
   
@@ -50,10 +48,10 @@ HRESULT CreateRWLockWriterEvent (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested event object.|  
   
 ## Remarks  
- The CLR calls the `CreateRWLockWriterEvent` method to get a reference to an `IHostAutoEvent` instance to use in its implementation of a writer lock. The host can use the specified cookie to determine which tasks are waiting on the lock by calling the iteration methods of the [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md) interface.  
+ The CLR calls the `CreateRWLockWriterEvent` method to get a reference to an `IHostAutoEvent` instance to use in its implementation of a writer lock. The host can use the specified cookie to determine which tasks are waiting on the lock by calling the iteration methods of the [ICLRSyncManager](iclrsyncmanager-interface.md) interface.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -63,7 +61,7 @@ HRESULT CreateRWLockWriterEvent (
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
-- [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostAutoEvent Interface](ihostautoevent-interface.md)
+- [IHostManualEvent Interface](ihostmanualevent-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

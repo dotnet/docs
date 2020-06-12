@@ -28,9 +28,9 @@ The following methods are some of the methods available in the interface.
 
 | Method                                                                                                                          | Description                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [StartEnumInstances](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-startenuminstances-method.md) | Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`. |
-| [EnumInstance](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-enuminstance-method.md)             | Enumerates the instances of this method definition.                                         |
-| [EndEnumInstances](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-endenuminstances-method.md)     | Releases the resources used by internal iterators used during instance enumeration.         |
+| [StartEnumInstances](ixclrdatamethoddefinition-startenuminstances-method.md) | Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`. |
+| [EnumInstance](ixclrdatamethoddefinition-enuminstance-method.md)             | Enumerates the instances of this method definition.                                         |
+| [EndEnumInstances](ixclrdatamethoddefinition-endenuminstances-method.md)     | Releases the resources used by internal iterators used during instance enumeration.         |
 
 ## Remarks
 
@@ -38,12 +38,12 @@ This interface lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](index.md)
+- [Debugging Interfaces](debugging-interfaces.md)

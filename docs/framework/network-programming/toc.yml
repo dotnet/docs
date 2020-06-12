@@ -40,9 +40,6 @@
     items:
     - name: HTTP
       href: http.md
-      items:
-      - name: HttpListener
-        href: httplistener.md
     - name: "How to: Access HTTP-Specific Properties"
       href: how-to-access-http-specific-properties.md
     - name: Managing Connections
@@ -145,7 +142,7 @@
         href: how-to-set-a-location-based-cache-policy-for-an-application.md
       - name: "How to: Set the Default Time-Based Cache Policy for an Application"
         href: how-to-set-the-default-time-based-cache-policy-for-an-application.md
-      - name: "How to: Customize a Time-Based Cache Policy"
+      - name: "How to: customize a time-based cache policy"
         href: how-to-customize-a-time-based-cache-policy.md
       - name: "How to: Set Cache Policy for a Request"
         href: how-to-set-cache-policy-for-a-request.md

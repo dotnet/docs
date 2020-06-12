@@ -1,5 +1,5 @@
 ---
-title: "Packaging and deploying custom My extensions (Visual Basic)"
+title: "Packaging and deploying custom My extensions"
 ms.date: 08/14/2018
 helpviewer_keywords:
   - "My namespace [Visual Basic], customizing"
@@ -23,7 +23,7 @@ This topic discusses how to package a custom `My` extension as a hidden item tem
 
 ## Create a My namespace extension
 
-The first step in creating a deployment package for a custom `My` extension is to create the extension as a single code file. For details and guidance about how to create a custom `My` extension, see [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md).
+The first step in creating a deployment package for a custom `My` extension is to create the extension as a single code file. For details and guidance about how to create a custom `My` extension, see [Extending the My Namespace in Visual Basic](extending-the-my-namespace.md).
 
 ## Export a My namespace extension as an item template
 
@@ -97,7 +97,7 @@ To install the template, you can copy the compressed folder (*.zip* file) to the
 
 ## See also
 
-- [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)
-- [Extending the Visual Basic Application Model](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)
-- [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
+- [Extending the My Namespace in Visual Basic](extending-the-my-namespace.md)
+- [Extending the Visual Basic Application Model](extending-the-visual-basic-application-model.md)
+- [Customizing Which Objects are Available in My](customizing-which-objects-are-available-in-my.md)
 - [My Extensions Page, Project Designer](/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)

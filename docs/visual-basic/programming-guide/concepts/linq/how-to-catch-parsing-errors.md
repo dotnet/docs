@@ -1,5 +1,5 @@
 ---
-title: "How to: Catch Parsing Errors (Visual Basic)"
+title: "How to: Catch Parsing Errors"
 ms.date: 07/20/2015
 ms.assetid: 22e9068e-ea58-447b-816e-cd1852c11787
 ---
@@ -29,7 +29,7 @@ End Try
   
  When you run this code, it throws the following exception:  
   
-```  
+```console  
 The 'Contacts' start tag on line 1 does not match the end tag of 'Contcts'. Line 5, position 13.  
 ```  
   
@@ -37,4 +37,4 @@ The 'Contacts' start tag on line 1 does not match the end tag of 'Contcts'. Line
   
 ## See also
 
-- [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)
+- [Parsing XML (Visual Basic)](parsing-xml.md)

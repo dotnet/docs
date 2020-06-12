@@ -18,7 +18,7 @@ items:
 - title: Run your first C# program
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. Select the **Enter focus mode** button. Then, type the following code block in the interactive window and select **Run**:
 
     ```csharp
     Console.WriteLine("Hello World!");
@@ -27,9 +27,6 @@ items:
     Congratulations! You've run your first C# program. It's a simple program that prints the message "Hello World!". It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
     Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Declare and use variables
   durationInMinutes: 3
@@ -77,7 +74,7 @@ items:
     Console.WriteLine("Hello " + aFriend);
     ```
 
-    Click **Run** again to see the results.
+    Select **Run** again to see the results.
 
     You've been using `+` to build strings from **variables** and **constant** strings. There's a better way.
     You can place a variable between `{` and `}` characters to tell C# to replace that text with the value of the variable.
@@ -91,10 +88,7 @@ items:
     Console.WriteLine($"Hello {aFriend}");
     ```
 
-    Click **Run** again to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    Select **Run** again to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
 - title: Work with strings
   durationInMinutes: 5
@@ -123,9 +117,6 @@ items:
     > makes suggestions for what you can do. Type a `.` after the `d` in `firstFriend`. You'll see a list of suggestions for properties
     > and methods you can use.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Do more with strings
   durationInMinutes: 5
   content: |
@@ -148,6 +139,8 @@ items:
     Console.WriteLine($"[{trimmedGreeting}]");
     ```
 
+    The square brackets `[` and `]` help visualize what the `Trim`, `TrimStart` and `TrimEnd` methods do. The brackets show where whitespace starts and ends.
+
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string but doesn't change the original message.
 
     There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor before. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
@@ -166,9 +159,6 @@ items:
     Console.WriteLine(sayHello.ToLower());
     ```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Search strings
   durationInMinutes: 10
   content: |
@@ -185,7 +175,7 @@ items:
 
     The <xref:System.String.Contains%2A> method returns a **boolean** value which tells you if the
     string you were searching for was found. A **boolean** stores either a `true` or a
-    `false` value. You'll learn more about **boolean** values
+    `false` value. When displayed as text output, they are capitalized: `True` and `False`, respectively. You'll learn more about **boolean** values
     in a later lesson.
 
     ***Challenge***
@@ -199,9 +189,6 @@ items:
     > ends with a period, you must check for a string that ends with a period.
 
     You should get `true` for starting with "You" and ending with "hello" and false for starting with or ending with "goodbye".
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Complete challenge
   durationInMinutes: 3
@@ -217,11 +204,8 @@ items:
     Console.WriteLine(songLyrics.EndsWith("goodbye"));
     ```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - content: |
-    You've completed the "Hello C#" introduction to C# tutorial. You can click the **Numbers in C#** link below to start the next interactive tutorial, or you can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials.
+    You've completed the "Hello C#" introduction to C# tutorial. You can select the **Numbers in C#** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     For further reading on the `string` type:
     - [C# Programming Guide](../../programming-guide/index.md) topic on [strings](../../programming-guide/strings/index.md).

@@ -18,16 +18,14 @@ helpviewer_keywords:
   - "data storage using isolated storage, options"
   - "isolation"
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Isolated Storage
 <a name="top"></a>
-For [!INCLUDE[desktop_appname](../../../includes/desktop-appname-md.md)] apps, isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. Standardization provides other benefits as well. Administrators can use tools designed to manipulate isolated storage to configure file storage space, set security policies, and delete unused data. With isolated storage, your code no longer needs unique paths to specify safe locations in the file system, and data is protected from other applications that only have isolated storage access. Hard-coded information that indicates where an application's storage area is located is unnecessary.
+For desktop apps, isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. Standardization provides other benefits as well. Administrators can use tools designed to manipulate isolated storage to configure file storage space, set security policies, and delete unused data. With isolated storage, your code no longer needs unique paths to specify safe locations in the file system, and data is protected from other applications that only have isolated storage access. Hard-coded information that indicates where an application's storage area is located is unnecessary.
 
 > [!IMPORTANT]
-> Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.
+> Isolated storage is not available for Windows 8.x Store apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.
 
 This topic contains the following sections:
 
@@ -114,7 +112,7 @@ Sometimes it is helpful to verify a change to isolated storage by using the file
 |Windows 2000, Windows XP, Windows Server 2003  (upgrade from Windows NT 4.0)|Roaming-enabled stores =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Local Settings\Application Data|
 |Windows 2000  - clean installation (and upgrades from Windows 98 and Windows NT 3.51)|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
 |Windows XP, Windows Server 2003 - clean installation (and upgrades from Windows 2000 and Windows 98)|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
-|[!INCLUDE[win8](../../../includes/win8-md.md)], Windows 7, Windows Server 2008, Windows Vista|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Roaming<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Local|
+|Windows 8, Windows 7, Windows Server 2008, Windows Vista|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Roaming<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Local|
 
 <a name="isolated_storage_tasks"></a>
 
@@ -162,16 +160,16 @@ Many applications use a database to store and isolate data, in which case one or
 
 |Title|Description|
 |-----------|-----------------|
-|[Types of Isolation](../../../docs/standard/io/types-of-isolation.md)|Describes the different types of isolation.|
-|[How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
-|[How to: Enumerate Stores for Isolated Storage](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
-|[How to: Delete Stores in Isolated Storage](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
-|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](../../../docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
-|[How to: Create Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
-|[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
-|[How to: Read and Write to Files in Isolated Storage](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
-|[How to: Delete Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
-|[File and Stream I/O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
+|[Types of Isolation](types-of-isolation.md)|Describes the different types of isolation.|
+|[How to: Obtain Stores for Isolated Storage](how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
+|[How to: Enumerate Stores for Isolated Storage](how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
+|[How to: Delete Stores in Isolated Storage](how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
+|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
+|[How to: Create Files and Directories in Isolated Storage](how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
+|[How to: Find Existing Files and Directories in Isolated Storage](how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
+|[How to: Read and Write to Files in Isolated Storage](how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
+|[How to: Delete Files and Directories in Isolated Storage](how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
+|[File and Stream I/O](index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
 
 <a name="reference"></a>
 

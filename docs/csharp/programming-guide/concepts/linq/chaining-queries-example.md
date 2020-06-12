@@ -58,7 +58,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source >abc<  
 AppendString: source >ABC<  
 Main: str >ABC!!!<  
@@ -78,8 +78,8 @@ Main: str >GHI!!!<
   
  The next topic in this tutorial illustrates intermediate materialization:  
   
-- [Intermediate Materialization (C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)  
+- [Intermediate Materialization (C#)](./intermediate-materialization.md)  
   
 ## See also
 
-- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
+- [Tutorial: Chaining Queries Together (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

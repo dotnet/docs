@@ -14,11 +14,11 @@ An attached property is a concept defined by XAML. An attached property is inten
 
 ## Prerequisites <a name="prerequisites"></a>
 
-This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand XAML and know how to write WPF applications.
+This article assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this article, you should also understand XAML and know how to write WPF applications.
 
 ## Why Use Attached Properties <a name="attached_properties_usage"></a>
 
-One purpose of an attached property is to allow different child elements to specify unique values for a property that is actually defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel>, rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.
+One purpose of an attached property is to allow different child elements to specify unique values for a property that's defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel> rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.
 
 ## Attached Properties in XAML <a name="attached_properties_xaml"></a>
 
@@ -28,13 +28,13 @@ The following is an example of how you can set <xref:System.Windows.Controls.Doc
 
 [!code-xaml[PropertiesOvwSupport#APBasicUsage](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]
 
-Note that the usage is somewhat similar to a static property; you always reference the type <xref:System.Windows.Controls.DockPanel> that owns and registers the attached property, rather than referring to any instance specified by name.
+The usage is somewhat similar to a static property; you always reference the type <xref:System.Windows.Controls.DockPanel> that owns and registers the attached property, rather than referring to any instance specified by name.
 
-Also, because an attached property in XAML is an attribute that you set in markup, only the set operation has any relevance. You cannot directly get a property in XAML, although there are some indirect mechanisms for comparing values, such as triggers in styles (for details, see [Styling and Templating](../controls/styling-and-templating.md)).
+Also, because an attached property in XAML is an attribute that you set in markup, only the set operation has any relevance. You cannot directly get a property in XAML, although there are some indirect mechanisms for comparing values, such as triggers in styles (for details, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)).
 
 ### Attached Property Implementation in WPF
 
-In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], most of the attached properties that exist on WPF types that are related to UI presentation are implemented as dependency properties. Attached properties are a XAML concept, whereas dependency properties are a WPF concept. Because WPF attached properties are dependency properties, they support dependency property concepts such as property metadata, and default values from that property metadata.
+In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], most of the UI-related attached properties on WPF types are implemented as dependency properties. Attached properties are a XAML concept, whereas dependency properties are a WPF concept. Because WPF attached properties are dependency properties, they support dependency property concepts such as property metadata, and default values from that property metadata.
 
 ## How Attached Properties Are Used by the Owning Type <a name="howused"></a>
 
@@ -54,14 +54,14 @@ The most typical scenario where WPF defines an attached property is when a paren
 
 ## Attached Properties in Code <a name="attached_properties_code"></a>
 
-Attached properties in WPF do not have the typical [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get_PropertyName_** and **Set_PropertyName_**. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
+Attached properties in WPF do not have the typical CLR "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the CLR namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get_PropertyName_** and **Set_PropertyName_**. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
 
 The following example shows how you can set an attached property in code. In this example, `myCheckBox` is an instance of the <xref:System.Windows.Controls.CheckBox> class.
 
 [!code-csharp[PropertiesOvwSupport#APCode](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml.cs#apcode)]
 [!code-vb[PropertiesOvwSupport#APCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page4.xaml.vb#apcode)]
 
-Similar to the XAML case, if `myCheckBox` had not already been added as a child element of `myDockPanel` by the third line of code, the fourth line of code would not raise an exception, but the property value would not interact with a <xref:System.Windows.Controls.DockPanel> parent and thus would do nothing. Only a <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> value set on a child element combined with the presence of a <xref:System.Windows.Controls.DockPanel> parent element will cause an effective behavior in the rendered application. (In this case, you could set the attached property, then attach to the tree. Or you could attach to the tree then set the attached property. Either action order provides the same result.)
+Similar to the XAML case, if `myCheckBox` had not already been added as a child element of `myDockPanel` by the fourth line of code, the fifth line of code would not raise an exception, but the property value would not interact with a <xref:System.Windows.Controls.DockPanel> parent and thus would do nothing. Only a <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> value set on a child element combined with the presence of a <xref:System.Windows.Controls.DockPanel> parent element will cause an effective behavior in the rendered application. (In this case, you could set the attached property, then attach to the tree. Or you could attach to the tree then set the attached property. Either action order provides the same result.)
 
 ## Attached Property Metadata <a name="attached_properties_metadata"></a>
 
@@ -85,10 +85,10 @@ As mentioned before, you should register as an attached property if you want to 
 
 If your class is defining the attached property strictly for use on other types, then the class does not have to derive from <xref:System.Windows.DependencyObject>. But you do need to derive from <xref:System.Windows.DependencyObject> if you follow the overall WPF model of having your attached property also be a dependency property.
 
-Define your attached property as a dependency property by declaring a `public static readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established WPF pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static **Get_PropertyName_** and **Set_PropertyName_** methods as accessors for the attached property; failing to do this will result in the property system being unable to use your attached property.
+Define your attached property as a dependency property by declaring a `public static readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established WPF pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static **Get_PropertyName_** and **Set_PropertyName_** methods as accessors for the attached property; failing to do this results in the property system being unable to use your attached property.
 
 > [!NOTE]
-> If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Expression Blend.
+> If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Blend for Visual Studio.
 
 #### The Get Accessor
 
@@ -117,7 +117,7 @@ The following example shows the dependency property registration (using the <xre
 
 #### Attached Property Attributes
 
-WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] that are intended to provide information about attached properties to reflection processes, and to typical users of reflection and property information such as designers. Because attached properties have a type of unlimited scope, designers need a way to avoid overwhelming users with a global list of all the attached properties that are defined in a particular technology implementation that uses XAML. The [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] that WPF defines for attached properties can be used to scope the situations where a given attached property should be shown in a properties window. You might consider applying these attributes for your own custom attached properties also. The purpose and syntax of the [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] is described on the appropriate reference pages:
+WPF defines several .NET attributes that are intended to provide information about attached properties to reflection processes, and to typical users of reflection and property information such as designers. Because attached properties have a type of unlimited scope, designers need a way to avoid overwhelming users with a global list of all the attached properties that are defined in a particular technology implementation that uses XAML. The .NET attributes that WPF defines for attached properties can be used to scope the situations where a given attached property should be shown in a properties window. You might consider applying these attributes for your own custom attached properties also. The purpose and syntax of the .NET attributes is described on the appropriate reference pages:
 
 - <xref:System.Windows.AttachedPropertyBrowsableAttribute>
 
@@ -140,5 +140,5 @@ WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includ
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Register an Attached Property](how-to-register-an-attached-property.md)

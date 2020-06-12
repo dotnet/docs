@@ -14,16 +14,14 @@ helpviewer_keywords:
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSymVarFlag Enumeration
 Indicates whether a variable is compiler-generated.  
   
 ## Syntax  
   
-```  
-typedef enum CorSymVarFlag   
+```cpp  
+typedef enum CorSymVarFlag
 {  
     VAR_IS_COMP_GEN = 1  
 } CorSymVarFlag;  
@@ -40,4 +38,4 @@ typedef enum CorSymVarFlag
   
 ## See also
 
-- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)

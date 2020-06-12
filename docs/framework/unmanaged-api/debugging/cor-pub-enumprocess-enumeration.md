@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_PUB_ENUMPROCESS Enumeration
 Identifies the type of process to be enumerated.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PUB_MANAGEDONLY    = 0x00000001  
 } COR_PUB_ENUMPROCESS;  
@@ -38,7 +36,7 @@ typedef enum {
  The current version of the unmanaged debugging API enumerates only managed processes.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -48,4 +46,4 @@ typedef enum {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 622a4d3c-0425-4c54-a7e4-0735377cdad2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetClassFromToken Method
 Gets the class specified by the metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromToken(  
     [in]  mdTypeDef        typeDef,  
     [out] ICorDebugClass **ppClass  
@@ -38,7 +36,7 @@ HRESULT GetClassFromToken(
  [out] A pointer to the address of an ICorDebugClass object that represents the class.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

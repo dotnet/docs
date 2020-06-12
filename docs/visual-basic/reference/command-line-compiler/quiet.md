@@ -16,7 +16,7 @@ Prevents the compiler from displaying code for syntax-related errors and warning
 
 ## Syntax
 
-```
+```console
 -quiet
 ```
 
@@ -45,7 +45,7 @@ C:\projects\vb2.vb(3) : error BC30451: 'x' is not declared. It may be inaccessib
 
 Compiled with `-quiet`, the compiler outputs only the following:
 
-```
+```console
 E:\test\t2.vb(3) : error BC30451: Name 'x' is not declared.
 ```
 
@@ -56,11 +56,11 @@ E:\test\t2.vb(3) : error BC30451: Name 'x' is not declared.
 
 The following code compiles `T2.vb` and does not display code for syntax-related compiler diagnostics:
 
-```
+```console
 vbc -quiet t2.vb
 ```
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Copy of a File in a Different Directory in Visual Basic"
+title: "How to: Create a Copy of a File in a Different Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]"
@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 88e2145c-d414-45a5-ad03-6f5d58ecca26
 ---
 # How to: Create a Copy of a File in a Different Directory in Visual Basic
+
 The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its parameters provide the ability to overwrite existing files, rename the file, show the progress of the operation, and allow the user to cancel the operation.  
   
 ### To copy a text file to another folder  
@@ -18,6 +19,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
      [!code-vb[VbFileIOMisc#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#24)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception to be thrown:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
@@ -53,7 +55,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>
-- [How to: Copy Files with a Specific Pattern to a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
-- [How to: Create a Copy of a File in the Same Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md)
-- [How to: Copy a Directory to Another Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md)
-- [How to: Rename a File](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)
+- [How to: Copy Files with a Specific Pattern to a Directory](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
+- [How to: Create a Copy of a File in the Same Directory](how-to-create-a-copy-of-a-file-in-the-same-directory.md)
+- [How to: Copy a Directory to Another Directory](how-to-copy-a-directory-to-another-directory.md)
+- [How to: Rename a File](how-to-rename-a-file.md)

@@ -1,5 +1,5 @@
 ---
-title: "Event Handlers Overview (Windows Forms)"
+title: "Event Handlers Overview"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -21,7 +21,7 @@ End Sub
 ```  
   
 ```csharp  
-private void button1_Click(object sender, System.EventArgs e)   
+private void button1_Click(object sender, System.EventArgs e)
 {  
   
 }  

@@ -1,9 +1,9 @@
 ---
-title: "How to: Retrieve a Single Child Element (LINQ to XML) (C#)"
+title: "How to retrieve a single child element (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: ce37db9e-76fa-46eb-b4cc-e8f32d22ad90
 ---
-# How to: Retrieve a Single Child Element (LINQ to XML) (C#)
+# How to retrieve a single child element (LINQ to XML) (C#)
 This topic explains how to retrieve a single child element, given the name of the child element. When you know the name of the child element and that there is only one element that has this name, it can be convenient to retrieve just one element, instead of a collection.  
   
  The <xref:System.Xml.Linq.XContainer.Element%2A> method returns the first child <xref:System.Xml.Linq.XElement> with the specified <xref:System.Xml.Linq.XName>.  
@@ -15,7 +15,7 @@ This topic explains how to retrieve a single child element, given the name of th
   
  The Visual Basic example shows using array indexer notation to retrieve a single element.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](./sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml");  
@@ -30,9 +30,9 @@ Console.WriteLine(e);
 ```  
   
 ## Example  
- The following example shows the same code for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same code for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](./sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
 ```csharp  
 XElement po = XElement.Load("PurchaseOrderInNamespace.xml");  
@@ -49,4 +49,4 @@ Console.WriteLine(e);
   
 ## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

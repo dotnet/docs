@@ -6,10 +6,10 @@ ms.date: 10/23/2018
 # Become familiar with the .NET development tools
 
 The first step in running a tutorial on your machine is to set up a development environment.
-The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
-up your local development environment on Mac, PC or Linux.
+The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting
+up your local development environment on Windows, Linux, or macOS.
 
-Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net/download) and
+Alternatively, you can install the [.NET Core SDK](https://dotnet.microsoft.com/download) and
 [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Basic application development flow
@@ -46,7 +46,7 @@ This tutorial assumes that you have finished the [Hello world](hello-world.yml) 
 ## [List collection](arrays-and-collections.md)
 
 The [List collection](arrays-and-collections.md) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. 
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you have finished the lessons listed above.
 

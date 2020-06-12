@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
 topic_type:
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # IMethodMalloc::Alloc Method
@@ -43,7 +41,7 @@ PVOID Alloc (
  The `Alloc` method should be used in conjunction with the [ICorProfilerInfo::SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) method.
 
 ## Requirements
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** CorProf.idl, CorProf.h
 

@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for System.Net Classes"
+description: Follow these recommendations to use the classes contained in System.Net to their best advantage in .NET Framework programming.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "sending data, best practices"
@@ -28,4 +29,4 @@ The following recommendations will help you use the classes contained in <xref:S
   
 ## See also
 
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Network Programming in the .NET Framework](index.md)

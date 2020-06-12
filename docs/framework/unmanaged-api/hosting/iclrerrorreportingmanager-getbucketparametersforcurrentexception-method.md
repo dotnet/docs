@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a13ec8a6-8e18-4acb-8054-77f5b1a0e0b9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRErrorReportingManager::GetBucketParametersForCurrentException Method
 Gets the Watson bucket for the current exception on the calling thread.  
@@ -25,7 +23,7 @@ Gets the Watson bucket for the current exception on the calling thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBucketParametersForCurrentException(  
     [out] BucketParameters *pParams  
 );  
@@ -33,10 +31,10 @@ HRESULT GetBucketParametersForCurrentException(
   
 ## Parameters  
  `pParams`  
- [out] A pointer to a [BucketParameters](../../../../docs/framework/unmanaged-api/hosting/bucketparameters-structure.md) structure that contains error data for the exception.  
+ [out] A pointer to a [BucketParameters](bucketparameters-structure.md) structure that contains error data for the exception.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -46,4 +44,4 @@ HRESULT GetBucketParametersForCurrentException(
   
 ## See also
 
-- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)

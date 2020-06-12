@@ -1,5 +1,5 @@
 ---
-title: "SyncLock Statement (Visual Basic)"
+title: "SyncLock Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.SyncLock"
@@ -15,7 +15,7 @@ Acquires an exclusive lock for a statement block before executing the block.
   
 ## Syntax  
   
-```  
+```vb  
 SyncLock lockobject  
     [ block ]  
 End SyncLock  
@@ -46,7 +46,7 @@ End SyncLock
   
      You cannot change the value of `lockobject` while executing a `SyncLock` block. The mechanism requires that the lock object remain unchanged.  
   
-- You can't use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in a `SyncLock` block.  
+- You can't use the [Await](../operators/await-operator.md) operator in a `SyncLock` block.  
   
 ## Behavior  
   

@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # NukeDownloadedCache Function
 Deletes the common language runtime (CLR) download cache.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NukeDownloadedCache();  
 ```  
   
@@ -35,7 +33,7 @@ HRESULT NukeDownloadedCache();
  The CLR download cache is the area where strong-named assemblies that are downloaded from a URL are stored for possible reuse.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -45,6 +43,6 @@ HRESULT NukeDownloadedCache();
   
 ## See also
 
-- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)
-- [GetHistoryFileDirectory Function](../../../../docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [CreateHistoryReader Function](createhistoryreader-function.md)
+- [GetHistoryFileDirectory Function](gethistoryfiledirectory-function.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

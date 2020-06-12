@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9634e995-d46d-4397-ab66-cc5781d11e4e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SYMLINEDELTA Structure
 Provides information to the symbol handler about methods that were moved as a result of edits.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _SYMLINEDELTA  
     {  
         mdMethodDef  mdMethod;  
@@ -42,4 +40,4 @@ typedef struct _SYMLINEDELTA
   
 ## See also
 
-- [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+- [Diagnostics Symbol Store Structures](diagnostics-symbol-store-structures.md)

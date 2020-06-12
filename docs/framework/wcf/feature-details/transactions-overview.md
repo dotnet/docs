@@ -22,7 +22,7 @@ Transactions provide a way to group a set of actions or operations into a single
   
  WCF implements support for the WS-AtomicTransaction (WS-AT) protocol that enables WCF applications to flow transactions to interoperable applications, such as interoperable Web services built using third-party technology. WCF also implements support for the OLE Transactions protocol, which can be used in scenarios where you do not need interop functionality to enable transaction flow.  
   
- You can use an application configuration file to configure bindings to enable or disable transaction flow, as well as set the desired transaction protocol on a binding. In addition, you can set transaction time-outs at the service level using the configuration file. For more information, see [Enabling Transaction Flow](../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
+ You can use an application configuration file to configure bindings to enable or disable transaction flow, as well as set the desired transaction protocol on a binding. In addition, you can set transaction time-outs at the service level using the configuration file. For more information, see [Enabling Transaction Flow](enabling-transaction-flow.md).  
   
  Transaction attributes in the <xref:System.ServiceModel> namespace allow you to do the following:  
   
@@ -32,9 +32,9 @@ Transactions provide a way to group a set of actions or operations into a single
   
 - Use the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes on a contract method to require, allow or deny transaction flow.  
   
- For more information, see [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md).  
+ For more information, see [ServiceModel Transaction Attributes](servicemodel-transaction-attributes.md).  
   
 ## See also
 
-- [ServiceModel Transaction Attributes](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-attributes.md)
-- [Enabling Transaction Flow](../../../../docs/framework/wcf/feature-details/enabling-transaction-flow.md)
+- [ServiceModel Transaction Attributes](servicemodel-transaction-attributes.md)
+- [Enabling Transaction Flow](enabling-transaction-flow.md)

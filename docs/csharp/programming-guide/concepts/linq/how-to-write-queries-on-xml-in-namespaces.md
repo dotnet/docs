@@ -1,9 +1,9 @@
 ---
-title: "How to: Write Queries on XML in Namespaces (C#)"
+title: "How to write queries on XML in namespaces (C#)"
 ms.date: 07/20/2015
 ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
 ---
-# How to: Write Queries on XML in Namespaces (C#)
+# How to write queries on XML in namespaces (C#)
 To write a query on XML that is in a namespace, you must use <xref:System.Xml.Linq.XName> objects that have the correct namespace.  
   
  For C#, the most common approach is to initialize an <xref:System.Xml.Linq.XNamespace> using a string that contains the URI, then use the addition operator overload to combine the namespace with the local name.  
@@ -33,7 +33,7 @@ foreach (XElement el in c1)
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 2  
 3  
@@ -64,7 +64,7 @@ foreach (XElement el in c1)
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 2  
 3  
@@ -72,4 +72,4 @@ foreach (XElement el in c1)
   
 ## See also
 
-- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md)

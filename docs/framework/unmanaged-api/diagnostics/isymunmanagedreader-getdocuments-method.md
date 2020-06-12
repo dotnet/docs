@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e3b73a3f-d089-4101-a9a9-5e0765d05b61
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetDocuments Method
 Returns an array of all the documents defined in the symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocuments (  
     [in]  ULONG32  cDocs,  
     [out] ULONG32  *pcDocs,  
@@ -49,4 +47,4 @@ HRESULT GetDocuments (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

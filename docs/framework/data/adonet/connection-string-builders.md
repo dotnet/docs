@@ -1,5 +1,6 @@
 ---
 title: "Connection String Builders"
+description: Learn about the connection string builder classes used for different providers in ADO.NET, all of which inherit from DbConnectionStringBuilder.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -42,7 +43,7 @@ Console.WriteLine(builder.ConnectionString);
   
  The output shows that the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> handled this correctly by escaping the extra value in double quotation marks instead of appending it to the connection string as a new key/value pair.  
   
-```  
+```output  
 data source=(local);Integrated Security=True;  
 initial catalog="AdventureWorks;NewValue=Bad"  
 ```  
@@ -53,7 +54,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
  One of the overloaded constructors for a connection string builder takes a <xref:System.String> as an argument, which enables you to supply a partial connection string that can then be completed from user input. The partial connection string can be stored in a configuration file and retrieved at run time.  
   
 > [!NOTE]
->  The <xref:System.Configuration> namespace allows programmatic access to configuration files that use the <xref:System.Web.Configuration.WebConfigurationManager> for Web applications and the <xref:System.Configuration.ConfigurationManager> for Windows applications. For more information about working with connection strings and configuration files, see [Connection Strings and Configuration Files](../../../../docs/framework/data/adonet/connection-strings-and-configuration-files.md).  
+> The <xref:System.Configuration> namespace allows programmatic access to configuration files that use the <xref:System.Web.Configuration.WebConfigurationManager> for Web applications and the <xref:System.Configuration.ConfigurationManager> for Windows applications. For more information about working with connection strings and configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).  
   
 ### Example  
  This example demonstrates retrieving a partial connection string from a configuration file and completing it by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A>, <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserID%2A>, and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> properties of the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. The configuration file is defined as follows.  
@@ -61,20 +62,20 @@ initial catalog="AdventureWorks;NewValue=Bad"
 ```xml  
 <connectionStrings>  
   <clear/>  
-  <add name="partialConnectString"   
+  <add name="partialConnectString"
     connectionString="Initial Catalog=Northwind;"  
     providerName="System.Data.SqlClient" />  
 </connectionStrings>  
 ```  
   
 > [!NOTE]
->  You must set a reference to the `System.Configuration.dll` in your project for the code to run.  
+> You must set a reference to the `System.Configuration.dll` in your project for the code to run.  
   
  [!code-csharp[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/CS/source.cs#1)]
  [!code-vb[DataWorks SqlConnectionStringBuilder.UserNamePwd#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlConnectionStringBuilder.UserNamePwd/VB/source.vb#1)]  
   
 ## See also
 
-- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
-- [Privacy and Data Security](../../../../docs/framework/data/adonet/privacy-and-data-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Strings](connection-strings.md)
+- [Privacy and Data Security](privacy-and-data-security.md)
+- [ADO.NET Overview](ado-net-overview.md)

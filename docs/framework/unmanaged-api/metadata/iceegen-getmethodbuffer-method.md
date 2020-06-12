@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetMethodBuffer Method
 Gets a buffer of the appropriate size for the method at the specified relative virtual address.  
@@ -25,7 +23,7 @@ Gets a buffer of the appropriate size for the method at the specified relative v
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodBuffer (  
     [in]  ULONG       RVA,  
     [out] UCHAR       **lpBuffer  
@@ -40,7 +38,7 @@ HRESULT GetMethodBuffer (
  [out] A pointer to the returned buffer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,4 +48,4 @@ HRESULT GetMethodBuffer (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

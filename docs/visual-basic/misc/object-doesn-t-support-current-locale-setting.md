@@ -1,5 +1,5 @@
 ---
-title: "Object doesn't support current locale setting (Visual Basic)"
+title: "Object doesn't support current locale setting"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID447"
@@ -14,4 +14,4 @@ You tried to access an object that does not support the locale setting for the c
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

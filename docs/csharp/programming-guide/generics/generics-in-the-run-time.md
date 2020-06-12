@@ -1,6 +1,5 @@
 ---
 title: "Generics in the Run Time - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], at run time"
@@ -44,6 +43,6 @@ When a generic type or method is compiled into Microsoft intermediate language (
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [C# Programming Guide](../index.md)
+- [Introduction to Generics](./index.md)
+- [Generics](../../../standard/generics/index.md)

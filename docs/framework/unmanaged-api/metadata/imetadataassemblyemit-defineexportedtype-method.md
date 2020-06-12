@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: fad01d7a-3178-4c8c-9f0a-4641e3701c9b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::DefineExportedType Method
 Creates an `ExportedType` structure containing metadata for the specified exported type, and returns the associated metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineExportedType (  
     [in]  LPCWSTR             szName,  
-    [in]  mdToken             tkImplementation,   
+    [in]  mdToken             tkImplementation,
     [in]  mdTypeDef           tkTypeDef,  
     [in]  DWORD               dwExportedTypeFlags,  
     [out] mdExportedType      *pmdct  
@@ -52,7 +50,7 @@ HRESULT DefineExportedType (
  [in] A token to the metadata that specifies the type to be exported. This value is entered in the `TypeDef` table in the file that implements the type and is relevant only if that file is in this assembly.  
   
  `dwExportedTypeFlags`  
- [in] A bitwise combination of [CorTypeAttr](../../../../docs/framework/unmanaged-api/metadata/cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.  
+ [in] A bitwise combination of [CorTypeAttr](cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.  
   
  `pmdct`  
  [out] A pointer to the returned metadata token that indicates the exported type.  
@@ -61,7 +59,7 @@ HRESULT DefineExportedType (
  An `ExportedType` metadata structure must be defined for each type that is exposed by this assembly and that is implemented in a module other than the one containing the manifest.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -71,4 +69,4 @@ HRESULT DefineExportedType (
   
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

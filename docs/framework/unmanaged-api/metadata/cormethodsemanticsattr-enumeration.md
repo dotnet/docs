@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodSemanticsAttr Enumeration
 Contains values that describe the relationship between a method and an associated property or event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodSemanticsAttr {  
   
     msSetter    =   0x0001,  
@@ -47,7 +45,7 @@ typedef enum CorMethodSemanticsAttr {
 |`msFire`|Specifies that the method raises an event.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -55,4 +53,4 @@ typedef enum CorMethodSemanticsAttr {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

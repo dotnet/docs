@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::OpenThreadToken Method
 Opens the discretionary access token associated with the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenThreadToken (  
-    [in]  DWORD    dwDesiredAccess,   
-    [in]  BOOL     bOpenAsSelf,   
+    [in]  DWORD    dwDesiredAccess,
+    [in]  BOOL     bOpenAsSelf,
     [out] HANDLE   *phThreadToken  
 );  
 ```  
@@ -58,7 +56,7 @@ HRESULT OpenThreadToken (
  The `HANDLE` type is not COM-compliant, that is, its size is specific to the operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -68,5 +66,5 @@ HRESULT OpenThreadToken (
   
 ## See also
 
-- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
-- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+- [IHostSecurityContext Interface](ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](ihostsecuritymanager-interface.md)

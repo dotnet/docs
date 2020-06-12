@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging Interfaces
 This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).  
@@ -47,7 +45,7 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  Provides methods to work with arrays, pointers, function pointers, and ByRef types. This interface is an extension of the `ICorDebugAppDomain` interface.  
   
  [ICorDebugAppDomain3 Interface](icordebugappdomain3-interface.md)\
- Provides methods to work with the [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types in an application domain. This interface is an extension of the `ICorDebugAppDomain` and `ICorDebugAppDomain2` interfaces.  
+ Provides methods to work with the Windows Runtime types in an application domain. This interface is an extension of the `ICorDebugAppDomain` and `ICorDebugAppDomain2` interfaces.  
   
  [ICorDebugAppDomain4 Interface](icordebugappdomain4-interface.md)\
  Logically extends the [ICorDebugAppDomain](icordebugappdomain-interface.md) interface to get a managed object from a COM callable wrapper.  
@@ -435,13 +433,13 @@ This section describes the unmanaged interfaces that handle the debugging of a p
 
  [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)\
  Provides methods for querying information about a method definition.
- 
+
  [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)\
  Provides methods for querying information about a method instance.
- 
+
  [IXCLRDataModule Interface](ixclrdatamodule-interface.md)\
  Provides methods for querying information about a loaded module.
- 
+
  [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)\
  Provides methods for querying information about a process.
   

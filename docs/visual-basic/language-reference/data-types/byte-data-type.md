@@ -1,5 +1,5 @@
 ---
-title: "Byte Data Type (Visual Basic)"
+title: "Byte Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Byte"
@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 ---
 # Byte data type (Visual Basic)
+
 Holds unsigned 8-bit (1-byte) integers that range in value from 0 through 255.
 
 ## Remarks
@@ -61,7 +62,7 @@ Dim number As Byte = &H_6A
 ## See also
 
 - <xref:System.Byte?displayProperty=nameWithType>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Data Types](index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

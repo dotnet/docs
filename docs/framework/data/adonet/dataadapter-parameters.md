@@ -1,5 +1,6 @@
 ---
 title: "DataAdapter Parameters"
+description: Learn about the properties of DbDataAdapter that return data from a data source and manage changes to the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,12 +13,12 @@ The <xref:System.Data.Common.DbDataAdapter> has four properties that are used to
  When you update a row at the data source, you call the UPDATE statement, which uses a unique identifier to identify the row in the table to be updated. The unique identifier is typically the value of a primary key field. The UPDATE statement uses parameters that contain both the unique identifier and the columns and values to be updated, as shown in the following Transact-SQL statement.  
   
 ```sql
-UPDATE Customers SET CompanyName = @CompanyName   
+UPDATE Customers SET CompanyName = @CompanyName
   WHERE CustomerID = @CustomerID  
 ```  
   
 > [!NOTE]
->  The syntax for parameter placeholders depends on the data source. This example shows placeholders for a SQL Server data source. Use question mark (?) placeholders for <xref:System.Data.OleDb> and <xref:System.Data.Odbc> parameters.  
+> The syntax for parameter placeholders depends on the data source. This example shows placeholders for a SQL Server data source. Use question mark (?) placeholders for <xref:System.Data.OleDb> and <xref:System.Data.Odbc> parameters.  
   
  In this Visual Basic example, the `CompanyName` field is updated with the value of the `@CompanyName` parameter for the row where `CustomerID` equals the value of the `@CustomerID` parameter. The parameters retrieve information from the modified row using the <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> property of the <xref:System.Data.SqlClient.SqlParameter> object. The following are the parameters for the previous sample UPDATE statement. The code assumes that the variable `adapter` represents a valid <xref:System.Data.SqlClient.SqlDataAdapter> object.  
   
@@ -33,7 +34,7 @@ parameter.SourceVersion = DataRowVersion.Original
  The `Add` method of the `Parameters` collection takes the name of the parameter, the data type, the size (if applicable to the type), and the name of the <xref:System.Data.Common.DbParameter.SourceColumn%2A> from the `DataTable`. Notice that the <xref:System.Data.Common.DbParameter.SourceVersion%2A> of the `@CustomerID` parameter is set to `Original`. This guarantees that the existing row in the data source is updated if the value of the identifying column or columns has been changed in the modified <xref:System.Data.DataRow>. In that case, the `Original` row value would match the current value at the data source, and the `Current` row value would contain the updated value. The `SourceVersion` for the `@CompanyName` parameter is not set and uses the default, `Current` row value.  
   
 > [!NOTE]
->  For both the `Fill` operations of the `DataAdapter` and the `Get` methods of the `DataReader`, the .NET Framework type is inferred from the type returned from the .NET Framework data provider. The inferred .NET Framework types and accessor methods for Microsoft SQL Server, OLE DB, and ODBC data types are described in [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md).  
+> For both the `Fill` operations of the `DataAdapter` and the `Get` methods of the `DataReader`, the .NET Framework type is inferred from the type returned from the .NET Framework data provider. The inferred .NET Framework types and accessor methods for Microsoft SQL Server, OLE DB, and ODBC data types are described in [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md).  
   
 ## Parameter.SourceColumn, Parameter.SourceVersion  
  The `SourceColumn` and `SourceVersion` may be passed as arguments to the `Parameter` constructor, or set as properties of an existing `Parameter`. The `SourceColumn` is the name of the <xref:System.Data.DataColumn> from the <xref:System.Data.DataRow> where the value of the `Parameter` will be retrieved. The `SourceVersion` specifies the `DataRow` version that the `DataAdapter` uses to retrieve the value.  
@@ -71,13 +72,13 @@ Dim deleteSQL As String = "DELETE FROM Customers WHERE CustomerID = ?"
 ```  
   
 ```csharp  
-string selectSQL =   
+string selectSQL =
   "SELECT CustomerID, CompanyName FROM Customers " +  
   "WHERE CountryRegion = ? AND City = ?";  
-string insertSQL =   
+string insertSQL =
   "INSERT INTO Customers (CustomerID, CompanyName) " +  
   "VALUES (?, ?)";  
-string updateSQL =   
+string updateSQL =
   "UPDATE Customers SET CustomerID = ?, CompanyName = ? " +  
   "WHERE CustomerID = ? ";  
 string deleteSQL = "DELETE FROM Customers WHERE CustomerID = ?";  
@@ -91,7 +92,7 @@ string deleteSQL = "DELETE FROM Customers WHERE CustomerID = ?";
   
 ```vb  
 ' Assumes that connection is a valid OleDbConnection object.  
-Dim adapter As OleDbDataAdapter = New OleDbDataAdapter   
+Dim adapter As OleDbDataAdapter = New OleDbDataAdapter
   
 Dim selectCMD AS OleDbCommand = New OleDbCommand(selectSQL, connection)  
 adapter.SelectCommand = selectCMD  
@@ -156,13 +157,13 @@ adapter.Fill(customers, "Customers");
 ```  
   
 > [!NOTE]
->  If a parameter name is not supplied for a parameter, the parameter is given an incremental default name of Parameter*N* *,* starting with "Parameter1". We recommend that you avoid the Parameter*N* naming convention when you supply a parameter name, because the name that you supply might conflict with an existing default parameter name in the `ParameterCollection`. If the supplied name already exists, an exception is thrown.  
+> If a parameter name is not supplied for a parameter, the parameter is given an incremental default name of Parameter*N* *,* starting with "Parameter1". We recommend that you avoid the Parameter*N* naming convention when you supply a parameter name, because the name that you supply might conflict with an existing default parameter name in the `ParameterCollection`. If the supplied name already exists, an exception is thrown.  
   
 ## See also
 
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
-- [Modifying Data with Stored Procedures](../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)
-- [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
+- [Modifying Data with Stored Procedures](modifying-data-with-stored-procedures.md)
+- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)
+- [ADO.NET Overview](ado-net-overview.md)

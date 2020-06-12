@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: da278a29-dc2e-4bf7-96ce-801bdc4d7025
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame::GetFrameType Method
 Gets the type of this internal frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrameType (  
     [out] CorDebugInternalFrameType  *pType  
 );  
@@ -37,7 +35,7 @@ HRESULT GetFrameType (
  The internal frame type will never be STUBFRAME_NONE. Debuggers should gracefully ignore unrecognized internal frame types.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

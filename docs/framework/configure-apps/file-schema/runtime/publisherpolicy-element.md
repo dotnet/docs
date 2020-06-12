@@ -10,17 +10,15 @@ helpviewer_keywords:
   - "container tags, <publisherPolicy> element"
   - "<publisherPolicy> element"
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<publisherPolicy> Element
 Specifies whether the runtime applies publisher policy.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
-\<publisherPolicy>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<publisherPolicy>**  
   
 ## Syntax  
   
@@ -45,13 +43,16 @@ Specifies whether the runtime applies publisher policy.
 |`no`|Does not apply publisher policy.|  
   
 ### Child Elements  
- None.  
+
+None.  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
+|`assemblyBinding`|Contains information about assembly version redirection and the locations of assemblies.|  
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
+|`dependentAssembly`|Encapsulates binding policy and assembly location for each assembly. Use one `<dependentAssembly>` element for each assembly.|  
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
@@ -59,7 +60,7 @@ Specifies whether the runtime applies publisher policy.
   
  The default setting for the **apply** attribute is **yes**. Setting the **apply** attribute to **no** overrides any previous **yes** settings for an assembly.  
   
- Permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](../../../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) element in the application configuration file. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. For more information, see [Assembly Binding Redirection Security Permission](../../../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md).  
+ Permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) element in the application configuration file. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. For more information, see [Assembly Binding Redirection Security Permission](../../assembly-binding-redirection-security-permission.md).  
   
 ## Example  
  The following example turns off publisher policy for the assembly, `myAssembly`.  
@@ -81,7 +82,7 @@ Specifies whether the runtime applies publisher policy.
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

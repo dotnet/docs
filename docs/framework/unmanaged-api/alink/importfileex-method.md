@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ad276f3f-b303-46ac-97e0-66a377adaa4f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ImportFileEx Method
 Imports indicated assembly or unbound module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportFileEx(  
     LPCWSTR pszFilename,  
     LPCWSTR pszTargetName,  
@@ -45,13 +43,13 @@ HRESULT ImportFileEx(
  If TRUE, ImportTypes is used, otherwise importing must be performed manually.  
   
  `dwOpenFlags`  
- Flags to be passed along to [OpenScope Method](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscope-method.md).  
+ Flags to be passed along to [OpenScope Method](../metadata/imetadatadispenser-openscope-method.md).  
   
  `pImportToken`  
  Receives ID of the file being imported.  
   
  `ppAssemblyScope`  
- Receives assembly import scope [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface. Is set to NULL if file is not an assembly.  
+ Receives assembly import scope [IMetaDataAssemblyImport Interface](../metadata/imetadataassemblyimport-interface.md) interface. Is set to NULL if file is not an assembly.  
   
  `pdwCountOfScopes`  
  Receives count of imported files and/or scopes.  
@@ -64,6 +62,6 @@ HRESULT ImportFileEx(
   
 ## See also
 
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

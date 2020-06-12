@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0a65e2a4-5bb6-496c-ae6f-40474426b5a6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::EnableJITDebugging Method
 Controls whether the just-in-time (JIT) compiler preserves debugging information for methods within this module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableJITDebugging(  
     [in] BOOL bTrackJITInfo,  
     [in] BOOL bAllowJitOpts  
@@ -41,7 +39,7 @@ HRESULT EnableJITDebugging(
  JIT debugging is enabled by default for all modules that are loaded when the debugger is active. Programmatically enabling or disabling the settings overrides global settings.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -9,14 +9,14 @@ By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] techniques for customizing these operations include the following.  
   
 ## Loading Options  
- In your queries, you can control how much data related to your main target is retrieved when you connect to the database. This functionality is implemented largely by using <xref:System.Data.Linq.DataLoadOptions>. For more information, see [Deferred versus Immediate Loading](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md).  
+ In your queries, you can control how much data related to your main target is retrieved when you connect to the database. This functionality is implemented largely by using <xref:System.Data.Linq.DataLoadOptions>. For more information, see [Deferred versus Immediate Loading](deferred-versus-immediate-loading.md).  
   
 ## Partial Methods  
- In its default mapping, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides partial methods to help you implement your business logic. For more information, see [Adding Business Logic By Using Partial Methods](../../../../../../docs/framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md).  
+ In its default mapping, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides partial methods to help you implement your business logic. For more information, see [Adding Business Logic By Using Partial Methods](adding-business-logic-by-using-partial-methods.md).  
   
 ## Stored Procedures and User-Defined Functions  
- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the use of stored procedures and user-defined functions. Stored procedures are frequently used to customize operations. For more information, see [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md).  
+ [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the use of stored procedures and user-defined functions. Stored procedures are frequently used to customize operations. For more information, see [Stored Procedures](stored-procedures.md).  
   
 ## See also
 
-- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+- [Customizing Insert, Update, and Delete Operations](customizing-insert-update-and-delete-operations.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f783ebc3-e952-46e6-9325-14dd2c666f21
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::GetVirtualMethod Method
 `GetVirtualMethod` is not implemented in this version of the .NET Framework.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVirtualMethod (  
     [in]  mdMemberRef        memberRef,  
     [out] ICorDebugFunction  **ppFunction  

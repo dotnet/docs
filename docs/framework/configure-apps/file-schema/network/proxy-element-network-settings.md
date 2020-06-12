@@ -1,5 +1,6 @@
 ---
 title: "<proxy> Element (Network Settings)"
+description: The <proxy> network settings element defines the proxy server options in the .NET Framework. This article includes an example.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/proxy"
@@ -11,17 +12,17 @@ ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 ---
 # \<proxy> Element (Network Settings)
 Defines a proxy server.  
-  
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
-\<proxy>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<proxy>**
+
 ## Syntax  
   
 ```xml  
 <proxy
-  autoDetect="true|false|unspecified" 
+  autoDetect="true|false|unspecified"
   bypassonlocal="true|false|unspecified"
   proxyaddress="uriString"
   scriptLocation="uriString"
@@ -49,7 +50,7 @@ Defines a proxy server.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
+|[defaultProxy](defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
   
 ## Text Value  
   
@@ -87,4 +88,4 @@ Defines a proxy server.
 ## See also
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

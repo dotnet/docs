@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e744b8-a6fb-4d9c-a971-8babc875d8f0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataError::OnError Method
 Provides notification of errors that occur during the metadata merge.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnError (  
-    [in] HRESULT   hrError,   
+    [in] HRESULT   hrError,
     [in] mdToken   token  
 );  
 ```  
@@ -38,7 +36,7 @@ HRESULT OnError (
  [in] The metadata token of the code object that was being merged when the error occurred.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,4 +46,4 @@ HRESULT OnError (
   
 ## See also
 
-- [IMetaDataError Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-interface.md)
+- [IMetaDataError Interface](imetadataerror-interface.md)

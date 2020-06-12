@@ -1,5 +1,6 @@
 ---
 title: "<servicePointManager> Element (Network Settings)"
+description: The <servicePointManager> network settings element configures connections to network resources options in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#servicePointManager"
@@ -11,12 +12,12 @@ ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 ---
 # \<servicePointManager> Element (Network Settings)
 Configures connections to network resources.  
-  
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<servicePointManager>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<servicePointManager>**
+
 ## Syntax  
   
 ```xml  
@@ -53,7 +54,7 @@ Configures connections to network resources.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[Settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[Settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
   
@@ -64,4 +65,4 @@ Configures connections to network resources.
 
 - <xref:System.Net.ServicePointManager>
 - <xref:System.Net.Security.EncryptionPolicy>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

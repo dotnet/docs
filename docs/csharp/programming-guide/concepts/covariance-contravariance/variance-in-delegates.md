@@ -19,7 +19,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
 ```csharp  
 // Matching signature.  
-public static First ASecondRFirst(Second first)  
+public static First ASecondRFirst(Second second)  
 { return new First(); }  
   
 // The return type is more derived.  
@@ -30,7 +30,7 @@ public static Second ASecondRSecond(Second second)
 public static First AFirstRFirst(First first)  
 { return new First(); }  
   
-// The return type is more derived   
+// The return type is more derived
 // and the argument type is less derived.  
 public static Second AFirstRSecond(First first)  
 { return new Second(); }  
@@ -39,10 +39,10 @@ public static Second AFirstRSecond(First first)
  The following code example illustrates the implicit conversion between the method signature and the delegate type.  
   
 ```csharp  
-// Assigning a method with a matching signature   
+// Assigning a method with a matching signature
 // to a non-generic delegate. No conversion is necessary.  
 SampleDelegate dNonGeneric = ASecondRFirst;  
-// Assigning a method with a more derived return type   
+// Assigning a method with a more derived return type
 // and less derived argument type to a non-generic delegate.  
 // The implicit conversion is used.  
 SampleDelegate dNonGenericConversion = AFirstRSecond;  
@@ -50,13 +50,13 @@ SampleDelegate dNonGenericConversion = AFirstRSecond;
 // Assigning a method with a matching signature to a generic delegate.  
 // No conversion is necessary.  
 SampleGenericDelegate<Second, First> dGeneric = ASecondRFirst;  
-// Assigning a method with a more derived return type   
+// Assigning a method with a more derived return type
 // and less derived argument type to a generic delegate.  
 // The implicit conversion is used.  
 SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;  
 ```  
   
- For more examples, see [Using Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
+ For more examples, see [Using Variance in Delegates (C#)](./using-variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ## Variance in Generic Type Parameters  
  In .NET Framework 4 or later you can enable implicit conversion between delegates, so that generic delegates that have different types specified by generic type parameters can be assigned to each other, if the types are inherited from each other as required by variance.  
@@ -75,7 +75,7 @@ public static void Test()
   
     // You can assign delegates to each other,  
     // because the type T is declared covariant.  
-    SampleGenericDelegate <Object> dObject = dString;             
+    SampleGenericDelegate <Object> dObject = dString;
 }  
 ```  
   
@@ -92,7 +92,7 @@ public static void Test()
   
     // You can assign the dObject delegate  
     // to the same lambda expression as dString delegate  
-    // because of the variance support for   
+    // because of the variance support for
     // matching method signatures with delegate types.  
     SampleGenericDelegate<Object> dObject = () => " ";  
   
@@ -103,8 +103,9 @@ public static void Test()
 }  
 ```  
   
-### Generic Delegates That Have Variant Type Parameters in the .NET Framework  
- .NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
+### Generic Delegates That Have Variant Type Parameters in .NET
+
+.NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
   
 - `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
   
@@ -116,7 +117,7 @@ public static void Test()
   
 - The <xref:System.Converter%602> delegate  
   
- For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
+ For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ### Declaring Variant Type Parameters in Generic Delegates  
  If a generic delegate has covariant or contravariant generic type parameters, it can be referred to as a *variant generic delegate*.  
@@ -134,7 +135,7 @@ public delegate void DContravariant<in A>(A a);
 ```  
   
 > [!IMPORTANT]
->  `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
+> `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   
@@ -186,12 +187,12 @@ public static void Test()
     // DInvariant<Object> dObject = dInt;  
     // DInvariant<long> dLong = dInt;  
     // DVariant<Object> dVariantObject = dVariantInt;  
-    // DVariant<long> dVariantLong = dVariantInt;              
+    // DVariant<long> dVariantLong = dVariantInt;
 }  
 ```  
   
 ## See also
 
-- [Generics](~/docs/standard/generics/index.md)
-- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
-- [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+- [Generics](../../../../standard/generics/index.md)
+- [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md)
+- [How to combine delegates (Multicast Delegates)](../../delegates/how-to-combine-delegates-multicast-delegates.md)

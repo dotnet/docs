@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component"
+title: Display Error Icons for Form Validation with ErrorProvider Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -71,7 +71,7 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
        }  
     ```  
   
-     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.textBox1.Validating += new  

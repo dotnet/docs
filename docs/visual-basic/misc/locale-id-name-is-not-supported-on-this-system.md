@@ -15,4 +15,4 @@ You are attempting to use `VbStrConv`, but your system does not support the spec
 ## See also
 
 - <xref:System.Globalization>
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/globalizing-and-localizing-applications)

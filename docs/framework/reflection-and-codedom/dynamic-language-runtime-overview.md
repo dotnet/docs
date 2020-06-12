@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "DLR"
   - "IronRuby"
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamic Language Runtime Overview
 
@@ -47,7 +45,7 @@ Examples of languages developed by using the DLR include the following:
 
 - IronPython. Available as open-source software from the [GitHub](https://github.com/IronLanguages/ironpython2) Web site.
 
-- IronRuby. Available as open-source software from the [RubyForge](https://go.microsoft.com/fwlink/?LinkId=141044) Web site.
+- IronRuby. Available as open-source software from the [IronRuby](http://ironruby.net/) website.
 
 ## Primary DLR Advantages
  The DLR provides the following advantages.
@@ -70,7 +68,7 @@ Examples of languages developed by using the DLR include the following:
 ## DLR Architecture
  The following illustration shows the architecture of the dynamic language runtime.
 
- ![Dynamic Language Runtime Architecture Overview](../../../docs/framework/reflection-and-codedom/media/dlr-archoverview.png "DLR_ArchOverview")
+ ![Dynamic Language Runtime Architecture Overview](./media/dlr-archoverview.png "DLR_ArchOverview")
 DLR architecture
 
  The DLR adds a set of services to the CLR for better supporting dynamic languages. These services include the following:
@@ -90,7 +88,7 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>
-- [Common Language Runtime](../../../docs/standard/clr.md)
+- [Common Language Runtime](../../standard/clr.md)
 - [Expression Trees (C#)](../../csharp/programming-guide/concepts/expression-trees/index.md)
 - [Expression Trees (Visual Basic)](../../visual-basic/programming-guide/concepts/expression-trees/index.md)
-- [Walkthrough: Creating and Using Dynamic Objects](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
+- [Walkthrough: Creating and Using Dynamic Objects](../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

@@ -1,13 +1,12 @@
 ---
 title: ".NET Framework Cryptography Model"
+description: Review implementations of usual cryptographic algorithms in .NET. Learn the extensible cryptography model of object inheritance, stream design, & configuration.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "cryptography [.NET Framework], model"
   - "encryption [.NET Framework], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Framework Cryptography Model
 
@@ -29,19 +28,15 @@ Using this pattern of derived classes, it is easy to add a new algorithm or a ne
 
 As an example of the different implementations available for an algorithm, consider symmetric algorithms. The base for all symmetric algorithms is <xref:System.Security.Cryptography.SymmetricAlgorithm>, which is inherited by the following algorithms:
 
-1. <xref:System.Security.Cryptography.Aes>
-
-2. <xref:System.Security.Cryptography.DES>
-
-3. <xref:System.Security.Cryptography.RC2>
-
-4. <xref:System.Security.Cryptography.Rijndael>
-
-5. <xref:System.Security.Cryptography.TripleDES>
+* <xref:System.Security.Cryptography.Aes>
+* <xref:System.Security.Cryptography.DES>
+* <xref:System.Security.Cryptography.RC2>
+* <xref:System.Security.Cryptography.Rijndael>
+* <xref:System.Security.Cryptography.TripleDES>
 
 <xref:System.Security.Cryptography.Aes> is inherited by two classes: <xref:System.Security.Cryptography.AesCryptoServiceProvider> and <xref:System.Security.Cryptography.AesManaged>. The <xref:System.Security.Cryptography.AesCryptoServiceProvider> class is a wrapper around the Windows Cryptography API (CAPI) implementation of Aes, whereas the <xref:System.Security.Cryptography.AesManaged> class is written entirely in managed code. There is also a third type of implementation, Cryptography Next Generation (CNG), in addition to the managed and CAPI implementations. An example of a CNG algorithm is <xref:System.Security.Cryptography.ECDiffieHellmanCng>. CNG algorithms are available on Windows Vista and later.
 
-You can choose which implementation is best for you.  The managed implementations are available on all platforms that support the .NET Framework.  The CAPI implementations are available on older operating systems, and are no longer being developed. CNG is the very latest implementation where new development will take place. However, the managed implementations are not certified by the Federal Information Processing Standards (FIPS), and may be slower than the wrapper classes.
+You can choose which implementation is best for you. The managed implementations are available on all platforms that support .NET Framework. The CAPI implementations are available on older operating systems and are no longer being developed. CNG is the latest implementation where new development will take place. However, the managed implementations are not certified by the Federal Information Processing Standards (FIPS), and may be slower than the wrapper classes.
 
 ## Stream Design
 
@@ -49,7 +44,7 @@ The common language runtime uses a stream-oriented design for implementing symme
 
 ## Cryptographic Configuration
 
-Cryptographic configuration lets you resolve a specific implementation of an algorithm to an algorithm name, allowing extensibility of the .NET Framework cryptography classes. You can add your own hardware or software implementation of an algorithm and map the implementation to the algorithm name of your choice. If an algorithm is not specified in the configuration file, the default settings are used. For more information about cryptographic configuration, see [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md).
+Cryptographic configuration lets you resolve a specific implementation of an algorithm to an algorithm name, allowing extensibility of the .NET Framework cryptography classes. You can add your own hardware or software implementation of an algorithm and map the implementation to the algorithm name of your choice. If an algorithm is not specified in the configuration file, the default settings are used. For more information about cryptographic configuration, see [Configuring Cryptography Classes](../../framework/configure-apps/configure-cryptography-classes.md).
 
 ## Choosing an Algorithm
 
@@ -58,35 +53,22 @@ You can select an algorithm for different reasons: for example, for data integri
 Here is a list of recommended algorithms by application:
 
 - Data privacy:
-
   - <xref:System.Security.Cryptography.Aes>
-
 - Data integrity:
-
   - <xref:System.Security.Cryptography.HMACSHA256>
-
   - <xref:System.Security.Cryptography.HMACSHA512>
-
 - Digital signature:
-
   - <xref:System.Security.Cryptography.ECDsa>
-
   - <xref:System.Security.Cryptography.RSA>
-
 - Key exchange:
-
   - <xref:System.Security.Cryptography.ECDiffieHellman>
-
   - <xref:System.Security.Cryptography.RSA>
-
 - Random number generation:
-
   - <xref:System.Security.Cryptography.RNGCryptoServiceProvider>
-
 - Generating a key from a password:
-
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Applied Cryptography Protocols, Algorithms, and Source Code in C, by Bruce Schneier](https://www.schneier.com/books/applied_cryptography/)

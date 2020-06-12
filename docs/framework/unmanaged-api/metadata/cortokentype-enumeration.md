@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 93c9a369-225f-4eff-9b78-3fbee4902cf1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorTokenType Enumeration
 Indicates the type of a metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorTokenType {  
   
     mdtModule                       = 0x00000000,  
@@ -90,7 +88,7 @@ typedef enum CorTokenType {
  Each value is equal to the value of the top byte in the corresponding metadata token.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -98,4 +96,4 @@ typedef enum CorTokenType {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

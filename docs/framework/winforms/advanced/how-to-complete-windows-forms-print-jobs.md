@@ -1,5 +1,5 @@
 ---
-title: "How to: Complete Windows Forms Print Jobs"
+title: Complete Print Jobs
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -42,10 +42,10 @@ Frequently, word processors and other applications that involve printing will pr
     ```  
   
     ```csharp  
-    private void printDocument1_EndPrint(object sender,   
+    private void printDocument1_EndPrint(object sender,
     System.Drawing.Printing.PrintEventArgs e)  
     {  
-       MessageBox.Show(printDocument1.DocumentName +   
+       MessageBox.Show(printDocument1.DocumentName +
           " has finished printing.");  
     }  
     ```  
@@ -60,7 +60,7 @@ Frequently, word processors and other applications that involve printing will pr
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.EndPrint += new  

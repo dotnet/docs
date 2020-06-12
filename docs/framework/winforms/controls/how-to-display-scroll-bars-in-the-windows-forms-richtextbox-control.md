@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Scroll Bars in the Windows Forms RichTextBox Control"
+title: Display Scroll Bars in RichTextBox Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "text boxes [Windows Forms], displaying scroll bars"

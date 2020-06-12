@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "platform invoke, calling unmanaged functions"
 ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Passing Structures
 Many unmanaged functions expect you to pass, as a parameter to the function, members of structures (user-defined types in Visual Basic) or members of classes that are defined in managed code. When passing structures or classes to unmanaged code using platform invoke, you must provide additional information to preserve the original layout and alignment. This topic introduces the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, which you use to define formatted types. For managed structures and classes, you can select from several predictable layout behaviors supplied by the **LayoutKind** enumeration.  
@@ -32,7 +30,7 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
 ## Declaring and Passing Structures  
  The following example shows how to define the `Point` and `Rect` structures in managed code, and pass the types as parameter to the **PtInRect** function in the User32.dll file. **PtInRect** has the following unmanaged signature:  
   
-```  
+```cpp
 BOOL PtInRect(const RECT *lprc, POINT pt);  
 ```  
   
@@ -53,7 +51,7 @@ Public Structure <StructLayout(LayoutKind.Explicit)> Rect
     <FieldOffset(12)> Public bottom As Integer  
 End Structure  
   
-Friend Class NativeMethods      
+Friend Class NativeMethods
     Friend Declare Auto Function PtInRect Lib "user32.dll" (
         ByRef r As Rect, p As Point) As Boolean  
 End Class  
@@ -66,7 +64,7 @@ using System.Runtime.InteropServices;
 public struct Point {  
     public int x;  
     public int y;  
-}     
+}
   
 [StructLayout(LayoutKind.Explicit)]  
 public struct Rect {  
@@ -74,7 +72,7 @@ public struct Rect {
     [FieldOffset(4)] public int top;  
     [FieldOffset(8)] public int right;  
     [FieldOffset(12)] public int bottom;  
-}     
+}
   
 internal static class NativeMethods
 {  
@@ -86,7 +84,7 @@ internal static class NativeMethods
 ## Declaring and Passing Classes  
  You can pass members of a class to an unmanaged DLL function, as long as the class has a fixed member layout. The following example demonstrates how to pass members of the `MySystemTime` class, which are defined in sequential order, to the **GetSystemTime** in the User32.dll file. **GetSystemTime** has the following unmanaged signature:  
   
-```  
+```cpp
 void GetSystemTime(SYSTEMTIME* SystemTime);  
 ```  
   
@@ -98,7 +96,7 @@ Imports System.Runtime.InteropServices
 <StructLayout(LayoutKind.Sequential)> Public Class MySystemTime  
     Public wYear As Short  
     Public wMonth As Short  
-    Public wDayOfWeek As Short   
+    Public wDayOfWeek As Short
     Public wDay As Short  
     Public wHour As Short  
     Public wMinute As Short  
@@ -113,7 +111,7 @@ Friend Class NativeMethods
         hWnd As IntPtr, lpText As String, lpCaption As String, uType As UInteger) As Integer  
 End Class  
   
-Public Class TestPlatformInvoke      
+Public Class TestPlatformInvoke
     Public Shared Sub Main()  
         Dim sysTime As New MySystemTime()  
         NativeMethods.GetSystemTime(sysTime)  
@@ -124,7 +122,7 @@ Public Class TestPlatformInvoke
               ControlChars.CrLf & "Month: " & sysTime.wMonth & _  
               ControlChars.CrLf & "DayOfWeek: " & sysTime.wDayOfWeek & _  
               ControlChars.CrLf & "Day: " & sysTime.wDay  
-        NativeMethods.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
+        NativeMethods.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)
     End Sub  
 End Class  
 ```  
@@ -132,14 +130,14 @@ End Class
 ```csharp  
 [StructLayout(LayoutKind.Sequential)]  
 public class MySystemTime {  
-    public ushort wYear;   
+    public ushort wYear;
     public ushort wMonth;  
-    public ushort wDayOfWeek;   
-    public ushort wDay;   
-    public ushort wHour;   
-    public ushort wMinute;   
-    public ushort wSecond;   
-    public ushort wMilliseconds;   
+    public ushort wDayOfWeek;
+    public ushort wDay;
+    public ushort wHour;
+    public ushort wMinute;
+    public ushort wSecond;
+    public ushort wMilliseconds;
 }  
 internal static class NativeMethods
 {  
@@ -171,6 +169,6 @@ public class TestPlatformInvoke
   
 ## See also
 
-- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- [Calling a DLL Function](calling-a-dll-function.md)
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.FieldOffsetAttribute>

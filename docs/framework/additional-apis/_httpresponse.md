@@ -10,10 +10,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: eab9b789-beb4-4c28-b2d8-78debc7ba129
-author: "guardrex"
-ms.author: "mairaw"
 ---
-
 # HttpWebRequest.\_HttpResponse Field
 
 `HttpWebRequest._HttpResponse` is an <xref:System.Net.HttpWebResponse> containing HTTP response details from an HTTP request. It can be `null` until an HTTP response is received.
@@ -26,7 +23,7 @@ internal HttpWebResponse _HttpResponse
 
 > [!WARNING]
 > The `HttpWebRequest._HttpResponse` field is internal and not meant to be used directly in your code.
-> 
+>
 > Microsoft does not support the use of this field in a production application under any circumstance.
 
 ## Requirements

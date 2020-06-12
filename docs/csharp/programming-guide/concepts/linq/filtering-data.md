@@ -42,9 +42,9 @@ foreach (string str in query)
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [where clause](../../../../csharp/language-reference/keywords/where-clause.md)
-- [How to: Dynamically Specify Predicate Filters at Runtime](../../../../csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)
-- [How to: Query An Assembly's Metadata with Reflection (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
-- [How to: Query for Files with a Specified Attribute or Name (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md)
-- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [where clause](../../../language-reference/keywords/where-clause.md)
+- [Dynamically specify predicate filters at runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [How to query an assembly's metadata with Reflection (LINQ) (C#)](./how-to-query-an-assembly-s-metadata-with-reflection-linq.md)
+- [How to query for files with a specified attribute or name (C#)](./how-to-query-for-files-with-a-specified-attribute-or-name.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

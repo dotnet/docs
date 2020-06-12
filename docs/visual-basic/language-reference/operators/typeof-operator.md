@@ -1,5 +1,5 @@
 ---
-title: "TypeOf Operator (Visual Basic)"
+title: "TypeOf Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "TypeOf"
@@ -18,11 +18,11 @@ Checks whether the runtime type of an expression's result is type-compatible wit
   
 ## Syntax  
   
-```  
+```vb  
 result = TypeOf objectexpression Is typename  
 ```  
   
-```  
+```vb  
 result = TypeOf objectexpression IsNot typename  
 ```  
   
@@ -58,9 +58,9 @@ result = TypeOf objectexpression IsNot typename
   
 ## See also
 
-- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
-- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
-- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Is Operator](is-operator.md)
+- [IsNot Operator](isnot-operator.md)
+- [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)

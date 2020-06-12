@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d4d7cb2d-69da-48b3-879a-1a8a68c9bfa8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerThreadControl::ThreadIsBlockingForDebugger Method
 Notifies the host that the thread that is sending this callback is about to block within the debugging services.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForDebugger ( );  
 ```  
   
@@ -33,7 +31,7 @@ HRESULT ThreadIsBlockingForDebugger ( );
  The `ThreadIsBlockingForDebugger` method gives the host an opportunity to perform another action while the thread blocks.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -43,4 +41,4 @@ HRESULT ThreadIsBlockingForDebugger ( );
   
 ## See also
 
-- [IDebuggerThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md)
+- [IDebuggerThreadControl Interface](idebuggerthreadcontrol-interface.md)

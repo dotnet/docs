@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: e97c97a6-6e4f-41f5-9af1-9b3cf3bdbd6b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumMemberRefs Method
 Enumerates MemberRef tokens representing members of the specified type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemberRefs (  
-   [in, out] HCORENUM    *phEnum,   
-   [in]   mdToken        tkParent,   
-   [out]  mdMemberRef    rMemberRefs[],   
-   [in]   ULONG          cMax,   
+   [in, out] HCORENUM    *phEnum,
+   [in]   mdToken        tkParent,
+   [out]  mdMemberRef    rMemberRefs[],
+   [in]   ULONG          cMax,
    [out]  ULONG          *pcTokens  
 );  
 ```  
@@ -57,7 +55,7 @@ HRESULT EnumMemberRefs (
 |`S_FALSE`|There are no MemberRef tokens to enumerate. In that case, `pcTokens` is to zero.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -67,5 +65,5 @@ HRESULT EnumMemberRefs (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

@@ -1,7 +1,5 @@
 ---
 title: "return statement - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "return_CSharpKeyword"
@@ -19,7 +17,7 @@ The `return` statement terminates execution of the method in which it appears an
 
 ## Example
 
- In the following example, the method `CalculateArea()` returns the local variable `area` as a [double](double.md) value.
+ In the following example, the method `CalculateArea()` returns the local variable `area` as a `double` value.
 
 [!code-csharp[csrefKeywordsJump#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#6)]  
 
@@ -33,4 +31,3 @@ The `return` statement terminates execution of the method in which it appears an
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [return Statement](/cpp/cpp/return-statement-cpp)
-- [Jump Statements](jump-statements.md)

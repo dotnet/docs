@@ -1,5 +1,5 @@
 ---
-title: "Object doesn't support this action (Visual Basic)"
+title: "Object doesn't support this action"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID445"
@@ -16,4 +16,4 @@ You referenced a method or property that is not supported by this object.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

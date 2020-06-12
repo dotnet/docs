@@ -22,7 +22,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Default addresses and transport bindings for the service are provided in a service configuration file, but these can be reconfigured as required.  
   
 > [!NOTE]
->  The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
+> The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
   
  The authentication and authorization requirements of the COM+ application and its components continue to be enforced when used as a Web service.  
   
@@ -34,9 +34,9 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
 2. Select an appropriate hosting mode.  
   
-3. Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
+3. Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](how-to-use-the-com-service-model-configuration-tool.md).  
   
-4. Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
+4. Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](how-to-configure-com-service-settings.md).  
   
 ## Supported Interfaces  
  There are some restrictions on the type of interfaces that can be exposed as a Web service. The following types of interfaces are not supported:  
@@ -65,7 +65,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Within a client application, the methods on the <xref:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper> object can be used to pass an object in to a service and similarly to retrieve an object.  
   
 > [!NOTE]
->  Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
+> Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
   
 ## Selecting the Hosting Mode  
  COM+ exposes Web services in one of the following hosting modes:  
@@ -97,4 +97,4 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
 ## See also
 
-- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+- [Integrating with COM Applications Overview](integrating-with-com-applications-overview.md)

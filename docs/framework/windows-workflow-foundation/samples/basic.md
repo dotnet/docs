@@ -1,5 +1,6 @@
 ---
-title: "Basic1"
+title: "Basic - WF"
+description: This article refers to samples that demonstrate basic Windows Workflow Foundation functionality, such as built-in and custom activities.
 ms.date: "03/30/2017"
 ms.assetid: 84a315b6-3f96-4959-8306-49be37936a23
 ---
@@ -14,7 +15,7 @@ This section provides samples that demonstrate basic Windows Workflow Foundation
  Contains samples that demonstrate creating custom activities.  
   
  [Designer](designer.md)  
- Contains samples that demonstrate how to use [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)].  
+ Contains samples that demonstrate how to use Windows Workflow Designer.  
   
  [Designer ReHosting](designer-rehosting.md)  
  Contains samples that demonstrate re-hosting the activity designer.  

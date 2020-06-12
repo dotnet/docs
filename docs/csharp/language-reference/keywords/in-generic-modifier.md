@@ -1,7 +1,5 @@
 ---
 title: "in (Generic Modifier) - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "contravariance, in keyword [C#]"
@@ -41,4 +39,4 @@ The following example shows how to declare, instantiate, and invoke a contravari
 
 - [out](out-generic-modifier.md)
 - [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)

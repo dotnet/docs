@@ -1,5 +1,5 @@
 ---
-title: "How to: Define Multiple Versions of a Procedure (Visual Basic)"
+title: "How to: Define Multiple Versions of a Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
@@ -18,7 +18,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
   
 1. Write a `Sub` or `Function` declaration statement for each version of the procedure you want to define. Use the same procedure name in every declaration.  
   
-2. Precede the `Sub` or `Function` keyword in each declaration with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword. You can optionally omit `Overloads` in the declarations, but if you include it in any of the declarations, you must include it in every declaration.  
+2. Precede the `Sub` or `Function` keyword in each declaration with the [Overloads](../../../language-reference/modifiers/overloads.md) keyword. You can optionally omit `Overloads` in the declarations, but if you include it in any of the declarations, you must include it in every declaration.  
   
 3. Following each declaration statement, write procedure code to handle the specific case where the calling code supplies arguments matching that version's parameter list. You do not have to test for which parameters the calling code has supplied. Visual Basic passes control to the matching version of your procedure.  
   
@@ -33,7 +33,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
   
  For information on how to call these versions of the `post` procedure, see [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md).  
   
-## Compiling the Code  
+## Compile the code  
  Make sure each of your overloaded versions has the same procedure name but a different parameter list.  
   
 ## See also

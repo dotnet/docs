@@ -19,15 +19,15 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 - The Northwind sample database.  
   
-     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest2 folder.  
+     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest2 folder.  
   
 - A Visual Basic code file generated from the Northwind database.  
   
-     You can generate this file by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal tool. This walkthrough was written by using the SQLMetal tool with the following command line:  
+     You can generate this file by using either the Object Relational Designer or the SQLMetal tool. This walkthrough was written by using the SQLMetal tool with the following command line:  
   
      **sqlmetal /code:"c:\linqtest2\northwind.vb" /language:vb "C:\linqtest2\northwnd.mdf" /pluralize**  
   
-     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
+     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Overview  
  This walkthrough consists of six main tasks:  
@@ -162,7 +162,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
      The console window appears as follows:  
   
-    ```  
+    ```console
     Customers matching CA before update:  
     Customer ID: CACTU  
     Customer ID: RICAR  
@@ -178,8 +178,8 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 4. Press Enter in the **Console** window to stop debugging.  
   
 > [!NOTE]
->  After you have added the new customer by submitting the changes, you cannot execute this solution again as is, because you cannot add the same customer again as is. To execute the solution again, change the value of the customer ID to be added.  
+> After you have added the new customer by submitting the changes, you cannot execute this solution again as is, because you cannot add the same customer again as is. To execute the solution again, change the value of the customer ID to be added.  
   
 ## See also
 
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

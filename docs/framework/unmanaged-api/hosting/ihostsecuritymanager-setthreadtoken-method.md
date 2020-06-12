@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::SetThreadToken Method
 Sets a handle for the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadToken (  
     [in] HANDLE hToken  
 );  
@@ -50,7 +48,7 @@ HRESULT SetThreadToken (
  The `HANDLE` type is not COM-compliant; that is, its size is specific to an operating system and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -60,5 +58,5 @@ HRESULT SetThreadToken (
   
 ## See also
 
-- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
-- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+- [IHostSecurityManager Interface](ihostsecuritymanager-interface.md)
+- [IHostThreadPoolManager Interface](ihostthreadpoolmanager-interface.md)

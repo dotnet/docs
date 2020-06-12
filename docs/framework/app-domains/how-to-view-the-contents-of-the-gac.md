@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "list of assemblies in global assembly cache"
   - "Global Assembly Cache tool"
 ms.assetid: c5f786a0-969b-4f14-9f02-e77c3384d9af
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: View the contents of the global assembly cache
 
@@ -33,7 +31,7 @@ gacutil /l
 ```
 
 > [!NOTE]
-> In earlier versions of the .NET Framework, the [Shfusion.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/34149zk3(v=vs.100)) Windows shell extension enabled you to view the global assembly cache in File Explorer. Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], Shfusion.dll is obsolete.
+> In earlier versions of the .NET Framework, the [Shfusion.dll](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/34149zk3(v=vs.100)) Windows shell extension enabled you to view the global assembly cache in File Explorer. Beginning with the .NET Framework 4, Shfusion.dll is obsolete.
 
 ## See also
 

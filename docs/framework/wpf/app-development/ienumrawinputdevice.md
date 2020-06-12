@@ -9,7 +9,7 @@ ms.assetid: 88c8b389-a48b-46b9-b895-8ed7b1e26fea
 This interface enumerates the raw input devices, and is only used by PresentationHost.exe.  
   
 > [!NOTE]
->  This API is only intended and supported for use on the local client machine  
+> This API is only intended and supported for use on the local client machine  
   
 ## Members  
   

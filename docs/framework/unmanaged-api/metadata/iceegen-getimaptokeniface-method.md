@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 847a5531-c37d-49cd-8844-9e54b5d86cf7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetIMapTokenIface Method
 Gets the interface referenced by the specified token.  
@@ -25,7 +23,7 @@ Gets the interface referenced by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIMapTokenIface (  
     [in, out] IUnknown   **pIMapToken  
 );  
@@ -36,7 +34,7 @@ HRESULT GetIMapTokenIface (
  [in, out] The metadata token for the interface to be returned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,4 +44,4 @@ HRESULT GetIMapTokenIface (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 415b3d34-8b35-4b60-a318-140646cc83f8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetAppDomain Method
 Gets an interface pointer to the application domain in which this ICorDebugThread is currently executing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomain (  
     [out] ICorDebugAppDomain  **ppAppDomain  
 );  
@@ -34,7 +32,7 @@ HRESULT GetAppDomain (
  [out] A pointer to an ICorDebugAppDomain object that represents the application domain in which this thread is currently executing.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

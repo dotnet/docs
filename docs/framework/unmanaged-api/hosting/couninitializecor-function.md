@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50a95b8b-9766-470e-bb29-2c7ecddfd4a1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoUninitializeCor Function
 `CoUninitializeCor` is obsolete.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(void) CoUninitializeCor(void);  
 ```  
   
@@ -32,4 +30,4 @@ STDAPI_(void) CoUninitializeCor(void);
   
 ## See also
 
-- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

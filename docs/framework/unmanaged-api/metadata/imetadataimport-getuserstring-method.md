@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetUserString Method
 Gets the literal string represented by the specified metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserString (  
    [in]   mdString    stk,  
    [out]  LPWSTR      szString,  
@@ -46,7 +44,7 @@ HRESULT GetUserString (
  [out] The size in wide characters of the returned `szString`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -56,5 +54,5 @@ HRESULT GetUserString (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

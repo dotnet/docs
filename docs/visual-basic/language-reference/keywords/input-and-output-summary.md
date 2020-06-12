@@ -1,5 +1,5 @@
 ---
-title: "Input and Output Summary (Visual Basic)"
+title: "Input and Output Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "input, Visual Basic functions"
@@ -27,5 +27,5 @@ Visual Basic language keywords and run-time library members are organized by pur
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

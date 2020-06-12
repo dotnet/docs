@@ -1,5 +1,5 @@
 ---
-title: "String Basics in Visual Basic"
+title: "String Basics"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], Like operator"
@@ -67,7 +67,7 @@ World]]></xml>.Value
   
 ## See also
 
-- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
-- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
-- [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)
+- [Introduction to Strings in Visual Basic](introduction-to-strings.md)
+- [String Data Type](../../../language-reference/data-types/string-data-type.md)
+- [Char Data Type](../../../language-reference/data-types/char-data-type.md)
 - [Basic String Operations](../../../../standard/base-types/basic-string-operations.md)

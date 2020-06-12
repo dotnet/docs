@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineField Method
 Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.  
   
 ## Syntax  
   
-```  
-HRESULT DefineField (   
-    [in]  mdTypeDef   td,   
-    [in]  LPCWSTR     szName,   
-    [in]  DWORD       dwFieldFlags,   
-    [in]  PCCOR_SIGNATURE pvSigBlob,   
-    [in]  ULONG       cbSigBlob,   
-    [in]  DWORD       dwCPlusTypeFlag,   
-    [in]  void const  *pValue,   
-    [in]  ULONG       cchValue,   
-    [out] mdFieldDef  *pmd   
+```cpp  
+HRESULT DefineField (
+    [in]  mdTypeDef   td,
+    [in]  LPCWSTR     szName,
+    [in]  DWORD       dwFieldFlags,
+    [in]  PCCOR_SIGNATURE pvSigBlob,
+    [in]  ULONG       cbSigBlob,
+    [in]  DWORD       dwCPlusTypeFlag,
+    [in]  void const  *pValue,
+    [in]  ULONG       cchValue,
+    [out] mdFieldDef  *pmd
 );  
 ```  
   
@@ -66,7 +64,7 @@ HRESULT DefineField (
  [out] The `mdFieldDef` token assigned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -76,5 +74,5 @@ HRESULT DefineField (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 066ea45a-e27d-43b0-adfe-cce6934c22f5
 ---
 # ScrollBar Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ScrollBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ScrollBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## ScrollBar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
@@ -29,8 +29,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |MouseOver|CommonStates|The mouse pointer is positioned over the control.|  
 |Disabled|CommonStates|The control is disabled.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## ScrollBar ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
@@ -49,5 +49,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

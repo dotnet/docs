@@ -1,9 +1,9 @@
 ---
-title: "How to: Modify an Office Open XML Document (C#)"
+title: "How to modify an Office Open XML document (C#)"
 ms.date: 07/20/2015
 ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
 ---
-# How to: Modify an Office Open XML Document (C#)
+# How to modify an Office Open XML document (C#)
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  
   
  For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [www.ericwhite.com](http://ericwhite.com/).  
@@ -135,12 +135,8 @@ class Program
   
  If you open `SampleDoc.docx` after running this program, you can see that this program converted the first paragraph in the document to upper case.  
   
- When run with the sample Open XML document described in [Creating the Source Office Open XML Document (C#)](../../../../csharp/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), this example produces the following output:  
+ When run with the sample Open XML document described in [Creating the Source Office Open XML Document (C#)](./creating-the-source-office-open-xml-document.md), this example produces the following output:  
   
-```  
+```output  
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<  
 ```  
-  
-## See also
-
-- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

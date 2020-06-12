@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Nodes with the Windows Forms TreeView Control"
+title: Add and Remove Nodes with TreeView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -49,7 +49,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     ```  
   
     ```csharp  
-    // Removes currently selected node, or root if nothing   
+    // Removes currently selected node, or root if nothing
     // is selected.  
     treeView1.Nodes.Remove(treeView1.SelectedNode);  
     // Clears all nodes.  

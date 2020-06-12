@@ -1,5 +1,5 @@
 ---
-title: "Variable uses an Automation type not supported in Visual Basic"
+title: "Variable uses an Automation type not supported"
 ms.date: 07/20/2015
 f1_keywords:
   - "vbrID458"
@@ -20,4 +20,4 @@ You tried to use a variable defined in a type library or object library that has
 
 ## See also
 
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Data Types](../data-types/index.md)

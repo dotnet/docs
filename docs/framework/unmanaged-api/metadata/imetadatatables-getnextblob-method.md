@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 017c8ab4-4c09-4754-9935-5b0b49cabecb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetNextBlob Method
 Gets the index of the next binary large object (BLOB) in the table.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextBlob (  
     [in]  ULONG   ixBlob,  
     [out] ULONG   *pNext  
@@ -38,7 +36,7 @@ HRESULT GetNextBlob (
  [out] A pointer to the index of the next BLOB.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,5 +46,5 @@ HRESULT GetNextBlob (
   
 ## See also
 
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

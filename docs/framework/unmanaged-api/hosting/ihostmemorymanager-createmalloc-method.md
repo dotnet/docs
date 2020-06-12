@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::CreateMAlloc Method
-Gets an interface pointer to an [IHostMAlloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md) instance that is used to make allocation requests from a heap created by the host.  
+Gets an interface pointer to an [IHostMAlloc](ihostmalloc-interface.md) instance that is used to make allocation requests from a heap created by the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateMalloc (  
     [in]  DWORD         dwMallocType,  
     [out] IHostMalloc **ppMalloc  
@@ -32,7 +30,7 @@ HRESULT CreateMalloc (
   
 ## Parameters  
  `dwMallocType`  
- [in] A combination of [MALLOC_TYPE](../../../../docs/framework/unmanaged-api/hosting/malloc-type-enumeration.md) flags that specifies the characteristics of the memory that is being allocated.  
+ [in] A combination of [MALLOC_TYPE](malloc-type-enumeration.md) flags that specifies the characteristics of the memory that is being allocated.  
   
  `ppMAlloc`  
  [out] A pointer to the address of an `IHostMAlloc` instance provided by the host.  
@@ -53,7 +51,7 @@ HRESULT CreateMalloc (
  `CreateMAlloc` returns an object that allows the CLR to make allocation requests through the host instead of using the standard Win32 functions.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -63,5 +61,5 @@ HRESULT CreateMalloc (
   
 ## See also
 
-- [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMalloc Interface](ihostmalloc-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

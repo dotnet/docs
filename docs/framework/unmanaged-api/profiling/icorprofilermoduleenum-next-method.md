@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a3cea59d-7622-4323-897a-0a464c40f77f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum::Next Method
 Gets the specified number of contiguous modules from a sequential collection of modules, starting at the enumerator's current position in the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next([in]  ULONG      celt,  
              [out, size_is(celt), length_is(*pceltFetched)]  
                     ModuleID ids[],  
@@ -49,7 +47,7 @@ HRESULT Next([in]  ULONG      celt,
 |S_FALSE|Fewer than `celt` elements were returned, which indicates that the enumeration is complete.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -59,5 +57,5 @@ HRESULT Next([in]  ULONG      celt,
   
 ## See also
 
-- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

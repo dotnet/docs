@@ -15,7 +15,7 @@ This document covers best practices for workflow design and configuration relate
   
  If your workflow is busy for a long time, we recommend that you persist the workflow instance regularly throughout its busy period. You can do this by adding <xref:System.Activities.Statements.Persist> activities throughout the sequence of activities that keep the workflow instance busy. In this manner, application domain recycling, host failures, or computer failures do not cause the system to be rolled back to the start of the busy period. Be aware that adding <xref:System.Activities.Statements.Persist> activities to your workflow could lead to a degradation of performance.  
   
- Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](https://go.microsoft.com/fwlink/?LinkID=201200&clcid=0x409)  
+ Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Configuration of Scalability Parameters  
  Scalability and performance requirements determine the settings of the following parameters:  

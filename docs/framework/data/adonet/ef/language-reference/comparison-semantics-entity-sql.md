@@ -72,19 +72,19 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
   
  <sup>1</sup>The references of the given entity type instances are implicitly compared, as shown in the following example:  
   
-```  
-SELECT p1, p2   
-FROM AdventureWorksEntities.Product AS p1   
-     JOIN AdventureWorksEntities.Product AS p2   
+```sql  
+SELECT p1, p2
+FROM AdventureWorksEntities.Product AS p1
+     JOIN AdventureWorksEntities.Product AS p2
 WHERE p1 != p2 OR p1 IS NULL  
 ```  
   
  An entity instance cannot be compared to an explicit reference. If this is attempted, an exception is thrown. For example, the following query will throw an exception:  
   
-```  
-SELECT p1, p2   
-FROM AdventureWorksEntities.Product AS p1   
-     JOIN AdventureWorksEntities.Product AS p2   
+```sql  
+SELECT p1, p2
+FROM AdventureWorksEntities.Product AS p1
+     JOIN AdventureWorksEntities.Product AS p2
 WHERE p1 != REF(p2)  
 ```  
   
@@ -98,4 +98,4 @@ WHERE p1 != REF(p2)
   
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](entity-sql-overview.md)

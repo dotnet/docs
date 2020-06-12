@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Event Handling in an XML Document Using the XmlNodeChangedEventArgs
 The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event handlers registered on the **XmlDocument** object for handling events. The events and a description of when they are fired is given in the following table.  
@@ -22,7 +20,7 @@ The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event h
 |<xref:System.Xml.XmlDocument.NodeChanged>|When the value of a node has been changed.|  
   
 > [!NOTE]
->  If the **XmlDataDocument** memory usage is fully optimized to use **DataSet** storage, the **XmlDataDocument** might not raise any of the events listed above when changes are made to the underlying **DataSet**. If you need these events, you must traverse the whole **XmlDocument** once to make the memory usage non-fully optimized.  
+> If the **XmlDataDocument** memory usage is fully optimized to use **DataSet** storage, the **XmlDataDocument** might not raise any of the events listed above when changes are made to the underlying **DataSet**. If you need these events, you must traverse the whole **XmlDocument** once to make the memory usage non-fully optimized.  
   
  The following code example shows how to define an event handler and how to add the event handler to an event.  
   
@@ -30,16 +28,16 @@ The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event h
 ' Attach the event handler, NodeInsertedHandler, to the NodeInserted  
 ' event.  
 Dim doc as XmlDocument = new XmlDocument()  
-Dim XmlNodeChgEHdlr as XmlNodeChangedEventHandler = new XmlNodeChangedEventHandler(addressof MyNodeChangedEvent)   
-AddHandler doc.NodeInserted, XmlNodeChgEHdlr   
+Dim XmlNodeChgEHdlr as XmlNodeChangedEventHandler = new XmlNodeChangedEventHandler(addressof MyNodeChangedEvent)
+AddHandler doc.NodeInserted, XmlNodeChgEHdlr
   
 Dim n as XmlNode = doc.CreateElement( "element" )  
-Console.WriteLine( "Before Event Inserting" )   
+Console.WriteLine( "Before Event Inserting" )
   
 ' This is the point where the new node is being inserted in the tree,  
 ' and this is the point where the NodeInserted event is raised.  
 doc.AppendChild( n )  
-Console.WriteLine( "After Event Inserting" )   
+Console.WriteLine( "After Event Inserting" )
   
 ' Define the event handler that handles the NodeInserted event.  
 sub NodeInsertedHandler(src as Object, args as XmlNodeChangedEventArgs)  
@@ -58,7 +56,7 @@ Console.WriteLine( "Before Event Inserting" );
 // This is the point where the new node is being inserted in the tree,  
 // and this is the point where the NodeInserted event is raised.  
 doc.AppendChild( n );  
-Console.WriteLine( "After Event Inserting" );   
+Console.WriteLine( "After Event Inserting" );
   
 // Define the event handler that handles the NodeInserted event.  
 void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)  
@@ -169,7 +167,7 @@ public class Sample
      doc.DocumentElement.AppendChild(newElem);  
   
      Console.WriteLine("\r\nDisplay the modified XML...");  
-     Console.WriteLine(doc.OuterXml);             
+     Console.WriteLine(doc.OuterXml);
   
   }  
   
@@ -197,11 +195,11 @@ public class Sample
         Console.WriteLine("");  
   }  
   
-} // End class   
+} // End class
 ```  
   
  For more information, see <xref:System.Xml.XmlNodeChangedEventArgs> and <xref:System.Xml.XmlNodeChangedEventHandler>.  
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

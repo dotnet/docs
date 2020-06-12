@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0d8a7730-edc9-4728-898f-41b219cf5a28
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetTLSValue Method
 Gets a value from the thread local storage (TLS) of the specified thread in the target process. This method is called by the common language runtime (CLR) data access services.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTLSValue (  
     [in] ULONG32            threadID,  
     [in] ULONG32            index,  
@@ -45,7 +43,7 @@ HRESULT GetTLSValue (
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -55,4 +53,4 @@ HRESULT GetTLSValue (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

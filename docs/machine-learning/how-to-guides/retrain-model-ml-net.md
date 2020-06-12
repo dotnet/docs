@@ -12,7 +12,7 @@ ms.custom: mvc, how-to
 
 Learn how to retrain a machine learning model in ML.NET.
 
-The world and the data around it change at a constant pace. As such, models need to change and update as well. ML.NET provides functionality for re-training models using learned model parameters as a starting point to continually build on previous experience rather than starting from scratch every time.  
+The world and the data around it change at a constant pace. As such, models need to change and update as well. ML.NET provides functionality for re-training models using learned model parameters as a starting point to continually build on previous experience rather than starting from scratch every time.
 
 The following algorithms are re-trainable in ML.NET:
 
@@ -29,7 +29,7 @@ The following algorithms are re-trainable in ML.NET:
 
 ## Load pre-trained model
 
-First, load the pre-trained model into your application. To learn more about loading training pipelines and models, see the related [how-to article](./consuming-model-ml-net.md).
+First, load the pre-trained model into your application. To learn more about loading training pipelines and models, see [Save and load a trained model](save-load-machine-learning-models-ml-net.md).
 
 ```csharp
 // Create MLContext
@@ -38,7 +38,7 @@ MLContext mlContext = new MLContext();
 // Define DataViewSchema of data prep pipeline and trained model
 DataViewSchema dataPrepPipelineSchema, modelSchema;
 
-// Load data prepration pipeline
+// Load data preparation pipeline
 ITransformer dataPrepPipeline = mlContext.Model.Load("data_preparation_pipeline.zip", out dataPrepPipelineSchema);
 
 // Load trained model
@@ -51,13 +51,13 @@ Once the model is loaded, extract the learned model parameters by accessing the 
 
 ```csharp
 // Extract trained model parameters
-LinearRegressionModelParameters originalModelParameters = 
+LinearRegressionModelParameters originalModelParameters =
     ((ISingleFeaturePredictionTransformer<object>)trainedModel).Model as LinearRegressionModelParameters;
 ```
 
 ## Re-train model
 
-The process for retraining a model is no different than that of training a model. The only difference is, the [`Fit`](xref:Microsoft.ML.Trainers.OnlineLinearTrainer`2.Fit*) method in addition to the data also takes as input the original learned model parameters and uses them as a starting point in the re-training process.  
+The process for retraining a model is no different than that of training a model. The only difference is, the [`Fit`](xref:Microsoft.ML.Trainers.OnlineLinearTrainer`2.Fit*) method in addition to the data also takes as input the original learned model parameters and uses them as a starting point in the re-training process.
 
 ```csharp
 // New Data
@@ -90,7 +90,7 @@ IDataView newData = mlContext.Data.LoadFromEnumerable<HousingData>(housingData);
 IDataView transformedNewData = dataPrepPipeline.Transform(newData);
 
 // Retrain model
-RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel = 
+RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel =
     mlContext.Regression.Trainers.OnlineGradientDescent()
         .Fit(transformedNewData, originalModelParameters);
 ```
@@ -104,7 +104,7 @@ How do you know if re-training actually happened? One way would be to compare wh
 LinearRegressionModelParameters retrainedModelParameters = retrainedModel.Model as LinearRegressionModelParameters;
 
 // Inspect Change in Weights
-var weightDiffs = 
+var weightDiffs =
     originalModelParameters.Weights.Zip(
         retrainedModelParameters.Weights, (original, retrained) => original - retrained).ToArray();
 
@@ -115,7 +115,7 @@ for(int i=0;i < weightDiffs.Count();i++)
 }
 ```
 
-The table below shows what the output might look like. 
+The table below shows what the output might look like.
 
 |Original | Retrained | Difference |
 |---|---|---|

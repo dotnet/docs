@@ -1,5 +1,6 @@
 ---
 title: "Socket Performance Enhancements in Version 3.5"
+description: Find out about performance improvements to the System.Net.Sockets.Socket class in version 3.5 in the .NET Framework. 
 ms.date: "03/30/2017"
 ms.assetid: 225aa5f9-c54b-4620-ab64-5cd100cfd54c
 ---
@@ -33,5 +34,5 @@ The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been
 - <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketAsyncOperation?displayProperty=nameWithType>
-- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Network Programming Samples](network-programming-samples.md)
 - [Socket Code Examples](socket-code-examples.md)

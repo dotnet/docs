@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 66a89acf-8c32-44c0-8787-960c99c7b3ec
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateHistoryReader Function
 Creates a history reader for the specified file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateHistoryReader (  
     [in]  LPCWSTR        wzFilePath,  
     [out] IHistoryReader **ppHistoryReader  
@@ -45,7 +43,7 @@ HRESULT CreateHistoryReader (
 |E_INVALIDARG|Indicates that `wzFilePath` or `ppHistoryReader` are set to a null reference.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Library:** Fusion.dll  
   
@@ -53,4 +51,4 @@ HRESULT CreateHistoryReader (
   
 ## See also
 
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

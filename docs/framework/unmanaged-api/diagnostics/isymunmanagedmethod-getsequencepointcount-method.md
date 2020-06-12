@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 836133e8-6108-4b9b-b0a9-bce4e08dccda
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetSequencePointCount Method
 Gets the count of sequence points within this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePointCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  
@@ -40,4 +38,4 @@ HRESULT GetSequencePointCount(
   
 ## See also
 
-- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

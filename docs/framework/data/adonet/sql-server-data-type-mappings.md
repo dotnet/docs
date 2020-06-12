@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Data Type Mappings"
+description: Learn about mapping between the different type systems for SQL Server and the .NET Framework. This article summarizes how the systems interact in ADO.NET.
 ms.date: "03/30/2017"
 ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
 ---
@@ -52,8 +53,8 @@ For more information about SQL Server data types, see [Data types (Transact-SQL)
   
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [SQL Server Binary and Large-Value Data](../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [Data Type Mappings in ADO.NET](../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)
-- [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Data Types and ADO.NET](./sql/sql-server-data-types.md)
+- [SQL Server Binary and Large-Value Data](./sql/sql-server-binary-and-large-value-data.md)
+- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)
+- [Configuring Parameters and Parameter Data Types](configuring-parameters-and-parameter-data-types.md)
+- [ADO.NET Overview](ado-net-overview.md)

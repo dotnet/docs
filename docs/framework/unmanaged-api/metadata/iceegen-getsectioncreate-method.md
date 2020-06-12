@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 154b2460-59ce-4874-a9f2-1b3353486ac5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetSectionCreate Method
 Generates and gets a code section using the specified name and flag values.  
@@ -25,7 +23,7 @@ Generates and gets a code section using the specified name and flag values.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionCreate (  
     [in]  const char     *name,  
     [in]  DWORD          flags,  
@@ -47,7 +45,7 @@ HRESULT GetSectionCreate (
  Call `GetSectionCreate` only if you have special section requirements that are not handled by other methods.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -57,4 +55,4 @@ HRESULT GetSectionCreate (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

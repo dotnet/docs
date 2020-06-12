@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: 103c8502-81fe-40d7-9c1e-9008d8fb19e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::SetThreadContext Method
 Sets the current context of the specified thread in the target process. This method is called by the common language runtime (CLR) data access services.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadContext (  
     [in] ULONG32            threadID,  
     [in] ULONG32            contextSize,  
-    [in, size_is(contextSize)]   
+    [in, size_is(contextSize)]
          BYTE               *context  
 );  
 ```  
@@ -48,7 +46,7 @@ HRESULT SetThreadContext (
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -58,4 +56,4 @@ HRESULT SetThreadContext (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

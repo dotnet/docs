@@ -1,5 +1,5 @@
 ---
-title: "Creating and Implementing Interfaces (Visual Basic)"
+title: "Creating and Implementing Interfaces"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [Visual Basic], walkthroughs"
@@ -15,7 +15,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
  This walkthrough demonstrates how to declare and implement an interface.  
   
 > [!NOTE]
->  This walkthrough doesn't provide information about how to create a user interface.  
+> This walkthrough doesn't provide information about how to create a user interface.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -103,7 +103,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
   
 ## See also
 
-- [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)
-- [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)
-- [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)
+- [Implements Statement](../../../language-reference/statements/implements-statement.md)
+- [Interfaces](index.md)
+- [Interface Statement](../../../language-reference/statements/interface-statement.md)
+- [Event Statement](../../../language-reference/statements/event-statement.md)

@@ -1,12 +1,13 @@
 ---
 title: "Windows Workflow Foundation Feature Specifics"
+description: This article describes new features that .NET Framework 4 adds to Windows Workflow Foundation and scenarios in which the features might be useful.
 ms.date: "03/30/2017"
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 ---
 
 # Windows Workflow Foundation Feature Specifics
 
-[!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
+.NET Framework 4 adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
 
 ## Messaging Activities
 
@@ -26,7 +27,7 @@ A `BestPriceFinder` service calls out to multiple airline services to find the b
 
 ## WorkflowServiceHost
 
-The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow host that supports multiple instances, configuration, and WCF messaging (although the workflows aren’t required to use messaging in order to be hosted). It also integrates with persistence, tracking, and instance control through a set of service behaviors. Just like WCF’s <xref:System.ServiceModel.ServiceHost>, the <xref:System.ServiceModel.WorkflowServiceHost> can be self-hosted in a console/WinForms/WPF application or Windows service, or web-hosted (as a .xamlx file) in IIS or WAS.
+The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow host that supports multiple instances, configuration, and WCF messaging (although the workflows aren't required to use messaging in order to be hosted). It also integrates with persistence, tracking, and instance control through a set of service behaviors. Just like WCF's <xref:System.ServiceModel.ServiceHost>, the <xref:System.ServiceModel.WorkflowServiceHost> can be self-hosted in a console/WinForms/WPF application or Windows service, or web-hosted (as a .xamlx file) in IIS or WAS.
 
 ### Getting Started with Workflow Service Host
 
@@ -90,15 +91,15 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 ### Getting Started
 
-- [A Developer's Guide to WCF 4.0](https://go.microsoft.com/fwlink/?LinkId=204940)
+- [A Developer's Guide to WCF 4.0](https://docs.microsoft.com/previous-versions/dotnet/articles/ee354381(v=msdn.10))
 
-- [Configuration Channel Factory](https://go.microsoft.com/fwlink/?LinkId=204941)
+- [Configuration Channel Factory](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601)
 
-- [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)
+- [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
-- [Service configuration improvements in .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
+- [Service configuration improvements in .NET Framework 4](https://docs.microsoft.com/archive/blogs/endpoint/service-configuration-improvements-in-net-4)
 
-- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)
+- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://docs.microsoft.com/archive/blogs/endpoint/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name)
 
 ### Simplified Configuration Scenarios
 
@@ -120,9 +121,9 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ### Getting Started
 
-- [Data Contract Resolver API documentation](https://go.microsoft.com/fwlink/?LinkId=204946)
+- [Data Contract Resolver API documentation](xref:System.Runtime.Serialization.DataContractResolver)
 
-- [Introducing the Data Contract Resolver](https://go.microsoft.com/fwlink/?LinkId=204947)
+- [Introducing the Data Contract Resolver](https://docs.microsoft.com/archive/blogs/youssefm/configuring-known-types-dynamically-introducing-the-datacontractresolver)
 
 - Samples:
 
@@ -138,7 +139,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ## Flowchart
 
-Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we’re introducing in .NET 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
+Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we're introducing in .NET 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
 
 ### Getting Started
 
@@ -168,7 +169,7 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
 ### Flowchart Scenarios
 
-A flowchart activity can be used to implement a guessing game. The guessing game is very simple: the computer selects a random number and the player has to guess that number. When the player submits each guess, the computer shows him a hint (i.e. "try a lower number"). If the player finds the number in less than 7 attempts, he receives a special congratulation from the computer. This game can be implemented with a combination of the following procedural activities:
+A flowchart activity can be used to implement a guessing game. The guessing game is very simple: the computer selects a random number and the player has to guess that number. When the player submits each guess, the computer shows them a hint (i.e. "try a lower number"). If the player finds the number in less than 7 attempts, they receive a special congratulation from the computer. This game can be implemented with a combination of the following procedural activities:
 
 - <xref:System.Activities.Statements.Sequence>
 
@@ -184,7 +185,7 @@ A flowchart activity can be used to implement a guessing game. The guessing game
 
 ## Procedural activities (Sequence, If, ForEach, Switch, Assign, DoWhile, While)
 
-Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C#/VB.
+Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C# and Visual Basic.
 
 ### Getting Started
 
@@ -204,9 +205,9 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 ### Procedural Activity Scenarios
 
-- <xref:System.Activities.Statements.Parallel>: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn’t an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review it must be approved by her direct manager, the intranet administrator, and the internal communications manager.
+- <xref:System.Activities.Statements.Parallel>: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn't an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review, it must be approved by their direct manager, the intranet administrator, and the internal communications manager.
 
-- <xref:System.Activities.Statements.ParallelForEach%601>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company’s vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach%601> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.
+- <xref:System.Activities.Statements.ParallelForEach%601>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company's vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach%601> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.
 
 ## InvokeMethod
 
@@ -226,7 +227,7 @@ The <xref:System.Activities.Statements.InvokeMethod> activity allows invoking pu
 
 ## Error handling activities
 
-The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C#/VB). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
+The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C# and Visual Basic). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won't be executed. This behavior is consistent with C#.
 
 ### Getting Started
 
@@ -254,7 +255,7 @@ The <xref:System.Activities.Statements.Pick> Activity provides event-based contr
 
 ### Pick Scenario
 
-A user needs to be prompted for input. Under normal circumstances, the developer would use a method call like <xref:System.Console.ReadLine%2A> to prompt for a user’s input. The problem with this setup is that the program waits until the user enters something. In this scenario, a time-out is needed to unblock a blocking activity. A common scenario is one that requires a task to be completed within a given time duration. Timing out a blocking activity is a scenario where Pick adds a lot of value.
+A user needs to be prompted for input. Under normal circumstances, the developer would use a method call like <xref:System.Console.ReadLine%2A> to prompt for a user's input. The problem with this setup is that the program waits until the user enters something. In this scenario, a time-out is needed to unblock a blocking activity. A common scenario is one that requires a task to be completed within a given time duration. Timing out a blocking activity is a scenario where Pick adds a lot of value.
 
 ## WCF Routing Service
 
@@ -282,7 +283,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 2. Samples: [Routing Services &#91;WCF Samples&#93;](../wcf/samples/routing-services.md)
 
-3. Blog: [Routing Rules!](https://go.microsoft.com/fwlink/?LinkId=204956)
+3. Blog: [Routing Rules!](https://docs.microsoft.com/archive/blogs/RoutingRules/)
 
 ### Routing Scenarios
 
@@ -302,7 +303,7 @@ The routing service is useful in the following scenarios:
 
 WCF Discovery is a framework technology that allows you to incorporate a discovery mechanism to your application infrastructure. You can use this to make your service discoverable, and configure your clients to search for services. Clients no longer need to be hard coded with endpoint, making your application more robust and fault tolerant. Discovery is the perfect platform to build auto-configuration capabilities into your application.
 
-The product is built on top of the WS-Discovery standard. It’s designed to be interoperable, extensible, and generic. The product supports two modes of operation:
+The product is built on top of the WS-Discovery standard. It's designed to be interoperable, extensible, and generic. The product supports two modes of operation:
 
 1. Managed: where there is an entity on the network knowledgeable about existing services, clients query it directly for information. This is analogous to Active Directory.
 
@@ -350,6 +351,6 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL
 
 1. In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.
 
-2. Samples: [Persistence](./samples/persistence.md)
+2. Samples: [Persistence](/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100))
 
 3. Conceptual documentation: [SQL Workflow Instance Store](sql-workflow-instance-store.md).

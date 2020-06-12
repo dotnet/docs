@@ -1,5 +1,5 @@
 ---
-title: "Implementing IEnumerable in Visual Basic"
+title: "Implementing IEnumerable"
 ms.date: 07/31/2018
 helpviewer_keywords: 
   - "control flow [Visual Basic]"
@@ -79,7 +79,7 @@ The <xref:System.Collections.Generic.IEnumerable%601> interface is implemented b
 
 7. The `Dispose` method of the `IEnumerator` interface guarantees that all unmanaged resources are released before the iterator is destroyed. The file handle that is used by the `StreamReader` object is an unmanaged resource and must be closed before the iterator instance is destroyed. Replace the code that Visual Basic generated for the `Dispose` method with the following code.
 
-     [!code-vb[VbVbalrIteratorWalkthrough#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/StreamReaderIterator.vb#9)] 
+     [!code-vb[VbVbalrIteratorWalkthrough#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/StreamReaderIterator.vb#9)]
   
 ## Using the Sample Iterator
 
@@ -89,7 +89,7 @@ The <xref:System.Collections.Generic.IEnumerable%601> interface is implemented b
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
-- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)
+- [Control Flow](index.md)
+- [Loop Structures](loop-structures.md)
+- [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md)

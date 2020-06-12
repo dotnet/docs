@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: 5854bfb2-c568-4f19-904a-7c9d41e7b995
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeResumeStarted Method
 Notifies the profiler that the runtime is resuming all run-time threads.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeResumeStarted();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -38,5 +36,5 @@ HRESULT RuntimeResumeStarted();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [RuntimeResumeFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimeresumefinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [RuntimeResumeFinished Method](icorprofilercallback-runtimeresumefinished-method.md)

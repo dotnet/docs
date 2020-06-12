@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
 ---
 # UDP Activation
-This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. It extends the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
+This sample is based on the [Transport: UDP](transport-udp.md) sample. It extends the [Transport: UDP](transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
   
  The sample consists of three major pieces:  
   
@@ -71,7 +71,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
@@ -92,7 +92,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 4. Click the **Activation** tab of the user interface application "WasNetActivator.exe". Click the **Start** button to start the listener adapter. Now you are ready to run the program.  
   
     > [!NOTE]
-    >  When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
+    > When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
   
 ## Sample Usage  
  After compilation, there are four different binaries generated:  
@@ -117,7 +117,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 3. Once the activator is started, you can run the client code by running Client.exe from a command window. The following is the sample output:  
   
-    ```  
+    ```console  
     Testing Udp Activation.  
     Start the status service.  
     Sending UDP datagrams.  
@@ -148,10 +148,10 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
     ```  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  

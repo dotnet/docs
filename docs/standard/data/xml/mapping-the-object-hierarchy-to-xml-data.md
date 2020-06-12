@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mapping the Object Hierarchy to XML Data
 When an XML document is in memory, the conceptual representation is a tree. For programming, you have an object hierarchy to access the nodes of the tree. The following example shows you how the XML content becomes nodes.  
@@ -26,7 +24,7 @@ When an XML document is in memory, the conceptual representation is a tree. For 
   
  The input is represented in memory as the following node tree with the assigned node type property:  
   
- ![example node tree](../../../../docs/standard/data/xml/media/simple-xml.gif "Simple_XML")  
+ ![example node tree](media/simple-xml.gif "Simple_XML")  
 Book and title node tree representation  
   
  The `book` element becomes an **XmlElement** object, the next element, `title`, also becomes an **XmlElement**, while the element content becomes an **XmlText** object. In looking at the **XmlElement** methods and properties, the methods and properties are different than the methods and properties available on an **XmlText** object. So knowing what node type the XML markup becomes is vital, as its node type determines the actions that can be performed.  
@@ -64,8 +62,8 @@ Public Class Sample
         Dim reader As XmlTextReader = Nothing  
   
         Try  
-            ' Load the reader with the data file and   
-            'ignore all white space nodes.   
+            ' Load the reader with the data file and
+            'ignore all white space nodes.
             reader = New XmlTextReader(filename)  
             reader.WhitespaceHandling = WhitespaceHandling.None  
   
@@ -118,7 +116,7 @@ public class Sample
   
         try  
         {  
-            // Load the reader with the data file and ignore   
+            // Load the reader with the data file and ignore
             // all white space nodes.  
             reader = new XmlTextReader(filename);  
             reader.WhitespaceHandling = WhitespaceHandling.None;  
@@ -175,7 +173,7 @@ public class Sample
  **Output**  
   
 ```xml  
-<?xml version='1.0'?><!--This is a sample XML document --><!DOCTYPE Items [<!ENTITY number "123">]<Items><Item>Test with an entity: 123</Item><Item>test with a child element <more> stuff</Item><Item>test with a CDATA section <![CDATA[<456>]]> def</Item><Item>Test with a char entity: A</Item><--Fourteen chars in this element.--><Item>1234567890ABCD</Item></Items>  
+<?xml version='1.0'?><!--This is a sample XML document --><!DOCTYPE Items [<!ENTITY number "123">]<Items><Item>Test with an entity: 123</Item><Item>test with a child element <more> stuff</Item><Item>test with a CDATA section <![CDATA[<456>]]> def</Item><Item>Test with a char entity: A</Item><--Fourteen chars in this element.--><Item>1234567890ABCD</Item></Items>
 ```  
   
  Taking the input one line at a time and using the output generated from the code, you can use the following table to analyze what node test generated which lines of output, thereby understanding what XML data became what kind of node type.  
@@ -210,10 +208,10 @@ public class Sample
   
  You must know what node type is assigned, as the node type controls what kinds of actions are valid and what kind of properties you can set and retrieve.  
   
- Node creation for white space is controlled when the data is loaded into the DOM by the **PreserveWhitespace** flag. For more information, see [White Space and Significant White Space Handling when Loading the DOM](../../../../docs/standard/data/xml/white-space-and-significant-white-space-handling-when-loading-the-dom.md).  
+ Node creation for white space is controlled when the data is loaded into the DOM by the **PreserveWhitespace** flag. For more information, see [White Space and Significant White Space Handling when Loading the DOM](white-space-and-significant-white-space-handling-when-loading-the-dom.md).  
   
- To add new nodes to the DOM, see [Inserting Nodes into an XML Document](../../../../docs/standard/data/xml/inserting-nodes-into-an-xml-document.md). To remove nodes from the DOM, see [Removing Nodes, Content, and Values from an XML Document](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md). To modify the content of nodes in the DOM, see [Modifying Nodes, Content, and Values in an XML Document](../../../../docs/standard/data/xml/modifying-nodes-content-and-values-in-an-xml-document.md).  
+ To add new nodes to the DOM, see [Inserting Nodes into an XML Document](inserting-nodes-into-an-xml-document.md). To remove nodes from the DOM, see [Removing Nodes, Content, and Values from an XML Document](removing-nodes-content-and-values-from-an-xml-document.md). To modify the content of nodes in the DOM, see [Modifying Nodes, Content, and Values in an XML Document](modifying-nodes-content-and-values-in-an-xml-document.md).  
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

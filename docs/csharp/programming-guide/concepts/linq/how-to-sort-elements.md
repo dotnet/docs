@@ -1,13 +1,13 @@
 ---
-title: "How to: Sort Elements (C#)"
+title: "How to sort elements (C#)"
 ms.date: 07/20/2015
 ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 ---
-# How to: Sort Elements (C#)
+# How to sort elements (C#)
 This example shows how to write a query that sorts its results.  
   
 ## Example  
- This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](./sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```csharp  
 XElement root = XElement.Load("Data.xml");  
@@ -22,7 +22,7 @@ foreach (decimal el in prices)
   
  This code produces the following output:  
   
-```  
+```output  
 0.99  
 4.95  
 6.99  
@@ -33,9 +33,9 @@ foreach (decimal el in prices)
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
- This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](./sample-xml-file-numerical-data-in-a-namespace.md).  
   
 ```csharp  
 XElement root = XElement.Load("DataInNamespace.xml");  
@@ -51,7 +51,7 @@ foreach (decimal el in prices)
   
  This code produces the following output:  
   
-```  
+```output  
 0.99  
 4.95  
 6.99  
@@ -63,5 +63,4 @@ foreach (decimal el in prices)
   
 ## See also
 
-- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Sorting Data (C#)](./sorting-data.md)

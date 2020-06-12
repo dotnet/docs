@@ -70,14 +70,14 @@ The [PageSetupDialog](pagesetupdialog-component-windows-forms.md) component pres
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
     ```  
   
     ```cpp  
-    this->button1->Click += gcnew   
+    this->button1->Click += gcnew
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   

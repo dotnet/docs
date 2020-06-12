@@ -1,5 +1,5 @@
 ---
-title: "Integer Data Type (Visual Basic)"
+title: "Integer Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Integer"
@@ -23,9 +23,11 @@ helpviewer_keywords:
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 ---
 # Integer data type (Visual Basic)
+
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
   
 ## Remarks
+
  The `Integer` data type provides optimal performance on a 32-bit processor. The other integral types are slower to load and store from and to memory.  
   
  The default value of `Integer` is 0.  
@@ -90,9 +92,9 @@ k = 5.5
 ## See also
 
 - <xref:System.Int32?displayProperty=nameWithType>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)
-- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Data Types](index.md)
+- [Long Data Type](long-data-type.md)
+- [Short Data Type](short-data-type.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

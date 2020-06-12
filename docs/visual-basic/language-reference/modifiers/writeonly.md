@@ -1,5 +1,5 @@
 ---
-title: "WriteOnly (Visual Basic)"
+title: "WriteOnly"
 ms.date: 07/20/2015
 f1_keywords: 
   - "WriteOnly"
@@ -26,11 +26,11 @@ Specifies that a property can be written but not read.
  Sometimes you want the consuming code to be able to set a value but not discover what it is. For example, sensitive data, such as a social registration number or a password, needs to be protected from access by any component that did not set it. In these cases, you can use a `WriteOnly` property to set the value.  
   
 > [!IMPORTANT]
->  When you define and use a `WriteOnly` property, consider the following additional protective measures:  
+> When you define and use a `WriteOnly` property, consider the following additional protective measures:  
   
-- **Overriding.** If the property is a member of a class, allow it to default to [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md), and do not declare it `Overridable` or `MustOverride`. This prevents a derived class from making undesired access through an override.  
+- **Overriding.** If the property is a member of a class, allow it to default to [NotOverridable](notoverridable.md), and do not declare it `Overridable` or `MustOverride`. This prevents a derived class from making undesired access through an override.  
   
-- **Access Level.** If you hold the property's sensitive data in one or more variables, declare them [Private](../../../visual-basic/language-reference/modifiers/private.md) so that no other code can access them.  
+- **Access Level.** If you hold the property's sensitive data in one or more variables, declare them [Private](private.md) so that no other code can access them.  
   
 - **Encryption.** Store all sensitive data in encrypted form rather than in plain text. If malicious code somehow gains access to that area of memory, it is more difficult to make use of the data. Encryption is also useful if it is necessary to serialize the sensitive data.  
   
@@ -40,10 +40,10 @@ Specifies that a property can be written but not read.
   
  The `WriteOnly` modifier can be used in this context:  
   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](../statements/property-statement.md)  
   
 ## See also
 
-- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)
-- [Private](../../../visual-basic/language-reference/modifiers/private.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [ReadOnly](readonly.md)
+- [Private](private.md)
+- [Keywords](../keywords/index.md)

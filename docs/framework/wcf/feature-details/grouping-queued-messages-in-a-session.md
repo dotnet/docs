@@ -18,28 +18,28 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
   
 #### To set up a service contract to use sessions  
   
-1. Define a service contract that requires a session. Do this with the <xref:System.ServiceModel.OperationContractAttribute> attribute and by specifying:  
+1. Define a service contract that requires a session. Do this with the <xref:System.ServiceModel.ServiceContractAttribute> attribute by specifying:  
   
-    ```  
+    ```csharp
     SessionMode=SessionMode.Required  
     ```  
   
-2. Mark the operations in the contract as one-way, because these methods do not return anything. This is done with the <xref:System.ServiceModel.OperationContractAttribute> attribute and by specifying:  
+2. Mark the operations in the contract as one-way, because these methods do not return anything. This is done with the <xref:System.ServiceModel.OperationContractAttribute> attribute by specifying:  
   
-    ```  
+    ```csharp  
     [OperationContract(IsOneWay = true)]  
     ```  
   
-3. Implement the service contract and specify an `InstanceContextMode` of `PerSession`. This instantiates the service only once for each session.  
+3. Implement the service contract and specify an <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode.PerSession?displayProperty=nameWithType>. This instantiates the service only once for each session.  
   
-    ```  
+    ```csharp  
     [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]  
     ```  
   
-4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set `TransactionAutoComplete` to `true`.  
+4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete> to `true`.  
   
-    ```  
-    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]   
+    ```csharp  
+    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]
     ```  
   
 5. Configure an endpoint that uses the system-provided `NetMsmqBinding` binding.  
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
   
 1. Create a transaction scope to write to the transactional queue.  
   
-2. Create the WCF client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool.  
+2. Create the WCF client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) tool.  
   
 3. Place the order.  
   
@@ -77,5 +77,5 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 
 ## See also
 
-- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
-- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
+- [Sessions and Queues](../samples/sessions-and-queues.md)
+- [Queues Overview](queues-overview.md)

@@ -7,7 +7,7 @@ ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
 
 You can write asynchronous programs more easily and intuitively by using async/await features. You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.
 
-For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).
+For more information about the Async feature, see [Asynchronous Programming with async and await (C#)](./index.md).
 
 This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites. The walkthrough then converts the application to an asynchronous solution by using the new features.
 
@@ -34,7 +34,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
 
 1. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
 
-2. If the **Toolbox** window isn’t visible, open the **View** menu, and then choose **Toolbox**.
+2. If the **Toolbox** window isn't visible, open the **View** menu, and then choose **Toolbox**.
 
 3. Add a **Button** control and a **TextBox** control to the **MainWindow** window.
 
@@ -56,7 +56,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
 
 6. Position the text box and the button so that both appear in the **MainWindow** window.
 
-     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
+     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
 ## Add a reference
 
@@ -68,7 +68,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
 
 3. At the top of the dialog box, verify that your project is targeting the .NET Framework 4.5 or higher.
 
-4. In the **Assemblies** category, choose **Framework** if it isn’t already chosen.
+4. In the **Assemblies** category, choose **Framework** if it isn't already chosen.
 
 5. In the list of names, select the **System.Net.Http** check box.
 
@@ -78,7 +78,7 @@ If you don't want to build the applications yourself, you can download [Async Sa
 
 1. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.
 
-2. Add the following `using` directives at the top of the code file if they’re not already present.
+2. Add the following `using` directives at the top of the code file if they're not already present.
 
     ```csharp
     using System.Net.Http;
@@ -212,11 +212,11 @@ Total bytes returned:  1834802
 Control returned to startButton_Click.
 ```
 
-Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.
+Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn't responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.
 
 ## Convert GetURLContents to an asynchronous method
 
-1. To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest> method <xref:System.Net.HttpWebRequest.GetResponse%2A> and to the <xref:System.IO.Stream> method <xref:System.IO.Stream.CopyTo%2A> are where the application accesses the web. The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.
+1. To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest> method <xref:System.Net.HttpWebRequest.GetResponse%2A> and to the <xref:System.IO.Stream> method <xref:System.IO.Stream.CopyTo%2A> are where the application accesses the web. .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.
 
      For more information about the methods that are used in `GetURLContents`, see <xref:System.Net.WebRequest>.
 
@@ -231,7 +231,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 2. `GetResponseAsync` returns a <xref:System.Threading.Tasks.Task%601>. In this case, the *task return variable*, `TResult`, has type <xref:System.Net.WebResponse>. The task is a promise to produce an actual `WebResponse` object after the requested data has been downloaded and the task has run to completion.
 
-     To retrieve the `WebResponse` value from the task, apply an [await](../../../../csharp/language-reference/keywords/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
+     To retrieve the `WebResponse` value from the task, apply an [await](../../../language-reference/operators/await.md) operator to the call to `GetResponseAsync`, as the following code shows.
 
     ```csharp
     using (WebResponse response = await webReq.GetResponseAsync())
@@ -248,13 +248,13 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
      The call to `webReq.GetResponseAsync` returns a `Task(Of WebResponse)` or `Task<WebResponse>`. Then an await operator is applied to the task to retrieve the `WebResponse` value.
 
-     If your async method has work to do that doesn’t depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the `await` operator is applied. For examples, see [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) and [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
+     If your async method has work to do that doesn't depend on the completion of the task, the method can continue with that work between these two statements, after the call to the async method and before the `await` operator is applied. For examples, see [How to make multiple web requests in parallel by using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) and [How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
 
-3. Because you added the `await` operator in the previous step, a compiler error occurs. The operator can be used only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Ignore the error while you repeat the conversion steps to replace the call to `CopyTo` with a call to `CopyToAsync`.
+3. Because you added the `await` operator in the previous step, a compiler error occurs. The operator can be used only in methods that are marked with the [async](../../../language-reference/keywords/async.md) modifier. Ignore the error while you repeat the conversion steps to replace the call to `CopyTo` with a call to `CopyToAsync`.
 
-    - Change the name of the method that’s called to <xref:System.IO.Stream.CopyToAsync%2A>.
+    - Change the name of the method that's called to <xref:System.IO.Stream.CopyToAsync%2A>.
 
-    - The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.
+    - The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn't return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.
 
         ```csharp
         await responseStream.CopyToAsync(content);
@@ -271,15 +271,15 @@ Notice that it takes a few seconds to display the counts. During that time, the 
         //await copyTask;
         ```
 
-4. All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../../csharp/language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.
+4. All that remains to be done in `GetURLContents` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.
 
     ```csharp
     private async byte[] GetURLContents(string url)
     ```
 
-5. The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../../csharp/language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn’t return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."
+5. The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task(T)` if the completed method has a [return](../../../language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn't return a meaningful value. You can think of the `Task` return type as meaning "Task(void)."
 
-     For more information, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).
+     For more information, see [Async Return Types (C#)](./async-return-types.md).
 
      Method `GetURLContents` has a return statement, and the statement returns a byte array. Therefore, the return type of the async version is Task(T), where T is a byte array. Make the following changes in the method signature:
 
@@ -299,7 +299,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 1. Repeat the steps from the previous procedure for `SumPageSizes`. First, change the call to `GetURLContents` to an asynchronous call.
 
-    - Change the name of the method that’s called from `GetURLContents` to `GetURLContentsAsync`, if you haven't already done so.
+    - Change the name of the method that's called from `GetURLContents` to `GetURLContentsAsync`, if you haven't already done so.
 
     - Apply `await` to the task that `GetURLContentsAsync` returns to obtain the byte array value.
 
@@ -324,7 +324,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
     - Add "Async" to the method name.
 
-    - There is no task return variable, T, this time because `SumPageSizesAsync` doesn’t return a value for T. (The method has no `return` statement.) However, the method must return a `Task` to be awaitable. Therefore, change the return type of the method from `void` to `Task`.
+    - There is no task return variable, T, this time because `SumPageSizesAsync` doesn't return a value for T. (The method has no `return` statement.) However, the method must return a `Task` to be awaitable. Therefore, change the return type of the method from `void` to `Task`.
 
     The following code shows these changes.
 
@@ -336,7 +336,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 ## Convert startButton_Click to an asynchronous method
 
-1. In the event handler, change the name of the called method from `SumPageSizes` to `SumPageSizesAsync`, if you haven’t already done so.
+1. In the event handler, change the name of the called method from `SumPageSizes` to `SumPageSizesAsync`, if you haven't already done so.
 
 2. Because `SumPageSizesAsync` is an async method, change the code in the event handler to await the result.
 
@@ -367,7 +367,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
     startButton.IsEnabled = true;
     ```
 
-     For more information about reentrancy, see [Handling Reentrancy in Async Apps (C#)](../../../../csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md).
+     For more information about reentrancy, see [Handling Reentrancy in Async Apps (C#)](./handling-reentrancy-in-async-apps.md).
 
 4. Finally, add the `async` modifier to the declaration so that the event handler can await `SumPagSizesAsync`.
 
@@ -375,7 +375,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
     private async void startButton_Click(object sender, RoutedEventArgs e)
     ```
 
-     Typically, the names of event handlers aren’t changed. The return type isn’t changed to `Task` because event handlers must return `void`.
+     Typically, the names of event handlers aren't changed. The return type isn't changed to `Task` because event handlers must return `void`.
 
      The conversion of the project from synchronous to asynchronous processing is complete.
 
@@ -385,13 +385,13 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 2. Output that resembles the output of the synchronous solution should appear. However, notice the following differences.
 
-    - The results don’t all occur at the same time, after the processing is complete. For example, both programs contain a line in `startButton_Click` that clears the text box. The intent is to clear the text box between runs if you choose the **Start** button for a second time, after one set of results has appeared. In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work. In the asynchronous version, the text box clears immediately after you choose the **Start** button.
+    - The results don't all occur at the same time, after the processing is complete. For example, both programs contain a line in `startButton_Click` that clears the text box. The intent is to clear the text box between runs if you choose the **Start** button for a second time, after one set of results has appeared. In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work. In the asynchronous version, the text box clears immediately after you choose the **Start** button.
 
-    - Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).
+    - Most importantly, the UI thread isn't blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).
 
-## Replace method GetURLContentsAsync with a .NET Framework method
+## Replace method GetURLContentsAsync with a .NET method
 
-1. The .NET Framework 4.5 provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
+1. .NET Framework 4.5 and later versions provide many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
 
      The first step is to create an `HttpClient` object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.
 
@@ -684,11 +684,11 @@ namespace AsyncExampleWPF
 
 ## See also
 
-- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
-- [async](../../../../csharp/language-reference/keywords/async.md)
-- [await](../../../../csharp/language-reference/keywords/await.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)
-- [Task-based Asynchronous Programming (TAP)](https://www.microsoft.com/en-us/download/details.aspx?id=19957)
-- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](../../../../csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
-- [How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
+- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/hh300224(v=vs.110))
+- [async](../../../language-reference/keywords/async.md)
+- [await](../../../language-reference/operators/await.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [Async Return Types (C#)](./async-return-types.md)
+- [Task-based Asynchronous Programming (TAP)](https://www.microsoft.com/download/details.aspx?id=19957)
+- [How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [How to make multiple web requests in parallel by using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

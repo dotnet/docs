@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStringValue::GetLength Method
 Gets the number of characters in the string referenced by this ICorDebugStringValue.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLength (  
     [out] ULONG32   *pcchString  
 );  
@@ -34,7 +32,7 @@ HRESULT GetLength (
  [out] A pointer to a value that specifies the length of the string referenced by this `ICorDebugStringValue` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

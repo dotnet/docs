@@ -1,5 +1,5 @@
 ---
-title: "Working with Dynamic Objects (Visual Basic)"
+title: "Working with Dynamic Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
@@ -17,4 +17,4 @@ Dynamic objects provide another way, other than the `Object` type, to late bind 
 - <xref:System.Dynamic.DynamicObject>
 - <xref:System.Dynamic.ExpandoObject>
 - [Walkthrough: Creating and Using Dynamic Objects](../../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
-- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [Early and Late Binding](index.md)

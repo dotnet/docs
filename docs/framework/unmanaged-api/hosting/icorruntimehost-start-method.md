@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c66f3ac5-6489-484a-9bed-c31b711cee01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::Start Method
 Starts the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start ();  
 ```  
   
@@ -40,7 +38,7 @@ HRESULT Start ();
  It is typically not necessary to call the `Start` method, because the CLR starts automatically upon the first request to run managed code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,4 +48,4 @@ HRESULT Start ();
   
 ## See also
 
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

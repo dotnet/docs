@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c2541c30-fa6e-43b6-9682-77d8898f33e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::CreateBreakpoint Method
 This method has not been implemented in the current version of the .NET Framework.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint(  
     [out] ICorDebugModuleBreakpoint **ppBreakpoint  
 );  

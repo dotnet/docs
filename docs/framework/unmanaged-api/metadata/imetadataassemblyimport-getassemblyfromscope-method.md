@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::GetAssemblyFromScope Method
 Gets a pointer to the assembly in the current scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyFromScope (  
     [out] mdAssembly  *ptkAssembly  
 );  
@@ -34,7 +32,7 @@ HRESULT GetAssemblyFromScope (
  [out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,4 +42,4 @@ HRESULT GetAssemblyFromScope (
   
 ## See also
 
-- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

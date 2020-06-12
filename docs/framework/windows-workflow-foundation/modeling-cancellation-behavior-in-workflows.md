@@ -10,7 +10,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  Transactions give your application the ability to abort (roll back) all changes executed within the transaction if any errors occur during any part of the transaction process. However, not all work that may need to be canceled or undone is appropriate for transactions, such as long-running work or work that does not involve transactional resources. Compensation provides a model for undoing previously completed non-transactional work if there is a subsequent failure in the workflow. Cancellation provides a model for workflow and activity authors to handle non-transactional work that was not completed. If an activity has not completed its execution and it is canceled, its cancellation logic will be invoked if it is available.  
   
 > [!NOTE]
->  For more information about transactions and compensation, see [Transactions](workflow-transactions.md) and [Compensation](compensation.md).  
+> For more information about transactions and compensation, see [Transactions](workflow-transactions.md) and [Compensation](compensation.md).  
   
 ## Using CancellationScope  
  The <xref:System.Activities.Statements.CancellationScope> activity has two sections that can contain child activities: <xref:System.Activities.Statements.CancellationScope.Body%2A> and <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>. The <xref:System.Activities.Statements.CancellationScope.Body%2A> is where the activities that make up the logic of the activity are placed, and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> is where the activities that provide cancellation logic for the activity are placed. An activity can be canceled only if it has not completed. In the case of the <xref:System.Activities.Statements.CancellationScope> activity, completion refers to the completion of the activities in the <xref:System.Activities.Statements.CancellationScope.Body%2A>. If a cancellation request is scheduled and the activities in the <xref:System.Activities.Statements.CancellationScope.Body%2A> have not completed, then the <xref:System.Activities.Statements.CancellationScope> will be marked as <xref:System.Activities.ActivityInstanceState.Canceled> and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> activities will be executed.  
@@ -23,10 +23,10 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  When this workflow is invoked, the following output is displayed to the console.  
   
  **Starting the workflow.**  
-**CancellationHandler invoked.**   
-**Workflow b30ebb30-df46-4d90-a211-e31c38d8db3c Canceled.**    
+**CancellationHandler invoked.**
+**Workflow b30ebb30-df46-4d90-a211-e31c38d8db3c Canceled.**
 > [!NOTE]
->  When a <xref:System.Activities.Statements.CancellationScope> activity is canceled and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> invoked, it is the responsibility of the workflow author to determine the progress that the canceled activity made before it was canceled in order to provide the appropriate cancellation logic. The <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> does not provide any information about the progress of the canceled activity.  
+> When a <xref:System.Activities.Statements.CancellationScope> activity is canceled and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> invoked, it is the responsibility of the workflow author to determine the progress that the canceled activity made before it was canceled in order to provide the appropriate cancellation logic. The <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> does not provide any information about the progress of the canceled activity.  
   
  A workflow can also be canceled from the host if an unhandled exception bubbles up past the root of the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler returns <xref:System.Activities.UnhandledExceptionAction.Cancel>. In this example the workflow starts and then throws an <xref:System.ApplicationException>. This exception is unhandled by the workflow and so the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The handler instructs the runtime to cancel the workflow, and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> of the currently executing <xref:System.Activities.Statements.CancellationScope> activity is invoked.  
   
@@ -35,10 +35,10 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  When this workflow is invoked, the following output is displayed to the console.  
   
  **Starting the workflow.**  
-**OnUnhandledException in Workflow 6bb2d5d6-f49a-4c6d-a988-478afb86dbe9**   
-**An ApplicationException was thrown.**   
-**CancellationHandler invoked.**   
-**Workflow 6bb2d5d6-f49a-4c6d-a988-478afb86dbe9 Canceled.**    
+**OnUnhandledException in Workflow 6bb2d5d6-f49a-4c6d-a988-478afb86dbe9**
+**An ApplicationException was thrown.**
+**CancellationHandler invoked.**
+**Workflow 6bb2d5d6-f49a-4c6d-a988-478afb86dbe9 Canceled.**
 ### Canceling an Activity from Inside a Workflow  
  An activity can also be canceled by its parent. For example, if a <xref:System.Activities.Statements.Parallel> activity has multiple executing branches and its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> evaluates to `true` then its incomplete branches will be canceled. In this example a <xref:System.Activities.Statements.Parallel> activity is created that has two branches. Its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> is set to `true` so the <xref:System.Activities.Statements.Parallel> completes as soon as any one of its branches is completed. In this example branch 2 completes, and so branch 1 is canceled.  
   
@@ -47,8 +47,8 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  When this workflow is invoked, the following output is displayed to the console.  
   
  **Branch 1 starting.**  
-**Branch 2 complete.**   
-**Branch 1 canceled.**   
+**Branch 2 complete.**
+**Branch 1 canceled.**
 **Workflow e0685e24-18ef-4a47-acf3-5c638732f3be Completed.**  Activities are also canceled if an exception bubbles up past the root of the activity but is handled at a higher level in the workflow. In this example, the main logic of the workflow consists of a <xref:System.Activities.Statements.Sequence> activity. The <xref:System.Activities.Statements.Sequence> is specified as the <xref:System.Activities.Statements.CancellationScope.Body%2A> of a <xref:System.Activities.Statements.CancellationScope> activity which is contained by a <xref:System.Activities.Statements.TryCatch> activity. An exception is thrown from the body of the <xref:System.Activities.Statements.Sequence>, is handled by the parent <xref:System.Activities.Statements.TryCatch> activity, and the <xref:System.Activities.Statements.Sequence> is canceled.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#39](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#39)]  
@@ -56,9 +56,9 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  When this workflow is invoked, the following output is displayed to the console.  
   
  **Sequence starting.**  
-**Sequence canceled.**   
-**Exception caught.**   
-**Workflow e3c18939-121e-4c43-af1c-ba1ce977ce55 Completed.**   
+**Sequence canceled.**
+**Exception caught.**
+**Workflow e3c18939-121e-4c43-af1c-ba1ce977ce55 Completed.**
 ### Throwing Exceptions from a CancellationHandler  
  Any exceptions thrown from the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> of a <xref:System.Activities.Statements.CancellationScope> are fatal to the workflow. If there is a possibility of exceptions escaping from a <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>, use a <xref:System.Activities.Statements.TryCatch> in the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> to catch and handle these exceptions.  
   

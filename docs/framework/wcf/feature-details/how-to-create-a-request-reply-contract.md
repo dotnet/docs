@@ -29,10 +29,10 @@ public interface ICalculator
     // It would be equivalent to write explicitly:
     // [OperationContract(IsOneWay=false)]
     int Add(int a, int b);
-    
+
     [OperationContract]
     int Subtract(int a, int b);
-    
+
     int Multiply(int a, int b)
 }
 ```
@@ -44,5 +44,5 @@ public interface ICalculator
 ## See also
 
 - <xref:System.ServiceModel.OperationContractAttribute>
-- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
-- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Designing Service Contracts](../designing-service-contracts.md)
+- [How to: Create a Duplex Contract](how-to-create-a-duplex-contract.md)

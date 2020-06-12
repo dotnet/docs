@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate Strings That Represent Dates or Times (Visual Basic)"
+title: "How to: Validate Strings That Represent Dates or Times"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], validating"
@@ -12,7 +12,7 @@ The following code example sets a `Boolean` value that indicates whether a strin
 ## Example  
  [!code-vb[VbVbcnRegEx#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#2)]  
   
-## Compiling the Code  
+## Compile the code  
  Replace `("01/01/03")` and `"9:30 PM"` with the date and time you want to validate. You can replace the string with another hard-coded string, with a `String` variable, or with a method that returns a string, such as `InputBox`.  
   
 ## Robust Programming  
@@ -22,4 +22,4 @@ The following code example sets a `Boolean` value that indicates whether a strin
 
 - <xref:Microsoft.VisualBasic.Information.IsDate%2A>
 - <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>
-- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)
+- [Validating Strings in Visual Basic](validating-strings.md)

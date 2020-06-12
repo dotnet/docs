@@ -1,7 +1,5 @@
 ---
 title: "goto statement - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "goto_CSharpKeyword"
@@ -40,4 +38,3 @@ The following example demonstrates using `goto` to break out from nested loops.
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [goto Statement (C++)](/cpp/cpp/goto-statement-cpp)
-- [Jump Statements](jump-statements.md)

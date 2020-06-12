@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: c128b79a-3e31-47d8-9e66-3470f570a056
 ---
 # How to: Render Images with GDI+
-You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] to render images that exist as files in your applications. You do this by creating a new object of an <xref:System.Drawing.Image> class (such as <xref:System.Drawing.Bitmap>), creating a <xref:System.Drawing.Graphics> object that refers to the drawing surface you want to use, and calling the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. The image will be painted onto the drawing surface represented by the graphics class. You can use the Image Editor to create and edit image files at design time, and render them with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] at run time. For more information, see [Image Editor for Icons](/cpp/windows/image-editor-for-icons).  
+You can use GDI+ to render images that exist as files in your applications. You do this by creating a new object of an <xref:System.Drawing.Image> class (such as <xref:System.Drawing.Bitmap>), creating a <xref:System.Drawing.Graphics> object that refers to the drawing surface you want to use, and calling the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. The image will be painted onto the drawing surface represented by the graphics class. You can use the Image Editor to create and edit image files at design time, and render them with GDI+ at run time. For more information, see [Image Editor for Icons](/cpp/windows/image-editor-for-icons).  
   
 ### To render an image with GDI+  
   
 1. Create an object representing the image you want to display. This object must be a member of a class that inherits from <xref:System.Drawing.Image>, such as <xref:System.Drawing.Bitmap> or <xref:System.Drawing.Imaging.Metafile>. An example is shown:  
   
     ```vb  
-    ' Uses the System.Environment.GetFolderPath to get the path to the   
+    ' Uses the System.Environment.GetFolderPath to get the path to the
     ' current user's MyPictures folder.  
     Dim myBitmap as New Bitmap _  
        (System.Environment.GetFolderPath _  
@@ -26,7 +26,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     ```  
   
     ```csharp  
-    // Uses the System.Environment.GetFolderPath to get the path to the   
+    // Uses the System.Environment.GetFolderPath to get the path to the
     // current user's MyPictures folder.  
     Bitmap myBitmap = new Bitmap  
        (System.Environment.GetFolderPath  
@@ -34,7 +34,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     ```  
   
     ```cpp  
-    // Uses the System.Environment.GetFolderPath to get the path to the   
+    // Uses the System.Environment.GetFolderPath to get the path to the
     // current user's MyPictures folder.  
     Bitmap^ myBitmap = gcnew Bitmap  
        (System::Environment::GetFolderPath  
@@ -44,19 +44,19 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
 2. Create a <xref:System.Drawing.Graphics> object that represents the drawing surface you want to use. For more information, see [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md).  
   
     ```vb  
-    ' Creates a Graphics object that represents the drawing surface of   
+    ' Creates a Graphics object that represents the drawing surface of
     ' Button1.  
     Dim g as Graphics = Button1.CreateGraphics  
     ```  
   
     ```csharp  
-    // Creates a Graphics object that represents the drawing surface of   
+    // Creates a Graphics object that represents the drawing surface of
     // Button1.  
     Graphics g = Button1.CreateGraphics();  
     ```  
   
     ```cpp  
-    // Creates a Graphics object that represents the drawing surface of   
+    // Creates a Graphics object that represents the drawing surface of
     // Button1.  
     Graphics^ g = button1->CreateGraphics();  
     ```  

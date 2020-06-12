@@ -1,5 +1,6 @@
 ---
 title: "Using UDP Services"
+description: The UdpClient class abstracts the details to create a socket to request and receive data using UDP in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -18,12 +19,13 @@ helpviewer_keywords:
   - "application protocols, UDP"
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
 ---
-# Using UDP Services
+# Use UDP services
+
 The <xref:System.Net.Sockets.UdpClient> class communicates with network services using UDP. The properties and methods of the <xref:System.Net.Sockets.UdpClient> class abstract the details of creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using UDP.
 
 User Datagram Protocol (UDP) is a simple protocol that makes a best effort to deliver data to a remote host. However, because the UDP protocol is a connectionless protocol, UDP datagrams sent to the remote endpoint are not guaranteed to arrive, nor are they guaranteed to arrive in the same sequence in which they are sent. Applications that use UDP must be prepared to handle missing, duplicate, and out-of-sequence datagrams.
 
-To send a datagram using UDP, you must know the network address of the network device hosting the service you need and the UDP port number that the service uses to communicate. The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Services not on the Iana list can have port numbers in the range 1,024 to 65,535.
+To send a datagram using UDP, you must know the network address of the network device hosting the service you need and the UDP port number that the service uses to communicate. The Internet Assigned Numbers Authority (IANA) defines port numbers for common services (see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Services not on the IANA list can have port numbers in the range 1,024 to 65,535.
 
 Special network addresses are used to support UDP broadcast messages on IP-based networks. The following discussion uses the IP version 4 address family used on the Internet as an example.
 
@@ -42,7 +44,7 @@ Imports System.Text
 
 Public Class UDPListener
    Private Const listenPort As Integer = 11000
-   
+
    Private Shared Sub StartListener()
       Dim listener As New UdpClient(listenPort)
       Dim groupEP As New IPEndPoint(IPAddress.Any, listenPort)
@@ -59,7 +61,7 @@ Public Class UDPListener
          listener.Close()
       End Try
    End Sub 'StartListener
-   
+
    Public Shared Sub Main()
       StartListener()
    End Sub 'Main
@@ -75,19 +77,19 @@ using System.Text;
 public class UDPListener
 {
     private const int listenPort = 11000;
-    
+
     private static void StartListener()
     {
         UdpClient listener = new UdpClient(listenPort);
         IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
-        
+
         try
         {
             while (true)
             {
                 Console.WriteLine("Waiting for broadcast");
                 byte[] bytes = listener.Receive(ref groupEP);
-                
+
                 Console.WriteLine($"Received broadcast from {groupEP} :");
                 Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
             }
@@ -101,7 +103,7 @@ public class UDPListener
             listener.Close();
         }
     }
-    
+
     public static void Main()
     {
         StartListener();
@@ -139,14 +141,14 @@ class Program
     static void Main(string[] args)
     {
         Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-        
+
         IPAddress broadcast = IPAddress.Parse("192.168.1.255");
-        
+
         byte[] sendbuf = Encoding.ASCII.GetBytes(args[0]);
         IPEndPoint ep = new IPEndPoint(broadcast, 11000);
-        
+
         s.SendTo(sendbuf, ep);
-        
+
         Console.WriteLine("Message sent to the broadcast address");
     }
 }

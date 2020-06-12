@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d9d7600e-a8f5-443a-96de-67d26e130f2d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifySink2::OnSyncCallExit Method
 Gets invoked when exiting a call.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallExit  
 (  
     [in]  CALL_ID   in_CallID,  
@@ -34,7 +32,7 @@ HRESULT OnSyncCallExit
   
 ## Parameters  
  `in_CallID`  
- [in] ID of the call being exited. See [CALL_ID Structure](../../../../docs/framework/unmanaged-api/diagnostics/call-id-structure.md).  
+ [in] ID of the call being exited. See [CALL_ID Structure](call-id-structure.md).  
   
  `out_ppBuffer`  
  [out] Call buffer.  
@@ -50,6 +48,6 @@ HRESULT OnSyncCallExit
   
 ## See also
 
-- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
+- [INotifySink2 Interface](inotifysink2-interface.md)
+- [INotifySource2 Interface](inotifysource2-interface.md)
+- [INotifyConnection2 Interface](inotifyconnection2-interface.md)

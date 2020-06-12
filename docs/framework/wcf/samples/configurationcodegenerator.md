@@ -10,27 +10,27 @@ The ConfigurationCodeGenerator is a tool that you can use to expose your custom 
   
 ### To build the tool  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. Building the solution generates one file: ConfigurationCodeGenerator.exe. The file SampleRun.cmd has a sample command line that shows how to use this tool to generate the classes for the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
+2. Building the solution generates one file: ConfigurationCodeGenerator.exe. The file SampleRun.cmd has a sample command line that shows how to use this tool to generate the classes for the [Transport: UDP](transport-udp.md) sample.  
   
 ### To run the tool  
   
 1. At the command prompt type the following if you have both a custom `BindingElement` type and a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereTheseTypesAreDefined  
     ```  
   
      Or type the following if you have only a custom `BindingElement` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /dll: TheAssemblyWhereThisTypeIsDefined  
     ```  
   
      Or type the following if you have only a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereThisTypeIsDefined  
     ```  
   

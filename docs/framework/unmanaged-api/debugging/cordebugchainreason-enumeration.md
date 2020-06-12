@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugChainReason Enumeration
 Indicates the reason or reasons for the initiation of a call chain.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugChainReason {  
     CHAIN_NONE              = 0x000,  
     CHAIN_CLASS_INIT        = 0x001,  
@@ -59,10 +57,10 @@ typedef enum CorDebugChainReason {
 |`CHAIN_FUNC_EVAL`|The chain was initiated by a function evaluation.|  
   
 ## Remarks  
- Use the [ICorDebugChain::GetReason](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getreason-method.md) method to ascertain the reasons for the initiation of a call chain.  
+ Use the [ICorDebugChain::GetReason](icordebugchain-getreason-method.md) method to ascertain the reasons for the initiation of a call chain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -72,4 +70,4 @@ typedef enum CorDebugChainReason {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Default Cell Styles for the Windows Forms DataGridView Control"
+title: Set Default Cell Styles for DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

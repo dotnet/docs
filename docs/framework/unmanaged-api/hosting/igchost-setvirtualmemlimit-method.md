@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::SetVirtualMemLimit Method
 Sets the maximum size of the runtime's virtual memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetVirtualMemLimit (  
     [in] SIZE_T sztMaxVirtualMemMB  
 );  
@@ -37,7 +35,7 @@ HRESULT SetVirtualMemLimit (
  The maximum size of the runtime's virtual memory can be changed dynamically.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
@@ -47,4 +45,4 @@ HRESULT SetVirtualMemLimit (
   
 ## See also
 
-- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+- [IGCHost Interface](igchost-interface.md)

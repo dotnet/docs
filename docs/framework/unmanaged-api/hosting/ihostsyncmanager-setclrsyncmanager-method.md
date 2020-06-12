@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2b8bbe76-a45d-4989-bacb-11df42f8798c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::SetCLRSyncManager Method
-Sets the [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md) instance to associate with the current [IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md) instance.  
+Sets the [ICLRSyncManager](iclrsyncmanager-interface.md) instance to associate with the current [IHostSyncManager](ihostsyncmanager-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRSyncManager (  
     [in] ICLRSyncManager *pManager  
 );  
@@ -48,7 +46,7 @@ HRESULT SetCLRSyncManager (
  To facilitate communication between the host and the CLR, hosting interfaces generally come in pairs. One member of the pair is implemented by the host, and the other member is implemented by the CLR. As a host-side implementation, the `IHostSyncManager` interface corresponds to the `ICLRSyncManager` interface implemented by the CLR. The CLR calls `SetCLRSyncManager` to supply an `ICLRSyncManager` instance for the host to associate with the current `IHostSyncManager` instance.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -58,5 +56,5 @@ HRESULT SetCLRSyncManager (
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

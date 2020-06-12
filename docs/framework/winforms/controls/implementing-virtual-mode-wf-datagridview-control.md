@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control"
+title: "Walkthrough: Implement virtual mode in DataGridView control"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

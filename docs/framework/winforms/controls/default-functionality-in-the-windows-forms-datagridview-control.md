@@ -1,5 +1,5 @@
 ---
-title: "Default Functionality in the Windows Forms DataGridView Control"
+title: Default Functionality in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], default functionality in DataGridView control"

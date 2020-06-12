@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d0fdeba3-c195-4ece-8caf-79b1f40025d2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugTypeEnum::Next Method
 Gets the number of "ICorDebugType" instances specified by `celt` from the enumeration, starting at the current position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in]  ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
@@ -43,7 +41,7 @@ HRESULT Next (
  [out] Pointer to the number of `ICorDebugType` instances actually returned. This value may be null if `celt` is one.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

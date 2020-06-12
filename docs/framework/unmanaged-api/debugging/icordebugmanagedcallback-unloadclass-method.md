@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 66a59b18-ce9a-41f4-b23b-4dd6753d6d36
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::UnloadClass Method
 Notifies the debugger that a class is being unloaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadClass (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugClass      *c  
@@ -41,7 +39,7 @@ HRESULT UnloadClass (
  The class should not be referenced after this call.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -51,5 +49,5 @@ HRESULT UnloadClass (
   
 ## See also
 
-- [LoadClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [LoadClass Method](icordebugmanagedcallback-loadclass-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

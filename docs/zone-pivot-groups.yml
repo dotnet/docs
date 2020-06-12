@@ -1,0 +1,22 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: operating-systems-set-one
+  title: Operating System
+  prompt: Choose an operating system
+  pivots:
+  - id: os-windows
+    title: Windows
+  - id: os-linux
+    title: Linux
+  - id: os-macos
+    title: macOS
+- id: unit-testing-framework-set-one
+  title: Unit testing framework
+  prompt: Choose a unit testing framework
+  pivots:
+    - id: mstest
+      title: MSTest
+    - id: xunit
+      title: xUnit
+    - id: nunit
+      title: NUnit

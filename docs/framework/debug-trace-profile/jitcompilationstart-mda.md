@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "JitCompilationStart MDA"
   - "managed debugging assistants (MDAs), JIT compilation"
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # jitCompilationStart MDA
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  
@@ -28,7 +26,7 @@ The `jitCompilationStart` managed debugging assistant (MDA) is activated to repo
 ## Output  
  The following code sample shows sample output. In this case the output shows that in assembly Test the method "m" on class "ns2.CO" was JIT-compiled.  
   
-```  
+```output
 method name="Test!ns2.C0::m"  
 ```  
   
@@ -154,5 +152,5 @@ namespace ns2
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

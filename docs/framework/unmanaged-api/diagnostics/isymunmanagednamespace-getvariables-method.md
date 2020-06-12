@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ea7c1617-f3ce-4220-8288-f2b50eaf0f0f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedNamespace::GetVariables Method
 Returns all variables defined at global scope within this namespace.  
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetVariables(  
     [in]  ULONG32  cVars,  
     [out] ULONG32  *pcVars,  
@@ -49,4 +47,4 @@ HRESULT GetVariables(
   
 ## See also
 
-- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [ISymUnmanagedNamespace Interface](isymunmanagednamespace-interface.md)

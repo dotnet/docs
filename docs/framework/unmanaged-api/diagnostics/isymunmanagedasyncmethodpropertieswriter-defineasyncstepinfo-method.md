@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethodPropertiesWriter::DefineAsyncStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: f738a6ed-7cd9-4106-a5cd-355481e5771c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethodPropertiesWriter::DefineAsyncStepInfo Method
 Define a group of async await operations in the current method.  
@@ -33,4 +31,4 @@ HRESULT DefineAsyncStepInfo(    [in] ULONG32 count,    [in, size_is(count)] ULON
   
 ## See also
 
-- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)
+- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](isymunmanagedasyncmethodpropertieswriter-interface.md)

@@ -2,12 +2,10 @@
 title: "Mitigation: WPF Window Rendering"
 ms.date: "03/30/2017"
 ms.assetid: 28ed6bf8-141b-4b73-a4e3-44a99fae5084
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: WPF Window Rendering
 
-In the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] running on Windows 8 and above, the entire window is rendered without clipping when it extends outside of single display in a multi-monitor scenario.
+In the .NET Framework 4.6 running on Windows 8 and above, the entire window is rendered without clipping when it extends outside of single display in a multi-monitor scenario.
 
 ## Impact
 
@@ -37,4 +35,4 @@ You can disable this change and revert to the previous behavior of clipping a WP
 
 ## See also
 
-- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

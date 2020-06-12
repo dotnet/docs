@@ -1,5 +1,5 @@
 ---
-title: "Structures (Visual Basic)"
+title: "Structures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structures [Visual Basic]"
@@ -18,21 +18,21 @@ A *structure* is a generalization of the user-defined type (UDT) supported by pr
  Structures are useful when you want a single variable to hold several related pieces of information. For example, you might want to keep an employee's name, telephone extension, and salary together. You could use several variables for this information, or you could define a structure and use it for a single employee variable. The advantage of the structure becomes apparent when you have many employees and therefore many instances of the variable.  
   
 ## In This Section  
- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
+ [How to: Declare a Structure](how-to-declare-a-structure.md)  
  Shows how to declare a structure and its elements.  
   
- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)  
+ [Structure Variables](structure-variables.md)  
  Covers assigning a structure to a variable and accessing its elements.  
   
- [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)  
+ [Structures and Other Programming Elements](structures-and-other-programming-elements.md)  
  Summarizes how structures interact with arrays, objects, procedures, and each other.  
   
- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
+ [Structures and Classes](structures-and-classes.md)  
  Describes the similarities and differences between structures and classes.  
   
 ## Related Sections  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
+ [Data Types](index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
+ [Data Types](../../../language-reference/data-types/index.md)  
  Lists the elementary data types supplied by Visual Basic.

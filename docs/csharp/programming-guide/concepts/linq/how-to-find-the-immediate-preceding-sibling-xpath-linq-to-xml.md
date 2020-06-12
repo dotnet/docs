@@ -1,9 +1,9 @@
 ---
-title: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML) (C#)"
+title: "How to find the immediate preceding sibling (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 74c06201-0b1b-4b5e-b3ac-0092980614e6
 ---
-# How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML) (C#)
+# How to find the immediate preceding sibling (XPath-LINQ to XML) (C#)
 Sometimes you want to find the immediate preceding sibling to a node. Due to the difference in the semantics of positional predicates for the preceding sibling axes in XPath as opposed to [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], this is one of the more interesting comparisons.  
   
 ## Example  
@@ -41,11 +41,7 @@ Console.WriteLine(el1);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Child3 />  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

@@ -1,5 +1,6 @@
 ---
 title: "Enabling Multiple Active Result Sets"
+description: Learn how to enable/disable MARS in a connection string, which works with SQL Server so that you can run multiple batches on a single connection in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,12 +11,12 @@ ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
 Multiple Active Result Sets (MARS) is a feature that works with SQL Server to allow the execution of multiple batches on a single connection. When MARS is enabled for use with SQL Server, each command object used adds a session to the connection.  
   
 > [!NOTE]
->  A single MARS session opens one logical connection for MARS to use and then one logical connection for each active command.  
+> A single MARS session opens one logical connection for MARS to use and then one logical connection for each active command.  
   
 ## Enabling and Disabling MARS in the Connection String  
   
 > [!NOTE]
->  The following connection strings use the sample **AdventureWorks** database included with SQL Server. The connection strings provided assume that the database is installed on a server named MSSQL1. Modify the connection string as necessary for your environment.  
+> The following connection strings use the sample **AdventureWorks** database included with SQL Server. The connection strings provided assume that the database is installed on a server named MSSQL1. Modify the connection string as necessary for your environment.  
   
  The MARS feature is disabled by default. It can be enabled by adding the "MultipleActiveResultSets=True" keyword pair to your connection string. "True" is the only valid value for enabling MARS. The following example demonstrates how to connect to an instance of SQL Server and how to specify that MARS should be enabled.  
   
@@ -26,7 +27,7 @@ Dim connectionString As String = "Data Source=MSSQL1;" & _
 ```  
   
 ```csharp  
-string connectionString = "Data Source=MSSQL1;" +   
+string connectionString = "Data Source=MSSQL1;" +
     "Initial Catalog=AdventureWorks;Integrated Security=SSPI;" +  
     "MultipleActiveResultSets=True";  
 ```  
@@ -40,7 +41,7 @@ Dim connectionString As String = "Data Source=MSSQL1;" & _
 ```  
   
 ```csharp  
-string connectionString = "Data Source=MSSQL1;" +   
+string connectionString = "Data Source=MSSQL1;" +
     "Initial Catalog=AdventureWorks;Integrated Security=SSPI;" +  
     "MultipleActiveResultSets=False";  
 ```  
@@ -62,7 +63,7 @@ string connectionString = "Data Source=MSSQL1;" +
  MARS operations are not thread-safe.  
   
 ### Connection Pooling  
- MARS-enabled connections are pooled like any other connection. If an application opens two connections, one with MARS enabled and one with MARS disabled, the two connections are in separate pools. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
+ MARS-enabled connections are pooled like any other connection. If an application opens two connections, one with MARS enabled and one with MARS disabled, the two connections are in separate pools. For more information, see [SQL Server Connection Pooling (ADO.NET)](../sql-server-connection-pooling.md).  
   
 ### SQL Server Batch Execution Environment  
  When a connection is opened, a default environment is defined. This environment is then copied into a logical MARS session.  
@@ -107,5 +108,5 @@ string connectionString = "Data Source=MSSQL1;" +
   
 ## See also
 
-- [Multiple Active Result Sets (MARS)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Multiple Active Result Sets (MARS)](multiple-active-result-sets-mars.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -1,5 +1,6 @@
 ---
 title: "<xmlSerializer> Element"
+description: The <xmlSerializer> element specifies whether an additional check of progress of the XmlSerializer is done.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<xmlSerializer> element"
@@ -16,7 +17,7 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 ## Syntax  
   
 ```xml  
-<xmlSerializer checkDeserializerAdvance = "true"|"false" />  
+<xmlSerializer checkDeserializerAdvance = "true|false" />  
 ```  
   
 ## Attributes and Elements  
@@ -36,7 +37,7 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)|Contains configuration settings for the <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Xml.Serialization.XmlSchemaImporter> classes.|  
+|[\<system.xml.serialization> Element](system-xml-serialization-element.md)|Contains configuration settings for the <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Xml.Serialization.XmlSchemaImporter> classes.|  
   
 ## Remarks  
  By default, the <xref:System.Xml.Serialization.XmlSerializer> provides an additional layer of security against potential denial of service attacks when deserializing untrusted data. It does so by attempting to detect infinite loops during deserialization. If such a condition is detected, an exception is thrown with the following message: "Internal error: deserialization failed to advance over underlying stream."  
@@ -57,5 +58,5 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 ## See also
 
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [\<system.xml.serialization> Element](system-xml-serialization-element.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)

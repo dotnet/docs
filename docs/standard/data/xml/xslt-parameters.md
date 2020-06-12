@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Parameters
 XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace URI are associated with the parameter object at that time.  
@@ -64,4 +62,4 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Transformations](xslt-transformations.md)

@@ -1,19 +1,20 @@
 ---
 title: "SqlClient Support for High Availability, Disaster Recovery"
+description: Learn about SqlClient application support for high-availability, disaster recovery in SQL Server, using AlwaysOn Availability Groups.
 ms.date: "03/30/2017"
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---
 # SqlClient Support for High Availability, Disaster Recovery
-This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
+This topic discusses SqlClient support (added in .NET Framework 4.5) for high-availability, disaster recovery -- AlwaysOn Availability Groups.  AlwaysOn Availability Groups feature was added to SQL Server 2012. For more information about AlwaysOn Availability Groups, see SQL Server Books Online.  
   
  You can now specify the availability group listener of a (high-availability, disaster-recovery) availability group (AG) or SQL Server 2012 Failover Cluster Instance in the connection property. If a SqlClient application is connected to an AlwaysOn database that fails over, the original connection is broken and the application must open a new connection to continue work after the failover.  
   
  If you are not connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, and if multiple IP addresses are associated with a hostname, SqlClient will iterate sequentially through all IP addresses associated with DNS entry. This can be time consuming if the first IP address returned by DNS server is not bound to any network interface card (NIC). When connecting to an availability group listener or SQL Server 2012 Failover Cluster Instance, SqlClient attempts to establish connections to all IP addresses in parallel and if a connection attempt succeeds, the driver will discard any pending connection attempts.  
   
 > [!NOTE]
->  Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
+> Increasing connection timeout and implementing connection retry logic will increase the probability that an application will connect to an availability group. Also, because a connection can fail because of a failover, you should implement connection retry logic, retrying a failed connection until it reconnects.  
   
- The following connection properties were added to SqlClient in [!INCLUDE[net_v45](../../../../../includes/net-v45-md.md)]:  
+ The following connection properties were added to SqlClient in .NET Framework 4.5:  
   
 - `ApplicationIntent`  
   
@@ -26,7 +27,7 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
 2. <xref:System.Data.SqlClient.SqlConnectionStringBuilder.MultiSubnetFailover%2A>  
 
 > [!NOTE]
->  Setting `MultiSubnetFailover` to `true` isn't required with [!INCLUDE[net_v461](../../../../../includes/net-v461-md.md)] or later versions.
+> Setting `MultiSubnetFailover` to `true` isn't required with .NET Framework 4.6.1 or later versions.
   
 ## Connecting With MultiSubnetFailover  
  Always specify `MultiSubnetFailover=True` when connecting to a SQL Server 2012 availability group listener or SQL Server 2012 Failover Cluster Instance. `MultiSubnetFailover` enables faster failover for all Availability Groups and or Failover Cluster Instance in SQL Server 2012 and will significantly reduce failover time for single and multi-subnet AlwaysOn topologies. During a multi-subnet failover, the client will attempt connections in parallel. During a subnet failover, will aggressively retry the TCP connection.  
@@ -73,7 +74,7 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
  The `ApplicationIntent` keyword does not work with legacy, read-only databases.  
   
- A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`[!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statements.)  
+ A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`Transact-SQL statements.)  
   
  The `ApplicationIntent` keyword is used to enable read-only routing.  
   
@@ -92,5 +93,5 @@ This topic discusses SqlClient support (added in [!INCLUDE[net_v45](../../../../
   
 ## See also
 
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

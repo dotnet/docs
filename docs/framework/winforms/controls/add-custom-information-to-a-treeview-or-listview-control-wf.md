@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)"
+title: "How to: Add Custom Information to a TreeView or ListView Control"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -69,7 +69,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
      In the example below, the path set for the location of the text file is the My Documents folder. This is done because you can assume that most computers running the Windows operating system will include this directory. This also allows users with minimal system access levels to safely run the application.  
   
     ```vb  
-    ' You should replace the bold text file   
+    ' You should replace the bold text file
     ' in the sample below with a text file of your own choosing.  
     TreeView1.Nodes.Add(New myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
@@ -77,7 +77,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     ```  
   
     ```csharp  
-    // You should replace the bold text file   
+    // You should replace the bold text file
     // in the sample below with a text file of your own choosing.  
     // Note the escape character used (@) when specifying the path.  
     treeView1.Nodes.Add(new myTreeNode(System.Environment.GetFolderPath
@@ -86,7 +86,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     ```  
   
     ```cpp  
-    // You should replace the bold text file   
+    // You should replace the bold text file
     // in the sample below with a text file of your own choosing.  
     treeView1->Nodes->Add(new myTreeNode(String::Concat(  
        System::Environment::GetFolderPath  
@@ -94,7 +94,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        "\\TextFile.txt")));  
     ```  
   
-2. If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](~/docs/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) (Visual Basic), [Casting and type conversions](~/docs/csharp/programming-guide/types/casting-and-type-conversions.md) (Visual C#), or [Cast Operator: ()](/cpp/cpp/cast-operator-parens) ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]).  
+2. If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) (Visual Basic), [Casting and type conversions](../../../csharp/programming-guide/types/casting-and-type-conversions.md) (Visual C#), or [Cast Operator: ()](/cpp/cpp/cast-operator-parens) (Visual C++).  
   
     ```vb  
     Public Sub TreeView1_AfterSelect(ByVal sender As Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles TreeView1.AfterSelect  
@@ -119,7 +119,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           System::Windows::Forms::TreeViewEventArgs ^  e)  
        {  
           myTreeNode ^ myNode = safe_cast<myTreeNode^>(e->Node);  
-          MessageBox::Show(String::Concat("Node selected is ",   
+          MessageBox::Show(String::Concat("Node selected is ",
              myNode->FilePath));  
        }  
     ```  

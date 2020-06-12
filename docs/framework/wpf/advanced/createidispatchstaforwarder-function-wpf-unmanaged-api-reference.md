@@ -1,5 +1,6 @@
 ---
-title: "CreateIDispatchSTAForwarder Function (WPF Unmanaged API Reference)"
+title: "CreateIDispatchSTAForwarder Function - WPF unmanaged API reference"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -18,7 +19,7 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
   
 ```cpp  
 HRESULT CreateIDispatchSTAForwarder(  
-   __in IDispatch *pDispatchDelegate,   
+   __in IDispatch *pDispatchDelegate,
    __deref_out IDispatch **ppForwarder  
 )  
 ```  

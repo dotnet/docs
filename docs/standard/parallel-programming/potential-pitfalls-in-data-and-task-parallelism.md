@@ -1,5 +1,6 @@
 ---
 title: "Potential Pitfalls in Data and Task Parallelism"
+description: Learn about potential pitfalls in data and task parallelism, because parallelism adds complexity that isn't encountered in sequential code.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -8,8 +9,6 @@ dev_langs:
 helpviewer_keywords: 
   - "parallel programming, pitfalls"
 ms.assetid: 1e357177-e699-4b8f-9e49-56d3513ed128
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Potential Pitfalls in Data and Task Parallelism
 In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> can provide significant performance improvements over ordinary sequential loops. However, the work of parallelizing the loop introduces complexity that can lead to problems that, in sequential code, are not as common or are not encountered at all. This topic lists some practices to avoid when you write parallel loops.  
@@ -18,7 +17,7 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
  In certain cases a parallel loop might run slower than its sequential equivalent. The basic rule of thumb is that parallel loops that have few iterations and fast user delegates are unlikely to speedup much. However, because many factors are involved in performance, we recommend that you always measure actual results.  
   
 ## Avoid Writing to Shared Memory Locations  
- In sequential code, it is not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there is a big potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a parallel loop as much as possible. The best way to do this is to use the overloads of <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> that use a <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> variable to store thread-local state during loop execution. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Partition-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
+ In sequential code, it is not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there is a big potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a parallel loop as much as possible. The best way to do this is to use the overloads of <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> that use a <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> variable to store thread-local state during loop execution. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](how-to-write-a-parallel-for-loop-with-thread-local-variables.md) and [How to: Write a Parallel.ForEach Loop with Partition-Local Variables](how-to-write-a-parallel-foreach-loop-with-partition-local-variables.md).  
   
 ## Avoid Over-Parallelization  
  By using parallel loops, you incur the overhead costs of partitioning the source collection and synchronizing the worker threads. The benefits of parallelization are further limited by the number of processors on the computer. There is no speedup to be gained by running multiple compute-bound threads on just one processor. Therefore, you must be careful not to over-parallelize a loop.  
@@ -43,7 +42,7 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
  Most static methods in the .NET Framework are thread-safe and can be called from multiple threads concurrently. However, even in these cases, the synchronization involved can lead to significant slowdown in the query.  
   
 > [!NOTE]
->  You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in parallel loops unless necessary.  
+> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in parallel loops unless necessary.  
   
 ## Be Aware of Thread Affinity Issues  
  Some technologies, for example, COM interoperability for Single-Threaded Apartment (STA) components, Windows Forms, and Windows Presentation Foundation (WPF), impose thread affinity restrictions that require code to run on a specific thread. For example, in both Windows Forms and WPF, a control can only be accessed on the thread on which it was created. This means, for example, that you cannot update a list control from a parallel loop unless you configure the thread scheduler to schedule work only on the UI thread. For more information, see [Specifying a synchronization context](xref:System.Threading.Tasks.TaskScheduler#specifying-a-synchronization-context).  
@@ -76,6 +75,6 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
   
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
-- [Potential Pitfalls with PLINQ](../../../docs/standard/parallel-programming/potential-pitfalls-with-plinq.md)
+- [Parallel Programming](index.md)
+- [Potential Pitfalls with PLINQ](potential-pitfalls-with-plinq.md)
 - [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e1968f0b-2675-4dc2-8507-46164e1df154
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::SwitchOutLogicalThreadState Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchOutLogicalThreadState(  
     [out] DWORD **pFiberCookie  
 );  
@@ -34,7 +32,7 @@ HRESULT SwitchOutLogicalThreadState(
  [out] Cookie that indicates the fiber being switched out.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -44,4 +42,4 @@ HRESULT SwitchOutLogicalThreadState(
   
 ## See also
 
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

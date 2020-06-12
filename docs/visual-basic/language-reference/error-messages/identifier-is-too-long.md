@@ -19,4 +19,4 @@ The name, or identifier, of every programming element is limited to 1023 charact
   
 ## See also
 
-- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)

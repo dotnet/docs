@@ -1,5 +1,6 @@
 ---
 title: "Variables and Arguments"
+description: This article describes variables, which represent storage of data, and arguments, which represent flow of data to/from an activity in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: d03dbe34-5b2e-4f21-8b57-693ee49611b8
 ---
@@ -63,7 +64,7 @@ Variable<string> var = new Variable<string>
   
 3. Arguments can optionally have their <xref:System.Activities.Argument.EvaluationOrder%2A> specified. <xref:System.Activities.Argument.EvaluationOrder%2A> is a zero-based value that specifies the order in which the argument is evaluated. By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. Windows Workflow Foundation evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
   
- An activity author can use a strongly-typed mechanism for exposing its arguments. This is accomplished by declaring properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. This allows an activity author to establish a specific contract about the data going into and out of an activity.  
+ An activity author can use a strongly typed mechanism for exposing its arguments. This is accomplished by declaring properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. This allows an activity author to establish a specific contract about the data going into and out of an activity.  
   
 ### Defining the Arguments on an Activity  
  Arguments can be defined on an activity by specifying properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. The following code shows how to define the arguments for a `Prompt` activity that takes in a string to display to the user and returns a string that contains the user's response.  
@@ -78,7 +79,7 @@ public class Prompt : Activity
 ```  
   
 > [!NOTE]
->  Activities that return a single value can derive from <xref:System.Activities.Activity%601>, <xref:System.Activities.NativeActivity%601>, or <xref:System.Activities.CodeActivity%601>. These activities have a well-defined <xref:System.Activities.OutArgument%601> named <xref:System.Activities.Activity%601.Result%2A> that contains the return value of the activity.  
+> Activities that return a single value can derive from <xref:System.Activities.Activity%601>, <xref:System.Activities.NativeActivity%601>, or <xref:System.Activities.CodeActivity%601>. These activities have a well-defined <xref:System.Activities.OutArgument%601> named <xref:System.Activities.Activity%601.Result%2A> that contains the return value of the activity.  
   
 ### Using Variables and Arguments in Workflows  
  The following example shows how variables and arguments are used in a workflow. The workflow is a sequence that declares three variables: `var1`, `var2`, and `var3`. The first activity in the workflow is an `Assign` activity that assigns the value of variable `var1` to the variable `var2`. This is followed by a `WriteLine` activity that prints the value of the `var2` variable. Next is another `Assign` activity that assigns the value of variable `var2` to the variable `var3`. Finally there is another `WriteLine` activity that prints the value of the `var3` variable. The first `Assign` activity uses `InArgument<string>` and `OutArgument<string>` objects that explicitly represent the bindings for the activity's arguments. `InArgument<string>` is used for <xref:System.Activities.Statements.Assign.Value%2A> because the value is flowing into the <xref:System.Activities.Statements.Assign%601> activity through its <xref:System.Activities.Statements.Assign.Value%2A> argument, and `OutArgument<string>` is used for <xref:System.Activities.Statements.Assign.To%2A> because the value is flowing out of the <xref:System.Activities.Statements.Assign.To%2A> argument into the variable. The second `Assign` activity accomplishes the same thing with more compact but equivalent syntax that uses implicit casts. The `WriteLine` activities also use the compact syntax.  
@@ -96,7 +97,7 @@ Variable<string> var3 = new Variable<string>();
 Activity wf = new Sequence  
 {  
     Variables = { var1, var2, var3 },  
-    Activities =   
+    Activities =
     {  
         new Assign<string>()  
         {  

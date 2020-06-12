@@ -11,9 +11,6 @@ ms.assetid: 5699b244-e37c-4d20-bc35-7441e55c1e3a
 
 You can add images to an <xref:System.Windows.Forms.ImageList> component several different ways. You can add images very quickly by using the smart tag associated with the <xref:System.Windows.Forms.ImageList>, or if you are setting several other properties on the <xref:System.Windows.Forms.ImageList>, you may find it more convenient to add images with the Properties window. You can also add images by using code. For more information about how to add images with code, see [How to: Add or Remove Images with the Windows Forms ImageList Component](how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md). Typically you populate the <xref:System.Windows.Forms.ImageList> component with images before it is associated with a control, but this is not required.
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
 ### To add or remove images by using the Properties window
 
 1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.
@@ -26,7 +23,7 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 
 1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.
 
-2. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))
+2. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif))
 
 3. In the **ImageList Tasks** dialog box, select **Choose Images**.
 
@@ -35,5 +32,5 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 ## See also
 
 - [Images, Bitmaps, and Metafiles](../advanced/images-bitmaps-and-metafiles.md)
-- [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md)
+- [Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md)
 - [ImageList Component](imagelist-component-windows-forms.md)

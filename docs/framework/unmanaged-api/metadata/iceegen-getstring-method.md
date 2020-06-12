@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetString Method
 Gets the string stored at the specified relative virtual address.  
@@ -25,9 +23,9 @@ Gets the string stored at the specified relative virtual address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetString (  
-    [in]  ULONG      RVA,   
+    [in]  ULONG      RVA,
     [out] LPWSTR     *lpString  
 );  
 ```  
@@ -40,7 +38,7 @@ HRESULT GetString (
  [out] The returned string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,4 +48,4 @@ HRESULT GetString (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

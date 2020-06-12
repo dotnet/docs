@@ -13,7 +13,7 @@ ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
 Owner drawing in Windows Forms, which is also known as custom drawing, is a technique for changing the visual appearance of certain controls.  
   
 > [!NOTE]
->  The word "control" in this topic is used to mean classes that derive from either <xref:System.Windows.Forms.Control> or <xref:System.ComponentModel.Component>.  
+> The word "control" in this topic is used to mean classes that derive from either <xref:System.Windows.Forms.Control> or <xref:System.ComponentModel.Component>.  
   
  Typically, Windows handles painting automatically by using property settings such as <xref:System.Windows.Forms.Control.BackColor%2A> to determine the appearance of a control. With owner drawing, you take over the painting process, changing elements of appearance that are not available by using properties. For example, many controls let you set the color of the text that is displayed, but you are limited to a single color. Owner drawing enables you to do things like display part of the text in black and part in red.  
   
@@ -40,7 +40,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 - <xref:System.Windows.Forms.TabControl>  
   
- The following controls support owner drawing only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]:  
+ The following controls support owner drawing only in .NET Framework 2.0:  
   
 - <xref:System.Windows.Forms.ToolTip>  
   
@@ -48,7 +48,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 - <xref:System.Windows.Forms.TreeView>  
   
- The following controls support owner drawing and are new in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]:  
+ The following controls support owner drawing and are new in .NET Framework 2.0:  
   
 - <xref:System.Windows.Forms.DataGridView>  
   
@@ -60,7 +60,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
  The <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls enable you to draw individual items in the control either all in one size, or in varying sizes.  
   
 > [!NOTE]
->  Although the <xref:System.Windows.Forms.CheckedListBox> control is derived from the <xref:System.Windows.Forms.ListBox> control, it does not support owner drawing.  
+> Although the <xref:System.Windows.Forms.CheckedListBox> control is derived from the <xref:System.Windows.Forms.ListBox> control, it does not support owner drawing.  
   
  To draw each item the same size, set the `DrawMode` property to <xref:System.Windows.Forms.DrawMode.OwnerDrawFixed> and handle the `DrawItem` event.  
   

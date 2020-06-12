@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_DEBUG_STEP_RANGE Structure
 Contains the offset information for a range of code.  
   
- This structure is used by the [ICorDebugStepper::StepRange](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md) method.  
+ This structure is used by the [ICorDebugStepper::StepRange](icordebugstepper-steprange-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     ULONG32 startOffset;  
     ULONG32 endOffset;  
@@ -39,7 +37,7 @@ typedef struct {
 |`endOffset`|The offset of the end of the range.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -49,6 +47,6 @@ typedef struct {
   
 ## See also
 
-- [StepRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [StepRange Method](icordebugstepper-steprange-method.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::EmitString Method
 Emits the specified string into the code base.  
@@ -25,7 +23,7 @@ Emits the specified string into the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitString (  
     [in]  LPWSTR    lpString,  
     [out] ULONG     *RVA  
@@ -40,7 +38,7 @@ HRESULT EmitString (
  [out] The relative virtual address of the emitted string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,4 +48,4 @@ HRESULT EmitString (
   
 ## See also
 
-- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+- [ICeeGen Interface](iceegen-interface.md)

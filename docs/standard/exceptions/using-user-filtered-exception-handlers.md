@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "user-filtered exceptions"
   - "exceptions, user-filtered"
 ms.assetid: aa80d155-060d-41b4-a636-1ceb424afee8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Using User-Filtered Exception Handlers
 

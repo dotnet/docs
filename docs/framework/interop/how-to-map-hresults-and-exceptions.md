@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "COM interop, HRESULTs"
   - "COM interop, exceptions"
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Map HRESULTs and Exceptions
 COM methods report errors by returning HRESULTs; .NET methods report them by throwing exceptions. The runtime handles the transition between the two. Each exception class in the .NET Framework maps to an HRESULT.  
@@ -31,7 +29,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
     Class NoAccessException : public ApplicationException  
     {  
         NoAccessException () {  
-        HResult = E_ACCESSDENIED;   
+        HResult = E_ACCESSDENIED;
     }  
     }  
     CMyClass::MethodThatThrows  

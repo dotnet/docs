@@ -1,5 +1,5 @@
 ---
-title: "Nothing and Strings in Visual Basic"
+title: "Nothing and Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], Nothing"
@@ -17,4 +17,4 @@ The Visual Basic runtime and the .NET Framework evaluate `Nothing` differently w
   
 ## See also
 
-- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Introduction to Strings in Visual Basic](introduction-to-strings.md)

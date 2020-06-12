@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 229437e3-1465-4bd8-8846-9804b2488133
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishAppDomain::GetID Method
-Gets the unique identifier for this [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md).  
+Gets the unique identifier for this [ICorPublishAppDomain](icorpublishappdomain-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] ULONG32   *puId  
 );  
@@ -37,7 +35,7 @@ HRESULT GetID (
  The identifier is unique only in the scope of the containing process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -47,4 +45,4 @@ HRESULT GetID (
   
 ## See also
 
-- [ICorPublishAppDomain Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)
+- [ICorPublishAppDomain Interface](icorpublishappdomain-interface.md)

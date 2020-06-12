@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c3601255-d894-4d7c-b1df-c31334551700
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::LocksHeldByLogicalThread Method
 Retrieves the number of locks that current thread holds.  
@@ -25,7 +23,7 @@ Retrieves the number of locks that current thread holds.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeldByLogicalThread(  
     [out] DWORD *pCount  
 );  
@@ -36,7 +34,7 @@ HRESULT LocksHeldByLogicalThread(
  [out] A pointer to the number of locks that the current thread holds.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -46,4 +44,4 @@ HRESULT LocksHeldByLogicalThread(
   
 ## See also
 
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (C#)"
+title: "How to find child elements based on position (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: e35bb269-ec86-4c96-8321-12491a0eb2c3
 ---
-# How to: Find Child Elements Based on Position (XPath-LINQ to XML) (C#)
+# How to find child elements based on position (XPath-LINQ to XML) (C#)
 Sometimes you want to find elements based on their position. You might want to find the second element, or you might want to find the third through the fifth element.  
   
  The XPath expression is:  
@@ -15,7 +15,7 @@ Sometimes you want to find elements based on their position. You might want to f
 ## Example  
  This example finds the second through the fourth `Test` element. The result is a collection of elements.  
   
- This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](./sample-xml-file-test-configuration-linq-to-xml.md).  
   
 ```csharp  
 XElement testCfg = XElement.Load("TestConfig.xml");  
@@ -50,7 +50,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Test TestId="0002" TestType="CMD">  
   <Name>Find succeeding characters</Name>  
@@ -71,7 +71,3 @@ Results are identical
   <Output>b1</Output>  
 </Test>  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

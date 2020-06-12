@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 65a4ad49-fa49-4b36-8ed1-76dd6a185ab4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteClassLayout Method
 Destroys the class layout metadata signature for the type represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteClassLayout (  
     [in]  mdTypeDef   td  
 );  
@@ -34,7 +32,7 @@ HRESULT DeleteClassLayout (
  [in] An `mdTypeDef` metadata token that represents the type for which the class layout will be deleted.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,5 +42,5 @@ HRESULT DeleteClassLayout (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

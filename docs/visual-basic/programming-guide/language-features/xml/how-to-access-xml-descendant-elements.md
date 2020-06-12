@@ -1,5 +1,5 @@
 ---
-title: "How to: Access XML Descendant Elements (Visual Basic)"
+title: "How to: Access XML Descendant Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML descendent axis property [Visual Basic]"
@@ -14,7 +14,7 @@ This example shows how to use a descendant axis property to access all XML eleme
 ## Example  
  [!code-vb[VbXMLSamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#31)]  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
 - A reference to the <xref:System.Xml.Linq> namespace.  
@@ -22,7 +22,7 @@ This example shows how to use a descendant axis property to access all XML eleme
 ## See also
 
 - <xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=nameWithType>
-- [XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)
-- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
-- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML Descendant Axis Property](../../../language-reference/xml-axis/xml-descendant-axis-property.md)
+- [XML Value Property](../../../language-reference/xml-axis/xml-value-property.md)
+- [Accessing XML in Visual Basic](accessing-xml.md)
+- [XML](index.md)

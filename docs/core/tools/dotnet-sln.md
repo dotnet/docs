@@ -1,92 +1,190 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 06/13/2018
+ms.date: 02/14/2020
 ---
 # dotnet sln
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
-`dotnet sln` - Modifies a .NET Core solution file.
+`dotnet sln` - Lists or modifies the projects in a .NET Core solution file.
 
 ## Synopsis
 
-```
-dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
-dotnet sln [<SOLUTION_NAME>] add <GLOBBING_PATTERN>
-dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
-dotnet sln [<SOLUTION_NAME>] remove <GLOBBING_PATTERN>
-dotnet sln [<SOLUTION_NAME>] list
-dotnet sln [-h|--help]
+```dotnetcli
+dotnet sln [<SOLUTION_FILE>] [command]
+
+dotnet sln [command] -h|--help
 ```
 
 ## Description
 
-The `dotnet sln` command provides a convenient way to add, remove, and list projects in a solution file.
+The `dotnet sln` command provides a convenient way to list and modify projects in a solution file.
 
-To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command, like in the following example:
+To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command, as in the following example:
 
-```
+```dotnetcli
 dotnet new sln
 ```
 
-## Commands
-
-`add <PROJECT> ...`
-
-`add <GLOBBING_PATTERN>`
-
-Adds a project or multiple projects to the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
-
-`remove <PROJECT> ...`
-
-`remove <GLOBBING_PATTERN>`
-
-Removes a project or multiple projects from the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
-
-`list`
-
-Lists all projects in a solution file.
-
 ## Arguments
 
-`SOLUTION_NAME`
+- **`SOLUTION_FILE`**
 
-Solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
 
 ## Options
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a description of how to use the command.
+
+## Commands
+
+### `list`
+
+Lists all projects in a solution file.
+
+#### Synopsis
+
+```dotnetcli
+dotnet sln list [-h|--help]
+```
+
+#### Arguments
+
+- **`SOLUTION_FILE`**
+
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
+
+#### Options
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+  
+### `add`
+
+Adds one or more projects to the solution file.
+
+#### Synopsis
+
+```dotnetcli
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln add [-h|--help]
+```
+
+#### Arguments
+
+- **`SOLUTION_FILE`**
+
+  The solution file to use. If it is unspecified, the command searches the current directory for one and fails if there are multiple solution files.
+
+- **`PROJECT_PATH`**
+
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+
+#### Options
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+
+- **`--in-root`**
+
+  Places the projects in the root of the solution, rather than creating a solution folder. Available since .NET Core 3.0 SDK.
+
+- **`-s|--solution-folder <PATH>`**
+
+  The destination solution folder path to add the projects to. Available since .NET Core 3.0 SDK.
+
+### `remove`
+
+Removes a project or multiple projects from the solution file.
+
+#### Synopsis
+
+```dotnetcli
+dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
+```
+
+#### Arguments
+
+- **`SOLUTION_FILE`**
+
+  The solution file to use. If is left unspecified, the command searches the current directory for one and fails if there are multiple solution files.
+
+- **`PROJECT_PATH`**
+
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+
+#### Options
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
 
 ## Examples
 
-Add a C# project to a solution:
+- List the projects in a solution:
 
-`dotnet sln todo.sln add todo-app/todo-app.csproj`
+  ```dotnetcli
+  dotnet sln todo.sln list
+  ```
 
-Remove a C# project from a solution:
+- Add a C# project to a solution:
 
-`dotnet sln todo.sln remove todo-app/todo-app.csproj`
+  ```dotnetcli
+  dotnet sln add todo-app/todo-app.csproj
+  ```
 
-Add multiple C# projects to a solution:
+- Remove a C# project from a solution:
 
-`dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj`
+  ```dotnetcli
+  dotnet sln remove todo-app/todo-app.csproj
+  ```
 
-Remove multiple C# projects from a solution:
+- Add multiple C# projects to the root of a solution:
 
-`dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj`
+  ```dotnetcli
+  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj --in-root
+  ```
 
-Add multiple C# projects to a solution using a globbing pattern:
+- Add multiple C# projects to a solution:
 
-`dotnet sln todo.sln add **/*.csproj`
+  ```dotnetcli
+  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
+  ```
 
-Remove multiple C# projects from a solution using a globbing pattern:
+- Remove multiple C# projects from a solution:
 
-`dotnet sln todo.sln remove **/*.csproj`
+  ```dotnetcli
+  dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
+  ```
 
-> [!NOTE]
-> Globbing is not a CLI feature but rather a feature of the command shell. To successfully expand the files, you must use a shell that supports globbing. For more information about globbing, see [Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming)).
+- Add multiple C# projects to a solution using a globbing pattern (Unix/Linux only):
+
+  ```dotnetcli
+  dotnet sln todo.sln add **/*.csproj
+  ```
+
+- Add multiple C# projects to a solution using a globbing pattern (Windows PowerShell only):
+
+  ```dotnetcli
+  dotnet sln todo.sln add (ls **/*.csproj)
+  ```
+
+- Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
+
+  ```dotnetcli
+  dotnet sln todo.sln remove **/*.csproj
+  ```
+
+- Remove multiple C# projects from a solution using a globbing pattern (Windows PowerShell only):
+
+  ```dotnetcli
+  dotnet sln todo.sln remove (ls **/*.csproj)
+  ```

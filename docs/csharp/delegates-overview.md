@@ -2,6 +2,7 @@
 title: Introduction to Delegates
 description: Learn about delegates in this overview topic that introduces basic concepts and discusses language design goals for delegates.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 ---
 
@@ -38,12 +39,12 @@ concept, and use that same concept across many different software
 problems.
 
 Second, the team wanted to support both single and multicast method
-calls. (Multicast delegates are delegates that chain together multiple method calls. 
+calls. (Multicast delegates are delegates that chain together multiple method calls.
 You'll see examples
-[later in this series](delegate-class.md).) 
+[later in this series](delegate-class.md).)
 
 The team wanted delegates to support the same type safety that developers
-expect from all C# constructs. 
+expect from all C# constructs.
 
 Finally, the team recognized that an event pattern is one specific pattern
 where delegates, or any late binding algorithm, is very useful. The team

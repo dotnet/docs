@@ -1,9 +1,9 @@
 ---
-title: "How to: Find All Nodes in a Namespace (C#)"
+title: "How to find all nodes in a namespace (C#)"
 ms.date: 07/20/2015
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
 ---
-# How to: Find All Nodes in a Namespace (C#)
+# How to find all nodes in a namespace (C#)
 You can filter on the namespace of each element or attribute to find all nodes in that particular namespace.  
   
 ## Example  
@@ -31,7 +31,7 @@ foreach (XElement el in awElements)
   
  This code produces the following output:  
   
-```  
+```output  
 Nodes in the http://www.adventure-works.com namespace  
 {http://www.adventure-works.com}Child3  
 {http://www.adventure-works.com}GrandChild2  
@@ -40,7 +40,7 @@ Nodes in the http://www.adventure-works.com namespace
 ## Example  
  The XML file accessed by the following query contains purchase orders in two different namespaces. The query creates a new tree with just the elements in one of the namespaces.  
   
- This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md).  
+ This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](./sample-xml-file-consolidated-purchase-orders.md).  
   
 ```csharp  
 XDocument cpo = XDocument.Load("ConsolidatedPurchaseOrders.xml");  
@@ -88,7 +88,3 @@ Console.WriteLine(newTree);
   </aw:PurchaseOrder>  
 </Root>  
 ```  
-  
-## See also
-
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

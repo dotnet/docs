@@ -1,5 +1,5 @@
 ---
-title: "Object required (Visual Basic)"
+title: "Object required"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID424"
@@ -20,4 +20,4 @@ References to properties and methods often require an explicit object qualifier.
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

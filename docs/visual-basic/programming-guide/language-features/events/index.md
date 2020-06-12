@@ -1,5 +1,5 @@
 ---
-title: "Events (Visual Basic)"
+title: "Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [Visual Basic], about events"
@@ -35,7 +35,7 @@ While you might visualize a Visual Studio project as a series of procedures that
  Visual Basic uses a standard naming convention for event handlers that combines the name of the event sender, an underscore, and the name of the event. For example, the `Click` event of a button named `button1` would be named `Sub button1_Click`.  
   
 > [!NOTE]
->  We recommend that you use this naming convention when defining event handlers for your own events, but it is not required; you can use any valid subroutine name.  
+> We recommend that you use this naming convention when defining event handlers for your own events, but it is not required; you can use any valid subroutine name.  
   
 ## Associating Events with Event Handlers  
  Before an event handler becomes usable, you must first associate it with an event by using either the `Handles` or `AddHandler` statement.  
@@ -93,11 +93,11 @@ While you might visualize a Visual Studio project as a series of procedures that
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)|Provides a step-by-step description of how to declare and raise events for a class.|  
-|[Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)|Demonstrates how to write an event-handler procedure.|  
-|[How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|Demonstrates how to define a custom event that allows its event handlers to be called asynchronously.|  
-|[How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|Demonstrates how to define a custom event that uses memory only when the event is handled.|  
-|[Troubleshooting Inherited Event Handlers in Visual Basic](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
+|[Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md)|Provides a step-by-step description of how to declare and raise events for a class.|  
+|[Walkthrough: Handling Events](walkthrough-handling-events.md)|Demonstrates how to write an event-handler procedure.|  
+|[How to: Declare Custom Events To Avoid Blocking](how-to-declare-custom-events-to-avoid-blocking.md)|Demonstrates how to define a custom event that allows its event handlers to be called asynchronously.|  
+|[How to: Declare Custom Events To Conserve Memory](how-to-declare-custom-events-to-conserve-memory.md)|Demonstrates how to define a custom event that uses memory only when the event is handled.|  
+|[Troubleshooting Inherited Event Handlers in Visual Basic](troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
 |[Events](../../../../standard/events/index.md)|Provides an overview of the event model in the .NET Framework.|  
 |[Creating Event Handlers in Windows Forms](../../../../framework/winforms/creating-event-handlers-in-windows-forms.md)|Describes how to work with events associated with Windows Forms objects.|  
-|[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)|Provides an overview of delegates in Visual Basic.|
+|[Delegates](../delegates/index.md)|Provides an overview of delegates in Visual Basic.|

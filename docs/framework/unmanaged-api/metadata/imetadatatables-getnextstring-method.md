@@ -15,16 +15,14 @@ helpviewer_keywords:
 ms.assetid: d9720428-c353-4f07-a7e8-899e106a1b37
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetNextString Method
 Gets the index of the next string in the current table column.  
   
 ## Syntax  
   
-```  
-HRESULT GetNextString (   
+```cpp  
+HRESULT GetNextString (
     [in]  ULONG   ixString,  
     [out] ULONG   *pNext  
 );  
@@ -38,7 +36,7 @@ HRESULT GetNextString (
  [out] A pointer to the index of the next string in the column.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,5 +46,5 @@ HRESULT GetNextString (
   
 ## See also
 
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

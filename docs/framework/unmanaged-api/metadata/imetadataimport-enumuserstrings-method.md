@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumUserStrings Method
 Enumerates String tokens representing hard-coded strings in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumUserStrings (  
    [in, out]  HCORENUM    *phEnum,  
    [out]  mdString        rStrings[],  
@@ -53,10 +51,10 @@ HRESULT EnumUserStrings (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcStrings` is zero.|  
   
 ## Remarks  
- The String tokens are created by the [IMetaDataEmit::DefineUserString](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-defineuserstring-method.md) method. This method is designed to be used by a metadata browser rather than by a compiler.  
+ The String tokens are created by the [IMetaDataEmit::DefineUserString](imetadataemit-defineuserstring-method.md) method. This method is designed to be used by a metadata browser rather than by a compiler.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -66,5 +64,5 @@ HRESULT EnumUserStrings (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

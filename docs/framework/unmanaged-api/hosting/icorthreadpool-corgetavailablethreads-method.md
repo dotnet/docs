@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b09b750-0b86-4ba4-9621-041857cfe8ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorGetAvailableThreads Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorGetAvailableThreads (  
     [out] DWORD *AvailableWorkerThreads,  
     [out] DWORD *AvailableIOCompletionThreads  
@@ -31,7 +29,7 @@ HRESULT CorGetAvailableThreads (
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -41,4 +39,4 @@ HRESULT CorGetAvailableThreads (
   
 ## See also
 
-- [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [ICorThreadpool Interface](icorthreadpool-interface.md)

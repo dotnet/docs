@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e875cbee-1ad9-4f1a-bf03-38cdb8ff371a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetGuidHeapSize Method
 Gets the size, in bytes, of the GUID heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGuidHeapSize (  
     [out] ULONG   *pcbGuids  
 );  
@@ -34,7 +32,7 @@ HRESULT GetGuidHeapSize (
  [out] A pointer to the size, in bytes, of the GUID heap.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,5 +42,5 @@ HRESULT GetGuidHeapSize (
   
 ## See also
 
-- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
-- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

@@ -17,10 +17,10 @@ Line numbers follow the same rules as other kinds of labels, and must contain a 
   
 - Place the number followed by a colon at the start of a line of code; for example:  
   
-    ```  
+    ```vb  
     400:    X += 1  
     ```  
   
 ## See also
 
-- [GoTo Statement](../../../visual-basic/language-reference/statements/goto-statement.md)
+- [GoTo Statement](../statements/goto-statement.md)

@@ -1,12 +1,9 @@
 ---
 title: "using static directive - C# Reference"
-ms.custom: seodec18
 ms.date: 03/10/2017
 helpviewer_keywords: 
   - "using static directive [C#]"
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # using static directive (C# Reference)
 
@@ -44,7 +41,7 @@ The following example uses the `using static` directive to make the static membe
 
 [!code-csharp[using-static#3](~/samples/snippets/csharp/language-reference/keywords/using/using-static3.cs)]
 
-In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. This would have made it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` statements to determine which numeric type's `TryParse` method is called.
+In the example, the `using static` directive could also have been applied to the <xref:System.Double> type. This would have made it possible to call the <xref:System.Double.TryParse(System.String,System.Double@)> method without specifying a type name. However, this creates less readable code, since it becomes necessary to check the `using static` directives to determine which numeric type's `TryParse` method is called.
 
 ## See also
 
@@ -52,5 +49,4 @@ In the example, the `using static` directive could also have been applied to the
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
-- [Namespace Keywords](namespace-keywords.md)
 - [Namespaces](../../programming-guide/namespaces/index.md)

@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: c30a4ce3-2d3e-411a-98df-e62ac4a5dd50
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineTypeRefByName Method
 Gets a metadata token for a type that is defined in the specified scope, which is outside the current scope.  
   
 ## Syntax  
   
-```  
-HRESULT DefineTypeRefByName (   
-    [in]  mdToken     tkResolutionScope,   
-    [in]  LPCWSTR     szName,   
-    [out] mdTypeRef   *ptr   
+```cpp  
+HRESULT DefineTypeRefByName (
+    [in]  mdToken     tkResolutionScope,
+    [in]  LPCWSTR     szName,
+    [out] mdTypeRef   *ptr
 );  
 ```  
   
@@ -52,7 +50,7 @@ HRESULT DefineTypeRefByName (
  [out] A pointer to the `mdTypeRef` token that is assigned to the type.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -62,5 +60,5 @@ HRESULT DefineTypeRefByName (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ae6cfb29-bc2c-4606-af86-1d32ebd31020
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetMethod Method
 Gets a symbol reader method, given a method token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethod (  
     [in]  mdMethodDef  token,  
     [out, retval] ISymUnmanagedMethod**  pRetVal);  
@@ -44,4 +42,4 @@ HRESULT GetMethod (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

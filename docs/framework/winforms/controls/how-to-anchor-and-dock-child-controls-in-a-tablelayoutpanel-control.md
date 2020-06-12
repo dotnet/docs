@@ -27,7 +27,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 4. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to `Left`. The <xref:System.Windows.Forms.Button> control moves to align with the left border of the cell.  
   
     > [!NOTE]
-    >  This behavior differs from the behavior of other container controls. In other container controls, the child control does not move when the <xref:System.Windows.Forms.Control.Anchor%2A> property is set, and the distance between the anchored control and the parent container's boundary is fixed at the time the <xref:System.Windows.Forms.Control.Anchor%2A> property is set.  
+    > This behavior differs from the behavior of other container controls. In other container controls, the child control does not move when the <xref:System.Windows.Forms.Control.Anchor%2A> property is set, and the distance between the anchored control and the parent container's boundary is fixed at the time the <xref:System.Windows.Forms.Control.Anchor%2A> property is set.  
   
 5. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to `Top, Left`. The <xref:System.Windows.Forms.Button> control moves to occupy the top-left corner of the cell.  
   
@@ -38,7 +38,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 1. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to `Left, Right`. The <xref:System.Windows.Forms.Button> control is resized to stretch across the cell.  
   
     > [!NOTE]
-    >  This behavior differs from the behavior of other container controls. In other container controls, the child control is not resized when the <xref:System.Windows.Forms.Control.Anchor%2A> property is set to `Left, Right` or `Top, Bottom`.  
+    > This behavior differs from the behavior of other container controls. In other container controls, the child control is not resized when the <xref:System.Windows.Forms.Control.Anchor%2A> property is set to `Left, Right` or `Top, Bottom`.  
   
 2. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to `Top, Bottom`. The <xref:System.Windows.Forms.Button> control is resized to stretch from the top to the bottom of the cell.  
   
@@ -49,7 +49,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 5. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>. The <xref:System.Windows.Forms.Button> control moves to align with the left border of the cell. The <xref:System.Windows.Forms.Button> control retains its width, but its height is resized to fill the cell vertically.  
   
     > [!NOTE]
-    >  This is the same behavior that occurs in other container controls.  
+    > This is the same behavior that occurs in other container controls.  
   
 6. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. The <xref:System.Windows.Forms.Button> control is resized to fill the cell.  
   

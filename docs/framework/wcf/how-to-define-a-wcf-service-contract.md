@@ -12,14 +12,15 @@ ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 
 This tutorial describes the first of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a Visual C# or Visual Basic (VB) interface. An interface has the following characteristics:
+When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C# or Visual Basic interface. An interface has the following characteristics:
 
-- Each method in the interface corresponds to a specific service operation. 
+- Each method in the interface corresponds to a specific service operation.
 - For each interface, you must apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute.
-- For each operation/method, you must apply the <xref:System.ServiceModel.OperationContractAttribute> attribute. 
+- For each operation/method, you must apply the <xref:System.ServiceModel.OperationContractAttribute> attribute.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create a **WCF Service Library** project.
 > - Define a service contract interface.
 
@@ -36,13 +37,13 @@ In this tutorial, you learn how to:
       > [!NOTE]
       > If you don't see the **WCF** project template category, you may need to install the **Windows Communication Foundation** component of Visual Studio. In the **New Project** dialog box, select the **Open Visual Studio Installer** link on the left side. Select the **Individual components** tab, and then find and select **Windows Communication Foundation** under the **Development activities** category. Choose **Modify** to begin installing the component.
 
-   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. 
+   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**.
 
    4. Select **OK**.
 
-      Visual Studio creates the project, which has three files: *IService1.cs* (or *IService1.vb* for a Visual Basic project), *Service1.cs* (or *Service1.vb* for a Visual Basic project), and *App.config*. Visual Studio defines these files as follows: 
-      - The *IService1* file contains the default definition of the service contract. 
-      - The *Service1* file contains the default implementation of the service contract. 
+      Visual Studio creates the project, which has three files: *IService1.cs* (or *IService1.vb* for a Visual Basic project), *Service1.cs* (or *Service1.vb* for a Visual Basic project), and *App.config*. Visual Studio defines these files as follows:
+      - The *IService1* file contains the default definition of the service contract.
+      - The *Service1* file contains the default implementation of the service contract.
       - The *App.config* file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
       > [!NOTE]
@@ -97,6 +98,7 @@ In this tutorial, you learn how to:
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create a WCF Service Library project.
 > - Define a service contract interface.
 

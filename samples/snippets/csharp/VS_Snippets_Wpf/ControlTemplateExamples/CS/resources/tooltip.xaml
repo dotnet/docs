@@ -1,0 +1,60 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="Shared.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+  <!--<SnippetToolTip>-->
+  <Style x:Key="{x:Type ToolTip}"
+         TargetType="ToolTip">
+    <Setter Property="OverridesDefaultStyle"
+            Value="true" />
+    <Setter Property="HasDropShadow"
+            Value="True" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="ToolTip">
+          <Border Name="Border"
+                  BorderThickness="1"
+                  Width="{TemplateBinding Width}"
+                  Height="{TemplateBinding Height}">
+            <Border.Background>
+              <LinearGradientBrush StartPoint="0,0"
+                                   EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                  <GradientStopCollection>
+                    <GradientStop Color="{DynamicResource ControlLightColor}"
+                                  Offset="0.0" />
+                    <GradientStop Color="{DynamicResource ControlMediumColor}"
+                                  Offset="1.0" />
+                  </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+              </LinearGradientBrush>
+
+            </Border.Background>
+            <Border.BorderBrush>
+              <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
+            </Border.BorderBrush>
+            <ContentPresenter Margin="4"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top" />
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="HasDropShadow"
+                     Value="true">
+              <Setter TargetName="Border"
+                      Property="CornerRadius"
+                      Value="4" />
+              <Setter TargetName="Border"
+                      Property="SnapsToDevicePixels"
+                      Value="true" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--</SnippetToolTip>-->
+
+</ResourceDictionary>

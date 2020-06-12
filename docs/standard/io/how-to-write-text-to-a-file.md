@@ -1,5 +1,6 @@
 ---
 title: "How to: Write text to a file"
+description: Learn ways to write or append text to a file for a .NET app. Use methods from the StreamWriter or File classes to write text synchronously or asynchronously.
 ms.date: "01/04/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -11,11 +12,9 @@ helpviewer_keywords:
   - "streams, writing text to files"
   - "data streams, writing text to files"
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Write text to a file
-This topic shows different ways to write text to a file for a .NET app. 
+This topic shows different ways to write text to a file for a .NET app.
 
 The following classes and methods are typically used to write text to a file:  
   
@@ -32,28 +31,30 @@ The following classes and methods are typically used to write text to a file:
 
 The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously write text to a new file one line at a time. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
 
-[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)] 
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/write.vb)]  
+
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## Example: Synchronously append text with StreamWriter
 
-The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example.   
+The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example.
 
-[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/append.cs)] 
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/append.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/append.vb)]  
 
 ## Example: Asynchronously write text with StreamWriter
 
-The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call must be within an `async` method. The C# example requires C# 7.1 or later, which adds support for the `async` modifier on the program entry point. 
+The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call must be within an `async` method. The C# example requires C# 7.1 or later, which adds support for the `async` modifier on the program entry point.
 
-[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/async.cs)] 
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/async.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/async.vb)]  
 
 ## Example: Write and append text with the File class
 
 The following example shows how to write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class. The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically. If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file is overwritten.  
 
-[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/file.cs)] 
+[!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/file.cs)]
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/file.vb)]  
 
 ## See also
@@ -61,8 +62,8 @@ The following example shows how to write text to a new file and append new lines
 - <xref:System.IO.StreamWriter>
 - <xref:System.IO.Path>
 - <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
-- [How to: Read and write to a newly-created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)
+- [How to: Read and write to a newly-created data file](how-to-read-and-write-to-a-newly-created-data-file.md)
+- [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)
+- [File and stream I/O](index.md)

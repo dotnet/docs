@@ -17,4 +17,4 @@ You can filter `EntitySets` at the `DataContext` level. Such filters apply to al
   
 ## See also
 
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Query Concepts](query-concepts.md)

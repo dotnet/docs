@@ -1,5 +1,6 @@
 ---
 title: "Internet Authentication"
+description: Learn about the variety of client authentication mechanisms that System.Net classes support for your applications in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "authentication [.NET Framework], classes"
@@ -35,6 +36,6 @@ The <xref:System.Net> classes support a variety of client authentication mechani
   
 ## See also
 
-- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)
-- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Basic and Digest Authentication](basic-and-digest-authentication.md)
+- [NTLM and Kerberos Authentication](ntlm-and-kerberos-authentication.md)
+- [Security in Network Programming](security-in-network-programming.md)

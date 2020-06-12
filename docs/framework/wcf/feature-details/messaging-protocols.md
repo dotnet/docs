@@ -345,7 +345,7 @@ Proxy-Connection: Keep-Alive
         http://fabrikam123.com/Service
     </wsa10:To>
     <wsa10:Action s12:mustUnderstand="1">
-        http://fabrikam123.com/Service/OneWay 
+        http://fabrikam123.com/Service/OneWay
     </wsa10:Action>
   </s12:Header>
   <s12:Body>
@@ -457,9 +457,9 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
 - R4136: HTTP Content-Type header for a SOAP 1.x MTOM-encoded message must have the boundary parameter with the value (enclosed in double quotation marks) that matches the MIME boundary BNF defined in RFC 2046, section 5.1.1
 
     ```
-    boundary := 0*69<bchars> bcharsnospace 
-    bchars := bcharsnospace / " " 
-    bcharsnospace :=    DIGIT / ALPHA / "'" / "(" / ")" / "+" 
+    boundary := 0*69<bchars> bcharsnospace
+    bchars := bcharsnospace / " "
+    bcharsnospace :=    DIGIT / ALPHA / "'" / "(" / ")" / "+"
                         / "_" / "," / "-" / "." / "/" / ":" / "=" / "?"
     ```
 
@@ -480,7 +480,7 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
      INCORRECT
 
     ```
-    Content-Type: Multipart/Related; type=application/xop+xml;start=" <part0@tempuri.org>";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1" 
+    Content-Type: Multipart/Related; type=application/xop+xml;start=" <part0@tempuri.org>";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1"
     ```
 
 #### Infoset MIME Part
@@ -509,7 +509,7 @@ R4143: The value of the Content-ID header for the Infoset MIME part must follow 
 A number of MIME implementations relaxed requirements for the value enclosed within "\<" and ">" to be an email address and used `absoluteURI` enclosed in "\<" , ">" in addition to the email address. This version of WCF uses values of the Content-ID MIME header of the form:
 
 ```
-Content-ID: <http://tempuri.org/0> 
+Content-ID: <http://tempuri.org/0>
 ```
 
 R4144: MTOM processors should accept Content-ID header values that match the following relaxed `msg-id`.
@@ -560,7 +560,7 @@ A WCF endpoint configured to use MTOM will always send MTOM-encoded messages. Ev
 WCF uses the following policy assertion to indicate MTOM usage by endpoint:
 
 ```xml
-<wsoma:OptimizedMimeSerialization ... />
+<wsoma:OptimizedMimeSerialization />
 ```
 
 - R4211: The preceding policy assertion has an Endpoint Policy Subject and specifies that all messages sent to and received from the endpoint must be optimized using MTOM.
@@ -613,7 +613,7 @@ POST http://131.107.72.15/Mtom/service.svc/Soap12MtomSecureSignEncrypt HTTP/1.1
 Content-Type: multipart/related; type="application/xop+xml";
               start="<http://tempuri.org/0>";
             boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=3";
-              start-info="application/soap+xml"; 
+              start-info="application/soap+xml";
               action="http://xmlsoap.org/echoBinaryAsString"
 Host: 131.107.72.15
 Content-Length: 1941

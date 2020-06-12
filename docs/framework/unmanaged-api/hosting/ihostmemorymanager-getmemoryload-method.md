@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: e8138f6e-a0a4-48d4-8dae-9466b4dc6180
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::GetMemoryLoad Method
 Gets the amount of physical memory that is currently in use, and therefore unavailable, as reported by the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemoryLoad (  
-    [out] DWORD*  pMemoryLoad,   
+    [out] DWORD*  pMemoryLoad,
     [out] SIZE_T  *pAvailableBytes  
 );  
 ```  
@@ -54,7 +52,7 @@ HRESULT GetMemoryLoad (
  The runtime uses the return value as a heuristic for the garbage collector. For example, if the host reports that the majority of memory is in use, the garbage collector may elect to collect from multiple generations to increase the amount of memory that can potentially become available.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,4 +63,4 @@ HRESULT GetMemoryLoad (
 ## See also
 
 - <xref:System.GC?displayProperty=nameWithType>
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

@@ -26,7 +26,7 @@ A possible translation of a query command tree into a SQL SELECT statement would
 
 As an example, consider the following query command tree
 
-```
+```csharp
 Project (
 a.x,
    a = Filter(
@@ -63,7 +63,7 @@ One case of aggregating multiple nodes into a single SQL SELECT statement is agg
 
 Left spine joins, (joins that appear as a left child of another join) can be more easily flattened into a single SQL SELECT statement. For example, consider the following query command tree:
 
-```
+```csharp
 InnerJoin(
    a = LeftOuterJoin(
    b = Extent("TableA")
@@ -85,7 +85,7 @@ INNER JOIN TableC as d ON b.y = d.z
 
 However, non-left spine joins cannot easily be flattened, and you should not try to flatten them. For example, the joins in the following query command tree:
 
-```
+```csharp
 InnerJoin(
    a = Extent("TableA")
    b = LeftOuterJoin(
@@ -132,11 +132,11 @@ Also, when flattening joins, participating tables (or subqueries) may have colli
 
 ## Avoid SELECT *
 
-Do not use `SELECT *` to select from base tables. The storage model in an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application may only include a subset of the columns that are in the database table. In this case, `SELECT *` may produce an incorrect result. Instead, you should specify all participating columns by using the column names from the result type of the participating expressions.
+Do not use `SELECT *` to select from base tables. The storage model in an Entity Framework application may only include a subset of the columns that are in the database table. In this case, `SELECT *` may produce an incorrect result. Instead, you should specify all participating columns by using the column names from the result type of the participating expressions.
 
 ## Reuse of Expressions
 
-Expressions may be reused in the query command tree passed by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Do not assume that each expression appears only once in the query command tree.
+Expressions may be reused in the query command tree passed by the Entity Framework. Do not assume that each expression appears only once in the query command tree.
 
 ## Mapping Primitive Types
 
@@ -144,4 +144,4 @@ When mapping conceptual (EDM) types to provider types, you should map to the wid
 
 ## See also
 
-- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](sql-generation.md)

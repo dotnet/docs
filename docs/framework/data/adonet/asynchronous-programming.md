@@ -1,16 +1,17 @@
 ---
 title: "Asynchronous Programming"
+description: Learn about asynchronous programming in the .NET Framework Data Provider for SQL Server, including enhancements introduced in .NET Framework 4.5.
 ms.date: "10/18/2018"
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
 ---
 
 # Asynchronous Programming
 
-This topic discusses support for asynchronous programming in the .NET Framework Data Provider for SQL Server (SqlClient) including enhancements made to support asynchronous programming functionality that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+This topic discusses support for asynchronous programming in the .NET Framework Data Provider for SQL Server (SqlClient) including enhancements made to support asynchronous programming functionality that was introduced in .NET Framework 4.5.
 
 ## Legacy Asynchronous Programming
 
-Prior to [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
+Prior to .NET Framework 4.5, asynchronous programming with SqlClient was done with the following methods and the `Asynchronous Processing=true` connection property:
 
 1. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A?displayProperty=nameWithType>
 
@@ -18,24 +19,24 @@ Prior to [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], asynchronous p
 
 3. <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>
 
-This functionality remains in SqlClient in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+This functionality remains in SqlClient in .NET Framework 4.5.
 
 > [!TIP]
-> Beginning in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
+> Beginning in the .NET Framework 4.5, these legacy methods no longer require `Asynchronous Processing=true` in the connection string.
 
-## Asynchronous Programming Features Added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]
+## Asynchronous Programming Features Added in .NET Framework 4.5
 
 The new asynchronous programming feature provides a simple technique to make code asynchronous.
 
-For more information about the asynchronous programming feature that was introduced in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], see:
+For more information about the asynchronous programming feature that was introduced in .NET Framework 4.5, see:
 
 - [Asynchronous programming in C#](../../../csharp/async.md)
 
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 
-- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 1)](https://blogs.msdn.microsoft.com/adonet/2012/04/20/using-sqldatareaders-new-async-methods-in-net-4-5/)
+- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 1)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
 
-- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 2)](https://blogs.msdn.microsoft.com/adonet/2012/07/15/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples/)
+- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 2)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
 
 When your user interface is unresponsive or your server does not scale, it is likely that you need your code to be more asynchronous. Writing asynchronous code has traditionally involved installing a callback (also called continuation) to express the logic that occurs after the asynchronous operation finishes. This complicates the structure of asynchronous code as compared with synchronous code.
 
@@ -48,7 +49,7 @@ The `async` modifier specifies that a method is asynchronous. When calling an `a
 
 Calling an `async` method does not allocate any additional threads. It may use the existing I/O completion thread briefly at the end.
 
-The following methods were added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] to support asynchronous programming:
+The following methods were added in .NET Framework 4.5 to support asynchronous programming:
 
 - <xref:System.Data.Common.DbConnection.OpenAsync%2A?displayProperty=nameWithType>
 
@@ -84,7 +85,7 @@ The following methods were added in [!INCLUDE[net_v45](../../../../includes/net-
 
 - <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>
 
- Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).
+ Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
 > [!TIP]
 > The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
@@ -488,7 +489,7 @@ namespace SqlBulkCopyAsyncCodeSample {
          }
       }
 
-      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchornous calls)
+      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
          using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();
@@ -698,7 +699,7 @@ class Class1 {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -815,7 +816,7 @@ class Program {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -823,4 +824,4 @@ class Program {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

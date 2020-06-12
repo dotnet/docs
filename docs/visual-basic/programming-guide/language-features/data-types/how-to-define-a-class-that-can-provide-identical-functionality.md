@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)"
+title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data type arguments [Visual Basic], using"
@@ -50,13 +50,13 @@ You can define a class from which you can create objects that provide identical 
   
     - Exposes a parameterless constructor  
   
-     If you do not specify any constraints, the only operations and members your code can use are those supported by the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). For more information, see [Type List](../../../../visual-basic/language-reference/statements/type-list.md).  
+     If you do not specify any constraints, the only operations and members your code can use are those supported by the [Object Data Type](../../../language-reference/data-types/object-data-type.md). For more information, see [Type List](../../../language-reference/statements/type-list.md).  
   
 5. Identify every class member that is to be declared with a supplied type, and declare it `As` `typeparameter`. This applies to internal storage, procedure parameters, and return values.  
   
 6. Be sure your code uses only operations and methods that are supported by any data type it can supply to `itemType`.  
   
-     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the default constructor sets this to 9 (for a total of 10 items).  
+     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the parameterless constructor sets this to 9 (for a total of 10 items).  
   
      [!code-vb[VbVbalrDataTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#7)]  
   
@@ -70,10 +70,10 @@ You can define a class from which you can create objects that provide identical 
   
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Data Types](index.md)
+- [Generic Types in Visual Basic](generic-types.md)
 - [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
-- [Type List](../../../../visual-basic/language-reference/statements/type-list.md)
-- [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Of](../../../language-reference/statements/of-clause.md)
+- [Type List](../../../language-reference/statements/type-list.md)
+- [How to: Use a Generic Class](how-to-use-a-generic-class.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)

@@ -1,7 +1,7 @@
 ---
 title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
-ms.date: 02/06/2019
+ms.date: 12/04/2019
 ---
 
 # Value Options
@@ -58,15 +58,13 @@ There is one property for Value Options at this time: `Value`. An <xref:System.I
 
 ## Value Option functions
 
-There is currently one module-bound function for Value Options, `defaultValueArg`:
+The `ValueOption` module in FSharp.Core contains equivalent functionality to the `Option` module. There are a few differences in name, such as `defaultValueArg`:
 
 ```fsharp
-val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T 
+val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T
 ```
 
-As with the `defaultArg` function, `defaultValueArg` returns the underlying value of the given Value Option if it exists; otherwise, it returns the specified default value.
-
-At this time, there are no other module-bound functions for Value Options.
+This acts just like `defaultArg` in the `Option` module, but operates on a Value Option instead.
 
 ## See also
 

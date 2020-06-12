@@ -7,11 +7,11 @@ dev_langs:
 ---
 # Unsupported expressions
 
-This topic describes [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] expressions that are not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. For more information, see [How Entity SQL Differs from Transact-SQL](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md).
+This topic describes Transact-SQL expressions that are not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. For more information, see [How Entity SQL Differs from Transact-SQL](how-entity-sql-differs-from-transact-sql.md).
 
 ## Quantified predicates
 
-[!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] allows constructs of the following form:
+Transact-SQL allows constructs of the following form:
 
 ```sql
 sal > all (select salary from employees)
@@ -27,9 +27,9 @@ exists(select 0 from employees as e where sal > e.salary)
 
 ## * operator
 
-[!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] supports the use of the * operator in the SELECT clause to indicate that all columns should be projected out. This is not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].
+Transact-SQL supports the use of the * operator in the SELECT clause to indicate that all columns should be projected out. This is not supported in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].
 
 ## See also
 
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [How Entity SQL Differs from Transact-SQL](../../../../../../docs/framework/data/adonet/ef/language-reference/how-entity-sql-differs-from-transact-sql.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [How Entity SQL Differs from Transact-SQL](how-entity-sql-differs-from-transact-sql.md)

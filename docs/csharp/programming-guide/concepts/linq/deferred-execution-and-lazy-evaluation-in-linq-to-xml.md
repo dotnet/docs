@@ -11,7 +11,7 @@ Query and axis operations are often implemented to use deferred execution. This 
   
  The LINQ technologies make extensive use of deferred execution in both the members of core <xref:System.Linq?displayProperty=nameWithType> classes and in the extension methods in the various LINQ namespaces, such as <xref:System.Xml.Linq.Extensions?displayProperty=nameWithType>.  
   
- Deferred execution is supported directly in the C# language by the [yield](../../../../csharp/language-reference/keywords/yield.md) keyword (in the form of the `yield-return` statement) when used within an iterator block. Such an iterator must return a collection of type <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> (or a derived type).  
+ Deferred execution is supported directly in the C# language by the [yield](../../../language-reference/keywords/yield.md) keyword (in the form of the `yield-return` statement) when used within an iterator block. Such an iterator must return a collection of type <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> (or a derived type).  
   
 ## Eager vs. Lazy Evaluation  
  When you write a method that implements deferred execution, you also have to decide whether to implement the method using lazy evaluation or eager evaluation.  
@@ -25,11 +25,11 @@ Query and axis operations are often implemented to use deferred execution. This 
 ## Next Steps  
  The next topic in this tutorial illustrates deferred execution:  
   
-- [Deferred Execution Example (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-example.md)  
+- [Deferred Execution Example (C#)](./deferred-execution-example.md)  
   
 ## See also
 
-- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
-- [Concepts and Terminology (Functional Transformation) (C#)](../../../../csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)
-- [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)
-- [yield](../../../../csharp/language-reference/keywords/yield.md)
+- [Tutorial: Chaining Queries Together (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)
+- [Concepts and Terminology (Functional Transformation) (C#)](./concepts-and-terminology-functional-transformation.md)
+- [Aggregation Operations (C#)](./aggregation-operations.md)
+- [yield](../../../language-reference/keywords/yield.md)

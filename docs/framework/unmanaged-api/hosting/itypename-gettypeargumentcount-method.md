@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: ecb5480c-761a-4b02-83e0-b79abc67fd08
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName::GetTypeArgumentCount Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeArgumentCount (  
     [out, retval] DWORD* pCount  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -40,4 +38,4 @@ HRESULT GetTypeArgumentCount (
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

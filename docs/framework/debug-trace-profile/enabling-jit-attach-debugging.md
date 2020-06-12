@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "JIT-attach debugging"
   - "debugging [.NET Framework], JIT-attach debugging"
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Enabling JIT-Attach Debugging
 JIT-attach debugging is the phrase used to describe attaching a debugger to a process when you encounter errors, or it can be triggered by specific methods or functions.  
@@ -15,7 +13,7 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 - Unhandled exceptions (in both native and managed code).  
   
-- <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](https://go.microsoft.com/fwlink/?LinkId=182107) function (Windows 7 family).  
+- <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raisefailfastexception) function (Windows 7 family).  
   
 - Runtime fatal errors.  
   
@@ -25,11 +23,11 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 - <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> method.  
   
-- [DebugBreak](https://go.microsoft.com/fwlink/?LinkId=182106) function (Win32).  
+- [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) function (Win32).  
   
- Before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](https://go.microsoft.com/fwlink/?LinkId=181767).  
+ Before the .NET Framework 4, the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the .NET Framework 4, control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](/windows/win32/debug/configuring-automatic-debugging).  
   
 ## See also
 
-- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)
-- [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)
+- [Debugging, Tracing, and Profiling](index.md)
+- [Making an Image Easier to Debug](making-an-image-easier-to-debug.md)

@@ -32,9 +32,9 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 - <xref:System.Xml.Linq>
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
-- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
-- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [LINQ](../../programming-guide/language-features/linq/index.md)
+- [XML](../../programming-guide/language-features/xml/index.md)
+- [References and the Imports Statement](../../programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../statements/imports-statement-net-namespace-and-type.md)
 - [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

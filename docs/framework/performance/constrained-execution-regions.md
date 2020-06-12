@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "constrained execution regions"
   - "CERs"
 ms.assetid: 99354547-39c1-4b0b-8553-938e8f8d1808
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Constrained Execution Regions
 A constrained execution region (CER) is part of a mechanism for authoring reliable managed code. A CER defines an area in which the common language runtime (CLR) is constrained from throwing out-of-band exceptions that would prevent the code in the area from executing in its entirety. Within that region, user code is constrained from executing code that would result in the throwing of out-of-band exceptions. The <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> method must immediately precede a `try` block and marks `catch`, `finally`, and `fault` blocks as constrained execution regions. Once marked as a constrained region, code must only call other code with strong reliability contracts, and code should not allocate or make virtual calls to unprepared or unreliable methods unless the code is prepared to handle failures. The CLR delays thread aborts for code that is executing in a CER.  
@@ -110,4 +108,4 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
 ## See also
 
-- [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md)
+- [Reliability Best Practices](reliability-best-practices.md)

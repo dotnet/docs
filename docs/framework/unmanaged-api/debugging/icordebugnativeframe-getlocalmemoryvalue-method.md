@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetLocalMemoryValue Method
 Gets the value of an argument or local variable that is stored in the specified memory location for this native frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryValue (  
     [in]  CORDB_ADDRESS      address,  
     [in]  ULONG              cbSigBlob,  
@@ -46,7 +44,7 @@ HRESULT GetLocalMemoryValue (
  [out] A pointer to the address of an "ICorDebugValue" object representing the retrieved value that is stored in the specified memory location.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

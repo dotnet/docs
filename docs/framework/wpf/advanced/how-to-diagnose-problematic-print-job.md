@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 ---
 # How to: Diagnose Problematic Print Job
-Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
+Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
   
 ## Example  
  The major steps for creating this kind of utility are as follows.  
@@ -47,13 +47,13 @@ Network administrators often field complaints from users about print jobs that d
   
 - You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
   
- This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
+ This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if they wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
   
  [!code-cpp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#identifyanddiagnoseproblematicjob)]
  [!code-csharp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#identifyanddiagnoseproblematicjob)]
  [!code-vb[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#identifyanddiagnoseproblematicjob)]  
   
- To check print job status using the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintJobStatus>, the [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-), and <xref:System.FlagsAttribute>.  
+ To check print job status using the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintJobStatus>, the [& Operator (C# Reference)](../../../csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-), and <xref:System.FlagsAttribute>.  
   
  For each attribute whose bit is set, the code reports this to the console screen and sometimes suggests a way to respond. (The **HandlePausedJob** method that is called if the job or queue is paused is discussed below.)  
   
@@ -81,6 +81,6 @@ Network administrators often field complaints from users about print jobs that d
 - <xref:System.Printing.PrintSystemJobInfo>
 - <xref:System.FlagsAttribute>
 - <xref:System.Printing.PrintQueue>
-- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-)
+- [& Operator (C# Reference)](../../../csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-)
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)

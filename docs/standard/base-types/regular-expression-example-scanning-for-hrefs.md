@@ -1,5 +1,6 @@
 ---
 title: "Regular Expression Example: Scanning for HREFs"
+description: See an example of regular expressions in .NET. The example searches an input string and displays all href attribute values and their locations.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,8 +14,6 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Regular Expression Example: Scanning for HREFs
 The following example searches an input string and displays all the href="…" values and their locations in the string.  
@@ -52,4 +51,4 @@ The following example searches an input string and displays all the href="…" v
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

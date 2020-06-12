@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "PInvokeLog MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: b830444a-5003-49fe-b89b-b8bee22f7b1a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # pInvokeLog MDA
 The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique platform invoke signature used during execution.  
@@ -39,5 +37,5 @@ The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique 
   
 ## See also
 
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Consuming Unmanaged DLL Functions](../interop/consuming-unmanaged-dll-functions.md)

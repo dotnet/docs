@@ -1,5 +1,5 @@
 ---
-title: "Defining a Property in Windows Forms Controls"
+title: Define control properties
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -19,7 +19,7 @@ For an overview of properties, see [Properties Overview](https://docs.microsoft.
 - The .NET Framework class library provides type converters for common data types such as integers, decimal numbers, Boolean values, and others. The purpose of a type converter is generally to provide string-to-value conversion (from string data to other data types). Common data types are associated with default type converters that convert values into strings and strings into the appropriate data types. If you define a property that is a custom (that is, nonstandard) data type, you will have to apply an attribute that specifies the type converter to associate with that property. You can also use an attribute to associate a custom UI type editor with a property. A UI type editor provides a user interface for editing a property or data type. A color picker is an example of a UI type editor. Examples of attributes are given at the end of this topic.  
   
     > [!NOTE]
-    >  If a type converter or a UI type editor is not available for your custom property, you can implement one as described in [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)).  
+    > If a type converter or a UI type editor is not available for your custom property, you can implement one as described in [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)).  
   
  The following code fragment defines a custom property named `EndColor` for the custom control `FlashTrackBar`.  
   
@@ -31,9 +31,9 @@ Public Class FlashTrackBar
    Private _endColor As Color = Color.LimeGreen  
   
    ' The Category attribute tells the designer to display  
-   ' it in the Flash grouping.   
+   ' it in the Flash grouping.
    ' The Description attribute provides a description of  
-   ' the property.   
+   ' the property.
    <Category("Flash"), _  
    Description("The ending color of the bar.")>  _  
    Public Property EndColor() As Color  
@@ -47,7 +47,7 @@ Public Class FlashTrackBar
             baseBackground.Dispose()  
             baseBackground = Nothing  
          End If  
-         ' The Invalidate method calls the OnPaint method, which redraws    
+         ' The Invalidate method calls the OnPaint method, which redraws
          ' the control.  
          Invalidate()  
       End Set  
@@ -62,9 +62,9 @@ public class FlashTrackBar : Control {
    // Private data member that backs the EndColor property.  
    private Color endColor = Color.LimeGreen;  
    // The Category attribute tells the designer to display  
-   // it in the Flash grouping.   
+   // it in the Flash grouping.
    // The Description attribute provides a description of  
-   // the property.   
+   // the property.
    [  
    Category("Flash"),  
    Description("The ending color of the bar.")  
@@ -80,7 +80,7 @@ public class FlashTrackBar : Control {
             baseBackground.Dispose();  
             baseBackground = null;  
          }  
-         // The Invalidate method calls the OnPaint method, which redraws   
+         // The Invalidate method calls the OnPaint method, which redraws
          // the control.  
          Invalidate();  
       }  
@@ -104,7 +104,7 @@ End Property
   
 ```csharp  
 [  
-Category("Flash"),   
+Category("Flash"),
 TypeConverter(typeof(FlashTrackBarValueConverter)),  
 Editor(typeof(FlashTrackBarValueEditor), typeof(UITypeEditor)),  
 Description("The current value of the track bar.  You can enter an actual value or a percentage.")  

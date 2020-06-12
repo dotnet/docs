@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 796b2154-b53c-4d07-9e67-80fd6064725a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedENCUpdate::InitializeForEnc Method
-Allows method boundaries to be computed before the first call to the [ISymUnmanagedENCUpdate::UpdateSymbolStore2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-updatesymbolstore2-method.md) method.  
+Allows method boundaries to be computed before the first call to the [ISymUnmanagedENCUpdate::UpdateSymbolStore2](isymunmanagedencupdate-updatesymbolstore2-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForEnc();  
 ```  
   
@@ -35,4 +33,4 @@ HRESULT InitializeForEnc();
   
 ## See also
 
-- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [ISymUnmanagedENCUpdate Interface](isymunmanagedencupdate-interface.md)

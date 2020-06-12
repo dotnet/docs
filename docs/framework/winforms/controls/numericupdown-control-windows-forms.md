@@ -1,5 +1,5 @@
 ---
-title: "NumericUpDown Control (Windows Forms)"
+title: "NumericUpDown Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms controls, NumericUpDown control"

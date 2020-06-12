@@ -25,33 +25,33 @@ public class WorkerThread
     public void DoWork(DependentTransaction dependentTransaction)  
     {  
         Thread thread = new Thread(ThreadMethod);  
-        thread.Start(dependentTransaction);   
+        thread.Start(dependentTransaction);
     }  
   
-    public void ThreadMethod(object transaction)   
-    {   
+    public void ThreadMethod(object transaction)
+    {
         DependentTransaction dependentTransaction = transaction as DependentTransaction;  
-        Debug.Assert(dependentTransaction != null);   
+        Debug.Assert(dependentTransaction != null);
         try  
         {  
             using(TransactionScope ts = new TransactionScope(dependentTransaction))  
             {  
-                /* Perform transactional work here */   
+                /* Perform transactional work here */
                 ts.Complete();  
             }  
         }  
         finally  
         {  
-            dependentTransaction.Complete();   
-             dependentTransaction.Dispose();   
+            dependentTransaction.Complete();
+             dependentTransaction.Dispose();
         }  
     }  
   
-//Client code   
+//Client code
 using(TransactionScope scope = new TransactionScope())  
 {  
     Transaction currentTransaction = Transaction.Current;  
-    DependentTransaction dependentTransaction;      
+    DependentTransaction dependentTransaction;
     dependentTransaction = currentTransaction.DependentClone(DependentCloneOption.BlockCommitUntilComplete);  
     WorkerThread workerThread = new WorkerThread();  
     workerThread.DoWork(dependentTransaction);  
@@ -64,7 +64,7 @@ using(TransactionScope scope = new TransactionScope())
   
  The `ThreadMethod` method executes on the new thread. The client starts a new thread, passing the dependent transaction as the `ThreadMethod` parameter.  
   
- Because the dependent transaction is created with <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete>, you are guaranteed that the transaction cannot be committed until all of the transactional work done on the second thread is finished and <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent transaction. This means that if the client's scope ends (when it tries to dispose of the transaction object at the end of the **using** statement) before the new thread calls <xref:System.Transactions.DependentTransaction.Complete%2A> on the dependent transaction, the client code blocks until <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent. Then the transaction can finish committing or aborting.  
+ Because the dependent transaction is created with <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete>, you are guaranteed that the transaction cannot be committed until all of the transactional work done on the second thread is finished and <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent transaction. This means that if the client's scope ends (when it tries to dispose of the transaction object at the end of the `using` statement) before the new thread calls <xref:System.Transactions.DependentTransaction.Complete%2A> on the dependent transaction, the client code blocks until <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent. Then the transaction can finish committing or aborting.  
   
 ## Concurrency Issues  
  There are a few additional concurrency issues that you need to be aware of when using the <xref:System.Transactions.DependentTransaction> class:  

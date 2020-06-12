@@ -1,5 +1,5 @@
 ---
-title: "How to: Access XML Child Elements (Visual Basic)"
+title: "How to: Access XML Child Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML axis [Visual Basic], child"
@@ -14,7 +14,7 @@ This example shows how to use a child axis property to access all XML child elem
 ## Example  
  [!code-vb[VbXMLSamples#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples4.vb#10)]  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
 - A reference to the <xref:System.Xml.Linq> namespace.  
@@ -22,7 +22,7 @@ This example shows how to use a child axis property to access all XML child elem
 ## See also
 
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
-- [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
-- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
-- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
-- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [XML Child Axis Property](../../../language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Value Property](../../../language-reference/xml-axis/xml-value-property.md)
+- [Accessing XML in Visual Basic](accessing-xml.md)
+- [XML](index.md)

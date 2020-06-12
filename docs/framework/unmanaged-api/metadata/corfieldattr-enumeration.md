@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 6ae2c4be-212c-4e74-9288-40a11dc26522
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorFieldAttr Enumeration
 Contains values that describe metadata about a field.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFieldAttr {  
   
     fdFieldAccessMask           =   0x0007,  
@@ -77,7 +75,7 @@ typedef enum CorFieldAttr {
 |`fdHasFieldRVA`|Specifies that the field has a relative virtual address.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -85,4 +83,4 @@ typedef enum CorFieldAttr {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

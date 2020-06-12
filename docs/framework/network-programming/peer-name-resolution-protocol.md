@@ -1,5 +1,6 @@
 ---
 title: "Peer Name Resolution Protocol"
+description: Learn about the Peer Name Resolution Protocol (PNRP), a secure, scalable, and dynamic name registration and name resolution protocol.
 ms.date: "03/30/2017"
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
 ---
@@ -44,5 +45,8 @@ The Peer Name Resolution Protocol demonstrates the following properties:
 
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>
-- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Network Programming Samples](network-programming-samples.md)
+
+<!-- to-do: review sample links
 - [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)
+-->

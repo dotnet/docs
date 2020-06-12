@@ -1,7 +1,6 @@
 ---
-title: "?: Operator - C# Reference"
-ms.custom: seodec18
-ms.date: "11/20/2018"
+title: "?: operator - C# reference"
+ms.date: "03/06/2020"
 f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
@@ -11,9 +10,9 @@ helpviewer_keywords:
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 ---
-# ?: Operator (C# Reference)
+# ?: operator (C# reference)
 
-The conditional operator `?:`, commonly known as the ternary conditional operator, evaluates a Boolean expression, and returns the result of evaluating one of two expressions, depending on whether the Boolean expression evaluates to `true` or `false`. Beginning with C# 7.2, the [conditional ref expression](#conditional-ref-expression) returns the reference to the result of one of the two expressions.
+The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`.
 
 The syntax for the conditional operator is as follows:
 
@@ -37,21 +36,20 @@ is evaluated as
 a ? b : (c ? d : e)
 ```
 
-A mnemonic device you can use to remember how this operator evaluates is to ask:
-
-```text
-is this condition true ? yes : no
-```
-
-with the ? part of the operator acting as a question mark for the previous statement, and the consequent acting as the logical response to this question.
+> [!TIP]
+> You can use the following mnemonic device to remember how the conditional operator is evaluated:
+>
+> ```text
+> is this condition true ? yes : no
+> ```
 
 The following example demonstrates the usage of the conditional operator:
 
-[!code-csharp[non ref conditional](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalValue)]
+[!code-csharp-interactive[non ref conditional](snippets/ConditionalOperator.cs#ConditionalValue)]
 
 ## Conditional ref expression
 
-Beginning with C# 7.2, you can use the conditional ref expression to return the reference to the result of one of the two expressions. You can assign that reference to a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable, or use it as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method parameter](../keywords/ref.md#passing-an-argument-by-reference).
+Beginning with C# 7.2, a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with the conditional ref expression. You can also use the conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
 
 The syntax for the conditional ref expression is as follows:
 
@@ -65,30 +63,29 @@ In the case of the conditional ref expression, the type of `consequent` and `alt
 
 The following example demonstrates the usage of the conditional ref expression:
 
-[!code-csharp[conditional ref](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#ConditionalRef)]
-
-For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.2/conditional-ref.md).
+[!code-csharp-interactive[conditional ref](snippets/ConditionalOperator.cs#ConditionalRef)]
 
 ## Conditional operator and an `if..else` statement
 
-Use of the conditional operator over an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
+Use of the conditional operator instead of an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
-[!code-csharp[conditional and if-else](~/samples/snippets/csharp/language-reference/operators/ConditionalExamples.cs#CompareWithIf)]
+[!code-csharp[conditional and if-else](snippets/ConditionalOperator.cs#CompareWithIf)]
 
 ## Operator overloadability
 
-The conditional operator cannot be overloaded.
+A user-defined type cannot overload the conditional operator.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+For more information about the conditional ref expression, see the [feature proposal note](~/_csharplang/proposals/csharp-7.2/conditional-ref.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [if-else statement](../keywords/if-else.md)
-- [?. and ?[] Operators](member-access-operators.md#null-conditional-operators--and-)
-- [?? Operator](null-coalescing-operator.md)
+- [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
+- [?? and ??= operators](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

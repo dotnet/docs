@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Put function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # QualifierSet_Put function
@@ -67,7 +65,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
-| `WBEM_E_CANNOT_BE_KEY` | 0x8004101f | There was an illegal attempt to specify the **Key** qualifier on a property that cannot be a key. The keys are specified om tje c;ass definition for an object and cannot be altered on a per-instance basis. |
+| `WBEM_E_CANNOT_BE_KEY` | 0x8004101f | There was an illegal attempt to specify the **Key** qualifier on a property that cannot be a key. The keys are specified in the class definition for an object and cannot be altered on a per-instance basis. |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is not valid. |
 | `WBEM_E_INVALID_QUALIFIER_TYPE` | 0x80041029 | The `pVal` parameter is not of a legal qualifier type. |
 | `WBEM_E_OVERRIDE_NOT_ALLOWED` | 0x8004101a | It is not possible to call the `QualifierSet_Put` method on the qualifier because the owning object does not permit overrides. |
@@ -79,7 +77,7 @@ This function wraps a call to the [IWbemQualifierSet::Put](/windows/desktop/api/
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

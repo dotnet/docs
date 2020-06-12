@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 97dc3a56-adfa-431f-889e-06a35ac84d51
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataConverter::GetMetaDataFromTypeLib Method
-Gets an interface pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.  
+Gets an interface pointer to an [IMetaDataImport](imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataFromTypeLib (  
-    [in]  ITypeLib        *pITL,   
+    [in]  ITypeLib        *pITL,
     [out] IMetaDataImport **ppMDI  
 );  
 ```  
@@ -38,7 +36,7 @@ HRESULT GetMetaDataFromTypeLib (
  [out] Pointer to a location that receives the address of the `IMetaDataImport` instance that represents the metadata signature.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,5 +46,5 @@ HRESULT GetMetaDataFromTypeLib (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)

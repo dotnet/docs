@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1d03bb15-a2c8-4a04-8fc6-b126c89c3778
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EndMerge Method
 Indicates that all custom attributes have been merged into the emit scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndMerge(  
     mdAssembly AssemblyID  
 ) PURE;  
@@ -41,6 +39,6 @@ HRESULT EndMerge(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

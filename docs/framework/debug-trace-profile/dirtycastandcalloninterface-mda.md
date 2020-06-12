@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), early bound calls AutoDispatch"
   - "EarlyBoundCallOnAutorDispatchClassInteface MDA"
 ms.assetid: aa388ed3-7e3d-48ea-a0b5-c47ae19cec38
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # dirtyCastAndCallOnInterface MDA
 The `dirtyCastAndCallOnInterface` managed debugging assistant (MDA) is activated when an early-bound call through a vtable is attempted on a class interface that has been marked late-bound only.  
@@ -46,4 +44,4 @@ The `dirtyCastAndCallOnInterface` managed debugging assistant (MDA) is activated
 ## See also
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

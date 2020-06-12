@@ -10,8 +10,6 @@ api_type:
 ms.assetid: 1d4424ab-5143-4e50-a84a-ceeb4ddf3bba
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugStateChange Enumeration
 
@@ -19,7 +17,7 @@ Describes the amount of cached data that must be discarded based on changes to t
 
 ## Syntax
 
-```
+```cpp
 typedef enum CorDebugStateChange
 {
     PROCESS_RUNNING = 0x0000001,
@@ -40,7 +38,7 @@ typedef enum CorDebugStateChange
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** CorDebug.idl, CorDebug.h
 

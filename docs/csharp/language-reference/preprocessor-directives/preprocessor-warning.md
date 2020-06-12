@@ -1,7 +1,5 @@
 ---
 title: "#warning - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "#warning"
@@ -17,7 +15,7 @@ ms.assetid: e6fb496d-bb8b-4018-baf6-5b60a0c8902b
 ```  
   
 ## Remarks
- A common use of `#warning` is in a conditional directive. It is also possible to generate a user-defined error with [#error](../../../csharp/language-reference/preprocessor-directives/preprocessor-error.md).  
+ A common use of `#warning` is in a conditional directive. It is also possible to generate a user-defined error with [#error](./preprocessor-error.md).  
   
 ## Example  
 
@@ -38,6 +36,6 @@ class MainClass
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Preprocessor Directives](./index.md)

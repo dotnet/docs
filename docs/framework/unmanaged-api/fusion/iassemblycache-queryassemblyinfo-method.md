@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 09313cb5-06f6-43bd-94f4-1055c6b0c99a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::QueryAssemblyInfo Method
 Gets the requested data about the specified assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueryAssemblyInfo (  
     [in] DWORD dwFlags,  
     [in] LPCWSTR pszAssemblyName,  
@@ -43,10 +41,10 @@ HRESULT QueryAssemblyInfo (
  [in] The name of the assembly for which data will be retrieved.  
   
  `pAsmInfo`  
- [in, out] An [ASSEMBLY_INFO](../../../../docs/framework/unmanaged-api/fusion/assembly-info-structure.md) structure that contains data about the assembly.  
+ [in, out] An [ASSEMBLY_INFO](assembly-info-structure.md) structure that contains data about the assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -54,4 +52,4 @@ HRESULT QueryAssemblyInfo (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)

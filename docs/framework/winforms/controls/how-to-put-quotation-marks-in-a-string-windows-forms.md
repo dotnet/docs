@@ -1,5 +1,5 @@
 ---
-title: "How to: Put Quotation Marks in a String (Windows Forms)"
+title: "How to: Put Quotation Marks in a String"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -20,7 +20,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
   
 ### To place quotation marks in a string in your code  
   
-1. In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)], insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
+1. In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and Visual C++, insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.  
   
     ```vb  
     Private Sub InsertQuote()  
@@ -59,7 +59,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```  
   
     > [!NOTE]
-    >  In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](/cpp/error-messages/compiler-errors-2/compiler-error-c3851).  
+    > In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](/cpp/error-messages/compiler-errors-2/compiler-error-c3851).  
   
      -or-  
   

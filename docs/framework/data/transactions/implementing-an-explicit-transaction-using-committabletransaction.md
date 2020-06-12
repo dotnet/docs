@@ -56,14 +56,14 @@ public void DoTransactionalWork()
      }  
      finally  
      {  
-          //Restore the ambient transaction   
+          //Restore the ambient transaction
           Transaction.Current = oldAmbient;  
      }  
 }  
 void OnCommitted(IAsyncResult asyncResult)  
 {  
      CommittableTransaction committableTransaction;  
-     committableTransaction = asyncResult as CommittableTransaction;     
+     committableTransaction = asyncResult as CommittableTransaction;
      Debug.Assert(committableTransaction != null);  
      try  
      {  
@@ -81,5 +81,5 @@ void OnCommitted(IAsyncResult asyncResult)
   
 ## See also
 
-- [Implementing an Implicit Transaction using Transaction Scope](../../../../docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md)
-- [Transaction Processing](../../../../docs/framework/data/transactions/index.md)
+- [Implementing an Implicit Transaction using Transaction Scope](implementing-an-implicit-transaction-using-transaction-scope.md)
+- [Transaction Processing](index.md)

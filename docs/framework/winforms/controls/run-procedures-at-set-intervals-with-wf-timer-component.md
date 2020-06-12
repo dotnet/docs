@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component"
+title: Run Procedures at Set Intervals with Timer Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -20,7 +20,7 @@ You might sometimes want to create a procedure that runs at specific time interv
  This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
 > [!NOTE]
->  There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](limitations-of-the-timer-component-interval-property.md).  
+> There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](limitations-of-the-timer-component-interval-property.md).  
   
 ## To run a procedure at set intervals with the Timer component  
   
@@ -29,7 +29,7 @@ You might sometimes want to create a procedure that runs at specific time interv
 2. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   
     > [!NOTE]
-    >  The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
+    > The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
   
 3. Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
   
@@ -81,7 +81,7 @@ private void InitializeTimer()
     Button1.Click += new EventHandler(Button1_Click);  
 }  
   
-private void Timer1_Tick(object Sender, EventArgs e)     
+private void Timer1_Tick(object Sender, EventArgs e)
 {  
    // Set the caption to the current time.  
    Label1.Text = DateTime.Now.ToString();  
@@ -111,11 +111,11 @@ private:
       timer1->Interval = 1000;  
       // Enable timer.  
       timer1->Enabled = true;  
-      this->timer1->Tick += gcnew System::EventHandler(this,    
+      this->timer1->Tick += gcnew System::EventHandler(this,
                                &Form1::timer1_Tick);  
   
       button1->Text = S"Stop";  
-      this->button1->Click += gcnew System::EventHandler(this,   
+      this->button1->Click += gcnew System::EventHandler(this,
                                &Form1::button1_Click);  
    }  
   
@@ -184,9 +184,9 @@ private void InitializeTimer()
    this.timer1.Tick += new System.EventHandler(this.timer1_Tick);  
 }  
   
-private void timer1_Tick(object sender, System.EventArgs e)     
+private void timer1_Tick(object sender, System.EventArgs e)
 {  
-   if (counter >= 10)   
+   if (counter >= 10)
    {  
       // Exit loop code.  
       timer1.Enabled = false;  
@@ -219,7 +219,7 @@ private:
    void timer1_Tick(System::Object ^ sender,  
       System::EventArgs ^ e)  
    {  
-      if (counter >= 10)   
+      if (counter >= 10)
       {  
          // Exit loop code.  
          timer1->Enabled = false;  

@@ -14,4 +14,4 @@ The specified a key for a collection member already identifies another member of
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

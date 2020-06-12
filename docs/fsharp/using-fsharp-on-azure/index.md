@@ -29,7 +29,7 @@ Azure Functions support F# as a first-class language with efficient, reactive, s
 Other resources for using Azure Functions and F#:
 
 * [Scale Up Azure Functions in F# Using Suave](https://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
-* [How to create Azure function in F#](https://mnie.github.io/2016-09-08-AzureFunctions/)
+* [How to create Azure function in F#](https://www.mnie.me/azurefunctions)
 * [Using the Azure Type Provider with Azure Functions](https://compositional-it.com/blog/2017/08-30-using-the-azure-type-provider-with-azure-functions/index.html)
 
 ## Using Azure Storage with F\#
@@ -82,7 +82,7 @@ Azure Event Hubs can be used with F# in two ways:
 Azure Notification Hubs can be used with F# in two ways:
 
 1. Through the creation of F# Azure Functions which send results to a notification hub. See [Azure Function output triggers for Notification Hubs](/azure/azure-functions/functions-bindings-notification-hubs), or
-2. By using the [.NET SDK for Azure](https://blogs.msdn.microsoft.com/azuremobile/2014/04/08/push-notifications-using-notification-hub-and-net-backend/). Note these examples are in C#.
+2. By using the [.NET SDK for Azure](https://docs.microsoft.com/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Note these examples are in C#.
 
 ## Implementing WebHooks on Azure with F\#
 

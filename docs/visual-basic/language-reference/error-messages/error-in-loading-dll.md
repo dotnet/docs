@@ -1,5 +1,5 @@
 ---
-title: "Error in loading DLL (Visual Basic)"
+title: "Error in loading DLL"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID48"
@@ -28,4 +28,4 @@ A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `De
   
 ## See also
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)

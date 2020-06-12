@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::Deactivate Method
 Causes this ICorDebugStepper to cancel the last step command that it received.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Deactivate ();  
 ```  
   
@@ -31,7 +29,7 @@ HRESULT Deactivate ();
  A new stepping command may be issued after the most recently received step command has been canceled.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

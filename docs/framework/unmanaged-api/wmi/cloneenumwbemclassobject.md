@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "CloneEnumWbemClassObject function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CloneEnumWbemClassObject function
 Makes a logical copy of an enumerator, retaining its current position in an enumeration.
@@ -24,16 +22,16 @@ Makes a logical copy of an enumerator, retaining its current position in an enum
 
 ## Syntax
 
-```
+```cpp
 HRESULT CloneEnumWbemClassObject (
-   [out] IEnumWbemClassObject**  ppEnum, 
+   [out] IEnumWbemClassObject**  ppEnum,
    [in] DWORD                    authLevel,
    [in] DWORD                    impLevel,
-   [in] IEnumWbemClassObject*    pCurrentEnumWbemClassObject, 
+   [in] IEnumWbemClassObject*    pCurrentEnumWbemClassObject,
    [in] BSTR                     strUser,
    [in] BSTR                     strPassword,
-   [in BSTR]                     strAuthority 
-); 
+   [in BSTR]                     strAuthority
+);
 ```
 
 ## Parameters
@@ -56,7 +54,7 @@ HRESULT CloneEnumWbemClassObject (
 `strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`\ 
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value
@@ -84,7 +82,7 @@ If the function call fails, you can obtain additional error information by calli
 For an example, see the [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) method.
 
 ## Requirements
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 35b8f0d6-9aba-4714-adb2-62020a38fb7e
 topic_type:
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # IMetaDataTables::GetUserString Method
@@ -46,7 +44,7 @@ HRESULT GetUserString (
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** Cor.h
 

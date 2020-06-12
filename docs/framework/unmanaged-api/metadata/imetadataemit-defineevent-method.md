@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: cf064bac-9a9f-41c5-9e1d-108ff7af3afe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineEvent Method
 Creates a definition for an event with the specified metadata signature, and gets a token to that event definition.  
   
 ## Syntax  
   
-```  
-HRESULT DefineEvent (   
-    [in]  mdTypeDef    td,   
-    [in]  LPCWSTR      szEvent,   
-    [in]  DWORD        dwEventFlags,   
-    [in]  mdToken      tkEventType,   
-    [in]  mdMethodDef  mdAddOn,   
-    [in]  mdMethodDef  mdRemoveOn,   
-    [in]  mdMethodDef  mdFire,   
-    [in]  mdMethodDef  rmdOtherMethods[],   
-    [out] mdEvent      *pmdEvent   
+```cpp  
+HRESULT DefineEvent (
+    [in]  mdTypeDef    td,
+    [in]  LPCWSTR      szEvent,
+    [in]  DWORD        dwEventFlags,
+    [in]  mdToken      tkEventType,
+    [in]  mdMethodDef  mdAddOn,
+    [in]  mdMethodDef  mdRemoveOn,
+    [in]  mdMethodDef  mdFire,
+    [in]  mdMethodDef  rmdOtherMethods[],
+    [out] mdEvent      *pmdEvent
 );  
 ```  
   
@@ -66,7 +64,7 @@ HRESULT DefineEvent (
  [out] The metadata token assigned to the event.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -76,5 +74,5 @@ HRESULT DefineEvent (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

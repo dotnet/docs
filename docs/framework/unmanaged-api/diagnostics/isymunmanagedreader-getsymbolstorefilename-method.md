@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c84f4846-9bc8-44a4-9a76-e39106d6d8b2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetSymbolStoreFileName Method
 Provides the on-disk file name of the symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolStoreFileName (  
     [in]  ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
@@ -49,4 +47,4 @@ HRESULT GetSymbolStoreFileName (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

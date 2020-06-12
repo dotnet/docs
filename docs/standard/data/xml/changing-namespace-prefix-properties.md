@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d5c87cbe-4d69-429f-aad5-3103c2ca2770
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Changing Namespace Prefix Properties
 The **XmlNode** class allows you to change the namespace prefix associated with a given node. For example, the following code shows the prefix of an element being changed.  
@@ -23,7 +21,7 @@ Console.WriteLine(doc.InnerXml)
 ```csharp  
 XmlDocument doc = new XmlDocument();  
 doc.LoadXml("<a:test xmlns:a='123' xmlns:b='456'/>");  
-XmlElement e = doc.DocumentElement;         
+XmlElement e = doc.DocumentElement;
 e.Prefix = "b";  
 Console.WriteLine(doc.InnerXml);  
 ```  
@@ -47,7 +45,7 @@ Console.WriteLine(doc.InnerXml)
 ```csharp  
 XmlDocument doc = new XmlDocument();  
 doc.LoadXml("<test xmlns='123'/>");  
-XmlElement e = doc.DocumentElement;         
+XmlElement e = doc.DocumentElement;
 e.Prefix = "a";  
 Console.WriteLine(doc.InnerXml);  
 ```  
@@ -62,4 +60,4 @@ Console.WriteLine(doc.InnerXml);
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

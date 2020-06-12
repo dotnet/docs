@@ -1,9 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-author: mairaw
-ms.author: mairaw
-ms.date: 05/06/2019
+ms.date: 12/03/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -23,13 +21,13 @@ For news about .NET, check the following blogs:
 
 Also follow the latest .NET events:
 
-- [Microsoft Connect()](https://www.microsoft.com/connectevent)
-- [Microsoft Build 2018](https://channel9.msdn.com/Events/Build/2018)
+- [Microsoft Ignite](https://www.microsoft.com/ignite)
+- [Microsoft Build](https://www.microsoft.com/build)
 - [.NET Conf](https://www.dotnetconf.net/)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET Core](core/whats-new/index.md)
+- [What's new in .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
 - [What's new in the .NET Framework](framework/whats-new/index.md)
 - [What's new in C#](csharp/whats-new/index.md)
 - [What's new for Visual Basic](visual-basic/getting-started/whats-new.md)
@@ -38,28 +36,34 @@ For information about the latest features added to the .NET implementations and 
 
 This documentation covers the breadth of .NET across platforms and languages. You can get started with .NET and its languages in any of the following sections:
 
-- [.NET Guide](standard/index.md)
-- [.NET Core Guide](core/index.md)
-- [.NET Framework Guide](framework/index.md)
-- [C# Guide](csharp/index.md)
-- [F# Guide](fsharp/index.md)
-- [Visual Basic Guide](visual-basic/index.md)
+- [.NET Guide](standard/index.yml)
+- [.NET Core Guide](core/index.yml)
+- [.NET Framework Guide](framework/index.yml)
+- [C# Guide](csharp/index.yml)
+- [F# Guide](fsharp/index.yml)
+- [Visual Basic Guide](visual-basic/index.yml)
 - [ML.NET Guide](machine-learning/index.yml)
 - [.NET for Apache Spark](spark/index.yml)
+- [.NET Application Architecture](architecture/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
+
+## Videos
+
+Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker, data access, and more:
+
+[.NET 101 video series](https://dotnet.microsoft.com/learn/videos)
 
 ## Open source
 
 This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
 - [.NET Core Home](https://github.com/dotnet/core)
-- [.NET Libraries](https://github.com/dotnet/corefx)
-- [.NET Core Runtime](https://github.com/dotnet/coreclr)
-- [.NET Core CLI](https://github.com/dotnet/cli)
+- [.NET Core runtime](https://github.com/dotnet/runtime)
+- [.NET Core SDK](https://github.com/dotnet/sdk)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
-- [F# Compiler and IDE Tools](https://github.com/microsoft/visualfsharp)
+- [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)
 - [WPF](https://github.com/dotnet/wpf)
 
-You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community) to find out what's new or ask for help.
+You can join other people who are already active in the [.NET community](https://dotnet.microsoft.com/platform/community) to find out what's new or ask for help.

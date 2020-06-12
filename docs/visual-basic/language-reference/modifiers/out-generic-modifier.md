@@ -1,5 +1,5 @@
 ---
-title: "Out (Generic Modifier) (Visual Basic)"
+title: "Out (Generic Modifier)"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.VarianceOut"
@@ -59,4 +59,4 @@ The following example shows how to declare, instantiate, and invoke a covariant 
 ## See also
 
 - [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
-- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [In](in-generic-modifier.md)

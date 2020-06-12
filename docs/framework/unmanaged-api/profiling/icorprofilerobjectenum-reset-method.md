@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: 973dbcc5-bce8-43a7-9a66-d9a1db7cc5b7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerObjectEnum::Reset Method
 Moves this enumerator's cursor to the starting position of the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -38,4 +36,4 @@ HRESULT Reset ();
   
 ## See also
 
-- [ICorProfilerObjectEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)
+- [ICorProfilerObjectEnum Interface](icorprofilerobjectenum-interface.md)

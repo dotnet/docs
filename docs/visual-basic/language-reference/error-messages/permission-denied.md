@@ -1,5 +1,5 @@
 ---
-title: "Permission denied (Visual Basic)"
+title: "Permission denied"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID70"
@@ -18,4 +18,4 @@ An attempt was made to write to a write-protected disk or to access a locked fil
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -1,7 +1,5 @@
 ---
 title: "extern modifier - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords:
   - "extern_CSharpKeyword"
@@ -77,7 +75,7 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 
 5. Run `cm.exe`. The `SampleMethod` method passes the value 5 to the DLL file, which returns the value multiplied by 10.  The program produces the following output:
 
-    ```
+    ```output
     SampleMethod() returns 50.
     ```
 
@@ -91,4 +89,4 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)

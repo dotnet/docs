@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: fe374932-67f5-487d-9325-f868812b92e4
 ---
 # How to: Expose a Feed as Both Atom and RSS
-Windows Communication Foundation (WCF) allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. For more information about the different WCF hosting options, see [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md).  
+Windows Communication Foundation (WCF) allows you to create a service that exposes a syndication feed. This topic discusses how to create a syndication service that exposes a syndication feed using both Atom 1.0 and RSS 2.0. This service exposes one endpoint that can return either syndication format. For simplicity the service used in this sample is self hosted. In a production environment a service of this type would be hosted under IIS or WAS. For more information about the different WCF hosting options, see [Hosting](hosting.md).  
   
 ### To create a basic syndication service  
   
@@ -17,7 +17,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
      [!code-vb[htAtomRss#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatomrss/vb/program.vb#0)]  
   
     > [!NOTE]
-    >  Use the <xref:System.ServiceModel.ServiceKnownTypeAttribute> to specify the types that are returned by the service operations in this interface.  
+    > Use the <xref:System.ServiceModel.ServiceKnownTypeAttribute> to specify the types that are returned by the service operations in this interface.  
   
 2. Implement the service contract.  
   

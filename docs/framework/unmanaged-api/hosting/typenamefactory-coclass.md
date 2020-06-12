@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: c853bb58-c9c5-476b-8e80-608aa53ea18d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # TypeNameFactory Coclass
 Provides an interface for managing the deconstruction of a type name.  
   
 ## Syntax  
   
-```  
+```cpp  
 coclass TypeNameFactory {  
     [default] interface ITypeNameFactory;  
 };  
@@ -32,10 +30,10 @@ coclass TypeNameFactory {
   
 |Interface|Description|  
 |---------------|-----------------|  
-|[ITypeNameFactory Interface](../../../../docs/framework/unmanaged-api/hosting/itypenamefactory-interface.md)|This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
+|[ITypeNameFactory Interface](itypenamefactory-interface.md)|This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -45,4 +43,4 @@ coclass TypeNameFactory {
   
 ## See also
 
-- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)
+- [Hosting Coclasses](hosting-coclasses.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8a4d9c86-b5ef-460a-9731-1d8c91b93a0b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum::Reset Method
 Moves the cursor of to the beginning of the enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   
@@ -31,7 +29,7 @@ HRESULT Reset ();
  `Reset` takes no parameters.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -41,4 +39,4 @@ HRESULT Reset ();
   
 ## See also
 
-- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+- [ICorPublishEnum Interface](icorpublishenum-interface.md)

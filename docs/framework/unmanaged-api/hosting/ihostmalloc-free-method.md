@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c89abf5b-1120-4437-8b57-4a99fb3ae7f9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMAlloc::Free Method
-Frees memory that was allocated by using the [Alloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-alloc-method.md) function.  
+Frees memory that was allocated by using the [Alloc](ihostmalloc-alloc-method.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Free (  
     [in] void* pMem  
 );  
@@ -49,7 +47,7 @@ HRESULT Free (
  If the `pMem` parameter refers to a region of memory that was not allocated by using a call to `Alloc`, the host should return HOST_E_INVALIDOPERATION.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -59,5 +57,5 @@ HRESULT Free (
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
-- [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)
+- [IHostMalloc Interface](ihostmalloc-interface.md)

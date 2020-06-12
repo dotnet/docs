@@ -40,14 +40,14 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
  Look at the pixel in row 3, column 5 of the image. The corresponding number in the bitmap is 1. The color table tells us that 1 represents the color red so the pixel is red. All the entries in the top row of the bitmap are 3. The color table tells us that 3 represents blue, so all the pixels in the top row of the image are blue.  
   
 > [!NOTE]
->  Some bitmaps are stored in bottom-up format; the numbers in the first row of the bitmap correspond to the pixels in the bottom row of the image.  
+> Some bitmaps are stored in bottom-up format; the numbers in the first row of the bitmap correspond to the pixels in the bottom row of the image.  
   
  A bitmap that stores indexes into a color table is called a palette-indexed bitmap. Some bitmaps have no need for a color table. For example, if a bitmap uses 24 bits per pixel, that bitmap can store the colors themselves rather than indexes into a color table. The following illustration shows a bitmap that stores colors directly (24 bits per pixel) rather than using a color table. The illustration also shows an enlarged view of the corresponding image. In the bitmap, FFFFFF represents white, FF0000 represents red, 00FF00 represents green, and 0000FF represents blue.  
   
  ![Bitmap sample](./media/aboutgdip03-art02.gif "AboutGdip03_Art02")  
   
 ## Graphics File Formats  
- There are many standard formats for saving bitmaps in disk files. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] supports the graphics file formats described in the following paragraphs.  
+ There are many standard formats for saving bitmaps in disk files. GDI+ supports the graphics file formats described in the following paragraphs.  
   
 ### BMP  
  BMP is a standard format used by Windows to store device-independent and application-independent images. The number of bits per pixel (1, 4, 8, 15, 24, 32, or 64) for a given BMP file is specified in a file header. BMP files with 24 bits per pixel are common. BMP files are usually not compressed and, therefore, are not well suited for transfer across the Internet.  

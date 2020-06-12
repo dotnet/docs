@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  
@@ -32,15 +30,15 @@ ms.author: "ronpet"
   
      The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution.  
   
-<a name="choosing_a_compiler"></a>   
+<a name="choosing_a_compiler"></a>
 ## Choosing a Compiler  
  To obtain the benefits provided by the common language runtime (CLR), you must use one or more language compilers that target the runtime, such as Visual Basic, C#, Visual C++, F#, or one of many third-party compilers such as an Eiffel, Perl, or COBOL compiler.  
   
- Because it is a multilanguage execution environment, the runtime supports a wide variety of data types and language features. The language compiler you use determines which runtime features are available, and you design your code using those features. Your compiler, not the runtime, establishes the syntax your code must use. If your component must be completely usable by components written in other languages, your component's exported types must expose only language features that are included in the [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md) (CLS). You can use the <xref:System.CLSCompliantAttribute> attribute to ensure that your code is CLS-compliant. For more information, see [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md).  
+ Because it is a multilanguage execution environment, the runtime supports a wide variety of data types and language features. The language compiler you use determines which runtime features are available, and you design your code using those features. Your compiler, not the runtime, establishes the syntax your code must use. If your component must be completely usable by components written in other languages, your component's exported types must expose only language features that are included in the [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md) (CLS). You can use the <xref:System.CLSCompliantAttribute> attribute to ensure that your code is CLS-compliant. For more information, see [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md).  
   
  [Back to top](#introduction)  
   
-<a name="compiling_to_msil"></a>   
+<a name="compiling_to_msil"></a>
 ## Compiling to MSIL  
  When compiling to managed code, the compiler translates your source code into Microsoft intermediate language (MSIL), which is a CPU-independent set of instructions that can be efficiently converted to native code. MSIL includes instructions for loading, storing, initializing, and calling methods on objects, as well as instructions for arithmetic and logical operations, control flow, direct memory access, exception handling, and other operations. Before code can be run, MSIL must be converted to CPU-specific code, usually by a [just-in-time (JIT) compiler](#compiling_msil_to_native_code). Because the common language runtime supplies one or more JIT compilers for each computer architecture it supports, the same set of MSIL can be JIT-compiled and run on any supported architecture.  
   
@@ -48,13 +46,13 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-<a name="compiling_msil_to_native_code"></a>   
+<a name="compiling_msil_to_native_code"></a>
 ## Compiling MSIL to Native Code  
  Before you can run Microsoft intermediate language (MSIL), it must be compiled against the common language runtime to native code for the target machine architecture. The .NET Framework provides two ways to perform this conversion:  
   
 - A .NET Framework just-in-time (JIT) compiler.  
   
-- The .NET Framework [Ngen.exe (Native Image Generator)](../../docs/framework/tools/ngen-exe-native-image-generator.md).  
+- The .NET Framework [Ngen.exe (Native Image Generator)](../framework/tools/ngen-exe-native-image-generator.md).  
   
 ### Compilation by the JIT Compiler  
  JIT compilation converts MSIL to native code on demand at application run time, when the contents of an assembly are loaded and executed. Because the common language runtime supplies a JIT compiler for each supported CPU architecture, developers can build a set of MSIL assemblies that can be JIT-compiled and run on different computers with different machine architectures. However, if your managed code calls platform-specific native APIs or a platform-specific class library, it will run only on that operating system.  
@@ -62,7 +60,7 @@ ms.author: "ronpet"
  JIT compilation takes into account the possibility that some code might never be called during execution. Instead of using time and memory to convert all the MSIL in a PE file to native code, it converts the MSIL as needed during execution and stores the resulting native code in memory so that it is accessible for subsequent calls in the context of that process. The loader creates and attaches a stub to each method in a type when the type is loaded and initialized. When a method is called for the first time, the stub passes control to the JIT compiler, which converts the MSIL for that method into native code and modifies the stub to point directly to the generated native code. Therefore, subsequent calls to the JIT-compiled method go directly to the native code.  
   
 ### Install-Time Code Generation Using NGen.exe  
- Because the JIT compiler converts an assembly's MSIL to native code when individual methods defined in that assembly are called, it affects performance adversely at run time. In most cases, that diminished performance is acceptable. More importantly, the code generated by the JIT compiler is bound to the process that triggered the compilation. It cannot be shared across multiple processes. To allow the generated code to be shared across multiple invocations of an application or across multiple processes that share a set of assemblies, the common language runtime supports an ahead-of-time compilation mode. This ahead-of-time compilation mode uses the [Ngen.exe (Native Image Generator)](../../docs/framework/tools/ngen-exe-native-image-generator.md) to convert MSIL assemblies to native code much like the JIT compiler does. However, the operation of Ngen.exe differs from that of the JIT compiler in three ways:  
+ Because the JIT compiler converts an assembly's MSIL to native code when individual methods defined in that assembly are called, it affects performance adversely at run time. In most cases, that diminished performance is acceptable. More importantly, the code generated by the JIT compiler is bound to the process that triggered the compilation. It cannot be shared across multiple processes. To allow the generated code to be shared across multiple invocations of an application or across multiple processes that share a set of assemblies, the common language runtime supports an ahead-of-time compilation mode. This ahead-of-time compilation mode uses the [Ngen.exe (Native Image Generator)](../framework/tools/ngen-exe-native-image-generator.md) to convert MSIL assemblies to native code much like the JIT compiler does. However, the operation of Ngen.exe differs from that of the JIT compiler in three ways:  
   
 - It performs the conversion from MSIL to native code before running the application instead of while the application is running.  
   
@@ -85,13 +83,13 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-<a name="running_code"></a>   
+<a name="running_code"></a>
 ## Running Code  
  The common language runtime provides the infrastructure that enables managed execution to take place and services that can be used during execution. Before a method can be run, it must be compiled to processor-specific code. Each method for which MSIL has been generated is JIT-compiled when it is called for the first time, and then run. The next time the method is run, the existing JIT-compiled native code is run. The process of JIT-compiling and then running the code is repeated until execution is complete.  
   
  During execution, managed code receives services such as garbage collection, security, interoperability with unmanaged code, cross-language debugging support, and enhanced deployment and versioning support.  
   
- In Microsoft [!INCLUDE[winxp](../../includes/winxp-md.md)] and [!INCLUDE[windowsver](../../includes/windowsver-md.md)], the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
+ In Microsoft Windows Vista, the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
   
 1. Ensures that the code is valid managed code.  
   
@@ -103,12 +101,12 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Overview](../../docs/framework/get-started/overview.md)
-- [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)
-- [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)
-- [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)
-- [Security](../../docs/standard/security/index.md)
-- [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)
-- [Deployment](../../docs/framework/deployment/net-framework-applications.md)
-- [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [Application Domains](../../docs/framework/app-domains/application-domains.md)
+- [Overview](../framework/get-started/overview.md)
+- [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md)
+- [Metadata and Self-Describing Components](metadata-and-self-describing-components.md)
+- [Ilasm.exe (IL Assembler)](../framework/tools/ilasm-exe-il-assembler.md)
+- [Security](security/index.md)
+- [Interoperating with Unmanaged Code](../framework/interop/index.md)
+- [Deployment](../framework/deployment/net-framework-applications.md)
+- [Assemblies in .NET](assembly/index.md)
+- [Application Domains](../framework/app-domains/application-domains.md)

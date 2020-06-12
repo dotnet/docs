@@ -1,5 +1,5 @@
 ---
-title: "Configuring HTTP and HTTPS - WCF"
+title: "Configuring HTTP and HTTPS"
 ms.date: "04/08/2019"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
@@ -51,7 +51,7 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
 
 When using <xref:System.ServiceModel.WSDualHttpBinding>, the client connection uses defaults that are compatible with namespace reservations and the Windows firewall. If you choose to customize the client base address of a dual connection, then you also must configure these HTTP settings on the client to match the new address.
 
-The HTTP Server API has some advanced configuration settings that aren't available through HttpCfg. These settings are maintained in the registry and apply to all applications running on the systems that use the HTTP Server APIs. For information about these settings, see [Http.sys registry settings for IIS](https://support.microsoft.com/en-us/help/820129/http-sys-registry-settings-for-windows). Most users don't need to change these settings.
+The HTTP Server API has some advanced configuration settings that aren't available through HttpCfg. These settings are maintained in the registry and apply to all applications running on the systems that use the HTTP Server APIs. For information about these settings, see [Http.sys registry settings for IIS](https://support.microsoft.com/help/820129/http-sys-registry-settings-for-windows). Most users don't need to change these settings.
 
 ## See also
 

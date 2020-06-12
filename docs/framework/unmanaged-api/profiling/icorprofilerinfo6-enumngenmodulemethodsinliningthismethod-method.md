@@ -2,8 +2,6 @@
 title: "ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method"
 ms.date: "03/30/2017"
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method
 
@@ -69,7 +67,7 @@ However because `Fancy.AddTwice` has already inlined `Simple.Add`, it continues 
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorProf.idl, CorProf.h
 

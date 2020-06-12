@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "interop marshaling, blittable types"
   - "blittable types, interop marshaling"
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Blittable and Non-Blittable Types
 Most data types have a common representation in both managed and unmanaged memory and do not require special handling by the interop marshaler. These types are called *blittable types* because they do not require conversion when they are passed between managed and unmanaged code.  
@@ -47,7 +45,7 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Object references are not blittable. This includes an array of references to objects that are blittable by themselves. For example, you can define a structure that is blittable, but you cannot define a blittable type that contains an array of references to those structures.  
   
- As an optimization, arrays of blittable types and classes that contain only blittable members are [pinned](../../../docs/framework/interop/copying-and-pinning.md) instead of copied during marshaling. These types can appear to be marshaled as In/Out parameters when the caller and callee are in the same apartment. However, these types are actually marshaled as In parameters, and you must apply the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes if you want to marshal the argument as an In/Out parameter.  
+ As an optimization, arrays of blittable types and classes that contain only blittable members are [pinned](copying-and-pinning.md) instead of copied during marshaling. These types can appear to be marshaled as In/Out parameters when the caller and callee are in the same apartment. However, these types are actually marshaled as In parameters, and you must apply the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes if you want to marshal the argument as an In/Out parameter.  
   
  Some managed data types require a different representation in an unmanaged environment. These non-blittable data types must be converted into a form that can be marshaled. For example, managed strings are non-blittable types because they must be converted into string objects before they can be marshaled.  
   
@@ -55,18 +53,18 @@ Most data types have a common representation in both managed and unmanaged memor
   
 |Non-blittable type|Description|  
 |-------------------------|-----------------|  
-|[System.Array](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.Array](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
 |[System.Boolean](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|  
 |[System.Char](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|  
 |[System.Class](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|  
-|[System.Object](../../../docs/framework/interop/default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
-|[System.Mdarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
-|[System.String](../../../docs/framework/interop/default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
+|[System.Object](default-marshaling-for-objects.md)|Converts to a variant or an interface.|  
+|[System.Mdarray](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.String](default-marshaling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|  
 |[System.Valuetype](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|  
-|[System.Szarray](../../../docs/framework/interop/default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
+|[System.Szarray](default-marshaling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|  
   
- Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  
+ Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../standard/class-library-overview.md).  
   
 ## See also
 
-- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)
+- [Default Marshaling Behavior](default-marshaling-behavior.md)

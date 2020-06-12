@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetSequencePoints Method
 Gets all the sequence points within this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePoints(  
     [in]  ULONG32  cPoints,  
     [out] ULONG32  *pcPoints,  
@@ -68,4 +66,4 @@ HRESULT GetSequencePoints(
   
 ## See also
 
-- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

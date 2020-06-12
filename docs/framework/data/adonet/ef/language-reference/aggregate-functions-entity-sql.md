@@ -8,11 +8,11 @@ An aggregate is a language construct that condenses a collection into a scalar a
   
 - [!INCLUDE[esql](../../../../../../includes/esql-md.md)] collection functions that may be used anywhere in an expression. This includes using aggregate functions in projections and predicates that act on collections. Collection functions are the preferred mode of specifying aggregates in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
-- Group aggregates in query expressions that have a GROUP BY clause. As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], group aggregates accept DISTINCT and ALL as modifiers to the aggregate input.  
+- Group aggregates in query expressions that have a GROUP BY clause. As in Transact-SQL, group aggregates accept DISTINCT and ALL as modifiers to the aggregate input.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] first tries to interpret an expression as a collection function and if the expression is in the context of a SELECT expression it interprets it as a group aggregate.  
   
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] defines a special aggregate operator called [GROUPPARTITION](../../../../../../docs/framework/data/adonet/ef/language-reference/grouppartition-entity-sql.md). This operator enables you to get a reference to the grouped input set. This allows more advanced grouping queries, where the results of the GROUP BY clause can be used in places other than group aggregate or collection functions.  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] defines a special aggregate operator called [GROUPPARTITION](grouppartition-entity-sql.md). This operator enables you to get a reference to the grouped input set. This allows more advanced grouping queries, where the results of the GROUP BY clause can be used in places other than group aggregate or collection functions.  
   
 ## Collection Functions  
  Collection functions operate on collections and return a scalar value. For example, if `orders` is a collection of all `orders`, you can calculate the earliest ship date with the following expression:  
@@ -38,4 +38,4 @@ An aggregate is a language construct that condenses a collection into a scalar a
   
 ## See also
 
-- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)
+- [Functions](functions-entity-sql.md)

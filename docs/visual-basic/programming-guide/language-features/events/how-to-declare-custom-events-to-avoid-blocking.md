@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare Custom Events To Avoid Blocking (Visual Basic)"
+title: "How to: Declare Custom Events To Avoid Blocking"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring events [Visual Basic], custom"
@@ -25,5 +25,5 @@ There are several circumstances when it is important that one event handler not 
 
 - <xref:System.Collections.ArrayList>
 - <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
-- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
-- [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+- [Events](index.md)
+- [How to: Declare Custom Events To Conserve Memory](how-to-declare-custom-events-to-conserve-memory.md)

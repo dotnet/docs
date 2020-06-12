@@ -1,5 +1,6 @@
 ---
 title: "Web and Socket Permissions"
+description: Learn how the WebPermission and SocketPermission classes provide internet security for using the System.Net namespace in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Networking"
@@ -29,5 +30,5 @@ Internet security for applications using the <xref:System.Net> namespace is prov
   
 ## See also
 
-- [Security](../../../docs/standard/security/index.md)
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Security](../../standard/security/index.md)
+- [Security in Network Programming](security-in-network-programming.md)

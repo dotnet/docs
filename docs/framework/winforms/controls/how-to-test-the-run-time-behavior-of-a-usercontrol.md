@@ -8,6 +8,9 @@ helpviewer_keywords:
   - "UserControl Test Container"
   - "UserControl class [Windows Forms], run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # How to: Test the run-time behavior of a UserControl
 
@@ -21,46 +24,45 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 ## Test the run-time behavior of a UserControl
 
-1. In Visual Studio, create a Windows control library project called **TestContainerExample**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows control library project, and name it **TestContainerExample**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.
 
-3. Press **F5** to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press <kbd>F5</kbd> to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
-4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to `ControlDark`. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.
+4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to **ControlDark**. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.
 
 5. Click the **Dock Fill User Control** check box below the **Preview** pane. Observe that the control is resized to fill the pane. Resize the test container and observe that the control is resized with the pane.
 
 6. Close the test container.
 
-7. Add another user control to the **TestContainerExample** project. For details, see [How to: Add Existing Items to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/9f4t9t92(v=vs.100)).
+7. Add another user control to the **TestContainerExample** project.
 
 8. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.
 
-9. Press F5 to build the project and run the test container.
+9. Press <kbd>F5</kbd> to build the project and run the test container.
 
-10. Click the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls.
+10. Click the **Select User Control** <xref:System.Windows.Forms.ComboBox> to switch between the two user controls.
 
 ## Test user controls from another project
 
 You can test user controls from other projects in your current project's test container.
 
-1. Create a Windows control library project called **TestContainerExample2**. For details, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows control library project, and name it **TestContainerExample2**.
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.
 
-3. Press F5 to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press <kbd>F5</kbd> to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
 4. Click the **Load** button.
 
-5. In the **Open** dialog box, navigate to **TestContainerExample**.dll, which you built in the previous procedure. Select **TestContainerExample**.dll and click the **Open** button to load the user controls
+5. In the **Open** dialog box, navigate to *TestContainerExample.dll*, which you built in the previous procedure. Select *TestContainerExample.dll* and click the **Open** button to load the user controls.
 
-6. Use the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.
+6. Use the **Select User Control** <xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.
 
 ## See also
 
 - <xref:System.Windows.Forms.UserControl>
 - [How to: Author Composite Controls](how-to-author-composite-controls.md)
-- [Walkthrough: Authoring a Composite Control with Visual Basic](walkthrough-authoring-a-composite-control-with-visual-basic.md)
-- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+- [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
 - [User Control Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/183c3hth(v=vs.100))

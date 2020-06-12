@@ -37,5 +37,5 @@ The <xref:System.Net.WebResponse> class is an abstract base class that provides 
 - <xref:System.Net.WebResponse>
 - <xref:System.Net.HttpWebResponse>
 - <xref:System.Net.FileWebResponse>
-- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
-- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)
+- [Programming Pluggable Protocols](programming-pluggable-protocols.md)
+- [Deriving from WebRequest](deriving-from-webrequest.md)

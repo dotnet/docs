@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3f1b6bc4-6efb-4b90-8be0-b1ba8d856ca0
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ITypeNameBuilder::AddByRef Method
@@ -31,7 +29,7 @@ HRESULT AddByRef ( );
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** MSCorEE.h
 
@@ -41,4 +39,4 @@ HRESULT AddByRef ( );
 
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

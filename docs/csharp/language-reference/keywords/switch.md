@@ -15,6 +15,8 @@ ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
 ---
 # switch (C# reference)
 
+This article covers the `switch` statement. For information on the `switch` expression (introduced in C# 8.0), see the article on [`switch` expressions](../operators/switch-expression.md) in the [expressions and operators](../operators/index.md) section.
+
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*.
 
 [!code-csharp[switch#1](~/samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]
@@ -37,11 +39,11 @@ The match expression provides the value to match against the patterns in `case` 
 
 In C# 6 and earlier, the match expression must be an expression that returns a value of the following types:
 
-- a [char](char.md).
-- a [string](string.md).
-- a [bool](bool.md).
-- an integral value, such as an [int](int.md) or a [long](long.md).
-- an [enum](enum.md) value.
+- a [char](../builtin-types/char.md).
+- a [string](../builtin-types/reference-types.md).
+- a [bool](../builtin-types/bool.md).
+- an [integral](../builtin-types/integral-numeric-types.md) value, such as an `int` or a `long`.
+- an [enum](../builtin-types/enum.md) value.
 
 Starting with C# 7.0, the match expression can be any non-null expression.
 
@@ -78,7 +80,7 @@ Execution of the statement list in the switch section with a case label that mat
 
 Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transferred to the section with the `default` case label, if there's one. If there's no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
 
-For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern) section.
+For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern-matching with-the-switch-statement) section.
 
 Because C# 6 supports only the constant pattern and doesn't allow the repetition of constant values, case labels define mutually exclusive values, and only one pattern can match the match expression. As a result, the order in which `case` statements appear is unimportant.
 
@@ -92,7 +94,7 @@ You can correct this issue and eliminate the compiler warning in one of two ways
 
 - By changing the order of the switch sections.
 
-- By using a [when clause](#when) in the `case` label.
+- By using a [when clause](#the-case-statement-and-the-when-clause) in the `case` label.
 
 ## The `default` case
 
@@ -100,7 +102,7 @@ The `default` case specifies the switch section to execute if the match expressi
 
 The `default` case can appear in any order in the `switch` statement. Regardless of its order in the source code, it's always evaluated last, after all `case` labels have been evaluated.
 
-## <a name="pattern" /> Pattern matching with the `switch` statement
+## Pattern matching with the `switch` statement
 
 Each `case` statement defines a pattern that, if it matches the match expression, causes its  containing switch section to be executed. All versions of C# support the constant pattern. The remaining patterns are supported beginning with C# 7.0.
 
@@ -114,12 +116,12 @@ The constant pattern tests whether the match expression equals a specified const
 
 where *constant* is the value to test for. *constant* can be any of the following constant expressions:
 
-- A [bool](bool.md) literal, either `true` or `false`.
-- Any integral constant, such as an [int](int.md), a [long](long.md), or a [byte](byte.md).
+- A [bool](../builtin-types/bool.md) literal: either `true` or `false`.
+- Any [integral](../builtin-types/integral-numeric-types.md) constant, such as an `int`, a `long`, or a `byte`.
 - The name of a declared `const` variable.
 - An enumeration constant.
-- A [char](char.md) literal.
-- A [string](string.md) literal.
+- A [char](../builtin-types/char.md) literal.
+- A [string](../builtin-types/reference-types.md) literal.
 
 The constant expression is evaluated as follows:
 
@@ -177,7 +179,7 @@ Without pattern matching, this code might be written as follows. The use of type
 
 [!code-csharp[type-pattern2#1](~/samples/snippets/csharp/language-reference/keywords/switch/type-pattern2.cs#1)]
 
-## <a name="when" /> The `case` statement and the `when` clause
+## The `case` statement and the `when` clause
 
 Starting with C# 7.0, because case statements need not be mutually exclusive, you can add a `when` clause to specify an additional condition that must be satisfied for the case statement to evaluate to true. The `when` clause can be any expression that returns a Boolean value.
 
@@ -189,7 +191,7 @@ Note that the `when` clause in the example that attempts to test whether a `Shap
 
 ## C# language specification
 
-For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

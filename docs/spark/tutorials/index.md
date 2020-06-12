@@ -7,10 +7,10 @@ ms.date: 05/17/2019
 
 The following tutorials enable you to understand how to use [.NET for Apache Spark](../index.yml) to build custom big data solutions with Apache Spark and integrate them into your .NET applications:
 
-- [Get started](get-started.md): demonstrates build and run a simple .NET for Apache Spark application.
-- [Deploy a .NET for Apache Spark application to Azure HDInsight](hdinsight-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Azure HDInsight.
-- [Deploy a .NET for Apache Spark application to Amazon EMR Spark](amazon-emr-spark-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Amazon EMR Spark.
-- [Deploy a .NET for Apache Spark application to Databricks](databricks-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Databricks.
+* [Get started](get-started.md): demonstrates build and run a simple .NET for Apache Spark application.
+* [Deploy a .NET for Apache Spark application to Azure HDInsight](hdinsight-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Azure HDInsight.
+* [Deploy a .NET for Apache Spark application to Amazon EMR Spark](amazon-emr-spark-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Amazon EMR Spark.
+* [Deploy a .NET for Apache Spark application to Databricks](databricks-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Databricks.
 
 ## Next Steps
 

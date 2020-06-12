@@ -1,5 +1,6 @@
 ---
 title: "HTTP"
+description: Learn about the comprehensive support for HTTP that the .NET Framework provides by using the HttpWebRequest and HttpWebResponse classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "protocols, HTTP"
@@ -27,6 +28,6 @@ The .NET Framework provides comprehensive support for the HTTP protocol, which m
   
 ## See also
 
-- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
-- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
-- [How to: Access HTTP-Specific Properties](../../../docs/framework/network-programming/how-to-access-http-specific-properties.md)
+- [Accessing the Internet Through a Proxy](accessing-the-internet-through-a-proxy.md)
+- [Using Application Protocols](using-application-protocols.md)
+- [How to: Access HTTP-Specific Properties](how-to-access-http-specific-properties.md)

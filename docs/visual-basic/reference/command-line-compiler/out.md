@@ -1,5 +1,5 @@
 ---
-title: "-out (Visual Basic)"
+title: "-out"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "/out compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Specifies the name of the output file.
   
 ## Syntax  
   
-```  
+```console  
 -out:filename  
 ```  
   
@@ -40,6 +40,6 @@ vbc t2.vb -out:t3.exe
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-target (Visual Basic)](target.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

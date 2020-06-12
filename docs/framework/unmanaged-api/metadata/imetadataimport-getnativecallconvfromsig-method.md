@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50e04026-4d4a-47d9-96c1-f4677d6d938b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNativeCallConvFromSig Method
 Gets the native calling convention for the method that is represented by the specified signature pointer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeCallConvFromSig (  
    [in]  void const  *pvSig,  
    [in]  ULONG       cbSig,  
@@ -42,7 +40,7 @@ HRESULT GetNativeCallConvFromSig (
  [out] A pointer to the native calling convention.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -53,5 +51,5 @@ HRESULT GetNativeCallConvFromSig (
 ## See also
 
 - <xref:System.Runtime.InteropServices.CallingConvention>
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

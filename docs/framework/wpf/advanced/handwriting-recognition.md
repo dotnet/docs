@@ -16,7 +16,7 @@ This section discusses the fundamentals of recognition as it pertains to digital
  The following example shows how to recognize ink using the [Microsoft.Ink.InkCollector](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms583683(v=vs.90)) class.  
   
 > [!NOTE]
->  This sample requires that handwriting recognizers be installed on the system.  
+> This sample requires that handwriting recognizers be installed on the system.  
   
  Create a new WPF application project in Visual Studio called **InkRecognition**. Replace the contents of the Window1.xaml file with the following XAML code. This code renders the application's user interface.  
   

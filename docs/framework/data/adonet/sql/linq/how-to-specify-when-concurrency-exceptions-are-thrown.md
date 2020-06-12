@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 344ae068-ff63-4a2e-8b00-af22e143675f
 ---
 # How to: Specify When Concurrency Exceptions are Thrown
-In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:System.Data.Linq.ChangeConflictException> exception is thrown when objects do not update because of optimistic concurrency conflicts. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
+In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:System.Data.Linq.ChangeConflictException> exception is thrown when objects do not update because of optimistic concurrency conflicts. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
   
  Before you submit your changes to the database, you can specify when concurrency exceptions should be thrown:  
   
@@ -25,5 +25,5 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:
   
 ## See also
 
-- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
-- [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
+- [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md)
+- [Making and Submitting Data Changes](making-and-submitting-data-changes.md)

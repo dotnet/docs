@@ -11,13 +11,11 @@ helpviewer_keywords:
   - "raising events"
   - "events [.NET Framework], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Raise and Consume Events
 The examples in this topic show how to work with events. They include examples of the <xref:System.EventHandler> delegate, the <xref:System.EventHandler%601> delegate, and a custom delegate, to illustrate events with and without data.  
   
- The examples use concepts described in the [Events](../../../docs/standard/events/index.md) article.  
+ The examples use concepts described in the [Events](index.md) article.  
   
 ## Example  
  The first example shows how to raise and consume an event that doesn't have data. It contains a class named `Counter` that has an event named `ThresholdReached`. This event is raised when a counter value equals or exceeds a threshold value. The <xref:System.EventHandler> delegate is associated with the event, because no event data is provided.  
@@ -40,4 +38,4 @@ The examples in this topic show how to work with events. They include examples o
   
 ## See also
 
-- [Events](../../../docs/standard/events/index.md)
+- [Events](index.md)

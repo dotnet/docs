@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Security (Visual Basic)"
+title: "LINQ to XML Security"
 ms.date: 07/20/2015
 ms.assetid: d99b4af2-d447-4a3b-991b-6da0231a8637
 ---
@@ -95,4 +95,4 @@ This topic describes security issues associated with LINQ to XML. In addition, i
   
 ## See also
 
-- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+- [Programming Guide (LINQ to XML) (Visual Basic)](programming-guide-linq-to-xml.md)

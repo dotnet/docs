@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 27967230-144f-40d3-9e23-961d0241abd9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetClass Method
 Gets an ICorDebugClass object that represents the class this function is a member of.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass **ppClass  
 );  
@@ -34,7 +32,7 @@ HRESULT GetClass (
  [out] A pointer to the address of the `ICorDebugClass` object that represents the class, or null, if this function is not a member of a class.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

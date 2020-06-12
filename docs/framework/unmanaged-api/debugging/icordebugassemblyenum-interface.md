@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 891ceb43-5161-421e-a0bf-299962fd7efd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssemblyEnum Interface
 
@@ -25,15 +23,15 @@ Implements ICorDebugEnum methods and enumerates ICorDebugAssembly arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassemblyenum-next-method.md)|Gets the specified number of `ICorDebugAssembly` instances in the enumeration, starting from the current position.|  
+|[Next Method](icordebugassemblyenum-next-method.md)|Gets the specified number of `ICorDebugAssembly` instances in the enumeration, starting from the current position.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -43,4 +41,4 @@ Implements ICorDebugEnum methods and enumerates ICorDebugAssembly arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

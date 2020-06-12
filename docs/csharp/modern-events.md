@@ -2,6 +2,7 @@
 title: The Updated .NET Core Event Pattern
 description: Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
 ---
 
@@ -10,7 +11,7 @@ ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
 [Previous](event-pattern.md)
 
 The previous article discussed the most common event patterns. .NET
-Core has a more relaxed pattern. In this version, the 
+Core has a more relaxed pattern. In this version, the
 `EventHandler<TEventArgs>` definition no longer has the constraint that
 `TEventArgs` must be a class derived from `System.EventArgs`.
 
@@ -86,7 +87,7 @@ to implement are below:
 ```csharp
 worker.StartWorking += async (sender, eventArgs) =>
 {
-    try 
+    try
     {
         await DoWorkAsync();
     }
@@ -108,9 +109,8 @@ task that can report the error by entering the faulted state. Because
 the method is async, the method can't simply throw the exception. (The
 calling method has continued execution because it is `async`.) The
 actual runtime behavior will be defined differently for different
-environments. It may terminate the thread, it may terminate the program,
-or it may leave the program in an undetermined state. None of those
-are good outcomes.
+environments. It may terminate the thread or the process that owns the thread,
+or leave the process in an indeterminate state. All of these potential outcomes are highly undesirable.
 
 That's why you should wrap the await statement for the async Task
 in your own try block. If it does cause a faulted task, you can

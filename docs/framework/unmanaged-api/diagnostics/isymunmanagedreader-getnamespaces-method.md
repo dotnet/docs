@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3feb4796-2fab-45ce-beca-6f5bc530b971
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetNamespaces Method
 Gets the namespaces defined at global scope within this symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces (  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  
@@ -50,4 +48,4 @@ HRESULT GetNamespaces (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

@@ -37,7 +37,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
   
 ## .NET Framework Security  
   
-1. Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
+1. Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using ClickOnce, you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
   
 ## See also
 

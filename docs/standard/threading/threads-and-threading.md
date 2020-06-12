@@ -1,5 +1,6 @@
 ---
 title: "Threads and threading"
+description: Learn about threading, such as processes & threads, when to use multiple threads, & how to use multithreading to increase responsiveness or throughput in .NET.
 ms.date: "11/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -7,8 +8,6 @@ helpviewer_keywords:
   - "threading [.NET]"
   - "threading [.NET], multiple threads"
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Threads and threading
 
@@ -27,15 +26,15 @@ By default, a .NET program is started with a single thread, often called the *pr
 
 You use multiple threads to increase the responsiveness of your application and to take advantage of a multiprocessor or multi-core system to increase the application's throughput.
 
-Consider a desktop application, in which the primary thread is responsible for user interface elements and responds to user actions. Use worker threads to perform time-consuming operations that, otherwise, would occupy the primary thread and make the user interface non-responsive. You also can use a dedicated thread for network or device communication to be more responsive to incoming messages or events.
+Consider a desktop application, in which the primary thread is responsible for user interface elements and responds to user actions. Use worker threads to perform time-consuming operations that, otherwise, would occupy the primary thread and make the user interface non-responsive. You can also use a dedicated thread for network or device communication to be more responsive to incoming messages or events.
 
 If your program performs operations that can be done in parallel, the total execution time can be decreased by performing those operations in separate threads and running the program on a multiprocessor or multi-core system. On such a system, use of multithreading might increase throughput along with the increased responsiveness.
 
 ## How to use multithreading in .NET
 
-Starting with the .NET Framework 4, the recommended way to utilize multithreading is to use [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) and [Parallel LINQ (PLINQ)](../parallel-programming/parallel-linq-plinq.md). For more information, see [Parallel programming](../parallel-programming/index.md).
+Starting with the .NET Framework 4, the recommended way to utilize multithreading is to use [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md). For more information, see [Parallel programming](../parallel-programming/index.md).
 
-Both TPL and PLINQ rely on the <xref:System.Threading.ThreadPool> threads. The <xref:System.Threading.ThreadPool?displayProperty=nameWithType> class provides a .NET application with a pool of worker threads. You also can use thread pool threads. For more information, see [The managed thread pool](the-managed-thread-pool.md).
+Both TPL and PLINQ rely on the <xref:System.Threading.ThreadPool> threads. The <xref:System.Threading.ThreadPool?displayProperty=nameWithType> class provides a .NET application with a pool of worker threads. You can also use thread pool threads. For more information, see [The managed thread pool](the-managed-thread-pool.md).
 
 At last, you can use the <xref:System.Threading.Thread?displayProperty=nameWithType> class that represents a managed thread. For more information, see [Using threads and threading](using-threads-and-threading.md).
 

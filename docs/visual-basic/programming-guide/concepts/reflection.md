@@ -1,5 +1,5 @@
 ---
-title: "Reflection (Visual Basic)"
+title: "Reflection"
 ms.date: 07/20/2015
 ms.assetid: d991bc0f-d16a-4ac5-9351-70e5c5b9891b
 ---
@@ -57,5 +57,5 @@ System.Console.WriteLine(info)
   
 ## See also
 
-- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
-- [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Visual Basic Programming Guide](../index.md)
+- [Assemblies in .NET](../../../standard/assembly/index.md)

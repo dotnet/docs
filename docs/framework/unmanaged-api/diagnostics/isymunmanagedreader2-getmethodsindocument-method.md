@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader2::GetMethodsInDocument Method
 Gets every method that has line information in the provided document.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodsInDocument(  
     [in]  ISymUnmanagedDocument *document,  
     [in]  ULONG32 cMethod,  
@@ -53,4 +51,4 @@ HRESULT GetMethodsInDocument(
   
 ## See also
 
-- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+- [ISymUnmanagedReader2 Interface](isymunmanagedreader2-interface.md)

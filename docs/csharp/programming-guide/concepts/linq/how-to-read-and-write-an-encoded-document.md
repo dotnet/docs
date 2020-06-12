@@ -1,9 +1,9 @@
 ---
-title: "How to: Read and Write an Encoded Document (C#)"
+title: "How to read and write an encoded document (C#)"
 ms.date: 07/20/2015
 ms.assetid: 84f64e71-39a6-42c6-ad68-f052bb158a03
 ---
-# How to: Read and Write an Encoded Document (C#)
+# How to read and write an encoded document (C#)
 To create an encoded XML document, you add an <xref:System.Xml.Linq.XDeclaration> to the XML tree, setting the encoding to the desired code page name.  
   
  Any value returned by <xref:System.Text.Encoding.WebName%2A> is a valid value.  
@@ -50,7 +50,7 @@ Console.WriteLine("Encoding of loaded document is:{0}", newDoc16.Declaration.Enc
   
  This example produces the following output:  
   
-```  
+```output  
 Creating a document with utf-8 encoding  
 Encoding is:utf-8  
   
@@ -73,4 +73,3 @@ Encoding of loaded document is:utf-16
 ## See also
 
 - <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

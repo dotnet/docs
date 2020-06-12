@@ -12,11 +12,11 @@ ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
 ---
 # \<sources> Element
 Specifies trace sources that initiate tracing messages.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sources>**
+
 ## Syntax  
   
 ```xml  
@@ -35,7 +35,7 @@ Specifies trace sources that initiate tracing messages.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md)|Required element.<br /><br /> Specifies a trace source that initiates tracing messages.|  
+|[\<source>](source-element.md)|Required element.<br /><br /> Specifies a trace source that initiates tracing messages.|  
   
 ### Parent Elements  
   
@@ -54,12 +54,12 @@ Specifies trace sources that initiate tracing messages.
 <configuration>  
    <system.diagnostics>  
       <sources>  
-         <source name="mySource" switchName="sourceSwitch"   
+         <source name="mySource" switchName="sourceSwitch"
             switchType="System.Diagnostics.SourceSwitch"  >  
             <listeners>  
-               <add name="console"   
+               <add name="console"
                   type="System.Diagnostics.ConsoleTraceListener" >  
-                  <filter type="System.Diagnostics.EventTypeFilter"   
+                  <filter type="System.Diagnostics.EventTypeFilter"
                      initializeData="Error" />  
                </add>  
                <remove name="Default" />  
@@ -68,8 +68,8 @@ Specifies trace sources that initiate tracing messages.
       </sources>  
       <switches>  
          <add name="sourceSwitch" value="Warning" />  
-      </switches>    
-   </system.diagnostics>   
+      </switches>
+   </system.diagnostics>
 </configuration>  
 ```  
   
@@ -81,5 +81,5 @@ Specifies trace sources that initiate tracing messages.
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.XmlWriterTraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md)
+- [Trace and Debug Settings Schema](index.md)
+- [\<source>](source-element.md)

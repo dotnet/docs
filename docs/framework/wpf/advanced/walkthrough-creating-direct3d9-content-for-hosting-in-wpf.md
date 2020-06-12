@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating Direct3D9 Content for Hosting in WPF"
+title: Create Direct3D9 Content for Hosting
 ms.date: "03/30/2017"
 dev_langs:
   - "cpp"
@@ -112,7 +112,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 11. Replace the automatically generated code with the following code.
 
-    ```
+    ```cpp
     LIBRARY "D3DContent"
 
     EXPORTS

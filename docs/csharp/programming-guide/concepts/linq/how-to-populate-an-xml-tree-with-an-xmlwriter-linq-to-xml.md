@@ -1,9 +1,9 @@
 ---
-title: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML) (C#)"
+title: "How to populate an XML tree with an XmlWriter (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: cd5674d1-5c54-4efc-ba68-e23b2875295f
 ---
-# How to: Populate an XML Tree with an XmlWriter (LINQ to XML) (C#)
+# How to populate an XML tree with an XmlWriter (LINQ to XML) (C#)
 One way to populate an XML tree is to use <xref:System.Xml.Linq.XContainer.CreateWriter%2A> to create an <xref:System.Xml.XmlWriter>, and then write to the <xref:System.Xml.XmlWriter>. The XML tree is populated with all nodes that are written to the <xref:System.Xml.XmlWriter>.  
   
  You would typically use this method when you use [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] with another class that expects to write to an <xref:System.Xml.XmlWriter>, such as <xref:System.Xml.Xsl.XslCompiledTransform>.  
@@ -61,4 +61,4 @@ Console.WriteLine(newTree);
 - <xref:System.Xml.Linq.XContainer.CreateWriter%2A>
 - <xref:System.Xml.XmlWriter>
 - <xref:System.Xml.Xsl.XslCompiledTransform>
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (C#)](./linq-to-xml-overview.md)

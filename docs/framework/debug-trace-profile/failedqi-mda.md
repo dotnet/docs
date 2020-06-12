@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), failed QueryInterface"
   - "managed debugging assistants (MDAs), failed QueryInterface"
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # failedQI MDA
 The `failedQI` managed debugging assistant (MDA) is activated when the runtime calls `QueryInterface` on a COM interface pointer on behalf of a runtime callable wrapper (RCW), and the `QueryInterface` call fails.  
@@ -47,5 +45,5 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

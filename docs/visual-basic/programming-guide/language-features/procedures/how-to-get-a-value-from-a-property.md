@@ -1,5 +1,5 @@
 ---
-title: "How to: Get a Value from a Property (Visual Basic)"
+title: "How to: Get a Value from a Property"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "property values [Visual Basic]"
@@ -37,7 +37,7 @@ You retrieve a property's value by including the property name in an expression.
 - [Procedures](./index.md)
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
-- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
 - [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
 - [How to: Create a Property](./how-to-create-a-property.md)
 - [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)

@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Descendant Elements (XPath-LINQ to XML) (C#)"
+title: "How to find descendant elements (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: b318da39-bb8b-4c56-a019-e13b12b01831
 ---
-# How to: Find Descendant Elements (XPath-LINQ to XML) (C#)
+# How to find descendant elements (XPath-LINQ to XML) (C#)
 This topic shows how to get the descendant elements with a particular name.  
   
  The XPath expression is `//Name`.  
@@ -11,7 +11,7 @@ This topic shows how to get the descendant elements with a particular name.
 ## Example  
  This example finds all descendants named `Name`.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
@@ -33,7 +33,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Name>Tai Yee</Name>  
@@ -42,7 +42,3 @@ Results are identical
 <Name>Jessica Arnold</Name>  
 <Name>Jessica Arnold</Name>  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

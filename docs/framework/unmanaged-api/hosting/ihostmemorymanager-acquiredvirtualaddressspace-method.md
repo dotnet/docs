@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::AcquiredVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AcquiredVirtualAddressSpace(  
     [in] LPVOID  startAddress,  
     [in] SIZE_T  size  
@@ -41,7 +39,7 @@ HRESULT AcquiredVirtualAddressSpace(
  The `AcquiredVirtualAddressSpace` method is a callback method and must be implemented by the writer of the hosting application. It is called by the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,4 +49,4 @@ HRESULT AcquiredVirtualAddressSpace(
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

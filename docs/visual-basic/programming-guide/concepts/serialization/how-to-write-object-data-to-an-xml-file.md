@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Object Data to an XML File (Visual Basic)"
+title: "How to: Write Object Data to an XML File"
 ms.date: 07/20/2015
 ms.assetid: f7966480-5ed2-43ac-9894-33427436de2a
 ---
@@ -31,7 +31,7 @@ Public Module XMLWrite
 End Module  
 ```  
   
-## Compiling the Code  
+## Compile the code  
  The class must have a public constructor without parameters.  
   
 ## Robust Programming  
@@ -51,5 +51,5 @@ End Module
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)
-- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [How to: Read Object Data from an XML File (Visual Basic)](how-to-read-object-data-from-an-xml-file.md)
+- [Serialization (Visual Basic)](index.md)

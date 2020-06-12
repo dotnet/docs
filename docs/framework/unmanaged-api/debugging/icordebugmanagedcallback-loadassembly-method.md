@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55cb673a-e240-43a6-a406-6912e7c0fe66
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LoadAssembly Method
 Notifies the debugger that a common language runtime (CLR) assembly has been successfully loaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadAssembly (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugAssembly  *pAssembly  
@@ -38,7 +36,7 @@ HRESULT LoadAssembly (
  [in] A pointer to an ICorDebugAssembly object that represents the assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -48,5 +46,5 @@ HRESULT LoadAssembly (
   
 ## See also
 
-- [UnloadAssembly Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadassembly-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [UnloadAssembly Method](icordebugmanagedcallback-unloadassembly-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

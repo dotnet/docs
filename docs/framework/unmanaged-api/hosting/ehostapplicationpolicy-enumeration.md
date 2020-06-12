@@ -14,22 +14,20 @@ helpviewer_keywords:
 ms.assetid: 0be52d90-1976-4bf7-9717-908833a8a78d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EHostApplicationPolicy Enumeration
-Indicates how to modify an [IHostAssemblyManager](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md) interface object. This enumeration has been deprecated.  
+Indicates how to modify an [IHostAssemblyManager](ihostassemblymanager-interface.md) interface object. This enumeration has been deprecated.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _HostApplicationPolicy {  
     HOST_APPLICATION_BINDING_POLICY = 1  
 } EHostApplicationPolicy;  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -39,4 +37,4 @@ typedef enum _HostApplicationPolicy {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Hosting Enumerations](hosting-enumerations.md)

@@ -8,7 +8,7 @@ ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
 ---
 # Create the data service
 
-In this topic, you create a sample data service that uses WCF Data Services to expose an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed that's based on the Northwind sample database. The task involves the following basic steps:
+In this topic, you create a sample data service that uses WCF Data Services to expose an Open Data Protocol (OData) feed that's based on the Northwind sample database. The task involves the following basic steps:
 
 1. Create an ASP.NET Web application.
 
@@ -62,10 +62,10 @@ In this topic, you create a sample data service that uses WCF Data Services to e
 
 2. In the **Add New Item** dialog box, select the **WCF Data Service** item template from the **Web** category.
 
-   ![WCF Data Service item template in Visual Studio 2015](media/wcf-data-service-item-template.png)
+   ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. For the name of the service, type `Northwind`.
 
@@ -86,14 +86,14 @@ In this topic, you create a sample data service that uses WCF Data Services to e
      This enables authorized clients to have read and write access to resources for the specified entity sets.
 
     > [!NOTE]
-    > Any client that can access the ASP.NET application can also access the resources exposed by the data service. In a production data service, to prevent unauthorized access to resources you should also secure the application itself. For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).
+    > Any client that can access the ASP.NET application can also access the resources exposed by the data service. In a production data service, to prevent unauthorized access to resources you should also secure the application itself. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).
 
 ## Next steps
 
 You have successfully created a new data service that exposes an OData feed that is based on the Northwind sample database, and you have enabled access to the feed for clients that have permissions on the ASP.NET Web application. Next, you'll start the data service from Visual Studio and access the OData feed by submitting HTTP GET requests through a Web browser:
 
 > [!div class="nextstepaction"]
-> [Access the service from a web browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)
+> [Access the service from a web browser](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)
 
 ## See also
 

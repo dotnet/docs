@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: ad37cd10-0339-4d08-9b0e-4b3428bb4dc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishAppDomainEnum::Next Method
 Gets the specified number of application domains that currently exist in the process, starting at the current position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG  celt,  
-    [out, size_is(celt), length_is(*pceltFetched)]   
+    [out, size_is(celt), length_is(*pceltFetched)]
         ICorPublishAppDomain **objects,  
     [out] ULONG *pceltFetched  
 );  
@@ -37,13 +35,13 @@ HRESULT Next (
  [in] The number of elements to be retrieved.  
   
  `objects`  
- [out] A pointer to the array of retrieved [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) objects, each of which represents an application domain.  
+ [out] A pointer to the array of retrieved [ICorPublishAppDomain](icorpublishappdomain-interface.md) objects, each of which represents an application domain.  
   
  `pceltFetched`  
  [out] Pointer to the number of application domains actually returned. This value may be null if `celt` is one.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -53,4 +51,4 @@ HRESULT Next (
   
 ## See also
 
-- [ICorPublishAppDomainEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)
+- [ICorPublishAppDomainEnum Interface](icorpublishappdomainenum-interface.md)

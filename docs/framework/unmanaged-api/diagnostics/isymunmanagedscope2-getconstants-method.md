@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: f241b620-9ec5-42fd-92ef-3b22329db72a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope2::GetConstants Method
 Gets the local constants defined within this scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConstants(  
      [in]  ULONG32  cConstants,  
      [out] ULONG32  *pcConstants,  
      [out, size_is(cConstants),  
-         length_is(*pcConstants)] ISymUnmanagedConstant*   
+         length_is(*pcConstants)] ISymUnmanagedConstant*
              constants[]);  
 ```  
   
@@ -50,4 +48,4 @@ HRESULT GetConstants(
   
 ## See also
 
-- [ISymUnmanagedScope2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)
+- [ISymUnmanagedScope2 Interface](isymunmanagedscope2-interface.md)

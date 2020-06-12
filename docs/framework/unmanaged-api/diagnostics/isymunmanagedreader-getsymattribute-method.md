@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c675ce7e-76e7-45ff-8273-3b6489a2767c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetSymAttribute Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these custom attributes are held in the symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymAttribute (  
     [in]  mdToken  parent,  
     [in]  WCHAR    *name,  
@@ -57,4 +55,4 @@ HRESULT GetSymAttribute (
   
 ## See also
 
-- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

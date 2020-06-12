@@ -1,135 +1,169 @@
 ---
-title: The auto-train command in the ML.NET CLI tool
+title: ML.NET CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
-ms.date: 04/16/2019
-ms.custom: ""
+ms.date: 06/03/2020
+ms.custom: mlnet-tooling
 ---
 
-# The 'auto-train' command in ML.NET CLI
+# The ML.NET CLI command reference
+
+The `classification`, `regression`, and `recommendation` commands are the main commands provided by the ML.NET CLI tool. These commands allow you to generate good quality ML.NET models for classification, regression, and recommendation models using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
 
-The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model (serialized model .zip file) plus the example C# code to run/score that model. In addition, the C# code to create/train that model is also generated for you to research what algorithm and settings it is using for that generated "best model".
+## Overview
 
-You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
-
-Currently, the ML Tasks supported by the ML.NET CLI are:
-
-- `binary-classification`
-- `multiclass-classification`
-- `regression`
-
-- Future: Other machine learning tasks, such as
-  - `recommendation`
-  - `anomaly-detection`
-  - `clustering`
-
-Example of usage on the command prompt:
+Example usage:
 
 ```console
-> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name price
+mlnet regression --dataset "cars.csv" --label-col price
 ```
 
-The `mlnet auto-train` command generates the following assets:
+The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) generate the following assets:
 
 - A serialized model .zip ("best model") ready to use.
-- C# code to run/score that generated model (To make predictions in your end-user apps with that model).
-- C# code with the training code used to generate that model (Learning purposes).
+- C# code to run/score that generated model.
+- C# code with the training code used to generate that model.
 
-The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.
+The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app and more) to make predictions with the model.
 
-The third asset, the training code, shows you what ML.NET API code was used by the CLI to train the generated model, so you can investigate what specific trainer/algorithm and hyper-paramenters were selected by the CLI and the ML.NET AutoML engine.
-
-## The 'auto-train' command uses the AutoML engine
-
-The CLI uses the ML.NET AutoML engine (NuGet package) to intelligently search for the best quality models, as shown in the following diagram:
-
-![image](./media/ml-net-automl-working-diagram.png "AutoML engine working inside the ML.NET CLI")
-
-When running the ML.NET CLI tool with the `auto-train- command, you'll see the tool trying many iterations with different algorithms and combinations of configuration.
-
-## Reference for 'auto-train' command
+The third asset, the training code, shows you what ML.NET API code was used by the CLI to train the generated model, so you can investigate the specific algorithm and settings of the model.
 
 ## Examples
 
-Simplest CLI command for a binary classification problem (AutoML will need to infer most of the configuration from the provided data):
+The simplest CLI command for a classification problem (AutoML infers most of the configuration from the provided data):
 
 ```console
-> mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet classification --dataset "customer-feedback.tsv" --label-col Sentiment
 ```
 
 Another simple CLI command for a regression problem:
 
 ``` console
-> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price
+mlnet regression --dataset "cars.csv" --label-col Price
 ```
 
-Create and train a binary-classification model with a train dataset, a test dataset, and further customization explicit arguments:
+Create and train a classification model with a train dataset, a test dataset, and further customization explicit arguments:
 
 ```console
-> mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
+mlnet classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-col "InsuranceRisk" --cache on --train-time 600
 ```
 
-## Name
+## Command options
 
-`mlnet auto-train` - Trains multiple models ('n' iterations) based on the provided dataset and finally selects the best model, saves it as a serialized .zip file plus generates related C# code for scoring and training.
+The `mlnet` ML task commands (`classification`, `regression`, and `recommendation`) train multiple models based on the provided dataset and ML.NET CLI options. These commands also select the best model, save the model as a serialized .zip file, and generate related C# code for scoring and training.
 
-## Synopsis
+### Classification options
+
+Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (e.g. sentiment analysis).
 
 ```console
-> mlnet auto-train
+mlnet classification
 
---task | --mltask | -T <value>
+--dataset <path> (REQUIRED)
 
---dataset | -d <value>
+--label-col <col> (REQUIRED)
 
-[
- [--validation-dataset | -v <value>]
-  --test-dataset | -t <value>
-]
+--cache <option>
 
---label-column-name | -n <value>
-|
---label-column-index | -i <value>
+--has-header (Default: true)
 
-[--ignore-columns | -I <value>]
+--ignore-cols <cols>
 
-[--has-header | -h <value>]
+--log-file-path <path>
 
-[--max-exploration-time | -x <value>]
+--name <name>
 
-[--verbosity | -V <value>]
+-o, --output <path>
 
-[--cache | -c <value>]
+--test-dataset <path>
 
-[--name | -N <value>]
+--train-time <time> (Default: 30 minutes, in seconds)
 
-[--output-path | -o <value>]
+--validation-dataset <path>
 
-[--help | -h]
+-v, --verbosity <v>
+
+-?, -h, --help
 
 ```
 
-Invalid input options should cause the CLI tool to emit a list of valid inputs and an error message explaining which arg is missing, if that is the case.
+### Regression options
 
-## Options
+Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (e.g. price prediction).
 
- ----------------------------------------------------------
+```console
+mlnet classification
 
-`--task | --mltask | -T` (string)
+--dataset <path> (REQUIRED)
 
-A single string providing the ML problem to solve. For instance, any of the following tasks (The CLI will eventually support all tasks supported in AutoML):
+--label-col <col> (REQUIRED)
 
-- `regression` - Choose if the ML Model will be used to predict a numeric value
-- `binary-classification` - Choose if the ML Model result has two possible categorical boolean values (0 or 1).
-- `multiclass-classification` - Choose if the ML Model result has multiple categorical possible values.
+--cache <option>
 
-In future releases additional ML Tasks and scenarios such as `recommendations`, `clustering` and `ranking` will be supported.
+--has-header (Default: true)
 
- Only one ML task should be provided in this argument.
+--ignore-cols <cols>
 
- ----------------------------------------------------------
+--log-file-path <path>
+
+--name <name>
+
+-o, --output <path>
+
+--test-dataset <path>
+
+--train-time <time> (Default: 30 minutes, in seconds)
+
+--validation-dataset <path>
+
+-v, --verbosity <v>
+
+-?, -h, --help
+
+```
+
+### Recommendation options
+
+Running `mlnet recommendation` will train a recommendation model.  Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
+
+```console
+mlnet classification
+
+--dataset <path> (REQUIRED)
+
+--item-col <col> (REQUIRED)
+
+--rating-col <col> (REQUIRED)
+
+--user-col <col> (REQUIRED)
+
+--cache <option>
+
+--has-header (Default: true)
+
+--log-file-path <path>
+
+--name <name>
+
+-o, --output <path>
+
+--test-dataset <path>
+
+--train-time <time> (Default: 30 minutes, in seconds)
+
+--validation-dataset <path>
+
+-v, --verbosity <v>
+
+-?, -h, --help
+
+```
+
+Invalid input options cause the CLI tool to emit a list of valid inputs and an error message.
+
+## Dataset
 
 `--dataset | -d` (string)
 
@@ -139,7 +173,7 @@ This argument provides the filepath to either one of the following options:
 
 - *B: The training dataset file:* If the user is also providing datasets for model validation (using `--test-dataset` and optionally `--validation-dataset`), then the `--dataset` argument means to only have the "training dataset". For example, when using an 80% - 20% approach to validate the quality of the model and to obtain accuracy metrics, the "training dataset" will have 80% of the data and the "test dataset" would have 20% of the data.
 
-----------------------------------------------------------
+## Test dataset
 
 `--test-dataset | -t` (string)
 
@@ -149,7 +183,7 @@ If using `--test-dataset`, then `--dataset` is also required.
 
 The `--test-dataset` argument is optional unless the --validation-dataset is used. In that case, the user must use the three arguments.
 
-----------------------------------------------------------
+## Validation dataset
 
 `--validation-dataset | -v` (string)
 
@@ -176,27 +210,41 @@ Hence, the separation of data could be 80/10/10 or 75/15/10. For example:
 
 In any case, those percentages will be decided by the user using the CLI who will provide the files already split.
 
-----------------------------------------------------------
+## Label column
 
-`--label-column-name | -n` (string)
+`--label-col` (int or string)
 
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header.
+With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
 
-This argument is used only for supervised ML tasks such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+This argument is used for *classification* and *regression* problems.
 
-----------------------------------------------------------
+## Item column
 
-`--label-column-index | -i` (int)
+`--item-col` (int or string)
 
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's numeric index in the dataset's file (The column index values start at 1).
+The item column has the list of items that users rate (items are recommended to users). This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
 
-*Note:* If the user is also using the `--label-column-name`, the `--label-column-name` is the one being used.
+This argument is used only for the *recommendation* task.
 
-This argument is used only for supervised ML task such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+## Rating column
 
-----------------------------------------------------------
+`--rating-col` (int or string)
 
-`--ignore-columns | -I` (string)
+The rating column has the list of ratings that are given to items by users. This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
+
+This argument is used only for the *recommendation* task.
+
+## User column
+
+`--user-col` (int or string)
+
+The user column has the list of users that give ratings to items. This column can be specified by using the column's name set in the dataset's header or the column's numeric index in the dataset's file (the column index values start at 0).
+
+This argument is used only for the *recommendation* task.
+
+## Ignore columns
+
+`--ignore-columns` (string)
 
 With this argument, you can ignore existing columns in the dataset file so they are not loaded and used by the training processes.
 
@@ -206,32 +254,31 @@ Example:
 
 `--ignore-columns email, address, id, logged_in`
 
-----------------------------------------------------------
+## Has header
 
-`--has-header | -h` (bool)
+`--has-header` (bool)
 
 Specify if the dataset file(s) have a header row.
 Possible values are:
+
 - `true`
 - `false`
 
-The by default value is `true` if this argument is not specified by the user.
+The ML.NET CLI will try to detect this property if this argument is not specified by the user.
 
-In order to use the `--label-column-name` argument, you need to have a header in the dataset file and `--has-header` set to `true` (which is by default).
+## Train time
 
-----------------------------------------------------------
+`--train-time` (string)
 
-`--max-exploration-time | -x` (string)
-
-By default, the maximum exploration time is 10 seconds.
+By default, the maximum exploration / train time is 30 minutes.
 
 This argument sets the maximum time (in seconds) for the process to explore multiple trainers and configurations. The configured time may be exceeded if the provided time is too short (say 2 seconds) for a single iteration. In this case, the actual time is the required time to produce one model configuration in a single iteration.
 
 The needed time for iterations can vary depending on the size of the dataset.
 
-----------------------------------------------------------
+## Cache
 
-`--cache | -c` (string)
+`--cache` (string)
 
 If you use caching, the whole training dataset will be loaded in-memory.
 
@@ -247,23 +294,23 @@ You can specify the following values:
 
 If you don't specify the `--cache` parameter, then the cache `auto` configuration will be used by default.
 
-----------------------------------------------------------
+## Name
 
-`--name | -N` (string)
+`--name` (string)
 
 The name for the created output project or solution. If no name is specified, the name `sample-{mltask}` is used.
 
 The ML.NET model file (.ZIP file) will get the same name, as well.
 
-----------------------------------------------------------
+## Output path
 
 `--output-path | -o` (string)
 
 Root location/folder to place the generated output. The default is the current directory.
 
-----------------------------------------------------------
+## Verbosity
 
-`--verbosity | -V` (string)
+`--verbosity | -v` (string)
 
 Sets the verbosity level of the standard output.
 
@@ -273,19 +320,17 @@ Allowed values are:
 - `m[inimal]`  (by default)
 - `diag[nostic]` (logging information level)
 
-By default, the CLI tool should show some minimum feedback (minimal) when working, such as mentioning that it is working and if possible how much time is left or what % of the time is completed.
+By default, the CLI tool should show some minimum feedback (`minimal`) when working, such as mentioning that it is working and if possible how much time is left or what % of the time is completed.
 
-----------------------------------------------------------
+## Help
 
-`-h|--help`
+`-h |--help`
 
 Prints out help for the command with a description for each command's parameter.
-
-----------------------------------------------------------
 
 ## See also
 
 - [How to install the ML.NET CLI tool](../how-to-guides/install-ml-net-cli.md)
-- [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)
-- [Tutorial: Auto generate a binary classifier using the ML.NET CLI](../tutorials/mlnet-cli.md)
+- [Overview of the ML.NET CLI](../automate-training-with-cli.md)
+- [Tutorial: Analyze sentiment using the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

@@ -17,6 +17,6 @@ Because [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is a
   
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
-- [ADO.NET and LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/ado-net-and-linq-to-sql.md)
-- [Communicating with the Database](../../../../../../docs/framework/data/adonet/sql/linq/communicating-with-the-database.md)
+- [Background Information](background-information.md)
+- [ADO.NET and LINQ to SQL](ado-net-and-linq-to-sql.md)
+- [Communicating with the Database](communicating-with-the-database.md)

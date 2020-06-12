@@ -10,7 +10,7 @@ ms.assetid: 1b612c7e-2381-4a7c-b07a-77030415f2a3
 Workflow tracking provides visibility into the status of workflow execution. The workflow runtime emits tracking records that describe workflow lifecycle events, activity lifecycle events, bookmark resumptions, and faults. These tracking records are consumed by tracking participants. Windows Workflow Foundation (WF) includes a standard tracking participant that writes tracking records as Event Tracing for Windows (ETW) events. If that does not meet your requirements, you can also write a custom tracking participant. This tutorial step describes how to create a custom tracking participant and tracking profile that capture the output of `WriteLine` activities so that they can be displayed to the user.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete the previous topics. To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+> Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete the previous topics. To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ## To create the custom tracking participant  
   
@@ -128,7 +128,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     {  
         TrackingProfile = new TrackingProfile  
         {  
-            Queries =   
+            Queries =
             {  
                 new ActivityStateQuery  
                 {  
@@ -192,7 +192,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
         {  
             TrackingProfile = new TrackingProfile  
             {  
-                Queries =   
+                Queries =
                 {  
                     new ActivityStateQuery  
                     {  
@@ -320,7 +320,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     Your guess is too high.
     Please enter a number between 1 and 10
     ```
-    
+
     > [!NOTE]
     > This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 

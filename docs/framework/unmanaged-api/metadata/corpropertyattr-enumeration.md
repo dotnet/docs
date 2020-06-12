@@ -14,18 +14,16 @@ helpviewer_keywords:
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorPropertyAttr Enumeration
 Contains values that describe the metadata of a property.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorPropertyAttr {  
   
-    prSpecialName           =   0x0200,   
+    prSpecialName           =   0x0200,
     prReservedMask          =   0xf400,  
     prRTSpecialName         =   0x0400,  
     prHasDefault            =   0x1000,  
@@ -45,7 +43,7 @@ typedef enum CorPropertyAttr {
 |`prUnused`|Unused.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -53,4 +51,4 @@ typedef enum CorPropertyAttr {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

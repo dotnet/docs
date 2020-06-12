@@ -17,5 +17,5 @@ Assuming a <xref:System.Data.Linq.DataContext> connection, you can use <xref:Sys
   
 ## See also
 
-- [How to: Directly Execute SQL Queries](../../../../../../docs/framework/data/adonet/sql/linq/how-to-directly-execute-sql-queries.md)
-- [Communicating with the Database](../../../../../../docs/framework/data/adonet/sql/linq/communicating-with-the-database.md)
+- [How to: Directly Execute SQL Queries](how-to-directly-execute-sql-queries.md)
+- [Communicating with the Database](communicating-with-the-database.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope::GetChildren Method
 Gets the children of this scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetChildren(  
     [in]  ULONG32  cChildren,  
     [out] ULONG32  *pcChildren,  
@@ -49,5 +47,5 @@ HRESULT GetChildren(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
-- [GetParent Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getparent-method.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)
+- [GetParent Method](isymunmanagedscope-getparent-method.md)

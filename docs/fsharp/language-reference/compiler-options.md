@@ -5,9 +5,12 @@ ms.date: 12/10/2018
 ---
 # Compiler Options
 
-This topic describes compiler command-line options for the F# compiler, fsc.exe. The compilation environment can also be controlled by setting the project properties.
+This topic describes compiler command-line options for the F# compiler, fsc.exe.
+
+The compilation environment can also be controlled by setting the project properties. For projects targeting .NET Core, the "Other flags" property, `<OtherFlags>...</OtherFlags>` in `.fsproj`, is used for specifying extra command-line options.
 
 ## Compiler Options Listed Alphabetically
+
 The following table shows compiler options listed alphabetically. Some of the F# compiler options are similar to the C# compiler options. If that is the case, a link to the C# compiler options topic is provided.
 
 |Compiler Option|Description|
@@ -39,13 +42,14 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--nowarn:warning-number-list`|Disables specific warnings listed by number. Separate each warning number by a comma. You can discover the warning number for any warning from the compilation output.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;nowarn &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/7f28x9z3.aspx).|
 |<code>--optimize[+&#124;-][optimization-option-list]</code><br /><br /><code>-O[+&#124;-] [optimization-option-list]</code>|Enables or disables optimizations. Some optimization options can be disabled or enabled selectively by listing them. These are: `nojitoptimize`, `nojittracking`, `nolocaloptimize`, `nocrossoptimize`, `notailcalls`.|
 |`--out:output-filename`<br /><br />`-o:output-filename`|Specifies the name of the compiled assembly or module.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;out &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/bw3t50f3.aspx).|
+|`--pathmap:path=sourcePath,...`|Specifies how to map physical paths to source path names output by the compiler.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pathmap &#40;C&#35; Compiler Options&#41;](/csharp/language-reference/compiler-options/pathmap-compiler-option).|
 |`--pdb:pdb-filename`|Names the output debug PDB (program database) file. This option only applies when `--debug` is also enabled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;pdb &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/ms228625.aspx).|
 |`--platform:platform-name`|Specifies that the generated code will only run on the specified platform (`x86`, `Itanium`, or `x64`), or, if the platform-name `anycpu` is chosen, specifies that the generated code can run on any platform.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;platform &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/zekwfyz4.aspx).|
 |`--preferreduilang:lang`| Specifies the preferred output language culture name (for example,  `es-ES`, `ja-JP`). |
 |`--quotations-debug`|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](code-quotations.md) and [Expr.CustomAttributes](https://msdn.microsoft.com/library/eb89943f-5f5b-474e-b125-030ca412edb3).|
 |`--reference:assembly-filename`<br /><br />`-r:assembly-filename`|Makes code from an F# or .NET Framework assembly available to the code being compiled.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;reference &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/yabyz3h4.aspx).|
 |`--resource:resource-filename`|Embeds a managed resource file into the generated assembly.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;resource &#40;C&#35; Compiler Options&#41;](https://msdn.microsoft.com/library/c0tyye07.aspx).|
-|`--sig:signature-filename`|Generates a signature file based on the generated assembly. For more information about signature files, see [Signatures](signatures.md).|
+|`--sig:signature-filename`|Generates a signature file based on the generated assembly. For more information about signature files, see [Signatures](signature-files.md).|
 |`--simpleresolution`|Specifies that assembly references should be resolved using directory-based Mono rules rather than MSBuild resolution. The default is to use MSBuild resolution except when running under Mono.|
 |`--standalone`|Specifies to produce an assembly that contains all of its dependencies so that it runs by itself without the need for additional assemblies, such as the F# library.|
 |`--staticlink:assembly-name`|Statically links the given assembly and all referenced DLLs that depend on this assembly. Use the assembly name, not the DLL name.|

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7ba51a1-0dd5-4452-b471-232febe0f897
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly::EnumerateModules Method
 Gets an enumerator for the modules contained in the `ICorDebugAssembly`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateModules (  
     [out] ICorDebugModuleEnum **ppModules  
 );  
@@ -34,7 +32,7 @@ HRESULT EnumerateModules (
  [out] A pointer to the address of the ICorDebugModuleEnum interface that is the enumerator.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

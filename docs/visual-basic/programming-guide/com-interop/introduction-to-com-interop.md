@@ -1,5 +1,5 @@
 ---
-title: "Introduction to COM Interop (Visual Basic)"
+title: "Introduction to COM Interop"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interop assemblies"
@@ -47,10 +47,10 @@ The Component Object Model (COM) lets an object expose its functionality to othe
   
 ## See also
 
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
-- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
+- [COM Interop](index.md)
+- [Walkthrough: Implementing Inheritance with COM Objects](walkthrough-implementing-inheritance-with-com-objects.md)
 - [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
-- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)
+- [Troubleshooting Interoperability](troubleshooting-interoperability.md)
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
 - [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)

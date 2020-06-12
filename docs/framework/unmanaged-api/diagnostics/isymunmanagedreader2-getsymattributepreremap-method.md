@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader2::GetSymAttributePreRemap Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these attributes are held in the symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymAttributePreRemap(  
     [in]  mdToken  parent,  
     [in]  WCHAR    *name,  
@@ -57,4 +55,4 @@ HRESULT GetSymAttributePreRemap(
   
 ## See also
 
-- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+- [ISymUnmanagedReader2 Interface](isymunmanagedreader2-interface.md)

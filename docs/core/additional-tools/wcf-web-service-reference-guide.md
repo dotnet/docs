@@ -1,9 +1,9 @@
 ---
 title: Add WCF Web Service Reference
 description: An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
-author: mlacouture
-ms.date: 04/19/2018
-ms.custom: "mvc, seodec18"
+author: dasetser
+ms.date: 10/29/2019
+ms.custom: "mvc"
 ---
 
 # Use the WCF Web Service Reference Provider Tool
@@ -15,15 +15,16 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
+- [Visual Studio 2017 version 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
 
 ## How to use the extension
 
 > [!NOTE]
 > The **WCF Web Service Reference** option is applicable to projects created using the following project templates:
-> * **Visual C#** > **.NET Core**
-> * **Visual C#** > **.NET Standard**
-> * **Visual C#** > **Web** > **ASP.NET Core Web Application**
+>
+> - **Visual C#** > **.NET Core**
+> - **Visual C#** > **.NET Standard**
+> - **Visual C#** > **Web** > **ASP.NET Core Web Application**
 
 Using the **ASP.NET Core Web Application** project template as an example, this article walks you through adding a WCF service reference to the project:
 
@@ -62,20 +63,24 @@ Using the **ASP.NET Core Web Application** project template as an example, this 
 
 While displaying progress, the tool:
 
-* Downloads metadata from the WCF service.
-* Generates the service reference code in a file named *reference.cs*, and adds it to your project under the **Connected Services** node.
-* Updates the project file (.csproj) with NuGet package references required to compile and run on the target platform.
+- Downloads metadata from the WCF service.
+- Generates the service reference code in a file named *reference.cs*, and adds it to your project under the **Connected Services** node.
+- Updates the project file (.csproj) with NuGet package references required to compile and run on the target platform.
 
 ![Visual Studio Progress window](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
 
 When these processes complete, you can create an instance of the generated WCF client type and invoke the service operations.
 
-## Next steps
+## See also
 
-### Feedback & questions
+- [Get started with Windows Communication Foundation applications](../../framework/wcf/getting-started-tutorial.md)
+- [Windows Communication Foundation services and WCF data services in Visual Studio](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)
+- [WCF supported features on .NET Core](https://github.com/dotnet/wcf/blob/master/release-notes/SupportedFeatures-v2.1.0.md)
 
-If you have any questions or feedback, [open an issue on GitHub](https://github.com/dotnet/wcf/issues/new). You can also review any existing questions or issues [at the WCF repo on GitHub](https://github.com/dotnet/wcf/issues?utf8=%E2%9C%93&q=is:issue%20label:tooling).
+## Feedback & questions
 
-### Release notes
+If you have any questions or feedback, report it at [Developer Community](https://developercommunity.visualstudio.com/) using the [Report a problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) tool.
 
-* Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md) for updated release information, including known issues.
+## Release notes
+
+- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md) for updated release information, including known issues.

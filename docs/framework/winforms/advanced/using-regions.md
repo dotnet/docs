@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 7809295b-870f-4107-a8b5-8386c298acd5
 ---
 # Using Regions
-The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves.  
+The GDI+ <xref:System.Drawing.Region> class allows you to define a custom shape. The shape can be made up of lines, polygons, and curves.  
   
  Two common uses for regions are hit testing and clipping. Hit testing is determining whether the mouse was clicked in a certain region of the screen. Clipping is restricting drawing to a certain region.  
   

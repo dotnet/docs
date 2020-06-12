@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b4df98cc-4e4e-407b-b8f4-e0076afef3a4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHost::ExitProcess Method
-Attempts to shut down all loaded runtimes gracefully and then terminates the process. Supersedes the [CorExitProcess](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md) function.  
+Attempts to shut down all loaded runtimes gracefully and then terminates the process. Supersedes the [CorExitProcess](corexitprocess-function.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitProcess (  
     [in] INT32 iExitCode);  
 ```  
@@ -38,7 +36,7 @@ HRESULT ExitProcess (
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -48,5 +46,5 @@ HRESULT ExitProcess (
   
 ## See also
 
-- [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRMetaHost Interface](iclrmetahost-interface.md)
+- [Hosting](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Iterate Through All Nodes of a Windows Forms TreeView Control"
+title: Iterate Through All Nodes of TreeView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -120,4 +120,4 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
 ## See also
 
 - [TreeView Control](treeview-control-windows-forms.md)
-- [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)
+- [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)

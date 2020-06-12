@@ -1,5 +1,5 @@
 ---
-title: "My.Application Object (Visual Basic)"
+title: "My.Application Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application object"
@@ -26,5 +26,5 @@ Provides properties, methods, and events related to the current application.
   
 ## See also
 
-- [My.Application.Info Object](../../../visual-basic/language-reference/objects/my-application-info-object.md)
-- [My.Application.Log Object](../../../visual-basic/language-reference/objects/my-application-log-object.md)
+- [My.Application.Info Object](my-application-info-object.md)
+- [My.Application.Log Object](my-application-log-object.md)

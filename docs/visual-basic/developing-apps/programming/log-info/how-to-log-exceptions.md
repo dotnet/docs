@@ -1,5 +1,5 @@
 ---
-title: "How to: Log Exceptions in Visual Basic"
+title: "How to: Log Exceptions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions, logging"
@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
 ---
 # How to: Log Exceptions in Visual Basic
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about exceptions that occur in your application. These examples show how to use the `My.Application.Log.WriteException` method to log exceptions that you catch explicitly and exceptions that are unhandled.  
   
  For logging tracing information, use the `My.Application.Log.WriteEntry` method. For more information, see <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  
@@ -64,7 +65,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>
-- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
-- [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)
-- [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
-- [Walkthrough: Changing Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)
+- [Working with Application Logs](working-with-application-logs.md)
+- [How to: Write Log Messages](how-to-write-log-messages.md)
+- [Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md)
+- [Walkthrough: Changing Where My.Application.Log Writes Information](walkthrough-changing-where-my-application-log-writes-information.md)

@@ -20,4 +20,4 @@ Generation refers to creating a new sequence of values.
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)

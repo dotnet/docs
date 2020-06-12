@@ -17,4 +17,4 @@ Use the <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method to speci
   
 ## See also
 
-- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- [Querying the Database](querying-the-database.md)

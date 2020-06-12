@@ -1,5 +1,5 @@
 ---
-title: "Internal error (Visual Basic)"
+title: "Internal error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID51"
@@ -14,5 +14,5 @@ An internal malfunction has occurred in Visual Basic.
   
 ## See also
 
-- [On Error Statement](../../visual-basic/language-reference/statements/on-error-statement.md)
+- [On Error Statement](../language-reference/statements/on-error-statement.md)
 - [Raise Method (Err Object)](xref:Microsoft.VisualBasic.ErrObject.Raise%2A)

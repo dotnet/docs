@@ -14,4 +14,4 @@ One of the properties of an object or control was set to a value outside its ran
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

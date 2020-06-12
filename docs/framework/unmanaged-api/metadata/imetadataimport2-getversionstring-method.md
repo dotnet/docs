@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 308183ee-fd44-4432-9d86-ef00d181b49b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::GetVersionString Method
 Gets the version number of the runtime that was used to build the assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionString (  
    [out] LPWSTR      pwzBuf,  
    [in]  DWORD       ccBufSize,  
@@ -45,7 +43,7 @@ HRESULT GetVersionString (
  The `GetVersionString` method gets the built-for version of the current metadata scope. If the scope has never been saved, it will not have a built-for version, and an empty string will be returned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -55,5 +53,5 @@ HRESULT GetVersionString (
   
 ## See also
 
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)

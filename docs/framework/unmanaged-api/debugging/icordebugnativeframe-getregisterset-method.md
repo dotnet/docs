@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetRegisterSet Method
 Gets the register set for this stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  
@@ -31,10 +29,10 @@ HRESULT GetRegisterSet (
   
 ## Parameters  
  `ppRegisters`  
- [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) object that represents the register set for this stack frame.  
+ [out] A pointer to the address of an [ICorDebugRegisterSet](icordebugregisterset-interface.md) object that represents the register set for this stack frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

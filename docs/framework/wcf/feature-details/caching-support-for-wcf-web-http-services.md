@@ -4,15 +4,17 @@ ms.date: "03/30/2017"
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
 ---
 # Caching Support for WCF Web HTTP Services
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. For more information about ASP.NET caching, see [ASP.NET Caching Overview](https://go.microsoft.com/fwlink/?LinkId=152534)  
+
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. For more information about ASP.NET caching, see [ASP.NET Caching Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178597(v=vs.100)).  
   
 ## Basic Web HTTP Service Caching  
- To enable WEB HTTP service caching you must first enable ASP.NET compatibility by applying the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to the service setting <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> or <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>.  
+
+  To enable WEB HTTP service caching, you must first enable ASP.NET compatibility by applying the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to the service setting <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> or <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>.  
   
- [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)] introduces a new attribute called <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> that allows you to specify a cache profile name. This attribute is applied to a service operation. The following example applies the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to a service to enable ASP.NET compatibility and configures the `GetCustomer` operation for caching. The <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute specifies a cache profile that contains the cache settings to be used.  
+ .NET Framework 4 introduces a new attribute called <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> that allows you to specify a cache profile name. This attribute is applied to a service operation. The following example applies the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to a service to enable ASP.NET compatibility and configures the `GetCustomer` operation for caching. The <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute specifies a cache profile that contains the cache settings to be used.  
   
 ```csharp
-[ServiceContract] 
+[ServiceContract]
 [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Allowed)]
 public class Service
 {
@@ -25,7 +27,7 @@ public class Service
 }
 ```  
   
- You must also turn on ASP.NET compatibility mode in the Web.config file as shown in the following example.  
+Also turn on ASP.NET compatibility mode in the Web.config file as shown in the following example.  
   
 ```xml
 <system.serviceModel>
@@ -34,7 +36,7 @@ public class Service
 ```
   
 > [!WARNING]
->  If ASP.NET compatibility mode is not turned on and the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> is used an exception is thrown.  
+> If ASP.NET compatibility mode is not turned on and the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> is used an exception is thrown.  
   
  The cache profile name specified by the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> identifies a cache profile that is added to your Web.config configuration file. The cache profile is defined with in a <`outputCacheSetting`> element as shown in the following configuration example.  
   
@@ -55,7 +57,8 @@ public class Service
  This is the same configuration element that is available to ASP.NET applications. For more information about ASP.NET cache profiles, see <xref:System.Web.Configuration.OutputCacheProfile>. For Web HTTP services, the most important attributes in the cache profile are: `cacheDuration` and `varyByParam`. Both of these attributes are required. `cacheDuration` sets the amount of time a response should be cached in seconds. `varyByParam` allows you to specify a query string parameter that is used to cache responses. All requests made with different query string parameter values are cached separately. For example, once an initial request is made to `http://MyServer/MyHttpService/MyOperation?param=10`, all subsequent requests made with the same URI would be returned the cached response (so long as the cache duration has not elapsed). Responses for a similar request that is the same but has a different value for the parameter query string parameter are cached separately. If you do not want this separate caching behavior, set `varyByParam` to "none".  
   
 ## SQL Cache Dependency  
- Web HTTP service responses can also be cached with a SQL cache dependency. If your WCF Web HTTP service depends on data stored in a SQL database, you may want to cache the service's response and invalidate the cached response when data in the SQL database table changes. This behavior is configured completely within the Web.config file. You must first define a connection string in the <`connectionStrings`> element.  
+
+  Web HTTP service responses can also be cached with a SQL cache dependency. If your WCF Web HTTP service depends on data stored in a SQL database, you may want to cache the service's response and invalidate the cached response when data in the SQL database table changes. This behavior is configured completely within the Web.config file. First, define a connection string in the <`connectionStrings`> element.  
   
 ```xml
 <connectionStrings>
@@ -113,15 +116,16 @@ public class Service
 </system.web>
 ```  
   
- Here the cache duration is set to 60 seconds, `varyByParam` is set to none and `sqlDependency` is set to a semicolon delimited list of database name/table pairs separated by colons. When data in `MyTable` is changed the cached response for the service operation is removed and when the operation is invoked a new response is generated (by calling the service operation), cached, and returned to the client.  
+ Here the cache duration is set to 60 seconds, `varyByParam` is set to none, and `sqlDependency` is set to a semicolon-delimited list of database name/table pairs separated by colons. When data in `MyTable` is changed the cached response for the service operation is removed and when the operation is invoked a new response is generated (by calling the service operation), cached, and returned to the client.  
   
 > [!IMPORTANT]
->  For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](https://go.microsoft.com/fwlink/?LinkId=152536). In addition you must allow the appropriate user account access to the database and table. For more information, see [Accessing SQL Server from a Web Application](https://go.microsoft.com/fwlink/?LinkId=178988).  
+> For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms229862(v=vs.90)). In addition you must allow the appropriate user account access to the database and table. For more information, see [Accessing SQL Server from a Web Application](https://docs.microsoft.com/previous-versions/aspnet/ht43wsex(v=vs.100)).  
   
 ## Conditional HTTP GET Based Caching  
- In Web HTTP scenarios a conditional HTTP GET is often used by services to implement intelligent HTTP caching as described in the [HTTP Specification](https://go.microsoft.com/fwlink/?LinkId=165800). To do this the service must set the value of the ETag header in the HTTP response. It also must check the If-None-Match header in the HTTP request to see whether any of the ETag specified matches the current ETag.  
+
+  In Web HTTP scenarios a conditional HTTP GET is often used by services to implement intelligent HTTP caching as described in the [HTTP Specification](https://www.w3.org/Protocols/rfc2616/rfc2616.html). To do this, the service must set the value of the ETag header in the HTTP response. It also must check the If-None-Match header in the HTTP request to see whether any of the ETag specified matches the current ETag.  
   
- For GET and HEAD requests, <xref:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve%2A> takes an ETag value and checks it against the If-None-Match header of the request. If the header is present and there is a match, a <xref:System.ServiceModel.Web.WebFaultException> with a HTTP status code 304 (Not Modified) is thrown and an ETag header is added to the response with the matching ETag.  
+ For GET and HEAD requests, <xref:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve%2A> takes an ETag value and checks it against the If-None-Match header of the request. If the header is present and there is a match, a <xref:System.ServiceModel.Web.WebFaultException> with an HTTP status code 304 (Not Modified) is thrown and an ETag header is added to the response with the matching ETag.  
   
  One overload of the <xref:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve%2A> method takes a last modified date and checks it against the If-Modified-Since header of the request. If the header is present and the resource has not been modified since, a <xref:System.ServiceModel.Web.WebFaultException> with an HTTP status code 304 (Not Modified) is thrown.  
   
@@ -148,7 +152,7 @@ public Customer GetCustomer(string id)
         // since when the client last retrieved it
         WebOperationContext.Current.IncomingRequest.CheckConditionalRetrieve((long)itemEtag);
         Customer result = this.customers[id] as Customer;
-        
+
         // set the customer etag before returning the result
         WebOperationContext.Current.OutgoingResponse.SetETag((long)itemEtag);
         return result;

@@ -1,6 +1,5 @@
 ---
 title: "Example COM Class - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "examples [C#], COM classes"
@@ -20,7 +19,7 @@ The following is an example of a class that you would expose as a COM object. Af
   
 - Events must be declared in the event interface.  
   
- Other public members in the class that are not declared in these interfaces will not be visible to COM, but they will be visible to other .NET Framework objects.  
+ Other public members in the class that are not declared in these interfaces will not be visible to COM, but they will be visible to other .NET objects.  
   
  To expose properties and methods to COM, you must declare them on the class interface and mark them with a `DispId` attribute, and implement them in the class. The order in which the members are declared in the interface is the order used for the COM vtable.  
   
@@ -33,6 +32,6 @@ The following is an example of a class that you would expose as a COM object. Af
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Interoperability](../../../csharp/programming-guide/interop/index.md)
+- [C# Programming Guide](../index.md)
+- [Interoperability](./index.md)
 - [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)

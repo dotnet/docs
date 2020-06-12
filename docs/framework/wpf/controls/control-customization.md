@@ -20,4 +20,4 @@ This category covers the various base classes, interfaces and other elements and
   
 ## See also
 
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

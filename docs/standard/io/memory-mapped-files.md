@@ -1,5 +1,6 @@
 ---
 title: "Memory-Mapped Files"
+description: Explore memory-mapped files in .NET, which contain file contents in virtual memory, and allow applications to modify the file by writing directly to the memory.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -9,11 +10,9 @@ helpviewer_keywords:
   - "memory-mapped files"
   - "inter-process communication"
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Memory-Mapped Files
-A memory-mapped file contains the contents of a file in virtual memory. This mapping between a file and memory space enables an application, including multiple processes, to modify the file by reading and writing directly to the memory. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use managed code to access memory-mapped files in the same way that native Windows functions access memory-mapped files, as described in [Managing Memory-Mapped Files](https://docs.microsoft.com/previous-versions/ms810613(v=msdn.10)).  
+A memory-mapped file contains the contents of a file in virtual memory. This mapping between a file and memory space enables an application, including multiple processes, to modify the file by reading and writing directly to the memory. Starting with the .NET Framework 4, you can use managed code to access memory-mapped files in the same way that native Windows functions access memory-mapped files, as described in [Managing Memory-Mapped Files](https://docs.microsoft.com/previous-versions/ms810613(v=msdn.10)).  
   
  There are two types of memory-mapped files:  
   
@@ -79,7 +78,9 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  [!code-csharp[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](../../../samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/cs/program.cs#1)]
  [!code-vb[MemoryMappedFiles.MemoryMappedFile.CreateFromFile#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.createfromfile/vb/program.vb#1)]  
-  
+
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
+
  The following example opens the same memory-mapped file for another process.  
   
  [!code-csharp[MemoryMappedFiles.MemoryMappedFile.OpenExisting#1](../../../samples/snippets/csharp/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/cs/program.cs#1)]
@@ -116,7 +117,7 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  The output of `Process A` is as follows:  
   
-```  
+```console  
 Start Process B and press ENTER to continue.  
 Start Process C and press ENTER to continue.  
 Process A says: True  
@@ -141,4 +142,4 @@ Process C says: True
   
 ## See also
 
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [File and Stream I/O](index.md)

@@ -150,7 +150,7 @@ Use the `join` clause to associate and/or combine elements from one data source 
 
 You can also perform a group join by storing the results of the `join` operation into a temporary variable by using the [into](../language-reference/keywords/into.md) keyword. For more information, see [join clause](../language-reference/keywords/join-clause.md).
 
-#### let clause 
+#### let clause
 
 Use the `let` clause to store the result of an expression, such as a method call, in a new range variable. In the following example, the range variable `firstName` stores the first element of the array of strings that is returned by `Split`.
 
@@ -164,7 +164,7 @@ A query clause may itself contain a query expression, which is sometimes referre
 
 [!code-csharp[csrefQueryExpBasics#63](~/samples/snippets/csharp/concepts/linq/query-expression-basics_19.cs)]
 
-For more information, see [How to: perform a subquery on a grouping operation](perform-a-subquery-on-a-grouping-operation.md).
+For more information, see [Perform a subquery on a grouping operation](perform-a-subquery-on-a-grouping-operation.md).
 
 ## See also
 

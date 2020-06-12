@@ -23,7 +23,7 @@ This topic outlines the basic steps required to create a routing configuration t
      For this example, if the client application needs the message to be processed by the rounding calculator, it adds a custom header by using the following code:  
   
     ```csharp  
-    messageHeadersElement.Add(MessageHeader.CreateHeader("RoundingCalculator",   
+    messageHeadersElement.Add(MessageHeader.CreateHeader("RoundingCalculator",
                                    "http://my.custom.namespace/", "rounding"));  
     ```  
   
@@ -98,7 +98,7 @@ This topic outlines the basic steps required to create a routing configuration t
           <filters>  
             <!--define the different message filters-->  
             <!--define an xpath message filter to look for the custom header coming from the client-->  
-            <filter name="XPathFilter" filterType="XPath"   
+            <filter name="XPathFilter" filterType="XPath"
                     filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 'rounding'"/>  
           </filters>  
     </routing>  
@@ -129,8 +129,8 @@ This topic outlines the basic steps required to create a routing configuration t
      If a message is received at an address that begins with `http://localhost/routingservice/router/rounding/` then this filter evaluates to **true**. Because the base address used by this configuration is `http://localhost/routingservice/router` and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is `http://localhost/routingservice/router/rounding/calculator`, which matches this filter.  
   
     > [!NOTE]
-    >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
-    >   
+    > The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
+    >
     > - localhost  
     > - 127.0.0.1  
     > - `www.contoso.com`  
@@ -157,7 +157,7 @@ This topic outlines the basic steps required to create a routing configuration t
 1. To associate the filters with specific client endpoints, you must place them within a filter table. This example scenario also uses filter priority settings, which is an optional setting that allows you to indicate the order in which filters are processed. If no filter priority is specified, all filters are evaluated simultaneously.  
   
     > [!NOTE]
-    >  While specifying a filter priority allows you to control the order in which filters are processed, it can adversely affect the performance of the Routing Service. When possible, construct filter logic so that the use of filter priorities is not required.  
+    > While specifying a filter priority allows you to control the order in which filters are processed, it can adversely affect the performance of the Routing Service. When possible, construct filter logic so that the use of filter priorities is not required.  
   
      The following defines the filter table and adds the "XPathFilter" defined earlier to the table with a priority of 2. This entry also specifies that if the `XPathFilter` matches the message, the message will be routed to the `roundingCalcEndpoint`.  
   
@@ -174,7 +174,7 @@ This topic outlines the basic steps required to create a routing configuration t
                 <add filterName="XPathFilter" endpointName="roundingCalcEndpoint" priority="2"/>  
               </entries>  
             </table>  
-          <filterTables>  
+          </filterTables>  
     </routing>  
     ```  
   
@@ -321,4 +321,4 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

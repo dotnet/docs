@@ -1,5 +1,5 @@
 ---
-title: "For loop not initialized (Visual Basic)"
+title: "For loop not initialized"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID92"
@@ -14,5 +14,5 @@ You jumped into the middle of a `For...Next` loop.
   
 ## See also
 
-- [For Each...Next Statement](../../visual-basic/language-reference/statements/for-each-next-statement.md)
-- [How to: Label Statements](../../visual-basic/programming-guide/program-structure/how-to-label-statements.md)
+- [For Each...Next Statement](../language-reference/statements/for-each-next-statement.md)
+- [How to: Label Statements](../programming-guide/program-structure/how-to-label-statements.md)

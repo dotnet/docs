@@ -1,5 +1,6 @@
 ---
 title: "Padding Strings in .NET"
+description: Learn how to pad strings in .NET. Use the String.PadLeft and String.PadRight methods to add leading or trailing characters to achieve a specified total length.
 ms.date: "03/15/2018"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,8 +14,6 @@ helpviewer_keywords:
   - "PadLeft method"
   - "padding strings"
 ms.assetid: 84a9f142-3244-4c90-ba02-21af9bbaff71
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Padding Strings in .NET
 
@@ -45,4 +44,4 @@ Use one of the following <xref:System.String> methods to create a new string tha
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Basic String Operations](basic-string-operations.md)

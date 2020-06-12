@@ -22,7 +22,7 @@ On some occasions, you will want to restrict access to data that is available wi
 3. If the user has appropriate credentials, display the tab that was clicked. If the user does not have appropriate credentials, display a message box or some other user interface indicating that they do not have access, and return to the initial tab.  
   
     > [!NOTE]
-    >  When you implement this functionality in your production applications, you can perform this credential check during the form's <xref:System.Windows.Forms.Form.Load> event. This will allow you to hide the tab before any user interface is shown, which is a much cleaner approach to programming. The methodology used below (checking credentials and disabling the tab during the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event) is for illustrative purposes.  
+    > When you implement this functionality in your production applications, you can perform this credential check during the form's <xref:System.Windows.Forms.Form.Load> event. This will allow you to hide the tab before any user interface is shown, which is a much cleaner approach to programming. The methodology used below (checking credentials and disabling the tab during the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event) is for illustrative purposes.  
   
 4. Optionally, if you have more than two tab pages, display a tab page different from the original.  
   
@@ -32,12 +32,12 @@ On some occasions, you will want to restrict access to data that is available wi
     Private Sub TabControl1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles TabControl1.SelectedIndexChanged  
        ' Check Credentials Here  
   
-       If CredentialCheck.Checked = True And _   
+       If CredentialCheck.Checked = True And _
        TabControl1.SelectedTab Is TabPage2 Then  
           TabControl1.SelectedTab = TabPage2  
-       ElseIf CredentialCheck.Checked = False _   
+       ElseIf CredentialCheck.Checked = False _
        And TabControl1.SelectedTab Is TabPage2 Then  
-          MessageBox.Show _   
+          MessageBox.Show _
          ("Unable to load tab. You have insufficient access privileges.")  
           TabControl1.SelectedTab = TabPage3  
        End If  
@@ -49,7 +49,7 @@ On some occasions, you will want to restrict access to data that is available wi
     {  
         // Check Credentials Here  
   
-        if ((CredentialCheck.Checked == true) && (tabControl1.SelectedTab == tabPage2))   
+        if ((CredentialCheck.Checked == true) && (tabControl1.SelectedTab == tabPage2))
         {  
             tabControl1.SelectedTab = tabPage2;  
         }  
@@ -86,7 +86,7 @@ On some occasions, you will want to restrict access to data that is available wi
      (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
-    this.tabControl1.SelectedIndexChanged +=   
+    this.tabControl1.SelectedIndexChanged +=
        new System.EventHandler(this.tabControl1_SelectedIndexChanged);  
     ```  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum::Skip Method
 Advances the enumerator's cursor from its current position to skip the specified number of elements.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (    [in] ULONG celt  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT Skip (    [in] ULONG celt
  The new position of this enumerator's cursor is (current position) + `celt`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -54,5 +52,5 @@ HRESULT Skip (    [in] ULONG celt
   
 ## See also
 
-- [ICorProfilerThreadEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerThreadEnum Interface](icorprofilerthreadenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

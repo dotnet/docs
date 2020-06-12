@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostBindingPolicyManager::EvaluatePolicy Method
 Evaluates binding policy on behalf of the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvaluatePolicy (  
     [in] LPCWSTR     pwzReferenceIdentity,  
     [in] BYTE       *pbApplicationPolicy,  
@@ -51,7 +49,7 @@ HRESULT EvaluatePolicy (
  [in, out] A pointer to the size of the assembly identity reference buffer after the evaluation of the new policy data.  
   
  `pdwPoliciesApplied`  
- [out] A pointer to a logical OR combination of [EBindPolicyLevels](../../../../docs/framework/unmanaged-api/hosting/ebindpolicylevels-enumeration.md) values, indicating which policies have been applied.  
+ [out] A pointer to a logical OR combination of [EBindPolicyLevels](ebindpolicylevels-enumeration.md) values, indicating which policies have been applied.  
   
 ## Return Value  
   
@@ -70,7 +68,7 @@ HRESULT EvaluatePolicy (
  The `EvaluatePolicy` method allows the host to influence binding policy to maintain host-specific assembly versioning requirements. The policy engine itself remains inside the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -80,4 +78,4 @@ HRESULT EvaluatePolicy (
   
 ## See also
 
-- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)

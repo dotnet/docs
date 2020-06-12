@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugIlToNativeMappingTypes Enumeration
 Indicates whether a particular range of native instructions, represented by an instance of the COR_DEBUG_IL_TO_NATIVE_MAP structure, corresponds to a special code region.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugIlToNativeMappingTypes {  
     NO_MAPPING = -1,  
     PROLOG     = -2,  
@@ -39,7 +37,7 @@ typedef enum CorDebugIlToNativeMappingTypes {
 |`EPILOG`|The range of native instructions corresponds to the epilog.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -49,5 +47,5 @@ typedef enum CorDebugIlToNativeMappingTypes {
   
 ## See also
 
-- [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [GetILToNativeMapping Method](icordebugcode-getiltonativemapping-method.md)
+- [Debugging Enumerations](debugging-enumerations.md)

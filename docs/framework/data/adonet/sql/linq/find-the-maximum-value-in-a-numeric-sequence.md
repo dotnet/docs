@@ -67,5 +67,5 @@ Use the <xref:System.Linq.Enumerable.Max%2A> operator to find the highest value 
   
 ## See also
 
-- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Aggregate Queries](aggregate-queries.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

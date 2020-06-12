@@ -8,29 +8,35 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7.0
 
 C# 7.0 adds a number of new features to the C# language:
-* [`out` variables](#out-variables)
+
+- [`out` variables](#out-variables)
   - You can declare `out` values inline as arguments to the method where they're used.
-* [Tuples](#tuples)
+- [Tuples](#tuples)
   - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
-* [Discards](#discards)
+- [Discards](#discards)
   - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They're most useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
-* [Pattern Matching](#pattern-matching)
+- [Pattern Matching](#pattern-matching)
   - You can create branching logic based on arbitrary types and values of the members of those types.
-* [`ref` locals and returns](#ref-locals-and-returns)
+- [`ref` locals and returns](#ref-locals-and-returns)
   - Method local variables and return values can be references to other storage.
-* [Local Functions](#local-functions)
+- [Local Functions](#local-functions)
   - You can nest functions inside other functions to limit their scope and visibility.
-* [More expression-bodied members](#more-expression-bodied-members)
+- [More expression-bodied members](#more-expression-bodied-members)
   - The list of members that can be authored using expressions has grown.
-* [`throw` Expressions](#throw-expressions)
+- [`throw` Expressions](#throw-expressions)
   - You can throw exceptions in code constructs that previously weren't allowed because `throw` was a statement.
-* [Generalized async return types](#generalized-async-return-types)
+- [Generalized async return types](#generalized-async-return-types)
   - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
-* [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
+- [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
   - New tokens improve readability for numeric constants.
 
 The remainder of this article provides an overview of each feature. For each feature,
-you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in our [interactive exploration](../tutorials/exploration/csharp-7.yml) of these features.
+you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## `out` variables
 
@@ -46,9 +52,9 @@ typed local variable:
 
 [!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
 
-* The code is easier to read.
+- The code is easier to read.
   - You declare the out variable where you use it, not on another line above.
-* No need to assign an initial value.
+- No need to assign an initial value.
   - By declaring the `out` variable where it's used in a method call, you can't accidentally use it before it is assigned.
 
 ## Tuples
@@ -76,7 +82,7 @@ names to each of the members of the tuple:
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. Those names exist only at compile time and aren't preserved,
-for example when inspecting the tuple using reflection at runtime.
+for example when inspecting the tuple using reflection at run time.
 
 In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
@@ -110,12 +116,12 @@ Often when deconstructing a tuple or calling a method with `out` parameters, you
 
 Discards are supported in the following scenarios:
 
-* When deconstructing tuples or user-defined types.
-* When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
-* In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
-* As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
+- When deconstructing tuples or user-defined types.
+- When calling methods with [out](../language-reference/keywords/out-parameter-modifier.md) parameters.
+- In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
+- As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
-The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains a data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
+The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
 [!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
@@ -210,15 +216,15 @@ You can declare the return value as a `ref` and modify that value in the matrix,
 The C# language has several rules that protect you from misusing
 the `ref` locals and returns:
 
-* You must add the `ref` keyword to the method signature and to all `return` statements in a method.
+- You must add the `ref` keyword to the method signature and to all `return` statements in a method.
   - That makes it clear the method returns by reference throughout the method.
-* A `ref return` may be assigned to a value variable, or a `ref` variable.
+- A `ref return` may be assigned to a value variable, or a `ref` variable.
   - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
-* You can't assign a standard method return value to a `ref` local variable.
+- You can't assign a standard method return value to a `ref` local variable.
   - That disallows statements like `ref int i = sequence.Count();`
-* You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.
+- You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.
   - That means you can't return a reference to a local variable or a variable with a similar scope.
-* `ref` locals and returns can't be used with async methods.
+- `ref` locals and returns can't be used with async methods.
   - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
 
 The addition of ref locals and ref returns enables algorithms that are more
@@ -255,9 +261,7 @@ work begins:
 [!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
 > [!NOTE]
-> Some of the designs that are supported by local functions
-> could also be accomplished using *lambda expressions*. Those
-> interested can [read more about the differences](../local-functions-vs-lambdas.md)
+> Some of the designs that are supported by local functions can also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions).
 
 ## More expression-bodied members
 
@@ -291,7 +295,7 @@ not an expression, there were C# constructs where you couldn't use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7.0 introduces *throw expressions*.
+constructs, C# 7.0 introduces [*throw expressions*](../language-reference/keywords/throw.md#the-throw-expression).
 
 This addition makes it easier to write more expression-based code. You don't need additional statements for error checking.
 
@@ -308,7 +312,7 @@ costly if those allocations occur in tight loops.
 The new language feature means that async method return types aren't limited to `Task`, `Task<T>`, and `void`. The returned type
 must still satisfy the async pattern, meaning a `GetAwaiter` method
 must be accessible. As one concrete example, the `ValueTask` type
-has been added to the .NET framework to make use of this new language
+has been added to .NET to make use of this new language
 feature:
 
 [!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]

@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Clock Object (Visual Basic)"
+title: "My.Computer.Clock Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Clock object"
@@ -20,4 +20,4 @@ Provides properties for accessing the current local time and Universal Coordinat
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

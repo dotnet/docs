@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b97493fb-713e-49d5-a73e-5688b2ad0700
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetClassFromObject Method
 Gets the `ClassID` of an object, given its `ObjectID`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromObject(  
     [in]  ObjectID objectId,  
     [out] ClassID *pClassId);  
@@ -40,7 +38,7 @@ HRESULT GetClassFromObject(
  A null `pClassId` indicates that `objectId` has a type that is unloading.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -50,4 +48,4 @@ HRESULT GetClassFromObject(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

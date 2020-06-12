@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::CloseEnum Method
 Releases a reference to the specified enumeration instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
     [in] HCORENUM     hEnum  
 );  
@@ -34,7 +32,7 @@ void CloseEnum (
  [in] The enumeration instance to be closed.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,4 +42,4 @@ void CloseEnum (
   
 ## See also
 
-- [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
+- [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

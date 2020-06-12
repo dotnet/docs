@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Items in a Windows Forms ListView Control Using the Designer"
+title: Group Items in ListView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ListView control [Windows Forms], grouping items"
@@ -17,12 +17,7 @@ The following procedure requires a **Windows Application** project with a form c
 
 To enable grouping, you must first create one or more <xref:System.Windows.Forms.ListViewGroup> objects either in the designer or programmatically. Once a group has been defined, you can assign items to it.
 
-> [!NOTE]
-> <xref:System.Windows.Forms.ListView> groups are available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups has no effect and the groups will not appear. For more information, see <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>.
->
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
-### To add or remove groups in the designer
+## To add or remove groups in the designer
 
 1. In the **Properties** window, click the **Ellipsis** (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button next to the <xref:System.Windows.Forms.ListView.Groups%2A> property.
 
@@ -30,7 +25,7 @@ To enable grouping, you must first create one or more <xref:System.Windows.Forms
 
 2. To add a group, click the **Add** button. You can then set properties of the new group, such as the <xref:System.Windows.Forms.ListViewGroup.Header%2A> and <xref:System.Windows.Forms.ListViewGroup.HeaderAlignment%2A> properties. To remove a group, select it and click the **Remove** button.
 
-### To assign items to groups in the designer
+## To assign items to groups in the designer
 
 1. In the **Properties** window, click the **Ellipsis** (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button next to the <xref:System.Windows.Forms.ListView.Items%2A> property.
 

@@ -11,7 +11,7 @@ You can create a copy of a <xref:System.Data.DataSet> so that you can work with 
   
 - Create an exact copy of the **DataSet**, including the schema, data, row state information, and row versions.  
   
-- Create a **DataSet** that contains the schema of an existing **DataSet**, but only rows that have been modified. You can return all rows that have been modified, or specify a specific **DataRowState**. For more information about row states, see [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
+- Create a **DataSet** that contains the schema of an existing **DataSet**, but only rows that have been modified. You can return all rows that have been modified, or specify a specific **DataRowState**. For more information about row states, see [Row States and Row Versions](row-states-and-row-versions.md).  
   
 - Copy the schema, or relational structure, of the **DataSet** only, without copying any rows. Rows can be imported into an existing <xref:System.Data.DataTable> using <xref:System.Data.DataTable.ImportRow%2A>.  
   
@@ -79,7 +79,7 @@ customerDataSet.Tables["Customers"].Rows.Add("John", "UK");
   
 DataSet germanyCustomers = customerDataSet.Clone();  
   
-DataRow[] copyRows =   
+DataRow[] copyRows =
   customerDataSet.Tables["Customers"].Select("CountryRegion = 'Germany'");  
   
 DataTable customerTable = germanyCustomers.Tables["Customers"];  
@@ -92,5 +92,5 @@ foreach (DataRow copyRow in copyRows)
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataTable>
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Key In the Registry (Visual C#)"
+title: "How to create a key in the registry - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "keys, creating in registry"
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
 ---
-# How to: Create a Key In the Registry (Visual C#)
+# How to create a key in the registry (C# Programming Guide)
 This example adds the value pair, "Name" and "Isabella", to the current user's registry, under the key "Names".  
   
 ## Example  
@@ -42,7 +42,7 @@ key.Close();
   
 - The registry key is read-only.  
   
-## .NET Framework Security  
+## .NET Security  
  It is more secure to write data to the user folder — `Microsoft.Win32.Registry.CurrentUser` — rather than to the local computer — `Microsoft.Win32.Registry.LocalMachine`.  
   
  When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the.`Overload:Microsoft.Win32.RegistryKey.GetValue` method. It returns null if the key does not already exist.  
@@ -52,6 +52,6 @@ key.Close();
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)
 - [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

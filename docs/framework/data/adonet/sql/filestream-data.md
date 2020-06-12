@@ -11,7 +11,7 @@ The FILESTREAM storage attribute is for binary (BLOB) data stored in a varbinary
 > [!NOTE]
 > You must install the .NET Framework 3.5 SP1 (or later) to work with FILESTREAM data using SqlClient.
 
-Specifying the FILESTREAM attribute on a varbinary(max) column causes SQL Server to store the data on the local NTFS file system instead of in the database file. Although it is stored separately, you can use the same [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statements that are supported for working with varbinary(max) data that is stored in the database.
+Specifying the FILESTREAM attribute on a varbinary(max) column causes SQL Server to store the data on the local NTFS file system instead of in the database file. Although it is stored separately, you can use the same Transact-SQL statements that are supported for working with varbinary(max) data that is stored in the database.
 
 ## SqlClient Support for FILESTREAM
 
@@ -19,7 +19,7 @@ The .NET Framework Data Provider for SQL Server, <xref:System.Data.SqlClient>, s
 
 ### Creating the SQL Server Table
 
-The following [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statements creates a table named employees and inserts a row of data. Once you have enabled FILESTREAM storage, you can use this table in conjunction with the code examples that follow. The links to resources in SQL Server Books Online are located at the end of this topic.
+The following Transact-SQL statements creates a table named employees and inserts a row of data. Once you have enabled FILESTREAM storage, you can use this table in conjunction with the code examples that follow. The links to resources in SQL Server Books Online are located at the end of this topic.
 
 ```sql
 CREATE TABLE employees
@@ -180,8 +180,8 @@ The complete documentation for FILESTREAM is located in the following sections i
 
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
-- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
+- [Code Access Security and ADO.NET](../code-access-security.md)
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [ADO.NET Overview](../ado-net-overview.md)

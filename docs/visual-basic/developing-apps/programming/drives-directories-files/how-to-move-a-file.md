@@ -1,11 +1,12 @@
 ---
-title: "How to: Move a File in Visual Basic"
+title: "How to: Move a File"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], moving"
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
 ---
 # How to: Move a File in Visual Basic
+
 The `My.Computer.FileSystem.MoveFile` method can be used to move a file to another folder. If the target structure does not exist, it will be created.  
   
 ### To move a file  
@@ -21,6 +22,7 @@ The `My.Computer.FileSystem.MoveFile` method can be used to move a file to anoth
      [!code-vb[VbVbcnMyFileSystem#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#25)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
@@ -46,6 +48,6 @@ The `My.Computer.FileSystem.MoveFile` method can be used to move a file to anoth
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile%2A>
-- [How to: Rename a File](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)
-- [How to: Create a Copy of a File in a Different Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md)
-- [How to: Parse File Paths](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Rename a File](how-to-rename-a-file.md)
+- [How to: Create a Copy of a File in a Different Directory](how-to-create-a-copy-of-a-file-in-a-different-directory.md)
+- [How to: Parse File Paths](how-to-parse-file-paths.md)

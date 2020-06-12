@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: bd01c30f-b7a8-4179-9497-622b6599b1a6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoreClrDebugRuntimeInfo Structure
 Represents a common language runtime (CLR) instance that is loaded in a process on a remote machine.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct  CoreClrDebugRuntimeInfo {  
     DWORD m_dwInternalID;  
 };  
@@ -37,7 +35,7 @@ struct  CoreClrDebugRuntimeInfo {
 |`m_dwInternalID`|Runtime identifier that is assigned by the remote debugging proxy running on the target machine.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CoreClrRemoteDebuggingInterfaces.h  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemoteTarget::GetHostName Method
 Returns the fully qualified domain name or IPv4 address of the remote debugging target machine. IPV6 is not supported at this time.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostName (  
     [in] ULONG32      cchHostName,  
     [out] ULONG32*    pcchHostName,  
@@ -52,7 +50,7 @@ HRESULT GetHostName (
  This method is implemented by the debugger writer. It must follow the multiple call paradigm: On the first call, the caller passes null to both `cchHostName` and `szHostName`, and `pcchHostName` returns the size of the required buffer. On the second call, the size that was previously returned is passed in `cchHostName`, and an appropriately sized buffer is passed in `szHostName`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -62,5 +60,5 @@ HRESULT GetHostName (
   
 ## See also
 
-- [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 57163b0d-c8a7-44af-9078-e7a895d29f9a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::GetThread Method
 Gets the thread in which this evaluation is executing or will execute.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread   **ppThread  
 );  
@@ -34,7 +32,7 @@ HRESULT GetThread (
  [out] A pointer to the address of an ICorDebugThread object that represents the thread.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

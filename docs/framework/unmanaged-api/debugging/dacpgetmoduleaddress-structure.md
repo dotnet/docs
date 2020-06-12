@@ -24,7 +24,7 @@ Defines the container for a module address request.
 
 ## Syntax
 
-```
+```cpp
 struct DacpGetModuleAddress
 {
     CLRDATA_ADDRESS ModulePtr;
@@ -41,19 +41,19 @@ struct DacpGetModuleAddress
 
 | Method                                                                                               | Description                                                                    |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [Request](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-request-method.md) | Performs a request to populate the structure from the given runtime structure. |
+| [Request](dacpgetmoduleaddress-request-method.md) | Performs a request to populate the structure from the given runtime structure. |
 
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above, where `CLRDATA_ADDRESS` is a 64-bit unsigned integer.
 
 ## Requirements
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](index.md)
+- [Debugging Structures](debugging-structures.md)

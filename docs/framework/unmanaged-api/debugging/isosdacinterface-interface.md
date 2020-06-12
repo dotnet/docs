@@ -26,9 +26,9 @@ Provides helper methods to access data from `SOS`.
 
 | Method                                                                                                               | Description                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [GetMethodDescData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescdata-method.md) | Gets the data for the given MethodDesc pointer. |
-| [GetMethodDescPtrFromIP](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescptrfromip-method.md) | Retrieves the pointer of the MethodDesc corresponding the method containing the given native instruction address. |
-| [GetModuleData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmoduledata-method.md)| Fetches the data corresponding to the module loaded at a given address. |
+| [GetMethodDescData](isosdacinterface-getmethoddescdata-method.md) | Gets the data for the given MethodDesc pointer. |
+| [GetMethodDescPtrFromIP](isosdacinterface-getmethoddescptrfromip-method.md) | Retrieves the pointer of the MethodDesc corresponding the method containing the given native instruction address. |
+| [GetModuleData](isosdacinterface-getmoduledata-method.md)| Fetches the data corresponding to the module loaded at a given address. |
 
 ## Remarks
 
@@ -36,12 +36,12 @@ This interface lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](index.md)
+- [Debugging Interfaces](debugging-interfaces.md)

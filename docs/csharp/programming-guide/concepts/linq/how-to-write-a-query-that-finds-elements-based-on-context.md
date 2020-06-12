@@ -1,9 +1,9 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (C#)"
+title: "How to write a query that finds elements based on context (C#)"
 ms.date: 07/20/2015
 ms.assetid: 3ff79ef0-fc8b-42fe-8cc0-10dc32b06b4e
 ---
-# How to: Write a Query that Finds Elements Based on Context (C#)
+# How to write a query that finds elements based on context (C#)
 Sometimes you might have to write a query that selects elements based on their context. You might want to filter based on preceding or following sibling elements. You might want to filter based on child or ancestor elements.  
   
  You can do this by writing a query and using the results of the query in the `where` clause. If you have to first test against null, and then test the value, it is more convenient to do the query in a `let` clause, and then use the results in the `where` clause.  
@@ -43,14 +43,14 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XElement doc = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
@@ -86,7 +86,7 @@ foreach (XElement e in items)
   
  This code produces the following output:  
   
-```  
+```output  
 id = 1  
 id = 3  
 id = 6  
@@ -98,4 +98,3 @@ id = 6
 - <xref:System.Xml.Linq.XContainer.Descendants%2A>
 - <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
 - <xref:System.Linq.Enumerable.FirstOrDefault%2A>
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

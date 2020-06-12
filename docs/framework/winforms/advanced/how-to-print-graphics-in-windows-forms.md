@@ -1,5 +1,5 @@
 ---
-title: "How to: Print Graphics in Windows Forms"
+title: "How to: Print Graphics"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -28,10 +28,10 @@ Frequently, you will want to print graphics in your Windows-based application. T
     ```  
   
     ```csharp  
-    private void printDocument1_PrintPage(object sender,   
+    private void printDocument1_PrintPage(object sender,
     System.Drawing.Printing.PrintPageEventArgs e)  
     {  
-       e.Graphics.FillRectangle(Brushes.Blue,   
+       e.Graphics.FillRectangle(Brushes.Blue,
          new Rectangle(100, 150, 250, 250));  
     }  
     ```  
@@ -46,7 +46,7 @@ Frequently, you will want to print graphics in your Windows-based application. T
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  

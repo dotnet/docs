@@ -1,5 +1,5 @@
 ---
-title: "Namespaces in Visual Basic"
+title: "Namespaces"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.global"
@@ -93,7 +93,7 @@ End Namespace
  You can use `Global` to access other root-level namespaces, such as <xref:Microsoft.VisualBasic?displayProperty=nameWithType>, and any namespace associated with your project.  
   
 ## Global Keyword in Namespace Statements  
- You can also use the `Global` keyword in a [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md). This lets you define a namespace out of the root namespace of your project.  
+ You can also use the `Global` keyword in a [Namespace Statement](../../language-reference/statements/namespace-statement.md). This lets you define a namespace out of the root namespace of your project.  
   
  All namespaces in your project are based on the root namespace for the project.  Visual Studio assigns your project name as the default root namespace for all code in your project. For example, if your project is named `ConsoleApplication1`, its programming elements belong to namespace `ConsoleApplication1`. If you declare `Namespace Magnetosphere`, references to `Magnetosphere` in the project will access `ConsoleApplication1.Magnetosphere`.  
   
@@ -118,7 +118,6 @@ End Namespace
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms?displayProperty=nameWithType>
 - [Assemblies in .NET](../../../standard/assembly/index.md)
-- [How to: Create and Use Assemblies Using the Command Line](../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)
-- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
-- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [References and the Imports Statement](references-and-the-imports-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../../language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [Writing Code in Office Solutions](/visualstudio/vsto/writing-code-in-office-solutions)

@@ -1,5 +1,5 @@
 ---
-title: "Derived Math Functions (Visual Basic)"
+title: "Derived Math Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arithmetic operations, derived math functions"
@@ -50,4 +50,4 @@ The following table shows non-intrinsic math functions that can be derived from 
   
 ## See also
 
-- [Math Functions](../../../visual-basic/language-reference/functions/math-functions.md)
+- [Math Functions](../functions/math-functions.md)

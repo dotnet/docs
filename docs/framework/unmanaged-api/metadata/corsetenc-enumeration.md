@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSetENC Enumeration
 Contains values used to influence behavior during the generation of metadata.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSetENC {  
   
     MDSetENCOn                  = 0x00000001,  
@@ -52,7 +50,7 @@ typedef enum CorSetENC {
 |`MDUpdateMask`|Includes `MDUpdateENC`, `MDUpdateFull` and `MDUpdateIncremental`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -60,4 +58,4 @@ typedef enum CorSetENC {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

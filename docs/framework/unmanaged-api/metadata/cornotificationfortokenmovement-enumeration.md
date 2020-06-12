@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorNotificationForTokenMovement Enumeration
 Specifies the notifications that will be sent to the metadata API client when a token remap occurs.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorNotificationForTokenMovement {  
   
     MDNotifyDefault             = 0x0000000f,  
@@ -87,7 +85,7 @@ typedef enum CorNotificationForTokenMovement {
  A token may be re-mapped (that is, moved) during a metadata merge.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -95,4 +93,4 @@ typedef enum CorNotificationForTokenMovement {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

@@ -22,7 +22,7 @@ Notifies the ICorDebug pipeline that the out of process debugger is continuing t
 
 ## Syntax
 
-```
+```cpp
 HRESULT ProcessStateChanged(
     [in] CorDebugStateChange change
 );
@@ -39,12 +39,12 @@ The provided method is part of the `ICorDebugProcess4` interface and corresponds
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** None
 
  **Library:** None
- 
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## See also

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e525aa16-c923-4b16-833b-36f1f0dd70fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetTokenAndMetadataFromFunction Method
 Gets the metadata token and a metadata interface instance that can be used against the token for the specified function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTokenAndMetaDataFromFunction(  
     [in]  FunctionID functionId,  
     [in]  REFIID     riid,  
@@ -45,7 +43,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
  [out] A pointer to the metadata token for the specified function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -55,4 +53,4 @@ HRESULT GetTokenAndMetaDataFromFunction(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

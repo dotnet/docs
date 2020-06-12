@@ -30,16 +30,16 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
      Multiple calls to the `Export` method results in multiple items being added to the same `XmlSchemaSet`. A type is not generated into the `XmlSchemaSet` if it already exists there. Therefore, calling `Export` multiple times on the same `XsdDataContractExporter` is preferable to creating multiple instances of the `XsdDataContractExporter` class. This avoids duplicate schema types from being generated.  
   
     > [!NOTE]
-    >  If there is a failure during export, the `XmlSchemaSet` will be in an unpredictable state.  
+    > If there is a failure during export, the `XmlSchemaSet` will be in an unpredictable state.  
   
 5. Access the <xref:System.Xml.Schema.XmlSchemaSet> through the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property.  
   
 ## Export Options  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to an instance of the <xref:System.Runtime.Serialization.ExportOptions> class to control various aspects of the export process. Specifically, you can set the following options:  
   
-- <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. (For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
+- <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. (For more information, see [Data Contract Known Types](data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
   
-- <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+- <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. For more information, see [Data Contract Surrogates](../extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## Helper Methods  
  In addition to its primary role of exporting schema, the `XsdDataContractExporter` provides several useful helper methods that provide information about types. These include:  
@@ -57,5 +57,5 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
 - <xref:System.Runtime.Serialization.XsdDataContractExporter>
-- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
-- [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)
+- [Schema Import and Export](schema-import-and-export.md)
+- [Importing Schema to Generate Classes](importing-schema-to-generate-classes.md)

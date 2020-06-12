@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f4984a8c-4c0e-4460-9aa1-d022b3621228
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHostControl::RequestVirtualMemLimit Method
 Requests the host to change the limits of virtual memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestVirtualMemLimit (  
     [in] SIZE_T       sztMaxVirtualMemMB,  
     [in, out] SIZE_T* psztNewMaxVirtualMemMB  
@@ -38,7 +36,7 @@ HRESULT RequestVirtualMemLimit (
  [in, out] A pointer to the actual size of memory allocated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,4 +46,4 @@ HRESULT RequestVirtualMemLimit (
   
 ## See also
 
-- [IGCHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md)
+- [IGCHostControl Interface](igchostcontrol-interface.md)

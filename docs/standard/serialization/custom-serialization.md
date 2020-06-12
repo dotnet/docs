@@ -1,5 +1,6 @@
 ---
 title: "Custom serialization"
+description: Custom serialization is controlling the serialization and deserialization of a type. Controlling serialization can ensure serialization compatibility.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -24,7 +25,7 @@ Custom serialization is the process of controlling the serialization and deseria
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
 > [!IMPORTANT]
->  In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using the GetObjectData. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
+> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using the GetObjectData. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
   
 ## Running custom methods during and after serialization  
  The best practice and easiest way (introduced in version 2.0 of the .NET Framework) is to apply the following attributes to methods that are used to correct data during and after serialization:  
@@ -171,10 +172,10 @@ End Class
   
  Don't forget to call the base class in the deserialization constructor. If this isn't done, the constructor on the base class is never called, and the object is not fully constructed after deserialization.  
   
- Objects are reconstructed from the inside out; and calling methods during deserialization can have undesirable side effects, because the methods called might refer to object references that have not been deserialized by the time the call is made. If the class being deserialized implements the <xref:System.Runtime.Serialization.IDeserializationCallback>, the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization*> method is automatically called when the entire object graph has been deserialized. At this point, all the child objects referenced have been fully restored. A hash table is a typical example of a class that is difficult to deserialize without using the event listener. It is easy to retrieve the key and value pairs during deserialization, but adding these objects back to the hash table can cause problems, because there is no guarantee that classes that derived from the hash table have been deserialized. Calling methods on a hash table at this stage is therefore not advisable.  
+ Objects are reconstructed from the inside out; and calling methods during deserialization can have undesirable side effects, because the methods called might refer to object references that have not been deserialized by the time the call is made. If the class being deserialized implements the <xref:System.Runtime.Serialization.IDeserializationCallback>, the <xref:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization%2A> method is automatically called when the entire object graph has been deserialized. At this point, all the child objects referenced have been fully restored. A hash table is a typical example of a class that is difficult to deserialize without using the event listener. It is easy to retrieve the key and value pairs during deserialization, but adding these objects back to the hash table can cause problems, because there is no guarantee that classes that derived from the hash table have been deserialized. Calling methods on a hash table at this stage is therefore not advisable.  
   
 ## See also
 
 - [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+- [Security and Serialization](../../framework/misc/security-and-serialization.md)

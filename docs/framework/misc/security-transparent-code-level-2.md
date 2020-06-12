@@ -7,16 +7,12 @@ helpviewer_keywords:
   - "security-transparent code"
   - "security-critical code"
 ms.assetid: 4d05610a-0da6-4f08-acea-d54c9d6143c0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security-Transparent Code, Level 2
 
-<a name="top"></a>
-
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
-Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
+Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
 
 - Transparent code, including code that is running as full trust, can call other transparent code or security-safe-critical code only. It can only perform actions allowed by the domain’s partial trust permission set (if one exists). Transparent code cannot do the following:
 
@@ -38,21 +34,9 @@ Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../incl
 
 - Security-critical code can call any code and is fully trusted, but it cannot be called by transparent code.
 
-This topic contains the following sections:
-
-- [Usage Examples and Behaviors](#examples)
-
-- [Override Patterns](#override)
-
-- [Inheritance Rules](#inheritance)
-
-- [Additional Information and Rules](#additional)
-
-<a name="examples"></a>
-
 ## Usage Examples and Behaviors
 
-To specify [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] rules (level 2 transparency), use the following annotation for an assembly:
+To specify .NET Framework 4 rules (level 2 transparency), use the following annotation for an assembly:
 
 ```csharp
 [assembly: SecurityRules(SecurityRuleSet.Level2)]
@@ -64,7 +48,7 @@ To lock into the .NET Framework 2.0 rules (level 1 transparency), use the follow
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
 ```
 
-If you do not annotate an assembly, the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] rules are used by default. However, the recommended best practice is to use the <xref:System.Security.SecurityRulesAttribute> attribute instead of depending on the default.
+If you do not annotate an assembly, the .NET Framework 4 rules are used by default. However, the recommended best practice is to use the <xref:System.Security.SecurityRulesAttribute> attribute instead of depending on the default.
 
 ### Assembly-wide Annotation
 
@@ -99,10 +83,6 @@ The security attributes that are applied to a type also apply to the members tha
 
 - `SecuritySafeCritical`: The type or member is safe-critical. However, the type or member can be called from transparent (partially trusted) code and is as capable as any other critical code. The code must be audited for security.
 
-[Back to top](#top)
-
-<a name="override"></a>
-
 ## Override Patterns
 
 The following table shows the method overrides allowed for level 2 transparency.
@@ -114,10 +94,6 @@ The following table shows the method overrides allowed for level 2 transparency.
 |`SafeCritical`|`Transparent`|
 |`SafeCritical`|`SafeCritical`|
 |`Critical`|`Critical`|
-
-[Back to top](#top)
-
-<a name="inheritance"></a>
 
 ## Inheritance Rules
 
@@ -170,10 +146,6 @@ The following table shows the disallowed method inheritance patterns.
 > [!NOTE]
 > These inheritance rules apply to level 2 types and members. Types in level 1 assemblies can inherit from level 2 security-critical types and members. Therefore, level 2 types and members must have separate inheritance demands for level 1 inheritors.
 
-[Back to top](#top)
-
-<a name="additional"></a>
-
 ## Additional Information and Rules
 
 ### LinkDemand Support
@@ -197,9 +169,9 @@ You can skip verification for fully trusted transparent assemblies by setting th
 
 `[assembly: SecurityRules(SecurityRuleSet.Level2, SkipVerificationInFullTrust = true)]`
 
-The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../../../docs/framework/tools/peverify-exe-peverify-tool.md).
+The <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> property is `false` by default, so the property must be set to `true` to skip verification. This should be done for optimization purposes only. You should ensure that the transparent code in the assembly is verifiable by using the `transparent` option in the [PEVerify tool](../tools/peverify-exe-peverify-tool.md).
 
 ## See also
 
-- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
-- [Security Changes](../../../docs/framework/security/security-changes.md)
+- [Security-Transparent Code, Level 1](security-transparent-code-level-1.md)
+- [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)

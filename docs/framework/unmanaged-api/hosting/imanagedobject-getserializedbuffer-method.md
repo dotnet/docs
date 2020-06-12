@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c17105bb-b49f-434e-8f9b-77f8c85b9220
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject::GetSerializedBuffer Method
 Gets the string representation of this managed object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSerializedBuffer (  
     [out] BSTR *pBSTR  
 );  
@@ -37,7 +35,7 @@ HRESULT GetSerializedBuffer (
  The `GetSerializedBuffer` method serializes the object so it can be marshaled to the client.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -47,4 +45,4 @@ HRESULT GetSerializedBuffer (
   
 ## See also
 
-- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+- [IManagedObject Interface](imanagedobject-interface.md)

@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: 7de6447a-a751-49d8-87e2-951cee77b536
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::GetTokenFromTypeSpec Method
 Gets a metadata token for the type with the specified metadata signature.  
   
 ## Syntax  
   
-```  
-HRESULT GetTokenFromTypeSpec (   
-    [in]  PCCOR_SIGNATURE       pvSig,   
-    [in]  ULONG                 cbSig,   
-    [out] mdTypeSpec            *ptypespec   
+```cpp  
+HRESULT GetTokenFromTypeSpec (
+    [in]  PCCOR_SIGNATURE       pvSig,
+    [in]  ULONG                 cbSig,
+    [out] mdTypeSpec            *ptypespec
 );  
 ```  
   
@@ -42,7 +40,7 @@ HRESULT GetTokenFromTypeSpec (
  [out] The `mdTypeSpec` token assigned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -52,5 +50,5 @@ HRESULT GetTokenFromTypeSpec (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

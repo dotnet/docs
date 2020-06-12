@@ -1,7 +1,5 @@
 ---
 title: "continue statement - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "continue_CSharpKeyword"
@@ -12,7 +10,7 @@ ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
 ---
 # continue (C# Reference)
 
-The `continue` statement passes control to the next iteration of the enclosing [while](../../../csharp/language-reference/keywords/while.md), [do](../../../csharp/language-reference/keywords/do.md), [for](../../../csharp/language-reference/keywords/for.md), or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement in which it appears.
+The `continue` statement passes control to the next iteration of the enclosing [while](./while.md), [do](./do.md), [for](./for.md), or [foreach](./foreach-in.md) statement in which it appears.
 
 ## Example
 
@@ -26,8 +24,7 @@ In this example, a counter is initialized to count from 1 to 10. By using the `c
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
 - [break Statement](/cpp/cpp/break-statement-cpp)
-- [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

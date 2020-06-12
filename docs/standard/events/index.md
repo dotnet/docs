@@ -1,5 +1,6 @@
 ---
 title: "Handling and Raising Events"
+description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -14,8 +15,6 @@ helpviewer_keywords:
   - "events [.NET Core]"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Handling and raising events
 
@@ -46,7 +45,7 @@ Delegates have many uses in .NET. In the context of events, a delegate is an int
   
 Delegates are [multicast](xref:System.MulticastDelegate), which means that they can hold references to more than one event-handling method. For details, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
-For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/keywords/delegate.md) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
+For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
   
 [!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
@@ -74,7 +73,7 @@ The following example shows an event handler method named `c_ThresholdReached` t
 [!code-vb[EventsOverview#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]  
   
 ## Static and dynamic event handlers  
- 
+
 .NET allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/programming-guide/events/index.md) (in C#).  
   
 ## Raising multiple events  

@@ -50,5 +50,5 @@ When programming Windows Communication Foundation (WCF) services, the service se
   
 ## See also
 
-- [Securing Services](../../../docs/framework/wcf/securing-services.md)
-- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Securing Services](securing-services.md)
+- [Service Identity and Authentication](./feature-details/service-identity-and-authentication.md)

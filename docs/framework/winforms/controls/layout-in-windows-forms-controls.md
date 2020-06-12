@@ -1,5 +1,5 @@
 ---
-title: "Layout in Windows Forms Controls"
+title: Layout of controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "layout [Windows Forms]"

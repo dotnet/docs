@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b862ff3e-e480-4cdf-84e2-e1013334a467
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject::GetObjectIdentity Method
 Gets the identity of this managed object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectIdentity (  
     [out] BSTR*   pBSTRGUID,  
     [out] int*    AppDomainID,  
@@ -45,7 +43,7 @@ HRESULT GetObjectIdentity (
  The identity of a managed object includes process GUID, application domain ID, and the object's index in the COM classic v-table.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -55,4 +53,4 @@ HRESULT GetObjectIdentity (
   
 ## See also
 
-- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+- [IManagedObject Interface](imanagedobject-interface.md)

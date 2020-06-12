@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: ab03dcb8-ceed-4f7a-abf8-9d31604bf90c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Reset Method
 Moves the cursor to the beginning of the enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -38,4 +36,4 @@ HRESULT Reset ();
   
 ## See also
 
-- [ICorDebugEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)
+- [ICorDebugEnum Interface](icordebugenum-interface1.md)

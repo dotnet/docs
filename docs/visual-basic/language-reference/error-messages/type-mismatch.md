@@ -1,5 +1,5 @@
 ---
-title: "Type mismatch (Visual Basic)"
+title: "Type mismatch"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID13"
@@ -18,4 +18,4 @@ You attempted to convert a value to another type in a way that is not valid.
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

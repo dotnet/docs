@@ -17,4 +17,4 @@ Use <xref:System.Linq.Enumerable.ToList%2A> to create a generic List from a sequ
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

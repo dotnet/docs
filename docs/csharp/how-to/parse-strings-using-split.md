@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse Strings Using String.Split (C# Guide)"
+title: "How to parse strings using String.Split (C# Guide)"
 description: String.Split returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
 ms.date: 01/03/2018
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
 ---
-# How to: Parse Strings Using String.Split (C# Guide)
+# How to parse strings using String.Split in C\#
 
 The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 array of substrings by splitting the input string based on one or more delimiters. It is often the easiest way to separate a string on word boundaries. It is also used
@@ -20,16 +20,16 @@ to split strings on other specific characters or strings.
 
 The following code splits a common phrase into an array of strings for each word.
 
-[!code-csharp-interactive[split strings on word boundaries](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#1)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet1":::
 
 Every instance of a separator character produces a value in the
 returned array. Consecutive separator characters produce the empty string
-as a value in the returned array.  You can see this in the following example,
-which uses space as a separator:
+as a value in the returned array. You can see how an empty string is created in the following example,
+which uses the space character as a separator.
 
-[!code-csharp-interactive[split strings with repeated separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#2)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet2":::
 
-This behavior makes it easier for formats like comma separated values (CSV)
+This behavior makes it easier for formats like comma-separated values (CSV)
 files representing tabular data. Consecutive commas represent a blank column.
 
 You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to
@@ -39,22 +39,20 @@ the result sequence.
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use multiple separator characters.
 The following example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters, to <xref:System.String.Split%2A>.
-The loop at the bottom of the code displays each of the words in the returned array.  
+The loop at the bottom of the code displays each of the words in the returned array.
 
-[!code-csharp-interactive[split strings using multiple separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#3)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet3":::
 
 Consecutive instances of any separator produce the empty string in the output array:
 
-[!code-csharp-interactive[split strings using multiple consecutive separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#4)]
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet4":::
 
-<xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).  
-  
-[!code-csharp-interactive[split strings using strings as separators](../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs#5)]
+<xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).
 
-You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
+:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
 ## See also
 
-- [C# Programming Guide](../programming-guide/index.md)
+- [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)
-- [.NET Regular Expressions](../../standard/base-types/regular-expressions.md)
+- [.NET regular expressions](../../standard/base-types/regular-expressions.md)

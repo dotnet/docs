@@ -1,9 +1,9 @@
 ---
-title: "How to: Query LINQ to XML Using XPath (C#)"
+title: "How to query LINQ to XML using XPath (C#)"
 ms.date: 07/20/2015
 ms.assetid: ee5af263-4ab1-45e5-b792-33a3221b426d
 ---
-# How to: Query LINQ to XML Using XPath (C#)
+# How to query LINQ to XML using XPath (C#)
 This topic introduces the extension methods that enable you to query an XML tree by using XPath. For detailed information about using these extension methods, see <xref:System.Xml.XPath.Extensions?displayProperty=nameWithType>.  
   
  Unless you have a very specific reason for querying using XPath, such as extensive use of legacy code, using XPath with LINQ to XML is not recommended. XPath queries will not perform as well as [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
@@ -33,6 +33,3 @@ foreach (XElement el in list)
 <Child2>6</Child2>  
 ```  
   
-## See also
-
-- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

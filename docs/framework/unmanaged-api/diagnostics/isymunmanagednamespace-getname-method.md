@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 657bf91d-005a-4ea4-9298-04d1291c0bc3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedNamespace::GetName Method
 Gets the name of this namespace.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName(  
     [in]  ULONG32  cchName,  
     [out] ULONG32  *pcchName,  
@@ -49,4 +47,4 @@ HRESULT GetName(
   
 ## See also
 
-- [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)
+- [ISymUnmanagedNamespace Interface](isymunmanagednamespace-interface.md)

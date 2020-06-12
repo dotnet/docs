@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to use the try/catch block to catch exceptions
 
@@ -21,7 +19,7 @@ Place any code statements that might raise or throw an exception in a `try` bloc
 In the following example, a <xref:System.IO.StreamReader> opens a file called *data.txt* and retrieves a line from the file. Since the code might throw any of three exceptions, it's placed in a `try` block. Three `catch` blocks catch the exceptions and handle them by displaying the results to the console.
 
 [!code-csharp[CatchException#3](~/samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception2.cs#3)]
-[!code-vb[CatchException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]  
+[!code-vb[CatchException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]
 
 The Common Language Runtime (CLR) catches exceptions not handled by `catch` blocks. If an exception is caught by the CLR, one of the following results may occur depending on your CLR configuration:
 
@@ -34,5 +32,5 @@ The Common Language Runtime (CLR) catches exceptions not handled by `catch` bloc
 
 ## See also
 
-[Exceptions](index.md)  
-[Handling I/O errors in .NET](../io/handling-io-errors.md)
+- [Exceptions](index.md)
+- [Handling I/O errors in .NET](../io/handling-io-errors.md)

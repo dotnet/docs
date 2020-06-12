@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ddf9085c-7161-44bd-9609-cd2732b9009f
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ICorDebugModule2::ResolveAssembly Method
@@ -46,7 +44,7 @@ If the assembly is not already loaded when `ResolveAssembly` is called, an HRESU
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** CorDebug.idl, CorDebug.h
 

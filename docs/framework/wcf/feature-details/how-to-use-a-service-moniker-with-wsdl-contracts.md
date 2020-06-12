@@ -22,7 +22,7 @@ There are situations when you may want to have a completely self-contained COM I
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
-    ```  
+    ```vb
     ' Open the WSDL contract file and read it all into the wsdlContract string.  
     Const ForReading = 1  
     Set objFSO = CreateObject("Scripting.FileSystemObject")  
@@ -44,11 +44,11 @@ There are situations when you may want to have a completely self-contained COM I
     ```  
   
     > [!NOTE]
-    >  If the moniker is malformed or if the service is unavailable the call to `GetObject` will return an error saying "Invalid Syntax".  If you receive this error, make sure the moniker you are using is correct and the service is available.  
+    > If the moniker is malformed or if the service is unavailable the call to `GetObject` will return an error saying "Invalid Syntax".  If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
 7. Run the Visual Basic application. A message box will be displayed with the results of calling Subtract(145, 76.54).  
   
 ## See also
 
-- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+- [Getting Started](../samples/getting-started-sample.md)
+- [Integrating with COM Applications Overview](integrating-with-com-applications-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "-define (Visual Basic)"
+title: "-define"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "-d compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Defines conditional compiler constants.
   
 ## Syntax  
   
-```  
+```console  
 -define:["]symbol[=value][,symbol[=value]]["]  
-' -or-  
+```
+
+or
+
+```console  
 -d:["]symbol[=value][,symbol[=value]]["]  
 ```  
   
@@ -37,7 +41,7 @@ Defines conditional compiler constants.
   
  You can define multiple symbols with `-define` by using a comma to separate symbol definitions.  
   
-|To set /define in the Visual Studio integrated development environment|  
+|To set -define in the Visual Studio integrated development environment|  
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Click **Advanced**.<br />4.  Modify the value in the **Custom Constants** box.|  
   
@@ -48,7 +52,7 @@ Defines conditional compiler constants.
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
-- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [#If...Then...#Else Directives](../../language-reference/directives/if-then-else-directives.md)
+- [#Const Directive](../../language-reference/directives/const-directive.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

@@ -14,20 +14,18 @@ helpviewer_keywords:
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICeeFileGen Class
 Provides functionality for creating a native portable executable (PE) file. The interface will typically be used by compilers to generate their compiled output executable.  
   
 > [!NOTE]
->  `ICeeFileGen` supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
+> `ICeeFileGen` supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
  This interface has been deprecated and will be removed in a future release.  
   
 ## Syntax  
   
-```  
+```cpp  
 class ICeeFileGen {  
 public:  
     virtual HRESULT CreateCeeFile(HCEEFILE *ceeFile);  
@@ -145,7 +143,7 @@ public:
         HCEESECTION section, ULONG num, ULONG size, ULONG offset = 0);  
   
     virtual HRESULT EmitMetaDataEx (HCEEFILE ceeFile,  
-        IMetaDataEmit *emitter);   
+        IMetaDataEmit *emitter);
   
     virtual HRESULT EmitLibraryNameEx (HCEEFILE ceeFile,  
         IMetaDataEmit *emitter);  
@@ -231,7 +229,7 @@ public:
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  
   
@@ -239,4 +237,4 @@ public:
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

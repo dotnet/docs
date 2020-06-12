@@ -1,8 +1,8 @@
 ---
 title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
-ms.custom: seodec18
-ms.date: 05/09/2019
+ms.topic: reference
+ms.date: 07/31/2019
 ---
 # Machine learning glossary of important terms
 
@@ -22,9 +22,9 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 ## Calibration
 
-Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability.
 
-## Catalog 
+## Catalog
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
 
@@ -41,6 +41,7 @@ In [regression](#regression), an evaluation metric that indicates how well data 
 ## Data
 
 Data is central to any machine learning application. In ML.NET data is represented by <xref:Microsoft.ML.IDataView> objects. Data view objects:
+
 - are made up of columns and rows
 - are lazily evaluated, that is they only load data when an operation calls for it
 - contain a schema that defines the type, format and length of each column
@@ -49,7 +50,7 @@ Data is central to any machine learning application. In ML.NET data is represent
 
 A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator%601> interface.
 
-An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
+An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator%601.Fit%2A> is called. The result of <xref:Microsoft.ML.IEstimator%601.Fit%2A> is a [Transformer](#transformer).
 
 ## Extension method
 
@@ -103,6 +104,10 @@ A [classification](#classification) case where the [label](#label) is one out of
 
 A feature extraction scheme for text data: any sequence of N words turns into a [feature](#feature) value.
 
+## Normalization
+
+Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling)
+
 ## Numerical feature vector
 
 A [feature](#feature) vector consisting only of numerical values. This is similar to `double[]`.
@@ -124,7 +129,7 @@ In [classification](#classification), the recall for a class is the number of it
  Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
 - $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
+- $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
 
@@ -142,6 +147,10 @@ In [regression](#regression), an evaluation metric that is the sum of all square
 
 In [regression](#regression), an evaluation metric that is the square root of the average of the squares of the errors.
 
+## Scoring
+
+Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score may be a raw value, a probability, or a category.
+
 ## Supervised machine learning
 
 A subclass of machine learning in which a desired model predicts the label for yet-unseen data. Examples include classification, regression, and structured prediction. For more information, see the  [Supervised learning](https://en.wikipedia.org/wiki/Supervised_learning) article on Wikipedia.
@@ -154,7 +163,7 @@ The process of identifying a [model](#model) for a given training data set. For 
 
 An ML.NET class that implements the <xref:Microsoft.ML.ITransformer> interface.
 
-A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline. 
+A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline.
 
 ## Unsupervised machine learning
 

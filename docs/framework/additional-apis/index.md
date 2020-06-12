@@ -61,6 +61,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.HttpWebRequest.\_AutoRedirects Field](_autoredirects.md)
 * [System.Net.HttpWebRequest.\_CoreResponse Field](httpwebrequest__coreresponse.md)
 * [System.Net.HttpWebRequest.\_HttpResponse Field](_httpresponse.md)
+* [System.Net.Mime.MailBnfHelper class](system.net.mime.mailbnfhelper.md)
 * [System.Net.PooledStream.NetworkStream Property](system.net.pooledstream.networkstream.md)
 * [System.Net.RtcState class](system.net.rtcstate.md)
 * [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)

@@ -1,22 +1,22 @@
 ---
-title: WebHeaderCollection.AddInternal method (System.Net)
+title: ServicePointManager.CloseConnectionGroups method (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type: 
   - apiref
 api_name: 
-  - System.Net.WebHeaderCollection.AddInternal
+  - System.Net.ServicePointManager.CloseConnectionGroups
 api_location: 
   - System.dll
 api_type: 
   - Assembly
 ---
-# WebHeaderCollection.AddInternal method
+# ServicePointManager.CloseConnectionGroups method
 
-Quickly adds a new header with the specified name and value to the collection by bypassing checks.
+Iterates through all service points and closes connection groups that have the specified name.
 
 ```csharp
-internal void AddInternal(string name, string value)
+internal static void CloseConnectionGroups(string connectionGroupName)
 ```
 
 > [!WARNING]
@@ -26,13 +26,9 @@ internal void AddInternal(string name, string value)
 
 ## Parameters
 
-- `name` <xref:System.String>
+- `connectionGroupName` <xref:System.String>
 
-  The name of the header.
-
-- `value` <xref:System.String>
-
-  The value of the header.
+  The name of the connection group to close.
 
 ## Requirements
 

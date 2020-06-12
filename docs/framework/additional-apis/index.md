@@ -66,10 +66,11 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.PooledStream.NetworkStream Property](system.net.pooledstream.networkstream.md)
 * [System.Net.RtcState class](system.net.rtcstate.md)
 * [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)
-* 
+* [System.Net.ServicePointManager.CloseConnectionGroups method](system.net.servicepointmanager.closeconnectiongroups.md)
 * [System.Net.ServicePointManager.s\_ServicePointTable Field](s_servicepointtable.md)
 * [System.Net.TlsStream.m_Worker Field](system.net.tlsstream.m_worker.md)
 * [System.Net.Security.SslState.SslProtocol Property](system.net.security.sslstate.sslprotocol.md)
+* [System.Net.UnsafeNclNativeMethods class](system.net.unsafenclnativemethods.md)
 * [System.Net.WebHeaderCollection.AddInternal](system.net.webheadercollection.addinternal.md)
 * [System.ServiceModel.Channels.Message.BodyToString Method](system.servicemodel.channels.message.bodytostring.md)
 * [System.ServiceModel.Channels.Message.WriteStartHeaders Method](system.servicemodel.channels.message.writestartheaders.md)

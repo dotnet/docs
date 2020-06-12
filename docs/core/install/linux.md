@@ -24,6 +24,26 @@ The following versions of .NET Core are ❌ no longer supported. The downloads f
 
 These unsupported versions aren't detailed in the sections below and your mileage may vary if you try to install them.
 
+## Alpine
+
+There are no installers for Alpine. You must either use the [install script](linux-alpine.md#scripted-install) or follow the [manual install](linux-alpine.md#manual-install) instructions.
+
+The following table is a list of currently supported .NET Core releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
+
+- A ✔️ indicates that the version of Alpine or .NET Core is still supported.
+- A ❌ indicates that the version of Alpine or .NET Core isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+
+| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+|-----------------------------|---------------|---------------|----------------|
+| ✔️ [3.12](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.11](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.10](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.9](linux-alpine.md)   | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [3.8](linux-alpine.md)   | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+
+For more information, see [Install .NET Core on Alpine](linux-alpine.md).
+
 ## CentOS
 
 CentOS 7 uses Yum as a package manager and CentOS 8 uses DNF.

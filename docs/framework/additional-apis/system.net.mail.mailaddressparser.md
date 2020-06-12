@@ -39,7 +39,7 @@ internal static MailAddress ParseAddress(string data)
 
 The string that contains an email address to be parsed.
 
-### Returns
+### Return value
 
 <xref:System.Net.Mail.MailAddress>
 

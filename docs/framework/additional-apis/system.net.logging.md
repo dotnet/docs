@@ -19,7 +19,7 @@ api_type:
 ---
 # Logging class
 
-
+Provides trace logging functionality.
 
 ```csharp
 internal class Logging

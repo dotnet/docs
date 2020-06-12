@@ -35,7 +35,7 @@ internal static string Get(int code)
 
 ### Parameters
 
-`code` <xref:System.Int32>\
+`code` <xref:System.Int32>
 
 The HTTP status code, for example, `404`.
 

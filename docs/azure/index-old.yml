@@ -1,10 +1,10 @@
-### YamlMime:Hub 
+### YamlMime:Hub
 
-title: Azure for .NET developers 
-summary: Find the information you need to use .NET on Azure 
+title: Azure for .NET developers
+summary: Find the information you need to use .NET on Azure
 brand: dotnet
 
-metadata: 
+metadata:
   title: Azure for .NET developers
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
@@ -14,14 +14,14 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
   items:
-    - itemType: quickstart 
+    - itemType: quickstart
       title: Deploy an ASP.NET web app
       url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
-    - itemType: quickstart 
-      title: Build a serverless function 
+    - itemType: quickstart
+      title: Build a serverless function
       url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-    - itemType: quickstart 
-      title: ASP.NET Core and Docker 
+    - itemType: quickstart
+      title: ASP.NET Core and Docker
       url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
     - itemType: learn
       title: Azure fundamentals
@@ -32,7 +32,7 @@ highlightedContent:
     - itemType: tutorial
       title: Full stack authentication end-to-end in App Service
       url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
-    - itemType: learn 
+    - itemType: learn
       title: Secure custom APIs with Microsoft Identity
       url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
     - itemType: download
@@ -160,7 +160,7 @@ tools:
   items:
     - imageSrc: https://www.nuget.org/Content/gallery/img/default-package-icon.svg
       title: "NuGet packages"
-      url: https://www.nuget.org/packages?q=windowsazureofficial
+      url: https://www.nuget.org/profiles/azure-sdk
     - imageSrc: https://docs.microsoft.com/en-us/media/common/i_reference.svg
       title: "Documentation"
       url: ./sdk/index.yml
@@ -169,8 +169,8 @@ tools:
       url: ./sdk/tools.md
 
 additionalContent:
-  sections: 
-    - title: .NET and Azure community resources 
+  sections:
+    - title: .NET and Azure community resources
       items:
         - title: .NET
           links:

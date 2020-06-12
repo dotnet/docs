@@ -1,147 +1,141 @@
 ### YamlMime:Landing
 
-title: Azure for Python Developers
+title: Azure for .NET Developers
 summary: |
-  Azure offers extensive services for Python developers including app hosting, storage, open-source databases like mySQL and PostgreSQL, and data science, machine learning, and AI. The Azure libraries (SDK) for Python helps developers be highly productive when using these services.
+  Azure offers extensive services for .NET developers including app hosting, storage, open-source databases, and data science, machine learning, and AI. The Azure .NET SDK helps developers be highly productive when using these services.
 
 metadata:
-  title: Azure for Python developers
+  title: Azure for .NET developers
   description: Get started developing with Python and Azure.
-  author: kraigb
-  ms.author: kraigb
-  ms.date: 05/30/2020
+  ms.date: 06/12/2020
   ms.topic: landing-page
   ms.collection: collection
   ms.technology: azure
   ms.service: multiple
-  ms.devlang: python
+  ms.prod: azure-dotnet
 
 landingContent:
-  - title: Get started with Python on Azure
+  - title: Get started with .NET on Azure
     linkLists:
       - linkListType: overview
         links:
-          - text: Cloud development with Azure
-            url: cloud-development-overview.md
+          - text: Get started with Azure and .NET
+            url: intro.md
+      - linkListType: get-started
+        links:
+          - text: Developer tools
+            url: sdk/tools.md
+
+  - title: Build web apps
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Host a web app with Azure App Service
+            url: https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/
+          - text: Publish and manage your APIs with Azure API Management
+            url: https://docs.microsoft.com/learn/modules/publish-manage-apis-with-azure-api-management/
+      - linkListType: tutorial
+        links:
+          - text: ASP.NET Core web app with App Service and Azure SQL Database
+            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+          - text: Managed identity with ASP.NET and Azure SQL Database
+            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-connect-msi
+          - text: Web API with CORS in Azure App Service
+            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api
+
+  - title: Build cloud native apps
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Run and debug a microservice in Kubernetes
+            url: https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio
+      - linkListType: learn
+        links: 
+          - text: Create and deploy a cloud-native ASP.NET Core microservice
+            url: /learn/modules/microservices-aspnet-core/
       - linkListType: how-to-guide
         links:
-          - text: Set up your local dev environment
-            url: configure-local-development-environment.md
-      - linkListType: overview
-        links:
-          - text: Get to know the Azure libraries for Python
-            url: azure-sdk-overview.md
+          - text: Deploy a .NET Core app to Azure Container Registry
+            url: https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker
       - linkListType: tutorial
         links:
-          - text: Provision Azure Storage with Python
-            url: azure-sdk-example-storage.md
-          - text: Use Azure Storage from Python code
-            url: azure-sdk-example-storage-use.md
-      - linkListType: reference
-        links:
-          - text: Azure libraries API reference for Python
-            url: sdk-library-api-reference.md
-  - title: Get started with developer tools
+          - text: ASP.NET Core app with Visual Studio container tools
+            url: https://docs.microsoft.com/visualstudio/containers/container-tools
+          - text: Deploy and debug multiple containers in AKS
+            url: https://docs.microsoft.com/azure/dev-spaces/multi-service-netcore-visualstudio
+          - text: Dynamic configuration and feature flags using Azure App Config
+            url: https://docs.microsoft.com/azure/azure-app-configuration/use-feature-flags-dotnet-core
+
+  - title: Work with storage & data
     linkLists:
       - linkListType: overview
         links:
-          - text: Python in Visual Studio Code
-            url: https://code.visualstudio.com/docs/languages/python  
+          - text: Choose the right data storage option
+            url: /azure/architecture/guide/technology-choices/data-store-overview
+      - linkListType: quickstart
+        links:
+          - text: TODO - SQL quickstart
+            url: /
+          - text: Use .NET to query Azure PostgreSQL
+            url: /azure/postgresql/connect-csharp
+      - linkListType: learn
+        links:
+          - text: Develop and configure an ASP.NET application that queries an Azure SQL database
+            url: /learn/modules/develop-app-that-queries-azure-sql/
+          - text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
+            url: /learn/modules/build-cosmos-db-app-with-vscode/
+          - text: Store application data with Azure Blob storage
+            url: /learn/modules/store-app-data-with-azure-blob-storage/
+          - text: Persist and retrieve relational data with Entity Framework Core
+            url: /learn/modules/persist-data-ef-core/
       - linkListType: tutorial
         links:
-          - text: Create a serverless Python app in Azure Functions with Visual Studio Code
-            url: tutorial-vs-code-serverless-python-01.md
-          - text: Create and deploy a web app to Azure with Visual Studio Code
-            url: tutorial-deploy-app-service-on-linux-01.md
-          - text: Create and deploy containers to Azure with Visual Studio Code
-            url: tutorial-deploy-containers-01.md
-      - linkListType: download
-        links:
-          - text: Azure extensions for Visual Studio Code
-            url: https://code.visualstudio.com/docs/azure/extensions
-          - text: Install the Azure CLI
-            url: /cli/azure/install-azure-cli?view=azure-cli-latest
-          - text: Run Linux applications natively on Windows 10 with a range of distributions
-            url: /windows/wsl/install-win10
-  - title: Host applications in Azure
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Create a serverless function for HTTP requests with Visual Studio Code
-            url: tutorial-vs-code-serverless-python-01.md
-          - text: Create a serverless function for HTTP requests with the Azure CLI
-            url: /azure/azure-functions/functions-create-first-azure-function-azure-cli?pivots=programming-language-python
-          - text: Create a Python app in Azure App Service on Linux
-            url: /azure/app-service/containers/quickstart-python
-          - text: Deploy containerized apps in Azure Kubernetes Service
-            url: /azure/aks/kubernetes-walkthrough
-          - text: Deploy a container instance in Azure using the Azure CLI
-            url: /azure/container-instances/container-instances-quickstart
-          - text: Build and deploy a Python app with Azure Pipelines
-            url: /azure/devops/pipelines/languages/python-webapp
-          - text: Add sign-in with Microsoft to a Python web application
-            url: /azure/active-directory/develop/quickstart-v2-python-webapp
-      - linkListType: overview
-        links:
-          - text: Introduction to Azure App Service on Linux
-            url: /azure/app-service/containers/app-service-linux-intro
-  - title: Services for Data Science, AI, and Machine Learning
+          - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
+            url: https://docs.microsoft.com/azure/postgresql/connect-csharp
+                      
+  - title: Authentication and security
     linkLists:
       - linkListType: overview
         links:
-          - text: About Azure Machine Learning services
-            url: /azure/machine-learning/service
-          - text: About Azure Cognitive Services
-            url: /azure/cognitive-services
-      - linkListType: quickstart
+          - text: Microsoft identity platform (Azure AD)
+            url: https://docs.microsoft.com/azure/active-directory/develop/
+      - linkListType: tutorial
         links:
-          - text: Use Azure Machine Learning tools in a Jupyter notebook
-            url: /azure/notebooks/use-machine-learning-services-jupyter-notebooks
-          - text: Use a managed Azure HDInsights cluster for data processing
-            url: /azure/hdinsight/hadoop/apache-hadoop-linux-create-cluster-get-started-portal
-          - text: Create an Azure virtual machine for data science tasks
-            url: /azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro
-          - text: Use Jupyter notebooks in Azure Notebooks
-            url: https://notebooks.azure.com/
-  - title: Storage and database solutions on Azure
+          - text: Use Azure Key Vault with ASP.NET Core
+            url: https://docs.microsoft.com/azure/key-vault/tutorial-net-create-vault-azure-web-app
+          - text: Integrate Azure AD B2C with a web API
+            url: https://docs.microsoft.com/azure/active-directory-b2c/tutorial-single-page-app-webapi
+          - text: Add sign-in to Microsoft to an ASP.NET web app
+            url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
+
+  - title: Migration
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
-          - text: About storage solutions on Azure
-            url: /azure/storage/common/storage-introduction
-          - text: Scalable NoSQL with Azure Cosmos DB
-            url: /azure/cosmos-db/introduction
-      - linkListType: quickstart
-        links:     
-          - text: Manage blobs in Azure Storage from Python
-            url: /azure/storage/blobs/storage-quickstart-blobs-python
-          - text: Create a PostgreSQL instance on Azure and connect to it using Python
-            url: /azure/postgresql/quickstart-create-server-database-portal
-          - text: Create a MySQL instance on Azure and connect to it using Python.
-            url: /azure/mysql/quickstart-create-mysql-server-database-using-azure-portal
-          - text: Use SQL queries on an Azure Cosmos DB account from Python
-            url: /azure/cosmos-db/create-sql-api-python
-          - text: Set up a managed SQL server in Azure
-            url: /azure/sql-database/sql-database-connect-query-python
-  - title: Messaging on Azure
+          - text: Choose an Azure hosting option
+            url: ./migration/choose.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate a .NET web app or service to Azure App Service
+            url: ./migration/app-service.md
+          - text: Migrate an ASP.NET app to an Azure VM
+            url: ./migration/vm.md
+          - text: Migrate a SQL Server database to Azure
+            url: ./migration/sql.md
+
+  - title: .NET architectural guides
     linkLists:
-      - linkListType: overview
+      - linkListType: learn
         links:
-          - text: Storing messages with Azure queues
-            url: /azure/storage/queues/storage-queues-introduction
-          - text: Inter-application messaging with Azure Service Bus          
-            url: /azure/service-bus-messaging
-          - text: Streaming big data with Event Hubs
-            url: /azure/event-hubs/event-hubs-about
-          - text: Building event-based applications with Event Grid
-            url: /azure/event-grid/overview
-      - linkListType: quickstart
-        links:     
-          - text: Use Azure Queue Storage
-            url: /azure/storage/queues/storage-python-how-to-use-queue-storage
-          - text: Use Azure Service Bus queues
-            url: /azure/service-bus-messaging/service-bus-python-how-to-use-queues
-          - text: Ingest data in real-time through Azure Event Hubs
-            url: /azure/event-hubs/event-hubs-python
-          - text: Route custom events with Event Grid
-            url: /azure/event-grid/custom-event-quickstart
+          - text: Architect modern applications in Azure
+            url: https://docs.microsoft.com/learn/paths/architect-modern-apps/
+      - linkListType: architecture
+        links:
+          - text: ".NET Microservices: Architecture for containerized .NET apps"
+            url: https://docs.microsoft.com/dotnet/architecture/microservices/
+          - text: Architect modern web applications with ASP.NET Core and Azure
+            url: https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/
+          - text: Containerized Docker application lifecycle with Microsoft platform and tools
+            url: https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/
+          - text: Modernize existing .NET applications with Azure cloud and Windows containers
+            url: https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/

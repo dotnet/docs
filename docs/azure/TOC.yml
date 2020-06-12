@@ -1,7 +1,5 @@
 - name: Azure for .NET developers
   href: index.yml
-- name: Introduction to Azure and .NET
-  href: intro.md
 - name: Migrate to Azure
   expanded: true
   items:
@@ -15,21 +13,21 @@
       href: ./migration/sql.md
 - name: Cloud development with Azure
   items:
-    - name: What is Azure?
-      href: cloud-development-overview.md
+    - name: Introduction to Azure and .NET
+      href: intro.md
     - name: Provision, access, and manage resources
       href: cloud-development-provisioning.md
     - name: The Azure development flow
       href: cloud-development-flow.md
-- name: Get started on Azure with Python  
+- name: Get started on Azure with Python
   items:
     - name: Overview of Azure libraries
       href: azure-sdk-overview.md
     - name: Set up your dev environment
       href: configure-local-development-environment.md
-    - name: Library usage patterns    
-      href: azure-sdk-library-usage-patterns.md   
-    - name: Examples      
+    - name: Library usage patterns
+      href: azure-sdk-library-usage-patterns.md
+    - name: Examples
       items:
       - name: "Provision a resource group"
         href: azure-sdk-example-resource-group.md
@@ -44,7 +42,7 @@
       - name: "Provision a virtual machine"
         href: azure-sdk-example-virtual-machines.md
 - name: Explore specific Azure services
-  items: 
+  items:
   - name: App hosting
     href: quickstarts-app-hosting.md
   - name: Data solutions
@@ -56,7 +54,7 @@
   - name: AI (Cognitive Services)
     href: quickstarts-cognitive-services.md
   - name: Messaging & IoT
-    href: quickstarts-messaging-iot.md 
+    href: quickstarts-messaging-iot.md
   - name: Other services
     href: quickstarts-other-services.md
 - name: Scenario-specific tutorials
@@ -108,7 +106,7 @@
         - name: 8 Clean up resources
           href: tutorial-vs-code-serverless-python-08.md
 - name: How-to guides
-  items: 
+  items:
   - name: Install library packages
     href: azure-sdk-install.md
   - name: Authenticate apps with Azure
@@ -124,7 +122,7 @@
   - name: Multi-cloud development
     href: azure-sdk-multi-cloud.md
 - name: Samples
-  items: 
+  items:
   - name: Web apps & serverless
     href: https://docs.microsoft.com/samples/browse/?languages=python&products=azure-functions%2Cazure-app-service%2Cazure-logic-apps
   - name: Databases
@@ -141,7 +139,7 @@
     href: https://docs.microsoft.com/samples/browse/?languages=python&products=azure-iot-hub%2Cazure-iot-edge%2Cazure-iot-central
   - name: Data science
     items:
-      - name: Machine Learning Service    
+      - name: Machine Learning Service
         href: https://docs.microsoft.com/samples/browse/?languages=python&products=azure-machine-learning-service
       - name: Databricks
         href: https://docs.microsoft.com/samples/browse/?languages=python&products=azure-databricks
@@ -155,4 +153,3 @@
     href: https://docs.microsoft.com/samples/browse/?languages=python
 - name: Library API reference
   href: sdk-library-api-reference.md
-

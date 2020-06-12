@@ -532,7 +532,7 @@
       - name: _HttpResponse field
         href: additional-apis/_httpresponse.md
     - name: MailAddressParser class
-      href: system.net.mail.mailaddressparser.md
+      href: additional-apis/system.net.mail.mailaddressparser.md
     - name: PooledStream.NetworkStream property
       href: additional-apis/system.net.pooledstream.networkstream.md
     - name: QuotedPairReader class
@@ -547,6 +547,8 @@
         href: additional-apis/s_servicepointtable.md
     - name: TlsStream.m_Worker field
       href: additional-apis/system.net.tlsstream.m_worker.md
+    - name: WebHeaderCollection.AddInternal method
+      href: additional-apis/system.net.webheadercollection.addinternal.md
   - name: System.Net.Security
     items:
     - name: SslState.SslProtocol property

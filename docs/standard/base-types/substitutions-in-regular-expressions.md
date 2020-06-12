@@ -1,6 +1,6 @@
 ---
 title: "Substitutions in Regular Expressions"
-description: Learn to use substitutions with regular expressions in .NET. Substitutions are language elements recognized only within replacement patterns.
+description: Make substitutions to replace matched text using regular expressions in .NET. Substitutions are language elements recognized only within replacement patterns.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

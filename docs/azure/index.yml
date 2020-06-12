@@ -105,6 +105,21 @@ landingContent:
           - text: Dynamic configuration and feature flags using Azure App Config
             url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
 
+  - title: Authentication and security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft identity platform (Azure AD)
+            url: /azure/active-directory/develop/
+      - linkListType: tutorial
+        links:
+          - text: Use Azure Key Vault with ASP.NET Core
+            url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
+          - text: Integrate Azure AD B2C with a web API
+            url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
+          - text: Add sign-in to Microsoft to an ASP.NET web app
+            url: /azure/active-directory/develop/tutorial-v2-asp-webapp
+
   - title: Work with storage & data
     linkLists:
       - linkListType: overview
@@ -131,21 +146,6 @@ landingContent:
         links:
           - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
             url: /azure/postgresql/connect-csharp
-                      
-  - title: Authentication and security
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Microsoft identity platform (Azure AD)
-            url: /azure/active-directory/develop/
-      - linkListType: tutorial
-        links:
-          - text: Use Azure Key Vault with ASP.NET Core
-            url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
-          - text: Integrate Azure AD B2C with a web API
-            url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
-          - text: Add sign-in to Microsoft to an ASP.NET web app
-            url: /azure/active-directory/develop/tutorial-v2-asp-webapp
 
   - title: .NET architectural guides
     linkLists:

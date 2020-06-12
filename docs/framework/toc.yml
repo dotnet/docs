@@ -504,6 +504,8 @@
       href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
   - name: System.Net
     items:
+    - name: ComNetOS class
+      href: additional-apis/system.net.comnetos.md
     - name: Connection class
       href: additional-apis/connection.md
       items:
@@ -523,6 +525,10 @@
         href: additional-apis/coreresponsedata_m_responseheaders.md
       - name: m_StatusCode field
         href: additional-apis/coreresponsedata_m_statuscode.md
+    - name: ExceptionHelper class
+      href: additional-apis/system.net.exceptionhelper.md
+    - name: HttpStatusDescription class
+      href: additional-apis/system.net.httpstatusdescription.md
     - name: HttpWebRequest class
       items:
       - name: _AutoRedirects field
@@ -531,6 +537,8 @@
         href: additional-apis/httpwebrequest__coreresponse.md
       - name: _HttpResponse field
         href: additional-apis/_httpresponse.md
+    - name: Logging class
+      href: additional-apis/system.net.logging.md
     - name: PooledStream.NetworkStream property
       href: additional-apis/system.net.pooledstream.networkstream.md
     - name: RtcState class

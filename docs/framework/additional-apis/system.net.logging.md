@@ -32,7 +32,7 @@ internal class Logging
 
 ## Associate method
 
-Indicates that two objects are used with one another.
+Logs information that two objects are associated with each other.
 
 ```csharp
 internal static void Associate(TraceSource traceSource, object objA, object objB)
@@ -42,9 +42,15 @@ internal static void Associate(TraceSource traceSource, object objA, object objB
 
 - `traceSource` <xref:System.Diagnostics.TraceSource>
 
+  The trace source to log the event to.
+
 - `objA` <xref:System.Object>
 
+  The object to associate with `objB`.
+
 - `objB` <xref:System.Object>
+
+  The object to associate with `objA`.
 
 ## Enter method
 

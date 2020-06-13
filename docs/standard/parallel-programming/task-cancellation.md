@@ -1,5 +1,6 @@
 ---
 title: "Task Cancellation"
+description: Understand task cancellation, which is supported in the Task and Task<TResult> classes through the use of cancellation tokens in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

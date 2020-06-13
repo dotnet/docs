@@ -1,5 +1,6 @@
 ---
 title: "Reading and Writing XML Schemas"
+description: Read and write XML Schema definition language (XSD) schemas from files or other sources in .NET, using the Schema Object Model (SOM) API.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

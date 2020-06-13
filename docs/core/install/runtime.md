@@ -90,7 +90,7 @@ set DOTNET_MULTILEVEL_LOOKUP=0
 
 ::: zone-end
 
-::: zone pivot="os-linux,os-macos"
+::: zone pivot="os-macos"
 
 ## Install with bash automation
 

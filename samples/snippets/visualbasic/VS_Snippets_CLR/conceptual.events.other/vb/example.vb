@@ -124,67 +124,67 @@ Namespace EventSample
         End Sub
     End Class
 
-   ' The WakeMeUp class has a method AlarmRang that handles the
-   ' alarm event.
-   '
-   Public Class WakeMeUp
-      Public Sub AlarmRang(sender As Object, e As AlarmEventArgs)
-         
-         Console.WriteLine((e.AlarmText + ControlChars.Cr))
-         
-         If Not e.SnoozePressed Then
-            If e.NumRings Mod 10 = 0 Then
-               Console.WriteLine(" Let alarm ring? Enter Y")
-               Console.WriteLine(" Press Snooze? Enter N")
-               Console.WriteLine(" Stop Alarm? Enter Q")
-               Dim input As String = Console.ReadLine()
-               
-               If input.Equals("Y") Or input.Equals("y") Then
-                  Return
-               
-               Else
-                  If input.Equals("N") Or input.Equals("n") Then
-                     CType(sender, AlarmClock).SnoozePressed = True
-                     Return
-                  Else
-                     CType(sender, AlarmClock).Stop = True
-                     Return
-                  End If
-               End If
-            End If
-         Else
-            Console.WriteLine(" Let alarm ring? Enter Y")
-            Console.WriteLine(" Stop Alarm? Enter Q")
-            Dim input As String = Console.ReadLine()
-            If input.Equals("Y") Or input.Equals("y") Then
-               Return
+    ' The WakeMeUp class has a method AlarmRang that handles the
+    ' alarm event.
+    '
+    Public Class WakeMeUp
+        Public Sub AlarmRang(sender As Object, e As AlarmEventArgs)
+
+            Console.WriteLine((e.AlarmText + ControlChars.Cr))
+
+            If Not e.SnoozePressed Then
+                If e.NumRings Mod 10 = 0 Then
+                    Console.WriteLine(" Let alarm ring? Enter Y")
+                    Console.WriteLine(" Press Snooze? Enter N")
+                    Console.WriteLine(" Stop Alarm? Enter Q")
+                    Dim input As String = Console.ReadLine()
+
+                    If input.Equals("Y") Or input.Equals("y") Then
+                        Return
+
+                    Else
+                        If input.Equals("N") Or input.Equals("n") Then
+                            CType(sender, AlarmClock).SnoozePressed = True
+                            Return
+                        Else
+                            CType(sender, AlarmClock).Stop = True
+                            Return
+                        End If
+                    End If
+                End If
             Else
-               CType(sender, AlarmClock).Stop = True
-               Return
+                Console.WriteLine(" Let alarm ring? Enter Y")
+                Console.WriteLine(" Stop Alarm? Enter Q")
+                Dim input As String = Console.ReadLine()
+                If input.Equals("Y") Or input.Equals("y") Then
+                    Return
+                Else
+                    CType(sender, AlarmClock).Stop = True
+                    Return
+                End If
             End If
-         End If
-      End Sub
-   End Class
-   
-   ' The driver class that hooks up the event handling method of
-   ' WakeMeUp to the alarm event of an Alarm object using a delegate.
-   ' In a forms-based application, the driver class is the
-   ' form.
-   '
-   Public Class AlarmDriver
-      Public Shared Sub Main()
-         ' Instantiates the event receiver.
-         Dim w As New WakeMeUp()
-         
-         ' Instantiates the event source.
-         Dim clock As New AlarmClock()
-         
-         ' Wires the AlarmRang method to the Alarm event.
-         AddHandler clock.Alarm, AddressOf w.AlarmRang
-         
-         clock.Start()
-      End Sub
-   End Class
+        End Sub
+    End Class
+
+    ' The driver class that hooks up the event handling method of
+    ' WakeMeUp to the alarm event of an Alarm object using a delegate.
+    ' In a forms-based application, the driver class is the
+    ' form.
+    '
+    Public Class AlarmDriver
+        Public Shared Sub Main()
+            ' Instantiates the event receiver.
+            Dim w As New WakeMeUp()
+
+            ' Instantiates the event source.
+            Dim clock As New AlarmClock()
+
+            ' Wires the AlarmRang method to the Alarm event.
+            AddHandler clock.Alarm, AddressOf w.AlarmRang
+
+            clock.Start()
+        End Sub
+    End Class
 End Namespace
 
 ' </Snippet1>

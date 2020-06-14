@@ -45,21 +45,21 @@ Public Class BinReadWrite
 
         Dim i As Integer = 0
         For Each b As Byte In rawbytes
-             Select b
-                 Case 254
-                     Console.Write("-%- ")
+            Select b
+                Case 254
+                    Console.Write("-%- ")
 
-                 Case 255
-                     Console.Write("-*- ")
+                Case 255
+                    Console.Write("-*- ")
 
-                 Case Else
-                     Console.Write("{0:d3} ", b)
-             End Select
-             i = i + 1
-             If i = 16 Then
-                 Console.WriteLine()
-                 i = 0
-             End If
+                Case Else
+                    Console.Write("{0:d3} ", b)
+            End Select
+            i = i + 1
+            If i = 16 Then
+                Console.WriteLine()
+                i = 0
+            End If
         Next b
         fs.Close()
     End Sub

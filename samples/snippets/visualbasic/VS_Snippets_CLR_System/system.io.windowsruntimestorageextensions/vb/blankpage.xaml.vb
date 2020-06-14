@@ -7,7 +7,7 @@ Imports Windows.Storage
 NotInheritable Public Class BlankPage
     Inherits Page
 
-    
+
 
     Private Async Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
         Dim contents As StringBuilder = New StringBuilder()

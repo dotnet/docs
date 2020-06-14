@@ -11,9 +11,9 @@ Public Module Example
 
         ' Create a timer that invokes CheckStatus after one second, 
         ' and every 1/4 second thereafter.
-        Console.WriteLine("{0:h:mm:ss.fff} Creating timer." & vbCrLf, 
+        Console.WriteLine("{0:h:mm:ss.fff} Creating timer." & vbCrLf,
                           DateTime.Now)
-        Dim stateTimer As New Timer(AddressOf statusChecker.CheckStatus, 
+        Dim stateTimer As New Timer(AddressOf statusChecker.CheckStatus,
                                     autoEvent, 1000, 250)
 
         ' When autoEvent signals, change the period to every half second.
@@ -29,10 +29,10 @@ Public Module Example
 End Module
 
 Public Class StatusChecker
-    Dim invokeCount, maxCount As Integer 
+    Dim invokeCount, maxCount As Integer
 
     Sub New(count As Integer)
-        invokeCount  = 0
+        invokeCount = 0
         maxCount = count
     End Sub
 
@@ -40,7 +40,7 @@ Public Class StatusChecker
     Sub CheckStatus(stateInfo As Object)
         Dim autoEvent As AutoResetEvent = DirectCast(stateInfo, AutoResetEvent)
         invokeCount += 1
-        Console.WriteLine("{0:h:mm:ss.fff} Checking status {1,2}.", 
+        Console.WriteLine("{0:h:mm:ss.fff} Checking status {1,2}.",
                           DateTime.Now, invokeCount)
         If invokeCount = maxCount Then
             ' Reset the counter and signal the waiting thread.

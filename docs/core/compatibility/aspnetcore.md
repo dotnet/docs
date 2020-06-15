@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 04/29/2020
+ms.date: 06/11/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -44,6 +44,7 @@ The following breaking changes are documented on this page:
 - [Identity: SignInAsync throws exception for unauthenticated identity](#identity-signinasync-throws-exception-for-unauthenticated-identity)
 - [Identity: SignInManager constructor accepts new parameter](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Identity: UI uses static web assets feature](#identity-ui-uses-static-web-assets-feature)
+- [Kestrel: Configuration changes at run time detected by default](#kestrel-configuration-changes-at-run-time-detected-by-default)
 - [Kestrel: Connection adapters removed](#kestrel-connection-adapters-removed)
 - [Kestrel: Empty HTTPS assembly removed](#kestrel-empty-https-assembly-removed)
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
@@ -92,7 +93,11 @@ The following breaking changes are documented on this page:
 
 ***
 
-[!INCLUDE [Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
+[!INCLUDE[Kestrel: Configuration changes at run time detected by default](~/includes/core-changes/aspnetcore/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md)]
+
+***
+
+[!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
 
 ***
 

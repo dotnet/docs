@@ -25,5 +25,3 @@ dotnet add package coverlet.collector
 ```
 
 The [coverlet.collector](https://www.nuget.org/packages/coverlet.collector) NuGet package is added to the project.
-
-## 

@@ -35,11 +35,11 @@ End Class
 Public Structure MyColor
     Public Red As Short
     Public Green As Short
-	Public Blue As Short
-	Public Alpha As Short
+    Public Blue As Short
+    Public Alpha As Short
 
     ' Make the view brighter.
-	Public Sub Brighten(ByVal value As Short)
+    Public Sub Brighten(ByVal value As Short)
         Red = CType(Math.Min(Short.MaxValue, (CType(Red, Integer) + value)), Short)
         Green = CType(Math.Min(Short.MaxValue, (CType(Green, Integer) + value)), Short)
         Blue = CType(Math.Min(Short.MaxValue, (CType(Blue, Integer) + value)), Short)

@@ -5,26 +5,26 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim input As String = "This is the first sentence. Is it the beginning " + _
-                            "of a literary masterpiece? I think not. Instead, " + _
-                            "it is a nonsensical paragraph."
-      Dim pattern As String = "\b\(?(?n:(?>\w+),?\s?)+[\.!?]\)?"
+    Public Sub Main()
+        Dim input As String = "This is the first sentence. Is it the beginning " + _
+                              "of a literary masterpiece? I think not. Instead, " + _
+                              "it is a nonsensical paragraph."
+        Dim pattern As String = "\b\(?(?n:(?>\w+),?\s?)+[\.!?]\)?"
 
-      For Each match As Match In Regex.Matches(input, pattern)
-         Console.WriteLine("The match: {0}", match.Value)
-         Dim groupCtr As Integer = 0
-         For Each group As Group In match.Groups
-            Console.WriteLine("   Group {0}: {1}", groupCtr, group.Value)
-            groupCtr += 1
-            Dim captureCtr As Integer = 0
-            For Each capture As Capture In group.Captures
-               Console.WriteLine("      Capture {0}: {1}", captureCtr, capture.Value)
-               captureCtr += 1
+        For Each match As Match In Regex.Matches(input, pattern)
+            Console.WriteLine("The match: {0}", match.Value)
+            Dim groupCtr As Integer = 0
+            For Each group As Group In match.Groups
+                Console.WriteLine("   Group {0}: {1}", groupCtr, group.Value)
+                groupCtr += 1
+                Dim captureCtr As Integer = 0
+                For Each capture As Capture In group.Captures
+                    Console.WriteLine("      Capture {0}: {1}", captureCtr, capture.Value)
+                    captureCtr += 1
+                Next
             Next
-         Next
-      Next
-   End Sub
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       The match: This is the first sentence.

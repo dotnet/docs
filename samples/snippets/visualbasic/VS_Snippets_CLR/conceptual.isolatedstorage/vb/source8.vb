@@ -29,7 +29,7 @@ Public class FindingExistingFilesAndDirectories
 
         GetAllDirectories("*", isoStore)
         For Each directory As String In directoryList
-           Console.WriteLine(directory)
+            Console.WriteLine(directory)
         Next
 
         Console.WriteLine()

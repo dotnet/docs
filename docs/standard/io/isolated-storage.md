@@ -1,5 +1,6 @@
 ---
 title: "Isolated Storage"
+description: Explore isolated storage, which is a data storage mechanism that provides isolation & safety by defining standardized ways of associating code with saved data.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:

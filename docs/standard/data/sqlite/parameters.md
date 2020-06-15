@@ -19,7 +19,7 @@ Use the <xref:Microsoft.Data.Sqlite.SqliteParameter.Size> property to truncate T
 
 ```csharp
 // Truncate name to 30 characters
-command.Parameters.AddWithValue("$name", name).Length = 30;
+command.Parameters.AddWithValue("$name", name).Size = 30;
 ```
 
 ## Alternative types

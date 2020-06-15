@@ -1,5 +1,6 @@
 ---
 title: "Instantiating a DateTimeOffset object"
+description: Read how to instantiate (make an instance of) a DateTimeOffset object in .NET. Learn about date & time literals, constructors, implicit type conversion, & more.
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 dev_langs: 

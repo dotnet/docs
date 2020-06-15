@@ -8,9 +8,9 @@ ms.date: 06/15/2020
 
 # Use code coverage for unit testing
 
-Unit tests help to ensure functionality, and provide a means of verification for refactoring efforts. Code coverage is a measurement of the amount of code that is ran as part of a unit test run - either lines, branches, or methods. As an example, if you have a simple application with only two conditional branches of code (_branch a_, and _branch b_), a unit test that verifies conditional _branch a_ will report branch code coverage of 50%.
+Unit tests help to ensure functionality, and provide a means of verification for refactoring efforts. Code coverage is a measurement of the amount of code that is run by unit tests - either lines, branches, or methods. As an example, if you have a simple application with only two conditional branches of code (_branch a_, and _branch b_), a unit test that verifies conditional _branch a_ will report branch code coverage of 50%.
 
-This article discusses the usage of code coverage for unit testing with coverlet, and it is [open source project on GitHub](https://github.com/coverlet-coverage/coverlet). Coverlet is a cross platform code coverage framework for .NET. Additionally, [coverlet](https://dotnetfoundation.org/projects/coverlet) is part of the .NET foundation.
+This article discusses the usage of code coverage for unit testing with coverlet. Coverlet is an [open source project on GitHub](https://github.com/coverlet-coverage/coverlet) that provides a cross platform code coverage framework for .NET. [Coverlet](https://dotnetfoundation.org/projects/coverlet) is part of the .NET foundation.
 
 ## Tooling
 
@@ -31,13 +31,13 @@ dotnet test --collect:"XPlat Code Coverage"
 ```
 
 > [!IMPORTANT]
-> The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from coverlet. This name is required, but is case insensitive.
+> The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from coverlet. This name is required but is case insensitive.
 
 As part of the `dotnet test` run, a resulting *TestResults/{test-run-guid}/coverage.cobertura.xml* file is output. The XML file contains the results.
 
 #### MSBuild
 
-As an alternative, you could use the MSBuild package. From the .NET Core CLI at the directory level of the *.csproj* file, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
+As an alternative, you could use the MSBuild package. From a command prompt in the project directory, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package coverlet.msbuild
@@ -60,7 +60,7 @@ To use coverlet globally, it can be installed as a [.NET global tool](../tools/g
 dotnet tool install --global coverlet.console
 ```
 
-The [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package is added to the environment globally. Now, `coverlet` can be used.
+The [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package is added to the environment globally. Now, `coverlet` can be used as a CLI command:
 
 ```console
 coverlet C:\Source\Directory\bin\Debug\netcoreapp3.1\Test.dll --target "dotnet" --targetargs "test . --no-build"

@@ -46,9 +46,9 @@ Writing tests for your code will naturally decouple your code, because it would 
 
 ## Code coverage
 
-A high code coverage percentage is often associated with a higher quality of code, however; the measurement itself *cannot* determine the quality of code. Setting an ambiguous code coverage percentage goal is counterintuitive. Imagine a complex project with thousands of conditional branches, and imagine that it requires 95% code coverage. Currently the project maintains 90% code coverage. The amount of time it takes to account for all of the edge cases in the remaining 5% could be a massive undertaking and the value proposition quickly diminishes.
+A high code coverage percentage is often associated with a higher quality of code. However, the measurement itself *cannot* determine the quality of code. Setting an overly ambitious code coverage percentage goal can be counterproductive. Imagine a complex project with thousands of conditional branches, and imagine that you set a goal of 95% code coverage. Currently the project maintains 90% code coverage. The amount of time it takes to account for all of the edge cases in the remaining 5% could be a massive undertaking, and the value proposition quickly diminishes.
 
-Using code coverage for what it truly represents is always best. It is not an indicator of success, nor does it imply a high code quality - instead it is simply the amount of code that is covered by unit tests. For more information, see [unit testing code coverage](unit-testing-code-coverage.md).
+A high code coverage percentage is not an indicator of success, nor does it imply high code quality. It jusst represents the amount of code that is covered by unit tests. For more information, see [unit testing code coverage](unit-testing-code-coverage.md).
 
 ## Let's speak the same language
 The term *mock* is unfortunately very misused when talking about testing. The following defines the most common types of *fakes* when writing unit tests:

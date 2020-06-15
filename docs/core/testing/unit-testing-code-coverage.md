@@ -10,11 +10,7 @@ ms.date: 06/15/2020
 
 Unit tests help to ensure functionality, and provide a means of verification for refactoring efforts. Code coverage is a measurement of the amount of code that is ran as part of a unit test run - either lines, branches, or methods. As an example, if you have a simple application with only two conditional branches of code (_branch a_, and _branch b_), a unit test that verifies conditional _branch a_ will report branch code coverage of 50%.
 
-This article discusses using code coverage for unit testing with coverlet.
-
-> Coverlet is a cross platform code coverage framework for .NET, with support for line, branch, and method coverage. - [coverlet repo](https://github.com/coverlet-coverage/coverlet)
-
-Additionally, [coverlet](https://dotnetfoundation.org/projects/coverlet) is part of the [.NET foundation](https://dotnetfoundation.org).
+This article discusses the usage of code coverage for unit testing with coverlet, and it is [open source project on GitHub](https://github.com/coverlet-coverage/coverlet). Coverlet is a cross platform code coverage framework for .NET. Additionally, [coverlet](https://dotnetfoundation.org/projects/coverlet) is part of the .NET foundation.
 
 ## Tooling
 
@@ -22,7 +18,7 @@ To use coverlet for code coverage, an existing unit test project must have the a
 
 ### Integrate with .NET test
 
-To integrate with [`dotnet test`](../tools/dotnet-test.md) (formally known as VSTest), add the appropriate package dependency. From the directory of the *.csproj* file, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
+To integrate with [`dotnet test`](../tools/dotnet-test.md), add the appropriate package dependency. From the directory of the *.csproj* file, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package coverlet.collector
@@ -75,3 +71,8 @@ coverlet C:\Source\Directory\bin\Debug\netcoreapp3.1\Test.dll --target "dotnet" 
 - [Visual Studio unit test cover coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 - [GitHub - Coverlet repository](https://github.com/coverlet-coverage/coverlet)
 - [.NET Core CLI test command](../tools/dotnet-test.md)
+
+## Next Steps
+
+> [!div class="nextstepaction"]
+> [Unit testing best practices](unit-testing-best-practices.md)

@@ -75,7 +75,7 @@ In the past, it was common to create "Collection Classes" that implemented the <
 
 When using an Onion Architecture or other layered application design, it's common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer without loading the object down with methods not needed or wanted in other layers.
 
-```aspx-csharp
+```csharp
 public class DomainEntity
 {
     public int Id { get; set; }

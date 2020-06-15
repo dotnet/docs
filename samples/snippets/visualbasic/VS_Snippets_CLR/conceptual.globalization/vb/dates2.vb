@@ -1,6 +1,6 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
-Option Infer On 
+Option Infer On
 
 ' <Snippet3>
 Imports System.Globalization
@@ -8,47 +8,47 @@ Imports System.IO
 Imports System.Threading
 
 Module Example
-   Public Sub Main()
-      ' Persist two dates as strings.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
-      Dim dates() As DateTime = { New DateTime(2013, 1, 9), 
-                                  New DateTime(2013, 8, 18) }
-      Dim sw As New StreamWriter("dateData.dat")
-      sw.Write("{0:d}|{1:d}", dates(0), dates(1))
-      sw.Close()
-      
-      ' Read the persisted data.
-      Dim sr AS New StreamReader("dateData.dat")
-      Dim dateData As String = sr.ReadToEnd()
-      sr.Close()
-      Dim dateStrings() As String = dateData.Split("|"c)
-      
-      ' Restore and display the data using the conventions of the en-US culture.
-      Console.WriteLine("Current Culture: {0}", 
-                        Thread.CurrentThread.CurrentCulture.DisplayName) 
-      For Each dateStr In dateStrings
-         Dim restoredDate As Date
-         If Date.TryParse(dateStr, restoredDate) Then
-            Console.WriteLine("The date is {0:D}", restoredDate)
-         Else
-            Console.WriteLine("ERROR: Unable to parse {0}", dateStr)
-         End If   
-      Next
-      Console.WriteLine()
-                                             
-      ' Restore and display the data using the conventions of the en-GB culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
-      Console.WriteLine("Current Culture: {0}", 
-                        Thread.CurrentThread.CurrentCulture.DisplayName) 
-      For Each dateStr In dateStrings
-         Dim restoredDate As Date
-         If Date.TryParse(dateStr, restoredDate) Then
-            Console.WriteLine("The date is {0:D}", restoredDate)
-         Else
-            Console.WriteLine("ERROR: Unable to parse {0}", dateStr)
-         End If   
-      Next                                       
-   End Sub
+    Public Sub Main()
+        ' Persist two dates as strings.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
+        Dim dates() As DateTime = {New DateTime(2013, 1, 9),
+                                    New DateTime(2013, 8, 18)}
+        Dim sw As New StreamWriter("dateData.dat")
+        sw.Write("{0:d}|{1:d}", dates(0), dates(1))
+        sw.Close()
+
+        ' Read the persisted data.
+        Dim sr AS New StreamReader("dateData.dat")
+        Dim dateData As String = sr.ReadToEnd()
+        sr.Close()
+        Dim dateStrings() As String = dateData.Split("|"c)
+
+        ' Restore and display the data using the conventions of the en-US culture.
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName)
+        For Each dateStr In dateStrings
+            Dim restoredDate As Date
+            If Date.TryParse(dateStr, restoredDate) Then
+                Console.WriteLine("The date is {0:D}", restoredDate)
+            Else
+                Console.WriteLine("ERROR: Unable to parse {0}", dateStr)
+            End If
+        Next
+        Console.WriteLine()
+
+        ' Restore and display the data using the conventions of the en-GB culture.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB")
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName)
+        For Each dateStr In dateStrings
+            Dim restoredDate As Date
+            If Date.TryParse(dateStr, restoredDate) Then
+                Console.WriteLine("The date is {0:D}", restoredDate)
+            Else
+                Console.WriteLine("ERROR: Unable to parse {0}", dateStr)
+            End If
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Current Culture: English (United States)

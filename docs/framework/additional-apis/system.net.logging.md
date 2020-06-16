@@ -52,7 +52,7 @@ internal static void Associate(TraceSource traceSource, object objA, object objB
 
   The object to associate with `objA`.
 
-## Enter method
+## Enter(TraceSource, object, string, string) method
 
 Logs entrance to a method.
 
@@ -77,6 +77,124 @@ internal static void Enter(TraceSource traceSource, object obj, string method, s
 - `param` <xref:System.String>
 
   The parameters that were passed to the method.
+
+## Enter(TraceSource, object, string, object) method
+
+Logs entrance to a method.
+
+```csharp
+internal static void Enter(TraceSource traceSource, object obj, string method, object paramObject)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.Object>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being entered.
+
+- `paramObject` <xref:System.Object>
+
+  The parameters that were passed to the method.
+
+## Enter(TraceSource, string, string, string) method
+
+Logs entrance to a method.
+
+```csharp
+internal static void Enter(TraceSource traceSource, string obj, string method, string param)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.String>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being entered.
+
+- `param` <xref:System.String>
+
+  The parameters that were passed to the method.
+
+## Enter(TraceSource, string, string, object) method
+
+Logs entrance to a method.
+
+```csharp
+internal static void Enter(TraceSource traceSource, string obj, string method, object paramObject)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.String>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being entered.
+
+- `paramObject` <xref:System.Object>
+
+  The parameters that were passed to the method.
+
+## Enter(TraceSource, string, string) method
+
+Logs entrance to a method.
+
+```csharp
+internal static void Enter(TraceSource traceSource, string method, string parameters)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `method` <xref:System.String>
+
+  The method that is being entered.
+
+- `parameters` <xref:System.String>
+
+  The parameters that were passed to the method.
+
+## Enter(TraceSource, string) method
+
+Logs entrance to a method.
+
+```csharp
+internal static void Enter(TraceSource traceSource, string msg)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `msg` <xref:System.String>
+
+  The message to log to the trace source.
 
 ## Exception method
 

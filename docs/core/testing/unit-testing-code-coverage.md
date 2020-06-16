@@ -170,7 +170,7 @@ In this section, the focus is on data collector tools. To use coverlet for code 
 > [!IMPORTANT]
 > The xUnit test project template already integrates with [coverlet.collector](https://www.nuget.org/packages/coverlet.collector) by default. However, if you're working with a test project that doesn't already include this package reference you could add it.
 
-To integrate with [`dotnet test`](../tools/dotnet-test.md), add the appropriate package dependency. From the directory of the *.csproj* file, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
+To integrate with [`dotnet test`](../tools/dotnet-test.md), add the appropriate package dependency. From the directory of the *\*.csproj* file, run the following [`dotnet add package`](../tools/dotnet-add-package.md) command:
 
 ```dotnetcli
 dotnet add package coverlet.collector
@@ -269,7 +269,7 @@ Below is the example *coverage.cobertura.xml* file from the corresponding sample
 
 ### MSBuild
 
-As an alternative, you could use the MSBuild package if your build system already makes use of MSBuild. From a command prompt change directories to the *XUnit.Coverlet.MSBuild* project, and run the `dotnet test` command:
+As an alternative, you could use the MSBuild package if your build system already makes use of MSBuild. From a command prompt, change directories to the *XUnit.Coverlet.MSBuild* project, and run the `dotnet test` command:
 
 ```dotnetcli
 dotnet test /p:CollectCoverage=true
@@ -388,7 +388,7 @@ reportgenerator
 -reporttypes:Html
 ```
 
-This will generate a report as an HTML file. Here is an example report:
+After running this command, an HTML file represents the generated report.
 
 :::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test-generated report":::
 

@@ -11,7 +11,7 @@ Class XPathNavigatorMethods
     Shared Sub Main()
 
     End Sub
- 
+
 #Region "AppendChild/Element"
     Shared Sub XPathNavigatorMethods_AppendChild1()
 
@@ -48,8 +48,8 @@ Class XPathNavigatorMethods
         '</snippet2>
 
     End Sub
- 
- 
+
+
     Shared Sub XPathNavigatorMethods_AppendChild3()
 
         '<snippet3>
@@ -68,7 +68,7 @@ Class XPathNavigatorMethods
         '</snippet3>
 
     End Sub
- 
+
     Shared Sub XPathNavigatorMethods_AppendChild4()
 
         '<snippet4>
@@ -92,7 +92,7 @@ Class XPathNavigatorMethods
         '</snippet4>
 
     End Sub
- 
+
     Shared Sub XPathNavigatorMethods_AppendChildElement()
 
         '<snippet5>

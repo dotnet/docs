@@ -68,7 +68,7 @@ dotnet new xunit -n XUnit.Coverlet.Collector
 dotnet new xunit -n XUnit.Coverlet.MSBuild
 ```
 
-Both of the newly created xUnit test projects need to add a project reference of the *Numbers* class library. This is so that the test projects have access to the *PrimeService* for testing. From the command prompt use the [`dotnet add`](../tools/dotnet-add-reference.md) command:
+Both of the newly created xUnit test projects need to add a project reference of the *Numbers* class library. This is so that the test projects have access to the *PrimeService* for testing. From the command prompt, use the [`dotnet add`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
 dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Numbers\Numbers.csproj
@@ -160,7 +160,7 @@ If the build is successful, you've created the three projects, appropriately ref
 
 There are several tooling aspects of unit testing code coverage for consideration:
 
-- **DataCollectors:** DataCollectors are used to monitor test execution. They collect generated information about test runs in various output formats, XML, JSON, etc. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/datacollector.md).
+- **DataCollectors:** DataCollectors are used to monitor test execution, and to collect generated information about test runs in various output formats, XML, JSON, etc. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/datacollector.md).
 - **Report generators:** Use data collected from test runs to generate reports, often as styled HTML.
 
 In this section, the focus is on data collector tools. To use coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md).
@@ -390,7 +390,7 @@ reportgenerator
 
 This will generate a report as an HTML file. Here is an example report:
 
-:::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test generated report":::
+:::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test-generated report":::
 
 ## See also
 

@@ -38,4 +38,3 @@ internal static readonly WebPermission WebPermissionUnrestricted
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-

@@ -38,4 +38,3 @@ internal static readonly bool IsWin7orLater
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-

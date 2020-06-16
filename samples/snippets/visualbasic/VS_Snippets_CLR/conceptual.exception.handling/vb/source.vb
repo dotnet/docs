@@ -98,7 +98,7 @@ End Class
 Class FileReader
     Private fileName As String
 
-    
+
     Public Sub New(path As String)
         fileName = path
     End Sub

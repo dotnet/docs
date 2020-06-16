@@ -7,67 +7,67 @@ Imports System.IO
 Imports System.Threading
 
 Module Example
-   Public Sub Main()
-      ' Create ten random doubles.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
-      Dim numbers() As Double = GetRandomNumbers(10)
-      DisplayRandomNumbers(numbers)
-      
-      ' Persist the numbers as strings.
-      Dim sw As New StreamWriter("randoms.dat")
-      For ctr As Integer = 0 To numbers.Length - 1
-         sw.Write("{0:R}{1}", numbers(ctr), If(ctr < numbers.Length - 1, "|", ""))
-      Next         
-      sw.Close()
-      
-      ' Read the persisted data.
-      Dim sr AS New StreamReader("randoms.dat")
-      Dim numericData As String = sr.ReadToEnd()
-      sr.Close()
-      Dim numberStrings() As String = numericData.Split("|"c)
-      
-      ' Restore and display the data using the conventions of the en-US culture.
-      Console.WriteLine("Current Culture: {0}", 
-                        Thread.CurrentThread.CurrentCulture.DisplayName) 
-      For Each numberStr In numberStrings
-         Dim restoredNumber As Double
-         If Double.TryParse(numberStr, restoredNumber) Then
-            Console.WriteLine(restoredNumber.ToString("R"))
-         Else
-            Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr)
-         End If   
-      Next
-      Console.WriteLine()
-                                             
-      ' Restore and display the data using the conventions of the fr-FR culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
-      Console.WriteLine("Current Culture: {0}", 
-                        Thread.CurrentThread.CurrentCulture.DisplayName) 
-      For Each numberStr In numberStrings
-         Dim restoredNumber As Double
-         If Double.TryParse(numberStr, restoredNumber) Then
-            Console.WriteLine(restoredNumber.ToString("R"))
-         Else
-            Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr)
-         End If   
-      Next                                       
-   End Sub
-   
-   Private Function GetRandomNumbers(n As Integer) As Double()
-      Dim rnd As New Random()
-      Dim numbers(n - 1) As Double
-      For ctr As Integer = 0 To n - 1
-         numbers(ctr) = rnd.NextDouble * 1000
-      Next
-      Return numbers
-   End Function
-   
-   Private Sub DisplayRandomNumbers(numbers As Double())
-      For ctr As Integer = 0 To numbers.Length - 1
-         Console.WriteLine(numbers(ctr).ToString("R"))
-      Next
-      Console.WriteLine()
-   End Sub
+    Public Sub Main()
+        ' Create ten random doubles.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
+        Dim numbers() As Double = GetRandomNumbers(10)
+        DisplayRandomNumbers(numbers)
+
+        ' Persist the numbers as strings.
+        Dim sw As New StreamWriter("randoms.dat")
+        For ctr As Integer = 0 To numbers.Length - 1
+            sw.Write("{0:R}{1}", numbers(ctr), If(ctr < numbers.Length - 1, "|", ""))
+        Next
+        sw.Close()
+
+        ' Read the persisted data.
+        Dim sr AS New StreamReader("randoms.dat")
+        Dim numericData As String = sr.ReadToEnd()
+        sr.Close()
+        Dim numberStrings() As String = numericData.Split("|"c)
+
+        ' Restore and display the data using the conventions of the en-US culture.
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName)
+        For Each numberStr In numberStrings
+            Dim restoredNumber As Double
+            If Double.TryParse(numberStr, restoredNumber) Then
+                Console.WriteLine(restoredNumber.ToString("R"))
+            Else
+                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr)
+            End If
+        Next
+        Console.WriteLine()
+
+        ' Restore and display the data using the conventions of the fr-FR culture.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
+        Console.WriteLine("Current Culture: {0}",
+                          Thread.CurrentThread.CurrentCulture.DisplayName)
+        For Each numberStr In numberStrings
+            Dim restoredNumber As Double
+            If Double.TryParse(numberStr, restoredNumber) Then
+                Console.WriteLine(restoredNumber.ToString("R"))
+            Else
+                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr)
+            End If
+        Next
+    End Sub
+
+    Private Function GetRandomNumbers(n As Integer) As Double()
+        Dim rnd As New Random()
+        Dim numbers(n - 1) As Double
+        For ctr As Integer = 0 To n - 1
+            numbers(ctr) = rnd.NextDouble * 1000
+        Next
+        Return numbers
+    End Function
+
+    Private Sub DisplayRandomNumbers(numbers As Double())
+        For ctr As Integer = 0 To numbers.Length - 1
+            Console.WriteLine(numbers(ctr).ToString("R"))
+        Next
+        Console.WriteLine()
+    End Sub
 End Module
 ' The example displays output like the following:
 '       487.0313743534644

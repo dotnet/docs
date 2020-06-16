@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Regular Expressions"
+description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

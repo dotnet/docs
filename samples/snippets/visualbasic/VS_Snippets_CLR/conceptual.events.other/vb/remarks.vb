@@ -42,6 +42,6 @@ Namespace EventRemarks
             ' Add the delegate instance to the event.
             AddHandler clock.Alarm, alhandler
             ' </Snippet6>
-      End Sub
-   End Class
+        End Sub
+    End Class
 End Namespace

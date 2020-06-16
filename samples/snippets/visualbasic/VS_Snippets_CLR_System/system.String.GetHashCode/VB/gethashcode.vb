@@ -15,13 +15,13 @@ Module GetHashCode
         DisplayHashCode("Abcdeh")
         DisplayHashCode("Abcdei")
     End Sub
-       
+
     Sub DisplayHashCode(Operand As String)
         Dim HashCode As Integer = Operand.GetHashCode()
-        Console.WriteLine("The hash code for ""{0}"" is: 0x{1:X8}, {1}", 
+        Console.WriteLine("The hash code for ""{0}"" is: 0x{1:X8}, {1}",
                           Operand, HashCode)
-    End Sub 
-End Module 
+    End Sub
+End Module
 ' This example displays output like the following:
 '       The hash code for "" is: 0x2D2816FE, 757602046
 '       The hash code for "a" is: 0xCDCAB7BF, -842352705

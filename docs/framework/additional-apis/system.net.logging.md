@@ -194,7 +194,7 @@ internal static void Enter(TraceSource traceSource, string msg)
 
 - `msg` <xref:System.String>
 
-  The message to log to the trace source.
+  The entrance message to log to the trace source.
 
 ## Exception method
 
@@ -222,7 +222,7 @@ internal static void Exception(TraceSource traceSource, object obj, string metho
 
   The exception that was thrown.
 
-## Exit method
+## Exit(TraceSource, object, string, object) method
 
 Logs exit from a function.
 
@@ -247,6 +247,124 @@ internal static void Exit(TraceSource traceSource, object obj, string method, ob
 - `retObject` <xref:System.Object>
 
   The value that's being returned by the method.
+
+## Exit(TraceSource, string, string, object) method
+
+Logs exit from a function.
+
+```csharp
+internal static void Exit(TraceSource traceSource, string obj, string method, object retObject)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.String>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being exited.
+
+- `retObject` <xref:System.Object>
+
+  The value that's being returned by the method.
+
+## Exit(TraceSource, object, string, string) method
+
+Logs exit from a function.
+
+```csharp
+internal static void Exit(TraceSource traceSource, object obj, string method, string retValue)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.Object>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being exited.
+
+- `retValue` <xref:System.String>
+
+  The value that's being returned by the method.
+
+## Exit(TraceSource, string, string, string) method
+
+Logs exit from a function.
+
+```csharp
+internal static void Exit(TraceSource traceSource, string obj, string method, string retValue)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `obj` <xref:System.String>
+
+  The object that the method was called on.
+
+- `method` <xref:System.String>
+
+  The method that is being exited.
+
+- `retValue` <xref:System.String>
+
+  The value that's being returned by the method.
+
+## Exit(TraceSource, string, string) method
+
+Logs exit from a function.
+
+```csharp
+internal static void Exit(TraceSource traceSource, string method, string parameters)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `method` <xref:System.String>
+
+  The method that is being exited.
+
+- `parameters` <xref:System.String>
+
+  The parameters that were passed to the method that's being exited.
+
+## Exit(TraceSource, string) method
+
+Logs exit from a function.
+
+```csharp
+internal static void Exit(TraceSource traceSource, string msg)
+```
+
+### Parameters
+
+- `traceSource` <xref:System.Diagnostics.TraceSource>
+
+  The trace source to log the event to.
+
+- `msg` <xref:System.String>
+
+  The exit message to log to the trace source.
 
 ## Http property
 

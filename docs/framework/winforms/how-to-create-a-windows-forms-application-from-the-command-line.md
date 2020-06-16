@@ -1,6 +1,7 @@
 ---
 title: Create a Windows Forms application from the command line
 titleSuffix: ""
+description: Learn how to complete the basic steps to create and run a Windows Forms application from the command line.
 ms.date: "03/14/2018"
 dev_langs: 
   - "csharp"

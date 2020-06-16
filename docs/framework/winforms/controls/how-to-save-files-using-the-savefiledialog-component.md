@@ -1,5 +1,6 @@
 ---
 title: "How to: Save Files Using the SaveFileDialog Component"
+description: Learn how to use the SaveFileDialog component to browse the file system and select files to be saved.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

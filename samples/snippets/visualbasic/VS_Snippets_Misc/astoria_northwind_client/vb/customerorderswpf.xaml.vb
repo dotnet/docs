@@ -29,14 +29,14 @@ Partial Public Class CustomerOrdersWpf
             '<snippetMasterDetailBinding>
             ' Create a LINQ query that returns customers with related orders.
             Dim customerQuery = From cust In context.Customers.Expand("Orders") _
-                                    Where cust.Country = customerCountry _
-                                    Select cust
+                                Where cust.Country = customerCountry _
+                                Select cust
 
-                ' Create a new collection for binding based on the LINQ query.
+            ' Create a new collection for binding based on the LINQ query.
             trackedCustomers = New DataServiceCollection(Of Customer)(customerQuery)
 
-                ' Bind the root StackPanel element to the collection
-                ' related object binding paths are defined in the XAML.
+            ' Bind the root StackPanel element to the collection
+            ' related object binding paths are defined in the XAML.
             Me.LayoutRoot.DataContext = trackedCustomers
             '</snippetMasterDetailBinding>
         Catch ex As DataServiceQueryException

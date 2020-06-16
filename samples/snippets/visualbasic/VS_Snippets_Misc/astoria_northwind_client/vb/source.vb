@@ -47,7 +47,7 @@ Public Class SourceVb
         Try
             ' Define a LINQ query that returns all customers.
             Dim allCustomers = From cust In context.Customers _
-                                   Select cust
+                               Select cust
 
             ' Enumerate over the query obtained from the context.
             For Each customer As Customer In allCustomers
@@ -264,9 +264,9 @@ Public Class SourceVb
         ' and that is ordered by the ship date, descending.
         '<snippetAddQueryOptionsLinqSpecific>
         Dim selectedOrders = From o In context.Orders _
-                Where (o.Freight > 30) _
-                Order By o.ShippedDate Descending _
-                Select o
+                             Where (o.Freight > 30) _
+                             Order By o.ShippedDate Descending _
+                             Select o
         '</snippetAddQueryOptionsLinqSpecific>
 
         Try
@@ -560,8 +560,8 @@ Public Class SourceVb
         Try
             ' Get the specific product.
             Dim selectedProduct = (From product In context.Products _
-                                                   Where product.ProductID = productId _
-                                                   Select product).Single()
+                                   Where product.ProductID = productId _
+                                   Select product).Single()
 
             ' Get the specific customer.
             Dim cust = (From customer In context.Customers.Expand("Orders") _
@@ -772,7 +772,7 @@ Public Class SourceVb
                 ' If nextLink is not null, then there is a new page to load.
                 If token IsNot Nothing Then
                     ' Load the new page from the next link URI.
-                    response = CType(context.Execute(Of Customer)(token),  _
+                    response = CType(context.Execute(Of Customer)(token), _
                     QueryOperationResponse(Of Customer))
                 End If
 
@@ -815,7 +815,7 @@ Public Class SourceVb
                 ' If nextLink is not null, then there is a new page to load.
                 If nextLink IsNot Nothing Then
                     ' Load the new page from the next link URI.
-                    response = CType(context.Execute(Of Customer)(nextLink),  _
+                    response = CType(context.Execute(Of Customer)(nextLink), _
                             QueryOperationResponse(Of Customer))
                 End If
 
@@ -861,14 +861,14 @@ Public Class SourceVb
         ' a CustomerAddress type that contains only address properties.
         '<snippetProjectWithInitializer> 
         Dim query = From c In context.Customers _
-                        Where c.Country = "Germany" _
-                        Select New CustomerAddress With { _
-                            .CustomerID = c.CustomerID, _
-                            .Address = c.Address, _
-                            .City = c.City, _
-                            .Region = c.Region, _
-                            .PostalCode = c.PostalCode, _
-                            .Country = c.Country}
+                    Where c.Country = "Germany" _
+                    Select New CustomerAddress With { _
+                        .CustomerID = c.CustomerID, _
+                        .Address = c.Address, _
+                        .City = c.City, _
+                        .Region = c.Region, _
+                        .PostalCode = c.PostalCode, _
+                        .Country = c.Country}
         '</snippetProjectWithInitializer>
         '</snippetSelectCustomerAddressSpecific>
 
@@ -903,14 +903,14 @@ Public Class SourceVb
         ' Define an anonymous LINQ query that projects the Customers type into 
         ' a CustomerAddress type that contains only address properties.
         Dim query = From c In context.Customers _
-                        Where c.Country = "Germany" _
-                        Select New CustomerAddressNonEntity With _
-                        {.CompanyName = c.CompanyName, _
-                            .Address = c.Address, _
-                            .City = c.City, _
-                            .Region = c.Region, _
-                            .PostalCode = c.PostalCode, _
-                            .Country = c.Country}
+                    Where c.Country = "Germany" _
+                    Select New CustomerAddressNonEntity With _
+                    {.CompanyName = c.CompanyName, _
+                        .Address = c.Address, _
+                        .City = c.City, _
+                        .Region = c.Region, _
+                        .PostalCode = c.PostalCode, _
+                        .Country = c.Country}
 
         Try
             ' Enumerate over the query result, which is executed implicitly.
@@ -937,14 +937,14 @@ Public Class SourceVb
         ' a CustomerAddress type that contains only address properties.
         '<snippetProjectWithConstructor> 
         Dim query = From c In context.Customers _
-                        Where c.Country = "Germany" _
-                        Select New CustomerAddress( _
-                        c.CustomerID, _
-                        c.Address, _
-                        c.City, _
-                        c.Region, _
-                        c.PostalCode, _
-                        c.Country)
+                    Where c.Country = "Germany" _
+                    Select New CustomerAddress( _
+                    c.CustomerID, _
+                    c.Address, _
+                    c.City, _
+                    c.Region, _
+                    c.PostalCode, _
+                    c.Country)
         '</snippetProjectWithConstructor>
 
         Try
@@ -971,15 +971,15 @@ Public Class SourceVb
         ' concatenating other properties.
         '<snippetProjectWithTransform> 
         Dim query = From c In context.Customers _
-                        Where c.Country = "Germany" _
-                        Select New CustomerAddress With _
-                        {.CustomerID = c.CustomerID, _
-                            .Address = "Full address: " & c.Address & ", " & _
-                            c.City & "," & c.Region & " " & c.PostalCode, _
-                            .City = c.City, _
-                            .Region = c.Region, _
-                            .PostalCode = c.PostalCode, _
-                            .Country = c.Country}
+                    Where c.Country = "Germany" _
+                    Select New CustomerAddress With _
+                    {.CustomerID = c.CustomerID, _
+                        .Address = "Full address: " & c.Address & ", " & _
+                        c.City & "," & c.Region & " " & c.PostalCode, _
+                        .City = c.City, _
+                        .Region = c.Region, _
+                        .PostalCode = c.PostalCode, _
+                        .Country = c.Country}
         '</snippetProjectWithTransform>
 
         Try
@@ -1005,14 +1005,14 @@ Public Class SourceVb
         ' a CustomerAddress type that contains only address properties.
         '<snippetProjectWithConvertion> 
         Dim query = From c In context.Customers _
-                        Where c.Country = "Germany" _
-                        Select New CustomerAddress With _
-                        {.CustomerID = c.CustomerID, _
-                            .Address = c.Address, _
-                            .City = c.City, _
-                            .Region = c.Region, _
-                            .PostalCode = c.PostalCode, _
-                            .Country = c.Country}
+                    Where c.Country = "Germany" _
+                    Select New CustomerAddress With _
+                    {.CustomerID = c.CustomerID, _
+                        .Address = c.Address, _
+                        .City = c.City, _
+                        .Region = c.Region, _
+                        .PostalCode = c.PostalCode, _
+                        .Country = c.Country}
         '</snippetProjectWithConvertion>
 
         Try
@@ -1038,9 +1038,9 @@ Public Class SourceVb
         ' Define a query for orders that have shipped.
         '<snippetLinqQueryPrecedenceSpecific>
         Dim ordersQuery = (From o In context.Orders
-                                 Where o.ShippedDate < DateTime.Today
-                                 Order By o.OrderDate Descending, o.CustomerID
-                                 Select o).Skip(10).Take(10)
+                           Where o.ShippedDate < DateTime.Today
+                           Order By o.OrderDate Descending, o.CustomerID
+                           Select o).Skip(10).Take(10)
         '</snippetLinqQueryPrecedenceSpecific>
 
         Try
@@ -1104,8 +1104,8 @@ Public Class SourceVb
         ' Define a query for orders with a Freight value greater than 30.
         '<snippetLinqWhereClauseSpecific>
         Dim filteredOrders = From o In context.Orders
-                                Where o.Freight.Value > 30
-                                Select o
+                             Where o.Freight.Value > 30
+                             Select o
         '</snippetLinqWhereClauseSpecific>
 
         Try
@@ -1182,9 +1182,9 @@ Public Class SourceVb
         ' Define a query for orders with a Freight value greater than 30.
         '<snippetLinqOrderByClauseSpecific>
         Dim sortedCustomers = From c In context.Customers
-                                     Order By c.CompanyName Ascending,
-                                     c.PostalCode Descending
-                                     Select c
+                              Order By c.CompanyName Ascending,
+                              c.PostalCode Descending
+                              Select c
         '</snippetLinqOrderByClauseSpecific>
 
         Try
@@ -1395,8 +1395,8 @@ Public Class SourceVb
         ' for the customer "ALKFI".
         '<snippetLinqQueryExpandSpecific>
         Dim ordersQuery = From o In context.Orders.Expand("Order_Details")
-                             Where o.CustomerID = "ALFKI"
-                             Select o
+                          Where o.CustomerID = "ALFKI"
+                          Select o
         '</snippetLinqQueryExpandSpecific>
 
         Try
@@ -1466,10 +1466,10 @@ Public Class SourceVb
         ' Define a query that returns products based on a 
         ' calculation that is determined on the client.
         Dim productsQuery = From p In context.Products
-                          Where p.UnitPrice >
-                          (basePrice - (basePrice * discount)) AndAlso
-                          p.ProductName.Contains("bike")
-                          Select p
+                            Where p.UnitPrice >
+                            (basePrice - (basePrice * discount)) AndAlso
+                            p.ProductName.Contains("bike")
+                            Select p
         '</snippetLinqQueryClientEvalSpecific>
 
         Try
@@ -1501,8 +1501,8 @@ Public Class SourceVb
 
         ' Define a query for orders with a Freight value greater than 30.
         Dim query = From cust In context.Customers _
-            Where cust.Country = "Germany" _
-            Select cust
+                    Where cust.Country = "Germany" _
+                    Select cust
 
         Try
             ' Enumerate to execute the query.
@@ -1510,7 +1510,7 @@ Public Class SourceVb
                 Console.WriteLine("Name: {0}" & vbNewLine & "Address:" & vbNewLine & "{1}" _
                                   & vbNewLine & "{2}, {3}", _
                     cust.CompanyName, cust.Address, cust.City, cust.Region)
-            Next        
+            Next
         Catch ex As DataServiceQueryException
             Throw New ApplicationException( _
                 "An error occurred during query execution.", ex)

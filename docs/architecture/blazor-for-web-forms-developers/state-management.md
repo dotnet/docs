@@ -7,8 +7,6 @@ ms.date: 09/11/2019
 ---
 # State management
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 *This content is coming soon.*
 
 <!--

@@ -388,9 +388,9 @@ reportgenerator
 -reporttypes:Html
 ```
 
-This will generate a report as an HTML file.
+This will generate a report as an HTML file. Here is an example report:
 
-:::image type="content" source="media/test-report.png" alt-text="Unit test generated report":::
+:::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test generated report":::
 
 ## See also
 

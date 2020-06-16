@@ -397,5 +397,3 @@ internal static bool On { get; }
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-
-**.NET Framework versions:** Available since ???

@@ -39,4 +39,3 @@ internal static readonly bool IsWin7orLater
 
 **Assembly:** System (in System.dll)
 
-**.NET Framework versions:** Available since ???

@@ -51,4 +51,3 @@ The HTTP status description.
 
 **Assembly:** System (in System.dll)
 
-**.NET Framework versions:** Available since ???

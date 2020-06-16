@@ -39,4 +39,3 @@ internal static readonly WebPermission WebPermissionUnrestricted
 
 **Assembly:** System (in System.dll)
 
-**.NET Framework versions:** Available since ???

@@ -5,14 +5,14 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim chars() As Char = { "a"c, "X"c, "8"c, ","c, " "c, ChrW(9), "!"c }
-      
-      For Each ch As Char In chars
-         Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()), _
-                           Char.GetUnicodeCategory(ch))
-      Next         
-   End Sub
+    Public Sub Main()
+        Dim chars() As Char = {"a"c, "X"c, "8"c, ","c, " "c, ChrW(9), "!"c}
+
+        For Each ch As Char In chars
+            Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()), _
+                              Char.GetUnicodeCategory(ch))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       'a': LowercaseLetter

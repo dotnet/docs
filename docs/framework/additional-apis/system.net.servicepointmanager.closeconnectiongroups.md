@@ -35,5 +35,3 @@ The name of the connection group to close.
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-
-**.NET Framework versions:** Available since ???

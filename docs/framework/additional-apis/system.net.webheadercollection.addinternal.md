@@ -39,5 +39,3 @@ internal void AddInternal(string name, string value)
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-
-**.NET Framework versions:** Available since ???

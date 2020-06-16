@@ -56,5 +56,3 @@ The email address is invalid.
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-
-**.NET Framework versions:** Available since ???

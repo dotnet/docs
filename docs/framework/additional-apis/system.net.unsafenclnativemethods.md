@@ -53,5 +53,3 @@ A collection of available client certificates.
 **Namespace:** <xref:System.Net>
 
 **Assembly:** System (in System.dll)
-
-**.NET Framework versions:** Available since ???

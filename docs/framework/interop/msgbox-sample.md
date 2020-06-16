@@ -1,5 +1,6 @@
 ---
 title: "MsgBox Sample"
+description: See a sample of passing string types by values as In parameters using MsgBox. It shows when to use the EntryPoint, CharSet, and ExactSpelling fields in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

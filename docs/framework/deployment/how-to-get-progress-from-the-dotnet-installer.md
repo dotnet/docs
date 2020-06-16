@@ -1,5 +1,6 @@
 ---
 title: "How to: Get Progress from the .NET Framework 4.5 Installer"
+description: Learn how to get progress from the .NET 4.5 installer. If you develop apps for this .NET version, you can include (chain) .NET 4.5 setup in your app's setup.
 ms.date: "03/30/2017"
 dev_langs:
   - "cpp"

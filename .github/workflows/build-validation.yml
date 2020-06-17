@@ -47,10 +47,9 @@ jobs:
     - name: Locate projects for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
-        LocateExt: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln;.json"
-        Repo:  
+        LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln;.json"
       run: |
-        ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }} | ConvertTo-Json | Out-File 'output.json'
+        ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }}
         
     # Update build output json file
     - name: Upload build results

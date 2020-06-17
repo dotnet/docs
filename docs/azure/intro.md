@@ -68,7 +68,7 @@ If you use Visual Studio, you can add support for certain Azure services to your
 If you're using the Azure SDK for .NET to consume or manage your Azure resources, please note the following:
 
 * **Authentication**: Many libraries in the SDK use a common authentication infrastructure, while some libraries use authentication mechanisms specific to the service they're consuming. For more information, see [Authentication with the Azure SDK for .NET](authentication.md).
-* **Logging**: If supported, the client libraries include the ability to log client library operations. See [Logging with the Azure SDK for .NET](logging.md) for further details.
+* **Logging**: If supported, the client libraries include the ability to log client library operations. For more information, see [Logging with the Azure SDK for .NET](logging.md).
 * **REST API** The Azure SDK for .NET is an abstraction built on the [Azure REST API](https://docs.microsoft.com/rest/api/azure/). The Azure REST API may be used in lieu of or alongside the Azure SDK for .NET if desired.
 
 ## Diagnosing problems in the Cloud

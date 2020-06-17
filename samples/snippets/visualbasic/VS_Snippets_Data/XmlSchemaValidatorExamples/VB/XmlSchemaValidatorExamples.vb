@@ -74,7 +74,7 @@ Namespace Microsoft.Samples.Xml.Schema
                     validator.ValidateAttribute("ISBN", "", book.Isbn, schemaInfo)
                 End If
                 DisplaySchemaInfo()
-    
+
                 ' After validating all the attributes for the current element with ValidateAttribute method,
                 ' you must call GetUnspecifiedDefaultAttributes to validate the default attributes.
                 validator.GetUnspecifiedDefaultAttributes(New ArrayList())

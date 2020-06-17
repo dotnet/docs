@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("L2E_ArraysAndListsInQueriesVB")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("L2E_ArraysAndListsInQueriesVB")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2009")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("L2E_ArraysAndListsInQueriesVB")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("L2E_ArraysAndListsInQueriesVB")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2009")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("b7c87b83-43d7-4010-a57c-0284f157d65e")> 
+<Assembly: Guid("b7c87b83-43d7-4010-a57c-0284f157d65e")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

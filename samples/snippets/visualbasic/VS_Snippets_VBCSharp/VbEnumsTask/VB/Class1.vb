@@ -4,21 +4,21 @@ Imports WindowsApplication1.Form1.WorkDays
 '</Snippet22>
 
 Public Class Class3
-  Dim X As Integer
+    Dim X As Integer
 
-  Sub test()
-    '<Snippet24>
-    X = Sunday
-    '</Snippet24>
-  End Sub
+    Sub test()
+        '<Snippet24>
+        X = Sunday
+        '</Snippet24>
+    End Sub
 
 
-  '<Snippet25>
-  Public Sub New()
-    ' Insert code to implement constructor.
-    X = Monday
-  End Sub
-  '</Snippet25>
+    '<Snippet25>
+    Public Sub New()
+        ' Insert code to implement constructor.
+        X = Monday
+    End Sub
+    '</Snippet25>
 End Class
 
 

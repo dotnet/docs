@@ -1,5 +1,6 @@
 ---
 title: "HttpWebRequest._CoreResponse Field"
+description: Read about the HttpWebRequest._CoreResponse field in .NET. This field is a CoreResponseData or Exception object containing the result of HTTP response parsing.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"

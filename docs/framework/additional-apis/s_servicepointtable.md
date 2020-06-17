@@ -1,5 +1,6 @@
 ---
 title: "ServicePointManager.s_ServicePointTable Field"
+description: Read about the ServicePointManager.s_ServicePointTable field in .NET. This hash table field contains active HTTP connections (ServicePoints) in the AppDomain.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

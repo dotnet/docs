@@ -1,5 +1,6 @@
 ---
 title: IPictureDisp Interface (stdole)
+description: Find information about the IPictureDisp interface in .NET. This interface is in the stdole namespace and the stdole assembly (in the stdole.dll library).
 ms.date: 03/28/2019
 topic_type:
   - "apiref"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Build a .NET Framework single-file assembly"
+description: Explore how to build a single-file assembly in .NET. A single-file assembly can be a library (.dll) that targets .NET, or it can be an executable (.exe) file.
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assembly manifest, single-file assemblies"

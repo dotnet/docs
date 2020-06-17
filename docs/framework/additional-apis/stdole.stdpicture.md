@@ -1,5 +1,6 @@
 ---
 title: StdPicture Interface (stdole)
+description: See reference information about the StdPicture interface in .NET. This interface is in the stdole namespace and the stdole assembly (in the stdole.dll library).
 ms.date: 03/28/2019
 topic_type:
   - "apiref"

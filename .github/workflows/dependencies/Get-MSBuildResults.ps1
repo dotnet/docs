@@ -6,11 +6,17 @@
 .DESCRIPTION
     Invokes dotnet build on the samples sln and project files.
 
-.PARAMETER ScanToolDir
-    The directory of the LocateProjects tool source code.
+.PARAMETER RepoRootDir
+    The directory of the repository files on the local machine.
 
-.PARAMETER SamplesRootDir
-    The directory of the samples.
+.PARAMETER PullRequest
+    The pull requst to process. If 0 or not passed, processes the whole repo
+
+.PARAMETER RepoOwner
+    The name of the repository owner.
+    
+.PARAMETER RepoName
+    The name of the repository.
 
 .PARAMETER RangeStart
     A range of results to process.
@@ -25,16 +31,16 @@
     None
 
 .NOTES
-    Version:        1.0
+    Version:        1.1
     Author:         adegeo@microsoft.com
-    Creation Date:  10/18/2019
+    Creation Date:  06/17/2020
     Purpose/Change: Initial release
 #>
 
 [CmdletBinding()]
 Param(
     [Parameter(Mandatory = $true, ValueFromPipeline = $false)]
-    [System.String] $SamplesRootDir = $env:samplesrootdir,
+    [System.String] $RepoRootDir = $env:RepoRootDir,
 
     [Parameter(Mandatory = $false, ValueFromPipeline = $false)]
     [System.Int64] $PullRequest = 0,
@@ -54,20 +60,20 @@ Param(
 
 $Global:statusOutput = @()
 
-#$ScanToolDir = "C:\code\work\dotnet\dotnet-docs-tools\LocateProjects\LocateProjects"
-#$SamplesRootDir = "C:\code\work\dotnet\dotnet-docs\samples"
-
 Write-Host "Gathering solutions and projects..."
 
 if ($PullRequest -ne 0) {
-    $output = Invoke-Expression "LocateProjects `"$SamplesRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName"
+    Write-Host "Running `"LocateProjects `"$RepoRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName`""
+    $output = Invoke-Expression "LocateProjects `"$RepoRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName"
 }
 else {
-    $output = Invoke-Expression "LocateProjects `"$SamplesRootDir`""
+    Write-Host "Running `"LocateProjects `"$RepoRootDir`""
+    $output = Invoke-Expression "LocateProjects `"$RepoRootDir`""
 }
 
 if ($LASTEXITCODE -ne 0)
 {
+    $output
     throw "Error on running LocateProjects"
 }
 
@@ -107,7 +113,7 @@ foreach ($item in $workingSet) {
 
         # Project found, build it
         if ([int]$data[0] -eq 0) {
-            $projectFile = Resolve-Path "$SamplesRootDir\$($data[2])"
+            $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
             Write-Host "Running $projectFile"
             $result = Invoke-Expression "dotnet build `"$projectFile`""
             New-Result $data[1] $projectFile $LASTEXITCODE $result

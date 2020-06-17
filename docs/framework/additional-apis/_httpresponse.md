@@ -1,5 +1,6 @@
 ---
 title: "HttpWebRequest._HttpResponse Field"
+description: Understand the HttpWebRequest._HttpResponse field in .NET. This field is an HttpWebResponse type containing HTTP response details from an HTTP request.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

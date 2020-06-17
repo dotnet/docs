@@ -1,5 +1,6 @@
 ---
 title: "Connection.m_WriteList Field"
+description: Get information about the Connection.m_WriteList field in .NET. This ArrayList field has HttpWebRequest objects that are queued up to be sent over HTTP.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

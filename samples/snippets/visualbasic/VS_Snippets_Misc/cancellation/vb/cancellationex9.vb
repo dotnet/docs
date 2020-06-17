@@ -6,14 +6,14 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Class CancelOldStyleEvents
-   ' Old-style MRE that doesn't support unified cancellation.
-   Shared mre As New ManualResetEvent(False)
+    ' Old-style MRE that doesn't support unified cancellation.
+    Shared mre As New ManualResetEvent(False)
 
-   Shared Sub Main()
-      Dim cts As New CancellationTokenSource()
+    Shared Sub Main()
+        Dim cts As New CancellationTokenSource()
 
-      ' Pass the same token source to the delegate and to the task instance.
-      Task.Run(Sub() DoWork(cts.Token), cts.Token)
+        ' Pass the same token source to the delegate and to the task instance.
+        Task.Run(Sub() DoWork(cts.Token), cts.Token)
         Console.WriteLine("Press c to cancel, p to pause, or s to start/restart.")
         Console.WriteLine("Or any other key to exit.")
 
@@ -30,18 +30,18 @@ Class CancelOldStyleEvents
                     mre.Set()
                 Case Else
                     goAgain = False
-         End Select
+            End Select
 
-         Thread.Sleep(100)
-      End While
-      cts.Dispose()
-   End Sub
+            Thread.Sleep(100)
+        End While
+        cts.Dispose()
+    End Sub
 
     Shared Sub DoWork(ByVal token As CancellationToken)
         While True
             '<snippet5>
             ' Wait on the event if it is not signaled.
-            Dim waitHandles() As WaitHandle = { mre, token.WaitHandle }
+            Dim waitHandles() As WaitHandle = {mre, token.WaitHandle}
             Dim eventThatSignaledIndex =
                 WaitHandle.WaitAny(waitHandles, _
                                    New TimeSpan(0, 0, 20))
@@ -53,11 +53,11 @@ Class CancelOldStyleEvents
             If eventThatSignaledIndex = 1 Then
                 Console.WriteLine("The wait operation was canceled.")
                 Throw New OperationCanceledException(token)
-            ' Were we canceled while running?
+                ' Were we canceled while running?
             ElseIf token.IsCancellationRequested = True Then
                 Console.WriteLine("Cancelling per user request.")
                 token.ThrowIfCancellationRequested()
-            ' Did we time out?
+                ' Did we time out?
             ElseIf eventThatSignaledIndex = WaitHandle.WaitTimeout Then
                 Console.WriteLine("The wait operation timed out.")
                 Exit While

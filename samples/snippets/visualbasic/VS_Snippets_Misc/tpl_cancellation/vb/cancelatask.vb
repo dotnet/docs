@@ -71,7 +71,7 @@ Namespace CancellationWithOCE
             ' Keep the console window open while the
             ' task completes its output.
             Console.ReadLine()
-            
+
             tokenSource.Dispose()
         End Sub
 

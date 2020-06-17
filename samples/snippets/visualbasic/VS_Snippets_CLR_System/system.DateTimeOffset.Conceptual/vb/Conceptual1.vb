@@ -5,36 +5,36 @@ Option Strict On
 Imports System.Collections.ObjectModel
 
 Module TimeOffsets
-   Public Sub Main()
-      Dim thisTime As DateTimeOffset 
-      
-      thisTime = New DateTimeOffset(#06/10/2007#, New TimeSpan(-7, 0, 0))
-      ShowPossibleTimeZones(thisTime) 
+    Public Sub Main()
+        Dim thisTime As DateTimeOffset
 
-      thisTime = New DateTimeOffset(#03/10/2007#, New TimeSpan(-6, 0, 0))  
-      ShowPossibleTimeZones(thisTime)
+        thisTime = New DateTimeOffset(#06/10/2007#, New TimeSpan(-7, 0, 0))
+        ShowPossibleTimeZones(thisTime)
 
-      thisTime = New DateTimeOffset(#03/10/2007#, New TimeSpan(+1, 0, 0))
-      ShowPossibleTimeZones(thisTime)
-   End Sub
-   
-   Private Sub ShowPossibleTimeZones(offsetTime As DateTimeOffset)
-      Dim offset As TimeSpan = offsetTime.Offset
-      Dim timeZones As ReadOnlyCollection(Of TimeZoneInfo)
-            
-      Console.WriteLine("{0} could belong to the following time zones:", _
-                        offsetTime.ToString())
-      ' Get all time zones defined on local system
-      timeZones = TimeZoneInfo.GetSystemTimeZones()     
-      ' Iterate time zones
-      For Each timeZone As TimeZoneInfo In timeZones
-         ' Compare offset with offset for that date in that time zone
-         If timeZone.GetUtcOffset(offsetTime.DateTime).Equals(offset) Then
-            Console.WriteLine("   {0}", timeZone.DisplayName)
-         End If   
-      Next
-      Console.WriteLine()
-   End Sub
+        thisTime = New DateTimeOffset(#03/10/2007#, New TimeSpan(-6, 0, 0))
+        ShowPossibleTimeZones(thisTime)
+
+        thisTime = New DateTimeOffset(#03/10/2007#, New TimeSpan(+1, 0, 0))
+        ShowPossibleTimeZones(thisTime)
+    End Sub
+
+    Private Sub ShowPossibleTimeZones(offsetTime As DateTimeOffset)
+        Dim offset As TimeSpan = offsetTime.Offset
+        Dim timeZones As ReadOnlyCollection(Of TimeZoneInfo)
+
+        Console.WriteLine("{0} could belong to the following time zones:", _
+                          offsetTime.ToString())
+        ' Get all time zones defined on local system
+        timeZones = TimeZoneInfo.GetSystemTimeZones()
+        ' Iterate time zones
+        For Each timeZone As TimeZoneInfo In timeZones
+            ' Compare offset with offset for that date in that time zone
+            If timeZone.GetUtcOffset(offsetTime.DateTime).Equals(offset) Then
+                Console.WriteLine("   {0}", timeZone.DisplayName)
+            End If
+        Next
+        Console.WriteLine()
+    End Sub
 End Module
 ' This example displays the following output to the console:
 '       6/10/2007 12:00:00 AM -07:00 could belong to the following time zones:

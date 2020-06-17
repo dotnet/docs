@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Events for Clients"
+description: Read about how Microsoft UI Automation events are used by UI Automation clients in .NET. UI Automation allows clients to subscribe to events of interest.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, events for clients"

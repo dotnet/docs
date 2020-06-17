@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+description: Learn how to use Windows Forms to create powerful Windows-based applications that display data, handle user input, and help you deploy your applications.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "Designer_System.Windows.Forms.Design.FormDocumentDesigner"

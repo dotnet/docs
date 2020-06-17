@@ -163,7 +163,7 @@ There are two types of code coverage tools:
 - **DataCollectors:** DataCollectors monitor test execution and collect information about test runs. They report the collected information in various output formats, such as XML and JSON. For more information, see [your first DataCollector](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/datacollector.md).
 - **Report generators:** Use data collected from test runs to generate reports, often as styled HTML.
 
-In this section, the focus is on data collector tools. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md).
+In this section, the focus is on data collector tools. To use Coverlet for code coverage, an existing unit test project must have the appropriate package dependencies, or alternatively rely on [.NET global tooling](../tools/global-tools.md) and the corresponding [coverlet.console](https://www.nuget.org/packages/coverlet.console) NuGet package.
 
 ## Integrate with .NET test
 

@@ -146,6 +146,6 @@ foreach ($item in $workingSet) {
 }
 
 #return $Global:statusOutput
-$Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output
+$Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output | ConvertTo-Json | Out-File 'output.json'
 
-exit $thisExitCode
+exit 0

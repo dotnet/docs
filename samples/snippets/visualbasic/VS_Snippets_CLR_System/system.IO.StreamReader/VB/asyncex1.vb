@@ -10,7 +10,7 @@ Module Example
     Private Async Sub ReadAndDisplayFilesAsync()
         Dim filename As String = "TestFile1.txt"
         Dim buffer() As Char
-        
+
         Using sr As New StreamReader(filename)
             ReDim buffer(CInt(sr.BaseStream.Length))
             Await sr.ReadAsync(buffer, 0, CInt(sr.BaseStream.Length))

@@ -1,5 +1,6 @@
 ---
 title: "Interop ETW Events"
+description: Review interop ETW (event tracing for Windows) events, which capture information about Microsoft intermediate language (MSIL) stub generation & caching in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "interop events [.NET Framework]"

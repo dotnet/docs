@@ -1,5 +1,6 @@
 ---
 title: "Retrieving Setup Information from an Application Domain"
+description: Retrieve setup information from an application domain in .NET using the System.AppDomain class or the AppDomainSetup object.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

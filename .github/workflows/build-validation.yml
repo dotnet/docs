@@ -48,8 +48,9 @@ jobs:
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
         LocateExt: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln;.json"
+        Repo:  
       run: |
-        ./.github/workflows/dependencies/Get-MSBuildResults.ps1 ./ -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }} | ConvertTo-Json | Out-File 'output.json'
+        ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }} | ConvertTo-Json | Out-File 'output.json'
         
     # Update build output json file
     - name: Upload build results

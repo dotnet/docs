@@ -42,12 +42,11 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 - icu-libs
 - krb5-libs
+- libgcc
 - libintl
 - libssl1.1 (Alpine v3.9 or greater)
-- libssl1.0 (Alpine v3.8)
+- libssl1.0 (Alpine v3.8 or lower)
 - libstdc++
-- lttng-ust
-- numactl (optional)
 - zlib
 
 ## Scripted install

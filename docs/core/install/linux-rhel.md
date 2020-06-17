@@ -95,7 +95,7 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Run
 
 ## Dependencies
 
-[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
+[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
 ## Scripted install
 

@@ -122,7 +122,7 @@ sudo apt-get update; \
 
 ## Dependencies
 
-[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
+[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
 ## Scripted install
 

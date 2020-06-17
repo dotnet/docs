@@ -1,14 +1,9 @@
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-- lttng-ust
-- libcurl
-- openssl-libs
 - krb5-libs
 - libicu
-- zlib
-- libunwind
-- libuuid
+- openssl-libs
 
 If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install **compat-openssl10**.
 

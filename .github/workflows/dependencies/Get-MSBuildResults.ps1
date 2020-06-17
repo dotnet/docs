@@ -60,17 +60,15 @@ $Global:statusOutput = @()
 Write-Host "Gathering solutions and projects..."
 
 if ($PullRequest -ne 0) {
-    #$output = Invoke-Expression "LocateProjects `"$SamplesRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName"
+    $output = Invoke-Expression "LocateProjects `"$SamplesRootDir`" --pullrequest $PullRequest --owner $RepoOwner --repo $RepoName"
 }
 else {
-    #$output = Invoke-Expression "LocateProjects `"$SamplesRootDir`""
+    $output = Invoke-Expression "LocateProjects `"$SamplesRootDir`""
 }
-
-$output = dir .\input.txt | Get-Content
 
 if ($LASTEXITCODE -ne 0)
 {
-    throw "Error"
+    throw "Error on running LocateProjects"
 }
 
 Write-Host "Found $($output.Count) items"

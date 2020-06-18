@@ -1,5 +1,6 @@
 ---
 title: Determine Checked Items in CheckedListBox Control
+description: Learn how to determine checked items in the Windows Forms CheckedListBox control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

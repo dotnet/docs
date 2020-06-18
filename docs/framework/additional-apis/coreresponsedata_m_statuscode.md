@@ -1,5 +1,6 @@
 ---
 title: "CoreResponseData.m_StatusCode Field"
+description: Read about the CoreResponseData.m_StatusCode field in .NET. The field is an HttpStatusCode type that contains the status of the HTTP response.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"

@@ -114,13 +114,14 @@ foreach ($item in $workingSet) {
         # Project found, build it
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
-            Write-Host "Running $projectFile"
-            $result = Invoke-Expression "dotnet build `"$projectFile`""
-            New-Result $data[1] $projectFile $LASTEXITCODE $result
+            $result = Invoke-Expression "dotnet build `"$projectFile`"" | Out-String
+            $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
-                $thisExitCode = 1
+                $thisExitCode = 3
             }
+            
+            New-Result $data[1] $projectFile $thisExitCode $result
         }
 
         # No project found
@@ -137,7 +138,7 @@ foreach ($item in $workingSet) {
     }
     catch {
         New-Result $data[1] $projectFile 1000 "ERROR: $($_.Exception)"
-        $thisExitCode = 2
+        $thisExitCode = 4
         Write-Host $_.Exception.Message -Foreground "Red"
         Write-Host $_.ScriptStackTrace -Foreground "DarkGray"
     }
@@ -145,7 +146,65 @@ foreach ($item in $workingSet) {
     $counter++
 }
 
-#return $Global:statusOutput
-$Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output | ConvertTo-Json | Out-File 'output.json'
+$resultItems = $Global:statusOutput | Select-Object InputFile, ProjectFile, ExitCode, Output
+
+# Add our output type
+$typeResult = @"
+public class ResultItem
+{
+    public string ProjectFile;
+    public string InputFile;
+    public int ExitCode;
+    public string BuildOutput;
+    public MSBuildError[] Errors;
+    public int ErrorCount;
+
+    public class MSBuildError
+    {
+        public string Line;
+        public string Error;
+    }
+}
+"@
+Add-Type $typeResult
+
+$transformedItems = $resultItems | ForEach-Object { New-Object ResultItem -Property @{
+                                                    ProjectFile = $_.ProjectFile.Path;
+                                                    InputFile = $_.InputFile;
+                                                    ExitCode = $_.ExitCode;
+                                                    BuildOutput = $_.Output;
+                                                    Errors = @();
+                                                    ErrorCount = 0}
+                                                  }
+         
+# Transform the build output to break it down into MSBuild result entries
+foreach ($item in $transformedItems) {
+    $list = @()
+
+    # No project found OR 
+    if ($item.ExitCode -eq 0) {
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+    }
+    elseif ($item.ExitCode -ne 3) {
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $item.ErrorCount = 1
+    }
+    elseif ($item.ExitCode -ne 0) {
+        $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
+                                         Select-String ": error ([^:]*)" | `
+                                         Select-Object Line -ExpandProperty Matches | `
+                                         Select-Object Line, Groups | `
+                                         Sort-Object Line | Get-Unique -AsString
+        $item.ErrorCount = $errorInfo.Count
+        foreach ($err in $errorInfo) {
+            $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $err.Line; Error = $err.Groups[1].Value }
+        }
+    }
+
+    $item.Errors = $list
+    
+}
+
+$transformedItems | ConvertTo-Json -Depth 3 | Out-File 'output.json'
 
 exit 0

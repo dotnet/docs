@@ -264,7 +264,8 @@ Below is the example *coverage.cobertura.xml* file.
 > dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 > ```
 >
-> The resulting *coverage.cobertura.xml* file is output.
+> The resulting *coverage.cobertura.xml* file is output.  
+> You can follow msbuild integraton guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports
 

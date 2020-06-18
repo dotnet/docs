@@ -70,24 +70,24 @@ Module Module1
     Sub methodDelete()
         Dim db As New Northwnd("c:\northwnd.mdf")
 
-' <Snippet3>
-' Query the database for the rows to be deleted.
-Dim deleteOrderDetails = _
-    From details In db.OrderDetails() _
-    Where details.OrderID = 11000 _
-    Select details
+        ' <Snippet3>
+        ' Query the database for the rows to be deleted.
+        Dim deleteOrderDetails = _
+            From details In db.OrderDetails() _
+            Where details.OrderID = 11000 _
+            Select details
 
-For Each detail As OrderDetail In deleteOrderDetails
-    db.OrderDetails.DeleteOnSubmit(detail)
-Next
+        For Each detail As OrderDetail In deleteOrderDetails
+            db.OrderDetails.DeleteOnSubmit(detail)
+        Next
 
-Try
-    db.SubmitChanges()
-Catch ex As Exception
-    Console.WriteLine(ex)
-    ' Provide for exceptions
-End Try
-' </Snippet3>
+        Try
+            db.SubmitChanges()
+        Catch ex As Exception
+            Console.WriteLine(ex)
+            ' Provide for exceptions
+        End Try
+        ' </Snippet3>
 
     End Sub
 

@@ -1,5 +1,6 @@
 ---
 title: "ConnectionGroup.m_ConnectionList Field"
+description: Learn about the ConnectionGroup.m_ConnectionList field in .NET, which contains connection objects that serve the same URI and share values for other properties.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

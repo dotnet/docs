@@ -71,18 +71,18 @@ Partial Public Class SalesOrders
             ' Define a query that returns Orders and 
             ' Order_Details for a specific customer.
             Dim ordersQuery = From o In context.Orders.Expand("Order_Details") _
-                                   Where o.Customer.CustomerID = customerId _
-                                   Select o
+                              Where o.Customer.CustomerID = customerId _
+                              Select o
 
             ' Create an DataServiceCollection<T> based on 
             ' execution of the query for Orders.
             Dim customerOrders As DataServiceCollection(Of Order) = _
                 New DataServiceCollection(Of Order)(ordersQuery)
 
-                '<snippetWpfDataBindingCodeShort>
+            '<snippetWpfDataBindingCodeShort>
             ' Make the DataServiceCollection<T> the binding source for the Grid.
-                Me.orderItemsGrid.DataContext = customerOrders
-                '</snippetWpfDataBindingCodeShort>
+            Me.orderItemsGrid.DataContext = customerOrders
+            '</snippetWpfDataBindingCodeShort>
         Catch ex As DataServiceQueryException
             MessageBox.Show(ex.ToString())
         End Try

@@ -1,5 +1,6 @@
 ---
 title: "Peverify.exe (PEVerify Tool)"
+description: Use Peverify.exe (portable executable verify) to help determine if Microsoft intermediate language (MSIL) code & metadata meet type safety standards in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "portable executable files, PEVerify"

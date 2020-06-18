@@ -73,6 +73,8 @@ The following table is a list of currently supported .NET Core releases and the 
 | ✔️ [9](linux-debian.md#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ❌ [8](linux-debian.md#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 
+For more information, see [Install .NET Core on Debian](linux-debian.md).
+
 ## Fedora
 
 Fedora uses DNF as its package manager.
@@ -108,6 +110,8 @@ The following table is a list of currently supported .NET Core releases on openS
 |----------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-opensuse.md#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
+For more information, see [Install .NET Core on openSUSE](linux-opensuse.md).
+
 ## Red Hat
 
 Red Hat Enterprise Linux (RHEL) uses yum (RHEL 7) and DNF (RHEL 8) as the package manager.
@@ -123,6 +127,8 @@ The following table is a list of currently supported .NET Core releases on both 
 | ✔️ [8](linux-rhel.md#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](linux-rhel.md#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
+For more information, see [Install .NET Core on RHEL](linux-rhel.md).
+
 ## SLES
 
 SLES uses zypper as the package manager.
@@ -137,6 +143,8 @@ The following table is a list of currently supported .NET Core releases on both 
 |------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-sles.md#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [12 SP2](linux-sles.md#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+
+For more information, see [Install .NET Core on SLES](linux-sles.md).
 
 ## Ubuntu
 

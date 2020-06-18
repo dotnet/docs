@@ -5,8 +5,8 @@ Imports System.Reflection
 
 Public Class OtherSnippets
     Public Shared Sub Main()
-         SnippetA()
-         SnippetB()
+        SnippetA()
+        SnippetB()
     End Sub
 
     Public Shared Sub SnippetA()

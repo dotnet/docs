@@ -203,8 +203,8 @@ Class Source1
 
         Using context As New AdventureWorksEntities()
             Dim order = (From o In context.SalesOrderHeaders
-                    Where o.SalesOrderID = orderId
-                    Select o).First()
+                         Where o.SalesOrderID = orderId
+                         Select o).First()
 
             ' Get ObjectStateEntry from EntityKey. 
             Dim stateEntry As ObjectStateEntry = _
@@ -244,8 +244,8 @@ Class Source1
             Dim stateEntry As ObjectStateEntry = Nothing
 
             Dim order = (From o In context.SalesOrderHeaders
-                Where o.SalesOrderID = orderId
-                Select o).First()
+                         Where o.SalesOrderID = orderId
+                         Select o).First()
 
             ' Attempts to retrieve ObjectStateEntry for the given EntityKey. 
             Dim isPresent As Boolean = objectStateManager.TryGetObjectStateEntry(DirectCast(order, IEntityWithKey).EntityKey, stateEntry)
@@ -316,8 +316,8 @@ Class Source1
 
             ' Define a LINQ query that returns a selected product. 
             Dim result = From product In products _
-                Where product.ProductID = productID _
-                Select product
+                         Where product.ProductID = productID _
+                         Select product
 
             ' Cast the inferred type var to an ObjectQuery 
             ' and then write the store commands for the query. 
@@ -536,7 +536,7 @@ Class Source1
             For Each rec As DbDataRecord In query
                 Console.WriteLine("Name: {0}; ListPrice: {1}", rec(0), rec(1))
             Next
-            
+
         End Using
         '</snippetProjection_Union> 
     End Sub
@@ -693,8 +693,8 @@ Class Source1
             Dim LastName = "Adams"
 
             Dim contactQuery = From contact In context.Contacts _
-                Where contact.LastName = LastName AndAlso contact.FirstName = FirstName _
-                    Select contact
+                               Where contact.LastName = LastName AndAlso contact.FirstName = FirstName _
+                               Select contact
 
 
             ' Iterate through the results of the parameterized query.
@@ -1023,8 +1023,8 @@ Class Source1
         Using context As New AdventureWorksEntities()
             Try
                 Dim order = (From o In context.SalesOrderHeaders
-                    Where o.SalesOrderID = orderId
-                    Select o).First()
+                             Where o.SalesOrderID = orderId
+                             Select o).First()
 
                 ' Change the status of an existing order. 
                 order.Status = 1
@@ -1351,8 +1351,8 @@ Class Source1
             ' Define a LINQ query that returns only online orders 
             ' more than the specified amount. 
             Dim onlineOrders = From order In context.SalesOrderHeaders _
-                Where order.OnlineOrderFlag = True AndAlso order.TotalDue > orderCost _
-                Select order
+                               Where order.OnlineOrderFlag = True AndAlso order.TotalDue > orderCost _
+                               Select order
 
             ' Print order information. 
             For Each onlineOrder In onlineOrders
@@ -1415,8 +1415,8 @@ Class Source1
             ' Define a query that returns a list 
             ' of Contact objects sorted by last name. 
             Dim sortedNames = From n In context.Contacts _
-                Order By n.LastName _
-                Select n
+                              Order By n.LastName _
+                              Select n
 
             Console.WriteLine("The sorted list of last names:")
             For Each name As Contact In sortedNames
@@ -1469,8 +1469,8 @@ Class Source1
         Using context As New AdventureWorksEntities()
             ' Get a specified customer by contact ID. 
             Dim customer = (From customers In context.Contacts _
-                Where customers.ContactID = customerId _
-                Select customers).First()
+                            Where customers.ContactID = customerId _
+                            Select customers).First()
 
             ' You do not have to call the Load method to load the orders for the customer, 
             ' because lazy loading is set to true 
@@ -1484,8 +1484,8 @@ Class Source1
 
             ' Get the online orders that have shipped. 
             Dim shippedOrders = From order In customer.SalesOrderHeaders _
-                Where order.OnlineOrderFlag = True AndAlso order.Status = 5 _
-                Select order
+                                Where order.OnlineOrderFlag = True AndAlso order.Status = 5 _
+                                Select order
 
             ' Write the number of orders placed online. 
             Console.WriteLine("{0} orders placed online have been shipped.", shippedOrders.Count())
@@ -1502,14 +1502,14 @@ Class Source1
         Using context As New AdventureWorksEntities()
             ' Get a specified customer by contact ID. 
             Dim customer = (From customers In context.Contacts
-                Where customers.ContactID = customerId
-                Select customers).First()
+                            Where customers.ContactID = customerId
+                            Select customers).First()
 
             ' Use CreateSourceQuery to generate a query that returns 
             ' only the online orders that have shipped. 
             Dim shippedOrders = From orders In customer.SalesOrderHeaders.CreateSourceQuery() _
-                Where orders.OnlineOrderFlag = True AndAlso orders.Status = 5 _
-                Select orders
+                                Where orders.OnlineOrderFlag = True AndAlso orders.Status = 5 _
+                                Select orders
 
             ' Write the number of orders placed online. 
             Console.WriteLine("{0} orders placed online have been shipped.", shippedOrders.Count())
@@ -1934,8 +1934,8 @@ Class Source1
         Dim orderId As Integer = 43680
         Using context As New AdventureWorksEntities()
             Dim order = (From o In context.SalesOrderHeaders
-                Where o.SalesOrderID = orderId
-                Select o).First()
+                         Where o.SalesOrderID = orderId
+                         Select o).First()
 
             ' Add a new item. 
             '<snippetCreateSalesOrderDetailShort> 
@@ -2179,7 +2179,7 @@ Class Source1
             ' Define a LINQ query with a path that returns 
             ' orders and items for a contact. 
             Dim contacts = (From contact In context.Contacts.Include("SalesOrderHeaders.SalesOrderDetails") _
-                Select contact).FirstOrDefault()
+                            Select contact).FirstOrDefault()
             '</snippetSpanLinqOnly> 
 
             ' Execute the query and display information for each item 
@@ -2279,8 +2279,8 @@ Class Source1
             Dim orders As ObjectSet(Of SalesOrderHeader) = context.SalesOrderHeaders
 
             Dim orderQuery As IQueryable(Of Int32) = From order In orders _
-                Where order.Contact.ContactID = contactId _
-                Select order.PurchaseOrderNumber.Length
+                                                     Where order.Contact.ContactID = contactId _
+                                                     Select order.PurchaseOrderNumber.Length
 
             ' Iterate through the collection of values. 
             For Each result As Int32 In orderQuery
@@ -2290,8 +2290,8 @@ Class Source1
             ' Use a nullable DateTime value because ShipDate can be null. 
             '<snippetQueryPrimitiveTypeLinqShort> 
             Dim shipDateQuery As IQueryable(Of System.Nullable(Of DateTime)) = From order In orders _
-                Where order.Contact.ContactID = contactId _
-                Select order.ShipDate
+                                                                               Where order.Contact.ContactID = contactId _
+                                                                               Select order.ShipDate
             '</snippetQueryPrimitiveTypeLinqShort> 
 
             ' Iterate through the collection of values. 
@@ -2387,8 +2387,8 @@ Class Source1
             Try
                 '<snippetObjectChanges> 
                 Dim order = (From o In context.SalesOrderHeaders
-                    Where o.SalesOrderID = orderId
-                    Select o).First()
+                             Where o.SalesOrderID = orderId
+                             Select o).First()
 
                 ' Change the status and ship date of an existing order. 
                 order.Status = 1
@@ -2570,8 +2570,8 @@ Class Source1
 
             ' Get a specified customer by contact ID. 
             Dim contact = (From c In context.Contacts
-                Where c.ContactID = contactID
-                Select c).First()
+                           Where c.ContactID = contactID
+                           Select c).First()
 
             ' Load the orders for the customer explicitly. 
             If Not contact.SalesOrderHeaders.IsLoaded Then
@@ -2702,8 +2702,8 @@ Class Source1
         '<snippetObjectQueryWithComplexType> 
         Using context As New AdventureWorksEntities()
             Dim contacts = From contact In context.Contacts _
-                    Where contact.ContactID = 3 _
-                    Select contact
+                           Where contact.ContactID = 3 _
+                           Select contact
 
             For Each contact As Contact In contacts
                 Console.WriteLine("Contact Id: " & contact.ContactID)
@@ -2829,13 +2829,13 @@ Class Source1
         Using context = New SchoolEntities()
             Dim courseID = 4022
             Dim course = (From c In context.Courses
-                         Where c.CourseID = courseID
-                         Select c).First()
+                          Where c.CourseID = courseID
+                          Select c).First()
 
             Dim personID = 17
             Dim student = (From p In context.People
-                          Where p.PersonID = personID
-                          Select p).First()
+                           Where p.PersonID = personID
+                           Select p).First()
 
             ' The database will generate the EnrollmentID. 
             ' Use the navigation properties to create the association between the objects. 
@@ -2999,10 +2999,10 @@ Class Source1
 End Class
 
 #Region "partial methods"
-        '<snippetPartialClassMethod> 
+'<snippetPartialClassMethod> 
 Partial Public Class SalesOrderHeader
-        ' Update the order total. 
-        '<snippetUpdateOrderTotal> 
+    ' Update the order total. 
+    '<snippetUpdateOrderTotal> 
     Public Sub UpdateOrderTotal()
         Dim newSubTotal As Decimal = 0
 
@@ -3248,8 +3248,8 @@ Public Class UpdateScenario
         Using context As New SchoolEntities()
             ' Query for the StudentGrade object with the specified ID. 
             Dim original = (From o In context.StudentGrades
-                Where o.EnrollmentID = updatedItem.EnrollmentID
-                Select o).First()
+                            Where o.EnrollmentID = updatedItem.EnrollmentID
+                            Select o).First()
 
             ' Apply changes. 
             context.StudentGrades.ApplyCurrentValues(updatedItem)

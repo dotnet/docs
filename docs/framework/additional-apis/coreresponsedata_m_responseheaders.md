@@ -1,5 +1,6 @@
 ---
 title: "CoreResponseData.m_ResponseHeaders Field"
+description: Understand the CoreResponseData.m_ResponseHeaders field in .NET. This field is a WebHeaderCollection type that has headers associated with the server response.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"

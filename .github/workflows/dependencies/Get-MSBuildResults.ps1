@@ -115,7 +115,7 @@ foreach ($item in $workingSet) {
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
-                $thisExitCode = 3
+                $thisExitCode = 4
             }
             
             New-Result $data[1] $projectFile $thisExitCode $result
@@ -131,6 +131,12 @@ foreach ($item in $workingSet) {
         elseif ([int]$data[0] -eq 2) {
             New-Result $data[1] $data[2] 2 "Too many projects found"
             $thisExitCode = 2;
+        }
+
+        # Solution found, but no project
+        elseif ([int]$data[0] -eq 3) {
+            New-Result $data[1] $data[2] 2 "Top-level solution found, but no project"
+            $thisExitCode = 3;
         }
     }
     catch {

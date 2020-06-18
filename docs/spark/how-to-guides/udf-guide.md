@@ -1,22 +1,28 @@
-# Guide to User-Defined Functions (UDFs)
+---
+title: Create user-defined functions (UDF) in .NET for Apache Spark
+description: Learn how to implement user-defined functions (UDF) in .NET for Apache Spark applications.
+ms.date: 06/11/2020
+ms.topic: conceptual
+ms.custom: mvc,how-to
+---
 
-This is a guide to show how to use UDFs in .NET for Apache Spark.
+# Create user-defined functions (UDF) in .NET for Apache Spark
 
-## What are UDFs
+In this article, you learn how to use user-defined functions (UDF) in .NET for Apache Spark. [UDFs)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) are a Spark feature that allow you to use custom functions to extend the system's built-in functionality. UDFs transform values from a single row within a table to produce a single corresponding output value per row based on the logic defined in the UDF.
 
-[User-Defined Functions (UDFs)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) are a feature of Spark that allow developers to use custom functions to extend the system's built-in functionality. They transform values from a single row within a table to produce a single corresponding output value per row based on the logic defined in the UDF.
+## Define UDFs
 
-Let's take the following as an example for a UDF definition:
+Review the following UDF definition:
 
 ```csharp
 string s1 = "hello";
 Func<Column, Column> udf = Udf<string, string>(
     str => $"{s1} {str}");
-
 ```
-The above defined UDF takes a `string` as an input (in the form of a [Column](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Column.cs#L14) of a [Dataframe](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L24)), and returns a `string` with `hello` appended in front of the input.
 
-For a sample Dataframe, let's take the following Dataframe `df`:
+The UDF takes a `string` as an input in the form of a [Column](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Column.cs#L14) of a [Dataframe](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/DataFrame.cs#L24)) and returns a `string` with `hello` appended in front of the input.
+
+The following DataFrame `df` contains a list of names:
 
 ```text
 +-------+
@@ -28,13 +34,13 @@ For a sample Dataframe, let's take the following Dataframe `df`:
 +-------+
 ```
 
-Now let's apply the above defined `udf` to the dataframe `df`:
+Now let's apply the above defined `udf` to the DataFrame `df`:
 
 ```csharp
 DataFrame udfResult = df.Select(udf(df["name"]));
 ```
 
-This would return the below as the Dataframe `udfResult`:
+The following DataFrame `udfResult` is the result of the UDF:
 
 ```text
 +-------------+
@@ -45,17 +51,18 @@ This would return the below as the Dataframe `udfResult`:
 | hello Justin|
 +-------------+
 ```
-To get a better understanding of how to implement UDFs, please take a look at the [UDF helper functions](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Functions.cs#L3616) and some [test examples](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark.E2ETest/UdfTests/UdfSimpleTypesTests.cs#L49).
+
+To better understand how to implement UDFs, review the [UDF helper functions](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/Functions.cs#L3616) and [examples](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark.E2ETest/UdfTests/UdfSimpleTypesTests.cs#L49) on GitHub.
 
 ## UDF serialization
 
-Since UDFs are functions that need to be executed on the workers, they have to be serialized and sent to the workers as part of the payload from the driver. This involves serializing the [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/) which is a reference to the method, along with its [target](https://docs.microsoft.com/en-us/dotnet/api/system.delegate.target?view=netframework-4.8) which is the class instance on which the current delegate invokes the instance method. Please take a look at this [code](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149) to get a better understanding of how UDF serialization is being done.
+Because UDFs are functions that need to be executed on workers, they have to be serialized and sent to the workers as part of the payload from the driver. The [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/), which is a reference to the method, needs to be serialized as well as its [target](https://docs.microsoft.com/en-us/dotnet/api/system.delegate.target?view=netframework-4.8) which is the class instance on which the current delegate invokes the instance method. Review this [code example in GitHub](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149) to get a better understanding of how UDF serialization is being done.
 
-## Good to know while implementing UDFs
+.NET for Apache Spark uses .NET Core, which doesn't support serializing delegates. Instead, reflection is used to serialize the target where the delegate is defined. When multiple delegates are defined in a common scope, they have a shared closure that becomes the target of reflection for serialization.
 
-One behavior to be aware of while implementing UDFs in .NET for Apache Spark is how the target of the UDF gets serialized. .NET for Apache Spark uses .NET Core, which does not support serializing delegates, so it is instead done by using reflection to serialize the target where the delegate is defined. When multiple delegates are defined in a common scope, they have a shared closure that becomes the target of reflection for serialization. Let's take an example to illustrate what that means.
+### Serialization example
 
-The following code snippet defines two string variables that are being referenced in two function delegates that return the respective strings as result:
+The following code snippet defines two string variables that are being referenced in two function delegates that return the respective strings as a result:
 
 ```csharp
 using System;
@@ -103,11 +110,12 @@ public class C
     }
 }
 ```
-As can be seen in the above decompiled code, both `func` and `func2` share the same closure `<>c__DisplayClass0_0`, which is the target that is serialized when serializing the delegates `func` and `func2`. Hence, even though `Func<string, string> a` is only referencing `s1`, `s2` also gets serialized when sending over the bytes to the workers.
 
-This can lead to some unexpected behaviors at runtime (like in the case of using [broadcast variables](broadcast-guide.md)), which is why we recommend restricting the visibility of the variables used in a function to that function's scope.
+Both `func` and `func2` share the same closure `<>c__DisplayClass0_0`, which is the target that is serialized when serializing the delegates `func` and `func2`. Even though `Func<string, string> a` is only referencing `s1`, `s2` is also serialized when the bytes are sent to the workers.
 
-Going back to the above example, the following is the recommended way to implement the desired behavior of previous code snippet:
+This can lead to some unexpected behaviors at runtime (like in the case of using [broadcast variables](broadcast-guide.md)), which is why we recommend that you restrict the visibility of the variables used in a function to that function's scope.
+
+The following code snippet is the recommended way to implement the desired serialization behavior:
 
 ```csharp
 using System;
@@ -165,13 +173,14 @@ public class C
 }
 ```
 
-Here we see that `func` and `func2` no longer share a closure and have their own separate closures `<>c__DisplayClass0_0` and `<>c__DisplayClass0_1` respectively. When used as the target for serialization, nothing other than the referenced variables will get serialized for the delegate.
-
-This behavior is important to keep in mind while implementing multiple UDFs in a common scope. 
+Notice that `func` and `func2` no longer share a closure, and they have their own separate closures `<>c__DisplayClass0_0` and `<>c__DisplayClass0_1` respectively. When used as the target for serialization, nothing other than the referenced variables will get serialized for the delegate. This behavior is important to keep in mind while implementing multiple UDFs in a common scope.
 
 ## Some Spark UDF caveats
 
 * Null values in UDFs can throw exceptions. It's the responsibility of the developer to handle them.
 * UDFs don't leverage the optimizations provided by Spark's built-in functions, so it's recommended to use built-in functions where possible.
 
-To learn more about UDFs in general, please review the following articles that explain UDFs and how to use them: [UDFs in databricks(scala)](https://docs.databricks.com/spark/latest/spark-sql/udf-scala.html)
+## Next steps
+
+* [Get started with .NET for Apache Spark](../tutorials/get-started.md)
+* [Debug a .NET for Apache Spark application on Windows](debug.md)

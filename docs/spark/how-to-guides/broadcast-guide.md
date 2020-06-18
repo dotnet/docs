@@ -1,44 +1,46 @@
-# Guide to using Broadcast Variables
+---
+title: Use broadcast variables in .NET for Apache Spark
+description: Learn how to use broadcast variables in .NET for Apache Spark applications.
+ms.date: 06/11/2020
+ms.topic: conceptual
+ms.custom: mvc,how-to
+---
 
-This is a guide to show how to use broadcast variables in .NET for Apache Spark.
+# Use broadcast variables in .NET for Apache Spark
 
-## What are Broadcast Variables
+In this article, you learn how to use broadcast variables in .NET for Apache Spark. [Broadcast variables in Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) are mechanisms for sharing variables across executors that are meant to be read-only. Broadcast variables allow you to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks. You can use broadcast variables to give every node a copy of a large input dataset in an efficient manner.
 
-[Broadcast variables in Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) are a mechanism for sharing variables across executors that are meant to be read-only. They allow the programmer to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks. They can be used, for example, to give every node a copy of a large input dataset in an efficient manner.
+Because the data is sent only once, broadcast variables have performance benefits when compared to local variables that are shipped to the executors with each task. Refer to the [official broadcast variable documentation](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) to get a deeper understanding of broadcast variables and why they are used.
 
-### How to use broadcast variables in .NET for Apache Spark
+## Create broadcast variables
 
-Broadcast variables are created from a variable `v` by calling `SparkContext.Broadcast(v)`. The broadcast variable is a wrapper around `v`, and its value can be accessed by calling the `Value()` method. 
+To create a broadcast variable, call `SparkContext.Broadcast(v)` for any variable `v`. The broadcast variable is a wrapper around the variable `v`, and its value can be accessed by calling the `Value()` method.
 
-Example:
+In the following code snippet, a string variable `v` is created, and a broadcast variable `bv` is created when `SparkContext.Broadcast(v)`is called. Notice the type parameter for `Broadcast`, string, matches the type of the variable being broadcasted. The user-defined function (UDF) returns the value of `bv`.
 
 ```csharp
 string v = "Variable to be broadcasted";
 Broadcast<string> bv = SparkContext.Broadcast(v);
 
-// Using the broadcast variable in a UDF:
 Func<Column, Column> udf = Udf<string, string>(
     str => $"{str}: {bv.Value()}");
 ```
 
-The type parameter for `Broadcast` should be the type of the variable being broadcasted.
+## Delete broadcast variables
 
-### Deleting broadcast variables
-
-The broadcast variable can be deleted from all executors by calling the `Destroy()` method on it.
+The broadcast variable can be deleted from all executors by calling the `Destroy()` method.
 
 ```csharp
-// Destroying the broadcast variable bv:
 bv.Destroy();
 ```
 
-> Note: `Destroy()` deletes all data and metadata related to the broadcast variable. Use this with caution - once a broadcast variable has been destroyed, it cannot be used again.
+`Destroy()` deletes all data and metadata related to the broadcast variable and should be used with caution. Once a broadcast variable is destroyed, it can't be used again.
 
-#### Caveat of using Destroy
+## Limit broadcast variable scope in UDFs
 
-One important thing to keep in mind while using broadcast variables in UDFs is to limit the scope of the variable to only the UDF that is referencing it. The [guide to using UDFs](udf-guide.md) describes this phenomenon in detail. This is especially crucial when calling `Destroy` on the broadcast variable. If the broadcast variable that has been destroyed is visible to or accessible from other UDFs, it gets picked up for serialization by all those UDFs, even if it is not being referenced by them. This will throw an error as .NET for Apache Spark is not able to serialize the destroyed broadcast variable.
+When you use broadcast variables in UDFs, you need to limit the scope of the variable to only the UDF that is referencing the variable. The [guide to using UDFs](udf-guide.md) describes this phenomenon in detail. Scope is especially crucial when you call `Destroy()` on the broadcast variable.
 
-Example to demonstrate:
+If the broadcast variable that has been destroyed is visible to or accessible from other UDFs, it gets picked up for serialization by all of the UDFs, even if it is not being referenced by them. .NET for Apache Spark is unable to serialize the destroyed broadcast variable, which results in an error. The following code snippet demonstrates this error:
 
 ```csharp
 string v = "Variable to be broadcasted";
@@ -64,7 +66,7 @@ Func<Column, Column> udf2 = Udf<string, string>(
 df.Select(udf2(df["_1"])).Show();
 ```
 
-The recommended way of implementing above desired behavior:
+The following code snippet demonstrates how to ensure that destroying `bv` doesn't affect `udf2` because of an unexpected serialization behavior:
 
 ```csharp
 string v = "Variable to be broadcasted";
@@ -87,6 +89,9 @@ Func<Column, Column> udf2 = Udf<string, string>(
 // Calling udf2 works fine as expected
 df.Select(udf2(df["_1"])).Show();
 ```
- This ensures that destroying `bv` doesn't affect calling `udf2` because of unexpected serialization behavior. 
 
- Broadcast variables are useful for transmitting read-only data to all executors, as the data is sent only once and this can give performance benefits when compared with using local variables that get shipped to the executors with each task. Please refer to the [official documentation](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) to get a deeper understanding of broadcast variables and why they are used.
+## Next steps
+
+* [Get started with .NET for Apache Spark](../tutorials/get-started.md)
+* [Debug a .NET for Apache Spark application on Windows](debug.md)
+* [Deploy .NET for Apache Spark worker and user-defined function binaries](deploy-worker-udf-binaries.md)

@@ -1,6 +1,7 @@
 ---
 title: Make thread-safe calls to controls
 ms.date: "02/19/2019"
+description: Learn how to implement multithreading in your app by calling cross-thread controls in a thread-safe way. 
 dev_langs:
   - "csharp"
   - "vb"

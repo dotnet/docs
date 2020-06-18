@@ -158,7 +158,8 @@
         "docs/azure/sdk/**/**.yml": "https://github.com/azure/azure-sdk-for-net",
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
         "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
-        "docs/standard/data/sqlite/**/*.md": "https://github.com/aspnet/EntityFrameworkCore"
+        "docs/standard/data/sqlite/**/*.md": "https://github.com/aspnet/EntityFrameworkCore",
+        "docs/spark/**/**.md": "https://github.com/dotnet/spark"
       },
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",

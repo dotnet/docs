@@ -1,5 +1,6 @@
 ---
 title: "Pipe Operations in .NET"
+description: "Learn about pipe operations in .NET. Pipes provide a means for interprocess communication. There are two kinds of pipes: anonymous pipes and named pipes."
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

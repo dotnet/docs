@@ -59,7 +59,7 @@ items:
     public override string ToString() => FirstName + " " + LastName;
     ```
 
-    Try the same with the `Caps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
+    Try the same with the `AllCaps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
 
 - title: Importing a single class
   durationInMinutes: 2

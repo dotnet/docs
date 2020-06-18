@@ -1,5 +1,6 @@
 ---
 title: "Destroying threads"
+description: Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

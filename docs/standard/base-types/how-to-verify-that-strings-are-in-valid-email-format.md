@@ -1,5 +1,6 @@
 ---
 title: "How to verify that strings are in valid email format"
+description: Read an example of how a regular expression verifies that strings are in a valid email format in .NET.
 ms.date: "12/10/2018"
 ms.technology: dotnet-standard
 dev_langs:

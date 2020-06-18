@@ -1,5 +1,6 @@
 ---
 title: "Standard TimeSpan format strings"
+description: Review standard TimeSpan format strings, which use a single format specifier to define the text representation of a TimeSpan value in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

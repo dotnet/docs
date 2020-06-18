@@ -6,9 +6,9 @@ Module Module1
         '<snippet4>
         Using context As New SchoolEntities()
             Dim students = From s In context.People _
-                Where s.EnrollmentDate IsNot Nothing _
-                Select New With {.name = s.LastName, _
-                                .avgGrade = AvgStudentGrade(s.PersonID)}
+                           Where s.EnrollmentDate IsNot Nothing _
+                           Select New With {.name = s.LastName, _
+                                           .avgGrade = AvgStudentGrade(s.PersonID)}
 
             For Each student In students
                 Console.WriteLine("{0}: {1}", _

@@ -42,7 +42,7 @@ Namespace ns2
     <Table(Name:="Customers")> _
     Public Class Customer
         <Column(IsPrimaryKey:=True)> _
-    Public CustomerID As String
+        Public CustomerID As String
         ' ...
         Private _Orders As EntitySet(Of Order)
         <Association(Storage:="_Orders", OtherKey:="CustomerID")> _
@@ -65,27 +65,27 @@ Namespace ns2
         IsDefault:=True)> _
     Public Class Vehicle
         <Column(IsDiscriminator:=True)> _
-            Private DiscKey As String
+        Private DiscKey As String
         <Column(IsPrimaryKey:=True)> _
-            Private VIN As String
+        Private VIN As String
         <Column()> _
-            Private MfgPlant As String
+        Private MfgPlant As String
     End Class
 
     Public Class Car
         Inherits Vehicle
         <Column()> _
-            Private TrimCode As Integer
+        Private TrimCode As Integer
         <Column()> _
-            Private ModelName As String
+        Private ModelName As String
     End Class
 
     Public Class Truck
         Inherits Vehicle
         <Column()> _
-            Private Tonnage As Integer
+        Private Tonnage As Integer
         <Column()> _
-            Private Axles As Integer
+        Private Axles As Integer
     End Class
     ' </Snippet4>
 

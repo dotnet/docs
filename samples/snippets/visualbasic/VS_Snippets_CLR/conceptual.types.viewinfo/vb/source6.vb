@@ -3,7 +3,7 @@ Imports System.Reflection
 
 Class Asminfo1
     Public Shared Sub Main()
-        Console.WriteLine ("\nReflection.MemberInfo")
+        Console.WriteLine("\nReflection.MemberInfo")
 
         ' Get the Type and MemberInfo.
         ' Insert the fully qualified class name inside the quotation marks in the

@@ -1,5 +1,6 @@
 ---
 title: "Winmdexp.exe Error Messages"
+description: Understand Winmdexp.exe (Windows runtime metadata export tool) error messages, which only appear during the build process if .NET compilation succeeds.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "WME1095"

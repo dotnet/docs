@@ -69,6 +69,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.Net.Logging class](system.net.logging.md)
 * [System.Net.Mail.MailAddressParser class](system.net.mail.mailaddressparser.md)
 * [System.Net.Mail.QuotedPairReader class](system.net.mail.quotedpairreader.md)
+* [System.Net.Mime.MailBnfHelper class](system.net.mime.mailbnfhelper.md)
 * [System.Net.PooledStream.NetworkStream property](system.net.pooledstream.networkstream.md)
 * [System.Net.RtcState class](system.net.rtcstate.md)
 * [System.Net.Security.SslState.SslProtocol property](system.net.security.sslstate.sslprotocol.md)

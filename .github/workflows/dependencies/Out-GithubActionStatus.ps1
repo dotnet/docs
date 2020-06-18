@@ -33,8 +33,10 @@ if ((($json.ErrorCount).Count -eq 1) -and (($json.ErrorCount)[0] -eq 0)) {
 else {
     $errors = $json | Where-Object ErrorCount -ne 0 | Select-Object InputFile -ExpandProperty Errors | Select-Object InputFile, Error, Line
     
+    Write-Host "Total errors: $($errors.Count)"
+
     foreach ($er in $errors) {
-        Write-Host "::error file=$($er.InputFile)::`nFILE: $($er.File)`nERROR: $($er.Error)`nLINE:$($er.Line)"
+        Write-Host "::error::`n----FILE: $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:$($er.Line)"
     }
 
     exit 1

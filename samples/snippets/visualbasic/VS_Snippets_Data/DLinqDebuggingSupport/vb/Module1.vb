@@ -47,7 +47,7 @@ Module Module1
         Console.ReadLine()
 
         db.SubmitChanges()
-       ' </Snippet2>
+        ' </Snippet2>
     End Sub
 
     Sub method3()

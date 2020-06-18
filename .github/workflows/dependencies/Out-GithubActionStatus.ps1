@@ -28,7 +28,7 @@ $json = Get-Content output.json | ConvertFrom-Json
 $errors = $json | Where-Object ErrorCount -ne 0 | Select-Object InputFile -ExpandProperty Errors | Select-Object InputFile, Error, Line
 
 if ($errors.Count -eq 0) {
-    Write-Host "::debug::All tests passed"
+    Write-Host "All builds passed"
     exit 0
 }
 

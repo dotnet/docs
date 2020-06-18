@@ -34,7 +34,7 @@
     Version:        1.1
     Author:         adegeo@microsoft.com
     Creation Date:  06/17/2020
-    Purpose/Change: Initial release
+    Purpose/Change: Update to GitHub actions and new framework.
 #>
 
 [CmdletBinding()]
@@ -77,8 +77,6 @@ if ($LASTEXITCODE -ne 0)
     throw "Error on running LocateProjects"
 }
 
-Write-Host "Found $($output.Count) items"
-
 function New-Result($inputFile, $projectFile, $exitcode, $outputText)
 {
     $info = @{}
@@ -106,9 +104,8 @@ $ErrorActionPreference = "Continue"
 
 foreach ($item in $workingSet) {
     try {
-        Write-Host "$counter/$length"
-        Write-Host "Processing $item"
-        
+        Write-Host "$counter/$length :: $Item"
+                
         $data = $item.Split('|')
 
         # Project found, build it

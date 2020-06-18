@@ -36,7 +36,7 @@ else {
     Write-Host "Total errors: $($errors.Count)"
 
     foreach ($er in $errors) {
-        Write-Host "::error::`n----FILE: $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:$($er.Line)"
+        Write-Error "----FILE: $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:$($er.Line)"
     }
 
     exit 1

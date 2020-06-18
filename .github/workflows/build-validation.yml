@@ -33,7 +33,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - uses: actions/tookit@actions/tool-cache@1.1.1
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:

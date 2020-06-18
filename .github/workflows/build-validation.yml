@@ -33,6 +33,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - uses: actions/tookit@actions/tool-cache@1.1.1
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
@@ -47,7 +48,7 @@ jobs:
     - name: Locate projects for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
-        LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln;.json"
+        LocateExts: ".cs;.vb;.fs;.cpp;.h;.xaml;.razor;.cshtml;.vbhtml;.csproj;.fsproj;.vbproj;.sln"
       run: |
         ./.github/workflows/dependencies/Get-MSBuildResults.ps1 "${{ github.workspace }}" -PullRequest ${{ github.event.number }} -RepoOwner ${{ github.repository_owner }} -RepoName ${{ github.event.repository.name }}
         
@@ -57,3 +58,11 @@ jobs:
       with:
         name: build
         path: ./output.json
+
+    # Return status based on json file
+    - name: Report status
+      run: |
+        ./.github/workflows/dependencies/Out-GithubActionStatus.ps1
+      
+      
+      

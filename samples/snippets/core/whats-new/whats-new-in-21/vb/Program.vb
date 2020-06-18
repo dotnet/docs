@@ -1,4 +1,4 @@
-﻿Module Program
+Module Program
     Sub Main()
         Dim numbers As Integer() = New Integer(99) {}
 
@@ -15,3 +15,4 @@
 End Module
 ' The example displays the following output:
 '     20  22  24  26  28  30  32  34  36  38
+'

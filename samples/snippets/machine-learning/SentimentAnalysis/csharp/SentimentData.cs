@@ -1,4 +1,4 @@
-﻿// <SnippetAddUsings>
+// <SnippetAddUsings>
 using Microsoft.ML.Data;
 // </SnippetAddUsings>
 

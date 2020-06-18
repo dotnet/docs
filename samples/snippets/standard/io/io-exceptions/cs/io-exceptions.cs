@@ -10,7 +10,7 @@ class Program
         if (sw is null)
             return;
         sw.WriteLine("This is the first line.");
-        sw.WriteLine("This is the second line.");
+        sw.WriteLine("This is the second line.")
         sw.Close();
     }
 

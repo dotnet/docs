@@ -7,6 +7,7 @@ class Program
 {
     static void Main()
     {
+        //Test
         string connectionString = GetConnectionString();
         // Open a sourceConnection to the AdventureWorks database.
         using (SqlConnection sourceConnection =

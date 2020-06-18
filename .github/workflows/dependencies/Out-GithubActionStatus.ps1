@@ -36,7 +36,9 @@ else {
     Write-Host "Total errors: $($errors.Count)"
 
     foreach ($er in $errors) {
-        Write-Host "::debug file=$($er.InputFile)::----FILE: $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:$($er.Line)"
+        Write-Host "::error file=$($er.InputFile)::----FILE:  $($er.InputFile)"
+        Write-Host "::error file=$($er.InputFile)::    ERROR: $($er.Error)"
+        Write-Host "::error file=$($er.InputFile)::    LINE:  $($er.Line)"
     }
 
     exit 1

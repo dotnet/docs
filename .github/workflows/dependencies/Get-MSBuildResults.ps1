@@ -188,13 +188,13 @@ foreach ($item in $transformedItems) {
     if ($item.ExitCode -eq 0) {
         $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
     }
-    elseif ($item.ExitCode -ne 3) {
+    elseif ($item.ExitCode -ne 4) {
         $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
     elseif ($item.ExitCode -ne 0) {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
-                                         Select-String ": error ([^:]*)" | `
+                                         Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `
                                          Select-Object Line, Groups | `
                                          Sort-Object Line | Get-Unique -AsString

@@ -168,4 +168,10 @@ public class C
 Here we see that `func` and `func2` no longer share a closure and have their own separate closures `<>c__DisplayClass0_0` and `<>c__DisplayClass0_1` respectively. When used as the target for serialization, nothing other than the referenced variables will get serialized for the delegate.
 
 This behavior is important to keep in mind while implementing multiple UDFs in a common scope. 
-To learn more about UDFs in general, please review the following articles that explain UDFs and how to use them: [UDFs in databricks(scala)](https://docs.databricks.com/spark/latest/spark-sql/udf-scala.html), [Spark UDFs and some gotchas](https://medium.com/@achilleus/spark-udfs-we-can-use-them-but-should-we-use-them-2c5a561fde6d).
+
+## Some Spark UDF caveats
+
+* Null values in UDFs can throw exceptions. It's the responsibility of the developer to handle them.
+* UDFs don't leverage the optimizations provided by Spark's built-in functions, so it's recommended to use built-in functions where possible.
+
+To learn more about UDFs in general, please review the following articles that explain UDFs and how to use them: [UDFs in databricks(scala)](https://docs.databricks.com/spark/latest/spark-sql/udf-scala.html)

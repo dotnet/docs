@@ -28,11 +28,14 @@ $json = Get-Content output.json | ConvertFrom-Json
 if ((($json.ErrorCount).Count -eq 1) -and (($json.ErrorCount)[0] -eq 0)) {
     # Good status!
     Write-Host "::debug::All tests passed"
+    exit 0
 }
 else {
     $errors = $json | Where-Object ErrorCount -ne 0 | Select-Object InputFile -ExpandProperty Errors | Select-Object InputFile, Error, Line
     
     foreach ($er in $errors) {
-        Write-Host "::error file=$($er.InputFile)::$($er.Error) $($er.Line)"
+        Write-Host "::error file=$($er.InputFile)::`nFILE: $($er.File)`nERROR: $($er.Error)`nLINE:$($er.Line)"
     }
+
+    exit 1
 }

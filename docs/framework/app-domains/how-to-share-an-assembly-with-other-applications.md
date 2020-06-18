@@ -1,5 +1,6 @@
 ---
 title: "How to: Share an assembly with other applications"
+description: See how to share an assembly with other applications in .NET. Assemblies can be private (the default) or shared. To share an assembly, place it in the GAC.
 ms.date: 08/19/2019
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
 ---

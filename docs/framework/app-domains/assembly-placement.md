@@ -1,5 +1,6 @@
 ---
 title: "Assembly Placement"
+description: Review guidelines for .NET assembly placement within directories (for example, in the global assembly cache or in the application's directory or subdirectory).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<codeBase> element"

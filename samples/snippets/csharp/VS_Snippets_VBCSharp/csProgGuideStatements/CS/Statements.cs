@@ -309,8 +309,8 @@
                 Console.WriteLine("pointE.Equals(list[0]): {0}", pointE.Equals(list[0]));
 
                 // Keep the console window open in debug mode.
-                System.Console.WriteLine("Press any key to exit.");
-                System.Console.ReadKey();
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
             }
         }
 
@@ -402,8 +402,8 @@
 
     namespace ValueEqualityValueTypes
     {
-        using System;
         //<Snippet20>
+        using System;
         struct TwoDPoint : IEquatable<TwoDPoint>
         {
             // Read/write auto-implemented properties.
@@ -461,7 +461,7 @@
                 // True:
                 Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
                 // True:
-                Console.WriteLine("Object.Equals(pointA, pointB) = {0}", Object.Equals(pointA, pointB));
+                Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
                 // False:
                 Console.WriteLine("pointA.Equals(null) = {0}", pointA.Equals(null));
                 // False:
@@ -477,7 +477,7 @@
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
                 list.Add(new TwoDPoint(3, 4));
                 // True:
-                Console.WriteLine("pointE.Equals(list[0]): {0}", pointA.Equals(list[0]));
+                Console.WriteLine("pointA.Equals(list[0]): {0}", pointA.Equals(list[0]));
 
                 // Compare nullable to nullable and to non-nullable.
                 TwoDPoint? pointC = null;
@@ -497,8 +497,8 @@
                 Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
 
                 // Keep the console window open in debug mode.
-                System.Console.WriteLine("Press any key to exit.");
-                System.Console.ReadKey();
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
             }
         }
 

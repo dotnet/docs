@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure an Application Domain"
+description: Configure an application domain in .NET. You can provide the CLR with configuration information for a new application domain using the AppDomainSetup class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

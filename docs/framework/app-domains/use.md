@@ -1,5 +1,6 @@
 ---
 title: "Using Application Domains"
+description: Use application domains, which provide a unit of isolation for the common language runtime (CLR). Application domains are created and run inside a process.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application domains, about"

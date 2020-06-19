@@ -1,32 +1,9 @@
 - name: Azure for .NET developers
   href: index.yml
-- name: Migrate to Azure
-  expanded: true
-  items:
-    - name: Choose an Azure hosting option
-      href: ./migration/choose.md
-    - name: Migrate a .NET web app or service to Azure App Service
-      href: ./migration/app-service.md
-    - name: Migrate an ASP.NET app to an Azure VM
-      href: ./migration/vm.md
-    - name: Migrate a SQL Server database to Azure
-      href: ./migration/sql.md
-- name: Cloud development with Azure
+- name: Get started on Azure with .NET
   items:
     - name: Introduction to Azure and .NET
       href: intro.md
-    - name: Provision, access, and manage resources
-      href: cloud-development-provisioning.md
-    - name: The Azure development flow
-      href: cloud-development-flow.md
-- name: Get started on Azure with Python
-  items:
-    - name: Overview of Azure libraries
-      href: azure-sdk-overview.md
-    - name: Set up your dev environment
-      href: configure-local-development-environment.md
-    - name: Library usage patterns
-      href: azure-sdk-library-usage-patterns.md
     - name: Examples
       items:
       - name: "Provision a resource group"
@@ -57,58 +34,8 @@
     href: quickstarts-messaging-iot.md
   - name: Other services
     href: quickstarts-other-services.md
-- name: Scenario-specific tutorials
-  items:
-    - name: Deploy a web app with VS Code
-      items:
-        - name: 1 Introduction and prerequisites
-          href: tutorial-deploy-app-service-on-linux-01.md
-        - name: 2 Prepare your app
-          href: tutorial-deploy-app-service-on-linux-02.md
-        - name: 3 Create the App Service
-          href: tutorial-deploy-app-service-on-linux-03.md
-        - name: 4 Configure the startup file
-          href: tutorial-deploy-app-service-on-linux-04.md
-        - name: 5 Deploy the app
-          href: tutorial-deploy-app-service-on-linux-05.md
-        - name: 6 Stream logs
-          href: tutorial-deploy-app-service-on-linux-06.md
-        - name: 7 Clean up resources
-          href: tutorial-deploy-app-service-on-linux-07.md
-    - name: Deploy containers with VS Code
-      items:
-        - name: 1 Introduction and prerequisites
-          href: tutorial-deploy-containers-01.md
-        - name: 2 Deploy the container image
-          href: tutorial-deploy-containers-02.md
-        - name: 3 Make changes and redeploy
-          href: tutorial-deploy-containers-03.md
-        - name: 4 Stream logs
-          href: tutorial-deploy-containers-04.md
-        - name: 5 Clean up resources
-          href: tutorial-deploy-containers-05.md
-    - name: Deploy serverless Azure Functions with VS Code
-      items:
-        - name: 1 Introduction and prerequisites
-          href: tutorial-vs-code-serverless-python-01.md
-        - name: 2 Create the Python function
-          href: tutorial-vs-code-serverless-python-02.md
-        - name: 3 Examine code files
-          href: tutorial-vs-code-serverless-python-03.md
-        - name: 4 Debug locally
-          href: tutorial-vs-code-serverless-python-04.md
-        - name: 5 Deploy to Azure
-          href: tutorial-vs-code-serverless-python-05.md
-        - name: 6 Add a second function
-          href: tutorial-vs-code-serverless-python-06.md
-        - name: 7 Add a storage binding
-          href: tutorial-vs-code-serverless-python-07.md
-        - name: 8 Clean up resources
-          href: tutorial-vs-code-serverless-python-08.md
 - name: How-to guides
   items:
-  - name: Install library packages
-    href: azure-sdk-install.md
   - name: Authenticate apps with Azure
     href: azure-sdk-authenticate.md
   - name: Manage service principals
@@ -117,10 +44,6 @@
     href: how-to-assign-role-permissions.md
   - name: Configure logging
     href: azure-sdk-logging.md
-  - name: Configure REST API arguments
-    href: azure-sdk-operation-config.md
-  - name: Multi-cloud development
-    href: azure-sdk-multi-cloud.md
 - name: Samples
   items:
   - name: Web apps & serverless

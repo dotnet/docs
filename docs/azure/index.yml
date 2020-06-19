@@ -157,7 +157,48 @@ landingContent:
         links:
           - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
             url: https://docs.microsoft.com/azure/postgresql/connect-csharp
-
+  - title: Messaging
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Choose an Azure hosting option
+            url: ./migration/choose.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate a .NET web app or service to Azure App Service
+            url: ./migration/app-service.md
+          - text: Migrate an ASP.NET app to an Azure VM
+            url: ./migration/vm.md
+          - text: Migrate a SQL Server database to Azure
+            url: ./migration/sql.md
+  - title: Diagnostics
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Choose an Azure hosting option
+            url: ./migration/choose.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate a .NET web app or service to Azure App Service
+            url: ./migration/app-service.md
+          - text: Migrate an ASP.NET app to an Azure VM
+            url: ./migration/vm.md
+          - text: Migrate a SQL Server database to Azure
+            url: ./migration/sql.md
+  - title: Migration
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Choose an Azure hosting option
+            url: ./migration/choose.md
+      - linkListType: how-to-guide
+        links:
+          - text: Migrate a .NET web app or service to Azure App Service
+            url: ./migration/app-service.md
+          - text: Migrate an ASP.NET app to an Azure VM
+            url: ./migration/vm.md
+          - text: Migrate a SQL Server database to Azure
+            url: ./migration/sql.md
   - title: .NET architectural guides
     linkLists:
       - linkListType: learn
@@ -174,18 +215,3 @@ landingContent:
             url: https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/
           - text: Modernize existing .NET applications with Azure cloud and Windows containers
             url: https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/
-
-  - title: Migration
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Choose an Azure hosting option
-            url: ./migration/choose.md
-      - linkListType: how-to-guide
-        links:
-          - text: Migrate a .NET web app or service to Azure App Service
-            url: ./migration/app-service.md
-          - text: Migrate an ASP.NET app to an Azure VM
-            url: ./migration/vm.md
-          - text: Migrate a SQL Server database to Azure
-            url: ./migration/sql.md

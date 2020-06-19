@@ -23,7 +23,7 @@ This document provides an overview of key concepts and services .NET developers 
 
 **Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action. One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.
 
-**Azure SDK for .NET**: Sometimes referred to as the **Azure libraries for .NET**, this collectively refers to the [NuGet packages](https://www.nuget.org/profiles/azure-sdk) you install in your project that provide various interactions and functionality with Azure. These packages also include management libraries used to provision and administer the resources.
+**Azure SDK for .NET**: Sometimes referred to as the **Azure libraries for .NET**, this collectively refers to the [NuGet packages](https://www.nuget.org/profiles/azure-sdk) you install in your project that provide various interactions and functionality with Azure services. These packages also include management libraries used to provision and administer the resources.
 
 ## Choosing a hosting option
 
@@ -65,7 +65,7 @@ If you use Visual Studio, you can add support for certain Azure services to your
 
 ## Using the Azure SDK for .NET
 
-If you're using the Azure SDK for .NET to consume or manage your Azure resources, please note the following:
+If you're using the Azure SDK for .NET to access or manage your Azure resources, please note the following:
 
 * **Authentication**: Many libraries in the SDK use a common authentication infrastructure, while some libraries use authentication mechanisms specific to the service they're consuming. For more information, see [Authentication with the Azure SDK for .NET](authentication.md).
 * **Logging**: If supported, the client libraries include the ability to log client library operations. For more information, see [Logging with the Azure SDK for .NET](logging.md).

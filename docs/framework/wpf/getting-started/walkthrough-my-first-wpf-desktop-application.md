@@ -1,6 +1,7 @@
 ---
 title: Create your first WPF app in Visual Studio 2019 - .NET Framework
 titleSuffix: ""
+description: Develop a Windows Presentation Foundation (WPF) desktop application that includes elements common to most WPF applications.
 ms.date: 09/06/2019
 dev_langs:
   - "csharp"

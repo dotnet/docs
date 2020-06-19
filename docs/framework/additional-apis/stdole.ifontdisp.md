@@ -1,5 +1,6 @@
 ---
 title: IFontDisp Interface (stdole)
+description: See reference information about the IFontDisp interface in .NET. This interface is in the stdole namespace and the stdole assembly (in the stdole.dll library).
 ms.date: 03/28/2019
 topic_type:
   - "apiref"
@@ -10,7 +11,7 @@ api_location:
 api_type:
   - "Assembly"
 ---
-# IPictureFont Interface
+# IFontDisp Interface
 
 ```csharp
 [GuidAttribute("BEF6E003-A874-101A-8BBA-00AA00300CAB")]

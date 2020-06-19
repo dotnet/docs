@@ -1,5 +1,6 @@
 ---
 title: "Assembly Binding Redirection Security Permission"
+description: Learn about the security permission required for explicit assembly binding redirection in an application configuration file in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution, assembly binding redirection"

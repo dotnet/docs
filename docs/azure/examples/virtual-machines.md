@@ -107,7 +107,7 @@ vnet_result = poller.result()
 print(f"Provisioned virtual network {vnet_result.name} with address prefixes {vnet_result.address_space.address_prefixes}")
 
 # Step 3: Provision the subnet and wait for completion
-poller = network_client.subnets.create_or_update(RESOURCE_GROUP_NAME, 
+poller = network_client.subnets.create_or_update(RESOURCE_GROUP_NAME,
     VNET_NAME, SUBNET_NAME,
     { "address_prefix": "10.0.0.0/24" }
 )
@@ -132,7 +132,7 @@ print(f"Provisioned public IP address {ip_address_result.name} with address {ip_
 
 # Step 5: Provision the network interface client
 poller = network_client.network_interfaces.create_or_update(RESOURCE_GROUP_NAME,
-    NIC_NAME, 
+    NIC_NAME,
     {
         "location": LOCATION,
         "ip_configurations": [ {
@@ -219,8 +219,6 @@ Open the [Azure portal](https://portal.azure.com), navigate to the "PythonAzureE
 
 ### For reference: equivalent Azure CLI commands
 
-# [cmd](#tab/cmd)
-
 ```azurecli
 rem Provision the resource group
 
@@ -249,8 +247,6 @@ az vm create -g PythonAzureExample-VM-rg -n ExampleVM -l "centralus" ^
     --nics python-example-nic --image UbuntuLTS ^
     --admin-username azureuser --admin-password ChangePa$$w0rd24
 ```
-
-# [bash](#tab/bash)
 
 ```azurecli
 # Provision the resource group

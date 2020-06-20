@@ -41,13 +41,9 @@ Visit [https://github.com/Azure-Samples/python-docs-hello-world](https://github.
 
 Then create an environment variable named `REPO_URL` with the URL of your fork. The example code in the next section depends on this environment variable:
 
-# [cmd](#tab/cmd)
-
 ```cmd
 set REPO_URL=<url_of_your_fork>
 ```
-
-# [bash](#tab/bash)
 
 ```bash
 REPO_URL=<url_of_your_fork>
@@ -89,7 +85,7 @@ print(f"Provisioned resource group {rg_result.name}")
 
 # Names for the App Service plan and App Service. We use a random number with the
 # latter to create a reasonably unique name. If you've already provisioned a
-# web app and need to re-run the script, set the WEB_APP_NAME environment 
+# web app and need to re-run the script, set the WEB_APP_NAME environment
 # variable to that name instead.
 SERVICE_PLAN_NAME = 'PythonAzureExample-WebApp-plan'
 WEB_APP_NAME = os.environ.get("WEB_APP_NAME", f"PythonAzureExample-WebApp-{random.randint(1,100000):05}")
@@ -200,8 +196,6 @@ You can also use the [`ResourceManagementClient.resource_groups.delete`](/python
 
 The following Azure CLI commands complete the same provisioning steps as the Python script:
 
-# [cmd](#tab/cmd)
-
 ```azurecli
 az group create -l centralus -n PythonAzureExample-WebApp-rg
 
@@ -218,8 +212,6 @@ az webapp create -n PythonAzureExample-WebApp-12345 --plan PythonAzureExample-We
 
 rem Replace <your_fork> with the specific URL of your forked repository.
 ```
-
-# [bash](#tab/bash)
 
 ```azurecli
 az group create -l centralus -n PythonAzureExample-WebApp-rg

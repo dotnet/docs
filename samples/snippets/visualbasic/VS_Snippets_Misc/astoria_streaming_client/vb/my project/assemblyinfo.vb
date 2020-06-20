@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("NorthwindStreamingClientVB")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("NorthwindStreamingClientVB")> 
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("NorthwindStreamingClientVB")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("NorthwindStreamingClientVB")>
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")>
+<Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("d8d0c85e-358f-43fb-a5bd-ddbcb28780dd")> 
+<Assembly: Guid("d8d0c85e-358f-43fb-a5bd-ddbcb28780dd")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

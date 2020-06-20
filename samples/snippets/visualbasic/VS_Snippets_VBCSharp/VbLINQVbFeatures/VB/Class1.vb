@@ -101,7 +101,7 @@ Module Module1
     '<Snippet6>
     ' Import System.Runtime.CompilerServices to use the Extension attribute.
     <Extension()>
-        Public Sub Print(ByVal str As String)
+    Public Sub Print(ByVal str As String)
         Console.WriteLine(str)
     End Sub
     '</Snippet6>

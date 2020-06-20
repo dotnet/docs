@@ -56,7 +56,7 @@ To better understand how to implement UDFs, review the [UDF helper functions](ht
 
 ## UDF serialization
 
-Because UDFs are functions that need to be executed on workers, they have to be serialized and sent to the workers as part of the payload from the driver. The [delegate](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/), which is a reference to the method, needs to be serialized as well as its [target](https://docs.microsoft.com/en-us/dotnet/api/system.delegate.target?view=netframework-4.8) which is the class instance on which the current delegate invokes the instance method. Review this [code example in GitHub](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149) to get a better understanding of how UDF serialization is being done.
+Because UDFs are functions that need to be executed on workers, they have to be serialized and sent to the workers as part of the payload from the driver. The [delegate](../../csharp/programming-guide/delegates/index.md), which is a reference to the method, needs to be serialized as well as its [target](xref:System.Delegate.Target%2A), which is the class instance on which the current delegate invokes the instance method. Review this [code example in GitHub](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Utils/CommandSerDe.cs#L149) to get a better understanding of how UDF serialization is being done.
 
 .NET for Apache Spark uses .NET Core, which doesn't support serializing delegates. Instead, reflection is used to serialize the target where the delegate is defined. When multiple delegates are defined in a common scope, they have a shared closure that becomes the target of reflection for serialization.
 

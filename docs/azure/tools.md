@@ -1,21 +1,21 @@
 ---
-title: Tools for Azure .NET and .NET Core developers
+title: Tools for Azure .NET developers
 description: Get the tools to start using the Azure .NET libraries from a Windows, Linux, and Mac environment.
 ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
 ---
 
-# Tools for .NET and .NET Core Azure developers
+# Azure tools for developing with .NET
 
 ## SDK downloads
 
-Azure libraries for .NET are implemented as [NuGet packages](https://www.nuget.org/packages?q=windowsazureofficial). See the [API Reference](/dotnet/api/overview/azure/?view=azure-dotnet) for installation instructions organized by Azure service.
+Azure libraries for .NET are implemented as [NuGet packages](https://www.nuget.org/packages?q=windowsazureofficial). See the [API Reference](/dotnet/api/overview/azure/?view=azure-dotnet) for reference documentation organized by Azure service.
 
 ## Development tools
 
 Visual Studio has tooling for many Azure services built-in. Some Azure services have additional tools or emulators available, such as [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). See the documentation for your Azure service for any additional tools, if necessary.
 
-These instructions install the recommended starting development environment for your operating system.
+Select your preferred development environment below.
 
 ## [Visual Studio on Windows](#tab/vs)
 
@@ -36,7 +36,7 @@ In the Visual Studio installer, install Visual Studio (or modify an existing ins
 
 ### Step 3: Develop with .NET on Azure
 
-Get started by [deploying your first ASP.NET Core web app on Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
+Get started by [deploying your first ASP.NET Core web app on Azure App Service](/azure/app-service-web/app-service-web-get-started-dotnet).
 
 ## [Visual Studio Code (cross-platform)](#tab/vscode)
 
@@ -65,6 +65,6 @@ Install the Azure Tools extension in Visual Studio Code.
 
 ### Step 4: Develop with .NET on Azure
 
-Get started by [deploying your first ASP.NET Core web app on Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-dotnetcore).
+Get started by [deploying your first ASP.NET Core web app on Azure App Service on Linux](/azure/app-service/containers/quickstart-dotnetcore).
 
 ---

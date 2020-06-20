@@ -40,129 +40,129 @@ landingContent:
           - text: .NET developer tools
             url: tools.md
           - text: Azure Identity client library for .NET (SDK authentication)
-            url: https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+            url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
           - text: Logging with the Azure SDK for .NET
             url: logging.md
       - linkListType: learn
         links:
           - text: Azure fundamentals
-            url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
+            url: /learn/paths/azure-fundamentals/
       - linkListType: download
         links:
           - text: Sample code
-            url: https://docs.microsoft.com/samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+            url: /samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
       - linkListType: reference
         links:
           - text: Azure libraries for .NET API reference 
-            url: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet
+            url: /dotnet/api/overview/azure/?view=azure-dotnet
 
   - title: Build web apps
     linkLists:
       - linkListType: overview
         links:
           - text: App Service
-            url: https://docs.microsoft.com/azure/app-service/overview
+            url: /azure/app-service/overview
           - text: Azure Functions
-            url: https://docs.microsoft.com/azure/azure-functions/functions-overview
+            url: /azure/azure-functions/functions-overview
       - linkListType: quickstart
         links:
           - text: Deploy an ASP.NET web app
-            url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
+            url: /azure/app-service/app-service-web-get-started-dotnet
           - text: Build a serverless function
-            url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio      
+            url: /azure/azure-functions/functions-create-your-first-function-visual-studio      
       - linkListType: learn
         links:
           - text: Host a web app with Azure App Service
-            url: https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/
+            url: /learn/modules/host-a-web-app-with-azure-app-service/
           - text: Develop, test, and deploy an Azure Function with Visual Studio
-            url: https://docs.microsoft.com/learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
+            url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
           - text: Publish and manage your APIs with Azure API Management
-            url: https://docs.microsoft.com/learn/modules/publish-manage-apis-with-azure-api-management/
+            url: /learn/modules/publish-manage-apis-with-azure-api-management/
       - linkListType: tutorial
         links:
           - text: ASP.NET Core web app with App Service and Azure SQL Database
-            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+            url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
           - text: Managed identity with ASP.NET and Azure SQL Database
-            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-connect-msi
+            url: /azure/app-service/app-service-web-tutorial-connect-msi
           - text: Web API with CORS in Azure App Service
-            url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api
+            url: /azure/app-service/app-service-web-tutorial-rest-api
 
   - title: Build cloud native apps
     linkLists:
       - linkListType: quickstart
         links:
           - text: Run and debug a microservice in Kubernetes
-            url: https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio
+            url: /azure/dev-spaces/quickstart-netcore-visualstudio
       - linkListType: learn
         links: 
           - text: Create and deploy a cloud-native ASP.NET Core microservice
-            url: https://docs.microsoft.com/learn/modules/microservices-aspnet-core/
+            url: /learn/modules/microservices-aspnet-core/
       - linkListType: how-to-guide
         links:
           - text: Deploy a .NET Core app to Azure Container Registry
-            url: https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker
+            url: /visualstudio/containers/hosting-web-apps-in-docker
       - linkListType: tutorial
         links:
           - text: ASP.NET Core app with Visual Studio container tools
-            url: https://docs.microsoft.com/visualstudio/containers/container-tools
+            url: /visualstudio/containers/container-tools
           - text: Deploy and debug multiple containers in AKS
-            url: https://docs.microsoft.com/azure/dev-spaces/multi-service-netcore-visualstudio
+            url: /azure/dev-spaces/multi-service-netcore-visualstudio
           - text: Dynamic configuration and feature flags using Azure App Config
-            url: https://docs.microsoft.com/azure/azure-app-configuration/use-feature-flags-dotnet-core
+            url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
 
   - title: Authentication and security
     linkLists:
       - linkListType: overview
         links:
           - text: Microsoft identity platform (Azure AD)
-            url: https://docs.microsoft.com/azure/active-directory/develop/
+            url: /azure/active-directory/develop/
       - linkListType: learn
         links:
           - text: Secure your application by using OpenID Connect and Azure AD
-            url: https://docs.microsoft.com/learn/modules/secure-app-with-oidc-and-azure-ad/
+            url: /learn/modules/secure-app-with-oidc-and-azure-ad/
           - text: Secure custom APIs with Microsoft Identity
-            url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
+            url: /learn/modules/identity-secure-custom-api/
           - text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
-            url: https://docs.microsoft.com/learn/modules/secure-aspnet-core-identity/
+            url: /learn/modules/secure-aspnet-core-identity/
       - linkListType: tutorial
         links:
           - text: Add sign-in to Microsoft to an ASP.NET web app
-            url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
+            url: /azure/active-directory/develop/tutorial-v2-asp-webapp
           - text: Use Azure Key Vault with ASP.NET Core
-            url: https://docs.microsoft.com/azure/key-vault/tutorial-net-create-vault-azure-web-app
+            url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
           - text: Integrate Azure AD B2C with a web API
-            url: https://docs.microsoft.com/azure/active-directory-b2c/tutorial-single-page-app-webapi
+            url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
       - linkListType: reference
         links:
           - text: Azure Identity client library for .NET
-            url: https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+            url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
 
   - title: Work with storage & data
     linkLists:
       - linkListType: concept
         links:
           - text: Choose the right data storage option
-            url: https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview
+            url: /azure/architecture/guide/technology-choices/data-store-overview
       - linkListType: quickstart
         links:
           - text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
-            url: https://docs.microsoft.com/azure/azure-sql/database/connect-query-dotnet-core
+            url: /azure/azure-sql/database/connect-query-dotnet-core
           - text: Use .NET to query Azure PostgreSQL
-            url: https://docs.microsoft.com/azure/postgresql/connect-csharp
+            url: /azure/postgresql/connect-csharp
       - linkListType: learn
         links:
           - text: Develop and configure an ASP.NET application that queries an Azure SQL database
-            url: https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/
+            url: /learn/modules/develop-app-that-queries-azure-sql/
           - text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
-            url: https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/
+            url: /learn/modules/build-cosmos-db-app-with-vscode/
           - text: Store application data with Azure Blob storage
-            url: https://docs.microsoft.com/learn/modules/store-app-data-with-azure-blob-storage/
+            url: /learn/modules/store-app-data-with-azure-blob-storage/
           - text: Persist and retrieve relational data with Entity Framework Core
-            url: https://docs.microsoft.com/learn/modules/persist-data-ef-core/
+            url: /learn/modules/persist-data-ef-core/
       - linkListType: tutorial
         links:
           - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
-            url: https://docs.microsoft.com/azure/postgresql/connect-csharp
+            url: /azure/postgresql/connect-csharp
   - title: Messaging on Azure
     linkLists:
       - linkListType: overview
@@ -218,14 +218,14 @@ landingContent:
       - linkListType: learn
         links:
           - text: Architect modern applications in Azure
-            url: https://docs.microsoft.com/learn/paths/architect-modern-apps/
+            url: /learn/paths/architect-modern-apps/
       - linkListType: architecture
         links:
           - text: ".NET Microservices: Architecture for containerized .NET apps"
-            url: https://docs.microsoft.com/dotnet/architecture/microservices/
+            url: /dotnet/architecture/microservices/
           - text: Architect modern web applications with ASP.NET Core and Azure
-            url: https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/
+            url: /dotnet/architecture/modern-web-apps-azure/
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url: https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/
+            url: /dotnet/architecture/containerized-lifecycle/
           - text: Modernize existing .NET applications with Azure cloud and Windows containers
-            url: https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/
+            url: /dotnet/architecture/modernize-with-azure-containers/

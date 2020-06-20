@@ -40,7 +40,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Service connection strings are used in other Azure services like [CosmosDB](https://docs.microsoft.com/azure/cosmos-db/), [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). You can get those strings using the Azure portal, CLI, or PowerShell. You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.
+Service connection strings are used in other Azure services like [CosmosDB](/azure/cosmos-db/), [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). You can get those strings using the Azure portal, CLI, or PowerShell. You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.
 
 This snippet uses the management libraries to create a storage account connection string:
 
@@ -63,7 +63,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials. This configuration is similar to the object-based authentication steps for the management library listed below.
+Other libraries require your application to run with a [service principal](/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials. This configuration is similar to the object-based authentication steps for the management library listed below.
 
 ## <a name="mgmt-auth"></a>Azure management libraries for .NET authentication
 

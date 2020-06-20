@@ -41,7 +41,7 @@ When migrating relational databases to Azure you have multiple choices. See [Mig
 
 ## Networking and security considerations
 
-When deploying applications to a public cloud like Microsoft Azure, you might want to isolate and secure certain networks by [creating network DMZs](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/), such as a [DMZ between Azure and on-premises](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) or a [DMZ between Azure and the Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). DMZs can be implemented with [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+When deploying applications to a public cloud like Microsoft Azure, you might want to isolate and secure certain networks by [creating network DMZs](/azure/architecture/reference-architectures/dmz/), such as a [DMZ between Azure and on-premises](/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) or a [DMZ between Azure and the Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). DMZs can be implemented with [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview).
 
 Azure Virtual networks enable you to:
 
@@ -52,15 +52,15 @@ Azure Virtual networks enable you to:
 - Create sophisticated network topologies using virtual appliances
 - Get an isolated and highly secure environment for your applications
 
-To get started building your own virtual network, see the [Azure Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/).
+To get started building your own virtual network, see the [Azure Virtual Network documentation](/azure/virtual-network/).
 
 ## Authentication and authorization considerations when migrating to Azure
 
 A top concern of any organization moving to the cloud is security. Most companies have invested a substantial amount of time, money, and engineering into designing and developing a security model, and it's important that they're able to leverage existing investments such as identity stores and single sign-on solutions.
 
-Many existing enterprise B2E .NET applications running on-premises use Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
+Many existing enterprise B2E .NET applications running on-premises use Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect).
 
-See [Identity requirements for your hybrid identity solution](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-business-needs) for further planning related to Azure Active Directory.
+See [Identity requirements for your hybrid identity solution](/azure/active-directory/active-directory-hybrid-identity-design-considerations-business-needs) for further planning related to Azure Active Directory.
 
 Other authentication protocol choices are [OAuth](https://en.wikipedia.org/wiki/OAuth) and [OpenID](https://en.wikipedia.org/wiki/OpenID), which are common in consumer-facing applications. When using autonomous identity databases, such as an ASP.NET Identity SQL database wrapped by IdentityServer4 using OAuth, no connectivity to on-premises databases or directories is usually required.
 

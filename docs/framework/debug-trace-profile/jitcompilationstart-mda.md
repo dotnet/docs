@@ -18,7 +18,7 @@ The `jitCompilationStart` managed debugging assistant (MDA) is activated to repo
   
 ## Cause  
  Not all the assemblies the program depends on have been generated into native format. Or, those assemblies that have been generated into native format aren't registered correctly.  
- 
+
 ## Resolution  
  Enabling this MDA allows you to determine which function is being JIT-compiled. Determine whether the assembly that contains the function is generated to native format and properly registered.  
   

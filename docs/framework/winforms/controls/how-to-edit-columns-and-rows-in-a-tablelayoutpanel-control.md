@@ -1,5 +1,6 @@
 ---
 title: "How to: Edit Columns and Rows in a TableLayoutPanel Control"
+description: Learn how to use the Column and Row Styles dialog box to edit the rows and columns of your Windows Forms controls.
 ms.date: "03/30/2017"
 f1_keywords:
   - "net.ComponentModel.StyleCollectionEditor"

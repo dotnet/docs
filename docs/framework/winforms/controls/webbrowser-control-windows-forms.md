@@ -1,5 +1,6 @@
 ---
 title: "WebBrowser Control"
+description: Learn about how the Windows Forms WebBrowser control hosts Web pages and provides Web browsing capabilities to your application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms]"

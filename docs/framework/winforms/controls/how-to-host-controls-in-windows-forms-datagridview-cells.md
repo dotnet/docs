@@ -1,5 +1,6 @@
 ---
 title: Host Controls in DataGridView Cells
+description: Learn how to host controls in Windows Forms DataGridView cells to enable your users to enter and edit values in a variety of ways.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

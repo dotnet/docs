@@ -157,8 +157,6 @@ For an additional example of using the Azure Storage management library, see the
 
 The following Azure CLI commands complete the same provisioning steps as the Python script:
 
-# [cmd](#tab/cmd)
-
 ```azurecli
 rem Provision the resource group
 
@@ -180,8 +178,6 @@ rem named AZURE_STORAGE_CONNECTION_STRING with the connection string for the sto
 set AZURE_STORAGE_CONNECTION_STRING=<connection_string>
 az storage container create --account-name pythonazurestorage12345 -n blob-container-01
 ```
-
-# [bash](#tab/bash)
 
 ```azurecli
 # Provision the resource group

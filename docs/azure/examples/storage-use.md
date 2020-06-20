@@ -58,19 +58,13 @@ For these reasons, we recommend using the authentication method in production co
 
 1. Create an environment variable named `STORAGE_BLOB_URL`:
 
-    # [cmd](#tab/cmd)
-
     ```cmd
     set STORAGE_BLOB_URL=https://pythonazurestorage12345.blob.core.windows.net
     ```
 
-    # [bash](#tab/bash)
-
     ```bash
     STORAGE_BLOB_URL=https://pythonazurestorage12345.blob.core.windows.net
     ```
-
-    ---
 
     Replace "pythonazurestorage12345" with the name of your specific storage account.
 
@@ -113,15 +107,11 @@ For these reasons, we recommend using the authentication method in production co
 
 1. Grant container permissions fto the service principal using the Azure CLI command [az role assignment create](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create) (it's a long one!):
 
-    # [cmd](#tab/cmd)
-
     ```azurecli
     az role assignment create --assignee %AZURE_CLIENT_ID% ^
         --role "Storage Blob Data Contributor" ^
         --scope "/subscriptions/%AZURE_SUBSCRIPTION_ID%/resourceGroups/PythonAzureExample-Storage-rg/providers/Microsoft.Storage/storageAccounts/pythonazurestorage12345/blobServices/default/containers/blob-container-01"
     ```
-
-    # [bash](#tab/bash)
 
     ```azurecli
     az role assignment create --assignee $AZURE_CLIENT_ID \

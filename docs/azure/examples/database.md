@@ -232,7 +232,7 @@ You can also use the [`ResourceManagementClient.resource_groups.delete`](/python
 
 The following Azure CLI commands complete the same provisioning steps as the Python script. For a PostgreSQL database, use [`az postgres`](/cli/azure/postgres?view=azure-cli-latest) commands; for MariaDB, use [`az mariadb`](/cli/azure/mariadb?view=azure-cli-latest) commands.
 
-# [cmd](#tab/cmd)
+## [cmd](#tab/cmd)
 
 ```azurecli
 az group create -l centralus -n PythonAzureExample-DB-rg
@@ -241,7 +241,7 @@ az mysql server create -l westus -g PythonAzureExample-DB-rg -n PythonAzureExamp
     -u azureuser -p ChangePa$$w0rd24 --sku-name B_Gen5_1
 
 # Change the IP address to the public IP address of your workstation, that is, the address shown
-# by a site like https://whatismyipaddress.com/. 
+# by a site like https://whatismyipaddress.com/.
 
 az mysql server firewall-rule create -g PythonAzureExample-DB-rg --server PythonAzureExample-MySQL-12345 ^
     -n allow_ip --start-ip-address 10.11.12.13 --end-ip-address 10.11.12.13
@@ -249,7 +249,7 @@ az mysql server firewall-rule create -g PythonAzureExample-DB-rg --server Python
 az mysql db create -g PythonAzureExample-DB-rg --server PythonAzureExample-MySQL-12345 -n example-db
 ```
 
-# [bash](#tab/bash)
+## [bash](#tab/bash)
 
 ```azurecli
 az group create -l centralus -n PythonAzureExample-DB-rg
@@ -258,7 +258,7 @@ az mysql server create -l westus -g PythonAzureExample-DB-rg -n PythonAzureExamp
     -u azureuser -p ChangePa$$w0rd24 --sku-name B_Gen5_1
 
 # Change the IP address to the public IP address of your workstation, that is, the address shown
-# by a site like https://whatismyipaddress.com/. 
+# by a site like https://whatismyipaddress.com/.
 
 az mysql server firewall-rule create -g PythonAzureExample-DB-rg --server PythonAzureExample-MySQL-12345 \
     -n allow_ip --start-ip-address 10.11.12.13 --end-ip-address 10.11.12.13

@@ -1,7 +1,7 @@
 ---
 title: Tools for Azure .NET and .NET Core developers
 description: Get the tools to start using the Azure .NET libraries from a Windows, Linux, and Mac environment.
-ms.date: 10/01/2018
+ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
 ---
 
@@ -17,9 +17,9 @@ Visual Studio has tooling for many Azure services built-in. Some Azure services 
 
 These instructions install the recommended starting development environment for your operating system.
 
-## [Windows](#tab/windows)
+## [Visual Studio on Windows](#tab/vs)
 
-Visual Studio versions 2017 and later have built-in support for Azure development. The below steps describe enabling Azure development support in Visual Studio.
+Visual Studio version 2017 and later have built-in support for Azure development. The below steps describe enabling Azure development support in Visual Studio.
 
 For Visual Studio 2015 and earlier, <a href="vs2015-install.md">follow these instructions</a>.
 
@@ -38,20 +38,9 @@ In the Visual Studio installer, install Visual Studio (or modify an existing ins
 
 Get started by [deploying your first ASP.NET Core web app on Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
-## [macOS](#tab/macos)
+## [Visual Studio Code (cross-platform)](#tab/vscode)
 
-Visual Studio for Mac has everything you need for Azure development.
-
-### Step 1: Download Visual Studio for Mac
-
-> [!div class="nextstepaction"]
-> [Download Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
-
-During installation, Azure tools are selected by default.
-
-## [Linux](#tab/linux)
-
-Visual Studio Code has everything you need for Azure development on Linux.
+Visual Studio Code has everything you need for cross-platform Azure development.
 
 ### Step 1: Download the .NET Core SDK
 
@@ -66,5 +55,16 @@ Edit and debug .NET Core apps on any operating system: Windows, Mac, and Linux.
 
 > [!div class="nextstepaction"]
 > [Download Visual Studio Code](https://code.visualstudio.com)
+
+### Step 3: Azure Tools extension
+
+Install the Azure Tools extension in Visual Studio Code.
+
+> [!div class="nextstepaction"]
+> [Install Azure Tools extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+
+### Step 4: Develop with .NET on Azure
+
+Get started by [deploying your first ASP.NET Core web app on Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-dotnetcore).
 
 ---

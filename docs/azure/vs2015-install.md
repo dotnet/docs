@@ -1,7 +1,7 @@
 ---
 title: Azure tools for Visual Studio 2015
 description: Get the tools to start using the Azure .NET libraries from Visual Studio 2015.
-ms.date: 10/19/2017
+ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
 ---
 
@@ -15,7 +15,7 @@ The quickest and easiest way to install the **Azure SDK for Visual Studio 2015**
 
 2. The bootstrapper will install Web Platform Installer (if needed) and automatically put the latest versions of the  **Azure SDK for Visual Studio 2015** and **Service Fabric SDK and Tools for Visual Studio 2015** items in your *Items to be installed* list. Click **Install**.
 
-    ![Web Platform Installer](../media/sdk/vs2015-install/webpi.png)
+    ![Web Platform Installer](media/vs2015-install/webpi.png)
 
 3. On the next screen, click **I Accept**. Web PI will begin downloading and installing the components you selected.
 
@@ -27,4 +27,4 @@ The quickest and easiest way to install the **Azure SDK for Visual Studio 2015**
 
 2. The displayed list will contain several Azure tools, such as **Microsoft Azure App Service Tools**, **Microsoft Azure Storage Connected Service**, and **Service Fabric Tools**.
 
-    ![Extensions and updates](../media/sdk/vs2015-install/ext-tools.png)
+    ![Extensions and updates](media/vs2015-install/ext-tools.png)

@@ -38,15 +38,11 @@ landingContent:
       - linkListType: get-started
         links:
           - text: .NET developer tools
-            url: sdk/tools.md
-      - linkListType: quickstart
-        links:
-          - text: Deploy an ASP.NET web app
-            url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
-          - text: Build a serverless function
-            url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-          - text: ASP.NET Core and Docker
-            url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
+            url: tools.md
+          - text: Authentication with the Azure SDK for .NET
+            url: https://docs.microsoft.com/dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+          - text: Logging with the Azure SDK for .NET
+            url: logging.md
       - linkListType: learn
         links:
           - text: Azure fundamentals
@@ -68,6 +64,12 @@ landingContent:
             url: https://docs.microsoft.com/azure/app-service/overview
           - text: Azure Functions
             url: https://docs.microsoft.com/azure/azure-functions/functions-overview
+      - linkListType: quickstart
+        links:
+          - text: Deploy an ASP.NET web app
+            url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
+          - text: Build a serverless function
+            url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio      
       - linkListType: learn
         links:
           - text: Host a web app with Azure App Service
@@ -157,21 +159,29 @@ landingContent:
         links:
           - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
             url: https://docs.microsoft.com/azure/postgresql/connect-csharp
-  - title: Messaging
+  - title: Messaging on Azure
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: Choose an Azure hosting option
-            url: ./migration/choose.md
-      - linkListType: how-to-guide
-        links:
-          - text: Migrate a .NET web app or service to Azure App Service
-            url: ./migration/app-service.md
-          - text: Migrate an ASP.NET app to an Azure VM
-            url: ./migration/vm.md
-          - text: Migrate a SQL Server database to Azure
-            url: ./migration/sql.md
-  - title: Diagnostics
+          - text: Storing messages with Azure queues
+            url: /azure/storage/queues/storage-queues-introduction
+          - text: Inter-application messaging with Azure Service Bus          
+            url: /azure/service-bus-messaging
+          - text: Streaming big data with Event Hubs
+            url: /azure/event-hubs/event-hubs-about
+          - text: Building event-based applications with Event Grid
+            url: /azure/event-grid/overview
+      - linkListType: quickstart
+        links:     
+          - text: Use Azure Queue Storage
+            url: /azure/storage/queues/storage-python-how-to-use-queue-storage
+          - text: Use Azure Service Bus queues
+            url: /azure/service-bus-messaging/service-bus-python-how-to-use-queues
+          - text: Ingest data in real-time through Azure Event Hubs
+            url: /azure/event-hubs/event-hubs-python
+          - text: Route custom events with Event Grid
+            url: /azure/event-grid/custom-event-quickstart
+  - title: Diagnostics and monitoring
     linkLists:
       - linkListType: concept
         links:

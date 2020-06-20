@@ -1,7 +1,7 @@
 ---
 title: Get started with Azure and .NET
 description: Learn the basics you need to know about Azure and .NET.
-ms.date: 03/15/2020
+ms.date: 06/20/2020
 ---
 
 # Introduction to Azure and .NET
@@ -81,6 +81,6 @@ Once you deploy your application to Azure, you may run into cases where it worke
 ## Next steps
 
 * [Deploy your first ASP.NET Core web app to Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
-* [Learn about authentication in Azure SDK for .NET](./sdk/authentication.md)
+* [Learn about authentication in Azure SDK for .NET](authentication.md)
 * [Diagnose errors in your cloud apps](https://devblogs.microsoft.com/aspnet/diagnosing-errors-on-your-cloud-apps/)
 * Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)

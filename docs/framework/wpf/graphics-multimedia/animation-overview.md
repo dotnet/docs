@@ -1,5 +1,6 @@
 ---
 title: "Animation Overview"
+description: Make an attractive user interface even more spectacular with dramatic screen transitions or vivid visual cues in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

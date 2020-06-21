@@ -1,5 +1,6 @@
 ---
 title: "Graphics Rendering Registry Settings"
+description: Find out how to use registry settings for troubleshooting, debugging, and product support purposes in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "rendering graphics [WPF], registry settings"

@@ -1,5 +1,6 @@
 ---
 title: "Storyboards Overview"
+desription: Organize and apply animations in storyboards. Use property-targeting syntax and combine timelines in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

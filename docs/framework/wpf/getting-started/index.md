@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+description: Learn about the UI framework that creates desktop client applications with the UI framework of Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "getting started [WPF]"

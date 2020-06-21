@@ -1,5 +1,6 @@
 ---
 title: "Path Markup Syntax"
+description: Learn about the powerful and complex mini-language you can use to specify compact path geometries in Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attribute usage in XAML [WPF]"

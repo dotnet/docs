@@ -22,7 +22,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
 
-dotnet-install.ps1 -Help
+Get-Help ./dotnet-install.ps1
 ```
 
 Linux/macOS:
@@ -88,9 +88,9 @@ The install scripts do not update the registry on Windows. They just download th
 
   Used as a query string to append to the Azure feed. It allows changing the URL to use non-public blob storage accounts.
 
-- **`-Help|--help`**
+- **`--help`**
 
-  Prints out help for the script.
+  Prints out help for the script. Applies only to bash script. For PowerShell, use `Get-Help ./dotnet-install.ps1`.
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 

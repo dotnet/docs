@@ -19,27 +19,27 @@ Friend Class Program
 
         ' The target part receives data and adds them to the queue.
         Dim target = New ActionBlock(Of T)(Sub(item)
-            ' Add the item to the queue.
-            ' Remove the oldest item when the queue size exceeds the window size.
-            ' Post the data in the queue to the source block when the queue size
-            ' equals the window size.
-            queue.Enqueue(item)
-            If queue.Count > windowSize Then
-                queue.Dequeue()
-            End If
-            If queue.Count = windowSize Then
-                source.Post(queue.ToArray())
-            End If
-        End Sub)
+                                               ' Add the item to the queue.
+                                               ' Remove the oldest item when the queue size exceeds the window size.
+                                               ' Post the data in the queue to the source block when the queue size
+                                               ' equals the window size.
+                                               queue.Enqueue(item)
+                                               If queue.Count > windowSize Then
+                                                   queue.Dequeue()
+                                               End If
+                                               If queue.Count = windowSize Then
+                                                   source.Post(queue.ToArray())
+                                               End If
+                                           End Sub)
 
         ' When the target is set to the completed state, propagate out any
         ' remaining data and set the source to the completed state.
         target.Completion.ContinueWith(Sub()
-            If queue.Count > 0 AndAlso queue.Count < windowSize Then
-                source.Post(queue.ToArray())
-            End If
-            source.Complete()
-        End Sub)
+                                           If queue.Count > 0 AndAlso queue.Count < windowSize Then
+                                               source.Post(queue.ToArray())
+                                           End If
+                                           source.Complete()
+                                       End Sub)
 
         ' Return a IPropagatorBlock<T, T[]> object that encapsulates the 
         ' target and source blocks.
@@ -69,27 +69,27 @@ Friend Class Program
 
             ' The target part receives data and adds them to the queue.
             Dim target = New ActionBlock(Of T)(Sub(item)
-                ' Add the item to the queue.
-                ' Remove the oldest item when the queue size exceeds the window size.
-                ' Post the data in the queue to the source block when the queue size
-                ' equals the window size.
-                queue.Enqueue(item)
-                If queue.Count > windowSize Then
-                    queue.Dequeue()
-                End If
-                If queue.Count = windowSize Then
-                    source.Post(queue.ToArray())
-                End If
-            End Sub)
+                                                   ' Add the item to the queue.
+                                                   ' Remove the oldest item when the queue size exceeds the window size.
+                                                   ' Post the data in the queue to the source block when the queue size
+                                                   ' equals the window size.
+                                                   queue.Enqueue(item)
+                                                   If queue.Count > windowSize Then
+                                                       queue.Dequeue()
+                                                   End If
+                                                   If queue.Count = windowSize Then
+                                                       source.Post(queue.ToArray())
+                                                   End If
+                                               End Sub)
 
             ' When the target is set to the completed state, propagate out any
             ' remaining data and set the source to the completed state.
             target.Completion.ContinueWith(Sub()
-                If queue.Count > 0 AndAlso queue.Count < windowSize Then
-                    source.Post(queue.ToArray())
-                End If
-                source.Complete()
-            End Sub)
+                                               If queue.Count > 0 AndAlso queue.Count < windowSize Then
+                                                   source.Post(queue.ToArray())
+                                               End If
+                                               source.Complete()
+                                           End Sub)
 
             m_windowSize = windowSize
             m_target = target
@@ -183,17 +183,17 @@ Friend Class Program
         ' Create an action block that prints arrays of data to the console.
         Dim windowComma As String = String.Empty
         Dim printWindow = New ActionBlock(Of T())(Sub(window)
-            Console.Write(windowComma)
-            Console.Write("{")
-            Dim comma As String = String.Empty
-            For Each item As T In window
-                Console.Write(comma)
-                Console.Write(item)
-                comma = ","
-            Next item
-            Console.Write("}")
-            windowComma = ", "
-        End Sub)
+                                                      Console.Write(windowComma)
+                                                      Console.Write("{")
+                                                      Dim comma As String = String.Empty
+                                                      For Each item As T In window
+                                                          Console.Write(comma)
+                                                          Console.Write(item)
+                                                          comma = ","
+                                                      Next item
+                                                      Console.Write("}")
+                                                      windowComma = ", "
+                                                  End Sub)
 
         ' Link the printer block to the sliding window block.
         slidingWindow.LinkTo(printWindow)

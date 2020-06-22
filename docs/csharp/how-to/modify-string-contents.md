@@ -6,7 +6,7 @@ helpviewer_keywords:
 ---
 # How to modify string contents in C\#
 
-This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To clearly demonstrate the difference between the original and modified strings, the examples store the result in a new variable. You can examine the original `string` and the new, modified `string` when you run each example.
+This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To demonstrate that the original and modified strings are distinct instances, the examples store the result in a new variable. You can examine the original `string` and the new, modified `string` when you run each example.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 

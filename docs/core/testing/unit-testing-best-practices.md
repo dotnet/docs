@@ -51,9 +51,9 @@ A high code coverage percentage is often associated with a higher quality of cod
 A high code coverage percentage is not an indicator of success, nor does it imply high code quality. It just represents the amount of code that is covered by unit tests. For more information, see [unit testing code coverage](unit-testing-code-coverage.md).
 
 ## Let's speak the same language
-The term *mock* is unfortunately misused when talking about testing. The following points define the most common types of *fakes* when writing unit tests:
+The term *mock* is unfortunately often misused when talking about testing. The following points define the most common types of *fakes* when writing unit tests:
 
-*Fake* - A fake is a generic term that can be used to describe either a stub or a mock object. Whether it is a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
+*Fake* - A fake is a generic term that can be used to describe either a stub or a mock object. Whether it's a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
 
 *Mock* - A mock object is a fake object in the system that decides whether or not a unit test has passed or failed. A mock starts out as a Fake until it's asserted against.
 

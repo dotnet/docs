@@ -1,5 +1,6 @@
 ---
 title: "How to: Retrieve the Thumbprint of a Certificate"
+description: Learn how to specify claims found in an X.509 certificate, which is necessary when developing a WCF application that uses certificates for authentication.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "certificates [WCF], retrieving thumbprint"

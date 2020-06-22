@@ -1,5 +1,5 @@
 ---
-title: jitCompilationStart managed debugging assistant
+title: jitCompilationStart managed debugging assistant (MDA)
 description: Use the jitCompilationStart managed debugging assistant (MDA), which is started to report when the just-in-time (JIT) compiler begins compiling a .NET function.
 ms.date: "03/30/2017"
 helpviewer_keywords: 

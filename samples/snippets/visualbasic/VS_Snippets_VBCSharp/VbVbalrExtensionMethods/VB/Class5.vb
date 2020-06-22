@@ -23,8 +23,8 @@ Module Class5
         End Sub
     End Class
 
-    <Extension()> 
-    Sub ExampleMethod(ByVal ec As ExampleClass, 
+    <Extension()>
+    Sub ExampleMethod(ByVal ec As ExampleClass,
                       ByVal n As Integer)
         Console.WriteLine("Extension method")
     End Sub

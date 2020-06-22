@@ -11,7 +11,7 @@ Module Module1
         Dim memoryBefore = GC.GetTotalMemory(True)
 
         '<Snippet10>
-        Dim adminRequests = 
+        Dim adminRequests =
             From line In New StreamReaderEnumerable("..\..\log.txt")
             Where line.Contains("admin.aspx 401")
 
@@ -33,8 +33,8 @@ Module Module1
             fileContents.Add(sr.ReadLine())
         End While
 
-        Dim adminRequests = 
-            From line In fileContents 
+        Dim adminRequests =
+            From line In fileContents
             Where line.Contains("admin.aspx 401")
 
         Dim results = adminRequests.ToList()

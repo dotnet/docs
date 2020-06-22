@@ -14,13 +14,13 @@ Module Module1
         '</Snippet2>
 
         '<Snippet3>
-        Dim cust0 As Customer = New Customer With {.Name = "Toni Poe", 
+        Dim cust0 As Customer = New Customer With {.Name = "Toni Poe",
                                                    .City = "Louisville"}
         '</Snippet3>
 
 
         '<Snippet4>
-        Dim cust1 As New Customer With {.Name = "Toni Poe", 
+        Dim cust1 As New Customer With {.Name = "Toni Poe",
                                         .City = "Louisville"}
         '</Snippet4>
 
@@ -33,7 +33,7 @@ Module Module1
         '</Snippet5>
 
         '<Snippet6>
-        Dim cust3 As Customer = 
+        Dim cust3 As Customer =
             New Customer("Toni Poe") With {.City = "Louisville"}
         ' --or--
         Dim cust4 As New Customer("Toni Poe") With {.City = "Louisville"}
@@ -44,7 +44,7 @@ Module Module1
         '</Snippet7>
 
         '<Snippet8>
-        Dim cust6 = New Customer With {.Name = "Toni Poe", 
+        Dim cust6 = New Customer With {.Name = "Toni Poe",
                                        .City = "Louisville"}
         '</Snippet8>
 
@@ -57,7 +57,7 @@ Module Module1
 
         '<Snippet10>
         Dim cust8 = New Customer With {.Name = .Name & ", President"}
-        Dim cust9 = New Customer With {.Name = "Toni Poe", 
+        Dim cust9 = New Customer With {.Name = "Toni Poe",
                                        .Title = .Name & ", President"}
         '</Snippet10>
         Console.WriteLine(cust8.Name)
@@ -72,22 +72,22 @@ Module Module1
         Console.WriteLine(cust11.Name)
 
         '<Snippet12>
-        Dim cust12 = 
-            New Customer With {.Name = "Toni Poe", 
-                               .Address = 
-                                   New AddressClass With {.City = "Louisville", 
+        Dim cust12 =
+            New Customer With {.Name = "Toni Poe",
+                               .Address =
+                                   New AddressClass With {.City = "Louisville",
                                                           .State = "Kentucky"}}
         Console.WriteLine(cust12.Address.State)
         '</Snippet12>
 
         '<Snippet13>
-        Dim cust13 = New With {.Name = "Toni Poe", 
+        Dim cust13 = New With {.Name = "Toni Poe",
                                .City = "Louisville"}
         '</Snippet13>
 
         '<Snippet14>
 
-        Dim anonymousCust1 = New With {Key .Name = "Hugo Garcia", 
+        Dim anonymousCust1 = New With {Key .Name = "Hugo Garcia",
                                        Key .City = "Louisville"}
         '</Snippet14>
 
@@ -113,31 +113,31 @@ Module Module1
     ' Function GetCustomers returns a list of Customer objects.
     Function GetCustomers() As IEnumerable(Of Customer)
         Dim customerList As New System.Collections.Generic.List(Of Customer)
-        Dim customer0 As New Customer With {.Name = "Michael", 
-                                            .City = "Tucker", 
-                                            .State = "Junior", 
+        Dim customer0 As New Customer With {.Name = "Michael",
+                                            .City = "Tucker",
+                                            .State = "Junior",
                                             .ID = 123}
-        Dim customer1 As New Customer With {.Name = "Svetlana", 
-                                            .City = "Omelchenko", 
-                                            .State = "Senior", 
+        Dim customer1 As New Customer With {.Name = "Svetlana",
+                                            .City = "Omelchenko",
+                                            .State = "Senior",
                                             .ID = 456}
-        Dim customer2 As New Customer With {.Name = "Michiko", 
-                                            .City = "Osada", 
-                                            .State = "Senior", 
+        Dim customer2 As New Customer With {.Name = "Michiko",
+                                            .City = "Osada",
+                                            .State = "Senior",
                                             .ID = 789}
-        Dim customer3 As New Customer With {.Name = "Sven", 
-                                            .City = "Mortensen", 
+        Dim customer3 As New Customer With {.Name = "Sven",
+                                            .City = "Mortensen",
                                             .State = "Freshman"}
-        Dim customer4 As New Customer With {.Name = "Hugo", 
-                                            .City = "Garcia", 
+        Dim customer4 As New Customer With {.Name = "Hugo",
+                                            .City = "Garcia",
                                             .State = "Junior"}
-        Dim customer5 As New Customer With {.Name = "Cesar", 
-                                          .City = "Garcia", 
-                                          .State = "Freshman", 
+        Dim customer5 As New Customer With {.Name = "Cesar",
+                                          .City = "Garcia",
+                                          .State = "Freshman",
                                           .ID = 890}
-        Dim customer6 As New Customer With {.Name = "Fadi", 
-                                            .City = "Fakhouri", 
-                                            .State = "Senior", 
+        Dim customer6 As New Customer With {.Name = "Fadi",
+                                            .City = "Fakhouri",
+                                            .State = "Senior",
                                             .ID = 765}
         customerList.Add(customer0)
         customerList.Add(customer1)

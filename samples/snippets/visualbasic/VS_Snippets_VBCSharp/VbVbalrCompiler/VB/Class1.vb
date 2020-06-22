@@ -5,7 +5,7 @@ Option Strict On
 ' /target (Visual Basic)
 
 ' <snippet37>
-<Assembly: System.CLSCompliant(True)> 
+<Assembly: System.CLSCompliant(True)>
 
 <System.CLSCompliant(False)>
 Public Class AClass

@@ -80,7 +80,7 @@ Public Class Form1
 
     '<snippet4>
     Sub PlayFormGreeting()
-        My.Computer.Audio.Play(My.Resources.Form1Greeting, 
+        My.Computer.Audio.Play(My.Resources.Form1Greeting,
             AudioPlayMode.Background)
     End Sub
     '</snippet4>

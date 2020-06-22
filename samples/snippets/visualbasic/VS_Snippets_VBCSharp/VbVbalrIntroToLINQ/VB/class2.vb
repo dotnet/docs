@@ -83,8 +83,8 @@
 
         '<Snippet4>
         Dim queryResults = From cust In customers
-                       Where cust.Country = "Canada"
-                       Select cust.CompanyName, cust.Country
+                           Where cust.Country = "Canada"
+                           Select cust.CompanyName, cust.Country
         '</Snippet4>
     End Sub
 
@@ -94,8 +94,8 @@
         Dim orders = GetOrders()
 
         Dim queryResults = From cust In customers, ord In orders
-                   Where cust.CustomerID = ord.CustomerID
-                   Select cust, ord
+                           Where cust.CustomerID = ord.CustomerID
+                           Select cust, ord
 
         For Each result In queryResults
             Debug.WriteLine(result.ord.Amount & "  " & result.ord.CustomerID & "  " & result.cust.CompanyName)

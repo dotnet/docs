@@ -1,4 +1,4 @@
-﻿Option Strict On 
+﻿Option Strict On
 
 Public Class StreamReaderEnumerable
     '<Snippet1>

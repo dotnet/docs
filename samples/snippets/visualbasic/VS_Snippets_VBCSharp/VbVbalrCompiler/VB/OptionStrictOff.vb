@@ -1,5 +1,5 @@
 ﻿' fb4b89d4-4926-4f20-868d-427fa28497b2
-    ' /addmodule
+' /addmodule
 Option Explicit On
 
 ' <snippet48>

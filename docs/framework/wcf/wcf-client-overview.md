@@ -1,5 +1,6 @@
 ---
 title: "WCF Client Overview"
+description: Learn about what client applications do, how to configure, create, and use a WCF client, and how to secure client applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

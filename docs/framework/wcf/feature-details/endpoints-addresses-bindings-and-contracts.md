@@ -1,5 +1,6 @@
 ---
 title: "Endpoints: Addresses, Bindings, and Contracts"
+description: Learn how all communication with a WCF service occurs through the service endpoints, which provide clients access to the functionality offered by the service.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "endpoints [WCF]"

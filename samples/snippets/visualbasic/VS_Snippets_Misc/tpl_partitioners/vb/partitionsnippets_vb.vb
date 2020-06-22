@@ -16,19 +16,19 @@ Class Program
     Shared Sub Main()
 
         'Consumer.Main2()
-        
+
 
         Console.Write("Press any key.")
         Console.ReadKey()
     End Sub
 
 
-    
+
 
 
     Shared Sub TestDefaultRangePartitioner()
 
-        
+
 
         Console.WriteLine("Operation completed.")
         Console.ReadKey()
@@ -70,7 +70,7 @@ Class Program
         sw = Stopwatch.StartNew()
         customPartitioner = Partitioner.Create(nums, True)
         Dim q7 = From x In customPartitioner.AsParallel()
-                Select x ' *Math.PI
+                 Select x ' *Math.PI
 
         q7.ForAll(Sub(x)
 

@@ -1,5 +1,6 @@
 ---
 title: "Publishing Metadata"
+description: Learn how WCF services publish metadata by publishing one or more metadata endpoints, making the metadata available using standard protocols.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF], publishing"

@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Host and run a basic Windows Communication Foundation service"
+description: Learn how to host a WCF service in a console application as part of a series of articles that help you get started creating a WCF application.
 ms.date: 03/19/2019
 dev_langs:
   - "csharp"

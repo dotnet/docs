@@ -1,5 +1,6 @@
 ---
 title: "Transport security with an anonymous client"
+description: Review this WCF scenario, which uses transport security to authenticate a server by using a certificate that the client trusts. The client is not authenticated.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

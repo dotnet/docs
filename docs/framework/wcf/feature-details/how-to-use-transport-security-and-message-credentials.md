@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Transport Security and Message Credentials"
+description: Learn how to implement transport security with message credentials, which offers the best of Transport and Message security modes in WCF.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

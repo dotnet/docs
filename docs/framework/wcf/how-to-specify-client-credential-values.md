@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify Client Credential Values"
+description: Learn how a WCF service can specify how a client is authenticated to that service. This example specifies an X.509 certificate and Transport mode.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

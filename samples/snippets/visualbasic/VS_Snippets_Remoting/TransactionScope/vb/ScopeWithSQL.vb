@@ -39,8 +39,8 @@ Module Module1
         Dim writer As System.IO.StringWriter = New System.IO.StringWriter
 
         Try
-        ' Create the TransactionScope to execute the commands, guaranteeing
-        '  that both commands can commit or roll back as a single unit of work.
+            ' Create the TransactionScope to execute the commands, guaranteeing
+            '  that both commands can commit or roll back as a single unit of work.
             Using scope As New TransactionScope()
                 Using connection1 As New SqlConnection(connectString1)
                     ' Opening the connection automatically enlists it in the 
@@ -69,9 +69,9 @@ Module Module1
                     End Using
                 End Using
 
-            ' The Complete method commits the transaction. If an exception has been thrown,
-            ' Complete is called and the transaction is rolled back.
-            scope.Complete()
+                ' The Complete method commits the transaction. If an exception has been thrown,
+                ' Complete is called and the transaction is rolled back.
+                scope.Complete()
             End Using
         Catch ex As TransactionAbortedException
             writer.WriteLine("TransactionAbortedException Message: {0}", ex.Message)

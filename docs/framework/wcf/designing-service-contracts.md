@@ -1,5 +1,6 @@
 ---
 title: "Designing Service Contracts"
+description: Learn about service contracts, including how to create them, available operations and data types, and other aspects of service contracts in WCF programming.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

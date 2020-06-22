@@ -1,5 +1,6 @@
 ---
 title: "How to: Host a WCF Service in a Managed Application"
+description: Learn how to host a WCF service inside a managed application by creating a self-hosted service and testing it.
 ms.date: 09/17/2018
 dev_langs:
   - "csharp"

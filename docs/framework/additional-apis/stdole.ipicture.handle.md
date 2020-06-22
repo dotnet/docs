@@ -1,5 +1,6 @@
 ---
 title: IPicture.Handle Property (stdole)
+description: Get reference information about the IPicture.Handle property in .NET. This property gets the handle to the picture managed within this picture object.
 ms.date: 02/22/2019
 topic_type:
   - "apiref"

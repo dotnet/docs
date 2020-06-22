@@ -1,5 +1,6 @@
 ---
 title: "Committing a Transaction in Single-Phase and Multi-Phase"
+description: Read about committing transactions in one or two phases in .NET. A two-phase commit (2PC) must be performed if the transaction involves more than one resource.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

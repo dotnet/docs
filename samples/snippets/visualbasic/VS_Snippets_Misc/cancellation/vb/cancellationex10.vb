@@ -16,7 +16,7 @@ Class CancelNewStyleEvents
         Dim cts As New CancellationTokenSource()
 
         ' Pass the same token source to the delegate and to the task instance.
-      Task.Run(Sub() DoWork(cts.Token), cts.Token)
+        Task.Run(Sub() DoWork(cts.Token), cts.Token)
         Console.WriteLine("Press c to cancel, p to pause, or s to start/restart,")
         Console.WriteLine("or any other key to exit.")
 
@@ -57,7 +57,7 @@ Class CancelNewStyleEvents
             ' while the thread is waiting on the event.
             '<snippet6>
             Try
-               ' mres is a ManualResetEventSlim
+                ' mres is a ManualResetEventSlim
                 mres.Wait(token)
             Catch e As OperationCanceledException
                 ' Throw immediately to be responsive. The
@@ -68,7 +68,7 @@ Class CancelNewStyleEvents
                 Throw
             End Try
 
-             ' Simulating work.
+            ' Simulating work.
             Console.Write("Working...")
             Thread.SpinWait(500000)
             '</snippet6>

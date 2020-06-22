@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the ChannelFactory"
+description: Learn how to create a channel factory to create more than one channel for accessing services by using a WCF client. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

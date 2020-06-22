@@ -30,11 +30,13 @@ This article does not provide comprehensive information about each new feature a
 > The .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md).
 > See a [complete list of NuGet packages](https://www.nuget.org/profiles/dotnetframework) for the .NET Framework.
 
-<a name="v48">## Introducing .NET Framework 4.8</a>
+<a name="v48"></a>
+
+## Introducing .NET Framework 4.8
 
 .NET Framework 4.8 builds on previous versions of the .NET Framework 4.x by adding many new fixes and several new features while remaining a very stable product.
 
-### Downloading and installing .NET Framework 4.8
+### Download and install .NET Framework 4.8
 
 You can download .NET Framework 4.8  from the following locations:
 

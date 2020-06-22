@@ -82,7 +82,14 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 This section includes the following subsections:
 
 * [RSA](#rsa)
-* 
+* [ECDSA](#ecdsa)
+* [ECDiffieHellman (ECDH)](#ecdiffiehellman-ecdh)
+* [DSA](#dsa)
+* [X.509 Certificates](#x509-certificates)
+* [Reading a PKCS12/PFX](#reading-a-pkcs12pfx)
+* [Writing a PKCS12/PFX](#writing-a-pkcs12pfx)
+* [X509Store](#x509store)
+* [X509Chain](#x509chain)
 
 ### RSA
 

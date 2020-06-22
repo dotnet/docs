@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation"
+description: Learn how WCF, a programming model for service-oriented applications, enables you to build secure, reliable, transacted solutions.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Communication Foundation [WCF]"

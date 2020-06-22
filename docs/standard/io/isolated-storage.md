@@ -155,7 +155,9 @@ You should not use isolated storage in the following situations:
 
 Many applications use a database to store and isolate data, in which case one or more rows in a database might represent storage for a specific user. You might choose to use isolated storage instead of a database when the number of users is small, when the overhead of using a database is significant, or when no database facility exists. Also, when the application requires storage that is more flexible and complex than what a row in a database provides, isolated storage can provide a viable alternative.
 
-## considerations
+## Considerations
+
+Consider
 
 <a name="related_topics"></a>
 

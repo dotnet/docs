@@ -1,6 +1,6 @@
 ---
 title: jitCompilationStart managed debugging assistant (MDA)
-description: Use the jitCompilationStart managed debugging assistant (MDA), which is started to report when the just-in-time (JIT) compiler begins compiling a .NET function.
+description: The jitCompilationStart managed debugging assistant (MDA) reports when the just-in-time (JIT) compiler begins compiling a .NET function.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT compilation"
@@ -14,19 +14,23 @@ ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  
   
 ## Symptoms  
- The working set size increases for a program that is already in native image format because mscorjit.dll is loaded into the process.  
+ The working set size increases for a program that's already in native image format, because mscorjit.dll is loaded into the process.  
   
 ## Cause  
- Not all the assemblies the program depends on have been generated into native format. Or, those assemblies that have been generated into native format aren't registered correctly.  
+Not all the assemblies the program depends on have been generated into native format.
+ 
+-or-
+
+Assemblies that *have* been generated into native format aren't registered correctly.  
 
 ## Resolution  
  Enabling this MDA allows you to determine which function is being JIT-compiled. Determine whether the assembly that contains the function is generated to native format and properly registered.  
   
-## Effect on the Runtime  
+## Effect on the runtime  
  This MDA logs a message just before a method is JIT-compiled, so enabling this MDA has significant impact on performance. If a method is inline, this MDA will not generate a separate message.  
   
 ## Output  
- The following code sample shows sample output. In this case, the output shows that in assembly Test the method "m" on class "ns2.CO" was JIT-compiled.  
+ The following code sample shows sample output. In this case, the output shows that, in assembly Test, the method "m" on class "ns2.CO" was JIT-compiled.  
   
 ```output
 method name="Test!ns2.C0::m"  

@@ -114,7 +114,7 @@ The .NET Framework and .NET Core offer [isolated storage](https://docs.microsoft
 
 Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications which read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
 
-## Security-sensitive APIs which can read from the machine-wide scope
+### Security-sensitive APIs which can read from the machine-wide scope
 
 Components or applications that call any of the following APIs read from the machine-wide scope:
 
@@ -135,7 +135,7 @@ The isolated storage tool is provided as part of Visual Studio and the .NET Fram
 
 If the application doesn't involve calls to the preceding APIs, or if the workflow doesn't involve calling `storeadm.exe` in this manner, this document doesn't apply.
 
-## Impact in multi-user environments
+### Impact in multi-user environments
 
 As mentioned previously, the security impact from these APIs results from data written from one trust environment is read from a different trust environment. Isolated storage generally uses one of three locations to read and write data:
 
@@ -161,14 +161,14 @@ __Note:__ In order for such an attack to take place, Mallory requires:
 
 These are not threat vectors which apply to standard single-user desktop environments like home PCs or single-employee enterprise workstations.
 
-### Elevation of privilege
+#### Elevation of privilege
 
 An __elevation of privilege__ attack occurs when Bob's app reads Mallory's file and automatically tries to take some action based on the contents of that payload. Consider an app that reads the contents of a startup script from the machine-wide store and passes those contents to `Process.Start`. If Mallory can place a malicious script inside the machine-wide store, when Bob launches his app:
 
 * His app parses and launches Mallory's malicious script _under the context of Bob's user profile_.
 * Mallory gaines access to Bob's account on the local machine.
 
-### Denial of service
+#### Denial of service
 
 A __denial of service__ attack occurs when Bob's app reads Mallory's file and crashes or otherwise stops functioning correctly. Consider again the app mentioned previously, which attempts to parse a startup script from the machine-wide store. If Mallory can place a file with malformed contents inside the machine-wide store, she might:
 
@@ -177,7 +177,7 @@ A __denial of service__ attack occurs when Bob's app reads Mallory's file and cr
 
 She has then denied Bob the ability to launch the app under his own user account.
 
-### Information disclosure
+#### Information disclosure
 
 An __information disclosure__ attack occurs when Mallory can trick Bob into disclosing the contents of a file that Mallory does not normally have access to. Consider that Bob has a secret file *C:\Users\Bob\secret.txt* that Mallory wants to read. She knows the path to this file, but she cannot read it because Windows forbids her from gaining access to Bob's user profile directory.
 
@@ -185,14 +185,13 @@ Instead, Mallory places a hard link into the machine-wide store. This is a speci
 
 When Bob's app reads from the machine-wide store, it now inadvertently reads the contents of his `secret.txt` file, just as if the file itself had been present in the machine-wide store. When Bob's app exits, if it attempts to resave the file to the machine-wide store, it will end up placing an actual copy of the file in the *C:\ProgramData\IsolatedStorage\* directory. Since this directory is readable by any user on the machine, Mallory can now read the contents of the file.
 
-## Best practices to defend against these attacks
+### Best practices to defend against these attacks
 
 __Important:__ If your environment has multiple mutually untrusted users, __do not__ call the API `IsolatedStorageFile.GetEnumerator(IsolatedStorageScope.Machine)` or invoke the tool `storeadm.exe /machine /list`. Both of these assume that they're operating on trusted data. If an attacker can seed a malicious payload in the machine-wide store, that payload can lead to an elevation of privilege attack under the context of the user who runs these commands.
 
 If operating in a multi-user environment, reconsider use of isolated storage features which target the _Machine_ scope. If an app must read data from a machine-wide location, prefer to read the data from a location that are writable only by admin accounts. The `%PROGRAMFILES%` directory and the `HKLM` registry hive are examples of locations which are writable by only administrators and readable by everyone. Data read from those locations is therefore considered trustworthy.
 
 If an app must use the _Machine_ scope in a multi-user environment, validate the contents of any file that you read from the machine-wide store. If the app deserializing object graphs from these files, consider using safer serializers like `XmlSerializer` instead of dangerous serializers like `BinaryFormatter` or `NetDataContractSerializer`. Use caution with deeply nested object graphs or object graphs which perform resource allocation based on the file contents.
-
 
 <a name="isolated_storage_locations"></a>
 

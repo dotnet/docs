@@ -1,5 +1,6 @@
 ---
 title: Customize appearance
+description: Learn how to customize the look of your Windows Forms applications by changing the border, opacity, shape, style, or setting a background image.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, changing the appearance of"

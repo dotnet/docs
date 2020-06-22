@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation (WCF) samples"
+description: Download Windows Communication Foundation (WCF) samples for .NET Framework 4. The samples provide instruction on various aspects of WCF.
 ms.date: 09/24/2018
 ms.assetid: 89d4efce-7832-4dd5-82a8-0e574b3302f9
 ---

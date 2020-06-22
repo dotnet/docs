@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement an Asynchronous Service Operation"
+description: Learn about the structure of an asynchronous service operation in WFC. A service operation can be implemented asynchronously or synchronously.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

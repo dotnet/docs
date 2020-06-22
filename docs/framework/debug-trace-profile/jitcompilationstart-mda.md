@@ -17,14 +17,10 @@ The `jitCompilationStart` managed debugging assistant (MDA) is activated to repo
  The working set size increases for a program that's already in native image format, because mscorjit.dll is loaded into the process.  
   
 ## Cause  
-Not all the assemblies the program depends on have been generated into native format.
- 
--or-
-
-Assemblies that *have* been generated into native format aren't registered correctly.  
+Not all the assemblies the program depends on have been generated into native format, or an assembly is not registered correctly.  
 
 ## Resolution  
- Enabling this MDA allows you to determine which function is being JIT-compiled. Determine whether the assembly that contains the function is generated to native format and properly registered.  
+ Enabling this MDA allows you to identify which function is being JIT-compiled. Make sure that the assembly that contains the function is generated to native format and properly registered.
   
 ## Effect on the runtime  
  This MDA logs a message just before a method is JIT-compiled, so enabling this MDA has significant impact on performance. If a method is inline, this MDA will not generate a separate message.  

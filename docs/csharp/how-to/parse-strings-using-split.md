@@ -1,5 +1,5 @@
 ---
-title: "Parse strings using the Split method (C# Guide)"
+title: "Parse strings using String.Split (C# Guide)"
 description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
 ms.date: 01/03/2018
 helpviewer_keywords: 

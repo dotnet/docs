@@ -49,6 +49,7 @@ The following breaking changes are documented on this page:
 - [Kestrel: Connection adapters removed](#kestrel-connection-adapters-removed)
 - [Kestrel: Default supported TLS protocol versions changed](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel: Empty HTTPS assembly removed](#kestrel-empty-https-assembly-removed)
+- [Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
 - [Localization: APIs marked obsolete](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
@@ -103,6 +104,10 @@ The following breaking changes are documented on this page:
 
 ***
 [!INCLUDE[Kestrel: Default supported TLS protocol versions changed](~/includes/core-changes/aspnetcore/5.0/kestrel-default-supported-tls-protocol-versions-changed.md)]
+
+***
+
+[!INCLUDE[Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](~/includes/core-changes/aspnetcore/5.0/kestrel-disables-http2-over-tls.md)]
 
 ***
 

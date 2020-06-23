@@ -30,10 +30,10 @@ To configure authorized access to certain pages in an ASP.NET Web Forms applicat
 <configuration>
     <system.web>
       <authentication mode="Forms">
-        <forms defaultUrl="~/home.aspx" loginUrl="~/login.aspx" 
+        <forms defaultUrl="~/home.aspx" loginUrl="~/login.aspx"
           slidingExpiration="true" timeout="2880"></forms>
       </authentication>
-      
+
       <authorization>
         <deny users="?" />
       </authorization>
@@ -357,7 +357,7 @@ You can access authentication state within procedural logic by accessing the use
         if ((await AuthorizationService.AuthorizeAsync(user, "content-editor"))
             .Succeeded)
         {
-            // Perform an action only available to users satisfying the 
+            // Perform an action only available to users satisfying the
             // 'content-editor' policy.
         }
     }

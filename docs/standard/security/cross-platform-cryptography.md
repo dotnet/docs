@@ -9,12 +9,12 @@ helpviewer_keywords:
 ---
 # Cross-Platform Cryptography in .NET Core and .NET 5
 
-Cryptographic operations in .NET Core and .NET 5 are performed by operating system (OS) libraries. This dependency provides a couple of advantages:
+Cryptographic operations in .NET Core and .NET 5 are done by operating system (OS) libraries. This dependency has advantages:
 
-* .NET apps benefit from OS reliability. OS vendors have a vested interest in keeping their cryptography libraries safe from security vulnerabilities, and they provide an update mechanism that system administrators should be using.
-* .NET apps automatically have access to FIPS-validated algorithms if the OS libraries are FIPS-validated.
+* .NET apps benefit from OS reliability. Keeping cryptography libraries safe from vulnerabilities is a high priority for OS vendors. To do that, they provide updates that system administrators should be applying.
+* .NET apps have access to FIPS-validated algorithms if the OS libraries are FIPS-validated.
 
-The dependency on OS libraries also means that the cryptographic capabilities that .NET apps can use vary depending on what the OS supports. While all platforms support certain core capabilities, there are advanced capabilities that .NET offers but can't be used on some platforms. This article identifies the capabilities that are supported on each platform.
+The dependency on OS libraries also means that .NET apps can only use cryptographic features that the OS supports. While all platforms support certain core features, some advanced features that .NET supports can't be used on some platforms. This article identifies the features that are supported on each platform.
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Framework Cryptography Model](cryptography-model.md).
 
@@ -41,9 +41,9 @@ Authenticated encryption (AE) support is provided for AES-CCM and AES-GCM via <x
 
 On Windows and Linux, the implementations of AES-CCM and AES-GCM are provided by the OS libraries.
 
-On macOS the system libraries do not support AES-CCM or AES-GCM for 3rd party code, so the `AesCcm` and `AesGcm` classes use OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for these types to function, and it must be in a path that the system would load a library from by default.
+On macOS the system libraries don't support AES-CCM or AES-GCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> and <xref:System.Security.Cryptography.AesGcm> classes use OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for these types to function, and it must be in a path that the system would load a library from by default.
 
-Obtaining OpenSSL from a package manager, such as Homebrew, is recommended but not required.
+We recommend that you install OpenSSL from a package manager such as Homebrew, but that isn't required.
 The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from older versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
 
 ### AES-CCM
@@ -68,7 +68,7 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 
 * Nonce Sizes
 
-  The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12 byte) nonces.
+  The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
 
@@ -94,7 +94,7 @@ RSA key generation is performed by the OS libraries and is subject to their size
 
 RSA key operations are performed by the OS libraries, and the types of key that can be loaded are subject to OS requirements.
 
-.NET does not expose "raw" (unpadded) RSA operations, and it relies on the OS libraries for encryption and decryption padding.
+.NET does not expose "raw" (unpadded) RSA operations. The OS libraries are used for encryption and decryption padding.
 
 Not all platforms support the same padding options.
 
@@ -107,7 +107,7 @@ Not all platforms support the same padding options.
 | PKCS1 Signature (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️             |
 | PSS                                   | ✔️           | ✔️              | ✔️   | ❌             |
 
-Windows CAPI is capable of PKCS1 signature with a SHA-2 algorithm, but the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
+Windows CAPI is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
 
 #### RSA on Windows
 
@@ -129,7 +129,7 @@ The types involved do not translate between platforms, and should only be direct
 | <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌     | ❌    |
 | <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌      | ✔️    | ⚠️   |
 
-On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 On macOS and Linux, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
@@ -149,17 +149,17 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | Explicit curves                    | ✔️        | ❌              | ✔️   | ❌    |
 | Export or import as explicit       | ✔️        | ❌              | ✔️   | ❌    |
 
-Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, with the exception of special support for three curves in Windows 7.
+Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
 Not all Linux distributions have support for the same named curves.
 
-Exporting with explicit curve parameters requires OS library support which is not available on macOS or older versions of Windows.
+Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
 
 #### ECDSA Native Interop
 
 .NET exposes types to allow programs to interoperate with the OS libraries upon which the .NET cryptography code is layered.
 
-The types involved do not translate between platforms, and should only be directly used when necessary.
+The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                             | Windows | Linux | macOS |
 |--------------------------------------------------|---------|-------|-------|
@@ -194,7 +194,7 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | explicit curves                    | ✔️        | ❌               | ✔️   | ❌     |
 | Export or import as explicit       | ✔️        | ❌               | ✔️   | ❌     |
 
-Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows with the exception of special support for three curves in Windows 7.
+Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
 Not all Linux distributions have support for the same named curves.
 
@@ -202,14 +202,14 @@ Exporting with explicit curve parameters requires OS library support, which is n
 
 #### ECDH Native Interop
 
-.NET exposes types to allow programs to interoperate with the system libraries upon which the .NET cryptography code is layered. The types involved do not translate between platforms, and should only be directly used when necessary.
+.NET exposes types to allow programs to interoperate with the OS libraries that .NET uses. The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                                       | Windows | Linux | macOS |
 |------------------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌   |
 | <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️   |
 
-On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### DSA
 
@@ -224,7 +224,7 @@ Digital Signature Algorithm (DSA) key generation is performed by the system libr
 | FIPS 186-2                    | ✔️         | ✔️    | ✔️    | ✔️           |
 | FIPS 186-3 (SHA-2 signatures) | ✔️         | ✔️    | ❌    | ❌           |
 
-macOS loads DSA keys whose size exceeds 1024 bits, but it doesn't perform FIPS 186-3 behaviors with those keys, so the behavior of those keys is undefined.
+macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
 
 #### DSA on Windows
 
@@ -238,7 +238,7 @@ macOS loads DSA keys whose size exceeds 1024 bits, but it doesn't perform FIPS 1
 
 .NET exposes types to allow programs to interoperate with the OS libraries upon which the .NET cryptography code is layered.
 
-The types involved do not translate between platforms, and should only be directly used when necessary.
+The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                                         | Windows | Linux | macOS |
 |--------------------------------------------------------------|---------|-------|-------|
@@ -246,7 +246,7 @@ The types involved do not translate between platforms, and should only be direct
 | <xref:System.Security.Cryptography.DSACng>                   | ✔️     | ❌    | ❌   |
 | <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌     | ✔️    | ⚠️   |
 
-On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 On macOS and Linux, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
@@ -285,7 +285,7 @@ Windows and Linux both emit DER-encoded PKCS7 blobs. macOS emits indefinite-leng
 
 ### X509Store
 
-On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs, and those APIs work the same in .NET Core and .NET 5 as they do in .NET Framework.
+On Windows, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a representation of the Windows Certificate Store APIs. Those APIs work the same in .NET Core and .NET 5 as they do in .NET Framework.
 
 On Linux, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-write), and user key storage (read-write).
 
@@ -309,11 +309,11 @@ On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 | Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌    | ✔️              |
 | Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌    | ❌               |
 | Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌    | ✔️ (if ReadOnly) |
-| Open non-existant store (ExistingOnly)           | ❌     | ❌    | ❌               |
-| Open CurrentUser non-existant store (ReadWrite)  | ✔️     | ✔️    | ❌               |
-| Open LocalMachine non-existant store (ReadWrite) | ✔️     | ❌    | ❌               |
+| Open non-existent store (ExistingOnly)           | ❌     | ❌    | ❌               |
+| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️    | ❌               |
+| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌    | ❌               |
 
-For unsupported scenarios (❌ in the table) a <xref:System.Security.Cryptography.CryptographicException> is thrown.
+For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
 
 On Linux:
 
@@ -336,9 +336,9 @@ in different locations. The resulting `IntPtr` can be passed to [`new X509Store(
 
 ### X509Chain
 
-macOS does not support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
+macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
 
-macOS does not support a user-initiated timeout on CRL/OCSP/AIA downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
+macOS doesn't support a user-initiated timeout on CRL/OCSP/AIA downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
 
 ## Additional resources
 

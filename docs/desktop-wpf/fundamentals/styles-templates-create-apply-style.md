@@ -1,7 +1,7 @@
 ---
 title: Create a style for a control
 description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET Core.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 09/12/2019
 dev_langs:

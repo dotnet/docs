@@ -1,7 +1,7 @@
 ﻿'<snippet1>
 '<snippet2>
 Imports System.Reflection
-<Assembly:AssemblyTitle("My Assembly")>
+<Assembly: AssemblyTitle("My Assembly")>
 '</snippet2>
 
 '<snippet3>

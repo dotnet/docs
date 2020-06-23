@@ -1,5 +1,6 @@
 ---
 title: "How to: Set the Security Mode"
+description: "Learn how to set the three common WCF security modes on most predefined bindings: Transport, Message, and TransportWithMessageCredential."
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

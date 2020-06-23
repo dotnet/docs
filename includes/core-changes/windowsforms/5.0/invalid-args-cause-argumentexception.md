@@ -11,7 +11,7 @@ Throwing an <xref:System.ArgumentException> conforms to the behavior of the .NET
 The following table lists the affected methods and parameters:
 
 | Method | Parameter name | Condition | Version added |
-|-|-|-|
+|-|-|-|-|
 | <xref:System.Windows.Forms.TabControl.GetToolTipText(System.Object)?displayProperty=fullName> | `item` | Argument is not of type <xref:System.Windows.Forms.TabPage>. | 5.0 Preview 1 |
 | <xref:System.Windows.Forms.DataFormats.GetFormat(System.String)?displayProperty=fullName> | `format` | Argument is `null`, <xref:System.String.Empty?displayProperty=nameWithType>, or white space. | 5.0 Preview 5 |
 

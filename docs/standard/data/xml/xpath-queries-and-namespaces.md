@@ -1,5 +1,6 @@
 ---
 title: "XPath Queries and Namespaces"
+description: Learn about XPath queries & namespaces. XPath queries know of namespaces in an XML document & can use namespace prefixes to qualify element & attribute names.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

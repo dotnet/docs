@@ -1,5 +1,6 @@
 ---
 title: "How to: store asymmetric keys in a key container"
+description: Learn how to store asymmetric keys in a key container in .NET. See how to create an asymmetric key, save it in a key container, and retrieve and delete the key.
 ms.date: 05/26/2020
 ms.technology: dotnet-standard
 dev_langs: 

@@ -1,5 +1,6 @@
 ---
 title: "CoreResponseData Class"
+description: Understand the CoreResponseData class, which represents the parsing of the HTTP headers and the response body. It is in the System.Net namespace in .NET.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"

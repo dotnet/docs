@@ -21,13 +21,13 @@ namespace NullableIntroduction
         private List<SurveyResponse>? respondents;
         public void PerformSurvey(int numberOfRespondents)
         {
-            int repondentsConsenting = 0;
+            int respondentsConsenting = 0;
             respondents = new List<SurveyResponse>();
-            while (repondentsConsenting < numberOfRespondents)
+            while (respondentsConsenting < numberOfRespondents)
             {
                 var respondent = SurveyResponse.GetRandomId();
                 if (respondent.AnswerSurvey(surveyQuestions))
-                    repondentsConsenting++;
+                    respondentsConsenting++;
                 respondents.Add(respondent);
             }
         }

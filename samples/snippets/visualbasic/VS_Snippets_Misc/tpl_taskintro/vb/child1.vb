@@ -6,23 +6,23 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Module Example
-   Public Sub Main()
-      Dim parent = Task.Factory.StartNew(Sub()
-                                            Console.WriteLine("Parent task beginning.")
-                                            For ctr As Integer = 0 To 9
-                                               Dim taskNo As Integer = ctr
-                                               Task.Factory.StartNew(Sub(x)
-                                                                        Thread.SpinWait(5000000)
-                                                                        Console.WriteLine("Attached child #{0} completed.", 
-                                                                                          x)
-                                                                     End Sub,
-                                                                     taskNo, TaskCreationOptions.AttachedToParent)
-                                            Next
-                                         End Sub)
-      parent.Wait()
-      Console.WriteLine("Parent task completed.")
-   End Sub
-End Module   
+    Public Sub Main()
+        Dim parent = Task.Factory.StartNew(Sub()
+                                               Console.WriteLine("Parent task beginning.")
+                                               For ctr As Integer = 0 To 9
+                                                   Dim taskNo As Integer = ctr
+                                                   Task.Factory.StartNew(Sub(x)
+                                                                             Thread.SpinWait(5000000)
+                                                                             Console.WriteLine("Attached child #{0} completed.",
+                                                                                               x)
+                                                                         End Sub,
+                                                                         taskNo, TaskCreationOptions.AttachedToParent)
+                                               Next
+                                           End Sub)
+        parent.Wait()
+        Console.WriteLine("Parent task completed.")
+    End Sub
+End Module
 ' The example displays output like the following:
 '       Parent task beginning.
 '       Attached child #9 completed.

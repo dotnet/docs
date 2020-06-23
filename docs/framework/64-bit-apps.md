@@ -1,5 +1,6 @@
 ---
 title: "64-bit Applications"
+description: Get information about configuring applications on a Windows 64-bit OS, as either a native 64-bit application or under WOW64 (Windows 32-bit on Windows 64-bit).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "applications [C++], 64-bit"

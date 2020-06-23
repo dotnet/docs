@@ -6,21 +6,21 @@ Option Strict On
 
 <AttributeUsageAttribute(AttributeTargets.Class Or AttributeTargets.Struct)> _
 Public Class NumericAttribute
-   Private _isNumeric As Boolean
-   
-   Public Sub New(isNumeric As Boolean)
-      _isNumeric = isNumeric
-   End Sub
-   
-   Public ReadOnly Property IsNumeric As Boolean
-      Get
-         Return _isNumeric
-      End Get
-   End Property
+    Private _isNumeric As Boolean
+
+    Public Sub New(isNumeric As Boolean)
+        _isNumeric = isNumeric
+    End Sub
+
+    Public ReadOnly Property IsNumeric As Boolean
+        Get
+            Return _isNumeric
+        End Get
+    End Property
 End Class
 
 <Numeric(True)> Public Structure UDouble
-   Dim Value As Double
+    Dim Value As Double
 End Structure
 ' Compilation produces a compiler error like the following:
 '    error BC31504: 'NumericAttribute' cannot be used as an attribute because it 
@@ -31,8 +31,8 @@ End Structure
 ' </Snippet18>
 
 Module Example
-   Public Sub Main()
-      
-   End Sub
+    Public Sub Main()
+
+    End Sub
 End Module
 

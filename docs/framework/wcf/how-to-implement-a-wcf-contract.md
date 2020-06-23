@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Implement a Windows Communication Foundation service contract"
+description: Learn how to add code to implement a WCF service interface as part of a series of articles that help you get started creating a WCF application.
 ms.date: 03/19/2019
 dev_langs:
   - "csharp"

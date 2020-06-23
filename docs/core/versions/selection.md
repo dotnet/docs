@@ -1,7 +1,7 @@
 ---
 title: Select which .NET Core version to use
 description: Learn how .NET Core automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 03/24/2020
 ---

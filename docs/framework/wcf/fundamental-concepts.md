@@ -1,5 +1,6 @@
 ---
 title: "Fundamental Windows Communication Foundation Concepts"
+description: Learn about the fundamentals of the Windows Communication Foundation (WCF) architecture with this high-level explanation.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], concepts"

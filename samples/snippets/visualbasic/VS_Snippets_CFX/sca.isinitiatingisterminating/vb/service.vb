@@ -24,9 +24,9 @@ Namespace Microsoft.ServiceModel.Samples
     End Interface
     ' </snippet1>
 
-        ' Service class which implements the service contract.
-        ' Use an InstanceContextMode of PrivateSession to store the result
-        ' An instance of the service will be bound to each session
+    ' Service class which implements the service contract.
+    ' Use an InstanceContextMode of PrivateSession to store the result
+    ' An instance of the service will be bound to each session
     <ServiceBehavior(InstanceContextMode:=InstanceContextMode.PerSession)> _
     Public Class CalculatorService
         Implements ICalculatorSession

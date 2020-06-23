@@ -1,5 +1,6 @@
 ---
 title: "How to: Set Headers in the Client Request (WCF Data Services)"
+description: Learn how to handle the SendingRequest event to add a new header to the request message before it is sent to the data service in WCF Data Services.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

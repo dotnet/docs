@@ -1,5 +1,6 @@
 ---
 title: "Working with Certificates"
+description: Learn about X.509 digital certificate features and how to use them in WCF. Resources in this article can further explain these concepts.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -35,7 +35,7 @@ Class GenericMethodBuilder
         Next
 
         Return retval
-    End Function 
+    End Function
     '</Snippet20>
 
 
@@ -78,7 +78,7 @@ Class GenericMethodBuilder
         '<Snippet3>
         Dim demoType As TypeBuilder = demoModule.DefineType( _
             "DemoType", _
-            TypeAttributes.Public) 
+            TypeAttributes.Public)
         '</Snippet3>
 
         ' Define a Shared, Public method with standard calling
@@ -132,14 +132,14 @@ Class GenericMethodBuilder
         '<Snippet7>
         Dim icoll As Type = GetType(ICollection(Of ))
         Dim icollOfTInput As Type = icoll.MakeGenericType(TInput)
-        Dim constraints() As Type = { icollOfTInput }
+        Dim constraints() As Type = {icollOfTInput}
         TOutput.SetInterfaceConstraints(constraints)
         '</Snippet7>
 
         ' Set parameter types for the method. The method takes
         ' one parameter, an array of type TInput.
         '<Snippet8>
-        Dim params() As Type = { TInput.MakeArrayType() }
+        Dim params() As Type = {TInput.MakeArrayType()}
         factory.SetParameters(params)
         '</Snippet8>
 
@@ -291,7 +291,7 @@ Class GenericMethodBuilder
         ' one element in that array, the argument 'arr'.
         '
         '<Snippet22>
-        Dim o As Object = bound.Invoke(Nothing, New Object() { arr })
+        Dim o As Object = bound.Invoke(Nothing, New Object() {arr})
         Dim list2 As List(Of String) = CType(o, List(Of String))
 
         Console.WriteLine("The first element is: {0}", list2(0))
@@ -314,8 +314,8 @@ Class GenericMethodBuilder
         Console.WriteLine("The first element is: {0}", list3(0))
         '</Snippet23>
 
-    End Sub  
-End Class 
+    End Sub
+End Class
 
 ' This code example produces the following output:
 '

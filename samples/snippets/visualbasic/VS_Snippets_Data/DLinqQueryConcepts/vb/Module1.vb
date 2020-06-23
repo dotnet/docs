@@ -101,9 +101,9 @@ Module Module1
         Dim db As New Northwnd("c:\northwnd.mdf")
         Dim c As Customer = _
     (From cust In db.Customers _
-    Where cust.CustomerID = 19283).First()
+     Where cust.CustomerID = 19283).First()
         Dim orders = From ord In c.Orders _
-            Where ord.ShippedDate.Value.Year = 1998
+                     Where ord.ShippedDate.Value.Year = 1998
         For Each nextOrder In orders
             ' Do something.
         Next
@@ -119,7 +119,7 @@ Module Module1
         c.Orders.Load()
 
         Dim orders = From ord In c.Orders _
-            Where ord.ShippedDate.Value.Year = 1998
+                     Where ord.ShippedDate.Value.Year = 1998
 
         For Each nextOrder In orders
             ' Do something.

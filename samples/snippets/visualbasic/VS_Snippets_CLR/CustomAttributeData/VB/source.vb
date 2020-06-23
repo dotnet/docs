@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Collections.ObjectModel
 
 ' The example attribute is applied to the assembly.
-<Assembly:Example(ExampleKind.ThirdKind, Note:="This is a note on the assembly.")>
+<Assembly: Example(ExampleKind.ThirdKind, Note:="This is a note on the assembly.")>
 
 ' An enumeration used by the ExampleAttribute class.
 Public Enum ExampleKind
@@ -47,17 +47,17 @@ Public Class ExampleAttribute
     '
     Public ReadOnly Property Kind As ExampleKind
         Get
-            Return kindValue 
+            Return kindValue
         End Get
     End Property
     Public ReadOnly Property Strings As String()
         Get
-            Return arrayStrings 
+            Return arrayStrings
         End Get
     End Property
     Public Property Note As String
         Get
-            Return noteValue 
+            Return noteValue
         End Get
         Set
             noteValue = value
@@ -65,7 +65,7 @@ Public Class ExampleAttribute
     End Property
     Public Property Numbers As Integer()
         Get
-            Return arrayNumbers 
+            Return arrayNumbers
         End Get
         Set
             arrayNumbers = value
@@ -76,11 +76,11 @@ End Class
 ' The example attribute is applied to the test class.
 '
 <Example(ExampleKind.SecondKind, _
-         New String() { "String array argument, line 1", _
+         New String() {"String array argument, line 1", _
                         "String array argument, line 2", _
-                        "String array argument, line 3" }, _
-         Note := "This is a note on the class.", _
-         Numbers := New Integer() { 53, 57, 59 })> _
+                        "String array argument, line 3"}, _
+         Note:="This is a note on the class.", _
+         Numbers:=New Integer() {53, 57, 59})> _
 Public Class Test
     ' The example attribute is applied to a method, using the
     ' parameterless constructor and supplying a named argument.
@@ -148,7 +148,7 @@ Public Class Test
         Else
             Console.WriteLine("         Type: '{0}'  Value: '{1}'", _
                 cata.ArgumentType, cata.Value)
-        End If       
+        End If
     End Sub
 End Class
 

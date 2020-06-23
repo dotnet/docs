@@ -7,7 +7,7 @@ Public Class Win32
        ByVal caption As String, ByVal Typ As Integer) As IntPtr
 End Class
 
-Public Class HelloWorld    
+Public Class HelloWorld
     Public Shared Sub Main()
         Win32.MessageBox(0, "Hello World", "Platform Invoke Sample", 0)
     End Sub

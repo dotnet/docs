@@ -1,5 +1,6 @@
 ---
 title: "Managing Claims and Authorization with the Identity Model"
+description: Learn about the major programming concepts for WCF Identity Model, a claims-based model for performing authorization. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "authorization [WCF]"

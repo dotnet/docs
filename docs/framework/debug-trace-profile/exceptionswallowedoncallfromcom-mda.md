@@ -1,5 +1,6 @@
 ---
 title: "exceptionSwallowedOnCallFromCom MDA"
+description: Review the exceptionSwallowedOnCallFromCOM managed debugging assistant in .NET. This MDA occurs if an exception was thrown but there's no good way to report it.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "messages, informational"

@@ -1,5 +1,6 @@
 ---
 title: "disconnectedContext MDA"
+description: Review the disconnectedContext managed debugging assistant in .NET, which is invoked when the CLR tries to transition into a disconnected apartment or context.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DisconnectedContext MDA"

@@ -1,5 +1,6 @@
 ---
 title: "Diagnosing Errors with Managed Debugging Assistants"
+description: Diagnose errors in .NET with managed debugging assistants. MDAs are debugging aids working in conjunction with the CLR to provide runtime state information.
 ms.date: 08/14/2018
 f1_keywords:
   - "EHMDA"

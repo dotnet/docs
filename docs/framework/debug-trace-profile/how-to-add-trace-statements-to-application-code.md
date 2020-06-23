@@ -1,5 +1,6 @@
 ---
 title: "How to: Add Trace Statements to Application Code"
+description: Learn how to add trace statements to application code in .NET. The methods used most often for tracing are the methods for writing output to listeners.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

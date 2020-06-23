@@ -1,5 +1,6 @@
 ---
 title: "gcManagedToUnmanaged MDA"
+description: Review the gcManagedToUnmanaged managed debugging assistant. This MDA may activate because of premature garbage collection during transition to unmanaged code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), garbage collection"

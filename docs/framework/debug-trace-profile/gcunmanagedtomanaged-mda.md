@@ -1,5 +1,6 @@
 ---
 title: "gcUnmanagedToManaged MDA"
+description: Review the gcManagedToUnmanaged managed debugging assistant in .NET. This MDA may activate because of garbage heap corruption during transition to managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), garbage collection"

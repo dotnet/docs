@@ -1,5 +1,6 @@
 ---
 title: "dangerousThreadingAPI MDA"
+description: Review the dangerousThreadingAPI managed debugging assistant (MDA), which is activated when Thread.Suspend is called on a thread other than the current thread.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "suspending threads"

@@ -1,5 +1,6 @@
 ---
 title: "Debugging, Tracing, and Profiling"
+description: Read about debugging, tracing, and profiling in .NET. See articles covering just-in-time (JIT) debugging, tracing and instrumenting applications, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging [.NET Framework]"

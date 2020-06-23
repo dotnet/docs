@@ -60,7 +60,7 @@ Else
 End If
 ```
 
- This example produces the following output:
+This example produces the following output:
 
 ```output
 r1 and r2 have names that refer to the same instance.

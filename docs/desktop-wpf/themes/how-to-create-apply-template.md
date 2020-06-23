@@ -1,7 +1,7 @@
 ---
 title: Create a template in WPF - .NET Desktop
 description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET Core.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 11/15/2019
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]

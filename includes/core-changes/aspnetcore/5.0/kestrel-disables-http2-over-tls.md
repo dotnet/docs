@@ -7,8 +7,8 @@ To enable HTTP/2 over Transport Layer Security (TLS) on Windows, two requirement
 
 As such, Kestrel's behavior when HTTP/2 over TLS is configured has changed to:
 
-- Downgrade to `Http1` and log a message at the `Information` level when [ListenOptions.HttpProtocols](https://github.com/dotnet/aspnetcore/blob/c4c6e25a0660ffbcae2d81c979495ec9533ccaff/src/Servers/Kestrel/Core/src/ListenOptions.cs#L79) is set to `Http1AndHttp2`. `Http1AndHttp2` is the default value for `ListenOptions.HttpProtocols`.
-- Throw a `NotSupportedException` when [ListenOptions.HttpProtocols](https://github.com/dotnet/aspnetcore/blob/c4c6e25a0660ffbcae2d81c979495ec9533ccaff/src/Servers/Kestrel/Core/src/ListenOptions.cs#L79) is set to `Http2`.
+- Downgrade to `Http1` and log a message at the `Information` level when [ListenOptions.HttpProtocols](/dotnet/api/microsoft.aspnetcore.server.kestrel.core.httpprotocols) is set to `Http1AndHttp2`. `Http1AndHttp2` is the default value for `ListenOptions.HttpProtocols`.
+- Throw a `NotSupportedException` when `ListenOptions.HttpProtocols` is set to `Http2`.
 
 For discussion, see issue [dotnet/aspnetcore#23068](https://github.com/dotnet/aspnetcore/issues/23068).
 

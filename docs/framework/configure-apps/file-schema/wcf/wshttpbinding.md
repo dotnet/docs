@@ -1,5 +1,6 @@
 ---
 title: "<wsHttpBinding>"
+description: Defines a secure, reliable, interoperable HTTP binding suitable for non-duplex service contracts, which implements WS-Reliable Messaging and WS-Security. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wsHttpBinding Element"

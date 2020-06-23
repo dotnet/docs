@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Service Binding in Configuration"
+description: Learn how to configure an endpoint for a WCF service in a configuration file. A contract is defined for a service and implemented in a class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

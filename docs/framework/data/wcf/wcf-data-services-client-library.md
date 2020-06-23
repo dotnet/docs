@@ -1,5 +1,6 @@
 ---
 title: "WCF Data Services Client Library"
+description: Learn how to use WCF Data Services client libraries to access and change data from a .NET Framework client application. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WCF Data Services, client library"

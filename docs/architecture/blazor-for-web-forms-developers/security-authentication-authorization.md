@@ -105,6 +105,90 @@ Typically, ASP.NET Web Forms applications configure security within the `web.con
 
 Although still tasked with authentication and authorization, ASP.NET Core Identity uses a different set of abstractions and assumptions when compared to the universal providers. For example, the new Identity model supports third party authentication, allowing users to authenticate using a social media account or other trusted authentication provider. ASP.NET Core Identity supports UI for commonly needed pages like login, logout, and register. It leverages EF Core for its data access, and uses EF Core migrations to generate the necessary schema required to supports its data model. This [introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/identity) provides a good overview of what is included with ASP.NET Core Identity and how to get started working with it. If you haven't already set up ASP.NET Core Identity in your application and its database, it will help you get started.
 
+### Roles, claims, and policies
+
+Both the universal providers and ASP.NET Core Identity support the concept of roles. You can create roles for users and assign users to roles. Users can belong to any number of roles, and you can verify role membership as part of your authorization implementation.
+
+In addition to roles, ASP.NET Core identity supports the concepts of claims and policies. While a role should specifically correspond to a set of resources a user in that role should be able to access, a claim is simply part of a user's identity. A claim is a name value pair that represents what the subject is, not what the subject can do.
+
+It is possible to directly inspect a user's claims and determine based on these whether a user should be given access to a resource. However, such checks are often repetitive and scattered throughout the system. A better approach is to define a *policy*.
+
+An authorization policy consists of one or more requirements. Policies are registered as part of the authorization service configuration in the `ConfigureServices` method of `Startup.cs`. For example, the following code snippet configures a policy called "CanadiansOnly" which has the requirement that the user have the Country claim with the value of "Canada".
+
+```csharp
+services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanadiansOnly", policy => policy.RequireClaim(ClaimTypes.Country, "Canada"));
+});
+```
+
+You can [learn more about how to create custom policies in the documentation](https://docs.microsoft.com/aspnet/core/security/authorization/policies).
+
+Whether you're using policies or roles, you can specify that a particular page in your Blazor application require that role or policy with the `[Authorize]` attribute, applied with the `@attribute` directive.
+
+Requiring a role:
+
+```csharp
+@attribute [Authorize(Roles ="administrators")]
+```
+
+Requiring a policy be satisfied:
+
+```csharp
+@attribute [Authorize(Policy ="CanadiansOnly")]
+```
+
+If you need access to a user's authentication state, roles, or claims you can access these by injecting the `AuthenticationStateProvider` into your component:
+
+```csharp
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+```
+
+With the provider in place, you can gain access to the user with the following code:
+
+```csharp
+AuthenticationState authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+ClaimsPrincipal user = authState.User;
+
+if (user.Identity.IsAuthenticated)
+{
+  // work with user.Claims and/or user.Roles
+}
+```
+
+To work with users and claims you may also need to inject a `UserManager<T>` (use `IdentityUser` for default) which you can use to enumerate and modify claims for a user. First inject the type and assign it to a property:
+
+```csharp
+@inject UserManager<IdentityUser> MyUserManager
+```
+
+Then use it to work with the user's claims. The following sample shows how to add and persist a claim on a user:
+
+```csharp
+private async Task AddCountryClaim()
+{
+    var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+    var user = authState.User;
+    var identityUser = await MyUserManager.FindByNameAsync(user.Identity.Name);
+
+    if (!user.HasClaim(c => c.Type == ClaimTypes.Country))
+    {
+        // stores the claim in the cookie
+        ClaimsIdentity id = new ClaimsIdentity();
+        id.AddClaim(new Claim(ClaimTypes.Country, "Canada"));
+        user.AddIdentity(id);
+
+        // save the claim in the database
+        await MyUserManager.AddClaimAsync(identityUser, new Claim(ClaimTypes.Country, "Canada"));
+    }
+}
+```
+
+If you need to work with roles, follow the same approach. You may need to inject a `RoleManager<T>` (use `IdentityRole` for default type) to list and manage the roles themselves.
+
+### Migration guide
+
 Migrating from ASP.NET Web Forms and universal providers to ASP.NET Core Identity requires several steps:
 
 1. Create ASP.NET Core Identity database schema in destination database
@@ -215,20 +299,85 @@ ASP.NET Identity does not configure anonymous or role-based access to locations 
 
 ### Updating individual pages to use ASP.NET Core Identity abstractions
 
+In your ASP.NET Web Forms application, if you had web.config settings to deny access to certain pages or folders to anonymous users, you would migrate these by simply adding the `[Authorize]` attribute to such pages:
+
+```razor
+@attribute [Authorize]
+```
+
+If you further had denied access except to those users belonging to a certain role, you would likewise migrate this by adding an attribute specifying a role:
+
+```razor
+@attribute [Authorize(Roles ="administrators")]
+```
+
+Note that the `[Authorize]` attribute only works on `@page` components that are reached via the Blazor Router. The attribute does not work with child components, which should instead use `AuthorizeView`.
+
+If you have logic within page markup for determining whether to display some code to a certain user, you can replace this with the `AuthorizeView` component. The [AuthorizeView component](https://docs.microsoft.com/aspnet/core/blazor/security/?view=aspnetcore-3.1#authorizeview-component) selectively displays UI depending on whether the user is authorized to see it. It also exposes a `context` variable that can be used to access user information.
+
+```razor
+<AuthorizeView>
+    <Authorized>
+        <h1>Hello, @context.User.Identity.Name!</h1>
+        <p>You can only see this content if you are authenticated.</p>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Authentication Failure!</h1>
+        <p>You are not signed in.</p>
+    </NotAuthorized>
+</AuthorizeView>
+```
+
+You can access authentication state within procedural logic by accessing the user from a `Task<AuthenticationState` configured with the `[CascadingParameter]` attribute. This will get you access to the user, which can let you determine if they are authenticated and if they belong to a particular role. If you need to evaluate a policy procedurally, you can inject an instance of the `IAuthorizationService` and calls the `AuthorizeAsync` method on it. The following sample code demonstrates how to get user information and allow an authorized user to perform a task restricted by the `content-editor` policy.
+
+```razor
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
+
+<button @onclick="@DoSomething">Do something important</button>
+
+@code {
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    private async Task DoSomething()
+    {
+        var user = (await authenticationStateTask).User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            // Perform an action only available to authenticated (signed-in) users.
+        }
+
+        if (user.IsInRole("admin"))
+        {
+            // Perform an action only available to users in the 'admin' role.
+        }
+
+        if ((await AuthorizationService.AuthorizeAsync(user, "content-editor"))
+            .Succeeded)
+        {
+            // Perform an action only available to users satisfying the 
+            // 'content-editor' policy.
+        }
+    }
+}
+```
+
+## Summary
+
+Blazor uses the same security model as ASP.NET Core, which is ASP.NET Core Identity. Migrating from universal providers to ASP.NET Core Identity is relatively straightforward, assuming not too much customization was applied to the original data schema. Once the data has been migrated, working with authentication and authorization in Blazor apps is well-documented, with configurable as well as programmatic support for most security requirements.
 
 ## References
 
 - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 - [Migrate from ASP.NET Membership authentication to ASP.NET Core 2.0 Identity](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
 - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
+- [ASP.NET Core Blazor authentication and authorization](https://docs.microsoft.com/aspnet/core/blazor/security/)
 
-Notes:
-- Review universal providers for ASP.NET users / roles
-- Introduce ASP.NET Core Identity
-  - Compare to existing users/roles
   - Explain Policies
-- Authorize attribute and access control
-- Migration strategy
+- Authorize attribute and access control (done)
+- Migration strategy (done)
 
 >[!div class="step-by-step"]
 >[Previous](config.md)

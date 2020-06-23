@@ -1,5 +1,6 @@
 ---
 title: "invalidVariant MDA"
+description: Review the invalidVariant managed debugging assistant, which is invoked if an invalid VARIANT is encountered in a call from native/unmanaged to managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid variant"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create, Initialize and Configure Trace Switches"
+description: Create, initialize, and configure trace switches using the System.Diagnostics.BooleanSwitch and System.Diagnostics.TraceSwitch classes in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

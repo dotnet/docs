@@ -1,5 +1,6 @@
 ---
 title: "invalidOverlappedToPinvoke MDA"
+description: Review the invalidOverlappedToPinvoke managed debugging assistant (MDA) in .NET, which may be activated during a crash or an unexplainable heap corruption.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "overlapped pointers"

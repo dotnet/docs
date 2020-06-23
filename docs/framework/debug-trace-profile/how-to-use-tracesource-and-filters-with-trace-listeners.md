@@ -1,5 +1,6 @@
 ---
 title: "How to: Use TraceSource and Filters with Trace Listeners"
+description: Use the TraceSource class and filters with trace listeners in .NET. TraceSource supersedes the static methods of the older Trace and Debug classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "initializing trace listeners"

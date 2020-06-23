@@ -1,5 +1,6 @@
 ---
 title: "invalidGCHandleCookie MDA"
+description: Review the invalidGCHandleCookie managed debugging assistant (MDA), which is activated when a conversion from an invalid IntPtr cookie to a GCHandle is tried.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid cookies"

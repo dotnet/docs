@@ -1,5 +1,6 @@
 ---
 title: "moduloObjectHashcode MDA"
+description: Review the moduloObjectHashcode managed debugging assistant (MDA), which changes the Object class to get a remainder value on a GetHashCode method result.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), hashcode modulus"

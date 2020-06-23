@@ -1,5 +1,6 @@
 ---
 title: "How to: Create and Initialize Trace Sources"
+description: Create and initialize trace sources using TraceSource class in .NET. This class provides methods for tracing events and data and issuing informational traces.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

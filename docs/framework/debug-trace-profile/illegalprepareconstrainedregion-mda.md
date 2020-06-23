@@ -1,5 +1,6 @@
 ---
 title: "illegalPrepareConstrainedRegion MDA"
+description: Review the illegalPrepareConstrainedRegion managed debugging assistant, which is invoked if a PrepareConstrainedRegions call isn't followed by a try statement.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PrepareConstrainedRegions method"

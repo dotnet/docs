@@ -1,5 +1,6 @@
 ---
 title: "memberInfoCacheCreation MDA"
+description: Understand the memberInfoCacheCreation managed debugging assistant (MDA) in .NET, which is activated when a MemberInfo cache is created.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "member info cache creation"

@@ -375,10 +375,6 @@ Blazor uses the same security model as ASP.NET Core, which is ASP.NET Core Ident
 - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
 - [ASP.NET Core Blazor authentication and authorization](https://docs.microsoft.com/aspnet/core/blazor/security/)
 
-  - Explain Policies
-- Authorize attribute and access control (done)
-- Migration strategy (done)
-
 >[!div class="step-by-step"]
 >[Previous](config.md)
 >[Next](migration.md)

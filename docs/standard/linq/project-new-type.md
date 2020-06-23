@@ -10,7 +10,7 @@ ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
 
 # How to project a new type (LINQ to XML)
 
-Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they aren't appropriate for every scenario. In many cases, you'll want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
+Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they're not appropriate for every scenario. In many cases, you'll want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
 
 ## Example: Define a new type and have the `select` statement create an instance of the type
 

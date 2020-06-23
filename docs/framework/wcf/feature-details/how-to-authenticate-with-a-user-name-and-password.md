@@ -1,5 +1,6 @@
 ---
 title: "How to: Authenticate with a User Name and Password"
+description: Learn how to enable a WCF service to authenticate a client by using a Windows domain username and password, with sample code.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "authentication [WCF], user name and password"

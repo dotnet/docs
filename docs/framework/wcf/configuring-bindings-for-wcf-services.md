@@ -1,5 +1,6 @@
 ---
 title: "Configuring Bindings for Windows Communication Foundation Services"
+description: Learn about configuring bindings at deployment time for a WCF application by editing items under the system.ServiceModel element.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "binding configuration [WCF]"

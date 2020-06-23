@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Use a Windows Communication Foundation client"
+description: Learn how to create a client instance, compile the application, and communicate with a service as part of a series of articles about creating a WCF application.
 ms.date: 03/19/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"

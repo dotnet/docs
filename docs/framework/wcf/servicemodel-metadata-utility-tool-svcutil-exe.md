@@ -1,5 +1,6 @@
 ---
 title: "ServiceModel Metadata Utility Tool (Svcutil.exe)"
+description: Learn about the ServiceModel Metadata Utility, which generates WFC service model code from metadata documents and metadata documents from service model code.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "clients [WCF], building"

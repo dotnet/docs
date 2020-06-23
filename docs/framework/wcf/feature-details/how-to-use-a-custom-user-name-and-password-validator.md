@@ -1,5 +1,6 @@
 ---
 title: "How to: Use a Custom User Name and Password Validator"
+description: Learn how to incorporate a custom password validator for WFC applications in place of the default Windows user name and password validation.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

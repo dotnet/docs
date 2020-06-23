@@ -1,5 +1,6 @@
 ---
 title: "Duplex Services"
+description: Learn how to create a duplex service contract in WCF, which allows both endpoints to send messages to each other over a client-created channel.
 ms.date: "05/09/2018"
 dev_langs:
   - "csharp"

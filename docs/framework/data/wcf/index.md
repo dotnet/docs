@@ -1,5 +1,6 @@
 ---
 title: "WCF Data Services 4.5"
+description: Learn about WCF Data Services, a .NET Framework component which supports services to expose and consume data using REST semantics.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Astoria"

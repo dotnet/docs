@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Service Endpoint in Code"
+description: Learn how to implement a service in a class and define its endpoint programmatically. In WCF, endpoints are usually defined in a configuration file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

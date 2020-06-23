@@ -1,5 +1,6 @@
 ---
 title: Margin and Padding in Controls
+description: Learn how to add margins and padding in Windows Form controls with the Margin and Padding properties.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Padding property [Windows Forms]"

@@ -1,5 +1,6 @@
 ---
 title: "Multiple-Document Interface (MDI) Applications"
+description: Learn how Windows Forms multiple-document interface (MDI) applications enable you to display multiple documents at the same time, with each document displayed in its own window.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "forms [Windows Forms], MDI"

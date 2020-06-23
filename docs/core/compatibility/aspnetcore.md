@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 06/11/2020
+ms.date: 06/23/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -39,6 +39,7 @@ The following breaking changes are documented on this page:
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
 - [HTTP: Some cookie SameSite default values changed](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP: Synchronous IO disabled by default](#http-synchronous-io-disabled-in-all-servers)
+- [HttpSys: Client certificate renegotiation disabled by default](#httpsys-client-certificate-renegotiation-disabled-by-default)
 - [Identity: AddDefaultUI method overload removed](#identity-adddefaultui-method-overload-removed)
 - [Identity: UI Bootstrap version change](#identity-default-bootstrap-version-of-ui-changed)
 - [Identity: SignInAsync throws exception for unauthenticated identity](#identity-signinasync-throws-exception-for-unauthenticated-identity)
@@ -91,6 +92,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
+[!INCLUDE[HttpSys: Client certificate renegotiation disabled by default](~/includes/core-changes/aspnetcore/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md)]
 
 ***
 

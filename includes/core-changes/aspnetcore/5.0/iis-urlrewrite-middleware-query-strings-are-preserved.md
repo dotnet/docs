@@ -14,16 +14,16 @@ Consider the following rewrite rule:
 
 ```xml
 <rule name="MyRule" stopProcessing="true">
-  <match url="^foo" />
-  <action type="Redirect" url="/bar" redirectType="Temporary" appendQueryString="true" />
+  <match url="^about" />
+  <action type="Redirect" url="/contact" redirectType="Temporary" appendQueryString="true" />
 </rule>
 ```
 
-The preceding rule doesn't append the query string. A URI like `/foo?baz=1` redirects to `/bar` instead of `/bar?baz=1`. The `appendQueryString` attribute defaults to `true` as well.
+The preceding rule doesn't append the query string. A URI like `/about?id=1` redirects to `/contact` instead of `/contact?id=1`. The `appendQueryString` attribute defaults to `true` as well.
 
 #### New behavior
 
-The query string is preserved. The URI from the example in [Old behavior](#old-behavior) would be `/foo?baz=1`.
+The query string is preserved. The URI from the example in [Old behavior](#old-behavior) would be `/contact?id=1`.
 
 #### Reason for change
 

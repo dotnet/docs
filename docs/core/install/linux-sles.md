@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on SLES - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on SLES.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---

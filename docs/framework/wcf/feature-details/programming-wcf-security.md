@@ -1,5 +1,6 @@
 ---
 title: "Programming WCF Security"
+description: Learn how to create a secure WCF application, including authentication, confidentiality, and integrity. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

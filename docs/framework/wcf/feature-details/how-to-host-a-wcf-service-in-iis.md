@@ -1,5 +1,6 @@
 ---
 title: "How to: Host a WCF Service in IIS"
+description: Learn how to create a WCF service that is hosted in Internet Information Services (IIS). You can use IIS hosting only with an HTTP transport.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

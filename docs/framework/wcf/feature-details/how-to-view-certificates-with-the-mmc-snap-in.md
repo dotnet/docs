@@ -1,5 +1,6 @@
 ---
 title: "How to: View certificates with the MMC snap-in"
+description: A secure WCF client or service can use a certificate as a credential. Learn about the types of certificate stores you can examine by using the MMC plug-in.
 ms.date: 02/25/2019
 helpviewer_keywords: 
   - "certificates [WCF], viewing with the MMC snap-in"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Svcutil.exe to Download Metadata Documents"
+description: Learn how to use Svcutil.exe to download metadata from running services and save the metadata to local files.
 ms.date: "03/30/2017"
 ms.assetid: 15524274-3167-4627-b722-d6cedb9fa8c6
 ---

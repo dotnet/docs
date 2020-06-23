@@ -1,5 +1,6 @@
 ---
 title: "Net.TCP Port Sharing"
+description: Learn about a TCP-based protocol for high-performance communication and the service that enables ports to be shared across multiple user processes in WCF.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "port activation [WCF]"

@@ -1,5 +1,6 @@
 ---
 title: "Service Identity and Authentication"
+description: Learn about the endpoint identity of a service, a value generated from the service WSDL, which WCF uses to authenticate the service. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

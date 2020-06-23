@@ -1,5 +1,6 @@
 ---
 title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security"
+description: Learn about certificates with message-layer (SOAP) security that WCF offers in addition to HTTPS or TCP, and how WCF validates such certificates.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

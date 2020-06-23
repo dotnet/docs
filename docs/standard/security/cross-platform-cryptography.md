@@ -241,11 +241,11 @@ Digital Signature Algorithm (DSA) key generation is performed by the system libr
 
 The types involved don't translate between platforms and should only be directly used when necessary.
 
-| Type                                                         | Windows | Linux | macOS |
-|--------------------------------------------------------------|---------|-------|-------|
-| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup>    | ⚠️<sup>1</sup>   |
-| <xref:System.Security.Cryptography.DSACng>                   | ✔️     | ❌    | ❌   |
-| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌     | ✔️    | ⚠️<sup>2</sup>   |
+| Type                                                         | Windows | Linux         | macOS         |
+|--------------------------------------------------------------|---------|---------------|---------------|
+| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup> | ⚠️<sup>1</sup> |
+| <xref:System.Security.Cryptography.DSACng>                   | ✔️     | ❌             | ❌            |
+| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️            | ⚠️<sup>2</sup> |
 
 <sup>1</sup> On macOS and Linux, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
@@ -314,16 +314,23 @@ On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 | Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️             | ❌                           |
 | Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌             | ❌                           |
 
-<sup>1</sup> On macOS, the CurrentUser\My store is the user's default keychain, which is login.keychain by default.
-<sup>2</sup> On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
-<sup>3</sup> On macOS, the LocalMachine\My store is System.keychain.
-<sup>4</sup> On macOS, the CurrentUser\Root store is an interpretation of the SecTrustSettings results for the user trust domain.
-<sup>5</sup> On Linux, the LocalMachine\Root store is an interpretation of the CA bundle in the default path for OpenSSL.
-<sup>6</sup> On macOS, the LocalMachine\Root store is an interpretation of the SecTrustSettings results for the admin and system trust domains.
-<sup>7</sup> On Linux, the Disallowed store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the Disallowed store if it has already acquired contents.
-<sup>8</sup> On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
-
 For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
+
+<sup>1</sup> On macOS, the CurrentUser\My store is the user's default keychain, which is login.keychain by default.
+
+<sup>2</sup> On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
+
+<sup>3</sup> On macOS, the LocalMachine\My store is System.keychain.
+
+<sup>4</sup> On macOS, the CurrentUser\Root store is an interpretation of the SecTrustSettings results for the user trust domain.
+
+<sup>5</sup> On Linux, the LocalMachine\Root store is an interpretation of the CA bundle in the default path for OpenSSL.
+
+<sup>6</sup> On macOS, the LocalMachine\Root store is an interpretation of the SecTrustSettings results for the admin and system trust domains.
+
+<sup>7</sup> On Linux, the Disallowed store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the Disallowed store if it has already acquired contents.
+
+<sup>8</sup> On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
 
 On Linux:
 

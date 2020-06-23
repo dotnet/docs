@@ -105,10 +105,10 @@ The OS libraries are used for encryption and decryption padding. Not all platfor
 | OAEP - SHA-1                          | ✔️           | ✔️              | ✔️   | ✔️             |
 | OAEP - SHA-2 (SHA256, SHA384, SHA512) | ✔️           | ✔️              | ✔️   | ❌             |
 | PKCS1 Signature (MD5, SHA-1)          | ✔️           | ✔️              | ✔️   | ✔️             |
-| PKCS1 Signature (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️<sup>1</sup> |
+| PKCS1 Signature (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️\*           |
 | PSS                                   | ✔️           | ✔️              | ✔️   | ❌             |
 
-<sup>1</sup> Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
+\* Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
 
 #### RSA on Windows
 
@@ -165,7 +165,7 @@ The types involved don't translate between platforms and should only be directly
 | Type                                             | Windows | Linux | macOS |
 |--------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️     | ❌    | ❌    |
-| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️<sup>1</sup>   |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️\*  |
 
 <sup>1</sup> On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
@@ -208,9 +208,9 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | Type                                                       | Windows | Linux | macOS |
 |------------------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌   |
-| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️<sup>1</sup>   |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\* |
 
-<sup>1</sup> On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### DSA
 
@@ -221,11 +221,11 @@ Digital Signature Algorithm (DSA) key generation is performed by the system libr
 | Key creation (<= 1024 bits)   | ✔️         | ✔️    | ❌            | ✔️           |
 | Key creation (> 1024 bits)    | ✔️         | ✔️    | ❌            | ❌            |
 | Loading keys (<= 1024 bits)   | ✔️         | ✔️    | ✔️            | ✔️           |
-| Loading keys (> 1024 bits)    | ✔️         | ✔️    | ⚠️<sup>1</sup>| ❌            |
+| Loading keys (> 1024 bits)    | ✔️         | ✔️    | ⚠️\*          | ❌            |
 | FIPS 186-2                    | ✔️         | ✔️    | ✔️            | ✔️           |
 | FIPS 186-3 (SHA-2 signatures) | ✔️         | ✔️    | ❌            | ❌            |
 
-<sup>1</sup> macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
+\* macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
 
 #### DSA on Windows
 

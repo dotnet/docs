@@ -1,5 +1,6 @@
 ---
 title: "Hosting Services"
+description: Learn about the hosting options for a WCF service. A service must be hosted in a runtime environment that creates it and controls its context and lifetime.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting services [WCF]"

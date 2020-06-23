@@ -1,5 +1,6 @@
 ---
 title: "Synchronizing Data for Multithreading"
+description: Learn how to synchronize data for multithreading in .NET. Choose strategies such as synchronized code regions, manual synchronization, or synchronized contexts.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

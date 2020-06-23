@@ -1,5 +1,6 @@
 ---
 title: "Configuring and Extending the Runtime with Behaviors"
+description: Learn how to implement behavior interfaces in WCF apps and add them to a service description or endpoint, either programmatically or in a configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attaching extensions using behaviors [WCF]"

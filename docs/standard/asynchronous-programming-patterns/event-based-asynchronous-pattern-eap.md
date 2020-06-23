@@ -1,5 +1,6 @@
 ---
 title: "Event-based Asynchronous Pattern (EAP)"
+description: See links to articles about the Event-based Asynchronous Pattern (EAP) in .NET, such as implementation, best practices, implementing an EAP client, and more.
 ms.date: "07/23/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

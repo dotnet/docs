@@ -56,32 +56,32 @@ Namespace CancellationWinForms
 
             ' Create the first node in the pipeline. 
             startWork = New TransformBlock(Of WorkItem, WorkItem)(Function(workItem)
-                ' Perform some work.
-                ' Decrement the progress bar that tracks the count of 
-                ' active work items in this stage of the pipeline.
-                ' Increment the progress bar that tracks the count of 
-                ' active work items in the next stage of the pipeline.
-                ' Send the work item to the next stage of the pipeline.
-                workItem.DoWork(250)
-                decrementProgress.Post(toolStripProgressBar1)
-                incrementProgress.Post(toolStripProgressBar2)
-                Return workItem
-            End Function,
+                                                                      ' Perform some work.
+                                                                      ' Decrement the progress bar that tracks the count of 
+                                                                      ' active work items in this stage of the pipeline.
+                                                                      ' Increment the progress bar that tracks the count of 
+                                                                      ' active work items in the next stage of the pipeline.
+                                                                      ' Send the work item to the next stage of the pipeline.
+                                                                      workItem.DoWork(250)
+                                                                      decrementProgress.Post(toolStripProgressBar1)
+                                                                      incrementProgress.Post(toolStripProgressBar2)
+                                                                      Return workItem
+                                                                  End Function,
             New ExecutionDataflowBlockOptions With {.CancellationToken = cancellationSource.Token})
 
             ' Create the second, and final, node in the pipeline. 
             completeWork = New ActionBlock(Of WorkItem)(Sub(workItem)
-               ' Perform some work.
-               ' Decrement the progress bar that tracks the count of 
-               ' active work items in this stage of the pipeline.
-               ' Increment the progress bar that tracks the overall 
-               ' count of completed work items.
-               workItem.DoWork(1000)
-               decrementProgress.Post(toolStripProgressBar2)
-               incrementProgress.Post(toolStripProgressBar3)
-            End Sub,
+                                                            ' Perform some work.
+                                                            ' Decrement the progress bar that tracks the count of 
+                                                            ' active work items in this stage of the pipeline.
+                                                            ' Increment the progress bar that tracks the overall 
+                                                            ' count of completed work items.
+                                                            workItem.DoWork(1000)
+                                                            decrementProgress.Post(toolStripProgressBar2)
+                                                            incrementProgress.Post(toolStripProgressBar3)
+                                                        End Sub,
             New ExecutionDataflowBlockOptions With {.CancellationToken = cancellationSource.Token,
-                                                    .MaxDegreeOfParallelism = 2 })
+                                                    .MaxDegreeOfParallelism = 2})
 
             ' Connect the two nodes of the pipeline. When the first node completes,
             ' set the second node also to the completed state.
@@ -157,10 +157,10 @@ Namespace CancellationWinForms
             toolStripButton1.Enabled = True
         End Sub
         ' </snippet6>
-        
+
         Protected Overrides Sub Finalize()
-           cancellationSource.Dispose()
-           MyBase.Finalize()
+            cancellationSource.Dispose()
+            MyBase.Finalize()
         End Sub
     End Class
 End Namespace

@@ -21,8 +21,8 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ```xml  
 <defaultProxy  
-  enabled="true|false"  
-  useDefaultCredentials="true|false">  
+  enabled="True|False"  
+  useDefaultCredentials="True|False">  
     <bypasslist>...</bypasslist>  
     <proxy>...</proxy>  
     <module>...</module>  
@@ -36,8 +36,8 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|`enabled`|Specifies whether a web proxy is used. The default value is `true`.|  
-|`useDefaultCredentials`|Specifies whether the default credentials for this host are used to access the web proxy. The default value is `false`.|  
+|`enabled`|Specifies whether a web proxy is used. The default value is `True`.|  
+|`useDefaultCredentials`|Specifies whether the default credentials for this host are used to access the web proxy. The default value is `False`.|  
   
 ### Child Elements  
   
@@ -69,9 +69,9 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   <system.net>  
     <defaultProxy>  
       <proxy  
-        usesystemdefault="true"  
+        usesystemdefault="True"  
         proxyaddress="http://192.168.1.10:3128"  
-        bypassonlocal="true"  
+        bypassonlocal="True"  
       />  
       <bypasslist>  
         <add address="[a-z]+\.contoso\.com$" />  

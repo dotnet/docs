@@ -1,5 +1,6 @@
 ---
 title: "Automatic Scaling"
+description: Learn about how automatic scaling enables a form and its controls, designed on one machine, to be displayed appropriately on another machine.
 ms.date: "06/15/2017"
 helpviewer_keywords:
   - "scalability [Windows Forms], automatic in Windows Forms"

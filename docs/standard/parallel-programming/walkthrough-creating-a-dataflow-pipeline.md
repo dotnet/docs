@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Creating a Dataflow Pipeline"
+description: Create a dataflow pipeline, which is a series of components, or dataflow blocks. A dataflow block does a certain task to contribute to a larger goal.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

@@ -7,26 +7,26 @@ Imports System.IO
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim values() As String = { "целый мир", "the whole world" }
-      Dim pattern As String = "\b(\w+\s*)+"
-      For Each value In values
-         Console.Write("Canonical matching: ")
-         If Regex.IsMatch(value, pattern)
-            Console.WriteLine("'{0}' matches the pattern.", value)
-         Else
-            Console.WriteLine("{0} does not match the pattern.", value)
-         End If
-         
-         Console.Write("ECMAScript matching: ")
-         If Regex.IsMatch(value, pattern, RegexOptions.ECMAScript)
-            Console.WriteLine("'{0}' matches the pattern.", value)
-         Else
-            Console.WriteLine("{0} does not match the pattern.", value)
-         End If
-         Console.WriteLine()
-      Next
-   End Sub
+    Public Sub Main()
+        Dim values() As String = {"целый мир", "the whole world"}
+        Dim pattern As String = "\b(\w+\s*)+"
+        For Each value In values
+            Console.Write("Canonical matching: ")
+            If Regex.IsMatch(value, pattern)
+                Console.WriteLine("'{0}' matches the pattern.", value)
+            Else
+                Console.WriteLine("{0} does not match the pattern.", value)
+            End If
+
+            Console.Write("ECMAScript matching: ")
+            If Regex.IsMatch(value, pattern, RegexOptions.ECMAScript)
+                Console.WriteLine("'{0}' matches the pattern.", value)
+            Else
+                Console.WriteLine("{0} does not match the pattern.", value)
+            End If
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Canonical matching: 'целый мир' matches the pattern.

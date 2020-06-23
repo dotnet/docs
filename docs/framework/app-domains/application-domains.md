@@ -1,5 +1,6 @@
 ---
 title: "Application domains"
+description: Read about application domains, which provide an isolation boundary between applications for security, reliability, versioning, & unloading assemblies in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "process boundaries for isolation"

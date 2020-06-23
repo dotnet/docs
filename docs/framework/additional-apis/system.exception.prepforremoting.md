@@ -1,5 +1,6 @@
 ---
 title: Exception.PrepForRemoting Method (System)
+description: Review the Exception.PrepForRemoting method in .NET. The method adds the server-side stack trace to the message before the exception is rethrown at the client.
 ms.date: 10/08/2019
 topic_type:
   - "apiref"

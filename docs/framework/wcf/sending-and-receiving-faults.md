@@ -1,5 +1,6 @@
 ---
 title: "Sending and Receiving Faults"
+description: Learn how a service or duplex client can send SOAP faults when an error condition occurs and how a client or service application handles these faults.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

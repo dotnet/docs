@@ -1,5 +1,6 @@
 ---
 title: "How to: Cancel a Parallel.For or ForEach Loop"
+description: Cancel a Parallel.For or Parallel.ForEach loop in .NET by supplying a cancellation token object to the method in the ParallelOptions parameter.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

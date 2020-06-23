@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Client Binding in Configuration"
+description: Learn how to specify the binding for a WCF client declaratively in a configuration file. The client accesses a service in this example.
 ms.date: "03/30/2017"
 ms.assetid: 4a7c79aa-50ee-4991-891e-adc0599323a7
 ---

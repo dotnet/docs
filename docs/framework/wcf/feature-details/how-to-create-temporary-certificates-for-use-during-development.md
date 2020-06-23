@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Temporary Certificates for Use During Development"
+description: Learn how to use a PowerShell cmdlet to create two temporary X.509 certificates for use in developing a secure WCF service or client.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "certificates [WCF], creating temporary certificates"

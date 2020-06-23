@@ -1,5 +1,6 @@
 ---
 title: "Tracing and Message Logging"
+description: Learn how to use the Service Trace Viewer Tool (SvcTraceViewer.exe) to view traces and message logs by using this WFC sample.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Tracing and logging"

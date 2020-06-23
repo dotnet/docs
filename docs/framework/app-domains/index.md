@@ -1,5 +1,6 @@
 ---
 title: "Programming with Application Domains and Assemblies"
+description: Get to know programming with application domains and assemblies in .NET. See links to how-to topics & examples about creating application domains & assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], programming"

@@ -1,6 +1,6 @@
 ---
-title: "How to parse strings using String.Split (C# Guide)"
-description: String.Split returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
+title: "Parse strings using String.Split (C# Guide)"
+description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
 ms.date: 01/03/2018
 helpviewer_keywords: 
   - "splitting strings [C#]"
@@ -13,7 +13,7 @@ ms.custom: mvc
 # How to parse strings using String.Split in C\#
 
 The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
-array of substrings by splitting the input string based on one or more delimiters. It is often the easiest way to separate a string on word boundaries. It is also used
+array of substrings by splitting the input string based on one or more delimiters. This method is often the easiest way to separate a string on word boundaries. It's also used
 to split strings on other specific characters or strings.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
@@ -38,7 +38,7 @@ collection, you can use [LINQ](../programming-guide/concepts/linq/index.md) to m
 the result sequence.
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use multiple separator characters.
-The following example uses spaces, commas, periods, colons, and tabs, all passed in an array containing these separating characters, to <xref:System.String.Split%2A>.
+The following example uses spaces, commas, periods, colons, and tabs as separating characters, which are passed to <xref:System.String.Split%2A> in an array .
 The loop at the bottom of the code displays each of the words in the returned array.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet3":::

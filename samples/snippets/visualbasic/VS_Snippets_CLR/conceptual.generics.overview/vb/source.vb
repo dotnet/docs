@@ -18,7 +18,7 @@ Namespace GenericsExample1
         End Sub
         '</snippet3>
 
-       '<snippet4>
+        '<snippet4>
         Function Generic(Of T)(ByVal arg As T) As T
             Dim temp As T = arg
             '...
@@ -45,6 +45,6 @@ Namespace GenericsExample2
             Return temp
         End Function
     End Class
-   '</snippet5>
+    '</snippet5>
 End Namespace 'GenericsExample2
 '</snippet1>

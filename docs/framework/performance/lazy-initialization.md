@@ -1,5 +1,6 @@
 ---
 title: "Lazy Initialization"
+description: Explore lazy initialization in .NET, a performance improvement that means an object creation is deferred until the object is first used.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

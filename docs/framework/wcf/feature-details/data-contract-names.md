@@ -1,5 +1,6 @@
 ---
 title: "Data Contract Names"
+description: Discover data contract and member naming rules and default behavior of the WCF infrastructure, which support communication by using equivalent data contracts.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

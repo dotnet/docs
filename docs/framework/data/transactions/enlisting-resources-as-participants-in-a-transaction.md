@@ -1,5 +1,6 @@
 ---
 title: "Enlisting Resources as Participants in a Transaction"
+description: Enlist resources as participants in a .NET transaction. Each resource in a transaction is managed by a resource manager, coordinated by a transaction manager.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

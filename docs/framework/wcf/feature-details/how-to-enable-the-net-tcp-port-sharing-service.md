@@ -1,5 +1,6 @@
 ---
 title: "How to: Enable the Net.TCP Port Sharing Service"
+description: Learn how to configure the Net TCP Port Sharing Service using MMC to enable Net.TCP, which is disabled by default.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "port sharing [WCF]"

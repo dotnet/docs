@@ -1,5 +1,6 @@
 ---
 title: "Using Serviced Components with the Global Assembly Cache"
+description: Use serviced components (managed code COM+ components) with the global assembly cache in .NET. See if the CLR and COM+ services can handle non-GAC components.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"

@@ -88,7 +88,7 @@ Module Module1
                 prod1.UnitsInStock -= 3
                 prod2.UnitsInStock -= 5
                 db.SubmitChanges()
-		ts.Complete()
+                ts.Complete()
 
             Catch e As Exception
                 Console.WriteLine(e.Message)

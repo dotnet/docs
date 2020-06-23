@@ -1,7 +1,7 @@
 ---
 title: Install and manage SDK templates - .NET Core
 description: Learn how to install .NET Core templates on Windows, Linux, and macOS.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 04/24/2020
 zone_pivot_groups: operating-systems-set-one

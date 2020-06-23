@@ -26,7 +26,7 @@ ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
 For desktop apps, isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. Standardization provides other benefits as well. Administrators can use tools designed to manipulate isolated storage to configure file storage space, set security policies, and delete unused data. With isolated storage, your code no longer needs unique paths to specify safe locations in the file system, and data is protected from other applications that only have isolated storage access. Hard-coded information that indicates where an application's storage area is located is unnecessary.
 
 > [!IMPORTANT]
-> Isolated storage is not available for Windows 8.x Store apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.
+> Isolated storage is not available for Windows 8.x Store apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.
 
 This topic contains the following sections:
 
@@ -110,7 +110,7 @@ __This section applies to the following frameworks:__
 - .NET Core 2.1+
 - .NET 5.0+
 
-The .NET Framework and .NET Core offer [isolated storage](https://docs.microsoft.com/dotnet/standard/io/isolated-storage) as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
+The .NET Framework and .NET Core offer [isolated storage](/dotnet/standard/io/isolated-storage) as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
 
 Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications which read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
 
@@ -118,14 +118,14 @@ Various isolated storage APIs and tools can be used to read data across trust bo
 
 Components or applications that call any of the following APIs read from the machine-wide scope:
 
- * [IsolatedStorageFile.GetEnumerator](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getenumerator), passing a scope that includes the IsolatedStorageScope.Machine flag
- * [IsolatedStorageFile.GetMachineStoreForApplication](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforapplication)
- * [IsolatedStorageFile.GetMachineStoreForAssembly](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforassembly)
- * [IsolatedStorageFile.GetMachineStoreForDomain](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestorefordomain)
- * [IsolatedStorageFile.GetStore](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
- * [IsolatedStorageFile.Remove](https://docs.microsoft.com/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
+ * [IsolatedStorageFile.GetEnumerator](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getenumerator), passing a scope that includes the IsolatedStorageScope.Machine flag
+ * [IsolatedStorageFile.GetMachineStoreForApplication](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforapplication)
+ * [IsolatedStorageFile.GetMachineStoreForAssembly](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforassembly)
+ * [IsolatedStorageFile.GetMachineStoreForDomain](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestorefordomain)
+ * [IsolatedStorageFile.GetStore](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
+ * [IsolatedStorageFile.Remove](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
 
-The [isolated storage tool](https://docs.microsoft.com/dotnet/framework/tools/storeadm-exe-isolated-storage-tool) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
+The [isolated storage tool](/dotnet/framework/tools/storeadm-exe-isolated-storage-tool) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
 
 ```txt
 storeadm.exe /machine [any-other-switches]

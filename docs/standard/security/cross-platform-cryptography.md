@@ -14,7 +14,7 @@ Cryptographic operations in .NET Core and .NET 5 are done by operating system (O
 * .NET apps benefit from OS reliability. Keeping cryptography libraries safe from vulnerabilities is a high priority for OS vendors. To do that, they provide updates that system administrators should be applying.
 * .NET apps have access to FIPS-validated algorithms if the OS libraries are FIPS-validated.
 
-The dependency on OS libraries also means that .NET apps can only use cryptographic features that the OS supports. While all platforms support certain core features, some advanced features that .NET supports can't be used on some platforms. This article identifies the features that are supported on each platform.
+The dependency on OS libraries also means that .NET apps can only use cryptographic features that the OS supports. While all platforms support certain core features, some features that .NET supports can't be used on some platforms. This article identifies the features that are supported on each platform.
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Framework Cryptography Model](cryptography-model.md).
 
@@ -24,7 +24,7 @@ All hash algorithm and hash-based message authentication (HMAC) classes, includi
 
 ## Symmetric encryption
 
-The underlying ciphers and chaining are performed by the system libraries, an all are supported by all platforms.
+The underlying ciphers and chaining are done by the system libraries, and all are supported by all platforms.
 
 | Cipher + Mode | Windows | Linux | macOS |
 |---------------|---------|-------|-------|
@@ -37,16 +37,17 @@ The underlying ciphers and chaining are performed by the system libraries, an al
 
 ## Authenticated encryption
 
-Authenticated encryption (AE) support is provided for AES-CCM and AES-GCM via <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName> and <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName>, respectively.
+Authenticated encryption (AE) support is provided for AES-CCM and AES-GCM via the <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName> and <xref:System.Security.Cryptography.AesGcm?displayProperty=fullName> classes.
 
 On Windows and Linux, the implementations of AES-CCM and AES-GCM are provided by the OS libraries.
 
-On macOS the system libraries don't support AES-CCM or AES-GCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> and <xref:System.Security.Cryptography.AesGcm> classes use OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for these types to function, and it must be in a path that the system would load a library from by default.
+### AES-CCM and AES-GCM on macOS
 
-We recommend that you install OpenSSL from a package manager such as Homebrew, but that isn't required.
+On macOS, the system libraries don't support AES-CCM or AES-GCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> and <xref:System.Security.Cryptography.AesGcm> classes use OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for these types to function, and it must be in a path that the system would load a library from by default. We recommend that you install OpenSSL from a package manager such as Homebrew.
+
 The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from older versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
 
-### AES-CCM
+### AES-CCM keys, nonces, and tags
 
 * Key Sizes
 
@@ -54,13 +55,13 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 
 * Nonce Sizes
 
-  The <xref:System.Security.Cryptography.AesCcm> class supports 56, 64, 72, 80, 88, 96, and 104-bit nonces (7-13 bytes).
+  The <xref:System.Security.Cryptography.AesCcm> class supports 56, 64, 72, 80, 88, 96, and 104-bit (7, 8, 9, 10, 11, 12, and 13-byte) nonces.
 
 * Tag Sizes
 
   The <xref:System.Security.Cryptography.AesCcm> class supports creating or processing 32, 48, 64, 80, 96, 112, and 128-bit (4, 8, 10, 12, 14, and 16-byte) tags.
 
-### AES-GCM
+### AES-GCM keys, nonces, and tags
 
 * Key Sizes
 
@@ -72,7 +73,7 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 
 * Tag Sizes
 
-  The <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12-16 bytes) tags.
+  The <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12,, 13, 14, 15, and 16-byte) tags.
 
 ## Asymmetric cryptography
 
@@ -90,13 +91,13 @@ This section includes the following subsections:
 
 ### RSA
 
-RSA key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
+Rivest–Shamir–Adleman (RSA) key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
 
 RSA key operations are performed by the OS libraries, and the types of key that can be loaded are subject to OS requirements.
 
-.NET does not expose "raw" (unpadded) RSA operations. The OS libraries are used for encryption and decryption padding.
+.NET does not expose "raw" (unpadded) RSA operations.
 
-Not all platforms support the same padding options.
+The OS libraries are used for encryption and decryption padding. Not all platforms support the same padding options:
 
 | Padding Mode                          | Windows (CNG) | Linux (OpenSSL) | macOS | Windows (CAPI) |
 |---------------------------------------|---------------|-----------------|-------|----------------|
@@ -104,10 +105,10 @@ Not all platforms support the same padding options.
 | OAEP - SHA-1                          | ✔️           | ✔️              | ✔️   | ✔️             |
 | OAEP - SHA-2 (SHA256, SHA384, SHA512) | ✔️           | ✔️              | ✔️   | ❌             |
 | PKCS1 Signature (MD5, SHA-1)          | ✔️           | ✔️              | ✔️   | ✔️             |
-| PKCS1 Signature (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️             |
+| PKCS1 Signature (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️<sup>1</sup> |
 | PSS                                   | ✔️           | ✔️              | ✔️   | ❌             |
 
-Windows CAPI is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
+<sup>1</sup> Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
 
 #### RSA on Windows
 
@@ -115,62 +116,62 @@ Windows CAPI is capable of PKCS1 signature with a SHA-2 algorithm. But the indiv
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new RSACng()`](xref:System.Security.Cryptography.RSACng) is used.
 * The object returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail subject to change.
 * The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns an <xref:System.Security.Cryptography.RSACng> instance. This use of <xref:System.Security.Cryptography.RSACng> is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.RSACng> instance, but if <xref:System.Security.Cryptography.RSACng> can't open the key, <xref:System.Security.Cryptography.RSACryptoServiceProvider> will be attempted. The preferred provider is an implementation detail and is subject to change. In the future, other providers could be preferred over <xref:System.Security.Cryptography.RSACng>.
+* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.RSACng> instance, but if <xref:System.Security.Cryptography.RSACng> can't open the key, <xref:System.Security.Cryptography.RSACryptoServiceProvider> will be attempted. The preferred provider is an implementation detail and is subject to change.
 
-#### RSA Native interop
+#### RSA native interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries upon which the .NET cryptography code is layered.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
 
 The types involved do not translate between platforms, and should only be directly used when necessary.
 
-| Type                                                         | Windows | Linux | macOS |
-|--------------------------------------------------------------|---------|-------|-------|
-| <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️    | ⚠️   |
-| <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌     | ❌    |
-| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌      | ✔️    | ⚠️   |
+| Type                                                         | Windows | Linux         | macOS         |
+|--------------------------------------------------------------|---------|---------------|---------------|
+| <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup>| ⚠️<sup>1</sup> |
+| <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌            | ❌            |
+| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️            | ⚠️<sup>2</sup> |
 
-On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>1</sup> On macOS and Linux, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-On macOS and Linux, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### ECDSA
 
-Elliptic Curve Digital Signature Algorithm (ECDSA) key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
+Elliptic Curve Digital Signature Algorithm (ECDSA) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
 
 ECDSA key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10 | Windows 7 - 8.1 | Linux | macOS |
-|------------------------------------|------------|-----------------|-------|-------|
-| NIST P-256 (secp256r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| NIST P-384 (secp384r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| NIST P-521 (secp521r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| Brainpool curves (as named curves) | ✔️        | ❌              | ⚠️   | ❌    |
-| Other named curves                 | ⚠️        | ❌              | ⚠️   | ❌    |
-| Explicit curves                    | ✔️        | ❌              | ✔️   | ❌    |
-| Export or import as explicit       | ✔️        | ❌              | ✔️   | ❌    |
+| Elliptic Curve                     | Windows 10    | Windows 7 - 8.1 | Linux         | macOS         |
+|------------------------------------|---------------|-----------------|---------------|---------------|
+| NIST P-256 (secp256r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| NIST P-384 (secp384r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| NIST P-521 (secp521r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| Brainpool curves (as named curves) | ✔️           | ❌              | ⚠️<sup>1</sup>| ❌           |
+| Other named curves                 | ⚠️<sup>2</sup>| ❌             | ⚠️<sup>1</sup>| ❌           |
+| Explicit curves                    | ✔️           | ❌              | ✔️           | ❌            |
+| Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️           | ❌<sup>3</sup>|
 
-Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
+<sup>1</sup> Not all Linux distributions have support for the same named curves.
 
-Not all Linux distributions have support for the same named curves.
+<sup>2</sup> Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
-Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
+<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
 
 #### ECDSA Native Interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries upon which the .NET cryptography code is layered.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
 
 The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                             | Windows | Linux | macOS |
 |--------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️     | ❌    | ❌    |
-| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️   |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️<sup>1</sup>   |
 
-On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>1</sup> On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### ECDH
 
-Elliptic Curve Diffie-Hellman (ECDH) key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
+Elliptic Curve Diffie-Hellman (ECDH) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
 
 The <xref:System.Security.Cryptography.ECDiffieHellman> class doesn't return the "raw" value of the ECDH computation. All returned data is in terms of key derivation functions:
 
@@ -184,47 +185,47 @@ The <xref:System.Security.Cryptography.ECDiffieHellman> class doesn't return the
 
 ECDH key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10 | Windows 7 - 8.1 | Linux | macOS |
-|------------------------------------|------------|-----------------|-------|-------|
-| NIST P-256 (secp256r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| NIST P-384 (secp384r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| NIST P-521 (secp521r1)             | ✔️        | ✔️              | ✔️   | ✔️    |
-| brainpool curves (as named curves) | ✔️        | ❌               | ⚠️   | ❌     |
-| other named curves                 | ⚠️        | ❌               | ⚠️   | ❌     |
-| explicit curves                    | ✔️        | ❌               | ✔️   | ❌     |
-| Export or import as explicit       | ✔️        | ❌               | ✔️   | ❌     |
+| Elliptic Curve                     | Windows 10    | Windows 7 - 8.1 | Linux         | macOS         |
+|------------------------------------|---------------|-----------------|---------------|---------------|
+| NIST P-256 (secp256r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| NIST P-384 (secp384r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| NIST P-521 (secp521r1)             | ✔️           | ✔️              | ✔️           | ✔️            |
+| brainpool curves (as named curves) | ✔️           | ❌              | ⚠️<sup>1</sup>| ❌           |
+| other named curves                 | ⚠️<sup>2</sup>| ❌             | ⚠️<sup>1</sup>| ❌           |
+| explicit curves                    | ✔️           | ❌              | ✔️           | ❌            |
+| Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️           | ❌<sup>3</sup>|
 
-Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
+<sup>1</sup> Not all Linux distributions have support for the same named curves.
 
-Not all Linux distributions have support for the same named curves.
+<sup>2</sup> Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
-Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
+<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
 
-#### ECDH Native Interop
+#### ECDH native interop
 
 .NET exposes types to allow programs to interoperate with the OS libraries that .NET uses. The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                                       | Windows | Linux | macOS |
 |------------------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌   |
-| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️   |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️<sup>1</sup>   |
 
-On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>1</sup> On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### DSA
 
 Digital Signature Algorithm (DSA) key generation is performed by the system libraries and is subject to their size limitations and performance characteristics.
 
-| Function                      | Windows CNG | Linux | macOS | Windows CAPI |
-|-------------------------------|-------------|-------|-------|--------------|
-| Key creation (<= 1024 bits)   | ✔️         | ✔️    | ❌    | ✔️           |
-| Key creation (> 1024 bits)    | ✔️         | ✔️    | ❌    | ❌           |
-| Loading keys (<= 1024 bits)   | ✔️         | ✔️    | ✔️    | ✔️           |
-| Loading keys (> 1024 bits)    | ✔️         | ✔️    | ⚠️    | ❌           |
-| FIPS 186-2                    | ✔️         | ✔️    | ✔️    | ✔️           |
-| FIPS 186-3 (SHA-2 signatures) | ✔️         | ✔️    | ❌    | ❌           |
+| Function                      | Windows CNG | Linux | macOS         | Windows CAPI |
+|-------------------------------|-------------|-------|---------------|--------------|
+| Key creation (<= 1024 bits)   | ✔️         | ✔️    | ❌            | ✔️           |
+| Key creation (> 1024 bits)    | ✔️         | ✔️    | ❌            | ❌            |
+| Loading keys (<= 1024 bits)   | ✔️         | ✔️    | ✔️            | ✔️           |
+| Loading keys (> 1024 bits)    | ✔️         | ✔️    | ⚠️<sup>1</sup>| ❌            |
+| FIPS 186-2                    | ✔️         | ✔️    | ✔️            | ✔️           |
+| FIPS 186-3 (SHA-2 signatures) | ✔️         | ✔️    | ❌            | ❌            |
 
-macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
+<sup>1</sup> macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is undefined. They don't behave according to FIPS 186-3.
 
 #### DSA on Windows
 
@@ -232,23 +233,23 @@ macOS loads DSA keys bigger than 1024 bits, but the behavior of those keys is un
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new DSACng()`](xref:System.Security.Cryptography.DSACng) is used.
 * The object returned by <xref:System.Security.Cryptography.DSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail subject to change.
 * The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently returns a <xref:System.Security.Cryptography.DSACng> instance. This use of <xref:System.Security.Cryptography.DSACng> is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change. In the future, other providers could be preferred over <xref:System.Security.Cryptography.DSACng>.
+* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change.
 
-### DSA Native Interop
+#### DSA Native Interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries upon which the .NET cryptography code is layered.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
 
 The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                                         | Windows | Linux | macOS |
 |--------------------------------------------------------------|---------|-------|-------|
-| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️     | ⚠️    | ⚠️   |
+| <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup>    | ⚠️<sup>1</sup>   |
 | <xref:System.Security.Cryptography.DSACng>                   | ✔️     | ❌    | ❌   |
-| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌     | ✔️    | ⚠️   |
+| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌     | ✔️    | ⚠️<sup>2</sup>   |
 
-On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>1</sup> On macOS and Linux, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-On macOS and Linux, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### X.509 Certificates
 
@@ -291,47 +292,45 @@ On Linux, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 
 On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-only), and user key storage (read-write).
 
-| Scenario                                         | Windows | Linux | macOS            |
-|--------------------------------------------------|---------|-------|------------------|
-| Open CurrentUser\My (ReadOnly)                   | ✔️     | ✔️    | ✔️              |
-| Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️    | ✔️              |
-| Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️    | ✔️              |
-| Open LocalMachine\My                             | ✔️     | ❌    | ✔️              |
-| Open CurrentUser\Root (ReadOnly)                 | ✔️     | ✔️    | ✔️              |
-| Open CurrentUser\Root (ReadWrite)                | ✔️     | ✔️    | ❌               |
-| Open CurrentUser\Root (ExistingOnly)             | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
-| Open LocalMachine\Root (ReadOnly)                | ✔️     | ✔️    | ✔️              |
-| Open LocalMachine\Root (ReadWrite)               | ✔️     | ❌    | ❌               |
-| Open LocalMachine\Root (ExistingOnly)            | ✔️     | ⚠️    | ✔️  (if ReadOnly) |
-| Open CurrentUser\Disallowed (ReadOnly)           | ✔️     | ⚠️    | ✔️              |
-| Open CurrentUser\Disallowed (ReadWrite)          | ✔️     | ⚠️    | ❌               |
-| Open CurrentUser\Disallowed (ExistingOnly)       | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
-| Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌    | ✔️              |
-| Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌    | ❌               |
-| Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌    | ✔️ (if ReadOnly) |
-| Open non-existent store (ExistingOnly)           | ❌     | ❌    | ❌               |
-| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️    | ❌               |
-| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌    | ❌               |
+| Scenario                                         | Windows | Linux          | macOS                        |
+|--------------------------------------------------|---------|----------------|------------------------------|
+| Open CurrentUser\My (ReadOnly)                   | ✔️     | ✔️             | ✔️<sup>1</sup>              |
+| Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️             | ✔️<sup>1</sup>              |
+| Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️<sup>2</sup> | ✔️<sup>1</sup>              |
+| Open LocalMachine\My                             | ✔️     | ❌             | ✔️<sup>3</sup>              |
+| Open CurrentUser\Root (ReadOnly)                 | ✔️     | ✔️             | ✔️                          |
+| Open CurrentUser\Root (ReadWrite)                | ✔️     | ✔️             | ❌<sup>4</sup>               |
+| Open CurrentUser\Root (ExistingOnly)             | ✔️     | ⚠️             | ✔️ (if ReadOnly)            |
+| Open LocalMachine\Root (ReadOnly)                | ✔️     | ✔️<sup>5</sup> | ✔️<sup>6</sup>              |
+| Open LocalMachine\Root (ReadWrite)               | ✔️     | ❌<sup>5</sup> | ❌<sup>6</sup>               |
+| Open LocalMachine\Root (ExistingOnly)            | ✔️     | ⚠️<sup>5</sup> | ✔️<sup>6</sup>  (if ReadOnly) |
+| Open CurrentUser\Disallowed (ReadOnly)           | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup>              |
+| Open CurrentUser\Disallowed (ReadWrite)          | ✔️     | ⚠️<sup>7</sup> | ❌<sup>8</sup>               |
+| Open CurrentUser\Disallowed (ExistingOnly)       | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup> (if ReadOnly) |
+| Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌             | ✔️<sup>8</sup>              |
+| Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌             | ❌<sup>8</sup>               |
+| Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌             | ✔️<sup>8</sup> (if ReadOnly) |
+| Open non-existent store (ExistingOnly)           | ❌     | ❌             | ❌                           |
+| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️             | ❌                           |
+| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌             | ❌                           |
+
+<sup>1</sup> On macOS, the CurrentUser\My store is the user's default keychain, which is login.keychain by default.
+<sup>2</sup> On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
+<sup>3</sup> On macOS, the LocalMachine\My store is System.keychain.
+<sup>4</sup> On macOS, the CurrentUser\Root store is an interpretation of the SecTrustSettings results for the user trust domain.
+<sup>5</sup> On Linux, the LocalMachine\Root store is an interpretation of the CA bundle in the default path for OpenSSL.
+<sup>6</sup> On macOS, the LocalMachine\Root store is an interpretation of the SecTrustSettings results for the admin and system trust domains.
+<sup>7</sup> On Linux, the Disallowed store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the Disallowed store if it has already acquired contents.
+<sup>8</sup> On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
 
 For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
 
 On Linux:
 
-* Stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
-* The Disallowed store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>.
-* A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the Disallowed store if it has already acquired contents.
-* The LocalMachine\Root store is an interpretation of the CA bundle in the default path for OpenSSL.
 * The LocalMachine\Intermediate store is an interpretation of the CA bundle in the default path for OpenSSL.
 * The CurrentUser\Intermediate store is used as a cache when downloading intermediate CAs by their Authority Information Access records on successful X509Chain builds.
 
-On macOS:
-
-* The CurrentUser\My store is the user's default keychain, which is login.keychain by default.
-* The LocalMachine\My store is System.keychain.
-* The CurrentUser\Root store is an interpretation of the SecTrustSettings results for the user trust domain.
-* The LocalMachine\Root store is an interpretation of the SecTrustSettings results for the admin and system trust domains.
-* The CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
-* Custom store creation with the X509Store API is supported only for CurrentUser location. It will create a new keychain with no password in the user's keychain directory (~/Library/Keychains). To create a keychain with password, a P/Invoke to SecKeychainCreate could be used. Similarly, SecKeychainOpen could be used to open keychains
+On macOS, custom store creation with the X509Store API is supported only for CurrentUser location. It will create a new keychain with no password in the user's keychain directory (~/Library/Keychains). To create a keychain with password, a P/Invoke to SecKeychainCreate could be used. Similarly, SecKeychainOpen could be used to open keychains
 in different locations. The resulting `IntPtr` can be passed to [`new X509Store(IntPtr)`](xref:System.Security.Cryptography.X509Certificates.X509Store.%23ctor(System.IntPtr)) to obtain a read/write-capable store (subject to the current user's permissions).
 
 ### X509Chain

@@ -1,24 +1,24 @@
-## HttpSys: Client certificate renegotiation disabled by default
+### HttpSys: Client certificate renegotiation disabled by default
 
 The option to renegotiate a connection and request a client certificate has been disabled by default. For discussion, see issue [dotnet/aspnetcore#23181](https://github.com/dotnet/aspnetcore/issues/23181).
 
-### Version introduced
+#### Version introduced
 
 ASP.NET Core 5.0
 
-### Old behavior
+#### Old behavior
 
 The connection can be renegotiated to request a client certificate.
 
-### New behavior
+#### New behavior
 
 Client certificates can only be requested during the initial connection handshake. For more information, see pull request [dotnet/aspnetcore#23162](https://github.com/dotnet/aspnetcore/pull/23162).
 
-### Reason for change
+#### Reason for change
 
 Renegotiation caused a number of performance and deadlock issues. It's also not supported in HTTP/2. For additional context from when the option to control this behavior was introduced in ASP.NET Core 3.1, see issue [dotnet/aspnetcore#14806](https://github.com/dotnet/aspnetcore/issues/14806).
 
-### Recommended action
+#### Recommended action
 
 Apps that require client certificates should use *netsh.exe* to set the `clientcertnegotiation` option to `enabled`. For more information, see [netsh http commands](/windows-server/networking/technologies/netsh/netsh-http).
 

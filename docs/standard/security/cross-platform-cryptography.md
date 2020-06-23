@@ -298,18 +298,18 @@ On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 | Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️             | ✔️<sup>1</sup>              |
 | Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️<sup>2</sup> | ✔️<sup>1</sup>              |
 | Open LocalMachine\My                             | ✔️     | ❌             | ✔️<sup>3</sup>              |
-| Open CurrentUser\Root (ReadOnly)                 | ✔️     | ✔️             | ✔️                          |
+| Open CurrentUser\Root (ReadOnly)                 | ✔️     | ✔️             | ✔️<sup>4</sup>              |
 | Open CurrentUser\Root (ReadWrite)                | ✔️     | ✔️             | ❌<sup>4</sup>               |
-| Open CurrentUser\Root (ExistingOnly)             | ✔️     | ⚠️             | ✔️ (if ReadOnly)            |
+| Open CurrentUser\Root (ExistingOnly)             | ✔️     | ⚠️             | ✔️<sup>4</sup> (if ReadOnly) |
 | Open LocalMachine\Root (ReadOnly)                | ✔️     | ✔️<sup>5</sup> | ✔️<sup>6</sup>              |
 | Open LocalMachine\Root (ReadWrite)               | ✔️     | ❌<sup>5</sup> | ❌<sup>6</sup>               |
 | Open LocalMachine\Root (ExistingOnly)            | ✔️     | ⚠️<sup>5</sup> | ✔️<sup>6</sup>  (if ReadOnly) |
 | Open CurrentUser\Disallowed (ReadOnly)           | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup>              |
 | Open CurrentUser\Disallowed (ReadWrite)          | ✔️     | ⚠️<sup>7</sup> | ❌<sup>8</sup>               |
 | Open CurrentUser\Disallowed (ExistingOnly)       | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup> (if ReadOnly) |
-| Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌             | ✔️<sup>8</sup>              |
-| Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌             | ❌<sup>8</sup>               |
-| Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌             | ✔️<sup>8</sup> (if ReadOnly) |
+| Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌<sup>7</sup> | ✔️<sup>8</sup>              |
+| Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌<sup>7</sup> | ❌<sup>8</sup>               |
+| Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌<sup>7</sup> | ✔️<sup>8</sup> (if ReadOnly) |
 | Open non-existent store (ExistingOnly)           | ❌     | ❌             | ❌                           |
 | Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️             | ❌                           |
 | Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌             | ❌                           |

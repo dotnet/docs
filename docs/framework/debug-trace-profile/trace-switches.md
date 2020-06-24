@@ -1,5 +1,6 @@
 ---
 title: "Trace Switches"
+description: Explore trace switches, which let you enable, disable, and filter tracing output. .NET provides the BooleanSwitch, TraceSwitch, and SourceSwitch classes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

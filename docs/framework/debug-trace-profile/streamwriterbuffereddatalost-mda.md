@@ -1,5 +1,6 @@
 ---
 title: "streamWriterBufferedDataLost MDA"
+description: Review the streamWriterBufferedDataLost managed debugging assistant (MDA), which may activate if a StreamWriter doesn't write the last 1–4 KB of data to a file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "StreamWriter class, data buffering problems"

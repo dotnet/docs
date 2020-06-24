@@ -1,5 +1,6 @@
 ---
 title: "virtualCERCall MDA"
+description: Review the virtualCERCall managed debugging assistant (MDA), which is invoked if a CER contains a call to a virtual method that can't be prepared automatically.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), CER calls"

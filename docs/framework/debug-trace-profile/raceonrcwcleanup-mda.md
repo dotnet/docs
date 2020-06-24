@@ -1,5 +1,6 @@
 ---
 title: "raceOnRCWCleanup MDA"
+description: Review the raceOnRCWCleanup managed debugging assistant (MDA), which is activated if the RCW is in use on another thread or on the freeing thread stack in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "RCW"

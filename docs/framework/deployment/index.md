@@ -1,5 +1,6 @@
 ---
 title: "Deploying the .NET Framework and Applications"
+description: Get started with deploying .NET with your application. .NET provides no-impact applications, private components by default, controlled code sharing, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "deploying applications [.NET Framework], packaging"

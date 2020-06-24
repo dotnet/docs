@@ -1,5 +1,6 @@
 ---
 title: "Trace Listeners"
+description: Explore trace listeners, which are a mechanism for collecting and recording tracing messages sent in .NET. A listener collects, stores, and routes messages.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

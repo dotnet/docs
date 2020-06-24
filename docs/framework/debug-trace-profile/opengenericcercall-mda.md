@@ -1,5 +1,6 @@
 ---
 title: "openGenericCERCall MDA"
+description: See the openGenericCERCall managed debugging assistant, which may activate if CER code doesn't run when a thread aborts or when an application domain unloads.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), CER calls"

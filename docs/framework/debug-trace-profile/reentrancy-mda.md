@@ -1,5 +1,6 @@
 ---
 title: "reentrancy MDA"
+description: Review the reentrancy MDA, which may be activated if the object heap is corrupted or other serious errors occur when transitioning from native to managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "unmanaged code, debugging"

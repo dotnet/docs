@@ -1,5 +1,6 @@
 ---
 title: "releaseHandleFailed MDA"
+description: Review the releaseHandleFailed managed debugging assistant (MDA), which may be activated because of resource or memory leaks in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), handles"

@@ -39,7 +39,7 @@ landingContent:
             url: authentication.md
           - text: Logging
             url: logging.md
-          - text: End-to-end example
+          - text: SDK example
             url: end-to-end.md
       - linkListType: learn
         links:
@@ -201,6 +201,8 @@ landingContent:
             url: /azure/azure-monitor/app/ilogger
           - text: Application Insights for Worker Service applications
             url: /azure/azure-monitor/app/worker-service
+          - text: Troubleshoot an app in Azure App Service using Visual Studio
+            url: /azure/app-service/troubleshoot-dotnet-visual-studio
   - title: Migration
     linkLists:
       - linkListType: concept

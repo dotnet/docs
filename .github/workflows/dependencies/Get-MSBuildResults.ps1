@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.1
+    Version:        1.2
     Author:         adegeo@microsoft.com
-    Creation Date:  06/17/2020
-    Purpose/Change: Update to GitHub actions and new framework.
+    Creation Date:  06/24/2020
+    Purpose/Change: Fix logging for non build problems (no proj/sln etc)
 #>
 
 [CmdletBinding()]
@@ -184,15 +184,18 @@ $transformedItems = $resultItems | ForEach-Object { New-Object ResultItem -Prope
 foreach ($item in $transformedItems) {
     $list = @()
 
-    # No project found OR 
+    # Clean
     if ($item.ExitCode -eq 0) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
     }
+    # No project found
+    # Too many projects found
+    # Solution found, but no project
     elseif ($item.ExitCode -ne 4) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
-    elseif ($item.ExitCode -ne 0) {
+    else {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `

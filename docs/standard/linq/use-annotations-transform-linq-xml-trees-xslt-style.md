@@ -32,7 +32,7 @@ In detail, the approach consists of:
 - The new element that's added as an annotation can contain new child nodes; it can form a subtree with any desired shape.
 - There is a special rule: If a child node of the new element is in a different namespace, a namespace that's made up for this purpose (in this example, the namespace is `http://www.microsoft.com/LinqToXmlTransform/2007`), then that child element isn't copied to the new tree. Instead, if the namespace is the above-mentioned special namespace, and the local name of the element is `ApplyTransforms`, then the child nodes of the element in the source tree are iterated, and copied to the new tree (with the exception that annotated child elements are themselves transformed according to these rules).
 - This is somewhat analogous to the specification of transforms in XSL. The query that selects a set of nodes is analogous to the XPath expression for a template. The code to create the new <xref:System.Xml.Linq.XElement> that's saved as an annotation is analogous to the sequence constructor in XSL, and the `ApplyTransforms` element is analogous in function to the `xsl:apply-templates` element in XSL.
-- One advantage to taking this approach is that, as you formulate queries, you're  always writing queries on the unmodified source tree. You needn't worry about how modifications to the tree affect the queries that you're writing.
+- One advantage to taking this approach is that, as you formulate queries, you're  always writing queries on the unmodified source tree. You don't need to worry about how modifications to the tree affect the queries that you're writing.
 
 ## Example: Rename all paragraph nodes
 

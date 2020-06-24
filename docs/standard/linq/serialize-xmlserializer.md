@@ -10,7 +10,7 @@ ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
 
 # How to serialize using XmlSerializer (LINQ to XML)
 
-This article shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer>.
+This article shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer> in C# and Visual Basic.
 
 ## Example: Create objects that contain `XElement` objects, then serialize and deserialize them
 

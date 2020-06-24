@@ -9,7 +9,7 @@ ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7
 
 This article introduces *XML names*, *XML namespaces*, *XML namespace prefixes*, and the <xref:System.Xml.Linq.XName> and <xref:System.Xml.Linq.XNamespace> classes.
 
-XML names are often a source of complexity in XML programming. An XML name consists of an XML namespace (also called an XML namespace URI) and a local name. An XML namespace is similar to a namespace in a .NET Framework-based program. It enables you to uniquely qualify the names of elements and attributes to avoid name conflicts between various parts of an XML document. When you've declared an XML namespace, you can select a local name that only has to be unique within that namespace.
+XML names are often a source of complexity in XML programming. An XML name consists of an XML namespace (also called an XML namespace URI) and a local name. An XML namespace is similar to a namespace in a .NET program. It enables you to uniquely qualify the names of elements and attributes to avoid name conflicts between various parts of an XML document. When you've declared an XML namespace, you can select a local name that only has to be unique within that namespace.
 
 Another aspect of XML names is XML namespace prefixes, which cause most of the complexity of XML names. These prefixes enable you to create a shortcut for an XML namespace, which makes the XML document more concise and understandable. However, the meaning of an XML prefix depends on context, which adds complexity. For example, the XML prefix `aw` could be associated with one XML namespace in part of an XML tree, and with a different namespace in another part.
 

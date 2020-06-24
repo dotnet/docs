@@ -10,7 +10,7 @@ ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
 
 # How to serialize using DataContractSerializer (LINQ to XML)
 
-This article shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer>.
+This article shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer> in C# and Visual Basic.
 
 ## Example: Create objects that contain `XElement` objects, then serialize and deserialize them
 

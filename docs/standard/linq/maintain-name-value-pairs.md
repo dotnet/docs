@@ -10,7 +10,7 @@ ms.assetid: 7b04b0f1-af64-42eb-8737-83f8861b5915
 
 # Maintain name-value pairs (LINQ to XML)
 
-Many applications have to maintain information that's best kept as name-value pairs. This information might be configuration information or global settings. LINQ to XML contains methods that make it easy to maintain a set of name-value pairs. You can either keep the information as attributes or as a set of child elements.
+Many applications have to maintain information that is best kept as name-value pairs. This information might be configuration information or global settings. LINQ to XML contains methods that make it easy to maintain a set of name-value pairs. You can either keep the information as attributes or as a set of child elements.
 
 One difference between keeping the information as attributes or as child elements is that attributes have the constraint that there can be only one attribute with a particular name for an element. This limitation doesn't apply to child elements.
 

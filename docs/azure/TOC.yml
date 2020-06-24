@@ -13,16 +13,16 @@
       href: logging.md      
     - name: End-to-end example
       href: end-to-end.md
-    - name: Migrate to Azure
-      items:
-        - name: Choose the right Azure hosting option
-          href: ./migration/choose.md
-        - name: Migrate a .NET web app or service to Azure App Service
-          href: ./migration/app-service.md
-        - name: Migrate an ASP.NET app to an Azure VM
-          href: ./migration/vm.md
-        - name: Migrate a SQL Server database to Azure
-          href: ./migration/sql.md
+- name: Migrate to Azure
+  items:
+    - name: Choose the right Azure hosting option
+      href: ./migration/choose.md
+    - name: Migrate a .NET web app or service to Azure App Service
+      href: ./migration/app-service.md
+    - name: Migrate an ASP.NET app to an Azure VM
+      href: ./migration/vm.md
+    - name: Migrate a SQL Server database to Azure
+      href: ./migration/sql.md
 - name: Sample code
   items:
   - name: Web apps & serverless

@@ -9,7 +9,7 @@ ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
 ---
 # Statically compiled queries (LINQ to XML)
 
-One of the most important performance advantages of LINQ to XML, as compared to <xref:System.Xml.XmlDocument>, is that queries in LINQ to XML are statically compiled, whereas XPath queries must be interpreted at run time. This feature is built into LINQ to XML, so you don't have to perform extra steps to take advantage of it, but it's helpful to understand the distinction when choosing between the two technologies. This topic explains the difference.
+One of the most important performance advantages of LINQ to XML, as compared to <xref:System.Xml.XmlDocument>, is that queries in LINQ to XML are statically compiled, whereas XPath queries must be interpreted at run time. This feature is built into LINQ to XML, so you don't have to perform extra steps to take advantage of it, but it's helpful to understand the distinction when choosing between the two technologies. This article explains the difference.
 
 ## Statically compiled queries vs. XPath
 

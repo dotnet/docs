@@ -10,7 +10,7 @@ ms.assetid: c38df0f2-c805-431a-93ff-9103a4284c2f
 
 # Programming with nodes (LINQ to XML)
 
-LINQ to XML developers who need to write programs such as an XML editor, a transform system, or a report writer often need code that works at a finer level of granularity than elements and attributes. They often need to work at the node level, manipulating text nodes, processing instructions, and processing comments. This topic provides information about programming at the node level.
+LINQ to XML developers who need to write programs such as an XML editor, a transform system, or a report writer often need code that works at a finer level of granularity than elements and attributes. They often need to work at the node level, manipulating text nodes, processing instructions, and processing comments. This article provides information about programming at the node level.
 
 ## Example: The `Parent` property values of the child nodes of XDocument are set to `null`
 

@@ -47,7 +47,7 @@ foreach ($er in $errors) {
         $errorColNumber = $lineColMatch[3].Value
     }
 
-    Write-Host "::error file=$errorFile,line=$errorLineNumber,col=$errorColNumber::----FILE:  $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:  $($er.Line)"
+    Write-Host "::error file=$errorFile,line=$errorLineNumber,col=$errorColNumber::$($er.Line)"
 }
 
 exit 1

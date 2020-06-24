@@ -1,0 +1,54 @@
+### Built-in support for WinRT is removed from .NET
+
+Built-in support for consumption of [Windows runtime (WinRT)](/uwp/winrt-cref/winrt-type-system) APIs in .NET is removed.
+
+#### Version introduced
+
+5.0 Preview 6
+
+#### Change description
+
+Previously, CoreCLR could consume [Windows metadata (WinMD) files](/uwp/winrt-cref/winmd-files) to active and consume WinRT types. Starting in .NET 5.0, CoreCLR can no longer consume WinMD files directly.
+
+If you attempt to reference an unsupported assembly, you'll get a <xref:System.IO.FileNotFoundException>. If you activate a WinRT class, you'll get a <xref:System.PlatformNotSupportedException>.
+
+This breaking change was made for the following reasons:
+
+- So WinRT can be developed and improved separately from the .NET runtime.
+- For symmetry with interop systems provided for other operating systems, such as iOS and Android.
+- To take advantage of other .NET features, such as C# features, intermediate language (IL) linking, and ahead-of-time (AOT) compilation.
+- To simplify the .NET runtime codebase.
+
+#### Recommended action
+
+- Remove references to the [Microsoft.Windows.SDK.Contracts package](https://www.nuget.org/packages/Microsoft.Windows.SDK.Contracts) and replace them with references to the [Microsoft.Windows.SDK.NET package](https://www.nuget.org/packages/microsoft.windows.sdk.net).
+
+- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types in .NET 5.0 and later versions.
+
+#### Category
+
+Interop
+
+#### Affected APIs
+
+- <xref:System.IO.WindowsRuntimeStorageExtensions?displayProperty=fullName>
+- <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.WindowsRuntime?displayProperty=fullName>
+- <xref:System.WindowsRuntimeSystemExtensions?displayProperty=fullName>
+- <xref:Windows.Foundation.Point?displayProperty=fullName>
+- <xref:Windows.Foundation.Size?displayProperty=fullName>
+- <xref:Windows.UI.Color?displayProperty=fullName>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.IO.WindowsRuntimeStorageExtensions`
+- `T: System.IO.WindowsRuntimeStreamExtensions`
+- `N:System.Runtime.InteropServices.WindowsRuntime`
+- `T:System.WindowsRuntimeSystemExtensions`
+- `T:Windows.Foundation.Point`
+- `T:Windows.Foundation.Size`
+- `T:Windows.UI.Color`
+
+-->

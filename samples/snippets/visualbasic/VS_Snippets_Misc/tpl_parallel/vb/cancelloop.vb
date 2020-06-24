@@ -9,7 +9,7 @@ Module CancelParallelLoops
         Dim nums() As Integer = Enumerable.Range(0, 10000000).ToArray()
         Dim cts As New CancellationTokenSource
 
-         ' Use ParallelOptions instance to store the CancellationToken
+        ' Use ParallelOptions instance to store the CancellationToken
         Dim po As New ParallelOptions
         po.CancellationToken = cts.Token
         po.MaxDegreeOfParallelism = System.Environment.ProcessorCount

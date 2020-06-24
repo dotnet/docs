@@ -15,8 +15,8 @@ Module Module1
             Dim productId As Integer = 776
 
             Dim details = From s In AWEntities.SalesOrderDetails _
-                Where s.ProductID = productId _
-                Select s
+                          Where s.ProductID = productId _
+                          Select s
 
             Console.WriteLine(AWEntities.GetProductRevenue(details))
         End Using
@@ -29,8 +29,8 @@ Module Module1
             Dim productId As Integer = 776
 
             Dim details = From s In AWEntities.SalesOrderDetails _
-                Where s.ProductID = productId _
-                Select s
+                          Where s.ProductID = productId _
+                          Select s
 
             Console.WriteLine([MyClass].GetProductRevenue(details))
         End Using

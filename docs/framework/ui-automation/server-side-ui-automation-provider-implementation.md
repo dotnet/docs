@@ -1,5 +1,6 @@
 ---
 title: "Server-Side UI Automation Provider Implementation"
+description: Understand how to implement a server-side UI Automation provider for a custom control in .NET. Implementation for WPF and non-WPF elements is different.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "server-side UI Automation provider implementation"

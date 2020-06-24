@@ -1,5 +1,6 @@
 ---
 title: "How to: Remove an Assembly from the Global Assembly Cache"
+description: Learn how to remove an assembly from the global assembly cache in .NET, by using either the global assembly cache tool (Gacutil.exe) or Windows Installer.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"

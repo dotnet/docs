@@ -18,7 +18,7 @@ Specifies that one or more declared programming elements are associated with a c
 
 ## When to Use Shared
 
-Sharing a member of a class or structure makes it available to every instance, rather than *non-shared*, where each instance keeps its own copy. This is useful, for example, if the value of a variable applies to the entire application. If you declare that variable to be `Shared`, then all instances access the same storage location, and if one instance changes the variable's value, all instances access the updated value.
+Sharing a member of a class or structure makes it available to every instance, rather than *non-shared*, where each instance keeps its own copy. Sharing is useful, for example, if the value of a variable applies to the entire application. If you declare that variable to be `Shared`, then all instances access the same storage location, and if one instance changes the variable's value, all instances access the updated value.
 
 Sharing does not alter the access level of a member. For example, a class member can be shared and private (accessible only from within the class), or non-shared and public. For more information, see [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
@@ -44,7 +44,7 @@ Sharing does not alter the access level of a member. For example, a class member
 
 - **Accessing through an Instance Variable.** It is possible to access a shared element by qualifying it with the name of a variable that contains a specific instance of its class or structure. Although this usually works as expected, the compiler generates a warning message and makes the access through the class or structure name instead of the variable.
 
-- **Accessing through an Instance Expression.** If you access a shared element through an expression that returns an instance of its class or structure, the compiler makes the access through the class or structure name instead of evaluating the expression. This produces unexpected results if you intended the expression to perform other actions as well as returning the instance. The following example illustrates this.
+- **Accessing through an Instance Expression.** If you access a shared element through an expression that returns an instance of its class or structure, the compiler makes the access through the class or structure name instead of evaluating the expression. This access produces unexpected results if you intended the expression to perform other actions as well as returning the instance. The following example illustrates this situation.
   
     ```vb
     Sub Main()
@@ -76,7 +76,7 @@ Sharing does not alter the access level of a member. For example, a class member
     End Class
     ```
 
-     In the preceding example, the compiler generates a warning message both times the code accesses the shared property `Total` through an instance. In each case it makes the access directly through the class `ShareTotal` and does not make use of any instance. In the case of the intended call to the procedure `ReturnClass`, this means it does not even generate a call to `ReturnClass`, so the additional action of displaying "Function ReturnClass() called" is not performed.
+     In the preceding example, the compiler generates a warning message both times the code accesses the shared property `Total` through an instance. In each case, it makes the access directly through the class `ShareTotal` and does not make use of any instance. In the case of the intended call to the procedure `ReturnClass`, this means it does not even generate a call to `ReturnClass`, so the additional action of displaying "Function ReturnClass() called" is not performed.
 
 The `Shared` modifier can be used in these contexts:
 

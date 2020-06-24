@@ -1,6 +1,81 @@
 ---
 title: Keyword Reference
 description: Find links to information about all of the F# language keywords.
+f1_keywords:
+- new_FS
+- use_FS
+- end_FS
+- lsl_FS
+- exception_FS
+- asr_FS
+- if_FS
+- internal_FS
+- default_FS
+- in_FS
+- lsr_FS
+- open_FS
+- static_FS
+- assert_FS
+- match_FS
+- land_FS
+- with_FS
+- inherit_FS
+- mutable_FS
+- downto_FS
+- false_FS
+- sig_FS
+- and_FS
+- true_FS
+- namespace_FS
+- public_FS
+- lxor_FS
+- val_FS
+- void_FS
+- downcast_FS
+- function_FS
+- while_FS
+- for_FS
+- class_FS
+- done_FS
+- to_FS
+- module_FS
+- let_FS
+- delegate_FS
+- abstract_FS
+- then_FS
+- when_FS
+- lazy_FS
+- try_FS
+- inline_FS
+- do_FS
+- upcast_FS
+- begin_FS
+- base_FS
+- fun_FS
+- struct_FS
+- as_FS
+- extern_FS
+- null_FS
+- lor_FS
+- return_FS
+- mod_FS
+- private_FS
+- of_FS
+- or_FS
+- member_FS
+- type_FS
+- rec_FS
+- elif_FS
+- override_FS
+- interface_FS
+- yield_FS
+- else_FS
+- finally_FS
+- global_FS
+- select_FS
+- use!_FS
+dev_langs:
+- FSharp
 ms.date: 11/04/2019
 ---
 # Keyword Reference

@@ -11,15 +11,15 @@ Public Class TreeWalk
 
         ' Define the Action to perform on each node.
         Dim myAction As Action(Of Person) = New Action(Of Person)(Sub(x)
-                                                Console.WriteLine("{0}  : {1} ", x.Name, x.Number)
-                                            End Sub)
+                                                                      Console.WriteLine("{0}  : {1} ", x.Name, x.Number)
+                                                                  End Sub)
 
         ' Traverse the tree with parallel tasks.
         DoTree(tree, myAction)
     End Sub
 
     Public Class Person
-         Public Name As String
+        Public Name As String
         Public Number As Integer
     End Class
 

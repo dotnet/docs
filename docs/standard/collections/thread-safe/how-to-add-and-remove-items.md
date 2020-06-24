@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Items from a ConcurrentDictionary"
+title: Add and Remove Items from a ConcurrentDictionary
 description: Read an example of how to add, retrieve, update, and remove items from the ConcurrentDictionary<TKey,TValue> collection class in .NET.
 ms.date: 05/04/2020
 ms.technology: dotnet-standard
@@ -10,8 +10,7 @@ helpviewer_keywords:
   - "thread-safe collections, concurrent dictionary"
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598
 ---
-
-# How to: Add and Remove Items from a ConcurrentDictionary
+# How to add and remove items from a ConcurrentDictionary
 
 This example shows how to add, retrieve, update, and remove items from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>. This collection class is a thread-safe implementation. We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.
 
@@ -32,9 +31,9 @@ The following example uses two <xref:System.Threading.Tasks.Task> instances to a
 
 <xref:System.Collections.Concurrent.ConcurrentDictionary%602> is designed for multithreaded scenarios. You do not have to use locks in your code to add or remove items from the collection. However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.
 
-Also, although all methods of <xref:System.Collections.Concurrent.ConcurrentDictionary%602> are thread-safe, not all methods are atomic, specifically <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock (this is done to prevent unknown code from blocking all threads). Therefore, it is possible for this sequence of events to occur:
+Also, although all methods of <xref:System.Collections.Concurrent.ConcurrentDictionary%602> are thread-safe, not all methods are atomic, specifically <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602.AddOrUpdate%2A>. To prevent unknown code from blocking all threads, the user delegate that's passed to these methods is invoked outside of the dictionary's internal lock. Therefore, it's possible for this sequence of events to occur:
 
-1. _threadA_ calls <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A>, finds no item and creates a new item to add by invoking the `valueFactory` delegate.
+1. _threadA_ calls <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A>, finds no item, and creates a new item to add by invoking the `valueFactory` delegate.
 
 1. _threadB_ calls <xref:System.Collections.Concurrent.ConcurrentDictionary%602.GetOrAdd%2A> concurrently, its `valueFactory` delegate is invoked and it arrives at the internal lock before _threadA_, and so its new key-value pair is added to the dictionary.
 

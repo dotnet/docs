@@ -1,5 +1,6 @@
 ---
 title: "Capitalization Conventions"
+description: Apply capitalization conventions for identifiers, compound words, and common terms. Understand how case sensitivity works in .NET.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

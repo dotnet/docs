@@ -6,7 +6,7 @@ helpviewer_keywords:
 ---
 # How to modify string contents in C\#
 
-This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To clearly demonstrate this, the examples all store the result in a new variable. You can then examine both the original `string` and the `string` resulting from the modification when you run each example.
+This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To demonstrate that the original and modified strings are distinct instances, the examples store the result in a new variable. You can examine the original `string` and the new, modified `string` when you run each example.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -62,7 +62,7 @@ Since strings are immutable, the previous examples all create temporary strings 
 
 :::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet7":::
 
-You could modify a string in a fixed block with unsafe code but it is **strongly** discouraged to modify the string content after a string is created. Doing so will break things in unpredictable ways. For example, if someone interns a string that has the same content as yours, they will get your copy and will not expect that you are modifying their string at all.
+You could modify a string in a fixed block with unsafe code, but it is **strongly** discouraged to modify the string content after a string is created. Doing so will break things in unpredictable ways. For example, if someone interns a string that has the same content as yours, they'll get your copy and won't expect that you are modifying their string.
 
 ## See also
 

@@ -5,20 +5,20 @@ Option Strict On
 Imports System.Threading
 
 Class CancelableObject
-   Public id As String
-   
-   Public Sub New(id As String)
-      Me.id = id
-   End Sub
-   
-   Public Sub Cancel() 
-      Console.WriteLine("Object {0} Cancel callback", id)
-      ' Perform object cancellation here.
-   End Sub
+    Public id As String
+
+    Public Sub New(id As String)
+        Me.id = id
+    End Sub
+
+    Public Sub Cancel()
+        Console.WriteLine("Object {0} Cancel callback", id)
+        ' Perform object cancellation here.
+    End Sub
 End Class
 
 Module Example
-   Public Sub Main()
+    Public Sub Main()
         Dim cts As New CancellationTokenSource()
         Dim token As CancellationToken = cts.Token
 
@@ -37,7 +37,7 @@ Module Example
         cts.Cancel()
         ' Call Dispose when we're done with the CancellationTokenSource.
         cts.Dispose()
-   End Sub
+    End Sub
 End Module
 ' The example displays output like the following:
 '       Object 3 Cancel callback

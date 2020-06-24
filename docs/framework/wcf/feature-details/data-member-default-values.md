@@ -1,5 +1,6 @@
 ---
 title: "Data Member Default Values"
+description: Learn how to omit a data member from serialized data when it has a .NET Framework default value. WCF can improve performance by not serializing a default.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

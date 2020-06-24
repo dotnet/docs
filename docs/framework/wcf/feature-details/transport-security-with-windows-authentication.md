@@ -1,5 +1,6 @@
 ---
 title: "Transport Security with Windows Authentication"
+description: Review this scenario, which shows a WCF client/service secured by Windows security. In this example, an intranet service displays human resources information.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

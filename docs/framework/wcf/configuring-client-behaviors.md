@@ -1,5 +1,6 @@
 ---
 title: "Configuring Client Behaviors"
+description: "Learn about the two ways that WCF configures behaviors: in the application configuration file or programmatically from the calling application."
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

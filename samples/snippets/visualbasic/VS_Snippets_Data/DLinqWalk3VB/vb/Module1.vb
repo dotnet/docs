@@ -52,8 +52,8 @@ Module Module1
         ' <Snippet4>
         Dim existingCust = _
             (From cust In db.Customers _
-            Where cust.CustomerID = "ALFKI" _
-            Select cust).First()
+             Where cust.CustomerID = "ALFKI" _
+             Select cust).First()
 
         ' Change the contact name of the customer.
         existingCust.ContactName = "New Contact"

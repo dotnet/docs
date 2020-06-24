@@ -1,7 +1,7 @@
 ---
 title: Styles and templates
 description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET Core. Understand the types of XAML resources related to styles and themes.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 09/09/2019
 dev_langs: 

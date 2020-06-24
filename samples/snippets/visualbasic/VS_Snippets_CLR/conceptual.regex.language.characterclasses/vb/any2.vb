@@ -5,17 +5,17 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim pattern As String = "^.+"
-      Dim input As String = "This is one line and" + vbCrLf + "this is the second."
-      For Each match As Match In Regex.Matches(input, pattern)
-         Console.WriteLine(Regex.Escape(match.Value))
-      Next
-      Console.WriteLine()
-      For Each match As Match In Regex.Matches(input, pattern, RegexOptions.SingleLine)
-         Console.WriteLine(Regex.Escape(match.Value))
-      Next
-   End Sub
+    Public Sub Main()
+        Dim pattern As String = "^.+"
+        Dim input As String = "This is one line and" + vbCrLf + "this is the second."
+        For Each match As Match In Regex.Matches(input, pattern)
+            Console.WriteLine(Regex.Escape(match.Value))
+        Next
+        Console.WriteLine()
+        For Each match As Match In Regex.Matches(input, pattern, RegexOptions.SingleLine)
+            Console.WriteLine(Regex.Escape(match.Value))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       This\ is\ one\ line\ and\r

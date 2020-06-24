@@ -8,7 +8,7 @@ End Class
 Class Example
     Shared Sub Main()
         '<Snippet1>
-        Dim b As Action(Of Base) = Sub(target As Base) 
+        Dim b As Action(Of Base) = Sub(target As Base)
                                        Console.WriteLine(target.GetType().Name)
                                    End Sub
         Dim d As Action(Of Derived) = b

@@ -22,7 +22,7 @@ Module Module1
                     Console.WriteLine("You have written to the file.")
                 End Using
             End Using
-        End If 
+        End If
     End Sub
 
 End Module

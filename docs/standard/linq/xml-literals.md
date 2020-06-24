@@ -172,7 +172,7 @@ Dim xmlTree1 As XElement = _
         <Child1>1</Child1>
     </Root>
 
-' Create an element that isn't parented.
+' Create an element that's not parented.
 Dim child2 As XElement = <Child2>2</Child2>
 
 ' Create a tree and add Child1 and Child2 to it.

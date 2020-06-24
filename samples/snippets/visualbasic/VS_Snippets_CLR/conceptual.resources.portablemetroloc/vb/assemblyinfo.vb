@@ -7,12 +7,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("MetroLocConsumer")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("MetroLocConsumer")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2012")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("MetroLocConsumer")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("MetroLocConsumer")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2012")>
+<Assembly: AssemblyTrademark("")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -25,6 +25,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>
 <Assembly: ComVisible(false)>

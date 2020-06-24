@@ -10,7 +10,7 @@ ms.assetid: 5a630f24-f9ad-400e-831e-c14ebfc9e142
 
 # XAttribute class overview
 
-Attributes are name/value pairs that are associated with an element. The <xref:System.Xml.Linq.XAttribute> class represents XML attributes.
+Attributes are name-value pairs that are associated with an element. The <xref:System.Xml.Linq.XAttribute> class represents XML attributes.
 
 Working with attributes in LINQ to XML is similar to working with elements. Their constructors are similar. The methods that you use to retrieve collections of them are similar. A LINQ query expression for a collection of attributes looks similar to a LINQ query expression for a collection of elements.
 
@@ -97,7 +97,7 @@ This example produces the following output:
 
 ## Attributes aren't nodes
 
-There are some differences between attributes and elements. <xref:System.Xml.Linq.XAttribute> objects aren't nodes in the XML tree. They're name/value pairs associated with an XML element. In contrast to the Document Object Model (DOM), this more closely reflects the structure of XML. Although <xref:System.Xml.Linq.XAttribute> objects aren't actually nodes in the XML tree, working with <xref:System.Xml.Linq.XAttribute> objects is similar to working with <xref:System.Xml.Linq.XElement> objects.
+There are some differences between attributes and elements. <xref:System.Xml.Linq.XAttribute> objects aren't nodes in the XML tree. They're name-value pairs associated with an XML element. In contrast to the Document Object Model (DOM), this more closely reflects the structure of XML. Although <xref:System.Xml.Linq.XAttribute> objects aren't actually nodes in the XML tree, working with <xref:System.Xml.Linq.XAttribute> objects is similar to working with <xref:System.Xml.Linq.XElement> objects.
 
 This distinction is primarily important only to developers who are writing code that works with XML trees at the node level. Many developers won't be concerned with this distinction.
 

@@ -1,5 +1,6 @@
 ---
 title: "Mapping Object Identifiers to Cryptography Algorithms"
+description: See how to map an object identifier (OID) to a cryptography algorithm in .NET using the oidEntry and nameEntry elements in an XML configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "digital signatures"

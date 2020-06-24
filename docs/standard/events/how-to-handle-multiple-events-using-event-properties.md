@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle Multiple Events Using Event Properties"
+description: Learn how to handle many events by using event properties. Define delegate collections, event keys, & event properties. Implement add & remove accessor methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

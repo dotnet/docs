@@ -91,8 +91,6 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
-    <!-- markdownlint-disable MD023 MD025 -->
-
     ![ML.NET CLI classification on PowerShell](./media/mlnet-cli/mlnet-classification-powershell.gif)
 
     In this particular case, in only 10 seconds and with the small dataset provided, the CLI tool was able to run quite a few iterations, meaning training multiple times based on different combinations of algorithms/configuration with different internal data transformations and algorithm's hyper-parameters.
@@ -173,7 +171,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
         ```
 
     - The next line of code uses the `ConsumeModel.Predict()` method on the specified input data to make a prediction and return the results (based on the ModelOutput.cs schema).
-    - The last lines of code print out the proprties of the sample data (in this case the Comment) as well as the Sentiment prediction and corresponding Scores for positive sentiment (1) and negative sentiment (2).
+    - The last lines of code print out the properties of the sample data (in this case the Comment) as well as the Sentiment prediction and corresponding Scores for positive sentiment (1) and negative sentiment (2).
 
 1. Run the project, either using the original sample data loaded from the first row of the dataset or by providing your own custom hard-coded sample data. You should get a prediction comparable to:
 

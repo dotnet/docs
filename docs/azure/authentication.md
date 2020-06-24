@@ -1,71 +1,27 @@
 ---
-title: Authenticate with the Azure libraries for .NET
-description: Authenticate into the Azure libraries for .NET
+title: Understanding Authentication in the Azure libraries for .NET
+description: Explains the different ways of authenticating with the Azure SDK for .NET.
 ms.date: 06/19/2020
 ms.custom: azure-sdk-dotnet
 ---
 
-# Authenticate with the Azure Libraries for .NET
+# Authenticate with the Azure SDK for .NET
 
-## Connect to services with connection strings
+## Recommended: Azure.Identity
 
-Most Azure service libraries require a connection string or keys for authentication. For example, SQL Database uses a standard SQL connection string:
+The latest packages in the Azure SDK for .NET use a common authentication mechanism, Azure.Identity. Using Azure.Identity is recommended over other authentication mechanisms described later in this document. Packages supporting the credentials provided by Azure.Identity have package identifiers starting with *Azure.* [See the latest releases in the Azure SDK for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net).
 
-```csharp
-var builder = new SqlConnectionStringBuilder();
-builder.DataSource = "example.database.windows.net";
-builder.InitialCatalog = "MyDatabase";
-builder.UserID = "sampleuser@example"; // Format user ID as "user@server"
-builder.Password = password;
-builder.Encrypt = true;
-builder.TrustServerCertificate = true;
+For complete instructions on using Azure.Identity in your project, see the documentation for [Azure Identity client for .NET](/dotnet/api/overview/azure/identity-readme).
 
-using (var conn = new SqlConnection(builder.ConnectionString))
-{
-    conn.Open();
-    // Do things with the connection...
-    // ...
-}
-```
+To authenticate with libraries that don't support Azure.Identity, see the rest of this topic.
 
-Azure Storage uses a storage key:
+## Access Azure resources
 
-```csharp
-string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storageName
-        + ";AccountKey=" + storageKey
-        + ";EndpointSuffix=core.windows.net";
+To interact with Azure resources, such as retrieving a secret from Key Vault or storing a blob in Storage, many Azure service libraries require a connection string or keys for authentication. For example, SQL Database uses a [standard SQL connection string](https://docs.microsoft.com/azure/azure-sql/database/connect-query-dotnet-core). Service connection strings are used in other Azure services like [CosmosDB](/azure/cosmos-db/), [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). You can get those strings using the Azure portal, CLI, or PowerShell. You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.
 
-var account = CloudStorageAccount.Parse(storageConnectionString);
-// Do things with the account here...
-```
+The methods for using a connection string vary by product. [Refer to the documentation for your Azure product](/azure/?product=featured).
 
-Service connection strings are used in other Azure services like [CosmosDB](/azure/cosmos-db/), [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). You can get those strings using the Azure portal, CLI, or PowerShell. You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.
-
-This snippet uses the management libraries to create a storage account connection string:
-
-```csharp
-// Get a storage account
-var storage = azure.StorageAccounts.GetByResourceGroup("myResourceGroup", "myStorageAccount");
-
-// Extract the keys
-var storageKeys = storage.GetKeys();
-
-// Build the connection string
-string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-// Connect
-var account = CloudStorageAccount.Parse(storageConnectionString);
-
-// Do things with the account here...
-```
-
-Other libraries require your application to run with a [service principal](/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials. This configuration is similar to the object-based authentication steps for the management library listed below.
-
-## <a name="mgmt-auth"></a>Azure management libraries for .NET authentication
+## Manage Azure resources
 
 [!include[Create service principal](includes/create-sp.md)]
 
@@ -100,7 +56,6 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .Authenticate(credentials)
     .WithDefaultSubscription();
 ```
-
 ### <a name="mgmt-file"></a>File-based authentication
 
 File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.

@@ -20,12 +20,10 @@ metadata:
 # Learn links that combine .NET & Azure
 # /learn/modules/secure-aspnet-core-identity/
 # /learn/modules/run-web-app-background-task-with-webjobs/
-# /learn/modules/capture-page-load-times-application-insights/
 # /learn/modules/optimize-your-web-apps-with-redis/
 # /learn/modules/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/
 # /learn/modules/load-test-web-app-azure-devops/
 # /learn/modules/publish-azure-web-app-with-visual-studio/
-# /learn/modules/build-cosmos-db-app-with-vscode/
 # /learn/modules/stage-deploy-app-service-deployment-slots/
 
 landingContent:
@@ -39,10 +37,12 @@ landingContent:
         links:
           - text: .NET developer tools
             url: tools.md
-          - text: Azure Identity client library for .NET (SDK authentication)
-            url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
-          - text: Logging with the Azure SDK for .NET
+          - text: Authenticate your app
+            url: authentication.md
+          - text: Logging
             url: logging.md
+          - text: End-to-end example
+            url: end-to-end.md
       - linkListType: learn
         links:
           - text: Azure fundamentals
@@ -69,7 +69,7 @@ landingContent:
           - text: Deploy an ASP.NET web app
             url: /azure/app-service/app-service-web-get-started-dotnet
           - text: Build a serverless function
-            url: /azure/azure-functions/functions-create-your-first-function-visual-studio      
+            url: /azure/azure-functions/functions-create-your-first-function-visual-studio
       - linkListType: learn
         links:
           - text: Host a web app with Azure App Service
@@ -169,7 +169,7 @@ landingContent:
         links:
           - text: Storing messages with Azure queues
             url: /azure/storage/queues/storage-queues-introduction
-          - text: Inter-application messaging with Azure Service Bus          
+          - text: Inter-application messaging with Azure Service Bus
             url: /azure/service-bus-messaging
           - text: Streaming big data with Event Hubs
             url: /azure/event-hubs/event-hubs-about
@@ -178,27 +178,31 @@ landingContent:
       - linkListType: quickstart
         links:     
           - text: Use Azure Queue Storage
-            url: /azure/storage/queues/storage-python-how-to-use-queue-storage
+            url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
           - text: Use Azure Service Bus queues
-            url: /azure/service-bus-messaging/service-bus-python-how-to-use-queues
+            url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
           - text: Ingest data in real-time through Azure Event Hubs
-            url: /azure/event-hubs/event-hubs-python
+            url: /azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
           - text: Route custom events with Event Grid
             url: /azure/event-grid/custom-event-quickstart
   - title: Diagnostics and monitoring
     linkLists:
       - linkListType: concept
         links:
-          - text: Choose an Azure hosting option
-            url: ./migration/choose.md
+          - text: Azure Monitor
+            url: /azure/azure-monitor/overview
+      - linkListType: learn
+        links:
+          - text: Capture and view page load times in your Azure web app
+            url: /learn/modules/capture-page-load-times-application-insights/
       - linkListType: how-to-guide
         links:
-          - text: Migrate a .NET web app or service to Azure App Service
-            url: ./migration/app-service.md
-          - text: Migrate an ASP.NET app to an Azure VM
-            url: ./migration/vm.md
-          - text: Migrate a SQL Server database to Azure
-            url: ./migration/sql.md
+          - text: Troubleshoot ASP.NET Core on Azure App Service and IIS
+            url: /aspnet/core/test/troubleshoot-azure-iis
+          - text: Application Insights with .NET Core ILogger
+            url: /azure/azure-monitor/app/ilogger
+          - text: Application Insights for Worker Service applications
+            url: /azure/azure-monitor/app/worker-service
   - title: Migration
     linkLists:
       - linkListType: concept

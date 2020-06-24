@@ -36,16 +36,18 @@ Write-Host "Total errors: $($errors.Count)"
 
 foreach ($er in $errors) {
 
-    $lineColMatch = Select-String "\((\d*),(\d*)\)" | Select-Object -ExpandProperty Matches | Select-Object -ExpandProperty Groups
-    $lineNumber = 0
-    $colNumber = 0
+    $lineColMatch = Select-String "(^.*)\((\d*),(\d*)\)" | Select-Object -ExpandProperty Matches | Select-Object -ExpandProperty Groups
+    $errorFile = $er.InputFile
+    $errorLineNumber = 0
+    $errorColNumber = 0
 
-    if ($lineColMatch.Count -eq 3) {
-        $lineNumber = $lineColMatch[1].Value
-        $colNumber = $lineColMatch[2].Value
+    if ($lineColMatch.Count -eq 4) {
+        $errorFile = $lineColMatch[1].Value
+        $errorLineNumber = $lineColMatch[2].Value
+        $errorColNumber = $lineColMatch[3].Value
     }
 
-    Write-Host "::error file=$($er.InputFile),line=$lineNumber,col=$colNumber::----FILE:  $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:  $($er.Line)"
+    Write-Host "::error file=$errorFile,line=$errorLineNumber,col=$errorColNumber::----FILE:  $($er.InputFile)`n    ERROR: $($er.Error)`n    LINE:  $($er.Line)"
 }
 
 exit 1

@@ -23,7 +23,7 @@ In *pure functional transformation*, a set of functions, called *pure functions*
 >
 > Note that pure functions must be implemented as methods in C#, and as functions in Visual Basic.
 >
-> You should not confuse pure functions with pure virtual methods in C++. The latter indicates that the containing class is abstract and that no method body is supplied.
+> You shouldn't confuse pure functions with pure virtual methods in C++. The latter indicates that the containing class is abstract and that no method body is supplied.
 
 ### Functional programming
 

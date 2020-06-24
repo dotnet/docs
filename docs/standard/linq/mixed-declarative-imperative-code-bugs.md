@@ -125,7 +125,7 @@ Next
 Console.WriteLine(root)
 ```
 
-However, this doesn't do what you want. In this situation, after you have removed the first element, A, it's removed from the XML tree contained in root, and the code in the Elements method that does the iterating cannot find the next element.
+However, this doesn't do what you want. In this situation, after you've removed the first element, A, it's removed from the XML tree contained in root, and the code in the Elements method that does the iterating can't find the next element.
 
 This example produces the following output:
 

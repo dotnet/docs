@@ -84,9 +84,8 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
         reader.MoveToContent();
 
         // Parse the file, save header information when encountered, and yield the
-        // Item XElement objects as they are created.
-
-        // loop through Customer elements
+        // Item XElement objects as they're created.
+        // Loop through Customer elements.
         while (reader.Read())
         {
             if (reader.NodeType == XmlNodeType.Element
@@ -337,9 +336,8 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
         reader.MoveToContent();
 
         // Parse the file, save header information when encountered, and yield the
-        // Item XElement objects as they are created.
-
-        // loop through Customer elements
+        // Item XElement objects as they're created.
+        // Loop through Customer elements.
         while (reader.Read())
         {
             if (reader.NodeType == XmlNodeType.Element
@@ -356,7 +354,7 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
                     }
                 }
 
-                // loop through Item elements
+                // Loop through Item elements
                 while (reader.Read())
                 {
                     if (reader.NodeType == XmlNodeType.EndElement)

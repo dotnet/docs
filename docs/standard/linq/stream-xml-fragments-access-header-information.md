@@ -84,7 +84,7 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
         reader.MoveToContent();
 
         // Parse the file, save header information when encountered, and yield the
-        // Item XElement objects as they are created.
+        // Item XElement objects as they're created.
 
         // loop through Customer elements
         while (reader.Read())
@@ -103,7 +103,7 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
                     }
                 }
 
-                // loop through Item elements
+                // Loop through Item elements
                 while (reader.Read())
                 {
                     if (reader.NodeType == XmlNodeType.EndElement)

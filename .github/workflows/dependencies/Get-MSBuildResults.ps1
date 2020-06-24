@@ -195,7 +195,7 @@ foreach ($item in $transformedItems) {
         $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
-    elseif ($item.ExitCode -ne 0) {
+    else {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `

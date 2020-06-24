@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core and Linux Distributions
 description: Learn about what Linux distributions support installing .NET Core on Linux.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/01/2020
 ---

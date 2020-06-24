@@ -1,7 +1,7 @@
 ---
 title: Create a project template for dotnet new
 description: Learn how to create a project template for the dotnet new command.
-author: thraka
+author: adegeo
 ms.date: 06/25/2019
 ms.topic: tutorial
 ms.author: adegeo

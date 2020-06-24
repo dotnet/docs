@@ -118,12 +118,12 @@ Various isolated storage APIs and tools can be used to read data across trust bo
 
 Components or applications that call any of the following APIs read from the machine-wide scope:
 
- * [IsolatedStorageFile.GetEnumerator](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getenumerator), passing a scope that includes the IsolatedStorageScope.Machine flag
- * [IsolatedStorageFile.GetMachineStoreForApplication](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforapplication)
- * [IsolatedStorageFile.GetMachineStoreForAssembly](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforassembly)
- * [IsolatedStorageFile.GetMachineStoreForDomain](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestorefordomain)
- * [IsolatedStorageFile.GetStore](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
- * [IsolatedStorageFile.Remove](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
+* [IsolatedStorageFile.GetEnumerator](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getenumerator), passing a scope that includes the IsolatedStorageScope.Machine flag
+* [IsolatedStorageFile.GetMachineStoreForApplication](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforapplication)
+* [IsolatedStorageFile.GetMachineStoreForAssembly](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforassembly)
+* [IsolatedStorageFile.GetMachineStoreForDomain](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestorefordomain)
+* [IsolatedStorageFile.GetStore](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
+* [IsolatedStorageFile.Remove](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
 
 The [isolated storage tool](/dotnet/framework/tools/storeadm-exe-isolated-storage-tool) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
 

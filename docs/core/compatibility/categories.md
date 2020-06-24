@@ -1,9 +1,9 @@
 ---
-title: Breaking change categories
-description: Learn about the ways in which breaking changes are categorized in .NET Core.
+title: Compatibility
+description: Learn about the ways in which code changes can affect compatibility in .NET.
 ms.date: 06/10/2019
 ---
-# Breaking change categories
+# How code changes can affect compatibility
 
 *Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways. The [individual kinds of changes](index.md) that are considered when evaluating compatibility fall into the following categories:
 

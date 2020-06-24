@@ -1,6 +1,6 @@
 - name: What are breaking changes?
   href: index.md
-- name: Categories of breaking changes
+- name: Compatibility
   href: categories.md
 - name: Page selectors
   href: breaking-changes.md
@@ -25,7 +25,7 @@
       href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: APIs that always throw
       href: unsupported-apis.md
-- name: By area
+- name: By technology area
   expanded: true
   items:
   - name: ASP.NET Core

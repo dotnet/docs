@@ -1,7 +1,7 @@
 ---
 title: How the .NET Core Runtime and SDK are versioned
 description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
-ms.date: 07/26/2018
+ms.date: 06/24/2020
 ---
 
 # Overview of how .NET Core is versioned
@@ -98,6 +98,9 @@ Each version of .NET Core implements a version of .NET Standard. Implementing a 
 | 2.1       | up to 2.0     |
 | 2.2       | up to 2.0     |
 | 3.0       | up to 2.1     |
+| 3.1       | up to 2.1     |
+
+For an interactive table of the .NET Standard versions, and how they correspond to .NET implementations, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 
 ## See also
 

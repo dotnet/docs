@@ -11,21 +11,8 @@
       href: authenticate.md
     - name: Logging with the Azure SDK for .NET
       href: logging.md      
-    - name: Examples
-      expanded: true
-      items:
-      - name: "Provision a resource group"
-        href: resource-group.md
-      - name: "Provision Azure storage"
-        href: storage.md
-      - name: "Use Azure storage"
-        href: storage-use.md
-      - name: "Provision & deploy a web app"
-        href: web-app.md
-      - name: "Provision & query a database"
-        href: database.md
-      - name: "Provision a virtual machine"
-        href: virtual-machines.md
+    - name: Example
+      href: end-to-end.md
     - name: Migrate to Azure
       expanded: true
       items:

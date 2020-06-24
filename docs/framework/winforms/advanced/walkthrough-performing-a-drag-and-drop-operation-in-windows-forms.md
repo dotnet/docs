@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Perform a drag-and-drop operation"
+description: Learn how to perform a drag-and-drop operation in Windows Forms by handling a series of events, most notably the DragEnter, DragLeave, and DragDrop events.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

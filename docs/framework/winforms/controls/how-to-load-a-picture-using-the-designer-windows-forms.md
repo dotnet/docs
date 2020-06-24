@@ -1,5 +1,6 @@
 ---
 title: "How to: Load a Picture Using the Designer"
+description: Learn how to use the Windows Forms PictureBox control to load and display a picture on a form at design time.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "picture formats"

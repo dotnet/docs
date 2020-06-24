@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "PE files, PEVerify"
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
 ---
-# Peverify.exe (PEVerify Tool)
-The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers, script engine developers, and so on) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If, as a developer, you are using such a compiler, you may want to verify that you have not compromised the type safety of your code. In this situation, you can run the PEVerify tool on your files to check the MSIL and metadata.  
+# Peverify.exe (PEVerify tool)
+
+The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers and script engine developers) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If you're using such a compiler, you may want to verify that you have not compromised the type safety of your code. You can run the PEVerify tool on your files to check the MSIL and metadata.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
-  
- At the command prompt, type the following:  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
   
 ## Syntax  
   
@@ -40,7 +39,7 @@ peverify filename [options]
 |**/ignore=** *hex.code* [, *hex.code*]|Ignores the specified error codes.|  
 |**/ignore=@** *responseFile*|Ignores the error codes listed in the specified response file.|  
 |**/il**|Performs MSIL type safety verification checks for methods implemented in the assembly specified by *filename*. The tool returns detailed descriptions for each problem found unless you specify the **/quiet** option.|  
-|**/md**|Performs metadata validation checks on the assembly specified by *filename*. This walks the full metadata structure within the file and reports all validation problems encountered.|  
+|**/md**|Performs metadata validation checks on the assembly specified by *filename*. This option walks the full metadata structure within the file and reports all validation problems encountered.|  
 |**/nologo**|Suppresses the display of product version and copyright information.|  
 |**/nosymbols**|In the .NET Framework version 2.0, suppresses line numbers for backward compatibility.|  
 |**/quiet**|Specifies quiet mode; suppresses output of the verification problem reports. Peverify.exe still reports whether the file is type safe, but does not report information on problems preventing type safety verification.|  
@@ -56,7 +55,7 @@ peverify filename [options]
   
  Peverify.exe performs comprehensive MSIL verification checks based on dataflow analysis plus a list of several hundred rules on valid metadata. For detailed information on the checks Peverify.exe performs, see the "Metadata Validation Specification" and the "MSIL Instruction Set Specification" in the Tools Developers Guide folder in the Windows SDK.  
   
- Note that the .NET Framework version 2.0 or later supports verifiable `byref` returns specified using the following MSIL instructions: `dup`, `ldsflda`, `ldflda`, `ldelema`, `call` and `unbox`.  
+.NET Framework version 2.0 or later supports verifiable `byref` returns specified using the following MSIL instructions: `dup`, `ldsflda`, `ldflda`, `ldelema`, `call`, and `unbox`.  
   
 ## Examples  
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`.  

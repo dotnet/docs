@@ -7,14 +7,13 @@
       href: intro.md
     - name: .NET developer tools
       href: tools.md
-    - name: Azure Identity client library for .NET (SDK authentication)
+    - name: Authentication
       href: authenticate.md
-    - name: Logging with the Azure SDK for .NET
+    - name: Logging
       href: logging.md      
-    - name: Example
+    - name: End-to-end example
       href: end-to-end.md
     - name: Migrate to Azure
-      expanded: true
       items:
         - name: Choose the right Azure hosting option
           href: ./migration/choose.md

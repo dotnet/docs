@@ -16,7 +16,7 @@
     Version:        1.1
     Author:         adegeo@microsoft.com
     Creation Date:  06/24/2020
-    Purpose/Change: Change reporting items.
+    Purpose/Change: Change reporting items
 #>
 
 [CmdletBinding()]
@@ -36,13 +36,13 @@ Write-Host "Total errors: $($errors.Count)"
 
 foreach ($er in $errors) {
 
-    $lineColMatch = Select-String "(^.*)\((\d*),(\d*)\)" | Select-Object -ExpandProperty Matches | Select-Object -ExpandProperty Groups
+    $lineColMatch = $er.Line | Select-String "(^.*)\((\d*),(\d*)\)" | Select-Object -ExpandProperty Matches | Select-Object -ExpandProperty Groups
     $errorFile = $er.InputFile
     $errorLineNumber = 0
     $errorColNumber = 0
 
     if ($lineColMatch.Count -eq 4) {
-        $errorFile = $lineColMatch[1].Value
+        $errorFile = $lineColMatch[1].Value.Replace("D:\a\docs\docs\", "").Replace("\", "/")
         $errorLineNumber = $lineColMatch[2].Value
         $errorColNumber = $lineColMatch[3].Value
     }

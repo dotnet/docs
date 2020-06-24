@@ -181,7 +181,7 @@ LINQ to XML provides support for <xref:System.Xml.XPath.XPathNavigator> through 
 
 LINQ to XML handles white space more simply than the DOM.
 
-A common scenario is to read indented XML, create an in-memory XML tree without any white-space text nodes (that is, not preserving white space), do some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for LINQ to XML.
+A common scenario is to read indented XML, create an in-memory XML tree without any white space text nodes (that is, not preserving white space), do some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for LINQ to XML.
 
 Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. In LINQ to XML, you can do this by:
 

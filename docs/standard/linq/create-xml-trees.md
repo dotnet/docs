@@ -210,7 +210,7 @@ XElement xmlTree1 = new XElement("Root",
     new XElement("Child1", 1)
 );
 
-// Create an element that isn't parented.
+// Create an element that's not parented.
 XElement child2 = new XElement("Child2", 2);
 
 // Create a tree and add Child1 and Child2 to it.

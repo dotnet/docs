@@ -1,19 +1,19 @@
 ---
 title: Preserve white space while loading or parsing XML - LINQ to XML
-description: You can control the white-space behavior of LINQ to XML methods that populate XML trees. For instance, you can remove indentation for in-memory processing, or leave it as is.
+description: You can control the white space behavior of LINQ to XML methods that populate XML trees. For instance, you can remove indentation for in-memory processing, or leave it as is.
 ms.date: 07/20/2015
 ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
 ---
 
 # Preserve white space while loading or parsing XML (LINQ to XML)
 
-This article describes how to control the white-space behavior of LINQ to XML.
+This article describes how to control the white space behavior of LINQ to XML.
 
 A common scenario is to read indented XML, create an in-memory XML tree without any white space text nodes (that is, not preserving white space), do some operations on the XML, and then save the XML with indentation. When you serialize the XML with formatting, only significant white space in the XML tree is preserved. This is the default behavior for LINQ to XML.
 
 Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. To do this in LINQ to XML, you preserve white space when you load or parse the XML and disable formatting when you serialize the XML.
 
-This article describes the white-space behavior of methods that populate XML trees. For information about controlling white space when you serialize XML trees, see [Preserve white space while serializing](preserve-white-space-serializing.md).
+This article describes the white space behavior of methods that populate XML trees. For information about controlling white space when you serialize XML trees, see [Preserve white space while serializing](preserve-white-space-serializing.md).
 
 ## Behavior of methods that populate XML trees
 

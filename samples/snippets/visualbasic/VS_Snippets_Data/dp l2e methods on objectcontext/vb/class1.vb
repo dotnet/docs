@@ -8,8 +8,8 @@ Partial Public Class AdventureWorksEntities
     Inherits ObjectContext
 
     <EdmFunction("AdventureWorksModel", "GetProductRevenue")>
-    Public Function GetProductRevenue(ByVal details As  _
-                    IQueryable(Of SalesOrderDetail)) As  _
+    Public Function GetProductRevenue(ByVal details As _
+                    IQueryable(Of SalesOrderDetail)) As _
                     System.Nullable(Of Decimal)
         Return Me.QueryProvider.Execute(Of System.Nullable(Of Decimal)) _
             (Expression.[Call](Expression.Constant(Me), _
@@ -22,8 +22,8 @@ End Class
 '<snippet5> 
 Public Class [MyClass]
     <EdmFunction("AdventureWorksModel", "GetProductRevenue")> _
-    Public Shared Function GetProductRevenue(ByVal details As  _
-                IQueryable(Of SalesOrderDetail)) As  _
+    Public Shared Function GetProductRevenue(ByVal details As _
+                IQueryable(Of SalesOrderDetail)) As _
                 System.Nullable(Of Decimal)
         Return details.Provider.Execute(Of System.Nullable(Of Decimal)) _
             (Expression.[Call](DirectCast(MethodInfo.GetCurrentMethod(), MethodInfo), _

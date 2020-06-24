@@ -103,7 +103,7 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
                     }
                 }
 
-                // loop through Item elements
+                // Loop through Item elements
                 while (reader.Read())
                 {
                     if (reader.NodeType == XmlNodeType.EndElement)

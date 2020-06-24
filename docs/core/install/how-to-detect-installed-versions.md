@@ -1,7 +1,7 @@
 ---
 title: Check installed .NET Core versions on Windows, Linux, and macOS - .NET Core
 description: Learn how to list which versions of .NET Core are installed on your computer. This includes the .NET Core runtime and SDK.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
 ms.custom: "updateeachrelease"

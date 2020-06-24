@@ -1,5 +1,6 @@
 ---
 title: "How to: Locate Assemblies by Using DEVPATH"
+description: Test that a shared assembly works correctly with many applications in .NET by using an XML computer configuration file and the DEVPATH environment variable.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DEVPATH"

@@ -68,7 +68,7 @@ Module Program
         End If
         If KeyName Is Nothing Then
             Throw New ArgumentNullException("KeyName")
-        End If 
+        End If
         ' <snippet5>
         ' Create a new EncryptedXml object.
         Dim exml As New EncryptedXml(Doc)

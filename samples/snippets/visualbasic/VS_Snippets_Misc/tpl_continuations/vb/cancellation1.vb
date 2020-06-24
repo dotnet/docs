@@ -8,82 +8,82 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Module Example
-   Public Sub Main()
-      Dim rnd As New Random()
-      Dim lockObj As New Object()
-      Dim cts As New CancellationTokenSource()
-      Dim token As CancellationToken = cts.Token
-      Dim timer As New Timer(AddressOf Elapsed, cts, 5000, Timeout.Infinite)
+    Public Sub Main()
+        Dim rnd As New Random()
+        Dim lockObj As New Object()
+        Dim cts As New CancellationTokenSource()
+        Dim token As CancellationToken = cts.Token
+        Dim timer As New Timer(AddressOf Elapsed, cts, 5000, Timeout.Infinite)
 
-      Dim t = Task.Run( Function()
-                           Dim product33 As New List(Of Integer)()
-                           For ctr As Integer = 1 To Int16.MaxValue
-                              ' Check for cancellation.
-                              If token.IsCancellationRequested Then
-                                 Console.WriteLine("\nCancellation requested in antecedent...\n")
-                                 token.ThrowIfCancellationRequested()
-                              End If
-                              ' Introduce a delay.
-                              If ctr Mod 2000 = 0 Then
-                                 Dim delay As Integer
-                                 SyncLock lockObj
-                                    delay = rnd.Next(16,501)
-                                 End SyncLock
-                                 Thread.Sleep(delay)
-                              End If
+        Dim t = Task.Run(Function()
+                             Dim product33 As New List(Of Integer)()
+                             For ctr As Integer = 1 To Int16.MaxValue
+                                 ' Check for cancellation.
+                                 If token.IsCancellationRequested Then
+                                     Console.WriteLine("\nCancellation requested in antecedent...\n")
+                                     token.ThrowIfCancellationRequested()
+                                 End If
+                                 ' Introduce a delay.
+                                 If ctr Mod 2000 = 0 Then
+                                     Dim delay As Integer
+                                     SyncLock lockObj
+                                         delay = rnd.Next(16, 501)
+                                     End SyncLock
+                                     Thread.Sleep(delay)
+                                 End If
 
-                              ' Determine if this is a multiple of 33.
-                              If ctr Mod 33 = 0 Then product33.Add(ctr)
-                           Next
-                           Return product33.ToArray()
-                        End Function, token)
+                                 ' Determine if this is a multiple of 33.
+                                 If ctr Mod 33 = 0 Then product33.Add(ctr)
+                             Next
+                             Return product33.ToArray()
+                         End Function, token)
 
-      Dim continuation = t.ContinueWith(Sub(antecedent)
-                                           Console.WriteLine("Multiples of 33:" + vbCrLf)
-                                           Dim arr = antecedent.Result
-                                           For ctr As Integer = 0 To arr.Length - 1
-                                              If token.IsCancellationRequested Then
-                                                 Console.WriteLine("{0}Cancellation requested in continuation...{0}",
-                                                                   vbCrLf)
-                                                 token.ThrowIfCancellationRequested()
-                                              End If
+        Dim continuation = t.ContinueWith(Sub(antecedent)
+                                              Console.WriteLine("Multiples of 33:" + vbCrLf)
+                                              Dim arr = antecedent.Result
+                                              For ctr As Integer = 0 To arr.Length - 1
+                                                  If token.IsCancellationRequested Then
+                                                      Console.WriteLine("{0}Cancellation requested in continuation...{0}",
+                                                                        vbCrLf)
+                                                      token.ThrowIfCancellationRequested()
+                                                  End If
 
-                                              If ctr Mod 100 = 0 Then
-                                                 Dim delay As Integer
-                                                 SyncLock lockObj
-                                                    delay = rnd.Next(16,251)
-                                                 End SyncLock
-                                                 Thread.Sleep(delay)
-                                              End If
-                                              Console.Write("{0:N0}{1}", arr(ctr),
-                                                            If(ctr <> arr.Length - 1, ", ", ""))
-                                              If Console.CursorLeft >= 74 Then Console.WriteLine()
-                                           Next
-                                           Console.WriteLine()
-                                        End Sub, token)
+                                                  If ctr Mod 100 = 0 Then
+                                                      Dim delay As Integer
+                                                      SyncLock lockObj
+                                                          delay = rnd.Next(16, 251)
+                                                      End SyncLock
+                                                      Thread.Sleep(delay)
+                                                  End If
+                                                  Console.Write("{0:N0}{1}", arr(ctr),
+                                                                If(ctr <> arr.Length - 1, ", ", ""))
+                                                  If Console.CursorLeft >= 74 Then Console.WriteLine()
+                                              Next
+                                              Console.WriteLine()
+                                          End Sub, token)
 
-      Try
-         continuation.Wait()
-      Catch e As AggregateException
-         For Each ie In e.InnerExceptions
-            Console.WriteLine("{0}: {1}", ie.GetType().Name,
-                              ie.Message)
-         Next
-      Finally
-         cts.Dispose()
-      End Try
+        Try
+            continuation.Wait()
+        Catch e As AggregateException
+            For Each ie In e.InnerExceptions
+                Console.WriteLine("{0}: {1}", ie.GetType().Name,
+                                  ie.Message)
+            Next
+        Finally
+            cts.Dispose()
+        End Try
 
-      Console.WriteLine(vbCrLf + "Antecedent Status: {0}", t.Status)
-      Console.WriteLine("Continuation Status: {0}", continuation.Status)
-  End Sub
+        Console.WriteLine(vbCrLf + "Antecedent Status: {0}", t.Status)
+        Console.WriteLine("Continuation Status: {0}", continuation.Status)
+    End Sub
 
-   Private Sub Elapsed(state As Object)
-      Dim cts As CancellationTokenSource = TryCast(state, CancellationTokenSource)
-      If cts Is Nothing Then return
+    Private Sub Elapsed(state As Object)
+        Dim cts As CancellationTokenSource = TryCast(state, CancellationTokenSource)
+        If cts Is Nothing Then return
 
-      cts.Cancel()
-      Console.WriteLine("{0}Cancellation request issued...{0}", vbCrLf)
-   End Sub
+        cts.Cancel()
+        Console.WriteLine("{0}Cancellation request issued...{0}", vbCrLf)
+    End Sub
 End Module
 ' The example displays output like the following:
 '    Multiples of 33:

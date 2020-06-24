@@ -1,5 +1,6 @@
 ---
 title: "Configuring Cryptography Classes"
+description: Understand how computer administrators can configure the default cryptographic algorithms and algorithm implementations that .NET and applications use.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuration files [.NET Framework], cryptography"

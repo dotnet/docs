@@ -12,7 +12,7 @@ Module Module1
         Dim db As New Northwnd("...")
 
         Dim cust = (From c In db.Customers _
-                   Where c.CustomerID = "ALFKI").Single
+                    Where c.CustomerID = "ALFKI").Single
 
         Dim dcs As New DataContractSerializer(GetType(Customer))
 

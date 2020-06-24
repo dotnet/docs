@@ -14,7 +14,7 @@ Modifying an XML tree in place is a traditional approach to changing the shape o
 
 LINQ to XML enables another approach that is useful in many scenarios: *functional construction*. Functional construction treats modifying data as a problem of transformation, rather than as detailed manipulation of a data store. If you can take a representation of data and transform it efficiently from one form to another, the result is the same as if you took one data store and manipulated it in some way to take another shape. A key to the functional construction approach is to pass the results of queries to <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> constructors.
 
-In many cases you can write the transformational code in a fraction of the time that it would take to manipulate the data store, and the resulting code is more robust and easier to maintain. In these cases, even though the transformational approach can take more processing power, it is a more effective way to modify data. If a developer is familiar with the functional approach, the resulting code in many cases is easier to understand, and it is easy to find the code that modifies each part of the tree.
+In many cases you can write the transformational code in a fraction of the time that it would take to manipulate the data store, and the resulting code is more robust and easier to maintain. In these cases, even though the transformational approach can take more processing power, it's a more effective way to modify data. If a developer is familiar with the functional approach, the resulting code in many cases is easier to understand, and it's easy to find the code that modifies each part of the tree.
 
 The approach where you modify an XML tree in place is more familiar to many DOM programmers, whereas code written using the functional approach might look unfamiliar to a developer who doesn't yet understand that approach. If you have to only make a small modification to a large XML tree, the approach where you modify a tree in place in many cases will take less CPU time.
 
@@ -63,7 +63,7 @@ This example produces the following output:
 
 ## Example: Transform attributes into elements with the functional construction approach
 
-By contrast, a functional approach consists of code to form a new tree, picking and choosing elements and attributes from the source tree, and transforming them as appropriate as they are added to the new tree.
+By contrast, a functional approach consists of code to form a new tree, picking and choosing elements and attributes from the source tree, and transforming them as appropriate as they're added to the new tree.
 
 ```csharp
 XElement root = XElement.Load("Data.xml");

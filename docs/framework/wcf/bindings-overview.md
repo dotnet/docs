@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation Bindings Overview"
+description: Learn about bindings, which specify how to connect to a WCF service, including elements of a binding and how to specify a binding for a service endpoint.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "bindings [WCF], overview"

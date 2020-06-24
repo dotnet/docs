@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle Exceptions in Parallel Loops"
+description: Learn how to handle exceptions in parallel loops in .NET. See an example of how to wrap all exceptions from the loop in a System.AggregateException.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

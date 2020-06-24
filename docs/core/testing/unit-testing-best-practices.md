@@ -19,7 +19,7 @@ By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https:/
 ### Less time performing functional tests
 Functional tests are expensive. They typically involve opening up the application and performing a series of steps that you (or someone else), must follow in order to validate the expected behavior. These steps may not always be known to the tester, which means they will have to reach out to someone more knowledgeable in the area in order to carry out the test. Testing itself could take seconds for trivial changes, or minutes for larger changes. Lastly, this process must be repeated for every change that you make in the system.
 
-Unit tests, on the other hand, take milliseconds, can be run at the press of a button and do not necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
+Unit tests, on the other hand, take milliseconds, can be run at the press of a button, and don't necessarily require any knowledge of the system at large. Whether or not the test passes or fails is up to the test runner, not the individual.
 
 ### Protection against regression
 Regression defects are defects that are introduced when a change is made to the application. It is common for testers to not only test their new feature but also features that existed beforehand in order to verify that previously implemented features still function as expected.
@@ -44,12 +44,18 @@ Writing tests for your code will naturally decouple your code, because it would 
 - **Self-Checking**. The test should be able to automatically detect if it passed or failed without any human interaction.
 - **Timely**. A unit test should not take a disproportionately long time to write compared to the code being tested. If you find testing the code taking a large amount of time compared to writing the code, consider a design that is more testable.
 
+## Code coverage
+
+A high code coverage percentage is often associated with a higher quality of code. However, the measurement itself *cannot* determine the quality of code. Setting an overly ambitious code coverage percentage goal can be counterproductive. Imagine a complex project with thousands of conditional branches, and imagine that you set a goal of 95% code coverage. Currently the project maintains 90% code coverage. The amount of time it takes to account for all of the edge cases in the remaining 5% could be a massive undertaking, and the value proposition quickly diminishes.
+
+A high code coverage percentage is not an indicator of success, nor does it imply high code quality. It just represents the amount of code that is covered by unit tests. For more information, see [unit testing code coverage](unit-testing-code-coverage.md).
+
 ## Let's speak the same language
-The term *mock* is unfortunately very misused when talking about testing. The following defines the most common types of *fakes* when writing unit tests:
+The term *mock* is unfortunately often misused when talking about testing. The following points define the most common types of *fakes* when writing unit tests:
 
-*Fake* - A fake is a generic term which can be used to describe either a stub or a mock object. Whether it is a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
+*Fake* - A fake is a generic term that can be used to describe either a stub or a mock object. Whether it's a stub or a mock depends on the context in which it's used. So in other words, a fake can be a stub or a mock.
 
-*Mock* - A mock object is a fake object in the system that decides whether or not a unit test has passed or failed. A mock starts out as a Fake until it is asserted against.
+*Mock* - A mock object is a fake object in the system that decides whether or not a unit test has passed or failed. A mock starts out as a Fake until it's asserted against.
 
 *Stub* - A stub is a controllable replacement for an existing dependency (or collaborator) in the system. By using a stub, you can test your code without dealing with the dependency directly. By default, a fake starts out as a stub.
 
@@ -64,7 +70,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-This would be an example of stub being referred to as a mock. In this case, it is a stub. You're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also very misleading because again, the order is not a mock.
+This would be an example of stub being referred to as a mock. In this case, it is a stub. You're just passing in the Order as a means to be able to instantiate `Purchase` (the system under test). The name `MockOrder` is also misleading because again, the order is not a mock.
 
 A better approach would be
 
@@ -77,7 +83,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-By renaming the class to `FakeOrder`, you've made the class a lot more generic, the class can be used as a mock or a stub. Whichever is better for the test case. In the above example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was just passed into the `Purchase` class to satisfy the requirements of the constructor.
+By renaming the class to `FakeOrder`, you've made the class a lot more generic, the class can be used as a mock or a stub. Whichever is better for the test case. In the above example, `FakeOrder` is used as a stub. You're not using the `FakeOrder` in any shape or form during the assert. `FakeOrder` was passed into the `Purchase` class to satisfy the requirements of the constructor.
 
 To use it as a Mock, you could do something like this
 
@@ -146,7 +152,7 @@ The input to be used in a unit test should be the simplest possible in order to 
 - Tests become more resilient to future changes in the codebase.
 - Closer to testing behavior over implementation.
 
-Tests that include more information than required to pass the test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests you want to focus on the behavior. Setting extra properties on models or using non-zero values when not required, only detracts from what you are trying to prove.
+Tests that include more information than required to pass the test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests, you want to focus on the behavior. Setting extra properties on models or using non-zero values when not required, only detracts from what you are trying to prove.
 
 #### Bad:
 [!code-csharp[BeforeMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMinimallyPassing)]
@@ -199,7 +205,7 @@ If you require a similar object or state for your tests, prefer a helper method 
 
 - Less confusion when reading the tests since all of the code is visible from within each test.
 - Less chance of setting up too much or too little for the given test.
-- Less chance of sharing state between tests which creates unwanted dependencies between them.
+- Less chance of sharing state between tests, which creates unwanted dependencies between them.
 
 In unit testing frameworks, `Setup` is called before each and every unit test within your test suite. While some may see this as a useful tool, it generally ends up leading to bloated and hard to read tests. Each test will generally have different requirements in order to get the test up and running. Unfortunately, `Setup` forces you to use the exact same requirements for each test.
 
@@ -283,7 +289,7 @@ public void ParseLogLine_ByDefault_ReturnsTrimmedResult()
 With this viewpoint, if you see a private method, find the public method and write your tests against that method. Just because a private method returns the expected result, does not mean the system that eventually calls the private method uses the result correctly.
 
 ### Stub static references
-One of the principles of a unit test is that it must have full control of the system under test. This can be problematic when production code includes calls to static references (e.g. `DateTime.Now`). Consider the following code
+One of the principles of a unit test is that it must have full control of the system under test. This can be problematic when production code includes calls to static references (for example, `DateTime.Now`). Consider the following code
 
 ```csharp
 public int GetDiscountedPrice(int price)

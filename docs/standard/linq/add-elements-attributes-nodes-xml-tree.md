@@ -53,7 +53,7 @@ xmlTree.Add(
     where (int)el > 3
     select el
 );
-// Even though Child9 does not exist in srcTree, the following statement will not
+// Even though Child9 doesn't exist in srcTree, the following statement won't
 // throw an exception, and nothing will be added to xmlTree.
 xmlTree.Add(srcTree.Element("Child9"));
 Console.WriteLine(xmlTree);
@@ -83,8 +83,8 @@ xmlTree.Add( _
     Where CInt(el) > 3 _
     Select el)
 
-' Even though Child9 does not exist in srcTree, the following statement
-' will not throw an exception, and nothing will be added to xmlTree.
+' Even though Child9 doesn't exist in srcTree, the following statement
+' won't throw an exception, and nothing will be added to xmlTree.
 xmlTree.Add(srcTree.Element("Child9"))
 Console.WriteLine(xmlTree)
 ```

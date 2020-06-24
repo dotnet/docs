@@ -5,15 +5,15 @@ Option Strict On
 Imports System.Globalization
 
 Module Example
-   Public Sub Main()
-      Dim value As Double = 1043.62957
-      Dim cultureNames() As String = { "en-US", "en-GB", "ru", "fr" }
-      
-      For Each name In cultureNames
-         Dim nfi As NumberFormatInfo = CultureInfo.CreateSpecificCulture(name).NumberFormat
-         Console.WriteLine("{0,-6} {1}", name + ":", value.ToString("N3", nfi))
-      Next   
-   End Sub
+    Public Sub Main()
+        Dim value As Double = 1043.62957
+        Dim cultureNames() As String = {"en-US", "en-GB", "ru", "fr"}
+
+        For Each name In cultureNames
+            Dim nfi As NumberFormatInfo = CultureInfo.CreateSpecificCulture(name).NumberFormat
+            Console.WriteLine("{0,-6} {1}", name + ":", value.ToString("N3", nfi))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       en-US: 1,043.630

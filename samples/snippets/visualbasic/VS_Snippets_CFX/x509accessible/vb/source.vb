@@ -7,49 +7,49 @@ Imports System.Runtime.Serialization
 Imports ClientCalculator
 
 Namespace BasicAuthentication
-    
+
     Public Class BasicService
-        
-        Shared Sub Main() 
+
+        Shared Sub Main()
             Try
-                
+
                 MessageSecuritWithKerberosAuth.MyService.Run()
             Catch ex As System.Exception
                 Console.WriteLine(ex.Message)
                 'Console.WriteLine(ex.InnerException.Message);
                 Console.ReadLine()
             End Try
-        
+
         End Sub
-        
-        
-        Public Shared Sub Run() 
+
+
+        Public Shared Sub Run()
 
             ' Create the binding.
             Dim binding As New WSHttpBinding()
             binding.Security.Mode = SecurityMode.Transport
             binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic
-            
+
             ' Create the URI for the endpoint.
             Dim httpUri As New Uri("https://localhost:8006/Calculator")
-            
+
             ' Create the service host and add an endpoint.
             Dim myServiceHost As New ServiceHost(GetType(ServiceModel.Calculator), httpUri)
             myServiceHost.AddServiceEndpoint(GetType(ServiceModel.ICalculator), binding, "")
-            
+
             ' Open the service.
             myServiceHost.Open()
             Console.WriteLine("Listening...")
             Console.WriteLine("Press Enter to exit.")
             Console.ReadLine()
-            
+
             ' Close the service. 
             myServiceHost.Close()
 
         End Sub
 
-        Public Shared Sub ClientRun() 
-            
+        Public Shared Sub ClientRun()
+
 
             ' Create the binding.
             Dim myBinding As New WSHttpBinding()
@@ -287,10 +287,10 @@ Namespace SecuredTranserUsingCertificates
 End Namespace 'SecuredTranserUsingCertificates
 
 Namespace SecuredUsingMessageSecurityWithAnonClient
-    
+
     Public Class SecureService
-        
-        Public Shared Sub Run() 
+
+        Public Shared Sub Run()
 
             ' Create the binding. 
             Dim binding As New WSHttpBinding()
@@ -418,10 +418,10 @@ Namespace SecuredUsingMessageSecurityWithUsername
     End Class
 End Namespace 'SecuredUsingMessageSecurityWithUsername
 Namespace SecuredUsingMessageWithCertClient
-    
+
     Public Class MyService
-        
-        Public Shared Sub Run() 
+
+        Public Shared Sub Run()
 
             ' Create the binding.
             Dim binding As New WSHttpBinding()
@@ -479,10 +479,10 @@ End Namespace 'SecuredUsingMessageWithCertClient
 
 
 Namespace SecuredUsingMessageWithWindowsClient
-    
+
     Public Class MyService
-        
-        Public Shared Sub Run() 
+
+        Public Shared Sub Run()
 
             ' Create the binding.
             Dim binding As New NetTcpBinding()
@@ -535,10 +535,10 @@ End Namespace 'SecuredUsingMessageWithWindowsClient
 
 
 Namespace MessageSecuritWithKerberosAuth
-    
+
     Public Class MyService
-        
-        Public Shared Sub Run() 
+
+        Public Shared Sub Run()
 
             ' Create the service host.
             Dim myServiceHost As New ServiceHost(GetType(ServiceModel.Calculator))
@@ -617,10 +617,10 @@ End Namespace 'MessageSecuritWithKerberosAuth
 
 
 Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
-    
+
     Public Class MyService
-        
-        Public Shared Sub Run() 
+
+        Public Shared Sub Run()
 
             ' Create the binding. 
             Dim binding As New WSHttpBinding()
@@ -690,45 +690,45 @@ Namespace SecuredUsingMessageSecurityWithInteroperableCertClient
 End Namespace
 
 Namespace ServiceModel
-    <ServiceContract()>  _
+    <ServiceContract()> _
     Interface ICalculator
-        <OperationContract()>  _
-        Function Add(ByVal a As Double, ByVal b As Double) As Double 
+        <OperationContract()> _
+        Function Add(ByVal a As Double, ByVal b As Double) As Double
     End Interface
-    
-    
-    
+
+
+
     Public Class Calculator
         Implements ICalculator
-        
+
         Public Function Add(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Add
             Return a + b
 
         End Function
     End Class
-    
-    
+
+
     Public Class Utility
-        
-        Public Shared Sub EnableMex(ByRef sh As ServiceHost) 
+
+        Public Shared Sub EnableMex(ByRef sh As ServiceHost)
             Dim sb As New ServiceMetadataBehavior()
             sb.HttpGetEnabled = True
             sb.HttpGetUrl = New Uri("http://localhost:8008/metadata")
             sh.Description.Behaviors.Add(sb)
-        
+
         End Sub
     End Class
 End Namespace 'ServiceModel
 
 Namespace ClientCalculator
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute(ConfigurationName := "ICalculator")>  _
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0"), System.ServiceModel.ServiceContractAttribute(ConfigurationName:="ICalculator")> _
     Public Interface ICalculator
-        
-        <System.ServiceModel.OperationContractAttribute(Action := "http://tempuri.org/ICalculator/Add", ReplyAction := "http://tempuri.org/ICalculator/AddResponse")>  _
-        Function Add(ByVal a As Double, ByVal b As Double) As Double 
+
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/Add", ReplyAction:="http://tempuri.org/ICalculator/AddResponse")> _
+        Function Add(ByVal a As Double, ByVal b As Double) As Double
     End Interface 'ICalculator
-    
-    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")>  _
+
+    <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")> _
     Public Interface ICalculatorChannel
         : Inherits ICalculator, System.ServiceModel.IClientChannel
     End Interface 'ICalculatorChannel
@@ -738,36 +738,36 @@ End Namespace 'ClientCalculator
 Class CalculatorClient
     Inherits System.ServiceModel.ClientBase(Of ICalculator)
     Implements ICalculator
-     
-    Public Sub New() 
-    
+
+    Public Sub New()
+
     End Sub
-    
-    
-    Public Sub New(ByVal endpointConfigurationName As String) 
+
+
+    Public Sub New(ByVal endpointConfigurationName As String)
         MyBase.New(endpointConfigurationName)
-    
+
     End Sub
-    
-    
-    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String) 
+
+
+    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
         MyBase.New(endpointConfigurationName, remoteAddress)
-    
+
     End Sub
-    
-    
-    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress) 
+
+
+    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
         MyBase.New(endpointConfigurationName, remoteAddress)
-    
+
     End Sub
-    
-    
-    Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress) 
+
+
+    Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding, ByVal remoteAddress As System.ServiceModel.EndpointAddress)
         MyBase.New(binding, remoteAddress)
-    
+
     End Sub
-    
-    
+
+
     Public Function Add(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Add
         Return MyBase.Channel.Add(a, b)
 

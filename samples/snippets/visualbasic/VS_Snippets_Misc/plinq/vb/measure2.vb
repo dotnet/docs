@@ -6,7 +6,7 @@ Module Example
         Dim queryToMeasure = From num In source.AsParallel()
                              Where num Mod 3 = 0
                              Select Math.Sqrt(num)
-        
+
         Console.WriteLine("Measuring...")
 
         ' The query does not run until it is enumerated.
@@ -26,4 +26,4 @@ Module Example
     End Sub
 End Module
 ' </Snippet19>
-    
+

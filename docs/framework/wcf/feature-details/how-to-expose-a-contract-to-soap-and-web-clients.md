@@ -1,5 +1,6 @@
 ---
 title: "How to: Expose a Contract to SOAP and Web Clients"
+description: Learn how to make a WFC server endpoint available to both SOAP and non-SOAP clients. By default, endpoints are available only to SOAP clients.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

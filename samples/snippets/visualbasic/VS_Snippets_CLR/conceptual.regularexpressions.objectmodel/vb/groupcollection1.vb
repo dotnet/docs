@@ -5,16 +5,16 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim pattern As String = "\b(\w+)\s(\d{1,2}),\s(\d{4})\b"
-      Dim input As String = "Born: July 28, 1989"
-      Dim match As Match = Regex.Match(input, pattern)
-      If match.Success Then
-         For ctr As Integer = 0 To match.Groups.Count - 1
-            Console.WriteLine("Group {0}: {1}", ctr, match.Groups(ctr).Value)
-         Next      
-      End If   
-   End Sub
+    Public Sub Main()
+        Dim pattern As String = "\b(\w+)\s(\d{1,2}),\s(\d{4})\b"
+        Dim input As String = "Born: July 28, 1989"
+        Dim match As Match = Regex.Match(input, pattern)
+        If match.Success Then
+            For ctr As Integer = 0 To match.Groups.Count - 1
+                Console.WriteLine("Group {0}: {1}", ctr, match.Groups(ctr).Value)
+            Next
+        End If
+    End Sub
 End Module
 ' The example displays the following output:
 '       Group 0: July 28, 1989

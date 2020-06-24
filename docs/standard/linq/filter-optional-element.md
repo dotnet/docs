@@ -10,7 +10,7 @@ ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 
 # How to filter on an optional element (LINQ to XML)
 
-Sometimes you want to filter for an element even though you aren't sure it exists in your XML document. You can write your search so that, even if the particular element doesn't have the child element, you don't trigger a null reference exception by filtering for it.
+Sometimes you want to filter for an element even though you're not sure it exists in your XML document. You can write your search so that, even if the particular element doesn't have the child element, you don't trigger a null reference exception by filtering for it.
 
 ## Example: Search that doesn't trigger an exception when the target element doesn't exist
 

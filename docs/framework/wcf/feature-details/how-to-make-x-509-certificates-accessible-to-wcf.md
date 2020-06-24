@@ -1,5 +1,6 @@
 ---
 title: "How to: Make X.509 Certificates Accessible to WCF"
+description: Learn how to make an X.509 certificate accessible to WCF. Application code must specify the certificate store name and location. There might be other requirements. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

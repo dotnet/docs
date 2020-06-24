@@ -27,10 +27,10 @@ Module Module1
 
                     ' Gets the full path to ensure that relative segments are removed.
                     Dim destinationPath As String = Path.GetFullPath(Path.Combine(extractPath, entry.FullName))
-                    
+
                     ' Ordinal match is safest, case-sensitive volumes can be mounted within volumes that
                     ' are case-insensitive.
-                    If destinationPath.StartsWith(extractPath, StringComparison.Ordinal) Then 
+                    If destinationPath.StartsWith(extractPath, StringComparison.Ordinal) Then
                         entry.ExtractToFile(destinationPath, true)
                     End If
 

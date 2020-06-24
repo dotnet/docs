@@ -538,6 +538,14 @@
       "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
     },
     {
+      "source_path": "docs/core/tutorials/using-on-mac-vs.md",
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio-mac"
+    },
+    {
+      "source_path": "docs/core/tutorials/using-on-mac-vs-full-solution.md",
+      "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-mac"
+    },
+    {
       "source_path": "docs/core/tutorials/using-on-macos.md",
       "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-code"
     },
@@ -1962,6 +1970,86 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md",
       "redirect_url": "/dotnet/standard/linq/modify-elements-attributes-nodes-xml-tree",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/change-namespace-entire-xml-tree",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/maintaining-name-value-pairs.md",
+      "redirect_url": "/dotnet/standard/linq/maintain-name-value-pairs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/performance-chained-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/remove-elements-attributes-nodes-xml-tree",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/atomized-xname-xnamespace-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-annotations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/pre-atomization-xname-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/statically-compiled-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md",
+      "redirect_url": "/dotnet/standard/linq/stream-xml-fragments-access-header-information",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-events.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-events",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/mixed-declarative-imperative-code-bugs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/programming-with-nodes.md",
+      "redirect_url": "/dotnet/standard/linq/program-nodes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md",
+      "redirect_url": "/dotnet/standard/linq/perform-streaming-transform-large-xml-documents",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-read-and-write-an-encoded-document.md",
+      "redirect_url": "/dotnet/standard/linq/read-write-encoded-document",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md",
+      "redirect_url": "/dotnet/standard/linq/use-annotations-transform-linq-xml-trees-xslt-style",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/use-xslt-transform-xml-tree",
       "redirect_document_id": true
     },
     {
@@ -5609,6 +5697,86 @@
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md",
       "redirect_url": "/dotnet/standard/linq/modify-elements-attributes-nodes-xml-tree",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/change-namespace-entire-xml-tree",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/maintaining-name-value-pairs.md",
+      "redirect_url": "/dotnet/standard/linq/maintain-name-value-pairs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/performance-chained-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/remove-elements-attributes-nodes-xml-tree",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/atomized-xname-xnamespace-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-annotations.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-annotations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/pre-atomization-xname-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/statically-compiled-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md",
+      "redirect_url": "/dotnet/standard/linq/stream-xml-fragments-access-header-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-events.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/mixed-declarative-imperative-code-bugs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/programming-with-nodes.md",
+      "redirect_url": "/dotnet/standard/linq/program-nodes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md",
+      "redirect_url": "/dotnet/standard/linq/perform-streaming-transform-large-xml-documents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-read-and-write-an-encoded-document.md",
+      "redirect_url": "/dotnet/standard/linq/read-write-encoded-document",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md",
+      "redirect_url": "/dotnet/standard/linq/use-annotations-transform-linq-xml-trees-xslt-style",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md",
+      "redirect_url": "/dotnet/standard/linq/use-xslt-transform-xml-tree",
       "redirect_document_id": false
     },
     {

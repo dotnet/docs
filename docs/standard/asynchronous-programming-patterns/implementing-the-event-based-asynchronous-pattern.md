@@ -21,7 +21,7 @@ ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
 ---
 # Implementing the Event-based Asynchronous Pattern
 
-If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing [Event-based Asynchronous Pattern Overview](event-based-asynchronous-pattern-overview.md).
+If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern](event-based-asynchronous-pattern-overview.md).
 
 The Event-based Asynchronous Pattern provides a standardized way to package a class that has asynchronous features. If implemented with helper classes like <xref:System.ComponentModel.AsyncOperationManager>, your class will work correctly under any application model, including ASP.NET, Console applications, and Windows Forms applications.
 

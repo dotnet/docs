@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on SLES - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on SLES.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---
@@ -70,10 +70,6 @@ This section provides information on common errors you may get while using the p
 ### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
-
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## Dependencies
 

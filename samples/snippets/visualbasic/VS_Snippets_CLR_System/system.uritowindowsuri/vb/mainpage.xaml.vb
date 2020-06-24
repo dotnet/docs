@@ -12,7 +12,7 @@ Public NotInheritable Class MainPage
     ''' <param name="e">Event data that describes how this page was reached.  The Parameter
     ''' property is typically used to configure the page.</param>
     Protected Overrides Sub OnNavigatedTo(e As Navigation.NavigationEventArgs)
-    
+
     End Sub
     '<snippet2>
     Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)

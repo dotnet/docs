@@ -75,9 +75,9 @@ Module Module1
             db.Transaction = northwindTransaction
 
             Dim prod1 = (From prod In db.Products _
-          Where prod.ProductID = 4).First
+                         Where prod.ProductID = 4).First
             Dim prod2 = (From prod In db.Products _
-          Where prod.ProductID = 5).First
+                         Where prod.ProductID = 5).First
             prod1.UnitsInStock -= 3
             prod2.UnitsInStock -= 5
 
@@ -95,7 +95,7 @@ Module Module1
         northwindCon.Close()
         ' </Snippet4>
     End Sub
-    
+
     Sub other()
         ' <Snippet5>
         Dim db As New Northwind("...\Northwnd.mdf")
@@ -111,6 +111,6 @@ Module Module1
         Next
         ' </Snippet5>
 
-        End Sub
+    End Sub
 
 End Module

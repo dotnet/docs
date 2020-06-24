@@ -34,20 +34,20 @@ Module ParallelTasks
 
 #Region "HelperMethods"
     Sub GetCountForWord(ByVal words As String(), ByVal term As String)
-        Dim findWord = From word In words 
-            Where word.ToUpper().Contains(term.ToUpper()) 
-            Select word
+        Dim findWord = From word In words
+                       Where word.ToUpper().Contains(term.ToUpper())
+                       Select word
 
         Console.WriteLine($"Task 3 -- The word ""{term}"" occurs {findWord.Count()} times.")
     End Sub
 
     Sub GetMostCommonWords(ByVal words As String())
-        Dim frequencyOrder = From word In words 
-            Where word.Length > 6 
-            Group By word
-            Into wordGroup = Group, Count()
-            Order By wordGroup.Count() Descending 
-            Select wordGroup
+        Dim frequencyOrder = From word In words
+                             Where word.Length > 6
+                             Group By word
+                             Into wordGroup = Group, Count()
+                             Order By wordGroup.Count() Descending
+                             Select wordGroup
 
         Dim commonWords = From grp In frequencyOrder
                           Select grp
@@ -62,9 +62,9 @@ Module ParallelTasks
     End Sub
 
     Function GetLongestWord(ByVal words As String()) As String
-        Dim longestWord = (From w In words 
-            Order By w.Length Descending 
-            Select w).First()
+        Dim longestWord = (From w In words
+                           Order By w.Length Descending
+                           Select w).First()
 
         Console.WriteLine($"Task 1 -- The longest word is {longestWord}.")
         Return longestWord
@@ -79,7 +79,7 @@ Module ParallelTasks
         Dim s As String = New WebClient().DownloadString(uri)
 
         ' Separate string into an array of words, removing some common punctuation.
-        Return s.Split(New Char() {" "c, ControlChars.Lf, ","c, "."c, ";"c, ":"c, 
+        Return s.Split(New Char() {" "c, ControlChars.Lf, ","c, "."c, ";"c, ":"c,
         "-"c, "_"c, "/"c}, StringSplitOptions.RemoveEmptyEntries)
     End Function
 #End Region

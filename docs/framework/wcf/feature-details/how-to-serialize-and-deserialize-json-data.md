@@ -1,5 +1,6 @@
 ---
 title: "How to: use DataContractJsonSerializer"
+description: Learn how to serialize .NET type objects into JSON-encoded data and then deserialize such data back into instances of .NET types.
 ms.date: "03/25/2019"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 ---

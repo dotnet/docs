@@ -22,7 +22,7 @@ dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
 
-dotnet-install.ps1 -Help
+Get-Help ./dotnet-install.ps1
 ```
 
 Linux/macOS:
@@ -38,24 +38,47 @@ dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
 dotnet-install.sh --help
 ```
 
+The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
+
 ## Description
 
-The `dotnet-install` scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI and the shared runtime.
+The `dotnet-install` scripts perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI and the shared runtime. There are two scripts:
+
+* A PowerShell script that works on Windows.
+* A bash script that works on Linux/macOS.
+
+### Purpose
+
+ The intended use of the scripts is for Continuous Integration (CI) scenarios, where:
+
+* The SDK needs to be installed without user interaction and without admin rights.
+* The SDK installation doesn't need to persist across multiple CI runs.
+
+  The typical sequence of events:
+  * CI is triggered.
+  * CI installs the SDK using one of these scripts.
+  * CI finishes its work and clears temporary data including the SDK installation.
+
+To set up a development environment or to run apps, use the installers rather than these scripts.
+
+### Recommended version
 
 We recommend that you use the stable version of the scripts:
 
 - Bash (Linux/macOS): <https://dot.net/v1/dotnet-install.sh>
 - PowerShell (Windows): <https://dot.net/v1/dotnet-install.ps1>
 
-The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: one is a PowerShell script that works on Windows, and the other is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems.
+### Script behavior
 
-The installation scripts download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`. By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `-Runtime|--runtime` argument.
+Both scripts have the same behavior. They download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`.
 
-By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument.
+By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `-Runtime|--runtime` argument.
+
+By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument. The script doesn't set the `DOTNET_ROOT` environment variable.
 
 Before running the script, install the required [dependencies](../install/dependencies.md).
 
-You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version.
+You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version number, such as `2.1.0`. If the version isn't specified, the script installs the `latest` version.
 
 The install scripts do not update the registry on Windows. They just download the zipped binaries and copy them to a folder. If you want registry key values to be updated, use the .NET Core installers.
 
@@ -88,9 +111,9 @@ The install scripts do not update the registry on Windows. They just download th
 
   Used as a query string to append to the Azure feed. It allows changing the URL to use non-public blob storage accounts.
 
-- **`-Help|--help`**
+- **`--help`**
 
-  Prints out help for the script.
+  Prints out help for the script. Applies only to bash script. For PowerShell, use `Get-Help ./dotnet-install.ps1`.
 
 - **`-InstallDir|--install-dir <DIRECTORY>`**
 

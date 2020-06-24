@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the ASP.NET Membership Provider"
+description: Learn how the ASP.NET membership provider supports websites that let users create a user name and password for access without having a Windows domain account.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF and ASP.NET"

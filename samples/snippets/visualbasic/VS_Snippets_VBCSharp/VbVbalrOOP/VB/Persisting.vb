@@ -22,7 +22,7 @@ Class Classcb0a091708d54578ad2b3764ccf6167f
 
         ' <snippet77>
         Private TestLoan As New LoanClass.Loan
-        Private Sub Form1_Load(ByVal sender As System.Object, 
+        Private Sub Form1_Load(ByVal sender As System.Object,
             ByVal e As System.EventArgs) Handles MyBase.Load
 
             TextBox1.Text = TestLoan.LoanAmount.ToString
@@ -96,14 +96,14 @@ Class Classcb0a091708d54578ad2b3764ccf6167f
     Class LoanClass
         Class Class78
             ' <snippet78>
-            <Serializable()> 
+            <Serializable()>
             Public Class Loan
                 ' </snippet78>
                 Implements System.ComponentModel.INotifyPropertyChanged
 
                 ' <snippet79>
                 <NonSerialized()>
-                  Public Customer As String
+                Public Customer As String
                 ' </snippet79>
 
                 ' <snippet123>
@@ -126,7 +126,7 @@ Class Classcb0a091708d54578ad2b3764ccf6167f
 
     Class Loans
         ' <snippet121>
-          Public Class Loan
+        Public Class Loan
             Implements System.ComponentModel.INotifyPropertyChanged
 
             Public Property LoanAmount As Double = 10000.0

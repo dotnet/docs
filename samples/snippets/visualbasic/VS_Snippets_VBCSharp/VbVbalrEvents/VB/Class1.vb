@@ -187,7 +187,7 @@ Class Class306ff8ed74dd4b6abd2fe91b17474042
         Class TimerState
             Public Event UpdateTime(ByVal Countdown As Double)
             Public Event Finished()
-            Public Sub StartCountdown(ByVal Duration As Double, 
+            Public Sub StartCountdown(ByVal Duration As Double,
                                       ByVal Increment As Double)
                 Dim Start As Double = DateAndTime.Timer
                 Dim ElapsedTime As Double = 0
@@ -261,7 +261,7 @@ Class Class6965efdc2b254b84945d0e918a7b9417
     Public Event TimeExpired(ByVal Status As String)
     Public Sub HandleTimeExpired(ByVal Status As String)
         ' Perform desired processing for when time has expired.
-        MsgBox("HandleTimeExpired caught the TimeExpired event" & 
+        MsgBox("HandleTimeExpired caught the TimeExpired event" &
                vbCrLf & "Status = " & Status)
     End Sub
     Public Sub SetUpEventHandler()
@@ -393,8 +393,8 @@ Class Classe1c8759f5370430884768c48b73509bf
 
     Class Class1
         Protected WithEvents Button1 As New Button
-        Protected Overridable Sub Button1_Click( 
-            ByVal sender As System.Object, 
+        Protected Overridable Sub Button1_Click(
+            ByVal sender As System.Object,
             ByVal e As System.EventArgs) Handles Button1.Click
         End Sub
     End Class
@@ -402,8 +402,8 @@ Class Classe1c8759f5370430884768c48b73509bf
         Inherits Class1
         ' <snippet32>
         ' INCORRECT
-        Protected Overrides Sub Button1_Click( 
-            ByVal sender As System.Object, 
+        Protected Overrides Sub Button1_Click(
+            ByVal sender As System.Object,
             ByVal e As System.EventArgs) Handles Button1.Click
 
             ' The Handles clause will cause all code
@@ -418,7 +418,7 @@ Class Classecf5d551ab874020af1886dea054a033
     ' How to: Add Events to a Class
 
     ' <snippet33>
-    Public Event PercentDone(ByVal Percent As Single, 
+    Public Event PercentDone(ByVal Percent As Single,
                              ByRef Cancel As Boolean)
     ' </snippet33>
 

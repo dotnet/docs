@@ -7,13 +7,13 @@ Module Module3
     Sub Main()
         ' Create an instance of the class, with 1 as the value of 
         ' the property.
-        Dim lambdaScopeDemoInstance = 
+        Dim lambdaScopeDemoInstance =
             New LambdaScopeDemoClass With {.Prop = 1}
 
         ' Variable aDel will be bound to the nested lambda expression  
         ' returned by the call to functionWithNestedLambda.
         ' The value 2 is sent in for parameter level1.
-        Dim aDel As aDelegate = 
+        Dim aDel As aDelegate =
             lambdaScopeDemoInstance.functionWithNestedLambda(2)
 
         ' Now the returned lambda expression is called, with 4 as the 

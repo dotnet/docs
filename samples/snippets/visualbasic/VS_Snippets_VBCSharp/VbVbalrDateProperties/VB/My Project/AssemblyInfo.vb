@@ -7,19 +7,19 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("VbVbalrDateProperties")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("MS")> 
-<Assembly: AssemblyProduct("VbVbalrDateProperties")> 
-<Assembly: AssemblyCopyright("Copyright © MS 2005")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("VbVbalrDateProperties")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("MS")>
+<Assembly: AssemblyProduct("VbVbalrDateProperties")>
+<Assembly: AssemblyCopyright("Copyright © MS 2005")>
+<Assembly: AssemblyTrademark("")>
 
-<Assembly: CLSCompliant(True)> 
+<Assembly: CLSCompliant(True)>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("80f10c3b-58bd-4cd7-9b02-53ba0cdabcaa")> 
+<Assembly: Guid("80f10c3b-58bd-4cd7-9b02-53ba0cdabcaa")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -32,5 +32,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

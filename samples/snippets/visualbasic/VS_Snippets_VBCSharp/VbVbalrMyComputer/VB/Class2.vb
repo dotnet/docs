@@ -7,7 +7,7 @@ Option Strict On
 
 Namespace Keyboard
     Class Class0746a247f57e45fc93b7de462bef9206
-   
+
         Public Sub Method23()
             ' 0746a247-f57e-45fc-93b7-de462bef9206
             ' My.Computer.Keyboard.AltKeyDown Property
@@ -18,7 +18,7 @@ Namespace Keyboard
                 MsgBox("ALT key up")
             End If
             ' </snippet23>
-      
+
             ' 3a08efec-d444-4200-9341-fff79474d0cc
             ' My.Computer.Keyboard.ScrollLock Property
             ' <snippet31>
@@ -121,7 +121,7 @@ Namespace Keyboard
         End Sub
 
     End Class
- 
+
 End Namespace
 
 ''''''''''''''''
@@ -136,7 +136,7 @@ Namespace Ports
         ' <snippet27>
         Sub DialModem()
             ' Dial a number via an attached modem on COM1.
-            Using com1 As IO.Ports.SerialPort = 
+            Using com1 As IO.Ports.SerialPort =
                     My.Computer.Ports.OpenSerialPort("COM1", 9600)
                 ' <snippet29>
                 com1.DtrEnable = True
@@ -151,7 +151,7 @@ Namespace Ports
 
         Public Sub Method28()
             ' <snippet28>
-            Using com1 As IO.Ports.SerialPort = 
+            Using com1 As IO.Ports.SerialPort =
                     My.Computer.Ports.OpenSerialPort("COM1", 9600)
             End Using
             ' </snippet28>
@@ -172,7 +172,7 @@ Namespace Ports
         ' <snippet33>
         Sub SendSerialData(ByVal data As String)
             ' Send strings to a serial port.
-            Using com1 As IO.Ports.SerialPort = 
+            Using com1 As IO.Ports.SerialPort =
                     My.Computer.Ports.OpenSerialPort("COM1")
                 com1.WriteLine(data)
             End Using
@@ -184,71 +184,71 @@ Namespace Ports
         ' 8371ce2c-e1c7-476b-a86d-9afc2614b6b7
         ' How to: Receive Strings From Serial Ports in Visual Basic
 
-    ' <snippet37>
-    Function ReceiveSerialData() As String
-        ' Receive strings from a serial port.
-        ' <snippet38>
-        Dim returnStr As String = ""
-        ' </snippet38>
+        ' <snippet37>
+        Function ReceiveSerialData() As String
+            ' Receive strings from a serial port.
+            ' <snippet38>
+            Dim returnStr As String = ""
+            ' </snippet38>
 
-        Dim com1 As IO.Ports.SerialPort = Nothing
-        Try
-            com1 = My.Computer.Ports.OpenSerialPort("COM1")
-            com1.ReadTimeout = 10000
+            Dim com1 As IO.Ports.SerialPort = Nothing
+            Try
+                com1 = My.Computer.Ports.OpenSerialPort("COM1")
+                com1.ReadTimeout = 10000
+                Do
+                    ' <snippet41>
+                    Dim Incoming As String = com1.ReadLine()
+                    ' </snippet41>
+                    If Incoming Is Nothing Then
+                        Exit Do
+                        ' <snippet43>
+                    Else
+                        returnStr &= Incoming & vbCrLf
+                        ' </snippet43>
+                    End If
+                Loop
+            Catch ex As TimeoutException
+                returnStr = "Error: Serial Port read timed out."
+            Finally
+                If com1 IsNot Nothing Then com1.Close()
+            End Try
+
+            ' <snippet44>
+            Return returnStr
+            ' </snippet44>
+        End Function
+        ' </snippet37>
+
+        Public Sub Method39()
+            Dim returnStr As String
+
             Do
-                ' <snippet41>
-                Dim Incoming As String = com1.ReadLine()
-                ' </snippet41>
+                Dim Incoming As String = ""
+                ' <snippet42>
                 If Incoming Is Nothing Then
                     Exit Do
-                    ' <snippet43>
-                Else
-                    returnStr &= Incoming & vbCrLf
-                    ' </snippet43>
                 End If
+                ' </snippet42>
             Loop
-        Catch ex As TimeoutException
-            returnStr = "Error: Serial Port read timed out."
-        Finally
-            If com1 IsNot Nothing Then com1.Close()
-        End Try
 
-        ' <snippet44>
-        Return returnStr
-        ' </snippet44>
-    End Function
-    ' </snippet37>
+            ' <snippet39>
+            Dim com1 As IO.Ports.SerialPort = Nothing
+            Try
+                com1 = My.Computer.Ports.OpenSerialPort("COM1")
+                com1.ReadTimeout = 10000
 
-    Public Sub Method39()
-        Dim returnStr As String
+            Catch ex As TimeoutException
+                returnStr = "Error: Serial Port read timed out."
+            Finally
+                If com1 IsNot Nothing Then com1.Close()
+            End Try
+            ' </snippet39>
 
-        Do
-            Dim Incoming As String = ""
-            ' <snippet42>
-            If Incoming Is Nothing Then
-                Exit Do
-            End If
-            ' </snippet42>
-        Loop
-
-        ' <snippet39>
-        Dim com1 As IO.Ports.SerialPort = Nothing
-        Try
-            com1 = My.Computer.Ports.OpenSerialPort("COM1")
-            com1.ReadTimeout = 10000
-
-        Catch ex As TimeoutException
-            returnStr = "Error: Serial Port read timed out."
-        Finally
-            If com1 IsNot Nothing Then com1.Close()
-        End Try
-        ' </snippet39>
-
-        ' <snippet40>
-        Do
-        Loop
-        ' </snippet40>
-    End Sub
+            ' <snippet40>
+            Do
+            Loop
+            ' </snippet40>
+        End Sub
 
     End Class
 
@@ -291,10 +291,10 @@ Namespace Mouse
             If My.Computer.Mouse.WheelExists Then
                 Dim lines As Integer = My.Computer.Mouse.WheelScrollLines
                 If lines > 0 Then
-                    MsgBox("Application scrolls " & 
+                    MsgBox("Application scrolls " &
                         lines & " line(s) for each wheel turn.")
                 Else
-                    MsgBox("Application scrolls " & 
+                    MsgBox("Application scrolls " &
                         (-lines) & " page(s) for each wheel turn.")
                 End If
             Else

@@ -10,7 +10,7 @@ ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
 
 # WordprocessingML document with styles (LINQ to XML)
 
-This article presents a WordprocessingML document that's more complicated than the one in [The XML shape of WordprocessingML documents](xml-shape-wordprocessingml-documents.md); specifically, it presents a document whose paragraphs are formatted with styles.
+This article presents a WordprocessingML document that is more complicated than the one in [The XML shape of WordprocessingML documents](xml-shape-wordprocessingml-documents.md); specifically, it presents a document whose paragraphs are formatted with styles.
 
 To understand styles it's helpful to know something about document structure. A WordprocessingML document is stored in a *package* that comprises *parts*. Specifically, the term *package* corresponds to a ZIP archive and the term *part* corresponds to a file stored within the ZIP. If a document contains paragraphs that are formatted with styles, there will be a document part that contains paragraphs that have styles applied to them, and a style part that defines the styles referenced in the document part.
 

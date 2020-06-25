@@ -443,4 +443,4 @@ The next article in this tutorial shows how to find all the text in a Word docum
 
 ## See also
 
-- [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents)
+- [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents.md)

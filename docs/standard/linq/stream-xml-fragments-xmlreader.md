@@ -20,7 +20,7 @@ If you want to create a partial tree, you can instantiate an <xref:System.Xml.Xm
 
 The article [How to stream XML fragments with access to header information](stream-xml-fragments-access-header-information.md) contains information on streaming a more complex document.
 
-The article [How to do streaming transform of large XML documents](do-streaming-transform-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.
+The article [How to perform streaming transform of large XML documents](perform-streaming-transform-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.
 
 ## Example: Create a custom axis method
 
@@ -197,4 +197,4 @@ The technique used in this example maintains a small memory footprint even for m
 
 ## See also
 
-- [Parse XML](parse-string)
+- [Parse XML](parse-string.md)

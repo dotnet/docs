@@ -14,7 +14,7 @@ This article shows how to use <xref:System.Xml.XPath.Extensions.XPathSelectEleme
 
 ## Example: Use two methods to find sibling elements that precede an element
 
-The following example finds the `FullAddress` element in XML document [Sample XML file: Customers and orders](sample-xml-file-customers-orders), and retrieves the preceding sibling elements in two different ways. It then compares the results and finds them identical.
+The following example finds the `FullAddress` element in XML document [Sample XML file: Customers and orders](sample-xml-file-customers-orders.md), and retrieves the preceding sibling elements in two different ways. It then compares the results and finds them identical.
 
 > [!NOTE]
 > Both methods provide results that are in document order.

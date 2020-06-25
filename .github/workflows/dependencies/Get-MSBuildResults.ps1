@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.1
+    Version:        1.2
     Author:         adegeo@microsoft.com
-    Creation Date:  06/17/2020
-    Purpose/Change: Update to GitHub actions and new framework.
+    Creation Date:  06/24/2020
+    Purpose/Change: Fix logging for non build problems (no proj/sln etc)
 #>
 
 [CmdletBinding()]
@@ -123,19 +123,21 @@ foreach ($item in $workingSet) {
 
         # No project found
         elseif ([int]$data[0] -eq 1) {
-            New-Result $data[1] "" 1 "No project found"
+            New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+
             $thisExitCode = 1;
         }
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "Too many projects found"
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
+
             $thisExitCode = 2;
         }
 
         # Solution found, but no project
         elseif ([int]$data[0] -eq 3) {
-            New-Result $data[1] $data[2] 2 "Top-level solution found, but no project"
+            New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code."
             $thisExitCode = 3;
         }
     }
@@ -184,15 +186,18 @@ $transformedItems = $resultItems | ForEach-Object { New-Object ResultItem -Prope
 foreach ($item in $transformedItems) {
     $list = @()
 
-    # No project found OR 
+    # Clean
     if ($item.ExitCode -eq 0) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
     }
+    # No project found
+    # Too many projects found
+    # Solution found, but no project
     elseif ($item.ExitCode -ne 4) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
-    elseif ($item.ExitCode -ne 0) {
+    else {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `

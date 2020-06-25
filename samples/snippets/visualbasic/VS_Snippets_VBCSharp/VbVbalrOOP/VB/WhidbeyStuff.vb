@@ -94,7 +94,7 @@
         ' Demonstrate how the Using statement calls the Dispose method.
         Using AnObject As New ThisClass(6)
             ' Place statements here that use the object.
-            MsgBox("The value of ThisProperty after being initialized " & 
+            MsgBox("The value of ThisProperty after being initialized " &
             " by the constructor is " & AnObject.ThisProperty & ".")
         End Using
 
@@ -155,12 +155,12 @@
         Private disposed As Boolean = False
         Public Sub CheckIfDisposed()
             If Me.disposed Then
-                Throw New ObjectDisposedException(Me.GetType().ToString, 
+                Throw New ObjectDisposedException(Me.GetType().ToString,
                 "This object has been disposed.")
             End If
         End Sub
 
-        Protected Overridable Overloads Sub Dispose( 
+        Protected Overridable Overloads Sub Dispose(
             ByVal disposing As Boolean)
 
             MsgBox("ThisClass is shutting down with the Sub Dispose overload.")

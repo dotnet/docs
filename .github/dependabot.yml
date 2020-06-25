@@ -5,339 +5,339 @@ updates:
   directory: "/samples/snippets/csharp/pipelines" # Pipes.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/xunit-test" # xunit-test.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/new-in-6" # new-in-6.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/standard/assembly/snippets/inspect-contents-using-metadataloadcontext" # AssemblySnippets.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/csharp/language-reference/operators/snippets" # operators.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/safe-efficient-code/benchmark" # benchmark.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/getting-started/console-webapiclient" # webapiclient.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SemanticQuickStart" # SemanticQuickStart.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/MovieRecommendation/csharp" # MovieRecommendation.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/TransferLearningTF/csharp" # TransferLearningTF.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/TaxiFarePrediction/csharp" # TaxiFarePrediction.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/GitHubIssueClassification/csharp" # GitHubIssueClassification.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/TextClassificationTF/csharp" # TextClassificationTF.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/IrisFlowerClustering/csharp" # IrisFlowerClustering.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/SentimentAnalysis/csharp" # SentimentAnalysis.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/machine-learning/ProductSalesAnomalyDetection/csharp" # ProductSalesAnomalyDetection.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished" # IssuePRreport.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start" # IssuePRreport.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BatchingSample" # BatchingSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/AggregateFunctionSample" # AggregateFunctionSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/SqliteProviderSample" # SqliteProviderSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/InteropSample" # InteropSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/InMemorySample" # InMemorySample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DateAndTimeSample" # DateAndTimeSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ScalarFunctionSample" # ScalarFunctionSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BulkInsertSample" # BulkInsertSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/RegularExpressionSample" # RegularExpressionSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/AsyncSample" # AsyncSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/EncryptionSample" # EncryptionSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DirtyReadSample" # DirtyReadSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/CollationSample" # CollationSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DapperSample" # DapperSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ExtensionsSample" # ExtensionsSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/SystemLibrarySample" # SystemLibrarySample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/StreamingSample" # StreamingSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ResultMetadataSample" # ResultMetadataSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BackupSample" # BackupSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/HelloWorldSample" # HelloWorldSample.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS" # TransformationCS.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS" # ConstructionCS.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker" # SyntaxWalker.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree" # HelloSyntaxTree.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/getting_started/ClassLibraryProjects/StringLibraryTest" # StringLibraryTest.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibraryTest" # StringLibraryTest.vbproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTest" # StringLibraryTest.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-mstest/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-best-practices/csharp/before" # unit-testing-best-practices-before.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-best-practices/csharp/after" # unit-testing-best-practices-after.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-nunit/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-dotnet-test/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-mstest/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/using-on-mac-vs-full-solution/csharp/TestLibrary" # TestLibrary.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/XcopyablePlugin" # XcopyablePlugin.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/FrenchPlugin" # FrenchPlugin.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/JsonPlugin" # JsonPlugin.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/OldJsonPlugin" # OldJsonPlugin.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/UVPlugin" # UVPlugin.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_cancellationwinforms/cs/cancellationwinforms" # cancellationwinforms.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader.Tests" # SimpleFeedReader.Tests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader" # SimpleFeedReader.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader.Tests" # SimpleFeedReader.Tests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader" # SimpleFeedReader.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test" # MakeConst.Test.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst" # MakeConst.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" # cancellationwinforms.vbproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests" # NewTypesTests.csproj
   schedule:
     interval: daily
-  open-pull-request-limit: 10
+  open-pull-requests-limit: 10

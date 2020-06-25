@@ -3,7 +3,7 @@ title: Sentiment analysis with .NET for Apache Spark and ML.NET tutorial
 description: In this tutorial, you learn how to use ML.NET with .NET for Apache Spark for sentiment analysis.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 03/25/2019
+ms.date: 06/25/2020
 ms.topic: tutorial
 ---
 
@@ -19,6 +19,8 @@ In this tutorial, you learn how to:
 > * Create a .NET for Apache Spark console app.
 > * Write and implement a user-defined function.
 > * Run a .NET for Apache Spark console app.
+
+[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

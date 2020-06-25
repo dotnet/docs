@@ -1,7 +1,7 @@
 ---
 title: Submit a .NET for Apache Spark job to Databricks
 description: Learn how to submit a .NET for Apache Spark job to Databricks using spark-submit and Set Jar.
-ms.date: 05/11/2020
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -9,6 +9,8 @@ ms.custom: mvc,how-to
 # Submit a .NET for Apache Spark job to Databricks
 
 You can run your .NET for Apache Spark jobs on Databricks clusters, but it is not available out-of-the-box. There are two ways to deploy your .NET for Apache Spark job to Databricks: `spark-submit` and Set Jar.
+
+[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
 
 ## Deploy using spark-submit
 

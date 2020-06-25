@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Windows
 description: Learn how to build your .NET for Apache Spark application on Windows.
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: how-to
 ---
@@ -9,6 +9,8 @@ ms.custom: how-to
 # Learn how to build your .NET for Apache Spark application on Windows
 
 This article teaches you how to build your .NET for Apache Spark applications on Windows.
+
+[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

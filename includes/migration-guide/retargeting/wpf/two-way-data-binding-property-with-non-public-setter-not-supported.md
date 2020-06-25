@@ -17,4 +17,3 @@ The app should be updated to either use one-way binding, or expose the property'
 #### Affected APIs
 
 - <xref:System.Windows.Data.BindingMode.TwoWay?displayProperty=fullNameWithType>
-

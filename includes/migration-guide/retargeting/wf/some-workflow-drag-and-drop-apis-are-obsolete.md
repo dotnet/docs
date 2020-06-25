@@ -20,4 +20,3 @@ New <xref:System.Activities.Presentation.DragDropHelper?displayProperty=fullName
 - <xref:System.Activities.Presentation.DragDropHelper.GetCompositeView(System.Windows.DragEventArgs)?displayProperty=fullNameWithType>
 - <xref:System.Activities.Presentation.DragDropHelper.GetDraggedModelItem(System.Windows.DragEventArgs)?displayProperty=fullNameWithType>
 - <xref:System.Activities.Presentation.DragDropHelper.GetDroppedObject(System.Windows.DependencyObject,System.Windows.DragEventArgs,System.Activities.Presentation.EditingContext)?displayProperty=fullNameWithType>
-

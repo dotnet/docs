@@ -17,4 +17,3 @@ This should have no negative impact. However, you can restore the previous behav
 #### Affected APIs
 
 - <xref:System.Windows.Controls.TextBox.Text?displayProperty=fullNameWithType>
-

@@ -39,4 +39,3 @@ If necessary, this break can be avoided by targeting the .NET Framework 4.5.2 or
 - <xref:System.Xml.XmlWriter.WriteSurrogateCharEntity(System.Char,System.Char)?displayProperty=fullNameWithType>
 - <xref:System.Xml.XmlWriter.WriteSurrogateCharEntityAsync(System.Char,System.Char)?displayProperty=fullNameWithType>
 - <xref:System.Xml.XmlWriter.WriteValue(System.String)?displayProperty=fullNameWithType>
-

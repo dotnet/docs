@@ -8,9 +8,7 @@ In WPF applications using [non-adorner based text selection](https://github.com/
 
 Once non-adorner based text selection is enabled, you can use the <xref:System.Windows.Controls.PasswordBox.SelectionTextBrush?displayProperty=fullNameWithType> and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush> property to change the appearance of the selected text. This can be achieved using XAML:
 
-<pre><code class="lang-xaml">&lt;TextBox SelectionBrush=&quot;Red&quot; SelectionTextBrush=&quot;White&quot;  SelectionOpacity=&quot;0.5&quot;&#13;&#10;Foreground=&quot;Blue&quot; CaretBrush=&quot;Blue&quot;&gt;&#13;&#10;This is some text.&#13;&#10;&lt;/TextBox&gt;&#13;&#10;`</pre>
-
-
+<pre><code class="lang-xaml">&lt;TextBox SelectionBrush=&quot;Red&quot; SelectionTextBrush=&quot;White&quot;  SelectionOpacity=&quot;0.5&quot;&#13;&#10;Foreground=&quot;Blue&quot; CaretBrush=&quot;Blue&quot;&gt;&#13;&#10;This is some text.&#13;&#10;&lt;/TextBox&gt;&#13;&#10;</code></pre>
 
 | Name    | Value       |
 |:--------|:------------|
@@ -24,4 +22,3 @@ Once non-adorner based text selection is enabled, you can use the <xref:System.W
 - <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush?displayProperty=fullNameWithType>
 - [System.Windows.Controls.TextBox](xref:System.Windows.Controls.TextBox)
 - [System.Windows.Controls.PasswordBox](xref:System.Windows.Controls.PasswordBox)
-

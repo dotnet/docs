@@ -8,13 +8,19 @@ To support debugging with Visual Studio, the Workflow runtime generates a checks
 
 If your code is unable to load workflow instances due to a checksum failure, try setting the `AppContext` switch &quot;Switch.System.Activities.UseMD5ForWFDebugger&quot; to true.In code:
 
-<pre><code class="lang-csharp">System.AppContext.SetSwitch(&quot;Switch.System.Activities.UseMD5ForWFDebugger&quot;, true);&#13;&#10;`</pre>
+```csharp
+System.AppContext.SetSwitch("Switch.System.Activities.UseMD5ForWFDebugger", true);
+```
 
 Or in configuration:
 
-<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Activities.UseMD5ForWFDebugger=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;`</pre>
-
-
+```xml
+<configuration>
+  <runtime>
+    <AppContextSwitchOverrides value="Switch.System.Activities.UseMD5ForWFDebugger=true" />
+  </runtime>
+</configuration>
+```
 
 | Name    | Value       |
 |:--------|:------------|

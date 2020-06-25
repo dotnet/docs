@@ -10,6 +10,8 @@ ms.date: 10/15/2019
 
 [Apache Spark](what-is-spark.md) is a general-purpose distributed processing engine for analytics over large data sets - typically terabytes or petabytes of data. With .NET for Apache Spark, the free, open-source, and cross-platform .NET Support for the popular open-source big data analytics framework, you can now add the power of Apache Spark to your big data applications using languages you already know.
 
+[!INCLUDE [preview-note](../../includes/spark-preview-note.md)]
+
 ## Why choose .NET for Apache Spark?
 
 .NET for Apache Spark empowers developers with .NET experience or code bases to participate in the world of big data analytics. .NET for Apache Spark provides high performance APIs for using Spark from C# and F#. With C# and F#, you can access:

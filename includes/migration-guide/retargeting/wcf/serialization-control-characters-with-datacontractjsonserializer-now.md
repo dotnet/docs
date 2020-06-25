@@ -8,14 +8,16 @@ In .NET Framework 4.6.2 and earlier versions, the <xref:System.Runtime.Serializa
 
 For apps that target the .NET Framework 4.7, this feature is enabled by default. If this behavior is not desirable, you can opt out of this feature by adding the following line to the `<runtime>` section of the app.config or web.config file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Runtime.Serialization.DoNotUseECMAScriptV6EscapeControlCharacter=false&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
-
-
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.Runtime.Serialization.DoNotUseECMAScriptV6EscapeControlCharacter=false" />
+</runtime>
+```
 
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.7       |
+| Version | 4.7         |
 | Type    | Retargeting |
 
 #### Affected APIs
@@ -23,4 +25,3 @@ For apps that target the .NET Framework 4.7, this feature is enabled by default.
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.IO.Stream,System.Object)?displayProperty=fullNameWithType>
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)?displayProperty=fullNameWithType>
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlWriter,System.Object)?displayProperty=fullNameWithType>
-

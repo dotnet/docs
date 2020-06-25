@@ -8,13 +8,15 @@ Beginning in the .NET Framework 4.6.1, WCF binding that uses the TransportWithMe
 
 Because this is an opt-in feature, it should not affect the behavior of existing apps.<br/>To control whether the new behavior is used or not, use the following configuration setting:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.ServiceModel.AllowUnsignedToHeader=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
-
-
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.ServiceModel.AllowUnsignedToHeader=true" />
+</runtime>
+```
 
 | Name    | Value       |
 |:--------|:------------|
-| Scope   | Transparent       |
+| Scope   | Transparent |
 | Version | 4.6.1       |
 | Type    | Retargeting |
 
@@ -24,4 +26,3 @@ Because this is an opt-in feature, it should not affect the behavior of existing
 - <xref:System.ServiceModel.BasicHttpsSecurityMode.TransportWithMessageCredential?displayProperty=fullNameWithType>
 - <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential?displayProperty=fullNameWithType>
 - <xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential?displayProperty=fullNameWithType>
-

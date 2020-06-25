@@ -12,13 +12,15 @@ There are two new context switch values to control whether SHA1 (insecure) or SH
 - Switch.System.Security.Cryptography.Pkcs.UseInsecureHashAlgorithms
 For applications that target the .NET Framework 4.7.1 and later versions, if the use of SHA256 is undesirable, you can restore the default to SHA1 by adding the following configuration switch to the [runtime](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app config file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.Security.Cryptography.Xml.UseInsecureHashAlgorithms=true;Switch.System.Security.Cryptography.Pkcs.UseInsecureHashAlgorithms=true&quot; /&gt;&#13;&#10;`</pre>
+```xml
+<AppContextSwitchOverrides value="Switch.System.Security.Cryptography.Xml.UseInsecureHashAlgorithms=true;Switch.System.Security.Cryptography.Pkcs.UseInsecureHashAlgorithms=true" />
+```
 
 For applications that target the .NET Framework 4.7 and earlier versions, you can opt into this change by adding the following configuration switch to the [runtime](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app config file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.Security.Cryptography.Xml.UseInsecureHashAlgorithms=false;Switch.System.Security.Cryptography.Pkcs.UseInsecureHashAlgorithms=false&quot; /&gt;&#13;&#10;`</pre>
-
-
+```xml
+<AppContextSwitchOverrides value="Switch.System.Security.Cryptography.Xml.UseInsecureHashAlgorithms=false;Switch.System.Security.Cryptography.Pkcs.UseInsecureHashAlgorithms=false" />
+```
 
 | Name    | Value       |
 |:--------|:------------|
@@ -31,4 +33,3 @@ For applications that target the .NET Framework 4.7 and earlier versions, you ca
 - <xref:System.Security.Cryptography.Pkcs.CmsSigner?displayProperty=fullNameWithType>
 - <xref:System.Security.Cryptography.Xml.SignedXml?displayProperty=fullNameWithType>
 - <xref:System.Security.Cryptography.Xml.Reference?displayProperty=fullNameWithType>
-

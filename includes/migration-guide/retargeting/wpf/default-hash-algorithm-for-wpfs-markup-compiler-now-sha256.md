@@ -14,6 +14,6 @@ A developer who wants to utilize SHA256 hashing while targeting a framework vers
 
 | Name    | Value       |
 |:--------|:------------|
-| Scope   | Transparent       |
+| Scope   | Transparent |
 | Version | 4.7.2       |
 | Type    | Retargeting |

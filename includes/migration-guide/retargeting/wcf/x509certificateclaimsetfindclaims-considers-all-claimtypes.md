@@ -6,7 +6,7 @@ In apps that target the .NET Framework 4.6.1, if an X509 claim set is initialize
 
 #### Suggestion
 
-This change only affects applications targeting the .NET Framework 4.6.1. This change may be disabled (or enabled if targetting pre-4.6.1) with the [DisableMultipleDNSEntries](~/docs/framework/migration-guide/mitigation-x509certificateclaimset-findclaims-method.md#mitigation) compatibility switch.
+This change only affects applications targeting the .NET Framework 4.6.1. This change may be disabled (or enabled if targeting pre-4.6.1) with the [DisableMultipleDNSEntries](~/docs/framework/migration-guide/mitigation-x509certificateclaimset-findclaims-method.md#mitigation) compatibility switch.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -17,4 +17,3 @@ This change only affects applications targeting the .NET Framework 4.6.1. This c
 #### Affected APIs
 
 - <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String,System.String)?displayProperty=fullNameWithType>
-

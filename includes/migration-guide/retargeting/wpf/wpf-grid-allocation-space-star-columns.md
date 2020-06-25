@@ -30,5 +30,5 @@ The value `true` selects the old algorithm, `false` selects the new algorithm.
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.7       |
+| Version | 4.7         |
 | Type    | Retargeting |

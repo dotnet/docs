@@ -39,7 +39,7 @@ Applications calling network I/O APIs such as <xref:System.IO.Stream.Read(System
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.7       |
+| Version | 4.7         |
 | Type    | Retargeting |
 
 #### Affected APIs

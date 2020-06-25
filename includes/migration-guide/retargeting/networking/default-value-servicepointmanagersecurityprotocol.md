@@ -19,7 +19,7 @@ If this change is undesirable, you can opt out of it by adding a configuration s
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.7       |
+| Version | 4.7         |
 | Type    | Retargeting |
 
 #### Affected APIs

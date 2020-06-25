@@ -15,7 +15,7 @@ Developers who wish to revert to getting <xref:System.NullReferenceException?dis
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.7       |
+| Version | 4.7         |
 | Type    | Retargeting |
 
 #### Affected APIs

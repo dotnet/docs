@@ -18,6 +18,7 @@ This article outlines changes that affect compatibility and the way in which the
 The following sections describe the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
 
 > [!NOTE]
+>
 > - In addition to serving as a guide to how changes to .NET libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
 > - For information about the compatibility categories, for example, forward and backwards compatibility, see [Compatibility](categories.md).
 

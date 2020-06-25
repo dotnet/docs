@@ -11,7 +11,7 @@ ms.custom: mvc,how-to
 
 This article teaches you how to build your .NET for Apache Spark applications on Ubuntu.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

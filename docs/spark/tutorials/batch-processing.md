@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 > * Read data into a DataFrame and prepare it for analysis
 > * Process the data using Spark SQL
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

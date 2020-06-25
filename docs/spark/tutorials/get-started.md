@@ -19,7 +19,7 @@ In this tutorial, you learn how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prepare your environment
 

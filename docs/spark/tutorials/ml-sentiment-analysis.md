@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > * Write and implement a user-defined function.
 > * Run a .NET for Apache Spark console app.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

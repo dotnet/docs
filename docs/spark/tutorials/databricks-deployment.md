@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > - Create a Spark job and Spark cluster.
 > - Run your app on the Spark cluster.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

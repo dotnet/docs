@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 This how-to provides the steps to debug your .NET for Apache Spark application on Windows.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Debug your application
 

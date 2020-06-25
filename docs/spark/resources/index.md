@@ -5,8 +5,7 @@ ms.date: 06/25/2020
 ---
 # .NET for Apache Spark resources
 
-> [!NOTE]
-> This topic refers to .NET for Apache Spark, which is currently in preview.
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 The following [.NET for Apache Spark](../index.yml) resources may be helpful for accessing Apache Spark in your .NET applications:
 

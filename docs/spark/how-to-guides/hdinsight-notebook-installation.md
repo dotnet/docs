@@ -17,7 +17,7 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 > [!NOTE]
 > This feature is *experimental* and is not supported by the HDInsight Spark team.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

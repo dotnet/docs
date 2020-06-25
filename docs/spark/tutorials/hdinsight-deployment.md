@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 > * Create and run an HDInsight script action.
 > * Run a .NET for Apache Spark app on an HDInsight cluster.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

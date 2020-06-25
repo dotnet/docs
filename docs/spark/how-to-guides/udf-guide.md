@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 In this article, you learn how to use user-defined functions (UDF) in .NET for Apache Spark. [UDFs)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) are a Spark feature that allow you to use custom functions to extend the system's built-in functionality. UDFs transform values from a single row within a table to produce a single corresponding output value per row based on the logic defined in the UDF.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Define UDFs
 

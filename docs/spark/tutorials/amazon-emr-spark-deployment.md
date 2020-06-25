@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > * Deploy your app to Amazon EMR Spark
 > * Run your app
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

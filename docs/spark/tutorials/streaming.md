@@ -19,7 +19,7 @@ In this tutorial, you learn how to:
 > * Use netcat to create a data stream
 > * Use user-defined functions and SparkSQL to analyze streaming data
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 

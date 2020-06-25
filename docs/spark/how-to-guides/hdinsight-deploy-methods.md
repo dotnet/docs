@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 There are two ways to deploy your .NET for Apache Spark job to HDInsight: `spark-submit` and Apache Livy.
 
-[!INCLUDE [spark-preview-note](../../includes/spark-preview-note.md)]
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Deploy using spark-submit
 

@@ -10,7 +10,7 @@ Public Class Form1
     ' f188dc05-2c75-41b6-bb68-122d1c3110a2
     ' My.WebServices Object
     ' <snippet1>
-    Function ConvertFromFahrenheitToCelsius( 
+    Function ConvertFromFahrenheitToCelsius(
         ByVal dFahrenheit As Double) As Double
 
         Return My.WebServices.TemperatureConverter.FahrenheitToCelsius(dFahrenheit)

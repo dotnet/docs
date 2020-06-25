@@ -13,15 +13,13 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests in the [dotnet/runtime](https://github.com/dotnet/runtime) GitHub repository that modify the behavior of existing APIs.
-
-> [!NOTE]
-> For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
+This article outlines changes that affect compatibility and the way in which the .NET team evaluates each type of change. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests that modify the behavior of [existing .NET APIs](https://github.com/dotnet/runtime).
 
 The following sections describe the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
 
 > [!NOTE]
-> In addition to serving as a guide to how changes to .NET Core libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
+> - In addition to serving as a guide to how changes to .NET libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
+> - For information about the compatibility categories, for example, forward and backwards compatibility, see [Compatibility](categories.md).
 
 ## Modifications to the public contract
 

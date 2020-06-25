@@ -16,4 +16,4 @@ Ensure that your code provides exception handling when deserializing a <xref:Sys
 
 #### Affected APIs
 
--<xref:System.Web.Mail.MailMessage?displayProperty=nameWithType></li></ul>|
+-<xref:System.Web.Mail.MailMessage?displayProperty=fullNameWithType></li></ul>|

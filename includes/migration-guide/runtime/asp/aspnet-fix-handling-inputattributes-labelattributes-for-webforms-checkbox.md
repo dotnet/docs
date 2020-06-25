@@ -2,7 +2,7 @@
 
 #### Details
 
-For applications that target .NET Framework 4.7.2 and earlier versions, <xref:System.Web.UI.WebControls.CheckBox.InputAttributes?displayProperty=nameWithType> and <xref:System.Web.UI.WebControls.CheckBox.LabelAttributes?displayProperty=nameWithType> that are programmatically added to a WebForms <xref:System.Web.UI.WebControls.CheckBox> control are lost after postback. For applications that target .NET Framework 4.8 or later versions, they are preserved after postback.
+For applications that target .NET Framework 4.7.2 and earlier versions, <xref:System.Web.UI.WebControls.CheckBox.InputAttributes?displayProperty=fullNameWithType> and <xref:System.Web.UI.WebControls.CheckBox.LabelAttributes?displayProperty=fullNameWithType> that are programmatically added to a WebForms <xref:System.Web.UI.WebControls.CheckBox> control are lost after postback. For applications that target .NET Framework 4.8 or later versions, they are preserved after postback.
 
 #### Suggestion
 
@@ -16,4 +16,4 @@ For the correct behavior for restoring attributes on postback, set the <code>tar
 
 #### Affected APIs
 
--<xref:System.Web.UI.WebControls.CheckBox?displayProperty=nameWithType></li></ul>|
+-<xref:System.Web.UI.WebControls.CheckBox?displayProperty=fullNameWithType></li></ul>|

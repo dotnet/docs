@@ -6,7 +6,7 @@ Beginning in the .NET Framework 4.5.1, the .NET Framework will attempt to automa
 
 #### Suggestion
 
-If this feature is undesirable due to compatibility concerns, it can be disabled by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryCount?displayProperty=name> property of a connection string (or <xref:System.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=name>) to 0.
+If this feature is undesirable due to compatibility concerns, it can be disabled by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.ConnectRetryCount?displayProperty=fullName> property of a connection string (or <xref:System.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=fullName>) to 0.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ If this feature is undesirable due to compatibility concerns, it can be disabled
 
 #### Affected APIs
 
--<xref:System.Data.IDbConnection.ConnectionString?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=nameWithType></li><li><xref:System.Configuration.ConnectionStringSettings.ConnectionString?displayProperty=nameWithType></li><li><xref:System.Data.Common.DbConnection.ConnectionString?displayProperty=nameWithType></li><li><xref:System.Data.Common.DbConnectionStringBuilder.ConnectionString?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnectionStringBuilder.%23ctor></li><li><xref:System.Data.SqlClient.SqlConnectionStringBuilder.%23ctor(System.String)></li><li><xref:System.Data.Common.DbConnectionStringBuilder.%23ctor></li><li><xref:System.Data.Common.DbConnectionStringBuilder.%23ctor(System.Boolean)></li></ul>|
+-<xref:System.Data.IDbConnection.ConnectionString?displayProperty=fullNameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.ConnectionString?displayProperty=fullNameWithType></li><li><xref:System.Configuration.ConnectionStringSettings.ConnectionString?displayProperty=fullNameWithType></li><li><xref:System.Data.Common.DbConnection.ConnectionString?displayProperty=fullNameWithType></li><li><xref:System.Data.Common.DbConnectionStringBuilder.ConnectionString?displayProperty=fullNameWithType></li><li><xref:System.Data.SqlClient.SqlConnectionStringBuilder.%23ctor></li><li><xref:System.Data.SqlClient.SqlConnectionStringBuilder.%23ctor(System.String)></li><li><xref:System.Data.Common.DbConnectionStringBuilder.%23ctor></li><li><xref:System.Data.Common.DbConnectionStringBuilder.%23ctor(System.Boolean)></li></ul>|

@@ -16,4 +16,4 @@ Apps that support Windows 8 or above must be updated to not depend on this names
 
 #### Affected APIs
 
--<xref:System.Net.PeerToPeer.Collaboration?displayProperty=nameWithType></li></ul>|
+-<xref:System.Net.PeerToPeer.Collaboration?displayProperty=fullNameWithType></li></ul>|

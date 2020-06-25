@@ -2,7 +2,7 @@
 
 #### Details
 
-String representations of <xref:System.Net.Mime.ContentDisposition?displayProperty=name>'s have been updated, beginning in 4.6, to always represent the hour component of a <xref:System.DateTime?displayProperty=name> with two digits. This is to comply with [RFC822](https://www.ietf.org/rfc/rfc0822.txt) and [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). This causes <xref:System.Net.Mime.ContentDisposition.ToString> to return a slightly different string in 4.6 in scenarios where one of the disposition's time elements was before 10:00 AM. Note that ContentDispositions are sometimes serialized via converting them to strings, so any <xref:System.Net.Mime.ContentDisposition.ToString> operations, serialization, or GetHashCode calls should be reviewed.
+String representations of <xref:System.Net.Mime.ContentDisposition?displayProperty=fullName>'s have been updated, beginning in 4.6, to always represent the hour component of a <xref:System.DateTime?displayProperty=fullName> with two digits. This is to comply with [RFC822](https://www.ietf.org/rfc/rfc0822.txt) and [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). This causes <xref:System.Net.Mime.ContentDisposition.ToString> to return a slightly different string in 4.6 in scenarios where one of the disposition's time elements was before 10:00 AM. Note that ContentDispositions are sometimes serialized via converting them to strings, so any <xref:System.Net.Mime.ContentDisposition.ToString> operations, serialization, or GetHashCode calls should be reviewed.
 
 #### Suggestion
 
@@ -16,4 +16,4 @@ Do not expect that string representations of ContentDispositions from different 
 
 #### Affected APIs
 
--<xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType></li></ul>|
+-<xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=fullNameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=fullNameWithType></li></ul>|

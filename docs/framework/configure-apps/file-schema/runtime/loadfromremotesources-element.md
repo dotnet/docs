@@ -53,7 +53,7 @@ Specifies whether assemblies loaded from remote sources should be granted full t
 
 In the .NET Framework 3.5 and earlier versions, if you load an assembly from a remote location, code in the assembly runs in partial trust with a grant set that depends on the zone from which it is loaded. For example, if you load an assembly from a website, it is loaded into the Internet zone and granted the Internet permission set. In other words, it executes in an Internet sandbox.
 
-Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
+Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullNameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
 
 ```text
 System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported.
@@ -113,4 +113,4 @@ The following example shows how to grant full trust to assemblies loaded from re
 - [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullNameWithType>

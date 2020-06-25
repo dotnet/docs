@@ -2,7 +2,7 @@
 
 #### Details
 
-Beginning in the .NET Framework 4.6, the exception message given if a <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=name> or <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=name> fails to serialize or deserialize due to missing 'known types' has been clarified.
+Beginning in the .NET Framework 4.6, the exception message given if a <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=fullName> or <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=fullName> fails to serialize or deserialize due to missing 'known types' has been clarified.
 
 #### Suggestion
 

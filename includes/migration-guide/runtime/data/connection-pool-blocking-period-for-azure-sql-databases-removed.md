@@ -6,7 +6,7 @@ Starting with the .NET Framework 4.6.2, for connection open requests to known Az
 
 #### Suggestion
 
-If this behavior is undesirable, the connection pool blocking period can be configured by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=name> property introduced in the .NET Framework 4.6.2. The value of the property is a member of the <xref:System.Data.SqlClient.PoolBlockingPeriod?displayProperty=name> enumeration that can take either of three values:<ul><li><xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.Auto></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock></li></ul>The previous behavior can be restored by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=name> property to <xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock>.
+If this behavior is undesirable, the connection pool blocking period can be configured by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=fullName> property introduced in the .NET Framework 4.6.2. The value of the property is a member of the <xref:System.Data.SqlClient.PoolBlockingPeriod?displayProperty=fullName> enumeration that can take either of three values:<ul><li><xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.Auto></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock></li></ul>The previous behavior can be restored by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=fullName> property to <xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock>.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ If this behavior is undesirable, the connection pool blocking period can be conf
 
 #### Affected APIs
 
--<xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType></li></ul>|
+-<xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=fullNameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=fullNameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=fullNameWithType></li></ul>|

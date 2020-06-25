@@ -16,4 +16,4 @@ Most apps should be unaffected, however data will be sorted differently in some 
 
 #### Affected APIs
 
--<xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType></li></ul>|
+-<xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=fullNameWithType></li></ul>|

@@ -83,7 +83,7 @@ The following example does not affinitize server GC threads and limits the numbe
 
 ## See also
 
-- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
+- <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=fullNameWithType>
 - [GCHeapAffinitizeMask element](gcheapaffinitizemask-element.md)
 - [GCHeapCount element](gcheapcount-element.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)

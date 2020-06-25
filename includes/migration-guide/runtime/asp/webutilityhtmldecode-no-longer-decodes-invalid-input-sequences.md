@@ -16,4 +16,4 @@ The change in decoder output should matter only if you store binary data instead
 
 #### Affected APIs
 
--<xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=nameWithType></li></ul>|
+-<xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=fullNameWithType></li><li><xref:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)?displayProperty=fullNameWithType></li><li><xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=fullNameWithType></li></ul>|

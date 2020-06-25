@@ -6,7 +6,7 @@ In the .NET Framework 4, <xref:System.Windows.Threading.DispatcherSynchronizatio
 
 #### Suggestion
 
-Be aware that <xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy> will now return a new <xref:System.Threading.SynchronizationContext?displayProperty=name> object. Previously, code that used equivalence of references generated this way was not actually checking whether it was in the proper context, but does when built against .NET Framework 4.5 or later.  While unlikely to cause issues, exercising the affected code paths should be enough to determine if this poses any problem.
+Be aware that <xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy> will now return a new <xref:System.Threading.SynchronizationContext?displayProperty=fullName> object. Previously, code that used equivalence of references generated this way was not actually checking whether it was in the proper context, but does when built against .NET Framework 4.5 or later.  While unlikely to cause issues, exercising the affected code paths should be enough to determine if this poses any problem.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ Be aware that <xref:System.Windows.Threading.DispatcherSynchronizationContext.Cr
 
 #### Affected APIs
 
--<xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=nameWithType></li></ul>|
+-<xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=fullNameWithType></li></ul>|

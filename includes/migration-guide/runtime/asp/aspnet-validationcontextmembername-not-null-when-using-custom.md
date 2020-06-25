@@ -2,7 +2,7 @@
 
 #### Details
 
-In .NET Framework 4.7.2 and earlier versions, when using a custom <xref:System.ComponentModel.DataAnnotations.ValidationAttribute?displayProperty=nameWithType>, the <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType> property returns `null`. In .NET Framework 4.8 version prior to the October 2019 update, it returns the member name. Starting with [.NET Framework October 2019 Preview of Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-october-2019-preview-of-quality-rollup/) for .NET Framework 4.8, it returns `null` by default, but you can opt in to return the member name instead. 
+In .NET Framework 4.7.2 and earlier versions, when using a custom <xref:System.ComponentModel.DataAnnotations.ValidationAttribute?displayProperty=fullNameWithType>, the <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=fullNameWithType> property returns `null`. In .NET Framework 4.8 version prior to the October 2019 update, it returns the member name. Starting with [.NET Framework October 2019 Preview of Quality Rollup](https://devblogs.microsoft.com/dotnet/net-framework-october-2019-preview-of-quality-rollup/) for .NET Framework 4.8, it returns `null` by default, but you can opt in to return the member name instead.
 
 #### Suggestion
 
@@ -16,4 +16,4 @@ Add the following setting to your *web.config* file for the property to return t
 
 #### Affected APIs
 
--<xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType></li></ul>|
+-<xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=fullNameWithType></li></ul>|

@@ -2,7 +2,7 @@
 
 #### Details
 
-Right-clicking a selected <xref:System.Windows.Controls.DataGrid?displayProperty=name> row header while multiple rows are selected results in the <xref:System.Windows.Controls.DataGrid?displayProperty=name>'s selection changing to only that row.
+Right-clicking a selected <xref:System.Windows.Controls.DataGrid?displayProperty=fullName> row header while multiple rows are selected results in the <xref:System.Windows.Controls.DataGrid?displayProperty=fullName>'s selection changing to only that row.
 
 #### Suggestion
 

@@ -6,7 +6,7 @@ The CheckForOverflowUnderflow property for the System.Drawing.dll assembly is se
 
 #### Suggestion
 
-Previously when overflows occurred, the result would be silently truncated. Now an <xref:System.OverflowException?displayProperty=name> exception is thrown.
+Previously when overflows occurred, the result would be silently truncated. Now an <xref:System.OverflowException?displayProperty=fullName> exception is thrown.
 
 | Name    | Value       |
 |:--------|:------------|

@@ -2,7 +2,7 @@
 
 #### Details
 
-The <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=name> was previously null in the default app domain, unless it was explicitly set. Beginning in 4.6, the <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=name> property for the default app domain will have a default value derived from the TargetFrameworkAttribute (if one is present). Non-default app domains will continue to inherit their <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=name> from the default app domain (which will not default to null in 4.6) unless it is explicitly overridden.
+The <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=fullName> was previously null in the default app domain, unless it was explicitly set. Beginning in 4.6, the <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=fullName> property for the default app domain will have a default value derived from the TargetFrameworkAttribute (if one is present). Non-default app domains will continue to inherit their <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=fullName> from the default app domain (which will not default to null in 4.6) unless it is explicitly overridden.
 
 #### Suggestion
 
@@ -16,4 +16,4 @@ Code should be updated to not depend on <xref:System.AppDomainSetup.TargetFramew
 
 #### Affected APIs
 
--<xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=nameWithType></li></ul>|
+-<xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=fullNameWithType></li></ul>|

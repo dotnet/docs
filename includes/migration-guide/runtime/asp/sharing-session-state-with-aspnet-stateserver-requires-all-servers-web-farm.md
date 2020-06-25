@@ -2,7 +2,7 @@
 
 #### Details
 
-When enabling <xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=name> session state, all of the servers in the given web farm must use the same version of the .NET Framework in order for state to be properly shared.
+When enabling <xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=fullName> session state, all of the servers in the given web farm must use the same version of the .NET Framework in order for state to be properly shared.
 
 #### Suggestion
 
@@ -16,4 +16,4 @@ Be sure to upgrade .NET Framework versions on web servers that share state at th
 
 #### Affected APIs
 
--<xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType></li></ul>|
+-<xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=fullNameWithType></li></ul>|

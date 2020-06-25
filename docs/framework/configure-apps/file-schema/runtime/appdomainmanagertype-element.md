@@ -44,11 +44,11 @@ Specifies the type that serves as the application domain manager for the default
   
  When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified type does not exist in the assembly that is specified by the [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) element; and the process fails to start.  
   
- When you specify the application domain manager type for the default application domain, other application domains created from the default application domain inherit the application domain manager type. Use the <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType> and <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType> properties to specify a different application domain manager type for a new application domain.  
+ When you specify the application domain manager type for the default application domain, other application domains created from the default application domain inherit the application domain manager type. Use the <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=fullNameWithType> and <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=fullNameWithType> properties to specify a different application domain manager type for a new application domain.  
   
  Specifying the application domain manager type requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
   
- The format of the type and namespace is the same format that is used for the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property.  
+ The format of the type and namespace is the same format that is used for the <xref:System.Type.FullName%2A?displayProperty=fullNameWithType> property.  
   
  This configuration element is available only in the .NET Framework 4 and later.  
   
@@ -67,8 +67,8 @@ Specifies the type that serves as the application domain manager for the default
   
 ## See also
 
-- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
-- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=fullNameWithType>
+- <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=fullNameWithType>
 - [\<appDomainManagerAssembly> Element](appdomainmanagerassembly-element.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)

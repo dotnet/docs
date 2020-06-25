@@ -6,7 +6,7 @@ Beginning in the .NET Framework 4.5, the Replace method in OData URLs is disable
 
 #### Suggestion
 
-If the replace method is required (which is uncommon), it can be re-enabled through a config settings (<xref:System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction?displayProperty=name>). However, an enabled replace method can open security vulnerabilities and should only be used after careful review.
+If the replace method is required (which is uncommon), it can be re-enabled through a config settings (<xref:System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction?displayProperty=fullName>). However, an enabled replace method can open security vulnerabilities and should only be used after careful review.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ If the replace method is required (which is uncommon), it can be re-enabled thro
 
 #### Affected APIs
 
--<xref:System.Data.Services.DataService%601?displayProperty=nameWithType></li></ul>|
+-<xref:System.Data.Services.DataService%601?displayProperty=fullNameWithType></li></ul>|

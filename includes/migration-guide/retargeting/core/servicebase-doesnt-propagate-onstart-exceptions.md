@@ -8,13 +8,15 @@ In the .NET Framework 4.7 and earlier versions, exceptions thrown on service sta
 
 On service start, if there is an exception, that exception will be propagated. This should help diagnose cases where services fail to start. <br/>If this behavior is undesirable, you can opt out of it by adding the following &lt;AppContextSwitchOverrides&gt; element to the &lt;runtime&gt; section of your application configuration file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.ServiceProcess.DontThrowExceptionsOnStart=true&quot; /&gt;&#13;&#10;`</pre>
+```xml
+<AppContextSwitchOverrides value="Switch.System.ServiceProcess.DontThrowExceptionsOnStart=true" />
+```
 
 If your application targets an earlier version than 4.7.1 but you want to have this behavior, add the following &lt;AppContextSwitchOverrides&gt; element to the &lt;runtime&gt; section of your application configuration file:
 
-<pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.ServiceProcess.DontThrowExceptionsOnStart=false&quot; /&gt;&#13;&#10;`</pre>
-
-
+```xml
+<AppContextSwitchOverrides value="Switch.System.ServiceProcess.DontThrowExceptionsOnStart=false" />
+```
 
 | Name    | Value       |
 |:--------|:------------|
@@ -26,4 +28,3 @@ If your application targets an earlier version than 4.7.1 but you want to have t
 
 - <xref:System.ServiceProcess.ServiceBase.Run(System.ServiceProcess.ServiceBase)?displayProperty=fullNameWithType>
 - <xref:System.ServiceProcess.ServiceBase.Run(System.ServiceProcess.ServiceBase[])?displayProperty=fullNameWithType>
-

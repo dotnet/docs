@@ -11,5 +11,5 @@ New WWF 4.0 APIs (in System.Activities) should be used instead. An example of us
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.5       |
-|Type|Retargeting|
+| Version | 4.5         |
+| Type    | Retargeting |

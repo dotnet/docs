@@ -23,5 +23,5 @@ Or in the configuration file (this needs to be in the config file for the applic
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.8       |
-|Type|Retargeting|
+| Version | 4.8         |
+| Type    | Retargeting |

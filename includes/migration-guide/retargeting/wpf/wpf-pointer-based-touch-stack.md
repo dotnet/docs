@@ -26,4 +26,4 @@ Removing this or setting the value to false will turn this optional stack off.No
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7       |
-|Type|Retargeting|
+| Type    | Retargeting |

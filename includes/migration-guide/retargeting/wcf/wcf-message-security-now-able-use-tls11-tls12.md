@@ -16,4 +16,4 @@ In the .NET Framework 4.7, support for TLS1.1 and TLS1.2 in WCF message security
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7       |
-|Type|Retargeting|
+| Type    | Retargeting |

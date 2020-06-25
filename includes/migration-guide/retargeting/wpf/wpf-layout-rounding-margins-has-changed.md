@@ -25,4 +25,4 @@ Apps that target the .NET Framework 4.6 but want WPF controls to render using th
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.6         |
-|Type|Retargeting|
+| Type    | Retargeting |

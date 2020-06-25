@@ -13,5 +13,5 @@ In order for the application to benefit from these changes, it must run on the .
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.8       |
-|Type|Retargeting|
+| Version | 4.8         |
+| Type    | Retargeting |

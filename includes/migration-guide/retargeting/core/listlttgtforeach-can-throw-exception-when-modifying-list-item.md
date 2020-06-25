@@ -11,10 +11,9 @@ Ideally, code should be fixed to not modify lists while enumerating their elemen
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs
 
 - <xref:System.Collections.Generic.List%601.ForEach(System.Action{%600})?displayProperty=fullNameWithType>
-

@@ -14,4 +14,4 @@ In .NET Framework 4.7.2 and later versions, developers can disable this fix in o
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

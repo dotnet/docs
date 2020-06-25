@@ -20,4 +20,4 @@ Or in configuration:
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.7       |
-|Type|Retargeting|
+| Type    | Retargeting |

@@ -16,4 +16,4 @@ WPF applications must opt in to all early accessibility improvements to get the 
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

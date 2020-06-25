@@ -12,4 +12,4 @@ This issue has been addressed in the .NET Framework 4.7. To prevent the exceptio
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.6.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

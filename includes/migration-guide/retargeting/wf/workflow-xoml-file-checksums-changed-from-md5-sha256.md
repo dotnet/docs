@@ -19,5 +19,5 @@ Or in a configuration file (this needs to be in MSBuild.exe.config for the MSBui
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.8       |
-|Type|Retargeting|
+| Version | 4.8         |
+| Type    | Retargeting |

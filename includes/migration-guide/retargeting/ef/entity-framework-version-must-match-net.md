@@ -11,5 +11,5 @@ Upgrade to Entity Framework 5 for .NET Framework 4.5
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.5       |
-|Type|Retargeting|
+| Version | 4.5         |
+| Type    | Retargeting |

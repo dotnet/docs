@@ -11,7 +11,7 @@ If <xref:System.IAsyncResult?displayProperty=fullName> implementations correctly
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs
@@ -38,4 +38,3 @@ If <xref:System.IAsyncResult?displayProperty=fullName> implementations correctly
 - <xref:System.Threading.Tasks.TaskFactory.FromAsync%60%603(System.Func{%60%600,%60%601,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,%60%602},%60%600,%60%601,System.Object,System.Threading.Tasks.TaskCreationOptions)?displayProperty=fullNameWithType>
 - <xref:System.Threading.Tasks.TaskFactory.FromAsync%60%604(System.Func{%60%600,%60%601,%60%602,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,%60%603},%60%600,%60%601,%60%602,System.Object)?displayProperty=fullNameWithType>
 - <xref:System.Threading.Tasks.TaskFactory.FromAsync%60%604(System.Func{%60%600,%60%601,%60%602,System.AsyncCallback,System.Object,System.IAsyncResult},System.Func{System.IAsyncResult,%60%603},%60%600,%60%601,%60%602,System.Object,System.Threading.Tasks.TaskCreationOptions)?displayProperty=fullNameWithType>
-

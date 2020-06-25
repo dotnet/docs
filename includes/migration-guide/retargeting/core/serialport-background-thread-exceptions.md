@@ -8,13 +8,19 @@ Background threads created with <xref:System.IO.Ports.SerialPort> streams no lon
 
 For apps that target the .NET Framework 4.7.1, you can opt out of the exception handling if it is not desirable by adding the following to the `<runtime>` section of your `app.config` file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.IO.Ports.DoNotCatchSerialStreamThreadExceptions=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.IO.Ports.DoNotCatchSerialStreamThreadExceptions=true" />
+</runtime>
+```
 
 For apps that target earlier versions of the .NET Framework but run on the .NET Framework 4.7.1 or later, you can opt in to the exception handling by adding the following to the `<runtime>` section of your `app.config` file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.IO.Ports.DoNotCatchSerialStreamThreadExceptions=false&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
-
-
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.IO.Ports.DoNotCatchSerialStreamThreadExceptions=false" />
+</runtime>
+```
 
 | Name    | Value       |
 |:--------|:------------|
@@ -25,4 +31,3 @@ For apps that target earlier versions of the .NET Framework but run on the .NET 
 #### Affected APIs
 
 - <xref:System.IO.Ports.SerialPort?displayProperty=fullNameWithType>
-

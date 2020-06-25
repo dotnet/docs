@@ -7,7 +7,9 @@ In .NET Framework 4.6.2, a number of changes were made to support previously uns
 #### Suggestion
 
 If passing a URI to affected APIs, modify the string to be a legal path first.<ul><li>Remove the scheme from URLs manually (e.g. remove `file://` from URLs)
+
 - Pass the URI to the <xref:System.Uri> class and use <xref:System.Uri.LocalPath>
+
 Alternatively, you can opt out of the new path normalization by setting the `Switch.System.IO.UseLegacyPathHandling` AppContext switch to true.
 
 | Name    | Value       |
@@ -20,4 +22,3 @@ Alternatively, you can opt out of the new path normalization by setting the `Swi
 
 - <xref:System.IO.Path.GetDirectoryName(System.String)?displayProperty=fullNameWithType>
 - <xref:System.IO.Path.GetPathRoot(System.String)?displayProperty=fullNameWithType>
-

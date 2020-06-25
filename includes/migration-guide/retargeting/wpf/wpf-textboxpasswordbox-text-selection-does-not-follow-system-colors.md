@@ -14,4 +14,4 @@ A developer who wants to utilize this change must set the following AppContext f
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

@@ -12,4 +12,4 @@ Recompilation of existing source code that uses the <xref:System.ObsoleteAttribu
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.5.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

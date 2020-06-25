@@ -12,4 +12,4 @@ In the .NET Framework SDK 4.7.1, the SvcConfigEditor.exe and SvcTraceViewer.exe 
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

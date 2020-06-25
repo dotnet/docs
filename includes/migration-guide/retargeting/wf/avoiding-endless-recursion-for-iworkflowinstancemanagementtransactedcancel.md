@@ -16,4 +16,4 @@ If you are not encountering the problem, you do not need to do this.
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

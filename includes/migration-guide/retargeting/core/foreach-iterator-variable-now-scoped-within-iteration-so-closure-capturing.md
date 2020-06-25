@@ -11,5 +11,5 @@ Ideally, code should be updated to expect the new compiler behavior. If the old 
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.5       |
-|Type|Retargeting|
+| Version | 4.5         |
+| Type    | Retargeting |

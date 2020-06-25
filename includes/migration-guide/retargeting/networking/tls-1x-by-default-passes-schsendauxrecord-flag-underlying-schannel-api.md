@@ -8,9 +8,14 @@ When using TLS 1.x, the .NET Framework relies on the underlying Windows SCHANNEL
 
 If this change breaks communication with an existing server, you can disable sending the [SCH_SEND_AUX_RECORD](https://docs.microsoft.com/windows/win32/api/schannel/ns-schannel-schannel_cred) flag and restore the previous behavior of not splitting data into separate records by adding the following switch to the [<](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [<](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app configuration file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides&#13;&#10;value=&quot;Switch.System.Net.DontEnableSchSendAuxRecord=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.Net.DontEnableSchSendAuxRecord=true" />
+</runtime>
+```
 
- <blockquote> [!IMPORTANT] This setting is provided for backward compatibility only. Its use is otherwise not recommended.</blockquote> 
+> [!IMPORTANT]
+> This setting is provided for backward compatibility only. Its use is otherwise not recommended.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -26,4 +31,3 @@ If this change breaks communication with an existing server, you can disable sen
 - <xref:System.Net.Mail.SmtpClient?displayProperty=fullNameWithType>
 - <xref:System.Net.HttpWebRequest?displayProperty=fullNameWithType>
 - <xref:System.Net.FtpWebRequest?displayProperty=fullNameWithType>
-

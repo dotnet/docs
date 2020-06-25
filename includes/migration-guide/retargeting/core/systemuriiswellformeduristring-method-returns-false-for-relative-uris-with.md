@@ -11,10 +11,9 @@ This change (like many other URI changes) will only affect applications targetin
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs
 
 - <xref:System.Uri.IsWellFormedUriString(System.String,System.UriKind)?displayProperty=fullNameWithType>
-

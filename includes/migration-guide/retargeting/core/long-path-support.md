@@ -12,16 +12,22 @@ For apps that target the .NET Framework 4.6.1 and earlier versions, the runtime 
 
 For apps that target the .NET Framework 4.6.2, you can opt out of long path support if it is not desirable by adding the following to the `<runtime>` section of your `app.config` file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.IO.BlockLongPaths=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.IO.BlockLongPaths=true" />
+</runtime>
+```
 
 For apps that target earlier versions of the .NET Framework but run on the .NET Framework 4.6.2 or later, you can opt in to long path support by adding the following to the `<runtime>` section of your `app.config` file:
 
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.IO.BlockLongPaths=false&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
-
-
+```xml
+<runtime>
+  <AppContextSwitchOverrides value="Switch.System.IO.BlockLongPaths=false" />
+</runtime>
+```
 
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.6.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

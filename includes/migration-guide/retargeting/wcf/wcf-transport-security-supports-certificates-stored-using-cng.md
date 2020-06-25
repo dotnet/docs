@@ -22,4 +22,4 @@ Note that, because of this change, any exception handling code that depends on t
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.6.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

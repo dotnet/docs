@@ -12,4 +12,4 @@ Resgen users who require loading binary formatted input from untrusted locations
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

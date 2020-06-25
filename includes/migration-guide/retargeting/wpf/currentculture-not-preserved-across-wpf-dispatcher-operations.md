@@ -16,4 +16,4 @@ This issue has been fixed by WPF in .NET Framework 4.6.2. It has also been fixed
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.6         |
-|Type|Retargeting|
+| Type    | Retargeting |

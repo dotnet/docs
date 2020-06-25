@@ -15,4 +15,4 @@ There are two areas of impact:
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.5.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

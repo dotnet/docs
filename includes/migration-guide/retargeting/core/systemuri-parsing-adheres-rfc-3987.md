@@ -19,7 +19,7 @@ If the old .NET Framework 4.0 URI parsing semantics are necessary (they often ar
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs
@@ -31,4 +31,3 @@ If the old .NET Framework 4.0 URI parsing semantics are necessary (they often ar
 - <xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=fullNameWithType>
 - <xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=fullNameWithType>
 - <xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=fullNameWithType>
-

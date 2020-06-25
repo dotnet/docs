@@ -12,4 +12,4 @@ Entity Framework targets files are fixed to work with the new MSBuild layout beg
 |:--------|:------------|
 | Scope   | Major       |
 | Version | 4.5.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

@@ -11,7 +11,7 @@ This should have no negative impact. However, you can restore the previous behav
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Edge        |
-| Version | 4.5       |
+| Version | 4.5         |
 |Type|Retargeting
 
 #### Affected APIs

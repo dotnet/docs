@@ -12,4 +12,4 @@ Code should be updated to refer to `System.Windows` APIs either with simple name
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.5.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

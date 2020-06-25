@@ -11,7 +11,7 @@ This bug only manifests when targeting .NET Framework 4.5 in the workflow design
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs

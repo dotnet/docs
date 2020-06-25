@@ -12,4 +12,4 @@ If looser .NET Framework 4.0 validation is needed, the validating application ca
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.6         |
-|Type|Retargeting|
+| Type    | Retargeting |

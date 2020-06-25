@@ -15,7 +15,7 @@ Once non-adorner based text selection is enabled, you can use the <xref:System.W
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Major       |
-| Version | 4.8       |
+| Version | 4.8         |
 | Type    | Retargeting |
 
 #### Affected APIs

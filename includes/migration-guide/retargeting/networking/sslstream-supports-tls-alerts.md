@@ -6,18 +6,35 @@ After a failed TLS handshake, an <xref:System.IO.IOException?displayProperty=ful
 
 #### Suggestion
 
-Applications calling network I/O APIs such as <xref:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)>/<xref:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)> should handle <xref:System.IO.IOException> or <xref:System.TimeoutException?displayProperty=fullName>.<br/>The TLS Alerts feature is enabled by default starting with .NET Framework 4.7. Applications targeting versions of the .NET Framework from 4.0 through 4.6.2 running on a .NET Framework 4.7 or higher system will have the feature disabled to preserve compatibility. <br/>The following configuration API is available to enable or disable the feature for .NET Framework 4.6 and later applications running on .NET Framework 4.7 or later.<ul><li>Programmatically:
-Must be the very first thing the application does since ServicePointManager will initialize only once:
+Applications calling network I/O APIs such as <xref:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)>/<xref:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)> should handle <xref:System.IO.IOException> or <xref:System.TimeoutException?displayProperty=fullName>.<br/>The TLS Alerts feature is enabled by default starting with .NET Framework 4.7. Applications targeting versions of the .NET Framework from 4.0 through 4.6.2 running on a .NET Framework 4.7 or higher system will have the feature disabled to preserve compatibility. <br/>The following configuration API is available to enable or disable the feature for .NET Framework 4.6 and later applications running on .NET Framework 4.7 or later.
 
-<pre><code class="lang-csharp">AppContext.SetSwitch(&quot;TestSwitch.LocalAppContext.DisableCaching&quot;, true);&#13;&#10;AppContext.SetSwitch(&quot;Switch.System.Net.DontEnableTlsAlerts&quot;, true); // Set to &#39;false&#39; to enable the feature in .NET Framework 4.6 - 4.6.2.&#13;&#10;`</pre>
+- Programmatically:
+    Must be the very first thing the application does since ServicePointManager will initialize only once:
 
-<ul><li>AppConfig:
-<pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Net.DontEnableTlsAlerts=true&quot;/&gt;&#13;&#10;&lt;!-- Set to &#39;false&#39; to enable the feature in .NET Framework 4.6 - 4.6.2. --&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;`</pre>
+    ```csharp
+    AppContext.SetSwitch("TestSwitch.LocalAppContext.DisableCaching", true);
 
-<ul><li>Registry key (machine global):
-Set the Value to `false` to enable the feature in .NET Framework 4.6 - 4.6.2.<ul><li>Key: HKLM\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\AppContext\Switch.System.Net.DontEnableTlsAlerts
-- Type: String
-- Value: &quot;true&quot;
+    // Set to 'false' to enable the feature in .NET Framework 4.6 - 4.6.2.
+    AppContext.SetSwitch("Switch.System.Net.DontEnableTlsAlerts", true);
+    ```
+
+- AppConfig:
+
+    ```xml
+    <runtime>
+      <AppContextSwitchOverrides value="Switch.System.Net.DontEnableTlsAlerts=true"/>
+      <!-- Set to 'false' to enable the feature in .NET Framework 4.6 - 4.6.2. -->
+    </runtime>
+    ```
+
+- Registry key (machine global):
+    Set the Value to `false` to enable the feature in .NET Framework 4.6 - 4.6.2.
+
+    ```ini
+    Key: HKLM\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\AppContext\Switch.System.Net.DontEnableTlsAlerts
+    - Type: String
+    - Value: "true"
+    ```
 
 | Name    | Value       |
 |:--------|:------------|
@@ -33,4 +50,3 @@ Set the Value to `false` to enable the feature in .NET Framework 4.6 - 4.6.2.<ul
 - <xref:System.Net.FtpWebRequest?displayProperty=fullNameWithType>
 - <xref:System.Net.Mail.SmtpClient?displayProperty=fullNameWithType>
 - <xref:System.Net.Http?displayProperty=fullNameWithType>
-

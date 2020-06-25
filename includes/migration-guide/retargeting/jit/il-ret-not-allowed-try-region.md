@@ -12,4 +12,4 @@ If an app is generating IL that includes a ret opcode in a try region, the app m
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.6         |
-|Type|Retargeting|
+| Type    | Retargeting |

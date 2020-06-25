@@ -49,4 +49,4 @@ Applications that target the .NET Framework 4.7.1 or later and want to preserve 
 |:--------|:------------|
 | Scope   | Minor       |
 | Version | 4.7.1       |
-|Type|Retargeting|
+| Type    | Retargeting |

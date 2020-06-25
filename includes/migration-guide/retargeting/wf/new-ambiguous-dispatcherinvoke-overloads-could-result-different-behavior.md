@@ -14,7 +14,7 @@ To avoid ambiguity (and potential differences in exception handling or blocking 
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs

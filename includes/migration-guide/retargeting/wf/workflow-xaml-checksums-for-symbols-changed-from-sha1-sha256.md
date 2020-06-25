@@ -19,5 +19,5 @@ Or in configuration:
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.8       |
-|Type|Retargeting|
+| Version | 4.8         |
+| Type    | Retargeting |

@@ -22,9 +22,17 @@ Starting with the .NET Framework 4.6, a new 64-bit JIT compiler is used for just
 **Mitigation of other issues** <br/> If you encounter any other difference in behavior between code compiled with the older 64-bit compiler and the new 64-bit JIT compiler, or between the debug and release versions of your app that are both compiled with the new 64-bit JIT compiler, you can do the following to compile your app with the older 64-bit JIT compiler:
 
 - On a per-application basis, you can add the [<](~/docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) element to your application's configuration file. The following disables compilation with the new 64-bit JIT compiler and instead uses the legacy 64-bit JIT compiler.
-<pre><code class="lang-xml">&lt;?xml version =&quot;1.0&quot;?&gt;&#13;&#10;&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;useLegacyJit enabled=&quot;1&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;`</pre>
 
-<ul><li>On a per-user basis, you can add a `REG_DWORD` value named `useLegacyJit` to the `HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework` key of the registry. A value of 1 enables the legacy 64-bit JIT compiler; a value of 0 disables it and enables the new 64-bit JIT compiler.
+    ```xml
+    <?xml version ="1.0"?>
+    <configuration>
+      <runtime>
+       <useLegacyJit enabled="1" />
+      </runtime>
+    </configuration>
+    ```
+
+- On a per-user basis, you can add a `REG_DWORD` value named `useLegacyJit` to the `HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework` key of the registry. A value of 1 enables the legacy 64-bit JIT compiler; a value of 0 disables it and enables the new 64-bit JIT compiler.
 - On a per-machine basis, you can add a `REG_DWORD` value named `useLegacyJit` to the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework` key of the registry. A value of `1` enables the legacy 64-bit JIT compiler; a value of `0` disables it and enables the new 64-bit JIT compiler.
 You can also let us know about the problem by reporting a bug on [Microsoft Connect](https://connect.microsoft.com/VisualStudio).
 
@@ -32,4 +40,4 @@ You can also let us know about the problem by reporting a bug on [Microsoft Conn
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.6         |
-|Type|Retargeting|
+| Type    | Retargeting |

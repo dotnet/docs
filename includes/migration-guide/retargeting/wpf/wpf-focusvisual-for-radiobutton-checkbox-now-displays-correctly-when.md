@@ -16,4 +16,4 @@ A developer who wants to utilize this change while targeting a framework version
 |:--------|:------------|
 | Scope   | Edge        |
 | Version | 4.7.2       |
-|Type|Retargeting|
+| Type    | Retargeting |

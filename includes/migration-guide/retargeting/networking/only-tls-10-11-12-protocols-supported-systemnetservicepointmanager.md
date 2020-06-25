@@ -6,10 +6,14 @@ Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager> 
 
 #### Suggestion
 
-The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, or Tls1.2. If this is not feasible, or if client apps are broken, the <xref:System.AppContext?displayProperty=fullName> class can be used to opt out of this feature in either of two ways:<ol><li>By programmatically setting compat switches on the <xref:System.AppContext?displayProperty=fullName>, as explained [here](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).
-- By adding the following line to the `<runtime>` section of the app.config file:</li></ol><pre><code class="lang-xml">&lt;AppContextSwitchOverrides value=&quot;Switch.System.Net.DontEnableSchUseStrongCrypto=true&quot;/&gt;&#13;&#10;`</pre>
+The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, or Tls1.2. If this is not feasible, or if client apps are broken, the <xref:System.AppContext?displayProperty=fullName> class can be used to opt out of this feature in either of two ways:
 
+- By programmatically setting compat switches on the <xref:System.AppContext?displayProperty=fullName>, as explained [here](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).
+- By adding the following line to the `<runtime>` section of the app.config file:
 
+```xml
+<AppContextSwitchOverrides value="Switch.System.Net.DontEnableSchUseStrongCrypto=true"/>
+```
 
 | Name    | Value       |
 |:--------|:------------|
@@ -23,4 +27,3 @@ The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, o
 - <xref:System.Security.Authentication.SslProtocols.None?displayProperty=fullNameWithType>
 - <xref:System.Security.Authentication.SslProtocols.Ssl2?displayProperty=fullNameWithType>
 - <xref:System.Security.Authentication.SslProtocols.Ssl3?displayProperty=fullNameWithType>
-

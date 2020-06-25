@@ -11,7 +11,7 @@ New <xref:System.Activities.Presentation.DragDropHelper?displayProperty=fullName
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.5       |
+| Version | 4.5         |
 | Type    | Retargeting |
 
 #### Affected APIs

@@ -11,5 +11,5 @@ If looser .NET Framework 4.0 validation is needed, the validating application ca
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
-| Version | 4.5       |
-|Type|Retargeting|
+| Version | 4.5         |
+| Type    | Retargeting |

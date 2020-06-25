@@ -11,7 +11,7 @@ As a developer, choosing the appropriate type can be scary task. Anonymous types
 
 ## Usability and functionality
 
-With the advent of C# 3.0, when anonymous types were introduced so to were Language-Integrated Query (LINQ) expressions. With LINQ, developers often project results from queries into anonymous types that hold a few select properties from the objects their working with. Consider the following example, that instantiates an array of <xref:System.DateTime> objects, and iterates through them projecting into an anonymous type with two properties.
+Anonymous types were introduced in C# 3.0 with Language-Integrated Query (LINQ) expressions. With LINQ, developers often project results from queries into anonymous types that hold a few select properties from the objects they're working with. Consider the following example, that instantiates an array of <xref:System.DateTime> objects, and iterates through them projecting into an anonymous type with two properties.
 
 ```csharp-interactive
 var dates = new[]
@@ -29,9 +29,9 @@ foreach (var anonymous in
 }
 ```
 
-Anonymous types are instantiated by using the [`new`](../../csharp/language-reference/operators/new-operator.md) operator, and the property names and types are inferred from the declaration. If two or more anonymous object initializers in an assembly specify a sequence of properties that are in the same order and that have the same names and types, the compiler treats the objects as instances of the same type. They share the same compiler-generated type information.
+Anonymous types are instantiated by using the [`new`](../../csharp/language-reference/operators/new-operator.md) operator, and the property names and types are inferred from the declaration. If two or more anonymous object initializers in the same assembly specify a sequence of properties that are in the same order and that have the same names and types, the compiler treats the objects as instances of the same type. They share the same compiler-generated type information.
 
-The previous C# snippet projects an anonymous type that would be defined with two properties, much like the following compiler-generated C# class:
+The previous C# snippet projects an anonymous type with two properties, much like the following compiler-generated C# class:
 
 ```csharp
 internal sealed class f__AnonymousType0
@@ -47,7 +47,7 @@ internal sealed class f__AnonymousType0
 }
 ```
 
-For more information, see [anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties and put them into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
+For more information, see [anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). The same functionality exists with tuples when projecting into LINQ queries, you can select properties into tuples. These tuples flow through the query, just as anonymous types would. Now consider the following example using the `System.Tuple<string, long>`.
 
 ```csharp-interactive
 var dates = new[]
@@ -83,11 +83,11 @@ foreach (var (formatted, ticks) in
 }
 ```
 
-The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations. One nicety with <xref:System.ValueTuple> is the ability to deconstruct.
+The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations. One nicety with <xref:System.ValueTuple> is the ability to deconstruct the tuple into its members.
 
 ## Limitations
 
-While it might seem as though you should always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types - there are some limitations that you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot.
+While it might seem as though you should always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types - there are tradeoffs you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot.
 
 ### Key differences
 

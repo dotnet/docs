@@ -5,7 +5,7 @@ ms.date: 11/27/2019
 ---
 # Breaking change selectors
 
-The following version and area selectors provide a filtered list of applicable breaking changes between different versions of .NET Core, ASP.NET Core, and EF Core. You can also browse version-to-version or category articles in the table of contents.
+The following version and area selectors provide a filtered list of applicable breaking changes between different versions of .NET Core, ASP.NET Core, and EF Core. You can also browse version-to-version or technology area articles in the table of contents.
 
 ## By version
 

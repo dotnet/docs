@@ -595,6 +595,6 @@ The next section provides details of WordprocessingML documents:
 
 ## See also
 
-- [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents)
+- [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents.md)
 - [Refactor using a pure function](refactor-pure-function.md)
 - [Deferred execution and lazy evaluation](deferred-execution-lazy-evaluation.md)

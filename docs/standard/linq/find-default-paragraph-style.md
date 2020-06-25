@@ -136,7 +136,7 @@ The default style is: Normal
 
 In the next article in this tutorial you'll create a similar query that finds all the paragraphs in a document and their styles:
 
-- [Retrieve the paragraphs and their styles](retrieve-paragraphs-their-styles.md)
+- [Retrieve the paragraphs and their styles](retrieve-paragraphs-styles.md)
 
 ## See also
 

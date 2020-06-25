@@ -23,7 +23,7 @@ This section of articles provides information, including examples, about LINQ to
 |[Projections and transformations](work-dictionaries-linq-xml.md)|Provides common examples of projecting from and transforming XML trees.|
 |[Advanced query techniques](join-two-collections.md)|Provides query techniques that are useful in more advanced scenarios.|
 |[LINQ to XML for XPath users](comparison-xpath-linq-xml.md)|Presents a number of XPath expressions and their LINQ to XML equivalents.|
-|[Pure functional transformations of XML](pure-functional-transformations.md)|Presents a small tutorial on writing queries in the style of functional programming.|
+|[Introduction to pure functional transformations](pure-functional-transformations.md)|Presents a small tutorial on writing queries in the style of functional programming.|
 
 ## See also
 

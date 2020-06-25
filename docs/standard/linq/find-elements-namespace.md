@@ -14,7 +14,7 @@ Use namespace prefixes in XPath expressions to find nodes in a particular namesp
 
 ## Example: Find purchase orders from a specific namespace in a document that has two namespaces
 
-The following example uses an <xref:System.Xml.XmlReader> to read XML document [Sample XML file: Consolidated purchase orders](sample-xml-file-consolidated-purchase-orders), which has purchase orders in two namespaces. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting elements.
+The following example uses an <xref:System.Xml.XmlReader> to read XML document [Sample XML file: Consolidated purchase orders](sample-xml-file-consolidated-purchase-orders.md), which has purchase orders in two namespaces. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting elements.
 
 The XPath expression is: `./aw:*`
 

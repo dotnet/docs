@@ -16,5 +16,5 @@ When re-building an ADO.NET database provider, these differences will require th
 
 #### Affected APIs
 
-- <xref:System.Data.Common.DbParameter.Precision?displayProperty=fullNameWithType>
-- <xref:System.Data.Common.DbParameter.Scale?displayProperty=fullNameWithType>
+- <xref:System.Data.Common.DbParameter.Precision?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbParameter.Scale?displayProperty=nameWithType>

@@ -16,5 +16,5 @@ If an app depended on the extra `<BR />` tag, <xref:System.Web.UI.HtmlTextWriter
 
 #### Affected APIs
 
-- <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.String)?displayProperty=fullNameWithType>
-- <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)?displayProperty=fullNameWithType>
+- <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.String)?displayProperty=nameWithType>
+- <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)?displayProperty=nameWithType>

@@ -20,5 +20,5 @@ Alternatively, you can opt out of the new path normalization by setting the `Swi
 
 #### Affected APIs
 
-- <xref:System.IO.Path.GetDirectoryName(System.String)?displayProperty=fullNameWithType>
-- <xref:System.IO.Path.GetPathRoot(System.String)?displayProperty=fullNameWithType>
+- <xref:System.IO.Path.GetDirectoryName(System.String)?displayProperty=nameWithType>
+- <xref:System.IO.Path.GetPathRoot(System.String)?displayProperty=nameWithType>

@@ -16,6 +16,6 @@ If you implemented a workaround for the encoding problem with HTML-formatted str
 
 #### Affected APIs
 
-- <xref:System.Windows.DataObject.GetData(System.String)?displayProperty=fullNameWithType>
-- <xref:System.Windows.DataObject.GetData(System.Type)?displayProperty=fullNameWithType>
-- <xref:System.Windows.DataObject.GetData(System.String,System.Boolean)?displayProperty=fullNameWithType>
+- <xref:System.Windows.DataObject.GetData(System.String)?displayProperty=nameWithType>
+- <xref:System.Windows.DataObject.GetData(System.Type)?displayProperty=nameWithType>
+- <xref:System.Windows.DataObject.GetData(System.String,System.Boolean)?displayProperty=nameWithType>

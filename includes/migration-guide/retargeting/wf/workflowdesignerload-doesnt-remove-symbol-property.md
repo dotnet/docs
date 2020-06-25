@@ -16,4 +16,4 @@ This bug only manifests when targeting .NET Framework 4.5 in the workflow design
 
 #### Affected APIs
 
-- <xref:System.Activities.Presentation.WorkflowDesigner.Load?displayProperty=fullNameWithType>
+- <xref:System.Activities.Presentation.WorkflowDesigner.Load?displayProperty=nameWithType>

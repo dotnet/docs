@@ -30,4 +30,4 @@ For apps that target earlier versions of the .NET Framework but run on the .NET 
 
 #### Affected APIs
 
-- <xref:System.IO.Ports.SerialPort?displayProperty=fullNameWithType>
+- <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>

@@ -16,4 +16,4 @@ Ideally, applications should be updated to not use UTF-7 encoding in <xref:Syste
 
 #### Affected APIs
 
--<xref:System.Web.HttpRequest.ContentEncoding?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType></li></ul>|

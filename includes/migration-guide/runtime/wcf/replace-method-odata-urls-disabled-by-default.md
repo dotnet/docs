@@ -16,4 +16,4 @@ If the replace method is required (which is uncommon), it can be re-enabled thro
 
 #### Affected APIs
 
--<xref:System.Data.Services.DataService%601?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Data.Services.DataService%601?displayProperty=nameWithType></li></ul>|

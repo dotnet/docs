@@ -22,5 +22,5 @@ Apps that target the .NET Framework 4.7 or earlier but are running on the .NET F
 
 #### Affected APIs
 
-- <xref:System.Windows.Controls.TabControl.SelectedContent?displayProperty=fullNameWithType>
-- <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged?displayProperty=fullNameWithType>
+- <xref:System.Windows.Controls.TabControl.SelectedContent?displayProperty=nameWithType>
+- <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged?displayProperty=nameWithType>

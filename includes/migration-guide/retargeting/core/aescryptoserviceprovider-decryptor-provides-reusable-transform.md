@@ -30,4 +30,4 @@ In addition, applications that target a previous version of the .NET Framework b
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor?displayProperty=fullNameWithType>
+- <xref:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor?displayProperty=nameWithType>

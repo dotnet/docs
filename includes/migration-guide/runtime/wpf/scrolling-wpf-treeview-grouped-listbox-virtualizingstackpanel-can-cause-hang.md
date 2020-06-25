@@ -16,4 +16,4 @@ This bug can be avoided by upgrading to .NET Framework 4.5.1. Alternatively, mar
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)?displayProperty=nameWithType></li></ul>|

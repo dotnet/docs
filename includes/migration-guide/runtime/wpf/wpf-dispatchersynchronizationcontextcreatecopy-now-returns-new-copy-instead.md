@@ -16,4 +16,4 @@ Be aware that <xref:System.Windows.Threading.DispatcherSynchronizationContext.Cr
 
 #### Affected APIs
 
--<xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=nameWithType></li></ul>|

@@ -6,7 +6,7 @@ In .NET Framework 4.5.2 and earlier versions, this method would throw if <code>t
 
 #### Suggestion
 
-Any code depending on <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=fullNameWithType> should be updated to expect that the returned string may exclude some certificate data (such as public key, private key, and extensions) in some cases in which the API would have previously thrown.
+Any code depending on <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=nameWithType> should be updated to expect that the returned string may exclude some certificate data (such as public key, private key, and extensions) in some cases in which the API would have previously thrown.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ Any code depending on <xref:System.Security.Cryptography.X509Certificates.X509Ce
 
 #### Affected APIs
 
--<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=nameWithType></li></ul>|

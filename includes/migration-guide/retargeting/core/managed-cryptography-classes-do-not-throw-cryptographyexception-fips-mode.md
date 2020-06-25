@@ -30,11 +30,11 @@ If your application targets .NET Framework 4.7.2 or earlier, you can also opt in
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography.AesManaged?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.MD5Cng?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.MD5CryptoServiceProvider?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.RC2CryptoServiceProvider?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.RijndaelManaged?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.RIPEMD160Managed?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.SHA1Managed?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.SHA256Managed?displayProperty=fullNameWithType>
+- <xref:System.Security.Cryptography.AesManaged?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.MD5Cng?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.MD5CryptoServiceProvider?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RC2CryptoServiceProvider?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RijndaelManaged?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.RIPEMD160Managed?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.SHA1Managed?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.SHA256Managed?displayProperty=nameWithType>

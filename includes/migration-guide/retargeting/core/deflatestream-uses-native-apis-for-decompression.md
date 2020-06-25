@@ -31,5 +31,5 @@ If decompression with native APIs has adversely affected the behavior of your ap
 
 #### Affected APIs
 
-- <xref:System.IO.Compression.DeflateStream?displayProperty=fullNameWithType>
-- <xref:System.IO.Compression.GZipStream?displayProperty=fullNameWithType>
+- <xref:System.IO.Compression.DeflateStream?displayProperty=nameWithType>
+- <xref:System.IO.Compression.GZipStream?displayProperty=nameWithType>

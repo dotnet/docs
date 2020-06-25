@@ -16,4 +16,4 @@ Developers might want to review the usage of <xref:System.Security.Cryptography.
 
 #### Affected APIs
 
--<xref:System.Security.Cryptography.Xml.Transform?displayProperty=fullNameWithType></li><li><xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform?displayProperty=fullNameWithType></li><li><xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Security.Cryptography.Xml.Transform?displayProperty=nameWithType></li><li><xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform?displayProperty=nameWithType></li><li><xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform?displayProperty=nameWithType></li></ul>|

@@ -39,4 +39,4 @@ Conversely, users who wish to opt in to the new behavior on the .NET Framework 4
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography.CspParameters.ParentWindowHandle?displayProperty=fullNameWithType>
+- <xref:System.Security.Cryptography.CspParameters.ParentWindowHandle?displayProperty=nameWithType>

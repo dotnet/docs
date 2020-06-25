@@ -16,4 +16,4 @@ This issue has been fixed in the .NET Framework 4.6 and may be addressed by upgr
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=fullNameWithType></li><li><xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Controls.DataGrid.UnloadingRow?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.UnloadingRowDetails?displayProperty=nameWithType></li></ul>|

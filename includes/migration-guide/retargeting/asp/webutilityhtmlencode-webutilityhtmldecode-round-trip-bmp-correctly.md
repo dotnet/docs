@@ -16,5 +16,5 @@ This change should have no effect on current applications, but to restore the or
 
 #### Affected APIs
 
-- <xref:System.Net.WebUtility.HtmlEncode(System.String)?displayProperty=fullNameWithType>
-- <xref:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)?displayProperty=fullNameWithType>
+- <xref:System.Net.WebUtility.HtmlEncode(System.String)?displayProperty=nameWithType>
+- <xref:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)?displayProperty=nameWithType>

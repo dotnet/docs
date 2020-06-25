@@ -33,4 +33,4 @@ For applications that target earlier versions of the .NET Framework but are runn
 
 #### Affected APIs
 
-- <xref:System.Uri?displayProperty=fullNameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>

@@ -16,4 +16,4 @@ This bug has been fixed in the .NET Framework 4.5.2, so it can be avoided by upg
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=fullNameWithType></li><li><xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Controls.DataGrid.CommitEdit?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.CommitEdit(System.Windows.Controls.DataGridEditingUnit,System.Boolean)?displayProperty=nameWithType></li></ul>|

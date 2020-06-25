@@ -16,4 +16,4 @@ Do not expect that string representations of ContentDispositions from different 
 
 #### Affected APIs
 
--<xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=fullNameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType></li></ul>|

@@ -16,4 +16,4 @@ This change (like many other URI changes) will only affect applications targetin
 
 #### Affected APIs
 
-- <xref:System.Uri.IsWellFormedUriString(System.String,System.UriKind)?displayProperty=fullNameWithType>
+- <xref:System.Uri.IsWellFormedUriString(System.String,System.UriKind)?displayProperty=nameWithType>

@@ -16,4 +16,4 @@ There are a number of possible work-arounds for this issue:<ul><li>Upgrade the s
 
 #### Affected APIs
 
--<xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType></li></ul>|

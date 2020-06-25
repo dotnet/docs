@@ -6,7 +6,7 @@
 
 #### Suggestion
 
-Users depending on this behavior to disallow relative URIs should instead specify <xref:System.UriKind.Absolute?displayProperty=fullNameWithType> when creating a URI.
+Users depending on this behavior to disallow relative URIs should instead specify <xref:System.UriKind.Absolute?displayProperty=nameWithType> when creating a URI.
 
 | Name    | Value       |
 |:--------|:------------|
@@ -16,4 +16,4 @@ Users depending on this behavior to disallow relative URIs should instead specif
 
 #### Affected APIs
 
--<xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=fullNameWithType></li><li><xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=fullNameWithType></li><li><xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=nameWithType></li><li><xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=nameWithType></li></ul>|

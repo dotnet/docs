@@ -16,4 +16,4 @@ This issue may be worked around by programatically unselecting items before <xre
 
 #### Affected APIs
 
--<xref:System.Windows.Data.CollectionView.Refresh?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Data.CollectionView.Refresh?displayProperty=nameWithType></li></ul>|

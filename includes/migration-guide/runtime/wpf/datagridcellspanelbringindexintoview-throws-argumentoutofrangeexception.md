@@ -16,4 +16,4 @@ Any one of the following:<ol><li>Upgrade to .NET Framework 4.7.</li><li>Install 
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)?displayProperty=fullNameWithType></li><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object,System.Windows.Controls.DataGridColumn)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object)?displayProperty=nameWithType></li><li><xref:System.Windows.Controls.DataGrid.ScrollIntoView(System.Object,System.Windows.Controls.DataGridColumn)?displayProperty=nameWithType></li></ul>|

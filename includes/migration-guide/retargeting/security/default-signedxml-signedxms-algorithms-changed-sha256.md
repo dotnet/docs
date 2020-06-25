@@ -30,6 +30,6 @@ For applications that target the .NET Framework 4.7 and earlier versions, you ca
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography.Pkcs.CmsSigner?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.Xml.SignedXml?displayProperty=fullNameWithType>
-- <xref:System.Security.Cryptography.Xml.Reference?displayProperty=fullNameWithType>
+- <xref:System.Security.Cryptography.Pkcs.CmsSigner?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.Xml.SignedXml?displayProperty=nameWithType>
+- <xref:System.Security.Cryptography.Xml.Reference?displayProperty=nameWithType>

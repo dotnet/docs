@@ -16,4 +16,4 @@ Upgrade if possible to .NET Framework 4.6.2.
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=nameWithType></li></ul>|

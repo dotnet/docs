@@ -16,4 +16,4 @@ This change only affects applications targeting the .NET Framework 4.6.1. This c
 
 #### Affected APIs
 
-- <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String,System.String)?displayProperty=fullNameWithType>
+- <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String,System.String)?displayProperty=nameWithType>

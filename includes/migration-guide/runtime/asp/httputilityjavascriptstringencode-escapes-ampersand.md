@@ -16,4 +16,4 @@ If your app depends on the previous behavior of this method, you can add an aspn
 
 #### Affected APIs
 
--<xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=fullNameWithType></li><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=nameWithType></li><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)?displayProperty=nameWithType></li></ul>|

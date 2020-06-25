@@ -16,4 +16,4 @@ Exception-handling code that assumes <xref:System.Xml.Schema.XmlSchemaException.
 
 #### Affected APIs
 
--<xref:System.Xml.Linq.LoadOptions.SetLineInfo?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Xml.Linq.LoadOptions.SetLineInfo?displayProperty=nameWithType></li></ul>|

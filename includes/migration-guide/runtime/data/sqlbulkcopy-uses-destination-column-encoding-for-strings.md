@@ -16,4 +16,4 @@ Expect that <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=fullName> wi
 
 #### Affected APIs
 
--<xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=fullNameWithType></li><li><xref:System.Data.SqlClient.SqlBulkCopy.%23ctor(System.Data.SqlClient.SqlConnection)></li></ul>|
+-<xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlBulkCopy.%23ctor(System.Data.SqlClient.SqlConnection)></li></ul>|

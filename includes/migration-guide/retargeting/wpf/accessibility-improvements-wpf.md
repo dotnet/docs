@@ -7,7 +7,7 @@
 - The text in <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls when they are selected is now easier to see than in previous .NET Framework versions.
 - The border of a disabled <xref:System.Windows.Controls.ComboBox> is now the same color as the disabled text. In previous versions of the .NET Framework, it was not.
 - Disabled and focused buttons now use the correct theme color. In previous versions of the .NET Framework, they did not.
-- The dropdown button is now visible when a <xref:System.Windows.Controls.ComboBox> control's style is set to <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey?displayProperty=fullNameWithType>, In previous versions of the .NET Framework, it was not.
+- The dropdown button is now visible when a <xref:System.Windows.Controls.ComboBox> control's style is set to <xref:System.Windows.Controls.ToolBar.ComboBoxStyleKey?displayProperty=nameWithType>, In previous versions of the .NET Framework, it was not.
 - The sort indicator arrow in a <xref:System.Windows.Controls.DataGrid> control now uses theme colors. In previous versions of the .NET Framework, it did not.
 - The default hyperlink style now changes to the correct theme color on mouse over. In previous versions of the .NET Framework, it did not.
 - The Keyboard focus on radio buttons is now visible. In previous versions of the .NET Framework, it was not.
@@ -42,10 +42,10 @@ For an overview of UI automation, see the [UI Automation Overview](~/docs/framew
 
 #### Affected APIs
 
-- <xref:System.Windows.Automation.AutomationElementIdentifiers.LiveSettingProperty?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.AutomationElementIdentifiers.LiveRegionChangedEvent?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.AutomationLiveSetting?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.AutomationProperties.LiveSettingProperty?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)?displayProperty=fullNameWithType>
-- <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore?displayProperty=fullNameWithType>
+- <xref:System.Windows.Automation.AutomationElementIdentifiers.LiveSettingProperty?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.AutomationElementIdentifiers.LiveRegionChangedEvent?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.AutomationLiveSetting?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.AutomationProperties.LiveSettingProperty?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.AutomationProperties.SetLiveSetting(System.Windows.DependencyObject,System.Windows.Automation.AutomationLiveSetting)?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.AutomationProperties.GetLiveSetting(System.Windows.DependencyObject)?displayProperty=nameWithType>
+- <xref:System.Windows.Automation.Peers.AutomationPeer.GetLiveSettingCore?displayProperty=nameWithType>

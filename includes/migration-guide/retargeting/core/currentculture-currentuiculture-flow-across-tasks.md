@@ -22,7 +22,7 @@ This issue has been fixed by WPF in .NET Framework 4.6.2. It has also been fixed
 
 #### Affected APIs
 
-- <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=fullNameWithType>
-- <xref:System.Threading.Thread.CurrentCulture?displayProperty=fullNameWithType>
-- <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=fullNameWithType>
-- <xref:System.Threading.Thread.CurrentUICulture?displayProperty=fullNameWithType>
+- <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType>
+- <xref:System.Threading.Thread.CurrentCulture?displayProperty=nameWithType>
+- <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType>
+- <xref:System.Threading.Thread.CurrentUICulture?displayProperty=nameWithType>

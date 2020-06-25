@@ -44,9 +44,9 @@ Applications calling network I/O APIs such as <xref:System.IO.Stream.Read(System
 
 #### Affected APIs
 
-- <xref:System.Net.Security.SslStream?displayProperty=fullNameWithType>
-- <xref:System.Net.WebRequest?displayProperty=fullNameWithType>
-- <xref:System.Net.HttpWebRequest?displayProperty=fullNameWithType>
-- <xref:System.Net.FtpWebRequest?displayProperty=fullNameWithType>
-- <xref:System.Net.Mail.SmtpClient?displayProperty=fullNameWithType>
-- <xref:System.Net.Http?displayProperty=fullNameWithType>
+- <xref:System.Net.Security.SslStream?displayProperty=nameWithType>
+- <xref:System.Net.WebRequest?displayProperty=nameWithType>
+- <xref:System.Net.HttpWebRequest?displayProperty=nameWithType>
+- <xref:System.Net.FtpWebRequest?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.Http?displayProperty=nameWithType>

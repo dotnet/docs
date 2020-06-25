@@ -23,7 +23,7 @@ The recommended mitigation is to upgrade the sever-side app to Tls1.0, Tls1.1, o
 
 #### Affected APIs
 
-- <xref:System.Net.SecurityProtocolType.Ssl3?displayProperty=fullNameWithType>
-- <xref:System.Security.Authentication.SslProtocols.None?displayProperty=fullNameWithType>
-- <xref:System.Security.Authentication.SslProtocols.Ssl2?displayProperty=fullNameWithType>
-- <xref:System.Security.Authentication.SslProtocols.Ssl3?displayProperty=fullNameWithType>
+- <xref:System.Net.SecurityProtocolType.Ssl3?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.None?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.Ssl2?displayProperty=nameWithType>
+- <xref:System.Security.Authentication.SslProtocols.Ssl3?displayProperty=nameWithType>

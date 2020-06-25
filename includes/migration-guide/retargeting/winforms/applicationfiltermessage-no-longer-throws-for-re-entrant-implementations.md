@@ -16,4 +16,4 @@ Be aware that <xref:System.Windows.Forms.Application.FilterMessage(System.Window
 
 #### Affected APIs
 
-- <xref:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message@)?displayProperty=fullNameWithType>
+- <xref:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message@)?displayProperty=nameWithType>

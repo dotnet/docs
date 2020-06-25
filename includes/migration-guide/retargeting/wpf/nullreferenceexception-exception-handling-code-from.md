@@ -18,4 +18,4 @@ Developers who wish to revert to getting <xref:System.NullReferenceException?dis
 
 #### Affected APIs
 
-- <xref:System.Windows.Media.ImageSourceConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)?displayProperty=fullNameWithType>
+- <xref:System.Windows.Media.ImageSourceConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)?displayProperty=nameWithType>

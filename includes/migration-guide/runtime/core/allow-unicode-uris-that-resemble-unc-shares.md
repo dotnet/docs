@@ -16,4 +16,4 @@ Applications working with URIs consistently containing Unicode could have concei
 
 #### Affected APIs
 
--<xref:System.Uri?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Uri?displayProperty=nameWithType></li></ul>|

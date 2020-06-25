@@ -16,4 +16,4 @@ When catching an <xref:System.InvalidOperationException?displayProperty=fullName
 
 #### Affected APIs
 
--<xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=fullNameWithType></li><li><xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType></li><li><xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)?displayProperty=nameWithType></li></ul>|

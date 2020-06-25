@@ -25,9 +25,9 @@ If this change is undesirable, you can disable certificate EKU OID validation by
 
 #### Affected APIs
 
-- <xref:System.Net.Security.SslStream?displayProperty=fullNameWithType>
-- <xref:System.Net.ServicePointManager?displayProperty=fullNameWithType>
-- <xref:System.Net.Http.HttpClient?displayProperty=fullNameWithType>
-- <xref:System.Net.Mail.SmtpClient?displayProperty=fullNameWithType>
-- <xref:System.Net.HttpWebRequest?displayProperty=fullNameWithType>
-- <xref:System.Net.FtpWebRequest?displayProperty=fullNameWithType>
+- <xref:System.Net.Security.SslStream?displayProperty=nameWithType>
+- <xref:System.Net.ServicePointManager?displayProperty=nameWithType>
+- <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.HttpWebRequest?displayProperty=nameWithType>
+- <xref:System.Net.FtpWebRequest?displayProperty=nameWithType>

@@ -6,7 +6,7 @@ In WPF applications using [non-adorner based text selection](https://github.com/
 
 #### Suggestion
 
-Once non-adorner based text selection is enabled, you can use the <xref:System.Windows.Controls.PasswordBox.SelectionTextBrush?displayProperty=fullNameWithType> and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush> property to change the appearance of the selected text. This can be achieved using XAML:
+Once non-adorner based text selection is enabled, you can use the <xref:System.Windows.Controls.PasswordBox.SelectionTextBrush?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush> property to change the appearance of the selected text. This can be achieved using XAML:
 
 <pre><code class="lang-xaml">&lt;TextBox SelectionBrush=&quot;Red&quot; SelectionTextBrush=&quot;White&quot;  SelectionOpacity=&quot;0.5&quot;&#13;&#10;Foreground=&quot;Blue&quot; CaretBrush=&quot;Blue&quot;&gt;&#13;&#10;This is some text.&#13;&#10;&lt;/TextBox&gt;&#13;&#10;</code></pre>
 
@@ -18,7 +18,7 @@ Once non-adorner based text selection is enabled, you can use the <xref:System.W
 
 #### Affected APIs
 
-- <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrushProperty?displayProperty=fullNameWithType>
-- <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush?displayProperty=fullNameWithType>
+- <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrushProperty?displayProperty=nameWithType>
+- <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionTextBrush?displayProperty=nameWithType>
 - [System.Windows.Controls.TextBox](xref:System.Windows.Controls.TextBox)
 - [System.Windows.Controls.PasswordBox](xref:System.Windows.Controls.PasswordBox)

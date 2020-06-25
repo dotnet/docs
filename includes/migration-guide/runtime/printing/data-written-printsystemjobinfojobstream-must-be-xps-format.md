@@ -16,4 +16,4 @@ To output print content, you can do either of the following:<ul><li>Use the <xre
 
 #### Affected APIs
 
--<xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=nameWithType></li></ul>|

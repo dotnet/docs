@@ -16,4 +16,4 @@ Ideally, code should be fixed to not modify lists while enumerating their elemen
 
 #### Affected APIs
 
-- <xref:System.Collections.Generic.List%601.ForEach(System.Action{%600})?displayProperty=fullNameWithType>
+- <xref:System.Collections.Generic.List%601.ForEach(System.Action{%600})?displayProperty=nameWithType>

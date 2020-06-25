@@ -16,4 +16,4 @@ None. This change conforms to the expected behavior for controls inside a <xref:
 
 #### Affected APIs
 
--<xref:System.Windows.UIElement.IsEnabled?displayProperty=fullNameWithType></li></ul>|
+-<xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType></li></ul>|

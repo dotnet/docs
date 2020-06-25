@@ -28,6 +28,6 @@ If the old .NET Framework 4.0 URI parsing semantics are necessary (they often ar
 - <xref:System.Uri.%23ctor(System.String,System.Boolean)>
 - <xref:System.Uri.%23ctor(System.String,System.UriKind)>
 - <xref:System.Uri.%23ctor(System.Uri,System.String)>
-- <xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=fullNameWithType>
-- <xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=fullNameWithType>
-- <xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=fullNameWithType>
+- <xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=nameWithType>
+- <xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=nameWithType>
+- <xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=nameWithType>

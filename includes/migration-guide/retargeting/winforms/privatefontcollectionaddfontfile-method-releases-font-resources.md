@@ -2,7 +2,7 @@
 
 #### Details
 
-In the .NET Framework 4.7.1 and previous versions, the <xref:System.Drawing.Text.PrivateFontCollection?displayProperty=fullNameWithType> class does not release the GDI+ font resources after the <xref:System.Drawing.Text.PrivateFontCollection> is disposed for <xref:System.Drawing.Font> objects that are added to this collection using the <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)> method. In the .NET Framework 4.7.2 and later <xref:System.Drawing.Text.FontCollection.Dispose%2A> releases the GDI+ fonts that were added to the collection as files.
+In the .NET Framework 4.7.1 and previous versions, the <xref:System.Drawing.Text.PrivateFontCollection?displayProperty=nameWithType> class does not release the GDI+ font resources after the <xref:System.Drawing.Text.PrivateFontCollection> is disposed for <xref:System.Drawing.Font> objects that are added to this collection using the <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)> method. In the .NET Framework 4.7.2 and later <xref:System.Drawing.Text.FontCollection.Dispose%2A> releases the GDI+ fonts that were added to the collection as files.
 
 #### Suggestion
 
@@ -24,5 +24,5 @@ Applications that target the .NET Framework 4.7.2 or later, and want to preserve
 
 #### Affected APIs
 
-- <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=fullNameWithType>
-- <xref:System.Drawing.Text.FontCollection.Dispose?displayProperty=fullNameWithType>
+- <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=nameWithType>
+- <xref:System.Drawing.Text.FontCollection.Dispose?displayProperty=nameWithType>

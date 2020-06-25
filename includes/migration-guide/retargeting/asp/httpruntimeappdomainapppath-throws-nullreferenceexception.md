@@ -19,4 +19,4 @@ You can do either of the follow to respond to this change:
 
 #### Affected APIs
 
-- <xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=fullNameWithType>
+- <xref:System.Web.HttpRuntime.AppDomainAppPath?displayProperty=nameWithType>

@@ -12,13 +12,13 @@ A deadlock may result in a Reentrant service, which restricts instances of the s
 
 To address this issue, you can do the following:
 
-- Set the service's concurrency mode to <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=fullNameWithType> or &lt;System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=fullNameWithType&gt;. For example:
+- Set the service's concurrency mode to <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> or &lt;System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType&gt;. For example:
 
 ```csharp
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]
 ```
 
-- Install the latest update to the .NET Framework 4.6.2, or upgrade to a later version of the .NET Framework. This disables the flow of the <xref:System.Threading.ExecutionContext> in <xref:System.ServiceModel.OperationContext.Current?displayProperty=fullNameWithType>. This behavior is configurable; it is equivalent to adding the following app setting to your configuration file:
+- Install the latest update to the .NET Framework 4.6.2, or upgrade to a later version of the .NET Framework. This disables the flow of the <xref:System.Threading.ExecutionContext> in <xref:System.ServiceModel.OperationContext.Current?displayProperty=nameWithType>. This behavior is configurable; it is equivalent to adding the following app setting to your configuration file:
 
 ```xml
 <appSettings>
@@ -36,5 +36,5 @@ The value of `Switch.System.ServiceModel.DisableOperationContextAsyncFlow` shoul
 
 #### Affected APIs
 
-- <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=fullNameWithType>
-- <xref:System.ServiceModel.ConcurrencyMode.Reentrant?displayProperty=fullNameWithType>
+- <xref:System.ServiceModel.ServiceBehaviorAttribute?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ConcurrencyMode.Reentrant?displayProperty=nameWithType>

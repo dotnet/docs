@@ -14,8 +14,6 @@ If the app.config file already contains the `AppContextSwitchOverrides` element,
 
 <pre><code class="lang-xml">&lt;AppContextSwitchOverrides&#13;&#10;value=&quot;Switch.System.Drawing.DontSupportPngFramesInIcons=true;&lt;previous key&gt;=&lt;previous value&gt;&quot; /&gt;&#13;&#10;</code></pre>
 
-
-
 | Name    | Value       |
 |:--------|:------------|
 | Scope   | Minor       |
@@ -25,4 +23,3 @@ If the app.config file already contains the `AppContextSwitchOverrides` element,
 #### Affected APIs
 
 - <xref:System.Drawing.Icon.ToBitmap?displayProperty=fullNameWithType>
-

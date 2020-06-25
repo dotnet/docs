@@ -1,5 +1,6 @@
 ---
 title: "dirtyCastAndCallOnInterface MDA"
+description: Review the dirtyCastAndCallOnInterface managed debugging assistant, which is invoked when early-bound vtable calls are done on late-bound only class interfaces.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), early bound calls AutoDispatch"

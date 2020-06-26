@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("DynamicWalkthrough")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("MSIT")> 
-<Assembly: AssemblyProduct("DynamicWalkthrough")> 
-<Assembly: AssemblyCopyright("Copyright © MSIT 2009")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("DynamicWalkthrough")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("MSIT")>
+<Assembly: AssemblyProduct("DynamicWalkthrough")>
+<Assembly: AssemblyCopyright("Copyright © MSIT 2009")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("cdd9d3bc-b547-421e-bdf1-bd18d6e31a42")> 
+<Assembly: Guid("cdd9d3bc-b547-421e-bdf1-bd18d6e31a42")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

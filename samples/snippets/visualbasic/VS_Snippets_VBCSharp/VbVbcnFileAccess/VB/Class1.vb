@@ -3,11 +3,11 @@ Imports System.Windows.Forms
 
 Public Class Class1
 
-  Sub Test()
-    Dim ListBox1 As New System.Windows.Forms.listbox
+    Sub Test()
+        Dim ListBox1 As New System.Windows.Forms.listbox
 
-    '********************************************************************
-    '<Snippet1>
+        '********************************************************************
+        '<Snippet1>
         For Each foundDirectory As String In
                My.Computer.FileSystem.GetDirectories(
                    My.Computer.FileSystem.SpecialDirectories.MyDocuments,
@@ -16,7 +16,7 @@ Public Class Class1
 
             ListBox1.Items.Add(foundDirectory)
         Next
-    '</Snippet1>
-  End Sub
+        '</Snippet1>
+    End Sub
 
 End Class

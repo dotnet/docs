@@ -11,7 +11,7 @@ Public Class Samples1
     Public Shared Sub Main()
 
         '<Snippet2>  
-        Dim contact1 As XElement = 
+        Dim contact1 As XElement =
             <ns:contact>
                 <ns:name>Patrick Hines</ns:name>
                 <ns:phone type="home">206-555-0144</ns:phone>
@@ -22,7 +22,7 @@ Public Class Samples1
         '</Snippet2>
 
         '<Snippet3>  
-        Dim contact2 As XElement = 
+        Dim contact2 As XElement =
             <ns1:contact xmlns:ns1="http://someNamespace">
                 <ns1:name>Patrick Hines</ns1:name>
                 <ns1:phone type="home">206-555-0144</ns1:phone>

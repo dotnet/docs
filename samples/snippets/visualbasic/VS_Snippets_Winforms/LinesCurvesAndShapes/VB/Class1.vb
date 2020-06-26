@@ -12,7 +12,7 @@ Imports System.Drawing.Drawing2D
 Public Class LinesCurvesAndShapes
     Inherits Form
     Dim myPen As Pen = Pens.Black
-    Dim mySolidBrush As SolidBrush = CType(Brushes.Red,SolidBrush)
+    Dim mySolidBrush As SolidBrush = CType(Brushes.Red, SolidBrush)
     Dim myGraphicsPath As New GraphicsPath()
 
     <STAThread()> _

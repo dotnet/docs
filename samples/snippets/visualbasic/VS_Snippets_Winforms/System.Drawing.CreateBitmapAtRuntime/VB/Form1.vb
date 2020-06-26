@@ -10,33 +10,33 @@ Imports System.Windows.Forms
 
 Public Class Form1
     Inherits Form
-    
-    Public Sub New() 
+
+    Public Sub New()
 
         CreateBitmapAtRuntime()
-    
+
     End Sub
-    
-    
-    <STAThread()>  _
-    Shared Sub Main() 
+
+
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
-    
+
     End Sub
-    
-    
+
+
 
 
     '<snippet1>
     Private pictureBox1 As New PictureBox()
-    
-    Public Sub CreateBitmapAtRuntime() 
+
+    Public Sub CreateBitmapAtRuntime()
         pictureBox1.Size = New Size(210, 110)
         Me.Controls.Add(pictureBox1)
-        
-        
+
+
         Dim flag As New Bitmap(200, 100)
         Dim flagGraphics As Graphics = Graphics.FromImage(flag)
         Dim red As Integer = 0
@@ -48,7 +48,7 @@ Public Class Form1
             white += 20
         End While
         pictureBox1.Image = flag
-    
-    End Sub 
-'</snippet1>
+
+    End Sub
+    '</snippet1>
 End Class

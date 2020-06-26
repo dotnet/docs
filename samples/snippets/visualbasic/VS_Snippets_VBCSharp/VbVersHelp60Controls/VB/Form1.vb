@@ -1,11 +1,11 @@
 ﻿Public Class Form1
 
 
-'*************************************************************************
-'<Snippet73>
-' Visual Basic
-Public Sub TimerOn(ByRef Interval As Short)
-    If Interval > 0 Then
+    '*************************************************************************
+    '<Snippet73>
+    ' Visual Basic
+    Public Sub TimerOn(ByRef Interval As Short)
+        If Interval > 0 Then
             ' Start the timer.
             Me.Timer1.Enabled = True
         Else

@@ -9,8 +9,8 @@ Imports System.Drawing.Drawing2D
 
 Public Class SystemDrawingConstructingDrawingPaths
 
-' 5a36b0e4-f1f4-46c0-a85a-22ae98491950
-' How to: Fill Open Figures
+    ' 5a36b0e4-f1f4-46c0-a85a-22ae98491950
+    ' How to: Fill Open Figures
     Private Sub Method11(ByVal e As PaintEventArgs)
         ' <snippet11>
         Dim path As New GraphicsPath()
@@ -30,8 +30,8 @@ Public Class SystemDrawingConstructingDrawingPaths
 
         ' </snippet11>
     End Sub
-' 82fd56c7-b443-4765-9b7c-62ce030656ec
-' How to: Create Figures from Lines, Curves, and Shapes
+    ' 82fd56c7-b443-4765-9b7c-62ce030656ec
+    ' How to: Create Figures from Lines, Curves, and Shapes
     Private Sub Method21(ByVal e As PaintEventArgs)
         ' <snippet21>
         Dim path As New GraphicsPath()

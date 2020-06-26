@@ -1,11 +1,11 @@
 ﻿' Topic: XML Descendant Axis Property
 '<Snippet26>  
-Imports <xmlns:ns = "http://SomeNamespace"> 
- 
+Imports <xmlns:ns="http://SomeNamespace">
+
 Class TestClass2
 
     Shared Sub TestPrefix()
-        Dim contacts = 
+        Dim contacts =
             <ns:contacts>
                 <ns:contact>
                     <ns:name>Patrick Hines</ns:name>

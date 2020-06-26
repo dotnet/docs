@@ -9,8 +9,8 @@ Imports System.Drawing.Drawing2D
 
 Public Class SystemDrawingConstructingDrawingCurves
 
-' 37a0bedb-20c2-4cf0-91fa-a5509e826b30
-' How to: Draw a Sequence of Bézier Splines
+    ' 37a0bedb-20c2-4cf0-91fa-a5509e826b30
+    ' How to: Draw a Sequence of Bézier Splines
     Private Sub Method11(ByVal e As PaintEventArgs)
 
         ' <snippet11>
@@ -37,8 +37,8 @@ Public Class SystemDrawingConstructingDrawingCurves
 
         ' </snippet11>
     End Sub
-' a4a41e80-4461-4b47-b6bd-2c5e68881994
-' How to: Draw Cardinal Splines
+    ' a4a41e80-4461-4b47-b6bd-2c5e68881994
+    ' How to: Draw Cardinal Splines
     Private Sub Method21(ByVal e As PaintEventArgs)
         ' <snippet21>
         Dim points As Point() = { _
@@ -84,8 +84,8 @@ Public Class SystemDrawingConstructingDrawingCurves
 
         ' </snippet23>
     End Sub
-' f4f3fe30-f0a6-4743-ac91-11310cebea9f
-' How to: Draw a Single Bézier Spline
+    ' f4f3fe30-f0a6-4743-ac91-11310cebea9f
+    ' How to: Draw a Single Bézier Spline
     Private Sub Method31(ByVal e As PaintEventArgs)
         ' <snippet31>
         Dim p1 As New Point(10, 100) ' Start point

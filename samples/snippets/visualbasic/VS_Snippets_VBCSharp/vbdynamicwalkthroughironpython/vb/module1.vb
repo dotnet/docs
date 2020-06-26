@@ -8,7 +8,7 @@ Module Module1
     Sub Main()
         '<Snippet2>
         ' Set the current directory to the IronPython libraries.
-        My.Computer.FileSystem.CurrentDirectory = 
+        My.Computer.FileSystem.CurrentDirectory =
            My.Computer.FileSystem.SpecialDirectories.ProgramFiles &
            "\IronPython 2.6 for .NET 4.0\Lib"
 

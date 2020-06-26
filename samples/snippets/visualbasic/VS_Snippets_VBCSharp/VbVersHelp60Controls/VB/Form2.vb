@@ -2,16 +2,16 @@
 Public Class Form2
 
 
-'*************************************************************************
-Class Microsoft
-  Class VisualBasic
-    Public Class ApplicationServices
-      Class StartupNextInstanceEventArgs
-        Inherits System.EventArgs
-      End Class
-    End Class
-    Class Compatibility
-      Class VB6
+    '*************************************************************************
+    Class Microsoft
+        Class VisualBasic
+            Public Class ApplicationServices
+                Class StartupNextInstanceEventArgs
+                    Inherits System.EventArgs
+                End Class
+            End Class
+            Class Compatibility
+                Class VB6
                     Shared Sub SetItemString(ByRef o As Object, i As Integer, ByRef s As String)
                     End Sub
                     Shared Sub SetItemData(ByRef o As Object, i As Integer, ByRef v As Object)

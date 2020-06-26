@@ -15,7 +15,7 @@ Class MainWindow
                 DateTimeOffset.Now.AddSeconds(10.0)
             Dim filePaths As New List(Of String)()
             filePaths.Add("c:\cache\cacheText.txt")
-            policy.ChangeMonitors.Add(New _
+            policy.ChangeMonitors.Add(New  _
                 HostFileChangeMonitor(filePaths))
 
             ' Fetch the file contents.

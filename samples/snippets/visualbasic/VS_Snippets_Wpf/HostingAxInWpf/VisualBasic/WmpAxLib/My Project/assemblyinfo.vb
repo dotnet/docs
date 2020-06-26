@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WmpAxLib")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft")>
-<Assembly: AssemblyProduct("WmpAxLib")>
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2006")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("WmpAxLib")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyProduct("WmpAxLib")> 
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2006")> 
+<Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("6d9facc0-f162-4940-8134-27dfe2671e44")>
+<Assembly: Guid("6d9facc0-f162-4940-8134-27dfe2671e44")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -29,5 +29,5 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("1.0.*")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.*")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

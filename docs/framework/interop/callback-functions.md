@@ -1,5 +1,6 @@
 ---
 title: "Callback Functions"
+description: Read about callback functions, which are code with a managed application that helps an unmanaged DLL function complete a task.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "callback function"

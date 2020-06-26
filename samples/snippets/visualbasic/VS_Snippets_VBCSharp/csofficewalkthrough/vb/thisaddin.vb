@@ -34,7 +34,7 @@ Public Class ThisAddIn
                End Sub)
         '</snippet9>
 
-        '<snippet10>
+    '<snippet10>
         Dim wordApp As New Word.Application
         wordApp.Visible = True
         wordApp.Documents.Add()

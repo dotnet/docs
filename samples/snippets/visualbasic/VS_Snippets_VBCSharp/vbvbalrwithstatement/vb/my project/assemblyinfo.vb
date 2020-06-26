@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("VBWPFApp")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft")>
-<Assembly: AssemblyProduct("VBWPFApp")>
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2011")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("VBWPFApp")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyProduct("VBWPFApp")> 
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2011")> 
+<Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("2e9c142e-be91-4f72-aa3c-0e297699ce4f")>
+<Assembly: Guid("2e9c142e-be91-4f72-aa3c-0e297699ce4f")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

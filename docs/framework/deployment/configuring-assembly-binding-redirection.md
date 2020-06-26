@@ -1,6 +1,5 @@
 ---
 title: "Configuring Assembly Binding Redirection"
-description: See how to configure assembly binding redirection in .NET by using the appliesTo attribute in the assemblyBinding element of an application configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution, assembly binding redirection"

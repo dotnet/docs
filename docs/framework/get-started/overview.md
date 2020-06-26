@@ -1,6 +1,5 @@
 ---
 title: "Overview of the .NET Framework"
-description: Read an overview about .NET, which is a technology that supports building and running Windows apps and web services.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application development [.NET Framework]"

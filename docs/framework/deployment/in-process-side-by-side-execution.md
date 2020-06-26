@@ -1,6 +1,5 @@
 ---
 title: "In-Process Side-by-Side Execution"
-description: Use in-process side-by-side hosting to execute many versions of the common language runtime (CLR) in a single .NET process.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "in-process side-by-side execution"

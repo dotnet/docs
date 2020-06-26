@@ -1,6 +1,5 @@
 ---
 title: "Reducing System Restarts During .NET Framework 4.5 Installations"
-description: Learn to reduce system restarts during .NET 4.5 installations. A restart might be required if a .NET 4 app is in use during .NET 4.5 installation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, reducing system restarts"

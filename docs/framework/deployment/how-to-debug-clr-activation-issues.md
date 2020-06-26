@@ -1,6 +1,5 @@
 ---
 title: "How to debug CLR activation issues"
-description: See how to debug common language runtime (CLR) activation issues in .NET. View and debug CLR activation logs, which may be useful in determining root causes.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "CLR activation, debugging issues"

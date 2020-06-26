@@ -1,6 +1,5 @@
 ---
 title: "Guidelines for Creating Components for Side-by-Side Execution"
-description: Review guidelines for creating components for side-by-side execution. For example, bind type identity to a certain file version, or use version-aware storage.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution, multiple application versions"

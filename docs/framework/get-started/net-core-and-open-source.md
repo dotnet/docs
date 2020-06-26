@@ -1,6 +1,5 @@
 ---
 title: ".NET Core and Open-Source"
-description: Read an overview about .NET Core, which is a general-purpose, modular, cross-platform, and open-source implementation of the .NET Standard.
 ms.date: "03/30/2017"
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
 ---

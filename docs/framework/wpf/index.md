@@ -1,6 +1,6 @@
 ---
 title: "Windows Presentation Foundation"
-description: Learn about the unified programming model in Windows Presentation Foundation (WPF) for building line-of-business desktop applications on Windows.
+description: Learn about the unified programming model in Windows Presentation Foundation (WPF) for building line-of-business desktop applications in Windows.
 ms.date: "01/25/2018"
 applies_to:
   - "Windows 10"

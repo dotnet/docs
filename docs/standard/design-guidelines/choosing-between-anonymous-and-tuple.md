@@ -1,13 +1,13 @@
 ---
-title: "Choosing between anonymous and tuple types"
+title: Choosing between anonymous and tuple types
 description: Learn how to decide whether to design a type as a class, or to design a type as a struct.
-ms.date: 06/24/2020
+ms.date: 06/26/2020
 ms.technology: dotnet-standard
 ---
 
 # Choosing between anonymous and tuple types
 
-As a developer, choosing the appropriate type can be scary task. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. There are more modern options that exist, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
+As a developer, choosing the appropriate type involves considering a types usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
 
 ## Usability and functionality
 
@@ -65,7 +65,7 @@ foreach (var tuple in
 }
 ```
 
-With the <xref:System.Tuple%602?displayProperty=nameWithType>, the instance exposes numbered item properties, such as `Item1`, and `Item2`. These property names can make it more difficult to understand the intent of the property values, as the property name only provides the ordinal. Furthermore, the `System.Tuple` types are reference `class` types. The <xref:System.ValueTuple%602?displayProperty=nameWithType> however, is a value `struct` type.
+With the <xref:System.Tuple%602?displayProperty=nameWithType>, the instance exposes numbered item properties, such as `Item1`, and `Item2`. These property names can make it more difficult to understand the intent of the property values, as the property name only provides the ordinal. Furthermore, the `System.Tuple` types are reference `class` types. The <xref:System.ValueTuple%602?displayProperty=nameWithType> however, is a value `struct` type. The following C# snippet, uses `ValueTuple<string, long>` to project into. In doing so, it assigns using a literal syntax.
 
 ```csharp-interactive
 var dates = new[]
@@ -83,23 +83,30 @@ foreach (var (formatted, ticks) in
 }
 ```
 
-The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations. One nicety with <xref:System.ValueTuple> is the ability to deconstruct the tuple into its members.
+C# provides language support of tuples with the <xref:System.ValueTuple> type, and semantics for:
 
-## Limitations
+- [Tuple assignment](../../csharp/tuples.md#assignment-and-tuples)
+- [Tuple deconstruction](../../csharp/deconstruct.md) (not limited to tuples)
+- [Tuple equality checks](../../csharp/tuples.md#equality-and-tuples)
+- [Tuple projection initializers](../../csharp/tuples.md#tuple-projection-initializers)
 
-While it might seem as though you should always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types - there are tradeoffs you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot.
+The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations.
+
+## Tradeoffs
+
+While it might seem as though you should always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types - there are tradeoffs you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot. The following table is an overview of some of the key differences.
 
 ### Key differences
 
-| Name                     | Type     | Custom property name | Deconstruction support | Expression tree support |
-|--------------------------|----------|----------------------|------------------------|-------------------------|
-| Anonymous types          | `class`  | ✔️                  | ❌                      | ✔️                     |
-| <xref:System.Tuple>      | `class`  | ❌                   | ❌                      | ✔️                     |
-| <xref:System.ValueTuple> | `struct` | ✔️                  | ✔️                     | ❌                      |
+| Name                     | Access modifier | Type     | Custom property name | Deconstruction support | Expression tree support |
+|--------------------------|-----------------|----------|----------------------|------------------------|-------------------------|
+| Anonymous types          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
+| <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |
+| <xref:System.ValueTuple> | `public`        | `struct` | ✔️                   | ✔️                     | ❌                     |
 
 ## Performance
 
-Performance is always a topic of discussion when referring to value types vs reference types, often leading to conversations of stack versus heap allocations. However, performance between these types is fairly similar with each other - in other words, performance is irrelevant. The micro-optimizations you might gain from choosing tuples over anonymous types is more often than not negligible.
+Performance is always a topic of discussion when referring to value types vs reference types, often leading to conversations of stack versus heap allocations. However, performance between these types is fairly similar with each other - in other words, performance differences are negligible. The micro-optimizations you might gain from choosing tuples over anonymous types is more often than not irrelevant.
 
 ## Conclusion
 

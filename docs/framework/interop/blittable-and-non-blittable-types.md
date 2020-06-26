@@ -1,5 +1,6 @@
 ---
 title: "Blittable and Non-Blittable Types"
+description: Learn about blittable and non-blittable types. Blittable data types are commonly represented in managed and unmanaged memory and don't need special handling.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "interop marshaling, blittable types"

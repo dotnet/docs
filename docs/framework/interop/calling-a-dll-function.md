@@ -1,5 +1,6 @@
 ---
 title: "Calling a DLL Function"
+description: Review issues about calling a DLL function that can seem confusing. The function calling process differs depending on if the return type is blittable.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "unmanaged functions, calling"

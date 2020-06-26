@@ -1,5 +1,6 @@
 ---
 title: "Exposing COM Components to the .NET Framework"
+description: Know the process of exposing COM components to .NET. COM components are valuable in managed code as middle-tier business applications or isolated functionality.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exposing COM components to .NET Framework"

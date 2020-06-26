@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Deployment Guide for Administrators"
+description: Read the .NET deployment guide for administrators. Use this information to deploy .NET version 4.5 and its system dependencies across a network.
 ms.date: "04/10/2018"
 helpviewer_keywords:
   - "administrator's guide, deploying .NET Framework"

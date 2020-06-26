@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Client Profile"
+description: Read about the .NET Client Profile, which was a subset of .NET that was provided in version 4 and earlier editions of .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF [.NET Framework Client Profile]"

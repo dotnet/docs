@@ -1,8 +1,8 @@
 ﻿Public Class Form4
 
 
-    '*************************************************************************
-    Sub test()
+  '*************************************************************************
+  Sub test()
 
         '<Snippet77>
         ' Visual Basic
@@ -48,5 +48,5 @@
         intEnd = Me.RichTextBox1.Find(endChars, Me.RichTextBox1.SelectionStart)
         Me.RichTextBox1.SelectionLength = intEnd - Me.RichTextBox1.SelectionStart
     End Sub
-    '</Snippet78>
+  '</Snippet78>
 End Class

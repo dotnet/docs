@@ -1,10 +1,10 @@
 ﻿Public Class Form3
 
 
-    '*************************************************************************
-    '<Snippet72>
-    ' Visual Basic
-    Private Sub Form1_Load2() Handles MyBase.Load
+'*************************************************************************
+'<Snippet72>
+' Visual Basic
+Private Sub Form1_Load2() Handles MyBase.Load
         Me.TextBox1.MaxLength = 5
     End Sub
     Private Sub SetText()

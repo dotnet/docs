@@ -1,6 +1,6 @@
 ---
 title: Differences Between DataGridView and DataGrid Controls
-description: Learn the various differences between Windows Forms DataGridView and DataGrid controls features, as well as their architecture.
+description: Learn the various differences between Windows Forms DataGridView and DataGrid controls features, as well as differences in their architecture.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms"

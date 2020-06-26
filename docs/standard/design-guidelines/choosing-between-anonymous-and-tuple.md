@@ -94,7 +94,7 @@ The previous examples are all functionally equivalent, however; there are slight
 
 ## Tradeoffs
 
-While it might seem as though you should always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types - there are tradeoffs you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot. The following table is an overview of some of the key differences.
+You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, and anonymous types, but there are tradeoffs you should consider. The <xref:System.ValueTuple> types are mutable, whereas <xref:System.Tuple> are read-only. Anonymous types can be used in expression trees, while tuples cannot. The following table is an overview of some of the key differences.
 
 ### Key differences
 
@@ -103,6 +103,10 @@ While it might seem as though you should always use <xref:System.ValueTuple> ove
 | Anonymous types          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
 | <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |
 | <xref:System.ValueTuple> | `public`        | `struct` | ✔️                   | ✔️                     | ❌                     |
+
+### Serialization
+
+One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../../csharp/programming-guide/concepts/serialization/index.md). With anonymous types, and tuple types it is not recommended to use them if you need to serialization. While it is possible to use them with serialization, it is not fully supported, and requires workarounds.
 
 ## Performance
 

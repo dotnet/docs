@@ -1,6 +1,6 @@
 ---
 title: Develop Custom Controls
-description: Learn about Windows Form controls. Specifically, you'll learn to combine existing controls, extend existing controls, or author your own custom controls.
+description: Learn about Windows Form controls. Specifically, you'll learn to combine existing controls, extend existing controls, and author your own custom controls.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], developing using code"

@@ -7,24 +7,24 @@ Imports System.Windows.Media.Imaging
 
 Namespace Microsoft.Samples.BrushExamples
 
-    Public Class TileSizeExample
-        Inherits Page
+	Public Class TileSizeExample
+		Inherits Page
 
 
-        Public Sub New()
+		Public Sub New()
 
-            ' Create the main panel.
-            Dim mainPanel As New StackPanel()
-            mainPanel.Orientation = Orientation.Horizontal
-            createRelativeTileSizeExample(mainPanel)
-            createAbsoluteTileSizeExample(mainPanel)
-            Me.Content = mainPanel
-
-
-        End Sub
+			' Create the main panel.
+			Dim mainPanel As New StackPanel()
+			mainPanel.Orientation = Orientation.Horizontal
+			createRelativeTileSizeExample(mainPanel)
+			createAbsoluteTileSizeExample(mainPanel)
+			Me.Content = mainPanel
 
 
-        Private Sub createRelativeTileSizeExample(ByVal mainPanel As Panel)
+		End Sub
+
+
+		Private Sub createRelativeTileSizeExample(ByVal mainPanel As Panel)
 
 
             Dim rectangleBorder As New Border()
@@ -60,9 +60,9 @@ Namespace Microsoft.Samples.BrushExamples
             rectangleBorder.Child = myRectangle
             mainPanel.Children.Add(rectangleBorder)
 
-        End Sub
+		End Sub
 
-        Private Sub createAbsoluteTileSizeExample(ByVal mainPanel As Panel)
+		Private Sub createAbsoluteTileSizeExample(ByVal mainPanel As Panel)
 
 
             Dim rectangleBorder As New Border()
@@ -98,8 +98,8 @@ Namespace Microsoft.Samples.BrushExamples
             rectangleBorder.Child = myRectangle
             mainPanel.Children.Add(rectangleBorder)
 
-        End Sub
+		End Sub
 
-    End Class
+	End Class
 
 End Namespace

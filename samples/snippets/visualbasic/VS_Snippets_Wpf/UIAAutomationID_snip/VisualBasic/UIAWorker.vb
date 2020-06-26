@@ -1,4 +1,4 @@
-﻿'******************************************************************************
+﻿ '******************************************************************************
 ' *
 ' * File: UIAWorker.cs
 ' *
@@ -35,15 +35,15 @@ Imports System.Collections
 Class UIAWorker
     ' Member variables
     Private targetApp As AutomationElement
-
+    
     ' The desktop.
     Private rootElement As AutomationElement
-
+    
     Public elementQueue As New Queue()
 
     Public controlStore As ArrayList
-
-
+    
+    
     ''' <summary>
     ''' Constructor.
     ''' </summary>
@@ -102,7 +102,7 @@ Class UIAWorker
         cacheRequest.TreeScope = TreeScope.Element
 
         Using cacheRequest.Activate()
-            ' Focus changes are global; we'll get cached properties for all elements that receive focus.
+                            ' Focus changes are global; we'll get cached properties for all elements that receive focus.
             Dim focusHandler As New AutomationFocusChangedEventHandler(AddressOf OnFocusChange)
             Automation.AddAutomationFocusChangedEventHandler(focusHandler)
 
@@ -146,7 +146,7 @@ Class UIAWorker
     ''' to window-closed events.
     ''' </summary>
     ''' <param name="element">The window element.</param>
-    Private Sub AddToControlStore(ByVal element As AutomationElement)
+    Private Sub AddToControlStore(ByVal element As AutomationElement) 
         ' If it's a real window (not Program Manager), subscribe to window-closed event.
         'Object pattern;
         'if (element.TryGetCachedPattern(WindowPattern.Pattern, out pattern))
@@ -175,7 +175,7 @@ Class UIAWorker
 
         Feedback("Invoke event.")
 
-        Dim invokedElement As AutomationElement = DirectCast(src, AutomationElement)
+        Dim invokedElement As AutomationElement = DirectCast(src, AutomationElement) 
         Feedback(invokedElement.Current.Name)
 
         Dim invokeEvent As New ElementStore()
@@ -228,8 +228,8 @@ Class UIAWorker
         End Try
 
     End Sub
-
-
+    
+    
     '''--------------------------------------------------------------------
     ''' <summary>
     ''' Retrieves the top-level window that contains the 
@@ -238,7 +238,7 @@ Class UIAWorker
     ''' <param name="element">The contained element.</param>
     ''' <returns>The containing top-level window element.</returns>
     '''--------------------------------------------------------------------
-    Private Function GetTopLevelWindow(ByVal element As AutomationElement) As AutomationElement
+    Private Function GetTopLevelWindow(ByVal element As AutomationElement) As AutomationElement 
         Dim walker As TreeWalker = TreeWalker.ControlViewWalker
         Dim elementParent As AutomationElement
         Dim node As AutomationElement = element
@@ -253,10 +253,10 @@ Class UIAWorker
             node = elementParent
         Loop While True
         Return node
-
+    
     End Function 'GetTopLevelWindow
-
-
+    
+    
     ''' <summary>
     ''' Destructor.
     ''' </summary>
@@ -277,8 +277,8 @@ Class UIAWorker
     ''' </summary>
     ''' <param name="outputStr">The string to print.</param>
     ''' <remarks>Must use Invoke so that UI is not being called directly from this thread.</remarks>
-    Private Sub Feedback(ByVal outputStr As String)
-
+    Private Sub Feedback(ByVal outputStr As String) 
+    
     End Sub
 End Class
 

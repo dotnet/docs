@@ -10,7 +10,7 @@ Namespace SDKSample
 
     Class ColorConvertedBitmapExample
         Inherits Page
-
+ 
         Public Sub New()
 
 

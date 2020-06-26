@@ -6,7 +6,7 @@ Imports Microsoft.Win32
 Namespace SDKSample
     Public Class MainWindow
         Inherits Window
-
+        
         Public Sub New()
             Me.InitializeComponent()
         End Sub

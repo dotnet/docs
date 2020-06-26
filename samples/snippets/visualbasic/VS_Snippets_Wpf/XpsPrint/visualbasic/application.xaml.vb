@@ -5,15 +5,15 @@
 Imports System.Windows
 
 Namespace SDKSample
-    ''' <summary>
-    '''   Interaction logic for App.xaml</summary>
-    Partial Public Class App
-        Inherits Application
-        Private Sub AppStartup(ByVal sender As Object, ByVal args As StartupEventArgs)
-            Dim mainWindow As New Window1()
-            mainWindow.Show()
-        End Sub
+	''' <summary>
+	'''   Interaction logic for App.xaml</summary>
+	Partial Public Class App
+		Inherits Application
+		Private Sub AppStartup(ByVal sender As Object, ByVal args As StartupEventArgs)
+			Dim mainWindow As New Window1()
+			mainWindow.Show()
+		End Sub
 
-    End Class
+	End Class
 
 End Namespace ' end:namespace SDKSample

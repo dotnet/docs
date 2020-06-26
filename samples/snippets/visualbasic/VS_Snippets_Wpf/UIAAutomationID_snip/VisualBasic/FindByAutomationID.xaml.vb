@@ -18,7 +18,7 @@ Namespace UIAAutomationID_snip
     ''' Interaction logic for FindByAutomationID.xaml
     ''' </summary>
     Partial Public Class FindByAutomationID
-        Inherits Window
+        Inherits Window 
         Private targetApp As AutomationElement
 
         Public Sub New()

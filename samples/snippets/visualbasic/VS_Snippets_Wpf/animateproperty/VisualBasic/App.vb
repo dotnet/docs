@@ -13,33 +13,33 @@ Imports System.Windows.Controls
 
 Namespace Microsoft.Samples.Animation.LocalAnimations
 
-
+    
     ' Displays the sample.
     Public Class app
-        Inherits Application
-
-        Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+    	Inherits Application
+        
+	Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
             MyBase.OnStartup(e)
             CreateAndShowMainWindow()
         End Sub
-
+        
         Private Sub CreateAndShowMainWindow()
-
+        
             ' Create the application's main window.
             Dim sViewer As New SampleViewer()
             MainWindow = sViewer
             sViewer.Show()
-        End Sub
-
+        End Sub        
+        
 
     End Class
-
+    
     Public Class SampleViewer
-        Inherits Window
-
-
+    	Inherits Window
+    
+    
         Public Sub New()
-
+        
             Dim tControl As New TabControl()
             Dim tItem As New TabItem()
             tItem.Header = "Local Animation Example"
@@ -53,13 +53,13 @@ Namespace Microsoft.Samples.Animation.LocalAnimations
             contentFrame.Content = New InteractiveAnimationExample()
             tItem.Content = contentFrame
             tControl.Items.Add(tItem)
-
+            
             Me.Content = tControl
             Me.Title = "Local Animations Example"
-
+        
         End Sub
-
-    End Class
+    
+    End Class  
 
     ' Starts the application.
     Public NotInheritable Class EntryClass

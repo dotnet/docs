@@ -8,16 +8,16 @@ Imports System.Windows.Shapes
 
 
 Namespace XAML
-    ''' <summary>
-    ''' Interaction logic for StartupWindow.XAML
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for StartupWindow.XAML
+	''' </summary>
 
-    Partial Public Class StartupWindow
-        Inherits Window
+	Partial Public Class StartupWindow
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-    End Class
+	End Class
 End Namespace

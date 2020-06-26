@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("DataGridValidation")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft")>
-<Assembly: AssemblyProduct("DataGridValidation")>
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("DataGridValidation")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyProduct("DataGridValidation")> 
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")> 
+<Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("ebf84fd6-1a23-4086-a7f7-7cdaf18008c3")>
+<Assembly: Guid("ebf84fd6-1a23-4086-a7f7-7cdaf18008c3")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

@@ -8,14 +8,14 @@ Imports System.Windows.Controls.Primitives
 Imports System.Windows.Media.Imaging
 
 
-'@ <summary>
-'@ Interaction logic for Window1.xaml
-'@ </summary>
+    '@ <summary>
+    '@ Interaction logic for Window1.xaml
+    '@ </summary>
 
-public partial class Window1
-    inherits window
+    public partial class Window1 
+inherits window
 
-
+ 
     Private Sub WindowLoaded(ByVal Sender As Object, ByVal e As RoutedEventArgs)
 
         MakeExpander()

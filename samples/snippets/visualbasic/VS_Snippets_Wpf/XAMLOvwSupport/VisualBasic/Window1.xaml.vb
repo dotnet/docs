@@ -1,3 +1,3 @@
-﻿Class Window1
+﻿Class Window1 
 
 End Class

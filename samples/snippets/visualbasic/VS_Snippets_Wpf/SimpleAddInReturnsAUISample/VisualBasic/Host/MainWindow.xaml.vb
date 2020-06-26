@@ -5,19 +5,19 @@ Imports System.Windows
 Imports HostViews
 
 Namespace Host
-    Partial Public Class MainWindow
-        Inherits Window
-        Private wpfAddInHostView As IWPFAddInHostView
+	Partial Public Class MainWindow
+		Inherits Window
+		Private wpfAddInHostView As IWPFAddInHostView
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-        Private Sub fileExitMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Me.Close()
-        End Sub
+		Private Sub fileExitMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+			Me.Close()
+		End Sub
 
-        Private Sub loadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		Private Sub loadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
             '<SnippetGetUICode>
             ' Get add-in pipeline folder (the folder in which this application was launched from)
             Dim appPath As String = Environment.CurrentDirectory
@@ -42,16 +42,16 @@ Namespace Host
             Dim addInUI As FrameworkElement = Me.wpfAddInHostView.GetAddInUI()
             Me.addInUIHostGrid.Children.Add(addInUI)
             '</SnippetGetUICode>
-        End Sub
+		End Sub
 
-        Private Sub unloadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            ' Stop displyaing add-in UI
-            Me.addInUIHostGrid.Children.Clear()
+		Private Sub unloadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+			' Stop displyaing add-in UI
+			Me.addInUIHostGrid.Children.Clear()
 
-            ' Unload add-in
-            Dim addInController As AddInController = AddInController.GetAddInController(Me.wpfAddInHostView)
-            addInController.Shutdown()
-        End Sub
-    End Class
+			' Unload add-in
+			Dim addInController As AddInController = AddInController.GetAddInController(Me.wpfAddInHostView)
+			addInController.Shutdown()
+		End Sub
+	End Class
 End Namespace
 '</SnippetHostAppMainWindowCodeBehind>

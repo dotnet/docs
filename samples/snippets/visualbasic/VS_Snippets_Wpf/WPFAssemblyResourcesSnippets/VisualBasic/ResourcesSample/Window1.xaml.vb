@@ -8,33 +8,33 @@ Imports System.Threading
 Imports System.Collections
 
 Namespace ResourcesSample
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits Window
+	Partial Public Class Window1
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
+		Public Sub New()
+			InitializeComponent()
 
-            Dim button As New Button()
+			Dim button As New Button()
             button.Content = "Click Me"
             AddHandler button.Click, Sub()
                                          Dim bob As New Uri("pack://application:,,,/EmbeddedResource.bmp")
                                      End Sub
             Me.Content = button
 
-            ' Get embedded resource in referenced assembly
+			' Get embedded resource in referenced assembly
             Dim uri As New Uri("pack://application:,,,/ResourceLibrary;component/ReferencedEmbeddedResource.bmp", UriKind.RelativeOrAbsolute) ' Works
-            Dim info As StreamResourceInfo = Application.GetResourceStream(uri)
+			Dim info As StreamResourceInfo = Application.GetResourceStream(uri)
             ' Get loose resource in referenced assembly - doesn't work			
-            Console.Write(info.ContentType & " -> ")
-            Console.WriteLine(info.Stream.ToString())
-        End Sub
+			Console.Write(info.ContentType & " -> ")
+			Console.WriteLine(info.Stream.ToString())
+		End Sub
 
-        Protected Overrides Sub OnActivated(ByVal e As EventArgs)
-            MyBase.OnActivated(e)
-        End Sub
-    End Class
+		Protected Overrides Sub OnActivated(ByVal e As EventArgs)
+			MyBase.OnActivated(e)
+		End Sub
+	End Class
 End Namespace

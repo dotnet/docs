@@ -1,13 +1,13 @@
-﻿Imports System
-Imports System.Windows
-Imports System.Windows.Controls
-Imports System.Windows.Documents
+﻿Imports System     
+Imports System.Windows     
+Imports System.Windows.Controls     
+Imports System.Windows.Documents     
 
 namespace GridLengthConverter_grid
 
-    '@ <summary>
-    '@ Interaction logic for Window1.xaml
-    '@ </summary>
+	'@ <summary>
+	'@ Interaction logic for Window1.xaml
+	'@ </summary>
 
     Partial Public Class Window1
         Inherits Window
@@ -93,4 +93,4 @@ namespace GridLengthConverter_grid
         End Sub
 
     End Class
-End Namespace
+    End Namespace

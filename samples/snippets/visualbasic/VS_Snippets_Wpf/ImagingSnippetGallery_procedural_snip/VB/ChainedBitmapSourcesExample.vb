@@ -1,4 +1,4 @@
-﻿' <SnippetChainedBitmapSourcesCodeExampleWholePage>
+﻿ ' <SnippetChainedBitmapSourcesCodeExampleWholePage>
 'This is a list of commonly used namespaces for a pane.
 Imports System.Windows
 Imports System.Windows.Controls

@@ -8,14 +8,14 @@ Imports Contracts
 Imports HostViews
 
 Namespace HostSideAdapters
-    ''' <summary>
-    ''' Adapts the add-in contract to the host's view of the add-in
-    ''' </summary>
-    <HostAdapter>
-    Public Class WPFAddIn_ContractToViewHostSideAdapter
-        Inherits WPFAddInHostView
+	''' <summary>
+	''' Adapts the add-in contract to the host's view of the add-in
+	''' </summary>
+	<HostAdapter>
+	Public Class WPFAddIn_ContractToViewHostSideAdapter
+		Inherits WPFAddInHostView
         Private wpfAddInContract As IWPFAddInContract
-        Private wpfAddInContractHandle As ContractHandle
+		Private wpfAddInContractHandle As ContractHandle
 
         Public Sub New(ByVal wpfAddInContract As IWPFAddInContract)
             ' Adapt the contract (IWPFAddInContract) to the host application's

@@ -8,15 +8,15 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 
 Namespace ResourcesSample
-    ''' <summary>
-    ''' Interaction logic for AbsolutePackUriPage.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for AbsolutePackUriPage.xaml
+	''' </summary>
 
-    Partial Public Class AbsolutePackUriPage
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+	Partial Public Class AbsolutePackUriPage
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-    End Class
+	End Class
 End Namespace

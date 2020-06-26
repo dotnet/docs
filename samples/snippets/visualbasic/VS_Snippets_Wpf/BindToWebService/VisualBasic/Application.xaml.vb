@@ -4,12 +4,12 @@ Imports System.Xml
 Imports System.Configuration
 
 Namespace BindtoContentService
-    ''' <summary>
-    ''' Interaction logic for App.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for App.xaml
+	''' </summary>
 
-    Partial Public Class App
-        Inherits System.Windows.Application
+	Partial Public Class App
+		Inherits System.Windows.Application
 
-    End Class
+	End Class
 End Namespace

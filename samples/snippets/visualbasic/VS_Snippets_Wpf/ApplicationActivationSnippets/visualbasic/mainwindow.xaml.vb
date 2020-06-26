@@ -8,16 +8,16 @@ Imports System.Windows.Shapes
 
 
 Namespace SDKSample
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for MainWindow.xaml
+	''' </summary>
 
-    Partial Public Class MainWindow
-        Inherits Window
+	Partial Public Class MainWindow
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-    End Class
+	End Class
 End Namespace

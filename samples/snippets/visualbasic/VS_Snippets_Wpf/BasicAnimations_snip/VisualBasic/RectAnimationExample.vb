@@ -7,20 +7,20 @@ Imports System.Windows.Media.Animation
 Imports System.Windows.Media
 
 Namespace SDKSamples
-    Public Class RectAnimationExample
-        Inherits Page
-        Public Sub New()
+	Public Class RectAnimationExample
+		Inherits Page
+		Public Sub New()
 
-            ' Create a NameScope for this page so that
-            ' Storyboards can be used.
-            NameScope.SetNameScope(Me, New NameScope())
+			' Create a NameScope for this page so that
+			' Storyboards can be used.
+			NameScope.SetNameScope(Me, New NameScope())
 
-            Dim myRectangleGeometry As New RectangleGeometry()
-            myRectangleGeometry.Rect = New Rect(0, 200, 100, 100)
+			Dim myRectangleGeometry As New RectangleGeometry()
+			myRectangleGeometry.Rect = New Rect(0, 200, 100, 100)
 
-            ' Assign the geometry a name so that
-            ' it can be targeted by a Storyboard.
-            Me.RegisterName("MyAnimatedRectangleGeometry", myRectangleGeometry)
+			' Assign the geometry a name so that
+			' it can be targeted by a Storyboard.
+			Me.RegisterName("MyAnimatedRectangleGeometry", myRectangleGeometry)
 
             Dim myPath As New Path()
             With myPath
@@ -59,8 +59,8 @@ Namespace SDKSamples
             containerCanvas.Children.Add(myPath)
 
             Content = containerCanvas
-        End Sub
-    End Class
+		End Sub
+	End Class
 End Namespace
 ' </SnippetRectAnimationWholePage>
 

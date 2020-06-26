@@ -11,16 +11,16 @@ Imports System.Windows.Shapes
 
 
 Namespace Microsoft.Samples.Animation
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits System.Windows.Window
+	Partial Public Class Window1
+		Inherits System.Windows.Window
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-    End Class
+	End Class
 End Namespace

@@ -7,23 +7,23 @@ Imports System.Windows.Media.Imaging
 
 Namespace Microsoft.Samples.BrushExamples
 
-    Public Class StretchExample
-        Inherits Page
+	Public Class StretchExample
+		Inherits Page
 
 
-        Public Sub New()
+		Public Sub New()
 
-            ' Create the main panel.
-            Dim mainPanel As New StackPanel()
-            mainPanel.Orientation = Orientation.Horizontal
-            createNoStretchExample(mainPanel)
-            Me.Content = mainPanel
-
-
-        End Sub
+			' Create the main panel.
+			Dim mainPanel As New StackPanel()
+			mainPanel.Orientation = Orientation.Horizontal
+			createNoStretchExample(mainPanel)
+			Me.Content = mainPanel
 
 
-        Private Sub createNoStretchExample(ByVal mainPanel As Panel)
+		End Sub
+
+
+		Private Sub createNoStretchExample(ByVal mainPanel As Panel)
 
             ' <SnippetGraphicsMMNoStretchExample>
             ' Create a rectangle.
@@ -51,9 +51,9 @@ Namespace Microsoft.Samples.BrushExamples
 
             mainPanel.Children.Add(myRectangle)
 
-        End Sub
+		End Sub
 
 
-    End Class
+	End Class
 
 End Namespace

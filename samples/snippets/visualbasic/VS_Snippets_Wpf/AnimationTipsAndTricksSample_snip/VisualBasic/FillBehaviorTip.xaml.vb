@@ -12,24 +12,24 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Animation
-    ''' <summary>
-    ''' Interaction logic for FillBehaviorTip.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for FillBehaviorTip.xaml
+	''' </summary>
 
-    Partial Public Class FillBehaviorTip
-        Inherits System.Windows.Controls.Page
-        Public Sub New()
-            InitializeComponent()
+	Partial Public Class FillBehaviorTip
+		Inherits System.Windows.Controls.Page
+		Public Sub New()
+			InitializeComponent()
 
-        End Sub
+		End Sub
 
-        ' <SnippetFillBehaviorTipStoryboardC1CompletedHandler>
-        Private Sub StoryboardC_Completed(ByVal sender As Object, ByVal e As EventArgs)
+		' <SnippetFillBehaviorTipStoryboardC1CompletedHandler>
+		Private Sub StoryboardC_Completed(ByVal sender As Object, ByVal e As EventArgs)
 
-            Dim translationAnimationStoryboard As Storyboard = CType(Me.Resources("TranslationAnimationStoryboardResource"), Storyboard)
-            translationAnimationStoryboard.Begin(Me)
-        End Sub
-        ' </SnippetFillBehaviorTipStoryboardC1CompletedHandler>
+			Dim translationAnimationStoryboard As Storyboard = CType(Me.Resources("TranslationAnimationStoryboardResource"), Storyboard)
+			translationAnimationStoryboard.Begin(Me)
+		End Sub
+		' </SnippetFillBehaviorTipStoryboardC1CompletedHandler>
 
-    End Class
+	End Class
 End Namespace

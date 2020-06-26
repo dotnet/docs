@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("UIAAutomationID_snip")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("Microsoft")>
-<Assembly: AssemblyProduct("UIAAutomationID_snip")>
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2006")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("UIAAutomationID_snip")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyProduct("UIAAutomationID_snip")> 
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2006")> 
+<Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("4aaec25f-14c9-4fcd-9029-13b6b9fda394")>
+<Assembly: Guid("4aaec25f-14c9-4fcd-9029-13b6b9fda394")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

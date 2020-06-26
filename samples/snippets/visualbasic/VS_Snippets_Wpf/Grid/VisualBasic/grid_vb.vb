@@ -98,7 +98,7 @@ Namespace SDKSample
             Me.Content = myGrid
         End Sub
         '</Snippet3>
-
+        
         'Displays the Sample
         Public Class app
             Inherits Application

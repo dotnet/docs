@@ -23,9 +23,9 @@ Class Window1
     Private control As InkControl
 
 
-    Public Sub New()
+    Public Sub New() 
         InitializeComponent()
-
+        
         customInkCanvas = New CustomRenderingInkCanvas()
         'root.Children.Add(customInkCanvas)
 
@@ -34,19 +34,19 @@ Class Window1
 
         customInkCanvas.EditingModeInverted = InkCanvasEditingMode.EraseByPoint
         AddHandler customInkCanvas.StrokeCollected, AddressOf customInkCanvas_StrokeCollected
-
+        
         AddHandler ClearStrokes.Click, AddressOf ClearStrokes_Click
         WindowState = WindowState.Maximized
-
+    
     End Sub
-
-
+    
+    
     Private Sub ClearStrokes_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
         customInkCanvas.Strokes.Clear()
 
     End Sub
-
-
+    
+    
     Private Sub customInkCanvas_StrokeCollected(ByVal sender As Object, ByVal e As InkCanvasStrokeCollectedEventArgs)
         System.Diagnostics.Debug.WriteLine("customInkCanvase_StrokeCollected")
         e.Stroke.DrawingAttributes.Color = Colors.Green

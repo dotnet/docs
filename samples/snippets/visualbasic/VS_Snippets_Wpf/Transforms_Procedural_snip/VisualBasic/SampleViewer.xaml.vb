@@ -6,15 +6,15 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-    Partial Public Class SampleViewer
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
+	Partial Public Class SampleViewer
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
 
-            MyMultipleTransformsExampleFrame.Content = New MultipleTransformsExample()
-        End Sub
+			MyMultipleTransformsExampleFrame.Content = New MultipleTransformsExample()
+		End Sub
 
-    End Class
+	End Class
 
 
 End Namespace

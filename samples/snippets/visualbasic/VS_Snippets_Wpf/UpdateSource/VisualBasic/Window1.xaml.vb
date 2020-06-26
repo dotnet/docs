@@ -3,8 +3,8 @@ Imports System.Diagnostics
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Markup
-Public Class Window1
-    Inherits Window
+    Public Class Window1
+        Inherits Window
 
     Public Sub New()
         Me.InitializeComponent()
@@ -28,6 +28,6 @@ Public Class Window1
     End Sub
 
 
-End Class
+    End Class
 
 

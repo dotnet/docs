@@ -14,25 +14,25 @@ Imports System.Security.Permissions
 Imports System.Security
 
 Namespace WPFPlatformSecuritySnippet
-    ''' <summary>
-    ''' Interaction logic for Page1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Page1.xaml
+	''' </summary>
 
-    Partial Public Class Page1
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
+	Partial Public Class Page1
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
 
-            '<SnippetPermission>
-            Dim fp As New FileIOPermission(PermissionState.Unrestricted)
-            fp.Assert()
+			'<SnippetPermission>
+			Dim fp As New FileIOPermission(PermissionState.Unrestricted)
+			fp.Assert()
 
-            ' Perform operation that uses the assert
+			' Perform operation that uses the assert
 
-            ' Revert the assert when operation is completed
-            CodeAccessPermission.RevertAssert()
-            '</SnippetPermission>
-        End Sub
+			' Revert the assert when operation is completed
+			CodeAccessPermission.RevertAssert()
+			'</SnippetPermission>
+		End Sub
 
-    End Class
+	End Class
 End Namespace

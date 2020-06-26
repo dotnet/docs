@@ -19,8 +19,8 @@ Class Window2
         InitializeComponent()
 
     End Sub
-
-
+    
+    
     ' <Snippet4>
     Private Sub RightMouseUpHandler(ByVal sender As Object, _
                                     ByVal e As System.Windows.Input.MouseButtonEventArgs)

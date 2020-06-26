@@ -10,13 +10,13 @@ Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
 
 Namespace SDKSample
-    ''' <summary>
-    ''' Interaction logic for PlainWindow.xaml
-    ''' </summary>
-    Partial Public Class PlainWindow
-        Inherits Window
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+	''' <summary>
+	''' Interaction logic for PlainWindow.xaml
+	''' </summary>
+	Partial Public Class PlainWindow
+		Inherits Window
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace

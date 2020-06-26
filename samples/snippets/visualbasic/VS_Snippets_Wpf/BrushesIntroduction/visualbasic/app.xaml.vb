@@ -8,23 +8,23 @@ Imports System.Windows.Navigation
 
 Namespace BrushesIntroduction
 
-    ''' <summary>
-    ''' Defines the application.
-    ''' </summary>
-    Partial Public Class app
-        Inherits Application
+	''' <summary>
+	''' Defines the application.
+	''' </summary>
+	Partial Public Class app
+		Inherits Application
 
-        Public Sub New()
+		Public Sub New()
 
-        End Sub
+		End Sub
 
-        Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
-            MyBase.OnStartup(e)
-            Dim myWindow As New Window()
-            myWindow.Content = New SampleViewer()
-            myWindow.Show()
-        End Sub
+		Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+			MyBase.OnStartup(e)
+			Dim myWindow As New Window()
+			myWindow.Content = New SampleViewer()
+			myWindow.Show()
+		End Sub
 
 
-    End Class
+	End Class
 End Namespace

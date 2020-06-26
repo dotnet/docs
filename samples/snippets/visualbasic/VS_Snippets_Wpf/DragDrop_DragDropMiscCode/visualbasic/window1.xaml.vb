@@ -1,21 +1,21 @@
 ﻿Imports System.Text
 
 Namespace DragDropMiscCode
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits Window
-        Public Sub New()
-            InitializeComponent()
-            Dim utf8DataFormat As String = GetType(String).FullName
+	Partial Public Class Window1
+		Inherits Window
+		Public Sub New()
+			InitializeComponent()
+			Dim utf8DataFormat As String = GetType(String).FullName
 
-            ClipboardMethods()
-        End Sub
+			ClipboardMethods()
+		End Sub
 
-        ' Various ways to create a data object...
-        Private Sub CreateDataObject()
+		' Various ways to create a data object...
+		Private Sub CreateDataObject()
             ' Create a new data object using simple constructor; data format is chosen automatically.
             With True
                 ' <Snippet_DragDrop_CreateDataObject_Simple>
@@ -76,41 +76,41 @@ Namespace DragDropMiscCode
                 ' </Snippet_DragDrop_CreateDataObject_AutoConvert_Condensed>
             End With
 
-        End Sub
+		End Sub
 
-        Private Sub StoreMultipleFormats()
-            ' Storing a few differnet text encodings in a data object...
-            ' <Snippet_DragDrop_StoreMultipleFormats>
-            Dim dataObject As New DataObject()
-            Dim sourceData As String = "Some string data to store..."
+		Private Sub StoreMultipleFormats()
+			' Storing a few differnet text encodings in a data object...
+				' <Snippet_DragDrop_StoreMultipleFormats>
+				Dim dataObject As New DataObject()
+				Dim sourceData As String = "Some string data to store..."
 
-            ' Encode the source string into Unicode byte arrays.
-            Dim unicodeText() As Byte = Encoding.Unicode.GetBytes(sourceData) ' UTF-16
-            Dim utf8Text() As Byte = Encoding.UTF8.GetBytes(sourceData)
-            Dim utf32Text() As Byte = Encoding.UTF32.GetBytes(sourceData)
+				' Encode the source string into Unicode byte arrays.
+				Dim unicodeText() As Byte = Encoding.Unicode.GetBytes(sourceData) ' UTF-16
+				Dim utf8Text() As Byte = Encoding.UTF8.GetBytes(sourceData)
+				Dim utf32Text() As Byte = Encoding.UTF32.GetBytes(sourceData)
 
-            ' The DataFormats class does not provide data format fields for denoting
-            ' UTF-32 and UTF-8, which are seldom used in practice; the following strings 
-            ' will be used to identify these "custom" data formats.
-            Dim utf32DataFormat As String = "UTF-32"
-            Dim utf8DataFormat As String = "UTF-8"
+				' The DataFormats class does not provide data format fields for denoting
+				' UTF-32 and UTF-8, which are seldom used in practice; the following strings 
+				' will be used to identify these "custom" data formats.
+				Dim utf32DataFormat As String = "UTF-32"
+				Dim utf8DataFormat As String = "UTF-8"
 
-            ' Store the text in the data object, letting the data object choose
-            ' the data format (which will be DataFormats.Text in this case).
-            dataObject.SetData(sourceData)
-            ' Store the Unicode text in the data object.  Text data can be automatically
-            ' converted to Unicode (UTF-16 / UCS-2) format on extraction from the data object; 
-            ' Therefore, explicitly converting the source text to Unicode is generally unnecessary, and
-            ' is done here as an exercise only.
-            dataObject.SetData(DataFormats.UnicodeText, unicodeText)
-            ' Store the UTF-8 text in the data object...
-            dataObject.SetData(utf8DataFormat, utf8Text)
-            ' Store the UTF-32 text in the data object...
-            dataObject.SetData(utf32DataFormat, utf32Text)
-            ' </Snippet_DragDrop_StoreMultipleFormats>
-        End Sub
+				' Store the text in the data object, letting the data object choose
+				' the data format (which will be DataFormats.Text in this case).
+				dataObject.SetData(sourceData)
+				' Store the Unicode text in the data object.  Text data can be automatically
+				' converted to Unicode (UTF-16 / UCS-2) format on extraction from the data object; 
+				' Therefore, explicitly converting the source text to Unicode is generally unnecessary, and
+				' is done here as an exercise only.
+				dataObject.SetData(DataFormats.UnicodeText, unicodeText)
+				' Store the UTF-8 text in the data object...
+				dataObject.SetData(utf8DataFormat, utf8Text)
+				' Store the UTF-32 text in the data object...
+				dataObject.SetData(utf32DataFormat, utf32Text)
+				' </Snippet_DragDrop_StoreMultipleFormats>
+		End Sub
 
-        Private Sub QueryDataFormats()
+		Private Sub QueryDataFormats()
             ' Querying for data formats with GetDataPresent...
             With True
                 ' <Snippet_DragDrop_QueryDataFormats_String>
@@ -180,7 +180,7 @@ Namespace DragDropMiscCode
                 ' </Snippet_DragDrop_QueryDataFormats_Autoconvert>
             End With
 
-        End Sub
+		End Sub
 
         Private Sub GetAllDataFormats()
             With True
@@ -277,32 +277,32 @@ Namespace DragDropMiscCode
 
         End Sub
 
-        Private Sub ehDragEnter(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehDragLeave(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehDragOver(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehDrop(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehPreviewDragEnter(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehPreviewDragLeave(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehPreviewDragOver(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
-        Private Sub ehPreviewDrop(ByVal sender As Object, ByVal args As DragEventArgs)
-            ' Code here will fire when the DragEnter event occurs.
-        End Sub
+		Private Sub ehDragEnter(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehDragLeave(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehDragOver(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehDrop(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehPreviewDragEnter(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehPreviewDragLeave(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehPreviewDragOver(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
+		Private Sub ehPreviewDrop(ByVal sender As Object, ByVal args As DragEventArgs)
+			' Code here will fire when the DragEnter event occurs.
+		End Sub
 
-        Private Sub ClipboardMethods()
+		Private Sub ClipboardMethods()
             Dim persistentData As Boolean = False
             With True
                 ' <Snippet_ContainsDataGetData>
@@ -365,5 +365,5 @@ Namespace DragDropMiscCode
             End With
         End Sub
 
-    End Class
+	End Class
 End Namespace

@@ -1,7 +1,7 @@
-﻿Imports System
-Imports System.Windows
-Imports System.Windows.Controls
-Imports System.Windows.Documents
+﻿Imports System     
+Imports System.Windows     
+Imports System.Windows.Controls     
+Imports System.Windows.Documents     
 
 Namespace SDKSample
 
@@ -12,7 +12,7 @@ Namespace SDKSample
     Partial Public Class Window1
         Inherits Window
 
-        '<Snippet2>
+	'<Snippet2>
         Private Sub ChangeLeft(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
             Dim li As ListBoxItem = CType(CType(sender, ListBox).SelectedItem, ListBoxItem)
             Dim myLengthConverter As New LengthConverter
@@ -21,7 +21,7 @@ Namespace SDKSample
             Dim st1 As String = CType(myLengthConverter.ConvertToString(Canvas.GetLeft(text1)), String)
             canvasLeft.Text = "Canvas.Left = " + st1
         End Sub
-        '</Snippet2>
+	'</Snippet2>
         Private Sub ChangeRight(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
             Dim li2 As ListBoxItem = CType(CType(sender, ListBox).SelectedItem, ListBoxItem)
             Dim myLengthConverter As New LengthConverter

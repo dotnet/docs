@@ -8,15 +8,15 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 
 Namespace ResourceLibrary
-    ''' <summary>
-    ''' Interaction logic for Page1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Page1.xaml
+	''' </summary>
 
-    Partial Public Class Page1
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+	Partial Public Class Page1
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-    End Class
+	End Class
 End Namespace

@@ -8,14 +8,14 @@ Imports System.Windows.Shapes
 
 
 Namespace SDKSample.NumericUpDown
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits Window
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+	Partial Public Class Window1
+		Inherits Window
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace

@@ -11,8 +11,8 @@ Imports System.Windows.Shapes
 Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-    Public Class ClockControllerExample
-        Inherits Page
+	Public Class ClockControllerExample
+		Inherits Page
 
         Private ReadOnly myControllableClock As AnimationClock
         Private ReadOnly seekButton As Button
@@ -20,7 +20,7 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
         Private ReadOnly timeSeekOriginListBox As ListBox
 
         Public Sub New()
-            Dim mainPanel As New StackPanel()
+			Dim mainPanel As New StackPanel()
 
             ' Create a rectangle to animate.
             Dim animatedRectangle As New Rectangle With {
@@ -30,16 +30,16 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             }
             mainPanel.Children.Add(animatedRectangle)
 
-            ' Create a DoubleAnimation to
-            ' animate its width.
-            Dim widthAnimation As New DoubleAnimation(100, 500, New Duration(TimeSpan.FromSeconds(5)))
+			' Create a DoubleAnimation to
+			' animate its width.
+			Dim widthAnimation As New DoubleAnimation(100, 500, New Duration(TimeSpan.FromSeconds(5)))
 
-            ' Create a clock from the animation.
-            myControllableClock = widthAnimation.CreateClock()
+			' Create a clock from the animation.
+			myControllableClock = widthAnimation.CreateClock()
 
-            ' Apply the clock to the rectangle's Width property.
-            animatedRectangle.ApplyAnimationClock(Rectangle.WidthProperty, myControllableClock)
-            myControllableClock.Controller.Stop()
+			' Apply the clock to the rectangle's Width property.
+			animatedRectangle.ApplyAnimationClock(Rectangle.WidthProperty, myControllableClock)
+			myControllableClock.Controller.Stop()
 
             '
             ' Create some buttons to control the clock.
@@ -50,21 +50,21 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .Content = "Begin"
             }
             AddHandler beginButton.Click, AddressOf beginButton_Clicked
-            mainPanel.Children.Add(beginButton)
+			mainPanel.Children.Add(beginButton)
 
             ' Create a button to pause the clock. 
             Dim pauseButton As New Button With {
                 .Content = "Pause"
             }
             AddHandler pauseButton.Click, AddressOf pauseButton_Clicked
-            mainPanel.Children.Add(pauseButton)
+			mainPanel.Children.Add(pauseButton)
 
             ' Create a button to resume the clock. 
             Dim resumeButton As New Button With {
                 .Content = "Resume"
             }
             AddHandler resumeButton.Click, AddressOf resumeButton_Clicked
-            mainPanel.Children.Add(resumeButton)
+			mainPanel.Children.Add(resumeButton)
 
             ' Create a button to advance the clock to
             ' its fill period. 
@@ -72,14 +72,14 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .Content = "Skip to Fill"
             }
             AddHandler skipToFillButton.Click, AddressOf skipToFillButton_Clicked
-            mainPanel.Children.Add(skipToFillButton)
+			mainPanel.Children.Add(skipToFillButton)
 
             ' Create a button to stop the clock.
             Dim stopButton As New Button With {
                 .Content = "Stop"
             }
             AddHandler stopButton.Click, AddressOf stopButton_Clicked
-            mainPanel.Children.Add(stopButton)
+			mainPanel.Children.Add(stopButton)
 
             '
             ' Create some controls the enable the user to
@@ -102,33 +102,33 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .VerticalAlignment = VerticalAlignment.Top
             }
             AddHandler seekAmountTextBox.TextChanged, AddressOf seekAmountTextBox_TextChanged
-            seekDetailsPanel.Children.Add(seekAmountTextBox)
+			seekDetailsPanel.Children.Add(seekAmountTextBox)
 
             Dim timeSeekOriginLabel As New Label With {
                 .Content = "Seek Origin:"
             }
             seekDetailsPanel.Children.Add(timeSeekOriginLabel)
 
-            ' Create a ListBox so the user can
-            ' select whether the seek time is relative
-            ' to the clock's BeginTime or Duration.
-            timeSeekOriginListBox = New ListBox()
-            timeSeekOriginListBox.Items.Add("BeginTime")
-            timeSeekOriginListBox.Items.Add("Duration")
-            timeSeekOriginListBox.Padding = New Thickness(5)
-            timeSeekOriginListBox.SelectedIndex = 0
-            seekDetailsPanel.Children.Add(timeSeekOriginListBox)
+			' Create a ListBox so the user can
+			' select whether the seek time is relative
+			' to the clock's BeginTime or Duration.
+			timeSeekOriginListBox = New ListBox()
+			timeSeekOriginListBox.Items.Add("BeginTime")
+			timeSeekOriginListBox.Items.Add("Duration")
+			timeSeekOriginListBox.Padding = New Thickness(5)
+			timeSeekOriginListBox.SelectedIndex = 0
+			seekDetailsPanel.Children.Add(timeSeekOriginListBox)
 
             ' Create a button to seek the clock.
             seekButton = New Button With {
                 .Content = "Seek"
             }
             AddHandler seekButton.Click, AddressOf seekButton_Clicked
-            seekDetailsPanel.Children.Add(seekButton)
-            mainPanel.Children.Add(seekDetailsPanel)
+			seekDetailsPanel.Children.Add(seekButton)
+			mainPanel.Children.Add(seekDetailsPanel)
 
-            Content = mainPanel
-        End Sub
+			Content = mainPanel
+		End Sub
 
         ' Starts the clock.
         Private Sub beginButton_Clicked(sender As Object, e As RoutedEventArgs)

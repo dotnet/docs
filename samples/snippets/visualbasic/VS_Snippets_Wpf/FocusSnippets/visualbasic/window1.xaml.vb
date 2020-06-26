@@ -11,44 +11,44 @@ Imports System.Windows.Shapes
 
 
 Namespace SDKSamples
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits Window
+	Partial Public Class Window1
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
+		Public Sub New()
+			InitializeComponent()
 
-            '<SnippetFocusSetIsFocusScope>
-            Dim focuseScope2 As New StackPanel()
-            FocusManager.SetIsFocusScope(focuseScope2, True)
-            '</SnippetFocusSetIsFocusScope>
+			'<SnippetFocusSetIsFocusScope>
+			Dim focuseScope2 As New StackPanel()
+			FocusManager.SetIsFocusScope(focuseScope2, True)
+			'</SnippetFocusSetIsFocusScope>
 
-            Dim button3 As New Button()
-            focuseScope2.Children.Add(button3)
-            Dim button4 As New Button()
-            focuseScope2.Children.Add(button4)
-            mainStackPanel.Children.Add(focuseScope2)
+			Dim button3 As New Button()
+			focuseScope2.Children.Add(button3)
+			Dim button4 As New Button()
+			focuseScope2.Children.Add(button4)
+			mainStackPanel.Children.Add(focuseScope2)
 
-            GetFocusedElement()
-        End Sub
+			GetFocusedElement()
+		End Sub
 
-        Public Sub GetFocusedElement()
-            '<SnippetFocusGetSetFocusedElement>
-            ' Sets the focused element in focusScope1
-            ' focusScope1 is a StackPanel.
-            FocusManager.SetFocusedElement(focusScope1, button2)
+		Public Sub GetFocusedElement()
+			'<SnippetFocusGetSetFocusedElement>
+			' Sets the focused element in focusScope1
+			' focusScope1 is a StackPanel.
+			FocusManager.SetFocusedElement(focusScope1, button2)
 
-            ' Gets the focused element for focusScope 1
-            Dim focusedElement As IInputElement = FocusManager.GetFocusedElement(focusScope1)
-            '</SnippetFocusGetSetFocusedElement>
+			' Gets the focused element for focusScope 1
+			Dim focusedElement As IInputElement = FocusManager.GetFocusedElement(focusScope1)
+			'</SnippetFocusGetSetFocusedElement>
 
-            MessageBox.Show(CType(focusedElement, Object).ToString())
-        End Sub
+			MessageBox.Show(CType(focusedElement, Object).ToString())
+		End Sub
 
 
 
-    End Class
+	End Class
 End Namespace

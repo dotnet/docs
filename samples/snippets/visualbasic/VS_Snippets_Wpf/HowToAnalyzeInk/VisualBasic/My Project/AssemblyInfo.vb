@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("HowToAnalyzeInk")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("MS")>
-<Assembly: AssemblyProduct("HowToAnalyzeInk")>
-<Assembly: AssemblyCopyright("Copyright @ MS 2006")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("HowToAnalyzeInk")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("MS")> 
+<Assembly: AssemblyProduct("HowToAnalyzeInk")> 
+<Assembly: AssemblyCopyright("Copyright @ MS 2006")> 
+<Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("9440de47-0843-400d-87c4-8fcb09b73bb7")>
+<Assembly: Guid("9440de47-0843-400d-87c4-8fcb09b73bb7")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

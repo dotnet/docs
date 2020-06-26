@@ -6,15 +6,15 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-    Partial Public Class SampleViewer
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
-            MySetBackgroundColorOfShapeExampleFrame.Content = New SetBackgroundColorOfShapeExample()
-            MyCreateColorsFromExampleFrame.Content = New CreateColorsFromExample()
-        End Sub
+	Partial Public Class SampleViewer
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
+			MySetBackgroundColorOfShapeExampleFrame.Content = New SetBackgroundColorOfShapeExample()
+			MyCreateColorsFromExampleFrame.Content = New CreateColorsFromExample()
+		End Sub
 
-    End Class
+	End Class
 
 
 End Namespace

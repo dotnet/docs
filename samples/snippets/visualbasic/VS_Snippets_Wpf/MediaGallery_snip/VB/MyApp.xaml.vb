@@ -12,6 +12,6 @@ Namespace SDKSample
     '/ </summary>
 
     Class MyApp
-        Inherits Application
+        Inherits Application 
     End Class
 End Namespace 'SDKSample

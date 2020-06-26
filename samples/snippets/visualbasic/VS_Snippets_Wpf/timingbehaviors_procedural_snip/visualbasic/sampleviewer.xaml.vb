@@ -6,34 +6,34 @@ Imports System.Windows.Navigation
 
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-    Partial Public Class SampleViewer
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
+	Partial Public Class SampleViewer
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
 
-            MyRepeatBehaviorExampleFrame.Content = New RepeatBehaviorExample()
-            MyFillBehaviorExampleFrame.Content = New FillBehaviorExample()
-            MyAccelDecelExampleFrame.Content = New AccelDecelExample()
-            MyAutoReverseExampleFrame.Content = New AutoReverseExample()
-            MyBeginTimeExampleFrame.Content = New BeginTimeExample()
-            MySpeedExampleFrame.Content = New SpeedExample()
-            MyOpacityAnimationExampleFrame.Content = New OpacityAnimationExample()
-            ControlStoryboardExampleFrame.Content = New ControlStoryboardExample()
-        End Sub
-    End Class
+			MyRepeatBehaviorExampleFrame.Content = New RepeatBehaviorExample()
+			MyFillBehaviorExampleFrame.Content = New FillBehaviorExample()
+			MyAccelDecelExampleFrame.Content = New AccelDecelExample()
+			MyAutoReverseExampleFrame.Content = New AutoReverseExample()
+			MyBeginTimeExampleFrame.Content = New BeginTimeExample()
+			MySpeedExampleFrame.Content = New SpeedExample()
+			MyOpacityAnimationExampleFrame.Content = New OpacityAnimationExample()
+			ControlStoryboardExampleFrame.Content = New ControlStoryboardExample()
+		End Sub
+	End Class
 
-    Public Class ElapsedTimeControl
-        Inherits Control
-        Private theClock As Clock
-        Private previousTime? As TimeSpan
+	Public Class ElapsedTimeControl
+		Inherits Control
+		Private theClock As Clock
+		Private previousTime? As TimeSpan
 
-        Public Sub New()
-        End Sub
+		Public Sub New()
+		End Sub
 
-        Public Property Clock() As Clock
-            Get
-                Return theClock
-            End Get
+		Public Property Clock() As Clock
+			Get
+				Return theClock
+			End Get
             Set(value As Clock)
                 If theClock IsNot Nothing Then
                     RemoveHandler theClock.CurrentTimeInvalidated, AddressOf onClockTimeInvalidated
@@ -71,5 +71,5 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
         End Sub
 
         Public Shared ReadOnly CurrentTimeAsStringProperty As DependencyProperty = DependencyProperty.Register("CurrentTimeAsString", GetType(String), GetType(ElapsedTimeControl))
-    End Class
+	End Class
 End Namespace

@@ -5,28 +5,28 @@ Imports System.Windows.Media
 Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Graphics.UsingImageBrush
-    Public Class TileSizeExample
-        Inherits Page
-        Public Sub New()
+	Public Class TileSizeExample
+		Inherits Page
+		Public Sub New()
 
-            ' <SnippetRelativeTileSizeExample>
+			' <SnippetRelativeTileSizeExample>
 
-            '
-            ' Create an ImageBrush and set the size of each
-            ' tile to 50% by 50% of the area being painted. 
-            ' 
-            Dim relativeTileSizeImageBrush As New ImageBrush()
-            relativeTileSizeImageBrush.ImageSource = New BitmapImage(New Uri("sampleImages\cherries_larger.jpg", UriKind.Relative))
-            relativeTileSizeImageBrush.TileMode = TileMode.Tile
+			'
+			' Create an ImageBrush and set the size of each
+			' tile to 50% by 50% of the area being painted. 
+			' 
+			Dim relativeTileSizeImageBrush As New ImageBrush()
+			relativeTileSizeImageBrush.ImageSource = New BitmapImage(New Uri("sampleImages\cherries_larger.jpg", UriKind.Relative))
+			relativeTileSizeImageBrush.TileMode = TileMode.Tile
 
-            ' Specify the size of the base tile. 
-            ' By default, the size of the Viewport is
-            ' relative to the area being painted,
-            ' so a value of 0.5 indicates 50% of the output
-            ' area.
-            relativeTileSizeImageBrush.Viewport = New Rect(0, 0, 0.5, 0.5)
+			' Specify the size of the base tile. 
+			' By default, the size of the Viewport is
+			' relative to the area being painted,
+			' so a value of 0.5 indicates 50% of the output
+			' area.
+			relativeTileSizeImageBrush.Viewport = New Rect(0, 0, 0.5, 0.5)
 
-            ' Create a rectangle and paint it with the ImageBrush.
+			' Create a rectangle and paint it with the ImageBrush.
             Dim relativeTileSizeExampleRectangle As New Rectangle()
             With relativeTileSizeExampleRectangle
                 .Width = 200
@@ -78,6 +78,6 @@ Namespace Microsoft.Samples.Graphics.UsingImageBrush
             Background = Brushes.White
             Margin = New Thickness(20)
 
-        End Sub
-    End Class
+		End Sub
+	End Class
 End Namespace

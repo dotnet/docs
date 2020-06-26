@@ -1,4 +1,4 @@
-﻿Class MainWindow
+﻿Class MainWindow 
 
     '<SnippetHandler>
     Private eventstr As New Text.StringBuilder()

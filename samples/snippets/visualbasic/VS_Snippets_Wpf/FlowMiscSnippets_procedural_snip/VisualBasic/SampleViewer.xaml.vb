@@ -6,15 +6,15 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-    Partial Public Class SampleViewer
-        Inherits Page
-        Public Sub New()
-            InitializeComponent()
-            MyFigureCodeOnlyExampleFrame.Content = New FigureCodeOnlyExample()
-            MyInsertInlineIntoTextExampleFrame.Content = New InsertInlineIntoTextExample()
-        End Sub
+	Partial Public Class SampleViewer
+		Inherits Page
+		Public Sub New()
+			InitializeComponent()
+			MyFigureCodeOnlyExampleFrame.Content = New FigureCodeOnlyExample()
+			MyInsertInlineIntoTextExampleFrame.Content = New InsertInlineIntoTextExample()
+		End Sub
 
-    End Class
+	End Class
 
 
 End Namespace

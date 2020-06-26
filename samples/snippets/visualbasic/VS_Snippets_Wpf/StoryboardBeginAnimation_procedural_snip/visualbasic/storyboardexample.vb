@@ -6,30 +6,30 @@ Imports System.Windows.Media.Animation
 Namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 
 
-    ' Uses a storyboard to animate the properties
-    ' of two buttons.
-    Public Class StoryboardExample
-        Inherits Page
+	' Uses a storyboard to animate the properties
+	' of two buttons.
+	Public Class StoryboardExample
+		Inherits Page
 
-        Public Sub New()
+		Public Sub New()
 
-            ' Create a name scope for the page.
-            NameScope.SetNameScope(Me, New NameScope())
+			' Create a name scope for the page.
+			NameScope.SetNameScope(Me, New NameScope())
 
-            Me.WindowTitle = "Animate Properties using Storyboards"
-            Dim myStackPanel As New StackPanel()
-            myStackPanel.MinWidth = 500
-            myStackPanel.Margin = New Thickness(30)
-            myStackPanel.HorizontalAlignment = HorizontalAlignment.Left
-            Dim myTextBlock As New TextBlock()
-            myTextBlock.Text = "Storyboard Animation Example"
-            myStackPanel.Children.Add(myTextBlock)
+			Me.WindowTitle = "Animate Properties using Storyboards"
+			Dim myStackPanel As New StackPanel()
+			myStackPanel.MinWidth = 500
+			myStackPanel.Margin = New Thickness(30)
+			myStackPanel.HorizontalAlignment = HorizontalAlignment.Left
+			Dim myTextBlock As New TextBlock()
+			myTextBlock.Text = "Storyboard Animation Example"
+			myStackPanel.Children.Add(myTextBlock)
 
-            '
-            ' Create and animate the first button.
-            '
+			'
+			' Create and animate the first button.
+			'
 
-            ' Create a button.
+			' Create a button.
             Dim myWidthAnimatedButton As New Button()
             With myWidthAnimatedButton
                 .Height = 30
@@ -124,6 +124,6 @@ Namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             Me.Content = myStackPanel
 
         End Sub
-    End Class
+	End Class
 
 End Namespace

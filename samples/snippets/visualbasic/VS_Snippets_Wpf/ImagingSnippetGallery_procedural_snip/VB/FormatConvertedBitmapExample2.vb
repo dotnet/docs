@@ -1,4 +1,4 @@
-﻿' <SnippetFormatConvertedBitmapCodeExample2WholePage>
+﻿ ' <SnippetFormatConvertedBitmapCodeExample2WholePage>
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media

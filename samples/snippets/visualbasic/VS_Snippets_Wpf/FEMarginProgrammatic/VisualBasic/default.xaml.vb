@@ -4,7 +4,7 @@ Imports System.Windows.Media
 
 Namespace SDKSample
     Public Partial Class FEMarginProgrammatic
-        '<SnippetHandler>
+'<SnippetHandler>
         Private Sub OnClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Get the current value of the property.
@@ -18,6 +18,6 @@ Namespace SDKSample
                 btn1.Margin = New Thickness(10)
             End If
         End Sub
-        '</SnippetHandler>
+'</SnippetHandler>
     End Class
 End Namespace

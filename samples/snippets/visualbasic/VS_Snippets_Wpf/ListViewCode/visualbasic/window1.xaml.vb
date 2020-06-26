@@ -9,12 +9,12 @@ Imports System.Collections.ObjectModel
 
 
 Namespace SDKSample
-    ''' <summary>
-    ''' Interaction logic for Window1.xaml
-    ''' </summary>
+	''' <summary>
+	''' Interaction logic for Window1.xaml
+	''' </summary>
 
-    Partial Public Class Window1
-        Inherits Window
+	Partial Public Class Window1
+		Inherits Window
 
         Private Sub OnLoad(ByVal sender As Object, ByVal e As RoutedEventArgs)
             '<SnippetListViewView>
@@ -60,51 +60,51 @@ Namespace SDKSample
         End Sub
     End Class
 
-    Public Class EmployeeInfo
-        Private _firstName As String
-        Private _lastName As String
-        Private _employeeNumber As String
+	Public Class EmployeeInfo
+		Private _firstName As String
+		Private _lastName As String
+		Private _employeeNumber As String
 
-        Public Property FirstName() As String
-            Get
-                Return _firstName
-            End Get
-            Set(ByVal value As String)
-                _firstName = value
-            End Set
-        End Property
+		Public Property FirstName() As String
+			Get
+				Return _firstName
+			End Get
+			Set(ByVal value As String)
+				_firstName = value
+			End Set
+		End Property
 
-        Public Property LastName() As String
-            Get
-                Return _lastName
-            End Get
-            Set(ByVal value As String)
-                _lastName = value
-            End Set
-        End Property
+		Public Property LastName() As String
+			Get
+				Return _lastName
+			End Get
+			Set(ByVal value As String)
+				_lastName = value
+			End Set
+		End Property
 
-        Public Property EmployeeNumber() As String
-            Get
-                Return _employeeNumber
-            End Get
-            Set(ByVal value As String)
-                _employeeNumber = value
-            End Set
-        End Property
+		Public Property EmployeeNumber() As String
+			Get
+				Return _employeeNumber
+			End Get
+			Set(ByVal value As String)
+				_employeeNumber = value
+			End Set
+		End Property
 
-        Public Sub New(ByVal firstname As String, ByVal lastname As String, ByVal empnumber As String)
-            _firstName = firstname
-            _lastName = lastname
-            _employeeNumber = empnumber
-        End Sub
-    End Class
-    Public Class myEmployees
-        Inherits ObservableCollection(Of EmployeeInfo)
-        Public Sub New()
-            Add(New EmployeeInfo("Jesper", "Aaberg", "12345"))
-            Add(New EmployeeInfo("Dominik", "Paiha", "98765"))
-            Add(New EmployeeInfo("Yale", "Li", "23875"))
-            Add(New EmployeeInfo("Muru", "Subramani", "49392"))
-        End Sub
-    End Class
+		Public Sub New(ByVal firstname As String, ByVal lastname As String, ByVal empnumber As String)
+			_firstName = firstname
+			_lastName = lastname
+			_employeeNumber = empnumber
+		End Sub
+	End Class
+	Public Class myEmployees
+		Inherits ObservableCollection(Of EmployeeInfo)
+		Public Sub New()
+			Add(New EmployeeInfo("Jesper", "Aaberg", "12345"))
+			Add(New EmployeeInfo("Dominik", "Paiha", "98765"))
+			Add(New EmployeeInfo("Yale", "Li", "23875"))
+			Add(New EmployeeInfo("Muru", "Subramani", "49392"))
+		End Sub
+	End Class
 End Namespace

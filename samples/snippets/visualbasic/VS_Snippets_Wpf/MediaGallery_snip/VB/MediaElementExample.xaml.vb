@@ -1,4 +1,4 @@
-﻿' <SnippetCodeBehindMediaElementExampleWholePage>
+﻿ ' <SnippetCodeBehindMediaElementExampleWholePage>
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Documents
@@ -56,7 +56,7 @@ Namespace SDKSample
         ' Change the speed of the media.
         Private Sub ChangeMediaSpeedRatio(ByVal sender As Object, ByVal args As RoutedPropertyChangedEventArgs(Of Double))
             myMediaElement.SpeedRatio = System.Convert.ToDouble(speedRatioSlider.Value)
-
+            
         End Sub
 
         ' When the media opens, initialize the "Seek To" slider maximum value

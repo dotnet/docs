@@ -8,27 +8,27 @@ Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.BrushExamples
 
-    Public Class VisualBrushExample
-        Inherits Page
+	Public Class VisualBrushExample
+		Inherits Page
 
-        Public Sub New()
+		Public Sub New()
 
-            Dim mainPanel As New StackPanel()
-            visualBrushAsRectangleFillExample(mainPanel)
-            Me.Content = mainPanel
+			Dim mainPanel As New StackPanel()
+			visualBrushAsRectangleFillExample(mainPanel)
+			Me.Content = mainPanel
 
-        End Sub
+		End Sub
 
 
-        ' <SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample>
-        Private Sub visualBrushAsRectangleFillExample(ByVal mainPanel As Panel)
+		' <SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample>
+		Private Sub visualBrushAsRectangleFillExample(ByVal mainPanel As Panel)
 
-            ' <SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample1>
-            Dim myVisualBrush As New VisualBrush()
+			' <SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample1>
+			Dim myVisualBrush As New VisualBrush()
 
-            ' Create the visual brush's contents.
-            Dim myStackPanel As New StackPanel()
-            myStackPanel.Background = Brushes.White
+			' Create the visual brush's contents.
+			Dim myStackPanel As New StackPanel()
+			myStackPanel.Background = Brushes.White
 
             Dim redRectangle As New Rectangle()
             With redRectangle
@@ -71,10 +71,10 @@ Namespace Microsoft.Samples.BrushExamples
             mainPanel.Children.Add(myRectangle)
 
 
-        End Sub
-        ' </SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample>
+		End Sub
+		' </SnippetGraphicsMMVisualBrushAsRectangleBackgroundExample>
 
-    End Class
+	End Class
 
 End Namespace
 ' </SnippetGraphicsMMVisualBrushAsRectangleBackgroundExampleWholePage>

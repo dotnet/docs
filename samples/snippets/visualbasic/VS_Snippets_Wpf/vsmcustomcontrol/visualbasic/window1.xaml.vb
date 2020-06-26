@@ -1,4 +1,4 @@
-﻿Class Window1
+﻿Class Window1 
 
     Private Sub nud_ValueChanged(ByVal sender As Object, ByVal e As ValueChangedEventArgs)
 

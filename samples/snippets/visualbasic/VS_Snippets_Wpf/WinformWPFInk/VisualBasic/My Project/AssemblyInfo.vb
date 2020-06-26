@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WinformsWPFInk")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("MS")>
-<Assembly: AssemblyProduct("WinformsWPFInk")>
-<Assembly: AssemblyCopyright("Copyright © MS 2006")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("WinformsWPFInk")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("MS")> 
+<Assembly: AssemblyProduct("WinformsWPFInk")> 
+<Assembly: AssemblyCopyright("Copyright © MS 2006")> 
+<Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("5c90b003-0b82-41ea-982c-ff04e948e36e")>
+<Assembly: Guid("5c90b003-0b82-41ea-982c-ff04e948e36e")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

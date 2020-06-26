@@ -7,7 +7,7 @@ Imports System.Windows.Media.Imaging
 Imports System.Threading
 Imports System.Security
 
-<Assembly: SecurityTransparent()>
+<Assembly: SecurityTransparent()> 
 
 Namespace SDKSample
 

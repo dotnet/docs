@@ -1,4 +1,4 @@
-﻿Class MainWindow
+﻿Class MainWindow 
     ' <snippetPanelDragOver>
     Private Sub panel_DragOver(ByVal sender As System.Object, ByVal e As System.Windows.DragEventArgs)
         If e.Data.GetDataPresent("Object") Then

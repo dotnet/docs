@@ -14,17 +14,17 @@ Module Module1
         '</Snippet20>
 
         '<Snippet21>
-        Dim student1 As New Student With {.First = "Michael",
+        Dim student1 As New Student With {.First = "Michael", 
                                           .Last = "Tucker"}
         '</Snippet21>
 
         '<Snippet22>
-        Dim student2 As Student = New Student With {.First = "Michael",
+        Dim student2 As Student = New Student With {.First = "Michael", 
                                                     .Last = "Tucker"}
         '</Snippet22>
 
         '<Snippet23>
-        Dim student3 = New Student With {.First = "Michael",
+        Dim student3 = New Student With {.First = "Michael", 
                                          .Last = "Tucker"}
         '</Snippet23>
 
@@ -32,49 +32,49 @@ Module Module1
     ' Function GetStudents returns a list of Student objects.
     Function GetStudents() As IEnumerable(Of Student)
         Dim studentList As New System.Collections.Generic.List(Of Student)
-        Dim student0 As New Student With {.First = "Michael",
-                                          .Last = "Tucker",
-                                          .Year = "Junior",
+        Dim student0 As New Student With {.First = "Michael", 
+                                          .Last = "Tucker", 
+                                          .Year = "Junior", 
                                           .Rank = 10}
-        Dim student1 As New Student With {.First = "Svetlana",
-                                          .Last = "Omelchenko",
-                                          .Year = "Senior",
+        Dim student1 As New Student With {.First = "Svetlana", 
+                                          .Last = "Omelchenko", 
+                                          .Year = "Senior", 
                                           .Rank = 2}
-        Dim student2 As New Student With {.First = "Michiko",
-                                          .Last = "Osada",
-                                          .Year = "Senior",
+        Dim student2 As New Student With {.First = "Michiko", 
+                                          .Last = "Osada", 
+                                          .Year = "Senior", 
                                           .Rank = 7}
-        Dim student3 As New Student With {.First = "Sven",
-                                          .Last = "Mortensen",
-                                          .Year = "Freshman",
+        Dim student3 As New Student With {.First = "Sven", 
+                                          .Last = "Mortensen", 
+                                          .Year = "Freshman", 
                                           .Rank = 53}
-        Dim student4 As New Student With {.First = "Hugo",
-                                          .Last = "Garcia",
-                                          .Year = "Junior",
+        Dim student4 As New Student With {.First = "Hugo", 
+                                          .Last = "Garcia", 
+                                          .Year = "Junior", 
                                           .Rank = 16}
-        Dim student5 As New Student With {.First = "Cesar",
-                                          .Last = "Garcia",
-                                          .Year = "Freshman",
+        Dim student5 As New Student With {.First = "Cesar", 
+                                          .Last = "Garcia", 
+                                          .Year = "Freshman", 
                                           .Rank = 4}
-        Dim student6 As New Student With {.First = "Fadi",
-                                          .Last = "Fakhouri",
-                                          .Year = "Senior",
+        Dim student6 As New Student With {.First = "Fadi", 
+                                          .Last = "Fakhouri", 
+                                          .Year = "Senior", 
                                           .Rank = 72}
-        Dim student7 As New Student With {.First = "Hanying",
-                                          .Last = "Feng",
-                                          .Year = "Senior",
+        Dim student7 As New Student With {.First = "Hanying", 
+                                          .Last = "Feng", 
+                                          .Year = "Senior", 
                                           .Rank = 11}
-        Dim student8 As New Student With {.First = "Debra",
-                                          .Last = "Garcia",
-                                          .Year = "Junior",
+        Dim student8 As New Student With {.First = "Debra", 
+                                          .Last = "Garcia", 
+                                          .Year = "Junior", 
                                           .Rank = 41}
-        Dim student9 As New Student With {.First = "Lance",
-                                          .Last = "Tucker",
-                                          .Year = "Junior",
+        Dim student9 As New Student With {.First = "Lance", 
+                                          .Last = "Tucker", 
+                                          .Year = "Junior", 
                                           .Rank = 60}
-        Dim student10 As New Student With {.First = "Terry",
-                                           .Last = "Adams",
-                                           .Year = "Senior",
+        Dim student10 As New Student With {.First = "Terry", 
+                                           .Last = "Adams", 
+                                           .Year = "Senior", 
                                            .Rank = 6}
         studentList.Add(student0)
         studentList.Add(student1)

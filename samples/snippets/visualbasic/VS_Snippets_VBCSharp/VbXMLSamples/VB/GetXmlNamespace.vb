@@ -9,7 +9,7 @@ Module GetXmlNamespaceSample
 
         ' Create test by using a global XML namespace prefix. 
 
-        Dim contact =
+        Dim contact = 
             <ns:contact>
                 <ns:name>Patrick Hines</ns:name>
                 <ns:phone ns:type="home">206-555-0144</ns:phone>

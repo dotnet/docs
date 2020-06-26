@@ -7,73 +7,73 @@ Imports System.Windows.Forms
 ' </snippet7>
 
 Public Class Form1
-    Inherits Form
+   Inherits Form
+   
+   Public Sub New()
+      InitializeComponent()
+   End Sub
+   
+   
+   ' <snippet2>
+   Private Sub backgroundWorker1_DoWork( _
+   sender As Object, e As DoWorkEventArgs) _
+   Handles backgroundWorker1.DoWork
 
-    Public Sub New()
-        InitializeComponent()
-    End Sub
+      ' Do not access the form's BackgroundWorker reference directly.
+      ' Instead, use the reference provided by the sender parameter.
+      Dim bw As BackgroundWorker = CType( sender, BackgroundWorker )
+      
+      ' Extract the argument.
+      Dim arg As Integer = Fix(e.Argument)
+      
+      ' Start the time-consuming operation.
+      e.Result = TimeConsumingOperation(bw, arg)
+      
+      ' If the operation was canceled by the user, 
+      ' set the DoWorkEventArgs.Cancel property to true.
+      If bw.CancellationPending Then
+         e.Cancel = True
+      End If
 
+   End Sub   
+   ' </snippet2>
 
-    ' <snippet2>
-    Private Sub backgroundWorker1_DoWork( _
-    sender As Object, e As DoWorkEventArgs) _
-    Handles backgroundWorker1.DoWork
+   ' <snippet3>
+   ' This event handler demonstrates how to interpret 
+   ' the outcome of the asynchronous operation implemented
+   ' in the DoWork event handler.
+   Private Sub backgroundWorker1_RunWorkerCompleted( _
+   sender As Object, e As RunWorkerCompletedEventArgs) _
+   Handles backgroundWorker1.RunWorkerCompleted
 
-        ' Do not access the form's BackgroundWorker reference directly.
-        ' Instead, use the reference provided by the sender parameter.
-        Dim bw As BackgroundWorker = CType(sender, BackgroundWorker)
+      If e.Cancelled Then
+         ' The user canceled the operation.
+         MessageBox.Show("Operation was canceled")
+      ElseIf (e.Error IsNot Nothing) Then
+         ' There was an error during the operation.
+         Dim msg As String = String.Format("An error occurred: {0}", e.Error.Message)
+         MessageBox.Show(msg)
+      Else
+         ' The operation completed normally.
+         Dim msg As String = String.Format("Result = {0}", e.Result)
+         MessageBox.Show(msg)
+      End If
+   End Sub   
+   ' </snippet3>
 
-        ' Extract the argument.
-        Dim arg As Integer = Fix(e.Argument)
+   ' <snippet4>
+   ' This method models an operation that may take a long time 
+   ' to run. It can be cancelled, it can raise an exception,
+   ' or it can exit normally and return a result. These outcomes
+   ' are chosen randomly.
+   Private Function TimeConsumingOperation( _
+   bw As BackgroundWorker, _
+   sleepPeriod As Integer) As Integer
 
-        ' Start the time-consuming operation.
-        e.Result = TimeConsumingOperation(bw, arg)
-
-        ' If the operation was canceled by the user, 
-        ' set the DoWorkEventArgs.Cancel property to true.
-        If bw.CancellationPending Then
-            e.Cancel = True
-        End If
-
-    End Sub
-    ' </snippet2>
-
-    ' <snippet3>
-    ' This event handler demonstrates how to interpret 
-    ' the outcome of the asynchronous operation implemented
-    ' in the DoWork event handler.
-    Private Sub backgroundWorker1_RunWorkerCompleted( _
-    sender As Object, e As RunWorkerCompletedEventArgs) _
-    Handles backgroundWorker1.RunWorkerCompleted
-
-        If e.Cancelled Then
-            ' The user canceled the operation.
-            MessageBox.Show("Operation was canceled")
-        ElseIf (e.Error IsNot Nothing) Then
-            ' There was an error during the operation.
-            Dim msg As String = String.Format("An error occurred: {0}", e.Error.Message)
-            MessageBox.Show(msg)
-        Else
-            ' The operation completed normally.
-            Dim msg As String = String.Format("Result = {0}", e.Result)
-            MessageBox.Show(msg)
-        End If
-    End Sub
-    ' </snippet3>
-
-    ' <snippet4>
-    ' This method models an operation that may take a long time 
-    ' to run. It can be cancelled, it can raise an exception,
-    ' or it can exit normally and return a result. These outcomes
-    ' are chosen randomly.
-    Private Function TimeConsumingOperation( _
-    bw As BackgroundWorker, _
-    sleepPeriod As Integer) As Integer
-
-        Dim result As Integer = 0
-
-        Dim rand As New Random()
-
+      Dim result As Integer = 0
+      
+      Dim rand As New Random()
+      
         While Not bw.CancellationPending
             Dim [exit] As Boolean = False
 
@@ -103,12 +103,12 @@ Public Class Form1
                 Exit While
             End If
         End While
+      
+      Return result
+   End Function
+   ' </snippet4>
 
-        Return result
-    End Function
-    ' </snippet4>
-
-    ' <snippet5>
+   ' <snippet5>
     Private Sub startButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles startBtn.Click
         Me.backgroundWorker1.RunWorkerAsync(2000)
     End Sub
@@ -187,7 +187,7 @@ Public Class Form1
     Private WithEvents backgroundWorker1 As System.ComponentModel.BackgroundWorker
     Private WithEvents startBtn As System.Windows.Forms.Button
     Private WithEvents cancelBtn As System.Windows.Forms.Button
-End Class
+End Class 
 
 
 Public Class Program

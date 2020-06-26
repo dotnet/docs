@@ -31,16 +31,16 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         Dim cipherText As String = wrapper.EncryptData(plainText)
 
         MsgBox("The cipher text is: " & cipherText)
-        My.Computer.FileSystem.WriteAllText(
-            My.Computer.FileSystem.SpecialDirectories.MyDocuments &
+        My.Computer.FileSystem.WriteAllText( 
+            My.Computer.FileSystem.SpecialDirectories.MyDocuments & 
             "\cipherText.txt", cipherText, False)
     End Sub
     ' </snippet78>
 
     ' <snippet79>
     Sub TestDecoding()
-        Dim cipherText As String = My.Computer.FileSystem.ReadAllText(
-            My.Computer.FileSystem.SpecialDirectories.MyDocuments &
+        Dim cipherText As String = My.Computer.FileSystem.ReadAllText( 
+            My.Computer.FileSystem.SpecialDirectories.MyDocuments & 
                 "\cipherText.txt")
         Dim password As String = InputBox("Enter the password:")
         Dim wrapper As New Simple3Des(password)
@@ -76,14 +76,14 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         ' </snippet40>
 
         ' <snippet41>
-        Private Function TruncateHash(
-            ByVal key As String,
+        Private Function TruncateHash( 
+            ByVal key As String, 
             ByVal length As Integer) As Byte()
 
             Dim sha1 As New SHA1CryptoServiceProvider
 
             ' Hash the key.
-            Dim keyBytes() As Byte =
+            Dim keyBytes() As Byte = 
                 System.Text.Encoding.Unicode.GetBytes(key)
             Dim hash() As Byte = sha1.ComputeHash(keyBytes)
 
@@ -94,18 +94,18 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         ' </snippet41>
 
         ' <snippet42>
-        Public Function EncryptData(
+        Public Function EncryptData( 
             ByVal plaintext As String) As String
 
             ' Convert the plaintext string to a byte array.
-            Dim plaintextBytes() As Byte =
+            Dim plaintextBytes() As Byte = 
                 System.Text.Encoding.Unicode.GetBytes(plaintext)
 
             ' Create the stream.
             Dim ms As New System.IO.MemoryStream
             ' Create the encoder to write to the stream.
-            Dim encStream As New CryptoStream(ms,
-                TripleDes.CreateEncryptor(),
+            Dim encStream As New CryptoStream(ms, 
+                TripleDes.CreateEncryptor(), 
                 System.Security.Cryptography.CryptoStreamMode.Write)
 
             ' Use the crypto stream to write the byte array to the stream.
@@ -118,7 +118,7 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
         ' </snippet42>
 
         ' <snippet43>
-        Public Function DecryptData(
+        Public Function DecryptData( 
             ByVal encryptedtext As String) As String
 
             ' Convert the encrypted text string to a byte array.
@@ -127,8 +127,8 @@ Class Class1f51e40a2f8843e2a83e28a0b5c0d6fd
             ' Create the stream.
             Dim ms As New System.IO.MemoryStream
             ' Create the decoder to write to the stream.
-            Dim decStream As New CryptoStream(ms,
-                TripleDes.CreateDecryptor(),
+            Dim decStream As New CryptoStream(ms, 
+                TripleDes.CreateDecryptor(), 
                 System.Security.Cryptography.CryptoStreamMode.Write)
 
             ' Use the crypto stream to write the byte array to the stream.

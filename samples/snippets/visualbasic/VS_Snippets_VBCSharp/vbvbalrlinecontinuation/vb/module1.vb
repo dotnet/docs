@@ -97,7 +97,7 @@ Public Module Module1
 
         Dim inStream As New Object
         '<Snippet8>
-        If TypeOf inStream Is
+        If TypeOf inStream Is 
           IO.FileStream AndAlso
           inStream IsNot
           Nothing Then
@@ -109,10 +109,10 @@ Public Module Module1
 
         '<Snippet9>
         Dim customerName = customerXml.
-        <Name>.Value
+          <Name>.Value
 
         Dim customerEmail = customerXml...
-        <Email>.Value
+          <Email>.Value
         '</Snippet9>
 
         '<Snippet11>

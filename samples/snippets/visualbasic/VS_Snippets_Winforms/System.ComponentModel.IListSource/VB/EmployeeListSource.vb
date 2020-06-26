@@ -6,7 +6,7 @@ Public Class EmployeeListSource
     Implements IListSource
 
     <System.Diagnostics.DebuggerNonUserCode()> _
-    Public Sub New(ByVal Container As System.ComponentModel.IContainer)
+Public Sub New(ByVal Container As System.ComponentModel.IContainer)
         MyClass.New()
 
         'Required for Windows.Forms Class Composition Designer support

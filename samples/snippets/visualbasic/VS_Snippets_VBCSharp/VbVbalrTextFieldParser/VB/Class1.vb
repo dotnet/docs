@@ -10,21 +10,21 @@ Public Class Class1
 
         '********************************************************************
         '<Snippet23>
-        Dim reader =
+        Dim reader = 
           My.Computer.FileSystem.OpenTextFieldParser("C:\TestFolder1\test1.txt")
         reader.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.Delimited
         reader.Delimiters = New String() {","}
         Dim currentRow As String()
         While Not reader.EndOfData
-            Try
-                currentRow = reader.ReadFields()
-                Dim currentField As String
+          Try
+              currentRow = reader.ReadFields()
+              Dim currentField As String
                 For Each currentField In currentRow
                     MsgBox(currentField)
                 Next
-            Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
-                MsgBox("Line " & ex.Message &
-                "is not valid and will be skipped.")
+                Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
+                  MsgBox("Line " & ex.Message & 
+                  "is not valid and will be skipped.")
             End Try
         End While
         '</Snippet23>
@@ -33,14 +33,14 @@ Public Class Class1
         '********************************************************************
         Using testReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\logs\test.log")
-            '<Snippet21>
-            testReader.SetDelimiters(vbTab)
-            '</Snippet21>
+          '<Snippet21>
+  testReader.SetDelimiters(vbTab)
+          '</Snippet21>
 
-            '<Snippet22>
-            testReader.SetFieldWidths(5, 10, 11, -1)
-            testReader.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.FixedWidth
-            '</Snippet22>
+          '<Snippet22>
+  testReader.SetFieldWidths(5, 10, 11, -1)
+  testReader.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.FixedWidth
+          '</Snippet22>
         End Using
 
 
@@ -59,7 +59,7 @@ Public Class Class1
         Using FileReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\ParserText.txt")
 
-            FileReader.TextFieldType =
+            FileReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.Delimited
             FileReader.SetDelimiters(",")
             FileReader.TrimWhiteSpace = True
@@ -73,7 +73,7 @@ Public Class Class1
         Using FileReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\ParserText.txt")
 
-            FileReader.TextFieldType =
+            FileReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.Delimited
             FileReader.SetDelimiters(",")
         End Using
@@ -85,7 +85,7 @@ Public Class Class1
         Using FileReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\ParserText.txt")
 
-            FileReader.TextFieldType =
+            FileReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.FixedWidth
             FileReader.FieldWidths = New Integer() {5, 10, 11, -1}
         End Using
@@ -97,7 +97,7 @@ Public Class Class1
             TextFieldParser("C:\logs\test.log")
 
             ' <snippet5>
-            FileReader.TextFieldType =
+            FileReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.Delimited
             FileReader.CommentTokens = New String() {"'"}
             ' </snippet5>
@@ -232,7 +232,7 @@ Public Class Class1
         ' <snippet6>
         Dim StdFormat As Integer() = {5, 10, 11, -1}
         Dim ErrorFormat As Integer() = {5, 5, -1}
-        Using FileReader As New Microsoft.VisualBasic.FileIO.
+        Using FileReader As New  Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\testfile.txt")
 
             FileReader.TextFieldType = FileIO.FieldType.FixedWidth
@@ -301,12 +301,12 @@ Public Class Class1
                     Dim currentField As String
                     For Each currentField In currentRow
                         If currentField = "Jones" Then
-                            MsgBox("The name Jones occurs on line " &
+                            MsgBox("The name Jones occurs on line " & 
                             FileReader.LineNumber)
                         End If
                     Next
                 Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
-                    MsgBox("Line " & ex.Message &
+                    MsgBox("Line " & ex.Message & 
                    "is not valid and will be skipped.")
                 End Try
             End While
@@ -343,7 +343,7 @@ Public Class Class1
         Using MyReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("C:\ParserText.txt")
 
-            MyReader.TextFieldType =
+            MyReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.FixedWidth
             MyReader.FieldWidths = {5, 10, 11, -1}
             Dim currentRow As String()
@@ -355,7 +355,7 @@ Public Class Class1
                         MsgBox(currentField)
                     Next
                 Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
-                    MsgBox("Line " & ex.Message &
+                    MsgBox("Line " & ex.Message & 
                     "is not valid and will be skipped.")
                 End Try
             End While
@@ -370,7 +370,7 @@ Public Class Class1
         Using MyReader As New Microsoft.VisualBasic.FileIO.
             TextFieldParser("c:\logs\bigfile")
 
-            MyReader.TextFieldType =
+            MyReader.TextFieldType = 
                 Microsoft.VisualBasic.FileIO.FieldType.Delimited
             MyReader.Delimiters = New String() {vbTab}
             Dim currentRow As String()
@@ -381,7 +381,7 @@ Public Class Class1
                     currentRow = MyReader.ReadFields()
                     ' Include code here to handle the row.
                 Catch ex As Microsoft.VisualBasic.FileIO.MalformedLineException
-                    MsgBox("Line " & ex.Message &
+                    MsgBox("Line " & ex.Message & 
                     " is invalid.  Skipping")
                 End Try
             End While

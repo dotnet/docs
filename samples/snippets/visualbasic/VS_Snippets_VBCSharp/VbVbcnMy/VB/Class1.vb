@@ -60,8 +60,8 @@ End Class
 Namespace My
     '******************************************************
     Namespace Resources
-        <Global.Microsoft.VisualBasic.HideModuleNameAttribute()>
-        Friend Module FakeResources
+        <Global.Microsoft.VisualBasic.HideModuleNameAttribute()> 
+         Friend Module FakeResources
             Public Form1Icon As System.Drawing.Icon
         End Module
     End Namespace

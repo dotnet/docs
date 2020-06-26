@@ -1,4 +1,4 @@
-﻿Option Explicit On
+﻿Option Explicit On 
 Option Strict On
 
 Class Class0bb85ddaa37f4a9799b48b344c5437be
@@ -12,7 +12,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
         Dim FindThisString As String = "JKL"
         For Each Str As String In StrArray
             If Str.Contains(FindThisString) Then
-                MsgBox("Found " & FindThisString & " at index " &
+                MsgBox("Found " & FindThisString & " at index " & 
                   Str.IndexOf(FindThisString))
             End If
         Next
@@ -123,7 +123,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
 
     Public Sub Method53()
         ' <snippet53>
-        Dim spaceString As String =
+        Dim spaceString As String = 
             "        This string will have the spaces removed        "
         Dim oneString As String
         Dim twoString As String
@@ -306,7 +306,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     ' d0dc8317-9ab3-4324-99f7-3f5788c0e72a
     ' How to: Convert an Array of Bytes into a String in Visual Basic
     ' <snippet72>
-    Private Function UnicodeBytesToString(
+    Private Function UnicodeBytesToString( 
         ByVal bytes() As Byte) As String
 
         Return System.Text.Encoding.Unicode.GetString(bytes)
@@ -318,8 +318,8 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     Public Sub Method73()
         ' <snippet73>
         Dim MyString As String
-        MyString = "This is the first line of my string." & VbCrLf &
-                   "This is the second line of my string." & VbCrLf &
+        MyString = "This is the first line of my string." & VbCrLf & 
+                   "This is the second line of my string." & VbCrLf & 
                    "This is the third line of my string."
         ' </snippet73>
     End Sub
@@ -327,7 +327,7 @@ Class Class0bb85ddaa37f4a9799b48b344c5437be
     ' f477d35c-a3fc-4a30-b1d4-cd0d353aae1d
     ' How to: Convert Strings into an Array of Bytes in Visual Basic
     ' <snippet74>
-    Private Function UnicodeStringToBytes(
+    Private Function UnicodeStringToBytes( 
         ByVal str As String) As Byte()
 
         Return System.Text.Encoding.Unicode.GetBytes(str)

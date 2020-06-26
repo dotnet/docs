@@ -1,10 +1,10 @@
 ﻿' Topic: XML Element Literal
 
 Public Class Samples9
-    Public Shared Sub Main()
+Public Shared Sub Main()
 
         '<Snippet20>
-        Dim test1 As XElement =
+        Dim test1 As XElement = 
         <outer>
             <inner1></inner1>
             <inner2/>
@@ -21,7 +21,7 @@ Public Class Samples9
         Dim attributeName2 = "title"
         Dim attributeValue2 = "My Book"
 
-        Dim book As XElement =
+        Dim book As XElement = 
         <<%= elementType %>
             isbn="1234"
             author=<%= authorName %>
@@ -32,9 +32,9 @@ Public Class Samples9
         Console.WriteLine(book)
         '</Snippet21>
 
-        'Snippet#
+'Snippet#
         '<book isbn="1234" year="1999" title="My Book" /> 
-        '/Snippet#
+'/Snippet#
 
-    End Sub
+End Sub
 End Class

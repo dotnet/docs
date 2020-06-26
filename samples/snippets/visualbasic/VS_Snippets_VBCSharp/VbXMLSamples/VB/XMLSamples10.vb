@@ -10,7 +10,7 @@ Class TestClass1
         ' Create test using a global XML namespace prefix. 
         Dim inner2 = <ns:inner2/>
 
-        Dim test =
+        Dim test = 
         <ns:outer>
             <ns:middle xmlns:ns="http://NewNamespace">
                 <ns:inner1/>

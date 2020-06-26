@@ -1,11 +1,11 @@
 ﻿' Topic: How to: Access XML Attributes (Visual Basic)
 '<Snippet14>  
-Imports <xmlns:ns="http://SomeNamespace">
-
+Imports <xmlns:ns = "http://SomeNamespace"> 
+ 
 Class TestClass3
 
     Shared Sub TestPrefix()
-        Dim phone =
+        Dim phone = 
             <ns:phone ns:type="home">206-555-0144</ns:phone>
 
         Console.WriteLine("Phone type: " & phone.@ns:type)

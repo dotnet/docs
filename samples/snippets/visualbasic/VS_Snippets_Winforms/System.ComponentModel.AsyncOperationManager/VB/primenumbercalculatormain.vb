@@ -16,8 +16,8 @@ Public Class PrimeNumberCalculatorMain
     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     ' Private fields
     '
-#Region "Private fields"
-
+    #Region "Private fields"
+    
     Private WithEvents primeNumberCalculator1 As PrimeNumberCalculator
     Private taskGroupBox As System.Windows.Forms.GroupBox
     Private WithEvents listView1 As System.Windows.Forms.ListView
@@ -38,7 +38,7 @@ Public Class PrimeNumberCalculatorMain
 
 #End Region
 
-
+    
     Public Sub New()
 
         InitializeComponent()

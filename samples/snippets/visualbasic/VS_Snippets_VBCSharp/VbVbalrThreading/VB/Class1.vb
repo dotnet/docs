@@ -43,10 +43,10 @@ Class Class4b8bb2c88ca4457c9afdd11bc9a05701
     ' <snippet3>
     Sub DoWork()
         ' Queue a task
-        System.Threading.ThreadPool.QueueUserWorkItem(
+        System.Threading.ThreadPool.QueueUserWorkItem( 
             New System.Threading.WaitCallback(AddressOf SomeLongTask))
         ' Queue another task
-        System.Threading.ThreadPool.QueueUserWorkItem(
+        System.Threading.ThreadPool.QueueUserWorkItem( 
             New System.Threading.WaitCallback(AddressOf AnotherLongTask))
     End Sub
     Sub SomeLongTask(ByVal state As Object)

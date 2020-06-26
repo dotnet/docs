@@ -7,27 +7,27 @@ Imports System.Windows.Forms
 
 Namespace KeyboardInputForm
 
-     Class Form1
-      Inherits Form
+    Class Form1
+        Inherits Form
 
         Private WithEvents TextBox1 As New TextBox()
 
-      <STAThread()> _
-      Public Shared Sub Main()
-         Application.EnableVisualStyles()
-         Application.Run(New Form1())
-      End Sub
+        <STAThread()> _
+        Public Shared Sub Main()
+            Application.EnableVisualStyles()
+            Application.Run(New Form1())
+        End Sub
 
-      Public Sub New()
-         Me.AutoSize = True
+        Public Sub New()
+            Me.AutoSize = True
 
-         Dim panel As New FlowLayoutPanel()
-         panel.AutoSize = True
-         panel.FlowDirection = FlowDirection.TopDown
-         panel.Controls.Add(TextBox1)
-         Me.Controls.Add(panel)
+            Dim panel As New FlowLayoutPanel()
+            panel.AutoSize = True
+            panel.FlowDirection = FlowDirection.TopDown
+            panel.Controls.Add(TextBox1)
+            Me.Controls.Add(panel)
 
-         Me.KeyPreview = True
+            Me.KeyPreview = True
         End Sub
 
         ' <Snippet10>
@@ -49,28 +49,28 @@ Namespace KeyboardInputForm
                 End Select
             End If
         End Sub
-      ' </Snippet10>
+        ' </Snippet10>
 
-      ' <Snippet15>
-      ' Detect all numeric characters at the TextBox level and consume  
-      ' 2, 5, and 8.
-      Sub TextBox1_KeyPress(ByVal sender As Object, _
-          ByVal e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        ' <Snippet15>
+        ' Detect all numeric characters at the TextBox level and consume  
+        ' 2, 5, and 8.
+        Sub TextBox1_KeyPress(ByVal sender As Object, _
+            ByVal e As KeyPressEventArgs) Handles TextBox1.KeyPress
 
-         If e.KeyChar >= ChrW(48) And e.KeyChar <= ChrW(57) Then
-            MessageBox.Show(("Control.KeyPress: '" + _
-                e.KeyChar.ToString() + "' pressed."))
+            If e.KeyChar >= ChrW(48) And e.KeyChar <= ChrW(57) Then
+                MessageBox.Show(("Control.KeyPress: '" + _
+                    e.KeyChar.ToString() + "' pressed."))
 
-            Select Case e.KeyChar
-               Case ChrW(50), ChrW(53), ChrW(56)
-                  MessageBox.Show(("Control.KeyPress: '" + _
-                      e.KeyChar.ToString() + "' consumed."))
-                  e.Handled = True
-            End Select
-         End If
-      End Sub
-      ' </Snippet15>
+                Select Case e.KeyChar
+                    Case ChrW(50), ChrW(53), ChrW(56)
+                        MessageBox.Show(("Control.KeyPress: '" + _
+                            e.KeyChar.ToString() + "' consumed."))
+                        e.Handled = True
+                End Select
+            End If
+        End Sub
+        ' </Snippet15>
 
-   End Class
+    End Class
 End Namespace
 ' </Snippet0>

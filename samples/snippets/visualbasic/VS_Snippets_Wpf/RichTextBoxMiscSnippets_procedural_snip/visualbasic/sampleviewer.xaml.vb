@@ -6,15 +6,15 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-	Partial Public Class SampleViewer
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-			MyRichTextBoxExampleFrame.Content = New RichTextBoxExample()
-			MyBasicRichTextBoxWithContentExampleFrame.Content = New BasicRichTextBoxWithContentExample()
-		End Sub
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+            MyRichTextBoxExampleFrame.Content = New RichTextBoxExample()
+            MyBasicRichTextBoxWithContentExampleFrame.Content = New BasicRichTextBoxWithContentExample()
+        End Sub
 
-	End Class
+    End Class
 
 
 End Namespace

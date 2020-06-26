@@ -13,7 +13,7 @@ Public Class SystemDrawingMiscLegacyTopics
     ' 1e717711-1361-448e-aa49-0f3ec43110c9
     ' Using the World Transformation
     Private Sub Method11(ByVal e As PaintEventArgs)
-        
+
         ' <snippet11>
         Dim rect As New Rectangle(0, 0, 50, 50)
         Dim pen As New Pen(Color.FromArgb(128, 200, 0, 200), 2)

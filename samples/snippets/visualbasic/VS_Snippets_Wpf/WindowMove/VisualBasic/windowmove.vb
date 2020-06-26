@@ -107,7 +107,7 @@ Namespace SDKSample
 
                 ' Obtain required control patterns from our automation element
                 windowPattern = CType( _
-                GetControlPattern(targetWindow, windowPattern.Pattern),  _
+                GetControlPattern(targetWindow, windowPattern.Pattern), _
                 WindowPattern)
 
                 If (windowPattern Is Nothing) Then Return
@@ -131,7 +131,7 @@ Namespace SDKSample
 
                 ' Obtain required control patterns from our automation element
                 transformPattern = CType( _
-                GetControlPattern(targetWindow, transformPattern.Pattern),  _
+                GetControlPattern(targetWindow, transformPattern.Pattern), _
                 TransformPattern)
 
                 If (transformPattern Is Nothing) Then Return

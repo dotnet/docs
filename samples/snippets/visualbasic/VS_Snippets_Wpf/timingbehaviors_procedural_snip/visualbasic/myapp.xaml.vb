@@ -7,13 +7,13 @@ Imports System.IO
 
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-	Partial Public Class MyApp
-		Inherits Application
+    Partial Public Class MyApp
+        Inherits Application
 
 
-		Public Sub New()
-			AddHandler AppDomain.CurrentDomain.UnhandledException, AddressOf CurrentDomain_UnhandledException
-		End Sub
+        Public Sub New()
+            AddHandler AppDomain.CurrentDomain.UnhandledException, AddressOf CurrentDomain_UnhandledException
+        End Sub
 
         Private Sub myAppStartup(sender As Object, e As StartupEventArgs)
             Dim myWindow As New Window With {

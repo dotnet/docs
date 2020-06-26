@@ -1,13 +1,13 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Controls     
-Imports System.Windows.Documents     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Documents
 
 namespace Viewbox_Stretch_Layout_Samp
 
-	'@ <summary>
-	'@ Interaction logic for Window1.xaml
-	'@ </summary>
+    '@ <summary>
+    '@ Interaction logic for Window1.xaml
+    '@ </summary>
 
     Partial Public Class Window1
         Inherits Window
@@ -57,4 +57,4 @@ namespace Viewbox_Stretch_Layout_Samp
         ' </Snippet2>
 
     End Class
-    End Namespace
+End Namespace

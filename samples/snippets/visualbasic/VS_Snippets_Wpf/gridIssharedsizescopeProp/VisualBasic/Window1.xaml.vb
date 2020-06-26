@@ -1,12 +1,12 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Controls     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
 
 namespace grid_issharedsizescope_prop
 
-	'@ <summary>
-	'@ Interaction logic for Window1.xaml
-	'@ </summary>
+    '@ <summary>
+    '@ Interaction logic for Window1.xaml
+    '@ </summary>
 
     Partial Public Class Window1
         Inherits Window
@@ -25,4 +25,4 @@ namespace grid_issharedsizescope_prop
         End Sub
         ' </Snippet3>        
     End Class
-    End Namespace
+End Namespace

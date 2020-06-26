@@ -8,17 +8,17 @@ Imports System.Windows.Navigation
 Namespace SDKSample
 
 
-	Partial Public Class SampleViewer
-		Inherits Page
+    Partial Public Class SampleViewer
+        Inherits Page
 
-		Public Sub New()
-			InitializeComponent()
+        Public Sub New()
+            InitializeComponent()
 
-		End Sub
-
-
+        End Sub
 
 
-	End Class
+
+
+    End Class
 
 End Namespace

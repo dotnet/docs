@@ -11,8 +11,8 @@ Imports System.Windows.Shapes
 Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-	Public Class ClockControllerSpeedRatioExample
-		Inherits Page
+    Public Class ClockControllerSpeedRatioExample
+        Inherits Page
 
         Private ReadOnly myControllableClock As AnimationClock
         Private ReadOnly speedRatioButton As Button
@@ -21,7 +21,7 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
         Private ReadOnly currentGlobalSpeedTextBlock As TextBlock
 
         Public Sub New()
-			Dim mainPanel As New StackPanel()
+            Dim mainPanel As New StackPanel()
 
             ' Create a rectangle to animate.
             Dim animatedRectangle As New Rectangle With {
@@ -39,11 +39,11 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .SpeedRatio = 0.5
             }
 
-                ' Create a clock from the animation.
+            ' Create a clock from the animation.
             myControllableClock = widthAnimation.CreateClock()
 
-			' Apply the clock to the rectangle's Width property.
-			animatedRectangle.ApplyAnimationClock(Rectangle.WidthProperty, myControllableClock)
+            ' Apply the clock to the rectangle's Width property.
+            animatedRectangle.ApplyAnimationClock(Rectangle.WidthProperty, myControllableClock)
 
             '</SnippetUIElementApplyAnimationClock>  
             '
@@ -66,16 +66,16 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .VerticalAlignment = VerticalAlignment.Top
             }
             AddHandler speedRatioSettingTextBox.TextChanged, AddressOf seekAmountTextBox_TextChanged
-			speedRatioDetailsPanel.Children.Add(speedRatioSettingTextBox)
+            speedRatioDetailsPanel.Children.Add(speedRatioSettingTextBox)
 
             ' Create a button to apply SpeedRatio changes.
             speedRatioButton = New Button With {
                 .Content = "Apply Speed Ratio"
             }
             AddHandler speedRatioButton.Click, AddressOf speedRatioButton_Clicked
-			speedRatioDetailsPanel.Children.Add(speedRatioButton)
+            speedRatioDetailsPanel.Children.Add(speedRatioButton)
 
-			mainPanel.Children.Add(speedRatioDetailsPanel)
+            mainPanel.Children.Add(speedRatioDetailsPanel)
 
             ' Display the clock's global speed information.
             Dim myLabel As New Label With {
@@ -87,11 +87,11 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             }
             mainPanel.Children.Add(currentGlobalSpeedTextBlock)
 
-			' List for speed changes.
-			AddHandler myControllableClock.CurrentGlobalSpeedInvalidated, AddressOf myControllableClock_currentGlobalSpeedInvalidated
+            ' List for speed changes.
+            AddHandler myControllableClock.CurrentGlobalSpeedInvalidated, AddressOf myControllableClock_currentGlobalSpeedInvalidated
 
-			Content = mainPanel
-		End Sub
+            Content = mainPanel
+        End Sub
 
 
         ' Updates the clock's SpeedRatio.

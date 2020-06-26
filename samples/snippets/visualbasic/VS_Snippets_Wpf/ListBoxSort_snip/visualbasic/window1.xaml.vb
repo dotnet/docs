@@ -12,24 +12,24 @@ Imports System.ComponentModel
 
 
 Namespace ListBoxSort_snip
-	''' <summary>
-	''' Interaction logic for Window1.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
 
-	Partial Public Class Window1
-		Inherits System.Windows.Window
+    Partial Public Class Window1
+        Inherits System.Windows.Window
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-		'<SnippetHowToCode>
-		Private Sub OnClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
-'<SnippetSort>
-			myListBox.Items.SortDescriptions.Add(New SortDescription("Content", ListSortDirection.Descending))
-'</SnippetSort>
-		End Sub
-		'</SnippetHowToCode>
+        '<SnippetHowToCode>
+        Private Sub OnClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            '<SnippetSort>
+            myListBox.Items.SortDescriptions.Add(New SortDescription("Content", ListSortDirection.Descending))
+            '</SnippetSort>
+        End Sub
+        '</SnippetHowToCode>
 
-	End Class
+    End Class
 End Namespace

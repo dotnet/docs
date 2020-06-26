@@ -7,17 +7,17 @@ Imports System.Windows.Media.Animation
 Imports System.Windows.Media
 
 Namespace SDKSamples
-	' This example shows how to use PointAnimation to animate the
-	' position of an ellipse by animating the Center property of an 
-	' EllipseGeometry. PointAnimation is used because the Center property
-	' takes a Point value.
-	Public Class PointAnimationExample
-		Inherits Page
-		Public Sub New()
+    ' This example shows how to use PointAnimation to animate the
+    ' position of an ellipse by animating the Center property of an 
+    ' EllipseGeometry. PointAnimation is used because the Center property
+    ' takes a Point value.
+    Public Class PointAnimationExample
+        Inherits Page
+        Public Sub New()
 
-			' Create a NameScope for this page so that
-			' Storyboards can be used.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a NameScope for this page so that
+            ' Storyboards can be used.
+            NameScope.SetNameScope(Me, New NameScope())
 
             Dim myEllipseGeometry As New EllipseGeometry()
             With myEllipseGeometry
@@ -26,9 +26,9 @@ Namespace SDKSamples
                 .RadiusY = 15
             End With
 
-			' Assign the EllipseGeometry a name so that
-			' it can be targeted by a Storyboard.
-			Me.RegisterName("MyAnimatedEllipseGeometry", myEllipseGeometry)
+            ' Assign the EllipseGeometry a name so that
+            ' it can be targeted by a Storyboard.
+            Me.RegisterName("MyAnimatedEllipseGeometry", myEllipseGeometry)
 
             Dim myPath As New Path()
             With myPath
@@ -65,9 +65,9 @@ Namespace SDKSamples
             containerCanvas.Children.Add(myPath)
 
             Content = containerCanvas
-		End Sub
+        End Sub
 
-	End Class
+    End Class
 End Namespace
 ' </SnippetPointAnimationWholePage>
 

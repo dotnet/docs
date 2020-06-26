@@ -62,7 +62,7 @@ Namespace Microsoft.Samples.WinForms.VB.FlashTrackBar
 
             Return value
 
-         End Function
+        End Function
 
         Overrides OverLoads Public Function GetEditStyle(context As ITypeDescriptorContext) As UITypeEditorEditStyle
             If ((context IsNot Nothing) And (context.Instance IsNot Nothing)) Then

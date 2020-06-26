@@ -1,5 +1,5 @@
-﻿Imports System.Windows     
-Imports System.Windows.Controls     
+﻿Imports System.Windows
+Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Shapes
 Imports System.Windows.Controls.Primitives

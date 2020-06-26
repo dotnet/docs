@@ -95,7 +95,7 @@ Namespace ButtonAlign_vb
             cv2.Children.Add(btnvb)
             '</Snippet3>
         End Sub
-                
+
     End Class
 
 End Namespace

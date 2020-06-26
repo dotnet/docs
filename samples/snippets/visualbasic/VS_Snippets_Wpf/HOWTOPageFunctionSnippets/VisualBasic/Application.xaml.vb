@@ -2,16 +2,16 @@
 Imports System.Configuration
 
 Namespace UsingPageFunctionsSample
-	''' <summary>
-	''' Interaction logic for App.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for App.xaml
+    ''' </summary>
 
-	Partial Public Class App
-		Inherits Application
+    Partial Public Class App
+        Inherits Application
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-	End Class
+    End Class
 End Namespace

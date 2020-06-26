@@ -2,7 +2,7 @@
 Imports System.Windows.Controls
 
 Namespace SDKSample
-'<SnippetHandler>
+    '<SnippetHandler>
     Public Partial Class RoutedEventAddRemoveHandler
         Private Sub MakeButton(ByVal sender As Object, ByVal e As RoutedEventArgs)
             Dim b2 As Button = New Button()
@@ -16,6 +16,6 @@ Namespace SDKSample
         Private Sub Onb2Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
             text1.Text = "New Button (b2) Was Clicked!!"
         End Sub
-'</SnippetHandler>
+        '</SnippetHandler>
     End Class
 End Namespace

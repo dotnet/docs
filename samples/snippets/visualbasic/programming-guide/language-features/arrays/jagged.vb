@@ -1,45 +1,45 @@
 ﻿Imports System.Globalization
 
 Module JaggedArray
-   Public Sub Main()
-      ' Declare the jagged array of 12 elements. Each element is an array of Double.
-      Dim sales(11)() As Double
-      ' Set each element of the sales array to a Double array of the appropriate size.
-      For month As Integer = 0 To 11
-         ' The number of days in the month determines the appropriate size.
-         Dim daysInMonth As Integer =
-            DateTime.DaysInMonth(Year(Now), month + 1)
-         sales(month) = New Double(daysInMonth - 1) {}
-      Next 
+    Public Sub Main()
+        ' Declare the jagged array of 12 elements. Each element is an array of Double.
+        Dim sales(11)() As Double
+        ' Set each element of the sales array to a Double array of the appropriate size.
+        For month As Integer = 0 To 11
+            ' The number of days in the month determines the appropriate size.
+            Dim daysInMonth As Integer =
+               DateTime.DaysInMonth(Year(Now), month + 1)
+            sales(month) = New Double(daysInMonth - 1) {}
+        Next
 
-      ' Store values in each element.
-      For month As Integer = 0 To 11
-         For dayOfMonth = 0 To sales(month).GetUpperBound(0)
-            sales(month)(dayOfMonth) = (month * 100) + dayOfMonth
-         Next
-      Next
+        ' Store values in each element.
+        For month As Integer = 0 To 11
+            For dayOfMonth = 0 To sales(month).GetUpperBound(0)
+                sales(month)(dayOfMonth) = (month * 100) + dayOfMonth
+            Next
+        Next
 
-      ' Retrieve and display the array values.
-      Dim monthNames = DateTimeFormatInfo.CurrentInfo.AbbreviatedMonthNames
-      ' Display the month names.
-      Console.Write("    ")
-      For ctr = 0 To sales.GetUpperBound(0)
-         Console.Write($" {monthNames(ctr)}   ")
-      Next   
-      Console.WriteLine()
-      ' Display data for each day in each month.
-      For dayInMonth = 0 To 30
-         Console.Write($"{dayInMonth + 1,2}.  ")
-         For monthNumber = 0 To sales.GetUpperBound(0)
-            If dayInMonth > sales(monthNumber).GetUpperBound(0) Then 
-               Console.Write("       ")
-            Else
-               Console.Write($"{sales(monthNumber)(dayInMonth),-5}  ")
-            End If
-         Next   
-         Console.WriteLine()
-      Next
-   End Sub
+        ' Retrieve and display the array values.
+        Dim monthNames = DateTimeFormatInfo.CurrentInfo.AbbreviatedMonthNames
+        ' Display the month names.
+        Console.Write("    ")
+        For ctr = 0 To sales.GetUpperBound(0)
+            Console.Write($" {monthNames(ctr)}   ")
+        Next
+        Console.WriteLine()
+        ' Display data for each day in each month.
+        For dayInMonth = 0 To 30
+            Console.Write($"{dayInMonth + 1,2}.  ")
+            For monthNumber = 0 To sales.GetUpperBound(0)
+                If dayInMonth > sales(monthNumber).GetUpperBound(0) Then
+                    Console.Write("       ")
+                Else
+                    Console.Write($"{sales(monthNumber)(dayInMonth),-5}  ")
+                End If
+            Next
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '      Jan    Feb    Mar    Apr    May    Jun    Jul    Aug    Sep    Oct    Nov    Dec

@@ -7,23 +7,23 @@ Imports System.Windows.Media.Imaging
 
 Namespace Microsoft.Samples.BrushExamples
 
-	Public Class TilingExample
-		Inherits Page
+    Public Class TilingExample
+        Inherits Page
 
 
-		Public Sub New()
+        Public Sub New()
 
-			' Create the main panel.
-			Dim mainPanel As New StackPanel()
-			mainPanel.Orientation = Orientation.Horizontal
-			createTilingExample(mainPanel)
-			Me.Content = mainPanel
-
-
-		End Sub
+            ' Create the main panel.
+            Dim mainPanel As New StackPanel()
+            mainPanel.Orientation = Orientation.Horizontal
+            createTilingExample(mainPanel)
+            Me.Content = mainPanel
 
 
-		Private Sub createTilingExample(ByVal mainPanel As Panel)
+        End Sub
+
+
+        Private Sub createTilingExample(ByVal mainPanel As Panel)
 
 
             Dim rectangleBorder As New Border()
@@ -58,9 +58,9 @@ Namespace Microsoft.Samples.BrushExamples
             rectangleBorder.Child = myRectangle
             mainPanel.Children.Add(rectangleBorder)
 
-		End Sub
+        End Sub
 
 
-	End Class
+    End Class
 
 End Namespace

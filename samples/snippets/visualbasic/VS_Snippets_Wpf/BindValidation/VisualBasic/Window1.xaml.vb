@@ -4,12 +4,12 @@ Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Markup
 
-    Public Class Window1
-        Inherits Window
-        ' Methods
-        Public Sub New()
-            Me.InitializeComponent()
-        End Sub
+Public Class Window1
+    Inherits Window
+    ' Methods
+    Public Sub New()
+        Me.InitializeComponent()
+    End Sub
 
     Private Sub DisableCustomHandler(ByVal sender As Object, ByVal e As RoutedEventArgs)
         Dim binding1 As Binding = BindingOperations.GetBinding(Me.textBox3, TextBox.TextProperty)

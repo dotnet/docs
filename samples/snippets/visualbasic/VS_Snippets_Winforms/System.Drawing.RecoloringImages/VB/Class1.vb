@@ -10,8 +10,8 @@ Imports System.Drawing.Imaging
 
 Public Class SystemDrawingRecoloringImages
 
-' 2106fb9a-4d60-4dcf-9220-9f189a6c4d19
-' How to: Translate Image Colors
+    ' 2106fb9a-4d60-4dcf-9220-9f189a6c4d19
+    ' How to: Translate Image Colors
     Private Sub Method11(ByVal e As PaintEventArgs)
         ' <snippet11>
         Dim image As New Bitmap("ColorBars.bmp")
@@ -49,8 +49,8 @@ Public Class SystemDrawingRecoloringImages
 
         ' </snippet11>
     End Sub
-' 44df4556-a433-49c0-ac0f-9a12063a5860
-' How to: Use a Color Matrix to Transform a Single Color
+    ' 44df4556-a433-49c0-ac0f-9a12063a5860
+    ' How to: Use a Color Matrix to Transform a Single Color
     Private Sub Method21(ByVal e As PaintEventArgs)
         ' <snippet21>
         Dim image As New Bitmap("InputColor.bmp")
@@ -89,8 +89,8 @@ Public Class SystemDrawingRecoloringImages
 
         ' </snippet21>
     End Sub
-' 977df1ce-8665-42d4-9fb1-ef7f0ff63419
-' How to: Use a Color Remap Table
+    ' 977df1ce-8665-42d4-9fb1-ef7f0ff63419
+    ' How to: Use a Color Remap Table
     Private Sub Method31(ByVal e As PaintEventArgs)
         ' <snippet31>
         Dim image As New Bitmap("RemapInput.bmp")
@@ -121,8 +121,8 @@ Public Class SystemDrawingRecoloringImages
 
         ' </snippet31>
     End Sub
-' df23c887-7fd6-4b15-ad94-e30b5bd4b849
-' Using Transformations to Scale Colors
+    ' df23c887-7fd6-4b15-ad94-e30b5bd4b849
+    ' Using Transformations to Scale Colors
     Private Sub Method41(ByVal e As PaintEventArgs)
         ' <snippet41>
         Dim image As New Bitmap("ColorBars2.bmp")

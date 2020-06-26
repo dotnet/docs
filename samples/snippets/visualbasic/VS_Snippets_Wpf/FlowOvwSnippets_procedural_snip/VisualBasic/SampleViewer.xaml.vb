@@ -6,19 +6,19 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-	Partial Public Class SampleViewer
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-			MySimpleFlowExampleFrame.Content = New SimpleFlowExample()
-			MyParagraphExampleFrame.Content = New ParagraphExample()
-			MySectionExampleFrame.Content = New SectionExample()
-			MyListExampleFrame.Content = New ListExample()
-			MyInlineUIContainerExampleFrame.Content = New InlineUIContainerExample()
-			MyFigureExampleFrame.Content = New FigureExample()
-		End Sub
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+            MySimpleFlowExampleFrame.Content = New SimpleFlowExample()
+            MyParagraphExampleFrame.Content = New ParagraphExample()
+            MySectionExampleFrame.Content = New SectionExample()
+            MyListExampleFrame.Content = New ListExample()
+            MyInlineUIContainerExampleFrame.Content = New InlineUIContainerExample()
+            MyFigureExampleFrame.Content = New FigureExample()
+        End Sub
 
-	End Class
+    End Class
 
 
 End Namespace

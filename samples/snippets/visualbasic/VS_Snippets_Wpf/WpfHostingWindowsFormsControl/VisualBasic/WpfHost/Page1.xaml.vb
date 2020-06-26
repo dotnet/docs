@@ -1,4 +1,4 @@
-﻿ ' <snippet10>
+﻿' <snippet10>
 Imports System.Windows
 Imports System.Windows.Media
 Imports System.Windows.Controls

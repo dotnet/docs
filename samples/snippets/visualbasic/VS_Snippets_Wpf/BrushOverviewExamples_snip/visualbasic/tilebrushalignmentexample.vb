@@ -5,33 +5,33 @@ Imports System.Windows.Media
 Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.BrushExamples
-	Public Class TileBrushAlignmentExample
-		Inherits Page
+    Public Class TileBrushAlignmentExample
+        Inherits Page
 
-		Public Sub New()
-			' <SnippetTileBrushTopLeftAlignmentInline>
-			'
-			' Create a TileBrush and align its
-			' content to the top-left of its tile.
-			'
-			Dim topLeftAlignedTileBrush As New DrawingBrush()
-			topLeftAlignedTileBrush.AlignmentX = AlignmentX.Left
-			topLeftAlignedTileBrush.AlignmentY = AlignmentY.Top
+        Public Sub New()
+            ' <SnippetTileBrushTopLeftAlignmentInline>
+            '
+            ' Create a TileBrush and align its
+            ' content to the top-left of its tile.
+            '
+            Dim topLeftAlignedTileBrush As New DrawingBrush()
+            topLeftAlignedTileBrush.AlignmentX = AlignmentX.Left
+            topLeftAlignedTileBrush.AlignmentY = AlignmentY.Top
 
-			' Set Stretch to None so that the brush's
-			' content doesn't automatically expand to
-			' fill the entire tile. 
-			topLeftAlignedTileBrush.Stretch = Stretch.None
+            ' Set Stretch to None so that the brush's
+            ' content doesn't automatically expand to
+            ' fill the entire tile. 
+            topLeftAlignedTileBrush.Stretch = Stretch.None
 
-			' Define the brush's content.
-			Dim ellipses As New GeometryGroup()
-			ellipses.Children.Add(New EllipseGeometry(New Point(50, 50), 20, 45))
-			ellipses.Children.Add(New EllipseGeometry(New Point(50, 50), 45, 20))
-			Dim drawingPen As New Pen(Brushes.Gray, 10)
-			Dim ellipseDrawing As New GeometryDrawing(Brushes.Blue, drawingPen, ellipses)
-			topLeftAlignedTileBrush.Drawing = ellipseDrawing
+            ' Define the brush's content.
+            Dim ellipses As New GeometryGroup()
+            ellipses.Children.Add(New EllipseGeometry(New Point(50, 50), 20, 45))
+            ellipses.Children.Add(New EllipseGeometry(New Point(50, 50), 45, 20))
+            Dim drawingPen As New Pen(Brushes.Gray, 10)
+            Dim ellipseDrawing As New GeometryDrawing(Brushes.Blue, drawingPen, ellipses)
+            topLeftAlignedTileBrush.Drawing = ellipseDrawing
 
-			' Use the brush to paint a rectangle.
+            ' Use the brush to paint a rectangle.
             Dim rectangle1 As New Rectangle()
             With rectangle1
                 .Width = 150
@@ -151,7 +151,7 @@ Namespace Microsoft.Samples.BrushExamples
             Margin = New Thickness(20)
             Title = "Alignment Example"
 
-		End Sub
+        End Sub
 
-	End Class
+    End Class
 End Namespace

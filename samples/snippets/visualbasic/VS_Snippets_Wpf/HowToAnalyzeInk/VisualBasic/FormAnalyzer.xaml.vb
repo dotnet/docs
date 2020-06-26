@@ -1,4 +1,4 @@
-﻿ '<Snippet2>
+﻿'<Snippet2>
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Ink
@@ -10,33 +10,33 @@ Class FormAnalyzer
     Inherits Window
 
     Private analyzer As InkAnalyzer
-    
+
     Private hintNodeTitle As AnalysisHintNode
     Private hintNodeDirector As AnalysisHintNode
     Private hintNodeStarring As AnalysisHintNode
     Private hintNodeRating As AnalysisHintNode
     Private hintNodeYear As AnalysisHintNode
     Private hintNodeGenre As AnalysisHintNode
-    
+
     ' Timer that raises an event to
     ' clear the InkCanvas.
     Private strokeRemovalTimer As DispatcherTimer
-    
+
     Private Const CLEAR_STROKES_DELAY As Integer = 5
-        
-    Public Sub New() 
+
+    Public Sub New()
 
         InitializeComponent()
-    
+
     End Sub
-    
-    Protected Overrides Sub OnContentRendered(ByVal e As EventArgs) 
+
+    Protected Overrides Sub OnContentRendered(ByVal e As EventArgs)
         MyBase.OnContentRendered(e)
-        
+
         ' Initialize the Analyzer.
         analyzer = New InkAnalyzer()
         AddHandler analyzer.ResultsUpdated, AddressOf analyzer_ResultsUpdated
-        
+
         ' Add analysis hints for each form area.
         ' Use the absolute Width and Height of the Grid's
         ' RowDefinition and ColumnDefinition properties defined in XAML, 
@@ -47,7 +47,7 @@ Class FormAnalyzer
         hintNodeRating = analyzer.CreateAnalysisHint(New Rect(100, 300, 320, 100))
         hintNodeYear = analyzer.CreateAnalysisHint(New Rect(520, 300, 320, 100))
         hintNodeGenre = analyzer.CreateAnalysisHint(New Rect(100, 400, 740, 100))
-        
+
         'Set the factoids on the hints.
         hintNodeTitle.Factoid = "(!IS_DEFAULT)"
         hintNodeDirector.Factoid = "(!IS_PERSONALNAME_FULLNAME)"
@@ -55,7 +55,7 @@ Class FormAnalyzer
         hintNodeRating.Factoid = "(!IS_DEFAULT)"
         hintNodeYear.Factoid = "(!IS_DATE_YEAR)"
         hintNodeGenre.Factoid = "(!IS_DEFAULT)"
-    
+
     End Sub
 
     ' <summary>
@@ -67,27 +67,27 @@ Class FormAnalyzer
     ' <param name="sender">InkCanvas that raises the
     ' StrokeCollected event.</param>
     ' <param name="args">Contains the event data.</param>
-    Private Sub RestartAnalysis(ByVal sender As Object, ByVal args As InkCanvasStrokeCollectedEventArgs) 
-        
+    Private Sub RestartAnalysis(ByVal sender As Object, ByVal args As InkCanvasStrokeCollectedEventArgs)
+
         ' If strokeRemovalTimer is enabled, stop it.
         If Not (strokeRemovalTimer Is Nothing) AndAlso strokeRemovalTimer.IsEnabled Then
             strokeRemovalTimer.Stop()
         End If
-        
+
         ' Restart the timer to clear the strokes in five seconds
         strokeRemovalTimer = New DispatcherTimer( _
                              TimeSpan.FromSeconds(CLEAR_STROKES_DELAY), _
                              DispatcherPriority.Normal, _
                              AddressOf ClearCanvas, _
                              System.Windows.Threading.Dispatcher.CurrentDispatcher)
-        
+
         ' Add the new stroke to the InkAnalyzer and
         ' begin background analysis.
         analyzer.AddStroke(args.Stroke)
         analyzer.BackgroundAnalyze()
-    
+
     End Sub
-    
+
     ' <summary>
     ' Analyzer.ResultsUpdated event handler.
     ' </summary>
@@ -132,14 +132,14 @@ Class FormAnalyzer
         End If
 
     End Sub
-     
+
     'Clear the canvas, but leave the current strokes in the analyzer.
-    Private Sub ClearCanvas(ByVal sender As Object, ByVal args As EventArgs) 
+    Private Sub ClearCanvas(ByVal sender As Object, ByVal args As EventArgs)
 
         strokeRemovalTimer.Stop()
-        
+
         xaml_writingCanvas.Strokes.Clear()
-    
+
     End Sub
 End Class
 '</Snippet2>

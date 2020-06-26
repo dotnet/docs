@@ -11,7 +11,7 @@ Public Class Form1
 
     Dim tlpGrowStyle As TableLayoutPanelGrowStyle = _
     TableLayoutPanelGrowStyle.AddRows
- 
+
     ' <snippet2>
     Private Sub enumerateChildrenBtn_Click( _
     ByVal sender As System.Object, _
@@ -439,7 +439,7 @@ Public Class Form1
 
 
 
-   
+
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
@@ -817,8 +817,8 @@ Public Class Form1
     Private Shared m_SyncObject As New Object
 #End Region
 
-    
-  
+
+
 End Class
 
 ' <snippet100>

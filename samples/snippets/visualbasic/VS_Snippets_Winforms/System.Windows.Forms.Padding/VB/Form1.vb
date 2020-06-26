@@ -1,22 +1,22 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Windows.Forms
 
 Public Class Form1
-   Inherits Form
-   Private panel1 As Panel
+    Inherits Form
+    Private panel1 As Panel
     Private richTextBox1 As RichTextBox
 
-   '/ <summary>
-   '/ Required designer variable.
-   '/ </summary>
-   Private components As System.ComponentModel.IContainer = Nothing
-   
-   ' <snippet2>
-   ' This code example demonstrates using the Padding property to 
-   ' create a border around a RichTextBox control.
-   Public Sub New()
+    '/ <summary>
+    '/ Required designer variable.
+    '/ </summary>
+    Private components As System.ComponentModel.IContainer = Nothing
+
+    ' <snippet2>
+    ' This code example demonstrates using the Padding property to 
+    ' create a border around a RichTextBox control.
+    Public Sub New()
         InitializeComponent()
 
         Me.panel1.BackColor = System.Drawing.Color.Blue
@@ -28,17 +28,17 @@ Public Class Form1
     End Sub
     ' </snippet2>
 
-   '/ <summary>
-   '/ Clean up any resources being used.
-   '/ </summary>
-   '/ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-   Protected Overrides Sub Dispose(disposing As Boolean)
-      If disposing AndAlso (components IsNot Nothing) Then
-         components.Dispose()
-      End If
-      MyBase.Dispose(disposing)
+    '/ <summary>
+    '/ Clean up any resources being used.
+    '/ </summary>
+    '/ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If disposing AndAlso (components IsNot Nothing) Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
     End Sub
-   
+
 #Region "Windows Form Designer generated code"
 
     '/ <summary>

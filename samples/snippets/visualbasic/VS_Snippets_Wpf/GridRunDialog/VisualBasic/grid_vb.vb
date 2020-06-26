@@ -11,7 +11,7 @@ Namespace SDKSample
         Public Sub New()
             WindowTitle = "Grid Run Dialog Sample Sample"
             '<Snippet1>
-            
+
             'Create a Grid as the root Panel element.
             Dim myGrid As New Grid()
             myGrid.Height = 165

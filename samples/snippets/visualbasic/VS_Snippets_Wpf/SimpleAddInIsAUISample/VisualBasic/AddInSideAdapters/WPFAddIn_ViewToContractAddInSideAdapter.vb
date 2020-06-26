@@ -8,12 +8,12 @@ Imports AddInViews
 Imports Contracts
 
 Namespace AddInSideAdapters
-	''' <summary>
-	''' Adapts the add-in's view of the contract to the add-in contract
-	''' </summary>
-	<AddInAdapter>
-	Public Class WPFAddIn_ViewToContractAddInSideAdapter
-		Inherits ContractBase
+    ''' <summary>
+    ''' Adapts the add-in's view of the contract to the add-in contract
+    ''' </summary>
+    <AddInAdapter>
+    Public Class WPFAddIn_ViewToContractAddInSideAdapter
+        Inherits ContractBase
         Implements IWPFAddInContract
 
         Private wpfAddInView As WPFAddInView

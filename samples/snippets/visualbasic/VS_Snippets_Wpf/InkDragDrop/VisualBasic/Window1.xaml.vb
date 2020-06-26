@@ -1,4 +1,4 @@
-﻿ '<Snippet2>
+﻿'<Snippet2>
 Imports System.IO
 Imports System.Windows
 Imports System.Windows.Ink
@@ -10,9 +10,9 @@ Imports System.Windows.Media
 Class Window1
     Inherits Window
 
-    Public Sub New() 
+    Public Sub New()
         InitializeComponent()
-    
+
     End Sub
 
     '<Snippet3>
@@ -64,7 +64,7 @@ Class Window1
         ' Get the strokes that were moved.
         Dim ic As InkCanvas = CType(sender, InkCanvas)
         Dim ms As MemoryStream = CType(e.Data.GetData( _
-                  StrokeCollection.InkSerializedFormat),  _
+                  StrokeCollection.InkSerializedFormat), _
                   MemoryStream)
 
         ms.Position = 0
@@ -90,8 +90,8 @@ Class Window1
         strokes.Transform(mat, False)
 
     End Sub
-    
-    
+
+
     Private Sub switchToSelect(ByVal sender As Object, _
                        ByVal e As RoutedEventArgs)
 
@@ -99,8 +99,8 @@ Class Window1
         ic2.EditingMode = InkCanvasEditingMode.Select
 
     End Sub
-    
-    
+
+
     Private Sub switchToInk(ByVal sender As Object, _
                     ByVal e As RoutedEventArgs)
 

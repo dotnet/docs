@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("DataBindingLab")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("DataBindingLab")> 
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2005")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("DataBindingLab")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("DataBindingLab")>
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2005")>
+<Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -29,12 +29,12 @@ Imports System.Windows
 
 
 'This attribute describes where any theme specific and generic resource dictionaries can be found.
-<Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)> 
+<Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)>
 
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("3baa78ed-8663-416f-a1b5-ee88da989b18")> 
+<Assembly: Guid("3baa78ed-8663-416f-a1b5-ee88da989b18")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -47,5 +47,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

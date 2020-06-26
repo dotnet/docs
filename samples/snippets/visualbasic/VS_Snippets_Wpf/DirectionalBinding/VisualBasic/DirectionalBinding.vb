@@ -5,8 +5,8 @@ Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Markup
 
-    Public Class DirectionalBinding
-        Inherits Grid
+Public Class DirectionalBinding
+    Inherits Grid
     '<SnippetOnRentRaise>
     Private Sub OnRentRaise(ByVal sender As Object, ByVal args As RoutedEventArgs)
         Dim _random As New System.Random()
@@ -28,6 +28,6 @@ Imports System.Windows.Markup
         Me.infoText.Text = (Me.infoText.Text & " at ")
         Me.infoText.Text = (Me.infoText.Text & DateTime.Now.ToLongTimeString)
     End Sub
-    End Class
+End Class
 
 

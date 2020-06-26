@@ -20,7 +20,7 @@ Public Class Form1
 
         sortButton.Dock = DockStyle.Bottom
         sortButton.Text = "Sort"
- 
+
         Controls.Add(dataGridView1)
         Controls.Add(sortButton)
         Text = "DataGridView programmatic sort demo"

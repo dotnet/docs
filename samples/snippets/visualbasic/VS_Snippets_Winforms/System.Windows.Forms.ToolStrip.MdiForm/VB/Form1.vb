@@ -1,4 +1,4 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
@@ -8,36 +8,36 @@ Imports System.Windows.Forms
 ' that supports menu merging and moveable 
 ' ToolStrip controls
 Public Class Form1
-   Inherits Form
-   Private menuStrip1 As MenuStrip
-   Private toolStripMenuItem1 As ToolStripMenuItem
-   Private WithEvents newToolStripMenuItem As ToolStripMenuItem
-   Private toolStripPanel1 As ToolStripPanel
-   Private toolStrip1 As ToolStrip
-   Private toolStripPanel2 As ToolStripPanel
-   Private toolStrip2 As ToolStrip
-   Private toolStripPanel3 As ToolStripPanel
-   Private toolStrip3 As ToolStrip
-   Private toolStripPanel4 As ToolStripPanel
-   Private toolStrip4 As ToolStrip
-   
-   Private components As System.ComponentModel.IContainer = Nothing
-   
-   Public Sub New()
-      InitializeComponent()
+    Inherits Form
+    Private menuStrip1 As MenuStrip
+    Private toolStripMenuItem1 As ToolStripMenuItem
+    Private WithEvents newToolStripMenuItem As ToolStripMenuItem
+    Private toolStripPanel1 As ToolStripPanel
+    Private toolStrip1 As ToolStrip
+    Private toolStripPanel2 As ToolStripPanel
+    Private toolStrip2 As ToolStrip
+    Private toolStripPanel3 As ToolStripPanel
+    Private toolStrip3 As ToolStrip
+    Private toolStripPanel4 As ToolStripPanel
+    Private toolStrip4 As ToolStrip
+
+    Private components As System.ComponentModel.IContainer = Nothing
+
+    Public Sub New()
+        InitializeComponent()
     End Sub
-   
-   Protected Overrides Sub Dispose(disposing As Boolean)
-      If disposing AndAlso (components IsNot Nothing) Then
-         components.Dispose()
-      End If
-      MyBase.Dispose(disposing)
+
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If disposing AndAlso (components IsNot Nothing) Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
     End Sub
-   
-   
-   ' <snippet2>
-   ' This method creates a new ChildForm instance 
-   ' and attaches it to the MDI parent form.
+
+
+    ' <snippet2>
+    ' This method creates a new ChildForm instance 
+    ' and attaches it to the MDI parent form.
     Private Sub newToolStripMenuItem_Click( _
     ByVal sender As Object, _
     ByVal e As EventArgs) _
@@ -49,11 +49,11 @@ Public Class Form1
         f.Show()
 
     End Sub
-   ' </snippet2>
+    ' </snippet2>
 
-   #Region "Windows Form Designer generated code"
-   
-   Private Sub InitializeComponent()
+#Region "Windows Form Designer generated code"
+
+    Private Sub InitializeComponent()
         Me.menuStrip1 = New System.Windows.Forms.MenuStrip
         Me.toolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.newToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -194,70 +194,70 @@ Public Class Form1
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
-    End Sub 
-   
-   #End Region
+    End Sub
+
+#End Region
 End Class
 
 
 Public Class ChildForm
-   Inherits Form
-   Private menuStrip1 As System.Windows.Forms.MenuStrip
-   Private toolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-   Private components As System.ComponentModel.IContainer = Nothing
-   
-   
-   Public Sub New()
-      InitializeComponent()
+    Inherits Form
+    Private menuStrip1 As System.Windows.Forms.MenuStrip
+    Private toolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Private components As System.ComponentModel.IContainer = Nothing
+
+
+    Public Sub New()
+        InitializeComponent()
     End Sub
-   
-   
-   Protected Overrides Sub Dispose(disposing As Boolean)
-      If disposing AndAlso (components IsNot Nothing) Then
-         components.Dispose()
-      End If
-      MyBase.Dispose(disposing)
+
+
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If disposing AndAlso (components IsNot Nothing) Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
     End Sub
-   
-   #Region "Windows Form Designer generated code"
-  
-   Private Sub InitializeComponent()
-      Me.menuStrip1 = New System.Windows.Forms.MenuStrip()
-      Me.toolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-      Me.menuStrip1.SuspendLayout()
-      Me.SuspendLayout()
-      ' 
-      ' menuStrip1
-      ' 
-      Me.menuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1})
-      Me.menuStrip1.Location = New System.Drawing.Point(0, 0)
-      Me.menuStrip1.Name = "menuStrip1"
-      Me.menuStrip1.Size = New System.Drawing.Size(292, 24)
-      Me.menuStrip1.TabIndex = 0
-      Me.menuStrip1.Text = "menuStrip1"
-      ' 
-      ' toolStripMenuItem1
-      ' 
-      Me.toolStripMenuItem1.Name = "toolStripMenuItem1"
-      Me.toolStripMenuItem1.Size = New System.Drawing.Size(90, 20)
-      Me.toolStripMenuItem1.Text = "ChildMenuItem"
-      ' 
-      ' ChildForm
-      ' 
-      Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
-      Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-      Me.ClientSize = New System.Drawing.Size(292, 273)
-      Me.Controls.Add(menuStrip1)
-      Me.MainMenuStrip = Me.menuStrip1
-      Me.Name = "ChildForm"
-      Me.Text = "ChildForm"
-      Me.menuStrip1.ResumeLayout(False)
-      Me.menuStrip1.PerformLayout()
-      Me.ResumeLayout(False)
-      Me.PerformLayout()
-   End Sub 
-   
-   #End Region
+
+#Region "Windows Form Designer generated code"
+
+    Private Sub InitializeComponent()
+        Me.menuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.toolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        ' 
+        ' menuStrip1
+        ' 
+        Me.menuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1})
+        Me.menuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.menuStrip1.Name = "menuStrip1"
+        Me.menuStrip1.Size = New System.Drawing.Size(292, 24)
+        Me.menuStrip1.TabIndex = 0
+        Me.menuStrip1.Text = "menuStrip1"
+        ' 
+        ' toolStripMenuItem1
+        ' 
+        Me.toolStripMenuItem1.Name = "toolStripMenuItem1"
+        Me.toolStripMenuItem1.Size = New System.Drawing.Size(90, 20)
+        Me.toolStripMenuItem1.Text = "ChildMenuItem"
+        ' 
+        ' ChildForm
+        ' 
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(292, 273)
+        Me.Controls.Add(menuStrip1)
+        Me.MainMenuStrip = Me.menuStrip1
+        Me.Name = "ChildForm"
+        Me.Text = "ChildForm"
+        Me.menuStrip1.ResumeLayout(False)
+        Me.menuStrip1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+    End Sub
+
+#End Region
 End Class
 
 

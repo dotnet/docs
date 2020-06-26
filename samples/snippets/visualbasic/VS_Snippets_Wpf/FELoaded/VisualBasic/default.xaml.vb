@@ -1,9 +1,9 @@
 ﻿Imports System.Windows
 Imports System.Windows.Controls
 
-Namespace SDKSample 
+Namespace SDKSample
     Public Partial Class FELoaded
-'<SnippetHandler> 
+        '<SnippetHandler> 
         Private Sub OnLoad(ByVal sender As Object, ByVal e As RoutedEventArgs)
             Dim b1 As Button = New Button()
             b1.Content = "New Button"
@@ -12,6 +12,6 @@ Namespace SDKSample
             b1.Width = 200
             b1.HorizontalAlignment = HorizontalAlignment.Left
         End Sub
-'</SnippetHandler>
+        '</SnippetHandler>
     End Class
 End Namespace

@@ -1,10 +1,10 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Controls     
-Imports System.Windows.Controls.Primitives     
-Imports System.Windows.Documents     
-Imports System.Windows.Navigation     
-Imports System.Text     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Controls.Primitives
+Imports System.Windows.Documents
+Imports System.Windows.Navigation
+Imports System.Text
 
 namespace ScrollViewer_Methods
 
@@ -99,4 +99,4 @@ namespace ScrollViewer_Methods
         End Sub
         ' </Snippet14>
     End Class
-    End Namespace
+End Namespace

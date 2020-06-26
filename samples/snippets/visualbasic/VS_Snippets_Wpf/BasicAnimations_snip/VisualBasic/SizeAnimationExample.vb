@@ -7,16 +7,16 @@ Imports System.Windows.Media.Animation
 Imports System.Windows.Media
 
 Namespace SDKSamples
-	Public Class SizeAnimationExample
-		Inherits Page
-		Public Sub New()
+    Public Class SizeAnimationExample
+        Inherits Page
+        Public Sub New()
 
-			' Create a NameScope for this page so that
-			' Storyboards can be used.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a NameScope for this page so that
+            ' Storyboards can be used.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			' Create an ArcSegment to define the geometry of the path.
-			' The Size property of this segment is animated.
+            ' Create an ArcSegment to define the geometry of the path.
+            ' The Size property of this segment is animated.
             Dim myArcSegment As New ArcSegment()
             With myArcSegment
                 .Size = New Size(90, 80)
@@ -85,7 +85,7 @@ Namespace SDKSamples
 
             Content = containerCanvas
         End Sub
-	End Class
+    End Class
 End Namespace
 ' </SnippetSizeAnimationWholePage>
 

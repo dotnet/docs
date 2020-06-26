@@ -1,9 +1,9 @@
 ﻿'<SnippetDTSClass>
 
 Namespace SDKSample
-	Public Class TaskListDataTemplateSelector
-		Inherits DataTemplateSelector
-		Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+    Public Class TaskListDataTemplateSelector
+        Inherits DataTemplateSelector
+        Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
 
             Dim element As FrameworkElement
             element = TryCast(container, FrameworkElement)
@@ -19,8 +19,8 @@ Namespace SDKSample
                 End If
             End If
 
-			Return Nothing
-		End Function
-	End Class
+            Return Nothing
+        End Function
+    End Class
 End Namespace
 '</SnippetDTSClass>

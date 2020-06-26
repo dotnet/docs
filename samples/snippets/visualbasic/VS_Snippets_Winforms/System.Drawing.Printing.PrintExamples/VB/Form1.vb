@@ -1,4 +1,4 @@
-﻿ '<snippet0>
+﻿'<snippet0>
 Imports System.Drawing
 Imports System.IO
 Imports System.Drawing.Printing
@@ -13,7 +13,7 @@ Public Class Form1
     Private stringToPrint As String
     '</snippet8>
 
-    Public Sub New() 
+    Public Sub New()
         Me.printButton = New System.Windows.Forms.Button()
         Me.printButton.Location = New System.Drawing.Point(12, 51)
         Me.printButton.Size = New System.Drawing.Size(75, 23)
@@ -21,7 +21,7 @@ Public Class Form1
         Me.ClientSize = New System.Drawing.Size(292, 266)
     End Sub
 
-    Private Sub ReadFile() 
+    Private Sub ReadFile()
         '<snippet1>
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "c:\"
@@ -37,9 +37,9 @@ Public Class Form1
         Finally
             stream.Dispose()
         End Try
-     '</snippet1>
+        '</snippet1>
     End Sub
-    
+
     '<snippet2>
     Private Sub printDocument1_PrintPage(ByVal sender As Object, _
         ByVal e As PrintPageEventArgs)
@@ -65,16 +65,16 @@ Public Class Form1
     End Sub
     '</snippet2>
 
-    Private Sub printButton_Click(ByVal sender As Object, ByVal e As EventArgs) 
+    Private Sub printButton_Click(ByVal sender As Object, ByVal e As EventArgs)
         ReadFile()
         '<snippet5>
         printDocument1.Print()
         '</snippet5>
     End Sub
 
-    
-    <STAThread()>  _
-    Shared Sub Main() 
+
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())

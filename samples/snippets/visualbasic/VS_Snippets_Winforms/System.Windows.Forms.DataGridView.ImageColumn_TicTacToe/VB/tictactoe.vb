@@ -324,7 +324,7 @@ Public Class TicTacToe
     Private Function IsAWin() As Boolean
         If ARowIsSame() OrElse AColumnIsSame() OrElse ADiagonalIsSame() Then
             Return True
-        Else 
+        Else
             Return False
         End If
     End Function
@@ -397,7 +397,7 @@ Public Class TicTacToe
 
     Private Function IsOsTurn() As Boolean
         If turn.Text.Equals(oString) Then Return True _
-        Else  : Return False
+        Else : Return False
     End Function
 
     <STAThread> Public Shared Sub Main()

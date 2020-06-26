@@ -5,8 +5,8 @@ Imports System.Windows.Input
 Imports System.Collections.Generic
 
 Namespace MyNamespace
-  Partial Public Class MyCode
-	  Inherits Canvas
+    Partial Public Class MyCode
+        Inherits Canvas
         Private Sub MakeANewThing(ByVal sender As Object, ByVal e As RoutedEventArgs)
             Dim myDockPanel As New DockPanel()
             Dim myCheckBox As New CheckBox()
@@ -42,13 +42,13 @@ Namespace MyNamespace
             MessageBox.Show("aq2 contains " & myAq2.AquariumContents.Count.ToString() & " things")
         End Sub
         Private Sub BAQ(ByVal sender As Object, ByVal e As EventArgs)
-		  DoAqStuff()
-	  End Sub
-  End Class
-'<SnippetCollectionProblemDefinition>
-	Public Class Fish
-		Inherits FrameworkElement
-	End Class
+            DoAqStuff()
+        End Sub
+    End Class
+    '<SnippetCollectionProblemDefinition>
+    Public Class Fish
+        Inherits FrameworkElement
+    End Class
     Public Class Aquarium
         Inherits DependencyObject
         Private Shared ReadOnly AquariumContentsPropertyKey As DependencyPropertyKey = DependencyProperty.RegisterReadOnly("AquariumContents", GetType(List(Of FrameworkElement)), GetType(Aquarium), New FrameworkPropertyMetadata(New List(Of FrameworkElement)()))

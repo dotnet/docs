@@ -3,8 +3,8 @@ Imports System.Configuration
 
 Namespace SDKSamples
 
-	Partial Public Class MyApp
-		Inherits Application
+    Partial Public Class MyApp
+        Inherits Application
 
-	End Class
+    End Class
 End Namespace

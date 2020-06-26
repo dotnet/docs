@@ -178,7 +178,7 @@ Namespace InvokePatternSample
         ''' </remarks>
         '''--------------------------------------------------------------------
         <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> _
-            Private Function StartApp(ByVal app As String) As AutomationElement
+        Private Function StartApp(ByVal app As String) As AutomationElement
             If (File.Exists(app)) Then
                 Dim targetElement As AutomationElement
 
@@ -200,7 +200,7 @@ Namespace InvokePatternSample
 
                     ' Set size and position of target.
                     Dim targetTransformPattern As TransformPattern = _
-                    DirectCast(targetElement.GetCurrentPattern(TransformPattern.Pattern),  _
+                    DirectCast(targetElement.GetCurrentPattern(TransformPattern.Pattern), _
                     TransformPattern)
                     If (IsNothing(targetTransformPattern)) Then
                         Return Nothing
@@ -274,7 +274,7 @@ Namespace InvokePatternSample
             ' Initialize the client area used to report target controls.
             treeviewPanel.Children.Clear()
             ' Set up our search condition
-            Dim rootTreeViewCondition As New  _
+            Dim rootTreeViewCondition As New _
             PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Tree)
             ' Find all controls that support the condition.
             Dim targetTreeViewElements As AutomationElementCollection = _

@@ -1,17 +1,17 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Controls     
-Imports System.Windows.Documents     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Documents
 
 namespace ScrollChangedEventArgs_layout
 
-	'@ <summary>
-	'@ Interaction logic for Window1.xaml
-	'@ </summary>
+    '@ <summary>
+    '@ Interaction logic for Window1.xaml
+    '@ </summary>
 
     Partial Public Class Window1
         Inherits Window
-        
+
         ' <Snippet4>
         Private Sub scrollTrue(ByVal sender As Object, ByVal args As RoutedEventArgs)
             sv1.CanContentScroll = True
@@ -47,4 +47,4 @@ namespace ScrollChangedEventArgs_layout
             ' </Snippet3>
         End Sub
     End Class
-    End Namespace
+End Namespace

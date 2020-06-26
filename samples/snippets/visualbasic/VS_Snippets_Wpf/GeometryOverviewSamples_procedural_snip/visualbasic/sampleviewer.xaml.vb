@@ -8,17 +8,17 @@ Imports System.Windows.Shapes
 Imports System.Collections
 Imports System.Threading
 Namespace GeoOvwSample
-		''' <summary>
-		''' Interaction logic for Window1.xaml
-		''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
 
-	Partial Public Class SampleViewer
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
 
 
-	End Class
+    End Class
 End Namespace

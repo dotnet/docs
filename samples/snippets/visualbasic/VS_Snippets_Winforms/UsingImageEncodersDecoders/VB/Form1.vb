@@ -12,9 +12,9 @@ Imports System.Drawing.Imaging
 
 Public Class Form1
     Inherits Form
-    
+
     Public Sub New()
-        
+
     End Sub
 
 

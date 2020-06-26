@@ -2,8 +2,8 @@
 Imports System.Windows.Data
 
 '<Snippet3>
-    Public Class NameConverter
-        Implements IMultiValueConverter
+Public Class NameConverter
+    Implements IMultiValueConverter
 
     Public Function Convert1(ByVal values() As Object, _
                              ByVal targetType As System.Type, _
@@ -24,6 +24,6 @@ Imports System.Windows.Data
                                  Implements System.Windows.Data.IMultiValueConverter.ConvertBack
         Return CStr(value).Split(New Char() {" "c})
     End Function
-    End Class
+End Class
 '</Snippet3>
 

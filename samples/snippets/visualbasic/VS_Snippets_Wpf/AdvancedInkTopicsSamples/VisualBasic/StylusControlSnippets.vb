@@ -41,7 +41,7 @@ Namespace StylusControlSnippets
 End Namespace 'StylusControlSnippets 
 
 Namespace snippets2
-    
+
     Class InkControl
         Inherits Label
         '<Snippet16>

@@ -7,18 +7,18 @@ Imports System.Windows.Data
 Imports System.Windows.Media.Animation
 
 Namespace Microsoft.Samples.BrushExamples
-	''' <summary>
-	''' Interaction logic for SampleViewer.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for SampleViewer.xaml
+    ''' </summary>
 
-	Partial Public Class SampleViewer
-		Inherits Page
-	   Public Sub New()
-			InitializeComponent()
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
 
 
 
-	   End Sub
+        End Sub
 
-	End Class
+    End Class
 End Namespace

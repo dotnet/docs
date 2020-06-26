@@ -1,4 +1,4 @@
-﻿ '<snippet1>
+﻿'<snippet1>
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Text
@@ -17,7 +17,7 @@ Class Form1
     Private WithEvents button1 As Button
     Private bindingSource1 As BindingSource
     Private states As ArrayList
-    
+
     Public Sub New()
 
         ' Basic form setup.
@@ -84,15 +84,15 @@ Class Form1
         End If
 
     End Sub
-    
+
     '</snippet3>
-    <STAThread()>  _
-    Shared Sub Main() 
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-    
+
     End Sub
-    
+
     ' The State class to add to the ArrayList.
     Private Class State
         Private stateName As String

@@ -11,15 +11,15 @@ Imports System.Configuration
 
 Class MyApp
     Inherits Application '
-'ToDo: Error processing original source shown below
-'
-'    public partial class MyApp : Application
-'------------^--- 'class', 'struct', 'interface' or 'delegate' expected
-'
-'ToDo: Error processing original source shown below
-'
-'    public partial class MyApp : Application
-'--------------------^--- Syntax error: ';' expected
+    'ToDo: Error processing original source shown below
+    '
+    '    public partial class MyApp : Application
+    '------------^--- 'class', 'struct', 'interface' or 'delegate' expected
+    '
+    'ToDo: Error processing original source shown below
+    '
+    '    public partial class MyApp : Application
+    '--------------------^--- Syntax error: ';' expected
 End Class
 
 '

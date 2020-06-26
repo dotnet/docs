@@ -1,4 +1,4 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Drawing
@@ -230,20 +230,20 @@ Public Class MyControlEventArgs
     Private _State As String
     Private _Zip As String
     Private _IsOK As Boolean
-    
-    
-    Public Sub New(ByVal result As Boolean, ByVal name As String, ByVal address As String, ByVal city As String, ByVal state As String, ByVal zip As String) 
+
+
+    Public Sub New(ByVal result As Boolean, ByVal name As String, ByVal address As String, ByVal city As String, ByVal state As String, ByVal zip As String)
         _IsOK = result
         _Name = name
         _StreetAddress = address
         _City = city
         _State = state
         _Zip = zip
-    
+
     End Sub
-    
-    
-    Public Property MyName() As String 
+
+
+    Public Property MyName() As String
         Get
             Return _Name
         End Get
@@ -251,8 +251,8 @@ Public Class MyControlEventArgs
             _Name = value
         End Set
     End Property
-    
-    Public Property MyStreetAddress() As String 
+
+    Public Property MyStreetAddress() As String
         Get
             Return _StreetAddress
         End Get
@@ -260,8 +260,8 @@ Public Class MyControlEventArgs
             _StreetAddress = value
         End Set
     End Property
-    
-    Public Property MyCity() As String 
+
+    Public Property MyCity() As String
         Get
             Return _City
         End Get
@@ -269,8 +269,8 @@ Public Class MyControlEventArgs
             _City = value
         End Set
     End Property
-    
-    Public Property MyState() As String 
+
+    Public Property MyState() As String
         Get
             Return _State
         End Get
@@ -278,8 +278,8 @@ Public Class MyControlEventArgs
             _State = value
         End Set
     End Property
-    
-    Public Property MyZip() As String 
+
+    Public Property MyZip() As String
         Get
             Return _Zip
         End Get
@@ -287,8 +287,8 @@ Public Class MyControlEventArgs
             _Zip = value
         End Set
     End Property
-    
-    Public Property IsOK() As Boolean 
+
+    Public Property IsOK() As Boolean
         Get
             Return _IsOK
         End Get

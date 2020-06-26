@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WpfLayoutHostingWfWithXaml")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("WpfLayoutHostingWfWithXaml")> 
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2006")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("WpfLayoutHostingWfWithXaml")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("WpfLayoutHostingWfWithXaml")>
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2006")>
+<Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("5f3c27ea-d1b1-4fcd-a475-1917bdd3413f")> 
+<Assembly: Guid("5f3c27ea-d1b1-4fcd-a475-1917bdd3413f")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("DGGroupSortFilterExample")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("DGGroupSortFilterExample")> 
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("DGGroupSortFilterExample")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("DGGroupSortFilterExample")>
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2010")>
+<Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("ab5786c6-3d78-4a37-96f6-a13227b02e17")> 
+<Assembly: Guid("ab5786c6-3d78-4a37-96f6-a13227b02e17")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

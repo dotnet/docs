@@ -2,12 +2,12 @@
 Imports System.Configuration
 
 Namespace HitTest3D
-	''' <summary>
-	''' Interaction logic for app.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for app.xaml
+    ''' </summary>
 
-	Partial Public Class App
-		Inherits Application
+    Partial Public Class App
+        Inherits Application
 
-	End Class
+    End Class
 End Namespace

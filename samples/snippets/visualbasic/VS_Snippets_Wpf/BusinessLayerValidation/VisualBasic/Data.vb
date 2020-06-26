@@ -4,8 +4,8 @@ Imports System.Text
 Imports System.ComponentModel
 
 Namespace BusinessLayerValidation
-'<SnippetIDataErrorInfo>
-	Public Class Person
+    '<SnippetIDataErrorInfo>
+    Public Class Person
         Implements IDataErrorInfo
 
         Private _age As Integer
@@ -37,5 +37,5 @@ Namespace BusinessLayerValidation
             End Get
         End Property
     End Class
-'</SnippetIDataErrorInfo>
+    '</SnippetIDataErrorInfo>
 End Namespace

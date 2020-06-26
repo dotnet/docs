@@ -6,91 +6,91 @@ Imports System.Collections.ObjectModel
 
 ' <Snippet3>
 Public Class Team
-  Private _name As String
+    Private _name As String
 
-  Public Sub New(ByVal name As String)
-    _name = name
-  End Sub
+    Public Sub New(ByVal name As String)
+        _name = name
+    End Sub
 
-  Public ReadOnly Property Name() As String
-    Get
-      Return _name
-    End Get
-  End Property
+    Public ReadOnly Property Name() As String
+        Get
+            Return _name
+        End Get
+    End Property
 End Class
 
 Public Class TeamList
-  Inherits ObservableCollection(Of Team)
+    Inherits ObservableCollection(Of Team)
 
-  Public Sub New()
+    Public Sub New()
 
-  End Sub
+    End Sub
 End Class
 
 
 Public Class Division
-  Private _name As String
-  Private _teams As TeamList
+    Private _name As String
+    Private _teams As TeamList
 
-  Public Sub New(ByVal name As String)
-    _name = name
-    _teams = New TeamList()
+    Public Sub New(ByVal name As String)
+        _name = name
+        _teams = New TeamList()
 
-  End Sub
+    End Sub
 
-  Public ReadOnly Property Name() As String
-    Get
-      Return _name
-    End Get
-  End Property
+    Public ReadOnly Property Name() As String
+        Get
+            Return _name
+        End Get
+    End Property
 
-  Public ReadOnly Property Teams() As TeamList
-      Get
-        Return _teams
-      End Get
-  End Property
+    Public ReadOnly Property Teams() As TeamList
+        Get
+            Return _teams
+        End Get
+    End Property
 End Class
 
 Public Class DivisionList
-  Inherits ObservableCollection(Of Division)
+    Inherits ObservableCollection(Of Division)
 
-  Public Sub New()
+    Public Sub New()
 
-  End Sub
+    End Sub
 End Class
 
 
 Public Class League
-  Private _name As String
-  Private _divisions As DivisionList
+    Private _name As String
+    Private _divisions As DivisionList
 
-  Public Sub New(ByVal name As String)
-    _name = name
-    _divisions = New DivisionList()
+    Public Sub New(ByVal name As String)
+        _name = name
+        _divisions = New DivisionList()
 
-  End Sub
+    End Sub
 
-  Public ReadOnly Property Name() As String
-    Get
-      Return _name
-    End Get
-  End Property
+    Public ReadOnly Property Name() As String
+        Get
+            Return _name
+        End Get
+    End Property
 
-  Public ReadOnly Property Divisions() As DivisionList
-    Get
-      Return _divisions
-    End Get
-  End Property
+    Public ReadOnly Property Divisions() As DivisionList
+        Get
+            Return _divisions
+        End Get
+    End Property
 End Class
 
 
 Public Class LeagueList
-  Inherits ObservableCollection(Of League)
+    Inherits ObservableCollection(Of League)
 
-  Public Sub New()
-    MyBase.New()
-    Dim l As League
-    Dim d As Division
+    Public Sub New()
+        MyBase.New()
+        Dim l As League
+        Dim d As Division
 
         l = New League("League A")
         Add(l)
@@ -137,6 +137,6 @@ Public Class LeagueList
         d.Teams.Add(New Team("Team Delta"))
         d.Teams.Add(New Team("Team Epsilon"))
 
-  End Sub
+    End Sub
 End Class
 ' </Snippet3>

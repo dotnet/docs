@@ -1,4 +1,4 @@
-﻿ '<SnippetBitmapSourceFullPage>
+﻿'<SnippetBitmapSourceFullPage>
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
@@ -8,7 +8,7 @@ Namespace SDKSample
 
     Class BitmapSourceExample
         Inherits Page
-  
+
         Public Sub New()
             '<SnippetBitmapSourceCreate>
             ' Define parameters used to create the BitmapSource.

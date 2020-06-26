@@ -46,7 +46,7 @@ Public Class Form1
         '
         'DateTimePicker1
         '
-      
+
         '
         'Form1
         '
@@ -64,7 +64,7 @@ Public Class Form1
         Application.Run(New Form1)
     End Sub
 
-    
+
     '<snippet1>
 
     ' Declare the DateTimePicker.
@@ -79,7 +79,7 @@ Public Class Form1
         'Set size and location.
         Me.DateTimePicker1.Location = New System.Drawing.Point(40, 88)
         Me.DateTimePicker1.Size = New Size(160, 21)
-        
+
         ' Set the alignment of the drop-down MonthCalendar to right.
         Me.DateTimePicker1.DropDownAlign = LeftRightAlignment.Right
 
@@ -113,5 +113,5 @@ Public Class Form1
     End Sub
     '</snippet2>
 
-    
+
 End Class

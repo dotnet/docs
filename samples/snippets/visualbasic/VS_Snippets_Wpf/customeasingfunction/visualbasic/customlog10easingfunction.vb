@@ -10,26 +10,26 @@ Imports System.Windows.Shapes
 
 ' <SnippetCustomEasingFunction>
 Namespace CustomEasingFunction
-	Public Class CustomSeventhPowerEasingFunction
-		Inherits EasingFunctionBase
-		Public Sub New()
-			MyBase.New()
-		End Sub
+    Public Class CustomSeventhPowerEasingFunction
+        Inherits EasingFunctionBase
+        Public Sub New()
+            MyBase.New()
+        End Sub
 
-		' Specify your own logic for the easing function by overriding
-		' the EaseInCore method. Note that this logic applies to the "EaseIn"
-		' mode of interpolation. 
-		Protected Overrides Function EaseInCore(ByVal normalizedTime As Double) As Double
-			' applies the formula of time to the seventh power.
-			Return Math.Pow(normalizedTime, 7)
-		End Function
+        ' Specify your own logic for the easing function by overriding
+        ' the EaseInCore method. Note that this logic applies to the "EaseIn"
+        ' mode of interpolation. 
+        Protected Overrides Function EaseInCore(ByVal normalizedTime As Double) As Double
+            ' applies the formula of time to the seventh power.
+            Return Math.Pow(normalizedTime, 7)
+        End Function
 
-		' Typical implementation of CreateInstanceCore
-		Protected Overrides Function CreateInstanceCore() As Freezable
+        ' Typical implementation of CreateInstanceCore
+        Protected Overrides Function CreateInstanceCore() As Freezable
 
-			Return New CustomSeventhPowerEasingFunction()
-		End Function
+            Return New CustomSeventhPowerEasingFunction()
+        End Function
 
-	End Class
+    End Class
 End Namespace
 ' </SnippetCustomEasingFunction>

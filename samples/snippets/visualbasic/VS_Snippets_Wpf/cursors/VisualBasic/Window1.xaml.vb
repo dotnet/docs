@@ -129,7 +129,7 @@ Namespace SDKSamples
                 Mouse.OverrideCursor = DisplayArea.Cursor
             End If
         End Sub
-      '</SnippetCursorsSampleOverrideCursor>
+        '</SnippetCursorsSampleOverrideCursor>
     End Class
 End Namespace
 

@@ -233,7 +233,7 @@ Namespace VisualStyleRendererSample
                     VisualStyleElement.Window.CloseButton.Pressed
                 isClosing = True
 
-            ' The user clicked the status grip.
+                ' The user clicked the status grip.
             ElseIf elementRectangles("statusGripper"). _
                 Contains(e.Location) Then
 
@@ -242,7 +242,7 @@ Namespace VisualStyleRendererSample
                 resizeOffset.X = Me.Right - Me.Left - e.X
                 resizeOffset.Y = Me.Bottom - Me.Top - e.Y
 
-            ' The user clicked the window caption.
+                ' The user clicked the window caption.
             ElseIf elementRectangles("windowCaption"). _
                 Contains(e.Location) Then
 
@@ -261,13 +261,13 @@ Namespace VisualStyleRendererSample
             If isMoving Then
                 isMoving = False
 
-            ' Change the cursor back to the default if the 
-            ' user stops resizing.
+                ' Change the cursor back to the default if the 
+                ' user stops resizing.
             ElseIf isResizing Then
                 isResizing = False
 
-            ' Close the application if the user clicks the 
-            ' close button.
+                ' Close the application if the user clicks the 
+                ' close button.
             ElseIf elementRectangles("windowClose"). _
                 Contains(e.Location) And isClosing Then
                 Application.Exit()
@@ -289,8 +289,8 @@ Namespace VisualStyleRendererSample
                     Me.Height = e.Y + resizeOffset.Y
                     CalculateRectangles()
 
-                ' Calculate the new location of the control if   
-                ' the user is dragging the window caption.
+                    ' Calculate the new location of the control if   
+                    ' the user is dragging the window caption.
                 ElseIf isMoving Then
                     Dim XChange As Integer = Me.Location.X + _
                         (e.X - originalClick.X)
@@ -298,9 +298,9 @@ Namespace VisualStyleRendererSample
                         (e.Y - originalClick.Y)
                     Me.Location = New Point(XChange, YChange)
 
-                ' Cancel the closing action if the user clicked and  
-                ' held down on the close button, and has dragged the   
-                ' pointer outside the button.
+                    ' Cancel the closing action if the user clicked and  
+                    ' held down on the close button, and has dragged the   
+                    ' pointer outside the button.
                 ElseIf Not elementRectangles("windowClose"). _
                     Contains(e.Location) And isClosing Then
 
@@ -309,7 +309,7 @@ Namespace VisualStyleRendererSample
                         VisualStyleElement.Window.CloseButton.Normal
                 End If
 
-            ' The left mouse button is not down.
+                ' The left mouse button is not down.
             Else
                 ' Paint the close button hot if the cursor is on it.
                 If elementRectangles("windowClose"). _

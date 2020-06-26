@@ -24,8 +24,8 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-Friend WithEvents ListView1 As System.Windows.Forms.ListView
-Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ListView1 As System.Windows.Forms.ListView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -70,14 +70,14 @@ Friend WithEvents Button1 As System.Windows.Forms.Button
 
     Friend Shared Readonly Property GetInstance as Form1
         Get
-        	if m_DefaultInstance is nothing OrElse m_DefaultInstance.IsDisposed() Then
-				SyncLock m_SyncObject
-					if m_DefaultInstance is nothing OrElse m_DefaultInstance.IsDisposed() Then
-						m_DefaultInstance = new Form1
-					end if
-				End SyncLock
-			End If
-			return m_DefaultInstance
+            if m_DefaultInstance is nothing OrElse m_DefaultInstance.IsDisposed() Then
+                SyncLock m_SyncObject
+                    if m_DefaultInstance is nothing OrElse m_DefaultInstance.IsDisposed() Then
+                        m_DefaultInstance = new Form1
+                    end if
+                End SyncLock
+            End If
+            return m_DefaultInstance
         End Get
     End Property
 

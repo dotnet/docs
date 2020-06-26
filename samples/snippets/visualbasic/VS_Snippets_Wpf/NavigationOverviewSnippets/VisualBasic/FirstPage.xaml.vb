@@ -1,15 +1,15 @@
 ﻿Imports System.Text
 
 Namespace SDKSample
-	''' <summary>
-	''' Interaction logic for FirstPage.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for FirstPage.xaml
+    ''' </summary>
 
-	Partial Public Class FirstPage
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+    Partial Public Class FirstPage
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-	End Class
+    End Class
 End Namespace

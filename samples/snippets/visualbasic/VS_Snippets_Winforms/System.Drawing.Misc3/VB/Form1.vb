@@ -144,8 +144,8 @@ Public Class Form1
 
     ' </snippet4>
 
-'<snippet5>
-    Private Sub OpAdditionExample(ByVal e As PaintEventArgs) 
+    '<snippet5>
+    Private Sub OpAdditionExample(ByVal e As PaintEventArgs)
         Dim size1 As New SizeF(120.5F, 30.5F)
         Dim point1 As New PointF(20.5F, 20F)
         Dim rect1 As New RectangleF(point1, size1)
@@ -154,12 +154,12 @@ Public Class Form1
         Else
             e.Graphics.DrawString("They are not equal", Me.Font, Brushes.Red, rect1)
         End If
-     
+
     End Sub
     '</snippet5>
 
     '<snippet6>
-    Private Sub AddExample(ByVal e As PaintEventArgs) 
+    Private Sub AddExample(ByVal e As PaintEventArgs)
         Dim size1 As New SizeF(120.5F, 30.5F)
         Dim point1 As New PointF(20.5F, 20F)
         Dim rect1 As New RectangleF(point1, size1)
@@ -169,75 +169,75 @@ Public Class Form1
         Else
             e.Graphics.DrawString("They are equal", Me.Font, Brushes.Black, rect1)
         End If
-    
+
     End Sub
     '</snippet6>
 
     '<snippet7>
-    Private Sub SubtractExample(ByVal e As PaintEventArgs) 
+    Private Sub SubtractExample(ByVal e As PaintEventArgs)
         Dim point1 As New PointF(120.5F, 120F)
         Dim size1 As New SizeF(120.5F, 30.5F)
         Dim point2 As PointF = PointF.Subtract(point1, size1)
         e.Graphics.DrawLine(Pens.Blue, point1, point2)
-    
+
     End Sub
     '</snippet7>
 
     '<snippet8>
-    Private Sub OpSubtractionExample(ByVal e As PaintEventArgs) 
+    Private Sub OpSubtractionExample(ByVal e As PaintEventArgs)
         Dim point1 As New PointF(120.5F, 120F)
         Dim size1 As New SizeF(120.5F, 30.5F)
         Dim point2 As PointF = point1 - size1
         e.Graphics.DrawLine(Pens.Blue, point1, point2)
-    
+
     End Sub
     '</snippet8>
 
-   Private Sub ShearColors(ByVal e As PaintEventArgs) 
+    Private Sub ShearColors(ByVal e As PaintEventArgs)
         '<snippet9>
         Dim image = New Bitmap("ColorBars.bmp")
         Dim imageAttributes As New ImageAttributes()
         Dim width As Integer = image.Width
         Dim height As Integer = image.Height
-        
+
         Dim colorMatrixElements As Single()() = _
             {New Single() {1, 0, 0, 0, 0}, _
                 New Single() {0, 1, 0, 0, 0}, _
                 New Single() {0.5F, 0, 1, 0, 0}, _
                 New Single() {0, 0, 0, 1, 0}, _
                 New Single() {0, 0, 0, 0, 1}}
-        
+
         Dim colorMatrix As New ColorMatrix(colorMatrixElements)
-        
+
         imageAttributes.SetColorMatrix(colorMatrix, ColorMatrixFlag.Default, _
             ColorAdjustType.Bitmap)
-        
+
         e.Graphics.DrawImage(image, 10, 10, width, height)
-        
+
         e.Graphics.DrawImage(image, New Rectangle(150, 10, width, height), 0, 0, _
             width, height, GraphicsUnit.Pixel, imageAttributes)
         '</snippet9>
     End Sub
 
- 	'<snippetInstalledFonts> 
-    	Private ifc As New InstalledFontCollection()
-    	
-	Private Sub EnumerateInstalledFonts(ByVal e As PaintEventArgs)
-          Dim families As FontFamily() = ifc.Families
-       	  Dim x As Single = 0.0F
-       	  Dim y As Single = 0.0F
-        	For i As Integer = 0 To ifc.Families.Length - 1
-            	  If ifc.Families(i).IsStyleAvailable(FontStyle.Regular) Then
-                	e.Graphics.DrawString(ifc.Families(i).Name, New Font(ifc.Families(i), 12),  _ 
-			  Brushes.Black, x, y)
-                	y += 20
-                	If y Mod 700 = 0 Then
-                          x += 140
-                    	  y = 0
-                        End If
-            	  End If
-        	Next
-       End Sub
+    '<snippetInstalledFonts> 
+    Private ifc As New InstalledFontCollection()
+
+    Private Sub EnumerateInstalledFonts(ByVal e As PaintEventArgs)
+        Dim families As FontFamily() = ifc.Families
+        Dim x As Single = 0.0F
+        Dim y As Single = 0.0F
+        For i As Integer = 0 To ifc.Families.Length - 1
+            If ifc.Families(i).IsStyleAvailable(FontStyle.Regular) Then
+                e.Graphics.DrawString(ifc.Families(i).Name, New Font(ifc.Families(i), 12), _
+          Brushes.Black, x, y)
+                y += 20
+                If y Mod 700 = 0 Then
+                    x += 140
+                    y = 0
+                End If
+            End If
+        Next
+    End Sub
     '</snippetInstalledFonts>
 
     '<snippetConstructFontWithString>
@@ -247,32 +247,32 @@ Public Class Form1
     End Sub
     '</snippetConstructFontWithString>
 
-    Private Shared Function ResizeImage(ByVal image As System.Drawing.Image) As Bitmap 
-       '<snippetSetResolution> 
-       Dim bitmap As New Bitmap(100, 100) 
-       bitmap.SetResolution(96F, 96F) 
-       '</snippetSetResolution> 
-    
-       Using graphics__1 As Graphics = Graphics.FromImage(bitmap) 
-          graphics__1.DrawImage(image, New Rectangle(0, 0, 100, 100), New Rectangle(0, 0, image.Width, image.Height), GraphicsUnit.Pixel) 
-       End Using 
-    
-       Return bitmap 
-    End Function 
- '<snippetGetThumbnail>
+    Private Shared Function ResizeImage(ByVal image As System.Drawing.Image) As Bitmap
+        '<snippetSetResolution> 
+        Dim bitmap As New Bitmap(100, 100)
+        bitmap.SetResolution(96F, 96F)
+        '</snippetSetResolution> 
 
-    Public Function ThumbnailCallback() As Boolean 
-      Return False 
-    End Function 
+        Using graphics__1 As Graphics = Graphics.FromImage(bitmap)
+            graphics__1.DrawImage(image, New Rectangle(0, 0, 100, 100), New Rectangle(0, 0, image.Width, image.Height), GraphicsUnit.Pixel)
+        End Using
 
-    Public Sub Example_GetThumb(ByVal e As PaintEventArgs) 
-        Dim myCallback As New Image.GetThumbnailImageAbort(AddressOf ThumbnailCallback) 
-        Dim myBitmap As New Bitmap("Climber.jpg") 
-        Dim myThumbnail As Image = myBitmap.GetThumbnailImage(40, 40, myCallback, IntPtr.Zero) 
-        e.Graphics.DrawImage(myThumbnail, 150, 75) 
-    End Sub 
+        Return bitmap
+    End Function
+    '<snippetGetThumbnail>
 
-'</snippetGetThumbnail>
+    Public Function ThumbnailCallback() As Boolean
+        Return False
+    End Function
+
+    Public Sub Example_GetThumb(ByVal e As PaintEventArgs)
+        Dim myCallback As New Image.GetThumbnailImageAbort(AddressOf ThumbnailCallback)
+        Dim myBitmap As New Bitmap("Climber.jpg")
+        Dim myThumbnail As Image = myBitmap.GetThumbnailImage(40, 40, myCallback, IntPtr.Zero)
+        e.Graphics.DrawImage(myThumbnail, 150, 75)
+    End Sub
+
+    '</snippetGetThumbnail>
 
     Private Sub Form1_Paint(ByVal sender As Object, ByVal e As PaintEventArgs) Handles MyBase.Paint
         DrawCaps(e)

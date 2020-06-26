@@ -1,4 +1,4 @@
-﻿ 'This is a list of commonly used namespaces for a pane.
+﻿'This is a list of commonly used namespaces for a pane.
 Imports System.Windows
 Imports System.Windows.Documents
 Imports System.Windows.Controls

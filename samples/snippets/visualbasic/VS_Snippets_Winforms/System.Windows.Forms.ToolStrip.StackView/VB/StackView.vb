@@ -7,21 +7,21 @@ Imports System.IO
 Imports System.Windows.Forms
 
 Public Class StackView
-   Inherits UserControl
-   Private stackStrip As ToolStrip
-   Private WithEvents mailStackButton As ToolStripButton
-   Private WithEvents calendarStackButton As ToolStripButton
-   Private WithEvents contactsStackButton As ToolStripButton
-   Private WithEvents tasksStackButton As ToolStripButton
-   
-   Private components As System.ComponentModel.IContainer = Nothing
-   
-   ' <snippet2>
-   Private Shared mailBmp As Bitmap
-   Private Shared calendarBmp As Bitmap
-   Private Shared contactsBmp As Bitmap
-   Private Shared tasksBmp As Bitmap
-   
+    Inherits UserControl
+    Private stackStrip As ToolStrip
+    Private WithEvents mailStackButton As ToolStripButton
+    Private WithEvents calendarStackButton As ToolStripButton
+    Private WithEvents contactsStackButton As ToolStripButton
+    Private WithEvents tasksStackButton As ToolStripButton
+
+    Private components As System.ComponentModel.IContainer = Nothing
+
+    ' <snippet2>
+    Private Shared mailBmp As Bitmap
+    Private Shared calendarBmp As Bitmap
+    Private Shared contactsBmp As Bitmap
+    Private Shared tasksBmp As Bitmap
+
     Private Shared mailBmpEnc As String = "Qk32BgAAAAAAADYAAAAoAAAA" + _
             "GAAAABgAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA7u7u7u7u" + _
             "7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u" + _
@@ -200,116 +200,116 @@ Public Class StackView
              "u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7" + _
              "u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u"
 
-   ' Static constructor to initialize
-   ' the form's static fields.
-   Shared Sub New()
-      ' Create the static bitmaps from Base64 encoding.
-      CreateBitmaps()
+    ' Static constructor to initialize
+    ' the form's static fields.
+    Shared Sub New()
+        ' Create the static bitmaps from Base64 encoding.
+        CreateBitmaps()
     End Sub
-   
-   ' <snippet5>
-   Public Sub New()
-      Me.InitializeComponent()
-      
-      ' Assign icons to ToolStripButton controls.
-      Me.InitializeImages()
-      
-      ' Set up renderers.
-      Me.stackStrip.Renderer = New StackRenderer()
+
+    ' <snippet5>
+    Public Sub New()
+        Me.InitializeComponent()
+
+        ' Assign icons to ToolStripButton controls.
+        Me.InitializeImages()
+
+        ' Set up renderers.
+        Me.stackStrip.Renderer = New StackRenderer()
     End Sub
-   
-   ' </snippet5>
-   ' This utility method assigns icons to each
-   ' ToolStripButton control.
-   Private Sub InitializeImages()
-      Me.mailStackButton.Image = mailBmp
-      Me.calendarStackButton.Image = calendarBmp
-      Me.contactsStackButton.Image = contactsBmp
-      Me.tasksStackButton.Image = tasksBmp
+
+    ' </snippet5>
+    ' This utility method assigns icons to each
+    ' ToolStripButton control.
+    Private Sub InitializeImages()
+        Me.mailStackButton.Image = mailBmp
+        Me.calendarStackButton.Image = calendarBmp
+        Me.contactsStackButton.Image = contactsBmp
+        Me.tasksStackButton.Image = tasksBmp
     End Sub
-   
-   
-   ' This utility method creates bitmaps for all the icons.
-   ' It uses a utility method called DeserializeFromBase64
-   ' to decode the Base64 image data.
-   Private Shared Sub CreateBitmaps()
-      mailBmp = DeserializeFromBase64(mailBmpEnc)
-      calendarBmp = DeserializeFromBase64(calendarBmpEnc)
-      contactsBmp = DeserializeFromBase64(contactsBmpEnc)
-      tasksBmp = DeserializeFromBase64(tasksBmpEnc)
+
+
+    ' This utility method creates bitmaps for all the icons.
+    ' It uses a utility method called DeserializeFromBase64
+    ' to decode the Base64 image data.
+    Private Shared Sub CreateBitmaps()
+        mailBmp = DeserializeFromBase64(mailBmpEnc)
+        calendarBmp = DeserializeFromBase64(calendarBmpEnc)
+        contactsBmp = DeserializeFromBase64(contactsBmpEnc)
+        tasksBmp = DeserializeFromBase64(tasksBmpEnc)
     End Sub
-   
-   
-   ' This utility method cretes a bitmap from 
-   ' a Base64-encoded string. 
-   Friend Shared Function DeserializeFromBase64(data As String) As Bitmap
-      ' Decode the string and create a memory stream 
-      ' on the decoded string data.
-      Dim stream As New MemoryStream(Convert.FromBase64String(data))
-      
-      ' Create a new bitmap from the stream.
-      Dim b As New Bitmap(stream)
-      
-      Return b
+
+
+    ' This utility method cretes a bitmap from 
+    ' a Base64-encoded string. 
+    Friend Shared Function DeserializeFromBase64(data As String) As Bitmap
+        ' Decode the string and create a memory stream 
+        ' on the decoded string data.
+        Dim stream As New MemoryStream(Convert.FromBase64String(data))
+
+        ' Create a new bitmap from the stream.
+        Dim b As New Bitmap(stream)
+
+        Return b
     End Function
     ' </snippet2>
 
-   ' <snippet3>
-   ' This method handles the Load event for the UserControl.
-   Private Sub StackView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-      ' Dock bottom.
-      Me.Dock = DockStyle.Bottom
-      
-      ' Set AutoSize.
-      Me.AutoSize = True
+    ' <snippet3>
+    ' This method handles the Load event for the UserControl.
+    Private Sub StackView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Dock bottom.
+        Me.Dock = DockStyle.Bottom
+
+        ' Set AutoSize.
+        Me.AutoSize = True
     End Sub
     ' </snippet3>
 
-   ' <snippet4>
-   ' This method handles the Click event for all
-   ' the ToolStripButton controls in the StackView.
-   Private Sub stackButton_Click(sender As Object, e As EventArgs) Handles mailStackButton.Click, calendarStackButton.Click, contactsStackButton.Click, tasksStackButton.Click
-      ' Define a "one of many" state, similar to
-      ' the logic of a RadioButton control.
-      Dim item As ToolStripItem
-      For Each item In  Me.stackStrip.Items
+    ' <snippet4>
+    ' This method handles the Click event for all
+    ' the ToolStripButton controls in the StackView.
+    Private Sub stackButton_Click(sender As Object, e As EventArgs) Handles mailStackButton.Click, calendarStackButton.Click, contactsStackButton.Click, tasksStackButton.Click
+        ' Define a "one of many" state, similar to
+        ' the logic of a RadioButton control.
+        Dim item As ToolStripItem
+        For Each item In Me.stackStrip.Items
             If item IsNot sender AndAlso TypeOf item Is ToolStripButton Then
                 CType(item, ToolStripButton).Checked = False
             End If
-      Next item
+        Next item
     End Sub
     ' </snippet4>
 
-   Protected Overrides Sub Dispose(disposing As Boolean)
-      If disposing AndAlso (components IsNot Nothing) Then
-         components.Dispose()
-      End If
-      MyBase.Dispose(disposing)
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If disposing AndAlso (components IsNot Nothing) Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
     End Sub
-   
-   ' <snippet10>
-   Friend Class StackRenderer
-      Inherits ToolStripProfessionalRenderer
-      Private Shared titleBarGripBmp As Bitmap
-      Private Shared titleBarGripEnc As String = "Qk16AQAAAAAAADYAAAAoAAAAIwAAAAMAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5ANj+RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5ANj+RzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMANj+"
-      
-      ' Define titlebar colors.
-      Private Shared titlebarColor1 As Color = Color.FromArgb(89, 135, 214)
-      Private Shared titlebarColor2 As Color = Color.FromArgb(76, 123, 204)
-      Private Shared titlebarColor3 As Color = Color.FromArgb(63, 111, 194)
-      Private Shared titlebarColor4 As Color = Color.FromArgb(50, 99, 184)
-      Private Shared titlebarColor5 As Color = Color.FromArgb(38, 88, 174)
-      Private Shared titlebarColor6 As Color = Color.FromArgb(25, 76, 164)
-      Private Shared titlebarColor7 As Color = Color.FromArgb(12, 64, 154)
-      Private Shared borderColor As Color = Color.FromArgb(0, 0, 128)
-      
-      Shared Sub New()
-         titleBarGripBmp = StackView.DeserializeFromBase64(titleBarGripEnc)
+
+    ' <snippet10>
+    Friend Class StackRenderer
+        Inherits ToolStripProfessionalRenderer
+        Private Shared titleBarGripBmp As Bitmap
+        Private Shared titleBarGripEnc As String = "Qk16AQAAAAAAADYAAAAoAAAAIwAAAAMAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5uGMyuGMy+/n5+/n5ANj+RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5wm8/RzIomHRh+/n5ANj+RzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMzHtMRzIoRzIozHtMANj+"
+
+        ' Define titlebar colors.
+        Private Shared titlebarColor1 As Color = Color.FromArgb(89, 135, 214)
+        Private Shared titlebarColor2 As Color = Color.FromArgb(76, 123, 204)
+        Private Shared titlebarColor3 As Color = Color.FromArgb(63, 111, 194)
+        Private Shared titlebarColor4 As Color = Color.FromArgb(50, 99, 184)
+        Private Shared titlebarColor5 As Color = Color.FromArgb(38, 88, 174)
+        Private Shared titlebarColor6 As Color = Color.FromArgb(25, 76, 164)
+        Private Shared titlebarColor7 As Color = Color.FromArgb(12, 64, 154)
+        Private Shared borderColor As Color = Color.FromArgb(0, 0, 128)
+
+        Shared Sub New()
+            titleBarGripBmp = StackView.DeserializeFromBase64(titleBarGripEnc)
         End Sub
-      
-      Public Sub New()
+
+        Public Sub New()
         End Sub
-      
+
         Private Sub DrawTitleBar(ByVal g As Graphics, ByVal rect As Rectangle)
 
             ' Assign the image for the grip.
@@ -328,65 +328,65 @@ Public Class StackView
             ' Center the titlebar grip.
             g.DrawImage(titlebarGrip, New Point(rect.X + (rect.Width / 2 - titlebarGrip.Width / 2), rect.Y + 1))
         End Sub
-      
-      
-      ' This method handles the RenderGrip event.
-      Protected Overrides Sub OnRenderGrip(e As ToolStripGripRenderEventArgs)
-         DrawTitleBar(e.Graphics, New Rectangle(0, 0, e.ToolStrip.Width, 7))
+
+
+        ' This method handles the RenderGrip event.
+        Protected Overrides Sub OnRenderGrip(e As ToolStripGripRenderEventArgs)
+            DrawTitleBar(e.Graphics, New Rectangle(0, 0, e.ToolStrip.Width, 7))
         End Sub
-      
-      
-      ' This method handles the RenderToolStripBorder event.
-      Protected Overrides Sub OnRenderToolStripBorder(e As ToolStripRenderEventArgs)
-         DrawTitleBar(e.Graphics, New Rectangle(0, 0, e.ToolStrip.Width, 7))
+
+
+        ' This method handles the RenderToolStripBorder event.
+        Protected Overrides Sub OnRenderToolStripBorder(e As ToolStripRenderEventArgs)
+            DrawTitleBar(e.Graphics, New Rectangle(0, 0, e.ToolStrip.Width, 7))
         End Sub
-      
-      
-      ' This method handles the RenderButtonBackground event.
-      Protected Overrides Sub OnRenderButtonBackground(e As ToolStripItemRenderEventArgs)
-         Dim g As Graphics = e.Graphics
-         Dim bounds As New Rectangle(Point.Empty, e.Item.Size)
-         
-         Dim gradientBegin As Color = Color.FromArgb(203, 225, 252)
-         Dim gradientEnd As Color = Color.FromArgb(125, 165, 224)
-         
+
+
+        ' This method handles the RenderButtonBackground event.
+        Protected Overrides Sub OnRenderButtonBackground(e As ToolStripItemRenderEventArgs)
+            Dim g As Graphics = e.Graphics
+            Dim bounds As New Rectangle(Point.Empty, e.Item.Size)
+
+            Dim gradientBegin As Color = Color.FromArgb(203, 225, 252)
+            Dim gradientEnd As Color = Color.FromArgb(125, 165, 224)
+
             Dim button As ToolStripButton = CType(e.Item, ToolStripButton)
-         
-         If button.Pressed OrElse button.Checked Then
-            gradientBegin = Color.FromArgb(254, 128, 62)
-            gradientEnd = Color.FromArgb(255, 223, 154)
-         ElseIf button.Selected Then
-            gradientBegin = Color.FromArgb(255, 255, 222)
-            gradientEnd = Color.FromArgb(255, 203, 136)
-         End If
-         
-         Dim b = New LinearGradientBrush(bounds, gradientBegin, gradientEnd, LinearGradientMode.Vertical)
-         Try
-            g.FillRectangle(b, bounds)
-         Finally
-            b.Dispose()
-         End Try
-         
-         e.Graphics.DrawRectangle(SystemPens.ControlDarkDark, bounds)
-         
-         g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Y, bounds.Width - 1, bounds.Y)
-         
-         g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Y, bounds.X, bounds.Height - 1)
-         
-         Dim toolStrip As ToolStrip = button.Owner
+
+            If button.Pressed OrElse button.Checked Then
+                gradientBegin = Color.FromArgb(254, 128, 62)
+                gradientEnd = Color.FromArgb(255, 223, 154)
+            ElseIf button.Selected Then
+                gradientBegin = Color.FromArgb(255, 255, 222)
+                gradientEnd = Color.FromArgb(255, 203, 136)
+            End If
+
+            Dim b = New LinearGradientBrush(bounds, gradientBegin, gradientEnd, LinearGradientMode.Vertical)
+            Try
+                g.FillRectangle(b, bounds)
+            Finally
+                b.Dispose()
+            End Try
+
+            e.Graphics.DrawRectangle(SystemPens.ControlDarkDark, bounds)
+
+            g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Y, bounds.Width - 1, bounds.Y)
+
+            g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Y, bounds.X, bounds.Height - 1)
+
+            Dim toolStrip As ToolStrip = button.Owner
             Dim nextItem As ToolStripButton = CType(button.Owner.GetItemAt(button.Bounds.X, button.Bounds.Bottom + 1), ToolStripButton)
-         
-         If nextItem Is Nothing Then
-            g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Height - 1, bounds.X + bounds.Width - 1, bounds.Height - 1)
-         End If
+
+            If nextItem Is Nothing Then
+                g.DrawLine(SystemPens.ControlDarkDark, bounds.X, bounds.Height - 1, bounds.X + bounds.Width - 1, bounds.Height - 1)
+            End If
         End Sub
     End Class
     ' </snippet10>
 
-   #Region "Component Designer generated code"
-   
-   
-   Private Sub InitializeComponent()
+#Region "Component Designer generated code"
+
+
+    Private Sub InitializeComponent()
         Me.stackStrip = New System.Windows.Forms.ToolStrip
         Me.mailStackButton = New System.Windows.Forms.ToolStripButton
         Me.calendarStackButton = New System.Windows.Forms.ToolStripButton
@@ -475,7 +475,7 @@ Public Class StackView
         Me.PerformLayout()
 
     End Sub
-   
-   #End Region
+
+#End Region
 End Class
 ' </snippet1>

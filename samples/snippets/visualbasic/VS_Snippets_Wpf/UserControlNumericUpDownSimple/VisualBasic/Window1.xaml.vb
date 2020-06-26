@@ -8,20 +8,20 @@ Imports System.Windows.Shapes
 
 
 Namespace MyUserControl
-	''' <summary>
-	''' Interaction logic for Window1.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
 
-	Partial Public Class Window1
-		Inherits Window
+    Partial Public Class Window1
+        Inherits Window
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-		Private Sub numupdown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-			Title = numupdown.Value.ToString()
-		End Sub
+        Private Sub numupdown_ValueChanged(ByVal sender As Object, ByVal e As EventArgs)
+            Title = numupdown.Value.ToString()
+        End Sub
 
-	End Class
+    End Class
 End Namespace

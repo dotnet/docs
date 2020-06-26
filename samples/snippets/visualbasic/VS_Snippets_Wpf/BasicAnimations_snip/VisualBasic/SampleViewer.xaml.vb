@@ -11,16 +11,16 @@ Imports System.Windows.Media.Animation
 Imports System.Windows.Media
 
 Namespace SDKSamples
-	''' <summary>
-	''' Interaction logic for SampleViewer.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for SampleViewer.xaml
+    ''' </summary>
 
-	Partial Public Class SampleViewer
-		Inherits Window
-		Public Sub New()
-			InitializeComponent()
+    Partial Public Class SampleViewer
+        Inherits Window
+        Public Sub New()
+            InitializeComponent()
 
-		End Sub
+        End Sub
 
-	End Class
+    End Class
 End Namespace

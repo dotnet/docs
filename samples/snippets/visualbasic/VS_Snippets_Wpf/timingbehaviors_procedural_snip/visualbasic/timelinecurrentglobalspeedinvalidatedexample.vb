@@ -18,21 +18,21 @@ Imports System.Windows.Input
 Namespace Microsoft.Samples.Animation.TimingBehaviors
 
 
-	Public Class TimelineCurrentGlobalSpeedInvalidatedExample
-		Inherits Page
+    Public Class TimelineCurrentGlobalSpeedInvalidatedExample
+        Inherits Page
 
 
-		Private currentTimeTextBlock As TextBlock
-		Public Sub New()
+        Private currentTimeTextBlock As TextBlock
+        Public Sub New()
 
-			' Create a name scope.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a name scope.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			WindowTitle = "GetAnimationBaseValue Example"
-			Dim myPanel As New StackPanel()
-			myPanel.Margin = New Thickness(20)
+            WindowTitle = "GetAnimationBaseValue Example"
+            Dim myPanel As New StackPanel()
+            myPanel.Margin = New Thickness(20)
 
-			' Create a rectangle.
+            ' Create a rectangle.
             Dim animatedRectangle As New Rectangle()
             With animatedRectangle
                 .Width = 100
@@ -74,20 +74,20 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             ' Start the storyboard.
             theStoryboard.Begin(animatedRectangle, True)
 
-		End Sub
+        End Sub
 
-		Private Sub angleAnimation_CurrentGlobalSpeedInvalidated(ByVal sender As Object, ByVal e As EventArgs)
+        Private Sub angleAnimation_CurrentGlobalSpeedInvalidated(ByVal sender As Object, ByVal e As EventArgs)
 
-			' Sender is the clock that was created for the DoubleAnimation.
-			Dim doubleAnimationClock As Clock = CType(sender, Clock)
+            ' Sender is the clock that was created for the DoubleAnimation.
+            Dim doubleAnimationClock As Clock = CType(sender, Clock)
 
-			' Update the TextBlock with the time of its parent.
-			currentTimeTextBlock.Text = doubleAnimationClock.Parent.CurrentTime.ToString()
-		End Sub
+            ' Update the TextBlock with the time of its parent.
+            currentTimeTextBlock.Text = doubleAnimationClock.Parent.CurrentTime.ToString()
+        End Sub
 
 
 
-	End Class
+    End Class
 
 End Namespace
 '</SnippetTimelineCurrentGlobalSpeedInvalidatedExampleWholePage>

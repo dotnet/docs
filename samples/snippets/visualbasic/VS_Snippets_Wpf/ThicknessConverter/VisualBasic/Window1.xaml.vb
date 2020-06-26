@@ -1,9 +1,9 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Controls     
-Imports System.Windows.Documents     
-Imports System.Windows.Navigation     
-Imports System.Windows.Media     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Documents
+Imports System.Windows.Navigation
+Imports System.Windows.Media
 
 Namespace ThicknessConverter
 

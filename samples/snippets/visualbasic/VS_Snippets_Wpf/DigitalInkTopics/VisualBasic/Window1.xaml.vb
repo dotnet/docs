@@ -20,15 +20,15 @@ Class Window1
 
     Private theInkCanvas As InkCanvas
     Private cbSelectionMode As CheckBox
-    
-    
-    Public Sub New() 
+
+
+    Public Sub New()
         'InitializeComponent()
-    
+
     End Sub
-    
-    
-    Sub CodeExamples() 
+
+
+    Sub CodeExamples()
         '<Snippet8>
         ' Set the selection mode based on a checkbox
         If CBool(cbSelectionMode.IsChecked) Then
@@ -41,21 +41,21 @@ Class Window1
         '<Snippet9>
         ' Get the selected strokes from the InkCanvas
         Dim selection As StrokeCollection = theInkCanvas.GetSelectedStrokes()
-        
+
         ' Check to see if any strokes are actually selected
         If selection.Count > 0 Then
             ' Change the color of each stroke in the collection to red
             Dim stroke As System.Windows.Ink.Stroke
-            For Each stroke In  selection
+            For Each stroke In selection
                 stroke.DrawingAttributes.Color = System.Windows.Media.Colors.Red
             Next stroke
         End If
         '</Snippet9>
 
     End Sub
-    
+
     '<Snippet12>
-    Private Sub buttonSaveAsClick(ByVal sender As Object, ByVal e As RoutedEventArgs) 
+    Private Sub buttonSaveAsClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
         Dim saveFileDialog1 As New SaveFileDialog()
         saveFileDialog1.Filter = "isf files (*.isf)|*.isf"
@@ -65,12 +65,12 @@ Class Window1
             theInkCanvas.Strokes.Save(fs)
             fs.Close()
         End If
-    
+
     End Sub
     '</Snippet12>
 
     '<Snippet13>
-    Private Sub buttonLoadClick(ByVal sender As Object, ByVal e As RoutedEventArgs) 
+    Private Sub buttonLoadClick(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
         Dim openFileDialog1 As New OpenFileDialog()
         openFileDialog1.Filter = "isf files (*.isf)|*.isf"
@@ -80,7 +80,7 @@ Class Window1
             theInkCanvas.Strokes = New StrokeCollection(fs)
             fs.Close()
         End If
-    
+
     End Sub
     '</Snippet13>
     'Window1 

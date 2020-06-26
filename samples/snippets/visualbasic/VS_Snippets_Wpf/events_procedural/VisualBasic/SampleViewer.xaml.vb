@@ -4,15 +4,15 @@
 Namespace Microsoft.Samples.Animation.TimingBehaviors
 
 
-	Partial Public Class SampleViewer
-		Inherits Page
+    Partial Public Class SampleViewer
+        Inherits Page
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
 
-	End Class
+    End Class
 
 
 

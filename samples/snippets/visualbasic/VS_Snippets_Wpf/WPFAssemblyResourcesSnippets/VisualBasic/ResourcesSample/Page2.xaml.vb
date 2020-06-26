@@ -8,18 +8,18 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 
 Namespace ResourcesSample
-	''' <summary>
-	''' Interaction logic for Page2.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Page2.xaml
+    ''' </summary>
 
-	Partial Public Class Page2
-		Inherits Page
-		Public Sub New()
+    Partial Public Class Page2
+        Inherits Page
+        Public Sub New()
             InitializeComponent()
-		End Sub
+        End Sub
 
-		Private Sub a(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			MessageBox.Show("asdf")
-		End Sub
-	End Class
+        Private Sub a(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            MessageBox.Show("asdf")
+        End Sub
+    End Class
 End Namespace

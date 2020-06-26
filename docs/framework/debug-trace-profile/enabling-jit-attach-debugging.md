@@ -1,5 +1,6 @@
 ---
 title: "Enabling JIT-Attach Debugging"
+description: Enable just-in time (JIT) attach debugging to attach a debugger to a process when you encounter errors. It can be triggered by certain methods or functions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT-attach debugging"

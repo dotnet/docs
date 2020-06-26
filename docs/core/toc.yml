@@ -9,21 +9,11 @@ items:
   items:
   - name: Overview
     href: install/index.md
-  - name: Install SDK
-    href: install/sdk.md
-  - name: Install runtime
-    href: install/runtime.md
-  - name: Supported OS and dependencies
-    href: install/dependencies.md
-  - name: Remove outdated runtimes and SDKs
-    href: install/remove-runtime-sdk-versions.md
-  - name: Manage .NET templates
-    href: install/templates.md
-  - name: macOS Notarization issues
-    href: install/macos-notarization-issues.md
-  - name: How to check .NET Core versions
-    href: install/how-to-detect-installed-versions.md
-  - name: Linux
+  - name: Install on Windows
+    href: install/windows.md
+  - name: Install on macOS
+    href: install/macos.md
+  - name: Install on Linux
     items:
     - name: Overview
       href: install/linux.md
@@ -43,6 +33,14 @@ items:
       href: install/linux-rhel.md
     - name: SLES
       href: install/linux-sles.md
+  - name: Remove outdated runtimes and SDKs
+    href: install/remove-runtime-sdk-versions.md
+  - name: Manage .NET templates
+    href: install/templates.md
+  - name: macOS Notarization issues
+    href: install/macos-notarization-issues.md
+  - name: How to check .NET Core versions
+    href: install/how-to-detect-installed-versions.md
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started

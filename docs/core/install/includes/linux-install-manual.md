@@ -1,4 +1,6 @@
 
+<!-- Note, this content is copied in ../macos.md. Any fixes should be applied there too -->
+
 Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 preview downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
@@ -9,10 +11,20 @@ Both .NET Core SDK and .NET Core Runtime can be manually installed after they've
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET Core and then ensure .NET Core is in PATH.
 
-To extract the runtime and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands from the directory where the file was saved.
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
+
+**Use the following command to extract the runtime.**:
 
 ```bash
 mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C "$HOME/dotnet"
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
+**Use the following command to extract the SDK**:
+
+```bash
+mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-3.1.301-linux-x64.tar.gz -C "$HOME/dotnet"
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```

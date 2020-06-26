@@ -8,6 +8,12 @@ ms.date: 06/22/2020
 
 # Install .NET Core on Windows
 
+> [!div class="op_single_selector"]
+>
+> - [Install on Windows](windows.md)
+> - [Install on macOS](macos.md)
+> - [Install on Linux](linux.md)
+
 In this article, you'll learn how to install .NET Core on Windows. .NET Core is comprised of the runtime and the SDK. The runtime is used to run a .NET Core app and may or may not be included with the app. The SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 The latest version of .NET Core is 3.1.
@@ -58,15 +64,119 @@ Runs ASP.NET Core apps. Includes the .NET Core runtime.
 Runs .NET Core WPF and .NET Core Windows Forms desktop apps for Windows. Includes the .NET Core runtime.
 
 *.NET Core runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both the *ASP.NET Core runtime* and the *Desktop runtime* for the best compatibility with .NET Core apps.
+This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET Core apps.
 
 [Download .NET Core Runtime.](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## SDK information
 
-The SDK is used to build and publish .NET Core apps and libraries. Installing the SDK includes all three [runtimes](#runtime-information), ASP.NET Core, Desktop, and .NET Core.
+The SDK is used to build and publish .NET Core apps and libraries. Installing the SDK includes all three [runtimes](#runtime-information): ASP.NET Core, Desktop, and .NET Core.
 
 [Download .NET Core SDK.](https://dotnet.microsoft.com/download/dotnet-core)
+
+## Dependencies
+
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD024 -->
+
+# [.NET Core 3.1](#tab/netcore31)
+
+The following Windows versions are supported with .NET Core 3.1:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 8.1                            | x64, x86        |
+| Windows 10 Client             | Version 1609+                  | x64, x86        |
+| Windows Server                | 2012 R2+                       | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64, ARM32      |
+
+For more information about .NET Core 3.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md).
+
+# [.NET Core 3.0](#tab/netcore30)
+
+*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+
+The following Windows versions are supported with .NET Core 3.0:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2012 R2+                       | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64, ARM32      |
+
+For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
+
+# [.NET Core 2.2](#tab/netcore22)
+
+*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+
+The following Windows versions are supported with .NET Core 2.2:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
+| Nano Server                   | Version 1803+                   | x64, ARM32      |
+
+For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
+
+# [.NET Core 2.1](#tab/netcore21)
+
+The following Windows versions are supported with .NET Core 2.1:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64,            |
+
+For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
+
+---
+
+<!-- markdownlint-disable MD001 -->
+
+### <a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
+
+Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
+
+- ❌ Windows 7 SP1
+- ❌ Windows Vista SP 2
+- ✔️ Windows 8.1
+- ✔️ Windows Server 2008 R2
+- ✔️ Windows Server 2012 R2
+
+Install the following:
+
+- [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685).
+- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
+
+The requirements above are also required if you come across one of the following errors:
+
+> The program can't start because *api-ms-win-crt-runtime-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
+> The program can't start because *api-ms-win-cor-timezone-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
+> The library *hostfxr.dll* was found, but loading it from *C:\\\<path_to_app>\\hostfxr.dll* failed.
 
 ## Install with PowerShell automation
 
@@ -157,4 +267,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 ## Next steps
 
-- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md).
+- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-windows).
+- [Tutorial: Hello World tutorial](../tutorials/with-visual-studio.md).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

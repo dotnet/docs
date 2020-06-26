@@ -220,6 +220,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/core/install/dependencies.md",
+      "redirect_url": "/dotnet/core/install/windows"
+    },
+    {
       "source_path": "docs/core/install/linux-package-manager-centos8.md",
       "redirect_url": "/dotnet/core/install/linux-centos"
     },
@@ -300,6 +304,14 @@
       "redirect_url": "/dotnet/core/install/linux"
     },
     {
+      "source_path": "docs/core/install/runtime.md",
+      "redirect_url": "/dotnet/core/install/windows"
+    },
+    {
+      "source_path": "docs/core/install/sdk.md",
+      "redirect_url": "/dotnet/core/install/windows"
+    },
+    {
       "source_path": "docs/core/migrating-from-dnx.md",
       "redirect_url": "/dotnet/core/migration/from-dnx",
       "redirect_document_id": true
@@ -323,11 +335,11 @@
     },
     {
       "source_path": "docs/core/macos-prerequisites.md",
-      "redirect_url": "/dotnet/core/install/dependencies?pivots=os-macos"
+      "redirect_url": "/dotnet/core/install/macos#dependencies"
     },
     {
       "source_path": "docs/core/windows-prerequisites.md",
-      "redirect_url": "/dotnet/core/install/dependencies?pivots=os-windows"
+      "redirect_url": "/dotnet/core/install/windows#dependencies"
     },
     {
       "source_path": "docs/core/preview3/deploying/index.md",

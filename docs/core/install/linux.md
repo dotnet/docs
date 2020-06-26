@@ -8,6 +8,12 @@ ms.date: 06/01/2020
 
 # Install .NET Core on Linux
 
+> [!div class="op_single_selector"]
+>
+> - [Install on Windows](windows.md)
+> - [Install on macOS](macos.md)
+> - [Install on Linux](linux.md)
+
 .NET Core is available on different Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET Core. This article describes what is currently supported and which package manager is used.
 
 The rest of this article is a breakdown of each major Linux distribution that .NET Core supports. All .NET Core releases remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution reaches end-of-life.
@@ -169,3 +175,9 @@ The following table represents the support status of Ubuntu and .NET Core.
 | ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
+
+## Next steps
+
+- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

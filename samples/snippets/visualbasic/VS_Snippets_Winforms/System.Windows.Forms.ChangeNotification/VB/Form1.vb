@@ -1,4 +1,4 @@
-﻿'<snippet4>
+﻿ '<snippet4>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Diagnostics
@@ -16,7 +16,7 @@ Public Class Form1
     Inherits System.Windows.Forms.Form
     ' This button causes the value of a list element to be changed.
     Private WithEvents changeItemBtn As New Button()
-
+    
     ' This is the DataGridView control that displays the contents 
     ' of the list.
     Private WithEvents customerControl1 As New CustomerControl()
@@ -24,27 +24,27 @@ Public Class Form1
     ' This is the BindingSource used to bind the list to the 
     ' DataGridView control.
     Private customersBindingSource As New BindingSource()
-
-
-    Public Sub New()
+    
+    
+    Public Sub New() 
         ' Set up the "Change Item" button.
         Me.changeItemBtn.Text = "Change Item"
         Me.changeItemBtn.Dock = DockStyle.Bottom
         Me.Controls.Add(Me.changeItemBtn)
-
+        
         ' Set up the DataGridView.
         customerControl1.Dock = DockStyle.Top
         Me.Controls.Add(customerControl1)
         Me.Size = New Size(800, 200)
 
     End Sub
-
-    Private Sub customerControl1_DataSourceChanged(ByVal sender As [Object], ByVal e As EventArgs)
+     
+    Private Sub customerControl1_DataSourceChanged(ByVal sender As [Object], ByVal e As EventArgs) 
         MessageBox.Show("Data Source has changed")
-
+    
     End Sub
-
-
+    
+    
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) _
         Handles Me.Load
         ' Create and populate the list of DemoCustomer objects
@@ -60,8 +60,8 @@ Public Class Form1
         customerControl1.DataSource = customersBindingSource
 
     End Sub
-
-
+    
+    
     ' This event handler changes the value of the CompanyName
     ' property for the first item in the list.
     Private Sub changeItemBtn_Click(ByVal sender As Object, _
@@ -77,11 +77,11 @@ Public Class Form1
 
     End Sub
 
-    <STAThread()> _
-    Shared Sub Main()
+    <STAThread()>  _
+    Shared Sub Main() 
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-
+    
     End Sub
 End Class
 
@@ -89,17 +89,17 @@ End Class
 '<snippet3>
 ' This class implements a simple user control 
 ' that demonstrates how to apply the propertyNameChanged pattern.
-<ComplexBindingProperties("DataSource", "DataMember")> _
+<ComplexBindingProperties("DataSource", "DataMember")>  _
 Public Class CustomerControl
     Inherits UserControl
     Private dataGridView1 As DataGridView
     Private label1 As Label
     Private lastUpdate As DateTime = DateTime.Now
-
+    
     Public DataSourceChanged As EventHandler
-
-
-    Public Property DataSource() As Object
+    
+    
+    Public Property DataSource() As Object 
         Get
             Return Me.dataGridView1.DataSource
         End Get
@@ -110,27 +110,27 @@ Public Class CustomerControl
             End If
         End Set
     End Property
-
-
-    Public Property DataMember() As String
+    
+    
+    Public Property DataMember() As String 
         Get
             Return Me.dataGridView1.DataMember
-        End Get
+        End Get 
         Set
             Me.dataGridView1.DataMember = value
-        End Set
+        End Set 
     End Property
-
-
-    Private Sub OnDataSourceChanged()
+    
+    
+    Private Sub OnDataSourceChanged() 
         If (DataSourceChanged IsNot Nothing) Then
             DataSourceChanged(Me, New EventArgs())
         End If
-
+    
     End Sub
 
-
-    Public Sub New()
+    
+    Public Sub New() 
         Me.dataGridView1 = New System.Windows.Forms.DataGridView()
         Me.label1 = New System.Windows.Forms.Label()
         Me.dataGridView1.ColumnHeadersHeightSizeMode = _
@@ -163,30 +163,30 @@ Public Class DemoCustomer
     Private customerName As String = String.Empty
     Private companyNameValue As String = String.Empty
     Private phoneNumberValue As String = String.Empty
-
+    
     Public Event PropertyChanged As PropertyChangedEventHandler _
       Implements INotifyPropertyChanged.PropertyChanged
 
     Private Sub NotifyPropertyChanged(ByVal info As String)
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(info))
     End Sub
-
-
+    
+    
     ' The constructor is private to enforce the factory pattern.
-    Private Sub New()
+    Private Sub New() 
         customerName = "no data"
         companyNameValue = "no data"
         phoneNumberValue = "no data"
-
+    
     End Sub
-
-
+    
+    
     ' This is the public factory method.
-    Public Shared Function CreateNewCustomer() As DemoCustomer
+    Public Shared Function CreateNewCustomer() As DemoCustomer 
         Return New DemoCustomer()
-
+    
     End Function
-
+    
     ' This property represents an ID, suitable
     ' for use as a primary key in a database.
     Public ReadOnly Property ID() As Guid
@@ -194,12 +194,12 @@ Public Class DemoCustomer
             Return Me.idValue
         End Get
     End Property
-
-
-    Public Property CompanyName() As String
+    
+    
+    Public Property CompanyName() As String 
         Get
             Return Me.companyNameValue
-        End Get
+        End Get 
         Set
             If value <> Me.companyNameValue Then
                 Me.companyNameValue = value
@@ -207,11 +207,11 @@ Public Class DemoCustomer
             End If
         End Set
     End Property
-
-    Public Property PhoneNumber() As String
+    
+    Public Property PhoneNumber() As String 
         Get
             Return Me.phoneNumberValue
-        End Get
+        End Get 
         Set
             If value <> Me.phoneNumberValue Then
                 Me.phoneNumberValue = value

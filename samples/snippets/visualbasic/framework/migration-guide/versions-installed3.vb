@@ -9,11 +9,11 @@ Public Module GetDotNetVersion
         Const subkey As String = "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\"
 
         Using ndpKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey)
-            If ndpKey IsNot Nothing AndAlso ndpKey.GetValue("Release") IsNot Nothing
+            If ndpKey IsNot Nothing AndAlso ndpKey.GetValue("Release") IsNot Nothing 
                 Console.WriteLine($".NET Framework Version: {CheckFor45PlusVersion(ndpKey.GetValue("Release"))}")
-            Else
+            Else 
                 Console.WriteLine(".NET Framework Version 4.5 or later is not detected.")
-            End If
+            End If 
         End Using
     End Sub
 
@@ -22,14 +22,14 @@ Public Module GetDotNetVersion
         If releaseKey >= 528040 Then
             Return "4.8 or later"
         Else If releaseKey >= 461808 Then
-            Return "4.7.2"
+            Return "4.7.2" 
         Else If releaseKey >= 461308 Then
             Return "4.7.1"
         Else If releaseKey >= 460798 Then
             Return "4.7"
         Else If releaseKey >= 394802 Then
             Return "4.6.2"
-        Else If releaseKey >= 394254 Then
+        Else If releaseKey >= 394254 Then 
             Return "4.6.1"
         Else If releaseKey >= 393295 Then
             Return "4.6"

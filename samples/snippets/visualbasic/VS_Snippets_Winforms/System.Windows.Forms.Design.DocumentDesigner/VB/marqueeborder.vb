@@ -14,8 +14,8 @@ Imports System.Windows.Forms.Design
 ' This defines the possible values for the MarqueeBorder
 ' control's SpinDirection property.
 Public Enum MarqueeSpinDirection
-    CW
-    CCW
+   CW
+   CCW
 End Enum
 
 ' <snippet98>

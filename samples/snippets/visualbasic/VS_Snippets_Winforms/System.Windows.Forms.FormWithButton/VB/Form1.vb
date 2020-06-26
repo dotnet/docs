@@ -14,10 +14,10 @@ Public Class Form1
         button1.Location = New Point(30, 30)
         button1.Text = "Click me"
         Me.Controls.Add(button1)
-
+       
     End Sub
     '</snippet2>
-
+   
     '<snippet3>
     '<snippet4>
     Private Sub button1_Click(ByVal sender As Object, _

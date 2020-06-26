@@ -10,10 +10,10 @@ Imports System.Drawing.Drawing2D
 
 
 Public Class SystemDrawingWorkingWithImages
-    Inherits Form
+Inherits Form
 
-    <STAThread()> _
-    Shared Sub Main()
+	<STAThread()> _ 
+	Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New SystemDrawingWorkingWithImages())
 
@@ -176,22 +176,22 @@ Public Class SystemDrawingWorkingWithImages
     ' e956242a-1e5b-4217-a3cf-5f3fb45d00ba
     ' How to: Create Thumbnail Images
 
+    
+        ' <snippet71>
+	Public Function ThumbnailCallback() As Boolean 
+    		Return True 
+	End Function 
 
-    ' <snippet71>
-    Public Function ThumbnailCallback() As Boolean
-        Return True
-    End Function
+	Private Sub GetThumbnail(ByVal e As PaintEventArgs) 
+    
+    		Dim callback As New Image.GetThumbnailImageAbort(AddressOf ThumbnailCallback) 
+    		Dim image As Image = New Bitmap("c:\FakePhoto.jpg") 
+    		Dim pThumbnail As Image = image.GetThumbnailImage(100, 100, callback, New IntPtr()) 
+    		e.Graphics.DrawImage(pThumbnail, 10, 10, pThumbnail.Width, pThumbnail.Height) 
+	End Sub 
+        ' </snippet71>
 
-    Private Sub GetThumbnail(ByVal e As PaintEventArgs)
-
-        Dim callback As New Image.GetThumbnailImageAbort(AddressOf ThumbnailCallback)
-        Dim image As Image = New Bitmap("c:\FakePhoto.jpg")
-        Dim pThumbnail As Image = image.GetThumbnailImage(100, 100, callback, New IntPtr())
-        e.Graphics.DrawImage(pThumbnail, 10, 10, pThumbnail.Width, pThumbnail.Height)
-    End Sub
-    ' </snippet71>
-
-
+  
     ' fde9bccf-8aa5-4b0d-ba4b-788740627b02
     ' How to: Use Interpolation Mode to Control Image Quality During Scaling
     Private Sub Method81(ByVal e As PaintEventArgs)

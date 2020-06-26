@@ -9,8 +9,8 @@ Imports System.Drawing.Text
 
 Public Class SystemDrawingFontsAndText
 
-    ' 26d74ef5-0f39-4eeb-8d20-00e66e014abe
-    ' How to: Enumerate Installed Fonts
+' 26d74ef5-0f39-4eeb-8d20-00e66e014abe
+' How to: Enumerate Installed Fonts
     Public Sub Method11(ByVal e As PaintEventArgs)
         ' <snippet11>
         Dim fontFamily As New FontFamily("Arial")
@@ -48,8 +48,8 @@ Public Class SystemDrawingFontsAndText
 
         ' </snippet11>
     End Sub
-    ' 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
-    ' How to: Use Antialiasing with Text
+' 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
+' How to: Use Antialiasing with Text
     Public Sub Method21(ByVal e As PaintEventArgs)
         ' <snippet21>
         Dim fontFamily As New FontFamily("Times New Roman")
@@ -70,8 +70,8 @@ Public Class SystemDrawingFontsAndText
 
         ' </snippet21>
     End Sub
-    ' 50c69046-4188-47d9-b949-cc2610ffd337
-    ' How to: Create Vertical Text
+' 50c69046-4188-47d9-b949-cc2610ffd337
+' How to: Create Vertical Text
     Public Sub Method31(ByVal e As PaintEventArgs)
         ' <snippet31>
         Dim myText As String = "Vertical text"
@@ -92,8 +92,8 @@ Public Class SystemDrawingFontsAndText
 
         ' </snippet31>
     End Sub
-    ' 64878f98-39ba-4303-b63f-0859ab682eeb
-    ' How to: Set Tab Stops in Drawn Text
+' 64878f98-39ba-4303-b63f-0859ab682eeb
+' How to: Set Tab Stops in Drawn Text
     Public Sub Method41(ByVal e As PaintEventArgs)
         ' <snippet41>
         Dim myText As String = _
@@ -139,8 +139,8 @@ Public Class SystemDrawingFontsAndText
 
         ' </snippet41>
     End Sub
-    ' 6533d5e5-a8dc-4b76-9fc4-3bf75c8b9212
-    ' How to: Create a Private Font Collection
+' 6533d5e5-a8dc-4b76-9fc4-3bf75c8b9212
+' How to: Create a Private Font Collection
     Public Sub Method51(ByVal e As PaintEventArgs)
         ' <snippet51>
         Dim pointF As New PointF(10, 0)

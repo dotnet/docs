@@ -1,7 +1,7 @@
-﻿imports System 'EventArgs
+imports System 'EventArgs
 imports System.Windows 'DependencyObject, DependencyPropertyChangedEventArgs, 
-' FrameworkPropertyMetadata, PropertyChangedCallback, 
-' RoutedPropertyChangedEventArgs
+                       ' FrameworkPropertyMetadata, PropertyChangedCallback, 
+                       ' RoutedPropertyChangedEventArgs
 imports System.Windows.Controls 'UserControl
 
 Namespace SDKSample

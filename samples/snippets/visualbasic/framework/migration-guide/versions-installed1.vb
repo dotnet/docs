@@ -4,11 +4,11 @@ Public Module VersionTest
     Public Sub Main()
         GetVersionFromRegistry()
     End Sub
-
+    
     Private Sub GetVersionFromRegistry()
 
         ' Opens the registry key for the .NET Framework entry.
-        Using ndpKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).
+        Using ndpKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32). 
             OpenSubKey("SOFTWARE\Microsoft\NET Framework Setup\NDP\")
 
             For Each versionKeyName In ndpKey.GetSubKeyNames()
@@ -21,7 +21,7 @@ Public Module VersionTest
                     Dim name = DirectCast(versionKey.GetValue("Version", ""), String)
                     ' Get the service pack (SP) number.
                     Dim sp = versionKey.GetValue("SP", "").ToString()
-
+                   
                     Dim install = versionKey.GetValue("Install", "").ToString()
                     If String.IsNullOrEmpty(install) Then  ' No install info; it must be in a child subkey.
                         Console.WriteLine($"{versionKeyName}  {name}")

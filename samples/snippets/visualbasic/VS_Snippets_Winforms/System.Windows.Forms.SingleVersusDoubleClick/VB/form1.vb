@@ -78,7 +78,7 @@ Namespace SingleVersusDoubleClick
                 ' Start the double click timer.
                 doubleClickTimer.Start()
 
-                ' This is the second mouse click.
+            ' This is the second mouse click.
             Else
                 ' Verify that the mouse click is within the double click
                 ' rectangle and is within the system-defined double 

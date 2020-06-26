@@ -1,4 +1,4 @@
-﻿' <snippet1>
+﻿ ' <snippet1>
 ' <snippet2>
 Imports System.Collections
 Imports System.Collections.Generic
@@ -20,18 +20,18 @@ Public Class Form1
     ' <snippet4>
     ' This is the TextBox for entering CustomerID values.
     Private WithEvents customerIdTextBox As New TextBox()
-
+    
     ' This is the DataGridView that displays orders for the 
     ' specified customer.
     Private customersDataGridView As New DataGridView()
-
+    
     ' This is the BindingSource for binding the database query
     ' result set to the DataGridView.
     Private ordersBindingSource As New BindingSource()
-
+    
     ' </snippet4>
     ' <snippet5>
-    Public Sub New()
+    Public Sub New() 
 
         ' Set up the CustomerID TextBox.
         Me.customerIdTextBox.Location = New Point(100, 200)
@@ -40,15 +40,15 @@ Public Class Form1
             "Enter a valid Northwind CustomerID, for example: ALFKI," & _
             " then RETURN or click outside the TextBox"
         Me.Controls.Add(Me.customerIdTextBox)
-
+        
         ' Set up the DataGridView.
         customersDataGridView.Dock = DockStyle.Top
         Me.Controls.Add(customersDataGridView)
-
+        
         ' Set up the form.
         Me.Size = New Size(800, 500)
     End Sub
-
+    
     ' </snippet5>
     ' <snippet6>
     ' This event handler binds the BindingSource to the DataGridView
@@ -60,7 +60,7 @@ Public Class Form1
         Me.customersDataGridView.DataSource = Me.ordersBindingSource
 
     End Sub
-
+    
     ' </snippet6>
     ' <snippet7>
     ' This is a static factory method. It queries the Northwind 
@@ -87,7 +87,7 @@ Public Class Form1
         Return reader
 
     End Function
-
+     
     ' </snippet7>
     ' <snippet8>
     ' These event handlers are called when the user tabs or clicks
@@ -102,8 +102,8 @@ Public Class Form1
             GetOrdersByCustomerId(Me.customerIdTextBox.Text)
 
     End Sub
-
-
+    
+    
     Private Sub customerIdTextBox_KeyDown(ByVal sender As Object, _
         ByVal e As KeyEventArgs) Handles customerIdTextBox.KeyDown
 

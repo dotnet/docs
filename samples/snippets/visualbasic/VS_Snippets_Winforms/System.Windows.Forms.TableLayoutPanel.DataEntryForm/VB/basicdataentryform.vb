@@ -11,25 +11,25 @@ Imports System.Windows.Forms
 ' when the user resizes the form. It also demonstrates a layout that 
 ' responds well to localization.
 Class BasicDataEntryForm
-    Inherits System.Windows.Forms.Form
-
-    Public Sub New()
-        InitializeComponent()
+   Inherits System.Windows.Forms.Form
+   
+   Public Sub New()
+      InitializeComponent()
     End Sub
-
-    Private components As System.ComponentModel.IContainer = Nothing
-
-    Protected Overrides Sub Dispose(disposing As Boolean)
-        If disposing AndAlso (components IsNot Nothing) Then
-            components.Dispose()
-        End If
-        MyBase.Dispose(disposing)
+   
+   Private components As System.ComponentModel.IContainer = Nothing
+    
+   Protected Overrides Sub Dispose(disposing As Boolean)
+      If disposing AndAlso (components IsNot Nothing) Then
+         components.Dispose()
+      End If
+      MyBase.Dispose(disposing)
     End Sub
-
-    Public Overrides Function ToString() As String
-        Return "Basic Data Entry Form"
+   
+   Public Overrides Function ToString() As String
+      Return "Basic Data Entry Form"
     End Function
-
+   
     Private Sub okBtn_Click(ByVal sender As Object, ByVal e As EventArgs) Handles okBtn.Click
         Me.Close()
     End Sub
@@ -328,11 +328,11 @@ Class BasicDataEntryForm
     Friend WithEvents maskedTextBox2 As System.Windows.Forms.MaskedTextBox
     Friend WithEvents comboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents richTextBox1 As System.Windows.Forms.RichTextBox
-
-    <STAThread()> _
-    Shared Sub Main()
-        Application.EnableVisualStyles()
-        Application.Run(New BasicDataEntryForm())
+   
+   <STAThread()>  _
+   Shared Sub Main()
+      Application.EnableVisualStyles()
+      Application.Run(New BasicDataEntryForm())
     End Sub
 End Class
 ' </snippet1>

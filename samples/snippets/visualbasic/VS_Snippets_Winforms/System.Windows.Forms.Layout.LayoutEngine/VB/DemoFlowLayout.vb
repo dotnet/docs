@@ -32,7 +32,7 @@ End Class
 ' <snippet3>
 ' This class demonstrates a simple custom layout engine.
 Public Class DemoFlowLayout
-    Inherits LayoutEngine
+   Inherits LayoutEngine
 
     ' <snippet4>
     Public Overrides Function Layout( _

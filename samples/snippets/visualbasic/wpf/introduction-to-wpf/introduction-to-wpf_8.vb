@@ -1,4 +1,4 @@
-﻿Imports System.Windows ' Window, MessageBox
+Imports System.Windows ' Window, MessageBox
 Imports System.Windows.Input ' MouseButtonEventArgs
 
 Namespace SDKSample

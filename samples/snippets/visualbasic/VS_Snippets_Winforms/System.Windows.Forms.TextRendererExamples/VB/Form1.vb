@@ -146,7 +146,7 @@ Public Class Form1
 
     End Sub
 
-    '<snippet11>
+ '<snippet11>
     Private Sub DrawALineOfText(ByVal e As PaintEventArgs)
         ' Declare strings to render on the form.
         Dim stringsToPaint() As String = {"Tail", "Spin", " Toys"}

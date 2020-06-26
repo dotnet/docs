@@ -172,17 +172,17 @@ End Class
 
 Public Class ToolStripMonthCalendar
     Inherits ToolStripControlHost
-
+    
     '<snippet10>
     ' Call the base constructor passing in a MonthCalendar instance.
-    Public Sub New()
+    Public Sub New() 
         MyBase.New(New MonthCalendar())
-
+    
     End Sub
     '</snippet10>
 
     '<snippet11>
-    Public ReadOnly Property MonthCalendarControl() As MonthCalendar
+    Public ReadOnly Property MonthCalendarControl() As MonthCalendar 
         Get
             Return CType(Control, MonthCalendar)
         End Get
@@ -191,7 +191,7 @@ Public Class ToolStripMonthCalendar
 
     '<snippet12>
     ' Expose the MonthCalendar.FirstDayOfWeek as a property.
-    Public Property FirstDayOfWeek() As Day
+    Public Property FirstDayOfWeek() As Day 
         Get
             Return MonthCalendarControl.FirstDayOfWeek
         End Get
@@ -199,22 +199,22 @@ Public Class ToolStripMonthCalendar
             MonthCalendarControl.FirstDayOfWeek = value
         End Set
     End Property
-
+     
     ' Expose the AddBoldedDate method.
-    Public Sub AddBoldedDate(ByVal dateToBold As DateTime)
+    Public Sub AddBoldedDate(ByVal dateToBold As DateTime) 
         MonthCalendarControl.AddBoldedDate(dateToBold)
-
+    
     End Sub
     '</snippet12>
 
     ' Subscribe and unsubscribe the control events you wish to expose.
     '<snippet16>
     '<snippet14>
-    Protected Overrides Sub OnSubscribeControlEvents(ByVal c As Control)
+    Protected Overrides Sub OnSubscribeControlEvents(ByVal c As Control) 
 
         ' Call the base so the base events are connected.
         MyBase.OnSubscribeControlEvents(c)
-
+        
         ' Cast the control to a MonthCalendar control.
         Dim monthCalendarControl As MonthCalendar = _
             CType(c, MonthCalendar)
@@ -222,7 +222,7 @@ Public Class ToolStripMonthCalendar
         ' Add the event.
         AddHandler monthCalendarControl.DateChanged, _
             AddressOf HandleDateChanged
-
+    
     End Sub
     '</snippet14>
 

@@ -8,9 +8,9 @@ Imports System.Windows.Forms
 
 Class Form1
     Inherits Form
-
-    Public Sub New()
-
+  
+    Public Sub New() 
+        
         InitializeComponent()
         ShowShippingOptions()
 
@@ -19,7 +19,7 @@ Class Form1
         '</snippet2>
     End Sub
 
-
+    
     Private Sub ShowShippingOptions()
 
         '<snippet3>
@@ -28,8 +28,8 @@ Class Form1
 
     End Sub
 
-
-    Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
+    
+    Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)  Handles button1.Click
 
         '<snippet1>
         Dim OrderForm1 As New OrderForm()
@@ -39,23 +39,23 @@ Class Form1
 
     End Sub
 
-
-    <STAThread()> _
-    Shared Sub Main()
+    
+    <STAThread()>  _
+    Shared Sub Main() 
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
-
+    
     End Sub
-
+    
     Private WithEvents button1 As System.Windows.Forms.Button
     Private imageList1 As System.Windows.Forms.ImageList
     Private tabControl1 As System.Windows.Forms.TabControl
     Private products As System.Windows.Forms.TabPage
     Private components As System.ComponentModel.IContainer
     Private shippingOptions As System.Windows.Forms.TabPage
-
-    Private Sub InitializeComponent()
+    
+    Private Sub InitializeComponent() 
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.button1 = New System.Windows.Forms.Button
@@ -127,8 +127,8 @@ End Class
 
 Public Class OrderForm
     Inherits Form
-
-    Public Sub New()
+    
+    Public Sub New() 
         InitializeComponent()
     End Sub
 
@@ -147,10 +147,10 @@ Public Class OrderForm
     Private label6 As System.Windows.Forms.Label
     Private listView1 As System.Windows.Forms.ListView
     Private imageList1 As System.Windows.Forms.ImageList
-
-
-    Private Sub InitializeComponent()
-
+    
+    
+    Private Sub InitializeComponent() 
+        
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.label5 = New System.Windows.Forms.Label()
         Me.checkBox1 = New System.Windows.Forms.CheckBox()
@@ -295,7 +295,7 @@ Public Class OrderForm
         Me.label6.TabIndex = 1
         Me.label6.Text = "Item List"
         ' 
-
+    
         ' 
         ' OrderForm
         ' 
@@ -311,7 +311,7 @@ Public Class OrderForm
         Me.panel2.ResumeLayout(False)
         Me.panel2.PerformLayout()
         Me.ResumeLayout(False)
-
+    
     End Sub
 End Class
 

@@ -1,4 +1,4 @@
-﻿' <snippet1>
+﻿ ' <snippet1>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
@@ -11,21 +11,21 @@ Imports System.Windows.Forms
 
 Public Class Form1
     Inherits Form
-
-    Public Sub New()
+    
+    Public Sub New() 
     End Sub
-
+    
     ' The controls and components we need for the form.
     Private WithEvents button1 As Button
     Private pictureBox1 As PictureBox
     Private bindingSource1 As BindingSource
     Private textBox1 As TextBox
     Private textBox2 As TextBox
-
+    
     ' Data table to hold the database data.
     Private employeeTable As New DataTable()
-
-
+    
+    
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) _
         Handles Me.Load
 
@@ -84,8 +84,8 @@ Public Class Form1
         textBox1.DataBindings.Add("Text", bindingSource1, "LastName", True)
 
     End Sub
-
-
+    
+    
     ' Move through the data when the button is clicked.
     Private Sub button1_Click(ByVal sender As Object, _
         ByVal e As EventArgs) Handles button1.Click
@@ -93,13 +93,13 @@ Public Class Form1
         bindingSource1.MoveNext()
 
     End Sub
-
-
-    <STAThread()> _
-    Shared Sub Main()
+    
+    
+    <STAThread()>  _
+    Shared Sub Main() 
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-
+    
     End Sub
 End Class
 ' </snippet1>

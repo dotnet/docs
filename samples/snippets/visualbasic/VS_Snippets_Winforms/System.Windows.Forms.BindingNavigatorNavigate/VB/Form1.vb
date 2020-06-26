@@ -1,4 +1,4 @@
-﻿'<snippet1>
+﻿ '<snippet1>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
@@ -28,50 +28,50 @@ Class Form1
     Private textBox2 As TextBox
     Private bindingSource1 As BindingSource
     Private bindingNavigatorSeparator2 As ToolStripSeparator
-
-
-    Public Sub New()
+    
+    
+    Public Sub New() 
         InitializeComponent()
         LoadData()
-
+        
         '<snippet3>
         bindingNavigator1.BindingSource = bindingSource1
         '</snippet3>
-
+    
     End Sub
     '<snippet2>
-    Private Sub LoadData()
+    Private Sub LoadData() 
         ' The xml to bind to.
         Dim xml As String = "<US><states>" + "<state><name>Washington</name><capital>Olympia</capital></state>" + "<state><name>Oregon</name><capital>Salem</capital></state>" + "<state><name>California</name><capital>Sacramento</capital></state>" + "<state><name>Nevada</name><capital>Carson City</capital></state>" + "</states></US>"
-
+        
         ' Convert the xml string to bytes and load into a memory stream.
         Dim xmlBytes As Byte() = Encoding.UTF8.GetBytes(xml)
         Dim stream As New MemoryStream(xmlBytes, False)
-
+        
         ' Create a DataSet and load the xml into it.
         Dim [set] As New DataSet()
         [set].ReadXml(stream)
-
+        
         ' Set the DataSource to the DataSet, and the DataMember
         ' to state.
         bindingSource1.DataSource = [set]
         bindingSource1.DataMember = "state"
-
+        
         textBox1.DataBindings.Add("Text", bindingSource1, "name")
         textBox2.DataBindings.Add("Text", bindingSource1, "capital")
-
+    
     End Sub
-
+     
     '</snippet2>
-    <STAThread()> _
-    Public Shared Sub Main()
+    <STAThread()>  _
+    Public Shared Sub Main() 
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-
+    
     End Sub
-
-
-    Private Sub InitializeComponent()
+    
+    
+    Private Sub InitializeComponent() 
         Me.components = New System.ComponentModel.Container()
         Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.bindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -144,7 +144,7 @@ Class Form1
         ' bindingNavigatorSeparator
         ' 
         Me.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator"
-
+        
         ' 
         ' bindingNavigatorPositionItem
         ' 
@@ -157,7 +157,7 @@ Class Form1
         ' bindingNavigatorSeparator1
         ' 
         Me.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1"
-        ' 
+            ' 
         ' bindingNavigatorMoveNextItem
         ' 
         Me.bindingNavigatorMoveNextItem.Image = CType(resources.GetObject("bindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
@@ -173,7 +173,7 @@ Class Form1
         ' bindingNavigatorSeparator2
         ' 
         Me.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2"
-
+      
         ' 
         ' textBox1
         ' 
@@ -200,7 +200,7 @@ Class Form1
         CType(Me.bindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
-
+    
     End Sub
 End Class
 '</snippet1>

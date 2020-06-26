@@ -14,33 +14,33 @@ Imports System.Windows.Forms
 
 Class Form1
     Inherits Form
-
-
-
+    
+    
+    
     Private BindingSource1 As BindingSource
     Private dataGridView1 As DataGridView
     Private WithEvents button1 As Button
     Private label1 As Label
     Private label2 As Label
-
-
+    
+    
     Private components As IContainer
-
-
-    Public Sub New()
+    
+    
+    Public Sub New() 
         InitializeComponent()
-
+          
     End Sub
-
-    <STAThread()> _
-    Shared Sub Main()
+    
+    <STAThread()>  _
+    Shared Sub Main() 
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-
+    
     End Sub
-
-
-    Private Sub InitializeComponent()
+    
+    
+    Private Sub InitializeComponent() 
         Me.components = New System.ComponentModel.Container()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.dataGridView1 = New System.Windows.Forms.DataGridView()
@@ -96,16 +96,16 @@ Class Form1
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
-
+    
     End Sub
-
-
-
+     
+    
+    
     Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         InitializeSortedFilteredBindingSource()
-
+    
     End Sub
-
+    
     ' The following code example demonstrates BindingSource.Filter and
     ' BindingSource.Sort members.  
     ' To run this example paste the code into a form that contains a 
@@ -143,9 +143,9 @@ Class Form1
         ' Set the data source for dataGridView1 to BindingSource1.
         dataGridView1.DataSource = BindingSource1
 
-
+       
     End Sub
-
+    
     '</snippet1>
 
     ' The following code example demonstrates BindingSource.Items,

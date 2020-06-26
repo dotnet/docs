@@ -1,4 +1,4 @@
-﻿Namespace SDKSample
+Namespace SDKSample
 
     Class Person
 

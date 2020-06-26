@@ -1,5 +1,6 @@
 ---
 title: "How to: Sort and Group Data Using a View in XAML"
+description: Learn how to create a view of a data collection for grouping, sorting, and filtering in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data binding [WPF], grouping data in views in XAML"

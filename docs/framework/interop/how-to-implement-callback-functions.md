@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Callback Functions"
+description: See how to implement callback functions. In this example, a managed application, using platform invoke, prints the handle value for each window on a computer.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

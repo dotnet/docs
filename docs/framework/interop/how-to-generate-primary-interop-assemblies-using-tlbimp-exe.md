@@ -1,5 +1,6 @@
 ---
 title: "How to: Generate Primary Interop Assemblies Using Tlbimp.exe"
+description: Learn how to generate primary interop assemblies using the Type Library Importer (Tlbimp.exe) that's provided by the Windows SDK.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "primary interop assemblies, generating"

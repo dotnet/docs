@@ -1,5 +1,6 @@
 ---
 title: "Developing Web Applications with ASP.NET"
+description: Develop web apps with ASP.NET Core, which is a redesign of ASP.NET 4.x that's cross-platform, leaner, more modular, and unified to build a web UI and web APIs.
 ms.date: "09/25/2018"
 helpviewer_keywords: 
   - "ASP.NET"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Add References to Type Libraries"
+description: Understand how to add references to type libraries in Visual Studio or for command-line compilation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "importing type library"

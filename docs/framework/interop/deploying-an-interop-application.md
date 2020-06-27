@@ -1,5 +1,6 @@
 ---
 title: "Deploying an Interop Application"
+description: Deploy an interop application, which usually has a .NET client assembly, interop assemblies of distinct COM type libraries, and registered COM components.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], interop"

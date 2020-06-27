@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
+description: Configure .NET-based COM components for registration-free activation. The setup requires a Win32-style application manifest and a .NET component manifest.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"

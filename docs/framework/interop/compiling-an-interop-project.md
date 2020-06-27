@@ -1,5 +1,6 @@
 ---
 title: "Compiling an Interop Project"
+description: Review how to compile a COM interop project, which are compiled like managed projects if they reference one or more assemblies containing imported COM types.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "interoperation with unmanaged code, compiling"

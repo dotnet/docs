@@ -1,6 +1,6 @@
 ---
 title: "How to: Implement Property Change Notification"
-description: Enable your binding target properties to automatically reflect the dynamic changes of the binding source in Windows Presentation Foundation (WPF).
+description: Enable your properties to automatically notify a binding source when the property value changes in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

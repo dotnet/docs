@@ -1,6 +1,6 @@
 ---
 title: "How to: Bind to a Method"
-description: Use this example to enable users to specify the temperature and temperature scale to convert in the Windows Presentation Foundation (WPF).
+description: Follow this example to find out how to bind to the method of an object in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data binding [WPF], binding to methods using ObjectDataProvider"

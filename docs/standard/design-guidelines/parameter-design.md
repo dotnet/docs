@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "reserved parameters"
 ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
 ---
-# Parameter design
+# Parameter Design
 
 This section provides broad guidelines on parameter design, including sections with guidelines for checking arguments. In addition, you should refer to the guidelines described in [Naming Parameters](naming-parameters.md).
 
@@ -34,7 +34,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  This better communicates the relationship between the methods.
 
-### Choose between enum and boolean parameters
+### Choosing Between Enum and Boolean Parameters  
  ✔️ DO use enums if a member would otherwise have two or more Boolean parameters.
 
  ❌ DO NOT use Booleans unless you are absolutely sure there will never be a need for more than two values.
@@ -43,7 +43,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  ✔️ CONSIDER using Booleans for constructor parameters that are truly two-state values and are simply used to initialize Boolean properties.
 
-### Validate arguments
+### Validating Arguments
  ✔️ DO validate arguments passed to public, protected, or explicitly implemented members. Throw <xref:System.ArgumentException?displayProperty=nameWithType>, or one of its subclasses, if the validation fails.
 
  Note that the actual validation does not necessarily have to happen in the public or protected member itself. It could happen at a lower level in some private or internal routine. The main point is that the entire surface area that is exposed to the end users checks the arguments.
@@ -60,10 +60,10 @@ This section provides broad guidelines on parameter design, including sections w
 
  If the member is security sensitive, you are encouraged to make a copy and then validate and process the argument.
 
-### Pass parameters
+### Parameter Passing
  From the perspective of a framework designer, there are three main groups of parameters: by-value parameters, `ref` parameters, and `out` parameters.
 
- When an argument is passed through a by-value parameter, the member receives a copy of the actual argument passed in. If the argument is a value type, a copy of the argument is put on the stack. If the argument is a reference type, a copy of the reference is put on the stack. Most popular CLR languages, such as C#, Visual Basic, and C++, default to passing parameters by value.
+ When an argument is passed through a by-value parameter, the member receives a copy of the actual argument passed in. If the argument is a value type, a copy of the argument is put on the stack. If the argument is a reference type, a copy of the reference is put on the stack. Most popular CLR languages, such as C#, VB.NET, and C++, default to passing parameters by value.
 
  When an argument is passed through a `ref` parameter, the member receives a reference to the actual argument passed in. If the argument is a value type, a reference to the argument is put on the stack. If the argument is a reference type, a reference to the reference is put on the stack. `Ref` parameters can be used to allow the member to modify arguments passed by the caller.
 
@@ -77,7 +77,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  There are some limited exceptions to the rule, such as a method that can be used to swap references.
 
-### Members with variable number of parameters
+### Members with Variable Number of Parameters
  Members that can take a variable number of arguments are expressed by providing an array parameter. For example, <xref:System.String> provides the following method:
 
 ```csharp
@@ -104,7 +104,7 @@ public class String {
 
  Note that the params keyword can be added only to the last parameter in the parameter list.
 
- ✔️ CONSIDER adding the params keyword to array parameters if you expect the end users to pass arrays with a small number of elements. If it’s expected that lots of elements will be passed in common scenarios, users will probably not pass these elements inline anyway, and so the params keyword is not necessary.
+ ✔️ CONSIDER adding the params keyword to array parameters if you expect the end users to pass arrays with a small number of elements. If it's expected that lots of elements will be passed in common scenarios, users will probably not pass these elements inline anyway, and so the params keyword is not necessary.
 
  ❌ AVOID using params arrays if the caller would almost always have the input already in an array.
 
@@ -116,7 +116,7 @@ public class String {
 
  ✔️ CONSIDER using the params keyword in a simple overload, even if a more complex overload could not use it.
 
- Ask yourself if users would value having the params array in one overload even if it wasn’t in all overloads.
+ Ask yourself if users would value having the params array in one overload even if it wasn't in all overloads.
 
  ✔️ DO try to order parameters to make it possible to use the params keyword.
 
@@ -134,7 +134,7 @@ public class String {
 
  Some CLR languages, such as C++, support an alternative convention for passing variable parameter lists called `varargs` methods. The convention should not be used in frameworks, because it is not CLS compliant.
 
-### Pointer parameters
+### Pointer Parameters
  In general, pointers should not appear in the public surface area of a well-designed managed code framework. Most of the time, pointers should be encapsulated. However, in some cases pointers are required for interoperability reasons, and using pointers in such cases is appropriate.
 
  ✔️ DO provide an alternative for any member that takes a pointer argument, because pointers are not CLS-compliant.
@@ -145,7 +145,7 @@ public class String {
 
  For example, there is no need to pass the start index, because simple pointer arithmetic can be used to accomplish the same result.
 
- *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
+ *Portions &copy; 2005, 2009 Microsoft Corporation. All rights reserved.*
 
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*
 

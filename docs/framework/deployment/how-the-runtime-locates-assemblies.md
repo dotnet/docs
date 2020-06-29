@@ -1,5 +1,6 @@
 ---
 title: "How the Runtime Locates Assemblies"
+description: Learn how the common language runtime (CLR) locates and binds to the assemblies that make up your application in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "app.config files, assembly locations"

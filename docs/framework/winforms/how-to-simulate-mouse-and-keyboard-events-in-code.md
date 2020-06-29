@@ -1,6 +1,6 @@
 ---
 title: "How to: Simulate Mouse and Keyboard Events in Code"
-description: Learn how to use the options Windows Forms provides to programatically simulate mouse and keyboard inputs.
+description: Learn how to use the options Windows Forms provides to programmatically simulate mouse and keyboard inputs.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -16,11 +16,12 @@ Cryptographic operations in .NET Core and .NET 5 are done by operating system (O
 
 The dependency on OS libraries also means that .NET apps can only use cryptographic features that the OS supports. While all platforms support certain core features, some features that .NET supports can't be used on some platforms. This article identifies the features that are supported on each platform.
 
-This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Framework Cryptography Model](cryptography-model.md).
+This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Cryptography Model](cryptography-model.md) and [.NET Cryptographic Services](cryptographic-services.md).
+
 
 ## Hash algorithms
 
-All hash algorithm and hash-based message authentication (HMAC) classes, including the \*Managed classes, defer to the OS libraries. While the various OS libraries differ in performance, they should be compatible.
+All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries. While the various OS libraries differ in performance, they should be compatible.
 
 ## Symmetric encryption
 
@@ -45,7 +46,7 @@ On Windows and Linux, the implementations of AES-CCM and AES-GCM are provided by
 
 On macOS, the system libraries don't support AES-CCM or AES-GCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> and <xref:System.Security.Cryptography.AesGcm> classes use OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for these types to function, and it must be in a path that the system would load a library from by default. We recommend that you install OpenSSL from a package manager such as Homebrew.
 
-The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from older versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
+The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from earlier versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
 
 ### AES-CCM keys, nonces, and tags
 
@@ -83,15 +84,10 @@ This section includes the following subsections:
 * [ECDSA](#ecdsa)
 * [ECDH](#ecdh)
 * [DSA](#dsa)
-* [X.509 Certificates](#x509-certificates)
-* [Reading a PKCS12/PFX](#read-a-pkcs12pfx)
-* [Writing a PKCS12/PFX](#write-a-pkcs12pfx)
-* [X509Store](#x509store)
-* [X509Chain](#x509chain)
 
 ### RSA
 
-Rivest–Shamir–Adleman (RSA) key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
+RSA (Rivest–Shamir–Adleman) key generation is performed by the OS libraries and is subject to their size limitations and performance characteristics.
 
 RSA key operations are performed by the OS libraries, and the types of key that can be loaded are subject to OS requirements.
 
@@ -114,15 +110,13 @@ The OS libraries are used for encryption and decryption padding. Not all platfor
 
 * Windows CryptoAPI (CAPI) is used whenever [`new RSACryptoServiceProvider()`](xref:System.Security.Cryptography.RSACryptoServiceProvider) is used.
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new RSACng()`](xref:System.Security.Cryptography.RSACng) is used.
-* The object returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns an <xref:System.Security.Cryptography.RSACng> instance. This use of <xref:System.Security.Cryptography.RSACng> is subject to change.
+* The object returned by <xref:System.Security.Cryptography.RSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns an <xref:System.Security.Cryptography.RSACng> instance. This use of <xref:System.Security.Cryptography.RSACng> is an implementation detail and is subject to change.
 * The <xref:System.Security.Cryptography.X509Certificates.RSACertificateExtensions.GetRSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.RSACng> instance, but if <xref:System.Security.Cryptography.RSACng> can't open the key, <xref:System.Security.Cryptography.RSACryptoServiceProvider> will be attempted. The preferred provider is an implementation detail and is subject to change.
 
 #### RSA native interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
-
-The types involved do not translate between platforms, and should only be directly used when necessary.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses. The types involved do not translate between platforms, and should only be directly used when necessary.
 
 | Type                                                         | Windows | Linux         | macOS         |
 |--------------------------------------------------------------|---------|---------------|---------------|
@@ -136,7 +130,7 @@ The types involved do not translate between platforms, and should only be direct
 
 ### ECDSA
 
-Elliptic Curve Digital Signature Algorithm (ECDSA) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
+ECDSA (Elliptic Curve Digital Signature Algorithm) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
 
 ECDSA key curves are defined by the OS libraries and are subject to their limitations.
 
@@ -150,28 +144,26 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | Explicit curves                    | ✔️           | ❌              | ✔️           | ❌            |
 | Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️           | ❌<sup>3</sup>|
 
-<sup>1</sup> Not all Linux distributions have support for the same named curves.
+<sup>1</sup> Linux distributions don't all have support for the same named curves.
 
 <sup>2</sup> Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
-<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
+<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or earlier versions of Windows.
 
 #### ECDSA Native Interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
-
-The types involved don't translate between platforms and should only be directly used when necessary.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses. The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                             | Windows | Linux | macOS |
 |--------------------------------------------------|---------|-------|-------|
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️     | ❌    | ❌    |
 | <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️\*  |
 
-<sup>1</sup> On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
 ### ECDH
 
-Elliptic Curve Diffie-Hellman (ECDH) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
+ECDH (Elliptic Curve Diffie-Hellman) key generation is done by the OS libraries and is subject to their size limitations and performance characteristics.
 
 The <xref:System.Security.Cryptography.ECDiffieHellman> class doesn't return the "raw" value of the ECDH computation. All returned data is in terms of key derivation functions:
 
@@ -195,11 +187,11 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | explicit curves                    | ✔️           | ❌              | ✔️           | ❌            |
 | Export or import as explicit       | ✔️           | ❌<sup>3</sup>  | ✔️           | ❌<sup>3</sup>|
 
-<sup>1</sup> Not all Linux distributions have support for the same named curves.
+<sup>1</sup> Linux distributions don't all have support for the same named curves.
 
 <sup>2</sup> Support for named curves was added to Windows CNG in Windows 10. For more information, see [CNG Named Elliptic Curves](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). Named curves are not available in earlier versions of Windows, except for three curves in Windows 7.
 
-<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or older versions of Windows.
+<sup>3</sup> Exporting with explicit curve parameters requires OS library support, which is not available on macOS or earlier versions of Windows.
 
 #### ECDH native interop
 
@@ -214,7 +206,7 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 
 ### DSA
 
-Digital Signature Algorithm (DSA) key generation is performed by the system libraries and is subject to their size limitations and performance characteristics.
+DSA (Digital Signature Algorithm) key generation is performed by the system libraries and is subject to their size limitations and performance characteristics.
 
 | Function                      | Windows CNG | Linux | macOS         | Windows CAPI |
 |-------------------------------|-------------|-------|---------------|--------------|
@@ -231,15 +223,13 @@ Digital Signature Algorithm (DSA) key generation is performed by the system libr
 
 * Windows CryptoAPI (CAPI) is used whenever [`new DSACryptoServiceProvider()`](xref:System.Security.Cryptography.DSACryptoServiceProvider) is used.
 * Windows Cryptography API Next Generation (CNG) is used whenever [`new DSACng()`](xref:System.Security.Cryptography.DSACng) is used.
-* The object returned by <xref:System.Security.Cryptography.DSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently returns a <xref:System.Security.Cryptography.DSACng> instance. This use of <xref:System.Security.Cryptography.DSACng> is subject to change.
-* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> currently prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change.
+* The object returned by <xref:System.Security.Cryptography.DSA.Create%2A?displayProperty=nameWithType> is internally powered by Windows CNG. This use of Windows CNG is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> returns a <xref:System.Security.Cryptography.DSACng> instance. This use of <xref:System.Security.Cryptography.DSACng> is an implementation detail and is subject to change.
+* The <xref:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey%2A> extension method for <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> prefers an <xref:System.Security.Cryptography.DSACng> instance, but if <xref:System.Security.Cryptography.DSACng> can't open the key, <xref:System.Security.Cryptography.DSACryptoServiceProvider> will be attempted.  The preferred provider is an implementation detail and is subject to change.
 
-#### DSA Native Interop
+#### DSA native interop
 
-.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses.
-
-The types involved don't translate between platforms and should only be directly used when necessary.
+.NET exposes types to allow programs to interoperate with the OS libraries that the .NET cryptography code uses. The types involved don't translate between platforms and should only be directly used when necessary.
 
 | Type                                                         | Windows | Linux         | macOS         |
 |--------------------------------------------------------------|---------|---------------|---------------|
@@ -292,7 +282,7 @@ On Linux, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 
 On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-only), and user key storage (read-write).
 
-The following tables show which scenarios are supported in each platform. For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
+The following tables show which scenarios are supported in each platform. For unsupported scenarios (❌ in the tables), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
 
 #### The My store
 
@@ -348,7 +338,7 @@ On Linux, the `CurrentUser\Intermediate` store is used as a cache when downloadi
 
 On Linux, the `Disallowed` store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the `Disallowed` store if it has already acquired contents.
 
-On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
+On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to `Always Deny`.
 
 #### Nonexistent store
 
@@ -364,7 +354,7 @@ On macOS, custom store creation with the X509Store API is supported only for `Cu
 
 macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
 
-macOS doesn't support a user-initiated timeout on CRL/OCSP/AIA downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
+macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation List) / OCSP (Online Certificate Status Protocol) / AIA (Authority Information Access) downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
 
 ## Additional resources
 

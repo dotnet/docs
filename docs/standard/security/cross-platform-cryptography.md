@@ -18,7 +18,6 @@ The dependency on OS libraries also means that .NET apps can only use cryptograp
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Cryptography Model](cryptography-model.md) and [.NET Cryptographic Services](cryptographic-services.md).
 
-
 ## Hash algorithms
 
 All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries. While the various OS libraries differ in performance, they should be compatible.

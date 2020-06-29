@@ -122,7 +122,26 @@ sudo apt-get update; \
 
 ## Dependencies
 
-[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc1
+- libgssapi-krb5-2
+- libicu52 (for 8.x)
+- libicu57 (for 9.x)
+- libicu63 (for 10.x)
+- libicu67 (for 11.x)
+- libssl1.0.0 (for 8.x)
+- libssl1.1 (for 9.x-11.x)
+- libstdc++6
+- zlib1g
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+  > [!WARNING]
+  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
 ## Scripted install
 

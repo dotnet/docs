@@ -75,7 +75,7 @@ A given SDK supports a fixed set of frameworks, capped to the target framework o
 
 When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-runtime-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-runtime-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
-The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp3.0` in your project file, and `3.0.3` is the latest .NET runtime installed, the `3.0.3` runtime is used.
+The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp3.0` in your project file, and `3.0.2` is the latest .NET runtime installed, the `3.0.2` runtime is used.
 
 If no acceptable `3.0.*` version is found, a new `3.*` version is used. For example, if you specified `netcoreapp3.0` and only `3.1.0` is installed, the application runs using the `3.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application won't run.
 

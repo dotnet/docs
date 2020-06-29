@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Simple Binding"
+description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "simple binding [WPF], creating"

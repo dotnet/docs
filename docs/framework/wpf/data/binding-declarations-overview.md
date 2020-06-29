@@ -1,5 +1,6 @@
 ---
 title: "Binding Declarations Overview"
+description: Learn how to declare a binding in XAML for your application development in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

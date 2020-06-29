@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Property Change Notification"
+description: Enable your properties to automatically notify a binding source when the property value changes in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -134,7 +134,7 @@ namespace HowToStrings
             // constructing a string from a char array, prefix it with some additional characters
             char[] chars = { 'a', 'b', 'c', 'd', '\0' };
             int length = chars.Length + 2;
-            string result = string.Create (length, chars, (Span<char> strContent, char[] charArray) = >
+            string result = string.Create(length, chars, (Span<char> strContent, char[] charArray) =>
             {
 	            strContent[0] = '0';
 	            strContent[1] = '1';

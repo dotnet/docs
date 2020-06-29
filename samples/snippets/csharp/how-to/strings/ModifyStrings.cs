@@ -15,8 +15,6 @@ namespace HowToStrings
             RemoveText();
             ReplaceWithRegEx();
             ReplaceCharArray();
-
-            UnsafeSample();
         }
 
         private static void ReplaceCreatesNewString()

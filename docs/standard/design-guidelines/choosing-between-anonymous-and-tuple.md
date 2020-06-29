@@ -7,7 +7,7 @@ ms.technology: dotnet-standard
 
 # Choosing between anonymous and tuple types
 
-As a developer, choosing the appropriate type involves considering a types usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
+Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
 
 ## Usability and functionality
 
@@ -106,11 +106,11 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 
 ### Serialization
 
-One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../../csharp/programming-guide/concepts/serialization/index.md). With anonymous types, and tuple types it is not recommended to use them if you need to serialization. While it is possible to use them with serialization, it is not fully supported, and requires workarounds.
+One important consideration when choosing a type, is whether or not it will need to be serialized. Serialization is the process of converting the state of an object into a form that can be persisted or transported. For more information, see [serialization](../../csharp/programming-guide/concepts/serialization/index.md). When serialization is important, creating a `class` or `struct` is preferred over anonymous types or tuple types.
 
 ## Performance
 
-Performance is always a topic of discussion when referring to value types vs reference types, often leading to conversations of stack versus heap allocations. However, performance between these types is fairly similar with each other - in other words, performance differences are negligible. The micro-optimizations you might gain from choosing tuples over anonymous types is more often than not irrelevant.
+Performance between these types depends on the scenario. The major impact involves the tradeoff between allocations and copying. In most scenarios, the impact is small. When major impacts could arise, measurements should be taken to inform the decision.
 
 ## Conclusion
 

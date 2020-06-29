@@ -515,7 +515,7 @@ public async void btnDownload_Click(object sender, RoutedEventArgs e)
             Task.WhenAll(from url in urls select GetBitmapAsync(url));
         if (downloads == await Task.WhenAny(downloads, Task.Delay(3000)))
         {
-            foreach(var bmp in downloads) panel.AddImage(bmp);
+            foreach(var bmp in downloads.Result) panel.AddImage(bmp);
             status.Text = "Downloaded";
         }
         else

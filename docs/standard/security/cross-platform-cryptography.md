@@ -251,11 +251,11 @@ The types involved don't translate between platforms and should only be directly
 
 <sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
 
-### X.509 Certificates
+## X.509 Certificates
 
 The majority of support for X.509 certificates in .NET comes from OS libraries. To load a certificate into an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate> instance in .NET, the certificate must be loaded by the underlying OS library.
 
-### Reading a PKCS12/PFX
+### Read a PKCS12/PFX
 
 | Scenario                                     | Windows | Linux | macOS |
 |----------------------------------------------|---------|-------|-------|
@@ -266,7 +266,7 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, multiple private keys | ✔️     | ❌    | ✔️   |
 
-### Writing a PKCS12/PFX
+### Write a PKCS12/PFX
 
 | Scenario                                     | Windows | Linux | macOS |
 |----------------------------------------------|---------|-------|-------|
@@ -280,7 +280,7 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 
 macOS can't load certificate private keys without a keychain object, which requires writing to disk. Keychains are created automatically for PFX loading, and are deleted when no longer in use. Since the <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> option means that the private key should not be written to disk, asserting that flag on macOS results in a <xref:System.PlatformNotSupportedException>.
 
-### Writing a PKCS7 certificate collection
+### Write a PKCS7 certificate collection
 
 Windows and Linux both emit DER-encoded PKCS7 blobs. macOS emits indefinite-length-CER-encoded PKCS7 blobs.
 
@@ -292,53 +292,73 @@ On Linux, the <xref:System.Security.Cryptography.X509Certificates.X509Store> cla
 
 On macOS, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class is a projection of system trust decisions (read-only), user trust decisions (read-only), and user key storage (read-write).
 
-| Scenario                                         | Windows | Linux          | macOS                        |
-|--------------------------------------------------|---------|----------------|------------------------------|
-| Open CurrentUser\My (ReadOnly)                   | ✔️     | ✔️             | ✔️<sup>1</sup>              |
-| Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️             | ✔️<sup>1</sup>              |
-| Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️<sup>2</sup> | ✔️<sup>1</sup>              |
-| Open LocalMachine\My                             | ✔️     | ❌             | ✔️<sup>3</sup>              |
-| Open CurrentUser\Root (ReadOnly)                 | ✔️     | ✔️             | ✔️<sup>4</sup>              |
-| Open CurrentUser\Root (ReadWrite)                | ✔️     | ✔️             | ❌<sup>4</sup>               |
-| Open CurrentUser\Root (ExistingOnly)             | ✔️     | ⚠️             | ✔️<sup>4</sup> (if ReadOnly) |
-| Open LocalMachine\Root (ReadOnly)                | ✔️     | ✔️<sup>5</sup> | ✔️<sup>6</sup>              |
-| Open LocalMachine\Root (ReadWrite)               | ✔️     | ❌<sup>5</sup> | ❌<sup>6</sup>               |
-| Open LocalMachine\Root (ExistingOnly)            | ✔️     | ⚠️<sup>5</sup> | ✔️<sup>6</sup>  (if ReadOnly) |
-| Open CurrentUser\Disallowed (ReadOnly)           | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup>              |
-| Open CurrentUser\Disallowed (ReadWrite)          | ✔️     | ⚠️<sup>7</sup> | ❌<sup>8</sup>               |
-| Open CurrentUser\Disallowed (ExistingOnly)       | ✔️     | ⚠️<sup>7</sup> | ✔️<sup>8</sup> (if ReadOnly) |
-| Open LocalMachine\Disallowed (ReadOnly)          | ✔️     | ❌<sup>7</sup> | ✔️<sup>8</sup>              |
-| Open LocalMachine\Disallowed (ReadWrite)         | ✔️     | ❌<sup>7</sup> | ❌<sup>8</sup>               |
-| Open LocalMachine\Disallowed (ExistingOnly)      | ✔️     | ❌<sup>7</sup> | ✔️<sup>8</sup> (if ReadOnly) |
-| Open non-existent store (ExistingOnly)           | ❌     | ❌             | ❌                           |
-| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️             | ❌                           |
-| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌             | ❌                           |
+The following tables show which scenarios are supported in each platform. For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
 
-For unsupported scenarios (❌ in the table), a <xref:System.Security.Cryptography.CryptographicException> is thrown.
+#### The My store
 
-<sup>1</sup> On macOS, the CurrentUser\My store is the user's default keychain, which is login.keychain by default.
+| Scenario                                         | Windows | Linux | macOS |
+|--------------------------------------------------|---------|-------|-------|
+| Open CurrentUser\My (ReadOnly)                   | ✔️     | ✔️    | ✔️   |
+| Open CurrentUser\My (ReadWrite)                  | ✔️     | ✔️    | ✔️   |
+| Open CurrentUser\My (ExistingOnly)               | ✔️     | ⚠️    | ✔️   |
+| Open LocalMachine\My                             | ✔️     | ❌    | ✔️   |
 
-<sup>2</sup> On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
+On Linux, stores are created on first write, and no user stores exist by default, so opening `CurrentUser\My` with `ExistingOnly` may fail.
 
-<sup>3</sup> On macOS, the LocalMachine\My store is System.keychain.
+On macOS, the `CurrentUser\My` store is the user's default keychain, which is `login.keychain` by default. The `LocalMachine\My` store is `System.keychain`.
 
-<sup>4</sup> On macOS, the CurrentUser\Root store is an interpretation of the SecTrustSettings results for the user trust domain.
+#### The Root store
 
-<sup>5</sup> On Linux, the LocalMachine\Root store is an interpretation of the CA bundle in the default path for OpenSSL.
+| Scenario                              | Windows | Linux | macOS           |
+|---------------------------------------|---------|-------|-----------------|
+| Open CurrentUser\Root (ReadOnly)      | ✔️     | ✔️    | ✔️             |
+| Open CurrentUser\Root (ReadWrite)     | ✔️     | ✔️    | ❌              |
+| Open CurrentUser\Root (ExistingOnly)  | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
+| Open LocalMachine\Root (ReadOnly)     | ✔️     | ✔️    | ✔️             |
+| Open LocalMachine\Root (ReadWrite)    | ✔️     | ❌    | ❌              |
+| Open LocalMachine\Root (ExistingOnly) | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
 
-<sup>6</sup> On macOS, the LocalMachine\Root store is an interpretation of the SecTrustSettings results for the admin and system trust domains.
+On Linux, the `LocalMachine\Root` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
-<sup>7</sup> On Linux, the Disallowed store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the Disallowed store if it has already acquired contents.
+On macOS, the `CurrentUser\Root` store is an interpretation of the `SecTrustSettings` results for the user trust domain. The `LocalMachine\Root` store is an interpretation of the `SecTrustSettings` results for the admin and system trust domains.
 
-<sup>8</sup> On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
+#### The Intermediate store
 
-On Linux:
+| Scenario                                      | Windows | Linux | macOS           |
+|-----------------------------------------------|---------|-------|-----------------|
+| Open CurrentUser\Intermediate (ReadOnly)      | ✔️     | ✔️    | ✔️             |
+| Open CurrentUser\Intermediate (ReadWrite)     | ✔️     | ✔️    | ❌              |
+| Open CurrentUser\Intermediate (ExistingOnly)  | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
+| Open LocalMachine\Intermediate (ReadOnly)     | ✔️     | ✔️    | ✔️             |
+| Open LocalMachine\Intermediate (ReadWrite)    | ✔️     | ❌    | ❌              |
+| Open LocalMachine\Intermediate (ExistingOnly) | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
 
-* The LocalMachine\Intermediate store is an interpretation of the CA bundle in the default path for OpenSSL.
-* The CurrentUser\Intermediate store is used as a cache when downloading intermediate CAs by their Authority Information Access records on successful X509Chain builds.
+On Linux, the `CurrentUser\Intermediate` store is used as a cache when downloading intermediate CAs by their Authority Information Access records on successful X509Chain builds. The `LocalMachine\Intermediate` store is an interpretation of the CA bundle in the default path for OpenSSL.
 
-On macOS, custom store creation with the X509Store API is supported only for CurrentUser location. It will create a new keychain with no password in the user's keychain directory (~/Library/Keychains). To create a keychain with password, a P/Invoke to SecKeychainCreate could be used. Similarly, SecKeychainOpen could be used to open keychains
-in different locations. The resulting `IntPtr` can be passed to [`new X509Store(IntPtr)`](xref:System.Security.Cryptography.X509Certificates.X509Store.%23ctor(System.IntPtr)) to obtain a read/write-capable store (subject to the current user's permissions).
+#### The Disallowed store
+
+| Scenario                                    | Windows | Linux | macOS           |
+|---------------------------------------------|---------|-------|-----------------|
+| Open CurrentUser\Disallowed (ReadOnly)      | ✔️     | ⚠️    | ✔️             |
+| Open CurrentUser\Disallowed (ReadWrite)     | ✔️     | ⚠️    | ❌              |
+| Open CurrentUser\Disallowed (ExistingOnly)  | ✔️     | ⚠️    | ✔️ (if ReadOnly) |
+| Open LocalMachine\Disallowed (ReadOnly)     | ✔️     | ❌    | ✔️             |
+| Open LocalMachine\Disallowed (ReadWrite)    | ✔️     | ❌    | ❌              |
+| Open LocalMachine\Disallowed (ExistingOnly) | ✔️     | ❌    | ✔️ (if ReadOnly) |
+
+On Linux, the `Disallowed` store is not used in chain building, and attempting to add contents to it results in a <xref:System.Security.Cryptography.CryptographicException>. A <xref:System.Security.Cryptography.CryptographicException> is thrown when opening the `Disallowed` store if it has already acquired contents.
+
+On macOS, the CurrentUser\Disallowed and LocalMachine\Disallowed stores are interpretations of the appropriate SecTrustSettings results for certificates whose trust is set to Always Deny.
+
+#### Nonexistent store
+
+| Scenario                                         | Windows | Linux | macOS |
+|--------------------------------------------------|---------|-------|-------|
+| Open non-existent store (ExistingOnly)           | ❌     | ❌     | ❌    |
+| Open CurrentUser non-existent store (ReadWrite)  | ✔️     | ✔️     | ⚠️   |
+| Open LocalMachine non-existent store (ReadWrite) | ✔️     | ❌     | ❌    |
+
+On macOS, custom store creation with the X509Store API is supported only for `CurrentUser` location. It will create a new keychain with no password in the user's keychain directory (*~/Library/Keychains*). To create a keychain with password, a P/Invoke to `SecKeychainCreate` could be used. Similarly, `SecKeychainOpen` could be used to open keychains in different locations. The resulting `IntPtr` can be passed to [`new X509Store(IntPtr)`](xref:System.Security.Cryptography.X509Certificates.X509Store.%23ctor(System.IntPtr)) to obtain a read/write-capable store, subject to the current user's permissions.
 
 ### X509Chain
 
@@ -349,3 +369,4 @@ macOS doesn't support a user-initiated timeout on CRL/OCSP/AIA downloading, so `
 ## Additional resources
 
 [.NET Cryptography Model](cryptography-model.md)
+[.NET Cryptographic Services](cryptographic-services.md)

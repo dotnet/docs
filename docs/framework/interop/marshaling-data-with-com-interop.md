@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Data with COM Interop"
+description: See articles covering the marshaling of data with COM interop. The Tlbimp.exe and Tlbexp.exe tools convert between a COM type library and an interop assembly.
 ms.date: "09/07/2017"
 helpviewer_keywords: 
   - "COM interop, data marshaling"

@@ -1,5 +1,6 @@
 ---
 title: "Packaging a .NET Framework Assembly for COM"
+description: Package a .NET assembly for COM. Gather the list of types that COM applications can consume, versioning and deployment instructions, and the type library.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "exposing .NET Framework components to COM"

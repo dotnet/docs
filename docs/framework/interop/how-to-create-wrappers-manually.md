@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Wrappers Manually"
+description: Create wrappers of COM types manually. Use an existing IDL file or type library, or create managed declarations and export the assembly to a type library.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wrappers, creating manually"

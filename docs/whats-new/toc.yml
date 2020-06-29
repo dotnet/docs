@@ -1,20 +1,16 @@
-- name: What's new
-  href: index.yml
-  expanded: true
+name: What's new
+href: index.yml
+expanded: true
+items:
+- name: 2020
   items:
-    - name: 2020
-      items:
-      - name: May
-        href: dotnet-2020-05.md
-      - name: April
-        href: dotnet-2020-04.md
-      - name: March
-        href: dotnet-2020-03.md
-      - name: February
-        href: dotnet-2020-02.md
-      - name: January
-        href: dotnet-2020-01.md
-    - name: 2019
-      items:
-      - name: December
-        href: 2019-12.md
+  - name: May
+    href: dotnet-2020-05.md
+  - name: April
+    href: dotnet-2020-04.md
+  - name: March
+    href: dotnet-2020-03.md
+  - name: February
+    href: dotnet-2020-02.md
+  - name: January
+    href: dotnet-2020-01.md

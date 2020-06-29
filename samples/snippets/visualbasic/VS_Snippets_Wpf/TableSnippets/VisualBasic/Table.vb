@@ -6,20 +6,20 @@ Imports System.Threading
 
 Namespace Table_Demo
 
-	Public Class MyApp 
-                 Inherits System.Windows.Application
+    Public Class MyApp
+        Inherits System.Windows.Application
 
         Dim flowDoc As New FlowDocument()
         Dim table1 as New Table()
-		Dim mainWindow as New Window()
+        Dim mainWindow as New Window()
 
         Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
             MyBase.OnStartup(e)
             CreateAndShowMainWindow()
         End Sub
 
-		Private Sub CreateAndShowMainWindow()
-        
+        Private Sub CreateAndShowMainWindow()
+
             ' Create the application's main window
             mainWindow = new System.Windows.Window()
 
@@ -49,9 +49,9 @@ Namespace Table_Demo
 
                 ' Set alternating background colors for the middle colums.
                 If x Mod 2 = 0 Then
-                  table1.Columns(x).Background = Brushes.Beige
+                    table1.Columns(x).Background = Brushes.Beige
                 Else
-                  table1.Columns(x).Background = Brushes.LightSteelBlue
+                    table1.Columns(x).Background = Brushes.LightSteelBlue
                 End If
             Next x
 
@@ -118,7 +118,7 @@ Namespace Table_Demo
             currentRow.Cells(0).FontWeight = FontWeights.Bold
             ' </Snippet_TableAddDataRow>
 
-            
+
 
             ' <Snippet_TableAddFooterRow>
             table1.RowGroups(0).Rows.Add(new TableRow())
@@ -138,7 +138,7 @@ Namespace Table_Demo
             mainWindow.Content = flowDoc
             mainWindow.Show()
         End Sub
-	End Class
+    End Class
 
     ' Starts the application.
     Public NotInheritable Class EntryClass

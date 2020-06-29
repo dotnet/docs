@@ -1,4 +1,4 @@
-﻿ '************************************************************************************************
+﻿'************************************************************************************************
 ' *
 ' * File: ListItemPattern.cs
 ' *
@@ -36,23 +36,23 @@ Class ListItemPattern
     Private myListItem As MyListItem
     Private parentList As ParentList
     Private selectedItems As ArrayList
-    
-    
+
+
     ''' <summary>
     ''' Constructor.
     ''' </summary>
     ''' <param name="listItem">Item for which this pattern is implemented.</param>
     ''' <param name="parent">List that contains the item.</param>
-    Public Sub New(ByVal listItem As MyListItem, ByVal parent As ParentList) 
+    Public Sub New(ByVal listItem As MyListItem, ByVal parent As ParentList)
         myListItem = listItem
         parentList = parent
         selectedItems = New ArrayList()
-    
+
     End Sub
-    
-    #Region "ISelectionItemProvider"
-    
-    
+
+#Region "ISelectionItemProvider"
+
+
     ''' <summary>
     ''' Adds an item to the selection in list boxes that support multiple selection.
     ''' </summary>

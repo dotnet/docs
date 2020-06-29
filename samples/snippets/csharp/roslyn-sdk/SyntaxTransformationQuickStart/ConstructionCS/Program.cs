@@ -3,11 +3,6 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-// <SnippetStaticUsings>
-using  Microsoft.CodeAnalysis.CSharp;
-using  System;
-// </SnippetStaticUsings>
-
 namespace ConstructionCS
 {
     class Program
@@ -39,12 +34,12 @@ namespace HelloWorld
             // </SnippetCreateIdentifierName>
 
             // <SnippetCreateQualifiedIdentifierName>
-            name = QualifiedName(name, SyntaxFactory.IdentifierName("Collections"));
+            name = SyntaxFactory.QualifiedName(name, SyntaxFactory.IdentifierName("Collections"));
             Console.WriteLine(name.ToString());
             // </SnippetCreateQualifiedIdentifierName>
 
             // <SnippetCreateFullNamespace>
-            name = QualifiedName(name, SyntaxFactory.IdentifierName("Generic"));
+            name = SyntaxFactory.QualifiedName(name, SyntaxFactory.IdentifierName("Generic"));
             Console.WriteLine(name.ToString());
             // </SnippetCreateFullNamespace>
 

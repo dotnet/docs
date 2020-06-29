@@ -6,12 +6,12 @@ Imports Microsoft.VisualBasic.DateAndTime
 
 Public Class Widget
     '<snippet1>
-    Public Event PercentDone(ByVal Percent As Single, 
+    Public Event PercentDone(ByVal Percent As Single,
                              ByRef Cancel As Boolean)
     '</snippet1>
 
     '<snippet3>
-    Public Sub LongTask(ByVal Duration As Single, 
+    Public Sub LongTask(ByVal Duration As Single,
                         ByVal MinimumInterval As Single)
         Dim Threshold As Single
         Dim Start As Single
@@ -26,7 +26,7 @@ Public Class Widget
             ' In a real application, some unit of work would
             ' be done here each time through the loop.
             If CSng(Timer) > (Start + Threshold) Then
-                RaiseEvent PercentDone( 
+                RaiseEvent PercentDone(
                 Threshold / Duration, blnCancel)
                 ' Check to see if the operation was canceled.
                 If blnCancel Then Exit Sub

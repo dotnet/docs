@@ -84,8 +84,8 @@ This section includes the following subsections:
 * [ECDH](#ecdh)
 * [DSA](#dsa)
 * [X.509 Certificates](#x509-certificates)
-* [Reading a PKCS12/PFX](#reading-a-pkcs12pfx)
-* [Writing a PKCS12/PFX](#writing-a-pkcs12pfx)
+* [Reading a PKCS12/PFX](#read-a-pkcs12pfx)
+* [Writing a PKCS12/PFX](#write-a-pkcs12pfx)
 * [X509Store](#x509store)
 * [X509Chain](#x509chain)
 

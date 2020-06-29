@@ -170,6 +170,6 @@ You can configure how to use the custom target. Since it's an MSBuild target, it
 
 ## See also
 
-- [Install .NET Core](../install/index.md)
+- [Install .NET Core](../install/index.yml)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)
 - [Package custom MSBuild targets and props with NuGet](/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package)

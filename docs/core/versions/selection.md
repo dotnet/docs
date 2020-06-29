@@ -112,5 +112,5 @@ The `RuntimeFrameworkVersion` element  overrides the default version policy. For
 
 ## See also
 
-- [Download and install .NET Core](../install/index.md).
+- [Download and install .NET Core](../install/index.yml).
 - [How to remove the .NET Core Runtime and SDK](../install/remove-runtime-sdk-versions.md).

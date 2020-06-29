@@ -105,7 +105,7 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 As an alternative to the macOS installers for .NET Core, you can download and manually install the SDK.
 
-To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
+To extract the SDK and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands.
 
 <!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too -->
 

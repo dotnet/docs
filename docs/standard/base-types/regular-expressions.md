@@ -1,7 +1,7 @@
 ---
-title: ".NET Framework Regular Expressions"
+title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
-ms.date: "03/30/2017"
+ms.date: "06/30/2020"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -61,6 +61,8 @@ For more information about the regular expression language, see [Regular Express
 ## Regular expression examples
 
 The <xref:System.String> class includes a number of string search and replacement methods that you can use when you want to locate literal strings in a larger string. Regular expressions are most useful either when you want to locate one of several substrings in a larger string, or when you want to identify patterns in a string, as the following examples illustrate.
+
+[!INCLUDE [regex](../../../includes/regex.md)]
 
 > [!TIP]
 > The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.

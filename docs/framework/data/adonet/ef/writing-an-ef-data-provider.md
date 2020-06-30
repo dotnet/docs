@@ -5,6 +5,9 @@ ms.assetid: 092e88c4-a301-453a-b5c3-5740c6575a9f
 ---
 # Writing an Entity Framework Data Provider
 This section discusses how to write an Entity Framework provider to support a data source other than SQL Server. The Entity Framework includes a provider that supports SQL Server.  
+
+> [!NOTE]
+> This document refers to an old version of Entity Framework that is no longer updated with new features. The current version is called [Entity Framework Core](https://docs.microsoft.com/ef), or EF Core. Read this [EF Core article](https://docs.microsoft.com/ef/core/providers/writing-a-provider) to learn how to write an EF Core provider.
   
 ## Introducing the Entity Framework Provider Model  
  The Entity Framework is database independent, and you can write a provider by using the ADO.NET Provider Model to connect to a diverse set of data sources.  

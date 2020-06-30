@@ -118,7 +118,7 @@ The training and testing images are located in the assets folders that you'll do
 
 1. Install the **Microsoft.ML NuGet Package**:
 
-    [!INCLUDE [mlnet-current-nuget-version](../../includes/mlnet-current-nuget-version.md)]
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
     * In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     * Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.

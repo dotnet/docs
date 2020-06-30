@@ -1,19 +1,20 @@
 
-<!-- Note, this content is copied in ../macos.md. Any fixes should be applied there too -->
+<!-- Note, this content is copied in ../macos.md. Any fixes should be applied there too, though content may be different -->
 
-Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
+As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's generally better to use a package manager.
+
+If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 preview downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ❌ [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- ❌ [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET Core and then ensure .NET Core is in PATH.
 
 To extract the runtime and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
 
-**Use the following command to extract the runtime.**:
+**Use the following command to extract the runtime**:
 
 ```bash
 mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C "$HOME/dotnet"

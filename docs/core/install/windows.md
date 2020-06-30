@@ -14,7 +14,7 @@ ms.date: 06/22/2020
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-In this article, you'll learn how to install .NET Core on Windows. .NET Core is comprised of the runtime and the SDK. The runtime is used to run a .NET Core app and may or may not be included with the app. The SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
+In this article, you'll learn how to install .NET Core on Windows. .NET Core is made up of the runtime and the SDK. The runtime is used to run a .NET Core app and may or may not be included with the app. The SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 The latest version of .NET Core is 3.1.
 
@@ -24,7 +24,7 @@ The latest version of .NET Core is 3.1.
 
 The following table is a list of currently supported .NET Core releases and the versions of Windows they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Windows reaches end-of-life](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
-Windows 10 versions end of service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
+Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
 - A ✔️ indicates that the version of Windows or .NET Core is still supported.
 - A ❌ indicates that the version of Windows or .NET Core isn't supported on that Windows release.
@@ -188,7 +188,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 ```
 
-Install the SDK by omitting the `-Runtime` switch. The `-Channel` switch is set in this example to `Current` which installs the latest supported version.
+Install the SDK by omitting the `-Runtime` switch. The `-Channel` switch is set in this example to `Current`, which installs the latest supported version.
 
 ```powershell
 dotnet-install.ps1 -Channel Current
@@ -238,30 +238,28 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 ## Download and manually install
 
-To extract the runtime and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
+As an alternative to the Windows installers for .NET Core, you can download and manually install the SDK or runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
 
 Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 preview downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ❌ [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- ❌ [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
+
+Create a directory to extract .NET to, for example `%USERPROFILE%\dotnet`. Then, extract the downloaded zip file into that directory.
 
 By default, .NET Core CLI commands and apps won't use .NET Core installed in this way and you must explicitly choose to use it. To do so, change the environment variables with which an application is started:
 
 ```console
 set DOTNET_ROOT=%USERPROFILE%\dotnet
 set PATH=%USERPROFILE%\dotnet;%PATH%
+set DOTNET_MULTILEVEL_LOOKUP=0
 ```
 
 This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
 
-Even when these environment variables are set, .NET Core still considers the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which the installers use. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
-
-```console
-set DOTNET_MULTILEVEL_LOOKUP=0
-```
+When `DOTNET_MULTILEVEL_LOOKUP` is set to `0`, .NET Core ignores any globally installed .NET Core version. Remove that environment setting to let .NET Core consider the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which is where the installers install .NET Core.
 
 ## Docker
 

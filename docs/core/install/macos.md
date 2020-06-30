@@ -14,7 +14,7 @@ ms.date: 06/25/2020
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-In this article, you'll learn how to install .NET Core on macOS. .NET Core is comprised of the runtime and the SDK. The runtime is used to run a .NET Core app and may or may not be included with the app. The SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
+In this article, you'll learn how to install .NET Core on macOS. .NET Core is made up of the runtime and the SDK. The runtime is used to run a .NET Core app and may or may not be included with the app. The SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 The latest version of .NET Core is 3.1.
 
@@ -103,19 +103,16 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 ## Download and manually install
 
-As an alternative to the macOS installers for .NET Core, you can download and manually install the SDK.
+<!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-To extract the SDK and make the .NET Core CLI commands available at the terminal, first download a .NET Core binary release. Then, open a terminal and run the following commands.
+As an alternative to the macOS installers for .NET Core, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
 
-<!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too -->
-
-Both .NET Core SDK and .NET Core Runtime can be manually installed after they've been downloaded. If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
+If you install .NET Core SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 
 - ✔️ [.NET 5.0 preview downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ❌ [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- ❌ [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
 
 Next, extract the downloaded file and use the `export` command to set variables used by .NET Core and then ensure .NET Core is in PATH.
 

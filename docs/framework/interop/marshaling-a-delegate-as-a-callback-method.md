@@ -1,5 +1,6 @@
 ---
 title: "Marshaling a Delegate as a Callback Method"
+description: Learn to marshal a delegate as a callback method. See an example of how to pass delegates to an unmanaged function that's expecting function pointers.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

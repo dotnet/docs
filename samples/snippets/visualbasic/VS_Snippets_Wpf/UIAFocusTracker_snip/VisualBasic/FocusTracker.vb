@@ -49,12 +49,12 @@ Imports System.Diagnostics
 
 
 Class Program
-    
-    Public Shared Sub Main(ByVal args() As String) 
+
+    Public Shared Sub Main(ByVal args() As String)
         Dim reader As New Reader()
         Console.ReadLine()
         Automation.RemoveAllEventHandlers()
-    
+
     End Sub
 End Class
 
@@ -66,44 +66,44 @@ Class Reader
     Private savedRuntimeIds As ArrayList
     'StructureChangedEventHandler onStructureChanged;
     Private onWindowClosed As AutomationEventHandler = Nothing
-    
-    
+
+
     ''' <summary>
     ''' Constructor.
     ''' </summary>
-    Public Sub New() 
+    Public Sub New()
         ' Get UI Automation root element.
         elementRoot = AutomationElement.RootElement
-        
+
         ' Make a list of runtime IDs of top-level windows.
         ' An alternative would be to keep a list of process IDs. However, it is somewhat more difficult
         ' to track the termination of processes, because the only information available from a 
         ' window-closed event is the runtime ID.
         savedRuntimeIds = New ArrayList()
         Dim elementCollection As AutomationElementCollection = elementRoot.FindAll(TreeScope.Children, Condition.TrueCondition)
-        
+
         ' Add each application window to the list and subscribe it to the WindowClosedEvent handler.
         onWindowClosed = New AutomationEventHandler(AddressOf WindowClosedHandler)
         Dim element As AutomationElement
-        For Each element In  elementCollection
+        For Each element In elementCollection
             Dim rid As Integer() = CType(element.GetCurrentPropertyValue(AutomationElement.RuntimeIdProperty), Integer())
             If RuntimeIdListed(rid, savedRuntimeIds) < 0 Then
                 savedRuntimeIds.Add(rid)
                 AddToWindowHandler(element)
             End If
         Next element
-        
+
         ' Add other event handlers.
         ' <Snippet104>
         ' elementRoot is an AutomationElement.
         Automation.AddStructureChangedEventHandler(elementRoot, TreeScope.Children, New StructureChangedEventHandler(AddressOf OnStructureChanged))
         ' </Snippet104>
         Automation.AddAutomationFocusChangedEventHandler(New AutomationFocusChangedEventHandler(AddressOf OnFocusChanged))
-    
+
     End Sub
-    
-    
-    
+
+
+
     ' <Snippet106>
     Private Sub OnFocusChanged(ByVal src As Object, ByVal e As AutomationFocusChangedEventArgs)
         Dim elementFocused As AutomationElement = DirectCast(src, AutomationElement)
@@ -125,7 +125,7 @@ Class Reader
     ''' In the debugger, you can ignore it and continue execution. The exception does not cause
     ''' a break when the executable is being run.
     ''' </remarks>
-    Private Sub OnStructureChanged(ByVal sender As Object, ByVal e As StructureChangedEventArgs) 
+    Private Sub OnStructureChanged(ByVal sender As Object, ByVal e As StructureChangedEventArgs)
 
         Dim element As AutomationElement = DirectCast(sender, AutomationElement)
         If e.StructureChangeType = StructureChangeType.ChildAdded Then
@@ -139,7 +139,7 @@ Class Reader
                 savedRuntimeIds.Add(rid)
             End If
         End If
-     
+
     End Sub
     ' </Snippet105>
 
@@ -152,7 +152,7 @@ Class Reader
     ''' <remarks>
     ''' runtimteIds is an ArrayList that contains the runtime IDs of all top-level windows.
     ''' </remarks>
-    Private Sub WindowClosedHandler(ByVal sender As Object, ByVal e As AutomationEventArgs) 
+    Private Sub WindowClosedHandler(ByVal sender As Object, ByVal e As AutomationEventArgs)
         Dim windowEventArgs As WindowClosedEventArgs = CType(e, WindowClosedEventArgs)
         Dim runtimeIdentifiers As Integer() = windowEventArgs.GetRuntimeId()
         Dim index As Integer = RuntimeIdListed(runtimeIdentifiers, savedRuntimeIds)
@@ -160,10 +160,10 @@ Class Reader
             savedRuntimeIds.RemoveAt(index)
             Console.WriteLine("Window closed.")
         End If
-    
+
     End Sub
-    
-    
+
+
     ''' <summary>
     ''' Ascertains whether the window is in the list.
     ''' </summary>
@@ -173,7 +173,7 @@ Class Reader
     ''' runtimteIds is an ArrayList that contains the runtime IDs of all top-level windows.
     ''' </remarks>
     ' <Snippet103> 
-    Private Function RuntimeIdListed(ByVal runtimeId() As Integer, ByVal runtimeIds As ArrayList) As Integer 
+    Private Function RuntimeIdListed(ByVal runtimeId() As Integer, ByVal runtimeIds As ArrayList) As Integer
         Dim x As Integer
         For x = 0 To runtimeIds.Count - 1
             Dim listedId As Integer() = CType(runtimeIds(x), Integer())
@@ -181,14 +181,14 @@ Class Reader
                 Return x
             End If
         Next x
-        Return - 1
-    
+        Return -1
+
     End Function 'RuntimeIdListed
-    
+
     ' </Snippet103>
 
     ' </Snippet101>        
-    
+
     ''' <summary>
     ''' Gets the caption of a window.
     ''' </summary>
@@ -225,7 +225,7 @@ Class Reader
     ''' </summary>
     ''' <param name="element">The contained element.</param>
     ''' <returns>The containing top-level window element.</returns>
-    Private Function GetTopLevelWindow(ByVal element As AutomationElement) As AutomationElement 
+    Private Function GetTopLevelWindow(ByVal element As AutomationElement) As AutomationElement
         Dim walker As TreeWalker = TreeWalker.ControlViewWalker
         Dim elementParent As AutomationElement
         Dim node As AutomationElement = element
@@ -240,7 +240,7 @@ Class Reader
             node = elementParent
         Loop While True
         Return node
-    
+
     End Function 'GetTopLevelWindow
 End Class
 ' </Snippet102>

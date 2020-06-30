@@ -196,16 +196,17 @@ sudo apt-get update; \
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-- liblttng-ust0
-- libcurl3 (for 14.x and 16.x)
-- libcurl4 (for 18.x)
-- libssl1.0.0
-- libkrb5-3
-- zlib1g
+- libc6
+- libgcc1
+- libgssapi-krb5-2
 - libicu52 (for 14.x)
 - libicu55 (for 16.x)
-- libicu57 (for 17.x)
 - libicu60 (for 18.x)
+- libicu66 (for 20.x)
+- libssl1.0.0 (for 14.x, 16.x)
+- libssl1.1 (for 18.x, 20.x)
+- libstdc++6
+- zlib1g
 
 For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
 

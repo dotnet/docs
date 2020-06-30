@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze review sentiment using a TensorFlow model'
 description: This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
-ms.date: 06/16/2020
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model.
@@ -34,6 +34,8 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 2. Create a directory named *Data* in your project to save your data set files.
 
 3. Install the **Microsoft.ML NuGet Package**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../includes/mlnet-current-nuget-version.md)]
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**, **Microsoft.ML.SampleUtils** and **SciSharp.TensorFlow.Redist**.
 

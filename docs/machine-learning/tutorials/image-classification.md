@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: ML.NET image classification model from TensorFlow'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
-ms.date: 06/16/2020
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to use a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
@@ -117,6 +117,8 @@ The training and testing images are located in the assets folders that you'll do
 1. Create a **.NET Core Console Application** called "TransferLearningTF".
 
 1. Install the **Microsoft.ML NuGet Package**:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../includes/mlnet-current-nuget-version.md)]
 
     * In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     * Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.

@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 12/12/2019
+ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -77,7 +77,10 @@ The pretrained model used in this tutorial is the 101-layer variant of the Resid
 Now that you have a general understanding of transfer learning and the Image Classification API, it's time to build the application.
 
 1. Create a **C# .NET Core Console Application** called "DeepLearning_ImageClassification_Binary".
-1. Install the **Microsoft.ML** version **1.4.0** NuGet Package:
+1. Install the **Microsoft.ML** NuGet Package:
+
+    [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
+
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.
     1. Select the **Browse** tab.
@@ -85,7 +88,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
     1. Search for **Microsoft.ML**.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for the **Microsoft.ML.Vision** version **1.4.0**, **SciSharp.TensorFlow.Redist** version **1.15.0**, and **Microsoft.ML.ImageAnalytics** version **1.4.0** NuGet packages.
+    1. Repeat these steps for the **Microsoft.ML.Vision**, **SciSharp.TensorFlow.Redist**, and **Microsoft.ML.ImageAnalytics** NuGet packages.
 
 ### Prepare and understand the data
 

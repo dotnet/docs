@@ -14,7 +14,7 @@ This article teaches you how to check which versions of the .NET Core runtime an
 
 Installing an SDK installs the corresponding runtime.
 
-If any command in this article fails, you don't have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
+If any command in this article fails, you don't have the runtime or SDK installed. For more information, see the install articles for [Windows](windows.md), [macOS](macos.md), or [Linux](linux.md).
 
 ## Check SDK versions
 

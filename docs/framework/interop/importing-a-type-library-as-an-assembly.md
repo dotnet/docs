@@ -1,5 +1,6 @@
 ---
 title: "Importing a Type Library as an Assembly"
+description: Import a type library, which contains COM type definitions, as an assembly. Learn ways to create metadata from a type library, resulting in an interop assembly.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "importing type library"

@@ -1,5 +1,6 @@
 ---
 title: Windows overview
+description: Get acquainted with the basics of creating and managing windows for standalone applications in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

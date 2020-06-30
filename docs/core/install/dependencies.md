@@ -241,16 +241,17 @@ Based on your linux distribution, you may need to install additional dependencie
 
 Ubuntu distributions require the following libraries to be installed:
 
-- liblttng-ust0
-- libcurl3 (for 14.x and 16.x)
-- libcurl4 (for 18.x)
-- libssl1.0.0
-- libkrb5-3
-- zlib1g
+- libc6
+- libgcc1
+- libgssapi-krb5-2
 - libicu52 (for 14.x)
 - libicu55 (for 16.x)
-- libicu57 (for 17.x)
 - libicu60 (for 18.x)
+- libicu66 (for 20.x)
+- libssl1.0.0 (for 14.x, 16.x)
+- libssl1.1 (for 18.x, 20.x)
+- libstdc++6
+- zlib1g
 
 For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
 
@@ -265,19 +266,11 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you also need 
 
 CentOS distributions require the following libraries installed:
 
-- lttng-ust
-- libcurl
 - openssl-libs
 - krb5-libs
 - libicu
-- zlib
 
 Fedora users: If your OpenSSL's version >= 1.1, you'll need to install **compat-openssl10**.
-
-For .NET Core 2.0, the following dependencies are also required:
-
-- libunwind
-- libuuid
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
@@ -296,12 +289,10 @@ Alpine distributions require the following libraries to be installed:
 
 - icu-libs (this is not needed if globalization is disabled)
 - krb5-libs
-- libcurl
+- libgcc
 - libintl
 - libssl1.1 (for Alpine 3.9 or later) or libssl1.0 (for older ones)
 - libstdc++
-- lttng-ust
-- numactl (optional, useful only for devices with NUMA enabled)
 - zlib
 
 For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:

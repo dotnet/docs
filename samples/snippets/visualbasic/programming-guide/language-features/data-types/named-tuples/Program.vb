@@ -1,9 +1,9 @@
 ﻿
 Module Program
     Sub Main()
-       CallExplicitlyNamed()
-       Console.WriteLine()
-       CallImplicitlyNamed()
+        CallExplicitlyNamed()
+        Console.WriteLine()
+        CallImplicitlyNamed()
     End Sub
 
     Private Sub CallExplicitlyNamed()
@@ -23,8 +23,8 @@ Module Program
         Const state As String = "MI"
         Const stateName As String = "Michigan"
         Const capital As String = "Lansing"
-        Dim stateInfo = ( state, stateName, capital )
-        Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.State}, Capital {stateInfo.capital}")   
+        Dim stateInfo = (state, stateName, capital)
+        Console.WriteLine($"{stateInfo.stateName}: 2-letter code: {stateInfo.State}, Capital {stateInfo.capital}")
         ' The example displays the following output:
         '      Michigan: 2-letter code: MI, Capital Lansing
         ' </Snippet2>

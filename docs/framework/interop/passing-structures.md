@@ -1,5 +1,6 @@
 ---
 title: "Passing Structures"
+description: Understand how to pass structures and classes to unmanaged functions. Learn about the StructLayoutAttribute attribute, which you use to define formatted types.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

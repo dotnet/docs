@@ -36,7 +36,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 2. Create a directory named *Data* in your project to save your data set files.
 
 3. Install the **Microsoft.ML NuGet Package**:
-    
+
     [!INCLUDE [mlnet-current-nuget-version](../../includes/mlnet-current-nuget-version.md)]
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose.

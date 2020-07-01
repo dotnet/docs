@@ -253,7 +253,7 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 | One certificate, with private key            | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, no private keys       | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, multiple private keys | ✔️     | ❌\*  | ✔️   |
+| Multiple certificates, multiple private keys | ✔️     | ⚠️\*  | ✔️   |
 
 \* Available in .NET 5 preview releases.
 
@@ -261,13 +261,13 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 
 | Scenario                                     | Windows | Linux | macOS |
 |----------------------------------------------|---------|-------|-------|
-| Empty                                        | ✔️     | ✔️    | ❌\* |
-| One certificate, no private key              | ✔️     | ✔️    | ❌\* |
+| Empty                                        | ✔️     | ✔️    | ⚠️\* |
+| One certificate, no private key              | ✔️     | ✔️    | ⚠️\* |
 | One certificate, with private key            | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, no private keys       | ✔️     | ✔️    | ❌\* |
+| Multiple certificates, no private keys       | ✔️     | ✔️    | ⚠️\* |
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, multiple private keys | ✔️     | ❌\*  | ✔️   |
-| Ephemeral loading                            | ✔️     | ✔️    | ❌\* |
+| Multiple certificates, multiple private keys | ✔️     | ⚠️\*  | ✔️   |
+| Ephemeral loading                            | ✔️     | ✔️    | ⚠️\* |
 
 * Available in .NET 5 preview releases.
 

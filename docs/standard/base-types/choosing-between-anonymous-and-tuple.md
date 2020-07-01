@@ -120,6 +120,5 @@ As a developer choosing between tuples and anonymous types, there are several fa
 
 - [Anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Expression trees](../../csharp/expression-trees.md)
-- [Framework design guidelines](index.md)
 - [Tuple types](../../csharp/tuples.md)
-- [Type design guidelines](type.md)
+- [Type design guidelines](../design-guidelines/type.md)

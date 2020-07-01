@@ -357,5 +357,5 @@ macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation Li
 
 ## Additional resources
 
-[.NET Cryptography Model](cryptography-model.md)
-[.NET Cryptographic Services](cryptographic-services.md)
+* [.NET Cryptography Model](cryptography-model.md)
+* [.NET Cryptographic Services](cryptographic-services.md)

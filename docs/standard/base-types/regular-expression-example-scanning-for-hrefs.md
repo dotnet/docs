@@ -1,7 +1,7 @@
 ---
 title: "Regular Expression Example: Scanning for HREFs"
 description: See an example of regular expressions in .NET. The example searches an input string and displays all href attribute values and their locations.
-ms.date: "03/30/2017"
+ms.date: "06/30/2020"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -17,8 +17,10 @@ ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
 ---
 # Regular Expression Example: Scanning for HREFs
 The following example searches an input string and displays all the href="…" values and their locations in the string.  
-  
-## The Regex Object  
+
+[!INCLUDE [regex](../../../includes/regex.md)]
+
+## The Regex Object
  Because the `DumpHRefs` method can be called multiple times from user code, it uses the `static` (`Shared` in Visual Basic) <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method. This enables the regular expression engine to cache the regular expression and avoids the overhead of instantiating a new <xref:System.Text.RegularExpressions.Regex> object each time the method is called. A <xref:System.Text.RegularExpressions.Match> object is then used to iterate through all matches in the string.  
   
  [!code-csharp[RegularExpressions.Examples.HREF#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.HREF/cs/example.cs#1)]

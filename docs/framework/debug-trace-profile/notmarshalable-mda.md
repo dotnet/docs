@@ -1,5 +1,6 @@
 ---
 title: "notMarshalable MDA"
+description: Review the notMarshalable managed debugging assistant, which may activate if calls aren't serviced or occur in the wrong context for COM interface pointers.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), interface pointer not marshalable"

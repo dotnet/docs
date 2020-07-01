@@ -73,7 +73,7 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 
 * Tag Sizes
 
-  The <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12,, 13, 14, 15, and 16-byte) tags.
+  The <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags.
 
 ## Asymmetric cryptography
 

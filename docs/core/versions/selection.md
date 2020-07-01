@@ -75,13 +75,13 @@ A given SDK supports a fixed set of frameworks, capped to the target framework o
 
 When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-runtime-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-runtime-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
-The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp3.0` in your project file, and `3.0.4` is the latest .NET runtime installed, the `3.0.4` runtime is used.
+The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp3.0` in your project file, and `3.0.2` is the latest .NET runtime installed, the `3.0.2` runtime is used.
 
 If no acceptable `3.0.*` version is found, a new `3.*` version is used. For example, if you specified `netcoreapp3.0` and only `3.1.0` is installed, the application runs using the `3.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application won't run.
 
 A few usage examples demonstrate the behavior, if you target 3.0:
 
-- ✔️ 3.0 is specified. 3.0.5 is the highest patch version installed. 3.0.5 is used.
+- ✔️ 3.0 is specified. 3.0.3 is the highest patch version installed. 3.0.3 is used.
 - ❌ 3.0 is specified. No 3.0.* versions are installed. 2.1.1 is the highest runtime installed. An error message is displayed.
 - ✔️ 3.0 is specified. No 3.0.* versions are installed. 3.1.0 is the highest runtime version installed. 3.1.0 is used.
 - ❌ 2.0 is specified. No 2.x versions are installed. 3.0.0 is the highest runtime installed. An error message is displayed.
@@ -90,27 +90,27 @@ Minor version roll-forward has one side-effect that may affect end users. Consid
 
 1. The application specifies that 3.0 is required.
 2. When run, version 3.0.* is not installed, however, 3.1.0 is. Version 3.1.0 will be used.
-3. Later, the user installs 3.0.5 and runs the application again, 3.0.5 will now be used.
+3. Later, the user installs 3.0.3 and runs the application again, 3.0.3 will now be used.
 
-It's possible that 3.0.5 and 3.1.0 behave differently, particularly for scenarios like serializing binary data.
+It's possible that 3.0.3 and 3.1.0 behave differently, particularly for scenarios like serializing binary data.
 
 ## Self-contained deployments include the selected runtime
 
 You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET Core runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
-The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 3.0.4 if it is the latest patch version in the .NET Core 3.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
+The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 3.0.3 if it is the latest patch version in the .NET Core 3.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
 It's an error if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET Core applications.
 
 Self-contained deployments may require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
 
 ``` xml
-<RuntimeFrameworkVersion>3.0.4</RuntimeFrameworkVersion>
+<RuntimeFrameworkVersion>3.0.3</RuntimeFrameworkVersion>
 ```
 
 The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework-dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.
 
 ## See also
 
-- [Download and install .NET Core](../install/index.md).
+- [Download and install .NET Core](../install/index.yml).
 - [How to remove the .NET Core Runtime and SDK](../install/remove-runtime-sdk-versions.md).

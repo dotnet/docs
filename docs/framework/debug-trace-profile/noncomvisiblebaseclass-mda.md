@@ -1,5 +1,6 @@
 ---
 title: "nonComVisibleBaseClass MDA"
+description: See the nonComVisibleBaseClass managed debugging assistant (MDA), which is invoked on QueryInterface calls from native code failing with COR_E_INVALIDOPERATION.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "visible classes"

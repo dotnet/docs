@@ -1,7 +1,7 @@
 ---
 title: Choosing between anonymous and tuple types
-description: Learn how to decide whether to design a type as a class, or to design a type as a struct.
-ms.date: 06/26/2020
+description: Learn when it's appropriate to choose between anonymous types, and tuple type.
+ms.date: 06/29/2020
 ms.technology: dotnet-standard
 ---
 

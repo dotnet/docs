@@ -1,6 +1,6 @@
 ---
 title: "How to: Animate a Property by Using a Storyboard"
-description: Enliven presentations with animations and storyboards for properties in Windows Presentation Foundation (WPF). 
+description: Enliven your user interface with animations and storyboards for properties in Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -253,19 +253,23 @@ The majority of support for X.509 certificates in .NET comes from OS libraries. 
 | One certificate, with private key            | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, no private keys       | ✔️     | ✔️    | ✔️   |
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, multiple private keys | ✔️     | ❌    | ✔️   |
+| Multiple certificates, multiple private keys | ✔️     | ❌\*  | ✔️   |
+
+\* Available in .NET 5 preview releases.
 
 ### Write a PKCS12/PFX
 
 | Scenario                                     | Windows | Linux | macOS |
 |----------------------------------------------|---------|-------|-------|
-| Empty                                        | ✔️     | ✔️    | ❌   |
-| One certificate, no private key              | ✔️     | ✔️    | ❌   |
+| Empty                                        | ✔️     | ✔️    | ❌\* |
+| One certificate, no private key              | ✔️     | ✔️    | ❌\* |
 | One certificate, with private key            | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, no private keys       | ✔️     | ✔️    | ❌   |
+| Multiple certificates, no private keys       | ✔️     | ✔️    | ❌\* |
 | Multiple certificates, one private key       | ✔️     | ✔️    | ✔️   |
-| Multiple certificates, multiple private keys | ✔️     | ❌    | ✔️   |
-| Ephemeral loading                            | ✔️     | ✔️    | ❌   |
+| Multiple certificates, multiple private keys | ✔️     | ❌\*  | ✔️   |
+| Ephemeral loading                            | ✔️     | ✔️    | ❌\* |
+
+* Available in .NET 5 preview releases.
 
 macOS can't load certificate private keys without a keychain object, which requires writing to disk. Keychains are created automatically for PFX loading, and are deleted when no longer in use. Since the <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> option means that the private key should not be written to disk, asserting that flag on macOS results in a <xref:System.PlatformNotSupportedException>.
 

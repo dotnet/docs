@@ -304,7 +304,7 @@ The ML.NET model file (.ZIP file) will get the same name, as well.
 
 ## Output path
 
-`--output-path | -o` (string)
+`--output | -o` (string)
 
 Root location/folder to place the generated output. The default is the current directory.
 

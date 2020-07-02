@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.2
+    Version:        1.3
     Author:         adegeo@microsoft.com
     Creation Date:  06/24/2020
-    Purpose/Change: Fix logging for non build problems (no proj/sln etc)
+    Purpose/Change: Add support for config file. Select distinct on project files.
 #>
 
 [CmdletBinding()]
@@ -96,6 +96,24 @@ if (($RangeStart -ne 0) -and ($RangeEnd -ne 0)){
     $workingSet = $output[$RangeStart..$RangeEnd]
 }
 
+# Log working set items prior to filtering
+$workingSet | Write-Host
+
+# Remove duplicated projects
+$projects = @()
+$workingSetTemp = @()
+
+foreach ($item in $workingSet) {
+    if ($projects.Contains($item[2])) {
+        continue
+    }
+    $projects += $item[2]
+    $workingSetTemp += $item
+}
+
+$workingSet = $workingSetTemp
+
+# Process working set
 $counter = 1
 $length = $workingSet.Count
 $thisExitCode = 0

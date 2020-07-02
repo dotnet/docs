@@ -261,3 +261,12 @@ foreach ($item in $transformedItems) {
 $transformedItems | ConvertTo-Json -Depth 3 | Out-File 'output.json'
 
 exit 0
+
+
+# Sample snippets.5000.json file
+<#
+{
+    "host": "visualstudio"
+}
+
+#>

@@ -33,6 +33,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    # COMMENTED OUT -- GitHub hosted runner includes all releases of .NET Core. We could use this in the future to install preview builds though
     #- name: Setup .NET Core SDK
     #  uses: actions/setup-dotnet@v1
     #  with:

@@ -246,6 +246,12 @@ foreach ($item in $transformedItems) {
         foreach ($err in $errorInfo) {
             $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $err.Line; Error = $err.Groups[1].Value }
         }
+
+        # Error count of 0 here means that no error was detected from build results, but there was still a failure of some kind
+        if ($item.ErrorCount -eq 0) {
+            $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = "Unknown error occurred. Check log and build output."; Error = "4" }
+            $item.ErrorCount = 1
+        }
     }
 
     $item.Errors = $list

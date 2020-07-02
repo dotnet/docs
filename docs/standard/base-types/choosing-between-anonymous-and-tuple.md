@@ -1,7 +1,7 @@
 ---
 title: Choosing between anonymous and tuple types
 description: Learn when it's appropriate to choose between anonymous types, and tuple type.
-ms.date: 06/29/2020
+ms.date: 07/01/2020
 ms.technology: dotnet-standard
 ---
 
@@ -120,6 +120,5 @@ As a developer choosing between tuples and anonymous types, there are several fa
 
 - [Anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Expression trees](../../csharp/expression-trees.md)
-- [Framework design guidelines](index.md)
 - [Tuple types](../../csharp/tuples.md)
-- [Type design guidelines](type.md)
+- [Type design guidelines](../design-guidelines/type.md)

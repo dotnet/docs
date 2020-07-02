@@ -33,10 +33,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
+    #- name: Setup .NET Core SDK
+    #  uses: actions/setup-dotnet@v1
+    #  with:
+    #    dotnet-version: ${{ env.DOTNET_VERSION }}
       
     # Install locate projs global tool
     - name: Install LocateProjects tool

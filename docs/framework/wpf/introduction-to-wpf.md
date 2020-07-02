@@ -1,6 +1,7 @@
 ---
 title: Introduction to WPF
 titleSuffix: ""
+description: Create visually stunning user experiences in Windows. Discover the key capabilities and concepts of Windows Presentation Foundation (WPF).
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0

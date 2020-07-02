@@ -129,7 +129,26 @@ foreach ($item in $workingSet) {
         # Project found, build it
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
-            $result = Invoke-Expression "dotnet build `"$projectFile`"" | Out-String
+            $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
+            
+            # Create the default build command
+            "dotnet build `"$projectFile`"" | Out-File "run.bat"
+
+            # Check for config file
+            if ([System.IO.File]::Exists($configFile) -eq $true) {
+                $settings = $configFile | Get-ChildItem | Get-Content | ConvertFrom-Json
+
+                if ($settings.host -eq "visualstudio") {
+
+                    # Create the visual studio build command
+                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "msbuild.exe `"$projectFile`"" `
+                    | Out-File "run.bat"
+                    
+                }
+            }
+
+            $result = Invoke-Expression "run.bat" | Out-String
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
@@ -143,20 +162,20 @@ foreach ($item in $workingSet) {
         elseif ([int]$data[0] -eq 1) {
             New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
 
-            $thisExitCode = 1;
+            $thisExitCode = 1
         }
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
             New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
 
-            $thisExitCode = 2;
+            $thisExitCode = 2
         }
 
         # Solution found, but no project
         elseif ([int]$data[0] -eq 3) {
             New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code."
-            $thisExitCode = 3;
+            $thisExitCode = 3
         }
     }
     catch {

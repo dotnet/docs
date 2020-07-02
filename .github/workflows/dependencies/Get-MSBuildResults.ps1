@@ -108,7 +108,9 @@ foreach ($item in $workingSet) {
     if ($projects.Contains($data[2].Trim())) {
         continue
     }
-    $projects += $data[2].Trim()
+    if ($data[2].Trim() -ne "") {
+        $projects += $data[2].Trim()
+    }
     $workingSetTemp += $item
 }
 

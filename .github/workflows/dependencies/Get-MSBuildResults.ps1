@@ -132,23 +132,25 @@ foreach ($item in $workingSet) {
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
             
             # Create the default build command
-            "dotnet build `"$projectFile`"" | Out-File "run.bat"
+            "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
 
             # Check for config file
             if ([System.IO.File]::Exists($configFile) -eq $true) {
+                Write-Host "Config file found"
+
                 $settings = $configFile | Get-ChildItem | Get-Content | ConvertFrom-Json
 
                 if ($settings.host -eq "visualstudio") {
+                    Write-Host "Using visual studio as build host"
 
                     # Create the visual studio build command
                     "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\Tools\VsDevCmd.bat`"`n" +
                     "msbuild.exe `"$projectFile`"" `
-                    | Out-File "run.bat"
-                    
+                    | Out-File ".\run.bat"
                 }
             }
 
-            $result = Invoke-Expression "run.bat" | Out-String
+            $result = Invoke-Expression ".\run.bat" | Out-String
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {

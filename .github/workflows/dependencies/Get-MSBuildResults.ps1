@@ -104,10 +104,11 @@ $projects = @()
 $workingSetTemp = @()
 
 foreach ($item in $workingSet) {
-    if ($projects.Contains($item[2])) {
+    $data = $item.Split('|')
+    if ($projects.Contains($data[2].Trim())) {
         continue
     }
-    $projects += $item[2]
+    $projects += $data[2].Trim()
     $workingSetTemp += $item
 }
 

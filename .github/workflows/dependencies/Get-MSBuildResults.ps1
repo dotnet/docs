@@ -33,7 +33,7 @@
 .NOTES
     Version:        1.3
     Author:         adegeo@microsoft.com
-    Creation Date:  06/24/2020
+    Creation Date:  07/02/2020
     Purpose/Change: Add support for config file. Select distinct on project files.
 #>
 

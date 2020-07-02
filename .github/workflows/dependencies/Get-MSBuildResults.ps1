@@ -136,15 +136,15 @@ foreach ($item in $workingSet) {
 
             # Check for config file
             if ([System.IO.File]::Exists($configFile) -eq $true) {
-                Write-Host "Config file found"
+                Write-Host "- Config file found"
 
                 $settings = $configFile | Get-ChildItem | Get-Content | ConvertFrom-Json
 
                 if ($settings.host -eq "visualstudio") {
-                    Write-Host "Using visual studio as build host"
+                    Write-Host "- Using visual studio as build host"
 
                     # Create the visual studio build command
-                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
                     "msbuild.exe `"$projectFile`"" `
                     | Out-File ".\run.bat"
                 }

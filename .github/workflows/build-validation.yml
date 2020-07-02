@@ -17,7 +17,7 @@ on:
       - "**.vbhtml"
       - "**.*proj"
       - "**global.json"
-    branches: [ adegeo-pr-source ]
+    branches: [ master ]
 
 env:
   DOTNET_VERSION: '3.1.300'           # set this to the dot net version to use

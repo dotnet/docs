@@ -227,7 +227,7 @@ foreach ($item in $transformedItems) {
 
     # Clean
     if ($item.ExitCode -eq 0) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
+        #$list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
     }
     # No project found
     # Too many projects found

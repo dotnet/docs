@@ -1,7 +1,11 @@
-﻿using System;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+// <SnippetStaticUsings>
+using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
+using static System.Console;
+// </SnippetStaticUsings>
 
 namespace ConstructionCS
 {
@@ -29,18 +33,18 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             // <SnippetCreateIdentifierName>
-            NameSyntax name = SyntaxFactory.IdentifierName("System");
-            Console.WriteLine($"\tCreated the identifier {name.ToString()}");
+            NameSyntax name = IdentifierName("System");
+            WriteLine($"\tCreated the identifier {name}");
             // </SnippetCreateIdentifierName>
 
             // <SnippetCreateQualifiedIdentifierName>
-            name = SyntaxFactory.QualifiedName(name, SyntaxFactory.IdentifierName("Collections"));
-            Console.WriteLine(name.ToString());
+            name = QualifiedName(name, IdentifierName("Collections"));
+            WriteLine(name.ToString());
             // </SnippetCreateQualifiedIdentifierName>
 
             // <SnippetCreateFullNamespace>
-            name = SyntaxFactory.QualifiedName(name, SyntaxFactory.IdentifierName("Generic"));
-            Console.WriteLine(name.ToString());
+            name = QualifiedName(name, IdentifierName("Generic"));
+            WriteLine(name.ToString());
             // </SnippetCreateFullNamespace>
 
             // <SnippetCreateParseTree>
@@ -51,15 +55,15 @@ namespace HelloWorld
             // <SnippetBuildNewUsing>
             var oldUsing = root.Usings[1];
             var newUsing = oldUsing.WithName(name);
-            Console.WriteLine(root.ToString());
+            WriteLine(root.ToString());
             // </SnippetBuildNewUsing>
 
-            Console.WriteLine();
-            Console.WriteLine();
+            WriteLine();
+            WriteLine();
 
             // <SnippetTransformTree>
             root = root.ReplaceNode(oldUsing, newUsing);
-            Console.WriteLine(root.ToString());
+            WriteLine(root.ToString());
             // </SnippetTransformTree>
         }
     }

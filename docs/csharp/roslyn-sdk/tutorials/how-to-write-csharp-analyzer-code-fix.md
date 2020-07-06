@@ -14,7 +14,7 @@ In this tutorial, you'll explore the creation of an **analyzer** and an accompan
 ## Prerequisites
 
 > [!NOTE]
-> The current Visual Studio template has a known bug in it and should be fixed in Visual Studio 2019 version 16.7. The templates will not compile unless the following changes are made:
+> The current Visual Studio **Analyzer with code fix (.NET Standard)** template has a known bug in it and should be fixed in Visual Studio 2019 version 16.7. The projects in the template will not compile unless the following changes are made:
 >
 > 1. Select **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**
 >    - Select the plus button, to add a new source:

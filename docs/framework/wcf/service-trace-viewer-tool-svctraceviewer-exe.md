@@ -1,5 +1,6 @@
 ---
 title: "Service Trace Viewer Tool (SvcTraceViewer.exe)"
+description: Use Service Trace Viewer to merge, view, and filter trace messages in the log so that you can diagnose, repair, and verify WCF service issues.
 ms.date: "03/30/2017"
 ms.assetid: 9027efd3-df8d-47ed-8bcd-f53d55ed803c
 ---

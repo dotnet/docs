@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous programming patterns"
+description: Learn about the Task-based Asynchronous Pattern (TAP), Event-based Asynchronous Pattern (EAP), & Asynchronous Programming Model (APM) in .NET.
 ms.date: "10/16/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

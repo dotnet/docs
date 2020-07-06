@@ -35,7 +35,7 @@ HRESULT FinalizeableObjectQueued(
  [in] The ID of the object that has been queued.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

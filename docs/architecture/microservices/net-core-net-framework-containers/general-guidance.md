@@ -7,7 +7,7 @@ ms.date: 09/11/2018
 
 This section provides a summary of when to choose .NET Core or .NET Framework. We provide more details about these choices in the sections that follow.
 
-You should use .NET Core, with Linux or Windows Containers, for your containerized Docker server application when:
+Use .NET Core, with Linux or Windows Containers, for your containerized Docker server application when:
 
 - You have cross-platform needs. For example, you want to use both Linux and Windows Containers.
 
@@ -19,7 +19,7 @@ In short, when you create new containerized .NET applications, you should consid
 
 An additional benefit of using .NET Core is that you can run side by side .NET versions for applications within the same machine. This benefit is more important for servers or VMs that do not use containers, because containers isolate the versions of .NET that the app needs. (As long as they are compatible with the underlying OS.)
 
-You should use .NET Framework for your containerized Docker server application when:
+Use .NET Framework for your containerized Docker server application when:
 
 - Your application currently uses .NET Framework and has strong dependencies on Windows.
 

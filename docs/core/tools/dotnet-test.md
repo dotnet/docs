@@ -64,7 +64,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame`**
 
-  Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates an sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
+  Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
 - **`-c|--configuration <CONFIGURATION>`**
 
@@ -128,7 +128,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-s|--settings <SETTINGS_FILE>`**
 
-  The `.runsettings` file to use for running the tests. Note that the `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
+  The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
   - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
@@ -169,7 +169,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger trx
   ```
 
-- Run the tests in the project in the current directory, and generate a code coverage file (after installing [Coverlet](https://github.com/tonerdo/coverlet/blob/master/README.md)):
+- Run the tests in the project in the current directory, and generate a code coverage file (after installing [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md) collectors integration):
 
   ```dotnetcli
   dotnet test --collect:"XPlat Code Coverage"
@@ -186,8 +186,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   ```dotnetcli
   dotnet test --logger "console;verbosity=detailed"
   ```
-  
-  - Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
+
+- Run the tests in the project in the current directory, and report tests that were in progress when the test host crashed:
 
   ```dotnetcli
   dotnet test --blame

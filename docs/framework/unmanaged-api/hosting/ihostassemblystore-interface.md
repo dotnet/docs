@@ -22,7 +22,7 @@ Provides methods that allow a host to load assemblies and modules independently 
   
 |Method|Description|  
 |------------|-----------------|  
-|[ProvideAssembly Method](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-provideassembly-method.md)|Gets a reference to an assembly that is not referenced by the [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) returned from a call to [IHostAssemblyManager::GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md).|  
+|[ProvideAssembly Method](ihostassemblystore-provideassembly-method.md)|Gets a reference to an assembly that is not referenced by the [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) returned from a call to [IHostAssemblyManager::GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md).|  
 |[ProvideModule Method](ihostassemblystore-providemodule-method.md)|Resolves a module within an assembly or a linked (not embedded) resource file.|  
   
 ## Remarks  

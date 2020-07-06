@@ -1,5 +1,6 @@
 ---
 title: "DataAdapter Parameters"
+description: Learn about the properties of DbDataAdapter that return data from a data source and manage changes to the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

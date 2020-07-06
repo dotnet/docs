@@ -16,10 +16,8 @@ The following tutorials are available for learning about .NET Core.
 - [Publish an app](publishing-with-visual-studio.md)
 - [Create a class library](library-with-visual-studio.md)
 - [Unit test a class library](testing-library-with-visual-studio.md)
-- [Use a class library](consuming-library-with-visual-studio.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
-
 - [Create an F# console app](../../fsharp/get-started/get-started-visual-studio.md)
 
 ## Use Visual Studio Code
@@ -29,10 +27,10 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 - [Create a console app](with-visual-studio-code.md)
 - [Debug an app](debugging-with-visual-studio-code.md)
 - [Publish an app](publishing-with-visual-studio-code.md)
-- [Create a library and unit test it - macOS](using-on-macos.md)
+- [Create a class library](library-with-visual-studio-code.md)
+- [Unit test a class library](testing-library-with-visual-studio-code.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 - [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
-
 - [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
 
 ## Use Visual Studio for Mac

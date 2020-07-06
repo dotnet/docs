@@ -70,7 +70,7 @@ End Sub
   
 ## See also
 
-- [Attributes (Visual Basic)](../../../visual-basic/language-reference/attributes.md)
-- [Common Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)
-- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
-- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+- [Attributes (Visual Basic)](../../language-reference/attributes.md)
+- [Common Attributes (Visual Basic)](attributes/common-attributes.md)
+- [Optional Parameters](../language-features/procedures/optional-parameters.md)
+- [Programming Concepts (Visual Basic)](index.md)

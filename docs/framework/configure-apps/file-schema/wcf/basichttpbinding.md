@@ -1,5 +1,6 @@
 ---
 title: "<basicHttpBinding>"
+description: Defines a binding that a WCF service can use to configure and expose endpoints to communicate with services conforming to the WS-I Basic Profile 1.1.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "basicHttpBinding Element"

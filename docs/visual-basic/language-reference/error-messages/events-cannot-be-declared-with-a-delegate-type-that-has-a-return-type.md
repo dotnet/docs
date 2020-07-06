@@ -19,4 +19,4 @@ A delegate was specified for a function procedure.
   
 ## See also
 
-- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Events](../../programming-guide/language-features/events/index.md)

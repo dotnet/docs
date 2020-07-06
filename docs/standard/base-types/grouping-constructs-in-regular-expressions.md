@@ -1,5 +1,6 @@
 ---
 title: "Grouping Constructs in Regular Expressions"
+description: Learn to use grouping constructs in .NET. Grouping constructs delineate subexpressions of a regular expression and capture substrings of an input string.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -19,7 +20,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 - Match a subexpression that is repeated in the input string.  
   
-- Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
+- Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
 - Include a subexpression in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> methods.  
   
@@ -197,7 +198,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`(?(Open)(?!))`|If the `Open` group exists, abandon the match if an empty string can be matched, but do not advance the position of the regular expression engine in the string. This is a zero-width negative lookahead assertion. Because an empty string is always implicitly present in an input string, this match always fails. Failure of this match indicates that the angle brackets are not balanced.|  
 |`$`|Match the end of the input string.|  
   
- The final subexpression, `(?(Open)(?!))`, indicates whether the nesting constructs in the input string are properly balanced (for example, whether each left angle bracket is matched by a right angle bracket). It uses conditional matching based on a valid captured group; for more information, see [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md). If the `Open` group is defined, the regular expression engine attempts to match the subexpression `(?!)` in the input string. The `Open` group should be defined only if nesting constructs are unbalanced. Therefore, the pattern to be matched in the input string should be one that always causes the match to fail. In this case, `(?!)` is a zero-width negative lookahead assertion that always fails, because an empty string is always implicitly present at the next position in the input string.  
+ The final subexpression, `(?(Open)(?!))`, indicates whether the nesting constructs in the input string are properly balanced (for example, whether each left angle bracket is matched by a right angle bracket). It uses conditional matching based on a valid captured group; for more information, see [Alternation Constructs](alternation-constructs-in-regular-expressions.md). If the `Open` group is defined, the regular expression engine attempts to match the subexpression `(?!)` in the input string. The `Open` group should be defined only if nesting constructs are unbalanced. Therefore, the pattern to be matched in the input string should be one that always causes the match to fail. In this case, `(?!)` is a zero-width negative lookahead assertion that always fails, because an empty string is always implicitly present at the next position in the input string.  
   
  In the example, the regular expression engine evaluates the input string "\<abc><mno\<xyz>>" as shown in the following table.  
   
@@ -260,7 +261,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  `(?imnsx-imnsx:` *subexpression* `)`  
   
- where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
+ where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular Expression Options](regular-expression-options.md).  
   
 > [!NOTE]
 > You can specify options that apply to an entire regular expression rather than a subexpression by using a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.  
@@ -424,7 +425,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 - The first <xref:System.Text.RegularExpressions.Group> object in the collection (the object at index zero) represents the entire match.  
   
-- The next set of <xref:System.Text.RegularExpressions.Group> objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)  
+- The next set of <xref:System.Text.RegularExpressions.Group> objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).)  
   
 - The final set of <xref:System.Text.RegularExpressions.Group> objects represent named capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index value of the first named capturing group is one greater than the index of the last unnamed capturing group. If there are no unnamed capturing groups in the regular expression, the index value of the first named capturing group is one.  
   
@@ -448,5 +449,5 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
-- [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)
+- [Backtracking](backtracking-in-regular-expressions.md)

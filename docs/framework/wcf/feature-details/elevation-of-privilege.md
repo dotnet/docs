@@ -12,7 +12,7 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
 ## Trusted STS Should Sign SAML Token Claims  
  A Security Assertions Markup Language (SAML) token is a generic XML token that is the default type for issued tokens. A SAML token can be constructed by a Security Token Service (STS) that the end Web service trusts in a typical exchange. SAML tokens contain claims in statements. An attacker may copy the claims from a valid token, create a new SAML token, and sign it with a different issuer. The intent is to determine whether the server is validating issuers and, if not, utilize the weakness to construct SAML tokens that allow privileges beyond those intended by a trusted STS.  
   
- The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. For more information, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. For more information, see [Managing Claims and Authorization with the Identity Model](managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](federation-and-issued-tokens.md).  
   
 ## Switching Identity Without a Security Context  
  The following applies only to WinFX.  
@@ -40,7 +40,7 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
 > When using the `BeginOpen` method, the credentials captured cannot be guaranteed to be the credentials of the process that calls the method.  
   
 ## Token Caches Allow Replay Using Obsolete Data  
- WCF uses the local security authority (LSA) `LogonUser` function to authenticate users by user name and password. Because the logon function is a costly operation, WCF allows you to cache tokens that represent authenticated users to increase performance. The caching mechanism saves the results from `LogonUser` for subsequent uses. This mechanism is disabled by default; to enable it, set the <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential.CacheLogonTokens%2A> property to `true`, or use the `cacheLogonTokens` attribute of the [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md).  
+ WCF uses the local security authority (LSA) `LogonUser` function to authenticate users by user name and password. Because the logon function is a costly operation, WCF allows you to cache tokens that represent authenticated users to increase performance. The caching mechanism saves the results from `LogonUser` for subsequent uses. This mechanism is disabled by default; to enable it, set the <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential.CacheLogonTokens%2A> property to `true`, or use the `cacheLogonTokens` attribute of the [\<userNameAuthentication>](../../configure-apps/file-schema/wcf/usernameauthentication.md).  
   
  You can set a Time to Live (TTL) for the cached tokens by setting the <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential.CachedLogonTokenLifetime%2A> property to a <xref:System.TimeSpan>, or use the `cachedLogonTokenLifetime` attribute of the `userNameAuthentication` element; the default is 15 minutes. Note that while a token is cached, any client that presents the same user name and password can use the token, even if the user account is deleted from Windows or if its password has been changed. Until the TTL expires and the token is removed from the cache, WCF allows the (possibly malicious) user to authenticate.  
   
@@ -78,9 +78,9 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
   
 ## See also
 
-- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
-- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
-- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
-- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
-- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Security Considerations](security-considerations-in-wcf.md)
+- [Information Disclosure](information-disclosure.md)
+- [Denial of Service](denial-of-service.md)
+- [Replay Attacks](replay-attacks.md)
+- [Tampering](tampering.md)
+- [Unsupported Scenarios](unsupported-scenarios.md)

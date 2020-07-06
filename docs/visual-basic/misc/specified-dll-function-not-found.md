@@ -16,4 +16,4 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

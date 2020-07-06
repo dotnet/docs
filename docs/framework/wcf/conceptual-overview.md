@@ -1,5 +1,6 @@
 ---
 title: "Conceptual Overview"
+description: Learn about the Windows Communication Foundation (WCF) messaging system and the classes that support its use.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], concepts"

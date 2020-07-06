@@ -1,5 +1,6 @@
 ---
 title: "Managing Connections"
+description: Learn how applications that use HTTP for data resources can use the .NET Framework ServicePoint and ServicePointManager classes to manage connections.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

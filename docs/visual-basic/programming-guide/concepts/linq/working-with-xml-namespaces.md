@@ -10,13 +10,13 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Namespaces Overview (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md)|This topic introduces namespaces, the <xref:System.Xml.Linq.XName> class, and the <xref:System.Xml.Linq.XNamespace> class.|  
-|[How to: Create a Document with Namespaces (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-document-with-namespaces.md)|Shows how to create documents with namespaces.|  
-|[How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md)|Shows how to control namespace prefixes by declaring global namespaces.|  
-|[Scope of Default Namespaces in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/scope-of-default-namespaces.md)|Demonstrates the appropriate way to write queries for XML in the default namespace.|  
-|[Working with Global Namespaces (Visual Basic) (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/working-with-global-namespaces-linq-to-xml.md)|Explains the semantics of global namespaces in Visual Basic, and reasons for using them.|  
-|[How to: Write Queries on XML in Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in Visual Basic LINQ to XML queries.|  
+|[Namespaces Overview (LINQ to XML)](namespaces-overview-linq-to-xml.md)|This topic introduces namespaces, the <xref:System.Xml.Linq.XName> class, and the <xref:System.Xml.Linq.XNamespace> class.|  
+|[How to: Create a Document with Namespaces (LINQ to XML) (Visual Basic)](how-to-create-a-document-with-namespaces.md)|Shows how to create documents with namespaces.|  
+|[How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)](how-to-control-namespace-prefixes-linq-to-xml.md)|Shows how to control namespace prefixes by declaring global namespaces.|  
+|[Scope of Default Namespaces in Visual Basic](scope-of-default-namespaces.md)|Demonstrates the appropriate way to write queries for XML in the default namespace.|  
+|[Working with Global Namespaces (Visual Basic) (LINQ to XML)](working-with-global-namespaces-linq-to-xml.md)|Explains the semantics of global namespaces in Visual Basic, and reasons for using them.|  
+|[How to: Write Queries on XML in Namespaces (Visual Basic)](how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in Visual Basic LINQ to XML queries.|  
   
 ## See also
 
-- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+- [Programming Guide (LINQ to XML) (Visual Basic)](programming-guide-linq-to-xml.md)

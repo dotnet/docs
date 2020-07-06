@@ -1,5 +1,6 @@
 ---
 title: "Connection Strings"
+description: Learn about connection strings in ADO.NET, which contain initialization information passed as a parameter from a data provider to a data source.
 ms.date: "10/10/2018"
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 ---

@@ -54,6 +54,6 @@ exitButton.Location = exitLocation
 
 ## See also
 
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)
+- [Statements](../../programming-guide/language-features/statements.md)
+- [Troubleshooting Procedures](../../programming-guide/language-features/procedures/troubleshooting-procedures.md)

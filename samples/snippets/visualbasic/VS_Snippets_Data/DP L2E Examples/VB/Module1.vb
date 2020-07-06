@@ -1007,7 +1007,7 @@ Module Module1
             Dim salesOrders As ObjectSet(Of SalesOrderHeader) = context.SalesOrderHeaders
 
             Dim query = From order In salesOrders _
-                            Group order By order.CustomerID Into idGroup = Group, Count()
+                        Group order By order.CustomerID Into idGroup = Group, Count()
 
             For Each group In query
                 Console.WriteLine("Customer ID: {0}", group.CustomerID)
@@ -1906,13 +1906,13 @@ Module Module1
 
             Dim query = _
                 From contact In contacts _
-                    Group Join order In orders _
-                    On contact.ContactID _
-                    Equals order.Contact.ContactID Into contactGroup = Group _
-                    Select New With { _
-                        .ContactID = contact.ContactID, _
-                        .OrderCount = contactGroup.Count(), _
-                        .Orders = contactGroup.Select(Function(order) order)}
+                Group Join order In orders _
+                On contact.ContactID _
+                Equals order.Contact.ContactID Into contactGroup = Group _
+                Select New With { _
+                    .ContactID = contact.ContactID, _
+                    .OrderCount = contactGroup.Count(), _
+                    .Orders = contactGroup.Select(Function(order) order)}
 
             For Each group In query
                 Console.WriteLine("ContactID: {0}", group.ContactID)
@@ -2032,10 +2032,10 @@ Module Module1
             Dim contacts As ObjectSet(Of Contact) = context.Contacts
 
             Dim ordersQuery = From contact In contacts _
-                Where contact.LastName = lastName _
-                Select New With _
-                        {.ContactID = contact.ContactID, _
-                        .Total = contact.SalesOrderHeaders.Sum(Function(o) o.TotalDue)}
+                              Where contact.LastName = lastName _
+                              Select New With _
+                                      {.ContactID = contact.ContactID, _
+                                      .Total = contact.SalesOrderHeaders.Sum(Function(o) o.TotalDue)}
 
             For Each order In ordersQuery
                 Console.WriteLine("Contact ID: {0} Orders total: {1}", order.ContactID, order.Total)
@@ -2070,10 +2070,10 @@ Module Module1
             Dim contacts As ObjectSet(Of Contact) = context.Contacts
 
             Dim ordersQuery = From contact In contacts _
-                Where contact.LastName = lastName _
-                Select New With _
-                        {.LastName = contact.LastName, _
-                         .Orders = contact.SalesOrderHeaders}
+                              Where contact.LastName = lastName _
+                              Select New With _
+                                      {.LastName = contact.LastName, _
+                                       .Orders = contact.SalesOrderHeaders}
 
             For Each order In ordersQuery
                 Console.WriteLine("Name: {0}", order.LastName)
@@ -2121,13 +2121,13 @@ Module Module1
             Dim orders As ObjectSet(Of SalesOrderHeader) = context.SalesOrderHeaders
 
             Dim ordersQuery = From order In orders _
-                     Where order.Address.City = city _
-                     Select New With { _
-                                    .ContactLastName = order.Contact.LastName, _
-                                    .ContactFirstName = order.Contact.FirstName, _
-                                    .StreetAddress = order.Address.AddressLine1, _
-                                    .OrderNumber = order.SalesOrderNumber, _
-                                    .TotalDue = order.TotalDue}
+                              Where order.Address.City = city _
+                              Select New With { _
+                                             .ContactLastName = order.Contact.LastName, _
+                                             .ContactFirstName = order.Contact.FirstName, _
+                                             .StreetAddress = order.Address.AddressLine1, _
+                                             .OrderNumber = order.SalesOrderNumber, _
+                                             .TotalDue = order.TotalDue}
 
             For Each orderInfo In ordersQuery
                 Console.WriteLine("Name: {0}, {1}", orderInfo.ContactLastName, orderInfo.ContactFirstName)

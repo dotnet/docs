@@ -1,5 +1,6 @@
 ---
 title: "Hosting in Windows Process Activation Service"
+description: Learn about how WAS manages the activation and lifetime of the worker processes containing applications that host WCF services.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "hosting services [WCF], WAS"
@@ -8,7 +9,7 @@ ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
 # Hosting in Windows Process Activation Service
 The Windows Process Activation Service (WAS) manages the activation and lifetime of the worker processes that contain applications that host Windows Communication Foundation (WCF) services. The WAS process model generalizes the IIS 6.0 process model for the HTTP server by removing the dependency on HTTP. This allows WCF services to use both HTTP and non-HTTP protocols, such as Net.TCP, in a hosting environment that supports message-based activation and offers the ability to host a large number of applications on a given machine.  
   
- For more information about building a WCF service that runs in the WAS hosting environment, see [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md).  
+ For more information about building a WCF service that runs in the WAS hosting environment, see [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md).  
   
  The WAS process model provides several features that enable applications to be hosted in a way that is more robust, more manageable, and that uses resources efficiently:  
   
@@ -44,8 +45,8 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
   
 ## See also
 
-- [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
-- [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
-- [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)
-- [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)
+- [WAS Activation Architecture](was-activation-architecture.md)
+- [Configuring WAS for Use with WCF](configuring-the-wpa--service-for-use-with-wcf.md)
+- [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md)
+- [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

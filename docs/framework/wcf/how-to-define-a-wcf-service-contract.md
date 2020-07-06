@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Define a Windows Communication Foundation service contract"
+description: Learn how to define a service contract as part of a series of articles that help you get started creating a WCF application.
 ms.date: 03/19/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"

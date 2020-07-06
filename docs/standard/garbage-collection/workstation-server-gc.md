@@ -24,7 +24,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
 The following illustration shows the dedicated threads that perform the garbage collection on a server:
 
-![Server Garbage Collection Threads](./media/gc-server.png)
+![Server Garbage Collection Threads](media/gc-server.png)
 
 ## Performance considerations
 

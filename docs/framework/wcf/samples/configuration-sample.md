@@ -7,7 +7,7 @@ ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
 This sample demonstrates the use of a configuration file to make a service discoverable.  
   
 > [!NOTE]
-> This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](../../../../docs/framework/wcf/samples/basic-sample.md).  
+> This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](basic-sample.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -79,7 +79,7 @@ This sample demonstrates the use of a configuration file to make a service disco
         </endpointBehaviors>  
 ```  
   
- For more information about scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
+ For more information about scopes, see [Discovery Find and FindCriteria](../feature-details/discovery-find-and-findcriteria.md).  
   
  You can also control specific details of the discovery endpoint. This is done through the <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. In this sample, the version of the protocol used is modified as well as adding a `maxResponseDelay` attribute as shown in the following code example.  
   

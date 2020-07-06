@@ -23,4 +23,4 @@ Line statements are no longer supported. File I/O functionality is available as 
 
 - <xref:System.IO>
 - <xref:System.Drawing>
-- [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)
+- [File Access with Visual Basic](../../developing-apps/programming/drives-directories-files/file-access.md)

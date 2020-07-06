@@ -1,5 +1,6 @@
 ---
 title: "How to: Create COM Wrappers"
+description: Create Component Object Model (COM) wrappers using Visual Studio or .NET tools (Tlbimp.exe and Regasm.exe). Both methods generate two types of COM wrappers.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "COM,wrappers creating"

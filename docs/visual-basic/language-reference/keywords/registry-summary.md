@@ -18,6 +18,6 @@ Visual Studio language keywords and run-time library members are organized by pu
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
-- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
-- [Reading from and Writing to the Registry](../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)
+- [Reading from and Writing to the Registry](../../developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

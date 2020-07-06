@@ -1,4 +1,4 @@
-Imports NUnit.Framework
+﻿Imports NUnit.Framework
 
 Namespace PrimeService.Tests
     '<Sample_TestCode>

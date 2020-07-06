@@ -8,29 +8,29 @@ Imports System.Security.Permissions
 
 
 Namespace Samples
-    
+
     Public Class Test
-        
-        Shared Sub Main() 
-        
+
+        Shared Sub Main()
+
         End Sub
     End Class
-    
+
     '<snippet1>
-    <ServiceContract()>  _
+    <ServiceContract()> _
     Public Interface IMyService
-        <OperationContract()>  _
-        Function GetData() As Message 
-        
-        <OperationContract()>  _
-        Sub PutData(ByVal m As Message) 
+        <OperationContract()> _
+        Function GetData() As Message
+
+        <OperationContract()> _
+        Sub PutData(ByVal m As Message)
     End Interface
     '</snippet1>
-    
+
     '<snippet2>    
     Public Class MyService1
         Implements IMyService
-        
+
         Public Function GetData() As Message _
          Implements IMyService.GetData
             Dim p As New Person()
@@ -41,18 +41,18 @@ Namespace Samples
             Return Message.CreateMessage(ver, "GetDataResponse", p)
 
         End Function
-        
-        
+
+
         Public Sub PutData(ByVal m As Message) _
         Implements IMyService.PutData
             ' Not implemented.
         End Sub
     End Class
-    <DataContract()>  _
+    <DataContract()> _
     Public Class Person
-        <DataMember()>  _
+        <DataMember()> _
         Public name As String
-        <DataMember()>  _
+        <DataMember()> _
         Public age As Integer
     End Class
     '</snippet2>
@@ -60,7 +60,7 @@ Namespace Samples
     '<snippet3>    
     Public Class MyService2
         Implements IMyService
-        
+
         Public Function GetData() As Message Implements IMyService.GetData
             Dim stream As New FileStream("myfile.xml", FileMode.Open)
             Dim xdr As XmlDictionaryReader = _
@@ -69,8 +69,8 @@ Namespace Samples
             Return Message.CreateMessage(ver, "GetDataResponse", xdr)
 
         End Function
-        
-        
+
+
         Public Sub PutData(ByVal m As Message) Implements IMyService.PutData
 
         End Sub
@@ -98,7 +98,7 @@ Namespace Samples
     '<snippet5>    
     Public Class MyService4
         Implements IMyService
-        
+
         Public Sub PutData(ByVal m As Message) Implements IMyService.PutData
             Dim stream As New FileStream("myfile.xml", FileMode.Create)
             Dim xdw As XmlDictionaryWriter = XmlDictionaryWriter.CreateTextWriter(stream)
@@ -106,8 +106,8 @@ Namespace Samples
             xdw.Flush()
 
         End Sub
-        
-        
+
+
         Public Function GetData() As Message Implements IMyService.GetData
             Throw New NotImplementedException()
 
@@ -133,26 +133,26 @@ Namespace Samples
     End Class
 End Namespace
 Namespace Samples2
-    <ServiceContract()>  _
+    <ServiceContract()> _
     Public Interface IMyService
-        <OperationContract()>  _
-        Function GetData() As Message 
-        
-        <OperationContract()>  _
-        Sub PutData(ByVal m As Message) 
+        <OperationContract()> _
+        Function GetData() As Message
+
+        <OperationContract()> _
+        Sub PutData(ByVal m As Message)
     End Interface
 
-    <DataContract()>  _
+    <DataContract()> _
     Public Class Person
-        <DataMember()>  _
+        <DataMember()> _
         Public name As String
-        <DataMember()>  _
+        <DataMember()> _
         Public age As Integer
     End Class
     '</snippet6>
 
     '<snippet7>
-    <ServiceContract()>  _
+    <ServiceContract()> _
     Public Class ForwardingService
         Private forwardingAddresses As List(Of IOutputChannel)
 
@@ -235,197 +235,197 @@ Namespace Samples2
             End Get
         End Property
     End Class
-    
+
     Public Class RandomMessage2
         Inherits Message
-        
-        Protected Overrides Function OnGetReaderAtBodyContents() As XmlDictionaryReader 
+
+        Protected Overrides Function OnGetReaderAtBodyContents() As XmlDictionaryReader
             Return New RandomNumbersXmlReader()
-        
+
         End Function
-        
-        
-        Protected Overrides Sub OnWriteBodyContents(ByVal writer As XmlDictionaryWriter) 
+
+
+        Protected Overrides Sub OnWriteBodyContents(ByVal writer As XmlDictionaryWriter)
             Dim xdr As XmlDictionaryReader = OnGetReaderAtBodyContents()
             writer.WriteNode(xdr, True)
-        
+
         End Sub
-        
-        Public Overrides ReadOnly Property Headers() As MessageHeaders 
+
+        Public Overrides ReadOnly Property Headers() As MessageHeaders
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property Properties() As MessageProperties 
+        End Property
+
+        Public Overrides ReadOnly Property Properties() As MessageProperties
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property Version() As MessageVersion 
+        End Property
+
+        Public Overrides ReadOnly Property Version() As MessageVersion
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
     End Class
-    
+
     Public Class RandomNumbersXmlReader
         Inherits XmlDictionaryReader
         'code to serve up 100000 random numbers in XML form omitted
         '</snippet10>
-        
-        Public Overrides ReadOnly Property AttributeCount() As Integer 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property BaseURI() As String 
+
+        Public Overrides ReadOnly Property AttributeCount() As Integer
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
-         
-        Public Overrides Sub Close() 
+
+        Public Overrides ReadOnly Property BaseURI() As String
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides Sub Close()
             Throw New Exception("The method or operation is not implemented.")
-        
+
         End Sub
-        
-        
-        Public Overrides ReadOnly Property Depth() As Integer 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property EOF() As Boolean 
+
+
+        Public Overrides ReadOnly Property Depth() As Integer
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
-         
-        Overloads Public Overrides Function GetAttribute(ByVal i As Integer) As String 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Overloads Public Overrides Function GetAttribute(ByVal name As String, ByVal namespaceURI As String) As String 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Overloads Public Overrides Function GetAttribute(ByVal name As String) As String 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides ReadOnly Property HasValue() As Boolean 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property IsEmptyElement() As Boolean 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property LocalName() As String 
+
+        Public Overrides ReadOnly Property EOF() As Boolean
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
-         
-        Public Overrides Function LookupNamespace(ByVal prefix As String) As String 
+
+        Overloads Public Overrides Function GetAttribute(ByVal i As Integer) As String
             Throw New Exception("The method or operation is not implemented.")
-        
+
         End Function
-        
-        
-        Overloads Public Overrides Function MoveToAttribute(ByVal name As String, ByVal ns As String) As Boolean 
+
+
+        Overloads Public Overrides Function GetAttribute(ByVal name As String, ByVal namespaceURI As String) As String
             Throw New Exception("The method or operation is not implemented.")
-        
+
         End Function
-        
-        
-        Overloads Public Overrides Function MoveToAttribute(ByVal name As String) As Boolean 
+
+
+        Overloads Public Overrides Function GetAttribute(ByVal name As String) As String
             Throw New Exception("The method or operation is not implemented.")
-        
+
         End Function
-        
-        
-        Public Overrides Function MoveToElement() As Boolean 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides Function MoveToFirstAttribute() As Boolean 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides Function MoveToNextAttribute() As Boolean 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides ReadOnly Property NameTable() As XmlNameTable 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property NamespaceURI() As String 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property NodeType() As XmlNodeType 
-            Get
-                Throw New Exception("The method or operation is not implemented.")
-            End Get
-        End Property 
-        
-        Public Overrides ReadOnly Property Prefix() As String 
+
+
+        Public Overrides ReadOnly Property HasValue() As Boolean
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
-         
-        Public Overrides Function Read() As Boolean 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides Function ReadAttributeValue() As Boolean 
-            Throw New Exception("The method or operation is not implemented.")
-        
-        End Function
-        
-        
-        Public Overrides ReadOnly Property ReadState() As ReadState 
+
+        Public Overrides ReadOnly Property IsEmptyElement() As Boolean
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get
         End Property
-         
-        Public Overrides Sub ResolveEntity() 
+
+        Public Overrides ReadOnly Property LocalName() As String
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides Function LookupNamespace(ByVal prefix As String) As String
             Throw New Exception("The method or operation is not implemented.")
-        
+
+        End Function
+
+
+        Overloads Public Overrides Function MoveToAttribute(ByVal name As String, ByVal ns As String) As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Overloads Public Overrides Function MoveToAttribute(ByVal name As String) As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides Function MoveToElement() As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides Function MoveToFirstAttribute() As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides Function MoveToNextAttribute() As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides ReadOnly Property NameTable() As XmlNameTable
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property NamespaceURI() As String
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property NodeType() As XmlNodeType
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides ReadOnly Property Prefix() As String
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides Function Read() As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides Function ReadAttributeValue() As Boolean
+            Throw New Exception("The method or operation is not implemented.")
+
+        End Function
+
+
+        Public Overrides ReadOnly Property ReadState() As ReadState
+            Get
+                Throw New Exception("The method or operation is not implemented.")
+            End Get
+        End Property
+
+        Public Overrides Sub ResolveEntity()
+            Throw New Exception("The method or operation is not implemented.")
+
         End Sub
-        
-        
-        Public Overrides ReadOnly Property Value() As String 
+
+
+        Public Overrides ReadOnly Property Value() As String
             Get
                 Throw New Exception("The method or operation is not implemented.")
             End Get

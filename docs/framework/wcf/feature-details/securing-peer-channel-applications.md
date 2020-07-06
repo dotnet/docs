@@ -33,9 +33,9 @@ Like other bindings under the WinFX, `NetPeerTcpBinding` has security enabled by
  Use message authentication to verify that a message originated from a trusted source and that no one has tampered with the message during transmission. Without message authentication, it is easy for a malicious client to spoof or tamper with messages in the mesh.  
   
 ## Peer Channel Code Examples  
- [Peer Channel Scenarios](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
+ [Peer Channel Scenarios](peer-channel-scenarios.md)  
   
 ## See also
 
-- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Peer Channel Security](peer-channel-security.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)

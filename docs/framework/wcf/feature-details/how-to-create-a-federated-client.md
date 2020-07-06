@@ -12,7 +12,7 @@ ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
 # How to: Create a Federated Client
 In Windows Communication Foundation (WCF), creating a client for a *federated service* consists of three main steps:  
   
-1. Configure a [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md). Alternatively, run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) against the metadata endpoint of the federated service to generate a configuration file for communicating with the federated service and one or more security token services.  
+1. Configure a [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). Alternatively, run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) against the metadata endpoint of the federated service to generate a configuration file for communicating with the federated service and one or more security token services.  
   
 2. Set the properties of the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> that controls various aspects of a client's interaction with a security token service.  
   
@@ -21,22 +21,22 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
 > [!NOTE]
 > A <xref:System.Security.Cryptography.CryptographicException> might be thrown when a client uses impersonated credentials, the <xref:System.ServiceModel.WSFederationHttpBinding> binding or a custom-issued token, and asymmetric keys. Asymmetric keys are used with the <xref:System.ServiceModel.WSFederationHttpBinding> binding and custom-issued tokens when the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType%2A> and <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> properties, respectively, are set to <xref:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey>. The <xref:System.Security.Cryptography.CryptographicException> is thrown when the client attempts to send a message and a user profile doesn’t exist for the identity that the client is impersonating. To mitigate this issue, log on to the client computer or call `LoadUserProfile` before sending the message.  
   
- This topic provides detailed information about these procedures. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md). For more information about how a federated service works, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
+ This topic provides detailed information about these procedures. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). For more information about how a federated service works, see [Federation](federation.md).  
   
 ### To generate and examine the configuration for a federated service  
   
-1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the address of the metadata URL of the service as a command-line parameter.  
+1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) with the address of the metadata URL of the service as a command-line parameter.  
   
 2. Open the generated configuration file in an appropriate editor.  
   
-3. Examine the attributes and content of any generated [\<issuer>](../../../../docs/framework/configure-apps/file-schema/wcf/issuer.md) and [\<issuerMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/issuermetadata.md) elements. These are located within the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md) elements for the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or custom bindings elements. Ensure that the addresses contain the expected domain names or other address information. It is important to check this information because the client authenticates to these addresses and may disclose information such as user name/password pairs. If the address is not the expected address, this could result in information disclosure to an unintended recipient.  
+3. Examine the attributes and content of any generated [\<issuer>](../../configure-apps/file-schema/wcf/issuer.md) and [\<issuerMetadata>](../../configure-apps/file-schema/wcf/issuermetadata.md) elements. These are located within the [\<security>](../../configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md) elements for the [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or custom bindings elements. Ensure that the addresses contain the expected domain names or other address information. It is important to check this information because the client authenticates to these addresses and may disclose information such as user name/password pairs. If the address is not the expected address, this could result in information disclosure to an unintended recipient.  
   
-4. Examine any additional [\<issuedTokenParameters>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md) elements inside the commented out <`alternativeIssuedTokenParameters`> element. When using the Svcutil.exe tool to generate configuration for a federated service, if the federated service or any intermediate security token services do not specify an issuer address, but rather specify a metadata address for a security token service that exposes multiple endpoints, the resulting configuration file refers to the first endpoint. Additional endpoints are in the configuration file as commented-out <`alternativeIssuedTokenParameters`> elements.  
+4. Examine any additional [\<issuedTokenParameters>](../../configure-apps/file-schema/wcf/issuedtokenparameters.md) elements inside the commented out <`alternativeIssuedTokenParameters`> element. When using the Svcutil.exe tool to generate configuration for a federated service, if the federated service or any intermediate security token services do not specify an issuer address, but rather specify a metadata address for a security token service that exposes multiple endpoints, the resulting configuration file refers to the first endpoint. Additional endpoints are in the configuration file as commented-out <`alternativeIssuedTokenParameters`> elements.  
   
      Determine whether one of these <`issuedTokenParameters`> is preferable to the one already present in the configuration. For example, the client may prefer to authenticate to a security token service using a Windows CardSpace token rather than a user name/password pair.  
   
     > [!NOTE]
-    > Where multiple security token services must be traversed before communicating with the service, it is possible for an intermediate security token service to direct the client to an incorrect security token service. Therefore, ensure that the endpoint for the security token service in the [\<issuedTokenParameters>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md) is the expected security token service and not an unknown security token service.  
+    > Where multiple security token services must be traversed before communicating with the service, it is possible for an intermediate security token service to direct the client to an incorrect security token service. Therefore, ensure that the endpoint for the security token service in the [\<issuedTokenParameters>](../../configure-apps/file-schema/wcf/issuedtokenparameters.md) is the expected security token service and not an unknown security token service.  
   
 ### To configure an IssuedTokenClientCredential in code  
   
@@ -74,7 +74,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
   
 ### To configure the IssuedTokenClientCredential in configuration  
   
-1. Create an [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) element as a child of the [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) element in an endpoint behavior.  
+1. Create an [\<issuedToken>](../../configure-apps/file-schema/wcf/issuedtoken.md) element as a child of the [\<issuedToken>](../../configure-apps/file-schema/wcf/issuedtoken.md) element in an endpoint behavior.  
   
 2. If token caching is not required, set the `cacheIssuedTokens` attribute (of the <`issuedToken`> element) to `false`.  
   
@@ -120,7 +120,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
   
 ### To configure an X509CertificateRecipientClientCredential in configuration  
   
-1. Create a [\<scopedCertificates>](../../../../docs/framework/configure-apps/file-schema/wcf/scopedcertificates-element.md) element as a child of the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element that is itself a child of the [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element in an endpoint behavior.  
+1. Create a [\<scopedCertificates>](../../configure-apps/file-schema/wcf/scopedcertificates-element.md) element as a child of the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element that is itself a child of the [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md) element in an endpoint behavior.  
   
 2. Create an `<add>` element as a child of the `<scopedCertificates>` element. Specify values for the `storeLocation`, `storeName`, `x509FindType`, and `findValue` attributes to refer to the appropriate certificate. Set the `targetUri` attribute to a value that provides the address of the endpoint that the certificate is to be used for, as shown in the following example.  
   
@@ -146,20 +146,20 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
 ## LocalIssuer Required  
  If clients are expected to always use a local issuer, note the following: the default output of Svcutil.exe results in the local issuer not being used if the second-to-last security token service in the chain specifies an issuer address or issuer metadata address.  
   
- For more information about setting the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerAddress%2A>, <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerBinding%2A>, and <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerChannelBehaviors%2A> properties of the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> class, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
+ For more information about setting the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerAddress%2A>, <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerBinding%2A>, and <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerChannelBehaviors%2A> properties of the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> class, see [How to: Configure a Local Issuer](how-to-configure-a-local-issuer.md).  
   
 ## Scoped Certificates  
  If service certificates must be specified for communicating with any of the security token services, typically because certificate negotiation is not being used, they can be specified using the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property of the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential> class. The <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate%2A> method takes a <xref:System.Uri> and an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> as parameters. The specified certificate is used when communicating with endpoints at the specified URI. Alternatively, you can use the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate%2A> method to add a certificate to the collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property.  
   
 > [!NOTE]
-> The client idea of certificates that are scoped to a given URI applies only to applications that are making outbound calls to services that expose endpoints at those URIs. It does not apply to certificates that are used to sign issued tokens, such as those configured on the server in the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class. For more information, see [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
+> The client idea of certificates that are scoped to a given URI applies only to applications that are making outbound calls to services that expose endpoints at those URIs. It does not apply to certificates that are used to sign issued tokens, such as those configured on the server in the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class. For more information, see [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md).  
   
 ## See also
 
-- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)
-- [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
-- [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)
-- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
-- [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md)
-- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
-- [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)
+- [Federation Sample](../samples/federation-sample.md)
+- [How to: Disable Secure Sessions on a WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
+- [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
+- [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md)
+- [How to: Configure a Local Issuer](how-to-configure-a-local-issuer.md)
+- [Security Considerations with Metadata](security-considerations-with-metadata.md)
+- [How to: Secure Metadata Endpoints](how-to-secure-metadata-endpoints.md)

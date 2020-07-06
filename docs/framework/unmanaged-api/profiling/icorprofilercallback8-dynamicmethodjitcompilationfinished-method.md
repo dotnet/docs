@@ -42,7 +42,7 @@ This callback is triggered whenever JIT compilation of a dynamic method has fini
 > `functionId` values cannot be used to resolve to their metadata tokens, because dynamic methods have no metadata.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

@@ -1,5 +1,6 @@
 ---
 title: "How to: Control When the TextBox Text Updates the Source"
+description: Control the timing of binding source updates using the UpdateSourceTrigger property in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -17,12 +17,12 @@ The Visual Basic command-line compiler provides an alternative to compiling prog
   
 ## In this section
 
-[Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)  
+[Building from the Command Line](building-from-the-command-line.md)  
 Describes the Visual Basic command-line compiler, which is provided as an alternative to compiling programs from within the Visual Studio IDE.
 
-[Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)  
+[Visual Basic Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)  
 Lists compiler options in an alphabetical table
 
-[Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)  
+[Visual Basic Compiler Options Listed by Category](compiler-options-listed-by-category.md)  
 Presents compiler options in functional groups.
   

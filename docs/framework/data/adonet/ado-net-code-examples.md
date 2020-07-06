@@ -1,5 +1,6 @@
 ---
 title: "Code examples"
+description: "These examples show .NET Framework programmers how to retrieve data from a database by using ADO.NET data providers and ADO.NET Entity Framework."
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

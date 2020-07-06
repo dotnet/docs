@@ -35,7 +35,7 @@ result = object1 Is object2
  `Is` can also be used with the `TypeOf` keyword to make a `TypeOf`...`Is` expression, which tests whether an object variable is compatible with a data type.  
   
 > [!NOTE]
-> The `Is` keyword is also used in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md).  
+> The `Is` keyword is also used in the [Select...Case Statement](../statements/select-case-statement.md).  
   
 ## Example  
  The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.  
@@ -46,9 +46,9 @@ result = object1 Is object2
   
 ## See also
 
-- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)
-- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
-- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
-- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [TypeOf Operator](typeof-operator.md)
+- [IsNot Operator](isnot-operator.md)
+- [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)

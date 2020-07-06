@@ -1,5 +1,6 @@
 ---
 title: "Managing Permissions with Stored Procedures in SQL Server"
+description: Learn how to restrict access to your data and database objects by implementing access using stored procedures or user-defined functions.
 ms.date: "03/30/2017"
 ms.assetid: 08fa34e8-2ffa-470d-ba62-e511a5f8558e
 ---

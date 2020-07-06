@@ -5,17 +5,17 @@ ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
 ---
 # Attributes overview (Visual Basic)
 
-Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md).
+Attributes provide a powerful method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using a technique called *reflection*. For more information, see [Reflection (Visual Basic)](../reflection.md).
 
 Attributes have the following properties:
 
-- Attributes add metadata to your program. *Metadata* is information about the types defined in a program. All .NET assemblies contain a specified set of metadata that describes the types and type members defined in the assembly. You can add custom attributes to specify any additional information that is required. For more information, see, [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md).
+- Attributes add metadata to your program. *Metadata* is information about the types defined in a program. All .NET assemblies contain a specified set of metadata that describes the types and type members defined in the assembly. You can add custom attributes to specify any additional information that is required. For more information, see, [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md).
 
 - You can apply one or more attributes to entire assemblies, modules, or smaller program elements such as classes and properties.
 
 - Attributes can accept arguments in the same way as methods and properties.
 
-- Your program can examine its own metadata or the metadata in other programs by using reflection. For more information, see [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md).
+- Your program can examine its own metadata or the metadata in other programs by using reflection. For more information, see [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md).
 
 ## Using Attributes
 
@@ -94,7 +94,7 @@ The list of possible `target` values is shown in the following table.
 |`assembly`|Entire assembly|
 |`module`|Current assembly module (which is different from a Visual Basic Module)|
 
- The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md).
+ The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (Visual Basic)](common-attributes.md).
 
 ```vb
 Imports System.Reflection
@@ -132,18 +132,18 @@ The following list includes a few of the common uses of attributes in code:
 
 For more information, see:
 
-- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [Creating Custom Attributes (Visual Basic)](creating-custom-attributes.md)
 
-- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+- [Accessing Attributes by Using Reflection (Visual Basic)](accessing-attributes-by-using-reflection.md)
 
-- [How to: Create a C/C++ Union by Using Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md)
+- [How to: Create a C/C++ Union by Using Attributes (Visual Basic)](how-to-create-a-c-cpp-union-by-using-attributes.md)
 
-- [Common Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)
+- [Common Attributes (Visual Basic)](common-attributes.md)
 
-- [Caller Information (Visual Basic)](../../../../visual-basic/programming-guide/concepts/caller-information.md)
+- [Caller Information (Visual Basic)](../caller-information.md)
 
 ## See also
 
-- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
-- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
+- [Visual Basic Programming Guide](../../index.md)
+- [Reflection (Visual Basic)](../reflection.md)
 - [Attributes](../../../../standard/attributes/index.md)

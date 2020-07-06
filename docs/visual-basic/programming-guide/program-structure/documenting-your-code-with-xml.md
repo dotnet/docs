@@ -7,13 +7,13 @@ helpviewer_keywords:
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
 ---
-# Documenting Your Code with XML (Visual Basic)
+# Document your code with XML (Visual Basic)
 
-In Visual Basic, you can document your code using XML
+In Visual Basic, you can document your code using XML.
 
-## XML Documentation Comments
+## XML documentation comments
 
-Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).
+Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same root file name as your project. For more information, see [-doc](../../reference/command-line-compiler/doc.md).
 
 The XML file can be consumed or otherwise manipulated as XML. This file is located in the same directory as the output .exe or .dll file of your project.
 
@@ -21,7 +21,7 @@ XML documentation starts with `'''`. The processing of these comments has some r
 
 - The documentation must be well-formed XML. If the XML is not well formed, a warning is generated and the documentation file contains a comment saying that an error was encountered.
 
-- Developers are free to create their own set of tags. There is a recommended set of tags (see "Related Sections" in this topic). Some of the recommended tags have special meanings:
+- Developers are free to create their own set of tags. There is a recommended set of tags (see [XML Comment Tags](../../language-reference/xmldoc/index.md)). Some of the recommended tags have special meanings:
 
   - The \<param> tag is used to describe parameters. If used, the compiler will verify that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
 
@@ -29,21 +29,21 @@ XML documentation starts with `'''`. The processing of these comments has some r
 
   - The \<summary> tag is used by IntelliSense in Visual Studio to display additional information about a type or member.
 
-## Related Sections
+## Related sections
 
 For details on creating an XML file with documentation comments, see the following topics:
 
-- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [-doc](../../reference/command-line-compiler/doc.md)
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](../../language-reference/xmldoc/index.md)
 
-- [Processing the XML File](../../../visual-basic/programming-guide/program-structure/processing-the-xml-file.md)
+- [Processing the XML File](processing-the-xml-file.md)
 
-- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [How to: Create XML Documentation](how-to-create-xml-documentation.md)
 
 - [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)
 
 ## See also
 
-- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)
-- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+- [Developing Applications with Visual Basic](../../developing-apps/index.md)
+- [Visual Basic Programming Guide](../index.md)

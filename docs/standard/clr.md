@@ -1,5 +1,6 @@
 ---
 title: "Common Language Runtime (CLR) overview - .NET Framework"
+description: Get started with common language runtime (CLR), the .NET run-time environment. The CLR runs code and provides services to make the development process easier.
 ms.date: "04/02/2019"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -52,7 +53,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 - Garbage collection.
 
-- Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](../../docs/standard/base-types/common-type-system.md).
+- Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](base-types/common-type-system.md).
 
 ## CLR versions
 

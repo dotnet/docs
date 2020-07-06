@@ -1,5 +1,6 @@
 ---
 title: "Introducing Pluggable Protocols"
+description: Learn about pluggable protocols, which support development of applications that use internet resources regardless of the protocol details that resources use.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data requests, pluggable protocols"

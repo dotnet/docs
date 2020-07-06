@@ -15,4 +15,4 @@ The argument `BasePath` must consist of a path to a folder. You may be parsing a
 - <xref:System.CodeDom.Compiler.TempFileCollection.BasePath%2A>
 - <xref:System.Resources.ResXResourceWriter.BasePath%2A>
 - <xref:System.Resources.ResXResourceReader.BasePath%2A>
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

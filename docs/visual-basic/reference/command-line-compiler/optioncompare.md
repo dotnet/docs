@@ -42,7 +42,7 @@ Text-based string comparisons are based on a case-insensitive text sort order de
 
 ### To set -optioncompare programmatically
 
-See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).
+See [Option Compare Statement](../../language-reference/statements/option-compare-statement.md).
 
 ## Example
 
@@ -54,10 +54,10 @@ vbc -optioncompare:binary projFile.vb
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
-- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-optionexplicit](optionexplicit.md)
+- [-optionstrict](optionstrict.md)
+- [-optioninfer](optioninfer.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [Option Compare Statement](../../language-reference/statements/option-compare-statement.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

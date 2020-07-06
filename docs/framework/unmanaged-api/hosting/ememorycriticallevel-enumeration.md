@@ -37,7 +37,7 @@ typedef enum {
 |`eTaskCritical`|Indicates that the allocation is critical to running the task that has requested the allocation. If memory cannot be allocated, the CLR cannot guarantee that the task can be executed. In the event of failure, the CLR raises a <xref:System.Threading.ThreadAbortException> on the physical operation system thread.|  
   
 ## Remarks  
- The memory allocation methods defined in the [IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md) and [IHostMAlloc](ihostmalloc-interface.md) interfaces take a parameter of this type. Depending upon the severity of a failure, a host can decide whether to fail the allocation request immediately or to wait until it can be satisfied.  
+ The memory allocation methods defined in the [IHostMemoryManager](ihostmemorymanager-interface.md) and [IHostMAlloc](ihostmalloc-interface.md) interfaces take a parameter of this type. Depending upon the severity of a failure, a host can decide whether to fail the allocation request immediately or to wait until it can be satisfied.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

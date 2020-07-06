@@ -52,6 +52,6 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
 ## See also
 
 - <xref:System.Xml.Linq.XComment>
-- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML Element Literal](xml-element-literal.md)
+- [XML Literals](index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)

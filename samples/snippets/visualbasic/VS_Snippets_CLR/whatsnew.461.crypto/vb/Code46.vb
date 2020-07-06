@@ -24,5 +24,5 @@ Public Class Net46Code
         ecDsaCng.HashAlgorithm = CngAlgorithm.Sha512
         Return ecDsaCng.SignData(data)
     End Function
-End Class   
+End Class
 ' </Snippet2>

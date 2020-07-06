@@ -1,5 +1,6 @@
 ---
 title: "HttpWebRequest._AutoRedirects Field"
+description: Read about the HttpWebRequest._AutoRedirects field in .NET. This field is an Int32 value that reflects the number of redirects made for an HTTP web request.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

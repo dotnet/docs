@@ -1,5 +1,6 @@
 ---
 title: "Creating threads and passing data at start time"
+description: Understand how to create threads and pass data at the start time of an operating system process in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

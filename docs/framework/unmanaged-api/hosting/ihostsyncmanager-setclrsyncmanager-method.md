@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSyncManager::SetCLRSyncManager Method
-Sets the [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md) instance to associate with the current [IHostSyncManager](ihostsyncmanager-interface.md) instance.  
+Sets the [ICLRSyncManager](iclrsyncmanager-interface.md) instance to associate with the current [IHostSyncManager](ihostsyncmanager-interface.md) instance.  
   
 ## Syntax  
   

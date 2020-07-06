@@ -1,5 +1,6 @@
 ---
 title: "COM Interop Sample: COM Client and .NET Server"
+description: Read a code sample that shows the interoperation of a COM client and a .NET server that performs mortgage calculations.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

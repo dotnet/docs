@@ -40,4 +40,4 @@ This following example creates a custom federated binding without secure session
 
 ## See also
 
-- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Bindings and Security](bindings-and-security.md)

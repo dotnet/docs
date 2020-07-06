@@ -61,7 +61,7 @@ public class TaxRates {
 }
 ```
 
-For more information about attributes, see [Attributes](../../../docs/standard/attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
+For more information about attributes, see [Attributes](../attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
 
 ## Controlling Array Serialization
 

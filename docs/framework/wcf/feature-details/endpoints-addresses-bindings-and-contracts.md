@@ -1,5 +1,6 @@
 ---
 title: "Endpoints: Addresses, Bindings, and Contracts"
+description: Learn how all communication with a WCF service occurs through the service endpoints, which provide clients access to the functionality offered by the service.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "endpoints [WCF]"
@@ -33,7 +34,7 @@ Each endpoint consists of the following:
 
   - An <xref:System.ServiceModel.EndpointAddress.Identity%2A> property, which represents the security identity of the service and a collection of optional message headers. The optional message headers are used to provide additional and more detailed addressing information to identify or interact with the endpoint.
 
-  For more information, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).
+  For more information, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).
 
 - Binding: The binding specifies how to communicate with the endpoint. This includes:
 
@@ -43,7 +44,7 @@ Each endpoint consists of the following:
 
   - The necessary security requirements (for example, SSL or SOAP message security).
 
-  For more information, see [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md). A binding is represented in the WCF object model by the abstract base class <xref:System.ServiceModel.Channels.Binding>. For most scenarios, users can use one of the system-provided bindings. For more information, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).
+  For more information, see [WCF Bindings Overview](../bindings-overview.md). A binding is represented in the WCF object model by the abstract base class <xref:System.ServiceModel.Channels.Binding>. For most scenarios, users can use one of the system-provided bindings. For more information, see [System-Provided Bindings](../system-provided-bindings.md).
 
 - Contracts: The contract outlines what functionality the endpoint exposes to the client. A contract specifies:
 
@@ -55,37 +56,37 @@ Each endpoint consists of the following:
 
   - What type of processing or response message the client can expect.
 
-  For more information about defining a contract, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md).
+  For more information about defining a contract, see [Designing Service Contracts](../designing-service-contracts.md).
 
-- Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a WCF runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. For more information, see [ClientViaBehavior](../../../../docs/framework/wcf/diagnostics/wmi/clientviabehavior.md).
+- Behaviors: You can use endpoint behaviors to customize the local behavior of the service endpoint. Endpoint behaviors achieve this by participating in the process of building a WCF runtime. An example of an endpoint behavior is the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> property, which allows you to specify a different listening address than the SOAP or Web Services Description Language (WSDL) address. For more information, see [ClientViaBehavior](../diagnostics/wmi/clientviabehavior.md).
 
 ## Defining Endpoints
 
-You can specify the endpoint for a service either imperatively using code or declaratively through configuration. For more information, see [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md) and [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).
+You can specify the endpoint for a service either imperatively using code or declaratively through configuration. For more information, see [How to: Create a Service Endpoint in Configuration](how-to-create-a-service-endpoint-in-configuration.md) and [How to: Create a Service Endpoint in Code](how-to-create-a-service-endpoint-in-code.md).
 
 ## In This Section
 
 This section explains the purpose of bindings, endpoints, and addresses; shows how to configure a binding and an endpoint; and demonstrates how to use the `ClientVia` behavior and `ListenUri` property.
 
-[Addresses](../../../../docs/framework/wcf/feature-details/endpoint-addresses.md)\
+[Addresses](endpoint-addresses.md)\
 Describes how endpoints are addressed in WCF.
 
-[Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)\
+[Bindings](bindings.md)\
 Describes how bindings are used to specify the transport, encoding, and protocol details required for clients and services to communicate with each other.
 
-[Contracts](../../../../docs/framework/wcf/feature-details/contracts.md)\
+[Contracts](contracts.md)\
 Describes how contracts define the methods of a service.
 
-[How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)\
+[How to: Create a Service Endpoint in Configuration](how-to-create-a-service-endpoint-in-configuration.md)\
 Describes how to create a service endpoint in configuration.
 
-[How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md)\
+[How to: Create a Service Endpoint in Code](how-to-create-a-service-endpoint-in-code.md)\
 Describes how to create a service endpoint in code.
 
-[How to: Use Svcutil.exe to Validate Compiled Service Code](../../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-validate-compiled-service-code.md)\
-Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).
+[How to: Use Svcutil.exe to Validate Compiled Service Code](how-to-use-svcutil-exe-to-validate-compiled-service-code.md)\
+Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).
 
 ## See also
 
-- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)
-- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Configuring Services](../configuring-services.md)
+- [Extending Bindings](../extending/extending-bindings.md)

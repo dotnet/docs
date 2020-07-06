@@ -1,5 +1,6 @@
 ---
 title: "Generating Keys for Encryption and Decryption"
+description: Understand how to create and manage symmetric and asymmetric keys for encryption and decryption in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -21,7 +22,7 @@ Creating and managing keys is an important part of the cryptographic process. Sy
 ## Symmetric Keys  
  The symmetric encryption classes supplied by the .NET Framework require a key and a new initialization vector (IV) to encrypt and decrypt data. Whenever you create a new instance of one of the managed symmetric cryptographic classes using the parameterless constructor, a new key and IV are automatically created. Anyone that you allow to decrypt your data must possess the same key and IV and use the same algorithm. Generally, a new key and IV should be created for every session, and neither the key nor IV should be stored for use in a later session.  
   
- To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting it is unsafe, because anyone who intercepts the key and IV can then decrypt your data. For more information about exchanging data by using encryption, see [Creating a Cryptographic Scheme](../../../docs/standard/security/creating-a-cryptographic-scheme.md).  
+ To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting it is unsafe, because anyone who intercepts the key and IV can then decrypt your data. For more information about exchanging data by using encryption, see [Creating a Cryptographic Scheme](creating-a-cryptographic-scheme.md).  
   
  The following example shows the creation of a new instance of the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> class that implements the TripleDES algorithm.  
   
@@ -62,7 +63,7 @@ tdes.GenerateKey();
   
  Both methods accept a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information. An **RSACryptoServiceProvider** class can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters%2A> method.  
   
- Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more on how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
+ Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more on how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).  
   
  The following code example creates a new instance of the **RSACryptoServiceProvider** class, creating a public/private key pair, and saves the public key information to an **RSAParameters** structure.  
   
@@ -82,7 +83,7 @@ RSAParameters rsaKeyInfo = rsa.ExportParameters(false);
   
 ## See also
 
-- [Encrypting Data](../../../docs/standard/security/encrypting-data.md)
-- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
-- [How to: Store Asymmetric Keys in a Key Container](../../../docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md)
+- [Encrypting Data](encrypting-data.md)
+- [Decrypting Data](decrypting-data.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md)

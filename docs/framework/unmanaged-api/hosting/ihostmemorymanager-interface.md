@@ -23,7 +23,7 @@ Provides methods that allow the common language runtime (CLR) to make virtual me
 |Method|Description|  
 |------------|-----------------|  
 |[AcquiredVirtualAddressSpace Method](ihostmemorymanager-acquiredvirtualaddressspace-method.md)|Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.|  
-|[CreateMAlloc Method](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-createmalloc-method.md)|Gets an interface pointer to an [IHostMAlloc](ihostmalloc-interface.md) instance that is used to request memory allocations from a heap created by the host.|  
+|[CreateMAlloc Method](ihostmemorymanager-createmalloc-method.md)|Gets an interface pointer to an [IHostMAlloc](ihostmalloc-interface.md) instance that is used to request memory allocations from a heap created by the host.|  
 |[GetMemoryLoad Method](ihostmemorymanager-getmemoryload-method.md)|Gets the amount of physical memory that is currently being used, as reported by the host.|  
 |[NeedsVirtualAddressSpace Method](ihostmemorymanager-needsvirtualaddressspace-method.md)|Notifies the host that the CLR is going to attempt to use the specified memory.|  
 |[RegisterMemoryNotificationCallback Method](ihostmemorymanager-registermemorynotificationcallback-method.md)|Registers a pointer to a callback function that the host invokes to notify the CLR of the current memory load on the computer.|  

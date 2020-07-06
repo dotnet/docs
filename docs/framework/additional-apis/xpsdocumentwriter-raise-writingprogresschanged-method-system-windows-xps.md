@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter.raise__WritingProgressChanged Method (System.Windows.Xps)
+description: Understand the XpsDocumentWriter.raise__WritingProgressChanged method, which raises the WritingProgressChanged event for an XPS document in .NET.
 ms.date: 12/12/2007
 api_location:
 - system.printing.dll

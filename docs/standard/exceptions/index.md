@@ -1,5 +1,6 @@
 ---
 title: "Handling and throwing exceptions in .NET"
+description: Learn how to handle and throw exceptions in .NET. Exceptions are how .NET operations indicate failure to applications.
 ms.date: "06/19/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

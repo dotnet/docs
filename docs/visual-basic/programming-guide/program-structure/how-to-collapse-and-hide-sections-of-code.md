@@ -26,7 +26,7 @@ The `#Region` block can be used multiple times in a code file; thus, users can d
 
 ## See also
 
-- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)
-- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Conditional Compilation](conditional-compilation.md)
+- [#Region Directive](../../language-reference/directives/region-directive.md)
+- [#If...Then...#Else Directives](../../language-reference/directives/if-then-else-directives.md)
 - [Outlining](/visualstudio/ide/outlining)

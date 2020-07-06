@@ -1,5 +1,6 @@
 ---
 title: "Choosing a Transport"
+description: "Learn about criteria for choosing among the main transports that WCF offers: HTTP, TCP, and named pipes."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "choosing transports [WCF]"
@@ -14,7 +15,7 @@ This topic discusses criteria for choosing among the three main transports that 
   
  If you must connect to an existing client or server, you may not have a choice about using a particular transport. However, WCF services can be made accessible through multiple endpoints, each with a different transport. When a single transport does not cover the intended audience for your service, consider exposing the service over multiple endpoints. Client applications can then use the endpoint that is best for them.  
   
- After you choose a transport, you must select a binding that uses it. You can choose a system-provided binding (see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)), or you can build your own custom binding (see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)). You can also create your own binding. For more information, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md).  
+ After you choose a transport, you must select a binding that uses it. You can choose a system-provided binding (see [System-Provided Bindings](../system-provided-bindings.md)), or you can build your own custom binding (see [Custom Bindings](../extending/custom-bindings.md)). You can also create your own binding. For more information, see [Creating User-Defined Bindings](../extending/creating-user-defined-bindings.md).  
   
 ## Advantages of Each Transport  
  This section describes the main reasons for choosing any one of the three main transports, including a detailed decision chart for choosing among them.  
@@ -47,10 +48,10 @@ This topic discusses criteria for choosing among the three main transports that 
 |Attribute|Description|Favored transports|  
 |---------------|-----------------|------------------------|  
 |Diagnostics|Diagnostics allow you to automatically detect transport connectivity problems. All transports support the ability to send back fault information that describes connectivity. However, WCF does not include diagnostic tools for investigating network issues.|None|  
-|Hosting|All WCF endpoints must be hosted inside an application. IIS 6.0 and earlier versions support only hosting applications that use the HTTP transport. On Windows Vista, support is added for hosting all WCF transports, including TCP and named pipes. For more information, see [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md) and [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).|HTTP|  
+|Hosting|All WCF endpoints must be hosted inside an application. IIS 6.0 and earlier versions support only hosting applications that use the HTTP transport. On Windows Vista, support is added for hosting all WCF transports, including TCP and named pipes. For more information, see [Hosting in Internet Information Services](hosting-in-internet-information-services.md) and [Hosting in Windows Process Activation Service](hosting-in-windows-process-activation-service.md).|HTTP|  
 |Inspection|Inspection is the ability to extract and process information from messages during transmission. The HTTP protocol separates routing and control information from data, making it easier to build tools that inspect and analyze messages. Transports that are easy to inspect may also require less processing power in network appliances. The level of security used impacts whether messages can be inspected.|HTTP|  
 |Latency|Latency is the minimum amount of time required to complete an exchange of messages. All network operations have more or less latency depending on the choice of transport. Using duplex or one-way communication with a transport whose native message exchange pattern is request-reply, such as HTTP, can cause additional latency due to the forced correlation of messages. In this situation, consider using a transport whose native message exchange pattern is duplex, such as TCP.|TCP, Named<br /><br /> Pipe|  
-|Reach|The reach of a transport reflects how capable the transport is at connecting with other systems. The named pipe transport has very little reach; it can only connect to services running on the same machine. The TCP and HTTP transports both have excellent reach and can penetrate some NAT and firewall configurations. For more information, see [Working with NATs and Firewalls](../../../../docs/framework/wcf/feature-details/working-with-nats-and-firewalls.md).|HTTP, TCP|  
+|Reach|The reach of a transport reflects how capable the transport is at connecting with other systems. The named pipe transport has very little reach; it can only connect to services running on the same machine. The TCP and HTTP transports both have excellent reach and can penetrate some NAT and firewall configurations. For more information, see [Working with NATs and Firewalls](working-with-nats-and-firewalls.md).|HTTP, TCP|  
 |Security|Security is the ability to protect messages during transfer by supplying confidentiality, integrity, or authentication. Confidentiality protects a message from being examined, integrity protects a message from being modified, and authentication gives assurances about the sender or receiver of the message.<br /><br /> WCF supports transfer security both at the message level and transport level. Message security composes with a transport if the transport supports a buffered transfer mode. Support for transport security varies depending on the chosen transport. The HTTP, TCP, and named pipe transports have reasonable parity in their support for transport security.|All|  
 |Throughput|Throughput measures the amount of data that can be transmitted and processed in a specified period of time. Like latency, the chosen transport can affect the throughput for service operations. Maximizing throughput for a transport requires minimizing both the overhead of transmitting content as well as minimizing the time spent waiting for message exchanges to complete. Both the TCP and named pipe transports add little overhead to the message body and support a native duplex shape that reduces the wait for message replies.|TCP, named pipe|  
 |Tooling|Tooling represents third-party application support for a protocol for development, diagnosis, hosting, and other activities. Developing tools and software to work with the HTTP protocol signifies a particularly large investment.|HTTP|  
@@ -66,6 +67,6 @@ This topic discusses criteria for choosing among the three main transports that 
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
 - <xref:System.ServiceModel.NetNamedPipeBinding>
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
-- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
-- [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)
+- [Bindings](bindings.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [Creating User-Defined Bindings](../extending/creating-user-defined-bindings.md)

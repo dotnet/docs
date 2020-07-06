@@ -1,5 +1,6 @@
 ---
 title: "Sessions, Instancing, and Concurrency"
+description: Learn about sessions, instancing, and concurrency, how to use them, and the interactions between them in WFC.
 ms.date: "03/30/2017"
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
 ---
@@ -103,9 +104,9 @@ public class CalculatorService : ICalculatorConcurrency
   
 ## See also
 
-- [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)
-- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
-- [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
-- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)
-- [Instancing](../../../../docs/framework/wcf/samples/instancing.md)
-- [Session](../../../../docs/framework/wcf/samples/session.md)
+- [Using Sessions](../using-sessions.md)
+- [How to: Create a Service That Requires Sessions](how-to-create-a-service-that-requires-sessions.md)
+- [How to: Control Service Instancing](how-to-control-service-instancing.md)
+- [Concurrency](../samples/concurrency.md)
+- [Instancing](../samples/instancing.md)
+- [Session](../samples/session.md)

@@ -1,6 +1,6 @@
 ---
 title: Common Type System
-description: Learn about the type system in .NET.
+description: Explore the type system in .NET. Read about types in .NET (value types or reference types), type definition, type members, and type member characteristics.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -261,7 +261,7 @@ The common type system defines how types are declared, used, and managed in the 
 
 ### Events
 
- An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event. Events are often used to inform other types of state changes. For more information, see [Events](../../../docs/standard/events/index.md).  
+ An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event. Events are often used to inform other types of state changes. For more information, see [Events](../events/index.md).  
 
 ### Nested types
 
@@ -301,5 +301,5 @@ The common type system defines how types are declared, used, and managed in the 
 ## See also
 
 - [.NET API Browser](/dotnet/api)
-- [Common Language Runtime](../../../docs/standard/clr.md)
-- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Common Language Runtime](../clr.md)
+- [Type Conversion in .NET](type-conversion.md)

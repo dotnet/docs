@@ -26,7 +26,7 @@ Provides methods that allow a host to associate a set of tasks with an identifie
 |[EndConnection Method](iclrdebugmanager-endconnection-method.md)|Removes the association between a list of tasks and an identifier and a friendly name.|  
 |[GetDacl Method](iclrdebugmanager-getdacl-method.md)|This method is not implemented.|  
 |[IsDebuggerAttached Method](iclrdebugmanager-isdebuggerattached-method.md)|Gets a value that indicates whether a debugger is attached to the process.|  
-|[SetConnectionTasks Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setconnectiontasks-method.md)|Associates a list of [ICLRTask](iclrtask-interface.md) instances with an identifier and a friendly name.|  
+|[SetConnectionTasks Method](iclrdebugmanager-setconnectiontasks-method.md)|Associates a list of [ICLRTask](iclrtask-interface.md) instances with an identifier and a friendly name.|  
 |[SetDacl Method](iclrdebugmanager-setdacl-method.md)|This method is not implemented.|  
 |[SetSymbolReadingPolicy Method](iclrdebugmanager-setsymbolreadingpolicy-method.md)|Sets the policy for reading program database (PDB) files. The policy determines whether information about line numbers and files is included in call stacks.|  
   

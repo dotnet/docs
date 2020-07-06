@@ -24,4 +24,4 @@ Your call to a dynamic-link library (DLL) indicated to use a number instead of a
   
 ## See also
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)

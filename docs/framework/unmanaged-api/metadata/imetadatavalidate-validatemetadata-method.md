@@ -26,7 +26,7 @@ HRESULT ValidateMetaData ();
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -36,4 +36,4 @@ HRESULT ValidateMetaData ();
   
 ## See also
 
-- [IMetaDataValidate Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-interface.md)
+- [IMetaDataValidate Interface](imetadatavalidate-interface.md)

@@ -1,5 +1,6 @@
 ---
 title: "Platform Invoke Examples"
+description: See a platform invoke example that demonstrates how to define and call the MessageBox function in User32.dll.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

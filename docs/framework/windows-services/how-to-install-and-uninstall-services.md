@@ -20,7 +20,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
 > [!WARNING]
 > If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Apps** in Settings to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.
 
-To use the steps in this article, you first need to add a service installer to your Windows service. For more information, see [Walkthrough: Creating a Windows service app](../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).
+To use the steps in this article, you first need to add a service installer to your Windows service. For more information, see [Walkthrough: Creating a Windows service app](walkthrough-creating-a-windows-service-application-in-the-component-designer.md).
 
 You can't run Windows service projects directly from the Visual Studio development environment by pressing F5. Before you can run the project, you must install the service in the project.
 
@@ -91,7 +91,7 @@ You can't run Windows service projects directly from the Visual Studio developme
 
 ## See also
 
-- [Introduction to Windows service applications](../windows-services/introduction-to-windows-service-applications.md)
-- [How to: Create Windows services](../windows-services/how-to-create-windows-services.md)
-- [How to: Add installers to your service application](../windows-services/how-to-add-installers-to-your-service-application.md)
+- [Introduction to Windows service applications](introduction-to-windows-service-applications.md)
+- [How to: Create Windows services](how-to-create-windows-services.md)
+- [How to: Add installers to your service application](how-to-add-installers-to-your-service-application.md)
 - [Installutil.exe (Installer tool)](../tools/installutil-exe-installer-tool.md)

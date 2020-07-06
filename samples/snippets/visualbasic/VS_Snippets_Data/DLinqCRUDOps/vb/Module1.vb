@@ -6,8 +6,8 @@
 
         Dim cust As Customer = _
         (From c In db.Customers _
-        Where c.CustomerID = "ALFKI" _
-        Select c) _
+         Where c.CustomerID = "ALFKI" _
+         Select c) _
         .First()
 
         ' Change the name of the contact.

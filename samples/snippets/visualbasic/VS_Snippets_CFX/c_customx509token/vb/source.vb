@@ -13,7 +13,7 @@ Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples
 
     '<snippet1>

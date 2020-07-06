@@ -456,7 +456,7 @@ Public Class Form1
         Dim view As DataView = query.AsDataView()
 
         Dim found As Integer = view.Find("Zhu")
-        
+
         ' </SnippetLDVFromQueryOrderByFind>
     End Sub
 
@@ -475,7 +475,7 @@ Public Class Form1
         Dim criteria As Object() = New Object() {"Red"}
 
         Dim foundRowsView As DataRowView() = view.FindRows(criteria)
-            ' </SnippetLDVFromQueryFindRows>
+        ' </SnippetLDVFromQueryFindRows>
     End Sub
 
     Private Sub button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button23.Click
@@ -511,7 +511,7 @@ Public Class Form1
         ' </SnippetLDVClearRowFilter2>
     End Sub
 
-    
+
 
     Private Sub button26_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button26.Click
         ' <SnippetLDVClearSort2>
@@ -548,8 +548,8 @@ Public Class Form1
         ' Query for red colored products.
         Dim redProductsQuery = _
         From product In products.AsEnumerable() _
-                Order By product.Field(Of Decimal)("ListPrice") _
-                Select product
+        Order By product.Field(Of Decimal)("ListPrice") _
+        Select product
 
         Dim boundView As DataView = redProductsQuery.AsDataView()
 
@@ -585,9 +585,9 @@ Public Class Form1
         ' Query for red colored products.
         Dim redProductsQuery = _
         From product In products.AsEnumerable() _
-                Where product.Field(Of String)("Color") = "Red" _
-                Order By product.Field(Of Decimal)("ListPrice") _
-                Select product
+        Where product.Field(Of String)("Color") = "Red" _
+        Order By product.Field(Of Decimal)("ListPrice") _
+        Select product
         ' Create a table and view from the query.
         Dim redProducts As DataTable = redProductsQuery.CopyToDataTable()
         Dim view As DataView = New DataView(redProducts)

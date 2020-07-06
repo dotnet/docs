@@ -145,9 +145,9 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
-- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)
-- [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [Declare Statement](../../language-reference/statements/declare-statement.md)
+- [Auto](../../language-reference/modifiers/auto.md)
+- [Alias](../../language-reference/statements/alias-clause.md)
+- [COM Interop](index.md)
 - [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)
 - [Marshaling a Delegate as a Callback Method](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)

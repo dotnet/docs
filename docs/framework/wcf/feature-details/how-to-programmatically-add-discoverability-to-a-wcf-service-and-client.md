@@ -336,5 +336,5 @@ namespace DiscoveryClientApp
 
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [WCF Discovery Object Model](wcf-discovery-object-model.md)

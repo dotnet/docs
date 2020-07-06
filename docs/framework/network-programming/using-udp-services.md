@@ -1,5 +1,6 @@
 ---
 title: "Using UDP Services"
+description: The UdpClient class abstracts the details to create a socket to request and receive data using UDP in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

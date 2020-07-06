@@ -24,4 +24,4 @@ The following example shows one way that user code can poll a cancellation token
   
 ## See also
 
-- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Cancellation in Managed Threads](cancellation-in-managed-threads.md)

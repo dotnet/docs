@@ -7,13 +7,13 @@ ms.assetid: 944fa5ca-2c34-4268-8897-e005a61b470d
 This section briefly explains the concepts associated with Windows Communication Foundation (WCF) security.  
   
 ## In This Section  
- [Security Concepts Used in WCF](../../../../docs/framework/wcf/feature-details/security-concepts-used-in-wcf.md)  
+ [Security Concepts Used in WCF](security-concepts-used-in-wcf.md)  
  A high-level overview of concepts used in security implementations.  
   
- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
+ [Distributed Application Security](distributed-application-security.md)  
  An overview of how WCF provides security in distributed application topography.  
   
- [Security Terminology](../../../../docs/framework/wcf/feature-details/wcf-security-terminology.md)  
+ [Security Terminology](wcf-security-terminology.md)  
  A glossary of terms used when discussing WCF security.  
   
 ## Reference  
@@ -28,10 +28,10 @@ This section briefly explains the concepts associated with Windows Communication
  <xref:System.Security>  
   
 ## Related Sections  
- [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)  
+ [Extending Security](../extending/extending-security.md)  
   
 ## See also
 
-- [Security](../../../../docs/framework/wcf/feature-details/security.md)
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security](security.md)
+- [Security Overview](security-overview.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

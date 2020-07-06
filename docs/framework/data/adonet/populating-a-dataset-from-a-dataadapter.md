@@ -1,5 +1,6 @@
 ---
 title: "Populating a DataSet from a DataAdapter"
+description: Learn how to populate a DataSet from a DataAdapter in ADO.NET, which provides a consistent relational programming model independent of the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

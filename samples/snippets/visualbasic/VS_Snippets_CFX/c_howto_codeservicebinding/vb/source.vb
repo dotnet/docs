@@ -3,7 +3,7 @@
 Namespace Samples
     '<snippet1>
     <ServiceContract()> _
-  Public Interface ICalculator
+    Public Interface ICalculator
 
         <OperationContract()> _
         Function Add(ByVal n1 As Double, _

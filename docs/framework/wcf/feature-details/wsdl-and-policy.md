@@ -68,6 +68,6 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
   
 ## See also
 
-- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)
-- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)
-- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+- [Custom WSDL Publication](../samples/custom-wsdl-publication.md)
+- [How to: Export Custom WSDL](../extending/how-to-export-custom-wsdl.md)
+- [How to: Import Custom WSDL](../extending/how-to-import-custom-wsdl.md)

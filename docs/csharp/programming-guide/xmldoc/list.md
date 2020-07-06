@@ -42,11 +42,11 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
   
 ## Remarks
 
-The \<listheader> block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.
+The `<listheader>` block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.
 
-Each item in the list is specified with an \<item> block. When creating a definition list, you will need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`.
+Each item in the list is specified with an `<item>` block. When creating a definition list, you will need to specify both `term` and `description`. However, for a table, bulleted list, or numbered list, you only need to supply an entry for `description`.
 
-A list or table can have as many \<item> blocks as needed.
+A list or table can have as many `<item>` blocks as needed.
 
 Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.
 

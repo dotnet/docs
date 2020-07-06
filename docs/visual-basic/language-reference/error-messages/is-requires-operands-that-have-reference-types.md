@@ -19,6 +19,6 @@ The `Is` comparison operator determines whether two object variables refer to th
   
 ## See also
 
-- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
-- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)
-- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Is Operator](../operators/is-operator.md)
+- [Like Operator](../operators/like-operator.md)
+- [Comparison Operators](../operators/comparison-operators.md)

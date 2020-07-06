@@ -33,6 +33,9 @@ In order to identify the order projects should be migrated, you can use the foll
 
 - [Dependency Diagrams in Visual Studio](/visualstudio/modeling/create-layer-diagrams-from-your-code) can create a directed graph of the code in a solution.
 - Run `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` to generate a json document that includes list of project references.
+- Run [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) with the `-r DGML` switch to retrieve a dependency diagram of the assemblies. For more information, see [here](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
+
+Once you have dependency information, you can use that information to start at the leaf nodes and work your way up the dependency tree applying the steps in the next section.
 
 ## Per project steps
 

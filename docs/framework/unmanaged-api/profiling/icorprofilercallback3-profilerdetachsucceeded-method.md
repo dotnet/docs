@@ -36,7 +36,7 @@ HRESULT ProfilerDetachSucceeded();
  After the profiler returns from this callback, the CLR releases the profiler object and unloads the profiler DLL. Therefore, the profiler must not perform any actions that would cause execution to occur inside the profiler DLL after it returns from this callback. For example, it must not create threads or register timer callbacks.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -46,7 +46,7 @@ HRESULT ProfilerDetachSucceeded();
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../metadata/metadata-interfaces.md)
 - [ICorProfilerInfo3 Interface](icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](profiling-interfaces.md)
 - [Profiling](index.md)

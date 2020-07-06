@@ -1,5 +1,6 @@
 ---
 title: "Threads and threading"
+description: Learn about threading, such as processes & threads, when to use multiple threads, & how to use multithreading to increase responsiveness or throughput in .NET.
 ms.date: "11/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

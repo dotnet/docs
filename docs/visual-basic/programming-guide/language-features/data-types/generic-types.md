@@ -52,7 +52,7 @@ A *generic type* is a single programming element that adapts to perform the same
   
  You can now use `stringQ` to work exclusively with `String` values. Because `stringQ` is specific for `String` instead of being generalized for `Object` values, you do not have late binding or type conversion. This saves execution time and reduces run-time errors.  
   
- For more information on using a generic type, see [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md).  
+ For more information on using a generic type, see [How to: Use a Generic Class](how-to-use-a-generic-class.md).  
   
 ## Example of a Generic Class  
  The following example shows a skeleton definition of a generic class.  
@@ -67,12 +67,12 @@ A *generic type* is a single programming element that adapts to perform the same
   
  [!code-vb[VbVbalrDataTypes#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#4)]  
   
- For a more complete example, see [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md).  
+ For a more complete example, see [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](how-to-define-a-class-that-can-provide-identical-functionality.md).  
   
 ## Eligible Programming Elements  
  You can define and use generic classes, structures, interfaces, procedures, and delegates. Note that the .NET Framework defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=nameWithType> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it is already available in <xref:System.Collections.Generic?displayProperty=nameWithType>.  
   
- Procedures are not types, but you can define and use generic procedures. See [Generic Procedures in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-procedures.md).  
+ Procedures are not types, but you can define and use generic procedures. See [Generic Procedures in Visual Basic](generic-procedures.md).  
   
 ## Advantages of Generic Types  
  A generic type serves as a basis for declaring several different programming elements, each of which operates on a specific data type. The alternatives to a generic type are:  
@@ -118,9 +118,9 @@ A *generic type* is a single programming element that adapts to perform the same
   
 - The type argument must be a *reference type*, or it must be a *value type*  
   
- If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.  
+ If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.  
   
- For more information on constraints, see [Type List](../../../../visual-basic/language-reference/statements/type-list.md).  
+ For more information on constraints, see [Type List](../../../language-reference/statements/type-list.md).  
   
 ### Example of Multiple Constraints  
  The following example shows a skeleton definition of a generic class with a constraint list on the type parameter. In the code that creates an instance of this class, the type argument must implement both the <xref:System.IComparable> and <xref:System.IDisposable> interfaces, be a reference type, and expose an accessible parameterless constructor.  
@@ -142,14 +142,14 @@ A *generic type* is a single programming element that adapts to perform the same
   
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
-- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
-- [As](../../../../visual-basic/language-reference/statements/as-clause.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Data Types](index.md)
+- [Type Characters](type-characters.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](type-conversions.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [Data Types](../../../language-reference/data-types/index.md)
+- [Of](../../../language-reference/statements/of-clause.md)
+- [As](../../../language-reference/statements/as-clause.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
 - [Covariance and Contravariance](../../concepts/covariance-contravariance/index.md)
-- [Iterators](../../../../visual-basic/programming-guide/concepts/iterators.md)
+- [Iterators](../../concepts/iterators.md)

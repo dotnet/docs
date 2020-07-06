@@ -16,7 +16,7 @@ Public Interface IService
     <OperationContract()> _
     <WebInvoke()> _
     Function EchoWithPost(ByVal s As String) As String
-  end interface
+end interface
 
 '</Snippet0>
 '<Snippet1>

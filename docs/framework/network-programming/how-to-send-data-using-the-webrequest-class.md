@@ -1,5 +1,6 @@
 ---
 title: "How to: Send data by using the WebRequest class"
+description: Learn how to send data to a server by using the WebRequest class in the .NET Framework. This procedure is commonly used to post data to a webpage.
 ms.date: "03/25/2019"
 dev_langs:
   - "csharp"

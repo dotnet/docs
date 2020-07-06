@@ -1,5 +1,6 @@
 ---
 title: "Creating a DataTable"
+description: Learn to create a DataTable in ADO.NET, which represents one table of in-memory relational data, to use independently or by other .NET Framework objects.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

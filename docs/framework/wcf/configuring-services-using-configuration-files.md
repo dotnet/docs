@@ -1,5 +1,6 @@
 ---
 title: "Configuring Services Using Configuration Files"
+description: Learn how a configuration file for a WCF service gives you the flexibility of providing endpoint and service behavior data during deployment.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuring services [WCF]"

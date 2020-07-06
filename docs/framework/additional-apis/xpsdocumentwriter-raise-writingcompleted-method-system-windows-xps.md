@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter.raise__WritingCompleted Method (System.Windows.Xps)
+description: Understand the XpsDocumentWriter.raise__WritingCompleted method, which raises the WritingCompleted event for an XML Paper Specification (XPS) document in .NET.
 TOCTitle: raise__WritingCompleted Method
 ms.date: 12/12/2007
 api_location:

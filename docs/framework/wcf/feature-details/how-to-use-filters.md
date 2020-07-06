@@ -321,4 +321,4 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

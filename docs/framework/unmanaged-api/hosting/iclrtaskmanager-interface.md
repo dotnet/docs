@@ -22,14 +22,14 @@ Provides methods that allow the host to request explicitly that the common langu
   
 |Method|Description|  
 |------------|-----------------|  
-|[CreateTask Method](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-createtask-method.md)|Requests explicitly that the CLR create a new [ICLRTask](iclrtask-interface.md) instance.|  
+|[CreateTask Method](iclrtaskmanager-createtask-method.md)|Requests explicitly that the CLR create a new [ICLRTask](iclrtask-interface.md) instance.|  
 |[GetCurrentTask Method](iclrtaskmanager-getcurrenttask-method.md)|Gets the `ICLRTask` instance that represents the task that is currently executing.|  
 |[GetCurrentTaskType Method](iclrtaskmanager-getcurrenttasktype-method.md)|Gets the type of the task that is currently executing.|  
 |[SetLocale Method](iclrtaskmanager-setlocale-method.md)|Notifies the CLR that the host has modified the locale identifier on the currently executing task.|  
 |[SetUILocale Method](iclrtaskmanager-setuilocale-method.md)|Notifies the common language runtime that the host has modified the user interface locale identifier on the currently executing task.|  
   
 ## Remarks  
- Each task that is running in a hosted environment has representations both on the host side (an instance of [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)) and on the CLR side (an instance of [ICLRTask](iclrtask-interface.md)). Either the host or the CLR can initiate the creation of a task, but the host-side representation must be associated with a corresponding CLR-side representation to ensure successful communication between the host and the CLR regarding the task. The two objects must be created and instantiated before managed code can execute on an operating system thread.  
+ Each task that is running in a hosted environment has representations both on the host side (an instance of [IHostTask](ihosttask-interface.md)) and on the CLR side (an instance of [ICLRTask](iclrtask-interface.md)). Either the host or the CLR can initiate the creation of a task, but the host-side representation must be associated with a corresponding CLR-side representation to ensure successful communication between the host and the CLR regarding the task. The two objects must be created and instantiated before managed code can execute on an operating system thread.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

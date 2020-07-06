@@ -1,7 +1,7 @@
 ---
 title: Remove the .NET Core runtime and SDK
 description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 04/28/2020
 zone_pivot_groups: operating-systems-set-one

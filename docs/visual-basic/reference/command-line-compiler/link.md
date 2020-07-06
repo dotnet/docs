@@ -91,4 +91,4 @@ vbc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.vb
 - [-noconfig](noconfig.md)
 - [-libpath](libpath.md)
 - [Sample Compilation Command Lines](sample-compilation-command-lines.md)
-- [Introduction to COM Interop](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
+- [Introduction to COM Interop](../../programming-guide/com-interop/introduction-to-com-interop.md)

@@ -1,5 +1,6 @@
 ---
 title: "Framework Design Guidelines"
+description: See framework design guidelines for designing libraries that extend and interact with .NET, to ensure API consistency and ease of use.
 titleSuffix: ""
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
@@ -17,25 +18,25 @@ This section provides guidelines for designing libraries that extend and interac
  These guidelines are excerpted from the book *Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition*, by Krzysztof Cwalina and Brad Abrams.  
   
 ## In This Section  
- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)  
+ [Naming Guidelines](naming-guidelines.md)  
  Provides guidelines for naming assemblies, namespaces, types, and members in class libraries.  
   
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+ [Type Design Guidelines](type.md)  
  Provides guidelines for using static and abstract classes, interfaces, enumerations, structures, and other types.  
   
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
+ [Member Design Guidelines](member.md)  
  Provides guidelines for designing and using properties, methods, constructors, fields, events, operators, and parameters.  
   
- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
+ [Designing for Extensibility](designing-for-extensibility.md)  
  Discusses extensibility mechanisms such as subclassing, using events, virtual members, and callbacks, and explains how to choose the mechanisms that best meet your framework's requirements.  
   
- [Design Guidelines for Exceptions](../../../docs/standard/design-guidelines/exceptions.md)  
+ [Design Guidelines for Exceptions](exceptions.md)  
  Describes design guidelines for designing, throwing, and catching exceptions.  
   
- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)  
+ [Usage Guidelines](usage-guidelines.md)  
  Describes guidelines for using common types such as arrays, attributes, and collections, supporting serialization, and overloading equality operators.  
   
- [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)  
+ [Common Design Patterns](common-design-patterns.md)  
  Provides guidelines for choosing and implementing dependency properties.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
@@ -44,5 +45,5 @@ This section provides guidelines for designing libraries that extend and interac
   
 ## See also
 
-- [Overview](../../../docs/framework/get-started/overview.md)
-- [Development Guide](../../../docs/framework/development-guide.md)
+- [Overview](../../framework/get-started/overview.md)
+- [Development Guide](../../framework/development-guide.md)

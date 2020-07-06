@@ -1,5 +1,6 @@
 ---
 title: "Exception handling (Task Parallel Library)"
+description: Explore exception handling using the Task Parallel Library (TPL) in .NET. See nested aggregate exceptions, inner exceptions, unobserved task exceptions, & more.
 ms.date: 04/20/2020
 ms.technology: dotnet-standard
 dev_langs: 
@@ -57,7 +58,7 @@ Even if you use a continuation to observe an exception in a child task, the exce
 
 ## Exceptions that indicate cooperative cancellation
 
-When user code in a task responds to a cancellation request, the correct procedure is to throw an <xref:System.OperationCanceledException> passing in the cancellation token on which the request was communicated. Before it attempts to propagate the exception, the task instance compares the token in the exception to the one that was passed to it when it was created. If they are the same, the task propagates a <xref:System.Threading.Tasks.TaskCanceledException> wrapped in the <xref:System.AggregateException>, and it can be seen when the inner exceptions are examined. However, if the calling thread is not waiting on the task, this specific exception will not be propagated. For more information, see [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md).
+When user code in a task responds to a cancellation request, the correct procedure is to throw an <xref:System.OperationCanceledException> passing in the cancellation token on which the request was communicated. Before it attempts to propagate the exception, the task instance compares the token in the exception to the one that was passed to it when it was created. If they are the same, the task propagates a <xref:System.Threading.Tasks.TaskCanceledException> wrapped in the <xref:System.AggregateException>, and it can be seen when the inner exceptions are examined. However, if the calling thread is not waiting on the task, this specific exception will not be propagated. For more information, see [Task Cancellation](task-cancellation.md).
 
 [!code-csharp[TPL_Exceptions#4](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/exceptions.cs#4)]
 [!code-vb[TPL_Exceptions#4](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/tpl_exceptions.vb#4)]
@@ -98,4 +99,4 @@ In some scenarios, such as when hosting untrusted plug-ins, benign exceptions mi
 
 ## See also
 
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)

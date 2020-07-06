@@ -43,9 +43,9 @@ Console.WriteLine(total);
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>
 - <xref:System.Xml.XPath.XPathNavigator>
-- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)
-- [Select XML Data Using XPathNavigator](../../../../docs/standard/data/xml/select-xml-data-using-xpathnavigator.md)
-- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)
-- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)
-- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)
-- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+- [Process XML Data Using the XPath Data Model](process-xml-data-using-the-xpath-data-model.md)
+- [Select XML Data Using XPathNavigator](select-xml-data-using-xpathnavigator.md)
+- [Matching Nodes using XPathNavigator](matching-nodes-using-xpathnavigator.md)
+- [Node Types Recognized with XPath Queries](node-types-recognized-with-xpath-queries.md)
+- [XPath Queries and Namespaces](xpath-queries-and-namespaces.md)
+- [Compiled XPath Expressions](compiled-xpath-expressions.md)

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::EnumerateLoadedRuntimes Method
-Returns an enumeration that includes a valid [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface pointer for each version of the common language runtime (CLR) that is loaded in a given process. This method supersedes the [GetVersionFromProcess](getversionfromprocess-function.md) function.  
+Returns an enumeration that includes a valid [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface pointer for each version of the common language runtime (CLR) that is loaded in a given process. This method supersedes the [GetVersionFromProcess](getversionfromprocess-function.md) function.  
   
 ## Syntax  
   

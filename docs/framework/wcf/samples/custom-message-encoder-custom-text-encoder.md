@@ -1,5 +1,6 @@
 ---
 title: "Custom Message Encoder: Custom Text Encoder"
+description: Use this sample to implement a custom text message encoder using WCF. This encoder supports all platform-supported character encodings for interoperability.
 ms.date: "03/30/2017"
 ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
 ---
@@ -36,11 +37,11 @@ The custom encoder implementation consists of a message encoder factory, a messa
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
-2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
 ## Message Encoder Factory and the Message Encoder
 
@@ -208,7 +209,7 @@ CustomBinding binding = new CustomBinding(bindingElements);
 
 Any type that derives from <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> is responsible for updating the version of the SOAP binding in the WSDL document generated for the service. This is done by implementing the `ExportEndpoint` method on the <xref:System.ServiceModel.Description.IWsdlExportExtension> interface and then modifying the generated WSDL. In this sample, the `CustomTextMessageBindingElement` uses the WSDL export logic from the `TextMessageEncodingBindingElement`.
 
-For this sample, the client configuration is hand configured. You cannot use Svcutil.exe to generate the client configuration because the `CustomTextMessageBindingElement` does not export a policy assertion to describe its behavior. You should generally implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a custom binding element to export a custom policy assertion that describes the behavior or capability implemented by the binding element. For an example of how to export a policy assertion for a custom binding element, see the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.
+For this sample, the client configuration is hand configured. You cannot use Svcutil.exe to generate the client configuration because the `CustomTextMessageBindingElement` does not export a policy assertion to describe its behavior. You should generally implement the <xref:System.ServiceModel.Description.IPolicyExportExtension> interface on a custom binding element to export a custom policy assertion that describes the behavior or capability implemented by the binding element. For an example of how to export a policy assertion for a custom binding element, see the [Transport: UDP](transport-udp.md) sample.
 
 ## Message Encoding Binding Configuration Handler
 The previous section shows how to use the custom text message encoder programmatically. The `CustomTextMessageEncodingBindingSection` implements a configuration handler that allows you to specify the use of a custom text message encoder within a configuration file. The `CustomTextMessageEncodingBindingSection` class derives from the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class. The `BindingElementType` property informs the configuration system of the type of binding element to create for this section.

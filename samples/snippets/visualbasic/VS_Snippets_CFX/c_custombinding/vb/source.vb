@@ -8,13 +8,13 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
 
 '</snippet1>
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution := True)>
+<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 NotInheritable Public Class CustomBindingCreator
-    
-    Private Sub New() 
-    
-    End Sub 
-     
+
+    Private Sub New()
+
+    End Sub
+
     '<snippet2>
     ' This method creates a CustomBinding using a SymmetricSecurityBindingElement.
     ' It is largely equivalent to doing the following:
@@ -25,35 +25,35 @@ NotInheritable Public Class CustomBindingCreator
     ' It differs in that it uses MessageProtectionOrder.SignBeforeEncrypt rather
     ' than MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature.
     ' <snippet3>
-    Public Shared Function CreateCustomBinding() As Binding 
+    Public Shared Function CreateCustomBinding() As Binding
         ' Create an empty BindingElementCollection to populate, 
         ' then create a custom binding from it.
         Dim outputBec As New BindingElementCollection()
-        
+
         ' Create a SymmetricSecurityBindingElement.
         Dim ssbe As New SymmetricSecurityBindingElement()
-        
+
         ' Set the algorithm suite to one that uses 128-bit keys.
         ssbe.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic128
-        
+
         ' Set MessageProtectionOrder to SignBeforeEncrypt.
         ssbe.MessageProtectionOrder = MessageProtectionOrder.SignBeforeEncrypt
-        
+
         ' Use a Kerberos token as the protection token.
         ssbe.ProtectionTokenParameters = New KerberosSecurityTokenParameters()
-        
+
         ' Add the SymmetricSecurityBindingElement to the BindingElementCollection.
         outputBec.Add(ssbe)
         outputBec.Add(New TextMessageEncodingBindingElement())
         outputBec.Add(New HttpTransportBindingElement())
-        
+
         ' Create a CustomBinding and return it; otherwise, return null.
         Return New CustomBinding(outputBec)
-    
-    End Function 
+
+    End Function
     ' </snippet3>
-'</snippet2>
-End Class 
+    '</snippet2>
+End Class
 Public NotInheritable Class CustomBindingCreator2
 
     Private Sub New()

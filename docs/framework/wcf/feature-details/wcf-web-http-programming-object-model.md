@@ -79,7 +79,7 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
 ### Extending WebHttpBehavior  
  <xref:System.ServiceModel.Description.WebHttpBehavior> is extensible by using a number of virtual methods: <xref:System.ServiceModel.Description.WebHttpBehavior.GetOperationSelector%28System.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, and <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>. Developers can derive a class from <xref:System.ServiceModel.Description.WebHttpBehavior> and override these methods to customize the default behavior.  
   
- The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is an example of extending <xref:System.ServiceModel.Description.WebHttpBehavior>. <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. The [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md) is an example of using this extensibility point.  
+ The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is an example of extending <xref:System.ServiceModel.Description.WebHttpBehavior>. <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. The [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md) is an example of using this extensibility point.  
   
 > [!WARNING]
 > When using the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, <xref:System.UriTemplate> are not supported within <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes.  
@@ -88,7 +88,7 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
  The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> class uses <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to dispatch calls to service operations.  
   
 ## Compatibility  
- The WCF WEB HTTP Programming Model does not use SOAP-based messages and therefore does not support the WS-* protocols. You can however, expose the same contract by two different endpoint: one using SOAP and the other not using SOAP. See [How to: Expose a Contract to SOAP and Web Clients](../../../../docs/framework/wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for an example.  
+ The WCF WEB HTTP Programming Model does not use SOAP-based messages and therefore does not support the WS-* protocols. You can however, expose the same contract by two different endpoint: one using SOAP and the other not using SOAP. See [How to: Expose a Contract to SOAP and Web Clients](how-to-expose-a-contract-to-soap-and-web-clients.md) for an example.  
   
 ## Security  
 
@@ -101,4 +101,4 @@ Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols 
 - <xref:System.ServiceModel.Web.WebInvokeAttribute>
 - <xref:System.ServiceModel.Description.WebHttpBehavior>
 - <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>
-- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+- [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)

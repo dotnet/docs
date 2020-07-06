@@ -21,7 +21,7 @@ Because of these limitations, the tool may not be able to uninstall all of the .
 
 ## Install the tool
 
-You can download the .NET Core Uninstall Tool from [here](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
+You can download the .NET Core Uninstall Tool from [the tool's releases page](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
 
 > [!NOTE]
 > The tool requires elevation to uninstall .NET Core SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. See also [Elevated access for dotnet commands](../tools/elevated-access.md). For more information, see the [detailed installation instructions](https://aka.ms/dotnet-core-uninstall-tool).
@@ -152,11 +152,11 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
@@ -223,11 +223,11 @@ Notes:
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 
@@ -335,11 +335,11 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
@@ -365,7 +365,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 * **`--hosting-bundle`**
 
-  Removes .NET Core runtime and hosting bundles only.
+  Removes .NET Core hosting bundles only.
 
 * **`--major-minor <MAJOR_MINOR>`**
 
@@ -409,11 +409,11 @@ Notes:
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+* **`--all-below <VERSION>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+* **`--all-but <VERSIONS>[ <VERSION>...]`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 

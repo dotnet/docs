@@ -48,7 +48,7 @@ HRESULT SetActionOnFailure (
 |E_INVALIDARG|A policy action cannot be set for the specified operation, or an invalid policy action was specified for the operation.|  
   
 ## Remarks  
- By default, the CLR throws an exception when it fails to allocate a resource such as memory. `SetActionOnFailure` allows the host to override this behavior by specifying the policy action to take upon failure. The following table shows the combinations of [EClrFailure](eclrfailure-enumeration.md) and [EPolicyAction](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md) values that are supported. (The FAIL_ prefix is omitted from [EClrFailure](eclrfailure-enumeration.md) values.)  
+ By default, the CLR throws an exception when it fails to allocate a resource such as memory. `SetActionOnFailure` allows the host to override this behavior by specifying the policy action to take upon failure. The following table shows the combinations of [EClrFailure](eclrfailure-enumeration.md) and [EPolicyAction](epolicyaction-enumeration.md) values that are supported. (The FAIL_ prefix is omitted from [EClrFailure](eclrfailure-enumeration.md) values.)  
   
 ||NonCriticalResource|CriticalResource|FatalRuntime|OrphanedLock|StackOverflow|AccessViolation|CodeContract|  
 |-|-------------------------|----------------------|------------------|------------------|-------------------|---------------------|------------------|  

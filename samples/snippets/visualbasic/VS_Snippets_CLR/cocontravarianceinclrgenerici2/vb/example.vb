@@ -8,10 +8,10 @@ End Class
 Class Circle
     Inherits Shape
 
-    Private r As Double 
+    Private r As Double
     Public Sub New(ByVal radius As Double)
         r = radius
-    End Sub 
+    End Sub
     Public ReadOnly Property Radius As Double
         Get
             Return r
@@ -41,7 +41,7 @@ Class Program
         ' IComparer(Of Circle), because type parameter T of IComparer(Of T)
         ' is contravariant.
         Dim circlesByArea As New SortedSet(Of Circle)(New ShapeAreaComparer()) _
-            From { New Circle(7.2), New Circle(100), Nothing, New Circle(.01) }
+            From {New Circle(7.2), New Circle(100), Nothing, New Circle(.01)}
 
         For Each c As Circle In circlesByArea
             Console.WriteLine(If(c Is Nothing, "Nothing", "Circle with area " & c.Area))

@@ -55,4 +55,4 @@ Refers to another file that describes the types and members in your source code.
   
 ## See also
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](index.md)

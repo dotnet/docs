@@ -36,6 +36,7 @@ namespace csrefKeywordsModifiers
     {
         void M();
     }
+    
     abstract class C : I
     {
         public abstract void M();
@@ -95,6 +96,7 @@ namespace AccessibilityDomainNamespace
         public static int publicInt;
         internal static int internalInt;
         private static int privateInt = 0;
+        
         static T1()
         {
             // T1 can access public or internal members
@@ -210,8 +212,8 @@ namespace csrefKeywordsModifiers
     //<snippet7>
     public class SampleEventArgs
     {
-        public SampleEventArgs(string s) { Text = s; }
-        public String Text { get; } // readonly
+        public SampleEventArgs(string text) { Text = text; }
+        public string Text { get; } // readonly
     }
 
     public class Publisher

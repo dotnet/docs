@@ -33,7 +33,7 @@ Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers rangin
   
 ## Programming Tips  
   
-- **Precision.** When you work with floating-point numbers, keep in mind that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).  
+- **Precision.** When you work with floating-point numbers, keep in mind that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md).  
   
 - **Widening.** The `Single` data type widens to `Double`. This means you can convert `Single` to `Double` without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
@@ -46,10 +46,10 @@ Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers rangin
 ## See also
 
 - <xref:System.Single?displayProperty=nameWithType>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)
-- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
-- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Data Types](index.md)
+- [Decimal Data Type](decimal-data-type.md)
+- [Double Data Type](double-data-type.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)

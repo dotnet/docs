@@ -36,7 +36,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
 |---|---|  
 |LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all Visual Basic projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](../../concepts/linq/linq-to-objects.md).|  
 |LINQ to SQL|The LINQ to SQL provider enables you to query and modify data in a SQL Server database. This makes it easy to map the object model for an application to the tables and objects in a database.<br /><br /> Visual Basic makes it easier to work with LINQ to SQL by including the Object Relational Designer (O/R Designer). This designer is used to create an object model in an application that maps to objects in a database. The O/R Designer also provides functionality to map stored procedures and functions to the <xref:System.Data.Linq.DataContext> object, which manages communication with the database and stores state for optimistic concurrency checks.<br /><br /> For more information about the LINQ to SQL provider, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md). For more information about the Object Relational Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).|  
-|LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your Visual Basic code. For more information, see [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md).|  
+|LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your Visual Basic code. For more information, see [XML](../xml/index.md).|  
 |LINQ to DataSet|The LINQ to DataSet provider enables you to query and update data in an ADO.NET dataset. You can add the power of LINQ to applications that use datasets in order to simplify and extend your capabilities for querying, aggregating, and updating the data in your dataset.<br /><br /> For more information, see [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md).|  
   
 ## Structure of a LINQ query  
@@ -62,7 +62,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
   
  [!code-vb[VbVbalrIntroToLINQ#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/class2.vb#6)]  
   
- There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about Visual Basic query clauses, see [Queries](../../../../visual-basic/language-reference/queries/index.md).  
+ There are several additional LINQ query operators that you can use to create powerful query expressions. The next section of this topic discusses the various query clauses that you can include in a query expression. For details about Visual Basic query clauses, see [Queries](../../../language-reference/queries/index.md).  
   
 ## Visual Basic LINQ query operators  
 
@@ -70,13 +70,13 @@ The classes in the <xref:System.Linq> namespace and the other namespaces that su
 
 ### From clause
 
-Either a [`From` clause](../../../../visual-basic/language-reference/queries/from-clause.md) or an `Aggregate` clause is required to begin a query. A `From` clause specifies a source collection and an iteration variable for a query. For example:
+Either a [`From` clause](../../../language-reference/queries/from-clause.md) or an `Aggregate` clause is required to begin a query. A `From` clause specifies a source collection and an iteration variable for a query. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#7)]
 
 ### Select clause
 
-Optional. A [`Select` clause](../../../../visual-basic/language-reference/queries/select-clause.md) declares a set of iteration variables for a query. For example:
+Optional. A [`Select` clause](../../../language-reference/queries/select-clause.md) declares a set of iteration variables for a query. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#8)]
 
@@ -84,37 +84,37 @@ If a `Select` clause is not specified, the iteration variables for the query con
 
 ### Where clause
 
-Optional. A [`Where` clause](../../../../visual-basic/language-reference/queries/where-clause.md) specifies a filtering condition for a query. For example:
+Optional. A [`Where` clause](../../../language-reference/queries/where-clause.md) specifies a filtering condition for a query. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#9)]
 
 ### Order By clause
 
-Optional. An [`Order By` clause](../../../../visual-basic/language-reference/queries/order-by-clause.md) specifies the sort order for columns in a query. For example:
+Optional. An [`Order By` clause](../../../language-reference/queries/order-by-clause.md) specifies the sort order for columns in a query. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#10)]
 
 ### Join clause
 
-Optional. A [`Join` clause](../../../../visual-basic/language-reference/queries/join-clause.md) combines two collections into a single collection. For example:
+Optional. A [`Join` clause](../../../language-reference/queries/join-clause.md) combines two collections into a single collection. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#11)]
 
 ### Group By clause
 
-Optional. A [`Group By` clause](../../../../visual-basic/language-reference/queries/group-by-clause.md) groups the elements of a query result. It can be used to apply aggregate functions to each group. For example:
+Optional. A [`Group By` clause](../../../language-reference/queries/group-by-clause.md) groups the elements of a query result. It can be used to apply aggregate functions to each group. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#12)]
 
 ### Group Join clause
 
-Optional. A [`Group Join` clause](../../../../visual-basic/language-reference/queries/group-join-clause.md) combines two collections into a single hierarchical collection. For example:
+Optional. A [`Group Join` clause](../../../language-reference/queries/group-join-clause.md) combines two collections into a single hierarchical collection. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#13)]
 
 ### Aggregate clause
 
-Either an [`Aggregate` clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md) or a `From` clause is required to begin a query. An `Aggregate` clause applies one or more aggregate functions to a collection. For example, you can use the `Aggregate` clause to calculate a sum for all the elements returned by a query, as the following example does.
+Either an [`Aggregate` clause](../../../language-reference/queries/aggregate-clause.md) or a `From` clause is required to begin a query. An `Aggregate` clause applies one or more aggregate functions to a collection. For example, you can use the `Aggregate` clause to calculate a sum for all the elements returned by a query, as the following example does.
 
  [!code-vb[VbVbalrIntroToLINQ#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#14)]
 
@@ -124,7 +124,7 @@ You can also use the `Aggregate` clause to modify a query. For example, you can 
 
 ### Let clause
 
-Optional. A [`Let` clause](../../../../visual-basic/language-reference/queries/let-clause.md) computes a value and assigns it to a new variable in the query. For example:
+Optional. A [`Let` clause](../../../language-reference/queries/let-clause.md) computes a value and assigns it to a new variable in the query. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#16)]
 
@@ -136,25 +136,25 @@ Optional. A `Distinct` clause restricts the values of the current iteration vari
 
 ### Skip clause
 
-Optional. A [`Skip` clause](../../../../visual-basic/language-reference/queries/skip-clause.md) bypasses a specified number of elements in a collection and then returns the remaining elements. For example:
+Optional. A [`Skip` clause](../../../language-reference/queries/skip-clause.md) bypasses a specified number of elements in a collection and then returns the remaining elements. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#18)]
 
 ### Skip While clause
 
-Optional. A [`Skip While` clause](../../../../visual-basic/language-reference/queries/skip-while-clause.md) bypasses elements in a collection as long as a specified condition is `true` and then returns the remaining elements. For example:
+Optional. A [`Skip While` clause](../../../language-reference/queries/skip-while-clause.md) bypasses elements in a collection as long as a specified condition is `true` and then returns the remaining elements. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#19)]
 
 ### Take clause
 
-Optional. A [`Take` clause](../../../../visual-basic/language-reference/queries/take-clause.md) returns a specified number of contiguous elements from the start of a collection. For example:
+Optional. A [`Take` clause](../../../language-reference/queries/take-clause.md) returns a specified number of contiguous elements from the start of a collection. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#20)]
 
 ### Take While clause
 
-Optional. A [`Take While` clause](../../../../visual-basic/language-reference/queries/take-while-clause.md) includes elements in a collection as long as a specified condition is `true` and bypasses the remaining elements. For example:
+Optional. A [`Take While` clause](../../../language-reference/queries/take-while-clause.md) includes elements in a collection as long as a specified condition is `true` and bypasses the remaining elements. For example:
 
  [!code-vb[VbVbalrIntroToLINQ#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIntroToLINQ/VB/Class1.vb#21)]
   
@@ -209,7 +209,7 @@ You can use additional LINQ query features by calling members of the enumerable 
   
 |Topic|Description|  
 |---|---|  
-|[XML](../../language-features/xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
+|[XML](../xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
 |[Queries](../../../language-reference/queries/index.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](../../concepts/linq/index.md)|Includes general information, programming guidance, and samples for LINQ.|  
 |[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
@@ -242,7 +242,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 ## See also
 
 - [LINQ (Language-Integrated Query)](../../concepts/linq/index.md)
-- [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md)
+- [Overview of LINQ to XML in Visual Basic](../xml/overview-of-linq-to-xml.md)
 - [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)

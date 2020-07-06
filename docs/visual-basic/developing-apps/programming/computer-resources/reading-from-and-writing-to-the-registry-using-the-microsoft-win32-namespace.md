@@ -41,6 +41,6 @@ Although `My.Computer.Registry` should cover your basic needs when programming a
 - <xref:System.SystemException>
 - <xref:System.ApplicationException>
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
-- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
-- [Security and the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)
+- [Try...Catch...Finally Statement](../../../language-reference/statements/try-catch-finally-statement.md)
+- [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)
+- [Security and the Registry](security-and-the-registry.md)

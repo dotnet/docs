@@ -17,9 +17,9 @@ The following table describes the return values for `CStr` for different data ty
   
 |If `expression` type is|`CStr` returns|  
 |-----------------------------|--------------------|  
-|[Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)|A string containing "True" or "False".|  
-|[Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md)|A string containing a `Date` value (date and time) in the short date format of your system.|  
-|[Numeric Data Types](../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)|A string representing the number.|  
+|[Boolean Data Type](../data-types/boolean-data-type.md)|A string containing "True" or "False".|  
+|[Date Data Type](../data-types/date-data-type.md)|A string containing a `Date` value (date and time) in the short date format of your system.|  
+|[Numeric Data Types](../../programming-guide/language-features/data-types/numeric-data-types.md)|A string representing the number.|  
   
 ## CStr and Date  
  The `Date` type always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/0001 (January 1 of the year 1) to be a *neutral value* for the date, and 00:00:00 (midnight) to be a neutral value for the time. `CStr` does not include neutral values in the resulting string. For example, if you convert `#January 1, 0001 9:30:00#` to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>.  
@@ -30,6 +30,6 @@ The following table describes the return values for `CStr` for different data ty
 ## See also
 
 - <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)
-- [Date Data Type](../../../visual-basic/language-reference/data-types/date-data-type.md)
+- [Type Conversion Functions](type-conversion-functions.md)
+- [Boolean Data Type](../data-types/boolean-data-type.md)
+- [Date Data Type](../data-types/date-data-type.md)

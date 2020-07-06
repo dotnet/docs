@@ -1,5 +1,6 @@
 ---
 title: Format Data in DataGridView Control
+description: Learn how to format cell values using the DefaultCellStyle property of a Windows Forms DataGridView control and of specific columns in a control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

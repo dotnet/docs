@@ -59,4 +59,4 @@ The following example shows how to declare, instantiate, and invoke a covariant 
 ## See also
 
 - [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
-- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [In](in-generic-modifier.md)

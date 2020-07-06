@@ -72,4 +72,3 @@ For more information, see the [Interfaces](~/_csharplang/spec/interfaces.md) sec
 - [Interfaces](../../programming-guide/interfaces/index.md)
 - [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
 - [Using Indexers](../../programming-guide/indexers/using-indexers.md)
-- [Interfaces](../../programming-guide/interfaces/index.md)

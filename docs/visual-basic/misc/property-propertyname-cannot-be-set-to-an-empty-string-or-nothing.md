@@ -12,6 +12,6 @@ The property requires a value other than an empty string ("") or `Nothing`. This
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
-- [Nothing](../../visual-basic/language-reference/nothing.md)
+- [Error Types](../programming-guide/language-features/error-types.md)
+- [Nothing](../language-reference/nothing.md)
 - <xref:System.NullReferenceException>

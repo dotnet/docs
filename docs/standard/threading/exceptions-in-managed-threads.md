@@ -1,5 +1,6 @@
 ---
 title: "Exceptions in Managed Threads"
+description: See how unhandled exceptions are handled in .NET. With .NET version 2.0, most unhandled thread exceptions proceed naturally and lead to application termination.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -58,7 +59,7 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
   
 - If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
   
- In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../../../docs/standard/design-guidelines/exceptions.md).  
+ In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../design-guidelines/exceptions.md).  
   
 ### Application Compatibility Flag  
  As a temporary compatibility measure, administrators can place a compatibility flag in the `<runtime>` section of the application configuration file. This causes the common language runtime to revert to the behavior of versions 1.0 and 1.1.  
@@ -68,8 +69,8 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 ```  
   
 ## Host Override  
- In the .NET Framework version 2.0, an unmanaged host can use the [ICLRPolicyManager](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) interface in the Hosting API to override the default unhandled exception policy of the common language runtime. The [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) function is used to set the policy for unhandled exceptions.  
+ In the .NET Framework version 2.0, an unmanaged host can use the [ICLRPolicyManager](../../framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) interface in the Hosting API to override the default unhandled exception policy of the common language runtime. The [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) function is used to set the policy for unhandled exceptions.  
   
 ## See also
 
-- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
+- [Managed Threading Basics](managed-threading-basics.md)

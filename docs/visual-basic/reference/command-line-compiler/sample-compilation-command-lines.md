@@ -32,5 +32,5 @@ The following table lists some sample command lines you can modify for your own 
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)

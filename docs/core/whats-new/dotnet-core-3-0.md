@@ -3,7 +3,7 @@ title: What's new in .NET Core 3.0
 description: Learn about the new features found in .NET Core 3.0.
 dev_langs:
   - "csharp"
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
 ---

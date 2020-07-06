@@ -1,5 +1,6 @@
 ---
 title: "Detecting Changes with SqlDependency"
+description: Associate a SqlDependency object with a SqlCommand to detect when query results differ from those originally retrieved in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

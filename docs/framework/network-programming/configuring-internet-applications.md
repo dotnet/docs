@@ -1,5 +1,6 @@
 ---
 title: "Configuring Internet Applications"
+description: Learn how to use the <system.Net> element to configure internet applications in the .NET Framework. This article contains example code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "downloading Internet resources, default proxy"

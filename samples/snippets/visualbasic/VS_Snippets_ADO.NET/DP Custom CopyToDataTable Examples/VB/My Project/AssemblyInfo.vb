@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CustomCopyToDataTableVB")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("msft")> 
-<Assembly: AssemblyProduct("CustomCopyToDataTableVB")> 
-<Assembly: AssemblyCopyright("Copyright © msft 2007")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("CustomCopyToDataTableVB")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("msft")>
+<Assembly: AssemblyProduct("CustomCopyToDataTableVB")>
+<Assembly: AssemblyCopyright("Copyright © msft 2007")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("e9adfcb3-d166-46f2-9661-4587781b8e0d")> 
+<Assembly: Guid("e9adfcb3-d166-46f2-9661-4587781b8e0d")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

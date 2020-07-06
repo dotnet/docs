@@ -53,14 +53,14 @@ Class Class331dac55d3fa4b5094571557db00e297
 
     Public Sub Method5()
         ' <snippet5>
-    Dim fileList = My.Computer.FileSystem.GetFiles(
-        My.Computer.FileSystem.SpecialDirectories.MyPictures,
-        Microsoft.VisualBasic.FileIO.SearchOption.SearchAllSubDirectories, "*.*")
+        Dim fileList = My.Computer.FileSystem.GetFiles(
+            My.Computer.FileSystem.SpecialDirectories.MyPictures,
+            Microsoft.VisualBasic.FileIO.SearchOption.SearchAllSubDirectories, "*.*")
 
-    For Each foundFile In fileList
-        My.Computer.FileSystem.MoveFile(foundFile,
-            "C:\StorageDir\" & My.Computer.FileSystem.GetFileInfo(foundFile).Name)
-    Next
+        For Each foundFile In fileList
+            My.Computer.FileSystem.MoveFile(foundFile,
+                "C:\StorageDir\" & My.Computer.FileSystem.GetFileInfo(foundFile).Name)
+        Next
         ' </snippet5>
     End Sub
 

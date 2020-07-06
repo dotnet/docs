@@ -34,7 +34,7 @@ Alternatively, you can install and use [a custom visualizer](https://docs.micros
 
 ## See also
 
-- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
+- [Expression Trees (Visual Basic)](index.md)
 - [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour)
 - [Create Custom Visualizers](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [`DebugView` syntax](debugview-syntax.md)

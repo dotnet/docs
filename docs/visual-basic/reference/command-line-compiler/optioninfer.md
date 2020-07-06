@@ -28,7 +28,7 @@ Enables the use of local type inference in variable declarations.
 > You can use the `-noconfig` option to retain the compiler's internal defaults instead of those specified in vbc.rsp. The compiler default for this option is `-optioninfer-`.  
   
 ## Remarks  
- If the source code file contains an [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md), the statement overrides the `-optioninfer` command-line compiler setting.  
+ If the source code file contains an [Option Infer Statement](../../language-reference/statements/option-infer-statement.md), the statement overrides the `-optioninfer` command-line compiler setting.  
   
 ### To set -optioninfer in the Visual Studio IDE  
   
@@ -45,14 +45,14 @@ vbc -optioninfer+ test.vb
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
-- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)
-- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-optioncompare](optioncompare.md)
+- [-optionexplicit](optionexplicit.md)
+- [-optionstrict](optionstrict.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [Option Infer Statement](../../language-reference/statements/option-infer-statement.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
 - [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
-- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
-- [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)
+- [-noconfig](noconfig.md)
+- [Building from the Command Line](building-from-the-command-line.md)

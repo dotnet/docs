@@ -79,4 +79,4 @@ Both the client and the service need to agree to send and receive compressed mes
   
 ## See also
 
-- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [Bindings](bindings.md)

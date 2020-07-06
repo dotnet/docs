@@ -14,7 +14,7 @@ Public Structure StoreInfo
     Public Function IsOpenNow() As Boolean
         Return IsOpenAt(Date.Now.TimeOfDay)
     End Function
-   
+
     Public Function IsOpenAt(time As TimeSpan) As Boolean
         Dim local As TimeZoneInfo = TimeZoneInfo.Local
         Dim offset As TimeSpan = TimeZoneInfo.Local.BaseUtcOffset
@@ -42,27 +42,27 @@ End Structure
 
 ' <Snippet2>
 Module Example
-   Public Sub Main()
-      ' Instantiate a StoreInfo object.
-      Dim store103 As New StoreInfo()
-      store103.store = "Store #103"
-      store103.tz = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time")
-      ' Store opens at 8:00.
-      store103.open = new TimeSpan(8, 0, 0)
-      ' Store closes at 9:30.
-      store103.close = new TimeSpan(21, 30, 0)
-      
-      Console.WriteLine("Store is open now at {0}: {1}",
-                        Date.Now.TimeOfDay, store103.IsOpenNow())
-      Dim times() As TimeSpan = { New TimeSpan(8, 0, 0),
-                                  New TimeSpan(21, 0, 0),
-                                  New TimeSpan(4, 59, 0),
-                                  New TimeSpan(18, 31, 0) }
-      For Each time In times
-         Console.WriteLine("Store is open at {0}: {1}",
-                           time, store103.IsOpenAt(time))
-      Next
-   End Sub
+    Public Sub Main()
+        ' Instantiate a StoreInfo object.
+        Dim store103 As New StoreInfo()
+        store103.store = "Store #103"
+        store103.tz = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time")
+        ' Store opens at 8:00.
+        store103.open = new TimeSpan(8, 0, 0)
+        ' Store closes at 9:30.
+        store103.close = new TimeSpan(21, 30, 0)
+
+        Console.WriteLine("Store is open now at {0}: {1}",
+                          Date.Now.TimeOfDay, store103.IsOpenNow())
+        Dim times() As TimeSpan = {New TimeSpan(8, 0, 0),
+                                    New TimeSpan(21, 0, 0),
+                                    New TimeSpan(4, 59, 0),
+                                    New TimeSpan(18, 31, 0)}
+        For Each time In times
+            Console.WriteLine("Store is open at {0}: {1}",
+                              time, store103.IsOpenAt(time))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Store is open now at 15:29:01.6129911: True

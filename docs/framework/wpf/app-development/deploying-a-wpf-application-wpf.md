@@ -1,5 +1,6 @@
 ---
 title: "Deploy an app"
+description: Explore the deployment technologies that Windows and the .NET Framework use for Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF applications [WPF], deployment"

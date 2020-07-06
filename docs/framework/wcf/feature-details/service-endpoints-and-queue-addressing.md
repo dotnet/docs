@@ -6,7 +6,7 @@ ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
 # Service Endpoints and Queue Addressing
 This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic Windows Communication Foundation (WCF) queued application deployment.  
   
- ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
+ ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
  For the client to send the message to the service, the client addresses the message to the Target Queue. For the service to read messages from the queue, it sets its listen address to the Target Queue. Addressing in WCF is Uniform Resource Identifier (URI)-based while Message Queuing (MSMQ) queue names are not URI-based. It is therefore essential to understand how to address queues created in MSMQ using WCF.  
   
@@ -40,7 +40,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../samples/net-msmq-binding.md).  
   
 ### Multiple Contracts in a Queue  
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  
@@ -83,7 +83,7 @@ This topic discusses how clients address services that read from queues and how 
   
  net.msmq: //localhost/ [private/]  \<*custom-dead-letter-queue-name*>.  
   
- A WCF service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md).  
+ A WCF service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](../samples/dead-letter-queues.md).  
   
 ## MsmqIntegrationBinding and Service Addressing  
  The `MsmqIntegrationBinding` is used for communication with traditional MSMQ applications. To ease interoperation with an existing MSMQ application, WCF supports only format name addressing. Thus, messages sent using this binding must conform to the URI scheme:  
@@ -100,4 +100,4 @@ This topic discusses how clients address services that read from queues and how 
   
 ## See also
 
-- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)
+- [Web Hosting a Queued Application](web-hosting-a-queued-application.md)

@@ -1,5 +1,6 @@
 ---
 title: "Loading a DataSet from XML"
+description: Learn how to add contents to an ADO.NET DataSet from XML. The .NET Framework offers flexibility for what to load and the structure of the DataSet.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

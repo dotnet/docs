@@ -99,7 +99,7 @@ Object initializers enable you to specify properties for a complex object by usi
   
  Because the name of the type is not available, you cannot use an `As` clause to declare `cust13`. Its type must be inferred. Without using late binding, this limits the use of anonymous types to local variables.  
   
- Anonymous types provide critical support for LINQ queries. For more information about the use of anonymous types in queries, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) and [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md).  
+ Anonymous types provide critical support for LINQ queries. For more information about the use of anonymous types in queries, see [Anonymous Types](anonymous-types.md) and [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md).  
   
 ### Remarks About Anonymous Types  
   
@@ -107,7 +107,7 @@ Object initializers enable you to specify properties for a complex object by usi
   
      [!code-vb[VbVbalrObjectInit#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrObjectInit/VB/Class1.vb#14)]  
   
-     For more information about key properties, see [Key](../../../../visual-basic/language-reference/modifiers/key.md).  
+     For more information about key properties, see [Key](../../../language-reference/modifiers/key.md).  
   
 - Like named types, initializer lists for anonymous type definitions must declare at least one property.  
   
@@ -119,13 +119,13 @@ Object initializers enable you to specify properties for a complex object by usi
   
      [!code-vb[VbVbalrObjectInit#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrObjectInit/VB/Class1.vb#15)]  
   
-     For more information about the options for defining properties in anonymous types, see [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
+     For more information about the options for defining properties in anonymous types, see [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
   
 ## See also
 
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
-- [Key](../../../../visual-basic/language-reference/modifiers/key.md)
-- [How to: Declare an Object by Using an Object Initializer](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
+- [Local Type Inference](../variables/local-type-inference.md)
+- [Anonymous Types](anonymous-types.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)
+- [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
+- [Key](../../../language-reference/modifiers/key.md)
+- [How to: Declare an Object by Using an Object Initializer](how-to-declare-an-object-by-using-an-object-initializer.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Enumerate directories and files"
+description: Learn to enumerate directories and files by using enumerable collections, which can provide better performance than arrays in .NET.
 ms.date: "12/27/2018"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -57,4 +58,4 @@ The following example uses the <xref:System.IO.DirectoryInfo.EnumerateFiles%2A?d
   
 ## See also
 
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [File and stream I/O](index.md)

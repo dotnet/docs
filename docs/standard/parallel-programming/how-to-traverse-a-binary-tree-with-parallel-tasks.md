@@ -20,4 +20,4 @@ The following example shows two ways in which parallel tasks can be used to trav
   
 ## See also
 
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)

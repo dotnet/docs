@@ -41,8 +41,8 @@ Generic object variables (that is, variables you declare as `Object`) can hold o
 ## See also
 
 - <xref:Microsoft.VisualBasic.Information.TypeName%2A>
-- [Calling a Property or Method Using a String Name](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
-- [If...Then...Else Statement](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)
-- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
-- [Integer Data Type](../../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Calling a Property or Method Using a String Name](calling-a-property-or-method-using-a-string-name.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
+- [If...Then...Else Statement](../../../language-reference/statements/if-then-else-statement.md)
+- [String Data Type](../../../language-reference/data-types/string-data-type.md)
+- [Integer Data Type](../../../language-reference/data-types/integer-data-type.md)

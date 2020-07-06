@@ -1,5 +1,6 @@
 ---
 title: "DataContractSerializer Sample"
+description: This sample demonstrates DataContractSerializer in WCF, which performs general serialization and deserialization services for the data contract classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML Formatter"
@@ -120,9 +121,9 @@ Press <ENTER> to terminate client.
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 3. To run the sample, start the client from the command prompt by typing client\bin\client.exe.  
   

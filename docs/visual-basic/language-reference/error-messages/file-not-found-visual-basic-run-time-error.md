@@ -20,4 +20,4 @@ The file was not found where specified. The error has the following possible cau
   
 ## See also
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)

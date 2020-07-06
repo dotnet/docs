@@ -37,6 +37,6 @@ You use a `Function` procedure to return a value to the calling code.
 - [Property Procedures](./property-procedures.md)
 - [Operator Procedures](./operator-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
-- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../../../language-reference/statements/function-statement.md)
 - [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)
 - [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)

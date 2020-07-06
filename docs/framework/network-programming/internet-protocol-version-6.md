@@ -1,5 +1,6 @@
 ---
 title: "Internet Protocol Version 6"
+description: Learn about the IPv6 protocol and how it differs from IPv4. .NET Framework applications support IPv6, but might require configuration.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "IPv6, improvements"

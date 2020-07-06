@@ -18,7 +18,7 @@ This section describes the unmanaged global static functions that earlier versio
  Deprecated. Creates an instance of the specified managed type.  
   
  [CoInitializeCor Function](coinitializecor-function.md)  
- Obsolete. To initialize the common language runtime (CLR), use either [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md).  
+ Obsolete. To initialize the common language runtime (CLR), use either [CorBindToRuntimeEx](corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md).  
   
  [CoInitializeEE Function](coinitializeee-function.md)  
  Deprecated. Ensures that the CLR execution engine is loaded into a process. Use the [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md) method instead.  

@@ -1,5 +1,6 @@
 ---
 title: "Implementing an Implicit Transaction using Transaction Scope"
+description: Implement an implicit transaction using the TransactionScope class in .NET. This class provides a way to mark a block of code as participating in a transaction.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -22,7 +23,7 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
  When you instantiate <xref:System.Transactions.TransactionScope>, the transaction manager determines which transaction to participate in. Once determined, the scope always participates in that transaction. The decision is based on two factors: whether an ambient transaction is present and the value of the `TransactionScopeOption` parameter in the constructor. The ambient transaction is the transaction within which your code executes. You can obtain a reference to the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> property of the <xref:System.Transactions.Transaction> class. For more information on how this parameter is used, see the [Managing transaction flow using TransactionScopeOption](#ManageTxFlow) section of this topic.  
   
 ## Completing a transaction scope  
- When your application completes all the work it wants to perform in a transaction, you should call the <xref:System.Transactions.TransactionScope.Complete%2A?displayProperty=nameWIthType> method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to <xref:System.Transactions.TransactionScope.Complete%2A> as the last statement in the `using` block.  
+ When your application completes all the work it wants to perform in a transaction, you should call the <xref:System.Transactions.TransactionScope.Complete%2A?displayProperty=nameWithType> method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to <xref:System.Transactions.TransactionScope.Complete%2A> as the last statement in the `using` block.  
   
  Failing to call this method aborts the transaction, because the transaction manager interprets this as a system failure, or equivalent to an exception thrown within the scope of the transaction. However, calling this method does not guarantee that the transaction wil be committed. It is merely a way of informing the transaction manager of your status. After calling the <xref:System.Transactions.TransactionScope.Complete%2A> method, you can no longer access the ambient transaction by using the <xref:System.Transactions.Transaction.Current%2A> property, and attempting to do so will result in an exception being thrown.  
   

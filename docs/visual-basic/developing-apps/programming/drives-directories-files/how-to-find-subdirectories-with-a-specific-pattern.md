@@ -43,4 +43,4 @@ The following conditions may cause an exception:
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
-- [How to: Find Files with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)
+- [How to: Find Files with a Specific Pattern](how-to-find-files-with-a-specific-pattern.md)

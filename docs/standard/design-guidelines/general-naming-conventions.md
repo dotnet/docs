@@ -1,5 +1,6 @@
 ---
 title: "General Naming Conventions"
+description: Use general naming conventions relating to word choice, guidelines on using abbreviations and acronyms, and guidance on avoiding language-specific names.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -94,6 +95,6 @@ This section describes general naming conventions that relate to word choice, gu
 
 ## See also
 
-- [Framework design guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework design guidelines](index.md)
+- [Naming guidelines](naming-guidelines.md)
 - [.NET naming conventions for EditorConfig](/visualstudio/ide/editorconfig-naming-conventions)

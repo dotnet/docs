@@ -37,7 +37,7 @@ typedef enum {
 |`WAIT_NOTINDEADLOCK`|Notifies the host that the specified synchronization request cannot be broken by a host. That is, the host cannot return `HOST_E_DEADLOCK`.|  
   
 ## Remarks  
- The [IHostTaskManager::Sleep](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-sleep-method.md) and [IHostTaskManager::SwitchToTask](ihosttaskmanager-switchtotask-method.md) methods both take a parameter of this type.  
+ The [IHostTaskManager::Sleep](ihosttaskmanager-sleep-method.md) and [IHostTaskManager::SwitchToTask](ihosttaskmanager-switchtotask-method.md) methods both take a parameter of this type.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  

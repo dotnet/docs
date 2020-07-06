@@ -10,5 +10,5 @@ You can create connections between clients using the WinFX by using bindings tha
   
 ## See also
 
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)
+- [System-Provided Bindings](../system-provided-bindings.md)

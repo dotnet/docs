@@ -21,4 +21,4 @@ The following example shows how to use arrays of <xref:System.Collections.Concur
 ## See also
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+- [Thread-Safe Collections](index.md)

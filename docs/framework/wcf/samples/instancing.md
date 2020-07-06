@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
 ---
 # Instancing
-The Instancing sample demonstrates the instancing behavior setting, which controls how instances of a service class are created in response to client requests. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. This sample defines a new contract, `ICalculatorInstance`, which inherits from `ICalculator`. The contract specified by `ICalculatorInstance` provides three additional operations for inspecting the state of the service instance. By altering the instancing setting, you can observe the change in behavior by running the client.  
+The Instancing sample demonstrates the instancing behavior setting, which controls how instances of a service class are created in response to client requests. The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. This sample defines a new contract, `ICalculatorInstance`, which inherits from `ICalculator`. The contract specified by `ICalculatorInstance` provides three additional operations for inspecting the state of the service instance. By altering the instancing setting, you can observe the change in behavior by running the client.  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
@@ -118,11 +118,11 @@ static void Main()
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

@@ -8,7 +8,7 @@ Imports System.ComponentModel
 Imports System.Security.Permissions
 Imports System.Collections.Generic
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Security.Samples
     ' <Snippet8>
     <DataContract()> _
@@ -169,7 +169,7 @@ Namespace Microsoft.Security.Samples
         End Sub
 
         Private Sub Run()
-	'<snippet12>
+            '<snippet12>
             Dim myBinding As New WSHttpBinding()
             With myBinding.Security
                 .Mode = SecurityMode.Message
@@ -350,7 +350,7 @@ Namespace Microsoft.Security.Samples
     End Class
 
     Public Class Person
-        Public Sub New(ByVal fName As String, ByVal lName As String) 
+        Public Sub New(ByVal fName As String, ByVal lName As String)
             Me.firstName = fName
             Me.lastName = lName
         End Sub

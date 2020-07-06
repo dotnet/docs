@@ -32,5 +32,5 @@ Dim b As Integer?
   
 ## See also
 
-- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
-- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Nullable Value Types](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)

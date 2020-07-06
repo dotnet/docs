@@ -21,7 +21,7 @@ Backreferences provide a convenient way to identify a repeated character or subs
 > [!NOTE]
 > A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions](substitutions-in-regular-expressions.md).
 
-.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+.NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 ## Numbered Backreferences
 
@@ -133,4 +133,4 @@ An input string can match this regular expression even if the two decimal digits
 
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

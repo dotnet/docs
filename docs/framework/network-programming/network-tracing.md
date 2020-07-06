@@ -1,5 +1,6 @@
 ---
 title: "Network Tracing in the .NET Framework"
+description: Learn about network tracing in the .NET Framework, which provides information about method invocations and network traffic for a managed application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging [.NET Framework], network tracing"

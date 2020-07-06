@@ -1,5 +1,6 @@
 ---
 title: "Message Security in WCF"
+description: Learn about TransportWithMessageCredential, a type of WCF message security that uses a combination of transport and message security modes.
 ms.date: "03/30/2017"
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
 ---
@@ -24,7 +25,7 @@ In message-level security, all of the security information is encapsulated in th
 
 - Support for multiple transports. You can send secured messages over many different transports, such as named pipes and TCP, without having to rely on the protocol for security. With transport-level security, all the security information is scoped to a single particular transport connection and is not available from the message content itself. Message security makes the message secure regardless of what transport you use to transmit the message, and the security context is directly embedded inside the message.
 
-- Support for a wide set of credentials and claims. The message security is based on the WS-Security specification, which provides an extensible framework capable of transmitting any type of claim inside the SOAP message. Unlike transport security, the set of authentication mechanisms, or claims, that you can use is not limited by the transport capabilities. WCF message security includes multiple types of authentication and claim transmission and can be extended to support additional types as necessary. For those reasons, for example, a federated credentials scenario is not possible without message security. For more information about federation scenarios WCF supports, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).
+- Support for a wide set of credentials and claims. The message security is based on the WS-Security specification, which provides an extensible framework capable of transmitting any type of claim inside the SOAP message. Unlike transport security, the set of authentication mechanisms, or claims, that you can use is not limited by the transport capabilities. WCF message security includes multiple types of authentication and claim transmission and can be extended to support additional types as necessary. For those reasons, for example, a federated credentials scenario is not possible without message security. For more information about federation scenarios WCF supports, see [Federation and Issued Tokens](federation-and-issued-tokens.md).
 
 ## How Message and Transport Security Compare
 
@@ -60,7 +61,7 @@ Message security has the following disadvantages:
 
 ## See also
 
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)
-- [How to: Use Transport Security and Message Credentials](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)
+- [Securing Services and Clients](securing-services-and-clients.md)
+- [Transport Security](transport-security.md)
+- [How to: Use Transport Security and Message Credentials](how-to-use-transport-security-and-message-credentials.md)
 - [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](https://docs.microsoft.com/previous-versions/msp-n-p/ff647370(v=pandp.10))

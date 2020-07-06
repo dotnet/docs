@@ -3,7 +3,7 @@ title: Batch processing with .NET for Apache Spark tutorial
 description: Learn how to do batch processing using .NET for Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 12/13/2019
+ms.date: 06/25/2020
 ms.topic: tutorial
 ---
 
@@ -21,9 +21,11 @@ In this tutorial, you learn how to:
 > * Read data into a DataFrame and prepare it for analysis
 > * Process the data using Spark SQL
 
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
+
 ## Prerequisites
 
-If this is your first time using .NET for Apache Spark, check out the [Get started with .NET for Apache Spark](../tutorials/get-started.md) tutorial to learn how to prepare your environment and run your first .NET for Apache Spark application.
+If this is your first time using .NET for Apache Spark, check out the [Get started with .NET for Apache Spark](get-started.md) tutorial to learn how to prepare your environment and run your first .NET for Apache Spark application.
 
 ## Download the sample data
 

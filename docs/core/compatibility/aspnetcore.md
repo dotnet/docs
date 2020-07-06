@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 04/29/2020
+ms.date: 06/23/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -39,16 +39,22 @@ The following breaking changes are documented on this page:
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
 - [HTTP: Some cookie SameSite default values changed](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP: Synchronous IO disabled by default](#http-synchronous-io-disabled-in-all-servers)
+- [HttpSys: Client certificate renegotiation disabled by default](#httpsys-client-certificate-renegotiation-disabled-by-default)
 - [Identity: AddDefaultUI method overload removed](#identity-adddefaultui-method-overload-removed)
 - [Identity: UI Bootstrap version change](#identity-default-bootstrap-version-of-ui-changed)
 - [Identity: SignInAsync throws exception for unauthenticated identity](#identity-signinasync-throws-exception-for-unauthenticated-identity)
 - [Identity: SignInManager constructor accepts new parameter](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Identity: UI uses static web assets feature](#identity-ui-uses-static-web-assets-feature)
+- [IIS: UrlRewrite middleware query strings are preserved](#iis-urlrewrite-middleware-query-strings-are-preserved)
+- [Kestrel: Configuration changes at run time detected by default](#kestrel-configuration-changes-at-run-time-detected-by-default)
 - [Kestrel: Connection adapters removed](#kestrel-connection-adapters-removed)
+- [Kestrel: Default supported TLS protocol versions changed](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel: Empty HTTPS assembly removed](#kestrel-empty-https-assembly-removed)
+- [Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
 - [Localization: APIs marked obsolete](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
+- [Localization: "Pubternal" APIs removed](#localization-pubternal-apis-removed)
 - [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
@@ -88,6 +94,29 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
+
+***
+
+[!INCLUDE[HttpSys: Client certificate renegotiation disabled by default](~/includes/core-changes/aspnetcore/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md)]
+
+***
+
+[!INCLUDE[IIS: UrlRewrite middleware query strings are preserved](~/includes/core-changes/aspnetcore/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md)]
+
+***
+
+[!INCLUDE[Kestrel: Configuration changes at run time detected by default](~/includes/core-changes/aspnetcore/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md)]
+
+***
+[!INCLUDE[Kestrel: Default supported TLS protocol versions changed](~/includes/core-changes/aspnetcore/5.0/kestrel-default-supported-tls-protocol-versions-changed.md)]
+
+***
+
+[!INCLUDE[Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](~/includes/core-changes/aspnetcore/5.0/kestrel-disables-http2-over-tls.md)]
+
+***
+
+[!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
 
 ***
 

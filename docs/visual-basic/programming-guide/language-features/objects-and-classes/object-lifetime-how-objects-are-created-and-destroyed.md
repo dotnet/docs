@@ -153,6 +153,6 @@ Another difference between the garbage-collection systems involves the use of `N
 
 - <xref:System.IDisposable.Dispose%2A>
 - [Initialization and Termination of Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
-- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [New Operator](../../../language-reference/operators/new-operator.md)
 - [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)
-- [Nothing](../../../../visual-basic/language-reference/nothing.md)
+- [Nothing](../../../language-reference/nothing.md)

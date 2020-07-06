@@ -1,5 +1,6 @@
 ---
 title: "Specifying an Endpoint Address"
+description: Learn about an endpoint address, one part of a ServiceEndpoint in WCF. All communication with a WCF service occurs through its endpoints.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -6,7 +6,7 @@ Imports System.ServiceModel.Description
 'Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel.Security.Tokens
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Examples
 
     Public Class Program

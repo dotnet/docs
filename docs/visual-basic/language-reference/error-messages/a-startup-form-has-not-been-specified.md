@@ -24,4 +24,4 @@ The application uses the <xref:Microsoft.VisualBasic.ApplicationServices.Windows
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A>
-- [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)
+- [Overview of the Visual Basic Application Model](../../developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)

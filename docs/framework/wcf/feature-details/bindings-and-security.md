@@ -1,5 +1,6 @@
 ---
 title: "Bindings and Security"
+description: Find out how to select the right binding for your security needs. The system-provided bindings included with WCF provide a quick way to program WCF applications.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "bindings [WCF], security"
@@ -12,23 +13,23 @@ ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
 
 The system-provided bindings included with Windows Communication Foundation (WCF) offer a quick way to program WCF applications. With one exception, all the bindings have a default security scheme enabled. This topic helps you select the right binding for your security needs.
 
-For an overview of WCF security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about programming WCF using bindings, see [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md).
+For an overview of WCF security, see [Security Overview](security-overview.md). For more information about programming WCF using bindings, see [Programming WCF Security](programming-wcf-security.md).
 
-If you have already selected a binding, you can find out more about the run-time behaviors that are associated with security in [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md).
+If you have already selected a binding, you can find out more about the run-time behaviors that are associated with security in [Security Behaviors](security-behaviors-in-wcf.md).
 
-Some security functions are not programmable using the system-provided bindings. For more control using a custom binding, see [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md).
+Some security functions are not programmable using the system-provided bindings. For more control using a custom binding, see [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md).
 
 ## Security Functions of Bindings
 
-WCF includes a number of system-provided bindings that meet most needs. If a particular binding does not suffice, you can also create a custom binding. For a list of system-provided bindings, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). For more information about custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).
+WCF includes a number of system-provided bindings that meet most needs. If a particular binding does not suffice, you can also create a custom binding. For a list of system-provided bindings, see [System-Provided Bindings](../system-provided-bindings.md). For more information about custom bindings, see [Custom Bindings](../extending/custom-bindings.md).
 
-Every binding in WCF has two forms: as an API and as an XML element used in a configuration file. For example, the `WSHttpBinding` (API) has a counterpart in the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).
+Every binding in WCF has two forms: as an API and as an XML element used in a configuration file. For example, the `WSHttpBinding` (API) has a counterpart in the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md).
 
 The following section lists both forms for each binding and summarizes the security features.
 
 ### BasicHttp
 
-In code, use the <xref:System.ServiceModel.BasicHttpBinding> class; in configuration, use the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).
+In code, use the <xref:System.ServiceModel.BasicHttpBinding> class; in configuration, use the [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md).
 
 This binding is designed for use with a range of existing technologies, including the following:
 
@@ -40,7 +41,7 @@ This binding is designed for use with a range of existing technologies, includin
 
 - Basic security profile as defined in WS-I.
 
-By default, this binding is not secure. It is designed to interoperate with ASMX services. When security is enabled, the binding is designed for seamless interoperation with Internet Information Services (IIS) security mechanisms, such as basic authentication, digest, and integrated Windows security. For more information, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md). This binding supports the following:
+By default, this binding is not secure. It is designed to interoperate with ASMX services. When security is enabled, the binding is designed for seamless interoperation with Internet Information Services (IIS) security mechanisms, such as basic authentication, digest, and integrated Windows security. For more information, see [Transport Security Overview](transport-security-overview.md). This binding supports the following:
 
 - HTTPS transport security.
 
@@ -52,7 +53,7 @@ For more information, see <xref:System.ServiceModel.BasicHttpSecurity>, <xref:Sy
 
 ### WSHttpBinding
 
-In code, use the <xref:System.ServiceModel.WSHttpBinding> class; in configuration, use the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).
+In code, use the <xref:System.ServiceModel.WSHttpBinding> class; in configuration, use the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md).
 
 By default, this binding implements the WS-Security specification and provides interoperability with services that implement the WS-* specifications. It supports the following:
 
@@ -66,7 +67,7 @@ For more information, see <xref:System.ServiceModel.WSHttpSecurity>, <xref:Syste
 
 ### WSDualHttpBinding
 
-In code, use the <xref:System.ServiceModel.WSDualHttpBinding> class; in configuration, use the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).
+In code, use the <xref:System.ServiceModel.WSDualHttpBinding> class; in configuration, use the [\<wsDualHttpBinding>](../../configure-apps/file-schema/wcf/wsdualhttpbinding.md).
 
 This binding is designed to enable duplex service applications. This binding implements the WS-Security specification for message-based transfer security. Transport security is not available. By default, it provides the following features:
 
@@ -92,7 +93,7 @@ For more information, see <xref:System.ServiceModel.WSDualHttpSecurity> and <xre
 
 ### NetTcpBinding
 
-In code, use the <xref:System.ServiceModel.NetTcpBinding> class; in configuration, use the [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).
+In code, use the <xref:System.ServiceModel.NetTcpBinding> class; in configuration, use the [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md).
 
 This binding is optimized for cross-machine communication. By default, it has the following characteristics:
 
@@ -116,7 +117,7 @@ For more information, see <xref:System.ServiceModel.NetTcpSecurity>, <xref:Syste
 
 ### NetNamedPipeBinding
 
-In code, use the <xref:System.ServiceModel.NetNamedPipeBinding> class; in configuration, use the [\<netNamedPipeBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).
+In code, use the <xref:System.ServiceModel.NetNamedPipeBinding> class; in configuration, use the [\<netNamedPipeBinding>](../../configure-apps/file-schema/wcf/netnamedpipebinding.md).
 
 This binding is optimized for cross-process communication (usually on the same machine). By default, this binding has the following characteristics:
 
@@ -136,7 +137,7 @@ For more information, see <xref:System.ServiceModel.NetNamedPipeSecurity>, <xref
 
 ### MsmqIntegrationBinding
 
-In code, use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class; in configuration, use the [\<msmqIntegrationBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).
+In code, use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class; in configuration, use the [\<msmqIntegrationBinding>](../../configure-apps/file-schema/wcf/msmqintegrationbinding.md).
 
 This binding is optimized for creating WCF clients and services that interoperate with non-WCF Microsoft Message Queuing (MSMQ) endpoints.
 
@@ -150,7 +151,7 @@ For more information, see <xref:System.ServiceModel.NetMsmqSecurity> and <xref:S
 
 ### NetMsmqBinding
 
-In code, use the <xref:System.ServiceModel.NetMsmqBinding> class; in configuration, use the [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md).
+In code, use the <xref:System.ServiceModel.NetMsmqBinding> class; in configuration, use the [\<netMsmqBinding>](../../configure-apps/file-schema/wcf/netmsmqbinding.md).
 
 This binding is intended for use when creating WCF services that require MSMQ queued message support.
 
@@ -172,15 +173,15 @@ For more information, see <xref:System.ServiceModel.MessageSecurityOverMsmq> and
 
 ### WSFederationHttpBinding
 
-In code, use the <xref:System.ServiceModel.WSFederationHttpBinding> class; in configuration, use the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).
+In code, use the <xref:System.ServiceModel.WSFederationHttpBinding> class; in configuration, use the [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md).
 
 By default, this binding uses WS-Security (message-layer security).
 
-For more information, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md), <xref:System.ServiceModel.WSFederationHttpSecurity>, and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.
+For more information, see [Federation](federation.md), <xref:System.ServiceModel.WSFederationHttpSecurity>, and <xref:System.ServiceModel.WSFederationHttpSecurityMode>.
 
 ## Custom Bindings
 
-If none of the system-provided bindings meets you requirements, you can create a custom binding with a custom security binding element. For more information, see [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md).
+If none of the system-provided bindings meets you requirements, you can create a custom binding with a custom security binding element. For more information, see [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md).
 
 ## Binding Choices
 
@@ -217,7 +218,7 @@ The following table lists the client credential types available when using eithe
 |NTLM|NT LAN Manager (NTLM) authentication.|
 |Windows|Windows authentication.|
 |Certificate|Authentication performed using a certificate.|
-|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by CardSpace. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|
+|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by CardSpace. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|
 
 ### Message Client Credentials in Bindings
 
@@ -233,9 +234,9 @@ The following table lists the client credential types available when using a bin
 
 ## See also
 
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
-- [Security Capabilities with Custom Bindings](../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
-- [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Security Overview](security-overview.md)
+- [Securing Services and Clients](securing-services-and-clients.md)
+- [Selecting a Credential Type](selecting-a-credential-type.md)
+- [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md)
+- [Security Behaviors](security-behaviors-in-wcf.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

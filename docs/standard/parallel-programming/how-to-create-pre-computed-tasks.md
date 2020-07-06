@@ -22,4 +22,4 @@ This document describes how to use the <xref:System.Threading.Tasks.Task.FromRes
   
 ## See also
 
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+- [Task-based Asynchronous Programming](task-based-asynchronous-programming.md)

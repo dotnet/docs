@@ -127,17 +127,17 @@ Public Class Example
         ' an anonymous delegate method. 
         ' This method treats null as the lesser of two values.
         parts.Sort(Function(x As Part, y As Part)
-                             If x.PartName Is Nothing AndAlso y.PartName Is Nothing Then
-                                 Return 0
-                             ElseIf x.PartName Is Nothing Then
-                                 Return -1
-                             ElseIf y.PartName Is Nothing Then
-                                 Return 1
-                             Else
-                                 Return x.PartName.CompareTo(y.PartName)
-                             End If
-                         End Function)
-        
+                       If x.PartName Is Nothing AndAlso y.PartName Is Nothing Then
+                           Return 0
+                       ElseIf x.PartName Is Nothing Then
+                           Return -1
+                       ElseIf y.PartName Is Nothing Then
+                           Return 1
+                       Else
+                           Return x.PartName.CompareTo(y.PartName)
+                       End If
+                   End Function)
+
 
         Console.WriteLine(vbLf & "After sort by name:")
         For Each aPart As Part In parts

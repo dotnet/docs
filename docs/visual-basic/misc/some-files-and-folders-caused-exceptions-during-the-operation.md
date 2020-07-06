@@ -13,4 +13,4 @@ Directories and files may cause exceptions when an operation is attempted but th
 ## See also
 
 - <xref:System.Security.Permissions.FileIOPermission>
-- [Troubleshooting: Reading from and Writing to Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Troubleshooting: Reading from and Writing to Text Files](../developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

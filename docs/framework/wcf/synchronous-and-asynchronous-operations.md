@@ -1,5 +1,6 @@
 ---
 title: "Synchronous and Asynchronous Operations"
+description: Learn about implementing and calling asynchronous service operations. WCF services and clients can use asynchronous operations at two levels of the application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -89,7 +89,7 @@ Class CustomerPhotoWindow
             .Filter = "Bitmap images (.bmp)|*.bmp"
             .Title = "Select the image file to upload..."
         End With
-        
+
         Try
             If openImage.ShowDialog(Me) = True Then
                 '<snippetSetSaveStreamClient>
@@ -121,7 +121,7 @@ Class CustomerPhotoWindow
                 Else
                     MessageBox.Show(ex.Message)
                 End If
-                Next    
+            Next
         End Try
     End Sub
     Private Function CreateBitmapFromStream(ByVal stream As Stream) As BitmapImage

@@ -19,5 +19,5 @@ You are trying to evaluate a constant that will not fit into the target type, us
   
 ## See also
 
-- [Constants Overview](../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Constants Overview](../../programming-guide/language-features/constants-enums/constants-overview.md)
+- [Constants and Enumerations](../constants-and-enumerations.md)

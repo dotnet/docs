@@ -205,34 +205,6 @@ class Test1
         int[] numbers = { 1, 2, 3, 4, 5 };
         int lengthOfNumbers = numbers.Length;
         //</Snippet3>
-
-        //<Snippet4>
-        int[] array = new int[5];
-        //</Snippet4>
-
-        //<Snippet5>
-        string[] stringArray = new string[6];
-        //</Snippet5>
-
-        // Declare and set array element values
-        //<Snippet6>
-        int[] array1 = new int[] { 1, 3, 5, 7, 9 };
-        //</Snippet6>
-
-        //<Snippet8>
-        int[] array2 = { 1, 3, 5, 7, 9 };
-        string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
-        //</Snippet8>
-
-        //<Snippet9>
-        int[] array3;
-        array3 = new int[] { 1, 3, 5, 7, 9 };   // OK
-        //array3 = {1, 3, 5, 7, 9};   // Error
-        //</Snippet9>
-
-        //<Snippet10>
-        SomeType[] array4 = new SomeType[10];
-        //</Snippet10>
     }
 }
 

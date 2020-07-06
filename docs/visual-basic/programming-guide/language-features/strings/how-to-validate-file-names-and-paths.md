@@ -19,4 +19,4 @@ This example returns a `Boolean` value that indicates whether a string represent
 ## See also
 
 - <xref:System.IO.Path.GetInvalidPathChars%2A>
-- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)
+- [Validating Strings in Visual Basic](validating-strings.md)

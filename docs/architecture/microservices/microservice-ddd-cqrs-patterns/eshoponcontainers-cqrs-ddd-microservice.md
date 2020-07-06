@@ -21,9 +21,9 @@ As shown in Figure 7-2 in the previous section, this guide suggests using DDD pa
 
 For implementing the "queries side", you can choose between many approaches, from your full-blown ORM like EF Core, AutoMapper projections, stored procedures, views, materialized views or a micro ORM.
 
-In this guide and in eShopOnContainers (specifically the ordering microservice) we chose to implement straight queries using a micro ORM like [Dapper](https://github.com/StackExchange/dapper-dot-net). This lets you implement any query based on SQL statements to get the best performance, thanks to a light framework with very little overhead.
+In this guide and in eShopOnContainers (specifically the ordering microservice) we chose to implement straight queries using a micro ORM like [Dapper](https://github.com/StackExchange/dapper-dot-net). This lets you implement any query based on SQL statements to get the best performance, thanks to a light framework with little overhead.
 
-Note that when you use this approach, any updates to your model that impact how entities are persisted to a SQL database also need separate updates to SQL queries used by Dapper or any other separate (non-EF) approaches to querying.
+When you use this approach, any updates to your model that impact how entities are persisted to a SQL database also need separate updates to SQL queries used by Dapper or any other separate (non-EF) approaches to querying.
 
 ## CQRS and DDD patterns are not top-level architectures
 

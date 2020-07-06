@@ -49,5 +49,5 @@ This example requires:
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-- [How to: Let users resolve ambiguous times](../../../docs/standard/datetime/let-users-resolve-ambiguous-times.md)
+- [Dates, times, and time zones](index.md)
+- [How to: Let users resolve ambiguous times](let-users-resolve-ambiguous-times.md)

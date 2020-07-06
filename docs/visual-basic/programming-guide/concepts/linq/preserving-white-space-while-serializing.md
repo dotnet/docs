@@ -27,4 +27,4 @@ This topic describes how to control white space when serializing an XML tree.
   
 ## See also
 
-- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+- [Serializing XML Trees (Visual Basic)](serializing-xml-trees.md)

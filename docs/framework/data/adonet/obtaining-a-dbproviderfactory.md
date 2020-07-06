@@ -1,5 +1,6 @@
 ---
 title: "Obtaining a DbProviderFactory"
+description: Learn how to obtain a DbProviderFactory from the DbProviderFactories class to work with specific data sources in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

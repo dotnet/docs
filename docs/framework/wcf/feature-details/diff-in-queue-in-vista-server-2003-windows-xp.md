@@ -31,5 +31,5 @@ This topic summarizes the differences in the Windows Communication Foundation (W
   
 ## See also
 
-- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)
-- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+- [Using Dead-Letter Queues to Handle Message Transfer Failures](using-dead-letter-queues-to-handle-message-transfer-failures.md)
+- [Poison Message Handling](poison-message-handling.md)

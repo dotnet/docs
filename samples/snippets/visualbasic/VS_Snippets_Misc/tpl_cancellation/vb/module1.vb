@@ -38,7 +38,7 @@ Module Test
                 Console.WriteLine(e.Message & " " & item.Message)
             Next
         Finally
-           tokenSource2.Dispose()
+            tokenSource2.Dispose()
         End Try
 
         Console.ReadKey()

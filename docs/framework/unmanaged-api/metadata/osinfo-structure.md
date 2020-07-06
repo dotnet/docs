@@ -40,7 +40,7 @@ typedef struct {
  `OSINFO` is based on the `OSVERSIONINFOEX` structure that is used in calls to the Microsoft Windows platform function `GetVersionEx`. This structure is used by the ASSEMBLYMETADATA structure to indicate its operating system support.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,5 +50,5 @@ typedef struct {
   
 ## See also
 
-- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [Metadata Structures](metadata-structures.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

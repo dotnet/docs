@@ -9,4 +9,4 @@ There are many methods and properties in the XML Document Object Model (DOM)you 
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -1,6 +1,7 @@
 ---
 title: "How to verify that strings are in valid email format"
-ms.date: "12/10/2018"
+description: Read an example of how a regular expression verifies that strings are in a valid email format in .NET.
+ms.date: "06/30/2020"
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -22,6 +23,8 @@ ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 # How to verify that strings are in valid email format
 
 The following example uses a regular expression to verify that a string is in valid email format.
+
+[!INCLUDE [regex](../../../includes/regex.md)]
 
 ## Example
 
@@ -87,4 +90,4 @@ If they are used in a regular expression library, you can call them by using cod
 
 ## See also
 
-- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Framework Regular Expressions](regular-expressions.md)

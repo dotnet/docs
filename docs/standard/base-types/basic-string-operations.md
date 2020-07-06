@@ -17,8 +17,8 @@ Several methods in the <xref:System.String?displayProperty=nameWithType> and <xr
 
 ## Related sections
 
-[Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)\
+[Type Conversion in .NET](type-conversion.md)\
 Describes how to convert one type into another type.  
 
-[Formatting Types](../../../docs/standard/base-types/formatting-types.md)\
+[Formatting Types](formatting-types.md)\
 Describes how to format strings using format specifiers.

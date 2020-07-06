@@ -1,5 +1,6 @@
 ---
 title: "Working with Assemblies and the Global Assembly Cache"
+description: Work with assemblies and the global assembly cache (GAC) in .NET. Review the reasons why you might want to install an assembly in the GAC.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"

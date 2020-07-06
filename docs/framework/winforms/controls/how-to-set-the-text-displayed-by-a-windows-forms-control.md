@@ -1,5 +1,6 @@
 ---
 title: Set the Text Displayed by a Control
+description: Learn how to set the text displayed by a Windows Forms control. Set or return the text by using the Text property, or change the font by using the Font property.
 ms.date: 08/20/2019
 dev_langs:
   - "csharp"

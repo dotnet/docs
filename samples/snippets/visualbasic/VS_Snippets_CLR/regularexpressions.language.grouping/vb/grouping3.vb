@@ -2,32 +2,32 @@
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main() 
+    Public Sub Main()
         Dim pattern As String = "^[^<>]*" & _
                                 "(" + "((?'Open'<)[^<>]*)+" & _
                                 "((?'Close-Open'>)[^<>]*)+" + ")*" & _
                                 "(?(Open)(?!))$"
         Dim input As String = "<abc><mno<xyz>>"
-        Dim rgx AS New Regex(pattern)'
+        Dim rgx AS New Regex(pattern) '
         Dim m As Match = Regex.Match(input, pattern)
         If m.Success Then
             Console.WriteLine("Input: ""{0}"" " & vbCrLf & "Match: ""{1}""", _
                                input, m)
             Dim grpCtr As Integer = 0
             For Each grp As Group In m.Groups
-               Console.WriteLine("   Group {0}: {1}", grpCtr, grp.Value)
-               grpCtr += 1
-               Dim capCtr As Integer = 0
-               For Each cap As Capture In grp.Captures            
-                  Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value)
-                  capCtr += 1
-               Next
+                Console.WriteLine("   Group {0}: {1}", grpCtr, grp.Value)
+                grpCtr += 1
+                Dim capCtr As Integer = 0
+                For Each cap As Capture In grp.Captures
+                    Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value)
+                    capCtr += 1
+                Next
             Next
         Else
             Console.WriteLine("Match failed.")
         End If
     End Sub
-End Module  
+End Module
 ' The example displays the following output:
 '       Input: "<abc><mno<xyz>>"
 '       Match: "<abc><mno<xyz>>"

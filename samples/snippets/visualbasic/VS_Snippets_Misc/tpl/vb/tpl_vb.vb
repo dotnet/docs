@@ -20,7 +20,7 @@ Class Program
         Console.ReadKey()
     End Sub
 
-   
+
 
 End Class
 
@@ -66,7 +66,7 @@ Class IntroCancellation
 
     End Sub
 
-   Shared Function DoComputation1() As Object
+    Shared Function DoComputation1() As Object
         DoComputation1 = New Object()
     End Function
 
@@ -150,7 +150,7 @@ Class IntroCancellation
 
     End Sub
     '</snippet24>
-    
+
 End Class
 
 

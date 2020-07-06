@@ -29,6 +29,6 @@ Peer Channel enables a variety of distributed application types that depend on m
   
 ## See also
 
-- [Securing Peer Channel Applications](../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
-- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Securing Peer Channel Applications](securing-peer-channel-applications.md)
+- [Peer Channel Concepts](peer-channel-concepts.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)

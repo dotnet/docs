@@ -43,4 +43,4 @@ In most cases, you can discover the properties and methods of an object at desig
 ## See also
 
 - <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
-- [Determining Object Type](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)
+- [Determining Object Type](determining-object-type.md)

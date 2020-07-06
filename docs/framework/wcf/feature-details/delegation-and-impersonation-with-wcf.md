@@ -1,5 +1,6 @@
 ---
 title: "Delegation and Impersonation with WCF"
+description: Learn about the methods of impersonation and delegation that WCF uses to restrict client access to the resources of a service domain.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 ---
 # Delegation and Impersonation with WCF
-*Impersonation* is a common technique that services use to restrict client access to a service domain's resources. Service domain resources can either be machine resources, such as local files (impersonation), or a resource on another machine, such as a file share (delegation). For a sample application, see [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md). For an example of how to use impersonation, see [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md).  
+*Impersonation* is a common technique that services use to restrict client access to a service domain's resources. Service domain resources can either be machine resources, such as local files (impersonation), or a resource on another machine, such as a file share (delegation). For a sample application, see [Impersonating the Client](../samples/impersonating-the-client.md). For an example of how to use impersonation, see [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md).  
   
 > [!IMPORTANT]
 > Be aware that when impersonating a client on a service, the service runs with the client's credentials, which may have higher privileges than the server process.  
@@ -23,7 +24,7 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 ## Impersonation Basics  
  Windows Communication Foundation (WCF) supports impersonation for a variety of client credentials. This topic describes service model support for impersonating the caller during the implementation of a service method. Also discussed are common deployment scenarios involving impersonation and SOAP security and WCF options in these scenarios.  
   
- This topic focuses on impersonation and delegation in WCF when using SOAP security. You can also use impersonation and delegation with WCF when using transport security, as described in [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md).  
+ This topic focuses on impersonation and delegation in WCF when using SOAP security. You can also use impersonation and delegation with WCF when using transport security, as described in [Using Impersonation with Transport Security](using-impersonation-with-transport-security.md).  
   
 ## Two Methods  
  WCF SOAP security has two distinct methods for performing impersonation. The method used depends on the binding. One is impersonation from a Windows token obtained from the Security Support Provider Interface (SSPI) or Kerberos authentication, which is then cached on the service. The second is impersonation from a Windows token obtained from the Kerberos extensions, collectively called *Service-for-User* (S4U).  
@@ -51,7 +52,7 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
  The extent to which the service can impersonate the client depends on the privileges the service account holds when it attempts impersonation, the type of impersonation used, and possibly the extent of impersonation the client permits.  
   
 > [!NOTE]
-> When the client and service are running on the same computer and the client is running under a system account (for example, `Local System` or `Network Service`), the client cannot be impersonated when a secure session is established with stateful Security Context tokens. A Windows Form or console application typically runs under the currently logged-in account, so that account can be impersonated by default. However, when the client is an ASP.NET page and that page is hosted in IIS 6.0 or IIS 7.0, then the client does run under the `Network Service` account by default. All of the system-provided bindings that support secure sessions use a stateless security context token (SCT) by default. However, if the client is an ASP.NET page, and secure sessions with stateful SCTs are used, the client cannot be impersonated. For more information about using stateful SCTs in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+> When the client and service are running on the same computer and the client is running under a system account (for example, `Local System` or `Network Service`), the client cannot be impersonated when a secure session is established with stateful Security Context tokens. A Windows Form or console application typically runs under the currently logged-in account, so that account can be impersonated by default. However, when the client is an ASP.NET page and that page is hosted in IIS 6.0 or IIS 7.0, then the client does run under the `Network Service` account by default. All of the system-provided bindings that support secure sessions use a stateless security context token (SCT) by default. However, if the client is an ASP.NET page, and secure sessions with stateful SCTs are used, the client cannot be impersonated. For more information about using stateful SCTs in a secure session, see [How to: Create a Security Context Token for a Secure Session](how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 ## Impersonation in a Service Method: Declarative Model  
  Most impersonation scenarios involve executing the service method in the caller context. WCF provides an impersonation feature that makes this easy to do by allowing the user to specify the impersonation requirement in the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. For example, in the following code, the WCF infrastructure impersonates the caller before executing the `Hello` method. Any attempt to access native resources inside the `Hello` method succeed only if the access control list (ACL) of the resource allows the caller access privileges. To enable impersonation, set the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property to one of the <xref:System.ServiceModel.ImpersonationOption> enumeration values, either <xref:System.ServiceModel.ImpersonationOption.Required?displayProperty=nameWithType> or <xref:System.ServiceModel.ImpersonationOption.Allowed?displayProperty=nameWithType>, as shown in the following example.  
@@ -65,7 +66,7 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
  The WCF infrastructure can impersonate the caller only if the caller is authenticated with credentials that can be mapped to a Windows user account. If the service is configured to authenticate using a credential that cannot be mapped to a Windows account, the service method is not executed.  
   
 > [!NOTE]
-> On Windows XP, impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. For more information, see [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md).  
+> On Windows XP, impersonation fails if a stateful SCT is created, resulting in an <xref:System.InvalidOperationException>. For more information, see [Unsupported Scenarios](unsupported-scenarios.md).  
   
 ## Impersonation in a Service Method: Imperative Model  
  Sometimes a caller does not need to impersonate the entire service method to function, but for only a portion of it. In this case, obtain the Windows identity of the caller inside the service method and imperatively perform the impersonation. Do this by using the <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A> property of the <xref:System.ServiceModel.ServiceSecurityContext> to return an instance of the <xref:System.Security.Principal.WindowsIdentity> class and calling the <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> method before using the instance.  
@@ -210,7 +211,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.ChannelFactory%601>
 - <xref:System.Security.Principal.TokenImpersonationLevel.Identification>
-- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)
-- [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md)
-- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Using Impersonation with Transport Security](using-impersonation-with-transport-security.md)
+- [Impersonating the Client](../samples/impersonating-the-client.md)
+- [How to: Impersonate a Client on a Service](../how-to-impersonate-a-client-on-a-service.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

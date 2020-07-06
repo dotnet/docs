@@ -1,5 +1,6 @@
 ---
 title: "Performance Counters and In-Process Side-By-Side Applications"
+description: Review performance counters and in-process side-by-side applications in .NET. Use Perfmon.exe to differentiate the performance counters on a per-runtime basis.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

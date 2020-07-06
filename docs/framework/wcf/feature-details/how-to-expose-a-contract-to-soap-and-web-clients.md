@@ -1,5 +1,6 @@
 ---
 title: "How to: Expose a Contract to SOAP and Web Clients"
+description: Learn how to make a WFC server endpoint available to both SOAP and non-SOAP clients. By default, endpoints are available only to SOAP clients.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -8,7 +9,7 @@ ms.assetid: bb765a48-12f2-430d-a54d-6f0c20f2a23a
 ---
 # How to: Expose a Contract to SOAP and Web Clients
 
-By default, Windows Communication Foundation (WCF) makes endpoints available only to SOAP clients. In [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md), an endpoint is made available to non-SOAP clients. There may be times when you want to make the same contract available both ways, as a Web endpoint and as a SOAP endpoint. This topic shows an example of how to do this.
+By default, Windows Communication Foundation (WCF) makes endpoints available only to SOAP clients. In [How to: Create a Basic WCF Web HTTP Service](how-to-create-a-basic-wcf-web-http-service.md), an endpoint is made available to non-SOAP clients. There may be times when you want to make the same contract available both ways, as a Web endpoint and as a SOAP endpoint. This topic shows an example of how to do this.
 
 ## To define the service contract
 
@@ -104,4 +105,4 @@ The following is the full code listing for this topic:
 - <xref:System.ServiceModel.Web.WebServiceHost>
 - <xref:System.ServiceModel.ChannelFactory>
 - <xref:System.ServiceModel.Description.WebHttpBehavior>
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)

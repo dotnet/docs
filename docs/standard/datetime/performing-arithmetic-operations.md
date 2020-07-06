@@ -42,7 +42,7 @@ More generally, the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> 
 
 - Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.
 
-There are many scenarios in which time zone differences do not affect date and time calculations (for a discussion of some of these, see [Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)) or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.
+There are many scenarios in which time zone differences do not affect date and time calculations (for a discussion of some of these, see [Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](choosing-between-datetime.md)) or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.
 
 ## Comparisons and arithmetic operations with DateTimeOffset values
 
@@ -68,9 +68,9 @@ The <xref:System.TimeZoneInfo> class includes a number of conversion methods tha
 
 - The <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods, which convert the time in a particular time zone to UTC, or convert UTC to the time in a particular time zone.
 
-For details, see [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md).
+For details, see [Converting times between time zones](converting-between-time-zones.md).
 
-The <xref:System.TimeZoneInfo> class does not provide any methods that automatically apply adjustment rules when you perform date and time arithmetic. However, you can do this by converting the time in a time zone to UTC, performing the arithmetic operation, and then converting from UTC back to the time in the time zone. For details, see [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md).
+The <xref:System.TimeZoneInfo> class does not provide any methods that automatically apply adjustment rules when you perform date and time arithmetic. However, you can do this by converting the time in a time zone to UTC, performing the arithmetic operation, and then converting from UTC back to the time in the time zone. For details, see [How to: Use time zones in date and time arithmetic](use-time-zones-in-arithmetic.md).
 
 For example, the following code is similar to the previous code that added two-and-a-half hours to 2:00 A.M. on March 9, 2008. However, because it converts a Central Standard time to UTC before it performs date and time arithmetic, and then converts the result from UTC back to Central Standard time, the resulting time reflects the Central Standard Time Zone's transition to daylight saving time.
 
@@ -79,5 +79,5 @@ For example, the following code is similar to the previous code that added two-a
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-- [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md)
+- [Dates, times, and time zones](index.md)
+- [How to: Use time zones in date and time arithmetic](use-time-zones-in-arithmetic.md)

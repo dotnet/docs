@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify the Binding Source"
+description: Learn how to specify the binding source through this example in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

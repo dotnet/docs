@@ -16,4 +16,4 @@ Either a component cannot find a directory named TEMP, or the drive or partition
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

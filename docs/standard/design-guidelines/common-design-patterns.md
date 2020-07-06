@@ -1,5 +1,6 @@
 ---
 title: "Common Design Patterns"
+description: "See links that describe a couple of common design patterns in .NET: dependency properties and the dispose pattern."
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -11,7 +12,7 @@ ms.assetid: f7bd1361-4ab2-4132-972d-a044b8f197e1
 There are numerous books on software patterns, pattern languages, and antipatterns that address the very broad subject of patterns. Thus, this chapter provides guidelines and discussion related to a very limited set of patterns that are used frequently in the design of the .NET Framework APIs.  
   
 ## In This Section  
- [Dependency Properties](../../../docs/standard/design-guidelines/dependency-properties.md)  
+ [Dependency Properties](dependency-properties.md)  
  [Dispose Pattern](../garbage-collection/implementing-dispose.md)  
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
@@ -19,4 +20,4 @@ There are numerous books on software patterns, pattern languages, and antipatter
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Framework Design Guidelines](index.md)

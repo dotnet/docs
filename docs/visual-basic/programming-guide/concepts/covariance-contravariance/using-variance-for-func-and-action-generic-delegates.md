@@ -7,7 +7,7 @@ ms.assetid: 36c3012f-b39c-493b-b90f-079b5912ac1b
 
 These examples demonstrate how to use covariance and contravariance in the `Func` and `Action` generic delegates to enable reuse of methods and provide more flexibility in your code.
 
-For more information about covariance and contravariance, see [Variance in Delegates (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md).
+For more information about covariance and contravariance, see [Variance in Delegates (Visual Basic)](variance-in-delegates.md).
 
 ## Using Delegates with Covariant Type Parameters
 
@@ -88,5 +88,5 @@ End Class
 
 ## See also
 
-- [Covariance and Contravariance (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)
+- [Covariance and Contravariance (Visual Basic)](index.md)
 - [Generics](../../../../standard/generics/index.md)

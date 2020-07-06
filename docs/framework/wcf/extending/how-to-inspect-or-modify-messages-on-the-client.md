@@ -1,5 +1,6 @@
 ---
 title: "How to: Inspect or Modify Messages on the Client"
+description: Learn how to inspect or modify the incoming or outgoing messages across a WCF client or service by implementing the appropriate interface.
 ms.date: "03/30/2017"
 ms.assetid: b8256335-f1c2-419f-b862-9f220ccad84c
 ---

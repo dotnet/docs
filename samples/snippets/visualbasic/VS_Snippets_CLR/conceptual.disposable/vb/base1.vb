@@ -70,10 +70,10 @@ End Class
 ' </Snippet9>
 
 Module Example
-   Public Sub Main()
-      Dim d As New DisposableStreamResource("C:\Windows\Explorer.exe")
-      Console.WriteLine(d.Size.ToString("N0"))
-      d.Dispose()
-   End Sub
+    Public Sub Main()
+        Dim d As New DisposableStreamResource("C:\Windows\Explorer.exe")
+        Console.WriteLine(d.Size.ToString("N0"))
+        d.Dispose()
+    End Sub
 End Module
 

@@ -41,7 +41,7 @@ HRESULT CreateTask (
  [in] A pointer to the user data to be passed to the function, or null if the function takes no parameters.  
   
  `ppTask`  
- [out] A pointer to the address of an [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](ihosttask-start-method.md).  
+ [out] A pointer to the address of an [IHostTask](ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](ihosttask-start-method.md).  
   
 ## Return Value  
   

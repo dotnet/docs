@@ -18,7 +18,7 @@ At build time, NuGet analyzes all the packages that a project depends on, includ
 Most diamond dependencies are easily resolved; however, they can create issues in certain circumstances:
 
 1. **Conflicting NuGet package references** prevent a version from being resolved during package restore.
-2. **Breaking changes between the versions** cause bugs and exceptions at runtime.
+2. **Breaking changes between the versions** cause bugs and exceptions at run time.
 3. **The package assembly is strong named**, the assembly version changed, and the app is running on the .NET Framework. Assembly binding redirects are required.
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.

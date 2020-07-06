@@ -17,4 +17,4 @@ Even in the few cases where it is necessary, migrating code from one technology 
 
 ## See also
 
-- [How to: Retrieve Metadata and Implement a Compliant Service](../../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md)
+- [How to: Retrieve Metadata and Implement a Compliant Service](how-to-retrieve-metadata-and-implement-a-compliant-service.md)

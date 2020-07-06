@@ -33,6 +33,7 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 |--------------|-------------------------|
 |[`object`](reference-types.md#the-object-type)|<xref:System.Object?displayProperty=nameWithType>|
 |[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
+|[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
 
 In the preceding tables, each C# type keyword from the left column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 
@@ -47,4 +48,3 @@ The [`void`](void.md) keyword represents the absence of a type. You use it as th
 
 - [C# reference](../index.md)
 - [Default values of C# types](default-values.md)
-- [`dynamic` keyword](reference-types.md#the-dynamic-type)

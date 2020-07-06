@@ -28,4 +28,4 @@ This example shows how to listen to two cancellation tokens simultaneously so th
   
 ## See also
 
-- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Cancellation in Managed Threads](cancellation-in-managed-threads.md)

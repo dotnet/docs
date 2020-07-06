@@ -1,5 +1,6 @@
 ---
 title: "Synchronous Server Socket Example"
+description: This example .NET Framework program creates a server that receives connections from clients using a synchronous socket. It receives and echoes a string.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

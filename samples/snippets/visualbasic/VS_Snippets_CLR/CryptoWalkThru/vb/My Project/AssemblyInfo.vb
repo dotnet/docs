@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CryptoWalkThruVB")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("CryptoWalkThruVB")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2006")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("CryptoWalkThruVB")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("CryptoWalkThruVB")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2006")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("eb11a7ca-3fdf-4f81-9a1b-73a470f87bc1")> 
+<Assembly: Guid("eb11a7ca-3fdf-4f81-9a1b-73a470f87bc1")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

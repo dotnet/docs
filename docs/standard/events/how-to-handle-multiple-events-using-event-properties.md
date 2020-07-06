@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle Multiple Events Using Event Properties"
+description: Learn how to handle many events by using event properties. Define delegate collections, event keys, & event properties. Implement add & remove accessor methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -42,6 +43,6 @@ To use event properties, you define the event properties in the class that raise
 ## See also
 
 - <xref:System.ComponentModel.EventHandlerList?displayProperty=nameWithType>
-- [Events](../../../docs/standard/events/index.md)
+- [Events](index.md)
 - <xref:System.Web.UI.Control.Events%2A?displayProperty=nameWithType>
 - [How to: Declare Custom Events To Conserve Memory](../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

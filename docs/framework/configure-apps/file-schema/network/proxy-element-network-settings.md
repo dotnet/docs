@@ -1,5 +1,6 @@
 ---
 title: "<proxy> Element (Network Settings)"
+description: The <proxy> network settings element defines the proxy server options in the .NET Framework. This article includes an example.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/proxy"
@@ -21,11 +22,11 @@ Defines a proxy server.
   
 ```xml  
 <proxy
-  autoDetect="true|false|unspecified"
-  bypassonlocal="true|false|unspecified"
+  autoDetect="True|False|Unspecified"
+  bypassonlocal="True|False|Unspecified"
   proxyaddress="uriString"
   scriptLocation="uriString"
-  usesystemdefault="true|false|unspecified"
+  usesystemdefault="True|False|Unspecified"
 />
 ```  
   
@@ -36,11 +37,11 @@ Defines a proxy server.
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|`autoDetect`|Specifies whether the proxy is automatically detected. The default value is `unspecified`.|  
-|`bypassonlocal`|Specifies whether the proxy is bypassed for local resources. Local resources include the local server (`http://localhost`, `http://loopback`, or `http://127.0.0.1`) and a URI without a period (`http://webserver`). The default value is `unspecified`.|  
+|`autoDetect`|Specifies whether the proxy is automatically detected. The default value is `Unspecified`.|  
+|`bypassonlocal`|Specifies whether the proxy is bypassed for local resources. Local resources include the local server (`http://localhost`, `http://loopback`, or `http://127.0.0.1`) and a URI without a period (`http://webserver`). The default value is `Unspecified`.|  
 |`proxyaddress`|Specifies the proxy URI to use.|  
 |`scriptLocation`|Specifies the location of the configuration script. Do not use the `bypassonlocal` attribute with this attribute. |  
-|`usesystemdefault`|Specifies whether to use Internet Explorer proxy settings. If set to `true`, subsequent attributes will override Internet Explorer proxy settings. The default value is `unspecified`.|  
+|`usesystemdefault`|Specifies whether to use Internet Explorer proxy settings. If set to `True`, subsequent attributes will override Internet Explorer proxy settings. The default value is `Unspecified`.|  
   
 ### Child Elements  
  None.  
@@ -75,9 +76,9 @@ Defines a proxy server.
   <system.net>  
     <defaultProxy>  
       <proxy  
-        usesystemdefault="true"  
+        usesystemdefault="True"  
         proxyaddress="http://192.168.1.10:3128"  
-        bypassonlocal="true"  
+        bypassonlocal="True"  
       />  
     </defaultProxy>  
   </system.net>  

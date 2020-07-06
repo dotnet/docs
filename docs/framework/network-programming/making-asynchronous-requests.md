@@ -1,5 +1,6 @@
 ---
 title: "Making Asynchronous Requests"
+description: Learn how the System.Net classes use the .NET Framework standard asynchronous programming model for asynchronous access to internet resources.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

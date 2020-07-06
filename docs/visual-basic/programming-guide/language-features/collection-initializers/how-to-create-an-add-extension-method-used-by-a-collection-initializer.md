@@ -21,5 +21,5 @@ When you use a collection initializer to create a collection, the Visual Basic c
   
 ## See also
 
-- [Collection Initializers](../../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
-- [How to: Create a Collection Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)
+- [Collection Initializers](index.md)
+- [How to: Create a Collection Used by a Collection Initializer](how-to-create-a-collection-used-by-a-collection-initializer.md)

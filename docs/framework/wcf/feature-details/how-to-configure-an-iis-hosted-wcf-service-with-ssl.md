@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure an IIS-hosted WCF service with SSL"
+description: Learn how to set up an IIS-hosted WCF service to use HTTP transport security, which requires a certificate that is registered with IIS.
 ms.date: "03/30/2017"
 ms.assetid: df2fe31f-a4bb-4024-92ca-b74ba055e038
 ---
@@ -10,19 +11,19 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   
 1. Open Internet Information Services Manager (inetmgr.exe), and select your computer name in the left-hand tree view. On the right-hand side of the screen select Server Certificates  
   
-     ![IIS Manager Home Screen](../../../../docs/framework/wcf/feature-details/media/mg-inetmgrhome.jpg "mg_INetMgrHome")  
+     ![IIS Manager Home Screen](media/mg-inetmgrhome.jpg "mg_INetMgrHome")  
   
 2. In the Server Certificates window click the **Create Self-Signed Certificate….** Link.  
   
-     ![Creating a self&#45;signed certificate with IIS](../../../../docs/framework/wcf/feature-details/media/mg-createselfsignedcert.jpg "mg_CreateSelfSignedCert")  
+     ![Creating a self&#45;signed certificate with IIS](media/mg-createselfsignedcert.jpg "mg_CreateSelfSignedCert")  
   
 3. Enter a friendly name for the self-signed certificate and click **OK**.  
   
-     ![Create Self&#45;Signed Certificate Dialog](../../../../docs/framework/wcf/feature-details/media/mg-mycert.jpg "mg_MyCert")  
+     ![Create Self&#45;Signed Certificate Dialog](media/mg-mycert.jpg "mg_MyCert")  
   
      The newly created self-signed certificate details are now shown in the **Server Certificates** window.  
   
-     ![Server Certificate Window](../../../../docs/framework/wcf/feature-details/media/mg-servercertificatewindow.jpg "mg_ServerCertificateWindow")  
+     ![Server Certificate Window](media/mg-servercertificatewindow.jpg "mg_ServerCertificateWindow")  
   
      The generated certificate is installed in the Trusted Root Certification Authorities store.  
   
@@ -32,15 +33,15 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   
 2. Click the **Bindings….** Link in the **Actions** section in the upper right hand portion of the window.  
   
-     ![Adding an SSL binding](../../../../docs/framework/wcf/feature-details/media/mg-addsslbinding.jpg "mg_AddSSLBinding")  
+     ![Adding an SSL binding](media/mg-addsslbinding.jpg "mg_AddSSLBinding")  
   
 3. In the Site Bindings window click the **Add** button.  
   
-     ![Site Bindings Dialog](../../../../docs/framework/wcf/feature-details/media/mg-sitebindingsdialog.jpg "mg_SiteBindingsDialog")  
+     ![Site Bindings Dialog](media/mg-sitebindingsdialog.jpg "mg_SiteBindingsDialog")  
   
 4. In the **Add Site Binding** dialog, select https for the type and the friendly name of the self-signed certificate you just created.  
   
-     ![Site binding example](../../../../docs/framework/wcf/feature-details/media/mg-mycertbinding.jpg "mg_MyCertBinding")  
+     ![Site binding example](media/mg-mycertbinding.jpg "mg_MyCertBinding")  
   
 ### Configure Virtual Directory for SSL  
   
@@ -48,11 +49,11 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   
 2. In the center pane of the window, select **SSL Settings** in the IIS section.  
   
-     ![SSL Settings for virtual directory](../../../../docs/framework/wcf/feature-details/media/mg-sslsettingsforvdir.jpg "mg_SSLSettingsForVDir")  
+     ![SSL Settings for virtual directory](media/mg-sslsettingsforvdir.jpg "mg_SSLSettingsForVDir")  
   
 3. In the SSL Settings pane, select the **Require SSL** checkbox and click the **Apply** link in the **Actions** section on the right hand side of the screen.  
   
-     ![Virtual directory SSL settings](../../../../docs/framework/wcf/feature-details/media/mg-vdirsslsettings.JPG "mg_VDirSSLSettings")  
+     ![Virtual directory SSL settings](media/mg-vdirsslsettings.JPG "mg_VDirSSLSettings")  
   
 ### Configure WCF Service for HTTP Transport Security  
   
@@ -140,7 +141,7 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   
 ## See also
 
-- [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
-- [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)
-- [Internet Information Services Hosting Best Practices](../../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
-- [IIS Hosting Using Inline Code](../../../../docs/framework/wcf/samples/iis-hosting-using-inline-code.md)
+- [Hosting in Internet Information Services](hosting-in-internet-information-services.md)
+- [Internet Information Service Hosting Instructions](../samples/internet-information-service-hosting-instructions.md)
+- [Internet Information Services Hosting Best Practices](internet-information-services-hosting-best-practices.md)
+- [IIS Hosting Using Inline Code](../samples/iis-hosting-using-inline-code.md)

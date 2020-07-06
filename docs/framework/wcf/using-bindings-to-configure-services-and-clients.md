@@ -1,5 +1,6 @@
 ---
 title: "Using Bindings to Configure Services and Clients"
+description: Bindings contain configuration information used by WFC clients or services. Learn how to define bindings and how to specify a binding for a service endpoint.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "bindings [WCF], using"

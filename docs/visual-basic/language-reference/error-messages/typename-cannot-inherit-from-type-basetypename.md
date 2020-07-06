@@ -25,7 +25,7 @@ A class or interface inherits from a base class or interface but has a less rest
   
 ## See also
 
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Class Statement](../statements/class-statement.md)
+- [Interface Statement](../statements/interface-statement.md)
+- [Inherits Statement](../statements/inherits-statement.md)
+- [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

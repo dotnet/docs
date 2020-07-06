@@ -27,11 +27,11 @@ Encoding and decoding can also include validation. For example, the <xref:System
 
 All character encoding classes in .NET inherit from the <xref:System.Text.Encoding?displayProperty=nameWithType> class, which is an abstract class that defines the functionality common to all character encodings. To access the individual encoding objects implemented in .NET, do the following:
 
-- Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. For more information, see [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement).
+- Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. For more information, see [Replacement fallback](character-encoding.md#Replacement).
 
-- Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. For more information, see [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) and [Exception fallback](../../../docs/standard/base-types/character-encoding.md#Exception).
+- Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. For more information, see [Replacement fallback](character-encoding.md#Replacement) and [Exception fallback](character-encoding.md#Exception).
 
-- Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. For more information, see [Best-fit fallback](../../../docs/standard/base-types/character-encoding.md#BestFit).
+- Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. For more information, see [Best-fit fallback](character-encoding.md#BestFit).
 
 - Call the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method, which returns any standard, code page, or DBCS encoding available in .NET. Overloads let you specify a fallback object for both the encoder and the decoder.
 
@@ -139,7 +139,7 @@ The following example uses code page 1252 (the Windows code page for Western Eur
 Best-fit mapping is the default behavior for an <xref:System.Text.Encoding> object that encodes Unicode data into code page data, and there are legacy applications that rely on this behavior. However, most new applications should avoid best-fit behavior for security reasons. For example, applications should not put a domain name through a best-fit encoding.
 
 > [!NOTE]
-> You can also implement a custom best-fit fallback mapping for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.
+> You can also implement a custom best-fit fallback mapping for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) section.
 
 If best-fit fallback is the default for an encoding object, you can choose another fallback strategy when you retrieve an <xref:System.Text.Encoding> object by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> or <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> overload. The following section includes an example that replaces each character that cannot be mapped to code page 1252 with an asterisk (*).
 
@@ -161,7 +161,7 @@ When a character does not have an exact match in the target scheme, but there is
 [!code-vb[Conceptual.Encoding#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/bestfit1a.vb#3)]
 
 > [!NOTE]
-> You can also implement a replacement class for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.
+> You can also implement a replacement class for an encoding. For more information, see the [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) section.
 
 In addition to QUESTION MARK (U+003F), the Unicode REPLACEMENT CHARACTER (U+FFFD) is commonly used as a replacement string, particularly when decoding byte sequences that cannot be successfully translated into Unicode characters. However, you are free to choose any replacement string, and it can contain multiple characters.
 
@@ -175,7 +175,7 @@ Instead of providing a best-fit fallback or a replacement string, an encoder can
 [!code-vb[Conceptual.Encoding#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/exceptionascii.vb#4)]
 
 > [!NOTE]
-> You can also implement a custom exception handler for an encoding operation. For more information, see the [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom) section.
+> You can also implement a custom exception handler for an encoding operation. For more information, see the [Implementing a Custom Fallback Strategy](character-encoding.md#Custom) section.
 
 The <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> objects provide the following information about the condition that caused the exception:
 
@@ -262,4 +262,4 @@ The following code then instantiates the `CustomMapper` object and passes an ins
 - <xref:System.Text.DecoderFallback>
 - <xref:System.Text.Encoding>
 - <xref:System.Text.EncoderFallback>
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Globalization and Localization](../globalization-localization/index.md)

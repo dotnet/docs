@@ -46,5 +46,5 @@ The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref
 
 - <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>
 - <xref:Microsoft.Win32.RegistryKey>
-- [Security and the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)
-- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [Security and the Registry](security-and-the-registry.md)
+- [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)

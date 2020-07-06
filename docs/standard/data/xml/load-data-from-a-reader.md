@@ -23,4 +23,4 @@ If an XML document is loaded using the <xref:System.Xml.XmlDocument.Load%2A> met
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -11,7 +11,7 @@ ms.assetid: 7054cc1e-bac3-4c3d-82f3-35772bd8dd3b
 # Structure '\<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'
 A structure definition does not include any nonshared variables or nonshared noncustom events.  
   
- Every structure must have either a variable or an event that applies to each specific instance (nonshared) instead of to all instances collectively ([Shared](../../../visual-basic/language-reference/modifiers/shared.md)). Nonshared constants, properties, and procedures do not satisfy this requirement. In addition, if there are no nonshared variables and only one nonshared event, that event cannot be a `Custom` event.  
+ Every structure must have either a variable or an event that applies to each specific instance (nonshared) instead of to all instances collectively ([Shared](../modifiers/shared.md)). Nonshared constants, properties, and procedures do not satisfy this requirement. In addition, if there are no nonshared variables and only one nonshared event, that event cannot be a `Custom` event.  
   
  **Error ID:** BC30941  
   
@@ -21,6 +21,6 @@ A structure definition does not include any nonshared variables or nonshared non
   
 ## See also
 
-- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Structures](../../programming-guide/language-features/data-types/structures.md)
+- [How to: Declare a Structure](../../programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Structure Statement](../statements/structure-statement.md)

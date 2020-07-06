@@ -95,12 +95,12 @@ Namespace CustomDataServiceClient
         Implements IUpdatable.ResolveResource
             Return resource
         End Function
-' Reverts all the pending changes.
+        ' Reverts all the pending changes.
         Sub ClearChanges() Implements IUpdatable.ClearChanges
             '' Nothing to do for this in-memory provider (uncomment to raise an exception).
             'throw new NotSupportedException(
             '    "The clear changes functionality is not supported by this in-memory provider");
         End Sub
     End Class
-End Namespace 
+End Namespace
 '</snippetCustomIUpdatable>

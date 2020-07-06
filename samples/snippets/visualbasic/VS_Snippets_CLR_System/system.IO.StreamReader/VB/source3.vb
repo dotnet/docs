@@ -18,7 +18,7 @@ Public Class ReadBuf
             ' While not at the end of the file, read lines from the file.
             While br.PeekChar() > -1
                 input = br.ReadByte()
-                Console.WriteLine (input)
+                Console.WriteLine(input)
             End While
         End Using
     End Sub

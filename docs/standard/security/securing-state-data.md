@@ -23,4 +23,4 @@ Applications that handle sensitive data or make any kind of security decisions n
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](secure-coding-guidelines.md)

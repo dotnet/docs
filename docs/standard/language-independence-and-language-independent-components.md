@@ -164,7 +164,7 @@ All types that appear in member signatures, including a method's return type or 
 
 - All types used as constraints on generic parameters must be CLS-compliant.
 
-The .NET Framework [common type system](../../docs/standard/base-types/common-type-system.md) includes a number of built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
+The .NET Framework [common type system](base-types/common-type-system.md) includes a number of built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata. Of these intrinsic types, the types listed in the following table are CLS-compliant.
 
 |CLS-compliant type|Description|
 |-------------------------|-----------------|
@@ -565,7 +565,7 @@ If you are developing an app rather than a library (that is, if you aren't expos
 
 ## Cross-Language Interoperability
 
-Language independence has a number of possible meanings. One meaning, which is discussed in the article [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md), involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET Framework assembly.
+Language independence has a number of possible meanings. One meaning, which is discussed in the article [Language Independence and Language-Independent Components](language-independence-and-language-independent-components.md), involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET Framework assembly.
 
 The following example illustrates cross-language interoperability by creating a class library named Utilities.dll that includes two classes, `NumericLib` and `StringLib`. The `NumericLib` class is written in C#, and the `StringLib` class is written in Visual Basic. Here's the source code for StringUtil.vb, which includes a single member, `ToTitleCase`, in its `StringLib` class.
 

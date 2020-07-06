@@ -1,5 +1,6 @@
 ---
 title: "How to: Request a Web Page and Retrieve the Results as a Stream"
+description: This example shows how to request a webpage and retrieve the results in a stream in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

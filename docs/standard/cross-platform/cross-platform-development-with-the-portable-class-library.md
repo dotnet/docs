@@ -1,5 +1,6 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
+description: Build cross-platform apps and libraries for Microsoft platforms quickly and easily using the Portable Class Library project type in .NET.
 ms.date: 09/17/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -74,12 +75,12 @@ When you deploy a .NET Framework app that references a Portable Class Library as
 
 - To create a dependency with a setup project: In **Solution Explorer**, choose the setup project. On the menu bar, choose **Project** > **Properties** > **Prerequisites**. Select the required .NET Framework version as a prerequisite.
 
-For more information about deploying .NET Framework apps, see [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md).
+For more information about deploying .NET Framework apps, see [Deployment Guide for Developers](../../framework/deployment/deployment-guide-for-developers.md).
 
 ## See also
 
 - [Using Portable Class Library with MVVM](using-portable-class-library-with-model-view-view-model.md)
 - [App Resources for Libraries That Target Multiple Platforms](app-resources-for-libraries-that-target-multiple-platforms.md)
 - [.NET Portability Analyzer](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
-- [Deployment](../../../docs/framework/deployment/net-framework-applications.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](support-for-windows-store-apps-and-windows-runtime.md)
+- [Deployment](../../framework/deployment/net-framework-applications.md)

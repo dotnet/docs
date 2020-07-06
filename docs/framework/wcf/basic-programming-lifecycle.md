@@ -1,5 +1,6 @@
 ---
 title: "Basic Programming Lifecycle"
+description: Learn about the tasks to build a WCF application. WCF enables apps to communicate on the same computer, over networks, or on different application platforms.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "service creation [WCF]"

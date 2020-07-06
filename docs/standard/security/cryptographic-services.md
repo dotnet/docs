@@ -1,5 +1,6 @@
 ---
 title: "Cryptographic Services"
+description: Read an overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -265,6 +266,6 @@ The .NET Framework 3.5 also includes a variety of supporting CNG classes, such a
 
 |Title|Description|
 |-----------|-----------------|
-|[Cryptography Model](../../../docs/standard/security/cryptography-model.md)|Describes how cryptography is implemented in the base class library.|
-|[Walkthrough: Creating a Cryptographic Application](../../../docs/standard/security/walkthrough-creating-a-cryptographic-application.md)|Demonstrates basic encryption and decryption tasks.|
-|[Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)|Describes how to map algorithm names to cryptographic classes and map object identifiers to a cryptographic algorithm.|
+|[Cryptography Model](cryptography-model.md)|Describes how cryptography is implemented in the base class library.|
+|[Walkthrough: Creating a Cryptographic Application](walkthrough-creating-a-cryptographic-application.md)|Demonstrates basic encryption and decryption tasks.|
+|[Configuring Cryptography Classes](../../framework/configure-apps/configure-cryptography-classes.md)|Describes how to map algorithm names to cryptographic classes and map object identifiers to a cryptographic algorithm.|

@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
 ---
 # Web Services Protocols Supported by System-Provided Interoperability Bindings
-Windows Communication Foundation (WCF) is built to interoperate with Web services that support a set of specifications known as Web services specifications. To simplify service configuration for interoperability best practices, WCF introduces three interoperable system-provided bindings: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, and <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>. For interoperability with Organization for the Advancement of Structured Information Standards (OASIS) standards, WCF includes one interoperable system-provided binding: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>. For metadata publication, WCF includes two interoperable system-provided bindings: [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) and [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md). This topic lists specifications that system-provided interoperable bindings support.  
+Windows Communication Foundation (WCF) is built to interoperate with Web services that support a set of specifications known as Web services specifications. To simplify service configuration for interoperability best practices, WCF introduces three interoperable system-provided bindings: <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType>, <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType>, and <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>. For interoperability with Organization for the Advancement of Structured Information Standards (OASIS) standards, WCF includes one interoperable system-provided binding: <xref:System.ServiceModel.WS2007HttpBinding?displayProperty=nameWithType>. For metadata publication, WCF includes two interoperable system-provided bindings: [\<mexHttpBinding>](../../configure-apps/file-schema/wcf/mexhttpbinding.md) and [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md). This topic lists specifications that system-provided interoperable bindings support.  
   
 ## Web Services Protocols Supported by basicHttpBinding, wsHttpBinding, ws2007HttpBinding, and wsDualHttpBinding Bindings  
   
 ### All Bindings  
- The [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), and [\<ws2007HttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) bindings support the following protocols.  
+ The [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md), [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md), and [\<ws2007HttpBinding>](../../configure-apps/file-schema/wcf/ws2007httpbinding.md) bindings support the following protocols.  
   
 > [!NOTE]
 > For information about bindings used to publish metadata, see the "System-Provided Metadata Bindings" section later in this topic.  
@@ -55,7 +55,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 |Transactions|WS-Coordination|[WS-Coordination](https://docs.microsoft.com/previous-versions/ms951231(v=msdn.10))<br /><br /> Use to flow the transaction context when the `flowTransactions` attribute is set to "Allowed" or "Required".<br /><br /> `<wsHttpBinding>   <binding transactionFlow="true"/> </wsHttpBinding>`|  
   
 ## wsFederationHttpBinding and ws2007FederationHttpBinding  
- The [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and [\<ws2007FederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) elements are introduced to provide support for federated scenarios, where a third party issues a token used to authenticate a client. In addition to the protocols used by `wsHttpBinding`, `wsFederationHttpBinding` leverages:  
+ The [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and [\<ws2007FederationHttpBinding>](../../configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) elements are introduced to provide support for federated scenarios, where a third party issues a token used to authenticate a client. In addition to the protocols used by `wsHttpBinding`, `wsFederationHttpBinding` leverages:  
   
 - `WS-Trust` for token issuance.  
   
@@ -77,13 +77,13 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 </wsFederationHttpBinding>  
 ```  
   
- For more information, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md) .  
+ For more information, see [Federation](federation.md) .  
   
 ## System-Provided Metadata Bindings  
  The following tables describe the protocols supported by the system-provided interoperable metadata bindings exposed by the <xref:System.ServiceModel.Description.MetadataExchangeBindings?displayProperty=nameWithType> class.  
   
 ### mexHttpBinding  
- The [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md) binding supports the following protocols. For more information about using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
+ The [\<mexHttpBinding>](../../configure-apps/file-schema/wcf/mexhttpbinding.md) binding supports the following protocols. For more information about using this binding, see [Publishing Metadata](publishing-metadata.md).  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  
@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 |Metadata|WS-MetadataExchange|[WS-MetadataExchange](http://specs.xmlsoap.org/ws/2004/09/mex/WS-MetadataExchange.pdf)<br /><br /> WCF implements WS-MetadataExchange to retrieve XML Schema, WSDL, and WS-Policy.|  
   
 ### mexHttpsBinding  
- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md) supports the following protocols. For more information about using this binding, see [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md).  
+ [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md) supports the following protocols. For more information about using this binding, see [Publishing Metadata](publishing-metadata.md).  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  
@@ -104,9 +104,9 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
   
 ## See also
 
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
-- [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)
-- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
-- [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md)
-- [\<mexHttpsBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpsbinding.md)
-- [\<mexHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/mexhttpbinding.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md)
+- [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md)
+- [\<wsDualHttpBinding>](../../configure-apps/file-schema/wcf/wsdualhttpbinding.md)
+- [\<mexHttpsBinding>](../../configure-apps/file-schema/wcf/mexhttpsbinding.md)
+- [\<mexHttpBinding>](../../configure-apps/file-schema/wcf/mexhttpbinding.md)

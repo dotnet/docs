@@ -42,5 +42,5 @@ MsgBox(result)
   
 ## See also
 
-- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
-- [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)
+- [Expression Trees (Visual Basic)](index.md)
+- [How to: Modify Expression Trees (Visual Basic)](how-to-modify-expression-trees.md)

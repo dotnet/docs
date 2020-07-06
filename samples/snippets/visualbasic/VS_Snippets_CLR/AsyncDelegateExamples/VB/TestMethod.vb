@@ -1,9 +1,9 @@
 ﻿' <Snippet1>
 Imports System.Threading
-Imports System.Runtime.InteropServices 
+Imports System.Runtime.InteropServices
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
-    Public Class AsyncDemo 
+    Public Class AsyncDemo
         ' The method to be executed asynchronously.
         Public Function TestMethod(ByVal callDuration As Integer, _
                 <Out> ByRef threadId As Integer) As String

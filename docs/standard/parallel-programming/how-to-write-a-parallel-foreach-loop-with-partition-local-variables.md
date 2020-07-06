@@ -1,5 +1,6 @@
 ---
 title: "How to: Write a Parallel.ForEach loop with partition-local variables"
+description: See an example of how to write a Parallel.ForEach loop that uses partition-local variables in .NET.
 ms.date: "06/26/2018"
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,7 +14,7 @@ ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
 
 The following example shows how to write a <xref:System.Threading.Tasks.Parallel.ForEach%2A> method that uses partition-local variables. When a <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop executes, it divides its source collection into multiple partitions. Each partition has its own copy of the partition-local variable. A partition-local variable is similar to a [thread-local variable](xref:System.Threading.ThreadLocal%601), except that multiple partitions can run on a single thread.
 
-The code and parameters in this example closely resemble the corresponding <xref:System.Threading.Tasks.Parallel.For%2A> method. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
+The code and parameters in this example closely resemble the corresponding <xref:System.Threading.Tasks.Parallel.For%2A> method. For more information, see [How to: Write a Parallel.For Loop with Thread-Local Variables](how-to-write-a-parallel-for-loop-with-thread-local-variables.md).
 
 To use a partition-local variable in a <xref:System.Threading.Tasks.Parallel.ForEach%2A> loop, you must call one of the method overloads that takes two type parameters. The first type parameter, `TSource`, specifies the type of the source element, and the second type parameter, `TLocal`, specifies the type of the partition-local variable.
 
@@ -44,6 +45,6 @@ The following example calls the <xref:System.Threading.Tasks.Parallel.ForEach%60
 
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [How to: Write a Parallel.For Loop with Thread-Local Variables](../../../docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md)
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [How to: Write a Parallel.For Loop with Thread-Local Variables](how-to-write-a-parallel-for-loop-with-thread-local-variables.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

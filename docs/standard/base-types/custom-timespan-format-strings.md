@@ -1,5 +1,6 @@
 ---
 title: "Custom TimeSpan format strings"
+description: Understand custom TimeSpan format strings in .NET. A custom format string contains one or more TimeSpan format specifiers & any number of literal characters.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

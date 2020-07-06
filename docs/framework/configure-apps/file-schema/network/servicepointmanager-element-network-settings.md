@@ -1,5 +1,6 @@
 ---
 title: "<servicePointManager> Element (Network Settings)"
+description: The <servicePointManager> network settings element configures connections to network resources options in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#servicePointManager"

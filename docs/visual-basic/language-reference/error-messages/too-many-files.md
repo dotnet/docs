@@ -16,4 +16,4 @@ Either more files have been created in the root directory than the operating sys
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -14,5 +14,5 @@ The member you are trying to access cannot be found. This error can occur when a
   
 ## See also
 
-- [Public](../../visual-basic/language-reference/modifiers/public.md)
-- [Early and Late Binding](../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+- [Public](../language-reference/modifiers/public.md)
+- [Early and Late Binding](../programming-guide/language-features/early-late-binding/index.md)

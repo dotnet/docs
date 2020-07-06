@@ -18,7 +18,7 @@ Class MainWindow
             If (Char.IsLetterOrDigit(c) Or Char.IsWhiteSpace(c)) Then
                 builder.Append(c)
             End If
-            Next
+        Next
         FileOutput.Text = builder.ToString()
     End Sub
 End Class

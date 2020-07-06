@@ -14,7 +14,7 @@ ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
 # How to: Declare a Property with Mixed Access Levels (Visual Basic)
 If you want the `Get` and `Set` procedures on a property to have different access levels, you can use the more permissive level in the `Property` statement and the more restrictive level in either the `Get` or `Set` statement. You use mixed access levels on a property when you want certain parts of the code to be able to get the property's value, and certain other parts of the code to be able to change the value.  
   
- For more information on access levels, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For more information on access levels, see [Access levels in Visual Basic](../declared-elements/access-levels.md).  
   
 ### To declare a property with mixed access levels  
   
@@ -33,7 +33,7 @@ If you want the `Get` and `Set` procedures on a property to have different acces
 - [Procedures](./index.md)
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
-- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../../../language-reference/statements/property-statement.md)
 - [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
 - [How to: Create a Property](./how-to-create-a-property.md)
 - [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure a Port with an SSL Certificate"
+description: Learn how to configure a port with an X.509 certificate, required for a self-hosted WCF service with the WSHttpBinding class using transport security.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,7 +13,7 @@ ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
 ---
 # How to: Configure a Port with an SSL Certificate
 
-When creating a self-hosted Windows Communication Foundation (WCF) service with the <xref:System.ServiceModel.WSHttpBinding> class that uses transport security, you must also configure a port with an X.509 certificate. If you are not creating a self-hosted service, you can host your service on Internet Information Services (IIS). For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+When creating a self-hosted Windows Communication Foundation (WCF) service with the <xref:System.ServiceModel.WSHttpBinding> class that uses transport security, you must also configure a port with an X.509 certificate. If you are not creating a self-hosted service, you can host your service on Internet Information Services (IIS). For more information, see [HTTP Transport Security](http-transport-security.md).  
   
  To configure a port, the tool you use depends on the operating system that is running on your machine.  
   
@@ -39,9 +40,9 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 ## Get a certificate's thumbprint  
   
-1. Use the Certificates MMC snap-in to find an X.509 certificate that has an intended purpose of client authentication. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
+1. Use the Certificates MMC snap-in to find an X.509 certificate that has an intended purpose of client authentication. For more information, see [How to: View Certificates with the MMC Snap-in](how-to-view-certificates-with-the-mmc-snap-in.md).  
   
-2. Access the certificate's thumbprint. For more information, see [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
+2. Access the certificate's thumbprint. For more information, see [How to: Retrieve the Thumbprint of a Certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md).  
   
 3. Copy the thumbprint of the certificate into a text editor, such as Notepad.  
   
@@ -116,4 +117,4 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 ## See also
 
-- [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+- [HTTP Transport Security](http-transport-security.md)

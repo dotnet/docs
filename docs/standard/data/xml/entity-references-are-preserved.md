@@ -16,7 +16,7 @@ When the entity reference is not expanded, but preserved, the XML Document Objec
   
  the DOM builds an **XmlEntityReference** node when it encounters the `&publisher;` reference. The **XmlEntityReference** contains child nodes copied from the content in the entity declaration. The preceding code example contains text in the entity declaration, so an **XmlText** node is created as the child node of the entity reference node.  
   
- ![Tree structure for preserved entity references](../../../../docs/standard/data/xml/media/xmlentityref-notexpanded-nodes.gif "xmlentityref_notexpanded_nodes")  
+ ![Tree structure for preserved entity references](media/xmlentityref-notexpanded-nodes.gif "xmlentityref_notexpanded_nodes")  
 Tree structure for entity references that are preserved  
   
  The child nodes of the **XmlEntityReference** are copies of all the child nodes created from the **XmlEntity** node when the entity declaration was encountered.  
@@ -28,4 +28,4 @@ Tree structure for entity references that are preserved
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

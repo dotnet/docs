@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ETaskType Enumeration
-Contains values that indicate the type of task that is represented by either an [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.  
+Contains values that indicate the type of task that is represented by either an [ICLRTask](iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.  
   
 ## Syntax  
   

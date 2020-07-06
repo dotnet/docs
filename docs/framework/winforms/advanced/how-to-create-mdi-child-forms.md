@@ -1,5 +1,6 @@
 ---
 title: "How to: Create MDI Child Forms"
+description: Learn how to use Visual Studio to create a Multiple-Document Interface (MDI) child form that displays a RichTextBox control.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

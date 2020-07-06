@@ -314,5 +314,5 @@ namespace Client
   
 ## See also
 
-- [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
-- [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)
+- [Synchronous and Asynchronous Operations](../synchronous-and-asynchronous-operations.md)
+- [Using the NetHttpBinding](using-the-nethttpbinding.md)

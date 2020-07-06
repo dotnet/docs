@@ -28,7 +28,7 @@ This sample demonstrates how to control several security-related features of a W
   
  In Web-hosted scenarios it is possible to have services in subdirectories of other services. The default semantic for determining configuration values allows configuration files in the nested directories to override the configuration values in the parent directory. In certain situations this may be undesirable for a variety of reasons. WCF service configuration supports the locking of configuration values so that nested configuration generates exceptions when a nested service is run using overridden configuration values.  
   
- This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) sample.  
+ This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](tracing-and-message-logging.md) sample.  
   
 ## Encrypting Configuration File Elements  
  For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
@@ -124,13 +124,13 @@ This sample demonstrates how to control several security-related features of a W
   
 #### To set up, build and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
 2. Edit Machine.config to set the `enableLoggingKnownPii` attribute to `true`, adding the parent nodes if necessary.  
   
-3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 #### To clean up the sample  
   

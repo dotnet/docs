@@ -1,5 +1,6 @@
 ---
 title: "Managing Namespaces in an XML Document"
+description: Learn how to manage namespaces in an XML document. XML namespaces associate element and attribute names in an XML document with custom and predefined URIs.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
@@ -77,4 +78,4 @@ XML namespaces associate element and attribute names in an XML document with cus
 ## See also
 
 - <xref:System.Xml.XmlNamespaceManager>
-- [XML Documents and Data](../../../../docs/standard/data/xml/index.md)
+- [XML Documents and Data](index.md)

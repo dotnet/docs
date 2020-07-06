@@ -93,5 +93,5 @@ These examples require that:
 
 ## See also
 
-- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)
-- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../datetime/choosing-between-datetime.md)
+- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)

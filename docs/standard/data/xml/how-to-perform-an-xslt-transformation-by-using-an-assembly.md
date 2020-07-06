@@ -176,6 +176,6 @@ in the example above. For more information on the Assembly.Load method, see <xre
 ## See also
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
-- [XSLT Compiler (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Compiler (xsltc.exe)](xslt-compiler-xsltc-exe.md)
+- [XSLT Transformations](xslt-transformations.md)
 - [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

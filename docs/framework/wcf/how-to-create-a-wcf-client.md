@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Create a Windows Communication Foundation client"
+description: Learn how to create a client by retrieving metadata from a WCF service as part of a series of articles that help you get started creating a WCF application.
 ms.date: 03/19/2019
 helpviewer_keywords:
   - "clients [WCF], running"

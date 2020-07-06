@@ -57,5 +57,5 @@ The following web sites provide guidance and can help you find answers to common
 
 ## See also
 
-- [Get started with Visual Basic](../../visual-basic/getting-started/index.md)
+- [Get started with Visual Basic](index.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)

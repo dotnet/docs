@@ -1,5 +1,6 @@
 ---
 title: "Cleaning up unmanaged resources"
+description: See how to clean up unmanaged resources not handled by the .NET garbage collector, such as files, windows, & network or database connections.
 ms.date: 05/13/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -39,7 +40,7 @@ Consumers of your type can then call your <xref:System.IDisposable.Dispose%2A?di
 
 [Implementing a Dispose method](implementing-dispose.md) describes how to implement the dispose pattern for releasing unmanaged resources.
 
-[Using objects that implement `IDisposable`](../../../docs/standard/garbage-collection/using-objects.md) describes how consumers of a type ensure that its <xref:System.IDisposable.Dispose%2A> implementation is called. We recommend using the C# `using` (or the Visual Basic `Using`) statement to do this.
+[Using objects that implement `IDisposable`](using-objects.md) describes how consumers of a type ensure that its <xref:System.IDisposable.Dispose%2A> implementation is called. We recommend using the C# `using` (or the Visual Basic `Using`) statement to do this.
 
 ## Reference
 

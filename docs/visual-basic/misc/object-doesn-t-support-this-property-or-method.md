@@ -14,4 +14,4 @@ You specified a method or property that does not exist for this automation objec
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

@@ -1,5 +1,6 @@
 ---
 title: "<add> Element for authenticationModules (Network Settings)"
+description: The <add> network settings element for connectionManagement adds an IP address or DNS name to the connection management list in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"

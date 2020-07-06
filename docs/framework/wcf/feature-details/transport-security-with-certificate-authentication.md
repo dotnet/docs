@@ -1,5 +1,6 @@
 ---
 title: "Transport Security with Certificate Authentication"
+description: Learn about how WFC uses certificates for server and client authentication when using transport security. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,9 +12,9 @@ This article discusses using X.509 certificates for server and client authentica
   
  This scenario implements a request/reply message pattern as illustrated by the following diagram.  
   
- ![Secure transfer using certificates](../../../../docs/framework/wcf/feature-details/media/8f7b8968-899f-4538-a9e8-0eaa872a291c.gif "8f7b8968-899f-4538-a9e8-0eaa872a291c")  
+ ![Secure transfer using certificates](media/8f7b8968-899f-4538-a9e8-0eaa872a291c.gif "8f7b8968-899f-4538-a9e8-0eaa872a291c")  
   
- For more information about using a certificate with a service, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md) and [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md). The following table describes the various characteristics of the scenario.  
+ For more information about using a certificate with a service, see [Working with Certificates](working-with-certificates.md) and [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md). The following table describes the various characteristics of the scenario.  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -134,5 +135,5 @@ cc.Close();
   
 ## See also
 
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Overview](security-overview.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

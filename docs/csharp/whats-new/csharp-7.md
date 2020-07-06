@@ -82,7 +82,7 @@ names to each of the members of the tuple:
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. Those names exist only at compile time and aren't preserved,
-for example when inspecting the tuple using reflection at runtime.
+for example when inspecting the tuple using reflection at run time.
 
 In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:

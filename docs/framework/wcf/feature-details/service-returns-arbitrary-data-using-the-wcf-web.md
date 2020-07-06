@@ -171,4 +171,4 @@ namespace RawImageService
   
 ## See also
 
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)

@@ -12,7 +12,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 ### To build the sample  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 ### To run the sample on the same computer  
   
@@ -30,7 +30,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 1. On the server, in a Developer Command Prompt for Visual Studio run with administrator privileges, type `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-2. On the server, edit App.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the computer.  
+2. On the server, edit App.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the computer.  
   
 3. Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
@@ -59,4 +59,4 @@ Services frequently publish metadata to enable automatic generation and configur
   
 ## See also
 
-- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [Using Metadata](../feature-details/using-metadata.md)

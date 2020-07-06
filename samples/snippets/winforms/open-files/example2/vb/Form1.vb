@@ -4,15 +4,15 @@ Imports System.IO
 Imports System.Security
 Imports System.Windows.Forms
 
-Public Class OpenFileDialogForm : Inherits Form 
+Public Class OpenFileDialogForm : Inherits Form
     Dim WithEvents selectButton As Button
     Dim openFileDialog1 As OpenFileDialog
 
     Public Shared Sub Main()
-      Application.SetCompatibleTextRenderingDefault(false)
-      Application.EnableVisualStyles()
-      Dim frm As New OpenFileDialogForm()
-      Application.Run(frm)
+        Application.SetCompatibleTextRenderingDefault(false)
+        Application.EnableVisualStyles()
+        Dim frm As New OpenFileDialogForm()
+        Application.Run(frm)
     End Sub
 
     Private Sub New()
@@ -23,11 +23,11 @@ Public Class OpenFileDialogForm : Inherits Form
            .Title = "Open text file"
         }
 
-        selectButton = New Button() With { .Text = "Select file" }
+        selectButton = New Button() With {.Text = "Select file"}
         Controls.Add(selectButton)
     End Sub
-    
-    Public Sub selectButton_Click(sender As Object, e As EventArgs) _ 
+
+    Public Sub selectButton_Click(sender As Object, e As EventArgs) _
             Handles selectButton.Click
         If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
             Try

@@ -1,4 +1,4 @@
-﻿Option Strict Off 
+﻿Option Strict Off
 Public Class Class4
     ' d6ff7f1e-b94f-4205-ab8d-5cfa91758724
     ' Early and Late Binding

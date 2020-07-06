@@ -21,7 +21,7 @@ Visual Basic documentation uses the following typographic and code conventions.
 |-------------|-----------------|  
 |`Sub`, `If`, `ChDir`, `Print`, `True`, `Debug`|Language-specific keywords and runtime members have initial uppercase letters and are formatted as shown in this example.|  
 |**SmallProject**, **ButtonCollection**|Words and phrases you are instructed to type are formatted as shown in this example.|  
-|[Module Statement](../../visual-basic/language-reference/statements/module-statement.md)|Links you can click to go to another Help page are formatted as shown in this example.|  
+|[Module Statement](statements/module-statement.md)|Links you can click to go to another Help page are formatted as shown in this example.|  
 |*object*, *variableName*, `argumentList`|Placeholders for information that you supply are formatted as shown in this example.|  
 |[ Shadows ], [ *expressionList* ]|In syntax, optional items are enclosed in brackets.|  
 |{ `Public` &#124; `Friend` &#124; `Private` }|In syntax, when you must make a choice between two or more items, the items are enclosed in braces and separated by vertical bars.<br /><br /> You must select one, and only one, of the items.|  
@@ -43,9 +43,9 @@ Visual Basic documentation uses the following typographic and code conventions.
   
 ## See also
 
-- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
-- [Keywords](../../visual-basic/language-reference/keywords/index.md)
-- [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)
-- [Visual Basic Naming Conventions](../../visual-basic/programming-guide/program-structure/naming-conventions.md)
-- [How to: Break and Combine Statements in Code](../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
-- [Comments in Code](../../visual-basic/programming-guide/program-structure/comments-in-code.md)
+- [Visual Basic Language Reference](index.md)
+- [Keywords](keywords/index.md)
+- [Visual Basic Runtime Library Members](runtime-library-members.md)
+- [Visual Basic Naming Conventions](../programming-guide/program-structure/naming-conventions.md)
+- [How to: Break and Combine Statements in Code](../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [Comments in Code](../programming-guide/program-structure/comments-in-code.md)

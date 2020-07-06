@@ -57,7 +57,7 @@ Starting with the .NET Framework 4.6.1, the value of the `COR_PRF_HIGH_ALLOWABLE
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
 **Header:** CorProf.idl, CorProf.h  
   

@@ -35,7 +35,7 @@ Module Module2
     End Class
     ' </Snippet2>
 
-    
+
 
 End Module
 

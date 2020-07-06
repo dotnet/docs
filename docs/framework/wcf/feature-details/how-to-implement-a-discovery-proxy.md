@@ -5,7 +5,7 @@ ms.assetid: 78d70e0a-f6c3-4cfb-a7ca-f66ebddadde0
 ---
 # How to: Implement a Discovery Proxy
 
-This topic explains how to implement a discovery proxy. For more information about the discovery feature in Windows Communication Foundation (WCF), see [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md). A discovery proxy can be implemented by creating a class that extends the <xref:System.ServiceModel.Discovery.DiscoveryProxy> abstract class. There are a number of other support classes defined and used in this sample. `OnResolveAsyncResult`, `OnFindAsyncResult`, and `AsyncResult`. These classes implement the <xref:System.IAsyncResult> interface. For more information about <xref:System.IAsyncResult> see [System.IAsyncResult interface](xref:System.IAsyncResult).
+This topic explains how to implement a discovery proxy. For more information about the discovery feature in Windows Communication Foundation (WCF), see [WCF Discovery Overview](wcf-discovery-overview.md). A discovery proxy can be implemented by creating a class that extends the <xref:System.ServiceModel.Discovery.DiscoveryProxy> abstract class. There are a number of other support classes defined and used in this sample. `OnResolveAsyncResult`, `OnFindAsyncResult`, and `AsyncResult`. These classes implement the <xref:System.IAsyncResult> interface. For more information about <xref:System.IAsyncResult> see [System.IAsyncResult interface](xref:System.IAsyncResult).
 
  Implementing a discovery proxy is broken down into three main parts in this topic:
 
@@ -540,7 +540,7 @@ The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery o
     }
     ```
 
-You have completed implementing the discovery proxy. Continue on to [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md).
+You have completed implementing the discovery proxy. Continue on to [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md).
 
 ## Example
 
@@ -969,7 +969,7 @@ namespace Microsoft.Samples.Discovery
 
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
-- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
-- [How to: Test the Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md)
+- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md)
+- [How to: Test the Discovery Proxy](how-to-test-the-discovery-proxy.md)

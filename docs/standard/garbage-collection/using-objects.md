@@ -1,5 +1,6 @@
 ---
 title: "Using objects that implement IDisposable"
+description: Learn how to use objects that implement the IDisposable interface in .NET. Types that use unmanaged resources implement IDisposable to allow resource reclaiming.
 ms.date: 05/13/2020
 ms.technology: dotnet-standard
 dev_langs: 
@@ -58,6 +59,6 @@ If a class holds an <xref:System.IDisposable> implementation as an instance memb
 
 ## See also
 
-- [Cleaning up unmanaged resources](../../../docs/standard/garbage-collection/unmanaged.md)
+- [Cleaning up unmanaged resources](unmanaged.md)
 - [using Statement (C# Reference)](../../csharp/language-reference/keywords/using-statement.md)
 - [Using Statement (Visual Basic)](../../visual-basic/language-reference/statements/using-statement.md)

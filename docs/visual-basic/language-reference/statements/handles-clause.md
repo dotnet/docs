@@ -27,9 +27,9 @@ proceduredeclaration Handles eventlist
 ## Remarks  
  Use the `Handles` keyword at the end of a procedure declaration to cause it to handle events raised by an object variable declared using the `WithEvents` keyword. The `Handles` keyword can also be used in a derived class to handle events from a base class.  
   
- The `Handles` keyword and the `AddHandler` statement both allow you to specify that particular procedures handle particular events, but there are differences. Use the `Handles` keyword when defining a procedure to specify that it handles a particular event. The `AddHandler` statement connects procedures to events at run time. For more information, see [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md).  
+ The `Handles` keyword and the `AddHandler` statement both allow you to specify that particular procedures handle particular events, but there are differences. Use the `Handles` keyword when defining a procedure to specify that it handles a particular event. The `AddHandler` statement connects procedures to events at run time. For more information, see [AddHandler Statement](addhandler-statement.md).  
   
- For custom events, the application invokes the event's `AddHandler` accessor when it adds the procedure as an event handler. For more information on custom events, see [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
+ For custom events, the application invokes the event's `AddHandler` accessor when it adds the procedure as an event handler. For more information on custom events, see [Event Statement](event-statement.md).  
   
 ## Example  
  [!code-vb[VbVbalrEvents#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#2)]  
@@ -50,9 +50,9 @@ proceduredeclaration Handles eventlist
   
 ## See also
 
-- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)
-- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
-- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
-- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
-- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [WithEvents](../modifiers/withevents.md)
+- [AddHandler Statement](addhandler-statement.md)
+- [RemoveHandler Statement](removehandler-statement.md)
+- [Event Statement](event-statement.md)
+- [RaiseEvent Statement](raiseevent-statement.md)
+- [Events](../../programming-guide/language-features/events/index.md)

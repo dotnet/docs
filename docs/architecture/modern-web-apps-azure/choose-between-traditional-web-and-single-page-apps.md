@@ -35,7 +35,9 @@ Improvements in user experience made possible by the SPA approach must be weighe
 
 ## Blazor
 
-ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Blazor. Blazor server-side allows developers to build UI with Razor on the server and for this code to be delivered to the browser and executed client-side using [WebAssembly](https://webassembly.org/). Blazor server-side is available now with ASP.NET Core 3.0 or later. Blazor client-side should be available in 2020.
+ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection.
+
+Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.
 
 Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for a significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations.
 

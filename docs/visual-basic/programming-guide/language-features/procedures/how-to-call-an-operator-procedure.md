@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
 ---
 # How to: Call an Operator Procedure (Visual Basic)
-You call an operator procedure by using the operator symbol in an expression. In the case of a conversion operator, you call the [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md) to convert a value from one data type to another.  
+You call an operator procedure by using the operator symbol in an expression. In the case of a conversion operator, you call the [CType Function](../../../language-reference/functions/ctype-function.md) to convert a value from one data type to another.  
   
  You do not call operator procedures explicitly. You just use the operator, or the `CType` function, in an assignment statement or an expression, the same way you ordinarily use an operator. Visual Basic makes the call to the operator procedure.  
   
@@ -52,10 +52,10 @@ You call an operator procedure by using the operator symbol in an expression. In
 - [Operator Procedures](./operator-procedures.md)
 - [How to: Define an Operator](./how-to-define-an-operator.md)
 - [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
-- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Widening](../../../../visual-basic/language-reference/modifiers/widening.md)
-- [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
-- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
-- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Statement](../../../language-reference/statements/operator-statement.md)
+- [Widening](../../../language-reference/modifiers/widening.md)
+- [Narrowing](../../../language-reference/modifiers/narrowing.md)
+- [Structure Statement](../../../language-reference/statements/structure-statement.md)
+- [How to: Declare a Structure](../data-types/how-to-declare-a-structure.md)
+- [Implicit and Explicit Conversions](../data-types/implicit-and-explicit-conversions.md)
+- [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)

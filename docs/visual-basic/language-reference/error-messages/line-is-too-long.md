@@ -19,4 +19,4 @@ Source text lines cannot exceed 65535 characters.
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -10,7 +10,7 @@ ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
 ---
 # \<system.xml.serialization> Element
 
-The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).
+The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).
 
 \<configuration>\
 \<system.xml.serialization>
@@ -34,14 +34,14 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)|Determines the serialization mode of <xref:System.DateTime> objects.|
-|[\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)|Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types.|
+|[\<dateTimeSerialization> Element](datetimeserialization-element.md)|Determines the serialization mode of <xref:System.DateTime> objects.|
+|[\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)|Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types.|
 
 ### Parent Elements
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration> Element](../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
+|[\<configuration> Element](../../framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|
 
 ## Example
 
@@ -65,7 +65,7 @@ The following code example illustrates how to specify the serialization mode of 
 
 - <xref:System.Xml.Serialization.XmlSchemaImporter>
 - <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)
-- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
-- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
+- [Configuration File Schema](../../framework/configure-apps/file-schema/index.md)
+- [\<dateTimeSerialization> Element](datetimeserialization-element.md)
+- [\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](add-element-for-schemaimporterextensions.md)

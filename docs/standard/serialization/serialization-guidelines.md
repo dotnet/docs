@@ -74,7 +74,7 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#4](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#4)]
      [!code-vb[SerializationGuidelines#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#4)]  
   
-     In cases where the list of known types is not known statically (when the **Person** class is compiled), the **KnownTypeAttribute** can also point to a method that returns a list of known types at runtime.  
+     In cases where the list of known types is not known statically (when the **Person** class is compiled), the **KnownTypeAttribute** can also point to a method that returns a list of known types at run time.  
   
 5. DO consider backward and forward compatibility when creating or changing serializable types.  
   
@@ -87,7 +87,7 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#5](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#5)]
      [!code-vb[SerializationGuidelines#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#5)]  
   
-     For more information, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+     For more information, see [Forward-Compatible Data Contracts](../../framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 #### Supporting XML serialization  
  Data contract serialization is the main (default) serialization technology in the .NET Framework, but there are serialization scenarios that data contract serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, *XML serialization* has to be used, and you need to design your types to support this serialization technology.  
@@ -135,10 +135,10 @@ This document lists the guidelines to consider when designing an API to be seria
   
 ## See also
 
-- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [Data Contract Serializer](../../../docs/framework/wcf/feature-details/data-contract-serializer.md)
-- [Types Supported by the Data Contract Serializer](../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [Using Data Contracts](../../framework/wcf/feature-details/using-data-contracts.md)
+- [Data Contract Serializer](../../framework/wcf/feature-details/data-contract-serializer.md)
+- [Types Supported by the Data Contract Serializer](../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
 - [Binary Serialization](binary-serialization.md)
 - [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
-- [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)
+- [Security and Serialization](../../framework/misc/security-and-serialization.md)

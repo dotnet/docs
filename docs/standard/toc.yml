@@ -46,6 +46,8 @@
       href: base-types/type-conversion.md
     - name: Type conversion tables
       href: base-types/conversion-tables.md
+    - name: Choose between anonymous and tuple types
+      href: base-types/choosing-between-anonymous-and-tuple.md
     - name: Format numbers, dates, other types
       items:
       - name: Overview
@@ -223,6 +225,10 @@
       displayName: unmanaged resources, memory management
     - name: Implement a Dispose method
       href: garbage-collection/implementing-dispose.md
+      displayName: "using, Dispose, dispose pattern, IDisposable"
+    - name: Implement a DisposeAsync method
+      href: garbage-collection/implementing-disposeasync.md
+      displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
     - name: Use objects that implement IDisposable
       href: garbage-collection/using-objects.md
   - name: Garbage collection

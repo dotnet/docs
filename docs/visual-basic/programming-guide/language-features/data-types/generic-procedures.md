@@ -60,10 +60,10 @@ End Sub
   
 ## See also
 
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)
-- [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
-- [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)
-- [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
-- [Type List](../../../../visual-basic/language-reference/statements/type-list.md)
-- [Parameter List](../../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Generic Types in Visual Basic](generic-types.md)
+- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](how-to-define-a-class-that-can-provide-identical-functionality.md)
+- [How to: Use a Generic Class](how-to-use-a-generic-class.md)
+- [Procedures](../procedures/index.md)
+- [Procedure Parameters and Arguments](../procedures/procedure-parameters-and-arguments.md)
+- [Type List](../../../language-reference/statements/type-list.md)
+- [Parameter List](../../../language-reference/statements/parameter-list.md)

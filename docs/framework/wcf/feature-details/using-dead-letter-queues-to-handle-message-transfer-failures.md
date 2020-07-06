@@ -37,7 +37,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
 - To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
   
- For more information about how to address queues, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
+ For more information about how to address queues, see [Service Endpoints and Queue Addressing](service-endpoints-and-queue-addressing.md).  
   
  The WCF stack on the receiver matches addresses that the service is listening on with the address on the message. If the addresses match, the message is dispatched; if not, the message is not dispatched. This can cause problems when reading from the dead-letter queue, because messages in the dead-letter queue are typically addressed to the service and not the dead-letter queue service. Therefore, the service reading from the dead-letter queue must install an address filter `ServiceBehavior` that instructs the stack to match all messages in the queue independently of the addressee. Specifically, you must add a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter to the service reading messages from the dead-letter queue.  
   
@@ -47,7 +47,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
  When `ReceiveErrorHandling` is set to `Reject`, when reading from the custom dead letter queue, the poison message is put in the system dead-letter queue. If reading from the system dead-letter queue, the message is dropped (purged). A reject from a system dead-letter queue in MSMQ drops (purges) the message.  
   
 ## Example  
- The following example shows how to create a dead-letter queue and how to use it to process expired messages. The example is based on the example in [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md). The following example shows how to write the client code to the order processing service that uses a dead-letter queue for each application. The example also shows how to process messages from the dead-letter queue.  
+ The following example shows how to create a dead-letter queue and how to use it to process expired messages. The example is based on the example in [How to: Exchange Queued Messages with WCF Endpoints](how-to-exchange-queued-messages-with-wcf-endpoints.md). The following example shows how to write the client code to the order processing service that uses a dead-letter queue for each application. The example also shows how to process messages from the dead-letter queue.  
   
  The following is code for a client that specifies a dead-letter queue for each application.  
   
@@ -65,6 +65,6 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
 
 ## See also
 
-- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
-- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)
-- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+- [Queues Overview](queues-overview.md)
+- [How to: Exchange Queued Messages with WCF Endpoints](how-to-exchange-queued-messages-with-wcf-endpoints.md)
+- [Poison Message Handling](poison-message-handling.md)

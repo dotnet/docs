@@ -5,7 +5,7 @@
          it is built as an exe so that publishing it will include the .NET Core runtime and
          framework libraries for use by the host -->
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
 </Project>

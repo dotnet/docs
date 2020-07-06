@@ -14,6 +14,6 @@ An operation was attempted requiring that a filename be supplied, but the suppli
   
 ## See also
 
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
-- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
-- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Reading from Files](../developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Writing to Files](../developing-apps/programming/drives-directories-files/writing-to-files.md)

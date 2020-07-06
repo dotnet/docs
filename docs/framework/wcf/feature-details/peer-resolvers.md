@@ -19,7 +19,7 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
 ### Custom Resolver Services  
  When the PNRP service is unavailable, or you want complete control over mesh shaping, you can use a custom, server-based resolver service. You can explicitly define this service by writing a resolver class implementing the <xref:System.ServiceModel.PeerResolvers.IPeerResolverContract> interface, or by using the in-box default implementation, <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>.  
   
- Under the default implementation of the service, client registrations expire after a certain amount of time if the client does not explicitly refresh the registration. Clients using the resolver service must be aware of the upper bound on client-server latency in order to successfully refresh registrations in time. This involves choosing an appropriate refresh time-out (`RefreshInterval`) on the resolver service. (For more information, see [Inside the CustomPeerResolverService: Client Registrations](../../../../docs/framework/wcf/feature-details/inside-the-custompeerresolverservice-client-registrations.md).)  
+ Under the default implementation of the service, client registrations expire after a certain amount of time if the client does not explicitly refresh the registration. Clients using the resolver service must be aware of the upper bound on client-server latency in order to successfully refresh registrations in time. This involves choosing an appropriate refresh time-out (`RefreshInterval`) on the resolver service. (For more information, see [Inside the CustomPeerResolverService: Client Registrations](inside-the-custompeerresolverservice-client-registrations.md).)  
   
  The application writer must also consider securing the connection between clients and the custom resolver service. You may do this by using security settings on the <xref:System.ServiceModel.NetTcpBinding> that clients use to contact the resolver service. You must specify credentials (if used) on the `ChannelFactory` used to create Peer Channel. These credentials are passed to the `ChannelFactory` used to create channels to the custom resolver.  
   
@@ -29,10 +29,10 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
  For a demonstration of how to implement a custom resolver, see [Peer Channel Custom Peer Resolver](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751466(v=vs.90)).  
   
 ## In This Section  
- [Inside the CustomPeerResolverService: Client Registrations](../../../../docs/framework/wcf/feature-details/inside-the-custompeerresolverservice-client-registrations.md)  
+ [Inside the CustomPeerResolverService: Client Registrations](inside-the-custompeerresolverservice-client-registrations.md)  
   
 ## See also
 
-- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
-- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Peer Channel Concepts](peer-channel-concepts.md)
+- [Peer Channel Security](peer-channel-security.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)

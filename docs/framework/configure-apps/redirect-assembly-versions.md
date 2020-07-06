@@ -1,5 +1,6 @@
 ---
 title: "Redirecting Assembly Versions"
+description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assembly binding, redirection"

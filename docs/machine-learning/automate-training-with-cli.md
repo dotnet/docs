@@ -1,7 +1,7 @@
 ---
 title: Automate model training with the ML.NET CLI
 description: Discover how to use the ML.NET CLI tool to automatically train the best model from the command-line.
-ms.date: 12/17/2019
+ms.date: 06/03/2020
 ms.custom: how-to, mlnet-tooling
 #Customer intent: As a developer, I want to use ML.NET CLI to automatically train the "best model" from the command-prompt. I also want to understand the output provided by the tool (metrics and output assets)
 ---
@@ -28,24 +28,24 @@ You can generate those assets from your own datasets without coding by yourself,
 
 Currently, the ML Tasks supported by the ML.NET CLI are:
 
-- `binary-classification`
-- `multiclass-classification`
-- `regression`
-- Future: other machine learning tasks such as `recommendation`, `ranking`, `anomaly-detection`, `clustering`
+- classification (binary and multi-class)
+- regression
+- recommendation
+- Future: other machine learning tasks such as image-classification, ranking, anomaly-detection, clustering
 
-Example of usage:
+Example of usage (classification scenario):
 
 ```console
-mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
-![image](media/automate-training-with-cli/cli-model-generation.gif)
+![image](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
 You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
 
 ## Output assets generated
 
-The CLI `auto-train` command generates the following assets in the output folder:
+The ML task commands in the CLI generate the following assets in the output folder:
 
 - A serialized model .zip ("best model") ready to use for running predictions.
 - C# solution with:
@@ -63,23 +63,15 @@ When you generate a 'best model' with the CLI tool, you see quality metrics (suc
 
 Here those metrics are summarized grouped by ML task so you can understand the quality of your auto-generated 'best model'.
 
-### Metrics for Binary Classification models
+### Metrics for Classification models
 
-The following displays the binary classification ML task metrics list for the top five models found by the CLI:
-
-![image](media/automate-training-with-cli/cli-binary-classification-metrics.png)
-
-Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
-
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for binary classification](resources/metrics.md#evaluation-metrics-for-binary-classification).
-
-### Metrics for Multi-class Classification models
-
-The following displays the multi-class classification ML task metrics list for the top five models found by the CLI:
+The following displays the classification metrics list for the top five models found by the CLI:
 
 ![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for multiclass classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
+ Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
+
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
 
 ### Metrics for Regression and Recommendation models
 

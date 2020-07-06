@@ -1,5 +1,6 @@
 ---
 title: "How to: Register Primary Interop Assemblies"
+description: Register primary interop assemblies using the Assembly Registration Tool (Regasm.exe), and read about other issues related to interop assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "registering primary interop assemblies"

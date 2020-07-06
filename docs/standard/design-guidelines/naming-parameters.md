@@ -1,5 +1,6 @@
 ---
 title: "Naming Parameters"
+description: Learn guidelines for the naming of parameters. For example, use descriptive parameter names & camel casing, & consider naming based on meaning instead of type.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -31,5 +32,5 @@ Beyond the obvious reason of readability, it is important to follow the guidelin
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

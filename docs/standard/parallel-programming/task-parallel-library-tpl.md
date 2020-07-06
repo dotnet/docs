@@ -1,5 +1,6 @@
 ---
 title: "Task Parallel Library (TPL)"
+description: Explore the Task Parallel Library (TPL), a set of public types and APIs to simplify the process of adding parallelism & concurrency to applications in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -17,13 +18,13 @@ The Task Parallel Library (TPL) is a set of public types and APIs in the <xref:S
   
 |Title|Description|  
 |-|-|  
-|[Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)|Describes how to create parallel `for` and `foreach` loops (`For` and `For Each` in Visual Basic).|  
-|[Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)|Describes how to create and run tasks implicitly by using <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType> or explicitly by using <xref:System.Threading.Tasks.Task> objects directly.|  
-|[Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)|Describes how to use the dataflow components in the TPL Dataflow Library to handle multiple operations that must communicate with one another or to process data as it becomes available.|  
-|[Using TPL with Other Asynchronous Patterns](../../../docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md)|Describes how to use TPL with other asynchronous patterns in .NET|  
-|[Potential Pitfalls in Data and Task Parallelism](../../../docs/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md)|Describes some common pitfalls and how to avoid them.|  
-|[Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)|Describes how to achieve data parallelism with LINQ queries.|  
-|[Parallel Programming](../../../docs/standard/parallel-programming/index.md)|Top level node for .NET parallel programming.|  
+|[Data Parallelism](data-parallelism-task-parallel-library.md)|Describes how to create parallel `for` and `foreach` loops (`For` and `For Each` in Visual Basic).|  
+|[Task-based Asynchronous Programming](task-based-asynchronous-programming.md)|Describes how to create and run tasks implicitly by using <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType> or explicitly by using <xref:System.Threading.Tasks.Task> objects directly.|  
+|[Dataflow](dataflow-task-parallel-library.md)|Describes how to use the dataflow components in the TPL Dataflow Library to handle multiple operations that must communicate with one another or to process data as it becomes available.|  
+|[Using TPL with Other Asynchronous Patterns](using-tpl-with-other-asynchronous-patterns.md)|Describes how to use TPL with other asynchronous patterns in .NET|  
+|[Potential Pitfalls in Data and Task Parallelism](potential-pitfalls-in-data-and-task-parallelism.md)|Describes some common pitfalls and how to avoid them.|  
+|[Parallel LINQ (PLINQ)](introduction-to-plinq.md)|Describes how to achieve data parallelism with LINQ queries.|  
+|[Parallel Programming](index.md)|Top level node for .NET parallel programming.|  
   
 ## See also
 

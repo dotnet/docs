@@ -1,5 +1,6 @@
 ---
 title: "Enumeration Types in Data Contracts"
+description: Learn about how the data contract model expresses enumerations as part of the WFC programming model.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -24,7 +25,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  You can use the <xref:System.Runtime.Serialization.DataContractAttribute> properties (<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>) as usual for enumeration data contracts.  
   
 ### Enumeration Member Values  
- Generally the data contract includes enumeration member names, not numerical values. However, when using the data contract model, if the receiving side is a WCF client, the exported schema preserves the numerical values. Note that this is not the case when using the [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+ Generally the data contract includes enumeration member names, not numerical values. However, when using the data contract model, if the receiving side is a WCF client, the exported schema preserves the numerical values. Note that this is not the case when using the [Using the XmlSerializer Class](using-the-xmlserializer-class.md).  
   
  In the preceding example, if `condition` is set to `Used` and the data is serialized to XML, the resulting XML is `<condition>Used</condition>` and not `<condition>1</condition>`. Therefore, the following data contract is equivalent to the data contract of `CarConditionEnum`.  
   
@@ -93,5 +94,5 @@ Enumerations can be expressed in the data contract model. This topic walks throu
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
-- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Using Data Contracts](using-data-contracts.md)
+- [Specifying Data Transfer in Service Contracts](specifying-data-transfer-in-service-contracts.md)

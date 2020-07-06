@@ -127,5 +127,5 @@ writer.WriteElementString("Infinity", XmlConvert.ToString(value));
   
 ## See also
 
-- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
-- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)
+- [Conversion of XML Data Types](conversion-of-xml-data-types.md)
+- [Converting .NET Framework Types to Strings](converting-dotnet-types-to-strings.md)

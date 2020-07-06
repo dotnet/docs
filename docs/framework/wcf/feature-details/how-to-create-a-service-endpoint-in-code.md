@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Service Endpoint in Code"
+description: Learn how to implement a service in a class and define its endpoint programmatically. In WCF, endpoints are usually defined in a configuration file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -38,8 +39,8 @@ In this example, an `ICalculator` contract is defined for a calculator service, 
      [!code-csharp[c_HowTo_CodeServiceBinding#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeservicebinding/cs/source.cs#7)]
      [!code-vb[c_HowTo_CodeServiceBinding#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeservicebinding/vb/source.vb#7)]  
   
-     For more information about default endpoints, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+     For more information about default endpoints, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
 ## See also
 
-- [How to: Specify a Service Binding in Code](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md)
+- [How to: Specify a Service Binding in Code](../how-to-specify-a-service-binding-in-code.md)

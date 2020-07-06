@@ -1,5 +1,6 @@
 ---
 title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security"
+description: Learn about certificates with message-layer (SOAP) security that WCF offers in addition to HTTPS or TCP, and how WCF validates such certificates.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -44,4 +45,4 @@ You can use certificates in Windows Communication Foundation (WCF) with message-
 ## See also
 
 - <xref:System.Net.Security.RemoteCertificateValidationCallback>
-- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Working with Certificates](working-with-certificates.md)

@@ -18,15 +18,15 @@ Namespace Examples.AdvancedProgramming.AsynchronousOperations
         End Sub
         Public Shared Sub Main(args() as String)
             ' Make sure the caller supplied a host name.
-            If(args.Length = 0)
+            If (args.Length = 0)
                 ' Print a message and exit.
                 Console.WriteLine("You must specify the name of a host computer.")
                 End
             End If
             ' Start the asynchronous request for DNS information.
-            Dim result as IAsyncResult= Dns.BeginGetHostEntry(args(0), Nothing, Nothing)
+            Dim result as IAsyncResult = Dns.BeginGetHostEntry(args(0), Nothing, Nothing)
             Console.WriteLine("Processing request for information...")
-            
+
             ' Poll for completion information.
             ' Print periods (".") until the operation completes.
             Do while result.IsCompleted <> True
@@ -35,25 +35,25 @@ Namespace Examples.AdvancedProgramming.AsynchronousOperations
             ' The operation is complete. Process the results.
             ' Print a new line.
             Console.WriteLine()
-            Try 
+            Try
                 Dim host as IPHostEntry = Dns.EndGetHostEntry(result)
-                Dim  aliases() as String = host.Aliases
+                Dim aliases() as String = host.Aliases
                 Dim addresses() as IPAddress = host.AddressList
                 Dim i as Integer
                 If aliases.Length > 0
                     Console.WriteLine("Aliases")
-                    For i = 0 To aliases.Length -1 
+                    For i = 0 To aliases.Length - 1
                         Console.WriteLine("{0}", aliases(i))
                     Next i
                 End If
                 If addresses.Length > 0
                     Console.WriteLine("Addresses")
-                    For i = 0 To addresses.Length -1
+                    For i = 0 To addresses.Length - 1
                         Console.WriteLine("{0}", addresses(i).ToString())
                     Next i
                 End If
             Catch e as SocketException
-                  Console.WriteLine("An exception occurred while processing the request: {0}", e.Message)
+                Console.WriteLine("An exception occurred while processing the request: {0}", e.Message)
             End Try
         End Sub
     End Class

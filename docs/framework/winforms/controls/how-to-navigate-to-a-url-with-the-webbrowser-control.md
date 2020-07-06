@@ -1,5 +1,6 @@
 ---
 title: "How to: Navigate to a URL with the WebBrowser Control"
+description: Learn how to use the Windows Forms WebBrowser.Navigate control to navigate to a specific URL. Also learn how to determine when the new document is loaded.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

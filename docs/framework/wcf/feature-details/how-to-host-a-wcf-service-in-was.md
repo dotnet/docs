@@ -6,7 +6,7 @@ ms.assetid: 9e3e213e-2dce-4f98-81a3-f62f44caeb54
 # How to: Host a WCF Service in WAS
 This topic outlines the basic steps required to create a Windows Process Activation Services (also known as WAS) hosted Windows Communication Foundation (WCF) service. WAS is the new process activation service that is a generalization of Internet Information Services (IIS) features that work with non-HTTP transport protocols. WCF uses the listener adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, named pipes, and Message Queuing.  
   
- This hosting option requires that WAS activation components are properly installed and configured, but it does not require any hosting code to be written as part of the application. For more information about installing and configuring WAS, see [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md).  
+ This hosting option requires that WAS activation components are properly installed and configured, but it does not require any hosting code to be written as part of the application. For more information about installing and configuring WAS, see [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md).  
   
 > [!WARNING]
 > WAS activation is not supported if the web server’s request processing pipeline is set to Classic mode. The web server’s request processing pipeline must be set to Integrated mode if WAS activation is to be used.  
@@ -29,7 +29,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
  Otherwise, the endpoint that is initialized first always determines the values of these properties, and endpoints added later throw a <xref:System.ServiceModel.ServiceActivationException> if they do not match those settings.  
   
- For the source copy of this example, see [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md).  
+ For the source copy of this example, see [TCP Activation](../samples/tcp-activation.md).  
   
 ### To create a basic service hosted by WAS  
   
@@ -68,7 +68,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 ### To create a client to use the service  
   
-1. Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata.  
+1. Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata.  
   
     ```console
     Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -94,5 +94,5 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 ## See also
 
-- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
+- [TCP Activation](../samples/tcp-activation.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

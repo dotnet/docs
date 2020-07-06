@@ -1,5 +1,6 @@
 ---
 title: "Query Execution"
+description: Learn about different ways that a LINQ to Entities query runs, including deferred query execution, immediate query execution, and store execution.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

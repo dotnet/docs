@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous Client Socket Example"
+description: This example .NET Framework program creates a client that connects to a server, using an asynchronous socket. It sends a string and displays a result.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

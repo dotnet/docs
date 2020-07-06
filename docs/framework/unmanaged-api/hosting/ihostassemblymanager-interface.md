@@ -22,8 +22,8 @@ Provides methods that allow a host to specify sets of assemblies that should be 
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetAssemblyStore Method](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-getassemblystore-method.md)|Gets an interface pointer to an [IHostAssemblyStore](ihostassemblystore-interface.md) that represents the list of assemblies loaded by the host.|  
-|[GetNonHostStoreAssemblies Method](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-getnonhoststoreassemblies-method.md)|Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the CLR to load.|  
+|[GetAssemblyStore Method](ihostassemblymanager-getassemblystore-method.md)|Gets an interface pointer to an [IHostAssemblyStore](ihostassemblystore-interface.md) that represents the list of assemblies loaded by the host.|  
+|[GetNonHostStoreAssemblies Method](ihostassemblymanager-getnonhoststoreassemblies-method.md)|Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the CLR to load.|  
   
 ## Remarks  
  The host is not required to implement `IHostAssemblyManager` or `IHostAssemblyStore`. If the host does implement `IHostAssemblyManager`, it must also implement `IHostAssemblyStore`.  

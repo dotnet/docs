@@ -1,5 +1,6 @@
 ---
 title: "Connection Strings and Configuration Files"
+description: Learn how to store connection strings for ADO.NET applications in an application configuration file, as a best practice for security and maintenance.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

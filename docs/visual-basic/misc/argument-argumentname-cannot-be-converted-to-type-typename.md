@@ -14,4 +14,4 @@ A conversion attempts to change an argument to a type that is not valid.
   
 ## See also
 
-- [Conversion Functions](../../visual-basic/language-reference/functions/conversion-functions.md)
+- [Conversion Functions](../language-reference/functions/conversion-functions.md)

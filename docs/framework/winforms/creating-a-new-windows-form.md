@@ -1,5 +1,6 @@
 ---
 title: "Creating a New Windows Form"
+description: Find topics that introduce basic vocabulary, guidelines, and instructions you should understand to when you start to create a Windows Forms application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, getting started"

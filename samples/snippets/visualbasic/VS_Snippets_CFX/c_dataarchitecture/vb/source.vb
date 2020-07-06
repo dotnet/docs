@@ -8,7 +8,7 @@ Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security.Tokens
 Imports System.ServiceModel.Description
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     Public Class Test
         Public Sub New()
@@ -23,7 +23,7 @@ Namespace Samples
 
     '<snippet1>
     <ServiceContract()> _
-        Public Interface IAirfareFinderService
+    Public Interface IAirfareFinderService
 
         <OperationContract()> _
         Function FindAirfare(ByVal FromCity As String, _
@@ -153,7 +153,7 @@ Namespace Samples
 
     '<snippet8>
     <ServiceContract()> _
-            Public Interface IForwardingService
+    Public Interface IForwardingService
         <OperationContract(Action:="*")> Sub ForwardMessage(ByVal m As Message)
     End Interface
     '</snippet8>

@@ -41,4 +41,4 @@ This topic describes some implementation details that you want to be aware of.
   
 ## See also
 
-- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+- [Type Support in the System.Xml Classes](type-support-in-the-system-xml-classes.md)

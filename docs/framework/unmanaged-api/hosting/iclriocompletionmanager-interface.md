@@ -22,7 +22,7 @@ Implements a callback method that allows the host to notify the common language 
   
 |Method|Description|  
 |------------|-----------------|  
-|[OnComplete Method](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-oncomplete-method.md)|Notifies the CLR of the status of an I/O request that was made by using a call to the [IHostIoCompletionManager::Bind](ihostiocompletionmanager-bind-method.md) method.|  
+|[OnComplete Method](iclriocompletionmanager-oncomplete-method.md)|Notifies the CLR of the status of an I/O request that was made by using a call to the [IHostIoCompletionManager::Bind](ihostiocompletionmanager-bind-method.md) method.|  
   
 ## Remarks  
  The host implements the I/O completion abstraction by using the [IHostIoCompletionManager](ihostiocompletionmanager-interface.md) interface. The CLR makes I/O requests through this interface, and the host notifies the runtime of the outcome of such requests by using the `ICLRIoCompletionManager` interface.  

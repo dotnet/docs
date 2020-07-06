@@ -1,5 +1,6 @@
 ---
 title: "Automatic Proxy Detection"
+description: Learn about automatic proxy detection, where the system identifies a web proxy server and uses it to send requests on behalf of the client.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

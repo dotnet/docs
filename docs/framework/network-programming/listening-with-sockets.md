@@ -1,5 +1,6 @@
 ---
 title: "Listening with Sockets"
+description: Learn how to create a remote service, where a server socket opens a port on the network and waits for a client to connect to that port.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

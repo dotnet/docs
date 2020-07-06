@@ -1,7 +1,7 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 12/18/2019
+ms.date: 06/08/2020
 ms.custom: mlnet-tooling
 ---
 
@@ -16,13 +16,13 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 ## Pre-requisites
 
-- [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
-- (Optional) [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/vs/)
+- (Optional) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
 You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET Core CLI).
 
-Note: If after installing [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) the `dotnet tool` command is not working, sign out from Windows and sign in again.
+Note: If after installing .NET Core SDK the `dotnet tool` command is not working, sign out from Windows and sign in again.
 
 ## Install
 
@@ -49,7 +49,7 @@ You can confirm the installation was successful by typing the following command:
 mlnet
 ```
 
-You should see the help for available commands for the mlnet tool such as the 'auto-train' command.
+You should see the help for available commands for the mlnet tool such as the 'classification' command.
 
 ## Install a specific release version
 

@@ -1,5 +1,6 @@
 ---
 title: "Creating a Class to Hold DLL Functions"
+description: Create a managed class wrapper in .NET to hold DLL functions, which helps to encapsulate platform functionality.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "COM interop, DLL functions"

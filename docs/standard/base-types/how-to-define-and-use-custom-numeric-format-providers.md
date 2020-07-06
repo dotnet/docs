@@ -19,9 +19,9 @@ ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
 # How to: Define and Use Custom Numeric Format Providers
 The .NET Framework gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  
   
-- Standard numeric format strings, which provide a predefined set of formats for converting numbers to their string representation. You can use them with any numeric formatting method, such as <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, that has a `format` parameter. For details, see [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).  
+- Standard numeric format strings, which provide a predefined set of formats for converting numbers to their string representation. You can use them with any numeric formatting method, such as <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, that has a `format` parameter. For details, see [Standard Numeric Format Strings](standard-numeric-format-strings.md).  
   
-- Custom numeric format strings, which provide a set of symbols that can be combined to define custom numeric format specifiers. They can also be used with any numeric formatting method, such as <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, that has a `format` parameter. For details, see [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).  
+- Custom numeric format strings, which provide a set of symbols that can be combined to define custom numeric format specifiers. They can also be used with any numeric formatting method, such as <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, that has a `format` parameter. For details, see [Custom Numeric Format Strings](custom-numeric-format-strings.md).  
   
 - Custom <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> objects, which define the symbols and format patterns used in displaying the string representations of numeric values. You can use them with any numeric formatting method, such as <xref:System.Int32.ToString%2A>, that has a `provider` parameter. Typically, the `provider` parameter is used to specify culture-specific formatting.  
   

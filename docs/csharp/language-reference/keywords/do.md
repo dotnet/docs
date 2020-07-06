@@ -22,7 +22,7 @@ You can also exit a `do-while` loop by the [goto](goto.md), [return](return.md),
 
 The following example shows the usage of the `do` statement. Select **Run** to run the example code. After that you can modify the code and run it again.
 
-[!code-csharp-interactive[do loop example](~/samples/snippets/csharp/keywords/IterationKeywordsExamples.cs#4)]
+[!code-csharp-interactive[do loop example](snippets/IterationKeywordsExamples.cs#4)]
 
 ## C# language specification
 

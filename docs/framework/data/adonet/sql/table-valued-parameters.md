@@ -1,5 +1,6 @@
 ---
 title: "Table-Valued Parameters"
+description: Learn how to marshal multiple rows of data from a client application to SQL Server by using table-valued parameters.
 ms.date: "10/12/2018"
 dev_langs: 
   - "csharp"

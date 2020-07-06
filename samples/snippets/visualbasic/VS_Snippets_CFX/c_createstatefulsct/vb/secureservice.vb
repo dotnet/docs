@@ -6,20 +6,20 @@ Imports System.ServiceModel.Description
 Imports System.Security.Permissions
 
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution := True)>
+<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 
 Public Class Test
-    
-    Shared Sub Main() 
+
+    Shared Sub Main()
         Dim t As New Test()
         Console.WriteLine("Starting....")
         t.Run()
-    
+
     End Sub
-     
-    
-    Private Sub Run() 
+
+
+    Private Sub Run()
         '<snippet1>
         Dim myBinding As New WSHttpBinding()
         myBinding.Security.Mode = SecurityMode.Message
@@ -30,7 +30,7 @@ Public Class Test
         Dim contractType As Type = GetType(ICalculator)
         Dim serviceType As Type = GetType(Calculator)
         Dim baseAddress As New Uri("http://localhost:8036/serviceModelSamples/")
-        
+
         ' Create the ServiceHost and add an endpoint, then start
         ' the service.
         Dim myServiceHost As New ServiceHost(serviceType, baseAddress)
@@ -75,18 +75,18 @@ Public Class Test
     End Sub
 End Class
 
-<ServiceContract()>  _
+<ServiceContract()> _
 Public Interface ICalculator
-    <OperationContract()>  _
-    Function Add(ByVal a As Double, ByVal b As Double) As Double 
+    <OperationContract()> _
+    Function Add(ByVal a As Double, ByVal b As Double) As Double
 End Interface 'ICalculator
 
 
 Public Class Calculator
     Implements ICalculator
-    
+
     Public Function Add(ByVal a As Double, ByVal b As Double) As Double Implements ICalculator.Add
         Return a + b
-    
+
     End Function 'Add
 End Class

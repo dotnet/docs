@@ -22,11 +22,11 @@ namespace BasicCodeDomApp
 
             cu = BuildHelloWorldGraph();
 
-     	     //<Snippet5>
+            //<Snippet5>
             StreamWriter sourceFile = new StreamWriter(sourceFileName);
             provider.GenerateCodeFromCompileUnit(cu, sourceFile, null);
             sourceFile.Close();
-	     //</Snippet5>
+            //</Snippet5>
 
             //<Snippet6>
             CompilerParameters opt = new CompilerParameters(new string[]{
@@ -82,9 +82,9 @@ namespace BasicCodeDomApp
             class1.Comments.Add(new CodeCommentStatement("<summary>", true));
             class1.Comments.Add(new CodeCommentStatement(
                 "Create a Hello World application.", true));
+            class1.Comments.Add(new CodeCommentStatement("</summary>", true));
             class1.Comments.Add(new CodeCommentStatement(
                 @"<seealso cref=" + '"' + "Class1.Main" + '"' + "/>", true));
-            class1.Comments.Add(new CodeCommentStatement("</summary>", true));
 
             // Add the new type to the namespace type collection.
             samples.Types.Add(class1);

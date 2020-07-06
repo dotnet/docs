@@ -15,13 +15,13 @@ A `Function` procedure is marked as `<CLSCompliant(True)>` but returns a type th
   
  The following Visual Basic data types are not CLS-compliant:  
   
-- [SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
+- [SByte Data Type](../data-types/sbyte-data-type.md)  
   
-- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
+- [UInteger Data Type](../data-types/uinteger-data-type.md)  
   
-- [ULong Data Type](../../../visual-basic/language-reference/data-types/ulong-data-type.md)  
+- [ULong Data Type](../data-types/ulong-data-type.md)  
   
-- [UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
+- [UShort Data Type](../data-types/ushort-data-type.md)  
   
  When you apply the <xref:System.CLSCompliantAttribute> to a programming element, you set the attribute's `isCompliant` parameter to either `True` or `False` to indicate compliance or noncompliance. There is no default for this parameter, and you must supply a value.  
   

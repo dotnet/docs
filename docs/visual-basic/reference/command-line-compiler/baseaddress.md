@@ -40,7 +40,7 @@ Specifies a default base address when creating a DLL.
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-target (Visual Basic)](target.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
 - [Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md))

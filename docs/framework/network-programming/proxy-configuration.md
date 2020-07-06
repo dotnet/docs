@@ -1,5 +1,6 @@
 ---
 title: "Proxy Configuration"
+description: Learn about how to configure adaptive and static proxy servers. Proxy configuration controls how a proxy server handles client requests for resources.
 ms.date: "06/18/2018"
 helpviewer_keywords: 
   - "Networking"
@@ -60,7 +61,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 <system.net>  
     <defaultProxy>  
         <proxy  proxyaddress="http://proxy.contoso.com:3128"  
-                bypassonlocal="true"  
+                bypassonlocal="True"  
         />  
         <bypasslist>  
             <add address="[a-z]+.blueyonderairlines.com$" />  

@@ -1,5 +1,6 @@
 ---
 title: "Handling Null Values"
+description: Learn about how the .NET Framework Data Provider for SQL Server handles null, and read about null and SqlBoolean, three-valued logic, and assigning null values.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

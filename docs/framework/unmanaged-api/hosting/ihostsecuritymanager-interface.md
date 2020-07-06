@@ -22,7 +22,7 @@ Provides methods that allow access to and control over the security context of t
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetSecurityContext Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-getsecuritycontext-method.md)|Gets the requested [IHostSecurityContext](ihostsecuritycontext-interface.md) from the host.|  
+|[GetSecurityContext Method](ihostsecuritymanager-getsecuritycontext-method.md)|Gets the requested [IHostSecurityContext](ihostsecuritycontext-interface.md) from the host.|  
 |[ImpersonateLoggedOnUser Method](ihostsecuritymanager-impersonateloggedonuser-method.md)|Requests that code be executed using the credentials of the current user identity.|  
 |[OpenThreadToken Method](ihostsecuritymanager-openthreadtoken-method.md)|Opens the discretionary access token associated with the current thread.|  
 |[RevertToSelf Method](ihostsecuritymanager-reverttoself-method.md)|Terminates impersonation of the current user identity and returns the original thread token.|  

@@ -7,7 +7,7 @@ Imports System.Windows.Automation
 
 Class UIATableItemPattern_snippets
     Inherits System.Windows.Application
-    
+
     ''' <summary>
     ''' Constructor.
     ''' </summary>
@@ -20,21 +20,21 @@ Class UIATableItemPattern_snippets
     ''' The main entry point for the application.
     ''' </summary>
     '''--------------------------------------------------------------------
-    
+
     NotInheritable Friend Class TestMain
-        
-        <STAThread()>  _
-        Shared Sub Main() 
+
+        <STAThread()> _
+        Shared Sub Main()
             ' Create an instance of the sample class 
             ' and call its Run() method to start it.
             Dim app As New UIATableItemPattern_snippets()
-            
+
             app.Run()
-        
+
         End Sub
     End Class
-    
-    
+
+
     ' <SnippetStartTarget>
     ''' -------------------------------------------------------------------
     ''' <summary>

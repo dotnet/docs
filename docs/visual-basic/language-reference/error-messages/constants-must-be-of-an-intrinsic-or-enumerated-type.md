@@ -23,6 +23,6 @@ You have attempted to declare a constant as a class, structure, or array type, o
   
 ## See also
 
-- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
-- [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Constants and Enumerations](../constants-and-enumerations.md)
+- [Data Types](../../programming-guide/language-features/data-types/index.md)
+- [Data Types](../data-types/index.md)

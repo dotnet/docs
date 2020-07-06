@@ -1,5 +1,6 @@
 ---
 title: Group Controls with GroupBox Control
+description: Learn how to group controls with the Windows Forms GroupBox control so that you can create a visual grouping of related elements.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [Windows Forms], grouping"

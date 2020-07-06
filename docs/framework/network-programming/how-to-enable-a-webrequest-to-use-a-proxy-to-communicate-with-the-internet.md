@@ -1,5 +1,6 @@
 ---
 title: "How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet"
+description: Learn how to create a global proxy instance to enable any WebRequest to use a proxy to communicate with the internet in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

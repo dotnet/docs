@@ -1,5 +1,6 @@
 ---
 title: "Performance Counters"
+description: Use ADO.NET performance counters to monitor your application status and its connection resources by using Windows Performance Monitor or programmatically.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

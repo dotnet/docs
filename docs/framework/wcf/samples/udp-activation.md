@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
 ---
 # UDP Activation
-This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. It extends the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
+This sample is based on the [Transport: UDP](transport-udp.md) sample. It extends the [Transport: UDP](transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
   
  The sample consists of three major pieces:  
   

@@ -485,7 +485,7 @@ This behavior is intended to help prevent accidental exposure of data in a deriv
 
 To serialize the properties of the derived type in the preceding example, use one of the following approaches:
 
-* Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at runtime:
+* Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at run time:
 
   [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeGetType)]
 

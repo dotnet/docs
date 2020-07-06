@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET Core console application using Visual Studio Code
 description: Publishing creates the set of files that are needed to run a .NET Core application.
-ms.date: 06/08/2020
+ms.date: 07/04/2020
 ---
 # Tutorial: Publish a .NET Core console application using Visual Studio Code
 
@@ -106,4 +106,4 @@ In the following steps, you'll look at the files created by the publish process.
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio for Mac](library-with-visual-studio-mac.md)
+> [Create a .NET Standard library in Visual Studio Code](library-with-visual-studio-code.md)

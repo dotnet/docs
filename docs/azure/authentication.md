@@ -13,6 +13,9 @@ The latest packages in the Azure SDK for .NET use a common authentication mechan
 
 For complete instructions on using Azure.Identity in your project, see the documentation for [Azure Identity client for .NET](/dotnet/api/overview/azure/identity-readme).
 
+> [!TIP]
+> See the [Azure Identity, Resource Management, and Storage sample](/samples/dotnet/samples/azure-identity-resource-management-storage/) for examples of using Azure Identity to manage and access Azure resources.
+
 To authenticate with libraries that don't support Azure.Identity, see the rest of this topic.
 
 ## Access Azure resources

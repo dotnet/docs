@@ -687,17 +687,15 @@ namespace CsProgGuideTypes
     //</snippet40>
 
     //<snippet41>
-
     using System;
 
     class Animal
     {
-        public void Eat() { Console.WriteLine("Eating."); }
-        public override string ToString()
-        {
-            return "I am an animal.";
-        }
+        public void Eat() => Console.WriteLine("Eating.");
+
+        public override string ToString() => "I am an animal.";
     }
+
     class Reptile : Animal { }
     class Mammal : Animal { }
 
@@ -714,8 +712,8 @@ namespace CsProgGuideTypes
 
         static void Test(Animal a)
         {
-            // Cause InvalidCastException at run time
-            // because Mammal is not convertible to Reptile.
+            // System.InvalidCastException at run time
+            // Unable to cast object of type 'Mammal' to type 'Reptile'
             Reptile r = (Reptile)a;
         }
     }

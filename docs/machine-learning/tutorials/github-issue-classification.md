@@ -69,7 +69,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_trainingDataView` is the <xref:Microsoft.ML.IDataView> used to process the training dataset.
 * `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
 
-Add the following code to the line right above the `Main` method to specify those paths and the other variables:
+Add the following code to the line directly above the `Main` method to specify those paths and the other variables:
 
 [!code-csharp[DeclareGlobalVariables](~/samples/snippets/machine-learning/GitHubIssueClassification/csharp/Program.cs#DeclareGlobalVariables)]
 

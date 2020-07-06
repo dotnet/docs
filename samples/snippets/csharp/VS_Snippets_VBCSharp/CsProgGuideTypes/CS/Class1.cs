@@ -687,11 +687,9 @@ namespace CsProgGuideTypes
     //</snippet40>
 
     //<snippet41>
-    using System;
-
     class Animal
     {
-        public void Eat() => Console.WriteLine("Eating.");
+        public void Eat() => System.Console.WriteLine("Eating.");
 
         public override string ToString() => "I am an animal.";
     }
@@ -706,8 +704,8 @@ namespace CsProgGuideTypes
             Test(new Mammal());
 
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            System.Console.WriteLine("Press any key to exit.");
+            System.Console.ReadKey();
         }
 
         static void Test(Animal a)

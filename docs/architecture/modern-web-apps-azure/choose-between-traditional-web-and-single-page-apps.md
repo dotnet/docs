@@ -3,7 +3,7 @@ title: Choose between traditional web apps and single page apps
 description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-no-loc: [Blazor, "WebAssembly"]
+no-loc: [Blazor, WebAssembly]
 ms.date: 12/04/2019
 ---
 

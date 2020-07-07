@@ -47,7 +47,7 @@ public class Class1
       Console.WriteLine("{0} converts to {1} {2}",
                         sourceTime,
                         targetTime,
-                        targetTime.Kind.ToString());
+                        targetTime.Kind);
 
       // Convert local time to DateTime value
       sourceTime = new DateTimeOffset(baseTime,
@@ -56,7 +56,7 @@ public class Class1
       Console.WriteLine("{0} converts to {1} {2}",
                         sourceTime,
                         targetTime,
-                        targetTime.Kind.ToString());
+                        targetTime.Kind);
 
       // Convert Central Standard Time to a DateTime value
       try
@@ -67,7 +67,7 @@ public class Class1
          Console.WriteLine("{0} converts to {1} {2}",
                            sourceTime,
                            targetTime,
-                           targetTime.Kind.ToString());
+                           targetTime.Kind);
       }
       catch (TimeZoneNotFoundException)
       {
@@ -88,7 +88,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         utcTime1,
                         utcTime2,
-                        utcTime2.Kind.ToString());
+                        utcTime2.Kind);
       // The example displays the following output to the console:
       //   6/19/2008 7:00:00 AM +00:00 converted to 6/19/2008 7:00:00 AM Utc
       // </Snippet6>
@@ -107,7 +107,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         utcTime1,
                         utcTime2,
-                        utcTime2.Kind.ToString());
+                        utcTime2.Kind);
       // The example displays the following output to the console:
       //   6/19/2008 7:00:00 AM -07:00 converted to 6/19/2008 7:00:00 AM Local
       // </Snippet7>
@@ -137,7 +137,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         utcTime,
                         returnedDate,
-                        returnedDate.Kind.ToString());
+                        returnedDate.Kind);
 
       // Convert local time
       DateTimeOffset localTime = new DateTimeOffset(timeComponent,
@@ -146,7 +146,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         localTime,
                         returnedDate,
-                        returnedDate.Kind.ToString());
+                        returnedDate.Kind);
 
       // Convert Central Standard Time
       DateTimeOffset cstTime = new DateTimeOffset(timeComponent,
@@ -155,7 +155,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         cstTime,
                         returnedDate,
-                        returnedDate.Kind.ToString());
+                        returnedDate.Kind);
       // The example displays the following output to the console:
       //    6/19/2008 7:00:00 AM +00:00 converted to 6/19/2008 7:00:00 AM Utc
       //    6/19/2008 7:00:00 AM -07:00 converted to 6/19/2008 7:00:00 AM Local
@@ -171,7 +171,7 @@ public class Class1
       DateTimeOffset utcTime2 = utcTime1;
       Console.WriteLine("Converted {0} {1} to a DateTimeOffset value of {2}",
                         utcTime1,
-                        utcTime1.Kind.ToString(),
+                        utcTime1.Kind,
                         utcTime2);
       // This example displays the following output to the console:
       //    Converted 6/19/2008 7:00:00 AM Utc to a DateTimeOffset value of 6/19/2008 7:00:00 AM +00:00
@@ -186,7 +186,7 @@ public class Class1
       DateTimeOffset localTime2 = localTime1;
       Console.WriteLine("Converted {0} {1} to a DateTimeOffset value of {2}",
                         localTime1,
-                        localTime1.Kind.ToString(),
+                        localTime1.Kind,
                         localTime2);
       // This example displays the following output to the console:
       //    Converted 6/19/2008 7:00:00 AM Local to a DateTimeOffset value of 6/19/2008 7:00:00 AM -07:00
@@ -200,7 +200,7 @@ public class Class1
       DateTimeOffset time2 = time1;
       Console.WriteLine("Converted {0} {1} to a DateTimeOffset value of {2}",
                         time1,
-                        time1.Kind.ToString(),
+                        time1.Kind,
                         time2);
       // This example displays the following output to the console:
       //    Converted 6/19/2008 7:00:00 AM Unspecified to a DateTimeOffset value of 6/19/2008 7:00:00 AM -07:00
@@ -217,7 +217,7 @@ public class Class1
                         TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time").GetUtcOffset(time1));
          Console.WriteLine("Converted {0} {1} to a DateTime value of {2}",
                            time1,
-                           time1.Kind.ToString(),
+                           time1.Kind,
                            time2);
       }
       // Handle exception if time zone is not defined in registry
@@ -241,7 +241,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         localTime1,
                         localTime2,
-                        localTime2.Kind.ToString());
+                        localTime2.Kind);
       // The example displays the following output to the console:
       //   6/19/2008 7:00:00 AM -07:00 converted to 6/19/2008 7:00:00 AM Local
       // </Snippet10>
@@ -260,7 +260,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         originalDate,
                         localDate,
-                        localDate.Kind.ToString());
+                        localDate.Kind);
       // Convert time originating in a different time zone
       // so local time zone's adjustment rules are applied
       originalDate = new DateTimeOffset(2007, 11, 4, 4, 0, 0,
@@ -269,7 +269,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         originalDate,
                         localDate,
-                        localDate.Kind.ToString());
+                        localDate.Kind);
       // The example displays the following output to the console:
       //       6/19/2008 7:00:00 AM -05:00 converted to 6/19/2008 5:00:00 AM Local
       //       11/4/2007 4:00:00 AM -05:00 converted to 11/4/2007 1:00:00 AM Local
@@ -284,7 +284,7 @@ public class Class1
       Console.WriteLine("{0} converted to {1} {2}",
                         originalTime,
                         utcTime,
-                        utcTime.Kind.ToString());
+                        utcTime.Kind);
       // The example displays the following output to the console:
       //       6/19/2008 7:00:00 AM +05:00 converted to 6/19/2008 2:00:00 AM Utc
       // </Snippet12>

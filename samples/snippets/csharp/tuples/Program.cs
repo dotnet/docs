@@ -31,10 +31,9 @@ namespace tuples
 
             #region 13A_DeconstructExtension
             var s1 = new Student("Cary", "Totten", 4.5);
-            var (fName, lName, gpa) = s1;
+            var (personFirstName, personLastName) = s1;
+            var (studentFirstName, studentLastName, gpa) = s1;
             #endregion
-
-            var (f, l) = s1;
 
             var source = new ProjectionSample();
             var sequence = source.GetCurrentItemsMobileList();

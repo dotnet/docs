@@ -5,8 +5,8 @@ ms.technology: dotnet-networking
 topic_type: 
   - apiref
 api_name: 
-  - System.Net.MailAddressParser
-  - System.Net.MailAddressParser.ParseAddress
+  - System.Net.Mail.MailAddressParser
+  - System.Net.Mail.MailAddressParser.ParseAddress
 api_location: 
   - System.dll
 api_type: 

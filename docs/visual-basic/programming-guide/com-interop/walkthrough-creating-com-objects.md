@@ -12,7 +12,7 @@ ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
 # Walkthrough: Creating COM Objects with Visual Basic
 When creating new applications or components, it is best to create .NET Framework assemblies. However, Visual Basic also makes it easy to expose a .NET Framework component to COM. This enables you to provide new components for earlier application suites that require COM components. This walkthrough demonstrates how to use Visual Basic to expose .NET Framework objects as COM objects, both with and without the COM class template.  
   
- The easiest way to expose COM objects is by using the COM class template. The COM class template creates a new class, and then configures your project to generate the class and interoperability layer as a COM object and register it with the operating system.  
+ The easiest way to expose COM objects is by using the COM class template. This template creates a new class, then configures your project to generate the class with an interoperability layer as a COM object, and register it with the operating system.  
   
 > [!NOTE]
 > Although you can also expose a class created in Visual Basic as a COM object for unmanaged code to use, it is not a true COM object and cannot be used by Visual Basic. For more information, see [COM Interoperability in .NET Framework Applications](com-interoperability-in-net-framework-applications.md).  

@@ -22,9 +22,9 @@ This topic describes how you can rename a Windows Communication Foundation (WCF)
 </system.servicemodel>  
 ```  
   
-- If your service is webhosted, it uses an *.svc file. Open the svc file and modify the name of your service as indicated in the following example. This step is not necessary for self-hosted applications, as there is no svc file.  
+- If your service is webhosted, it uses an *\*.svc* file. Open the svc file and modify the name of your service as indicated in the following example. This step is not necessary for self-hosted applications, as there is no svc file.  
   
-```  
+```aspx-csharp
 <%@ ServiceHost Service="WcfService.NewName">  
 ```  
   

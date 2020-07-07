@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <RootNamespace>L2E_ArraysAndListsInQueriesCS</RootNamespace>
-    <AssemblyName>L2E_ArraysAndListsInQueriesCS</AssemblyName>
+    <RootNamespace>MapCLRFunctionToStoreFunction</RootNamespace>
+    <AssemblyName>MapCLRFunctionToStoreFunction</AssemblyName>
 
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
@@ -22,23 +22,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="AdventureWorksModel.Designer.cs">
+    <Compile Include="Program.cs" />
+    <Compile Include="School.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AdventureWorksModel.edmx</DependentUpon>
+      <DependentUpon>School.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EntityDeploy Include="AdventureWorksModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AdventureWorksModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
 
   <ItemGroup>
     <None Include="App.Config" />
+    <EntityDeploy Include="School.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>School.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
 
 </Project>

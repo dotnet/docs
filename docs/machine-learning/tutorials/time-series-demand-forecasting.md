@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 ## Time series forecasting sample overview
 
-This sample is a **C# .NET Core console application** that forecasts demand for bike rentals using a univariate time series analysis algorithm known as Single Spectrum Analysis. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository on GitHub.
+This sample is a **C# .NET Core console application** that forecasts demand for bike rentals using a univariate time series analysis algorithm known as Singular Spectrum Analysis. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository on GitHub.
 
 ## Understand the problem
 
@@ -37,7 +37,7 @@ In order to run an efficient operation, inventory management plays a key role. H
 
 The technique for analyzing data used in this tutorial is univariate time-series analysis. Univariate time-series analysis takes a look at a single numerical observation over a period of time at specific intervals such as monthly sales.
 
-The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf). SSA works by decomposing a time-series into a set of principal components. These components can be interpreted as the parts of a signal that correspond to trends, noise, seasonality, and many other factors. Then, these components are reconstructed and used to forecast values some time in the future.
+The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf). SSA works by decomposing a time-series into a set of principal components. These components can be interpreted as the parts of a signal that correspond to trends, noise, seasonality, and many other factors. Then, these components are reconstructed and used to forecast values some time in the future.
 
 ## Create console application
 

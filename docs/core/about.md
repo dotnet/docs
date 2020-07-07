@@ -5,6 +5,9 @@ ms.date: 03/26/2020
 ---
 # .NET Core overview
 
+> [!div class="button"]
+> [Download .NET Core](https://dotnet.microsoft.com/download)
+
 .NET Core has the following characteristics:
 
 - **Cross platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
@@ -14,9 +17,6 @@ ms.date: 03/26/2020
 - **Consistent across environments:** Runs your code with the same behavior on multiple operating systems and architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and for continuous integration.
 - **Flexible deployment:** You can include .NET Core in your app or install it side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).
-
-> [!div class="button"]
-> [Download .NET Core](https://dotnet.microsoft.com/download)
 
 ## Languages
 

@@ -37,7 +37,7 @@ Two operands of the same [enum](../builtin-types/enum.md) type are equal if the 
 
 User-defined [struct](../builtin-types/struct.md) types don't support the `==` operator by default. To support the `==` operator, a user-defined struct must [overload](operator-overloading.md) it.
 
-Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](../../tuples.md). For more information, see the [Equality and tuples](../../tuples.md#equality-and-tuples) section of the [C# tuple types](../../tuples.md) article.
+Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](../builtin-types/value-tuples.md). For more information, see the [Tuple equality](../builtin-types/value-tuples.md#tuple-equality) section of the [Tuple types](../builtin-types/value-tuples.md) article.
 
 ### Reference types equality
 

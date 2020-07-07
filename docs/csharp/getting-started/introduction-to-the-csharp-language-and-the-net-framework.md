@@ -9,7 +9,7 @@ ms.assetid: 0a2dff4e-cd84-42ff-8141-e89889b24081
 ---
 # Introduction to the C# language and the .NET Framework
 
-C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. The .NET ecosystem is composed of all the implementations of .NET, including both but not limited to [.NET Core](../../core/index.yml), and [.NET Framework](../../framework/index.yml). This article focuses on .NET Framework. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the .NET Framework.
+C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. The .NET ecosystem is composed of all the implementations of .NET, including both but not limited to [.NET Core](../../core/index.yml), and [.NET Framework](../../framework/index.yml). This article focuses on .NET Framework. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more.
 
 > [!NOTE]
 > The Visual C# documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore Visual C# Express, which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.

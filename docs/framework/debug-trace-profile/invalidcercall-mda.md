@@ -1,5 +1,6 @@
 ---
 title: "invalidCERCall MDA"
+description: Review the invalidCERCall managed debugging assistant (MDA), which is activated if there's an invalid call within the constrained execution region (CER) graph.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "invalid CER calls"

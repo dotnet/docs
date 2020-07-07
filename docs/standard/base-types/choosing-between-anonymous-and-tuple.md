@@ -98,7 +98,7 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 
 ### Key differences
 
-| Name                     | Access modifier | Type     | Custom property name | Deconstruction support | Expression tree support |
+| Name                     | Access modifier | Type     | Custom member name | Deconstruction support | Expression tree support |
 |--------------------------|-----------------|----------|----------------------|------------------------|-------------------------|
 | Anonymous types          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
 | <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |

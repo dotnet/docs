@@ -1,5 +1,6 @@
 ---
 title: "invalidMemberDeclaration MDA"
+description: Review the invalidMemberDeclaration managed debugging assistant, which is invoked if a failure HRESULT is returned to COM without calling the managed method.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "invalid member declaration"

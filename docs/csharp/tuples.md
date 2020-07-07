@@ -79,7 +79,7 @@ won't have element names created using *tuple field name projections* in C# 7.1.
 
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
-Named tuples still have elements named `Item1`, `Item2`, `Item3` and so on.
+Named tuples still have elements named `Item1`, `Item2`, `Item3`, and so on.
 But they also have synonyms for any of those elements that you have named.
 You create a named tuple by specifying the names for each element. One way
 is to specify the names as part of the tuple initialization:
@@ -95,7 +95,7 @@ the compiled output. The compiled Microsoft Intermediate Language (MSIL)
 does not include the names you've given these elements.
 
 Beginning with C# 7.1, the field names for a tuple may be provided from the
-variables used to initialize the tuple. This is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The following code creates a tuple named
+variables used to initialize the tuple. Providing field names to tuples is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The following code creates a tuple named
 `accumulation` with elements `count` (an integer), and `sum` (a double).
 
 [!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/program.cs#ProjectedTupleNames "Named tuple")]
@@ -171,13 +171,13 @@ Finally, tuples may contain nested tuples. Tuple equality compares the "shape" o
 
 [!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
 
-It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to compare them.
+It's a compile-time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to compare them.
 
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
 the same number of elements, where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
-conversions aren't considered for assignments. It's a compile time error to assign one tuple to another when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to assign them.
+conversions aren't considered for assignments. It's a compile-time error to assign one tuple to another when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to assign them.
 Let's look at the kinds
 of assignments that are allowed between tuple types.
 
@@ -221,9 +221,7 @@ that computes the standard deviation for a sequence of numbers:
 > These examples compute the uncorrected sample standard deviation.
 > The corrected sample standard deviation formula would divide
 > the sum of the squared differences from the mean by (N-1) instead
-> of N, as the `Average` extension method does. Consult a statistics
-> text for more details on the differences between these formulas
-> for standard deviation.
+> of N, as the `Average` extension method does.
 
 The preceding code follows the textbook formula for the standard deviation. It produces
 the correct answer, but it's an inefficient implementation. This
@@ -236,7 +234,7 @@ only one enumeration.)
 There is an alternative formula that computes standard deviation using
 only one enumeration of the sequence.  This computation produces two
 values as it enumerates the sequence: the sum of all items in the sequence,
-and the sum of the each value squared:
+and the sum of each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 

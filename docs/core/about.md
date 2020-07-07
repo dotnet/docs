@@ -15,6 +15,9 @@ ms.date: 03/26/2020
 - **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and for continuous integration.
 - **Flexible deployment:** You can include .NET Core in your app or install it side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).
 
+> [!div class="button"]
+> [Download .NET Core](https://dotnet.microsoft.com/download)
+
 ## Languages
 
 The [C#](../csharp/index.yml), [Visual Basic](../visual-basic/index.yml), and [F#](../fsharp/index.yml) languages can be used to write applications and libraries for .NET Core. These languages can be used in your favorite text editor or Integrated Development Environment (IDE), including:

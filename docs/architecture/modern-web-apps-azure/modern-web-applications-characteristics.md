@@ -3,6 +3,7 @@ title: Characteristics of modern web applications
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Characteristics of modern web applications
 author: ardalis
 ms.author: wiwagn
+no-loc: [Blazor, "WebAssembly"]
 ms.date: 12/04/2019
 ---
 

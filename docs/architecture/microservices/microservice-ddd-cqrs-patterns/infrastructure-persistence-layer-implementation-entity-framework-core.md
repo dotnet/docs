@@ -169,7 +169,7 @@ However, implementing custom repositories provides several benefits when impleme
 
 In Figure 7-18, you can see the differences between not using repositories (directly using the EF DbContext) versus using repositories, which makes it easier to mock those repositories.
 
-![Diagram showing the components and dataflow in the two repositories.](./media/infrastructure-persistence-layer-implemenation-entity-framework-core/custom-repo-versus-db-context.png)
+![Diagram showing the components and dataflow in the two repositories.](./media/infrastructure-persistence-layer-implementation-entity-framework-core/custom-repo-versus-db-context.png)
 
 **Figure 7-18**. Using custom repositories versus a plain DbContext
 

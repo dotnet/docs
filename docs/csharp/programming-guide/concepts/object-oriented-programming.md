@@ -5,8 +5,9 @@ ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
 ---
 # Object-Oriented programming (C#)
 
-C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.
+C# provides full support for object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
 
+- *Abstraction* means hiding the unnecessary details from the class consumers.
 - *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
 - *Inheritance* describes the ability to create new classes based on an existing class.
 - *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
@@ -23,7 +24,7 @@ class SampleClass
 }
 ```
 
-C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism.
+C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism. For more information, see [Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md).
 
 To define a structure:
 

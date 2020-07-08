@@ -33,7 +33,7 @@ You might have to reference two versions of assemblies that have the same fully-
   
 ## Using Visual Studio
 
-If you are using Visual Studio, aliase can be provided in similar way.
+If you are using Visual Studio, aliases can be provided in similar way.
 
 Add reference of *grid.dll* and *grid20.dll* to your project in Visual Studio. Open a property tab and change the Aliases from global to GridV1 and GridV2 respectively.
 

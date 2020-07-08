@@ -54,34 +54,6 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 ## Options
 
-- **`--local`**
-
-  Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
-
-- **`--version <VERSION>`**
-
-  The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
-
-- **`--tool-manifest <PATH>`**
-
-  Path to the manifest file. Applies only to local tools.
-
-- **`--disable-parallel`**
-
-  Prevent restoring multiple projects in parallel.
-
-- **`--ignore-failed-sources`**
-
-  Treat package source failures as warnings.
-
-- **`--no-cache`**
-
-  Do not cache packages and HTTP requests.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication).
-
 - **`--add-source <SOURCE>`**
 
   Adds an additional NuGet package source to use during installation.
@@ -90,9 +62,41 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
   The NuGet configuration (*nuget.config*) file to use.
 
+- **`--disable-parallel`**
+
+  Prevent restoring multiple projects in parallel.
+
 - **`--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
+
+- **`--ignore-failed-sources`**
+
+  Treat package source failures as warnings.
+
+- **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example to complete authentication).
+
+- **`--local`**
+
+  Update the tool and the local tool manifest. Can't be combined with the `--global` option.
+
+- **`--no-cache`**
+
+  Do not cache packages and HTTP requests.
+
+- **`--tool-manifest <PATH>`**
+
+  Path to the manifest file.
+
+- **`--tool-path <PATH>`**
+
+  Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
+
+- **`--version <VERSION>`**
+
+  The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
 
 - **`-g|--global`**
 
@@ -101,10 +105,6 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 - **`-h|--help`**
 
   Prints out a short help for the command.
-
-- **`--tool-path <PATH>`**
-
-  Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -128,17 +128,13 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
   Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory.
 
-- **`dotnet tool update -g dotnetsay --version *`**
-
-  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest version.
-
 - **`dotnet tool update -g dotnetsay --version 2.0.*`**
 
   Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, with a major version of `2`, and a minor version of `0`.
 
 - **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
 
-  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest tolerable version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed.
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
 
 ## See also
 

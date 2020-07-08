@@ -11,7 +11,7 @@ ms.custom: azure-sdk-dotnet
 
 The latest packages in the Azure SDK for .NET use a common authentication package to authenticate, `Azure.Identity`. Using `Azure.Identity` is recommended over other authentication mechanisms described later in this document. Packages supporting the credentials provided by `Azure.Identity` have package identifiers starting with *Azure.* [For more information, see the latest releases in the Azure SDK for .NET](https://azure.github.io/azure-sdk/releases/latest/index.html#net).
 
-For complete instructions on using Azure.Identity in your project, see the documentation for [Azure Identity client for .NET](/dotnet/api/overview/azure/identity-readme).
+For complete instructions on using `Azure.Identity` in your project, see the documentation for [Azure Identity client for .NET](/dotnet/api/overview/azure/identity-readme).
 
 > [!TIP]
 > See the [Azure Identity, Resource Management, and Storage sample](/samples/dotnet/samples/azure-identity-resource-management-storage/) for examples of using Azure Identity to manage and access Azure resources.

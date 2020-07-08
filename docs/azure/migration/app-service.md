@@ -2,7 +2,7 @@
 title: Migrate your .NET web app or service to Azure App Service
 description: Learn about migrating a .NET web app or service from on-premises to Azure App Service.
 ms.topic: conceptual
-ms.date: 08/11/2018
+ms.date: 07/08/2020
 ---
 # Migrate your .NET web app or service to Azure App Service
 
@@ -27,16 +27,16 @@ Azure App Service supports port 80 for HTTP and port 443 for HTTPS traffic.
 
 For WCF, the following bindings are supported:
 
-Binding | Notes
---------|--------
-BasicHttp |
-WSHttp |
-WSDualHttpBinding | [Web socket support](/azure/app-service/web-sites-configure) must be enabled.
-NetHttpBinding | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts.
-NetHttpsBinding | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts.
-BasicHttpContextBinding |
-WebHttpBinding |
-WSHttpContextBinding |
+| Binding | Notes |
+|--|--|
+| `BasicHttp` |  |
+| `WSHttp` |  |
+| `WSDualHttpBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
+| `NetHttpBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `NetHttpsBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `BasicHttpContextBinding` |  |
+| `WebHttpBinding` |  |
+| `WSHttpContextBinding` |  |
 
 ### Authentication
 

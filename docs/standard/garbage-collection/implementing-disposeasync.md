@@ -1,6 +1,8 @@
 ---
 title: Implement a DisposeAsync method
-description: 
+description:
+author: IEvangelist
+ms.author: dapine
 ms.date: 06/02/2020
 ms.technology: dotnet-standard
 dev_langs:

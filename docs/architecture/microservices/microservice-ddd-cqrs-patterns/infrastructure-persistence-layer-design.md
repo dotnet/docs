@@ -123,4 +123,4 @@ Repositories might be useful, but they are not critical for your DDD design, in 
 
 >[!div class="step-by-step"]
 >[Previous](domain-events-design-implementation.md)
->[Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+>[Next](infrastructure-persistence-layer-implementation-entity-framework-core.md)

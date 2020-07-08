@@ -3,6 +3,7 @@ title: Modules, handlers, and middleware
 description: Learn about handling HTTP requests with modules, handlers, and middleware.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor]
 ms.date: 10/11/2019
 ---
 # Modules, handlers, and middleware

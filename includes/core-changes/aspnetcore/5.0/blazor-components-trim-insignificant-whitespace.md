@@ -8,7 +8,9 @@ Starting with ASP.NET Core 5.0 Preview 7, the Razor compiler omits insignificant
 
 #### Old behavior
 
-In 3.x versions of Blazor Server and Blazor WebAssembly, *.razor* files preserved whitespace in the text context of the rendered output. Consider the following Blazor component code:
+In 3.x versions of Blazor Server and Blazor WebAssembly, whitespace is honored in a component's source code. Whitespace-only text nodes render in the browser's Document Object Model (DOM) even when there's no visual effect.
+
+Consider the following Blazor component code:
 
 ```razor
 <ul>
@@ -29,10 +31,16 @@ The preceding example renders two whitespace nodes:
 
 A list containing 100 items results in 402 whitespace nodes. That's over half of all nodes rendered, even though none of the whitespace nodes visually affect the rendered output.
 
-When rendering static HTML for components, whitespace inside a tag header wasn't preserved. For example, view the source of the following rendered component. You'll notice that whitespace wasn't preserved.
+When rendering static HTML for components, whitespace inside a tag wasn't preserved. For example, view the source of the following rendered component:
 
 ```razor
 <foo        bar="baz"     />
+```
+
+You'll notice that whitespace wasn't preserved. The pre-rendered output is:
+
+```razor
+<foo bar="baz" />
 ```
 
 #### New behavior
@@ -45,7 +53,7 @@ Unless the `@preservewhitespace` directive is used with value `true`, whitespace
 
 #### Reason for change
 
-A goal for Blazor in ASP.NET Core 5.0 is to improve performance for rendering and diffing. Insignificant whitespace tree nodes consumed up to 40 percent of the rendering time in benchmarks.
+A goal for Blazor in ASP.NET Core 5.0 is to improve the performance of rendering and diffing. Insignificant whitespace tree nodes consumed up to 40 percent of the rendering time in benchmarks.
 
 #### Recommended action
 

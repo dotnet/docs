@@ -31,13 +31,13 @@ The preceding example renders two whitespace nodes:
 
 A list containing 100 items results in 402 whitespace nodes. That's over half of all nodes rendered, even though none of the whitespace nodes visually affect the rendered output.
 
-When rendering static HTML for components, whitespace inside a tag wasn't preserved. For example, view the source of the following rendered component:
+When rendering static HTML for components, whitespace inside a tag wasn't preserved. For example, view the source of the following component:
 
 ```razor
 <foo        bar="baz"     />
 ```
 
-You'll notice that whitespace wasn't preserved. The pre-rendered output is:
+Whitespace isn't preserved. The pre-rendered output is:
 
 ```razor
 <foo bar="baz" />

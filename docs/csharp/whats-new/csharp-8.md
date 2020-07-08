@@ -188,7 +188,7 @@ Pattern matching creates a concise syntax for expressing this algorithm.
 
 ### Tuple patterns
 
-Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
 
 ```csharp
 public static string RockPaperScissors(string first, string second)

@@ -159,7 +159,7 @@ landingContent:
             url: /learn/modules/persist-data-ef-core/
       - linkListType: tutorial
         links:
-          - text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
+          - text: Connect to and query an Azure Database for PostgreSQL database
             url: /azure/postgresql/connect-csharp
   - title: Messaging on Azure
     linkLists:
@@ -185,7 +185,7 @@ landingContent:
             url: /azure/event-grid/custom-event-quickstart
   - title: Diagnostics and monitoring
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
           - text: Azure Monitor
             url: /azure/azure-monitor/overview

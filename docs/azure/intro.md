@@ -69,7 +69,7 @@ If you're using the Azure SDK for .NET to access or manage your Azure resources,
 
 * **Authentication**: Many libraries in the SDK use a common authentication infrastructure, while some libraries use authentication mechanisms specific to the service they're consuming. For more information, see [Authentication with the Azure SDK for .NET](authentication.md).
 * **Logging**: If supported, the client libraries include the ability to log client library operations. For more information, see [Logging with the Azure SDK for .NET](logging.md).
-* **REST API** The Azure SDK for .NET is an abstraction built on the [Azure REST API](/rest/api/azure/). The Azure REST API may be used in lieu of or alongside the Azure SDK for .NET if desired.
+* **REST API**: The Azure SDK for .NET is an abstraction built on the [Azure REST API](/rest/api/azure/). The Azure REST API may be used in lieu of or alongside the Azure SDK for .NET if desired.
 
 ## Diagnosing problems in the Cloud
 Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure. Below are two good places to start when diagnosing issues:

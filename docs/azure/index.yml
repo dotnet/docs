@@ -14,35 +14,32 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
   items:
-    - itemType: quickstart
-      title: Deploy an ASP.NET web app
-      url: /azure/app-service/app-service-web-get-started-dotnet
     - itemType: overview 
       title: Introduction to Azure and .NET
       url: intro.md
+    - itemType: quickstart 
+      title: Deploy an ASP.NET web app
+      url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
     - itemType: learn
-      title: Azure Fundamentals
-      url: /learn/paths/azure-fundamentals/
+      title: Azure fundamentals
+      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
     - itemType: download
       title: Sample code
-      url: /samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
-    - itemType: get-started 
-      title: Developer tools 
-      url: tools.md
-    - itemType: get-started
-      title: Authenticate your app
-      url: authentication.md
-    - itemType: get-started
-      title: Logging
-      url: logging.md
-    - itemType: reference 
-      title: Azure SDK for .NET API reference 
-      url: /dotnet/api/overview/azure/?view=azure-dotnet
+      url: https://docs.microsoft.com/samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+    - itemType: tutorial
+      title: Deploy a .NET app with Azure DevOps
+      url: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
+    - itemType: tutorial
+      title: Full stack authentication end-to-end in App Service
+      url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
+    - itemType: learn 
+      title: Secure custom APIs with Microsoft Identity
+      url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Build web apps
+    - title: Create web apps
       links:
         - itemType: overview
           text: App Service overview
@@ -71,7 +68,7 @@ conceptualContent:
         - itemType: tutorial
           text: Web API with CORS in Azure App Service
           url: /azure/app-service/app-service-web-tutorial-rest-api
-    - title: Build cloud native apps
+    - title: Create cloud native apps
       links:
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
@@ -120,7 +117,7 @@ conceptualContent:
     - title: Authentication and security
       links:
         - itemType: overview
-          text: Microsoft identity platform (Azure AD)
+          text: Microsoft identity platform (Azure AD) overview
           url: /azure/active-directory/develop/
         - itemType: learn
           text: Secure your application by using OpenID Connect and Azure AD
@@ -134,6 +131,9 @@ conceptualContent:
         - itemType: tutorial
           text: Add sign-in to Microsoft to an ASP.NET web app
           url: /azure/active-directory/develop/tutorial-v2-asp-webapp
+        - itemType: tutorial
+          text: End-to-end authentication in App Service
+          url: /azure/app-service/app-service-web-tutorial-auth-aad
         - itemType: tutorial
           text: Use Azure Key Vault with ASP.NET Core
           url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
@@ -234,6 +234,29 @@ conceptualContent:
       footerLink:
         url: /dotnet/architecture/
         text: See more
+tools:
+  title: Azure SDK for .NET 
+  items:
+    - imageSrc: https://www.nuget.org/Content/gallery/img/default-package-icon.svg
+      title: "Releases"
+      url: https://azure.github.io/azure-sdk/releases/latest/index.html#net
+    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
+      title: "Authentication for apps"
+      url: authentication.md
+    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
+      title: "Logging"
+      url: logging.md
+    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
+      title: "Example app"
+      url: /samples/dotnet/samples/azure-identity-resource-management-storage/
+    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
+      title: "Tools"
+      url: tools.md
+    - imageSrc: https://docs.microsoft.com/en-us/media/common/i_reference.svg
+      title: "API reference"
+      url: /dotnet/api/overview/azure/?view=azure-dotnet
+    
+
 additionalContent:
   sections: 
     - title: .NET and Azure community resources 

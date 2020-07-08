@@ -16,23 +16,22 @@ ms.date: 07/08/2020
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID>
     [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
-
-dotnet tool update <PACKAGE_ID>
-    [--local] [--version <VERSION>]
+    [--add-source <SOURCE>] [--disable-parallel]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
     [--tool-manifest <PATH>]
-
-dotnet tool update <PACKAGE_ID>
-    [--version <VERSION>] [--ignore-failed-sources]
-    [--no-cache] [--interactive] [--disable-parallel]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update -h|--help
 ```
@@ -43,7 +42,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 * To update a global tool that was installed in the default location, use the `--global` option
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
-* To update a local tool, use the `--local` and `--tool-manifest` options.
+* To update a local tool, use the `--local` option.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 
@@ -57,7 +56,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 - **`--local`**
 
-  Update the tool and the local tool manifest. Can't be combined with the `--global` option.
+  Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
 - **`--version <VERSION>`**
 
@@ -65,7 +64,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 - **`--tool-manifest <PATH>`**
 
-  Path to the manifest file.
+  Path to the manifest file. Applies only to local tools.
 
 - **`--disable-parallel`**
 

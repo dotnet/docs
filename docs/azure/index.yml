@@ -20,21 +20,24 @@ highlightedContent:
     - itemType: quickstart 
       title: Deploy an ASP.NET web app
       url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
-    - itemType: learn
-      title: Azure fundamentals
-      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
-    - itemType: download
-      title: Sample code
-      url: https://docs.microsoft.com/samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+    - itemType: quickstart
+      title: Build a serverless function
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
     - itemType: tutorial
+      title: ASP.NET Core and Docker
+      url: /visualstudio/containers/container-tools?view=vs-2019
+    - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
       url: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
     - itemType: tutorial
-      title: Full stack authentication end-to-end in App Service
+      title: Authentication end-to-end in App Service
       url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
     - itemType: learn 
       title: Secure custom APIs with Microsoft Identity
       url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
+    - itemType: learn
+      title: Azure fundamentals
+      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -47,9 +50,6 @@ conceptualContent:
         - itemType: overview
           text: Azure Functions overview
           url: /azure/azure-functions/functions-overview
-        - itemType: quickstart
-          text: Build a serverless function
-          url: /azure/azure-functions/functions-create-your-first-function-visual-studio
         - itemType: learn
           text: Host a web app with Azure App Service
           url: /learn/modules/host-a-web-app-with-azure-app-service/
@@ -77,9 +77,6 @@ conceptualContent:
           text: Create and deploy a cloud-native ASP.NET Core microservice
           url: /learn/modules/microservices-aspnet-core/
         - itemType: tutorial
-          text: ASP.NET Core app with Visual Studio container tools
-          url: /visualstudio/containers/container-tools?view=vs-2019
-        - itemType: tutorial
           text: Deploy and debug multiple containers in AKS
           url: /azure/dev-spaces/multi-service-netcore-visualstudio
         - itemType: tutorial
@@ -88,6 +85,17 @@ conceptualContent:
         - itemType: how-to-guide
           text: Deploy a .NET Core app to Azure Container Registry
           url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+    - title: Create mobile apps
+      links:
+        - itemType: quickstart
+          text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
+          url: /azure/cosmos-db/create-mongodb-xamarin
+        - itemType: tutorial
+          text: Send push notifications to Xamarin.Forms apps using ASP.NET Core and Azure Notification Hubs
+          url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
+        - itemType: concept
+          text: Add authentication and manage user identities in your mobile apps
+          url: /azure/developer/mobile-apps/authentication
     - title: Work with storage & data
       links:
         - itemType: concept    
@@ -203,59 +211,26 @@ conceptualContent:
         - itemType: how-to-guide
           text: Migrate a SQL Server database to Azure
           url: ./migration/sql.md
-    - title: Free .NET and Azure training
+    - title: Azure SDK for .NET
       links:
-        - itemType: learn
-          text: Microsoft Learn
-          url: /learn/
-        - itemType: video
-          text: "Pluralsight: Developing with .NET and C# on Azure"
-          url: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
-        - itemType: video
-          text: .NET 101 video series
-          url: https://dot.net/videos
-    - title: .NET architectural guides
-      links:
-        - itemType: learn
-          text: Architect modern applications in Azure
-          url: /learn/paths/architect-modern-apps/
-        - itemType: architecture
-          text: ".NET Microservices: Architecture for containerized .NET apps"
-          url: /dotnet/architecture/microservices/
-        - itemType: architecture
-          text: Architect modern web applications with ASP.NET Core and Azure
-          url: /dotnet/architecture/modern-web-apps-azure/
-        - itemType: architecture
-          text: "Containerized Docker application lifecycle with Microsoft platform and tools"
-          url: /dotnet/architecture/containerized-lifecycle/
-        - itemType: architecture
-          text: "Modernize existing .NET applications with Azure cloud and Windows containers"
-          url: /dotnet/architecture/modernize-with-azure-containers/
-      footerLink:
-        url: /dotnet/architecture/
-        text: See more
-tools:
-  title: Azure SDK for .NET 
-  items:
-    - imageSrc: https://www.nuget.org/Content/gallery/img/default-package-icon.svg
-      title: "Releases"
-      url: https://azure.github.io/azure-sdk/releases/latest/index.html#net
-    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
-      title: "Authentication for apps"
-      url: authentication.md
-    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
-      title: "Logging"
-      url: logging.md
-    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
-      title: "Example app"
-      url: /samples/dotnet/samples/azure-identity-resource-management-storage/
-    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
-      title: "Tools"
-      url: tools.md
-    - imageSrc: https://docs.microsoft.com/en-us/media/common/i_reference.svg
-      title: "API reference"
-      url: /dotnet/api/overview/azure/?view=azure-dotnet
-    
+        - itemType: download
+          text: Releases
+          url: https://azure.github.io/azure-sdk/releases/latest/index.html#net
+        - itemType: concept
+          text: Authentication for apps
+          url: authentication.md
+        - itemType: concept
+          text: Logging
+          url: logging.md
+        - itemType: sample
+          text: SDK example app
+          url: /samples/dotnet/samples/azure-identity-resource-management-storage/
+        - itemType: download
+          text: Tools
+          url: tools.md
+        - itemType: reference
+          text: API reference
+          url: /dotnet/api/overview/azure/?view=azure-dotnet
 
 additionalContent:
   sections: 

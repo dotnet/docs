@@ -44,9 +44,9 @@ The first method is to build the token credential object in code. You should sto
 ```csharp
 var credentials = SdkContext.AzureCredentialsFactory
     .FromServicePrincipal(clientId,
-    clientSecret,
-    tenantId,
-    AzureEnvironment.AzureGlobalCloud);
+        clientSecret,
+        tenantId,
+        AzureEnvironment.AzureGlobalCloud);
 ```
 
 Use the *clientId*, *clientSecret*, and *tenantId* values from the JSON output when you created the service principal.

@@ -1,6 +1,6 @@
 ### Blazor: Insignificant whitespace trimmed from components at compile time
 
-Starting with .NET 5 Preview 7, the Razor compiler omits insignificant whitespace in Blazor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
+Starting with ASP.NET Core 5.0 Preview 7, the Razor compiler omits insignificant whitespace in Blazor components (*.razor* files) at compile time. For discussion, see issue [dotnet/aspnetcore#23568](https://github.com/dotnet/aspnetcore/issues/23568).
 
 #### Version introduced
 
@@ -45,7 +45,7 @@ Unless the `@preservewhitespace` directive is used with value `true`, whitespace
 
 #### Reason for change
 
-A goal for Blazor in .NET 5 is to improve performance for rendering and diffing. Insignificant whitespace tree nodes consumed up to 40 percent of the rendering time in benchmarks.
+A goal for Blazor in ASP.NET Core 5.0 is to improve performance for rendering and diffing. Insignificant whitespace tree nodes consumed up to 40 percent of the rendering time in benchmarks.
 
 #### Recommended action
 

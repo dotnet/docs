@@ -26,7 +26,7 @@ dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [--ignore-failed-sources] [--interactive] [--no-cache]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_ID>
+dotnet tool update <PACKAGE_ID> --local
     [--configfile <FILE>] [--framework <FRAMEWORK>]
     [--add-source <SOURCE>] [--disable-parallel]
     [--ignore-failed-sources] [--interactive] [--no-cache]

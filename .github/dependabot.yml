@@ -341,3 +341,13 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+- package_manager: "javascript"
+  directory: "/samples/snippets"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+- package_manager: "docker"
+  directory: "/samples/snippets"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10

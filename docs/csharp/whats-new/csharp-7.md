@@ -107,8 +107,7 @@ You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#DeconstructPoint "Deconstruct a point")]
 
-You can learn more in depth about tuples in the
-[tuples article](../tuples.md).
+For more information, see [Tuple types](../language-reference/builtin-types/value-tuples.md).
 
 ## Discards
 

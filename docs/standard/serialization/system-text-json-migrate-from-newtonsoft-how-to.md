@@ -311,11 +311,20 @@ To make deserialization fail if no `Date` property is in the JSON, implement a c
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs)]
 
-Register this custom converter by [using an attribute on the POCO class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
+Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
-If you follow this pattern, don't pass in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
+This pattern of recursively calling the converter requires that you register the converter by using the options object, not by using an attribute. If you register the converter by using an attribute, the custom converter recursively calls into itself. The result is an infinite loop that ends in a stack overflow exception.
 
-The preceding converter code is a simplified example. Additional logic would be required if you need to handle attributes (such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options (such as custom encoders). Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
+When you register the converter by using the options object, avoid an infinite loop by not passing in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
+
+An alternative pattern is to use `JsonConverterAttribute` registration on the class to be converted and in the converter code call Serialize or Deserialize on a proxy class that derives from the class to be converted. In the following example:
+
+* `WeatherForecastWithConverterAttribute` is the class to be deserialized and has the JsonConverterAttribute applied to it.
+* WeatherForecastWithoutAttribute inherits from WeatherForecast and doesn't have the converter attribute.
+* The code in the converter calls Serialize/Deserialize on WeatherForecastWithoutAttribute to avoid an infinite loop
+, , recursive calling, and avoids an infinite loop If you need to use an attribute;
+
+Additional logic would be required if you need to handle attributes (such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options (such as custom encoders). Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
@@ -384,7 +393,7 @@ Register this custom converter by [using an attribute on the class](system-text-
 If you use a custom converter that follows the preceding sample:
 
 * The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
-* Don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the converter will be used, making an infinite loop that results in a stack overflow exception.
+* Avoid an infinite loop by registering the converter in the options object and not passing in the options object when recursively calling `Serialize` or `Deserialize`. For more information, see the [Required properties](#required-properties) section earlier in this article.
 
 ### Public and non-public fields
 

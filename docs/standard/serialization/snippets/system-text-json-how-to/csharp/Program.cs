@@ -93,6 +93,9 @@ namespace SystemTextJsonSamples
             Console.WriteLine("\n============================= Required property\n");
             DeserializeRequiredProperty.Run();
 
+            Console.WriteLine("\n============================= Required property\n");
+            DeserializeRequiredPropertyAttrReg.Run();
+
             Console.WriteLine("\n============================= Null value to nonnullable type\n");
             DeserializeNullToNonnullableType.Run();
 

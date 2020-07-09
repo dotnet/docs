@@ -1,0 +1,39 @@
+﻿using System;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace SystemTextJsonSamples
+{
+    public class WeatherForecastRequiredPropertyConverterForAttributeRegistration : JsonConverter<WeatherForecastWithReqPptyConverterAttribute>
+    {
+        public override WeatherForecastWithReqPptyConverterAttribute Read(
+            ref Utf8JsonReader reader,
+            Type type,
+            JsonSerializerOptions options)
+        {
+            // OK to pass in options when recursively calling Deserialize.
+            WeatherForecastWithReqPptyConverterAttribute forecast = JsonSerializer.Deserialize<WeatherForecastWithoutReqPptyConverterAttribute>(ref reader);
+
+            // Check for required fields set by values in JSON
+            if (forecast.Date == default)
+            {
+                throw new JsonException("Required property not received in the JSON");
+            }
+            return forecast;
+        }
+
+        public override void Write(
+            Utf8JsonWriter writer,
+            WeatherForecastWithReqPptyConverterAttribute forecast, JsonSerializerOptions options)
+        {
+            var weatherForecastWithoutConverterAttributeOnClass = new WeatherForecastWithoutReqPptyConverterAttribute
+            {
+                Date = forecast.Date,
+                TemperatureCelsius = forecast.TemperatureCelsius,
+                Summary = forecast.Summary
+            };
+            // OK to pass in options when recursively calling Serialize.
+            JsonSerializer.Serialize(writer, weatherForecastWithoutConverterAttributeOnClass, options);
+        }
+    }
+}

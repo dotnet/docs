@@ -317,14 +317,21 @@ This pattern of recursively calling the converter requires that you register the
 
 When you register the converter by using the options object, avoid an infinite loop by not passing in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
 
-An alternative pattern is to use `JsonConverterAttribute` registration on the class to be converted and in the converter code call Serialize or Deserialize on a proxy class that derives from the class to be converted. In the following example:
+There is an alternative pattern that can use `JsonConverterAttribute` registration on the class to be converted. In this approach, the converter code calls `Serialize` or `Deserialize` on a class that derives from the class to be converted and doesn't have a `JsonConverterAttribute` applied to it. In the following example of this alternative:
 
-* `WeatherForecastWithConverterAttribute` is the class to be deserialized and has the JsonConverterAttribute applied to it.
-* WeatherForecastWithoutAttribute inherits from WeatherForecast and doesn't have the converter attribute.
-* The code in the converter calls Serialize/Deserialize on WeatherForecastWithoutAttribute to avoid an infinite loop
-, , recursive calling, and avoids an infinite loop If you need to use an attribute;
+* `WeatherForecastWithReqPptyConverterAttribute` is the class to be deserialized and has the `JsonConverterAttribute` applied to it.
+* `WeatherForecastWithoutReqPptyConverterAttribute` is the derived class that doesn't have the converter attribute.
+* The code in the converter calls `Serialize`and `Deserialize` on `WeatherForecastWithoutReqPptyConverterAttribute` to avoid an infinite loop.
 
-Additional logic would be required if you need to handle attributes (such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options (such as custom encoders). Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
+Here are the `WeatherForecast*` types:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithReqPptyConverterAttr)]
+
+And here is the converter:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs)]
+
+The required properties converter would require additional logic if you need to handle attributes such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options, such as custom encoders. Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.

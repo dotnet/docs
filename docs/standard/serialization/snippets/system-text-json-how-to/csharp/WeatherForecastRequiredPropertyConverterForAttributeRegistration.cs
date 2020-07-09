@@ -19,7 +19,12 @@ namespace SystemTextJsonSamples
             {
                 throw new JsonException("Required property not received in the JSON");
             }
-            return forecast;
+            return new WeatherForecastWithReqPptyConverterAttribute
+            {
+                Date = forecast.Date,
+                TemperatureCelsius = forecast.TemperatureCelsius,
+                Summary = forecast.Summary
+            };
         }
 
         public override void Write(

@@ -14,6 +14,6 @@
             foreach (int testScore in scoreQuery)
             {
                 Console.WriteLine(testScore);
-            }                  
+            }
         }
-        // Outputs: 93 90 82 82      
+        // Outputs: 93 90 82 82

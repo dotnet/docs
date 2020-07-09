@@ -26,7 +26,7 @@ HRESULT GetScope2(
     mdToken FileToken,  
     DWORD dwScope,  
     IMetaDataImport2** ppImportScope  
-) PURE;   
+) PURE;
 ```  
   
 ## Parameters  

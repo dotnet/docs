@@ -14,4 +14,4 @@ An input or output error occurred while your program was using a device such as 
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

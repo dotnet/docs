@@ -34,7 +34,7 @@ namespace Windows.Communication.Foundation.Samples
                         MessageCredentialType.UserName;
                     myServiceHost.AddServiceEndpoint(typeof(CalculatorService), binding, string.Empty);
                     myServiceHost.Open();
-                    // Wait for calls. 
+                    // Wait for calls.
                     myServiceHost.Close();
                 }
                 //</snippet1>
@@ -68,7 +68,7 @@ namespace Windows.Communication.Foundation.Samples
         public double Divide(double n1, double n2) { return n1 * n2; }
 
         // <snippet2>
-        public double Multiply(double n1, double n2) 
+        public double Multiply(double n1, double n2)
         {
             // Create the binding.
             BindingElementCollection bindingElements = new BindingElementCollection();
@@ -77,7 +77,7 @@ namespace Windows.Communication.Foundation.Samples
             bindingElements.Add(new TcpTransportBindingElement());
             CustomBinding backendServiceBinding = new CustomBinding(bindingElements);
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://contoso.com:8001/BackendService");
 
@@ -86,10 +86,10 @@ namespace Windows.Communication.Foundation.Samples
             client.ClientCredentials.UserName.UserName = ServiceSecurityContext.Current.PrimaryIdentity.Name;
             double result = client.Multiply(n1, n2);
             client.Close();
-            
+
             return result;
         }
-        // </snippet2>    
+        // </snippet2>
     }
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]

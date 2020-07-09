@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement a Producer-Consumer Dataflow Pattern"
+description: Understand how to implement a producer-consumer dataflow pattern using the TPL Dataflow Library in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -34,4 +35,4 @@ This document describes how to use the TPL Dataflow Library to implement a produ
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

@@ -56,7 +56,7 @@ The example generates an *.xml* file with the following contents.
             </summary>
             <param name="s"> Parameter description for s goes here.</param>
             <seealso cref="T:System.String">
-            You can use the cref attribute on any tag to reference a type or member 
+            You can use the cref attribute on any tag to reference a type or member
             and the compiler will check that the reference exists.
             </seealso>
         </member>
@@ -102,28 +102,28 @@ The example generates an *.xml* file with the following contents.
 
 ## Compiling the code
 
-To compile the example, type the following command line:
+To compile the example, enter the following command:
 
 `csc XMLsample.cs /doc:XMLsample.xml`
 
-This command creates the XML file *XMLsample.xml*, which you can view in your browser or by using the TYPE command.
+This command creates the XML file *XMLsample.xml*, which you can view in your browser or by using the `TYPE` command.
 
 ## Robust programming
 
-XML documentation starts with ///. When you create a new project, the wizards put some starter /// lines in for you. The processing of these comments has some restrictions:
+XML documentation starts with `///`. When you create a new project, the wizards put some starter `///` lines in for you. The processing of these comments has some restrictions:
 
 - The documentation must be well-formed XML. If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.
 
 - Developers are free to create their own set of tags. There is a [recommended set of tags](recommended-tags-for-documentation-comments.md). Some of the recommended tags have special meanings:
 
-  - The \<param> tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification failed, the compiler issues a warning.
+  - The `<param>` tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification fails, the compiler issues a warning.
 
-  - The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler verifies that this code element exists. If the verification failed, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
+  - The `cref` attribute can be attached to any tag to reference a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler respects any `using` statements when it looks for a type described in the `cref` attribute.
 
-  - The \<summary> tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
+  - The `<summary>` tag is used by IntelliSense inside Visual Studio to display additional information about a type or member.
 
     > [!NOTE]
-    > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, the documentation file must be used together with reflection on the actual type or member.
+    > The XML file does not provide full information about the type and members (for example, it does not contain any type information). To get full information about a type or member, use the documentation file together with reflection on the actual type or member.
 
 ## See also
 

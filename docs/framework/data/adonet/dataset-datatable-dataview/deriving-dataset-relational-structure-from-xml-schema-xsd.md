@@ -11,19 +11,19 @@ This section provides an overview of how the relational schema of a `DataSet` is
  The following example demonstrates an XML Schema where `customers` is the child element of the `MyDataSet` element, which is a **DataSet** element.  
   
 ```xml  
-<xs:schema id="SomeID"   
-            xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="SomeID"
+            xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="MyDataSet" msdata:IsDataSet="true">  
      <xs:complexType>  
        <xs:choice maxOccurs="unbounded">  
-         <xs:element name="customers" >   
+         <xs:element name="customers" >
            <xs:complexType >  
              <xs:sequence>  
-               <xs:element name="CustomerID" type="xs:integer"   
+               <xs:element name="CustomerID" type="xs:integer"
                             minOccurs="0" />  
-               <xs:element name="CompanyName" type="xs:string"   
+               <xs:element name="CompanyName" type="xs:string"
                             minOccurs="0" />  
                <xs:element name="Phone" type="xs:string" />  
              </xs:sequence>  
@@ -49,9 +49,9 @@ Customers (CustomerID, CompanyName, Phone)
  In the following XML Schema, the **Schema** element has two element children, `InStateCustomers` and `OutOfStateCustomers`.  
   
 ```xml  
-<xs:schema id="SomeID"   
-            xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="SomeID"
+            xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="InStateCustomers" type="customerType" />  
    <xs:element name="OutOfStateCustomers" type="customerType" />  

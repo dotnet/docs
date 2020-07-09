@@ -7,7 +7,7 @@ ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
 This topic describes how to use the Windows Communication Foundation (WCF) management and diagnostics feature to troubleshoot a transactional application.  
   
 ## Performance Counters  
- WCF provides a standard set of performance counters for you to measure your transactional application's performance. For more information, see [Performance Counters](../../../../docs/framework/wcf/diagnostics/performance-counters/index.md).  
+ WCF provides a standard set of performance counters for you to measure your transactional application's performance. For more information, see [Performance Counters](../diagnostics/performance-counters/index.md).  
   
  Performance counters are scoped to three different levels: service, endpoint, and operation, as described in the following tables.  
   
@@ -39,7 +39,7 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
 |Transactions Flowed Per Second|The number of transactions that flowed to operations at this endpoint within each second. This counter is incremented any time a transaction is present in the message that is sent to the endpoint.|  
   
 ## Windows Management Instrumentation  
- WCF exposes inspection data of a service at run time through a WCF Windows Management Instrumentation (WMI) provider. For more information about accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ WCF exposes inspection data of a service at run time through a WCF Windows Management Instrumentation (WMI) provider. For more information about accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../diagnostics/wmi/index.md).  
   
  A number of read-only WMI properties indicate the applied transaction settings for a service. The following tables list all of these settings.  
   
@@ -83,11 +83,11 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
   
 - Standard WCF tracing  
   
-     This type of tracing is the same as tracing any WCF application. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).  
+     This type of tracing is the same as tracing any WCF application. For more information, see [Configuring Tracing](../diagnostics/tracing/configuring-tracing.md).  
   
 - WS-AtomicTransaction tracing  
   
-     WS-AtomicTransaction tracing can be enabled by using the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md). Such tracing provides insight into the state of transactions and participants within a system. To also enable internal Service Model tracing, you can set the `HKLM\SOFTWARE\Microsoft\WSAT\3.0\ServiceModelDiagnosticTracing` registry key to a valid value of the <xref:System.Diagnostics.SourceLevels> enumeration. You can enable message logging in the same way as other WCF applications.  
+     WS-AtomicTransaction tracing can be enabled by using the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md). Such tracing provides insight into the state of transactions and participants within a system. To also enable internal Service Model tracing, you can set the `HKLM\SOFTWARE\Microsoft\WSAT\3.0\ServiceModelDiagnosticTracing` registry key to a valid value of the <xref:System.Diagnostics.SourceLevels> enumeration. You can enable message logging in the same way as other WCF applications.  
   
 - `System.Transactions` tracing  
   
@@ -116,6 +116,6 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
   
 ## See also
 
-- [Administration and Diagnostics](../../../../docs/framework/wcf/diagnostics/index.md)
-- [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
-- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [Administration and Diagnostics](../diagnostics/index.md)
+- [Configuring Tracing](../diagnostics/tracing/configuring-tracing.md)
+- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

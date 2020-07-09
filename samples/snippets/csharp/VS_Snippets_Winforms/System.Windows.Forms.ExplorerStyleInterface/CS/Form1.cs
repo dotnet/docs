@@ -19,7 +19,7 @@ namespace ExplorerStyleInterface
 		private ColumnHeader typeColumn;
 		private ColumnHeader modifiedColumn;
         private ListView listView1;
-    
+
 		//<snippet2>
 		public Form1()
 		{
@@ -29,7 +29,7 @@ namespace ExplorerStyleInterface
 		//</snippet2>
 		//<snippet3>
 		void treeView1_NodeMouseClick(object sender,
-			TreeNodeMouseClickEventArgs e) 
+			TreeNodeMouseClickEventArgs e)
 		{
 			TreeNode newSelected = e.Node;
 			listView1.Items.Clear();
@@ -41,8 +41,8 @@ namespace ExplorerStyleInterface
 			{
 				item = new ListViewItem(dir.Name, 0);
 				subItems = new ListViewItem.ListViewSubItem[]
-                    {new ListViewItem.ListViewSubItem(item, "Directory"), 
-                     new ListViewItem.ListViewSubItem(item, 
+                    {new ListViewItem.ListViewSubItem(item, "Directory"),
+                     new ListViewItem.ListViewSubItem(item,
 						dir.LastAccessTime.ToShortDateString())};
 				item.SubItems.AddRange(subItems);
 				listView1.Items.Add(item);
@@ -51,8 +51,8 @@ namespace ExplorerStyleInterface
 			{
 				item = new ListViewItem(file.Name, 1);
 				subItems = new ListViewItem.ListViewSubItem[]
-                    { new ListViewItem.ListViewSubItem(item, "File"), 
-                     new ListViewItem.ListViewSubItem(item, 
+                    { new ListViewItem.ListViewSubItem(item, "File"),
+                     new ListViewItem.ListViewSubItem(item,
 						file.LastAccessTime.ToShortDateString())};
 
 				item.SubItems.AddRange(subItems);
@@ -62,7 +62,7 @@ namespace ExplorerStyleInterface
 			listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 		}
 		//</snippet3>
-        
+
 	//<snippet1>
         private void PopulateTreeView()
         {
@@ -78,7 +78,7 @@ namespace ExplorerStyleInterface
             }
         }
 
-        private void GetDirectories(DirectoryInfo[] subDirs, 
+        private void GetDirectories(DirectoryInfo[] subDirs,
 			TreeNode nodeToAddTo)
         {
             TreeNode aNode;
@@ -119,27 +119,27 @@ namespace ExplorerStyleInterface
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
 			this.SuspendLayout();
-			// 
+			//
 			// splitContainer1
-			// 
+			//
 			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.splitContainer1.Location = new System.Drawing.Point(0, 0);
 			this.splitContainer1.Name = "splitContainer1";
-			// 
+			//
 			// Panel1
-			// 
+			//
 			this.splitContainer1.Panel1.Controls.Add(this.treeView1);
-			// 
+			//
 			// Panel2
-			// 
+			//
 			this.splitContainer1.Panel2.Controls.Add(this.listView1);
 			this.splitContainer1.Size = new System.Drawing.Size(492, 466);
 			this.splitContainer1.SplitterDistance = 166;
 			this.splitContainer1.TabIndex = 0;
 			this.splitContainer1.Text = "splitContainer1";
-			// 
+			//
 			// treeView1
-			// 
+			//
 			this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.treeView1.ImageList = this.imageList1;
 			this.treeView1.Location = new System.Drawing.Point(0, 0);
@@ -147,18 +147,18 @@ namespace ExplorerStyleInterface
 			this.treeView1.Size = new System.Drawing.Size(166, 466);
 			this.treeView1.TabIndex = 0;
 			//<snippet5>
-			this.treeView1.NodeMouseClick += 
+			this.treeView1.NodeMouseClick +=
 				new TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
 			//</snippet5>			
-		 
+		
 			// imageList1
-			// 
+			//
 			this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
 			this.imageList1.Images.SetKeyName(0, "FOLDER.ICO");
 			this.imageList1.Images.SetKeyName(1, "DOC.ICO");
-			// 
+			//
 			// listView1
-			// 
+			//
 			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.typeColumn,
@@ -170,24 +170,24 @@ namespace ExplorerStyleInterface
 			this.listView1.SmallImageList = this.imageList1;
 			this.listView1.TabIndex = 0;
 			this.listView1.View = System.Windows.Forms.View.Details;
-			// 
+			//
 			// nameColumn
-			// 
+			//
 			this.nameColumn.Text = "Name";
 			this.nameColumn.Width = 82;
-			// 
+			//
 			// typeColumn
-			// 
+			//
 			this.typeColumn.Text = "Type";
 			this.typeColumn.Width = 78;
-			// 
+			//
 			// modifiedColumn
-			// 
+			//
 			this.modifiedColumn.Text = "Last Modified";
 			this.modifiedColumn.Width = 109;
-			// 
+			//
 			// Form1
-			// 
+			//
 			this.ClientSize = new System.Drawing.Size(492, 466);
 			this.Controls.Add(this.splitContainer1);
 			this.Name = "Form1";

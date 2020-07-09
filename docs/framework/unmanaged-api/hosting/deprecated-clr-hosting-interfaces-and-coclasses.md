@@ -15,12 +15,12 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  IAppDomainSetup  
  Provides methods for the host to configure an <xref:System.AppDomain>.  
   
- [ICeeFileGen Class](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md)  
+ [ICeeFileGen Class](iceefilegen-class.md)  
  (Deprecated) Provides functionality for creating a native portable executable (PE) file.  
   
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)  
+ [ICorRuntimeHost Interface](icorruntimehost-interface.md)  
  Provides methods for the host to configure CLR settings.  
   
 ## Related Sections  
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
+ [CLR Hosting Interfaces](clr-hosting-interfaces.md)  
  Contains topics that describe the hosting interfaces provided with the .NET Framework version 2.0 and later versions.

@@ -24,11 +24,11 @@ Translates an HRESULT value to an appropriate error message for the specified cu
   
 ```cpp  
 HRESULT LoadStringRCEx (  
-    [in]  LCID    lcid,   
-    [in]  UINT    iResouceID,   
-    [out] LPWSTR  szBuffer,   
-    [in]  int     iMax,   
-    [in]  int     bQuiet,   
+    [in]  LCID    lcid,
+    [in]  UINT    iResouceID,
+    [out] LPWSTR  szBuffer,
+    [in]  int     iMax,
+    [in]  int     bQuiet,
     [out] int    *pcwchUsed  
 );  
 ```  
@@ -64,7 +64,7 @@ HRESULT LoadStringRCEx (
  If the method does not complete successfully, `szBuffer` contains an empty string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -75,5 +75,5 @@ HRESULT LoadStringRCEx (
 ## See also
 
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
-- [LoadStringRC Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrc-function.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [LoadStringRC Function](loadstringrc-function.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

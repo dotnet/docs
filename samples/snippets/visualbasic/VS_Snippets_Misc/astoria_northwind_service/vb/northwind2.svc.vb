@@ -50,8 +50,8 @@ Public Class Northwind2
 
         Try
             Dim selectedOrders = From order In context.Orders.Include("Order_Details") _
-                                     Where order.Customer.City = city _
-                                     Select order
+                                 Where order.Customer.City = city _
+                                 Select order
             Return selectedOrders
         Catch ex As Exception
             Throw New ApplicationException("An error occurred: {0}", ex)
@@ -134,20 +134,20 @@ Public Class Northwind2
         Dim context As NorthwindEntities = Me.CurrentDataSource
 
         Dim customerNames = From cust In context.Customers _
-        Order By cust.ContactName _
-        Select cust.ContactName
+                            Order By cust.ContactName _
+                            Select cust.ContactName
 
         Return customerNames
     End Function
 
     <WebGet()>
     Public Function GetCustomerNames() As IEnumerable(Of String)
-       ' Get the ObjectContext that is the data source for the service.
+        ' Get the ObjectContext that is the data source for the service.
         Dim context As NorthwindEntities = Me.CurrentDataSource
 
         Dim customerNames = From cust In context.Customers _
-        Order By cust.ContactName _
-        Select cust.ContactName
+                            Order By cust.ContactName _
+                            Select cust.ContactName
 
         Return customerNames
     End Function
@@ -172,7 +172,7 @@ Public Class Northwind2
 
                 Return selectedOrders.Where(Function(o) o.ShipRegion.Equals(state))
             End If
-        Catch ex As Exception            
+        Catch ex As Exception
             Throw New ApplicationException(String.Format( _
                 "An error occurred: {0}", ex.Message))
         End Try
@@ -195,7 +195,7 @@ Public Class Northwind2
         Try
             ' Note that this bypasses the service ops restrictions.
             context.AddToCustomers(clone)
-            context.SaveChanges()    
+            context.SaveChanges()
         Catch ex As Exception
 
             Throw New DataServiceException(

@@ -15,12 +15,12 @@ ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
   
  The <xref:System.Windows.Automation.TableItemPattern> control pattern is used to support child controls of containers that implement <xref:System.Windows.Automation.Provider.ITableProvider>. Access to individual cell functionality is provided by the required concurrent implementation of <xref:System.Windows.Automation.Provider.IGridItemProvider>. This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridItemProvider> with the distinction that any control implementing <xref:System.Windows.Automation.Provider.ITableItemProvider> must programmatically expose the relationship between the individual cell and its row and column information. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
   
 - For related grid item functionality, see [Implementing the UI Automation GridItem Control Pattern](implementing-the-ui-automation-griditem-control-pattern.md).  
   
-<a name="Required_Members_for_ITableItemProvider"></a>   
+<a name="Required_Members_for_ITableItemProvider"></a>
 ## Required Members for ITableItemProvider  
   
 |Required member|Member type|Notes|  
@@ -30,7 +30,7 @@ ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
   
  This control pattern has no associated properties or events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  This control pattern has no associated exceptions.  
   

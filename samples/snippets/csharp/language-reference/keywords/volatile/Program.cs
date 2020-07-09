@@ -60,7 +60,7 @@ namespace VolatileTests
             // Request that the worker thread stop itself.
             workerObject.RequestStop();
 
-            // Use the Thread.Join method to block the current thread 
+            // Use the Thread.Join method to block the current thread
             // until the object's thread terminates.
             workerThread.Join();
             Console.WriteLine("Main thread: worker thread has terminated.");

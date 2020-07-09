@@ -32,7 +32,7 @@ HRESULT IsRunning (
  [out] A pointer to a value that is `true` if the threads in the process are running freely; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

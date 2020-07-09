@@ -58,7 +58,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter a protected resource url as command line parameter:" );
       Console::WriteLine( "Example:" );
-      Console::WriteLine( "HttpWebResponse_GetResponseHeader http://www.microsoft.com/net/" );
+      Console::WriteLine( "HttpWebResponse_GetResponseHeader http://dotnet.microsoft.com/" );
    }
    else
    {

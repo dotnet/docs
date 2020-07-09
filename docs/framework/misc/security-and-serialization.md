@@ -29,9 +29,9 @@ Because serialization can allow other code to see or modify object instance data
     ```  
   
     ```csharp  
-    [SecurityPermissionAttribute(SecurityAction.Demand,SerializationFormatter   
+    [SecurityPermissionAttribute(SecurityAction.Demand,SerializationFormatter
     =true)]  
-    public override void GetObjectData(SerializationInfo info,   
+    public override void GetObjectData(SerializationInfo info,
     StreamingContext context)  
     {  
     }  

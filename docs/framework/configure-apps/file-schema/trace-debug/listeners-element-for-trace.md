@@ -19,7 +19,7 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
 ## Syntax  
   
 ```xml  
-<listeners>   
+<listeners>
   <add>...</add>  
   <clear/>  
   <remove ... />  
@@ -62,14 +62,14 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
   <system.diagnostics>  
     <trace autoflush="true" indentsize="0">  
       <listeners>  
-        <add name="myListener"   
-          type="System.Diagnostics.TextWriterTraceListener,   
-            system, version=1.0.3300.0, Culture=neutral,   
-            PublicKeyToken=b77a5c561934e089"   
+        <add name="myListener"
+          type="System.Diagnostics.TextWriterTraceListener,
+            system, version=1.0.3300.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089"
           initializeData="c:\myListener.log" />  
         <add name="MyEventListener"  
-          type="System.Diagnostics.EventLogTraceListener,   
-            system, version=1.0.3300.0, Culture=neutral,   
+          type="System.Diagnostics.EventLogTraceListener,
+            system, version=1.0.3300.0, Culture=neutral,
             PublicKeyToken=b77a5c561934e089"  
           initializeData="MyConfigEventLog"/>  
       </listeners>  

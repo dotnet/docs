@@ -23,7 +23,7 @@ Modifies the specified `ExportedType` metadata structure.
   
 ```cpp  
 HRESULT SetExportedTypeProps (  
-    [in] mdExportedType   ct,   
+    [in] mdExportedType   ct,
     [in] mdToken          tkImplementation,  
     [in] mdTypeDef        tkTypeDef,  
     [in] DWORD            dwExportedTypeFlags  
@@ -44,10 +44,10 @@ HRESULT SetExportedTypeProps (
  [in] A bitwise combination of values that specify attributes of the type.  
   
 ## Remarks  
- To create an `ExportedType` metadata structure, use the [IMetaDataAssemblyEmit::DefineExportedType](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md) method.  
+ To create an `ExportedType` metadata structure, use the [IMetaDataAssemblyEmit::DefineExportedType](imetadataassemblyemit-defineexportedtype-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -57,4 +57,4 @@ HRESULT SetExportedTypeProps (
   
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

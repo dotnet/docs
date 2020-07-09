@@ -1,5 +1,6 @@
 ---
 title: "How to: Set Headers in the Client Request (WCF Data Services)"
+description: Learn how to handle the SendingRequest event to add a new header to the request message before it is sent to the data service in WCF Data Services.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -19,7 +20,7 @@ When you use the WCF Data Services client library to access a data service that 
 > [!NOTE]
 > When a data service requires you to manually set the message header for every request, consider registering the handler for the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event by overriding the `OnContextCreated` partial method in the entity container that represents the data service, which in this case is `NorthwindEntities`.  
   
-[!code-csharp[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#registerheadersquery)]   
+[!code-csharp[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#registerheadersquery)]
 [!code-vb[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#registerheadersquery)]
   
 ## Example  

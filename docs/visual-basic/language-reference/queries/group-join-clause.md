@@ -34,11 +34,11 @@ Group Join element [As type] In collection _
 |`expressionList`|Required. One or more expressions that identify how the groups of elements from the collection are aggregated. To identify a member name for the grouped results, use the `Group` keyword (`<alias> = Group`). You can also include aggregate functions to apply to the group.|  
   
 ## Remarks  
- The `Group Join` clause combines two collections based on matching key values from the collections being joined. The resulting collection can contain a member that references a collection of elements from the second collection that match the key value from the first collection. You can also specify aggregate functions to apply to the grouped elements from the second collection. For information about aggregate functions, see [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md).  
+ The `Group Join` clause combines two collections based on matching key values from the collections being joined. The resulting collection can contain a member that references a collection of elements from the second collection that match the key value from the first collection. You can also specify aggregate functions to apply to the grouped elements from the second collection. For information about aggregate functions, see [Aggregate Clause](aggregate-clause.md).  
   
  Consider, for example, a collection of managers and a collection of employees. Elements from both collections have a ManagerID property that identifies the employees that report to a particular manager. The results from a join operation would contain a result for each manager and employee with a matching ManagerID value. The results from a `Group Join` operation would contain the complete list of managers. Each manager result would have a member that referenced the list of employees that were a match for the specific manager.  
   
- The collection resulting from a `Group Join` operation can contain any combination of values from the collection identified in the `From` clause and the expressions identified in the `Into` clause of the `Group Join` clause. For more information about valid expressions for the `Into` clause, see [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md).  
+ The collection resulting from a `Group Join` operation can contain any combination of values from the collection identified in the `From` clause and the expressions identified in the `Into` clause of the `Group Join` clause. For more information about valid expressions for the `Into` clause, see [Aggregate Clause](aggregate-clause.md).  
   
  A `Group Join` operation will return all results from the collection identified on the left side of the `Group Join` operator. This is true even if there are no matches in the collection being joined. This is like a `LEFT OUTER JOIN` in SQL.  
   
@@ -51,10 +51,10 @@ Group Join element [As type] In collection _
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Queries](../../../visual-basic/language-reference/queries/index.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
-- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
-- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)
-- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
-- [Group By Clause](../../../visual-basic/language-reference/queries/group-by-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Join Clause](join-clause.md)
+- [Where Clause](where-clause.md)
+- [Group By Clause](group-by-clause.md)

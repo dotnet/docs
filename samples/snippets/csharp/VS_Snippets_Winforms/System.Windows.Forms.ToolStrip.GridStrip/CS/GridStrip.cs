@@ -13,9 +13,9 @@ namespace GridStripLib
     // <snippet2>
     // The following class implements a sliding-tile puzzle.
     // The GridStrip control is a custom ToolStrip that arranges
-    // its ToolStripButton controls in a grid layout. There is 
+    // its ToolStripButton controls in a grid layout. There is
     // one empty cell, into which the user can slide an adjacent
-    // tile with a drag-and-drop operation. Tiles that are eligible 
+    // tile with a drag-and-drop operation. Tiles that are eligible
     // for moving are highlighted.
     public class GridStrip : ToolStrip
     {
@@ -43,14 +43,14 @@ namespace GridStripLib
         private readonly int columns = 5;
 
         // The one-time initialzation behavior is enforced
-        // with this field. For more information, see the 
+        // with this field. For more information, see the
         // OnPaint method.
         private bool firstTime = false;
 
         // This is a required by the Windows Forms designer.
         private System.ComponentModel.IContainer components;
- 
-        // The default constructor.  
+
+        // The default constructor.
         public GridStrip()
         {
             this.InitializeComponent();
@@ -58,7 +58,7 @@ namespace GridStripLib
             this.InitializeTableLayoutSettings();
         }
 
-        // This property exposes the empty cell to the 
+        // This property exposes the empty cell to the
         // GridStripRenderer class.
         internal ToolStripButton EmptyCell
         {
@@ -68,7 +68,7 @@ namespace GridStripLib
             }
         }
 
-        // This utility method initializes the TableLayoutPanel 
+        // This utility method initializes the TableLayoutPanel
         // which contains the ToolStripButton controls.
         private void InitializeTableLayoutSettings()
         {
@@ -119,7 +119,7 @@ namespace GridStripLib
         // be fully layed out when it is renders, so this
         // initialization code cannot be placed in the
         // GridStrip constructor. By the time the Paint
-        // event is raised, the control layout has been 
+        // event is raised, the control layout has been
         // completed, so the GridStripRenderer can paint
         // correctly. This one-time initialization is
         // implemented with the firstTime field.
@@ -137,8 +137,8 @@ namespace GridStripLib
             }
         }
 
-        // This utility method changes the ToolStripButton control 
-        // positions in the TableLayoutPanel. This scrambles the 
+        // This utility method changes the ToolStripButton control
+        // positions in the TableLayoutPanel. This scrambles the
         // buttons to initialize the puzzle.
         private void ScrambleButtons()
         {
@@ -148,24 +148,24 @@ namespace GridStripLib
             while ( (i != lastElement ) &&
                     (lastElement - i > 1) )
             {
-                TableLayoutPanelCellPosition pos1 = 
+                TableLayoutPanelCellPosition pos1 =
                     this.tableSettings.GetCellPosition(this.Items[i]);
 
-                TableLayoutPanelCellPosition pos2 = 
+                TableLayoutPanelCellPosition pos2 =
                     this.tableSettings.GetCellPosition(this.Items[lastElement]);
 
                 this.tableSettings.SetCellPosition(
-                    this.Items[i++], 
+                    this.Items[i++],
                     pos2);
 
                 this.tableSettings.SetCellPosition(
-                    this.Items[lastElement--], 
+                    this.Items[lastElement--],
                     pos1);
             }
         }
 
-        // This method defines the MouseDown event behavior. 
-        // If the user has clicked on a valid drag source, 
+        // This method defines the MouseDown event behavior.
+        // If the user has clicked on a valid drag source,
         // the drag operation starts.
         protected override void OnMouseDown(MouseEventArgs mea)
         {
@@ -182,7 +182,7 @@ namespace GridStripLib
             }
         }
 
-        // This method defines the MouseMove event behavior. 
+        // This method defines the MouseMove event behavior.
         protected override void OnMouseMove(MouseEventArgs mea)
         {
             base.OnMouseMove(mea);
@@ -190,21 +190,21 @@ namespace GridStripLib
             // Is a drag operation pending?
             if (this.dragButton != null)
             {
-                // A drag operation is pending. Call DoDragDrop to 
+                // A drag operation is pending. Call DoDragDrop to
                 // determine the disposition of the operation.
                 DragDropEffects dropEffect = this.DoDragDrop(
-                    new DataObject(this.dragButton), 
+                    new DataObject(this.dragButton),
                     DragDropEffects.Move);
             }
         }
 
         // <snippet3>
-        // This method defines the DragOver event behavior. 
+        // This method defines the DragOver event behavior.
         protected override void OnDragOver(DragEventArgs dea)
         {
             base.OnDragOver(dea);
 
-            // Get the ToolStripButton control 
+            // Get the ToolStripButton control
             // at the given mouse position.
             Point p = new Point(dea.X, dea.Y);
             ToolStripButton item = this.GetItemAt(
@@ -220,7 +220,7 @@ namespace GridStripLib
         }
         // </snippet3>
 
-        // This method defines the DragDrop event behavior. 
+        // This method defines the DragDrop event behavior.
         protected override void OnDragDrop(DragEventArgs dea)
         {
             base.OnDragDrop(dea);
@@ -234,17 +234,17 @@ namespace GridStripLib
                 // and the empty cell button.
 
                 // Get the cell of the control to move.
-                TableLayoutPanelCellPosition sourcePos = 
+                TableLayoutPanelCellPosition sourcePos =
                     tableSettings.GetCellPosition(this.dragButton);
 
                 // Get the cell of the emptyCellButton.
-                TableLayoutPanelCellPosition dropPos = 
+                TableLayoutPanelCellPosition dropPos =
                     tableSettings.GetCellPosition(this.emptyCellButton);
 
                 // Move the control to the empty cell.
                 tableSettings.SetCellPosition(this.dragButton, dropPos);
 
-                // Set the position of the empty cell to 
+                // Set the position of the empty cell to
                 // that of the previously occupied cell.
                 tableSettings.SetCellPosition(this.emptyCellButton, sourcePos);
 
@@ -253,7 +253,7 @@ namespace GridStripLib
             }
         }
 
-        // This method defines the DragLeave event behavior. 
+        // This method defines the DragLeave event behavior.
         // If the mouse leaves the client area of the GridStrip
         // control, the drag operation is canceled.
         protected override void OnDragLeave(EventArgs e)
@@ -264,7 +264,7 @@ namespace GridStripLib
             this.dragButton = null;
         }
 
-        // This method defines the ueryContinueDrag event behavior. 
+        // This method defines the ueryContinueDrag event behavior.
         // If the mouse leaves the client area of the GridStrip
         // control, the drag operation is canceled.
         protected override void OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)
@@ -276,7 +276,7 @@ namespace GridStripLib
 
             // If the mouse position is outside the GridStrip control's
             // client area, cancel the drag operation. Be sure to
-            // transform the mouse's screen coordinates to client coordinates. 
+            // transform the mouse's screen coordinates to client coordinates.
             if (!this.ClientRectangle.Contains(mousePos))
             {
                 qcdevent.Action = DragAction.Cancel;
@@ -284,14 +284,14 @@ namespace GridStripLib
         }
 
         // This utility method determines if a button
-        // is positioned relative to the empty cell 
+        // is positioned relative to the empty cell
         // such that it can be dragged into the empty cell.
         private bool IsValidDragSource(ToolStripButton b)
         {
-            TableLayoutPanelCellPosition sourcePos = 
+            TableLayoutPanelCellPosition sourcePos =
                 tableSettings.GetCellPosition(b);
 
-            TableLayoutPanelCellPosition emptyPos = 
+            TableLayoutPanelCellPosition emptyPos =
                 tableSettings.GetCellPosition(this.emptyCellButton);
 
             return (IsValidDragSource(sourcePos, emptyPos));
@@ -300,7 +300,7 @@ namespace GridStripLib
         // This utility method determines if a cell position
         // is adjacent to the empty cell.
         internal static bool IsValidDragSource(
-            TableLayoutPanelCellPosition sourcePos, 
+            TableLayoutPanelCellPosition sourcePos,
             TableLayoutPanelCellPosition emptyPos)
         {
             bool returnValue = false;
@@ -321,25 +321,25 @@ namespace GridStripLib
         // </snippet2>
 
         // <snippet10>
-        // This class implements a custom ToolStripRenderer for the 
-        // GridStrip control. It customizes three aspects of the 
-        // GridStrip control's appearance: GridStrip border, 
+        // This class implements a custom ToolStripRenderer for the
+        // GridStrip control. It customizes three aspects of the
+        // GridStrip control's appearance: GridStrip border,
         // ToolStripButton border, and ToolStripButton image.
         internal class GridStripRenderer : ToolStripRenderer
-        {   
+        {
             // The style of the empty cell's text.
             private static StringFormat style = new StringFormat();
 
-            // The thickness (width or height) of a 
+            // The thickness (width or height) of a
             // ToolStripButton control's border.
             static int borderThickness = 2;
 
-            // The main bitmap that is the source for the 
-            // subimagesthat are assigned to individual 
+            // The main bitmap that is the source for the
+            // subimagesthat are assigned to individual
             // ToolStripButton controls.
             private Bitmap bmp = null;
 
-            // The brush that paints the background of 
+            // The brush that paints the background of
             // the GridStrip control.
             private Brush backgroundBrush = null;
 
@@ -364,7 +364,7 @@ namespace GridStripLib
             // <snippet11>
             // This method initializes an individual ToolStripButton
             // control. It copies a subimage from the GridStripRenderer's
-            // main image, according to the position and size of 
+            // main image, according to the position and size of
             // the ToolStripButton.
             protected override void InitializeItem(ToolStripItem item)
             {
@@ -376,7 +376,7 @@ namespace GridStripLib
                 if ((item is ToolStripButton) &&
                     (item != gs.EmptyCell))
                 {
-                    // Copy the subimage from the appropriate 
+                    // Copy the subimage from the appropriate
                     // part of the main image.
                     Bitmap subImage = bmp.Clone(
                         item.Bounds,
@@ -390,7 +390,7 @@ namespace GridStripLib
             // </snippet11>
 
             // This utility method creates the main image that
-            // is the source for the subimages of the individual 
+            // is the source for the subimages of the individual
             // ToolStripButton controls.
             private void InitializeBitmap(ToolStrip toolStrip)
             {
@@ -404,9 +404,9 @@ namespace GridStripLib
                 {
                     // Draw smoothed lines.
                     g.SmoothingMode = SmoothingMode.AntiAlias;
-                    
-                    // Draw the image. In this case, it is 
-                    // a number of concentric ellipses. 
+
+                    // Draw the image. In this case, it is
+                    // a number of concentric ellipses.
                     for (int i = 0; i < toolStrip.Size.Width; i += 8)
                     {
                         g.DrawEllipse(Pens.Blue, 0, 0, i, i);
@@ -437,7 +437,7 @@ namespace GridStripLib
                 base.OnRenderToolStripBackground(e);
 
                 // This late initialization is a workaround. The gradient
-                // depends on the bounds of the GridStrip control. The bounds 
+                // depends on the bounds of the GridStrip control. The bounds
                 // are dependent on the layout engine, which hasn't fully
                 // performed layout by the time the Initialize method runs.
                 if (this.backgroundBrush == null)
@@ -452,7 +452,7 @@ namespace GridStripLib
 
                 // Paint the GridStrip control's background.
                 e.Graphics.FillRectangle(
-                    this.backgroundBrush, 
+                    this.backgroundBrush,
                     e.AffectedBounds);
             }
             // </snippet13>
@@ -473,18 +473,18 @@ namespace GridStripLib
 
                 // Calculate the rectangle around which the border is painted.
                 Rectangle imageRectangle = new Rectangle(
-                    borderThickness, 
-                    borderThickness, 
-                    e.Item.Width - 2 * borderThickness, 
+                    borderThickness,
+                    borderThickness,
+                    e.Item.Width - 2 * borderThickness,
                     e.Item.Height - 2 * borderThickness);
 
-                // If rendering the empty cell background, draw an 
+                // If rendering the empty cell background, draw an
                 // explanatory string, centered in the ToolStripButton.
                 if (gsb == gs.EmptyCell)
                 {
                     e.Graphics.DrawString(
                         "Drag to here",
-                        gsb.Font, 
+                        gsb.Font,
                         SystemBrushes.ControlDarkDark,
                         imageRectangle, style);
                 }
@@ -492,14 +492,14 @@ namespace GridStripLib
                 {
                     // If the button can be a drag source, paint its border red.
                     // otherwise, paint its border a dark color.
-                    Brush b = gs.IsValidDragSource(gsb) ? b = 
+                    Brush b = gs.IsValidDragSource(gsb) ? b =
                         Brushes.Red : SystemBrushes.ControlDarkDark;
 
                     // Draw the top segment of the border.
                     Rectangle borderSegment = new Rectangle(
-                        0, 
-                        0, 
-                        e.Item.Width, 
+                        0,
+                        0,
+                        e.Item.Width,
                         imageRectangle.Top);
                     g.FillRectangle(b, borderSegment);
 
@@ -538,9 +538,9 @@ namespace GridStripLib
         {
             this.components = new System.ComponentModel.Container();
             this.SuspendLayout();
-            // 
+            //
             // GridStrip
-            // 
+            //
             this.AllowDrop = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CanOverflow = false;

@@ -10,7 +10,7 @@ public class Service1: System.ServiceProcess.ServiceBase
 	{
 		//<Snippet6>
 		System.ServiceProcess.ServiceBase[] ServicesToRun;
-		ServicesToRun = new System.ServiceProcess.ServiceBase[] 
+		ServicesToRun = new System.ServiceProcess.ServiceBase[]
 			{ new Service1() };
 		System.ServiceProcess.ServiceBase.Run(ServicesToRun);
 		//</Snippet6>
@@ -24,7 +24,7 @@ public class MyNewService: System.ServiceProcess.ServiceBase
 	{
 		System.ServiceProcess.ServiceBase[] ServicesToRun;
 		// Change the following line to match.
-		ServicesToRun = new System.ServiceProcess.ServiceBase[] 
+		ServicesToRun = new System.ServiceProcess.ServiceBase[]
 			{ new MyNewService() };
 		System.ServiceProcess.ServiceBase.Run(ServicesToRun);
 	}
@@ -47,8 +47,8 @@ public class MyNewService: System.ServiceProcess.ServiceBase
 	{
 		InitializeComponent();
 		eventLog1 = new System.Diagnostics.EventLog();
-		if (!System.Diagnostics.EventLog.SourceExists("MySource")) 
-		{         
+		if (!System.Diagnostics.EventLog.SourceExists("MySource"))
+		{
 			System.Diagnostics.EventLog.CreateEventSource(
 				"MySource","MyNewLog");
 		}
@@ -75,13 +75,13 @@ public class MyNewService: System.ServiceProcess.ServiceBase
 	protected override void OnContinue()
 	{
 		eventLog1.WriteEntry("In OnContinue.");
-	}  
+	}
 	//</Snippet5>
 }
 
 //*******************************************************************
 //<Snippet7>
-public class UserService1 : System.ServiceProcess.ServiceBase  
+public class UserService1 : System.ServiceProcess.ServiceBase
 {
 }
 //</Snippet7>
@@ -92,7 +92,7 @@ namespace WrapUserService1
 	public class UserService1:System.ServiceProcess.ServiceBase
 	{
 		//<Snippet8>
-		public UserService1() 
+		public UserService1()
 		{
 			this.ServiceName = "MyService2";
 			this.CanStop = true;
@@ -133,7 +133,7 @@ class UserService2:System.ServiceProcess.ServiceBase
 		//</Snippet17>
 		// create an event source, specifying the name of a log that
 		// does not currently exist to create a new, custom log
-		if (!System.Diagnostics.EventLog.SourceExists("MySource")) 
+		if (!System.Diagnostics.EventLog.SourceExists("MySource"))
 		{
 			System.Diagnostics.EventLog.CreateEventSource(
 				"MySource","MyLog");

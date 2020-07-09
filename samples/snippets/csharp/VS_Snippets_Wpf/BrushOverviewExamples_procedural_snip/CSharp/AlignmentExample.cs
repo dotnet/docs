@@ -34,17 +34,17 @@ namespace Microsoft.Samples.BrushExamples
             myRectangle.Margin = new Thickness(0,5,0,0);
 
             // Load the image.
-            BitmapImage theImage = 
+            BitmapImage theImage =
                 new BitmapImage(
-                    new Uri("sampleImages\\triangle.jpg", UriKind.Relative));   
+                    new Uri("sampleImages\\triangle.jpg", UriKind.Relative));
             ImageBrush myImageBrush = new ImageBrush(theImage);
-            
+
             // Configure the brush so that it
             // doesn't stretch its image to fill
             // the rectangle.
-            myImageBrush.Stretch = Stretch.None;            
-            
-            // Align the tile to the rectangle's 
+            myImageBrush.Stretch = Stretch.None;
+
+            // Align the tile to the rectangle's
             // top left corner.
             myImageBrush.AlignmentX = AlignmentX.Left;
             myImageBrush.AlignmentY = AlignmentY.Top;
@@ -52,8 +52,8 @@ namespace Microsoft.Samples.BrushExamples
             // Use the ImageBrush to paint the rectangle's background.
             myRectangle.Fill = myImageBrush;
             // </SnippetGraphicsMMTopLeftAlignmentExample>
-            
-            mainPanel.Children.Add(myRectangle);            
+
+            mainPanel.Children.Add(myRectangle);
         }
     }
 }

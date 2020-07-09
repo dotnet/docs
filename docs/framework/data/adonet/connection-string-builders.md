@@ -1,5 +1,6 @@
 ---
 title: "Connection String Builders"
+description: Learn about the connection string builder classes used for different providers in ADO.NET, all of which inherit from DbConnectionStringBuilder.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -61,7 +62,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
 ```xml  
 <connectionStrings>  
   <clear/>  
-  <add name="partialConnectString"   
+  <add name="partialConnectString"
     connectionString="Initial Catalog=Northwind;"  
     providerName="System.Data.SqlClient" />  
 </connectionStrings>  

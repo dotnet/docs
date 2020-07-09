@@ -20,4 +20,4 @@ Provides properties for accessing the current local time and Universal Coordinat
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

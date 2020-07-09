@@ -19,7 +19,7 @@ topic_type:
 # ISymUnmanagedBinder::GetReaderForFile Method
 Given a metadata interface and a file name, returns the correct [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface that will read the debugging symbols associated with the module.  
   
- This method will open the program database (PDB) file only if it is next to the executable file. This change has been made for security purposes. If you need a more extensive search for the PDB file, use the [ISymUnmanagedBinder2::GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) method.  
+ This method will open the program database (PDB) file only if it is next to the executable file. This change has been made for security purposes. If you need a more extensive search for the PDB file, use the [ISymUnmanagedBinder2::GetReaderForFile2](isymunmanagedbinder2-getreaderforfile2-method.md) method.  
   
 ## Syntax  
   
@@ -52,5 +52,5 @@ HRESULT GetReaderForFile(
   
 ## See also
 
-- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)
-- [GetReaderForFile2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md)
+- [ISymUnmanagedBinder Interface](isymunmanagedbinder-interface.md)
+- [GetReaderForFile2 Method](isymunmanagedbinder2-getreaderforfile2-method.md)

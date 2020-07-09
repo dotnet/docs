@@ -39,7 +39,7 @@ namespace operators
         {
             // <SnippetRefAssignment>
             void Display(double[] s) => Console.WriteLine(string.Join(" ", s));
-            
+
             double[] arr = { 0.0, 0.0, 0.0 };
             Display(arr);
 

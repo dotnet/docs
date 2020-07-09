@@ -7,7 +7,7 @@ public class Example
       // <Snippet4>
       DayOfWeek thisDay = DayOfWeek.Monday;
       string[] formatStrings = {"G", "F", "D", "X"};
-      
+
       foreach (string formatString in formatStrings)
          Console.WriteLine(thisDay.ToString(formatString));
       // The example displays the following output:

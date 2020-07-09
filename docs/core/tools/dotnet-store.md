@@ -14,7 +14,13 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet store -m|--manifest -f|--framework -r|--runtime  [--framework-version] [-h|--help] [--output] [--skip-optimization] [--skip-symbols] [-v|--verbosity] [--working-dir]
+dotnet store -m|--manifest <PATH_TO_MANIFEST_FILE>
+    -f|--framework <FRAMEWORK_VERSION> -r|--runtime <RUNTIME_IDENTIFIER>
+    [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
+    [--skip-optimization] [--skip-symbols] [-v|--verbosity <LEVEL>]
+    [--working-dir <WORKING_DIRECTORY>]
+
+dotnet store -h|--help
 ```
 
 ## Description

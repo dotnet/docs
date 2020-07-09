@@ -83,7 +83,7 @@ namespace EventSample
             get {return snoozePressed;}
             set {snoozePressed = value;}
         }
-        
+
         // The event member that is of type AlarmEventHandler.
         //
         public event AlarmEventHandler Alarm;

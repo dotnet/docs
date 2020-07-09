@@ -41,7 +41,7 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWi
 // ***Bundle the processing steps for a website into one async method.  
 async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
 {  
-    // GetAsync returns a Task<HttpResponseMessage>.   
+    // GetAsync returns a Task<HttpResponseMessage>.
     HttpResponseMessage response = await client.GetAsync(url, ct);  
   
     // Retrieve the website contents from the HttpResponseMessage.  
@@ -68,14 +68,14 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
 3. Call `ToArray` to execute the query and start the tasks. The application of the `WhenAny` method in the next step would execute the query and start the tasks without using `ToArray`, but other methods might not. The safest practice is to force execution of the query explicitly.  
   
     ```csharp  
-    // ***Use ToArray to execute the query and start the download tasks.   
+    // ***Use ToArray to execute the query and start the download tasks.
     Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
     ```  
   
 4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
   
     ```csharp  
-    // ***Call WhenAny and then await the result. The task that finishes   
+    // ***Call WhenAny and then await the result. The task that finishes
     // first is assigned to firstFinishedTask.  
     Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
     ```  
@@ -182,8 +182,8 @@ namespace CancelAfterOneTask
             // ***Comment out or delete the loop.  
             //foreach (var url in urlList)  
             //{  
-            //    // GetAsync returns a Task<HttpResponseMessage>.   
-            //    // Argument ct carries the message if the Cancel button is chosen.   
+            //    // GetAsync returns a Task<HttpResponseMessage>.
+            //    // Argument ct carries the message if the Cancel button is chosen.
             //    // ***Note that the Cancel button can cancel all remaining downloads.  
             //    HttpResponseMessage response = await client.GetAsync(url, ct);  
   
@@ -198,17 +198,17 @@ namespace CancelAfterOneTask
             IEnumerable<Task<int>> downloadTasksQuery =  
                 from url in urlList select ProcessURLAsync(url, client, ct);  
   
-            // ***Use ToArray to execute the query and start the download tasks.   
+            // ***Use ToArray to execute the query and start the download tasks.
             Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
   
-            // ***Call WhenAny and then await the result. The task that finishes   
+            // ***Call WhenAny and then await the result. The task that finishes
             // first is assigned to firstFinishedTask.  
             Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
   
             // ***Cancel the rest of the downloads. You just want the first one.  
             cts.Cancel();  
   
-            // ***Await the first completed task and display the results.   
+            // ***Await the first completed task and display the results.
             // Run the program several times to demonstrate that different  
             // websites can finish first.  
             var length = await firstFinishedTask;  
@@ -218,7 +218,7 @@ namespace CancelAfterOneTask
         // ***Bundle the processing steps for a website into one async method.  
         async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
         {  
-            // GetAsync returns a Task<HttpResponseMessage>.   
+            // GetAsync returns a Task<HttpResponseMessage>.
             HttpResponseMessage response = await client.GetAsync(url, ct);  
   
             // Retrieve the website contents from the HttpResponseMessage.  
@@ -230,8 +230,8 @@ namespace CancelAfterOneTask
         // Add a method that creates a list of web addresses.  
         private List<string> SetUpURLList()  
         {  
-            List<string> urls = new List<string>   
-            {   
+            List<string> urls = new List<string>
+            {
                 "https://msdn.microsoft.com",  
                 "https://msdn.microsoft.com/library/hh290138.aspx",  
                 "https://msdn.microsoft.com/library/hh290140.aspx",  

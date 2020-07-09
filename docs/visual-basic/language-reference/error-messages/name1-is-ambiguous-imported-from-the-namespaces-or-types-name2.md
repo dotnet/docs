@@ -21,6 +21,6 @@ You have provided a name that is ambiguous and therefore conflicts with another 
   
 ## See also
 
-- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
-- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../statements/imports-statement-net-namespace-and-type.md)
+- [Namespaces in Visual Basic](../../programming-guide/program-structure/namespaces.md)
+- [Namespace Statement](../statements/namespace-statement.md)

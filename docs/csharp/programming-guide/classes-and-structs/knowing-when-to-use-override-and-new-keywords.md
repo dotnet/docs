@@ -174,7 +174,7 @@ namespace OverrideAndNew
             // Derived - Method1  
             // Derived - Method2  
   
-            // The following two calls produce different results, depending   
+            // The following two calls produce different results, depending
             // on whether override (Method1) or new (Method2) is used.  
             bcdc.Method1();  
             bcdc.Method2();  
@@ -270,7 +270,7 @@ public static void TestCars1()
   
     // Notice the output from this test case. The new modifier is  
     // used in the definition of ShowDetails in the ConvertibleCar  
-    // class.    
+    // class.
   
     ConvertibleCar car2 = new ConvertibleCar();  
     car2.DescribeCar();  
@@ -306,7 +306,7 @@ public static void TestCars2()
     System.Console.WriteLine("\nTestCars2");  
     System.Console.WriteLine("----------");  
   
-    var cars = new List<Car> { new Car(), new ConvertibleCar(),   
+    var cars = new List<Car> { new Car(), new ConvertibleCar(),
         new Minivan() };  
   
     foreach (var car in cars)  
@@ -413,7 +413,7 @@ namespace OverrideAndNew2
   
             // Notice the output from this test case. The new modifier is  
             // used in the definition of ShowDetails in the ConvertibleCar  
-            // class.    
+            // class.
             ConvertibleCar car2 = new ConvertibleCar();  
             car2.DescribeCar();  
             System.Console.WriteLine("----------");  
@@ -440,7 +440,7 @@ namespace OverrideAndNew2
             System.Console.WriteLine("\nTestCars2");  
             System.Console.WriteLine("----------");  
   
-            var cars = new List<Car> { new Car(), new ConvertibleCar(),   
+            var cars = new List<Car> { new Car(), new ConvertibleCar(),
                 new Minivan() };  
   
             foreach (var car in cars)  

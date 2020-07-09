@@ -22,10 +22,10 @@ End Sub
   
 ```csharp  
 // Add the event handler to the button's Paint event.  
-MyButton.Paint +=   
+MyButton.Paint +=
    new System.Windows.Forms.PaintEventHandler (this.MyPaint);  
 // Create the custom painting method.  
-protected void MyPaint (object sender,   
+protected void MyPaint (object sender,
 System.Windows.Forms.PaintEventArgs e)  
 {  
    // Additional rendering code goes here.  

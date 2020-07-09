@@ -10,7 +10,7 @@ public class Example
        MatchCollection matches;
        List<string> results = new List<string>();
        List<int> matchposition = new List<int>();
-   
+
        // Create a new Regex object and define the regular expression.
        Regex r = new Regex("abc");
        // Use the Matches method to find all matches in the input string.
@@ -25,8 +25,8 @@ public class Example
        }
        // List the results.
        for (int ctr = 0; ctr < results.Count; ctr++)
-         Console.WriteLine("'{0}' found at position {1}.", 
-                           results[ctr], matchposition[ctr]);  
+         Console.WriteLine("'{0}' found at position {1}.",
+                           results[ctr], matchposition[ctr]);
    }
 }
 // The example displays the following output:

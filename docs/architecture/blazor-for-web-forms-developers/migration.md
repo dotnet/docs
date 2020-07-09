@@ -3,6 +3,7 @@ title: Migrate from ASP.NET Web Forms to Blazor
 description: Learn how to approach migrating an existing ASP.NET Web Forms app to Blazor.
 author: twsouthwick
 ms.author: tasou
+no-loc: [Blazor, WebAssembly]
 ms.date: 09/19/2019
 ---
 # Migrate from ASP.NET Web Forms to Blazor
@@ -120,7 +121,7 @@ public class Global : HttpApplication, IContainerProviderAccessor
     }
 
     /// <summary>
-    /// http://docs.autofac.org/en/latest/integration/webforms.html
+    /// https://autofaccn.readthedocs.io/en/latest/integration/webforms.html
     /// </summary>
     private void ConfigureContainer()
     {
@@ -279,7 +280,7 @@ For more information on bundling and minification, see [Bundle and minify static
 
 A page in a Web Forms app is a file with the *.aspx* extension. A Web Forms page can often be mapped to a component in Blazor. A Blazor component is authored in a file with the *.razor* extension. For the eShop project, five pages are converted to a Razor page.
 
-For example, the details view is comprised of three files in the Web Forms project: *Details.aspx*, *Details.aspx.cs*, and *Details.aspx.designer.cs*. When converting to Blazor, the code-behind and markup are combined into *Details.razor*. Razor compilation (equivalent to what's in *.designer.cs* files) is stored in the *obj* directory and aren't, by default, viewable in **Solution Explorer**. The Web Forms page consists of the following markup:
+For example, the details view comprises three files in the Web Forms project: *Details.aspx*, *Details.aspx.cs*, and *Details.aspx.designer.cs*. When converting to Blazor, the code-behind and markup are combined into *Details.razor*. Razor compilation (equivalent to what's in *.designer.cs* files) is stored in the *obj* directory and isn't, by default, viewable in **Solution Explorer**. The Web Forms page consists of the following markup:
 
 ```aspx-csharp
 <%@ Page Title="Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="eShopLegacyWebForms.Catalog.Details" %>
@@ -577,6 +578,7 @@ The following snippet demonstrates how the Web Forms eShop project uses *web.con
     <add key="UseMockData" value="true" />
     <add key="UseCustomizationData" value="false" />
   </appSettings>
+</configuration>
 ```
 
 It's common for secrets, such as database connection strings, to be stored within the *web.config*. The secrets are inevitably persisted in unsecure locations, such as source control. With Blazor on ASP.NET Core, the preceding XML-based configuration is replaced with the following JSON:

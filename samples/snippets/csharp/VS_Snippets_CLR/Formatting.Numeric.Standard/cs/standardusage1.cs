@@ -35,7 +35,7 @@ public class Example
       Console.WriteLine("   {0,-28:C2}{1,14:C2}", amounts[0], amounts[1]);
       // Displays:
       //        Beginning Balance           Ending Balance
-      //        $16,305.32                      $18,794.16      
+      //        $16,305.32                      $18,794.16
       // </Snippet12>
    }
 }

@@ -1,5 +1,5 @@
 ﻿// <snippet2>
-using System.Data.Objects;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Windows;
 
@@ -19,10 +19,8 @@ namespace DataGridSQLExample
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ObjectQuery<Product> products = dataEntities.Products;
-
             var query =
-            from product in products
+            from product in dataEntities.Products
             where product.Color == "Red"
             orderby product.ListPrice
             select new { product.Name, product.Color, CategoryName = product.ProductCategory.Name, product.ListPrice };

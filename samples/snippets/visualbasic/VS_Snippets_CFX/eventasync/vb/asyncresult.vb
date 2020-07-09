@@ -9,17 +9,17 @@ Namespace Microsoft.ServiceModel.Samples
     ''' A generic base class for IAsyncResult implementations
     ''' that wraps a ManualResetEvent.
     ''' </summary>
-	Public MustInherit Class AsyncResult
-		Implements IAsyncResult
+    Public MustInherit Class AsyncResult
+        Implements IAsyncResult
 
         Private callback As AsyncCallback
-		Private state As Object
-		Private m_completedSynchronously As Boolean
-		Private endCalled As Boolean
-		Private exception As Exception
-		Private m_isCompleted As Boolean
-		Private manualResetEvent As ManualResetEvent
-		Private m_thisLock As Object
+        Private state As Object
+        Private m_completedSynchronously As Boolean
+        Private endCalled As Boolean
+        Private exception As Exception
+        Private m_isCompleted As Boolean
+        Private manualResetEvent As ManualResetEvent
+        Private m_thisLock As Object
 
         Protected Sub New(ByVal callback As AsyncCallback, ByVal state As Object)
 
@@ -95,16 +95,16 @@ Namespace Microsoft.ServiceModel.Samples
 
         End Property
 
-		' Call this version of complete when your asynchronous operation is complete.  This updates the state
-		' of the operation and notify the callback.
-		Protected Sub Complete(ByVal completedSynchronously As Boolean)
+        ' Call this version of complete when your asynchronous operation is complete.  This updates the state
+        ' of the operation and notify the callback.
+        Protected Sub Complete(ByVal completedSynchronously As Boolean)
 
             If m_isCompleted Then
                 ' It is a bug to call Complete twice.
                 Throw New InvalidOperationException("Cannot call Complete twice")
             End If
 
-			Me.m_completedSynchronously = completedSynchronously
+            Me.m_completedSynchronously = completedSynchronously
 
             If completedSynchronously Then
 
@@ -136,8 +136,8 @@ Namespace Microsoft.ServiceModel.Samples
 
         End Sub
 
-		' Call this version of complete if you raise an exception during processing.  In addition to notifying
-		' the callback, it will capture the exception and store it to be thrown during AsyncResult.End.
+        ' Call this version of complete if you raise an exception during processing.  In addition to notifying
+        ' the callback, it will capture the exception and store it to be thrown during AsyncResult.End.
         Protected Sub Complete(ByVal completedSynchronously As Boolean, ByVal exception As Exception)
 
             Me.exception = exception
@@ -145,9 +145,9 @@ Namespace Microsoft.ServiceModel.Samples
 
         End Sub
 
-		' End should be called when the End function for the asynchronous operation is complete.  It
-		' ensures the asynchronous operation is complete, and does some common validation.
-		Protected Shared Function [End](Of TAsyncResult As AsyncResult)(ByVal result As IAsyncResult) As TAsyncResult
+        ' End should be called when the End function for the asynchronous operation is complete.  It
+        ' ensures the asynchronous operation is complete, and does some common validation.
+        Protected Shared Function [End](Of TAsyncResult As AsyncResult)(ByVal result As IAsyncResult) As TAsyncResult
 
             If result Is Nothing Then
 

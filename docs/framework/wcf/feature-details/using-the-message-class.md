@@ -1,5 +1,6 @@
 ---
 title: "Using the Message Class"
+description: Learn about the Message class, which is fundamental to WCF. You need to program using Message class directly only in some advanced scenarios.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -17,7 +18,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
   
 - When you need to deal with messages in a general way regardless of message contents (for example, when routing or forwarding messages when building a router, load-balancer, or a publish-subscribe system).  
   
- Before using the <xref:System.ServiceModel.Channels.Message> class, familiarize yourself with the WCF data transfer architecture in [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
+ Before using the <xref:System.ServiceModel.Channels.Message> class, familiarize yourself with the WCF data transfer architecture in [Data Transfer Architectural Overview](data-transfer-architectural-overview.md).  
   
  A <xref:System.ServiceModel.Channels.Message> is a general-purpose container for data, but its design closely follows the design of a message in the SOAP protocol. Just like in SOAP, a message has both a message body and headers. The message body contains the actual payload data, while the headers contain additional named data containers. The rules for reading and writing the body and the headers are different, for example, the headers are always buffered in memory and may be accessed in any order any number of times, while the body may be read only once and may be streamed. Normally, when using SOAP, the message body is mapped to the SOAP body and the message headers are mapped to the SOAP headers.  
   
@@ -162,7 +163,7 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
  To access the XML data in a header, you can call <xref:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader%2A> and return an XML reader for the specific header index. If you want to deserialize the header contents into an object, use <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.Int32%29> or one of the other overloads. The most basic overloads deserialize headers using the <xref:System.Runtime.Serialization.DataContractSerializer> configured in the default way. If you want to use a different serializer or a different configuration of the `DataContractSerializer`, use one of the overloads that take an `XmlObjectSerializer`. There are also overloads that take the header name, namespace, and optionally a list of `Actor` values instead of an index; this is a combination of `FindHeader` and `GetHeader`.  
   
 ## Working with Properties  
- A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the WCF channel stack or to the <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
+ A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the WCF channel stack or to the <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](data-transfer-architectural-overview.md).  
   
 ## Inheriting from the Message Class  
  If the built-in message types created using `CreateMessage` do not meet your requirements, create a class that derives from the `Message` class.  

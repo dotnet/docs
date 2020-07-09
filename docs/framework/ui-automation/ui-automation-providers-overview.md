@@ -16,7 +16,7 @@ ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
   
  This topic provides an overview of how control developers implement [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] providers, particularly for controls in Windows Forms and Win32 windows.  
   
-<a name="Types_of_Providers"></a>   
+<a name="Types_of_Providers"></a>
 ## Types of Providers  
  UI Automation providers fall into two categories: client-side providers and server-side providers.  
   
@@ -30,7 +30,7 @@ ms.assetid: 859557b8-51e1-4d15-92e8-318d2dcdb2f7
   
  Server-side providers communicate with client applications across the process boundary by exposing interfaces to the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core system, which in turn serves requests from clients.  
   
-<a name="AutomationProviderConcepts"></a>   
+<a name="AutomationProviderConcepts"></a>
 ## UI Automation Provider Concepts  
  This section provides brief explanations of some of the key concepts you need to understand in order to implement UI Automation providers.  
   

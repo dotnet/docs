@@ -17,7 +17,7 @@ namespace ExpanderDirectionExample
     {
         // To use PageLoaded put Loaded="PageLoaded" in root element of .xaml file.
         // private void PageLoaded(object sender, EventArgs e) {}
-        // Sample event handler:  
+        // Sample event handler:
         //<Snippet3>
         private void ChangeExpandDirection(object sender, RoutedEventArgs e)
         {
@@ -30,7 +30,7 @@ namespace ExpanderDirectionExample
             else if ((Boolean)ExpandRight.IsChecked)
                 myExpander.ExpandDirection = ExpandDirection.Right;
 
-            //Expand myExpander so it is easier to see the effect of changing 
+            //Expand myExpander so it is easier to see the effect of changing
             //the ExpandDirection property for My Expander
             myExpander.IsExpanded = true;
         }

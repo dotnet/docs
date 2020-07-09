@@ -10,7 +10,7 @@ namespace SDKSample
             //<SnippetShutdownExitCode>
             Application.Current.Shutdown(11);
             //</SnippetShutdownExitCode>
-            
+
             //<SnippetGetExitCode>
             int exitCode = e.ApplicationExitCode;
             //</SnippetGetExitCode>

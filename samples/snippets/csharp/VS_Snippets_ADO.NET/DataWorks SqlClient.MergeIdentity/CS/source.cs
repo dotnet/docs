@@ -35,7 +35,7 @@ class Program
                "CompanyName"));
             adapter.InsertCommand.UpdatedRowSource = UpdateRowSource.Both;
 
-            // MissingSchemaAction adds any missing schema to 
+            // MissingSchemaAction adds any missing schema to
             // the DataTable, including identity columns
             adapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
 
@@ -43,7 +43,7 @@ class Program
             DataTable shipper = new DataTable();
             adapter.Fill(shipper);
 
-            // Add a new shipper. 
+            // Add a new shipper.
             DataRow newRow = shipper.NewRow();
             newRow["CompanyName"] = "New Shipper";
             shipper.Rows.Add(newRow);
@@ -52,7 +52,7 @@ class Program
             // DataTable will be used by the DataAdapter.
             DataTable dataChanges = shipper.GetChanges();
 
-            // Add the event handler. 
+            // Add the event handler.
             adapter.RowUpdated +=
                 new SqlRowUpdatedEventHandler(OnRowUpdated);
 
@@ -90,7 +90,7 @@ class Program
 
     static private string GetConnectionString()
     {
-        // To avoid storing the connection string in your code, 
+        // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
         return "Data Source=(local);Initial Catalog=Northwind;"
             + "Integrated Security=true";

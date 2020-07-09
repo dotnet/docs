@@ -6,7 +6,7 @@
 * IsSubset methods of WebPermission class.
 * It creates two WebPermission instances with the Connect access rights for the
 * specified URIs.
-* For he first WebPermission instance, a Connect access right is given to the
+* For the first WebPermission instance, a Connect access right is given to the
 * URLs with the host fragment www.microsoft.com. This is done by using
 * the AddPermission(NetworkAccess, regex) method.
 * Then, a third WebPermission instance is created with the Connect access right to

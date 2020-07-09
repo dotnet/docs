@@ -303,7 +303,7 @@ The following example instantiates a <xref:System.Collections.Hashtable> object 
 When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the following all use the current thread culture in formatting operations:
 
 - Interpolated strings supported by the [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) compilers.
-- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
+- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
 - The <xref:System.String.Format%2A?displayProperty=nameWithType> method.
 - The `ToString` methods of the numeric types and the date and time types.
 
@@ -311,18 +311,20 @@ To explicitly specify that a string should be formatted by using the conventions
 
 - When using the <xref:System.String.Format%2A?displayProperty=nameWithType> and `ToString` methods, call an overload that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, a <xref:System.Globalization.CultureInfo> instance that represents the desired culture, or the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.
 
-- For string concatenation, do not allow the compiler to perform any implicit conversions. Instead, perform an explicit conversion by calling a `ToString` overload that has a `provider` parameter. For example, the compiler implicitly uses the current culture when converting a <xref:System.Double> value to a string in the following C# code:
+- For string concatenation, do not allow the compiler to perform any implicit conversions. Instead, perform an explicit conversion by calling a `ToString` overload that has a `provider` parameter. For example, the compiler implicitly uses the current culture when converting a <xref:System.Double> value to a string in the following code:
 
-  [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#1)]
+  [!code-csharp[Implicit String Conversion](./snippets/best-practices-strings/csharp/tostring/Program.cs#1)]
+  [!code-vb[Implicit String Conversion](./snippets/best-practices-strings/vb/tostring/Program.vb#1)]
 
-  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
+  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following code does:
 
-  [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#2)]
+  [!code-csharp[Explicit String Conversion](./snippets/best-practices-strings/csharp/tostring/Program.cs#2)]
+  [!code-vb[Implicit String Conversion](./snippets/best-practices-strings/vb/tostring/Program.vb#2)]
 
 - For string interpolation, rather than assigning an interpolated string to a <xref:System.String> instance, assign it to a <xref:System.FormattableString>. You can then call its <xref:System.FormattableString.ToString?displayProperty=nameWithType> method produce a result string that reflects the conventions of the current culture, or you can call the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to produce a result string that reflects the conventions of a specified culture. You can also pass the formattable string to the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the invariant culture. The following example illustrates this approach. (The output from the example reflects a current culture of en-US.)
 
-  [!code-csharp[String interpolation](~/samples/snippets/standard/base-types/string-practices/cs/formattable.cs)]
-  [!code-vb[String interpolation](~/samples/snippets/standard/base-types/string-practices/vb/formattable.vb)]
+  [!code-csharp[String interpolation](./snippets/best-practices-strings/csharp/formattable/Program.cs)]
+  [!code-vb[String interpolation](./snippets/best-practices-strings/vb/formattable/Program.vb)]
 
 You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:
 
@@ -344,7 +346,3 @@ However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCultur
 08.09.1890 06:47
 18.02.1905 15:12
 ```
-
-## See also
-
-- [Manipulating Strings](manipulating-strings.md)

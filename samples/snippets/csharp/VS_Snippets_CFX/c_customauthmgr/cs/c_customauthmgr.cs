@@ -16,11 +16,11 @@ namespace Samples
       //</snippet5>
       //<snippet6>
 	protected override bool CheckAccessCore(OperationContext operationContext)
-	{                
+	{
 	  // Extract the action URI from the OperationContext. Match this against the claims
 	  // in the AuthorizationContext.
 	  string action = operationContext.RequestContext.RequestMessage.Headers.Action;
-	  
+	
 	  // Iterate through the various claim sets in the AuthorizationContext.
 	  foreach(ClaimSet cs in operationContext.ServiceSecurityContext.AuthorizationContext.ClaimSets)
 	  {
@@ -36,9 +36,9 @@ namespace Samples
 		  }
 		}
 	  }
-	  
+	
 	  // If this point is reached, return false to deny access.
-	  return false;                 
+	  return false;
 	}
     //</snippet6>
   }
@@ -72,7 +72,7 @@ namespace Samples
 	  {
 		//<snippet4>
 		// Add a custom authorization manager to the service authorization behavior.
-		serviceHost.Authorization.ServiceAuthorizationManager = 
+		serviceHost.Authorization.ServiceAuthorizationManager =
                    new MyServiceAuthorizationManager();
 		//</snippet4>
 		// Open the ServiceHost to create listeners and start listening for messages.

@@ -1,5 +1,6 @@
 ---
 title: "How to: Add References to Type Libraries"
+description: Understand how to add references to type libraries in Visual Studio or for command-line compilation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "importing type library"
@@ -40,6 +41,6 @@ Visual Studio generates an interop assembly containing metadata when you add a r
 
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md) 
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md)
 - [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
 - [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

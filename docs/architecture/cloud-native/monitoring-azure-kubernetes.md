@@ -1,11 +1,10 @@
 ---
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
-ms.date: 02/05/2020
+ms.date: 05/13/2020
 ---
-# Monitoring in Azure Kubernetes Services
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Monitoring in Azure Kubernetes Services
 
 The built-in logging in Kubernetes is primitive. However, there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS clusters, configuring Elastic Stack for Kubernetes is a great solution.
 

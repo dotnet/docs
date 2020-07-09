@@ -6,7 +6,7 @@ public class Form1: Form
 {
 
 // <Snippet1>
- private void CreateConstraint(DataSet dataSet, 
+ private void CreateConstraint(DataSet dataSet,
      string table1, string table2,string column1, string column2)
  {
     // Declare parent column and child column variables.

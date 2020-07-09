@@ -1,5 +1,6 @@
 ---
 title: "<netTcpBinding>"
+description: Represents a secure, reliable, optimized binding intended only for WCF cross-machine communication using TCP. Reliable messaging is off by default.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "netTcpBinding Element"

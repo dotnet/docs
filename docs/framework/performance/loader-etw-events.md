@@ -66,7 +66,7 @@ These events collect information relating to loading and unloading application d
 |BindingID|win:UInt64|ID that uniquely identifies the assembly binding.|  
 |AssemblyFlags|win:UInt32|0x1: Domain neutral assembly.<br /><br /> 0x2: Dynamic assembly.<br /><br /> 0x4: Assembly has a native image.<br /><br /> 0x8: Collectible assembly.|  
 |AssemblyName|win:UnicodeString|Fully qualified assembly name.|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|   
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
 ## Module Events
  The following table shows the keyword and level.  

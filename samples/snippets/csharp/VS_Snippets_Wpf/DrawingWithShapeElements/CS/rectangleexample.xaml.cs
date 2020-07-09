@@ -14,7 +14,7 @@ namespace Microsoft.Samples.Graphics
     {
         public RectangleExample()
         {
-            InitializeComponent();        
+            InitializeComponent();
         }
     }
 }

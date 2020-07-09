@@ -15,7 +15,7 @@ public class PsciSample
         priceElem.SchemaTypeName = new XmlQualifiedName("integer", "http://www.w3.org/2001/XMLSchema");
         schema.Items.Add(priceElem);
 
-        // Print the pre-compilation value of the ElementSchemaType property 
+        // Print the pre-compilation value of the ElementSchemaType property
         // of the XmlSchemaElement which is a PSCI property.
         Console.WriteLine("Before compilation the ElementSchemaType of Price is " + priceElem.ElementSchemaType);
 
@@ -31,8 +31,8 @@ public class PsciSample
             schema = compiledSchema;
         }
 
-        // After compilation of the schema, the ElementSchemaType property of the 
-        // XmlSchemaElement will contain a reference to a valid object because the 
+        // After compilation of the schema, the ElementSchemaType property of the
+        // XmlSchemaElement will contain a reference to a valid object because the
         // SchemaTypeName refered to a valid type.
         Console.WriteLine("After compilation the ElementSchemaType of Price is "
            + priceElem.ElementSchemaType);

@@ -1,5 +1,6 @@
 ---
 title: "How to: Load Assemblies into an Application Domain"
+description: Learn how to load assemblies into an application domain in .NET. The recommended way is to use the static (or Shared) Load method in System.Reflection.Assembly.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

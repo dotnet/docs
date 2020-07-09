@@ -9,7 +9,7 @@ class Example
         CompareOrdinal();
         Console.Write("CompareTo: ");
         CompareTo();
-        Console.Write("Equals: "); 
+        Console.Write("Equals: ");
         Equals1();
         Equals2();
         StartsWith();
@@ -17,7 +17,7 @@ class Example
         IndexOf();
         LastIndexOf();
     }
-                                                                             
+
     public static void Compare()
     {
         //<snippet6>

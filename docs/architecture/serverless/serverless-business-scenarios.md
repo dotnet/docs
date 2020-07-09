@@ -1,95 +1,116 @@
 ---
 title: Sample business scenarios and use cases for serverless apps
-description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile back ends and ETL pipelines.
+description: Learn serverless with a hands-on approach by accessing samples that range from image processing to mobile support and ETL pipelines.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
+ms.date: 04/17/2020
 ---
 # Serverless business scenarios and use cases
 
 There are many use cases and scenarios for serverless applications. This chapter includes samples that illustrate the different scenarios. The scenarios include links to related documentation and public source code repositories. The samples in this chapter enable you to get started on your own building and implementing serverless solutions.
 
-## Analyze and archive images
+## Big data processing
 
-This sample demonstrates serverless events (Event Grid), workflows (Logic App), and code (Azure Functions). It also shows how to integrate with another resource, in this case Cognitive Services for image analysis.
+![Map/reduce diagram](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/media/mapreducearchitecture.png)
 
-A console application allows you to pass a link to a URL on the web. The app publishes the URL as an event grid message. In parallel, a serverless function app and a logic app subscribe to the message. The serverless function app serializes the image to blob storage. It also stores information in Azure Table Storage. The metadata stores the original image URL and the name of the blob image. The logic app interacts with the Custom Vision API to analyze the image and create a machine-generated caption. The caption is stored in the metadata table.
+This example uses serverless to do a map/reduce operation on a big data set. It determines the average speed of New York Yellow taxi trips per day in 2017.
 
-![Analyze and archive images architecture](./media/image-processing-example.png)
+[Big Data Processing: Serverless MapReduce on Azure](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
 
-A separate single page application (SPA) calls a serverless function to get a list of images and metadata. For each image, it calls another function that delivers the image data from the archive. The final result is a gallery with automatic captions.
+## Create serverless applications: hands-on lab
 
-![Automated image gallery](./media/automated-image-gallery.png)
+Learn how to use functions to execute server-side logic and build serverless architectures.
 
-The full repository and instructions to build the logic app are available here: [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue).
+- Choosing the best Azure service for your business
+- Creating Azure Functions
+- Using triggers
+- Chaining functions
+- Long-running workflows
+- Monitoring
+- Development, testing, and deployment
 
-## Cross-platform mobile client using Xamarin.Forms and functions
+[Create serverless applications](https://docs.microsoft.com/learn/paths/create-serverless-applications/)
 
-See how to implement a simple serverless Azure Function in the Azure Web Portal or in Visual Studio. Build a client with Xamarin.Forms that runs on Android, iOS, and Windows. The application is then refined to use JavaScript Object Notation (JSON) as a communication medium between the server and the mobile clients with a serverless back end.
+## Customer reviews
 
-For more information, see [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/).
+This sample showcases the new Azure Functions tooling for C# Class Libraries in Visual Studio. Create a website where customers submit product reviews that are stored in Azure storage blobs and CosmosDB. Add an Azure Function to perform automated moderation of the customer reviews using Azure Cognitive Services. Use an Azure storage queue to decouple the website from the function.
 
-## Generate a photo mosaic with serverless image recognition
+[Customer Reviews App with Cognitive Services](https://docs.microsoft.com/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 
-The sample uses Azure Functions and Microsoft Cognitive Services Custom Vision Service to generate a photo mosaic from an input image. The model is trained to recognize images. When an image is uploaded, it recognizes the image and searches with Bing. The original image is recomposed using the search results.
+## Docker Linux image support
 
-![Orlando eye photo and mosaic](./media/orlando-eye-both.png)
+This sample demonstrates how to create a `Dockerfile` to build and run Azure Functions on a Linux Docker container.
 
-For example, you can train your model with Orlando landmarks, such as the Orlando Eye. Custom Vision will recognize an image of the Orlando Eye, and the function will create a photo mosaic composed of Bing image search results for "Orlando Eye."
+[Azure Functions on Linux](https://docs.microsoft.com/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
 
-For more information, see [Azure Functions photo mosaic generator](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic).
+## File processing and validation
 
-## Migrate an existing application to the cloud
+This example parses a set of CSV files from hypothetical customers. It ensures that all files required for a customer "batch" are ready, then validates the structure of each file. Different solutions are presented using Azure Functions, Logic Apps, and Durable Functions.
 
-As discussed in previous chapters, it's common to embrace an N-Tier architecture to host your application on-premises. Although migrating resources "as is" using virtual machines is the least risky path to the cloud, many companies choose to use the opportunity to refactor their applications. Fortunately, refactoring doesn't have to be an "all-or-nothing" effort. In fact, it's possible to migrate your app then piecemeal replace components with cloud native counterparts.
+[File processing and validation using Azure Functions, Logic Apps, and Durable Functions](https://docs.microsoft.com/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 
-The application uses the proxies feature of Azure Functions to enable refactoring an endpoint from legacy on-premises code to a serverless endpoint.
+## Game data visualization
 
-![Migration architecture](./media/migration-architecture.png)
+![Game telemetry](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/media/points.png)
 
-The proxy provides a single API endpoint that is updated to reroute individual requests as they're moved into serverless functions.
+An example of how a developer could implement an in-editor data visualization solution for their game. In fact, an Unreal Engine 4 Plugin and Unity Plugin were developed using this sample as its backend. The service component is game engine agnostic.
 
-You can view a video that walks through the entire migration: [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102). Access the sample code: [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17).
+[In-editor game telemetry visualization](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
 
-## Parse a CSV file and insert into a database
+## GraphQL
 
-Extract, Transform, and Load (ETL) is a common business function that integrates different systems. Traditional approaches often involve setting up dedicated FTP servers then deploying scheduled jobs to parse files and translate them for business use. Serverless architecture makes the job easier because a trigger can fire when the file is uploaded. Azure Functions tackles tasks like ETL through its ideal composition of small pieces of code that focus on a specific problem.
+Create a serverless function that exposes a GraphQL API.
 
-![Screenshot that shows the csv parsing process.](./media/serverless-business-scenarios/csv-parse-database-import.png)
+[Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 
-For source code and a hands-on lab, see [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol).
+## Internet of Things (IoT) reliable edge relay
 
-## Shorten links and track metrics
+![IoT Architecture](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/media/architecture.png)
 
-Link shortening tools originally helped encode URLs in short twitter posts to accommodate the 140 character limit. They've grown to encompass several uses, most commonly to track click-throughs for analytics. The link shortener scenario is an entirely serverless application that manages links and reports metrics.
+This sample implements a new communication protocol to enable reliable upstream communication from IoT devices. It automates data gap detection and backfill.
 
-Azure Functions is used to serve a Single Page Application (SPA) that allows you to paste the long URL and generate short URLs. The URLs are tagged to track things like campaigns (topics) and mediums (such as social networks that the links are posted to). The short code is stored in Azure Table Storage as the key, with the long URL as the value. When you click on the short link, another function looks up the long URL, sends a redirect, and places information about the event on a queue. Another Azure Function processes the queue and places the information into Azure Cosmos DB.
+[IoT Reliable Edge Relay](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
 
-![Link shortener architecture](./media/link-shortener-architecture.png)
+## Microservices reference architecture
 
-You can then create a Power BI dashboard to gather insights about the data collected. On the back end, Application Insights provides important metrics. Telemetry includes how long it takes for the average user to redirect and how long it takes to access Azure Table Storage.
+![Reference architecture](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/media/macro-architecture.png)
 
-![Power BI example](./media/power-bi-example.png)
+A reference architecture that walks you through the decision-making process involved in designing, developing, and delivering the Rideshare by Relecloud application (a fictitious company). It includes hands-on instructions for configuring and deploying all of the architecture's components.
 
-The full link shortener repository with instructions is available here: [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener). You can read about a simplified version here: [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/).
+[Serverless Microservices reference architecture](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
-## Verify device connectivity using a ping
+## Migrate console apps to serverless
 
-The sample consists of an Azure IoT Hub and an Azure Function. A new message on the IoT Hub triggers the Azure Function. The serverless code sends the same message content back to the device that sent it. The project has all the code and deployment configuration needed for the solution.
+This sample is a generic function (`.csx` file) that can be used to convert any console application to an HTTP web service in Azure Functions. All you have to do is edit a configuration file and specify what input parameters will be passed as arguments to the `.exe`.
 
-For more information, see [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping).
+[Run Console Apps on Azure Functions](https://docs.microsoft.com/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
+
+## Serverless for mobile
+
+Azure Functions are easy to implement and maintain, and accessible through HTTP. They are a great way to implement an API for a mobile application. Microsoft offers great cross-platform tools for iOS, Android, and Windows with Xamarin. As such, Xamarin and Azure Functions are working great together. This article shows how to implement an Azure Function in the Azure portal or in Visual Studio at first, and build a cross-platform client with Xamarin.Forms running on Android, iOS, and Windows.
+
+[Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
+
+## Serverless messaging
+
+This sample shows how to utilize Durable Functions' fan-out pattern to load an arbitrary number of messages across any number of sessions/partitions. It targets Service Bus, Event Hubs, or Storage Queues. The sample also adds the ability to consume those messages with another Azure Function and load the resulting timing data in to another Event Hub. The data is then ingested into analytics services like Azure Data Explorer.
+
+[Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
 
 ## Recommended resources
 
-- [Azure Functions photo mosaic generator](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic)
-- [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping)
-- [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
-- [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
-- [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)
-- [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue)
+- [Azure Functions on Linux](https://docs.microsoft.com/samples/azure-samples/functions-linux-custom-image/azure-functions-on-linux-custom-image-tutorial-sample-project/)
+- [Big Data Processing: Serverless MapReduce on Azure](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
+- [Create serverless applications](https://docs.microsoft.com/learn/paths/create-serverless-applications/)
+- [Customer Reviews App with Cognitive Services](https://docs.microsoft.com/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
+- [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](https://docs.microsoft.com/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
 - [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
-- [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102)
-- [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
+- [In-editor game telemetry visualization](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
+- [IoT Reliable Edge Relay](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
+- [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure Functions](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
+- [Run Console Apps on Azure Functions](https://docs.microsoft.com/samples/azure-samples/functions-dotnet-migrating-console-apps/run-console-apps-on-azure-functions/)
+- [Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
+- [Serverless Microservices reference architecture](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
 >[!div class="step-by-step"]
 >[Previous](orchestration-patterns.md)

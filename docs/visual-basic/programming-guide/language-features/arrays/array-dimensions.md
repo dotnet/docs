@@ -89,5 +89,5 @@ Note that, because each index varies from 0 to its maximum, each dimension of `s
 
 ## See also
 
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+- [Arrays](index.md)
+- [Troubleshooting Arrays](troubleshooting-arrays.md)

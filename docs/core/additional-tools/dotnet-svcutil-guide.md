@@ -114,7 +114,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 
 2. Find the name of the client class and operation you want to use. `Reference.cs` will contain a class that inherits from `System.ServiceModel.ClientBase`, with methods that can be used to call operations on the service. In this example, you want to call the _SayHello_ service's _Hello_ operation. `ServiceReference.SayHelloClient` is the name of the client class, and has a method called `HelloAsync` that can be used to call the operation.
 
-3. Open the `Startup.cs` file in your editor, and add a using statement for the service reference namespace at the top:
+3. Open the `Startup.cs` file in your editor, and add a `using` directive for the service reference namespace at the top:
 
     ```csharp
     using ServiceReference;
@@ -123,7 +123,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 4. Edit the `Configure` method to invoke the web service. You do this by creating an instance of the class that inherits from `ClientBase` and calling the method on the client object:
 
     ```csharp
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {

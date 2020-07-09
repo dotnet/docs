@@ -110,4 +110,4 @@ EVENT_DESCRIPTOR.Id = 1
 
 - [ETW Events in the .NET Framework](etw-events.md)
 - [Task Parallel Library (TPL)](../../standard/parallel-programming/task-parallel-library-tpl.md)
-- [Parallel LINQ (PLINQ)](../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../standard/parallel-programming/introduction-to-plinq.md)

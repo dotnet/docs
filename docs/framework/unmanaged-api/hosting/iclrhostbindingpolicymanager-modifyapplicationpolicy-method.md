@@ -23,12 +23,12 @@ Modifies the binding policy for the specified assembly, and creates a new versio
   
 ```cpp  
 HRESULT  ModifyApplicationPolicy (  
-    [in] LPCWSTR     pwzSourceAssemblyIdentity,   
+    [in] LPCWSTR     pwzSourceAssemblyIdentity,
     [in] LPCWSTR     pwzTargetAssemblyIdentity,  
     [in] BYTE       *pbApplicationPolicy,  
     [in] DWORD       cbAppPolicySize,  
     [in] DWORD       dwPolicyModifyFlags,  
-    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,   
+    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,
     [in, out] DWORD *pcbNewAppPolicySize  
 );  
 ```  
@@ -47,7 +47,7 @@ HRESULT  ModifyApplicationPolicy (
  [in] The size of the binding policy to be replaced.  
   
  `dwPolicyModifyFlags`  
- [in] A logical OR combination of [EHostBindingPolicyModifyFlags](../../../../docs/framework/unmanaged-api/hosting/ehostbindingpolicymodifyflags-enumeration.md) values, indicating control of redirection.  
+ [in] A logical OR combination of [EHostBindingPolicyModifyFlags](ehostbindingpolicymodifyflags-enumeration.md) values, indicating control of redirection.  
   
  `pbNewApplicationPolicy`  
  [out] A pointer to a buffer that contains the new binding policy data.  
@@ -72,7 +72,7 @@ HRESULT  ModifyApplicationPolicy (
  The `ModifyApplicationPolicy` method can be called twice. The first call should supply a null value for the `pbNewApplicationPolicy` parameter. This call will return with the necessary value for `pcbNewAppPolicySize`. The second call should supply this value for `pcbNewAppPolicySize`, and point to a buffer of that size for `pbNewApplicationPolicy`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -82,4 +82,4 @@ HRESULT  ModifyApplicationPolicy (
   
 ## See also
 
-- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)

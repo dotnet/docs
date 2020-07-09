@@ -33,7 +33,7 @@ namespace Samples
 	public string Text { get { return this.text; }  set { this.text = value; } }
     [DataMember]
 	public int Number { get { return this.number; } set { this.number = value; } }
-  }  
+  }
   //</snippet2>
 
   class Program

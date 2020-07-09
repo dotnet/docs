@@ -1,5 +1,6 @@
 ---
 title: "Naming Resources"
+description: Review naming guidelines for resources in .NET, which are similar to the guidelines for naming properties.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -35,5 +36,5 @@ Because localizable resources can be referenced via certain objects as if they w
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Naming Guidelines](naming-guidelines.md)

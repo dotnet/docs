@@ -11,7 +11,7 @@ ms.date: 05/16/2016
 
 ```fsharp
 // Active pattern of one choice.
-let (|identifier|) [arguments] valueToMatch= expression
+let (|identifier|) [arguments] valueToMatch = expression
 
 // Active Pattern with multiple choices.
 // Uses a FSharp.Core.Choice<_,...,_> based on the number of case names. In F#, the limitation n <= 7 applies.

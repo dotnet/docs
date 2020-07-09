@@ -46,12 +46,9 @@ items:
     > and the code in the interactive window to see what to fix.
     > That exercise will help you learn the structure of C# code.
 
-    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it is skipped.
+    This first sample shows the power of `if` and boolean types. A *boolean* is a variable that can have one of two values: `true` or `false`. C# defines a special type, `bool` for boolean variables. The `if` statement checks the value of a `bool`. When the value is `true`, the statement following the `if` executes. Otherwise, it's skipped.
 
-    This process of checking conditions and executing statements based on those conditions is very powerful. Let's explore more.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    This process of checking conditions and executing statements based on those conditions is powerful. Let's explore more.
 
 - title: Make if and else work together
   durationInMinutes: 10
@@ -78,11 +75,11 @@ items:
     > on the condition. All the samples in this tutorial follow a common
     > practice to indent lines based on the control flow of statements.
 
-    Because indentation is not significant, you need to use `{` and `}` to
+    Because indentation isn't significant, you need to use `{` and `}` to
     indicate when you want more than one statement to be part of the block
     that executes conditionally. C# programmers typically use those braces
     on all `if` and `else` clauses. The following example is the same as what you
-    just created. Try it.
+    created. Try it.
 
     ```csharp
     int a = 5;
@@ -145,9 +142,6 @@ items:
 
     Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explore. You'll gain more understanding of how the `&&` and `||` operators work.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Use loops to repeat operations
   durationInMinutes: 6
   content: |
@@ -196,9 +190,6 @@ items:
 
     Let's move on to one last loop statement.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Work with the for loop
   durationInMinutes: 5
   content: |
@@ -234,8 +225,47 @@ items:
     When you're done, let's move on to write some code yourself to
     use what you've learned.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
+    There's one other looping statement that isn't covered in this tutorial: the `foreach` statement. The `foreach` statement repeats its statement for every item in a sequence of items. It's most often used with *collections*, so it is covered in the next tutorial.
+
+- title: Created nested loops
+  durationInMinutes: 10
+  content: |
+    A `while`, `do`, or `for` loop can be nested inside another loop to create a matrix 
+    using the combination of each item in the outer loop with each item in the inner
+    loop. Let's do that to build a set of alphanumeric pairs to represent rows and columns.
+
+    One `for` loop can generate the rows:
+
+    ```csharp
+    for (int row = 1; row < 11; row++)
+    {
+      Console.WriteLine($"The row is {row}");
+    }
+    ```
+
+    Another loop can generate the columns:
+
+    ```csharp
+    for (char column = 'a'; column < 'k'; column++)
+    {
+      Console.WriteLine($"The column is {column}");
+    }
+    ```
+
+    You can nest one loop inside the other to form pairs:
+      
+    ```csharp
+    for (int row = 1; row < 11; row++)
+    {
+      for (char column = 'a'; column < 'k'; column++)
+      {
+        Console.WriteLine($"The cell is ({row}, {column})");
+      }
+    }
+    ```
+
+    You can see that the outer loop increments once for each full run of the
+    inner loop. Reverse the row and column nesting, and see the changes for yourself.
 
 - title: Combine branches and loops
   durationInMinutes: 12
@@ -250,9 +280,6 @@ items:
     - The `for` loop can help you repeat a series of steps for all the numbers 1 through 20.
 
     Try it yourself. Then check how you did. As a hint, you should get 63 for an answer.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Complete challenge
   durationInMinutes: 1
@@ -271,14 +298,11 @@ items:
     Console.WriteLine($"The sum is {sum}");
     ```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Congratulations!
   content: |
     You've completed the "branches and loops" interactive tutorial. You can select the **list collection** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
-    You can learn more about these concepts in these topics:
+    You can learn more about these concepts in these articles:
 
     - [If and else statement](../../language-reference/keywords/if-else.md)
     - [While statement](../../language-reference/keywords/while.md)

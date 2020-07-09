@@ -44,31 +44,31 @@ namespace NorthwindService
     partial void DeleteProduct(Product instance);
     #endregion
 		
-		public NorthwindDataContext() : 
+		public NorthwindDataContext() :
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(string connection) : 
+		public NorthwindDataContext(string connection) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(System.Data.IDbConnection connection) : 
+		public NorthwindDataContext(System.Data.IDbConnection connection) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public NorthwindDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public NorthwindDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public NorthwindDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -823,7 +823,7 @@ namespace NorthwindService
 			set
 			{
 				Customer previousValue = this._Customer.Entity;
-				if (((previousValue != value) 
+				if (((previousValue != value)
 							|| (this._Customer.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
@@ -1041,7 +1041,7 @@ namespace NorthwindService
 			set
 			{
 				Order previousValue = this._Order.Entity;
-				if (((previousValue != value) 
+				if (((previousValue != value)
 							|| (this._Order.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
@@ -1075,7 +1075,7 @@ namespace NorthwindService
 			set
 			{
 				Product previousValue = this._Product.Entity;
-				if (((previousValue != value) 
+				if (((previousValue != value)
 							|| (this._Product.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();

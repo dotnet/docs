@@ -52,8 +52,8 @@
         _pets.Add(New Pet With {.Name = "Spot", .Owner = pers})
 
         ' Add a pet with no owner for the sake of Join examples.
-        _pets.Add(New Pet With {.Name = "Unknown", 
-                                .Owner = New Person With {.FirstName = String.Empty, 
+        _pets.Add(New Pet With {.Name = "Unknown",
+                                .Owner = New Person With {.FirstName = String.Empty,
                                                           .LastName = String.Empty}})
     End Sub
     '</Snippet1>
@@ -64,11 +64,11 @@
         Dim pets = GetPets(people)
 
         ' Left Outer Join
-        Dim petOwners = From pers In people 
+        Dim petOwners = From pers In people
                         Group Join pet In pets On pers Equals pet.Owner
                         Into PetList = Group
                         From pet In PetList.DefaultIfEmpty()
-                        Select pers.FirstName, pers.LastName, 
+                        Select pers.FirstName, pers.LastName,
                                PetName = If(pet Is Nothing, String.Empty, pet.Name)
 
         ' The remaining list of the full outer join is made up of the pets that are not
@@ -156,7 +156,7 @@
         ' Display "flat" results.
         output = New System.Text.StringBuilder()
         For Each pers In petOwners
-            output.AppendFormat( 
+            output.AppendFormat(
               pers.FirstName & ":" & vbTab & pers.PetName & vbCrLf)
         Next
 
@@ -228,7 +228,7 @@
                         Join pet In pets On
                           pet.Owner.FirstName Equals pers.FirstName And
                           pet.Owner.LastName Equals pers.LastName
-                    Select pers.FirstName, PetName = pet.Name
+                        Select pers.FirstName, PetName = pet.Name
 
         ' Display grouped results.
         Dim output As New System.Text.StringBuilder

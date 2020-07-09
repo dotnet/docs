@@ -42,8 +42,8 @@ namespace SDKSamples
             //<SnippetCommandHandlerKeyBindingCodeBehind>
             // Creating a KeyBinding between the Open command and Ctrl-R
             KeyBinding OpenCmdKeyBinding = new KeyBinding(
-                ApplicationCommands.Open, 
-                Key.R, 
+                ApplicationCommands.Open,
+                Key.R,
                 ModifierKeys.Control);
 
             this.InputBindings.Add(OpenCmdKeyBinding);

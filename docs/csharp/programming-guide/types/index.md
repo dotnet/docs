@@ -16,7 +16,7 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
 
 ## Types, variables, and values
 
-C# is a strongly-typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method signature specifies a type for each input parameter and for the return value. The .NET class library defines a set of built-in numeric types as well as more complex types that represent a wide variety of logical constructs, such as the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library as well as user-defined types that model the concepts that are specific to the program's problem domain.
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method declaration specifies a name, number of parameters, and type and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines a set of built-in numeric types as well as more complex types that represent a wide variety of logical constructs, such as the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library as well as user-defined types that model the concepts that are specific to the program's problem domain.
 
 The information stored in a type can include the following:
 
@@ -47,7 +47,7 @@ When you declare a variable or constant in a program, you must either specify it
 
 [!code-csharp[csProgGuideTypes#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#36)]
 
-The types of method parameters and return values are specified in the method signature. The following signature shows a method that requires an [int](../../language-reference/builtin-types/integral-numeric-types.md) as an input argument and returns a string:
+The types of method parameters and return values are specified in the method declaration. The following signature shows a method that requires an [int](../../language-reference/builtin-types/integral-numeric-types.md) as an input argument and returns a string:
 
 [!code-csharp[csProgGuideTypes#35](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#35)]
 
@@ -86,10 +86,10 @@ Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, wh
 
 There are two categories of value types: [struct](../../language-reference/builtin-types/struct.md) and [enum](../../language-reference/builtin-types/enum.md).
 
-The built-in numeric types are structs, and they have properties and methods that you can access:
+The built-in numeric types are structs, and they have fields and methods that you can access:
 
 ```csharp
-// Static method on type byte.
+// constant field on type byte.
 byte b = byte.MaxValue;
 ```
 
@@ -159,7 +159,7 @@ stringList.Add("String example");
 stringList.Add(4);
 ```
 
-The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](../generics/index.md).
+The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](../generics/index.md).
 
 ## Implicit types, anonymous types, and nullable value types
 
@@ -199,4 +199,3 @@ For more information, see the following topics:
 - [C# Programming Guide](../index.md)
 - [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)
- 

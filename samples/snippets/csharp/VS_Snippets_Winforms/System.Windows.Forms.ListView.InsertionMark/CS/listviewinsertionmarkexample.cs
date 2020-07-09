@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 public class ListViewInsertionMarkExample : Form
 {
-    private ListView myListView; 
+    private ListView myListView;
 
     //<Snippet2>
     public ListViewInsertionMarkExample()
@@ -27,7 +27,7 @@ public class ListViewInsertionMarkExample : Form
         myListView.Items.Add("three");
         myListView.Items.Add("four");
         myListView.Items.Add("five");
-        
+
         // Initialize the drag-and-drop operation when running
         // under Windows XP or a later operating system.
         if (OSFeature.Feature.IsPresent(OSFeature.Themes))
@@ -47,7 +47,7 @@ public class ListViewInsertionMarkExample : Form
     //</Snippet2>
 
     [STAThread]
-    static void Main() 
+    static void Main()
     {
         Application.EnableVisualStyles();
         Application.Run(new ListViewInsertionMarkExample());
@@ -70,14 +70,14 @@ public class ListViewInsertionMarkExample : Form
     private void myListView_DragOver(object sender, DragEventArgs e)
     {
         // Retrieve the client coordinates of the mouse pointer.
-        Point targetPoint = 
+        Point targetPoint =
             myListView.PointToClient(new Point(e.X, e.Y));
 
         // Retrieve the index of the item closest to the mouse pointer.
         int targetIndex = myListView.InsertionMark.NearestIndex(targetPoint);
 
         // Confirm that the mouse pointer is not over the dragged item.
-        if (targetIndex > -1) 
+        if (targetIndex > -1)
         {
             // Determine whether the mouse pointer is to the left or
             // the right of the midpoint of the closest item and set
@@ -113,25 +113,25 @@ public class ListViewInsertionMarkExample : Form
         int targetIndex = myListView.InsertionMark.Index;
 
         // If the insertion mark is not visible, exit the method.
-        if (targetIndex == -1) 
+        if (targetIndex == -1)
         {
             return;
         }
 
         // If the insertion mark is to the right of the item with
         // the corresponding index, increment the target index.
-        if (myListView.InsertionMark.AppearsAfterItem) 
+        if (myListView.InsertionMark.AppearsAfterItem)
         {
             targetIndex++;
         }
 
         // Retrieve the dragged item.
-        ListViewItem draggedItem = 
+        ListViewItem draggedItem =
             (ListViewItem)e.Data.GetData(typeof(ListViewItem));
 
         // Insert a copy of the dragged item at the target index.
         // A copy must be inserted before the original item is removed
-        // to preserve item index values. 
+        // to preserve item index values.
         myListView.Items.Insert(
             targetIndex, (ListViewItem)draggedItem.Clone());
 

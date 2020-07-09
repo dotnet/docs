@@ -62,6 +62,6 @@ Each of the preceding lines of code explicitly casts the `Object` variable `o1` 
 
 ## See also
 
-- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
-- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
-- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)
+- [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md)
+- [Overload Resolution](../../programming-guide/language-features/procedures/overload-resolution.md)
+- [CType Function](../functions/ctype-function.md)

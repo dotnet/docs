@@ -1,5 +1,6 @@
 ---
 title: "Using Application Domains"
+description: Use application domains, which provide a unit of isolation for the common language runtime (CLR). Application domains are created and run inside a process.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application domains, about"
@@ -51,7 +52,7 @@ Represents an application domain. Provides methods for creating and controlling 
 [Assemblies in .NET](../../standard/assembly/index.md)  
 Provides an overview of the functions performed by assemblies.  
   
-[Programming with Assemblies](../../standard/assembly/program.md)  
+[Programming with Assemblies](../../standard/assembly/index.md)  
 Describes how to create, sign, and set attributes on assemblies.  
   
 [Emitting Dynamic Methods and Assemblies](../reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  

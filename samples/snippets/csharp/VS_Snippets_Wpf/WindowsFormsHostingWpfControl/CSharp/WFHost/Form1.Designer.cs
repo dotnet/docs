@@ -66,18 +66,18 @@
         this.groupBox7.SuspendLayout();
         this.tableLayoutPanel1.SuspendLayout();
         this.SuspendLayout();
-        // 
+        //
         // panel1
-        // 
+        //
         this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
         this.panel1.Location = new System.Drawing.Point(333, 3);
         this.panel1.Name = "panel1";
         this.tableLayoutPanel1.SetRowSpan(this.panel1, 3);
         this.panel1.Size = new System.Drawing.Size(325, 285);
         this.panel1.TabIndex = 0;
-        // 
+        //
         // groupBox1
-        // 
+        //
         this.groupBox1.Controls.Add(this.radioBackgroundLightSalmon);
         this.groupBox1.Controls.Add(this.radioBackgroundLightGreen);
         this.groupBox1.Controls.Add(this.radioBackgroundOriginal);
@@ -88,9 +88,9 @@
         this.groupBox1.TabIndex = 0;
         this.groupBox1.TabStop = false;
         this.groupBox1.Text = "Background Color";
-        // 
+        //
         // radioBackgroundLightSalmon
-        // 
+        //
         this.radioBackgroundLightSalmon.AutoSize = true;
         this.radioBackgroundLightSalmon.Location = new System.Drawing.Point(11, 66);
         this.radioBackgroundLightSalmon.Name = "radioBackgroundLightSalmon";
@@ -98,9 +98,9 @@
         this.radioBackgroundLightSalmon.TabIndex = 2;
         this.radioBackgroundLightSalmon.Text = "LightSalmon";
         this.radioBackgroundLightSalmon.CheckedChanged += new System.EventHandler(this.radioBackgroundLightSalmon_CheckedChanged);
-        // 
+        //
         // radioBackgroundLightGreen
-        // 
+        //
         this.radioBackgroundLightGreen.AutoSize = true;
         this.radioBackgroundLightGreen.Location = new System.Drawing.Point(11, 43);
         this.radioBackgroundLightGreen.Name = "radioBackgroundLightGreen";
@@ -108,9 +108,9 @@
         this.radioBackgroundLightGreen.TabIndex = 1;
         this.radioBackgroundLightGreen.Text = "LightGreen";
         this.radioBackgroundLightGreen.CheckedChanged += new System.EventHandler(this.radioBackgroundLightGreen_CheckedChanged);
-        // 
+        //
         // radioBackgroundOriginal
-        // 
+        //
         this.radioBackgroundOriginal.AutoSize = true;
         this.radioBackgroundOriginal.Location = new System.Drawing.Point(11, 20);
         this.radioBackgroundOriginal.Name = "radioBackgroundOriginal";
@@ -118,9 +118,9 @@
         this.radioBackgroundOriginal.TabIndex = 0;
         this.radioBackgroundOriginal.Text = "Original";
         this.radioBackgroundOriginal.CheckedChanged += new System.EventHandler(this.radioBackgroundOriginal_CheckedChanged);
-        // 
+        //
         // radioForegroundYellow
-        // 
+        //
         this.radioForegroundYellow.AutoSize = true;
         this.radioForegroundYellow.Location = new System.Drawing.Point(11, 66);
         this.radioForegroundYellow.Name = "radioForegroundYellow";
@@ -128,9 +128,9 @@
         this.radioForegroundYellow.TabIndex = 2;
         this.radioForegroundYellow.Text = "Yellow";
         this.radioForegroundYellow.CheckedChanged += new System.EventHandler(this.radioForegroundYellow_CheckedChanged);
-        // 
+        //
         // radioForegroundRed
-        // 
+        //
         this.radioForegroundRed.AutoSize = true;
         this.radioForegroundRed.Location = new System.Drawing.Point(11, 43);
         this.radioForegroundRed.Name = "radioForegroundRed";
@@ -138,9 +138,9 @@
         this.radioForegroundRed.TabIndex = 1;
         this.radioForegroundRed.Text = "Red";
         this.radioForegroundRed.CheckedChanged += new System.EventHandler(this.radioForegroundRed_CheckedChanged);
-        // 
+        //
         // groupBox2
-        // 
+        //
         this.groupBox2.Controls.Add(this.radioForegroundYellow);
         this.groupBox2.Controls.Add(this.radioForegroundRed);
         this.groupBox2.Controls.Add(this.radioForegroundOriginal);
@@ -151,9 +151,9 @@
         this.groupBox2.TabIndex = 1;
         this.groupBox2.TabStop = false;
         this.groupBox2.Text = "Foreground Color";
-        // 
+        //
         // radioForegroundOriginal
-        // 
+        //
         this.radioForegroundOriginal.AutoSize = true;
         this.radioForegroundOriginal.Location = new System.Drawing.Point(11, 19);
         this.radioForegroundOriginal.Name = "radioForegroundOriginal";
@@ -161,9 +161,9 @@
         this.radioForegroundOriginal.TabIndex = 0;
         this.radioForegroundOriginal.Text = "Original";
         this.radioForegroundOriginal.CheckedChanged += new System.EventHandler(this.radioForegroundOriginal_CheckedChanged);
-        // 
+        //
         // radioFamilyWingDings
-        // 
+        //
         this.radioFamilyWingDings.AutoSize = true;
         this.radioFamilyWingDings.Location = new System.Drawing.Point(11, 66);
         this.radioFamilyWingDings.Name = "radioFamilyWingDings";
@@ -171,9 +171,9 @@
         this.radioFamilyWingDings.TabIndex = 2;
         this.radioFamilyWingDings.Text = "WingDings";
         this.radioFamilyWingDings.CheckedChanged += new System.EventHandler(this.radioFamilyWingDings_CheckedChanged);
-        // 
+        //
         // radioFamilyTimes
-        // 
+        //
         this.radioFamilyTimes.AutoSize = true;
         this.radioFamilyTimes.Location = new System.Drawing.Point(11, 43);
         this.radioFamilyTimes.Name = "radioFamilyTimes";
@@ -181,9 +181,9 @@
         this.radioFamilyTimes.TabIndex = 1;
         this.radioFamilyTimes.Text = "Times New Roman";
         this.radioFamilyTimes.CheckedChanged += new System.EventHandler(this.radioFamilyTimes_CheckedChanged);
-        // 
+        //
         // groupBox3
-        // 
+        //
         this.groupBox3.Controls.Add(this.radioFamilyWingDings);
         this.groupBox3.Controls.Add(this.radioFamilyTimes);
         this.groupBox3.Controls.Add(this.radioFamilyOriginal);
@@ -194,9 +194,9 @@
         this.groupBox3.TabIndex = 2;
         this.groupBox3.TabStop = false;
         this.groupBox3.Text = "Font Family";
-        // 
+        //
         // radioFamilyOriginal
-        // 
+        //
         this.radioFamilyOriginal.AutoSize = true;
         this.radioFamilyOriginal.Location = new System.Drawing.Point(11, 20);
         this.radioFamilyOriginal.Name = "radioFamilyOriginal";
@@ -204,9 +204,9 @@
         this.radioFamilyOriginal.TabIndex = 0;
         this.radioFamilyOriginal.Text = "Original";
         this.radioFamilyOriginal.CheckedChanged += new System.EventHandler(this.radioFamilyOriginal_CheckedChanged);
-        // 
+        //
         // radioSizeTwelve
-        // 
+        //
         this.radioSizeTwelve.AutoSize = true;
         this.radioSizeTwelve.Location = new System.Drawing.Point(11, 66);
         this.radioSizeTwelve.Name = "radioSizeTwelve";
@@ -214,9 +214,9 @@
         this.radioSizeTwelve.TabIndex = 2;
         this.radioSizeTwelve.Text = "12";
         this.radioSizeTwelve.CheckedChanged += new System.EventHandler(this.radioSizeTwelve_CheckedChanged);
-        // 
+        //
         // radioSizeTen
-        // 
+        //
         this.radioSizeTen.AutoSize = true;
         this.radioSizeTen.Location = new System.Drawing.Point(11, 43);
         this.radioSizeTen.Name = "radioSizeTen";
@@ -224,9 +224,9 @@
         this.radioSizeTen.TabIndex = 1;
         this.radioSizeTen.Text = "10";
         this.radioSizeTen.CheckedChanged += new System.EventHandler(this.radioSizeTen_CheckedChanged);
-        // 
+        //
         // groupBox4
-        // 
+        //
         this.groupBox4.Controls.Add(this.radioSizeTwelve);
         this.groupBox4.Controls.Add(this.radioSizeTen);
         this.groupBox4.Controls.Add(this.radioSizeOriginal);
@@ -237,9 +237,9 @@
         this.groupBox4.TabIndex = 3;
         this.groupBox4.TabStop = false;
         this.groupBox4.Text = "Font Size";
-        // 
+        //
         // radioSizeOriginal
-        // 
+        //
         this.radioSizeOriginal.AutoSize = true;
         this.radioSizeOriginal.Location = new System.Drawing.Point(11, 20);
         this.radioSizeOriginal.Name = "radioSizeOriginal";
@@ -247,9 +247,9 @@
         this.radioSizeOriginal.TabIndex = 0;
         this.radioSizeOriginal.Text = "Original";
         this.radioSizeOriginal.CheckedChanged += new System.EventHandler(this.radioSizeOriginal_CheckedChanged);
-        // 
+        //
         // radioStyleItalic
-        // 
+        //
         this.radioStyleItalic.AutoSize = true;
         this.radioStyleItalic.Location = new System.Drawing.Point(11, 43);
         this.radioStyleItalic.Name = "radioStyleItalic";
@@ -257,9 +257,9 @@
         this.radioStyleItalic.TabIndex = 1;
         this.radioStyleItalic.Text = "Italic";
         this.radioStyleItalic.CheckedChanged += new System.EventHandler(this.radioStyleItalic_CheckedChanged);
-        // 
+        //
         // groupBox5
-        // 
+        //
         this.groupBox5.Controls.Add(this.radioStyleItalic);
         this.groupBox5.Controls.Add(this.radioStyleOriginal);
         this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,9 +269,9 @@
         this.groupBox5.TabIndex = 4;
         this.groupBox5.TabStop = false;
         this.groupBox5.Text = "Font Style";
-        // 
+        //
         // radioStyleOriginal
-        // 
+        //
         this.radioStyleOriginal.AutoSize = true;
         this.radioStyleOriginal.Location = new System.Drawing.Point(11, 20);
         this.radioStyleOriginal.Name = "radioStyleOriginal";
@@ -279,9 +279,9 @@
         this.radioStyleOriginal.TabIndex = 0;
         this.radioStyleOriginal.Text = "Normal";
         this.radioStyleOriginal.CheckedChanged += new System.EventHandler(this.radioStyleOriginal_CheckedChanged);
-        // 
+        //
         // radioWeightBold
-        // 
+        //
         this.radioWeightBold.AutoSize = true;
         this.radioWeightBold.Location = new System.Drawing.Point(11, 43);
         this.radioWeightBold.Name = "radioWeightBold";
@@ -289,9 +289,9 @@
         this.radioWeightBold.TabIndex = 1;
         this.radioWeightBold.Text = "Bold";
         this.radioWeightBold.CheckedChanged += new System.EventHandler(this.radioWeightBold_CheckedChanged);
-        // 
+        //
         // groupBox6
-        // 
+        //
         this.groupBox6.Controls.Add(this.radioWeightBold);
         this.groupBox6.Controls.Add(this.radioWeightOriginal);
         this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -301,9 +301,9 @@
         this.groupBox6.TabIndex = 5;
         this.groupBox6.TabStop = false;
         this.groupBox6.Text = "Font Weight";
-        // 
+        //
         // radioWeightOriginal
-        // 
+        //
         this.radioWeightOriginal.AutoSize = true;
         this.radioWeightOriginal.Location = new System.Drawing.Point(11, 20);
         this.radioWeightOriginal.Name = "radioWeightOriginal";
@@ -311,18 +311,18 @@
         this.radioWeightOriginal.TabIndex = 0;
         this.radioWeightOriginal.Text = "Original";
         this.radioWeightOriginal.CheckedChanged += new System.EventHandler(this.radioWeightOriginal_CheckedChanged);
-        // 
+        //
         // lblName
-        // 
+        //
         this.lblName.AutoSize = true;
         this.lblName.Location = new System.Drawing.Point(6, 24);
         this.lblName.Name = "lblName";
         this.lblName.Size = new System.Drawing.Size(43, 13);
         this.lblName.TabIndex = 7;
         this.lblName.Text = "Name:";
-        // 
+        //
         // lblAddress
-        // 
+        //
         this.lblAddress.AutoSize = true;
         this.lblAddress.Location = new System.Drawing.Point(6, 47);
         this.lblAddress.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
@@ -330,9 +330,9 @@
         this.lblAddress.Size = new System.Drawing.Size(94, 13);
         this.lblAddress.TabIndex = 8;
         this.lblAddress.Text = "Street Address:";
-        // 
+        //
         // lblState
-        // 
+        //
         this.lblState.AutoSize = true;
         this.lblState.Location = new System.Drawing.Point(8, 97);
         this.lblState.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
@@ -340,9 +340,9 @@
         this.lblState.Size = new System.Drawing.Size(41, 13);
         this.lblState.TabIndex = 10;
         this.lblState.Text = "State:";
-        // 
+        //
         // lblZip
-        // 
+        //
         this.lblZip.AutoSize = true;
         this.lblZip.Location = new System.Drawing.Point(9, 121);
         this.lblZip.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
@@ -350,9 +350,9 @@
         this.lblZip.Size = new System.Drawing.Size(29, 13);
         this.lblZip.TabIndex = 11;
         this.lblZip.Text = "Zip:";
-        // 
+        //
         // lblCity
-        // 
+        //
         this.lblCity.AutoSize = true;
         this.lblCity.Location = new System.Drawing.Point(6, 70);
         this.lblCity.Margin = new System.Windows.Forms.Padding(3, 1, 2, 1);
@@ -360,9 +360,9 @@
         this.lblCity.Size = new System.Drawing.Size(32, 13);
         this.lblCity.TabIndex = 9;
         this.lblCity.Text = "City:";
-        // 
+        //
         // groupBox7
-        // 
+        //
         this.groupBox7.Controls.Add(this.lblZip);
         this.groupBox7.Controls.Add(this.lblState);
         this.groupBox7.Controls.Add(this.lblCity);
@@ -375,9 +375,9 @@
         this.groupBox7.TabIndex = 12;
         this.groupBox7.TabStop = false;
         this.groupBox7.Text = "Data from control";
-        // 
+        //
         // tableLayoutPanel1
-        // 
+        //
         this.tableLayoutPanel1.AutoSize = true;
         this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
         this.tableLayoutPanel1.ColumnCount = 2;
@@ -403,9 +403,9 @@
         this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
         this.tableLayoutPanel1.Size = new System.Drawing.Size(661, 550);
         this.tableLayoutPanel1.TabIndex = 13;
-        // 
+        //
         // Form1
-        // 
+        //
         this.AutoScaleBaseSize = new System.Drawing.Size(6, 13);
         this.AutoSize = true;
         this.ClientSize = new System.Drawing.Size(661, 550);

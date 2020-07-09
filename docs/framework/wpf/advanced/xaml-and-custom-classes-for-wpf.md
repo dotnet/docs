@@ -10,7 +10,7 @@ ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 # XAML and Custom Classes for WPF
 XAML as implemented in common language runtime (CLR) frameworks supports the ability to define a custom class or structure in any common language runtime (CLR) language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
 
-<a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>   
+<a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>
 ## Custom Classes in Applications or Assemblies  
  Custom classes that are used in XAML can be defined in two distinct ways: within the code-behind or other code that produces the primary [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application, or as a class in a separate assembly, such as an executable or DLL used as a class library. Each of these approaches has particular advantages and disadvantages.  
   
@@ -20,7 +20,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 - Whether defined in the same or different assembly, custom classes need to be mapped between CLR  namespace and XML  namespace in order to be used in XAML as elements. See [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
-<a name="Requirements_for_a_Custom_Class_as_a_XAML_Element"></a>   
+<a name="Requirements_for_a_Custom_Class_as_a_XAML_Element"></a>
 ## Requirements for a Custom Class as a XAML Element  
  In order to be able to be instantiated as an object element, your class must meet the following requirements:  
   
@@ -33,7 +33,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
 ### Structures  
  Structures that you define as custom types are always able to be constructed in XAML  in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] .This is because the CLR compilers implicitly create a parameterless constructor for a structure that initializes all property values to their defaults. In some cases, the default construction behavior and/or object element usage for a structure is not desirable. This might be because the structure is intended to fill values and function conceptually as a union, where the values contained might have mutually exclusive interpretations and thus none of its properties are settable. A [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] example of such a structure is <xref:System.Windows.GridLength>. Generally, such structures should implement a type converter such that the values can be expressed in attribute form, using string conventions that create the different interpretations or modes of the structure's values. The structure should also expose similar behavior for code construction through a non-parameterless constructor.  
   
-<a name="Requirements_for_Properties_of_a_Custom_Class_as_XAML"></a>   
+<a name="Requirements_for_Properties_of_a_Custom_Class_as_XAML"></a>
 ## Requirements for Properties of a Custom Class as XAML Attributes  
  Properties must reference a by-value type (such as a primitive), or use a class for type that has either a parameterless constructor or a dedicated type converter that a XAML processor can access. In the CLR XAML implementation, XAML processors either find such converters through native support for language primitives, or through application of <xref:System.ComponentModel.TypeConverterAttribute> to a type or member in backing type definitions  
   
@@ -58,14 +58,14 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
 ### Writing and Attributing a Type Converter  
  You occasionally will need to write a custom <xref:System.ComponentModel.TypeConverter> derived class to provide type conversion for your property type. For instructions on how to derive from and create a type converter that can support XAML usages, and how to apply the <xref:System.ComponentModel.TypeConverterAttribute>, see [TypeConverters and XAML](typeconverters-and-xaml.md).  
   
-<a name="Requirements_for_Events_of_a_Custom_Class_as_XAML"></a>   
+<a name="Requirements_for_Events_of_a_Custom_Class_as_XAML"></a>
 ## Requirements for XAML Event Handler Attribute Syntax on Events of a Custom Class  
  To be usable as a CLR event, the event must be exposed as a public event on a class that supports a parameterless constructor, or on an abstract class where the event can be accessed on derived classes. In order to be used conveniently as a routed event, your CLR event should implement explicit `add` and `remove` methods, which add and remove handlers for the CLR event signature and forward those handlers to the <xref:System.Windows.UIElement.AddHandler%2A> and <xref:System.Windows.UIElement.RemoveHandler%2A> methods. These methods add or remove the handlers to the routed event handler store on the instance that the event is attached to.  
   
 > [!NOTE]
 > It is possible to register handlers directly for routed events using <xref:System.Windows.UIElement.AddHandler%2A>, and to deliberately not define a CLR event that exposes the routed event. This is not generally recommended because the event will not enable XAML attribute syntax for attaching handlers, and your resulting class will offer a less transparent XAML view of that type's capabilities.  
   
-<a name="Collection_Properties"></a>   
+<a name="Collection_Properties"></a>
 ## Writing Collection Properties  
  Properties that take a collection type have a XAML syntax that enables you to specify objects that are added to the collection. This syntax has two notable features.  
   
@@ -92,7 +92,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
  You can implement a custom collection type for your collection property. Because of implicit collection property treatment, the custom collection type does not need to provide a parameterless constructor in order to be used in XAML implicitly. However, you can optionally provide a parameterless constructor for the collection type. This can be a worthwhile practice. Unless you do provide a parameterless constructor, you cannot explicitly declare the collection as an object element. Some markup authors might prefer to see the explicit collection as a matter of markup style. Also, a parameterless constructor can simplify the initialization requirements when you create new objects that use your collection type as a property value.  
   
-<a name="XAMLCONtent"></a>   
+<a name="XAMLCONtent"></a>
 ## Declaring XAML Content Properties  
  The XAML language defines the concept of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] content property. Each class that is usable in object syntax can have exactly one XAML content property. To declare a property to be the XAML content property for your class, apply the <xref:System.Windows.Markup.ContentPropertyAttribute> as part of the class definition. Specify the name of the intended XAML content property as the <xref:System.Windows.Markup.ContentPropertyAttribute.Name%2A> in the attribute. The property is specified as a string by name, not as a reflection construct such as <xref:System.Reflection.PropertyInfo>.  
   
@@ -100,7 +100,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
  Some existing XAML content properties use the property type of `Object`. This enables a XAML content property that can take primitive values such as a <xref:System.String> as well as taking a single reference object value. If you follow this model, your type is responsible for type determination as well as the handling of possible types. The typical reason for an <xref:System.Object> content type is to support both a simple means of adding object content as a string (which receives a default presentation treatment), or an advanced means of adding object content that specifies a non-default presentation or additional data.  
   
-<a name="Serializing"></a>   
+<a name="Serializing"></a>
 ## Serializing XAML  
  For certain scenarios, such as if you are a control author, you may also want to assure that any object representation that can be instantiated in XAML can also be serialized back to equivalent XAML markup. Serialization requirements are not described in this topic. See [Control Authoring Overview](../controls/control-authoring-overview.md) and [Element Tree and Serialization](element-tree-and-serialization.md).  
   

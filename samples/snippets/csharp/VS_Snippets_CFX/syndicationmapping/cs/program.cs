@@ -93,7 +93,7 @@ namespace FeedMapping
 
             //SyndicationLink link = new SyndicationLink(new Uri("http://some/link"), "alternate", "Link Title", "text/html", 2048);
             //feed.Links.Add(link);
-          
+
             ///*
             //// Add custom attribute
             //XmlQualifiedName xqName = new XmlQualifiedName("CustomFeedAttribute");

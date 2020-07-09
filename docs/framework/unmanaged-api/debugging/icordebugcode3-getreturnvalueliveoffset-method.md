@@ -26,8 +26,8 @@ For a specified IL offset, gets the native offsets where a breakpoint should be 
 ```cpp
 HRESULT GetReturnValueLiveOffset(  
     [in] ULONG32 ILoffset,  
-    [in] ULONG32 bufferSize,   
-    [out] ULONG32 *pFetched,   
+    [in] ULONG32 bufferSize,
+    [out] ULONG32 *pFetched,
     [out, size_is(buffersize), length_is(*pFetched)] ULong32 pOffsets[]  
 );  
 ```  
@@ -62,7 +62,7 @@ HRESULT GetReturnValueLiveOffset(
  The `ICorDebugCode3::GetReturnValueLiveOffset` method is available only on x86-based and AMD64 systems.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

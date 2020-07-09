@@ -19,7 +19,7 @@ ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 # How to: Count, Sum, or Average Data by Using LINQ (Visual Basic)
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
- The following example shows how to create a new application that performs queries against a SQL Server database. The sample counts, sums, and averages the results by using the `Aggregate` and `Group By` clauses. For more information, see [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).  
+ The following example shows how to create a new application that performs queries against a SQL Server database. The sample counts, sums, and averages the results by using the `Aggregate` and `Group By` clauses. For more information, see [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../language-reference/queries/group-by-clause.md).  
   
  The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
@@ -73,9 +73,9 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 ## See also
 
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ](index.md)
+- [Queries](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
-- [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)
-- [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)
+- [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md)
+- [Group By Clause](../../../language-reference/queries/group-by-clause.md)

@@ -34,8 +34,8 @@ Any expression that is legal within an `As` clause in a `Dim` statement, that is
 > [!TIP]
 > You can also use the following functions to perform a type conversion:
 >
-> - Type conversion functions such as `CByte`, `CDbl`, and `CInt` that perform a conversion to a specific data type. For more information, see [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md).
-> - [DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md) or [TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md). These operators require that one type inherit from or implement the other type. They can provide somewhat better performance than `CType` when converting to and from the `Object` data type.
+> - Type conversion functions such as `CByte`, `CDbl`, and `CInt` that perform a conversion to a specific data type. For more information, see [Type Conversion Functions](type-conversion-functions.md).
+> - [DirectCast Operator](../operators/directcast-operator.md) or [TryCast Operator](../operators/trycast-operator.md). These operators require that one type inherit from or implement the other type. They can provide somewhat better performance than `CType` when converting to and from the `Object` data type.
 
 `CType` is compiled inline, which means that the conversion code is part of the code that evaluates the expression. In some cases, the code runs faster because no procedures are called to perform the conversion.
 
@@ -47,7 +47,7 @@ If the data type of `expression` or `typename` is a class or structure you've de
 
 ## Overloading
 
-The `CType` operator can also be overloaded on a class or structure defined outside your code. If your code converts to or from such a class or structure, be sure you understand the behavior of its `CType` operator. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).
+The `CType` operator can also be overloaded on a class or structure defined outside your code. If your code converts to or from such a class or structure, be sure you understand the behavior of its `CType` operator. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).
 
 ## Converting Dynamic Objects
 
@@ -59,14 +59,14 @@ The following example uses the `CType` function to convert an expression to the 
 
 [!code-vb[VbVbalrFunctions#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#24)]
 
-For additional examples, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).
+For additional examples, see [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).
 
 ## See also
 
 - <xref:System.OverflowException>
 - <xref:System.InvalidCastException>
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)
-- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Type Conversion Functions](type-conversion-functions.md)
+- [Conversion Functions](conversion-functions.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
 - [Type Conversion in the .NET Framework](../../../standard/base-types/type-conversion.md)

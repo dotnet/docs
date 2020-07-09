@@ -33,7 +33,7 @@ class CustomBinder : Binder
         return null;
     }
 
-    public override FieldInfo BindToField(BindingFlags bindingAttr, 
+    public override FieldInfo BindToField(BindingFlags bindingAttr,
         FieldInfo[] match, object value, CultureInfo culture)
     {
         if (match == null)
@@ -196,7 +196,7 @@ public class CustomBinderDriver
     {
         Console.WriteLine("PrintValue({0})", value);
     }
-    
+
     public static void PrintValue(string value)
     {
         Console.WriteLine("PrintValue\"{0}\")", value);

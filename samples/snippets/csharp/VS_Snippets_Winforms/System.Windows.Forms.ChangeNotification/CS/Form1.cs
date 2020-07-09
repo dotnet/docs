@@ -11,7 +11,7 @@ namespace UpdateBindings
     //<snippet1>
     // This form demonstrates using a BindingSource to bind
     // a list to a simple user control. The list does not
-    // raise change notifications, however the DemoCustomer type 
+    // raise change notifications, however the DemoCustomer type
     // in the list does. In addition, an event is raised when the DataSource
     // property of the user control changes.
     public class Form1 : System.Windows.Forms.Form
@@ -19,7 +19,7 @@ namespace UpdateBindings
         // This button causes the value of a list element to be changed.
         private Button changeItemBtn = new Button();
 
-        // This is the DataGridView control that displays the contents 
+        // This is the DataGridView control that displays the contents
         // of the list.
         private CustomerControl customerControl1 = new CustomerControl();
 
@@ -40,7 +40,7 @@ namespace UpdateBindings
             this.Controls.Add(customerControl1);
             this.Size = new Size(800, 200);
             this.Load += new EventHandler(Form1_Load);
-            this.customerControl1.DataSourceChanged +=  
+            this.customerControl1.DataSourceChanged +=
                 new EventHandler(customerControl1_DataSourceChanged);
         }
         private void customerControl1_DataSourceChanged(Object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace UpdateBindings
             List<DemoCustomer> customerList =
                 this.customersBindingSource.DataSource as List<DemoCustomer>;
 
-            // Change the value of the CompanyName property for the 
+            // Change the value of the CompanyName property for the
             // first item in the list.
             customerList[0].CompanyName = "Tailspin Toys";
         }
@@ -85,7 +85,7 @@ namespace UpdateBindings
 
     //</snippet1>
     //<snippet3>
-    // This class implements a simple user control 
+    // This class implements a simple user control
     // that demonstrates how to apply the propertyNameChanged pattern.
     [ComplexBindingProperties("DataSource", "DataMember")]
     public class CustomerControl : UserControl
@@ -126,12 +126,12 @@ namespace UpdateBindings
                 DataSourceChanged(this, new EventArgs());
             }
         }
-       
+
         public CustomerControl()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1.ColumnHeadersHeightSizeMode = 
+            this.dataGridView1.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.dataGridView1.Location = new System.Drawing.Point(19, 55);
@@ -151,7 +151,7 @@ namespace UpdateBindings
     //</snippet3>
 
     //<snippet2>
-    // This class implements a simple customer type 
+    // This class implements a simple customer type
     // that implements the IPropertyChange interface.
     public class DemoCustomer : INotifyPropertyChanged
     {
@@ -198,7 +198,7 @@ namespace UpdateBindings
         public string CompanyName
         {
             get {return this.companyNameValue;}
-           
+
             set
             {
                 if (value != this.companyNameValue)
@@ -211,8 +211,8 @@ namespace UpdateBindings
         public string PhoneNumber
         {
             get { return this.phoneNumberValue; }
-            
-            set 
+
+            set
             {
                 if (value != this.phoneNumberValue)
                 {

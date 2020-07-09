@@ -50,7 +50,7 @@ The .NET Framework uses permissions to help protect resources and data. Where yo
   
 ```vb  
 Private Sub ButtonOpen_Click(ByVal sender As System.Object, _  
-    ByVal e As System.EventArgs) Handles ButtonOpen.Click   
+    ByVal e As System.EventArgs) Handles ButtonOpen.Click
   
     Dim editingFileName as String = ""  
     Dim saveAllowed As Boolean = True  
@@ -58,9 +58,9 @@ Private Sub ButtonOpen_Click(ByVal sender As System.Object, _
     ' Displays the OpenFileDialog.  
     If (OpenFileDialog1.ShowDialog() = DialogResult.OK) Then  
         Dim userStream as System.IO.Stream  
-        Try   
+        Try
             ' Opens the file stream for the file selected by the user.  
-            userStream =OpenFileDialog1.OpenFile()   
+            userStream =OpenFileDialog1.OpenFile()
             Me.RtfBoxMain.LoadFile(userStream, _  
                 RichTextBoxStreamType.PlainText)  
         Finally  
@@ -70,14 +70,14 @@ Private Sub ButtonOpen_Click(ByVal sender As System.Object, _
         ' Tries to get the file name selected by the user.  
         ' Failure means that the application does not have  
         ' unrestricted permission to the file.  
-        Try   
+        Try
             editingFileName = OpenFileDialog1.FileName  
         Catch ex As Exception  
-            If TypeOf ex Is System.Security.SecurityException Then   
-                ' The application does not have unrestricted permission   
+            If TypeOf ex Is System.Security.SecurityException Then
+                ' The application does not have unrestricted permission
                 ' to the file so the save feature will be disabled.  
-                saveAllowed = False   
-            Else   
+                saveAllowed = False
+            Else
                 Throw ex  
             End If  
         End Try  
@@ -86,16 +86,16 @@ End Sub
 ```  
   
 ```csharp  
-private void ButtonOpen_Click(object sender, System.EventArgs e)   
+private void ButtonOpen_Click(object sender, System.EventArgs e)
 {  
     String editingFileName = "";  
     Boolean saveAllowed = true;  
   
     // Displays the OpenFileDialog.  
-    if (openFileDialog1.ShowDialog() == DialogResult.OK)   
+    if (openFileDialog1.ShowDialog() == DialogResult.OK)
     {  
         // Opens the file stream for the file selected by the user.  
-        using (System.IO.Stream userStream = openFileDialog1.OpenFile())   
+        using (System.IO.Stream userStream = openFileDialog1.OpenFile())
         {  
             this.RtfBoxMain.LoadFile(userStream,  
                 RichTextBoxStreamType.PlainText);  
@@ -105,19 +105,19 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
         // Tries to get the file name selected by the user.  
         // Failure means that the application does not have  
         // unrestricted permission to the file.  
-        try   
+        try
         {  
             editingFileName = openFileDialog1.FileName;  
-        }   
-        catch (Exception ex)   
+        }
+        catch (Exception ex)
         {  
-            if (ex is System.Security.SecurityException)   
+            if (ex is System.Security.SecurityException)
             {  
-                // The application does not have unrestricted permission   
+                // The application does not have unrestricted permission
                 // to the file so the save feature will be disabled.  
-                saveAllowed = false;   
-            }   
-            else   
+                saveAllowed = false;
+            }
+            else
             {  
                 throw ex;  
             }  
@@ -135,11 +135,11 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
  The following example uses isolated storage to write data to a file located in a store. The example requires <xref:System.Security.Permissions.IsolatedStorageFilePermission> and the <xref:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser> enumeration value. The example demonstrates reading and writing certain property values of the <xref:System.Windows.Forms.Button> control to a file in isolated storage. The `Read` function would be called after the application starts and the `Write` function would be called before the application ends. The example requires that the `Read` and `Write` functions exist as members of a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.Button> control named `MainButton`.  
   
 ```vb  
-' Reads the button options from the isolated storage. Uses Default values   
+' Reads the button options from the isolated storage. Uses Default values
 ' for the button if the options file does not exist.  
-Public Sub Read()   
+Public Sub Read()
     Dim isoStore As System.IO.IsolatedStorage.IsolatedStorageFile = _  
-        System.IO.IsolatedStorage.IsolatedStorageFile. _   
+        System.IO.IsolatedStorage.IsolatedStorageFile. _
         GetUserStoreForDomain()  
   
     Dim filename As String = "options.txt"  
@@ -148,28 +148,28 @@ Public Sub Read()
         If (isoStore.GetFileNames(filename).GetLength(0) <> 0) Then  
   
             ' Opens the file because it exists.  
-            Dim isos As New System.IO.IsolatedStorage.IsolatedStorageFileStream _   
+            Dim isos As New System.IO.IsolatedStorage.IsolatedStorageFileStream _
                  (filename, IO.FileMode.Open,isoStore)  
             Dim reader as System.IO.StreamReader  
-            Try   
+            Try
                 reader = new System.IO.StreamReader(isos)  
   
                 ' Reads the values stored.  
                 Dim converter As System.ComponentModel.TypeConverter  
-                converter = System.ComponentModel.TypeDescriptor.GetConverter _   
+                converter = System.ComponentModel.TypeDescriptor.GetConverter _
                     (GetType(Color))  
   
-                Me.MainButton.BackColor = _   
-                        CType(converter.ConvertFromString _   
+                Me.MainButton.BackColor = _
+                        CType(converter.ConvertFromString _
                          (reader.ReadLine()), Color)  
                 me.MainButton.ForeColor = _  
-                        CType(converter.ConvertFromString _   
+                        CType(converter.ConvertFromString _
                          (reader.ReadLine()), Color)  
   
-                converter = System.ComponentModel.TypeDescriptor.GetConverter _   
+                converter = System.ComponentModel.TypeDescriptor.GetConverter _
                     (GetType(Font))  
                 me.MainButton.Font = _  
-                        CType(converter.ConvertFromString _   
+                        CType(converter.ConvertFromString _
                          (reader.ReadLine()), Font)  
   
             Catch ex As Exception  
@@ -186,13 +186,13 @@ Public Sub Read()
 End Sub  
   
 ' Writes the button options to the isolated storage.  
-Public Sub Write()   
+Public Sub Write()
     Dim isoStore As System.IO.IsolatedStorage.IsolatedStorageFile = _  
-        System.IO.IsolatedStorage.IsolatedStorageFile. _   
+        System.IO.IsolatedStorage.IsolatedStorageFile. _
         GetUserStoreForDomain()  
   
     Dim filename As String = "options.txt"  
-    Try   
+    Try
         ' Checks if the file exists, and if it does, tries to delete it.  
         If (isoStore.GetFileNames(filename).GetLength(0) <> 0) Then  
             isoStore.DeleteFile(filename)  
@@ -203,21 +203,21 @@ Public Sub Write()
   
     ' Creates the options.txt file and writes the button options to it.  
     Dim writer as System.IO.StreamWriter  
-    Try   
-        Dim isos As New System.IO.IsolatedStorage.IsolatedStorageFileStream _   
+    Try
+        Dim isos As New System.IO.IsolatedStorage.IsolatedStorageFileStream _
              (filename, IO.FileMode.CreateNew, isoStore)  
   
         writer = New System.IO.StreamWriter(isos)  
         Dim converter As System.ComponentModel.TypeConverter  
   
-        converter = System.ComponentModel.TypeDescriptor.GetConverter _   
+        converter = System.ComponentModel.TypeDescriptor.GetConverter _
            (GetType(Color))  
         writer.WriteLine(converter.ConvertToString( _  
             Me.MainButton.BackColor))  
         writer.WriteLine(converter.ConvertToString( _  
             Me.MainButton.ForeColor))  
   
-        converter = System.ComponentModel TypeDescriptor.GetConverter _   
+        converter = System.ComponentModel TypeDescriptor.GetConverter _
            (GetType(Font))  
         writer.WriteLine(converter.ConvertToString( _  
             Me.MainButton.Font))  
@@ -232,11 +232,11 @@ End Sub
 ```  
   
 ```csharp  
-// Reads the button options from the isolated storage. Uses default values   
+// Reads the button options from the isolated storage. Uses default values
 // for the button if the options file does not exist.  
-public void Read()   
+public void Read()
 {  
-    System.IO.IsolatedStorage.IsolatedStorageFile isoStore =   
+    System.IO.IsolatedStorage.IsolatedStorageFile isoStore =
         System.IO.IsolatedStorage.IsolatedStorageFile.  
         GetUserStoreForDomain();  
   
@@ -244,14 +244,14 @@ public void Read()
     try  
     {  
         // Checks to see if the options.txt file exists.  
-        if (isoStore.GetFileNames(filename).GetLength(0) != 0)   
+        if (isoStore.GetFileNames(filename).GetLength(0) != 0)
         {  
             // Opens the file because it exists.  
-            System.IO.IsolatedStorage.IsolatedStorageFileStream isos =   
+            System.IO.IsolatedStorage.IsolatedStorageFileStream isos =
                 new System.IO.IsolatedStorage.IsolatedStorageFileStream  
                     (filename, System.IO.FileMode.Open,isoStore);  
             System.IO.StreamReader reader = null;  
-            try   
+            try
             {  
                 reader = new System.IO.StreamReader(isos);  
   
@@ -259,17 +259,17 @@ public void Read()
                 TypeConverter converter ;  
                 converter = TypeDescriptor.GetConverter(typeof(Color));  
   
-                this.MainButton.BackColor =   
+                this.MainButton.BackColor =
                  (Color)(converter.ConvertFromString(reader.ReadLine()));  
-                this.MainButton.ForeColor =   
+                this.MainButton.ForeColor =
                  (Color)(converter.ConvertFromString(reader.ReadLine()));  
   
                 converter = TypeDescriptor.GetConverter(typeof(Font));  
-                this.MainButton.Font =   
+                this.MainButton.Font =
                   (Font)(converter.ConvertFromString(reader.ReadLine()));  
             }  
             catch (Exception ex)  
-            {   
+            {
                 System.Diagnostics.Debug.WriteLine  
                      ("Cannot read options " + ex.ToString());  
             }  
@@ -278,8 +278,8 @@ public void Read()
                 reader.Close();  
             }  
         }  
-    }   
-    catch (Exception ex)   
+    }
+    catch (Exception ex)
     {  
         System.Diagnostics.Debug.WriteLine  
             ("Cannot read options " + ex.ToString());  
@@ -287,22 +287,22 @@ public void Read()
 }  
   
 // Writes the button options to the isolated storage.  
-public void Write()   
+public void Write()
 {  
-    System.IO.IsolatedStorage.IsolatedStorageFile isoStore =   
+    System.IO.IsolatedStorage.IsolatedStorageFile isoStore =
         System.IO.IsolatedStorage.IsolatedStorageFile.  
         GetUserStoreForDomain();  
   
     string filename = "options.txt";  
-    try   
+    try
     {  
         // Checks if the file exists and, if it does, tries to delete it.  
-        if (isoStore.GetFileNames(filename).GetLength(0) != 0)   
+        if (isoStore.GetFileNames(filename).GetLength(0) != 0)
         {  
             isoStore.DeleteFile(filename);  
         }  
     }  
-    catch (Exception ex)   
+    catch (Exception ex)
     {  
         System.Diagnostics.Debug.WriteLine  
             ("Cannot delete file " + ex.ToString());  
@@ -310,10 +310,10 @@ public void Write()
   
     // Creates the options file and writes the button options to it.  
     System.IO.StreamWriter writer = null;  
-    try   
+    try
     {  
-        System.IO.IsolatedStorage.IsolatedStorageFileStream isos = new   
-            System.IO.IsolatedStorage.IsolatedStorageFileStream(filename,   
+        System.IO.IsolatedStorage.IsolatedStorageFileStream isos = new
+            System.IO.IsolatedStorage.IsolatedStorageFileStream(filename,
             System.IO.FileMode.CreateNew,isoStore);  
   
         writer = new System.IO.StreamWriter(isos);  
@@ -331,7 +331,7 @@ public void Write()
   
     }  
     catch (Exception ex)  
-    {   
+    {
         System.Diagnostics.Debug.WriteLine  
            ("Cannot write options " + ex.ToString());  
     }  

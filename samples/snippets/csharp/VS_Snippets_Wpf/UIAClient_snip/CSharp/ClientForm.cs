@@ -3,8 +3,8 @@
  * File: ClientForm.cs
  *
  * Description: Miscellaneous snippets illustrating client UIA functionality
- * 
- * 
+ *
+ *
  *************************************************************************************************/
 
 using System;
@@ -22,7 +22,7 @@ namespace CustomElementClient
 {
     public partial class Form1 : Form
     {
-// <Snippet185> 
+// <Snippet185>
         public struct CursorPoint
         {
             public int X;
@@ -70,7 +70,7 @@ namespace CustomElementClient
 
         // <Snippet171>
         /// <summary>
-        /// Walks the UI Automation tree and adds the control type of each element it finds 
+        /// Walks the UI Automation tree and adds the control type of each element it finds
         /// in the control view to a TreeView.
         /// </summary>
         /// <param name="rootElement">The root of the search on this iteration.</param>
@@ -84,8 +84,8 @@ namespace CustomElementClient
         /// </remarks>
         private void WalkControlElements(AutomationElement rootElement, TreeNode treeNode)
         {
-            // Conditions for the basic views of the subtree (content, control, and raw) 
-            // are available as fields of TreeWalker, and one of these is used in the 
+            // Conditions for the basic views of the subtree (content, control, and raw)
+            // are available as fields of TreeWalker, and one of these is used in the
             // following code.
             AutomationElement elementNode = TreeWalker.ControlViewWalker.GetFirstChild(rootElement);
 
@@ -100,7 +100,7 @@ namespace CustomElementClient
 
 // <Snippet174>
         /// <summary>
-        /// Walks the UI Automation tree and adds the control type of each enabled control 
+        /// Walks the UI Automation tree and adds the control type of each enabled control
         /// element it finds to a TreeView.
         /// </summary>
         /// <param name="rootElement">The root of the search on this iteration.</param>
@@ -132,7 +132,7 @@ namespace CustomElementClient
         /// Find a UI Automation child element by ID.
         /// </summary>
         /// <param name="controlName">Name of the control, such as "button1"</param>
-        /// <param name="parentElement">Parent element, such as an application window, or the 
+        /// <param name="parentElement">Parent element, such as an application window, or the
         /// AutomationElement.RootElement when searching for the application window.</param>
         /// <returns>The UI Automation element.</returns>
         private AutomationElement FindChildElement(String controlName, AutomationElement rootElement)
@@ -223,7 +223,7 @@ namespace CustomElementClient
         //{
         //    try
         //    {
-        //        Automation.RemoveAutomationEventHandler(SelectionItemPattern.ElementSelectedEvent, 
+        //        Automation.RemoveAutomationEventHandler(SelectionItemPattern.ElementSelectedEvent,
         //            elementList, OnEvent);
         //    }
         //    catch
@@ -381,14 +381,14 @@ namespace CustomElementClient
 
         #region Selection and SelectionItem pattern
 
-        // <Snippet103> 
+        // <Snippet103>
         /// <summary>
         /// Sets the focus to a list and selects a string item in that list.
         /// </summary>
         /// <param name="listElement">The list element.</param>
         /// <param name="itemText">The text to select.</param>
         /// <remarks>
-        /// This deselects any currently selected items. To add the item to the current selection 
+        /// This deselects any currently selected items. To add the item to the current selection
         /// in a multiselect list, use AddToSelection instead of Select.
         /// </remarks>
         public void SelectListItem(AutomationElement listElement, String itemText)
@@ -441,7 +441,7 @@ namespace CustomElementClient
         }
         // </Snippet104>
 
-        // <Snippet105> 
+        // <Snippet105>
         void AddListItemToSelection(AutomationElement listItem)
         {
             if (listItem == null) throw new ArgumentException();
@@ -467,7 +467,7 @@ namespace CustomElementClient
         /// </summary>
         /// <param name="elementList">Element from which to retrieve a child element.</param>
         /// <remarks>
-        /// This code demonstrates various aspects of caching. It is not intended to be 
+        /// This code demonstrates various aspects of caching. It is not intended to be
         /// an example of a useful method.
         /// </remarks>
         private void CachePropertiesByActivate(AutomationElement elementList)
@@ -517,7 +517,7 @@ namespace CustomElementClient
             // The following line will raise an exception, because the HelpText property was not cached.
             /*** String itemHelp = elementListItem.Cached.HelpText; ***/
 
-            // Similarly, pattern properties that were not specified in the CacheRequest cannot be 
+            // Similarly, pattern properties that were not specified in the CacheRequest cannot be
             // retrieved from the cache. This would raise an exception.
             /*** bool selected = pattern.Cached.IsSelected; ***/
 
@@ -533,12 +533,12 @@ namespace CustomElementClient
         /// </summary>
         /// <param name="autoElement">Element from which to retrieve a child element.</param>
         /// <remarks>
-        /// This code demonstrates various aspects of caching. It is not intended to be 
+        /// This code demonstrates various aspects of caching. It is not intended to be
         /// an example of a useful method.
         /// </remarks>
         private void CachePropertiesByPush(AutomationElement elementList)
         {
-            // <Snippet183> 
+            // <Snippet183>
             // Set up the request.
             CacheRequest cacheRequest = new CacheRequest();
 
@@ -561,8 +561,8 @@ namespace CustomElementClient
             AutomationElement elementListItem = elementList.FindFirst(TreeScope.Children, cond);
 
             // At this point, you could call another method that creates a CacheRequest and calls Push/Pop.
-            // While that method was retrieving automation elements, the CacheRequest set in this method 
-            // would not be active. 
+            // While that method was retrieving automation elements, the CacheRequest set in this method
+            // would not be active.
 
             // Deactivate the request.
             cacheRequest.Pop();
@@ -586,7 +586,7 @@ namespace CustomElementClient
                 itemName = objName as String;
             }
 
-            // The following call raises an exception, because only the cached properties are available, 
+            // The following call raises an exception, because only the cached properties are available,
             //  as specified by cacheRequest.AutomationElementMode. If AutomationElementMode had its
             //  default value (Full), this call would be valid.
             /*** bool enabled = elementListItem.Current.IsEnabled; ***/
@@ -597,7 +597,7 @@ namespace CustomElementClient
 
         void MiscPropertyCalls(AutomationElement elementList)
         {
-            // <Snippet121> 
+            // <Snippet121>
             // elementList is an AutomationElement.
 
             // The following two calls are equivalent.
@@ -605,7 +605,7 @@ namespace CustomElementClient
             name = elementList.GetCurrentPropertyValue(AutomationElement.NameProperty) as string;
             // </Snippet121>
 
-            // <Snippet122> 
+            // <Snippet122>
             // elementList is an AutomationElement representing a list box.
             // Error-checking is omitted. Assume that elementList is known to support SelectionPattern.
 
@@ -618,7 +618,7 @@ namespace CustomElementClient
                 elementList.GetCurrentPropertyValue(SelectionPattern.CanSelectMultipleProperty);
             // </Snippet122>
 
-            // <Snippet123> 
+            // <Snippet123>
             // elementList is an AutomationElement.
             object help = elementList.GetCurrentPropertyValue(AutomationElement.HelpTextProperty, true);
             if (help == AutomationElement.NotSupported)
@@ -636,14 +636,14 @@ namespace CustomElementClient
         }
 
         // Following is similar to above, but without the redundant comments -- better for a how-to
-        // <Snippet170> 
+        // <Snippet170>
         void PropertyCallsExample(AutomationElement elementList)
         {
             // The following two calls are equivalent.
             string name = elementList.Current.Name;
             name = elementList.GetCurrentPropertyValue(AutomationElement.NameProperty) as string;
 
-            // The following shows how to ignore the default property, which 
+            // The following shows how to ignore the default property, which
             //  would probably be an empty string if the property is not supported.
             //  Passing "false" as the second parameter is equivalent to using the overload
             //  that does not have this parameter.
@@ -688,7 +688,7 @@ namespace CustomElementClient
             }
 
             // Get the list from the combo box.
-            // <Snippet180> 
+            // <Snippet180>
             Condition propCondition1 = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.List);
             AutomationElement listElement = elementCombo.FindFirst(TreeScope.Children, propCondition1);
             // </Snippet180>
@@ -711,7 +711,7 @@ namespace CustomElementClient
             // Update the cache.
             AutomationElement updatedElement = elementCombo.GetUpdatedCache(comboCacheRequest);
 
-            // Retrieve the pattern and the selected item from the cache. This code is here only to 
+            // Retrieve the pattern and the selected item from the cache. This code is here only to
             // demonstrate that the current selection can now be retrieved from the cache. In an application,
             // this would be done only when the information was needed.
             SelectionPattern pattern = updatedElement.GetCachedPattern(SelectionPattern.Pattern) as SelectionPattern;
@@ -735,7 +735,7 @@ namespace CustomElementClient
             cacheRequest.TreeScope = TreeScope.Element | TreeScope.Children;
 
             // Activate the CacheRequest and get the element. Note that the scope of the CacheRequest
-            // is in relation to the object being retrieved: the list box and its children are 
+            // is in relation to the object being retrieved: the list box and its children are
             // cached, not the main window and its children.
             using (cacheRequest.Activate())
             {
@@ -824,12 +824,12 @@ namespace CustomElementClient
             }
             Condition conditions = new AndCondition(
               new PropertyCondition(AutomationElement.IsEnabledProperty, true),
-              new PropertyCondition(AutomationElement.ControlTypeProperty, 
+              new PropertyCondition(AutomationElement.ControlTypeProperty,
                   ControlType.Button)
               );
 
             // Find all children that match the specified conditions.
-            AutomationElementCollection elementCollection = 
+            AutomationElementCollection elementCollection =
                 elementWindowElement.FindAll(TreeScope.Children, conditions);
             return elementCollection;
         }
@@ -853,11 +853,11 @@ namespace CustomElementClient
             // <Snippet179>
             // element is an AutomationElement.
             System.Windows.Point clickablePoint = element.GetClickablePoint();
-            System.Windows.Forms.Cursor.Position = 
+            System.Windows.Forms.Cursor.Position =
                 new System.Drawing.Point((int)clickablePoint.X, (int)clickablePoint.Y);
             // </Snippet179>
 
-            // <Snippet114> 
+            // <Snippet114>
             // element is an AutomationElement.
             AutomationPattern[] patterns = element.GetSupportedPatterns();
             foreach (AutomationPattern pattern in patterns)
@@ -867,7 +867,7 @@ namespace CustomElementClient
             }
             // </Snippet114>
 
-            // <Snippet115> 
+            // <Snippet115>
             AutomationProperty[] properties = element.GetSupportedProperties();
             foreach (AutomationProperty prop in properties)
             {
@@ -876,7 +876,7 @@ namespace CustomElementClient
             }
             // </Snippet115>
 
-            // <Snippet113> 
+            // <Snippet113>
             // element is an AutomationElement.
             object objPattern;
             SelectionPattern selPattern;
@@ -886,7 +886,7 @@ namespace CustomElementClient
             }
             // </Snippet113>
 
-            AutomationElementCollection elementCollection = 
+            AutomationElementCollection elementCollection =
                 FindByMultipleConditions(MainWindowElement);
 
             // <Snippet117>
@@ -902,7 +902,7 @@ namespace CustomElementClient
             // </Snippet118>
             AutomationElement elementElement = elementCollection[0];
 
-            // <Snippet201> 
+            // <Snippet201>
             AutomationElementCollection desktopChildren =
                 AutomationElement.RootElement.FindAll(
                 TreeScope.Children, Condition.TrueCondition);

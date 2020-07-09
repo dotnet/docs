@@ -1,22 +1,23 @@
 ---
 title: "ETW Tracing"
+description: This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the ETWTraceListener.
 ms.date: "03/30/2017"
 ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
 ---
 # ETW Tracing
-This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and includes ETW tracing.  
+This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](getting-started-sample.md) and includes ETW tracing.  
   
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
- This sample assumes that you are familiar with [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md).  
+ This sample assumes that you are familiar with [Tracing and Message Logging](tracing-and-message-logging.md).  
   
  Each trace source in the <xref:System.Diagnostics> tracing model can have multiple trace listeners that determine where and how the data is traced. The type of listener defines the format in which trace data is logged. The following code sample shows how to add the listener to configuration.  
   
 ```xml  
 <system.diagnostics>  
     <sources>  
-        <source name="System.ServiceModel"   
+        <source name="System.ServiceModel"
              switchValue="Verbose,ActivityTracing"  
              propagateActivity="true">  
             <listeners>  
@@ -46,7 +47,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see <https://go.microsoft.com/fwlink/?LinkId=56580>  
   
- When using the ETWTraceListener, traces are logged in binary .etl files. With ServiceModel tracing turned on, all generated traces appear in the same file. Use [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) for viewing .etl and .svclog log files. The viewer creates an end-to-end view of the system that makes it possible to trace a message from its source to its destination and point of consumption.  
+ When using the ETWTraceListener, traces are logged in binary .etl files. With ServiceModel tracing turned on, all generated traces appear in the same file. Use [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) for viewing .etl and .svclog log files. The viewer creates an end-to-end view of the system that makes it possible to trace a message from its source to its destination and point of consumption.  
   
  The ETW Trace Listener supports circular logging. To enable this feature, go to **Start**, **Run** and type `cmd` to start a command console. In the following command, replace the `<logfilename>` parameter with the name of your log file.  
   
@@ -68,22 +69,22 @@ logman start Wcf
 logman stop Wcf  
 ```  
   
- This process generates binary circular logs that you can process with your tool of choice, including [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) or Tracerpt.  
+ This process generates binary circular logs that you can process with your tool of choice, including [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) or Tracerpt.  
   
- You can also review the [Circular Tracing](../../../../docs/framework/wcf/samples/circular-tracing.md) sample for more information on an alternative listener to perform circular logging.  
+ You can also review the [Circular Tracing](circular-tracing.md) sample for more information on an alternative listener to perform circular logging.  
   
 ### To set up, build, and run the sample  
   
-1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
     > [!NOTE]
     > To use the RegisterProvider.bat, SetupETW.bat and CleanupETW.bat commands, you must run under a local administrator account. If you are using Windows Vista or later, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, then click **Run as administrator**.  
   
 3. Before running the sample, run RegisterProvider.bat on the client and server. This sets up the resulting ETWTracingSampleLog.etl file to generate traces that can be read by the Service Trace Viewer. This file can be found in the C:\logs folder. If this folder does not exist, it must be created or no traces are generated. Then, run SetupETW.bat on the client and server computers to begin the ETW Trace Session. The SetupETW.bat file can be found under the CS\Client folder.  
   
-4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 5. When the sample is completed, run CleanupETW.bat to complete the creation of the ETWTracingSampleLog.etl file.  
   
@@ -93,11 +94,11 @@ logman stop Wcf
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\AnalyticTrace`  
   
 ## See also

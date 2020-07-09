@@ -13,7 +13,7 @@ namespace MovieRecommendation
         static void Main(string[] args)
         {
 
-            // Create MLContext to be shared across the model creation workflow objects 
+            // Create MLContext to be shared across the model creation workflow objects
             // <SnippetMLContext>
             MLContext mlContext = new MLContext();
             // </SnippetMLContext>
@@ -73,12 +73,12 @@ namespace MovieRecommendation
             var options = new MatrixFactorizationTrainer.Options
             {
                 MatrixColumnIndexColumnName = "userIdEncoded",
-                MatrixRowIndexColumnName = "movieIdEncoded", 
+                MatrixRowIndexColumnName = "movieIdEncoded",
                 LabelColumnName = "Label",
                 NumberOfIterations = 20,
                 ApproximationRank = 100
             };
-            
+
             var trainerEstimator = estimator.Append(mlContext.Recommendation().Trainers.MatrixFactorization(options));
             // </SnippetAddAlgorithm>
 
@@ -142,7 +142,7 @@ namespace MovieRecommendation
             // Save the trained model to .zip file
             // <SnippetSaveModel>
             var modelPath = Path.Combine(Environment.CurrentDirectory, "Data", "MovieRecommenderModel.zip");
-            
+
             Console.WriteLine("=============== Saving the model to a file ===============");
             mlContext.Model.Save(model, trainingDataViewSchema, modelPath);
             // </SnippetSaveModel>

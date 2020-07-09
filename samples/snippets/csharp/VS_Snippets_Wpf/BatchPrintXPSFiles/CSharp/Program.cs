@@ -13,7 +13,7 @@ namespace BatchPrintXPSFiles
         [System.MTAThreadAttribute()] // Added for clarity, but this line is redundant because MTA is the default.
         static void Main(string[] args)
         {
-            // Create the secondary thread and pass the printing method for 
+            // Create the secondary thread and pass the printing method for
             // the constructor's ThreadStart delegate parameter. The BatchXPSPrinter
             // class is defined below.
             Thread printingThread = new Thread(BatchXPSPrinter.PrintXPS);
@@ -21,7 +21,7 @@ namespace BatchPrintXPSFiles
             // Set the thread that will use PrintQueue.AddJob to single threading.
             printingThread.SetApartmentState(ApartmentState.STA);
 
-            // Start the printing thread. The method passed to the Thread 
+            // Start the printing thread. The method passed to the Thread
             // constructor will execute.
             printingThread.Start();
         }//end Main
@@ -34,7 +34,7 @@ namespace BatchPrintXPSFiles
             // Create print server and print queue.
             LocalPrintServer localPrintServer = new LocalPrintServer();
             PrintQueue defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
-            
+
             // Prompt user to identify the directory, and then create the directory object.
             Console.Write("Enter the directory containing the XPS files: ");
             String directoryPath = Console.ReadLine();
@@ -47,7 +47,7 @@ namespace BatchPrintXPSFiles
             }
             else
             {
-                // If there are no XPS files in the directory, end the thread 
+                // If there are no XPS files in the directory, end the thread
                 // and return to the Main thread.
                 if (dir.GetFiles("*.xps").Length == 0)
                 {
@@ -57,7 +57,7 @@ namespace BatchPrintXPSFiles
                 {
                     Console.WriteLine("\nJobs will now be added to the print queue.");
                     Console.WriteLine("If the queue is not paused and the printer is working, jobs will begin printing.");
-                    
+
                     // Batch process all XPS files in the directory.
                     foreach (FileInfo f in dir.GetFiles("*.xps"))
                     {

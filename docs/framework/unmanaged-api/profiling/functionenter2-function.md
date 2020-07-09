@@ -22,9 +22,9 @@ Notifies the profiler that control is being passed to a function and provides in
   
 ```cpp  
 void __stdcall FunctionEnter2 (  
-    [in]  FunctionID                       funcId,   
-    [in]  UINT_PTR                         clientData,   
-    [in]  COR_PRF_FRAME_INFO               func,   
+    [in]  FunctionID                       funcId,
+    [in]  UINT_PTR                         clientData,
+    [in]  COR_PRF_FRAME_INFO               func,
     [in]  COR_PRF_FUNCTION_ARGUMENT_INFO  *argumentInfo  
 );  
 ```  
@@ -67,7 +67,7 @@ void __stdcall FunctionEnter2 (
  Also, the `FunctionEnter2` function must not call into managed code or in any way cause a managed memory allocation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  
   

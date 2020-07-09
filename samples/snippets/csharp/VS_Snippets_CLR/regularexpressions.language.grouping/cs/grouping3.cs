@@ -4,10 +4,10 @@ using System.Text.RegularExpressions;
 
 class Example
 {
-   public static void Main() 
+   public static void Main()
    {
       string pattern = "^[^<>]*" +
-                       "(" + 
+                       "(" +
                        "((?'Open'<)[^<>]*)+" +
                        "((?'Close-Open'>)[^<>]*)+" +
                        ")*" +
@@ -25,7 +25,7 @@ class Example
             grpCtr++;
             int capCtr = 0;
             foreach (Capture cap in grp.Captures)
-            {            
+            {
                 Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value);
                 capCtr++;
             }
@@ -34,7 +34,7 @@ class Example
       else
       {
          Console.WriteLine("Match failed.");
-      }   
+      }
     }
 }
 // The example displays the following output:

@@ -1,5 +1,6 @@
 ---
 title: "Implementing the Event-based Asynchronous Pattern"
+description: Learn how to implement the Event-based Asynchronous Pattern (EAP) in .NET. EAP is a standard way to package a class that has asynchronous features.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -20,13 +21,13 @@ ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
 ---
 # Implementing the Event-based Asynchronous Pattern
 
-If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).
+If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing the [Event-based Asynchronous Pattern](event-based-asynchronous-pattern-overview.md).
 
 The Event-based Asynchronous Pattern provides a standardized way to package a class that has asynchronous features. If implemented with helper classes like <xref:System.ComponentModel.AsyncOperationManager>, your class will work correctly under any application model, including ASP.NET, Console applications, and Windows Forms applications.
 
-For an example that implements the Event-based Asynchronous Pattern, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).
+For an example that implements the Event-based Asynchronous Pattern, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md).
 
-For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
+For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
 
 The following list describes the features of the Event-based Asynchronous Pattern discussed in this topic.
 
@@ -54,7 +55,7 @@ Consider implementing the Event-based Asynchronous Pattern when:
 
 Any operation is a candidate for an asynchronous implementation, but those you expect to incur long latencies should be considered. Especially appropriate are operations in which clients call a method and are notified on completion, with no further intervention required. Also appropriate are operations which run continuously, periodically notifying clients of progress, incremental results, or state changes.
 
-For more information on deciding when to support the Event-based Asynchronous Pattern, see [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md).
+For more information on deciding when to support the Event-based Asynchronous Pattern, see [Deciding When to Implement the Event-based Asynchronous Pattern](deciding-when-to-implement-the-event-based-asynchronous-pattern.md).
 
 ## Naming Asynchronous Methods
 
@@ -144,13 +145,13 @@ Do not define multiple methods from the table above in the same class. That will
 
 These methods typically will return immediately, and the operation may or may not actually cancel. In the event handler for the _MethodName_**Completed** event, the _MethodName_**CompletedEventArgs** object contains a `Cancelled` field, which clients can use to determine whether the cancellation occurred.
 
-Abide by the cancellation semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
+Abide by the cancellation semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
 
 ## Optionally Support the IsBusy Property
 
 If your class does not support multiple concurrent invocations, consider exposing an `IsBusy` property. This allows developers to determine whether a _MethodName_**Async** method is running without catching an exception from the _MethodName_**Async** method.
 
-Abide by the `IsBusy` semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
+Abide by the `IsBusy` semantics described in [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
 
 ## Optionally Provide Support for Progress Reporting
 
@@ -172,7 +173,7 @@ Note that there is only one `ProgressChanged` or _MethodName_**ProgressChanged**
 
 There may be situations in which multiple operations support progress and each returns a different indicator for progress. In this case, a single `ProgressChanged` event is not appropriate, and you may consider supporting multiple `ProgressChanged` events. In this case use a naming pattern of _MethodName_**ProgressChanged** for each _MethodName_**Async** method.
 
-Abide by the progress-reporting semantics described [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
+Abide by the progress-reporting semantics described [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
 
 ## Optionally Provide Support for Returning Incremental Results
 
@@ -202,7 +203,7 @@ If your class supports multiple asynchronous methods, each returning a different
 
 - Define a separate _MethodName_**ProgressChanged** event with appropriate <xref:System.EventArgs> for each asynchronous method to handle that method's incremental result data.
 
-Invoke that event handler on the appropriate thread as described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
+Invoke that event handler on the appropriate thread as described in [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md).
 
 ## Handling Out and Ref Parameters in Methods
 
@@ -255,9 +256,9 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
 
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>
-- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
-- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [How to: Implement a Form That Uses a Background Operation](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
-- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
-- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
+- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md)
+- [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [How to: Implement a Form That Uses a Background Operation](../../framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Deciding When to Implement the Event-based Asynchronous Pattern](deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
+- [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
+- [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)

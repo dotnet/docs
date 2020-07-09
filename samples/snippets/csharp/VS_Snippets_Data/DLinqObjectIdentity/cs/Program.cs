@@ -26,9 +26,9 @@ namespace cs_objectidentity
 
         void method2()
         {
-        
+
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
-            
+
             // <Snippet2>
             Customer cust1 =
                 (from cust in db.Customers

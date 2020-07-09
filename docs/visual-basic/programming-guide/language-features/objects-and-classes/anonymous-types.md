@@ -26,7 +26,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
   
  [!code-vb[VbVbalrAnonymousTypes#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#3)]  
   
- For more information about the code created by the compiler for an anonymous type, see [Anonymous Type Definition](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md).  
+ For more information about the code created by the compiler for an anonymous type, see [Anonymous Type Definition](anonymous-type-definition.md).  
   
 > [!CAUTION]
 > The name of the anonymous type is compiler generated and may vary from compilation to compilation. Your code should not use or rely on the name of an anonymous type because the name might change when a project is recompiled.  
@@ -42,7 +42,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
   
  [!code-vb[VbVbalrAnonymousTypes#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#5)]  
   
- For more information about other ways to specify anonymous type properties, see [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
+ For more information about other ways to specify anonymous type properties, see [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
   
 ## Key Properties  
  Key properties differ from non-key properties in several fundamental ways:  
@@ -98,7 +98,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
   
  The elements in the collection represented by `custs3` are strongly typed, and you can use IntelliSense to navigate through the available properties and to verify their types.  
   
- For more information, see [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md).  
+ For more information, see [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md).  
   
 ## Deciding Whether to Use Anonymous Types  
  Before you create an object as an instance of an anonymous class, consider whether that is the best option. For example, if you want to create a temporary object to contain related data, and you have no need for other fields and methods that a complete class might contain, an anonymous type is a good solution. Anonymous types are also convenient if you want a different selection of properties for each declaration, or if you want to change the order of the properties. However, if your project includes several objects that have the same properties, in a fixed order, you can declare them more easily by using a named type with a class constructor. For example, with an appropriate constructor, it is easier to declare several instances of a `Product` class than it is to declare several instances of an anonymous type.  
@@ -118,13 +118,13 @@ Visual Basic supports anonymous types, which enable you to create objects withou
   
  Anonymous type definitions that have at least one key property also implement the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, where `T` is the type of the anonymous type.  
   
- For more information about the code created by the compiler and the functionality of the overridden methods, see [Anonymous Type Definition](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md).  
+ For more information about the code created by the compiler and the functionality of the overridden methods, see [Anonymous Type Definition](anonymous-type-definition.md).  
   
 ## See also
 
-- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
-- [Anonymous Type Definition](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
-- [Key](../../../../visual-basic/language-reference/modifiers/key.md)
+- [Object Initializers: Named and Anonymous Types](object-initializers-named-and-anonymous-types.md)
+- [Local Type Inference](../variables/local-type-inference.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)
+- [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
+- [Anonymous Type Definition](anonymous-type-definition.md)
+- [Key](../../../language-reference/modifiers/key.md)

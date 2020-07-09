@@ -28,7 +28,7 @@ namespace Unsecured
             // Create the ServiceHost.
             ServiceHost myServiceHost = new ServiceHost(typeof(Calculator), httpUri);
 
-            // Create a binding that uses HTTP. By default, 
+            // Create a binding that uses HTTP. By default,
             // this binding has no security.
             BasicHttpBinding b = new BasicHttpBinding();
 
@@ -48,7 +48,7 @@ namespace Unsecured
         {
             //<snippet2>
             Uri tcpUri = new Uri("net.tcp://localhost:8008/Calculator");
-            
+
             // Create the ServiceHost.
             ServiceHost sh = new ServiceHost(typeof(Calculator), tcpUri);
 

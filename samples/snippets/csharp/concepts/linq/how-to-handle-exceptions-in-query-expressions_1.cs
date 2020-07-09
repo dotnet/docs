@@ -12,12 +12,12 @@
             }
             catch (InvalidOperationException)
             {
-                // Handle (or don't handle) the exception 
+                // Handle (or don't handle) the exception
                 // in the way that is appropriate for your application.
                 Console.WriteLine("Invalid operation");
                 goto Exit;
             }
-            
+
             // If we get here, it is safe to proceed.
             var query = from i in dataSource
                         select i * i;

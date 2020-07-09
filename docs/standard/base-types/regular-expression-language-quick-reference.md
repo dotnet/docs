@@ -1,5 +1,6 @@
 ---
 title: "Regular Expression Language - Quick Reference"
+description: In this quick reference, learn to use regular expression patterns to match input text. A pattern has one or more character literals, operators, or constructs.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 f1_keywords:
@@ -185,6 +186,5 @@ Miscellaneous constructs either modify a regular expression pattern or provide i
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
 - [Regular Expressions](regular-expressions.md)
 - [Regular Expression Classes](the-regular-expression-object-model.md)
-- [Regular Expression Examples](regular-expression-examples.md)
 - [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 - [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

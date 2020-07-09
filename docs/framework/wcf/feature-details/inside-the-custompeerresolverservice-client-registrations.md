@@ -29,4 +29,4 @@ Each node in the mesh publishes its endpoint information to the resolver service
   
 ## See also
 
-- [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
+- [Peer Resolvers](peer-resolvers.md)

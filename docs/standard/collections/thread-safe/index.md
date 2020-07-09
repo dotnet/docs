@@ -1,5 +1,6 @@
 ---
 title: "Thread-Safe Collections"
+description: Get started with thread-safe collections using the System.Collections.Concurrent namespace in .NET, which includes thread-safe and scalable collection classes.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -17,7 +18,7 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
  We recommend the concurrent collections classes in the .NET Framework 4 because they provide not only the type safety of the .NET Framework 2.0 collection classes, but also more efficient and more complete thread safety than the .NET Framework 1.0 collections provide.  
   
 ## Fine-Grained Locking and Lock-Free Mechanisms  
- Some of the concurrent collection types use lightweight synchronization mechanisms such as <xref:System.Threading.SpinLock>, <xref:System.Threading.SpinWait>, <xref:System.Threading.SemaphoreSlim>, and <xref:System.Threading.CountdownEvent>, which are new in the .NET Framework 4. These synchronization types typically use *busy spinning* for brief periods before they put the thread into a true Wait state. When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition. For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate. For more information about spinning vs. blocking, see [SpinLock](../../../../docs/standard/threading/spinlock.md) and [SpinWait](../../../../docs/standard/threading/spinwait.md).  
+ Some of the concurrent collection types use lightweight synchronization mechanisms such as <xref:System.Threading.SpinLock>, <xref:System.Threading.SpinWait>, <xref:System.Threading.SemaphoreSlim>, and <xref:System.Threading.CountdownEvent>, which are new in the .NET Framework 4. These synchronization types typically use *busy spinning* for brief periods before they put the thread into a true Wait state. When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition. For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate. For more information about spinning vs. blocking, see [SpinLock](../../threading/spinlock.md) and [SpinWait](../../threading/spinwait.md).  
   
  The <xref:System.Collections.Concurrent.ConcurrentQueue%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601> classes do not use locks at all. Instead, they rely on <xref:System.Threading.Interlocked> operations to achieve thread-safety.  
   
@@ -28,7 +29,7 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
   
 |Type|Description|  
 |----------|-----------------|  
-|<xref:System.Collections.Concurrent.BlockingCollection%601>|Provides bounding and blocking functionality for any type that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>. For more information, see [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md).|  
+|<xref:System.Collections.Concurrent.BlockingCollection%601>|Provides bounding and blocking functionality for any type that implements <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>. For more information, see [BlockingCollection Overview](blockingcollection-overview.md).|  
 |<xref:System.Collections.Concurrent.ConcurrentDictionary%602>|Thread-safe implementation of a dictionary of key-value pairs.|  
 |<xref:System.Collections.Concurrent.ConcurrentQueue%601>|Thread-safe implementation of a FIFO (first-in, first-out) queue.|  
 |<xref:System.Collections.Concurrent.ConcurrentStack%601>|Thread-safe implementation of a LIFO (last-in, first-out) stack.|  
@@ -39,13 +40,13 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
   
 |Title|Description|  
 |-----------|-----------------|  
-|[BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601> type.|  
-|[How to: Add and Remove Items from a ConcurrentDictionary](../../../../docs/standard/collections/thread-safe/how-to-add-and-remove-items.md)|Describes how to add and remove elements from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602>|  
-|[How to: Add and Take Items Individually from a BlockingCollection](../../../../docs/standard/collections/thread-safe/how-to-add-and-take-items.md)|Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.|  
-|[How to: Add Bounding and Blocking Functionality to a Collection](../../../../docs/standard/collections/thread-safe/how-to-add-bounding-and-blocking.md)|Describes how to use any collection class as the underlying storage mechanism for an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> collection.|  
-|[How to: Use ForEach to Remove Items in a BlockingCollection](../../../../docs/standard/collections/thread-safe/how-to-use-foreach-to-remove.md)|Describes how to use `foreach`, (`For Each` in Visual Basic) to remove all items in a blocking collection.|  
-|[How to: Use Arrays of Blocking Collections in a Pipeline](../../../../docs/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md)|Describes how to use multiple blocking collections at the same time to implement a pipeline.|  
-|[How to: Create an Object Pool by Using a ConcurrentBag](../../../../docs/standard/collections/thread-safe/how-to-create-an-object-pool.md)|Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.|  
+|[BlockingCollection Overview](blockingcollection-overview.md)|Describes the functionality provided by the <xref:System.Collections.Concurrent.BlockingCollection%601> type.|  
+|[How to: Add and Remove Items from a ConcurrentDictionary](how-to-add-and-remove-items.md)|Describes how to add and remove elements from a <xref:System.Collections.Concurrent.ConcurrentDictionary%602>|  
+|[How to: Add and Take Items Individually from a BlockingCollection](how-to-add-and-take-items.md)|Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.|  
+|[How to: Add Bounding and Blocking Functionality to a Collection](how-to-add-bounding-and-blocking.md)|Describes how to use any collection class as the underlying storage mechanism for an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> collection.|  
+|[How to: Use ForEach to Remove Items in a BlockingCollection](how-to-use-foreach-to-remove.md)|Describes how to use `foreach`, (`For Each` in Visual Basic) to remove all items in a blocking collection.|  
+|[How to: Use Arrays of Blocking Collections in a Pipeline](how-to-use-arrays-of-blockingcollections.md)|Describes how to use multiple blocking collections at the same time to implement a pipeline.|  
+|[How to: Create an Object Pool by Using a ConcurrentBag](how-to-create-an-object-pool.md)|Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.|  
   
 ## Reference  
  <xref:System.Collections.Concurrent?displayProperty=nameWithType>

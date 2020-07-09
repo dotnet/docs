@@ -22,10 +22,10 @@ Provides a method that allows the garbage collector to request the host to chang
   
 |Method|Description|  
 |------------|-----------------|  
-|[RequestVirtualMemLimit Method](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-requestvirtualmemlimit-method.md)|Requests the host to change the limits of virtual memory.|  
+|[RequestVirtualMemLimit Method](igchostcontrol-requestvirtualmemlimit-method.md)|Requests the host to change the limits of virtual memory.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,4 +35,4 @@ Provides a method that allows the garbage collector to request the host to chang
   
 ## See also
 
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)

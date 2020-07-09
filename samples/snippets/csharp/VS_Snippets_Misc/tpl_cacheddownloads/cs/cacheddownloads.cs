@@ -1,4 +1,4 @@
-﻿// <snippet1> 
+﻿// <snippet1>
 using System;
 using System.Collections.Concurrent;
 using System.Diagnostics;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-// Demonstrates how to use Task<TResult>.FromResult to create a task 
+// Demonstrates how to use Task<TResult>.FromResult to create a task
 // that holds a pre-computed result.
 class CachedDownloads
 {
@@ -24,7 +24,7 @@ class CachedDownloads
          return Task.FromResult<string>(content);
       }
 
-      // If the result was not in the cache, download the 
+      // If the result was not in the cache, download the
       // string and add it to the cache.
       return Task.Run(async () =>
       {

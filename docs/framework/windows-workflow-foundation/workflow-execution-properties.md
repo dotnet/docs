@@ -69,14 +69,14 @@ public sealed class ConsoleColorScope : NativeActivity
 ```csharp  
 Activity wf = new Parallel  
 {  
-    Branches =   
+    Branches =
     {  
         new ConsoleColorScope  
         {  
             Color = ConsoleColor.Blue,  
             Body = new Sequence  
             {  
-                Activities =   
+                Activities =
                 {  
                     new WriteLine  
                     {  
@@ -98,7 +98,7 @@ Activity wf = new Parallel
             Color = ConsoleColor.Red,  
             Body = new Sequence  
             {  
-                Activities =   
+                Activities =
                 {  
                     new WriteLine  
                     {  
@@ -117,7 +117,7 @@ Activity wf = new Parallel
         },  
         new Sequence  
         {  
-            Activities =   
+            Activities =
             {  
                 new WriteLine  
                 {  

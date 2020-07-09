@@ -91,7 +91,7 @@ The following example demonstrates a `get` accessor that is an iterator. In the 
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [foreach, in](foreach-in.md)
 - [Iterators](../../iterators.md)

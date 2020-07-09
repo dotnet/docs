@@ -22,9 +22,9 @@ Creates a definition for implementation of a method inherited from an interface,
 ## Syntax  
   
 ```cpp  
-HRESULT DefineMethodImpl (   
-    [in]  mdTypeDef         td,   
-    [in]  mdToken           tkBody,   
+HRESULT DefineMethodImpl (
+    [in]  mdTypeDef         td,
+    [in]  mdToken           tkBody,
     [in]  mdToken           tkDecl  
 );  
 ```  
@@ -40,7 +40,7 @@ HRESULT DefineMethodImpl (
  [in] The `mdMethodDef` or `mdMemberRef` token of the interface method being implemented.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,5 +50,5 @@ HRESULT DefineMethodImpl (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

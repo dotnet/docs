@@ -29,11 +29,11 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
 - [Configure Font Cache Service to Reduce Start-up Time](#FontCache)  
   
-<a name="Opacity"></a>   
+<a name="Opacity"></a>
 ## Opacity on Brushes Versus Opacity on Elements  
  When you use a <xref:System.Windows.Media.Brush> to set the <xref:System.Windows.Shapes.Shape.Fill%2A> or <xref:System.Windows.Shapes.Shape.Stroke%2A> of an element, it is better to set the <xref:System.Windows.Media.Brush.Opacity%2A?displayProperty=nameWithType> value rather than the setting the element's <xref:System.Windows.UIElement.Opacity%2A> property. Modifying an element's <xref:System.Windows.UIElement.Opacity%2A> property can cause [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to create a temporary surface.  
   
-<a name="Navigation_Objects"></a>   
+<a name="Navigation_Objects"></a>
 ## Navigation to Object  
  The <xref:System.Windows.Navigation.NavigationWindow> object derives from <xref:System.Windows.Window> and extends it with content navigation support, primarily by aggregating <xref:System.Windows.Navigation.NavigationService> and the journal. You can update the client area of <xref:System.Windows.Navigation.NavigationWindow> by specifying either a uniform resource identifier (URI) or an object. The following sample shows both methods:  
   
@@ -48,21 +48,21 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
  When you use the <xref:System.Windows.Navigation.NavigationWindow> object, you will need to keep in mind how the journaling support impacts your application's performance. For more information, see [Navigation Overview](../app-development/navigation-overview.md).  
   
-<a name="Hit_Testing"></a>   
+<a name="Hit_Testing"></a>
 ## Hit Testing on Large 3D Surfaces  
  Hit testing on large 3D surfaces is a very performance intensive operation in terms of CPU consumption. This is especially true when the 3D surface is animating. If you do not require hit testing on these surfaces, then disable hit testing. Objects that are derived from <xref:System.Windows.UIElement> can disable hit testing by setting the <xref:System.Windows.UIElement.IsHitTestVisible%2A> property to `false`.  
   
-<a name="CompositionTarget_Rendering_Event"></a>   
+<a name="CompositionTarget_Rendering_Event"></a>
 ## CompositionTarget.Rendering Event  
  The <xref:System.Windows.Media.CompositionTarget.Rendering?displayProperty=nameWithType> event causes [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to continuously animate. If you use this event, detach it at every opportunity.  
   
-<a name="Avoid_Using_ScrollBarVisibility"></a>   
+<a name="Avoid_Using_ScrollBarVisibility"></a>
 ## Avoid Using ScrollBarVisibility=Auto  
  Whenever possible, avoid using the <xref:System.Windows.Controls.ScrollBarVisibility.Auto?displayProperty=nameWithType> value for the `HorizontalScrollBarVisibility` and `VerticalScrollBarVisibility` properties. These properties are defined for <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.ScrollViewer>, and <xref:System.Windows.Controls.TextBox> objects, and as an attached property for the <xref:System.Windows.Controls.ListBox> object. Instead, set <xref:System.Windows.Controls.ScrollBarVisibility> to <xref:System.Windows.Controls.ScrollBarVisibility.Disabled>, <xref:System.Windows.Controls.ScrollBarVisibility.Hidden>, or <xref:System.Windows.Controls.ScrollBarVisibility.Visible>.  
   
  The <xref:System.Windows.Controls.ScrollBarVisibility.Auto> value is intended for cases when space is limited and scrollbars should only be displayed when necessary. For example, it may be useful to use this <xref:System.Windows.Controls.ScrollBarVisibility> value with a <xref:System.Windows.Controls.ListBox> of 30 items as opposed to a <xref:System.Windows.Controls.TextBox> with hundreds of lines of text.  
   
-<a name="FontCache"></a>   
+<a name="FontCache"></a>
 ## Configure Font Cache Service to Reduce Start-up Time  
  The WPF Font Cache service shares font data between WPF applications. The first WPF application you run starts this service if the service is not already running. If you are using Windows Vista, you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of WPF applications.  
   

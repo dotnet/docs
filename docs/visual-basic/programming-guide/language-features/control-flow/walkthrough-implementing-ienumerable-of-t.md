@@ -89,7 +89,7 @@ The <xref:System.Collections.Generic.IEnumerable%601> interface is implemented b
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
-- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)
+- [Control Flow](index.md)
+- [Loop Structures](loop-structures.md)
+- [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md)

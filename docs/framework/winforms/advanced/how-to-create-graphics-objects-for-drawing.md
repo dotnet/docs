@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Graphics Objects for Drawing"
+description: Learn now to create a Graphic object that you need to draw lines and shapes, render text, or display and manipulate images with GDI+.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -61,8 +62,8 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     ```  
   
     ```csharp  
-    private void Form1_Paint(object sender,   
-       System.Windows.Forms.PaintEventArgs pe)   
+    private void Form1_Paint(object sender,
+       System.Windows.Forms.PaintEventArgs pe)
     {  
        // Declares the Graphics object and sets it to the Graphics object  
        // supplied in the PaintEventArgs.  
@@ -126,7 +127,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     ```  
   
     ```csharp  
-    Bitmap myBitmap = new Bitmap(@"C:\Documents and   
+    Bitmap myBitmap = new Bitmap(@"C:\Documents and
        Settings\Joe\Pics\myPic.bmp");  
     Graphics g = Graphics.FromImage(myBitmap);  
     ```  

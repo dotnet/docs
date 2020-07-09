@@ -21,7 +21,7 @@ namespace Client
         private void UnsecuredHttp()
         {
             //<snippet1>
-            // Create an instance of the BasicHttpBinding. 
+            // Create an instance of the BasicHttpBinding.
             // By default, there is no security.
             BasicHttpBinding myBinding = new BasicHttpBinding();
 

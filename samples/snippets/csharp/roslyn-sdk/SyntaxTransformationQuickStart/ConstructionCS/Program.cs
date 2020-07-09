@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
@@ -13,12 +12,12 @@ namespace ConstructionCS
     class Program
     {
         // <SnippetDeclareSampleCode>
-        private const string sampleCode = 
+        private const string sampleCode =
 @"using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
- 
+
 namespace HelloWorld
 {
     class Program
@@ -35,7 +34,7 @@ namespace HelloWorld
         {
             // <SnippetCreateIdentifierName>
             NameSyntax name = IdentifierName("System");
-            WriteLine($"\tCreated the identifier {name.ToString()}");
+            WriteLine($"\tCreated the identifier {name}");
             // </SnippetCreateIdentifierName>
 
             // <SnippetCreateQualifiedIdentifierName>
@@ -59,8 +58,8 @@ namespace HelloWorld
             WriteLine(root.ToString());
             // </SnippetBuildNewUsing>
 
-            Console.WriteLine();
-            Console.WriteLine();
+            WriteLine();
+            WriteLine();
 
             // <SnippetTransformTree>
             root = root.ReplaceNode(oldUsing, newUsing);

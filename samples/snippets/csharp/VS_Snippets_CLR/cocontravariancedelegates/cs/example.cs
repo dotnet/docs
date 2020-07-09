@@ -12,7 +12,7 @@ public class Program
         return b as Derived ?? new Derived();
     }
 
-    static void Main() 
+    static void Main()
     {
         Func<Base, Derived> f1 = MyMethod;
 //</Snippet2>

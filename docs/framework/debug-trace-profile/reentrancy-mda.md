@@ -1,5 +1,6 @@
 ---
 title: "reentrancy MDA"
+description: Review the reentrancy MDA, which may be activated if the object heap is corrupted or other serious errors occur when transitioning from native to managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "unmanaged code, debugging"
@@ -41,9 +42,9 @@ The `reentrancy` managed debugging assistant (MDA) is activated when an attempt 
  The MDA reports that illegal reentrancy is being attempted.  Examine the thread's stack to determine why this is happening and how to correct the problem. The following is sample output.  
   
 ```output
-Additional Information: Attempting to call into managed code without   
-transitioning out first.  Do not attempt to run managed code inside   
-low-level native extensibility points. Managed Debugging Assistant   
+Additional Information: Attempting to call into managed code without
+transitioning out first.  Do not attempt to run managed code inside
+low-level native extensibility points. Managed Debugging Assistant
 'Reentrancy' has detected a problem in 'D:\ConsoleApplication1\  
 ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.  
 ```  
@@ -65,32 +66,32 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
 using System;  
 public delegate int ExceptionHandler(IntPtr ptrExceptionInfo);  
   
-public class Reenter   
+public class Reenter
 {  
     public static ExceptionHandler keepAlive;  
   
-    [System.Runtime.InteropServices.DllImport("kernel32", ExactSpelling=true,   
+    [System.Runtime.InteropServices.DllImport("kernel32", ExactSpelling=true,
         CharSet=System.Runtime.InteropServices.CharSet.Auto)]  
-    public static extern IntPtr AddVectoredExceptionHandler(int bFirst,   
+    public static extern IntPtr AddVectoredExceptionHandler(int bFirst,
         ExceptionHandler handler);  
   
-    static int MyHandler(IntPtr ptrExceptionInfo)   
+    static int MyHandler(IntPtr ptrExceptionInfo)
     {  
         // EXCEPTION_CONTINUE_SEARCH  
         return 0;  
     }  
     void Run() {}  
   
-    static void Main()   
+    static void Main()
     {  
         keepAlive = new ExceptionHandler(Reenter.MyHandler);  
         IntPtr ret = AddVectoredExceptionHandler(1, keepAlive);  
-        try   
+        try
         {  
             // Dispatch on null should AV.  
-            Reenter r = null;   
+            Reenter r = null;
             r.Run();  
-        }   
+        }
         catch { }  
     }  
 }  

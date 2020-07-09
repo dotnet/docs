@@ -21,7 +21,7 @@ Indicates whether a variable is compiler-generated.
 ## Syntax  
   
 ```cpp  
-typedef enum CorSymVarFlag   
+typedef enum CorSymVarFlag
 {  
     VAR_IS_COMP_GEN = 1  
 } CorSymVarFlag;  
@@ -38,4 +38,4 @@ typedef enum CorSymVarFlag
   
 ## See also
 
-- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)

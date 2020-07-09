@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks.Dataflow;
 
-// Demonstrates how to specify the maximum degree of parallelism 
+// Demonstrates how to specify the maximum degree of parallelism
 // when using dataflow.
 class Program
 {
@@ -24,7 +24,7 @@ class Program
             MaxDegreeOfParallelism = maxDegreeOfParallelism
          });
 
-      // Compute the time that it takes for several messages to 
+      // Compute the time that it takes for several messages to
       // flow through the dataflow block.
 
       Stopwatch stopwatch = new Stopwatch();
@@ -63,7 +63,7 @@ class Program
       Console.WriteLine("Degree of parallelism = {0}; message count = {1}; " +
          "elapsed time = {2}ms.", 1, messageCount, (int)elapsed.TotalMilliseconds);
 
-      // Perform the computations again. This time, specify the number of 
+      // Perform the computations again. This time, specify the number of
       // processors as the maximum degree of parallelism. This causes
       // multiple messages to be processed in parallel.
       elapsed = TimeDataflowComputations(processorCount, messageCount);

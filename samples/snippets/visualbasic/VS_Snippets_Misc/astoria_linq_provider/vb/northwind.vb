@@ -65,7 +65,7 @@ Partial Public Class NorthwindDataContext
                 Dim defaultValue = member.MemberAccessor.GetBoxedValue(dummyResource)
                 member.MemberAccessor.SetBoxedValue(resource, defaultValue)
             End If
-            Next
+        Next
         Return resource
     End Function
     ' Sets the value of the given property on the object.
@@ -88,7 +88,7 @@ Partial Public Class NorthwindDataContext
                      ByVal propertyValue As Object) Implements IUpdatable.SetReference
         CType(Me, IUpdatable).SetValue(targetResource, propertyName, propertyValue)
     End Sub
-' Adds the object to the related objects collection.
+    ' Adds the object to the related objects collection.
     Sub AddReferenceToCollection(ByVal targetResource As Object, ByVal propertyName As String, _
                                  ByVal resourceToBeAdded As Object) _
                                  Implements IUpdatable.AddReferenceToCollection
@@ -110,7 +110,7 @@ Partial Public Class NorthwindDataContext
         Dim collection = CType(pi.GetValue(targetResource, Nothing), IList)
         collection.Remove(resourceToBeRemoved)
     End Sub
-        ' Deletes the resource.
+    ' Deletes the resource.
     Sub DeleteResource(ByVal targetResource As Object) _
     Implements IUpdatable.DeleteResource
         Dim table = GetTable(targetResource.GetType())
@@ -125,7 +125,7 @@ Partial Public Class NorthwindDataContext
     Function ResolveResource(ByVal resource As Object) As Object Implements IUpdatable.ResolveResource
         Return resource
     End Function
-        ' Reverts all the pending changes.
+    ' Reverts all the pending changes.
     Sub ClearChanges() Implements IUpdatable.ClearChanges
         ' Raise an exception as there is no real way to do this with LINQ to SQL.
         ' Comment out the following line if you'd prefer a silent failure

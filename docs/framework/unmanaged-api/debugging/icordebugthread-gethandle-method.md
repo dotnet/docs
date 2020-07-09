@@ -37,7 +37,7 @@ HRESULT GetHandle (
  This handle is owned by the debugging API. The debugger should duplicate it before using it.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
 ---
 # Message Security Sample
-This sample demonstrates how to implement an application that uses the `basicHttpBinding` and message security. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
+This sample demonstrates how to implement an application that uses the `basicHttpBinding` and message security. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
@@ -20,7 +20,7 @@ This sample demonstrates how to implement an application that uses the `basicHtt
      <!-- host: http://localhost:8000/ServiceModelSamples/service.-->  
      <endpoint address=""  
                binding="basicHttpBinding"  
-               bindingConfiguration="Binding1"   
+               bindingConfiguration="Binding1"
                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
   </services>  
@@ -28,7 +28,7 @@ This sample demonstrates how to implement an application that uses the `basicHtt
 </system.serviceModel>  
 ```  
   
- The binding configuration sets the `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md) to `Message` and sets the `clientCredentialType` attribute of the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-basichttpbinding.md) to `Certificate` as shown in the following sample configuration:  
+ The binding configuration sets the `mode` attribute of the [\<security>](../../configure-apps/file-schema/wcf/security-of-basichttpbinding.md) to `Message` and sets the `clientCredentialType` attribute of the [\<message>](../../configure-apps/file-schema/wcf/message-of-basichttpbinding.md) to `Certificate` as shown in the following sample configuration:  
   
 ```xml  
 <bindings>  
@@ -62,7 +62,7 @@ This sample demonstrates how to implement an application that uses the `basicHtt
       <!--certificate installed during the setup instructions. -->  
       <serviceCredentials>  
         <serviceCertificate findValue="localhost"  
-               storeLocation="LocalMachine"   
+               storeLocation="LocalMachine"
                storeName="My" x509FindType="FindBySubjectName" />  
         <clientCertificate>  
           <!-- Setting the certificateValidationMode to -->  
@@ -77,7 +77,7 @@ This sample demonstrates how to implement an application that uses the `basicHtt
           <!-- ChainTrust. The security implications of this -->  
           <!-- setting should be carefully considered before using -->  
           <!-- PeerOrChainTrust in production code. -->  
-          <authentication   
+          <authentication
                        certificateValidationMode="PeerOrChainTrust" />  
         </clientCertificate>  
       </serviceCredentials>  
@@ -106,9 +106,9 @@ Press <ENTER> to terminate client.
   
 ### To set up and build the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 ### To run the sample on the same machine  
   
@@ -137,13 +137,13 @@ Press <ENTER> to terminate client.
   
 5. On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
-6. Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
+6. Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
   
 7. Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
 8. On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
-9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Also change the `findValue` attribute of the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md) to the new service certificate name which is the fully-qualified domain name of the server.  
+9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Also change the `findValue` attribute of the [\<defaultCertificate>](../../configure-apps/file-schema/wcf/defaultcertificate-element.md) to the new service certificate name which is the fully-qualified domain name of the server.  
   
 10. Copy the Client.cer file from the client directory to the service directory on the server.  
   
@@ -166,9 +166,9 @@ Press <ENTER> to terminate client.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity`  

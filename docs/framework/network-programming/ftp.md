@@ -1,5 +1,6 @@
 ---
 title: "FTP - .NET"
+description: Learn about the comprehensive support for the FTP protocol that the .NET Framework provides by using the FtpWebRequest and FtpWebResponse classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "FTP"

@@ -1,6 +1,6 @@
 ---
 title: Delegates and lambdas
-description: Learn how delegates define a type, which specify a particular method signature, that can be called directly or passed to another method and called.
+description: Learn how delegates, which define a type that specifies a particular method signature, can be called directly or passed to another method and called.
 author: richlander
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -9,7 +9,7 @@ ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
 ---
 # Delegates and lambdas
 
-Delegates define a type, which specify a particular method signature. A method (static or instance) that satisfies this signature can be assigned to a variable of that type, then called directly (with the appropriate arguments) or passed as an argument itself to another method and then called. The following example demonstrates delegate use.
+Delegates define a type that specifies a particular method signature. A method (static or instance) that satisfies this signature can be assigned to a variable of that type, then called directly (with the appropriate arguments) or passed as an argument itself to another method and then called. The following example demonstrates delegate use.
 
 ```csharp
 using System;
@@ -38,11 +38,11 @@ public class Program
 * The `Reverse rev = ReverseString;` line shows that you can assign a method to a variable of the corresponding delegate type.
 * The `Console.WriteLine(rev("a string"));` line demonstrates how to use a variable of a delegate type to invoke the delegate.
 
-In order to streamline the development process, .NET includes a set of delegate types that programmers can reuse and not have to create new types. These are `Func<>`, `Action<>` and `Predicate<>`, and they can be used in various places throughout the .NET APIs without the need to define new delegate types. Of course, there are some differences between the three as you will see in their signatures which mostly have to do with the way they were meant to be used:
+In order to streamline the development process, .NET includes a set of delegate types that programmers can reuse and not have to create new types. These types are `Func<>`, `Action<>` and `Predicate<>`, and they can be used without having to define new delegate types. There are some differences between the three types that have to do with the way they were intended to be used:
 
-* `Action<>` is used when there is a need to perform an action using the arguments of the delegate.
-* `Func<>` is used usually when you have a transformation on hand, that is, you need to transform the arguments of the delegate into a different result. Projections are a prime example of this.
-* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>`.
+* `Action<>` is used when there is a need to perform an action using the arguments of the delegate. The method it encapsulates does not return a value.
+* `Func<>` is used usually when you have a transformation on hand, that is, you need to transform the arguments of the delegate into a different result. Projections are a good example. The method it encapsulates returns a specified value.
+* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>`, which means the method returns a boolean value.
 
 We can now take our example above and rewrite it using the `Func<>` delegate instead of a custom type. The program will continue running exactly the same.
 
@@ -66,9 +66,9 @@ public class Program
 }
 ```
 
-For this simple example, having a method defined outside of the `Main` method seems a bit superfluous. It is because of this that .NET Framework 2.0 introduced the concept of **anonymous delegates**. With their support you are able to create "inline" delegates without having to specify any additional type or method. You simply inline the definition of the delegate where you need it.
+For this simple example, having a method defined outside of the `Main` method seems a bit superfluous. .NET Framework 2.0 introduced the concept of *anonymous delegates*, which let you create "inline" delegates without having to specify any additional type or method.
 
-For an example, we are going to switch it up and use our anonymous delegate to filter out a list of only even numbers and then print them to the console.
+In the following example, an anonymous delegate filters a list to just the even numbers and then prints them to the console.
 
 ```csharp
 using System;
@@ -100,11 +100,9 @@ public class Program
 }
 ```
 
-As you can see, the body of the delegate is just a set of expressions, as any other delegate. But instead of it being a separate definition, we’ve introduced it _ad hoc_ in our call to the <xref:System.Collections.Generic.List%601.FindAll%2A?displayProperty=nameWithType> method.
+As you can see, the body of the delegate is just a set of expressions, as any other delegate. But instead of it being a separate definition, we've introduced it _ad hoc_ in our call to the <xref:System.Collections.Generic.List%601.FindAll%2A?displayProperty=nameWithType> method.
 
-However, even with this approach, there is still much code that we can throw away. This is where **lambda expressions** come into play.
-
-Lambda expressions, or just "lambdas" for short, were introduced first in C# 3.0, as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don’t have an formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the left-hand side of event registration or in various LINQ clauses and methods.
+However, even with this approach, there is still much code that we can throw away. This is where *lambda expressions* come into play. Lambda expressions, or just "lambdas" for short, were introduced in C# 3.0 as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don't have a formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the right-hand side of event registration or in various LINQ clauses and methods.
 
 Since a lambda expression is just another way of specifying a delegate, we should be able to rewrite the above sample to use a lambda expression instead of an anonymous delegate.
 
@@ -133,7 +131,7 @@ public class Program
 }
 ```
 
-In the preceding example, the lambda expression used is `i => i % 2 == 0`. Again, it is just a **very** convenient syntax for using delegates, so what happens under the covers is similar to what happens with the anonymous delegate.
+In the preceding example, the lambda expression used is `i => i % 2 == 0`. Again, it is just a convenient syntax for using delegates. What happens under the covers is similar to what happens with the anonymous delegate.
 
 Again, lambdas are just delegates, which means that they can be used as an event handler without any problems, as the following code snippet illustrates.
 
@@ -149,10 +147,10 @@ public MainWindow()
 }
 ```
 
-The `+=` operator in this context is used to subscribe to an [event](../../docs/csharp/language-reference/keywords/event.md). For more information, see [How to subscribe to and unsubscribe from events](../../docs/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+The `+=` operator in this context is used to subscribe to an [event](../csharp/language-reference/keywords/event.md). For more information, see [How to subscribe to and unsubscribe from events](../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Further reading and resources
 
-* [Delegates](../../docs/csharp/programming-guide/delegates/index.md)
-* [Anonymous Functions](../../docs/csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
-* [Lambda expressions](../../docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+* [Delegates](../csharp/programming-guide/delegates/index.md)
+* [Anonymous Functions](../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
+* [Lambda expressions](../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)

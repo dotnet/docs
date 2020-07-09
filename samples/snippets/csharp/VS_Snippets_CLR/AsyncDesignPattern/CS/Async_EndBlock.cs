@@ -28,7 +28,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             IAsyncResult result = Dns.BeginGetHostEntry(args[0], null, null);
             Console.WriteLine("Processing your request for information...");
             // Do any additional work that can be done here.
-            try 
+            try
             {
                 // EndGetHostByName blocks until the process completes.
                 IPHostEntry host = Dns.EndGetHostEntry(result);

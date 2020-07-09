@@ -13,7 +13,7 @@ namespace LinqFaroShuffle
         Spades
     }
     #endregion
-    
+
     #region snippet3
     public enum Rank
     {

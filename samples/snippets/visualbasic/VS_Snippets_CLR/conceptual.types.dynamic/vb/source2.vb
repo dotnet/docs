@@ -85,8 +85,8 @@ Class CustomBinder
             Dim newType As Object
             newType = Convert.ChangeType(value, myChangeType)
             Return newType
-        ' Throw an InvalidCastException If the conversion cannot
-        ' be done by the Convert.ChangeType method.
+            ' Throw an InvalidCastException If the conversion cannot
+            ' be done by the Convert.ChangeType method.
         Catch
             Return Nothing
         End Try
@@ -142,11 +142,11 @@ Public Class CustomBinderDriver
 
         ' Case 1. Neither argument coercion nor member selection is needed.
         args = New object() {}
-        t.InvokeMember ("PrintBob", flags, binder, Nothing, args)
+        t.InvokeMember("PrintBob", flags, binder, Nothing, args)
 
         ' Case 2. Only member selection is needed.
         args = New object() {42}
-        t.InvokeMember ("PrintValue", flags, binder, Nothing, args)
+        t.InvokeMember("PrintValue", flags, binder, Nothing, args)
 
         ' Case 3. Only argument coercion is needed.
         args = New object() {"5.5"}
@@ -154,7 +154,7 @@ Public Class CustomBinderDriver
     End Sub
 
     Public Shared Sub PrintBob()
-        Console.WriteLine ("PrintBob")
+        Console.WriteLine("PrintBob")
     End Sub
 
     Public Shared Sub PrintValue(value As Long)

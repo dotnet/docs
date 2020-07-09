@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "imaging"
   - "graphics [Windows Forms], categories"
-  - "2-D vector graphics"
+  - "2D vector graphics"
   - "vector graphics"
   - "typography"
 ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408
@@ -18,8 +18,8 @@ The graphics offerings in Windows Forms fall into the following three broad cate
   
 - Typography  
   
-## 2-D Vector Graphics  
- Two-dimensional vector graphics are primitives; such as lines, curves, and figures; that are specified by sets of points on a coordinate system. For example, a straight line is specified by its two endpoints, and a rectangle is specified by a point giving the location of its upper-left corner and a pair of numbers giving its width and height. A simple path is specified by an array of points that are connected by straight lines. A Bézier spline is a sophisticated curve specified by four control points.  
+## 2D Vector Graphics  
+ Two-dimensional vector graphics, such as lines, curves, and figures, are primitives that are specified by sets of points on a coordinate system. For example, a straight line is specified by its two endpoints, and a rectangle is specified by a point giving the location of its upper-left corner and a pair of numbers giving its width and height. A simple path is specified by an array of points that are connected by straight lines. A Bézier spline is a sophisticated curve specified by four control points.  
   
  GDI+ provides classes and structures that store information about the primitives themselves, classes that store information about how the primitives will be drawn, and classes that actually do the drawing. For example, the <xref:System.Drawing.Rectangle> structure stores the location and size of a rectangle; the <xref:System.Drawing.Pen> class stores information about line color, line width, and line style; and the <xref:System.Drawing.Graphics> class has methods for drawing lines, rectangles, paths, and other figures. There are also several <xref:System.Drawing.Brush> classes that store information about how closed figures and paths will be filled with colors or patterns.  
   

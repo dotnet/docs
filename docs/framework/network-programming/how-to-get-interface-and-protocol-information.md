@@ -31,32 +31,32 @@ public static void ShowTcpStatistics(NetworkInterfaceComponent version)
             throw new ArgumentException("version");  
             break;  
     }  
-    Console.WriteLine("  Minimum Transmission Timeout. : {0}",   
+    Console.WriteLine("  Minimum Transmission Timeout. : {0}",
         tcpstat.MinimumTransmissionTimeout);  
-    Console.WriteLine("  Maximum Transmission Timeout. : {0}",   
+    Console.WriteLine("  Maximum Transmission Timeout. : {0}",
         tcpstat.MaximumTransmissionTimeout);  
   
     Console.WriteLine("  Connection Data:");  
-    Console.WriteLine("      Current : {0}",   
+    Console.WriteLine("      Current : {0}",
     tcpstat.CurrentConnections);  
-    Console.WriteLine("      Cumulative : {0}",   
+    Console.WriteLine("      Cumulative : {0}",
         tcpstat.CumulativeConnections);  
-    Console.WriteLine("      Initiated  : {0}",   
+    Console.WriteLine("      Initiated  : {0}",
         tcpstat.ConnectionsInitiated);  
-    Console.WriteLine("      Accepted : {0}",   
+    Console.WriteLine("      Accepted : {0}",
         tcpstat.ConnectionsAccepted);  
-    Console.WriteLine("      Failed Attempts : {0}",   
+    Console.WriteLine("      Failed Attempts : {0}",
         tcpstat.FailedConnectionAttempts);  
-    Console.WriteLine("      Reset : {0}",   
+    Console.WriteLine("      Reset : {0}",
         tcpstat.ResetConnections);  
   
     Console.WriteLine("");  
     Console.WriteLine("  Segment Data:");  
-    Console.WriteLine("      Received  ................... : {0}",   
+    Console.WriteLine("      Received  ................... : {0}",
         tcpstat.SegmentsReceived);  
-    Console.WriteLine("      Sent : {0}",   
+    Console.WriteLine("      Sent : {0}",
         tcpstat.SegmentsSent);  
-    Console.WriteLine("      Retransmitted : {0}",   
+    Console.WriteLine("      Retransmitted : {0}",
         tcpstat.SegmentsResent);  
   
     Console.WriteLine("");  

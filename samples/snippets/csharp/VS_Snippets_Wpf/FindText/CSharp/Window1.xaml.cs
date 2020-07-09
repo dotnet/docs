@@ -1,19 +1,19 @@
 ﻿/*****************************************************************************************
  * File: Window1.xaml.cs
  *
- * Description: 
- *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use 
+ * Description:
+ *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use
  *    UI Automation to find/select text and track text selection changes in the Notepad instance.
- * 
- *    Text.txt should be automatically copied to the same folder as the executable when 
- *    you build the sample. You may have to manually copy this file if you receive an error 
+ *
+ *    Text.txt should be automatically copied to the same folder as the executable when
+ *    you build the sample. You may have to manually copy this file if you receive an error
  *    stating the file cannot be found.
- *         
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -90,7 +90,7 @@ namespace SDKSample
                         return;
                     }
 
-                    // At this point, there is a non-null FlowDocument loaded into content.  
+                    // At this point, there is a non-null FlowDocument loaded into content.
                     FlowDocRdr.Document = content;
                 }
             }

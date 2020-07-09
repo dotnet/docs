@@ -23,7 +23,7 @@ Provides the stack frame and argument information of the function that is being 
   
 ```cpp  
 HRESULT GetFunctionEnter3Info(  
-            [in]  FunctionID functionId,   
+            [in]  FunctionID functionId,
             [in]  COR_PRF_ELT_INFO eltInfo,  
             [out] COR_PRF_FRAME_INFO *pFrameInfo,  
             [in, out] ULONG *pcbArgumentInfo,  
@@ -51,7 +51,7 @@ HRESULT GetFunctionEnter3Info(
  The profiler must allocate sufficient space for the `COR_PRF_FUNCTION_ARGUMENT_INFO` structure of the function that is being inspected, and must indicate the size in the `pcbArgumentInfo` parameter.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

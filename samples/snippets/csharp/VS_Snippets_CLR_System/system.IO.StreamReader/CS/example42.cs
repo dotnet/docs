@@ -24,7 +24,7 @@ namespace WpfApplication
                 result = new char[reader.BaseStream.Length];
                 await reader.ReadAsync(result, 0, (int)reader.BaseStream.Length);
             }
-           
+
             foreach (char c in result)
             {
                 if (char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))

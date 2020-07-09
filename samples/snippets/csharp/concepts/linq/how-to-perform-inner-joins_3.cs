@@ -51,15 +51,15 @@
             // with the same letter as the cats that have the same owner.
             var query = from person in people
                         join cat in cats on person equals cat.Owner
-                        join dog in dogs on 
+                        join dog in dogs on
                         new { Owner = person, Letter = cat.Name.Substring(0, 1) }
                         equals new { dog.Owner, Letter = dog.Name.Substring(0, 1) }
                         select new { CatName = cat.Name, DogName = dog.Name };
 
             foreach (var obj in query)
             {
-                Console.WriteLine( 
-                    $"The cat \"{obj.CatName}\" shares a house, and the first letter of their name, with \"{obj.DogName}\".");  
+                Console.WriteLine(
+                    $"The cat \"{obj.CatName}\" shares a house, and the first letter of their name, with \"{obj.DogName}\".");
             }
         }
 

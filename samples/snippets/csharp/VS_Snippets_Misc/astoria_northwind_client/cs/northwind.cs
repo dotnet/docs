@@ -12,7 +12,7 @@
 // Generation date: 9/27/2009 7:48:05 PM
 namespace NorthwindModel
 {
-    
+
     /// <summary>
     /// There are no comments for NorthwindEntities in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace NorthwindModel
         /// Initialize a new NorthwindEntities object.
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public NorthwindEntities(global::System.Uri serviceRoot) : 
+        public NorthwindEntities(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.OnContextCreated();

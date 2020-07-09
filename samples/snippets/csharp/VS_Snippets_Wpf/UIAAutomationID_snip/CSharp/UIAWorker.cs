@@ -4,23 +4,23 @@
  *
  * Description: A Class that implements UI Automation functionality
  *              in the form of a focus tracker on a separate thread.
- * 
+ *
  * For a full description of the sample, see Client.cs.
  *
- *     
+ *
  *  This file is part of the Microsoft WinfFX SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  ******************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -96,7 +96,7 @@ namespace UIAAutomationID_snip
 
         private void RegisterForEvents()
         {
-            // Subscribe to events of interest. 
+            // Subscribe to events of interest.
             // Do this while a CacheRequest is activated, so that the AutomationElement passed
             // to the event handlers will have cached properties.
             CacheRequest cacheRequest = new CacheRequest();
@@ -127,7 +127,7 @@ namespace UIAAutomationID_snip
                 //    }
                 //}
                 //AutomationEventHandler invokeHandler = new AutomationEventHandler(OnInvoke);
-                //Automation.AddAutomationEventHandler(InvokePattern.InvokedEvent, 
+                //Automation.AddAutomationEventHandler(InvokePattern.InvokedEvent,
                 //    targetApp, TreeScope.Descendants, invokeHandler);
                 foreach (AutomationElement element in controlStore)
                 {
@@ -135,7 +135,7 @@ namespace UIAAutomationID_snip
                     {
                         AutomationEventHandler invokeHandler =
                             new AutomationEventHandler(OnInvoke);
-                        Automation.AddAutomationEventHandler(InvokePattern.InvokedEvent, 
+                        Automation.AddAutomationEventHandler(InvokePattern.InvokedEvent,
                             element, TreeScope.Element, invokeHandler);
                     }
                     if ((bool)element.GetCurrentPropertyValue(AutomationElement.IsRangeValuePatternAvailableProperty))
@@ -176,13 +176,13 @@ namespace UIAAutomationID_snip
         /// <param name="e">Event arguments.</param>
         /// <remarks>
         /// Some controls that have not implemented UI Automation correctly
-        /// may fire spurious events. For example, a WinForms button will 
-        /// fire an InvokedEvent on a mouse-down and then another series of 
+        /// may fire spurious events. For example, a WinForms button will
+        /// fire an InvokedEvent on a mouse-down and then another series of
         /// InvokedEvents on the subsequent mouse-up.</remarks>
         private void OnInvoke(object src, AutomationEventArgs e)
         {
             DateTime invokeTime = DateTime.Now;
-            
+
             Feedback("Invoke event.");
 
             AutomationElement invokedElement = src as AutomationElement;
@@ -248,7 +248,7 @@ namespace UIAAutomationID_snip
 
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Retrieves the top-level window that contains the 
+        /// Retrieves the top-level window that contains the
         /// UI Automation element of interest.
         /// </summary>
         /// <param name="element">The contained element.</param>

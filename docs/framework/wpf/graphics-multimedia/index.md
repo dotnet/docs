@@ -1,5 +1,6 @@
 ---
 title: "Graphics and Multimedia"
+description: Discover media features of Windows Presentation Foundation (WPF). Add graphics, transition effects, sound, and video to your applications. 
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -49,11 +50,11 @@ Several changes have been made related to graphics and animations.
 
 ## Graphics and Rendering
 
-WPF includes support for high quality 2-D graphics. The functionality includes brushes, geometries, images, shapes and transformations. For more information, see [Graphics](graphics.md). The rendering of graphical elements is based on the <xref:System.Windows.Media.Visual> class. The structure of visual objects on the screen is described by the visual tree. For more information, see [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md).
+WPF includes support for high quality 2D graphics. The functionality includes brushes, geometries, images, shapes and transformations. For more information, see [Graphics](graphics.md). The rendering of graphical elements is based on the <xref:System.Windows.Media.Visual> class. The structure of visual objects on the screen is described by the visual tree. For more information, see [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md).
 
-### 2-D Shapes
+### 2D Shapes
 
-WPF provides a library of commonly used, vector-drawn 2-D shapes, such as rectangles and ellipses, which the following illustration shows.
+WPF provides a library of commonly used, vector-drawn 2D shapes, such as rectangles and ellipses, which the following illustration shows.
 
 ![Diagram showing ellipses and rectangles.](./media/index/two-deminsional-shapes-ellipses-rectangles.png)
 
@@ -91,33 +92,33 @@ The following illustration shows the output for the preceding [!INCLUDE[TLA2#tla
 
 ![A message box saying "You clicked the ellipse!"](./media/index/messagebox-text-output.png)
 
-For more information, see [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md). For an introductory sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).
+For more information, see [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md). For an introductory sample, see [Shape Elements Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ShapeElements).
 
-### 2-D Geometries
+### 2D Geometries
 
-When the 2-D shapes that WPF provides are not sufficient, you can use WPF support for geometries and paths to create your own. The following illustration shows how you can use geometries to create shapes, as a drawing brush, and to clip other WPF elements.
+When the 2D shapes that WPF provides are not sufficient, you can use WPF support for geometries and paths to create your own. The following illustration shows how you can use geometries to create shapes, as a drawing brush, and to clip other WPF elements.
 
 ![Screenshot showing how you can use geometries to create shapes.](./media/index/use-geometries-create-shapes.png)
 
-For more information, see [Geometry Overview](geometry-overview.md). For an introductory sample, see [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).
+For more information, see [Geometry Overview](geometry-overview.md). For an introductory sample, see [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometry).
 
-### 2-D Effects
+### 2D Effects
 
-WPF provides a library of 2-D classes that you can use to create a variety of effects. The 2-D rendering capability of WPF provides the ability to paint [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements that have gradients, bitmaps, drawings, and videos; and to manipulate them by using rotation, scaling, and skewing. The following illustration gives an example of the many effects you can achieve by using WPF brushes.
+WPF provides a library of 2D classes that you can use to create a variety of effects. The 2D rendering capability of WPF provides the ability to paint [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements that have gradients, bitmaps, drawings, and videos; and to manipulate them by using rotation, scaling, and skewing. The following illustration gives an example of the many effects you can achieve by using WPF brushes.
 
 ![Illustration showing the different WPF brushes and paint elements.](./media/index/brushes-paint-elements.png)
 
-For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For an introductory sample, see [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).
+For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For an introductory sample, see [Brushes Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Brushes).
 
 <a name="rendering"></a>
 
-## 3-D Rendering
+## 3D Rendering
 
-WPF provides a set of 3-D rendering capabilities that integrate with 2-D graphics support in WPF in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, WPF enables you to render 2-D images onto the surfaces of 3-D shapes, which the following illustration demonstrates.
+WPF provides a set of 3D rendering capabilities that integrate with 2D graphics support in WPF in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, WPF enables you to render 2D images onto the surfaces of 3D shapes, which the following illustration demonstrates.
 
-![Screenshot of a sample showing 3-D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
+![Screenshot of a sample showing 3D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
 
-For more information, see [3-D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3-D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).
+For more information, see [3D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).
 
 <a name="animation"></a>
 
@@ -127,7 +128,7 @@ Use animation to make controls and elements grow, shake, spin, and fade; and to 
 
 ![Screenshot of an animated cube.](./media/index/animate-custom-objects.png)
 
-For more information, see [Animation Overview](animation-overview.md). For an introductory sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).
+For more information, see [Animation Overview](animation-overview.md). For an introductory sample, see [Animation Example Gallery](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationExamples).
 
 <a name="media"></a>
 
@@ -139,7 +140,7 @@ Images, video, and audio are media-rich ways of conveying information and user e
 
 Images, which include icons, backgrounds, and even parts of animations, are a core part of most applications. Because you frequently need to use images, WPF exposes the ability to work with them in a variety of ways. The following illustration shows just one of those ways.
 
-![Styling sample screenshot](../controls/./media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")
+![Styling sample screenshot](../controls/media/stylingintro-eventtriggers.png "StylingIntro_EventTriggers")
 
 For more information, see [Imaging Overview](imaging-overview.md).
 
@@ -165,5 +166,5 @@ For more information, see the [Multimedia Overview](multimedia-overview.md).
 - [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)
 - [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Multimedia Overview](multimedia-overview.md)

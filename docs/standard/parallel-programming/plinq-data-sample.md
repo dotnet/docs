@@ -856,4 +856,4 @@ END PRODUCTS
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

@@ -24,7 +24,7 @@ class MyStream
                 }
             }
         }
-        
+
         using (FileStream fs = new FileStream(FILE_NAME, FileMode.Open, FileAccess.Read))
         {
             using (BinaryReader r = new BinaryReader(fs))

@@ -15,7 +15,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
 ## Example  
  The following example finds the `FullAddress` element, and then retrieves the previous elements using the `preceding-sibling` axis.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
 ```vb  
 Dim co As XElement = XElement.Load("CustomersOrders.xml")  
@@ -51,4 +51,4 @@ Results are identical
   
 ## See also
 
-- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

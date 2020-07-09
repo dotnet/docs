@@ -17,14 +17,14 @@ namespace NavigatingData
         private Button findButton;
         private BindingSource customersBindingSource;
         private DataGridView customersDataGridView;
-    
+
         public Form1()
         {
             this.customersDataGridView = new DataGridView();
             this.nextButton = new Button();
             this.findButton = new Button();
             this.customersBindingSource = new BindingSource();
-                  
+
             this.customersDataGridView.Location = new Point(23, 62);
             this.customersDataGridView.Size = new Size(240, 150);
             this.nextButton.Location = new Point(23, 22);
@@ -82,7 +82,7 @@ namespace NavigatingData
                  "Data Source=localhost;Integrated Security=SSPI;");
             SqlDataAdapter customersDataAdapter =
                 new SqlDataAdapter("Select * from Customers", connectionString);
-                     
+
             DataTable customerTable = new DataTable();
 
             // Fill the table with the contents of the customer table.

@@ -5,15 +5,15 @@ Option Strict On
 Imports System.Globalization
 
 Module Example
-   Public Sub Main()
-      Dim cultureNames() As String = { "en-US", "en-GB", "fr-FR", 
-                                       "ne-NP", "es-BO", "ig-NG" }
-      For Each cultureName In cultureNames
-         Dim region As New RegionInfo(cultureName)
-         Console.WriteLine("{0} {1} the metric system.", region.EnglishName,
-                           If(region.IsMetric, "uses", "does not use"))
-      Next                                       
-   End Sub
+    Public Sub Main()
+        Dim cultureNames() As String = {"en-US", "en-GB", "fr-FR",
+                                         "ne-NP", "es-BO", "ig-NG"}
+        For Each cultureName In cultureNames
+            Dim region As New RegionInfo(cultureName)
+            Console.WriteLine("{0} {1} the metric system.", region.EnglishName,
+                              If(region.IsMetric, "uses", "does not use"))
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       United States does not use the metric system.

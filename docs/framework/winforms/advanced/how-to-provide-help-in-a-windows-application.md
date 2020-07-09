@@ -40,7 +40,7 @@ You can make use of the <xref:System.Windows.Forms.HelpProvider> component to at
 
  At run time, pressing F1 when the control—for which you have set the **HelpKeyword** and **HelpNavigator** properties—has focus will open the Help file you associated with that <xref:System.Windows.Forms.HelpProvider> component.
 
- Currently, the **HelpNamespace** property supports Help files in the following three formats: HTMLHelp 1.x, HTMLHelp 2.0, and HTML. Thus, you can set the **HelpNamespace** property to an http:// address, such as a Web page. If this is done, it will open the default browser to the Web page with the string specified in the **HelpKeyword** property used as the anchor. The anchor is used to jump to a specific part of an HTML page.
+ Currently, the **HelpNamespace** property supports Help files in the following three formats: HTMLHelp 1.x, HTMLHelp 2.0, and HTML. Thus, you can set the **HelpNamespace** property to an `http://` address, such as a Web page. If this is done, it will open the default browser to the Web page with the string specified in the **HelpKeyword** property used as the anchor. The anchor is used to jump to a specific part of an HTML page.
 
 > [!IMPORTANT]
 > Be careful to check any information that is sent from a client before using it in your application. Malicious users might try to send or inject executable script, SQL statements, or other code. Before you display a user's input, store it in a database, or work with it, check that it does not contain potentially unsafe information. A typical way to check is to use a regular expression to look for keywords such as "SCRIPT" when you receive input from a user.

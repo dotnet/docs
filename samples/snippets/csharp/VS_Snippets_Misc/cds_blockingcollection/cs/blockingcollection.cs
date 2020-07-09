@@ -18,22 +18,22 @@ namespace OverviewSnippets
             bool moreItemsToAdd = false;
 
             //<snippet04>
-            // A bounded collection. It can hold no more 
+            // A bounded collection. It can hold no more
             // than 100 items at once.
             BlockingCollection<Data> dataItems = new BlockingCollection<Data>(100);
 
             // A simple blocking consumer with no cancellation.
-            Task.Run(() => 
+            Task.Run(() =>
             {
                 while (!dataItems.IsCompleted)
                 {
-                    
+
                     Data data = null;
                     // Blocks if dataItems.Count == 0.
                     // IOE means that Take() was called on a completed collection.
                     // Some other thread can call CompleteAdding after we pass the
-                    // IsCompleted check but before we call Take. 
-                    // In this example, we can simply catch the exception since the 
+                    // IsCompleted check but before we call Take.
+                    // In this example, we can simply catch the exception since the
                     // loop will break on the next iteration.
                     try
                     {

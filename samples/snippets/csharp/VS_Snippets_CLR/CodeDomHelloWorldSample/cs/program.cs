@@ -13,7 +13,7 @@ namespace BasicCodeDomApp
         static string sourceFileName = "test.cs";
         static void Main(string[] args)
         {
-            CodeDomProvider provider = 
+            CodeDomProvider provider =
                 CodeDomProvider.CreateProvider(providerName);
 
             LogMessage("Building CodeDOM graph...");
@@ -22,11 +22,11 @@ namespace BasicCodeDomApp
 
             cu = BuildHelloWorldGraph();
 
-     	     //<Snippet5>
+            //<Snippet5>
             StreamWriter sourceFile = new StreamWriter(sourceFileName);
             provider.GenerateCodeFromCompileUnit(cu, sourceFile, null);
             sourceFile.Close();
-	     //</Snippet5>
+            //</Snippet5>
 
             //<Snippet6>
             CompilerParameters opt = new CompilerParameters(new string[]{
@@ -59,11 +59,11 @@ namespace BasicCodeDomApp
         }
 
         //<Snippet2>
-        // Build a Hello World program graph using 
+        // Build a Hello World program graph using
         // System.CodeDom types.
         public static CodeCompileUnit BuildHelloWorldGraph()
         {
-            // Create a new CodeCompileUnit to contain 
+            // Create a new CodeCompileUnit to contain
             // the program graph.
             CodeCompileUnit compileUnit = new CodeCompileUnit();
 
@@ -82,9 +82,9 @@ namespace BasicCodeDomApp
             class1.Comments.Add(new CodeCommentStatement("<summary>", true));
             class1.Comments.Add(new CodeCommentStatement(
                 "Create a Hello World application.", true));
+            class1.Comments.Add(new CodeCommentStatement("</summary>", true));
             class1.Comments.Add(new CodeCommentStatement(
                 @"<seealso cref=" + '"' + "Class1.Main" + '"' + "/>", true));
-            class1.Comments.Add(new CodeCommentStatement("</summary>", true));
 
             // Add the new type to the namespace type collection.
             samples.Types.Add(class1);
@@ -102,7 +102,7 @@ namespace BasicCodeDomApp
             //</Snippet4>
 
             // Create a type reference for the System.Console class.
-            CodeTypeReferenceExpression csSystemConsoleType = 
+            CodeTypeReferenceExpression csSystemConsoleType =
                 new CodeTypeReferenceExpression("System.Console");
 
             // Build a Console.WriteLine statement.
@@ -122,7 +122,7 @@ namespace BasicCodeDomApp
             start.Statements.Add(cs2);
 
             // Build a call to System.Console.ReadLine.
-            CodeMethodInvokeExpression csReadLine = 
+            CodeMethodInvokeExpression csReadLine =
                 new CodeMethodInvokeExpression(csSystemConsoleType, "ReadLine");
 
             // Add the ReadLine statement.

@@ -29,7 +29,7 @@ public static void Main()
     // Create a ServiceHost for the CalculatorService type and provide the base address.
     using(ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))
     {
-        serviceHost.AddServiceEndpoint(typeof(ICalculator), 
+        serviceHost.AddServiceEndpoint(typeof(ICalculator),
                                        binding, baseAddress);
         // Open the ServiceHostBase to create listeners and start listening for messages.
         serviceHost.Open();

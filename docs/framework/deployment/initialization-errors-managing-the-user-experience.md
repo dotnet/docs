@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework initialization errors: Managing the user experience"
+description: Control the user experience when a .NET initialization error occurs, such as when the activation system can't find the right CLR version to load.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "no framework found experience"

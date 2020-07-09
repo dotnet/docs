@@ -7,9 +7,9 @@ public class Example
    public static void Main()
    {
       char[] chars = { 'a', 'X', '8', ',', ' ', '\u0009', '!' };
-      
+
       foreach (char ch in chars)
-         Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()), 
+         Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()),
                            Char.GetUnicodeCategory(ch));
    }
 }
@@ -21,4 +21,4 @@ public class Example
 //       '\ ': SpaceSeparator
 //       '\t': Control
 //       '!': OtherPunctuation
-// </Snippet14>      
+// </Snippet14>

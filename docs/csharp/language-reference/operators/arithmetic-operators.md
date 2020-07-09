@@ -1,7 +1,7 @@
 ---
 title: "Arithmetic operators - C# reference"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
-ms.date: 03/27/2019
+ms.date: 05/11/2020
 author: pkulikov
 f1_keywords: 
   - "++_CSharpKeyword"
@@ -36,6 +36,8 @@ The following operators perform arithmetic operations with operands of numeric t
 - Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
 Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
+
+In the case of integral types, those operators (except the `++` and `--` operators) are defined for the `int`, `uint`, `long`, and `ulong` types. When operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral or floating-point types, their values are converted to the closest containing type, if such a type exists. For more information, see the [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions) section of the [C# language specification](~/_csharplang/spec/introduction.md). The `++` and `--` operators are defined for all integral and floating-point numeric types and the [char](../builtin-types/char.md) type.
 
 ## Increment operator ++
 
@@ -147,7 +149,7 @@ The addition operator `+` computes the sum of its operands:
 
 [!code-csharp-interactive[addition operator](snippets/ArithmeticOperators.cs#Addition)]
 
-You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
+You can also use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
 
 ## Subtraction operator -
 
@@ -155,7 +157,7 @@ The subtraction operator `-` subtracts its right-hand operand from its left-hand
 
 [!code-csharp-interactive[subtraction operator](snippets/ArithmeticOperators.cs#Subtraction)]
 
-You also can use the `-` operator for delegate removal. For more information, see the [`-` and `-=` operators](subtraction-operator.md) article.
+You can also use the `-` operator for delegate removal. For more information, see the [`-` and `-=` operators](subtraction-operator.md) article.
 
 ## Compound assignment
 

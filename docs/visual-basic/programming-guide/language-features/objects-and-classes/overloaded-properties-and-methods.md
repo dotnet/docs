@@ -76,12 +76,12 @@ At run time, the compiler chooses the appropriate overloaded function that match
 
 ## See also
 
-- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
-- [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
-- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
-- [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md)
-- [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md)
-- [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md)
-- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)
-- [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Objects and Classes](index.md)
+- [Shadowing in Visual Basic](../declared-elements/shadowing.md)
+- [Sub Statement](../../../language-reference/statements/sub-statement.md)
+- [Inheritance Basics](inheritance-basics.md)
+- [Shadows](../../../language-reference/modifiers/shadows.md)
+- [ByVal](../../../language-reference/modifiers/byval.md)
+- [ByRef](../../../language-reference/modifiers/byref.md)
+- [Overloads](../../../language-reference/modifiers/overloads.md)
+- [Shadows](../../../language-reference/modifiers/shadows.md)

@@ -19,7 +19,7 @@ namespace SDKSample
             ModelVisual3D myModelVisual3D = new ModelVisual3D();
 
             // Defines the camera used to view the 3D object. In order to view the 3D object,
-            // the camera must be positioned and pointed such that the object is within view 
+            // the camera must be positioned and pointed such that the object is within view
             // of the camera.
             PerspectiveCamera myPCamera = new PerspectiveCamera();
 
@@ -35,8 +35,8 @@ namespace SDKSample
             // Asign the camera to the viewport
             myViewport3D.Camera = myPCamera;
 
-            // Define the lights cast in the scene. Without light, the 3D object cannot 
-            // be seen. Note: to illuminate an object from additional directions, create 
+            // Define the lights cast in the scene. Without light, the 3D object cannot
+            // be seen. Note: to illuminate an object from additional directions, create
             // additional lights.
             DirectionalLight myDirectionalLight = new DirectionalLight();
             myDirectionalLight.Color = Colors.White;
@@ -44,7 +44,7 @@ namespace SDKSample
 
             myModel3DGroup.Children.Add(myDirectionalLight);
 
-            // The geometry specifes the shape of the 3D plane. In this sample, a flat sheet 
+            // The geometry specifes the shape of the 3D plane. In this sample, a flat sheet
             // is created.
             MeshGeometry3D myMeshGeometry3D = new MeshGeometry3D();
 
@@ -58,7 +58,7 @@ namespace SDKSample
             myNormalCollection.Add(new Vector3D(0,0,1));
             myMeshGeometry3D.Normals = myNormalCollection;
 
-            // Create a collection of vertex positions for the MeshGeometry3D. 
+            // Create a collection of vertex positions for the MeshGeometry3D.
             Point3DCollection myPositionCollection = new Point3DCollection();
             myPositionCollection.Add(new Point3D(-0.5, -0.5, 0.5));
             myPositionCollection.Add(new Point3D(0.5, -0.5, 0.5));
@@ -91,13 +91,13 @@ namespace SDKSample
             // Apply the mesh to the geometry model.
             myGeometryModel.Geometry = myMeshGeometry3D;
             // <SnippetEmissiveMaterialCodeExampleInline1>
-            // The material property of GeometryModel3D specifies the material applied to the 3D object.  
-            // In this sample the material applied to the 3D object is made up of two materials layered  
-            // on top of each other - a DiffuseMaterial (gradient brush) with an EmissiveMaterial 
-            // layered on top (blue SolidColorBrush). The EmmisiveMaterial alters the appearance of  
+            // The material property of GeometryModel3D specifies the material applied to the 3D object.
+            // In this sample the material applied to the 3D object is made up of two materials layered
+            // on top of each other - a DiffuseMaterial (gradient brush) with an EmissiveMaterial
+            // layered on top (blue SolidColorBrush). The EmmisiveMaterial alters the appearance of
             // the gradient toward blue.
 
-            // Create a horizontal linear gradient with four stops.   
+            // Create a horizontal linear gradient with four stops.
             LinearGradientBrush myHorizontalGradient = new LinearGradientBrush();
             myHorizontalGradient.StartPoint = new Point(0, 0.5);
             myHorizontalGradient.EndPoint = new Point(1, 0.5);
@@ -127,7 +127,7 @@ namespace SDKSample
             // Add the composite material to the 3D model.
             myGeometryModel.Material = myMaterialGroup;
             // </SnippetEmissiveMaterialCodeExampleInline1>
-            // Apply a transform to the object. In this sample, a rotation transform is applied,  
+            // Apply a transform to the object. In this sample, a rotation transform is applied,
             // rendering the 3D object rotated.
             RotateTransform3D myRotateTransform3D = new RotateTransform3D();
             AxisAngleRotation3D myAxisAngleRotation3d = new AxisAngleRotation3D();
@@ -140,7 +140,7 @@ namespace SDKSample
             myModel3DGroup.Children.Add(myGeometryModel);
 
             // Add the group of models to the ModelVisual3d.
-            myModelVisual3D.Content = myModel3DGroup; 
+            myModelVisual3D.Content = myModel3DGroup;
             myViewport3D.Children.Add(myModelVisual3D);
 
             // Apply the viewport to the page so it will be rendered.

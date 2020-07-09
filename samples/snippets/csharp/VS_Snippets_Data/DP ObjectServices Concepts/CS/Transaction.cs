@@ -59,7 +59,7 @@ namespace ObjectServicesConceptsCS
                         // Add new item to the order.
                         order.SalesOrderDetails.Add(newItem);
 
-                        // Save changes pessimistically. This means that changes 
+                        // Save changes pessimistically. This means that changes
                         // must be accepted manually once the transaction succeeds.
                         context.SaveChanges(SaveOptions.DetectChangesBeforeSave);
 
@@ -91,7 +91,7 @@ namespace ObjectServicesConceptsCS
                     catch (Exception ex)
                     {
                         // Handle errors and deadlocks here and retry if needed.
-                        // Allow an UpdateException to pass through and 
+                        // Allow an UpdateException to pass through and
                         // retry, otherwise stop the execution.
                         if (ex.GetType() != typeof(UpdateException))
                         {

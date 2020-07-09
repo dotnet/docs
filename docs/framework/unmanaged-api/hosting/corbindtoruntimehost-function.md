@@ -24,13 +24,13 @@ Enables hosts to load a specified version of the common language runtime (CLR) i
   
 ```cpp  
 HRESULT CorBindToRuntimeHost (  
-    [in] LPCWSTR       pwszVersion,   
-    [in] LPCWSTR       pwszBuildFlavor,   
-    [in] LPCWSTR       pwszHostConfigFile,   
-    [in] VOID*         pReserved,   
-    [in] DWORD         startupFlags,   
-    [in] REFCLSID      rclsid,   
-    [in] REFIID        riid,   
+    [in] LPCWSTR       pwszVersion,
+    [in] LPCWSTR       pwszBuildFlavor,
+    [in] LPCWSTR       pwszHostConfigFile,
+    [in] VOID*         pReserved,
+    [in] DWORD         startupFlags,
+    [in] REFCLSID      rclsid,
+    [in] REFIID        riid,
     [out] LPVOID FAR  *ppv  
 );  
 ```  
@@ -60,10 +60,10 @@ HRESULT CorBindToRuntimeHost (
  [in] Reserved for future extensibility.  
   
  `startupFlags`  
- [in] A set of flags that controls concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. For a list of supported values, see the [STARTUP_FLAGS enumeration](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md).  
+ [in] A set of flags that controls concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. For a list of supported values, see the [STARTUP_FLAGS enumeration](startup-flags-enumeration.md).  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of the interface you are requesting. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  
@@ -72,7 +72,7 @@ HRESULT CorBindToRuntimeHost (
  [out] An interface pointer to the version of the runtime that was loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -82,9 +82,9 @@ HRESULT CorBindToRuntimeHost (
   
 ## See also
 
-- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
-- [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
-- [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)
-- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntime Function](corbindtoruntime-function.md)
+- [CorBindToRuntimeByCfg Function](corbindtoruntimebycfg-function.md)
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

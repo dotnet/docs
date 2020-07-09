@@ -11,7 +11,7 @@ Namespace Microsoft.ServiceModel.Samples
     Public Interface ICalculator
 
         <OperationContract()> _
-          Function Add(ByVal n1 As Double, _
+        Function Add(ByVal n1 As Double, _
                        ByVal n2 As Double) As Double
 
         <OperationContract()> _

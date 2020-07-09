@@ -14,4 +14,4 @@ You tried to access an object that does not support the locale setting for the c
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

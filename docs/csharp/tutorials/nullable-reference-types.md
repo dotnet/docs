@@ -66,7 +66,7 @@ The app you'll build does the following steps:
 1. Contacts respondents until the completed survey size reaches the goal number.
 1. Writes out important statistics on the survey responses.
 
-## Build the survey with nullable and non-nullable types
+## Build the survey with nullable and non-nullable reference types
 
 The first code you'll write creates the survey. You'll write classes to model a survey question and a survey run. Your survey has three types of questions, distinguished by the format of the answer: Yes/No answers, number answers, and text answers. Create a `public SurveyQuestion` class:
 

@@ -1,9 +1,9 @@
 ﻿// <Snippet108>
 using System;
 
-class Example 
+class Example
 {
-    static void Main() 
+    static void Main()
     {
         int[] arr = {1, 4, 5};
         Console.WriteLine("In Main, array has {0} elements and starts with {1}",

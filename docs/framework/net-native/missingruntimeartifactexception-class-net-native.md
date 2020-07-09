@@ -66,7 +66,7 @@ ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
   
 > [!IMPORTANT]
 > Because this exception indicates that the implementation code needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by using a runtime directives file. Typically, you eliminate this exception by specifying the appropriate `Activate` or `Dynamic` policy for a program element in the runtime directives file (\*.rd.xml file). To get the entry that you can add to your runtime directives file that eliminates the exception, you can use one of two troubleshooters:  
->   
+>
 > - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/type.html) for types.  
 > - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   

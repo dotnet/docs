@@ -1,5 +1,6 @@
 ---
 title: "How to: Read Image Metadata"
+desription: Learn how to read the Windows Forms PropertyItems property of an Image object to retrieve all the metadata from a file.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -65,14 +66,14 @@ The code produces output similar to the following:
  id: 0x320
   
  type: 2
- 
- length: 16 bytes 
+
+ length: 16 bytes
   
  Property Item 1
   
  id: 0x10f
   
- type: 2 
+ type: 2
   
  length: 17 bytes
   

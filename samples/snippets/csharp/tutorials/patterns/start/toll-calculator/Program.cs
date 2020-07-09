@@ -9,7 +9,7 @@ namespace toll_calculator
     {
         static void Main(string[] args)
         {
-            /*   First set of test code 
+            /*   First set of test code
             var tollCalc = new TollCalculator();
 
             var car = new Car();

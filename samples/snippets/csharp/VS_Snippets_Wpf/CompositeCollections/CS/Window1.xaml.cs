@@ -33,7 +33,7 @@ namespace SDKSample
                 _name = value;
             }
 		}
-        
+
         public GreekGod(string name)
         {
             Name = name;

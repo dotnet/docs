@@ -23,12 +23,12 @@ namespace PrintApp
             this.printButton.Click += new System.EventHandler(this.printButton_Click);
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Controls.Add(this.printButton);
-            
+
             // Associate the PrintPage event handler with the PrintPage event.
             printDocument1.PrintPage +=
                 new PrintPageEventHandler(printDocument1_PrintPage);
         }
-      
+
         private void ReadFile()
         {
             //<snippet1>
@@ -42,14 +42,14 @@ namespace PrintApp
             }
             //</snippet1>
         }
-       
+
         //<snippet2>
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             int charactersOnPage = 0;
             int linesPerPage = 0;
 
-            // Sets the value of charactersOnPage to the number of characters 
+            // Sets the value of charactersOnPage to the number of characters
             // of stringToPrint that will fit within the bounds of the page.
             e.Graphics.MeasureString(stringToPrint, this.Font,
                 e.MarginBounds.Size, StringFormat.GenericTypographic,
@@ -74,7 +74,7 @@ namespace PrintApp
             printDocument1.Print();
             //</snippet5>
         }
-      
+
         [STAThread]
         static void Main()
         {

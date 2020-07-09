@@ -9,7 +9,7 @@ Specifies the elements returned by a query.
 ## Syntax  
   
 ```sql  
-SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr   
+SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr
       [{ , aliasedExpr }] FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause ]  
 -- or  
 SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause  
@@ -66,7 +66,7 @@ SELECT customers.Name FROM customers AS c
   
 ```sql  
 SELECT 1 AS a, "abc" AS b FROM C  
-SELECT VALUE ROW(1 AS a, "abc" AS b) FROM C   
+SELECT VALUE ROW(1 AS a, "abc" AS b) FROM C
 ```  
   
 ## All and Distinct Modifiers  

@@ -141,7 +141,7 @@ namespace CryptoWalkThru
 
             // Use RSACryptoServiceProvider to
             // enrypt the Rijndael key.
-            // rsa is previously instantiated: 
+            // rsa is previously instantiated:
             //    rsa = new RSACryptoServiceProvider(cspp);
             byte[] keyEncrypted = rsa.Encrypt(rjndl.Key, false);
 

@@ -350,7 +350,7 @@ namespace create_cube
             DiffuseMaterial side2Material = new DiffuseMaterial((Brush)Application.Current.Resources["yellowBrush"]);
             DiffuseMaterial side6Material = new DiffuseMaterial((Brush)Application.Current.Resources["orangeBrush"]);
 
-            //<Snippet_MIL3D_3DOverview_csharp_n1> 
+            //<Snippet_MIL3D_3DOverview_csharp_n1>
             //DiffuseMaterial side1Material = new DiffuseMaterial((Brush)Application.Current.Resources["gradientBrush"]);
             //</Snippet_MIL3D_3DOverview_csharp_n1>
 

@@ -5,7 +5,7 @@ using System.IO.Compression;
 public static class BrotliExample
 {
     // <Snippet1>
-    public static Stream DecompressWithBrotli(Stream toDecompress)   
+    public static Stream DecompressWithBrotli(Stream toDecompress)
     {
         MemoryStream decompressedStream = new MemoryStream();
         using (BrotliStream decompressionStream = new BrotliStream(toDecompress, CompressionMode.Decompress))

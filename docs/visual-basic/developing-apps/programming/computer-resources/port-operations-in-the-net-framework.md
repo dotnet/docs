@@ -30,4 +30,4 @@ This table lists and describes the main enumerations used for accessing a serial
 ## See also
 
 - <xref:Microsoft.VisualBasic.Devices.Ports>
-- [Accessing the Computer's Ports](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)
+- [Accessing the Computer's Ports](accessing-the-computer-s-ports.md)

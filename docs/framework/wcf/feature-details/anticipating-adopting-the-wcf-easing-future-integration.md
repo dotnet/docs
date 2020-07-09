@@ -39,4 +39,4 @@ public interface IEcho
   
 ## See also
 
-- [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](anticipating-adopting-wcf-migration.md)

@@ -1,5 +1,5 @@
 ﻿        public void GroupBySubstring()
-        {            
+        {
             Console.WriteLine("\r\nGroup by something other than a property of the object:");
 
             var queryFirstLetters =
@@ -14,7 +14,7 @@
                 {
                     Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
                 }
-            }           
+            }
         }
         /* Output:
             Group by something other than a property of the object:

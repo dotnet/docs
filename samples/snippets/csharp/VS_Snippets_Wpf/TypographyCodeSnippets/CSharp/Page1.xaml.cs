@@ -32,6 +32,6 @@ namespace SDKSample
 
             MyParagraph.Inlines.Add(new LineBreak());
             // </SnippetTypographyCodeSnippet1>
-        } 
+        }
     }
 }

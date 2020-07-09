@@ -6,9 +6,9 @@ ms.assetid: af70132d-e9e1-4f32-b20f-f0014629758a
 # Hosting in a Managed Application
 Windows Communication Foundation (WCF) services can be hosted in any .NET Framework application. Self-hosting services is the most flexible hosting option because it requires the least infrastructure to deploy. However, it is also the least robust hosting option, because managed applications do not provide the advanced hosting and management features of other hosting options in WCF, such as Internet Information Services (IIS) and Windows services.  
   
- To create a self-hosted service, create and open an instance of the <xref:System.ServiceModel.ServiceHost>, which starts a service listening for messages. For more information, see [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md).  
+ To create a self-hosted service, create and open an instance of the <xref:System.ServiceModel.ServiceHost>, which starts a service listening for messages. For more information, see [How to: Host a WCF Service in a Managed Application](../how-to-host-a-wcf-service-in-a-managed-application.md).  
   
- For a complete example on how to define a contract, implement the contract, and host a service inside of a managed application see the [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md) and the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md).  
+ For a complete example on how to define a contract, implement the contract, and host a service inside of a managed application see the [Getting Started Tutorial](../getting-started-tutorial.md) and the [Self-Host](../samples/self-host.md).  
   
  The following sections describe common scenarios that use this hosting option.  
   
@@ -20,5 +20,5 @@ Windows Communication Foundation (WCF) services can be hosted in any .NET Framew
   
 ## See also
 
-- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)
-- [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md)
+- [Hosting Services](../hosting-services.md)
+- [Getting Started Tutorial](../getting-started-tutorial.md)

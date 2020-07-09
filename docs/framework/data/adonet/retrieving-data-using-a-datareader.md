@@ -1,5 +1,6 @@
 ---
 title: "Retrieving Data Using a DataReader"
+description: Learn how to retrieve data using a DataReader in ADO.NET with this sample code. DataReader provides an unbuffered stream of data.
 ms.date: "10/29/2018"
 dev_langs: 
   - "csharp"
@@ -139,21 +140,21 @@ using (OleDbConnection connection = new OleDbConnection(
  For example, consider the following Oracle package and package body.  
   
 ```sql
-CREATE OR REPLACE PACKAGE CURSPKG AS   
-  TYPE T_CURSOR IS REF CURSOR;   
-  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-    DEPTCURSOR OUT T_CURSOR);   
+CREATE OR REPLACE PACKAGE CURSPKG AS
+  TYPE T_CURSOR IS REF CURSOR;
+  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,
+    DEPTCURSOR OUT T_CURSOR);
 END CURSPKG;  
   
-CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
-  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,   
-    DEPTCURSOR OUT T_CURSOR)   
-  IS   
-  BEGIN   
-    OPEN EMPCURSOR FOR SELECT * FROM DEMO.EMPLOYEE;   
-    OPEN DEPTCURSOR FOR SELECT * FROM DEMO.DEPARTMENT;   
-  END OPEN_TWO_CURSORS;   
-END CURSPKG;   
+CREATE OR REPLACE PACKAGE BODY CURSPKG AS
+  PROCEDURE OPEN_TWO_CURSORS (EMPCURSOR OUT T_CURSOR,
+    DEPTCURSOR OUT T_CURSOR)
+  IS
+  BEGIN
+    OPEN EMPCURSOR FOR SELECT * FROM DEMO.EMPLOYEE;
+    OPEN DEPTCURSOR FOR SELECT * FROM DEMO.DEPARTMENT;
+  END OPEN_TWO_CURSORS;
+END CURSPKG;
 ```  
   
  The following code creates an <xref:System.Data.OracleClient.OracleCommand> that returns the REF CURSORs from the previous Oracle package by adding two parameters of type <xref:System.Data.OracleClient.OracleType.Cursor?displayProperty=nameWithType> to the <xref:System.Data.OracleClient.OracleCommand.Parameters?displayProperty=nameWithType> collection.  

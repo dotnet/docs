@@ -1,7 +1,7 @@
 ---
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
-ms.date: 01/14/2020
+ms.date: 05/01/2020
 ms.custom: "updateeachrelease"
 ---
 # global.json overview
@@ -79,6 +79,12 @@ The following table shows the possible values for the `rollForward` key:
 | `latestMajor` | Uses the highest installed .NET Core SDK with a major that is greater or equal than the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. Exact match required. |
 
+### msbuild-sdks
+
+Type: `object`
+
+Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
+
 ## Examples
 
 The following example shows how to not use prerelease versions:
@@ -91,12 +97,12 @@ The following example shows how to not use prerelease versions:
 }
 ```
 
-The following example shows how to use the highest version installed that is greater or equal than the specified version:
+The following example shows how to use the highest version installed that is greater or equal than the specified version. The JSON shown disallows any SDK version earlier than 2.2.200 and allows 2.2.200 or any later version, including 3.0.xxx and 3.1.xxx.
 
 ```json
 {
   "sdk": {
-    "version": "3.1.100",
+    "version": "2.2.200",
     "rollForward": "latestMajor"
   }
 }
@@ -113,12 +119,23 @@ The following example shows how to use the exact specified version:
 }
 ```
 
-The following example shows how to use the highest patch version installed of a specific version (in the form, 3.1.1xx):
+The following example shows how to use the latest feature band and patch version installed of a specific major and minor version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any later 3.1.xxx version, such as 3.1.103 or 3.1.200.
 
 ```json
 {
   "sdk": {
-    "version": "3.1.100",
+    "version": "3.1.102",
+    "rollForward": "latestFeature"
+  }
+}
+```
+
+The following example shows how to use the highest patch version installed of a specific version. The JSON shown disallows any SDK version earlier than 3.1.102 and allows 3.1.102 or any later 3.1.1xx version, such as 3.1.103 or 3.1.199.
+
+```json
+{
+  "sdk": {
+    "version": "3.1.102",
     "rollForward": "latestPatch"
   }
 }

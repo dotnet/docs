@@ -10,7 +10,7 @@ This topic outlines the steps required to enable a reliable session using one of
 
 The key part of this procedure is that the endpoint configuration element contain a `bindingConfiguration` attribute that references a binding configuration named `Binding1`. The [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) configuration element references this name to enable reliable sessions by setting the `enabled` attribute of the [**\<reliableSession>**](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731302(v=vs.100)) element to `true`. You specify the ordered delivery assurances for the reliable session by setting the `ordered` attribute to `true`.
 
-For the source copy of this example, see [WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md).
+For the source copy of this example, see [WS Reliable Session](../samples/ws-reliable-session.md).
 
 ### Configure the service with a WSHttpBinding to use a reliable session
 
@@ -28,7 +28,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
 1. Create a *Service.svc* file that contains the line:
 
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 
@@ -36,7 +36,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
 ### Configure the client with a WSHttpBinding to use a reliable session
 
-1. Use the [ServiceModel Metadata Utility Tool (*Svcutil.exe*)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata:
+1. Use the [ServiceModel Metadata Utility Tool (*Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata:
 
    ```console
    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -70,8 +70,8 @@ Several of the system-provided bindings support reliable sessions by default. Th
 
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>
 
-For an example of how to create a custom binding that supports reliable sessions, see [How to: Create a Custom Reliable Session Binding with HTTPS](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md).
+For an example of how to create a custom binding that supports reliable sessions, see [How to: Create a Custom Reliable Session Binding with HTTPS](how-to-create-a-custom-reliable-session-binding-with-https.md).
 
 ## See also
 
-- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Reliable Sessions](reliable-sessions.md)

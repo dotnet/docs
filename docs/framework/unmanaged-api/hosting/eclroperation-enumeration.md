@@ -54,7 +54,7 @@ typedef enum {
  The CLR also distinguishes between graceful and non-graceful (rude) aborts. In general, a normal or graceful abort makes every effort to run exception-handling routines and finalizers before aborting a task, while a rude abort makes no such guarantees.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -64,8 +64,8 @@ typedef enum {
   
 ## See also
 
-- [EClrFailure Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md)
-- [EPolicyAction Enumeration](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md)
-- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)
-- [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [EClrFailure Enumeration](eclrfailure-enumeration.md)
+- [EPolicyAction Enumeration](epolicyaction-enumeration.md)
+- [ICLRPolicyManager Interface](iclrpolicymanager-interface.md)
+- [IHostPolicyManager Interface](ihostpolicymanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

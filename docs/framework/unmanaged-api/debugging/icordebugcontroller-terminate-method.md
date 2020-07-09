@@ -41,7 +41,7 @@ HRESULT Terminate (
 > This method is not implemented by an application domain. That is, it is not implemented at the <xref:System.AppDomain> level.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

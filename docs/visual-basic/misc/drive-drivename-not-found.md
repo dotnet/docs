@@ -20,4 +20,4 @@ The drive cannot be found. Either your network connection has been lost, or the 
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

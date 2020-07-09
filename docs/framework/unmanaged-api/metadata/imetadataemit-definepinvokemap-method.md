@@ -22,11 +22,11 @@ Sets features of the PInvoke signature of the method referenced by the specified
 ## Syntax  
   
 ```cpp  
-HRESULT DefinePinvokeMap (   
-    [in]  mdToken            tk,   
-    [in]  DWORD              dwMappingFlags,   
-    [in]  LPCWSTR            szImportName,   
-    [in]  mdModuleRef        mrImportDLL   
+HRESULT DefinePinvokeMap (
+    [in]  mdToken            tk,
+    [in]  DWORD              dwMappingFlags,
+    [in]  LPCWSTR            szImportName,
+    [in]  mdModuleRef        mrImportDLL
 );  
 ```  
   
@@ -44,7 +44,7 @@ HRESULT DefinePinvokeMap (
  [in] The token for the target native DLL.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,5 +54,5 @@ HRESULT DefinePinvokeMap (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

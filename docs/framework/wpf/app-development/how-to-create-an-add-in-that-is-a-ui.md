@@ -29,7 +29,7 @@ This example shows how to create an add-in that is a Windows Presentation Founda
 ## Example  
  To create an add-in that is a WPF UI requires specific code for each pipeline segment, the add-in, and the host application.  
 
-<a name="Contract"></a>   
+<a name="Contract"></a>
 ## Implementing the Contract Pipeline Segment
 
 When an add-in is a UI, the contract for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>. In the example, `IWPFAddInContract` implements <xref:System.AddIn.Contract.INativeHandleContract>, as shown in the following code.  
@@ -37,7 +37,7 @@ When an add-in is a UI, the contract for the add-in must implement <xref:System.
 [!code-csharp[SimpleAddInIsAUISample#ContractCode](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInIsAUISample/CSharp/Contracts/IWPFAddInContract.cs#contractcode)]
 [!code-vb[SimpleAddInIsAUISample#ContractCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInIsAUISample/VisualBasic/Contracts/IWPFAddInContract.vb#contractcode)]
 
-<a name="AddInViewPipeline"></a>   
+<a name="AddInViewPipeline"></a>
 ## Implementing the Add-In View Pipeline Segment
 
 Because the add-in is implemented as a subclass of the <xref:System.Windows.FrameworkElement> type, the add-in view must also subclass <xref:System.Windows.FrameworkElement>. The following code shows the add-in view of the contract, implemented as the `WPFAddInView` class.  
@@ -62,7 +62,7 @@ In the add-in model where an add-in returns a UI (see [Create an Add-In That Ret
   
 Because the add-in-side adapter implements an interface that derives from <xref:System.AddIn.Contract.INativeHandleContract>, you also need to implement <xref:System.AddIn.Contract.INativeHandleContract.GetHandle%2A>, although this is ignored when <xref:System.AddIn.Pipeline.ContractBase.QueryContract%2A> is overridden.  
   
-<a name="HostViewPipeline"></a>   
+<a name="HostViewPipeline"></a>
 ## Implementing the Host View Pipeline Segment
 
 In this model, the host application typically expects the host view to be a <xref:System.Windows.FrameworkElement> subclass. The host-side adapter must convert the <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> after the <xref:System.AddIn.Contract.INativeHandleContract> crosses the isolation boundary. Because a method isn't being called by the host application to get the <xref:System.Windows.FrameworkElement>, the host view must "return" the <xref:System.Windows.FrameworkElement> by containing it. Consequently, the host view must derive from a subclass of <xref:System.Windows.FrameworkElement> that can contain other UIs, such as <xref:System.Windows.Controls.UserControl>. The following code shows the host view of the contract, implemented as the `WPFAddInHostView` class.  
@@ -70,7 +70,7 @@ In this model, the host application typically expects the host view to be a <xre
 [!code-csharp[WPFAddInHostView class](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleAddInIsAUISample/CSharp/HostViews/WPFAddInHostView.cs#HostViewCode)]
 [!code-vb[WPFAddInHostView class](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleAddInIsAUISample/VisualBasic/HostViews/WPFAddInHostView.vb#HostViewCode)]
 
-<a name="HostSideAdapter"></a>   
+<a name="HostSideAdapter"></a>
 ## Implementing the Host-Side Adapter Pipeline Segment
 
 While the contract is an <xref:System.AddIn.Contract.INativeHandleContract>, the host application expects a <xref:System.Windows.Controls.UserControl> (as specified by the host view). Consequently, the <xref:System.AddIn.Contract.INativeHandleContract> must be converted to a <xref:System.Windows.FrameworkElement> after crossing the isolation boundary, before being set as content of the host view (which derives from <xref:System.Windows.Controls.UserControl>).  
@@ -84,7 +84,7 @@ As you can see, the host-side adapter acquires the <xref:System.AddIn.Contract.I
   
 The host-side adapter then converts the <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement> by calling <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A>. Finally, the <xref:System.Windows.FrameworkElement> is set as the content of the host view.  
   
-<a name="AddIn"></a>   
+<a name="AddIn"></a>
 ## Implementing the Add-In
 
 With the add-in-side adapter and add-in view in place, the add-in can be implemented by deriving from the add-in view, as shown in the following code.  

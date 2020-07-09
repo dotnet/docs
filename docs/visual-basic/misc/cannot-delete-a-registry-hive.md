@@ -13,4 +13,4 @@ An attempt has been made to delete a registry hive. Hives are top-level registry
 ## See also
 
 - [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)
-- [How to: Delete a Registry Key](../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)
+- [How to: Delete a Registry Key](../developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)

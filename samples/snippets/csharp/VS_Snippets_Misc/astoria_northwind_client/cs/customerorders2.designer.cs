@@ -65,103 +65,103 @@
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // companyNameLabel
-            // 
+            //
             companyNameLabel.AutoSize = true;
             companyNameLabel.Location = new System.Drawing.Point(42, 40);
             companyNameLabel.Name = "companyNameLabel";
             companyNameLabel.Size = new System.Drawing.Size(85, 13);
             companyNameLabel.TabIndex = 1;
             companyNameLabel.Text = "Company Name:";
-            // 
+            //
             // contactNameLabel
-            // 
+            //
             contactNameLabel.AutoSize = true;
             contactNameLabel.Location = new System.Drawing.Point(49, 66);
             contactNameLabel.Name = "contactNameLabel";
             contactNameLabel.Size = new System.Drawing.Size(78, 13);
             contactNameLabel.TabIndex = 3;
             contactNameLabel.Text = "Contact Name:";
-            // 
+            //
             // contactTitleLabel
-            // 
+            //
             contactTitleLabel.AutoSize = true;
             contactTitleLabel.Location = new System.Drawing.Point(57, 92);
             contactTitleLabel.Name = "contactTitleLabel";
             contactTitleLabel.Size = new System.Drawing.Size(70, 13);
             contactTitleLabel.TabIndex = 5;
             contactTitleLabel.Text = "Contact Title:";
-            // 
+            //
             // phoneLabel
-            // 
+            //
             phoneLabel.AutoSize = true;
             phoneLabel.Location = new System.Drawing.Point(282, 40);
             phoneLabel.Name = "phoneLabel";
             phoneLabel.Size = new System.Drawing.Size(41, 13);
             phoneLabel.TabIndex = 7;
             phoneLabel.Text = "Phone:";
-            // 
+            //
             // faxLabel
-            // 
+            //
             faxLabel.AutoSize = true;
             faxLabel.Location = new System.Drawing.Point(296, 66);
             faxLabel.Name = "faxLabel";
             faxLabel.Size = new System.Drawing.Size(27, 13);
             faxLabel.TabIndex = 9;
             faxLabel.Text = "Fax:";
-            // 
+            //
             // customersBindingSource
-            // 
+            //
             this.customersBindingSource.DataSource = typeof(Northwind.Customer);
-            // 
+            //
             // companyNameTextBox
-            // 
+            //
             this.companyNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
             this.companyNameTextBox.Location = new System.Drawing.Point(133, 37);
             this.companyNameTextBox.Name = "companyNameTextBox";
             this.companyNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.companyNameTextBox.TabIndex = 2;
-            // 
+            //
             // contactNameTextBox
-            // 
+            //
             this.contactNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactName", true));
             this.contactNameTextBox.Location = new System.Drawing.Point(133, 63);
             this.contactNameTextBox.Name = "contactNameTextBox";
             this.contactNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactNameTextBox.TabIndex = 4;
-            // 
+            //
             // contactTitleTextBox
-            // 
+            //
             this.contactTitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactTitle", true));
             this.contactTitleTextBox.Location = new System.Drawing.Point(133, 89);
             this.contactTitleTextBox.Name = "contactTitleTextBox";
             this.contactTitleTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactTitleTextBox.TabIndex = 6;
-            // 
+            //
             // phoneTextBox
-            // 
+            //
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
             this.phoneTextBox.Location = new System.Drawing.Point(329, 37);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.phoneTextBox.TabIndex = 8;
-            // 
+            //
             // faxTextBox
-            // 
+            //
             this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Fax", true));
             this.faxTextBox.Location = new System.Drawing.Point(329, 63);
             this.faxTextBox.Name = "faxTextBox";
             this.faxTextBox.Size = new System.Drawing.Size(100, 20);
             this.faxTextBox.TabIndex = 10;
-            // 
+            //
             // ordersBindingSource
-            // 
+            //
             this.ordersBindingSource.DataMember = "Orders";
             this.ordersBindingSource.DataSource = this.customersBindingSource;
-            // 
+            //
             // ordersDataGridView
-            // 
+            //
             this.ordersDataGridView.AutoGenerateColumns = false;
             this.ordersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -182,81 +182,81 @@
             this.ordersDataGridView.Name = "ordersDataGridView";
             this.ordersDataGridView.Size = new System.Drawing.Size(570, 237);
             this.ordersDataGridView.TabIndex = 11;
-            // 
+            //
             // dataGridViewTextBoxColumn1
-            // 
+            //
             this.dataGridViewTextBoxColumn1.DataPropertyName = "OrderID";
             this.dataGridViewTextBoxColumn1.HeaderText = "OrderID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
+            //
             // dataGridViewTextBoxColumn2
-            // 
+            //
             this.dataGridViewTextBoxColumn2.DataPropertyName = "OrderDate";
             this.dataGridViewTextBoxColumn2.HeaderText = "OrderDate";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
+            //
             // dataGridViewTextBoxColumn3
-            // 
+            //
             this.dataGridViewTextBoxColumn3.DataPropertyName = "RequiredDate";
             this.dataGridViewTextBoxColumn3.HeaderText = "RequiredDate";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
+            //
             // dataGridViewTextBoxColumn4
-            // 
+            //
             this.dataGridViewTextBoxColumn4.DataPropertyName = "ShippedDate";
             this.dataGridViewTextBoxColumn4.HeaderText = "ShippedDate";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
+            //
             // dataGridViewTextBoxColumn5
-            // 
+            //
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Freight";
             this.dataGridViewTextBoxColumn5.HeaderText = "Freight";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
+            //
             // dataGridViewTextBoxColumn6
-            // 
+            //
             this.dataGridViewTextBoxColumn6.DataPropertyName = "ShipName";
             this.dataGridViewTextBoxColumn6.HeaderText = "ShipName";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
+            //
             // dataGridViewTextBoxColumn7
-            // 
+            //
             this.dataGridViewTextBoxColumn7.DataPropertyName = "ShipAddress";
             this.dataGridViewTextBoxColumn7.HeaderText = "ShipAddress";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
+            //
             // dataGridViewTextBoxColumn8
-            // 
+            //
             this.dataGridViewTextBoxColumn8.DataPropertyName = "ShipCity";
             this.dataGridViewTextBoxColumn8.HeaderText = "ShipCity";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
+            //
             // dataGridViewTextBoxColumn9
-            // 
+            //
             this.dataGridViewTextBoxColumn9.DataPropertyName = "ShipRegion";
             this.dataGridViewTextBoxColumn9.HeaderText = "ShipRegion";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
+            //
             // dataGridViewTextBoxColumn10
-            // 
+            //
             this.dataGridViewTextBoxColumn10.DataPropertyName = "ShipPostalCode";
             this.dataGridViewTextBoxColumn10.HeaderText = "ShipPostalCode";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
+            //
             // dataGridViewTextBoxColumn11
-            // 
+            //
             this.dataGridViewTextBoxColumn11.DataPropertyName = "ShipCountry";
             this.dataGridViewTextBoxColumn11.HeaderText = "ShipCountry";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
+            //
             // dataGridViewTextBoxColumn12
-            // 
+            //
             this.dataGridViewTextBoxColumn12.DataPropertyName = "Customers";
             this.dataGridViewTextBoxColumn12.HeaderText = "Customers";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(329, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
@@ -264,9 +264,9 @@
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
+            //
             // comboBox1
-            // 
+            //
             this.comboBox1.DataSource = this.customersBindingSource;
             this.comboBox1.DisplayMember = "CustomerID";
             this.comboBox1.FormattingEnabled = true;
@@ -275,9 +275,9 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.ValueMember = "CustomerID";
-            // 
+            //
             // CustomerOrders
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 388);

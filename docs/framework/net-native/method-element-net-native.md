@@ -118,10 +118,10 @@ Applies runtime reflection policy to a constructor or method.
            <Method Name="ToString" Dynamic="Required" />  
         </Type>  
         <Type Name="Single" Browse="Required Public" >  
-          <Method Name="ToString" Dynamic="Required" />           
+          <Method Name="ToString" Dynamic="Required" />
         </Type>  
         <Type Name="TimeSpan" Browse="Required Public" >  
-          <Method Name="ToString" Dynamic="Required" />           
+          <Method Name="ToString" Dynamic="Required" />
         </Type>  
         <Type Name="UInt16" Browse="Required Public" >  
            <Method Name="ToString" Dynamic="Required" />  

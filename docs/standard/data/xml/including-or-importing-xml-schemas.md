@@ -12,7 +12,7 @@ ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
 An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine />` elements. These schema elements refer to other XML schemas that can be used to supplement the structure of the schema that includes or imports them. The <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> and <xref:System.Xml.Schema.XmlSchemaRedefine> classes, map to these elements in the Schema Object Model (SOM) API.  
   
 ## Including or Importing an XML Schema  
- The following code example supplements the customer schema created in the [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md) topic with the address schema. Supplementing the customer schema with the address schema makes address types available in the customer schema.  
+ The following code example supplements the customer schema created in the [Building XML Schemas](building-xml-schemas.md) topic with the address schema. Supplementing the customer schema with the address schema makes address types available in the customer schema.  
   
  The address schema can be incorporated using either `<xs:include />` or `<xs:import />` elements to use the components of the address schema as-is, or using an `<xs:redefine />` element to modify any of its components to suit the need of the customer schema. Because the address schema has a `targetNamespace` that is different from that of the customer schema, the `<xs:import />` element and therefore import semantics is used.  
   
@@ -93,9 +93,9 @@ An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine /
   
 ## See also
 
-- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [XML Schema Object Model Overview](xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](building-xml-schemas.md)
+- [Traversing XML Schemas](traversing-xml-schemas.md)
+- [Editing XML Schemas](editing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md)

@@ -115,7 +115,7 @@ namespace ParallelTasks
 //              Oblomov's
 //              nothing
 //              replied
-//       
+//
 //              Task 1 -- The longest word is incomprehensible.
 //              Task 3 -- The word "sleep" occurs 57 times.
 //              Returned from Parallel.Invoke

@@ -28,7 +28,7 @@ public class TemperatureMonitor : IObservable<Temperature>
          this._observer = observer;
       }
 
-      public void Dispose() 
+      public void Dispose()
       {
          if (! (_observer == null)) _observers.Remove(_observer);
       }

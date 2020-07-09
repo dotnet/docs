@@ -13,7 +13,7 @@ public class StringLibrary
 {
    public string GetGreeting()
    {
-      ResourceManager rm = new ResourceManager("Strings", 
+      ResourceManager rm = new ResourceManager("Strings",
                            Assembly.GetAssembly(typeof(StringLibrary)));
       string greeting = rm.GetString("Greeting");
       return greeting;

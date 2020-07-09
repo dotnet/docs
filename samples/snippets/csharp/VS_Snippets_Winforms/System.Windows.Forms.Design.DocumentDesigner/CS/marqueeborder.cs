@@ -70,7 +70,7 @@ namespace MarqueeControlLibrary
             // This call is required by the Windows.Forms Form Designer.
             InitializeComponent();
 
-            // Initialize light and dark colors 
+            // Initialize light and dark colors
             // to the control's default values.
             this.lightColorValue = this.ForeColor;
             this.darkColorValue = this.BackColor;
@@ -93,7 +93,7 @@ namespace MarqueeControlLibrary
         // <snippet50>
         public virtual void StartMarquee()
         {
-            // The MarqueeBorder control may contain any number of 
+            // The MarqueeBorder control may contain any number of
             // controls that implement IMarqueeWidget, so find
             // each IMarqueeWidget child and call its StartMarquee
             // method.
@@ -112,7 +112,7 @@ namespace MarqueeControlLibrary
 
         public virtual void StopMarquee()
         {
-            // The MarqueeBorder control may contain any number of 
+            // The MarqueeBorder control may contain any number of
             // controls that implement IMarqueeWidget, so find
             // each IMarqueeWidget child and call its StopMarquee
             // method.
@@ -215,8 +215,8 @@ namespace MarqueeControlLibrary
 
             set
             {
-                // The LightColor property is only changed if the 
-                // client provides a different value. Comparing values 
+                // The LightColor property is only changed if the
+                // client provides a different value. Comparing values
                 // from the ToArgb method is the recommended test for
                 // equality between Color structs.
                 if (this.lightColorValue.ToArgb() != value.ToArgb())
@@ -238,8 +238,8 @@ namespace MarqueeControlLibrary
 
             set
             {
-                // The DarkColor property is only changed if the 
-                // client provides a different value. Comparing values 
+                // The DarkColor property is only changed if the
+                // client provides a different value. Comparing values
                 // from the ToArgb method is the recommended test for
                 // equality between Color structs.
                 if (this.darkColorValue.ToArgb() != value.ToArgb())
@@ -274,7 +274,7 @@ namespace MarqueeControlLibrary
 
         [Category("Marquee")]
         [Browsable(true)]
-        [EditorAttribute(typeof(LightShapeEditor), 
+        [EditorAttribute(typeof(LightShapeEditor),
              typeof(System.Drawing.Design.UITypeEditor))]
         public MarqueeLightShape LightShape
         {
@@ -320,7 +320,7 @@ namespace MarqueeControlLibrary
             this.Refresh();
         }
 
-        // This method paints the lights around the border of the 
+        // This method paints the lights around the border of the
         // control. It paints the top row first, followed by the
         // right side, the bottom row, and the left side. The color
         // of each light is determined by the IsLit method and
@@ -337,7 +337,7 @@ namespace MarqueeControlLibrary
             if (this.Width > MaxLightSize &&
                 this.Height > MaxLightSize)
             {
-                // The position of the next light will be incremented 
+                // The position of the next light will be incremented
                 // by this value, which is equal to the sum of the
                 // light size and the space between two lights.
                 int increment =
@@ -420,10 +420,10 @@ namespace MarqueeControlLibrary
         // This method determines if the marquee light at lightIndex
         // should be lit. The currentOffset field specifies where
         // the "first" light is located, and the "position" of the
-        // light given by lightIndex is computed relative to this 
+        // light given by lightIndex is computed relative to this
         // offset. If this position modulo lightPeriodValue is zero,
         // the light is considered to be on, and it will be painted
-        // with the control's lightBrush. 
+        // with the control's lightBrush.
         protected virtual bool IsLit(int lightIndex)
         {
             int directionFactor =
@@ -462,13 +462,13 @@ namespace MarqueeControlLibrary
         // </snippet80>
 
         // <snippet90>
-        // This method is called in the worker thread's context, 
+        // This method is called in the worker thread's context,
         // so it must not make any calls into the MarqueeBorder
-        // control. Instead, it communicates to the control using 
+        // control. Instead, it communicates to the control using
         // the ProgressChanged event.
         //
         // The only work done in this event handler is
-        // to sleep for the number of milliseconds specified 
+        // to sleep for the number of milliseconds specified
         // by UpdatePeriod, then raise the ProgressChanged event.
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -479,13 +479,13 @@ namespace MarqueeControlLibrary
             while (!worker.CancellationPending)
             {
                 // The Argument property of the DoWorkEventArgs
-                // object holds the value of UpdatePeriod, which 
+                // object holds the value of UpdatePeriod, which
                 // was passed as the argument to the RunWorkerAsync
-                // method. 
+                // method.
                 Thread.Sleep((int)e.Argument);
 
                 // The DoWork eventhandler does not actually report
-                // progress; the ReportProgress event is used to 
+                // progress; the ReportProgress event is used to
                 // periodically alert the control to update its state.
                 worker.ReportProgress(0);
             }
@@ -506,7 +506,7 @@ namespace MarqueeControlLibrary
 
         // <snippet91>
         // <snippet96>
-        // This class demonstrates the use of a custom UITypeEditor. 
+        // This class demonstrates the use of a custom UITypeEditor.
         // It allows the MarqueeBorder control's LightShape property
         // to be changed at design time using a customized UI element
         // that is invoked by the Properties window. The UI is provided
@@ -563,14 +563,14 @@ namespace MarqueeControlLibrary
             // LightShape entry in the PropertyGrid.
             public override bool GetPaintValueSupported(
                 ITypeDescriptorContext context)
-            {  
+            {
                 return true;
             }
 
-            // This method paints a graphical representation of the 
+            // This method paints a graphical representation of the
             // selected value of the LightShpae property.
             public override void PaintValue(PaintValueEventArgs e)
-            {   
+            {
                 MarqueeLightShape shape = (MarqueeLightShape)e.Value;
                 using (Pen p = Pens.Black)
                 {
@@ -582,7 +582,7 @@ namespace MarqueeControlLibrary
                     {
                         e.Graphics.DrawEllipse(p, e.Bounds);
                     }
-                }   
+                }
             }
             // </snippet99>
         }
@@ -592,9 +592,9 @@ namespace MarqueeControlLibrary
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 
-// 
+//
 // backgroundWorker1
-// 
+//
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);

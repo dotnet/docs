@@ -27,7 +27,7 @@ namespace WpfApplication
             sb.AppendLine();
             sb.AppendLine();
 
-            // Open a streamwriter to a new text file named "UserInputFile.txt"and write the contents of 
+            // Open a streamwriter to a new text file named "UserInputFile.txt"and write the contents of
             // the stringbuilder to it.
             using (StreamWriter outfile = new StreamWriter(Path.Combine(mydocpath,"UserInputFile.txt"), true))
             {

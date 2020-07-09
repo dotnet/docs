@@ -21,20 +21,20 @@ public class Example
 
       // Get the culture's default calendar.
       Calendar defaultCalendar = ci.Calendar;
-      Console.Write("   Default Calendar: {0}", GetCalendarName(defaultCalendar));      
+      Console.Write("   Default Calendar: {0}", GetCalendarName(defaultCalendar));
 
       if (defaultCalendar is GregorianCalendar)
-         Console.WriteLine(" ({0})", 
+         Console.WriteLine(" ({0})",
                            ((GregorianCalendar) defaultCalendar).CalendarType);
       else
          Console.WriteLine();
-      
+
       // Get the culture's optional calendars.
-      Console.WriteLine("   Optional Calendars:");      
+      Console.WriteLine("   Optional Calendars:");
       foreach (var optionalCalendar in ci.OptionalCalendars) {
          Console.Write("{0,6}{1}", "", GetCalendarName(optionalCalendar));
          if (optionalCalendar is GregorianCalendar)
-            Console.Write(" ({0})", 
+            Console.Write(" ({0})",
                           ((GregorianCalendar) optionalCalendar).CalendarType);
 
          Console.WriteLine();
@@ -53,7 +53,7 @@ public class Example
 //          Optional Calendars:
 //             ThaiBuddhistCalendar
 //             GregorianCalendar (Localized)
-//       
+//
 //       Calendars for the ja-JP culture:
 //          Default Calendar: GregorianCalendar (Localized)
 //          Optional Calendars:

@@ -27,14 +27,14 @@ using System.Runtime.Serialization;
 namespace NorthwindModel
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class NorthwindEntities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new NorthwindEntities object using the connection string found in the 'NorthwindEntities' section of the application configuration file.
         /// </summary>
@@ -43,7 +43,7 @@ namespace NorthwindModel
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
@@ -52,7 +52,7 @@ namespace NorthwindModel
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
@@ -61,17 +61,17 @@ namespace NorthwindModel
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -87,7 +87,7 @@ namespace NorthwindModel
             }
         }
         private ObjectSet<Customer> _Customers;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -103,7 +103,7 @@ namespace NorthwindModel
             }
         }
         private ObjectSet<Order_Detail> _Order_Details;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -119,7 +119,7 @@ namespace NorthwindModel
             }
         }
         private ObjectSet<Order> _Orders;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -138,7 +138,7 @@ namespace NorthwindModel
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Customers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -146,7 +146,7 @@ namespace NorthwindModel
         {
             base.AddObject("Customers", customer);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Order_Details EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -154,7 +154,7 @@ namespace NorthwindModel
         {
             base.AddObject("Order_Details", order_Detail);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Orders EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -162,7 +162,7 @@ namespace NorthwindModel
         {
             base.AddObject("Orders", order);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -173,12 +173,12 @@ namespace NorthwindModel
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -188,7 +188,7 @@ namespace NorthwindModel
     public partial class Customer : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Customer object.
         /// </summary>
@@ -204,7 +204,7 @@ namespace NorthwindModel
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -231,7 +231,7 @@ namespace NorthwindModel
         private global::System.String _CustomerID;
         partial void OnCustomerIDChanging(global::System.String value);
         partial void OnCustomerIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -255,7 +255,7 @@ namespace NorthwindModel
         private global::System.String _ContactName;
         partial void OnContactNameChanging(global::System.String value);
         partial void OnContactNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -279,7 +279,7 @@ namespace NorthwindModel
         private global::System.String _CompanyName;
         partial void OnCompanyNameChanging(global::System.String value);
         partial void OnCompanyNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -303,7 +303,7 @@ namespace NorthwindModel
         private global::System.String _ContactTitle;
         partial void OnContactTitleChanging(global::System.String value);
         partial void OnContactTitleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -327,7 +327,7 @@ namespace NorthwindModel
         private global::System.String _Address;
         partial void OnAddressChanging(global::System.String value);
         partial void OnAddressChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -351,7 +351,7 @@ namespace NorthwindModel
         private global::System.String _City;
         partial void OnCityChanging(global::System.String value);
         partial void OnCityChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -375,7 +375,7 @@ namespace NorthwindModel
         private global::System.String _Region;
         partial void OnRegionChanging(global::System.String value);
         partial void OnRegionChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -399,7 +399,7 @@ namespace NorthwindModel
         private global::System.String _PostalCode;
         partial void OnPostalCodeChanging(global::System.String value);
         partial void OnPostalCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -423,7 +423,7 @@ namespace NorthwindModel
         private global::System.String _Country;
         partial void OnCountryChanging(global::System.String value);
         partial void OnCountryChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -447,7 +447,7 @@ namespace NorthwindModel
         private global::System.String _Phone;
         partial void OnPhoneChanging(global::System.String value);
         partial void OnPhoneChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -473,9 +473,9 @@ namespace NorthwindModel
         partial void OnFaxChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -500,7 +500,7 @@ namespace NorthwindModel
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -510,7 +510,7 @@ namespace NorthwindModel
     public partial class Order : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Order object.
         /// </summary>
@@ -524,7 +524,7 @@ namespace NorthwindModel
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -551,7 +551,7 @@ namespace NorthwindModel
         private global::System.Int32 _OrderID;
         partial void OnOrderIDChanging(global::System.Int32 value);
         partial void OnOrderIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -575,7 +575,7 @@ namespace NorthwindModel
         private global::System.String _CustomerID;
         partial void OnCustomerIDChanging(global::System.String value);
         partial void OnCustomerIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -599,7 +599,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int32> _EmployeeID;
         partial void OnEmployeeIDChanging(Nullable<global::System.Int32> value);
         partial void OnEmployeeIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -623,7 +623,7 @@ namespace NorthwindModel
         private Nullable<global::System.DateTime> _OrderDate;
         partial void OnOrderDateChanging(Nullable<global::System.DateTime> value);
         partial void OnOrderDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -647,7 +647,7 @@ namespace NorthwindModel
         private Nullable<global::System.DateTime> _RequiredDate;
         partial void OnRequiredDateChanging(Nullable<global::System.DateTime> value);
         partial void OnRequiredDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -671,7 +671,7 @@ namespace NorthwindModel
         private Nullable<global::System.DateTime> _ShippedDate;
         partial void OnShippedDateChanging(Nullable<global::System.DateTime> value);
         partial void OnShippedDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -695,7 +695,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int32> _ShipVia;
         partial void OnShipViaChanging(Nullable<global::System.Int32> value);
         partial void OnShipViaChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -719,7 +719,7 @@ namespace NorthwindModel
         private Nullable<global::System.Decimal> _Freight;
         partial void OnFreightChanging(Nullable<global::System.Decimal> value);
         partial void OnFreightChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -743,7 +743,7 @@ namespace NorthwindModel
         private global::System.String _ShipName;
         partial void OnShipNameChanging(global::System.String value);
         partial void OnShipNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -767,7 +767,7 @@ namespace NorthwindModel
         private global::System.String _ShipAddress;
         partial void OnShipAddressChanging(global::System.String value);
         partial void OnShipAddressChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -791,7 +791,7 @@ namespace NorthwindModel
         private global::System.String _ShipCity;
         partial void OnShipCityChanging(global::System.String value);
         partial void OnShipCityChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -815,7 +815,7 @@ namespace NorthwindModel
         private global::System.String _ShipRegion;
         partial void OnShipRegionChanging(global::System.String value);
         partial void OnShipRegionChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -839,7 +839,7 @@ namespace NorthwindModel
         private global::System.String _ShipPostalCode;
         partial void OnShipPostalCodeChanging(global::System.String value);
         partial void OnShipPostalCodeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -865,9 +865,9 @@ namespace NorthwindModel
         partial void OnShipCountryChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -905,7 +905,7 @@ namespace NorthwindModel
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -930,7 +930,7 @@ namespace NorthwindModel
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -940,7 +940,7 @@ namespace NorthwindModel
     public partial class Order_Detail : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Order_Detail object.
         /// </summary>
@@ -962,7 +962,7 @@ namespace NorthwindModel
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -989,7 +989,7 @@ namespace NorthwindModel
         private global::System.Int32 _OrderID;
         partial void OnOrderIDChanging(global::System.Int32 value);
         partial void OnOrderIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1016,7 +1016,7 @@ namespace NorthwindModel
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1040,7 +1040,7 @@ namespace NorthwindModel
         private global::System.Decimal _UnitPrice;
         partial void OnUnitPriceChanging(global::System.Decimal value);
         partial void OnUnitPriceChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1064,7 +1064,7 @@ namespace NorthwindModel
         private global::System.Int16 _Quantity;
         partial void OnQuantityChanging(global::System.Int16 value);
         partial void OnQuantityChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1090,9 +1090,9 @@ namespace NorthwindModel
         partial void OnDiscountChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1130,7 +1130,7 @@ namespace NorthwindModel
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1171,7 +1171,7 @@ namespace NorthwindModel
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1181,7 +1181,7 @@ namespace NorthwindModel
     public partial class Product : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Product object.
         /// </summary>
@@ -1199,7 +1199,7 @@ namespace NorthwindModel
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1226,7 +1226,7 @@ namespace NorthwindModel
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1250,7 +1250,7 @@ namespace NorthwindModel
         private global::System.String _ProductName;
         partial void OnProductNameChanging(global::System.String value);
         partial void OnProductNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1274,7 +1274,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int16> _UnitsInStock;
         partial void OnUnitsInStockChanging(Nullable<global::System.Int16> value);
         partial void OnUnitsInStockChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1298,7 +1298,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int16> _ReorderLevel;
         partial void OnReorderLevelChanging(Nullable<global::System.Int16> value);
         partial void OnReorderLevelChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1322,7 +1322,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int32> _SupplierID;
         partial void OnSupplierIDChanging(Nullable<global::System.Int32> value);
         partial void OnSupplierIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1346,7 +1346,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int32> _CategoryID;
         partial void OnCategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnCategoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1370,7 +1370,7 @@ namespace NorthwindModel
         private global::System.String _QuantityPerUnit;
         partial void OnQuantityPerUnitChanging(global::System.String value);
         partial void OnQuantityPerUnitChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1394,7 +1394,7 @@ namespace NorthwindModel
         private Nullable<global::System.Decimal> _UnitPrice;
         partial void OnUnitPriceChanging(Nullable<global::System.Decimal> value);
         partial void OnUnitPriceChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1418,7 +1418,7 @@ namespace NorthwindModel
         private Nullable<global::System.Int16> _UnitsOnOrder;
         partial void OnUnitsOnOrderChanging(Nullable<global::System.Int16> value);
         partial void OnUnitsOnOrderChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1444,9 +1444,9 @@ namespace NorthwindModel
         partial void OnDiscontinuedChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1473,5 +1473,5 @@ namespace NorthwindModel
     }
 
     #endregion
-    
+
 }

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create signed friend assemblies"
+description: This article shows how to use friend assemblies with assemblies that have strong names. It includes information about .NET security.
 ms.date: 08/19/2019
 ms.assetid: bab62063-61e6-453f-905f-77673df9534e
 dev_langs: 

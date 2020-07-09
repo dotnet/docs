@@ -11,7 +11,7 @@ When using a custom binding with the <xref:System.ServiceModel.Discovery.Discove
   
 ```csharp
 // Extend DiscoveryEndpointProvider class to change the default DiscoveryEndpoint  
-// to the DiscoveryClientBindingElement. The Discovery ClientChannel   
+// to the DiscoveryClientBindingElement. The Discovery ClientChannel
 // uses this endpoint to send Probe message.  
 public class UdpDiscoveryEndpointProvider : DiscoveryEndpointProvider  
 {  
@@ -37,9 +37,9 @@ CustomBinding customBinding = new CustomBinding(new NetTcpBinding());
 customBinding.Elements.Insert(0, discoveryBindingElement);  
 ```  
   
- For more information about using the discovery client channel, see [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md). 
+ For more information about using the discovery client channel, see [Using the Discovery Client Channel](using-the-discovery-client-channel.md).
   
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [Using the Discovery Client Channel](using-the-discovery-client-channel.md)

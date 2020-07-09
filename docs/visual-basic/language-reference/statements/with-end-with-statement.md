@@ -58,10 +58,10 @@ You can place one `With...End With` statement within another. Nested `With...End
 
 You can't branch into a `With` statement block from outside the block.
 
-Unless the block contains a loop, the statements run only once. You can nest different kinds of control structures. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).
+Unless the block contains a loop, the statements run only once. You can nest different kinds of control structures. For more information, see [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md).
 
 > [!NOTE]
-> You can use the `With` keyword in object initializers also. For more information and examples, see [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) and [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+> You can use the `With` keyword in object initializers also. For more information and examples, see [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) and [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md).
 >
 > If you're using a `With` block only to initialize the properties or fields of an object that you've just instantiated, consider using an object initializer instead.
 
@@ -80,6 +80,6 @@ The following example nests `With…End With` statements. Within the nested `Wit
 ## See also
 
 - <xref:System.Collections.Generic.List%601>
-- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
-- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)

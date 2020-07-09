@@ -10,7 +10,7 @@ Compares the equality of two expressions.
   
 ```sql  
 expression = expression  
--- or   
+-- or
 expression == expression  
 ```  
   

@@ -19,7 +19,7 @@ The `My.Forms` object provides an easy way to access an instance of each Windows
   
 |To|See|  
 |---|---|  
-|Access one form from another form in an application.|[My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)|  
+|Access one form from another form in an application.|[My.Forms Object](../../language-reference/objects/my-forms-object.md)|  
 |Display the titles of all the application's open forms.|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>|  
 |Update the splash screen with status information as the application starts.|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>|  
   
@@ -27,4 +27,4 @@ The `My.Forms` object provides an easy way to access an instance of each Windows
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>
-- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)

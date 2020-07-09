@@ -1,5 +1,6 @@
 ---
 title: "Dialog Boxes Overview"
+description: Learn about the varieties of dialog boxes in Windows Foundation Presentation (WPF) that you can use to gather and display information.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -28,7 +29,7 @@ Standalone applications typically have a main window that both displays the main
   
  Windows Presentation Foundation (WPF) allows you to create several types of dialog boxes, including message boxes, common dialog boxes, and custom dialog boxes. This topic discusses each, and the [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox) provides matching examples.  
 
-<a name="Message_Boxes"></a>   
+<a name="Message_Boxes"></a>
 ## Message boxes  
  A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that displays textual information, asks a question, and provides the user with three buttons to answer the question.  
   
@@ -55,13 +56,13 @@ Standalone applications typically have a main window that both displays the main
   
  Most dialog boxes display and gather more complex data than the result of a message box, including text, selection (check boxes), mutually exclusive selection (radio buttons), and list selection (list boxes, combo boxes, drop-down list boxes). For these, Windows Presentation Foundation (WPF) provides several common dialog boxes and allows you to create your own dialog boxes, although the use of either is limited to applications running with full trust.  
   
-<a name="Common_Dialogs"></a>   
+<a name="Common_Dialogs"></a>
 ## Common dialog boxes  
  Windows implements a variety of reusable dialog boxes that are common to all applications, including dialog boxes for opening files, saving files, and printing. Since these dialog boxes are implemented by the operating system, they can be shared among all the applications that run on the operating system, which helps user experience consistency; when users are familiar with the use of an operating system-provided dialog box in one application, they don't need to learn how to use that dialog box in other applications. Because these dialog boxes are available to all applications and because they help provide a consistent user experience, they are known as *common dialog boxes*.  
   
  Windows Presentation Foundation (WPF) encapsulates the open file, save file, and print common dialog boxes and exposes them as managed classes for you to use in standalone applications. This topic provides a brief overview of each.  
   
-<a name="Open_File_Dialog"></a>   
+<a name="Open_File_Dialog"></a>
 ### Open File dialog  
  The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.  
   
@@ -77,7 +78,7 @@ Standalone applications typically have a main window that both displays the main
 > [!NOTE]
 > <xref:Microsoft.Win32.OpenFileDialog> can be used to safely retrieve file names by applications running with partial trust (see [Security](../security-wpf.md)).  
   
-<a name="Save_File_Dialog"></a>   
+<a name="Save_File_Dialog"></a>
 ### Save File dialog box  
  The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.  
   
@@ -90,7 +91,7 @@ Standalone applications typically have a main window that both displays the main
   
  For more information on the save file dialog box, see <xref:Microsoft.Win32.SaveFileDialog?displayProperty=nameWithType>.  
   
-<a name="Print_Dialog"></a>   
+<a name="Print_Dialog"></a>
 ### Print dialog box
 
 The print dialog box, shown in the following figure, is used by printing functionality to choose and configure the printer that a user would like to print data to.  
@@ -104,12 +105,12 @@ The common print dialog box is implemented as the <xref:System.Windows.Controls.
   
  For more information on the print dialog box, see <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in WPF, see [Printing Overview](../advanced/printing-overview.md).  
   
-<a name="Custom_Dialog_Boxes"></a>   
+<a name="Custom_Dialog_Boxes"></a>
 ## Custom dialog boxes
 
 While common dialog boxes are useful, and should be used when possible, they do not support the requirements of domain-specific dialog boxes. In these cases, you need to create your own dialog boxes. As we'll see, a dialog box is a window with special behaviors. <xref:System.Windows.Window> implements those behaviors and, consequently, you use <xref:System.Windows.Window> to create custom modal and modeless dialog boxes.  
   
-<a name="Creating_a_Modal_Custom_Dialog_Box"></a>   
+<a name="Creating_a_Modal_Custom_Dialog_Box"></a>
 ### Creating a modal custom dialog box
 
 This topic shows how to use <xref:System.Windows.Window> to create a typical modal dialog box implementation, using the `Margins` dialog box as an example (see [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox)). The `Margins` dialog box is shown in the following figure.  
@@ -241,7 +242,7 @@ If the dialog result is `true`, the function uses that as a cue to retrieve and 
 
 If the dialog result is `false`, the function should end processing appropriately.  
   
-<a name="Creating_a_Modeless_Custom_Dialog_Box"></a>   
+<a name="Creating_a_Modeless_Custom_Dialog_Box"></a>
 ### Creating a modeless custom dialog box
 
 A modeless dialog box, such as the Find Dialog Box shown in the following figure, has the same fundamental appearance as the modal dialog box.  
@@ -255,7 +256,7 @@ However, the behavior is slightly different, as described in the following secti
 A modeless dialog box is opened by calling the <xref:System.Windows.Window.Show%2A> method.  
 
 [!code-xaml[XAML to define a modeless dialog box](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MainWindow.xaml#L21-L22)]  
- 
+
 [!code-csharp[Opening a modeless dialog box](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MainWindow.xaml.cs?range=1-10,65-76,194-195)]
 [!code-vb[Openng a modeless dialog box](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/MainWindow.xaml.vb?range=1-9,18-23,131,132)]  
 

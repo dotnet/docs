@@ -1,5 +1,6 @@
 ---
 title: "Assembly names"
+description: Learn about .NET assembly names and their impact on assembly scope and use by an application, and learn about the FullName property.
 ms.date: "08/19/2019"
 helpviewer_keywords:
   - "names [.NET Framework], assemblies"

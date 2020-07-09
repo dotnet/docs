@@ -1,5 +1,6 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
+description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET Core that can be used in pipelines.
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
@@ -17,7 +18,7 @@ Since buffers can be passed around between APIs, and since buffers can sometimes
 
 - **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it's no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-A** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it's no longer in use.
 
-- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. Note that the active consumer of a buffer isn't necessarily the buffer's owner.
+- **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. The active consumer of a buffer isn't necessarily the buffer's owner.
 
 - **Lease**. The lease is the length of time that a particular component is allowed to be the consumer of the buffer.
 
@@ -66,7 +67,7 @@ As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifeti
 
 - A model that supports ownership transfer. Ownership of a buffer can be transferred from its original owner (its creator) to another component, which then becomes responsible for the buffer's lifetime management. That owner can in turn transfer ownership to another component, and so on.
 
-You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of an <xref:System.Memory%601> buffer.
+You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of a <xref:System.Memory%601> buffer.
 
 [!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
 
@@ -80,7 +81,7 @@ In this code:
 
 - The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept <xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. And they only consume it one at a time.
 
-Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For additional information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
+Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For more information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
 
 ### "Ownerless" Memory\<T> instances
 
@@ -104,7 +105,7 @@ Because a memory block is owned but is intended to be passed to multiple compone
 
 - While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
 
-The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Note that guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
+The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
 
 **Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
 
@@ -114,7 +115,7 @@ Using a parameter of type <xref:System.Span%601> instead of type <xref:System.Me
 
 Sometimes, you'll have to use a <xref:System.Memory%601> parameter instead of a <xref:System.Span%601> parameter, even if you're fully synchronous. Perhaps an API that you depend accepts only <xref:System.Memory%601> arguments. This is fine, but be aware of the tradeoffs involved when using <xref:System.Memory%601> synchronously.
 
-<a name="rule-2" />
+<a name="rule-2"></a>
 
 **Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only.**
 
@@ -330,7 +331,7 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
 private static void MyCompletedCallbackImplementation(IntPtr state, int result)
 {
     GCHandle handle = (GCHandle)state;
-    var actualState = (MyCompletedCallbackState)state;
+    var actualState = (MyCompletedCallbackState)(handle.Target);
     handle.Free();
     actualState.MemoryHandle.Dispose();
 

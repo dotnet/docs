@@ -11,7 +11,7 @@ namespace Microsoft.Samples.TransformExamples
 
     public partial class MyApp : Application
     {
-    
+
         void myAppStartup(object sender, StartupEventArgs e)
         {
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
@@ -22,7 +22,7 @@ namespace Microsoft.Samples.TransformExamples
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
         {
-            
+
             try {
                 StreamWriter wr = new StreamWriter("error.txt");
                 wr.Write(args.ExceptionObject.ToString());
@@ -32,6 +32,6 @@ namespace Microsoft.Samples.TransformExamples
             }
 
             MessageBox.Show("Unhandled exception: " + args.ExceptionObject.ToString());
-        }     
+        }
     }
 }

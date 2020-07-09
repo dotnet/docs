@@ -20,11 +20,11 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\HttpCookieSession`  
   
 ## HttpCookieSession Channel Message Exchange Pattern  
@@ -98,14 +98,14 @@ InputQueue<RequestContext> requestQueue;
  The section `HttpCookieSessionBindingElementSection` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `HttpCookieSessionBindingElement` to the configuration system. With a few overrides the configuration section name, the type of the binding element and how to create the binding element are defined. We can then register the extension section in a configuration file as follows:  
   
 ```xml  
-<configuration>        
-    <system.serviceModel>        
-      <extensions>          
-        <bindingElementExtensions>            
-          <add name="httpCookieSession"   
+<configuration>
+    <system.serviceModel>
+      <extensions>
+        <bindingElementExtensions>
+          <add name="httpCookieSession"
                type=  
-"Microsoft.ServiceModel.Samples.HttpCookieSessionBindingElementElement,   
-                    HttpCookieSessionExtension, Version=1.0.0.0,   
+"Microsoft.ServiceModel.Samples.HttpCookieSessionBindingElementElement,
+                    HttpCookieSessionExtension, Version=1.0.0.0,
                     Culture=neutral, PublicKeyToken=null"/>  
         </bindingElementExtensions >  
       </extensions>  
@@ -118,8 +118,8 @@ InputQueue<RequestContext> requestQueue;
           <httpTransport allowCookies="true" />  
         </binding>  
       </customBinding>  
-      </bindings>        
-    </system.serviceModel>    
+      </bindings>
+    </system.serviceModel>
 </configuration>  
 ```  
   
@@ -155,8 +155,8 @@ Press <ENTER> to terminate client.
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  

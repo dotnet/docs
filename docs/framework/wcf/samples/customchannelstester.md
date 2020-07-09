@@ -8,9 +8,9 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
 ### To build the tool  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. Building the solution generates three files: CustomChannelsTester.exe, TestSpec.xml and SampleRun.cmd. The file SampleRun.cmd has a sample command line that shows how to use this tool to test the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.  
+2. Building the solution generates three files: CustomChannelsTester.exe, TestSpec.xml and SampleRun.cmd. The file SampleRun.cmd has a sample command line that shows how to use this tool to test the [Transport: UDP](transport-udp.md) sample.  
   
 ### To run the tool  
   
@@ -33,15 +33,15 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
      The following is the sample XML for the description of the test specifications (testspec.xml):  
   
     ```xml  
-    <TestSpec xmlns="http://WCF/TestSpec" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"   
+    <TestSpec xmlns="http://WCF/TestSpec" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >  
     <ServiceContract>  
     <!-- Test a contract which has oneway / twoway operations. If you set ExpandAll = true, both types of contracts are tested -->    <IsOneWay ExpandAll="true">true</IsOneWay>  
     <!-- Test a contract with Asynchronous / Synchronous Operations-->  
-        <IsAsync>false</IsAsync>   
-    <!-- Test a sessionful / sessionless contract-->      
+        <IsAsync>false</IsAsync>
+    <!-- Test a sessionful / sessionless contract-->
         <IsSession ExpandAll="true">true</IsSession>  
-    <!-- If the Service Contract includes a CallBack Contract-->      
+    <!-- If the Service Contract includes a CallBack Contract-->
         <IsCallBack ExpandAll="true">true</IsCallBack>  
     </ServiceContract>  
     <TestDetails>  
@@ -50,7 +50,7 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
     <!-- Port Number - Optional-->  
         <Port>8000</Port>  
     <!--URI for the callBack address for the client. The client will receive the messages from the server on this address in case of a CallBack Contract-->  
-        <ClientCallBackAddress/>      
+        <ClientCallBackAddress/>
     <!-- Duration (in sec) after the server has started, it times out - optional(default = 300sec) -->  
         <ServerTimeout>300</ServerTimeout>  
     <!-- Duration (in sec) before the Client initializes -optional(default = 60sec) -->  

@@ -11,11 +11,11 @@ public class Example
         var wc = new WebClient();
         wc.DownloadStringCompleted += (s,e) =>
             {
-                if (e.Error != null) 
+                if (e.Error != null)
                    tcs.TrySetException(e.Error);
-                else if (e.Cancelled) 
+                else if (e.Cancelled)
                    tcs.TrySetCanceled();
-                else 
+                else
                    tcs.TrySetResult(e.Result);
             };
         wc.DownloadStringAsync(url);

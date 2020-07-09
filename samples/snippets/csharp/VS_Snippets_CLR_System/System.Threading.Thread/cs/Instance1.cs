@@ -5,7 +5,7 @@ using System.Threading;
 public class Example
 {
    static Object obj = new Object();
-   
+
    public static void Main()
    {
       ThreadPool.QueueUserWorkItem(ShowThreadInformation);
@@ -15,9 +15,9 @@ public class Example
       th2.IsBackground = true;
       th2.Start();
       Thread.Sleep(500);
-      ShowThreadInformation(null); 
+      ShowThreadInformation(null);
    }
-   
+
    private static void ShowThreadInformation(Object state)
    {
       lock (obj) {
@@ -29,7 +29,7 @@ public class Example
          Console.WriteLine("   Culture: {0}", th.CurrentCulture.Name);
          Console.WriteLine("   UI culture: {0}", th.CurrentUICulture.Name);
          Console.WriteLine();
-      }   
+      }
    }
 }
 // The example displays output like the following:
@@ -39,21 +39,21 @@ public class Example
 //          Priority: Normal
 //          Culture: en-US
 //          UI culture: en-US
-//       
+//
 //       Managed thread #3:
 //          Background thread: True
 //          Thread pool thread: True
 //          Priority: Normal
 //          Culture: en-US
 //          UI culture: en-US
-//       
+//
 //       Managed thread #4:
 //          Background thread: False
 //          Thread pool thread: False
 //          Priority: Normal
 //          Culture: en-US
 //          UI culture: en-US
-//       
+//
 //       Managed thread #1:
 //          Background thread: False
 //          Thread pool thread: False

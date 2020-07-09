@@ -14,4 +14,4 @@ The record number in `a FileGet`, `FilePut`, `FileGetObject`, or `FilePutObject`
   
 ## See also
 
-- [Option Explicit Statement](../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Explicit Statement](../language-reference/statements/option-explicit-statement.md)

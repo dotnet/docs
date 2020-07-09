@@ -19,7 +19,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 ## Syntax  
   
 ```xml  
-<CompatSortNLSVersion    
+<CompatSortNLSVersion
    enabled="4096"/>  
 ```  
   

@@ -54,7 +54,7 @@ namespace MethodsOnObjectContext
             {
                 int productId = 776;
 
-                var details = from s in AWEntities.SalesOrderDetails 
+                var details = from s in AWEntities.SalesOrderDetails
                               where s.ProductID == productId select s;
 
                 Console.WriteLine(MyClass.GetProductRevenue(details));

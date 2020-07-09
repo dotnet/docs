@@ -121,7 +121,7 @@ namespace TPL_Exceptions
                     else
                         Console.Write(d + " ");
                 }
-                // Store the exception and continue with the loop.                    
+                // Store the exception and continue with the loop.
                 catch (Exception e)
                 {
                     exceptions.Enqueue(e);

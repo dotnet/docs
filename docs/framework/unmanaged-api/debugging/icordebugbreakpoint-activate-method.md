@@ -32,7 +32,7 @@ HRESULT Activate (
  [in] Set this value to `true` to specify the state as active; otherwise, set this value to `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

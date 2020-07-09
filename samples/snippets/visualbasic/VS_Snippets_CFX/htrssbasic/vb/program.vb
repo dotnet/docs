@@ -11,8 +11,8 @@ Imports System.Collections.Generic
 <ServiceContract()> _
 Public Interface IBlog
     <OperationContract()> _
-<WebGet> _
-Function GetBlog() As Rss20FeedFormatter
+    <WebGet> _
+    Function GetBlog() As Rss20FeedFormatter
 End Interface
 ' </Snippet0>
 

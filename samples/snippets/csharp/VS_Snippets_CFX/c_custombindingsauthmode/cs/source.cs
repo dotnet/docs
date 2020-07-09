@@ -18,8 +18,8 @@ namespace Samples
         private CustomBindingCreator() { }
 
         // <Snippet2>
-        // These public methods create custom bindings based on the built-in 
-        // authentication modes that use the static methods of 
+        // These public methods create custom bindings based on the built-in
+        // authentication modes that use the static methods of
         // the System.ServiceModel.Channels.SecurityBindingElement class.
         public static Binding CreateAnonymousForCertificateBinding()
         {
@@ -228,19 +228,19 @@ namespace samples2
             // </Snippet3>
 
             // <Snippet4>
-            BindingElementCollection outputBindings = 
+            BindingElementCollection outputBindings =
                 new BindingElementCollection();
             // </Snippet4>
-            
+
             // <Snippet5>
             b.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic128;
-            b.MessageProtectionOrder = 
+            b.MessageProtectionOrder =
                 MessageProtectionOrder.SignBeforeEncrypt;
-            b.ProtectionTokenParameters = 
+            b.ProtectionTokenParameters =
                 new KerberosSecurityTokenParameters();
             // </Snippet5>
             // </Snippet8>
-            
+
             // <Snippet6>
             outputBindings.Add(b);
             outputBindings.Add(new TextMessageEncodingBindingElement());

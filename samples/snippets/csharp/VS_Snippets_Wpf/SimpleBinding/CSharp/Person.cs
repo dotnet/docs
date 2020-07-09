@@ -22,7 +22,7 @@ namespace SDKSample
       {
           this.name = value;
       }
-      
+
       public string PersonName
       {
           get { return name; }

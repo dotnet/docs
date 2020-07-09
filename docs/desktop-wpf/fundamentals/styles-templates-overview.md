@@ -1,7 +1,7 @@
 ---
 title: Styles and templates
 description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET Core. Understand the types of XAML resources related to styles and themes.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 09/09/2019
 dev_langs: 
@@ -190,15 +190,15 @@ For example, the following XAML code watches the `CommonStates.MouseOver` state 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup Name="CommonStates">
                 <VisualState Name="Normal">
-                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                    <ColorAnimation Storyboard.TargetName="backgroundElement"
                                     Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
                                     To="{TemplateBinding Background}"
                                     Duration="0:0:0.3"/>
                 </VisualState>
                 <VisualState Name="MouseOver">
-                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
-                                    To="Yellow" 
+                    <ColorAnimation Storyboard.TargetName="backgroundElement"
+                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                                    To="Yellow"
                                     Duration="0:0:0.3"/>
                 </VisualState>
             </VisualStateGroup>

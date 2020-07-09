@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Azure HDInsight
 description: Discover how to deploy a .NET for Apache Spark application to HDInsight.
-ms.date: 01/23/2020
+ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to HDInsight.
@@ -21,11 +21,13 @@ In this tutorial, you learn how to:
 > * Create and run an HDInsight script action.
 > * Run a .NET for Apache Spark app on an HDInsight cluster.
 
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
+
 ## Prerequisites
 
 Before you start, do the following tasks:
 
-* If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/).
+* If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/).
 * Sign in to the [Azure portal](https://portal.azure.com/).
 * Install Azure Storage Explorer on your [Windows](https://go.microsoft.com/fwlink/?LinkId=708343&clcid=0x409), [Linux](https://go.microsoft.com/fwlink/?LinkId=722418&clcid=0x409), or [MacOS](https://go.microsoft.com/fwlink/?LinkId=708342&clcid=0x409) computer.
 * Complete the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial.
@@ -148,7 +150,7 @@ Once your cluster is running and you've uploaded your files to Azure, you run th
    |---------|---------|
    | Script type |Custom|
    | Name | Install Worker|
-   | Bash script URI |https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh </br> To confirm this URI, right-click on install-worker.sh in Azure Storage Explorer and select Properties. |
+   | Bash script URI |`https://mystorageaccount.blob.core.windows.net/mycontainer/install-worker.sh` </br> To confirm this URI, right-click on install-worker.sh in Azure Storage Explorer and select Properties. |
    | Node type(s)| Worker|
    | Parameters | azure </br> wasbs://mycontainer@myStorageAccount.blob.core.windows.net/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz </br> /usr/local/bin
 

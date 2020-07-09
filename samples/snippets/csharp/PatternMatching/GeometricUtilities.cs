@@ -33,7 +33,7 @@ namespace PatternMatching
             {
                 var s = (Square)shape;
                 return s.Side * s.Side;
-            } 
+            }
             else if (shape is Circle)
             {
                 var c = (Circle)shape;

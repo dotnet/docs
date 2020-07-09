@@ -10,7 +10,7 @@ namespace Coding_Conventions_Examples
     class Program
     {
         //<snippet14>
-        // First, in class Program, define the delegate type and a method that  
+        // First, in class Program, define the delegate type and a method that
         // has a matching signature.
 
         // Define the type.
@@ -71,7 +71,7 @@ namespace Coding_Conventions_Examples
             //</snippet7>
 
             //<snippet8>
-            // When the type of a variable is clear from the context, use var 
+            // When the type of a variable is clear from the context, use var
             // in the declaration.
             var var1 = "This is clearly a string.";
             var var2 = 27;
@@ -85,7 +85,7 @@ namespace Coding_Conventions_Examples
             //</snippet9>
 
             //<snippet10>
-            // Naming the following variable inputInt is misleading. 
+            // Naming the following variable inputInt is misleading.
             // It is a string.
             var inputInt = Console.ReadLine();
             Console.WriteLine(inputInt);
@@ -102,7 +102,7 @@ namespace Coding_Conventions_Examples
             //</snippet11>
 
             //<snippet12>
-            foreach (var ch in laugh)
+            foreach (char ch in laugh)
             {
                 if (ch == 'h')
                     Console.Write("H");
@@ -175,7 +175,7 @@ namespace Coding_Conventions_Examples
             // If the divisor is 0, the second clause in the following condition
             // causes a run-time error. The && operator short circuits when the
             // first expression is false. That is, it does not evaluate the
-            // second expression. The & operator evaluates both, and causes 
+            // second expression. The & operator evaluates both, and causes
             // a run-time error when divisor is 0.
             if ((divisor != 0) && (dividend / divisor > 0))
             {
@@ -197,7 +197,7 @@ namespace Coding_Conventions_Examples
 
             //<snippet21>
             // Object initializer.
-            var instance3 = new ExampleClass { Name = "Desktop", ID = 37414, 
+            var instance3 = new ExampleClass { Name = "Desktop", ID = 37414,
                 Location = "Redmond", Age = 2.3 };
 
             // Default constructor and assignment statements.
@@ -214,13 +214,13 @@ namespace Coding_Conventions_Examples
 
             ExampleClass.totalInstances = 1;
 
-            var customers = new List<Customer> 
+            var customers = new List<Customer>
             {
               new Customer { Name = "Jones", ID = 432, City = "Redmond" }
             };
 
             // Check shop name to use this.
-            var distributors = new List<Distributor> 
+            var distributors = new List<Distributor>
             {
               new Distributor { Name = "ShopSmart", ID = 11302, City = "Redmond" }
             };
@@ -373,7 +373,7 @@ namespace Coding_Conventions_Examples
         static void Main()
         {
 
-            // Use a collection initializer to create the data source. Note that 
+            // Use a collection initializer to create the data source. Note that
             // each element in the list contains an inner sequence of scores.
             List<Student> students = new List<Student>
         {
@@ -381,7 +381,7 @@ namespace Coding_Conventions_Examples
            new Student {LastName="O'Donnell", Scores= new List<int> {75, 84, 91, 39}},
            new Student {LastName="Mortensen", Scores= new List<int> {88, 94, 65, 85}},
            new Student {LastName="Garcia", Scores= new List<int> {97, 89, 85, 82}},
-           new Student {LastName="Beebe", Scores= new List<int> {35, 72, 91, 70}} 
+           new Student {LastName="Beebe", Scores= new List<int> {35, 72, 91, 70}}
         };
 
             //<snippet30>

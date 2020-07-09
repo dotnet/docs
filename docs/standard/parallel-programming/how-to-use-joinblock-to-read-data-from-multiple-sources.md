@@ -29,4 +29,4 @@ This document explains how to use the <xref:System.Threading.Tasks.Dataflow.Join
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

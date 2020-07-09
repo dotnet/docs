@@ -29,7 +29,7 @@
     - name: Accessing Application Settings
       href: developing-apps/programming/app-settings/index.md
     - name: Processing Drives, Directories, and Files
-      href: developing-apps/programming/drives-directories-files/processing.md
+      href: developing-apps/programming/drives-directories-files/index.md
   - name: Development with My
     href: developing-apps/development-with-my/index.md
     items:
@@ -1414,6 +1414,6 @@
   - name: Language Specification
     href: reference/language-specification/
 - name: Sample Applications
-  href: sample-applications.md
+  href: https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic
 - name: Walkthroughs
   href: walkthroughs.md

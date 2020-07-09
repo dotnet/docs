@@ -1,5 +1,6 @@
 ---
 title: "How to: Display Generated SQL"
+description: Learn how to view the SQL code generated for queries by using the Log property to help understand LINQ to SQL functionality and for debugging.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

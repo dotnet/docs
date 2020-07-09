@@ -1,5 +1,6 @@
 ---
 title: "Mouse Events"
+description: Learn how to get the mouse location from mouse events, and understand the order in which mouse click events are raised in Windows Forms controls.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "MouseLeave event [Windows Forms]"

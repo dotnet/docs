@@ -1,8 +1,9 @@
 # .NET Docs
 
+![Markdownlint](https://github.com/dotnet/docs/workflows/Markdownlint/badge.svg)
+
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://docs.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
-- [Code samples and snippets](https://github.com/dotnet/samples)
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
 
@@ -10,7 +11,7 @@ Issues and tasks for all but the API reference repository are tracked here. We h
 
 We welcome contributions to help us improve and complete the .NET docs. This is a very large repo, covering a large area. If this is your first visit, see our [labels and projects roadmap](styleguide/labels-projects.md) for help navigating the issues and projects in this repository.
 
-To contribute, see the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35) for ideas. The [Contributing Guide](CONTRIBUTING.md) has instructions on procedures we use. 
+To contribute, see the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35) for ideas. The [Contributing Guide](CONTRIBUTING.md) has instructions on procedures we use.
 
 If you're interested in helping migrate existing code that targets the .NET Framework from the [retired Code Gallery](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](https://docs.microsoft.com/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project. The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.
 

@@ -12,7 +12,7 @@ namespace SDKSample
         Border myBorder;
         DockPanel myDockPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);

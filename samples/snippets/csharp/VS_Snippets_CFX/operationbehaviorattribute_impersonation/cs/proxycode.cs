@@ -14,7 +14,7 @@
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://microsoft.wcf.documentation", ConfigurationName="SampleHello")]
 public interface SampleHello
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(Action="http://microsoft.wcf.documentation/SampleHello/Hello", ReplyAction="http://microsoft.wcf.documentation/SampleHello/HelloResponse")]
     string Hello(string greeting);
 }
@@ -28,31 +28,31 @@ public interface SampleHelloChannel : SampleHello, System.ServiceModel.IClientCh
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class SampleHelloClient : System.ServiceModel.ClientBase<SampleHello>, SampleHello
 {
-    
+
     public SampleHelloClient()
     {
     }
-    
-    public SampleHelloClient(string endpointConfigurationName) : 
+
+    public SampleHelloClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public SampleHelloClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public SampleHelloClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleHelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleHelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleHelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleHelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public string Hello(string greeting)
     {
         return base.Channel.Hello(greeting);

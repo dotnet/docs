@@ -11,11 +11,11 @@ A .NET app is developed for and runs in one or more *implementations of .NET*.  
 
 ## .NET Standard
 
-The .NET Standard is a set of APIs that are implemented by the Base Class Library of a .NET implementation. More formally, it's a specification of .NET APIs that make up a uniform set of contracts that you compile your code against. These contracts are implemented in each .NET implementation. This enables portability across different .NET implementations, effectively allowing your code to run everywhere.
+.NET Standard is a set of APIs that are implemented by the Base Class Library of a .NET implementation. More formally, it's a specification of .NET APIs that make up a uniform set of contracts that you compile your code against. These contracts are implemented in each .NET implementation. This enables portability across different .NET implementations, effectively allowing your code to run everywhere.
 
-The .NET Standard is also a [target framework](glossary.md#target-framework). If your code targets a version of the .NET Standard, it can run on any .NET implementation which supports that version of the .NET Standard.
+.NET Standard is also a [target framework](glossary.md#target-framework). If your code targets a version of .NET Standard, it can run on any .NET implementation that supports that version of .NET Standard.
 
-To learn more about the .NET Standard and how to target it, see the [.NET Standard](net-standard.md) topic.
+To learn more about .NET Standard and how to target it, see [.NET Standard](net-standard.md).
 
 ## .NET implementations
 
@@ -32,13 +32,13 @@ There are four primary .NET implementations that Microsoft actively develops and
 
 .NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](../framework/winforms/windows-forms-overview.md), and [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) all run on .NET Core.
 
-To learn more about .NET Core, see the [.NET Core Guide](../core/index.md) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
+To learn more about .NET Core, see the [.NET Core Guide](../core/index.yml) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
 
 ### .NET Framework
 
-The.NET Framework is the original .NET implementation that has existed since 2002. It's the same .NET Framework that existing .NET developers have always used. Versions 4.5 and later implement the .NET Standard, so code that targets the .NET Standard can run on those versions of the .NET Framework. It contains additional Windows-specific APIs, such as APIs for Windows desktop development with Windows Forms and WPF. The .NET Framework is optimized for building Windows desktop applications.
+.NET Framework is the original .NET implementation that has existed since 2002. Versions 4.5 and later implement .NET Standard, so code that targets .NET Standard can run on those versions of .NET Framework. It contains additional Windows-specific APIs, such as APIs for Windows desktop development with Windows Forms and WPF. .NET Framework is optimized for building Windows desktop applications.
 
-To learn more about the .NET Framework, see the [.NET Framework Guide](../framework/index.md).
+To learn more about .NET Framework, see the [.NET Framework Guide](../framework/index.yml).
 
 ### Mono
 
@@ -54,7 +54,7 @@ To learn more about Mono, see the [Mono documentation](https://www.mono-project.
 
 ### Universal Windows Platform (UWP)
 
-UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
+UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
 
 To learn more about UWP, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide).
 
@@ -69,7 +69,7 @@ A runtime is the execution environment for a managed program. The OS is part of 
 
 ## .NET tooling and common infrastructure
 
-You have access to an extensive set of tools and infrastructure components that work with every implementation of .NET. These include, but are not limited to the following:
+You have access to an extensive set of tools and infrastructure components that work with every implementation of .NET. These tools and components include:
 
 - The .NET languages and their compilers
 - The .NET project system (based on *.csproj*, *.vbproj*, and *.fsproj* files)
@@ -79,7 +79,7 @@ You have access to an extensive set of tools and infrastructure components that 
 
 ## Applicable standards
 
-The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International®](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
+The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International&reg;](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
 
 Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) and TC49-TG3 (CLI) task groups within the Programming Languages Technical Committee ([TC49](https://www.ecma-international.org/memento/tc49.htm)), and adopted by the Ecma General Assembly and subsequently by ISO/IEC JTC 1 via the ISO Fast-Track process.
 
@@ -88,8 +88,8 @@ Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) a
 The following official Ecma documents are available for [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) and the [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)):
 
 - **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **The Common Language Infrastructure**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
-- **Information Derived from the Partition IV XML File**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) formats.
+- **The Common Language Infrastructure**: Available in [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
+- **Information Derived from the Partition IV XML File**: Available in [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) formats.
 
 The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
 
@@ -101,8 +101,8 @@ The official ISO/IEC documents are available from the ISO/IEC [Publicly Availabl
 
 - [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
 - [.NET Standard](net-standard.md)
-- [.NET Core Guide](../core/index.md)
-- [.NET Framework Guide](../framework/index.md)
+- [.NET Core Guide](../core/index.yml)
+- [.NET Framework Guide](../framework/index.yml)
 - [C# Guide](../csharp/index.yml)
 - [F# Guide](../fsharp/index.yml)
 - [Visual Basic Guide](../visual-basic/index.yml)

@@ -21,4 +21,4 @@ ms.assetid: 4dcfcb8d-a9fa-46a7-a034-29d9ff3a59b3
   
 ## See also
 
-- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+- [RaiseEvent Statement](../statements/raiseevent-statement.md)

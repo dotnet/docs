@@ -48,7 +48,7 @@ namespace CsCsrefProgrammingGenerics
     {
         //<Snippet2>
         // type parameter T in angle brackets
-        public class GenericList<T> 
+        public class GenericList<T>
         {
             // The nested class is also generic on T.
             private class Node
@@ -66,12 +66,12 @@ namespace CsCsrefProgrammingGenerics
                     get { return next; }
                     set { next = value; }
                 }
-                
+
                 // T as private member data type.
                 private T data;
 
                 // T as return type of property.
-                public T Data  
+                public T Data
                 {
                     get { return data; }
                     set { data = value; }
@@ -79,15 +79,15 @@ namespace CsCsrefProgrammingGenerics
             }
 
             private Node head;
-            
+
             // constructor
-            public GenericList() 
+            public GenericList()
             {
                 head = null;
             }
 
             // T as method parameter type:
-            public void AddHead(T t) 
+            public void AddHead(T t)
             {
                 Node n = new Node(t);
                 n.Next = head;
@@ -357,7 +357,7 @@ namespace CsCsrefProgrammingGenerics
         //closed constructed type
         class NodeClosed<T> : BaseNodeGeneric<int> { }
 
-        //open constructed type 
+        //open constructed type
         class NodeOpen<T> : BaseNodeGeneric<T> { }
         //</Snippet16>
 
@@ -382,7 +382,7 @@ namespace CsCsrefProgrammingGenerics
         class Node5<T, U> : BaseNodeMultiple<T, U> { }
 
         //Generates an error
-        //class Node6<T> : BaseNodeMultiple<T, U> {} 
+        //class Node6<T> : BaseNodeMultiple<T, U> {}
         //</Snippet18>
 
         //<Snippet19>
@@ -561,7 +561,7 @@ namespace CsCsrefProgrammingGenerics
                     ("IsReadOnly returns {0} for this collection.",
                     coll.IsReadOnly);
 
-                // The following statement causes a run-time exception for the 
+                // The following statement causes a run-time exception for the
                 // array, but not for the List.
                 //coll.RemoveAt(4);
 
@@ -708,9 +708,9 @@ namespace CsCsrefProgrammingGenerics
             // returned.
             public T GetLast()
             {
-                // The value of temp is returned as the value of the method. 
-                // The following declaration initializes temp to the appropriate 
-                // default value for type T. The default value is returned if the 
+                // The value of temp is returned as the value of the method.
+                // The following declaration initializes temp to the appropriate
+                // default value for type T. The default value is returned if the
                 // list is empty.
                 T temp = default(T);
 

@@ -50,8 +50,8 @@ vbc -res:rf.resource in.vb
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)
-- [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-win32resource](win32resource.md)
+- [-linkresource (Visual Basic)](linkresource.md)
+- [-target (Visual Basic)](target.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

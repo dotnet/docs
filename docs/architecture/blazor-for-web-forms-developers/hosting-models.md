@@ -3,6 +3,7 @@ title: Blazor app hosting models
 description: Learn the different ways to host a Blazor app, including in the browser on WebAssembly or on the server.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor, WebAssembly]
 ms.date: 09/11/2019
 ---
 # Blazor app hosting models
@@ -40,7 +41,7 @@ The Blazor Server hosting model may sound familiar if you've used ASP.NET AJAX a
 
 ## How to choose the right Blazor hosting model
 
-As described in the [Blazor hosting model docs](https://docs.microsoft.com/aspnet/core/blazor/hosting-models#server-side), the different Blazor hosting models have different tradeoffs.
+As described in the [Blazor hosting model docs](/aspnet/core/blazor/hosting-models), the different Blazor hosting models have different tradeoffs.
 
 The Blazor WebAssembly hosting model has the following benefits:
 

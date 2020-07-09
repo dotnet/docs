@@ -20,36 +20,36 @@ public partial class Window1 : Window
     void InkCanvas_PreviewMouseDown(object sender, MouseEventArgs e)
     {
         InkCanvas ic = (InkCanvas)sender;
-        
+
         Point pt = e.GetPosition(ic);
 
         // If the user is moving selected strokes, prepare the strokes to be
         // moved to another InkCanvas.
-        if (ic.HitTestSelection(pt) == 
+        if (ic.HitTestSelection(pt) ==
             InkCanvasSelectionHitResult.Selection)
         {
             StrokeCollection selectedStrokes = ic.GetSelectedStrokes();
             StrokeCollection strokesToMove = selectedStrokes.Clone();
-        
+
             // Remove the offset of the selected strokes so they
             // are positioned when the strokes are dropped.
             Rect inkBounds = strokesToMove.GetBounds();
             TranslateStrokes(strokesToMove, -inkBounds.X, -inkBounds.Y);
-            
+
             // Perform drag and drop.
             MemoryStream ms = new MemoryStream();
             strokesToMove.Save(ms);
             DataObject dataObject = new DataObject(
                 StrokeCollection.InkSerializedFormat, ms);
-            
-            DragDropEffects effects = 
-                DragDrop.DoDragDrop(ic, dataObject, 
+
+            DragDropEffects effects =
+                DragDrop.DoDragDrop(ic, dataObject,
                                     DragDropEffects.Move);
 
-            if ((effects & DragDropEffects.Move) == 
+            if ((effects & DragDropEffects.Move) ==
                  DragDropEffects.Move)
             {
-                // Remove the selected strokes 
+                // Remove the selected strokes
                 // from the current InkCanvas.
                 ic.Strokes.Remove(selectedStrokes);
             }
@@ -77,7 +77,7 @@ public partial class Window1 : Window
     }
 
     // Helper method that transletes the specified strokes.
-    void TranslateStrokes(StrokeCollection strokes, 
+    void TranslateStrokes(StrokeCollection strokes,
                           double x, double y)
     {
         Matrix mat = new Matrix();

@@ -35,19 +35,19 @@ namespace Samples
   {
 	//<snippet2>
 	// This method configures the IssuedTokenAuthentication property of a ServiceHost.
-	public static void ConfigureIssuedTokenServiceCredentials( 
-        ServiceHost sh, bool allowCardspaceTokens, IList<X509Certificate2> knownissuers, 
+	public static void ConfigureIssuedTokenServiceCredentials(
+        ServiceHost sh, bool allowCardspaceTokens, IList<X509Certificate2> knownissuers,
         X509CertificateValidationMode certMode, X509RevocationMode revocationMode, SamlSerializer ser )
 	{
 	  // Allow CardSpace tokens.
 	  sh.Credentials.IssuedTokenAuthentication.AllowUntrustedRsaIssuers = allowCardspaceTokens;
-	  
+	
 	  // Set up known issuer certificates.
 	  foreach(X509Certificate2 cert in knownissuers)
 		sh.Credentials.IssuedTokenAuthentication.KnownCertificates.Add ( cert );
 
 	  // Set issuer certificate validation and revocation checking modes.
-	  sh.Credentials.IssuedTokenAuthentication.CertificateValidationMode = 
+	  sh.Credentials.IssuedTokenAuthentication.CertificateValidationMode =
           X509CertificateValidationMode.PeerOrChainTrust;
       sh.Credentials.IssuedTokenAuthentication.RevocationMode = X509RevocationMode.Online;
       sh.Credentials.IssuedTokenAuthentication.TrustedStoreLocation = StoreLocation.LocalMachine;
@@ -58,7 +58,7 @@ namespace Samples
 	}
 	//</snippet2>
 	
-	// It is a good practice to create a private constructor for a class that only 
+	// It is a good practice to create a private constructor for a class that only
 	// defines static methods.
 	private IssuedTokenServiceCredentialsConfiguration() { }
 	}

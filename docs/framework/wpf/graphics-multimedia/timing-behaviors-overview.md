@@ -9,11 +9,11 @@ ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
 # Timing Behaviors Overview
 This topic describes the timing behaviors of animations and other <xref:System.Windows.Media.Animation.Timeline> objects.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with basic animation features. For more information, see the [Animation Overview](animation-overview.md).  
   
-<a name="timelinetypes"></a>   
+<a name="timelinetypes"></a>
 ## Timeline Types  
  A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time. It provides properties that enable you to specify the length of that segment, when it should start, how many times it will repeat, how fast time progresses in that segment, and more.  
   
@@ -28,7 +28,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 |<xref:System.Windows.Media.Animation.Timeline>|Abstract base class that defines timing behaviors.|  
 |<xref:System.Windows.Media.Animation.TimelineGroup>|Abstract class for <xref:System.Windows.Media.Animation.Timeline> objects that can contain other <xref:System.Windows.Media.Animation.Timeline> objects.|  
   
-<a name="propertiesthatcontroltimelinelength"></a>   
+<a name="propertiesthatcontroltimelinelength"></a>
 ## Properties that Control the Length of a Timeline  
  A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time, and the length of a timeline can be described in different ways. The following table defines several terms for describing the length of a timeline.  
   
@@ -38,7 +38,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 |One repetition|The length of time it takes for a timeline to play forward once and, if the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property is true, play backwards once.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>||||  
 |Active period|The length of time it takes for a timeline to complete all the repetitions specified by its <xref:System.Windows.Media.Animation.RepeatBehavior> property.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>||||  
   
-<a name="duration"></a>   
+<a name="duration"></a>
 ### The Duration Property  
  As previously mentioned, a timeline represents a segment of time. The length of that segment is determined by the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. When a timeline reaches the end of its duration, it stops playing. If the timeline has child timelines, they stop playing as well. In the case of an animation, the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> specifies how long the animation takes to transition from its starting value to its ending value. A timeline's duration is sometimes called its *simple duration*, to distinguish between the duration of a single iteration and the total length of time the animation plays including repetitions. You can specify a duration using a finite time value or the special values <xref:System.Windows.Duration.Automatic%2A> or <xref:System.Windows.Duration.Forever%2A>. An animation's duration should resolve to a <xref:System.Windows.Duration.TimeSpan%2A> value, so it can transition between values.  
   
@@ -54,7 +54,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  [!code-xaml[animation_ovws_snippet#ContainerTimelineWithShorterDurationExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#containertimelinewithshorterdurationexampleinline)]  
   
-<a name="repeatinganimations"></a>   
+<a name="repeatinganimations"></a>
 ### The RepeatBehavior Property  
  The <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> controls how many times it repeats its simple duration. Using the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property, you can specify how many times the timeline plays (an iteration <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A>) or the total length of time it should play (a repeat <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A>). In either case, the animation goes through as many beginning-to-end runs as necessary to fill the requested count or duration. By default, timelines have an iteration count of `1.0`, which means they play once and do not repeat at all.  
   
@@ -72,7 +72,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  For an additional example, see [Repeat an Animation](how-to-repeat-an-animation.md).  
   
-<a name="autoreverseproperty"></a>   
+<a name="autoreverseproperty"></a>
 ### The AutoReverse Property  
  The <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property specifies whether a <xref:System.Windows.Media.Animation.Timeline> will play backwards at the end of each forward iteration. The following example sets to the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of a <xref:System.Windows.Media.Animation.DoubleAnimation> to `true`; as a result, it animates from zero to 100, and then from 100 to zero. It plays for a total of 10 seconds.  
   
@@ -84,7 +84,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  If a container timeline has child <xref:System.Windows.Media.Animation.Timeline> objects, they reverse when the container timeline does. For additional examples, see [Specify Whether a Timeline Automatically Reverses](how-to-specify-whether-a-timeline-automatically-reverses.md).  
   
-<a name="timelinebegin"></a>   
+<a name="timelinebegin"></a>
 ## The BeginTime Property  
  The <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property enables you to specify when a timeline starts.  A timeline's begin time is relative to its parent timeline. A begin time of zero seconds means the timeline starts as soon as it parent starts; any other value creates an offset between when the parent timeline starts playing and when the child timeline plays. For example, a begin time of two seconds means the timeline starts playing when its parent has reached a time of two seconds. By default, all timelines have a begin time of zero seconds. You may also set a timeline's begin time to `null`, which prevents the timeline from starting. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], you specify null using the [x:Null Markup Extension](../../../desktop-wpf/xaml-services/xnull-markup-extension.md).  
   
@@ -94,7 +94,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  [!code-xaml[animation_ovws_snippet#TBBeginTimeExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbbegintimeexampleinline)]  
   
-<a name="fillbehaviorproperty"></a>   
+<a name="fillbehaviorproperty"></a>
 ## The FillBehavior Property  
  When a <xref:System.Windows.Media.Animation.Timeline> reaches the end of its total active duration, the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property specifies whether it stops or holds its last value. An animation with a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd> "holds" its output value: the property being animated retains the last value of the animation. A value of <xref:System.Windows.Media.Animation.FillBehavior.Stop> causes that the animation stop affecting its target property after it ends.  
   
@@ -106,13 +106,13 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  [!code-xaml[animation_ovws_snippet#TBFillBehaviorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbfillbehaviorexample)]  
   
-<a name="speedproperties"></a>   
+<a name="speedproperties"></a>
 ## Properties that Control the Speed of a Timeline  
  The <xref:System.Windows.Media.Animation.Timeline> class provides three properties for specifying its speed:  
   
 - <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> – Specifies that rate, relative to its parent, at which time progresses for a <xref:System.Windows.Media.Animation.Timeline>. Values greater than one increase the speed of the <xref:System.Windows.Media.Animation.Timeline> and its child <xref:System.Windows.Media.Animation.Timeline> objects; values between zero and one slow it down. A value of one indicates that <xref:System.Windows.Media.Animation.Timeline> progresses at the same rate as its parent. The <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> setting  of a container timeline affects all of its child <xref:System.Windows.Media.Animation.Timeline> objects as well.  
   
-- <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md). 
+- <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md).
   
 - <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md).  
   
@@ -122,4 +122,4 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 - [Animation and Timing System Overview](animation-and-timing-system-overview.md)
 - [Timing Events Overview](timing-events-overview.md)
 - [How-to Topics](animation-and-timing-how-to-topics.md)
-- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+- [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming)

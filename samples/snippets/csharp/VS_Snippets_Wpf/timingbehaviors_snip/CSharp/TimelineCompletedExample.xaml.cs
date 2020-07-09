@@ -16,7 +16,7 @@ namespace SDKSample
 
     public partial class TimelineCompletedExample : Page
     {
-        
+
         private Storyboard zoomInStoryboard;
         private ImageSource currentImageSource;
         private ImageSource nextImageSource;
@@ -29,20 +29,20 @@ namespace SDKSample
         private void exampleLoaded(object sender, RoutedEventArgs e)
         {
             // Cache the zoom-out storyboard resource.
-            zoomInStoryboard = 
+            zoomInStoryboard =
                 (Storyboard) this.Resources["ZoomInStoryboardResource"];
 
             // Cache the ImageSource resources.
-            currentImageSource = 
+            currentImageSource =
                 (ImageSource) this.Resources["RectangleDrawingImage"];
-            nextImageSource = 
+            nextImageSource =
                 (ImageSource) this.Resources["CircleDrawingImage"];
 
             // Display the current image source.
             AnimatedImage.Source = currentImageSource;
         }
 
-        // Handles the zoom-out storyboard's completed event. 
+        // Handles the zoom-out storyboard's completed event.
         private void zoomOutStoryboardCompleted(object sender, EventArgs e)
         {
             AnimatedImage.Source = nextImageSource;

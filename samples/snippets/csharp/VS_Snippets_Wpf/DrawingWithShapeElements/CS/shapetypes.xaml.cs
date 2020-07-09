@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Graphics
 
     public partial class ShapeTypes : Page
     {
-        public ShapeTypes() 
+        public ShapeTypes()
         {
            InitializeComponent();
         }

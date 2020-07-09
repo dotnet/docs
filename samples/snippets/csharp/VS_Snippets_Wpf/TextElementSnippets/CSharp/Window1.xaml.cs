@@ -81,7 +81,7 @@ namespace TextElementSnippets
             par.Inlines.Add(new LineBreak());
             par.Inlines.Add(new LineBreak());
             par.Inlines.Add(runFractions);
-            
+
             par.TextAlignment = TextAlignment.Left;
             par.FontSize = 18;
             par.FontFamily = new FontFamily("Palatino Linotype");
@@ -170,7 +170,7 @@ namespace TextElementSnippets
 
             // The TextEffects property is null (no collection) by default.  Create a new one.
             textBlock.TextEffects = new TextEffectCollection();
-            
+
             // Add the previously created effect to the TextEffects collection.
             textBlock.TextEffects.Add(tfe);
             // </Snippet_TextBlock_TextEffects>

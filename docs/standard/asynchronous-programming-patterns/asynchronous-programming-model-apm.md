@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous Programming Model (APM)"
+description: Learn about the Asynchronous Programming Model (APM) in .NET. Discover how to begin and end an asynchronous operation.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -16,7 +17,7 @@ ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
 An asynchronous operation that uses the <xref:System.IAsyncResult> design pattern is implemented as two methods named `BeginOperationName` and `EndOperationName` that begin and end the asynchronous operation *OperationName* respectively. For example, the <xref:System.IO.FileStream> class provides the <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> methods to asynchronously read bytes from a file. These methods implement the asynchronous version of the <xref:System.IO.FileStream.Read%2A> method.  
   
 > [!NOTE]
-> Starting with the .NET Framework 4, the Task Parallel Library provides a new model for asynchronous and parallel programming. For more information, see [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md) and [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)).  
+> Starting with the .NET Framework 4, the Task Parallel Library provides a new model for asynchronous and parallel programming. For more information, see [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) and [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md)).  
   
  After calling `BeginOperationName`, an application can continue executing instructions on the calling thread while the asynchronous operation takes place on a different thread. For each call to `BeginOperationName`, the application should also call `EndOperationName` to get the results of the operation.  
   
@@ -47,18 +48,18 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
   
  Application developers have several design choices for accessing the results of the asynchronous operation. The correct choice depends on whether the application has instructions that can execute while the operation completes. If an application cannot perform any additional work until it receives the results of the asynchronous operation, the application must block until the results are available. To block until an asynchronous operation completes, you can use one of the following approaches:  
   
-- Call `EndOperationName` from the application’s main thread, blocking application execution until the operation is complete. For an example that illustrates this technique, see [Blocking Application Execution by Ending an Async Operation](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-by-ending-an-async-operation.md).  
+- Call `EndOperationName` from the application’s main thread, blocking application execution until the operation is complete. For an example that illustrates this technique, see [Blocking Application Execution by Ending an Async Operation](blocking-application-execution-by-ending-an-async-operation.md).  
   
-- Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> to block application execution until one or more operations are complete. For an example that illustrates this technique, see [Blocking Application Execution Using an AsyncWaitHandle](../../../docs/standard/asynchronous-programming-patterns/blocking-application-execution-using-an-asyncwaithandle.md).  
+- Use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> to block application execution until one or more operations are complete. For an example that illustrates this technique, see [Blocking Application Execution Using an AsyncWaitHandle](blocking-application-execution-using-an-asyncwaithandle.md).  
   
  Applications that do not need to block while the asynchronous operation completes can use one of the following approaches:  
   
-- Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted%2A> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/polling-for-the-status-of-an-asynchronous-operation.md).  
+- Poll for operation completion status by checking the <xref:System.IAsyncResult.IsCompleted%2A> property periodically and calling `EndOperationName` when the operation is complete. For an example that illustrates this technique, see [Polling for the Status of an Asynchronous Operation](polling-for-the-status-of-an-asynchronous-operation.md).  
   
-- Use an <xref:System.AsyncCallback> delegate to specify a method to be invoked when the operation is complete. For an example that illustrates this technique, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
+- Use an <xref:System.AsyncCallback> delegate to specify a method to be invoked when the operation is complete. For an example that illustrates this technique, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  
   
 ## See also
 
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)
-- [Calling Synchronous Methods Asynchronously](../../../docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)
-- [Using an AsyncCallback Delegate and State Object](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md)
+- [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)
+- [Calling Synchronous Methods Asynchronously](calling-synchronous-methods-asynchronously.md)
+- [Using an AsyncCallback Delegate and State Object](using-an-asynccallback-delegate-and-state-object.md)

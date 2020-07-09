@@ -19,6 +19,6 @@ public class Example
          Int32.TryParse(s, out number);
 
       return number;
-   }   
+   }
    // </Snippet1>
 }

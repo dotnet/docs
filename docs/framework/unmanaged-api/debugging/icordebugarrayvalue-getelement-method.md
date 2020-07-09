@@ -24,7 +24,7 @@ Gets the value of the given array element.
 ```cpp  
 HRESULT GetElement (  
     [in]  ULONG32          cdim,  
-    [in, size_is(cdim), length_is(cdim)]   
+    [in, size_is(cdim), length_is(cdim)]
          ULONG32           indices[],  
     [out] ICorDebugValue   **ppValue  
 );  
@@ -45,7 +45,7 @@ HRESULT GetElement (
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the specified element.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

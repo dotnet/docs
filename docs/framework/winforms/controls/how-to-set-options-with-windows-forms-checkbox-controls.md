@@ -37,7 +37,7 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
     private void checkBox1_CheckedChanged(object sender, System.EventArgs e)  
     {  
        // Determine the CheckState of the check box.  
-       if (checkBox1.CheckState == CheckState.Checked)   
+       if (checkBox1.CheckState == CheckState.Checked)
        {  
           // If checked, do not allow items to be dragged onto the form.  
           this.AllowDrop = false;  
@@ -51,7 +51,7 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
           System::EventArgs ^ e)  
        {  
           // Determine the CheckState of the check box.  
-          if (checkBox1->CheckState == CheckState::Checked)   
+          if (checkBox1->CheckState == CheckState::Checked)
           {  
              // If checked, do not allow items to be dragged onto the form.  
              this->AllowDrop = false;  

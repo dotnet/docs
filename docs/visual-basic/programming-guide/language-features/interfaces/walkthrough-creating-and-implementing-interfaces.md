@@ -103,7 +103,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
   
 ## See also
 
-- [Implements Statement](../../../../visual-basic/language-reference/statements/implements-statement.md)
-- [Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/index.md)
-- [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)
+- [Implements Statement](../../../language-reference/statements/implements-statement.md)
+- [Interfaces](index.md)
+- [Interface Statement](../../../language-reference/statements/interface-statement.md)
+- [Event Statement](../../../language-reference/statements/event-statement.md)

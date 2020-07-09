@@ -49,7 +49,7 @@ This section is intended as a reference for [!INCLUDE[TLA#tla_winclient](../../.
 - [Using DrawingVisual Objects](../graphics-multimedia/using-drawingvisual-objects.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Freezable Objects Overview](freezable-objects-overview.md)
-- [XAML Resources](xaml-resources.md)
+- [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [Drawing Formatted Text](drawing-formatted-text.md)
 - [Typography in WPF](typography-in-wpf.md)

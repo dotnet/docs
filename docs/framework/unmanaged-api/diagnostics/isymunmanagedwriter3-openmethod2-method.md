@@ -22,7 +22,7 @@ Opens a method and provides its real section offset in the image.
 ## Syntax  
   
 ```cpp  
-HRESULT OpenMethod2(   
+HRESULT OpenMethod2(
     [in] mdMethodDef method,  
     [in] ULONG32 isect,  
     [in] ULONG32 offset);  
@@ -46,5 +46,5 @@ HRESULT OpenMethod2(
   
 ## See also
 
-- [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)
-- [OpenMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md)
+- [ISymUnmanagedWriter3 Interface](isymunmanagedwriter3-interface.md)
+- [OpenMethod Method](isymunmanagedwriter-openmethod-method.md)

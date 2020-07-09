@@ -15,7 +15,7 @@ ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
   
  The <xref:System.Windows.Automation.TablePattern> control pattern is used to support controls that act as containers for a collection of child elements. The children of this element must implement <xref:System.Windows.Automation.Provider.ITableItemProvider> and be organized in a two-dimensional logical coordinate system that can be traversed by row and column. This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridProvider>, with the distinction that any control implementing <xref:System.Windows.Automation.Provider.ITableProvider> must also expose a column and/or row header relationship for each child element. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Table control pattern, note the following guidelines and conventions:  
   
@@ -36,7 +36,7 @@ Example of a Table with Complex Column Headers
  ![Table with ambiguous RowOrColumnMajor property.](./media/uia-tablepattern-roworcolumnmajorproperty.PNG "UIA_TablePattern_RowOrColumnMajorProperty")  
 Example of a Table with Ambiguous RowOrColumnMajor Property  
   
-<a name="Required_Members_for_ITableProvider"></a>   
+<a name="Required_Members_for_ITableProvider"></a>
 ## Required Members for ITableProvider  
  The following properties and methods are required for the ITableProvider interface.  
   
@@ -48,7 +48,7 @@ Example of a Table with Ambiguous RowOrColumnMajor Property
   
  This control pattern has no associated events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  This control pattern has no associated exceptions.  
   

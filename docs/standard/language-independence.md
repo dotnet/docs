@@ -11,52 +11,14 @@ ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 
 # Language independence and language-independent components
 
-.NET is language independent. This means that, as a developer, you can develop in one of the many languages that target .NET implementations, such as C#, F#, and Visual Basic. You can access the types and members of class libraries developed for .NET implementations without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET app regardless of its language.
+.NET is language independent. This means that, as a developer, you can develop in one of the many languages that target .NET implementations, such as C#, F#, and Visual Basic. You can access the types and members of class libraries developed for .NET implementations without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you're a component developer, your component can be accessed by any .NET app, regardless of its language.
 
 > [!NOTE]
-> This first part of this article discusses creating language-independent components - that is, components that can be consumed by apps that are written in any language. You can also create a single component or app from source code written in multiple languages; see [Cross-Language Interoperability](#cross-language-interoperability) in the second part of this article.
+> This first part of this article discusses creating language-independent components, that is, components that can be consumed by apps that are written in any language. You can also create a single component or app from source code written in multiple languages; see [Cross-Language Interoperability](#cross-language-interoperability) in the second part of this article.
 
 To fully interact with other objects written in any language, objects must expose to callers only those features that are common to all languages. This common set of features is defined by the Common Language Specification (CLS), which is a set of rules that apply to generated assemblies. The Common Language Specification is defined in Partition I, Clauses 7 through 11 of the [ECMA-335 Standard: Common Language Infrastructure](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
 
-If your component conforms to the Common Language Specification, it is guaranteed to be CLS-compliant and can be accessed from code in assemblies written in any programming language that supports the CLS. You can determine whether your component conforms to the Common Language Specification at compile time by applying the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute to your source code. For more information, see The [CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute).
-
-In this article:
-
-* [CLS compliance rules](#cls-compliance-rules)
-
-  * [Types and type member signatures](#types-and-type-member-signatures)
-
-  * [Naming conventions](#naming-conventions)
-
-  * [Type conversion](#type-conversion)
-
-  * [Arrays](#arrays)
-
-  * [Interfaces](#interfaces)
-
-  * [Enumerations](#enumerations)
-
-  * [Type members in general](#type-members-in-general)
-
-  * [Member accessibility](#member-accessibility)
-
-  * [Generic types and members](#generic-types-and-members)
-
-  * [Constructors](#constructors)
-
-  * [Properties](#properties)
-
-  * [Events](#events)
-
-  * [Overloads](#overloads)
-
-  * [Exceptions](#exceptions)
-
-  * [Attributes](#attributes)
-
-* [CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute)
-
-* [Cross-Language Interoperability](#cross-language-interoperability)
+If your component conforms to the Common Language Specification, it is guaranteed to be CLS-compliant and can be accessed from code in assemblies written in any programming language that supports the CLS. You can determine whether your component conforms to the Common Language Specification at compile time by applying the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute to your source code. For more information, see [The CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute).
 
 ## CLS compliance rules
 
@@ -151,7 +113,7 @@ Category | See | Rule | Rule Number
 -------- | --- | ---- | -----------
 Accessibility | [Member accessibility](#member-accessibility) | Accessibility shall not be changed when overriding inherited methods, except when overriding a method inherited from a different assembly with accessibility `family-or-assembly`. In this case, the override shall have accessibility `family`. | 10
 Accessibility | [Member accessibility](#member-accessibility) | The visibility and accessibility of types and members shall be such that types in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible. For example, a public method that is visible outside its assembly shall not have an argument whose type is visible only within the assembly. The visibility and accessibility of types composing an instantiated generic type used in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible. For example, an instantiated generic type present in the signature of a member that is visible outside its assembly shall not have a generic argument whose type is visible only within the assembly. | 12
-Arrays | [Arrays](#arrays) | Arrays shall have elements with a CLS-compliant type, and all dimensions of the array shall have lower bounds of zero. Only the fact that an item is an array and the element type of the array shall be required to distinguish between overloads. When overloading is based on two or more array types the element types shall be named types. | 16
+Arrays | [Arrays](#arrays) | Arrays shall have elements with a CLS-compliant type, and all dimensions of the array shall have lower bounds of zero. Only the fact that an item is an array and the element type of the array shall be required to distinguish between overloads. When overloading is based on two or more array types, the element types shall be named types. | 16
 Attributes | [Attributes](#attributes) | Attributes shall be of type [System.Attribute](xref:System.Attribute), or a type inheriting from it. | 41
 Attributes | [Attributes](#attributes) | The CLS only allows a subset of the encodings of custom attributes. The only types that shall appear in these encodings are (see Partition IV): [System.Type](xref:System.Type), [System.String](xref:System.String), [System.Char](xref:System.Char), [System.Boolean](xref:System.Boolean), [System.Byte](xref:System.Byte), [System.Int16](xref:System.Int16), [System.Int32](xref:System.Int32), [System.Int64](xref:System.Int64), [System.Single](xref:System.Single), [System.Double](xref:System.Double), and any enumeration type based on a CLS-compliant base integer type. | 34
 Attributes | [Attributes](#attributes) | The CLS does not allow publicly visible required modifiers (`modreq`, see Partition II), but does allow optional modifiers (`modopt`, see Partition II) it does not understand. | 35
@@ -179,14 +141,14 @@ Interfaces | [Interfaces](#interfaces) | CLS-compliant interfaces shall not defi
 Members | [Type members in general](#type-members-in-general) | Global static fields and methods are not CLS-compliant. | 36
 Members | -- | The value of a literal static is specified through the use of field initialization metadata. A CLS-compliant literal must have a value specified in field initialization metadata that is of exactly the same type as the literal (or of the underlying type, if that literal is an `enum`). | 13
 Members | [Type members in general](#type-members-in-general) | The vararg constraint is not part of the CLS, and the only calling convention supported by the CLS is the standard managed calling convention. | 15
-Naming conventions | [Naming conventions](#naming-conventions) | Assemblies shall follow Annex 7 of Technical Report 15 of the Unicode Standard3.0 governing the set of characters permitted to start and be included in identifiers, available online at [Unicode Normalization Forms](https://www.unicode.org/unicode/reports/tr15/tr15-18.html). Identifiers shall be in the canonical format defined by Unicode Normalization Form C. For CLS purposes, two identifiers are the same if their lowercase mappings (as specified by the Unicode locale-insensitive, one-to-one lowercase mappings) are the same. That is, for two identifiers to be considered different under the CLS they shall differ in more than simply their case. However, in order to override an inherited definition the CLI requires the precise encoding of the original declaration be used. | 4
+Naming conventions | [Naming conventions](#naming-conventions) | Assemblies shall follow Annex 7 of Technical Report 15 of the Unicode Standard3.0 governing the set of characters permitted to start and be included in identifiers, available online at [Unicode Normalization Forms](https://unicode.org/reports/tr15/). Identifiers shall be in the canonical format defined by Unicode Normalization Form C. For CLS purposes, two identifiers are the same if their lowercase mappings (as specified by the Unicode locale-insensitive, one-to-one lowercase mappings) are the same. That is, for two identifiers to be considered different under the CLS they shall differ in more than simply their case. However, in order to override an inherited definition the CLI requires the precise encoding of the original declaration be used. | 4
 Overloading | [Naming conventions](#naming-conventions) | All names introduced in a CLS-compliant scope shall be distinct independent of kind, except where the names are identical and resolved via overloading. That is, while the CTS allows a single type to use the same name for a method and a field, the CLS does not. | 5
-Overloading | [Naming conventions](#naming-conventions) | Fields and nested types shall be distinct by identifier comparison alone, even though the CTS allows distinct signatures to be distinguished. Methods, properties, and events that have the same name (by identifier comparison) shall differ by more than just the return type,except as specified in CLS Rule 39 | 6
+Overloading | [Naming conventions](#naming-conventions) | Fields and nested types shall be distinct by identifier comparison alone, even though the CTS allows distinct signatures to be distinguished. Methods, properties, and events that have the same name (by identifier comparison) shall differ by more than just the return type, except as specified in CLS Rule 39 | 6
 Overloading | [Overloads](#overloads) | Only properties and methods can be overloaded. | 37
 Overloading | [Overloads](#overloads) |Properties and methods can be overloaded based only on the number and types of their parameters, except the conversion operators named `op_Implicit` and `op_Explicit`, which can also be overloaded based on their return type. | 38
 Overloading | -- | If two or more CLS-compliant methods declared in a type have the same name and, for a specific set of type instantiations, they have the same parameter and return types, then all these methods shall be semantically equivalent at those type instantiations. | 48
 Properties | [Properties](#properties) | The methods that implement the getter and setter methods of a property shall be marked `SpecialName` in the metadata. | 24
-Properties | [Properties](#properties) | A property’s accessors shall all be static, all be virtual, or all be instance. | 26
+Properties | [Properties](#properties) | A property's accessors shall all be static, all be virtual, or all be instance. | 26
 Properties | [Properties](#properties) | The type of a property shall be the return type of the getter and the type of the last argument of the setter. The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter. All of these types shall be CLS-compliant, and shall not be managed pointers (that is, shall not be passed by reference). | 27
 Properties | [Properties](#properties) | Properties shall adhere to a specific naming pattern. The `SpecialName` attribute referred to in CLS rule 24 shall be ignored in appropriate name comparisons and shall adhere to identifier rules. A property shall have a getter method, a setter method, or both. | 28
 Type conversion | [Type conversion](#type-conversion) | If either op_Implicit or op_Explicit is provided, an alternate means of providing the coercion shall be provided. | 39
@@ -196,6 +158,24 @@ Types | [Types and type member signatures](#types-and-type-member-signatures) | 
 Types | [Types and type member signatures](#types-and-type-member-signatures) | Unmanaged pointer types are not CLS-compliant. | 17
 Types | [Types and type member signatures](#types-and-type-member-signatures) | CLS-compliant classes, value types, and interfaces shall not require the implementation of non-CLS-compliant members | 20
 Types | [Types and type member signatures](#types-and-type-member-signatures) | [System.Object](xref:System.Object) is CLS-compliant. Any other CLS-compliant class shall inherit from a CLS-compliant class. | 23
+
+Index to subsections:
+
+* [Types and type member signatures](#types-and-type-member-signatures)
+* [Naming conventions](#naming-conventions)
+* [Type conversion](#type-conversion)
+* [Arrays](#arrays)
+* [Interfaces](#interfaces)
+* [Enumerations](#enumerations)
+* [Type members in general](#type-members-in-general)
+* [Member accessibility](#member-accessibility)
+* [Generic types and members](#generic-types-and-members)
+* [Constructors](#constructors)
+* [Properties](#properties)
+* [Events](#events)
+* [Overloads](#overloads)
+* [Exceptions](#exceptions)
+* [Attributes](#attributes)
 
 ### Types and type member signatures
 
@@ -336,7 +316,7 @@ Non-compliant type | Description | CLS-compliant alternative
 
 The .NET Framework Class Library or any other class library may include other types that aren't CLS-compliant; for example:
 
-* Boxed value types. The following C# example creates a class that has a public property of type `int`* named `Value`. Because an `int`* is a boxed value type, the compiler flags it as non-CLS-compliant.
+* Boxed value types. The following C# example creates a class that has a public property of type `int*` named `Value`. Because an `int*` is a boxed value type, the compiler flags it as non-CLS-compliant.
 
 ```csharp
 using System;
@@ -602,13 +582,13 @@ public class person
 //    Naming1.cs(6,14): (Location of symbol related to previous warning)
 ```
 
-Programming language identifiers, such as the names of namespaces, types, and members, must conform to the [Unicode Standard 3.0, Technical Report 15, Annex 7](https://www.unicode.org/reports/tr15/tr15-18.html). This means that:
+Programming language identifiers, such as the names of namespaces, types, and members, must conform to the [Unicode Standard](https://unicode.org/reports/tr15/). This means that:
 
 * The first character of an identifier can be any Unicode uppercase letter, lowercase letter, title case letter, modifier letter, other letter, or letter number. For information on Unicode character categories, see the [System.Globalization.UnicodeCategory](xref:System.Globalization.UnicodeCategory) enumeration.
 
-* Subsequent characters can be from any of the categories as the first character, and can also include non-spacing marks, spacing combining marks, decimal numbers, connector punctuations, and formatting codes.
+* Subsequent characters can be from any of the categories as the first character, and can also include non-spacing marks, spacing combining marks, decimal numbers, connector punctuation, and formatting codes.
 
-Before you compare identifiers, you should filter out formatting codes and convert the identifiers to Unicode Normalization Form C, because a single character can be represented by multiple UTF-16-encoded code units. Character sequences that produce the same code units in Unicode Normalization Form C are not CLS-compliant. The following example defines a property named `Å`, which consists of the character ANGSTROM SIGN (U+212B), and a second property named `Å` which consists of the character LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5). The C# compiler flags the source code as non-CLS-compliant.
+Before you compare identifiers, you should filter out formatting codes and convert the identifiers to Unicode Normalization Form C, because a single character can be represented by multiple UTF-16-encoded code units. Character sequences that produce the same code units in Unicode Normalization Form C are not CLS-compliant. The following example defines a property named `Å`, which consists of the character ANGSTROM SIGN (U+212B), and a second property named `Å`, which consists of the character LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5). The C# compiler flags the source code as non-CLS-compliant.
 
 ```csharp
 public class Size
@@ -797,7 +777,7 @@ The Common Language Specification defines two conversion operators:
 
 However, not all languages support operator overloading or the definition of custom operators. If you choose to implement these conversion operators, you should also provide an alternate way to perform the conversion. We recommend that you provide `From`Xxx and `To`Xxx methods.
 
-The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble` class that represents an signed double-precision, floating-point number. It provides for implicit conversions from `UDouble` to `Double` and for explicit conversions from `UDouble` to `Single`, `Double` to `UDouble`, and `Single` to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators.
+The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble` class that represents a signed double-precision, floating-point number. It provides for implicit conversions from `UDouble` to `Double` and for explicit conversions from `UDouble` to `Single`, `Double` to `UDouble`, and `Single` to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators.
 
 ```csharp
 using System;
@@ -944,7 +924,7 @@ End Structure
 
 CLS-compliant arrays conform to the following rules:
 
-* All dimensions of an array must have a lower bound of zero. The following example creates a non-CLS-compliant array with a lower bound of one. Note that, despite the presence of the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute, the compiler does not detect that the array returned by the `Numbers.GetTenPrimes` method is not CLS-compliant.
+* All dimensions of an array must have a lower bound of zero. The following example creates a non-CLS-compliant array with a lower bound of one. Despite the presence of the [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) attribute, the compiler does not detect that the array returned by the `Numbers.GetTenPrimes` method is not CLS-compliant.
 
   ```csharp
   [assembly: CLSCompliant(true)]
@@ -1844,7 +1824,7 @@ End Class
 
 The Common Language Specification imposes a conservative per-instantiation model for nested types and protected members. Open generic types cannot expose fields or members with signatures that contain a specific instantiation of a nested, protected generic type. Non-generic types that extend a specific instantiation of a generic base class or interface cannot expose fields or members with signatures that contain a different instantiation of a nested, protected generic type.
 
-The following example defines a generic type, `C1<T>`, and a protected class, `C1<T>.N`. `C1<T>` has two methods, `M1` and `M2`. However, `M1` is not CLS-compliant because it tries to return a `C1<int>.N` object from `C1<T>`. A second class, `C2`, is derived from `C1<long>`. It has two methods, `M3` and `M4`. `M3` is not CLS-compliant because it tries to return a `C1<int>.N` object from a subclass of `C1<long>`. Note that language compilers can be even more restrictive. In this example, Visual Basic displays an error when it tries to compile `M4`.
+The following example defines a generic type, `C1<T>`, and a protected class, `C1<T>.N`. `C1<T>` has two methods, `M1` and `M2`. However, `M1` is not CLS-compliant because it tries to return a `C1<int>.N` object from `C1<T>`. A second class, `C2`, is derived from `C1<long>`. It has two methods, `M3` and `M4`. `M3` is not CLS-compliant because it tries to return a `C1<int>.N` object from a subclass of `C1<long>`. Language compilers can be even more restrictive. In this example, Visual Basic displays an error when it tries to compile `M4`.
 
 ```csharp
 using System;
@@ -2496,7 +2476,7 @@ End Module
 
 In.NET Framework assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from [System.Attribute](xref:System.Attribute) or from a type derived from `System.Attribute`.
 
-The following example violates this rule. It defines a `NumericAttribute` class that does not derive from `System.Attribute`. Note that a compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.
+The following example violates this rule. It defines a `NumericAttribute` class that does not derive from `System.Attribute`. A compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.
 
 ```csharp
 using System;
@@ -2581,7 +2561,7 @@ The constructor or the properties of a CLS-compliant attribute can expose only t
 
 * Any enumeration type whose underlying type is `Byte`, `Int16`, `Int32`, or `Int64`.
 
-The following example defines a `DescriptionAttribute` class that derives from [Attribute](xref:System.Attribute). The class constructor has a parameter of type `Descriptor`, so the class is not CLS-compliant. Note that the C# compiler emits a warning but compiles successfully.
+The following example defines a `DescriptionAttribute` class that derives from [Attribute](xref:System.Attribute). The class constructor has a parameter of type `Descriptor`, so the class is not CLS-compliant. The C# compiler emits a warning but compiles successfully.
 
 ```csharp
 using System;
@@ -2801,7 +2781,7 @@ End Class
 
 If you are developing an app rather than a library (that is, if you aren't exposing types or members that can be consumed by other app developers), the CLS compliance of the program elements that your app consumes are of interest only if your language does not support them. In that case, your language compiler will generate an error when you try to use a non-CLS-compliant element.
 
-## Cross-Language Interoperability
+## Cross-language interoperability
 
 Language independence has a number of possible meanings. One meaning involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET Framework assembly.
 
@@ -2890,7 +2870,7 @@ You then use the Link tool (Link.exe) to compile the two modules into an assembl
 link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll
 ```
 
-The following example then calls the `NumericLib.NearZero` and `StringLib.ToTitleCase` methods. Note that both the Visual Basic code and the C# code are able to access the methods in both classes.
+The following example then calls the `NumericLib.NearZero` and `StringLib.ToTitleCase` methods. Both the Visual Basic code and the C# code are able to access the methods in both classes.
 
 ```csharp
 using System;

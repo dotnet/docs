@@ -1,5 +1,6 @@
 ---
 title: "<system.Net> Element (Network Settings)"
+description: The <system.Net> network settings element contains settings that specify how the .NET Framework connects to the network options in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.Net"
@@ -18,7 +19,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 ## Syntax  
   
 ```xml  
-<system.net>   
+<system.net>
 </system.net>  
 ```  
   

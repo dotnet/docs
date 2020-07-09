@@ -33,7 +33,7 @@ The async-based approach adds the equivalent of an automatic transmission to the
 
 ## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easier to write
 
-The [Async](../../../../visual-basic/language-reference/modifiers/async.md) and [Await](../../../../visual-basic/language-reference/operators/await-operator.md) keywords in Visual Basic are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using `Async` and `Await` are referred to as async methods.
+The [Async](../../../language-reference/modifiers/async.md) and [Await](../../../language-reference/operators/await-operator.md) keywords in Visual Basic are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using `Async` and `Await` are referred to as async methods.
 
 The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.
 
@@ -83,7 +83,7 @@ The following characteristics summarize what makes the previous example an async
 
   - [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) if your method has a return statement in which the operand has type TResult.
   - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
-  - [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) if you're writing an async event handler.
+  - [Sub](../../language-features/procedures/sub-procedures.md) if you're writing an async event handler.
 
   For more information, see "Return Types and Parameters" later in this topic.
 
@@ -146,9 +146,9 @@ The async-based approach to asynchronous programming is preferable to existing a
 
 ## <a name="BKMK_AsyncandAwait"></a> Async and Await
 
-If you specify that a method is an async method by using an [Async](../../../../visual-basic/language-reference/modifiers/async.md) modifier, you enable the following two capabilities.
+If you specify that a method is an async method by using an [Async](../../../language-reference/modifiers/async.md) modifier, you enable the following two capabilities.
 
-- The marked async method can use [Await](../../../../visual-basic/language-reference/operators/await-operator.md) to designate suspension points. The await operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
+- The marked async method can use [Await](../../../language-reference/operators/await-operator.md) to designate suspension points. The await operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
 
   The suspension of an async method at an `Await` expression doesn't constitute an exit from the method, and `Finally` blocks don't run.
 
@@ -158,14 +158,14 @@ An async method typically contains one or more occurrences of an `Await` operato
 
 `Async` and `Await` are contextual keywords. For more information and examples, see the following topics:
 
-- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
-- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
+- [Async](../../../language-reference/modifiers/async.md)
+- [Await Operator](../../../language-reference/operators/await-operator.md)
 
 ## <a name="BKMK_ReturnTypesandParameters"></a> Return types and parameters
 
 In .NET Framework programming, an async method typically returns a <xref:System.Threading.Tasks.Task> or a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601). Inside an async method, an `Await` operator is applied to a task that's returned from a call to another async method.
 
-You specify [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) as the return type if the method contains a [Return](../../../../visual-basic/language-reference/statements/return-statement.md) statement that specifies an operand of type `TResult`.
+You specify [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) as the return type if the method contains a [Return](../../../language-reference/statements/return-statement.md) statement that specifies an operand of type `TResult`.
 
 You use `Task` as the return type if the method has no return statement or has a return statement that doesn't return an operand.
 
@@ -207,9 +207,9 @@ An async method can also be a `Sub` method. This return type is used primarily t
 
 An async method that's a `Sub` procedure can't be awaited, and the caller can't catch any exceptions that the method throws.
 
-An async method can't declare [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) parameters, but the method can call methods that have such parameters.
+An async method can't declare [ByRef](../../../language-reference/modifiers/byref.md) parameters, but the method can call methods that have such parameters.
 
-For more information and examples, see [Async Return Types (Visual Basic)](async-return-types.md). For more information about how to catch exceptions in async methods, see [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).
+For more information and examples, see [Async Return Types (Visual Basic)](async-return-types.md). For more information about how to catch exceptions in async methods, see [Try...Catch...Finally Statement](../../../language-reference/statements/try-catch-finally-statement.md).
 
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
 
@@ -235,7 +235,7 @@ You can ignore the convention where an event, base class, or interface contract 
 |[How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|Demonstrates how to start several tasks at the same time.|[Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|
 |[Async Return Types (Visual Basic)](async-return-types.md)|Illustrates the types that async methods can return and explains when each type is appropriate.||
 |[Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md)|Traces in detail the flow of control through a succession of await expressions in an asynchronous program.|[Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|
-|[Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md)|Shows how to add the following functionality to your async solution:<br /><br /> - [Cancel an Async Task or a List of Tasks (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)<br />- [Cancel Async Tasks after a Period of Time (Visual Basic)](cancel-async-tasks-after-a-period-of-time.md)<br />- [Cancel Remaining Async Tasks after One Is Complete (Visual Basic)](cancel-remaining-async-tasks-after-one-is-complete.md)<br />- [Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)](start-multiple-async-tasks-and-process-them-as-they-complete.md)|[Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|
+|[Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md)|Shows how to add the following functionality to your async solution:<br /><br /> - [Cancel an Async Task or a List of Tasks (Visual Basic)](cancel-an-async-task-or-a-list-of-tasks.md)<br />- [Cancel Async Tasks after a Period of Time (Visual Basic)](cancel-async-tasks-after-a-period-of-time.md)<br />- [Cancel Remaining Async Tasks after One Is Complete (Visual Basic)](cancel-remaining-async-tasks-after-one-is-complete.md)<br />- [Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)](start-multiple-async-tasks-and-process-them-as-they-complete.md)|[Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|
 |[Handling Reentrancy in Async Apps (Visual Basic)](handling-reentrancy-in-async-apps.md)|Shows how to handle cases in which an active asynchronous operation is restarted while it's running.||
 |[WhenAny: Bridging between the .NET Framework and the Windows Runtime](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the Windows Runtime so that you can use <xref:System.Threading.Tasks.Task.WhenAny%2A> with a Windows Runtime method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask and WhenAny)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|
 |Async Cancellation: Bridging between the .NET Framework and the Windows Runtime|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the Windows Runtime so that you can use <xref:System.Threading.CancellationTokenSource> with a Windows Runtime method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask & Cancellation)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|
@@ -251,5 +251,5 @@ The following code is the MainWindow.xaml.vb file from the Windows Presentation 
 
 ## See also
 
-- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
-- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+- [Await Operator](../../../language-reference/operators/await-operator.md)
+- [Async](../../../language-reference/modifiers/async.md)

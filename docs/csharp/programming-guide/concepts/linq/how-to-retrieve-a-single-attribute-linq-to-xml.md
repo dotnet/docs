@@ -48,7 +48,7 @@ XElement cust = new XElement("PhoneNumbers",
         new XAttribute("type", "work"),  
         "555-555-6666")  
 );  
-IEnumerable<XElement> elList =   
+IEnumerable<XElement> elList =
     from el in cust.Descendants("Phone")  
     select el;  
 foreach (XElement el in elList)  

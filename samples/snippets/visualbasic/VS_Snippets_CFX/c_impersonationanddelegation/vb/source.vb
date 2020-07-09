@@ -4,51 +4,51 @@ Imports System.ServiceModel
 Imports System.Security.Principal
 Imports System.Security.Permissions
 
-<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution := True)>
+<assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace SnippetsPart1
-    
+
     Interface IHelloService
-        Function Hello(ByVal message As String) As String 
+        Function Hello(ByVal message As String) As String
     End Interface
-    
-    
+
+
     Friend Class Test
-        
-        Shared Sub Main() 
-        
+
+        Shared Sub Main()
+
         End Sub
     End Class
-    
+
     '<snippet1>
-    <ServiceContract()>  _
+    <ServiceContract()> _
     Public Interface IHelloContract
-        <OperationContract()>  _
-        Function Hello(ByVal message As String) As String 
+        <OperationContract()> _
+        Function Hello(ByVal message As String) As String
     End Interface
-    
-    
+
+
     Public Class HelloService
         Implements IHelloService
-        
-        <OperationBehavior(Impersonation := ImpersonationOption.Required)>  _
+
+        <OperationBehavior(Impersonation:=ImpersonationOption.Required)> _
         Public Function Hello(ByVal message As String) As String Implements IHelloService.Hello
             Return "hello"
-        End Function 
-    End Class 
+        End Function
+    End Class
     '</snippet1>
-End Namespace 
+End Namespace
 
 Namespace SnippetsPart2
-    
+
     Interface IHelloService
-        Function Hello(ByVal message As String) As String 
+        Function Hello(ByVal message As String) As String
     End Interface
-    
+
     '<snippet2>
     Public Class HelloService
         Implements IHelloService
-        
-        <OperationBehavior()>  _
+
+        <OperationBehavior()> _
         Public Function Hello(ByVal message As String) As String _
            Implements IHelloService.Hello
             Dim callerWindowsIdentity As WindowsIdentity = _
@@ -59,32 +59,32 @@ Namespace SnippetsPart2
             End If
             Dim cxt As WindowsImpersonationContext = callerWindowsIdentity.Impersonate()
             Using (cxt)
-                 ' Access a file as the caller.
+                ' Access a file as the caller.
             End Using
 
             Return "Hello"
-        
+
         End Function
-    End Class 
+    End Class
     '</snippet2>
-    
+
     Interface IEcho
-        Sub SayHello() 
+        Sub SayHello()
     End Interface
-    
-    
+
+
     Friend Class MoreSnippets
-        
-        Private Sub ServiceAuthorizationBehaviorStuff() 
+
+        Private Sub ServiceAuthorizationBehaviorStuff()
             Dim myUri As New Uri("hello")
             Dim addresses() As Uri = {myUri}
             Dim c As Type = GetType(HelloService)
             Dim serviceHost As New ServiceHost(c, addresses)
-            
+
             '<snippet3>
             ' Code to create a ServiceHost not shown.
-            Dim MyServiceAuthoriationBehavior As ServiceAuthorizationBehavior 
-            MyServiceAuthoriationBehavior= serviceHost.Description.Behaviors.Find _
+            Dim MyServiceAuthoriationBehavior As ServiceAuthorizationBehavior
+            MyServiceAuthoriationBehavior = serviceHost.Description.Behaviors.Find _
             (Of ServiceAuthorizationBehavior)()
             MyServiceAuthoriationBehavior.ImpersonateCallerForAllOperations = True
             '</snippet3>
@@ -94,16 +94,16 @@ Namespace SnippetsPart2
             cf.Credentials.Windows.AllowedImpersonationLevel = _
             System.Security.Principal.TokenImpersonationLevel.Impersonation
             '</snippet4>
-        
-        End Sub 
-        
-        
-        Private Sub BuildStuff() 
+
+        End Sub
+
+
+        Private Sub BuildStuff()
             '<snippet5>
             Dim cf As ChannelFactory(Of IEcho) = new ChannelFactory(Of IEcho)("EchoEndpoint")
             cf.Credentials.Windows.AllowedImpersonationLevel = _
                  System.Security.Principal.TokenImpersonationLevel.Impersonation
             '</snippet5>
-        End Sub 
-    End Class 
-End Namespace 
+        End Sub
+    End Class
+End Namespace

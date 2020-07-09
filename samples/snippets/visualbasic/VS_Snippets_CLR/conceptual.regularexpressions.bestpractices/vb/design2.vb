@@ -6,35 +6,35 @@ Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim sw As Stopwatch    
-      Dim addresses() As String = { "AAAAAAAAAAA@contoso.com", 
-                                 "AAAAAAAAAAaaaaaaaaaa!@contoso.com" }
-      ' The following regular expression should not actually be used to 
-      ' validate an email address.
-      Dim pattern As String = "^[0-9A-Z]([-.\w]*[0-9A-Z])*$"
-      Dim input As String 
-      
-      For Each address In addresses
-         Dim mailBox As String = address.Substring(0, address.IndexOf("@"))       
-         Dim index As Integer = 0
-         For ctr As Integer = mailBox.Length - 1 To 0 Step -1
-            index += 1
-            input = mailBox.Substring(ctr, index) 
-            sw = Stopwatch.StartNew()
-            Dim m As Match = Regex.Match(input, pattern, RegexOptions.IgnoreCase)
-            sw.Stop()
-            if m.Success Then
-               Console.WriteLine("{0,2}. Matched '{1,25}' in {2}", 
-                                 index, m.Value, sw.Elapsed)
-            Else                     
-               Console.WriteLine("{0,2}. Failed  '{1,25}' in {2}", 
-                                 index, input, sw.Elapsed)
-            End If                  
-         Next
-         Console.WriteLine()
-      Next
-   End Sub
+    Public Sub Main()
+        Dim sw As Stopwatch
+        Dim addresses() As String = {"AAAAAAAAAAA@contoso.com",
+                                   "AAAAAAAAAAaaaaaaaaaa!@contoso.com"}
+        ' The following regular expression should not actually be used to 
+        ' validate an email address.
+        Dim pattern As String = "^[0-9A-Z]([-.\w]*[0-9A-Z])*$"
+        Dim input As String
+
+        For Each address In addresses
+            Dim mailBox As String = address.Substring(0, address.IndexOf("@"))
+            Dim index As Integer = 0
+            For ctr As Integer = mailBox.Length - 1 To 0 Step -1
+                index += 1
+                input = mailBox.Substring(ctr, index)
+                sw = Stopwatch.StartNew()
+                Dim m As Match = Regex.Match(input, pattern, RegexOptions.IgnoreCase)
+                sw.Stop()
+                if m.Success Then
+                    Console.WriteLine("{0,2}. Matched '{1,25}' in {2}",
+                                      index, m.Value, sw.Elapsed)
+                Else
+                    Console.WriteLine("{0,2}. Failed  '{1,25}' in {2}",
+                                      index, input, sw.Elapsed)
+                End If
+            Next
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays output similar to the following:
 '     1. Matched '                        A' in 00:00:00.0007122

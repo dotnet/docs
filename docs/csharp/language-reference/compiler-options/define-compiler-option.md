@@ -59,11 +59,11 @@ The **-define** option defines `name` as a symbol in all source code files your 
 // or uncomment the next line  
 // #define xx  
 using System;  
-public class Test   
+public class Test
 {  
-    public static void Main()   
+    public static void Main()
     {  
-        #if (xx)   
+        #if (xx)
             Console.WriteLine("xx defined");  
         #else  
             Console.WriteLine("xx not defined");  

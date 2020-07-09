@@ -27,4 +27,4 @@ An expression evaluates to a type that cannot be boxed by the common language ru
   
 ## See also
 
-- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

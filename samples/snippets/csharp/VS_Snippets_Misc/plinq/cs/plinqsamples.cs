@@ -188,7 +188,7 @@
                 int[] source = Enumerable.Range(1, 10000000).ToArray();
                 var cts = new CancellationTokenSource();
 
-                // Start a new asynchronous task that will cancel the 
+                // Start a new asynchronous task that will cancel the
                 // operation from another thread. Typically you would call
                 // Cancel() in response to a button click or some other
                 // user interface event.
@@ -260,7 +260,7 @@
                 int[] source = Enumerable.Range(1, 10000000).ToArray();
                 var cts = new CancellationTokenSource();
 
-                // Start a new asynchronous task that will cancel the 
+                // Start a new asynchronous task that will cancel the
                 // operation from another thread. Typically you would call
                 // Cancel() in response to a button click or some other
                 // user interface event.
@@ -398,7 +398,7 @@
 
                 var nums = Enumerable.Range(1, 10000);
 
-                // Replace NotBuffered with AutoBuffered 
+                // Replace NotBuffered with AutoBuffered
                 // or FullyBuffered to compare behavior.
                 //<snippet26>
                 var scanLines = from n in nums.AsParallel()
@@ -454,10 +454,10 @@
                 // aggregation operator, along with Max, Min and Count.
                 double mean = source.AsParallel().Average();
 
-                // We use the overload that is unique to ParallelEnumerable. The 
+                // We use the overload that is unique to ParallelEnumerable. The
                 // third Func parameter combines the results from each thread.
                 double standardDev = source.AsParallel().Aggregate(
-                    // initialize subtotal. Use decimal point to tell 
+                    // initialize subtotal. Use decimal point to tell
                     // the compiler this is a type double. Can also use: 0d.
                     0.0,
 
@@ -480,14 +480,14 @@
 
     partial class PLINQProgram
     {
-        
+
         //} end namespace
     }
     //<snippet50>
     // This class contains a subset of data from the Northwind database
     // in the form of string arrays. The methods such as GetCustomers, GetOrders, and so on
     // transform the strings into object arrays that you can query in an object-oriented way.
-    // Many of the code examples in the PLINQ How-to topics are designed to be pasted into 
+    // Many of the code examples in the PLINQ How-to topics are designed to be pasted into
     // the PLINQDataSample class and invoked from the Main method.
     partial class PLINQDataSample
     {
@@ -720,7 +720,7 @@
             foreach (var v in reverseOrder)
                 Console.Write("{0} ", v.CustomerID);
 
-            // Get the element at a specified index. 
+            // Get the element at a specified index.
             var cust = customers.AsParallel()
                                 .AsOrdered()
                                 .ElementAt(48);
@@ -884,7 +884,7 @@ class FileIteration
                 parallelQuery.ForAll(e => Console.WriteLine(e.city));
             }
 
-            // IndexOutOfRangeException will not bubble up      
+            // IndexOutOfRangeException will not bubble up
             // because we handle it where it is thrown.
             catch (AggregateException e)
             {

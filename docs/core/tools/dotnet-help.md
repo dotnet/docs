@@ -13,7 +13,9 @@ ms.date: 02/14/2020
 
 ## Synopsis
 
-`dotnet help <COMMAND_NAME> [-h|--help]`
+```dotnetcli
+dotnet help <COMMAND_NAME> [-h|--help]
+```
 
 ## Description
 

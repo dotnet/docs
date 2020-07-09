@@ -1,5 +1,6 @@
 ---
 title: "Synchronous and Asynchronous Operations"
+description: Learn about implementing and calling asynchronous service operations. WCF services and clients can use asynchronous operations at two levels of the application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -53,15 +54,15 @@ This topic discusses implementing and calling asynchronous service operations.
  The task-based asynchronous pattern is the preferred way to implement asynchronous operations because it is the easiest and most straight forward. To use this method simply implement your service operation and specify a return type of Task\<T>, where T is the type returned by the logical operation. For example:  
   
 ```csharp  
-public class SampleService:ISampleService   
-{   
+public class SampleService:ISampleService
+{
    // ...  
-   public async Task<string> SampleMethodTaskAsync(string msg)   
-   {   
-      return Task<string>.Factory.StartNew(() =>   
-      {   
-         return msg;   
-      });   
+   public async Task<string> SampleMethodTaskAsync(string msg)
+   {
+      return Task<string>.Factory.StartNew(() =>
+      {
+         return msg;
+      });
    }  
    // ...  
 }  
@@ -171,7 +172,7 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async /tcv:Versio
  The event-based asynchronous model, however, is only available in .NET Framework 3.5. In addition, it is not supported even in .NET Framework 3.5 when a WCF client channel is created by using a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>. With WCF client channel objects, you must use <xref:System.IAsyncResult?displayProperty=nameWithType> objects to invoke your operations asynchronously. To use this approach, specify the **/async** command option with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md), as in the following example.  
   
 ```console  
-svcutil http://localhost:8000/servicemodelsamples/service/mex /async   
+svcutil http://localhost:8000/servicemodelsamples/service/mex /async
 ```  
   
  This generates a service contract in which each operation is modeled as a `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true` and a corresponding `<End>` method. For a complete example using a <xref:System.ServiceModel.ChannelFactory%601>, see [How to: Call Operations Asynchronously Using a Channel Factory](./feature-details/how-to-call-operations-asynchronously-using-a-channel-factory.md).  

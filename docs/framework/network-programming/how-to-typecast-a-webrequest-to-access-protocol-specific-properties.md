@@ -12,7 +12,7 @@ This example shows how to typecast a WebRequest so that you can access protocol 
 ## Example  
   
 ```csharp  
-HttpWebRequest httpreq =   
+HttpWebRequest httpreq =
    (HttpWebRequest) WebRequest.Create("http://www.contoso.com/");  
 ```  
   

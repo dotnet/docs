@@ -17,7 +17,7 @@ namespace SDKSample
 
         void TimingSnippets(Ellipse ellipse1)
         {
-            //set tooltip timing 
+            //set tooltip timing
             //<SnippetToolTipServiceTimingCode>
 
             //<SnippetSetInitialShowDelay>
@@ -37,10 +37,10 @@ namespace SDKSample
 
         void OnLoad(object sender, RoutedEventArgs e)
         {
-            
-            //<SnippetToolTipCode>            
-            //Create an ellipse that will have a 
-            //ToolTip control. 
+
+            //<SnippetToolTipCode>
+            //Create an ellipse that will have a
+            //ToolTip control.
             Ellipse ellipse1 = new Ellipse();
             ellipse1.Height = 25;
             ellipse1.Width = 50;
@@ -71,10 +71,10 @@ namespace SDKSample
 
             //set tooltip on ellipse
             ellipse1.ToolTip = tooltip;
-            //</SnippetToolTipCode>            
+            //</SnippetToolTipCode>
 
             stackPanel_1_1.Children.Add(ellipse1);
-   
+
             //set event handlers for the Opened and Closed events
             //<SnippetToolTipEventHandlers>
             tooltip.Opened +=
@@ -89,9 +89,9 @@ namespace SDKSample
             //</SnippetToolTipHasDropShadow>
 
             ///////////////////////////////////////////////////////////////////////
-            //<SnippetNoToolTipCode>            
-            //Create and Ellipse with the BulletDecorator as 
-            //the tooltip 
+            //<SnippetNoToolTipCode>
+            //Create and Ellipse with the BulletDecorator as
+            //the tooltip
             Ellipse ellipse2 = new Ellipse();
             ellipse2.Name = "ellipse2";
             this.RegisterName(ellipse2.Name, ellipse2);
@@ -163,7 +163,7 @@ namespace SDKSample
             stackPanel_1_2.Children.Add(ellipse2);
             //</SnippetSetToolTip>
 
-            //</SnippetNoToolTipCode>            
+            //</SnippetNoToolTipCode>
         }
 
         //<SnippetToolTipOpenAndCloseHandler>

@@ -13,7 +13,7 @@ public class Example
          Console.WriteLine("{0} --> {1}", value, interval.ToString("c"));
       else
          Console.WriteLine("Unable to parse '{0}'", value);
-      
+
       value = "16:32.05";
       if (TimeSpan.TryParseExact(value, @"mm\:ss\.ff", null, out interval))
          Console.WriteLine("{0} --> {1}", value, interval.ToString("c"));

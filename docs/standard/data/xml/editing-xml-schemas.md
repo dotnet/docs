@@ -16,7 +16,7 @@ The first step in editing a schema loaded into the SOM is to traverse the schema
 
 ## Editing an XML Schema
 
-In this section, two code examples are provided, both of which edit the customer schema created in the [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md) topic. The first code example adds a new `PhoneNumber` element to the `Customer` element and the second code example adds a new `Title` attribute to the `FirstName` element. The first sample also uses the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> collection as the means of traversing the customer schema while the second code example uses the pre-schema-compilation <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> collection.
+In this section, two code examples are provided, both of which edit the customer schema created in the [Building XML Schemas](building-xml-schemas.md) topic. The first code example adds a new `PhoneNumber` element to the `Customer` element and the second code example adds a new `Title` attribute to the `FirstName` element. The first sample also uses the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> collection as the means of traversing the customer schema while the second code example uses the pre-schema-compilation <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> collection.
 
 ### PhoneNumber Element Example
 
@@ -42,7 +42,7 @@ The following is the complete code example.
 [!code-csharp[XmlSchemaEditExample1#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample1/CS/XmlSchemaEditExample1.cs#1)]
 [!code-vb[XmlSchemaEditExample1#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaEditExample1/VB/XmlSchemaEditExample1.vb#1)]
 
-The following is the modified customer schema created in the [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md) topic.
+The following is the modified customer schema created in the [Building XML Schemas](building-xml-schemas.md) topic.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,8 +54,7 @@ The following is the modified customer schema created in the [Building XML Schem
         <xs:element name="LastName" type="tns:LastNameType" />
         <xs:element name="PhoneNumber">           <xs:simpleType>             <xs:restriction base="xs:string">               <xs:pattern value="\d{3}-\d{3}-\d(4)" />             </xs:restriction>           </xs:simpleType>         </xs:element>
       </xs:sequence>
-      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" /
->
+      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:simpleType name="LastNameType">
@@ -107,7 +106,7 @@ The following is the complete code example.
 [!code-csharp[XmlSchemaEditExample2#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaEditExample2/CS/XmlSchemaEditExample2.cs#1)]
 [!code-vb[XmlSchemaEditExample2#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaEditExample2/VB/XmlSchemaEditExample2.vb#1)]
 
-The following is the modified customer schema created in the [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md) topic.
+The following is the modified customer schema created in the [Building XML Schemas](building-xml-schemas.md) topic.
 
 ```xml
 <?xml version="1.0" encoding=" utf-8"?>
@@ -118,8 +117,7 @@ The following is the modified customer schema created in the [Building XML Schem
         <xs:element name="FirstName" type="tns:FirstNameComplexType" />
         <xs:element name="LastName" type="tns:LastNameType" />
       </xs:sequence>
-      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" /
->
+      <xs:attribute name="CustomerId" type="xs:positiveInteger" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:simpleType name="LastNameType">
@@ -133,10 +131,10 @@ The following is the modified customer schema created in the [Building XML Schem
 
 ## See also
 
-- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
-- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
-- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
-- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
-- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
+- [XML Schema Object Model Overview](xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](building-xml-schemas.md)
+- [Traversing XML Schemas](traversing-xml-schemas.md)
+- [Including or Importing XML Schemas](including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md)
+- [Post-Schema Compilation Infoset](post-schema-compilation-infoset.md)

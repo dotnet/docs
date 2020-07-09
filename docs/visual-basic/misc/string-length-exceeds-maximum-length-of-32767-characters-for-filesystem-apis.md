@@ -14,4 +14,4 @@ A string's length exceeds the maximum length of 32767 characters.
   
 ## See also
 
-- [Strings](../../visual-basic/programming-guide/language-features/strings/index.md)
+- [Strings](../programming-guide/language-features/strings/index.md)

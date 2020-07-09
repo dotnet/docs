@@ -1,5 +1,6 @@
 ---
 title: "Transport Security Overview"
+description: Learn about the major transport security mechanisms in the WCF system-provided bindings. These security mechanisms depend on the binding and transport used.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -21,7 +22,7 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 ### Interoperation with IIS  
  The <xref:System.ServiceModel.BasicHttpBinding> class is primarily used to interoperate with existing Web services, and many of those services are hosted by Internet Information Services (IIS). Consequently, the transport security for this binding is designed for seamless interoperation with IIS sites. This is done by setting the security mode to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport> and then setting the client credential type. The credential type values correspond to IIS directory security mechanisms. The following code shows the mode being set and the credential type set to Windows. You can use this configuration when both client and server are on the same Windows domain.  
   
- [!code-csharp[c_ProgrammingSecurity#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#10)] 
+ [!code-csharp[c_ProgrammingSecurity#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#10)]
  [!code-vb[c_ProgrammingSecurity#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#10)]  
   
  Or, in configuration:  
@@ -56,7 +57,7 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
  This enables the server to use NTLM for authentication if the Kerberos protocol fails. For more information about configuring IIS in IIS 6.0, see [Forcing NTLM Authentication](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc786486(v=ws.10)). For IIS 7.0, the Windows authentication includes NTLM authentication. For more information, see [Configuring Server Certificates in IIS 7](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732230(v=ws.10)).
   
 ## WsHttpBinding  
- The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an WCF application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the WCF application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ The <xref:System.ServiceModel.WSHttpBinding> class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS. To create an WCF application that uses SSL, use IIS to host the application. Alternatively, if you are creating a self-hosted application, use the HttpCfg.exe tool to bind an X.509 certificate to a specific port on a computer. The port number is specified as part of the WCF application as an endpoint address. When using transport mode, the endpoint address must include the HTTPS protocol or an exception will be thrown at run time. For more information, see [HTTP Transport Security](http-transport-security.md).  
   
  For client authentication, set the <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A> property of the <xref:System.ServiceModel.HttpTransportSecurity> class to one of the <xref:System.ServiceModel.HttpClientCredentialType> enumeration values. The enumeration values are identical to the client credential types for <xref:System.ServiceModel.BasicHttpBinding> and are designed to be hosted with IIS services.  
   
@@ -82,38 +83,38 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
 > [!NOTE]
 > If you are using Windows security, a certificate is not required.  
   
- The following code uses the thumbprint of the certificate, which uniquely identifies it. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ The following code uses the thumbprint of the certificate, which uniquely identifies it. For more information about certificates, see [Working with Certificates](working-with-certificates.md).  
   
  [!code-csharp[c_ProgrammingSecurity#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
  [!code-vb[c_ProgrammingSecurity#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
   
- Alternatively, specify the certificate in the client's configuration using a [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element in the behaviors section.  
+ Alternatively, specify the certificate in the client's configuration using a [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md) element in the behaviors section.  
   
 ```xml  
 <behaviors>  
   <behavior>  
    <clientCredentials>  
-     <clientCertificate findValue= "101010101010101010101010101010000000000"   
-      storeLocation="LocalMachine" storeName="My"   
-      X509FindType="FindByThumbPrint"/>  
+     <clientCertificate findValue= "101010101010101010101010101010000000000"
+      storeLocation="LocalMachine" storeName="My"
+      X509FindType="FindByThumbPrint">  
      </clientCertificate>  
    </clientCredentials>  
  </behavior>  
-</behaviors>    
+</behaviors>
 ```  
   
 ## NetNamedPipeBinding  
  The <xref:System.ServiceModel.NetNamedPipeBinding> class is designed for efficient intra-machine communication; that is, for processes running on the same computer, although named pipe channels can be created between two computers on the same network. This binding provides only transport-level security. When creating applications using this binding, the endpoint addresses must include "net.pipe" as the protocol of the endpoint address.  
   
 ## WSFederationHttpBinding  
- When using transport security, this binding uses SSL over HTTP, known as HTTPS with an issued token (<xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential>). For more information about federation applications, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
+ When using transport security, this binding uses SSL over HTTP, known as HTTPS with an issued token (<xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential>). For more information about federation applications, see [Federation and Issued Tokens](federation-and-issued-tokens.md).  
   
 ## NetPeerTcpBinding  
- The <xref:System.ServiceModel.NetPeerTcpBinding> class is a secure transport that is designed for efficient communication using the peer-to-peer networking feature. As indicated by the name of the class and binding, TCP is the protocol. When the security mode is set to Transport, the binding implements TLS over TCP. For more information about the peer-to-peer feature, see [Peer-to-Peer Networking](../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  
+ The <xref:System.ServiceModel.NetPeerTcpBinding> class is a secure transport that is designed for efficient communication using the peer-to-peer networking feature. As indicated by the name of the class and binding, TCP is the protocol. When the security mode is set to Transport, the binding implements TLS over TCP. For more information about the peer-to-peer feature, see [Peer-to-Peer Networking](peer-to-peer-networking.md).  
   
 ## MsmqIntegrationBinding and NetMsmqBinding  
- For a complete discussion of transport security with Message Queuing (previously called MSMQ), see [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md).  
+ For a complete discussion of transport security with Message Queuing (previously called MSMQ), see [Securing Messages Using Transport Security](securing-messages-using-transport-security.md).  
   
 ## See also
 
-- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+- [Programming WCF Security](programming-wcf-security.md)

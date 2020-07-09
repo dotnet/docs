@@ -9,7 +9,7 @@ ms.assetid: 30330ec4-9df2-4838-a535-6c406d0ed4df
 You can declare generic type parameters in interfaces as covariant or contravariant. *Covariance* allows interface methods to have more derived return types than that defined by the generic type parameters. *Contravariance* allows interface methods to have argument types that are less derived than that specified by the generic parameters. A generic interface that has covariant or contravariant generic type parameters is called *variant*.
 
 > [!NOTE]
-> .NET Framework 4 introduced variance support for several existing generic interfaces. For the list of the variant interfaces in the .NET Framework, see [Variance in Generic Interfaces (C#)](./variance-in-generic-interfaces.md).
+> .NET Framework 4 introduced variance support for several existing generic interfaces. For the list of the variant interfaces in .NET, see [Variance in Generic Interfaces (C#)](./variance-in-generic-interfaces.md).
 
 ## Declaring Variant Generic Interfaces
 
@@ -139,9 +139,9 @@ interface ICovariant<out T> { }
 
 ### Avoiding Ambiguity
 
-When you implement variant generic interfaces, variance can sometimes lead to ambiguity. This should be avoided.
+When you implement variant generic interfaces, variance can sometimes lead to ambiguity. Such ambiguity should be avoided.
 
-For example, if you explicitly implement the same variant generic interface with different generic type parameters in one class, it can create ambiguity. The compiler does not produce an error in this case, but it is not specified which interface implementation will be chosen at runtime. This could lead to subtle bugs in your code. Consider the following code example.
+For example, if you explicitly implement the same variant generic interface with different generic type parameters in one class, it can create ambiguity. The compiler does not produce an error in this case, but it's not specified which interface implementation will be chosen at run time. This ambiguity could lead to subtle bugs in your code. Consider the following code example.
 
 ```csharp
 // Simple class hierarchy.

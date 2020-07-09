@@ -6,7 +6,7 @@ ms.date: 09/09/2019
 
 # Protobuf messages
 
-This section covers how to declare Protocol Buffer (Protobuf) messages in `.proto` files. It explains the fundamental concepts of field numbers and types, and it looks at the C# code that the `protoc` compiler generates. 
+This section covers how to declare Protocol Buffer (Protobuf) messages in `.proto` files. It explains the fundamental concepts of field numbers and types, and it looks at the C# code that the `protoc` compiler generates.
 
 The rest of the chapter will look in more detail at how different types of data are represented in Protobuf.
 
@@ -35,7 +35,7 @@ namespace TraderSys
 To implement the equivalent class in Protobuf, you must declare it in the `.proto` file. The `protoc` compiler will then generate the .NET class as part of the build process.
 
 ```protobuf
-syntax "proto3";
+syntax = "proto3";
 
 option csharp_namespace = "TraderSys";
 

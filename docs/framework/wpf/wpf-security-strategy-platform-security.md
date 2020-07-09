@@ -60,7 +60,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
   
 #### Code Integrity Checks  
  Windows Vista incorporates deeper code integrity checks to help prevent malicious code from being injected into system files or into the kernel at load/run time. This goes beyond system file protection.  
-   
+
 ### Limited Rights Process for Browser-Hosted Applications  
  Browser-hosted WPF applications execute within the Internet zone sandbox. WPF integration with Microsoft Internet Explorer extends this protection with additional support.  
   
@@ -70,7 +70,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
   
 ## Common Language Runtime Security  
  The common language runtime (CLR) offers a number of key security benefits that include validation and verification, Code Access Security (CAS), and the Security Critical Methodology.  
-    
+
 ### Validation and Verification  
  To provide assembly isolation and integrity, the CLR uses a process of validation. CLR validation ensures that assemblies are isolated by validating their Portable Executable (PE) file format for addresses that point outside the assembly. CLR validation also validates the integrity of the metadata that is embedded within an assembly.  
   

@@ -58,9 +58,9 @@ namespace BarrierSimple
 
         // Use Knuth-Fisher-Yates shuffle to randomly reorder each array.
         // For simplicity, we require that both wordArrays be solved in the same phase.
-        // Success of right or left side only is not stored and does not count.       
+        // Success of right or left side only is not stored and does not count.
         static void Solve(string[] wordArray)
-        {            
+        {
             while(success == false)
             {
                 Random random = new Random();
@@ -86,21 +86,21 @@ class BarrierDemo
 {
 
         static byte[][] data = new byte[10][];
-        static byte[][] results = new byte[10][]; 
-      
+        static byte[][] results = new byte[10][];
+
         static bool success = false;
         static bool someCondition = false;
     //<snippet02>
 
-        // Create the Barrier object, and supply a post-phase delegate 
+        // Create the Barrier object, and supply a post-phase delegate
         // to be invoked at the end of each phase.
-        Barrier barrier = new Barrier(2, (bar) => 
+        Barrier barrier = new Barrier(2, (bar) =>
             {
-                // Examine results from all threads, determine 
-                // whether to continue, create inputs for next phase, etc. 
+                // Examine results from all threads, determine
+                // whether to continue, create inputs for next phase, etc.
                 if (someCondition)
                     success = true;
-            });       
+            });
 
         // Define the work that each thread will perform. (Threads do not
         // have to all execute the same method.)

@@ -1,5 +1,6 @@
 ---
 title: "Writing Custom Attributes"
+description: Design your own custom attributes in .NET. Custom attributes are essentially classes derived directly or indirectly from System.Attribute.
 ms.date: "07/17/2018"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -144,4 +145,4 @@ To design your own custom attributes, you do not need to master many new concept
 
 - <xref:System.Attribute?displayProperty=nameWithType>
 - <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>
-- [Attributes](../../../docs/standard/attributes/index.md)
+- [Attributes](index.md)

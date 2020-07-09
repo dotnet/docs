@@ -24,10 +24,10 @@ Specifies that a class cannot be used as a base class.
   
  The `NotInheritable` modifier can be used in this context:  
   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Class Statement](../statements/class-statement.md)  
   
 ## See also
 
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
-- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Inherits Statement](../statements/inherits-statement.md)
+- [MustInherit](mustinherit.md)
+- [Keywords](../keywords/index.md)

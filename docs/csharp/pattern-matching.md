@@ -20,7 +20,7 @@ a value and extracting that information.
 
 In this article, we'll look at the new syntax to show you how it enables
 readable, concise code. Pattern matching enables idioms where data and
-the code are separated, unlike object-oriented designs where data 
+the code are separated, unlike object-oriented designs where data
 and the methods that manipulate them are tightly coupled.
 
 To illustrate these new idioms, let's work with structures that represent
@@ -82,11 +82,11 @@ variable in another location, your code generates compiler errors.
 
 Let's examine both of those rules in detail, beginning with scope. The variable
 `c` is in scope only in the `else` branch of the first `if` statement. The variable
-`s` is in scope in the method `ComputeAreaModernIs`. That's because each 
+`s` is in scope in the method `ComputeAreaModernIs`. That's because each
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
 itself doesn't. That means variables declared in the `if` statement are in the
 same scope as the `if` statement (the method in this case.) This behavior isn't
-specific to pattern matching, but is the defined behavior for variable scopes 
+specific to pattern matching, but is the defined behavior for variable scopes
 and `if` and `else` statements.
 
 The variables `c` and `s` are assigned when the respective `if` statements are true
@@ -111,7 +111,7 @@ of conditions you're testing grows, you'll find that using the `is` pattern
 matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
 to testing if the input matches a single type. In this case, you'll find that the `switch` pattern
-matching expressions becomes a better choice. 
+matching expressions becomes a better choice.
 
 The traditional `switch`
 statement was a pattern expression: it supported the constant pattern.
@@ -144,8 +144,8 @@ are no longer limited to constant values. Removing that limitation means
 that reordering `switch` sections may change a program's behavior.
 
 When limited to constant values, no more than one `case`
-label could match the value of the `switch` expression. Combine that with the 
-rule that every `switch` section must not fall through to the next section, and 
+label could match the value of the `switch` expression. Combine that with the
+rule that every `switch` section must not fall through to the next section, and
 it followed that the
 `switch` sections could be rearranged in any order without affecting behavior.
 Now, with more generalized `switch` expressions, the order of each section
@@ -190,7 +190,7 @@ a rectangle and a triangle:
 [!code-csharp[AddRectangleAndTriangle](../../samples/snippets/csharp/PatternMatching/GeometricUtilities.cs#09_AddRectangleAndTriangle "Add rectangle and triangle")]
 
  This set of changes adds `case` labels for the degenerate case, and labels
- and blocks for each of the new shapes. 
+ and blocks for each of the new shapes.
 
 Finally, you can add a `null` case to ensure the argument isn't `null`:
 
@@ -198,7 +198,7 @@ Finally, you can add a `null` case to ensure the argument isn't `null`:
 
 The special behavior for the `null` pattern is interesting because the constant
 `null` in the pattern doesn't have a type but can be converted to any reference
-type or nullable type. Rather than convert a `null` to any type, the language
+type or nullable value type. Rather than convert a `null` to any type, the language
 defines that a `null` value won't match any type pattern, regardless of the
 compile-time type of the variable. This behavior makes the new `switch` based
 type pattern consistent with the `is` statement: `is` statements always return `false` when

@@ -1,10 +1,10 @@
 ﻿//---------------------------------------------------------------------------
-// 
+//
 // File: HtmlXamlConverter.cs
 //
 // Copyright (C) Microsoft Corporation.  All rights reserved.
 //
-// Description: Prototype for Html - Xaml conversion 
+// Description: Prototype for Html - Xaml conversion
 //
 //---------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ namespace SdkSample
 
     using System.Windows;
     using System.Windows.Documents;
-  
+
     internal static class HtmlCssParser
     {
         // .................................................................
@@ -315,7 +315,7 @@ namespace SdkSample
                 "ghostwhite", "gold", "goldenrod", "gray", "green", "greenyellow", "honeydew", "hotpink", "indianred",
                 "indigo", "ivory", "khaki", "lavender", "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral",
                 "lightcyan", "lightgoldenrodyellow", "lightgreen", "lightgrey", "lightpink", "lightsalmon", "lightseagreen",
-                "lightskyblue", "lightslategray", "lightsteelblue", "lightyellow", "lime", "limegreen", "linen", "magenta", 
+                "lightskyblue", "lightslategray", "lightsteelblue", "lightyellow", "lime", "limegreen", "linen", "magenta",
                 "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple", "mediumseagreen", "mediumslateblue",
                 "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue", "mintcream", "mistyrose", "moccasin",
                 "navajowhite", "navy", "oldlace", "olive", "olivedrab", "orange", "orangered", "orchid", "palegoldenrod",
@@ -416,7 +416,7 @@ namespace SdkSample
         // CSS has five font properties: font-family, font-style, font-variant, font-weight, font-size.
         // An aggregated "font" property lets you specify in one action all the five in combination
         // with additional line-height property.
-        // 
+        //
         // font-family: [<family-name>,]* [<family-name> | <generic-family>]
         //    generic-family: serif | sans-serif | monospace | cursive | fantasy
         //       The list of families sets priorities to choose fonts;
@@ -725,7 +725,7 @@ namespace SdkSample
         // Generic method for parsing any of four-values properties, such as margin, padding, border-width, border-style, border-color
         private static bool ParseCssRectangleProperty(string styleValue, ref int nextIndex, Hashtable localProperties, string propertyName)
         {
-            // CSS Spec: 
+            // CSS Spec:
             // If only one value is set, then the value applies to all four sides;
             // If two or three values are set, then missinng value(s) are taken fromm the opposite side(s).
             // The order they are applied is: top/right/bottom/left

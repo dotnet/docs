@@ -6,8 +6,8 @@ public class Example
 {
    public static void Main()
    {
-      string input = "This is the first sentence. Is it the beginning " + 
-                     "of a literary masterpiece? I think not. Instead, " + 
+      string input = "This is the first sentence. Is it the beginning " +
+                     "of a literary masterpiece? I think not. Instead, " +
                      "it is a nonsensical paragraph.";
       string pattern = @"\b\(?((?>\w+),?\s?)+[\.!?]\)?";
       Console.WriteLine("With implicit captures:");
@@ -113,7 +113,7 @@ public class Example
 //          Capture 3: a
 //          Capture 4: nonsensical
 //          Capture 5: paragraph
-//    
+//
 //    With explicit captures only:
 //    The match: This is the first sentence.
 //       Group 0: This is the first sentence.

@@ -13,7 +13,7 @@ This topic presents an example that opens an Office Open XML document, and retri
   
  The example uses an extension method named `StringConcatenate`, which is also supplied in the example.  
   
- For a detailed tutorial that explains how this example works, see [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
+ For a detailed tutorial that explains how this example works, see [Pure Functional Transformations of XML (Visual Basic)](pure-functional-transformations-of-xml.md).  
   
  This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.  
   
@@ -146,7 +146,7 @@ Module Module1
 End Module  
 ```  
   
- When run with the sample Open XML document described in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), this example produces the following output:  
+ When run with the sample Open XML document described in [Creating the Source Office Open XML Document (Visual Basic)](creating-the-source-office-open-xml-document.md), this example produces the following output:  
   
 ```console  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
@@ -168,4 +168,4 @@ StyleName:Code >Hello World<
   
 ## See also
 
-- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

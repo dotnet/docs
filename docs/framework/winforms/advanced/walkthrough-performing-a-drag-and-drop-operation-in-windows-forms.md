@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Perform a drag-and-drop operation"
+description: Learn how to perform a drag-and-drop operation in Windows Forms by handling a series of events, most notably the DragEnter, DragLeave, and DragDrop events.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -33,10 +34,10 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     ```csharp  
-    private void button1_MouseDown(object sender,   
+    private void button1_MouseDown(object sender,
     System.Windows.Forms.MouseEventArgs e)  
     {  
-       button1.DoDragDrop(button1.Text, DragDropEffects.Copy |   
+       button1.DoDragDrop(button1.Text, DragDropEffects.Copy |
           DragDropEffects.Move);  
     }  
     ```  
@@ -66,10 +67,10 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     ```csharp  
-    private void textBox1_DragEnter(object sender,   
+    private void textBox1_DragEnter(object sender,
     System.Windows.Forms.DragEventArgs e)  
     {  
-       if (e.Data.GetDataPresent(DataFormats.Text))   
+       if (e.Data.GetDataPresent(DataFormats.Text))
           e.Effect = DragDropEffects.Copy;  
        else  
           e.Effect = DragDropEffects.None;  
@@ -90,7 +91,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     ```csharp  
-    private void textBox1_DragDrop(object sender,   
+    private void textBox1_DragDrop(object sender,
     System.Windows.Forms.DragEventArgs e)  
     {  
        textBox1.Text = e.Data.GetData(DataFormats.Text).ToString();  

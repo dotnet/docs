@@ -39,7 +39,7 @@ namespace Samples
      {
         return n1 / n2;
      }
-  } 
+  }
 
     //</snippet2>
 

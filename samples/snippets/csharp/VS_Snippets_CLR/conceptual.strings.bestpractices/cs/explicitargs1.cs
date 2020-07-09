@@ -7,12 +7,12 @@ public class Example
       CompareWithDefaults();
       CompareExplicit();
    }
-   
+
    private static void CompareWithDefaults()
    {
       Uri url = new Uri("http://msdn.microsoft.com");
-      // <Snippet1> 
-      string protocol = GetProtocol(url);       
+      // <Snippet1>
+      string protocol = GetProtocol(url);
       if (String.Equals(protocol, "http")) {
          // ...Code to handle HTTP protocol.
       }
@@ -25,8 +25,8 @@ public class Example
    private static void CompareExplicit()
    {
       Uri url = new Uri("http://msdn.microsoft.com");
-      // <Snippet2> 
-      string protocol = GetProtocol(url);       
+      // <Snippet2>
+      string protocol = GetProtocol(url);
       if (String.Equals(protocol, "http", StringComparison.OrdinalIgnoreCase)) {
          // ...Code to handle HTTP protocol.
       }

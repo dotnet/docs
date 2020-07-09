@@ -34,7 +34,7 @@ Windows services (formerly known as Windows NT services) provide a process model
 
 - <xref:System.ServiceProcess>
 - [Walkthrough: Creating a Windows Service Application in the Component Designer](https://go.microsoft.com/fwlink/?LinkId=94875)
-- [How to: Host a WCF Service in a Managed Windows Service](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)
-- [Windows Service Host](../../../../docs/framework/wcf/samples/windows-service-host.md)
+- [How to: Host a WCF Service in a Managed Windows Service](how-to-host-a-wcf-service-in-a-managed-windows-service.md)
+- [Windows Service Host](../samples/windows-service-host.md)
 - [Service Application Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=94876)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

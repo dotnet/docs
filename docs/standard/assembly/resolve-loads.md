@@ -1,5 +1,6 @@
 ---
 title: "Resolve assembly loads"
+description: This article describes the .NET AppDomain.AssemblyResolve event. Use this event for applications that require control over assembly loading.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], resolving loads"

@@ -18,7 +18,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 {
 
     // Create the demonstration.
-    public class LocalAnimationExample : Page 
+    public class LocalAnimationExample : Page
     {
 
         public LocalAnimationExample()
@@ -26,7 +26,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 
             WindowTitle = "Local Animation Example";
             StackPanel myStackPanel = new StackPanel();
-            myStackPanel.Margin = new Thickness(20);                     
+            myStackPanel.Margin = new Thickness(20);
 
             // Create and set the Button.
             Button aButton = new Button();
@@ -39,13 +39,13 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             myDoubleAnimation.Duration =  new Duration(TimeSpan.FromSeconds(5));
             myDoubleAnimation.AutoReverse = true;
             myDoubleAnimation.RepeatBehavior = RepeatBehavior.Forever;
-            
+
             // Apply the animation to the button's Width property.
-            aButton.BeginAnimation(Button.WidthProperty, myDoubleAnimation);       
+            aButton.BeginAnimation(Button.WidthProperty, myDoubleAnimation);
 
             // Create and animate a Brush to set the button's Background.
             SolidColorBrush myBrush = new SolidColorBrush();
-            myBrush.Color = Colors.Blue;            
+            myBrush.Color = Colors.Blue;
 
             ColorAnimation myColorAnimation = new ColorAnimation();
             myColorAnimation.From = Colors.Blue;
@@ -55,7 +55,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             myColorAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Apply the animation to the brush's Color property.
-            myBrush.BeginAnimation(SolidColorBrush.ColorProperty, myColorAnimation);           
+            myBrush.BeginAnimation(SolidColorBrush.ColorProperty, myColorAnimation);
             aButton.Background = myBrush;
 
             // Add the Button to the panel.

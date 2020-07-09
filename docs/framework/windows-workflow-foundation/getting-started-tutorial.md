@@ -1,5 +1,6 @@
 ---
 title: "Getting Started Tutorial2"
+description: This article begins a sequence of tutorials that introduce you to programming Windows Workflow Foundation applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WF [WF], getting started"

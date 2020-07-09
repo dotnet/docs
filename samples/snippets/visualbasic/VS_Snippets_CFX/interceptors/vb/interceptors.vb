@@ -4,10 +4,10 @@ Imports System.ServiceModel.Dispatcher
 Imports System.Text
 
 Namespace Microsoft.WCF.Documentation
-  Public Class Inspector
-	  Implements IDispatchMessageInspector, IParameterInspector, IClientMessageInspector
-	' <snippet7>
-	#Region "IDispatchMessageInspector Members"
+    Public Class Inspector
+        Implements IDispatchMessageInspector, IParameterInspector, IClientMessageInspector
+        ' <snippet7>
+#Region "IDispatchMessageInspector Members"
         Public Function AfterReceiveRequest(ByRef request As System.ServiceModel.Channels.Message, _
                            ByVal channel As IClientChannel, ByVal instanceContext As InstanceContext) _
                            As Object Implements IDispatchMessageInspector.AfterReceiveRequest
@@ -19,11 +19,11 @@ Namespace Microsoft.WCF.Documentation
         Implements IDispatchMessageInspector.BeforeSendReply
             Console.WriteLine("IDispatchMessageInspector.BeforeSendReply called.")
         End Sub
-	#End Region
-	' </snippet7>
+#End Region
+        ' </snippet7>
 
-	' <snippet4>
-	#Region "IParameterInspector Members"
+        ' <snippet4>
+#Region "IParameterInspector Members"
         Public Sub AfterCall(ByVal operationName As String, ByVal outputs() As Object, ByVal returnValue As Object, _
                              ByVal correlationState As Object) Implements IParameterInspector.AfterCall
             Console.WriteLine("IParameterInspector.AfterCall called for {0} with return value {1}.", _
@@ -35,12 +35,12 @@ Namespace Microsoft.WCF.Documentation
             Console.WriteLine("IParameterInspector.BeforeCall called for {0}.", operationName)
             Return Nothing
         End Function
-	' </snippet4>
+        ' </snippet4>
 
-	#End Region
+#End Region
 
-	'<snippet1>
-	#Region "IClientMessageInspector Members"
+        '<snippet1>
+#Region "IClientMessageInspector Members"
         Public Sub AfterReceiveReply(ByRef reply As System.ServiceModel.Channels.Message, _
                            ByVal correlationState As Object) Implements IClientMessageInspector.AfterReceiveReply
             Console.WriteLine("IClientMessageInspector.AfterReceiveReply called.")
@@ -52,7 +52,7 @@ Namespace Microsoft.WCF.Documentation
             Console.WriteLine("IClientMessageInspector.BeforeSendRequest called.")
             Return Nothing
         End Function
-	'</snippet1>
-	#End Region
-  End Class
+        '</snippet1>
+#End Region
+    End Class
 End Namespace

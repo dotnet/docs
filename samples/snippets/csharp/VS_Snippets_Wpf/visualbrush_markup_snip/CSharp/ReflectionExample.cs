@@ -182,8 +182,8 @@ namespace SDKSample
             this.Content = myStackPanel;
         }
         /*
-    <Rectangle 
-      Height="{Binding Path=ActualHeight, ElementName=ReflectedVisual}" 
+    <Rectangle
+      Height="{Binding Path=ActualHeight, ElementName=ReflectedVisual}"
       Width="{Binding Path=ActualWidth, ElementName=ReflectedVisual}">
 
       <Rectangle.OpacityMask>
@@ -197,7 +197,7 @@ namespace SDKSample
       <Rectangle.BitmapEffect>
         <BlurBitmapEffect Radius="1.5" />
       </Rectangle.BitmapEffect>
-      
+
     </Rectangle>
   </StackPanel>
 </Page>

@@ -38,4 +38,4 @@ This page discusses the security implications of storing data in the registry.
 ## See also
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
-- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)

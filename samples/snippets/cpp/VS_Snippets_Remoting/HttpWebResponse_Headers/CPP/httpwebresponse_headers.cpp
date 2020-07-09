@@ -49,7 +49,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter the url as command line parameter:" );
       Console::WriteLine( "Example:" );
-      Console::WriteLine( "HttpWebResponse_Headers http://www.microsoft.com/net/" );
+      Console::WriteLine( "HttpWebResponse_Headers http://dotnet.microsoft.com/" );
    }
    else
    {

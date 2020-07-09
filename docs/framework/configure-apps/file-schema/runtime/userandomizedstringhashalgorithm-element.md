@@ -19,7 +19,7 @@ Determines whether the common language runtime calculates hash codes for strings
 ## Syntax  
   
 ```xml  
-<UseRandomizedStringHashAlgorithm   
+<UseRandomizedStringHashAlgorithm
    enabled=0|1 />  
 ```  
   

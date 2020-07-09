@@ -19,7 +19,7 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
   
  The data itself can consist of anything that can be represented as a base <xref:System.Object>.  The corresponding data format is a string or <xref:System.Type> that provides a hint about what format the data is in.  Data objects support hosting multiple data/data format pairs; this enables a single data object to provide data in multiple formats.  
   
-<a name="Data_and_Data_Objects"></a>   
+<a name="Data_and_Data_Objects"></a>
 ## Data Objects  
  All data objects must implement the <xref:System.Windows.IDataObject> interface, which provides the following standard set of methods that enable and facilitate data transfer.  
   
@@ -36,7 +36,7 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
   
  Data objects commonly include a facility for automatically converting data stored in one format to a different format while extracting data; this facility is referred to as auto-convert. When querying for the data formats available in a data object, auto-convertible data formats can be filtered from native data formats by calling the <xref:System.Windows.DataObject.GetFormats%28System.Boolean%29> or <xref:System.Windows.DataObject.GetDataPresent%28System.String%2CSystem.Boolean%29> method and specifying the `autoConvert` parameter as `false`.  When adding data to a data object with the <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> method, auto-conversion of data can be prohibited by setting the `autoConvert` parameter to `false`.  
   
-<a name="Working_with_Data_Objects"></a>   
+<a name="Working_with_Data_Objects"></a>
 ## Working with Data Objects  
  This section describes common techniques for creating and working with data objects.  
   

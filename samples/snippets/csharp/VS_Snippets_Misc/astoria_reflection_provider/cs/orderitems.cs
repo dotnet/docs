@@ -12,7 +12,7 @@
 // Generation date: 7/27/2009 11:32:34 AM
 namespace CustomDataService
 {
-    
+
     /// <summary>
     /// There are no comments for OrderItemData in the schema.
     /// </summary>
@@ -21,7 +21,7 @@ namespace CustomDataService
         /// <summary>
         /// Initialize a new OrderItemData object.
         /// </summary>
-        public OrderItemData(global::System.Uri serviceRoot) : 
+        public OrderItemData(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.OnContextCreated();

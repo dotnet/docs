@@ -1,5 +1,6 @@
 ---
 title: Set the Background of a Panel
+description: Learn how to set the background color and background image of a Windows Forms panel using the Designer.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -34,7 +35,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
 2. Set the panel's <xref:System.Windows.Forms.Control.BackgroundImage%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image?displayProperty=nameWithType> class.  
   
     ```vb  
-    ' You should replace the bolded image   
+    ' You should replace the bolded image
     ' in the sample below with an image of your own choosing.  
     Panel1.BackgroundImage = Image.FromFile _  
         (System.Environment.GetFolderPath _  
@@ -43,7 +44,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
     ```  
   
     ```csharp  
-    // You should replace the bolded image   
+    // You should replace the bolded image
     // in the sample below with an image of your own choosing.  
     // Note the escape character used (@) when specifying the path.  
     panel1.BackgroundImage = Image.FromFile  
@@ -53,7 +54,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
     ```  
   
     ```cpp  
-    // You should replace the bolded image   
+    // You should replace the bolded image
     // in the sample below with an image of your own choosing.  
     panel1->BackgroundImage = Image::FromFile(String::Concat(  
        System::Environment::GetFolderPath  

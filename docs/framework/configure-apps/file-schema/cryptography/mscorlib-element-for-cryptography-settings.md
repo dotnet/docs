@@ -18,7 +18,7 @@ Contains the [\<cryptographySettings> element](cryptographysettings-element.md).
 ## Syntax  
   
 ```xml  
-      <mscorlib>   
+      <mscorlib>
 </mscorlib>  
 ```  
   

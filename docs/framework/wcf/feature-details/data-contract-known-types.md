@@ -1,5 +1,6 @@
 ---
 title: "Data Contract Known Types"
+description: Learn how the data contract model uses the KnownTypeAttribute class to specify the types to include during deserialization in WCF.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,11 +12,11 @@ helpviewer_keywords:
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
 ---
 # Data Contract Known Types
-The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../../../../docs/framework/wcf/samples/known-types.md) example.  
+The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to specify, in advance, the types that should be included for consideration during deserialization. For a working example, see the [Known Types](../samples/known-types.md) example.  
   
  Normally, when passing parameters and return values between a client and a service, both endpoints share all of the data contracts of the data to be transmitted. However, this is not the case in the following circumstances:  
   
-- The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
+- The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
   
 - The declared type for the information to be transmitted is an interface, as opposed to a class, structure, or enumeration. Therefore, it cannot be known in advance which type that implements the interface is actually sent and therefore, the receiving endpoint cannot determine in advance the data contract for the transmitted data.  
   
@@ -168,6 +169,6 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
 - <xref:System.Object>
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>
-- [Known Types](../../../../docs/framework/wcf/samples/known-types.md)
-- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
-- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
+- [Known Types](../samples/known-types.md)
+- [Data Contract Equivalence](data-contract-equivalence.md)
+- [Designing Service Contracts](../designing-service-contracts.md)

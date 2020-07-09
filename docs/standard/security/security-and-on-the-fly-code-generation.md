@@ -1,5 +1,6 @@
 ---
 title: "Security and On-the-Fly Code Generation"
+description: Generating code on behalf of lesser-trust code that runs at a higher trust is a security concern, especially when a caller can influence code generation.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -20,4 +21,4 @@ Some libraries operate by generating code and running it to perform some operati
   
 ## See also
 
-- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](secure-coding-guidelines.md)

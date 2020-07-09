@@ -46,18 +46,18 @@ The following instructions provide the steps to create the test solution. See [C
 * Replace the code in *PrimeService.cs* with the following code:
   
   ```csharp
-    using System;
+  using System;
 
-    namespace Prime.Services
-    {
-        public class PrimeService
-        {
-            public bool IsPrime(int candidate)
-            {
-                throw new NotImplementedException("Not implemented.");
-            }
-        }
-    }
+  namespace Prime.Services
+  {
+      public class PrimeService
+      {
+          public bool IsPrime(int candidate)
+          {
+              throw new NotImplementedException("Not implemented.");
+          }
+      }
+  }
   ```
 
 * The preceding code:
@@ -79,7 +79,7 @@ The following instructions provide the steps to create the test solution. See [C
   ```
 
 * The preceding command:
-  * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.github.io/) as the test library.
+  * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.net/) as the test library.
   * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
     * "Microsoft.NET.Test.Sdk"
     * "xunit"
@@ -184,7 +184,6 @@ Assert.False(result, "1 should not be prime");
 Copying test code when only a parameter changes results in code duplication and test bloat. The following xUnit attributes enable writing a suite of similar tests:
 
 - `[Theory]` represents a suite of tests that execute the same code but have different input arguments.
-
 - `[InlineData]` attribute specifies values for those inputs.
 
 Rather than creating new tests, apply the preceding xUnit attributes to create a single theory. Replace the following code:
@@ -224,6 +223,6 @@ The completed `IsPrime` method is not an efficient algorithm for testing primali
 
 ### Additional resources
 
-- [xUnit.net official site](https://xunit.github.io)
+- [xUnit.net official site](https://xunit.net)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)
 - [`dotnet add reference`](../tools/dotnet-add-reference.md)

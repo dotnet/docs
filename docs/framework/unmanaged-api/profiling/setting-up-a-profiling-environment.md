@@ -37,7 +37,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 ## Environment Variable Scope  
  How you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables will determine their scope of influence. You can set these variables in one of the following ways:  
   
-- If you set the variables in an [ICorDebug::CreateProcess](../../../../docs/framework/unmanaged-api/debugging/icordebug-createprocess-method.md) call, they will apply only to the application that you are running at the time. (They will also apply to other applications started by that application that inherit the environment.)  
+- If you set the variables in an [ICorDebug::CreateProcess](../debugging/icordebug-createprocess-method.md) call, they will apply only to the application that you are running at the time. (They will also apply to other applications started by that application that inherit the environment.)  
   
 - If you set the variables in a Command Prompt window, they will apply to all applications that are started from that window.  
   
@@ -77,7 +77,7 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  Certain profiler events are immutable. This means that as soon as these events are set in the `ICorProfilerCallback::Initialize` callback, they cannot be turned off and new events cannot be turned on. Attempts to change an immutable event will result in `ICorProfilerInfo::SetEventMask` returning a failed HRESULT.  
   
-<a name="windows_service"></a>   
+<a name="windows_service"></a>
 ## Profiling a Windows Service  
  Profiling a Windows Service is like profiling a common language runtime application. Both profiling operations are enabled through environment variables. Because a Windows Service is started when the operating system starts, the environment variables discussed previously in this topic must already be present and set to the required values before the system starts. In addition, the profiling DLL must already be registered on the system.  
   

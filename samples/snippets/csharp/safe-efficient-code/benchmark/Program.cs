@@ -71,7 +71,7 @@ namespace benchmark
 
         [Benchmark]
         public void ImmutableAddByType()
-        {       
+        {
             add_by_type(sStruct);
         }
 

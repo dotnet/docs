@@ -12,7 +12,7 @@ ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
-[**\<configuration>**](../configuration-element.md)   
+[**\<configuration>**](../configuration-element.md)
 &nbsp;&nbsp;**\<appSettings>**
 
 ## Syntax

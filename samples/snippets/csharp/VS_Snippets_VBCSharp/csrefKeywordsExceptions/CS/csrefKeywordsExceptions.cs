@@ -5,7 +5,7 @@ using System.Text;
 
 namespace csrefKeywordsExceptions
 {
-    //<snippet1>    
+    //<snippet1>
     public class EHClass
     {
         void ReadFile(int index)
@@ -22,7 +22,7 @@ namespace csrefKeywordsExceptions
             {
                 Console.WriteLine("Error reading from {0}. Message = {1}", path, e.Message);
             }
-            
+
             finally
             {
                 if (file != null)
@@ -33,7 +33,7 @@ namespace csrefKeywordsExceptions
             // Do something with buffer...
         }
     }
-    
+
     //</snippet1>
 
     //<snippet2>
@@ -46,13 +46,13 @@ namespace csrefKeywordsExceptions
                 throw new ArgumentNullException();
             }
         }
-    
+
         static void Main()
         {
             string s = null; // For demonstration purposes.
 
             try
-            {               
+            {
                 ProcessString(s);
             }
             catch (Exception e)
@@ -124,7 +124,7 @@ namespace csrefKeywordsExceptions
             }
             finally
             {
-                // To run the program in Visual Studio, type CTRL+F5. Then 
+                // To run the program in Visual Studio, type CTRL+F5. Then
                 // click Cancel in the error dialog.
                 Console.WriteLine("\nExecution of the finally block after an unhandled\n" +
                     "error depends on how the exception unwind operation is triggered.");
@@ -153,7 +153,7 @@ namespace csrefKeywordsExceptions
             }
             return nums[index];
         }
-        static void Main() 
+        static void Main()
         {
             int result = GetNumber(3);
         }
@@ -183,7 +183,7 @@ namespace csrefKeywordsExceptions
                     ex.GetType());
 
                 // Restore the original unhandled exception. You might not
-                // know what exception to expect, or how to handle it, so pass 
+                // know what exception to expect, or how to handle it, so pass
                 // it on.
                 throw;
             }

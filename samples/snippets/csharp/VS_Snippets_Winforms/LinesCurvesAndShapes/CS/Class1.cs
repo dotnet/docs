@@ -44,10 +44,10 @@ public class LinesCurvesAndShapes : Form
     {
         Graphics myGraphics = e.Graphics;
         // <snippet22>
-        Point[] myPointArray = 
-        { 
-            new Point(0, 0), 
-            new Point(60, 20), 
+        Point[] myPointArray =
+        {
+            new Point(0, 0),
+            new Point(60, 20),
             new Point(40, 50)
         };
         myGraphics.DrawClosedCurve(myPen, myPointArray);
@@ -61,10 +61,10 @@ public class LinesCurvesAndShapes : Form
         SolidBrush mySolidBrush = new SolidBrush(Color.Aqua);
         GraphicsPath myGraphicsPath = new GraphicsPath();
 
-        Point[] myPointArray = 
+        Point[] myPointArray =
         {
-            new Point(15, 20), 
-            new Point(20, 40), 
+            new Point(15, 20),
+            new Point(20, 40),
             new Point(50, 30)
         };
 
@@ -88,10 +88,10 @@ public class LinesCurvesAndShapes : Form
     public void Method31(PaintEventArgs e)
     {
         Graphics myGraphics = e.Graphics;
-        Point[] myPointArray = 
+        Point[] myPointArray =
         {
-            new Point(10, 10), 
-            new Point(50, 40), 
+            new Point(10, 10),
+            new Point(50, 40),
             new Point(123, 200)
         };
         // <snippet31>
@@ -245,10 +245,10 @@ public class LinesCurvesAndShapes : Form
         // <snippet103>
         GraphicsPath myGraphicsPath = new GraphicsPath();
 
-        Point[] myPointArray = 
+        Point[] myPointArray =
         {
-            new Point(5, 30), 
-            new Point(20, 40), 
+            new Point(5, 30),
+            new Point(20, 40),
             new Point(50, 30)
         };
 
@@ -272,10 +272,10 @@ public class LinesCurvesAndShapes : Form
     {
         Graphics myGraphics = e.Graphics;
         // <snippet111>
-        Point[] myPointArray = 
-        { 
-            new Point(0, 0), 
-            new Point(50, 30), 
+        Point[] myPointArray =
+        {
+            new Point(0, 0),
+            new Point(50, 30),
             new Point(30, 60)
         };
         myGraphics.DrawPolygon(myPen, myPointArray);

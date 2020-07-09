@@ -1,5 +1,6 @@
 ---
 title: "How to: Add to or Remove from a Collection of Controls at Run Time"
+description: Learn how to add controls to and remove controls from any container control on your forms, such as the Panel or GroupBox control, or even the form itself.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -36,7 +37,7 @@ Common tasks in application development are adding controls to and removing cont
        ' The Add method will accept as a parameter any object that derives  
        ' from the Control class. In this case, it is a Button control.  
        Panel1.Controls.Add(NewPanelButton)  
-       ' The event handler indicated for the Click event in the code   
+       ' The event handler indicated for the Click event in the code
        ' below is used as an example. Substite the appropriate event  
        ' handler for your application.  
        AddHandler NewPanelButton.Click, AddressOf NewPanelButton_Click  
@@ -47,11 +48,11 @@ Common tasks in application development are adding controls to and removing cont
     public Button newPanelButton = new Button();  
   
     public void addNewControl()  
-    {   
+    {
        // The Add method will accept as a parameter any object that derives  
        // from the Control class. In this case, it is a Button control.  
        panel1.Controls.Add(newPanelButton);  
-       // The event handler indicated for the Click event in the code   
+       // The event handler indicated for the Click event in the code
        // below is used as an example. Substitute the appropriate event  
        // handler for your application.  
        this.newPanelButton.Click += new System.EventHandler(this. NewPanelButton_Click);  
@@ -68,10 +69,10 @@ Common tasks in application development are adding controls to and removing cont
   
     ```vb  
     Public Sub RemoveControl()  
-    ' NOTE: The code below uses the instance of   
+    ' NOTE: The code below uses the instance of
     ' the button (NewPanelButton) from the previous example.  
        If Panel1.Controls.Contains(NewPanelButton) Then  
-          RemoveHandler NewPanelButton.Click, AddressOf _   
+          RemoveHandler NewPanelButton.Click, AddressOf _
              NewPanelButton_Click  
           Panel1.Controls.Remove(NewPanelButton)  
           NewPanelButton.Dispose()  
@@ -82,11 +83,11 @@ Common tasks in application development are adding controls to and removing cont
     ```csharp  
     private void removeControl(object sender, System.EventArgs e)  
     {  
-    // NOTE: The code below uses the instance of   
+    // NOTE: The code below uses the instance of
     // the button (newPanelButton) from the previous example.  
        if(panel1.Controls.Contains(newPanelButton))  
        {  
-          this.newPanelButton.Click -= new System.EventHandler(this.   
+          this.newPanelButton.Click -= new System.EventHandler(this.
              NewPanelButton_Click);  
           panel1.Controls.Remove(newPanelButton);  
           newPanelButton.Dispose();  

@@ -14,7 +14,7 @@ ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 # Alignment, Margins, and Padding Overview
 The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
 
-<a name="wcpsdk_layout_amp_introduction"></a>   
+<a name="wcpsdk_layout_amp_introduction"></a>
 ## Introduction to Element Positioning  
  There are numerous ways to position elements using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
   
@@ -33,14 +33,14 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  ![Positioning Properties with Screen Call&#45;outs](./media/layout-margins-padding-alignment-graphic2.PNG "layout_margins_padding_alignment_graphic2")  
   
-<a name="wcpsdk_layout_amp_alignment_properties"></a>   
+<a name="wcpsdk_layout_amp_alignment_properties"></a>
 ## Understanding Alignment Properties  
  The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties describe how a child element should be positioned within a parent element's allocated layout space. By using these properties together, you can position child elements precisely. For example, child elements of a <xref:System.Windows.Controls.DockPanel> can specify four different horizontal alignments: <xref:System.Windows.HorizontalAlignment.Left>, <xref:System.Windows.HorizontalAlignment.Right>, or <xref:System.Windows.HorizontalAlignment.Center>, or to <xref:System.Windows.HorizontalAlignment.Stretch> to fill available space. Similar values are available for vertical positioning.  
   
 > [!NOTE]
 > Explicitly-set <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties on an element take precedence over the <xref:System.Windows.HorizontalAlignment.Stretch> property value. Attempting to set <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of `Stretch` results in the `Stretch` request being ignored.  
   
-<a name="wcpsdk_layout_amp_horizontalalignment_properties"></a>   
+<a name="wcpsdk_layout_amp_horizontalalignment_properties"></a>
 ### HorizontalAlignment Property  
  The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property declares the horizontal alignment characteristics to apply to child elements. The following table shows each of the possible values of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property.  
   
@@ -60,7 +60,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  ![HorizontalAlignment Sample](./media/layout-horizontal-alignment-graphic.PNG "layout_horizontal_alignment_graphic")  
   
-<a name="wcpsdk_layout_amp_verticalalignment_properties"></a>   
+<a name="wcpsdk_layout_amp_verticalalignment_properties"></a>
 ### VerticalAlignment Property  
  The <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property describes the vertical alignment characteristics to apply to child elements. The following table shows each of the possible values for the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property.  
   
@@ -81,7 +81,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  ![VerticalAlignment property sample](./media/layout-vertical-alignment-graphic.PNG "layout_vertical_alignment_graphic")  
   
-<a name="wcpsdk_layout_amp_margin_properties"></a>   
+<a name="wcpsdk_layout_amp_margin_properties"></a>
 ## Understanding Margin Properties  
  The <xref:System.Windows.FrameworkElement.Margin%2A> property describes the distance between an element and its child or peers. <xref:System.Windows.FrameworkElement.Margin%2A> values can be uniform, by using syntax like `Margin="20"`. With this syntax, a uniform <xref:System.Windows.FrameworkElement.Margin%2A> of 20 device independent pixels would be applied to the element. <xref:System.Windows.FrameworkElement.Margin%2A> values can also take the form of four distinct values, each value describing a distinct margin to apply to the left, top, right, and bottom (in that order), like `Margin="0,10,5,25"`. Proper use of the <xref:System.Windows.FrameworkElement.Margin%2A> property enables very fine control of an element's rendering position and the rendering position of its neighbor elements and children.  
   
@@ -102,7 +102,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  [!code-vb[MarginPaddingAlignmentSample#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#2)]
  [!code-xaml[MarginPaddingAlignmentSample#2](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#2)]  
   
-<a name="wcpsdk_layout_amp_padding_properties"></a>   
+<a name="wcpsdk_layout_amp_padding_properties"></a>
 ## Understanding the Padding Property  
  Padding is similar to <xref:System.Windows.FrameworkElement.Margin%2A> in most respects. The Padding property is exposed on only on a few classes, primarily as a convenience: <xref:System.Windows.Documents.Block>, <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Control>, and <xref:System.Windows.Controls.TextBlock> are samples of classes that expose a Padding property. The <xref:System.Windows.Controls.Border.Padding%2A> property enlarges the effective size of a child element by the specified <xref:System.Windows.Thickness> value.  
   
@@ -113,7 +113,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  [!code-vb[MarginPaddingAlignmentSample#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#3)]
  [!code-xaml[MarginPaddingAlignmentSample#3](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#3)]  
   
-<a name="wcpsdk_layout_amp_summary"></a>   
+<a name="wcpsdk_layout_amp_summary"></a>
 ## Using Alignment, Margins, and Padding in an Application  
  <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> provide the positioning control necessary to create a complex [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. You can use the effects of each property to change child-element positioning, enabling flexibility in creating dynamic applications and user experiences.  
   
@@ -128,7 +128,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  ![Several positioning properties in one application](./media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
   
-<a name="wcpsdk_layout_amp_alignment_whatsnext"></a>   
+<a name="wcpsdk_layout_amp_alignment_whatsnext"></a>
 ## What's Next  
  Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. You now have several techniques you can use to better position elements using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   

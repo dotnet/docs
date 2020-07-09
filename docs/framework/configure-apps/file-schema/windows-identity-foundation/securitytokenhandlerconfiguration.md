@@ -63,7 +63,7 @@ Provides configuration for the collection of token handlers.
 ```xml  
 <system.identityModel>  
   <identityConfiguration>  
-    <securityTokenHandlers>   
+    <securityTokenHandlers>
       <securityTokenHandlerConfiguration>  
   
         <audienceUris>  

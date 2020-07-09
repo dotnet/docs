@@ -24,6 +24,6 @@ The XML literal syntax in Visual Basic supports most of the Extensible Markup La
   
 ## See also
 
-- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
-- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [Creating XML in Visual Basic](creating-xml.md)
+- [XML Document Literal](../../../language-reference/xml-literals/xml-document-literal.md)
+- [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md)

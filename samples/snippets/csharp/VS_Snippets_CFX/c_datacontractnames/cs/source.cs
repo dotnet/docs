@@ -2,13 +2,13 @@
 using System.Runtime.Serialization;
 
 //<snippet1>
-// This overrides the standard namespace mapping for all contracts 
-// in Contoso.CRM. 
+// This overrides the standard namespace mapping for all contracts
+// in Contoso.CRM.
 [assembly: ContractNamespace("http://schemas.example.com/crm",
    ClrNamespace = "Contoso.CRM")]
 namespace Contoso.CRM
 {
-    // The namespace is overridden to become: 
+    // The namespace is overridden to become:
     // http://schemas.example.com/crm.
     // But the name is the default "Customer".
     [DataContract]
@@ -39,7 +39,7 @@ namespace Contoso.OrderProc
         // Code not shown.
     }
 
-    // The contract name is "Payment" instead of "MyPayment" 
+    // The contract name is "Payment" instead of "MyPayment"
     // and the Namespace is "http://schemas.example.com" instead
     // of the default.
     [DataContract(Name = "Payment",
@@ -99,7 +99,7 @@ namespace Snippet3
 namespace DataMemberOrder
 {
 
-    //<snippet4>    
+    //<snippet4>
     [DataContract]
     public class BaseType
     {
@@ -169,7 +169,7 @@ namespace DataContractEquivalence
         public int Y;
         [DataMember]
         public int X;
-        // Order is alphabetical (X,Y), equivalent 
+        // Order is alphabetical (X,Y), equivalent
         // to the preceding code.
     }
 
@@ -180,7 +180,7 @@ namespace DataContractEquivalence
         public int Y;
         [DataMember(Order = 1)]
         public int X;
-        // Order is according to the Order property (X,Y), 
+        // Order is according to the Order property (X,Y),
         // equivalent to the preceding code.
     }
     //</snippet6>
@@ -193,7 +193,7 @@ namespace DataContractEquivalence
         public int Y;
         [DataMember(Order = 2)]
         public int X;
-        // Order is according to the Order property (Y,X), 
+        // Order is according to the Order property (Y,X),
         // different from the preceding code.
     }
     //</snippet7>
@@ -218,7 +218,7 @@ namespace DatacontractEQ2
         [DataMember]
         public int salary;
     }
-    // Order is "name", "department", "salary", "title" 
+    // Order is "name", "department", "salary", "title"
     // (base class first, then alphabetical).
 
     [DataContract(Name = "Employee")]
@@ -233,8 +233,8 @@ namespace DatacontractEQ2
         [DataMember(Order = 2)]
         public int salary;
     }
-    // Order is "name", "department", "salary", "title" 
-    // (Order=1 first, then Order=2 in alphabetical order), 
+    // Order is "name", "department", "salary", "title"
+    // (Order=1 first, then Order=2 in alphabetical order),
     // which is equivalent to the Employee order}.
     //</snippet8>
 }

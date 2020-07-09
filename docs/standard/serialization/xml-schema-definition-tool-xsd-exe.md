@@ -1,14 +1,19 @@
 ---
 title: "XML Schema Definition Tool (Xsd.exe)"
+description: The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly, which improves the startup performance of XmlSerializer.
 ms.date: "03/30/2017"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
 ---
-
 # XML Schema Definition Tool (Xsd.exe)
 
 The XML Schema Definition (Xsd.exe) tool generates XML schema or common language runtime classes from XDR, XML, and XSD files, or from classes in a runtime assembly.
 
+The XML Schema Definition tool (Xsd.exe) usually can be found in the following path:\
+_C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {version} Tools\\_
+
 ## Syntax
+
+Run the tool from the command line.
 
 ```console
 xsd file.xdr [-outputdir:directory][/parameters:file.xml]
@@ -19,6 +24,9 @@ xsd file.xsd {/classes | /dataset} [/element:element]
                           [/parameters:file.xml]
 xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/parameters:file.xml]
 ```
+  
+> [!TIP]
+> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.
 
 ## Argument
 
@@ -49,7 +57,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |------------|-----------------|
 |**/e\[lement\]:**_element_|Specifies the element in the schema to generate code for. By default all elements are typed. You can specify this argument more than once.|
 |**/enableDataBinding**|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all generated types to enable data binding. The short form is `/edb`.|
-|**/enableLinqDataSet**|(Short form: `/eld`.) Specifies that the generated DataSet can be queried against using LINQ to DataSet. This option is used when the /dataset option is also specified. For more information, see [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md) and [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md). For general information about using LINQ, see [Language-Integrated Query (LINQ) - C#](../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../visual-basic/programming-guide/concepts/linq/index.md).|
+|**/enableLinqDataSet**|(Short form: `/eld`.) Specifies that the generated DataSet can be queried against using LINQ to DataSet. This option is used when the /dataset option is also specified. For more information, see [LINQ to DataSet Overview](../../framework/data/adonet/linq-to-dataset-overview.md) and [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md). For general information about using LINQ, see [Language-Integrated Query (LINQ) - C#](../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../visual-basic/programming-guide/concepts/linq/index.md).|
 |**/f\[ields\]**|Generates fields instead of properties. By default, properties are generated.|
 |**/l\[anguage\]:**_language_|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|
 |**/n\[amespace\]:**_namespace_|Specifies the runtime namespace for the generated types. The default namespace is `Schemas`.|
@@ -91,7 +99,7 @@ By using the `/parameters` switch, you can specify a single XML file that sets v
 </xsd>
 ```
 
-If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing ENTER:
+If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing **Enter**:
 
 ```console
  xsd /p:GenerateSchemas.xml
@@ -108,7 +116,7 @@ On the other hand, if you are generating a schema for a single type found in the
 </xsd>
 ```
 
-But to use preceding code, you must also supply the name of the assembly at the command prompt. Type the following at a command prompt (presuming the XML file is named GenerateSchemaFromType.xml):
+But to use preceding code, you must also supply the name of the assembly at the command prompt. Enter the following at a command prompt (presuming the XML file is named GenerateSchemaFromType.xml):
 
 ```console
 xsd /p:GenerateSchemaFromType.xml ConsoleApplication1.exe
@@ -219,9 +227,9 @@ xsd myAssembly.dll
 
 - <xref:System.Data.DataSet>
 - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
-- [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md)
-- [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Tools](../../framework/tools/index.md)
+- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)
+- [LINQ to DataSet Overview](../../framework/data/adonet/linq-to-dataset-overview.md)
+- [Querying Typed DataSets](../../framework/data/adonet/querying-typed-datasets.md)
 - [LINQ (Language-Integrated Query) (C#)](../../csharp/programming-guide/concepts/linq/index.md)
 - [LINQ (Language-Integrated Query) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)

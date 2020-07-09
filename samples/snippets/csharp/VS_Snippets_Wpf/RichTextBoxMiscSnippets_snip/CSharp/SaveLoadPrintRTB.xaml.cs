@@ -66,7 +66,7 @@ namespace SDKSample
             PrintDialog pd = new PrintDialog();
             if ((pd.ShowDialog() == true))
             {
-                //use either one of the below      
+                //use either one of the below
                 pd.PrintVisual(richTB as Visual, "printing as visual");
                 pd.PrintDocument((((IDocumentPaginatorSource)richTB.Document).DocumentPaginator), "printing as paginator");
             }

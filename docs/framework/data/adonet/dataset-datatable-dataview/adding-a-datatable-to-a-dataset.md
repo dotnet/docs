@@ -1,5 +1,6 @@
 ---
 title: "Adding a DataTable to a DataSet"
+description: Refer to this example code to learn how to create DataTable objects and add them to an existing DataSet in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

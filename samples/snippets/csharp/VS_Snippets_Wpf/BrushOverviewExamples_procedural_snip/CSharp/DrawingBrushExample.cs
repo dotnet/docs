@@ -10,10 +10,10 @@ namespace Microsoft.Samples.BrushExamples
 
     public class DrawingBrushExample : Page
     {
-    
+
         public DrawingBrushExample()
         {
-        
+
             StackPanel mainPanel = new StackPanel();
             canvasBackgroundExample(mainPanel);
             this.Content = mainPanel;
@@ -22,7 +22,7 @@ namespace Microsoft.Samples.BrushExamples
         // <SnippetGraphicsMMDrawingBrushAsButtonBackgroundExample>
         private void canvasBackgroundExample(Panel mainPanel)
         {
-            
+
             // <SnippetGraphicsMMDrawingBrushAsButtonBackgroundExample1>
             // Create a DrawingBrush.
             DrawingBrush myDrawingBrush = new DrawingBrush();
@@ -35,7 +35,7 @@ namespace Microsoft.Samples.BrushExamples
             ellipses.Children.Add(new EllipseGeometry(new Point(25,50), 12.5, 25));
             ellipses.Children.Add(new EllipseGeometry(new Point(50,50), 12.5, 25));
             ellipses.Children.Add(new EllipseGeometry(new Point(75,50), 12.5, 25));
-            
+
             myGeometryDrawing.Geometry = ellipses;
             myDrawingBrush.Drawing = myGeometryDrawing;
 
@@ -45,7 +45,7 @@ namespace Microsoft.Samples.BrushExamples
             // Use the DrawingBrush to paint the button's background.
             myButton.Background = myDrawingBrush;
             // </SnippetGraphicsMMDrawingBrushAsButtonBackgroundExample1>
-            
+
             mainPanel.Children.Add(myButton);
         }
         // </SnippetGraphicsMMDrawingBrushAsButtonBackgroundExample>

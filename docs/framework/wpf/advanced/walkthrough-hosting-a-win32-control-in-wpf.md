@@ -15,7 +15,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
  This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  
 
-<a name="requirements"></a>   
+<a name="requirements"></a>
 ## Requirements  
  This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
@@ -24,7 +24,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
 > [!NOTE]
 > This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control).  
   
-<a name="basic_procedure"></a>   
+<a name="basic_procedure"></a>
 ## The Basic Procedure  
  This section outlines the basic procedure for hosting a Win32 window on a WPF page. The remaining sections go through the details of each step.  
   
@@ -52,7 +52,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 9. Communicate with the hosted window by sending it Microsoft Windows messages and handling messages from its child windows, such as notifications sent by controls.  
   
-<a name="page_layout"></a>   
+<a name="page_layout"></a>
 ## Implement the Page Layout  
  The layout for the WPF page that hosts the ListBox Control consists of two regions. The left side of the page hosts several WPF controls that provide a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] that allows you to manipulate the Win32 control. The upper right corner of the page has a square region for the hosted ListBox Control.  
   
@@ -60,7 +60,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
  [!code-xaml[WPFHostingWin32Control#WPFUI](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml#wpfui)]  
   
-<a name="host_class"></a>   
+<a name="host_class"></a>
 ## Implement a Class to Host the Microsoft Win32 Control  
  The core of this sample is the class that actually hosts the control, ControlHost.cs. It inherits from <xref:System.Windows.Interop.HwndHost>. The constructor takes two parameters, height and width, which correspond to the height and width of the <xref:System.Windows.Controls.Border> element that hosts the ListBox control. These values are used later to ensure that the size of the control matches the <xref:System.Windows.Controls.Border> element.  
   
@@ -72,13 +72,13 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  [!code-csharp[WPFHostingWin32Control#ControlHostConstants](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/ControlHost.cs#controlhostconstants)]
  [!code-vb[WPFHostingWin32Control#ControlHostConstants](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/ControlHost.vb#controlhostconstants)]  
   
-<a name="buildwindowcore"></a>   
+<a name="buildwindowcore"></a>
 ### Override BuildWindowCore to Create the Microsoft Win32 Window  
  You override this method to create the Win32 window that will be hosted by the page, and make the connection between the window and the page. Because this sample involves hosting a ListBox Control, two windows are created. The first is the window that is actually hosted by the WPF page. The ListBox Control is created as a child of that window.  
   
  The reason for this approach is to simplify the process of receiving notifications from the control. The <xref:System.Windows.Interop.HwndHost> class allows you to process messages sent to the window that it is hosting. If you host a Win32 control directly, you receive the messages sent to the internal message loop of the control. You can display the control and send it messages, but you do not receive the notifications that the control sends to its parent window. This means, among other things, that you have no way of detecting when the user interacts with the control. Instead, create a host window and make the control a child of that window. This allows you to process the messages for the host window including the notifications sent to it by the control. For convenience, since the host window is little more than a simple wrapper for the control, the package will be referred to as a ListBox control.  
   
-<a name="create_the_window_and_listbox"></a>   
+<a name="create_the_window_and_listbox"></a>
 #### Create the Host Window and ListBox Control  
  You can use PInvoke to create a host window for the control by creating and registering a window class, and so on. However, a much simpler approach is to create a window with the predefined "static" window class. This provides you with the window procedure you need in order to receive notifications from the control, and requires minimal coding.  
   
@@ -95,7 +95,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  [!code-csharp[WPFHostingWin32Control#BuildWindowCoreHelper](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/ControlHost.cs#buildwindowcorehelper)]
  [!code-vb[WPFHostingWin32Control#BuildWindowCoreHelper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/ControlHost.vb#buildwindowcorehelper)]  
   
-<a name="destroywindow_wndproc"></a>   
+<a name="destroywindow_wndproc"></a>
 ### Implement DestroyWindow and WndProc  
  In addition to <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>, you must also override the <xref:System.Windows.Interop.HwndHost.WndProc%2A> and <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> methods of the <xref:System.Windows.Interop.HwndHost>. In this example, the messages for the control are handled by the <xref:System.Windows.Interop.HwndHost.MessageHook> handler, thus the implementation of <xref:System.Windows.Interop.HwndHost.WndProc%2A> and <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> is minimal. In the case of <xref:System.Windows.Interop.HwndHost.WndProc%2A>, set `handled` to `false` to indicate that the  message was not handled and return 0. For <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A>, simply destroy the window.  
   
@@ -105,7 +105,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  [!code-csharp[WPFHostingWin32Control#WndProcDestroyHelper](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/ControlHost.cs#wndprocdestroyhelper)]
  [!code-vb[WPFHostingWin32Control#WndProcDestroyHelper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/ControlHost.vb#wndprocdestroyhelper)]  
   
-<a name="host_the_control"></a>   
+<a name="host_the_control"></a>
 ## Host the Control on the Page  
  To host the control on the page, you first create a new instance of the `ControlHost` class. Pass the height and width of the border element that contains the control (`ControlHostElement`) to the `ControlHost` constructor. This ensures that the ListBox is sized correctly. You then host the control on the page by assigning the `ControlHost` object to the <xref:System.Windows.Controls.Decorator.Child%2A> property of the host <xref:System.Windows.Controls.Border>.  
   
@@ -120,7 +120,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  [!code-csharp[WPFHostingWin32Control#ControlMsgFilterSendMessage](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml.cs#controlmsgfiltersendmessage)]
  [!code-vb[WPFHostingWin32Control#ControlMsgFilterSendMessage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/Page1.xaml.vb#controlmsgfiltersendmessage)]  
   
-<a name="communication"></a>   
+<a name="communication"></a>
 ## Implement Communication Between the Control and the Page  
  You manipulate the control by sending it Windows messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control) sample includes a UI that provides several examples of how this works:  
   

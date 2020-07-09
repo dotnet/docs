@@ -32,7 +32,7 @@ HRESULT GetModule (
  [out] A pointer to the address of an `ICorDebugModule` interface that references the module in which the breakpoint is set.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -7,11 +7,11 @@ public static class VersionTest
     {
         GetVersionFromRegistry();
     }
-    
+
     private static void GetVersionFromRegistry()
     {
         // Opens the registry key for the .NET Framework entry.
-        using (RegistryKey ndpKey = 
+        using (RegistryKey ndpKey =
                 RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).
                 OpenSubKey(@"SOFTWARE\Microsoft\NET Framework Setup\NDP\"))
         {
@@ -55,7 +55,7 @@ public static class VersionTest
                         name = (string)subKey.GetValue("Version", "");
                         if (! string.IsNullOrEmpty(name))
                             sp = subKey.GetValue("SP", "").ToString();
-                        
+
                         install = subKey.GetValue("Install", "").ToString();
                         if (string.IsNullOrEmpty(install)) //No install info; it must be later.
                         {

@@ -4,7 +4,7 @@
 
 
 
-// ***** ABOUT HIS HEADER *****
+// ***** ABOUT THIS HEADER *****
 // **************************************************************************************
 //
 // This header is typically generated via MIDL from src\inc\MSCOREE.IDL in the .NET Core

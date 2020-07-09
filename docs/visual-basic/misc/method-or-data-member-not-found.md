@@ -14,4 +14,4 @@ The method or data member you have tried to access was not found.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

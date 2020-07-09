@@ -29,7 +29,7 @@ This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to sc
  ![2x scales with different center points](./media/wcpsdk-graphicsmm-scalecenter.gif "wcpsdk_graphicsmm_scalecenter")  
 Two ScaleTransform operations with identical ScaleX and ScaleY values but different centers  
   
- For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
+ For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms).  
   
 ## See also
 

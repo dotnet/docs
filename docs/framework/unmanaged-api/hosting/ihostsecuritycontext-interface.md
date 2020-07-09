@@ -22,13 +22,13 @@ Allows the common language runtime (CLR) to maintain security context informatio
   
 |Method|Description|  
 |------------|-----------------|  
-|[Capture Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-capture-method.md)|Gets a clone of the `IHostSecurityContext` instance returned from a call to [IHostSecurityManager::GetSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-getsecuritycontext-method.md).|  
+|[Capture Method](ihostsecuritycontext-capture-method.md)|Gets a clone of the `IHostSecurityContext` instance returned from a call to [IHostSecurityManager::GetSecurityContext](ihostsecuritymanager-getsecuritycontext-method.md).|  
   
 ## Remarks  
  A host can control all code access to thread tokens by both the CLR and user code. It can also ensure that complete security context information is passed across asynchronous operations or code points with restricted code access. `IHostSecurityContext` encapsulates this security context information, which is opaque to the runtime. The runtime captures this information using `Capture`, and moves it across thread pool worker item dispatch, finalizer execution, and module and class constructors.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,6 +38,6 @@ Allows the common language runtime (CLR) to maintain security context informatio
   
 ## See also
 
-- [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)
-- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRHostProtectionManager Interface](iclrhostprotectionmanager-interface.md)
+- [IHostSecurityManager Interface](ihostsecuritymanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace NorthwindService
 {
-    [System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults = true)] 
+    [System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class Northwind : DataService<NorthwindEntities>
     {
         // This method is called only once to initialize service-wide policies.
@@ -16,7 +16,7 @@ namespace NorthwindService
             // TODO: set rules to indicate which entity sets and service operations are visible, updatable, etc.
             // Examples:
             config.SetEntitySetAccessRule("*", EntitySetRights.All);
-            config.DataServiceBehavior.MaxProtocolVersion = 
+            config.DataServiceBehavior.MaxProtocolVersion =
                 System.Data.Services.Common.DataServiceProtocolVersion.V2;
             // config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
         }

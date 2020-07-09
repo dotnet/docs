@@ -59,7 +59,7 @@ items:
     public override string ToString() => FirstName + " " + LastName;
     ```
 
-    Try the same with the `Caps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
+    Try the same with the `AllCaps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
 
 - title: Importing a single class
   durationInMinutes: 2
@@ -126,7 +126,7 @@ items:
    Console.WriteLine(s?.Length);
    ``` 
 
-   After this change, there's no output. That's because the result of `s?.Length` is an `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+   After this change, there's no output. That's because the result of `s?.Length` is an `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. The `?.` operator returns a nullable type for that type, for both value types and non-nullable reference types. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
 
     ```csharp
     char? c = s?[0];
@@ -138,7 +138,7 @@ items:
     ```csharp
     string s = null;
     bool? hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext();
-    Console.WriteLine(hasMore.HasValue);
+    Console.WriteLine(hasMore.HasValue && hasMore.Value);
     ```
 
     The preceding example can be simplified by using the **null coalescing operator** to provide a default value:
@@ -153,7 +153,7 @@ items:
 - title: Exception filters
   durationInMinutes: 2
   content: |
-    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions, but never handles those exceptions. An exception filter is a boolean expression that is `true` when the `catch` clause should be executed, and `false` when the exception should not be caught by the `catch` clause. Try the following code in the interactive window: It logs the exception type and message to the console. It returns `false` which indicates that the exception can't be handled. Try the program in the interactive window.
+    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions, but never handles those exceptions. An exception filter is a boolean expression that is `true` when the `catch` clause should be executed, and `false` when the exception should not be caught by the `catch` clause. Try the following code in the interactive window: It logs the exception type and message to the console. It returns `false`, which indicates that the exception can't be handled. Try the program in the interactive window.
 
     ```csharp
     using System;
@@ -250,4 +250,3 @@ items:
 
 - content: |
     You've completed an exploration of the new features in C# 6. Now try them yourself in your applications.
-    

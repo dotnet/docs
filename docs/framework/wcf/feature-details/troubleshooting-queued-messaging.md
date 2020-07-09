@@ -31,7 +31,7 @@ This section contains common questions and troubleshooting help for using queues
 
 - Only MSMQ 4.0 supports remote transacted read.
 
-For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md).
+For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md).
 
 **Q:** Can I use MSMQ 3.0 on one side of a queued communication and MSMQ 4.0 on the other side?
 
@@ -101,7 +101,7 @@ A. Check your service contract. You may have forgotten to put "IsOneWay=`true`" 
     sc sidtype NetMsmqActivator unrestricted
     ```
 
-For non-security related Web host issues refer to: [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md).
+For non-security related Web host issues refer to: [Web Hosting a Queued Application](web-hosting-a-queued-application.md).
 
 **Q:** What is the easiest way to access sessions?
 
@@ -186,7 +186,7 @@ Yet another workaround is to install MSMQ with Active Directory integration.
 
 - Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.
 
-  ![Enabling XA transactions](../../../../docs/framework/wcf/feature-details/media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")
+  ![Enabling XA transactions](media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")
 
 - Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.
 

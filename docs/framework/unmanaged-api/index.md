@@ -55,4 +55,4 @@ This section includes information on unmanaged APIs that can be used by managed-
  Describes the two helper functions and interface used by the Type Library Exporter (Tlbexp.exe) during the assembly-to-type-library conversion process.  
   
 ## Related Sections  
- [Development Guide](../../../docs/framework/development-guide.md)  
+ [Development Guide](../development-guide.md)  

@@ -17,16 +17,16 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetMethodProps Method
-Sets or updates the feature, stored at the specified relative virtual address, of a method defined by a prior call to [IMetaDataEmit::DefineMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemethod-method.md).  
+Sets or updates the feature, stored at the specified relative virtual address, of a method defined by a prior call to [IMetaDataEmit::DefineMethod](imetadataemit-definemethod-method.md).  
   
 ## Syntax  
   
 ```cpp  
-HRESULT SetMethodProps (   
-    [in]  mdMethodDef md,   
+HRESULT SetMethodProps (
+    [in]  mdMethodDef md,
     [in]  DWORD       dwMethodFlags,  
-    [in]  ULONG       ulCodeRVA,   
-    [in]  DWORD       dwImplFlags   
+    [in]  ULONG       ulCodeRVA,
+    [in]  DWORD       dwImplFlags
 );  
 ```  
   
@@ -44,7 +44,7 @@ HRESULT SetMethodProps (
  [in] The implementation flags for the method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,5 +54,5 @@ HRESULT SetMethodProps (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

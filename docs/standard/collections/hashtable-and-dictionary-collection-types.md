@@ -36,4 +36,4 @@ The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and 
 - <xref:System.Collections.Generic.Dictionary%602>
 - <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
 - <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>
-- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)
+- [Commonly Used Collection Types](commonly-used-collection-types.md)

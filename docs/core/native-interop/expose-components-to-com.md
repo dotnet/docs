@@ -1,7 +1,8 @@
 ---
 title: "Exposing .NET Core components to COM"
+description: "This tutorial shows you how to expose a class to COM from .NET Core. You generate a COM server and a side-by-side server manifest for Registry-Free COM."
 ms.date: "07/12/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exposing .NET Core components to COM"
   - "interoperation with unmanaged code, exposing .NET Core components"
   - "COM interop, exposing COM components"
@@ -86,5 +87,7 @@ There is a fully functional [COM server sample](https://github.com/dotnet/sample
 ## Additional notes
 
 Unlike in .NET Framework, there is no support in .NET Core for generating a COM Type Library (TLB) from a .NET Core assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces.
+
+[Self-contained deployments](../deploying/index.md#publish-self-contained) of COM components are not supported. Only [runtime-dependent deployments](../deploying/index.md#publish-runtime-dependent) of COM components are supported.
 
 Additionally, loading both .NET Framework and .NET Core into the same process does have diagnostic limitations. The primary limitation is the debugging of managed components as it is not possible to debug both .NET Framework and .NET Core at the same time. In addition, the two runtime instances don't share managed assemblies. This means that it isn't possible to share actual .NET types across the two runtimes and instead all interactions must be restricted to the exposed COM interface contracts.

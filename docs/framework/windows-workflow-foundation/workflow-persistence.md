@@ -1,5 +1,6 @@
 ---
 title: "Workflow Persistence"
+description: .NET Framework 4.6.1 includes the SqlWorkflowInstanceStore class, which allows persistence of workflow data and metadata into a SQL Server database.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], persistence"

@@ -22,10 +22,10 @@ namespace SDKSample
             myBitmapImage.BeginInit();
             myBitmapImage.UriSource = new Uri("sampleImages/WaterLilies.jpg",UriKind.Relative);
 
-            // To save significant application memory, set the DecodePixelWidth or  
-            // DecodePixelHeight of the BitmapImage value of the image source to the desired 
-            // height or width of the rendered image. If you don't do this, the application will 
-            // cache the image as though it were rendered as its normal size rather then just 
+            // To save significant application memory, set the DecodePixelWidth or
+            // DecodePixelHeight of the BitmapImage value of the image source to the desired
+            // height or width of the rendered image. If you don't do this, the application will
+            // cache the image as though it were rendered as its normal size rather then just
             // the size that is displayed.
             // Note: In order to preserve aspect ratio, set DecodePixelWidth
             // or DecodePixelHeight but not both.
@@ -34,8 +34,8 @@ namespace SDKSample
 
             /////////////////// Create a BitmapSource that Rotates the image //////////////////////
             // Use the BitmapImage created above as the source for a new BitmapSource object
-            // that will be scaled to a different size. Create a new BitmapSource by   
-            // scaling the original one.                                               
+            // that will be scaled to a different size. Create a new BitmapSource by
+            // scaling the original one.
             // Note: New BitmapSource does not cache. It is always pulled when required.
 
             // Create the new BitmapSource that will be used to scale the size of the source.

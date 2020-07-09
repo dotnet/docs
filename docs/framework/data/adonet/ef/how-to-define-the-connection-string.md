@@ -16,7 +16,7 @@ This topic shows how to define the connection string that is used when connectin
 
 ```xml
 <connectionStrings>
-    <add name="AdventureWorksEntities" 
+    <add name="AdventureWorksEntities"
          connectionString="metadata=.\AdventureWorks.csdl|.\AdventureWorks.ssdl|.\AdventureWorks.msl;
          provider=System.Data.SqlClient;provider connection string='Data Source=localhost;
          Initial Catalog=AdventureWorks;Integrated Security=True;Connection Timeout=60;

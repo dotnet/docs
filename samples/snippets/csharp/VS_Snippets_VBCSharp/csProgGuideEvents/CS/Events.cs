@@ -7,34 +7,28 @@ using System.Text;
 
 namespace BaseClassEvents
 {
-    using System;
-    using System.Collections.Generic;
-
     // Special EventArgs class to hold info about Shapes.
     public class ShapeEventArgs : EventArgs
     {
-        private double newArea;
+        public ShapeEventArgs(double area)
+        {
+            NewArea = area;
+        }
 
-        public ShapeEventArgs(double d)
-        {
-            newArea = d;
-        }
-        public double NewArea
-        {
-            get { return newArea; }
-        }
+        public double NewArea { get; }
     }
 
     // Base class event publisher
     public abstract class Shape
     {
-        protected double area;
+        protected double _area;
 
         public double Area
         {
-            get { return area; }
-            set { area = value; }
+            get => _area;
+            set => _area = value;
         }
+
         // The event. Note that by using the generic EventHandler<T> event type
         // we do not need to declare a separate delegate type.
         public event EventHandler<ShapeEventArgs> ShapeChanged;
@@ -44,31 +38,28 @@ namespace BaseClassEvents
         //The event-invoking method that derived classes can override.
         protected virtual void OnShapeChanged(ShapeEventArgs e)
         {
-            // Make a temporary copy of the event to avoid possibility of
-            // a race condition if the last subscriber unsubscribes
-            // immediately after the null check and before the event is raised.
-            EventHandler<ShapeEventArgs> handler = ShapeChanged;
-            if (handler != null)
-            {
-                handler(this, e);
-            }
+            // Safely raise the event for all subscribers
+            ShapeChanged?.Invoke(this, e);
         }
     }
 
     public class Circle : Shape
     {
-        private double radius;
-        public Circle(double d)
+        private double _radius;
+
+        public Circle(double radius)
         {
-            radius = d;
-            area = 3.14 * radius * radius;
+            _radius = radius;
+            _area = 3.14 * _radius * _radius;
         }
+
         public void Update(double d)
         {
-            radius = d;
-            area = 3.14 * radius * radius;
-            OnShapeChanged(new ShapeEventArgs(area));
+            _radius = d;
+            _area = 3.14 * _radius * _radius;
+            OnShapeChanged(new ShapeEventArgs(_area));
         }
+
         protected override void OnShapeChanged(ShapeEventArgs e)
         {
             // Do any circle-specific processing here.
@@ -76,6 +67,7 @@ namespace BaseClassEvents
             // Call the base class event invocation method.
             base.OnShapeChanged(e);
         }
+
         public override void Draw()
         {
             Console.WriteLine("Drawing a circle");
@@ -84,21 +76,24 @@ namespace BaseClassEvents
 
     public class Rectangle : Shape
     {
-        private double length;
-        private double width;
+        private double _length;
+        private double _width;
+
         public Rectangle(double length, double width)
         {
-            this.length = length;
-            this.width = width;
-            area = length * width;
+            _length = length;
+            _width = width;
+            _area = _length * _width;
         }
+
         public void Update(double length, double width)
         {
-            this.length = length;
-            this.width = width;
-            area = length * width;
-            OnShapeChanged(new ShapeEventArgs(area));
+            _length = length;
+            _width = width;
+            _area = _length * _width;
+            OnShapeChanged(new ShapeEventArgs(_area));
         }
+
         protected override void OnShapeChanged(ShapeEventArgs e)
         {
             // Do any rectangle-specific processing here.
@@ -106,6 +101,7 @@ namespace BaseClassEvents
             // Call the base class event invocation method.
             base.OnShapeChanged(e);
         }
+
         public override void Draw()
         {
             Console.WriteLine("Drawing a rectangle");
@@ -117,55 +113,56 @@ namespace BaseClassEvents
     // when to redraw a shape.
     public class ShapeContainer
     {
-        List<Shape> _list;
+        private readonly List<Shape> _list;
 
         public ShapeContainer()
         {
             _list = new List<Shape>();
         }
 
-        public void AddShape(Shape s)
+        public void AddShape(Shape shape)
         {
-            _list.Add(s);
+            _list.Add(shape);
+
             // Subscribe to the base class event.
-            s.ShapeChanged += HandleShapeChanged;
+            shape.ShapeChanged += HandleShapeChanged;
         }
 
         // ...Other methods to draw, resize, etc.
 
         private void HandleShapeChanged(object sender, ShapeEventArgs e)
         {
-            Shape s = (Shape)sender;
+            if (sender is Shape shape)
+            {
+                // Diagnostic message for demonstration purposes.
+                Console.WriteLine($"Received event. Shape area is now {e.NewArea}");
 
-            // Diagnostic message for demonstration purposes.
-            Console.WriteLine("Received event. Shape area is now {0}", e.NewArea);
-
-            // Redraw the shape here.
-            s.Draw();
+                // Redraw the shape here.
+                shape.Draw();
+            }
         }
     }
 
     class Test
     {
-
-        static void Main(string[] args)
+        static void Main()
         {
             //Create the event publishers and subscriber
-            Circle c1 = new Circle(54);
-            Rectangle r1 = new Rectangle(12, 9);
-            ShapeContainer sc = new ShapeContainer();
+            var circle = new Circle(54);
+            var rectangle = new Rectangle(12, 9);
+            var container = new ShapeContainer();
 
             // Add the shapes to the container.
-            sc.AddShape(c1);
-            sc.AddShape(r1);
+            container.AddShape(circle);
+            container.AddShape(rectangle);
 
             // Cause some events to be raised.
-            c1.Update(57);
-            r1.Update(7, 7);
+            circle.Update(57);
+            rectangle.Update(7, 7);
 
             // Keep the console window open in debug mode.
-            System.Console.WriteLine("Press any key to exit.");
-            System.Console.ReadKey();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }
@@ -180,31 +177,24 @@ namespace BaseClassEvents
 //--------------------------------------------------------------------------------------
 
 //<Snippet2>
+using System;
+
 namespace DotNetEvents
 {
-    using System;
-    using System.Collections.Generic;
-
     // Define a class to hold custom event info
     public class CustomEventArgs : EventArgs
     {
-        public CustomEventArgs(string s)
+        public CustomEventArgs(string message)
         {
-            message = s;
+            Message = message;
         }
-        private string message;
 
-        public string Message
-        {
-            get { return message; }
-            set { message = value; }
-        }
+        public string Message { get; set; }
     }
 
     // Class that publishes an event
     class Publisher
     {
-
         // Declare the event using EventHandler<T>
         public event EventHandler<CustomEventArgs> RaiseCustomEvent;
 
@@ -213,7 +203,7 @@ namespace DotNetEvents
             // Write some code that does something useful here
             // then raise the event. You can also raise an event
             // before you execute a block of code.
-            OnRaiseCustomEvent(new CustomEventArgs("Did something"));
+            OnRaiseCustomEvent(new CustomEventArgs("Event triggered"));
         }
 
         // Wrap event invocations inside a protected virtual method
@@ -223,16 +213,16 @@ namespace DotNetEvents
             // Make a temporary copy of the event to avoid possibility of
             // a race condition if the last subscriber unsubscribes
             // immediately after the null check and before the event is raised.
-            EventHandler<CustomEventArgs> handler = RaiseCustomEvent;
+            EventHandler<CustomEventArgs> raiseEvent = RaiseCustomEvent;
 
             // Event will be null if there are no subscribers
-            if (handler != null)
+            if (raiseEvent != null)
             {
                 // Format the string to send inside the CustomEventArgs parameter
                 e.Message += $" at {DateTime.Now}";
 
-                // Use the () operator to raise the event.
-                handler(this, e);
+                // Call to raise the event.
+                raiseEvent(this, e);
             }
         }
     }
@@ -240,34 +230,36 @@ namespace DotNetEvents
     //Class that subscribes to an event
     class Subscriber
     {
-        private string id;
-        public Subscriber(string ID, Publisher pub)
+        private readonly string _id;
+
+        public Subscriber(string id, Publisher pub)
         {
-            id = ID;
-            // Subscribe to the event using C# 2.0 syntax
+            _id = id;
+
+            // Subscribe to the event
             pub.RaiseCustomEvent += HandleCustomEvent;
         }
 
         // Define what actions to take when the event is raised.
         void HandleCustomEvent(object sender, CustomEventArgs e)
         {
-            Console.WriteLine(id + " received this message: {0}", e.Message);
+            Console.WriteLine($"{_id} received this message: {e.Message}");
         }
     }
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Publisher pub = new Publisher();
-            Subscriber sub1 = new Subscriber("sub1", pub);
-            Subscriber sub2 = new Subscriber("sub2", pub);
+            var pub = new Publisher();
+            var sub1 = new Subscriber("sub1", pub);
+            var sub2 = new Subscriber("sub2", pub);
 
             // Call the method that raises the event.
             pub.DoSomething();
 
             // Keep the console window open
-            Console.WriteLine("Press Enter to close this window.");
+            Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
         }
     }
@@ -620,7 +612,7 @@ namespace WrapTwoInterfaceEvents
         }
 
         // For the sake of simplicity this one method
-        // implements both interfaces. 
+        // implements both interfaces.
         public void Draw()
         {
             // Raise IDrawingObject's event before the object is drawn.
@@ -703,7 +695,7 @@ namespace ImplementInterfaceEvents
 
             OnShapeChanged(new MyEventArgs(/*arguments*/));
 
-            // or do something here after the event. 
+            // or do something here after the event.
         }
         protected virtual void OnShapeChanged(MyEventArgs e)
         {

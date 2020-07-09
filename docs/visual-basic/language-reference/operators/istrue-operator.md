@@ -31,7 +31,7 @@ Determines whether an expression is `True`.
  If you have not defined any conversion to `Boolean` or an `IsTrue` operator, the compiler signals an error.  
   
 > [!NOTE]
-> The `IsTrue` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `IsTrue` operator can be *overloaded*, which means that a class or structure can redefine its behavior when its operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following code example defines the outline of a structure that includes definitions for the `IsFalse` and `IsTrue` operators.  
@@ -40,6 +40,6 @@ Determines whether an expression is `True`.
   
 ## See also
 
-- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
-- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md)
+- [IsFalse Operator](isfalse-operator.md)
+- [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [OrElse Operator](orelse-operator.md)

@@ -1,6 +1,7 @@
 ---
 title: Create your first WPF app in Visual Studio 2019 - .NET Framework
 titleSuffix: ""
+description: Develop a Windows Presentation Foundation (WPF) desktop application that includes elements common to most WPF applications.
 ms.date: 09/06/2019
 dev_langs:
   - "csharp"
@@ -14,7 +15,7 @@ ms.custom: "mvc,vs-dotnet"
 ---
 # Tutorial: Create your first WPF application in Visual Studio 2019
 
-This article shows you how to develop a Windows Presentation Foundation (WPF) desktop application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles. To develop the application, you'll use Visual Studio. 
+This article shows you how to develop a Windows Presentation Foundation (WPF) desktop application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles. To develop the application, you'll use Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -51,11 +52,11 @@ The first step is to create the application infrastructure, which includes an ap
       The **Create a new project** dialog opens.
 
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
-      
-   3. Select the **WPF App (.NET Framework)** template and then select **Next**. 
-     
+
+   3. Select the **WPF App (.NET Framework)** template and then select **Next**.
+
       ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
-    
+
       The **Configure your new project** dialog opens.
 
    4. Enter the project name **`ExpenseIt`** and then select **Create**.
@@ -148,7 +149,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Add a <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property to the <xref:System.Windows.Navigation.NavigationWindow> element and set it to "`ExpenseItHome.xaml`".
 
-    This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts. 
+    This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts.
 
     Example XAML in Visual Basic:
 
@@ -175,7 +176,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
-1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels. 
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels.
 
     *ExpenseReportPage.xaml* now looks like the following in Visual Basic:
 
@@ -287,11 +288,11 @@ In this section, you'll update the home page UI with an image and a page title.
 
 1. In *`ExpenseItHome.xaml`*, add another column to the <xref:System.Windows.Controls.Grid.ColumnDefinitions%2A> with a fixed <xref:System.Windows.Controls.ColumnDefinition.Width%2A> of 230 pixels:
 
-    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=52-55)]
+    [!code-xaml[ExpenseIt#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewColumn)]
 
 2. Add another row to the <xref:System.Windows.Controls.Grid.RowDefinitions%2A>, for a total of four rows:
 
-    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=57-62)]
+    [!code-xaml[ExpenseIt#11b](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseItHome.xaml?highlight=2#NewRows)]
 
 3. Move the controls to the second column by setting the <xref:System.Windows.Controls.Grid.Column%2A?displayProperty=nameWithType> property to 1 in each of the three controls (Border, ListBox, and Button).
 
@@ -352,7 +353,7 @@ The following illustration shows the UI elements added to *ExpenseReportPage.xam
 
 ## Style controls
 
-The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../controls/styling-and-templating.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
+The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../../../desktop-wpf/fundamentals/styles-templates-overview.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
 
 1. Open *Application.xaml* or *App.xaml*.
 
@@ -475,7 +476,7 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound .NET app. For more information about the WPF architecture and programming models, see the following topics:
 
 - [WPF architecture](../advanced/wpf-architecture.md)
-- [XAML overview (WPF)](../advanced/xaml-overview-wpf.md)
+- [XAML overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Dependency properties overview](../advanced/dependency-properties-overview.md)
 - [Layout](../advanced/layout.md)
 

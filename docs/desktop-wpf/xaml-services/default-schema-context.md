@@ -87,7 +87,7 @@ Assembly references for types used in the BAML production are always fully quali
     - Call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> on the qualified name.
   
     - If a short name + public key token combination match the assembly that the BAML was loaded from, use that assembly.
-    
+
     - Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.
 
 ## See also

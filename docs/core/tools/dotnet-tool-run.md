@@ -16,7 +16,7 @@ ms.date: 02/14/2020
 ```dotnetcli
 dotnet tool run <COMMAND NAME>
 
-dotnet tool run <-h|--help>
+dotnet tool run -h|--help
 ```
 
 ## Description

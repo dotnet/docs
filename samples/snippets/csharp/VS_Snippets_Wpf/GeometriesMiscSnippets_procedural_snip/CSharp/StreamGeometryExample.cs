@@ -24,7 +24,7 @@ namespace SDKSample
             // for additional performance benefits.
             theGeometry.Freeze();
 
-            // Use the StreamGeometry returned by the BuildRegularPolygon to 
+            // Use the StreamGeometry returned by the BuildRegularPolygon to
             // specify the shape of the path.
             myPath.Data = theGeometry;
 

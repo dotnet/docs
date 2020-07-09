@@ -28,9 +28,6 @@ items:
 
     Let's move on and explore more. The rest of this lesson explores working with the `string` type, which represents text in C#. Like the `Console` type, the `string` type has methods. The `string` methods work with text.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Declare and use variables
   durationInMinutes: 3
   content: |
@@ -93,9 +90,6 @@ items:
 
     Select **Run** again to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Work with strings
   durationInMinutes: 5
   content: |
@@ -123,9 +117,6 @@ items:
     > makes suggestions for what you can do. Type a `.` after the `d` in `firstFriend`. You'll see a list of suggestions for properties
     > and methods you can use.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Do more with strings
   durationInMinutes: 5
   content: |
@@ -148,6 +139,8 @@ items:
     Console.WriteLine($"[{trimmedGreeting}]");
     ```
 
+    The square brackets `[` and `]` help visualize what the `Trim`, `TrimStart` and `TrimEnd` methods do. The brackets show where whitespace starts and ends.
+
     This sample reinforces a couple of important concepts for working with strings. The methods that manipulate strings return new string objects rather than making modifications in place. You can see that each call to any of the `Trim` methods returns a new string but doesn't change the original message.
 
     There are other methods available to work with a string. For example, you've probably used a search and replace command in an editor or word processor before. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
@@ -166,9 +159,6 @@ items:
     Console.WriteLine(sayHello.ToLower());
     ```
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Search strings
   durationInMinutes: 10
   content: |
@@ -185,7 +175,7 @@ items:
 
     The <xref:System.String.Contains%2A> method returns a **boolean** value which tells you if the
     string you were searching for was found. A **boolean** stores either a `true` or a
-    `false` value. You'll learn more about **boolean** values
+    `false` value. When displayed as text output, they are capitalized: `True` and `False`, respectively. You'll learn more about **boolean** values
     in a later lesson.
 
     ***Challenge***
@@ -200,9 +190,6 @@ items:
 
     You should get `true` for starting with "You" and ending with "hello" and false for starting with or ending with "goodbye".
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Complete challenge
   durationInMinutes: 3
   content: |
@@ -216,9 +203,6 @@ items:
     Console.WriteLine(songLyrics.EndsWith("hello"));
     Console.WriteLine(songLyrics.EndsWith("goodbye"));
     ```
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
     You've completed the "Hello C#" introduction to C# tutorial. You can select the **Numbers in C#** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.

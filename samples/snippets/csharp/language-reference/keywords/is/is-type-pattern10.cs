@@ -7,7 +7,7 @@ public class Example
    {
       Object o = new Person("Jane");
       ShowValue(o);
-      
+
       o = new Dog("Alaskan Malamute");
       ShowValue(o);
    }
@@ -17,18 +17,18 @@ public class Example
       if (o is Person) {
          Person p = (Person) o;
          Console.WriteLine(p.Name);
-      }   
+      }
       else if (o is Dog) {
          Dog d = (Dog) o;
          Console.WriteLine(d.Breed);
-      }             
+      }
    }
 }
 
 public struct Person
-{  
+{
    public string Name { get; set; }
-   
+
    public Person(string name) : this()
    {
       Name = name;

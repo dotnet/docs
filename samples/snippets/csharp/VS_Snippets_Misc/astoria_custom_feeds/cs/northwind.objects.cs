@@ -17,7 +17,7 @@
 // Generation date: 7/20/2009 11:57:04 PM
 namespace NorthwindService
 {
-    
+
     /// <summary>
     /// There are no comments for NorthwindEntities in the schema.
     /// </summary>
@@ -26,7 +26,7 @@ namespace NorthwindService
         /// <summary>
         /// Initializes a new NorthwindEntities object using the connection string found in the 'NorthwindEntities' section of the application configuration file.
         /// </summary>
-        public NorthwindEntities() : 
+        public NorthwindEntities() :
                 base("name=NorthwindEntities", "NorthwindEntities")
         {
             this.OnContextCreated();
@@ -34,7 +34,7 @@ namespace NorthwindService
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
-        public NorthwindEntities(string connectionString) : 
+        public NorthwindEntities(string connectionString) :
                 base(connectionString, "NorthwindEntities")
         {
             this.OnContextCreated();
@@ -42,7 +42,7 @@ namespace NorthwindService
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
-        public NorthwindEntities(global::System.Data.EntityClient.EntityConnection connection) : 
+        public NorthwindEntities(global::System.Data.EntityClient.EntityConnection connection) :
                 base(connection, "NorthwindEntities")
         {
             this.OnContextCreated();

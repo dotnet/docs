@@ -1,8 +1,8 @@
-﻿// This sample shows how to create a custom button column/cell that allows specific 
-// button cells to be disabled. This is done by rendering the disabled buttons in 
+﻿// This sample shows how to create a custom button column/cell that allows specific
+// button cells to be disabled. This is done by rendering the disabled buttons in
 // the overridden Paint method with ButtonRenderer.
 
-// Snippet0 (entire sample) will go in How to: Disable Buttons in a Button Column 
+// Snippet0 (entire sample) will go in How to: Disable Buttons in a Button Column
 //    in the Windows Forms DataGridView Control
 // Snippet5 will go in DataGridView.CurrentCellDirtyStateChanged, CommitEdit
 //    and CellValueChanged
@@ -77,7 +77,7 @@ class Form1 : Form
         }
     }
 
-    // If a check box cell is clicked, this event handler disables  
+    // If a check box cell is clicked, this event handler disables
     // or enables the button in the same row as the clicked cell.
     public void dataGridView1_CellValueChanged(object sender,
         DataGridViewCellEventArgs e)
@@ -98,7 +98,7 @@ class Form1 : Form
     }
     // </Snippet5>
 
-    // If the user clicks on an enabled button cell, this event handler  
+    // If the user clicks on an enabled button cell, this event handler
     // reports that the button is enabled.
     void dataGridView1_CellClick(object sender,
         DataGridViewCellEventArgs e)
@@ -170,7 +170,7 @@ public class DataGridViewDisableButtonCell : DataGridViewButtonCell
         DataGridViewAdvancedBorderStyle advancedBorderStyle,
         DataGridViewPaintParts paintParts)
     {
-        // The button cell is disabled, so paint the border,  
+        // The button cell is disabled, so paint the border,
         // background, and disabled button for the cell.
         if (!this.enabledValue)
         {
@@ -201,12 +201,12 @@ public class DataGridViewDisableButtonCell : DataGridViewButtonCell
             buttonArea.Height -= buttonAdjustment.Height;
             buttonArea.Width -= buttonAdjustment.Width;
 
-            // Draw the disabled button.                
+            // Draw the disabled button.
             ButtonRenderer.DrawButton(graphics, buttonArea,
                 PushButtonState.Disabled);
 
-            // Draw the disabled button text. 
-            if (this.FormattedValue is String) 
+            // Draw the disabled button text.
+            if (this.FormattedValue is String)
             {
                 TextRenderer.DrawText(graphics,
                     (string)this.FormattedValue,
@@ -216,7 +216,7 @@ public class DataGridViewDisableButtonCell : DataGridViewButtonCell
         }
         else
         {
-            // The button cell is enabled, so let the base class 
+            // The button cell is enabled, so let the base class
             // handle the painting.
             base.Paint(graphics, clipBounds, cellBounds, rowIndex,
                 elementState, value, formattedValue, errorText,

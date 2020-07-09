@@ -11,7 +11,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
   
  This topic provides data binding performance recommendations.  
 
-<a name="HowDataBindingReferencesAreResolved"></a>   
+<a name="HowDataBindingReferencesAreResolved"></a>
 ## How Data Binding References are Resolved  
  Before discussing data binding performance issues, it is worthwhile to explore how the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding engine resolves object references for binding.  
   
@@ -35,7 +35,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 |To a property of a CLR object which implements <xref:System.ComponentModel.INotifyPropertyChanged>|115|305|  
 |To a <xref:System.Windows.DependencyProperty> of a <xref:System.Windows.DependencyObject>.|90|263|  
   
-<a name="Binding_to_Large_CLR_Objects"></a>   
+<a name="Binding_to_Large_CLR_Objects"></a>
 ## Binding to Large CLR Objects  
  There is a significant performance impact when you data bind to a single CLR object with thousands of properties. You can minimize this impact by dividing the single object into multiple CLR objects with fewer properties. The table shows the binding and rendering times for data binding to a single large CLR object versus multiple smaller objects.  
   
@@ -44,7 +44,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 |To a CLR object with 1000 properties|950|1200|  
 |To 1000 CLR objects with one property|115|314|  
   
-<a name="Binding_to_an_ItemsSource"></a>   
+<a name="Binding_to_an_ItemsSource"></a>
 ## Binding to an ItemsSource  
  Consider a scenario in which you have a CLR <xref:System.Collections.Generic.List%601> object that holds a list of employees that you want to display in a <xref:System.Windows.Controls.ListBox>. To create a correspondence between these two objects, you would bind your employee list to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of the <xref:System.Windows.Controls.ListBox>. However, suppose you have a new employee joining your group. You might think that in order to insert this new person into your bound <xref:System.Windows.Controls.ListBox> values, you would simply add this person to your employee list and expect this change to be recognized by the data binding engine automatically. That assumption would prove false; in actuality, the change will not be reflected in the <xref:System.Windows.Controls.ListBox> automatically. This is because the CLR <xref:System.Collections.Generic.List%601> object does not automatically raise a collection changed event. In order to get the <xref:System.Windows.Controls.ListBox> to pick up the changes, you would have to recreate your list of employees and re-attach it to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of the <xref:System.Windows.Controls.ListBox>. While this solution works, it introduces a huge performance impact. Each time you reassign the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> of <xref:System.Windows.Controls.ListBox> to a new object, the <xref:System.Windows.Controls.ListBox> first throws away its previous items and regenerates its entire list. The performance impact is magnified if your <xref:System.Windows.Controls.ListBox> maps to a complex <xref:System.Windows.DataTemplate>.  
   
@@ -57,11 +57,11 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 |To a CLR <xref:System.Collections.Generic.List%601> object|1656|  
 |To an <xref:System.Collections.ObjectModel.ObservableCollection%601>|20|  
   
-<a name="Binding_IList_to_ItemsControl_not_IEnumerable"></a>   
+<a name="Binding_IList_to_ItemsControl_not_IEnumerable"></a>
 ## Bind IList to ItemsControl not IEnumerable  
  If you have a choice between binding an <xref:System.Collections.Generic.IList%601> or an <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> object, choose the <xref:System.Collections.Generic.IList%601> object. Binding <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> forces [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to create a wrapper <xref:System.Collections.Generic.IList%601> object, which means your performance is impacted by the unnecessary overhead of a second object.  
   
-<a name="Do_not_Convert_CLR_objects_to_Xml_Just_For_Data_Binding"></a>   
+<a name="Do_not_Convert_CLR_objects_to_Xml_Just_For_Data_Binding"></a>
 ## Do not Convert CLR objects to XML Just for Data Binding.  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to data bind to XML content; however, data binding to XML content is slower than data binding to CLR objects. Do not convert CLR object data to XML if the only purpose is for data binding.  
   

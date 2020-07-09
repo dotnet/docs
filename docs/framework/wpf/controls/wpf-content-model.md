@@ -17,7 +17,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
  This topic summarizes the content model for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control and control-like types. The content model describes what content can be used in a control. This topic also lists the content properties for each content model. A content property is a property that is used to store the content of the object.  
 
-<a name="classes_that_contain_arbitrary_content"></a>   
+<a name="classes_that_contain_arbitrary_content"></a>
 ## Classes That Contain Arbitrary Content  
  Some controls can contain an object of any type, such as a string, a <xref:System.DateTime> object, or a <xref:System.Windows.UIElement> that is a container for additional items. For example, a <xref:System.Windows.Controls.Button> can contain an image and some text; or a <xref:System.Windows.Controls.CheckBox> can contain the value of <xref:System.DateTime.Now%2A?displayProperty=nameWithType>.  
   
@@ -150,7 +150,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
 - <xref:System.Windows.Controls.TreeViewItem>  
   
-<a name="classes_that_contain_a_collection_of_uielement_objects"></a>   
+<a name="classes_that_contain_a_collection_of_uielement_objects"></a>
 ## Classes That Contain a Collection of UIElement Objects  
  The <xref:System.Windows.Controls.Panel> class positions and arranges child <xref:System.Windows.UIElement> objects. Its content property is <xref:System.Windows.Controls.Panel.Children%2A>.  
   
@@ -180,7 +180,7 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
   
  For more information, see [Panels Overview](panels-overview.md).  
   
-<a name="classes_that_affects_the_appearance_of_a_uielement"></a>   
+<a name="classes_that_affects_the_appearance_of_a_uielement"></a>
 ## Classes That Affect the Appearance of a UIElement  
  The <xref:System.Windows.Controls.Decorator> class applies visual effects onto or around a single child <xref:System.Windows.UIElement>. Its content property is <xref:System.Windows.Controls.Decorator.Child%2A>. The following classes inherit from <xref:System.Windows.Controls.Decorator> and use its content model:  
   
@@ -207,11 +207,11 @@ ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
  ![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")  
 TextBlock that has a Border  
   
-<a name="classes_that_provides_visual_feedback_about_a_uielement"></a>   
+<a name="classes_that_provides_visual_feedback_about_a_uielement"></a>
 ## Classes That Provide Visual Feedback About a UIElement  
  The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] does not provide any implemented adorners. For more information, see [Adorners Overview](adorners-overview.md).  
   
-<a name="classes_that_enable_users_to_enter_text"></a>   
+<a name="classes_that_enable_users_to_enter_text"></a>
 ## Classes That Enable Users to Enter Text  
  WPF provides three primary controls that enable users to enter text. Each control displays the text differently. The following table lists these three text-related controls, their capabilities when they display text, and their properties that contain the control's text.  
   
@@ -221,7 +221,7 @@ TextBlock that has a Border
 |<xref:System.Windows.Controls.RichTextBox>|Formatted text|<xref:System.Windows.Controls.RichTextBox.Document%2A>|  
 |<xref:System.Windows.Controls.PasswordBox>|Hidden text (characters are masked)|<xref:System.Windows.Controls.PasswordBox.Password%2A>|  
   
-<a name="classes_that_display_text"></a>   
+<a name="classes_that_display_text"></a>
 ## Classes That Display Your Text  
  Several classes can be used to display plain or formatted text. You can use <xref:System.Windows.Controls.TextBlock> to display small amounts of text. If you want to display large amounts of text, use the <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, or <xref:System.Windows.Controls.FlowDocumentScrollViewer> controls.  
   
@@ -237,7 +237,7 @@ TextBlock that has a Border
   
  The <xref:System.Windows.Documents.FlowDocument> implements the <xref:System.Windows.Documents.IDocumentPaginatorSource> interface; therefore, all three classes can take a <xref:System.Windows.Documents.FlowDocument> as content.  
   
-<a name="classes_that_format_text"></a>   
+<a name="classes_that_format_text"></a>
 ## Classes That Format Your Text  
  <xref:System.Windows.Documents.TextElement> and its related classes allow you to format text. <xref:System.Windows.Documents.TextElement> objects contain and format text in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. The two primary types of <xref:System.Windows.Documents.TextElement> objects are <xref:System.Windows.Documents.Block> elements and <xref:System.Windows.Documents.Inline> elements. A <xref:System.Windows.Documents.Block> element represents a block of text, such as a paragraph or list. An <xref:System.Windows.Documents.Inline> element represents a portion of text in a block. Many <xref:System.Windows.Documents.Inline> classes specify formatting for the text to which they are applied. Each <xref:System.Windows.Documents.TextElement> has its own content model. For more information, see the [TextElement Content Model Overview](../advanced/textelement-content-model-overview.md).  
   

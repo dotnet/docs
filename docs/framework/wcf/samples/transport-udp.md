@@ -22,7 +22,7 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
   
 8. Add a binding section and binding configuration element to expose the binding to the configuration system. For more information, see [Adding Configuration Support](#AddingConfigurationSupport).  
   
-<a name="MessageExchangePatterns"></a>   
+<a name="MessageExchangePatterns"></a>
 ## Message Exchange Patterns  
  The first step in writing a custom transport is to decide which Message Exchange Patterns (MEPs) are required for the transport. There are three MEPs to choose from:  
   
@@ -60,11 +60,11 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
   
  There are events that fire for each state transition. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method can be called at any time, and causes the object to transition immediately from its current state into the Closed state. Calling <xref:System.ServiceModel.ICommunicationObject.Abort%2A> terminates any unfinished work.  
   
-<a name="ChannelAndChannelListener"></a>   
+<a name="ChannelAndChannelListener"></a>
 ## Channel Factory and Channel Listener  
  The next step in writing a custom transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels and of <xref:System.ServiceModel.Channels.IChannelListener> for service channels. The channel layer uses a factory pattern for constructing channels. WCF provides base class helpers for this process.  
   
-- The <xref:System.ServiceModel.Channels.CommunicationObject> class implements <xref:System.ServiceModel.ICommunicationObject> and enforces the state machine previously described in Step 2. 
+- The <xref:System.ServiceModel.Channels.CommunicationObject> class implements <xref:System.ServiceModel.ICommunicationObject> and enforces the state machine previously described in Step 2.
 
 - The <xref:System.ServiceModel.Channels.ChannelManagerBase> class implements <xref:System.ServiceModel.Channels.CommunicationObject> and provides a unified base class for <xref:System.ServiceModel.Channels.ChannelFactoryBase> and <xref:System.ServiceModel.Channels.ChannelListenerBase>. The <xref:System.ServiceModel.Channels.ChannelManagerBase> class works in conjunction with <xref:System.ServiceModel.Channels.ChannelBase>, which is a base class that implements <xref:System.ServiceModel.Channels.IChannel>.  
   
@@ -114,7 +114,7 @@ message = MessageEncoderFactory.Encoder.ReadMessage(new ArraySegment<byte>(buffe
 #### UdpInputChannel  
  The `UdpInputChannel` class implements `IInputChannel`. It consists of a queue of incoming messages that is populated by the `UdpChannelListener`'s socket. These messages are dequeued by the `IInputChannel.Receive` method.  
   
-<a name="AddingABindingElement"></a>   
+<a name="AddingABindingElement"></a>
 ## Adding a Binding Element  
  Now that the factories and channels are built, we must expose them to the ServiceModel runtime through a binding. A binding is a collection of binding elements that represents the communication stack associated with a service address. Each element in the stack is represented by a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element.  
   
@@ -135,7 +135,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  It also contains members for cloning the `BindingElement` and returning our scheme (soap.udp).  
   
 ## Adding Metadata Support for a Transport Binding Element  
- To integrate our transport into the metadata system, we must support both the import and export of policy. This allows us to generate clients of our binding through the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ To integrate our transport into the metadata system, we must support both the import and export of policy. This allows us to generate clients of our binding through the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ### Adding WSDL Support  
  The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata.  
@@ -168,7 +168,7 @@ if (soapBinding != null)
   <system.serviceModel>  
     <client>  
       <metadata>  
-        <wsdlImporters>  
+        <policyImporters>  
           <extension type=" Microsoft.ServiceModel.Samples.UdpBindingElementImporter, UdpTransport" />  
         </policyImporters>  
       </metadata>  
@@ -210,8 +210,8 @@ UdpPolicyStrings.Prefix, UdpPolicyStrings.TransportAssertion, UdpPolicyStrings.U
 if (Multicast)  
 {  
     bindingAssertions.Add(xmlDocument.CreateElement(
-        UdpPolicyStrings.Prefix, 
-        UdpPolicyStrings.MulticastAssertion, 
+        UdpPolicyStrings.Prefix,
+        UdpPolicyStrings.MulticastAssertion,
         UdpPolicyStrings.UdpNamespace));  
 }  
 ```  
@@ -245,7 +245,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
   
 2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
-<a name="AddingAStandardBinding"></a>   
+<a name="AddingAStandardBinding"></a>
 ## Adding a Standard Binding  
  Our binding element can be used in the following two ways:  
   
@@ -257,7 +257,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
   
 ```csharp
 public override BindingElementCollection CreateBindingElements()  
-{     
+{
     BindingElementCollection bindingElements = new BindingElementCollection();  
     if (ReliableSessionEnabled)  
     {  
@@ -295,7 +295,7 @@ if (context.Endpoint.Binding is CustomBinding)
   
  Generally, implementing a custom standard binding importer involves checking the properties of the imported binding elements to verify that only properties that could have been set by the standard binding have changed and all other properties are their defaults. A basic strategy for implementing a standard binding importer is to create an instance of the standard binding, propagate the properties from the binding elements to the standard binding instance that the standard binding supports, and the compare the binding elements from the standard binding with the imported binding elements.  
   
-<a name="AddingConfigurationSupport"></a>   
+<a name="AddingConfigurationSupport"></a>
 ## Adding Configuration Support  
  To expose our transport through configuration, we must implement two configuration sections. The first is a `BindingElementExtensionElement` for `UdpTransportBindingElement`. This is so that `CustomBinding` implementations can reference our binding element. The second is a `Configuration` for our `SampleProfileUdpBinding`.  
   
@@ -307,7 +307,7 @@ if (context.Endpoint.Binding is CustomBinding)
   <system.serviceModel>  
     <extensions>  
       <bindingElementExtensions>  
-        <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport />  
+        <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport" />  
       </bindingElementExtensions>  
     </extensions>  
   </system.serviceModel>  
@@ -363,7 +363,7 @@ protected override void OnApplyConfiguration(string configurationName)
   <configSections>  
      <sectionGroup name="system.serviceModel">  
         <sectionGroup name="bindings">  
-          <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport />  
+          <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport" />  
         </sectionGroup>  
      </sectionGroup>  
   </configSections>  
@@ -377,9 +377,9 @@ protected override void OnApplyConfiguration(string configurationName)
   <system.serviceModel>  
     <client>  
       <endpoint configurationName="calculator"  
-                address="soap.udp://localhost:8001/"   
+                address="soap.udp://localhost:8001/"
                 bindingConfiguration="CalculatorServer"  
-                binding="sampleProfileUdpBinding"   
+                binding="sampleProfileUdpBinding"
                 contract= "Microsoft.ServiceModel.Samples.ICalculatorContract">  
       </endpoint>  
     </client>  
@@ -447,7 +447,7 @@ svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTranspor
   
 ```xml
 <configuration>  
-  <system.serviceModel>      
+  <system.serviceModel>
     <extensions>  
       <!-- This was added manually because svcutil.exe does not add this extension to the file -->  
       <bindingExtensions>  
@@ -460,17 +460,17 @@ svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTranspor
   
 #### To set up, build, and run the sample  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+2. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 3. Refer to the preceding "The UDP Test Service and Client" section.  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\Udp`

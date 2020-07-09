@@ -20,7 +20,7 @@ namespace BrushesIntroduction
     {
         public SampleViewer()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
 
         private void transitionAnimationStateChanged(object sender, EventArgs args)
@@ -33,7 +33,7 @@ namespace BrushesIntroduction
             }
         }
 
-        // <SnippetBeginAnimationHandoff>  
+        // <SnippetBeginAnimationHandoff>
         private void myFrameNavigated(object sender, NavigationEventArgs args)
         {
             DoubleAnimation myFadeInAnimation = (DoubleAnimation)this.Resources["MyFadeInAnimationResource"];
@@ -56,7 +56,7 @@ namespace BrushesIntroduction
             }
         }
 
-        public static RoutedUICommand ExitCommand = 
+        public static RoutedUICommand ExitCommand =
             new RoutedUICommand("Exit", "Exit", typeof(SampleViewer));
 
         private void executeExitCommand(object sender, ExecutedRoutedEventArgs e)

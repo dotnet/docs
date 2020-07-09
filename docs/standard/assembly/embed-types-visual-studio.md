@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Embed types from managed assemblies in Visual Studio"
+description: This walkthrough shows you how to embed types from managed assemblies in .NET using Visual Studio. Embedded types can support version independence.
 ms.date: 08/19/2019
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
 dev_langs:

@@ -41,7 +41,7 @@ namespace SDKSample
             Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Rectangle.OpacityProperty));
 
             // Use the Loaded event to start the Storyboard.
-            myRectangle.Loaded += new RoutedEventHandler(myRectangleLoaded);  
+            myRectangle.Loaded += new RoutedEventHandler(myRectangleLoaded);
 
             myPanel.Children.Add(myRectangle);
             this.Content = myPanel;

@@ -6,43 +6,43 @@ using System;
 public class Animal
 {
    private string _species;
-   
+
    public Animal(string species)
    {
       _species = species;
    }
-   
-   public virtual string Species 
-   {    
+
+   public virtual string Species
+   {
       get { return _species; }
    }
-   
+
    public override string ToString()
    {
-      return _species;   
-   } 
+      return _species;
+   }
 }
 
 public class Human : Animal
 {
    private string _name;
-   
+
    public Human(string name) : base("Homo Sapiens")
    {
       _name = name;
    }
-   
+
    public string Name
    {
       get { return _name; }
    }
-   
-   private override string Species 
+
+   private override string Species
    {
       get { return base.Species; }
    }
-   
-   public override string ToString() 
+
+   public override string ToString()
    {
       return _name;
    }

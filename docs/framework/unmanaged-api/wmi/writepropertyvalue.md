@@ -19,17 +19,17 @@ topic_type:
 Writes a specified number of bytes to a property identified by a property handle.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT WritePropertyValue (
-   [in] int                  vFunc, 
-   [in] IWbemObjectAccess*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemObjectAccess*   ptr,
    [in] long                 lHandle,
    [in] long                 lNumBytes,
    [in] byte*                aData
-); 
+);
 ```  
 
 ## Parameters
@@ -41,12 +41,12 @@ HRESULT WritePropertyValue (
 [in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.
 
 `lHandle`  
-[in] An integer that contains the handle that identifies this property. The handle can be retrieved by calling the [GetPropertyHandle](getpropertyhandle.md) function.   
+[in] An integer that contains the handle that identifies this property. The handle can be retrieved by calling the [GetPropertyHandle](getpropertyhandle.md) function.
 
 `lNumBytes`  
 [in] The number of bytes being written to the property. See the [Remarks](#remarks) section for more information.
 
-`pHandle`   
+`pHandle`
 [out] A pointer to the byte array that contains the data.
 
 ## Return value

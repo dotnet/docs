@@ -15,9 +15,9 @@ public class Example
         Directory.CreateDirectory(newDir);
 
         // Method signature: Parallel.ForEach(IEnumerable<TSource> source, Action<TSource> body)
-        Parallel.ForEach(files, (currentFile) => 
+        Parallel.ForEach(files, (currentFile) =>
                                 {
-                                    // The more computational work you do here, the greater 
+                                    // The more computational work you do here, the greater
                                     // the speedup compared to a sequential foreach loop.
                                     string filename = Path.GetFileName(currentFile);
                                     var bitmap = new Bitmap(currentFile);

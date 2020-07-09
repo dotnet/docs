@@ -23,8 +23,8 @@ Gets a pointer to an `ITypeLib` instance that represents the type library that h
   
 ```cpp  
 HRESULT GetTypeLibFromMetaData (  
-    [in]  BSTR     strModule,   
-    [in]  BSTR     strTlbName,   
+    [in]  BSTR     strModule,
+    [in]  BSTR     strTlbName,
     [out] ITypeLib **ppITL  
 );  
 ```  
@@ -40,7 +40,7 @@ HRESULT GetTypeLibFromMetaData (
  [out] A pointer to a location that receives the address of the `ITypeLib` instance that represents the type library.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,4 +50,4 @@ HRESULT GetTypeLibFromMetaData (
   
 ## See also
 
-- [IMetaDataConverter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataconverter-interface.md)
+- [IMetaDataConverter Interface](imetadataconverter-interface.md)

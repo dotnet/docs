@@ -21,7 +21,7 @@ Validates managed module images, and notifies the operating system loader after 
 ## Syntax  
   
 ```cpp  
-STDAPI _CorValidateImage (   
+STDAPI _CorValidateImage (
    [in] PVOID* ImageBase,  
    [in] LPCWSTR FileName  
 );  
@@ -53,7 +53,7 @@ STDAPI _CorValidateImage (
   
 - Returns to the loader when the managed module images are loaded.  
   
- For executable images, the operating system loader then calls the [_CorExeMain](../../../../docs/framework/unmanaged-api/hosting/corexemain-function.md) function, regardless of the entry point specified in the executable. For DLL assembly images, the loader calls the [_CorDllMain](../../../../docs/framework/unmanaged-api/hosting/cordllmain-function.md) function.  
+ For executable images, the operating system loader then calls the [_CorExeMain](corexemain-function.md) function, regardless of the entry point specified in the executable. For DLL assembly images, the loader calls the [_CorDllMain](cordllmain-function.md) function.  
   
  `_CorExeMain` or `_CorDllMain` performs the following actions:  
   
@@ -63,10 +63,10 @@ STDAPI _CorValidateImage (
   
 - Begins execution.  
   
- The loader calls the [_CorImageUnloading](../../../../docs/framework/unmanaged-api/hosting/corimageunloading-function.md) function when managed module images are unloaded. However, this function does not perform any action; it just returns.  
+ The loader calls the [_CorImageUnloading](corimageunloading-function.md) function when managed module images are unloaded. However, this function does not perform any action; it just returns.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -76,4 +76,4 @@ STDAPI _CorValidateImage (
   
 ## See also
 
-- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

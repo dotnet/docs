@@ -14,7 +14,9 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet remove [<PROJECT>] package <PACKAGE_NAME> [-h|--help]
+dotnet remove [<PROJECT>] package <PACKAGE_NAME>
+
+dotnet remove package -h|--help
 ```
 
 ## Description

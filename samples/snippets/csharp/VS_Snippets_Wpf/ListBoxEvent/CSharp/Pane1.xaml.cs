@@ -13,7 +13,7 @@ using System.Collections.ObjectModel;
 namespace ListBoxEvent
 {
 
-    //<Snippet6> 
+    //<Snippet6>
     public class myColors : ObservableCollection<string>
     {
         public myColors()

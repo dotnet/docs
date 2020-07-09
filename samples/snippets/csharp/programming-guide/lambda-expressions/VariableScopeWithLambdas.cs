@@ -30,9 +30,9 @@ namespace lambda_expressions
         }
 
         public static void Main()
-        {  
+        {
             var game = new VariableCaptureGame();
-            
+
             int gameInput = 5;
             game.Run(gameInput);
 

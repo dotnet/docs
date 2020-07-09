@@ -27,12 +27,12 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
 ## See also
 
 - [Get Visual Basic](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
-Provides download links for Visual Studio versions that include Visual Basic support, including free versions.
+Provides download links for Visual Studio versions that come with Visual Basic support, including free versions.
 
 - [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)
 Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.
 
-- [Samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)
+- [Samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)
 Provides links to sample code in Visual Basic.
 
 - [Walkthroughs](../walkthroughs.md)

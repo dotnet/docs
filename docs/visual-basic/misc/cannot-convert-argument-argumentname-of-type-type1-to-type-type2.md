@@ -14,4 +14,4 @@ A conversion operation attempts to convert an argument to an incompatible type.
   
 ## See also
 
-- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Type Conversions in Visual Basic](../programming-guide/language-features/data-types/type-conversions.md)

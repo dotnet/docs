@@ -61,7 +61,7 @@ HRESULT VirtualQuery (
 > The operating system's implementation of `VirtualQuery` does not incur deadlock and can run to completion with random threads suspended in user code. Use great caution when implementing a hosted version of this method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -71,4 +71,4 @@ HRESULT VirtualQuery (
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

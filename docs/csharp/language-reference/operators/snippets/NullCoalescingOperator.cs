@@ -60,7 +60,7 @@ namespace operators
             // <SnippetAssignment>
             List<int> numbers = null;
             int? a = null;
-            
+
             (numbers ??= new List<int>()).Add(5);
             Console.WriteLine(string.Join(" ", numbers));  // output: 5
 

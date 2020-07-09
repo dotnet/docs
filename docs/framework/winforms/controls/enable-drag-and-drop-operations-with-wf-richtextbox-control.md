@@ -22,8 +22,8 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
 2. Write code in the event handler of the <xref:System.Windows.Forms.RichTextBox.DragEnter> event. Use an `if` statement to ensure that the data being dragged is of an acceptable type (in this case, text). The <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> property can be set to any value of the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
     ```vb  
-    Private Sub RichTextBox1_DragEnter(ByVal sender As Object, _   
-       ByVal e As System.Windows.Forms.DragEventArgs) _   
+    Private Sub RichTextBox1_DragEnter(ByVal sender As Object, _
+       ByVal e As System.Windows.Forms.DragEventArgs) _
        Handles RichTextBox1.DragEnter  
        If (e.Data.GetDataPresent(DataFormats.Text)) Then  
           e.Effect = DragDropEffects.Copy  
@@ -34,10 +34,10 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
     ```  
   
     ```csharp  
-    private void richTextBox1_DragEnter(object sender,   
+    private void richTextBox1_DragEnter(object sender,
     System.Windows.Forms.DragEventArgs e)  
     {  
-       if (e.Data.GetDataPresent(DataFormats.Text))   
+       if (e.Data.GetDataPresent(DataFormats.Text))
           e.Effect = DragDropEffects.Copy;  
        else  
           e.Effect = DragDropEffects.None;  
@@ -75,10 +75,10 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
      In the example below, the code sets the <xref:System.Windows.Forms.RichTextBox.Text%2A> property of the <xref:System.Windows.Forms.RichTextBox> control equal to the data being dragged. If there is already text in the <xref:System.Windows.Forms.RichTextBox> control, the dragged text is inserted at the insertion point.  
   
     ```vb  
-    Private Sub RichTextBox1_DragDrop(ByVal sender As Object, _   
-       ByVal e As System.Windows.Forms.DragEventArgs) _   
+    Private Sub RichTextBox1_DragDrop(ByVal sender As Object, _
+       ByVal e As System.Windows.Forms.DragEventArgs) _
        Handles RichTextBox1.DragDrop  
-       Dim i As Int16   
+       Dim i As Int16
        Dim s As String  
   
        ' Get start position to drop the text.  
@@ -94,7 +94,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
     ```  
   
     ```csharp  
-    private void richTextBox1_DragDrop(object sender,   
+    private void richTextBox1_DragDrop(object sender,
     System.Windows.Forms.DragEventArgs e)  
     {  
        int i;  
@@ -106,7 +106,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        richTextBox1.Text = richTextBox1.Text.Substring(0,i);  
   
        // Drop the text on to the RichTextBox.  
-       richTextBox1.Text = richTextBox1.Text +   
+       richTextBox1.Text = richTextBox1.Text +
           e.Data.GetData(DataFormats.Text).ToString();  
        richTextBox1.Text = richTextBox1.Text + s;  
     }  
@@ -127,7 +127,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
   
        // Drop the text on to the RichTextBox.  
        String ^str = String::Concat(richTextBox1->Text, e->Data  
-       ->GetData(DataFormats->Text)->ToString());   
+       ->GetData(DataFormats->Text)->ToString());
        richTextBox1->Text = String::Concat(str, s);  
        }  
     ```  
@@ -141,7 +141,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
     ```  
   
     ```cpp  
-    this->richTextBox1->DragDrop += gcnew   
+    this->richTextBox1->DragDrop += gcnew
        System::Windows::Forms::DragEventHandler  
        (this, &Form1::richTextBox1_DragDrop);  
     ```  

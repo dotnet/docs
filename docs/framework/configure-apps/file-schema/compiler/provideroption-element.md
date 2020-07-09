@@ -69,8 +69,8 @@ Specifies the compiler version attributes for a language provider.
       <compiler  
         language="c#;cs;csharp"  
         extension=".cs"  
-        type="Microsoft.CSharp.CSharpCodeProvider, System,   
-          Version=2.0.3600.0, Culture=neutral,   
+        type="Microsoft.CSharp.CSharpCodeProvider, System,
+          Version=2.0.3600.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089"  
         compilerOptions="/optimize"  
         warningLevel="1" >  

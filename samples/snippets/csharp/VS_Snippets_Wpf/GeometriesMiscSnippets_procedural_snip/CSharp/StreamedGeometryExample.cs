@@ -19,7 +19,7 @@ namespace SDKSample
             // Create a StreamGeometry to use to specify myPath.
             StreamGeometry ctx = BuildRegularPolygon(new Point(200, 200), 200, 8, 0);
 
-            // Use the StreamGeometry returned by the BuildRegularPolygon to 
+            // Use the StreamGeometry returned by the BuildRegularPolygon to
             // specify the shape of the path.
             myPath.Data = ctx;
 

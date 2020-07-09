@@ -11,10 +11,10 @@ namespace L2S_QueryCache
         {
             //<snippet1>
             NorthwindDataContext context = new NorthwindDataContext();
-            
+
             // This query does not retrieve an object from
             // the query cache because it is the first query.
-            // There are no objects in the cache. 
+            // There are no objects in the cache.
             var a = context.Customers.First();
             Console.WriteLine("First query gets customer {0}. ", a.CustomerID);
 

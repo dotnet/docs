@@ -45,7 +45,7 @@ This topic introduces the purpose of type conversion from string as a general XA
 ### Native Type Converters  
  In the WPF and .NET Framework implementation of the XAML parser, there are certain types that have native type conversion handling, yet are not types that might conventionally be thought of as primitives. An example of such a type is <xref:System.DateTime>. The reason for this is based on how the .NET Framework architecture works: the type <xref:System.DateTime> is defined in mscorlib, the most basic library in .NET. <xref:System.DateTime> is not permitted to be attributed with an attribute that comes from another assembly that introduces a dependency (<xref:System.ComponentModel.TypeConverterAttribute> is from System) so the usual type converter discovery mechanism by attributing cannot be supported. Instead, the XAML parser has a list of types that need such native processing and processes these similarly to how the true primitives are processed. (In the case of <xref:System.DateTime> this involves a call to <xref:System.DateTime.Parse%2A>.)  
   
-<a name="Implementing_a_Type_Converter"></a>   
+<a name="Implementing_a_Type_Converter"></a>
 ## Implementing a Type Converter  
   
 ### TypeConverter  
@@ -96,7 +96,7 @@ This topic introduces the purpose of type conversion from string as a general XA
 ### Implementing CanConvertFrom  
  Your <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> implementation should return `true` for `sourceType` of type <xref:System.String>, and otherwise defer to the base implementation.  
   
-<a name="Applying_the_TypeConverterAttribute"></a>   
+<a name="Applying_the_TypeConverterAttribute"></a>
 ## Applying the TypeConverterAttribute  
  In order for your custom type converter to be used as the acting type converter for a custom class by a XAML processor, you must apply the <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. With this attribute applied, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
   

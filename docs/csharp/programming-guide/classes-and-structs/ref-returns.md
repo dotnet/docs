@@ -76,7 +76,7 @@ ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 
 Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
 
-The `ref` keyword is used both before the local variable declaration *and* before the method call. 
+The `ref` keyword is used both before the local variable declaration *and* before the method call.
 
 You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
 
@@ -84,7 +84,7 @@ You can access a value by reference in the same way. In some cases, accessing a 
 ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
-The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
+The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value."
 
 Prior to C# 7.3, ref local variables couldn't be reassigned to refer to different storage after being initialized. That restriction has been removed. The following example shows a reassignment:
 
@@ -97,7 +97,7 @@ refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to differe
 
 ## Ref returns and ref locals: an example
 
-The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0. 
+The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0.
 
 [!code-csharp[ref-returns](../../../../samples/snippets/csharp/programming-guide/ref-returns/NumberStore.cs#1)]
 

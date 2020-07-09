@@ -15,4 +15,4 @@ The specified `For...Next` control values have different types, and therefore ar
 ## See also
 
 - [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)
-- [For...Next Statement](../../visual-basic/language-reference/statements/for-next-statement.md)
+- [For...Next Statement](../language-reference/statements/for-next-statement.md)

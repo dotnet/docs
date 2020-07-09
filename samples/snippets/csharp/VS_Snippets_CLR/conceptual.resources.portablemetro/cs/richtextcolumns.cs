@@ -24,7 +24,7 @@ namespace ConsumerCS.Common
     ///             <RichTextBlockOverflow Width="400" Margin="50,0,0,0"/>
     ///         </DataTemplate>
     ///     </RichTextColumns.ColumnTemplate>
-    ///     
+    ///
     ///     <RichTextBlock Width="400">
     ///         <Paragraph>
     ///             <Run Text="{Binding Content}"/>

@@ -103,7 +103,7 @@ The accessor methods are typically not enough to provide a means to place attach
 ## XAML-Related CLR Attributes
 
 Correctly attributing your types, members, and assemblies is important in order to report XAML type system information to .NET XAML Services. Reporting XAML type system information is relevant if either of the following situations apply:
- 
+
 - You intend your types for use with XAML systems that are directly based on .NET XAML Services XAML readers and XAML writers.
 - You define or use a XAML-utilizing framework that's based on those XAML readers and XAML writers.
 

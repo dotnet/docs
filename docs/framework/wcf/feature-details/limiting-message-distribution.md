@@ -65,4 +65,4 @@ The answers to these questions can help you determine whether to use Hop Count, 
 
 ## See also
 
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)

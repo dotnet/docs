@@ -23,7 +23,7 @@ class XmlDocumentValidationExample
             XmlDocument document = new XmlDocument();
             document.Load(reader);
 
-            // Make an invalid change to the first and last 
+            // Make an invalid change to the first and last
             // price elements in the XML document, and write
             // the XmlSchemaInfo values assigned to the price
             // element during load validation to the console.
@@ -42,7 +42,7 @@ class XmlDocumentValidationExample
 
             XmlNodeList priceNodes = document.SelectNodes(@"/bk:bookstore/bk:book/bk:price", manager);
             XmlNode lastprice = priceNodes[priceNodes.Count - 1];
-            
+
             lastprice.InnerXml = "B";
 
             // Validate the XML document with the invalid changes.

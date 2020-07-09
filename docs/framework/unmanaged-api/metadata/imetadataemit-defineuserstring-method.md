@@ -22,10 +22,10 @@ Gets a metadata token for the specified literal string.
 ## Syntax  
   
 ```cpp  
-HRESULT DefineUserString (   
-    [in]  LPCWSTR     szString,   
-    [in]  ULONG       cchString,   
-    [out] mdString    *pstk   
+HRESULT DefineUserString (
+    [in]  LPCWSTR     szString,
+    [in]  ULONG       cchString,
+    [out] mdString    *pstk
 );  
 ```  
   
@@ -40,7 +40,7 @@ HRESULT DefineUserString (
  [out] The string token assigned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,5 +50,5 @@ HRESULT DefineUserString (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

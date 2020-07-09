@@ -14,7 +14,7 @@ namespace FeedMapping
     {
         public SomeData() { }
     }
-   
+
     class Snippets
     {
         public void Snippet0()

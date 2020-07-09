@@ -7,18 +7,18 @@ Public Class CompareSample
         Dim string1 As String = "file"
         Dim string2 As String = "FILE"
         Dim compareResult As Integer
-        
-        compareResult = String.Compare(string1, string2, _
-                                       StringComparison.Ordinal)   
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}", 
-                          StringComparison.Ordinal, string1, string2, 
-                          compareResult) 
 
-        compareResult = String.Compare(string1, string2, 
+        compareResult = String.Compare(string1, string2, _
+                                       StringComparison.Ordinal)
+        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
+                          StringComparison.Ordinal, string1, string2,
+                          compareResult)
+
+        compareResult = String.Compare(string1, string2,
                                        StringComparison.OrdinalIgnoreCase)
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}", 
-                          StringComparison.OrdinalIgnoreCase, string1, string2, 
-                          compareResult) 
+        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
+                          StringComparison.OrdinalIgnoreCase, string1, string2,
+                          compareResult)
     End Sub
 End Class
 ' The example displays the following output:

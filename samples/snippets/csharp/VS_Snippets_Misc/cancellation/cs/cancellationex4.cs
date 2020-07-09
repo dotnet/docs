@@ -11,7 +11,7 @@ class Example
 
         StartWebRequest(cts.Token);
 
-        // cancellation will cause the web 
+        // cancellation will cause the web
         // request to be cancelled
         cts.Cancel();
     }
@@ -21,7 +21,7 @@ class Example
         WebClient wc = new WebClient();
         wc.DownloadStringCompleted += (s, e) => Console.WriteLine("Request completed.");
 
-        // Cancellation on the token will 
+        // Cancellation on the token will
         // call CancelAsync on the WebClient.
         token.Register(() =>
         {

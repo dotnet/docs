@@ -10,7 +10,7 @@ namespace SDKSample
     public class app : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -88,7 +88,7 @@ namespace SDKSample
             myDockPanel.Children.Add(myBorder3);
             myDockPanel.Children.Add(myBorder4);
             myDockPanel.Children.Add(myBorder5);
-                       
+
             // Add the parent Canvas as the Content of the Window Object
             mainWindow.Content = myDockPanel;
             mainWindow.Show ();

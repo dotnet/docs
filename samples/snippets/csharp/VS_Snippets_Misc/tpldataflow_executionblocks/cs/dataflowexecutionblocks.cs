@@ -44,7 +44,7 @@ class DataflowExecutionBlocks
          }
       }
 
-      // Create an ActionBlock<int> object that prints to the console 
+      // Create an ActionBlock<int> object that prints to the console
       // the number of bytes read.
       var printResult = new ActionBlock<int>(zeroBytesRead =>
       {
@@ -52,12 +52,12 @@ class DataflowExecutionBlocks
             Path.GetFileName(tempFile), zeroBytesRead);
       });
 
-      // Create a TransformBlock<string, int> object that calls the 
+      // Create a TransformBlock<string, int> object that calls the
       // CountBytes function and returns its result.
       var countBytes = new TransformBlock<string, int>(
          new Func<string, int>(CountBytes));
 
-      // Link the TransformBlock<string, int> object to the 
+      // Link the TransformBlock<string, int> object to the
       // ActionBlock<int> object.
       countBytes.LinkTo(printResult);
 
@@ -65,7 +65,7 @@ class DataflowExecutionBlocks
       // object when the TransformBlock<string, int> finishes.
       countBytes.Completion.ContinueWith(delegate { printResult.Complete(); });
 
-      // Post the path to the temporary file to the 
+      // Post the path to the temporary file to the
       // TransformBlock<string, int> object.
       countBytes.Post(tempFile);
 
@@ -88,7 +88,7 @@ tmp4FBE.tmp contains 2081 zero bytes.
 class Program2
 {
    // <snippet2>
-   // Asynchronously computes the number of zero bytes that the provided file 
+   // Asynchronously computes the number of zero bytes that the provided file
    // contains.
    static async Task<int> CountBytesAsync(string path)
    {
@@ -113,7 +113,7 @@ class Program2
    static void Foo()
    {
       // <snippet3>
-      // Create a TransformBlock<string, int> object that calls the 
+      // Create a TransformBlock<string, int> object that calls the
       // CountBytes function and returns its result.
       var countBytesAsync = new TransformBlock<string, int>(async path =>
       {

@@ -33,13 +33,13 @@ namespace Microsoft.ServiceModel.Samples
         {
             //this file path assumes the image is in
             // the Service folder and the service is executing
-            // in service/bin 
+            // in service/bin
             string filePath = Path.Combine(
                 System.Environment.CurrentDirectory,
                 ".\\..\\image.jpg");
-            //open the file, this could throw an exception 
+            //open the file, this could throw an exception
             //(e.g. if the file is not found)
-            //having includeExceptionDetailInFaults="True" in config 
+            //having includeExceptionDetailInFaults="True" in config
             // would cause this exception to be returned to the client
             try
             {

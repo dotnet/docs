@@ -27,15 +27,15 @@ A *lambda expression* is an expression of any of the following two forms:
 
 Use the [lambda declaration operator `=>`](../../language-reference/operators/lambda-operator.md) to separate the lambda's parameter list from its body. To create a lambda expression, you specify input parameters (if any) on the left side of the lambda operator and an expression or a statement block on the other side.
 
-Any lambda expression can be converted to a [delegate](../../language-reference/builtin-types/reference-types.md#the-delegate-type) type. The delegate type to which a lambda expression can be converted is defined by the types of its parameters and return value. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter that’s named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
+Any lambda expression can be converted to a [delegate](../../language-reference/builtin-types/reference-types.md#the-delegate-type) type. The delegate type to which a lambda expression can be converted is defined by the types of its parameters and return value. If a lambda expression doesn't return a value, it can be converted to one of the `Action` delegate types; otherwise, it can be converted to one of the `Func` delegate types. For example, a lambda expression that has two parameters and returns no value can be converted to an <xref:System.Action%602> delegate. A lambda expression that has one parameter and returns a value can be converted to a <xref:System.Func%602> delegate. In the following example, the lambda expression `x => x * x`, which specifies a parameter that's named `x` and returns the value of `x` squared, is assigned to a variable of a delegate type:
 
 [!code-csharp-interactive[lambda is delegate](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Delegate)]
 
-Expression lambdas also can be converted to the [expression tree](../concepts/expression-trees/index.md) types, as the following example shows:
+Expression lambdas can also be converted to the [expression tree](../concepts/expression-trees/index.md) types, as the following example shows:
 
 [!code-csharp-interactive[lambda is expression tree](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#ExpressionTree)]
 
-You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You also can use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
+You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You can also use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
 
 [!code-csharp-interactive[lambda is argument in LINQ](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
 
@@ -135,7 +135,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples
 
-Starting with C# 7.0, the C# language provides built-in support for [tuples](../../tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
+Starting with C# 7.0, the C# language provides built-in support for [tuples](../../language-reference/builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with three components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with three components that contains the result of the multiplications.
 
@@ -145,7 +145,7 @@ Ordinarily, the fields of a tuple are named `Item1`, `Item2`, etc. You can, howe
 
 [!code-csharp-interactive[lambda and named tuples](~/samples/snippets/csharp/programming-guide/lambda-expressions/LambdasAndTuples.cs#WithComponentName)]
 
-For more information about C# tuples, see [C# tuple types](../../tuples.md).
+For more information about C# tuples, see [Tuple types](../../language-reference/builtin-types/value-tuples.md).
 
 ## Lambdas with the standard query operators
 
@@ -224,7 +224,6 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 - [C# Programming Guide](../index.md)
 - [LINQ (Language-Integrated Query)](../concepts/linq/index.md)
 - [Expression Trees](../concepts/expression-trees/index.md)
-- [Local functions compared to lambda expressions](../../local-functions-vs-lambdas.md)
-- [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)
+- [Local functions vs. lambda expressions](../classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Recursive lambda expressions](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

@@ -29,7 +29,7 @@ HRESULT CreateReaderForInMemorySymbols (
   
 ## Parameters  
  riid  
- [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).  
+ [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../diagnostics/isymunmanagedreader-interface.md).  
   
  ppObj  
  [out] Pointer to a pointer to the returned interface.  
@@ -55,7 +55,7 @@ HRESULT CreateReaderForInMemorySymbols (
  Dynamic modules do not have any symbols available until the first type has been loaded (as indicated by the [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

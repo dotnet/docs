@@ -9,33 +9,33 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 {
 
     public partial class StateExample : Page
-    {        
-        
+    {
+
         private void parentTimelineStateInvalidated(object sender, EventArgs args)
         {
             Clock myClock = (Clock)sender;
-            ParentTimelineStateTextBlock.Text += 
-                myClock.CurrentTime.ToString() + ":" 
-                + myClock.CurrentState.ToString() + " ";        
+            ParentTimelineStateTextBlock.Text +=
+                myClock.CurrentTime.ToString() + ":"
+                + myClock.CurrentState.ToString() + " ";
         }
-        
+
         private void animation1StateInvalidated(object sender, EventArgs args)
         {
-        
+
             Clock myClock = (Clock)sender;
-            
-            Animation1StateTextBlock.Text += 
-                myClock.Parent.CurrentTime.ToString() + ":" 
-                + myClock.CurrentState.ToString() + " ";     
+
+            Animation1StateTextBlock.Text +=
+                myClock.Parent.CurrentTime.ToString() + ":"
+                + myClock.CurrentState.ToString() + " ";
         }
-        
+
         private void animation2StateInvalidated(object sender, EventArgs args)
         {
 
             Clock myClock = (Clock)sender;
-            Animation2StateTextBlock.Text += 
-                myClock.Parent.CurrentTime.ToString() + ":" 
-                + myClock.CurrentState.ToString() + " ";                 
+            Animation2StateTextBlock.Text +=
+                myClock.Parent.CurrentTime.ToString() + ":"
+                + myClock.CurrentState.ToString() + " ";
         }
     }
 }

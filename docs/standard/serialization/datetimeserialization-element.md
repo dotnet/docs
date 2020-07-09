@@ -1,5 +1,6 @@
 ---
 title: "<dateTimeSerialization> Element"
+description: This article describes the <dateTimeSerialization> element, which determines the serialization mode of DateTime objects.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dateTimeSerialization element"
@@ -49,7 +50,7 @@ Determines the serialization mode of <xref:System.DateTime> objects.
 - <xref:System.DateTime>
 - <xref:System.Xml.Serialization.XmlSchemaImporter>
 - <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
-- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
-- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)
+- [Configuration File Schema](../../framework/configure-apps/file-schema/index.md)
+- [\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](add-element-for-schemaimporterextensions.md)
+- [\<system.xml.serialization> Element](system-xml-serialization-element.md)

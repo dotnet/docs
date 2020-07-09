@@ -1,5 +1,6 @@
 ---
 title: "Using Streams on the Network"
+description: The .NET Framework represents network resources as streams. The NetworkStream class implements the Stream class for use with network resources.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -32,7 +33,7 @@ Network resources are represented in the .NET Framework as streams. By treating 
  To send data to the network using the returned stream, call <xref:System.Net.WebRequest.GetRequestStream%2A> on your <xref:System.Net.WebRequest>. The **WebRequest** will send request headers to the server; then you can send data to the network resource by calling the <xref:System.IO.Stream.BeginWrite%2A>, <xref:System.IO.Stream.EndWrite%2A>, or <xref:System.IO.Stream.Write%2A> method on the returned stream. Some protocols, such as HTTP, may require you to set protocol-specific properties before sending data. The following code example shows how to set HTTP-specific properties for sending data. It assumes that the variable `sendData` contains the data to send and that the variable `sendLength` is the number of bytes of data to send.  
   
 ```csharp  
-HttpWebRequest request =   
+HttpWebRequest request =
    (HttpWebRequest) WebRequest.Create("http://www.contoso.com/");  
 request.Method = "POST";  
 request.ContentLength = sendLength;  
@@ -80,7 +81,7 @@ End Try
 // Create a response object.  
 WebResponse response = request.GetResponse();  
 // Get a readable stream from the server.  
-StreamReader sr =   
+StreamReader sr =
    new StreamReader(response.GetResponseStream(), Encoding.ASCII);  
 // Use the stream. Remember when you are through with the stream to close it.  
 sr.Close();  
@@ -90,7 +91,7 @@ sr.Close();
 ' Create a response object.  
 Dim response As WebResponse = request.GetResponse()  
 ' Get a readable stream from the server.  
-Dim sr As _   
+Dim sr As _
    New StreamReader(response.GetResponseStream(), Encoding.ASCII)  
 ' Use the stream. Remember when you are through with the stream to close it.  
 sr.Close()  

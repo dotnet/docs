@@ -57,4 +57,4 @@ You can see that the entire array of strings is not converted to uppercase befor
 
 ## See also
 
-- [Tutorial: Deferred Execution (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-deferred-execution.md)
+- [Tutorial: Deferred Execution (Visual Basic)](tutorial-deferred-execution.md)

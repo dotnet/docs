@@ -20,7 +20,7 @@ Specifies common language runtime startup information.
 ## Syntax
 
 ```xml
-<startup useLegacyV2RuntimeActivationPolicy="true|false" > 
+<startup useLegacyV2RuntimeActivationPolicy="true|false" >
 </startup>
 ```
 

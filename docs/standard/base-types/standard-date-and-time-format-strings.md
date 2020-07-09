@@ -1,5 +1,6 @@
 ---
 title: "Standard date and time format strings"
+description: In this article, learn to use a standard date and time format string to define the text representation of a date and time value in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -17,14 +18,14 @@ ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
 ---
 # Standard date and time format strings
 
-A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
+A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom date and time format strings](custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
 
 - To define the string that results from a formatting operation.
 
 - To define the text representation of a date and time value that can be converted to a <xref:System.DateTime> or <xref:System.DateTimeOffset> value by a parsing operation.
 
 > [!TIP]
-> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb).
+> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 Standard date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
@@ -48,7 +49,7 @@ Standard date and time format strings can be used with both <xref:System.DateTim
 |"T"|Long time pattern.<br /><br /> More information: [The Long Time ("T") Format Specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
 |"u"|Universal sortable date/time pattern.<br /><br /> More information: [The Universal Sortable ("u") Format Specifier](#UniversalSortable).|With a <xref:System.DateTime> value: 2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z<br /><br /> With a <xref:System.DateTimeOffset> value: 2009-06-15T13:45:30 -> 2009-06-15 20:45:30Z|
 |"U"|Universal full date/time pattern.<br /><br /> More information: [The Universal Full ("U") Format Specifier](#UniversalFull).|2009-06-15T13:45:30 -> Monday, June 15, 2009 8:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 20:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 8:45:30 μμ (el-GR)|
-|"Y", "y"|Year month pattern.<br /><br /> More information: [The Year Month ("Y") Format Specifier](#YearMonth).|2009-06-15T13:45:30 -> June, 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
+|"Y", "y"|Year month pattern.<br /><br /> More information: [The Year Month ("Y") Format Specifier](#YearMonth).|2009-06-15T13:45:30 -> June 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
 |Any other single character|Unknown specifier.|Throws a run-time <xref:System.FormatException>.|
 
 ## How Standard Format Strings Work
@@ -434,7 +435,7 @@ The following example uses the "y" format specifier to display a date and time v
 
 The settings in the **Regional and Language Options** item in Control Panel influence the result string produced by a formatting operation. These settings are used to initialize the <xref:System.Globalization.DateTimeFormatInfo> object associated with the current thread culture, which provides values used to govern formatting. Computers that use different settings generate different result strings.
 
-In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.
+In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.
 
 ### DateTimeFormatInfo Properties
 
@@ -444,7 +445,7 @@ Formatting is influenced by properties of the current <xref:System.Globalization
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - <xref:System.DateTimeOffset?displayProperty=nameWithType>
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
-- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)
-- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-vb)
+- [Formatting Types](formatting-types.md)
+- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
+- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

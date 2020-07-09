@@ -25,7 +25,7 @@ The `Key` keyword enables you to specify behavior for properties of anonymous ty
   
  If two instances are declared with only non-key properties, identical in name, type, order, and value, the two instances are not equal. An instance without key properties is equal only to itself.  
   
- For more information about the conditions under which two anonymous type instances are instances of the same anonymous type, see [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
+ For more information about the conditions under which two anonymous type instances are instances of the same anonymous type, see [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md).  
   
 ## Hash Code Calculation  
  Like <xref:System.Object.Equals%2A>, the hash function that is defined in <xref:System.Object.GetHashCode%2A> for an anonymous type is based on the key properties of the type. The following examples show the interaction between key properties and hash code values.  
@@ -49,6 +49,6 @@ The `Key` keyword enables you to specify behavior for properties of anonymous ty
   
 ## See also
 
-- [Anonymous Type Definition](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
-- [How to: Infer Property Names and Types in Anonymous Type Declarations](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
-- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Anonymous Type Definition](../../programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
+- [How to: Infer Property Names and Types in Anonymous Type Declarations](../../programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
+- [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)

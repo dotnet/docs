@@ -10,7 +10,7 @@ public class Example
       if (match.Success)
       {
          // <Snippet13>
-         Group group = match.Groups[ctr];         
+         Group group = match.Groups[ctr];
          // </Snippet13>
       }
    }

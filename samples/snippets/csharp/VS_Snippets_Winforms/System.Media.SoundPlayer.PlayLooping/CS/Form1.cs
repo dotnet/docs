@@ -66,9 +66,9 @@ namespace SoundPlayerPlayLoopingExample
             this.playLoopingButton = new System.Windows.Forms.Button();
             this.stopPlayingButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
+            //
             // playLoopingButton
-            // 
+            //
             this.playLoopingButton.Location = new System.Drawing.Point(12, 12);
             this.playLoopingButton.Name = "playLoopingButton";
             this.playLoopingButton.Size = new System.Drawing.Size(87, 23);
@@ -76,9 +76,9 @@ namespace SoundPlayerPlayLoopingExample
             this.playLoopingButton.Text = "Play Looping";
             this.playLoopingButton.UseVisualStyleBackColor = true;
             this.playLoopingButton.Click += new System.EventHandler(this.playLoopingButton_Click);
-            // 
+            //
             // stopPlayingButton
-            // 
+            //
             this.stopPlayingButton.Location = new System.Drawing.Point(105, 12);
             this.stopPlayingButton.Name = "stopPlayingButton";
             this.stopPlayingButton.Size = new System.Drawing.Size(75, 23);
@@ -86,9 +86,9 @@ namespace SoundPlayerPlayLoopingExample
             this.stopPlayingButton.Text = "Stop";
             this.stopPlayingButton.UseVisualStyleBackColor = true;
             this.stopPlayingButton.Click += new System.EventHandler(this.stopPlayingButton_Click);
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(195, 51);

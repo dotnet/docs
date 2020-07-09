@@ -90,7 +90,7 @@ class QueryBySize
         }  
   
         // Group the files according to their size, leaving out  
-        // files that are less than 200000 bytes.   
+        // files that are less than 200000 bytes.
         var querySizeGroups =  
             from file in fileList  
             let len = GetFileLength(file)  
@@ -138,7 +138,7 @@ class QueryBySize
   
 ## Compiling the Code  
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
- 
+
 ## See also
 
 - [LINQ to Objects (C#)](./linq-to-objects.md)

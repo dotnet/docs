@@ -13,8 +13,8 @@ HRESULT DecodeEvent(
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
         [in] CorDebugRecordFormat format,  
-        [in] DWORD dwFlags,   
-        [in] DWORD dwThreadId,   
+        [in] DWORD dwFlags,
+        [in] DWORD dwThreadId,
         [out] ICorDebugDebugEvent **ppEvent  
 );  
 ```  
@@ -44,7 +44,7 @@ HRESULT DecodeEvent(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

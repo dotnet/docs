@@ -22,13 +22,13 @@ Provides methods that enable the host to get the probing identities of an assemb
   
 |Method|Description|  
 |------------|-----------------|  
-|[Get Method](../../../../docs/framework/unmanaged-api/hosting/iclrprobingassemblyenum-get-method.md)|Gets the assembly identity at the specified index.|  
+|[Get Method](iclrprobingassemblyenum-get-method.md)|Gets the assembly identity at the specified index.|  
   
 ## Remarks  
- Methods such as [ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-getprobingassembliesfromreference-method.md) return an `ICLRProbingAssemblyEnum` instance.  
+ Methods such as [ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference](iclrassemblyidentitymanager-getprobingassembliesfromreference-method.md) return an `ICLRProbingAssemblyEnum` instance.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,6 +38,6 @@ Provides methods that enable the host to get the probing identities of an assemb
   
 ## See also
 
-- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

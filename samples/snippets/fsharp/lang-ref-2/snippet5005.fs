@@ -10,12 +10,6 @@ let (|Cube|_|) (x : int) =
   if isNearlyIntegral ((float x) ** ( 1.0 / 3.0)) then Some(x)
   else None
 
-let examineNumber x =
-   match x with
-      | Cube x -> printfn "%d is a cube" x
-      | Square x -> printfn "%d is a square" x
-      | _ -> ()
-
 let findSquareCubes x =
    match x with
        | Cube x & Square _ -> printfn "%d is a cube and a square" x

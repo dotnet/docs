@@ -83,7 +83,7 @@ GridV1::Grid
  In addition, you can refer to the grid control from `grid20.dll` by prefixing the control name with `GridV2` like this:  
   
 ```csharp  
-GridV2::Grid   
+GridV2::Grid
 ```  
   
 ## See also

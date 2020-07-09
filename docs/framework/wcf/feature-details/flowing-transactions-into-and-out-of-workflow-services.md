@@ -222,7 +222,7 @@ Workflow services and clients can participate in transactions.  For a service op
           {  
               Console.WriteLine("Building the server.");  
               using (WorkflowServiceHost host = new WorkflowServiceHost(new DeclarativeServiceWorkflow(), new Uri("net.tcp://localhost:8000/TransactedReceiveService/Declarative")))  
-              {                
+              {
                   //Start the server  
                   host.Open();  
                   Console.WriteLine("Service started.");  
@@ -231,7 +231,7 @@ Workflow services and clients can participate in transactions.  For a service op
                   Console.ReadLine();  
                   //Shutdown  
                   host.Close();  
-              };         
+              };
           }  
     ```  
   
@@ -275,7 +275,7 @@ Workflow services and clients can participate in transactions.  For a service op
             Console.WriteLine("Press ENTER once service is started.");  
             Console.ReadLine();  
   
-            //Start the client              
+            //Start the client
             Console.WriteLine("Starting the client.");  
             client.Run();  
             syncEvent.WaitOne();  
@@ -307,5 +307,5 @@ Workflow services and clients can participate in transactions.  For a service op
   
 ## See also
 
-- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
-- [Windows Communication Foundation Transactions Overview](../../../../docs/framework/wcf/feature-details/transactions-overview.md)
+- [Workflow Services](workflow-services.md)
+- [Windows Communication Foundation Transactions Overview](transactions-overview.md)

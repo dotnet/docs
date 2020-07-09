@@ -29,7 +29,7 @@ public interface ISampleContract
     [OperationContract(IsOneWay = false, IsTerminating=true)]  
     void Unsubscribe();  
     [OperationContract(IsOneWay = true)]  
-    void PublishPriceChange(string item, double price,   
+    void PublishPriceChange(string item, double price,
                                      double change);  
 }  
   
@@ -106,9 +106,9 @@ public class PriceChangeEventArgs : EventArgs
   
 ### To set up and build the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
 ### To run the sample on the same machine  
   
@@ -124,7 +124,7 @@ public class PriceChangeEventArgs : EventArgs
   
 1. Set up the service machine:  
   
-    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
+    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
   
     2. Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Be sure to include the files in the \bin directory.  
   
@@ -148,9 +148,9 @@ public class PriceChangeEventArgs : EventArgs
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`  

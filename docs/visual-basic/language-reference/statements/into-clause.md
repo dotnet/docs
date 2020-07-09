@@ -11,12 +11,12 @@ Identifies aggregate functions or groupings to apply to a collection.
 ## Remarks  
  The `Each` keyword is used in the following contexts:  
   
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
+ [Aggregate Clause](../queries/aggregate-clause.md)  
   
- [Group By Clause](../../../visual-basic/language-reference/queries/group-by-clause.md)  
+ [Group By Clause](../queries/group-by-clause.md)  
   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Group Join Clause](../queries/group-join-clause.md)  
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Keywords](../keywords/index.md)

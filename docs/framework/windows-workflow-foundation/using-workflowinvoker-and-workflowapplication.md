@@ -1,5 +1,6 @@
 ---
 title: "Using WorkflowInvoker and WorkflowApplication"
+description: This article describes workflow hosting using WorkflowInvoker and WorkflowApplication in Windows Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
 ---
@@ -79,8 +80,8 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  The following code example is like the previous example except that the active bookmarks are enumerated before the bookmark is resumed. The workflow is started, and once the <xref:System.Activities.Bookmark> is created and the workflow goes idle, <xref:System.Activities.WorkflowApplication.GetBookmarks%2A> is called. When the workflow is completed, the following output is displayed to the console.  
   
  **What is your name?**  
-**BookmarkName: UserName - OwnerDisplayName: ReadLine**   
-**Steve**   
+**BookmarkName: UserName - OwnerDisplayName: ReadLine**
+**Steve**
 **Hello, Steve**
 
 [!code-csharp[CFX_WorkflowApplicationExample#14](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
@@ -88,7 +89,7 @@ Windows Workflow Foundation (WF) provides several methods of hosting workflows. 
  The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial](getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
   
  **BookmarkName: EnterGuess - OwnerDisplayName: ReadInt**
- 
+
  [!code-csharp[CFX_WorkflowApplicationExample#2](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
   
 ## Summary  

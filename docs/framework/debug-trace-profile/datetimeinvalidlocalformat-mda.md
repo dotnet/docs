@@ -1,5 +1,6 @@
 ---
 title: "dateTimeInvalidLocalFormat MDA"
+description: Review the dateTimeInvalidLocalFormat managed debugging assistant (MDA), which is activated when a UTC-stored DateTime value gets a local-only DateTime format.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dates [.NET Framework], formatting"
@@ -74,7 +75,7 @@ String serialized = XMLConvert.ToString(myDateTime);
   
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;  
-String serialized = XmlConvert.ToString(myDateTime,   
+String serialized = XmlConvert.ToString(myDateTime,
     XmlDateTimeSerializationMode.RoundtripKind);  
 ```  
   

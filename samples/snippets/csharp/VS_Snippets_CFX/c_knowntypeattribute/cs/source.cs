@@ -127,30 +127,30 @@ namespace ConceptualKnownTypeSamples
     public sealed class MathService
     {
         private MathService() { }
-    
+
         //<snippet7>
         // This is in the service application code:
         static void Run()
         {
-        
+
             MathOperationData md = new MathOperationData();
 
-            // This will serialize and deserialize successfully because primitive 
+            // This will serialize and deserialize successfully because primitive
             // types like int are always known.
             int a = 100;
             md.Numbers = a;
 
-            // This will serialize and deserialize successfully because the array of 
+            // This will serialize and deserialize successfully because the array of
             // integers was added to known types.
             int[] b = new int[100];
             md.Numbers = b;
 
-            // This will serialize and deserialize successfully because the generic 
+            // This will serialize and deserialize successfully because the generic
             // List<int> is equivalent to int[], which was added to known types.
             List<int> c = new List<int>();
             md.Numbers = c;
-            // This will serialize but will not deserialize successfully because 
-            // ArrayList is a non-generic collection, which is equivalent to 
+            // This will serialize but will not deserialize successfully because
+            // ArrayList is a non-generic collection, which is equivalent to
             // an array of type object. To make it succeed, object[]
             // must be added to the known types.
             ArrayList d = new ArrayList();
@@ -158,7 +158,7 @@ namespace ConceptualKnownTypeSamples
         }
         //</snippet7>
     }
-    
+
     public class Square { }
     public class Circle { }
 

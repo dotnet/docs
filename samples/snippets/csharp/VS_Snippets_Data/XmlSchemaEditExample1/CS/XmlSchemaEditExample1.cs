@@ -8,7 +8,7 @@ class XmlSchemaEditExample
     static void Main(string[] args)
     {
         // Add the customer schema to a new XmlSchemaSet and compile it.
-        // Any schema validation warnings and errors encountered reading or 
+        // Any schema validation warnings and errors encountered reading or
         // compiling the schema are handled by the ValidationEventHandler delegate.
         XmlSchemaSet schemaSet = new XmlSchemaSet();
         schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
@@ -47,8 +47,8 @@ class XmlSchemaEditExample
         // of the Elements property.
         foreach (XmlSchemaElement element in customerSchema.Elements.Values)
         {
-            // If the qualified name of the element is "Customer", 
-            // get the complex type of the Customer element  
+            // If the qualified name of the element is "Customer",
+            // get the complex type of the Customer element
             // and the sequence particle of the complex type.
             if (element.QualifiedName.Name.Equals("Customer"))
             {

@@ -1,5 +1,6 @@
 ---
 title: "failedQI MDA"
+description: Review the failedQI managed debugging assistant (MDA) in .NET, which may be activated when a cast on or a COM call from a runtime callable wrapper (RCW) fails.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "failed QueryInterface"

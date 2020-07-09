@@ -15,7 +15,7 @@
 
             public double Hours
             {
-				get => seconds / 3600; 
+				get => seconds / 3600;
                 set => seconds = value * 3600;
             }
         }
@@ -51,14 +51,14 @@
             public string Name
             {
                 get => _name;
-                set => _name = value; 
+                set => _name = value;
             }
 
             // A read-only static property:
             public static int Counter => _counter;
 
             // A Constructor:
-            public Employee() => _counter = ++NumberOfEmployees; // Calculate the employee's number:            
+            public Employee() => _counter = ++NumberOfEmployees; // Calculate the employee's number:
         }
 
         class TestEmployee
@@ -103,7 +103,7 @@
             public new string Name
             //</Snippet4>
             {
-                get => _name; 
+                get => _name;
                 set => _name = value + ", Manager";
             }
         }
@@ -169,8 +169,8 @@
 
             public override double Area
             {
-                get => 6 * side * side;                
-                set => side = System.Math.Sqrt(value / 6);                
+                get => 6 * side * side;
+                set => side = System.Math.Sqrt(value / 6);
             }
         }
 
@@ -242,7 +242,7 @@
         class Person
         {
             private string _name;  // the name field
-            public string Name => _name;     // the Name property            
+            public string Name => _name;     // the Name property
         }
         //</Snippet8>
 
@@ -261,14 +261,14 @@
 
         //<Snippet10>
         private int _number;
-        public int Number => _number++;	// Don't do this        
+        public int Number => _number++;	// Don't do this
         //</Snippet10>
 
         //<Snippet11>
         class Employee
         {
             private string _name;
-            public string Name => _name != null ? _name : "NA"; 
+            public string Name => _name != null ? _name : "NA";
         }
         //</Snippet11>
     }
@@ -294,7 +294,7 @@
             {
                 //<Snippet13>
                 Person person = new Person();
-                person.Name = "Joe";  // the set accessor is invoked here                
+                person.Name = "Joe";  // the set accessor is invoked here
 
                 System.Console.Write(person.Name);  // the get accessor is invoked here
                 //</Snippet13>
@@ -312,7 +312,7 @@
         }
         public IEnumerable<string> Names
         {
-            get 
+            get
             {
                 return names;
             }
@@ -403,7 +403,7 @@
 
             // Keep the console open in debug mode.
             Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();        
+            Console.ReadKey();
         }
     }
 }

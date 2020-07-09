@@ -22,9 +22,9 @@ Sets a global variable value for the relative virtual address of the field refer
 ## Syntax  
   
 ```cpp  
-HRESULT SetFieldRVA (   
-    [in]  mdFieldDef  fd,   
-    [in]  ULONG       ulRVA   
+HRESULT SetFieldRVA (
+    [in]  mdFieldDef  fd,
+    [in]  ULONG       ulRVA
 );  
 ```  
   
@@ -36,7 +36,7 @@ HRESULT SetFieldRVA (
  [in] The address of a code or data area.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,5 +46,5 @@ HRESULT SetFieldRVA (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

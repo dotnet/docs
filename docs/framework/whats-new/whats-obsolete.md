@@ -43,7 +43,7 @@ You may choose not to recompile existing code against a later version of the .NE
 
     ```xml
     <configuration>
-       <startup> 
+       <startup>
           <supportedRuntime version="v4.0" />
        </startup>
     </configuration>

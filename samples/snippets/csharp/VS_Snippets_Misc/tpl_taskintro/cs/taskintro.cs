@@ -33,7 +33,7 @@ namespace TPL_Intro
 
             /* Output:
              * Hello from the calling thread.
-             * Hello from taskA. 
+             * Hello from taskA.
              */
 
             //</snippet01>
@@ -63,10 +63,10 @@ namespace TPL_Intro
     {
         // Create the task object by using an Action(Of Object) to pass in custom data
         // in the Task constructor. This is useful when you need to capture outer variables
-        // from within a loop. As an experiment, try modifying this code to 
+        // from within a loop. As an experiment, try modifying this code to
         // capture i directly in the lambda, and compare results.
         Task[] taskArray = new Task[10];
-       
+
         for(int i = 0; i < taskArray.Length; i++)
         {
             taskArray[i] = new Task((obj) =>
@@ -125,7 +125,7 @@ namespace TPL_Intro
 
                    // May be written more conveniently like this:
                    Task.Factory.StartNew(() => DoComputation2()),
-                   Task.Factory.StartNew(() => DoComputation3())                
+                   Task.Factory.StartNew(() => DoComputation3())
                };
 
             double[] results = new double[taskArray.Length];

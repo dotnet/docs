@@ -44,7 +44,7 @@ namespace MediaElementExample
         {
             pauseBTN.Visibility = Visibility.Collapsed;
             playBTN.Visibility = Visibility.Visible;
-            
+
             media.Pause();
         }
 
@@ -133,4 +133,4 @@ namespace MediaElementExample
             args.CanExecute = true;
         }
     }
-} 
+}

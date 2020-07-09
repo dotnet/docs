@@ -9,38 +9,38 @@ public class Form1 : System.Windows.Forms.Form
 {
 	// <snippet3>
 	private void wrapContentsCheckBox_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
-        this.FlowLayoutPanel1.WrapContents = 
+        this.FlowLayoutPanel1.WrapContents =
 			this.wrapContentsCheckBox.Checked;
     }
     // </snippet3>
 
     // <snippet4>
     private void flowTopDownBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.FlowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
     }
 
     private void flowBottomUpBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.FlowLayoutPanel1.FlowDirection = FlowDirection.BottomUp;
     }
 
     private void flowLeftToRight_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.FlowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight;
     }
 
     private void flowRightToLeftBtn_CheckedChanged(
-		System.Object sender, 
+		System.Object sender,
 		System.EventArgs e)
     {
         this.FlowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
@@ -50,7 +50,7 @@ public class Form1 : System.Windows.Forms.Form
 #region " Windows Form Designer generated code "
 
     public Form1() : base()
-    {        
+    {
 
         //This call is required by the Windows Form Designer.
         InitializeComponent();
@@ -86,7 +86,7 @@ public class Form1 : System.Windows.Forms.Form
     private System.ComponentModel.IContainer components;
 
     //NOTE: The following procedure is required by the Windows Form Designer
-    //It can be modified using the Windows Form Designer.  
+    //It can be modified using the Windows Form Designer.
     //Do not modify it using the code editor.
     [System.Diagnostics.DebuggerNonUserCode]
     private void InitializeComponent()
@@ -103,9 +103,9 @@ public class Form1 : System.Windows.Forms.Form
 		this.flowRightToLeftBtn = new System.Windows.Forms.RadioButton();
 		this.FlowLayoutPanel1.SuspendLayout();
 		this.SuspendLayout();
-// 
+//
 // FlowLayoutPanel1
-// 
+//
 		this.FlowLayoutPanel1.Controls.Add(this.Button1);
 		this.FlowLayoutPanel1.Controls.Add(this.Button2);
 		this.FlowLayoutPanel1.Controls.Add(this.Button3);
@@ -113,77 +113,77 @@ public class Form1 : System.Windows.Forms.Form
 		this.FlowLayoutPanel1.Location = new System.Drawing.Point(47, 55);
 		this.FlowLayoutPanel1.Name = "FlowLayoutPanel1";
 		this.FlowLayoutPanel1.TabIndex = 0;
-// 
+//
 // Button1
-// 
+//
 		this.Button1.Location = new System.Drawing.Point(3, 3);
 		this.Button1.Name = "Button1";
 		this.Button1.TabIndex = 0;
 		this.Button1.Text = "Button1";
-// 
+//
 // Button2
-// 
+//
 		this.Button2.Location = new System.Drawing.Point(84, 3);
 		this.Button2.Name = "Button2";
 		this.Button2.TabIndex = 1;
 		this.Button2.Text = "Button2";
-// 
+//
 // Button3
-// 
+//
 		this.Button3.Location = new System.Drawing.Point(3, 32);
 		this.Button3.Name = "Button3";
 		this.Button3.TabIndex = 2;
 		this.Button3.Text = "Button3";
-// 
+//
 // Button4
-// 
+//
 		this.Button4.Location = new System.Drawing.Point(84, 32);
 		this.Button4.Name = "Button4";
 		this.Button4.TabIndex = 3;
 		this.Button4.Text = "Button4";
-// 
+//
 // wrapContentsCheckBox
-// 
+//
 		this.wrapContentsCheckBox.Location = new System.Drawing.Point(46, 162);
 		this.wrapContentsCheckBox.Name = "wrapContentsCheckBox";
 		this.wrapContentsCheckBox.TabIndex = 1;
 		this.wrapContentsCheckBox.Text = "Wrap Contents";
 		this.wrapContentsCheckBox.CheckedChanged += new System.EventHandler(this.wrapContentsCheckBox_CheckedChanged);
-// 
+//
 // flowTopDownBtn
-// 
+//
 		this.flowTopDownBtn.Location = new System.Drawing.Point(45, 193);
 		this.flowTopDownBtn.Name = "flowTopDownBtn";
 		this.flowTopDownBtn.TabIndex = 2;
 		this.flowTopDownBtn.Text = "Flow TopDown";
 		this.flowTopDownBtn.CheckedChanged += new System.EventHandler(this.flowTopDownBtn_CheckedChanged);
-// 
+//
 // flowBottomUpBtn
-// 
+//
 		this.flowBottomUpBtn.Location = new System.Drawing.Point(44, 224);
 		this.flowBottomUpBtn.Name = "flowBottomUpBtn";
 		this.flowBottomUpBtn.TabIndex = 3;
 		this.flowBottomUpBtn.Text = "Flow BottomUp";
 		this.flowBottomUpBtn.CheckedChanged += new System.EventHandler(this.flowBottomUpBtn_CheckedChanged);
-// 
+//
 // flowLeftToRight
-// 
+//
 		this.flowLeftToRight.Location = new System.Drawing.Point(156, 193);
 		this.flowLeftToRight.Name = "flowLeftToRight";
 		this.flowLeftToRight.TabIndex = 4;
 		this.flowLeftToRight.Text = "Flow LeftToRight";
 		this.flowLeftToRight.CheckedChanged += new System.EventHandler(this.flowLeftToRight_CheckedChanged);
-// 
+//
 // flowRightToLeftBtn
-// 
+//
 		this.flowRightToLeftBtn.Location = new System.Drawing.Point(155, 224);
 		this.flowRightToLeftBtn.Name = "flowRightToLeftBtn";
 		this.flowRightToLeftBtn.TabIndex = 5;
 		this.flowRightToLeftBtn.Text = "Flow RightToLeft";
 		this.flowRightToLeftBtn.CheckedChanged += new System.EventHandler(this.flowRightToLeftBtn_CheckedChanged);
-// 
+//
 // Form1
-// 
+//
 		this.ClientSize = new System.Drawing.Size(292, 266);
 		this.Controls.Add(this.flowRightToLeftBtn);
 		this.Controls.Add(this.flowLeftToRight);

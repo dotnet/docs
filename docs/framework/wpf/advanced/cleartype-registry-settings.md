@@ -9,7 +9,7 @@ ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
 # ClearType Registry Settings
 This topic provides an overview of the Microsoft ClearType registry settings that are used by WPF applications.  
 
-<a name="overview"></a>   
+<a name="overview"></a>
 ## Technology Overview  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications that render text to a display device use ClearType features to provide an enhanced reading experience. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. For more information on ClearType, see [ClearType Overview](cleartype-overview.md).  
   
@@ -19,7 +19,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
  In each of these cases, ClearType features need to be modified in order to provide the best reading experience for each individual.  
   
-<a name="registry_settings"></a>   
+<a name="registry_settings"></a>
 ## Registry Settings  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] specifies four registry settings for controlling ClearType features:  
   
@@ -30,14 +30,14 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
 |Pixel structure|Describes the arrangement of pixels for a display device.|  
 |Text contrast level|Describes the level of contrast for displayed text.|  
   
- These settings can be accessed by an external configuration utility that knows how to reference the identified [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]ClearType registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
+ These settings can be accessed by an external configuration utility that knows how to reference the identified [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] ClearType registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
   
- If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]ClearType registry settings are not set (which is the default state), the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application queries the Windows system parameters information for font smoothing settings.  
+ If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] ClearType registry settings are not set (which is the default state), the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application queries the Windows system parameters information for font smoothing settings.  
   
 > [!NOTE]
 > For information on enumerating display device names, see the `SystemParametersInfo`Win32 function.  
   
-<a name="ClearType_level"></a>   
+<a name="ClearType_level"></a>
 ## ClearType Level  
  The ClearType level allows you to adjust the rendering of text based on the color sensitivity and perception of an individual. For some individuals, the rendering of text that uses ClearType at its highest level does not produce the best reading experience.  
   
@@ -55,7 +55,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
 > [!NOTE]
 > [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications render text in one of either two modes, with and without ClearType. When text is rendered without ClearType, it is referred to as gray scale rendering.  
   
-<a name="gamma_level"></a>   
+<a name="gamma_level"></a>
 ## Gamma Level  
  The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, text may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
   
@@ -70,7 +70,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
  ![ClearType gamma level settings in the Registry Editor](./media/cleartype-registry-settings/cleartype-gamma-level-settings-registry-editor.png)  
   
-<a name="pixel_structure"></a>   
+<a name="pixel_structure"></a>
 ## Pixel Structure  
  The pixel structure describes the type of pixels that make up a display device. The pixel structure is defined as one of three types:  
   
@@ -94,7 +94,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
  ![ClearType gamma level settings in the Registry Editor](./media/cleartype-registry-settings/cleartype-gamma-level-settings-registry-editor.png)  
   
-<a name="text_contrast_level"></a>   
+<a name="text_contrast_level"></a>
 ## Text Contrast Level  
  The text contrast level allows you to adjust the rendering of text based on the stem widths of glyphs. The text contrast level is an integer value that ranges from 0 to 6—the larger the integer value, the wider the stem. The default level is 1.  
   

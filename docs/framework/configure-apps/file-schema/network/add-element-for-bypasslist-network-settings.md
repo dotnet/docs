@@ -23,8 +23,8 @@ Adds an IP address or DNS name to the proxy bypass list.
 ## Syntax  
   
 ```xml  
-<add   
-  address="regular expression"   
+<add
+  address="regular expression"
 />  
 ```  
   

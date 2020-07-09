@@ -14,14 +14,14 @@ using System.Windows.Forms;
 
 // <snippet3>
 // This form demonstrates using a BindingSource to bind to a factory
-// object. 
+// object.
 public class Form1 : System.Windows.Forms.Form
 {
     // <snippet4>
     // This is the TextBox for entering CustomerID values.
     private TextBox customerIdTextBox = new TextBox();
 
-    // This is the DataGridView that displays orders for the 
+    // This is the DataGridView that displays orders for the
     // specified customer.
     private DataGridView customersDataGridView = new DataGridView();
 
@@ -44,7 +44,7 @@ public class Form1 : System.Windows.Forms.Form
         this.customerIdTextBox.KeyDown +=
             new KeyEventHandler(customerIdTextBox_KeyDown);
         this.Controls.Add(this.customerIdTextBox);
-       
+
         // Set up the DataGridView.
         customersDataGridView.Dock = DockStyle.Top;
         this.Controls.Add(customersDataGridView);
@@ -69,7 +69,7 @@ public class Form1 : System.Windows.Forms.Form
     // </snippet6>
 
     // <snippet7>
-    // This is a static factory method. It queries the Northwind 
+    // This is a static factory method. It queries the Northwind
     // database for the orders belonging to the specified
     // customer and returns an IEnumerable.
     public static IEnumerable GetOrdersByCustomerId(string id)
@@ -79,7 +79,7 @@ public class Form1 : System.Windows.Forms.Form
             "Persist Security Info=False;Initial Catalog=Northwind;" +
             "Data Source= localhost";
         SqlConnection connection = new SqlConnection();
-       
+
         connection.ConnectionString = connectString;
         connection.Open();
 

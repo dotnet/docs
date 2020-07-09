@@ -26,6 +26,7 @@ SQLite only has four primitive data types: INTEGER, REAL, TEXT, and BLOB. APIs t
 | String         | TEXT    | UTF-8                                                         |
 | TimeSpan       | TEXT    | d.hh:mm:ss.fffffff                                            |
 | UInt16         | INTEGER |                                                               |
+| UInt32         | INTEGER |                                                               |
 | UInt64         | INTEGER | Large values overflow                                         |
 
 ## Alternative types

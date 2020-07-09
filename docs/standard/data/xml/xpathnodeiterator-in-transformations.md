@@ -152,4 +152,4 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   
 ## See also
 
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

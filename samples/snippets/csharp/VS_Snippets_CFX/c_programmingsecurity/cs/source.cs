@@ -58,7 +58,7 @@ namespace Windows.Communication.Foundation.Samples
             private void Snippet4()
             {
                 //<snippet4>
-                // Specify client credentials on the client. 
+                // Specify client credentials on the client.
                 // Code to set the UserName and Password is not shown here.
                 CalculatorClient CalculatorClient = new CalculatorClient("myBinding");
                 CalculatorClient.ClientCredentials.UserName.UserName = ReturnUserName();
@@ -90,7 +90,7 @@ namespace Windows.Communication.Foundation.Samples
                 //<snippet6>
                 ServiceHost myServiceHost = new ServiceHost(typeof(CalculatorService));
 
-                // Specify client credentials validation on the service. 
+                // Specify client credentials validation on the service.
                 ServiceCredentials myServiceCredentials =
                     myServiceHost.Description.Behaviors.Find<ServiceCredentials>();
 

@@ -33,8 +33,8 @@ class TimeZoneSerialization
          ResXResourceReader resReader = new ResXResourceReader(readStream);
          foreach (DictionaryEntry item in resReader)
          {
-            if (! (((string) item.Key) == "CentralStandardTime" || 
-                   ((string) item.Key) == "PalmerStandardTime" )) 
+            if (! (((string) item.Key) == "CentralStandardTime" ||
+                   ((string) item.Key) == "PalmerStandardTime" ))
                resources.Add((string)item.Key, (string) item.Value);
          }
          readStream.Close();
@@ -77,13 +77,13 @@ class TimeZoneSerialization
       // Create time zone for Palmer, Antarctica
       //
       // Define transition times to/from DST
-      TimeZoneInfo.TransitionTime startTransition = TimeZoneInfo.TransitionTime.CreateFloatingDateRule(new DateTime(1, 1, 1, 4, 0, 0), 
+      TimeZoneInfo.TransitionTime startTransition = TimeZoneInfo.TransitionTime.CreateFloatingDateRule(new DateTime(1, 1, 1, 4, 0, 0),
                                                                                                  10, 2, DayOfWeek.Sunday);
-      TimeZoneInfo.TransitionTime endTransition = TimeZoneInfo.TransitionTime.CreateFloatingDateRule(new DateTime(1, 1, 1, 3, 0, 0), 
+      TimeZoneInfo.TransitionTime endTransition = TimeZoneInfo.TransitionTime.CreateFloatingDateRule(new DateTime(1, 1, 1, 3, 0, 0),
                                                                                                3, 2, DayOfWeek.Sunday);
       // Define adjustment rule
       TimeSpan delta = new TimeSpan(1, 0, 0);
-      TimeZoneInfo.AdjustmentRule adjustment = TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(new DateTime(1999, 10, 1), 
+      TimeZoneInfo.AdjustmentRule adjustment = TimeZoneInfo.AdjustmentRule.CreateAdjustmentRule(new DateTime(1999, 10, 1),
                                             DateTime.MaxValue.Date, delta, startTransition, endTransition);
       // Create array for adjustment rules
       TimeZoneInfo.AdjustmentRule[] adjustments = {adjustment};
@@ -95,7 +95,7 @@ class TimeZoneSerialization
       TimeZoneInfo palmer = TimeZoneInfo.CreateCustomTimeZone(standardName, offset, DisplayName, standardName, daylightName, adjustments);
       resWriter.AddResource(palmer.Id.Replace(" ", String.Empty), palmer.ToSerializedString());
 
-      // Save changes to .resx file 
+      // Save changes to .resx file
       resWriter.Generate();
       resWriter.Close();
       writeStream.Close();
@@ -134,7 +134,7 @@ class TimeZoneSerialization
          timeZoneString = resMgr.GetString("PalmerStandardTime");
          palmer = TimeZoneInfo.FromSerializedString(timeZoneString);
       }
-      catch (MissingManifestResourceException) 
+      catch (MissingManifestResourceException)
       {
          MessageBox.Show("Unable to retrieve the Palmer Standard Time Zone from the resource file. Application must exit.");
          return;

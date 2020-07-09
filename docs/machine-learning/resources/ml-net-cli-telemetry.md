@@ -2,7 +2,7 @@
 title: Telemetry collection by ML.NET CLI
 description: Learn about ML.NET CLI telemetry features that collect usage information for analysis, which data is collected, and how to disable it. Also, find links to the .NET license agreement and information about Microsoft GDPR compliance.
 ms.topic: conceptual
-ms.date: 09/03/2019
+ms.date: 06/03/2020
 ms.custom: mlnet-tooling
 ---
 
@@ -25,7 +25,7 @@ Telemetry *isn't enabled* when you run the `mlnet` command with no other command
 - `mlnet`
 - `mlnet --help`
 
-Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-cli-reference.md), such as `mlnet auto-train`.
+Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-cli-reference.md), such as `mlnet classification`.
 
 ## Opt out of data collection
 
@@ -37,8 +37,8 @@ Opt out of the telemetry feature by setting the `MLDOTNET_CLI_TELEMETRY_OPTOUT` 
 
 The feature collects the following data:
 
-- What command was invoked, such as `auto-train`
-- Command-line parameter names used (that is, "dataset-name, label-column-name, ml-task, output-path, max-exploration-time, verbosity")
+- What command was invoked, such as `classification`
+- Command-line parameter names used (that is, "dataset, label-col, output-path, train-time, verbosity")
 - Hashed MAC address: a cryptographically (SHA256) anonymous and unique ID for a machine
 - Timestamp of an invocation
 - Three octet IP address (not full IP address) used only to determine geographical location
@@ -46,7 +46,7 @@ The feature collects the following data:
 - Hashed dataset filename
 - Dataset file-size bucket
 - Operating system and version
-- Value of --task parameter: Categorical values, such as `regression`, `binary-classification`, and `multiclass-classification`
+- Value of ML task commands: Categorical values, such as `regression`, `classification`, and `recommendation`
 - ML.NET CLI version (that is, 0.3.27703.4)
 
 The data is sent securely to Microsoft servers using [Azure Application Insights](https://azure.microsoft.com/services/application-insights/) technology, held under restricted access, and used under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
@@ -67,7 +67,7 @@ The Microsoft distribution of ML.NET CLI is licensed with the [Microsoft Softwar
 
 ## Disclosure
 
-When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet auto-train`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
+When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet classification`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
 
 ## See also
 

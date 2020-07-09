@@ -60,7 +60,7 @@ namespace BasicManipulation
             Rectangle rectToMove = e.OriginalSource as Rectangle;
             Vector overshoot;
 
-            // When the element crosses the boundary of the window, check whether 
+            // When the element crosses the boundary of the window, check whether
             // the manipulation is in inertia.  If it is, complete the manipulation.
             // Otherwise, report the boundary feedback.
             if (CalculateOvershoot(rectToMove, e.ManipulationContainer, out overshoot))
@@ -77,7 +77,7 @@ namespace BasicManipulation
                     e.ReportBoundaryFeedback(new ManipulationDelta(overshoot, 0, new Vector(), new Vector()));
                 }
             }
-          
+
             // Move the element as usual.
 
             // Get the Rectangle and its RenderTransform matrix.
@@ -88,7 +88,7 @@ namespace BasicManipulation
                                  e.ManipulationOrigin.X,
                                  e.ManipulationOrigin.Y);
 
-            // Resize the Rectangle.  Keep it square 
+            // Resize the Rectangle.  Keep it square
             // so use only the X value of Scale.
             rectsMatrix.ScaleAt(e.DeltaManipulation.Scale.X,
                                 e.DeltaManipulation.Scale.X,
@@ -120,7 +120,7 @@ namespace BasicManipulation
                 return false;
             }
 
-            // Calculate overshoot.  
+            // Calculate overshoot.
             if (elementBounds.Left < 0)
                 overshoot.X = elementBounds.Left;
             else if (elementBounds.Right > parent.ActualWidth)
@@ -139,17 +139,17 @@ namespace BasicManipulation
         void Window_InertiaStarting(object sender, ManipulationInertiaStartingEventArgs e)
         {
 
-            // Decrease the velocity of the Rectangle's movement by 
+            // Decrease the velocity of the Rectangle's movement by
             // 10 inches per second every second.
             // (10 inches * 96 pixels per inch / 1000ms^2)
             e.TranslationBehavior.DesiredDeceleration = 10.0 * 96.0 / (1000.0 * 1000.0);
 
-            // Decrease the velocity of the Rectangle's resizing by 
+            // Decrease the velocity of the Rectangle's resizing by
             // 0.1 inches per second every second.
             // (0.1 inches * 96 pixels per inch / (1000ms^2)
             e.ExpansionBehavior.DesiredDeceleration = 0.1 * 96 / 1000.0 * 1000.0;
 
-            // Decrease the velocity of the Rectangle's rotation rate by 
+            // Decrease the velocity of the Rectangle's rotation rate by
             // 2 rotations per second every second.
             // (2 * 360 degrees / (1000ms^2)
             e.RotationBehavior.DesiredDeceleration = 720 / (1000.0 * 1000.0);

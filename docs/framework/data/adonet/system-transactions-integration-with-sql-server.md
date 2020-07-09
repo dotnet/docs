@@ -59,7 +59,7 @@ The .NET Framework version 2.0 introduced a transaction framework that can be ac
 ```csharp  
 // This function takes arguments for the 2 connection strings and commands in order  
 // to create a transaction involving two SQL Servers. It returns a value > 0 if the  
-// transaction committed, 0 if the transaction rolled back. To test this code, you can   
+// transaction committed, 0 if the transaction rolled back. To test this code, you can
 // connect to two different databases on the same server by altering the connection string,  
 // or to another RDBMS such as Oracle by altering the code in the connection2 code block.  
 static public int CreateTransactionScope(  
@@ -78,7 +78,7 @@ static public int CreateTransactionScope(
         {  
             try  
             {  
-                // Opening the connection automatically enlists it in the   
+                // Opening the connection automatically enlists it in the
                 // TransactionScope as a lightweight transaction.  
                 connection1.Open();  
   
@@ -89,8 +89,8 @@ static public int CreateTransactionScope(
   
                 // if you get here, this means that command1 succeeded. By nesting  
                 // the using block for connection2 inside that of connection1, you  
-                // conserve server and network resources by opening connection2   
-                // only when there is a chance that the transaction can commit.     
+                // conserve server and network resources by opening connection2
+                // only when there is a chance that the transaction can commit.
                 using (SqlConnection connection2 = new SqlConnection(connectString2))  
                     try  
                     {  
@@ -119,7 +119,7 @@ static public int CreateTransactionScope(
             }  
         }  
   
-        // If an exception has been thrown, Complete will not   
+        // If an exception has been thrown, Complete will not
         // be called and the transaction is rolled back.  
         scope.Complete();  
     }  
@@ -146,7 +146,7 @@ static public int CreateTransactionScope(
 ```vb  
 ' This function takes arguments for the 2 connection strings and commands in order  
 ' to create a transaction involving two SQL Servers. It returns a value > 0 if the  
-' transaction committed, 0 if the transaction rolled back. To test this code, you can   
+' transaction committed, 0 if the transaction rolled back. To test this code, you can
 ' connect to two different databases on the same server by altering the connection string,  
 ' or to another RDBMS such as Oracle by altering the code in the connection2 code block.  
 Public Function CreateTransactionScope( _  
@@ -162,7 +162,7 @@ Public Function CreateTransactionScope( _
     Using scope As New TransactionScope()  
         Using connection1 As New SqlConnection(connectString1)  
             Try  
-                ' Opening the connection automatically enlists it in the   
+                ' Opening the connection automatically enlists it in the
                 ' TransactionScope as a lightweight transaction.  
                 connection1.Open()  
   
@@ -173,8 +173,8 @@ Public Function CreateTransactionScope( _
   
                 ' If you get here, this means that command1 succeeded. By nesting  
                 ' the Using block for connection2 inside that of connection1, you  
-                ' conserve server and network resources by opening connection2   
-                ' only when there is a chance that the transaction can commit.     
+                ' conserve server and network resources by opening connection2
+                ' only when there is a chance that the transaction can commit.
                 Using connection2 As New SqlConnection(connectString2)  
                     Try  
                         ' The transaction is promoted to a full distributed  
@@ -201,7 +201,7 @@ Public Function CreateTransactionScope( _
             End Try  
         End Using  
   
-        ' If an exception has been thrown, Complete will   
+        ' If an exception has been thrown, Complete will
         ' not be called and the transaction is rolled back.  
         scope.Complete()  
     End Using  

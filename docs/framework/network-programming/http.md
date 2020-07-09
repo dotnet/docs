@@ -1,5 +1,6 @@
 ---
 title: "HTTP"
+description: Learn about the comprehensive support for HTTP that the .NET Framework provides by using the HttpWebRequest and HttpWebResponse classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "protocols, HTTP"

@@ -11,7 +11,7 @@ public class Example
       foreach (string value in values) {
          if (Regex.IsMatch(value, pattern))
             Console.WriteLine("{0} is a valid SSN.", value);
-         else   
+         else
             Console.WriteLine("{0}: Invalid", value);
       }
    }

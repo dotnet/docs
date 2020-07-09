@@ -12,7 +12,7 @@ namespace PhotoService
     {
         // Assume utf-8, note that Data Services supports
         // charset negotation, so this needs to be more
-        // sophisticated (and per-request) if clients will 
+        // sophisticated (and per-request) if clients will
         // use multiple charsets
         private static Encoding encoding = Encoding.UTF8;
 
@@ -33,7 +33,7 @@ namespace PhotoService
                     //// due to use of a reserved option (starts with "$")
                     //match.QueryParameters.Remove("$format");
 
-                    // replace the Accept header so that the Data Services runtime 
+                    // replace the Accept header so that the Data Services runtime
                     // assumes the client asked for a JSON representation
                     if (httpmsg.Headers["Compress-Data"] == "true")
                     {
@@ -109,8 +109,8 @@ namespace PhotoService
     {
         #region IServiceBehavior Members
 
-        void IServiceBehavior.AddBindingParameters(ServiceDescription serviceDescription, 
-            ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection<ServiceEndpoint> endpoints, 
+        void IServiceBehavior.AddBindingParameters(ServiceDescription serviceDescription,
+            ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection<ServiceEndpoint> endpoints,
             System.ServiceModel.Channels.BindingParameterCollection bindingParameters)
         {
         }

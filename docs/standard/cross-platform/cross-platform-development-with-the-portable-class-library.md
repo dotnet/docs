@@ -1,5 +1,6 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
+description: Build cross-platform apps and libraries for Microsoft platforms quickly and easily using the Portable Class Library project type in .NET.
 ms.date: 09/17/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -28,7 +29,7 @@ The **Add Portable Class Library** dialog box appears. Choose two or more target
 
 ## Change targets
 
-You can change the target platforms of a portable class library project when you create it or after you’ve started development. If you want to change the targets after you’ve created your project, in **Solution Explorer**, open the shortcut menu for your Portable Class Library project (not the solution), and then choose **Properties**. On the project properties page, the **Library** tab shows the platforms that your project currently targets.
+You can change the target platforms of a portable class library project when you create it or after you've started development. If you want to change the targets after you've created your project, in **Solution Explorer**, open the shortcut menu for your Portable Class Library project (not the solution), and then choose **Properties**. On the project properties page, the **Library** tab shows the platforms that your project currently targets.
 
 ![Project properties for Portable Class Library in Visual Studio](media/pcl-project-properties.png)
 
@@ -36,7 +37,7 @@ To add or remove targets, choose the **Change** button, and then select and clea
 
 When you change the targets, the APIs that are available to you for developing your project will change to match your selection. Visual Studio reports the errors and warnings that may occur as a result of the targets changing.
 
-If you want to evaluate the portability of your assemblies before you make changes in Visual Studio, you can use the [.NET Portability Analyzer](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b).
+If you want to evaluate the portability of your assemblies before you make changes in Visual Studio, you can use the [.NET Portability Analyzer](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer).
 
 ## Supported types and members
 
@@ -74,12 +75,12 @@ When you deploy a .NET Framework app that references a Portable Class Library as
 
 - To create a dependency with a setup project: In **Solution Explorer**, choose the setup project. On the menu bar, choose **Project** > **Properties** > **Prerequisites**. Select the required .NET Framework version as a prerequisite.
 
-For more information about deploying .NET Framework apps, see [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md).
+For more information about deploying .NET Framework apps, see [Deployment Guide for Developers](../../framework/deployment/deployment-guide-for-developers.md).
 
 ## See also
 
-- [Using Portable Class Library with MVVM](../../../docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md)
-- [App Resources for Libraries That Target Multiple Platforms](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)
+- [Using Portable Class Library with MVVM](using-portable-class-library-with-model-view-view-model.md)
+- [App Resources for Libraries That Target Multiple Platforms](app-resources-for-libraries-that-target-multiple-platforms.md)
 - [.NET Portability Analyzer](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
-- [Deployment](../../../docs/framework/deployment/net-framework-applications.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](support-for-windows-store-apps-and-windows-runtime.md)
+- [Deployment](../../framework/deployment/net-framework-applications.md)

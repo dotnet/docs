@@ -35,7 +35,7 @@ HRESULT GetBindingIdentityFromFile(
  [in] The path to the file to be evaluated.  
   
  `dwFlags`  
- [in] A value of the [ECLRAssemblyIdentityFlags](../../../../docs/framework/unmanaged-api/hosting/eclrassemblyidentityflags-enumeration.md) enumeration that indicates an assembly's identity type. Provided for future extensibility. CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT is the only value that the common language runtime (CLR) version 2.0 supports.  
+ [in] A value of the [ECLRAssemblyIdentityFlags](eclrassemblyidentityflags-enumeration.md) enumeration that indicates an assembly's identity type. Provided for future extensibility. CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT is the only value that the common language runtime (CLR) version 2.0 supports.  
   
  `pwzBuffer`  
  [out] A buffer containing the opaque assembly identity data.  
@@ -60,7 +60,7 @@ HRESULT GetBindingIdentityFromFile(
  `GetBindingIdentityFromFile` is typically called twice. The first call supplies a null value for `pwzBuffer`, and the method returns the appropriate size in `pcchBufferSize`. The second call supplies an appropriately allocated buffer, and the method returns with the actual buffer data upon completion.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -70,6 +70,6 @@ HRESULT GetBindingIdentityFromFile(
   
 ## See also
 
-- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
-- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
-- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)

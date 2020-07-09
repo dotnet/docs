@@ -26,10 +26,10 @@ This example shows how to rotate (pivot) an object along a geometric path that i
   
  Another way to rotate an object by using a geometric path is to use a <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> object and set its <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent%2A> property to `true`. For more information and an example, see [Rotate an Object by Using a Geometric Path (Matrix Animation)](how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation.md).  
   
- For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028).  
+ For the complete sample, see [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations).  
   
 ## See also
 
 - [Animation Overview](animation-overview.md)
-- [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
+- [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

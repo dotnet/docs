@@ -35,7 +35,7 @@ namespace csrefKeywordsChecked
             int z = 0;
             try
             {
-                // The following calculation is unchecked and will not 
+                // The following calculation is unchecked and will not
                 // raise an exception.
                 z = maxIntValue + 10;
             }
@@ -44,7 +44,7 @@ namespace csrefKeywordsChecked
                 // The following line will not be executed.
                 Console.WriteLine("UNCHECKED and CAUGHT:  " + e.ToString());
             }
-            // Because of the undetected overflow, the sum of 2147483647 + 10 is 
+            // Because of the undetected overflow, the sum of 2147483647 + 10 is
             // returned as -2147483639.
             return z;
         }
@@ -60,8 +60,8 @@ namespace csrefKeywordsChecked
        Output:
        CHECKED and CAUGHT:  System.OverflowException: Arithmetic operation resulted
        in an overflow.
-          at ConsoleApplication1.OverFlowTest.CheckedMethod() 
-    
+          at ConsoleApplication1.OverFlowTest.CheckedMethod()
+
        CHECKED output value is: 0
        UNCHECKED output value is: -2147483639
      */
@@ -84,7 +84,7 @@ namespace csrefKeywordsChecked
             //int1 = 2147483647 + 10;
             //int1 = ConstantMax + 10;
 
-            // To enable the assignments to int1 to compile and run, place them inside 
+            // To enable the assignments to int1 to compile and run, place them inside
             // an unchecked block or expression. The following statements compile and
             // run.
             // <Snippet5>
@@ -98,8 +98,8 @@ namespace csrefKeywordsChecked
             // The sum of 2,147,483,647 and 10 is displayed as -2,147,483,639.
             Console.WriteLine(int1);
 
-            // The following statement is unchecked by default at compile time and run 
-            // time because the expression contains the variable variableMax. It causes  
+            // The following statement is unchecked by default at compile time and run
+            // time because the expression contains the variable variableMax. It causes
             // overflow but the overflow is not detected. The statement compiles and runs.
             int2 = variableMax + 10;
 
@@ -115,20 +115,20 @@ namespace csrefKeywordsChecked
             }
             //int2 = checked(variableMax + 10);
 
-            // Unchecked sections frequently are used to break out of a checked 
-            // environment in order to improve performance in a portion of code 
+            // Unchecked sections frequently are used to break out of a checked
+            // environment in order to improve performance in a portion of code
             // that is not expected to raise overflow exceptions.
             checked
-            { 
+            {
                 // Code that might cause overflow should be executed in a checked
                 // environment.
                 unchecked
-                { 
-                    // This section is appropriate for code that you are confident 
-                    // will not result in overflow, and for which performance is 
+                {
+                    // This section is appropriate for code that you are confident
+                    // will not result in overflow, and for which performance is
                     // a priority.
                 }
-                // Additional checked code here. 
+                // Additional checked code here.
             }
         }
     }
@@ -145,7 +145,7 @@ namespace csrefKeywordsChecked
         {
             //<snippet3>
             // The following example causes compiler error CS0220 because 2147483647
-            // is the maximum value for integers. 
+            // is the maximum value for integers.
             //int i1 = 2147483647 + 10;
 
             // The following example, which includes variable ten, does not cause
@@ -154,13 +154,13 @@ namespace csrefKeywordsChecked
             int i2 = 2147483647 + ten;
 
             // By default, the overflow in the previous statement also does
-            // not cause a run-time exception. The following line displays 
+            // not cause a run-time exception. The following line displays
             // -2,147,483,639 as the sum of 2,147,483,647 and 10.
             Console.WriteLine(i2);
             //</snippet3>
 
             //<Snippet4>
-            // If the previous sum is attempted in a checked environment, an 
+            // If the previous sum is attempted in a checked environment, an
             // OverflowException error is raised.
 
             // Checked expression.

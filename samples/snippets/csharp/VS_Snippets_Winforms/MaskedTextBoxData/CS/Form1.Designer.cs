@@ -33,47 +33,47 @@
             this.previousButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-// 
+//
 // firstName
-// 
+//
             this.firstName.Location = new System.Drawing.Point(13, 14);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(184, 20);
             this.firstName.TabIndex = 0;
-// 
+//
 // lastName
-// 
+//
             this.lastName.Location = new System.Drawing.Point(204, 14);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(184, 20);
             this.lastName.TabIndex = 1;
-// 
+//
 // phoneMask
-// 
+//
             this.phoneMask.Location = new System.Drawing.Point(441, 14);
             this.phoneMask.Mask = "(009) 000-0000 x9999";
             this.phoneMask.Name = "phoneMask";
             this.phoneMask.Size = new System.Drawing.Size(169, 20);
             this.phoneMask.TabIndex = 2;
-// 
+//
 // previousButton
-// 
+//
             this.previousButton.Location = new System.Drawing.Point(630, 14);
             this.previousButton.Name = "previousButton";
             this.previousButton.TabIndex = 3;
             this.previousButton.Text = "Previous";
             this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
-// 
+//
 // nextButton
-// 
+//
             this.nextButton.Location = new System.Drawing.Point(723, 14);
             this.nextButton.Name = "nextButton";
             this.nextButton.TabIndex = 4;
             this.nextButton.Text = "Next";
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
-// 
+//
 // Form1
-// 
+//
             this.ClientSize = new System.Drawing.Size(887, 46);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.previousButton);

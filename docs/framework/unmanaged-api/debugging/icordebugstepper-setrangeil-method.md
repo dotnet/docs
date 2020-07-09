@@ -32,7 +32,7 @@ HRESULT SetRangeIL (
  [in] Set to `true` to specify that the ranges are relative to the MSIL code. Set to `false` to specify that the ranges are relative to the native code. The default value is `true`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

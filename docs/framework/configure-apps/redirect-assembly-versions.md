@@ -1,5 +1,6 @@
 ---
 title: "Redirecting Assembly Versions"
+description: Redirect compile-time binding references to different versions of .NET assemblies, third-party assemblies, or your own app's assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assembly binding, redirection"
@@ -152,7 +153,7 @@ You can enable automatic binding redirection if your app targets older versions 
 - [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
 - [Assembly Binding Redirection Security Permission](assembly-binding-redirection-security-permission.md)
 - [Assemblies in .NET](../../standard/assembly/index.md)
-- [Programming with Assemblies](../../standard/assembly/program.md)
+- [Programming with Assemblies](../../standard/assembly/index.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](index.md)
 - [Runtime Settings Schema](./file-schema/runtime/index.md)

@@ -5,7 +5,7 @@ ms.date: 10/08/2018
 ---
 # Design the infrastructure persistence layer
 
-Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects. EF DbContext implements both, the Repository and the Unit of Work patterns.
+Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice's database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) <xref:Microsoft.EntityFrameworkCore.DbContext> objects. EF DbContext implements both, the Repository and the Unit of Work patterns.
 
 ## The Repository pattern
 
@@ -17,7 +17,7 @@ The Repository pattern is a well-documented way of working with a data source. I
 
 ### Define one repository per aggregate
 
-For each aggregate or aggregate root, you should create one repository class. In a microservice based on Domain-Driven Design (DDD) patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It's okay to query the database through other channels (as you can do following a CQRS approach), because queries don't change the state of the database. However, the transactional area (that is, the updates) must always be controlled by the repositories and the aggregate roots.
+For each aggregate or aggregate root, you should create one repository class. In a microservice based on Domain-Driven Design (DDD) patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate's invariants and transactional consistency. It's okay to query the database through other channels (as you can do following a CQRS approach), because queries don't change the state of the database. However, the transactional area (that is, the updates) must always be controlled by the repositories and the aggregate roots.
 
 Basically, a repository allows you to populate data in memory that comes from the database in the form of the domain entities. Once the entities are in memory, they can be changed and then persisted back to the database through transactions.
 
@@ -78,7 +78,7 @@ Connections to databases can fail and, more importantly, running hundreds of tes
 
 In terms of separation of concerns for unit tests, your logic operates on domain entities in memory. It assumes the repository class has delivered those. Once your logic modifies the domain entities, it assumes the repository class will store them correctly. The important point here is to create unit tests against your domain model and its domain logic. Aggregate roots are the main consistency boundaries in DDD.
 
-The repositories implemented in eShopOnContainers rely on EF Core’s DbContext implementation of the Repository and Unit of Work patterns using its change tracker, so they don’t duplicate this functionality.
+The repositories implemented in eShopOnContainers rely on EF Core's DbContext implementation of the Repository and Unit of Work patterns using its change tracker, so they don't duplicate this functionality.
 
 ### The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern
 
@@ -96,9 +96,9 @@ Custom repositories are useful for the reasons cited earlier, and that is the ap
 
 For instance, Jimmy Bogard, when providing direct feedback for this guide, said the following:
 
-> This’ll probably be my biggest feedback. I’m really not a fan of repositories, mainly because they hide the important details of the underlying persistence mechanism. It’s why I go for MediatR for commands, too. I can use the full power of the persistence layer, and push all that domain behavior into my aggregate roots. I don’t usually want to mock my repositories – I still need to have that integration test with the real thing. Going CQRS meant that we didn’t really have a need for repositories any more.
+> This'll probably be my biggest feedback. I'm really not a fan of repositories, mainly because they hide the important details of the underlying persistence mechanism. It's why I go for MediatR for commands, too. I can use the full power of the persistence layer, and push all that domain behavior into my aggregate roots. I don't usually want to mock my repositories – I still need to have that integration test with the real thing. Going CQRS meant that we didn't really have a need for repositories any more.
 
-Repositories might be useful, but they are not critical for your DDD design, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit. Anyway, you’ll be using the repository pattern whenever you use EF Core although, in this case, the repository covers the whole microservice or bounded context.
+Repositories might be useful, but they are not critical for your DDD design, in the way that the Aggregate pattern and rich domain model are. Therefore, use the Repository pattern or not, as you see fit. Anyway, you'll be using the repository pattern whenever you use EF Core although, in this case, the repository covers the whole microservice or bounded context.
 
 ## Additional resources
 
@@ -123,4 +123,4 @@ Repositories might be useful, but they are not critical for your DDD design, in 
 
 >[!div class="step-by-step"]
 >[Previous](domain-events-design-implementation.md)
->[Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+>[Next](infrastructure-persistence-layer-implementation-entity-framework-core.md)

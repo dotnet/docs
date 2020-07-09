@@ -44,7 +44,7 @@ public class Example
         //</Snippet4>
 
         //<Snippet5>
-        Console.WriteLine("   List {0} type arguments:", 
+        Console.WriteLine("   List {0} type arguments:",
             typeParameters.Length);
         foreach( Type tParam in typeParameters )
         {
@@ -67,7 +67,7 @@ public class Example
     //<Snippet6>
     private static void DisplayGenericParameter(Type tp)
     {
-        Console.WriteLine("      Type parameter: {0} position {1}", 
+        Console.WriteLine("      Type parameter: {0} position {1}",
             tp.Name, tp.GenericParameterPosition);
         //</Snippet6>
 
@@ -85,7 +85,7 @@ public class Example
 
         if (classConstraint != null)
         {
-            Console.WriteLine("         Base type constraint: {0}", 
+            Console.WriteLine("         Base type constraint: {0}",
                 tp.BaseType);
         }
         else
@@ -95,8 +95,8 @@ public class Example
         //</Snippet7>
 
         //<Snippet8>
-        GenericParameterAttributes sConstraints = 
-            tp.GenericParameterAttributes & 
+        GenericParameterAttributes sConstraints =
+            tp.GenericParameterAttributes &
             GenericParameterAttributes.SpecialConstraintMask;
         //</Snippet8>
 
@@ -130,10 +130,10 @@ public class Example
     public static void Main()
     {
         // Two ways to get a Type object that represents the generic
-        // type definition of the Dictionary class. 
+        // type definition of the Dictionary class.
         //
         //<Snippet10>
-        // Use the typeof operator to create the generic type 
+        // Use the typeof operator to create the generic type
         // definition directly. To specify the generic type definition,
         // omit the type arguments but retain the comma that separates
         // them.
@@ -146,7 +146,7 @@ public class Example
         // is a dictionary of Example objects, with String keys.
         Dictionary<string, Example> d2 = new Dictionary<string, Example>();
         // Get a Type object that represents the constructed type,
-        // and from that get the generic type definition. The 
+        // and from that get the generic type definition. The
         // variables d1 and d4 contain the same type.
         Type d3 = d2.GetType();
         Type d4 = d3.GetGenericTypeDefinition();
@@ -157,10 +157,10 @@ public class Example
         DisplayGenericType(d1);
         DisplayGenericType(d2.GetType());
 
-        // Construct an array of type arguments to substitute for 
+        // Construct an array of type arguments to substitute for
         // the type parameters of the generic Dictionary class.
-        // The array must contain the correct number of types, in 
-        // the same order that they appear in the type parameter 
+        // The array must contain the correct number of types, in
+        // the same order that they appear in the type parameter
         // list of Dictionary. The key (first type parameter)
         // is of type string, and the type to be contained in the
         // dictionary is Example.
@@ -185,8 +185,8 @@ public class Example
         Console.WriteLine("   Are the generic definitions equal? {0}",
             (d1==constructed.GetGenericTypeDefinition()));
 
-        // Demonstrate the DisplayGenericType and 
-        // DisplayGenericParameter methods with the Test class 
+        // Demonstrate the DisplayGenericType and
+        // DisplayGenericParameter methods with the Test class
         // defined above. This shows base, interface, and special
         // constraints.
         DisplayGenericType(typeof(Test<>));

@@ -12,13 +12,17 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 12/19/2019
+  ms.date: 07/10/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
+    # Card
+    - title: "Download .NET"
+      itemType: download
+      url: https://dotnet.microsoft.com/download
     # Card
     - title: "C# introduction. A quick interactive start."
       itemType: get-started
@@ -35,18 +39,22 @@ highlightedContent:
     - title: "What's new in .NET docs"
       itemType: whats-new
       url: whats-new/index.yml
+    # Card
+    - title: "Azure for .NET developers"
+      itemType: overview
+      url: azure/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: ".NET: Free. Cross-platform. Open source." # < 60 chars (optional)
+  title: ".NET: Free. Cross platform. Open source." # < 60 chars (optional)
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
     - title: Open-source .NET
       summary: Learn about .NET Core
       links:
-        - url: core/index.md
+        - url: core/index.yml
           itemType: overview
           text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-1.md
@@ -64,6 +72,12 @@ conceptualContent:
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
+        - url: https://dotnet.microsoft.com/platform/community
+          itemType: whats-new
+          text: Community
+        - url: https://dotnetfoundation.org/
+          itemType: overview
+          text: .NET Foundation
     # Card
     - title: .NET concepts
       summary: Learn the fundamental concepts of .NET
@@ -71,7 +85,7 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/index.md
+        - url: standard/index.yml
           itemType: overview
           text: Overview of .NET
         - url: standard/net-standard.md
@@ -89,7 +103,7 @@ conceptualContent:
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
-        - url: framework/index.md
+        - url: framework/index.yml
           itemType: overview
           text: .NET Framework (Windows) apps
     # Card
@@ -203,7 +217,7 @@ additionalContent:
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: desktop-wpf/index.md
+          - url: desktop-wpf/index.yml
             text: Windows Presentation Foundation (.NET Core)
           - url: framework/wpf/index.md
             text: Windows Presentation Foundation (.NET Framework)
@@ -245,8 +259,8 @@ additionalContent:
           - url: https://www.nuget.org/packages/System.Device.Gpio
             text: System.Device.Gpio NuGet package
 
-    - title: API reference sections # < 60 chars (optional)
-      summary: Search the .NET API reference documentation, scoped to your interest. # < 160 chars (optional)
+    - title: API and language reference # < 60 chars (optional)
+      summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
       items:
         # Card
       - title: ".NET Core API reference"
@@ -281,4 +295,4 @@ additionalContent:
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md)."
+  footer: "Contribute to .NET docs. Read our [contributor guide](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute)."

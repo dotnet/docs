@@ -50,7 +50,7 @@ HRESULT LockClrVersion (
 |E_INVALIDARG|One or more of the arguments is null.|  
   
 ## Remarks  
- The host calls `LockClrVersion` before initializing the CLR. `LockClrVersion` takes three parameters, all of which are callbacks of type [FLockClrVersionCallback](../../../../docs/framework/unmanaged-api/hosting/flockclrversioncallback-function-pointer.md). This type is defined as follows.  
+ The host calls `LockClrVersion` before initializing the CLR. `LockClrVersion` takes three parameters, all of which are callbacks of type [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). This type is defined as follows.  
   
 ```cpp  
 typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();  
@@ -58,7 +58,7 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
  The following steps occur upon initialization of the runtime:  
   
-1. The host calls [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
+1. The host calls [CorBindToRuntimeEx](corbindtoruntimeex-function.md) or one of the other runtime initialization functions. Alternatively, the host could initialize the runtime using COM object activation.  
   
 2. The runtime calls the function specified by the `hostCallback` parameter.  
   
@@ -68,16 +68,16 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
     - `CorBindToRuntimeEx` (or another runtime initialization function).  
   
-    - [ICLRRuntimeHost::SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md).  
+    - [ICLRRuntimeHost::SetHostControl](iclrruntimehost-sethostcontrol-method.md).  
   
-    - [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md).  
+    - [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md).  
   
     - The function specified by the `pEndHostSetup` parameter.  
   
  All the calls from `pBeginHostSetup` to `pEndHostSetup` must occur on a single thread or fiber, with the same logical stack. This thread can be different from the thread upon which `hostCallback` is called.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -87,4 +87,4 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
 ## See also
 
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

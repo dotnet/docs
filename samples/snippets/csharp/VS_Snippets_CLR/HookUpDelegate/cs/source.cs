@@ -5,7 +5,7 @@ using System.Reflection.Emit;
 using System.Windows.Forms;
 
 //<Snippet2>
-class ExampleForm : Form 
+class ExampleForm : Form
 {
     public ExampleForm() : base()
     {
@@ -31,11 +31,11 @@ class Example
         //<Snippet3>
         Assembly assem = typeof(Example).Assembly;
         //</Snippet3>
- 
-        // Get the type that is to be loaded, and create an instance 
+
+        // Get the type that is to be loaded, and create an instance
         // of it. Activator.CreateInstance has other overloads, if
         // the type lacks a default constructor. The new instance
-        // is stored as type Object, to maintain the fiction that 
+        // is stored as type Object, to maintain the fiction that
         // nothing is known about the assembly. (Note that you can
         // get the types in an assembly without knowing their names
         // in advance.)
@@ -54,11 +54,11 @@ class Example
         //</Snippet5>
 
         // If you already have a method with the correct signature,
-        // you can simply get a MethodInfo for it. 
+        // you can simply get a MethodInfo for it.
         //
         //<Snippet6>
-        MethodInfo miHandler = 
-            typeof(Example).GetMethod("LuckyHandler", 
+        MethodInfo miHandler =
+            typeof(Example).GetMethod("LuckyHandler",
                 BindingFlags.NonPublic | BindingFlags.Instance);
         //</Snippet6>
 			
@@ -82,13 +82,13 @@ class Example
         //</Snippet8>
 
         // Event handler methods can also be generated at run time,
-        // using lightweight dynamic methods and Reflection.Emit. 
+        // using lightweight dynamic methods and Reflection.Emit.
         // To construct an event handler, you need the return type
         // and parameter types of the delegate. These can be obtained
-        // by examining the delegate's Invoke method. 
+        // by examining the delegate's Invoke method.
         //
-        // It is not necessary to name dynamic methods, so the empty 
-        // string can be used. The last argument associates the 
+        // It is not necessary to name dynamic methods, so the empty
+        // string can be used. The last argument associates the
         // dynamic method with the current type, giving the delegate
         // access to all the public and private members of Example,
         // as if it were an instance method.
@@ -97,16 +97,16 @@ class Example
         Type returnType = GetDelegateReturnType(tDelegate);
         if (returnType != typeof(void))
             throw new ApplicationException("Delegate has a return type.");
-            
-        DynamicMethod handler = 
-            new DynamicMethod("", 
+
+        DynamicMethod handler =
+            new DynamicMethod("",
                               null,
                               GetDelegateParameterTypes(tDelegate),
                               typeof(Example));
         //</Snippet9>
 
-        // Generate a method body. This method loads a string, calls 
-        // the Show method overload that takes a string, pops the 
+        // Generate a method body. This method loads a string, calls
+        // the Show method overload that takes a string, pops the
         // return value off the stack (because the handler has no
         // return type), and returns.
         //
@@ -114,10 +114,10 @@ class Example
         ILGenerator ilgen = handler.GetILGenerator();
 
         Type[] showParameters = { typeof(String) };
-        MethodInfo simpleShow = 
+        MethodInfo simpleShow =
             typeof(MessageBox).GetMethod("Show", showParameters);
 
-        ilgen.Emit(OpCodes.Ldstr, 
+        ilgen.Emit(OpCodes.Ldstr,
             "This event handler was constructed at run time.");
         ilgen.Emit(OpCodes.Call, simpleShow);
         ilgen.Emit(OpCodes.Pop);

@@ -27,7 +27,7 @@ Gets a token representing a public key. A strong name token is the shortened for
 ## Syntax  
   
 ```cpp  
-BOOLEANStrongNameTokenFromPublicKey (   
+BOOLEANStrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  

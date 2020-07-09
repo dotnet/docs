@@ -148,16 +148,16 @@ namespace WorkflowApplicationExample
             wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}: {1}", 
+                Console.WriteLine("OnUnhandledException in Workflow {0}: {1}",
                     e.InstanceId, e.UnhandledException.Message);
 
-                Console.WriteLine("ExceptionSource: {0} - {1}", 
+                Console.WriteLine("ExceptionSource: {0} - {1}",
                     e.ExceptionSource, e.ExceptionSourceInstanceId);
 
                 // Instruct the runtime to terminate the workflow.
                 return UnhandledExceptionAction.Terminate;
 
-                // Other choices are UnhandledExceptionAction.Abort and 
+                // Other choices are UnhandledExceptionAction.Abort and
                 // UnhandledExceptionAction.Cancel
             };
 
@@ -198,7 +198,7 @@ namespace WorkflowApplicationExample
                      },
                      new Throw
                     {
-                        Exception = new InArgument<Exception>((env) => 
+                        Exception = new InArgument<Exception>((env) =>
                             new ApplicationException("Something unexpected happened."))
                     },
                     new WriteLine
@@ -222,7 +222,7 @@ namespace WorkflowApplicationExample
                 // Instruct the runtime to terminate the workflow.
                 return UnhandledExceptionAction.Terminate;
 
-                // Other choices are UnhandledExceptionAction.Abort and 
+                // Other choices are UnhandledExceptionAction.Abort and
                 // UnhandledExceptionAction.Cancel
             };
 
@@ -322,7 +322,7 @@ namespace WorkflowApplicationExample
                      },
                      new Throw
                     {
-                        Exception = new InArgument<Exception>((env) => 
+                        Exception = new InArgument<Exception>((env) =>
                             new ApplicationException("Something unexpected happened."))
                     },
                     new WriteLine
@@ -411,7 +411,7 @@ namespace WorkflowApplicationExample
                      },
                      new Throw
                     {
-                        Exception = new InArgument<Exception>((env) => 
+                        Exception = new InArgument<Exception>((env) =>
                             new ApplicationException("Something unexpected happened."))
                     },
                     new WriteLine
@@ -492,7 +492,7 @@ namespace WorkflowApplicationExample
                      },
                      new Throw
                     {
-                        Exception = new InArgument<Exception>((env) => 
+                        Exception = new InArgument<Exception>((env) =>
                             new ApplicationException("Something unexpected happened."))
                     },
                     new WriteLine
@@ -567,7 +567,7 @@ namespace WorkflowApplicationExample
                      },
                      new Throw
                     {
-                        Exception = new InArgument<Exception>((env) => 
+                        Exception = new InArgument<Exception>((env) =>
                             new ApplicationException("Something unexpected happened."))
                     },
                     new WriteLine
@@ -688,7 +688,7 @@ namespace WorkflowApplicationExample
                     e.Reason.GetType().FullName,
                     e.Reason.Message);
             };
-            
+
             wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
@@ -1037,7 +1037,7 @@ namespace WorkflowApplicationExample
             {
                 Body = new Sequence
                 {
-                    Activities = 
+                    Activities =
                     {
                         new WriteLine
                         {
@@ -1098,7 +1098,7 @@ namespace WorkflowApplicationExample
             {
                 Body = new Sequence
                 {
-                    Activities = 
+                    Activities =
                     {
                         new WriteLine
                         {
@@ -1106,7 +1106,7 @@ namespace WorkflowApplicationExample
                         },
                         new Throw
                         {
-                             Exception = new InArgument<Exception>((env) => 
+                             Exception = new InArgument<Exception>((env) =>
                                  new ApplicationException("An ApplicationException was thrown."))
                         },
                         new WriteLine
@@ -1166,13 +1166,13 @@ namespace WorkflowApplicationExample
             Activity wf = new Parallel
             {
                 CompletionCondition = true,
-                Branches = 
+                Branches =
                 {
                     new CancellationScope
                     {
                         Body = new Sequence
                         {
-                            Activities = 
+                            Activities =
                             {
                                 new WriteLine
                                 {
@@ -1236,13 +1236,13 @@ namespace WorkflowApplicationExample
                 Try = new Parallel
                 {
                     CompletionCondition = true,
-                    Branches = 
+                    Branches =
                     {
                         new CancellationScope
                         {
                             Body = new Sequence
                             {
-                                Activities = 
+                                Activities =
                                 {
                                     new WriteLine
                                     {
@@ -1250,7 +1250,7 @@ namespace WorkflowApplicationExample
                                     },
                                     new Throw
                                     {
-                                         Exception = new InArgument<Exception>((env) => 
+                                         Exception = new InArgument<Exception>((env) =>
                                              new ApplicationException("An ApplicationException was thrown."))
                                     },
                                     new WriteLine
@@ -1322,7 +1322,7 @@ namespace WorkflowApplicationExample
                 {
                     Body = new Sequence
                     {
-                        Activities = 
+                        Activities =
                         {
                             new WriteLine
                             {
@@ -1330,7 +1330,7 @@ namespace WorkflowApplicationExample
                             },
                             new Throw
                             {
-                                 Exception = new InArgument<Exception>((env) => 
+                                 Exception = new InArgument<Exception>((env) =>
                                      new ApplicationException("An ApplicationException was thrown."))
                             },
                             new WriteLine
@@ -1394,7 +1394,7 @@ namespace WorkflowApplicationExample
             {
                 Body = new Sequence
                 {
-                    Activities = 
+                    Activities =
                     {
                         new WriteLine
                         {
@@ -1402,7 +1402,7 @@ namespace WorkflowApplicationExample
                         },
                         new Throw
                         {
-                             Exception = new InArgument<Exception>((env) => 
+                             Exception = new InArgument<Exception>((env) =>
                                  new ApplicationException("An ApplicationException was thrown."))
                         },
                         new WriteLine
@@ -1466,7 +1466,7 @@ namespace WorkflowApplicationExample
             ab.Properties.Add(new DynamicActivityProperty { Name = "Operand2", Type = typeof(InArgument<int>) });
             ab.Implementation = new Sequence
             {
-                Activities = 
+                Activities =
                 {
                     new WriteLine
                     {
@@ -1537,8 +1537,8 @@ namespace WorkflowApplicationExample
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(wf);
             foreach (PropertyDescriptor property in properties)
             {
-                if (property.PropertyType.IsGenericType && 
-                    (property.PropertyType.GetGenericTypeDefinition() == typeof(InArgument<>) || 
+                if (property.PropertyType.IsGenericType &&
+                    (property.PropertyType.GetGenericTypeDefinition() == typeof(InArgument<>) ||
                     property.PropertyType.GetGenericTypeDefinition() == typeof(InOutArgument<>)))
                 {
                     Type targetType = property.PropertyType.GetGenericArguments()[0];
@@ -1585,7 +1585,7 @@ namespace WorkflowApplicationExample
                     },
                     new Sequence
                     {
-                        Activities = 
+                        Activities =
                         {
                             new WriteLine
                             {
@@ -1608,7 +1608,7 @@ namespace WorkflowApplicationExample
         static void InspectActivity(Activity root, int indent)
         {
             // Inspect the activity tree using WorkflowInspectionServices.
-            IEnumerator<Activity> activities = 
+            IEnumerator<Activity> activities =
                 WorkflowInspectionServices.GetActivities(root).GetEnumerator();
 
             Console.WriteLine("{0}{1}", new string(' ', indent), root.DisplayName);
@@ -1660,7 +1660,7 @@ namespace WorkflowApplicationExample
                     },
                     new Sequence
                     {
-                        Activities = 
+                        Activities =
                         {
                             new WriteLine
                             {
@@ -1733,7 +1733,7 @@ namespace WorkflowApplicationExample
                     },
                     new Sequence
                     {
-                        Activities = 
+                        Activities =
                         {
                             new WriteLine
                             {
@@ -1886,7 +1886,7 @@ namespace WorkflowApplicationExample
                     {
                         TargetObject = new InArgument<Random>(new VisualBasicValue<Random>("New Random()")),
                         MethodName = "Next",
-                        Parameters = 
+                        Parameters =
                         {
                             new InArgument<int>(1),
                             new InArgument<int>(101)
@@ -1954,7 +1954,7 @@ namespace WorkflowApplicationExample
 
                 Implementation = () => new Sequence
                 {
-                    Activities = 
+                    Activities =
                     {
                         new Assign<int>
                         {
@@ -1998,7 +1998,7 @@ namespace WorkflowApplicationExample
                      },
                      new WriteLine
                      {
-                         Text = new InArgument<string>((env) => 
+                         Text = new InArgument<string>((env) =>
                              ("Hello, " + name.Get(env)))
                      }
                  }
@@ -2393,7 +2393,7 @@ namespace WorkflowApplicationExample
                      },
                      new WriteLine
                      {
-                         Text = new InArgument<string>((env) => 
+                         Text = new InArgument<string>((env) =>
                              ("Hello, " + name.Get(env)))
                      }
                  }
@@ -2422,7 +2422,7 @@ namespace WorkflowApplicationExample
             // is idle. If a call to ResumeBookmark is made and the workflow
             // is not idle, ResumeBookmark blocks until the workflow becomes
             // idle before resuming the bookmark.
-            BookmarkResumptionResult result = wfApp.ResumeBookmark("UserName", 
+            BookmarkResumptionResult result = wfApp.ResumeBookmark("UserName",
                 Console.ReadLine());
 
             // Possible BookmarkResumptionResult values:
@@ -2453,7 +2453,7 @@ namespace WorkflowApplicationExample
                      },
                      new WriteLine
                      {
-                         Text = new InArgument<string>((env) => 
+                         Text = new InArgument<string>((env) =>
                              ("Hello, " + name.Get(env)))
                      }
                  }
@@ -2478,7 +2478,7 @@ namespace WorkflowApplicationExample
             idleEvent.WaitOne();
 
             // Gather the user's input and resume the bookmark.
-            BookmarkResumptionResult result =  wfApp.ResumeBookmark("UserName", 
+            BookmarkResumptionResult result =  wfApp.ResumeBookmark("UserName",
                 Console.ReadLine(), TimeSpan.FromSeconds(15));
 
             // Possible BookmarkResumptionResult values:
@@ -2508,7 +2508,7 @@ namespace WorkflowApplicationExample
                      },
                      new WriteLine
                      {
-                         Text = new InArgument<string>((env) => 
+                         Text = new InArgument<string>((env) =>
                              ("Hello, " + name.Get(env)))
                      }
                  }
@@ -2533,7 +2533,7 @@ namespace WorkflowApplicationExample
             idleEvent.WaitOne();
 
             // Gather the user's input and resume the bookmark.
-            BookmarkResumptionResult result = wfApp.ResumeBookmark(new Bookmark("UserName"), 
+            BookmarkResumptionResult result = wfApp.ResumeBookmark(new Bookmark("UserName"),
                 Console.ReadLine());
 
             // Possible BookmarkResumptionResult values:
@@ -2564,7 +2564,7 @@ namespace WorkflowApplicationExample
                      },
                      new WriteLine
                      {
-                         Text = new InArgument<string>((env) => 
+                         Text = new InArgument<string>((env) =>
                              ("Hello, " + name.Get(env)))
                      }
                  }
@@ -2589,7 +2589,7 @@ namespace WorkflowApplicationExample
             idleEvent.WaitOne();
 
             // Gather the user's input and resume the bookmark.
-            BookmarkResumptionResult result = wfApp.ResumeBookmark(new Bookmark("UserName"), 
+            BookmarkResumptionResult result = wfApp.ResumeBookmark(new Bookmark("UserName"),
                 Console.ReadLine(), TimeSpan.FromSeconds(15));
 
             // Possible BookmarkResumptionResult values:
@@ -2649,7 +2649,7 @@ namespace WorkflowApplicationExample
 
             application.InstanceStore = instanceStore;
 
-            //returning IdleAction.Unload instructs the WorkflowApplication to persists application state and remove it from memory  
+            //returning IdleAction.Unload instructs the WorkflowApplication to persists application state and remove it from memory
             application.PersistableIdle = (e) =>
             {
                 return PersistableIdleAction.Unload;
@@ -2660,7 +2660,7 @@ namespace WorkflowApplicationExample
                 instanceUnloaded.Set();
             };
 
-            //This call is not required 
+            //This call is not required
             //Calling persist here captures the application durably before it has been started
             application.Persist();
             id = application.Id;
@@ -2880,7 +2880,7 @@ namespace WorkflowApplicationExample
                 {
                     Exception = new InArgument<Exception>((env) =>new ApplicationException("An ApplicationException was thrown."))
                 },
-                Catches = 
+                Catches =
                 {
                     new Catch<ApplicationException>
                     {
@@ -2999,8 +2999,8 @@ namespace WorkflowApplicationExample
             context.CreateBookmark(name, new BookmarkCallback(OnReadComplete));
         }
 
-        // NativeActivity derived activities that do asynchronous operations by calling 
-        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext 
+        // NativeActivity derived activities that do asynchronous operations by calling
+        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext
         // must override the CanInduceIdle property and return true.
         protected override bool CanInduceIdle
         {
@@ -3029,8 +3029,8 @@ namespace WorkflowApplicationExample
                 new BookmarkCallback(OnResumeBookmark));
         }
 
-        // NativeActivity derived activities that do asynchronous operations by calling 
-        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext 
+        // NativeActivity derived activities that do asynchronous operations by calling
+        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext
         // must override the CanInduceIdle property and return true.
         protected override bool CanInduceIdle
         {
@@ -3205,7 +3205,7 @@ namespace WorkflowApplicationExample
         {
             throw new NotImplementedException();
         }
-        
+
         protected override IAsyncResult BeginExecute(AsyncCodeActivityContext context, AsyncCallback callback, object state)
         {
             throw new NotImplementedException();

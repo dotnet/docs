@@ -12,9 +12,9 @@ ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
 
 *Collection initializers* provide a shortened syntax that enables you to create a collection and populate it with an initial set of values. Collection initializers are useful when you are creating a collection from a set of known values, for example, a list of menu options or categories, an initial set of numeric values, a static list of strings such as day or month names, or geographic locations such as a list of states that is used for validation.
 
-For more information about collections, see [Collections](../../../../visual-basic/programming-guide/concepts/collections.md).
+For more information about collections, see [Collections](../../concepts/collections.md).
 
-You identify a collection initializer by using the `From` keyword followed by braces (`{}`). This is similar to the array literal syntax that is described in [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md). The following examples show various ways to use collection initializers to create collections.
+You identify a collection initializer by using the `From` keyword followed by braces (`{}`). This is similar to the array literal syntax that is described in [Arrays](../arrays/index.md). The following examples show various ways to use collection initializers to create collections.
 
 [!code-vb[VbVbalrCollectionInitializers#1](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#1)]
 
@@ -52,7 +52,7 @@ The following code example shows equivalent code that does not use a collection 
 
 [!code-vb[VbVbalrCollectionInitializers#10](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#10)]
 
-If the collection has an `Add` method that has parameters that match the constructor for the `Customer` object, you could nest parameter values for the `Add` method within collection initializers, as discussed in the next section. If the collection does not have such an `Add` method, you can create one as an extension method. For an example of how to create an `Add` method as an extension method for a collection, see [How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md). For an example of how to create a custom collection that can be used with a collection initializer, see [How to: Create a Collection Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md).
+If the collection has an `Add` method that has parameters that match the constructor for the `Customer` object, you could nest parameter values for the `Add` method within collection initializers, as discussed in the next section. If the collection does not have such an `Add` method, you can create one as an extension method. For an example of how to create an `Add` method as an extension method for a collection, see [How to: Create an Add Extension Method Used by a Collection Initializer](how-to-create-an-add-extension-method-used-by-a-collection-initializer.md). For an example of how to create a custom collection that can be used with a collection initializer, see [How to: Create a Collection Used by a Collection Initializer](how-to-create-a-collection-used-by-a-collection-initializer.md).
 
 ## Nesting Collection Initializers
 
@@ -72,18 +72,18 @@ Only nested value lists from the first level of nesting are sent to the `Add` me
 
 |Title|Description|
 |---|---|
-|[How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|Shows how to create an extension method called `Add` that can be used to populate a collection with values from a collection initializer.|
-|[How to: Create a Collection Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md)|Shows how to enable use of a collection initializer by including an `Add` method in a collection class that implements `IEnumerable`.|
+|[How to: Create an Add Extension Method Used by a Collection Initializer](how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|Shows how to create an extension method called `Add` that can be used to populate a collection with values from a collection initializer.|
+|[How to: Create a Collection Used by a Collection Initializer](how-to-create-a-collection-used-by-a-collection-initializer.md)|Shows how to enable use of a collection initializer by including an `Add` method in a collection class that implements `IEnumerable`.|
 
 ## See also
 
-- [Collections](../../../../visual-basic/programming-guide/concepts/collections.md)
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
-- [Auto-Implemented Properties](../../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
-- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)
+- [Collections](../../concepts/collections.md)
+- [Arrays](../arrays/index.md)
+- [Object Initializers: Named and Anonymous Types](../objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [New Operator](../../../language-reference/operators/new-operator.md)
+- [Auto-Implemented Properties](../procedures/auto-implemented-properties.md)
+- [How to: Initialize an Array Variable in Visual Basic](../arrays/how-to-initialize-an-array-variable.md)
+- [Local Type Inference](../variables/local-type-inference.md)
+- [Anonymous Types](../objects-and-classes/anonymous-types.md)
+- [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md)
+- [How to: Create a List of Items](../../concepts/linq/how-to-create-a-list-of-items.md)

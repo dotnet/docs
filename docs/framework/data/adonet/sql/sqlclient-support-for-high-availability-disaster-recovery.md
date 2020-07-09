@@ -1,5 +1,6 @@
 ---
 title: "SqlClient Support for High Availability, Disaster Recovery"
+description: Learn about SqlClient application support for high-availability, disaster recovery in SQL Server, using AlwaysOn Availability Groups.
 ms.date: "03/30/2017"
 ms.assetid: 61e0b396-09d7-4e13-9711-7dcbcbd103a0
 ---

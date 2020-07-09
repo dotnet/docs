@@ -1,5 +1,6 @@
 ---
 title: "How to: Unload an Application Domain"
+description: Read how to unload an application domain in .NET, using the AppDomain.Unload method to gracefully shut down the specified application domain.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

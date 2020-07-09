@@ -29,7 +29,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 - [Managing Permissions](#Managing_Permissions)  
   
-<a name="WPF_Feature_Partial_Trust_Support"></a>   
+<a name="WPF_Feature_Partial_Trust_Support"></a>
 ## WPF Feature Partial Trust Support  
  The following table lists the high-level features of Windows Presentation Foundation (WPF) that are safe to use within the limits of the Internet zone permission set.  
   
@@ -70,7 +70,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Visuals|Bitmap Effects<br /><br /> Image Encoding|  
 |Editing|Rich Text Format Clipboard<br /><br /> Full XAML support|  
   
-<a name="Partial_Trust_Programming"></a>   
+<a name="Partial_Trust_Programming"></a>
 ## Partial Trust Programming  
  For XBAP applications, code that exceeds the default permission set will have different behavior depending on the security zone. In some cases, the user will receive a warning when they attempt to install it. The user can choose to continue or cancel the installation. The following table describes the behavior of the application for each security zone and what you have to do for the application to receive full trust.  
   
@@ -85,7 +85,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and WPF offer several techniques for managing this scenario.  
   
-<a name="Detecting_Permissions_using_CAS"></a>   
+<a name="Detecting_Permissions_using_CAS"></a>
 ### Detecting Permissions Using CAS  
  In some situations, it is possible for shared code in library assemblies to be used by both standalone applications and XBAPs. In these cases, code may execute functionality that could require more permissions than the application's awarded permission set allows. Your application can detect whether or not it has a certain permission by using Microsoft .NET Framework security. Specifically, it can test whether it has a specific permission by calling the <xref:System.Security.CodeAccessPermission.Demand%2A> method on the instance of the desired permission. This is shown in the following example, which has code that queries for whether it has the ability to save a file to the local disk:  
   
@@ -96,7 +96,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  If an application does not have the desired permission, the call to <xref:System.Security.CodeAccessPermission.Demand%2A> will throw a security exception. Otherwise, the permission has been granted. `IsPermissionGranted` encapsulates this behavior and returns `true` or `false` as appropriate.  
   
-<a name="Graceful_Degradation_of_Functionality"></a>   
+<a name="Graceful_Degradation_of_Functionality"></a>
 ### Graceful Degradation of Functionality  
  Being able to detect whether code has the permission to do what it needs to do is interesting for code that can be executed from different zones. While detecting the zone is one thing, it is far better to provide an alternative for the user, if possible. For example, a full trust application typically enables users to create files anywhere they want, while a partial trust application can only create files in isolated storage. If the code to create a file exists in an assembly that is shared by both full trust (standalone) applications and partial trust (browser-hosted) applications, and both applications want users to be able to create files, the shared code should detect whether it is running in partial or full trust before creating a file in the appropriate location. The following code demonstrates both.  
   
@@ -109,14 +109,14 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  In a controlled environment, such as an intranet, custom managed frameworks can be installed across the client base into the global assembly cache (GAC). These libraries can execute code that requires full trust, and be referenced from applications that are only allowed partial trust by using <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (for more information, see [Security](security-wpf.md) and [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)).  
   
-<a name="Browser_Host_Detection"></a>   
+<a name="Browser_Host_Detection"></a>
 ### Browser Host Detection  
  Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your XAML browser application (XBAP) only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for XAML browser applications (XBAPs).  
   
 > [!NOTE]
 > <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  
   
-<a name="Managing_Permissions"></a>   
+<a name="Managing_Permissions"></a>
 ## Managing Permissions  
  By default, XBAPs run with partial trust (default Internet zone permission set). However, depending on the requirements of the application, it is possible to change the set of permissions from the default. For example, if an XBAPs is launched from a local intranet, it can take advantage of an increased permission set, which is shown in the following table.  
   

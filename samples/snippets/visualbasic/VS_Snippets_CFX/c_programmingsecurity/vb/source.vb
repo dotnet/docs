@@ -4,7 +4,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
 Imports System.ServiceModel.Description
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test
 
     Private Sub New()
@@ -127,13 +127,13 @@ Public Class Test
         '<snippet9>
         <OperationContract(ProtectionLevel:= _
            System.Net.Security.ProtectionLevel.EncryptAndSign)> _
-         Private Sub MyCalculatorMethod()
+        Private Sub MyCalculatorMethod()
             ' Code not shown. 
         End Sub
         '</snippet9>
 
 
-        Private Sub TransportSecurityOverview()            
+        Private Sub TransportSecurityOverview()
             '<snippet10>
             Dim b As BasicHttpBinding = New BasicHttpBinding()
             b.Security.Mode = BasicHttpSecurityMode.Transport

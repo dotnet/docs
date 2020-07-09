@@ -24,7 +24,7 @@ topic_type:
 |[GetLocalVarSigToken Method](icordebugilcode2-getlocalvarsigtoken-method.md)|Gets the metadata token for the local variable signature for the function that is represented by this instance.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

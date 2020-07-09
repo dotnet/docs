@@ -1,5 +1,6 @@
 ---
 title: "<bypasslist> Element (Network Settings)"
+description: The <bypasslist> network settings element provides a set of regular expressions that describe addresses that do not use a proxy in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#bypasslist"
@@ -20,7 +21,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Syntax  
   
 ```xml  
-<bypasslist>   
+<bypasslist>
 </bypasslist>  
 ```  
   

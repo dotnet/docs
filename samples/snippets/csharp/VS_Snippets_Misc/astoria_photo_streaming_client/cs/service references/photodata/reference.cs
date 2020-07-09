@@ -12,7 +12,7 @@
 // Generation date: 8/8/2011 12:42:42 PM
 namespace PhotoStreamingClient.PhotoData
 {
-    
+
     /// <summary>
     /// There are no comments for PhotoDataContainer in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace PhotoStreamingClient.PhotoData
         /// Initialize a new PhotoDataContainer object.
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public PhotoDataContainer(global::System.Uri serviceRoot) : 
+        public PhotoDataContainer(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);
@@ -406,7 +406,7 @@ namespace PhotoStreamingClient.PhotoData
         {
             get
             {
-                if (((this._Exposure == null) 
+                if (((this._Exposure == null)
                             && (this._ExposureInitialized != true)))
                 {
                     this._Exposure = new Exposure();
@@ -437,7 +437,7 @@ namespace PhotoStreamingClient.PhotoData
         {
             get
             {
-                if (((this._Dimensions == null) 
+                if (((this._Dimensions == null)
                             && (this._DimensionsInitialized != true)))
                 {
                     this._Dimensions = new Dimensions();

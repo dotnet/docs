@@ -73,7 +73,7 @@ tlbexp assemblyName [options]
   
  the following type library is generated:  
   
-```cpp 
+```cpp
 [id(0x60020004)]  
 HRESULT StructUnkSafe([out, retval] SAFEARRAY(IUnknown*)* pRetVal);  
 [id(0x60020005)]  

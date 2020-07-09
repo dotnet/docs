@@ -8,7 +8,7 @@ public class Example
    {
       string[] inputs = { "1 May 1917", "June 16, 2003" };
       string pattern = @"(?<=\d{1,2}\s)\w+,?\s\d{4}";
-      
+
       foreach (string input in inputs)
       {
          Match match = Regex.Match(input, pattern, RegexOptions.RightToLeft);

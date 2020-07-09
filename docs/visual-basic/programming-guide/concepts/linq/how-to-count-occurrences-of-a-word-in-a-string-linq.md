@@ -58,4 +58,4 @@ Create a Visual Basic console application project, with an `Imports` statement f
 
 ## See also
 
-- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ and Strings (Visual Basic)](linq-and-strings.md)

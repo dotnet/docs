@@ -76,7 +76,7 @@ The following configuration file disables background garbage collection:
 
 If there's a **gcConcurrentSetting** setting in the machine configuration file, it defines the default value for all .NET Framework applications. The machine configuration file setting overrides the application configuration file setting.
 
-For more information on concurrent and background garbage collection, see the [Concurrent garbage collection](../../../../standard/garbage-collection/fundamentals.md#concurrent-garbage-collection), [Background workstation garbage collection](../../../../standard/garbage-collection/fundamentals.md#background-workstation-garbage-collection), and [Background server garbage collection](../../../../standard/garbage-collection/fundamentals.md#background-server-garbage-collection) sections in the [Fundamentals of Garbage Collection](../../../../standard/garbage-collection/fundamentals.md) article.
+For more information on concurrent and background garbage collection, see [Background garbage collection](../../../../standard/garbage-collection/background-gc.md).
 
 ## Example
 

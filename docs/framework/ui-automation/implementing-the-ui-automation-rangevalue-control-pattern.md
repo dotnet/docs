@@ -15,7 +15,7 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
   
  The <xref:System.Windows.Automation.RangeValuePattern> control pattern is used to support controls that can be set to a value within a range. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Range Value control pattern, note the following guidelines and conventions:  
   
@@ -26,7 +26,7 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
  ![Progress bar.](./media/uia-rangevaluepattern-progress-bar.PNG "UIA_RangeValuePattern_Progress_Bar")  
 Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum Property Values Are Normalized to 0 and 100, Respectively  
   
-<a name="Required_Members_for_the_IRangeValueProvider"></a>   
+<a name="Required_Members_for_the_IRangeValueProvider"></a>
 ## Required Members for IRangeValueProvider  
   
 |Required member|Member type|Notes|  
@@ -41,7 +41,7 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
   
  This control pattern has no associated events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

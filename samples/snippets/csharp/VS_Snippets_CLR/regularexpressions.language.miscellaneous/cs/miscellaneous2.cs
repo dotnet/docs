@@ -17,7 +17,7 @@ public class Example
          Console.WriteLine(match.Value);
          if (match.Groups.Count > 1)
          {
-            for (int ctr = 1; ctr <match.Groups.Count; ctr++) 
+            for (int ctr = 1; ctr <match.Groups.Count; ctr++)
                Console.WriteLine("   Group {0}: {1}", ctr, match.Groups[ctr].Value);
          }
       }
@@ -30,4 +30,4 @@ public class Example
 //       Group 1: Drooling
 //    Dreaded Deep
 //       Group 1: Dreaded
-// </Snippet2>   
+// </Snippet2>

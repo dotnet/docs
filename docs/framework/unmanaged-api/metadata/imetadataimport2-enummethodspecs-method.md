@@ -23,12 +23,12 @@ Gets an enumerator for an array of MethodSpec tokens associated with the specifi
   
 ```cpp  
 HRESULT EnumMethodSpecs (  
-    [in, out] HCORENUM      *phEnum,   
+    [in, out] HCORENUM      *phEnum,
     [in]      mdToken       tk,  
     [out]     mdMethodSpec  rMethodSpecs[],  
     [in]      ULONG         cMax,  
     [out]     ULONG         *pcMethodSpecs  
-);   
+);
 ```  
   
 ## Parameters  
@@ -55,7 +55,7 @@ HRESULT EnumMethodSpecs (
 |`S_FALSE`|`phEnum` has no member elements. In this case, `pcMethodSpecs` is set to 0 (zero).|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -65,5 +65,5 @@ HRESULT EnumMethodSpecs (
   
 ## See also
 
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)

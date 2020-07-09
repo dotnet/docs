@@ -22,14 +22,14 @@ Declares methods for registering and unregistering a connection notification sou
   
 |Method|Description|  
 |------------|-----------------|  
-|[RegisterNotifySource Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-registernotifysource-method.md)|Installs a specified notification source object.|  
-|[UnregisterNotifySource Method](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-unregisternotifysource-method.md)|Removes a specified notification source object from the connection.|  
+|[RegisterNotifySource Method](inotifyconnection2-registernotifysource-method.md)|Installs a specified notification source object.|  
+|[UnregisterNotifySource Method](inotifyconnection2-unregisternotifysource-method.md)|Removes a specified notification source object from the connection.|  
   
 ## Requirements  
  **Header:** ProtocolNotify2.idl  
   
 ## See also
 
-- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
-- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [INotifySink2 Interface](inotifysink2-interface.md)
+- [INotifySource2 Interface](inotifysource2-interface.md)
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

@@ -19,7 +19,7 @@ namespace SDKSample
       void OnMouseDownPlayMedia(object sender, MouseButtonEventArgs args)
       {
 
-         // The Play method will begin the media if it is not currently active or 
+         // The Play method will begin the media if it is not currently active or
          // resume media if it is paused. This has no effect if the media is
          // already running.
          myMediaElement.Play();
@@ -73,7 +73,7 @@ namespace SDKSample
       }
       //</SnippetCodeBehindMediaElementExampleMediaEnded>
 
-      // Jump to different parts of the media (seek to). 
+      // Jump to different parts of the media (seek to).
       private void SeekToMediaPosition(object sender, RoutedPropertyChangedEventArgs<double> args)
       {
          int SliderValue = (int)timelineSlider.Value;

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostCrst::Leave Method
-Leaves the critical section that is represented by the current instance of [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md).  
+Leaves the critical section that is represented by the current instance of [IHostCrst](ihostcrst-interface.md).  
   
 ## Syntax  
   
@@ -40,7 +40,7 @@ HRESULT Leave ();
  `Leave` allows the CLR to communicate directly with the host's threading implementation, rather than using the corresponding Win32 `LeaveCriticalSection` function. A thread that takes ownership of the critical section represented by the current `IHostCrst` instance must call `Leave` once for each time it enters that critical section.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,6 +50,6 @@ HRESULT Leave ();
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostCrst Interface](ihostcrst-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

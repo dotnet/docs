@@ -39,7 +39,7 @@ In this case, it is best to parallelize only the outer data source (customers) u
 
 - The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.
 
-In all cases, the best way to determine the optimum query shape is to test and measure. For more information, see [How to: Measure PLINQ Query Performance](../../../docs/standard/parallel-programming/how-to-measure-plinq-query-performance.md).
+In all cases, the best way to determine the optimum query shape is to test and measure. For more information, see [How to: Measure PLINQ Query Performance](how-to-measure-plinq-query-performance.md).
 
 ## Avoid calls to non-thread-safe methods
 
@@ -118,4 +118,4 @@ In particular, one iteration of a parallel loop should never wait on another ite
 
 ## See also
 
-- [Parallel LINQ (PLINQ)](parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

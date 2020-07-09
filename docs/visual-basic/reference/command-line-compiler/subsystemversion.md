@@ -48,11 +48,11 @@ The default value of the **-subsystemversion** compiler option depends on the co
 
 - The default value is 6.02 if any compiler option in the following list is set:
 
-  - [-target:appcontainerexe](../../../visual-basic/reference/command-line-compiler/target.md)
+  - [-target:appcontainerexe](target.md)
 
-  - [-target:winmdobj](../../../visual-basic/reference/command-line-compiler/target.md)
+  - [-target:winmdobj](target.md)
 
-  - [-platform:arm](../../../visual-basic/reference/command-line-compiler/platform.md)
+  - [-platform:arm](platform.md)
 
 - The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
 
@@ -64,6 +64,6 @@ To set the **-subsystemversion** compiler option in Visual Studio, you must open
 
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Visual Basic Command-Line Compiler](index.md)
 
 - [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

@@ -1,5 +1,6 @@
 ---
 title: "Obtaining a DbProviderFactory"
+description: Learn how to obtain a DbProviderFactory from the DbProviderFactories class to work with specific data sources in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -19,9 +20,9 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 <system.data>  
   <DbProviderFactories>  
     <add name="SqlClient Data Provider"  
-     invariant="System.Data.SqlClient"   
-     description=".Net Framework Data Provider for SqlServer"   
-     type="System.Data.SqlClient.SqlClientFactory, System.Data,   
+     invariant="System.Data.SqlClient"
+     description=".Net Framework Data Provider for SqlServer"
+     type="System.Data.SqlClient.SqlClientFactory, System.Data,
      Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"  
     />  
   </DbProviderFactories>  
@@ -57,14 +58,14 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 <configuration>  
   <connectionStrings>  
     <clear/>  
-    <add name="NorthwindSQL"   
-     providerName="System.Data.SqlClient"   
+    <add name="NorthwindSQL"
+     providerName="System.Data.SqlClient"
      connectionString=  
      "Data Source=MSSQL1;Initial Catalog=Northwind;Integrated Security=true"  
     />  
   
-    <add name="NorthwindAccess"   
-     providerName="System.Data.OleDb"   
+    <add name="NorthwindAccess"
+     providerName="System.Data.OleDb"
      connectionString=  
      "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Data\Northwind.mdb;"  
     />  

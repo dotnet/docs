@@ -50,13 +50,13 @@ namespace TreeViewFindTVI
                 }
 
                 // Try to generate the ItemsPresenter and the ItemsPanel.
-                // by calling ApplyTemplate.  Note that in the 
-                // virtualizing case even if the item is marked 
-                // expanded we still need to do this step in order to 
+                // by calling ApplyTemplate.  Note that in the
+                // virtualizing case even if the item is marked
+                // expanded we still need to do this step in order to
                 // regenerate the visuals because they may have been virtualized away.
 
                 container.ApplyTemplate();
-                ItemsPresenter itemsPresenter = 
+                ItemsPresenter itemsPresenter =
                     (ItemsPresenter)container.Template.FindName("ItemsHost", container);
                 if (itemsPresenter != null)
                 {
@@ -64,7 +64,7 @@ namespace TreeViewFindTVI
                 }
                 else
                 {
-                    // The Tree template has not named the ItemsPresenter, 
+                    // The Tree template has not named the ItemsPresenter,
                     // so walk the descendents and find the child.
                     itemsPresenter = FindVisualChild<ItemsPresenter>(container);
                     if (itemsPresenter == null)
@@ -78,9 +78,9 @@ namespace TreeViewFindTVI
                 Panel itemsHostPanel = (Panel)VisualTreeHelper.GetChild(itemsPresenter, 0);
 
                 // Ensure that the generator for this panel has been created.
-                UIElementCollection children = itemsHostPanel.Children; 
+                UIElementCollection children = itemsHostPanel.Children;
 
-                MyVirtualizingStackPanel virtualizingPanel = 
+                MyVirtualizingStackPanel virtualizingPanel =
                     itemsHostPanel as MyVirtualizingStackPanel;
 
                 for (int i = 0, count = container.Items.Count; i < count; i++)
@@ -88,21 +88,21 @@ namespace TreeViewFindTVI
                     TreeViewItem subContainer;
                     if (virtualizingPanel != null)
                     {
-                        // Bring the item into view so 
+                        // Bring the item into view so
                         // that the container will be generated.
                         virtualizingPanel.BringIntoView(i);
 
-                        subContainer = 
+                        subContainer =
                             (TreeViewItem)container.ItemContainerGenerator.
                             ContainerFromIndex(i);
                     }
                     else
                     {
-                        subContainer = 
+                        subContainer =
                             (TreeViewItem)container.ItemContainerGenerator.
                             ContainerFromIndex(i);
 
-                        // Bring the item into view to maintain the 
+                        // Bring the item into view to maintain the
                         // same behavior as with a virtualizing panel.
                         subContainer.BringIntoView();
                     }
@@ -169,7 +169,7 @@ namespace TreeViewFindTVI
         /// this sample and is not meant to be usable for general
         /// cases.  Applications must provide the logic to find
         /// the data in their object model.
-        /// 
+        ///
         /// This method relies on the data model getting populated
         /// by calling PopulateItems(2, 5).  If you Change the parameters
         /// of PopulateItems, this method might not find the
@@ -193,7 +193,7 @@ namespace TreeViewFindTVI
 
             while ((currentList[i].Items.Count == 2) && (currentList[i].Key != key))
             {
-                // Save the current value before changing i. 
+                // Save the current value before changing i.
                 currentIndex = i;
 
                 // Check whether the second item of the current list is
@@ -225,7 +225,7 @@ namespace TreeViewFindTVI
                     TestDataItem.HighestKey));
                 return;
             }
-            
+
             object item = FindTreeDataItem(key);
 
             if (item == null)
@@ -239,7 +239,7 @@ namespace TreeViewFindTVI
             if (requestedItem != null)
             {
                 MessageBox.Show(requestedItem.ToString());
-                requestedItem.IsSelected = true;                
+                requestedItem.IsSelected = true;
             }
         }
     }

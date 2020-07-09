@@ -21,7 +21,7 @@ namespace BrushesIntroduction
             createImageBrushExample(mainPanel);
             createDrawingBrushExample(mainPanel);
             createVisualBrushExample(mainPanel);
-            
+
             this.Content = mainPanel;
         }
 
@@ -96,7 +96,7 @@ namespace BrushesIntroduction
             // Create an ImageBrush and use it to
             // paint the rectangle.
             ImageBrush myBrush = new ImageBrush();
-            myBrush.ImageSource = 
+            myBrush.ImageSource =
                 new BitmapImage(new Uri(@"sampleImages\pinkcherries.jpg", UriKind.Relative));
 
             exampleRectangle.Fill = myBrush;

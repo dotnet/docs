@@ -12,7 +12,7 @@ namespace SDKSample
         ScrollViewer myScrollViewer;
         StackPanel myStackPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -48,10 +48,10 @@ namespace SDKSample
             // Add child elements to the parent StackPanel
             myStackPanel.Children.Add(myTextBlock);
             myStackPanel.Children.Add(myRectangle);
-                        
+
             // Add the StackPanel as the lone Child of the Border
             myScrollViewer.Content = myStackPanel;
-            
+
             // Add the Border as the Content of the Parent Window Object
             mainWindow.Content = myScrollViewer;
             mainWindow.Show ();

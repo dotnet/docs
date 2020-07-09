@@ -49,13 +49,13 @@ HRESULT BeginConnection (
 |E_OUTOFMEMORY|Not enough memory could be allocated to hold the list of tasks associated with this connection.|  
   
 ## Remarks  
- [ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md) provides three methods, `BeginConnection`, [SetConnectionTasks](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setconnectiontasks-method.md), and [EndConnection](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md), for associating task lists with identifiers and friendly names.  
+ [ICLRDebugManager](iclrdebugmanager-interface.md) provides three methods, `BeginConnection`, [SetConnectionTasks](iclrdebugmanager-setconnectiontasks-method.md), and [EndConnection](iclrdebugmanager-endconnection-method.md), for associating task lists with identifiers and friendly names.  
   
 > [!IMPORTANT]
 > These three methods must be called in a specific order for each set of tasks. `BeginConnection` is called first to establish a new connection. `SetConnectionTasks` is called next to provide the set of tasks to be associated with that connection. `EndConnection` is called last to remove the association between the task list and the identifier and friendly name.However, calls for different connections can be nested.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,8 +65,8 @@ HRESULT BeginConnection (
   
 ## See also
 
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
-- [EndConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md)
-- [SetConnectionTasks Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setconnectiontasks-method.md)
-- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)
+- [EndConnection Method](iclrdebugmanager-endconnection-method.md)
+- [SetConnectionTasks Method](iclrdebugmanager-setconnectiontasks-method.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

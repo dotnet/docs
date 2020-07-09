@@ -3,6 +3,7 @@ title: Build reusable UI components with Blazor
 description: Learn how to build reusable UI components with Blazor and how they compare to ASP.NET Web Forms controls.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor]
 ms.date: 09/18/2019
 ---
 # Build reusable UI components with Blazor
@@ -49,7 +50,7 @@ Or you can generate a list of items using a normal C# `foreach` loop like this:
 <ul>
 @foreach (var item in items)
 {
-    <li>item.Text</li>
+    <li>@item.Text</li>
 }
 </ul>
 ```
@@ -389,7 +390,7 @@ public class AppState
 
     public void UpdateMessage(string message)
     {
-        shortlist.Add(itinerary);
+        Message = message;
         NotifyStateChanged();
     }
 
@@ -585,7 +586,7 @@ When using a templated component, the template parameters can be specified using
     <Heading>
         <h1>My list</h1>
     </Heading>
-    <ItemTemplate Content="message">
+    <ItemTemplate Context="message">
         <p>The message is: @message</p>
     </ItemTemplate>
 </SimpleListView>
@@ -596,8 +597,8 @@ The output of this component looks like this:
 ```html
 <h1>My list</h1>
 <ul>
-    <li>The message is: message1</li>
-    <li>The message is: message2</li>
+    <li><p>The message is: message1</p></li>
+    <li><p>The message is: message2</p></li>
 <ul>
 ```
 

@@ -22,12 +22,12 @@ Provides methods that allow access to and control over the security context of t
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetSecurityContext Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-getsecuritycontext-method.md)|Gets the requested [IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) from the host.|  
-|[ImpersonateLoggedOnUser Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-impersonateloggedonuser-method.md)|Requests that code be executed using the credentials of the current user identity.|  
-|[OpenThreadToken Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-openthreadtoken-method.md)|Opens the discretionary access token associated with the current thread.|  
-|[RevertToSelf Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-reverttoself-method.md)|Terminates impersonation of the current user identity and returns the original thread token.|  
-|[SetSecurityContext Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-setsecuritycontext-method.md)|Sets the security context for the currently executing thread.|  
-|[SetThreadToken Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-setthreadtoken-method.md)|Sets a handle for the currently executing thread.|  
+|[GetSecurityContext Method](ihostsecuritymanager-getsecuritycontext-method.md)|Gets the requested [IHostSecurityContext](ihostsecuritycontext-interface.md) from the host.|  
+|[ImpersonateLoggedOnUser Method](ihostsecuritymanager-impersonateloggedonuser-method.md)|Requests that code be executed using the credentials of the current user identity.|  
+|[OpenThreadToken Method](ihostsecuritymanager-openthreadtoken-method.md)|Opens the discretionary access token associated with the current thread.|  
+|[RevertToSelf Method](ihostsecuritymanager-reverttoself-method.md)|Terminates impersonation of the current user identity and returns the original thread token.|  
+|[SetSecurityContext Method](ihostsecuritymanager-setsecuritycontext-method.md)|Sets the security context for the currently executing thread.|  
+|[SetThreadToken Method](ihostsecuritymanager-setthreadtoken-method.md)|Sets a handle for the currently executing thread.|  
   
 ## Remarks  
  A host can control all code access to thread tokens by both the common language runtime (CLR) and user code. It can also ensure that complete security context information is passed across asynchronous operations or code points with restricted code access. `IHostSecurityContext` encapsulates this security context information, which is opaque to the CLR.  
@@ -38,12 +38,12 @@ Provides methods that allow access to and control over the security context of t
   
 - During class and module constructor execution.  
   
-- At asynchronous points on the worker thread, in calls to the [IHostThreadPoolManager::QueueUserWorkItem](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-queueuserworkitem-method.md) method.  
+- At asynchronous points on the worker thread, in calls to the [IHostThreadPoolManager::QueueUserWorkItem](ihostthreadpoolmanager-queueuserworkitem-method.md) method.  
   
 - In servicing of I/O completion ports.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -53,5 +53,5 @@ Provides methods that allow access to and control over the security context of t
   
 ## See also
 
-- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [IHostSecurityContext Interface](ihostsecuritycontext-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

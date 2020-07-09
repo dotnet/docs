@@ -20,6 +20,9 @@ The parameter of the `Main` method is a <xref:System.String> array that represen
 
 [!code-csharp[csProgGuideMain#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#4)]
 
+> [!TIP]
+> The `args` array cannot be null. So, it's safe to access the `Length` property without null checking.
+
 You can also convert the string arguments to numeric types by using the <xref:System.Convert> class or the `Parse` method. For example, the following statement converts the `string` to a `long` number by using the <xref:System.Int64.Parse%2A> method:
 
 ```csharp

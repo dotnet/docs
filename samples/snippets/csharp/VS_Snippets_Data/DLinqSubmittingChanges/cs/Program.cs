@@ -15,7 +15,7 @@ namespace cs_submittingchanges
         {
             // <Snippet1>
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
-            // Make changes here. 
+            // Make changes here.
             try
             {
                 db.SubmitChanges();

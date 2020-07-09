@@ -25,7 +25,7 @@ Provides information about the fields that belong to a type.
 HRESULT GetTypeFields(  
     [in] COR_TYPEID id,  
     [in] ULONG32 celt,  
-    [out] COR_FIELD fields[],   
+    [out] COR_FIELD fields[],
     [out] ULONG32 *pceltNeeded  
 );  
 ```  
@@ -47,7 +47,7 @@ HRESULT GetTypeFields(
  The `celt` parameter, which specifies the number of fields whose field information the method uses to populate `fields`, should correspond to the value of the `COR_TYPE_LAYOUT::numFields` field.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

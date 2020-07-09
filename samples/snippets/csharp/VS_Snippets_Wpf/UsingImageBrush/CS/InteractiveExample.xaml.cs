@@ -69,7 +69,7 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
         {
             this.selectedButton = sender as RadioButton;
         }
-      
+
         // Applies the selected options to the image brush.
         private void updateBrush(object sender, RoutedEventArgs args)
         {
@@ -83,11 +83,11 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
                 myImageBrush.TileMode = (TileMode)Enum.Parse(typeof(TileMode), (string)tileSelector.SelectedItem);
                 myImageBrush.ViewportUnits = (BrushMappingMode)Enum.Parse(typeof(BrushMappingMode), (string)viewportUnitsSelector.SelectedItem);
                 myImageBrush.ViewboxUnits = (BrushMappingMode)Enum.Parse(typeof(BrushMappingMode), (string)viewboxUnitsSelector.SelectedItem);
-                
+
                 RectConverter myRectConverter = new RectConverter();
                 string parseString;
                 parseString = viewportEntry.Text;
-               
+
                 if (!string.IsNullOrEmpty(parseString))
                 {
                     myImageBrush.Viewport = (Rect)myRectConverter.ConvertFromString(parseString);
@@ -99,7 +99,7 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
                 }
 
                 parseString = viewboxEntry.Text;
-                
+
                 if (!string.IsNullOrEmpty(parseString) && parseString.ToLower() != "(auto)")
                 {
                     myImageBrush.Viewbox = (Rect)myRectConverter.ConvertFromString(parseString);

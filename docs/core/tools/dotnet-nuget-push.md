@@ -15,14 +15,20 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [--interactive] [-k|--api-key] [-n|--no-symbols]
-    [--no-service-endpoint] [-s|--source] [--skip-duplicate] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
-dotnet nuget push [-h|--help]
+dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
+    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols]
+    [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
+    [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
+    [-t|--timeout <TIMEOUT>]
+
+dotnet nuget push -h|--help
 ```
 
 ## Description
 
 The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+
+The command pushes an existing package. It doesn't create a package. To create a package, use [`dotnet pack`](dotnet-pack.md).
 
 ## Arguments
 
@@ -82,7 +88,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 ## Examples
 
-- Pushes *foo.nupkg* to the default push source, specifying an API key:
+- Push *foo.nupkg* to the default push source, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
@@ -100,25 +106,25 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-- Pushes *foo.nupkg* to the default push source:
+- Push *foo.nupkg* to the default push source:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
   ```
 
-- Pushes *foo.symbols.nupkg* to the default symbols source:
+- Push *foo.symbols.nupkg* to the default symbols source:
 
   ```dotnetcli
   dotnet nuget push foo.symbols.nupkg
   ```
 
-- Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
+- Push *foo.nupkg* to the default push source, specifying a 360-second timeout:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-- Pushes all *.nupkg* files in the current directory to the default push source:
+- Push all *.nupkg* files in the current directory to the default push source:
 
   ```dotnetcli
   dotnet nuget push *.nupkg
@@ -129,8 +135,16 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
 
-- Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
+- Push all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
 
   ```dotnetcli
   dotnet nuget push *.nupkg --skip-duplicate
   ```
+
+- Push all *.nupkg* files in the current directory to a local feed directory:
+
+  ```dotnetcli
+  dotnet nuget push *.nupkg -s c:\mydir
+  ```
+
+  This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

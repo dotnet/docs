@@ -5,11 +5,11 @@ namespace Samples
 {
 
 //<snippet1>
-using System.ServiceModel; 
+using System.ServiceModel;
 
-[ServiceContract] 
-public interface ICalculator 
-{ 
+[ServiceContract]
+public interface ICalculator
+{
    [OperationContract]
    double Add(double n1, double n2);
    [OperationContract]

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Custom Claim"
+description: Learn how to create a custom claim in WCF. WCF supports a variety of built-in claims and some applications may require custom claims.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -48,8 +49,8 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) prov
   
          The following code example defines a custom resource type named `MyResourceType`.  
   
-         [!code-csharp[c_CustomClaim#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#2)] 
-         [!code-vb[c_CustomClaim#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#2)]        
+         [!code-csharp[c_CustomClaim#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#2)]
+         [!code-vb[c_CustomClaim#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#2)]
   
     3. Choose a right that is defined by WCF or a unique value for a custom right.  
   
@@ -59,8 +60,8 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) prov
   
          The following code example creates a custom claim with a claim type of `http://example.org/claims/complexcustomclaim`, a custom resource type of `MyResourceType`, and with the <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> right.  
   
-         [!code-csharp[c_CustomClaim#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#5)] 
-         [!code-vb[c_CustomClaim#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#5)]     
+         [!code-csharp[c_CustomClaim#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#5)]
+         [!code-vb[c_CustomClaim#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#5)]
   
 ## Example  
  The following code example demonstrates how to create a custom claim with a primitive resource type and a custom claim with a non-primitive resource type.  

@@ -52,13 +52,13 @@ Create an Azure App Service where you'll deploy your application. Create a Web A
 
 Your CI build process will perform an automated build whenever new code is committed to the project's source control repository. This gives you immediate feedback that the code builds (and, ideally, passes automated tests) and can potentially be deployed. This CI build will produce a web deploy package artifact and publish it for consumption by your CD process.
 
-[Define your CI build process](https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core#ci)
+[Define your CI build process](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/dotnet-core)
 
 Be sure to enable continuous integration so the system will queue a build whenever someone on your team commits new code. Test the build and verify that it is producing a web deploy package as one of its artifacts.
 
 When a build succeeds, your CD process will deploy the results of your CI build to your Azure web app. To configure this, you create and configure a *Release*, which will deploy to your Azure App Service.
 
-[Define your CD release process](https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core#cd)
+[Deploy an Azure web app](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp)
 
 Once your CI/CD pipeline is configured, you can simply make updates to your web app and commit them to source control to have them deployed.
 

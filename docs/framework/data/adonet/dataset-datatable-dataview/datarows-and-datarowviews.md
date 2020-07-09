@@ -19,7 +19,7 @@ Console.WriteLine("Current Values:")
 WriteView(catView)  
 Console.WriteLine("Original Values:")  
 catView.RowStateFilter = DataViewRowState.ModifiedOriginal  
-WriteView(catView)      
+WriteView(catView)
   
 Public Shared Sub WriteView(thisDataView As DataView)  
   Dim rowView As DataRowView  

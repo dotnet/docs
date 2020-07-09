@@ -31,7 +31,7 @@ The <xref:System.Xml.XmlDocument> has a create method for all of the node types.
   
  Other node types have more requirements than just providing data to parameters.  
   
- For information on attributes, see [Creating New Attributes for Elements in the DOM](../../../../docs/standard/data/xml/creating-new-attributes-for-elements-in-the-dom.md). For information on element and attribute name validation, see [XML Element and Attribute Name Verification when Creating New Nodes](../../../../docs/standard/data/xml/xml-element-and-attribute-name-verification-when-creating-new-nodes.md). For creating entity references, see [Creating New Entity References](../../../../docs/standard/data/xml/creating-new-entity-references.md). For information on how namespaces affect the expansion of entity references, see [Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes](../../../../docs/standard/data/xml/namespace-affect-on-entity-ref-expansion-for-new-nodes.md).  
+ For information on attributes, see [Creating New Attributes for Elements in the DOM](creating-new-attributes-for-elements-in-the-dom.md). For information on element and attribute name validation, see [XML Element and Attribute Name Verification when Creating New Nodes](xml-element-and-attribute-name-verification-when-creating-new-nodes.md). For creating entity references, see [Creating New Entity References](creating-new-entity-references.md). For information on how namespaces affect the expansion of entity references, see [Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes](namespace-affect-on-entity-ref-expansion-for-new-nodes.md).  
   
  Once new nodes are created, there are several methods available to insert them into the tree. The table lists the methods with a description of where the new node appears in the XML Document Object Model (DOM).  
   
@@ -45,4 +45,4 @@ The <xref:System.Xml.XmlDocument> has a create method for all of the node types.
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

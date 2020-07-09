@@ -42,11 +42,11 @@ Return expression
   
 ## See also
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
-- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
-- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Function Statement](function-statement.md)
+- [Sub Statement](sub-statement.md)
+- [Get Statement](get-statement.md)
+- [Set Statement](set-statement.md)
+- [Operator Statement](operator-statement.md)
+- [Property Statement](property-statement.md)
+- [Exit Statement](exit-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)

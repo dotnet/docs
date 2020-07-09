@@ -80,7 +80,7 @@ namespace ObjectServicesConceptsCS
                                 DepartmentID, "Engineering", 350000.00, "2009-09-01", 2);
                 Console.WriteLine("Number of affected rows: {0}", rowsAffected);
 
-                // Get the DepartmentTest object. 
+                // Get the DepartmentTest object.
                 DepartmentInfo department = context.ExecuteStoreQuery<DepartmentInfo>
                     ("select * from Department where DepartmentID= {0}", DepartmentID).FirstOrDefault();
 
@@ -155,8 +155,8 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                // The ObjectStateManagerChanged event is raised whenever 
-                // an entity leaves or enters the context. 
+                // The ObjectStateManagerChanged event is raised whenever
+                // an entity leaves or enters the context.
                 context.ObjectStateManager.ObjectStateManagerChanged += (sender, e) =>
                 {
                     Console.WriteLine(string.Format(
@@ -197,7 +197,7 @@ namespace ObjectServicesConceptsCS
 
             // Set the DefaultContainerName for the ObjectContext.
             // When DefaultContainerName is set, the Entity Framework only
-            // searches for the type in the specified container. 
+            // searches for the type in the specified container.
             // Note that if a type is defined only once in the metadata workspace
             // you do not have to set the DefaultContainerName.
             context.DefaultContainerName = "AdventureWorksEntities";
@@ -383,7 +383,7 @@ namespace ObjectServicesConceptsCS
             {
                 // Define the Entity SQL query string.
                 string queryString =
-                    @"SELECT VALUE product FROM AdventureWorksEntities.Products AS product 
+                    @"SELECT VALUE product FROM AdventureWorksEntities.Products AS product
                   WHERE product.ProductID = @productID";
 
                 // Define the object query with the query string.
@@ -467,7 +467,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE product FROM 
+                    @"SELECT VALUE product FROM
                         AdventureWorksEntities.Products AS product";
 
                 ObjectQuery<Product> productQuery1 =
@@ -517,7 +517,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE product FROM 
+                    @"SELECT VALUE product FROM
                         AdventureWorksEntities.Products AS product";
 
                 ObjectQuery<Product> productQuery1 =
@@ -543,7 +543,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product FROM 
+                string queryString = @"SELECT VALUE product FROM
                     AdventureWorksEntities.Products AS product
                     WHERE product.ProductID > @productID";
 
@@ -570,7 +570,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product 
+                string queryString = @"SELECT VALUE product
                     FROM AdventureWorksEntities.Products AS product";
 
                 ObjectQuery<Product> productQuery1 =
@@ -597,16 +597,16 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product 
-                    FROM AdventureWorksEntities.Products 
+                string queryString = @"SELECT VALUE product
+                    FROM AdventureWorksEntities.Products
                     AS product WHERE product.ProductID > @productID1";
 
                 ObjectQuery<Product> productQuery =
                     new ObjectQuery<Product>(queryString,
                         context, MergeOption.NoTracking);
 
-                string queryString2 = @"SELECT VALUE product 
-                    FROM AdventureWorksEntities.Products 
+                string queryString2 = @"SELECT VALUE product
+                    FROM AdventureWorksEntities.Products
                     AS product WHERE product.ProductID > @productID2";
 
                 ObjectQuery<Product> productQuery2 =
@@ -642,8 +642,8 @@ namespace ObjectServicesConceptsCS
                 int skipValue = 3;
                 int limitValue = 5;
 
-                // Define a query that returns a "page" or the full 
-                // Product data using the Skip and Top methods. 
+                // Define a query that returns a "page" or the full
+                // Product data using the Skip and Top methods.
                 // When Top() follows Skip(), it acts like the LIMIT statement.
                 ObjectQuery<Product> query = context.Products
                     .Skip("it.ListPrice", "@skip",
@@ -769,7 +769,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product 
+                string queryString = @"SELECT VALUE product
                     FROM AdventureWorksEntities.Products AS product";
 
                 ObjectQuery<Product> productQuery =
@@ -798,15 +798,15 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product 
+                string queryString = @"SELECT VALUE product
                     FROM AdventureWorksEntities.Products AS product";
 
                 ObjectQuery<Product> productQuery =
                     new ObjectQuery<Product>(queryString,
                         context, MergeOption.NoTracking);
 
-                string queryString2 = @"SELECT VALUE product 
-                    FROM AdventureWorksEntities.Products 
+                string queryString2 = @"SELECT VALUE product
+                    FROM AdventureWorksEntities.Products
                     AS product WHERE product.ProductID < @productID";
 
                 ObjectQuery<Product> productQuery2 =
@@ -838,7 +838,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE product FROM AdventureWorksEntities.Products 
+                    @"SELECT VALUE product FROM AdventureWorksEntities.Products
                         AS product WHERE product.ProductID < @productID";
 
                 ObjectQuery<Product> productQuery =
@@ -857,7 +857,7 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine("Result of UnionAll");
                 Console.WriteLine("------------------");
 
-                // Iterate through the collection of Product items, 
+                // Iterate through the collection of Product items,
                 // after the UnionAll method was called on two queries.
                 foreach (Product result in productQuery3)
                 {
@@ -869,7 +869,7 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine("------------------");
 
                 // Iterate through the collection of Product items.
-                // after the Distinct method was called on a query. 
+                // after the Distinct method was called on a query.
                 foreach (Product result in productQuery4)
                     Console.WriteLine("Product Name: {0}", result.ProductID);
             }
@@ -883,8 +883,8 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE product 
-                    FROM AdventureWorksEntities.Products AS product 
+                string queryString = @"SELECT VALUE product
+                    FROM AdventureWorksEntities.Products AS product
                     WHERE product.ProductID < @productID";
 
                 ObjectQuery<Product> productQuery =
@@ -903,7 +903,7 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine("Result of Union");
                 Console.WriteLine("------------------");
 
-                // Iterate through the collection of Product items, 
+                // Iterate through the collection of Product items,
                 // after the Union method was called on two queries.
                 foreach (Product result in productQuery3)
                 {
@@ -944,7 +944,7 @@ namespace ObjectServicesConceptsCS
             {
                 string queryString =
                     @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
-                    AS contact WHERE contact.LastName = @ln 
+                    AS contact WHERE contact.LastName = @ln
                     AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -975,7 +975,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact 
+                    @"SELECT VALUE contact
                     FROM AdventureWorksEntities.Contacts AS contact";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1000,7 +1000,7 @@ namespace ObjectServicesConceptsCS
                 try
                 {
                     //<snippetObjectQuery_ScalarTypeExceptionShort>
-                    // Define a query projection that returns 
+                    // Define a query projection that returns
                     // a collection with a single scalar result.
                     ObjectQuery<Int32> scalarQuery =
                         new ObjectQuery<Int32>("100", context);
@@ -1025,7 +1025,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM 
+                    @"SELECT VALUE contact FROM
                     AdventureWorksEntities.Contacts AS contact";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1063,7 +1063,7 @@ namespace ObjectServicesConceptsCS
                 foreach (Product result in productQuery2)
                     Console.WriteLine("Product Name: {0}", result.Name);
 
-                // Call the constructor with the specified query, the ObjectContext, 
+                // Call the constructor with the specified query, the ObjectContext,
                 // and the NoTracking merge option.
                 ObjectQuery<Product> productQuery3 =
                     new ObjectQuery<Product>(queryString,
@@ -1082,7 +1082,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                     AS contact WHERE contact.LastName = @ln AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1114,8 +1114,8 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
-                    AS contact WHERE contact.LastName = @ln 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
+                    AS contact WHERE contact.LastName = @ln
                     AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1151,7 +1151,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                     AS contact WHERE contact.LastName = @ln AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1184,7 +1184,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                     AS contact WHERE contact.LastName = @ln AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1214,7 +1214,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                     AS contact WHERE contact.LastName = @ln AND contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1257,7 +1257,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                         AS contact WHERE contact.FirstName = @fn";
 
                 ObjectParameter param = new ObjectParameter("fn", "Frances");
@@ -1284,7 +1284,7 @@ namespace ObjectServicesConceptsCS
                     new KeyValuePair<string, object>[] {
                         new KeyValuePair<string, object>("SalesOrderID", 43680) };
 
-                // Create the  key for a specific SalesOrderHeader object. 
+                // Create the  key for a specific SalesOrderHeader object.
                 EntityKey key = new EntityKey("AdventureWorksEntities.SalesOrderHeaders", entityKeyValues);
 
                 // Get the object from the context or the persisted store by its key.
@@ -1312,10 +1312,10 @@ namespace ObjectServicesConceptsCS
                 {
                     // Define the entity key values.
                     IEnumerable<KeyValuePair<string, object>> entityKeyValues =
-                        new KeyValuePair<string, object>[] { 
+                        new KeyValuePair<string, object>[] {
                         new KeyValuePair<string, object>("SalesOrderID", 43680) };
 
-                    // Create the  key for a specific SalesOrderHeader object. 
+                    // Create the  key for a specific SalesOrderHeader object.
                     EntityKey key = new EntityKey("AdventureWorksEntities.SalesOrderHeaders", entityKeyValues);
 
                     // Get the object from the context or the persisted store by its key.
@@ -1340,7 +1340,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 string queryString =
-                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE contact FROM AdventureWorksEntities.Contacts
                         AS contact WHERE contact.FirstName = @fn";
 
                 ObjectQuery<Contact> contactQuery =
@@ -1523,7 +1523,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetProjection_NavigationQuery>
-                // Define a query that returns a nested 
+                // Define a query that returns a nested
                 // DbDataRecord for the projection.
                 ObjectQuery<DbDataRecord> query =
                     context.Contacts.Select("it.FirstName, "
@@ -1539,7 +1539,7 @@ namespace ObjectServicesConceptsCS
                     Console.WriteLine("First Name {0}: ", rec[0]);
                     List<SalesOrderHeader> list = rec[2]
                         as List<SalesOrderHeader>;
-                    // Display SalesOrderHeader information 
+                    // Display SalesOrderHeader information
                     // associated with the contact.
                     foreach (SalesOrderHeader soh in list)
                     {
@@ -1602,7 +1602,7 @@ namespace ObjectServicesConceptsCS
                     Contact contact = (Contact)formatter.Deserialize(stream);
                     context.Attach(contact);
 
-                    // Display information for each item 
+                    // Display information for each item
                     // in the orders that belong to the first contact.
                     foreach (SalesOrderHeader order in contact.SalesOrderHeaders)
                     {
@@ -1643,7 +1643,7 @@ namespace ObjectServicesConceptsCS
                 // Define a customer contact.
                 Contact customer;
 
-                // Create a Contact query with a path that returns 
+                // Create a Contact query with a path that returns
                 // orders and items for a contact.
                 ObjectQuery<Contact> query =
                     context.Contacts.Include("SalesOrderHeaders.SalesOrderDetails");
@@ -1698,9 +1698,9 @@ namespace ObjectServicesConceptsCS
         }
 
         //<snippetDetachObjects>
-        // This method is called to detach SalesOrderHeader objects and 
+        // This method is called to detach SalesOrderHeader objects and
         // related SalesOrderDetail objects from the supplied object
-        // context when no longer needed by the application. 
+        // context when no longer needed by the application.
         // Once detached, the resources can be garbage collected.
         private static void DetachOrders(ObjectContext context,
             SalesOrderHeader order)
@@ -1795,7 +1795,7 @@ namespace ObjectServicesConceptsCS
 
                 // Specify the Entity SQL query that returns only online orders
                 // more than the specified amount.
-                string queryString = @"SELECT VALUE o FROM AdventureWorksEntities.SalesOrderHeaders AS o 
+                string queryString = @"SELECT VALUE o FROM AdventureWorksEntities.SalesOrderHeaders AS o
                     WHERE o.OnlineOrderFlag = TRUE AND o.TotalDue > @ordercost";
 
                 // Define an ObjectQuery and pass the maxOrderCost parameter.
@@ -1825,7 +1825,7 @@ namespace ObjectServicesConceptsCS
                 // Specify the order amount.
                 int orderCost = 2500;
 
-                // Define an ObjectQuery that returns only online orders 
+                // Define an ObjectQuery that returns only online orders
                 // more than the specified amount.
                 ObjectQuery<SalesOrderHeader> onlineOrders =
                     context.SalesOrderHeaders
@@ -1851,7 +1851,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                // Define a query that returns a list 
+                // Define a query that returns a list
                 // of Contact objects sorted by last name.
                 var sortedNames =
                     from n in context.Contacts
@@ -1870,15 +1870,15 @@ namespace ObjectServicesConceptsCS
         {
             Console.WriteLine("Starting method 'SortQueryEsql'");
             //<snippetSortQueryEsql>
-            // Define the Entity SQL query string that returns 
+            // Define the Entity SQL query string that returns
             // Contact objects sorted by last name.
-            string queryString = @"SELECT VALUE contact FROM Contacts AS contact 
+            string queryString = @"SELECT VALUE contact FROM Contacts AS contact
                     Order By contact.LastName";
 
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                // Define an ObjectQuery that returns a collection 
+                // Define an ObjectQuery that returns a collection
                 // of Contact objects sorted by last name.
                 ObjectQuery<Contact> query =
                     new ObjectQuery<Contact>(queryString, context);
@@ -1898,7 +1898,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                // Define an ObjectQuery that returns a collection 
+                // Define an ObjectQuery that returns a collection
                 // of Contact objects sorted by last name.
                 ObjectQuery<Contact> query =
                     context.Contacts.OrderBy("it.LastName");
@@ -1928,8 +1928,8 @@ namespace ObjectServicesConceptsCS
                                 select customers).First();
 
                 // You do not have to call the Load method to load the orders for the customer,
-                // because  lazy loading is set to true 
-                // by the constructor of the AdventureWorksEntities object. 
+                // because  lazy loading is set to true
+                // by the constructor of the AdventureWorksEntities object.
                 // With  lazy loading set to true the related objects are loaded when
                 // you access the navigation property. In this case SalesOrderHeaders.
 
@@ -1966,7 +1966,7 @@ namespace ObjectServicesConceptsCS
                                 where customers.ContactID == customerId
                                 select customers).First();
 
-                // Use CreateSourceQuery to generate a query that returns 
+                // Use CreateSourceQuery to generate a query that returns
                 // only the online orders that have shipped.
                 var shippedOrders =
                     from orders in customer.SalesOrderHeaders.CreateSourceQuery()
@@ -1979,8 +1979,8 @@ namespace ObjectServicesConceptsCS
                     shippedOrders.Count());
 
                 // You do not have to call the Load method to load the orders for the customer,
-                // because  lazy loading is set to true 
-                // by the constructor of the AdventureWorksEntities object. 
+                // because  lazy loading is set to true
+                // by the constructor of the AdventureWorksEntities object.
                 // With  lazy loading set to true the related objects are loaded when
                 // you access the navigation property. In this case SalesOrderHeaders.
 
@@ -2039,14 +2039,14 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetSpanOnlyWithMultiplePaths>
-                // Create a SalesOrderHeader query with two query paths, 
-                // one that returns order items and a second that returns the 
+                // Create a SalesOrderHeader query with two query paths,
+                // one that returns order items and a second that returns the
                 // billing and shipping addresses for each order.
                 ObjectQuery<SalesOrderHeader> query =
                     context.SalesOrderHeaders.Include("SalesOrderDetails").Include("Address");
                 //</snippetSpanOnlyWithMultiplePaths>
 
-                // Execute the query and display information for each item 
+                // Execute the query and display information for each item
                 // in the orders that belong to the first contact.
                 foreach (SalesOrderHeader order in query.Top("10"))
                 {
@@ -2082,7 +2082,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetOpenConnection_line>
-                // Explicitly open the connection.    
+                // Explicitly open the connection.
                 context.Connection.Open();
                 //</snippetOpenConnection_line>
 
@@ -2134,8 +2134,8 @@ namespace ObjectServicesConceptsCS
                 order.Status = 1;
 
                 // You do not have to call the Load method to load the details for the order,
-                // because  lazy loading is set to true 
-                // by the constructor of the AdventureWorksEntities object. 
+                // because  lazy loading is set to true
+                // by the constructor of the AdventureWorksEntities object.
                 // With  lazy loading set to true the related objects are loaded when
                 // you access the navigation property. In this case SalesOrderDetails.
 
@@ -2181,8 +2181,8 @@ namespace ObjectServicesConceptsCS
             }
             finally
             {
-                // Explicitly dispose of the context, 
-                // which closes the connection. 
+                // Explicitly dispose of the context,
+                // which closes the connection.
                 context.Dispose();
             }
             //</snippetOpenConnectionLong>
@@ -2223,8 +2223,8 @@ namespace ObjectServicesConceptsCS
                 order.Status = 1;
 
                 // You do not have to call the Load method to load the details for the order,
-                // because  lazy loading is set to true 
-                // by the constructor of the AdventureWorksEntities object. 
+                // because  lazy loading is set to true
+                // by the constructor of the AdventureWorksEntities object.
                 // With  lazy loading set to true the related objects are loaded when
                 // you access the navigation property. In this case SalesOrderDetails.
 
@@ -2270,7 +2270,7 @@ namespace ObjectServicesConceptsCS
             }
             finally
             {
-                // Explicitly dispose of the context and the connection. 
+                // Explicitly dispose of the context and the connection.
                 context.Dispose();
                 conn.Dispose();
             }
@@ -2330,8 +2330,8 @@ namespace ObjectServicesConceptsCS
             SalesOrderHeader detachedOrder,
             List<SalesOrderDetail> detachedItems)
         {
-            // Define the relationships by adding each SalesOrderDetail 
-            // object in the detachedItems List<SalesOrderDetail> collection to the 
+            // Define the relationships by adding each SalesOrderDetail
+            // object in the detachedItems List<SalesOrderDetail> collection to the
             // EntityCollection on the SalesOrderDetail navigation property of detachedOrder.
             foreach (SalesOrderDetail item in detachedItems)
             {
@@ -2352,7 +2352,7 @@ namespace ObjectServicesConceptsCS
             currentContext.Attach(detachedOrder);
 
             // Attach each detachedItem to the context, and define each relationship
-            // by attaching the attached SalesOrderDetail object to the EntityCollection on 
+            // by attaching the attached SalesOrderDetail object to the EntityCollection on
             // the SalesOrderDetail navigation property of the now attached detachedOrder.
             foreach (SalesOrderDetail item in detachedItems)
             {
@@ -2371,7 +2371,7 @@ namespace ObjectServicesConceptsCS
                 SalesOrderDetail originalItem =
                     context.SalesOrderDetails.First();
 
-                // Get the order for the item and set the status to 1, 
+                // Get the order for the item and set the status to 1,
                 // or an exception will occur when the item Qty is changed.
                 if (!originalItem.SalesOrderHeaderReference.IsLoaded)
                 {
@@ -2422,7 +2422,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 context.SalesOrderDetails.Attach(updatedItem);
-                // Check if the ID is 0, if it is the item is new. 
+                // Check if the ID is 0, if it is the item is new.
                 // In this case we need to chage the state to Added.
                 if (updatedItem.SalesOrderDetailID == 0)
                 {
@@ -2433,12 +2433,12 @@ namespace ObjectServicesConceptsCS
                 else
                 {
                     // If the SalesOrderDetailID is not 0, then the item is not new
-                    // and needs to be updated. Because we already added the 
+                    // and needs to be updated. Because we already added the
                     // updated object to the context we need to apply the original values.
-                    // If we attached originalItem to the context 
+                    // If we attached originalItem to the context
                     // we would need to apply the current values:
                     // context.ApplyCurrentValues("SalesOrderDetails", updatedItem);
-                    // Applying current or original values, changes the state 
+                    // Applying current or original values, changes the state
                     // of the attached object to Modified.
                     context.ApplyOriginalValues("SalesOrderDetails", originalItem);
                 }
@@ -2446,25 +2446,25 @@ namespace ObjectServicesConceptsCS
             }
         }
         //</snippetApplyItemUpdates>
-        
+
         //<snippetApplyItemUpdatesGetObject>
         private static void ApplyItemUpdates(SalesOrderDetail updatedItem)
         {
-            // Define an ObjectStateEntry and EntityKey for the current object. 
+            // Define an ObjectStateEntry and EntityKey for the current object.
             EntityKey key = default(EntityKey);
             object originalItem = null;
 
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
-                // Create the detached object's entity key. 
+                // Create the detached object's entity key.
                 key = context.CreateEntityKey("SalesOrderDetails", updatedItem);
 
-                // Get the original item based on the entity key from the context 
-                // or from the database. 
+                // Get the original item based on the entity key from the context
+                // or from the database.
                 if (context.TryGetObjectByKey(key, out originalItem))
                 {
-                    // Call the ApplyCurrentValues method to apply changes 
-                    // from the updated item to the original version. 
+                    // Call the ApplyCurrentValues method to apply changes
+                    // from the updated item to the original version.
                     context.ApplyCurrentValues(key.EntitySetName, updatedItem);
                 }
 
@@ -2472,7 +2472,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         //</snippetApplyItemUpdatesGetObject>
-         
+
         public static void ChangeItemQuantity()
         {
             Console.WriteLine("Starting method 'ChangeItemQuantity'");
@@ -2518,8 +2518,8 @@ namespace ObjectServicesConceptsCS
                     context.SalesOrderHeaders.Single(o => o.SalesOrderID == orderId);
 
                 // You do not have to call the Load method to load the addresses for the order,
-                // because  lazy loading is set to true 
-                // by the constructor of the AdventureWorksEntities object. 
+                // because  lazy loading is set to true
+                // by the constructor of the AdventureWorksEntities object.
                 // With  lazy loading set to true the related objects are loaded when
                 // you access the navigation property. In this case Address.
 
@@ -2690,8 +2690,8 @@ namespace ObjectServicesConceptsCS
                     .Where("it.StandardCost > @cost", new ObjectParameter("cost", cost));
                 //</snippetQueryWithAlias>
 
-                // Set the Name property for the query and then 
-                // use that name as the alias in the subsequent 
+                // Set the Name property for the query and then
+                // use that name as the alias in the subsequent
                 // OrderBy method.
                 productQuery.Name = "product";
                 ObjectQuery<Product> filteredProduct = productQuery
@@ -2739,14 +2739,14 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetSpanOnly>
-                // Define an object query with a path that returns 
+                // Define an object query with a path that returns
                 // orders and items for a specific contact.
                 Contact contact =
                     context.Contacts.Include("SalesOrderHeaders.SalesOrderDetails")
                     .FirstOrDefault();
                 //</snippetSpanOnly>
 
-                // Execute the query and display information for each item 
+                // Execute the query and display information for each item
                 // in the orders that belong to the first contact.
                 foreach (SalesOrderHeader order in contact
                     .SalesOrderHeaders)
@@ -2774,14 +2774,14 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetSpanLinqOnly>
-                // Define a LINQ query with a path that returns 
+                // Define a LINQ query with a path that returns
                 // orders and items for a contact.
                 var contacts = (from contact in context.Contacts
                               .Include("SalesOrderHeaders.SalesOrderDetails")
                                 select contact).FirstOrDefault();
                 //</snippetSpanLinqOnly>
 
-                // Execute the query and display information for each item 
+                // Execute the query and display information for each item
                 // in the orders that belong to the contact.
                 foreach (SalesOrderHeader order in contacts
                     .SalesOrderHeaders)
@@ -2809,8 +2809,8 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 //<snippetSpanEsqlOnly>
-                // Define an object query with a path that returns 
-                // orders and items for a specific contact.              
+                // Define an object query with a path that returns
+                // orders and items for a specific contact.
                 string queryString =
                     @"SELECT VALUE TOP(1) contact FROM " +
                     "AdventureWorksEntities.Contacts AS contact";
@@ -2824,7 +2824,7 @@ namespace ObjectServicesConceptsCS
                     .FirstOrDefault();
                 //</snippetSpanEsqlOnly>
 
-                // Execute the query and display information for each item 
+                // Execute the query and display information for each item
                 // in the orders that belong to the first contact.
                 foreach (SalesOrderHeader order in contact
                     .SalesOrderHeaders)
@@ -2867,7 +2867,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                ObjectQuery<Contact> query= context.Contacts.Where("it.LastName==@ln", 
+                ObjectQuery<Contact> query= context.Contacts.Where("it.LastName==@ln",
                     new ObjectParameter("ln", "Zhou"));
 
                 // Iterate through the collection of Contact items.
@@ -3060,8 +3060,8 @@ namespace ObjectServicesConceptsCS
                     order.ShipDate = DateTime.Today;
 
                     // You do not have to call the Load method to load the details for the order,
-                    // because  lazy loading is set to true 
-                    // by the constructor of the AdventureWorksEntities object. 
+                    // because  lazy loading is set to true
+                    // by the constructor of the AdventureWorksEntities object.
                     // With  lazy loading set to true the related objects are loaded when
                     // you access the navigation property. In this case SalesOrderDetails.
 
@@ -3245,8 +3245,8 @@ namespace ObjectServicesConceptsCS
                     }
                     catch (OptimisticConcurrencyException)
                     {
-                        // Resolve the concurrency conflict by refreshing the 
-                        // object context before re-saving changes. 
+                        // Resolve the concurrency conflict by refreshing the
+                        // object context before re-saving changes.
                         context.Refresh(RefreshMode.ClientWins, orders);
 
                         // Save changes.
@@ -3326,7 +3326,7 @@ namespace ObjectServicesConceptsCS
             using (SchoolEntities context =
                 new SchoolEntities())
             {
-                // The following three queries demonstrate 
+                // The following three queries demonstrate
                 // three different ways of passing a parameter.
                 // The queries return a string result type.
 
@@ -3372,7 +3372,7 @@ namespace ObjectServicesConceptsCS
                 DbCommand cmd = con.CreateCommand();
                 cmd.CommandText = @"SELECT * FROM Department";
 
-                // Create a reader that contains rows of entity data. 
+                // Create a reader that contains rows of entity data.
                 using (DbDataReader rdr = cmd.ExecuteReader(CommandBehavior.SequentialAccess))
                 {
                     using (SchoolEntities context =
@@ -3408,7 +3408,7 @@ namespace ObjectServicesConceptsCS
             }
             //</snippetExecuteStoredProc>
         }
-        
+
         public static void ExecuteStoredProcWithOutputParams()
         {
             Console.WriteLine("Starting method 'ExecuteStoredProcWithOutputParams'");
@@ -3423,7 +3423,7 @@ namespace ObjectServicesConceptsCS
             }
             //</snippetExecuteStoredProcWithOutParams>
         }
-         
+
         public static void ExecuteFunctionWithOutParam()
         {
             Console.WriteLine("Starting method 'ExecuteFunctionWithOutParam'");
@@ -3495,7 +3495,7 @@ namespace ObjectServicesConceptsCS
                 Person newStudent = new Person
                 {
                     // The database will generate PersonID.
-                    // The object context will get the ID 
+                    // The object context will get the ID
                     // After the SaveChanges is called.
                     PersonID = 0,
                     LastName = "Li",
@@ -3504,20 +3504,20 @@ namespace ObjectServicesConceptsCS
                 StudentGrade newStudentGrade = new StudentGrade
                 {
                     // The database will generate EnrollmentID.
-                    // The object context will get the ID 
+                    // The object context will get the ID
                     // After the SaveChanges is called.
                     EnrollmentID = 0,
                     Grade = 4.0M,
                     StudentID = 50
                 };
 
-                // Add newStudent to object context. 
+                // Add newStudent to object context.
                 // The newStudent's state will change from Detached to Added.
                 context.People.AddObject(newStudent);
 
                 // To associate the new objects you can do one of the following:
                 // Add the new dependent object to the principal object: newStudent.StudentGrades.Add(newStudentGrade).
-                // Assign the reference (principal) object to the navigation property of the 
+                // Assign the reference (principal) object to the navigation property of the
                 // dependent object: newStudentGrade.Person = newStudent.
                 // Both of these methods will synchronize the navigation properties on both ends of the relationship.
 
@@ -3540,7 +3540,7 @@ namespace ObjectServicesConceptsCS
 
             // The following example creates a new StudentGrade object and associates
             // the StudentGrade with the Course and Person by
-            // setting the foreign key properties. 
+            // setting the foreign key properties.
 
             using (SchoolEntities context = new SchoolEntities())
             {
@@ -3549,8 +3549,8 @@ namespace ObjectServicesConceptsCS
                     // The database will generate the EnrollmentID.
                     EnrollmentID = 0,
                     Grade = 4.0M,
-                    // To create the association between the Course and StudentGrade, 
-                    // and the Student and the StudentGrade, set the foreign key property 
+                    // To create the association between the Course and StudentGrade,
+                    // and the Student and the StudentGrade, set the foreign key property
                     // to the ID of the principal.
                     CourseID = 4022,
                     StudentID = 17,
@@ -3565,7 +3565,7 @@ namespace ObjectServicesConceptsCS
                 // the lazy loading option is set to true in the constructor of SchoolEntities.
                 Console.WriteLine("Student ID {0}:", newStudentGrade.Person.PersonID);
                 Console.WriteLine("Course ID {0}:", newStudentGrade.Course.CourseID);
-                
+
                 context.SaveChanges();
             }
             //</snippetExistingPrincipaltoNewDependentFK>
@@ -3574,12 +3574,12 @@ namespace ObjectServicesConceptsCS
             // The following example creates a new StudentGrade and associates
             // the StudentGrade with the Course and Person by
             // setting the navigation properties to the Course and Person objects that were returned
-            // by the query. 
+            // by the query.
             // You do not need to call AddObject() in order to add the grade object
-            // to the context, because when you assign the reference 
+            // to the context, because when you assign the reference
             // to the navigation property the objects on both ends get synchronized by the Entity Framework.
             // Note, that the Entity Framework will not synchronize the ends untill the SaveChanges method
-            // is called if your objects do not meet the change tracking requirements. 
+            // is called if your objects do not meet the change tracking requirements.
             using (var context = new SchoolEntities())
             {
                 int courseID = 4022;
@@ -3671,7 +3671,7 @@ namespace ObjectServicesConceptsCS
 					}
 					// View the database creation script.
 					Console.WriteLine(context.CreateDatabaseScript());
-                    // Create the new database instance based on the storage (SSDL) section 
+                    // Create the new database instance based on the storage (SSDL) section
                     // of the .edmx file.
 					context.CreateDatabase();
 
@@ -3685,11 +3685,11 @@ namespace ObjectServicesConceptsCS
 					};
 
 					context.Departments.AddObject(dpt);
-					// An entity has a temporary key 
+					// An entity has a temporary key
 					// until it is saved to the database.
 					Console.WriteLine(dpt.EntityKey.IsTemporary);
 					context.SaveChanges();
-					// The object was saved and the key 
+					// The object was saved and the key
 					// is not temporary any more.
 					Console.WriteLine(dpt.EntityKey.IsTemporary);
 				}
@@ -3720,7 +3720,7 @@ namespace ObjectServicesConceptsCS
             // View the database creation script.
             Console.WriteLine(context.CreateDatabaseScript());
 
-            // Create the new database instance based on the storage (SSDL) section 
+            // Create the new database instance based on the storage (SSDL) section
             // of the .edmx file.
             context.CreateDatabase();
 
@@ -3781,7 +3781,7 @@ namespace ObjectServicesConceptsCS
             decimal taxRatePercent = GetCurrentTaxRate();
             decimal freightPercent = GetCurrentFreight();
 
-            // If the items for this order are loaded or if the order is 
+            // If the items for this order are loaded or if the order is
             // newly added, then recalculate the subtotal as it may have changed.
             if (this.SalesOrderDetails.IsLoaded ||
                 EntityState == EntityState.Added)
@@ -3826,7 +3826,7 @@ namespace ObjectServicesConceptsCS
     {
         partial void OnOrderQtyChanging(short value)
         {
-            // Only handle this change for existing SalesOrderHeader 
+            // Only handle this change for existing SalesOrderHeader
             // objects that are attached to an object context. If the item
             // is detached then we cannot access or load the related order.
             if (EntityState != EntityState.Detached)
@@ -3866,7 +3866,7 @@ namespace ObjectServicesConceptsCS
         }
         partial void OnOrderQtyChanged()
         {
-            // Only handle this change for existing SalesOrderHeader 
+            // Only handle this change for existing SalesOrderHeader
             // objects that are attached to an object context.
             if (EntityState != EntityState.Detached)
             {
@@ -3907,21 +3907,21 @@ namespace ObjectServicesConceptsCS
         // SalesOrderHeader default constructor.
         public SalesOrderHeader()
         {
-            // Register the handler for changes to the 
+            // Register the handler for changes to the
             // shipping address (Address1) reference.
             this.AddressReference.AssociationChanged
                 += new CollectionChangeEventHandler(ShippingAddress_Changed);
         }
 
-        // AssociationChanged handler for the relationship 
+        // AssociationChanged handler for the relationship
         // between the order and the shipping address.
         private void ShippingAddress_Changed(object sender,
             CollectionChangeEventArgs e)
         {
-            // Check for a related reference being removed. 
+            // Check for a related reference being removed.
             if (e.Action == CollectionChangeAction.Remove)
             {
-                // Check the order status and raise an exception if 
+                // Check the order status and raise an exception if
                 // the order can no longer be changed.
                 if (this.Status > 3)
                 {
@@ -3958,7 +3958,7 @@ namespace ObjectServicesConceptsCS
 
         public AdventureWorksProxy()
         {
-            // When the object is initialized, register the 
+            // When the object is initialized, register the
             // handler for the SavingChanges event.
             contextProxy.SavingChanges
                 += new EventHandler(context_SavingChanges);
@@ -3987,12 +3987,12 @@ namespace ObjectServicesConceptsCS
                     context.ObjectStateManager.GetObjectStateEntries(
                     EntityState.Added | EntityState.Modified))
                 {
-                    // Find an object state entry for a SalesOrderHeader object. 
+                    // Find an object state entry for a SalesOrderHeader object.
                     if (!entry.IsRelationship && (entry.Entity.GetType() == typeof(SalesOrderHeader)))
                     {
                         SalesOrderHeader orderToCheck = entry.Entity as SalesOrderHeader;
 
-                        // Call a helper method that performs string checking 
+                        // Call a helper method that performs string checking
                         // on the Comment property.
                         string textNotAllowed = Validator.CheckStringForLanguage(
                             orderToCheck.Comment);
@@ -4040,12 +4040,12 @@ namespace ObjectServicesConceptsCS
                 ((ObjectContext)sender).ObjectStateManager.GetObjectStateEntries(
                 EntityState.Added | EntityState.Modified))
             {
-                // Find an object state entry for a SalesOrderHeader object. 
+                // Find an object state entry for a SalesOrderHeader object.
                 if (!entry.IsRelationship && (entry.Entity.GetType() == typeof(SalesOrderHeader)))
                 {
                     SalesOrderHeader orderToCheck = entry.Entity as SalesOrderHeader;
 
-                    // Call a helper method that performs string checking 
+                    // Call a helper method that performs string checking
                     // on the Comment property.
                     string textNotAllowed = Validator.CheckStringForLanguage(
                         orderToCheck.Comment);
@@ -4108,7 +4108,7 @@ namespace ObjectServicesConceptsCS
             // Change the relationships.
             studentGrade.CourseID = 5;
             studentGrade.StudentID = 10;
-            // The client calls a method on a service to save the updates. 
+            // The client calls a method on a service to save the updates.
             SaveUpdates(studentGrade);
             //</snippetFKUpateClient>
         }
@@ -4122,10 +4122,10 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                // You do not have to set context.ContextOptions.LazyLoadingEnabled to true 
+                // You do not have to set context.ContextOptions.LazyLoadingEnabled to true
                 // if you used the Entity Framework to generate the object layer.
                 // The generated object context type sets lazy loading to true
-                // in the constructor. 
+                // in the constructor.
                 context.ContextOptions.LazyLoadingEnabled = true;
 
                 // Display ten contacts and select a contact
@@ -4136,7 +4136,7 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine("Select a customer:");
                 Int32 contactID = Convert.ToInt32(Console.ReadLine());
 
-                // Get a specified customer by contact ID. 
+                // Get a specified customer by contact ID.
                 var contact = context.Contacts.Where(c => c.ContactID == contactID).FirstOrDefault();
 
                 // If lazy loading was not enabled no SalesOrderHeaders would be loaded for the contact.

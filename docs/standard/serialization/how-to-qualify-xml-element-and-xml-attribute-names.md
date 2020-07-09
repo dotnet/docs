@@ -1,5 +1,6 @@
 ---
 title: How to qualify XML element and XML attribute names
+description: This article shows you how to qualify the names of XML elements and XML attributes in XML documents.
 ms.date: 03/30/2017
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Synchronizing Data for Multithreading"
+description: Learn how to synchronize data for multithreading in .NET. Choose strategies such as synchronized code regions, manual synchronization, or synchronized contexts.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -16,11 +17,11 @@ When multiple threads can make calls to the properties and methods of a single o
   
 - Synchronized code regions. You can use the <xref:System.Threading.Monitor> class or compiler support for this class to synchronize only the code block that needs it, improving performance.  
   
-- Manual synchronization. You can use the synchronization objects provided by the .NET class library. See [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
+- Manual synchronization. You can use the synchronization objects provided by the .NET class library. See [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
   
 - Synchronized contexts. For .NET Framework and Xamarin applications, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
   
-- Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
+- Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../collections/thread-safe/index.md).  
   
  The common language runtime provides a thread model in which classes fall into a number of categories that can be synchronized in a variety of different ways depending on the requirements. The following table shows what synchronization support is provided for fields and methods with a given synchronization category.  
   
@@ -35,7 +36,7 @@ When multiple threads can make calls to the properties and methods of a single o
  This is the default for objects. Any thread can access any method or field at any time. Only one thread at a time should access these objects.  
   
 ## Manual synchronization  
- The .NET class library provides a number of classes for synchronizing threads. See [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
+ The .NET class library provides a number of classes for synchronizing threads. See [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).  
   
 ## Synchronized code regions  
  You can use the <xref:System.Threading.Monitor> class or a compiler keyword to synchronize blocks of code, instance methods, and static methods. There is no support for synchronized static fields.  
@@ -64,7 +65,7 @@ In .NET Framework and Xamarin applications only, you can use the <xref:System.Ru
 ## See also
 
 - <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>
-- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
-- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
+- [Threads and Threading](threads-and-threading.md)
+- [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md)
 - [SyncLock Statement](../../visual-basic/language-reference/statements/synclock-statement.md)
 - [lock Statement](../../csharp/language-reference/keywords/lock-statement.md)

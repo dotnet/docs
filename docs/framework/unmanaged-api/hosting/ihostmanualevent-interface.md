@@ -22,12 +22,12 @@ Provides the host's implementation of a representation of a manual reset event.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-reset-method.md)|Resets the current `IHostManualEvent` instance to a non-signaled state.|  
-|[Set Method](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-set-method.md)|Sets the current `IHostManualEvent` instance to a signaled state.|  
-|[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-wait-method.md)|Causes the current `IHostManualEvent` instance to wait until it is owned, or a specified amount of time elapses.|  
+|[Reset Method](ihostmanualevent-reset-method.md)|Resets the current `IHostManualEvent` instance to a non-signaled state.|  
+|[Set Method](ihostmanualevent-set-method.md)|Sets the current `IHostManualEvent` instance to a signaled state.|  
+|[Wait Method](ihostmanualevent-wait-method.md)|Causes the current `IHostManualEvent` instance to wait until it is owned, or a specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -37,8 +37,8 @@ Provides the host's implementation of a representation of a manual reset event.
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
-- [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostAutoEvent Interface](ihostautoevent-interface.md)
+- [IHostSemaphore Interface](ihostsemaphore-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

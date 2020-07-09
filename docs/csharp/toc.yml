@@ -119,16 +119,14 @@
     href: programming-guide/types/index.md
   - name: Nullable reference types
     href: nullable-references.md
-  - name: Describe nullable APIs using attributes and constraints
-    href: nullable-attributes.md
+  - name: Choose a strategy for enabling nullable reference types
+    href: nullable-migration-strategies.md
   - name: Namespaces
     href: programming-guide/namespaces/index.md
   - name: Basic Types
     href: basic-types.md
   - name: Classes
     href: programming-guide/classes-and-structs/classes.md
-  - name: Tuples
-    href: tuples.md
   - name: Deconstructing tuples and other types
     href: deconstruct.md
   - name: Interfaces
@@ -374,16 +372,10 @@
         href: programming-guide/concepts/attributes/index.md
       - name: Creating Custom Attributes
         href: programming-guide/concepts/attributes/creating-custom-attributes.md
-      - name: AttributeUsage
-        href: programming-guide/concepts/attributes/attributeusage.md
       - name: Accessing Attributes by Using Reflection
         href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
       - name: "How to create a C/C++ union by using attributes"
         href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
-      - name: Common Attributes
-        href: programming-guide/concepts/attributes/common-attributes.md
-    - name: Caller information
-      href: programming-guide/concepts/caller-information.md
     - name: Collections
       href: programming-guide/concepts/collections.md
     - name: Covariance and contravariance
@@ -514,7 +506,7 @@
           - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
         - name: LINQ and Reflection
-          href: programming-guide/concepts/linq/linq-and-reflection.md
+          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: "How to query an assembly's metadata with Reflection (LINQ)"
           href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
         - name: LINQ and File Directories
@@ -753,18 +745,6 @@
                 href: programming-guide/concepts/linq/applicability-of-functional-transformation.md
               - name: Functional Transformation of XML
                 href: programming-guide/concepts/linq/functional-transformation-of-xml.md
-              - name: "Tutorial: Chaining Queries Together"
-                items:
-                - name: Deferred Execution and Lazy Evaluation in LINQ to XML
-                  href: programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
-                - name: Deferred Execution Example
-                  href: programming-guide/concepts/linq/deferred-execution-example.md
-                - name: Chaining Queries Example
-                  href: programming-guide/concepts/linq/chaining-queries-example.md
-                - name: Intermediate Materialization
-                  href: programming-guide/concepts/linq/intermediate-materialization.md
-                - name: Chaining Standard Query Operators Together
-                  href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
               - name: "Tutorial: Chaining Queries Together"
                 items:
                 - name: Deferred Execution and Lazy Evaluation in LINQ to XML
@@ -1225,6 +1205,8 @@
         href: programming-guide/xmldoc/exception.md
       - name: <include>
         href: programming-guide/xmldoc/include.md
+      - name: <inheritdoc>
+        href: programming-guide/xmldoc/inheritdoc.md  
       - name: <list>
         href: programming-guide/xmldoc/list.md
       - name: <para>
@@ -1347,7 +1329,10 @@
           displayName: "enum, bit flags, bit field"
         - name: Structure types
           href: language-reference/builtin-types/struct.md
-          displayName: "struct type"
+          displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+        - name: Tuple types
+          href: language-reference/builtin-types/value-tuples.md
+          displayName: "value tuples, ValueTuple"
         - name: Nullable value types
           href: language-reference/builtin-types/nullable-value-types.md
           displayName: "? token, ? symbol"
@@ -1362,6 +1347,9 @@
           href: language-reference/keywords/class.md
         - name: interface
           href: language-reference/keywords/interface.md
+        - name: Nullable reference types
+          href: language-reference/builtin-types/nullable-reference-types.md
+          displayName: "? token, ? symbol"
       - name: void
         href: language-reference/builtin-types/void.md
       - name: var
@@ -1588,7 +1576,7 @@
         href: language-reference/keywords/by.md
       - name: in
         href: language-reference/keywords/in.md
-  - name: C# operators
+  - name: C# operators and expressions
     items:
     - name: Overview
       href: language-reference/operators/index.md
@@ -1608,10 +1596,10 @@
     - name: Comparison operators
       href: language-reference/operators/comparison-operators.md
       displayName: ">, <, >=, <=, greater, less"
-    - name: Member access operators
+    - name: Member access operators and expressions
       href: language-reference/operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
-    - name: Type-testing and cast operators
+    - name: Type-testing operators and cast expression
       href: language-reference/operators/type-testing-and-cast.md
       displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
     - name: User-defined conversion operators
@@ -1647,21 +1635,26 @@
     - name: await operator
       href: language-reference/operators/await.md
       displayName: async
-    - name: default operator
+    - name: default value expressions
       href: language-reference/operators/default.md
-      displayName: default value, default literal, type default
+      displayName: default value, default operator, default literal, type default
     - name: delegate operator
       href: language-reference/operators/delegate-operator.md
       displayName: anonymous
-    - name: nameof operator
+    - name: nameof expression
       href: language-reference/operators/nameof.md
+      displayName: nameof operator
     - name: new operator
       href: language-reference/operators/new-operator.md
       displayName: constructor
     - name: sizeof operator
       href: language-reference/operators/sizeof.md
-    - name: stackalloc operator
+    - name: stackalloc expression
       href: language-reference/operators/stackalloc.md
+      displayName: stack allocation, span, stackalloc operator
+    - name: switch expression
+      href: language-reference/operators/switch-expression.md
+      displayName: "switch, pattern matching, patterns"
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: Operator overloading
@@ -1675,6 +1668,20 @@
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+  - name: Attributes read by the compiler
+    items:
+    - name: Global attributes
+      displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
+      href: language-reference/attributes/global.md
+    - name: General
+      displayName: Conditional, Obsolete, AttributeUsage
+      href: language-reference/attributes/general.md
+    - name: Caller information
+      displayName: CallerFilePath, CallerLineNumber, CallerMemberName
+      href: language-reference/attributes/caller-information.md
+    - name: Nullable static analysis
+      displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
+      href: language-reference/attributes/nullable-analysis.md
   - name: C# preprocessor directives
     items:
     - name: Overview
@@ -1782,6 +1789,8 @@
         href: language-reference/compiler-options/nowarn-compiler-option.md
       - name: -nowin32manifest
         href: language-reference/compiler-options/nowin32manifest-compiler-option.md
+      - name: -nullable
+        href: language-reference/compiler-options/nullable-compiler-option.md
       - name: -optimize
         href: language-reference/compiler-options/optimize-compiler-option.md
       - name: -out

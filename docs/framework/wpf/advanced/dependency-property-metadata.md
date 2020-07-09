@@ -11,11 +11,11 @@ ms.assetid: d01ed009-b722-41bf-b82f-fe1a8cdc50dd
 # Dependency Property Metadata
 The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system includes a metadata reporting system that goes beyond what can be reported about a property through reflection or general common language runtime (CLR) characteristics. Metadata for a dependency property can also be assigned uniquely by the class that defines a dependency property, can be changed when the dependency property is added to a different class, and can be specifically overridden by all derived classes that inherit the dependency property from the defining base class.  
 
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
   
-<a name="dp_metadata_contents"></a>   
+<a name="dp_metadata_contents"></a>
 ## How Dependency Property Metadata is Used  
  Dependency property metadata exists as an object that can be queried to examine the characteristics of a dependency property. This metadata is also accessed frequently by the property system as it processes any given dependency property. The metadata object for a dependency property can contain the following types of information:  
   
@@ -25,7 +25,7 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
   
 - If the dependency property in question is considered to be a WPF framework-level property, the metadata might contain WPF framework-level dependency property characteristics, which report information and state for services such as the WPF framework-level layout engine and property inheritance logic. For more information on this aspect of dependency property metadata, see [Framework Property Metadata](framework-property-metadata.md).  
   
-<a name="APIs"></a>   
+<a name="APIs"></a>
 ## Metadata APIs  
  The type that reports most of the metadata information used by the property system is the <xref:System.Windows.PropertyMetadata> class. Metadata instances are optionally specified when dependency properties are registered with the property system, and can be specified again for additional types that either add themselves as owners or override metadata they inherit from the base class dependency property definition. (For cases where a property registration does not specify metadata, a default <xref:System.Windows.PropertyMetadata> is created with default values for that class.)The registered metadata is returned as <xref:System.Windows.PropertyMetadata> when you call the various <xref:System.Windows.DependencyProperty.GetMetadata%2A> overloads that get metadata from a dependency property on a <xref:System.Windows.DependencyObject> instance.  
   
@@ -34,7 +34,7 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
 > [!NOTE]
 > The property characteristics that can be specified in <xref:System.Windows.FrameworkPropertyMetadata> are sometimes referred to in this documentation as "flags". When you create new metadata instances for use in dependency property registrations or metadata overrides, you specify these values using the flagwise enumeration <xref:System.Windows.FrameworkPropertyMetadataOptions> and then you supply possibly concatenated values of the enumeration to the <xref:System.Windows.FrameworkPropertyMetadata> constructor. However, once constructed, these option characteristics are exposed within a <xref:System.Windows.FrameworkPropertyMetadata> as a series of Boolean properties rather than the constructing enumeration value. The Boolean properties enable you to check each conditional, rather than requiring you to apply a mask to a flagwise enumeration value to get the information you are interested in. The constructor uses the concatenated <xref:System.Windows.FrameworkPropertyMetadataOptions> in order to keep the length of the constructor signature reasonable, whereas the actual constructed metadata exposes the discrete properties to make querying the metadata more intuitive.  
   
-<a name="override_or_subclass"></a>   
+<a name="override_or_subclass"></a>
 ## When to Override Metadata, When to Derive a Class  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system has established capabilities for changing some characteristics of dependency properties without requiring them to be entirely re-implemented. This is accomplished by constructing a different instance of property metadata for the dependency property as it exists on a particular type. Note that most existing dependency properties are not virtual properties, so strictly speaking "re-implementing" them on inherited classes could only be accomplished by shadowing the existing member.  
   
@@ -42,13 +42,13 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
   
  One notable characteristic of a dependency property that you cannot override is its value type. If you are inheriting a dependency property that has the approximate behavior you require, but you require a different type for it, you will have to implement a custom dependency property and perhaps link the properties through type conversion or other implementation on your custom class. Also, you cannot replace an existing <xref:System.Windows.ValidateValueCallback>, because this callback exists in the registration field itself and not within its metadata.  
   
-<a name="scenarios"></a>   
+<a name="scenarios"></a>
 ## Scenarios for Changing Existing Metadata  
  If you are working with metadata of an existing dependency property, one common scenario for changing dependency property metadata is to change the default value. Changing or adding property system callbacks is a more advanced scenario. You might want to do this if your implementation of a derived class has different interrelationships between dependency properties. One of the conditionals of having a programming model that supports both code and declarative usage is that properties must enable being set in any order. Thus any dependent properties need to be set just-in-time without context and cannot rely on knowing a setting order such as might be found in a constructor. For more information on this aspect of the property system, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md). Note that validation callbacks are not part of the metadata; they are part of the dependency property identifier. Therefore, validation callbacks cannot be changed by overriding the metadata.  
   
  In some cases you might also want to alter the WPF framework-level property metadata options on existing dependency properties. These options communicate certain known conditionals about WPF framework-level properties to other WPF framework-level processes such as the layout system.  Setting the options is generally done only when registering a new dependency property, but it is also possible to change the WPF framework-level property metadata as part of a <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> call. For the specific values to use and more information, see [Framework Property Metadata](framework-property-metadata.md). For more information that is pertinent to how these options should be set for a newly registered dependency property, see [Custom Dependency Properties](custom-dependency-properties.md).  
   
-<a name="dp_override_metadata"></a>   
+<a name="dp_override_metadata"></a>
 ### Overriding Metadata  
  The purpose of overriding metadata is primarily so that you have the opportunity to change the various metadata-derived behaviors that are applied to the dependency property as it exists on your type. The reasons for this are explained in more detail in the [Metadata](#dp_metadata_contents) section. For more information including some code examples, see [Override Metadata for a Dependency Property](how-to-override-metadata-for-a-dependency-property.md).  
   
@@ -74,7 +74,7 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
 > [!NOTE]
 > The <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> property is not relevant for attached properties.  
   
-<a name="dp_add_owner"></a>   
+<a name="dp_add_owner"></a>
 ### Adding a Class as an Owner of an Existing Dependency Property  
  A class can add itself as an owner of a dependency property that has already been registered, by using the <xref:System.Windows.DependencyProperty.AddOwner%2A> method. This enables the class to use a dependency property that was originally registered for a different type. The adding class is typically not a derived class of the type that first registered that dependency property as owner. Effectively, this allows your class and its derived classes to "inherit" a dependency property implementation without the original owner class and the adding class being in the same true class hierarchy. In addition, the adding class (and all derived classes as well) can then provide type-specific metadata for the original dependency property.  
   

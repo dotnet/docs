@@ -35,7 +35,7 @@ When you declare a programming element in a module, Visual Basic promotes its sc
  In the preceding example, Visual Basic cannot promote class `abc` to `thisNameSpace` because there is already an enumeration with the same name at namespace level. To access `abcSub`, you must use the full qualification string `thisNamespace.thisModule.abc.abcSub`. However, class `xyz` is still promoted, and you can access `xyzSub` with the shorter qualification string `thisNamespace.xyz.xyzSub`.  
   
 ### Defeat of Type Promotion for Partial Types  
- If a class or structure inside a module uses the [Partial](../../../../visual-basic/language-reference/modifiers/partial.md) keyword, type promotion is automatically defeated for that class or structure, whether or not the namespace has a member with the same name. Other elements in the module are still eligible for type promotion.  
+ If a class or structure inside a module uses the [Partial](../../../language-reference/modifiers/partial.md) keyword, type promotion is automatically defeated for that class or structure, whether or not the namespace has a member with the same name. Other elements in the module are still eligible for type promotion.  
   
  **Consequences.** Defeat of type promotion of a partial definition can cause unexpected results and even compiler errors. The following example shows skeleton partial definitions of a class, one of which is inside a module.  
   
@@ -54,9 +54,9 @@ When you declare a programming element in a module, Visual Basic promotes its sc
   
 ## See also
 
-- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)
-- [Namespace Statement](../../../../visual-basic/language-reference/statements/namespace-statement.md)
-- [Partial](../../../../visual-basic/language-reference/modifiers/partial.md)
-- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
-- [How to: Control the Scope of a Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-control-the-scope-of-a-variable.md)
-- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Module Statement](../../../language-reference/statements/module-statement.md)
+- [Namespace Statement](../../../language-reference/statements/namespace-statement.md)
+- [Partial](../../../language-reference/modifiers/partial.md)
+- [Scope in Visual Basic](scope.md)
+- [How to: Control the Scope of a Variable](how-to-control-the-scope-of-a-variable.md)
+- [References to Declared Elements](references-to-declared-elements.md)

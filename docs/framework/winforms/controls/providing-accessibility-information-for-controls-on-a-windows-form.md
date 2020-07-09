@@ -33,10 +33,10 @@ Accessibility aids are specialized programs and devices that help people with di
 ```vb  
 Button1.AccessibleDefaultActionDescription = _  
    "Closes the application."  
-``` 
+```
 
 ```csharp  
-Button1.AccessibleDefaultActionDescription =   
+Button1.AccessibleDefaultActionDescription =
    "Closes the application.";  
 ```
 
@@ -78,7 +78,7 @@ button1->AccessibleName = "Order";
 ## AccessibleRole Property  
  This property, which contains an <xref:System.Windows.Forms.AccessibleRole> enumeration, describes the user interface role of the control. A new control has the value set to `Default`. This would mean that by default, a **Button** control acts as a **Button**. You may want to reset this property if a control has another role. For example, you may be using a **PictureBox** control as a **Chart**, and you may want accessibility aids to report the role as a **Chart**, not as a **PictureBox**. You may also want to specify this property for custom controls you have developed. This property may be set in the Properties window, or in code as follows:  
   
-```vb 
+```vb
 PictureBox1.AccessibleRole = AccessibleRole.Chart  
 ```
 

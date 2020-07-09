@@ -29,7 +29,7 @@ Enables an error-handling routine and specifies the location of the routine with
  Without error handling or exception handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.
 
 > [!NOTE]
-> The `Error` keyword is also used in the [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md), which is supported for backward compatibility.
+> The `Error` keyword is also used in the [Error Statement](error-statement.md), which is supported for backward compatibility.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## Remarks
 
 > [!NOTE]
-> We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` statement. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).
+> We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` statement. For more information, see [Try...Catch...Finally Statement](try-catch-finally-statement.md).
 
  An "enabled" error handler is one that is turned on by an `On Error` statement. An "active" error handler is an enabled handler that is in the process of handling an error.
 
@@ -106,7 +106,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
  [!code-vb[VbVbalrErrorHandling#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrErrorHandling/VB/Class1.vb#20)]
 
 ## Requirements
- **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)
+ **Namespace:** [Microsoft.VisualBasic](../runtime-library-members.md)
 
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)
 
@@ -116,8 +116,8 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 - <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
-- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
-- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
-- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)
-- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [End Statement](end-statement.md)
+- [Exit Statement](exit-statement.md)
+- [Resume Statement](resume-statement.md)
+- [Error Messages](../error-messages/index.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)

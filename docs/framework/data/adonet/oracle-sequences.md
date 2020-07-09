@@ -24,7 +24,7 @@ The .NET Framework Data Provider for Oracle provides support for retrieving the 
 ```csharp  
 public void OracleSequence(String connectionString)  
 {  
-   String insertString =   
+   String insertString =
       "INSERT INTO SequenceTest_Table (ID, OtherColumn)" +  
       "VALUES (SequenceTest_Sequence.NEXTVAL, :OtherColumn)" +  
       "RETURNING ID INTO :ID";  
@@ -69,7 +69,7 @@ public void OracleSequence(String connectionString)
       }  
       Console.WriteLine();  
   
-      cmd.CommandText =   
+      cmd.CommandText =
         "SELECT ID, OtherColumn FROM SequenceTest_Table";  
       OracleDataAdapter da = new OracleDataAdapter(cmd);  
       da.InsertCommand = new OracleCommand(insertString, conn);  

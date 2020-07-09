@@ -17,7 +17,7 @@ When a query is executing as parallel, PLINQ partitions the source sequence so t
  [!code-csharp[PLINQ#26](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#26)]
  [!code-vb[PLINQ#26](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/plinq2_vb.vb#26)]  
   
- For the complete example, see [How to: Specify Merge Options in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-merge-options-in-plinq.md).  
+ For the complete example, see [How to: Specify Merge Options in PLINQ](how-to-specify-merge-options-in-plinq.md).  
   
  If the particular query cannot support the requested option, then the option will just be ignored. In most cases, you do not have to specify a merge option for a PLINQ query. However, in some cases you may find by testing and measurement that a query executes best in a non-default mode. A common use of this option is to force a chunk-merging operator to stream its results in order to provide a more responsive user interface.  
   
@@ -59,5 +59,5 @@ When a query is executing as parallel, PLINQ partitions the source sequence so t
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
-- [How to: Specify Merge Options in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-merge-options-in-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)
+- [How to: Specify Merge Options in PLINQ](how-to-specify-merge-options-in-plinq.md)

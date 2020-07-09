@@ -15,12 +15,12 @@ class TestMotorcycle : Motorcycle
 
    static void Main()
    {
-      
+
       TestMotorcycle moto = new TestMotorcycle();
       moto.StartEngine();
       moto.AddGas(15);
       var travelTime = moto.Drive(speed: 60, miles: 170);
-      Console.WriteLine("Travel time: approx. {0} hours", travelTime);            
+      Console.WriteLine("Travel time: approx. {0} hours", travelTime);
    }
 }
 // The example displays the following output:
@@ -42,5 +42,5 @@ abstract class Motorcycle
    public virtual int Drive(TimeSpan time, int speed) { /* Method statements here */ return 0; }
 
    // Derived classes must implement this.
-   public abstract double GetTopSpeed(); 
+   public abstract double GetTopSpeed();
 }

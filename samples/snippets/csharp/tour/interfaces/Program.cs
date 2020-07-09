@@ -24,7 +24,7 @@ namespace Interfaces
     {
         public void Paint() { }
         public void Bind(Binder b) { }
-    } 
+    }
 
     public class Program
     {

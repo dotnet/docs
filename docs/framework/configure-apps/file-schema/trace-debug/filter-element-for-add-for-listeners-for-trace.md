@@ -22,8 +22,8 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
 ## Syntax  
   
 ```xml  
-<filter   
-  type="traceFilterClassName"   
+<filter
+  type="traceFilterClassName"
   initializeData="data" />  
 ```  
   
@@ -63,9 +63,9 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  
       <listeners>  
-        <add name="console"   
+        <add name="console"
           type="System.Diagnostics.ConsoleTraceListener" >  
-          <filter type="System.Diagnostics.EventTypeFilter"   
+          <filter type="System.Diagnostics.EventTypeFilter"
             initializeData="Error" />  
         </add>  
         <remove name="Default" />  

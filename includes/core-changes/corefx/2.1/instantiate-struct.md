@@ -45,7 +45,7 @@ if (key.ToString() == "y")
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 

@@ -59,7 +59,7 @@ namespace ImageElementExample
             Image clipImage = new Image();
             clipImage.Width = 200;
             clipImage.Margin = new Thickness(5);
- 
+
             //Create & Set source
             BitmapImage bi = new BitmapImage();
             //BitmapImage.UriSource must be in a BeginInit/EndInit block

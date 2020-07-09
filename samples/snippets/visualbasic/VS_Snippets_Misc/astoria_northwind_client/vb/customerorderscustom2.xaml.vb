@@ -29,19 +29,19 @@ Partial Public Class CustomerOrdersCustom
             '<snippetMasterDetailBinding>
             ' Create a LINQ query that returns customers with related orders.
             Dim customerQuery = From cust In context.Customers.Expand("Orders") _
-                                    Where cust.Country = customerCountry _
-                                    Select cust
+                                Where cust.Country = customerCountry _
+                                Select cust
 
             ' Create a new collection for binding based on the LINQ query.
             trackedCustomers = New DataServiceCollection(Of Customers)(customerQuery, _
                     TrackingMode.AutoChangeTracking, "Customers", _
                     AddressOf OnMyPropertyChanged, AddressOf OnMyCollectionChanged)
 
-                ' Bind the root StackPanel element to the collection
-                ' related object binding paths are defined in the XAML.
-                Me.LayoutRoot.DataContext = trackedCustomers
-                Me.LayoutRoot.UpdateLayout()
-                '</snippetMasterDetailBinding>
+            ' Bind the root StackPanel element to the collection
+            ' related object binding paths are defined in the XAML.
+            Me.LayoutRoot.DataContext = trackedCustomers
+            Me.LayoutRoot.UpdateLayout()
+            '</snippetMasterDetailBinding>
         Catch ex As DataServiceQueryException
             MessageBox.Show("The query could not be completed:\n" + ex.ToString())
         Catch ex As InvalidOperationException

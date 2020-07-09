@@ -14,7 +14,7 @@ class Program
         {
             connection.Open();
 
-            // Empty the destination tables. 
+            // Empty the destination tables.
             SqlCommand deleteHeader = new SqlCommand(
                 "DELETE FROM dbo.BulkCopyDemoOrderHeader;",
                 connection);
@@ -25,7 +25,7 @@ class Program
             deleteDetail.ExecuteNonQuery();
 
             // Perform an initial count on the destination
-            //  table with matching columns. 
+            //  table with matching columns.
             SqlCommand countRowHeader = new SqlCommand(
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderHeader;",
                 connection);
@@ -36,7 +36,7 @@ class Program
                 countStartHeader);
 
             // Perform an initial count on the destination
-            // table with different column positions. 
+            // table with different column positions.
             SqlCommand countRowDetail = new SqlCommand(
                 "SELECT COUNT(*) FROM dbo.BulkCopyDemoOrderDetail;",
                 connection);
@@ -49,10 +49,10 @@ class Program
             // Get data from the source table as a SqlDataReader.
             // The Sales.SalesOrderHeader and Sales.SalesOrderDetail
             // tables are quite large and could easily cause a timeout
-            // if all data from the tables is added to the destination. 
-            // To keep the example simple and quick, a parameter is  
-            // used to select only orders for a particular account 
-            // as the source for the bulk insert. 
+            // if all data from the tables is added to the destination.
+            // To keep the example simple and quick, a parameter is
+            // used to select only orders for a particular account
+            // as the source for the bulk insert.
             SqlCommand headerData = new SqlCommand(
                 "SELECT [SalesOrderID], [OrderDate], " +
                 "[AccountNumber] FROM [Sales].[SalesOrderHeader] " +
@@ -85,7 +85,7 @@ class Program
                 sourceDetailData.Parameters.Add(accountDetail);
                 SqlDataReader readerDetail = sourceDetailData.ExecuteReader();
 
-                // Create the SqlBulkCopy object. 
+                // Create the SqlBulkCopy object.
                 using (SqlBulkCopy bulkCopy =
                            new SqlBulkCopy(connectionString))
                 {
@@ -112,7 +112,7 @@ class Program
                         readerHeader.Close();
                     }
 
-                    // Set up the order details destination. 
+                    // Set up the order details destination.
                     bulkCopy.DestinationTableName ="dbo.BulkCopyDemoOrderDetail";
 
                     // Clear the ColumnMappingCollection.
@@ -141,7 +141,7 @@ class Program
                 }
 
                 // Perform a final count on the destination
-                // tables to see how many rows were added. 
+                // tables to see how many rows were added.
                 long countEndHeader = System.Convert.ToInt32(
                     countRowHeader.ExecuteScalar());
                 Console.WriteLine("{0} rows were added to the Header table.",
@@ -157,8 +157,8 @@ class Program
     }
 
     private static string GetConnectionString()
-        // To avoid storing the connection string in your code, 
-        // you can retrieve it from a configuration file. 
+        // To avoid storing the connection string in your code,
+        // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

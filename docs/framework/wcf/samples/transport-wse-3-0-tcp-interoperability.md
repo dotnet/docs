@@ -33,7 +33,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](https://docs.microsoft.com/archive/msdn-magazine/2002/december/sending-files-attachments-and-soap-messages-via-dime) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
   
- The logic for receiving messages is very similar. The main complexity is handling the fact that a socket read can return less bytes than were requested. To receive a message, `WseTcpDuplexSessionChannel` reads bytes off the wire, decodes the DIME framing, and then uses the <xref:System.ServiceModel.Channels.MessageEncoder> for turning the byte[] into a <xref:System.ServiceModel.Channels.Message>.  
+ The logic for receiving messages is similar. The main complexity is handling the fact that a socket read can return fewer bytes than were requested. To receive a message, `WseTcpDuplexSessionChannel` reads bytes off the wire, decodes the DIME framing, and then uses the <xref:System.ServiceModel.Channels.MessageEncoder> for turning the byte[] into a <xref:System.ServiceModel.Channels.Message>.  
   
  The base `WseTcpDuplexSessionChannel` assumes that it receives a connected socket. The base class handles socket shutdown. There are three places that interface with socket closure:  
   
@@ -41,7 +41,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
 - On[Begin]Close -- close the socket gracefully (soft close).  
   
-- session.CloseOutputSession -- shutdown the outbound data stream (half close).  
+- session.CloseOutputSession -- shut down the outbound data stream (half close).  
   
 ## Channel Factory  
  The next step in writing the TCP transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels.  
@@ -164,18 +164,18 @@ Symbols:
         CONTOSO  
 ```  
   
-#### To set up, build, and run the sample  
+## Set up, build, and run the sample  
   
-1. To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](https://go.microsoft.com/fwlink/?LinkId=95000).  
+1. To run this sample, you must have [Web Services Enhancements (WSE) 3.0 for Microsoft .NET](https://www.microsoft.com/download/details.aspx?id=14089) and the WSE `TcpSyncStockService` sample installed.
   
 > [!NOTE]
 > Because WSE 3.0 is not supported on Windows Server 2008, you cannot install or run the `TcpSyncStockService` sample on that operating system.  
   
 1. Once you install the `TcpSyncStockService` sample, do the following:  
   
-    1. Open the `TcpSyncStockService` in Visual Studio (Note that the TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code).  
+    1. Open the `TcpSyncStockService` in Visual Studio. (The TcpSyncStockService sample is installed with WSE 3.0. It is not part of this sample's code.)  
   
-    2. Set the StockService project as the start up project.  
+    2. Set the StockService project as the start-up project.  
   
     3. Open StockService.cs in the StockService project and comment out the [Policy] attribute on the `StockService` class. This disables security from the sample. While WCF can interoperate with WSE 3.0 secure endpoints, security is disabled to keep this sample focused on the custom TCP transport.  
   

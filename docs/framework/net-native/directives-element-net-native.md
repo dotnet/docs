@@ -6,13 +6,13 @@ ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
 # \<Directives> Element (.NET Native)
 The root element in every runtime directives file for .NET Native.  
   
- `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">` 
+ `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">`
   
 ## Syntax  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
-   <!-- child elements -->   
+   <!-- child elements -->
 </Directives>  
 ```  
   
@@ -20,7 +20,7 @@ The root element in every runtime directives file for .NET Native.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`xmlns`|The XML namespace. Its value is always **"http://schemas.microsoft.com/netfx/2013/01/metadata"**.|  
+|`xmlns`|The XML namespace. Its value is always `http://schemas.microsoft.com/netfx/2013/01/metadata`.|  
   
 ## Child elements  
   

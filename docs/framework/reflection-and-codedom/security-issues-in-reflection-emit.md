@@ -26,9 +26,9 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 > [!NOTE]
 > The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of the .NET Framework. See [Version Information](#Version_Information), later in this topic.  
   
-<a name="Dynamic_Assemblies"></a>   
+<a name="Dynamic_Assemblies"></a>
 ## Dynamic Assemblies  
- Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](../security/security-changes.md).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
+ Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
   
 > [!NOTE]
 > Attributes that you apply to the dynamic assembly after it is created, by using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method, do not take effect until the assembly has been saved to disk and loaded into memory again.  
@@ -51,7 +51,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
 - Debug symbols are not generated. (`Internet` and `LocalIntranet` permission sets do not include the necessary permissions.)  
   
-<a name="Anonymously_Hosted_Dynamic_Methods"></a>   
+<a name="Anonymously_Hosted_Dynamic_Methods"></a>
 ## Anonymously Hosted Dynamic Methods  
  Anonymously hosted dynamic methods are created by using the two <xref:System.Reflection.Emit.DynamicMethod> constructors that do not specify an associated type or module, <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%29> and <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29>. These constructors place the dynamic methods in a system-provided, fully trusted, security-transparent assembly. No permissions are required to use these constructors or to emit code for the dynamic methods.  
   
@@ -84,7 +84,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 > [!NOTE]
 > Dynamic methods do not support debug symbols.  
   
-<a name="Dynamic_Methods_Associated_with_Existing_Assemblies"></a>   
+<a name="Dynamic_Methods_Associated_with_Existing_Assemblies"></a>
 ## Dynamic Methods Associated with Existing Assemblies  
  To associate a dynamic method with a type or module in an existing assembly, use any of the <xref:System.Reflection.Emit.DynamicMethod> constructors that specify the associated type or module. The permissions that are required to call these constructors vary, because associating a dynamic method with an existing type or module gives the dynamic method access to nonpublic types and members:  
   
@@ -129,9 +129,9 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
 > [!NOTE]
 > Dynamic methods do not support debug symbols.  
   
-<a name="Version_Information"></a>   
+<a name="Version_Information"></a>
 ## Version Information  
- Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../security/security-changes.md).  
+ Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
   
  Starting with the .NET Framework 2.0 Service Pack 1, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the .NET Framework.  
   

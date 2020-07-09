@@ -35,10 +35,10 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
 |Preservation of element ordering in the source XML is not critical.|Preservation of element ordering in the source XML is critical.|  
 |White space between elements and formatting does not need to be preserved in the source XML.|White space and formatting preservation in the source XML is critical.|  
   
- If loading and writing XML directly into and out of a **DataSet** addresses your needs, see [Loading a DataSet from XML](../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) and [Writing a DataSet as XML Data](../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
+ If loading and writing XML directly into and out of a **DataSet** addresses your needs, see [Loading a DataSet from XML](../../../framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md) and [Writing a DataSet as XML Data](../../../framework/data/adonet/dataset-datatable-dataview/writing-dataset-contents-as-xml-data.md).  
   
- If loading the **DataSet** from an **XmlDataDocument** addresses your needs, see [Synchronizing a Dataset with an XML Document](../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
+ If loading the **DataSet** from an **XmlDataDocument** addresses your needs, see [Synchronizing a Dataset with an XML Document](../../../framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md).  
   
 ## See also
 
-- [Using XML in a DataSet](../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
+- [Using XML in a DataSet](../../../framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)

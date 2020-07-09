@@ -25,4 +25,4 @@ A class constructor does not explicitly call a base class constructor, and the i
   
 ## See also
 
-- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Attributes overview](../../programming-guide/concepts/attributes/index.md)

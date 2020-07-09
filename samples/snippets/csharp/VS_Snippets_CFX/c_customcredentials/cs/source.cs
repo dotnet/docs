@@ -9,7 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel.Configuration;
 using System.Configuration;
 
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, 
+[assembly: SecurityPermission(SecurityAction.RequestMinimum,
     Execution = true)]
 namespace Microsoft.ServiceModel.Samples
 {
@@ -61,7 +61,7 @@ namespace Microsoft.ServiceModel.Samples
     //</snippet1>
 
     //<snippet2>
-    internal class MyClientCredentialsSecurityTokenManager : 
+    internal class MyClientCredentialsSecurityTokenManager :
         ClientCredentialsSecurityTokenManager
     {
         MyClientCredentials credentials;
@@ -141,7 +141,7 @@ namespace Microsoft.ServiceModel.Samples
     //</snippet4>
 
     //<snippet5>
-    internal class MyServiceCredentialsSecurityTokenManager : 
+    internal class MyServiceCredentialsSecurityTokenManager :
         ServiceCredentialsSecurityTokenManager
     {
         MyServiceCredentials credentials;
@@ -206,11 +206,11 @@ namespace Microsoft.ServiceModel.Samples
                 {
                     ConfigurationPropertyCollection properties = base.Properties;
                     properties.Add(new ConfigurationProperty(
-                        "creditCardNumber", 
-                        typeof(System.String), 
+                        "creditCardNumber",
+                        typeof(System.String),
                         string.Empty,
-                        null, 
-                        new StringValidator(0, 32, null), 
+                        null,
+                        new StringValidator(0, 32, null),
                         ConfigurationPropertyOptions.None));
                     this.properties = properties;
                 }
@@ -294,37 +294,37 @@ namespace Microsoft.ServiceModel.Samples
     }
     public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
 {
-    
+
     public CalculatorClient()
     {
     }
-    
-    public CalculatorClient(string endpointConfigurationName) : 
+
+    public CalculatorClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public CalculatorClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public double Add(double a, double b)
     {
         return base.Channel.Add(a, b);
     }
 }
-    
+
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICalculator")]
     public interface ICalculator
     {

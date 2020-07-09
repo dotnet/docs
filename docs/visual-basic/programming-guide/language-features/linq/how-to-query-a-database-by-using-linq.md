@@ -72,7 +72,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
   
 ## See also
 
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
-- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ](index.md)
+- [Queries](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

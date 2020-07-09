@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionsSample", "Extensi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldSample", "HelloWorldSample\HelloWorldSample.csproj", "{DFB7A154-EA8D-4DD5-BB90-F87634A640A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperSample", "DapperSample\DapperSample.csproj", "{C9005435-DFED-4986-A405-F7546312E66B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperSample", "DapperSample\DapperSample.csproj", "{C9005435-DFED-4986-A405-F7546312E66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteProviderSample", "SqliteProviderSample\SqliteProviderSample.csproj", "{E52BF2F4-6941-493F-8022-CD783889C1E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{C9005435-DFED-4986-A405-F7546312E66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9005435-DFED-4986-A405-F7546312E66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9005435-DFED-4986-A405-F7546312E66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52BF2F4-6941-493F-8022-CD783889C1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52BF2F4-6941-493F-8022-CD783889C1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52BF2F4-6941-493F-8022-CD783889C1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52BF2F4-6941-493F-8022-CD783889C1E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

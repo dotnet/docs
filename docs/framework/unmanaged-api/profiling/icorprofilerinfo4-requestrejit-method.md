@@ -56,7 +56,7 @@ HRESULT RequestReJIT (
  A profiler typically calls `RequestReJIT` in response to user input requesting that the profiler instrument one or more methods. `RequestReJIT` typically suspends the runtime in order to do some of its work, and can potentially trigger a garbage collection. As such, the profiler should call `RequestReJIT` from a thread it previously created, and not from a CLR-created thread that is currently executing a profiler callback.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

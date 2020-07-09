@@ -73,7 +73,7 @@ class Program
 {  
   static void Main()  
   {  
-    string connectionString =   
+    string connectionString =
        "Data Source=(local);Database=AdventureWorks;" +  
        "Integrated Security=true;";  
     using (SqlConnection connection =  
@@ -92,7 +92,7 @@ class Program
         {  
             foreach (System.Data.DataColumn col in table.Columns)  
             {  
-                Console.WriteLine("{0} = {1}",   
+                Console.WriteLine("{0} = {1}",
                   col.ColumnName, row[col]);  
             }  
             Console.WriteLine("============================");  

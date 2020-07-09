@@ -17,62 +17,62 @@ namespace SDKSample
             // <SnippetVideoDrawingExampleInline>
             //
             // Create a VideoDrawing.
-            //      
+            //
             // <SnippetVideoDrawingExampleInline1>
             MediaPlayer player = new MediaPlayer();
             // </SnippetVideoDrawingExampleInline1>
-            
+
             // <SnippetVideoDrawingExampleInline2>
             player.Open(new Uri(@"sampleMedia\xbox.wmv", UriKind.Relative));
             // </SnippetVideoDrawingExampleInline2>
-            
+
             // <SnippetVideoDrawingExampleInline3>
             VideoDrawing aVideoDrawing = new VideoDrawing();
             // </SnippetVideoDrawingExampleInline3>
-            
+
             // <SnippetVideoDrawingExampleInline4>
             aVideoDrawing.Rect = new Rect(0, 0, 100, 100);
             // </SnippetVideoDrawingExampleInline4>
-            
+
             // <SnippetVideoDrawingExampleInline5>
             aVideoDrawing.Player = player;
             // </SnippetVideoDrawingExampleInline5>
-            
+
             // <SnippetVideoDrawingExampleInline6>
             // Play the video once.
-            player.Play();        
+            player.Play();
             // </SnippetVideoDrawingExampleInline6>
-            
+
             // </SnippetVideoDrawingExampleInline>
 
             // <SnippetRepeatingVideoDrawingExampleInline>
             //
             // Create a VideoDrawing that repeats.
             //
-            
+
             // <SnippetRepeatingVideoDrawingExampleInline1>
             // Create a MediaTimeline.
-            MediaTimeline mTimeline = 
-                new MediaTimeline(new Uri(@"sampleMedia\xbox.wmv", UriKind.Relative)); 
+            MediaTimeline mTimeline =
+                new MediaTimeline(new Uri(@"sampleMedia\xbox.wmv", UriKind.Relative));
 
             // Set the timeline to repeat.
             mTimeline.RepeatBehavior = RepeatBehavior.Forever;
             // </SnippetRepeatingVideoDrawingExampleInline1>
-            
+
             // <SnippetRepeatingVideoDrawingExampleInline2>
             // Create a clock from the MediaTimeline.
             MediaClock mClock = mTimeline.CreateClock();
             // </SnippetRepeatingVideoDrawingExampleInline2>
-            
+
             // <SnippetRepeatingVideoDrawingExampleInline3>
             MediaPlayer repeatingVideoDrawingPlayer = new MediaPlayer();
             repeatingVideoDrawingPlayer.Clock = mClock;
             // </SnippetRepeatingVideoDrawingExampleInline3>
-            
+
             // <SnippetRepeatingVideoDrawingExampleInline4>
             VideoDrawing repeatingVideoDrawing = new VideoDrawing();
             repeatingVideoDrawing.Rect = new Rect(150, 0, 100, 100);
-            repeatingVideoDrawing.Player = repeatingVideoDrawingPlayer;  
+            repeatingVideoDrawing.Player = repeatingVideoDrawingPlayer;
             // </SnippetRepeatingVideoDrawingExampleInline4>
             // </SnippetRepeatingVideoDrawingExampleInline>
 

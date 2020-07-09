@@ -61,7 +61,7 @@ class Example
         string MyString = "Hello Beautiful World!";
         Console.WriteLine(MyString.Remove(5,10));
         // The example displays the following output:
-        //         Hello World!        
+        //         Hello World!
         // </snippet21>
     }
 }

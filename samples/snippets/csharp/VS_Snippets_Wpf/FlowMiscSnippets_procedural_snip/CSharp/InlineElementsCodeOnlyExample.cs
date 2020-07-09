@@ -49,12 +49,12 @@ namespace SDKSample
             this.Content = myFlowDocument;
 
 /*
-                    <Figure 
-          Width="300" Height="50" Background="GhostWhite" 
-          HorizontalAnchor="PageLeft" 
+                    <Figure
+          Width="300" Height="50" Background="GhostWhite"
+          HorizontalAnchor="PageLeft"
           HorizontalOffset="100" VerticalOffset="20"
           >
-          <Paragraph 
+          <Paragraph
             FontStyle="Italic" TextAlignment="Left"
             Background="Beige" Foreground="DarkGreen"
             >

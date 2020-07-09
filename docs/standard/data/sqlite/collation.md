@@ -15,7 +15,7 @@ Collating sequences are used by SQLite when comparing TEXT values to determine o
 
 ## Custom collation
 
-You can also define your own collating sequences or override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateCollation%2A>. The following example shows overriding the NOCASE collation to support Unicode characters. The [full sample code](https://github.com/dotnet/samples/blob/master/snippets/standard/data/sqlite/CollationSample/Program.cs) is available on GitHub.
+You can also define your own collating sequences or override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateCollation%2A>. The following example shows overriding the NOCASE collation to support Unicode characters. The [full sample code](https://github.com/dotnet/docs/blob/master/samples/snippets/standard/data/sqlite/CollationSample/Program.cs) is available on GitHub.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/CollationSample/Program.cs?name=snippet_Collation)]
 
@@ -26,7 +26,7 @@ The LIKE operator in SQLite doesn't honor collations. The default implementation
 You can easily make the LIKE operator case-sensitive by using the following pragma statement:
 
 ```sql
-PRAGMA case_sensitive_like = 0
+PRAGMA case_sensitive_like = 1
 ```
 
 See [User-defined functions](user-defined-functions.md) for details on overriding the implementation of the LIKE operator.

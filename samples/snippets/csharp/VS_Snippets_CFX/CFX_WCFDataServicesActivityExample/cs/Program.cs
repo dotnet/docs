@@ -80,7 +80,7 @@ namespace WCFDataServicesActivityExample
                             Argument = customer,
                             Handler = new WriteLine
                             {
-                                Text = new InArgument<string>((env) => string.Format("{0}, Contact: {1}", 
+                                Text = new InArgument<string>((env) => string.Format("{0}, Contact: {1}",
                                     customer.Get(env).CompanyName, customer.Get(env).ContactName))
                             }
                         }
@@ -161,7 +161,7 @@ namespace WCFDataServicesActivityExample
                     //</snippet3>
                     new WriteLine
                     {
-                        Text = new InArgument<string>(env => string.Format("Raw data returned:\n{0}", data.Get(env))) 
+                        Text = new InArgument<string>(env => string.Format("Raw data returned:\n{0}", data.Get(env)))
                     }
                 }
             };
@@ -194,7 +194,7 @@ namespace WCFDataServicesActivityExample
         {
             NorthwindEntities dataContext = new NorthwindEntities(new Uri(ServiceUri.Get(context)));
 
-            // Define a LINQ query that returns Orders and 
+            // Define a LINQ query that returns Orders and
             // Order_Details for a specific customer.
             DataServiceQuery<Order> ordersQuery = (DataServiceQuery<Order>)
                 from o in dataContext.Orders.Expand("Order_Details")

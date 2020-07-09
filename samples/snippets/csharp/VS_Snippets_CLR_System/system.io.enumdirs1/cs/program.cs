@@ -13,7 +13,7 @@ class Program
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             List<string> dirs = new List<string>(Directory.EnumerateDirectories(docPath));
-                    
+
             foreach (var dir in dirs)
             {
                 Console.WriteLine($"{dir.Substring(dir.LastIndexOf(Path.DirectorySeparatorChar) + 1)}");

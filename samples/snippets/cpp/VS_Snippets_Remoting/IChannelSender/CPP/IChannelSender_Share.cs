@@ -4,14 +4,14 @@
 
 using System;
 
-public class MyHelloServer : MarshalByRefObject 
+public class MyHelloServer : MarshalByRefObject
 {
-   public MyHelloServer() 
+   public MyHelloServer()
    {
       Console.WriteLine("HelloServer activated");
    }
 
-   public String myHelloMethod(String myString) 
+   public String myHelloMethod(String myString)
    {
       Console.WriteLine("Hello.HelloMethod : {0}", myString);
       return "Hi there " + myString;

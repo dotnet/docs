@@ -22,7 +22,7 @@ Contains information about an object that is to be garbage-collected.
   
 ```cpp  
 typedef struct _COR_GC_REFERENCE {  
-    ICorDebugAppDomain *domain;   
+    ICorDebugAppDomain *domain;
     ICorDebugValue *location;  
     CorGCReferenceType type;  
     UINT64 extraData;  

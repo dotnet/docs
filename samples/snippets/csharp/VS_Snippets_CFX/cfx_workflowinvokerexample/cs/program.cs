@@ -326,7 +326,7 @@ namespace WorkflowInvokerExample
             //<snippet50>
             Activity wf = new Sequence()
             {
-                Activities = 
+                Activities =
                 {
                     new WriteLine()
                     {
@@ -364,7 +364,7 @@ namespace WorkflowInvokerExample
             //<snippet51>
             Activity wf = new Sequence()
             {
-                Activities = 
+                Activities =
                 {
                     new WriteLine()
                     {

@@ -276,17 +276,17 @@ Module Module1
         Dim query = _
             From contact In contacts.AsEnumerable() _
             From order In orders.AsEnumerable() _
-                Where (contact.Field(Of Integer)("ContactID") = _
-                    order.Field(Of Integer)("ContactID")) _
-                    And (order.Field(Of Decimal)("TotalDue") < 500D) _
-                Select New With _
-                { _
-                    .ContactID = contact.Field(Of Integer)("ContactID"), _
-                    .LastName = contact.Field(Of String)("LastName"), _
-                    .FirstName = contact.Field(Of String)("FirstName"), _
-                    .OrderID = order.Field(Of Integer)("SalesOrderID"), _
-                    .TotalDue = order.Field(Of Decimal)("TotalDue") _
-                }
+            Where (contact.Field(Of Integer)("ContactID") = _
+                order.Field(Of Integer)("ContactID")) _
+                And (order.Field(Of Decimal)("TotalDue") < 500D) _
+            Select New With _
+            { _
+                .ContactID = contact.Field(Of Integer)("ContactID"), _
+                .LastName = contact.Field(Of String)("LastName"), _
+                .FirstName = contact.Field(Of String)("FirstName"), _
+                .OrderID = order.Field(Of Integer)("SalesOrderID"), _
+                .TotalDue = order.Field(Of Decimal)("TotalDue") _
+            }
 
         For Each smallOrder In query
             Console.Write("ContactID: " & smallOrder.ContactID)
@@ -2510,7 +2510,7 @@ Module Module1
         Dim products As DataTable = ds.Tables("Product")
 
         Dim productsQuery = From product In products.AsEnumerable() _
-                    Select product
+                            Select product
 
         Dim largeProducts = _
             productsQuery.Where(Function(p) p.Field(Of String)("Size") = "L")

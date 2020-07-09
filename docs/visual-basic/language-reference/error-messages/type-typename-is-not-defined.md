@@ -27,9 +27,9 @@ The statement has made reference to a type that has not been defined. You can de
   
 ## See also
 
-- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
-- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Namespaces in Visual Basic](../../programming-guide/program-structure/namespaces.md)
+- [Enum Statement](../statements/enum-statement.md)
+- [Structure Statement](../statements/structure-statement.md)
+- [Class Statement](../statements/class-statement.md)
+- [Interface Statement](../statements/interface-statement.md)
 - [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

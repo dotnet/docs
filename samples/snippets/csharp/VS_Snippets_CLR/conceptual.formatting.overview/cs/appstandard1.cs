@@ -4,22 +4,22 @@ using System;
 public class Temperature
 {
    private decimal m_Temp;
-   
+
    public Temperature(decimal temperature)
    {
       this.m_Temp = temperature;
    }
-   
+
    public decimal Celsius
    {
       get { return this.m_Temp; }
    }
-   
+
    public decimal Kelvin
    {
-      get { return this.m_Temp + 273.15m; }   
+      get { return this.m_Temp + 273.15m; }
    }
-   
+
    public decimal Fahrenheit
    {
       get { return Math.Round(((decimal) (this.m_Temp * 9 / 5 + 32)), 2); }
@@ -29,14 +29,14 @@ public class Temperature
    {
       return this.ToString("C");
    }
-   
+
    public string ToString(string format)
-   {  
+   {
       // Handle null or empty string.
       if (String.IsNullOrEmpty(format)) format = "C";
       // Remove spaces and convert to uppercase.
-      format = format.Trim().ToUpperInvariant();      
-      
+      format = format.Trim().ToUpperInvariant();
+
       // Convert temperature to Fahrenheit and return string.
       switch (format)
       {
@@ -52,7 +52,7 @@ public class Temperature
             return this.Celsius.ToString("N2") + " °C";
          default:
             throw new FormatException(String.Format("The '{0}' format string is not supported.", format));
-      }      
+      }
    }
 }
 
@@ -80,7 +80,7 @@ public class Example
       Console.WriteLine(temp3.ToString("C"));
       Console.WriteLine(temp3.ToString("F"));
       Console.WriteLine(temp3.ToString("K"));
-      
+
       Console.WriteLine(String.Format("The temperature is now {0:F}.", temp3));
    }
 }

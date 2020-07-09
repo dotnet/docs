@@ -6,7 +6,7 @@ using System.Text;
 namespace csrefKeywordsJump
 {
 
-    //<snippet1>    
+    //<snippet1>
     class BreakTest
     {
         static void Main()
@@ -25,16 +25,16 @@ namespace csrefKeywordsJump
             Console.ReadKey();
         }
     }
-    /* 
+    /*
      Output:
         1
         2
         3
-        4  
+        4
     */
     //</snippet1>
 
-    //<snippet2>    
+    //<snippet2>
     class Switch
     {
         static void Main()
@@ -66,7 +66,7 @@ namespace csrefKeywordsJump
     }
     /*
     Sample Input: 1
-     
+
     Sample Output:
     Enter your selection (1, 2, or 3): 1
     Current value is 1
@@ -137,7 +137,7 @@ namespace csrefKeywordsJump
     }
     /*
     Sample Input:  2
-     
+
     Sample Output:
     Coffee sizes: 1=Small 2=Medium 3=Large
     Please enter your selection: 2
@@ -195,7 +195,7 @@ namespace csrefKeywordsJump
     }
     /*
     Sample Input: 44
-     
+
     Sample Output
     Enter the number to search for: 44
     The number 44 is found.
@@ -282,7 +282,7 @@ namespace csrefKeywordsJump
         num = 9
          a  b  c  d  e  f  g  h  i
      */
-    //</Snippet7>  
+    //</Snippet7>
 
     //<snippet8>
     class BreakFromSwitchInsideLoop

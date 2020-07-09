@@ -37,7 +37,7 @@ HRESULT GetSymbolSearchInfo(
  [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the search information.  
   
  `rgpSearchInfo`  
- [out] A pointer that is set to the returned [ISymUnmanagedSymbolSearchInfo](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md) interface.  
+ [out] A pointer that is set to the returned [ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -47,4 +47,4 @@ HRESULT GetSymbolSearchInfo(
   
 ## See also
 
-- [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)
+- [ISymUnmanagedReaderSymbolSearchInfo Interface](isymunmanagedreadersymbolsearchinfo-interface.md)

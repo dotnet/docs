@@ -3,18 +3,18 @@ using System;
 
 [assembly: CLSCompliant(true)]
 
-public enum Size : uint { 
-   Unspecified = 0, 
-   XSmall = 1, 
-   Small = 2, 
-   Medium = 3, 
-   Large = 4, 
-   XLarge = 5 
+public enum Size : uint {
+   Unspecified = 0,
+   XSmall = 1,
+   Small = 2,
+   Medium = 3,
+   Large = 4,
+   XLarge = 5
 };
 
 public class Clothing
 {
-   public string Name; 
+   public string Name;
    public string Type;
    public string Size;
 }

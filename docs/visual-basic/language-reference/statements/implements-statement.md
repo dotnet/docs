@@ -29,13 +29,13 @@ Implements interfacename.interfacemember [, ...]
  Required. The member of an interface that is being implemented.  
   
 ## Remarks  
- An interface is a collection of prototypes representing the members (properties, procedures, and events) the interface encapsulates. Interfaces contain only the declarations for members; classes and structures implement these members. For more information, see [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md).  
+ An interface is a collection of prototypes representing the members (properties, procedures, and events) the interface encapsulates. Interfaces contain only the declarations for members; classes and structures implement these members. For more information, see [Interfaces](../../programming-guide/language-features/interfaces/index.md).  
   
  The `Implements` statement must immediately follow the `Class` or `Structure` statement.  
   
- When you implement an interface, you must implement all the members declared in the interface. Omitting any member is considered to be a syntax error. To implement an individual member, you specify the [Implements](../../../visual-basic/language-reference/statements/implements-clause.md) keyword (which is separate from the `Implements` statement) when you declare the member in the class or structure. For more information, see [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md).  
+ When you implement an interface, you must implement all the members declared in the interface. Omitting any member is considered to be a syntax error. To implement an individual member, you specify the [Implements](implements-clause.md) keyword (which is separate from the `Implements` statement) when you declare the member in the class or structure. For more information, see [Interfaces](../../programming-guide/language-features/interfaces/index.md).  
   
- Classes can use [Private](../../../visual-basic/language-reference/modifiers/private.md) implementations of properties and procedures, but these members are accessible only by casting an instance of the implementing class into a variable declared to be of the type of the interface.  
+ Classes can use [Private](../modifiers/private.md) implementations of properties and procedures, but these members are accessible only by casting an instance of the implementing class into a variable declared to be of the type of the interface.  
   
 ## Example  
  The following example shows how to use the `Implements` statement to implement members of an interface. It defines an interface named `ICustomerInfo` with an event, a property, and a procedure. The class `customerInfo` implements all the members defined in the interface.  
@@ -51,6 +51,6 @@ Implements interfacename.interfacemember [, ...]
   
 ## See also
 
-- [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
-- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [Implements](implements-clause.md)
+- [Interface Statement](interface-statement.md)
+- [Interfaces](../../programming-guide/language-features/interfaces/index.md)

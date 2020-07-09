@@ -37,7 +37,7 @@ namespace SDKSample
 //<SnippetParentBinding>
   		Binding binding = myDateText.GetBindingExpression(TextBlock.TextProperty).ParentBinding;
 //</SnippetParentBinding>
-      
+
         switch (sSelectedCulture)
         {
             case "English (en-US)":
@@ -82,16 +82,16 @@ namespace SDKSample
     {
         // Make a new source, to grab a new timestamp
         MyData myChangedData = new MyData();
-        
+
         // Create a new binding
         // TheDate is a property of type DateTime on MyData class
         Binding myNewBindDef = new Binding("TheDate");
-        
+
         myNewBindDef.Mode = BindingMode.OneWay;
         myNewBindDef.Source = myChangedData;
         myNewBindDef.Converter = TheConverter;
         myNewBindDef.ConverterCulture = new CultureInfo("en-US");
-        
+
 	      //<SnippetBOSetBinding>
 	      // myDatetext is a TextBlock object that is the binding target object
         BindingOperations.SetBinding(myDateText, TextBlock.TextProperty, myNewBindDef);

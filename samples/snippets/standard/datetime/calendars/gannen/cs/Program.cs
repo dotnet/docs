@@ -21,7 +21,7 @@ public class Example
               if (jaJp.DateTimeFormat.GetEraName(ctr) == eraName)
                  return ctr;
 
-           return 0; 
+           return 0;
         }
     }
 }

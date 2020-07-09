@@ -15,11 +15,12 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet tool restore <PACKAGE_NAME>
-    [--configfile] [--add-source] [tool-manifest]
-    [--disable-parallel] [--ignore-failed-sources]
-    [--no-cache] [-interactive] [-v|--verbosity]
-    
-dotnet tool restore <-h|--help>
+    [--configfile <FILE>] [--add-source <SOURCE>]
+    [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
+    [--ignore-failed-sources] [--no-cache] [--interactive]
+    [-v|--verbosity <LEVEL>]
+
+dotnet tool restore -h|--help
 ```
 
 ## Description

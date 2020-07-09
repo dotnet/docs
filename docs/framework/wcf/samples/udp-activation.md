@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
 ---
 # UDP Activation
-This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. It extends the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
+This sample is based on the [Transport: UDP](transport-udp.md) sample. It extends the [Transport: UDP](transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
   
  The sample consists of three major pieces:  
   
@@ -149,9 +149,9 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\UdpActivation`  

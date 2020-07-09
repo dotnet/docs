@@ -81,5 +81,5 @@ namespace Snippets
         public static void WriteLine(string fmt, params object[] args) { }
         // ...
     }
-    
+
 }

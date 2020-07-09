@@ -10,7 +10,7 @@ ms.custom: mvc
 Compilers process the code you write following structured rules that often
 differ from the way humans read and understand code. A basic understanding
 of the model used by compilers is essential to understanding the APIs
-you use when building Roslyn-based tools. 
+you use when building Roslyn-based tools.
 
 ## Compiler pipeline functional areas
 
@@ -43,7 +43,7 @@ These APIs are the same ones used by Visual Studio. For instance, the code
 outlining and formatting features use the syntax trees, the Object Browser
 and navigation features use the symbol table, refactorings
 and Go to Definition use the semantic model, and Edit and Continue uses all of
-these, including the Emit API. 
+these, including the Emit API.
 
 ## API layers
 
@@ -90,7 +90,7 @@ as you write it.
 The Workspaces layer contains the Workspace API, which is the starting
 point for doing code analysis and refactoring over entire solutions. It
 assists you in organizing all the information about the projects in a
-solution into single object model, offering you direct access to the compiler
+solution into a single object model, offering you direct access to the compiler
 layer object models without needing to parse files, configure options, or
 manage project-to-project dependencies.
 

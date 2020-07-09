@@ -40,11 +40,11 @@ namespace NorthwindClient
                 var customerQuery = from cust in context.Customers
                                     where cust.Country == customerCountry
                                     select cust;
-                
+
                 //<snippetBindPagedDataSpecific>
                 // Create a new collection for binding based on the LINQ query.
                 trackedCustomers = new DataServiceCollection<Customer>(customerQuery);
-                
+
                 // Load all pages of the response at once.
                 while (trackedCustomers.Continuation != null)
                 {
@@ -66,10 +66,10 @@ namespace NorthwindClient
                 MessageBox.Show("The following error occurred:\n" + ex.ToString());
             }
         }
-        
+
         private void customerIDComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Customer selectedCustomer = 
+            Customer selectedCustomer =
                 this.customerIDComboBox.SelectedItem as Customer;
 
             try

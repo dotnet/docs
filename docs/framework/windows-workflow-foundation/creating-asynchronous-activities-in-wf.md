@@ -1,5 +1,6 @@
 ---
 title: "Creating Asynchronous Activities in WF"
+description: Learn how to create custom asynchronous activities using AsyncCodeActivity, which enables derived activities to implement asynchronous execution logic.
 ms.date: "03/30/2017"
 ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
 ---

@@ -6,7 +6,7 @@ public class Example
    public static void Main()
    {
       int caseSwitch = 1;
-      
+
       switch (caseSwitch)
       {
           case 1:

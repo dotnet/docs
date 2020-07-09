@@ -10,8 +10,8 @@ Gets the culture name string of the assembly.
   
 ```cpp  
 HRESULT GetCulture(  
-   [in] ULONG32 cchCulture,   
-   [out] ULONG32 *pcchCulture,   
+   [in] ULONG32 cchCulture,
+   [out] ULONG32 *pcchCulture,
    [out, size_is(cchCulture), length_is(*pcchCulture)] WCHAR szCulture[]  
 );  
 ```  
@@ -33,7 +33,7 @@ HRESULT GetCulture(
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

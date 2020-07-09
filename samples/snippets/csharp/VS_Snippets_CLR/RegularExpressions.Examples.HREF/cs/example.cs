@@ -21,21 +21,21 @@ public class Class1
     //       Found href http://www.microsoft.com at 102
     //       Found href http://blogs.msdn.com/bclteam at 176
     // </Snippet2>
-   
+
     // <Snippet1>
-    private static void DumpHRefs(string inputString) 
+    private static void DumpHRefs(string inputString)
     {
         Match m;
         string HRefPattern = @"href\s*=\s*(?:[""'](?<1>[^""']*)[""']|(?<1>\S+))";
-      
+
         try
         {
-            m = Regex.Match(inputString, HRefPattern, 
-                            RegexOptions.IgnoreCase | RegexOptions.Compiled, 
+            m = Regex.Match(inputString, HRefPattern,
+                            RegexOptions.IgnoreCase | RegexOptions.Compiled,
                             TimeSpan.FromSeconds(1));
             while (m.Success)
             {
-                Console.WriteLine("Found href " + m.Groups[1] + " at " 
+                Console.WriteLine("Found href " + m.Groups[1] + " at "
                    + m.Groups[1].Index);
                 m = m.NextMatch();
             }

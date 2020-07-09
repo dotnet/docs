@@ -37,7 +37,7 @@ class DataflowProducerConsumer
       // Initialize a counter to track the number of bytes that are processed.
       int bytesProcessed = 0;
 
-      // Read from the source buffer until the source buffer has no 
+      // Read from the source buffer until the source buffer has no
       // available output data.
       while (await source.OutputAvailableAsync())
       {
@@ -52,11 +52,11 @@ class DataflowProducerConsumer
 
    static void Main(string[] args)
    {
-      // Create a BufferBlock<byte[]> object. This object serves as the 
+      // Create a BufferBlock<byte[]> object. This object serves as the
       // target block for the producer and the source block for the consumer.
       var buffer = new BufferBlock<byte[]>();
 
-      // Start the consumer. The Consume method runs asynchronously. 
+      // Start the consumer. The Consume method runs asynchronously.
       var consumer = ConsumeAsync(buffer);
 
       // Post source data to the dataflow block.
@@ -84,7 +84,7 @@ class Program2
       // Initialize a counter to track the number of bytes that are processed.
       int bytesProcessed = 0;
 
-      // Read from the source buffer until the source buffer has no 
+      // Read from the source buffer until the source buffer has no
       // available output data.
       while (await source.OutputAvailableAsync())
       {

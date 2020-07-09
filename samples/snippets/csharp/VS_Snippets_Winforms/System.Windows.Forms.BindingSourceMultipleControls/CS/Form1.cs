@@ -11,7 +11,7 @@ namespace MultipleControls
 {
     public class Form1 : Form
     {
-       
+
         public Form1()
         {
             this.Load += new EventHandler(Form1_Load);
@@ -31,10 +31,10 @@ namespace MultipleControls
         private TextBox textBox1;
         private TextBox textBox2;
         private DataGridView dataGridView1;
-    
+
         private void InitializeControlsAndDataSource()
         {
-            // Initialize the controls and set location, size and 
+            // Initialize the controls and set location, size and
             // other basic properties.
             this.dataGridView1 = new DataGridView();
             this.bindingSource1 = new BindingSource();
@@ -74,11 +74,11 @@ namespace MultipleControls
 
             // Add the control data bindings.
             dataGridView1.DataSource = bindingSource1;
-            textBox1.DataBindings.Add("Text", bindingSource1, 
+            textBox1.DataBindings.Add("Text", bindingSource1,
                 "Beverages", true, DataSourceUpdateMode.OnPropertyChanged);
-            textBox2.DataBindings.Add("Text", bindingSource1, 
+            textBox2.DataBindings.Add("Text", bindingSource1,
                 "Beverages", true, DataSourceUpdateMode.OnPropertyChanged);
-            bindingSource1.BindingComplete += 
+            bindingSource1.BindingComplete +=
                 new BindingCompleteEventHandler(bindingSource1_BindingComplete);
         }
         //</snippet3>
@@ -87,7 +87,7 @@ namespace MultipleControls
         private void bindingSource1_BindingComplete(object sender, BindingCompleteEventArgs e)
         {
             // Check if the data source has been updated, and that no error has occurred.
-            if (e.BindingCompleteContext == 
+            if (e.BindingCompleteContext ==
                 BindingCompleteContext.DataSourceUpdate && e.Exception == null)
 
                 // If not, end the current edit.
@@ -100,10 +100,10 @@ namespace MultipleControls
         //<snippet11>
         private void InitializeControlsAndData()
         {
-            // Initialize the controls and set location, size and 
+            // Initialize the controls and set location, size and
             // other basic properties.
             this.dataGridView1 = new DataGridView();
-            
+
             this.textBox1 = new TextBox();
             this.textBox2 = new TextBox();
             this.dataGridView1.ColumnHeadersHeightSizeMode =

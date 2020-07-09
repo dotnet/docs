@@ -15,4 +15,4 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
 ## See also
 
 - [My.Computer.Info](xref:Microsoft.VisualBasic.Devices.ComputerInfo)
-- [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Try...Catch...Finally Statement](../language-reference/statements/try-catch-finally-statement.md)

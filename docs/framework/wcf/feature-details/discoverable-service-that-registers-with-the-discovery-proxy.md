@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eb275bc1-535b-44c8-b9f3-0b75e9aa473b
 ---
 # How to: Implement a Discoverable Service that Registers with the Discovery Proxy
-This topic is the second of four topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md), you implemented a discovery proxy. In this topic, you create a WCF service that sends announcement messages (`Hello` and `Bye`) to the discovery proxy, causing it to register and unregister itself with the discovery proxy.
+This topic is the second of four topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md), you implemented a discovery proxy. In this topic, you create a WCF service that sends announcement messages (`Hello` and `Bye`) to the discovery proxy, causing it to register and unregister itself with the discovery proxy.
 
 ### To define the service contract
 
@@ -150,7 +150,7 @@ This topic is the second of four topics that discusses how to implement a discov
     }
     ```
 
-You have completed implementing a discoverable service. Continue on to [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md).
+You have completed implementing a discoverable service. Continue on to [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md).
 
 ## Example
  This is the full listing of the code used in this topic.
@@ -285,6 +285,6 @@ namespace Microsoft.Samples.Discovery
 
 ## See also
 
-- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)
-- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
-- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
+- [WCF Discovery](wcf-discovery.md)
+- [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md)
+- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md)

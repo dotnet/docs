@@ -32,22 +32,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.SuspendLayout();
-            // 
+            //
             // label1
-            // 
+            //
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
+            //
             // elementHost1
-            // 
+            //
             this.elementHost1.BackColorTransparent = false;
             this.elementHost1.Child = null;
             resources.ApplyResources(this.elementHost1, "elementHost1");
             this.elementHost1.Name = "elementHost1";
             this.elementHost1.TabStop = false;
-            // 
+            //
             // Form1
-            // 
+            //
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.elementHost1);

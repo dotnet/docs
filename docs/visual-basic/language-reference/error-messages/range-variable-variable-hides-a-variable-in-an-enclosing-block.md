@@ -19,8 +19,8 @@ A range variable name specified in a `Select`, `From`, `Aggregate`, or `Let` cla
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
-- [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)
-- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [From Clause](../queries/from-clause.md)
+- [Let Clause](../queries/let-clause.md)
+- [Aggregate Clause](../queries/aggregate-clause.md)
+- [Select Clause](../queries/select-clause.md)

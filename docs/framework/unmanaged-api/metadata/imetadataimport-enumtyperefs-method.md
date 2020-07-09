@@ -23,9 +23,9 @@ Enumerates TypeRef tokens defined in the current metadata scope.
   
 ```cpp  
 HRESULT EnumTypeRefs (  
-   [in, out] HCORENUM    *phEnum,   
+   [in, out] HCORENUM    *phEnum,
    [out] mdTypeRef       rTypeRefs[],  
-   [in]  ULONG           cMax,   
+   [in]  ULONG           cMax,
    [out] ULONG           *pcTypeRefs  
 );  
 ```  
@@ -54,7 +54,7 @@ HRESULT EnumTypeRefs (
  A TypeRef token represents a reference to a type.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -64,5 +64,5 @@ HRESULT EnumTypeRefs (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

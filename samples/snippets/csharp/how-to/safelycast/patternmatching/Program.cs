@@ -20,36 +20,46 @@ namespace patternmatching
     {
         static void Main(string[] args)
         {
-            Giraffe g = new Giraffe();
+            var g = new Giraffe();
+            var a = new Animal();
             FeedMammals(g);
-
-            TestForMammals(g);
+            FeedMammals(a);
+            // Output:
+            // Eating.
+            // Animal is not a Mammal
 
             SuperNova sn = new SuperNova();
+            TestForMammals(g);
             TestForMammals(sn);
+            // Output:
+            // I am an animal.
+            // SuperNova is not a Mammal
         }
 
         static void FeedMammals(Animal a)
         {
-            // Use the is operator to verify the type
-            // before performing a cast.
             if (a is Mammal m)
             {
                 m.Eat();
+            }
+            else
+            {
+                // variable 'm' is not in scope here, and can't be used.
+                Console.WriteLine($"{a.GetType().Name} is not a Mammal");
             }
         }
 
         static void TestForMammals(object o)
         {
-            // Alternatively, use the as operator and test for null
+            // You also can use the as operator and test for null
             // before referencing the variable.
-            if (o is Mammal m)
+            var m = o as Mammal;
+            if (m != null)
             {
                 Console.WriteLine(m.ToString());
             }
             else
             {
-                // variable 'm' is not in scope here, and can't be used.
                 Console.WriteLine($"{o.GetType().Name} is not a Mammal");
             }
         }

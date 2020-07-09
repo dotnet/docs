@@ -47,6 +47,6 @@ You retrieve a variable's value by including the variable name in an expression.
 
 ## See also
 
-- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
-- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Variables](index.md)
+- [Variable Declaration](variable-declaration.md)
+- [Object Variables](object-variables.md)

@@ -26,7 +26,7 @@ public class SystemDrawingMiscLegacyTopics
         Rectangle rect = new Rectangle(0, 0, 50, 50);
         // <snippet12>
         e.Graphics.ScaleTransform(1.75f, 0.5f);
-        e.Graphics.DrawRectangle(pen, rect); 
+        e.Graphics.DrawRectangle(pen, rect);
         // </snippet12>
     }
     private void Method13(PaintEventArgs e)
@@ -105,7 +105,7 @@ public class SystemDrawingMiscLegacyTopics
         Region region1 = new Region(new Rectangle(50, 0, 50, 150));
         Region region2 = new Region(new Rectangle(0, 50, 150, 50));
 
-        // Create a plus-shaped region by forming the union of region1 and 
+        // Create a plus-shaped region by forming the union of region1 and
         // region2.
         // The union replaces region1.
         region1.Union(region2);
@@ -133,7 +133,7 @@ public class SystemDrawingMiscLegacyTopics
         // Create a path that consists of a single polygon.
         Point[] polyPoints = {
    new Point(10, 10),
-   new Point(150, 10), 
+   new Point(150, 10),
    new Point(100, 75),
    new Point(100, 150)};
         GraphicsPath path = new GraphicsPath();

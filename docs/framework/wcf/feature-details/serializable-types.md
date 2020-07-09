@@ -38,4 +38,4 @@ By default, the <xref:System.Runtime.Serialization.DataContractSerializer> seria
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Xml.Serialization.XmlSerializer>
-- [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
+- [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md)

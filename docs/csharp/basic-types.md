@@ -8,7 +8,7 @@ ms.assetid: 95c686ba-ae4f-440e-8e94-0dbd6e04d11f
 
 # Types, variables, and values
 
-C# is a strongly-typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method signature specifies a type for each input parameter and for the return value. The .NET Framework class library defines a set of built-in numeric types as well as more complex types that represent a wide variety of logical constructs, such as the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library as well as user-defined types that model the concepts that are specific to the program's problem domain.  
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method signature specifies a type for each input parameter and for the return value. The .NET Framework class library defines a set of built-in numeric types as well as more complex types that represent a wide variety of logical constructs, such as the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library as well as user-defined types that model the concepts that are specific to the program's problem domain.  
   
 The information stored in a type can include the following:  
   
@@ -53,7 +53,7 @@ C# provides a standard set of built-in numeric types to represent integers, floa
   
 ## Custom types
 
-You use the [struct](language-reference/keywords/class.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md), and [enum](language-reference/builtin-types/enum.md) constructs to create your own custom types. The .NET Framework class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
+You use the [struct](language-reference/builtin-types/struct.md), [class](language-reference/keywords/class.md), [interface](language-reference/keywords/interface.md), and [enum](language-reference/builtin-types/enum.md) constructs to create your own custom types. The .NET Framework class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
   
 ## Generic types
 
@@ -61,7 +61,7 @@ A type can be declared with one or more *type parameters* that serve as a placeh
   
 [!code-csharp[Generic types](../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)]
   
-The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](language-reference/builtin-types/reference-types.md#the-object-type). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](programming-guide/generics/index.md).
+The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](language-reference/builtin-types/reference-types.md#the-object-type). Generic collection classes are called *strongly typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](programming-guide/generics/index.md).
 
 ## Implicit types, anonymous types, and tuple types
 
@@ -69,7 +69,7 @@ As stated previously, you can implicitly type a local variable (but not class me
   
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous types](programming-guide/classes-and-structs/anonymous-types.md).
 
-It's common to want to return more than one value from a method. You can create *tuple types* that return multiple values in a single method call. For more information, see [Tuples](tuples.md).
+It's common to want to return more than one value from a method. You can create *tuple types* that return multiple values in a single method call. For more information, see [Tuple types](language-reference/builtin-types/value-tuples.md).
 
 ## The Common type system
 

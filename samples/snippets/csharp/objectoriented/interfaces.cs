@@ -22,11 +22,11 @@ namespace objectoriented
         // Implementation of IEquatable<T> interface
         public bool Equals(Car car)
         {
-            return (this.Make, this.Model, this.Year) == 
+            return (this.Make, this.Model, this.Year) ==
                 (car.Make, car.Model, car.Year);
         }
     }
     //</SnippetImplementEquatable>
-    
+
 
 }

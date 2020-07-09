@@ -7,14 +7,14 @@ public abstract class Publication
 {
    private bool published = false;
    private DateTime datePublished;
-   private int totalPages; 
+   private int totalPages;
 
    public Publication(string title, string publisher, PublicationType type)
    {
       if (String.IsNullOrWhiteSpace(publisher))
          throw new ArgumentException("The publisher is required.");
       Publisher = publisher;
-  
+
       if (String.IsNullOrWhiteSpace(title))
          throw new ArgumentException("The title is required.");
       Title = title;
@@ -29,17 +29,17 @@ public abstract class Publication
    public PublicationType Type { get; }
 
    public string CopyrightName { get; private set; }
-   
+
    public int CopyrightDate { get; private set; }
 
    public int Pages
    {
      get { return totalPages; }
-     set 
+     set
      {
          if (value <= 0)
             throw new ArgumentOutOfRangeException("The number of pages cannot be zero or negative.");
-         totalPages = value;   
+         totalPages = value;
      }
    }
 
@@ -48,9 +48,9 @@ public abstract class Publication
       if (!published)
          return "NYP";
       else
-         return datePublished.ToString("d");   
+         return datePublished.ToString("d");
    }
-   
+
    public void Publish(DateTime datePublished)
    {
       published = true;
@@ -62,11 +62,11 @@ public abstract class Publication
       if (String.IsNullOrWhiteSpace(copyrightName))
          throw new ArgumentException("The name of the copyright holder is required.");
       CopyrightName = copyrightName;
-      
+
       int currentYear = DateTime.Now.Year;
       if (copyrightDate < currentYear - 10 || copyrightDate > currentYear + 2)
          throw new ArgumentOutOfRangeException($"The copyright year must be between {currentYear - 10} and {currentYear + 1}");
-      CopyrightDate = copyrightDate;      
+      CopyrightDate = copyrightDate;
    }
 
    public override string ToString() => Title;
@@ -80,14 +80,14 @@ using System;
 
 public sealed class Book : Publication
 {
-   public Book(string title, string author, string publisher) : 
+   public Book(string title, string author, string publisher) :
           this(title, String.Empty, author, publisher)
    { }
 
    public Book(string title, string isbn, string author, string publisher) : base(title, publisher, PublicationType.Book)
    {
       // isbn argument must be a 10- or 13-character numeric string without "-" characters.
-      // We could also determine whether the ISBN is valid by comparing its checksum digit 
+      // We could also determine whether the ISBN is valid by comparing its checksum digit
       // with a computed checksum.
       //
       if (! String.IsNullOrEmpty(isbn)) {
@@ -97,16 +97,16 @@ public sealed class Book : Publication
         ulong nISBN = 0;
         if (! UInt64.TryParse(isbn, out nISBN))
             throw new ArgumentException("The ISBN can consist of numeric characters only.");
-      } 
+      }
       ISBN = isbn;
 
       Author = author;
    }
-     
+
    public string ISBN { get; }
 
    public string Author { get; }
-   
+
    public Decimal Price { get; private set; }
 
    // A three-digit ISO currency symbol.
@@ -119,12 +119,12 @@ public sealed class Book : Publication
           throw new ArgumentOutOfRangeException("The price cannot be negative.");
        Decimal oldValue = Price;
        Price = price;
-       
+
        if (currency.Length != 3)
           throw new ArgumentException("The ISO currency symbol is a 3-character string.");
        Currency = currency;
 
-       return oldValue;      
+       return oldValue;
    }
 
    public override bool Equals(object obj)
@@ -133,12 +133,12 @@ public sealed class Book : Publication
       if (book == null)
          return false;
       else
-         return ISBN == book.ISBN;   
+         return ISBN == book.ISBN;
    }
 
    public override int GetHashCode() => ISBN.GetHashCode();
 
-   public override string ToString() => $"{(String.IsNullOrEmpty(Author) ? "" : Author + ", ")}{Title}"; 
+   public override string ToString() => $"{(String.IsNullOrEmpty(Author) ? "" : Author + ", ")}{Title}";
 }
 // </Snippet2>
 }

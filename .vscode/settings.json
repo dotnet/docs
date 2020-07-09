@@ -1,14 +1,17 @@
 {
+    "markdown.docsetName": "dotnet",
+    "markdown.docsetRootFolderName": "docs",
     "markdown.docsetLanguages": [
         ".NET Core CLI",
-        "ASPX",
         "ASP.NET (C#)",
+        "ASPX",
         "Azure CLI",
         "Bash",
-        "C++",
         "C#",
+        "C++",
         "Dockerfile",
         "F#",
+        "HashiCorp Configuration Language (HCL)",
         "HTML",
         "Ini",
         "JavaScript",
@@ -19,10 +22,10 @@
         "Protocol Buffers",
         "Razor CSHTML",
         "SQL",
-        "Terraform (HCL)",
         "VB.NET",
         "XAML",
         "XML",
         "YAML"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

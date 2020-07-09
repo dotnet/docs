@@ -1,4 +1,4 @@
-﻿// <snippet1> 
+﻿// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks.Dataflow;
 
 // Demonstrates how to create a basic dataflow pipeline.
-// This program downloads the book "The Iliad of Homer" by Homer from the Web 
+// This program downloads the book "The Iliad of Homer" by Homer from the Web
 // and finds all reversed words that appear in that book.
 static class DataflowReversedWords
 {
@@ -15,14 +15,14 @@ static class DataflowReversedWords
       // <snippet3>
       //
       // Create the members of the pipeline.
-      // 
+      //
 
       // Downloads the requested resource as a string.
       var downloadString = new TransformBlock<string, string>(async uri =>
       {
          Console.WriteLine("Downloading '{0}'...", uri);
 
-         return await new HttpClient().GetStringAsync(uri);
+         return await new HttpClient(new HttpClientHandler{ AutomaticDecompression = System.Net.DecompressionMethods.GZip }).GetStringAsync(uri);
       });
 
       // Separates the specified text into an array of words.
@@ -30,7 +30,7 @@ static class DataflowReversedWords
       {
          Console.WriteLine("Creating word list...");
 
-         // Remove common punctuation by replacing all non-letter characters 
+         // Remove common punctuation by replacing all non-letter characters
          // with a space character.
          char[] tokens = text.Select(c => char.IsLetter(c) ? c : ' ').ToArray();
          text = new string(tokens);
@@ -50,7 +50,7 @@ static class DataflowReversedWords
             .ToArray();
       });
 
-      // Finds all words in the specified collection whose reverse also 
+      // Finds all words in the specified collection whose reverse also
       // exists in the collection.
       var findReversedWords = new TransformManyBlock<string[], string>(words =>
       {
@@ -64,7 +64,7 @@ static class DataflowReversedWords
                 select word;
       });
 
-      // Prints the provided reversed words to the console.    
+      // Prints the provided reversed words to the console.
       var printReversedWords = new ActionBlock<string>(reversedWord =>
       {
          Console.WriteLine("Found reversed words {0}/{1}",
@@ -131,10 +131,10 @@ static class DataflowReversedWords
    Found reversed words room/moor
    Found reversed words ward/draw
 */
-// </snippet1> 
+// </snippet1>
 
 /*
-// <snippet2> 
+// <snippet2>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -142,7 +142,7 @@ using System.Net.Http;
 using System.Threading.Tasks.Dataflow;
 
 // Demonstrates how to create a basic dataflow pipeline.
-// This program downloads the book "The Iliad of Homer" by Homer from the Web 
+// This program downloads the book "The Iliad of Homer" by Homer from the Web
 // and finds all reversed words that appear in that book.
 static class Program
 {
@@ -150,5 +150,5 @@ static class Program
    {
    }
 }
-// </snippet2> 
+// </snippet2>
 */

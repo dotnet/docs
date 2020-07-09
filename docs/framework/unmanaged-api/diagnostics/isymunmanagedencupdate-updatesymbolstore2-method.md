@@ -33,7 +33,7 @@ HRESULT UpdateSymbolStore2(
  [in] A pointer to an [IStream](/windows/desktop/api/objidl/nn-objidl-istream) that contains the line information.  
   
  `pDeltaLines`  
- [in] A pointer to a [SYMLINEDELTA](../../../../docs/framework/unmanaged-api/diagnostics/symlinedelta-structure.md) structure that contains the lines that have changed.  
+ [in] A pointer to a [SYMLINEDELTA](symlinedelta-structure.md) structure that contains the lines that have changed.  
   
  `cDeltaLines`  
  [in] A `ULONG` that represents the number of lines that have changed.  
@@ -46,4 +46,4 @@ HRESULT UpdateSymbolStore2(
   
 ## See also
 
-- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [ISymUnmanagedENCUpdate Interface](isymunmanagedencupdate-interface.md)

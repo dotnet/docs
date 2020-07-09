@@ -24,14 +24,14 @@ Makes a logical copy of an enumerator, retaining its current position in an enum
 
 ```cpp
 HRESULT CloneEnumWbemClassObject (
-   [out] IEnumWbemClassObject**  ppEnum, 
+   [out] IEnumWbemClassObject**  ppEnum,
    [in] DWORD                    authLevel,
    [in] DWORD                    impLevel,
-   [in] IEnumWbemClassObject*    pCurrentEnumWbemClassObject, 
+   [in] IEnumWbemClassObject*    pCurrentEnumWbemClassObject,
    [in] BSTR                     strUser,
    [in] BSTR                     strPassword,
-   [in BSTR]                     strAuthority 
-); 
+   [in BSTR]                     strAuthority
+);
 ```
 
 ## Parameters
@@ -54,7 +54,7 @@ HRESULT CloneEnumWbemClassObject (
 `strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`\ 
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value

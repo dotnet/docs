@@ -1,5 +1,6 @@
 ---
 title: "callbackOnCollectedDelegate MDA"
+description: Review the callbackOnCollectedDelegate managed debugging assistant (MDA) in .NET, which is invoked if a callback occurs after the delegate is garbage collected.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -90,7 +91,7 @@ public class Entry
     }  
   
     public static void Target()  
-    {          
+    {
     }  
   
     [DllImport("Library", CallingConvention = CallingConvention.StdCall)]  

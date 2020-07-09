@@ -13,7 +13,7 @@ public class Example
       Task taskA = Task.Run( () => Console.WriteLine("Hello from taskA."));
 
       // Output a message from the calling thread.
-      Console.WriteLine("Hello from thread '{0}'.", 
+      Console.WriteLine("Hello from thread '{0}'.",
                           Thread.CurrentThread.Name);
       taskA.Wait();
    }

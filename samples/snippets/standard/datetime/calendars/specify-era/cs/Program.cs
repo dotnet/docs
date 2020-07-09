@@ -8,13 +8,13 @@ public class Example
         var japaneseCal = new JapaneseCalendar();
         var jaJp = new CultureInfo("ja-JP");
         jaJp.DateTimeFormat.Calendar = japaneseCal;
-  
+
         // We can get the era index by calling DateTimeFormatInfo.GetEraName.
         int eraIndex = 0;
 
-        for (int ctr = 0; ctr < jaJp.DateTimeFormat.Calendar.Eras.Length; ctr++) 
+        for (int ctr = 0; ctr < jaJp.DateTimeFormat.Calendar.Eras.Length; ctr++)
            if (jaJp.DateTimeFormat.GetEraName(ctr) == "明治")
-              eraIndex = ctr; 
+              eraIndex = ctr;
         var date1 = japaneseCal.ToDateTime(23, 9, 8, 0, 0, 0, 0, eraIndex);
         Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
 

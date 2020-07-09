@@ -95,4 +95,4 @@ This topic describes security issues associated with LINQ to XML. In addition, i
   
 ## See also
 
-- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+- [Programming Guide (LINQ to XML) (Visual Basic)](programming-guide-linq-to-xml.md)

@@ -15,10 +15,10 @@ namespace HOWTONavigationSnippets
             //<SnippetNavigateToPageSrcCODE>
             // Navigate to URI using the Source property
             //<SnippetNavigateAndCancelCODE1>
-            this.Source = new Uri("HomePage.xaml", UriKind.Relative);           
+            this.Source = new Uri("HomePage.xaml", UriKind.Relative);
             //</SnippetNavigateAndCancelCODE1>
             //</SnippetNavigateToPageSrcCODE>
-            
+
             //<SnippetNavigateToPageNavCODE>
             // Navigate to URI using the Navigate method
             this.Navigate(new Uri("HomePage.xaml", UriKind.Relative));
@@ -28,7 +28,7 @@ namespace HOWTONavigationSnippets
             // Navigate to object using the Navigate method
             this.Navigate(new HomePage());
             //</SnippetNavigateToPageObjCODE>
-            //</SnippetNavigateToPageCODE>        
+            //</SnippetNavigateToPageCODE>
 
             Button navigateRefreshButton = new Button();
             navigateRefreshButton.Click += navigateRefreshButton_Click;

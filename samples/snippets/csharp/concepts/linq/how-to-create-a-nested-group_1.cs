@@ -8,8 +8,8 @@
                      group student by student.LastName)
                 group newGroup2 by newGroup1.Key;
 
-            // Three nested foreach loops are required to iterate 
-            // over all elements of a grouped group. Hover the mouse 
+            // Three nested foreach loops are required to iterate
+            // over all elements of a grouped group. Hover the mouse
             // cursor over the iteration variables to see their actual type.
             foreach (var outerGroup in queryNestedGroups)
             {
@@ -53,5 +53,5 @@
                 Names that begin with: O'Donnell
                         O'Donnell Claire
                 Names that begin with: Zabokritski
-                        Zabokritski Eugene        
+                        Zabokritski Eugene
          */

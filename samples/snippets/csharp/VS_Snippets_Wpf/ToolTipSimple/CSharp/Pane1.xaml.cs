@@ -17,7 +17,7 @@ namespace ToolTipSimple_wcp
 	{
                 Button button;
                 ToolTip tt;
-                
+
 		void OnClick(object sender, RoutedEventArgs e)
 		{
                         //<Snippet2>

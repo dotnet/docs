@@ -1,30 +1,38 @@
 ﻿//<snippet02>
 using System;
 using System.Collections.Concurrent;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 
 class ProgramWithCancellation
 {
-
     static int inputs = 2000;
 
     static void Main()
     {
         // The token source for issuing the cancelation request.
-        CancellationTokenSource cts = new CancellationTokenSource();
+        var cts = new CancellationTokenSource();
 
         // A blocking collection that can hold no more than 100 items at a time.
-        BlockingCollection<int> numberCollection = new BlockingCollection<int>(100);
+        var numberCollection = new BlockingCollection<int>(100);
 
-        // Set console buffer to hold our prodigious output.
-        Console.SetBufferSize(80, 2000);
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            int width = Math.Max(Console.BufferWidth, 80);
+            int height = Math.Max(Console.BufferHeight, 8000);
+
+            // Preserve all the display output for Adds and Takes
+            Console.SetBufferSize(width, height);
+        }
 
         // The simplest UI thread ever invented.
         Task.Run(() =>
         {
             if (Console.ReadKey(true).KeyChar == 'c')
+            {
                 cts.Cancel();
+            }
         });
 
         // Start one producer and one consumer.

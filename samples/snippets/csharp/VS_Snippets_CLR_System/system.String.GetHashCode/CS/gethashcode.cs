@@ -1,9 +1,9 @@
 ﻿// <Snippet1>
 using System;
 
-class GetHashCode 
+class GetHashCode
 {
-    public static void Main() 
+    public static void Main()
     {
         DisplayHashCode( "" );
         DisplayHashCode( "a" );

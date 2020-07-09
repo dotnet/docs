@@ -31,7 +31,7 @@ namespace WpfBrowserApplication1
             // the HostScript object will be null.
             var scriptObject = BrowserInteropHelper.HostScript;
 
-            // Call close to close the browser window. 
+            // Call close to close the browser window.
             scriptObject.Close();
         }
         //</snippet10>

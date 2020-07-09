@@ -11,7 +11,7 @@ class Program
       var input = ReadLine();
       if (!IsNullOrEmpty(input) && double.TryParse(input, out var radius)) {
          var c = new Circle(radius);
-         
+
          string s = "\nInformation about the circle:\n";
          s = s + Format("   Radius: {0:N2}\n", c.Radius);
          s = s + Format("   Diameter: {0:N2}\n", c.Diameter);
@@ -41,7 +41,7 @@ public class Circle
 
    public double Circumference
    {
-      get { return 2 * Radius * PI; }      
+      get { return 2 * Radius * PI; }
    }
 
    public double Area
@@ -51,7 +51,7 @@ public class Circle
 }
 // The example displays the following output:
 //       Enter a circle's radius: 12.45
-//       
+//
 //       Information about the circle:
 //          Radius: 12.45
 //          Diameter: 24.90

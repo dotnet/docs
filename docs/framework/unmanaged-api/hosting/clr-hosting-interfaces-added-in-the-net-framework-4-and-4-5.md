@@ -19,39 +19,39 @@ This section describes interfaces that unmanaged hosts can use to integrate the 
 - There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## In This Section  
- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
+ [ICLRAppDomainResourceMonitor Interface](iclrappdomainresourcemonitor-interface.md)  
  Provides methods that inspect an application domain's memory and CPU usage.  
   
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)  
+ [ICLRDomainManager Interface](iclrdomainmanager-interface.md)  
  Enables the host to specify the application domain manager that will be used to initialize the default application domain, and to specify initialization properties.  
   
- [ICLRGCManager2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-interface.md)  
- Provides the [SetGCStartupLimitsEx](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-setgcstartuplimitsex-method.md) method, which enables a host to set the size of the garbage collection segment and the maximum size of the garbage collection system's generation 0 to values greater than `DWORD`.  
+ [ICLRGCManager2 Interface](iclrgcmanager2-interface.md)  
+ Provides the [SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md) method, which enables a host to set the size of the garbage collection segment and the maximum size of the garbage collection system's generation 0 to values greater than `DWORD`.  
   
- [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)  
+ [ICLRMetaHost Interface](iclrmetahost-interface.md)  
  Provides methods that return a specific version of the CLR, list all installed CLRs, list all in-process runtimes, return the activation interface, and discover the CLR version used to compile an assembly.  
   
- [ICLRMetaHostPolicy Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md)  
- Provides the [GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method that provides a CLR interface based on policy criteria, managed assembly, version, and configuration file.  
+ [ICLRMetaHostPolicy Interface](iclrmetahostpolicy-interface.md)  
+ Provides the [GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) method that provides a CLR interface based on policy criteria, managed assembly, version, and configuration file.  
   
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
+ [ICLRRuntimeInfo Interface](iclrruntimeinfo-interface.md)  
  Provides methods that return information about a specific runtime, including version, directory, and load status.  
   
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)  
- Provides basic global static functions for signing assemblies with strong names. All the [ICLRStrongName](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md) methods return standard COM HRESULTs.  
+ [ICLRStrongName Interface](iclrstrongname-interface.md)  
+ Provides basic global static functions for signing assemblies with strong names. All the [ICLRStrongName](iclrstrongname-interface.md) methods return standard COM HRESULTs.  
   
- [ICLRStrongName2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname2-interface.md)  
+ [ICLRStrongName2 Interface](iclrstrongname2-interface.md)  
  Provides the ability to create strong names using the SHA-2 group of Secure Hash Algorithms (SHA-256, SHA-384, and SHA-512).  
   
- [ICLRTask2 Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask2-interface.md)  
- Provides all the functionality of the [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md); in addition, provides methods that allow thread aborts to be delayed on the current thread.  
+ [ICLRTask2 Interface](iclrtask2-interface.md)  
+ Provides all the functionality of the [ICLRTask Interface](iclrtask-interface.md); in addition, provides methods that allow thread aborts to be delayed on the current thread.  
   
 ## Related Sections  
- [Deprecated CLR Hosting Interfaces and Coclasses](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-interfaces-and-coclasses.md)  
+ [Deprecated CLR Hosting Interfaces and Coclasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Describes the hosting interfaces provided with the .NET Framework versions 1.0 and 1.1.  
   
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
+ [CLR Hosting Interfaces](clr-hosting-interfaces.md)  
  Describes the hosting interfaces provided with the .NET Framework versions 2.0, 3.0, and 3.5.  
   
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
+ [Hosting](index.md)  
  Introduces hosting in the .NET Framework.

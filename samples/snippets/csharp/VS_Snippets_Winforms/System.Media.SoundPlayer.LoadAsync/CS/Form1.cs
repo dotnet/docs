@@ -84,18 +84,18 @@ namespace SoundPlayerLoadAsyncExample
         {
             this.playSoundButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
+            //
             // playSoundButton
-            // 
+            //
             this.playSoundButton.Location = new System.Drawing.Point(106, 112);
             this.playSoundButton.Name = "playSoundButton";
             this.playSoundButton.Size = new System.Drawing.Size(75, 23);
             this.playSoundButton.TabIndex = 0;
             this.playSoundButton.Text = "Play Sound";
             this.playSoundButton.Click += new System.EventHandler(this.playSoundButton_Click);
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);

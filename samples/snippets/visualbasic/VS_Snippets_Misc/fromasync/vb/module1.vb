@@ -99,7 +99,7 @@ Module Module1
 
                 Next
             Finally
-               cts.Dispose()
+                cts.Dispose()
             End Try
 
             If (Not results Is Nothing) Then
@@ -172,8 +172,8 @@ Module Module1
                 Dim words() As String = args.Result.Split(" "c)
                 Dim NAME As String = nameToSearch.ToUpper()
                 Dim nameCount = (From word In words.AsParallel()
-                                Where word.ToUpper().Contains(NAME)
-                                Select word).Count()
+                                 Where word.ToUpper().Contains(NAME)
+                                 Select word).Count()
 
                 ' Associate the results with the url, and add new string to the array that 
                 ' the underlying Task object will return in its Result property.
@@ -250,7 +250,7 @@ Module Module1
         Const MAX_FILE_SIZE As Integer = 14000000
         Shared Function GetFileStringAsync(ByVal path As String) As Task(Of String)
             Dim fi As New FileInfo(path)
-            Dim data(fi.Length) As Byte
+            Dim data(fi.Length - 1) As Byte
 
             Dim fs As FileStream = New FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, True)
 
@@ -304,7 +304,7 @@ Module Module1
         '<snippet05>
         Public Function GetFileStringAsync2(ByVal path As String) As Task(Of String)
             Dim fi = New FileInfo(path)
-            Dim data(fi.Length) As Byte
+            Dim data(fi.Length - 1) As Byte
             Dim state As New MyCustomState()
 
             Dim fs As New FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, True)
@@ -338,7 +338,7 @@ Module Module1
         '<snippet06>
         Public Function GetMultiFileData(ByVal filesToRead As String()) As Task(Of String)
             Dim fs As FileStream
-            Dim tasks(filesToRead.Length) As Task(Of String)
+            Dim tasks(filesToRead.Length - 1) As Task(Of String)
             Dim fileData() As Byte = Nothing
             For i As Integer = 0 To filesToRead.Length
                 fileData(&H1000) = New Byte()

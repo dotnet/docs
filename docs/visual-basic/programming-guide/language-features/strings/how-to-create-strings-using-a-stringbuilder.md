@@ -22,4 +22,4 @@ The following example creates an instance of the <xref:System.Text.StringBuilder
 - [&= Operator](../../../language-reference/operators/and-assignment-operator.md)
 - [Strings](index.md)
 - [Creating New Strings](../../../../standard/base-types/creating-new.md)
-- [Manipulating Strings](../../../../standard/base-types/manipulating-strings.md)
+- [Manipulating Strings](../../../../standard/base-types/best-practices-strings.md)

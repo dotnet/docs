@@ -433,13 +433,13 @@ This section describes the unmanaged interfaces that handle the debugging of a p
 
  [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)\
  Provides methods for querying information about a method definition.
- 
+
  [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)\
  Provides methods for querying information about a method instance.
- 
+
  [IXCLRDataModule Interface](ixclrdatamodule-interface.md)\
  Provides methods for querying information about a loaded module.
- 
+
  [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)\
  Provides methods for querying information about a process.
   

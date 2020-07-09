@@ -19,7 +19,7 @@ Specifies modules used to authenticate network requests.
 ## Syntax  
   
 ```xml  
-<authenticationModules>   
+<authenticationModules>
 </authenticationModules>  
 ```  
   

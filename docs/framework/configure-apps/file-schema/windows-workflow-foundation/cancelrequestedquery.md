@@ -24,7 +24,7 @@ Represents a query that is used to track requests to cancel a child activity by 
   <trackingProfile name="Name">
     <workflow>
       <cancelRequestQueries>
-        <cancelRequestQuery activityName="String" 
+        <cancelRequestQuery activityName="String"
                             childActivityName="String"/>
       </cancelRequestQueries>
     </workflow>

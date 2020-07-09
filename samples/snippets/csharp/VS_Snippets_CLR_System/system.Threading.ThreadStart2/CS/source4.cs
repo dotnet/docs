@@ -18,18 +18,18 @@ public class ThreadWithState
 
     // The constructor obtains the state information and the
     // callback delegate.
-    public ThreadWithState(string text, int number, 
-        ExampleCallback callbackDelegate) 
+    public ThreadWithState(string text, int number,
+        ExampleCallback callbackDelegate)
     {
         boilerplate = text;
         numberValue = number;
         callback = callbackDelegate;
     }
-    
+
     // The thread procedure performs the task, such as
     // formatting and printing a document, and then invokes
     // the callback delegate with the number of lines printed.
-    public void ThreadProc() 
+    public void ThreadProc()
     {
         Console.WriteLine(boilerplate, numberValue);
         if (callback != null)
@@ -43,9 +43,9 @@ public delegate void ExampleCallback(int lineCount);
 
 // Entry point for the example.
 //
-public class Example 
+public class Example
 {
-    public static void Main() 
+    public static void Main()
     {
         // Supply the state information required by the task.
         ThreadWithState tws = new ThreadWithState(
@@ -59,13 +59,13 @@ public class Example
         Console.WriteLine("Main thread does some work, then waits.");
         t.Join();
         Console.WriteLine(
-            "Independent task has completed; main thread ends."); 
+            "Independent task has completed; main thread ends.");
     }
 
     // The callback method must match the signature of the
     // callback delegate.
     //
-    public static void ResultCallback(int lineCount) 
+    public static void ResultCallback(int lineCount)
     {
         Console.WriteLine(
             "Independent task printed {0} lines.", lineCount);

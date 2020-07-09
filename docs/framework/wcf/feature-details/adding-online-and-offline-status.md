@@ -13,4 +13,4 @@ In many cases, it is important for an application to monitor specific details ab
   
 ## See also
 
-- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Building a Peer Channel Application](building-a-peer-channel-application.md)

@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("CustomStoreFunction")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("CustomStoreFunction")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2009")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("CustomStoreFunction")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("CustomStoreFunction")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2009")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("628ca6ca-da7b-4200-883d-ac106d5f7d32")> 
+<Assembly: Guid("628ca6ca-da7b-4200-883d-ac106d5f7d32")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +30,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

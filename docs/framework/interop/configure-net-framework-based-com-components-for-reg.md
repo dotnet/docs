@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
+description: Configure .NET-based COM components for registration-free activation. The setup requires a Win32-style application manifest and a .NET component manifest.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "components [.NET Framework], manifest"
@@ -18,7 +19,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
  This topic describes how to associate an application manifest with an application; associate a component manifest with a component; and embed a component manifest in an assembly.  
   
-### To create an application manifest  
+## Create an application manifest  
   
 1. Using an XML editor, create (or modify) the application manifest owned by the COM application that is interoperating with one or more managed components.  
   
@@ -26,7 +27,8 @@ Registration-free activation for .NET Framework-based components is only slightl
   
     ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
-    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
+    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    </assembly>
     ```  
   
      For information about manifest elements and their attributes, see [Application Manifests](/windows/desktop/SbsCs/application-manifests).  
@@ -36,11 +38,12 @@ Registration-free activation for .NET Framework-based components is only slightl
     ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
-      <assemblyIdentity type="win32"   
-                        name="myOrganization.myDivision.myComApp"   
-                        version="1.0.0.0"   
-                        processorArchitecture="msil"   
-      />  
+      <assemblyIdentity type="win32"
+                        name="myOrganization.myDivision.myComApp"
+                        version="1.0.0.0"
+                        processorArchitecture="msil"
+      />
+    </assembly>  
     ```  
   
 4. Identify dependent assemblies. In the following example, `myComApp` depends on `myManagedComp`.  
@@ -48,18 +51,18 @@ Registration-free activation for .NET Framework-based components is only slightl
     ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
-      <assemblyIdentity type="win32"   
-                        name="myOrganization.myDivision.myComApp"   
-                        version="1.0.0.0"   
-                        processorArchitecture="x86"   
+      <assemblyIdentity type="win32"
+                        name="myOrganization.myDivision.myComApp"
+                        version="1.0.0.0"
+                        processorArchitecture="x86"
                         publicKeyToken="8275b28176rcbbef"  
       />  
       <dependency>  
         <dependentAssembly>  
-          <assemblyIdentity type="win32"   
-                        name="myOrganization.myDivision.myManagedComp"   
-                        version="6.0.0.0"   
-                        processorArchitecture="X86"   
+          <assemblyIdentity type="win32"
+                        name="myOrganization.myDivision.myManagedComp"
+                        version="6.0.0.0"
+                        processorArchitecture="X86"
                         publicKeyToken="8275b28176rcbbef"  
           />  
         </dependentAssembly>  
@@ -69,9 +72,9 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 5. Save and name the manifest file. The name of an application manifest is the name of the assembly executable followed by the .manifest extension. For example, the application manifest file name for myComApp.exe is myComApp.exe.manifest.  
   
- You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
+You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
   
-#### To create a component manifest  
+## Create a component manifest  
   
 1. Using an XML editor, create a component manifest to describe the managed assembly.  
   
@@ -79,7 +82,8 @@ Registration-free activation for .NET Framework-based components is only slightl
   
     ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
-    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
+    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    </assembly>
     ```  
   
 3. Identify the owner of the file. The `<assemblyIdentity>` element of the `<dependentAssembly>` element in application manifest file must match the one in the component manifest. In the following example, `myManagedComp` version 1.2.3.4 owns the manifest file.  
@@ -92,7 +96,8 @@ Registration-free activation for .NET Framework-based components is only slightl
                         version="1.2.3.4"  
                         publicKeyToken="8275b28176rcbbef"  
                         processorArchitecture="msil"  
-           />  
+           />
+    </assembly>
     ```  
   
 4. Identify each class in the assembly. Use the `<clrClass>` element to uniquely identify each class in the managed assembly. The element, which is a subelement of the `<assembly>` element, has the attributes described in the following table.  
@@ -116,7 +121,7 @@ Registration-free activation for .NET Framework-based components is only slightl
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
            <assemblyIdentity  
                         name="myOrganization.myDivision.myManagedComp"  
-                        version="1.2.3.4"   
+                        version="1.2.3.4"
                         publicKeyToken="8275b28176rcbbef"  
            />  
            <clrClass  

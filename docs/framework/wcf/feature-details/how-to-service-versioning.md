@@ -84,7 +84,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
            messages that do not contain the custom header-->  
        <filter name="XPathFilterNoHeader" filterType="XPath"  
                filterData="count(sm:header()/custom:CalcVer)=0"/>  
-    </filters  
+    </filters>
     ```  
   
     > [!NOTE]
@@ -263,7 +263,7 @@ namespace Microsoft.Samples.AdvancedFilters
                     //if they wanted to create the header, go ahead and add it to the outgoing message  
                     if (header != null && (header=="1" || header=="2"))  
                     {  
-                        //create a new header "RoundingCalculator", no specific namespace, and set the value to   
+                        //create a new header "RoundingCalculator", no specific namespace, and set the value to
                         //the value of header.  
                         //the Routing Service will look for this header in order to determine if the message  
                         //should be routed to the RoundingCalculator  
@@ -320,4 +320,4 @@ namespace Microsoft.Samples.AdvancedFilters
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

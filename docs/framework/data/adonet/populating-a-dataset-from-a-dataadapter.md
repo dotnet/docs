@@ -1,5 +1,6 @@
 ---
 title: "Populating a DataSet from a DataAdapter"
+description: Learn how to populate a DataSet from a DataAdapter in ADO.NET, which provides a consistent relational programming model independent of the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -38,7 +39,7 @@ adapter.Fill(customers, "Customers")
   
 ```csharp  
 // Assumes that connection is a valid SqlConnection object.  
-string queryString =   
+string queryString =
   "SELECT CustomerID, CompanyName FROM dbo.Customers";  
 SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);  
   
@@ -73,7 +74,7 @@ ordAdapter.Fill(customerOrders, "Orders")
   
 Dim relation As DataRelation = _  
   customerOrders.Relations.Add("CustOrders", _  
-  customerOrders.Tables("Customers").Columns("CustomerID"), _   
+  customerOrders.Tables("Customers").Columns("CustomerID"), _
   customerOrders.Tables("Orders").Columns("CustomerID"))  
   
 Dim pRow, cRow As DataRow  

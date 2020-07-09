@@ -5,7 +5,7 @@ ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
 ---
 # How to query an assembly's metadata with Reflection (LINQ) (C#)
 
-The .NET Framework class library reflection APIs can be used to examine the metadata in a .NET assembly and create collections of types, type members, parameters, and so on that are in that assembly. Because these collections support the generic <xref:System.Collections.Generic.IEnumerable%601> interface, they can be queried by using LINQ.  
+The .NET reflection APIs can be used to examine the metadata in a .NET assembly and create collections of types, type members, parameters, and so on that are in that assembly. Because these collections support the generic <xref:System.Collections.Generic.IEnumerable%601> interface, they can be queried by using LINQ.  
   
 The following example shows how LINQ can be used with reflection to retrieve specific metadata about methods that match a specified search criterion. In this case, the query will find the names of all the methods in the assembly that return enumerable types such as arrays.  
   
@@ -24,7 +24,7 @@ class ReflectionHowTO
         var pubTypesQuery = from type in assembly.GetTypes()  
                     where type.IsPublic  
                         from method in type.GetMethods()  
-                        where method.ReturnType.IsArray == true 
+                        where method.ReturnType.IsArray == true
                             || ( method.ReturnType.GetInterface(  
                                 typeof(System.Collections.Generic.IEnumerable<>).FullName ) != null  
                             && method.ReturnType.FullName != "System.String" )  

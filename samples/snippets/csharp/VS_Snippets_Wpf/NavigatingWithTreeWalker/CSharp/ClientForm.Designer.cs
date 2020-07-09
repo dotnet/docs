@@ -32,9 +32,9 @@
             this.btnStartAutomation = new System.Windows.Forms.Button();
             this.tbStructure = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
+            //
             // label11
-            // 
+            //
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(13, 47);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -43,9 +43,9 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "After you have started, click the tab control tabs to see how the structure chang" +
                 "es.";
-            // 
+            //
             // btnStartAutomation
-            // 
+            //
             this.btnStartAutomation.Location = new System.Drawing.Point(12, 13);
             this.btnStartAutomation.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartAutomation.Name = "btnStartAutomation";
@@ -53,18 +53,18 @@
             this.btnStartAutomation.TabIndex = 11;
             this.btnStartAutomation.Text = "Start Automation";
             this.btnStartAutomation.Click += new System.EventHandler(this.btnStartAutomation_Click);
-            // 
+            //
             // tbStructure
-            // 
+            //
             this.tbStructure.Location = new System.Drawing.Point(12, 79);
             this.tbStructure.Multiline = true;
             this.tbStructure.Name = "tbStructure";
             this.tbStructure.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbStructure.Size = new System.Drawing.Size(572, 485);
             this.tbStructure.TabIndex = 12;
-            // 
+            //
             // NavigationWithTreeWalker
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 576);

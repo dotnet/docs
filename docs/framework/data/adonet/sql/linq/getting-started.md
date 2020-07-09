@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+description: With this sample code, get started using LINQ to SQL to use the LINQ technology to access SQL databases just as you would access an in-memory collection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

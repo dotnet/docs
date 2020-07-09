@@ -14,7 +14,7 @@ static void RunService()
 
     CustomBinding binding = new CustomBinding(bindingElements);
 
-    //Step2: Use the binding to build the channel listener.         
+    //Step2: Use the binding to build the channel listener.
     IChannelListener<IReplyChannel> listener =
           binding.BuildChannelListener<IReplyChannel>(
              new Uri("http://localhost:8080/channelapp"),
@@ -40,8 +40,8 @@ static void RunService()
     Console.WriteLine("Message content: {0}",data);
     //Send a reply.
     Message replymessage=Message.CreateMessage(
-        binding.MessageVersion, 
-        "http://contoso.com/someotheraction", 
+        binding.MessageVersion,
+        "http://contoso.com/someotheraction",
          data);
     request.Reply(replymessage);
     //Step5: Closing objects.

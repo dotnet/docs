@@ -32,7 +32,7 @@ HRESULT GetToken (
  [out] A pointer to an `mdTypeDef` token that references the definition of this class.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -42,4 +42,4 @@ HRESULT GetToken (
   
 ## See also
 
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../metadata/metadata-interfaces.md)

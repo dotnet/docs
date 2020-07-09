@@ -38,13 +38,13 @@ The default value of a structure data type consists of the combination of the de
 
 ## Declaration Format
 
-A structure declaration starts with the [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md) and ends with the `End Structure` statement. The `Structure` statement supplies the name of the structure, which is also the identifier of the data type the structure is defining. Other parts of the code can use this identifier to declare variables, parameters, and function return values to be of this structure's data type.
+A structure declaration starts with the [Structure Statement](../statements/structure-statement.md) and ends with the `End Structure` statement. The `Structure` statement supplies the name of the structure, which is also the identifier of the data type the structure is defining. Other parts of the code can use this identifier to declare variables, parameters, and function return values to be of this structure's data type.
 
 The declarations between the `Structure` and `End Structure` statements define the members of the structure.
 
 ## Member Access Levels
 
-You must declare every member using a [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md) or a statement that specifies access level, such as [Public](../../../visual-basic/language-reference/modifiers/public.md), [Friend](../../../visual-basic/language-reference/modifiers/friend.md), or [Private](../../../visual-basic/language-reference/modifiers/private.md). If you use a `Dim` statement, the access level defaults to public.
+You must declare every member using a [Dim Statement](../statements/dim-statement.md) or a statement that specifies access level, such as [Public](../modifiers/public.md), [Friend](../modifiers/friend.md), or [Private](../modifiers/private.md). If you use a `Dim` statement, the access level defaults to public.
 
 ## Programming Tips
 
@@ -52,7 +52,7 @@ You must declare every member using a [Dim Statement](../../../visual-basic/lang
 
 - **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, keep in mind that user-defined types in other environments are not compatible with Visual Basic structure types.
 
-- **Widening.** There is no automatic conversion to or from any structure data type. You can define conversion operators on your structure using the [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md), and you can declare each conversion operator to be `Widening` or `Narrowing`.
+- **Widening.** There is no automatic conversion to or from any structure data type. You can define conversion operators on your structure using the [Operator Statement](../statements/operator-statement.md), and you can declare each conversion operator to be `Widening` or `Narrowing`.
 
 - **Type Characters.** Structure data types have no literal type character or identifier type character.
 
@@ -74,11 +74,11 @@ End Structure
 
 - <xref:System.ValueType>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
-- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)
-- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
-- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Data Types](index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Structure Statement](../statements/structure-statement.md)
+- [Widening](../modifiers/widening.md)
+- [Narrowing](../modifiers/narrowing.md)
+- [Structures](../../programming-guide/language-features/data-types/structures.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

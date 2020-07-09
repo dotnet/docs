@@ -16,7 +16,7 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
 ### To dispose of a database connection when your code is finished with it  
   
-1. Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
+1. Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
   
 2. Create a `Using` block with the `Using` and `End Using` statements. Inside the block, put the code that deals with the database connection.  
   
@@ -41,9 +41,9 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
 ## See also
 
 - <xref:System.Data.SqlClient.SqlConnection>
-- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
-- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
-- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
-- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
-- [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)
+- [Control Flow](index.md)
+- [Decision Structures](decision-structures.md)
+- [Loop Structures](loop-structures.md)
+- [Other Control Structures](other-control-structures.md)
+- [Nested Control Structures](nested-control-structures.md)
+- [Using Statement](../../../language-reference/statements/using-statement.md)

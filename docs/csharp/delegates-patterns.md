@@ -82,7 +82,7 @@ that writes messages to the console.
 
 The static class above is the simplest thing that can work. We need to
 write the single implementation for the method that writes messages
-to the console: 
+to the console:
 
 [!code-csharp[LogToConsole](../../samples/snippets/csharp/delegates-and-events/LoggingMethods.cs#LogToConsole "A Console logger.")]
 
@@ -117,7 +117,7 @@ your log class creates more structured messages:
 [!code-csharp[NextLogger](../../samples/snippets/csharp/delegates-and-events/Logger.cs#LoggerTwo "Refine the Logger")]
 
 Next, let's make use of that `Severity` argument to filter the messages
-that are sent to the log's output. 
+that are sent to the log's output.
 
 [!code-csharp[FinalLogger](../../samples/snippets/csharp/delegates-and-events/Logger.cs#LoggerFinal "Finish the Logger")]
 

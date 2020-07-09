@@ -8,7 +8,7 @@ using System.Security.Permissions;
    SecurityAction.RequestMinimum, Execution = true)]
 namespace ProxySample
 {
-    
+
     public class Test
     {
         static void Main()
@@ -21,7 +21,7 @@ namespace ProxySample
 
         private void ClientCode()
         {
-            //<snippet1>             
+            //<snippet1>
             CalculatorClient client = new CalculatorClient("CalculatorEndpoint");
             client.ClientCredentials.Windows.AllowedImpersonationLevel =
                 System.Security.Principal.TokenImpersonationLevel.Impersonation;

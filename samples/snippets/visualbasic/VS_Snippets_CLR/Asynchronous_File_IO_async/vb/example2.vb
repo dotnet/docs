@@ -22,7 +22,7 @@ Class MainWindow
             Await Destination.WriteAsync(buffer, 0, numRead)
             numRead = Await Source.ReadAsync(buffer, 0, buffer.Length)
         Loop
-        
+
     End Function
     ' </snippet2>
 End Class

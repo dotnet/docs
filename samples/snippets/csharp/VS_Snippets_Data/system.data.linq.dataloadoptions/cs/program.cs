@@ -11,12 +11,12 @@ namespace cs_gettingstartedexpers
     {
         static void Main(string[] args)
         {
-            // <Snippet1>  
+            // <Snippet1>
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
             DataLoadOptions dlo = new DataLoadOptions();
             dlo.AssociateWith<Customer>(c => c.Orders.Where(p => p.ShippedDate != DateTime.Today));
             db.LoadOptions = dlo;
-            var custOrderQuery = 
+            var custOrderQuery =
                 from cust in db.Customers
                 where cust.City == "London"
                 select cust;
@@ -27,7 +27,7 @@ namespace cs_gettingstartedexpers
                 foreach (Order ord in custObj.Orders)
                 {
                     Console.WriteLine("\t {0}",ord.OrderDate);
-                } 
+                }
             }
             // </Snippet1>
 

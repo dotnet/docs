@@ -15,7 +15,7 @@ ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
   
  The <xref:System.Windows.Automation.ValuePattern> control pattern is used to support controls that have an intrinsic value not spanning a range and that can be represented as a string. This string can be editable, depending on the control and its settings. For examples of controls that implement this pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Value control pattern, note the following guidelines and conventions:  
   
@@ -37,7 +37,7 @@ Example of Color Swatch String Mapping
   
 - A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before allowing a call to <xref:System.Windows.Automation.Provider.IValueProvider.SetValue%2A>.  
   
-<a name="Required_Members_for_the_IValueProvider_Interface"></a>   
+<a name="Required_Members_for_the_IValueProvider_Interface"></a>
 ## Required Members for IValueProvider  
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IValueProvider>.  
   
@@ -47,7 +47,7 @@ Example of Color Swatch String Mapping
 |<xref:System.Windows.Automation.ValuePattern.ValueProperty>|Property|None|  
 |<xref:System.Windows.Automation.ValuePattern.SetValue%2A>|Method|None|  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

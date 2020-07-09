@@ -13,7 +13,7 @@ namespace SDKSample
             // Create a Button that will have two transforms applied to it.
             Button myButton = new Button();
             myButton.Content = "Click";
-            
+
             // Set the center point of the transforms.
             myButton.RenderTransformOrigin = new Point(0.5,0.5);
 

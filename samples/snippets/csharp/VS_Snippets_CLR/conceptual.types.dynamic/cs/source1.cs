@@ -35,16 +35,16 @@ namespace Custom_Binder
             MySimpleClass myInstance = new MySimpleClass();
             MyCustomBinder myCustomBinder = new MyCustomBinder();
 
-            // Get the method information for the particular overload 
+            // Get the method information for the particular overload
             // being sought.
-            MethodInfo myMethod = myType.GetMethod("MyMethod", 
+            MethodInfo myMethod = myType.GetMethod("MyMethod",
                 BindingFlags.Public | BindingFlags.Instance,
-                myCustomBinder, new Type[] {typeof(string), 
+                myCustomBinder, new Type[] {typeof(string),
                 typeof(int)}, null);
             Console.WriteLine(myMethod.ToString());
-            
+
             // Invoke the overload.
-            myType.InvokeMember("MyMethod", BindingFlags.InvokeMethod, 
+            myType.InvokeMember("MyMethod", BindingFlags.InvokeMethod,
                 myCustomBinder, myInstance,
                 new Object[] {"Testing...", (int)32});
         }
@@ -85,7 +85,7 @@ namespace Custom_Binder
             return null;
         }
 
-        public override FieldInfo BindToField(BindingFlags bindingAttr, 
+        public override FieldInfo BindToField(BindingFlags bindingAttr,
             FieldInfo[] match, object value, CultureInfo culture)
         {
             if (match == null)

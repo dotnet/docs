@@ -66,4 +66,4 @@ For custom types that are used as array elements, the class must also support th
 ## See also
 
 - [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)

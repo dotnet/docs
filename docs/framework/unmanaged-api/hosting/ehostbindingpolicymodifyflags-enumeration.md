@@ -39,10 +39,10 @@ typedef enum _hostBindingPolicyModifyFlags {
 |`HOST_BINDING_POLICY_MODIFY_REMOVE`|Specifies that the CLR will replace policy values of the target assembly with those of the source assembly.|  
   
 ## Remarks  
- The [ICLRHostBindingPolicyManager::ModifyApplicationPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md) method takes a parameter of type `EHostBindingPolicyModifyFlags`.  
+ The [ICLRHostBindingPolicyManager::ModifyApplicationPolicy](iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md) method takes a parameter of type `EHostBindingPolicyModifyFlags`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -52,5 +52,5 @@ typedef enum _hostBindingPolicyModifyFlags {
   
 ## See also
 
-- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

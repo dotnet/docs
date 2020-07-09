@@ -23,7 +23,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
   
     private void RegisterRoutes(RouteCollection routes)  
     {  
-        routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service)));   
+        routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service)));
    }  
 </script>  
 ```  
@@ -43,7 +43,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
     </system.webServer>  
 ```  
   
- This loads a module and handler required for routing. For more information, see [Routing](../../../../docs/framework/wcf/feature-details/routing.md). You must also set the `aspNetCompatibilityEnabled` attribute to `true` in the `<serviceHostingEnvironment>` element as shown in the following example.  
+ This loads a module and handler required for routing. For more information, see [Routing](routing.md). You must also set the `aspNetCompatibilityEnabled` attribute to `true` in the `<serviceHostingEnvironment>` element as shown in the following example.  
   
 ```xml  
 <system.serviceModel>  
@@ -54,7 +54,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
   
  The class that implements the service must enable ASP.NET compatibility requirements as shown in the following example.  
   
-```csharp 
+```csharp
 [ServiceContract]  
 [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Allowed)]  
     public class Service  
@@ -65,5 +65,5 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
   
 ## See also
 
-- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)
 - [ASP.NET Routing](https://docs.microsoft.com/previous-versions/aspnet/cc668201(v=vs.100))

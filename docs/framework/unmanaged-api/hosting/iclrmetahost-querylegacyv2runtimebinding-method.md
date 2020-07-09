@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::QueryLegacyV2RuntimeBinding Method
-Returns an interface that represents a runtime to which legacy activation policy has been bound, for example, by using the `useLegacyV2RuntimeActivationPolicy` attribute on the [\<startup> element](../../../../docs/framework/configure-apps/file-schema/startup/startup-element.md) configuration file entry, by direct use of the legacy activation APIs, or by calling the [ICLRRuntimeInfo::BindAsLegacyV2Runtime](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-bindaslegacyv2runtime-method.md) method.  
+Returns an interface that represents a runtime to which legacy activation policy has been bound, for example, by using the `useLegacyV2RuntimeActivationPolicy` attribute on the [\<startup> element](../../configure-apps/file-schema/startup/startup-element.md) configuration file entry, by direct use of the legacy activation APIs, or by calling the [ICLRRuntimeInfo::BindAsLegacyV2Runtime](iclrruntimeinfo-bindaslegacyv2runtime-method.md) method.  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ HRESULT QueryLegacyV2RuntimeBinding (
  [in] Required.Currently the only valid value for this parameter is `IID_ICLRRuntimeInfo`.  
   
  `ppUnk`  
- [out] Required. When this method returns, contains a pointer to the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface that represents a runtime that has been bound to legacy activation policy.  
+ [out] Required. When this method returns, contains a pointer to the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface that represents a runtime that has been bound to legacy activation policy.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
@@ -46,7 +46,7 @@ HRESULT QueryLegacyV2RuntimeBinding (
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -56,5 +56,5 @@ HRESULT QueryLegacyV2RuntimeBinding (
   
 ## See also
 
-- [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRMetaHost Interface](iclrmetahost-interface.md)
+- [Hosting](index.md)

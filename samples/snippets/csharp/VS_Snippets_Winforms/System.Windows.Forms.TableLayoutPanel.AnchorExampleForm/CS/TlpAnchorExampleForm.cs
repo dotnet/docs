@@ -61,9 +61,9 @@ public class Form1 : Form
 		this.tableLayoutPanel2.SuspendLayout();
 		this.tableLayoutPanel3.SuspendLayout();
 		this.SuspendLayout();
-		// 
+		//
 		// tableLayoutPanel1
-		// 
+		//
 		this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 					| System.Windows.Forms.AnchorStyles.Left)
 					| System.Windows.Forms.AnchorStyles.Right)));
@@ -85,9 +85,9 @@ public class Form1 : Form
 		this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 		this.tableLayoutPanel1.Size = new System.Drawing.Size(731, 100);
 		this.tableLayoutPanel1.TabIndex = 0;
-		// 
+		//
 		// button1
-		// 
+		//
 		this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
 		this.button1.AutoSize = true;
 		this.button1.Location = new System.Drawing.Point(34, 38);
@@ -95,27 +95,27 @@ public class Form1 : Form
 		this.button1.Size = new System.Drawing.Size(79, 23);
 		this.button1.TabIndex = 0;
 		this.button1.Text = "Anchor=None";
-		// 
+		//
 		// button2
-		// 
+		//
 		this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
 		this.button2.AutoSize = true;
 		this.button2.Location = new System.Drawing.Point(150, 38);
 		this.button2.Name = "button2";
 		this.button2.TabIndex = 1;
 		this.button2.Text = "Anchor=Left";
-		// 
+		//
 		// button3
-		// 
+		//
 		this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 		this.button3.AutoSize = true;
 		this.button3.Location = new System.Drawing.Point(328, 4);
 		this.button3.Name = "button3";
 		this.button3.TabIndex = 2;
 		this.button3.Text = "Anchor=Top";
-		// 
+		//
 		// button4
-		// 
+		//
 		this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
 		this.button4.AutoSize = true;
 		this.button4.Location = new System.Drawing.Point(503, 38);
@@ -123,9 +123,9 @@ public class Form1 : Form
 		this.button4.Size = new System.Drawing.Size(78, 23);
 		this.button4.TabIndex = 3;
 		this.button4.Text = "Anchor=Right";
-		// 
+		//
 		// button5
-		// 
+		//
 		this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 		this.button5.AutoSize = true;
 		this.button5.Location = new System.Drawing.Point(614, 73);
@@ -133,9 +133,9 @@ public class Form1 : Form
 		this.button5.Size = new System.Drawing.Size(86, 23);
 		this.button5.TabIndex = 4;
 		this.button5.Text = "Anchor=Bottom";
-		// 
+		//
 		// tableLayoutPanel2
-		// 
+		//
 		this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 					| System.Windows.Forms.AnchorStyles.Left)
 					| System.Windows.Forms.AnchorStyles.Right)));
@@ -155,26 +155,26 @@ public class Form1 : Form
 		this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 		this.tableLayoutPanel2.Size = new System.Drawing.Size(731, 100);
 		this.tableLayoutPanel2.TabIndex = 1;
-		// 
+		//
 		// button6
-		// 
+		//
 		this.button6.AutoSize = true;
 		this.button6.Location = new System.Drawing.Point(4, 4);
 		this.button6.Name = "button6";
 		this.button6.TabIndex = 0;
 		this.button6.Text = "Top, Left";
-		// 
+		//
 		// button7
-		// 
+		//
 		this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 		this.button7.AutoSize = true;
 		this.button7.Location = new System.Drawing.Point(286, 4);
 		this.button7.Name = "button7";
 		this.button7.TabIndex = 1;
 		this.button7.Text = "Top, Right";
-		// 
+		//
 		// button8
-		// 
+		//
 		this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 		this.button8.AutoSize = true;
 		this.button8.Location = new System.Drawing.Point(466, 73);
@@ -182,18 +182,18 @@ public class Form1 : Form
 		this.button8.Size = new System.Drawing.Size(77, 23);
 		this.button8.TabIndex = 2;
 		this.button8.Text = "Bottom, Right";
-		// 
+		//
 		// button9
-		// 
+		//
 		this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 		this.button9.AutoSize = true;
 		this.button9.Location = new System.Drawing.Point(550, 73);
 		this.button9.Name = "button9";
 		this.button9.TabIndex = 3;
 		this.button9.Text = "Bottom, Left";
-		// 
+		//
 		// tableLayoutPanel3
-		// 
+		//
 		this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 					| System.Windows.Forms.AnchorStyles.Left)
 					| System.Windows.Forms.AnchorStyles.Right)));
@@ -211,27 +211,27 @@ public class Form1 : Form
 		this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 		this.tableLayoutPanel3.Size = new System.Drawing.Size(731, 100);
 		this.tableLayoutPanel3.TabIndex = 2;
-		// 
+		//
 		// button10
-		// 
+		//
 		this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
 		this.button10.Location = new System.Drawing.Point(4, 39);
 		this.button10.Name = "button10";
 		this.button10.Size = new System.Drawing.Size(236, 23);
 		this.button10.TabIndex = 0;
 		this.button10.Text = "Left, Right";
-		// 
+		//
 		// button11
-		// 
+		//
 		this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
 		this.button11.Location = new System.Drawing.Point(327, 4);
 		this.button11.Name = "button11";
 		this.button11.Size = new System.Drawing.Size(75, 93);
 		this.button11.TabIndex = 1;
 		this.button11.Text = "Top, Bottom";
-		// 
+		//
 		// button12
-		// 
+		//
 		this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 					| System.Windows.Forms.AnchorStyles.Left)
 					| System.Windows.Forms.AnchorStyles.Right)));
@@ -240,9 +240,9 @@ public class Form1 : Form
 		this.button12.Size = new System.Drawing.Size(237, 93);
 		this.button12.TabIndex = 2;
 		this.button12.Text = "Top, Bottom, Left, Right";
-		// 
+		//
 		// Form1
-		// 
+		//
 		this.AutoSize = true;
 		this.ClientSize = new System.Drawing.Size(755, 338);
 		this.Controls.Add(this.tableLayoutPanel3);

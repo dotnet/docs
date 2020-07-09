@@ -1,5 +1,6 @@
 ---
 title: "How to: Reference .NET Types from COM"
+description: Reference .NET types from COM. VB clients can view a .NET object in the object browser, but C++ clients must reference a TLB file with the \#import directive.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"

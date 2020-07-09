@@ -22,7 +22,7 @@ static Activity ScenarioOne()
             {  
                 Body = new Sequence  
                 {  
-                    Activities =   
+                    Activities =
                     {  
                         new WriteLine { Text = "    Begin TransactionScope" },  
   

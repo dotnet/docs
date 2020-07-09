@@ -13,7 +13,7 @@ namespace ConsoleApplication
 
             try
             {
-                Directory.Move(sourceDirectory, destinationDirectory);  
+                Directory.Move(sourceDirectory, destinationDirectory);
             }
             catch (Exception e)
             {

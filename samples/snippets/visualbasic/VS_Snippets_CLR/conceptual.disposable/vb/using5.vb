@@ -6,22 +6,22 @@ Imports System.Globalization
 Imports System.IO
 
 Module Example
-   Public Sub Main()
-      Dim sr As StreamReader = Nothing
-      Try 
-         sr = New StreamReader("file1.txt")
-         Dim contents As String = sr.ReadToEnd()
-         Console.WriteLine("The file has {0} text elements.", 
-                           New StringInfo(contents).LengthInTextElements)    
-      Catch e As FileNotFoundException
-         Console.WriteLine("The file cannot be found.")
-      Catch e As IOException
-         Console.WriteLine("An I/O error has occurred.")
-      Catch e As OutOfMemoryException
-         Console.WriteLine("There is insufficient memory to read the file.")   
-      Finally 
-         If sr IsNot Nothing Then sr.Dispose()     
-      End Try
-   End Sub
+    Sub Main()
+        Dim streamReader As StreamReader = Nothing
+        Try
+            streamReader = New StreamReader("file1.txt")
+            Dim contents As String = streamReader.ReadToEnd()
+            Dim info As StringInfo = New StringInfo(contents)
+            Console.WriteLine($"The file has {info.LengthInTextElements} text elements.")
+        Catch e As FileNotFoundException
+            Console.WriteLine("The file cannot be found.")
+        Catch e As IOException
+            Console.WriteLine("An I/O error has occurred.")
+        Catch e As OutOfMemoryException
+            Console.WriteLine("There is insufficient memory to read the file.")
+        Finally
+            If streamReader IsNot Nothing Then streamReader.Dispose()
+        End Try
+    End Sub
 End Module
 ' </Snippet6>

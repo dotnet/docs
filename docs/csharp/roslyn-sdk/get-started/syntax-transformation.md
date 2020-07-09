@@ -28,7 +28,7 @@ Start Visual Studio, and create a new C# **Stand-Alone Code Analysis Tool** proj
 
 This project uses the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> class methods to construct a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> representing the `System.Collections.Generic` namespace.
 
-Add the following using directive to the top of the `Program.cs` file to import the factory methods of the <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory> class and the methods of <xref:System.Console> so that you can use them later without qualifying them:
+Add the following using directive to the top of the `Program.cs`.
 
 [!code-csharp[import the SyntaxFactory class](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#StaticUsings "import the Syntax Factory class and the System.Console class")]
 
@@ -53,7 +53,7 @@ Run the code again, and see the results. You're building a tree of nodes that re
 
 [!code-csharp[create the full identifier](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#CreateFullNamespace "Build the System.Collections.Generic identifier")]
 
-Run the program again to see that you've build the tree for the code to add.
+Run the program again to see that you've built the tree for the code to add.
 
 ### Create a modified tree
 
@@ -168,10 +168,10 @@ Inside the `foreach` statement you created, add the following code to perform th
 
 You should see squiggles under the `File.WriteAllText` code. Select the light bulb, and add the necessary `using System.IO;` statement.
 
-You're almost done! There's once step left: creating a test <xref:Microsoft.CodeAnalysis.Compilation>. Since you haven't been using type inference at all during this quickstart, it would have made a perfect test case. Unfortunately, creating a Compilation from a C# project file is beyond the scope of this walkthrough. But fortunately, if you've been following instructions carefully, there's hope. Replace the contents of the `CreateTestCompilation` method with the following code. It creates a test compilation that coincidentally matches the project described in this quickstart:
+You're almost done! There's one step left: creating a test <xref:Microsoft.CodeAnalysis.Compilation>. Since you haven't been using type inference at all during this quickstart, it would have made a perfect test case. Unfortunately, creating a Compilation from a C# project file is beyond the scope of this walkthrough. But fortunately, if you've been following instructions carefully, there's hope. Replace the contents of the `CreateTestCompilation` method with the following code. It creates a test compilation that coincidentally matches the project described in this quickstart:
 
 [!code-csharp[CreateTestCompilation](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS/Program.cs#CreateTestCompilation "Create a test compilation using the code written for this quickstart.")]
 
 Cross your fingers and run the project. In Visual Studio, choose **Debug** > **Start Debugging**. You should be prompted by Visual Studio that the files in your project have changed. Click "**Yes to All**" to reload the modified files. Examine them to observe your awesomeness. Note how much cleaner the code looks without all those explicit and redundant type specifiers.
 
-Congratulations! You've used the **Compiler APIs** to write your own refactoring that searches all files in a C# project for certain syntactic patterns, analyzes the semantics of source code that matches those patterns, and transforms it. You're now officially refactoring author!
+Congratulations! You've used the **Compiler APIs** to write your own refactoring that searches all files in a C# project for certain syntactic patterns, analyzes the semantics of source code that matches those patterns, and transforms it. You're now officially a refactoring author!

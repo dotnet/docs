@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorGenericParamAttr Enumeration
-Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-definegenericparam-method.md).  
+Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](imetadataemit2-definegenericparam-method.md).  
   
 ## Syntax  
   
@@ -24,13 +24,13 @@ Contains values that describe the <xref:System.Type> parameters for generic type
 typedef enum CorGenericParamAttr {  
   
     gpVarianceMask                     =   0x0003,  
-    gpNonVariant                       =   0x0000,   
+    gpNonVariant                       =   0x0000,
     gpCovariant                        =   0x0001,  
     gpContravariant                    =   0x0002,  
   
     gpSpecialConstraintMask            =   0x001C,  
     gpNoSpecialConstraint              =   0x0000,  
-    gpReferenceTypeConstraint          =   0x0004,   
+    gpReferenceTypeConstraint          =   0x0004,
     gpNotNullableValueTypeConstraint   =   0x0008,  
     gpDefaultConstructorConstraint     =   0x0010  
   
@@ -52,7 +52,7 @@ typedef enum CorGenericParamAttr {
 |`gpDefaultConstructorConstraint`|Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -60,4 +60,4 @@ typedef enum CorGenericParamAttr {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

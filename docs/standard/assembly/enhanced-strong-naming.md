@@ -1,5 +1,6 @@
 ---
 title: "Enhanced strong naming"
+description: Conventional strong name signatures for assemblies in .NET Framework have limitations. Learn about enhanced strong naming. 
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies"

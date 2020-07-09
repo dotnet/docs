@@ -19,8 +19,8 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
  The following example shows a schema where **OrderDetail** is a child element of **Order**.  
   
 ```xml  
-<xs:schema id="MyDataSet" xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="MyDataSet" xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   
  <xs:element name="MyDataSet" msdata:IsDataSet="true">  
@@ -63,7 +63,7 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
     ConstraintName: Constraint1  
     Type: UniqueConstraint  
     Table: Order  
-    Columns: Order_Id   
+    Columns: Order_Id
     IsPrimaryKey: True  
     ```  
   
@@ -73,18 +73,18 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
     ConstraintName: Order_OrderDetail  
     Type: ForeignKeyConstraint  
     Table: OrderDetail  
-    Columns: Order_Id   
+    Columns: Order_Id
     RelatedTable: Order  
-    RelatedColumns: Order_Id   
+    RelatedColumns: Order_Id
     ```  
   
 - A relationship between the **Order** and **OrderDetail** tables. The **Nested** property for this relationship is set to **True** because the **Order** and **OrderDetail** elements are nested in the schema.  
   
     ```text  
     ParentTable: Order  
-    ParentColumns: Order_Id   
+    ParentColumns: Order_Id
     ChildTable: OrderDetail  
-    ChildColumns: Order_Id   
+    ChildColumns: Order_Id
     ParentKeyConstraint: Constraint1  
     ChildKeyConstraint: Order_OrderDetail  
     RelationName: Order_OrderDetail  

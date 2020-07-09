@@ -35,7 +35,7 @@ HRESULT GetSerializedBuffer (
  The `GetSerializedBuffer` method serializes the object so it can be marshaled to the client.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -45,4 +45,4 @@ HRESULT GetSerializedBuffer (
   
 ## See also
 
-- [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)
+- [IManagedObject Interface](imanagedobject-interface.md)

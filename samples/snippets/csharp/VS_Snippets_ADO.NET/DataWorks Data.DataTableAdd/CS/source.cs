@@ -11,7 +11,7 @@ namespace DataTableAddCS
 
             DataTable ordersTable = customerOrders.Tables.Add("Orders");
 
-            DataColumn pkOrderID = 
+            DataColumn pkOrderID =
                 ordersTable.Columns.Add("OrderID", typeof(Int32));
             ordersTable.Columns.Add("OrderQuantity", typeof(Int32));
             ordersTable.Columns.Add("CompanyName", typeof(string));

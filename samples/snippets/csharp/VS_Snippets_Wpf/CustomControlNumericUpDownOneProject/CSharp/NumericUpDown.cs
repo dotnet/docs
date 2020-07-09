@@ -50,7 +50,7 @@ namespace MyCustomControl
 
             return newValue;
         }
-        
+
         private static void OnValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
             NumericUpDown control = (NumericUpDown)obj;
@@ -105,15 +105,15 @@ namespace MyCustomControl
         private static void InitializeCommands()
         {
             _increaseCommand = new RoutedCommand("IncreaseCommand", typeof(NumericUpDown));
-            CommandManager.RegisterClassCommandBinding(typeof(NumericUpDown), 
+            CommandManager.RegisterClassCommandBinding(typeof(NumericUpDown),
                                     new CommandBinding(_increaseCommand, OnIncreaseCommand));
-            CommandManager.RegisterClassInputBinding(typeof(NumericUpDown), 
+            CommandManager.RegisterClassInputBinding(typeof(NumericUpDown),
                                     new InputBinding(_increaseCommand, new KeyGesture(Key.Up)));
 
             _decreaseCommand = new RoutedCommand("DecreaseCommand", typeof(NumericUpDown));
-            CommandManager.RegisterClassCommandBinding(typeof(NumericUpDown), 
+            CommandManager.RegisterClassCommandBinding(typeof(NumericUpDown),
                                     new CommandBinding(_decreaseCommand, OnDecreaseCommand));
-            CommandManager.RegisterClassInputBinding(typeof(NumericUpDown), 
+            CommandManager.RegisterClassInputBinding(typeof(NumericUpDown),
                                     new InputBinding(_decreaseCommand, new KeyGesture(Key.Down)));
         }
 

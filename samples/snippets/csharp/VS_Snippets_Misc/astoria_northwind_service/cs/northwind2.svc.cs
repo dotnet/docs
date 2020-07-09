@@ -47,7 +47,7 @@ namespace NorthwindDataService
                 string body = reader.ReadToEnd();
             }
 
-            //if (HttpContext.Current.Request.HttpMethod == "PUT" | 
+            //if (HttpContext.Current.Request.HttpMethod == "PUT" |
             //    HttpContext.Current.Request.HttpMethod == "MERGE")
             //{
             //    string path = HttpContext.Current.Request.Path;
@@ -66,7 +66,7 @@ namespace NorthwindDataService
 
             //     object entity;
             //     EntityKey ek = new EntityKey("NorthwindEntities.Order_Details", keyCol);
-                 
+
             //    this.CurrentDataSource.TryGetObjectByKey(ek, out entity);
 
             //    Order_Detail item = (Order_Detail)entity;
@@ -138,7 +138,7 @@ namespace NorthwindDataService
         //</snippetServiceOperation>
 
         [WebGet]
-        [SingleResult] 
+        [SingleResult]
         public Order GetNewestOrder()
         {
             // Get the ObjectContext that is the data source for the service.
@@ -192,7 +192,7 @@ namespace NorthwindDataService
         public Expression<Func<Order, bool>> OnQueryOrders()
         //</snippetQueryInterceptorDef>
         {
-            // Filter the returned orders to only orders 
+            // Filter the returned orders to only orders
             // that belong to a customer that is the current user.
             return o => o.Customer.ContactName ==
                 HttpContext.Current.User.Identity.Name;
@@ -214,7 +214,7 @@ namespace NorthwindDataService
                     .TryGetObjectStateEntry(product, out entry))
                 {
                     // Reject changes to a discontinued Product.
-                    // Because the update is already made to the entity by the time the 
+                    // Because the update is already made to the entity by the time the
                     // change interceptor in invoked, check the original value of the Discontinued
                     // property in the state entry and reject the change if 'true'.
                     if ((bool)entry.OriginalValues["Discontinued"])
@@ -273,7 +273,7 @@ namespace NorthwindDataService
             throw new DataServiceException(500, "My custom error message.");
         }
         //</snippetRaiseErrorOperation>
-        
+
         [WebInvoke(Method = "POST")]
         public IEnumerable<string> GetCustomerNamesPost()
         {
@@ -338,7 +338,7 @@ namespace NorthwindDataService
 public Customer CloneCustomer(string serializedCustomer)
 {
     NorthwindEntities context = this.CurrentDataSource;
-       
+
     XmlSerializer xmlSerializer =
         new System.Xml.Serialization.XmlSerializer(typeof(Customer));
 

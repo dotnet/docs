@@ -25,15 +25,15 @@ Imports System.Drawing
 Public Class FlashTrackBar  
    Inherits Control  
   
-   ' The event does not have any data, so EventHandler is adequate   
-   ' as the event delegate.          
+   ' The event does not have any data, so EventHandler is adequate
+   ' as the event delegate.
    ' Define the event member using the event keyword.  
-   ' In this case, for efficiency, the event is defined   
+   ' In this case, for efficiency, the event is defined
    ' using the event property construct.  
    Public Event ValueChanged As EventHandler  
-   ' The protected method that raises the ValueChanged   
-   ' event when the value has actually   
-   ' changed. Derived controls can override this method.    
+   ' The protected method that raises the ValueChanged
+   ' event when the value has actually
+   ' changed. Derived controls can override this method.
    Protected Overridable Sub OnValueChanged(e As EventArgs)  
       RaiseEvent ValueChanged(Me, e)  
    End Sub  
@@ -46,11 +46,11 @@ using System.Windows.Forms;
 using System.Drawing;  
   
 public class FlashTrackBar : Control {  
-   // The event does not have any data, so EventHandler is adequate   
+   // The event does not have any data, so EventHandler is adequate
    // as the event delegate.  
    private EventHandler onValueChanged;  
    // Define the event member using the event keyword.  
-   // In this case, for efficiency, the event is defined   
+   // In this case, for efficiency, the event is defined
    // using the event property construct.  
    public event EventHandler ValueChanged {  
             add {  
@@ -61,11 +61,11 @@ public class FlashTrackBar : Control {
             }  
         }  
    // The protected method that raises the ValueChanged  
-   // event when the value has actually   
-   // changed. Derived controls can override this method.    
-   protected virtual void OnValueChanged(EventArgs e) 
+   // event when the value has actually
+   // changed. Derived controls can override this method.
+   protected virtual void OnValueChanged(EventArgs e)
    {  
-       ValueChanged?.Invoke(this, e);  
+       onValueChanged?.Invoke(this, e);  
    }  
 }  
 ```  

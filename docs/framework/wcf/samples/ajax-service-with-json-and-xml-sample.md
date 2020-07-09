@@ -5,7 +5,7 @@ ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
 ---
 # AJAX Service with JSON and XML Sample
 
-This sample demonstrates how to use Windows Communication Foundation (WCF) to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data. You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md) sample.
+This sample demonstrates how to use Windows Communication Foundation (WCF) to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data. You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](basic-ajax-service.md) sample.
 
 Unlike the other AJAX samples, this sample does not use ASP.NET AJAX and the <xref:System.Web.UI.ScriptManager> control. With some additional configuration, WCF AJAX services can be accessed from any HTML page through JavaScript, and this scenario is shown here. For an example of using WCF with ASP.NET AJAX, see [AJAX Samples](ajax.md).
 
@@ -31,7 +31,7 @@ The following section in Web.config can be used to make additional configuration
 </system.serviceModel>
 ```
 
-The default data format for <xref:System.ServiceModel.Description.WebHttpEndpoint> is XML, while the default data format for <xref:System.ServiceModel.Description.WebScriptEndpoint> is JSON. For more information, see [Creating WCF AJAX Services without ASP.NET](../../../../docs/framework/wcf/feature-details/creating-wcf-ajax-services-without-aspnet.md).
+The default data format for <xref:System.ServiceModel.Description.WebHttpEndpoint> is XML, while the default data format for <xref:System.ServiceModel.Description.WebScriptEndpoint> is JSON. For more information, see [Creating WCF AJAX Services without ASP.NET](../feature-details/creating-wcf-ajax-services-without-aspnet.md).
 
 The service in the following sample is a standard WCF service with two operations. Both operations require the <xref:System.ServiceModel.Web.WebMessageBodyStyle.Wrapped> body style on the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes, which is specific to the `webHttp` behavior and has no bearing on the JSON/XML data format switch.
 
@@ -41,7 +41,7 @@ The service in the following sample is a standard WCF service with two operation
 MathResult DoMathXml(double n1, double n2);
 ```
 
-The response format for the operation is specified as XML, which is the default setting for the [\<webHttp>](../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md) behavior. However, it is good practice explicitly specify the response format.
+The response format for the operation is specified as XML, which is the default setting for the [\<webHttp>](../../configure-apps/file-schema/wcf/webhttp.md) behavior. However, it is good practice explicitly specify the response format.
 
 The other operation uses the `WebInvokeAttribute` attribute and explicitly specifies JSON instead of XML for the response.
 
@@ -53,7 +53,7 @@ MathResult DoMathJson(double n1, double n2);
 
 Note that in both cases the operations return a complex type, `MathResult`, which is a standard WCF data contract type.
 
-The client Web page XmlAjaxClientPage.htm contains JavaScript code that invokes one of the preceding two operations when the user clicks the **Perform calculation (return JSON)** or **Perform calculation (return XML)** buttons on the page. The code to invoke the service constructs a JSON body and sends it using HTTP POST. The request is created manually in JavaScript, unlike the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md) sample and the other samples using ASP.NET AJAX.
+The client Web page XmlAjaxClientPage.htm contains JavaScript code that invokes one of the preceding two operations when the user clicks the **Perform calculation (return JSON)** or **Perform calculation (return XML)** buttons on the page. The code to invoke the service constructs a JSON body and sends it using HTTP POST. The request is created manually in JavaScript, unlike the [Basic AJAX Service](basic-ajax-service.md) sample and the other samples using ASP.NET AJAX.
 
 ```csharp
 // Create HTTP request
@@ -98,12 +98,12 @@ xmlHttp.onreadystatechange=function(){
 
 #### To set up, build, and run the sample
 
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Build the solution XmlAjaxService.sln as described in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. Build the solution XmlAjaxService.sln as described in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. Navigate to `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` (do not open XmlAjaxClientPage.htm in the browser from the project directory).
 
 ## See also
 
-- [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)
+- [AJAX Service Using HTTP POST](ajax-service-using-http-post.md)

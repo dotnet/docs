@@ -1,5 +1,6 @@
 ---
 title: "Chaining Tasks by Using Continuation Tasks"
+description: Learn to chain task by using continuation tasks in .NET. A continuation task is an asynchronous task that's invoked by another task.
 ms.date: "02/11/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -69,7 +70,7 @@ In asynchronous programming, it is common for one asynchronous operation, on com
  [!code-csharp[TPL_Continuations#2](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/result1.cs#2)]
  [!code-vb[TPL_Continuations#2](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/result1.vb#2)]  
   
- If you want the continuation to run even if the antecedent did not run to successful completion, you must guard against the exception. One approach is to test the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of the antecedent, and only attempt to access the <xref:System.Threading.Tasks.Task%601.Result%2A> property if the status is not <xref:System.Threading.Tasks.TaskStatus.Faulted> or <xref:System.Threading.Tasks.TaskStatus.Canceled>. You can also examine the <xref:System.Threading.Tasks.Task.Exception%2A> property of the antecedent. For more information, see [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md). The following example modifies the previous example to access antecedent's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property only if its status is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>.  
+ If you want the continuation to run even if the antecedent did not run to successful completion, you must guard against the exception. One approach is to test the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=nameWithType> property of the antecedent, and only attempt to access the <xref:System.Threading.Tasks.Task%601.Result%2A> property if the status is not <xref:System.Threading.Tasks.TaskStatus.Faulted> or <xref:System.Threading.Tasks.TaskStatus.Canceled>. You can also examine the <xref:System.Threading.Tasks.Task.Exception%2A> property of the antecedent. For more information, see [Exception Handling](exception-handling-task-parallel-library.md). The following example modifies the previous example to access antecedent's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=nameWithType> property only if its status is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType>.  
   
  [!code-csharp[TPL_Continuations#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/result2.cs#7)]
  [!code-vb[TPL_Continuations#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/result2.vb#7)]  
@@ -108,12 +109,12 @@ In asynchronous programming, it is common for one asynchronous operation, on com
  [!code-csharp[TPL_Continuations#10](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/detached1.cs#10)]
  [!code-vb[TPL_Continuations#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/detached1.vb#10)]  
   
- The final status of the antecedent task depends on the final status of any attached child tasks. The status of detached child tasks does not affect the parent. For more information, see [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
+ The final status of the antecedent task depends on the final status of any attached child tasks. The status of detached child tasks does not affect the parent. For more information, see [Attached and Detached Child Tasks](attached-and-detached-child-tasks.md).  
   
 ## Associating State with Continuations  
  You can associate arbitrary state with a task continuation. The <xref:System.Threading.Tasks.Task.ContinueWith%2A> method provides overloaded versions that each take an <xref:System.Object> value that represents the state of the continuation. You can later access this state object by using the <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=nameWithType> property. This state object is `null` if you do not provide a value.  
   
- Continuation state is useful when you convert existing code that uses the [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) to use the TPL. In the APM, you typically provide object state in the **Begin**_Method_ method and later access that state by using the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType> property. By using the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method, you can preserve this state when you convert code that uses the APM to use the TPL.  
+ Continuation state is useful when you convert existing code that uses the [Asynchronous Programming Model (APM)](../asynchronous-programming-patterns/asynchronous-programming-model-apm.md) to use the TPL. In the APM, you typically provide object state in the **Begin**_Method_ method and later access that state by using the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=nameWithType> property. By using the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method, you can preserve this state when you convert code that uses the APM to use the TPL.  
   
  Continuation state can also be useful when you work with <xref:System.Threading.Tasks.Task> objects in the Visual Studio debugger. For example, in the **Parallel Tasks** window, the **Task** column displays the string representation of the state object for each task. For more information about the **Parallel Tasks** window, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window).  
   
@@ -140,10 +141,10 @@ In asynchronous programming, it is common for one asynchronous operation, on com
      [!code-csharp[TPL_Continuations#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/exception2.cs#11)]
      [!code-vb[TPL_Continuations#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/exception2.vb#11)]  
   
-     For more information, see [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
+     For more information, see [Exception Handling](exception-handling-task-parallel-library.md).  
   
-- If the continuation is an attached child task that was created by using the <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> option, its exceptions will be propagated by the parent back to the calling thread, as is the case in any other attached child. For more information, see [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md).  
+- If the continuation is an attached child task that was created by using the <xref:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent?displayProperty=nameWithType> option, its exceptions will be propagated by the parent back to the calling thread, as is the case in any other attached child. For more information, see [Attached and Detached Child Tasks](attached-and-detached-child-tasks.md).  
   
 ## See also
 
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)

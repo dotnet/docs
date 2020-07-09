@@ -13,7 +13,7 @@ You can use the `My.Settings.Save` method to persist changes to the user setting
   
  Typically, applications are designed to persist the changes to the user settings when the application shuts down. This is because saving the settings can take, depending on several factors, several seconds.  
   
- For more information, see [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md).  
+ For more information, see [My.Settings Object](../../../language-reference/objects/my-settings-object.md).  
   
 > [!NOTE]
 > Although you can change and save the values of user-scope settings at run time, application-scope settings are read-only and cannot be changed programmatically. You can change application-scope settings when creating the application, through the **Project Designer**, or by editing the application's configuration file. For more information, see [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
@@ -28,8 +28,8 @@ You can use the `My.Settings.Save` method to persist changes to the user setting
   
 ## See also
 
-- [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)
-- [How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)
-- [How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)
-- [How to: Create Property Grids for User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)
+- [My.Settings Object](../../../language-reference/objects/my-settings-object.md)
+- [How to: Read Application Settings in Visual Basic](how-to-read-application-settings.md)
+- [How to: Change User Settings in Visual Basic](how-to-change-user-settings.md)
+- [How to: Create Property Grids for User Settings in Visual Basic](how-to-create-property-grids-for-user-settings.md)
 - [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)

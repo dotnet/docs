@@ -3,11 +3,11 @@ title: Structured Streaming with .NET for Apache Spark tutorial
 description: In this tutorial, you learn how to use .NET for Apache Spark for Spark Structured Streaming.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 12/04/2019
+ms.date: 06/25/2020
 ms.topic: tutorial
 ---
 
-# Tutorial: Structured Streaming with .NET for Apache Spark 
+# Tutorial: Structured Streaming with .NET for Apache Spark
 
 This tutorial teaches you how to invoke Spark Structured Streaming using .NET for Apache Spark. Spark Structured Streaming is Apache Spark's support for processing real-time data streams. Stream processing means analyzing live data as it's being produced.
 
@@ -18,6 +18,8 @@ In this tutorial, you learn how to:
 > * Create and run a .NET for Apache Spark application
 > * Use netcat to create a data stream
 > * Use user-defined functions and SparkSQL to analyze streaming data
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 
@@ -42,7 +44,7 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 
 ## Establish and connect to a data stream
 
-One popular way to test stream processing is through **netcat**. netcat (also known as *nc*) allows you to read from and write to network connections. You establish a network connection with netcat through a terminal window. 
+One popular way to test stream processing is through **netcat**. netcat (also known as *nc*) allows you to read from and write to network connections. You establish a network connection with netcat through a terminal window.
 
 ### Create a data stream with netcat
 
@@ -103,14 +105,14 @@ DataFrame lines = spark
 
 You can use UDFs, *user-defined functions*, in Spark applications to perform calculations and analysis on your data.
 
-Add the following code to your `Main` method to register a UDF called `udfArray`. 
+Add the following code to your `Main` method to register a UDF called `udfArray`.
 
 ```csharp
 Func<Column, Column> udfArray =
     Udf<string, string[]>((str) => new string[] { str, $"{str} {str.Length}" });
 ```
 
-This UDF processes each string it receives from the netcat terminal to produce an array that includes the original string (contained in *str*), followed by the original string concatenated with the length of the original string. 
+This UDF processes each string it receives from the netcat terminal to produce an array that includes the original string (contained in *str*), followed by the original string concatenated with the length of the original string.
 
 For example, entering *Hello world* in the netcat terminal produces an array where:
 

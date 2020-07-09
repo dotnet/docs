@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::SetDefaultStartupFlags Method
-Sets the startup flags and the host configuration file that will be used to start the runtime. This method supersedes the use of the `startupFlags` parameter in the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md) functions.  
+Sets the startup flags and the host configuration file that will be used to start the runtime. This method supersedes the use of the `startupFlags` parameter in the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT SetDefaultStartupFlags(
   
 ## Parameters  
  `dwStartupFlags`  
- [in] The host startup flags to set. Use the same flags as with the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md) functions.  
+ [in] The host startup flags to set. Use the same flags as with the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
  `pwzHostConfigFile`  
  [in] The directory path of the host configuration file to set.  
@@ -45,7 +45,7 @@ HRESULT SetDefaultStartupFlags(
  A multithreaded host should synchronize calls to this method. Otherwise, thread A might call the `SetStartupFlags` method after thread B completes a call to `SetStartupFlags` and before thread B starts the runtime.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -55,6 +55,6 @@ HRESULT SetDefaultStartupFlags(
   
 ## See also
 
-- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRRuntimeInfo Interface](iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

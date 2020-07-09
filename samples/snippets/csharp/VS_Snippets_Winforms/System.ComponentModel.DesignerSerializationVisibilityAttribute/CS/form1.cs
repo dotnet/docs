@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 // </snippet2>
 
-// This sample demonstrates the use of the 
+// This sample demonstrates the use of the
 // DesignerSerializationVisibility attribute
 // to serialize a collection of strings
 // at design time.
@@ -20,26 +20,26 @@ namespace SerializationDemo
 
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
-        // The Windows Forms Designer emits code to this method. 
-        // If an instance of SerializationDemoControl is added 
+        // The Windows Forms Designer emits code to this method.
+        // If an instance of SerializationDemoControl is added
         // to the form, the Strings will be serialized here.
         private void InitializeComponent()
         {
             this.serializationDemoControl1 = new SerializationDemo.SerializationDemoControl();
             this.SuspendLayout();
-            // 
+            //
             // serializationDemoControl1
-            // 
+            //
             this.serializationDemoControl1.Location = new System.Drawing.Point(0, 0);
             this.serializationDemoControl1.Name = "serializationDemoControl1";
             this.serializationDemoControl1.Padding = new System.Windows.Forms.Padding(5);
             this.serializationDemoControl1.TabIndex = 0;
-            // 
+            //
             // Form1
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(292, 273);
             this.Controls.Add(this.serializationDemoControl1);
             this.Name = "Form1";
@@ -58,7 +58,7 @@ namespace SerializationDemo
     // <snippet3>
     public class SerializationDemoControl : UserControl
     {
-        // This is the TextBox contained by 
+        // This is the TextBox contained by
         // the SerializationDemoControl.
         private System.Windows.Forms.TextBox textBox1;
 
@@ -74,10 +74,10 @@ namespace SerializationDemo
 
         // <snippet5>
         // When the DesignerSerializationVisibility attribute has
-        // a value of "Content" or "Visible" the designer will 
-        // serialize the property. This property can also be edited 
+        // a value of "Content" or "Visible" the designer will
+        // serialize the property. This property can also be edited
         // at design time with a CollectionEditor.
-        [DesignerSerializationVisibility( 
+        [DesignerSerializationVisibility(
             DesignerSerializationVisibility.Content )]
         public String[] Strings
         {
@@ -91,7 +91,7 @@ namespace SerializationDemo
 
                 // Populate the contained TextBox with the values
                 // in the stringsValue array.
-                StringBuilder sb = 
+                StringBuilder sb =
                     new StringBuilder(this.stringsValue.Length);
 
                 for (int i = 0; i < this.stringsValue.Length; i++)
@@ -109,7 +109,7 @@ namespace SerializationDemo
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            
+
             // Settings for the contained TextBox control.
             this.textBox1.AutoSize = false;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -121,7 +121,7 @@ namespace SerializationDemo
             this.textBox1.ScrollBars = ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(140, 140);
             this.textBox1.TabIndex = 0;
-            
+
             // Settings for SerializationDemoControl.
             this.Controls.Add(this.textBox1);
             this.Name = "SerializationDemoControl";

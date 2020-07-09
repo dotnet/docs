@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 class Program
 {
    static void Main()
-   {            
+   {
       try {
          TraverseTreeParallelForEach(@"C:\Program Files", (f) =>
          {
@@ -29,7 +29,7 @@ class Program
       }
       catch (ArgumentException) {
          Console.WriteLine(@"The directory 'C:\Program Files' does not exist.");
-      }   
+      }
 
       // Keep the console window open.
       Console.ReadKey();
@@ -94,7 +94,7 @@ class Program
             if (files.Length < procCount) {
                foreach (var file in files) {
                   action(file);
-                  fileCount++;                            
+                  fileCount++;
                }
             }
             else {
@@ -103,7 +103,7 @@ class Program
                                               return (int) ++localCount;
                                             },
                                 (c) => {
-                                          Interlocked.Add(ref fileCount, c);                          
+                                          Interlocked.Add(ref fileCount, c);
                                 });
             }
          }

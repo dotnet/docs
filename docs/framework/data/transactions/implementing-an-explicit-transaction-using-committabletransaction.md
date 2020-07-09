@@ -1,5 +1,6 @@
 ---
 title: "Implementing an Explicit Transaction using CommittableTransaction"
+description: Implement an explicit transaction using the CommittableTransaction class in .NET. This class provided an explicit way for applications to use a transaction.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -56,14 +57,14 @@ public void DoTransactionalWork()
      }  
      finally  
      {  
-          //Restore the ambient transaction   
+          //Restore the ambient transaction
           Transaction.Current = oldAmbient;  
      }  
 }  
 void OnCommitted(IAsyncResult asyncResult)  
 {  
      CommittableTransaction committableTransaction;  
-     committableTransaction = asyncResult as CommittableTransaction;     
+     committableTransaction = asyncResult as CommittableTransaction;
      Debug.Assert(committableTransaction != null);  
      try  
      {  

@@ -25,7 +25,7 @@
         public new FontFamily FontFamily
         {
             get { return (FontFamily)this.fontFamilyListBox.SelectedItem; }
-            set { 
+            set {
                 this.fontFamilyListBox.SelectedItem = value;
                 this.fontFamilyListBox.ScrollIntoView(value);
             }
@@ -33,7 +33,7 @@
         public new FontStyle FontStyle
         {
             get { return (FontStyle)this.fontStyleListBox.SelectedItem; }
-            set { 
+            set {
                 this.fontStyleListBox.SelectedItem = value;
                 this.fontStyleListBox.ScrollIntoView(value);
             }
@@ -41,7 +41,7 @@
         public new FontWeight FontWeight
         {
             get { return (FontWeight)this.fontWeightListBox.SelectedItem; }
-            set { 
+            set {
                 this.fontWeightListBox.SelectedItem = value;
                 this.fontWeightListBox.ScrollIntoView(value);
             }
@@ -49,9 +49,9 @@
         public new double FontSize
         {
             get { return (double)this.fontSizeListBox.SelectedItem; }
-            set { 
-                this.fontSizeListBox.SelectedItem = value; 
-                this.fontSizeListBox.ScrollIntoView(value); 
+            set {
+                this.fontSizeListBox.SelectedItem = value;
+                this.fontSizeListBox.ScrollIntoView(value);
             }
         }
 

@@ -18,4 +18,4 @@ You attempted to write to a field that is declared `ReadOnly`.
   
 ## See also
 
-- [ReadOnly](../../visual-basic/language-reference/modifiers/readonly.md)
+- [ReadOnly](../language-reference/modifiers/readonly.md)

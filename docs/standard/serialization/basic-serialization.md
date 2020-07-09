@@ -1,5 +1,6 @@
 ---
 title: "Basic serialization"
+description: This article shows you how to make a class serializable with the SerializableAttribute and includes examples of serialization and deserialization.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "binary serialization, basic serialization"
@@ -62,9 +63,7 @@ If portability is a requirement, use the <xref:System.Runtime.Serialization.Form
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"  
   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"  
-  SOAP-ENV:encodingStyle=  
-  "http://schemas.microsoft.com/soap/encoding/clr/1.0"  
-  "http://schemas.xmlsoap.org/soap/encoding/"  
+  SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"  
   xmlns:a1="http://schemas.microsoft.com/clr/assem/ToFile">  
   
   <SOAP-ENV:Body>  

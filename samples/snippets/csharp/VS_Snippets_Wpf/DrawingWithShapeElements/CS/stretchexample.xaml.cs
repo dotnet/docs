@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Graphics
 
     public partial class StretchExample: Page
     {
-        public StretchExample() 
+        public StretchExample()
         {
            InitializeComponent();
         }

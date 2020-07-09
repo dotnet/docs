@@ -52,7 +52,7 @@ HRESULT ObjectReferences(
  A null `ClassId` indicates that `objectId` has a type that is unloading.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

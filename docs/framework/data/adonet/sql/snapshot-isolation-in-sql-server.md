@@ -1,5 +1,6 @@
 ---
 title: "Snapshot Isolation in SQL Server"
+description: Read an overview of snapshot isolation and row versioning in SQL Server, and learn how to manage concurrency with isolation levels.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -78,7 +79,7 @@ Dim sqlTran As SqlTransaction = _
 ```  
   
 ```csharp  
-SqlTransaction sqlTran =   
+SqlTransaction sqlTran =
   connection.BeginTransaction(IsolationLevel.Snapshot);  
 ```  
   
@@ -127,7 +128,7 @@ SqlTransaction sqlTran =
  In the previous example, the first transaction selects data, and a second transaction updates the data before the first transaction is able to complete, causing an update conflict when the first transaction tries to update the same row. You can reduce the chance of update conflicts in long-running snapshot transactions by supplying lock hints at the beginning of the transaction. The following SELECT statement uses the UPDLOCK hint to lock the selected rows:  
   
 ```sql  
-SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)   
+SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   WHERE PriKey BETWEEN 1 AND 3  
 ```  
   

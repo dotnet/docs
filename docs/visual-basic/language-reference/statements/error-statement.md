@@ -52,7 +52,7 @@ Error 11   ' Simulate the "Division by zero" error.
 ```  
   
 ## Requirements  
- **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
+ **Namespace:** [Microsoft.VisualBasic](../runtime-library-members.md)  
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
@@ -61,6 +61,6 @@ Error 11   ' Simulate the "Division by zero" error.
 - <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
 - <xref:Microsoft.VisualBasic.Information.Err%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>
-- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
-- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)
-- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)
+- [On Error Statement](on-error-statement.md)
+- [Resume Statement](resume-statement.md)
+- [Error Messages](../error-messages/index.md)

@@ -1,31 +1,72 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: .NET Application Architecture Guidance
+### YamlMime:Landing
+
+title: .NET application architecture documentation
+summary: Learn how to build production-ready .NET apps or migrate existing apps to the cloud.
+
 metadata:
-  title: .NET Application Architecture Guidance
-  meta.description: Learn about recommended practices for architecting, designing and building .NET software.
+  title: .NET application architecture documentation
+  description: Learn recommended practices for architecting, building, and migrating .NET apps.
   ms.topic: landing-page
-  ms.date: 10/22/2019
-abstract:
-  description: Learn how to build production-ready .NET apps with free application architecture guidance.
-sections:
-- title: Published e-books
-  items:
-  - html: '<ul><li><p><a href="grpc-for-wcf-developers/index">ASP.NET Core gRPC for WCF Developers</a></p>'
-  - html: '<p>This guide explains what gRPC is, relating each concept to the equivalent features of WCF, and offers guidance for migrating an existing WCF app to gRPC.</p></li></ul>'
-  - html: '<ul><li><p><a href="containerized-lifecycle/index">Containerized Docker application lifecycle with the Microsoft platform and tools</a></p>'
-  - html: '<p>This guide is an introduction to the recommended end to end lifecycle processes you''ll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.</p></li></ul>'
-  - html: '<ul><li><p><a href="modernize-with-azure-containers/index">Modernize existing .NET applications with Azure cloud and Windows containers</a></p>'
-  - html: '<p>This guide is an introduction to the strategies you''ll need to migrate existing web applications to the Azure cloud and Windows containers. You''ll learn about code strategies, data migration, orchestrators, and CI/CD processes.</p></li></ul>'
-  - html: '<ul><li><p><a href="modern-web-apps-azure/index">Architect modern web applications with ASP.NET Core and Azure</a></p>'
-  - html: '<p>This guide is an introduction to the recommended architecture, design, and deployment processes you''ll use to build ASP.NET and ASP.NET Core applications and host those applications in Azure.</p></li></ul>'
-  - html: '<ul><li><p><a href="microservices/index">Architecting container and microservice-based applications</a></p>'
-  - html: '<p>This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.</p></li></ul>'
-  - html: '<ul><li><p><a href="serverless/index">Serverless apps: Architecture, patterns, and Azure implementation</a></p>'
-  - html: '<p>This is a guide for building serverless applications with examples using Azure. It discusses various architecture and design approaches, the benefits and challenges that come with serverless, and provides scenarios and use cases for serverless apps.</p></li></ul>'
-- title: Preview e-books
-  items:
-  - html: '<ul><li><p><a href="cloud-native/index">Architecting cloud-native .NET apps for Azure</a></p>'
-  - html: '<p>This guide defines what cloud native is, introduces a sample app built using cloud-native principles, and covers topics common to most cloud-native applications.</p></li></ul>'
-  - html: '<ul><li><p><a href="blazor-for-web-forms-developers/index">Blazor for ASP.NET Web Forms Developers</a></p>'
-  - html: '<p>An introduction to Blazor for ASP.NET Web Forms developers. Learn how to build full-stack web apps with .NET using Blazor and .NET Core in a simple and familiar way.</p></li></ul>'
+  ms.date: 03/19/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Develop ASP.NET Core apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architect modern web apps with ASP.NET Core and Azure
+            url: modern-web-apps-azure/index.md
+          - text: Blazor for ASP.NET Web Forms developers (Preview)
+            url: blazor-for-web-forms-developers/index.md
+          - text: ASP.NET Core gRPC for WCF developers
+            url: grpc-for-wcf-developers/index.md
+            
+  # Card
+  - title: Develop cloud-native .NET apps for Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architecting cloud-native .NET apps for Azure
+            url: cloud-native/index.md
+          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
+            url: serverless/index.md
+          - text: ".NET Microservices: Architecture for containerized .NET applications"
+            url: microservices/index.md
+      - linkListType: learn
+        links:
+          - text: Hello World Microservice tutorial
+            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+          - text: Create and deploy a cloud-native ASP.NET Core microservice
+            url: https://docs.microsoft.com/learn/modules/microservices-aspnet-core
+             
+  # Card
+  - title: Migrate .NET apps to Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernize existing .NET apps with Azure cloud and Windows containers
+            url: modernize-with-azure-containers/index.md
+          - text: Migrate your .NET app to Azure
+            url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
+            
+  # Card
+  - title: Understand DevOps for .NET
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Containerized Docker application lifecycle with Microsoft platform and tools
+            url: containerized-lifecycle/index.md
+          - text: ASP.NET Core DevOps with Azure
+            url: /aspnet/core/azure/devops/
+
+  # Card
+  - title: Modernize desktop apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernizing desktop apps on Windows 10 with .NET Core 3.1
+            url: modernize-desktop/index.md

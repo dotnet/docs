@@ -27,7 +27,7 @@ namespace UIATableItemPattern_snip
             [STAThread()]
             static void Main()
             {
-                // Create an instance of the sample class 
+                // Create an instance of the sample class
                 // and call its Run() method to start it.
                 UIATableItemPattern_snippets app = new UIATableItemPattern_snippets();
 
@@ -38,7 +38,7 @@ namespace UIATableItemPattern_snip
         // <SnippetStartTarget>
         /// -------------------------------------------------------------------
         /// <summary>
-        /// Starts the target application and returns the AutomationElement 
+        /// Starts the target application and returns the AutomationElement
         /// obtained from the targets window handle.
         /// </summary>
         /// <param name="exe">
@@ -95,7 +95,7 @@ namespace UIATableItemPattern_snip
             AutomationElement targetTableElement =
                 targetApp.FindFirst(TreeScope.Descendants, tableCondition);
 
-            // If targetTableElement is null then a suitable table control 
+            // If targetTableElement is null then a suitable table control
             // was not found.
             return targetTableElement;
         }
@@ -104,7 +104,7 @@ namespace UIATableItemPattern_snip
         // <Snippet101>
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Obtains a TableItemPattern control pattern from an 
+        /// Obtains a TableItemPattern control pattern from an
         /// AutomationElement.
         /// </summary>
         /// <param name="targetControl">
@@ -126,7 +126,7 @@ namespace UIATableItemPattern_snip
                     TableItemPattern.Pattern)
                     as TableItemPattern;
             }
-            // Object doesn't support the 
+            // Object doesn't support the
             // TableItemPattern control pattern
             catch (InvalidOperationException)
             {
@@ -140,7 +140,7 @@ namespace UIATableItemPattern_snip
         // <Snippet1015>
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Obtains a TablePattern control pattern from an 
+        /// Obtains a TablePattern control pattern from an
         /// AutomationElement.
         /// </summary>
         /// <param name="targetControl">
@@ -162,7 +162,7 @@ namespace UIATableItemPattern_snip
                     TablePattern.Pattern)
                     as TablePattern;
             }
-            // Object doesn't support the 
+            // Object doesn't support the
             // TablePattern control pattern
             catch (InvalidOperationException)
             {
@@ -180,7 +180,7 @@ namespace UIATableItemPattern_snip
         /// </summary>
         /// <remarks>
         /// The event listener is essentially a focus change listener.
-        /// Since this is a global desktop listener, a filter would be required 
+        /// Since this is a global desktop listener, a filter would be required
         /// to ignore focus change events outside the table.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -197,7 +197,7 @@ namespace UIATableItemPattern_snip
         ///--------------------------------------------------------------------
         /// <summary>
         /// Event handler for table item focus change.
-        /// Can be used to track traversal of individual table items 
+        /// Can be used to track traversal of individual table items
         /// within a table.
         /// </summary>
         /// <param name="src">Object that raised the event.</param>
@@ -245,21 +245,21 @@ namespace UIATableItemPattern_snip
             }
             catch (ArgumentOutOfRangeException)
             {
-                // If the requested row coordinate is larger than the RowCount 
+                // If the requested row coordinate is larger than the RowCount
                 // or the column coordinate is larger than the ColumnCount.
                 // -- OR --
-                // If either of the requested row or column coordinates 
+                // If either of the requested row or column coordinates
                 // is less than zero.
                 // TO DO: error handling.
             }
 
             // Further event processing can be done at this point.
             // For the purposes of this sample we can just record item properties.
-            string controlType = 
+            string controlType =
                 tableItem.Current.ControlType.LocalizedControlType;
-            AutomationElement[] columnHeaders = 
+            AutomationElement[] columnHeaders =
                 tableItemPattern.Current.GetColumnHeaderItems();
-            AutomationElement[] rowHeaders = 
+            AutomationElement[] rowHeaders =
                 tableItemPattern.Current.GetRowHeaderItems();
             int itemRow = tableItemPattern.Current.Row;
             int itemColumn = tableItemPattern.Current.Column;
@@ -286,7 +286,7 @@ namespace UIATableItemPattern_snip
         /// Gets the current property values from target.
         /// </summary>
         /// <param name="tableItemPattern">
-        /// A TableItemPattern control pattern obtained from 
+        /// A TableItemPattern control pattern obtained from
         /// an AutomationElement representing a target control.
         /// </param>
         /// <param name="automationProperty">

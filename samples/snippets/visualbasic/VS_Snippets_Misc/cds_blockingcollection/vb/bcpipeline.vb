@@ -81,14 +81,14 @@ Namespace BlockingCollectionPipeline
             Finally
                 cts.Dispose()
             End Try
-          
+
             ' You will need to press twice if you ran to the end:
             ' once for the cancellation thread, and once for this thread.
             Console.WriteLine("Press any key.")
             Console.ReadKey()
         End Sub
     End Class
-        class PipelineFilter(Of TInput, TOutput)
+    class PipelineFilter(Of TInput, TOutput)
 
         Private m_processor As Func(Of TInput, TOutput) = Nothing
         Public m_input() As BlockingCollection(Of TInput) = Nothing
@@ -146,10 +146,10 @@ Namespace BlockingCollectionPipeline
                         m_outputProcessor(receivedItem)
                     End If
 
-                    else
+                else
                     Console.WriteLine("Unable to retrieve data from previous filter")
                 End If
-                        End While
+            End While
             If (Not m_output Is Nothing) Then
 
                 For Each bc In m_output

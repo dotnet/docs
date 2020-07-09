@@ -1,5 +1,6 @@
 ---
 title: "Assembly manifest"
+description: A .NET assembly manifest specifies its version requirements, security identity, and scope of the assembly and information to resolve references.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assembly manifest"

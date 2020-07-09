@@ -21,10 +21,10 @@ Self-hosted services that use the Net.TCP transport can control several advanced
 ```xml  
 <configuration>  
    <system.serviceModel.activation>  
-       <net.tcp listenBacklog="16" <!--16 * # of processors -->  
+       <net.tcp listenBacklog="16" <!-- 16 * # of processors -->  
           maxPendingAccepts="4"<!-- 4 * # of processors -->  
           maxPendingConnections="100"  
-          receiveTimeout="00:00:30" <!--30 seconds -->  
+          receiveTimeout="00:00:30" <!-- 30 seconds -->  
           teredoEnabled="false">  
           <allowAccounts>  
              <!-- LocalSystem account -->  
@@ -39,6 +39,7 @@ Self-hosted services that use the Net.TCP transport can control several advanced
              <add securityIdentifier="S-1-5-32-568"/>  
            </allowAccounts>  
        </net.tcp>  
+    </system.serviceModel.activation>
 </configuration>  
 ```  
   
@@ -57,4 +58,4 @@ Self-hosted services that use the Net.TCP transport can control several advanced
   
 ## See also
 
-- [\<net.tcp>](../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)
+- [\<net.tcp>](../../configure-apps/file-schema/wcf/net-tcp.md)

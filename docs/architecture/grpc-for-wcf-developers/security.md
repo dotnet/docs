@@ -6,7 +6,7 @@ ms.date: 09/02/2019
 
 # Security in gRPC applications
 
-In any real-world scenario, securing applications and services is essential. Security covers three key areas: 
+In any real-world scenario, securing applications and services is essential. Security covers three key areas:
 
 * Encrypting network traffic to prevent malicious hackers from intercepting it.
 * Authenticating clients and servers to establish identity and trust.
@@ -25,8 +25,8 @@ In Windows Communication Foundation (WCF), authentication and authorization were
 
 gRPC authentication and authorization works on two levels:
 
-* Call-level authentication/authorization is usually handled through tokens that are applied in metadata when the call is made. 
-* Channel-level authentication uses a client certificate that's applied at the connection level. It can also include call-level authentication/authorization credentials to be applied to every call on the channel automatically. 
+* Call-level authentication/authorization is usually handled through tokens that are applied in metadata when the call is made.
+* Channel-level authentication uses a client certificate that's applied at the connection level. It can also include call-level authentication/authorization credentials to be applied to every call on the channel automatically.
 
 You can use either or both of these mechanisms to help secure your service.
 

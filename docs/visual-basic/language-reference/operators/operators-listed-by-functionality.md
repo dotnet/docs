@@ -12,15 +12,15 @@ See one of the categories listed below, or open this portion of the Help table o
   
 |Operators|Description|  
 |---------------|-----------------|  
-|[Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)|These operators perform mathematical calculations.|  
-|[Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)|These operators perform assignment operations.|  
-|[Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)|These operators perform comparisons.|  
-|[Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)|These operators combine strings.|  
-|[Logical/Bitwise Operators](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)|These operators perform logical operations.|  
-|[Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)|These operators perform arithmetic shifts on bit patterns.|  
-|[Miscellaneous Operators](../../../visual-basic/language-reference/operators/miscellaneous-operators.md)|These operators perform miscellaneous operations.|  
+|[Arithmetic Operators](arithmetic-operators.md)|These operators perform mathematical calculations.|  
+|[Assignment Operators](assignment-operators.md)|These operators perform assignment operations.|  
+|[Comparison Operators](comparison-operators.md)|These operators perform comparisons.|  
+|[Concatenation Operators](concatenation-operators.md)|These operators combine strings.|  
+|[Logical/Bitwise Operators](logical-bitwise-operators.md)|These operators perform logical operations.|  
+|[Bit Shift Operators](bit-shift-operators.md)|These operators perform arithmetic shifts on bit patterns.|  
+|[Miscellaneous Operators](miscellaneous-operators.md)|These operators perform miscellaneous operations.|  
   
 ## See also
 
-- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators and Expressions](../../programming-guide/language-features/operators-and-expressions/index.md)
+- [Operator Precedence in Visual Basic](operator-precedence.md)

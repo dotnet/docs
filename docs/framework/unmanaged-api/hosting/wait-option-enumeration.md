@@ -32,15 +32,15 @@ typedef enum {
   
 |Member|Description|  
 |------------|-----------------|  
-|`WAIT_ALERTABLE`|Notifies the host that the task should be awakened if the CLR calls the [IHostTask::Alert](../../../../docs/framework/unmanaged-api/hosting/ihosttask-alert-method.md) method.|  
+|`WAIT_ALERTABLE`|Notifies the host that the task should be awakened if the CLR calls the [IHostTask::Alert](ihosttask-alert-method.md) method.|  
 |`WAIT_MSGPUMP`|Notifies the host that it must pump messages on the current OS thread if the thread becomes blocked. The runtime specifies this value only on an <xref:System.Threading.ApartmentState.STA> thread.|  
 |`WAIT_NOTINDEADLOCK`|Notifies the host that the specified synchronization request cannot be broken by a host. That is, the host cannot return `HOST_E_DEADLOCK`.|  
   
 ## Remarks  
- The [IHostTaskManager::Sleep](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-sleep-method.md) and [IHostTaskManager::SwitchToTask](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-switchtotask-method.md) methods both take a parameter of this type.  
+ The [IHostTaskManager::Sleep](ihosttaskmanager-sleep-method.md) and [IHostTaskManager::SwitchToTask](ihosttaskmanager-switchtotask-method.md) methods both take a parameter of this type.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,4 +50,4 @@ typedef enum {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Hosting Enumerations](hosting-enumerations.md)

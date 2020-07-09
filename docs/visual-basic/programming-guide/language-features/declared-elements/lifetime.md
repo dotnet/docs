@@ -49,7 +49,7 @@ The *lifetime* of a declared element is the period of time during which it is av
 ## Example  
   
 ### Description  
- The following example declares a variable with the [Static](../../../../visual-basic/language-reference/modifiers/static.md) keyword. (Note that you do not need the `Dim` keyword when the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) uses a modifier such as `Static`.)  
+ The following example declares a variable with the [Static](../../../language-reference/modifiers/static.md) keyword. (Note that you do not need the `Dim` keyword when the [Dim Statement](../../../language-reference/statements/dim-statement.md) uses a modifier such as `Static`.)  
   
 ### Code  
  [!code-vb[VbVbalrKeywords#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#13)]  
@@ -67,13 +67,13 @@ The *lifetime* of a declared element is the period of time during which it is av
   
 ## See also
 
-- [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)
-- [Nothing](../../../../visual-basic/language-reference/nothing.md)
-- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
-- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
-- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
-- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Static](../../../../visual-basic/language-reference/modifiers/static.md)
+- [Shared](../../../language-reference/modifiers/shared.md)
+- [Nothing](../../../language-reference/nothing.md)
+- [Declared Element Names](declared-element-names.md)
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Scope in Visual Basic](scope.md)
+- [Access levels in Visual Basic](access-levels.md)
+- [Variables](../variables/index.md)
+- [Variable Declaration](../variables/variable-declaration.md)
+- [Troubleshooting Data Types](../data-types/troubleshooting-data-types.md)
+- [Static](../../../language-reference/modifiers/static.md)

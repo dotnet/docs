@@ -27,8 +27,8 @@ Class TransactionSample
                 Try
                     ' Define a query that returns a order by order ID. 
                     Dim order = (From o In context.SalesOrderHeaders _
-                        Where o.SalesOrderID = orderId _
-                        Select o).First()
+                                 Where o.SalesOrderID = orderId _
+                                 Select o).First()
 
                     ' Load items for the order, if not already loaded. 
                     ' Do this if the lazy loading is turned off.

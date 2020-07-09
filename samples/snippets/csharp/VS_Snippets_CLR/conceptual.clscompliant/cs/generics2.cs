@@ -8,12 +8,12 @@ public class Number<T> where T : struct
    // use Double as the underlying type, since its range is a superset of
    // the ranges of all numeric types except BigInteger.
    protected double number;
-      
+
    public Number(T value)
    {
       try {
          this.number = Convert.ToDouble(value);
-      }  
+      }
       catch (OverflowException e) {
          throw new ArgumentException("value is too large.", e);
       }
@@ -32,19 +32,19 @@ public class Number<T> where T : struct
       return (T) Convert.ChangeType(number - Convert.ToDouble(value), typeof(T));
    }
 }
- 
-public class FloatingPoint<T> : Number<T> where T : struct 
+
+public class FloatingPoint<T> : Number<T> where T : struct
 {
-   public FloatingPoint(T number) : base(number) 
+   public FloatingPoint(T number) : base(number)
    {
       if (typeof(float) == number.GetType() ||
-          typeof(double) == number.GetType() || 
+          typeof(double) == number.GetType() ||
           typeof(decimal) == number.GetType())
          this.number = Convert.ToDouble(number);
-      else   
+      else
          throw new ArgumentException("The number parameter is not a floating-point number.");
-   }       
-}           
+   }
+}
 // </Snippet31>
 
 public class Example
@@ -53,19 +53,19 @@ public class Example
    {
       Number<Byte> byt = new Number<Byte>(12);
       Console.WriteLine(byt.Add(12));
-      
+
       Number<SByte> sbyt = new Number<SByte>(-3);
       Console.WriteLine(sbyt.Subtract(12));
-      
+
       Number<ushort> ush = new Number<ushort>(16);
       Console.WriteLine(ush.Add((ushort)3));
-      
+
       Number<double> dbl = new Number<double>(Math.PI);
       Console.WriteLine(dbl.Add(1.0));
-      
+
       FloatingPoint<Single> sng = new FloatingPoint<float>(12.3f);
       Console.WriteLine(sng.Add(3.0f));
-      
+
 //       FloatingPoint<int> f2 = new FloatingPoint<int>(16);
 //       Console.WriteLine(f2.Add(6));
    }

@@ -19,38 +19,38 @@ public class Example
       ulong number3 = int.MaxValue;
 
       int intNumber;
-      
+
       try {
          intNumber = checked((int) number1);
-         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.", 
-                           number1.GetType().Name, intNumber); 
+         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.",
+                           number1.GetType().Name, intNumber);
       }
       catch (OverflowException) {
          if (number1 > int.MaxValue)
-            Console.WriteLine("Conversion failed: {0} exceeds {1}.", 
+            Console.WriteLine("Conversion failed: {0} exceeds {1}.",
                               number1, int.MaxValue);
          else
-            Console.WriteLine("Conversion failed: {0} is less than {1}.", 
+            Console.WriteLine("Conversion failed: {0} is less than {1}.",
                               number1, int.MinValue);
       }
 
       try {
          intNumber = checked((int) number2);
-         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.", 
-                           number2.GetType().Name, intNumber); 
+         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.",
+                           number2.GetType().Name, intNumber);
       }
       catch (OverflowException) {
-         Console.WriteLine("Conversion failed: {0} exceeds {1}.", 
+         Console.WriteLine("Conversion failed: {0} exceeds {1}.",
                            number2, int.MaxValue);
       }
 
       try {
          intNumber = checked((int) number3);
-         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.", 
-                           number3.GetType().Name, intNumber); 
+         Console.WriteLine("After assigning a {0} value, the Integer value is {1}.",
+                           number3.GetType().Name, intNumber);
       }
       catch (OverflowException) {
-         Console.WriteLine("Conversion failed: {0} exceeds {1}.", 
+         Console.WriteLine("Conversion failed: {0} exceeds {1}.",
                            number1, int.MaxValue);
       }
 
@@ -65,7 +65,7 @@ public class Example
    {
       // <Snippet6>
       ByteWithSign value;
-      
+
       try {
          int intValue = -120;
          value = (ByteWithSign) intValue;
@@ -74,7 +74,7 @@ public class Example
       catch (OverflowException e) {
          Console.WriteLine(e.Message);
       }
-      
+
       try {
          uint uintValue = 1024;
          value = (ByteWithSign) uintValue;
@@ -86,7 +86,7 @@ public class Example
       // The example displays the following output:
       //       -120
       //       '1024' is out of range of the ByteWithSign data type.
-      // </Snippet6>      
+      // </Snippet6>
    }
 
    private static void CheckedAndUnchecked()
@@ -94,61 +94,61 @@ public class Example
       // <Snippet12>
       int largeValue = Int32.MaxValue;
       byte newValue;
-      
+
       try {
          newValue = unchecked((byte) largeValue);
-         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.", 
+         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
                            largeValue.GetType().Name, largeValue,
                            newValue.GetType().Name, newValue);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is outside the range of the Byte data type.", 
+         Console.WriteLine("{0} is outside the range of the Byte data type.",
                            largeValue);
       }
-   
+
       try {
          newValue = checked((byte) largeValue);
-         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.", 
+         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
                            largeValue.GetType().Name, largeValue,
                            newValue.GetType().Name, newValue);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is outside the range of the Byte data type.", 
+         Console.WriteLine("{0} is outside the range of the Byte data type.",
                            largeValue);
       }
       // The example displays the following output:
       //    Converted the Int32 value 2147483647 to the Byte value 255.
       //    2147483647 is outside the range of the Byte data type.
-      // </Snippet12>      
+      // </Snippet12>
    }
 }
 
 // <Snippet5>
 public struct ByteWithSign
 {
-   private SByte signValue; 
+   private SByte signValue;
    private Byte value;
 
    private const byte MaxValue = byte.MaxValue;
    private const int MinValue = -1 * byte.MaxValue;
-   
-   public static explicit operator ByteWithSign(int value) 
+
+   public static explicit operator ByteWithSign(int value)
    {
       // Check for overflow.
       if (value > ByteWithSign.MaxValue || value < ByteWithSign.MinValue)
-         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", 
+         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.",
                                                    value));
-      
+
       ByteWithSign newValue;
       newValue.signValue = (SByte) Math.Sign(value);
       newValue.value = (byte) Math.Abs(value);
       return newValue;
-   }  
-   
+   }
+
    public static explicit operator ByteWithSign(uint value)
    {
-      if (value > ByteWithSign.MaxValue) 
-         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.", 
+      if (value > ByteWithSign.MaxValue)
+         throw new OverflowException(String.Format("'{0}' is out of range of the ByteWithSign data type.",
                                                    value));
 
       ByteWithSign newValue;
@@ -156,9 +156,9 @@ public struct ByteWithSign
       newValue.value = (byte) value;
       return newValue;
    }
-   
+
    public override string ToString()
-   { 
+   {
       return (signValue * value).ToString();
    }
 }

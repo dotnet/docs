@@ -24,9 +24,9 @@ namespace HowToStrings
 
             // Simple comparisons are always case sensitive!
             bool containsSearchResult = factMessage.Contains("extension");
-            Console.WriteLine($"Starts with \"extension\"? {containsSearchResult}");
+            Console.WriteLine($"Contains \"extension\"? {containsSearchResult}");
 
-            // For user input and strings that will be displayed to the end user, 
+            // For user input and strings that will be displayed to the end user,
             // use the StringComparison parameter on methods that have it to specify how to match strings.
             bool ignoreCaseSearchResult = factMessage.StartsWith("extension", System.StringComparison.CurrentCultureIgnoreCase);
             Console.WriteLine($"Starts with \"extension\"? {ignoreCaseSearchResult} (ignoring case)");
@@ -44,7 +44,7 @@ namespace HowToStrings
             // Write the string and include the quotation marks.
             Console.WriteLine($"\"{factMessage}\"");
 
-            // This search returns the substring between two strings, so 
+            // This search returns the substring between two strings, so
             // the first index is moved to the character just after the first string.
             int first = factMessage.IndexOf("methods") + "methods".Length;
             int last = factMessage.LastIndexOf("methods");

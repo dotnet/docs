@@ -51,7 +51,7 @@ HRESULT LogSwitch (
  [in] A pointer to the name of the parent of the debugging/tracing switch.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

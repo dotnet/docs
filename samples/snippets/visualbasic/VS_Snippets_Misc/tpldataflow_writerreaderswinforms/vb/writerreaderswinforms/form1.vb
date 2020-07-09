@@ -23,7 +23,7 @@ Namespace WriterReadersWinForms
             ' of CheckBox objects.
             ' Specifying the current synchronization context enables the 
             ' action to run on the user-interface thread.
-         Dim toggleCheckBox = New ActionBlock(Of CheckBox)(Sub(checkBox) checkBox.Checked = Not checkBox.Checked, New ExecutionDataflowBlockOptions With {.TaskScheduler = TaskScheduler.FromCurrentSynchronizationContext()})
+            Dim toggleCheckBox = New ActionBlock(Of CheckBox)(Sub(checkBox) checkBox.Checked = Not checkBox.Checked, New ExecutionDataflowBlockOptions With {.TaskScheduler = TaskScheduler.FromCurrentSynchronizationContext()})
             ' </snippet3>
 
             ' <snippet4>
@@ -39,15 +39,15 @@ Namespace WriterReadersWinForms
             ' reader to run in parallel to other actions that are managed by 
             ' that scheduler.
             Dim readerActions = From checkBox In New CheckBox() {checkBox1, checkBox2, checkBox3} _
-                Select New ActionBlock(Of Integer)(Sub(milliseconds)
-                    ' Toggle the check box to the checked state.
-                    ' Perform the read action. For demonstration, suspend the current
-                    ' thread to simulate a lengthy read operation.
-                    ' Toggle the check box to the unchecked state.
-                    toggleCheckBox.Post(checkBox)
-                    Thread.Sleep(milliseconds)
-                    toggleCheckBox.Post(checkBox)
-                End Sub, New ExecutionDataflowBlockOptions With {.TaskScheduler = taskSchedulerPair.ConcurrentScheduler})
+                                Select New ActionBlock(Of Integer)(Sub(milliseconds)
+                                                       ' Toggle the check box to the checked state.
+                                                       ' Perform the read action. For demonstration, suspend the current
+                                                       ' thread to simulate a lengthy read operation.
+                                                       ' Toggle the check box to the unchecked state.
+                                                       toggleCheckBox.Post(checkBox)
+                                                                       Thread.Sleep(milliseconds)
+                                                                       toggleCheckBox.Post(checkBox)
+                                                                   End Sub, New ExecutionDataflowBlockOptions With {.TaskScheduler = taskSchedulerPair.ConcurrentScheduler})
 
             ' Create an ActionBlock<int> object for the writer CheckBox object.
             ' This ActionBlock<int> object represents an action that writes to 
@@ -56,14 +56,14 @@ Namespace WriterReadersWinForms
             ' writer to run in exclusively with respect to other actions that are 
             ' managed by the scheduler pair.
             Dim writerAction = New ActionBlock(Of Integer)(Sub(milliseconds)
-                ' Toggle the check box to the checked state.
-                ' Perform the write action. For demonstration, suspend the current
-                ' thread to simulate a lengthy write operation.
-                ' Toggle the check box to the unchecked state.
-                toggleCheckBox.Post(checkBox4)
-                Thread.Sleep(milliseconds)
-                toggleCheckBox.Post(checkBox4)
-            End Sub, New ExecutionDataflowBlockOptions With {.TaskScheduler = taskSchedulerPair.ExclusiveScheduler})
+                                                               ' Toggle the check box to the checked state.
+                                                               ' Perform the write action. For demonstration, suspend the current
+                                                               ' thread to simulate a lengthy write operation.
+                                                               ' Toggle the check box to the unchecked state.
+                                                               toggleCheckBox.Post(checkBox4)
+                                                               Thread.Sleep(milliseconds)
+                                                               toggleCheckBox.Post(checkBox4)
+                                                           End Sub, New ExecutionDataflowBlockOptions With {.TaskScheduler = taskSchedulerPair.ExclusiveScheduler})
 
             ' Link the broadcaster to each reader and writer block.
             ' The BroadcastBlock<T> class propagates values that it 

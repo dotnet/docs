@@ -98,10 +98,10 @@ The first project that you create in this walkthrough defines a custom dynamic o
     Customer: Preston, Chris  
     Customer: Hines, Patrick  
     Customer: Cameron, Maria  
-    Supplier: Graphic Design Institute (https://www.graphicdesigninstitute.com/)   
-    Supplier: Fabrikam, Inc. (https://www.fabrikam.com/)   
+    Supplier: Graphic Design Institute (https://www.graphicdesigninstitute.com/)
+    Supplier: Fabrikam, Inc. (https://www.fabrikam.com/)
     Customer: Seubert, Roxanne  
-    Supplier: Proseware, Inc. (http://www.proseware.com/)   
+    Supplier: Proseware, Inc. (http://www.proseware.com/)
     Customer: Adolphi, Stephan  
     Customer: Koch, Paul  
     ```  

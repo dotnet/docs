@@ -83,14 +83,14 @@ class DataflowReadWrite
             bufferBlock.Post(0);
             bufferBlock.Post(1);
          });
-      var receive = Task.Run(() => 
+      var receive = Task.Run(() =>
          {
             for (int i = 0; i < 3; i++)
             {
                Console.WriteLine(bufferBlock.Receive());
             }
          });
-      var post2 = Task.Run(() => 
+      var post2 = Task.Run(() =>
          {
             bufferBlock.Post(2);
          });

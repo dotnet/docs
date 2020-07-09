@@ -31,7 +31,7 @@ namespace DataViewWinFormsSample
 
             contactDataGridView.DataSource = contactBindingSource;
 
-            // Create a LinqDataView from a LINQ to DataSet query and bind it 
+            // Create a LinqDataView from a LINQ to DataSet query and bind it
             // to the Windows forms control.
             EnumerableRowCollection<DataRow> contactQuery = from row in dataSet.Tables["Contact"].AsEnumerable()
                                                             where row.Field<string>("EmailAddress") != null

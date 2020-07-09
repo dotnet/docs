@@ -34,10 +34,10 @@ void CoEEShutDownCOM ();
 > [!CAUTION]
 > This function affects all runtimes that are loaded into the process.  
   
- Beginning with the .NET Framework 4, call the entry point for this function on the specific runtime you want to affect. To get the entry point, call the [ICLRRuntimeInfo::GetProcAddress](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getprocaddress-method.md) method and specify "CoEEShutDownCOM".  
+ Beginning with the .NET Framework 4, call the entry point for this function on the specific runtime you want to affect. To get the entry point, call the [ICLRRuntimeInfo::GetProcAddress](iclrruntimeinfo-getprocaddress-method.md) method and specify "CoEEShutDownCOM".  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -47,4 +47,4 @@ void CoEEShutDownCOM ();
   
 ## See also
 
-- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

@@ -8,8 +8,8 @@ class SampleCollection<T>
    // Define the indexer to allow client code to use [] notation.
    public T this[int i]
    {
-      get => arr[i]; 
-      set => arr[i] = value; 
+      get => arr[i];
+      set => arr[i] = value;
    }
 }
 

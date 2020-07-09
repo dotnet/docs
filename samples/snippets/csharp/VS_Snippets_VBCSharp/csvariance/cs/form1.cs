@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
             // although the event expects the KeyEventArgs parameter.
             this.button1.KeyDown += this.MultiHandler;
 
-            // You can use the same method 
+            // You can use the same method
             // for an event that expects the MouseEventArgs parameter.
             this.button1.MouseClick += this.MultiHandler;
         }

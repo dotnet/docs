@@ -1,5 +1,6 @@
 ---
 title: "Loading a DataSet from XML"
+description: Learn how to add contents to an ADO.NET DataSet from XML. The .NET Framework offers flexibility for what to load and the structure of the DataSet.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -87,7 +88,7 @@ Next
 foreach (DataTable dataTable in dataSet.Tables)  
    dataTable.BeginLoadData();  
   
-dataSet.ReadXml("file.xml");   
+dataSet.ReadXml("file.xml");
   
 foreach (DataTable dataTable in dataSet.Tables)  
    dataTable.EndLoadData();  
@@ -97,11 +98,11 @@ foreach (DataTable dataTable in dataSet.Tables)
 > If the XSD schema for your <xref:System.Data.DataSet> includes a **targetNamespace**, data may not be read, and you may encounter exceptions, when calling **ReadXml** to load the <xref:System.Data.DataSet> with XML that contains elements with no qualifying namespace. To read unqualified elements in this case, set **elementFormDefault** equal to "qualified" in your XSD schema. For example:  
   
 ```xml  
-<xsd:schema id="customDataSet"   
+<xsd:schema id="customDataSet"
   elementFormDefault="qualified"  
-  targetNamespace="http://www.tempuri.org/customDataSet.xsd"   
-  xmlns="http://www.tempuri.org/customDataSet.xsd"   
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+  targetNamespace="http://www.tempuri.org/customDataSet.xsd"
+  xmlns="http://www.tempuri.org/customDataSet.xsd"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 </xsd:schema>  
 ```  

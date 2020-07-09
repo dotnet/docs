@@ -7,7 +7,7 @@ ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
 
 For many applications, you want to create and manage groups of related objects. There are two ways to group objects: by creating arrays of objects, and by creating collections of objects.
 
-Arrays are most useful for creating and working with a fixed number of strongly-typed objects. For information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+Arrays are most useful for creating and working with a fixed number of strongly typed objects. For information about arrays, see [Arrays](../language-features/arrays/index.md).
 
 Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 
@@ -16,7 +16,7 @@ A collection is a class, so you must declare an instance of the class before you
 If your collection contains elements of only one data type, you can use one of the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace. A generic collection enforces type safety so that no other data type can be added to it. When you retrieve an element from a generic collection, you do not have to determine its data type or convert it.
 
 > [!NOTE]
-> For the examples in this topic, include [Imports](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections.Generic` and `System.Linq` namespaces.
+> For the examples in this topic, include [Imports](../../language-reference/statements/imports-statement-net-namespace-and-type.md) statements for the `System.Collections.Generic` and `System.Linq` namespaces.
 
 <a name="BKMK_SimpleCollection"></a>
 
@@ -24,7 +24,7 @@ If your collection contains elements of only one data type, you can use one of t
 
 The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.
 
-The following example creates a list of strings and then iterates through the strings by using a [For Each…Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement.
+The following example creates a list of strings and then iterates through the strings by using a [For Each…Next](../../language-reference/statements/for-each-next-statement.md) statement.
 
 ```vb
 ' Create a list of strings.
@@ -41,7 +41,7 @@ Next
 'Output: chinook coho pink sockeye
 ```
 
-If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).
+If the contents of a collection are known in advance, you can use a *collection initializer* to initialize the collection. For more information, see [Collection Initializers](../language-features/collection-initializers/index.md).
 
 The following example is the same as the previous example, except a collection initializer is used to add elements to the collection.
 
@@ -57,7 +57,7 @@ Next
 'Output: chinook coho pink sockeye
 ```
 
-You can use a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) statement instead of a `For Each` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.
+You can use a [For…Next](../../language-reference/statements/for-next-statement.md) statement instead of a `For Each` statement to iterate through a collection. You accomplish this by accessing the collection elements by the index position. The index of the elements starts at 0 and ends at the element count minus 1.
 
 The following example iterates through the elements of a collection by using `For…Next` instead of `For Each`.
 
@@ -89,7 +89,7 @@ Next
 'Output: chinook pink sockeye
 ```
 
-The following example removes elements from a generic list. Instead of a `For Each` statement, a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
+The following example removes elements from a generic list. Instead of a `For Each` statement, a [For…Next](../../language-reference/statements/for-next-statement.md) statement that iterates in descending order is used. This is because the <xref:System.Collections.Generic.List%601.RemoveAt%2A> method causes elements after a removed element to have a lower index value.
 
 ```vb
 Dim numbers As New List(Of Integer) From
@@ -324,7 +324,7 @@ End Sub
 
 ## Using LINQ to Access a Collection
 
-LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md).
+LINQ (Language-Integrated Query) can be used to access collections. LINQ queries provide filtering, ordering, and grouping capabilities. For more information, see [Getting Started with LINQ in Visual Basic](linq/getting-started-with-linq.md).
 
 The following example runs a LINQ query against a generic `List`. The LINQ query returns a different collection that contains the results.
 
@@ -532,13 +532,13 @@ End Class
 
 ## Iterators
 
-An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time.
+An *iterator* is used to perform a custom iteration over a collection. An iterator can be a method or a `get` accessor. An iterator uses a [Yield](../../language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time.
 
-You call an iterator by using a [For Each…Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement. Each iteration of the `For Each` loop calls the iterator. When a `Yield` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
+You call an iterator by using a [For Each…Next](../../language-reference/statements/for-each-next-statement.md) statement. Each iteration of the `For Each` loop calls the iterator. When a `Yield` statement is reached in the iterator, an expression is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
 
-For more information, see [Iterators (Visual Basic)](../../../visual-basic/programming-guide/concepts/iterators.md).
+For more information, see [Iterators (Visual Basic)](iterators.md).
 
-The following example uses an iterator method. The iterator method has a `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. In the `ListEvenNumbers` method, each iteration of the `For Each` statement body creates a call to the iterator method, which proceeds to the next `Yield` statement.
+The following example uses an iterator method. The iterator method has a `Yield` statement that is inside a [For…Next](../../language-reference/statements/for-next-statement.md) loop. In the `ListEvenNumbers` method, each iteration of the `For Each` statement body creates a call to the iterator method, which proceeds to the next `Yield` statement.
 
 ```vb
 Public Sub ListEvenNumbers()
@@ -564,11 +564,11 @@ End Function
 
 ## See also
 
-- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
-- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Collection Initializers](../language-features/collection-initializers/index.md)
+- [Programming Concepts (Visual Basic)](index.md)
+- [Option Strict Statement](../../language-reference/statements/option-strict-statement.md)
+- [LINQ to Objects (Visual Basic)](linq/linq-to-objects.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)
 - [Collections and Data Structures](../../../standard/collections/index.md)
 - [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
 - [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)

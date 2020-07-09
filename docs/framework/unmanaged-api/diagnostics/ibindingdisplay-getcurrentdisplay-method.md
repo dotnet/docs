@@ -32,12 +32,12 @@ HRESULT GetCurrentDisplay (
  [out, retval] A pointer to a safearray containing the binding display information.  
   
 ## Remarks  
- The [IBindingDisplay::InitializeForProcess](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md) method must have previously succeeded, and the program must be stopped by a debugger.  
+ The [IBindingDisplay::InitializeForProcess](ibindingdisplay-initializeforprocess-method.md) method must have previously succeeded, and the program must be stopped by a debugger.  
   
  The caller must deallocate the returned `SAFEARRAY` memory by using [SafeArrayDestroy](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraydestroy).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** BindingDisplay.h  
   
@@ -47,5 +47,5 @@ HRESULT GetCurrentDisplay (
   
 ## See also
 
-- [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)
-- [InitializeForProcess Method](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)
+- [IBindingDisplay Interface](ibindingdisplay-interface.md)
+- [InitializeForProcess Method](ibindingdisplay-initializeforprocess-method.md)

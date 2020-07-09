@@ -31,7 +31,7 @@ This sample requires a .NET Framework 4 application pool in order to run. To cre
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebHost\ASPNetCompatibility`
 
-This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified as the `ICalculatorSession` contract to allow a set of operations to be performed, while keeping a running result.
+This sample is based on the [Getting Started](getting-started-sample.md), which implements a calculator service. The `ICalculator` contract has been modified as the `ICalculatorSession` contract to allow a set of operations to be performed, while keeping a running result.
 
 ```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
@@ -57,7 +57,7 @@ The service maintains state, using the feature, for each client as multiple serv
 The service uses the ASP.NET session to store the result for each client session. This allows the service to maintain the running result for each client across multiple calls to the service.
 
 > [!NOTE]
-> ASP.NET session state and WCF sessions are very different things. See [Session](../../../../docs/framework/wcf/samples/session.md) for details on WCF sessions.
+> ASP.NET session state and WCF sessions are very different things. See [Session](session.md) for details on WCF sessions.
 
 The service has an intimate dependency on ASP.NET session state and requires ASP.NET compatibility mode to function correctly. These requirements are expressed declaratively by applying the `AspNetCompatibilityRequirements` attribute.
 
@@ -114,13 +114,13 @@ Press <ENTER> to terminate client.
 
 ### To set up, build, and run the sample
 
-1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 3. After the solution has been built, run Setup.bat to set up the ServiceModelSamples Application in IIS 7.0. The ServiceModelSamples directory should now appear as an IIS 7.0 Application.
 
-4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
 ## See also
 

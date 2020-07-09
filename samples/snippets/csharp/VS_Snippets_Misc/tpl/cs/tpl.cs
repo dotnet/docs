@@ -43,13 +43,13 @@ namespace TPL
         static double TrySolution2()
         {
             // Pretend to do something.
-            Thread.SpinWait(10000000); // ticks, not milliseconds  
+            Thread.SpinWait(10000000); // ticks, not milliseconds
             return DateTime.Now.Millisecond;
         }
         static double TrySolution3()
         {
             // Pretend to do something.
-            Thread.SpinWait(1000000); // ticks, not milliseconds 
+            Thread.SpinWait(1000000); // ticks, not milliseconds
             return DateTime.Now.Millisecond;
         }
 
@@ -129,7 +129,7 @@ namespace TPL
 
    // 15 was moved to tpl_cancellation and so number is available in tpl
 
-    //<snippet16>    
+    //<snippet16>
     public class TreeWalk
     {
         static void Main()
@@ -190,7 +190,7 @@ namespace TPL
     //</snippet16>
 
     //not used
-    //<snippet17> 
+    //<snippet17>
     public class OrderPreservation
     {
     }
@@ -227,7 +227,7 @@ namespace TPL
             //</snippet19>
 
             //<snippet20>
-            // Sequential version            
+            // Sequential version
             foreach (var item in sourceCollection)
             {
                 Process(item);

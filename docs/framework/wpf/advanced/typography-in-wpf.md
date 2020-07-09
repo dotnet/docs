@@ -8,7 +8,7 @@ ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 # Typography in WPF
 This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
   
-<a name="Improved_Quality_and_Performance_of_Text"></a>   
+<a name="Improved_Quality_and_Performance_of_Text"></a>
 ## Improved Quality and Performance of Text  
  Text in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
   
@@ -21,7 +21,7 @@ Text with ClearType y-direction antialiasing
   
  In addition, animated text, whether by character or glyph, takes full advantage of the graphics hardware capability enabled by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This results in smooth text animation.  
   
-<a name="Rich_Typography"></a>   
+<a name="Rich_Typography"></a>
 ## Rich Typography  
  The OpenType font format is an extension of the TrueType® font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
@@ -35,7 +35,7 @@ Text with ClearType y-direction antialiasing
   
  For more details on OpenType features, see [OpenType Font Features](opentype-font-features.md).  
   
-<a name="Enhanced_International_Text_Support"></a>   
+<a name="Enhanced_International_Text_Support"></a>
 ## Enhanced International Text Support  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides enhanced international text support by providing the following features:  
   
@@ -45,7 +45,7 @@ Text with ClearType y-direction antialiasing
   
 - Language-guided line breaking, hyphenation, and justification.  
   
-<a name="Enhanced_Font_Support"></a>   
+<a name="Enhanced_Font_Support"></a>
 ## Enhanced Font Support  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides enhanced font support by providing the following features:  
   
@@ -63,7 +63,7 @@ Text with ClearType y-direction antialiasing
   
 - Composite fonts embedded in a document, thereby providing document portability. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
-<a name="New_Text_APIs"></a>   
+<a name="New_Text_APIs"></a>
 ## New Text Application Programming Interfaces (APIs)  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides several text APIs for developers to use when including text in their applications. These APIs are grouped into three categories:  
   
@@ -79,11 +79,11 @@ Text with ClearType y-direction antialiasing
 #### Using Bitmap Effects, Transforms, and Text Effects  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to create visually interesting uses of text by uses features such as bitmap effects, transforms, and text effects. The following example shows a typical type of a drop shadow effect applied to text.  
   
- ![Text shadow with Softness &#61; 0.25](./media/typography-in-wpf/drop-shadow-text-effect.jpg) 
+ ![Text shadow with Softness &#61; 0.25](./media/typography-in-wpf/drop-shadow-text-effect.jpg)
   
  The following example shows a drop shadow effect and noise applied to text.  
   
- ![Text shadow with noise](./media/typography-in-wpf/drop-shadow-noise-text.jpg) 
+ ![Text shadow with noise](./media/typography-in-wpf/drop-shadow-noise-text.jpg)
   
  The following example shows an outer glow effect applied to text.  
   
@@ -95,7 +95,7 @@ Text with ClearType y-direction antialiasing
 
  The following example shows the second line of text scaled by 150% along the x-axis, and the third line of text scaled by 150% along the y-axis.  
   
- ![Text scaled using a ScaleTransform](./media/typography-in-wpf/scaled-text-scaletransform.jpg) 
+ ![Text scaled using a ScaleTransform](./media/typography-in-wpf/scaled-text-scaletransform.jpg)
   
  The following example shows text skewed along the x-axis.  
   
@@ -103,7 +103,7 @@ Text with ClearType y-direction antialiasing
   
  A <xref:System.Windows.Media.TextEffect> object is a helper object that allows you to treat text as one or more groups of characters in a text string. The following example shows an individual character being rotated. Each character is rotated independently at 1-second intervals.  
   
- ![Screenshot of text effect rotating text](./media/typography-in-wpf/rotating-text-effect.jpg) 
+ ![Screenshot of text effect rotating text](./media/typography-in-wpf/rotating-text-effect.jpg)
   
 #### Using Flow Documents  
  In addition to the common [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] controls, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] offers a layout control for text presentation—the <xref:System.Windows.Documents.FlowDocument> element. The <xref:System.Windows.Documents.FlowDocument> element, in conjunction with the <xref:System.Windows.Controls.DocumentViewer> element, provides a control for large amounts of text with varying layout requirements. Layout controls provide access to advanced typography through the <xref:System.Windows.Documents.Typography> object and font-related properties of other [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] controls.  
@@ -117,7 +117,7 @@ Text with ClearType y-direction antialiasing
 ### Lightweight Text Drawing  
  You can draw text directly to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects by using the <xref:System.Windows.Media.DrawingContext.DrawText%2A> method of the <xref:System.Windows.Media.DrawingContext> object. To use this method, you create a <xref:System.Windows.Media.FormattedText> object. This object allows you to draw multi-line text, in which each character in the text can be individually formatted. The functionality of the <xref:System.Windows.Media.FormattedText> object contains much of the functionality of the DrawText flags in the Windows API. In addition, the <xref:System.Windows.Media.FormattedText> object contains functionality such as ellipsis support, in which an ellipsis is displayed when text exceeds its bounds. The following example shows text that has several formats applied to it, including a linear gradient on the second and third words.  
   
- ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg) 
+ ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)
   
  You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   

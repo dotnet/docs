@@ -22,7 +22,7 @@ Even if you use the technique described in [How to stream XML fragments with acc
  The following is the source document, Source.xml:  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8" ?>   
+<?xml version="1.0" encoding="utf-8" ?>
 <Root>  
   <Customer>  
     <Name>A. Datum Corporation</Name>  

@@ -9,13 +9,13 @@
 
 # Order is important. The last matching pattern has the most precedence.
 # The folders are ordered as follows:
-# . Guides are first.
-# . .NET Core sections are next
+# . Guides
+# . .NET Core sections
 # . .NET Framework sections
 # . .NET Standard
 # . Architecture e-books
 
-# In each subsection folders are order first by depth, then alphabetically.
+# In each subsection, folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
 ######## API landing page ###########
@@ -44,31 +44,34 @@
 /docs/visual-basic/ @KathleenDollard
 
 # The ML.NET Guide:
-/docs/machine-learning/ @natke
+/docs/machine-learning/ @luisquintanilla
 
 # The .NET for Apache Spark Guide:
-/docs/spark/ @mamccrea
+/docs/spark/ @luisquintanilla
 
 # The .NET Architecture Guide:
 /docs/architecture/ @nishanil
 
 # The Desktop WPF Guide:
-/docs/desktop-wpf/ @Thraka
+/docs/desktop-wpf/ @adegeo
+
+# Azure Guide
+/docs/azure/ @CamSoper
 
 # Includes files
-/includes/ @tdykstra
+/includes/ @dotnet/docs
 
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/ @Thraka
+/docs/core/whats-new/ @adegeo
 # Deployment
-/docs/core/deploying/ @Thraka
+/docs/core/deploying/ @adegeo
 # Diagnostics
 /docs/core/diagnostics/ @sdmaclea @dotnet/docs
 # Docker
-/docs/core/docker/ @Thraka
+/docs/core/docker/ @IEvangelist
 # Install
-/docs/core/install/ @Thraka
+/docs/core/install/ @adegeo
 # Breaking changes
 /docs/core/compatibility/ @gewarren
 # Project SDKs
@@ -84,29 +87,29 @@
 # App domains
 /docs/framework/app-domains/ @gewarren
 # Config - WinForms
-/docs/framework/configure-apps/file-schema/winforms/ @Thraka
+/docs/framework/configure-apps/file-schema/winforms/ @adegeo
 # Deployment
-/docs/framework/deployment/ @Thraka
+/docs/framework/deployment/ @adegeo
 # Installation
-/docs/framework/install/ @Thraka
+/docs/framework/install/ @adegeo
 # Migration guide
 /docs/framework/migration-guide/ @gewarren
 # Reflection
-/docs/framework/reflection-and-codedom/ @Thraka
+/docs/framework/reflection-and-codedom/ @adegeo
 # Resources
-/docs/framework/resources/ @Thraka
+/docs/framework/resources/ @adegeo
 # Tools
 /docs/framework/tools/ @tdykstra
 # UI Automation
-/docs/framework/ui-automation/ @Thraka
+/docs/framework/ui-automation/ @adegeo
 # What's New
 /docs/framework/whats-new/ @gewarren
 # Winforms
-/docs/framework/winforms/ @Thraka
+/docs/framework/winforms/ @adegeo
 # WPF
-/docs/framework/wpf/ @Thraka
+/docs/framework/wpf/ @adegeo
 # XAML Services
-/docs/framework/xaml-services/ @Thraka
+/docs/framework/xaml-services/ @adegeo
 # ADO.NET
 /docs/framework/data/ @stevestein
 # NCL
@@ -118,37 +121,37 @@
 
 ################## .NET STANDARD ##################
 # Analyzers
-/docs/standard/analyzers/ @gewarren
+/docs/standard/analyzers/ @IEvangelist
 # Assembly
-/docs/standard/assembly/ @gewarren
+/docs/standard/assembly/ @IEvangelist
 # Asynchronous Programming Patterns
 /docs/standard/asynchronous-programming-patterns/ @BillWagner
 # Attributes
 /docs/standard/attributes/ @tdykstra
 # Base types
-/docs/standard/base-types/ @Thraka
+/docs/standard/base-types/ @adegeo
 # Collections
-/docs/standard/collections/ @BillWagner
+/docs/standard/collections/ @IEvangelist
 # Data
 /docs/standard/data/ @gewarren
 # Data - SQLite
 /docs/standard/data/sqlite/ @bricelam
 # Datetime
-/docs/standard/datetime/ @Thraka
+/docs/standard/datetime/ @adegeo
 # Design guidelines
 /docs/standard/design-guidelines/ @BillWagner
 # Events
-/docs/standard/events/ @gewarren
+/docs/standard/events/ @IEvangelist
 # Exceptions
 /docs/standard/exceptions/ @tdykstra
 # GC
-/docs/standard/garbage-collection/ @BillWagner
+/docs/standard/garbage-collection/ @gewarren
 # Generics
-/docs/standard/generics/ @Thraka
+/docs/standard/generics/ @adegeo
 # Globalization
 /docs/standard/globalization-localization/ @dotnet/docs
 # I/O
-/docs/standard/io/ @Thraka
+/docs/standard/io/ @adegeo
 # Library guidance
 /docs/standard/library-guidance/ @jamesnk
 # LINQ
@@ -158,9 +161,9 @@
 # Native Interop
 /docs/standard/native-interop/ @jkoritzinsky
 # Parallel programming
-/docs/standard/parallel-programming/ @BillWagner
+/docs/standard/parallel-programming/ @IEvangelist
 # Security
-/docs/standard/security/ @gewarren
+/docs/standard/security/ @IEvangelist
 # Serialization
 /docs/standard/serialization/ @tdykstra
 # Threading
@@ -173,29 +176,25 @@
 /docs/architecture/blazor-for-web-forms-developers/ @danroth27
 # gRPC:
 /docs/architecture/grpc-for-wcf-developers/ @shirhatti
+# Desktop:
+/docs/architecture/modernize-desktop/ @OliaG
 
 ################# Samples folder ##############
 
 ## These have been pulled directly from the samples repo:
 
-/samples/snippets/csharp/ @BillWagner
+/samples/snippets/csharp/ @BillWagner @IEvangelist
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner
 # F# Snippets:
 /samples/snippets/fsharp/ @cartermp
 
-# System.Json samples:
-/samples/snippets/core/system-text-json/ @tdykstra
-
-# Text runes:
-/samples/snippets/core/rune/  @tdykstra
-
 # WPF folders:
-/samples/snippets/xaml/wpf/   @thraka
-/samples/snippets/csharp/wpf/   @thraka
-/samples/snippets/visualbasic/wpf/   @thraka
-/samples/snippets/desktop-guide/wpf/   @thraka
+/samples/snippets/xaml/wpf/   @adegeo
+/samples/snippets/csharp/wpf/   @adegeo
+/samples/snippets/visualbasic/wpf/   @adegeo
+/samples/snippets/desktop-guide/wpf/   @adegeo
 
-/samples/snippets/winforms/  @thraka
+/samples/snippets/winforms/  @adegeo
 
 

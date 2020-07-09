@@ -62,7 +62,7 @@ namespace AdornersMiscCode
       }
     }
 
-    // Sample event handler:  
+    // Sample event handler:
     // private void ButtonClick(object sender, RoutedEventArgs e) {}
 
     // Adorners must subclass the abstract base class Adorner.
@@ -81,7 +81,7 @@ namespace AdornersMiscCode
       protected override void OnRender(DrawingContext drawingContext)
       {
         // Get a rectangle that represents the desired size of the rendered element
-        // after the rendering pass.  This will be used to draw at the corners of the 
+        // after the rendering pass.  This will be used to draw at the corners of the
         // adorned element.
         Rect adornedElementRect = new Rect(this.AdornedElement.RenderSize);
 

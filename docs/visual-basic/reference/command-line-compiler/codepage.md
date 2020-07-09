@@ -32,4 +32,4 @@ Specifies the code page to use for all source-code files in the compilation.
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Visual Basic Command-Line Compiler](index.md)

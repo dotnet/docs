@@ -1,5 +1,6 @@
 ---
 title: "Rehosting the Workflow Designer"
+description: The Windows Workflow Designer can be rehosted in environments outside of Visual Studio for creating, modifying, and monitoring workflows.
 ms.date: "03/30/2017"
 ms.assetid: bec1fc28-f902-4edb-86c5-436cec802c2b
 ---

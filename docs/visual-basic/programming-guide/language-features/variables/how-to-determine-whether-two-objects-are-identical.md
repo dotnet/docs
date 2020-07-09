@@ -10,7 +10,7 @@ ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 # How to: Determine Whether Two Objects Are Identical (Visual Basic)
 In Visual Basic, two variable references are considered identical if their pointers are the same, that is, if both variables point to the same class instance in memory. For example, in a Windows Forms application, you might want to make a comparison to determine whether the current instance (`Me`) is the same as a particular instance, such as `Form2`.  
   
- Visual Basic provides two operators to compare pointers. The [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) returns `True` if the objects are identical, and the [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md) returns `True` if they are not.  
+ Visual Basic provides two operators to compare pointers. The [Is Operator](../../../language-reference/operators/is-operator.md) returns `True` if the objects are identical, and the [IsNot Operator](../../../language-reference/operators/isnot-operator.md) returns `True` if they are not.  
   
 ## Determining if Two Objects Are Identical  
   
@@ -46,10 +46,10 @@ In Visual Basic, two variable references are considered identical if their point
   
 ## See also
 
-- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
-- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
-- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
-- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)
-- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)
-- [How to: Determine Whether Two Objects Are Related](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-related.md)
-- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Object Data Type](../../../language-reference/data-types/object-data-type.md)
+- [Object Variables](object-variables.md)
+- [Object Variable Values](object-variable-values.md)
+- [Is Operator](../../../language-reference/operators/is-operator.md)
+- [IsNot Operator](../../../language-reference/operators/isnot-operator.md)
+- [How to: Determine Whether Two Objects Are Related](how-to-determine-whether-two-objects-are-related.md)
+- [Me, My, MyBase, and MyClass](../../program-structure/me-my-mybase-and-myclass.md)

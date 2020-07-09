@@ -1,5 +1,6 @@
 ---
 title: "Performance Counters in the .NET Framework"
+description: Read about performance counters in .NET. There are performance counters for exceptions, interop, JIT compilers, loading, memory, networking, security, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "performance, .NET Framework applications"
@@ -21,7 +22,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**# of Filters / Sec**|Displays the number of .NET exception filters executed per second. An exception filter evaluates regardless of whether an exception is handled.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 |**# of Finallys / Sec**|Displays the number of finally blocks executed per second. A finally block is guaranteed to be executed regardless of how the try block was exited.  Only the finally blocks executed for an exception are counted; finally blocks on normal code paths are not counted by this counter.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 |**Throw to Catch Depth / Sec**|Displays the number of stack frames traversed, from the frame that threw the exception to the frame that handled the exception, per second. This counter resets to zero when an exception handler is entered, so nested exceptions show the handler-to-handler stack depth.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
-     
+
 ## Interop performance counters  
  The Performance console .NET CLR Interop category includes counters that provide information about an application's interaction with COM components, COM+ services, and external type libraries. The following table describes these performance counters.  
   
@@ -32,7 +33,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**# of Stubs**|Displays the current number of stubs created by the common language runtime. Stubs are responsible for marshaling arguments and return values from managed to unmanaged code, and vice versa, during a COM interop call or a platform invoke call.|  
 |**# of TLB exports / sec**|Reserved for future use.|  
 |**# of TLB imports / sec**|Reserved for future use.|  
-    
+
 ## JIT performance counters  
  The Performance console .NET CLR JIT category includes counters that provide information about code that has been JIT-compiled. The following table describes these performance counters.  
   
@@ -44,7 +45,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**IL Bytes Jitted / sec**|Displays the number of MSIL bytes that are JIT-compiled per second. This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 |**Standard Jit Failures**|Displays the peak number of methods the JIT compiler has failed to compile since the application started. This failure can occur if the MSIL cannot be verified or if there is an internal error in the JIT compiler.|  
 |**Total # of IL Bytes Jitted**|Displays the total MSIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|  
-     
+
 ## Loading performance counters  
  The Performance console .NET CLR Loading category includes counters that provide information about assemblies, classes, and application domains that are loaded. The following table describes these performance counters.  
   
@@ -66,7 +67,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total appdomains unloaded**|Displays the total number of application domains unloaded since the application started. If an application domain is loaded and unloaded multiple times, this counter increments each time the application domain is unloaded.|  
 |**Total Assemblies**|Displays the total number of assemblies loaded since the application started. If the assembly is loaded as domain-neutral from multiple application domains, this counter is incremented only once.|  
 |**Total Classes Loaded**|Displays the cumulative number of classes loaded in all assemblies since the application started.|  
-   
+
 ## Lock and thread performance counters  
  The Performance console .NET CLR LocksAndThreads category includes counters that provide information about managed locks and threads that an application uses. The following table describes these performance counters.  
   
@@ -82,7 +83,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Queue Length Peak**|Displays the total number of threads that waited to acquire a managed lock since the application started.|  
 |**rate of recognized threads / sec**|Displays the number of threads per second that have been recognized by the runtime. These threads are associated with a corresponding managed thread object. The runtime does not create these threads, but they have run inside the runtime at least once.<br /><br /> Only unique threads are tracked; threads with the same thread ID that reenter the runtime or are recreated after the thread exits are not counted twice.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 |**Total # of Contentions**|Displays the total number of times that threads in the runtime have attempted to acquire a managed lock unsuccessfully.|  
-    
+
 ## Memory performance counters  
  The Performance console .NET CLR Memory category includes counters that provide information about the garbage collector. The following table describes these performance counters.  
   
@@ -111,7 +112,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Promoted Finalization-Memory from Gen 0**|Displays the bytes of memory that are promoted from generation 0 to generation 1 only because they are waiting to be finalized. This counter is not cumulative; it displays the value observed at the end of the last garbage collection.|  
 |**Promoted Memory from Gen 0**|Displays the bytes of memory that survive garbage collection and are promoted from generation 0 to generation 1. Objects that are promoted only because they are waiting to be finalized are not included in this counter. This counter is not cumulative; it displays the value observed at the end of the last garbage collection.|  
 |**Promoted Memory from Gen 1**|Displays the bytes of memory that survive garbage collection and are promoted from generation 1 to generation 2. Objects that are promoted only because they are waiting to be finalized are not included in this counter. This counter is not cumulative; it displays the value observed at the end of the last garbage collection. This counter is reset to 0 if the last garbage collection was a generation 0 collection only.|  
-     
+
 ## Networking performance counters  
 
 The Performance console .NET CLR Networking category includes counters that provide information about data that an application sends and receives over the network. The following table describes these performance counters.  
@@ -209,7 +210,7 @@ for (int i = 0; i < Array.Length; i++)
 - ".NET CLR Networking 4.0.0.0" - All of the above socket counters plus the new performance counters supported on .NET Framework Version 4 and later. These new counters provide performance information on <xref:System.Net.HttpWebRequest> objects.  
   
  For more information on accessing and managing performance counters in an application, see [Performance Counters](performance-counters.md).  
-    
+
 ## Security performance counters  
  The Performance console .NET CLR Security category includes counters that provide information about the security checks that the common language runtime performs for an application. The following table describes these performance counters.  
   

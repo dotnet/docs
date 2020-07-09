@@ -28,7 +28,7 @@ HRESULT GetMethod(
   
 ## Parameters  
  `pRetVal`  
- [out] A pointer to the returned [ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md) interface.  
+ [out] A pointer to the returned [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -38,4 +38,4 @@ HRESULT GetMethod(
   
 ## See also
 
-- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)

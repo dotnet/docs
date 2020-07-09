@@ -7,12 +7,12 @@ public class ProcessFile
     public static void Main()
     {
         FileStream fs;
-        try   
+        try
         {
             // Opens a text tile.
             fs = new FileStream(@"C:\temp\data.txt", FileMode.Open);
             var sr = new StreamReader(fs);
-         
+
             // A value is read from the file and output to the console.
             string line = sr.ReadLine();
             Console.WriteLine(line);
@@ -24,7 +24,7 @@ public class ProcessFile
         }
         finally
         {
-            if (fs != null) 
+            if (fs != null)
                 fs.Close();
         }
     }

@@ -1,5 +1,6 @@
 ---
 title: "ServiceModel Registration Tool (ServiceModelReg.exe)"
+description: Use this command-line tool to manage the registration of WCF and WF components on a single machine if you experience problems with service activation.
 ms.date: "03/30/2017"
 ms.assetid: 396ec5ae-e34f-4c64-a164-fcf50e86b6ac
 ---
@@ -50,13 +51,13 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
  ServiceModelReg.exe cannot clean up prior version entries, nor can it register the new version's entries. The only workaround is to manually edit machine.config. You can locate this file at the following location.  
   
 ```console  
-%windir%\Microsoft.NET\Framework\v2.0.50727\config\machine.config   
+%windir%\Microsoft.NET\Framework\v2.0.50727\config\machine.config
 ```  
   
  If you are running WCF on a 64-bit machine, you should also edit the same file at this location.  
   
 ```console  
-%windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config   
+%windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config
 ```  
   
  Locate any XML nodes in this file that refer to "System.ServiceModel, Version=2.0.0.0", delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  

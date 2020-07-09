@@ -9,7 +9,7 @@ public class Example
       string[] inputs = { "cccd.", "aaad", "aaaa" };
       string back = @"(\w)\1+.\b";
       string noback = @"(?>(\w)\1+).\b";
-      
+
       foreach (string input in inputs)
       {
          Match match1 = Regex.Match(input, back);
@@ -21,7 +21,7 @@ public class Example
             Console.WriteLine(match1.Value);
          else
             Console.WriteLine("No match");
-         
+
          Console.Write("   Nonbacktracking: ");
          if (match2.Success)
             Console.WriteLine(match2.Value);

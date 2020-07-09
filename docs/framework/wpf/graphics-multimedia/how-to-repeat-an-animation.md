@@ -20,7 +20,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.Timeline.
   
  [!code-xaml[timingbehaviors_snip#RepeatBehaviorWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/RepeatBehaviorExample.xaml#repeatbehaviorwholepage)]  
   
- For the complete sample, see [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970).  
+ For the complete sample, see [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming).  
   
 ## See also
 
@@ -28,4 +28,4 @@ This example shows how to use the <xref:System.Windows.Media.Animation.Timeline.
 - [Specify Whether a Timeline Automatically Reverses](how-to-specify-whether-a-timeline-automatically-reverses.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)
 - [Animation Overview](animation-overview.md)
-- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+- [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming)

@@ -521,7 +521,7 @@ The previous observations about performance with struct tuples and records also 
 
 ```fsharp
     type Name = Name of string
-    
+
     [<Struct>]
     type SName = SName of string
 
@@ -684,7 +684,7 @@ F# has full support for objects and object-oriented (OO) concepts. Although many
 
 [Object Expressions](../language-reference/object-expressions.md) allow you to implement interfaces on the fly, binding the implemented interface to a value without needing to do so inside of a class. This is convenient, especially if you _only_ need to implement the interface and have no need for a full class.
 
-For example, here is the code that is run in [Ionide](http://ionide.io/) to provide a code fix action if you've added a symbol that you don't have an `open` statement for:
+For example, here is the code that is run in [Ionide](https://ionide.io/) to provide a code fix action if you've added a symbol that you don't have an `open` statement for:
 
 ```fsharp
     let private createProvider () =

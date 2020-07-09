@@ -1,5 +1,6 @@
 ---
 title: "IPv6 Auto-Configuration"
+description: Learn how IPv6 supports node Plug and Play, where a node joins an IPv6 network and is configured without human intervention. 
 ms.date: "03/30/2017"
 ms.assetid: 581c1d21-1013-43a3-bf3e-2d9ead62b79c
 ---

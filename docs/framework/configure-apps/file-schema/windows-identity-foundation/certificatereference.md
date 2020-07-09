@@ -19,7 +19,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
 <system.identityModel.services>  
   <federationConfiguration>  
     <serviceCertificate>  
-      <certificateReference   
+      <certificateReference
         storeName="AddressBook||AuthRoot||CertificateAuthority||Disallowed||My||Root||TrustedPeople||TrustedPublisher"  
         storeLocation="CurrentUser||LocalMachine"  
         x509FindType="FindByThumbprint||FindBySubjectName||FindBySubjectDistinguishedName||FindByIssuerName||FindByIssuerDistinguishedName||FindBySerialNumber||FindByTimeValid||FindByTimeNotYetValid||FindByTimeExpired||FindByTemplateName||FindByApplicationPolicy||FindByCertificatePolicy||FindByExtension||FindByKeyUsage||FindBySubjectKeyIdentifier"  

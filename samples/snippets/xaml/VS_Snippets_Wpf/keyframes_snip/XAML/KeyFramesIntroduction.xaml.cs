@@ -11,7 +11,7 @@ namespace Microsoft.Samples.KeyFrameExamples
 
     public partial class KeyFramesIntroduction : Page
     {
-    
+
         public KeyFramesIntroduction()
         {
             InitializeComponent();
@@ -20,12 +20,12 @@ namespace Microsoft.Samples.KeyFrameExamples
         private void exampleCanvasLayoutUpdated(object sender, EventArgs args)
         {
 
-            myVisualBrush.Viewbox = 
+            myVisualBrush.Viewbox =
                             new Rect(
                                 Canvas.GetLeft(myRectangle),
                                 Canvas.GetTop(myRectangle),
                                 myRectangle.ActualWidth,
-                                myRectangle.ActualHeight        
+                                myRectangle.ActualHeight
                             );
         }
     }

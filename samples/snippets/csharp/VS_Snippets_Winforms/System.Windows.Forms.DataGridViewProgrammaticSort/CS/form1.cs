@@ -44,7 +44,7 @@ class Form1 : Form
         dataGridView1.Columns[0].HeaderText = "Last Name";
         dataGridView1.Columns[1].HeaderText = "City";
         // Put the new columns into programmatic sort mode
-        dataGridView1.Columns[0].SortMode = 
+        dataGridView1.Columns[0].SortMode =
             DataGridViewColumnSortMode.Programmatic;
         dataGridView1.Columns[1].SortMode =
             DataGridViewColumnSortMode.Programmatic;

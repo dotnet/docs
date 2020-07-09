@@ -31,6 +31,6 @@ For example, the following lines of code are labeled with `Jump` and `120`, resp
 
 ## See also
 
-- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
-- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [Statements](../language-features/statements.md)
+- [Declared Element Names](../language-features/declared-elements/declared-element-names.md)
+- [Program Structure and Code Conventions](program-structure-and-code-conventions.md)

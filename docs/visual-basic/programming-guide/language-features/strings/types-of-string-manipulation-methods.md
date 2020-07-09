@@ -16,7 +16,7 @@ There are several different ways to analyze and manipulate your strings. Some of
   
  In this example, the `Mid` function performs a direct operation on `aString` and assigns the value to `bString`.  
   
- For a list of Visual Basic string manipulation methods, see [String Manipulation Summary](../../../../visual-basic/language-reference/keywords/string-manipulation-summary.md).  
+ For a list of Visual Basic string manipulation methods, see [String Manipulation Summary](../../../language-reference/keywords/string-manipulation-summary.md).  
   
 ### Shared Methods and Instance Methods  
  You can also manipulate strings with the methods of the `String` class. There are two types of methods in `String`: *shared* methods and *instance* methods.  
@@ -39,4 +39,4 @@ There are several different ways to analyze and manipulate your strings. Some of
   
 ## See also
 
-- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Introduction to Strings in Visual Basic](introduction-to-strings.md)

@@ -60,7 +60,7 @@ namespace csrefKeywordsContextual
         }
     }
 
-     //<snippet5>    
+     //<snippet5>
     public class PowersOf2
     {
         static void Main()
@@ -185,14 +185,14 @@ namespace csrefKeywordsContextual
                         group student by student.LastName[0];
             //</Snippet10>
 
-            //<Snippet11>    
+            //<Snippet11>
             IEnumerable<string> sortDescendingQuery =
                 from vegetable in vegetables
                 orderby vegetable descending
                 select vegetable;
             //</Snippet11>
 
-            //<Snippet14>           
+            //<Snippet14>
             IEnumerable<string> sortAscendingQuery =
                 from vegetable in vegetables
                 orderby vegetable ascending
@@ -207,12 +207,12 @@ namespace csrefKeywordsContextual
                 from category in categories
                 join prod in products on category.ID equals prod.CategoryID
                 select new { ProductName = prod.Name, Category = category.Name };
-            //</Snippet12> 
+            //</Snippet12>
         }
 
-        //<Snippet13> 
+        //<Snippet13>
         class TestClass : global::TestApp { }
-        //</Snippet13>  
+        //</Snippet13>
     }
 
     //<Snippet15>
@@ -238,7 +238,7 @@ class TestApp { } // for snippet13
 // yield (C# Reference)
 // 1089194f-9e53-46a2-8642-53ccbe9d414d
 
-//<Snippet21>    
+//<Snippet21>
 public static class GalaxyClass
 {
     public static void ShowGalaxies()
@@ -271,4 +271,4 @@ public static class GalaxyClass
         public int MegaLightYears { get; set; }
     }
 }
-    //</Snippet21>    
+    //</Snippet21>

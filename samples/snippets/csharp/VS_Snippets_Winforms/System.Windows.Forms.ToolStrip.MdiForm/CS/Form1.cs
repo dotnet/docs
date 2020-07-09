@@ -7,8 +7,8 @@ using System.Windows.Forms;
 
 namespace MdiFormCS
 {
-    // This code example demonstrates an MDI form 
-    // that supports menu merging and moveable 
+    // This code example demonstrates an MDI form
+    // that supports menu merging and moveable
     // ToolStrip controls
     public class Form1 : Form
     {
@@ -40,7 +40,7 @@ namespace MdiFormCS
         }
 
         // <snippet2>
-        // This method creates a new ChildForm instance 
+        // This method creates a new ChildForm instance
         // and attaches it to the MDI parent form.
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -52,7 +52,7 @@ namespace MdiFormCS
         // </snippet2>
 
         #region Windows Form Designer generated code
-        
+
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -72,9 +72,9 @@ namespace MdiFormCS
             this.toolStripPanel3.SuspendLayout();
             this.toolStripPanel4.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // menuStrip1
-            // 
+            //
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -83,24 +83,24 @@ namespace MdiFormCS
             this.menuStrip1.Size = new System.Drawing.Size(292, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
+            //
             // toolStripMenuItem1
-            // 
+            //
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(57, 20);
             this.toolStripMenuItem1.Text = "Window";
-            // 
+            //
             // newToolStripMenuItem
-            // 
+            //
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
-            // 
+            //
             // toolStripPanel1
-            // 
+            //
             this.toolStripPanel1.Controls.Add(this.toolStrip1);
             this.toolStripPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStripPanel1.Location = new System.Drawing.Point(0, 49);
@@ -108,17 +108,17 @@ namespace MdiFormCS
             this.toolStripPanel1.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.toolStripPanel1.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.toolStripPanel1.Size = new System.Drawing.Size(26, 199);
-            // 
+            //
             // toolStrip1
-            // 
+            //
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.Location = new System.Drawing.Point(0, 3);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(26, 109);
             this.toolStrip1.TabIndex = 0;
-            // 
+            //
             // toolStripPanel2
-            // 
+            //
             this.toolStripPanel2.Controls.Add(this.toolStrip2);
             this.toolStripPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.toolStripPanel2.Location = new System.Drawing.Point(0, 24);
@@ -126,17 +126,17 @@ namespace MdiFormCS
             this.toolStripPanel2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.toolStripPanel2.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripPanel2.Size = new System.Drawing.Size(292, 25);
-            // 
+            //
             // toolStrip2
-            // 
+            //
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip2.Location = new System.Drawing.Point(3, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(109, 25);
             this.toolStrip2.TabIndex = 0;
-            // 
+            //
             // toolStripPanel3
-            // 
+            //
             this.toolStripPanel3.Controls.Add(this.toolStrip3);
             this.toolStripPanel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.toolStripPanel3.Location = new System.Drawing.Point(266, 49);
@@ -144,17 +144,17 @@ namespace MdiFormCS
             this.toolStripPanel3.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.toolStripPanel3.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.toolStripPanel3.Size = new System.Drawing.Size(26, 199);
-            // 
+            //
             // toolStrip3
-            // 
+            //
             this.toolStrip3.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip3.Location = new System.Drawing.Point(0, 3);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(26, 109);
             this.toolStrip3.TabIndex = 0;
-            // 
+            //
             // toolStripPanel4
-            // 
+            //
             this.toolStripPanel4.Controls.Add(this.toolStrip4);
             this.toolStripPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStripPanel4.Location = new System.Drawing.Point(0, 248);
@@ -162,17 +162,17 @@ namespace MdiFormCS
             this.toolStripPanel4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.toolStripPanel4.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripPanel4.Size = new System.Drawing.Size(292, 25);
-            // 
+            //
             // toolStrip4
-            // 
+            //
             this.toolStrip4.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip4.Location = new System.Drawing.Point(3, 0);
             this.toolStrip4.Name = "toolStrip4";
             this.toolStrip4.Size = new System.Drawing.Size(109, 25);
             this.toolStrip4.TabIndex = 0;
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
@@ -223,16 +223,16 @@ namespace MdiFormCS
         }
 
         #region Windows Form Designer generated code
-        
+
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // menuStrip1
-            // 
+            //
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -240,15 +240,15 @@ namespace MdiFormCS
             this.menuStrip1.Size = new System.Drawing.Size(292, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
+            //
             // toolStripMenuItem1
-            // 
+            //
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(90, 20);
             this.toolStripMenuItem1.Text = "ChildMenuItem";
-            // 
+            //
             // ChildForm
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);

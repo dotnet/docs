@@ -22,7 +22,7 @@ namespace HostingWfInWpf
         // To use Loaded event put Loaded="WindowLoaded" attribute in root element of .xaml file.
         // private void WindowLoaded(object sender, RoutedEventArgs e) {}
 
-        // Sample event handler:  
+        // Sample event handler:
         // private void ButtonClick(object sender, RoutedEventArgs e) {}
     }
 }

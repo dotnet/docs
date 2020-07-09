@@ -1,7 +1,7 @@
 ---
-title: "Member access operators - C# reference"
+title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 09/18/2019
+ms.date: 04/17/2020
 author: pkulikov
 f1_keywords: 
   - "._CSharpKeyword"
@@ -33,18 +33,18 @@ helpviewer_keywords:
   - ".. operator [C#]"
   - "range operator [C#]"
 ---
-# Member access operators (C# reference)
+# Member access operators and expressions (C# reference)
 
-You can use the following operators when you access a type member:
+You can use the following operators and expressions when you access a type member:
 
-- [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
+- [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
 - [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
-- [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate
+- [`()` (invocation)](#invocation-expression-): to call an accessed method or invoke a delegate
 - [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
 - [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
-## Member access operator .
+## Member access expression .
 
 You use the `.` token to access a member of a namespace or a type, as the following examples demonstrate:
 
@@ -103,7 +103,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Available in C# 6 and later, a null-conditional operator applies a [member access](#member-access-operator-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
+Available in C# 6 and later, a null-conditional operator applies a [member access](#member-access-expression-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
@@ -124,7 +124,16 @@ The following example demonstrates the usage of the `?.` and `?[]` operators:
 
 The preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
+If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of the corresponding [nullable value type](../builtin-types/nullable-value-types.md) `T?`. If you need an expression of type `T`, apply the null-coalescing operator `??` to a null-conditional expression, as the following example shows:
+
+[!code-csharp-interactive[null-conditional with null-coalescing](snippets/MemberAccessOperators.cs#NullConditionalWithNullCoalescing)]
+
+In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
+
 The null-conditional member access operator `?.` is also known as the Elvis operator.
+
+> [!NOTE]
+> In C# 8, the [null-forgiving operator](null-forgiving.md) terminates the list of preceding null-conditional operations. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
 
 ### Thread-safe delegate invocation
 
@@ -144,7 +153,9 @@ if (handler != null)
 }
 ```
 
-## Invocation operator ()
+That is a thread-safe way to ensure that only a non-null `handler` is invoked. Because delegate instances are immutable, no thread can change the object referenced by the `handler` local variable. In particular, if the code executed by another thread unsubscribes from the `PropertyChanged` event and `PropertyChanged` becomes `null` before `handler` is invoked, the object referenced by `handler` remains unaffected. The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
+
+## Invocation expression ()
 
 Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../programming-guide/delegates/index.md).
 
@@ -158,7 +169,7 @@ You also use parentheses when you invoke a [constructor](../../programming-guide
 
 You also use parentheses to adjust the order in which to evaluate operations in an expression. For more information, see [C# operators](index.md).
 
-[Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
+[Cast expressions](type-testing-and-cast.md#cast-expression), which perform explicit type conversions, also use parentheses.
 
 ## Index from end operator ^
 
@@ -168,7 +179,7 @@ Available in C# 8.0 and later, the `^` operator indicates the element position f
 
 As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
 
-You also can use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
 ## Range operator ..
 

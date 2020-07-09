@@ -44,7 +44,7 @@ namespace MyNamespace
       static SpinnerControl()
       {
           DefaultStyleKeyProperty.OverrideMetadata(
-              typeof(SpinnerControl), 
+              typeof(SpinnerControl),
               new FrameworkPropertyMetadata(typeof(SpinnerControl))
           );
       }

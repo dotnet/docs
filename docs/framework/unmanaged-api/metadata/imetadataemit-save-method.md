@@ -22,8 +22,8 @@ Saves all metadata in the current scope to the file at the specified address.
 ## Syntax  
   
 ```cpp  
-HRESULT Save (   
-    [in]  LPCWSTR     szFile,   
+HRESULT Save (
+    [in]  LPCWSTR     szFile,
     [in]  DWORD       dwSaveFlags  
 );  
 ```  
@@ -36,7 +36,7 @@ HRESULT Save (
  [in] Reserved. Must be zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,5 +46,5 @@ HRESULT Save (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

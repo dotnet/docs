@@ -20,15 +20,15 @@ class Program
         }
     }
 
-    static IEnumerable<int> Factor(int number) 
+    static IEnumerable<int> Factor(int number)
     {
         int max = (int)Math.Sqrt(number);
-        for (int i = 1; i <= max; i++) 
+        for (int i = 1; i <= max; i++)
         {
             if (number % i == 0)
             {
                 yield return i;
-                if (i != number / i) 
+                if (i != number / i)
                 {
                     yield return number / i;
                 }

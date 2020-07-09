@@ -94,7 +94,7 @@ class CreateLocation: Activity
   
     [RequiredArgument]  
     [OverloadGroup("G3")]  
-    public InArgument<int> Zip { get; set; }                  
+    public InArgument<int> Zip { get; set; }
 }  
 ```  
   
@@ -132,7 +132,7 @@ public class DbUpdate: AsyncCodeActivity
     public IDictionary<string, Argument> Parameters { get; }  
   
     [DependsOn("Parameters")]  
-    public OutArgument<int> AffectedRecords { get; set; }       
+    public OutArgument<int> AffectedRecords { get; set; }
 }  
 ```  
   

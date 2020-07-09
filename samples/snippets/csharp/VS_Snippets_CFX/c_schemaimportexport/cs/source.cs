@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum)]
 namespace ImportExport1
-{    
+{
 //<snippet1>
 [DataContract]
 public partial class Vehicle : IExtensibleDataObject
@@ -28,7 +28,7 @@ public partial class Vehicle : IExtensibleDataObject
         get {return this.colorField;}
         set {this.colorField=value;}
     }
-    
+
     private ExtensionDataObject extensionDataField;
     public ExtensionDataObject ExtensionData {
         get {return this.extensionDataField;}
@@ -54,7 +54,7 @@ internal partial class Vehicle : IExtensibleDataObject
         get {return this.colorField;}
         set {this.colorField=value;}
     }
-    
+
     private ExtensionDataObject extensionDataField;
     public ExtensionDataObject ExtensionData {
         get {return this.extensionDataField;}
@@ -70,7 +70,7 @@ namespace Contoso.Cars {
 [DataContract]
 public partial class Vehicle : IExtensibleDataObject
 {
-    // Code not shown.    
+    // Code not shown.
 
     public ExtensionDataObject ExtensionData
     {
@@ -134,13 +134,13 @@ public partial class Vehicle : IExtensibleDataObject, INotifyPropertyChanged
             }
 }
     }
-    
+
     public event PropertyChangedEventHandler PropertyChanged;
     protected void RaisePropertyChanged (string propertyName) {
-        PropertyChangedEventHandler propertyChanged = 
+        PropertyChangedEventHandler propertyChanged =
 this.PropertyChanged;
         if (propertyChanged != null) {
-            propertyChanged(this, 
+            propertyChanged(this,
 new PropertyChangedEventArgs(propertyName));
         }
     }
@@ -196,5 +196,5 @@ namespace ImportExport7
          XsdDataContractImporter importer = new XsdDataContractImporter();
          importer.Options.Namespaces.Add(new KeyValuePair<string,string>("http://schemas.contoso.com/carSchema", "Contoso.Cars"));
 	// </snippet8>
-    }    
+    }
 }

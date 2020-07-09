@@ -1,5 +1,6 @@
 ---
 title: "Application Development"
+description: Learn how to build a variety of applications using the framework of Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "WPF [WPF], about application development"
@@ -23,7 +24,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  To build this set of applications, WPF implements a host of services. This topic provides an overview of these services and where to find more information.  
 
-<a name="Application_Management"></a>   
+<a name="Application_Management"></a>
 ## Application Management  
  Executable WPF applications commonly require a core set of functionality that includes the following:  
   
@@ -47,13 +48,13 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  For more information, see [Application Management Overview](application-management-overview.md).  
   
-<a name="WPF_Application_Resource__Content__and_Data_Files"></a>   
+<a name="WPF_Application_Resource__Content__and_Data_Files"></a>
 ## WPF Application Resource, Content, and Data Files  
  WPF extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md).  
   
  A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique URI. For more information, see [Pack URIs in WPF](pack-uris-in-wpf.md).  
   
-<a name="Windows_and_Dialog_Boxes"></a>   
+<a name="Windows_and_Dialog_Boxes"></a>
 ## Windows and Dialog Boxes  
  Users interact with WPF standalone applications through windows. The purpose of a window is to host application content and expose application functionality that usually allows users to interact with the content. In WPF, windows are encapsulated by the <xref:System.Windows.Window> class, which supports:  
   
@@ -75,7 +76,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  
   
-<a name="Navigation"></a>   
+<a name="Navigation"></a>
 ## Navigation  
  WPF supports Web-style navigation using pages (<xref:System.Windows.Controls.Page>) and hyperlinks (<xref:System.Windows.Documents.Hyperlink>). Navigation can be implemented in a variety of ways that include the following:  
   
@@ -101,17 +102,17 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  WPF also supports a special type of navigation known as structured navigation. Structured navigation can be used to call one or more pages that return data in a structured and predictable way that is consistent with calling functions. This capability depends on the <xref:System.Windows.Navigation.PageFunction%601> class, which is described further in [Structured Navigation Overview](structured-navigation-overview.md). <xref:System.Windows.Navigation.PageFunction%601> also serves to simplify the creation of complex navigation topologies, which are described in [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
-<a name="Hosting"></a>   
+<a name="Hosting"></a>
 ## Hosting  
  XBAPs can be hosted in Microsoft Internet Explorer or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
   
-<a name="Build_and_Deploy"></a>   
+<a name="Build_and_Deploy"></a>
 ## Build and Deploy  
  Although simple WPF applications can be built from a command prompt using command-line compilers, WPF integrates with Visual Studio to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  Depending on the type of application you build, there are one or more deployment options to choose from. For more information, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).  
   
-<a name="related_topics"></a>   
+<a name="related_topics"></a>
 ## Related Topics  
   
 |Title|Description|  

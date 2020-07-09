@@ -22,7 +22,7 @@ namespace PatternMatching
 
             WriteLine(GeometricUtilities.ComputeArea_Version3(s));
             WriteLine(GeometricUtilities.ComputeArea_Version3(c));
-            
+
             var what = CreateShape("       ");
             WriteLine(what);
 
@@ -40,7 +40,7 @@ namespace PatternMatching
 
                 case "square":
                     return new Square(4);
-                
+
                 case "large-circle":
                     return new Circle(12);
 
@@ -49,7 +49,7 @@ namespace PatternMatching
                     return null;
                 default:
                     return "invalid shape description";
-            }            
+            }
         }
 #endregion
     }

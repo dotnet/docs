@@ -34,17 +34,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.contactDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // contactDataGridView
-            // 
+            //
             this.contactDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.contactDataGridView.Location = new System.Drawing.Point(12, 12);
             this.contactDataGridView.Name = "contactDataGridView";
             this.contactDataGridView.Size = new System.Drawing.Size(360, 150);
             this.contactDataGridView.TabIndex = 0;
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 273);

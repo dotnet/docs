@@ -102,6 +102,11 @@ namespace operators
             Console.WriteLine("========= conversion operators example =========");
             UserDefinedConversions.Main();
             Console.WriteLine();
+
+            Console.WriteLine("========= switch expression example ============");
+            SwitchExpressions.Examples();
+            Console.WriteLine();
+
         }
     }
 }

@@ -43,17 +43,17 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
  This method returns `true` for success and `false` if an error occurs.  
   
 ## Remarks  
- This function is called by the operating system loader for DLL assemblies. For executable assemblies, the loader calls the [\_CorExeMain](../../../../docs/framework/unmanaged-api/hosting/corexemain-function.md) function instead.  
+ This function is called by the operating system loader for DLL assemblies. For executable assemblies, the loader calls the [\_CorExeMain](corexemain-function.md) function instead.  
   
  The operating system loader calls this method regardless of the entry point specified in the DLL file.  
   
 The `_CorDllMain` function is called directly by the operating system loader.
   
- For additional information, see the Remarks section in the [\_CorValidateImage](../../../../docs/framework/unmanaged-api/hosting/corvalidateimage-function.md) topic.  
+ For additional information, see the Remarks section in the [\_CorValidateImage](corvalidateimage-function.md) topic.  
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -63,4 +63,4 @@ The `_CorDllMain` function is called directly by the operating system loader.
   
 ## See also
 
-- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

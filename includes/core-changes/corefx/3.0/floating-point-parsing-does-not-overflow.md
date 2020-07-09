@@ -24,7 +24,7 @@ This change can affect your code in either of two ways:
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 
@@ -35,7 +35,7 @@ CoreFx
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `Overload:System.Double.Parse`
 - `Overload:System.Double.TryParse`

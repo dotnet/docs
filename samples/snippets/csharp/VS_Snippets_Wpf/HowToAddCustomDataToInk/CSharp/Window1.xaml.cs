@@ -39,7 +39,7 @@ public partial class Window1 : Window
         inkCanvas1.DefaultDrawingAttributes = teachersDA;
     }
 
-    // Switch between using the 'pen' DrawingAttributes and the 
+    // Switch between using the 'pen' DrawingAttributes and the
     // 'highlighter' DrawingAttributes.
     void switchAuthor_click(Object sender, RoutedEventArgs e)
     {

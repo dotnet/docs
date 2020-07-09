@@ -3,7 +3,7 @@
 '<Snippet3>
 '<Snippet2>
 '<Snippet1>
-Option Explicit On 
+Option Explicit On
 Option Strict On
 
 Namespace GetFileSystemEntries

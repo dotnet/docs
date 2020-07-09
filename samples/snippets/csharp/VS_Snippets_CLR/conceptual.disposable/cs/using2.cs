@@ -1,28 +1,29 @@
 ﻿// <Snippet2>
-using System;
 using System.IO;
 
-public class Example
+class Example
 {
-   public static void Main()
-   {
-      Char[] buffer = new Char[50];
-      StreamReader s = null;
-      try {
-         s = new StreamReader("File1.txt"); 
-         int charsRead = 0;
-         while (s.Peek() != -1) {
-            charsRead = s.Read(buffer, 0, buffer.Length);
-            //
-            // Process characters read.
-            //   
-         }
-      }
-      finally {
-         // If non-null, call the object's Dispose method.
-         if (s != null)
-            s.Dispose();
-      }
-   }
+    static void Main()
+    {
+        char[] buffer = new char[50];
+        StreamReader? streamReader = null;
+        try
+        {
+            streamReader = new StreamReader("file1.txt");
+            int charsRead = 0;
+            while (streamReader.Peek() != -1)
+            {
+                charsRead = streamReader.Read(buffer, 0, buffer.Length);
+                //
+                // Process characters read.
+                //
+            }
+        }
+        finally
+        {
+            // If non-null, call the object's Dispose method.
+            streamReader?.Dispose();
+        }
+    }
 }
 // </Snippet2>

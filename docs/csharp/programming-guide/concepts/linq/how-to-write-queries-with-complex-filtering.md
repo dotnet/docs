@@ -17,7 +17,7 @@ Sometimes you want to write LINQ to XML queries with complex filters. For exampl
 XElement root = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> purchaseOrders =  
     from el in root.Elements("PurchaseOrder")  
-    where   
+    where
         (from add in el.Elements("Address")  
         where  
             (string)add.Attribute("Type") == "Shipping" &&  

@@ -8,7 +8,7 @@ public class Person
     public string City { get; set; }
     public string State { get; set; }
 
-    public Person(string fname, string mname, string lname, 
+    public Person(string fname, string mname, string lname,
                   string cityName, string stateName)
     {
         FirstName = fname;
@@ -32,7 +32,7 @@ public class Person
         lname = LastName;
     }
 
-    public void Deconstruct(out string fname, out string lname, 
+    public void Deconstruct(out string fname, out string lname,
                             out string city, out string state)
     {
         fname = FirstName;

@@ -15,7 +15,7 @@ namespace MarqueeControlLibrary.Design
 {
     [ToolboxItemFilter("MarqueeControlLibrary.MarqueeBorder", ToolboxItemFilterType.Require)]
     [ToolboxItemFilter("MarqueeControlLibrary.MarqueeText", ToolboxItemFilterType.Require)]
-    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")] 
+    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class MarqueeControlRootDesigner : DocumentDesigner
     {
         // </snippet530>
@@ -34,7 +34,7 @@ namespace MarqueeControlLibrary.Design
             base.Initialize(component);
 
             IComponentChangeService cs =
-                GetService(typeof(IComponentChangeService)) 
+                GetService(typeof(IComponentChangeService))
                 as IComponentChangeService;
 
             if (cs != null)

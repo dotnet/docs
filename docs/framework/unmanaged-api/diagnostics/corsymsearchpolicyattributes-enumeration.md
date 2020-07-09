@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorSymSearchPolicyAttributes Enumeration
-Specifies the policy to be used when doing a search for a symbol reader. These constants are used by the [ISymUnmanagedBinder2::GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) and [ISymUnmanagedBinder3::GetReaderFromCallback](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-getreaderfromcallback-method.md) methods.  
+Specifies the policy to be used when doing a search for a symbol reader. These constants are used by the [ISymUnmanagedBinder2::GetReaderForFile2](isymunmanagedbinder2-getreaderforfile2-method.md) and [ISymUnmanagedBinder3::GetReaderFromCallback](isymunmanagedbinder3-getreaderfromcallback-method.md) methods.  
   
 > [!IMPORTANT]
 > It is a security risk to open a program database (PDB) file from an untrusted source.  
@@ -26,9 +26,9 @@ Specifies the policy to be used when doing a search for a symbol reader. These c
 ```cpp  
 typedef enum CorSymSearchPolicyAttributes  
 {  
-    AllowRegistryAccess      = 0x1,       
+    AllowRegistryAccess      = 0x1,
     AllowSymbolServerAccess  = 0x2,  
-    AllowOriginalPathAccess  = 0x4,     //      
+    AllowOriginalPathAccess  = 0x4,     //
     AllowReferencePathAccess = 0x8  
 } CorSymSearchPolicyAttributes;  
 ```  
@@ -47,4 +47,4 @@ typedef enum CorSymSearchPolicyAttributes
   
 ## See also
 
-- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+- [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)

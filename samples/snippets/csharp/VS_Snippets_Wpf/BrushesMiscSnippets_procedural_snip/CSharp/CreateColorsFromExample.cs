@@ -104,13 +104,13 @@ namespace SDKSample
             colorValues[2] = 0.5f;
             colorValues[3] = 0.5f;
 
-            // Uri to sample color profile. This color profile is used to 
+            // Uri to sample color profile. This color profile is used to
             // determine what the colors the colorValues map to.
             Uri iccUri = new Uri("C:\\sampleColorProfile.icc");
 
             // The FromAValues method requires an explicit value for alpha
             // (first parameter). The values given by the second parameter are
-            // used with the color profile specified by the third parameter to 
+            // used with the color profile specified by the third parameter to
             // determine the color.
             myAValuesColor = Color.FromAValues(1.0f, colorValues, iccUri);
             return myAValuesColor;
@@ -127,11 +127,11 @@ namespace SDKSample
             colorValues[2] = 0.5f;
             colorValues[3] = 0.5f;
 
-            // Uri to sample color profile. This color profile is used to 
+            // Uri to sample color profile. This color profile is used to
             // determine what the colors the colorValues map to.
             Uri myIccUri = new Uri("C:\\sampleColorProfile.icc");
 
-            // The values given by the first parameter are used with the color 
+            // The values given by the first parameter are used with the color
             // profile specified by the second parameter to determine the color.
             myValuesColor = Color.FromValues(colorValues, myIccUri);
             return myValuesColor;

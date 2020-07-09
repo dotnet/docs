@@ -96,7 +96,7 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     ```csharp  
     protected void LinkLabel1_LinkClicked(object sender, System.EventArgs e)  
     {  
-       // Change the color of the link text by setting LinkVisited   
+       // Change the color of the link text by setting LinkVisited
        // to True.  
        linkLabel1.LinkVisited = true;  
        // Then do whatever other action is appropriate  
@@ -108,7 +108,7 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
        System::Void linkLabel1_LinkClicked(System::Object ^  sender,  
           System::Windows::Forms::LinkLabelLinkClickedEventArgs ^  e)  
        {  
-          // Change the color of the link text by setting LinkVisited   
+          // Change the color of the link text by setting LinkVisited
           // to True.  
           linkLabel1->LinkVisited = true;  
           // Then do whatever other action is appropriate  

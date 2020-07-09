@@ -26,21 +26,21 @@ class Program
             "DELETE FROM Customers WHERE CustomerID = @CustomerID", connection);
 
         // Create the parameters.
-        adapter.InsertCommand.Parameters.Add("@CustomerID", 
+        adapter.InsertCommand.Parameters.Add("@CustomerID",
             SqlDbType.Char, 5, "CustomerID");
-        adapter.InsertCommand.Parameters.Add("@CompanyName", 
+        adapter.InsertCommand.Parameters.Add("@CompanyName",
             SqlDbType.VarChar, 40, "CompanyName");
 
-        adapter.UpdateCommand.Parameters.Add("@CustomerID", 
+        adapter.UpdateCommand.Parameters.Add("@CustomerID",
             SqlDbType.Char, 5, "CustomerID");
-        adapter.UpdateCommand.Parameters.Add("@CompanyName", 
+        adapter.UpdateCommand.Parameters.Add("@CompanyName",
             SqlDbType.VarChar, 40, "CompanyName");
-        adapter.UpdateCommand.Parameters.Add("@oldCustomerID", 
-            SqlDbType.Char, 5, "CustomerID").SourceVersion = 
+        adapter.UpdateCommand.Parameters.Add("@oldCustomerID",
+            SqlDbType.Char, 5, "CustomerID").SourceVersion =
             DataRowVersion.Original;
 
-        adapter.DeleteCommand.Parameters.Add("@CustomerID", 
-            SqlDbType.Char, 5, "CustomerID").SourceVersion = 
+        adapter.DeleteCommand.Parameters.Add("@CustomerID",
+            SqlDbType.Char, 5, "CustomerID").SourceVersion =
             DataRowVersion.Original;
 
         return adapter;

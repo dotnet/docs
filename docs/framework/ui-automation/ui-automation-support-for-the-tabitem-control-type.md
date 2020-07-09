@@ -17,7 +17,7 @@ ms.assetid: 9b21160d-e1c2-468b-9275-26e4369ae40d
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the TabItem control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all tab item controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to tab item controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -25,7 +25,7 @@ ms.assetid: 9b21160d-e1c2-468b-9275-26e4369ae40d
 |------------------|------------------|  
 |TabItem<br /><br /> <ul><li>Image (0 or 1)</li><li>Text</li><li>Pane<br /><br /> <ul><li>Various controls (0 or more)</li></ul></li></ul>|TabItem<br /><br /> <ul><li>Pane<br /><br /> <ul><li>Various controls (0 or more)</li></ul></li></ul>|  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to tab item controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -42,7 +42,7 @@ ms.assetid: 9b21160d-e1c2-468b-9275-26e4369ae40d
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The tab item control must always be content.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The tab item control must always be a control.|  
   
-<a name="Required_UI_Automation_Control_Patterns"></a>   
+<a name="Required_UI_Automation_Control_Patterns"></a>
 ## Required UI Automation Control Patterns  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by tab item controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -51,7 +51,7 @@ ms.assetid: 9b21160d-e1c2-468b-9275-26e4369ae40d
 |<xref:System.Windows.Automation.Provider.ISelectionItemProvider>|Yes|The tab item control must support SelectionItemPattern.|  
 |<xref:System.Windows.Automation.Provider.IInvokeProvider>|No|The tab item control never supports InvokePattern.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all tab item controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

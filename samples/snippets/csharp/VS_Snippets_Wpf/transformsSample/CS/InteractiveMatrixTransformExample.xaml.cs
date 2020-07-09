@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Graphics.Transforms
 
     public partial class InteractiveMatrixTransformExample : Page
     {
-    
+
     	public InteractiveMatrixTransformExample()
     	{
     	}

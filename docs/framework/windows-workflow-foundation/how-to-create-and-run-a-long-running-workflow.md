@@ -1,5 +1,6 @@
 ---
 title: How to create and run a long-running workflow
+description: This article shows you how to create a Windows Forms host application that supports starting and resuming multiple workflow instances and workflow persistence.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -19,15 +19,15 @@ topic_type:
 Begins an enumeration of the methods available for the object.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
-```cpp 
+```cpp
 HRESULT BeginMethodEnumeration (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LONG              lEnumFlags
-); 
+);
 ```  
 
 ## Parameters

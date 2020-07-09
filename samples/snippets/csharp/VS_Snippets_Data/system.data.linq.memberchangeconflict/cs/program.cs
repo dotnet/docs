@@ -15,7 +15,7 @@ namespace cs_conflictmodeenum
             // <Snippet1>
             // Add 'using System.Reflection' for this section.
             Northwnd db = new Northwnd("...");
-                        
+
             try
             {
                 db.SubmitChanges(ConflictMode.ContinueOnConflict);

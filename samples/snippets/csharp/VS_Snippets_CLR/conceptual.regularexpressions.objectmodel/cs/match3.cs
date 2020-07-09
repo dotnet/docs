@@ -11,10 +11,10 @@ public class Example
       Match match = Regex.Match(input, pattern);
       while (match.Success)
       {
-         Console.WriteLine("{0} found at position {1}.", 
+         Console.WriteLine("{0} found at position {1}.",
                            match.Value, match.Index);
-         match = match.NextMatch();                  
-      }                     
+         match = match.NextMatch();
+      }
    }
 }
 // The example displays the following output:

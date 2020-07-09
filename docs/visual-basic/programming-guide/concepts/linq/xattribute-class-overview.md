@@ -70,4 +70,4 @@ Console.WriteLine(c)
   
 ## See also
 
-- [LINQ to XML Programming Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+- [LINQ to XML Programming Overview (Visual Basic)](linq-to-xml-programming-overview.md)

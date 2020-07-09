@@ -158,7 +158,7 @@ namespace TableSnippets
             tbl.RowGroups.Add(trg);
 
             // Add rows to a TableRowGroup collection.
-            int rowsToAdd = 4; 
+            int rowsToAdd = 4;
             for (int x = 0; x < rowsToAdd; x++)
                 trg.Rows.Add(new TableRow());
 
@@ -189,7 +189,7 @@ namespace TableSnippets
 
             // Remove all rows...
             trg.Rows.Clear();
-            // </Snippet_TableRowGroup_Rows>        
+            // </Snippet_TableRowGroup_Rows>
         }
 
         void TableCellConst()

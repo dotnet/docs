@@ -64,7 +64,7 @@ gacutil -i A.dll
   
 ```console  
 csc -t:module A.cs  
-al -out:A.dll A.netmodule -link:N.dll   
+al -out:A.dll A.netmodule -link:N.dll
 gacutil -i A.dll  
 ```  
   

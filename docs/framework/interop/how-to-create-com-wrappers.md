@@ -1,5 +1,6 @@
 ---
 title: "How to: Create COM Wrappers"
+description: Create Component Object Model (COM) wrappers using Visual Studio or .NET tools (Tlbimp.exe and Regasm.exe). Both methods generate two types of COM wrappers.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "COM,wrappers creating"
@@ -33,7 +34,7 @@ In Visual Studio 2005, you can add the COM wrapper as a reference to your projec
 You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` statement for C#.
 
 > [!NOTE]
-> If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies](https://go.microsoft.com/fwlink/?LinkId=50479) (PIAs) from the Microsoft Download Center. In step 4, select the latest version of the object library available for the Office product you want, such as the **Microsoft Word 11.0 Object Library**.  
+> If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies Redistributable](https://www.microsoft.com/Download/details.aspx?id=3508).
   
 ### To create a runtime callable wrapper using .NET Framework tools  
   

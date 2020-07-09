@@ -22,7 +22,7 @@ Module Program
                 Return ctr
             End If
         Next
-        Return 0 
+        Return 0
     End Function
 End Module
 ' The example displays the following output:

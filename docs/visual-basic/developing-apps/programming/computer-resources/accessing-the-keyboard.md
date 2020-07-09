@@ -24,7 +24,7 @@ The `My.Computer.Keyboard` object provides properties for accessing the current 
 |Determine whether the CTRL key is down|<xref:Microsoft.VisualBasic.Devices.Keyboard.CtrlKeyDown%2A>|  
 |Determine whether NUM LOCK is on|<xref:Microsoft.VisualBasic.Devices.Keyboard.NumLock%2A>|  
 |Determine whether SCROLL LOCK is on|<xref:Microsoft.VisualBasic.Devices.Keyboard.ScrollLock%2A>|  
-|Start an application and send it keystrokes|[How to: Start an Application and Send it Keystrokes (Visual Basic)](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-start-an-application-and-send-it-keystrokes.md)|  
+|Start an application and send it keystrokes|[How to: Start an Application and Send it Keystrokes (Visual Basic)](how-to-start-an-application-and-send-it-keystrokes.md)|  
   
 ## See also
 

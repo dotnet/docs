@@ -12,9 +12,9 @@ namespace OfficeProgramminWalkthruComplete
         static void Main(string[] args)
         {
             // Create a list of accounts.
-            var bankAccounts = new List<Account> 
+            var bankAccounts = new List<Account>
             {
-                new Account { 
+                new Account {
                               ID = 345678,
                               Balance = 541.27
                             },
@@ -38,13 +38,13 @@ namespace OfficeProgramminWalkthruComplete
             // Make the object visible.
             excelApp.Visible = true;
 
-            // Create a new, empty workbook and add it to the collection returned 
+            // Create a new, empty workbook and add it to the collection returned
             // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a praticular template. 
-            // Because no argument is sent in this example, Add creates a new workbook. 
+            // Add has an optional parameter for specifying a praticular template.
+            // Because no argument is sent in this example, Add creates a new workbook.
             excelApp.Workbooks.Add();
 
-            // This example uses a single workSheet. 
+            // This example uses a single workSheet.
             Excel._Worksheet workSheet = excelApp.ActiveSheet;
 
             // Earlier versions of C# require explicit casting.
@@ -65,13 +65,13 @@ namespace OfficeProgramminWalkthruComplete
             workSheet.Columns[1].AutoFit();
             workSheet.Columns[2].AutoFit();
 
-            // Call to AutoFormat in Visual C#. This statement replaces the 
+            // Call to AutoFormat in Visual C#. This statement replaces the
             // two calls to AutoFit.
             workSheet.Range["A1", "B3"].AutoFormat(
                 Excel.XlRangeAutoFormat.xlRangeAutoFormatClassic2);
 
             // Put the spreadsheet contents on the clipboard. The Copy method has one
-            // optional parameter for specifying a destination. Because no argument  
+            // optional parameter for specifying a destination. Because no argument
             // is sent, the destination is the Clipboard.
             workSheet.Range["A1:B3"].Copy();
         }
@@ -81,15 +81,15 @@ namespace OfficeProgramminWalkthruComplete
             var wordApp = new Word.Application();
             wordApp.Visible = true;
 
-            // The Add method has four reference parameters, all of which are 
+            // The Add method has four reference parameters, all of which are
             // optional. Visual C# allows you to omit arguments for them if
             // the default values are what you want.
             wordApp.Documents.Add();
 
-            // PasteSpecial has seven reference parameters, all of which are 
-            // optional. This example uses named arguments to specify values 
-            // for two of the parameters. Although these are reference 
-            // parameters, you do not need to use the ref keyword, or to create 
+            // PasteSpecial has seven reference parameters, all of which are
+            // optional. This example uses named arguments to specify values
+            // for two of the parameters. Although these are reference
+            // parameters, you do not need to use the ref keyword, or to create
             // variables to send in as arguments. You can send the values directly.
             wordApp.Selection.PasteSpecial(Link: true, DisplayAsIcon: true);
         }

@@ -39,6 +39,6 @@ HRESULT GetValue(
   
 ## See also
 
-- [ISymUnmanagedConstant Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
-- [GetName Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getname-method.md)
-- [GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)
+- [ISymUnmanagedConstant Interface](isymunmanagedconstant-interface.md)
+- [GetName Method](isymunmanagedconstant-getname-method.md)
+- [GetSignature Method](isymunmanagedconstant-getsignature-method.md)

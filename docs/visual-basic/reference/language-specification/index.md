@@ -20,7 +20,7 @@ in fixing any errors you find, you can submit a [Pull request](https://github.co
 
 ## See also
 
-- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+- [Visual Basic Language Reference](../../language-reference/index.md)
 
 >[!div class="step-by-step"]
 >[Next](../../../../_vblang/spec/introduction.md)

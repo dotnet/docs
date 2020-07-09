@@ -32,7 +32,7 @@ When `If` is called by using three arguments, the first argument must evaluate t
 |---|---|
 |`argument1`|Required. `Boolean`. Determines which of the other arguments to evaluate and return.|
 |`argument2`|Required. `Object`. Evaluated and returned if `argument1` evaluates to `True`.|
-|`argument3`|Required. `Object`. Evaluated and returned if `argument1` evaluates to `False` or if `argument1` is a [Nullable](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)`Boolean` variable that evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md).|
+|`argument3`|Required. `Object`. Evaluated and returned if `argument1` evaluates to `False` or if `argument1` is a [Nullable](../../programming-guide/language-features/data-types/nullable-value-types.md)`Boolean` variable that evaluates to [Nothing](../nothing.md).|
 
 An `If` operator that is called with three arguments works like an `IIf` function except that it uses short-circuit evaluation. An `IIf` function always evaluates all three of its arguments, whereas an `If` operator that has three arguments evaluates only two of them. The first `If` argument is evaluated and the result is cast as a `Boolean` value, `True` or `False`. If the value is `True`, `argument2` is evaluated and its value is returned, but `argument3` is not evaluated. If the value of the `Boolean` expression is `False`, `argument3` is evaluated and its value is returned, but `argument2` is not evaluated. The following examples illustrate the use of `If` when three arguments are used:
 
@@ -50,10 +50,10 @@ The first argument to `If` can be omitted. This enables the operator to be calle
 
 |Term|Definition|
 |---|---|
-|`argument2`|Required. `Object`. Must be a reference or nullable type. Evaluated and returned when it evaluates to anything other than `Nothing`.|
+|`argument2`|Required. `Object`. Must be a reference or nullable value type. Evaluated and returned when it evaluates to anything other than `Nothing`.|
 |`argument3`|Required. `Object`. Evaluated and returned if `argument2` evaluates to `Nothing`.|
 
-When the `Boolean` argument is omitted, the first argument must be a reference or nullable type. If the first argument evaluates to `Nothing`, the value of the second argument is returned. In all other cases, the value of the first argument is returned. The following example illustrates how this evaluation works:
+When the `Boolean` argument is omitted, the first argument must be a reference or nullable value type. If the first argument evaluates to `Nothing`, the value of the second argument is returned. In all other cases, the value of the first argument is returned. The following example illustrates how this evaluation works:
 
 [!code-vb[VbVbalrOperators#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#102)]
 

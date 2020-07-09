@@ -68,10 +68,10 @@ HRESULT ExecuteApplication(
  The `pReturnValue` output parameter is set to the value returned by the application. If you supply a value of null for `pReturnValue`, `ExecuteApplication` does not fail, but it does not return a value.  
   
 > [!IMPORTANT]
-> Do not call the [Start Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the `ExecuteApplication` method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
+> Do not call the [Start Method](iclrruntimehost-start-method.md) method before calling the `ExecuteApplication` method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -84,6 +84,6 @@ HRESULT ExecuteApplication(
 - <xref:System.ActivationContext>
 - <xref:System.AppDomainManager>
 - <xref:System.ApplicationIdentity>
-- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
-- [SetAppDomainManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-setappdomainmanager-method.md)
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)
+- [SetAppDomainManager Method](ihostcontrol-setappdomainmanager-method.md)
 - [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)

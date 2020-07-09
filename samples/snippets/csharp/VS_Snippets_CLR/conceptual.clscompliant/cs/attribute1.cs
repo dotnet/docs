@@ -3,17 +3,17 @@ using System;
 
 [assembly: CLSCompliant(true)]
 
-[AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Struct)] 
+[AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Struct)]
 public class NumericAttribute
 {
    private bool _isNumeric;
-   
+
    public NumericAttribute(bool isNumeric)
    {
       _isNumeric = isNumeric;
    }
-   
-   public bool IsNumeric 
+
+   public bool IsNumeric
    {
       get { return _isNumeric; }
    }

@@ -1,7 +1,7 @@
 ---
 title: Containers as the foundation for DevOps collaboration
 description: Understand the key role of containers to streamline DevOps.
-ms.date: 02/15/2019
+ms.date: 04/16/2020
 ---
 # Containers as the foundation for DevOps collaboration
 
@@ -17,7 +17,7 @@ In the pillar on the left side of Figure 2-1, developers write and run code loca
 
 The DevOps pillar defines the build–Continuous Integration (CI) pipelines using the Dockerfile provided in the code repository. The CI system pulls the base container images from the selected Docker registry and builds the custom Docker images for the application. The images then are validated and pushed to the Docker registry used for the deployments to multiple environments.
 
-In the pillar on the right, operations teams manage deployed applications and infrastructure in production while monitoring the environment and applications so that they can provide feedback and insights to the development team about how the application might be improved. Container apps are typically run in production using container orchestrators.
+In the pillar on the right, operations teams manage deployed applications and infrastructure in production while monitoring the environment and applications so that they can provide feedback and insights to the development team about how the application might be improved. Container apps are typically run in production using container orchestrators like [Kubernetes](https://kubernetes.io/), where usually [Helm charts](https://helm.sh/) are used to configure deployment units, instead of docker-compose files.
 
 The two teams are collaborating through a foundational platform (Docker containers) that provides a separation of concerns as a contract, while greatly improving the two teams' collaboration in the application life cycle. The developers own the container contents, its operating environment, and the container interdependencies, whereas the operations teams take the built images along with the manifest and runs them in their orchestration system.
 

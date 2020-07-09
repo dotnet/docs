@@ -1,5 +1,6 @@
 ---
 title: "Connection String Syntax"
+description: Learn about syntax of connection strings in ADO.NET. The syntax for each provider is documented in its ConnectionString property.
 ms.date: "05/22/2018"
 ms.assetid: 0977aeee-04d1-4cce-bbed-750c77fce06e
 ---
@@ -45,7 +46,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 > [!IMPORTANT]
 > The default setting for the `Persist Security Info` keyword is `false`. Setting it to `true` or `yes` allows security-sensitive information, including the user ID and password, to be obtained from the connection after the connection has been opened. Keep `Persist Security Info` set to `false` to ensure that an untrusted source does not have access to sensitive connection string information.  
 
-### Windows authentication with SqlClient 
+### Windows authentication with SqlClient
  Each of the following forms of syntax uses Windows Authentication to connect to the **AdventureWorks** database on a local server.  
   
 ```csharp  
@@ -57,7 +58,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
     database=AdventureWorks;server=(local)"  
 ```  
   
-### SQL Server authentication with SqlClient   
+### SQL Server authentication with SqlClient
  Windows Authentication is preferred for connecting to SQL Server. However, if SQL Server Authentication is required, use the following syntax to specify a user name and password. In this example, asterisks are used to represent a valid user name and password.  
   
 ```csharp  
@@ -149,7 +150,7 @@ Jet OLEDB:System Database=|DataDirectory|\System.mdw;"
 ### Connecting to Excel  
  The Microsoft Jet provider is used to connect to an Excel workbook. In the following connection string, the `Extended Properties` keyword sets properties that are specific to Excel. "HDR=Yes;" indicates that the first row contains column names, not data, and "IMEX=1;" tells the driver to always read "intermixed" data columns as text.  
   
-```csharp 
+```csharp
 Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=""Excel 8.0;HDR=Yes;IMEX=1""  
 ```  
   
@@ -159,7 +160,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\MyExcel.xls;Extended Properties=
  Use both the `Provider` and the `Data Provider` keywords when using the Microsoft Data Shape provider. The following example uses the Shape provider to connect to a local instance of SQL Server.  
   
 ```csharp  
-"Provider=MSDataShape;Data Provider=SQLOLEDB;Data Source=(local);Initial Catalog=pubs;Integrated Security=SSPI;"   
+"Provider=MSDataShape;Data Provider=SQLOLEDB;Data Source=(local);Initial Catalog=pubs;Integrated Security=SSPI;"
 ```  
   
 ## Odbc Connection Strings  
@@ -182,7 +183,7 @@ SourceDB=|DataDirectory|\MyData.DBC;SourceType=DBC;"
 ## Oracle Connection Strings  
  The <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property of a <xref:System.Data.OracleClient.OracleConnection> allows you to get or set a connection string for an OLE DB data source. Oracle connection strings are also supported by the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> .  
   
-```csharp 
+```csharp
 Data Source=Oracle9i;User ID=*****;Password=*****;  
 ```  
   

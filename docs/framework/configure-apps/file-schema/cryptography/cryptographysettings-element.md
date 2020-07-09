@@ -19,7 +19,7 @@ Contains cryptography settings.
 ## Syntax  
   
 ```xml  
-      <cryptographySettings>   
+      <cryptographySettings>
 </cryptographySettings>  
 ```  
   

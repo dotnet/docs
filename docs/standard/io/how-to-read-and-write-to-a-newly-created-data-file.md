@@ -1,5 +1,6 @@
 ---
 title: "How to: Read and write to a newly created data file"
+description: Learn how to read and write to a newly created data file in .NET using the System.IO.BinaryReader and System.IO.BinaryWriter classes.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -33,10 +34,10 @@ The example creates a data file called *Test.data* in the current directory, cre
 - <xref:System.IO.FileStream>  
 - <xref:System.IO.FileStream.Seek%2A?displayProperty=nameWithType>  
 - <xref:System.IO.SeekOrigin>  
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [How to: Read characters from a string](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
-- [How to: Write characters to a string](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)  
+- [How to: Open and append to a log file](how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](how-to-write-text-to-a-file.md)  
+- [How to: Read characters from a string](how-to-read-characters-from-a-string.md)  
+- [How to: Write characters to a string](how-to-write-characters-to-a-string.md)  
+- [File and stream I/O](index.md)

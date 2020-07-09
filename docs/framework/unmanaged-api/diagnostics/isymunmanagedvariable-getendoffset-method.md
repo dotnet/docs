@@ -38,5 +38,5 @@ HRESULT GetEndOffset(
   
 ## See also
 
-- [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
-- [GetStartOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getstartoffset-method.md)
+- [ISymUnmanagedVariable Interface](isymunmanagedvariable-interface.md)
+- [GetStartOffset Method](isymunmanagedvariable-getstartoffset-method.md)

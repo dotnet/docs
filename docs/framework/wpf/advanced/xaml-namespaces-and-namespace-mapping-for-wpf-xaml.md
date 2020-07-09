@@ -21,7 +21,7 @@ This topic further explains the presence and purpose of the two XAML namespace m
 ## What is a XAML Namespace?  
  A XAML namespace is really an extension of the concept of an XML namespace. The techniques of specifying a XAML namespace rely on the XML namespace syntax, the convention of using URIs as namespace identifiers, using prefixes to provide a means to reference multiple namespaces from the same markup source, and so on. The primary concept that is added to the XAML definition of the XML namespace is that a XAML namespace implies both a scope of uniqueness for the markup usages, and also influences how markup entities are potentially backed by specific CLR namespaces and referenced assemblies. This latter consideration is also influenced by the concept of a XAML schema context. But for purposes of how WPF works with XAML namespaces, you can generally think of XAML namespaces in terms of a default XAML namespace, the XAML language namespace, and any further XAML namespaces as mapped by your XAML markup directly to specific backing CLR namespaces and referenced assemblies.  
   
-<a name="The_WPF_and_XAML_Namespace_Declarations"></a>   
+<a name="The_WPF_and_XAML_Namespace_Declarations"></a>
 ## The WPF and XAML Namespace Declarations  
  Within the namespace declarations in the root tag of many XAML files, you will see that there are typically two XML namespace declarations. The first declaration maps the overall WPF client / framework XAML namespace as the default:  
   
@@ -35,7 +35,7 @@ This topic further explains the presence and purpose of the two XAML namespace m
   
  The `x:` prefix convention for mapping the XAML language intrinsics support is followed by project templates, sample code, and the documentation of language features within this SDK. The XAML namespace defines many commonly-used features that are necessary even for basic WPF  applications. For instance, in order to join any code-behind to a XAML file through a partial class, you must name that class as the `x:Class` attribute in the root element of the relevant XAML file. Or, any element as defined in a XAML page that you wish to access as a keyed resource should have the `x:Key` attribute set on the element in question. For more information on these and other aspects of XAML see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) or [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
   
-<a name="Mapping_To_Custom_Classes_and_Assemblies"></a>   
+<a name="Mapping_To_Custom_Classes_and_Assemblies"></a>
 ## Mapping to Custom Classes and Assemblies  
  You can map XML namespaces to assemblies using a series of tokens within an `xmlns` prefix declaration, similar to how the standard WPF and XAML-intrinsics XAML namespaces are mapped to prefixes.  
   
@@ -83,7 +83,7 @@ End Namespace
   
 ```xaml  
 <Page x:Class="WPFApplication1.MainPage"  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
     xmlns:custom="clr-namespace:SDKSample;assembly=SDKSampleLibrary">  
   ...  
@@ -97,7 +97,7 @@ End Namespace
   
  Custom classes cannot be used as the root element of a page if defined in the same assembly. Partial classes do not need to be mapped; only classes that are not the partial class of a page in your application need to be mapped if you intend to reference them as elements in XAML.  
   
-<a name="Mapping_CLR_Namespaces_to_XML_Namespaces_in_an"></a>   
+<a name="Mapping_CLR_Namespaces_to_XML_Namespaces_in_an"></a>
 ## Mapping CLR Namespaces to XML Namespaces in an Assembly  
  WPF defines a CLR attribute that is consumed by XAML processors in order to map multiple CLR namespaces to a single XAML namespace. This attribute, <xref:System.Windows.Markup.XmlnsDefinitionAttribute>, is placed at the assembly level in the source code that produces the assembly. The WPF assembly source code uses this attribute to map the various common namespaces, such as <xref:System.Windows> and <xref:System.Windows.Controls>, to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace.  
   

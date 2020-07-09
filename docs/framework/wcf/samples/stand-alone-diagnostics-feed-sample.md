@@ -18,7 +18,7 @@ This sample demonstrates how to create an RSS/Atom feed for syndication with Win
         //(the part of the request URI after the endpoint address)  
         //using the HTTP GET method. The UriTemplate specifies a relative  
         //path of 'feed', and specifies that the format is  
-        //supplied using a query string.   
+        //supplied using a query string.
         [WebGet(UriTemplate="feed?format={format}")]  
         [ServiceKnownType(typeof(Atom10FeedFormatter))]  
         [ServiceKnownType(typeof(Rss20FeedFormatter))]  
@@ -40,12 +40,12 @@ WebServiceHost host = new WebServiceHost(typeof(ProcessService), new Uri("http:/
  Alternatively, you can use <xref:System.ServiceModel.Activation.WebServiceHostFactory> from within an IIS-hosted .svc file to provide equivalent functionality (this technique is not demonstrated in this sample code).  
   
 ```xml
-<%@ ServiceHost Language="C#|VB" Debug="true" Service="ProcessService" %>
+<% @ServiceHost Language="C#|VB" Debug="true" Service="ProcessService" %>
 ```
   
  Because this service receives requests using the standard HTTP GET, you can use any RSS or ATOM-aware client to access the service. For example, you can view the output of this service by navigating to `http://localhost:8000/diagnostics/feed/?format=atom` or `http://localhost:8000/diagnostics/feed/?format=rss` in an RSS-aware browser.
   
- You can also use the [How the WCF Syndication Object Model Maps to Atom and RSS](../../../../docs/framework/wcf/feature-details/how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md) to read syndicated data and process it using imperative code.  
+ You can also use the [How the WCF Syndication Object Model Maps to Atom and RSS](../feature-details/how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md) to read syndicated data and process it using imperative code.  
   
 ```csharp
 XmlReader reader = XmlReader.Create( "http://localhost:8000/diagnostics/feed/?format=rss",

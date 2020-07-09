@@ -13,7 +13,7 @@ public class Example
       else if (c == Color.Green)
          Console.WriteLine("The color is green");
       else if (c == Color.Blue)
-         Console.WriteLine("The color is blue");   
+         Console.WriteLine("The color is blue");
       else
          Console.WriteLine("The color is unknown.");
    }

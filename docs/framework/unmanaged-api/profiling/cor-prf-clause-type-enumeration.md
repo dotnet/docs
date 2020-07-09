@@ -39,7 +39,7 @@ typedef enum {
 |`COR_PRF_CLAUSE_FINALLY`|The exception clause is a `finally` statement.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

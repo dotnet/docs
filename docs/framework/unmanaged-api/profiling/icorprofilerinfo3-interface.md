@@ -43,7 +43,7 @@ Provides methods that code profilers use to communicate with the common language
  The CLR passes an `ICorProfilerInfo3` interface to each code profiler during initialization, using the profiler's implementation of the [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) or [ICorProfilerCallback3::InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) method. A code profiler can then call the `ICorProfilerInfo3` methods to get information about managed code that is being executed under the control of the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

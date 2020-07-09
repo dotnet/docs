@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
 ---
 # Names of Declared XML Elements and Attributes (Visual Basic)
-This topic provides Visual Basic guidelines for naming XML elements and attributes in XML literals.  In an XML literal, you can specify a local name or a qualified name. A qualified name consists of an XML namespace prefix, a colon, and a local name. For more information about XML namespace prefixes, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
+This topic provides Visual Basic guidelines for naming XML elements and attributes in XML literals.  In an XML literal, you can specify a local name or a qualified name. A qualified name consists of an XML namespace prefix, a colon, and a local name. For more information about XML namespace prefixes, see [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md).  
   
 ## Rules  
  A local name of an element or attribute in Visual Basic must adhere to the following rules.  
@@ -36,9 +36,9 @@ This topic provides Visual Basic guidelines for naming XML elements and attribut
  XML element names are case sensitive. This means that when the Visual Basic compiler compares two names that differ in alphabetical case only, it interprets them as different names. For example, it interprets `ABC` and `abc` as referring to separate elements.  
   
 ## XML Namespaces  
- When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
+ When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md).  
   
 ## See also
 
-- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [Creating XML in Visual Basic](creating-xml.md)
+- [XML Element Literal](../../../language-reference/xml-literals/xml-element-literal.md)

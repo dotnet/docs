@@ -21,7 +21,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |---|---|  
 |`CONFIG`|A string that corresponds to the current setting of the **Active Solution Configuration** box in the **Configuration Manager**.|  
 |`DEBUG`|A `Boolean` value that can be set in the **Project Properties** dialog box. By default, the Debug configuration for a project defines `DEBUG`. When `DEBUG` is defined, <xref:System.Diagnostics.Debug> class methods generate output to the **Output** window. When it is not defined, <xref:System.Diagnostics.Debug> class methods are not compiled and no Debug output is generated.|  
-|`TARGET`|A string representing the output type for the project or the setting of the command-line **-target** option. The possible values of `TARGET` are:<br /><br /> -   "winexe" for a Windows application.<br />-   "exe" for a console application.<br />-   "library" for a class library.<br />-   "module" for a module.<br />-   The **-target** option may be set in the Visual Studio integrated development environment. For more information, see [-target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
+|`TARGET`|A string representing the output type for the project or the setting of the command-line **-target** option. The possible values of `TARGET` are:<br /><br /> -   "winexe" for a Windows application.<br />-   "exe" for a console application.<br />-   "library" for a class library.<br />-   "module" for a module.<br />-   The **-target** option may be set in the Visual Studio integrated development environment. For more information, see [-target (Visual Basic)](../reference/command-line-compiler/target.md).|  
 |`TRACE`|A `Boolean` value that can be set in the **Project Properties** dialog box. By default, all configurations for a project define `TRACE`. When `TRACE` is defined, <xref:System.Diagnostics.Trace> class methods generate output to the **Output** window. When it is not defined, <xref:System.Diagnostics.Trace> class methods are not compiled and no `Trace` output is generated.|  
 |`VBC_VER`|A number representing the Visual Basic version, in *major*.*minor* format.|  
   
@@ -77,6 +77,6 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
   
 ## See also
 
-- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
-- [Constants Overview](../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
-- [Enumerations Overview](../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
+- [Visual Basic Language Reference](index.md)
+- [Constants Overview](../programming-guide/language-features/constants-enums/constants-overview.md)
+- [Enumerations Overview](../programming-guide/language-features/constants-enums/enumerations-overview.md)

@@ -20,10 +20,10 @@ namespace Microsoft.WCF.Documentation
     string SampleMethod(string msg);
     // </snippet4>
   }
- 
+
   [DataContractAttribute]
   public class GreetingFault
-  { 
+  {
     private string report;
 
     public GreetingFault(string message)
@@ -50,7 +50,7 @@ namespace Microsoft.WCF.Documentation
     Random rnd = new Random(DateTime.Now.Millisecond);
     int test = rnd.Next(5);
     if (test % 2 != 0)
-      return "The service greets you: " + msg; 
+      return "The service greets you: " + msg;
     else
       // <snippet5>
       throw new FaultException<GreetingFault>(new GreetingFault("A Greeting error occurred. You said: " + msg));

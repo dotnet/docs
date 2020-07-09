@@ -27,7 +27,7 @@ Dim mySystem, yourSystem As systemInfo
 ```
 
 > [!NOTE]
-> In classes and modules, structures declared using the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) default to public access. If you intend a structure to be private, make sure you declare it using the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword.
+> In classes and modules, structures declared using the [Dim Statement](../../../language-reference/statements/dim-statement.md) default to public access. If you intend a structure to be private, make sure you declare it using the [Private](../../../language-reference/modifiers/private.md) keyword.
 
 ## Access to Structure Values
 
@@ -51,13 +51,13 @@ If a structure element is a reference type, such as a `String`, `Object`, or arr
 
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
-- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
-- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
-- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
-- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
-- [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)
-- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
-- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Data Types](index.md)
+- [Elementary Data Types](elementary-data-types.md)
+- [Composite Data Types](composite-data-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Structures](structures.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [How to: Declare a Structure](how-to-declare-a-structure.md)
+- [Structures and Other Programming Elements](structures-and-other-programming-elements.md)
+- [Structures and Classes](structures-and-classes.md)
+- [Structure Statement](../../../language-reference/statements/structure-statement.md)

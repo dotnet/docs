@@ -1,5 +1,6 @@
 ---
 title: "Configuring Assembly Binding Redirection"
+description: See how to configure assembly binding redirection in .NET by using the appliesTo attribute in the assemblyBinding element of an application configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution, assembly binding redirection"
@@ -19,7 +20,7 @@ By default, applications use the set of .NET Framework assemblies that shipped w
 ```xml  
 <runtime>  
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
-            <dependentAssembly>   
+            <dependentAssembly>
                * assembly information goes here *  
             </dependentAssembly>  
        </assemblyBinding>  
@@ -31,16 +32,16 @@ By default, applications use the set of .NET Framework assemblies that shipped w
  For example, to redirect one reference to a .NET Framework version 1.0 assembly and another reference to a .NET Framework version 1.1 assembly, you would use the pattern shown in the following pseudocode.  
   
 ```xml  
-<assemblyBinding xmlns="..." appliesTo="v1.0.3705">   
-  <!-- .NET Framework version 1.0 redirects here. -->   
-</assemblyBinding>   
+<assemblyBinding xmlns="..." appliesTo="v1.0.3705">
+  <!-- .NET Framework version 1.0 redirects here. -->
+</assemblyBinding>
   
-<assemblyBinding xmlns="..." appliesTo="v1.1.4322">   
-  <!-- .NET Framework version 1.1 redirects here. -->   
-</assemblyBinding>   
+<assemblyBinding xmlns="..." appliesTo="v1.1.4322">
+  <!-- .NET Framework version 1.1 redirects here. -->
+</assemblyBinding>
   
-<assemblyBinding xmlns="...">   
-  <!-- Redirects meant for all versions of the .NET Framework. -->   
+<assemblyBinding xmlns="...">
+  <!-- Redirects meant for all versions of the .NET Framework. -->
 </assemblyBinding>  
 ```  
   

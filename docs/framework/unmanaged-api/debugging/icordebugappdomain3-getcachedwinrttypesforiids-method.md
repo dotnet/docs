@@ -22,7 +22,7 @@ Gets an enumerator for cached Windows Runtime types in an application domain bas
 ## Syntax  
   
 ```cpp  
-HRESULT GetCachedWinRTTypesForIIDs (   
+HRESULT GetCachedWinRTTypesForIIDs (
     [in]  ULONG32            cReqTypes,  
     [in]  GUID                *iidsToResolve,  
     [out] ICorDebugTypeEnum   **ppTypesEnum  

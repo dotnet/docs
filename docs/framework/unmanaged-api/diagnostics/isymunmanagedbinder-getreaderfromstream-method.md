@@ -46,4 +46,4 @@ HRESULT GetReaderFromStream(
   
 ## See also
 
-- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)
+- [ISymUnmanagedBinder Interface](isymunmanagedbinder-interface.md)

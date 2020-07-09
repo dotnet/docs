@@ -1,5 +1,6 @@
 ---
 title: "<connectionManagement> Element (Network Settings)"
+description: The <connectionManagement> network settings element specifies the maximum number of connections to a network host in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement"
@@ -19,7 +20,7 @@ Specifies the maximum number of connections to a network host.
 ## Syntax  
   
 ```xml  
-<connectionManagement>   
+<connectionManagement>
 </connectionManagement>  
 ```  
   

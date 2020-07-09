@@ -12,7 +12,7 @@ The primary goal of this glossary is to clarify meanings of selected terms and a
 
 Ahead-of-time compiler.
 
-Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at runtime, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
+Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at run time, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
 
@@ -20,13 +20,13 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations.
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you're not using ASP.NET to mean both implementations.
 
 See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
 ## ASP.NET Core
 
-A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
+A cross-platform, high-performance, open-source implementation of ASP.NET built on .NET Core.
 
 See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
@@ -40,7 +40,7 @@ An assembly may include types such as interfaces, classes, structures, enumerati
 
 Common Language Runtime.
 
-The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler. The current Microsoft CLR implementation is Windows only.
+The exact meaning depends on the context, but Common Language Runtime usually refers to the runtime of .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
@@ -48,9 +48,12 @@ The exact meaning depends on the context, but this usually refers to the runtime
 
 This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
-## CoreFX
+## CoreFx
 
 .NET Core Base Class Library (BCL)
+
+> [!TIP]
+> *Fx* stands for *framework*.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [.NET Core runtime repository](https://github.com/dotnet/runtime). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
 
@@ -58,13 +61,13 @@ A set of libraries that comprise the System.\* (and to a limited extent Microsof
 
 .NET Core runtime.
 
-In contrast to the CLR/CoreCLR, CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for runtime type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. This enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
+In contrast to the CLR/CoreCLR, CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for run-time type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. Not requiring metadata enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
 
 See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md).
 
 ## cross-platform
 
-The ability to develop and execute an application that can be used on multiple different operating systems, such as Linux, Windows and iOS, without having to re-write specifically for each one. This enables code re-use and consistency between applications on different platforms.
+The ability to develop and execute an application that can be used on multiple different operating systems, such as Linux, Windows, and iOS, without having to rewrite specifically for each one. This enables code reuse and consistency between applications on different platforms.
 
 ## ecosystem
 
@@ -108,7 +111,7 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 
 ## implementation of .NET
 
-An implementation of .NET includes the following:
+An implementation of .NET includes:
 
 - One or more runtimes. Examples: CLR, CoreCLR, CoreRT.
 - A class library that implements a version of the .NET Standard and may include additional APIs. Examples: .NET Framework Base Class Library, .NET Core Base Class Library.
@@ -131,11 +134,11 @@ The words library and [framework](#framework) are often used synonymously.
 
 A NuGet package that has no library of its own but is only a list of dependencies. The included packages can optionally establish the API for a target framework.
 
-See [Packages, Metapackages and Frameworks](../core/packages.md)
+See [Packages, Metapackages, and Frameworks](../core/packages.md)
 
 ## Mono
 
-Mono is an open source, [cross-platform](#cross-platform) .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
+Mono is an open source, [cross-platform](#cross-platform) .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 
@@ -147,15 +150,15 @@ To learn more about Mono, see the [Mono documentation](https://www.mono-project.
 
 ## .NET
 
-The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads. Always capitalized, never ".Net".
+The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads. Always fully capitalized, never ".Net".
 
-See the [.NET Guide](index.md)
+See the [.NET guide](index.yml)
 
 ## .NET Core
 
-A cross-platform, high-performance, open source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in development), the Core Base Class Library, and the Core SDK.
+A cross-platform, high-performance, open-source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in development), the Core Base Class Library, and the Core SDK.
 
-See [.NET Core](../core/index.md).
+See [.NET Core](../core/index.yml).
 
 ## .NET Core CLI
 
@@ -173,7 +176,7 @@ See [.NET Core SDK Overview](../core/sdk.md).
 
 An implementation of .NET that runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
 
-See [.NET Framework Guide](../framework/index.md).
+See [.NET Framework Guide](../framework/index.yml).
 
 ## .NET Native
 
@@ -263,12 +266,12 @@ See [Target Frameworks](frameworks.md).
 
 Universal Windows Platform.
 
-An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
+An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
 
 ## See also
 
-- [.NET Guide](index.md)
-- [.NET Framework Guide](../framework/index.md)
-- [.NET Core](../core/index.md)
+- [.NET Guide](index.yml)
+- [.NET Framework Guide](../framework/index.yml)
+- [.NET Core](../core/index.yml)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)
 - [ASP.NET Core Overview](/aspnet/index#pivot=core)

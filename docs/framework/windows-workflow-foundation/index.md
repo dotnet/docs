@@ -1,5 +1,6 @@
 ---
 title: "Windows Workflow Foundation"
+description: This article contains resources that describe the programming model, samples, and tools of the Windows Workflow Foundation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WF [WF]"

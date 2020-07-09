@@ -12,7 +12,7 @@ interface IMath
 
 public class Math : IMath
 {
-    public double Add(double A, double B) 
+    public double Add(double A, double B)
     {
         return A + B;
     }

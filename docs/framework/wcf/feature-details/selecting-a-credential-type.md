@@ -1,5 +1,6 @@
 ---
 title: "Selecting a Credential Type"
+description: Learn about credentials, how they are used in WCF, and how to select the right credential for your application to establish a claimed identity or capabilities.
 ms.date: "03/30/2017"
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 ---
@@ -36,7 +37,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 |Windows|Allows SOAP message exchanges to occur under the security context established with a Windows credential.|  
 |Username|Allows the service to require that the client be authenticated with a user name credential. Note that WCF does not allow any cryptographic operations with user names, such as generating a signature or encrypting data. WCF ensures that the transport is secured when using user name credentials.|  
 |Certificate|Allows the service to require that the client be authenticated using an X.509 certificate.|  
-|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|  
   
 ### Negotiation Model of Service Credentials  
  *Negotiation* is the process of establishing trust between a client and a service by exchanging credentials. The process is performed iteratively between the client and the service, so as to disclose only the information necessary for the next step in the negotiation process. In practice, the end result is the delivery of a service's credential to the client to be used in subsequent operations.  
@@ -58,7 +59,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
  Depending on whether you are programming a service or a client, the method for setting the credential value differs slightly.  
   
 ### Setting Service Credentials  
- If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. For more information, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md) and [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
+ If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. For more information, see [Transport Security Overview](transport-security-overview.md) and [HTTP Transport Security](http-transport-security.md).  
   
  To provision a service with credentials in code, create an instance of the <xref:System.ServiceModel.ServiceHost> class and specify the appropriate credential using the <xref:System.ServiceModel.Description.ServiceCredentials> class, accessed through the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property.  
   
@@ -89,7 +90,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 > [!IMPORTANT]
 > There is a situation to be aware of when the identity cannot be switched (that is, when establish security context is on, the default behavior). If you create a service that communicates with a second service, the identity used to open the WCF client to the second service cannot be changed. This becomes a problem if multiple clients are allowed to use the first service and the service impersonates the clients when accessing the second service. If the service reuses the same client for all callers, all calls to the second service are done under the identity of the first caller that was used to open the client to the second service. In other words, the service uses the identity of the first client for all its clients to communicate with the second service. This can lead to the elevation of privilege. If this is not the desired behavior of your service, you must track each caller and create a new client to the second service for every distinct caller, and ensure that the service uses only the right client for the right caller to communicate with the second service.  
   
- For more information about credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
+ For more information about credentials and secure sessions, see [Security Considerations for Secure Sessions](security-considerations-for-secure-sessions.md).  
   
 ## See also
 
@@ -104,7 +105,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 - <xref:System.ServiceModel.TcpTransportSecurity.ClientCredentialType%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A?displayProperty=nameWithType>
-- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
-- [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+- [Security Concepts](security-concepts.md)
+- [Securing Services and Clients](securing-services-and-clients.md)
+- [Programming WCF Security](programming-wcf-security.md)
+- [HTTP Transport Security](http-transport-security.md)

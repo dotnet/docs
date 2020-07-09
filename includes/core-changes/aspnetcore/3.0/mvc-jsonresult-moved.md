@@ -38,7 +38,7 @@ ASP.NET Core
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 `T:Microsoft.AspNetCore.Mvc.JsonResult`
 

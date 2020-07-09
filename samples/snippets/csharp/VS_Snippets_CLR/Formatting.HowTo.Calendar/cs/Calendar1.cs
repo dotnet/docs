@@ -9,15 +9,15 @@ public class CalendarDates
       HijriCalendar hijriCal = new HijriCalendar();
       CalendarUtility hijriUtil = new CalendarUtility(hijriCal);
       DateTime dateValue1 = new DateTime(1429, 6, 29, hijriCal);
-      DateTimeOffset dateValue2 = new DateTimeOffset(dateValue1, 
+      DateTimeOffset dateValue2 = new DateTimeOffset(dateValue1,
                                   TimeZoneInfo.Local.GetUtcOffset(dateValue1));
       CultureInfo jc = CultureInfo.CreateSpecificCulture("ar-JO");
 
       // Display the date using the Gregorian calendar.
-      Console.WriteLine("Using the system default culture: {0}", 
+      Console.WriteLine("Using the system default culture: {0}",
                         dateValue1.ToString("d"));
       // Display the date using the ar-JO culture's original default calendar.
-      Console.WriteLine("Using the ar-JO culture's original default calendar: {0}", 
+      Console.WriteLine("Using the ar-JO culture's original default calendar: {0}",
                         dateValue1.ToString("d", jc));
       // Display the date using the Hijri calendar.
       Console.WriteLine("Using the ar-JO culture with Hijri as the default calendar:");
@@ -25,15 +25,15 @@ public class CalendarDates
       Console.WriteLine(hijriUtil.DisplayDate(dateValue1, jc));
       // Display a DateTimeOffset value.
       Console.WriteLine(hijriUtil.DisplayDate(dateValue2, jc));
-      
+
       Console.WriteLine();
-      
+
       PersianCalendar persianCal = new PersianCalendar();
       CalendarUtility persianUtil = new CalendarUtility(persianCal);
       CultureInfo ic = CultureInfo.CreateSpecificCulture("fa-IR");
-      
+
       // Display the date using the ir-FA culture's default calendar.
-      Console.WriteLine("Using the ir-FA culture's default calendar: {0}",       
+      Console.WriteLine("Using the ir-FA culture's default calendar: {0}",
                         dateValue1.ToString("d", ic));
       // Display a Date value.
       Console.WriteLine(persianUtil.DisplayDate(dateValue1, ic));
@@ -46,7 +46,7 @@ public class CalendarUtility
 {
    private Calendar thisCalendar;
    private CultureInfo targetCulture;
-   
+
    public CalendarUtility(Calendar cal)
    {
       this.thisCalendar = cal;
@@ -55,7 +55,7 @@ public class CalendarUtility
    private bool CalendarExists(CultureInfo culture)
    {
       this.targetCulture = culture;
-      return Array.Exists(this.targetCulture.OptionalCalendars, 
+      return Array.Exists(this.targetCulture.OptionalCalendars,
                           this.HasSameName);
    }
 
@@ -73,32 +73,32 @@ public class CalendarUtility
       return DisplayDate(displayOffsetDate, culture);
    }
 
-   public string DisplayDate(DateTimeOffset dateToDisplay, 
+   public string DisplayDate(DateTimeOffset dateToDisplay,
                              CultureInfo culture)
    {
       string specifier = "yyyy/MM/dd";
-      
+
       if (this.CalendarExists(culture))
       {
-         Console.WriteLine("Displaying date in supported {0} calendar...", 
+         Console.WriteLine("Displaying date in supported {0} calendar...",
                            this.thisCalendar.GetType().Name);
          culture.DateTimeFormat.Calendar = this.thisCalendar;
          return dateToDisplay.ToString(specifier, culture);
       }
       else
       {
-         Console.WriteLine("Displaying date in unsupported {0} calendar...", 
+         Console.WriteLine("Displaying date in unsupported {0} calendar...",
                            thisCalendar.GetType().Name);
-         
+
          string separator = targetCulture.DateTimeFormat.DateSeparator;
-         
+
          return thisCalendar.GetYear(dateToDisplay.DateTime).ToString("0000") +
                 separator +
-                thisCalendar.GetMonth(dateToDisplay.DateTime).ToString("00") + 
+                thisCalendar.GetMonth(dateToDisplay.DateTime).ToString("00") +
                 separator +
-                thisCalendar.GetDayOfMonth(dateToDisplay.DateTime).ToString("00"); 
+                thisCalendar.GetDayOfMonth(dateToDisplay.DateTime).ToString("00");
       }
-   } 
+   }
 }
 // The example displays the following output to the console:
 //       Using the system default culture: 7/3/2008
@@ -108,7 +108,7 @@ public class CalendarUtility
 //       1429/06/29
 //       Displaying date in supported HijriCalendar calendar...
 //       1429/06/29
-//       
+//
 //       Using the ir-FA culture's default calendar: 7/3/2008
 //       Displaying date in unsupported PersianCalendar calendar...
 //       1387/04/13
@@ -122,7 +122,7 @@ public class AdditionalSnippets
    {
       // <Snippet1>
       PersianCalendar persianCal = new PersianCalendar();
-      
+
       DateTime persianDate = persianCal.ToDateTime(1387, 3, 18, 12, 0, 0, 0);
       Console.WriteLine(persianDate.ToString());
 

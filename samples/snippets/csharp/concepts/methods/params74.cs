@@ -13,7 +13,7 @@ public class Example
       // Call with an expression that evaluates to int.
       int productC = Square(productA * 3);
    }
-   
+
    static int Square(int i)
    {
       // Store input argument in a local variable.

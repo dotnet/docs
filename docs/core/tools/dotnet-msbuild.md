@@ -9,11 +9,15 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet msbuild` - Builds a project and all of its dependencies.
+`dotnet msbuild` - Builds a project and all of its dependencies. Note: A solution or project file may need to be specified if there are multiple.
 
 ## Synopsis
 
-`dotnet msbuild <msbuild_arguments> [-h]`
+```dotnetcli
+dotnet msbuild <MSBUILD_ARGUMENTS>
+
+dotnet msbuild -h
+```
 
 ## Description
 
@@ -21,7 +25,7 @@ The `dotnet msbuild` command allows access to a fully functional MSBuild.
 
 The command has the exact same capabilities as the existing MSBuild command-line client for SDK-style projects only. The options are all the same. For more information about the available options, see the [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
-The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -restore -target:Build`. [dotnet build](dotnet-build.md) is more commonly used for building projects, but because it always runs the build target, you can use `dotnet msbuild` when you don't want to build the project. For example, if you have a specific target you want to run without building the project, use `dotnet msbuild` and specify the target.
+The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -restore`. When you don't want to build the project and you have a specific target you want to run, use `dotnet build` or `dotnet msbuild` and specify the target.
 
 ## Examples
 
@@ -47,4 +51,5 @@ The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -re
 
   ```dotnetcli
   dotnet msbuild -preprocess
+  dotnet msbuild -preprocess:<fileName>.xml
   ```

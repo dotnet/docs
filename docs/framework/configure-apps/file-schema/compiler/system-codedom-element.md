@@ -68,11 +68,11 @@ Specifies compiler configuration settings for available language providers.
   <system.codedom>  
     <compilers>  
       <!-- zero or more compiler elements -->  
-      <compiler   
+      <compiler
         language="c#;cs;csharp"  
         extension=".cs"  
-        type="Microsoft.CSharp.CSharpCodeProvider, System,   
-          Version=1.0.5000.0, Culture=neutral,   
+        type="Microsoft.CSharp.CSharpCodeProvider, System,
+          Version=1.0.5000.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089"  
         compilerOptions=""  
         warningLevel="1" />  

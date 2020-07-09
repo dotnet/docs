@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for System.Net Classes"
+description: Follow these recommendations to use the classes contained in System.Net to their best advantage in .NET Framework programming.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "sending data, best practices"

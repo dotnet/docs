@@ -15,7 +15,7 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
   
  The <xref:System.Windows.Automation.TransformPattern> control pattern is used to support controls that can be moved, resized, or rotated within a two-dimensional space. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Transform control pattern, note the following guidelines and conventions:  
   
@@ -27,7 +27,7 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
   
 - All parameters and property values are absolute and independent of locale.  
   
-<a name="Required_Members_for_the_IValueProvider_Interface"></a>   
+<a name="Required_Members_for_the_IValueProvider_Interface"></a>
 ## Required Members for ITransformProvider  
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.ITransformProvider>.  
   
@@ -42,7 +42,7 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
   
  This control pattern has no associated events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

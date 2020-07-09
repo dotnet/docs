@@ -35,7 +35,7 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
                 new BitmapImage(
                     new Uri(@"sampleImages\berries.jpg", UriKind.Relative)
                 );
-                
+
             // Set the ImageBrush's Viewport and TileMode
             // so that it produces a pattern from
             // the image.

@@ -22,7 +22,7 @@ namespace TransferLearningTF
 
         static void Main(string[] args)
         {
-            // Create MLContext to be shared across the model creation workflow objects 
+            // Create MLContext to be shared across the model creation workflow objects
             // <SnippetCreateMLContext>
             MLContext mlContext = new MLContext();
             // </SnippetCreateMLContext>
@@ -47,7 +47,7 @@ namespace TransferLearningTF
                             .Append(mlContext.Transforms.ResizeImages(outputColumnName: "input", imageWidth: InceptionSettings.ImageWidth, imageHeight: InceptionSettings.ImageHeight, inputColumnName: "input"))
                             .Append(mlContext.Transforms.ExtractPixels(outputColumnName: "input", interleavePixelColors: InceptionSettings.ChannelsLast, offsetImage: InceptionSettings.Mean))
                             // </SnippetImageTransforms>
-                            // The ScoreTensorFlowModel transform scores the TensorFlow model and allows communication 
+                            // The ScoreTensorFlowModel transform scores the TensorFlow model and allows communication
                             // <SnippetScoreTensorFlowModel>
                             .Append(mlContext.Model.LoadTensorFlowModel(_inceptionTensorFlowModel).
                                 ScoreTensorFlowModel(outputColumnNames: new[] { "softmax2_pre_activation" }, inputColumnNames: new[] { "input" }, addBatchDimensionInput: true))
@@ -87,7 +87,7 @@ namespace TransferLearningTF
             // Get performance metrics on the model using training data
             Console.WriteLine("=============== Classification metrics ===============");
 
-            // <SnippetEvaluate>           
+            // <SnippetEvaluate>
             MulticlassClassificationMetrics metrics =
                 mlContext.MulticlassClassification.Evaluate(predictions,
                   labelColumnName: "LabelKey",
@@ -106,24 +106,24 @@ namespace TransferLearningTF
 
         public static void ClassifySingleImage(MLContext mlContext, ITransformer model)
         {
-            // load the fully qualified image file name into ImageData 
-            // <SnippetLoadImageData> 
+            // load the fully qualified image file name into ImageData
+            // <SnippetLoadImageData>
             var imageData = new ImageData()
             {
                 ImagePath = _predictSingleImage
             };
-            // </SnippetLoadImageData>  
+            // </SnippetLoadImageData>
 
-            // <SnippetPredictSingle>  
+            // <SnippetPredictSingle>
             // Make prediction function (input = ImageData, output = ImagePrediction)
             var predictor = mlContext.Model.CreatePredictionEngine<ImageData, ImagePrediction>(model);
             var prediction = predictor.Predict(imageData);
-            // </SnippetPredictSingle> 
+            // </SnippetPredictSingle>
 
             Console.WriteLine("=============== Making single image classification ===============");
             // <SnippetDisplayPrediction>
             Console.WriteLine($"Image: {Path.GetFileName(imageData.ImagePath)} predicted as: {prediction.PredictedLabelValue} with score: {prediction.Score.Max()} ");
-            // </SnippetDisplayPrediction> 
+            // </SnippetDisplayPrediction>
         }
 
         private static void DisplayResults(IEnumerable<ImagePrediction> imagePredictionData)
@@ -138,7 +138,7 @@ namespace TransferLearningTF
 
         public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
         {
-            //Need to parse through the tags.tsv file to combine the file path to the 
+            //Need to parse through the tags.tsv file to combine the file path to the
             // image name for the ImagePath property so that the image file can be found.
 
             // <SnippetReadFromTsv>

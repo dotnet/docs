@@ -23,9 +23,9 @@ Creates a `ManifestResource` structure containing metadata for the specified man
   
 ```cpp  
 HRESULT DefineManifestResource (  
-    [in] LPCWSTR                szName,   
-    [in] mdToken                tkImplementation,   
-    [in] DWORD                  dwOffset,   
+    [in] LPCWSTR                szName,
+    [in] mdToken                tkImplementation,
+    [in] DWORD                  dwOffset,
     [in] DWORD                  dwResourceFlags,  
     [out] mdManifestResource    *pmdmr  
 );  
@@ -51,7 +51,7 @@ HRESULT DefineManifestResource (
  One `ManifestResource` metadata structure must be defined for each resource that is implemented in each of the assembly's files.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -61,4 +61,4 @@ HRESULT DefineManifestResource (
   
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

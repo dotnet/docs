@@ -23,7 +23,7 @@ Specifies the class or module that contains the `Sub Main` procedure.
 ## Remarks  
  Use this option when you create an executable file or Windows executable program. If the **-main** option is omitted, the compiler searches for a valid shared `Sub Main` in all public classes and modules.  
   
- See [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md) for a discussion of the various forms of the `Main` procedure.  
+ See [Main Procedure in Visual Basic](../../programming-guide/program-structure/main-procedure.md) for a discussion of the various forms of the `Main` procedure.  
   
  When `location` is a class that inherits from <xref:System.Windows.Forms.Form>, the compiler provides a default `Main` procedure that starts the application if the class has no `Main` procedure. This lets you compile code at the command line that was created in the development environment.  
   
@@ -48,7 +48,7 @@ vbc t2.vb t3.vb -main:Test2
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [-target (Visual Basic)](target.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [Main Procedure in Visual Basic](../../programming-guide/program-structure/main-procedure.md)

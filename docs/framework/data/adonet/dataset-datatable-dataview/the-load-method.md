@@ -29,7 +29,7 @@ Private Sub LoadBirthdays(ByVal connectionString As String)
       " FROM dbo.Employees " & _  
       "ORDER BY BirthDate, LastName, FirstName"  
   
-    ' Open and fill a DataSet.   
+    ' Open and fill a DataSet.
     Dim adapter As SqlDataAdapter = New SqlDataAdapter( _  
         queryString, connectionString)  
     Dim employees As New DataSet  

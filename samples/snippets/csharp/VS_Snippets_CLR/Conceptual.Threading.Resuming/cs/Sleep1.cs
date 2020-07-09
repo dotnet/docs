@@ -6,15 +6,15 @@ public class Example
 {
    public static void Main()
    {
-      // Interrupt a sleeping thread. 
+      // Interrupt a sleeping thread.
       var sleepingThread = new Thread(Example.SleepIndefinitely);
       sleepingThread.Name = "Sleeping";
       sleepingThread.Start();
       Thread.Sleep(2000);
       sleepingThread.Interrupt();
-      
+
       Thread.Sleep(1000);
-      
+
       sleepingThread = new Thread(Example.SleepIndefinitely);
       sleepingThread.Name = "Sleeping2";
       sleepingThread.Start();
@@ -37,12 +37,12 @@ public class Example
          Console.WriteLine("Thread '{0}' aborted.",
                            Thread.CurrentThread.Name);
       }
-      finally 
+      finally
       {
-         Console.WriteLine("Thread '{0}' executing finally block.", 
+         Console.WriteLine("Thread '{0}' executing finally block.",
                            Thread.CurrentThread.Name);
       }
-      Console.WriteLine("Thread '{0} finishing normal execution.", 
+      Console.WriteLine("Thread '{0} finishing normal execution.",
                         Thread.CurrentThread.Name);
       Console.WriteLine();
    }
@@ -52,7 +52,7 @@ public class Example
 //       Thread 'Sleeping' awoken.
 //       Thread 'Sleeping' executing finally block.
 //       Thread 'Sleeping finishing normal execution.
-//       
+//
 //       Thread 'Sleeping2' about to sleep indefinitely.
 //       Thread 'Sleeping2' aborted.
 //       Thread 'Sleeping2' executing finally block.

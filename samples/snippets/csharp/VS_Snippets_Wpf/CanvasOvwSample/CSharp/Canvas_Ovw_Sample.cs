@@ -14,7 +14,7 @@ namespace SDKSample
         Canvas myCanvas2;
         Canvas myCanvas3;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -59,7 +59,7 @@ namespace SDKSample
             myParentCanvas.Children.Add(myCanvas1);
             myParentCanvas.Children.Add(myCanvas2);
             myParentCanvas.Children.Add(myCanvas3);
-                       
+
             // Add the parent Canvas as the Content of the Window Object
             mainWindow.Content = myParentCanvas;
             mainWindow.Show ();

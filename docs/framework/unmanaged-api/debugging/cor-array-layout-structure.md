@@ -26,10 +26,10 @@ typedef struct COR_ARRAY_LAYOUT {
     CorElementType componentType;  
     ULONG32 firstElementOffset;  
     ULONG32 elementSize;  
-    ULONG32 countOffset;   
-    ULONG32 rankSize;   
-    ULONG32 numRanks;   
-    ULONG32 rankOffset;   
+    ULONG32 countOffset;
+    ULONG32 rankSize;
+    ULONG32 numRanks;
+    ULONG32 rankOffset;
 } COR_ARRAY_LAYOUT;  
 ```  
   

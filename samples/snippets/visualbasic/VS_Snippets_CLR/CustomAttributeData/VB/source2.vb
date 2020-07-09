@@ -18,10 +18,10 @@ Public Class ExampleAttribute
     End Property
 End Class
 
-<Example(StringValue := "This is a string.")> _
+<Example(StringValue:="This is a string.")> _
 Class Class1
     Public Shared Sub Main()
-    Dim info As System.Reflection.MemberInfo = GetType(Class1)
+        Dim info As System.Reflection.MemberInfo = GetType(Class1)
         For Each attrib As Object In info.GetCustomAttributes(true)
             Console.WriteLine(attrib)
         Next attrib

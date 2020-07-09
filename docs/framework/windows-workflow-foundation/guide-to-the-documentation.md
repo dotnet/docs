@@ -1,5 +1,6 @@
 ---
 title: "Guide to the Windows Workflow Documentation"
+description: This article contains information about how to use the Windows Workflow Foundation documentation, grouped according to interests and levels of expertise.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WF [WF], guide to"

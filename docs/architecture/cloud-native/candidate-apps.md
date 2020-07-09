@@ -2,11 +2,10 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 08/20/2019
+ms.date: 05/14/2020
 ---
-# Candidate apps for cloud native
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Candidate apps for cloud native
 
 Look at the apps in your portfolio. How many of them qualify for a cloud-native architecture? All of them? Perhaps some?
 
@@ -14,7 +13,7 @@ Applying a cost/benefit analysis, there's a good chance that most wouldn't suppo
 
 What type of application might be a candidate for cloud native?
 
-- A large, strategic enterprise system that needs to constantly evolve business capabilities/features
+- Strategic enterprise system that need to constantly evolve business capabilities/features
 
 - An application that requires a high release velocity - with high confidence
 
@@ -34,7 +33,7 @@ The free Microsoft e-book [Modernize existing .NET applications with Azure cloud
 
 **Figure 1-10**. Strategies for migrating legacy workloads
 
-Monolithic apps that are non-critical largely benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](../modernize-with-azure-containers/lift-and-shift-existing-apps-azure-iaas.md)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as ([Azure Migrate](https://aka.ms/azuremigrate), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier. While this strategy can yield some cost savings, such applications typically weren't architected to unlock and leverage the benefits of cloud computing.
+Monolithic apps that are non-critical largely benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](../modernize-with-azure-containers/lift-and-shift-existing-apps-azure-iaas.md)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/) to make such a move easier. While this strategy can yield some cost savings, such applications typically weren't architected to unlock and leverage the benefits of cloud computing.
 
 Monolithic apps that are critical to the business oftentimes benefit from an enhanced lift-and-shift (*Cloud Optimized*) migration. This approach includes deployment optimizations that enable key cloud services - without changing the core architecture of the application. For example, you might [containerize](https://docs.microsoft.com/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application could consume other cloud services such as databases, message queues, monitoring, and distributed caching.
 
@@ -78,7 +77,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
 
-- [Uber Engineering’s Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
+- [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
 
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
 

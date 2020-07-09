@@ -53,9 +53,9 @@ The following example shows how to configure ASP.NET process-wide behavior in th
 ```xml  
 <configuration>  
   <system.web>  
-    <applicationPool   
-        maxConcurrentRequestsPerCPU="5000"   
-        maxConcurrentThreadsPerCPU="0"   
+    <applicationPool
+        maxConcurrentRequestsPerCPU="5000"
+        maxConcurrentThreadsPerCPU="0"
         requestQueueLimit="5000" />  
   </system.web>  
 </configuration>  

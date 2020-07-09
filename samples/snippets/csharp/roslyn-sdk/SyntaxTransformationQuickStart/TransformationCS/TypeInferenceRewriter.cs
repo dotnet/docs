@@ -1,8 +1,7 @@
-﻿// <SnippetAddUsings>
+// <SnippetAddUsings>
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using static Microsoft.CodeAnalysis.CSharp.SyntaxFactory;
 // </SnippetAddUsings>
 
 namespace TransformationCS
@@ -17,7 +16,7 @@ namespace TransformationCS
         public TypeInferenceRewriter(SemanticModel semanticModel) => SemanticModel = semanticModel;
         // </SnippetConstruction>
 
-        // five 
+        // five
         public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node)
         {
             // <SnippetExclusions>
@@ -32,22 +31,22 @@ namespace TransformationCS
             // </SnippetExclusions>
 
             // <SnippetExtractTypeSymbol>
-            VariableDeclaratorSyntax declarator = node.Declaration.Variables.First();
-            TypeSyntax variableTypeName = node.Declaration.Type;
+            var declarator = node.Declaration.Variables.First();
+            var variableTypeName = node.Declaration.Type;
 
-            ITypeSymbol variableType = (ITypeSymbol)SemanticModel
+            var variableType = (ITypeSymbol)SemanticModel
                 .GetSymbolInfo(variableTypeName)
                 .Symbol;
             // </SnippetExtractTypeSymbol>
 
             // <SnippetBindInitializer>
-            TypeInfo initializerInfo = SemanticModel.GetTypeInfo(declarator.Initializer.Value);
+            var initializerInfo = SemanticModel.GetTypeInfo(declarator.Initializer.Value);
             // </SnippetBindInitializer>
 
             // <SnippetReplaceNode>
-            if (variableType == initializerInfo.Type)
+            if (SymbolEqualityComparer.Default.Equals(variableType, initializerInfo.Type))
             {
-                TypeSyntax varTypeName = IdentifierName("var")
+                TypeSyntax varTypeName = SyntaxFactory.IdentifierName("var")
                     .WithLeadingTrivia(variableTypeName.GetLeadingTrivia())
                     .WithTrailingTrivia(variableTypeName.GetTrailingTrivia());
 

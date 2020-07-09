@@ -40,5 +40,5 @@ The Syndication API is designed to provide a format-neutral programming model th
   
 ## See also
 
-- [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
-- [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)
+- [WCF Syndication Overview](wcf-syndication-overview.md)
+- [Architecture of Syndication](architecture-of-syndication.md)

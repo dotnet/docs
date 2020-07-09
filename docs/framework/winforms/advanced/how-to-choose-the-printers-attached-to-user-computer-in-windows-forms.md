@@ -31,12 +31,12 @@ Often, users want to choose a printer other than the default printer to print to
   
        If (result = DialogResult.OK) Then  
          PrintDocument1.Print()  
-       End If   
+       End If
   
     End Sub  
   
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage  
-       e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))          
+       e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))
     End Sub  
     ```  
   
@@ -52,10 +52,10 @@ Often, users want to choose a printer other than the default printer to print to
        }  
     }  
   
-    private void printDocument1_PrintPage(object sender,   
+    private void printDocument1_PrintPage(object sender,
     System.Drawing.Printing.PrintPageEventArgs e)  
     {  
-       e.Graphics.FillRectangle(Brushes.Red,   
+       e.Graphics.FillRectangle(Brushes.Red,
          new Rectangle(500, 500, 500, 500));  
     }  
     ```  
@@ -67,7 +67,7 @@ Often, users want to choose a printer other than the default printer to print to
        {  
           PrintDialog ^ printDialog1 = gcnew PrintDialog();  
           printDialog1->Document = printDocument1;  
-          System::Windows::Forms::DialogResult result =   
+          System::Windows::Forms::DialogResult result =
              printDialog1->ShowDialog();  
           if (result == DialogResult::OK)  
           {  

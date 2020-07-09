@@ -37,7 +37,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
 ## Remarks  
  XML processing instruction literals indicate how applications should process an XML document. When an application loads an XML document, the application can check the XML processing instructions to determine how to process the document. The application interprets the meaning of `piName` and `piData`.  
   
- The XML document literal uses syntax that is similar to that of the XML processing instruction. For more information, see [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md).  
+ The XML document literal uses syntax that is similar to that of the XML processing instruction. For more information, see [XML Document Literal](xml-document-literal.md).  
   
 > [!NOTE]
 > The `piName` element cannot begin with the strings "xml" or "XML", because the XML 1.0 specification reserves those identifiers.  
@@ -57,6 +57,6 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
 ## See also
 
 - <xref:System.Xml.Linq.XProcessingInstruction>
-- [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML Document Literal](xml-document-literal.md)
+- [XML Literals](index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)

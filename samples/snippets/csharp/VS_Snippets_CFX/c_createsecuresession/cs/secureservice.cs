@@ -30,7 +30,7 @@ namespace Microsoft.Security.Samples
                 MessageCredentialType.Windows;
             //</snippet4>
 
-            // Create the Type instances for later use and the URI for 
+            // Create the Type instances for later use and the URI for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);
@@ -70,7 +70,7 @@ namespace Microsoft.Security.Samples
             // Create the custom binding.
             CustomBinding myBinding = new CustomBinding(security, new HttpTransportBindingElement());
 
-            // Create the Type instances for later use and the URI for 
+            // Create the Type instances for later use and the URI for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);

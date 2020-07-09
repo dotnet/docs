@@ -16,7 +16,7 @@ class Class1
         table.Columns.Add("id", typeof(int));
         table.Columns.Add("name", typeof(string));
 
-        // Set the primary key. 
+        // Set the primary key.
         table.Columns["id"].Unique = true;
         table.PrimaryKey = new DataColumn[] { table.Columns["id"] };
 

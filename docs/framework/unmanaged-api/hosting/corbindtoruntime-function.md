@@ -25,10 +25,10 @@ Enables unmanaged hosts to load the common language runtime (CLR) into a process
   
 ```cpp  
 HRESULT CorBindToRuntime (  
-    [in]  LPCWSTR     pwszVersion,   
-    [in]  LPCWSTR     pwszBuildFlavor,   
-    [in]  REFCLSID    rclsid,   
-    [in]  REFIID      riid,   
+    [in]  LPCWSTR     pwszVersion,
+    [in]  LPCWSTR     pwszBuildFlavor,
+    [in]  REFCLSID    rclsid,
+    [in]  REFIID      riid,
     [out] LPVOID FAR  *ppv  
 );  
 ```  
@@ -49,7 +49,7 @@ HRESULT CorBindToRuntime (
  If `pwszBuildFlavor` is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor` is set to `svr`. However, if `pwszBuildFlavor` is set to `svr` and concurrent garbage collection is specified (see the description of the `flags` parameter), the server build is loaded.  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of the requested interface from `rclsid`. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  
@@ -69,17 +69,17 @@ HRESULT CorBindToRuntime (
   
 2. By changing the process default mode to the version 1 compatibility mode, where the <xref:System.Security.Principal.WindowsIdentity> object does not flow across any asynchronous point, regardless of the <xref:System.Threading.ExecutionContext> settings on the current thread. How you change the default mode depends on whether you use a managed executable or an unmanaged hosting interface to load the CLR:  
   
-    1. For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../../../docs/framework/configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
+    1. For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
   
     2. For unmanaged hosting interfaces, set the `STARTUP_LEGACY_IMPERSONATION` flag in the `flags` parameter when calling the `CorBindToRuntimeEx` function.  
   
      The version 1 compatibility mode applies to the entire process and to all the application domains in the process.  
   
 ## Remarks  
- [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) and `CorBindToRuntime` perform the same operation, but the `CorBindToRuntimeEx` function allows you to set flags to specify the behavior of the CLR.  
+ [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and `CorBindToRuntime` perform the same operation, but the `CorBindToRuntimeEx` function allows you to set flags to specify the behavior of the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -89,9 +89,9 @@ HRESULT CorBindToRuntime (
   
 ## See also
 
-- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)
-- [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)
-- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)
-- [CorBindToRuntimeHost Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md)
-- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntimeByCfg Function](corbindtoruntimebycfg-function.md)
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [CorBindToRuntimeHost Function](corbindtoruntimehost-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

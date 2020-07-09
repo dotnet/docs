@@ -13,7 +13,7 @@ public class Example
       foreach (Match match in Regex.Matches(input, pattern))
          Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
       Console.WriteLine("Input string:  {0}", input);
-      Console.WriteLine("Output string: " + 
+      Console.WriteLine("Output string: " +
                         Regex.Replace(input, pattern, substitution));
    }
 }

@@ -37,6 +37,9 @@
       - name: ASP.NET Core gRPC for WCF developers
         tocHref: /dotnet/architecture/grpc-for-wcf-developers/
         topicHref: /dotnet/architecture/grpc-for-wcf-developers/index
+      - name: Modernizing desktop apps
+        tocHref: /dotnet/architecture/modernize-desktop/
+        topicHref: /dotnet/architecture/modernize-desktop/index
     - name: .NET guide
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
@@ -497,9 +500,6 @@
         - name: Namespaces
           tocHref: /dotnet/csharp/programming-guide/namespaces/
           topicHref: /dotnet/csharp/programming-guide/namespaces/index
-        - name: Nullable types
-          tocHref: /dotnet/csharp/programming-guide/nullable-types/
-          topicHref: /dotnet/csharp/programming-guide/nullable-types/index
         - name: Programming concepts
           tocHref: /dotnet/csharp/programming-guide/concepts/
           topicHref: /dotnet/csharp/programming-guide/concepts/index
@@ -695,3 +695,10 @@
     - name: .NET for Apache Spark guide
       tocHref: /dotnet/spark/
       topicHref: /dotnet/spark/index
+    - name: Azure
+      tocHref: /dotnet/azure/
+      topicHref: /dotnet/azure/index
+      items:
+      - name: Azure SDK for .NET
+        tocHref: /dotnet/azure/sdk/
+        topicHref: /dotnet/azure/sdk/index

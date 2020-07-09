@@ -13,13 +13,13 @@ The topics in this section document the Visual Basic source code compiler direct
   
 ## In This Section  
 
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md) -- Define a compiler constant  
+ [#Const Directive](const-directive.md) -- Define a compiler constant  
   
- [#ExternalSource Directive](../../../visual-basic/language-reference/directives/externalsource-directive.md) -- Indicate a mapping between source lines and text external to the source  
+ [#ExternalSource Directive](externalsource-directive.md) -- Indicate a mapping between source lines and text external to the source  
   
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md) -- Compile selected blocks of code  
+ [#If...Then...#Else Directives](if-then-else-directives.md) -- Compile selected blocks of code  
   
- [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md) -- Collapse and hide sections of code in the Visual Studio editor  
+ [#Region Directive](region-directive.md) -- Collapse and hide sections of code in the Visual Studio editor  
   
  **#Disable, #Enable** -- Disable and enable specific warnings for regions of code.  
   
@@ -35,5 +35,5 @@ The topics in this section document the Visual Basic source code compiler direct
   
 ## Related Sections  
 
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
+ [Visual Basic Language Reference](../index.md)  
   

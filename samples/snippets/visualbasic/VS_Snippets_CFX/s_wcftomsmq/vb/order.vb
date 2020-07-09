@@ -50,7 +50,7 @@ Public Class PurchaseOrder
         Get
             Return orderStatus
         End Get
-            set
+        set
 
             orderStatus = value
         End Set

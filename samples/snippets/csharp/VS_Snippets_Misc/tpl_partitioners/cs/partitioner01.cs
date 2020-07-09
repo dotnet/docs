@@ -35,7 +35,7 @@ class Program
             foreach(double d in results)
             {
                 Console.Write("{0} ", d);
-            }           
+            }
         }
     }
 }

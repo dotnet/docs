@@ -12,7 +12,7 @@ ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
 # ToolTip Overview
 A tooltip is a small pop-up window that appears when a user pauses the mouse pointer over an element, such as over a <xref:System.Windows.Controls.Button>. This topic introduces the tooltip and discusses how to create and customize tooltip content.  
 
-<a name="what_is_a_tooltip"></a>   
+<a name="what_is_a_tooltip"></a>
 ## What Is a Tooltip?  
  When a user moves the mouse pointer over an element that has a tooltip, a window that contains tooltip content (for example, text content that describes the function of a control) appears for a specified amount of time. If the user moves the mouse pointer away from the control, the window disappears because the tooltip content cannot receive focus.  
   
@@ -24,7 +24,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  Which property you use depends on whether the control that defines the tooltip inherits from the <xref:System.Windows.FrameworkContentElement> or <xref:System.Windows.FrameworkElement> class.  
   
-<a name="create_tooltip"></a>   
+<a name="create_tooltip"></a>
 ## Creating a ToolTip  
  The following example shows how to create a simple tooltip by setting the <xref:System.Windows.FrameworkElement.ToolTip%2A> property for a <xref:System.Windows.Controls.Button> control to a text string.  
   
@@ -43,19 +43,19 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  [!code-xaml[GroupBoxSnippet#ToolTipDockPanel](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupBoxSnippet/CS/Window1.xaml#tooltipdockpanel)]  
   
-<a name="Using_the_ToolTip_and_ToolTipService_Properties"></a>   
+<a name="Using_the_ToolTip_and_ToolTipService_Properties"></a>
 ## Using the Properties of the ToolTip and ToolTipService Classes  
  You can customize tooltip content by setting visual properties and applying styles. If you define the tooltip content as a <xref:System.Windows.Controls.ToolTip> object, you can set the visual properties of the <xref:System.Windows.Controls.ToolTip> object. Otherwise, you must set equivalent attached properties on the <xref:System.Windows.Controls.ToolTipService> class.  
   
  For an example of how to set properties in order to specify the position of tooltip content by using the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> properties, see [Position a ToolTip](how-to-position-a-tooltip.md).  
   
-<a name="StylingToolTip"></a>   
+<a name="StylingToolTip"></a>
 ## Styling a ToolTip  
  You can style a <xref:System.Windows.Controls.ToolTip> by defining a custom <xref:System.Windows.Style>. The following example defines a <xref:System.Windows.Style> called `Simple` that shows how to offset the placement of the <xref:System.Windows.Controls.ToolTip> and change its appearance by setting the <xref:System.Windows.Controls.Control.Background%2A>, <xref:System.Windows.Controls.Control.Foreground%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontWeight%2A>.  
   
  [!code-xaml[ToolTipSimple#Style](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipSimple/CSharp/Pane1.xaml#style)]  
   
-<a name="UsingtheToolTipServiceTimeIntervalProperties"></a>   
+<a name="UsingtheToolTipServiceTimeIntervalProperties"></a>
 ## Using the Time Interval Properties of ToolTipService  
  The <xref:System.Windows.Controls.ToolTipService> class provides the following properties for you to set tooltip display times: <xref:System.Windows.Controls.ToolTipService.InitialShowDelay%2A>, <xref:System.Windows.Controls.ToolTipService.BetweenShowDelay%2A>, and <xref:System.Windows.Controls.ToolTipService.ShowDuration%2A>.  
   

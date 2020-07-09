@@ -81,4 +81,4 @@ For more information on how to use prefixes and XAML namespaces for WPF, see [XA
 ## See also
 
 - [x:Type Markup Extension](xtype-markup-extension.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)

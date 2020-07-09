@@ -37,12 +37,12 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
 ```sql  
 INSERT Production.ProductPhoto (  
-    ThumbnailPhoto,   
-    ThumbnailPhotoFilePath,   
-    LargePhoto,   
+    ThumbnailPhoto,
+    ThumbnailPhotoFilePath,
+    LargePhoto,
     LargePhotoFilePath)  
 SELECT ThumbnailPhoto.*, null, null, N'tricycle_pink.gif'  
-FROM OPENROWSET   
+FROM OPENROWSET
     (BULK 'c:\images\tricycle.jpg', SINGLE_BLOB) ThumbnailPhoto  
 ```  
   
@@ -87,7 +87,7 @@ GO
 UPDATE Production.Document  
 SET DocumentSummary .WRITE (N'features',28,10)  
 WHERE DocumentID = 3 ;  
-GO   
+GO
 --View the modified value.  
 SELECT DocumentSummary  
 FROM Production.Document  
@@ -225,7 +225,7 @@ while (reader.Read())
  Large value types can be used in <xref:System.Data.SqlClient.SqlParameter> objects the same way you use smaller value types in <xref:System.Data.SqlClient.SqlParameter> objects. You can retrieve large value types as <xref:System.Data.SqlClient.SqlParameter> values, as shown in the following example. The code assumes that the following GetDocumentSummary stored procedure exists in the AdventureWorks sample database. The stored procedure takes an input parameter named @DocumentID and returns the contents of the DocumentSummary column in the @DocumentSummary output parameter.  
   
 ```sql
-CREATE PROCEDURE GetDocumentSummary   
+CREATE PROCEDURE GetDocumentSummary
 (  
     @DocumentID int,  
     @DocumentSummary nvarchar(MAX) OUTPUT  

@@ -91,7 +91,7 @@ namespace CsCsrefProgrammingStrings
             /* Output:
             My pensive SARA ! thy soft cheek reclined
                Thus on mine arm, most soothing sweet it is
-               To sit beside our Cot,... 
+               To sit beside our Cot,...
             */
 
             string quote = @"Her name was ""Sara.""";
@@ -144,21 +144,6 @@ namespace CsCsrefProgrammingStrings
             System.Console.WriteLine();
 
 
-            //<Snippet9>
-            string s3 = "Visual C# Express";
-            System.Console.WriteLine(s3.Substring(7, 2));
-            // Output: "C#"
-
-            System.Console.WriteLine(s3.Replace("C#", "Basic"));
-            // Output: "Visual Basic Express"
-
-            // Index values are zero-based
-            int index = s3.IndexOf("C");
-            // index = 7
-            //</Snippet9>
-            System.Console.WriteLine();
-
-
             //<Snippet10>
             string s6 = "Battle of Hastings, 1066";
 
@@ -181,8 +166,8 @@ namespace CsCsrefProgrammingStrings
         static void Main()
         {
             //How to: Determine if a string represents a numeric value
-            //<Snippet14> 
-           
+            //<Snippet14>
+
               string numString = "1287543"; //"1287543.0" will return false for a long
               long number1 = 0;
               bool canConvert = long.TryParse(numString, out number1);
@@ -205,7 +190,7 @@ namespace CsCsrefProgrammingStrings
               if (canConvert == true)
                 Console.WriteLine("number3 now = {0}", number3);
               else
-                Console.WriteLine("number3 is not a valid decimal");            
+                Console.WriteLine("number3 is not a valid decimal");
             //</Snippet14>
 
             Console.ReadKey();
@@ -278,7 +263,7 @@ namespace CsCsrefProgrammingStrings
     {
         static void Main()
         {
-            string[] sentences = 
+            string[] sentences =
             {
                 "C# code",
                 "Chapter 2: Writing Code",
@@ -322,16 +307,16 @@ namespace CsCsrefProgrammingStrings
     {
         static void Main()
         {
-            string[] numbers = 
+            string[] numbers =
             {
-                "123-555-0190", 
-                "444-234-22450", 
-                "690-555-0178", 
+                "123-555-0190",
+                "444-234-22450",
+                "690-555-0178",
                 "146-893-232",
                 "146-555-0122",
-                "4007-555-0111", 
-                "407-555-0111", 
-                "407-2-5555", 
+                "4007-555-0111",
+                "407-555-0111",
+                "407-2-5555",
             };
 
             string sPattern = "^\\d{3}-\\d{3}-\\d{4}$";
@@ -446,7 +431,7 @@ namespace CsCsrefProgrammingStrings
             bool test1 = str.StartsWith("extension");
             System.Console.WriteLine("Starts with \"extension\"? {0}", test1);
 
-            // For user input and strings that will be displayed to the end user, 
+            // For user input and strings that will be displayed to the end user,
             // use the StringComparison parameter on methods that have it to specify how to match strings.
             bool test2 = str.StartsWith("extension", System.StringComparison.CurrentCultureIgnoreCase);
             System.Console.WriteLine("Starts with \"extension\"? {0} (ignoring case)", test2);
@@ -454,7 +439,7 @@ namespace CsCsrefProgrammingStrings
             bool test3 = str.EndsWith(".", System.StringComparison.CurrentCultureIgnoreCase);
             System.Console.WriteLine("Ends with '.'? {0}", test3);
 
-            // This search returns the substring between two strings, so 
+            // This search returns the substring between two strings, so
             // the first index is moved to the character just after the first string.
             int first = str.IndexOf("methods") + "methods".Length;
             int last = str.LastIndexOf("methods");
@@ -473,7 +458,7 @@ namespace CsCsrefProgrammingStrings
     Starts with "extension"? True (ignoring case)
     Ends with '.'? True
     Substring between "methods" and "methods": ' have all the capabilities of regular static '
-    Press any key to exit.     
+    Press any key to exit.
     */
     //</Snippet21>
 
@@ -531,7 +516,7 @@ namespace CsCsrefProgrammingStrings
             Console.ReadKey();
         }
 
-        // Example output: 
+        // Example output:
         //  Hello Alexander. Today is 1/22/2008.
         //  Hello Alexander. Today is 1/22/2008. How are you today?
         //  Press any key to exit.
@@ -567,7 +552,7 @@ namespace CsCsrefProgrammingStrings
     }
     /* Output:
       The quick brown fox jumped over the fence
-      The quick brown cat jumped over the fence 
+      The quick brown cat jumped over the fence
     */
     //</Snippet24>
     //-------------------------------------------------------------------------
@@ -637,7 +622,7 @@ namespace CsCsrefProgrammingStrings
         // Store the new string.
         string corrected = sb.ToString();
         System.Console.WriteLine(corrected);
-        // Output: How does Microsoft Word deal with the Caps Lock key?            
+        // Output: How does Microsoft Word deal with the Caps Lock key?
         //</snippet27>
     }
     }
@@ -661,7 +646,7 @@ namespace CsCsrefProgrammingStrings
             Console.WriteLine(s);
             // Output: The peaks are behind the clouds today.
 
-            // Use Regex.Replace for more flexibility. 
+            // Use Regex.Replace for more flexibility.
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
             app.searchFor = "the"; // A very simple regular expression.
@@ -724,7 +709,7 @@ namespace CsCsrefProgrammingStrings
     {
         unsafe static void Main(string[] args)
         {
-            // Compiler will store (intern) 
+            // Compiler will store (intern)
             // these strings in same location.
             string s1 = "Hello";
             string s2 = "Hello";
@@ -765,7 +750,7 @@ namespace CsCsrefProgrammingStrings
 
             Console.WriteLine(text);
         }
-        //</snippet30>     
+        //</snippet30>
     }
 
     #region NOTUSED
@@ -781,8 +766,8 @@ namespace CsCsrefProgrammingStrings
     #endregion
 
     //<snippet33>
-// Use NotePad to save the following RTF code to a text file in the same folder as  
-// your .exe file for this project. Name the file test.rtf. 
+// Use NotePad to save the following RTF code to a text file in the same folder as
+// your .exe file for this project. Name the file test.rtf.
 /*
 {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}
 {\f1\fnil\fprq1\fcharset0 Courier New;}{\f2\fswiss\fprq2\fcharset0 Arial;}}
@@ -795,15 +780,15 @@ class ConvertFromRTF
 {
     static void Main()
     {
-        // If your RTF file isn't in the same folder as the .exe file for the project, 
-        // specify the path to the file in the following assignment statement. 
+        // If your RTF file isn't in the same folder as the .exe file for the project,
+        // specify the path to the file in the following assignment statement.
         string path = @"test.rtf";
 
         //Create the RichTextBox. (Requires a reference to System.Windows.Forms.)
         System.Windows.Forms.RichTextBox rtBox = new System.Windows.Forms.RichTextBox();
 
-        // Get the contents of the RTF file. When the contents of the file are  
-        // stored in the string (rtfText), the contents are encoded as UTF-16. 
+        // Get the contents of the RTF file. When the contents of the file are
+        // stored in the string (rtfText), the contents are encoded as UTF-16.
         string rtfText = System.IO.File.ReadAllText(path);
 
         // Display the RTF text. This should look like the contents of your file.
@@ -813,15 +798,15 @@ class ConvertFromRTF
         rtBox.Rtf = rtfText;
         string plainText = rtBox.Text;
 
-        // Display the plain text in a MessageBox because the console can't  
-        // display the Greek letters. You should see the following result: 
+        // Display the plain text in a MessageBox because the console can't
+        // display the Greek letters. You should see the following result:
         //   The Greek word for "psyche" is spelled ψυχή. The Greek letters are
         //   encoded in Unicode.
         //   These characters are from the extended ASCII character set (Windows
         //   code page 1252): âäӑå
         System.Windows.Forms.MessageBox.Show(plainText);
 
-        // Output the plain text to a file, encoded as UTF-8. 
+        // Output the plain text to a file, encoded as UTF-8.
         System.IO.File.WriteAllText(@"output.txt", plainText);
     }
 }
@@ -832,8 +817,8 @@ class ConvertFromRTF
     {
         static void Main()
         {
-            // Create a file that contains the Greek work ψυχή (psyche) when interpreted by using 
-            // code page 737 ((DOS) Greek). You can also create the file by using Character Map 
+            // Create a file that contains the Greek work ψυχή (psyche) when interpreted by using
+            // code page 737 ((DOS) Greek). You can also create the file by using Character Map
             // to paste the characters into Microsoft Word and then "Save As" by using the DOS
             // (Greek) encoding. (Word will actually create a six-byte file by appending "\r\n" at the end.)
             System.IO.File.WriteAllBytes(@"greek.txt", new byte[] { 0xAF, 0xAC, 0xAE, 0x9E });
@@ -852,7 +837,7 @@ class ConvertFromRTF
             // Same content "ψυχή" is stored as UTF-8
             System.IO.File.WriteAllText(@"greek_unicode.txt", unicodeValues);
 
-            // Conversion is complete. Show the bytes to prove the conversion. 
+            // Conversion is complete. Show the bytes to prove the conversion.
             Console.WriteLine("8-bit encoding byte values:");
             foreach(byte b in codePageValues)
                 Console.Write("{0:X}-", b);
@@ -860,16 +845,16 @@ class ConvertFromRTF
             Console.WriteLine();
             Console.WriteLine("Unicode values:");
             string unicodeString = System.IO.File.ReadAllText("greek_unicode.txt");
-            System.Globalization.TextElementEnumerator enumerator = 
+            System.Globalization.TextElementEnumerator enumerator =
                 System.Globalization.StringInfo.GetTextElementEnumerator(unicodeString);
             while(enumerator.MoveNext())
-            {                
+            {
                string s = enumerator.GetTextElement();
-               int i = Char.ConvertToUtf32(s, 0);                
-               Console.Write("{0:X}-", i);          
-            }                
+               int i = Char.ConvertToUtf32(s, 0);
+               Console.Write("{0:X}-", i);
+            }
             Console.WriteLine();
-            
+
             // Keep the console window open in debug mode.
             Console.Write("Press any key to exit.");
             Console.ReadKey();

@@ -50,6 +50,6 @@ Specifies a custom type for certificate validation. This type is used only if th
 <certificateValidation certificateValidationMode="Custom"  
                        revocationMode="Online"  
                        trustedStoreLocation="LocalMachine">  
-    <certificateValidator type="MyNamespace.CustomValidator, MyAssembly" />    
-</certificateValidation>        
+    <certificateValidator type="MyNamespace.CustomValidator, MyAssembly" />
+</certificateValidation>
 ```

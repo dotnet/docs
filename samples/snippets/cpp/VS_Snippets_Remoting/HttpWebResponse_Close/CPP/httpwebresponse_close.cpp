@@ -41,7 +41,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter the url as command line parameter:" );
       Console::WriteLine( "Example:" );
-      Console::WriteLine( "HttpWebResponse_Close http://www.microsoft.com/net/" );
+      Console::WriteLine( "HttpWebResponse_Close http://dotnet.microsoft.com/" );
    }
    else
    {

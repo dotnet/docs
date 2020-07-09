@@ -1,5 +1,6 @@
 ---
 title: "Path Markup Syntax"
+description: Learn about the powerful and complex mini-language you can use to specify compact path geometries in Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attribute usage in XAML [WPF]"
@@ -11,11 +12,11 @@ ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 # Path Markup Syntax
 Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with the basic features of <xref:System.Windows.Media.Geometry> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
   
-<a name="abouthisdocument"></a>   
+<a name="abouthisdocument"></a>
 ## StreamGeometry and PathFigureCollection Mini-Languages  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
   
@@ -57,7 +58,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
 |*drawCommands*|One or more drawing commands that describe the figure's contents. See the [Draw Commands](#drawcommands) section.|  
 |*closeCommand*|An optional close command that closes figure. See the [Close Command](#closecommand) section.|  
   
-<a name="themovecommand"></a>   
+<a name="themovecommand"></a>
 ## Move Command  
  Specifies the start point of a new figure.  
   
@@ -71,7 +72,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
   
  An uppercase `M` indicates that `startPoint` is an absolute value; a lowercase `m` indicates that `startPoint` is an offset to the previous point, or (0,0) if none exists. If you list multiple points after the move command, a line is drawn to those points though you specified the line command.  
   
-<a name="drawcommands"></a>   
+<a name="drawcommands"></a>
 ## Draw Commands  
  A draw command can consist of several shape commands. The following shape commands are available: line, horizontal line, vertical line, cubic Bezier curve, quadratic Bezier curve, smooth cubic Bezier curve, smooth quadratic Bezier curve, and elliptical arc.  
   
@@ -115,7 +116,7 @@ An uppercase `H` indicates that `x` is an absolute value; a lowercase `h` indica
 |*y*|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the end point of the line.|  
 
 An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indicates that `y` is an offset to the previous point, or (0,0) if none exists.  
-    
+
 ### Cubic Bezier Curve Command  
  Creates a cubic Bezier curve between the current point and the specified end point by using the two specified control points (`controlPoint`1 and `controlPoint`2). `C 100,200 200,400 300,200` is an example of a valid curve command.  
   
@@ -180,7 +181,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |`sweepDirectionFlag`|Set to 1 if the arc is drawn in a positive-angle direction; otherwise, set to 0.|  
 |`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the arc is drawn.|  
   
-<a name="closecommand"></a>   
+<a name="closecommand"></a>
 ## The Close Command  
  Ends the current figure and creates a line that connects the current point to the starting point of the figure. This command creates a line-join (corner) between the last segment and the first segment of the figure.  
   
@@ -188,7 +189,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |------------|  
 |`Z`<br /><br /> - or -<br /><br /> `z`|  
 
-<a name="pointsyntax"></a>   
+<a name="pointsyntax"></a>
 ## Point Syntax  
  Describes the x- and y-coordinates of a point where (0,0) is the top left corner.
   
@@ -201,7 +202,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |`x`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The x-coordinate of the point.|  
 |`y`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the point.|  
   
-<a name="specialvalues"></a>   
+<a name="specialvalues"></a>
 ## Special Values  
  Instead of a standard numerical value, you can also use the following special values. These values are case-sensitive.  
   

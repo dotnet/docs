@@ -1,5 +1,6 @@
 ---
 title: "Configuring WCF Services in Code"
+description: Learn how you can configure WCF services by using code rather than configuration files for both self-hosted and web hosted services.
 ms.date: "03/30/2017"
 ms.assetid: 193c725d-134f-4d31-a8f8-4e575233bff6
 ---
@@ -53,34 +54,34 @@ public class Service1 : IService1
  To enable a protocol such as https for a service, you can either explicitly add an endpoint that uses the protocol or you can automatically add endpoints by calling ServiceConfiguration.EnableProtocol(Binding) which adds an endpoint for each base address compatible with the protocol and each service contract defined. The following code illustrates how to use the ServiceConfiguration.EnableProtocol method:  
   
 ```csharp  
-public class Service1 : IService1   
-{   
-    public string GetData(int value);   
-    public static void Configure(ServiceConfiguration config)   
-    {   
-        // Enable "Add Service Reference" support   
-       config.Description.Behaviors.Add( new ServiceMetadataBehavior { HttpGetEnabled = true });   
-       // set up support for http, https, net.tcp, net.pipe   
-       config.EnableProtocol(new BasicHttpBinding());   
-       config.EnableProtocol(new BasicHttpsBinding());   
-       config.EnableProtocol(new NetTcpBinding());   
-       config.EnableProtocol(new NetNamedPipeBinding());   
-       // add an extra BasicHttpBinding endpoint at http:///basic   
-       config.AddServiceEndpoint(typeof(IService1), new BasicHttpBinding(),"basic");   
-    }   
-}   
+public class Service1 : IService1
+{
+    public string GetData(int value);
+    public static void Configure(ServiceConfiguration config)
+    {
+        // Enable "Add Service Reference" support
+       config.Description.Behaviors.Add( new ServiceMetadataBehavior { HttpGetEnabled = true });
+       // set up support for http, https, net.tcp, net.pipe
+       config.EnableProtocol(new BasicHttpBinding());
+       config.EnableProtocol(new BasicHttpsBinding());
+       config.EnableProtocol(new NetTcpBinding());
+       config.EnableProtocol(new NetNamedPipeBinding());
+       // add an extra BasicHttpBinding endpoint at http:///basic
+       config.AddServiceEndpoint(typeof(IService1), new BasicHttpBinding(),"basic");
+    }
+}
 ```  
   
  The settings in the <`protocolMappings`> section are only used if no application endpoints are added to the <xref:System.ServiceModel.ServiceConfiguration> programmatically.You can optionally load the service configuration from the default application configuration file by calling <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> and then change the settings. The <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> class also allows you to load configuration from a centralized configuration. The following code illustrates how to implement this:  
   
 ```csharp
-public class Service1 : IService1   
-{   
-    public void DoWork();   
-    public static void Configure(ServiceConfiguration config)   
-    {   
-          config.LoadFromConfiguration(ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = @"c:\sharedConfig\MyConfig.config" }, ConfigurationUserLevel.None));   
-    }   
+public class Service1 : IService1
+{
+    public void DoWork();
+    public static void Configure(ServiceConfiguration config)
+    {
+          config.LoadFromConfiguration(ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = @"c:\sharedConfig\MyConfig.config" }, ConfigurationUserLevel.None));
+    }
 }  
 ```  
   

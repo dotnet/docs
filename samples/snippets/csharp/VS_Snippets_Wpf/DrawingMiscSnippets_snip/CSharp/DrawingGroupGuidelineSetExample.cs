@@ -9,7 +9,7 @@ using System.Windows.Shapes;
 namespace SDKSample
 {
     /// <summary>
-    /// This example shows how to apply a GuidelineSet to 
+    /// This example shows how to apply a GuidelineSet to
     /// a drawing.
     /// </summary>
 	public class DrawingGroupGuidelineSetExample : Page
@@ -20,9 +20,9 @@ namespace SDKSample
             //
             // Create a DrawingGroup
             // that has no guideline set
-            //          
+            //
             GeometryDrawing drawing1 = new GeometryDrawing(
-                    Brushes.Black, 
+                    Brushes.Black,
                     null,
                     new RectangleGeometry(new Rect(0,20,30,80))
                 );
@@ -37,7 +37,7 @@ namespace SDKSample
                     null,
                     whiteRectangles
                 );
-            
+
             // Create a DrawingGroup
             DrawingGroup drawingGroupWithoutGuidelines = new DrawingGroup();
             drawingGroupWithoutGuidelines.Children.Add(drawing1);
@@ -46,7 +46,7 @@ namespace SDKSample
             // Use an Image control and a DrawingImage to
             // display the drawing.
             DrawingImage drawingImage01 = new DrawingImage(drawingGroupWithoutGuidelines);
-            
+
             // Freeze the DrawingImage for performance benefits.
             drawingImage01.Freeze();
 
@@ -57,7 +57,7 @@ namespace SDKSample
             image01.Margin = new Thickness(10);
 
             //
-            // Create another DrawingGroup and apply 
+            // Create another DrawingGroup and apply
             // a blur effect to it.
             //
 
@@ -74,12 +74,12 @@ namespace SDKSample
             guidelines.GuidelinesY.Add(75);
 
             // Apply it to the drawing group.
-            drawingGroupWithGuidelines.GuidelineSet = guidelines; 
+            drawingGroupWithGuidelines.GuidelineSet = guidelines;
 
             // Use another Image control and DrawingImage
             // to display the drawing.
             DrawingImage drawingImage02 = new DrawingImage(drawingGroupWithGuidelines);
-            
+
             // Freeze the DrawingImage for performance benefits.
             drawingImage02.Freeze();
 

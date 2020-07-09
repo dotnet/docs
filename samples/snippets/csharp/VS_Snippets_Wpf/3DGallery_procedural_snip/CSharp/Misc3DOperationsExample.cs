@@ -30,7 +30,7 @@ namespace SDKSample
             TextBlock size3DEqualityExampleText = new TextBlock();
             size3DEqualityExampleText.Text = "size3DEqualityExample: " + size3DEqualityExample().ToString();
             mainPanel.Children.Add(size3DEqualityExampleText);
-            
+
             this.Content = mainPanel;
         }
 
@@ -70,7 +70,7 @@ namespace SDKSample
             stringResults = stringResults + " vectorResult2: " + vectorResult2.ToString();
             return stringResults;
         }
-          
+
         private string subtract3DVectorsExample()
         {
             // <SnippetSubtract3DVectorsExample_csharp>
@@ -150,7 +150,7 @@ namespace SDKSample
         private bool size3DEqualityExample()
         {
 
-            // Checks if two Size3D structures are equal using the static Equals method. 
+            // Checks if two Size3D structures are equal using the static Equals method.
             // Returns a Boolean.
 
             // Declaring Size3D structure without initializing x,y,z values

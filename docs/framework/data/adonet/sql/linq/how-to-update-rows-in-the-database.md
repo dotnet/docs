@@ -1,5 +1,6 @@
 ---
 title: "How to: Update Rows in the Database"
+description: Learn to update rows in a database by modifying LINQ to SQL objects in a table-related collection. LINQ to SQL translates additions to SQL UPDATE commands.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Flowchart Workflows"
+description: This article describes the Flowchart activity, which is typically used to implement non-sequential workflows in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: b0a3475c-d22f-49eb-8912-973c960aebf5
 ---
@@ -40,7 +41,7 @@ To model a basic sequence in which two activities execute in turn, the `FlowStep
     </Assign>
     <FlowStep.Next>
       <FlowStep>
-        <WriteLine Text="["Hello, " & result]"/>
+        <WriteLine Text="Hello, " & [result]/>
       </FlowStep>
     </FlowStep.Next>
   </FlowStep>

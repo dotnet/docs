@@ -13,7 +13,7 @@ Every .NET Core application has dependencies. Even the simple `hello world` app 
 
 Understanding .NET Core default assembly loading logic can help understanding and debugging typical deployment issues.
 
-In some applications, dependencies are dynamically determined at runtime. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
+In some applications, dependencies are dynamically determined at run time. In these situations, it's critical to understand how managed assemblies and unmanaged dependencies are loaded.
 
 ## Understanding AssemblyLoadContext
 

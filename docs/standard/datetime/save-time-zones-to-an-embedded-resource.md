@@ -29,9 +29,9 @@ In addition to a resource file that is compiled with the application, several ot
 
 1. Retrieve an existing time zone or create a new time zone.
 
-   To retrieve an existing time zone, see [How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md) and [How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md).
+   To retrieve an existing time zone, see [How to: Access the predefined UTC and local time zone objects](access-utc-and-local.md) and [How to: Instantiate a TimeZoneInfo object](instantiate-time-zone-info.md).
 
-   To create a new time zone, call one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md).
+   To create a new time zone, call one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create time zones without adjustment rules](create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](create-time-zones-with-adjustment-rules.md).
 
 2. Call the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to create a string that contains the time zone's data.
 
@@ -77,6 +77,6 @@ This example requires:
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-- [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
-- [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [Dates, times, and time zones](index.md)
+- [Time zone overview](time-zone-overview.md)
+- [How to: Restore time zones from an embedded resource](restore-time-zones-from-an-embedded-resource.md)

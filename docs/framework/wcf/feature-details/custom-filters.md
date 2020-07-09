@@ -57,8 +57,8 @@ public class MyMessageFilter: MessageFilter
 <!--ROUTING SECTION -->  
 <routing>  
   <filters>  
-    <filter name="CustomFilter1" filterType="Custom"   
-            customType="CustomAssembly.MyMessageFilter,   
+    <filter name="CustomFilter1" filterType="Custom"
+            customType="CustomAssembly.MyMessageFilter,
             CustomAssembly" filterData="custom data" />  
   </filters>  
   <filterTables>  

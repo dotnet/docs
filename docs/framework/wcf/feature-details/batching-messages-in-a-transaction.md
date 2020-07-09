@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
 ---
 # Batching Messages in a Transaction
-Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. For more information about sessions, see [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  
+Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. For more information about sessions, see [Grouping Queued Messages in a Session](grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  
   
 ## Entering Batching Mode  
  The <xref:System.ServiceModel.Description.TransactedBatchingBehavior> endpoint behavior controls batching. Adding this endpoint behavior to a service endpoint tells Windows Communication Foundation (WCF) to batch messages in a transaction. Not all messages require a transaction, so only messages that require a transaction are placed in a batch, and only messages sent from operations marked with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true` are considered for a batch. If all operations on the service contract are marked with `TransactionScopeRequired` = `false` and `TransactionAutoComplete` = `false`, then batching mode is never entered.  
@@ -61,7 +61,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 {
      ServiceEndpoint sep = ServiceHost.AddServiceEndpoint(typeof(IOrderProcessor), new NetMsmqBinding(), "net.msmq://localhost/private/ServiceModelSamplesTransacted");
      sep.Behaviors.Add(new TransactedBatchingBehavior(100));
-     
+
      // Open the ServiceHost to create listeners and start listening for messages.
     serviceHost.Open();
   
@@ -78,5 +78,5 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
   
 ## See also
 
-- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
-- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [Queues Overview](queues-overview.md)
+- [Queuing in WCF](queuing-in-wcf.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Make Data Available for Binding in XAML"
+description: Discover the various ways you can make data available according to the needs of your application in Windows Presentation Foundation (WPF).
 ms.date: "01/29/2018"
 dev_langs: 
   - "csharp"
@@ -17,7 +18,7 @@ This topic discusses various ways you can make data available for binding in [!I
   
  [!code-xaml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=9,37)]  
   
- You can then bind the <xref:System.Windows.Controls.TextBlock> control to the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], as the highlighted line that contains the `<TextBlock>` element shows. 
+ You can then bind the <xref:System.Windows.Controls.TextBlock> control to the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], as the highlighted line that contains the `<TextBlock>` element shows.
   
  Alternatively, you can use the <xref:System.Windows.Data.ObjectDataProvider> class, as in the following example:  
   

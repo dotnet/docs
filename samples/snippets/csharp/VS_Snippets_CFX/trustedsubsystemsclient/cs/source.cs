@@ -48,7 +48,7 @@ namespace Microsoft.ServiceModel.Samples
             subsystemBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.UserName;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://www.cohowinery.com:8000/FacadeService");
 

@@ -1,5 +1,6 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
+description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -60,7 +61,7 @@ public class TaxRates {
 }
 ```
 
-For more information about attributes, see [Attributes](../../../docs/standard/attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
+For more information about attributes, see [Attributes](../attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
 
 ## Controlling Array Serialization
 
@@ -294,7 +295,7 @@ public class Group {
 If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.
 
 ```xml
-<xs:element name="NewGroupName" type="NewTypeName">
+<xs:element name="NewGroupName" type="NewTypeName" />
 ```
 
 In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.

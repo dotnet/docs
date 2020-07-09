@@ -1,5 +1,6 @@
 ---
 title: "Ensuring Data Integrity with Hash Codes"
+description: Learn how to ensure data integrity using hash codes in .NET. A hash value is a numeric value of a fixed length that uniquely identifies data.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -54,4 +55,4 @@ The hash codes do not match.
   
 ## See also
 
-- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Cryptographic Services](cryptographic-services.md)

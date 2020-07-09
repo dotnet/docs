@@ -7,7 +7,7 @@ namespace customer_relationship
 {
     public class SampleCustomer : ICustomer
     {
-        public SampleCustomer(string name, DateTime dateJoined) => 
+        public SampleCustomer(string name, DateTime dateJoined) =>
             (Name, DateJoined) = (name, dateJoined);
 
         private List<IOrder> allOrders = new List<IOrder>();

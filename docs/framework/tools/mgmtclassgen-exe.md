@@ -18,8 +18,8 @@ The Management Strongly Typed Class Generator tool enables you to quickly genera
 ## Syntax  
   
 ```console  
-mgmtclassgen   
-WMIClass [options]   
+mgmtclassgen
+WMIClass [options]
 ```  
   
 |Argument|Description|  
@@ -77,11 +77,11 @@ WMIClass [options]
   
 - The WMI uses the term singleton to describe a class that can have only one instance. Therefore, the parameterless constructor for a singleton class will initialize the class to the only instance of the class.  
   
-- A WMI class can have properties that are objects. When you generate a strongly-typed class for this type of WMI class, you should consider generating strongly-typed classes for the types of the embedded object properties. This will allow you to access the embedded objects in a strongly-typed manner. Note that the generated code might not be able to detect the type of the embedded object. In this case, a comment will be created in the generated code to notify you of this issue. You can then modify the generated code to type the property to the other generated class.  
+- A WMI class can have properties that are objects. When you generate a strongly typed class for this type of WMI class, you should consider generating strongly typed classes for the types of the embedded object properties. This will allow you to access the embedded objects in a strongly typed manner. Note that the generated code might not be able to detect the type of the embedded object. In this case, a comment will be created in the generated code to notify you of this issue. You can then modify the generated code to type the property to the other generated class.  
   
 - In WMI, the data value of the CIM_DATETIME data type can represent either a specific date and time or a time interval. If the data value represents a date and time, the data type in the generated class is **DateTime**. If the data value represents a time interval, the data type in the generated class is **TimeSpan**.  
   
- You can alternately generate a strongly-typed class using the Server Explorer Management Extension in Visual Studio .NET.  
+ You can alternately generate a strongly typed class using the Server Explorer Management Extension in Visual Studio .NET.  
   
  For more information about WMI, see the **Windows Management Instrumentation** topic in the Platform SDK documentation.  
   
@@ -99,11 +99,11 @@ Imports System
 Imports System.Management  
 Imports ROOT.CIMV2.Win32  
   
-Public Class App     
-   Public Shared Sub Main()        
+Public Class App
+   Public Shared Sub Main()
       ' Enumerate instances of the Win32_process.  
       ' Print the Name property of the instance.  
-      Dim ps As Process     
+      Dim ps As Process
       For Each ps In  Process.GetInstances()  
          Console.WriteLine(ps.Name)  
       Next ps  

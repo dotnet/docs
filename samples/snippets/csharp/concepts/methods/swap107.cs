@@ -18,7 +18,7 @@ public class Example
       int temp = x;
       x = y;
       y = temp;
-   }   
+   }
 }
 // The example displays the following output:
 //      i = 2  j = 3

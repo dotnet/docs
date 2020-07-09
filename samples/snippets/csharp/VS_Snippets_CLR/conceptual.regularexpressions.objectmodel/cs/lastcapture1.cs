@@ -13,7 +13,7 @@ public class Example
       {
          Console.WriteLine("Match: " + match.Value);
          Console.WriteLine("Group 2: " + match.Groups[2].Value);
-      }   
+      }
    }
 }
 // The example displays the following output:

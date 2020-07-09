@@ -8,7 +8,7 @@ class XmlSchemaEditExample
     static void Main(string[] args)
     {
         // Add the customer schema to a new XmlSchemaSet and compile it.
-        // Any schema validation warnings and errors encountered reading or 
+        // Any schema validation warnings and errors encountered reading or
         // compiling the schema are handled by the ValidationEventHandler delegate.
         XmlSchemaSet schemaSet = new XmlSchemaSet();
         schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
@@ -26,7 +26,7 @@ class XmlSchemaEditExample
         // Create a complex type for the FirstName element.
         XmlSchemaComplexType complexType = new XmlSchemaComplexType();
         complexType.Name = "FirstNameComplexType";
-        
+
         // Create a simple content extension with a base type of xs:string.
         XmlSchemaSimpleContent simpleContent = new XmlSchemaSimpleContent();
         XmlSchemaSimpleContentExtension simpleContentExtension =

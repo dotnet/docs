@@ -1,5 +1,6 @@
 ---
 title: "Programming Pluggable Protocols"
+description: Learn how the abstract WebRequest and WebResponse classes support pluggable protocols, which allow an application to get data without specifying a protocol.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "downloading Internet resources, pluggable protocols"

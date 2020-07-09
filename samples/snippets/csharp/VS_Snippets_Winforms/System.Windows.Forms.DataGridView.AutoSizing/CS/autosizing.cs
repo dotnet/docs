@@ -127,11 +127,11 @@ public class AutoSizing : System.Windows.Forms.Form
             "Key Lime Pie", "Dessert", "lime juice, evaporated milk", "****"
         };
         string[] row3 = {
-            "Orange-Salsa Pork Chops", "Main Dish", 
+            "Orange-Salsa Pork Chops", "Main Dish",
             "pork chops, salsa, orange juice", "****"
         };
         string[] row4 = {
-            "Black Bean and Rice Salad", "Salad", 
+            "Black Bean and Rice Salad", "Salad",
             "black beans, brown rice", "****"
         };
         string[] row5 = {
@@ -260,7 +260,7 @@ public class AutoSizing : System.Windows.Forms.Form
     //<snippet7>
     private void ColumnHeadersHeightSizeMode(Object sender, EventArgs e)
     {
-        dataGridView1.ColumnHeadersHeightSizeMode = 
+        dataGridView1.ColumnHeadersHeightSizeMode =
             DataGridViewColumnHeadersHeightSizeMode.AutoSize;
     }
     //</snippet7>
@@ -268,7 +268,7 @@ public class AutoSizing : System.Windows.Forms.Form
     //<snippet8>
     private void RowHeadersWidthSizeMode(Object sender, EventArgs e)
     {
-        dataGridView1.RowHeadersWidthSizeMode = 
+        dataGridView1.RowHeadersWidthSizeMode =
             DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
     }
     //</snippet8>
@@ -320,7 +320,7 @@ public class AutoSizing : System.Windows.Forms.Form
         EventArgs theEvent)
     {
         DataGridViewColumn column = dataGridView1.Columns[2];
-        column.AutoSizeMode = 
+        column.AutoSizeMode =
             DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
     }
     //</snippet11>

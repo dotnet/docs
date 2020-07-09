@@ -1,5 +1,6 @@
 ---
 title: "The Regular Expression Object Model"
+description: Review the regular expression object model in .NET. Work with the regular expression engine, & objects & collections related to matching, grouping, & capturing.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -278,7 +279,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
  The properties of the <xref:System.Text.RegularExpressions.Group> class provide information about the captured group: The `Group.Value` property contains the captured substring, the `Group.Index` property indicates the starting position of the captured group in the input text, the `Group.Length` property contains the length of the captured text, and the `Group.Success` property indicates whether a substring matched the pattern defined by the capturing group.  
   
- Applying quantifiers to a group (for more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)) modifies the relationship of one capture per capturing group in two ways:  
+ Applying quantifiers to a group (for more information, see [Quantifiers](quantifiers-in-regular-expressions.md)) modifies the relationship of one capture per capturing group in two ways:  
   
 - If the `*` or `*?` quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string. When there is no captured text, the properties of the <xref:System.Text.RegularExpressions.Group> object are set as shown in the following table.  
   
@@ -346,5 +347,5 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
 ## See also
 
 - <xref:System.Text.RegularExpressions>
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [.NET Regular Expressions](regular-expressions.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

@@ -14,9 +14,12 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet list [<PROJECT>|<SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch]
-   [--include-prerelease] [--include-transitive] [--interactive] [--outdated] [--source]
-dotnet list package [-h|--help]
+dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
+    [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
+    [--include-prerelease] [--include-transitive] [--interactive]
+    [--outdated] [--source <SOURCE>]
+
+dotnet list package -h|--help
 ```
 
 ## Description

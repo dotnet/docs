@@ -38,7 +38,7 @@ WHERE h.ShipDate IS Null
  [!code-vb[DP L2E Conceptual Examples#CastResultsIsNull](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#castresultsisnull)]  
   
 ## Passing Null Collections to Aggregate Functions  
- In LINQ to Entities, when you pass a collection that supports `IQueryable` to an aggregate function, aggregate operations are performed at the database. There might be differences in the results of a query that was performed in-memory and a query that was performed at the database. With an in-memory query, if there are no matches, the query returns zero. At the database, the same query returns `null`. If a `null` value is passed to a LINQ aggregate function, an exception will be thrown. To accept possible `null` values, cast the types and the properties of the types that receive query results to nullable types.  
+ In LINQ to Entities, when you pass a collection that supports `IQueryable` to an aggregate function, aggregate operations are performed at the database. There might be differences in the results of a query that was performed in-memory and a query that was performed at the database. With an in-memory query, if there are no matches, the query returns zero. At the database, the same query returns `null`. If a `null` value is passed to a LINQ aggregate function, an exception will be thrown. To accept possible `null` values, cast the types and the properties of the types that receive query results to nullable value types.  
   
 ## See also
 

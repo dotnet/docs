@@ -60,9 +60,9 @@ From a usage point of view, when using HttpClient, there’s no need to add anyt
 
 ## Test Http retries and circuit breakers in eShopOnContainers
 
-Whenever you start the eShopOnContainers solution in a Docker host, it needs to start multiple containers. Some of the containers are slower to start and initialize, like the SQL Server container. This is especially true the first time you deploy the eShopOnContainers application into Docker because it needs to set up the images and the database. The fact that some containers start slower than others can cause the rest of the services to initially throw HTTP exceptions, even if you set dependencies between containers at the docker-compose level, as explained in previous sections. Those docker-compose dependencies between containers are just at the process level. The container’s entry point process might be started, but SQL Server might not be ready for queries. The result can be a cascade of errors, and the application can get an exception when trying to consume that particular container.
+Whenever you start the eShopOnContainers solution in a Docker host, it needs to start multiple containers. Some of the containers are slower to start and initialize, like the SQL Server container. This is especially true the first time you deploy the eShopOnContainers application into Docker because it needs to set up the images and the database. The fact that some containers start slower than others can cause the rest of the services to initially throw HTTP exceptions, even if you set dependencies between containers at the docker-compose level, as explained in previous sections. Those docker-compose dependencies between containers are just at the process level. The container's entry point process might be started, but SQL Server might not be ready for queries. The result can be a cascade of errors, and the application can get an exception when trying to consume that particular container.
 
-You might also see this type of error on startup when the application is deploying to the cloud. In that case, orchestrators might be moving containers from one node or VM to another (that is, starting new instances) when balancing the number of containers across the cluster’s nodes.
+You might also see this type of error on startup when the application is deploying to the cloud. In that case, orchestrators might be moving containers from one node or VM to another (that is, starting new instances) when balancing the number of containers across the cluster's nodes.
 
 The way 'eShopOnContainers' solves those issues when starting all the containers is by using the Retry pattern illustrated earlier.
 
@@ -91,7 +91,7 @@ You can then check the status using the URI `http://localhost:5103/failing`, as 
 
 ![Screenshot of checking the status of failing middleware simulation.](./media/implement-circuit-breaker-pattern/failing-middleware-simulation.png)
 
-**Figure 8-5**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled.
+**Figure 8-5**. Checking the state of the "Failing" ASP.NET middleware – In this case, disabled.
 
 At this point, the Basket microservice responds with status code 500 whenever you call invoke it.
 
@@ -127,7 +127,7 @@ public class CartController : Controller
 }
 ```
 
-Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
+Here's a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
 
 ![Screenshot of the MVC web app with basket service inoperative error.](./media/implement-circuit-breaker-pattern/basket-service-inoperative.png)
 

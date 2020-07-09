@@ -14,15 +14,15 @@ public class Example
          Console.WriteLine("Input: {0}", input);
          match = Regex.Match(input, backtrackingPattern);
          Console.WriteLine("   Pattern: {0}", backtrackingPattern);
-         if (match.Success) { 
+         if (match.Success) {
             Console.WriteLine("      Match: {0}", match.Value);
             Console.WriteLine("      Group 1: {0}", match.Groups[1].Value);
          }
          else {
             Console.WriteLine("      Match failed.");
-         }   
+         }
       }
-      Console.WriteLine();            
+      Console.WriteLine();
    }
 }
 // The example displays the following output:

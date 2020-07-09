@@ -17,11 +17,11 @@ XmlElement name = doc.CreateElement("Name");
 name.InnerText = "Patrick Hines";  
 XmlElement phone1 = doc.CreateElement("Phone");  
 phone1.SetAttribute("Type", "Home");  
-phone1.InnerText = "206-555-0144";          
+phone1.InnerText = "206-555-0144";
 XmlElement phone2 = doc.CreateElement("Phone");  
 phone2.SetAttribute("Type", "Work");  
-phone2.InnerText = "425-555-0145";          
-XmlElement street1 = doc.CreateElement("Street1");          
+phone2.InnerText = "425-555-0145";
+XmlElement street1 = doc.CreateElement("Street1");
 street1.InnerText = "123 Main St";  
 XmlElement city = doc.CreateElement("City");  
 city.InnerText = "Mercer Island";  
@@ -53,7 +53,7 @@ XElement contacts =
     new XElement("Contacts",  
         new XElement("Contact",  
             new XElement("Name", "Patrick Hines"),  
-            new XElement("Phone", "206-555-0144",   
+            new XElement("Phone", "206-555-0144",
                 new XAttribute("Type", "Home")),  
             new XElement("phone", "425-555-0145",  
                 new XAttribute("Type", "Work")),  

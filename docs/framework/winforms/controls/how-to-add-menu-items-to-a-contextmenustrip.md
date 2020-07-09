@@ -36,7 +36,7 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
     ```  
   
     ```csharp  
-    this.contextMenuStrip1.Items.AddRange(new   
+    this.contextMenuStrip1.Items.AddRange(new
        System.Windows.Forms.ToolStripItem[] {  
           this.toolStripMenuItem1, this.toolStripMenuItem2});  
     ```  

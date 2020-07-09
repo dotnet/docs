@@ -1,5 +1,6 @@
 ---
 title: "How to: Request data by using the WebRequest class"
+description: Learn how to request a resource, such as a webpage or a file, from a server by using the WebRequest class in the .NET Framework.
 ms.date: "03/21/2019"
 dev_langs:
   - "csharp"

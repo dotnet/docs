@@ -29,7 +29,7 @@ private async void button1_Click(object sender, RoutedEventArgs e)
             // Retrieve the stream. This method returns a IRandomAccessStreamWithContentType.
             var stream = await result.OpenReadAsync();
 
-            // Convert the stream to a .NET stream using AsStream, pass to a 
+            // Convert the stream to a .NET stream using AsStream, pass to a
             // StreamReader and read the stream.
             using (StreamReader sr = new StreamReader(stream.AsStream()))
             {

@@ -16,4 +16,4 @@ public class Example
 // The example displays the following output:
 //       'gray wolf '
 //       'grey wall.'
-// </Snippet1>      
+// </Snippet1>

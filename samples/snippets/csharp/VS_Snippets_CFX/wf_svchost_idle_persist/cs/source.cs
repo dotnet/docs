@@ -13,12 +13,12 @@ namespace ConsoleX
     {
         static void Main(string[] args)
         {
-            const string connectionString = 
+            const string connectionString =
             "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI";
             // The Throw class derives from the Activity class, needed to construct a WorkflowServiceHost.
             Throw throwError = new Throw();
-            
-            WorkflowServiceHost host = new WorkflowServiceHost(throwError, 
+
+            WorkflowServiceHost host = new WorkflowServiceHost(throwError,
             new Uri(@"http://microsoft/services/"));
             //<snippet1>
             // Code to create a WorkFlowServiceHost is not shown here.
@@ -39,7 +39,7 @@ namespace ConsoleX
         }
     }
 
-    [ServiceContract] 
+    [ServiceContract]
     interface ICalculator
     {
         [OperationContract]

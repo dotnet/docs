@@ -22,7 +22,7 @@ When you fill a shape, you must pass a <xref:System.Drawing.Brush> object to one
  [!code-csharp[System.Drawing.AlphaBlending#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.AlphaBlending/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.AlphaBlending#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#31)]  
 
- The following illustration shows the output of the following code: 
+ The following illustration shows the output of the following code:
   
  ![Illustration that shows opaque and semitransparent output.](./media/how-to-draw-with-opaque-and-semitransparent-brushes/compositingquality-ellipse-semitransparent.png)  
   

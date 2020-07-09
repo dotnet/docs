@@ -25,7 +25,7 @@ ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
   
 ## See also
 
-- [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)
-- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
-- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)
-- [How to: Invoke a Delegate Method](../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)
+- [New Operator](../operators/new-operator.md)
+- [AddressOf Operator](../operators/addressof-operator.md)
+- [Delegates](../../programming-guide/language-features/delegates/index.md)
+- [How to: Invoke a Delegate Method](../../programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)

@@ -12,7 +12,7 @@ public class Example
       Match m = r.Match(url);
       if (m.Success)
 // <Snippet2>
-         Console.WriteLine(m.Groups["proto"].Value + m.Groups["port"].Value); 
+         Console.WriteLine(m.Groups["proto"].Value + m.Groups["port"].Value);
 // </Snippet2>
    }
 }

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyManager::GetNonHostStoreAssemblies Method
-Gets an interface pointer to an [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the common language runtime (CLR) to load.  
+Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the common language runtime (CLR) to load.  
   
 ## Syntax  
   
@@ -50,7 +50,7 @@ HRESULT GetNonHostStoreAssemblies (
   
 - If the assembly appears in the list, the CLR binds to it normally.  
   
-- If the assembly does not appear in the list and the host has provided an implementation of [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md), the CLR calls [IHostAssemblyStore::ProvideAssembly](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-provideassembly-method.md) to allow the host to supply the assembly to bind to.  
+- If the assembly does not appear in the list and the host has provided an implementation of [IHostAssemblyStore](ihostassemblystore-interface.md), the CLR calls [IHostAssemblyStore::ProvideAssembly](ihostassemblystore-provideassembly-method.md) to allow the host to supply the assembly to bind to.  
   
 - Otherwise, the CLR fails to bind to the assembly.  
   
@@ -60,7 +60,7 @@ HRESULT GetNonHostStoreAssemblies (
 > Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -70,6 +70,6 @@ HRESULT GetNonHostStoreAssemblies (
   
 ## See also
 
-- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
-- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
-- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [IHostAssemblyManager Interface](ihostassemblymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)

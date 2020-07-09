@@ -35,8 +35,8 @@ namespace Microsoft.Samples.KeyFrameExamples
         {
             // <SnippetKeyTimesTimeSpanExample>
             /*
-               This Rectangle is animated with KeyTimes using TimeSpan Values. 
-               It moves horizontally to 100 in the first 3 seconds, 100 to 300 in 
+               This Rectangle is animated with KeyTimes using TimeSpan Values.
+               It moves horizontally to 100 in the first 3 seconds, 100 to 300 in
                the next second, and 300 to 500 in the last 6 seconds.
             */
 
@@ -50,13 +50,13 @@ namespace Microsoft.Samples.KeyFrameExamples
 
             // Create a transform to move the rectangle
             // across the screen.
-            TranslateTransform translateTransform1 = 
+            TranslateTransform translateTransform1 =
                 new TranslateTransform();
             aRectangle.RenderTransform = translateTransform1;
 
             // Create a DoubleAnimationUsingKeyFrames
             // to animate the transform.
-            DoubleAnimationUsingKeyFrames transformAnimation = 
+            DoubleAnimationUsingKeyFrames transformAnimation =
                 new DoubleAnimationUsingKeyFrames();
             transformAnimation.Duration = TimeSpan.FromSeconds(10);
 
@@ -87,7 +87,7 @@ namespace Microsoft.Samples.KeyFrameExamples
         {
             // <SnippetKeyTimesPercentageExample>
             /*
-              This rectangle moves horizontally to 100 in the first 3 seconds, 
+              This rectangle moves horizontally to 100 in the first 3 seconds,
               100 to 300 in  the next second, and 300 to 500 in the last 6 seconds.
             */
 
@@ -137,7 +137,7 @@ namespace Microsoft.Samples.KeyFrameExamples
         {
             // <SnippetKeyTimesUniformExample>
             /*
-               This rectangle is animated with KeyTimes using Uniform values. 
+               This rectangle is animated with KeyTimes using Uniform values.
                Goes to 100 in the first 3.3 seconds, 100 to
                300 in the next 3.3 seconds, 300 to 500 in the last 3.3 seconds.
             */
@@ -164,9 +164,9 @@ namespace Microsoft.Samples.KeyFrameExamples
 
             /*
                KeyTime properties are expressed with values of Uniform. When a key time is set to
-               "Uniform" the total allotted time of the animation is divided evenly between key frames.  
-               In this example, the total duration of the animation is ten seconds and there are four 
-               key frames each of which are set to "Uniform", therefore, the duration of each key frame 
+               "Uniform" the total allotted time of the animation is divided evenly between key frames.
+               In this example, the total duration of the animation is ten seconds and there are four
+               key frames each of which are set to "Uniform", therefore, the duration of each key frame
                is 3.3 seconds (10/3).
              */
 
@@ -198,7 +198,7 @@ namespace Microsoft.Samples.KeyFrameExamples
 
             // <SnippetKeyTimesPacedExample>
             /*
-               This rectangle is animated with KeyTimes using Paced Values. 
+               This rectangle is animated with KeyTimes using Paced Values.
                The rectangle moves between key frames at uniform rate except for first key frame
                because using a Paced value on the first KeyFrame in a collection of frames gives a time of zero.
             */
@@ -224,9 +224,9 @@ namespace Microsoft.Samples.KeyFrameExamples
             transformAnimation.Duration = TimeSpan.FromSeconds(10);
 
             /*
-               Use Paced values when a constant rate is desired. 
+               Use Paced values when a constant rate is desired.
                The time allocated to a key frame with a KeyTime of "Paced" is
-               determined by the time allocated to the other key frames of the animation. This time is 
+               determined by the time allocated to the other key frames of the animation. This time is
                calculated to attempt to give a "paced" or "constant velocity" for the animation.
              */
 

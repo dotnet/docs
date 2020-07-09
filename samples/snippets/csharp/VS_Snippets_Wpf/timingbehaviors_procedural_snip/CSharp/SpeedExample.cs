@@ -16,10 +16,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public SpeedExample()
         {
-        
+
             // Create a name scope for the page.
-            NameScope.SetNameScope(this, new NameScope());        
-        
+            NameScope.SetNameScope(this, new NameScope());
+
             this.WindowTitle = "Speed Example";
 
             StackPanel myStackPanel = new StackPanel();

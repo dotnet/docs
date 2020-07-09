@@ -17,9 +17,9 @@ The following table lists possible ways to access Web services referenced by an 
 
 |To|See|
 |---|---|
-|Call a Web service|[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|
-|Call a Web service asynchronously and handle an event when it completes|[How to: Call a Web Service Asynchronously](../../../visual-basic/developing-apps/programming/how-to-call-a-web-service-asynchronously.md)|
+|Call a Web service|[My.WebServices Object](../../language-reference/objects/my-webservices-object.md)|
+|Call a Web service asynchronously and handle an event when it completes|[How to: Call a Web Service Asynchronously](how-to-call-a-web-service-asynchronously.md)|
 
 ## See also
 
-- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)

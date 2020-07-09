@@ -1,5 +1,6 @@
 ---
 title: Set the Value Displayed by ProgressBar Control
+description: Learn how to set the value displayed by the Windows Forms ProgressBar control. There are multiple approaches you can choose to use.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -157,16 +158,16 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
   
     ```vb  
     Public Sub ReadFiles()  
-       ' Sets the progress bar's minimum value to a number   
+       ' Sets the progress bar's minimum value to a number
        ' representing the hard disk space before the files are read in.  
        ' You will most likely have to set this using a system call.  
        ' NOTE: The code below is meant to be an example and  
        ' will not compile.  
        ProgressBar1.Minimum = AvailableDiskSpace()  
-       ' Sets the progress bar's maximum value to a number   
+       ' Sets the progress bar's maximum value to a number
        ' representing the total hard disk space.  
        ' You will most likely have to set this using a system call.  
-       ' NOTE: The code below is meant to be an example   
+       ' NOTE: The code below is meant to be an example
        ' and will not compile.  
        ProgressBar1.Maximum = TotalDiskSpace()  
   
@@ -177,11 +178,11 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
        ' so it will execute the loop 5 times.  
        For i = 1 To 5  
           ' Insert code to read a file into memory and update file size.  
-          ' Increases the progress bar's value based on the size of   
+          ' Increases the progress bar's value based on the size of
           ' the file currently being written.  
           ProgressBar1.Increment(FileSize)  
           ' Updates the label to show available drive space.  
-          Label1.Text = "Current Disk Space Used = " &_   
+          Label1.Text = "Current Disk Space Used = " &_
           ProgressBar1.Value.ToString()  
        Next i  
     End Sub  
@@ -190,16 +191,16 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
     ```csharp  
     public void readFiles()  
     {  
-       // Sets the progress bar's minimum value to a number   
+       // Sets the progress bar's minimum value to a number
        // representing the hard disk space before the files are read in.  
        // You will most likely have to set this using a system call.  
-       // NOTE: The code below is meant to be an example and   
+       // NOTE: The code below is meant to be an example and
        // will not compile.  
        progressBar1.Minimum = AvailableDiskSpace();  
-       // Sets the progress bar's maximum value to a number   
+       // Sets the progress bar's maximum value to a number
        // representing the total hard disk space.  
        // You will most likely have to set this using a system call.  
-       // NOTE: The code below is meant to be an example   
+       // NOTE: The code below is meant to be an example
        // and will not compile.  
        progressBar1.Maximum = TotalDiskSpace();  
   
@@ -209,7 +210,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
        for (int i = 1; i<= 5; i++)  
        {  
           // Insert code to read a file into memory and update file size.  
-          // Increases the progress bar's value based on the size of   
+          // Increases the progress bar's value based on the size of
           // the file currently being written.  
           progressBar1.Increment(FileSize);  
           // Updates the label to show available drive space.  

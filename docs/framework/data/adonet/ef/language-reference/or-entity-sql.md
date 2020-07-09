@@ -10,7 +10,7 @@ Combines two `Boolean` expressions.
   
 ```sql  
 boolean_expression OR boolean_expression  
--- or   
+-- or
 boolean_expression || boolean_expression  
 ```  
   

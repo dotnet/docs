@@ -16,7 +16,7 @@ namespace SDKSample
         NavigationWindow nw = currentApp.Windows[0] as NavigationWindow;
         nw.Source = new Uri("page2.xaml",UriKind.RelativeOrAbsolute);
       }
-//<SnippetSimpleHandlerA>      
+//<SnippetSimpleHandlerA>
       void b1SetColor(object sender, RoutedEventArgs args)
       {
         //logic to handle the Click event
@@ -49,7 +49,7 @@ namespace SDKSample
         }
         void Onb2Click(object sender, RoutedEventArgs e)
         {
-            //logic to handle the Click event     
+            //logic to handle the Click event
         }
 //</SnippetAddHandlerCode>
 //<SnippetAddHandlerPlusEquals>
@@ -60,7 +60,7 @@ namespace SDKSample
         }
         void Onb2Click2(object sender, RoutedEventArgs e)
         {
-          //logic to handle the Click event     
+          //logic to handle the Click event
         }
 //</SnippetAddHandlerPlusEquals>
     }

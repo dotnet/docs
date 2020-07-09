@@ -5,15 +5,15 @@ public class Example
 {
    public static void Main()
    {
-      object[] objects = { CultureInfo.CurrentCulture, 
-                           CultureInfo.CurrentCulture.DateTimeFormat, 
+      object[] objects = { CultureInfo.CurrentCulture,
+                           CultureInfo.CurrentCulture.DateTimeFormat,
                            CultureInfo.CurrentCulture.NumberFormat,
                            new ArgumentException(), null };
       foreach (var obj in objects)
          ProvidesFormatInfo(obj);
    }
 
-   private static void ProvidesFormatInfo(object obj)         
+   private static void ProvidesFormatInfo(object obj)
    {
       switch (obj)
       {

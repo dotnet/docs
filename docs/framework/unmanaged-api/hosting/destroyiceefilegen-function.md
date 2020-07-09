@@ -18,7 +18,7 @@ topic_type:
   - "apiref"
 ---
 # DestroyICeeFileGen Function
-Destroys an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  
+Destroys an [ICeeFileGen](iceefilegen-class.md) object.  
   
  This function has been deprecated in the .NET Framework 4.  
   
@@ -38,10 +38,10 @@ HRESULT DestroyICeeFileGen (
  This method returns standard COM error codes.  
   
 ## Remarks  
- `DestroyICeeFileGen` destroys the `ICeeFileGen` object created by the [CreateICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/createiceefilegen-function.md) function.  
+ `DestroyICeeFileGen` destroys the `ICeeFileGen` object created by the [CreateICeeFileGen](createiceefilegen-function.md) function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  
   
@@ -51,4 +51,4 @@ HRESULT DestroyICeeFileGen (
   
 ## See also
 
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

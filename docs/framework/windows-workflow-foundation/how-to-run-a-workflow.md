@@ -1,5 +1,6 @@
 ---
 title: "How to: Run a Workflow"
+description: This article shows you how to create a workflow host and run the workflow defined in a previous article in this Windows Workflow Foundation tutorial series.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: Shapes and basic drawing overview
+description: Enhance your user interface with ready-to-use shapes and several layers of rendering services in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -18,7 +19,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] event system.  
 
-<a name="shapes"></a>   
+<a name="shapes"></a>
 ## Shape Objects  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
   
@@ -57,13 +58,13 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  ![Ellipse illustration](./media/shape-ovw-ellipse2.png "shape_ovw_ellipse2")  
   
-<a name="paths"></a>   
+<a name="paths"></a>
 ## Using Paths and Geometries  
  The <xref:System.Windows.Shapes.Path> class enables you to draw curves and complex shapes. These curves and shapes are described using <xref:System.Windows.Media.Geometry> objects. To use a <xref:System.Windows.Shapes.Path>, you create a <xref:System.Windows.Media.Geometry> and use it to set the <xref:System.Windows.Shapes.Path> object's <xref:System.Windows.Shapes.Path.Data%2A> property.  
   
  There are a variety of <xref:System.Windows.Media.Geometry> objects to choose from. The <xref:System.Windows.Media.LineGeometry>, <xref:System.Windows.Media.RectangleGeometry>, and <xref:System.Windows.Media.EllipseGeometry> classes describe relatively simple shapes. To create more complex shapes or create curves, use a <xref:System.Windows.Media.PathGeometry>.  
   
-<a name="pathgeometry"></a>   
+<a name="pathgeometry"></a>
 ### PathGeometry and PathSegments  
  <xref:System.Windows.Media.PathGeometry> objects are comprised of one or more <xref:System.Windows.Media.PathFigure> objects; each <xref:System.Windows.Media.PathFigure> represents a different "figure" or shape. Each <xref:System.Windows.Media.PathFigure> is itself comprised of one or more <xref:System.Windows.Media.PathSegment> objects, each representing a connected portion of the figure or shape. Segment types include the following: <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.BezierSegment>, and <xref:System.Windows.Media.ArcSegment>.  
   
@@ -77,12 +78,12 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  For more information about <xref:System.Windows.Media.PathGeometry> and the other <xref:System.Windows.Media.Geometry> classes, see the [Geometry Overview](geometry-overview.md).  
   
-<a name="pathdatastring"></a>   
+<a name="pathdatastring"></a>
 ### XAML Abbreviated Syntax  
  In [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
-      <Path Stroke="DarkGoldenRod" StrokeThickness="3"   
+      <Path Stroke="DarkGoldenRod" StrokeThickness="3"
 Data="M 100,200 C 100,25 400,350 400,175 H 280" />  
 ```  
   
@@ -96,12 +97,12 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  For the complete path syntax, see the <xref:System.Windows.Shapes.Path.Data%2A> reference and [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md).  
   
-<a name="fillpaint"></a>   
+<a name="fillpaint"></a>
 ## Painting Shapes  
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color keywords, see properties of the <xref:System.Windows.Media.Colors> class in the <xref:System.Windows.Media> namespace.  
   
 ```xaml
-<Canvas Background="LightGray">   
+<Canvas Background="LightGray">
    <Ellipse  
       Canvas.Top="50"  
       Canvas.Left="50"  
@@ -128,7 +129,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
 <Polygon  
     Points="300,200 400,125 400,275 300,200"  
-    Stroke="Purple"   
+    Stroke="Purple"
     StrokeThickness="2">  
     <Polygon.Fill>  
        <SolidColorBrush Color="Blue" Opacity="0.4"/>  
@@ -142,7 +143,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  You can also paint a shape's stroke or fill with gradients, images, patterns, and more. For more information, see the [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
-<a name="stretchableshapessection"></a>   
+<a name="stretchableshapessection"></a>
 ## Stretchable Shapes  
  The <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle> classes all have a <xref:System.Windows.Shapes.Shape.Stretch%2A> property. This property determines how a <xref:System.Windows.Shapes.Shape> object's contents (the shape to be drawn) is stretched to fill the <xref:System.Windows.Shapes.Shape> object's layout space. A <xref:System.Windows.Shapes.Shape> object's layout space is the amount of space the <xref:System.Windows.Shapes.Shape> is allocated by the layout system, because of either an explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> setting or because of its <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> settings. For additional information on layout in Windows Presentation Foundation, see [Layout](../advanced/layout.md) overview.  
   
@@ -187,7 +188,7 @@ myPolygon.Stroke = Brushes.Black;
 myPolygon.StrokeThickness = 2;  
 ```
 
-<a name="transforms"></a>   
+<a name="transforms"></a>
 ## Transforming Shapes  
  The <xref:System.Windows.Media.Transform> class provides the means to transform shapes in a two-dimensional plane.  The different types of transformation include rotation (<xref:System.Windows.Media.RotateTransform>), scale (<xref:System.Windows.Media.ScaleTransform>), skew (<xref:System.Windows.Media.SkewTransform>), and translation (<xref:System.Windows.Media.TranslateTransform>).  
   

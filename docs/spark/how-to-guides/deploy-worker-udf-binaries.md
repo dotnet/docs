@@ -1,7 +1,7 @@
 ---
 title: Deploy .NET for Apache Spark worker and user-defined function binaries
 description: Learn how to deploy .NET for Apache Spark worker and user-defined function binaries.
-ms.date: 01/21/2019
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -10,23 +10,25 @@ ms.custom: mvc,how-to
 
 This how-to provides general instructions on how to deploy .NET for Apache Spark worker and user-defined function binaries. You learn which Environment Variables to set up, as well as some commonly used parameters for launching applications with `spark-submit`.
 
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
+
 ## Configurations
 Configurations show the general environment variables and parameters settings in order to deploy .NET for Apache Spark worker and user-defined function binaries.
 
 ### Environment variables
-When deploying workers and writing UDFs, there are a few commonly used environment variables that you may need to set: 
+When deploying workers and writing UDFs, there are a few commonly used environment variables that you may need to set:
 
 | Environment Variable         | Description
-| :--------------------------- | :---------- 
+| :--------------------------- | :----------
 | DOTNET_WORKER_DIR            | Path where the <code>Microsoft.Spark.Worker</code> binary has been generated.</br>It's used by the Spark driver and will be passed to Spark executors. If this variable is not set up, the Spark executors will search the path specified in the <code>PATH</code> environment variable.</br>_e.g. "C:\bin\Microsoft.Spark.Worker"_
 | DOTNET_ASSEMBLY_SEARCH_PATHS | Comma-separated paths where <code>Microsoft.Spark.Worker</code> will load assemblies.</br>Note that if a path starts with ".", the working directory will be prepended. If in **yarn mode**, "." would represent the container's working directory.</br>_e.g. "C:\Users\\&lt;user name&gt;\\&lt;mysparkapp&gt;\bin\Debug\\&lt;dotnet version&gt;"_
 | DOTNET_WORKER_DEBUG          | If you want to <a href="https://github.com/dotnet/spark/blob/master/docs/developer-guide.md#debugging-user-defined-function-udf">debug a UDF</a>, then set this environment variable to <code>1</code> before running <code>spark-submit</code>.
 
 ### Parameter options
-Once the Spark application is [bundled](https://spark.apache.org/docs/latest/submitting-applications.html#bundling-your-applications-dependencies), you can launch it using `spark-submit`. The following table shows some of the commonly used options: 
+Once the Spark application is [bundled](https://spark.apache.org/docs/latest/submitting-applications.html#bundling-your-applications-dependencies), you can launch it using `spark-submit`. The following table shows some of the commonly used options:
 
 | Parameter Name        | Description
-| :---------------------| :---------- 
+| :---------------------| :----------
 | --class               | The entry point for your application.</br>_e.g. org.apache.spark.deploy.dotnet.DotnetRunner_
 | --master              | The <a href="https://spark.apache.org/docs/latest/submitting-applications.html#master-urls">master URL</a> for the cluster.</br>_e.g. yarn_
 | --deploy-mode         | Whether to deploy your driver on the worker nodes (<code>cluster</code>) or locally as an external client (<code>client</code>).</br>Default: <code>client</code>
@@ -74,4 +76,4 @@ hdfs://<path to your files>/mySparkApp.zip mySparkApp
 ## Next steps
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
-* [Debug a .NET for Apache Spark application on Windows](../how-to-guides/debug.md)
+* [Debug a .NET for Apache Spark application on Windows](debug.md)

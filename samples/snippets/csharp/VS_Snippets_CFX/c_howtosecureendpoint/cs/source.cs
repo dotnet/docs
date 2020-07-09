@@ -25,26 +25,26 @@ namespace Microsoft.Security.Samples
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Windows;
 
-            // Create the Type instances for later use and the URI for 
+            // Create the Type instances for later use and the URI for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);
             Uri baseAddress = new
                 Uri("http://localhost:8037/serviceModelSamples/");
-            
-            // Create the ServiceHost and add an endpoint. 
+
+            // Create the ServiceHost and add an endpoint.
             ServiceHost myServiceHost =
                 new ServiceHost(serviceType, baseAddress);
             myServiceHost.AddServiceEndpoint
                 (contractType, myBinding, "secureCalculator");
             //<snippet1>
-            // Create a new metadata behavior object and set its properties to 
-            // create a secure endpoint. 
+            // Create a new metadata behavior object and set its properties to
+            // create a secure endpoint.
             ServiceMetadataBehavior sb = new ServiceMetadataBehavior();
             sb.HttpsGetEnabled = true;
             sb.HttpsGetUrl = new Uri("https://myMachineName:8036/myEndpoint");
             myServiceHost.Description.Behaviors.Add(sb);
-            
+
             myServiceHost.Open();
             //</snippet1>
             // Use the GetHostEntry method to return the actual machine name.

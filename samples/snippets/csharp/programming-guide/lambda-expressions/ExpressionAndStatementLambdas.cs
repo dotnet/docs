@@ -19,8 +19,8 @@ namespace lambda_expressions
             // </SnippetExplicitlyTypedParameters>
 
             // <SnippetStatementLambda>
-            Action<string> greet = name => 
-            { 
+            Action<string> greet = name =>
+            {
                 string greeting = $"Hello {name}!";
                 Console.WriteLine(greeting);
             };

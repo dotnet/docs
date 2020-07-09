@@ -1,5 +1,6 @@
 ---
 title: "overlappedFreeError MDA"
+description: Review the overlappedFreeError managed debugging assistant (MDA) in .NET, which may activate on access violations or corruption of the garbage-collected heap.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "OverlappedFreeError MDA"

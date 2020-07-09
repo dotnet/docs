@@ -9,14 +9,14 @@ public class Example
    {
       Thread.CurrentThread.Name = "Main";
 
-      // Better: Create and start the task in one operation. 
+      // Better: Create and start the task in one operation.
       Task taskA = Task.Factory.StartNew(() => Console.WriteLine("Hello from taskA."));
-      
+
       // Output a message from the calling thread.
-      Console.WriteLine("Hello from thread '{0}'.", 
+      Console.WriteLine("Hello from thread '{0}'.",
                         Thread.CurrentThread.Name);
 
-      taskA.Wait();                  
+      taskA.Wait();
    }
 }
 // The example displays output like the following:

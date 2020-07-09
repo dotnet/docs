@@ -4,7 +4,7 @@ Imports System.Reflection
 
 Class Mymemberinfo
     Public Shared Sub Main()
-        Console.WriteLine ("\nReflection.MemberInfo")
+        Console.WriteLine("\nReflection.MemberInfo")
         ' Gets the Type and MemberInfo.
         Dim MyType As Type = Type.GetType("System.IO.File")
         Dim Mymemberinfoarray() As MemberInfo = MyType.GetMembers()

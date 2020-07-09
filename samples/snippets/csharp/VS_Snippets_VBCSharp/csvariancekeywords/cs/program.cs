@@ -61,7 +61,7 @@ namespace n1
         dButton = dControl;
 
         // Invoke the delegate.
-        dButton(new Button()); 
+        dButton(new Button());
     }
     //</Snippet2>
     }
@@ -107,7 +107,7 @@ namespace n2
     { return new Button(); }
 
     public void Test()
-    {            
+    {
         // Instantiate the delegates with the methods.
         DCovariant<Control> dControl = SampleControl;
         DCovariant<Button> dButton = SampleButton;
@@ -117,7 +117,7 @@ namespace n2
         dControl = dButton;
 
         // Invoke the delegate.
-        dControl(); 
+        dControl();
     }
     //</Snippet4>
     }

@@ -45,7 +45,7 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
 3. The number and kind of operations.  
   
-     PLINQ provides the AsOrdered operator for situations in which it is necessary to maintain the order of elements in the source sequence. There is a cost associated with ordering, but this cost is usually modest. GroupBy and Join operations likewise incur overhead. PLINQ performs best when it is allowed to process elements in the source collection in any order, and pass them to the next operator as soon as they are ready. For more information, see [Order Preservation in PLINQ](../../../docs/standard/parallel-programming/order-preservation-in-plinq.md).  
+     PLINQ provides the AsOrdered operator for situations in which it is necessary to maintain the order of elements in the source sequence. There is a cost associated with ordering, but this cost is usually modest. GroupBy and Join operations likewise incur overhead. PLINQ performs best when it is allowed to process elements in the source collection in any order, and pass them to the next operator as soon as they are ready. For more information, see [Order Preservation in PLINQ](order-preservation-in-plinq.md).  
   
 4. The form of query execution.  
   
@@ -53,16 +53,16 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
 5. The type of merge options.  
   
-     PLINQ can be configured to either buffer its output, and produce it in chunks or all at once after the entire result set is produced, or else to stream individual results as they are produced. The former results in decreased overall execution time and the latter results in decreased latency between yielded elements.  While the merge options do not always have a major impact on overall query performance, they can impact perceived performance because they control how long a user must wait to see results. For more information, see [Merge Options in PLINQ](../../../docs/standard/parallel-programming/merge-options-in-plinq.md).  
+     PLINQ can be configured to either buffer its output, and produce it in chunks or all at once after the entire result set is produced, or else to stream individual results as they are produced. The former results in decreased overall execution time and the latter results in decreased latency between yielded elements.  While the merge options do not always have a major impact on overall query performance, they can impact perceived performance because they control how long a user must wait to see results. For more information, see [Merge Options in PLINQ](merge-options-in-plinq.md).  
   
 6. The kind of partitioning.  
   
-     In some cases, a PLINQ query over an indexable source collection may result in an unbalanced work load. When this occurs, you might be able to increase the query performance by creating a custom partitioner. For more information, see [Custom Partitioners for PLINQ and TPL](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
+     In some cases, a PLINQ query over an indexable source collection may result in an unbalanced work load. When this occurs, you might be able to increase the query performance by creating a custom partitioner. For more information, see [Custom Partitioners for PLINQ and TPL](custom-partitioners-for-plinq-and-tpl.md).  
   
 ## When PLINQ Chooses Sequential Mode  
  PLINQ will always attempt to execute a query at least as fast as the query would run sequentially. Although PLINQ does not look at how computationally expensive the user delegates are, or how big the input source is, it does look for certain query "shapes." Specifically, it looks for query operators or combinations of operators that typically cause a query to execute more slowly in parallel mode. When it finds such shapes, PLINQ by default falls back to sequential mode.  
   
- However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode.ForceParallelism?displayProperty=nameWithType> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
+ However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode.ForceParallelism?displayProperty=nameWithType> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](how-to-specify-the-execution-mode-in-plinq.md).  
   
  The following list describes the query shapes that PLINQ by default will execute in sequential mode:  
   
@@ -78,4 +78,4 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

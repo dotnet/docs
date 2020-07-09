@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
 ---
 # Transport: Custom Transactions over UDP Sample
-This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample in the Windows Communication Foundation (WCF)[Transport Extensibility](../../../../docs/framework/wcf/samples/transport-extensibility.md). It extends the UDP Transport sample to support custom transaction flow and demonstrates the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
+This sample is based on the [Transport: UDP](transport-udp.md) sample in the Windows Communication Foundation (WCF)[Transport Extensibility](transport-extensibility.md). It extends the UDP Transport sample to support custom transaction flow and demonstrates the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
   
 ## Code Changes in the UDP Transport Sample  
  To demonstrate transaction flow, the sample changes the service contract for `ICalculatorContract` to require a transaction scope for `CalculatorService.Add()`. The sample also adds an extra `System.Guid` parameter to the contract of the `Add` operation. This parameter is used to pass the identifier of the client transaction to the service.  
@@ -24,7 +24,7 @@ class CalculatorService : IDatagramContract, ICalculatorContract
      Console.WriteLine("The client transaction has NOT flowed to the service");  
     }  
   
-    Console.WriteLine("   adding {0} + {1}", x, y);              
+    Console.WriteLine("   adding {0} + {1}", x, y);
     return (x + y);  
     }  
   
@@ -32,7 +32,7 @@ class CalculatorService : IDatagramContract, ICalculatorContract
 }  
 ```  
   
- The [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample uses UDP packets to pass messages between a client and a service. The [Transport: Custom Transport Sample](../../../../docs/framework/wcf/samples/transport-custom-transactions-over-udp-sample.md) uses the same mechanism to transport messages, but when a transaction is flowed, it is inserted into the UDP packet along with the encoded message.  
+ The [Transport: UDP](transport-udp.md) sample uses UDP packets to pass messages between a client and a service. The [Transport: Custom Transport Sample](transport-custom-transactions-over-udp-sample.md) uses the same mechanism to transport messages, but when a transaction is flowed, it is inserted into the UDP packet along with the encoded message.  
   
 ```csharp  
 byte[] txmsgBuffer = TransactionMessageBuffer.WriteTransactionMessageBuffer(txPropToken, messageBuffer);  
@@ -58,7 +58,7 @@ public class TransactionFlowInspector : IClientMessageInspector
    public object BeforeSendRequest(ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel)  
    {  
        // obtain the tx propagation token  
-       byte[] propToken = null;             
+       byte[] propToken = null;
        if (Transaction.Current != null && IsTxFlowRequiredForThisOperation(request.Headers.Action))  
        {  
            try  
@@ -74,7 +74,7 @@ public class TransactionFlowInspector : IClientMessageInspector
       // set the propToken on the message in a TransactionFlowProperty  
        TransactionFlowProperty.Set(propToken, request);  
   
-       return null;              
+       return null;
     }  
   }  
   
@@ -115,7 +115,7 @@ public class TransactionFlowBehavior : IEndpointBehavior
   
 ```csharp  
 CalculatorContractClient calculatorClient = new CalculatorContractClient("SampleProfileUdpBinding_ICalculatorContract");  
-calculatorClient.Endpoint.Behaviors.Add(new TransactionFlowBehavior());               
+calculatorClient.Endpoint.Behaviors.Add(new TransactionFlowBehavior());
   
 try  
 {  
@@ -127,7 +127,7 @@ try
         [...]  
         Console.WriteLine(calculatorClient.Add(i, i * 2));  
          }  
-      }               
+      }
        calculatorClient.Close();  
 }  
 catch (TimeoutException)  
@@ -170,9 +170,9 @@ if (transaction != null)
   
 #### To set up, build, and run the sample  
   
-1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-2. The current sample should be run similarly to the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running Windows Vista, you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in File Explorer and click **Run as administrator**.  
+2. The current sample should be run similarly to the [Transport: UDP](transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running Windows Vista, you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in File Explorer and click **Run as administrator**.  
   
 3. This produces the following output.  
   
@@ -184,7 +184,7 @@ if (transaction != null)
   
 4. At this time, you can start the client by running UdpTestClient.exe. The output produced by the client is as follows.  
   
-    ```console 
+    ```console
     0  
     3  
     6  
@@ -195,7 +195,7 @@ if (transaction != null)
   
 5. The service output is as follows.  
   
-    ```console 
+    ```console
     Hello, world!  
     Hello, world!  
     Hello, world!  
@@ -235,7 +235,7 @@ if (transaction != null)
   
     ```xml  
     <configuration>  
-        <system.serviceModel>      
+        <system.serviceModel>
             …  
             <extensions>  
                 <!-- This was added manually because svcutil.exe does not add this extension to the file -->  
@@ -249,13 +249,13 @@ if (transaction != null)
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
   
 ## See also
 
-- [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)
+- [Transport: UDP](transport-udp.md)

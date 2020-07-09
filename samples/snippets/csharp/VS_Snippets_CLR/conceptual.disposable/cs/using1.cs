@@ -2,19 +2,20 @@
 using System;
 using System.IO;
 
-public class Example
+class Example
 {
-   public static void Main()
+   static void Main()
    {
-      Char[] buffer = new Char[50];
-      using (StreamReader s = new StreamReader("File1.txt")) {
-         int charsRead = 0;
-         while (s.Peek() != -1) {
-            charsRead = s.Read(buffer, 0, buffer.Length);
-            //
-            // Process characters read.
-            //   
-         }
+      char[] buffer = new char[50];
+      using var streamReader = new StreamReader("file1.txt");
+      
+      int charsRead = 0;
+      while (streamReader.Peek() != -1)
+      {
+         charsRead = streamReader.Read(buffer, 0, buffer.Length);
+         //
+         // Process characters read.
+         //
       }
    }
 }

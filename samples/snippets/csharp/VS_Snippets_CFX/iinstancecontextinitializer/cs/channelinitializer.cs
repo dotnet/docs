@@ -26,9 +26,9 @@ namespace Microsoft.WCF.Documentation
 
     public ChannelTrackerExtension()
     {
-      this.instanceId = Guid.NewGuid().ToString(); 
+      this.instanceId = Guid.NewGuid().ToString();
     }
-    
+
     public String InstanceId
     {
       get

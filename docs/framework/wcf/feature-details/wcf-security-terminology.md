@@ -10,7 +10,7 @@ ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 # WCF Security Terminology
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
   
- For more information about terms used in Windows Communication Foundation (WCF) documentation, see [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md).  
+ For more information about terms used in Windows Communication Foundation (WCF) documentation, see [Fundamental Windows Communication Foundation Concepts](../fundamental-concepts.md).  
   
  access control list (ACL)  
  A list of security protections that applies to an object. (An object can be a file, process, event, or anything else having a security descriptor.) An entry in an ACL is an access control entry (ACE). There are two types of ACLs: discretionary and system.  
@@ -177,6 +177,6 @@ Some of the terminology used when discussing security may be unfamiliar. This to
   
 ## See also
 
-- [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)
-- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Fundamental Windows Communication Foundation Concepts](../fundamental-concepts.md)
+- [Security Concepts](security-concepts.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

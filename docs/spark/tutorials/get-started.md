@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
-ms.date: 01/31/2020
+ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
@@ -18,6 +18,8 @@ In this tutorial, you learn how to:
 > * Prepare your environment for .NET for Apache Spark
 > * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prepare your environment
 
@@ -117,7 +119,7 @@ Run one of the following commands to set the `DOTNET_WORKER_DIR` Environment Var
 
 On **Windows**, create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, `C:\bin\Microsoft.Spark.Worker\`).
 
-On **MacOS**, create a new environment variable using `export DOTNET_WORKER_DIR <your_path>` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker/*). 
+On **MacOS**, create a new environment variable using `export DOTNET_WORKER_DIR <your_path>` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker/*).
 
 On **Ubuntu**, create a [new environment variable](https://help.ubuntu.com/community/EnvironmentVariables) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker*).
 

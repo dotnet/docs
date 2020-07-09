@@ -80,22 +80,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
   
     ```vb  
     Private Sub CreateAuthorFirstNameColumn()  
-       ' Add a GridTableStyle and set the MappingName   
+       ' Add a GridTableStyle and set the MappingName
        ' to the name of the DataTable.  
        Dim TSAuthors As New DataGridTableStyle()  
        TSAuthors.MappingName = "Authors"  
   
-       ' Add a GridColumnStyle and set the MappingName   
-       ' to the name of a DataColumn in the DataTable.   
-       ' Set the HeaderText and Width properties.   
+       ' Add a GridColumnStyle and set the MappingName
+       ' to the name of a DataColumn in the DataTable.
+       ' Set the HeaderText and Width properties.
        Dim TCFirstName As New DataGridTextBoxColumn()  
        TCFirstName.MappingName = "AV_FName"  
        TCFirstName.HeaderText = "First Name"  
        TCFirstName.Width = 75  
        TSAuthors.GridColumnStyles.Add(TCFirstName)  
   
-       ' Add the DataGridTableStyle instance to   
-       ' the GridTableStylesCollection.   
+       ' Add the DataGridTableStyle instance to
+       ' the GridTableStylesCollection.
        myDataGrid.TableStyles.Add(TSAuthors)  
     End Sub  
     ```  
@@ -103,22 +103,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     ```csharp  
     private void addCustomDataTableStyle()  
     {  
-       // Add a GridTableStyle and set the MappingName   
+       // Add a GridTableStyle and set the MappingName
        // to the name of the DataTable.  
        DataGridTableStyle TSAuthors = new DataGridTableStyle();  
        TSAuthors.MappingName = "Authors";  
   
-       // Add a GridColumnStyle and set the MappingName   
-       // to the name of a DataColumn in the DataTable.   
-       // Set the HeaderText and Width properties.   
+       // Add a GridColumnStyle and set the MappingName
+       // to the name of a DataColumn in the DataTable.
+       // Set the HeaderText and Width properties.
        DataGridColumnStyle TCFirstName = new DataGridTextBoxColumn();  
        TCFirstName.MappingName = " AV_FName";  
        TCFirstName.HeaderText = "First Name";  
        TCFirstName.Width = 75;  
        TSAuthors.GridColumnStyles.Add(TCFirstName);  
   
-       // Add the DataGridTableStyle instance to   
-       // the GridTableStylesCollection.   
+       // Add the DataGridTableStyle instance to
+       // the GridTableStylesCollection.
        dataGrid1.TableStyles.Add(TSAuthors);  
     }  
     ```  
@@ -127,22 +127,22 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     private:  
        void addCustomDataTableStyle()  
        {  
-          // Add a GridTableStyle and set the MappingName   
+          // Add a GridTableStyle and set the MappingName
           // to the name of the DataTable.  
           DataGridTableStyle^ TSAuthors = new DataGridTableStyle();  
           TSAuthors->MappingName = "Authors";  
   
-          // Add a GridColumnStyle and set the MappingName   
-          // to the name of a DataColumn in the DataTable.   
-          // Set the HeaderText and Width properties.   
+          // Add a GridColumnStyle and set the MappingName
+          // to the name of a DataColumn in the DataTable.
+          // Set the HeaderText and Width properties.
           DataGridColumnStyle^ TCFirstName = gcnew DataGridTextBoxColumn();  
           TCFirstName->MappingName = "AV_FName";  
           TCFirstName->HeaderText = "First Name";  
           TCFirstName->Width = 75;  
           TSAuthors->GridColumnStyles->Add(TCFirstName);  
   
-          // Add the DataGridTableStyle instance to   
-          // the GridTableStylesCollection.   
+          // Add the DataGridTableStyle instance to
+          // the GridTableStylesCollection.
           dataGrid1->TableStyles->Add(TSAuthors);  
        }  
     ```  

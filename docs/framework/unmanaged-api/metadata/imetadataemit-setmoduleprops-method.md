@@ -17,12 +17,12 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetModuleProps Method
-Updates references to a module defined by a prior call to [IMetaDataEmit::DefineModuleRef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemoduleref-method.md).  
+Updates references to a module defined by a prior call to [IMetaDataEmit::DefineModuleRef](imetadataemit-definemoduleref-method.md).  
   
 ## Syntax  
   
 ```cpp  
-HRESULT SetModuleProps (   
+HRESULT SetModuleProps (
     [in]  LPCWSTR     szName  
 );  
 ```  
@@ -32,7 +32,7 @@ HRESULT SetModuleProps (
  [in] The module name in Unicode. This is the file name only and not the full path name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -42,5 +42,5 @@ HRESULT SetModuleProps (
   
 ## See also
 
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

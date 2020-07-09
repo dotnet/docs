@@ -4,15 +4,15 @@ using System;
 public class FileName : IComparable
 {
    string fname;
-   StringComparer comparer; 
-   
+   StringComparer comparer;
+
    public FileName(string name, StringComparer comparer)
    {
       if (String.IsNullOrEmpty(name))
          throw new ArgumentNullException("name");
 
       this.fname = name;
-      
+
       if (comparer != null)
          this.comparer = comparer;
       else
@@ -23,7 +23,7 @@ public class FileName : IComparable
    {
       get { return fname; }
    }
-   
+
    public int CompareTo(object obj)
    {
       if (obj == null) return 1;

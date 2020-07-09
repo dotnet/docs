@@ -92,8 +92,6 @@ module rec RecursiveModule =
     // This exception depends on the type below.
     exception DontSqueezeTheBananaException of Banana
 
-    type BananaPeel() = class end
-
     type Banana(orientation : Orientation) =
         member val IsPeeled = false with get, set
         member val Orientation = orientation with get, set

@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle Exceptions in Parallel Loops"
+description: Learn how to handle exceptions in parallel loops in .NET. See an example of how to wrap all exceptions from the loop in a System.AggregateException.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -25,5 +26,5 @@ The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> a
   
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

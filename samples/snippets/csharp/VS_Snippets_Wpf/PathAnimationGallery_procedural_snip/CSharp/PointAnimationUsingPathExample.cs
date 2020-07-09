@@ -62,7 +62,7 @@ namespace SDKSample
 
             // Create a PointAnimationgUsingPath to move
             // the EllipseGeometry along the animation path.
-            PointAnimationUsingPath centerPointAnimation = 
+            PointAnimationUsingPath centerPointAnimation =
                 new PointAnimationUsingPath();
             centerPointAnimation.PathGeometry = animationPath;
             centerPointAnimation.Duration = TimeSpan.FromSeconds(5);
@@ -71,9 +71,9 @@ namespace SDKSample
             // Set the animation to target the Center property
             // of the EllipseGeometry named "AnimatedEllipseGeometry".
             Storyboard.SetTargetName(centerPointAnimation, "AnimatedEllipseGeometry");
-            Storyboard.SetTargetProperty(centerPointAnimation, 
+            Storyboard.SetTargetProperty(centerPointAnimation,
                 new PropertyPath(EllipseGeometry.CenterProperty));
-      
+
             // Create a Storyboard to contain and apply the animation.
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.RepeatBehavior = RepeatBehavior.Forever;

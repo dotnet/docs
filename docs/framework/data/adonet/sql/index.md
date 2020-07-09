@@ -1,5 +1,6 @@
 ---
 title: "SQL Server and ADO.NET"
+description: Learn about features and behaviors of the .NET Framework Data Provider for SQL Server, which encapsulates database-specific protocols.
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb

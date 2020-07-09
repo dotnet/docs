@@ -40,7 +40,7 @@ even though you likely know a more derived type that would always
 be correct. By convention, use `object`.
 
 The second argument has typically been a type that is derived from
-`System.EventArgs`. (You'll see in the 
+`System.EventArgs`. (You'll see in the
 [next section](modern-events.md) that this convention is no longer
 enforced.) If your event type does not need any additional
 arguments, you will still provide both arguments.
@@ -57,7 +57,7 @@ file is found. Combining the different listeners can create more
 robust algorithms.
 
 Here is the initial event argument declaration for finding a sought
-file: 
+file:
 
 [!code-csharp[EventArgs](../../samples/snippets/csharp/events/Program.cs#EventArgsV1 "Define event arguments")]
 
@@ -122,7 +122,7 @@ communicate cancel.
 
 There are two different patterns that could be used, based on the
 semantics of the Cancel contract. In both cases, you'll add a boolean
-field to the EventArguments for the found file event. 
+field to the EventArguments for the found file event.
 
 One pattern would allow any one subscriber to cancel the operation.
 For this pattern, the new field is initialized to `false`. Any
@@ -193,7 +193,7 @@ far are public. Let's make this one an internal event. That means you
 can also make the types used for the arguments internal as well.
 
 You'll start by creating the new EventArgs derived class for
-reporting the new directory and progress. 
+reporting the new directory and progress.
 
 [!code-csharp[DirEventArgs](../../samples/snippets/csharp/events/Program.cs#SearchDirEventArgs "Define search directory event arguments")]
 
@@ -230,7 +230,7 @@ searching all sub-directories. There are no subscribers on the new
 that this works correctly.
 
  Let's add a handler to write a line that shows the progress in the
- console window. 
+ console window.
 
 [!code-csharp[Search](../../samples/snippets/csharp/events/Program.cs#Search "Declare event handler")]
 

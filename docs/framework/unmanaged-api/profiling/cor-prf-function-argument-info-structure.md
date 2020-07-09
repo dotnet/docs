@@ -44,7 +44,7 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
  Arguments that are stored in registers are spilled into memory to build the structures.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  
   

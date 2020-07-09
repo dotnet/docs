@@ -17,7 +17,7 @@ Public Class TextFromFile
                     Console.WriteLine(input)
                 End If
             Loop Until input Is Nothing
-            Console.WriteLine ("The end of the stream has been reached.")
+            Console.WriteLine("The end of the stream has been reached.")
         End Using
     End Sub
 End Class

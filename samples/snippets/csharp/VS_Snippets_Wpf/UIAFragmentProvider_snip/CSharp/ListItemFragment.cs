@@ -3,23 +3,23 @@
  * File: ListItemFragment.cs
  *
  * Description: Implements a list item as a fragment within a custom control that supports UI Automation.
- * 
+ *
  * See ProviderForm.cs for a full description of this sample.
- *   
- * 
+ *
+ *
  *  This file is part of the Microsoft WinfFX SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  *************************************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -36,7 +36,7 @@ namespace ElementProvider
     class MyListItem : IRawElementProviderFragment
     {
         ParentList parentControl;
-        ArrayList parentItems; 
+        ArrayList parentItems;
         String myText = "";
         Rectangle myBounds;
         bool amSelected;
@@ -134,7 +134,7 @@ namespace ElementProvider
             }
             else if (propId == AutomationElementIdentifiers.ControlTypeProperty.Id)
             {
-                return ControlType.ListItem.Id;            
+                return ControlType.ListItem.Id;
             }
             else if (propId == AutomationElementIdentifiers.IsControlElementProperty.Id)
             {
@@ -159,7 +159,7 @@ namespace ElementProvider
         }
 
         /// <summary>
-        /// Returns a host provider. 
+        /// Returns a host provider.
         /// </summary>
         /// <remarks>
         /// In this case, because the element is not directly hosted in a
@@ -193,7 +193,7 @@ namespace ElementProvider
         /// </summary>
         public System.Windows.Rect BoundingRectangle
         {
-            get 
+            get
             {
                 return new System.Windows.Rect(myBounds.X, myBounds.Y, myBounds.Width, myBounds.Height);
             }
@@ -286,11 +286,11 @@ namespace ElementProvider
         // </Snippet103>
 
         /// <summary>
-        /// Responds to a client request to set the focus to this control. 
+        /// Responds to a client request to set the focus to this control.
         /// </summary>
         public void SetFocus()
         {
-            // Force refresh. This must be done through delegation because it's illegal to 
+            // Force refresh. This must be done through delegation because it's illegal to
             // operate directly on the UI from a different thread.
             PaintEventArgs args = new PaintEventArgs(parentControl.CreateGraphics(), parentControl.DisplayRectangle);
             PaintEventHandler handler = parentControl.PaintMe;

@@ -18,7 +18,7 @@ namespace WinSound
         [DllImport("winmm.DLL", EntryPoint = "PlaySound", SetLastError = true, CharSet = CharSet.Unicode, ThrowOnUnmappableChar = true)]
         private static extern bool PlaySound(string szSound, System.IntPtr hMod, PlaySoundFlags flags);
 
-        [System.Flags] 
+        [System.Flags]
         public enum PlaySoundFlags : int
         {
             SND_SYNC = 0x0000,
@@ -33,7 +33,7 @@ namespace WinSound
 
         private void button1_Click(object sender, System.EventArgs e)
         {
-            var dialog1 = new OpenFileDialog(); 
+            var dialog1 = new OpenFileDialog();
 
             dialog1.Title = "Browse to find sound file to play";
             dialog1.InitialDirectory = @"c:\";
@@ -43,15 +43,15 @@ namespace WinSound
             dialog1.FilterIndex = 2;
             dialog1.RestoreDirectory = true;
 
-            if (dialog1.ShowDialog() == DialogResult.OK) 
-            { 
+            if (dialog1.ShowDialog() == DialogResult.OK)
+            {
                 textBox1.Text = dialog1.FileName;
                 PlaySound(dialog1.FileName, new System.IntPtr(), PlaySoundFlags.SND_SYNC);
             }
         }
-        
-        private void Form1_Load(object sender, EventArgs e) 
-        { 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             // Including this empty method in the sample because in the IDE,
             // when users click on the form, generates code that looks for a default method
             // with this name. We add it here to prevent confusion for those using the samples.
@@ -99,26 +99,26 @@ namespace WinSound
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(192, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 24);
             this.button1.TabIndex = 0;
             this.button1.Text = "Browse";
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
+            //
             // textBox1
-            // 
+            //
             this.textBox1.Location = new System.Drawing.Point(8, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(168, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "FIle path";
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(5, 13);
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Controls.Add(this.textBox1);

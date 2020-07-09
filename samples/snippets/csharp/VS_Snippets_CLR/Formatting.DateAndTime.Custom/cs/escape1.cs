@@ -13,7 +13,7 @@ public class Example
       Console.WriteLine("{0} ({1}) -> {2}", date, fmt2, date.ToString(fmt2));
       // The example displays the following output:
       //       6/15/2009 1:45:30 PM (h \h m \m) -> 1 h 45 m
-      //       6/15/2009 1:45:30 PM (h \h m \m) -> 1 h 45 m      
+      //       6/15/2009 1:45:30 PM (h \h m \m) -> 1 h 45 m
       // </Snippet15>
    }
 }

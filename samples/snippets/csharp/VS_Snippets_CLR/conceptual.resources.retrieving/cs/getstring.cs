@@ -12,7 +12,7 @@ public class Example
    {
       string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "es-ES" };
       Random rnd = new Random();
-      ResourceManager rm = new ResourceManager("Strings", 
+      ResourceManager rm = new ResourceManager("Strings",
                                typeof(Example).Assembly);
 
       for (int ctr = 0; ctr <= cultureNames.Length; ctr++) {
@@ -20,26 +20,26 @@ public class Example
          CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
          Thread.CurrentThread.CurrentCulture = culture;
          Thread.CurrentThread.CurrentUICulture = culture;
-         
+
          Console.WriteLine("Current culture: {0}", culture.NativeName);
          string timeString = rm.GetString("TimeHeader");
-         Console.WriteLine("{0} {1:T}\n", timeString, DateTime.Now);   
-      }   
+         Console.WriteLine("{0} {1:T}\n", timeString, DateTime.Now);
+      }
    }
 }
 // The example displays output like the following:
 //    Current culture: English (United States)
 //    The current time is 9:34:18 AM
-//    
+//
 //    Current culture: Español (España, alfabetización internacional)
 //    The current time is 9:34:18
-//    
+//
 //    Current culture: русский (Россия)
 //    Текущее время — 9:34:18
-//    
+//
 //    Current culture: français (France)
 //    L'heure actuelle est 09:34:18
-//    
+//
 //    Current culture: русский (Россия)
 //    Текущее время — 9:34:18
 // </Snippet3>

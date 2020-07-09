@@ -61,5 +61,13 @@ namespace operators
             Console.WriteLine(ind);  // output: 1
             // </SnippetNested>
         }
+
+        private static void LimitStackAllocatedMemory(int inputLength)
+        {
+            // <SnippetLimitStackalloc>
+            const int MaxStackLimit = 1024;
+            Span<byte> buffer = inputLength <= MaxStackLimit ? stackalloc byte[inputLength] : new byte[inputLength];
+            // </SnippetLimitStackalloc>
+        }
     }
 }

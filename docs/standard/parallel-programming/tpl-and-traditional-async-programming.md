@@ -96,7 +96,7 @@ The .NET Framework provides the following two standard patterns for performing I
  [!code-csharp[FromAsync#10](../../../samples/snippets/csharp/VS_Snippets_Misc/fromasync/cs/snippet10.cs#10)]
  [!code-vb[FromAsync#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/fromasync/vb/snippet10.vb#10)]  
   
- For a more complete example, which includes additional exception handling and shows how to call the method from client code, see [How to: Wrap EAP Patterns in a Task](../../../docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md).  
+ For a more complete example, which includes additional exception handling and shows how to call the method from client code, see [How to: Wrap EAP Patterns in a Task](how-to-wrap-eap-patterns-in-a-task.md).  
   
  Remember that any task that is created by a <xref:System.Threading.Tasks.TaskCompletionSource%601> will be started by that TaskCompletionSource and, therefore, user code should not call the Start method on that task.  
   
@@ -109,8 +109,8 @@ The .NET Framework provides the following two standard patterns for performing I
  [!code-vb[FromAsync#09](../../../samples/snippets/visualbasic/VS_Snippets_Misc/fromasync/vb/module1.vb#09)]  
   
 ## Using the StreamExtensions Sample Code  
- The Streamextensions.cs file, in [Samples for Parallel Programming with the .NET Framework 4](https://code.msdn.microsoft.com/ParExtSamples), contains several reference implementations that use Task objects for asynchronous file and network I/O.  
+ The *StreamExtensions.cs* file, in the [.NET Standard parallel extensions extras](/samples/dotnet/samples/parallel-programming-extensions-extras-cs/) repository, contains several reference implementations that use `Task` objects for asynchronous file and network I/O.
   
 ## See also
 
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)

@@ -1,7 +1,7 @@
 ---
 title: "Comparison operators - C# reference"
 description: "Learn about C# comparison operators that you can use to check the order of numeric values."
-ms.date: 04/25/2019
+ms.date: 05/11/2020
 author: pkulikov
 f1_keywords: 
   - "<_CSharpKeyword"
@@ -26,6 +26,8 @@ The [`<` (less than)](#less-than-operator-), [`>` (greater than)](#greater-than-
 
 > [!NOTE]
 > For the `==`, `<`, `>`, `<=`, and `>=` operators, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
+
+The [char](../builtin-types/char.md) type also supports comparison operators. In the case of `char` operands, the corresponding character codes are compared.
 
 Enumeration types also support comparison operators. For operands of the same [enum](../builtin-types/enum.md) type, the corresponding values of the underlying integral type are compared.
 

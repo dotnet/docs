@@ -21,7 +21,7 @@ This sample demonstrates how to:
  The service in this sample is marked with two custom attributes. The first, the `WsdlDocumentationAttribute`, accepts a string in the constructor and can be applied to provide a contract interface or operation with a string that describes its usage. The second, `WsdlParamOrReturnDocumentationAttribute`, can be applied to return values or parameters to describe those values in the operation. The following example shows a service contract, `ICalculator`, described using these attributes.  
   
 ```csharp  
-// Define a service contract.      
+// Define a service contract.
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 // Document it.  
 [WsdlDocumentation("The ICalculator contract performs basic calculation services.")]  
@@ -31,7 +31,7 @@ public interface ICalculator
     [WsdlDocumentation("The Add operation adds two numbers and returns the result.")]  
     [return:WsdlParamOrReturnDocumentation("The result of adding the two arguments together.")]  
     double Add(  
-      [WsdlParamOrReturnDocumentation("The first value to add.")]double n1,   
+      [WsdlParamOrReturnDocumentation("The first value to add.")]double n1,
       [WsdlParamOrReturnDocumentation("The second value to add.")]double n2  
     );  
   
@@ -39,7 +39,7 @@ public interface ICalculator
     [WsdlDocumentation("The Subtract operation subtracts the second argument from the first.")]  
     [return:WsdlParamOrReturnDocumentation("The result of the second argument subtracted from the first.")]  
     double Subtract(  
-      [WsdlParamOrReturnDocumentation("The value from which the second is subtracted.")]double n1,   
+      [WsdlParamOrReturnDocumentation("The value from which the second is subtracted.")]double n1,
       [WsdlParamOrReturnDocumentation("The value that is subtracted from the first.")]double n2  
     );  
   
@@ -47,7 +47,7 @@ public interface ICalculator
     [WsdlDocumentation("The Multiply operation multiplies two values.")]  
     [return:WsdlParamOrReturnDocumentation("The result of multiplying the first and second arguments.")]  
     double Multiply(  
-      [WsdlParamOrReturnDocumentation("The first value to multiply.")]double n1,   
+      [WsdlParamOrReturnDocumentation("The first value to multiply.")]double n1,
       [WsdlParamOrReturnDocumentation("The second value to multiply.")]double n2  
     );  
   
@@ -55,7 +55,7 @@ public interface ICalculator
     [WsdlDocumentation("The Divide operation returns the value of the first argument divided by the second argument.")]  
     [return:WsdlParamOrReturnDocumentation("The result of dividing the first argument by the second.")]  
     double Divide(  
-      [WsdlParamOrReturnDocumentation("The numerator.")]double n1,   
+      [WsdlParamOrReturnDocumentation("The numerator.")]double n1,
       [WsdlParamOrReturnDocumentation("The denominator.")]double n2  
     );  
 }  
@@ -138,7 +138,7 @@ for (int i = 0; i < args.Length; i++)
   
 ```xml  
 <services>  
-  <service   
+  <service
       name="Microsoft.ServiceModel.Samples.CalculatorService"  
       behaviorConfiguration="CalculatorServiceBehavior">  
     <!-- ICalculator is exposed at the base address provided by host: http://localhost/servicemodelsamples/service.svc  -->  
@@ -217,8 +217,8 @@ public void GenerateOperation(OperationContractGenerationContext context)
   
 ```xml  
 <client>  
-  <endpoint address="http://localhost/servicemodelsamples/service.svc"   
-  binding="wsHttpBinding"   
+  <endpoint address="http://localhost/servicemodelsamples/service.svc"
+  binding="wsHttpBinding"
   contract="ICalculator" />  
   <metadata>  
     <wsdlImporters>  
@@ -232,53 +232,53 @@ public void GenerateOperation(OperationContractGenerationContext context)
   
 ```csharp
 /// From WSDL Documentation:  
-///   
-/// <summary>The ICalculator contract performs basic calculation   
-/// services.</summary>   
-///   
+///
+/// <summary>The ICalculator contract performs basic calculation
+/// services.</summary>
+///
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples", ConfigurationName="ICalculator")]  
 public interface ICalculator  
 {  
   
     /// From WSDL Documentation:  
-    ///   
-    /// <summary>The Add operation adds two numbers and returns the   
-    /// result.</summary><returns>The result of adding the two arguments   
-    /// together.</returns><param name="n1">The first value to add.</param><param   
-    /// name="n2">The second value to add.</param>   
-    ///   
+    ///
+    /// <summary>The Add operation adds two numbers and returns the
+    /// result.</summary><returns>The result of adding the two arguments
+    /// together.</returns><param name="n1">The first value to add.</param><param
+    /// name="n2">The second value to add.</param>
+    ///
     [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]  
     double Add(double n1, double n2);  
   
     /// From WSDL Documentation:  
-    ///   
-    /// <summary>The Subtract operation subtracts the second argument from the   
-    /// first.</summary><returns>The result of the second argument subtracted from the   
-    /// first.</returns><param name="n1">The value from which the second is   
-    /// subtracted.</param><param name="n2">The value that is subtracted from the   
-    /// first.</param>   
-    ///   
+    ///
+    /// <summary>The Subtract operation subtracts the second argument from the
+    /// first.</summary><returns>The result of the second argument subtracted from the
+    /// first.</returns><param name="n1">The value from which the second is
+    /// subtracted.</param><param name="n2">The value that is subtracted from the
+    /// first.</param>
+    ///
     [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]  
     double Subtract(double n1, double n2);  
   
     /// From WSDL Documentation:  
-    ///   
-    /// <summary>The Multiply operation multiplies two values.</summary><returns>The   
-    /// result of multiplying the first and second arguments.</returns><param   
-    /// name="n1">The first value to multiply.</param><param name="n2">The second value   
-    /// to multiply.</param>   
-    ///   
+    ///
+    /// <summary>The Multiply operation multiplies two values.</summary><returns>The
+    /// result of multiplying the first and second arguments.</returns><param
+    /// name="n1">The first value to multiply.</param><param name="n2">The second value
+    /// to multiply.</param>
+    ///
     [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]  
     double Multiply(double n1, double n2);  
   
     /// From WSDL Documentation:  
-    ///   
-    /// <summary>The Divide operation returns the value of the first argument divided   
-    /// by the second argument.</summary><returns>The result of dividing the first   
-    /// argument by the second.</returns><param name="n1">The numerator.</param><param   
-    /// name="n2">The denominator.</param>   
-    ///   
+    ///
+    /// <summary>The Divide operation returns the value of the first argument divided
+    /// by the second argument.</summary><returns>The result of dividing the first
+    /// argument by the second.</returns><param name="n1">The numerator.</param><param
+    /// name="n2">The denominator.</param>
+    ///
     [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]  
     double Divide(double n1, double n2);  
 }  
@@ -286,17 +286,17 @@ public interface ICalculator
   
 #### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\WsdlDocumentation`  

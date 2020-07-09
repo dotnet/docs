@@ -1,5 +1,6 @@
 ---
 title: Determine Checked Items in CheckedListBox Control
+description: Learn how to determine checked items in the Windows Forms CheckedListBox control by iterating through the collection stored in the CheckedItems property.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -78,7 +79,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
     ```csharp  
     int i;  
-    string s;   
+    string s;
     s = "Checked items:\n" ;  
     for (i = 0; i <= (checkedListBox1.Items.Count-1); i++)  
     {  
@@ -92,7 +93,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
     ```cpp  
     int i;  
-    String ^ s;   
+    String ^ s;
     s = "Checked items:\n" ;  
     for (i = 0; i <= (checkedListBox1->Items->Count-1); i++)  
     {  

@@ -14,11 +14,11 @@ public class Example
          Console.Write("   Non-word character(s):");
          CaptureCollection captures = match.Groups[2].Captures;
          for (int ctr = 0; ctr < captures.Count; ctr++)
-             Console.Write(@"'{0}' (\u{1}){2}", captures[ctr].Value, 
-                           Convert.ToUInt16(captures[ctr].Value[0]).ToString("X4"), 
+             Console.Write(@"'{0}' (\u{1}){2}", captures[ctr].Value,
+                           Convert.ToUInt16(captures[ctr].Value[0]).ToString("X4"),
                            ctr < captures.Count - 1 ? ", " : "");
          Console.WriteLine();
-      }   
+      }
    }
 }
 // The example displays the following output:

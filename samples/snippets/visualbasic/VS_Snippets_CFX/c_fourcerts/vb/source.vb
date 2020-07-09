@@ -10,7 +10,7 @@ Imports System.ServiceModel.Security.Tokens
 Imports System.ServiceModel.Channels
 Imports System.IdentityModel.Policy
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples
     '<snippet1>
     Public Class MyClientCredentials
@@ -229,7 +229,7 @@ Namespace Microsoft.ServiceModel.Samples
     <ServiceContract(Namespace:="http://Microsoft.ServiceModel.Security.Samples")> _
     Public Interface IMyService
         <OperationContract()> _
-          Function Hello(ByVal value As String) As String
+        Function Hello(ByVal value As String) As String
     End Interface
 
     Public Interface IMyServiceChannel

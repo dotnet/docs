@@ -1,5 +1,6 @@
 ---
 title: "Developing Web Applications with ASP.NET"
+description: Develop web apps with ASP.NET Core, which is a redesign of ASP.NET 4.x that's cross-platform, leaner, more modular, and unified to build a web UI and web APIs.
 ms.date: "09/25/2018"
 helpviewer_keywords: 
   - "ASP.NET"
@@ -25,7 +26,7 @@ ASP.NET Core is a redesign of ASP.NET 4.x. Some of the benefits ASP.NET Core pro
 - Leaner and more modular.
 - A unified story for building web UI and web APIs.
 
-See [Why use ASP.NET Core?](/aspnet/core#why-choose-aspnet-core) for an expanded list of benefits.
+See [Why use ASP.NET Core?](/aspnet/core/introduction-to-aspnet-core#why-choose-aspnet-core) for an expanded list of benefits.
 
 For more information on ASP.NET Core](/aspnet/core), see:
 

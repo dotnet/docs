@@ -10,7 +10,7 @@ class CancelWithCallback
    {
       var cts = new CancellationTokenSource();
       var token = cts.Token;
-      
+
       // Start cancelable task.
       Task t = Task.Run( () => {
                     WebClient wc = new WebClient();

@@ -40,8 +40,8 @@ Module Module1
         Dim numbers = Enumerable.Range(0, 1000)
         '<snippet3>
         Dim evenNums = From num In numbers.AsParallel().AsOrdered()
-                      Where num Mod 2 = 0
-                      Select num
+                       Where num Mod 2 = 0
+                       Select num
 
 
         '</snippet3>
@@ -71,8 +71,8 @@ Module Module1
         'Order Preservation In PLINQ 1st snippet
         '<snippet8>
         Dim cityQuery = From city In cities.AsParallel()
-                       Where City.Population > 10000
-                       Take (1000)
+                        Where City.Population > 10000
+                        Take (1000)
         '</snippet8>
 
 
@@ -90,8 +90,8 @@ Module Module1
                              Take (1000)
 
         Dim finalResult = From city In orderedCities2.AsUnordered()
-                            Join p In people.AsParallel() On city.Name Equals p.CityName
-                            Select New With {.Name = city.Name, .Pop = city.Population, .Mayor = city.Mayor}
+                          Join p In people.AsParallel() On city.Name Equals p.CityName
+                          Select New With {.Name = city.Name, .Pop = city.Population, .Mayor = city.Mayor}
 
         For Each city In finalResult
             Console.WriteLine(city.Name & ":" & city.Pop & ":" & city.Mayor)
@@ -102,7 +102,7 @@ Module Module1
         '<snippet7>
         Dim orderedCities3 = From city In cities.AsParallel()
                              Where City.Population > 10000
-                            Order By City.Name
+                             Order By City.Name
                              Take (1000)
         '</snippet7>
 
@@ -147,9 +147,9 @@ Module Module1
         Dim aDate = DateTime.Now
         '<snippet20>
         Dim q = From cust In customers.AsParallel()
-                        From order In cust.Orders.AsParallel()
-                        Where order.OrderDate > aDate
-                        Select New With {cust, order}
+                From order In cust.Orders.AsParallel()
+                Where order.OrderDate > aDate
+                Select New With {cust, order}
 
         '</snippet20>
     End Sub
@@ -165,8 +165,8 @@ Module Module1
             ' Replace NotBuffered with AutoBuffered 
             ' or FullyBuffered to compare behavior.
             Dim scanLines = From n In nums.AsParallel().WithMergeOptions(ParallelMergeOptions.NotBuffered)
-                  Where n Mod 2 = 0
-                  Select ExpensiveFunc(n)
+                            Where n Mod 2 = 0
+                            Select ExpensiveFunc(n)
 
             Dim sw = System.Diagnostics.Stopwatch.StartNew()
             For Each line In scanLines

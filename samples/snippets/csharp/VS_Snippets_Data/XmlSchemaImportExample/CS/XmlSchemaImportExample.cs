@@ -8,7 +8,7 @@ class XmlSchemaImportExample
     static void Main(string[] args)
     {
         // Add the customer and address schemas to a new XmlSchemaSet and compile them.
-        // Any schema validation warnings and errors encountered reading or 
+        // Any schema validation warnings and errors encountered reading or
         // compiling the schemas are handled by the ValidationEventHandler delegate.
         XmlSchemaSet schemaSet = new XmlSchemaSet();
         schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
@@ -17,7 +17,7 @@ class XmlSchemaImportExample
         schemaSet.Compile();
 
         // Retrieve the compiled XmlSchema objects for the customer and
-        // address schema from the XmlSchemaSet by iterating over 
+        // address schema from the XmlSchemaSet by iterating over
         // the Schemas property.
         XmlSchema customerSchema = null;
         XmlSchema addressSchema = null;
@@ -30,7 +30,7 @@ class XmlSchemaImportExample
         }
 
         // Create an XmlSchemaImport object, set the Namespace property
-        // to the namespace of the address schema, the Schema property 
+        // to the namespace of the address schema, the Schema property
         // to the address schema, and add it to the Includes property
         // of the customer schema.
         XmlSchemaImport import = new XmlSchemaImport();
@@ -38,16 +38,16 @@ class XmlSchemaImportExample
         import.Schema = addressSchema;
         customerSchema.Includes.Add(import);
 
-        // Reprocess and compile the modified XmlSchema object 
-        // of the customer schema and write it to the console.    
+        // Reprocess and compile the modified XmlSchema object
+        // of the customer schema and write it to the console.
         schemaSet.Reprocess(customerSchema);
         schemaSet.Compile();
         customerSchema.Write(Console.Out);
 
         // Recursively write all of the schemas imported into the
-        // customer schema to the console using the Includes 
+        // customer schema to the console using the Includes
         // property of the customer schema.
-        RecurseExternals(customerSchema);       
+        RecurseExternals(customerSchema);
     }
 
     static void RecurseExternals(XmlSchema schema)

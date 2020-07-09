@@ -45,7 +45,7 @@ There are several ways to create bindings not provided by the system:
   
 ```csharp  
 Binding customBinding = new CustomBinding(  
-  new LoggingBindingElement(),   
+  new LoggingBindingElement(),
   new TcpTransportBindingElement()  
 );  
 ```  
@@ -70,7 +70,7 @@ Binding customBinding = new CustomBinding(
   
 ```csharp
 public override BindingElementCollection CreateBindingElements()  
-{     
+{
     BindingElementCollection bindingElements = new BindingElementCollection();  
     if (ReliableSessionEnabled)  
     {  

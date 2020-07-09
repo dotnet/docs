@@ -46,5 +46,5 @@ HRESULT DefineConstant2(
   
 ## See also
 
-- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
-- [DefineConstant Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineconstant-method.md)
+- [ISymUnmanagedWriter2 Interface](isymunmanagedwriter2-interface.md)
+- [DefineConstant Method](isymunmanagedwriter-defineconstant-method.md)

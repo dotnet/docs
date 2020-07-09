@@ -52,7 +52,7 @@ HRESULT SetAppDomainManager (
  In its implementation of the `SetAppDomainManager` method, the host can set the assembly name and type for the application domain manager.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -64,4 +64,4 @@ HRESULT SetAppDomainManager (
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainManager>
-- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

@@ -44,7 +44,7 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 ### Additional resources
 
 - **.NET Core Guide** \
-  [https://docs.microsoft.com/dotnet/core/index](../../../core/index.md)
+  [https://docs.microsoft.com/dotnet/core/index](../../../core/index.yml)
 
 - **Porting from .NET Framework to .NET Core** \
   [https://docs.microsoft.com/dotnet/core/porting/index](../../../core/porting/index.md)

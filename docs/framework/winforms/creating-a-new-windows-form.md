@@ -11,7 +11,7 @@ ms.assetid: c725559c-803e-4725-80fa-96aba93de29a
 This topic contains links to topics that describe how to create your first Windows Forms application. Also, the topics in this section introduce some of the basic vocabulary and guidelines that you should understand when you start to create a Windows Forms application. To learn more about Windows Forms applications, the controls you can use on them, events and handling events, and how to handle input from the user, see the related topic list.  
   
 ## In This Section  
- [Windows Forms Coordinates](windows-forms-coordinates.md).  
+ [Windows Forms Coordinates](windows-forms-coordinates.md)  
  Describes client and screen coordinates.  
   
  [How to: Create a Windows Forms Application from the Command Line](how-to-create-a-windows-forms-application-from-the-command-line.md)  

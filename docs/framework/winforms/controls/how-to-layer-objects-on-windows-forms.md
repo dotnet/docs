@@ -1,5 +1,6 @@
 ---
 title: Layer Objects
+description: Learn how to layer objects on Windows Forms controls and child forms to create more complex user interfaces. 
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -123,11 +123,11 @@
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-authenticate.md",
-      "redirect_url": "/dotnet/azure/sdk/authentication"
+      "redirect_url": "/dotnet/azure/authentication"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-concepts.md",
-      "redirect_url": "/dotnet/azure/sdk"
+      "redirect_url": "/dotnet/azure/"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-get-started.md",
@@ -135,19 +135,35 @@
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-overview.md",
-      "redirect_url": "/dotnet/azure/sdk"
+      "redirect_url": "/dotnet/azure/"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-vs2015-install.md",
-      "redirect_url": "/dotnet/azure/sdk/vs2015-install"
+      "redirect_url": "/dotnet/azure/vs2015-install"
     },
     {
       "source_path": "docs/azure/dotnet-tools.md",
-      "redirect_url": "/dotnet/azure/sdk/tools"
+      "redirect_url": "/dotnet/azure/tools"
     },
     {
-      "source_path": "docs/azure/dotnet-tutorials.md",
+      "source_path": "docs/azure/sdk/dotnet-tutorials.md",
       "redirect_url": "/dotnet/azure/"
+    },
+    {
+      "source_path": "docs/azure/sdk/authentication.md",
+      "redirect_url": "/dotnet/azure/authentication"
+    },
+    {
+      "source_path": "docs/azure/sdk/logging.md",
+      "redirect_url": "/dotnet/azure/logging"
+    },
+    {
+      "source_path": "docs/azure/sdk/tools.md",
+      "redirect_url": "/dotnet/azure/tools"
+    },
+    {
+      "source_path": "docs/azure/sdk/vs2015-install.md",
+      "redirect_url": "/dotnet/azure/vs2015-install"
     },
     {
       "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
@@ -1729,6 +1745,10 @@
     {
       "source_path": "docs/csharp/tour-of-csharp/structs.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
+      "source_path": "docs/csharp/tuples.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
     },
     {
       "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",

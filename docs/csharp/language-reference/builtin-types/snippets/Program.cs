@@ -38,8 +38,12 @@ namespace builtin_types
             StructType.Examples();
             Console.WriteLine();
 
-            Console.WriteLine("===== Nullable Reference types ===");
+            Console.WriteLine("===== Nullable reference types ===");
             NullableReferenceTypes.Examples();
+            Console.WriteLine();
+
+            Console.WriteLine("=========== Value tuples =========");
+            ValueTuples.Examples();
             Console.WriteLine();
         }
     }

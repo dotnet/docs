@@ -4,39 +4,36 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    public class WeatherForecastRequiredPropertyConverterForAttributeRegistration : JsonConverter<WeatherForecastWithReqPptyConverterAttribute>
+    public class WeatherForecastRequiredPropertyConverterForAttributeRegistration : JsonConverter<WeatherForecastWithRequiredPropertyConverterAttribute>
     {
-        public override WeatherForecastWithReqPptyConverterAttribute Read(
+        public override WeatherForecastWithRequiredPropertyConverterAttribute Read(
             ref Utf8JsonReader reader,
             Type type,
             JsonSerializerOptions options)
         {
             // OK to pass in options when recursively calling Deserialize.
-            WeatherForecastWithReqPptyConverterAttribute forecast = JsonSerializer.Deserialize<WeatherForecastWithoutReqPptyConverterAttribute>(ref reader);
+            WeatherForecastWithRequiredPropertyConverterAttribute forecast = JsonSerializer.Deserialize<WeatherForecastWithoutRequiredPropertyConverterAttribute>(ref reader, options);
 
-            // Check for required fields set by values in JSON
+            // Check for required fields set by values in JSON.
             if (forecast.Date == default)
             {
                 throw new JsonException("Required property not received in the JSON");
             }
-            return new WeatherForecastWithReqPptyConverterAttribute
-            {
-                Date = forecast.Date,
-                TemperatureCelsius = forecast.TemperatureCelsius,
-                Summary = forecast.Summary
-            };
+
+            return forecast;
         }
 
         public override void Write(
             Utf8JsonWriter writer,
-            WeatherForecastWithReqPptyConverterAttribute forecast, JsonSerializerOptions options)
+            WeatherForecastWithRequiredPropertyConverterAttribute forecast, JsonSerializerOptions options)
         {
-            var weatherForecastWithoutConverterAttributeOnClass = new WeatherForecastWithoutReqPptyConverterAttribute
+            var weatherForecastWithoutConverterAttributeOnClass = new WeatherForecastWithoutRequiredPropertyConverterAttribute
             {
                 Date = forecast.Date,
                 TemperatureCelsius = forecast.TemperatureCelsius,
                 Summary = forecast.Summary
             };
+
             // OK to pass in options when recursively calling Serialize.
             JsonSerializer.Serialize(writer, weatherForecastWithoutConverterAttributeOnClass, options);
         }

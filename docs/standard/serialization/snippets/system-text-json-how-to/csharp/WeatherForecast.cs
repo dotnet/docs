@@ -15,14 +15,14 @@ namespace SystemTextJsonSamples
 
     // <SnippetWFWithReqPptyConverterAttr>
     [JsonConverter(typeof(WeatherForecastRequiredPropertyConverterForAttributeRegistration))]
-    public class WeatherForecastWithReqPptyConverterAttribute
+    public class WeatherForecastWithRequiredPropertyConverterAttribute
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
 
-    public class WeatherForecastWithoutReqPptyConverterAttribute : WeatherForecastWithReqPptyConverterAttribute
+    public class WeatherForecastWithoutRequiredPropertyConverterAttribute : WeatherForecastWithRequiredPropertyConverterAttribute
     {
     }
     // </SnippetWFWithReqPptyConverterAttr>
@@ -214,7 +214,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine();
         }
 
-        public static void DisplayPropertyValues(this WeatherForecastWithReqPptyConverterAttribute wf)
+        public static void DisplayPropertyValues(this WeatherForecastWithRequiredPropertyConverterAttribute wf)
         {
             Utilities.DisplayPropertyValues(wf);
             Console.WriteLine();
@@ -344,9 +344,9 @@ namespace SystemTextJsonSamples
             return weatherForecast;
         }
 
-        public static WeatherForecastWithReqPptyConverterAttribute CreateWeatherForecastAttrReg()
+        public static WeatherForecastWithRequiredPropertyConverterAttribute CreateWeatherForecastAttrReg()
         {
-            var weatherForecast = new WeatherForecastWithReqPptyConverterAttribute
+            var weatherForecast = new WeatherForecastWithRequiredPropertyConverterAttribute
             {
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,

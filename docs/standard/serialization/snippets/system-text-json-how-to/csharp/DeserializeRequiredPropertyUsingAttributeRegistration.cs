@@ -5,19 +5,21 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    public class DeserializeRequiredPropertyAttrReg
+    public class DeserializeRequiredPropertyUsingAttributeRegistration
     {
         public static void Run()
         {
             string jsonString;
             var wf = WeatherForecastFactories.CreateWeatherForecastAttrReg();
 
-            var options = new JsonSerializerOptions();
-            options.WriteIndented = true;
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
             jsonString = JsonSerializer.Serialize(wf, options);
             Console.WriteLine($"JSON with Date:\n{jsonString}\n");
 
-            wf = JsonSerializer.Deserialize<WeatherForecastWithReqPptyConverterAttribute>(jsonString, options);
+            wf = JsonSerializer.Deserialize<WeatherForecastWithRequiredPropertyConverterAttribute>(jsonString, options);
             wf.DisplayPropertyValues();
 
             jsonString = @"{""TemperatureCelsius"": 25,""Summary"":""Hot""}";
@@ -26,7 +28,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine("Deserialize with converter");
             try
             {
-                wf = JsonSerializer.Deserialize<WeatherForecastWithReqPptyConverterAttribute>(jsonString, options);
+                wf = JsonSerializer.Deserialize<WeatherForecastWithRequiredPropertyConverterAttribute>(jsonString, options);
             }
             catch (JsonException ex)
             {

@@ -18,7 +18,8 @@ In this article, you'll learn how to install .NET Core on macOS. .NET Core is ma
 
 The latest version of .NET Core is 3.1.
 
-[Download .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## Supported releases
 

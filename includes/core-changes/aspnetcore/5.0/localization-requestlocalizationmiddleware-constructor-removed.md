@@ -1,6 +1,6 @@
 ### Localization: Obsolete constructor removed in request localization middleware
 
-The <xref:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware> constructor that lacks a <xref:Microsoft.Extensions.Logging.LoggerFactory> parameter was marked as obsolete [in this commit](https://github.com/dotnet/aspnetcore/commit/ba8c6ccf6fd3eeb7fc42a159d362b15eae4fb3a0). In ASP.NET Core 5.0, the obsolete constructor was removed. For discussion, see [dotnet/aspnetcore#23785](https://github.com/dotnet/aspnetcore/issues/23785).
+The <xref:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware> constructor that lacks an <xref:Microsoft.Extensions.Logging.ILoggerFactory> parameter was marked as obsolete [in this commit](https://github.com/dotnet/aspnetcore/commit/ba8c6ccf6fd3eeb7fc42a159d362b15eae4fb3a0). In ASP.NET Core 5.0, the obsolete constructor was removed. For discussion, see [dotnet/aspnetcore#23785](https://github.com/dotnet/aspnetcore/issues/23785).
 
 #### Version introduced
 
@@ -20,7 +20,7 @@ This change ensures that the request localization middleware always has access t
 
 #### Recommended action
 
-When manually constructing an instance of `RequestLocalizationMiddleware`, pass an <xref:Microsoft.Extensions.Logging.ILoggerFactory> instance in the constructor. If a valid `ILoggerFactory` instance isn't available in that context, consider passing the middleware constructor a <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory> instance.
+When manually constructing an instance of `RequestLocalizationMiddleware`, pass an `ILoggerFactory` instance in the constructor. If a valid `ILoggerFactory` instance isn't available in that context, consider passing the middleware constructor a <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory> instance.
 
 #### Category
 

@@ -1,5 +1,6 @@
 ---
 title: "Securing Method Access"
+description: Learn how to make method access secure for methods that aren't intended for public use but still needs to be public.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Code Access Security Basics"
+description: "Learn code access security basics for apps targeting the CLR: type-safe code, imperative and declarative syntax, secure class libraries, and transparent code."
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

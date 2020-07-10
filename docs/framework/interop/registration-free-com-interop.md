@@ -1,5 +1,6 @@
 ---
 title: "Registration-Free COM Interop"
+description: Use registration-free COM interop to activate a component without using the Windows registry to story assembly information.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], interop"

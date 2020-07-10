@@ -1,5 +1,6 @@
 ---
 title: "Code Access Security"
+description: Learn about the code access security mechanism in .NET, which helps protect computer systems from malicious mobile code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "named permission sets, code access security"

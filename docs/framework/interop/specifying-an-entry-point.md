@@ -1,5 +1,6 @@
 ---
 title: "Specifying an Entry Point"
+description: Learn to specify an entry point, which identifies a function's location in a DLL. You can rename the function by mapping the entry point to another name.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "EntryPoint field"

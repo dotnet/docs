@@ -1,5 +1,6 @@
 ---
 title: "Managed Extensibility Framework (MEF)"
+description: Explore the Managed Extensibility Framework (MEF), which lets application developers discover and use extensions without configuration in in .NET 4 or above.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

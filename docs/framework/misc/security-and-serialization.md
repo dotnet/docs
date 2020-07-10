@@ -1,5 +1,6 @@
 ---
 title: "Security and Serialization"
+description: Read about security and serialization. Use SecurityPermission with the SerializationFormatter flag specified to see or modify object instance data.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

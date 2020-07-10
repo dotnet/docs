@@ -115,7 +115,7 @@ type C(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
     // ... the body of the class follows
 ```
 
-If there is an explicit return type annotation, it can either be at the end of the `)` and before the `=`, or on a new line. If the return type also has a long name the latter might be preferrable:
+If there is an explicit return type annotation, it can either be at the end of the `)` and before the `=`, or on a new line. If the return type also has a long name, the latter might be preferable:
 
 ```fsharp
 type C() =

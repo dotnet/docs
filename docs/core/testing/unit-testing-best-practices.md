@@ -276,7 +276,7 @@ Your first reaction may be to start writing a test for `TrimInput` because you w
 The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about.
 
 ```csharp
-public void ParseLogLine_ByDefault_ReturnsTrimmedResult()
+public void ParseLogLine_StartsAndEndsWithSpace_ReturnsTrimmedResult()
 {
     var parser = new Parser();
 
@@ -294,7 +294,7 @@ One of the principles of a unit test is that it must have full control of the sy
 ```csharp
 public int GetDiscountedPrice(int price)
 {
-    if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+    if (DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
     {
         return price / 2;
     }
@@ -308,7 +308,7 @@ public int GetDiscountedPrice(int price)
 How can this code possibly be unit tested? You may try an approach such as
 
 ```csharp
-public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
+public void GetDiscountedPrice_NotTuesday_ReturnsFullPrice()
 {
     var priceCalculator = new PriceCalculator();
 
@@ -342,7 +342,7 @@ public interface IDateTimeProvider
 
 public int GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 {
-    if(dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday)
+    if (dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday)
     {
         return price / 2;
     }
@@ -356,7 +356,7 @@ public int GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 Your test suite now becomes
 
 ```csharp
-public void GetDiscountedPrice_ByDefault_ReturnsFullPrice()
+public void GetDiscountedPrice_NotTuesday_ReturnsFullPrice()
 {
     var priceCalculator = new PriceCalculator();
     var dateTimeProviderStub = new Mock<IDateTimeProvider>();

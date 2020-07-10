@@ -55,13 +55,15 @@ Runs ASP.NET Core apps. Includes the .NET Core runtime.
 *.NET Core runtime*\
 This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET Core apps.
 
-[Download .NET Core Runtime.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core Runtime](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## SDK information
 
 The SDK is used to build and publish .NET Core apps and libraries. Installing the SDK includes both [runtimes](#runtime-information): ASP.NET Core and .NET Core.
 
-[Download .NET Core SDK.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## Dependencies
 

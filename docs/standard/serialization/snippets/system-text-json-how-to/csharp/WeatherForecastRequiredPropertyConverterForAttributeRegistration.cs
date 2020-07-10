@@ -4,7 +4,8 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    public class WeatherForecastRequiredPropertyConverterForAttributeRegistration : JsonConverter<WeatherForecastWithRequiredPropertyConverterAttribute>
+    public class WeatherForecastRequiredPropertyConverterForAttributeRegistration : 
+        JsonConverter<WeatherForecastWithRequiredPropertyConverterAttribute>
     {
         public override WeatherForecastWithRequiredPropertyConverterAttribute Read(
             ref Utf8JsonReader reader,
@@ -12,7 +13,10 @@ namespace SystemTextJsonSamples
             JsonSerializerOptions options)
         {
             // OK to pass in options when recursively calling Deserialize.
-            WeatherForecastWithRequiredPropertyConverterAttribute forecast = JsonSerializer.Deserialize<WeatherForecastWithoutRequiredPropertyConverterAttribute>(ref reader, options);
+            WeatherForecastWithRequiredPropertyConverterAttribute forecast = 
+                JsonSerializer.Deserialize<WeatherForecastWithoutRequiredPropertyConverterAttribute>(
+                    ref reader, 
+                    options);
 
             // Check for required fields set by values in JSON.
             if (forecast.Date == default)
@@ -25,9 +29,11 @@ namespace SystemTextJsonSamples
 
         public override void Write(
             Utf8JsonWriter writer,
-            WeatherForecastWithRequiredPropertyConverterAttribute forecast, JsonSerializerOptions options)
+            WeatherForecastWithRequiredPropertyConverterAttribute forecast, 
+            JsonSerializerOptions options)
         {
-            var weatherForecastWithoutConverterAttributeOnClass = new WeatherForecastWithoutRequiredPropertyConverterAttribute
+            var weatherForecastWithoutConverterAttributeOnClass = 
+                new WeatherForecastWithoutRequiredPropertyConverterAttribute
             {
                 Date = forecast.Date,
                 TemperatureCelsius = forecast.TemperatureCelsius,
@@ -35,7 +41,10 @@ namespace SystemTextJsonSamples
             };
 
             // OK to pass in options when recursively calling Serialize.
-            JsonSerializer.Serialize(writer, weatherForecastWithoutConverterAttributeOnClass, options);
+            JsonSerializer.Serialize(
+                writer, 
+                weatherForecastWithoutConverterAttributeOnClass, 
+                options);
         }
     }
 }

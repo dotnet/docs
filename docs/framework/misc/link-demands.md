@@ -1,5 +1,6 @@
 ---
 title: "Link Demands"
+description: Read about link demands, which cause a security check during just-in-time (JIT) compilation, and examine only the immediate calling assembly of your code.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

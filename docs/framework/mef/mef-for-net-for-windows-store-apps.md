@@ -1,5 +1,6 @@
 ---
 title: "MEF for .NET for Windows Store Apps"
+description: Review Managed Extensibility Framework (MEF) namespaces that contain types for developing extensible Windows 8.x Store apps.
 ms.date: "03/30/2017"
 ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
 ---

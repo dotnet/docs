@@ -1,5 +1,6 @@
 ---
 title: "Securing Wrapper Code"
+description: Review how to secure wrapper code, which can open a unique set of security weaknesses, especially if the wrapper has higher trust than the code that uses it.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [.NET Framework], wrapper code"

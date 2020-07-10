@@ -1,5 +1,6 @@
 ---
 title: "Specifying a Character Set"
+description: Learn how to specify a character set that uses narrow (ANSI) or wide (Unicode) encoding. You can alternatively specify automatic runtime selection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

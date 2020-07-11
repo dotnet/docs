@@ -1,5 +1,6 @@
 ---
 title: "Security and Remoting Considerations"
+description: Learn about security considerations in regard to remoting, which lets you set up transparent calling between application domains, processes, or computers.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "code security, remoting"

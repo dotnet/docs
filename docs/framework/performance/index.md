@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Performance"
+description: Design and plan for performance in your .NET apps. Use the tools provided by Microsoft to measure your app's performance and make improvements.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "performance [.NET Framework]"

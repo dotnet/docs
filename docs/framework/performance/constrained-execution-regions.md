@@ -1,6 +1,6 @@
 ---
 title: "Constrained Execution Regions"
-description: Get started with constrained execution regions (CER), which is part of a mechanism for authoring reliable managed code.
+description: Get started with constrained execution regions (CER), which are part of a mechanism for authoring reliable managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "constrained execution regions"

@@ -59,7 +59,7 @@ All non-sealed classes should be considered a potential base class, because they
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/disposeasync.cs":::
 
-The preceding example uses the <xref:System.Text.Json.Utf8JsonWriter>, for more information about `System.Text.Json`, see [How to migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
+The preceding example uses the <xref:System.Text.Json.Utf8JsonWriter>. For more information about `System.Text.Json`, see [How to migrate from Newtonsoft.Json to System.Text.Json](../serialization/system-text-json-migrate-from-newtonsoft-how-to.md).
 
 ## Using async disposable
 

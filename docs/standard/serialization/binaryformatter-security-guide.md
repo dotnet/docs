@@ -3,22 +3,28 @@ title: "BinaryFormatter security guide"
 description: This article describes the security risks inherent in the BinaryFormatter type and recommendations for different serializers to use.
 ms.date: "07/11/2020"
 helpviewer_keywords: 
-ms.assetid: 00000000-0000-0000-0000-000000000000
+ms.assetid: c828a558-094b-441e-eeee-790b87315faa
 author: "GrabYourPitchforks"
 ---
 # BinaryFormatter security guide
 
 This document applies to the following framework versions:
 
-* .NET Framework (all versions)
+* .NET Framework all versions
 * .NET Core 2.1 - 3.1
-* .NET 5.0+
+* .NET 5.0 and later
 
 ## Background
 
-> __Summary__: The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is not recommended for data processing. Applications should stop using it at their earliest opportunity, even if they believe the data they're processing to be trustworthy.
+> [!WARNING]
+> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is not recommended for data processing. Applications should stop using it at their earliest opportunity, even if they believe the data they're processing to be trustworthy.
 
-> This document also applies to the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>, <xref:System.Runtime.Serialization.NetDataContractSerializer>, <xref:System.Web.UI.LosFormatter>, and <xref:System.Web.UI.ObjectStateFormatter> types.
+This document also applies to the following types:
+
+* <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>
+* <xref:System.Runtime.Serialization.NetDataContractSerializer>
+* <xref:System.Web.UI.LosFormatter>
+* <xref:System.Web.UI.ObjectStateFormatter>
 
 Deserialization vulnerabilities are a threat category where request payloads are processed insecurely. An attacker who successfully leverages this against an application can cause denial of service, information disclosure, or even remote code execution inside the target application. This risk category consistently makes the [OWASP Top 10](https://owasp.org/www-project-top-ten/). Targets include applications written in [a variety of languages](https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data), including C/C++, Java, and C#.
 

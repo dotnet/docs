@@ -1,4 +1,4 @@
-### Security - IdentityModel NuGet package versions updated
+### Security: IdentityModel NuGet package versions updated
 
 The following packages were updated to version 6.6.0:
 

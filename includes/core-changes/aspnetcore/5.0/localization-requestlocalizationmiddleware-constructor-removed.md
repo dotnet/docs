@@ -4,7 +4,7 @@ The <xref:Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware> const
 
 #### Version introduced
 
-5.0
+5.0 Preview 8
 
 #### Old behavior
 

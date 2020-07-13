@@ -18,7 +18,8 @@ In this article, you'll learn how to install .NET Core on Windows. .NET Core is 
 
 The latest version of .NET Core is 3.1.
 
-[Download .NET Core.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## Supported releases
 
@@ -66,13 +67,15 @@ Runs .NET Core WPF and .NET Core Windows Forms desktop apps for Windows. Include
 *.NET Core runtime*\
 This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET Core apps.
 
-[Download .NET Core Runtime.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core Runtime](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## SDK information
 
 The SDK is used to build and publish .NET Core apps and libraries. Installing the SDK includes all three [runtimes](#runtime-information): ASP.NET Core, Desktop, and .NET Core.
 
-[Download .NET Core SDK.](https://dotnet.microsoft.com/download/dotnet-core)
+> [!div class="button"]
+> [Download .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## Dependencies
 
@@ -213,7 +216,8 @@ If you already have Visual Studio installed, you can check your version with the
 
 Visual Studio can install the latest .NET Core SDK and runtime.
 
-- [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
+> [!div class="button"]
+> [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
 
 ### Select a workload
 

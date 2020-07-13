@@ -2,9 +2,9 @@
 title: "BinaryFormatter security guide"
 description: This article describes the security risks inherent in the BinaryFormatter type and recommendations for different serializers to use.
 ms.date: "07/11/2020"
-helpviewer_keywords: security, Serialization,  DoS
+helpviewer_keywords: "security, Serialization,  DoS"
 ms.author: levib
-author: "GrabYourPitchforks"
+author: GrabYourPitchforks
 ---
 # BinaryFormatter security guide
 
@@ -47,7 +47,7 @@ We recommend that `BinaryFormatter` consumers perform individual risk assessment
 
 .NET offers several in-box serializers that can handle untrusted data safely:
 
-* <xref:System.Xml.Serialization.XmlSerializer) and <xref:System.Runtime.Serialization.DataContractSerializer> to serialize object graphs into and from XML. Do not confuse `DataContractSerializer` with  <xref:System.Runtime.Serialization.NetDataContractSerializer>.
+* <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Runtime.Serialization.DataContractSerializer> to serialize object graphs into and from XML. Do not confuse `DataContractSerializer` with  <xref:System.Runtime.Serialization.NetDataContractSerializer>.
 <!-- Levi comment left in your original PR applied here-->
 * <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> for XML and JSON.
 * The <xref:System.Text.Json> APIs to serialize object graphs into JSON.

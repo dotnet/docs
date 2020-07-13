@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 
 1. Create a directory named *Data* in your project to store the data set and model files.
 
-1. Install the **Microsoft.ML** NuGet Package:
+1. Install the **Microsoft.ML** and **Microsoft.ML.FastTree** NuGet Package:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 

@@ -71,8 +71,8 @@ namespace builtin_types
             // Limits of [4 7 9] are 4 and 9
 
             var ys = new[] { -9, 0, 67, 100 };
-            var (min, max) = FindMinMax(ys);
-            Console.WriteLine($"Limits of [{string.Join(" ", ys)}] are {min} and {max}");
+            var (minimum, maximum) = FindMinMax(ys);
+            Console.WriteLine($"Limits of [{string.Join(" ", ys)}] are {minimum} and {maximum}");
             // Output:
             // Limits of [-9 0 67 100] are -9 and 100
 

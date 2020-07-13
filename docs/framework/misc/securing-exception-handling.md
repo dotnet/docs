@@ -1,5 +1,6 @@
 ---
 title: "Securing Exception Handling"
+description: See how to make exception handling secure in .NET code. Review the order in which code runs if there are try, except, catch, and finally statements.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"

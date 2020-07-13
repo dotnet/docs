@@ -1,5 +1,6 @@
 ---
 title: "Dangerous Permissions and Policy Administration"
+description: See links to the various dangerous permissions in .NET. These permissions should be given only to trustworthy code, and only when necessary.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "permissions [.NET Framework], policy administration"

@@ -2,8 +2,8 @@
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser
-quickFilterColumn1: netcore-3.1,netframework-4.8,netstandard-2.1,aspnetcore-3.1
-quickFilterColumn2: xamarin-forms,efcore-3.1,roslyn-dotnet
+quickFilterColumn1: net-5.0,netcore-3.1,netstandard-2.1,netframework-4.8
+quickFilterColumn2: xamarin-forms,aspnetcore-3.1,efcore-3.1,roslyn-dotnet
 quickFilterColumn3: azure-dotnet,ml-dotnet,spark-dotnet
 ms.topic: landing-page
 ms.custom: "updateeachrelease"

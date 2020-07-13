@@ -75,11 +75,6 @@ This scenario can be leveraged to nefarious effect. If the app is a game, users 
 
 Another scenario is where the data file is stored in cloud storage and automatically synced between the user's machines. An attacker who is able to gain access to the cloud storage account can poison the data file. This data file will be automatically synced to the user's machines. The next time the user opens the data file, the attacker's payload runs. Thus the attacker can leverage a cloud storage account compromise to gain full code execution permissions.
 
-<!-- Levi review: What's a box product? That's won't translate 
-We like sentences to be generally between 15-20 words. Can you help me split up the following 42 word sentence? I'm not sure how an embedded sentence translates. I'm made an attempt to shorten it and make it easier to read in all languages.
-
-[tdykstra] I split the long sentence and replaced "box product" with "desktop app".
--->
 __Consider an app that moves from a desktop-install model to a cloud-first model.__ This scenario includes apps that move from a desktop app or rich client model into a web-based model. Any threat models drawn for the desktop app aren't necessarily applicable to the cloud-based service. The threat model for the desktop app might dismiss a given threat as "not interesting for the client to attack itself." But that same threat might become interesting when it considers a remote user (the client) attacking the cloud service itself.
 
 > [!NOTE]

@@ -117,7 +117,7 @@ AppDomain.CreateDomain( string friendlyName,
            typeof(Sandboxer).FullName );  
     ```  
   
-     Note that in order to create an instance of a class in a new domain, the class has to extend the <xref:System.MarshalByRefObject> class  
+     To create an instance of a class in a new domain, the class must extend the <xref:System.MarshalByRefObject> class.
   
     ```csharp
     class Sandboxer:MarshalByRefObject  

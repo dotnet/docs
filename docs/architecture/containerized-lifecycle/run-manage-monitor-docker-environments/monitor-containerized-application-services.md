@@ -41,7 +41,7 @@ Azure has the tools to manage and provide a unified view of four critical aspect
   - Keep your backup data encrypted in transit and at rest.
   - Ensure access based on multifactor authentication to prevent unauthorized use.
 
-- **On-premises resources**. With [a truly consistent hybrid cloud](https://azure.microsoft.com/resources/truly-consistent-hybrid-cloud-with-microsoft-azure/).
+- **On-premises resources**. With [hybrid cloud solutions](https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/).
 
 >[!div class="step-by-step"]
 >[Previous](manage-production-docker-environments.md)

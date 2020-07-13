@@ -15,9 +15,10 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  When deserializing XML, the serializer uses the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. It also supports the <xref:System.Xml.XmlDictionaryReader> and <xref:System.Xml.XmlDictionaryWriter> classes to enable it to produce optimized XML in some cases, such as when using the WCF binary XML format.  
   
  WCF also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer>:
- * Is ***not*** secure. For more information see the [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
- * Is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits .NET Framework type names as part of the serialized data.
- * Is used when the same types are shared on the serializing and the deserializing ends.
+
+* Is ***not*** secure. For more information see the [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
+* Is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits .NET Framework type names as part of the serialized data.
+* Is used when the same types are shared on the serializing and the deserializing ends.
 
  Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   

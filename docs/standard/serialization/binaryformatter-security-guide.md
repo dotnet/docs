@@ -2,7 +2,7 @@
 title: "BinaryFormatter security guide"
 description: This article describes the security risks inherent in the BinaryFormatter type and recommendations for different serializers to use.
 ms.date: "07/11/2020"
-helpviewer_keywords: 
+helpviewer_keywords: security, Serialization,  DoS
 ms.assetid: c828a558-094b-441e-eeee-790b87315faa
 author: "GrabYourPitchforks"
 ---
@@ -14,13 +14,10 @@ This document applies to the following framework versions:
 * .NET Core 2.1 - 3.1
 * .NET 5.0 and later
 
-<!-- TODO Add:
- `BinaryReader` and `BinaryWriter` should be considered as an alternatives next to XML & JSON for those that require binary data.
--->
 ## Background
 
 > [!WARNING]
-> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is not recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy.
+> The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure can't be made secure.
 
 This document also applies to the following types:
 
@@ -51,7 +48,7 @@ We recommend that `BinaryFormatter` consumers perform individual risk assessment
 .NET offers several in-box serializers which can handle untrusted data safely:
 
 * <xref:System.Xml.Serialization.XmlSerializer) and <xref:System.Runtime.Serialization.DataContractSerializer> to serialize object graphs into and from XML. Do not confuse `DataContractSerializer` with  <xref:System.Runtime.Serialization.NetDataContractSerializer>.
-<!-- Levi review pre review comment-->
+<!-- Levi comment left in your original PR applied here-->
 * <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> for XML and JSON.
 * The <xref:System.Text.Json> APIs to serialize object graphs into JSON.
 

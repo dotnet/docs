@@ -2,7 +2,6 @@
 title: "BinaryFormatter security guide"
 description: This article describes the security risks inherent in the BinaryFormatter type and recommendations for different serializers to use.
 ms.date: "07/11/2020"
-helpviewer_keywords: security, Serialization, DoS
 ms.author: levib
 author: GrabYourPitchforks
 ---

@@ -1,3 +1,5 @@
+# Attribution & license details
+
 Donovan Govan, [Toaster](https://commons.wikimedia.org/wiki/File:Toaster.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode)  
 Consumer Reports, [Consumer Reports - Hamilton Beach Digital toaster](https://commons.wikimedia.org/wiki/File:Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)  
 Jon Sullivan, [Pepperoni pizza](https://commons.wikimedia.org/wiki/File:Pepperoni_pizza.jpg), This work has been released into the public domain by its author, Jon Sullivan ([PD Photo.org](http://pdphoto.org/))  

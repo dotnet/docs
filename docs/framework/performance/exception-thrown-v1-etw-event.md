@@ -1,5 +1,6 @@
 ---
 title: "Exception Thrown_V1 ETW Event"
+description: View detailed information about the ExceptionThrown_V1 ETW event. Event data such as field names, data types, and descriptions are given for thrown exceptions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ExceptionThrown_V1 event [.NET Framework]"

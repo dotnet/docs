@@ -1,5 +1,6 @@
 ---
 title: "Controlling .NET Framework Logging"
+description: Use event tracing for Windows (ETW) to control .NET logging and record common language runtime (CLR) events. Use tools such as Logman, Tracerpt, and Xperf.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "CLR ETW events, logging"

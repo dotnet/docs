@@ -1,5 +1,6 @@
 ---
 title: "Using Libraries from Partially Trusted Code"
+description: Know how to use libraries from partially trusted code. Use the AllowPartiallyTrustedCallersAttribute attribute to call shared managed libraries.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [.NET Framework], partially trusted code"

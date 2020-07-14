@@ -15,20 +15,20 @@ ms.date: 07/08/2020
 
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [--add-source <SOURCE>] [--disable-parallel]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] [--no-cache]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [--add-source <SOURCE>] [--disable-parallel]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] [--no-cache]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [--add-source <SOURCE>] [--disable-parallel]
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] [--no-cache]
     [--tool-manifest <PATH>]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
@@ -80,7 +80,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 - **`--local`**
 
-  Update the tool and the local tool manifest. Can't be combined with the `--global` option.
+  Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
 - **`--no-cache`**
 

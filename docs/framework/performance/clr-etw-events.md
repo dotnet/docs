@@ -1,5 +1,6 @@
 ---
 title: "CLR ETW Events"
+description: "See articles about common language runtime (CLR) event tracing for Windows (ETW) events. There are two event providers: runtime provider and rundown provider."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CLR ETW events"

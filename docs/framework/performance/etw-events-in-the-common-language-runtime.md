@@ -1,5 +1,6 @@
 ---
 title: "ETW Events in the Common Language Runtime"
+description: Read a summary and view links concerning event tracing for Windows (ETW) events in the common language runtime (CLR).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CLR ETW events"

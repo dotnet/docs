@@ -1,5 +1,6 @@
 ---
 title: "Using the Assert Method"
+description: See how you can use the Assert method to enable your code (and downstream callers' code) to do things your code has permission for but not its callers.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

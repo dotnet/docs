@@ -10,13 +10,13 @@ ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 ---
 # .NET Framework Cryptography Model
 
-.NET provides implementations of many standard cryptographic algorithms. These algorithms have the safest possible default properties. In addition, the .NET cryptography model of object inheritance and configuration is extremely extensible.
+.NET provides implementations of many standard cryptographic algorithms. These algorithms have the safest possible default properties. In addition, the .NET cryptography model of object inheritance and configuration is extensible.
 
 ## Object Inheritance
 
 The .NET cryptography system implements an extensible pattern of derived class inheritance. The hierarchy is as follows:
 
-- Algorithm type class, such as <xref:System.Security.Cryptography.SymmetricAlgorithm>,  <xref:System.Security.Cryptography.AsymmetricAlgorithm> or <xref:System.Security.Cryptography.HashAlgorithm>. This level is abstract.
+- Algorithm type class, such as <xref:System.Security.Cryptography.SymmetricAlgorithm>,  <xref:System.Security.Cryptography.AsymmetricAlgorithm>, or <xref:System.Security.Cryptography.HashAlgorithm>. This level is abstract.
 
 - Algorithm class that inherits from an algorithm type class; for example, <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RC2>, or <xref:System.Security.Cryptography.ECDiffieHellman>. This level is abstract.
 

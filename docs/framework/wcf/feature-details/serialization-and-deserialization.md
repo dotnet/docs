@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
  WCF also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer>:
 
-* Is ***not*** secure. For more information see the [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
+* Is ***not*** secure. For more information, see the [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
 * Is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits .NET Framework type names as part of the serialized data.
 * Is used when the same types are shared on the serializing and the deserializing ends.
 

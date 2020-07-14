@@ -7,7 +7,7 @@ author: GrabYourPitchforks
 ---
 # BinaryFormatter security guide
 
-This document applies to the following .NET implementations:
+This article applies to the following .NET implementations:
 
 * .NET Framework all versions
 * .NET Core 2.1 - 3.1

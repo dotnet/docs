@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 07/10/2020
+ms.date: 07/13/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -65,6 +65,7 @@ The following breaking changes are documented on this page:
 - [MVC: Types changed to internal](#mvc-pubternal-types-changed-to-internal)
 - [MVC: Web API compatibility shim removed](#mvc-web-api-compatibility-shim-removed)
 - [Razor: Runtime compilation moved to a package](#razor-runtime-compilation-moved-to-a-package)
+- [Security: IdentityModel NuGet package versions updated](#security-identitymodel-nuget-package-versions-updated)
 - [Session state: Obsolete APIs removed](#session-state-obsolete-apis-removed)
 - [Shared framework: Assembly removal from Microsoft.AspNetCore.App](#shared-framework-assemblies-removed-from-microsoftaspnetcoreapp)
 - [Shared framework: Microsoft.AspNetCore.All removed](#shared-framework-removed-microsoftaspnetcoreall)
@@ -131,6 +132,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Security: IdentityModel NuGet package versions updated](~/includes/core-changes/aspnetcore/5.0/security-identitymodel-nuget-package-versions-updated.md)]
 
 ***
 

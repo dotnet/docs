@@ -12,7 +12,8 @@ helpviewer_keywords:
   - "CharSet field"
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
 ---
-# Specifying a Character Set
+# Specify a character set
+
 The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field controls string marshaling and determines how platform invoke finds function names in a DLL. This topic describes both behaviors.  
   
  Some APIs export two versions of functions that take string arguments: narrow (ANSI) and wide (Unicode). The Windows API, for instance, includes the following entry-point names for the **MessageBox** function:  
@@ -56,11 +57,12 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 - Platform invoke chooses between ANSI and Unicode formats at run time, based on the target platform.  
   
-## Specifying a Character Set in Visual Basic  
- The following example declares the **MessageBox** function three times, each time with different character-set behavior. You can specify character-set behavior in Visual Basic by adding the **Ansi**, **Unicode**, or **Auto** keyword to the declaration statement.  
-  
- If you omit the character-set keyword, as is done in the first declaration statement, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field defaults to the ANSI character set. The second and third statements in the example explicitly specify a character set with a keyword.  
-  
+## Specify a character set in Visual Basic
+
+You can specify character-set behavior in Visual Basic by adding the `Ansi`, `Unicode`, or `Auto` keyword to the declaration statement. If you omit the character-set keyword, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field defaults to the ANSI character set.
+
+The following example declares the **MessageBox** function three times, each time with different character-set behavior. The first statement omits the character-set keyword, so the character set defaults to ANSI. The second and third statements explicitly specify a character set with a keyword.
+
 ```vb
 Friend Class NativeMethods
     Friend Declare Function MessageBoxA Lib "user32.dll" (
@@ -83,8 +85,9 @@ Friend Class NativeMethods
 End Class
 ```
   
-## Specifying a Character Set in C# and C++  
- The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
+## Specify a character set in C# and C++
+
+The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field identifies the underlying character set as ANSI or Unicode. The character set controls how string arguments to a method should be marshaled. Use one of the following forms to indicate the character set:  
   
 ```csharp
 [DllImport("DllName", CharSet = CharSet.Ansi)]

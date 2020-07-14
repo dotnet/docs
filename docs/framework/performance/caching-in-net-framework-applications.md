@@ -1,5 +1,6 @@
 ---
 title: "Caching in .NET Framework Applications"
+description: Use caching in .NET applications. Read about caching data, caching in ASP.NET applications or WCF REST services, and extending caching in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ASP.NET caching"

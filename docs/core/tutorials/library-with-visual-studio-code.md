@@ -166,7 +166,7 @@ Initially, the new console app project doesn't have access to the class library.
 1. Run the following command:
 
    ```dotnetcli
-   dotnet add ShowCase/Showcase.csproj reference StringLibrary/StringLibrary.csproj
+   dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
    ```
 
    The terminal output looks like the following example:

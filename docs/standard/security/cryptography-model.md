@@ -4,8 +4,8 @@ description: Review implementations of usual cryptographic algorithms in .NET. L
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
-  - "cryptography in .NET, model"
-  - "encryption in .NET, model"
+  - "cryptography [.NET], model"
+  - "encryption [.NET], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 ---
 # .NET Framework Cryptography Model
@@ -42,7 +42,7 @@ In the .NET Framework on Windows:
 * `*Cng` algorithm classes, such as <xref:System.Security.Cryptography.ECDiffieHellmanCng> are wrappers around the Windows Cryptography Next Generation (CNG) implementation. CNG algorithms are available on Windows Vista and later.
 * `*Managed` classes, such as <xref:System.Security.Cryptography.AesManaged>, are written entirely in managed code. `*Managed` implementations are not certified by the Federal Information Processing Standards (FIPS), and may be slower than the `*CryptoServiceProvider` and `*Cng` wrapper classes.
 
-In .NET Core and .NET 5 and later versions, all implementation classes (`*CryptoServiceProvider`, `*Managed`, and `*Cng`) are wrappers for the operating system (OS) algorithms. If the OS algorithms are FIPS-certified, .NET uses FIPS-certified algorithms. For more information, see [Cross-Platform Cryptography](cross-platform-cryptography.md).
+In .NET Core and .NET 5 and later versions, all implementation classes (`*CryptoServiceProvider`, `*Managed`, and `*Cng`) are wrappers for the operating system (OS) algorithms. If the OS algorithms are FIPS-certified, then .NET uses FIPS-certified algorithms. For more information, see [Cross-Platform Cryptography](cross-platform-cryptography.md).
 
 ## Cryptographic Configuration
 

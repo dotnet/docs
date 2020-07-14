@@ -30,7 +30,7 @@ Writing secure code does not guard against self-inflicted security holes when wo
   
 ## Related sections
 
- [DataSet and DataTable security guidance](dataset-datatable-dataview/security.md)  
+ [DataSet and DataTable security guidance](dataset-datatable-dataview/security-guidance.md)  
  Provides security guidance for <xref:System.Data.DataSet> and <xref:System.Data.DataTable>.
 
  [SQL Server Security](./sql/sql-server-security.md)  

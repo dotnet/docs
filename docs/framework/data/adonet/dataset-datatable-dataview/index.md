@@ -20,7 +20,7 @@ A strongly typed <xref:System.Data.DataSet> can also be transported using an XML
   
 ## In this section
 
- [Security guidance](security.md)  
+ [Security guidance](security-guidance.md)  
  Provides security guidance for <xref:System.Data.DataSet> and <xref:System.Data.DataTable>.
 
  [Creating a DataSet](creating-a-dataset.md)  

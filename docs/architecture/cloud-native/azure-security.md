@@ -61,7 +61,7 @@ This is a perfect example of a seemingly low value target that can be used to br
 
 .NET Framework is already a quite secure framework. It avoids some of the pitfalls of unmanaged code, such as walking off the ends of arrays. Work is actively done to fix security holes as they're discovered. There's even a [bug bounty program](https://www.microsoft.com/msrc/bounty) that pays researchers to find issues in the framework and report them instead of exploiting them.
 
-There are many ways to make .NET code more secure. Following guidelines such as the [Secure coding guidelines for .NET](https://docs.microsoft.com/dotnet/standard/security/secure-coding-guidelines) article is a reasonable step to take to ensure that the code is secure from the ground up. The [OWASP top 10](https://owasp.org/www-project-top-ten/) is another invaluable guide to build secure code.
+There are many ways to make .NET code more secure. Following guidelines such as the [Secure coding guidelines for .NET](../../standard/security/secure-coding-guidelines.md) article is a reasonable step to take to ensure that the code is secure from the ground up. The [OWASP top 10](https://owasp.org/www-project-top-ten/) is another invaluable guide to build secure code.
 
 The build process is a good place to put scanning tools to detect problems in source code before they make it into production. Most every project has dependencies on some other packages. A tool that can scan for outdated packages will catch problems in a nightly build. Even when building Docker images, it's useful to check and make sure that the base image doesn't have known vulnerabilities. Another thing to check is that nobody has accidentally checked in credentials.
 

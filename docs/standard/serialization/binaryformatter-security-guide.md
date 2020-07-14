@@ -18,7 +18,7 @@ This document applies to the following .NET implementations:
 > [!WARNING]
 > The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> type is dangerous and is ***not*** recommended for data processing. Applications should stop using `BinaryFormatter` as soon as possible, even if they believe the data they're processing to be trustworthy. `BinaryFormatter` is insecure can't be made secure.
 
-This document also applies to the following types:
+This article also applies to the following types:
 
 * <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>
 * <xref:System.Runtime.Serialization.NetDataContractSerializer>
@@ -34,20 +34,19 @@ As a simpler analogy, assume that calling `BinaryFormatter.Deserialize` over a p
 ## BinaryFormatter security vulnerabilities
 
 > [!WARNING]
-> The `BinaryFormatter.Deserialize` method is __never__ safe when used with untrusted input. We strongly recommend that consumers instead consider using one of the alternatives outlined later in this document.
+> The `BinaryFormatter.Deserialize` method is __never__ safe when used with untrusted input. We strongly recommend that consumers instead consider using one of the alternatives outlined later in this article.
 
-The implementation of `BinaryFormatter` was originally created before deserialization vulnerabilities were a well-understood threat category. As a result, the code does not follow modern best practices. The `Deserialize` method can be used as a vector for attackers to perform DoS attacks against consuming apps. These attacks might render the app unresponsive or result in unexpected process termination. This category of attack cannot be mitigated with a `SerializationBinder` or any other `BinaryFormatter` configuration switch. .NET considers this behavior ***by design*** and won't issue a code update to modify the behavior.
+`BinaryFormatter` was implemented before deserialization vulnerabilities were a well-understood threat category. As a result, the code does not follow modern best practices. The `Deserialize` method can be used as a vector for attackers to perform DoS attacks against consuming apps. These attacks might render the app unresponsive or result in unexpected process termination. This category of attack cannot be mitigated with a `SerializationBinder` or any other `BinaryFormatter` configuration switch. .NET considers this behavior to be ***by design*** and won't issue a code update to modify the behavior.
 
 `BinaryFormatter.Deserialize` may be vulnerable to other attack categories, such as information disclosure or remote code execution. Utilizing features such as a custom <xref:System.Runtime.Serialization.SerializationBinder> may be insufficient to properly mitigate these risks. The possibility exists that a novel vulnerability will be discovered for which .NET cannot practically publish a security update. Consumers should assess their individual scenarios and consider their potential exposure to these risks.
 
-We recommend that `BinaryFormatter` consumers perform individual risk assessments on their apps. It is the consumer's sole responsibility to determine whether to utilize `BinaryFormatter`. Consumers should risk-assess security, technical, reputation, legal, and regulatory requirements of using `BinaryFormatter`.
+We recommend that `BinaryFormatter` consumers perform individual risk assessments on their apps. It is the consumer's sole responsibility to determine whether to utilize `BinaryFormatter`. Consumers should risk assess the security, technical, reputation, legal, and regulatory requirements of using `BinaryFormatter`.
 
 ## Preferred alternatives
 
 .NET offers several in-box serializers that can handle untrusted data safely:
 
 * <xref:System.Xml.Serialization.XmlSerializer> and <xref:System.Runtime.Serialization.DataContractSerializer> to serialize object graphs into and from XML. Do not confuse `DataContractSerializer` with  <xref:System.Runtime.Serialization.NetDataContractSerializer>.
-<!-- Levi comment left in your original PR applied here-->
 * <xref:System.IO.BinaryReader> and <xref:System.IO.BinaryWriter> for XML and JSON.
 * The <xref:System.Text.Json> APIs to serialize object graphs into JSON.
 

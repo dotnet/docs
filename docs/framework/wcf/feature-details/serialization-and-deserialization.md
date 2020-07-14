@@ -20,7 +20,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 * Is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits .NET Framework type names as part of the serialized data.
 * Is used when the same types are shared on the serializing and the deserializing ends.
 
- Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
+ Both <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   
 > [!WARNING]
 > The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  

@@ -1,24 +1,25 @@
 ---
 title: "How to: Encrypt XML Elements with Symmetric Keys"
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "AES algorithm"
-  - "cryptography [.NET Framework], symmetric keys"
-  - "encryption [.NET Framework], symmetric keys"
+  - "cryptography [.NE], symmetric keys"
+  - "encryption [.NET], symmetric keys"
   - "symmetric keys"
   - "System.Security.Cryptography.EncryptedXml class"
-  - "System.Security.Cryptography.RijndaelManaged class"
+  - "System.Security.Cryptography.Aes class"
   - "XML encryption"
   - "Advanced Encryption Standard algorithm"
   - "Rijndael"
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
 ---
 # How to: Encrypt XML Elements with Symmetric Keys
-You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption allows you to store or transport sensitive XML, without worrying about the data being easily read.  This procedure encrypts an XML element using the Advanced Encryption Standard (AES) algorithm, also known as Rijndael.  
+
+You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption allows you to store or transport sensitive XML, without worrying about the data being easily read.  This procedure encrypts an XML element using the Advanced Encryption Standard (AES) algorithm.  
   
  For information about how to decrypt an XML element that was encrypted using this procedure, see [How to: Decrypt XML Elements with Symmetric Keys](how-to-decrypt-xml-elements-with-symmetric-keys.md).  
   
@@ -88,12 +89,16 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
-## .NET Framework Security  
- Never store a cryptographic key in plaintext or transfer a key between machines in plaintext.  Instead, use a secure key container to store cryptographic keys.  
+## .NET Security
+
+Never store a cryptographic key in plaintext or transfer a key between machines in plaintext.  Instead, use a secure key container to store cryptographic keys.  
   
- When you are done using a cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  
+When you are done using a cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  
   
 ## See also
 
+- [Cryptography Model](cryptography-model.md) - Describes how cryptography is implemented in the base class library.
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Decrypt XML Elements with Symmetric Keys](how-to-decrypt-xml-elements-with-symmetric-keys.md)

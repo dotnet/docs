@@ -9,7 +9,7 @@ class Class1
     {
         //This hash value is produced from "This is the original message!"
         //using SHA1Managed.
-        byte[] sentHashValue = { 59, 4, 248, 102, 77, 97, 142, 201, 210, 12, 224, 93, 25, 41, 100, 197, 213, 134, 130, 135 };
+        byte[] sentHashValue = { 185, 203, 236, 22, 3, 228, 27, 130, 87, 23, 244, 15, 87, 88, 14, 43, 37, 61, 106, 224, 81, 172, 224, 211, 104, 85, 194, 197, 194, 25, 120, 217 };
 
         //This is the string that corresponds to the previous hash value.
         string messageString = "This is the original message!";
@@ -25,7 +25,7 @@ class Class1
 
         //Create a new instance of the SHA1Managed class to create
         //the hash value.
-        SHA1Managed shHash = new SHA1Managed();
+        SHA256 shHash = SHA256.Create();
 
         //Create the hash value from the array of bytes.
         compareHashValue = shHash.ComputeHash(messageBytes);

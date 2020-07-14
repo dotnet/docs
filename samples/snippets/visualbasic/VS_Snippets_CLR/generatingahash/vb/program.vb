@@ -17,7 +17,7 @@ Module Program
 
         'Create a new instance of the SHA1Managed class to create 
         'the hash value.
-        Dim shHash As New SHA1Managed()
+        Dim shHash As SHA256 = SHA256.Create()
 
         'Create the hash value from the array of bytes.
         hashValue = shHash.ComputeHash(messageBytes)

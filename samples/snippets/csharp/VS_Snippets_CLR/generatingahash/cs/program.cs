@@ -21,7 +21,7 @@ class Class1
 
         //Create a new instance of the SHA1Managed class to create
         //the hash value.
-        SHA1Managed shHash = new SHA1Managed();
+        SHA1 shHash = SHA1.Create();
 
         //Create the hash value from the array of bytes.
         hashValue = shHash.ComputeHash(messageBytes);

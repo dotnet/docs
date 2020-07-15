@@ -1,6 +1,6 @@
 ---
 title: "How to: Access Hardware Encryption Devices"
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -15,9 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
 ---
 # How to: Access Hardware Encryption Devices
+
 You can use the <xref:System.Security.Cryptography.CspParameters> class to access hardware encryption devices. For example, you can use this class to integrate your application with a smart card, a hardware random number generator, or a hardware implementation of a particular cryptographic algorithm.  
-  
- The <xref:System.Security.Cryptography.CspParameters> class creates a cryptographic service provider (CSP) that accesses a properly installed hardware encryption device.  You can verify the availability of a CSP by inspecting the following registry key using the Registry Editor (Regedit.exe):  HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.  
+
+> [!NOTE]
+> This article applies only to Windows.
+
+The <xref:System.Security.Cryptography.CspParameters> class creates a cryptographic service provider (CSP) that accesses a properly installed hardware encryption device.  You can verify the availability of a CSP by inspecting the following registry key using the Registry Editor (Regedit.exe):  HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.  
   
 ### To sign data using a key card  
   
@@ -37,12 +41,16 @@ You can use the <xref:System.Security.Cryptography.CspParameters> class to acces
   
 3. Create a random value using the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes%2A> or <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetNonZeroBytes%2A> method.  
   
-## Example  
- The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.  
+## Example
+
+The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.  
+
+> [!IMPORTANT]
+> This example code uses SHA1. Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
   
- [!code-cpp[Cryptography.SmartCardCSP#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
- [!code-csharp[Cryptography.SmartCardCSP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]
- [!code-vb[Cryptography.SmartCardCSP#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB/example.vb#1)]  
+[!code-cpp[Cryptography.SmartCardCSP#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
+[!code-csharp[Cryptography.SmartCardCSP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]
+[!code-vb[Cryptography.SmartCardCSP#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB/example.vb#1)]  
   
 ## Compiling the Code  
   

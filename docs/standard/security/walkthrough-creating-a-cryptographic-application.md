@@ -1,25 +1,26 @@
 ---
 title: "Walkthrough: Creating a Cryptographic Application"
 description: Walk through the creation of a cryptographic application. Learn how to encrypt and decrypt content in a Windows Forms application.
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "cryptography [NET Framework], example"
-  - "cryptography [NET Framework], cryptographic application example"
-  - "cryptography [NET Framework], application example"
+  - "cryptography [NET], example"
+  - "cryptography [NET], cryptographic application example"
+  - "cryptography [NET], application example"
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
 ---
 # Walkthrough: Creating a Cryptographic Application
+
 This walkthrough demonstrates how to encrypt and decrypt content. The code examples are designed for a Windows Forms application. This application does not demonstrate real world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.  
   
- This walkthrough uses the following guidelines for encryption:  
+This walkthrough uses the following guidelines for encryption:  
   
-- Use the <xref:System.Security.Cryptography.RijndaelManaged> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.  
+- Use the <xref:System.Security.Cryptography.Aes> class, a symmetric algorithm, to encrypt and decrypt data by using its automatically generated <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> and <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>.  
   
-- Use the <xref:System.Security.Cryptography.RSACryptoServiceProvider>, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.RijndaelManaged>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
+- Use the <xref:System.Security.Cryptography.RSA> asymmetric algorithm to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.Aes>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
   
     > [!NOTE]
     > If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
@@ -39,12 +40,14 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 |Testing the application|Lists procedures for testing this application.|  
   
 ## Prerequisites  
- You need the following components to complete this walkthrough:  
+
+You need the following components to complete this walkthrough:  
   
 - References to the <xref:System.IO> and <xref:System.Security.Cryptography> namespaces.  
   
 ## Creating a Windows Forms Application  
- Most of the code examples in this walkthrough are designed to be event handlers for button controls. The following table lists the controls required for the sample application and their required names to match the code examples.  
+
+Most of the code examples in this walkthrough are designed to be event handlers for button controls. The following table lists the controls required for the sample application and their required names to match the code examples.  
   
 |Control|Name|Text property (as needed)|  
 |-------------|----------|---------------------------------|  
@@ -58,16 +61,18 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog1`||  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog2`||  
   
- Double-click the buttons in the  Visual Studio designer to create their event handlers.  
+ Double-click the buttons in the Visual Studio designer to create their event handlers.
   
 ## Declaring Global Objects  
- Add the following code to the Form's constructor. Edit the string variables for your environment and preferences.  
+
+Add the following code to the Form's constructor. Edit the string variables for your environment and preferences.  
   
- [!code-csharp[CryptoWalkThru#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#1)]
- [!code-vb[CryptoWalkThru#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#1)]  
+[!code-csharp[CryptoWalkThru#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#1)]
+[!code-vb[CryptoWalkThru#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#1)]  
   
 ## Creating an Asymmetric Key  
- This task creates an asymmetric key that encrypts and decrypts the <xref:System.Security.Cryptography.RijndaelManaged> key. This key was used to encrypt the content and it displays the key container name on the label control.  
+
+This task creates an asymmetric key that encrypts and decrypts the <xref:System.Security.Cryptography.Aes> key. This key was used to encrypt the content and it displays the key container name on the label control.  
   
  Add the following code as the `Click` event handler for the `Create Keys` button (`buttonCreateAsmKeys_Click`).  
   
@@ -75,15 +80,16 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
  [!code-vb[CryptoWalkThru#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#2)]  
   
 ## Encrypting a File  
- This task involves two methods: the event handler method for the `Encrypt File` button (`buttonEncryptFile_Click`) and the `EncryptFile` method. The first method displays a dialog box for selecting a file and passes the file name to the second method, which performs the encryption.  
+
+This task involves two methods: the event handler method for the `Encrypt File` button (`buttonEncryptFile_Click`) and the `EncryptFile` method. The first method displays a dialog box for selecting a file and passes the file name to the second method, which performs the encryption.  
   
- The encrypted content, key, and IV are all saved to one <xref:System.IO.FileStream>, which is referred to as the encryption package.  
+The encrypted content, key, and IV are all saved to one <xref:System.IO.FileStream>, which is referred to as the encryption package.  
   
- The `EncryptFile` method does the following:  
+The `EncryptFile` method does the following:  
   
-1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to encrypt the content.  
+1. Creates a <xref:System.Security.Cryptography.Aes> symmetric algorithm to encrypt the content.  
   
-2. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+2. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to encrypt the <xref:System.Security.Cryptography.Aes> key.  
   
 3. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and encrypt the <xref:System.IO.FileStream> of the source file, in blocks of bytes, into a destination <xref:System.IO.FileStream> object for the encrypted file.  
   
@@ -116,17 +122,18 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
  [!code-vb[CryptoWalkThru#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#5)]  
   
 ## Decrypting a File  
- This task involves two methods, the event handler method for the `Decrypt File` button (`buttonDecryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
+
+This task involves two methods, the event handler method for the `Decrypt File` button (`buttonDecryptFile_Click`), and the `DecryptFile` method. The first method displays a dialog box for selecting a file and passes its file name to the second method, which performs the decryption.  
   
- The `Decrypt` method does the following:  
+The `Decrypt` method does the following:  
   
-1. Creates a <xref:System.Security.Cryptography.RijndaelManaged> symmetric algorithm to decrypt the content.  
+1. Creates an <xref:System.Security.Cryptography.Aes> symmetric algorithm to decrypt the content.  
   
 2. Reads the first eight bytes of the <xref:System.IO.FileStream> of the encrypted package into byte arrays to obtain the lengths of the encrypted key and the IV.  
   
 3. Extracts the key and IV from the encryption package into byte arrays.  
   
-4. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.RijndaelManaged> key.  
+4. Creates an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object to decrypt the <xref:System.Security.Cryptography.Aes> key.  
   
 5. Uses a <xref:System.Security.Cryptography.CryptoStream> object to read and decrypt the cipher text section of the <xref:System.IO.FileStream> encryption package, in blocks of bytes, into the <xref:System.IO.FileStream> object for the decrypted file. When this is finished, the decryption is completed.  
   
@@ -140,38 +147,42 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
  [!code-csharp[CryptoWalkThru#6](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#6)]
  [!code-vb[CryptoWalkThru#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#6)]  
   
-## Exporting a Public Key  
- This task saves the key created by the `Create Keys` button to a file. It exports only the public parameters.  
+## Exporting a Public Key
+
+This task saves the key created by the `Create Keys` button to a file. It exports only the public parameters.  
   
- This task simulates the scenario of Alice giving Bob her public key so that he can encrypt files for her. He and others who have that public key will not be able to decrypt them because they do not have the full key pair with private parameters.  
+This task simulates the scenario of Alice giving Bob her public key so that he can encrypt files for her. He and others who have that public key will not be able to decrypt them because they do not have the full key pair with private parameters.  
   
- Add the following code as the `Click` event handler for the `Export Public Key` button (`buttonExportPublicKey_Click`).  
+Add the following code as the `Click` event handler for the `Export Public Key` button (`buttonExportPublicKey_Click`).  
   
- [!code-csharp[CryptoWalkThru#8](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#8)]
- [!code-vb[CryptoWalkThru#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#8)]  
+[!code-csharp[CryptoWalkThru#8](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#8)]
+[!code-vb[CryptoWalkThru#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#8)]  
   
-## Importing a Public Key  
- This task loads the key with only public parameters, as created by the `Export Public Key` button, and sets it as the key container name.  
+## Importing a Public Key
+
+This task loads the key with only public parameters, as created by the `Export Public Key` button, and sets it as the key container name.  
   
- This task simulates the scenario of Bob loading Alice's key with only public parameters so he can encrypt files for her.  
+This task simulates the scenario of Bob loading Alice's key with only public parameters so he can encrypt files for her.  
   
- Add the following code as the `Click` event handler for the `Import Public Key` button (`buttonImportPublicKey_Click`).  
+Add the following code as the `Click` event handler for the `Import Public Key` button (`buttonImportPublicKey_Click`).  
   
- [!code-csharp[CryptoWalkThru#9](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#9)]
- [!code-vb[CryptoWalkThru#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#9)]  
+[!code-csharp[CryptoWalkThru#9](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#9)]
+[!code-vb[CryptoWalkThru#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#9)]  
   
 ## Getting a Private Key  
- This task sets the key container name to the name of the key created by using the `Create Keys` button. The key container will contain the full key pair with private parameters.  
+
+This task sets the key container name to the name of the key created by using the `Create Keys` button. The key container will contain the full key pair with private parameters.  
   
- This task simulates the scenario of Alice using her private key to decrypt files encrypted by Bob.  
+This task simulates the scenario of Alice using her private key to decrypt files encrypted by Bob.  
   
- Add the following code as the `Click` event handler for the `Get Private Key` button (`buttonGetPrivateKey_Click`).  
+Add the following code as the `Click` event handler for the `Get Private Key` button (`buttonGetPrivateKey_Click`).  
   
- [!code-csharp[CryptoWalkThru#7](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#7)]
- [!code-vb[CryptoWalkThru#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#7)]  
+[!code-csharp[CryptoWalkThru#7](../../../samples/snippets/csharp/VS_Snippets_CLR/CryptoWalkThru/cs/Form1.cs#7)]
+[!code-vb[CryptoWalkThru#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CryptoWalkThru/vb/Form1.vb#7)]  
   
-## Testing the Application  
- After you have built the application, perform the following testing scenarios.  
+## Testing the Application
+
+After you have built the application, perform the following testing scenarios.  
   
 #### To create keys, encrypt, and decrypt  
   
@@ -205,4 +216,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
   
 ## See also
 
+- [Cryptography Model](cryptography-model.md) - Describes how cryptography is implemented in the base class library.
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - [Cryptographic Services](cryptographic-services.md)

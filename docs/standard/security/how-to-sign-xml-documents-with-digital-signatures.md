@@ -1,7 +1,7 @@
 ---
 title: "How to: Sign XML Documents with Digital Signatures"
 description: Learn how to sign XML documents with digital signatures. Use classes in the System.Security.Cryptography.Xml namespace in .NET.
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -10,18 +10,19 @@ helpviewer_keywords:
   - "signatures, XML signing"
   - "System.Security.Cryptography.SignedXml class"
   - "digital signatures, XML signing"
-  - "System.Security.Cryptography.RSACryptoServiceProvider class"
+  - "System.Security.Cryptography.RSA class"
   - "XML digital signatures"
   - "XML signing"
   - "signing XML"
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
 ---
 # How to: Sign XML Documents with Digital Signatures
+
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to sign an XML document or part of an XML document with a digital signature.  XML digital signatures (XMLDSIG) allow you to verify that data was not altered after it was signed.  For more information about the XMLDSIG standard, see the World Wide Web Consortium (W3C) recommendation [XML Signature Syntax and Processing](https://www.w3.org/TR/xmldsig-core/).  
   
- The code example in this procedure demonstrates how to digitally sign an entire XML document and attach the signature to the document in a <`Signature`> element.  The example creates an RSA signing key, adds the key to a secure key container, and then uses the key to digitally sign an XML document.  The key can then be retrieved to verify the XML digital signature, or can be used to sign another XML document.  
+The code example in this procedure demonstrates how to digitally sign an entire XML document and attach the signature to the document in a <`Signature`> element.  The example creates an RSA signing key, adds the key to a secure key container, and then uses the key to digitally sign an XML document.  The key can then be retrieved to verify the XML digital signature, or can be used to sign another XML document.  
   
- For information about how to verify an XML digital signature that was created using this procedure, see [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md).  
+For information about how to verify an XML digital signature that was created using this procedure, see [How to: Verify the Digital Signatures of XML Documents](how-to-verify-the-digital-signatures-of-xml-documents.md).  
   
 ### To digitally sign an XML document  
   

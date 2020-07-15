@@ -109,17 +109,14 @@ Public Class Form1
     '<Snippet5>
     Private Sub EncryptFile(ByVal inFile As String)
 
-        ' Create instance of Rijndael for
-        ' symetric encryption of the data.
-        Dim rjndl As RijndaelManaged = New RijndaelManaged
-        rjndl.KeySize = 256
-        rjndl.BlockSize = 256
-        rjndl.Mode = CipherMode.CBC
-        Dim transform As ICryptoTransform = rjndl.CreateEncryptor
+        ' Create instance of Aes for
+        ' symmetric encryption of the data.
+        Dim aes As Aes = Aes.Create()
+        Dim transform As ICryptoTransform = aes.CreateEncryptor
 
         ' Use RSACryptoServiceProvider to 
-        ' enrypt the Rijndael key.
-        Dim keyEncrypted() As Byte = rsa.Encrypt(rjndl.Key, False)
+        ' encrypt the AES key.
+        Dim keyEncrypted() As Byte = rsa.Encrypt(aes.Key, False)
 
         ' Create byte arrays to contain
         ' the length values of the key and IV.
@@ -127,7 +124,7 @@ Public Class Form1
         Dim LenIV() As Byte = New Byte((4) - 1) {}
         Dim lKey As Integer = keyEncrypted.Length
         LenK = BitConverter.GetBytes(lKey)
-        Dim lIV As Integer = rjndl.IV.Length
+        Dim lIV As Integer = aes.IV.Length
         LenIV = BitConverter.GetBytes(lIV)
 
         ' Write the following to the FileStream
@@ -147,7 +144,7 @@ Public Class Form1
             outFs.Write(LenK, 0, 4)
             outFs.Write(LenIV, 0, 4)
             outFs.Write(keyEncrypted, 0, lKey)
-            outFs.Write(rjndl.IV, 0, lIV)
+            outFs.Write(aes.IV, 0, lIV)
 
             ' Now write the cipher text using
             ' a CryptoStream for encrypting.
@@ -159,7 +156,7 @@ Public Class Form1
                 Dim offset As Integer = 0
 
                 ' blockSizeBytes can be any arbitrary size.
-                Dim blockSizeBytes As Integer = (rjndl.BlockSize / 8)
+                Dim blockSizeBytes As Integer = (aes.BlockSize / 8)
                 Dim data() As Byte = New Byte((blockSizeBytes) - 1) {}
                 Dim bytesRead As Integer = 0
                 Using inFs As FileStream = New FileStream(inFile, FileMode.Open)
@@ -184,12 +181,9 @@ Public Class Form1
 #Region "Snippet6 - DecryptFile"
     '<Snippet6>
     Private Sub DecryptFile(ByVal inFile As String)
-        ' Create instance of Rijndael for
-        ' symetric decryption of the data.
-        Dim rjndl As RijndaelManaged = New RijndaelManaged
-        rjndl.KeySize = 256
-        rjndl.BlockSize = 256
-        rjndl.Mode = CipherMode.CBC
+        ' Create instance of Aes for
+        ' symmetric decryption of the data.
+        Dim aes As Aes = Aes.Create()
 
         ' Create byte arrays to get the length of
         ' the encrypted key and IV.
@@ -228,11 +222,11 @@ Public Class Form1
             Directory.CreateDirectory(DecrFolder)
             '<Snippet10>
             ' User RSACryptoServiceProvider
-            ' to decryt the Rijndael key
+            ' to decrypt the AES key
             Dim KeyDecrypted() As Byte = rsa.Decrypt(KeyEncrypted, False)
 
             ' Decrypt the key.
-            Dim transform As ICryptoTransform = rjndl.CreateDecryptor(KeyDecrypted, IV)
+            Dim transform As ICryptoTransform = aes.CreateDecryptor(KeyDecrypted, IV)
             '</Snippet10>
             ' Decrypt the cipher text from
             ' from the FileSteam of the encrypted
@@ -243,7 +237,7 @@ Public Class Form1
                 Dim offset As Integer = 0
 
                 ' blockSizeBytes can be any arbitrary size.
-                Dim blockSizeBytes As Integer = (rjndl.BlockSize / 8)
+                Dim blockSizeBytes As Integer = (aes.BlockSize / 8)
                 Dim data() As Byte = New Byte(blockSizeBytes - 1) {}
                 ' By decrypting a chunk a time,
                 ' you can save memory and

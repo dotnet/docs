@@ -1,25 +1,26 @@
 ---
 title: "How to: Use Data Protection"
 description: Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "DPAPI"
-  - "encryption [.NET Framework], data protection API"
-  - "data [.NET Framework], decryption"
+  - "encryption [.NET], data protection API"
+  - "data [.NET], decryption"
   - "ProtectedMemory class, about ProtectedMemory class"
   - "ProtectedData class, about ProtectedData class"
-  - "cryptography [.NET Framework], data protection API"
-  - "data protection API [.NET Framework]"
+  - "cryptography [.NET], data protection API"
+  - "data protection API [.NET]"
   - "decryption"
-  - "data [.NET Framework], encryption"
+  - "data [.NET], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 ---
 # How to: Use Data Protection
-The .NET Framework provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
+
+.NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
   
  Use the <xref:System.Security.Cryptography.ProtectedMemory> class to encrypt an array of in-memory bytes.  This functionality is available in Microsoft Windows XP and later operating systems.  You can specify that memory encrypted by the current process can be decrypted by the current process only, by all processes, or from the same user context.  See the <xref:System.Security.Cryptography.MemoryProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedMemory> options.  
   
@@ -47,11 +48,12 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
   
 2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method while passing an array of bytes to decrypt and the data protection scope.  
   
-## Example  
- The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.  
+## Example
+
+The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.  
   
- [!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
- [!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]  
+[!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
+[!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]  
   
 ## Compiling the Code  
   
@@ -61,5 +63,8 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
   
 ## See also
 
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.ProtectedMemory>
 - <xref:System.Security.Cryptography.ProtectedData>

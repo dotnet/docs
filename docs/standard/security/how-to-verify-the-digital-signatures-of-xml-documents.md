@@ -1,6 +1,6 @@
 ---
 title: "How to: Verify the Digital Signatures of XML Documents"
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "System.Security.Cryptography.SignedXml class"
   - "signatures, cryptographic"
-  - "System.Security.Cryptography.RSACryptoServiceProvider class"
+  - "System.Security.Cryptography.RSA class"
   - "verifying signatures"
   - "checking signatures"
   - "XML digital signatures"
@@ -16,11 +16,12 @@ helpviewer_keywords:
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
 ---
 # How to: Verify the Digital Signatures of XML Documents
+
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to verify XML data signed with a digital signature. XML digital signatures (XMLDSIG) allow you to verify that data was not altered after it was signed. For more information about the XMLDSIG standard, see the World Wide Web Consortium (W3C) specification at <https://www.w3.org/TR/xmldsig-core/>.
   
- The code example in this procedure demonstrates how to verify an XML digital signature contained in a <`Signature`> element.  The example retrieves an RSA public key from a key container and then uses the key to verify the signature.  
+The code example in this procedure demonstrates how to verify an XML digital signature contained in a <`Signature`> element.  The example retrieves an RSA public key from a key container and then uses the key to verify the signature.  
   
- For information about how create a digital signature that can be verified using this technique, see [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
+For information about how create a digital signature that can be verified using this technique, see [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
   
 ### To verify the digital signature of an XML document  
   
@@ -78,5 +79,8 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## See also
 
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md)

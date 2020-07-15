@@ -1,5 +1,6 @@
 ---
 title: XAML Namespaces and Namespace Mapping
+description: Learn more about the presence and purpose of the two XAML namespace mappings as often found in the root tag of a Windows Presentation Foundation XAML file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

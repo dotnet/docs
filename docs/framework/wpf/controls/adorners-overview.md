@@ -1,5 +1,6 @@
 ---
 title: "Adorners Overview"
+description: Learn about Windows Presentation Foundation Adorners, a special type of FrameworkElement that provide cues to a user, such as functional handles for elements.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

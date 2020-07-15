@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Enabling Drag and Drop on a User Control"
+description: Learn how to create a custom user control that can participate in drag-and-drop data transfer in Windows Presentation Foundation.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

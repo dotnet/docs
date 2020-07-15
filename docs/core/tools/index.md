@@ -10,7 +10,7 @@ ms.date: 02/13/2020
 
 The .NET Core command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET Core applications.
 
-The .NET Core CLI is included with the [.NET Core SDK](../sdk.md). To learn how to install the .NET Core SDK, see [Install the .NET Core SDK](../install/windows.md).
+The .NET Core CLI is included with the [.NET Core SDK](../sdk.md). To learn how to install the .NET Core SDK, see [Install .NET Core](../install/windows.md).
 
 ## CLI commands
 

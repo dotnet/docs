@@ -76,7 +76,7 @@ By default, the installation scripts download the SDK and install it. If you wis
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument. The script doesn't set the `DOTNET_ROOT` environment variable.
 
-Before running the script, install the required [dependencies](../install/windows.md).
+Before running the script, install the required [dependencies](../install/windows.md#dependencies).
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version number, such as `2.1.0`. If the version isn't specified, the script installs the `latest` version.
 

@@ -72,7 +72,7 @@ For more information on how to troubleshoot ASP.NET Core certificate issues, see
 
 ## Default entitlements
 
-.NET Core’s default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET Core. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-is-disabled-by-default) and then add the necessary entitlements locally.
+.NET Core's default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET Core. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-is-disabled-by-default) and then add the necessary entitlements locally.
 
 Default set of entitlements for .NET Core:
 
@@ -88,5 +88,4 @@ If you want your application to run on macOS Catalina (version 10.15) or higher,
 ## Next steps
 
 - [.NET Core dependencies and requirements](dependencies.md).
-- [Install the .NET Core SDK](sdk.md).
-- [Install the .NET Core Runtime](windows.md)
+- [Install the .NET Core Runtime and SDK](macos.md).

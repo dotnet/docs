@@ -55,12 +55,13 @@ An interface has the following properties:
 - [How to implement interface events](../events/how-to-implement-interface-events.md)
 - [Classes and Structs](../classes-and-structs/index.md)  
 - [Inheritance](../classes-and-structs/inheritance.md)  
+- [Interfaces](../../language-reference/keywords/interface)
 - [Methods](../classes-and-structs/methods.md)  
 - [Polymorphism](../classes-and-structs/polymorphism.md)  
 - [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
 - [Properties](../classes-and-structs/properties.md)  
 - [Events](../events/index.md)  
-- [Indexers](../indexers/index.md)  
+- [Indexers](../indexers/index.md)
   
 ## See also
 

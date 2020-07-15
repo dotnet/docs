@@ -76,7 +76,7 @@ The following example declares a class that stores the days of the week using th
 
 :::code language="csharp" source="snippets/DayOfWeekIndexers/TempRecord.cs":::
 
-### Consuming example 2
+### Consuming example 3
 
 :::code language="csharp" source="snippets/DayOfWeekIndexers/Program.cs":::
 

@@ -57,4 +57,4 @@ New code:
 public double CalculateSquare(in double value) => value * value;
 ```
 
-The [What's new](csharp-8.md) articles note if introducing a feature that affects public declarations is source compatible or binary compatible.
+The [What's new](index.md) articles note if introducing a feature that affects public declarations is source compatible or binary compatible.

@@ -64,7 +64,7 @@ C# doesn't limit the indexer parameter type to integer. For example, it may be u
 
 The following example declares a class that stores the days of the week. A `get` accessor takes a string, the name of a day, and returns the corresponding integer. For example, "Sunday" returns 0, "Monday" returns 1, and so on.
 
-:::code language="csharp" source="snippets/Temperatures/DayCollection.cs":::
+:::code language="csharp" source="snippets/StringIndexers/DayCollection.cs":::
 
 ### Consuming example 2
 
@@ -74,7 +74,7 @@ The following example declares a class that stores the days of the week. A `get`
 
 The following example declares a class that stores the days of the week using the <xref:System.DayOfWeek?displayProperty=fullName> enum. A `get` accessor takes a `DayOfWeek`, the value of a day, and returns the corresponding integer. For example, `DayOfWeek.Sunday` returns 0, `DayOfWeek.Monday` returns 1, and so on.
 
-:::code language="csharp" source="snippets/DayOfWeekIndexers/TempRecord.cs":::
+:::code language="csharp" source="snippets/DayOfWeekIndexers/DayOfWeekCollection.cs":::
 
 ### Consuming example 3
 

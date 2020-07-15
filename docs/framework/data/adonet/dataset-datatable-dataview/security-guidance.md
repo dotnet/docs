@@ -189,7 +189,8 @@ Once audit mode is enabled, you can use _App.config_ to connect your preferred `
 
 For more information on `TraceSource` and `TraceListener`, see the document [How to: Use TraceSource and Filters with Trace Listeners](/dotnet/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners).
 
-**Note**: Running an app in audit mode is not available in .NET Core or in .NET 5.0 and later.
+> [!NOTE]
+> Running an app in audit mode is not available in .NET Core or in .NET 5.0 and later.
 
 <a name="ratr"></a>
 
@@ -201,7 +202,7 @@ If an app must remove all type limiting restrictions from `DataSet` and `DataTab
 * The options available depend on the framework the app targets.
 
 > [!WARNING]
-> Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
+> Removing all type restrictions can introduce a security hole inside the app. When using this mechanism, ensure the app does **not** use `DataSet` or `DataTable` to read untrusted input. For more information, see [CVE-2020-1147](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1147) and the following section titled [Safety with regard to untrusted input](#swr).
 
 #### Through AppContext configuration (.NET Framework 4.6 - 4.8, .NET Core 2.1 and later, .NET 5.0 and later)
 
@@ -457,7 +458,8 @@ public class MyClass
 
 Deserializing a `DataSet` or `DataTable` in this manner from an untrusted JSON blob is not safe. This pattern is vulnerable to a denial of service attack. Such an attack could crash the app or render it unresponsive.
 
-**Note**: Microsoft does not warrant or support the implementation of third-party libraries like _Newtonsoft.Json_. This information is provided for completeness and is accurate as of the time of this writing.
+> [!NOTE]
+> Microsoft does not warrant or support the implementation of third-party libraries like _Newtonsoft.Json_. This information is provided for completeness and is accurate as of the time of this writing.
 
 ## Deserialize a DataSet or DataTable via BinaryFormatter
 

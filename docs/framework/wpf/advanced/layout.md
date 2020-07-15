@@ -1,5 +1,6 @@
 ---
 title: "Layout"
+description: Understand how and when layout calculations occur in the Windows Presentation Foundation layout system.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

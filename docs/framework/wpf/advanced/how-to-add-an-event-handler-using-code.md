@@ -1,5 +1,6 @@
 ---
 title: "How to: Add an Event Handler Using Code"
+description: Use this example to learn how to add an event handler to an element in Windows Presentation Foundation by using code, instead of declaring it by using XAML.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

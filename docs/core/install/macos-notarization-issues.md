@@ -89,4 +89,4 @@ If you want your application to run on macOS Catalina (version 10.15) or higher,
 
 - [.NET Core dependencies and requirements](dependencies.md).
 - [Install the .NET Core SDK](sdk.md).
-- [Install the .NET Core Runtime](runtime.md)
+- [Install the .NET Core Runtime](windows.md)

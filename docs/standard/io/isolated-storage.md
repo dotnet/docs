@@ -110,7 +110,7 @@ __This section applies to the following frameworks:__
 - .NET Core 2.1+
 - .NET 5.0+
 
-The .NET Framework and .NET Core offer [isolated storage](/dotnet/standard/io/isolated-storage) as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
+The .NET Framework and .NET Core offer [isolated storage](isolated-storage.md) as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
 
 Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications which read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
 
@@ -125,7 +125,7 @@ Components or applications that call any of the following APIs read from the mac
 * [IsolatedStorageFile.GetStore](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
 * [IsolatedStorageFile.Remove](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
 
-The [isolated storage tool](/dotnet/framework/tools/storeadm-exe-isolated-storage-tool) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
+The [isolated storage tool](../../framework/tools/storeadm-exe-isolated-storage-tool.md) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
 
 ```txt
 storeadm.exe /machine [any-other-switches]

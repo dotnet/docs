@@ -64,17 +64,25 @@ C# doesn't limit the indexer parameter type to integer. For example, it may be u
 
 The following example declares a class that stores the days of the week. A `get` accessor takes a string, the name of a day, and returns the corresponding integer. For example, "Sunday" returns 0, "Monday" returns 1, and so on.
 
- [!code-csharp[csProgGuideIndexers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#2)]
+:::code language="csharp" source="snippets/Temperatures/DayCollection.cs":::
+
+### Consuming example 2
+
+:::code language="csharp" source="snippets/StringIndexers/Program.cs":::
 
 ## Example 3
 
 The following example declares a class that stores the days of the week using the <xref:System.DayOfWeek?displayProperty=fullName> enum. A `get` accessor takes a `DayOfWeek`, the value of a day, and returns the corresponding integer. For example, `DayOfWeek.Sunday` returns 0, `DayOfWeek.Monday` returns 1, and so on.
 
- [!code-csharp[csProgGuideIndexers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#3)]
+:::code language="csharp" source="snippets/DayOfWeekIndexers/TempRecord.cs":::
+
+### Consuming example 2
+
+:::code language="csharp" source="snippets/DayOfWeekIndexers/Program.cs":::
 
 ## Robust programming
 
- There are two main ways in which the security and reliability of indexers can be improved:
+There are two main ways in which the security and reliability of indexers can be improved:
 
 - Be sure to incorporate some type of error-handling strategy to handle the chance of client code passing in an invalid index value. In the first example earlier in this topic, the TempRecord class provides a Length property that enables the client code to verify the input before passing it to the indexer. You can also put the error handling code inside the indexer itself. Be sure to document for users any exceptions that you throw inside an indexer accessor.
 

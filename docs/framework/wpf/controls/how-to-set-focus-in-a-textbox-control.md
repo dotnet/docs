@@ -1,5 +1,6 @@
 ---
 title: "How to: Set Focus in a TextBox Control"
+description: Learn how to use the Focus method to set focus on a Windows Presentation Foundation TextBox control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

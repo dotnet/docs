@@ -78,7 +78,7 @@ class DayCollection
         }
         throw new System.ArgumentOutOfRangeException(
             nameof(day),
-            $"Day {day} is not supported. Day input must be in the form \"Sun\", \"Mon\", etc");
+            $"Day {day} is not supported.\nDay input must be in the form \"Sun\", \"Mon\", etc");
     }
 }
 
@@ -100,9 +100,62 @@ class Program
     }
     // Output:
     // 5
-    // Not supported input: Day Made-up day is not supported. Day input must be in the form "Sun", "Mon", etc (Parameter 'day')
+    // Not supported input: Day Made-up day is not supported.
+    // Day input must be in the form "Sun", "Mon", etc (Parameter 'day')
 }
 //</Snippet2>
+
+//<Snippet3>
+using Day = System.DayOfWeek;
+
+class DayCollection
+{
+    Day[] days =
+    {
+        Day.Sunday, Day.Monday, Day.Tuesday, Day.Wednesday,
+        Day.Thursday, Day.Friday, Day.Saturday
+    };
+
+    // Indexer with only a get accessor with the expression-bodied definition:
+    public int this[Day day] => FindDayIndex(day);
+
+    private int FindDayIndex(Day day)
+    {
+        for (int j = 0; j < days.Length; j++)
+        {
+            if (days[j] == day)
+            {
+                return j;
+            }
+        }
+        throw new System.ArgumentOutOfRangeException(
+            nameof(day),
+            $"Day {day} is not supported.\nDay input must be a defined System.DayOfWeek value.");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        var week = new DayCollection();
+        System.Console.WriteLine(week[Day.Friday]);
+
+        try
+        {
+            System.Console.WriteLine(week[(Day)43]);
+        }
+        catch (System.ArgumentOutOfRangeException e)
+        {
+            System.Console.WriteLine($"Not supported input: {e.Message}");
+        }
+    }
+    // Output:
+    // 5
+    // Not supported input: Day 43 is not supported.
+    // Day input must be a defined System.DayOfWeek value. (Parameter 'day')
+}
+//</Snippet3>
 
 namespace Wrap2
 {

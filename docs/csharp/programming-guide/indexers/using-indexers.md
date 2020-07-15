@@ -64,6 +64,12 @@ The following example declares a class that stores the days of the week. A `get`
 
  [!code-csharp[csProgGuideIndexers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#2)]
 
+## Example 3
+
+The following example declares a class that stores the days of the week using the <xref:System.DayOfWeek?displayProperty=fullName> enum. A `get` accessor takes a `DayOfWeek`, the value of a day, and returns the corresponding integer. For example, `DayOfWeek.Sunday` returns 0, `DayOfWeek.Monday` returns 1, and so on.
+
+ [!code-csharp[csProgGuideIndexers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideIndexers/CS/Indexers.cs#3)]
+
 ## Robust programming
 
  There are two main ways in which the security and reliability of indexers can be improved:

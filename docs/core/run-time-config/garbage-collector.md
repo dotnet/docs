@@ -292,7 +292,7 @@ Example:
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
 
-### Per-heap limits
+### Per-object-heap limits
 
 You can specify GC's allowable heap usage on a per-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
 

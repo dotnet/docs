@@ -210,59 +210,23 @@ End Class
 
 Namespace ControlContract
     '<SnippetControlContract>
-    <TemplatePart(Name:="UpButtonElement", Type:=GetType(RepeatButton))> _
-    <TemplatePart(Name:="DownButtonElement", Type:=GetType(RepeatButton))> _
-    <TemplateVisualState(Name:="Positive", GroupName:="ValueStates")> _
-    <TemplateVisualState(Name:="Negative", GroupName:="ValueStates")> _
-    <TemplateVisualState(Name:="Focused", GroupName:="FocusedStates")> _
-    <TemplateVisualState(Name:="Unfocused", GroupName:="FocusedStates")> _
+    <TemplatePart(Name:="UpButtonElement", Type:=GetType(RepeatButton))>
+    <TemplatePart(Name:="DownButtonElement", Type:=GetType(RepeatButton))>
+    <TemplateVisualState(Name:="Positive", GroupName:="ValueStates")>
+    <TemplateVisualState(Name:="Negative", GroupName:="ValueStates")>
+    <TemplateVisualState(Name:="Focused", GroupName:="FocusedStates")>
+    <TemplateVisualState(Name:="Unfocused", GroupName:="FocusedStates")>
     Public Class NumericUpDown
         Inherits Control
-        Public Shared ReadOnly BackgroundProperty As DependencyProperty
-        Public Shared ReadOnly BorderBrushProperty As DependencyProperty
-        Public Shared ReadOnly BorderThicknessProperty As DependencyProperty
-        Public Shared ReadOnly FontFamilyProperty As DependencyProperty
-        Public Shared ReadOnly FontSizeProperty As DependencyProperty
-        Public Shared ReadOnly FontStretchProperty As DependencyProperty
-        Public Shared ReadOnly FontStyleProperty As DependencyProperty
-        Public Shared ReadOnly FontWeightProperty As DependencyProperty
-        Public Shared ReadOnly ForegroundProperty As DependencyProperty
-        Public Shared ReadOnly HorizontalContentAlignmentProperty As DependencyProperty
-        Public Shared ReadOnly PaddingProperty As DependencyProperty
         Public Shared ReadOnly TextAlignmentProperty As DependencyProperty
         Public Shared ReadOnly TextDecorationsProperty As DependencyProperty
         Public Shared ReadOnly TextWrappingProperty As DependencyProperty
-        Public Shared ReadOnly VerticalContentAlignmentProperty As DependencyProperty
-
-        Public Property Background() As Brush
-
-        Public Property BorderBrush() As Brush
-
-        Public Property BorderThickness() As Thickness
-
-        Public Property FontFamily() As FontFamily
-
-        Public Property FontSize() As Double
-
-        Public Property FontStretch() As FontStretch
-
-        Public Property FontStyle() As FontStyle
-
-        Public Property FontWeight() As FontWeight
-
-        Public Property Foreground() As Brush
-
-        Public Property HorizontalContentAlignment() As HorizontalAlignment
-
-        Public Property Padding() As Thickness
 
         Public Property TextAlignment() As TextAlignment
 
         Public Property TextDecorations() As TextDecorationCollection
 
         Public Property TextWrapping() As TextWrapping
-
-        Public Property VerticalContentAlignment() As VerticalAlignment
     End Class
     '</SnippetControlContract>
 End Namespace

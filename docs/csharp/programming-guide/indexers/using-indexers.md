@@ -8,19 +8,20 @@ ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f
 
 # Using indexers (C# Programming Guide)
 
-Indexers are a syntactic convenience that enable you to create a [class](../../language-reference/keywords/class.md), [struct](../../language-reference/builtin-types/struct.md), or [interface](../../language-reference/keywords/interface.md) that client applications can access as an array. The compiler will generate an `Item` property (or an alternatively named property if `IndexerNameAttribute` is present), and the appropriate accessor methods. Indexers are most frequently implemented in types whose primary purpose is to encapsulate an internal collection or array. For example, suppose you have a class `TempRecord` that represents the temperature in Fahrenheit as recorded at 10 different times during a 24-hour period. The class contains a `temps` array of type `float[]` to store the temperature values. By implementing an indexer in this class, clients can access the temperatures in a `TempRecord` instance as `float temp = tempRecord[4]` instead of as `float temp = tempRecord.temps[4]`. The indexer notation not only simplifies the syntax for client applications; it also makes the class, and its purpose more intuitive for other developers to understand.
+Indexers are a syntactic convenience that enable you to create a [class](../../language-reference/keywords/class.md), [struct](../../language-reference/builtin-types/struct.md), or [interface](../../language-reference/keywords/interface.md) that client applications can access as an array. The compiler will generate an `Item` property (or an alternatively named property if <xref:System.Runtime.CompilerServices.IndexerNameAttribute> is present), and the appropriate accessor methods. Indexers are most frequently implemented in types whose primary purpose is to encapsulate an internal collection or array. For example, suppose you have a class `TempRecord` that represents the temperature in Fahrenheit as recorded at 10 different times during a 24-hour period. The class contains a `temps` array of type `float[]` to store the temperature values. By implementing an indexer in this class, clients can access the temperatures in a `TempRecord` instance as `float temp = tempRecord[4]` instead of as `float temp = tempRecord.temps[4]`. The indexer notation not only simplifies the syntax for client applications; it also makes the class, and its purpose more intuitive for other developers to understand.
 
 To declare an indexer on a class or struct, use the [this](../../language-reference/keywords/this.md) keyword, as the following example shows:
 
 ```csharp
-public int this[int index]    // Indexer declaration
+// Indexer declaration
+public int this[int index]
 {
     // get and set accessors
 }
 ```
 
 > [!IMPORTANT]
-> Declaring an indexer will automatically generate a property named `Item` on the object. The `Item` property is not directly accessible from the instance [member access expression](../../language-reference/operators/member-access-operators.md#member-access-expression-). Additionally, if you add your own `Item` property to an object with an indexer, you'll get a [CS0102 compiler error](../../misc/cs0102.md). To avoid this error, use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=nameWithType> rename the indexer as detailed below.
+> Declaring an indexer will automatically generate a property named `Item` on the object. The `Item` property is not directly accessible from the instance [member access expression](../../language-reference/operators/member-access-operators.md#member-access-expression-). Additionally, if you add your own `Item` property to an object with an indexer, you'll get a [CS0102 compiler error](../../misc/cs0102.md). To avoid this error, use the <xref:System.Runtime.CompilerServices.IndexerNameAttribute> rename the indexer as detailed below.
 
 ## Remarks
 
@@ -35,8 +36,9 @@ An indexer value is not classified as a variable; therefore, you cannot pass an 
 To provide the indexer with a name that other languages can use, use <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=nameWithType>, as the following example shows:
 
 ```csharp
+// Indexer declaration
 [System.Runtime.CompilerServices.IndexerName("TheItem")]
-public int this[int index]   // Indexer declaration
+public int this[int index]
 {
     // get and set accessors
 }

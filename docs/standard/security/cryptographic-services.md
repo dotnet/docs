@@ -112,13 +112,13 @@ The following list offers comparisons between public-key and secret-key cryptogr
 
 - <xref:System.Security.Cryptography.RSA>
 
-- <xref:System.Security.Cryptography.DSA>
-
 - <xref:System.Security.Cryptography.ECDsa>
 
 - <xref:System.Security.Cryptography.ECDiffieHellman>
 
-RSA allows both encryption and signing, but DSA can be used only for signing. For signing, DSA is not as secure as RSA and we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
+- <xref:System.Security.Cryptography.DSA>
+
+RSA allows both encryption and signing, but DSA can be used only for signing. DSA is not as secure as RSA, and we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
 
 ## Digital Signatures
 
@@ -133,9 +133,9 @@ To use public-key cryptography to digitally sign a message, Alice first applies 
 
 - <xref:System.Security.Cryptography.RSA>
 
-- <xref:System.Security.Cryptography.DSA>
-
 - <xref:System.Security.Cryptography.ECDsa>
+
+- <xref:System.Security.Cryptography.DSA>
 
 ## Hash Values
 
@@ -169,8 +169,7 @@ None of the previous methods will prevent someone from reading Alice's messages,
 
 - <xref:System.Security.Cryptography.SHA512>.
 
-> [!NOTE]
-> .NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 includes SHA256, SHA384, and SHA512.
+.NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 includes SHA256, SHA384, and SHA512.
 
 ## Random Number Generation
 

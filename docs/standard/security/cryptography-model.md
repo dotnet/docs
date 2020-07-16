@@ -3,6 +3,9 @@ title: ".NET Cryptography Model"
 description: Review implementations of usual cryptographic algorithms in .NET. Learn the extensible cryptography model of object inheritance, stream design, & configuration.
 ms.date: 07/14/2020
 ms.technology: dotnet-standard
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "cryptography [.NET], model"
   - "encryption [.NET], model"
@@ -18,7 +21,7 @@ The .NET cryptography system implements an extensible pattern of derived class i
 
 - Algorithm type class, such as <xref:System.Security.Cryptography.SymmetricAlgorithm>,  <xref:System.Security.Cryptography.AsymmetricAlgorithm>, or <xref:System.Security.Cryptography.HashAlgorithm>. This level is abstract.
 
-- Algorithm class that inherits from an algorithm type class; for example, <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RC2>, or <xref:System.Security.Cryptography.ECDiffieHellman>. This level is abstract.
+- Algorithm class that inherits from an algorithm type class; for example, <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RSA>, or <xref:System.Security.Cryptography.ECDiffieHellman>. This level is abstract.
 
 - Implementation of an algorithm class that inherits from an algorithm class; for example, <xref:System.Security.Cryptography.AesManaged>, <xref:System.Security.Cryptography.RC2CryptoServiceProvider>, or <xref:System.Security.Cryptography.ECDiffieHellmanCng>. This level is fully implemented.
 
@@ -40,8 +43,8 @@ In .NET Core and .NET 5 and later versions, all implementation classes (`*Crypto
 
 In most cases, you don't need to directly reference an algorithm implementation class, such as `AesCryptoServiceProvider`. The methods and properties you typically need are on the base algorithm class, such as `Aes`. Create an instance of a default implementation class by using a factory method on the base algorithm class, and refer to the base algorithm class. For example, see the highlighted line of code in the following example:
 
-:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="17":::
-:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="13":::
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="16":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="12":::
 
 ## Cryptographic Configuration
 

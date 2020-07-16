@@ -19,7 +19,7 @@ ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
 You can use the <xref:System.Security.Cryptography.CspParameters> class to access hardware encryption devices. For example, you can use this class to integrate your application with a smart card, a hardware random number generator, or a hardware implementation of a particular cryptographic algorithm.  
 
 > [!NOTE]
-> This article applies only to Windows.
+> This article applies to Windows.
 
 The <xref:System.Security.Cryptography.CspParameters> class creates a cryptographic service provider (CSP) that accesses a properly installed hardware encryption device.  You can verify the availability of a CSP by inspecting the following registry key using the Registry Editor (Regedit.exe):  HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.  
   
@@ -45,8 +45,7 @@ The <xref:System.Security.Cryptography.CspParameters> class creates a cryptograp
 
 The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.  
 
-> [!IMPORTANT]
-> This example code uses SHA1. Due to collision problems with SHA1, we recommend a security model based on SHA256 or better.
+Due to collision problems with SHA1, we recommend SHA256 or better.
   
 [!code-cpp[Cryptography.SmartCardCSP#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
 [!code-csharp[Cryptography.SmartCardCSP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]

@@ -148,7 +148,7 @@ symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.Pkcs1)
 ```
 
 ```csharp
-//Create a new instance of the RSACryptoServiceProvider class.
+//Create a new instance of the RSA class.
 RSA rsa = RSA.Create();
 
 // Export the public key information and send it to a third party.

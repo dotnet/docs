@@ -78,7 +78,7 @@ When you are done using a symmetric cryptographic key, clear it from memory by s
   
 ## See also
 
-- [Cryptography Model](cryptography-model.md) - Describes how cryptography is implemented in the base class library.
+- [Cryptography Model](cryptography-model.md)
 - [Cryptographic Services](cryptographic-services.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>

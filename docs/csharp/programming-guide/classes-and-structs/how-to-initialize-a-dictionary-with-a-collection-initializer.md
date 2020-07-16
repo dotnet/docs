@@ -1,5 +1,6 @@
 ---
 title: "How to initialize a dictionary with a collection initializer - C# Programming Guide"
+description: Learn how to initialize a dictionary in C#, using either the Add method or an index initializer. This example shows both options.
 ms.date: 12/20/2018
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"

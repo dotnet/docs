@@ -212,5 +212,4 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 
 ## Next steps
 
-- [Install the .NET Core Runtime](runtime.md).
-- [Install the .NET Core SDK](sdk.md).
+- [Install the .NET Core Runtime and SDK](windows.md).

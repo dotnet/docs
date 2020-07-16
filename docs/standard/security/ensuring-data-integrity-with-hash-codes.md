@@ -60,3 +60,4 @@ The hash codes do not match.
 - [Cryptography Model](cryptography-model.md)
 - [Cryptographic Services](cryptographic-services.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

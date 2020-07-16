@@ -167,3 +167,4 @@ This code fragment will display "`The signature is valid`" if the signature is v
 - [Cryptographic Services](cryptographic-services.md)
 - [Cryptography Model](cryptography-model.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

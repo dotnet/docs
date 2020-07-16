@@ -67,7 +67,7 @@ This example is appropriate for situations where multiple applications have to s
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
-## .NET Framework Security  
+## .NET Security  
 
 Never store a symmetric cryptographic key in plaintext or transfer a symmetric key between machines in plaintext.  Additionally, never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
   
@@ -82,3 +82,4 @@ Never store a symmetric cryptographic key in plaintext or transfer a symmetric k
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Encrypt XML Elements with Asymmetric Keys](how-to-encrypt-xml-elements-with-asymmetric-keys.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

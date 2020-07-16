@@ -14,7 +14,6 @@ helpviewer_keywords:
   - "System.Security.Cryptography.Aes class"
   - "XML encryption"
   - "Advanced Encryption Standard algorithm"
-  - "Rijndael"
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
 ---
 # How to: Encrypt XML Elements with Symmetric Keys
@@ -102,3 +101,4 @@ When you are done using a cryptographic key, clear it from memory by setting eac
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Decrypt XML Elements with Symmetric Keys](how-to-decrypt-xml-elements-with-symmetric-keys.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Cryptography Model"
+title: ".NET Cryptography Model"
 description: Review implementations of usual cryptographic algorithms in .NET. Learn the extensible cryptography model of object inheritance, stream design, & configuration.
 ms.date: 07/14/2020
 ms.technology: dotnet-standard
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "encryption [.NET], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
 ---
-# .NET Framework Cryptography Model
+# .NET Cryptography Model
 
 .NET provides implementations of many standard cryptographic algorithms. These algorithms have the safest possible default properties. In addition, the .NET cryptography model of object inheritance and configuration is extensible.
 
@@ -74,3 +74,4 @@ Here is a list of recommended algorithms by application:
 
 - [Cryptographic Services](cryptographic-services.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

@@ -14,6 +14,11 @@ ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
 ---
 # Walkthrough: Creating a Cryptographic Application
 
+> [!NOTE]
+> This article applies to Windows.
+>
+> For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
+
 This walkthrough demonstrates how to encrypt and decrypt content. The code examples are designed for a Windows Forms application. This application does not demonstrate real world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.  
   
 This walkthrough uses the following guidelines for encryption:  
@@ -219,4 +224,4 @@ After you have built the application, perform the following testing scenarios.
 - [Cryptography Model](cryptography-model.md) - Describes how cryptography is implemented in the base class library.
 - [Cryptographic Services](cryptographic-services.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
-- [Cryptographic Services](cryptographic-services.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

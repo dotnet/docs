@@ -1,6 +1,6 @@
 ---
 title: "Cryptographic Services"
-description: Read an overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
+description: An overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
 ms.date: 07/14/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "asymmetric cryptographic algorithms"
   - "digital signatures, public-key systems"
   - "public keys"
-  - "decryption [.NET Framework]"
+  - "decryption [.NET]"
   - "private keys"
   - "MAC algorithms"
   - "cryptographic algorithms"
@@ -78,11 +78,11 @@ The disadvantage of secret-key encryption is that it presumes two parties have a
 
 Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network email) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because they do not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.
 
-The .NET Framework provides the following classes that implement secret-key encryption algorithms:
+.NET provides the following classes that implement secret-key encryption algorithms:
 
-- <xref:System.Security.Cryptography.Aes> (introduced in the .NET Framework 3.5).
+- <xref:System.Security.Cryptography.Aes>
 
-- <xref:System.Security.Cryptography.HMACSHA256>, <xref:System.Security.Cryptography.HMACSHA384> and <xref:System.Security.Cryptography.HMACSHA256>. (These are technically secret-key algorithms because they represent message authentication codes that are calculated by using a cryptographic hash function combined with a secret key. See [Hash Values](#hash-values), later in this topic.)
+- <xref:System.Security.Cryptography.HMACSHA256>, <xref:System.Security.Cryptography.HMACSHA384> and <xref:System.Security.Cryptography.HMACSHA512>. (These are technically secret-key algorithms because they represent message authentication codes that are calculated by using a cryptographic hash function combined with a secret key. See [Hash Values](#hash-values), later in this topic.)
 
 ## Public-Key Encryption
 
@@ -161,7 +161,7 @@ Two parties (Alice and Bob) could use a hash function to ensure message integrit
 
 None of the previous methods will prevent someone from reading Alice's messages, because they are transmitted in plaintext. Full security typically requires digital signatures (message signing) and encryption.
 
-The .NET Framework provides the following classes that implement hashing algorithms:
+.NET provides the following classes that implement hashing algorithms:
 
 - <xref:System.Security.Cryptography.SHA256>.
 
@@ -170,7 +170,7 @@ The .NET Framework provides the following classes that implement hashing algorit
 - <xref:System.Security.Cryptography.SHA512>.
 
 > [!NOTE]
-> .NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 represents SHA256, SHA384, and SHA512.
+> .NET also provides <xref:System.Security.Cryptography.MD5> and <xref:System.Security.Cryptography.SHA1>. But the MD5 and SHA-1 algorithms have been found to be insecure, and SHA-2 is now recommended instead. SHA-2 includes SHA256, SHA384, and SHA512.
 
 ## Random Number Generation
 
@@ -216,3 +216,5 @@ The .NET Framework 3.5 also includes a variety of supporting CNG classes, such a
 
 - [Cryptography Model](cryptography-model.md) - Describes how cryptography is implemented in the base class library.
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

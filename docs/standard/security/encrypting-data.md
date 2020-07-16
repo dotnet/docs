@@ -262,3 +262,5 @@ class Class1
 - [Decrypting Data](decrypting-data.md)
 - [Cryptographic Services](cryptographic-services.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

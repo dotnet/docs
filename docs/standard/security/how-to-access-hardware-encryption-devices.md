@@ -59,3 +59,10 @@ The following code example demonstrates how to sign data using a smart card.  Th
 - You must have a smart card reader and drivers installed on your computer.  
   
 - You must initialize the <xref:System.Security.Cryptography.CspParameters> object using information specific to your card reader.  For more information, see the documentation of your card reader.
+
+## See also
+
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

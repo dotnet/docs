@@ -89,3 +89,4 @@ RSAParameters rsaKeyInfo = rsa.ExportParameters(false);
 - [Cryptographic Services](cryptographic-services.md)
 - [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

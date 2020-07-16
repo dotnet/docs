@@ -18,13 +18,19 @@ helpviewer_keywords:
   - "data [.NET], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 ---
+
+> [!NOTE]
+> This article applies to Windows.
+>
+> For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
+
 # How to: Use Data Protection
 
 .NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
   
- Use the <xref:System.Security.Cryptography.ProtectedMemory> class to encrypt an array of in-memory bytes.  This functionality is available in Microsoft Windows XP and later operating systems.  You can specify that memory encrypted by the current process can be decrypted by the current process only, by all processes, or from the same user context.  See the <xref:System.Security.Cryptography.MemoryProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedMemory> options.  
+Use the <xref:System.Security.Cryptography.ProtectedMemory> class to encrypt an array of in-memory bytes.  This functionality is available in .NET Framework (not .NET Core or .NET 5) on Microsoft Windows XP and later operating systems.  You can specify that memory encrypted by the current process can be decrypted by the current process only, by all processes, or from the same user context.  See the <xref:System.Security.Cryptography.MemoryProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedMemory> options.  
   
- Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in Microsoft Windows 2000 and later operating systems.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
+Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in .NET Framework, .NET Core, and .NET 5 on Microsoft Windows 2000 and later operating systems.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
   
 ### To encrypt in-memory data using data protection  
   
@@ -50,13 +56,15 @@ ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
   
 ## Example
 
-The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.  
-  
+The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.
+
 [!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
 [!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]  
   
 ## Compiling the Code  
-  
+
+This example compiles and runs only when targeting .NET Framework and running on Windows.
+
 - Include a reference to `System.Security.dll`.  
   
 - Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
@@ -68,3 +76,4 @@ The following code example demonstrates two forms of encryption and decryption. 
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.ProtectedMemory>
 - <xref:System.Security.Cryptography.ProtectedData>
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

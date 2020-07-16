@@ -7,13 +7,13 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "cryptography [.NET Framework], asymmetric keys"
+  - "cryptography [.NET], asymmetric keys"
   - "storing asymmetric keys"
   - "keys, asymmetric"
   - "encryption keys"
   - "keys, storing in key containers"
-  - "asymmetric keys [.NET Framework]"
-  - "encryption [.NET Framework], asymmetric keys"
+  - "asymmetric keys [.NET]"
+  - "encryption [.NET], asymmetric keys"
   - "decryption keys"
 ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 ---
@@ -239,7 +239,10 @@ Key deleted.
 
 ## See also
 
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - [Generating keys for encryption and decryption](generating-keys-for-encryption-and-decryption.md)
 - [Encrypting data](encrypting-data.md)
 - [Decrypting data](decrypting-data.md)
-- [Cryptographic services](cryptographic-services.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

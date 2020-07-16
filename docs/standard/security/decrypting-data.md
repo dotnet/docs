@@ -6,7 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "data [.NET Framework], decryption"
+  - "data [.NET], decryption"
   - "symmetric decryption"
   - "asymmetric decryption"
   - "decryption"
@@ -19,7 +19,7 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 
 ## Symmetric Decryption
 
-The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by the .NET Framework to decrypt data read from any managed stream object.
+The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
 The following example illustrates how to create a new instance of the <xref:System.Security.Cryptography.Aes> class and use it to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the **Aes** class. Next it creates a **CryptoStream** object and initializes it to the value of a managed stream called `myStream`. Next, the **CreateDecryptor** method from the **Aes** class is passed the same key and IV that was used for encryption and is then passed to the **CryptoStream** constructor. Finally, the **CryptoStreamMode.Read** enumeration is passed to the **CryptoStream** constructor to specify read access to the stream.
 
@@ -203,3 +203,5 @@ symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
 - [Cryptographic Services](cryptographic-services.md)
 - [Cryptography Model](cryptography-model.md)
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

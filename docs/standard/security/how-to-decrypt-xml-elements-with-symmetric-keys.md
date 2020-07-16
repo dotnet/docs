@@ -68,7 +68,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
-## .NET Framework Security
+## .NET Security
   
 Never store a cryptographic key in plaintext or transfer a key between machines in plaintext.  
   
@@ -81,3 +81,4 @@ When you are done using a symmetric cryptographic key, clear it from memory by s
 - [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Encrypt XML Elements with Symmetric Keys](how-to-encrypt-xml-elements-with-symmetric-keys.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

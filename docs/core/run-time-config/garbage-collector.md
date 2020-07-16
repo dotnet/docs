@@ -234,7 +234,7 @@ Example:
 
 - Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
-- This setting is ignored if the [Per-heap limits](#per-heap-limits) are configured.
+- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
 - The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
@@ -266,7 +266,7 @@ Example:
 - If [System.GC.HeapHardLimit](#systemgcheaphardlimitcomplus_gcheaphardlimit) is also set, this setting is ignored.
 - This setting only applies to 64-bit computers.
 - If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
-- This setting is ignored if the [Per-heap limits](#per-heap-limits) are configured.
+- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
 - The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
@@ -294,7 +294,7 @@ Example:
 
 ### Per-object-heap limits
 
-You can specify GC's allowable heap usage on a per-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
+You can specify GC's allowable heap usage on a Per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
 
 #### COMPLUS_GCHeapHardLimitSOH, COMPLUS_GCHeapHardLimitLOH, COMPLUS_GCHeapHardLimitPOH
 

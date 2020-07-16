@@ -68,7 +68,9 @@ For information about how create a digital signature that can be verified using 
   
 ## Compiling the Code  
   
-- To compile this example, you need to include a reference to `System.Security.dll`.  
+- In a project that targets .NET Framework, include a reference to `System.Security.dll`.
+
+- In a project that targets .NET Core or .NET 5, install NuGet package [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   

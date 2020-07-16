@@ -7,7 +7,7 @@ Module Module1
         Try
             Dim myStream As FileStream = New FileStream("TestData.txt", FileMode.OpenOrCreate)
 
-            'Create a new instance of the Aes class  
+            'Create a new instance of the default Aes implementation class class  
             'and encrypt the stream.  
             Dim aes As Aes = Aes.Create()
 

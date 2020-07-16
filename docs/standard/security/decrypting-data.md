@@ -50,7 +50,7 @@ Module Module1
             'Create a file stream.
             Dim myStream As FileStream = new FileStream("TestData.txt", FileMode.Open)
 
-            'Create a new instance of the Aes class
+            'Create a new instance of the default Aes implementation class class
             'and decrypt the stream.
             Dim aes As Aes = Aes.Create()
 
@@ -94,7 +94,7 @@ class Class1
             //Create a file stream.
             FileStream myStream = new FileStream("TestData.txt", FileMode.Open);
 
-            //Create a new instance of the Aes class
+            //Create a new instance of the default Aes implementation class class
             Aes aes = Aes.Create();
 
             //Create a CryptoStream, pass it the NetworkStream, and decrypt

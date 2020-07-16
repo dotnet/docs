@@ -51,7 +51,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
      [!code-csharp[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#5)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#5)]  
   
-5. Create a new session key using the <xref:System.Security.Cryptography.RijndaelManaged> class.  This key will encrypt the XML element, and then be encrypted itself and placed in the XML document.  
+5. Create a new session key using the <xref:System.Security.Cryptography.Aes> class.  This key will encrypt the XML element, and then be encrypted itself and placed in the XML document.  
   
      [!code-csharp[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#6)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#6)]  
@@ -123,7 +123,9 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## Compiling the Code  
   
-- To compile this example, you need to include a reference to `System.Security.dll`.  
+- In a project that targets .NET Framework, include a reference to `System.Security.dll`.
+
+- In a project that targets .NET Core or .NET 5, install NuGet package [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   

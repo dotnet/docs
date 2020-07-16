@@ -28,7 +28,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ### To encrypt an XML element with a symmetric key  
   
-1. Generate a symmetric key using the <xref:System.Security.Cryptography.RijndaelManaged> class.  This key will be used to encrypt the XML element.  
+1. Generate a symmetric key using the <xref:System.Security.Cryptography.Aes> class.  This key will be used to encrypt the XML element.  
   
      [!code-csharp[HowToEncryptXMLElementSymmetric#2](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/cs/sample.cs#2)]
      [!code-vb[HowToEncryptXMLElementSymmetric#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb/sample.vb#2)]  
@@ -84,7 +84,9 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## Compiling the Code  
   
-- To compile this example, you need to include a reference to `System.Security.dll`.  
+- In a project that targets .NET Framework, include a reference to `System.Security.dll`.
+
+- In a project that targets .NET Core or .NET 5, install NuGet package [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   

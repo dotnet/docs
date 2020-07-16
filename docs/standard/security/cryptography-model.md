@@ -26,17 +26,11 @@ This pattern of derived classes lets you add a new algorithm or a new implementa
 
 ## How Algorithms Are Implemented in .NET
 
-As an example of the different implementations available for an algorithm, consider symmetric algorithms. The base for all symmetric algorithms is <xref:System.Security.Cryptography.SymmetricAlgorithm>, which is inherited by the following algorithms:
+As an example of the different implementations available for an algorithm, consider symmetric algorithms. The base for all symmetric algorithms is <xref:System.Security.Cryptography.SymmetricAlgorithm>, which is inherited by <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.TripleDES>, and others that are no longer recommended.
 
-* <xref:System.Security.Cryptography.Aes>
-* <xref:System.Security.Cryptography.DES>
-* <xref:System.Security.Cryptography.RC2>
-* <xref:System.Security.Cryptography.Rijndael>
-* <xref:System.Security.Cryptography.TripleDES>
+<xref:System.Security.Cryptography.Aes> is inherited by <xref:System.Security.Cryptography.AesCryptoServiceProvider>, <xref:System.Security.Cryptography.AesCng>, and <xref:System.Security.Cryptography.AesManaged>.
 
-<xref:System.Security.Cryptography.Aes> is inherited by two classes: <xref:System.Security.Cryptography.AesCryptoServiceProvider> and <xref:System.Security.Cryptography.AesManaged>.
-
-In the .NET Framework on Windows:
+In .NET Framework on Windows:
 
 * `*CryptoServiceProvider` algorithm classes, such as <xref:System.Security.Cryptography.AesCryptoServiceProvider>, are wrappers around the Windows Cryptography API (CAPI) implementation of an algorithm.
 * `*Cng` algorithm classes, such as <xref:System.Security.Cryptography.ECDiffieHellmanCng> are wrappers around the Windows Cryptography Next Generation (CNG) implementation. CNG algorithms are available on Windows Vista and later.

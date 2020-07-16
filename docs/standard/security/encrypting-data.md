@@ -87,7 +87,7 @@ Module Module1
         'a new instance of the RSA class.  
         Dim rsa As RSA = RSA.Create(rsaKeyInfo)
 
-        'Create a new instance of the Aes class.  
+        'Create a new instance of the default Aes implementation class class.  
         Dim aes As Aes = Aes.Create()
 
         'Encrypt the symmetric key and IV.  
@@ -135,7 +135,7 @@ class Class1
         //Import key parameters into RSA.  
         rsa.ImportParameters(rsaKeyInfo);
 
-        //Create a new instance of the Aes class.  
+        //Create a new instance of the default Aes implementation class class.  
         Aes aes = Aes.Create();
 
         //Encrypt the symmetric key and IV.  

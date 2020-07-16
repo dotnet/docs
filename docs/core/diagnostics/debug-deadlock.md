@@ -10,7 +10,7 @@ ms.date: 07/16/2020
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-In this scenario, the endpoint will experience a hang and thread accumulation. We'll show how you can use the tools to analyze the problem.
+In this scenario, the endpoint will experience a hang and thread accumulation. We'll show how you can use various tools to analyze the problem.
 
 ## Preparing
 

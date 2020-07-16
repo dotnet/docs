@@ -10,7 +10,7 @@ ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
 ---
 # \<remove> element for \<configSections>
 
-Removes a predefined section or section group.
+No impact on section or section group.
 
 [**\<configuration>**](configuration-element.md)\
 &nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
@@ -40,37 +40,7 @@ None
 
 ## Remarks
 
-You can use the **\<remove>** element to remove sections and section groups from your application that were defined at a higher level in the configuration file hierarchy.
-
-## Example
-
-The following example shows how to use the **\<remove>** element in an application configuration file to remove a section previously defined in the machine configuration file.
-
-The following machine configuration file code declares the section **\<sampleSection>**:
-
-```xml
-<!-- Machine.config file -->
-<configuration>
-  <configSections>
-    <section name="sampleSection"
-             type="System.Configuration.SingleTagSectionHandler" />
-  </configSections>
-  <sampleSection setting1="Value1"
-                 setting2="value two"
-                 setting3="third value" />
-</configuration>
-```
-
-The following application configuration file code removes the **\<sampleSection>** section. After removal, the application cannot retrieve the settings in **\<sampleSection>**.
-
-```xml
-<!-- Application configuration file -->
-<configuration>
-  <configSections>
-    <remove name="sampleSection"/>
-  </configSections>
-</configuration>
-```
+The **\<remove>** element has no impact on sections and section groups.
 
 ## Configuration file
 

@@ -1,5 +1,6 @@
 ---
 title: "Constants - C# Programming Guide"
+description: Constants in C# are immutable values, known at compile time, which do not change for the life of the program. Only C# built-in types can be constants.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, constants"

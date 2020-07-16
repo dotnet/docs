@@ -1,5 +1,6 @@
 ---
 title: "Jagged Arrays - C# Programming Guide"
+description: A jagged array in C# is an array whose elements are arrays of different dimensions and sizes. Learn how to declare, initialize, and access jagged arrays.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "jagged arrays [C#]"

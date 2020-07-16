@@ -1,6 +1,6 @@
 ---
 title: "Constructors - C# Programming Guide"
-description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy to read code.
+description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
 ms.date: 05/05/2017
 helpviewer_keywords: 
   - "constructors [C#]"

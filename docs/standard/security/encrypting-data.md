@@ -76,7 +76,7 @@ Module Module1
         Dim encryptedSymmetricKey() As Byte
         Dim encryptedSymmetricIV() As Byte
 
-        'Create a new instance of the default RSA implementation class.  	
+        'Create a new instance of the default RSA implementation class.
         Dim rsa As RSA = RSA.Create()
 
         'Create a new instance of the RSAParameters structure.  

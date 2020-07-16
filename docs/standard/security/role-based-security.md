@@ -27,6 +27,6 @@ Roles are often used in financial or business applications to enforce policy. Fo
 ## See also  
   
 - [Principal and Identity Objects](principal-and-identity-objects.md)
-- [Key Security Concepts](key-security-concepts
+- [Key Security Concepts](key-security-concepts)
 - <xref:System.Security.Permissions.PrincipalPermission?displayProperty=nameWithType>
 - [ASP.NET Core Security](/aspnet/core/security/)

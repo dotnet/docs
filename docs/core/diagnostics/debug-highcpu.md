@@ -99,7 +99,7 @@ export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
-Hit the URL (http://localhost:5000/api/diagscenario/highcpu/60000) again and while its running within the 1-minute request, run:
+Hit the URL (<http://localhost:5000/api/diagscenario/highcpu/60000>) again and while its running within the 1-minute request, run:
 
 ```console
 sudo perf record -p 2266 -g

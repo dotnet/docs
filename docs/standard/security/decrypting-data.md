@@ -21,7 +21,7 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 
 The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
-The following example illustrates how to create a new instance of the <xref:System.Security.Cryptography.Aes> class and use it to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the **Aes** class. Next it creates a **CryptoStream** object and initializes it to the value of a managed stream called `myStream`. Next, the **CreateDecryptor** method from the **Aes** class is passed the same key and IV that was used for encryption and is then passed to the **CryptoStream** constructor. Finally, the **CryptoStreamMode.Read** enumeration is passed to the **CryptoStream** constructor to specify read access to the stream.
+The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the **Aes** implementation class. Next it creates a **CryptoStream** object and initializes it to the value of a managed stream called `myStream`. Next, the **CreateDecryptor** method from the **Aes** class is passed the same key and IV that was used for encryption and is then passed to the **CryptoStream** constructor.
 
 ```vb
 Dim aes As Aes = Aes.Create()
@@ -33,14 +33,12 @@ Aes aes = Aes.Create();
 CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateDecryptor(aes.Key, aes.IV), CryptoStreamMode.Read);
 ```
 
-The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A <xref:System.Net.Sockets.TcpListener> object is created that initializes a network stream when a connection to the listening object is made. The network stream is then decrypted using the **CryptoStream** class and the **RijndaelManaged** class. This example assumes that the key and IV values have been either successfully transferred or previously agreed upon. It does not show the code needed to encrypt and transfer these values.
+The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key and IV values that are used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
 
 ```vb
+Imports System
 Imports System.IO
-Imports System.Net
-Imports System.Net.Sockets
 Imports System.Security.Cryptography
-Imports System.Threading
 
 Module Module1
     Sub Main()
@@ -49,25 +47,8 @@ Module Module1
             Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
             Dim iv As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
         Try
-            'Initialize a TCPListener on port 11000
-            'using the current IP address.
-            Dim tcpListen As New TcpListener(IPAddress.Any, 11000)
-
-            'Start the listener.
-            tcpListen.Start()
-
-            'Check for a connection every five seconds.
-            While Not tcpListen.Pending()
-                Console.WriteLine("Still listening. Will try in 5 seconds.")
-
-                Thread.Sleep(5000)
-            End While
-
-            'Accept the client if one is found.
-            Dim tcp As TcpClient = tcpListen.AcceptTcpClient()
-
-            'Create a network stream from the connection.
-            Dim netStream As NetworkStream = tcp.GetStream()
+            'Create a file stream.
+            Dim myStream As FileStream = new FileStream("TestData.txt", FileMode.Open)
 
             'Create a new instance of the Aes class
             'and decrypt the stream.
@@ -75,7 +56,7 @@ Module Module1
 
             'Create an instance of the CryptoStream class, pass it the NetworkStream, and decrypt
             'it with the Rijndael class using the key and IV.
-            Dim cryptStream As New CryptoStream(netStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+            Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 
             'Read the stream.
             Dim sReader As New StreamReader(cryptStream)
@@ -85,11 +66,11 @@ Module Module1
 
             'Close the streams.
             sReader.Close()
-            netStream.Close()
-            tcp.Close()
+            myStream.Close()
             'Catch any exceptions.
         Catch
-            Console.WriteLine("The Listener Failed.")
+            Console.WriteLine("The decryption Failed.")
+            Throw
         End Try
     End Sub
 End Module
@@ -98,10 +79,7 @@ End Module
 ```csharp
 using System;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
 using System.Security.Cryptography;
-using System.Threading;
 
 class Class1
 {
@@ -113,32 +91,16 @@ class Class1
         byte[] iv = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
         try
         {
-            //Initialize a TCPListener on port 11000
-            //using the current IP address.
-            TcpListener tcpListen = new TcpListener(IPAddress.Any, 11000);
-
-            //Start the listener.
-            tcpListen.Start();
-
-            //Check for a connection every five seconds.
-            while (!tcpListen.Pending())
-            {
-                Console.WriteLine("Still listening. Will try in 5 seconds.");
-                Thread.Sleep(5000);
-            }
-
-            //Accept the client if one is found.
-            TcpClient tcp = tcpListen.AcceptTcpClient();
-
-            //Create a network stream from the connection.
-            NetworkStream netStream = tcp.GetStream();
+            //Create a file stream.
+            FileStream myStream = new FileStream("TestData.txt", FileMode.Open);
 
             //Create a new instance of the Aes class
             Aes aes = Aes.Create();
 
             //Create a CryptoStream, pass it the NetworkStream, and decrypt
             //it with the Aes class using the key and IV.
-            CryptoStream cryptStream = new CryptoStream(netStream,
+            CryptoStream cryptStream = new CryptoStream(
+               myStream,
                aes.CreateDecryptor(key, iv),
                CryptoStreamMode.Read);
 
@@ -150,19 +112,19 @@ class Class1
 
             //Close the streams.
             sReader.Close();
-            netStream.Close();
-            tcp.Close();
+            myStream.Close();
         }
         //Catch any exceptions.
         catch
         {
-            Console.WriteLine("The Listener Failed.");
+            Console.WriteLine("The decryption failed.");
+            throw;
         }
     }
 }
 ```
 
-For the previous sample to work, an encrypted connection must be made to the listener. The connection must use the same key, IV, and algorithm used in the listener. If such a connection is made, the message is decrypted and displayed to the console.
+The preceding example uses the same key, IV, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
 
 ## Asymmetric Decryption
 

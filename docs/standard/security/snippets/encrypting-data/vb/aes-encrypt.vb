@@ -1,19 +1,11 @@
 Imports System
 Imports System.IO
 Imports System.Security.Cryptography
-Imports System.Net.Sockets
 
 Module Module1
     Sub Main()
         Try
-            'Create a TCP connection to a listening TCP process.  
-            'Use "localhost" to specify the current computer or  
-            'replace "localhost" with the IP address of the
-            'listening process.
-            Dim tcp As New TcpClient("localhost", 11000)
-
-            'Create a network stream from the TCP connection.
-            Dim netStream As NetworkStream = tcp.GetStream()
+            Dim myStream As FileStream = New FileStream("TestData.txt", FileMode.OpenOrCreate)
 
             'Create a new instance of the Aes class  
             'and encrypt the stream.  
@@ -22,12 +14,15 @@ Module Module1
             Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
             Dim iv As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
 
-            'Create a CryptoStream, pass it the NetworkStream, and encrypt
+            'Create a CryptoStream, pass it the FileStream, and encrypt
             'it with the Aes class.  
-            Dim cryptStream As New CryptoStream(netStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write)
+            Dim cryptStream As New CryptoStream(
+                myStream,
+                aes.CreateEncryptor(key, iv),
+                CryptoStreamMode.Write)
 
             'Create a StreamWriter for easy writing to the
-            'network stream.  
+            'file stream.  
             Dim sWriter As New StreamWriter(cryptStream)
 
             'Write to the stream.  
@@ -35,16 +30,16 @@ Module Module1
 
             'Inform the user that the message was written  
             'to the stream.  
-            Console.WriteLine("The message was sent.")
+            Console.WriteLine("The text was encrypted.")
 
             'Close all the connections.  
             sWriter.Close()
             cryptStream.Close()
-            netStream.Close()
-            tcp.Close()
+            myStream.Close()
         Catch
             'Inform the user that an exception was raised.  
-            Console.WriteLine("The connection failed.")
+            Console.WriteLine("The encryption failed.")
+            Throw
         End Try
     End Sub
 End Module

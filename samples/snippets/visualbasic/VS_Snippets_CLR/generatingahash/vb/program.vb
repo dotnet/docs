@@ -15,7 +15,7 @@ Module Program
         'Convert the string into an array of bytes.
         Dim messageBytes As Byte() = ue.GetBytes(messageString)
 
-        'Create a new instance of the SHA1Managed class to create 
+        'Create a new instance of the SHA256 class to create 
         'the hash value.
         Dim shHash As SHA256 = SHA256.Create()
 

@@ -46,7 +46,7 @@ The <xref:System.Security.Cryptography.CspParameters> class creates a cryptograp
 The following code example demonstrates how to sign data using a smart card.  The code example creates a <xref:System.Security.Cryptography.CspParameters> object that exposes a smart card, and then initializes an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object using the CSP.  The code example then signs and verifies some data.  
 
 > [!IMPORTANT]
-> This example code uses SHA1. Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
+> This example code uses SHA1. Due to collision problems with SHA1, we recommend a security model based on SHA256 or better.
   
 [!code-cpp[Cryptography.SmartCardCSP#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
 [!code-csharp[Cryptography.SmartCardCSP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]

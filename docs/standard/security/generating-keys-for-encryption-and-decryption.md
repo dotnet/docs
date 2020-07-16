@@ -24,10 +24,10 @@ Creating and managing keys is an important part of the cryptographic process. Sy
   
  To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting it is unsafe, because anyone who intercepts the key and IV can then decrypt your data.  
   
- The following example shows the creation of a new instance of the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> class that implements the TripleDES algorithm.  
+ The following example shows the creation of a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm.  
   
 ```vb  
-Dim aes As Aes = new Aes.Create()  
+Dim aes As Aes = Aes.Create()  
 ```  
   
 ```csharp  
@@ -62,7 +62,7 @@ aes.GenerateKey();
   
 - The <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information.  
   
- Both methods accept a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information. An **RSA** class can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> method.  
+ Both methods accept a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information. An **RSA** instance can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A> method. Or create a new instance by using the <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> method.  
   
  Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more on how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).  
   

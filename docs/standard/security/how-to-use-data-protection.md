@@ -18,13 +18,12 @@ helpviewer_keywords:
   - "data [.NET], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 ---
+# How to: Use Data Protection
 
 > [!NOTE]
 > This article applies to Windows.
 >
 > For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).
-
-# How to: Use Data Protection
 
 .NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
   

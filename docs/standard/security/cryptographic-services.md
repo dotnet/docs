@@ -1,6 +1,6 @@
 ---
 title: "Cryptographic Services"
-description: An overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
+description: An overview of the encryption methods and practices supported by .NET.
 ms.date: 07/14/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -82,7 +82,7 @@ Assuming that Alice and Bob are two parties who want to communicate over a nonse
 
 - <xref:System.Security.Cryptography.Aes>
 
-- <xref:System.Security.Cryptography.HMACSHA256>, <xref:System.Security.Cryptography.HMACSHA384> and <xref:System.Security.Cryptography.HMACSHA512>. (These are technically secret-key algorithms because they represent message authentication codes that are calculated by using a cryptographic hash function combined with a secret key. See [Hash Values](#hash-values), later in this topic.)
+- <xref:System.Security.Cryptography.HMACSHA256>, <xref:System.Security.Cryptography.HMACSHA384> and <xref:System.Security.Cryptography.HMACSHA512>. (These are technically secret-key algorithms because they represent message authentication codes that are calculated by using a cryptographic hash function combined with a secret key. See [Hash Values](#hash-values), later in this article.)
 
 ## Public-Key Encryption
 
@@ -118,7 +118,7 @@ The following list offers comparisons between public-key and secret-key cryptogr
 
 - <xref:System.Security.Cryptography.ECDiffieHellman>
 
-RSA allows both encryption and signing, but DSA can be used only for signing. For signing, DSA is not as secure as RSA andd we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
+RSA allows both encryption and signing, but DSA can be used only for signing. For signing, DSA is not as secure as RSA and we recommend RSA. Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
 
 ## Digital Signatures
 

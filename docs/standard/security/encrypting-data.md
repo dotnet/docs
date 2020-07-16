@@ -1,6 +1,6 @@
 ---
 title: "Encrypting Data"
-description: Learn to encrypt data in .NET. You can use symmetric encryption on streams, or you can use asymmetric encryption on a small number of bytes.
+description: Learn how to encrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
 ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
@@ -19,7 +19,7 @@ Symmetric encryption and asymmetric encryption are performed using different pro
   
 ## Symmetric Encryption  
 
-The managed symmetric cryptography classes are used with a special stream class called a <xref:System.Security.Cryptography.CryptoStream> that encrypts data read into the stream. The **CryptoStream** class is initialized with a managed stream class, a class that implements the <xref:System.Security.Cryptography.ICryptoTransform> interface (created from a class that implements a cryptographic algorithm), and a <xref:System.Security.Cryptography.CryptoStreamMode> enumeration that describes the type of access permitted to the **CryptoStream**. The **CryptoStream** class can be initialized using any class that derives from the <xref:System.IO.Stream> class, including <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, and <xref:System.Net.Sockets.NetworkStream>. Using these classes, you can perform symmetric encryption on a variety of stream objects.  
+The managed symmetric cryptography classes are used with a special stream class called a <xref:System.Security.Cryptography.CryptoStream> that encrypts data read into the stream. The **CryptoStream** class is initialized with a managed stream class, a class that implements the <xref:System.Security.Cryptography.ICryptoTransform> interface (created from a class that implements a cryptographic algorithm), and a <xref:System.Security.Cryptography.CryptoStreamMode> enumeration that describes the type of access permitted to the **CryptoStream**. The **CryptoStream** class can be initialized using any class that derives from the <xref:System.IO.Stream> class, including <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, and <xref:System.Net.Sockets.file stream>. Using these classes, you can perform symmetric encryption on a variety of stream objects.  
   
 The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform encryption on a **CryptoStream** class. In this example, the **CryptoStream** is initialized with a stream object called `myStream` that can be any type of managed stream. The **CreateEncryptor** method from the **Aes** class is passed the key and IV that are used for encryption. In this case, the default key and IV generated from `aes` are used.
   
@@ -76,6 +76,9 @@ Module Module1
         Dim encryptedSymmetricKey() As Byte
         Dim encryptedSymmetricIV() As Byte
 
+        'Create a new instance of the default RSA implementation class.  	
+        Dim rsa As RSA = RSA.Create()
+
         'Create a new instance of the RSAParameters structure.  
         Dim rsaKeyInfo As New RSAParameters()
 
@@ -83,11 +86,10 @@ Module Module1
         rsaKeyInfo.Modulus = publicKey
         rsaKeyInfo.Exponent = exponent
 
-        'Import key parameters into
-        'a new instance of the RSA class.  
-        Dim rsa As RSA = RSA.Create(rsaKeyInfo)
+        'Import key parameters into rsa
+        rsa.ImportParameters(rsaKeyInfo)
 
-        'Create a new instance of the default Aes implementation class class.  
+        'Create a new instance of the default Aes implementation class.  
         Dim aes As Aes = Aes.Create()
 
         'Encrypt the symmetric key and IV.  
@@ -132,10 +134,10 @@ class Class1
         rsaKeyInfo.Modulus = publicKey;
         rsaKeyInfo.Exponent = exponent;
 
-        //Import key parameters into RSA.  
+        //Import key parameters into rsa.  
         rsa.ImportParameters(rsaKeyInfo);
 
-        //Create a new instance of the default Aes implementation class class.  
+        //Create a new instance of the default Aes implementation class.  
         Aes aes = Aes.Create();
 
         //Encrypt the symmetric key and IV.  

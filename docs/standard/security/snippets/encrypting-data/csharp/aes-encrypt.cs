@@ -11,7 +11,7 @@ public class main
             //Create a file stream
             FileStream myStream = new FileStream("TestData.txt", FileMode.OpenOrCreate);
 
-            //Create a new instance of the default Aes implementation class class  
+            //Create a new instance of the default Aes implementation class  
             // and encrypt the stream.  
             Aes aes = Aes.Create();
 

@@ -8,7 +8,7 @@ class Class1
     static void Main()
     {
         //This hash value is produced from "This is the original message!"
-        //using SHA1Managed.
+        //using SHA256.
         byte[] sentHashValue = { 185, 203, 236, 22, 3, 228, 27, 130, 87, 23, 244, 15, 87, 88, 14, 43, 37, 61, 106, 224, 81, 172, 224, 211, 104, 85, 194, 197, 194, 25, 120, 217 };
 
         //This is the string that corresponds to the previous hash value.

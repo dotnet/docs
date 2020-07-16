@@ -1,6 +1,7 @@
 ---
 title: "Decrypting Data"
-ms.date: "03/30/2017"
+description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
+ms.date: 07/16/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -50,11 +51,11 @@ Module Module1
             'Create a file stream.
             Dim myStream As FileStream = new FileStream("TestData.txt", FileMode.Open)
 
-            'Create a new instance of the default Aes implementation class class
+            'Create a new instance of the default Aes implementation class
             'and decrypt the stream.
             Dim aes As Aes = Aes.Create()
 
-            'Create an instance of the CryptoStream class, pass it the NetworkStream, and decrypt
+            'Create an instance of the CryptoStream class, pass it the file stream, and decrypt
             'it with the Rijndael class using the key and IV.
             Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 
@@ -94,10 +95,10 @@ class Class1
             //Create a file stream.
             FileStream myStream = new FileStream("TestData.txt", FileMode.Open);
 
-            //Create a new instance of the default Aes implementation class class
+            //Create a new instance of the default Aes implementation class
             Aes aes = Aes.Create();
 
-            //Create a CryptoStream, pass it the NetworkStream, and decrypt
+            //Create a CryptoStream, pass it the file stream, and decrypt
             //it with the Aes class using the key and IV.
             CryptoStream cryptStream = new CryptoStream(
                myStream,

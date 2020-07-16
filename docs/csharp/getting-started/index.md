@@ -24,7 +24,7 @@ The following topics are available:
 
 - [Create a class library with C# and .NET Standard in Visual Studio](../../core/tutorials/library-with-visual-studio.md)
 
-   A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](../../core/tutorials/testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](../../core/tutorials/consuming-library-with-visual-studio.md).
+   A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](../../core/tutorials/testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 
 - [Get started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
 

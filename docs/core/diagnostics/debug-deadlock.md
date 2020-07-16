@@ -18,9 +18,9 @@ The tutorial uses:
 
 - [Sample debug target](sample-debug-target.md) to trigger the scenario.
 - [dotnet-trace](dotnet-trace.md) to list processes.
-- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+- [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file.
 
-The tutorial assumes the sample and tools are ready to use and you are running on **Linux**.
+The tutorial runs on **Linux**, and assumes the sample, and corresponding tools are ready to use.
 
 ## Core dump generation
 
@@ -222,7 +222,7 @@ Free            0
 
 ```
 
-The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` columns. The `MonitorHeld` shows whether a monitor lock is acquired by a thread and the number of waiting threads. The `Owning Thread Info` shows which thread currently owns the monitor lock. The thread info has three different sub-columns. The second sub-column shows operating system thread ID.
+The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` columns. The `MonitorHeld` shows whether a monitor lock is acquired by a thread and the number of waiting threads. The `Owning Thread Info` shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
 
 At this point, we know two different threads (0x1dc1d and 0x1dc1e) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
 

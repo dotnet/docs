@@ -1,5 +1,6 @@
 ---
 title: "How to: Define a Generic Method with Reflection Emit"
+description: Define a generic method with reflection emit. One example creates a generic method with two type parameters. A second example shows how to emit the method body.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

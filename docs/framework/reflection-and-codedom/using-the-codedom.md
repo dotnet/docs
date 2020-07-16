@@ -1,5 +1,6 @@
 ---
 title: "Using the CodeDOM"
+description: Use the Code Document Object Model (CodeDOM), which provides types representing many common types of source code elements, to assemble an object graph.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

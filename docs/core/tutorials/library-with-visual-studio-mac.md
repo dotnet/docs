@@ -5,7 +5,7 @@ ms.date: 06/08/2020
 ---
 # Tutorial: Create a .NET Standard library using Visual Studio for Mac
 
-In this tutorial, you create a simple class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+In this tutorial, you create a class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
 A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.1 can be used by an application that targets any .NET implementation that supports version 2.1 of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 

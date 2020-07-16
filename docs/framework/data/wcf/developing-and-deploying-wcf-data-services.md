@@ -64,7 +64,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 3. **Azure Development Environment**
 
-     Azure Tools for Visual Studio includes an integrated set of tools for developing Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md). For more information about developing a data service that runs on Azure, see the post [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Azure Tools for Visual Studio includes an integrated set of tools for developing Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/vs2015-install.md). For more information about developing a data service that runs on Azure, see the post [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Development Tips
 
@@ -109,7 +109,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **Azure**
 
-     You can deploy a data service to Azure by using [Azure Tools for Visual Studio](../../../azure/sdk/vs2015-install.md). For more information about deploying a data service to Azure, see [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     You can deploy a data service to Azure by using [Azure Tools for Visual Studio](../../../azure/vs2015-install.md). For more information about deploying a data service to Azure, see [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Deployment Considerations
 

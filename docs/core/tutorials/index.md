@@ -36,7 +36,7 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 ## Use Visual Studio for Mac
 
 - [Create a console app](using-on-mac-vs.md)
-- [Create a library and unit test it](using-on-mac-vs-full-solution.md)
+- [Create a library and unit test it](library-with-visual-studio-mac.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
 ## Advanced topics

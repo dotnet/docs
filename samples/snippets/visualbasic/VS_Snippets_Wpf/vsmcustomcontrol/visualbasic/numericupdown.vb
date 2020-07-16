@@ -195,200 +195,38 @@ Public Delegate Sub ValueChangedEventHandler(ByVal sender As Object,
 
 Public Class ValueChangedEventArgs
     Inherits RoutedEventArgs
-    Private _value As Integer
 
     Public Sub New(ByVal id As RoutedEvent,
                    ByVal num As Integer)
 
-        _value = num
+        Value = num
         RoutedEvent = id
     End Sub
 
     Public ReadOnly Property Value() As Integer
-        Get
-            Return _value
-        End Get
-    End Property
 End Class
 '</SnippetControlLogic>
 
 
 Namespace ControlContract
     '<SnippetControlContract>
-    <TemplatePart(Name:="UpButtonElement", Type:=GetType(RepeatButton))> _
-    <TemplatePart(Name:="DownButtonElement", Type:=GetType(RepeatButton))> _
-    <TemplateVisualState(Name:="Positive", GroupName:="ValueStates")> _
-    <TemplateVisualState(Name:="Negative", GroupName:="ValueStates")> _
-    <TemplateVisualState(Name:="Focused", GroupName:="FocusedStates")> _
-    <TemplateVisualState(Name:="Unfocused", GroupName:="FocusedStates")> _
+    <TemplatePart(Name:="UpButtonElement", Type:=GetType(RepeatButton))>
+    <TemplatePart(Name:="DownButtonElement", Type:=GetType(RepeatButton))>
+    <TemplateVisualState(Name:="Positive", GroupName:="ValueStates")>
+    <TemplateVisualState(Name:="Negative", GroupName:="ValueStates")>
+    <TemplateVisualState(Name:="Focused", GroupName:="FocusedStates")>
+    <TemplateVisualState(Name:="Unfocused", GroupName:="FocusedStates")>
     Public Class NumericUpDown
         Inherits Control
-        Public Shared ReadOnly BackgroundProperty As DependencyProperty
-        Public Shared ReadOnly BorderBrushProperty As DependencyProperty
-        Public Shared ReadOnly BorderThicknessProperty As DependencyProperty
-        Public Shared ReadOnly FontFamilyProperty As DependencyProperty
-        Public Shared ReadOnly FontSizeProperty As DependencyProperty
-        Public Shared ReadOnly FontStretchProperty As DependencyProperty
-        Public Shared ReadOnly FontStyleProperty As DependencyProperty
-        Public Shared ReadOnly FontWeightProperty As DependencyProperty
-        Public Shared ReadOnly ForegroundProperty As DependencyProperty
-        Public Shared ReadOnly HorizontalContentAlignmentProperty As DependencyProperty
-        Public Shared ReadOnly PaddingProperty As DependencyProperty
         Public Shared ReadOnly TextAlignmentProperty As DependencyProperty
         Public Shared ReadOnly TextDecorationsProperty As DependencyProperty
         Public Shared ReadOnly TextWrappingProperty As DependencyProperty
-        Public Shared ReadOnly VerticalContentAlignmentProperty As DependencyProperty
 
-
-        Private _Background As Brush
-        Public Property Background() As Brush
-            Get
-                Return _Background
-            End Get
-            Set(ByVal value As Brush)
-                _Background = value
-            End Set
-        End Property
-
-        Private _BorderBrush As Brush
-        Public Property BorderBrush() As Brush
-            Get
-                Return _BorderBrush
-            End Get
-            Set(ByVal value As Brush)
-                _BorderBrush = value
-            End Set
-        End Property
-
-        Private _BorderThickness As Thickness
-        Public Property BorderThickness() As Thickness
-            Get
-                Return _BorderThickness
-            End Get
-            Set(ByVal value As Thickness)
-                _BorderThickness = value
-            End Set
-        End Property
-
-        Private _FontFamily As FontFamily
-        Public Property FontFamily() As FontFamily
-            Get
-                Return _FontFamily
-            End Get
-            Set(ByVal value As FontFamily)
-                _FontFamily = value
-            End Set
-        End Property
-
-        Private _FontSize As Double
-        Public Property FontSize() As Double
-            Get
-                Return _FontSize
-            End Get
-            Set(ByVal value As Double)
-                _FontSize = value
-            End Set
-        End Property
-
-        Private _FontStretch As FontStretch
-        Public Property FontStretch() As FontStretch
-            Get
-                Return _FontStretch
-            End Get
-            Set(ByVal value As FontStretch)
-                _FontStretch = value
-            End Set
-        End Property
-
-        Private _FontStyle As FontStyle
-        Public Property FontStyle() As FontStyle
-            Get
-                Return _FontStyle
-            End Get
-            Set(ByVal value As FontStyle)
-                _FontStyle = value
-            End Set
-        End Property
-
-        Private _FontWeight As FontWeight
-        Public Property FontWeight() As FontWeight
-            Get
-                Return _FontWeight
-            End Get
-            Set(ByVal value As FontWeight)
-                _FontWeight = value
-            End Set
-        End Property
-
-        Private _Foreground As Brush
-        Public Property Foreground() As Brush
-            Get
-                Return _Foreground
-            End Get
-            Set(ByVal value As Brush)
-                _Foreground = value
-            End Set
-        End Property
-
-        Private _HorizontalContentAlignment As HorizontalAlignment
-        Public Property HorizontalContentAlignment() As HorizontalAlignment
-            Get
-                Return _HorizontalContentAlignment
-            End Get
-            Set(ByVal value As HorizontalAlignment)
-                _HorizontalContentAlignment = value
-            End Set
-        End Property
-
-        Private _Padding As Thickness
-        Public Property Padding() As Thickness
-            Get
-                Return _Padding
-            End Get
-            Set(ByVal value As Thickness)
-                _Padding = value
-            End Set
-        End Property
-
-        Private _TextAlignment As TextAlignment
         Public Property TextAlignment() As TextAlignment
-            Get
-                Return _TextAlignment
-            End Get
-            Set(ByVal value As TextAlignment)
-                _TextAlignment = value
-            End Set
-        End Property
 
-        Private _TextDecorations As TextDecorationCollection
         Public Property TextDecorations() As TextDecorationCollection
-            Get
-                Return _TextDecorations
-            End Get
-            Set(ByVal value As TextDecorationCollection)
-                _TextDecorations = value
-            End Set
-        End Property
 
-        Private _TextWrapping As TextWrapping
         Public Property TextWrapping() As TextWrapping
-            Get
-                Return _TextWrapping
-            End Get
-            Set(ByVal value As TextWrapping)
-                _TextWrapping = value
-            End Set
-        End Property
-
-        Private _VerticalContentAlignment As VerticalAlignment
-        Public Property VerticalContentAlignment() As VerticalAlignment
-            Get
-                Return _VerticalContentAlignment
-            End Get
-            Set(ByVal value As VerticalAlignment)
-                _VerticalContentAlignment = value
-            End Set
-        End Property
     End Class
     '</SnippetControlContract>
 End Namespace

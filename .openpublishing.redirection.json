@@ -525,8 +525,7 @@
     },
     {
       "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
-      "redirect_url": "/dotnet/core/tutorials/cli-create-console-app",
-      "redirect_document_id": true
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
     },
     {
       "source_path": "docs/core/preview3/windows-prerequisites.md",
@@ -548,6 +547,10 @@
     {
       "source_path": "docs/core/tools/test-protocol.md",
       "redirect_url": "/dotnet/core/tools/dotnet-test"
+    },
+    {
+      "source_path": "docs/core/tutorials/aspnet-core.md",
+      "redirect_url": "/dotnet/core/tutorials"
     },
     {
       "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
@@ -603,7 +606,7 @@
     },
     {
       "source_path": "docs/core/tutorials/using-with-xplat-cli.md",
-      "redirect_url": "/dotnet/core/tutorials/cli-create-console-app"
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
     },
     {
       "source_path": "docs/core/versions/install-management.md",
@@ -674,12 +677,11 @@
     },
     {
       "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
-      "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio",
-      "redirect_document_id": true
+      "redirect_url": "/nuget/quickstart/install-and-use-a-package-in-visual-studio"
     },
     {
       "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
-      "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
+      "redirect_url": "/nuget/quickstart/install-and-use-a-package-in-visual-studio"
     },
     {
       "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",

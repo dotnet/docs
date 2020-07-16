@@ -40,126 +40,16 @@ The following example shows the entire process of creating a stream, encrypting 
 > [!NOTE]
 > You can also use this example to write to a file. To do that, delete the <xref:System.Net.Sockets.TcpClient> reference and replace the <xref:System.Net.Sockets.NetworkStream> with a <xref:System.IO.FileStream>.  
   
-```vb  
-Imports System
-Imports System.IO
-Imports System.Security.Cryptography
-Imports System.Net.Sockets
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb":::
 
-Module Module1
-    Sub Main()
-        Try
-            'Create a TCP connection to a listening TCP process.  
-            'Use "localhost" to specify the current computer or  
-            'replace "localhost" with the IP address of the
-            'listening process.
-            Dim tcp As New TcpClient("localhost", 11000)
-
-            'Create a network stream from the TCP connection.
-            Dim netStream As NetworkStream = tcp.GetStream()
-
-            'Create a new instance of the Aes class  
-            'and encrypt the stream.  
-            Dim aes As Aes = Aes.Create()
-
-            Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
-            Dim iv As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
-
-            'Create a CryptoStream, pass it the NetworkStream, and encrypt
-            'it with the Aes class.  
-            Dim cryptStream As New CryptoStream(netStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write)
-
-            'Create a StreamWriter for easy writing to the
-            'network stream.  
-            Dim sWriter As New StreamWriter(cryptStream)
-
-            'Write to the stream.  
-            sWriter.WriteLine("Hello World!")
-
-            'Inform the user that the message was written  
-            'to the stream.  
-            Console.WriteLine("The message was sent.")
-
-            'Close all the connections.  
-            sWriter.Close()
-            cryptStream.Close()
-            netStream.Close()
-            tcp.Close()
-        Catch
-            'Inform the user that an exception was raised.  
-            Console.WriteLine("The connection failed.")
-        End Try
-    End Sub
-End Module
-```  
-  
-```csharp  
-using System;  
-using System.IO;  
-using System.Security.Cryptography;  
-using System.Net.Sockets;  
-  
-public class main  
-{  
-   public static void Main(string[] args)  
-   {  
-      try  
-      {  
-         //Create a TCP connection to a listening TCP process.  
-         //Use "localhost" to specify the current computer or  
-         //replace "localhost" with the IP address of the
-         //listening process.
-         TcpClient tcp = new TcpClient("localhost",11000);  
-  
-         //Create a network stream from the TCP connection.
-         NetworkStream netStream = tcp.GetStream();  
-  
-         //Create a new instance of the RijndaelManaged class  
-         // and encrypt the stream.  
-         Aes aes = Aes.Create();  
-  
-         byte[] key = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
-         byte[] iv = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};  
-  
-         //Create a CryptoStream, pass it the NetworkStream, and encrypt
-         //it with the Aes class.  
-         CryptoStream cryptStream = new CryptoStream(netStream,
-         aes.CreateEncryptor(key, iv),
-         CryptoStreamMode.Write);  
-  
-         //Create a StreamWriter for easy writing to the
-         //network stream.  
-         StreamWriter sWriter = new StreamWriter(cryptStream);  
-  
-         //Write to the stream.  
-         sWriter.WriteLine("Hello World!");  
-  
-         //Inform the user that the message was written  
-         //to the stream.  
-         Console.WriteLine("The message was sent.");  
-  
-         //Close all the connections.  
-         sWriter.Close();  
-         cryptStream.Close();  
-         netStream.Close();  
-         tcp.Close();  
-      }  
-      catch  
-      {  
-         //Inform the user that an exception was raised.  
-         Console.WriteLine("The connection failed.");  
-      }  
-   }  
-}  
-```  
-  
- For the previous example to execute successfully, there must be a process listening on the IP address and port number specified in the <xref:System.Net.Sockets.TcpClient> class. If a listening process exists, the code will connect to the listening process, encrypt the stream using the AES symmetric algorithm, and write "Hello World!" to the stream. If the code is successful, it displays the following text to the console:  
+For the previous example to execute successfully, there must be a process listening on the IP address and port number specified in the <xref:System.Net.Sockets.TcpClient> class. If a listening process exists, the code will connect to the listening process, encrypt the stream using the AES symmetric algorithm, and write "Hello World!" to the stream. If the code is successful, it displays the following text to the console:  
   
 ```console  
 The message was sent.  
 ```  
   
- However, if no listening process is found or an exception is raised, the code displays the following text to the console:  
+However, if no listening process is found or an exception is raised, the code displays the following text to the console:  
   
 ```console  
 The connection failed.  
@@ -233,7 +123,7 @@ class Class1
         byte[] encryptedSymmetricKey;
         byte[] encryptedSymmetricIV;
 
-        //Create a new instance of the RSACryptoServiceProvider class.  
+        //Create a new instance of the RSA class.  
         RSA rsa = RSA.Create();
 
         //Create a new instance of the RSAParameters structure.  
@@ -246,7 +136,7 @@ class Class1
         //Import key parameters into RSA.  
         rsa.ImportParameters(rsaKeyInfo);
 
-        //Create a new instance of the RijndaelManaged class.  
+        //Create a new instance of the Aes class.  
         Aes aes = Aes.Create();
 
         //Encrypt the symmetric key and IV.  

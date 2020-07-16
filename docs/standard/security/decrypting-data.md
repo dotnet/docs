@@ -69,9 +69,9 @@ Module Module1
             'Create a network stream from the connection.
             Dim netStream As NetworkStream = tcp.GetStream()
 
-            'Create a new instance of the RijndaelManaged class
+            'Create a new instance of the Aes class
             'and decrypt the stream.
-            Dim aes As New RijndaelManaged()
+            Dim aes As Aes = Aes.Create()
 
             'Create an instance of the CryptoStream class, pass it the NetworkStream, and decrypt
             'it with the Rijndael class using the key and IV.

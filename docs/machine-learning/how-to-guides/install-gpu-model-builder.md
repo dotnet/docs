@@ -9,7 +9,7 @@ ms.custom: how-to
 
 # How to use GPU in Model Builder
 
-Learn how to install dependencies 
+Learn how to install the GPU drivers to use GPUs in Model Builder.
 
 ## Prerequisites
 
